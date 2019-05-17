@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106863"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704483"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procédure : Déboguer une Application de confiance partielle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S'applique aux applications Windows et console.  
   
- [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md) rend plus facile de déployer des applications de confiance partielle qui tirent parti de [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) pour limiter l’accès aux ressources sur un ordinateur.  
+ [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md) rend plus facile de déployer des applications de confiance partielle qui tirent parti de [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) pour limiter l’accès aux ressources sur un ordinateur.  
   
  Le débogage d'une application de confiance partielle peut être un défi, parce que les applications de confiance partielle ont des autorisations de sécurité différentes (et par conséquent se comportent différemment) selon l'emplacement à partir duquel elles sont installées. Une application de confiance partielle installée à partir d'internet dispose d'un nombre limité d'autorisations. Si elle est installée depuis un intranet local, elle dispose d'un plus grand nombre d'autorisations ; si elle est installée à partir de l'ordinateur local, elle bénéficie des autorisations maximales. Vous pouvez également définir des zones personnalisées associées à des autorisations personnalisées. Vous pouvez devoir déboguer une application de confiance partielle dans l'une ou l'ensemble des conditions suivantes. Heureusement, Visual Studio vous facilite également la tâche.  
   
@@ -41,7 +41,7 @@ S'applique aux applications Windows et console.
  Ultérieurement, vous pourrez revenir en arrière et consulter les autorisations que vous avez ajoutées pendant le débogage. Le fait de devoir ajouter une autorisation lors du débogage indique probablement la nécessité d'ajouter une invite d'autorisation de l'utilisateur à cet endroit du code.  
   
 > [!NOTE]
->  Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
+> Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Pour choisir une zone pour votre application de confiance partielle  
   

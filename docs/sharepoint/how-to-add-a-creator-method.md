@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443584"
 ---
 # <a name="how-to-add-a-creator-method"></a>Procédure : Ajouter une méthode de création
   Une méthode de création ajoute de nouvelles données à la source de données d’une entité. Le service de connectivité de données métiers (BDC) appelle cette méthode quand les utilisateurs choisissent le **un nouvel élément** bouton sur le **ruban** d’une liste qui est basée sur le modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,7 +58,7 @@ ms.locfileid: "56619314"
 5. Ajoutez le code à la méthode de création qui ajoute des données à la source de données. L’exemple suivant ajoute un contact à la base de données AdventureWorks pour SQL Server.
 
    > [!NOTE]
-   >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+   > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950252"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procédure : Créer un plug-in d’enregistreur
 
@@ -33,20 +33,20 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 ### <a name="to-create-a-recorder-plug-in"></a>Pour créer un plug-in d'enregistreur
 
-1.  Ouvrez une solution contenant le projet de test de performances web et de charge avec le test de performances web pour lequel vous souhaitez créer un plug-in d’enregistreur.
+1. Ouvrez une solution contenant le projet de test de performances web et de charge avec le test de performances web pour lequel vous souhaitez créer un plug-in d’enregistreur.
 
-2.  Ajoutez ensuite un nouveau projet **Bibliothèque de classes** à la solution.
+2. Ajoutez ensuite un nouveau projet **Bibliothèque de classes** à la solution.
 
-3.  Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
+3. Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
 
     > [!TIP]
     > **RecorderPlugins** est un exemple de dossier de projet de nouvelle bibliothèque de classes.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-4.  Sélectionnez l’onglet **.NET**.
+4. Sélectionnez l’onglet **.NET**.
 
-5.  Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
+5. Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans **l’Explorateur de solutions**.
 
@@ -88,11 +88,11 @@ Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée d
 
 ### <a name="execute-the-recorder-plug-in"></a>Exécuter le plug-in d’enregistreur
 
-1.  Créez un test de performances web.
+1. Créez un test de performances web.
 
      La boîte de dialogue **Activer WebTestRecordPlugins** s’affiche.
 
-2.  Cochez la case du plug-in d’enregistreur et choisissez **OK**.
+2. Cochez la case du plug-in d’enregistreur et choisissez **OK**.
 
      À l’issue de l’enregistrement du test de performances web, le nouveau plug-in d’enregistreur sera exécuté.
 

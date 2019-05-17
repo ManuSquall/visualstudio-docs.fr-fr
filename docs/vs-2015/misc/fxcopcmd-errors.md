@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432292"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd (erreurs)
 FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd dispose d’informations suffisantes pour effectuer une analyse partielle, il effectue l’analyse et signale les erreurs qui se sont produites. Le code d’erreur, qui est un entier 32 bits, contient une combinaison au niveau du bit des valeurs numériques qui correspondent aux erreurs.  
@@ -49,7 +49,7 @@ FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd
 - L’option de sortie n’a pas été spécifiée ou le fichier n’a pas pu être écrites.  
   
     > [!NOTE]
-    >  Le code retour FxCopCmd « Erreur des références d’Assembly » 0 x 200 en lui-même est un avertissement plutôt qu’une erreur. Ce code de retour indique que des références indirectes manquantes ont été trouvés, mais que FxCopCmd a été en mesure de les gérer. Il s’agit d’un avertissement qu’il est possible que certains résultats de l’analyse a été compromises. Envisagez le code de retour « Erreur des références d’Assembly » comme une erreur lorsqu’il est combiné avec n’importe quel autre code de retour.  
+    > Le code retour FxCopCmd « Erreur des références d’Assembly » 0 x 200 en lui-même est un avertissement plutôt qu’une erreur. Ce code de retour indique que des références indirectes manquantes ont été trouvés, mais que FxCopCmd a été en mesure de les gérer. Il s’agit d’un avertissement qu’il est possible que certains résultats de l’analyse a été compromises. Envisagez le code de retour « Erreur des références d’Assembly » comme une erreur lorsqu’il est combiné avec n’importe quel autre code de retour.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs d’application d’analyse du code](../code-quality/code-analysis-application-errors.md)

@@ -11,19 +11,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943937"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+
+::: moniker-end
 
 Cet article part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../get-started/csharp/tutorial-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 

@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440843"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Créer des vues personnalisées d’objets natifs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  Natvis remplace le fichier **autoexp.dat** utilisé dans les versions antérieures de Visual Studio et propose la syntaxe XML, de meilleurs diagnostics, le contrôle de version et la prise en charge de plusieurs fichiers.  
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser l'infrastructure Natvis pour les visualisations dans les cas suivants :  
+> Vous ne pouvez pas utiliser l'infrastructure Natvis pour les visualisations dans les cas suivants :  
 > 
 > - Vous effectuez le débogage d'un projet de bureau Windows C++ avec le type de débogueur **mixte**.  
 >   - Vous effectuez un débogage en mode mixte dans une application de bureau Windows en mode de compatibilité managé (**Outils / Options / Débogage / Général / Utiliser le mode de compatibilité managé**).  
@@ -304,7 +304,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  Dans l'expression `DisplayString` , `x` et `y`, qui sont membres de `CPoint`, sont entre des accolades, donc leurs valeurs sont évaluées. L'expression montre également comment échapper une accolade en utilisant des accolades doubles ( `{{` ou `}}` ).  
 
 > [!NOTE]
->  L'élément `DisplayString` est le seul élément qui accepte des chaînes arbitraires et la syntaxe avec accolades. Tous les autres éléments de visualisation acceptent uniquement les expressions qui sont évaluées par le débogueur.  
+> L'élément `DisplayString` est le seul élément qui accepte des chaînes arbitraires et la syntaxe avec accolades. Tous les autres éléments de visualisation acceptent uniquement les expressions qui sont évaluées par le débogueur.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  L'élément `StringView` définit l'expression dont la valeur va être envoyée au visualiseur de texte intégré. Supposons, par exemple, que nous avons la visualisation suivante pour le type `ATL::CStringT` :  
@@ -336,7 +336,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  ![Données CStringT avec visualiseur StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Notez que l'expression `{m_pszData,su}` inclut un spécificateur de format C++, `su` , pour afficher la valeur sous forme de chaîne Unicode. Pour plus d'informations, voir [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
+> Notez que l'expression `{m_pszData,su}` inclut un spécificateur de format C++, `su` , pour afficher la valeur sous forme de chaîne Unicode. Pour plus d'informations, voir [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
 
 ### <a name="BKMK_Expand"></a> Expand  
  Le nœud `Expand` est utilisé pour personnaliser les enfants du type visualisé quand l'utilisateur le développe dans les fenêtres de variables. Il accepte la liste des nœuds enfants qui définissent les éléments enfants.  
@@ -368,7 +368,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  Les expressions spécifiées dans les éléments `Width` et `Height` sont évaluées et elles s'affichent dans la colonne Valeur. Le nœud `[Raw View]` est automatiquement créé par le débogueur chaque fois qu'une expansion personnalisée est utilisée. Il est développé dans la capture d'écran ci-dessus pour montrer comment l'affichage brut de l'objet diffère de sa visualisation. L'expansion par défaut Visual Studio crée une sous-arborescence pour la classe de base et répertorie tous les membres de données de la classe de base en tant qu'enfants.  
 
 > [!NOTE]
->  Si l'expression de l'élément item pointe vers un type complexe, le nœud `Item` lui-même peut être développé.  
+> Si l'expression de l'élément item pointe vers un type complexe, le nœud `Item` lui-même peut être développé.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
  Utilisez le nœud `ArrayItems` pour que le débogueur Visual Studio interprète le type comme un tableau et en affiche les éléments individuels. La visualisation pour `std::vector` est un bon exemple :  

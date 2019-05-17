@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2cac5099cb8dddad10c14e27c7a99b91200b4c09
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: a8b4a067facf713af1b0547654be9aaf54500025
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440634"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_compilerGenerated ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="requirements"></a>Configuration requise  
   

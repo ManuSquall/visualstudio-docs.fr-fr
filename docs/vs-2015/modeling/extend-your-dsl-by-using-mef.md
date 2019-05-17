@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5685adb5a10ddc109ec8a4695e1dbfae6d30a6df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696191"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
   
  En outre, lorsque vous activez MEF dans votre DSL, il peut être plus facile d’écrire certaines des fonctionnalités de votre DSL, même si elles sont construites avec la solution DSL.  
   
- Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Pour activer votre DSL d’être étendue par MEF  
   
@@ -32,7 +32,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
     Nom de fichier : `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  Le GUID du jeu de ce fichier pour être le même que le CommandSetId GUID qui est défini dans DslPackage\GeneratedCode\Constants.tt  
+   > Le GUID du jeu de ce fichier pour être le même que le CommandSetId GUID qui est défini dans DslPackage\GeneratedCode\Constants.tt  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -376,6 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>Voir aussi  
  [Proposent des Extensions de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md)

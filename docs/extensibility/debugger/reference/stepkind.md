@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715867"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460769"
 ---
 # <a name="stepkind"></a>STEPKIND
 Spécifie le type d’étape pour l’exécution pas à pas.
@@ -43,19 +46,23 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Membres
- Étapes de STEP_INTO dans une fonction.
+## <a name="fields"></a>Champs
+ `STEP_INTO`\
+ Étapes dans une fonction.
 
- Étapes DECALAGE_PASSES sur une fonction.
+ `STEP_OVER`\
+ Exécute une fonction.
 
- Étapes de STEP_OUT partir d’une fonction.
+ `STEP_OUT`\
+ Sort une fonction.
 
- Étapes de STEP_BACKWARDS descendante dans une fonction.
+ `STEP_BACKWARDS`\
+ Étapes vers l’arrière dans une fonction.
 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

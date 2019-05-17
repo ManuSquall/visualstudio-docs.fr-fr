@@ -10,12 +10,12 @@ ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b28db87dafc5ce6f247e49c8a0b765a29faa938c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 20493991d8e0740ca045f041e2ba94cf3735ad1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436108"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implémentation d’un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Vous pouvez utiliser les classes dans l’infrastructure de package managé (MPF
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Présentation du service de langage hérité](../../extensibility/internals/legacy-language-service-overview.md)  
@@ -40,10 +40,10 @@ Vous pouvez utiliser les classes dans l’infrastructure de package managé (MPF
  [Scanneur et analyseur du service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
  Décrit les deux analyseurs qui sont requises pour implémenter toutes les fonctionnalités d’un service de langage à l’aide du MPF.  
   
- [Procédure pas à pas : Création d’un Service de langage hérité](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
+ [Procédure pas à pas : Création d’un service de langage hérité](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
  Fournit les étapes de base qui sont requises pour implémenter un service de langage MPF dans un VSPackage.  
   
- [Procédure pas à pas : Obtention d’une liste d’extraits de Code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
  Illustre les techniques de récupération d’une liste d’extraits de code installé.  
   
  [Fonctionnalités du service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)  

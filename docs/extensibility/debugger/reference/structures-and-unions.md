@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0ef171d24b3744657a2cb05338b2b124a6331c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7522e1c00598574e46e1f23622f0e051fcfb2c4e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692526"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460868"
 ---
 # <a name="structures-and-unions"></a>Structures et unions
 Voici les structures et unions dans le SDK de débogage de Visual Studio.
@@ -132,7 +132,7 @@ Voici les structures et unions dans le SDK de débogage de Visual Studio.
 
 - [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) décrit une adresse qui est relative à un `this` pointeur (`Me` en Visual Basic).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h, sh.h ou ee.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790860"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460619"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procédure : Créer et configurer des datasets dans Visual Studio
 
 Un jeu de données est un ensemble d’objets de stocker des données à partir d’une base de données en mémoire et prend en charge le suivi des modifications pour activer la créer, lire, mettre à jour et supprimer (CRUD) des opérations sur ces données sans avoir à être toujours connectés à la base de données. Jeux de données ont été conçus pour simple *formulaires sur données* applications métier. Pour les nouvelles applications, envisagez d’utiliser Entity Framework pour stocker et modéliser des données en mémoire. Pour utiliser des jeux de données, vous devez posséder une connaissance base des concepts de base de données.
 

@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443987"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097386"
 Cette rubrique vous dirige vers des supports de présentation qui vous permettent de comprendre le développement d’applications mobiles multiplateformes avec Xamarin. Si vous n’avez pas encore installé Visual Studio et Xamarin, commencez d’abord le processus [Setup and install](../cross-platform/setup-and-install.md) , puis revenez ici pour consulter ces ressources pendant l’exécutant des programmes d’installation.  
   
 > [!NOTE]
->  Sauf mention contraire, nous vous suggérons de lire d’abord seulement les pages qui sont ici en lien direct, et non pas des pages accessibles indirectement. Si le processus d’installation est en cours d’exécution une fois que vous avez terminé cette liste, n’hésitez pas à revenir en arrière et à explorer d’autres rubriques.  
+> Sauf mention contraire, nous vous suggérons de lire d’abord seulement les pages qui sont ici en lien direct, et non pas des pages accessibles indirectement. Si le processus d’installation est en cours d’exécution une fois que vous avez terminé cette liste, n’hésitez pas à revenir en arrière et à explorer d’autres rubriques.  
 >   
->  N’hésitez pas non plus à consulter les rubriques « Notions de base » et à revenir ultérieurement dans les rubriques « Approfondissement ».  
+> N’hésitez pas non plus à consulter les rubriques « Notions de base » et à revenir ultérieurement dans les rubriques « Approfondissement ».  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Notions de base : Introduction à Xamarin  
  *10 à 20 minutes*  

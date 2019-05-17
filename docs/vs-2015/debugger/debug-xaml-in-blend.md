@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434094"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
  Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriées dans l’onglet **Balisage** du volet **Résultats**.  
   
 > [!TIP]
->  XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.  
+> XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.  
   
  Certaines causes courantes d’erreurs de syntaxe XAML se présentent comme suit :  
   

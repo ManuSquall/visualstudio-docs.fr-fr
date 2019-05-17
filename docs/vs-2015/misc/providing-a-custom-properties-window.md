@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810698"
 ---
 # <a name="providing-a-custom-properties-window"></a>Fourniture d’une fenêtre de propriétés personnalisée
 Il est possible de fournir votre propre **propriétés** fenêtre pour un système de projet donné, au lieu de l’extension de la **propriétés** fenêtre fournie par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Le scénario plus fréquemment rencontré est lorsque vous devez implémentez l’objet que doit se trouver dans le frame de fenêtre.  

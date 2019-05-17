@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084039"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686962"
 ---
 # <a name="managing-external-tools"></a>Gestion des outils externes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
   
 1. Create GUID : génère un GUID.  
   
-2. Error Lookup : obtient un message d'erreur de la valeur entrée. Pour plus d’informations, consultez [Référence d’ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Error Lookup : obtient un message d'erreur de la valeur entrée. Pour plus d’informations, consultez [Référence d’ERRLOOK](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. ATL/MFC Trace Tool : montre des messages de trace de débogage dans les sources ATL et MFC.  
   
@@ -85,7 +85,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 6. Éditeur de Configuration de Service WCF : Vous permet de créer et modifier les paramètres de configuration pour les services WCF.  
   
 > [!WARNING]
->  Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Ajout de nouveaux outils  
  Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes**, cliquez sur **Ajouter**, puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :  
@@ -100,7 +100,7 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
  Les arguments suivants sont des variables Visual Studio assignées lorsque vous exécutez un outil externe. Des liens vers des outils externes (par exemple, Bloc-notes ou Spy++) peuvent être répertoriés dans le menu **Outils** à l’aide de la boîte de dialogue Outils externes.  
   
 > [!NOTE]
->  La barre d'état IDE affiche les variables Ligne active et Colonne active pour indiquer l'emplacement du point d'insertion dans l'éditeur de code actif. La variable Texte actif retourne le texte ou le code sélectionné à cet emplacement.  
+> La barre d'état IDE affiche les variables Ligne active et Colonne active pour indiquer l'emplacement du point d'insertion dans l'éditeur de code actif. La variable Texte actif retourne le texte ou le code sélectionné à cet emplacement.  
   
 |Nom|Argument|Description|  
 |----------|--------------|-----------------|  
@@ -122,4 +122,4 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de génération C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Outils de génération C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

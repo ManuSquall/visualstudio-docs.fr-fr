@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083957"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679830"
 ---
 # <a name="signing-in-to-visual-studio"></a>Connexion à Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 - **Bénéficier d’un large éventail d’avantages** à partir du programme Visual Studio Dev Essentials, notamment de logiciels gratuits, de formations, d’une assistance et plus encore. Voir [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
-- **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Déverrouiller définitivement une édition de Visual Studio Express** - Vous pouvez utiliser n'importe quelle édition de Visual Studio Express aussi longtemps que vous le souhaitez, au lieu de vous limiter à la période d'évaluation de 30 jours.
 

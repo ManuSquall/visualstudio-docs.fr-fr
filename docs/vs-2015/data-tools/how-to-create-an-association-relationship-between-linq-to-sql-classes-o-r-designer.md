@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0907370ae8ad3c0d5e6b5ebc3c8bcab842474249
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056768"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684791"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procédure : Créer une association (relation) entre les classes LINQ to SQL (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../includes/
  Vous devez sélectionner une classe parente et une classe enfant quand vous utilisez la boîte de dialogue **Éditeur d’associations** pour créer une association. La classe parente est la classe d'entité qui contient la clé primaire ; la classe enfant est la classe d'entité qui contient la clé étrangère. Par exemple, si les classes d'entité ont été créées pour mapper aux tables Customers et Orders de Northwind, la classe Customer constitue la classe parente et la classe Order, la classe enfant.  
   
 > [!NOTE]
->  Lorsque vous faites glisser les tables à partir de **Explorateur de serveurs**/**Explorateur de base de données** sur le [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), les associations sont automatiquement créées en fonction existant relations de clé étrangère dans la base de données.  
+> Lorsque vous faites glisser les tables à partir de **Explorateur de serveurs**/**Explorateur de base de données** sur le [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), les associations sont automatiquement créées en fonction existant relations de clé étrangère dans la base de données.  
   
  Après avoir créé une association, lorsque vous sélectionnez l’association dans le Concepteur O/R, il existe des propriétés configurables dans le **propriétés** fenêtre. (L'association est la ligne entre les classes connexes.) Le tableau suivant décrit les propriétés d'une association.  
   
@@ -50,7 +50,7 @@ Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../includes/
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Méthodes DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Guide pratique pour Représenter les clés primaires](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
+ [Guide pratique pour Représenter les clés primaires](https://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)

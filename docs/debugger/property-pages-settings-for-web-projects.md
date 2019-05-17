@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903939"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Paramètres des pages de propriétés pour les projets Web
 Vous pouvez modifier les paramètres de propriété de configuration Debug d’un site web dans la boîte de dialogue **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.

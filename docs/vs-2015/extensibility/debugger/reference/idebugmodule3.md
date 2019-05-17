@@ -12,12 +12,12 @@ ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 923bdb2811a1200b7f638fc2f5727e2d1dbe83b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 326efe27ae35de1550ebc8230ab3c94229589640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690955"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugModule3 : IDebugModule2
  Le moteur de débogage (dé) implémente cette interface pour prendre en charge d’autres emplacements de symboles et de fonctionner avec les États JustMyCode (voir la [glossaire du débogueur Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) pour une définition de « JustMyCode »).  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Un appel à [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) retourne cette interface. L’envoie DE la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) interface avec le Gestionnaire de débogage de session (SDM) à l’aide de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode). En outre, un appel à [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interface retourne cette interface.  
+ Un appel à [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) retourne cette interface. L’envoie DE la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) interface avec le Gestionnaire de débogage de session (SDM) à l’aide de la [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) (méthode). En outre, un appel à [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur un [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interface retourne cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Outre les méthodes sur le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) interface, cette interface implémente les méthodes suivantes :  

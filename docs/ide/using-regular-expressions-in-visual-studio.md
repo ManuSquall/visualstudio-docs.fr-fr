@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821076"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -61,12 +61,12 @@ Voici quelques exemples :
 |Correspond à la limite d'un mot|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin` correspond à "in" dans "inside", mais pas dans "pinto".|
 |Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne).|\r?\n|`End\r?\nBegin` correspond à "End" et à "Begin" uniquement quand "END" est la dernière chaîne d’une ligne et "Begin" la première chaîne de la ligne suivante.|
 |Correspond à n'importe quel caractère alphanumérique|\w|`a\wd` correspond à "add" et à "a1d", mais pas à "a d".|
-|Correspond à n'importe quel espace blanc|(?([^\r\n])\s)|`Public\sInterface` correspond à l’expression "Public Interface".|
+|Correspond à n'importe quel espace blanc|\s|`Public\sInterface` correspond à l’expression "Public Interface".|
 |Correspond à n'importe quel caractère numérique|\d|`\d` correspond à "3" dans "3456", à "2" dans "23" et à "1" dans "1".|
 |Correspond à un caractère Unicode|\uXXXX où XXXX spécifie la valeur du caractère Unicode.|`\u0065` correspond au caractère "e".|
 |Correspond à un identificateur|\b[\_\w-[0-9]][\_\w]*\b|Correspond à « type1 » mais pas à « &type1 » ni « #define ».|
 |Correspond à une chaîne entre guillemets|((\\".+?\\")&#124;('.+?'))|Correspond à n'importe quelle chaîne entre apostrophes ou guillemets.|
-|Correspond à un nombre hexadécimal|\b0[xX]([0-9a-fA-F]\)\b|Correspond à « 0xc67f » mais pas à « 0xc67fc67f ».|
+|Correspond à un nombre hexadécimal|\b0[xX]([0-9a-fA-F]+\)\b|Correspond à « 0xc67f » mais pas à « 0xc67g ».|
 |Correspond à des nombres entiers et décimaux|\b[0-9]*\\.\*[0-9]+\b|Correspond à « 1,333 ».|
 
 > [!TIP]

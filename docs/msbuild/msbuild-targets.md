@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004579"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 Les cibles regroupent les tâches dans un ordre particulier et permet au processus de génération d’être factorisé en unités plus petites. Par exemple, une cible peut supprimer tous les fichiers du répertoire de sortie pour préparer la génération, pendant qu’une autre compile les entrées pour le projet et les place dans le répertoire vide. Pour plus d’informations sur les tâches, consultez [Tâches MSBuild](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 ## <a name="target-build-order"></a>Ordre de génération des cibles
  Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Il existe plusieurs façons de spécifier l’ordre d’exécution des cibles.
 
--   Cibles initiales
+- Cibles initiales
 
--   Cibles par défaut
+- Cibles par défaut
 
--   Première cible
+- Première cible
 
--   Dépendances de cible
+- Dépendances de cible
 
--   `BeforeTargets` et `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` et `AfterTargets` (MSBuild 4.0)
 
 Une cible n’est jamais exécutée deux fois au cours d’une même génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible est exécutée, sa contribution à la génération est terminée.
 

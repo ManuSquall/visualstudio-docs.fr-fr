@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690605"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Débogage just-in-time dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
 5. Fermer le **Éditeur du Registre** fenêtre.
 
 > [!NOTE]
->  Si vous essayez de désactiver le débogage d’une application côté serveur juste-à-temps et que ces étapes ne résolvent pas le problème, désactivez le débogage côté serveur dans les paramètres d’application IIS et recommencez.
+> Si vous essayez de désactiver le débogage d’une application côté serveur juste-à-temps et que ces étapes ne résolvent pas le problème, désactivez le débogage côté serveur dans les paramètres d’application IIS et recommencez.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Pour activer le débogage juste-à-temps d'un Windows Forms
 
@@ -110,7 +110,7 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
     </configuration>
     ```
 
-3. Dans une application Windows Forms C++, vous devez également définir `DebuggableAttribute` dans un fichier .config ou dans votre code. Si vous effectuez la compilation avec [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) et sans [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), le compilateur définit cet attribut pour vous. Toutefois, si vous souhaitez déboguer une version Release non optimisée, vous devez le définir vous-même. Pour ce faire, ajoutez la ligne suivante au fichier AssemblyInfo.cpp de votre application :
+3. Dans une application Windows Forms C++, vous devez également définir `DebuggableAttribute` dans un fichier .config ou dans votre code. Si vous effectuez la compilation avec [/Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) et sans [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), le compilateur définit cet attribut pour vous. Toutefois, si vous souhaitez déboguer une version Release non optimisée, vous devez le définir vous-même. Pour ce faire, ajoutez la ligne suivante au fichier AssemblyInfo.cpp de votre application :
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Afin que cette procédure fonctionne un [configuration release](../debugger/how-to-set-debug-and-release-configurations.md), vous devez désactiver [uniquement mon Code](../debugger/just-my-code.md). Dans Visual Studio, cliquez sur **Outils / Options**. Dans le **Options** boîte de dialogue, sélectionnez **débogage**. Décochez la case **activer uniquement mon Code**.
+> Afin que cette procédure fonctionne un [configuration release](../debugger/how-to-set-debug-and-release-configurations.md), vous devez désactiver [uniquement mon Code](../debugger/just-my-code.md). Dans Visual Studio, cliquez sur **Outils / Options**. Dans le **Options** boîte de dialogue, sélectionnez **débogage**. Décochez la case **activer uniquement mon Code**.
 
  Générez la solution (dans Visual Studio, choisissez **générer / régénérer la Solution**). Vous pouvez choisir le débogage ou la configuration Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Ne cliquez pas sur **Annuler**! Après quelques secondes, vous devriez voir deux boutons, **déboguer** et **fermer le programme**. Cliquez sur **déboguer**.
 
 > [!CAUTION]
->  Si votre application contient le code non fiable, une boîte de dialogue avec un avertissement de sécurité s’affiche. Cette boîte de dialogue vous permet de décider s'il faut poursuivre ou non le débogage. Avant de continuer le débogage, déterminez si vous faites confiance au code. Avez-vous écrit le code vous-même ? Faites-vous confiance à l'auteur du code ? Si l'application s'exécute sur un ordinateur distant, reconnaissez-vous le nom du processus ? Même si l'application s'exécute localement, cela ne signifie pas nécessairement qu'elle peut être approuvée. Envisagez la possibilité de code malveillant s’exécute sur votre ordinateur. Si vous décidez que le code vous vous apprêtez à déboguer est fiable, cliquez sur **déboguer**. Sinon, cliquez sur **ne déboguez pas**.
+> Si votre application contient le code non fiable, une boîte de dialogue avec un avertissement de sécurité s’affiche. Cette boîte de dialogue vous permet de décider s'il faut poursuivre ou non le débogage. Avant de continuer le débogage, déterminez si vous faites confiance au code. Avez-vous écrit le code vous-même ? Faites-vous confiance à l'auteur du code ? Si l'application s'exécute sur un ordinateur distant, reconnaissez-vous le nom du processus ? Même si l'application s'exécute localement, cela ne signifie pas nécessairement qu'elle peut être approuvée. Envisagez la possibilité de code malveillant s’exécute sur votre ordinateur. Si vous décidez que le code vous vous apprêtez à déboguer est fiable, cliquez sur **déboguer**. Sinon, cliquez sur **ne déboguez pas**.
 
  Le **débogueur de Visual Studio juste à temps** fenêtre s’affiche :
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d781358258457dc12a3657cf3ff76273315219c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422938"
 ---
 # <a name="t4-parameter-directive"></a>Directive du paramètre T4
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtention d’arguments de TextTemplate.exe
 
 > [!IMPORTANT]
->  Le `parameter` directive ne récupère pas les valeurs définies dans le `-a` paramètre de la `TextTransform.exe` utilitaire. Pour obtenir ces valeurs, définissez `hostSpecific="true"` dans le `template` directive et l’utilisation `this.Host.ResolveParameterValue("","","argName")`.
+> Le `parameter` directive ne récupère pas les valeurs définies dans le `-a` paramètre de la `TextTransform.exe` utilitaire. Pour obtenir ces valeurs, définissez `hostSpecific="true"` dans le `template` directive et l’utilisation `this.Host.ResolveParameterValue("","","argName")`.

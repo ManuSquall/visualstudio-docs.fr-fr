@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078640"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476599"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Propagation et réponse aux modifications en attente
+# <a name="respond-to-and-propagate-changes"></a>Répondre aux et propager les modifications
+
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification aux autres parties du modèle, ou à des ressources externes telles que des fichiers, de bases de données ou d’autres composants.
 
-## <a name="in-this-section"></a>Dans cette section
- En règle générale, prenez en compte ces techniques dans l’ordre suivant :
+## <a name="reference"></a>Référence
+
+En règle générale, prenez en compte ces techniques dans l’ordre suivant :
 
 |Technique|Scénarios|Pour plus d'informations|
 |-|-|-|
@@ -34,12 +36,13 @@ Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire 
 |Règles de sélection|Règles de sélection restreindre ce que l’utilisateur peut sélectionner.|[Guide pratique pour accéder à la sélection actuelle et la contraindre](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indiquer les États des éléments de modèle à l’aide des fonctionnalités de formes et connecteurs tels que les clichés instantanés, pointes de flèche, couleur et les largeurs de ligne et le style.|[Mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Comparaison des règles et des événements de Store**
- Utilitaires de notification de modification, les règles et les événements sont exécutés lorsque des modifications se produisent dans un modèle.
+## <a name="compare-rules-and-store-events"></a>Comparer des règles et de stocker les événements
 
- Les règles sont généralement appliquées à la transaction finale dans lequel la modification s’est produite, et les événements sont appliqués après que les modifications dans une transaction sont validées.
+Utilitaires de notification de modification, les règles et les événements sont exécutés lorsque des modifications se produisent dans un modèle.
 
- Événements de stockage permet de synchroniser le modèle avec des objets en dehors de Store, les règles de maintenir la cohérence dans le Store.
+Les règles sont généralement appliquées à la transaction finale dans lequel la modification s’est produite, et les événements sont appliqués après que les modifications dans une transaction sont validées.
+
+Événements de stockage permet de synchroniser le modèle avec des objets en dehors de Store, les règles de maintenir la cohérence dans le Store.
 
 - **Création de règles personnalisées** vous créez une règle personnalisée comme une classe dérivée à partir d’une règle abstraite. Vous devez également informer l’infrastructure sur la règle personnalisée. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 

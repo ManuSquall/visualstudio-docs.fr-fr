@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410051"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Liste des tâches, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Cette page Options vous permet d’ajouter, de supprimer et de modifier les jeto
  Quand cette option est sélectionnée, une boîte de message s’affiche chaque fois qu’une tâche utilisateur est supprimée de la **liste des tâches**, ce qui vous permet de confirmer la suppression. Cette option est activée par défaut.  
   
 > [!NOTE]
->  Pour supprimer un commentaire de tâche, cliquez sur le lien pour rechercher le commentaire, puis supprimez-le de votre code.  
+> Pour supprimer un commentaire de tâche, cliquez sur le lien pour rechercher le commentaire, puis supprimez-le de votre code.  
   
  Afficher seulement les noms des fichiers  
  Quand cette option est sélectionnée, la colonne **Fichier** de la **liste des tâches** affiche seulement les noms des fichiers à modifier, mais pas leurs chemins complets.  
@@ -53,7 +53,7 @@ Cette page Options vous permet d’ajouter, de supprimer et de modifier les jeto
  Affiche une liste de jetons, et vous permet d'ajouter ou de supprimer des jetons personnalisés. Les jetons de commentaire respectent la casse dans Visual C# et Visual C++, mais pas dans Visual Basic.  
   
 > [!NOTE]
->  Si vous ne tapez pas le jeton souhaité exactement comme il apparaît dans la **liste des jetons**, aucune tâche de commentaire ne s’affichera dans la **liste des tâches**.  
+> Si vous ne tapez pas le jeton souhaité exactement comme il apparaît dans la **liste des jetons**, aucune tâche de commentaire ne s’affichera dans la **liste des tâches**.  
   
  Priorité  
  Définit la priorité des tâches qui utilisent le jeton sélectionné. Les commentaires de tâche qui commencent par ce jeton reçoivent automatiquement la priorité désignée dans la **liste des tâches**.  
@@ -71,7 +71,7 @@ Cette page Options vous permet d’ajouter, de supprimer et de modifier les jeto
  Cliquez pour apporter des modifications à un jeton existant en utilisant les valeurs entrées dans les champs **Nom** et **Priorité**.  
   
 > [!NOTE]
->  Vous ne pouvez pas renommer ou supprimer le jeton de commentaire par défaut, mais vous pouvez changer son niveau de priorité.  
+> Vous ne pouvez pas renommer ou supprimer le jeton de commentaire par défaut, mais vous pouvez changer son niveau de priorité.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de la liste des tâches](../../ide/using-the-task-list.md)   

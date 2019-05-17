@@ -1,5 +1,5 @@
 ---
-title: 'Comment : étendre le processus de génération | Microsoft Docs'
+title: Guide pratique pour étendre le processus de build | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,22 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108594"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Comment : étendre le processus de génération Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-
 Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est défini par une série de fichiers .targets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] importés dans votre fichier projet. Parmi ces fichiers importés, Microsoft.Common.targets peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cette rubrique décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :
 
--   Substitution de cibles spécifiques prédéfinies dans Microsoft.Common.targets.
+- Substitution de cibles spécifiques prédéfinies dans Microsoft.Common.targets.
 
--   Substitution de propriétés « DependsOn » définies dans Microsoft.Common.targets.
+- Substitution de propriétés « DependsOn » définies dans Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Substitution de cibles prédéfinies
  Le fichier Microsoft.Common.targets contient un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines cibles majeures du processus de génération. Par exemple, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] appelle la cible `BeforeBuild` avant la cible principale `CoreBuild` et appelle la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides de Microsoft.Common.targets ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles de votre choix dans un fichier projet qui importe Microsoft.Common.targets. Ce faisant, vous pouvez utiliser les tâches [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour avoir plus de contrôle sur le processus de génération.
@@ -110,13 +109,13 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
 
 #### <a name="to-override-a-dependson-property"></a>Pour substituer une propriété « DependsOn »
 
-1.  Identifiez la propriété « DependsOn » prédéfinie dans Microsoft.Common.targets que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés « DependsOn » qui sont communément substituées.
+1. Identifiez la propriété « DependsOn » prédéfinie dans Microsoft.Common.targets que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés « DependsOn » qui sont communément substituées.
 
-2.  Définissez une autre instance de la ou des propriétés à la fin de votre fichier projet. Incluez la propriété d’origine (par exemple `$(BuildDependsOn)`) dans la nouvelle propriété.
+2. Définissez une autre instance de la ou des propriétés à la fin de votre fichier projet. Incluez la propriété d’origine (par exemple `$(BuildDependsOn)`) dans la nouvelle propriété.
 
-3.  Définissez vos cibles personnalisées avant ou après la définition de la propriété.
+3. Définissez vos cibles personnalisées avant ou après la définition de la propriété.
 
-4.  Générez le fichier projet.
+4. Générez le fichier projet.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propriétés « DependsOn » communément substituées
 
@@ -127,4 +126,4 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
 |`CompileDependsOn`|Propriété à substituer si vous souhaitez insérer des processus personnalisés avant ou après l’étape de compilation.|
 
 ## <a name="see-also"></a>Voir aussi
- [Intégration de Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Concepts MSBuild](../msbuild/msbuild-concepts.md) [. Fichiers de cibles](../msbuild/msbuild-dot-targets-files.md)
+ [Intégration de Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Concepts MSBuild](../msbuild/msbuild-concepts.md) [Fichiers .targets](../msbuild/msbuild-dot-targets-files.md)

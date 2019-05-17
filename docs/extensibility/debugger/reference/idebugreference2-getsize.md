@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 681cede68a2d649cd9f072b6c10e8476a9625f6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683426"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458692"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
 Obtient la taille, en octets, de la valeur de la référence. Réservé à un usage ultérieur.
@@ -36,8 +39,8 @@ int GetSize ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSize`
+## <a name="parameters"></a>Paramètres
+ `pdwSize`\
 
  [out] Retourne la taille, en octets, de la valeur de la référence.
 

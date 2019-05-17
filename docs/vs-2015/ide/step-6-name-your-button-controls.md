@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26ba081e893867fcd80c7fc969301f417400d37a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679290"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059966"
 Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajouté, l’IDE l’a nommé automatiquement **pictureBox1**. Il n’existe qu’un seul CheckBox, appelé **checkBox1**. Vous écrirez bientôt du code qui fera référence à CheckBox et PictureBox. Étant donné qu’il n’existe qu’un seul de ces deux contrôles, vous comprendrez ce que signifie **pictureBox1** ou **checkBox1** dans votre code.  
   
 > [!NOTE]
->  En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1**et ainsi de suite.  
+> En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1**et ainsi de suite.  
   
  Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.  
   
@@ -36,7 +36,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 Fenêtre Propriétés avec nom closeButton  
   
     > [!NOTE]
-    >  Si vous essayez de remplacer le nom de votre bouton par **close Button** (autrement dit avec un espace entre les mots close et Button), l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
+    > Si vous essayez de remplacer le nom de votre bouton par **close Button** (autrement dit avec un espace entre les mots close et Button), l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.  
   
 2. Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.  
   
@@ -53,14 +53,14 @@ Onglet Form1.cs avec code Visual C#
      Vous regardez le code intitulé `showButton_Click()`. L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code (connu sous le nom de *méthode*) s’exécute lorsque vous exécutez votre programme et sélectionnez le contrôle (dans ce cas, le bouton **Afficher une image** ).  
   
     > [!NOTE]
-    >  Dans ce didacticiel, tout ce qui se trouve entre les parenthèses () a été supprimé pour simplifier le code Visual Basic qui est généré automatiquement. Chaque fois que cette situation se produit, vous pouvez supprimer le même code. Votre programme fonctionnera quand même. Dans les autres didacticiels, le code généré automatiquement est simplifié autant que possible.  
+    > Dans ce didacticiel, tout ce qui se trouve entre les parenthèses () a été supprimé pour simplifier le code Visual Basic qui est généré automatiquement. Chaque fois que cette situation se produit, vous pouvez supprimer le même code. Votre programme fonctionnera quand même. Dans les autres didacticiels, le code généré automatiquement est simplifié autant que possible.  
   
 5. Sélectionnez à nouveau l’onglet Concepteur Windows Forms (**Form1.cs [Design]** en Visual C#, **Form1.vb [Design]** en Visual Basic), puis ouvrez le fichier de code du bouton **Effacer l’image** pour créer une méthode correspondante dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.  
   
 6. Pour ajouter une méthode supplémentaire, ouvrez le fichier de code du contrôle CheckBox dans le Concepteur Windows Forms pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()` . Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.  
   
     > [!NOTE]
-    >  Lorsque vous travaillez sur un programme, vous basculez régulièrement entre l’éditeur de code et le Concepteur Windows Forms. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez l’ **Explorateur de solutions** pour ouvrir le Concepteur Windows Forms en double-cliquant sur **Form1.cs** en Visual C# ou sur **Form1.vb** en Visual Basic, ou encore dans la barre de menus, choisissez **Affichage**, **Concepteur**.  
+    > Lorsque vous travaillez sur un programme, vous basculez régulièrement entre l’éditeur de code et le Concepteur Windows Forms. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez l’ **Explorateur de solutions** pour ouvrir le Concepteur Windows Forms en double-cliquant sur **Form1.cs** en Visual C# ou sur **Form1.vb** en Visual Basic, ou encore dans la barre de menus, choisissez **Affichage**, **Concepteur**.  
   
      Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.  
   
@@ -73,7 +73,7 @@ Onglet Form1.cs avec code Visual C#
   
      Une fois que vous avez ajouté un gestionnaire d’événements pour un contrôle, vous pouvez y revenir à tout moment en double-cliquant sur le contrôle via le Concepteur Windows Forms ou, dans la barre de menus, en choisissant **Afficher**, **Code**.  
   
-     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré. Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé méthode du gestionnaire d’événements `showButton_Click()` . De même, des parenthèses ouvrantes et fermantes () sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes. Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser**, **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Consultez [Renommer (refactorisation c#)](../csharp-ide/rename-refactoring-csharp.md) ou [refactorisation et boîte de dialogue Renommer](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) pour plus d’informations.  
+     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré. Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé méthode du gestionnaire d’événements `showButton_Click()` . De même, des parenthèses ouvrantes et fermantes () sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes. Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser**, **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Consultez [Renommer (refactorisation c#)](../csharp-ide/rename-refactoring-csharp.md) ou [refactorisation et boîte de dialogue Renommer](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) pour plus d’informations.  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   

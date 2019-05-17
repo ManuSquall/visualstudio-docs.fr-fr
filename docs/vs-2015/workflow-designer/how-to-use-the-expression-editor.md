@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408384"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : Utiliser l’éditeur d’expressions
 L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. Il fournit une expérience d’édition IDE complète, comprenant, entre autres fonctionnalités, IntelliSense, la colorisation, ParamInfo et les tildes d’erreur. Le compilateur valide l'expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert comme un **Éditeur d’Expression** boîte de dialogue.  
@@ -32,7 +32,7 @@ L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md
 - Si vous placez le focus sur l'éditeur d'expressions dans un Workflow Designer réhébergé, il se comporte comme un contrôle TextBox. Lorsque le Workflow Designer réhébergé perd le focus, l'éditeur d'expressions reprend l'apparence d'un TextBlock normal.  
   
 > [!NOTE]
->  IntelliSense pour l'éditeur d'expressions est uniquement disponible dans [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Qu'il soit exécuté dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] ou réhébergé, le compilateur valide l'expression une fois qu'elle a été entrée et l'éditeur d'expressions affiche une icône d'erreur si l'expression n'est pas valide.  
+> IntelliSense pour l'éditeur d'expressions est uniquement disponible dans [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Qu'il soit exécuté dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] ou réhébergé, le compilateur valide l'expression une fois qu'elle a été entrée et l'éditeur d'expressions affiche une icône d'erreur si l'expression n'est pas valide.  
   
 ### <a name="using-the-expression-editor"></a>Utilisation de l'éditeur d'expressions  
   
@@ -41,7 +41,7 @@ L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md
 2. Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.  
   
     > [!NOTE]
-    >  Plusieurs activités de flux de travail ont des éditeurs d'expressions. Des TextBlocks d’expression s’affichent également dans le concepteur de variables, le concepteur d’arguments et le concepteur d’arguments dynamique. L'activité <xref:System.Activities.Statements.Assign> est utilisée à titre d'exemple.  
+    > Plusieurs activités de flux de travail ont des éditeurs d'expressions. Des TextBlocks d’expression s’affichent également dans le concepteur de variables, le concepteur d’arguments et le concepteur d’arguments dynamique. L'activité <xref:System.Activities.Statements.Assign> est utilisée à titre d'exemple.  
   
 3. Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.  
   

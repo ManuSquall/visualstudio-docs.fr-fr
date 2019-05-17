@@ -1,6 +1,6 @@
 ---
 title: Ordre de génération des cibles | Microsoft Docs
-ms.date: 09/04/2018
+ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 502cc7d5f1124ef815455193f00c3f30e77c59a8
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608823"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225953"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
+
 Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Vous pouvez utiliser les attributs suivants pour spécifier l’ordre d’exécution des cibles :
 
 - `InitialTargets`. L’attribut `Project` spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
@@ -33,6 +34,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Cibles initiales
+
  L’attribut `InitialTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`. En règle générale, les cibles initiales sont utilisées pour la vérification des erreurs.
 
  La valeur de l’attribut `InitialTargets` peut être une liste ordonnée de cibles séparées par des points-virgules. Dans l’exemple suivant, la cible `Warm` est exécutée avant la cible `Eject`.
@@ -46,6 +48,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
  Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="default-targets"></a>Cibles par défaut
+
  L’attribut `DefaultTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie la ou les cibles qui sont générées si aucune cible n’est spécifiée explicitement sur une ligne de commande.
 
  La valeur de l’attribut `DefaultTargets` peut être une liste ordonnée de cibles par défaut séparées par des points-virgules. Dans l’exemple suivant, la cible `Clean` est exécutée avant la cible `Build`.
@@ -65,9 +68,11 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
  Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="first-target"></a>Première cible
+
  En l’absence de cibles initiales, cibles par défaut ou cibles de ligne de commande, MSBuild exécute la première cible qu’il rencontre dans le fichier projet ou dans les fichiers projet importés.
 
 ## <a name="target-dependencies"></a>Dépendances de cible
+
  Les cibles peuvent décrire les relations de dépendance existant les unes avec les autres. L’attribut `DependsOnTargets` indique qu’une cible dépend d’autres cibles. Par exemple :
 
 ```xml
@@ -77,6 +82,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
  indique à MSBuild que la cible `Serve` dépend des cibles `Chop` et `Cook`. MSBuild exécute la cible `Chop`, puis la cible `Cook`, avant la cible `Serve`.
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets et AfterTargets
+
  Dans MSBuild 4.0, vous pouvez spécifier l’ordre des cibles à l’aide des attributs `BeforeTargets` et `AfterTargets`.
 
  Examinez le script ci-dessous.
@@ -102,23 +108,28 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 ```
 
 ## <a name="determine-the-target-build-order"></a>Déterminer l’ordre de génération des cibles
+
  MSBuild détermine l’ordre de génération des cibles comme suit :
 
-1.  Les cibles `InitialTargets` sont exécutées.
+1. Les cibles `InitialTargets` sont exécutées.
 
-2.  Les cibles spécifiées en ligne de commande par le commutateur **-target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.
+2. Les cibles spécifiées en ligne de commande par le commutateur **-target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.
 
-3.  L’attribut `Condition` de la cible est évalué. Si l’attribut `Condition` est indiqué et défini sur la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération.
+3. L’attribut `Condition` de la cible est évalué. Si l’attribut `Condition` est indiqué et défini sur la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération.
 
-    Les cibles qui listent la cible conditionnelle dans `BeforeTargets` ou `AfterTargets` s’exécutent toujours dans l’ordre indiqué
+    Les autres cibles qui listent la cible conditionnelle dans `BeforeTargets` ou `AfterTargets` s’exécutent toujours dans l’ordre indiqué.
 
-4.  Avant qu’une cible soit exécutée ou ignorée, si son attribut `Condition` était absent ou n’a pas été évalué à `false`, ses cibles `DependsOnTargets` sont exécutées.
+4. Avant que la cible soit exécutée ou ignorée, ses cibles `DependsOnTargets` sont exécutées, à moins que l’attribut `Condition` soit appliqué à la cible et s’évalue à `false`.
 
-5.  Avant qu’une cible ne soit exécutée ou ignorée, toute cible qui la répertorie dans un attribut `BeforeTargets` est exécutée.
+   > [!NOTE]
+   > Une cible est considérée comme ignorée si elle n’est pas exécutée, car ses éléments de sortie sont à jour (voir [build incrémentielle](../msbuild/incremental-builds.md)). Cette vérification est effectuée juste avant d’exécuter les tâches au sein de la cible et n’affecte pas l’ordre d’exécution des cibles.
 
-6.  Avant l’exécution d’une cible, ses attributs `Inputs` et `Outputs` sont comparés. Si MSBuild détermine que des fichiers de sortie sont obsolètes en ce qui concerne le ou les fichiers d’entrée correspondants, MSBuild exécute la cible. Sinon, MSBuild ignore la cible.
+5. Avant qu’une cible soit exécutée ou ignorée, toute cible listant la cible dans un attribut `BeforeTargets` est exécutée.
 
-7.  Une fois qu’une cible est exécutée ou ignorée, toute cible qui la répertorie dans un attribut `AfterTargets` est exécutée.
+6. Avant l’exécution de la cible, ses attributs `Inputs` et `Outputs` sont comparés. Si MSBuild détermine que des fichiers de sortie sont obsolètes en ce qui concerne le ou les fichiers d’entrée correspondants, MSBuild exécute la cible. Sinon, MSBuild ignore la cible.
+
+7. Une fois qu’une cible est exécutée ou ignorée, toute cible qui la liste dans un attribut `AfterTargets` est exécutée.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Cibles](../msbuild/msbuild-targets.md)

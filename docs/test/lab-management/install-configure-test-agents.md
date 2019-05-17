@@ -1,6 +1,6 @@
 ---
 title: Installer des agents de test et des contrôleurs de test
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965413"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -34,9 +34,9 @@ Le tableau suivant présente la configuration système requise pour l’installa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installer le contrôleur de test et les agents de test
 
-Vous pouvez télécharger des agents pour Visual Studio à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2017*, sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
+Vous pouvez télécharger des agents pour Visual Studio à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2019*, sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
 
-Vous pouvez télécharger des agents pour Visual Studio 2015 et Visual Studio 2013 à partir de la page [Téléchargements plus anciens](https://visualstudio.microsoft.com/vs/older-downloads/).
+Vous pouvez télécharger des agents pour Visual Studio 2017, Visual Studio 2015 et Visual Studio 2013 à partir de la page des [téléchargements plus anciens](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Ces programmes d’installation sont disponibles sous forme de fichiers ISO pour faciliter l’installation sur les machines virtuelles.
 

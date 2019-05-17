@@ -15,22 +15,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704577"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analyser l’utilisation du processeur dans une application universelle Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation de l’UC** vous montre à quels endroits le processeur est utilisé pour l’exécution de code. Pour se concentrer sur des scénarios spécifiques, l’outil Utilisation de l’UC peut être exécuté avec l’outil [Réactivité de l'interface utilisateur XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), avec l’outil [Consommation d’énergie](../profiling/analyze-energy-use-in-store-apps.md) ou avec ces deux outils dans une même session de diagnostic.  
+ Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation de l’UC** vous montre à quels endroits le processeur est utilisé pour l’exécution de code. Pour se concentrer sur des scénarios spécifiques, l’outil Utilisation de l’UC peut être exécuté avec l’outil [Réactivité de l'interface utilisateur XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), avec l’outil [Consommation d’énergie](../profiling/analyze-energy-use-in-store-apps.md) ou avec ces deux outils dans une même session de diagnostic.  
   
 > [!NOTE]
->  L’outil **Utilisation de l’UC** ne peut pas être utilisé avec les applications Silverlight Windows Phone 8.1.  
+> L’outil **Utilisation de l’UC** ne peut pas être utilisé avec les applications Silverlight Windows Phone 8.1.  
   
  Cette procédure pas à pas vous guide tout au long de la collecte et de l’analyse des données liées à l’utilisation du processeur pour une application XAML universelle Windows simple.  
   

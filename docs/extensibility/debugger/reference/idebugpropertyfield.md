@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c3376a6b8d6d269cac1f376e3f7f3f6f8a036f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 52920de731a43b40355c1ca2821e2a86e7ef82b6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709627"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458748"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Cette interface fournit les fonctions qui permettent d’obtenir et de définir une propriété.
@@ -45,7 +45,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="remarks"></a>Notes
  Une propriété est un concept de code managé et représente une méthode qui est traitée comme une variable. Propriétés n’existent pas dans C++ non managé.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

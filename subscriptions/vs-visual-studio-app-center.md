@@ -7,24 +7,24 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810842"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
 App Center a pour objectif de contrôler les applications.
 
--  Intégrez automatiquement votre application, testez-la sur des appareils réels et distribuez-la à d’autres testeurs.
--  Collectez des rapports d’incidents et des analyses d’utilisateurs, y compris des événements personnalisés.
--  Ajoutez des notifications Push à votre application en quelques minutes seulement.
+- Intégrez automatiquement votre application, testez-la sur des appareils réels et distribuez-la à d’autres testeurs.
+- Collectez des rapports d’incidents et des analyses d’utilisateurs, y compris des événements personnalisés.
+- Ajoutez des notifications Push à votre application en quelques minutes seulement.
 
 ## <a name="activation-steps"></a>Étapes d’activation
 La mise en route de Visual Studio App Center est simple.
-1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Visual Studio App Center, puis cliquez sur **Commencer**.
     > [!div class="mx-imgBorder"]
@@ -48,13 +48,10 @@ La mise en route de Visual Studio App Center est simple.
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
 
-
 <sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director).*
-
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
-
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -62,15 +59,15 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q :  Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
 R :  App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
-1.  Ouvrez un autre navigateur, tel que Microsoft Edge ou une version récente de Google Chrome, Firefox ou Safari.
-2.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour Visual Studio, puis connectez-vous.
-3.  Cliquez sur le lien **Commencer** de la vignette Visual Studio App Center.
+1. Ouvrez un autre navigateur, tel que Microsoft Edge ou une version récente de Google Chrome, Firefox ou Safari.
+2. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour Visual Studio, puis connectez-vous.
+3. Cliquez sur le lien **Commencer** de la vignette Visual Studio App Center.
 
 Vous devriez à présent être en mesure d’accéder au portail App Center et de créer votre compte.
 
 ## <a name="support-resources"></a>Ressources de support technique
--  Besoin d’aide avec App Center ?
+- Besoin d’aide avec App Center ?
     - Pour obtenir des conseils et des réponses de l’équipe d’App Center, accédez au centre d’aide [App Center Help Center](https://intercom.help/appcenter/).
     - Consultez la [documentation complète sur App Center](/appcenter/).
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

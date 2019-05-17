@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945514"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -46,7 +46,7 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
   Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur lance l’environnement IDE et le maintient actif à la fin de l’exécution du projet ou de la solution.
 

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79adff9a94258ff3ebb1102763ddf417f79149a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06e88c22cb367be5bfb3d9328da24b049a743889
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223981"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
 Crée un objet qui représente un type primitif.
@@ -37,12 +40,12 @@ int CreatePrimitive (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwElementType`
+## <a name="parameters"></a>Paramètres
+ `dwElementType`\
 
  [in] Valeur à partir de la [CorElementType, énumération](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) qui représente le type primitif.
 
- `pTypeField`
+ `pTypeField`\
 
  [out] Retourne l’interface IDebugField pour le nouveau type.
 

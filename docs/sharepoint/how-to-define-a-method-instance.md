@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814109"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procédure : Définir une instance de méthode
   Vous devez définir au moins une instance de méthode pour chaque méthode dans votre modèle.

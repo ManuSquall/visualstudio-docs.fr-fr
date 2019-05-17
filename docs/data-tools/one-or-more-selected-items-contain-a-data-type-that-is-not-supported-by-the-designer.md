@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12ec2ed7dc2a12556fcb6eeeddbe2d0745ae7f72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: e27cf5c7cd6c6cb16de317e014083af405236019
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928516"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460590"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
 
@@ -27,5 +27,4 @@ Un ou plusieurs des éléments déplacés à partir de **Explorateur de serveurs
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

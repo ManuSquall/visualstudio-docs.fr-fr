@@ -11,12 +11,12 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f253f053f9f8fc9a7e377d78ae46307262c13006
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447261"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importantes pour les filtres du service de langage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Si vous souhaitez créer un filtre de service de langage complet, envisagez de g
 ## <a name="commands-to-handle"></a>Commandes pour un Handle  
   
 > [!NOTE]
->  Il n’est pas obligatoire pour filtrer toutes les commandes dans le tableau suivant.  
+> Il n’est pas obligatoire pour filtrer toutes les commandes dans le tableau suivant.  
   
 |Commande|Description|  
 |-------------|-----------------|  

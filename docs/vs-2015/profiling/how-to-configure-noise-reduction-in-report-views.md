@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c6974d7606a6c60df785fe2301a695f6775716d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432770"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procédure : Configurer la réduction du bruit dans les vues des rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
     1. Sélectionnez **Activer la suppression**. Il s'agit du paramètre par défaut.  
   
         > [!NOTE]
-        >  Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
+        > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
   
     2. Pour configurer le paramètre de valeur, accédez à la liste déroulante **Valeur** et sélectionnez le paramètre applicable.  
   
@@ -67,7 +67,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
     1. Sélectionnez **Activer le repli**. Il s'agit du paramètre par défaut.  
   
         > [!NOTE]
-        >  Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
+        > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
   
     2. Pour configurer le paramètre de valeur, accédez à la liste déroulante **Valeur** et sélectionnez le paramètre applicable.  
   

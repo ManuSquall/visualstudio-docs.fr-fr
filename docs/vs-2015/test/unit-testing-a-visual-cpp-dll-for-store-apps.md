@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445961"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Test unitaire d’une DLL Visual C++ pour les applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
     ```  
   
     > [!TIP]
-    >  Nous vous recommandons de ne pas modifier les tests ayant réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.  
+    > Nous vous recommandons de ne pas modifier les tests ayant réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.  
     >   
     >  Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.  
   
@@ -231,7 +231,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
      ![Échec de RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.  
+    > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.  
   
 4. Améliorez le code testé afin que le nouveau test réussisse. Ajoutez ce qui suit à **RooterLib.cpp** :  
   
@@ -259,7 +259,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
      Les deux tests réussissent.  
   
 > [!TIP]
->  Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.  
+> Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Déboguer un test ayant échoué  
   
@@ -346,6 +346,6 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 2. Choisissez **Exécuter tout** pour tester la méthode refactorisée et vérifier que vous n’avez pas introduit une régression.  
   
     > [!TIP]
-    >  Un ensemble stable de tests unitaires corrects est l'assurance que vous n'avez pas créé de bogues lors de la modification du code.  
+    > Un ensemble stable de tests unitaires corrects est l'assurance que vous n'avez pas créé de bogues lors de la modification du code.  
     >   
     >  Maintenez la refactorisation distincte des autres modifications.

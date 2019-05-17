@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c54c6523caf08e367f245dd92fb7b91470ae0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f5a760389f589dc14e8a768991323c0419dac527
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401498"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Récupère un indicateur qui spécifie si le module ou la fonction a été compilée avec les vérifications de sécurité de dépassement de mémoire tampon (par exemple, le [/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check) commutateur de compilateur).
@@ -39,9 +39,9 @@ HRESULT get_hasSecurityChecks(
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 |Spécification|Description|
 |-----------------|-----------------|

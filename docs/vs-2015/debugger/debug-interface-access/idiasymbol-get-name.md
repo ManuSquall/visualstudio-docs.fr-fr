@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81414989aa2b39c5815554ce2158a4ef85976e77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6609ae23f12a9e85a82448119cb9d0c8ffeaef8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435808"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_name ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="example"></a>Exemple  
   

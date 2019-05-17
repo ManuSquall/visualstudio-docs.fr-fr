@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583143"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition, méthode
 Retourne la position de l’instruction où le point d’arrêt a été lié.  
@@ -47,7 +47,7 @@ HRESULT GetDocumentPosition(
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443116"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procédure : Inclure un assembly personnalisé dans une fonctionnalité BDC
   Votre projet peut référencer des assemblys à partir d’autres projets dans la même solution. Toutefois, vous devez ajouter ces assemblys dans le fichier de fonctionnalité du projet à l’aide de la **affecter les assemblys à des LobSystems référencés** boîte de dialogue.
@@ -40,12 +40,12 @@ ms.locfileid: "60059621"
 4. Dans le **sélectionner un Assembly** , sélectionnez l’assembly personnalisé.
 
     > [!NOTE]
-    >  Assemblys s’affichent uniquement dans le **affecter les assemblys à des LobSystems référencés** boîte de dialogue si vous avez ajouté une référence au projet qui contient l’assembly. Pour plus d'informations, voir [Procédure : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Assemblys s’affichent uniquement dans le **affecter les assemblys à des LobSystems référencés** boîte de dialogue si vous avez ajouté une référence au projet qui contient l’assembly. Pour plus d'informations, voir [Procédure : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 5. Dans le **propriétés de la référence** de groupe, ouvrez la liste qui s’affiche pour le **portée de LobSystem** propriété, choisissez le système LOB des méthodes qui utilisent l’assembly personnalisé, puis choisissez le **OK**  bouton.
 
     > [!NOTE]
-    >  Pour déboguer le code dans l’assembly personnalisé, vous devez ajouter l’assembly pour le package de solution. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Pour déboguer le code dans l’assembly personnalisé, vous devez ajouter l’assembly pour le package de solution. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

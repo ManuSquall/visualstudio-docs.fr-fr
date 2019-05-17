@@ -18,24 +18,24 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081422"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690587"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’appliquent aux applications Windows Store ou Windows Phone Store et à celles créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’appliquent aux applications Windows Store ou Windows Phone Store et à celles créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.  
   
 > [!NOTE]
->  Si la fenêtre n’est pas disponible pendant une session de débogage, vérifiez que le type de débogueur est défini sur **Script** dans les propriétés de débogage du projet.  
+> Si la fenêtre n’est pas disponible pendant une session de débogage, vérifiez que le type de débogueur est défini sur **Script** dans les propriétés de débogage du projet.  
   
 ## <a name="console-object-commands"></a>commandes d’objet de la console  
  Cette table montre la syntaxe des commandes de l’objet `console` , que vous pouvez utiliser dans la fenêtre de la console JavaScript ou pour envoyer des messages à la console à partir de votre code. Cet objet fournit plusieurs formes afin de pouvoir distinguer les messages d’informations et les messages d’erreur, si vous le souhaitez.  
@@ -43,7 +43,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Utilisez la forme de commande plus longue `window.console.[command]` si vous devez éviter toute confusion possible avec les objets locaux nommés console.  
   
 > [!TIP]
->  Les versions antérieures de Visual Studio ne prennent pas en charge l’ensemble complet des commandes. Utilisez IntelliSense sur l’objet console pour obtenir rapidement des informations sur les commandes prises en charge.  
+> Les versions antérieures de Visual Studio ne prennent pas en charge l’ensemble complet des commandes. Utilisez IntelliSense sur l’objet console pour obtenir rapidement des informations sur les commandes prises en charge.  
   
 |Commande|Description|Exemple|  
 |-------------|-----------------|-------------|  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a3ad3a3ef4d93c8fb5567b385aa430e651a3f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406806"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
 La *chaîne de requête* est la partie d’une URL commençant par un point d’interrogation ( ?) qui contient des informations arbitraires sous la forme *nom=valeur*. Supposez que vous avez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nommée `WindowsApp1` que vous hébergez sur `servername`, et que vous souhaitez passer une valeur pour la variable `username` quand l’application démarre. Votre code peut ressembler à ce qui suit :
@@ -30,19 +30,19 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
  Les deux procédures suivantes montrent comment utiliser une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour obtenir les informations de chaîne de requête.
 
 > [!NOTE]
->  Vous pouvez passer des informations dans une chaîne de requête quand votre application est lancée uniquement à l’aide du protocole HTTP, au lieu d’utiliser un partage de fichiers ou le système de fichiers local.
+> Vous pouvez passer des informations dans une chaîne de requête quand votre application est lancée uniquement à l’aide du protocole HTTP, au lieu d’utiliser un partage de fichiers ou le système de fichiers local.
 
  La première procédure montre comment votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut utiliser un petit bloc de code pour lire ces valeurs au démarrage de l’application.
 
  La procédure suivante montre comment configurer votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l’aide de MageUI.exe pour qu’elle accepte des paramètres de chaîne de requête. Vous devez effectuer ces opérations chaque fois que vous publiez votre application.
 
 > [!NOTE]
->  Avant de décider d’activer cette fonctionnalité, consultez la section « Sécurité » plus loin dans cette rubrique.
+> Avant de décider d’activer cette fonctionnalité, consultez la section « Sécurité » plus loin dans cette rubrique.
 
  Pour plus d’informations sur la création d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l’aide du déploiement *Mage.exe* ou *MageUI.exe*, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
->  À compter du .NET Framework 3.5 SP1, vous pouvez passer des arguments de ligne de commande à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hors connexion. Si vous souhaitez fournir des arguments à l’application, vous pouvez passer des paramètres au fichier de raccourci avec l’extension .APPREF-MS.
+> À compter du .NET Framework 3.5 SP1, vous pouvez passer des arguments de ligne de commande à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hors connexion. Si vous souhaitez fournir des arguments à l’application, vous pouvez passer des paramètres au fichier de raccourci avec l’extension .APPREF-MS.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Pour obtenir des informations de chaîne de requête à partir d’une application ClickOnce
 
@@ -68,7 +68,7 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
 4. Dans le menu **Fichier** , sélectionnez **Enregistrer**.
 
 > [!NOTE]
->  Vous pouvez également activer le transfert des chaînes de requête dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Cochez la case **Autoriser le transfert des paramètres d’URL vers l’application** , accessible en ouvrant les **Propriétés du projet**, en sélectionnant l’onglet **Publier** , en cliquant sur le bouton **Options** , puis en sélectionnant **Manifestes**.
+> Vous pouvez également activer le transfert des chaînes de requête dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Cochez la case **Autoriser le transfert des paramètres d’URL vers l’application** , accessible en ouvrant les **Propriétés du projet**, en sélectionnant l’onglet **Publier** , en cliquant sur le bouton **Options** , puis en sélectionnant **Manifestes**.
 
 ## <a name="robust-programming"></a>Programmation fiable
  Quand vous utilisez des paramètres de chaîne de requête, vous devez faire attention à la façon dont votre application est installée et activée. Si votre application est configurée pour s’installer sur l’ordinateur de l’utilisateur à partir du web ou d’un partage réseau, il est probable que l’utilisateur activera l’application une seule fois par le biais de l’URL. Après cela, il l’activera généralement à l’aide du raccourci dans le menu **Démarrer** . Ainsi, votre application est assurée de recevoir des arguments de chaîne de requête une seule fois pendant sa durée de vie. Si vous choisissez de stocker ces arguments sur l’ordinateur de l’utilisateur pour une utilisation ultérieure, vous devez les stocker de manière sûre et sécurisée.

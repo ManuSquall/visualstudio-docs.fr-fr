@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440062"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     ```  
   
     > [!NOTE]
-    >  Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.  
+    > Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Utilisation de conditions pour exclure un fichier ou un répertoire des entrées d’une génération  
  Si vous souhaitez inclure des éléments, par exemple, dans une version Debug, mais pas dans une version Release, vous pouvez utiliser l’attribut `Condition` pour spécifier les conditions dans lesquelles inclure l’élément.  
@@ -127,4 +127,4 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Comment : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [Comment : sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)

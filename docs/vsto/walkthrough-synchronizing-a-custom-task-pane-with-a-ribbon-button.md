@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdbcf16139c1f0b48554b3bf14f314a73a641012
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443967"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procédure pas à pas : Synchroniser un volet Office personnalisé avec un bouton de ruban
   Cette procédure pas à pas montre comment créer un volet Office personnalisé que les utilisateurs peuvent masquer ou afficher en cliquant sur un bouton bascule du ruban. Vous devez toujours créer un élément d’interface utilisateur, comme un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet Office personnalisé. En effet, les applications Microsoft Office ne proposent aucune méthode par défaut permettant aux utilisateurs d’afficher ou de masquer des volets Office personnalisés.
@@ -46,7 +46,7 @@ ms.locfileid: "60040662"
 - Synchronisation du bouton bascule avec le volet Office personnalisé.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :

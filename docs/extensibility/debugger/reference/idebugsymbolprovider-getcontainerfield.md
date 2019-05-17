@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705149"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224142"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Cette méthode obtient le champ qui contient l’adresse de débogage.
@@ -38,12 +41,12 @@ int GetContainerField(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pAddress`
+## <a name="parameters"></a>Paramètres
+ `pAddress`\
 
  [in] L’adresse telle que représentée par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
- `ppContainerField`
+ `ppContainerField`\
 
  [out] Retourne un champ de conteneur représenté par un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interface.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ec230a5bf32ab6e70967e76d31030af3a7a351a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687602"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 ## <a name="defining-the-menu-command"></a>Définition de la commande de menu  
  Pour créer une commande de menu pour un concepteur UML, vous devez créer une classe qui définit le comportement de la commande et incorporer cette classe dans une Extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle de conteneur capable d’installer la commande. Deux autres méthodes permettent de définir une commande de menu :  
 
--   **Créer une commande de menu dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos commandes de menu avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements.  
+- **Créer une commande de menu dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos commandes de menu avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements.  
 
--   **Créer des projets VSIX et commandes de menu distincts.** . Choisissez cette méthode si vous souhaitez combiner plusieurs types d’extensions au sein d’un même VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.  
+- **Créer des projets VSIX et commandes de menu distincts.** . Choisissez cette méthode si vous souhaitez combiner plusieurs types d’extensions au sein d’un même VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.  
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Pour créer une commande de menu dans sa propre extension VSIX  
 
@@ -55,19 +55,19 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution Visual Studio ou dans une solution existante.  
 
-   1.  Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
+   1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
 
-   2.  Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**. Dans la colonne du milieu, choisissez **Bibliothèque de classes**.  
+   2. Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**. Dans la colonne du milieu, choisissez **Bibliothèque de classes**.  
 
-   3.  Définissez **Solution** pour indiquer si vous souhaitez créer une solution ou ajouter un composant à une solution VSIX déjà ouverte.  
+   3. Définissez **Solution** pour indiquer si vous souhaitez créer une solution ou ajouter un composant à une solution VSIX déjà ouverte.  
 
-   4.  Définissez le nom et l’emplacement du projet, puis cliquez sur OK.  
+   4. Définissez le nom et l’emplacement du projet, puis cliquez sur OK.  
 
 2. Ajoutez les références suivantes à votre projet.  
 
    |                                                                                                    Référence                                                                                                    |                                                                                                  Ce que cela vous permet de faire                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Définir des composants à l’aide de [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Définir des composants à l’aide de [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lire et modifier des propriétés d’éléments de modèle.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Créer des éléments de modèle, modifiez des formes sur des diagrammes.                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Définir des gestionnaires d’événements de modèle.<br /><br /> Encapsuler des séries de modifications apportées à votre modèle. Pour plus d’informations, consultez [mises à jour du modèle UML de lien à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
@@ -77,7 +77,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 3. Ajouter un fichier de classe au projet et affecter le code suivant comme contenu.  
 
    > [!NOTE]
-   >  Modifier l’espace de noms, le nom de classe et la valeur retournés par `Text` selon vos préférences.  
+   > Modifier l’espace de noms, le nom de classe et la valeur retournés par `Text` selon vos préférences.  
    >   
    >  Si vous définissez plusieurs commandes, elles apparaissent dans le menu par ordre alphabétique des noms de classes.  
 
@@ -142,23 +142,23 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 #### <a name="to-add-a-menu-command-to-a-vsix-project"></a>Pour ajouter une commande de menu à un projet VSIX  
 
-1.  Il est inutile d’appliquer cette procédure si vous avez créé la commande de menu avec sa propre extension VSIX.  
+1. Il est inutile d’appliquer cette procédure si vous avez créé la commande de menu avec sa propre extension VSIX.  
 
-2.  Créez un projet VSIX, sauf si votre solution en comporte déjà un.  
+2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.  
 
-    1.  Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
 
-    2.  Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
 
-3.  Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
+3. Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
 
-4.  Ouvrez **source.extension.vsixmanifest**.  
+4. Ouvrez **source.extension.vsixmanifest**.  
 
-    1.  Sous l’onglet **Métadonnées** , nommez le VSIX.  
+    1. Sous l’onglet **Métadonnées** , nommez le VSIX.  
 
-    2.  Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.  
+    2. Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.  
 
-    3.  Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :  
+    3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :  
 
          **Type** = **Composant MEF**  
 
@@ -166,7 +166,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
          **Projet** = *Votre projet de bibliothèque de classes*  
 
-##  <a name="Implementing"></a> Implémentation de la commande de Menu  
+## <a name="Implementing"></a> Implémentation de la commande de Menu  
  La classe de commande de menu implémente les méthodes nécessaires pour <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.  
 
 |||  
@@ -209,57 +209,57 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Toutefois, sachez que le magasin de modèles n’est pas thread-safe. Vous devez toujours utiliser le thread d’interface utilisateur pour effectuer des mises à jour et, dans la mesure du possible, empêcher l’utilisateur d’apporter des modifications pendant que l’opération d’arrière-plan est en cours. Pour obtenir un exemple, consultez [mettre à jour un modèle UML à partir d’un thread d’arrière-plan](../modeling/update-a-uml-model-from-a-background-thread.md).  
 
-##  <a name="Executing"></a> L’exécution de la commande de Menu  
+## <a name="Executing"></a> L’exécution de la commande de Menu  
  À des fins de test, exécutez votre commande en mode débogage.  
 
 #### <a name="to-test-the-menu-command"></a>Pour tester la commande de menu  
 
-1.  Appuyez sur **F5**, ou dans le menu **Déboguer** , choisissez **Démarrer le débogage**.  
+1. Appuyez sur **F5**, ou dans le menu **Déboguer** , choisissez **Démarrer le débogage**.  
 
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
 
      **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
 
-    -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
+    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
 
-    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
-2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation. Utilisez un diagramme qui appartient à l’un des types répertoriés dans les attributs de votre classe de commande de menu.  
+2. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation. Utilisez un diagramme qui appartient à l’un des types répertoriés dans les attributs de votre classe de commande de menu.  
 
-3.  Ouvrez le menu contextuel n’importe où sur le diagramme. Votre commande doit apparaître dans le menu.  
+3. Ouvrez le menu contextuel n’importe où sur le diagramme. Votre commande doit apparaître dans le menu.  
 
      **Résolution des problèmes**: Si la commande n’apparaît pas dans le menu, assurez-vous que :  
 
-    -   le projet de commande de menu est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;  
+    - le projet de commande de menu est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;  
 
-    -   les paramètres des attributs `Import` et `Export` sont valides ;  
+    - les paramètres des attributs `Import` et `Export` sont valides ;  
 
-    -   Le `QueryStatus` méthode ne définit pas le `command`.`Enabled` ou `Visible` ou `false`.  
+    - Le `QueryStatus` méthode ne définit pas le `command`.`Enabled` ou `Visible` ou `false`.  
 
-    -   le type de diagramme de modèle que vous utilisez (classe UML, séquence, etc.) est répertorié comme l’un des attributs de classe de commande de menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` et ainsi de suite.  
+    - le type de diagramme de modèle que vous utilisez (classe UML, séquence, etc.) est répertorié comme l’un des attributs de classe de commande de menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` et ainsi de suite.  
 
-##  <a name="Installing"></a> Installation et désinstallation d’une extension  
+## <a name="Installing"></a> Installation et désinstallation d’une extension  
  Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.  
 
 #### <a name="to-install-an-extension"></a>Pour installer une extension  
 
-1.  Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet VSIX.  
+1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet VSIX.  
 
-    1.  Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
 
-    2.  Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
+    2. Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
 
-2.  Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.  
+2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.  
 
      L’ordinateur cible doit disposer de l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifiées dans **source.extension.vsixmanifest**.  
 
-3.  Sur l’ordinateur cible, ouvrez le fichier **.vsix** , par exemple en double-cliquant dessus.  
+3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** , par exemple en double-cliquant dessus.  
 
      Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.  
 
-4.  Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension  
 
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
-##  <a name="MenuExample"></a> Exemple  
+## <a name="MenuExample"></a> Exemple  
  L’exemple suivant montre le code pour une commande de menu qui échange les noms de deux éléments sur un diagramme de classes. Ce code doit être intégré à un projet d’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et installé comme décrit dans les sections précédentes.  
 
 ```  

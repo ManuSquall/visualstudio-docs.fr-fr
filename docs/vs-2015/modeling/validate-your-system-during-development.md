@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4570b8ed1afdfff2efd36dbc2f80e97cfbceecac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001207"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698063"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio peut vous aider à garder votre logiciel en cohérence avec les be
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test de l'application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Test de l'application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)

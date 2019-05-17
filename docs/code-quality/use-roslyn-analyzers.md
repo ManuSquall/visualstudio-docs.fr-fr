@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676701"
 ---
 # <a name="use-roslyn-analyzers"></a>Utiliser les analyseurs Roslyn
 
@@ -56,7 +56,7 @@ Pour modifier la règle active définie dans l’éditeur d’ensemble de règle
 Pour modifier la règle active définie pour un projet, accédez à la **analyse du Code** onglet de propriétés d’un projet. Sélectionnez la règle dans la liste sous **exécuter cet ensemble de règles**. Pour ouvrir l’ensemble de règles, sélectionnez **ouvrir**.
 
 > [!NOTE]
-> Projets .NET core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles **l’Explorateur de solutions**, par exemple, **Open ensemble de règles Active**. Pour spécifier une règle par défaut définie pour un projet .NET Core ou .NET Standard, manuellement [ajouter la **CodeAnalysisRuleSet** propriété au fichier projet](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Vous pouvez configurer les règles dans l’ensemble de règles dans Visual Studio IU de l’éditeur d’ensemble de règles.
+> Projets .NET core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles **l’Explorateur de solutions**, par exemple, **Open ensemble de règles Active**. Pour spécifier une règle par défaut définie pour un projet .NET Core ou .NET Standard, manuellement [ajouter la **CodeAnalysisRuleSet** propriété](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) au fichier projet. Vous pouvez toujours configurer les règles dans l’ensemble de règles dans Visual Studio IU de l’éditeur d’ensemble de règles.
 
 ## <a name="rule-severity"></a>Gravité des règles
 

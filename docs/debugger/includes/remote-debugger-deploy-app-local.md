@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407780"
 ---
 1. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **publier** (pour les formulaires Web, **publier une application de Web**).
 
@@ -43,7 +43,7 @@ ms.locfileid: "56723875"
 1. Copiez le répertoire du projet ASP.NET à partir de l’ordinateur Visual Studio dans le répertoire local est configuré pour l’application ASP.NET (dans cet exemple, **C:\Publish**) sur l’ordinateur Windows Server. Dans ce didacticiel, nous supposons que vous copiez manuellement, mais vous pouvez utiliser d’autres outils tels que PowerShell, Xcopy ou Robocopy.
 
     > [!CAUTION]
-    >  Si vous avez besoin apporter des modifications au code ou de la reconstruction, vous devez republier et répétez cette étape. Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.    Si vous ne le faites pas vous recevrez un `cannot find or open the PDB file` avertissement dans Visual Studio lorsque vous tentez de déboguer le processus.
+    > Si vous avez besoin apporter des modifications au code ou de la reconstruction, vous devez republier et répétez cette étape. Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.    Si vous ne le faites pas vous recevrez un `cannot find or open the PDB file` avertissement dans Visual Studio lorsque vous tentez de déboguer le processus.
 
 1. Sur le serveur Windows, vérifiez que vous pouvez exécuter l’application correctement en ouvrant l’application dans votre navigateur.
 

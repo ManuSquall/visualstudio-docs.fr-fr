@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432795"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : Collecter des données de performances pour un Site Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060551"
 Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  L’ **Assistant Performance** vous permet d’ajouter des données d’interaction de couche (TIP), des données de performance JScript, ou les deux, aux données de profilage collectées. L’option TIP collecte des données auprès des processus côté serveur. Le profilage JScript collecte des données auprès des scripts qui s’exécutent sur un site web local ou distant. Dans la plupart des cas, vous devez choisir une seule des options.  
+> L’ **Assistant Performance** vous permet d’ajouter des données d’interaction de couche (TIP), des données de performance JScript, ou les deux, aux données de profilage collectées. L’option TIP collecte des données auprès des processus côté serveur. Le profilage JScript collecte des données auprès des scripts qui s’exécutent sur un site web local ou distant. Dans la plupart des cas, vous devez choisir une seule des options.  
   
  Selon les valeurs des autorisations d’accès utilisateur rendues disponibles par l’administrateur, un utilisateur peut ou non disposer de l’autorisation de sécurité pour créer une session de profileur sur l’ordinateur qui héberge le processus ASP.NET. Les exemples suivants montrent les différences possibles entre les utilisateurs :  
   

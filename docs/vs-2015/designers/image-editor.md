@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434410"
 ---
 # <a name="image-editor"></a>Éditeur d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
  Avant de commencer à travailler avec l’image que vous venez de créer, vous pouvez changer sa configuration par défaut. Par exemple, vous pouvez changer ses dimensions ou le format de couleur qu’elle utilise. Pour plus d’informations sur la configuration de ces propriétés et d’autres propriétés de l’image, consultez [Propriétés de l’image](#ImageProperties).  
   
 > [!NOTE]
->  Avant d’enregistrer votre travail, veillez à définir la propriété **Format de couleur** si vous voulez utiliser un format spécifique. Si le format de fichier prend en charge la compression, vous pouvez ajuster les paramètres de compression quand vous enregistrez le fichier pour la première fois ou quand vous choisissez **Enregistrer sous**.  
+> Avant d’enregistrer votre travail, veillez à définir la propriété **Format de couleur** si vous voulez utiliser un format spécifique. Si le format de fichier prend en charge la compression, vous pouvez ajuster les paramètres de compression quand vous enregistrez le fichier pour la première fois ou quand vous choisissez **Enregistrer sous**.  
   
 ## <a name="working-with-the-image-editor"></a>Utilisation de l’éditeur d’images  
  Cette section explique comment utiliser l’éditeur d’images pour modifier des textures et des images.  
@@ -136,7 +136,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Découper**|Découpe l’image au format de la sélection active.|  
   
 ### <a name="working-with-mip-levels"></a>Utilisation des niveaux MIP  
- Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour Créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Utilisation de la transparence  
  Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs façons, selon l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur. Voici comment les différents types d’outils contrôlent comment la transparence est appliquée :  
@@ -166,7 +166,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |Secteur de profondeur|Secteur de profondeur actif. Seule le premier secteur peut être visualisé. Tous les autres secteurs sont perdus quand l’image est enregistrée.|  
   
 > [!NOTE]
->  Comme la propriété **Faire pivoter de** s’applique à tous les outils et à toutes les zones sélectionnées, elle apparaît toujours en bas de la fenêtre **Propriétés** en même temps que d’autres propriétés de l’outil. **Faire pivoter de** est toujours affiché, car l’image entière est implicitement sélectionnée quand il n’existe aucune autre sélection ou outil actif. Pour plus d’informations sur la propriété **Faire pivoter de**, consultez [Propriétés de l’outil](#ToolProperties).  
+> Comme la propriété **Faire pivoter de** s’applique à tous les outils et à toutes les zones sélectionnées, elle apparaît toujours en bas de la fenêtre **Propriétés** en même temps que d’autres propriétés de l’outil. **Faire pivoter de** est toujours affiché, car l’image entière est implicitement sélectionnée quand il n’existe aucune autre sélection ou outil actif. Pour plus d’informations sur la propriété **Faire pivoter de**, consultez [Propriétés de l’outil](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Redimensionnement des images  
  Voici deux façons de redimensionner une image. Dans les deux cas, l’éditeur d’images utilise une interpolation bilinéaire pour rééchantillonner l’image.  

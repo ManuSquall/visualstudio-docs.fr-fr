@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c32061ee330d4e8054e20971890d7d0d93a799
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8da32ee8a4b6965e1e731c676703b5d1180d21e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704122"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615226"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 Obtient l’objet auquel cet alias est destinée.
@@ -36,10 +39,9 @@ int GetObject(
 )
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppObject`
-
- [out] Le [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) représente cet alias.
+## <a name="parameters"></a>Paramètres
+`ppObject`\
+[out] Le [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) représente cet alias.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

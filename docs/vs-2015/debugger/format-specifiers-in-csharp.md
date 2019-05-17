@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118238"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682480"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C\#
 
@@ -64,7 +64,7 @@ Le tableau suivant montre les spécificateurs de format C# reconnus par le débo
 
 |Spécificateur|Format|Valeur d’espion d’origine|Affiche|
 |---------------|------------|--------------------------|--------------|
-|ac|Force l’évaluation d’une expression. Cela peut être utile lorsque l’évaluation implicite d’appels de propriétés et de fonction implicite est désactivée. Consultez [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<valeur>|
+|ac|Force l’évaluation d’une expression. Cela peut être utile lorsque l’évaluation implicite d’appels de propriétés et de fonction implicite est désactivée. Consultez [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<valeur>|
 |d|entier décimal|0x0065|101|
 |dynamic|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|
 |h|entier hexadécimal|61541|0x0000F065|
@@ -76,4 +76,4 @@ Le tableau suivant montre les spécificateurs de format C# reconnus par le débo
 ## <a name="see-also"></a>Voir aussi
 
 - [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
-- [Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

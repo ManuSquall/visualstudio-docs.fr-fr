@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0977a1f3cdac48b254140785f6adc5dffc321374
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8ea0d3209e86db1d532e4b6bd6370dfc3521b15a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446063"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59652262"
 Enregistre les modèles de projet ou d’élément qui se trouvent dans *\<Chemin d’installation de Visual Studio>* \Common7\IDE\ProjectTemplates\ ou *\<Chemin d’installation de Visual Studio>* \Common7\IDE\ItemTemplates\ pour qu’ils soient accessibles dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.  
   
 > [!WARNING]
->  Ce commutateur est pris en charge uniquement pour le développement des partenaires Visual Studio, il n’est pas disponible dans les éditions Express. Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md). Pour plus d’informations, consultez [Autorisations de l’utilisateur](../../ide/user-permissions-and-visual-studio.md).  
+> Ce commutateur est pris en charge uniquement pour le développement des partenaires Visual Studio, il n’est pas disponible dans les éditions Express. Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md). Pour plus d’informations, consultez [Autorisations de l’utilisateur](../../ide/user-permissions-and-visual-studio.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   

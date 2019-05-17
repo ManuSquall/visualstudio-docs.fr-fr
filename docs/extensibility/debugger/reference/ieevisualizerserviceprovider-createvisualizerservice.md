@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23c11e386b6c100839ae299e56e6a4d771012b38
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b45db093a451331de20b3f38bdf58f2669f0577
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688791"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223668"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Cette méthode crée un service de visualiseur.
@@ -44,24 +47,24 @@ int CreateVisualizerService(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `binder`
+## <a name="parameters"></a>Paramètres
+ `binder`\
 
  [in] Le [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objet passé à [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
 
- `pSymProv`
+ `pSymProv`\
 
  [in] Le [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objet passé à `IDebugParsedExpression::EvaluateSync`.
 
- `pAddress`
+ `pAddress`\
 
  [in] Le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objet passé à `IDebugParsedExression::EvaluateSync`.
 
- `dataProvider`
+ `dataProvider`\
 
  [in] Objet qui implémente le [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interface (fourni par l’évaluateur d’expression).
 
- `ppService`
+ `ppService`\
 
  [out] Le service créé.
 

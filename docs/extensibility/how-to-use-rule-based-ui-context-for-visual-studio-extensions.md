@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f78753afdf8d0ded233b2451db42dee73c41de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 51c7ae179cc7ba1a62ee1937f7b8f113a3263b8a
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682191"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878253"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio
 
@@ -70,14 +70,14 @@ En fonction des règles de contexte de l’interface utilisateur peut être util
 
    ```xml
    <VisibilityConstraints>
-       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="UIContextGuid"/>
    </VisibilityConstraints>
    ```
 
 4. Dans la section Symbols, ajoutez la définition de la UIContext :
 
    ```xml
-   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
+   <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
     À présent, les commandes du menu contextuel pour  *\*.config* fichiers seront visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un *.config* fichier et le package ne seront pas chargés tant qu’un de ceux les commandes est activée.

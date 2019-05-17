@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921788"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Cette interface représente un document source.
@@ -45,7 +45,7 @@ IDebugDocument2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est implémentée uniquement lorsque le DE fournit le code source. Par exemple, lorsque vous déboguez un script sur une page HTML, l’Allemagne fournit le code source, car la source est téléchargée ou générée dynamiquement et n’existe pas comme un fichier de disque. Lors du débogage des langages traditionnels, tels que C++, cette interface est inutile à implémenter.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

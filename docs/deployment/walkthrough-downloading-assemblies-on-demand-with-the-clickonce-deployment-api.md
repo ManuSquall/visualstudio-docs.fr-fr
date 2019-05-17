@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99d8804b5c6050665508a9a1a6edc8b37fe7ff0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405858"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Télécharger des assemblys à la demande avec l’API du déploiement ClickOnce
 Par défaut, tous les assemblys inclus dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application sont téléchargés lors de la première exécution de l’application. Toutefois, vous pouvez avoir des parties de votre application qui sont utilisés par un petit ensemble de vos utilisateurs. Dans ce cas, vous souhaiterez sans doute télécharger un assembly uniquement quand vous créez l’un de ses types. La procédure suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et comment les télécharger à l’aide de classes dans l’espace de noms <xref:System.Deployment.Application> quand le Common Language Runtime en a besoin.
 
 > [!NOTE]
->  Votre application doit s’exécuter avec une confiance totale pour utiliser cette procédure.
+> Votre application doit s’exécuter avec une confiance totale pour utiliser cette procédure.
 
 ## <a name="prerequisites"></a>Prérequis
  Vous pouvez utiliser un des composants suivants pour terminer cette procédure pas à pas :

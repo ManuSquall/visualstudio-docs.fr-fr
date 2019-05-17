@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428769"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation de symbole
 **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de recherche de symboles. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage contenus dans les différents composants. Les composants incluent des projets Visual Studio, externes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] composants et bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
@@ -46,9 +46,9 @@ ms.locfileid: "56617000"
  Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> méthode pour déterminer si un élément de liste donné peut être développé et a des éléments enfants. Si l’interface utilisateur envoie une demande pour développer un élément, le Gestionnaire d’objets demande la liste des symboles enfants en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> (méthode). Le processus se poursuit avec les différentes parties de l’arborescence en cours de génération à la demande.
 
 > [!NOTE]
->  Pour implémenter un fournisseur de symboles du code natif, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.
+> Pour implémenter un fournisseur de symboles du code natif, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Guide pratique pour Exposer des listes de symboles fournies par la bibliothèque pour le Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-- [Guide pratique pour Identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [Guide pratique pour inscrire une bibliothèque avec le Gestionnaire d’objets](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Guide pratique pour exposer des listes de symboles fournies par la bibliothèque au Gestionnaire d’objets](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Guide pratique pour identifier les symboles dans une bibliothèque](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427893"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procédure : Ajouter une zone de formulaire à un projet de complément Outlook
   Créez une zone de formulaire pour étendre un formulaire Microsoft Office Outlook standard ou personnalisé à l’aide de l’Assistant **Nouvelle zone de formulaire Outlook** . Vous pouvez créer une zone de formulaire et concevoir l’interface utilisateur dans Visual Studio, ou vous pouvez importer une zone de formulaire conçue dans Outlook et ajouter du code Visual Basic ou C#.
@@ -48,7 +48,7 @@ ms.locfileid: "60083944"
 6. Dans la page **Sélectionnez la méthode de création de la zone de formulaire** , indiquez si vous souhaitez concevoir la zone de formulaire en faisant glisser des contrôles managés vers un concepteur visuel ou importer une zone de formulaire conçue dans Outlook.
 
     > [!NOTE]
-    >  Si vous choisissez d’importer une zone de formulaire conçue dans Outlook, vous devez spécifier l’emplacement d’un stockage de formulaire Outlook (*.ofs*) fichier. Vous ne pouvez pas ajouter des contrôles managés à une zone de formulaire que vous concevez dans Outlook. Vous pouvez uniquement ajouter du code-behind à l’interface utilisateur existante. Pour plus d’informations, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
+    > Si vous choisissez d’importer une zone de formulaire conçue dans Outlook, vous devez spécifier l’emplacement d’un stockage de formulaire Outlook (*.ofs*) fichier. Vous ne pouvez pas ajouter des contrôles managés à une zone de formulaire que vous concevez dans Outlook. Vous pouvez uniquement ajouter du code-behind à l’interface utilisateur existante. Pour plus d’informations, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 
 7. Dans la page **Sélectionnez le type de zone de formulaire que vous souhaitez créer** , passez en revue les types de zones de formulaire et sélectionnez-en un, puis cliquez sur **Suivant**. Pour plus d’informations sur les types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 

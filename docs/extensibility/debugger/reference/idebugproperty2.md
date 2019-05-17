@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4f80d536e55241a92ed25738b6f8f444f11645b1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709003"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457711"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Cette interface représente une propriété de frame de pile, une propriété de document du programme ou une autre propriété. La propriété est généralement le résultat d’une évaluation d’expression.
 
 > [!NOTE]
->  Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugProperty2` peut représenter une telle entité.
+> Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugProperty2` peut représenter une telle entité.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -69,7 +69,7 @@ IDebugProperty2 : IUnknown
 
  L’IDE peut utiliser le `IDebugProperty2` interface pour permettre aux utilisateurs de parcourir et modifier les propriétés au moment de l’exécution.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

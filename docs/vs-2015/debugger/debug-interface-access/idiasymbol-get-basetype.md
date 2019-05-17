@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d090df12a8b19d81717a71496f47c753c4acee7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430325"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_baseType ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
  Le type de base pour un symbole peut être déterminé par tout d’abord obtenir le type du symbole et puis en interrogeant qui a retourné le type pour le type de base. Notez que certains symboles ne peuvent pas avoir un type de base, par exemple, le nom de la structure.  

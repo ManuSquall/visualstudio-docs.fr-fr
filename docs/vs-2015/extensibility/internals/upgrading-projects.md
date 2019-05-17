@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441239"
 ---
 # <a name="upgrading-projects"></a>Mise à niveau des projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Modifie le modèle de projet d’une version de [!INCLUDE[vsprvs](../../includes
  Après la mise à jour tous les fichiers globales pertinents, chaque fabrique de projet peut choisir instancier un projet. L’implémentation de projet doit prendre en charge <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> méthode est ensuite appelée pour mettre à niveau tous les éléments de projet approprié.  
   
 > [!NOTE]
->  Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> méthode ne fournit pas le service SVsUpgradeLogger. Ce service peut être obtenu en appelant <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> méthode ne fournit pas le service SVsUpgradeLogger. Ce service peut être obtenu en appelant <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Meilleures pratiques  
  Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service pour vérifier si vous pouvez modifier un fichier avant de le modifier et que vous pouvez l’enregistrer avant de l’enregistrer. Cela vous aidera votre sauvegarde et gérer les implémentations de mise à niveau des fichiers de projet sous contrôle de code source, les fichiers dotés d’autorisations suffisantes et ainsi de suite.  

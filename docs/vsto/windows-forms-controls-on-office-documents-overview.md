@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445370"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Contrôles Windows Forms dans les documents Office
   Les contrôles Windows Forms sont des objets avec lesquels les utilisateurs peuvent interagir pour entrer ou manipuler des données. Dans les projets au niveau du document pour Microsoft Office Excel et Microsoft Office Word, vous pouvez ajouter des contrôles Windows Forms au document ou au classeur dans votre projet au moment du design, ou vous pouvez ajouter par programmation de ces contrôles lors de l’exécution. Vous pouvez ajouter par programmation ces contrôles à tout document ouvert ou d’une feuille de calcul lors de l’exécution dans un complément, VSTO pour Excel ou Word.
@@ -109,7 +109,7 @@ Dans un Windows Form.
 - **Égaliser l'espacement vertical**
 
 > [!NOTE]
->  Dans les projets Word, ces boutons sont activés uniquement si les contrôles sélectionnés ne sont pas alignés avec le texte. Par défaut, les contrôles que vous ajoutez au document au moment du design sont alignés avec le texte.
+> Dans les projets Word, ces boutons sont activés uniquement si les contrôles sélectionnés ne sont pas alignés avec le texte. Par défaut, les contrôles que vous ajoutez au document au moment du design sont alignés avec le texte.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Empêcher l’affichage dans les classeurs Excel pendant le chargement des anciennes données
  Lorsque vous ajoutez des contrôles Windows Forms à des documents ou des feuilles de calcul au moment du design, les contrôles restent dans le document quand l’utilisateur le ferme. Les contrôles ajoutés au moment du design sont également appelés *contrôles statiques*.

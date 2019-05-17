@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb0ad7c73d2e4233ad919ffe48515bbade031fd8
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707898"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461145"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -39,22 +42,22 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }
 ```
 
-## <a name="terms"></a>Termes
+## <a name="members"></a>Membres
 
-tokMethod
+`tokMethod`\
 
 L’ID du tableau de cet élément est une partie de.
 
-(C++) `_mdToken` est un `typedef` pour 32 bits `int`.
+[C++] `_mdToken` est un `typedef` pour 32 bits `int`.
 
-dwIndex
+`dwIndex`\
 
 L’index de cet élément dans le tableau.
 
 ## <a name="remarks"></a>Notes
 Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_ARRAYELEM` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : sh.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

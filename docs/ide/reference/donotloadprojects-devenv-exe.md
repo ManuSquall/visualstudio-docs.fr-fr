@@ -1,6 +1,6 @@
 ---
 title: -DoNotLoadProjects (devenv.exe)
-ms.date: 03/11/2019
+ms.date: 04/30/2019
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c4da26d202e1a23ff70a7c655f64fd6c05a340
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a414fde4dee401016e997fa5d6890da2ae8d9d53
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875392"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083930"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-Ouvre la solution spécifiée sans charger de projets.
+**Nouveau dans Visual Studio 2019 version 16.1**
+
+Ouvre la solution spécifiée sans charger de projets. Pour plus d’informations, consultez [Solutions filtrées dans Visual Studio](../filtered-solutions.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,19 +32,19 @@ devenv /DoNotLoadProjects SolutionName
 
 ## <a name="arguments"></a>Arguments
 
-- *SolutionName*
+*SolutionName*
 
-  Obligatoire. Chemin complet et nom de la solution à ouvrir.
+Obligatoire. Chemin complet et nom de la solution à ouvrir.
 
 ## <a name="example"></a>Exemple
 
-L’exemple ouvre la solution ths MySln.sln sans charger de projets.
+L’exemple ouvre la solution MySln.sln sans charger de projets.
 
 ```shell
 devenv /donotloadprojects MySln.sln
-
 ```
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Solutions filtrées dans Visual Studio](../filtered-solutions.md)
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

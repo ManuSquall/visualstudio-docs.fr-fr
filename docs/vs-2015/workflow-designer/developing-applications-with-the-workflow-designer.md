@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704787"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Développement d'applications avec Workflow Designer
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] est un concepteur visuel et un débogueur pour la construction graphique et le débogage d'applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hébergé dans l'environnement de développement [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Il vous permet de composer une application de workflow composite, une bibliothèque d'activités ou un service [!INCLUDE[indigo1](../includes/indigo1-md.md)] via l'utilisation de modèles et de concepteurs d'activités. [!INCLUDE[crabout](../includes/crabout-md.md)] flux de travail, consultez le [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] est un concepteur visuel et un débogueur pour la construction graphique et le débogage d'applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hébergé dans l'environnement de développement [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Il vous permet de composer une application de workflow composite, une bibliothèque d'activités ou un service [!INCLUDE[indigo1](../includes/indigo1-md.md)] via l'utilisation de modèles et de concepteurs d'activités. [!INCLUDE[crabout](../includes/crabout-md.md)] flux de travail, consultez le [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Voici plusieurs nouvelles fonctionnalités de conception qui distinguent cette nouvelle version de[!INCLUDE[wfd2](../includes/wfd2-md.md)] des versions antérieures de [!INCLUDE[wfd2](../includes/wfd2-md.md)] :  
   
@@ -65,8 +65,8 @@ ms.locfileid: "60073967"
  [Développement d’applications de flux de travail qui ciblent le .NET Framework 3.0 ou 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Contient de l'aide sur l'utilisation du concepteur hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Réhébergement du concepteur &#91;exemples WF&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Réhébergement du concepteur &#91;exemples WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  Cet exemple indique comment créer la disposition WPF pour contenir le concepteur.  
   
- [Concepteurs d’activités personnalisées](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Concepteurs d’activités personnalisées](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Cette section contient des exemples d'activités qui utilisent des concepteurs personnalisés pour l'affichage dans le concepteur de workflow.

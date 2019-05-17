@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068156"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687648"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS ;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.  
   
 > [!TIP]
->  Pour éviter d’avoir à arrêter et redémarrer le débogueur quand vous modifiez votre code source, vous pouvez actualiser votre application à l’aide du bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou en appuyant sur F4). Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Pour éviter d’avoir à arrêter et redémarrer le débogueur quand vous modifiez votre code source, vous pouvez actualiser votre application à l’aide du bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou en appuyant sur F4). Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
  Vous pouvez utiliser l’explorateur DOM pour effectuer les tâches suivantes :  
   
@@ -74,12 +74,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Voici les onglets : **Styles**, **Computed**, **Layout**. Les applications Windows Store prennent également en charge les onglets **Événements** et **Modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
   
 > [!TIP]
->  Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
+> Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
  Dans la procédure qui suit, nous examinerons le processus de débogage interactif d’une application à l’aide de l’explorateur DOM. Nous créerons une application qui utilise un contrôle `FlipView` , puis nous la déboguerons. L’application contient plusieurs erreurs.  
   
 > [!WARNING]
->  L’exemple d’application suivant est une application Windows Store. Les mêmes fonctionnalités sont prises en charge par Cordova, mais l’application serait différente.  
+> L’exemple d’application suivant est une application Windows Store. Les mêmes fonctionnalités sont prises en charge par Cordova, mais l’application serait différente.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Pour déboguer en examinant le modèle DOM en direct  
   
@@ -183,14 +183,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 10. Basculez vers Visual Studio et sélectionnez l’onglet **Explorateur DOM** .  
   
     > [!TIP]
-    >  Appuyez sur Alt+Tab, ou F12, pour basculer entre Visual Studio et l’application en cours d’exécution.  
+    > Appuyez sur Alt+Tab, ou F12, pour basculer entre Visual Studio et l’application en cours d’exécution.  
   
 11. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche de direction droite vous permet d’afficher les enfants d’un élément.)  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Vous pouvez aussi sélectionner l’élément DIV en bas à gauche de la fenêtre de la console JavaScript en tapant `select(fView)` à l’invite de commandes >> et en appuyant sur Entrée.  
+    > Vous pouvez aussi sélectionner l’élément DIV en bas à gauche de la fenêtre de la console JavaScript en tapant `select(fView)` à l’invite de commandes >> et en appuyant sur Entrée.  
   
      Les valeurs qui s’affichent sous les onglets à droite de la fenêtre de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément en cours dans l’explorateur DOM.  
   
@@ -209,7 +209,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 15. Sélectionnez `width: 100px;height: 100px;`, appuyez sur la touche Suppr, puis sur Entrée. Dès que vous appuyez sur Entrée, les nouvelles valeurs sont immédiatement répercutées dans le simulateur ou l’émulateur Windows Phone, même si vous n’avez pas arrêté votre session de débogage.  
   
     > [!IMPORTANT]
-    >  Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [disposition de débogage à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).  
+    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [disposition de débogage à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Basculez vers l’application en sélectionnant le simulateur ou l’émulateur Windows Phone, ou en utilisant les touches Alt+Tab.  
   
@@ -281,7 +281,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   Quand vous choisissez de mettre en surbrillance des éléments, les éléments pointés dans le simulateur sont mis en surbrillance. Les couleurs des éléments mis en surbrillance correspondent au modèle de boîte qui apparaît sous l’onglet **Disposition** de l’explorateur DOM.  
   
 > [!NOTE]
->  La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.  
+> La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.  
   
  Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide de la **sélectionner un élément** bouton, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -306,4 +306,4 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

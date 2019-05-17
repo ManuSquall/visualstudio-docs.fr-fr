@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ce15c905ee12e1c3f45db5e5044b171db3527d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4d4da7513d0cbee0ee4f6c78818fc79ef029b4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712708"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458658"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) après l’exécution pas à pas d’ou sur une fonction.
@@ -44,7 +44,7 @@ IDebugReturnValueEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  La valeur retournée par une fonction peut être obtenue en appelant [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md). La valeur retournée s’affiche dans le **automatique** fenêtre.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

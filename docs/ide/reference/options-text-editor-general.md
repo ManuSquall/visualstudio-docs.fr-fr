@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778653"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531929"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 
@@ -96,5 +96,5 @@ Quand cette option est sélectionnée, des lignes verticales alignées avec les 
 - [Options, Éditeur de texte, Tous les langages, Onglets](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Options, Éditeur de texte, Extension de fichier](../../ide/reference/options-text-editor-file-extension.md)
 - [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)
+- [Personnalisation de l’éditeur](../how-to-change-text-case-in-the-editor.md)
 - [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6144ee367e7cf53ceb901bfe65cce9999f1e4680
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949062"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Collecter des données temporelles détaillées des services en utilisant la méthode d’instrumentation à partir de la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées pour les services Windows avec la méthode d’instrumentation à partir de la ligne de commande.

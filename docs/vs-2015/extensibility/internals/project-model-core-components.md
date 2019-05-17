@@ -11,12 +11,12 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de65155e08f4c2410d19db1b25105d247c9f0952
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948554"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704111"
 ---
 # <a name="project-model-core-components"></a>Principaux composants d’un modèle de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Les tableaux suivants développent sur le modèle de projet. Ces tableaux indiqu
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Prise en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)

@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686483"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
      Les tests automatisés s'exécuteront et un message indiquera s'ils ont réussi ou échoué.  
   
     > [!TIP]
-    >  Pour afficher l’Explorateur de tests depuis le menu **Test**, pointez sur **Windows**, puis choisissez **Explorateur de tests**.  
+    > Pour afficher l’Explorateur de tests depuis le menu **Test**, pointez sur **Windows**, puis choisissez **Explorateur de tests**.  
   
 4. Choisissez le lien **Sortie** dans les résultats de l’Explorateur de tests.  
   
@@ -109,4 +109,4 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
- [Guide pratique pour exécuter des tests à partir de Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+ [Guide pratique pour exécuter des tests à partir de Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

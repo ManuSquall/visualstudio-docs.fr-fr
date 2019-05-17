@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415481"
 ---
 # <a name="how-to-implement-undo-management"></a>Procédure : Gestion d’annulation implémenter
 L’interface principale utilisée pour la gestion de l’annulation est <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, qui est implémentée par l’environnement. Pour prendre en charge la gestion d’annulation, implémenter des unités d’annulation distinct (autrement dit, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, qui peut contenir plusieurs étapes individuelles.
@@ -75,7 +75,7 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
    Le `OleUndoManager` classe représente une instance de pile d’annulation unique. Par conséquent, il existe un objet de gestionnaire d’annulation par entité de données qui est suivie pour annuler ou rétablir.
 
 > [!NOTE]
->  Tandis que l’objet de gestionnaire d’annulation est largement utilisé par l’éditeur de texte, il est un composant général qui ne prend en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annulation ou rétablissement, vous pouvez utiliser cet objet pour ce faire.
+> Tandis que l’objet de gestionnaire d’annulation est largement utilisé par l’éditeur de texte, il est un composant général qui ne prend en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annulation ou rétablissement, vous pouvez utiliser cet objet pour ce faire.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

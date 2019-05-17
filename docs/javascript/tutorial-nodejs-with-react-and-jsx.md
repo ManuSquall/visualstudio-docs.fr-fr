@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446342"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -376,8 +376,10 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
     Chrome démarre avec l’activation du débogage.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, voir les [Notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Passez à Visual Studio et définissez un point d’arrêt dans le code d’*app-bundle.js*, dans la fonction `render()`, comme indiqué dans l’illustration suivante :

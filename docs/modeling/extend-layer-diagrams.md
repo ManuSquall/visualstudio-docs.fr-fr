@@ -10,28 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082891"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476565"
 ---
 # <a name="extend-dependency-diagrams"></a>Étendre des diagrammes de dépendance
 
 Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de dépendance et pour valider la structure de votre code de programme par rapport aux diagrammes de dépendance dans Visual Studio. Vous pouvez ajouter des commandes qui s’affichent dans le menu contextuel des diagrammes, personnaliser les mouvements de glisser-déplacer et accéder au modèle de couche à partir de modèles de texte. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.
 
- Pour plus d’informations sur les diagrammes de dépendance, consultez :
-
-- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
-
-- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)
-
-- [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Vous devez avoir installé les éléments suivants sur l’ordinateur où vous voulez développer vos extensions de couche :
 
@@ -43,16 +33,7 @@ Vous devez avoir installé les éléments suivants sur l’ordinateur où vous v
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Une version appropriée de Visual Studio doit être installée sur l’ordinateur où vous voulez exécuter vos extensions de couche.
-
-Pour connaître les versions de Visual Studio prennent en charge les diagrammes de dépendance, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>Dans cette section
- [Ajout de commandes et de mouvements aux diagrammes de dépendance](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Ajout d’une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Ajout de propriétés personnalisées à des diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md)
+Vous devez disposer d’une édition appropriée de Visual Studio installée sur l’ordinateur où vous souhaitez exécuter vos extensions de couche. Pour voir quelles éditions de Visual Studio prend en charge les diagrammes de dépendance, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>Voir aussi
 

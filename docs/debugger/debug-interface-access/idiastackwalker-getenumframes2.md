@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837938"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.
@@ -49,7 +49,7 @@ Récupère un énumérateur de frame de pile pour un type de plateforme spécifi
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour obtenir une liste de frames de pile pour simplement le x86 plateforme, appelez le [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) (méthode).
 
 ## <a name="see-also"></a>Voir aussi

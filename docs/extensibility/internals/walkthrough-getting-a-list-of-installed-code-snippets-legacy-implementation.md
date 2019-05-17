@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429376"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)
 Un extrait de code est un morceau de code qui peut être insérée dans la mémoire tampon source avec une commande de menu (ce qui permet de choisir parmi une liste d’extraits de code installé) ou en sélectionnant un raccourci d’extrait de code à partir d’une liste de saisie semi-automatique IntelliSense.
@@ -106,7 +106,7 @@ Un extrait de code est un morceau de code qui peut être insérée dans la mémo
 1. La méthode suivante montre comment appeler le `GetSnippets` méthode à la fin d’une opération d’analyse. Le <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> méthode est appelée après une opération d’analyse qui a été démarrée avec la raison <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  Le `expansionsList` liste de tableau est mis en cache pour des raisons de performances. Modifications pour les extraits de code ne sont pas répercutées dans la liste jusqu'à ce que le service de langage est arrêté et rechargé (par exemple, en arrêtant et redémarrant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> Le `expansionsList` liste de tableau est mis en cache pour des raisons de performances. Modifications pour les extraits de code ne sont pas répercutées dans la liste jusqu'à ce que le service de langage est arrêté et rechargé (par exemple, en arrêtant et redémarrant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

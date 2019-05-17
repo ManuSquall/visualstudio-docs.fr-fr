@@ -41,17 +41,17 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685857"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procédure : Utiliser les vérifications natives à l’exécution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual C++, vous pouvez utiliser des [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) natifs pour dépister les erreurs d’exécution courantes, telles que :  
+En Visual C++, vous pouvez utiliser des [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) natifs pour dépister les erreurs d’exécution courantes, telles que :  
   
 - Un pointeur de pile détérioré.  
   
@@ -85,5 +85,5 @@ En Visual C++, vous pouvez utiliser des [runtime_checks](http://msdn.microsoft.c
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [Vérifications des erreurs au moment de l’exécution](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
+ [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
+ [Vérifications des erreurs au moment de l’exécution](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

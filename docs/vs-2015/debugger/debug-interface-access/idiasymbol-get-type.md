@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 516098cef38a70ef746d2307504a625d64d4ded6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9bec7cdbf0641bbd1bba1e70c2f21ec232a18e6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431804"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_type ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
  Pour déterminer le type a un symbole, vous devez appeler cette méthode et examiner les résultats [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet. Notez qu’il est possible pour un symbole de ne pas avoir un type. Par exemple, le nom d’une structure n’a aucun type, mais il peut avoir des symboles des enfants (utiliser le [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) méthode pour examiner ces enfants).  

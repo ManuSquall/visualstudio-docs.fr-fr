@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10835f422f8d2d116234eadd91da0d27c424f314
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554220"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Jeux en-têtes pour activer la traduction d’adresse virtuelle relative de l’image.
@@ -48,7 +48,7 @@ HRESULT set_imageHeaders ( 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le `IMAGE_SECTION_HEADER` structure est déclarée dans Winnt.h et représente le format d’en-tête de section de l’exécutable.
 
  Calculs de l’adresse virtuelle relative varient selon le `IMAGE_SECTION_HEADER` valeurs. En règle générale, le DIA récupère ces à partir du fichier de base de données (.pdb) de programme. Si ces valeurs sont manquantes, le DIA est impossible de calculer les adresses virtuelles relatives et [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne de la méthode `FALSE`. Le client doit appeler ensuite la [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) méthode pour activer les calculs d’adresse virtuelle relative après avoir entré les en-têtes d’image manquant à partir de l’image elle-même.

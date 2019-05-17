@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439347"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +46,10 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`ResolvedAssemblyReferences`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les références d’assembly résolues.|  
 |`ResolvedFiles`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les fichiers avec leur nom complet sur le disque qui correspondent aux emplacements physiques des bibliothèques de types fournies comme entrée pour cette tâche.|  
 |`ResolvedModules`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.|  
-|`SdkToolsPath`|[Chaîne] facultative)<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) paramètre.<br /><br /> Si `ExecuteAsTool` a la valeur `true`, ce paramètre doit être défini sur le chemin des outils du SDK de la version du framework ciblée.|  
-|`StateFile`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie le fichier cache pour les horodateurs de composant COM. S’il n’est pas présent, chaque exécution régénère tous les wrappers.|  
-|`TargetFrameworkVersion`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie la version du framework cible du projet.<br /><br /> La valeur par défaut est `String.Empty`, ce qui signifie qu’il n’existe pas de filtrage pour une référence basée sur le framework cible.|  
-|`TargetProcessorArchitecture`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur /machine de tlbimp.exe après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|Paramètre [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facultatif.<br /><br /> Si `ExecuteAsTool` a la valeur `true`, ce paramètre doit être défini sur le chemin des outils du SDK de la version du framework ciblée.|  
+|`StateFile`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> paramètre.<br /><br /> Spécifie le fichier cache pour les horodateurs de composant COM. S’il n’est pas présent, chaque exécution régénère tous les wrappers.|  
+|`TargetFrameworkVersion`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> paramètre.<br /><br /> Spécifie la version du framework cible du projet.<br /><br /> La valeur par défaut est `String.Empty`, ce qui signifie qu’il n’existe pas de filtrage pour une référence basée sur le framework cible.|  
+|`TargetProcessorArchitecture`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> paramètre.<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur /machine de tlbimp.exe après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le chemin du fichier de bibliothèque de types vers les références COM. Les éléments inclus dans ce paramètre peuvent contenir des métadonnées d’élément. Pour plus d’informations, consultez la section « Métadonnées d’élément TypeLibFiles » ci-dessous.|  
 |`TypeLibNames`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les noms de bibliothèques de types à résoudre. Les éléments inclus dans ce paramètre doivent contenir certaines métadonnées d’élément. Pour plus d’informations, consultez la section « Métadonnées d’élément TypeLibNames » ci-dessous.|  
 |`WrapperOutputDirectory`|Paramètre `String` facultatif.<br /><br /> Emplacement sur le disque où se trouve l’assembly d’interopérabilité généré. Si ces métadonnées d’élément ne sont pas spécifiée, la tâche utilise le chemin absolu du répertoire où se trouve le fichier projet.|  
@@ -75,7 +75,7 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`WrapperTool`|Métadonnées d’élément facultatives.<br /><br /> Spécifie l’outil wrapper utilisé pour générer le wrapper d’assembly pour cette bibliothèque de types. Si ces métadonnées d’élément ne sont pas spécifiées, la tâche utilise « tlbimp » comme outil wrapper par défaut. Les choix disponibles (leur casse n’est pas prise en compte) sont :<br /><br /> -   `Primary` : utilisez cet outil wrapper quand vous voulez utiliser un assembly PIA (Primary Interop Assembly) déjà généré pour le composant COM. Quand vous utilisez cet outil wrapper, ne spécifiez pas un répertoire de sortie du wrapper, car cela provoquerait l’échec de la tâche.<br />-   `TLBImp` : utilisez cet outil wrapper quand vous voulez générer un assembly d’interopérabilité pour le composant COM.<br />-   `AXImp` : utilisez cet outil wrapper quand vous voulez générer un assembly d’interopérabilité pour un contrôle ActiveX.|  
   
 > [!NOTE]
->  Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.  
+> Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.  
   
 ## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).  

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9f08422ae106e7d97341d3909ed5470a83d815e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688873"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460949"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Spécifie l’état de symboles pour un module.
@@ -37,13 +40,14 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membres
- MIF_SYMBOLS_LOADED au moins un jeu de symboles a été chargé par le module (sinon aucun symbole n’a été chargé).
+## <a name="fields"></a>Champs
+ `MIF_SYMBOLS_LOADED`\
+ Au moins un jeu de symboles a été chargé par le module (sinon aucun symbole n’a été chargé).
 
 ## <a name="remarks"></a>Notes
  Cette valeur est retournée par la [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

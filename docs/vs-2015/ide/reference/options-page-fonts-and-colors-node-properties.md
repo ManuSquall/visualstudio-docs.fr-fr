@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 418d804a8e7eda785e628c55054b6b1160a84a59
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 788d6077af99e6fe9fa99328aa9281d6327297b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697183"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Page Options, Polices et couleurs, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Ce document décrit les propriétés de police et de couleur d’une fenêtre Ou
 |FontSize|Get/Set (Short)|Taille de police à utiliser, en points. Par exemple, 10 ou 12.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Détermination des noms d’éléments de propriété dans les pages Options](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Détermination des noms d’éléments de propriété dans les pages Options](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Page Options, Propriétés du nœud Environnement](../../ide/reference/options-page-environment-node-properties.md)   
  [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)

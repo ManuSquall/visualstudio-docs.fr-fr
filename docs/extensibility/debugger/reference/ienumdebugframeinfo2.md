@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6c1f16afc064e1546f344adc26502d9596873e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6f1be974dae31d321bdb860188b5693747a2e61b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225566"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Cette interface énumère [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures.
@@ -48,7 +48,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio obtient cette interface en tant que la première étape à la gestion d’un point d’arrêt, une exception ou généré par l’utilisateur de pause sur le programme en cours de débogage. La liste des [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures représente la pile des appels actuelle, avec l’appel de fonction en cours au début de la liste et la plus ancienne fonction appeler à la fin de la liste. Chaque `FRAMEINFO` représente un frame de pile, un contexte dans lequel les expressions peuvent être évaluées et examiné des variables locales.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426448"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gestion du chargement de projet dans une solution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  Si le Gestionnaire de chargement de solution est destiné à gérer le chargement en général, elle peut être implémentée en tant que partie d’un VSPackage. Le package doit être défini pour le chargement automatique en ajoutant le <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> sur le VSPackage avec la valeur <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Le Gestionnaire de chargement de solution peut ensuite être activé dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).  
   
 > [!NOTE]
->  Pour plus d’informations sur les packages de chargement automatique, consultez [le chargement de VSPackages](../extensibility/loading-vspackages.md).  
+> Pour plus d’informations sur les packages de chargement automatique, consultez [le chargement de VSPackages](../extensibility/loading-vspackages.md).  
   
  Dans la mesure où Visual Studio reconnaît uniquement le Gestionnaire de charge solution dernier à être activé, gestionnaires de chargement de solution générale doivent toujours détecter la présence d’un gestionnaire de charge existant avant d’activer eux-mêmes. Si l’appel GetProperty() sur le service de la solution pour <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4> retourne `null`, il n’existe aucun gestionnaire de chargement de solution active. Si elle ne retourne pas null, vérifiez si l’objet est le même que le Gestionnaire de charge de votre solution.  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: cette méthode force le projet dans `guidProjectID` chargement avant le retour de la méthode.  
   
 > [!NOTE]
->  . Par défaut, seuls les projets qui ont la demande chargent et priorités de chargement en arrière-plan sont chargées, mais si le <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> indicateur est transmis à la méthode, tous les projets seront chargés à l’exception de ceux qui est marqués pour charger explicitement.
+> . Par défaut, seuls les projets qui ont la demande chargent et priorités de chargement en arrière-plan sont chargées, mais si le <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> indicateur est transmis à la méthode, tous les projets seront chargés à l’exception de ceux qui est marqués pour charger explicitement.

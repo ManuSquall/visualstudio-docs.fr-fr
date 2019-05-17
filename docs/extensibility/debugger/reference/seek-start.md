@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677993"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458398"
 ---
 # <a name="seekstart"></a>SEEK_START
 Spécifie la position à partir duquel commencer la recherche dans un flux de code machine.
@@ -45,21 +48,26 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Membres
- SEEK_START_BEGIN démarre la recherche au début du document actif.
+## <a name="fields"></a>Champs
+ `SEEK_START_BEGIN`\
+ Démarre la recherche au début du document actif.
 
- SEEK_START_END démarre la recherche à la fin du document actif.
+ `SEEK_START_END`\
+ Démarre la recherche à la fin du document actif.
 
- SEEK_START_CURRENT démarre la recherche à la position actuelle du document actif.
+ `SEEK_START_CURRENT`\
+ Démarre la recherche à la position actuelle du document actif.
 
- SEEK_START_CODECONTEXT démarre la recherche dans le contexte de code donné du document actif.
+ `SEEK_START_CODECONTEXT`\
+ Démarre la recherche dans le contexte de code donné du document actif.
 
- SEEK_START_CODELOCID démarre la recherche à l’identificateur d’emplacement de code donné. Identificateurs d’emplacement de code sont obtenus en appelant [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Démarre la recherche à l’identificateur d’emplacement de code donné. Identificateurs d’emplacement de code sont obtenus en appelant [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

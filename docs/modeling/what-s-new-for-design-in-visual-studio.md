@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869887"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476533"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Nouveautés en matière de conception dans Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validation des dépendances en direct
 
-Suppression des dépendances indésirables est une partie importante de la gestion de votre dette technique. Validation en direct des dépendances est maintenant inclus, en fournissant des informations précises sur les problèmes et tirent entièrement parti les nouvelles fonctionnalités dans la liste d’erreurs et de l’éditeur.
+Suppression des dépendances indésirables est une partie importante de la gestion de votre dette technique. Visual Studio fournit une validation en direct des dépendances, notamment des informations précises sur les problèmes, tels qu’où ils se trouvent. Direct des dépendances validation prend tous les avantages de nouvelles fonctionnalités dans la liste d’erreurs et de l’éditeur.
 
 ![Validation des dépendances en direct en action](media/dep-validation-whatsnew-01.png)
 
-L’expérience de création a changé pour rendre la validation de dépendance plus détectable et plus accessible, modification de la terminologie à partir de « Diagramme de couche » à « Diagramme de dépendance ».
+L’expérience de création a changé pour que la validation des dépendances plus détectable et plus accessible. La terminologie a changé depuis « Diagramme de couche » à « Diagramme de dépendance ».
 
 Le **Architecture** menu contient maintenant une commande pour créer directement un diagramme de dépendances :
 
 ![Élément de direct des dépendances dans le menu de l’Architecture](media/dep-validation-whatsnew-02.png)
 
-... et les noms des propriétés d’une couche dans un diagramme de dépendances et leurs descriptions, ont été modifiés pour les rendre plus explicites :
+Les noms de propriétés de couche et descriptions ont été modifiées pour les rendre plus explicites :
 
 ![Noms de propriété de dépendance Live mis à jour](media/dep-validation-whatsnew-03.png)
 
-Vous voyez maintenant l’impact de vos modifications immédiatement dans les résultats d’analyse du code en cours dans la solution chaque fois que vous enregistrez le diagramme. Vous n’êtes pas obligé d’attendre plus longtemps la fin de la commande « Valider les dépendances ».
+Vous voyez immédiatement l’impact de vos modifications dans les résultats d’analyse du code en cours dans la solution chaque fois que vous enregistrez le diagramme. Vous n’êtes pas obligé d’attendre la fin de la **valider les dépendances** commande.
 
 Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Des concepteurs UML ont été supprimés.
 
-Les concepteurs UML ont été supprimées de cette version de Visual Studio Enterprise.
+Les concepteurs UML ont été supprimés à partir de Visual Studio.
 
 * Diagrammes UML sont maintenant présentés en tant que fichiers XML
 * L’Explorateur de modèles UML n’existe plus
@@ -57,7 +57,7 @@ Les concepteurs UML ont été supprimées de cette version de Visual Studio Ente
 * Liaison différé à partir de DSL ou d’une couche est n’est plus pris en charge
 * Extensibilité UML dans le SDK de modélisation n’est plus pris en charge.
 
-Toutefois, la prise en charge pour visualiser l’architecture de code .NET et C++ est disponible via [cartes de code](map-dependencies-across-your-solutions.md)et les améliorations significatives à la validation de dépendance décrit ci-dessus.
+Prise en charge permettant de visualiser l’architecture de .NET et C++ code est disponible via [cartes de code](map-dependencies-across-your-solutions.md).
 
 Si vous êtes un utilisateur important des concepteurs UML, vous pouvez continuer à utiliser Visual Studio 2015 ou une version antérieure alors que vous choisissez un autre outil pour vos besoins UML.
 

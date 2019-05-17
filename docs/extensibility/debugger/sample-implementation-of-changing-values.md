@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c634d394fb6d30a22763cd12efe2d97ba5269986
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415623"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Exemple d’implémentation de la modification des valeurs
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Chaque local affiché dans le **variables locales** fenêtre a une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet associé. Cela `IDebugProperty2` objet contient le nom, valeur et type de l’ordinateur local. Lorsqu’un utilisateur modifie la valeur d’une variable locale, Visual Studio appelle [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) pour mettre à jour la valeur de la variable locale en mémoire. Dans cet exemple, l’ordinateur local est représenté par le `CFieldProperty` classe qui implémente le `IDebugProperty2` interface.
 
 > [!NOTE]
->  Pour **espion** et **Espion express** expressions, la valeur en cours de modification est représentée par la `CValueProperty` classe dans l’exemple MyCEE. Toutefois, l’implémentation de `IDebugProperty2::SetValueAsString` est identique à celui illustré ici.
+> Pour **espion** et **Espion express** expressions, la valeur en cours de modification est représentée par la `CValueProperty` classe dans l’exemple MyCEE. Toutefois, l’implémentation de `IDebugProperty2::SetValueAsString` est identique à celui illustré ici.
 
  L’implémentation de `IDebugProperty2::SetValueAsString` effectue les tâches suivantes :
 

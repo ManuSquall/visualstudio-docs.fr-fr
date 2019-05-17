@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686548"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 
@@ -27,7 +27,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
->  Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](http://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
+> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](https://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
  Vous allez découvrir ce qui suit :
@@ -69,7 +69,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Une fois que vous avez compris le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.
 
 > [!TIP]
->  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Cliquez sur le bouton **Analyser** et choisissez l’étendue de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
+> Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Cliquez sur le bouton **Analyser** et choisissez l’étendue de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
 
 ## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.
@@ -98,12 +98,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ## <a name="BKMK_Warnings"></a> Avertissements de l’analyse du code Visual Basic et C#
  L'analyse du code génère les avertissements suivants :
 
- [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821 : Supprimez les finaliseurs vides](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821 : Supprimez les finaliseurs vides](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213 : Les champs pouvant être supprimés doivent l’être](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213 : Les champs pouvant être supprimés doivent l’être](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229 : Implémentez des constructeurs de sérialisation](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229 : Implémentez des constructeurs de sérialisation](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

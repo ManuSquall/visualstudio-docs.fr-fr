@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d83b4945b41c26ace1b36a294f1830fdbb24d319
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c47e893cfe84c984231891583abe5d0fea0178dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694466"
 ---
 # <a name="pickbranch-activity-designer"></a>Concepteur d'activités PickBranch
 L’objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d’accès d’exécution basé sur les événements dans une activité <xref:System.Activities.Statements.Pick> qui peut être déclenchée par un événement entrant.  
@@ -58,5 +58,5 @@ L’objet <xref:System.Activities.Statements.PickBranch> fournit un chemin d’a
   
 ## <a name="see-also"></a>Voir aussi  
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)   
- [Activité Pick](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Utilisation de l’activité Pick](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Activité Pick](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Utilisation de l’activité Pick](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5b5db3fe3aaf8dc57c7df6a63810106ae9fb30fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967120"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Procédure : Ajouter un élément de menu contextuel à des projets SharePoint
   Vous pouvez ajouter un élément de menu contextuel à un projet SharePoint. L’élément de menu s’affiche quand un utilisateur clique sur un nœud de projet dans **l’Explorateur de solutions**.

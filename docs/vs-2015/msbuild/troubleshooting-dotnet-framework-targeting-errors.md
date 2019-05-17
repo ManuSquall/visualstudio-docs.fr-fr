@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668169"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703789"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Dépannage des erreurs de ciblage du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 ```  
   
 > [!NOTE]
->  Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.  
+> Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Cibler une Version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

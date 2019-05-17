@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697478"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Procédure : Utilisez la fenêtre Pile des appels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ La fenêtre **Pile des appels** permet d’afficher les appels de fonctions ou d
  Le menu contextuel vous permet de choisir si vous voulez afficher les appels entre les threads.  
   
 > [!NOTE]
->  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Pour afficher la fenêtre Pile des appels en mode arrêt ou en mode exécution  
   
@@ -139,7 +139,7 @@ La fenêtre **Pile des appels** permet d’afficher les appels de fonctions ou d
   
 ## <a name="see-also"></a>Voir aussi  
  [Code mixte et informations manquantes dans la fenêtre Pile des appels](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Guide pratique pour Modifier le Format numérique de débogueur Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Guide pratique pour Modifier le Format numérique de débogueur Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

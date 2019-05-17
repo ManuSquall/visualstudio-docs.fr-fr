@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04a76c88e5fd3eee146f6c174087298bac2b6974
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9a5d4daad66ed6a4428724b20093473ba7b93856
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679903"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226226"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Obtient le nom d’un thread.
@@ -36,8 +39,8 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrName`
+## <a name="parameters"></a>Paramètres
+ `pbstrName`\
 
  [out] Retourne le nom du thread.
 

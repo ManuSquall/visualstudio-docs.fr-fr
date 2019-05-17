@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439699"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procédure pas à pas : Profilage à l’aide d’Instrumentation de ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Cette procédure pas à pas explique comment profiler une application autonome [
  L’instrumentation est une méthode de profilage par laquelle des versions des binaires profilés spécialement générées contiennent des fonctions de sonde qui collectent les informations de temporisation à l’entrée et à la sortie des fonctions dans un module instrumenté. Étant donné que cette méthode de profilage est plus lourde que l’échantillonnage, elle entraîne une surcharge plus importante. En outre, les binaires instrumentés sont plus volumineux que les binaires Debug ou Release et ne sont pas destinés à être déployés.  
   
 > [!NOTE]
->  N’envoyez pas de binaires instrumentés à vos clients. Les binaires instrumentés peuvent contenir plusieurs risques. Ils contiennent des informations qui facilitent l’ingénierie à rebours de votre application, ainsi que des risques pour la sécurité.  
+> N’envoyez pas de binaires instrumentés à vos clients. Les binaires instrumentés peuvent contenir plusieurs risques. Ils contiennent des informations qui facilitent l’ingénierie à rebours de votre application, ainsi que des risques pour la sécurité.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’instrumentation  
   

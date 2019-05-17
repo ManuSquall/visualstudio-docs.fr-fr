@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416701"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidemen
 |Documents|@doc<br /><br /> Par exemple, `@doc font`.|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|  
   
 > [!NOTE]
->  Vous pouvez changer les touches de raccourci dans la page **Général**, **Clavier** de la boîte de dialogue **Options**.  
+> Vous pouvez changer les touches de raccourci dans la page **Général**, **Clavier** de la boîte de dialogue **Options**.  
   
 ## <a name="show-previous-results"></a>Afficher les résultats précédents  
  Par défaut, le terme de recherche que vous entrez n'est pas conservé entre les sessions de recherche. La chaîne de recherche est effacée si vous recherchez un terme, que vous déplacez le curseur en dehors de la zone **Lancement rapide**, puis que vous y revenez. Pour conserver les résultats de recherche, accédez à la boîte de dialogue **Options**, choisissez **Lancement rapide**, puis cochez la case **Afficher les résultats de la dernière recherche si le menu de lancement rapide est activé** . La prochaine fois que vous effectuez une recherche, quittez la zone Lancement rapide et revenez-y : la zone Lancement rapide conserve alors le dernier terme de recherche utilisé et vous montre également les résultats de recherche.  

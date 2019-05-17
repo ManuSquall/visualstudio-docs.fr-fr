@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419482"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procédure : Exporter un ruban à partir du Concepteur de ruban vers ruban XML
   Le **ruban (Concepteur visuel)** élément ne prend pas en charge tous les types possibles de personnalisation du ruban. Pour personnaliser le ruban de façon avancée, vous pouvez exporter le ruban à partir du concepteur vers ruban XML et modifier directement le XML.
 
 > [!NOTE]
->  Toutes les valeurs de propriété apparaissent dans le fichier XML du ruban. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
+> Toutes les valeurs de propriété apparaissent dans le fichier XML du ruban. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

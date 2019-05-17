@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d49d0cb43e4d93c5981aa9000c8ae539bc84879
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1b437fb34902783002baedee992a21ee61a86c2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685624"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Procédure : implémenter une interface (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099557"
 Dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface. Le Concepteur de classes génère une implémentation d’interface et affiche la relation entre l’interface et la classe sous la forme d’une relation d’héritage. Vous pouvez implémenter une interface en dessinant une ligne d’héritage entre l’interface et la classe ou en faisant glisser l’interface à partir de l’Affichage de classes.  
   
 > [!TIP]
->  Vous pouvez créer des interfaces de la même façon que vous créez d’autres types. Si l’interface existe mais n’apparaît pas dans le diagramme de classes, affichez-la d’abord. Pour plus d'informations, voir [Procédure : Créer des Types à l’aide du Concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md) et [Comment : Afficher des Types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md).  
+> Vous pouvez créer des interfaces de la même façon que vous créez d’autres types. Si l’interface existe mais n’apparaît pas dans le diagramme de classes, affichez-la d’abord. Pour plus d'informations, voir [Procédure : Créer des Types à l’aide du Concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md) et [Comment : Afficher des Types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md).  
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Pour implémenter une interface en dessinant une ligne d’héritage  
   
@@ -44,7 +44,7 @@ Dans le Concepteur de classes, vous pouvez implémenter une interface pour le di
 2. Ouvrez l’Affichage de classes et recherchez l’interface.  
   
     > [!TIP]
-    >  Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
 3. Faites glisser le nœud de l’interface vers la forme de classe sur le diagramme.  
   

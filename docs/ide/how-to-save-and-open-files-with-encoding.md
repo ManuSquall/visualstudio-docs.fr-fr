@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 484a891c83796f58c7ed8d6053c51189b2448bb9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946944"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procédure : Enregistrer et ouvrir des fichiers avec encodage
 
@@ -26,13 +26,13 @@ Vous pouvez enregistrer des fichiers ayant un codage de caractères spécifique 
 
 ## <a name="to-save-a-file-with-encoding"></a>Pour enregistrer un fichier avec encodage
 
-1.  Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.
+1. Dans le menu **Fichier**, choisissez **Enregistrer le fichier sous**, puis cliquez sur le bouton déroulant à côté du bouton **Enregistrer**.
 
      La boîte de dialogue **Options d’enregistrement avancées** s’affiche.
 
-2.  Sous **Encodage**, sélectionnez l’encodage à utiliser pour le fichier.
+2. Sous **Encodage**, sélectionnez l’encodage à utiliser pour le fichier.
 
-3.  Éventuellement, sous **Fins de ligne**, sélectionnez le format des caractères de fin de ligne.
+3. Éventuellement, sous **Fins de ligne**, sélectionnez le format des caractères de fin de ligne.
 
      Cette option est utile si vous souhaitez échanger le fichier avec des utilisateurs d’un système d’exploitation différent.
 
@@ -40,21 +40,21 @@ Vous pouvez enregistrer des fichiers ayant un codage de caractères spécifique 
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Pour ouvrir un fichier encodé qui fait partie d’un projet
 
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier et choisissez **Ouvrir avec**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier et choisissez **Ouvrir avec**.
 
-2.  Dans la boîte de dialogue **Ouvrir avec**, choisissez l’éditeur avec lequel vous voulez ouvrir le fichier.
+2. Dans la boîte de dialogue **Ouvrir avec**, choisissez l’éditeur avec lequel vous voulez ouvrir le fichier.
 
      De nombreux éditeurs Visual Studio, tels que l’éditeur de formulaires, détectent automatiquement l’encodage et ouvrent le fichier de façon appropriée. Si vous optez pour un éditeur qui vous permet de choisir l’encodage, la boîte de dialogue **Encodage** s’affiche.
 
-3.  Dans la boîte de dialogue **Encodage**, sélectionnez le codage que l’éditeur doit utiliser.
+3. Dans la boîte de dialogue **Encodage**, sélectionnez le codage que l’éditeur doit utiliser.
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Pour ouvrir un fichier encodé qui ne fait pas partie d’un projet
 
-1.  Dans le menu **Fichier**, pointez sur **Ouvrir**, choisissez **Fichier** ou **Fichier à partir du web**, puis sélectionnez le fichier à ouvrir.
+1. Dans le menu **Fichier**, pointez sur **Ouvrir**, choisissez **Fichier** ou **Fichier à partir du web**, puis sélectionnez le fichier à ouvrir.
 
-2.  Cliquez sur le bouton déroulant en regard du bouton **Ouvrir**, puis choisissez **Ouvrir avec**.
+2. Cliquez sur le bouton déroulant en regard du bouton **Ouvrir**, puis choisissez **Ouvrir avec**.
 
-3.  Suivez les étapes 2 et 3 de la procédure précédente.
+3. Suivez les étapes 2 et 3 de la procédure précédente.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092973"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705287"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procédure pas à pas : Débogage d’une Application parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.  
+Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou [Runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.  
   
  Cette procédure pas à pas aborde les tâches suivantes :  
   
@@ -308,7 +308,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
  [Débogage d’Applications multithread](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
- [Programmation parallèle](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programmation parallèle](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)   
  [Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)

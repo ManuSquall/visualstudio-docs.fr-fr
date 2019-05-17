@@ -11,11 +11,11 @@ manager: Meng
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950983"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procédure pas à pas : Créer un pack d’extensions
 
@@ -33,7 +33,7 @@ Le modèle d’élément de Pack d’Extension crée un Pack d’Extension avec 
 
 1. Dans le **nouveau projet** boîte de dialogue, recherchez « vsix » et sélectionnez **projet VSIX**. Pour **nom_projet**, tapez « Pack d’Extension de Test ». Sélectionnez **Créer**.
 
-2. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual C# **extensibilité** nœud et sélectionnez **Pack d’Extension**. Laissez le nom de fichier par défaut (ExtensionPack1.cs).
+2. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Accédez à Visual c# **extensibilité** nœud et sélectionnez **Pack d’Extension**. Laissez le nom de fichier par défaut (ExtensionPack1.cs).
 
 3. ExtensionPack1.vsext fichier est ajouté, qui contient le code suivant
 

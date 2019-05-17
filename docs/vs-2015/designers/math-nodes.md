@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51430c78dcf694a602ce6b8904262647a257ac32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403478"
 ---
 # <a name="math-nodes"></a>Nœuds mathématiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ ms.locfileid: "54796217"
 Dans le concepteur de nuanceur, les nœuds mathématiques effectuent des opérations mathématiques, notamment algébriques, logiques et trigonométriques.  
   
 > [!NOTE]
->  Lorsque vous utilisez des nœuds mathématiques dans le concepteur de nuanceur, la promotion de type est particulièrement évidente. Pour découvrir comment la promotion de type affecte les paramètres d’entrée, consultez la section « Promotion of inputs (Promotion d’entrées) » de l’article [Shader Designer Nodes (Nœuds du concepteur de nuanceur)](../designers/shader-designer-nodes.md).  
+> Lorsque vous utilisez des nœuds mathématiques dans le concepteur de nuanceur, la promotion de type est particulièrement évidente. Pour découvrir comment la promotion de type affecte les paramètres d’entrée, consultez la section « Promotion of inputs (Promotion d’entrées) » de l’article [Shader Designer Nodes (Nœuds du concepteur de nuanceur)](../designers/shader-designer-nodes.md).  
   
 ## <a name="math-node-reference"></a>Informations de référence des nœuds mathématiques  
   
-|Nœud|Détails|Propriétés|  
+|Nœud|Détails|Properties|  
 |----------|-------------|----------------|  
 |**Abs**|Calcule la valeur absolue de l’entrée spécifiée par composant.<br /><br /> Pour chaque composant d’entrée `X`, les valeurs négatives sont rendues positives afin que chaque composant du résultat ait une valeur positive.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Valeurs pour lesquelles déterminer la valeur absolue.<br /><br /> `Output:`<br /><br /> `Output` : identique à l’entrée `X`<br /> Valeur absolue par composant.|Aucun.|  
 |**Ajouter**|Calcule la somme des entrées spécifiées par composant.<br /><br /> Pour chaque composant du résultat, les composants correspondants des entrées `X` et `Y` sont additionnés.<br /><br /> **Entrée :**<br /><br /> `X` : `float`, `float2`, `float3` ou `float4`<br /> Une des valeurs à additionner.<br /><br /> `Y` : identique à l’entrée `X`<br /> Une des valeurs à additionner.<br /><br /> **Sortie :**<br /><br /> `Output` : identique à l’entrée `X`<br /> Somme par composant.|Aucun.|  

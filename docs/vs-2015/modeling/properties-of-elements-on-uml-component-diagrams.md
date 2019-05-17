@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5fc99de05ef040db8c4560f9f6623081018a556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c7f3f30d08fb62defec5e783da286e968a6b17c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444433"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Propriétés des éléments dans les diagrammes de composants UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58951401"
 Dans un diagramme de composant UML, chaque élément du diagramme possède des propriétés. Pour afficher les propriétés d’un élément, cliquez sur l’élément sur le diagramme ou dans **Explorateur de modèles UML** puis cliquez sur **propriétés**. Les propriétés s’affichent dans le **propriétés** fenêtre.  
   
 > [!NOTE]
->  Cette rubrique traite des propriétés d'éléments dans les diagrammes de composants UML. Pour plus d’informations sur la lecture des diagrammes de composants UML, consultez [diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de composants UML, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
+> Cette rubrique traite des propriétés d'éléments dans les diagrammes de composants UML. Pour plus d’informations sur la lecture des diagrammes de composants UML, consultez [diagrammes de composants UML : Référence](../modeling/uml-component-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de composants UML, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Propriétés des éléments  
   
@@ -36,7 +36,7 @@ Dans un diagramme de composant UML, chaque élément du diagramme possède des p
 |**Name**|Nom par défaut|Tous|Identifie l'élément.|  
 |**Nom qualifié**|Namespace :: Nom|Tous|Identifie l'élément de manière unique.<br /><br /> Le nom d'un composant ou d'un type a pour préfixe le nom qualifié du package qui le contient.<br /><br /> Le nom d'une partie ou d'un port a pour préfixe le nom qualifié du composant qui le possède.|  
 |**Éléments de travail**|{0} associé|Tous|Nombre d'éléments de travail associés à cet élément. Pour associer des éléments de travail, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).|  
-|**Description**|(aucune)|Tous|Vous pouvez consigner des remarques générales concernant l'élément.|  
+|**Description**|(aucun)|Tous|Vous pouvez consigner des remarques générales concernant l'élément.|  
 |**Color**|(valeur par défaut pour le type)|Composant, élément, délégation, assembly d'élément|Couleur de la forme. Contrairement aux autres propriétés, c'est la couleur de la forme plutôt que l'élément de modèle que la forme affiche.|  
 |**Is Indirectly Instantiated**|True|Composant|Le composant existe uniquement en tant qu'un artefact de conception. Au moment de l'exécution, seuls ses éléments existent.|  
 |**Est abstrait**|False|Composant|La définition du composant peut être utilisée uniquement comme une généralisation à partir de laquelle d'autres composants peuvent être spécialisés.|  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392b922eb8312906713ba7b5808ed117e20277b5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871788"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 Cette interface permet à la session de débogage manager (SDM) contrôle les programmes et les processus en cours d’exécution sur un port.
@@ -51,7 +51,7 @@ IDebugPortEx2 : IUnknown
 
  Si vous le souhaitez, un moteur de débogage (dé) peut rechercher pour cette interface sur le [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface transmise au [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) et utiliser [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) pour lancer le programme. Cela n’est pas obligatoire, toutefois, et un DE faire tout ce qui est nécessaire pour lancer le programme de la demande.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : portpriv.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

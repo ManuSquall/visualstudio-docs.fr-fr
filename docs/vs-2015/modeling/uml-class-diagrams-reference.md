@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424485"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagrammes de classes UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58953192"
 Un diagramme de classes UML décrit les structures des objets et des informations utilisés par votre application, à la fois en interne et en communication avec ses utilisateurs. Il décrit les informations sans référence à une implémentation particulière. Ses classes et relations peuvent être implémentées de différentes manières, par exemple avec des tables de bases de données, des nœuds XML ou des compositions d'objets logiciels.  
   
 > [!NOTE]
->  Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, le diagramme de classes .NET, qui sert à visualiser le code de programme. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, le diagramme de classes .NET, qui sert à visualiser le code de programme. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
  Pour créer un diagramme de classes UML, sur le **Architecture** menu, choisissez **nouveau UML ou diagramme de couche**. Pour plus d’informations sur la façon de dessiner des diagrammes de classes UML, consultez [diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md). Pour plus d’informations sur la façon de créer et dessiner des diagrammes de modélisation, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   

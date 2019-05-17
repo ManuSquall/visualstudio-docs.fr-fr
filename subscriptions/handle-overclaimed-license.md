@@ -7,14 +7,14 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent résoudre les problèmes de surutilisation d’abonnements
 searchscope: VS Subscription
-ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
+ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953928"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64945136"
 ---
-# <a name="handling-over-claimed-subscriptions"></a>Gestion des abonnements « surutilisés »
+# <a name="overallocated-subscriptions"></a>Abonnements surutilisés
 
 Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Quand cela se produit, l’onglet Abonnés affiche une alerte, accompagnée d’informations détaillées.
 
@@ -24,8 +24,27 @@ Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque e
 > [!div class="mx-imgBorder"]
 > ![Notification de surutilisation d’abonnements](_img/over-claimed/over-claimed-alert.png)
 
-1. Pour résoudre le problème de surutilisation de licences, cliquez sur le texte de l’alerte. Vous voyez s’afficher une liste filtrée des abonnés pour lesquels le niveau et la date d’expiration de l’abonnement attribué donne lieu à une surutilisation de licences. 
+## <a name="resolving-overallocated-subscriptions"></a>Résolution des abonnements surutilisés
+
+Pour résoudre des licences surutilisées :
+
+1. Cliquez sur le texte d’alerte. Vous voyez s’afficher une liste filtrée des abonnés pour lesquels le niveau et la date d’expiration de l’abonnement attribué donne lieu à une surutilisation de licences. 
 
 2. Supprimez des abonnés de façon à résoudre le problème de surutilisation des licences. 
 
 3. La vue d’ensemble sur le côté gauche de la page est ensuite actualisée pour montrer qu’il n’y a plus de problème et retirer toutes les notifications de surutilisation. 
+
+## <a name="billing-and-true-up"></a>Facturation et régularisation
+
+Si votre organisation a un Contrat Entreprise (EA), les administrateurs peuvent attribuer des abonnements sans les acheter, en les payant plus tard par le biais d’un processus de rapprochement appelé « régularisation ».  En cas de surutilisation, le nombre maximal d’abonnements attribués aux utilisateurs durant la « régularisation » est facturé à votre entreprise.  Cela est vrai même si le nombre actuel d’abonnements ne correspond plus au nombre maximal d’abonnements attribués au moment de la régularisation.  Pour en savoir plus sur le contrôle de l’utilisation maximum, consultez la rubrique [Utilisation maximum](maximum-usage.md).
+
+> [!Important]
+> Si des abonnements Visual Studio avec GitHub Enterprise sont attribués par des administrateurs d’abonnement Visual Studio alors qu’ils n’ont jamais été achetés, les administrateurs GitHub Enterprise au sein de l’organisation ne les voient pas. Pour vérifier que les abonnements GitHub Enterprise sont visibles, un achat comprenant **au moins** un abonnement Visual Studio Professional avec GitHub Enterprise ou Visual Studio Enterprise avec GitHub Enterprise doit être effectué à la première attribution des abonnements.  
+>
+> Il appartient au client de vérifier qu’à chaque abonnement GitHub attribué correspond un abonnement Visual Studio avec GitHub attribué dans le portail Gérer afin de respecter les conditions de licence pour cet abonnement.
+
+
+Découvrez-en plus sur la gestion des [abonnements Visual Studio avec GitHub Enterprise](assign-github.md).
+
+## <a name="support-resources"></a>Ressources de support
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

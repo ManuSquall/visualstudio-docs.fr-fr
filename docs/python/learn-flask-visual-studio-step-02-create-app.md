@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961737"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
@@ -77,6 +77,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
         app.run(HOST, PORT)
     ```
+
 6. La structure de votre projet doit ressembler à ceci :
 
     ![Structure du projet après refactorisation du code](media/flask/step02-project-structure.png)

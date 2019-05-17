@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436720"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 2
   Une fois que vous définissez un type d’élément de projet SharePoint personnalisé et l’associez à un modèle de projet dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour créer un projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.
@@ -222,7 +222,7 @@ ms.locfileid: "60059108"
  Ajoutez le XAML pour définir l’interface utilisateur de la fenêtre de l’Assistant et les deux contrôles utilisateur qui fournissent l’interface utilisateur pour les pages d’Assistant et ajouter du code pour définir le comportement des fenêtre et contrôles utilisateur. L’Assistant que vous créez est similaire à l’Assistant intégré pour les projets SharePoint dans Visual Studio.
 
 > [!NOTE]
->  Dans les étapes suivantes, votre projet aura des erreurs de compilation après avoir ajouté le code ou XAML à votre projet. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
+> Dans les étapes suivantes, votre projet aura des erreurs de compilation après avoir ajouté le code ou XAML à votre projet. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Pour créer la fenêtre de l’Assistant d’interface utilisateur
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059108"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  La fenêtre qui est créée dans ce XAML est dérivée de la <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe de base. Lorsque vous ajoutez une boîte de dialogue WPF personnalisée à Visual Studio, nous vous recommandons de dériver votre boîte de dialogue à partir de cette classe pour que la cohérence du style avec d’autres boîtes de dialogue Visual Studio et éviter les problèmes de la boîte de dialogue modale qui pourraient se produire. Pour plus d’informations, consultez [création et la gestion des boîtes de dialogue modales](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La fenêtre qui est créée dans ce XAML est dérivée de la <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe de base. Lorsque vous ajoutez une boîte de dialogue WPF personnalisée à Visual Studio, nous vous recommandons de dériver votre boîte de dialogue à partir de cette classe pour que la cohérence du style avec d’autres boîtes de dialogue Visual Studio et éviter les problèmes de la boîte de dialogue modale qui pourraient se produire. Pour plus d’informations, consultez [création et la gestion des boîtes de dialogue modales](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Si vous développez un projet Visual Basic, supprimez le `ProjectTemplateWizard` espace de noms à partir de la `WizardWindow` nom de classe dans le `x:Class` attribut de la `Window` élément. Cet élément est dans la première ligne de le XAML. Lorsque vous avez terminé, la première ligne doit ressembler à l’exemple suivant.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059108"
      La colonne de site est empaquetée et déployée vers SharePoint site qui le **URL du Site** spécifie la propriété du projet. Le navigateur web s’ouvre à la page par défaut de ce site.
 
     > [!NOTE]
-    >  Si le **le débogage de Script est désactivé** boîte de dialogue s’affiche, choisissez le **Oui** pour continuer à déboguer le projet.
+    > Si le **le débogage de Script est désactivé** boîte de dialogue s’affiche, choisissez le **Oui** pour continuer à déboguer le projet.
 
 2. Sur le **Actions du Site** menu, choisissez **paramètres du Site**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059108"
 - [Définir les types d’éléments de projet SharePoint personnalisés](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Création de modèles d’élément et de modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Référence du schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Guide pratique pour Utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

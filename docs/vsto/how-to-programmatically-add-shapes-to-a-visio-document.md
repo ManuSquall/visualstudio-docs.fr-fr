@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967518"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procédure : Ajouter par programmation des formes à un document Visio
   Vous pouvez ajouter des formes à un document Microsoft Office Visio en récupérant les formes de base d’un gabarit et en déplaçant les formes sur la page active.

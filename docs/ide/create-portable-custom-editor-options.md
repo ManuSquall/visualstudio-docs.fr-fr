@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794094"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -25,7 +25,7 @@ Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, l
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [EditorConfig dans Visual Studio pour Mac](/visualstudio/mac/editorconfig).
 
-## <a name="coding-consistency"></a>Cohérence du codage
+## <a name="code-consistency"></a>Cohérence du code
 
 Les paramètres définis dans les fichiers EditorConfig vous permettent de garantir la cohérence des paramètres et des styles de codage dans une base de code, tels que le style de mise en retrait, la largeur de tabulation, les caractères de fin de ligne et l’encodage, indépendamment de l’éditeur ou de l’IDE que vous utilisez. Par exemple, quand vous codez en C#, si votre codebase a une convention selon laquelle les retraits sont toujours des caractères à cinq espaces, les documents utilisent l’encodage UTF-8 et chaque ligne se termine toujours par un retour chariot/saut de ligne. Pour ce faire, vous pouvez configurer un fichier *.editorconfig*.
 
@@ -51,7 +51,7 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 
 Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md) et de [nommage](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
 
-## <a name="adding-and-removing-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
+## <a name="add-and-remove-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
 
 L’ajout d’un fichier EditorConfig à votre projet ou code base ne convertit pas les styles existants en nouveaux styles. Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Toutefois, les nouvelles lignes de code sont mises en forme selon le fichier EditorConfig. Par ailleurs, si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**), les paramètres contenus dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
 
@@ -94,7 +94,7 @@ Il existe d’autres façons d’ajouter un fichier EditorConfig au projet :
 
 - Essayez l’[extension IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Cette extension expérimentale déduit vos styles de code à partir du code existant, puis crée un fichier *.editorconfig* non vide avec vos préférences de style de code déjà définies.
 
-## <a name="override-editorconfig-settings"></a>Substituer les paramètres d’EditorConfig
+## <a name="file-hierarchy-and-precedence"></a>Priorité et hiérarchie des fichiers
 
 Quand vous ajoutez un fichier *.editorconfig* à un dossier de votre hiérarchie de fichiers, ses paramètres s’appliquent à tous les fichiers concernés situés au même niveau et en dessous. Vous pouvez également remplacer les paramètres EditorConfig d’un projet particulier, d’un code base ou d’une partie de code base qui utilise des conventions différentes de celles des autres parties du code base. Ce remplacement peut s’avérer être utile quand vous incorporez du code provenant d’ailleurs et que vous ne voulez pas modifier ses conventions.
 
@@ -109,9 +109,9 @@ Si vous voulez remplacer une partie des paramètres seulement, il suffit de spé
 root = true
 ```
 
-Les fichiers EditorConfig sont lus de haut en bas, et les fichiers EditorConfig les plus proches sont lus en dernier. Les conventions des sections correspondantes d’EditorConfig sont appliquées dans l’ordre de leur lecture. Les conventions dans les fichiers les plus proches sont donc prioritaires.
+Les fichiers EditorConfig sont lus de haut en bas. S’il existe plusieurs propriétés portant le même nom, la propriété la plus récemment trouvée portant ce nom est prioritaire.
 
-## <a name="editing-editorconfig-files"></a>Modification des fichiers EditorConfig
+## <a name="edit-editorconfig-files"></a>Modifier des fichiers EditorConfig
 
 Visual Studio vous permet de modifier les fichiers *.editorconfig* en fournissant des listes de saisie semi-automatique IntelliSense.
 
@@ -148,7 +148,7 @@ Maintenant, quand vous appuyez sur la touche **Tab**, vous obtenez des caractèr
 
 ![Un appui sur la touche Tab ajoute un caractère de tabulation](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>Résoudre les problèmes liés aux paramètres d’EditorConfig
+## <a name="troubleshoot-editorconfig-settings"></a>Résoudre les problèmes liés aux paramètres d’EditorConfig
 
 Si un fichier EditorConfig se trouve n’importe où dans la structure de répertoire au niveau ou au-dessus de votre projet, Visual Studio applique les paramètres de l’éditeur définis dans ce fichier à votre éditeur. Dans ce cas, vous pouvez voir le message suivant s’afficher dans la barre d’état :
 

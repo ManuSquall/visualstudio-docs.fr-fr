@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415559"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procédure : Créer des marqueurs de texte personnalisé
 Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évidence ou organiser le code, vous devez procédez comme suit :
@@ -41,7 +41,7 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
     `<PackageGUID>` le GUID du VSPackage implémente l’objet automation.
 
    > [!NOTE]
-   >  Le chemin d’accès racine de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version >** peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Le chemin d’accès racine de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version >** peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Créez quatre valeurs sous **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version > \Text Editor\External marqueurs\\\<MarkerGUID >**
 

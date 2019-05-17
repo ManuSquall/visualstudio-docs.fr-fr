@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc54f8a01e1bd8c7a35779fdcec66bcb64d01379
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412845"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Effectue une étape.
 
 > [!NOTE]
->  Cette méthode est dépréciée. Utilisez le [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) méthode à la place.
+> Cette méthode est dépréciée. Utilisez le [étape](../../../extensibility/debugger/reference/idebugprocess3-step.md) méthode à la place.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -63,7 +63,7 @@ int Step( 
  En cas de toute synchronisation de threads ou de la communication entre les threads, les autres threads dans le programme doivent s’exécuter lorsqu’un thread particulier est exécution pas à pas.
 
 > [!WARNING]
->  Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
+> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

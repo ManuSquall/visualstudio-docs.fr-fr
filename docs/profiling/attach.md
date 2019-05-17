@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440292"
 ---
 # <a name="attach"></a>Attach
 L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par le PID (ID de processus).
@@ -21,7 +21,7 @@ L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonn
  Pour utiliser l’option **Attach**, vous devez spécifier la méthode **Sample** dans l’option Start.
 
 > [!NOTE]
->  Si l’option **Start** a été spécifiée avec l’option **Crosssession**, les appels à **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** doivent également spécifier **Crosssession**.
+> Si l’option **Start** a été spécifiée avec l’option **Crosssession**, les appels à **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** doivent également spécifier **Crosssession**.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
 
--   **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.
+- **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.
 
--   **PF** : échantillonne tous les `Events` défauts de page. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 défauts de page.
+- **PF** : échantillonne tous les `Events` défauts de page. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 défauts de page.
 
--   **Sys** : échantillonne tous les `Events` appels au système d’exploitation. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 appels système.
+- **Sys** : échantillonne tous les `Events` appels au système d’exploitation. Si `Events` n’est pas spécifié, la valeur utilisée est de 10 appels système.
 
--   **Counter** : échantillonne tous les nombres de `Reload` du compteur de performance de l’UC spécifié par `Name`. En option, `FriendlyName` peut spécifier une chaîne à utiliser comme en-tête de colonne dans les rapports du profileur.
+- **Counter** : échantillonne tous les nombres de `Reload` du compteur de performance de l’UC spécifié par `Name`. En option, `FriendlyName` peut spécifier une chaîne à utiliser comme en-tête de colonne dans les rapports du profileur.
 
 ## <a name="example"></a>Exemple
  Cet exemple montre comment s’attacher à une instance en cours d’exécution d’une application avec l’ID de processus 12345.

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 49a4e64767497e4a1098bda9f5ee4e0eec8151f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950732"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682818"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036 : Substituer les méthodes sur les types Comparable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58950732"
 
 - op_GreaterThan
 
-  En C#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes : ==, ! =, \<, et >.
+  En c#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes : ==, ! =, \<, et >.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle lorsque la violation est provoquée par des opérateurs manquants et votre langage de programmation ne prend pas en charge la surcharge d’opérateur, comme c’est le cas avec Visual Basic .NET. Il est également possible de supprimer un avertissement de cette règle quand elle se déclenche sur les opérateurs d’égalité autres qu’op_Equality si vous déterminez que l’implémentation des opérateurs n’est pas pertinent dans votre contexte de l’application sans. Toutefois, vous ne devriez toujours op_Equality et l’opérateur == si vous se substitue à Object.Equals.
@@ -66,4 +66,4 @@ ms.locfileid: "58950732"
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName>
- [Opérateurs d’égalité](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ [Opérateurs d’égalité](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

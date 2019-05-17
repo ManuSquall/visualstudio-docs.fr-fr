@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447073"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant publication (développement Office dans Visual Studio)
   Utilisez le **Assistant Publication** pour copier les fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.
@@ -46,7 +46,7 @@ ms.locfileid: "56604829"
   Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le répertoire publish\ si vous le faites pas IIS installé.
 
 > [!NOTE]
->  Il existe des considérations plus si l’ordinateur cible exécute Windows Vista. Vous devez être administrateur sur l’ordinateur Windows Vista d’utiliser l’option de publication local. En outre, l’emplacement par défaut est toujours le *publier\\*  répertoire, que vous ayez installé IIS.
+> Il existe des considérations plus si l’ordinateur cible exécute Windows Vista. Vous devez être administrateur sur l’ordinateur Windows Vista d’utiliser l’option de publication local. En outre, l’emplacement par défaut est toujours le *publier\\*  répertoire, que vous ayez installé IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qu’est le chemin d’installation par défaut sur les ordinateurs des utilisateurs finaux ?
  Le chemin d’installation est facultative. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Guide pratique pour Modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).

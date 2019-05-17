@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704675"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  **Arrêter lorsque des exceptions dépassent les limites AppDomain ou managées/natives**  
  Lors du débogage managé ou en mode mixte, le Common Language Runtime peut intercepter les exceptions qui transgressent les limites entre domaines d'application ou les limites managées/natives dans les conditions suivantes :  
   
- 1\) lorsque le code natif appelle du code managé à l’aide de COM Interop et le code managé lève une exception. Consultez [Introduction à COM Interop](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) lorsque le code natif appelle du code managé à l’aide de COM Interop et le code managé lève une exception. Consultez [Introduction à COM Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) lorsque le code managé exécuté dans le domaine d’application 1 appelle du code managé dans le domaine d’application 2, et le code dans le domaine d’application 2 lève une exception. Consultez [Programming with Application Domains](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) lorsque le code managé exécuté dans le domaine d’application 1 appelle du code managé dans le domaine d’application 2, et le code dans le domaine d’application 2 lève une exception. Consultez [Programming with Application Domains](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) lorsque code appelle une fonction en utilisant la réflexion, et la fonction lève une exception. Consultez [réflexion](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) lorsque code appelle une fonction en utilisant la réflexion, et la fonction lève une exception. Consultez [réflexion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Dans les conditions 2) et 3), l'exception est quelquefois interceptée par le code managé dans `mscorlib` au lieu du Common Language Runtime. Cette option n'a aucune incidence sur l'arrêt sur les exceptions interceptées par `mscorlib`.  
   
@@ -61,7 +61,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  Vous permet de définir des filtres sur les points d'arrêt afin qu'ils affectent uniquement des processus, threads ou ordinateurs spécifiques.  
   
  **Activer l’assistant exception**  
- Pour code managé uniquement. Les exceptions prises en charge ouvrent la boîte de dialogue Assistant Exception.  Consultez [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Pour code managé uniquement. Les exceptions prises en charge ouvrent la boîte de dialogue Assistant Exception.  Consultez [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Dérouler la pile des appels sur les exceptions non gérées**  
  La fenêtre **Pile des appels** restaure la pile des appels au point qui précède l'exception non gérée.  
@@ -84,14 +84,14 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  **Activer l’évaluation de la propriété et d’autres appels de fonction implicite**  
  Active l'évaluation automatique des propriétés et des appels de fonction implicites dans les fenêtres de variables et la boîte de dialogue **QuickWatch**.  
   
- **Appeler la fonction de conversion de chaînes sur des objets dans des fenêtres de variables (C# et JavaScript uniquement)**  
+ **Appeler la fonction de conversion de chaînes sur des objets dans des fenêtres de variables (c# et JavaScript uniquement)**  
  Exécute un appel de conversion de chaînes implicite lors de l'évaluation d'objets dans des fenêtres de variables. Par conséquent, ce résultat est affiché sous forme de chaîne plutôt que sous forme de nom de type. S'applique uniquement lors du débogage en code C#. Ce paramètre peut être substitué par l’attribut DebuggerDisplay (consultez [à l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Activer la prise en charge du serveur source**  
  Indique au débogueur Visual Studio qu'il faut obtenir les fichiers sources à partir des serveurs sources qui implémentent le protocole SrcSrv (`srcsrv.dll`). Team Foundation Server et les outils de débogage pour Windows sont deux serveurs sources qui implémentent le protocole. Pour plus d'informations sur l'installation de SrcSrv, consultez la documentation des outils de débogage pour Windows. En outre, voir [spécifier de symboles (.pdb) et les fichiers Source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  La lecture des fichiers .pdb pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.  
+> La lecture des fichiers .pdb pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.  
   
  **Afficher les messages de diagnostic du serveur source dans la fenêtre Sortie**  
  Lorsque la prise en charge du serveur source est activée, ce paramètre active l'affichage des messages de diagnostic.  
@@ -123,7 +123,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  **Charger les exportations de dll**  
  Cette option charge les tables d’exportation de dll. Les informations symboliques de tables d’exportation de dll peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute dll pour laquelle vous n’avez pas de symbole. La lecture des informations d’exportation des dll implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.  
   
- Pour savoir quels symboles sont disponibles dans la table d’exportation d’une dll, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les dll système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d’exportation de dll peuvent s’afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Pour savoir quels symboles sont disponibles dans la table d’exportation d’une dll, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les dll système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d’exportation de dll peuvent s’afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Afficher des piles parallèles diagramme ascendant**  
  Contrôle la direction dans laquelle les piles sont affichées dans la fenêtre **Piles parallèles**.  
@@ -145,7 +145,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
   
   Vous devez utiliser cette option quand vous déboguez le code .NET C++, car le nouveau moteur de débogage ne prend pas en charge l’évaluation des expressions .NET C++. Toutefois, l’activation du mode de compatibilité natif désactive de nombreuses fonctionnalités qui dépendent de l’implémentation du débogueur actuel pour fonctionner. Par exemple, le moteur hérité ne dispose pas de nombreux visualiseurs pour les types intégrés tels que `std::string` dans les projets Visual Studio 2015.   Utilisez les projets Visual Studio 2013 pour une expérience de débogage optimale dans ces cas.  
   
-  **Utiliser les évaluateurs d’expression C# et VB hérités**  
+  **Utiliser les évaluateurs d’expression c# et VB hérités**  
   Le débogueur utilisera les évaluateurs d’expression Visual Studio 2013 C#/Visual Basic au lieu des évaluateurs d’expression Roslyn de Visual Studio 2015.  
   
   **Avertir en cas d’utilisation de visualiseurs de débogueur personnalisés avec des processus potentiellement unsafe (managé uniquement)**  
@@ -164,7 +164,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
   Affiche le **Live Visual Tree** commandes dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.  
   
   **Activer les outils de Diagnostic pendant le débogage**  
-  La fenêtre **Outils de diagnostic** s’affiche pendant que vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  La fenêtre **Outils de diagnostic** s’affiche pendant que vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Afficher le PerfTip du temps écoulé durant le débogage**  
   La fenêtre de code affiche le temps écoulé d’un appel de méthode donné lors du débogage.  

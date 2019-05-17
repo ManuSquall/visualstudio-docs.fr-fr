@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434681"
 ---
 # <a name="sccdirdiff-function"></a>Fonction SccDirDiff
 Cette fonction affiche les différences entre le répertoire local actuel sur le disque du client et le projet sous contrôle de code source correspondant.
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Si pris en charge par le plug-in, en mode silencieux compare le répertoire par le biais de son horodatage ou, si ne pas pris en charge, revient sur SCC_DIFF_QD_CHECKSUM ou SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
->  Cette fonction utilise les mêmes indicateurs de commande en tant que le [SccDiff](../extensibility/sccdiff-function.md). Toutefois, un plug-in de contrôle de code source peut choisir de ne prend ne pas en charge l’opération de « rapide-diff » pour les répertoires.
+> Cette fonction utilise les mêmes indicateurs de commande en tant que le [SccDiff](../extensibility/sccdiff-function.md). Toutefois, un plug-in de contrôle de code source peut choisir de ne prend ne pas en charge l’opération de « rapide-diff » pour les répertoires.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)

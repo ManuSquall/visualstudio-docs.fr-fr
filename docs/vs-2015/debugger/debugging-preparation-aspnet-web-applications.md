@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691466"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Débogage de la préparation : Applications Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une
   
 1. Définissez un ou plusieurs points d'arrêt dans vos fonctions et gestionnaires d'événements.  
   
-     Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Pour plus d'informations, consultez [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Lorsqu'un point d'arrêt est atteint, parcourez le code à l'intérieur de la fonction. Observez l'exécution de votre code jusqu'à cerner le problème.  
   
-     Pour plus d’informations, consultez [exécution pas à pas](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) et [le débogage des Applications Web et scripts](../debugger/debugging-web-applications-and-script.md).  
+     Pour plus d’informations, consultez [exécution pas à pas](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) et [le débogage des Applications Web et scripts](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Modification des configurations par défaut  
  Si vous le souhaitez, vous êtes autorisé à modifier les valeurs par défaut des configurations Debug et Release créées par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  

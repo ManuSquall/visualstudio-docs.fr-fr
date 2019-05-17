@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439993"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
 
  Vous pouvez adopter deux approches lors de l’implémentation d’une tâche :
 
--   implémenter directement l’interface <xref:Microsoft.Build.Framework.ITask> ;
+- implémenter directement l’interface <xref:Microsoft.Build.Framework.ITask> ;
 
--   dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Task>, définie dans l’assembly *Microsoft.Build.Utilities.dll*. La tâche implémente ITask et fournit des implémentations par défaut de certains membres ITask. De plus, la journalisation est plus facile.
+- dériver votre classe de la classe d’assistance, <xref:Microsoft.Build.Utilities.Task>, définie dans l’assembly *Microsoft.Build.Utilities.dll*. La tâche implémente ITask et fournit des implémentations par défaut de certains membres ITask. De plus, la journalisation est plus facile.
 
 Dans les deux cas, vous devez ajouter à votre classe une méthode nommée `Execute`, qui est la méthode appelée lorsque la tâche s’exécute. Cette méthode n’accepte aucun paramètre et retourne une valeur `Boolean` : `true` si la tâche a réussi ou `false` si elle a échoué. L’exemple suivant montre une tâche qui n’effectue aucune action et retourne `true`.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  Le fichier[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]  *Microsoft.Common.Tasks* est un fichier projet qui contient une liste d’éléments `UsingTask` qui inscrivent toutes les tâches fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ce fichier est inclus automatiquement lors de la génération de chaque projet. Si une tâche inscrite dans *Microsoft.Common.Tasks* est également inscrite dans le fichier projet actuel, ce dernier est prioritaire. Autrement dit, vous pouvez remplacer une tâche par défaut par votre propre tâche du même nom.
 
 > [!TIP]
->  Vous pouvez voir la liste des tâches qui sont fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en affichant le contenu de *Microsoft.Common.Tasks*.
+> Vous pouvez voir la liste des tâches qui sont fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en affichant le contenu de *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Déclencher des événements à partir d’une tâche
  Si votre tâche dérive de la classe d’assistance <xref:Microsoft.Build.Utilities.Task>, vous pouvez utiliser l’une des méthodes d’assistance suivantes dans la classe <xref:Microsoft.Build.Utilities.Task> pour déclencher des événements qui seront interceptés et affichés par tous les journaux inscrits :

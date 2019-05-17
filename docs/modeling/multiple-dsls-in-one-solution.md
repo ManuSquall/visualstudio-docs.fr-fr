@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 87d9e4ae8239994a7524cdd1da0b3cfe05ea42d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808182"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 
@@ -40,15 +40,15 @@ Il existe différentes techniques pour intégrer plusieurs DSL. Pour plus d’in
 
 2. Regroupez les manifestes VSIX des DSL :
 
-   1.  Ouvrez _YourVsixProject_**\source.extension.manifest**.
+   1. Ouvrez _YourVsixProject_**\source.extension.manifest**.
 
-   2.  Pour chaque DSL, choisissez **ajouter du contenu** et ajoutez :
+   2. Pour chaque DSL, choisissez **ajouter du contenu** et ajoutez :
 
-       -   `Dsl*` projet comme un **composant MEF**
+       - `Dsl*` projet comme un **composant MEF**
 
-       -   `DslPackage*` projet comme un **composant MEF**
+       - `DslPackage*` projet comme un **composant MEF**
 
-       -   `DslPackage*` projet comme un **Package VS**
+       - `DslPackage*` projet comme un **Package VS**
 
 3. Générez la solution.
 

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ab2e65b80ab1494828fa0945e5fe8a6b41f62f71
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712162"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614860"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Obtient la résolution de point d’arrêt qui décrit ce point d’arrêt.
@@ -37,10 +40,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ppBPResolution`
-
- [out] Retourne le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface qui représente une des opérations suivantes :
+## <a name="parameters"></a>Paramètres
+`ppBPResolution`\
+[out] Retourne le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface qui représente une des opérations suivantes :
 
 - L’objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été liée.
 

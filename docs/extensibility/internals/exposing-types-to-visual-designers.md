@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415206"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types aux concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et le type au moment du design pour afficher un concepteur visuel. Les classes sont chargés à partir d’un ensemble prédéfini d’assemblys qui incluent le jeu complète des dépendances du projet actuel (références plus leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels pour accéder aux classes et des types qui sont définis dans les fichiers générés par les outils personnalisés.
@@ -27,7 +27,7 @@ ms.locfileid: "60104061"
  Le système de projet prend en charge pour le suivi des modifications au fichier de sortie d’un outil personnalisé, à condition que ces modifications sont le résultat de l’exécution de l’outil personnalisé. Chaque fois que l’outil personnalisé est exécuté, une nouvelle PE temporaire est généré et les notifications appropriées sont envoyées aux concepteurs.
 
 > [!NOTE]
->  Étant donné que le fichier exécutable de génération de programme temporaire se produit en arrière-plan, sans erreurs sont signalées à l’utilisateur si la compilation échoue.
+> Étant donné que le fichier exécutable de génération de programme temporaire se produit en arrière-plan, sans erreurs sont signalées à l’utilisateur si la compilation échoue.
 
  Les outils personnalisés qui tirent parti de la prise en charge de PE temporaire doivent respecter les règles suivantes :
 

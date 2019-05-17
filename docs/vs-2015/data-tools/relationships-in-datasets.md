@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075374"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692529"
 ---
 # <a name="relationships-in-datasets"></a>Relations dans les jeux de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
  Lorsque vous créez un <xref:System.Data.DataRelation> de l’objet, vous avez la possibilité de spécifier que la relation d’être utilisée que pour appliquer des contraintes, autrement dit, il ne sera pas utilisé pour accéder aux enregistrements connexes. Vous pouvez utiliser cette option pour générer un jeu de données qui est légèrement plus efficace et qui contient des méthodes moins celle avec la fonctionnalité d’enregistrements connexes. Toutefois, vous ne serez pas en mesure d’accéder aux enregistrements connexes. Par exemple, une relation de contrainte uniquement vous empêche de supprimer un enregistrement parent qui a toujours des enregistrements enfants, et vous ne peut pas accéder aux enregistrements enfants par le biais du parent.  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Création manuelle d’une relation de données dans le Concepteur de Dataset  
- Lorsque vous créez des tables de données en utilisant les outils de conception de données dans Visual Studio, les relations sont créées automatiquement si les informations peuvent être collectées à partir de la source de vos données. Si vous ajoutez manuellement des tables de données à partir de la **DataSet** onglet de la **boîte à outils**, vous devrez peut-être créer la relation manuellement. Pour plus d’informations sur la création de <xref:System.Data.DataRelation> objets par programme, consultez [Ajout de DataRelations](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
+ Lorsque vous créez des tables de données en utilisant les outils de conception de données dans Visual Studio, les relations sont créées automatiquement si les informations peuvent être collectées à partir de la source de vos données. Si vous ajoutez manuellement des tables de données à partir de la **DataSet** onglet de la **boîte à outils**, vous devrez peut-être créer la relation manuellement. Pour plus d’informations sur la création de <xref:System.Data.DataRelation> objets par programme, consultez [Ajout de DataRelations](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
   
  Relations entre les tables de données apparaissent sous forme de lignes dans le **Concepteur de Dataset**, avec un glyphe de clé et de l’infini représentant l’aspect un-à-plusieurs de la relation. Par défaut, le nom de la relationshipCommentEnd Id = « 1c8c78e19b7fa441 » n’apparaît pas sur l’aire de conception.  
   
@@ -84,7 +84,7 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Pour créer une relation entre deux tables de données  
   
-1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.  
   
@@ -98,9 +98,9 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 6. Sélectionnez les colonnes qui joignent les tables dans le **colonnes clés** et **les colonnes clés étrangères** répertorie.  
   
-7. Indiquez si vous souhaitez créer une relation, contrainte ou les deux. Pour plus d’informations, consultez [Introduction aux objets DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Indiquez si vous souhaitez créer une relation, contrainte ou les deux. Pour plus d’informations, consultez [Introduction aux objets DataRelation](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8. Activez ou désactivez le **Relation imbriquée** boîte. En sélectionnant cette option définit la <xref:System.Data.DataRelation.Nested%2A> propriété `true`, et entraîne des lignes de la relation d’imbrication dans la colonne parente lorsque ces lignes sont écrites en tant que données XML ou synchronisés avec l’enfant <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [d’imbrication de DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Activez ou désactivez le **Relation imbriquée** boîte. En sélectionnant cette option définit la <xref:System.Data.DataRelation.Nested%2A> propriété `true`, et entraîne des lignes de la relation d’imbrication dans la colonne parente lorsque ces lignes sont écrites en tant que données XML ou synchronisés avec l’enfant <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [d’imbrication de DataRelations](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements dans ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Pour afficher un nom de relation dans le Concepteur de Dataset  
   
-1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. À partir de la **données** menu, sélectionnez le **afficher les étiquettes de Relation** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.

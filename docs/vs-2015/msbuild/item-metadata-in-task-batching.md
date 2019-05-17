@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436793"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’éléments dans le traitement par lots de tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668188"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut diviser plusieurs listes d’éléments en lots en fonction des métadonnées identiques. Ceci facilite la division de différentes listes d’éléments en lots pour générer plusieurs assemblys. Par exemple, vous pouvez avoir une liste d’éléments de fichiers .cs divisée en un lot d’application et un lot d’assembly, et une liste de fichiers de ressources divisée en un lot d’application et un lot d’assembly. Vous pouvez ensuite utiliser le traitement par lots pour passer ces listes d’éléments dans une même tâche et générer l’application et l’assembly.  
   
 > [!NOTE]
->  Si une liste d’éléments passée dans une tâche ne contient aucun élément avec les métadonnées référencées, chaque élément de cette liste est passé dans chaque lot.  
+> Si une liste d’éléments passée dans une tâche ne contient aucun élément avec les métadonnées référencées, chaque élément de cette liste est passé dans chaque lot.  
   
  L’exemple suivant montre comment diviser une liste de plusieurs éléments en lots en fonction des métadonnées des éléments. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées de l’élément `Number`. La présence de `%(Number)` dans l’attribut `Text` indique à [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qu’un traitement par lots doit être effectué. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées `Number` et chaque lot est passé séparément dans la tâche.  
   

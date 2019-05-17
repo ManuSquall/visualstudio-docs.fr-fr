@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971955"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Prise en main de C# et d’ASP.NET Core dans Visual Studio
 
@@ -33,7 +33,7 @@ Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Vis
 
 ::: moniker range="vs-2017"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -222,6 +222,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du [mo
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Remarquez les deux soulignements ondulés qui s’affichent sous **Environment** et **String**. Ils signifient que ces types sont hors de portée.
 
    ![Erreurs signalées par des soulignements ondulés dans la méthode OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
@@ -263,7 +264,7 @@ Visual Studio est une suite de développement intégrée d’outils de productiv
 Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en savoir plus sur la création d’une application web ou d’un site web en C# et avec ASP.NET, suivez les tutoriels suivants :
 
 > [!div class="nextstepaction"]
-> [Créer une application web de pages Razor avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Créer une application web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 
 ## <a name="see-also"></a>Voir aussi
 

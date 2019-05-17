@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822797"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analyse des résultats des tests de charge à l’aide de l’analyseur de test de charge
 
@@ -25,11 +25,11 @@ Localisez les goulots d’étranglement, identifiez les erreurs et mesurez les a
 
 Analysez les résultats de test de charge des manières suivantes :
 
--   Surveillez un test de charge pendant son exécution.
+- Surveillez un test de charge pendant son exécution.
 
--   Analysez un test de charge après son exécution.
+- Analysez un test de charge après son exécution.
 
--   Consultez les résultats d'un test de charge précédent.
+- Consultez les résultats d'un test de charge précédent.
 
 Vous pouvez également créer des rapports qui comparent deux ou plusieurs rapports d'analyse de tendance à partager avec les parties prenantes. Consultez [Création de rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse de tendances](../test/compare-load-test-results.md).
 

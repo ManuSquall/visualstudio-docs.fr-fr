@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4067fc314889e7aa991407c99ba949564b547087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709146"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458841"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtient le nombre de visionneuses personnalisées qui peuvent être disponibles pour cette propriété.
@@ -36,8 +39,8 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pcelt`
+## <a name="parameters"></a>Paramètres
+`pcelt`\
 
  [out] Le nombre de visionneuses personnalisées disponibles pour cette propriété.
 

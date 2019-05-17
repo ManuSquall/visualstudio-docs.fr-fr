@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427762"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procédure : Ajouter des contrôles Chart aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.Chart> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans des personnalisations au niveau du document. Vous pouvez également ajouter <xref:Microsoft.Office.Tools.Excel.Chart> contrôles lors de l’exécution dans des Compléments VSTO.
@@ -39,7 +39,7 @@ ms.locfileid: "60056313"
  Vous pouvez ajouter le contrôle <xref:Microsoft.Office.Tools.Excel.Chart> à votre feuille de calcul de la même manière que vous ajouteriez un graphique à partir de l'application.
 
 > [!NOTE]
->  Le <xref:Microsoft.Office.Tools.Excel.Chart> contrôle n’est pas disponible à partir de la **boîte à outils** ou **des Sources de données** fenêtre.
+> Le <xref:Microsoft.Office.Tools.Excel.Chart> contrôle n’est pas disponible à partir de la **boîte à outils** ou **des Sources de données** fenêtre.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Pour ajouter un contrôle hôte Chart à une feuille de calcul dans Excel
 

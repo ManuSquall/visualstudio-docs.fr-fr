@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856968"
 ---
 # <a name="web-projects"></a>Projets web
 Un système de projet Web est un système de projet qui crée des projets Web. À leur tour, les projets Web créent des applications Web. Vous pouvez programmer une page Web à l’aide de langages de programmation traditionnels, tels que [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], pour collecter et traiter les informations à partir d’un utilisateur, stockez-le dans une base de données et ainsi de suite. Pages Web avec code associé sont appelés des pages Web actives.

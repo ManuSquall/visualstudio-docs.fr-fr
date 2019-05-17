@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813150"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procédure : Exécuter du code quand l’exécution des étapes de déploiement
   Si vous souhaitez effectuer des tâches supplémentaires pour une étape de déploiement dans un projet SharePoint, vous pouvez gérer les événements déclenchés par les éléments de projet SharePoint avant et après l’exécution de Visual Studio chaque étape du déploiement. Pour plus d’informations, consultez [extension SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

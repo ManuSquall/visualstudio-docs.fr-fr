@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436711"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : Analyse du code pour C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
     2. Par défaut, l'analyse du code ne signale pas d'avertissements pour le code généré automatiquement par les outils externes. Pour afficher les avertissements du code généré, désactivez le **supprimer les résultats du code généré** case à cocher.  
   
         > [!NOTE]
-        >  Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
+        > Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
   
 3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer l’analyse du Code pour C/C++ sur la Build** case à cocher. Vous pouvez également exécuter manuellement l’analyse du code en ouvrant le **analyser** menu, puis en choisissant **exécuter l’analyse du Code sur** *nom_projet*.  
   
@@ -94,7 +94,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
  Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
   
 > [!TIP]
->  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le **analyser** bouton et choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.  
+> Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le **analyser** bouton et choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.  
   
 ## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code  
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.  

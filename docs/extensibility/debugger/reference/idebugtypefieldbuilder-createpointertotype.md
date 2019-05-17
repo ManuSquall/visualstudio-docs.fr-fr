@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c4f143f8726f8dc3d9a1d60e6c51a5de1976bb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693826"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226001"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crée un pointeur vers le type spécifié.
@@ -37,12 +40,12 @@ int CreatePointerToType(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pTypeField`
+## <a name="parameters"></a>Paramètres
+ `pTypeField`\
 
  [in] Type pour pointer vers. Il est représenté par le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.
 
- `pPtrToTypeField`
+ `pPtrToTypeField`\
 
  [out] Retourne le pointeur représenté par un nouveau **IDebugField** objet.
 

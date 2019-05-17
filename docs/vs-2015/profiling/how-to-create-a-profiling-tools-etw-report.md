@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b172ffbf481ea077d099288b3b79254b89b13a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432739"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procédure : Créer un rapport ETW outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60106499"
 Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les données de suivi d’événements pour Windows sont collectées dans un fichier binaire (.etl). Pour plus d’informations sur ce rapport, consultez [Rapport Suivi d’événements pour Windows](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
->  Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+> Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à l’aide de l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Guide pratique pour Collecter le suivi d’événements pour Windows (ETW) données](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   

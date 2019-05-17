@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892063"
 ---
 # <a name="address-dpi-issues"></a>Problèmes de résolution d’adresse
 Un nombre croissant de périphériques fournies dans les écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera contenu mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance de l’affichage normal pour l’appareil. À compter de 2014, la cible principale pour les écrans à haute densité est mobile computing appareils (tablettes, ordinateurs portables coque et téléphones).

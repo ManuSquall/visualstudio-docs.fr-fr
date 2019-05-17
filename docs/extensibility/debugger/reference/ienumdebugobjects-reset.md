@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebeef5502787ad5ab745d72e42205d86320a8f20
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 786adff86b35ed4d33b07a4144544adffe53ea75
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706767"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226466"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Cette méthode réinitialise l’énumération au premier élément.
@@ -32,8 +35,8 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-#### <a name="parameters"></a>Paramètres
- Aucun.
+## <a name="parameters"></a>Paramètres
+ None
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

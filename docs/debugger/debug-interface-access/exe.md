@@ -16,19 +16,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6078f4dae6bc6fb53dfa8b612972e28edd820f72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554751"
 ---
 # <a name="exe"></a>Exe
 Exe est le seul symbole sans soit un lexicale ou de la classe parent, car il représente la portée globale du fichier .exe ou .dll. Il est uniquement un symbole avec la `SymTagExe` balise par fichier. Le [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) méthode retourne le symbole.
 
-## <a name="properties"></a>Propriétés
+## <a name="properties"></a>Properties
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Âge de cet exécutable.|
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` de cet exécutable.|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840702"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Décrit les propriétés d’une instance de symbole.
@@ -220,7 +220,7 @@ Le tableau suivant présente les méthodes de `IDiaSymbol`.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Récupère l’identificateur de forme de table virtuelle du symbole.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Récupère un indicateur indiquant si le type de données défini par l’utilisateur est volatil.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Obtenez cette interface en appelant une des méthodes suivantes :
@@ -335,7 +335,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 `Header:` Dia2.h
 
 Bibliothèque : diaguids.lib

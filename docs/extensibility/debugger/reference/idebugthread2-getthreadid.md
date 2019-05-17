@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85dd439729763b594076e4fab076a213c10f5a46
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ac7e834b948d663ea9b537b36720864f25fe94c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702081"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225969"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtient l’identificateur du thread système.
@@ -36,8 +39,8 @@ int GetThreadId (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pdwThreadId`
+## <a name="parameters"></a>Paramètres
+`pdwThreadId`\
 
  [out] Retourne l’identificateur du thread système.
 

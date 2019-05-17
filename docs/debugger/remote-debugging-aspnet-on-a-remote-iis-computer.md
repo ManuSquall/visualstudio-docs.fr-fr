@@ -11,11 +11,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410240"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Débogage distant ASP.NET Core sur un ordinateur distant IIS dans Visual Studio
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5188f64d9eec837bf8f2fc630f7c74a7924d792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877155"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Cette interface indique au Gestionnaire de débogage de session (SDM) qu’un point d’arrêt en attente ne peut pas être lié à un programme chargé, en raison d’un avertissement ou une erreur.
@@ -46,7 +46,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  Par exemple, lorsque la condition associée au point d’arrêt en attente ne parvient pas à analyser ou évaluer, un avertissement est envoyé que le point d’arrêt en attente ne peut pas être liée à ce stade. Cela peut se produire si le code pour le point d’arrêt n’a pas encore chargé.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

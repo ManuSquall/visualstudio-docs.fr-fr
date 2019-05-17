@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432999"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIP) et Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ En utilisant un Pack linguistique LIP (Language Interface Pack) Windows, vous po
  Visual Studio utilise un module linguistique unifié. Pour installer plusieurs versions linguistiques de ces produits, vous devez d'abord installer un produit complet dans une langue, puis installer un ou plusieurs modules linguistiques.
 
 > [!NOTE]
->  Visual Studio ne prend pas en charge l'installation de plusieurs versions linguistiques du produit complet dans une langue sur le même ordinateur. Après avoir installé un produit complet dans une langue, vous devez ajouter des versions linguistiques en utilisant des modules linguistiques. Vous pouvez quand même installer plusieurs produits complets dans une langue des éditions Express Edition sur le même ordinateur.
+> Visual Studio ne prend pas en charge l'installation de plusieurs versions linguistiques du produit complet dans une langue sur le même ordinateur. Après avoir installé un produit complet dans une langue, vous devez ajouter des versions linguistiques en utilisant des modules linguistiques. Vous pouvez quand même installer plusieurs produits complets dans une langue des éditions Express Edition sur le même ordinateur.
 
 ### <a name="support-for-code-pages"></a>Prise en charge des pages de codes
  Certains outils Visual Studio n'affichent pas correctement le texte quand celui-ci contient des caractères qui ne sont pas dans la page de codes active. Des points d'interrogation apparaissent à la place ou bien le texte est endommagé. Les outils ou les zones suivants sont affectés :
@@ -76,7 +76,7 @@ En utilisant un Pack linguistique LIP (Language Interface Pack) Windows, vous po
 1. Cliquez sur **Démarrer**, sur **Panneau de configuration**, puis ouvrez **Options régionales et linguistiques** (ou **Région** dans [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Vous devez être administrateur de l'ordinateur pour effectuer ces étapes.
+    > Vous devez être administrateur de l'ordinateur pour effectuer ces étapes.
 
 2. Cliquez sur l’onglet **Avancé**.
 
@@ -88,7 +88,7 @@ En utilisant un Pack linguistique LIP (Language Interface Pack) Windows, vous po
  Quand vous installez plusieurs versions linguistiques de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur le même ordinateur, l’interface utilisateur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est par défaut **Identique à Microsoft Windows**. Ce paramètre indique que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] affiche le texte de l’interface utilisateur dans la langue spécifiée comme langue d’affichage du système d’exploitation.
 
 > [!NOTE]
->  Si Visual Studio est configuré pour utiliser **Identique à Microsoft Windows** et que le module linguistique correspondant de Visual Studio n’est pas installé, Visual Studio utilise la langue de la première installation de Visual Studio.
+> Si Visual Studio est configuré pour utiliser **Identique à Microsoft Windows** et que le module linguistique correspondant de Visual Studio n’est pas installé, Visual Studio utilise la langue de la première installation de Visual Studio.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Pour définir la langue utilisée pour le texte de l'interface utilisateur dans Visual Studio
 

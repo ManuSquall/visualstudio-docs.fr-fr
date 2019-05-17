@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30fa28ba52d40698447c6607be4b694466bb6127
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5805beed58b01c0a2a31b92008f7acdf10e4f960
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680150"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458124"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Obtient la propriété parent d’une propriété.
@@ -36,8 +39,8 @@ int GetParent ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppParent`
+## <a name="parameters"></a>Paramètres
+ `ppParent`\
 
  [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente le parent de la propriété.
 

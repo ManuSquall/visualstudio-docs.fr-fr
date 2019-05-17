@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d9e301b842e0cbd84e23b58310c6afad276b4a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951580"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696767"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046 : Ne pas surcharger l'opérateur égal à sur les types référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "58951580"
  [CA1013 : Surchargez l’opérateur égal lors de la surcharge addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Opérateurs d’égalité](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
+ <xref:System.Object.Equals%2A?displayProperty=fullName> [Opérateurs d’égalité](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

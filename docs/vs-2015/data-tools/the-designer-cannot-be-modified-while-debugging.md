@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b448cbf7bdc6329bd520d33c4b9ddaffb08c94e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700428"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Le concepteur ne peut pas être modifié lors du débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,5 +29,5 @@ Ce message apparaît lors d'une tentative de modification des éléments dans le
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+ [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

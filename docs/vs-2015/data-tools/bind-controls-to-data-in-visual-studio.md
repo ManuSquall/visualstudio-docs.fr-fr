@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705571"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 
  1. Générer le modèle à l’aide de la **Entity Data Model** Assistant, puis faire glisser ces objets vers le concepteur.
 
- 2. Les classes LINQ to SQL ne s’affichent pas dans la fenêtre **Sources de données**. Toutefois, vous pouvez ajouter une nouvelle source de données Objet basée sur les classes LINQ to SQL, puis faire glisser ces objets vers le concepteur pour créer des contrôles liés aux données. Pour plus d’informations, consultez [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Les classes LINQ to SQL ne s’affichent pas dans la fenêtre **Sources de données**. Toutefois, vous pouvez ajouter une nouvelle source de données Objet basée sur les classes LINQ to SQL, puis faire glisser ces objets vers le concepteur pour créer des contrôles liés aux données. Pour plus d’informations, consultez [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
  Les sources de données peuvent être utilisées par votre projet sous la forme d’éléments dans la fenêtre **Sources de données**. Cette fenêtre est visible, ou n’est accessible à partir de la **vue** menu, quand une aire de conception de formulaire est la fenêtre active dans votre projet. Vous pouvez faire glisser des éléments depuis cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en effectuant un clic droit.
@@ -71,4 +71,4 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 |Personnaliser des légendes pour les contrôles.|[Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Voir aussi
- [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [une liaison de données Windows Forms](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [une liaison de données Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

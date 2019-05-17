@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f57bae0a755ae651215e9623edaf7e7a89fe70ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 930e80530b10449c0a2e0d740d97e20f4b0cc5b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704280"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,4 +102,4 @@ ms.locfileid: "60113467"
  [CA1007 : Utiliser des classes génériques le cas échéant](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Génériques](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [Génériques](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

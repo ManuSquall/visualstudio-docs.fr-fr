@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ca7113a1b108713b5dd7cf0f17511cec39a1b8b6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917995"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Cette interface permet à un appelant déterminer si un fournisseur de port peut conserver les ports (en les écrivant sur le disque) entre les appels du débogueur, puis d’obtenir une liste de ces ports conservés.
@@ -47,7 +47,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  En règle générale, un moteur de débogage n’interagit pas avec un fournisseur de port et sera d’aucune utilité pour cette interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

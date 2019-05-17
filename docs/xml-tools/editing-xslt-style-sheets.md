@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996996"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modification des feuilles de style XSLT
 
-L’éditeur XML peut également être utilisé pour modifier les feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l’éditeur telles qu’IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctions facilitent en outre le développement en XSLT.
+L’éditeur XML peut également être utilisé pour modifier les feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l’éditeur telles qu’IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctionnalités facilitent en outre le développement en XSLT.
 
-## <a name="xslt-features"></a>Fonctions XSLT
+## <a name="xslt-features"></a>Fonctionnalités XSLT
 
 Le tableau suivant décrit les fonctions spécifiques à la manipulation des feuilles de style XSLT.
 

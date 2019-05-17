@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078282"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696127"
 ---
 # <a name="how-to-use-the-modules-window"></a>Procédure : Utiliser la fenêtre Modules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
->  Cette fonctionnalité n'est pas disponible pour le débogage de script ou SQL.  
+> Cette fonctionnalité n'est pas disponible pour le débogage de script ou SQL.  
   
  Le **Modules** fenêtre répertorie les fichiers DLL et EXE utilisés par votre programme et affiche les informations pertinentes pour chacun.  
   
@@ -78,6 +78,6 @@ REMARQUE]
 2. Pointez sur **paramètres de chargement des symboles automatique** puis cliquez sur **toujours charger manuellement** ou **par défaut**. Les modifications seront appliquées lorsque vous redémarrerez la session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interruption de l’exécution](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Interruption de l’exécution](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
  [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

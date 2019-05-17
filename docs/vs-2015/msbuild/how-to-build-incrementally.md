@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431405"
 ---
 # <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
  Quand les entrées et les sorties sont spécifiées dans une cible, chaque sortie est mappée avec une seule entrée ou il n’existe pas de mappage direct entre les sorties et les entrées. Dans la [tâche Csc](../msbuild/csc-task.md) précédente, par exemple, la sortie hello.exe ne peut pas être mappée à une entrée unique. Elle dépend de toutes les entrées.  
   
 > [!NOTE]
->  Une cible dans laquelle il n’existe pas de mappage direct entre les entrées et les sorties est toujours générée plus fréquemment qu’une cible dans laquelle chaque sortie ne peut être mappée qu’avec une seule entrée, car [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ne peut pas déterminer les sorties qui doivent être regénérées si certaines des entrées ont changé.  
+> Une cible dans laquelle il n’existe pas de mappage direct entre les entrées et les sorties est toujours générée plus fréquemment qu’une cible dans laquelle chaque sortie ne peut être mappée qu’avec une seule entrée, car [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ne peut pas déterminer les sorties qui doivent être regénérées si certaines des entrées ont changé.  
   
  Les tâches dans lesquelles vous pouvez identifier un mappage direct entre les sorties et les entrées, comme [LC Task](../msbuild/lc-task.md), sont mieux adaptées aux builds incrémentielles, à l’inverse des tâches telles que `Csc` et [Vbc](../msbuild/vbc-task.md), qui produisent un seul assembly de sortie à partir de plusieurs entrées.  
   
@@ -70,7 +70,7 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
   Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâches `GenerateContentFiles` et `BuildHelp` sont placées respectivement dans les cibles `Convert` et `Build` pour que chaque cible puisse être générée de façon incrémentielle. En utilisant l’élément `Output`, les sorties de la tâche `GenerateContentFiles` sont placées dans la liste d’éléments `ContentFile`, où elles peuvent être utilisées comme entrées pour la tâche `BuildHelp`. En utilisant l’élément `Output` de cette façon, vous pouvez utiliser automatiquement les sorties d’une tâche comme entrées d’une autre tâche. Vous n’avez donc pas à répertorier manuellement les éléments ou les listes d’éléments dans chaque tâche.  
   
 > [!NOTE]
->  Bien que la cible `GenerateContentFiles` puisse être générée de façon incrémentielle, toutes les sorties de cette cible sont toujours exigées comme entrées de la cible `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fournit automatiquement toutes les sorties d’une cible comme entrées d’une autre cible quand vous utilisez l’élément `Output`.  
+> Bien que la cible `GenerateContentFiles` puisse être générée de façon incrémentielle, toutes les sorties de cette cible sont toujours exigées comme entrées de la cible `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fournit automatiquement toutes les sorties d’une cible comme entrées d’une autre cible quand vous utilisez l’élément `Output`.  
   
 ```  
 <Project DefaultTargets="Build"  

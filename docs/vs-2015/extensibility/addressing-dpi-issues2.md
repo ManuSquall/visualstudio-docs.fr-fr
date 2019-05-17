@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699270"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  N’utilisez pas les fonctions d’assistance dans des variables statiques au niveau du module ou de niveau classe. La bibliothèque utilise également des variables statiques pour la synchronisation de thread et que vous pouvez rencontrer des problèmes d’initialisation de la commande. Convertir ces variables statiques aux variables de membre non statiques, soit les encapsuler dans une fonction (afin qu’ils être construites lors du premier accès).  
+> N’utilisez pas les fonctions d’assistance dans des variables statiques au niveau du module ou de niveau classe. La bibliothèque utilise également des variables statiques pour la synchronisation de thread et que vous pouvez rencontrer des problèmes d’initialisation de la commande. Convertir ces variables statiques aux variables de membre non statiques, soit les encapsuler dans une fonction (afin qu’ils être construites lors du premier accès).  
   
  Pour accéder aux fonctions d’assistance de PPP à partir de code managé qui s’exécute à l’intérieur de l’environnement Visual Studio :  
   
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>L’activation de la prise en charge HDPI pour le WebOC  
  Par défaut, les contrôles WebOC (par exemple, le contrôle WebBrowser dans WPF, ou l’interface IWebBrowser2) n’activent pas prise en charge et détection de HDPI. Le résultat sera un contrôle incorporé avec l’affichage du contenu qui est trop petit pour un affichage haute résolution. La section suivante décrit comment activer la prise en charge de la haute résolution dans une instance de WebOC web spécifique.  
   
- Implémenter l’interface IDocHostUIHandler (consultez l’article MSDN sur le [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interface) :  
+ Implémenter l’interface IDocHostUIHandler (consultez l’article MSDN sur le [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface) :  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Si vous le souhaitez, implémentez l’interface ICustomDoc (consultez l’article MSDN sur le [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interface) :  
+ Si vous le souhaitez, implémentez l’interface ICustomDoc (consultez l’article MSDN sur le [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interface) :  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

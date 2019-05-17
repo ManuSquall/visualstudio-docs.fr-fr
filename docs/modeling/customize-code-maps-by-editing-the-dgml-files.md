@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441636"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 
@@ -117,7 +117,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 - groupes d'éléments de code et liens selon certaines conditions.
 
 > [!TIP]
->  Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [assignation de catégories aux éléments de Code et aux liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et aux liens](#AssignProperties).
+> Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [assignation de catégories aux éléments de Code et aux liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et aux liens](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Pour appliquer un style personnalisé à un seul élément de code
 
@@ -555,7 +555,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
  Vous pouvez lier des éléments ou des URL à des éléments de code ou à des liens en modifiant le fichier .dgml de la carte et en ajoutant un attribut `Reference` à l'élément `<Node/>` d'un élément de code ou bien l'élément `<Link/>` pour un lien. Vous pouvez ensuite ouvrir et afficher ce contenu à partir de l'élément de code ou du lien. L’attribut `Reference` spécifie le chemin d’accès de ce contenu. Il peut s’agir d’un chemin d’accès relatif par rapport à l’emplacement du fichier .dgml ou d’un chemin d’accès absolu.
 
 > [!CAUTION]
->  Si vous utilisez des chemins d'accès relatifs, et si le fichier .dgml est déplacé vers un emplacement différent, ces chemins d'accès ne seront plus résolus. Lorsque vous essayez d'ouvrir et d'afficher le contenu lié, une erreur indiquant que le contenu ne peut pas être affiché se produit.
+> Si vous utilisez des chemins d'accès relatifs, et si le fichier .dgml est déplacé vers un emplacement différent, ces chemins d'accès ne seront plus résolus. Lorsque vous essayez d'ouvrir et d'afficher le contenu lié, une erreur indiquant que le contenu ne peut pas être affiché se produit.
 
  Par exemple, vous souhaiterez peut-être lier les éléments de code suivants :
 
@@ -580,7 +580,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
    - Dans l'élément `<Node/>` ou `<Link/>`, ajoutez un attribut `Reference` pour spécifier l'emplacement de l'élément de code.
 
      > [!NOTE]
-     >  Il ne peut exister qu'un seul attribut `Reference` par élément.
+     > Il ne peut exister qu'un seul attribut `Reference` par élément.
 
      Exemple :
 

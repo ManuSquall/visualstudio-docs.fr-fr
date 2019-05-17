@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959892"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -72,8 +72,8 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 | **Pas à pas détaillé** | **F11** | Exécute l’instruction suivante et s’arrête. Si l’instruction suivante correspond à l’appel d’une fonction, le débogueur s’arrête à la première ligne de la fonction appelée. |
 | **Pas à pas principal** | **F10** | Exécute l’instruction suivante, y compris l’appel d’une fonction (en exécutant la totalité de son code) et l’application de toute valeur renvoyée. Le mode pas à pas principal vous permet d’ignorer facilement les fonctions que vous n’avez pas besoin de déboguer. |
 | **Pas à pas sortant** | **Maj**+**F11** | Exécute le code jusqu’à la fin de la fonction actuelle, puis procède à une exécution pas à pas jusqu’à l’instruction appelante.  Cette commande est utile quand vous n’avez pas besoin de déboguer le reste de la fonction actuelle. |
-| **Exécuter jusqu'au curseur** | **Ctrl**+**F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
-| **Définir l'instruction suivante** | **Ctrl**+**Maj**+**F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
+| **Exécuter jusqu’au curseur** | **Ctrl**+**F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
+| **Définir l’instruction suivante** | **Ctrl**+**Maj**+**F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
 | **Afficher l’instruction suivante** | **Alt**+**Num** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
@@ -134,10 +134,10 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 
 | Option | Description |
 | --- | --- |
-| **Standard Python launcher (Lanceur Python standard)** | Utilise le code de débogage écrit en Python portable qui est compatible avec CPython, IronPython et des variantes telles que Python Stackless. Cette option offre la meilleure expérience en matière de débogage de code Python pure. Quand vous effectuez un attachement à un processus *python.exe* en cours d’exécution, ce lanceur est utilisé. Ce lanceur fournit également un [débogage en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) pour CPython, ce qui vous permet d’exécuter un pas à pas détaillé alternant en toute transparence entre du code C/C++ et du code Python. |
-| **Web launcher (Lanceur web)** | Démarre votre navigateur par défaut au lancement et active le débogage des modèles. Pour plus d’informations, consultez la section consacrée au [débogage de modèles web](python-web-application-project-templates.md#debugging). |
-| **Django Web launcher (Lanceur web Django)** | Identique au lanceur web et uniquement affiché pour des raisons de compatibilité descendante. |
-| **IronPython (.NET) launcher (Lanceur IronPython (.NET))** | Utilise le débogueur .NET, qui fonctionne uniquement avec IronPython, mais autorise l’exécution d’un pas à pas détaillé sur n’importe quel projet en langage .NET, y compris C# et VB. Ce lanceur est utilisé si vous effectuez un attachement à un processus .NET en cours d’exécution hébergeant IronPython. |
+| **Lanceur Python standard** | Utilise le code de débogage écrit en Python portable qui est compatible avec CPython, IronPython et des variantes telles que Python Stackless. Cette option offre la meilleure expérience en matière de débogage de code Python pure. Quand vous effectuez un attachement à un processus *python.exe* en cours d’exécution, ce lanceur est utilisé. Ce lanceur fournit également un [débogage en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) pour CPython, ce qui vous permet d’exécuter un pas à pas détaillé alternant en toute transparence entre du code C/C++ et du code Python. |
+| **Lanceur web** | Démarre votre navigateur par défaut au lancement et active le débogage des modèles. Pour plus d’informations, consultez la section consacrée au [débogage de modèles web](python-web-application-project-templates.md#debugging). |
+| **Lanceur web Django** | Identique au lanceur web et uniquement affiché pour des raisons de compatibilité descendante. |
+| **Lanceur IronPython (.NET)** | Utilise le débogueur .NET, qui fonctionne uniquement avec IronPython, mais autorise l’exécution d’un pas à pas détaillé sur n’importe quel projet en langage .NET, y compris C# et VB. Ce lanceur est utilisé si vous effectuez un attachement à un processus .NET en cours d’exécution hébergeant IronPython. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Options d’exécution (chemins de recherche, arguments de démarrage et variables d’environnement)
 
@@ -145,9 +145,9 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 | --- | --- |
 | **Chemins de recherche** | Ces valeurs correspondent à celles qui apparaissent dans le nœud **Chemins de recherche** du projet dans l’**Explorateur de solutions**. Vous pouvez modifier cette valeur à cet emplacement, mais il est plus facile d’utiliser **l’Explorateur de solutions** qui vous permet de parcourir les dossiers et convertit automatiquement les chemins sous leur forme relative. |
 | **Arguments de script** | Ces arguments sont ajoutés à la commande utilisée pour lancer votre script, apparaissant après le nom de fichier du script. Le premier argument spécifié à cet emplacement est disponible pour votre script sous la forme `sys.argv[1]`, le deuxième argument apparaît sous la forme `sys.argv[2]`, etc. |
-| **Interpreter Arguments (Arguments d’interpréteur)** | Ces arguments sont ajoutés à la ligne de commande du lanceur avant le nom de votre script. Les arguments couramment indiqués à cet emplacement sont `-W ...` pour contrôler les avertissements, `-O` pour optimiser légèrement votre programme et `-u` pour utiliser des E/S non mises en mémoire tampon. Les utilisateurs IronPython utilisent généralement ce champ pour transmettre des options `-X`, telles que `-X:Frames` ou `-X:MTA`. |
-| **Interpreter Path (Chemin d’interpréteur)** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
-| **Environment Variables** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Dans la mesure où ce paramètre est appliqué en dernier, après toutes les variables d’environnement globales existantes et après avoir défini `PYTHONPATH` en fonction du paramètre **Chemins de recherche**, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
+| **Arguments d’interpréteur** | Ces arguments sont ajoutés à la ligne de commande du lanceur avant le nom de votre script. Les arguments couramment indiqués à cet emplacement sont `-W ...` pour contrôler les avertissements, `-O` pour optimiser légèrement votre programme et `-u` pour utiliser des E/S non mises en mémoire tampon. Les utilisateurs IronPython utilisent généralement ce champ pour transmettre des options `-X`, telles que `-X:Frames` ou `-X:MTA`. |
+| **Chemin d’interpréteur** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
+| **Variables d’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Dans la mesure où ce paramètre est appliqué en dernier, après toutes les variables d’environnement globales existantes et après avoir défini `PYTHONPATH` en fonction du paramètre **Chemins de recherche**, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Fenêtres Exécution et Interactive
 

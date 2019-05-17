@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686933"
 ---
 # <a name="extending-the-toolbox"></a>Extension de la boîte à outils
 La **boîte à outils** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] propose une collection d’objets qui fournissent des fonctionnalités aux éditeurs et aux concepteurs par le biais du mécanisme glisser-déplacer de l’IDE.  
@@ -37,10 +37,10 @@ La **boîte à outils** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] propose une
  Décrit comment un VSPackage peut gérer le contenu et l’apparence de la **boîte à outils**.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Guide pratique pour Gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [Guide pratique pour Gérer la fenêtre Boîte à outils](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  Décrit comment utiliser la **boîte à outils** dans l’environnement de développement intégré (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- [Guide pratique pour La boîte à outils de contrôle](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [Guide pratique pour La boîte à outils de contrôle](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Décrit comment gérer la **boîte à outils** à l’aide du modèle de programmation Automation.  
   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

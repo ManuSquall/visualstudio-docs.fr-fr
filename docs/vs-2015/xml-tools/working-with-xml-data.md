@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703229"
 ---
 # <a name="working-with-xml-data"></a>Utilisation de données XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
  Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur permet de définir des points d'arrêt dans une feuille de style XSLT, d'exécuter pas à pas la feuille de style XSLT à partir du code, etc.  
   
 > [!NOTE]
->  Le débogage XSLT est disponible dans les versions Professional Edition et Team Edition.  
+> Le débogage XSLT est disponible dans les versions Professional Edition et Team Edition.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Éditeur XML](../xml-tools/xml-editor.md)  
@@ -58,10 +58,10 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
  [Débogage XSLT](../xml-tools/debugging-xslt.md)  
  Explique comment déboguer des feuilles de style à l'aide du débogueur Visual Studio.  
   
- [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Référence du standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Fournit des informations sur les technologies XML, y compris le langage XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.
   
- [Services Web XML en Code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Services Web XML en Code managé](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Explique comment créer et déployer des services Web XML et y accéder.  
   
 ## <a name="see-also"></a>Voir aussi  

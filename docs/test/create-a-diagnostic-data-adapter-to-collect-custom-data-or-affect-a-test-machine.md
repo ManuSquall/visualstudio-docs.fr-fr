@@ -10,15 +10,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 800e866e2bfa915590060b09a98539533460bed3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965663"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test
 
-Vous pouvez créer votre propre adaptateur de données de diagnostic de façon à collecter des données lors de l'exécution d'un test ; vous souhaitez peut-être aussi affecter l'ordinateur de test dans le cadre de votre test. Par exemple, vous pouvez collecter des fichiers journaux qui sont créés par l'application testée et les joindre à vos résultats de tests, ou bien exécuter vos tests lorsque l'espace disque restant sur votre ordinateur est limité. À l’aide des API fournies dans Visual Studio Enterprise, vous pouvez écrire du code pour exécuter des tâches à des points spécifiques de votre série de tests. Par exemple, vous pouvez effectuer des tâches lorsqu’une série de tests démarre, avant et après avoir exécuté chaque test individuel, et lorsque la série de tests se termine.
+Vous pouvez créer votre propre adaptateur de données de diagnostic de façon à collecter des données lors de l'exécution d'un test ; vous souhaitez peut-être aussi affecter l'ordinateur de test dans le cadre de votre test. Par exemple, vous pouvez collecter des fichiers journaux qui sont créés par l'application testée et les joindre à vos résultats de tests, ou bien exécuter vos tests lorsque l'espace disque restant sur votre ordinateur est limité. À l’aide des API fournies dans Visual Studio Enterprise, vous pouvez écrire du code pour exécuter des tâches à des points spécifiques de votre série de tests. Par exemple, vous pouvez effectuer des tâches lorsqu'une série de tests démarre, avant et après avoir exécuté chaque test individuel, et lorsque la série de tests se termine.
 
 Vous pouvez fournir l'entrée par défaut de votre adaptateur de données de diagnostic personnalisé à l'aide d'un fichier de paramètres de configuration. Par exemple, vous avez la possibilité de fournir des informations indiquant l'emplacement du fichier que vous voulez collecter et joindre à vos résultats de tests, ou la quantité d'espace disque qui doit rester disponible sur le système. Ces données peuvent être configurées pour chaque paramètre de test que vous créez. Vous pouvez les afficher et les modifier à l’aide de l’éditeur par défaut fourni avec Microsoft Test Manager, ou bien vous pouvez créer votre propre contrôle utilisateur à utiliser en tant qu’éditeur. Toutes les modifications apportées à la configuration de l'adaptateur dans votre éditeur sont stockées avec vos paramètres de test.
 

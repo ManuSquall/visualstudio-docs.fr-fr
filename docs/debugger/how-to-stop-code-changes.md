@@ -1,5 +1,5 @@
 ---
-title: 'Comment : arrêter des modifications de Code | Microsoft Docs'
+title: 'Procédure : Arrêter des modifications de Code | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388347"
 ---
-# <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
+# <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.
 
 > [!CAUTION]
->  L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.
+> L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.
 
 ### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code
 

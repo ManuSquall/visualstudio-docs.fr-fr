@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cc06e33b3549bda9bdc9fe04073ca4cf0d9e9a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851777"
 ---
-# <a name="debugging-preparation-windows-forms-applications"></a>Préparation du débogage : applications Windows Forms
+# <a name="debugging-preparation-windows-forms-applications"></a>Débogage de la préparation : Applications Windows Forms
 Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Ces paramètres peuvent être modifiés dans la boîte de dialogue **Pages de propriétés de \<nom du projet>** (**My Project** en Visual Basic).

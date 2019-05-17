@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a2afc46d774c56db10d8d891dccafa15ee78b28
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 74ac007a3b9d42677c77989ea36c6e20f9cd35f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950197"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697715"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si le module a été compilé avec le [/Z7, / Zi, /ZI (Format des informations de débogage)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) commutateur de compilateur.  
+Récupère un indicateur qui spécifie si le module a été compilé avec le [/Z7, / Zi, /ZI (Format des informations de débogage)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) commutateur de compilateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ HRESULT get_editAndContinueEnabled ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="requirements"></a>Configuration requise  
   
@@ -52,4 +52,4 @@ HRESULT get_editAndContinueEnabled ( 
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/Z7, /Zi, /ZI (Format des informations de débogage)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7, /Zi, /ZI (Format des informations de débogage)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

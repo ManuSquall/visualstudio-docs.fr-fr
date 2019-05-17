@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685551"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br /><br /> -Une référence de ressource du composant absolu<br /><br /> -Un chemin d’accès à un fichier contenant une ressource native|  
+|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br /><br /> -Une référence de ressource du composant absolu<br /><br /> -Un chemin d’accès à un fichier contenant une ressource native|  
 |Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> - *Lumière*: La source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Foncé*: La source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *Contraste élevé*: La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: La source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> -*HighContrastDark*: La source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si le **arrière-plan** attribut est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **arrière-plan** est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, le les couleurs de la source ne sont jamais inversées. Si **arrière-plan** est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
   
  Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  

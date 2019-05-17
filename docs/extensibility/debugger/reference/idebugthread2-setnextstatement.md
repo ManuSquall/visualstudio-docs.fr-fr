@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719572"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226707"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Définit le pointeur d’instruction en cours pour le contexte de code donné.
@@ -38,10 +41,11 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pStackFrame` Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
+## <a name="parameters"></a>Paramètres
+ `pStackFrame`\
+ Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui décrit l’emplacement du code sur le point d’être exécutée et son contexte.
 

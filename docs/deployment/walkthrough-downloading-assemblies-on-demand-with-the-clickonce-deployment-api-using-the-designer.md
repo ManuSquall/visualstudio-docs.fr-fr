@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406069"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Télécharger des assemblys à la demande avec l’API à l’aide du Concepteur de déploiement ClickOnce
 Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont téléchargés lors de la première exécution de l’application. Toutefois, il peut y avoir certaines parties de votre application qui sont utilisées par un petit ensemble d’utilisateurs. Dans ce cas, vous souhaiterez sans doute télécharger un assembly uniquement quand vous créez l’un de ses types. La procédure suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et comment les télécharger à l’aide de classes dans l’espace de noms <xref:System.Deployment.Application> quand le Common Language Runtime en a besoin.
@@ -40,7 +40,7 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
 1. Créez un projet Windows Forms dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Fichier** , pointez sur **Ajouter**, puis cliquez sur **Nouveau projet**. Choisissez un projet de **Bibliothèque de classes** dans la boîte de dialogue et nommez-le `ClickOnceLibrary`.
 
    > [!NOTE]
-   >  Dans Visual Basic, nous vous recommandons de modifier les propriétés du projet pour affecter `Microsoft.Samples.ClickOnceOnDemand` ou un espace de noms de votre choix comme espace de noms racine pour ce projet. Pour des raisons de simplicité, les deux projets de cette procédure pas à pas sont dans le même espace de noms.
+   > Dans Visual Basic, nous vous recommandons de modifier les propriétés du projet pour affecter `Microsoft.Samples.ClickOnceOnDemand` ou un espace de noms de votre choix comme espace de noms racine pour ce projet. Pour des raisons de simplicité, les deux projets de cette procédure pas à pas sont dans le même espace de noms.
 
 2. Définissez une classe nommée `DynamicClass` avec une propriété unique nommée `Message`.
 
@@ -50,7 +50,7 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
 3. Sélectionnez le projet Windows Forms dans l’ **Explorateur de solutions**. Ajoutez une référence à l’assembly <xref:System.Deployment.Application> et une référence de projet au projet `ClickOnceLibrary` .
 
    > [!NOTE]
-   >  Dans Visual Basic, nous vous recommandons de modifier les propriétés du projet pour affecter `Microsoft.Samples.ClickOnceOnDemand` ou un espace de noms de votre choix comme espace de noms racine pour ce projet. Pour des raisons de simplicité, les deux projets de cette procédure pas à pas figurent dans le même espace de noms.
+   > Dans Visual Basic, nous vous recommandons de modifier les propriétés du projet pour affecter `Microsoft.Samples.ClickOnceOnDemand` ou un espace de noms de votre choix comme espace de noms racine pour ce projet. Pour des raisons de simplicité, les deux projets de cette procédure pas à pas figurent dans le même espace de noms.
 
 4. Cliquez avec le bouton droit sur le formulaire, cliquez sur **Afficher le code** dans le menu, puis ajoutez les références suivantes au formulaire.
 

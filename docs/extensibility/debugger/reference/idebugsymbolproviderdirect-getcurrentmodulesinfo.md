@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699546"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457438"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Récupère des informations sur les modules dans le groupe de symboles.
@@ -43,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pCount`
+## <a name="parameters"></a>Paramètres
+ `pCount`\
 
  [in] Nombre de modules dans le `ppGuids` tableau.
 
- `ppGuids`
+ `ppGuids`\
 
  [in] Tableau qui contient les identificateurs uniques pour les modules.
 
- `pADIds`
+ `pADIds`\
 
  [in] Identificateurs pour les domaines d’application.
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in] État actuel du groupe de symboles.
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out] Retourne un objet qui contient les modules dans le groupe de symboles.
 

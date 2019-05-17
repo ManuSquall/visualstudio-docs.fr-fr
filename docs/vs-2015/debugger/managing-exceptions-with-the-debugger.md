@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690505"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
 - si vous avez défini [Just My Code](../debugger/just-my-code.md)et que le débogueur est configuré pour arrêter l’exécution de toute exception non gérée dans le code utilisateur.  
   
 > [!NOTE]
->  ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) , ci-dessous.  
+> ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) , ci-dessous.  
   
 > [!NOTE]
->  Dans une application Visual Basic, le débogueur gère toutes les erreurs comme des exceptions, même si vous utilisez des gestionnaires d'erreurs de style « en cas d'erreur ».  
+> Dans une application Visual Basic, le débogueur gère toutes les erreurs comme des exceptions, même si vous utilisez des gestionnaires d'erreurs de style « en cas d'erreur ».  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Gestion des exceptions avec la fenêtre Paramètres d'exception  
  Vous pouvez utiliser la fenêtre **Paramètres d'exception** pour spécifier les exceptions (ou ensembles d'exceptions) qui provoqueront l'arrêt du débogueur, et à quel point vous voulez qu'il s'arrête. Vous pouvez ajouter ou supprimer des exceptions, ou spécifier les exceptions sur lesquelles effectuer un arrêt. Ouvrez cette fenêtre lorsqu'une solution est ouverte en cliquant sur **Déboguer/Fenêtres/Paramètres d'exception**.  
@@ -162,7 +162,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
  Si vous voulez ajouter une exception aux catégories Exceptions d'accès mémoire GPU, Exceptions du runtime JavaScript ou Exceptions Win32, vous devez inclure le code d'erreur, ainsi que la description.  
   
 > [!TIP]
->  Vérifiez l'orthographe. La fenêtre **Paramètres d'exception** ne vérifie pas l'existence d'une exception ajoutée. Par conséquent, si vous tapez **Sytem.UriTemplateMatchException**, vous obtenez une entrée pour cette exception (mais pas pour **System.UriTemplateMatchException**).  
+> Vérifiez l'orthographe. La fenêtre **Paramètres d'exception** ne vérifie pas l'existence d'une exception ajoutée. Par conséquent, si vous tapez **Sytem.UriTemplateMatchException**, vous obtenez une entrée pour cette exception (mais pas pour **System.UriTemplateMatchException**).  
   
  Les paramètres d'exception sont conservés dans le fichier .suo de la solution ; ils s'appliquent donc à une solution spécifique. Vous ne pouvez pas réutiliser des paramètres d'exception spécifiques entre plusieurs solutions. À ce stade, seules les exceptions ajoutées sont conservées ; les exceptions supprimées ne le sont pas. En d'autres termes, si vous ajoutez une exception, que vous fermez la solution, puis que vous la rouvrez, l'exception sera toujours présente. Mais si vous supprimez une exception et que vous fermez/rouvrez la solution, l'exception ne s'affiche plus.  
   
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [Guide pratique pour Examiner du Code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilisation d’exécution des vérifications sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)

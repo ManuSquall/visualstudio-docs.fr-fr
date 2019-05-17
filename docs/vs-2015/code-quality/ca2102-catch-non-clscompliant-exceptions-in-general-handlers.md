@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd018c927981c4a067e4dd0d52ef699490caa3fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fc0803e4ad73b08e99a05fa62930e039e1b7534
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948773"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687425"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102 : Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58948773"
  Un membre dans un assembly qui n’est pas marqué avec le <xref:System.Runtime.CompilerServices.RuntimeCompatibilityAttribute> ou était marquée `RuntimeCompatibility(WrapNonExceptionThrows = false)` contient un bloc catch qui gère <xref:System.Exception?displayProperty=fullName> et ne contient pas de bloc catch général immédiatement après. Cette règle ignore [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] assemblys.
 
 ## <a name="rule-description"></a>Description de la règle
- Un bloc catch qui gère <xref:System.Exception> intercepte toutes les exceptions conformes Common Language Specification (CLS). Toutefois, il n’intercepte pas les exceptions non conformes CLS. Non-CLS conformes exceptions peuvent être levées à partir du code natif ou du code managé qui a été généré par le Microsoft intermediate language (MSIL) assembleur. Notez que C# et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateurs n’autorisent pas non-CLS levée d’exceptions et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] n’intercepte pas les exceptions non conformes CLS. Si l’intention du bloc catch doit gérer toutes les exceptions, utilisez la syntaxe de bloc catch général suivante.
+ Un bloc catch qui gère <xref:System.Exception> intercepte toutes les exceptions conformes Common Language Specification (CLS). Toutefois, il n’intercepte pas les exceptions non conformes CLS. Non-CLS conformes exceptions peuvent être levées à partir du code natif ou du code managé qui a été généré par le Microsoft intermediate language (MSIL) assembleur. Notez que c# et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateurs n’autorisent pas non-CLS levée d’exceptions et [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] n’intercepte pas les exceptions non conformes CLS. Si l’intention du bloc catch doit gérer toutes les exceptions, utilisez la syntaxe de bloc catch général suivante.
 
 - C#: `catch {}`
 
@@ -82,4 +82,4 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
  [CA1031 : Ne pas intercepter des types d’exception générale](../code-quality/ca1031-do-not-catch-general-exception-types.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Exceptions et gestion des exceptions](http://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (assembleur IL)](http://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [substitution des vérifications de sécurité](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [indépendance du langage et composants indépendants du langage](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Exceptions et gestion des exceptions](https://msdn.microsoft.com/library/0001887f-4fa2-47e2-8034-2819477e2344) [Ilasm.exe (assembleur IL)](https://msdn.microsoft.com/library/4ca3a4f0-4400-47ce-8936-8e219961c76f) [substitution des vérifications de sécurité](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [indépendance du langage et composants indépendants du langage](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

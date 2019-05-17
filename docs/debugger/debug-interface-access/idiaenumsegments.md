@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833426"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Énumère les différents segments contenus dans la source de données.
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumSegments`.
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Réinitialise une séquence d’énumération au début.|
 |[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Obtenez cette interface en appelant le `QueryInterface` méthode sur un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple pour plus d’informations.
@@ -64,8 +64,8 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

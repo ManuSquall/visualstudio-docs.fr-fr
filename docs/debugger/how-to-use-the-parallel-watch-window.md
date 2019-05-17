@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388476"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Définir un espion sur les Variables dans des Threads parallèles dans Visual Studio (C#, Visual Basic, C++)
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans la fenêtre **Espion parallèle** :
@@ -34,7 +34,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 - Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.
 
   > [!TIP]
-  >  Pour afficher des informations de tâche dans le **espion parallèle** fenêtre, vous devez tout d’abord ouvrir le **tâche** fenêtre.
+  > Pour afficher des informations de tâche dans le **espion parallèle** fenêtre, vous devez tout d’abord ouvrir le **tâche** fenêtre.
 
 - L’essai à blanc *ajouter un espion* colonnes, dans laquelle vous pouvez entrer des expressions à surveiller.
 
@@ -87,4 +87,4 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Procédure pas à pas : Débogage d’une Application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procédure pas à pas : Débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

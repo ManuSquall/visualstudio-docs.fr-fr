@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117497"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683855"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  À cette fin, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examine les conditions définies sur les éléments `PropertyGroup`, `ItemGroup`, `Import`, de propriétés et item.  
   
 ## <a name="additional-build-actions"></a>Actions de génération supplémentaires  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de modifier le nom du type d’élément d’un fichier dans un projet avec la propriété **Action de génération** de la fenêtre [Propriétés du fichier](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Les noms des types d'éléments`Compile`, `EmbeddedResource`, `Content`et `None` sont toujours répertoriés dans ce menu ainsi que tous les autres noms de types d'éléments figurant déjà dans votre projet. Pour garantir la disponibilité permanente de tous les noms de types d'éléments personnalisés dans ce menu, vous pouvez ajouter les noms à un type d'élément nommé `AvailableItemName`. Par exemple, en ajoutant ce qui suit à votre fichier projet, le type personnalisé `JScript` est ajouté à ce menu pour tous les projets qui l'importent :  
   
 ```  
 <ItemGroup>  
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Certains noms de types d'éléments sont spécifiques à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mais ne sont pas répertoriés dans cette liste déroulante.  
+> Certains noms de types d'éléments sont spécifiques à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mais ne sont pas répertoriés dans cette liste déroulante.  
   
 ## <a name="in-process-compilers"></a>Compilateurs in-process  
  Lorsque c'est possible, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Pour un fonctionnement correct, les conditions suivantes doivent être respectées :  

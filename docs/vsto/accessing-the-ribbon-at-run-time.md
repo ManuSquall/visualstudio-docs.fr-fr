@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6ddbb19c73660dcb77fc8166522946b0b3461e95
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006760"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Accéder au ruban lors de l’exécution
-  Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d’exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.
+  Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d'exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.
 
  Vous pouvez accéder au ruban à l'aide de la classe `Globals`. Pour les projets Outlook, vous pouvez accéder au ruban qui s'affiche dans une fenêtre de l'explorateur ou de l'inspecteur Outlook spécifique.
 
@@ -41,7 +41,7 @@ ms.locfileid: "56599971"
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accéder à une collection de rubans qui s’affichent dans une fenêtre d’inspecteur Outlook spécifique
  Vous pouvez accéder à une collection de rubans qui s’affichent dans Outlook *inspecteurs*. Un inspecteur est une fenêtre qui s’ouvre dans Outlook quand les utilisateurs effectuent certaines tâches, telles que la création d’un message électronique. Pour accéder au ruban d'une fenêtre d'inspecteur, appelez la propriété `Ribbons` de la classe `Globals` et passez-lui un objet <xref:Microsoft.Office.Interop.Outlook.Inspector> qui représente l'inspecteur.
 
- L'exemple suivant obtient la collection de rubans de l'inspecteur actif. Cet exemple accède ensuite à un ruban nommé `Ribbon1` et définit le texte qui s'affiche dans une zone de liste modifiable du ruban sur `Hello World`.
+ L’exemple suivant obtient la collection de rubans de l’inspecteur actif. Cet exemple accède ensuite à un ruban nommé `Ribbon1` et définit le texte qui s'affiche dans une zone de liste modifiable du ruban sur `Hello World`.
 
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]

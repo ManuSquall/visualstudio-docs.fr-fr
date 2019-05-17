@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76aa6fe6218205874ab616f5c0ffb09f5c5c3cbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796341"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procédure pas à pas : Créer un kit de développement à l’aide de JavaScript
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un simple mathématiques SDK comme une Extension Visual Studio (VSIX).  La procédure pas à pas est divisée en différentes parties :
@@ -27,19 +27,19 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 ## <a name="prerequisites"></a>Prérequis
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createSimpleMathVSIX"></a> Pour créer le projet SDK d’extension SimpleMathVSIX
+## <a name="createSimpleMathVSIX"></a> Pour créer le projet SDK d’extension SimpleMathVSIX
 
-1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-2.  Dans la liste des catégories de modèles, sous **Visual C#**, sélectionnez **extensibilité**, puis sélectionnez le **projet VSIX** modèle.
+2. Dans la liste des catégories de modèles, sous **Visual C#**, sélectionnez **extensibilité**, puis sélectionnez le **projet VSIX** modèle.
 
-3.  Dans le **nom** texte, spécifiez `SimpleMathVSIX` et choisissez le **OK** bouton.
+3. Dans le **nom** texte, spécifiez `SimpleMathVSIX` et choisissez le **OK** bouton.
 
-4.  Si le **Assistant Package Visual Studio** s’affiche, choisissez le **suivant** bouton sur le **Bienvenue** page, puis, dans **Page 1 de 7**, choisissez le **Terminer** bouton.
+4. Si le **Assistant Package Visual Studio** s’affiche, choisissez le **suivant** bouton sur le **Bienvenue** page, puis, dans **Page 1 de 7**, choisissez le **Terminer** bouton.
 
      Bien que le **Concepteur de manifeste** s’ouvre, nous allons conserver cette procédure pas à pas simple en modifiant le fichier manifeste directement.
 
-5.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **source.extension.vsixmanifest** de fichiers, puis choisissez **afficher le Code**. Utilisez ce code pour remplacer le contenu existant dans le fichier.
+5. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **source.extension.vsixmanifest** de fichiers, puis choisissez **afficher le Code**. Utilisez ce code pour remplacer le contenu existant dans le fichier.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +61,11 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
     </PackageManifest>
     ```
 
-6.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMathVSIX** de projet, puis choisissez **ajouter** > **unnouvelélément**.
+6. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMathVSIX** de projet, puis choisissez **ajouter** > **unnouvelélément**.
 
-7.  Dans le **données** catégorie, sélectionnez **fichier XML**, nommez le fichier `SDKManifest.xml`, puis choisissez le **ajouter** bouton.
+7. Dans le **données** catégorie, sélectionnez **fichier XML**, nommez le fichier `SDKManifest.xml`, puis choisissez le **ajouter** bouton.
 
-8.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SDKManifest.xml** de fichiers, puis choisissez **ouvrir** pour afficher le fichier dans le **éditeur XML**.
+8. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SDKManifest.xml** de fichiers, puis choisissez **ouvrir** pour afficher le fichier dans le **éditeur XML**.
 
 9. Ajoutez le code suivant à la **SDKManifest.xml** fichier.
 
@@ -126,9 +126,9 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 17. Dans **l’Explorateur de solutions**, dans le menu contextuel pour le **arithmetic.js** de fichiers, choisissez **propriétés**. Effectuer ces modifications de propriété :
 
-    -   Définir le **inclure dans VSIX** propriété **True**.
+    - Définir le **inclure dans VSIX** propriété **True**.
 
-    -   Définir le **Copy to Output Directory** propriété **toujours copier**.
+    - Définir le **Copy to Output Directory** propriété **toujours copier**.
 
 18. Dans **l’Explorateur de solutions**, dans le menu contextuel pour le **SimpleMathVSIX** de projet, choisissez **Build**.
 
@@ -138,7 +138,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 21. Redémarrez Visual Studio.
 
-##  <a name="createSampleApp"></a> Pour créer un exemple d’application qui utilise le Kit de développement
+## <a name="createSampleApp"></a> Pour créer un exemple d’application qui utilise le Kit de développement
 
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 

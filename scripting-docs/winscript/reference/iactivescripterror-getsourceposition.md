@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4446235a9584bc45fad84b6f92ecc02592e554f3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009622"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
 Récupère l’emplacement dans le code source où une erreur s’est produite pendant que le moteur de script a été exécutant un script.  

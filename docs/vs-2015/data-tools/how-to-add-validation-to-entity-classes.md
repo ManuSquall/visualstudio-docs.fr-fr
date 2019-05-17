@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 56feab0eb399c2ce99ce3a6f2442ff602209c634
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668351"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697757"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procédure : Ajouter une validation à des classes d’entité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
  Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des méthodes partielles qui permettent aux utilisateurs d’étendre le code généré par le concepteur qui s’exécute pendant les insertions, mises à jour et supprime des entités complètes et également pendant et après la colonne individuelle modifications.  
   
 > [!NOTE]
->  Cette rubrique fournit les étapes de base pour ajouter une validation aux classes d'entité à l'aide du [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Ces étapes génériques risqueraient d'être difficiles à suivre sans faire référence à une classe d'entité spécifique. Une procédure pas à pas utilisant les données réelles est donc fournie.  
+> Cette rubrique fournit les étapes de base pour ajouter une validation aux classes d'entité à l'aide du [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Ces étapes génériques risqueraient d'être difficiles à suivre sans faire référence à une classe d'entité spécifique. Une procédure pas à pas utilisant les données réelles est donc fournie.  
   
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Ajout d'une validation pour la modification d'une valeur dans une colonne spécifique  
  Cette procédure indique comment valider des données lorsque la valeur d'une colonne change. La validation est effectuée dans la définition de classe (plutôt que dans l'interface utilisateur) et, de ce fait, une exception est levée si la valeur provoque l'échec de la validation. Implémentez la gestion des erreurs pour le code de votre application qui essaie de modifier les valeurs de colonne.  
@@ -78,7 +78,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
  Outre la vérification des valeurs lors des modifications, vous avez la possibilité de valider les données lors d'une tentative de mise à jour d'une classe d'entité complète. La validation pendant une tentative de mise à jour vous permet de comparer des valeurs dans plusieurs colonnes si les règles métier le demandent. La procédure suivante indique comment effectuer la validation lors d'une tentative de mise à jour d'une classe d'entité complète.  
   
 > [!NOTE]
->  Le code de validation pour les mises à jour des classes d’entité est exécuté dans la classe partielle <xref:System.Data.Linq.DataContext> (plutôt qu’en dehors de la classe partielle d’une classe d’entité spécifique).  
+> Le code de validation pour les mises à jour des classes d’entité est exécuté dans la classe partielle <xref:System.Data.Linq.DataContext> (plutôt qu’en dehors de la classe partielle d’une classe d’entité spécifique).  
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Pour valider des données pendant une mise à jour de classe d'entité  
   
@@ -126,5 +126,5 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Validation des données](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Validation des données](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

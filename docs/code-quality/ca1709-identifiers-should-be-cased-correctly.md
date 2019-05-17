@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546233"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 
@@ -42,7 +42,7 @@ ms.locfileid: "55932077"
  Le nom d’un identificateur contient un acronyme de trois lettres majuscules.
 
 ## <a name="rule-description"></a>Description de la règle
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit la courbe d’apprentissage qui a requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit la courbe d’apprentissage qui a requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
  Par convention, les noms de paramètre utilisent mixte casse et espace de noms, le type et les noms de membres Pascal casse. Dans un nom de casse mixte, la première lettre est en minuscule et la première lettre de tout mot restant dans le nom est en majuscule. Exemples de noms de casse mixte `packetSniffer`, `ioFile`, et `fatalErrorCode`. Dans un nom de la casse Pascal, la première lettre est majuscule, et la première lettre de tout mot restant dans le nom est en majuscule. Exemples de noms de la casse Pascal `PacketSniffer`, `IOFile`, et `FatalErrorCode`.
 

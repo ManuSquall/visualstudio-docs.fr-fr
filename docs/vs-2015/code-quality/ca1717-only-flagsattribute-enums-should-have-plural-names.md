@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa0c51eaa10503a92c21960dc3dd074aa7541f5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948812"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694962"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717 : Seuls les noms des enums FlagsAttribute doivent être au pluriel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ ms.locfileid: "58948812"
  [CA2217 : Ne pas marquer les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.FlagsAttribute?displayProperty=fullName> [Conception d’énumérations](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+ <xref:System.FlagsAttribute?displayProperty=fullName> [Conception d’énumérations](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

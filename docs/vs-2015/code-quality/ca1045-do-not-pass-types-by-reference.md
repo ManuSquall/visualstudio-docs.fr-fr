@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431543"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045 : Ne pas passer de types par référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58948320"
  Bien que les valeurs de retour soient banales et très utilisées, l’application correcte de `out` et `ref` paramètres nécessite une conception intermédiaire et compétences de codage. Architectes de bibliothèque de conception destiné à une audience générale ne doit pas s’attendre aux utilisateurs de maîtrisent l’utilisation des `out` ou `ref` paramètres.
 
 > [!NOTE]
->  Lorsque vous travaillez avec des paramètres qui sont des structures de grande taille, les ressources supplémentaires qui sont requises pour copier ces structures peut entraîner un effet sur les performances lorsque vous passez par valeur. Dans ce cas, vous pouvez envisager d’utiliser `ref` ou `out` paramètres.
+> Lorsque vous travaillez avec des paramètres qui sont des structures de grande taille, les ressources supplémentaires qui sont requises pour copier ces structures peut entraîner un effet sur les performances lorsque vous passez par valeur. Dans ce cas, vous pouvez envisager d’utiliser `ref` ou `out` paramètres.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle est dû à un type valeur, que la méthode retourne l’objet comme sa valeur de retour. Si la méthode doit retourner plusieurs valeurs, reconcevoir pour retourner une instance unique d’un objet qui contient les valeurs.
@@ -81,7 +81,7 @@ ms.locfileid: "58948320"
 **12345**
 **12345**
 **Changing pointeur - passé par référence :** 
- ** 12345**
+** 12345**
 **ABCDE 12345**
 **passage par valeur de retour :**
 **ABCDE 12345**

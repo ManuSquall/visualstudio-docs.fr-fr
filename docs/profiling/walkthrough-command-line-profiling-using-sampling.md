@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433610"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage
 
@@ -41,7 +41,7 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 L’échantillonnage est une méthode de profilage par laquelle un processus spécifique est périodiquement interrogé pour déterminer la fonction active. Les données résultantes fournissent le nombre de fois que la fonction était sur la pile des appels quand le processus a été échantillonné.
 
 > [!NOTE]
->  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’échantillonnage
 

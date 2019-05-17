@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679947"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procédure : Utiliser ClickOnce pour déployer des Applications pouvant s’exécuter sur plusieurs Versions du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095475"
 Vous pouvez déployer une application qui cible plusieurs versions du .NET Framework à l’aide de la technologie de déploiement ClickOnce. Cela nécessite que vous générez et mettre à jour les manifestes d’application et de déploiement.  
   
 > [!NOTE]
->  Avant de modifier l’application pour cibler plusieurs versions du .NET Framework, vous devez vous assurer que votre application s’exécute avec plusieurs versions du .NET Framework. Le common language runtime de version est différent entre [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] et .NET Framework 2.0, .NET Framework 3.0 et .NET Framework 3.5.  
+> Avant de modifier l’application pour cibler plusieurs versions du .NET Framework, vous devez vous assurer que votre application s’exécute avec plusieurs versions du .NET Framework. Le common language runtime de version est différent entre [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] et .NET Framework 2.0, .NET Framework 3.0 et .NET Framework 3.5.  
   
  Ce processus implique les étapes suivantes :  
   
@@ -110,4 +110,4 @@ Vous pouvez déployer une application qui cible plusieurs versions du .NET Frame
  [\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<dépendance > élément](../deployment/dependency-element-clickonce-application.md)   
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Schéma des fichiers de configuration](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
+ [Schéma des fichiers de configuration](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

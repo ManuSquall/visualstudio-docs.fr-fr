@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093902"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679542"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : Exécuter votre programme et tester d’autres fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Couleur, boîte de dialogue
 3. Choisissez une couleur pour définir la couleur d'arrière-plan du contrôle PictureBox. Examinez attentivement la méthode `backgroundButton_Click()` pour comprendre son fonctionnement.  
   
     > [!NOTE]
-    >  Vous pouvez charger une image à partir d’Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.  
+    > Vous pouvez charger une image à partir d’Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.  
   
 4. Choisissez le bouton **Effacer l’image** pour vous assurer qu’elle s’efface. Quittez ensuite le programme en choisissant le bouton **Fermer**.  
   
@@ -53,11 +53,11 @@ Couleur, boîte de dialogue
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
-- Pour en savoir plus sur la programmation en Visual Studio, consultez [Concepts de programmation](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Pour en savoir plus sur la programmation en Visual Studio, consultez [Concepts de programmation](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
-- Pour en savoir plus sur Visual Basic, consultez [Développement d’applications avec Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Pour en savoir plus sur Visual Basic, consultez [Développement d’applications avec Visual Basic](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
-- Pour en savoir plus sur Visual C#, consultez [Introduction au langage C# et au .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Pour en savoir plus sur Visual C#, consultez [Introduction au langage C# et au .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
 - Pour passer à l’étape suivante du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   

@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685307"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procédure : Le jeu de couleurs et polices intégrées d’accès
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
     Ce GUID est utilisé pour identifier une catégorie<strong>.</strong> Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.  
   
    > [!NOTE]
-   >  Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.  
+   > Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.  
   
 2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur du fichier de ressources (.rc) du VSPackage, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.  
   
-    Pour plus d’informations, consultez [Ajout ou suppression d’une chaîne](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Pour plus d’informations, consultez [Ajout ou suppression d’une chaîne](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Pour inscrire une catégorie à l’aide de couleurs et polices intégrées  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075757"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698206"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,16 +41,16 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
   La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique  
- Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
+ Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique  
- Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Méthodes d’extension dans les listes de saisie semi-automatique  
  Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.  
   
 > [!NOTE]
->  La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.  
+> La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.  
   
  Les méthodes d’extension utilisent une icône différente de celle des méthodes d’instance. Pour obtenir la liste des icônes de liste, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). Quand une méthode d’instance et une méthode d’extension portant le même nom sont toutes deux dans la portée, la liste de saisie semi-automatique affiche l’icône de la méthode d’extension.  
   
@@ -81,7 +81,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utilisez la liste des membres, les membres utilisés récemment seront affichés en haut. L'historique des membres utilisés récemment est effacé entre chaque session dans l'IDE.  
   
 ## <a name="override"></a>override  
- Lorsque vous tapez [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) et appuyez sur la touche Espace, IntelliSense affiche dans une zone de liste contextuelle tous les membres valides de la classe de base que vous pouvez substituer. La saisie du type de retour de la méthode après `override` indique à IntelliSense d'afficher uniquement les méthodes qui retournent le même type. Quand IntelliSense ne trouve aucune correspondance, il affiche tous les membres de la classe de base.  
+ Lorsque vous tapez [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) et appuyez sur la touche Espace, IntelliSense affiche dans une zone de liste contextuelle tous les membres valides de la classe de base que vous pouvez substituer. La saisie du type de retour de la méthode après `override` indique à IntelliSense d'afficher uniquement les méthodes qui retournent le même type. Quand IntelliSense ne trouve aucune correspondance, il affiche tous les membres de la classe de base.  
   
 ## <a name="automatic-code-generation"></a>Génération de code automatique  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  Pour voir les options disponibles dans l’IDE de Visual Studio, dans le menu **Edition**, pointez sur **IntelliSense**, puis pointez sur **Organiser les instructions Using**. L'IDE fournit les options suivantes pour organiser et supprimer les directives `usings` :  
   
 ### <a name="implement-interface"></a>Implémenter l'interface  
- IntelliSense propose une option pour vous aider à implémenter une [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l'interface dans votre classe. Grâce à IntelliSense, quand vous tapez le nom d'une interface dans une déclaration de classe, une balise active apparaît. Cette balise active vous donne la possibilité d'implémenter l'interface automatiquement, à l'aide d'une affectation de noms explicite ou implicite. Sous l'affectation de noms explicite, les déclarations de méthode comportent le nom de l'interface. Sous l'affectation de noms implicite, les déclarations de méthode n'indiquent pas l'interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, consultez [Implémentation d’interface explicite](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ IntelliSense propose une option pour vous aider à implémenter une [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l'interface dans votre classe. Grâce à IntelliSense, quand vous tapez le nom d'une interface dans une déclaration de classe, une balise active apparaît. Cette balise active vous donne la possibilité d'implémenter l'interface automatiquement, à l'aide d'une affectation de noms explicite ou implicite. Sous l'affectation de noms explicite, les déclarations de méthode comportent le nom de l'interface. Sous l'affectation de noms implicite, les déclarations de méthode n'indiquent pas l'interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, consultez [Implémentation d’interface explicite](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  L'option Implémenter l'interface génère le nombre minimal de stubs de méthode requis pour satisfaire l'interface. Si une classe de base implémente des parties de l'interface, ces stubs ne sont pas régénérés.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  ![Générer un gestionnaire d’événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.  
+> Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.  
   
  Si vous appuyez sur la touche Tab, IntelliSense choisit une méthode avec la signature appropriée et place le curseur dans le corps de votre gestionnaire d'événements.  
   
 > [!NOTE]
->  Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (Ctrl + -) pour revenir à l’instruction de connexion d’événements.  
+> Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (Ctrl + -) pour revenir à l’instruction de connexion d’événements.  
   
  La tâche suivante montre comment IntelliSense connecte automatiquement un gestionnaire d'événements nommé `button1_Click` à un champ d'événement nommé `button1.Click`.  
   

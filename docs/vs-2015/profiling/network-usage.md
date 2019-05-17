@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441895"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
  L'outil Réseau prend en charge seulement les applications de la plateforme universelle Windows. Les autres plateformes ne sont pas prises en charge pour l'instant.  
   
 > [!NOTE]
->  Pour obtenir une description plus complète de l’outil Réseau, consultez la [présentation de l’outil Réseau de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Pour obtenir une description plus complète de l’outil Réseau, consultez la [présentation de l’outil Réseau de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
 1. Ouvrez le projet dans Visual Studio.  
   
-2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez **Réseau**, puis **Démarrer**.  
+2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez Réseau, puis **Démarrer**.  
   
 3. L'outil Réseau commence à collecter le trafic HTTP de votre application.  
   
@@ -67,13 +67,13 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 ### <a name="analysis-tips"></a>Conseils pour l'analyse  
  Cet outil met en évidence certaines parties qui peuvent être utiles quand vous effectuez une analyse liée au réseau :  
   
-1.  Les demandes qui sont entièrement traitées à partir du cache sont indiquées par la mention **(du cache)** dans la colonne **Reçu**. Ce marquage peut vous aider à déterminer si vous utilisez le cache efficacement pour économiser la bande passante de l'utilisateur, ou si vous placez par erreur des réponses dans le cache et que vous fournissez donc des données obsolètes à l'utilisateur final de votre application.  
+1. Les demandes qui sont entièrement traitées à partir du cache sont indiquées par la mention **(du cache)** dans la colonne **Reçu**. Ce marquage peut vous aider à déterminer si vous utilisez le cache efficacement pour économiser la bande passante de l'utilisateur, ou si vous placez par erreur des réponses dans le cache et que vous fournissez donc des données obsolètes à l'utilisateur final de votre application.  
   
-2.  Les réponses d’erreur (4xx ou 5xx) sont affichées dans la colonne **Résultats** avec un code d’état rouge et sont également mises en surbrillance dans la barre de résumé. Le repérage des erreurs parmi les demandes potentiellement nombreuses de votre application est ainsi facilité.  
+2. Les réponses d’erreur (4xx ou 5xx) sont affichées dans la colonne **Résultats** avec un code d’état rouge et sont également mises en surbrillance dans la barre de résumé. Le repérage des erreurs parmi les demandes potentiellement nombreuses de votre application est ainsi facilité.  
   
-3.  Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.  
+3. Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vidéo Channel 9 : Diagnostics tools – New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Blog Visual Studio : Présentation s network inspector de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vidéo Channel 9 : Outils de diagnostic de Visual Studio – nouvelle Profiler de réseau](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

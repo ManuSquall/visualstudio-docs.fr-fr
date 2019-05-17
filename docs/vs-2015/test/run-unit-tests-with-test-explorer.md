@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446237"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 ### <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
 > [!WARNING]
->  L'exécution de tests unitaires après chaque génération est prise en charge dans Visual Studio Enterprise.  
+> L'exécution de tests unitaires après chaque génération est prise en charge dans Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![Filtrer les tests dans l’Explorateur de tests](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.  
+> Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.  
   
 |Qualificateur|Description|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
   
    > [!NOTE]
-   >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
+   > Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
   
 2. Dans l'Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyser la couverture du code de test unitaire  
   
 > [!NOTE]
->  La couverture du code de test unitaire est uniquement disponible dans Visual Studio Enterprise.  
+> La couverture du code de test unitaire est uniquement disponible dans Visual Studio Enterprise.  
   
  Vous pouvez déterminer la quantité de code de votre produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d'une solution.  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6563cc81be8f026a9b2230b0664c678b5649ca9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d277919229316768cde27efdc9b2797d0351e9fe
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907475"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458504"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Impossible de supprimer la propriété &lt;nom de la propriété&gt;, car elle participe à l’association &lt;nom de l’association&gt;
 
@@ -33,5 +33,4 @@ Affectez à **Propriété d’association** une propriété différente de la cl
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

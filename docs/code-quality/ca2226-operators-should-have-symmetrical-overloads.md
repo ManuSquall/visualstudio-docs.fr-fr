@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a903fbd3b01523a86302b58f8e9a74917312566c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541729"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226 : Les opérateurs doivent contenir des surcharges symétriques
 
@@ -40,7 +40,7 @@ Par défaut, cette règle examine uniquement les types visibles de l’extérieu
 
 Il n’existe aucun cas où l’égalité ou inégalité s’applique aux instances d’un type, et l’opérateur opposé n’est pas défini. Types implémentent généralement l’opérateur d’inégalité en retournant la valeur négative de l’opérateur d’égalité.
 
-Le compilateur C# émet une erreur pour les violations de cette règle.
+Le compilateur c# émet une erreur pour les violations de cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

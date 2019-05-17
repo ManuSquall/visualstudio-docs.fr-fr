@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813995"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Procédure : Étendre un nœud SharePoint dans l’Explorateur de serveurs
   Vous pouvez étendre les nœuds sous le **connexions SharePoint** nœud **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez ajouter des nœuds enfants, les éléments de menu contextuel ou les propriétés à un nœud existant. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

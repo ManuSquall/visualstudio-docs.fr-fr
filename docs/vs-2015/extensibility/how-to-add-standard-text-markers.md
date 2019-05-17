@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436021"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procédure : Ajouter des marqueurs de texte Standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Utilisez la procédure suivante pour créer l’un des types de marqueur de text
      Dans cet appel de méthode, spécifiez un type de marqueur, une plage de texte afin de créer le marqueur sur et un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Ensuite, cette méthode retourne un pointeur au marqueur de texte qui vient d’être créée. Types de marqueur sont extraites de la <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> énumération. Spécifiez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface si vous souhaitez être informé des événements de marqueur.  
   
     > [!NOTE]
-    >  Créer des marqueurs de texte sur le thread principal dans l’interface utilisateur. L’éditeur principal s’appuie sur le contenu de la mémoire tampon de texte pour créer des marqueurs de texte et la mémoire tampon de texte n’est pas thread-safe.  
+    > Créer des marqueurs de texte sur le thread principal dans l’interface utilisateur. L’éditeur principal s’appuie sur le contenu de la mémoire tampon de texte pour créer des marqueurs de texte et la mémoire tampon de texte n’est pas thread-safe.  
   
 ## <a name="adding-a-custom-command"></a>Ajout d’une commande personnalisée  
  Implémentation de la `IVsTextMarkerClient` interface et en fournissant un pointeur à celui-ci à partir d’un marqueur améliore le comportement de marqueur de plusieurs façons. Tout d’abord, cela vous permet à fournissent des conseils pour votre marque et d’exécuter des commandes. Cela vous permet également de recevoir des notifications d’événements pour les marqueurs individuels et pour créer un menu contextuel personnalisé sur le marqueur. Utilisez la procédure suivante pour ajouter une commande personnalisée au menu contextuel marqueur.  
@@ -52,4 +52,4 @@ Utilisez la procédure suivante pour créer l’un des types de marqueur de text
  [À l’aide de marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Guide pratique pour Implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)   
  [Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
- [Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)
+ [Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

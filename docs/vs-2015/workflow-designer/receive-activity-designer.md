@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971262"
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
 Le **réception** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Receive> activité. Une activité <xref:System.ServiceModel.Activities.Receive> est une activité qui reçoit un message qui peut être un type intégré, tel que <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> ou <xref:System.Xml.Linq.XElement>, ou un contrat de données défini par l'application, un contrat de message ou une classe XML sérialisable.  

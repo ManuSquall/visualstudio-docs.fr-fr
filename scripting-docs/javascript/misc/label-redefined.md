@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006990"
 ---
 # <a name="label-redefined"></a>Étiquette redéfinie
 Vous créé une nouvelle étiquette, mais que vous lui donnez le nom d’une étiquette existante. Étiquettes peuvent être utilisées pour marquer les blocs de code, mais dans une étendue spécifiée, ils doivent être uniques.  

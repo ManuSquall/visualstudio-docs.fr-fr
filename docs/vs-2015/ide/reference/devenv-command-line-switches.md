@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050703"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690976"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050703"
 Devenv vous permet de définir diverses options pour l’environnement de développement intégré (IDE) et également de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple, un script de génération nocturne, ou pour lancer l’IDE avec une configuration particulière.  
   
 > [!NOTE]
->  Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../../msbuild/msbuild-command-line-reference.md).  
+> Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
+> Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
   
 ## <a name="devenv-switch-syntax"></a>Syntaxe des commutateurs devenv  
  Par défaut, les commandes devenv passent des commutateurs à l’utilitaire devenv.com.  
@@ -57,7 +57,7 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 - Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv /build myproject1.vbproj` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».  
   
     > [!NOTE]
-    >  Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient au moins deux fichiers solution qui le référencent, un fichier solution temporaire est créé, qui est nommé pour ce projet et y fait référence.  
+    > Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient au moins deux fichiers solution qui le référencent, un fichier solution temporaire est créé, qui est nommé pour ce projet et y fait référence.  
   
 - Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre guillemets doubles (""). Par exemple, "c:\project a\\".  
   
@@ -76,7 +76,7 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et enregistre toute l’activité dans le fichier journal.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) ou `/r`|Compile et exécute la solution spécifiée.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compile et exécute la solution spécifiée, réduit l’IDE pendant l’exécution de la solution et ferme l’IDE une fois la solution exécutée.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [Définition du chemin et des variables d’environnement pour les générations sur la ligne de commande](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [Définition du chemin et des variables d’environnement pour les générations sur la ligne de commande](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Ouvre les fichiers spécifiés dans une instance en cours d’exécution de cette application. S’il n’existe aucune instance en cours d’exécution, démarre une nouvelle instance avec une disposition de fenêtre simplifiée.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Démarre une instance de l’IDE Visual Studio sans charger le complément spécifié.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en mode sans échec et charge uniquement l’environnement et les services par défaut ainsi que les versions commercialisées des packages tiers.|  

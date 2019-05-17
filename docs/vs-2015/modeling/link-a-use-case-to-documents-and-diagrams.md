@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440966"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre dia
 3. Une fois le nouvel artefact sélectionné, tapez ou collez l’URL dans le **Hyperlink** propriété.  
   
     > [!NOTE]
-    >  Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (commençant par «\\\\»), ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, avec le bouton droit de la solution dans l’Explorateur de solutions, pointez sur **ajouter** puis cliquez sur **élément existant**.  
+    > Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (commençant par «\\\\»), ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, avec le bouton droit de la solution dans l’Explorateur de solutions, pointez sur **ajouter** puis cliquez sur **élément existant**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md)   

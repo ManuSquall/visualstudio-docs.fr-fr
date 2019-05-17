@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383419"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : Configuration et utilisation d’un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
     Dans le menu fichier, cliquez sur **enregistrer les éléments sélectionnés** pour mettre à jour le fichier projet avec les informations sur l’ensemble de règles que vous avez sélectionné et ses paramètres.  
   
    > [!TIP]
-   >  Dans une situation réelle, pour hiérarchiser les problèmes que vous souhaitez cibler avec l’analyse du code il est conseillé pour commencer le **règles minimales recommandées** ensemble de règles et corriger les problèmes de votre choisis et puis ajouter de façon incrémentielle des règles ou règle définit pour rechercher et corriger les problèmes supplémentaires.  
+   > Dans une situation réelle, pour hiérarchiser les problèmes que vous souhaitez cibler avec l’analyse du code il est conseillé pour commencer le **règles minimales recommandées** ensemble de règles et corriger les problèmes de votre choisis et puis ajouter de façon incrémentielle des règles ou règle définit pour rechercher et corriger les problèmes supplémentaires.  
   
    Ensuite, vous allez ajouter du code à la bibliothèque de classes qui sera utilisée pour montrer les violations de la CA1704 « Identificateurs doivent être correctement orthographiés » règle d’analyse du Code. Pour plus d’informations, consultez [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

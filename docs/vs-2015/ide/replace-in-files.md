@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72a20b0271542dd914aeb592dda3f0cb446a0000
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698669"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082592"
 Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de changer l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions entreprises sont répertoriées dans la fenêtre **Résultats de la recherche** sélectionnée dans **Options de résultat**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **Remplacer dans les fichiers** dans la fenêtre **Rechercher et remplacer**.  
   
@@ -53,7 +53,7 @@ Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expre
  L’option choisie dans la liste déroulante **Regarder dans** détermine si l’opération **Remplacer dans les fichiers** porte sur les fichiers actifs uniquement ou sur tous les fichiers figurant dans certains dossiers. Sélectionnez une étendue de recherche dans la liste, tapez le chemin d’un dossier ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et choisissez un ensemble de dossiers. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.  
   
 > [!NOTE]
->  Si l’option **Regarder dans** sélectionnée entraîne la recherche dans un fichier que vous avez extrait du contrôle de code source, la recherche ne porte que sur la version du fichier ayant été téléchargée sur votre ordinateur local.  
+> Si l’option **Regarder dans** sélectionnée entraîne la recherche dans un fichier que vous avez extrait du contrôle de code source, la recherche ne porte que sur la version du fichier ayant été téléchargée sur votre ordinateur local.  
   
 ## <a name="find-options"></a>Options de recherche  
  Vous pouvez développer ou réduire la section **Options de recherche**. Les options suivantes peuvent être sélectionnées ou désélectionnées :  
@@ -88,7 +88,7 @@ Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expre
  Quand cette option est sélectionnée, tous les fichiers dans lesquels des remplacements ont été effectués restent ouverts et vous pouvez ainsi annuler ou enregistrer les modifications. Les contraintes de mémoire peuvent limiter le nombre de fichiers qui peuvent rester ouverts suite à une opération de remplacement.  
   
 > [!CAUTION]
->  Vous pouvez utiliser **Annuler** uniquement sur les fichiers qui restent ouverts pour modification. Si cette option n’est pas sélectionnée, les fichiers qui n’étaient pas déjà ouverts pour modification restent fermés, et aucune option **Annuler** n’est disponible dans ces fichiers.  
+> Vous pouvez utiliser **Annuler** uniquement sur les fichiers qui restent ouverts pour modification. Si cette option n’est pas sélectionnée, les fichiers qui n’étaient pas déjà ouverts pour modification restent fermés, et aucune option **Annuler** n’est disponible dans ces fichiers.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)   

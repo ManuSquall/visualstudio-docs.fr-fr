@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432306"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
   Si un raccourci est affecté à une commande du contexte global et à aucun autre contexte, ce raccourci appelle toujours cette commande. Mais un raccourci peut être affecté à une commande du contexte global et à une commande différente dans un contexte spécifique. Si vous utilisez un raccourci lorsque vous êtes dans le contexte spécifique, ce raccourci appelle la commande pour ce contexte spécifique, et non le contexte global.
 
 > [!NOTE]
->  Les paramètres et l'édition de Visual Studio peuvent modifier le nom et l'emplacement des commandes de menu et les options qui apparaissent dans les boîtes de dialogue. Cette rubrique est basée sur les **Paramètres de développement généraux**.
+> Les paramètres et l'édition de Visual Studio peuvent modifier le nom et l'emplacement des commandes de menu et les options qui apparaissent dans les boîtes de dialogue. Cette rubrique est basée sur les **Paramètres de développement généraux**.
 
 ## <a name="bkmk_identify"></a> Identification d’un raccourci clavier
 
@@ -91,12 +91,12 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
      Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
-    >  Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison Ctrl+Alt+Suppr.
+    > Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison Ctrl+Alt+Suppr.
 
 6. Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 
     > [!NOTE]
-    >  Vous pouvez créer un raccourci qui associe une lettre avec la touche Alt, la touche Ctrl, ou les deux. Vous pouvez également créer un raccourci qui associe la touche Maj et une lettre avec la touche Alt, la touche Ctrl, ou les deux.
+    > Vous pouvez créer un raccourci qui associe une lettre avec la touche Alt, la touche Ctrl, ou les deux. Vous pouvez également créer un raccourci qui associe la touche Maj et une lettre avec la touche Alt, la touche Ctrl, ou les deux.
 
      Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la touche Retour arrière pour supprimer ce raccourci avant d'en essayer un autre.
 
@@ -105,7 +105,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 7. Choisissez le bouton **Assigner**.
 
     > [!NOTE]
-    >  Si vous spécifiez un raccourci différent pour une commande, choisissez le bouton **Assigner**, puis choisissez le bouton **Annuler**. La boîte de dialogue se ferme, mais le changement n’est pas restauré.
+    > Si vous spécifiez un raccourci différent pour une commande, choisissez le bouton **Assigner**, puis choisissez le bouton **Annuler**. La boîte de dialogue se ferme, mais le changement n’est pas restauré.
 
 ## <a name="bkmk_transfer"></a> Partage des raccourcis clavier personnalisés
  Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers un fichier, puis en donnant le fichier à d'autres utilisateurs afin de pouvoir importer les données.

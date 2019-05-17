@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087519"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695160"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utilisation de la couverture du code pour déterminer la quantité de code testé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 3. Si les résultats indiquent une couverture basse, recherchez les parties du code qui ne sont pas testées, puis élaborez d'autres tests pour les couvrir. Les équipes de développement visent généralement une couverture de code qui avoisine 80 %. Dans certaines situations, une couverture inférieure est acceptable. Par exemple, une couverture inférieure est acceptable lorsqu'un code est généré à partir d'un modèle standard.  
   
 > [!TIP]
->  Pour obtenir des résultats exacts :  
+> Pour obtenir des résultats exacts :  
 > 
 > - Assurez-vous que l'optimisation du compilateur est désactivée.  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - Les exclusions doivent être compilées en tant que code non managé (natif), en définissant l'option du compilateur ou à l'aide de `#pragma managed(off)`.  
   
 > [!NOTE]
->  Pour exclure des fonctions dans le code C++/CLI, appliquez l'attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à la fonction. La procédure est la même que pour C#.  
+> Pour exclure des fonctions dans le code C++/CLI, appliquez l'attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à la fonction. La procédure est la même que pour C#.  
   
 ### <a name="including-or-excluding-additional-elements"></a>Avec ou sans éléments supplémentaires  
  L'analyse de la couverture du code est exécutée uniquement sur les assemblys chargés et pour lesquels un fichier .pdb est disponible dans le même répertoire que le fichier .dll ou .exe. Par conséquent, dans certains cas, vous pouvez étendre le jeu d'assemblys inclus par l'obtention des copies des fichiers .pdb appropriés.  
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Vous pouvez mieux contrôler les assemblys et les éléments qui sont sélectionnés pour l'analyse de la couverture du code en écrivant un fichier .runsettings. Par exemple, vous pouvez exclure des assemblys de type particulier sans devoir ajouter des attributs à leurs classes. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analyse de la couverture du code dans le service de build  
- Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L'analyse de la couverture du code sur le service de build est utile, car elle permet d'obtenir l'image la plus récente et la plus complète de la couverture du projet entier. Elle inclut également des tests système automatisés et d'autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.  
+ Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L'analyse de la couverture du code sur le service de build est utile, car elle permet d'obtenir l'image la plus récente et la plus complète de la couverture du projet entier. Elle inclut également des tests système automatisés et d'autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.  
   
 1. Dans Team Explorer, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    Après l'exécution de la build, les résultats de la couverture du code sont liés à la série de tests et s'affichent dans le résumé de la build.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analyse de la couverture du code dans une ligne de commande  
- Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. La couverture du code est une option de cet utilitaire. Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
+ Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. La couverture du code est une option de cet utilitaire. Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
 1. Lancez l'invite de commandes développeur Visual Studio :  
   

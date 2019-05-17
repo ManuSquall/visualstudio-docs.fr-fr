@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696102"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
   
     - (Default)  
   
-         Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
+         Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
   
     - CLSID  
   
@@ -53,7 +53,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
          Obligatoire. Indique si les types des fichiers générés par cet outil personnalisé sont rendus disponibles aux concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types non disponibles aux concepteurs visuels ou 1 (un) pour les types disponibles aux concepteurs visuels.  
   
     > [!NOTE]
-    >  Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous voulez que l’outil personnalisé soit disponible.  
+    > Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous voulez que l’outil personnalisé soit disponible.  
   
      Par exemple, le MSDataSetGenerator s’inscrit lui-même une seule fois pour chaque langue :  
   
@@ -79,4 +79,4 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
  [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)   
  [Déterminer le Namespace par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposition des Types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introduction à l’objet BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [Introduction à l’objet BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

@@ -1,6 +1,6 @@
 ---
 title: Créer des tests unitaires pilotés par les données
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,42 +14,42 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931440"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615430"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procédure : Créer un test unitaire piloté par les données
 
-À l’aide du framework de test unitaire Microsoft pour le code managé, vous pouvez configurer une méthode de test unitaire permettant de récupérer les valeurs utilisées dans la méthode de test à partir d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
+Vous pouvez utiliser l’infrastructure de test unitaire de Microsoft pour le code managé afin de configurer une méthode de test unitaire permettant de récupérer des valeurs auprès d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
 
 La création d’un test unitaire piloté par les données comprend les étapes suivantes :
 
-1.  Créez une source de données qui contient les valeurs que vous utilisez dans la méthode de test. La source de données peut correspondre à n’importe quel type inscrit sur la machine qui exécute le test.
+1. Créez une source de données qui contient les valeurs que vous utilisez dans la méthode de test. La source de données peut correspondre à n’importe quel type inscrit sur la machine qui exécute le test.
 
-2.  Ajoutez un champ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privé et une propriété `TestContext` publique à la classe de test.
+2. Ajoutez un champ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privé et une propriété `TestContext` publique à la classe de test.
 
-3.  Créez une méthode de test unitaire et ajoutez un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+3. Créez une méthode de test unitaire et ajoutez un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-4.  Utilisez la propriété d’indexeur <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> pour récupérer les valeurs que vous utilisez dans un test.
+4. Utilisez la propriété d’indexeur <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> pour récupérer les valeurs que vous utilisez dans un test.
 
 ## <a name="the-method-under-test"></a>Méthode testée
 
 Par exemple, vous avez :
 
-1.  Une solution appelée `MyBank`, qui accepte et traite les transactions de différents types de compte.
+1. Une solution appelée `MyBank`, qui accepte et traite les transactions de différents types de compte.
 
-2.  Un projet dans `MyBank`, appelé `BankDb`, qui gère les transactions des comptes.
+2. Un projet dans `MyBank`, appelé `BankDb`, qui gère les transactions des comptes.
 
-3.  Une classe appelée `Maths` dans le projet `DbBank`, qui remplit les fonctions mathématiques permettant de vérifier que les transactions sont avantageuses pour la banque.
+3. Une classe appelée `Maths` dans le projet `BankDb`, qui remplit les fonctions mathématiques permettant de vérifier que les transactions sont avantageuses pour la banque.
 
-4.  Un projet de test unitaire appelé `BankDbTests` pour tester le comportement du composant `BankDb`.
+4. Un projet de test unitaire appelé `BankDbTests` pour tester le comportement du composant `BankDb`.
 
-5.  Une classe de test unitaire appelée `MathsTests` pour vérifier le comportement de la classe `Maths`.
+5. Une classe de test unitaire appelée `MathsTests` pour vérifier le comportement de la classe `Maths`.
 
-Nous allons tester une méthode dans `Maths` qui ajoute deux entiers à l’aide d’une boucle :
+Nous allons tester une méthode dans `Maths` qui additionne deux entiers en utilisant boucle :
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -87,6 +87,9 @@ public TestContext TestContext
 ```
 
 Dans votre méthode de test, vous accédez aux données via la propriété d’indexeur `DataRow` de `TestContext`.
+
+> [!NOTE]
+> .NET Core ne prend pas en charge l’attribut [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si vous essayez d’accéder aux données de test de cette façon dans un projet de test unitaire .NET Core ou UWP, vous verrez une erreur similaire à **« 'TestContext' ne contient pas de définition pour 'DataRow' et aucune méthode d’extension accessible ’DataRow’ acceptant un premier argument de type 'TestContext' n’a été localisée (une directive using ou une référence d’assembly est-elle manquante ?) »** .
 
 ## <a name="write-the-test-method"></a>Écrire la méthode de test
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428724"
 ---
 # <a name="how-to-add-a-finder-method"></a>Procédure : Ajouter une méthode de recherche
   Pour activer le service de connectivité de données métiers (BDC) afficher une liste d’entités dans une liste ou un composant WebPart, vous devez créer un *Finder* (méthode). Une méthode de recherche est une méthode spéciale qui retourne une collection d’instances d’entité. Pour plus d’informations, consultez [conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608069"
 4. Configurez le descripteur de type en tant qu’un descripteur de type de collection entité. Pour plus d’informations sur la création d’un descripteur de type de collection entité, consultez [Comment : Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Il est inutile d’effectuer cette étape si vous avez ajouté une méthode de recherche spécifique à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche spécifique.
+   > Il est inutile d’effectuer cette étape si vous avez ajouté une méthode de recherche spécifique à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche spécifique.
 
 5. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service du fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**. Pour plus d’informations sur le fichier de code de service, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608069"
      L’exemple suivant retourne une collection de `Contact` entités à l’aide des données à partir de la base de données AdventureWorks pour SQL Server.
 
    > [!NOTE]
-   >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+   > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

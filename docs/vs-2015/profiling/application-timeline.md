@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078614"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696894"
 ---
 # <a name="application-timeline"></a>Chronologie de l'application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 5. Windows 7  
   
 > [!NOTE]
->  Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Collecter les données de chronologie de l’application  
- Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [exécuter les outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
->  Si possible, exécutez l'application directement sur l'appareil. Les performances de l'application observées sur le simulateur ou via une connexion Bureau à distance peuvent ne pas être identiques aux performances réelles sur l'appareil. D'autre part, la collecte des données à l'aide des outils distants Visual Studio n'affecte pas les données de performances.  
+> Si possible, exécutez l'application directement sur l'appareil. Les performances de l'application observées sur le simulateur ou via une connexion Bureau à distance peuvent ne pas être identiques aux performances réelles sur l'appareil. D'autre part, la collecte des données à l'aide des outils distants Visual Studio n'affecte pas les données de performances.  
   
  Les étapes de base sont les suivantes :  
   
@@ -55,7 +55,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 3. Sélectionnez **Chronologie de l'application** , puis cliquez sur **Démarrer** dans le bas de la fenêtre.  
   
     > [!NOTE]
-    >  Il est possible qu'une fenêtre Contrôle de compte d'utilisateur apparaisse et vous demande l'autorisation d'exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
+    > Il est possible qu'une fenêtre Contrôle de compte d'utilisateur apparaisse et vous demande l'autorisation d'exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
   
 4. Exécutez le scénario qui vous intéresse quant au profilage dans votre application pour collecter des données de performances.  
   
@@ -107,7 +107,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |**Autres Xaml**|Temps passé à exécuter le code du runtime XAML.|  
   
 > [!TIP]
->  Choisissez l'outil **Utilisation de l'UC** ainsi que l'outil **Chronologie de l'application** quand vous démarrez le profilage pour afficher les méthodes de l'application qui s'exécutent sur le thread d'interface utilisateur. Le déplacement d'un code d'application de longue durée vers un thread d'arrière-plan peut améliorer la réactivité de l'interface utilisateur.  
+> Choisissez l'outil **Utilisation de l'UC** ainsi que l'outil **Chronologie de l'application** quand vous démarrez le profilage pour afficher les méthodes de l'application qui s'exécutent sur le thread d'interface utilisateur. Le déplacement d'un code d'application de longue durée vers un thread d'arrière-plan peut améliorer la réactivité de l'interface utilisateur.  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> Personnalisation des détails de la chronologie  
  Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .  
@@ -121,5 +121,5 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
 ## <a name="see-also"></a>Voir aussi  
  [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimisation des performances des applications WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Optimisation des performances des applications WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

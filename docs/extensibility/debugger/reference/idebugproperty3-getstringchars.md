@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658099"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457665"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -40,18 +43,18 @@ int GetStringChars(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`buflen`
+## <a name="parameters"></a>Paramètres
+`buflen`\
 
  [in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
 
-`rgString`
+`rgString`\
 
  [out] Retourne la chaîne.
 
  [C++ uniquement], `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 

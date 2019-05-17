@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675916"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre vers le [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette rubrique décrit quelques tâches, outils et classes les plus courants que vous pouvez utiliser pour créer des applications [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] liées aux données.
 
- Pour des informations générales sur la création de contrôles liés aux données dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur la liaison de données [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], consultez [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ Pour des informations générales sur la création de contrôles liés aux données dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur la liaison de données [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], consultez [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles WPF à des données
  Le tableau suivant liste les tâches qui peuvent être accomplies en faisant glisser des éléments de la fenêtre **Sources de données** vers le [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
@@ -98,7 +98,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
  Lorsque vous faites glisser un objet ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne génère pas de code pour remplir l'objet avec les données. Vous devez écrire ce code vous-même.
 
 > [!NOTE]
->  Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils ne peut pas être des classes imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et Classes personnalisées pour WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils ne peut pas être des classes imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et Classes personnalisées pour WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui effectue les opérations suivantes :
 

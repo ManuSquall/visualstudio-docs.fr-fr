@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 59cb744b64137a3ccf34e87d89abcba22e2afc9b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680998"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Faites-en sorte que votre application respecte les spécifications de l’utilis
 ## <a name="see-also"></a>Voir aussi  
 
 - [Quelles sont les nouveautés pour la modélisation dans Visual Studio 2015](../modeling/what-s-new-for-design-in-visual-studio.md)   
-- [DevOps et Application Lifecycle Management](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps et Application Lifecycle Management](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

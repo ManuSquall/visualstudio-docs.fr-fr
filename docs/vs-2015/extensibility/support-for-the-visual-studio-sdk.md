@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688732"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
 ## <a name="included-support"></a>Support inclus  
   
 ### <a name="visual-studio-product-support"></a>Prise en charge du produit Visual Studio  
- Une prise en charge est inclus avec l’achat de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gère une équipe de support dédiées pour répondre aux questions sur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilité.  
+ Une prise en charge est inclus avec l’achat de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gère une équipe de support dédiées pour répondre aux questions sur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilité.  
   
 ### <a name="msdn-subscription-support"></a>Support des abonnements MSDN  
  Packages d’abonnement MSDN peuvent également inclure une prise en charge. Pour plus d’informations, consultez [Support des abonnés MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

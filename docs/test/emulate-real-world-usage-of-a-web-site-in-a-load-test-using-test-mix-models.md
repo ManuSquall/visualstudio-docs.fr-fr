@@ -9,16 +9,16 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785734"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461585"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Émuler l’utilisation réelle attendue d’un site web ou d’une application dans un test de charge à l’aide de modèles de combinaison de tests
+# <a name="test-mix-models-overview"></a>Vue d’ensemble des modèles de combinaison de tests
 
-Vous utilisez les options de modélisation de charge pour prédire l’utilisation réelle attendue d’un site web ou d’une application dont vous testez la charge. Il est important de le faire parce qu'un test de charge qui n'est pas basé sur un modèle de charge précis peut générer des résultats trompeurs.
+Vous utilisez les options de modélisation de charge pour prédire l’utilisation réelle attendue d’un site web ou d’une application dont vous testez la charge. Il est important de le faire, car un test de charge qui n’est pas basé sur un modèle de charge précis peut générer des résultats trompeurs.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +40,8 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 - **Sur la base de l’ordre de tests séquentiel :** chaque utilisateur virtuel exécute les tests de performances web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé. Pour plus d’informations, consultez [Ordre Séquentiel](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Pourcentage basé sur les tests démarrés
- Pour chaque test de la combinaison, vous pouvez spécifier un pourcentage qui détermine sa fréquence de sélection comme prochain test à exécuter. Par exemple, vous pouvez assigner les pourcentages suivants à trois tests :
+
+Pour chaque test de la combinaison, vous pouvez spécifier un pourcentage qui détermine sa fréquence de sélection comme prochain test à exécuter. Par exemple, vous pouvez assigner les pourcentages suivants à trois tests :
 
 - TestA (50%)
 
@@ -48,13 +49,14 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 
 - TestC (15%)
 
-  Lorsque ce paramètre est défini, le prochain test à démarrer dépend des pourcentages assignés. Cette opération est effectuée sans tenir compte du nombre d'utilisateurs virtuels qui exécutent actuellement chacun des tests.
+Lorsque ce paramètre est défini, le prochain test à démarrer dépend des pourcentages assignés. Cette opération est effectuée sans tenir compte du nombre d'utilisateurs virtuels qui exécutent actuellement chacun des tests.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Pourcentage basé sur le nombre d’utilisateurs virtuels
  Ce modèle de combinaison de tests détermine le pourcentage d'utilisateurs virtuels qui effectueront un test particulier. Si vous utilisez ce modèle de combinaison de tests, le prochain test à démarrer dépend non seulement des pourcentages assignés, mais aussi du pourcentage d'utilisateurs virtuels qui exécutent actuellement un test particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée.
 
 ### <a name="PacingTestMix"></a> Combinaison de tests rythmée
- Si vous spécifiez un rythme de combinaison de tests, vous devez définir un taux d'exécution de tests pour chaque utilisateur virtuel et chaque test dans la combinaison. Pour chaque test, ce taux est exprimé sous forme de série de tests par utilisateur virtuel et par heure. Par exemple, vous pouvez assigner le rythme de combinaison de tests suivant aux tests ci-dessous.
+
+Si vous spécifiez un rythme de combinaison de tests, vous devez définir un taux d'exécution de tests pour chaque utilisateur virtuel et chaque test dans la combinaison. Pour chaque test, ce taux est exprimé sous forme de série de tests par utilisateur virtuel et par heure. Par exemple, vous pouvez assigner le rythme de combinaison de tests suivant aux tests ci-dessous.
 
 - TestA : 4 tests par utilisateur et par heure
 
@@ -62,9 +64,9 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 
 - TestC : 0,125 test par utilisateur et par heure
 
-  Si vous utilisez le modèle de combinaison de tests rythmée, le moteur d'exécution de test de charge garantit que le taux réel de démarrage des tests sera inférieur ou égal au taux spécifié. Si la durée d'exécution des tests est trop longue pour pouvoir achever le nombre de tests assigné, une erreur est retournée.
+Si vous utilisez le modèle de combinaison de tests rythmée, le moteur d'exécution de test de charge garantit que le taux réel de démarrage des tests sera inférieur ou égal au taux spécifié. Si la durée d'exécution des tests est trop longue pour pouvoir achever le nombre de tests assigné, une erreur est retournée.
 
-  Le paramètre **Temps de réflexion entre les itérations de test** ne s’applique pas quand vous utilisez une combinaison de tests rythmée.
+Le paramètre **Temps de réflexion entre les itérations de test** ne s’applique pas quand vous utilisez une combinaison de tests rythmée.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Appliquer une distribution au rythme
  La propriété **Appliquer une distribution au rythme** dans un scénario de test de charge peut avoir la valeur True ou False :

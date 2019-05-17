@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 51f49ca90837cf80c22856ae2e8f89a98da43d86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869961"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 Cette interface représente un programme qui peut être débogué.
@@ -50,7 +50,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="remarks"></a>Notes
  Le Gestionnaire de session de débogage (SDM) appelle généralement [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) pour obtenir cette interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

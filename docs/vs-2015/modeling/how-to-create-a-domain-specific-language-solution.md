@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: eae08b771f3bd5748485f9029f7f12725df6f28f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099570"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698132"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
        Le **Assistant Concepteur de langage spécifique à un domaine** s’affiche.  
   
       > [!NOTE]
-      >  De préférence, le nom que vous tapez doit être un identificateur c# valide, car elle peut être utilisée pour générer le code.  
+      > De préférence, le nom que vous tapez doit être un identificateur c# valide, car elle peut être utilisée pour générer le code.  
   
       ![Boîte de dialogue DSL créer](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
     L’Assistant crée une solution qui comporte deux projets, qui sont nommés **Dsl** et **DslPackage**.  
   
    > [!NOTE]
-   >  Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.  
+   > Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.  
   
 ## <a name="settings"></a> Les Pages d’Assistant concepteur DSL  
  Vous pouvez laisser certains des champs inchangés à partir de leurs valeurs par défaut. Toutefois, assurez-vous que vous définissez le champ d’Extension de fichier.  
@@ -133,4 +133,4 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

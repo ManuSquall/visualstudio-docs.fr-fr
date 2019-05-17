@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702690"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Procédure : déboguer sur un cluster à hautes performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
   
  Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibles pour le débogage distant. Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.  
   
- Les fenêtres **Threads** et **Processus** sont particulièrement utiles pour déboguer des applications parallèles. Pour obtenir des conseils sur l’utilisation de ces fenêtres, consultez [Comment : Utiliser la fenêtre processus](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [Comment : Utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
+ Les fenêtres **Threads** et **Processus** sont particulièrement utiles pour déboguer des applications parallèles. Pour obtenir des conseils sur l’utilisation de ces fenêtres, consultez [Comment : Utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [Comment : Utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
   
  Les procédures suivantes présentent quelques techniques particulièrement utiles pour le débogage sur un cluster hautement performant.  
   
@@ -103,7 +103,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Débogage distant](../debugger/remote-debugging.md)   
- [Guide pratique pour Utiliser la fenêtre processus](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Guide pratique pour Utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Guide pratique pour Utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)   
- [Threads et processus](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Threads et processus](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

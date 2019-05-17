@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386185"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.
@@ -42,7 +42,7 @@ Pour inclure des fichiers d’une build, vous devez les ajouter à une liste d�
 
 #### <a name="to-declare-multiple-items"></a>Pour déclarer plusieurs éléments
 
--   Utilisez les attributs `Include` de la façon suivante :
+- Utilisez les attributs `Include` de la façon suivante :
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches p
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :
+> Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

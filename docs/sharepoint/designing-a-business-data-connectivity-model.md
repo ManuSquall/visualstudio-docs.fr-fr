@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431283"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Concevoir un modèle de connectivité de données métiers
   Vous pouvez développer un modèle pour le service de connectivité de données métiers (BDC) en ajoutant des entités et des méthodes à un fichier de modèle. Une entité décrit une collection de champs de données. Par exemple, une entité peut représenter une table dans une base de données. Une méthode effectue une tâche comme l’ajout, suppression ou la mise à jour des données représentées par les entités. Pour plus d’informations, consultez [intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628414"
  Vous pouvez également définir des autorisations de sécurité pour les modèles individuels ou des types de contenu externe. Pour plus d’informations sur la façon de définir les autorisations de sécurité d’un modèle, consultez [gestion des modèles BDC](http://go.microsoft.com/fwlink/?LinkID=178884). Pour plus d’informations sur la façon de définir les autorisations de sécurité d’un type de contenu externe, consultez [gestion des types de contenu externe](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Utilisez ces paramètres pour déboguer une solution sur votre serveur SharePoint local. Pour plus d’informations sur la configuration des paramètres de sécurité BDC sur le serveur de production SharePoint, consultez [vue d’ensemble de la sécurité Business Data Connectivity Services](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Utilisez ces paramètres pour déboguer une solution sur votre serveur SharePoint local. Pour plus d’informations sur la configuration des paramètres de sécurité BDC sur le serveur de production SharePoint, consultez [vue d’ensemble de la sécurité Business Data Connectivity Services](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Retrait des modèles corrompus
  La première fois que vous démarrez le débogueur, Visual Studio déploie le modèle entier sur SharePoint. Pour chaque fois par la suite, Visual Studio met à jour le modèle dans SharePoint avec les modifications que vous apportez entre les déploiements.

@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818213"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>Programmer Visual Studio Tools pour Unity
 Dans cette section, vous trouverez des exemples de l'utilisation de l'API Visual Studio Tools pour Unity.

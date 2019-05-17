@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff3ed7d23272bad1e047ddca46e20b4710644e30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842603"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Cette interface représente un type de pointeur.
@@ -44,7 +44,7 @@ IDebugPointerField : IDebugContainerField
 ## <a name="remarks"></a>Notes
  En C/C++, un pointeur peut être un conteneur s’il est utilisé avec la notation de tableau. Par exemple, prenons `char *pString`, `pString` a un type de pointeur vers `char`. `pString[3]` a le type d’un conteneur qui est un pointeur vers `char` qui fait référence à la quatrième élément de ce conteneur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

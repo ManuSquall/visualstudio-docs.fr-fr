@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f7ffc67bd1175a84bf5708c613661a169c093dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697029"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 |`position()`|Position (index) du nœud de contexte par rapport à la taille du contexte.|  
 |`self::node()`|Valeur du nœud de contexte.|  
   
- Pour plus d'informations, voir [Procédure : Modifier le contexte du débogueur](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Pour plus d'informations, voir [Procédure : Modifier le contexte du débogueur](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Fenêtre Sortie  
  La fenêtre Sortie affiche les messages d'erreur éventuels ou les exceptions de sécurité qui se produisent pendant le débogage.  
@@ -56,7 +56,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
  La Liste des tâches inclut toutes les erreurs rencontrées dans les blocs de script du fichier XSLT.  
   
 > [!NOTE]
->  Le débogueur XSLT ne produit pas d'avertissements. La Liste des tâches n'en comporte donc pas.  
+> Le débogueur XSLT ne produit pas d'avertissements. La Liste des tâches n'en comporte donc pas.  
   
 ## <a name="breakpoints-window"></a>Fenêtre Points d'arrêt  
  La fenêtre Points d'arrêt affiche tous les points d'arrêt définis dans le projet actuel. Si un point d'arrêt est ajouté pendant que la fenêtre est affichée, celle-ci est automatiquement mise à jour pour afficher le nouveau point.  
@@ -101,4 +101,4 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 ## <a name="see-also"></a>Voir aussi  
  [Débogage XSLT](../xml-tools/debugging-xslt.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
- [Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

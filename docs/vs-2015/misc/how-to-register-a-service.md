@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408424"
 ---
 # <a name="how-to-register-a-service"></a>Procédure : Inscrire un Service
 Un MPF (Managed Package Framework) fournit des attributs permettant de contrôler l’inscription des services gérés. L’utilitaire RegPkg utilise ces attributs pour inscrire un service dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -38,7 +38,7 @@ Un MPF (Managed Package Framework) fournit des attributs permettant de contrôle
  <xref:System.Runtime.InteropServices.ComVisibleAttribute> est nécessaire pour obtenir l’interface à partir de code non managé.  
   
 > [!NOTE]
->  Même s’il est possible d’utiliser le même type ou le même GUID pour le service et l’interface, nous vous le déconseillons, car un service peut exposer plusieurs interfaces.  
+> Même s’il est possible d’utiliser le même type ou le même GUID pour le service et l’interface, nous vous le déconseillons, car un service peut exposer plusieurs interfaces.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Inscription de VSPackages](../extensibility/internals/registering-vspackages.md)   

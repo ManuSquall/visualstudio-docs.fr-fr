@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904370"
 ---
 Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuration supplémentaires qui permettent de créer le fichier de paramètres de publication à partir de l’IU.
 
@@ -26,4 +26,4 @@ Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuratio
 
 4. (Facultatif) Vérifiez que Web Deploy s’exécute correctement en ouvrant **Panneau de configuration > Système et sécurité > Outils d’administration > Services**, puis en vérifiant que le **Service de l’agent de déploiement web** est en cours d’exécution (le nom du service est différent dans les anciennes versions).
 
-    Si le service de l’agent n’est pas en cours d’exécution, démarrez-le. Si elle ne figure pas du tout, accédez à **le panneau de configuration > Programmes > désinstaller un programme**, recherchez **Microsoft Web Deploy \<version >**. Choisissez **Changer** l’installation et veillez à choisir **Sera installé sur le disque dur local** pour les composants Web Deploy. Effectuez les étapes relatives au changement de l’installation.
+    Si le service de l’agent n’est pas en cours d’exécution, démarrez-le. S’il n’est pas présent, accédez à **Panneau de configuration > Programmes > Désinstaller un programme**, recherchez **Microsoft Web Deploy\<version>**. Choisissez **Changer** l’installation et veillez à choisir **Sera installé sur le disque dur local** pour les composants Web Deploy. Effectuez les étapes relatives au changement de l’installation.

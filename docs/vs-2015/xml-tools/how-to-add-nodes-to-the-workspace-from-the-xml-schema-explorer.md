@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417468"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procédure : Ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043972"
 Cette rubrique explique comment ajouter des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de l’Explorateur de schémas XML. Pour cela, vous pouvez faire glisser-déplacer des nœuds à partir de l'Explorateur de schémas XML dans une vue du concepteur XSD, ou utiliser le menu contextuel de l'Explorateur de schémas XML. Vous pouvez également ajouter les nœuds mis en surbrillance suite à une recherche effectuée par l'Explorateur de schémas XML. Pour plus d'informations, voir [Procédure : Ajouter des nœuds de résultat de recherche de jeu de schémas à l’espace de travail](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
   
 > [!NOTE]
->  Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).  
+> Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Pour ajouter des nœuds via le menu contextuel de l'Explorateur de schémas XML  
   

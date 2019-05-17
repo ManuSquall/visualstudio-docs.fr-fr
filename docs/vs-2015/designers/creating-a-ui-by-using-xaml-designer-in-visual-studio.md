@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695630"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Lignes d’alignement** : les lignes d’alignement sont des *limites d’alignement* qui apparaissent sous forme de lignes en pointillés rouges quand les bords des contrôles sont alignés ou que les lignes de base de texte sont alignées. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé.
 
- **Quadrillages** : les quadrillages de `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
+ **Quadrillages** : les quadrillages de `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
 
  **Ornements de grille** : un ornement de `Grid` apparaît sous la forme d’un triangle avec une ligne verticale ou horizontale qui y est rattachée sur le quadrillage de `Grid`. Quand vous faites glisser un ornement `Grid` , les largeurs ou hauteurs des lignes ou colonnes adjacentes se mettent à jour au fur et à mesure que vous déplacez la souris.
 
@@ -50,7 +50,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Poignées de redimensionnement** : des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de les redimensionner. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d'informations sur la manipulation de contrôles en mode Design, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
- **Marges** : les marges représentent la quantité d’espace fixe entre le bord d’un contrôle et le bord de son conteneur. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) sous **Disposition** dans la fenêtre Propriétés.
+ **Marges** : les marges représentent la quantité d’espace fixe entre le bord d’un contrôle et le bord de son conteneur. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) sous **Disposition** dans la fenêtre Propriétés.
 
  **Ornements de marge** : vous pouvez utiliser des ornements de marge pour modifier les marges d’un élément par rapport à son conteneur de disposition. Quand un ornement de marge est ouvert, une marge n'est pas définie et l'ornement de marge affiche une chaîne interrompue. Quand la marge n'est pas définie et que le conteneur de disposition est redimensionné au moment de l'exécution, les éléments restent en place. Quand un ornement de marge est fermé, un ornement de marge affiche une chaîne ininterrompue, et les éléments se déplacent avec la marge au fur et à mesure que le conteneur de disposition est redimensionné au moment de l'exécution (la marge reste fixe).
 
@@ -87,9 +87,9 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 
- **Orientation** : spécifie différentes orientations pour l’application : **Paysage** ou **Portrait**.
+ **Orientation** Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
 
- **Bord** : spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
+ **Edge** spécifie différents alignements de bord pour votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
 
  **Contraste élevé** : affiche un aperçu de l’application en fonction du paramètre de contraste sélectionné. Ce paramètre, lorsqu'il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans App.xaml.
 

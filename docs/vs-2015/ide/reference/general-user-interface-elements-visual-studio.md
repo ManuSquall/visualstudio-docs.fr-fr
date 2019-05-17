@@ -9,12 +9,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a510ad25e741fc5924597d4b26841518c63f83a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690961"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Éléments généraux de l'interface utilisateur (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Cette section décrit quelques éléments de l'interface utilisateur de l'enviro
 
  [Options, éditeur de texte, C/C++, avancé](../../ide/reference/options-text-editor-c-cpp-advanced.md) vous permet de spécifier des options avancées pour les fichiers C ou C++.
 
- [Options, éditeur de texte, C#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour C# fichiers.
+ [Options, éditeur de texte, c#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers c#.
 
- [Options, éditeur de texte, C#, avancées](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour C# fichiers.
+ [Options, éditeur de texte, c#, avancé](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour les fichiers c#.
 
- [Options, éditeur de texte, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour C# fichiers.
+ [Options, éditeur de texte, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour les fichiers c#.
 
  [Options, éditeur de texte, XAML, mise en forme](../../ide/reference/options-text-editor-xaml-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers XAML.
 
@@ -69,6 +69,6 @@ Cette section décrit quelques éléments de l'interface utilisateur de l'enviro
 
  [Boîte à outils, onglet HTML](../../ide/reference/toolbox-html-tab.md) vous permet d’ajouter des balises html à une aire de conception.
 
- [Général, CSS, éditeur de texte, boîte de dialogue Options](http://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) vous permet de spécifier des options pour les fichiers CSS.
+ [Général, CSS, éditeur de texte, boîte de dialogue Options](https://msdn.microsoft.com/library/b33a7617-e69d-4a11-938e-2e218a34a10c) vous permet de spécifier des options pour les fichiers CSS.
 
- [Validation, HTML, éditeur de texte, boîte de dialogue Options](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) vous permet de spécifier des options des pages HTML.
+ [Validation, HTML, éditeur de texte, boîte de dialogue Options](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863) vous permet de spécifier des options des pages HTML.

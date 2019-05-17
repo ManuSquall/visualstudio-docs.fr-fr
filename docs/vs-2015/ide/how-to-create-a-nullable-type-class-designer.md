@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058497"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680504"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Procédure : Créer un type Nullable (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiqu
   
   Le Concepteur de classes affiche un type Nullable à l’image de son type sous-jacent.  
   
-  Pour plus d’informations sur les types Nullable dans Visual C#, consultez [Types Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Pour plus d’informations sur les types Nullable dans Visual C#, consultez [Types Nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiqu
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Nullable%601>   
- [Types Nullable](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [Utilisation de types Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Guide pratique pour Identifier un Type Nullable](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [Types Nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [Utilisation de types Nullable](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [Guide pratique pour Identifier un Type Nullable](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Types valeur Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

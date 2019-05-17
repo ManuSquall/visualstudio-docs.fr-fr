@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446703"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : Génération de Code à l’aide de modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La génération de code vous permet de générer du code de programme qui est fo
  Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.  
   
 > [!NOTE]
->  L’application [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est fournie avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.  
+> L’application [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est fournie avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.  
   
  Voici l’exemple de fichier :  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .  
   
    > [!NOTE]
-   >  Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.  
+   > Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.  
   
 3. Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.  
   

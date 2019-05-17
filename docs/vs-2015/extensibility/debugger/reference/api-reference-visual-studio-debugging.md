@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424518"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Informations de référence sur les API (débogage Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La section de référence inclut une vue d’ensemble conceptuelle de l’API, u
 |E_ACCESSDENIED|Erreur accès général d'refusé.|0x80070005|  
   
 > [!NOTE]
->  Quand un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] déboguer la méthode retourne `S_OK`, il est supposé que toutes les pointeurs de paramètre sont valides, autrement dit, aucune validation n’est effectuée sur les pointeurs de paramètre lorsque `S_OK` est retourné.  
+> Quand un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] déboguer la méthode retourne `S_OK`, il est supposé que toutes les pointeurs de paramètre sont valides, autrement dit, aucune validation n’est effectuée sur les pointeurs de paramètre lorsque `S_OK` est retourné.  
   
 > [!NOTE]
->  Non valide ou `NULL` [paramètre out] peut entraîner l’IDE se bloque.  
+> Non valide ou `NULL` [paramètre out] peut entraîner l’IDE se bloque.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832736"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Vous permet de lire les propriétés persistantes d’un jeu de propriétés DIA.
@@ -42,7 +42,7 @@ Le tableau suivant présente les méthodes de `IDiaPropertyStorage`.
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtient correspondant de noms de chaîne pour donné des identificateurs de propriété.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lit `ULONGLONG` valeurs dans un jeu de propriétés.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Chaque propriété dans un jeu de propriétés est identifiée par un identificateur (ID), de la propriété quatre octets `ULONG` valeur unique à cet ensemble. Les propriétés exposées par le biais du `IDiaPropertyStorage` interface correspondent à celles disponibles dans l’interface parente. Par exemple, les propriétés de la [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface peut être accédée par nom via la `IDiaPropertyStorage` interface (Notez toutefois que même si la propriété peut être accessible, cela ne signifie pas la propriété est valide pour un particulier `IDiaSymbol` objet).
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -119,8 +119,8 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

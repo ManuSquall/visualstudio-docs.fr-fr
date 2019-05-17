@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f633b7cd41a9e19179ba5daf22fdd66e9749ad5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698649"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458941"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Rend indisponible à déboguer.
@@ -36,8 +39,8 @@ int UnpublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pDebuggeeInterface`
+## <a name="parameters"></a>Paramètres
+ `pDebuggeeInterface`\
 
  [in] Un `IUnknown` interface au programme. C’est la même valeur fournie à la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) (méthode) et identifie de façon unique le programme en cours de suppression (autrement dit, il est utilisé en tant que cookie).
 

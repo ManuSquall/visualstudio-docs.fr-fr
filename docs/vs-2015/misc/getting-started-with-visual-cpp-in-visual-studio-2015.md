@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: df01ce47f28d2fc6eabb0f182a82ddcf04b825e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d600a174bbd456ac1eaf7e940a17026519261a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681675"
 ---
 # <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>Mise en route avec Visual C++ dans Visual Studio 2015
-Ce contenu a été supprimé. Pour une introduction à Visual C++ dans Visual Studio, consultez [présentation guidée de Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+Ce contenu a été supprimé. Pour une introduction à Visual C++ dans Visual Studio, consultez [présentation guidée de Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).

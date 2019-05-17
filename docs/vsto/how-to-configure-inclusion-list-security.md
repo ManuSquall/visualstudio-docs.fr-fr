@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826377"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procédure : Configurer la sécurité de liste d’inclusion
   Si vous disposez des autorisations d’administrateur, vous pouvez configurer le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux reçoivent la possibilité d’installer les solutions Office en enregistrant une décision d’approbation dans la liste d’inclusion. Pour plus d’informations sur les listes d’inclusion, consultez [solutions Office faire confiance à l’aide de listes d’inclusion](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).

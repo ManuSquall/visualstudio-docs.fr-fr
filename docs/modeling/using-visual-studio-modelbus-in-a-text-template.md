@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064607"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226269"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilisation de Visual Studio ModelBus dans un modèle de texte
 
@@ -35,7 +35,7 @@ Pour résoudre une référence ModelBus dans un modèle de texte, DSL cible doit
 
 1. Si la solution DSL cible n’a pas un **ModelBusAdapter** de projet, créez-en un à l’aide de l’Assistant Modelbus Extension :
 
-    1. Téléchargez et installez le ModelBus Extension de Visual Studio, si vous ne le n'avez pas déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Téléchargez et installez le ModelBus Extension de Visual Studio, si vous ne le n'avez pas déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
     2. Ouvrez le fichier de définition DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**.
 

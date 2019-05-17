@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958305"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
@@ -22,13 +22,13 @@ La charge de travail Applications de science et analyse des données, que vous s
 
 ::: moniker range="vs-2017"
 - [Python et Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec .NET Framework](/dotnet/fsharp/)
+- [F# avec le .NET Framework](/dotnet/fsharp/)
 - [R et Microsoft R Client](../rtvs/index.md)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 - [Python](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec .NET Framework](/dotnet/fsharp/)
+- [F# avec le .NET Framework](/dotnet/fsharp/)
 ::: moniker-end
 
 ![Charge de travail Applications de science et analyse des données dans le programme d’installation de Visual Studio](media/workload/data-science-workload.png)

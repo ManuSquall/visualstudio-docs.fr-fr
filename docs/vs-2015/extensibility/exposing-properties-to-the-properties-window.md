@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432120"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Exposition des propriétés dans la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
 10. Activer la case à cocher dans la **MyToolWindow** fenêtre. **IsChecked** dans le **propriétés** fenêtre change pour **True**. Désactivez la case à cocher dans la **MyToolWindow** fenêtre. **IsChecked** dans le **propriétés** fenêtre change pour **False**. Modifiez la valeur de **IsChecked** dans le **propriétés** fenêtre. La case à cocher dans la **MyToolWindow** des modifications de fenêtre pour correspondre à la nouvelle valeur.  
   
     > [!NOTE]
-    >  Si vous devez supprimer un objet qui est affiché dans le **propriétés** fenêtre, appelez `OnSelectChange` avec un `null` conteneur de sélection premier. Après avoir supprimé la propriété ou l’objet, vous pouvez modifier pour un conteneur de sélection qui a mis à jour <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> et <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> répertorie.  
+    > Si vous devez supprimer un objet qui est affiché dans le **propriétés** fenêtre, appelez `OnSelectChange` avec un `null` conteneur de sélection premier. Après avoir supprimé la propriété ou l’objet, vous pouvez modifier pour un conteneur de sélection qui a mis à jour <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> et <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> répertorie.  
   
 ## <a name="changing-selection-lists"></a>Modification des listes de sélection  
  Dans cette section, vous ajoutez une liste de sélection pour une classe de propriété de base et permet de choisir quelle liste de sélection pour afficher l’interface de fenêtre outil.  
@@ -261,7 +261,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
 6. Sélectionnez la case à cocher dans la **MyToolWindow** fenêtre. Le **propriétés** fenêtre affiche le `Simple` propriétés, de l’objet **SomeText** et **ReadOnly**. Désactivez la case à cocher. Les propriétés publiques de la fenêtre s’affichent dans le **propriétés** fenêtre.  
   
     > [!NOTE]
-    >  Le nom complet de **SomeText** est **mon texte**.  
+    > Le nom complet de **SomeText** est **mon texte**.  
   
 ## <a name="best-practice"></a>Il est recommandé  
  Dans cette procédure pas à pas, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est implémenté afin que la collection d’objets sélectionnables et la collection d’objets sélectionnés sont la même collection. Seul l’objet sélectionné s’affiche dans la liste de l’Explorateur de propriétés. Pour une implémentation de ISelectionContainer plus complète, consultez les exemples de Reference.ToolWindow.  

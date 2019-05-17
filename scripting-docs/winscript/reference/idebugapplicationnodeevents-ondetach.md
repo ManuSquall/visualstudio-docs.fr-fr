@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945678"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
 Gère un événement, ce qui signifie que l’objet de nœud d’application debug a été détachée d’un nœud parent.  

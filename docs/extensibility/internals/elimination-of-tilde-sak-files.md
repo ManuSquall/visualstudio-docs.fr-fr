@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418639"
 ---
 # <a name="elimination-of-sak-files"></a>Élimination de ~ les fichiers SAK
 Dans la version 1.2 API plug-in de contrôle Source, le *~ SAK* fichiers ont été remplacés par les indicateurs de capacité et de contrôlent les nouvelles fonctions de détectent si une source de plug-in prend en charge la *MSSCCPRJ* de fichiers et les extractions partagées.
@@ -48,7 +48,7 @@ Les plug-ins qui prennent en charge des fonctions avancées fournies dans le 1.2
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Si cette clé de Registre est définie sur *DWORD : 00000000*, elle est équivalente à la clé en cours qui n’existe pas, et Visual Studio tente toujours de créer les fichiers temporaires. Toutefois, si la clé de Registre est définie sur *DWORD : 00000001*, Visual Studio ne tente pas de créer les fichiers temporaires. Au lieu de cela, il suppose que le plug-in de contrôle de code source ne prend pas en charge la *MSSCCPRJ.SCC* de fichiers et ne prend pas en charge les extractions partagées.
+> Si cette clé de Registre est définie sur *DWORD : 00000000*, elle est équivalente à la clé en cours qui n’existe pas, et Visual Studio tente toujours de créer les fichiers temporaires. Toutefois, si la clé de Registre est définie sur *DWORD : 00000001*, Visual Studio ne tente pas de créer les fichiers temporaires. Au lieu de cela, il suppose que le plug-in de contrôle de code source ne prend pas en charge la *MSSCCPRJ.SCC* de fichiers et ne prend pas en charge les extractions partagées.
 
 ## <a name="see-also"></a>Voir aussi
 - [Nouveautés de la Version 1.2 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

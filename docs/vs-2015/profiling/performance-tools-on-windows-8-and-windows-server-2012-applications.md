@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095839"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675292"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60095839"
 Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des modifications importantes dans la façon dont les outils d’analyse des performances Visual Studio collectent les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Cette rubrique décrit les modifications concernant les outils d’analyse des performances sur les plateformes Windows 8 et Windows Server 2012.  
   
 > [!NOTE]
->  Les outils d’analyse des performances des autres versions prises en charge de Windows (Windows 7, Windows Server 2008 R2) n’ont pas changé.  
+> Les outils d’analyse des performances des autres versions prises en charge de Windows (Windows 7, Windows Server 2008 R2) n’ont pas changé.  
   
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -60,19 +60,19 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
   [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Analyser les performances des applications](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [Minutage de fonction JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Minutage de fonction JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Minutage de fonction JavaScript sur un périphérique distant](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Minutage de fonction JavaScript sur un périphérique distant](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Analyser les données de minutage de fonction JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analyser les données de minutage de fonction JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications du Windows Store sur un ordinateur local](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications du Windows Store sur un ordinateur local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Profiler le code Visual C++, Visual C# et Visual Basic des applications Windows Store sur un périphérique distant](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Profiler le code Visual C++, Visual C# et Visual Basic des applications Windows Store sur un périphérique distant](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications Windows Store](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications Windows Store](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Dans cette rubrique](#BKMK_In_this_topic)  
   
@@ -105,7 +105,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
 - Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Les programmes d’installation se trouvent dans le dossier *VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.  
   
 > [!NOTE]
->  Pour collecter les données de profilage TIP, vous devez installer le profileur autonome de votre ordinateur Visual Studio sur l’ordinateur distant.  
+> Pour collecter les données de profilage TIP, vous devez installer le profileur autonome de votre ordinateur Visual Studio sur l’ordinateur distant.  
   
  Ces fonctionnalités et options de profilage ne sont pas prises en charge quand il s’agit de profiler des applications Windows 8 et Windows Server 2012 à partir de la ligne de commande :  
   
@@ -136,7 +136,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
    **Collecte de données TIP sur un ordinateur distant**  
   
-   Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_**_\<Plateforme>_**\_**_\<Langage>_**.exe** depuis le dossier _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_**_\<Plateforme>_**\_**_\<Langage>_**.exe** depuis le dossier _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Vous pouvez utiliser [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) pour collecter les données de profilage.  
   

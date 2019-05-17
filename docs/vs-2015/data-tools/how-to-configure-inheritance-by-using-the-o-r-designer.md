@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 21ab62155cea58e196815aadb3dbb538a6c0f6c3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115599"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684769"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procédure : Configurer l’héritage à l’aide du Concepteur O/R
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUD
 4. Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.  
   
     > [!NOTE]
-    >  Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d'héritage pointe sur la première classe.  
+    > Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d'héritage pointe sur la première classe.  
   
 5. Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevrez une erreur si vous tentez de supprimer des propriétés de l’objet utilisées pour les associations : [La propriété \<nom de propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    >  Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées sous forme de propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le Modificateur d'héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [NOT IN BUILD : Substitution de propriétés et méthodes](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    > Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées sous forme de propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le Modificateur d'héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [NOT IN BUILD : Substitution de propriétés et méthodes](https://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6. Sélectionnez la ligne d'héritage dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -55,10 +55,10 @@ L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUD
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [PAVE quelles sont les nouveautés pour le développement d’applications de données dans Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [PAVE quelles sont les nouveautés pour le développement d’applications de données dans Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Procédure pas à pas : Création des Classes LINQ to SQL à l’aide d’héritage à Table unique (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [PAS DANS LA GÉNÉRATION : Héritage en Visual Basic](http://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Héritage](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
+ [PAS DANS LA GÉNÉRATION : Héritage en Visual Basic](https://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [Héritage](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)

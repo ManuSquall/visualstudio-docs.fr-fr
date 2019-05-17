@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387727"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Vue d’ensemble des outils de conception de modèle BDC
   Vous pouvez concevoir un modèle de connectivité de données métiers (BDC) en utilisant le concepteur BDC, le **détails de méthode BDC** fenêtre et le **Explorateur BDC**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596566"
  Lorsque vous choisissez les nœuds dans le **Explorateur BDC**, les propriétés de chaque nœud que vous choisissez s’affichent dans le **propriétés** fenêtre. La plupart de ces propriétés correspondent aux attributs dans le fichier de modèle. Vous pouvez rechercher le modèle à l’aide de la zone de recherche en haut de la **Explorateur BDC**.
 
 > [!NOTE]
->  Le **Explorateur BDC** n’affiche pas les identificateurs de propriétés personnalisées, les chaînes localisées, groupes d’association, actions, les descripteurs de filtre, listes de contrôle d’action et les valeurs de paramètre par défaut.
+> Le **Explorateur BDC** n’affiche pas les identificateurs de propriétés personnalisées, les chaînes localisées, groupes d’association, actions, les descripteurs de filtre, listes de contrôle d’action et les valeurs de paramètre par défaut.
 
 ### <a name="define-type-descriptors"></a>Définir les descripteurs de type
  Utilisez le **Explorateur BDC** pour définir les descripteurs de type. L’Explorateur BDC vous permet de définir un descripteur de type une seule fois et puis de le réutiliser ailleurs dans votre modèle. Pour ce faire, copiez un descripteur de type et le coller sur n’importe quel autre paramètre ou descripteur de type.
 
 > [!NOTE]
->  Modifications apportées à un descripteur de type d’origine n’affectent pas les copies de ce descripteur de type.
+> Modifications apportées à un descripteur de type d’origine n’affectent pas les copies de ce descripteur de type.
 
  Pour plus d'informations, voir [Procédure : Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

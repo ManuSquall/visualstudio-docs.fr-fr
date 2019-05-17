@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1132ff1b0714a1c916a7a02f84ffed95ac61b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9f172466e0c77580a2f68515baed1efded9e23d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716816"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225796"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 Ignore le nombre spécifié d’éléments.
@@ -36,8 +39,8 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celt`
+## <a name="parameters"></a>Paramètres
+ `celt`\
 
  [in] Nombre d’éléments à ignorer.
 

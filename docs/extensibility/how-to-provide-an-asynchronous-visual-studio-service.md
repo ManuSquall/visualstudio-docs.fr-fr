@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862938"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procédure : Fournir un service de Visual Studio asynchrone
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous devez créer un service asynchrone et charger le package sur un thread d’arrière-plan. Pour cela, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> au lieu d’un <xref:Microsoft.VisualStudio.Shell.Package>, ajoutez le service avec les méthodes asynchrones spéciale du package asynchrone.

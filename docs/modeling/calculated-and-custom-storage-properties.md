@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440019"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans votre Explorateur de langage et sont accessibles par le code de programme. Toutefois, les propriétés diffèrent dans la manière dont leurs valeurs sont stockées.
@@ -50,7 +50,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
      Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour Get*YourProperty*().
 
     > [!NOTE]
-    >  Ce fichier est généré à partir de DslDefinition.dsl. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode nécessaire dans un fichier distinct.
+    > Ce fichier est généré à partir de DslDefinition.dsl. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode nécessaire dans un fichier distinct.
 
 6. Créez ou ouvrez un fichier de classe dans un dossier distinct, par exemple CustomCode\\*YourDomainClass*. cs.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a661fb9bea0f04b8fc0114473ccedc46e1e478ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f974874eb18f5893bf736a4f15922e3a86c13c67
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717063"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457647"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtient la méthode qui définit la propriété.
@@ -36,8 +39,8 @@ int GetPropertySetter(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppField`
+## <a name="parameters"></a>Paramètres
+ `ppField`\
 
  [out] Retourne un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet représentant la méthode qui définit la propriété.
 

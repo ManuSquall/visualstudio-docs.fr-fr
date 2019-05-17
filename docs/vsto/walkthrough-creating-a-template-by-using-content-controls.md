@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438560"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.
@@ -83,7 +83,7 @@ ms.locfileid: "60074373"
 5. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
    > [!NOTE]
-   >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.
 

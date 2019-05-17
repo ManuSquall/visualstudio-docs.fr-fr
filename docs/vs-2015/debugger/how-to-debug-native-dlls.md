@@ -23,18 +23,18 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702677"
 ---
 # <a name="how-to-debug-native-dlls"></a>Procédure : Déboguer des DLL natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Lorsque vous déboguez une DLL, vous pouvez commencer le débogage à partir :  
   
@@ -44,7 +44,7 @@ ms.locfileid: "58948174"
   
 - du projet utilisé pour créer la DLL.  
   
-  Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [Points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Si vous démarrez le débogage à partir du projet qui crée la DLL, vous devez spécifier l'exécutable que vous voulez utiliser dans le débogage de la DLL.  
   

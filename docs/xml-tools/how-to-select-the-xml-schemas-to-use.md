@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007391"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : Sélectionner les schémas XML à utiliser
 
@@ -40,7 +40,7 @@ Les schémas spécifiés sont enregistrés dans un fichier d’options de soluti
 
    - Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisation** colonne, puis sélectionnez **utiliser ce schéma**.
 
-     ou
+     - ou -
 
    - Sélectionnez plusieurs schémas dans le **schémas XML** boîte de dialogue, puis avec le bouton droit et sélectionnez **utiliser ce schéma**.
 

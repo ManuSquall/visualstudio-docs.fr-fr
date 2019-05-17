@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683935"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont u
  L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.  
   
 > [!IMPORTANT]
->  Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.  
+> Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.  
   
  Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
   
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [amélioration du débogage avec les attributs d’affichage de débogueur](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [À l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [amélioration du débogage avec les attributs d’affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

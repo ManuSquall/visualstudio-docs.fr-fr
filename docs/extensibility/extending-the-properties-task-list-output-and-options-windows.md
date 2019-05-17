@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417235"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres Propriétés, liste des tâches, sortie et Options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations relatives à votre fenêtre outil dans un nouveau **Options** page et un nouveau paramètre sur le **propriétés** page et également comment écrire dans le **listedestâches** et **sortie** windows.
@@ -33,7 +33,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 1. Créez un projet nommé **TodoList** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **TodoWindow**.
 
     > [!NOTE]
-    >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Configurer la fenêtre outil
  Ajoutez une zone de texte dans laquelle vous pouvez entrer un nouvel élément ToDo, un bouton pour ajouter le nouvel élément à la liste et une zone de liste pour afficher les éléments dans la liste.
@@ -41,7 +41,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 1. Dans *TodoWindow.xaml*, supprimer les contrôles de bouton, zone de texte et StackPanel de UserControl.
 
     > [!NOTE]
-    >  Cette opération ne supprime pas le **button1_Click** Gestionnaire d’événements qui vous réutiliserez dans une étape ultérieure.
+    > Cette opération ne supprime pas le **button1_Click** Gestionnaire d’événements qui vous réutiliserez dans une étape ultérieure.
 
 2. À partir de la **tous les contrôles WPF** section de la **boîte à outils**, faites glisser un **canevas** contrôle à la grille.
 

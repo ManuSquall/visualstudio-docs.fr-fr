@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107344"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461328"
 ---
-# <a name="xml-schema-designer-workspace"></a>Espace de travail du Concepteur de schémas XML
+# <a name="xml-schema-designer-workspace-views"></a>Vues d’espace de travail de Concepteur de schémas XML
 
-Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous aide à explorer vos schémas XML. Outre le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), ce qui vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches, le concepteur XSD fournit trois vues qui vous permettent d’Explorer votre schéma XSD plus en détail. La vue de départ est le point de lancement du Concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d'autres vues du Concepteur XSD et afficher les détails de votre jeu de schémas. La vue du graphique vous permet d'afficher une vue d'ensemble d'un jeu de schémas et les relations entre les nœuds du schéma. La vue de modèle de contenu fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, notamment les types simples et complexes, les éléments, les groupes, les attributs et les groupes d'attributs.
+Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous aide à explorer vos schémas XML. Outre le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), ce qui vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches, le concepteur XSD fournit trois vues où vous pouvez explorer votre schéma XSD plus en détail.
 
-Pour commencer à explorer les nœuds qui vous intéressent, vous devez les ajouter à l'espace de travail. L'espace de travail est partagé entre toutes les vues.
+- Le **vue de départ** est le point de lancement du concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d’autres vues du concepteur XSD et afficher les détails de votre jeu de schémas.
+- Le **vue du graphique** vous permet d’afficher un aperçu d’un jeu de schémas et les relations entre les nœuds de schéma.
+- Le **affichage du modèle de contenu** fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, y compris les types simples et complexes, des éléments, des groupes, des attributs et des groupes d’attributs.
+
+Pour commencer à Explorer les nœuds que vous êtes intéressé, vous devez les ajouter à l’espace de travail. L'espace de travail est partagé entre toutes les vues.
 
 ## <a name="add-nodes-to-the-workspace"></a>Ajouter des nœuds à l’espace de travail
 

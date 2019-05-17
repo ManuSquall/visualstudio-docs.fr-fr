@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819527"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personnaliser les fichiers projet créés par VSTU
 Visual Studio Tools pour Unity fournit un rappel de type Unity pendant la génération du fichier projet. Inscrivez-vous avec l'événement `VisualStudioIntegration.ProjectFileGeneration` pour modifier le fichier projet chaque fois qu'il est régénéré.
@@ -70,4 +70,4 @@ public class ProjectFileHook
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Exemple : rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Exemple : Rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md)

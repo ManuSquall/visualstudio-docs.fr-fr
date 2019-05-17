@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403553"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.
@@ -22,7 +22,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
  L’outil Réseau prend uniquement en charge les applications UWP. Les autres plateformes ne sont pas prises en charge pour l'instant.
 
 > [!NOTE]
->  Pour obtenir une description plus complète de l’outil Réseau, consultez [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
+> Pour obtenir une description plus complète de l’outil Réseau, consultez [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
 
 ## <a name="collect-network-tool-data"></a>Collecter des données de l'outil Réseau
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.
@@ -65,11 +65,11 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 ### <a name="analysis-tips"></a>Conseils pour l'analyse
  Cet outil met en évidence certaines parties qui peuvent être utiles quand vous effectuez une analyse liée au réseau :
 
-1.  Les demandes qui sont entièrement traitées à partir du cache sont indiquées par la mention **(du cache)** dans la colonne **Reçu**. Ce marquage peut vous aider à déterminer si vous utilisez le cache efficacement pour économiser la bande passante de l'utilisateur, ou si vous placez par erreur des réponses dans le cache et que vous fournissez donc des données obsolètes à l'utilisateur final de votre application.
+1. Les demandes qui sont entièrement traitées à partir du cache sont indiquées par la mention **(du cache)** dans la colonne **Reçu**. Ce marquage peut vous aider à déterminer si vous utilisez le cache efficacement pour économiser la bande passante de l'utilisateur, ou si vous placez par erreur des réponses dans le cache et que vous fournissez donc des données obsolètes à l'utilisateur final de votre application.
 
-2.  Les réponses d’erreur (4xx ou 5xx) sont affichées dans la colonne **Résultats** avec un code d’état rouge et sont également mises en surbrillance dans la barre de résumé. Le repérage des erreurs parmi les demandes potentiellement nombreuses de votre application est ainsi facilité.
+2. Les réponses d’erreur (4xx ou 5xx) sont affichées dans la colonne **Résultats** avec un code d’état rouge et sont également mises en surbrillance dans la barre de résumé. Le repérage des erreurs parmi les demandes potentiellement nombreuses de votre application est ainsi facilité.
 
-3.  Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.
+3. Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.
 
 ## <a name="see-also"></a>Voir aussi
 

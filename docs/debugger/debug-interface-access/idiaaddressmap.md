@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554233"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Permet de contrôler comment le SDK DIA calcule les adresses virtuelles virtuels et relatifs pour les objets de débogage.
@@ -42,14 +42,14 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Définit l’image en-têtes pour la traduction d’adresses virtuelles relatives.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fournit un mappage d’adresses pour prendre en charge les traductions de disposition d’image.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : en-têtes de l’image et de mappages d’adresses. La plupart des clients utilisent le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode pour rechercher les informations de débogage appropriées pour une image et la méthode peuvent découvrir généralement toutes les données les en-têtes et les mappages nécessaires lui-même. Toutefois, certains clients implémentent spécialisées de traitement et de recherche de données. Ces clients utilisent les méthodes de la `IDiaAddressMap` interface pour fournir le DIA SDK avec les résultats de recherche.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
  Cette interface est disponible à partir de l’objet de session DIA. Le client appelle le `QueryInterface` méthode sur DIA objet interface de session, généralement [IDiaSession](../../debugger/debug-interface-access/idiasession.md), pour récupérer le `IDiaAddressMap` interface.
 
-## <a name="requirements"></a>Spécifications
- En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : Dia2.h
 
  Bibliothèque : diaguids.lib
 

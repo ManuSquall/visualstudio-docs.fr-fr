@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815350"
 ---
 # <a name="work-with-tables"></a>Utiliser des tables
   Les rubriques de cette section fournissent des procédures pas à pas et des exemples de code pour utiliser le modèle objet de Microsoft Office Word avec des tableaux dans les projets Office. Dans certains cas, ces tâches s'effectuent différemment dans les compléments VSTO et dans les personnalisations au niveau du document.

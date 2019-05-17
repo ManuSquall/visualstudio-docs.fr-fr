@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa93413a8b0972fd40b8943a6121367196e07d5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8a033dbb152542e528b32e26f35a7d63dba30891
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058835"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681171"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216 : Les types pouvant être supprimés doivent déclarer un finaliseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,4 +67,4 @@ ms.locfileid: "60058835"
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
- [Dispose, modèle](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose, modèle](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

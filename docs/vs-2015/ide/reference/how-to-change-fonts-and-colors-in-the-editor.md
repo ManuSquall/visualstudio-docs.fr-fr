@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fc5e511ad2f687ebc709f7c7074e5dd4375c7591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682418"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procédure : Modifier les polices et couleurs utilisées dans l’éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
 - Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Pour modifier le type, la taille et les couleurs de police par défaut  
   
@@ -49,7 +49,7 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
 4. Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.  
   
     > [!TIP]
-    >  Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.  
+    > Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.  
   
 5. Cliquez sur **OK**.  
   

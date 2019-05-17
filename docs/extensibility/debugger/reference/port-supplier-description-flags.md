@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ca6f9dc8c2801a36cab5e90227df201f50d3d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d077c50c19a64eed7fc904a8f7986f95a75d1d1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704213"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460747"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -38,9 +41,9 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };
 ```
 
-## <a name="terms"></a>Termes
+## <a name="fields"></a>Champs
 
-`PSDFLAG_SHOW_WARNING_ICON`
+`PSDFLAG_SHOW_WARNING_ICON`\
 
 Si sélectionné, l’icône d’avertissement s’affichera dans l’interface utilisateur.
 
@@ -48,7 +51,7 @@ Si sélectionné, l’icône d’avertissement s’affichera dans l’interface 
 
 Cette énumération est retournée par la [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : Msdbg.h
 

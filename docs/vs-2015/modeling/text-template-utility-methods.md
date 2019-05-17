@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680984"
 ---
 # <a name="text-template-utility-methods"></a>Méthodes utilitaires de modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58952295"
 Il existe plusieurs méthodes qui sont toujours disponibles pour vous lorsque vous écrivez du code un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de texte. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  Vous pouvez également utiliser d’autres méthodes et les services fournis par l’environnement d’hôte dans un modèle de texte (pas prétraité) standard. Par exemple, vous pouvez résoudre les chemins d’accès de fichier consigner les erreurs et obtenir des services fournis par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et tous les packages chargés.  Pour plus d’informations, consultez [l’accès à Visual Studio à partir d’un modèle de texte](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Vous pouvez également utiliser d’autres méthodes et les services fournis par l’environnement d’hôte dans un modèle de texte (pas prétraité) standard. Par exemple, vous pouvez résoudre les chemins d’accès de fichier consigner les erreurs et obtenir des services fournis par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et tous les packages chargés.  Pour plus d’informations, consultez [l’accès à Visual Studio à partir d’un modèle de texte](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Écrire des méthodes  
  Vous pouvez utiliser la `Write()` et `WriteLine()` méthodes pour ajouter du texte à l’intérieur d’un bloc de code standard, au lieu d’utiliser un bloc de code d’expression. Les blocs de deux code suivants sont fonctionnellement équivalents.  

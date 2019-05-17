@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419485"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Procédure : Enregistrer des classeurs par programmation
   Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d’accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d’accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.
@@ -46,7 +46,7 @@ ms.locfileid: "60093057"
  Vous pouvez enregistrer le classeur spécifié dans un nouvel emplacement ou avec un nouveau nom, en spécifiant éventuellement un format de fichier, un mot de passe, un mode d'accès, etc.
 
 > [!NOTE]
->  Vous souhaiterez peut-être définir la <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriété **False** avant d’enregistrer le classeur avec un nouveau chemin d’accès car l’enregistrement sous certains formats requiert une interaction. Si cette propriété **False** conduit Excel à utiliser toutes les valeurs par défaut.
+> Vous souhaiterez peut-être définir la <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriété **False** avant d’enregistrer le classeur avec un nouveau chemin d’accès car l’enregistrement sous certains formats requiert une interaction. Si cette propriété **False** conduit Excel à utiliser toutes les valeurs par défaut.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document
 

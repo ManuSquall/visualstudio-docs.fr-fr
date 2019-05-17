@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56deef795d1b48dc1b49d8ab255fc7a4fbf7379e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e30843b0a60ed4183491c16ff9992df8773fd1a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948842"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701889"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriétés des relations de domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Les propriétés dans le tableau suivant sont associées à une relation de doma
 |Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour la relation de domaine.|\<aucune>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

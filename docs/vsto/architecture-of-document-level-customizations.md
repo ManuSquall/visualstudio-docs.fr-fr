@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440366"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :
@@ -49,7 +49,7 @@ ms.locfileid: "60051998"
  Si un utilisateur ouvre plusieurs personnalisations au niveau du document en même temps, chaque assembly est chargé dans un domaine d’application différent. Cela signifie qu’une solution dont le comportement est incorrect ne peut pas entraîner l’échec d’autres solutions. Les personnalisations au niveau du document sont conçues pour fonctionner avec un seul document dans un seul domaine d’application. Elles ne sont pas conçues pour la communication entre documents. Pour plus d’informations sur les domaines d’application, consultez [domaines d’Application](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Les personnalisations au niveau du document que vous créez à l’aide des Outils de développement Office dans Visual Studio sont conçues pour être utilisées seulement quand l’application est démarrée par un utilisateur final. Si elle est démarrée par programmation (par exemple à l’aide d’Automation), la personnalisation risque de ne pas fonctionner correctement.
+> Les personnalisations au niveau du document que vous créez à l’aide des Outils de développement Office dans Visual Studio sont conçues pour être utilisées seulement quand l’application est démarrée par un utilisateur final. Si elle est démarrée par programmation (par exemple à l’aide d’Automation), la personnalisation risque de ne pas fonctionner correctement.
 
 ### <a name="design-time-and-run-time-experiences"></a>Expériences au moment du design et d’exécution
  Pour comprendre l’architecture des personnalisations au niveau du document, il est utile de comprendre les expériences de conception et d’exécution d’une solution.
@@ -118,7 +118,7 @@ ms.locfileid: "60051998"
  ![Architecture de personnalisation d’office 2007](../vsto/media/office07-custom.png "architecture de personnalisation d’Office 2007")
 
 > [!NOTE]
->  Dans les solutions Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], les solutions exécutent un appel dans le modèle objet de l’application hôte à l’aide des informations de type d’assembly PIA incorporées dans l’assembly de solution, au lieu d’exécuter un appel directement dans l’assembly PIA. Pour plus d’informations, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).
+> Dans les solutions Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], les solutions exécutent un appel dans le modèle objet de l’application hôte à l’aide des informations de type d’assembly PIA incorporées dans l’assembly de solution, au lieu d’exécuter un appel directement dans l’assembly PIA. Pour plus d’informations, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Processus de chargement
  Les étapes suivantes se produisent lorsqu’un utilisateur ouvre un document qui fait partie d’une solution Microsoft Office.

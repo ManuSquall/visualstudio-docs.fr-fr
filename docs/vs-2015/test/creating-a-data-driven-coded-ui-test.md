@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25a52b4854dd957787100ba2bc742f199c4a9a81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416533"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
      La source de données est maintenant disponible pour cette méthode de test.  
   
     > [!TIP]
-    >  Consultez les [exemples d’attributs de source de données](#CreateDataDrivenCUIT_QA_DataSourceAttributes) dans la section des questions et réponses sur l’utilisation d’autres types de source de données tels que XML, SQL Express et Excel.  
+    > Consultez les [exemples d’attributs de source de données](#CreateDataDrivenCUIT_QA_DataSourceAttributes) dans la section des questions et réponses sur l’utilisation d’autres types de source de données tels que XML, SQL Express et Excel.  
   
 2. Exécutez le test.  
   

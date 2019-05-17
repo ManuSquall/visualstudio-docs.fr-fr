@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961899"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procédure : Rechercher par programmation dans un dossier spécifique
   Cet exemple de code utilise le `Find` et `FindNext` méthodes pour rechercher du texte dans le champ objet des messages électroniques qui se trouvent dans le **boîte de réception**. Cette méthode utilise un filtre de chaîne à rechercher la lettre T comme la lettre de départ de la `Subject` texte.

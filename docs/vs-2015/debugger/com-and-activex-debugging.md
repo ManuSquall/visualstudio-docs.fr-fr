@@ -22,12 +22,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b4d74a6a1c4f03951d93eaf2aa5e556762b9021
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702317"
 ---
 # <a name="com-and-activex-debugging"></a>Débogage COM et ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +50,6 @@ Cette section réunit des conseils sur le débogage des applications COM et des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Présentation de COM](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
- [Contrôles ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Présentation de COM](https://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
+ [Contrôles ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [Applications serveur SDI](../debugger/sdi-server-applications.md)

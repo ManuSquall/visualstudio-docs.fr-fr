@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848774"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
 La pile des appels des événements Graphics dans Visual Studio Graphics Analyzer vous permet de mapper la relation entre les événements graphiques problématiques et le code source de votre application.
@@ -42,4 +42,4 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
  Pour comprendre l'événement graphique sélectionné, vous aurez peut-être besoin d'informations sur les objets Direct3D auxquels il est associé. La fenêtre **Pile des appels des événements Graphics** fournit des liens vers ces informations.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)

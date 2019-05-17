@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429354"
 ---
 # <a name="web-project-essentials"></a>Éléments fondamentaux de projet web
 Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui comporte les pages Web actives. Une page Web active a au code côté serveur qui restitue la page Web à la demande.
@@ -35,7 +35,7 @@ Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pou
 - Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers de solution se trouvent dans \Documents and Settings\\*Votre_compte*\My Documents\\*\<Visual Studio ### >* \Projects\\ *Votresiteweb*.
 
   > [!NOTE]
-  >  Si vous souhaitez conserver le fichier de solution avec le site Web, simplement déplacez-la à cet endroit et le rouvrir.
+  > Si vous souhaitez conserver le fichier de solution avec le site Web, simplement déplacez-la à cet endroit et le rouvrir.
 
 - Si vous ouvrez un site Web qui n’a aucun fichier de solution dans Visual Studio, un nouveau fichier de solution est automatiquement généré pour elle.
 

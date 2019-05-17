@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444989"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, au contrôle de version et aux manifestes dans les déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Il existe une variété de problèmes avec [!INCLUDE[ndptecclick](../includes/nd
  Si vous souhaitez déplacer ou copier une application, vous devez également mettre à jour le `deploymentProvider` chemin d’accès, afin que le client installe réellement à partir du nouvel emplacement. Ce chemin d’accès de la mise à jour s’applique principalement si vous avez installé des applications. Pour les applications en ligne qui sont toujours lancées via l’URL d’origine, en définissant le `deploymentProvider` est facultatif. Si `deploymentProvider` est définie, elle est respectée ; sinon, l’URL utilisée pour démarrer l’application sera utilisé en tant que l’URL de base pour télécharger les fichiers d’application.  
   
 > [!NOTE]
->  Chaque fois que vous mettez à jour le manifeste vous devez également le signer à nouveau.  
+> Chaque fois que vous mettez à jour le manifeste vous devez également le signer à nouveau.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

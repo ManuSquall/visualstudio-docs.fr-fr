@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9cf2aef80f833961b9af13da4fa9f9b97e43435
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d45d99d56ba95db9cbe2443c84c85ba87803eef
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681060"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223287"
 ---
 # <a name="ienumdebugcodecontexts2getcount"></a>IEnumDebugCodeContexts2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -36,8 +39,8 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pcelt`
+## <a name="parameters"></a>Paramètres
+ `pcelt`\
 
  [out] Retourne le nombre d’éléments dans l’énumération.
 

@@ -12,15 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a7eae6a0a37f8bd1f530afe067f4766197591
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 76a7267690f359d960a0c5e9b6f6a1c502d5d4f1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708561"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461179"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-Cette interfac énumère les threads en cours d’exécution dans la session de débogage actuelle.
+Cette interface énumère les threads en cours d’exécution dans la session de débogage actuelle.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,7 +48,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio obtient généralement cette interface pour mettre à jour le **Threads** fenêtre ainsi que pour obtenir le premier thread de la liste, afin d’appeler [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md), et [Étape](../../../extensibility/debugger/reference/idebugprocess3-step.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

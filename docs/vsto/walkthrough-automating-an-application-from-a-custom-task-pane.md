@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2231f3e6dc6185c97a5a09e4d81db3883e8431
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38245a3c16c79806f495b76a0ae0d64b55c05623
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438724"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.
@@ -40,7 +40,7 @@ ms.locfileid: "60041887"
 - Affichage du volet Office personnalisé dans PowerPoint.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :

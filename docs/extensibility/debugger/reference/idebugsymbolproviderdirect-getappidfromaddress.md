@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c0c2781038eae4f1a896b8d6627edb2969e35ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713800"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458275"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Récupère l’identificateur de domaine d’application étant donné l’adresse de débogage.
@@ -37,12 +40,12 @@ int GetAppIDFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pAddress`
+## <a name="parameters"></a>Paramètres
+ `pAddress`\
 
  [in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
- `pAppID`
+ `pAppID`\
 
  [out] Identificateur du domaine d’application.
 

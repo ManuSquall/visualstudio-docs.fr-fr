@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9173563239084b8367d9815b46f28d0626ebe04a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902489"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Avertissement : code périmé (boîte de dialogue)
 
@@ -33,7 +33,7 @@ Cette boîte de dialogue s'affiche lorsque vous avez effectué des modifications
 
 **Ne plus afficher cette boîte de dialogue**
 
-Si vous activez cette case à cocher, Modifier & Continuer appliquera à l'avenir les modifications de code sans vous en demander l'autorisation. Vous pouvez réactiver cet avertissement à partir de la boîte de dialogue **Options** : dans le dossier **Débogage**, cliquez sur la page **Modifier et Continuer**, puis activez la case à cocher **Signaler le code périmé**.
+Si vous activez cette case à cocher, Modifier &amp; Continuer appliquera à l'avenir les modifications de code sans vous en demander l'autorisation. Vous pouvez réactiver cet avertissement à partir de la boîte de dialogue **Options** : dans le dossier **Débogage**, cliquez sur la page **Modifier et Continuer**, puis activez la case à cocher **Signaler le code périmé**.
 
 ## <a name="see-also"></a>Voir aussi
 

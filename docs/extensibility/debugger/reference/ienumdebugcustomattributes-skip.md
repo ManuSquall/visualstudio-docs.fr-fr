@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 372a32d83f0cebf69fd5e7795e083a272bbeb588
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2bac4bbda5c1a9e98f52ec6de83953735d0647db
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679825"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226630"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 Ignore un nombre spécifié d’attributs personnalisés dans une séquence d’énumération.
@@ -36,8 +39,8 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celt`
+## <a name="parameters"></a>Paramètres
+ `celt`\
 
  [in] Nombre d’éléments à ignorer.
 

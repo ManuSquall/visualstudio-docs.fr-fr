@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45cee0acab5fb2b5165e28895ab9a7dcb3ed9c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683660"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226396"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Interrompt un thread.
@@ -36,8 +39,8 @@ HRESULT Suspend ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSuspendCount`
+## <a name="parameters"></a>Paramètres
+ `pdwSuspendCount`\
 
  [out] Retourne le nombre de suspend après l’opération de suspension.
 

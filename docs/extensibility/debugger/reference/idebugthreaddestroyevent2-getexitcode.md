@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2330c8462f88fca401c2e83980465f6f98fc5a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4e61912ac04641595907b3ad14f45a5f6646248a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704018"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226121"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 Obtient le code de sortie pour un thread.
@@ -36,8 +39,8 @@ int GetExitCode ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwExit`
+## <a name="parameters"></a>Paramètres
+ `pdwExit`\
 
  [out] Retourne le code de sortie du thread.
 

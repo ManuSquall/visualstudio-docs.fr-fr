@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432583"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
 |**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Afficher avec D3D11** : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Afficher avec D3D11WARP** : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.  Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|  
   
 > [!TIP]
->  Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.  
+> Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.  
   
 ### <a name="working-with-nodes-and-connections"></a>Utilisation des nœuds et des connexions  
  Utilisez le mode **Sélection** pour ajouter, supprimer, repositionner, connecter et configurer des nœuds. Voici comment effectuer ces opérations de base :  

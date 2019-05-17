@@ -471,6 +471,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data-tools/o-r-designer-messages.md",
+            "redirect_url": "/visualstudio/data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data-tools/bind-windows-forms-controls-to-data.md",
             "redirect_url": "/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio",
             "redirect_document_id": false
@@ -941,6 +946,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/designers/xelement-class-dynamic-properties.md",
+            "redirect_url": "/visualstudio/designers/attribute-xelement-dynamic-property",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/designers/xattribute-class-dynamic-properties.md",
+            "redirect_url": "/visualstudio/designers/value-xattribute-dynamic-property",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/designers/image-editor-examples.md",
+            "redirect_url": "/visualstudio/designers/how-to-create-a-basic-texture",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/designers/model-editor-examples.md",
+            "redirect_url": "/visualstudio/designers/how-to-create-a-basic-3-d-model",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/designers/shader-designer-examples.md",
+            "redirect_url": "/visualstudio/designers/how-to-create-a-basic-color-shader",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/designers/create-modern-desktop-applications-with-windows-presentation-foundation.md",
             "redirect_url": "/visualstudio/designers/getting-started-with-wpf",
             "redirect_document_id": false
@@ -1236,6 +1266,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/customizing-the-editor.md",
+            "redirect_url": "/visualstudio/ide/how-to-change-text-case-in-the-editor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/ide/accessibility-features-of-the-help-viewer.md",
             "redirect_url": "/visualstudio/help-viewer/accessibility-features",
             "redirect_document_id": true
@@ -1278,6 +1313,11 @@
         {
             "source_path": "docs/ide/class-designer/working-with-class-diagrams.md",
             "redirect_url": "/visualstudio/ide/class-designer/designing-and-viewing-classes-and-types",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/ide/code-styles-and-quick-actions.md",
+            "redirect_url": "/visualstudio/ide/code-styles-and-code-cleanup",
             "redirect_document_id": false
         },
         {
@@ -1696,6 +1736,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/talk-to-us.md",
+            "redirect_url": "/visualstudio/ide/feedback-options",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/ide/targeting-a-specific-dotnet-framework-version.md",
             "redirect_url": "/visualstudio/ide/visual-studio-multi-targeting-overview",
             "redirect_document_id": false
@@ -1848,6 +1893,11 @@
         {
             "source_path": "docs/install/install-vs-inconsistent-quality-network.md",
             "redirect_url": "/visualstudio/install/create-an-offline-installation-of-visual-studio",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/modeling/customizing-presentation-on-the-diagram.md",
+            "redirect_url": "/visualstudio/modeling/defining-shapes-and-connectors",
             "redirect_document_id": false
         },
         {
@@ -2036,13 +2086,33 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/modeling/working-with-domain-specific-language-solutions.md",
+            "redirect_url": "/visualstudio/modeling/about-domain-specific-languages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/modeling/deploying-domain-specific-language-solutions.md",
+            "redirect_url": "/visualstudio/modeling/msi-and-vsix-deployment-of-a-dsl",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/modeling/navigate-the-uml-model.md",
             "redirect_url": "/visualstudio/modeling/create-uml-modeling-projects-and-diagrams",
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/modeling/writing-user-commands-and-actions.md",
+            "redirect_url": "/visualstudio/modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/modeling/nesting-shapes.md",
-            "redirect_url": "/visualstudio/modeling/customizing-presentation-on-the-diagram",
+            "redirect_url": "/visualstudio/modeling/defining-shapes-and-connectors",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/modeling/properties-of-model-elements.md",
+            "redirect_url": "/visualstudio/modeling/properties-of-a-dsl-definition",
             "redirect_document_id": false
         },
         {
@@ -2726,6 +2796,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/test/sample-project-for-creating-unit-tests.md",
+            "redirect_url": "/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/test/developer-testing-scenarios.md",
+            "redirect_url": "/visualstudio/test/improve-code-quality",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md",
             "redirect_url": "/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp",
             "redirect_document_id": false
@@ -3281,6 +3361,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/workflow-designer/workflow-designer-ui-help.md",
+            "redirect_url": "/visualstudio/workflow-designer/browse-and-select-a-dotnet-type-dialog-box",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/workflow-designer/using-the-activity-designers.md",
+            "redirect_url": "/visualstudio/workflow-designer/control-flow-activity-designers",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/workflow-designer/activity-views-legacy.md",
             "redirect_url": "/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer",
             "redirect_document_id": false
@@ -3523,6 +3613,11 @@
         {
             "source_path": "docs/workflow-designer/visual-studio-workflow-windows-legacy.md",
             "redirect_url": "/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/xml-tools/sample-xsd-files.md",
+            "redirect_url": "/visualstudio/xml-tools/sample-xsd-file-simple-schema",
             "redirect_document_id": false
         },
         {
@@ -7374,6 +7469,26 @@
             "source_path": "docs/containers/vs-azure-tools-docker-troubleshooting-docker-errors.md",
             "redirect_url": "/visualstudio/containers/troubleshooting-docker-errors",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/vs-2015/index.md",
+            "redirect_url": "/visualstudio/welcome-to-visual-studio-2015?view=vs-2015",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/install/install-visual-studio.md",
+            "redirect_url": "/visualstudio/install/install-visual-studio-2015?view=vs-2015",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/ide/index.md",
+            "redirect_url": "/visualstudio/welcome-to-visual-studio-2015?view=vs-2015",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/vs-2015/ide/whats-new-in-visual-studio.md",
+            "redirect_url": "/visualstudio/what-s-new-in-visual-studio-2015?view=vs-2015",
+            "redirect_document_id": false
         }
     ]
 }

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86cd2b227926db38c5bd50fa0457688a023bc7e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 481c246226a704b388be113cb10a075c8c269c71
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704109"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615124"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Obtient le nombre d’éléments contenus dans le tableau.
@@ -36,10 +39,9 @@ int GetNumberOfElements(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwNumElements`
-
- [out] Retourne le nombre d’éléments dans le tableau.
+## <a name="parameters"></a>Paramètres
+`pdwNumElements`\
+[out] Retourne le nombre d’éléments dans le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

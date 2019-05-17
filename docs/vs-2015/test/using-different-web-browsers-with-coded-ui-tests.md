@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445883"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  **Enregistrement :** vous devez utiliser le générateur de test codé de l’interface utilisateur pour enregistrer le test de votre application web à l’aide d’Internet Explorer. Vous pouvez éventuellement ajouter un code de validation personnalisé pour les contrôles testés à l’aide d’un jeu prédéfini de propriétés, de la même manière que pour les tests codés de l’interface utilisateur. Pour plus d’informations, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Vous ne pouvez pas enregistrer des tests codés de l'interface utilisateur à l'aide des navigateurs Google Chrome ou Mozilla Firefox.  
+> Vous ne pouvez pas enregistrer des tests codés de l'interface utilisateur à l'aide des navigateurs Google Chrome ou Mozilla Firefox.  
   
  **Lecture avec Internet Explorer :** quand aucun navigateur n’est explicitement spécifié, les tests s’exécutent par défaut sur Internet Explorer. Vous pouvez déclarer explicitement le navigateur à utiliser en définissant la propriété **BrowserWindow.CurrentBrowser** dans le code de votre test. Pour Internet Explorer, cette propriété doit être définie sur **IE** ou **Internet Explorer**.  
   
@@ -76,7 +76,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 3. Mettez en surbrillance l’extension et choisissez **Télécharger**.  
   
    > [!TIP]
-   >  Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

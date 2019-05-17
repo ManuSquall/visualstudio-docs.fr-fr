@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a0b2dd8f7e48ea9fe1c1a46daf99302b3c29081f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703185"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                       [C6504](../code-quality/c6504.md)                        |                                                         Null sur élément non pointeur                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          MustCheck sur Void                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 Taille de mémoire tampon sur élément non pointeur ou tableau                                                 |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Incompatibilité de null au déréférencement nul                                                  |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  Incompatibilité de null au déréférencement nul                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      Accès en écriture sur constante                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     Retour utilisé sur condition préalable                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   Terminaison par Null sur élément non pointeur                                                    |
@@ -127,11 +127,11 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |                       [C6516](../code-quality/c6516.md)                        |                                                     Attribut sans propriété                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  Taille valide dans mémoire tampon non lisible                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                Taille accessible en écriture dans mémoire tampon non accessible en écriture                                                 |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Déréférencement de chaîne de taille non valide                                                   |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Déréférencement de chaîne de taille non valide                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      Type de chaîne de taille non valide                                                       |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Paramètre de chaîne de taille non valide                                                    |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Paramètre de chaîne de taille non valide                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              Chaîne de taille non valide. Emplacement inaccessible                                               |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Type de tampon de chaîne de taille non valide                                                   |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Type de tampon de chaîne de taille non valide                                                   |
 |                       [C6527](../code-quality/c6527.md)                        |                         Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  Style de chaîne de format non reconnu                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes             |

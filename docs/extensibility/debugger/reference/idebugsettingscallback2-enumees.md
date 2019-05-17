@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708210"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457608"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Énumère les évaluateurs d’expression disponible étant données les identificateurs de langue et le fournisseur.
@@ -40,20 +43,20 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celtBuffer`
+## <a name="parameters"></a>Paramètres
+ `celtBuffer`\
 
  [in] Nombre d’éléments dans le `pceltEEs` mémoire tampon.
 
- `rgguidLang`
+ `rgguidLang`\
 
  [in, out] Identificateur unique pour le langage de programmation.
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [in, out] Identificateur unique pour le fournisseur.
 
- `pceltEEs`
+ `pceltEEs`\
 
  [in, out] Tableau des évaluateurs d’expression.
 

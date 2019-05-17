@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6a984634dbba0fc1d732fe98214a07d8d6c339d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923382"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Cette interface représente les informations nécessaires pour créer et lier n’importe quel type de point d’arrêt.
@@ -45,7 +45,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une fois le programme en cours de débogage a été chargé, un appel à [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) lie un point d’arrêt en attente à l’emplacement demandé dans le programme.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76d129d433f43b9264dc7262841d9b84c4d729c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db7199a4e589d4839e2a9171350063d2bb4f9f68
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685688"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457452"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 Obtient la valeur retournée pas à pas détaillé d’ou sur une fonction.
@@ -36,8 +39,8 @@ int GetReturnValue ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppReturnValue`
+## <a name="parameters"></a>Paramètres
+ `ppReturnValue`\
 
  [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la valeur à récupérer.
 

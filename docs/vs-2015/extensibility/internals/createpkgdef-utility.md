@@ -13,12 +13,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441492"
 ---
 # <a name="createpkgdef-utility"></a>Utilitaire CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58950029"
 Prend un fichier .dll pour une extension Visual Studio en tant que paramètre et crée un fichier .pkgdef pour accompagner le fichier .dll. Le fichier .pkgdef contient toutes les informations qui seraient sinon écrits dans le Registre système lors de l’extension est installée.  
   
 > [!NOTE]
->  La plupart des modèles de projet qui sont inclus dans le SDK Visual Studio automatiquement créer les fichiers .pkgdef en tant que partie du processus de génération. Ce document est destiné à ceux qui souhaitent créer manuellement des packages, ou convertir des packages existants pour utiliser un déploiement de .pkgdef.  
+> La plupart des modèles de projet qui sont inclus dans le SDK Visual Studio automatiquement créer les fichiers .pkgdef en tant que partie du processus de génération. Ce document est destiné à ceux qui souhaitent créer manuellement des packages, ou convertir des packages existants pour utiliser un déploiement de .pkgdef.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Les fichiers .pkgdef doivent être installés dans un des emplacements suivants : %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ ou %vsinstalldir%\Common7\IDE\Extensions\\. Si le dossier d’installation est %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, l’extension sera reconnue par Visual Studio, mais sera désactivée par défaut. L’utilisateur peut activer l’extension à l’aide de **Extensions et mises à jour**. Si le dossier d’installation est %vsinstalldir%\Common7\IDE\Extensions\\, l’extension est activée par défaut.  
   
 > [!NOTE]
->  Le **Extensions et mises à jour** outil ne peut pas être utilisé pour accéder à une extension, sauf si elle est installée dans le cadre d’un package VSIX.  
+> Le **Extensions et mises à jour** outil ne peut pas être utilisé pour accéder à une extension, sauf si elle est installée dans le cadre d’un package VSIX.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilitaire CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

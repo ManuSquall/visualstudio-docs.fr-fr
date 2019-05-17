@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435098"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Déverrouillage de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 2. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement MSDN ou Visual Studio Team Services associé à votre compte.
 
 > [!IMPORTANT]
->  Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à un compte Visual Studio Team Services à partir de la fenêtre d’outils Team Explorer. Quand vous vous connectez à un compte Visual Studio Team Services, vous pouvez utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
+> Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à un compte Visual Studio Team Services à partir de la fenêtre d’outils Team Explorer. Quand vous vous connectez à un compte Visual Studio Team Services, vous pouvez utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Pour déverrouiller Visual Studio avec une clé de produit
 
@@ -43,7 +43,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 2. Entrez la clé de produit dans la zone fournie.
 
 > [!TIP]
->  Les versions préliminaires de Visual Studio n'ont pas de clés de produit. Vous devez vous connecter à l'IDE pour utiliser les versions préliminaires.
+> Les versions préliminaires de Visual Studio n'ont pas de clés de produit. Vous devez vous connecter à l'IDE pour utiliser les versions préliminaires.
 
 ## <a name="addressing-license-problem-states"></a>Corrections des problèmes d'état des licences
 
@@ -63,7 +63,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
    Si vous n'effectuez pas cette opération, le jeton entre en phase de péremption. Dans ce cas, la boîte de dialogue Paramètres du compte vous indique le nombre de jours avant que votre jeton n'arrive complètement à expiration. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.
 
 > [!IMPORTANT]
->  Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d'éviter toute interruption.
+> Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d'éviter toute interruption.
 
 ### <a name="updating-expired-licenses"></a>Mise à jour des licences ayant expiré
  Si votre abonnement a expiré et vous n'avez plus accès à Visual Studio, vous devez :

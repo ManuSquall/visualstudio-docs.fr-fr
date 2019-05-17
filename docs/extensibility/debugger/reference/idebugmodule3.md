@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98b506c11ef126d0179b198336e8d969c4eec267
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918645"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Cette interface représente un module qui prend en charge d’autres emplacements de symboles et les États JustMyCode.
@@ -47,7 +47,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>Notes
  Visual Studio est le consommateur classique de cette interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc50da1cec68103045365a021e039dd18eced85e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717648"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458335"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Spécifie le type d’informations de symbole à récupérer.
@@ -42,18 +45,20 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Membres
- SSIF_NONE n’indique aucun indicateur
+## <a name="fields"></a>Champs
+ `SSIF_NONE`\
+ Ne spécifie aucun indicateur
 
- SSIF_VERBOSE_SEARCH_INFO retourne que tous les chemins d’accès utilisés pour rechercher des symboles de recherche
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Retourne que tous les chemins d’accès utilisés pour rechercher des symboles de recherche
 
 ## <a name="remarks"></a>Notes
  Ces indicateurs sont passées en tant que paramètre à la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) retourné de la méthode pour déterminer la quantité d’informations.
 
 > [!NOTE]
->  Actuellement, uniquement `SSIF_VERBOSE_SEARCH_INFO` est pris en charge, et il doit être spécifié en tant que le `dwFlags` paramètre `IDebugModule3::GetSymbolInfo`. Toutes les autres valeurs renvoient une erreur.
+> Actuellement, uniquement `SSIF_VERBOSE_SEARCH_INFO` est pris en charge, et il doit être spécifié en tant que le `dwFlags` paramètre `IDebugModule3::GetSymbolInfo`. Toutes les autres valeurs renvoient une erreur.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

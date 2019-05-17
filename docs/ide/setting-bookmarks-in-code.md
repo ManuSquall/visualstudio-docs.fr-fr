@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6369aab354e3362c3ac3f1d9320203f930497c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961096"
 ---
 # <a name="set-bookmarks-in-code"></a>Définir des signets dans le code
 

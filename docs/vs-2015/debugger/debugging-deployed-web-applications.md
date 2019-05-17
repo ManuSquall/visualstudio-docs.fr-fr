@@ -21,12 +21,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7a95af1922f5ad57d15fb53dcba561a9f139e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9608643801255d6c2cbf278cbfd96908f1f3911d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444078"
 ---
 # <a name="debugging-deployed-web-applications"></a>Débogage d'applications Web déployées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Si vous devez déboguer une application Web qui s'exécute sur un serveur de pro
  Pour utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour déboguer une application déployée, vous devez créer un attachement au processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et vous assurer que le débogueur a accès aux symboles de l'application. Vous devez également rechercher et ouvrir les fichiers sources pour l'application. Pour plus d’informations, consultez [spécifier le symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [Comment : Rechercher le nom du processus ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), et [requise](../debugger/aspnet-debugging-system-requirements.md).  
   
 > [!NOTE]
->  De nombreuses applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] font référence à des DLL qui contiennent une logique métier ou un autre code utile. Une référence de ce genre copie automatiquement la DLL de votre ordinateur local dans le dossier \bin du répertoire virtuel de l’application Web. Lorsque vous effectuez un débogage, rappelez-vous que votre application Web référence cette copie de la DLL et non pas celle qui se trouve sur votre ordinateur local.  
+> De nombreuses applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] font référence à des DLL qui contiennent une logique métier ou un autre code utile. Une référence de ce genre copie automatiquement la DLL de votre ordinateur local dans le dossier \bin du répertoire virtuel de l’application Web. Lorsque vous effectuez un débogage, rappelez-vous que votre application Web référence cette copie de la DLL et non pas celle qui se trouve sur votre ordinateur local.  
   
  La procédure d'attachement au processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] est identique à l'attachement à tout autre processus distant. Quand vous êtes attaché, si le projet approprié n’est pas ouvert, une boîte de dialogue apparaît quand l’application s’arrête. Elle vous demande d'indiquer l'emplacement des fichiers sources pour l'application. Le nom de fichier que vous spécifiez dans la boîte de dialogue doit correspondre au nom de fichier spécifié dans les symboles de débogage, situés sur le serveur Web. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   

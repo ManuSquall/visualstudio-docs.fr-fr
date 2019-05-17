@@ -12,18 +12,18 @@ ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 157e4ef5a6f8875a85de1108f94028ef25d25075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c179a4443c23373fb92adf522ee0af34acb19c3f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948810"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695274"
 ---
 # <a name="idebugobject"></a>IDebugObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Cette interface représente un objet qui le binder crée pour encapsuler les valeurs de symboles et d’expressions.  
   
@@ -37,7 +37,7 @@ IDebugObject : IUnknown
  Un évaluateur d’expression implémente cette interface pour représenter un objet.  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Cette interface est la classe de base pour tous les objets qui l’évaluateur d’expression utilise dans les expressions analysées. Elle est retournée par un appel à la [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md) méthode. [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Obtient les interfaces plus spécialisées à partir de cette interface.  
+ Cette interface est la classe de base pour tous les objets qui l’évaluateur d’expression utilise dans les expressions analysées. Elle est retournée par un appel à la [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md) méthode. [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) Obtient les interfaces plus spécialisées à partir de cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugObject`.  

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973086"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -22,7 +22,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
  **Spécifications**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!WARNING]
 > Dans les versions antérieures à Internet Explorer 10, il était possible d'exécuter des tests codés de l'interface utilisateur à un niveau de privilège plus élevé que celui du processus Internet Explorer. Quand vous exécutez des tests codés de l'interface utilisateur dans Internet Explorer 10, le test codé de l'interface utilisateur et le processus Internet Explorer doivent être au même niveau de privilège. Cette obligation est due aux fonctionnalités AppContainer plus sécurisées dans Internet Explorer 10.
@@ -53,7 +53,6 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 > [!NOTE]
 > La durée de Seek et Pause peut être considérable. Lors de la lecture, le test codé de l'interface utilisateur attend que la durée spécifiée dans `(TimeSpan)` soit écoulée avant de suspendre l'audio. Si dans certaines circonstances particulières, la durée spécifiée s'est écoulée avant l'activation de la commande Pause, une exception est levée.
-
 
 ## <a name="video-control"></a>Contrôle Video
  **Contrôle Video :** les actions sur le contrôle Video HTML5 sont correctement enregistrées et lues.

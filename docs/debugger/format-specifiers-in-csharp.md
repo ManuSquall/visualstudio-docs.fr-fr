@@ -1,5 +1,5 @@
 ---
-title: Dans le débogueur, les spécificateurs de format (C#) | Microsoft Docs
+title: Mettre en forme spécificateurs dans le débogueur (c#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,13 +26,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849852"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Dans les spécificateurs de format C# dans le débogueur Visual Studio
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en c# dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion** fenêtre à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et dans les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage du format spécifié.
 
 Pour utiliser un spécificateur de format, entrez l’expression de variable suivie par une virgule et le spécificateur approprié.

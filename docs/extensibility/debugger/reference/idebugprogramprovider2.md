@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74604e0b3446e33962c6a8e69a69bfc400f0e3e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2789601c6fd3c10fe1fa11609eaadb7febbd26c1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700170"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457756"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Cette interface inscrite permet le débogage de session manager (SDM) pour obtenir des informations sur les programmes qui ont été « publié » via le [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.
@@ -46,7 +46,7 @@ Appel de COM `CoCreateInstance` fonctionne avec le `CLSID` du fournisseur de pro
 ## <a name="remarks"></a>Notes
 Normalement, un processus utilise cette interface pour découvrir comment les programmes en cours d’exécution dans ce processus.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

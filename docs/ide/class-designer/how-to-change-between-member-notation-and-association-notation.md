@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975507"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procédure : Changer la notation entre les membres et les associations dans le Concepteur de classes
 
@@ -29,9 +29,9 @@ Dans le **Concepteur de classes**, vous pouvez changer la façon dont le diagram
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Pour passer de la notation membre à la notation association
 
-1.  Depuis le nœud de projet affiché dans l’Explorateur de solutions, ouvrez le fichier du diagramme de classes (.cd).
+1. Depuis le nœud de projet affiché dans l’Explorateur de solutions, ouvrez le fichier du diagramme de classes (.cd).
 
-2.  Dans la forme de type sur le diagramme de classes, cliquez avec le bouton droit sur le champ ou propriété de membre représentant l’association, puis choisissez **Afficher en tant qu’association**.
+2. Dans la forme de type sur le diagramme de classes, cliquez avec le bouton droit sur le champ ou propriété de membre représentant l’association, puis choisissez **Afficher en tant qu’association**.
 
     > [!TIP]
     > Si aucun champ ou propriété n’est visible dans la forme de type, les compartiments de la forme peuvent être réduits. Pour développer la forme de type, double-cliquez sur le nom du compartiment ou cliquez avec le bouton droit sur la forme de type et choisissez **Développer**.

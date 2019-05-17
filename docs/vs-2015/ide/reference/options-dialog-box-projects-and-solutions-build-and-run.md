@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433675"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de proje
   
  **À l'exécution, lorsque les projets sont obsolètes**  
  > [!NOTE]
->  Cette liste s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
+> Cette liste s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
   
  Par défaut, un message s'affiche si une configuration de projet est obsolète quand vous appuyez sur la touche F5 ou quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus. Vous pouvez spécifier s'il faut ou non générer le projet obsolète, et si un message doit s'afficher. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement de génération souhaité.  
   
@@ -54,7 +54,7 @@ Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de proje
  Si des erreurs de génération se produisent quand vous démarrez une génération à partir du menu **Build**, un message s'affiche. Vous pouvez spécifier s'il faut continuer en démarrant l'application et si le message doit s'afficher dès qu'une erreur de génération se produit. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement souhaité.  
   
 > [!NOTE]
->  Cette option s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
+> Cette option s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
   
  **Inviter à lancer**  
  Affiche un message chaque fois qu'une erreur de génération se produit.  
@@ -73,7 +73,7 @@ Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de proje
   
  **Commentaires du fichier journal de génération du projet MSBuild**  
  > [!NOTE]
->  Cette option s'applique aux projets Visual C++ uniquement.  
+> Cette option s'applique aux projets Visual C++ uniquement.  
   
  Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.  
   

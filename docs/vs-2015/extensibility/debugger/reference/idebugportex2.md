@@ -12,12 +12,12 @@ ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 35a1acf88acda7a96dffc10706b8467253ae816d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb866c5cb968a4f03c718f04193026ac5308f7d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681120"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPortEx2 : IUnknown
  Un fournisseur de port personnalisé implémente cette interface sur le même objet qui implémente [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md).  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Les appels SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur la `IDebugPort2` interface pour obtenir cette interface.  
+ Les appels SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur la `IDebugPort2` interface pour obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugPortEx2`.  

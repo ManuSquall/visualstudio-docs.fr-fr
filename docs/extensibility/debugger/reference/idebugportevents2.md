@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918325"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Cette interface indique à un écouteur (en général, le débogage Gestionnaire de session [SDM] ou un moteur de débogage) de la création de processus et un programme et de destruction sur un port particulier. Ces informations peuvent être utilisées pour présenter une vue en temps réel des processus et des programmes en cours d’exécution sur le port.
@@ -46,7 +46,7 @@ IDebugPortEvents2 : IUnknown
 
  Événements de port sont passés au SDM par cette interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

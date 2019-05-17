@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431250"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procédure : Ajouter une entité à un modèle
   Pour créer une entité, ajoutez un contrôle de l’entité à partir de Visual Studio **boîte à outils** sur le Concepteur de connectivité de données métiers (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089456"
      Un nouvel identificateur s’affiche sur l’entité.
 
     > [!NOTE]
-    >  Vous pouvez modifier le nom de l’entité et l’identificateur dans le **propriétés** fenêtre.
+    > Vous pouvez modifier le nom de l’entité et l’identificateur dans le **propriétés** fenêtre.
 
 4. Définissez les champs de l’entité dans une classe. Vous pouvez ajouter une nouvelle classe au projet ou utiliser une classe existante créée à l’aide d’autres outils tels que le Concepteur Objet/Relationnel (Concepteur O/R). L’exemple suivant montre une classe d’entité nommée Contact.
 

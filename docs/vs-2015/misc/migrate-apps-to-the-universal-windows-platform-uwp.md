@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042572"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686667"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrer des applications vers la plateforme Windows universelle (UWP)
 Apportez les modifications manuelles nécessaires à vos fichiers de projet existants pour les applications Windows Store 8.1, les applications Windows Phone 8.1 ou les applications Windows universelles créées avec Visual Studio 2015 RC pour pouvoir les utiliser avec Visual Studio 2015 RTM. (Si vous disposez d’une application Windows 8.1 universelle avec un projet d’application Windows et un projet Windows Phone, vous devez suivre les étapes de migration de chaque projet.)  
@@ -29,7 +29,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
 - [Modifications requises pour des projets de test unitaire pour des applications Windows universelles créées avec Visual Studio 2015 RC](#MigrateUnitTest).  
   
-  Si vous ne voulez pas apporter toutes ces modifications, découvrez comment [porter vos applications existantes](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) dans un nouveau projet Windows universel.  
+  Si vous ne voulez pas apporter toutes ces modifications, découvrez comment [porter vos applications existantes](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) dans un nouveau projet Windows universel.  
   
 ## <a name="MigrateCSharp"></a> Migrer vos C# /Visual Basic des applications de Windows Store 8.1 ou Windows Phone 8.1 pour utiliser la plateforme Windows universelle  
   
@@ -110,7 +110,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
     6. Ajouter un \<EnableDotNetNativeCompatibleProfile > élément et définissez sa valeur sur : **true**.  
   
-    7. L’échelle par défaut des ressources pour les applications Windows universelles est 200. Si votre projet comprend des ressources ne pas à l’échelle 200, vous devez ajouter un \<UapDefaultAssetScale > élément avec la valeur de l’échelle de vos ressources à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. L’échelle par défaut des ressources pour les applications Windows universelles est 200. Si votre projet comprend des ressources ne pas à l’échelle 200, vous devez ajouter un \<UapDefaultAssetScale > élément avec la valeur de l’échelle de vos ressources à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Maintenant votre \<PropertyGroup > élément doit ressembler à cet exemple :  
   
@@ -272,7 +272,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
     4. Ajouter un \<EnableDotNetNativeCompatibleProfile > élément et affectez-lui la valeur : true.  
   
-    5. L’échelle par défaut des ressources pour les applications Windows universelles est 200. Si votre projet comprend des ressources ne pas à l’échelle 200, vous devez ajouter un \<UapDefaultAssetScale > élément avec la valeur de l’échelle de vos ressources à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. L’échelle par défaut des ressources pour les applications Windows universelles est 200. Si votre projet comprend des ressources ne pas à l’échelle 200, vous devez ajouter un \<UapDefaultAssetScale > élément avec la valeur de l’échelle de vos ressources à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Pour Windows Phone projets uniquement, modifier la valeur de \<ApplicationType > à partir de Windows Phone pour Windows Store.  
   
@@ -651,7 +651,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
 4. Rechercher la \<PropertyGroup > élément qui contient le \<TargetPlatformVersion > et \<TargetPlatformMinVersion > éléments. Remplacez la valeur existante de la \<TargetPlatformVersion > et \<TargetPlatformMinVersion > peut être la même version de la plateforme Windows universelle que vous avez installée.  
   
-    L’échelle par défaut des ressources pour les applications Windows universelles est 200. Les projets créés avec les ressources de Visual Studio 2015 RC est inclus à l’échelle 100, vous devez ajouter un \<UapDefaultAssetScale > élément avec une valeur de 100 à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](http://msdn.microsoft.com/library/jj679352.aspx).  
+    L’échelle par défaut des ressources pour les applications Windows universelles est 200. Les projets créés avec les ressources de Visual Studio 2015 RC est inclus à l’échelle 100, vous devez ajouter un \<UapDefaultAssetScale > élément avec une valeur de 100 à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Si vous avez ajouté des références aux Kits de développement logiciel (SDK) d’extension de la plateforme Windows universelle (par exemple, au Kit de développement logiciel Windows Mobile), vous devez mettre à jour la version du Kit de développement logiciel (SDK). Par exemple, cela \<SDKReference > élément :  
   
@@ -761,7 +761,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
   
      Ajouter un \<EnableDotNetNativeCompatibleProfile > élément et lui affecter la valeur true si l’élément n’existe pas déjà.  
   
-     L’échelle par défaut des ressources pour les applications Windows universelles est 200. Les projets créés avec les ressources de Visual Studio 2015 RC est inclus à l’échelle 100, vous devez ajouter un \<UapDefaultAssetScale > élément avec une valeur de 100 à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](http://msdn.microsoft.com/library/jj679352.aspx).  
+     L’échelle par défaut des ressources pour les applications Windows universelles est 200. Les projets créés avec les ressources de Visual Studio 2015 RC est inclus à l’échelle 100, vous devez ajouter un \<UapDefaultAssetScale > élément avec une valeur de 100 à cet élément PropertyGroup. En savoir plus sur les [ressources et échelles](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Par conséquent cette \<PropertyGroup > élément maintenant sera similaire à ceci :  
   

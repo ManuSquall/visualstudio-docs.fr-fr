@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e24568d307db694d30a5e87630f47f764a036427
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921282"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Cette interface est utilisée pour notifier Visual Studio sur les modifications apportées au document source qui sont fournies par le moteur de débogage.
@@ -49,7 +49,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>Notes
  Uniquement les moteurs de débogage qui fournissent leurs propres documents bénéficie de la `IDebugDocumentTextEvent2` interface. Un exemple de ce serait un moteur de débogage de script. En cours d’interprétation des scripts, nouveau code source peut être générée qui n’est pas présent dans n’importe quel fichier de disque et est connue uniquement de l’Allemagne.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

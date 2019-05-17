@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905250"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Mise en route avec le débogueur de capture instantanée
 
@@ -33,7 +33,7 @@ Le débogueur d’instantané collecte des captures instantanées à partir de v
 
     Un hexagone violet s’affiche lorsque vous cliquez sur la gauche.
 
-2. Cliquez sur **démarrer la collecte** pour activer le point d’ancrage.
+2. Cliquez sur **Lancer la collecte** pour activer le snappoint.
 
 ### <a name="open-a-snapshot"></a>Ouvrez un instantané
 
@@ -47,7 +47,7 @@ Le débogueur d’instantané collecte des captures instantanées à partir de v
 
 Dans cette vue, vous pouvez pointer sur les variables à afficher des DataTips, utilisez les variables locales, espions et appeler windows de la pile et également évaluer des expressions.
 
-Le site Web lui-même est toujours en direct et les utilisateurs finaux ne sont pas affectées. Par défaut, une seule capture instantanée est capturée par le point d’ancrage. Autrement dit, une fois une capture instantanée est capturée, le point d’ancrage désactive. Si vous souhaitez capturer un autre instantané sur le point d’ancrage, vous pouvez activer le point d’ancrage précédent en cliquant sur **mise à jour Collection**.
+Le site web proprement dit est toujours en ligne ; les utilisateurs finaux ne sont pas affectés. Par défaut, une seule capture instantanée est capturée par le point d’ancrage. Autrement dit, une fois une capture instantanée est capturée, le point d’ancrage désactive. Si vous souhaitez prendre une autre capture instantanée sur le snappoint, vous pouvez le réactiver en cliquant sur **Mettre à jour la collecte**.
 
 ### <a name="set-a-logpoint"></a>Définir un point de journalisation
 

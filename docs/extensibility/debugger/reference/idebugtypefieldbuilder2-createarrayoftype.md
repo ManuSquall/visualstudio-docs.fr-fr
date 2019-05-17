@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ad86b7bbd68a6fc449efe650a134ab92458d12e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 545c2cc9565d70ea40d6a38516eac4c03fc3497d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693735"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226254"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Crée un tableau du type spécifié et de taille.
@@ -39,16 +42,16 @@ int CreateArrayOfType (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pTypeField`
+## <a name="parameters"></a>Paramètres
+ `pTypeField`\
 
  [in] Type des éléments de que tableau contiendra.
 
- `rank`
+ `rank`\
 
  [in] Nombre d’éléments dans le tableau.
 
- `pArrayOfTypeField`
+ `pArrayOfTypeField`\
 
  [out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objets qui représentent le nouveau tableau.
 

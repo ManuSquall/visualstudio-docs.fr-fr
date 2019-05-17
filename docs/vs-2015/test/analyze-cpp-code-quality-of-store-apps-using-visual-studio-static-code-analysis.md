@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103873"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686532"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
-> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes des outils d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](http://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
+> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes des outils d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](https://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
 
 ## <a name="BKMK_Run"></a> Exécution de l’analyse du code
  Pour exécuter l'analyse du code sur votre solution Visual Studio :
@@ -55,7 +55,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.
 
 > [!TIP]
->  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **Analyser**, puis choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
+> Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **Analyser**, puis choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
 
 ## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.
@@ -116,7 +116,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null sur élément non pointeur                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck sur Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Taille de mémoire tampon sur élément non pointeur ou tableau                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilité de null au déréférencement nul                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilité de null au déréférencement nul                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Accès en écriture sur constante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Retour utilisé sur condition préalable                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Terminaison par Null sur élément non pointeur                                         |
@@ -127,11 +127,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                       [C6516](../code-quality/c6516.md)                        |                                          Attribut sans propriété                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Taille valide dans mémoire tampon non lisible                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Taille accessible en écriture dans mémoire tampon non accessible en écriture                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Déréférencement de chaîne de taille non valide                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Déréférencement de chaîne de taille non valide                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Type de chaîne de taille non valide                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Chaîne de taille non valide. Emplacement inaccessible                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Style de chaîne de format non reconnu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes  |

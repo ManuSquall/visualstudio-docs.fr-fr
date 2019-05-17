@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388632"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre comment votre code de nuanceur HLSL s'exécute dans les conditions réelles de fonctionnement de votre application.
@@ -55,7 +55,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
 2. Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.
 
     > [!NOTE]
-    >  Ce point d'entrée dans le débogueur HLSL débogue uniquement le premier thread nuanceur pour l'étape correspondante, c'est-à-dire le premier vertex ou le premier pixel qui est traité. Vous pouvez utiliser la fonctionnalité Historique des pixels pour accéder à d'autres threads de ces étapes du nuanceur.
+    > Ce point d'entrée dans le débogueur HLSL débogue uniquement le premier thread nuanceur pour l'étape correspondante, c'est-à-dire le premier vertex ou le premier pixel qui est traité. Vous pouvez utiliser la fonctionnalité Historique des pixels pour accéder à d'autres threads de ces étapes du nuanceur.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Pour démarrer le débogueur HLSL de l'historique des pixels Graphics
 
@@ -68,7 +68,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
     À droite du nuanceur choisi, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.
 
    > [!NOTE]
-   >  Ce point d'entrée dans le débogueur HLSL débogue soit le thread nuanceur de pixels qui correspond à l'appel de dessin choisi, à la primitive, et au pixel que vous avez choisis, soit les threads de nuanceur de sommets dont les résultats sont interpolés par l'appel de dessin, la primitive, et le pixel que vous avez choisis. Dans le cas des nuanceurs de sommets, vous pouvez affiner davantage le point d’entrée à un sommet spécifique en développant les détails du nuanceur de sommets.
+   > Ce point d'entrée dans le débogueur HLSL débogue soit le thread nuanceur de pixels qui correspond à l'appel de dessin choisi, à la primitive, et au pixel que vous avez choisis, soit les threads de nuanceur de sommets dont les résultats sont interpolés par l'appel de dessin, la primitive, et le pixel que vous avez choisis. Dans le cas des nuanceurs de sommets, vous pouvez affiner davantage le point d’entrée à un sommet spécifique en développant les détails du nuanceur de sommets.
 
    Pour obtenir des exemples sur la façon d’utiliser le débogueur HLSL pour déboguer les erreurs de nuanceur, consultez [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées dans la section Voir aussi.
 

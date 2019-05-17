@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e11936c28029fad76dc4a18487eaeb8bab0ee54
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 172ac6a2adc5a5d5a66d9302274d7f657e5fdd12
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400279"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 Récupère le décalage du pointeur de base virtuel.
@@ -39,7 +39,7 @@ HRESULT get_virtualBasePointerOffset ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

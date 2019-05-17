@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675082"
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 2. Accédez au site du fournisseur propriétaire du SDK d’extension non pris en charge et installez la version de celui dont les dépendances sont compatibles avec la version de la plateforme ciblée par votre projet.  
   
     > [!NOTE]
-    >  Pour savoir si un SDK d’extension a des dépendances vis-à-vis d’autres SDK d’extension, redémarrez Visual Studio, créez un projet du Windows Store C#, cliquez avec le bouton droit sur le projet et choisissez **Ajouter une référence**, accédez à l’onglet **Windows** , accédez au sous-onglet **Extensions** , sélectionnez le SDK d’extension et examinez le volet droit du **Gestionnaire de références**. S’il possède des dépendances, elles y sont répertoriées.  
+    > Pour savoir si un SDK d’extension a des dépendances vis-à-vis d’autres SDK d’extension, redémarrez Visual Studio, créez un projet du Windows Store C#, cliquez avec le bouton droit sur le projet et choisissez **Ajouter une référence**, accédez à l’onglet **Windows** , accédez au sous-onglet **Extensions** , sélectionnez le SDK d’extension et examinez le volet droit du **Gestionnaire de références**. S’il possède des dépendances, elles y sont répertoriées.  
   
     > [!IMPORTANT]
-    >  Si votre projet cible Windows 10 et si le SDK d’extension installé au cours de l’étape précédente a une dépendance vis-à-vis de Microsoft Visual C++ Runtime Package, la version de Microsoft Visual C++ Runtime Package compatible avec Windows 10 est v14.0 et est installée avec Visual Studio 2015.  
+    > Si votre projet cible Windows 10 et si le SDK d’extension installé au cours de l’étape précédente a une dépendance vis-à-vis de Microsoft Visual C++ Runtime Package, la version de Microsoft Visual C++ Runtime Package compatible avec Windows 10 est v14.0 et est installée avec Visual Studio 2015.  
   
 3. Si le SDK d’extension que vous avez installé au cours de l’étape précédente a des dépendances vis-à-vis d’autres SDK d’extension, accédez au(x) site(s) du ou des fournisseurs qui possèdent les dépendances et installez les versions de ces dépendances qui sont compatibles avec la version de la plateforme ciblée par votre projet.  
   
@@ -89,12 +89,12 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys sous l’onglet **Projets** ).  
   
 > [!NOTE]
->  Tous les projets contiennent une référence implicite à mscorlib. Les projets Visual Basic contiennent une référence implicite à `Microsoft.VisualBasic`.  
+> Tous les projets contiennent une référence implicite à mscorlib. Les projets Visual Basic contiennent une référence implicite à `Microsoft.VisualBasic`.  
 >   
->  Tous les projets dans Visual Studio contiennent une référence implicite à `System.Core`, même si `System.Core` est supprimé de la liste des références.  
+> Tous les projets dans Visual Studio contiennent une référence implicite à `System.Core`, même si `System.Core` est supprimé de la liste des références.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Références à des composants partagés au moment de l’exécution  
- Au moment de l’exécution, les composants doivent se trouver dans le chemin de sortie du projet ou dans le [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Si le projet contient une référence à un objet qui ne se trouve pas à l’un de ces emplacements, vous devez copier la référence au chemin de sortie du projet quand vous générez ce dernier. La propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indique si cette copie doit être effectuée. Si la valeur est **True**, la référence est copiée dans le répertoire du projet quand vous générez le projet. Si la valeur est **False**, la référence n’est pas copiée.  
+ Au moment de l’exécution, les composants doivent se trouver dans le chemin de sortie du projet ou dans le [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Si le projet contient une référence à un objet qui ne se trouve pas à l’un de ces emplacements, vous devez copier la référence au chemin de sortie du projet quand vous générez ce dernier. La propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indique si cette copie doit être effectuée. Si la valeur est **True**, la référence est copiée dans le répertoire du projet quand vous générez le projet. Si la valeur est **False**, la référence n’est pas copiée.  
   
  Si vous déployez une application qui contient une référence à un composant personnalisé inscrit dans le GAC, ce composant ne sera pas déployé avec l’application, quelle que soit la valeur du paramètre <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> . Dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouviez définir la propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> sur une référence pour vous assurer que l’assembly était bien déployé. À présent, vous devez ajouter manuellement l’assembly au dossier \Bin. Cela permet de placer tout le code personnalisé sous surveillance et de réduire le risque de publication d’un code personnalisé qui ne vous est pas familier.  
   
@@ -111,12 +111,12 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
  Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire bin, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : [Avertissement : impossible de copier la dépendance 'fichier' du projet 'projet' dans le répertoire d’exécution, car elle remplacerait la référence 'fichier'](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.  
+> Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.  
   
 ## <a name="file-references"></a>Références de fichier  
  Les références de fichier sont des références directes à des assemblys qui se trouvent hors du contexte d’un projet Visual Studio. Vous les créez en utilisant l’onglet **Parcourir** de la boîte de dialogue **Gestionnaire de références**. Utilisez une référence de fichier quand vous avez seulement un assembly ou un composant et que vous n’avez pas le projet qui le crée comme sortie.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
- [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Programmation à l’aide d’assemblys](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

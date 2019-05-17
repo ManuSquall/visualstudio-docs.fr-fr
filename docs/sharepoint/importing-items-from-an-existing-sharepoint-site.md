@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444366"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importer des éléments à partir d’un site SharePoint existant
   Le modèle de projet Importer le package de solution SharePoint vous permet de réutiliser des éléments tels que des types de contenu et des champs à partir de sites SharePoint existants dans une nouvelle solution SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Vous pouvez exécuter la plupart des solutions importées sans aucune modification, mais il existe certaines restrictions et complications à prendre en compte, en particulier si vous modifiez des éléments après les avoir importés.
 
 > [!NOTE]
->  Pour importer des flux de travail réutilisables, utilisez le modèle de projet Importer le flux de travail réutilisable. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Directives pour l’importation de flux de travail réutilisables](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Pour importer des flux de travail réutilisables, utilisez le modèle de projet Importer le flux de travail réutilisable. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Directives pour l’importation de flux de travail réutilisables](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Solutions SharePoint prises en charge
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] prend entièrement en charge l’importation de solutions créées dans [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] et [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

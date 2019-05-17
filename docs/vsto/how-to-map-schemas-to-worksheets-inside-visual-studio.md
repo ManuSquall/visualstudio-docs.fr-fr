@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428115"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
   Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "60057171"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.
+> Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Pour mapper un schéma XML à une feuille de calcul Excel dans Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057171"
 3. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. Dans le **XML** de groupe, cliquez sur **Source**.
 

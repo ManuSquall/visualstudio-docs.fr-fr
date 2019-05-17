@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9206c4474b8ca3dc284aa474c645fddc3aecab18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078913"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686724"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
      L’Explorateur doit montrer que trois **acteur** nœuds ayant votre icône.  
   
 > [!NOTE]
->  Si vous avez défini une icône de nœud pour tout élément qui s’affiche dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds seront affichent l’icône par défaut.  
+> Si vous avez défini une icône de nœud pour tout élément qui s’affiche dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds seront affichent l’icône par défaut.  
   
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Modification du nom affiché sur un nœud de l’Explorateur  
  Vous pouvez modifier la façon dont les noms d’éléments de modèle sont affichés dans l’Explorateur de. La procédure suivante montre comment afficher le nom de la **tâche** qui est référencé par une **commentaire** dans le nœud de commentaire.  
@@ -116,4 +116,4 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
      L’Explorateur doit afficher uniquement une **acteurs** nœud et ne doit pas afficher le **commentaires** nœud.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

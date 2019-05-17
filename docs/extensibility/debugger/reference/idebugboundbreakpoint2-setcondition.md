@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dcec65b22c728384fb199eecf461ec61317e348
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 846fc639bb31c3cd4dfa8d31fb31ff0b112336a9
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691681"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614932"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 Définit ou modifie la condition associée à ce point d’arrêt lié.
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `bpCondition`
-
- [in] Une valeur comprise entre le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) énumération qui décrit la condition.
+## <a name="parameters"></a>Paramètres
+`bpCondition`\
+[in] Une valeur comprise entre le [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) énumération qui décrit la condition.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).

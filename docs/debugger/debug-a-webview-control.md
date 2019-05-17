@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402629"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Déboguer un contrôle WebView dans une application UWP
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081760"
 4. (Facultatif) Pour les versions non Express de Visual Studio, désactivez le débogage juste-à-temps en choisissant **Outils > Options > Débogage > Juste-à-temps**, puis en désactivant le débogage juste-à-temps pour le script.
 
     > [!NOTE]
-    >  En désactivant le débogage juste-à-temps, vous pouvez masquer les boîtes de dialogue pour les exceptions non prises en charge qui se produisent sur certaines pages web. Dans Visual Studio Express, le débogage juste-à-temps est toujours désactivé.
+    > En désactivant le débogage juste-à-temps, vous pouvez masquer les boîtes de dialogue pour les exceptions non prises en charge qui se produisent sur certaines pages web. Dans Visual Studio Express, le débogage juste-à-temps est toujours désactivé.
 
 5. Appuyez sur F5 pour démarrer le débogage.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081760"
      ![Cibler la sélection dans la fenêtre de console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.
+    > À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.
 
 6. Afficher et modifier les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [JavaScript Console commands](../debugger/javascript-console-commands.md).
 

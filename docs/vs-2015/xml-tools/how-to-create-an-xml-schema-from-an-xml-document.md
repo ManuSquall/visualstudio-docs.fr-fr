@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a732f0c6a9758de3ebd918559203b13a56d6a0ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697786"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procédure : création d'un schéma XML à partir d'un document XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition
   
   Les schémas créés sont ensuite utilisés pour fournir une fonctionnalité IntelliSense pour le document XML.  
   
-  Pour plus d’informations sur le moteur d’inférence de schéma, consultez [inférence d’un schéma XML](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
+  Pour plus d’informations sur le moteur d’inférence de schéma, consultez [inférence d’un schéma XML](https://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
   
 ### <a name="to-create-an-xml-schema"></a>Pour créer un schéma XML  
   
@@ -42,7 +42,7 @@ L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition
      Les schémas peuvent être enregistrés sur disque, ajoutés à votre projet ou ignorés.  
   
     > [!NOTE]
-    >  Le **Create Schema** commande est également disponible dans le menu contextuel de l’éditeur XML et, sous la **XML** menu.  
+    > Le **Create Schema** commande est également disponible dans le menu contextuel de l’éditeur XML et, sous la **XML** menu.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)

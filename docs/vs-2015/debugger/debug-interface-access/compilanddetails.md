@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c91fbd8a4fc3775272e578df43025bd7052c72ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 34349bf096d8bb98ae4b3de7c7a922b8d28bc4f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702997"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Informations de compiland sont réparties entre les symboles avec un `SymTagComp
 |[IDiaSymbol::get_frontEndMinor](../../debugger/debug-interface-access/idiasymbol-get-frontendminor.md)|`DWORD`|Numéro de version mineure frontal du compilateur.|  
 |[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|`BOOL`|`TRUE` Si cette compiland a des informations de débogage (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|`BOOL`|`TRUE` Si cette compiland contient du code managé (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Si le module a été compilé avec le [/GS (vérification de la sécurité de la mémoire tampon)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Si le module a été compilé avec le [/GS (vérification de la sécurité de la mémoire tampon)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|`BOOL`|`TRUE` Si compiland a été converti à partir du code de langage CIL (Common Intermediate) en code natif.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|`BOOL`|`TRUE` Si les types définis par l’utilisateur (UDT) ont été alignées sur certaines spécifiées des limites de mémoire (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` Si compiland a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
-|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Si compiland a été compilé avec le [/LTCG (Link-time Code Generation)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|`BOOL`|`TRUE` Si compiland a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
+|[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|`BOOL`|`TRUE` Si compiland a été compilé avec le [/LTCG (Link-time Code Generation)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) commutateur de compilateur (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|`BOOL`|TRUE si compiland est un module de langage MSIL (Microsoft Intermediate Language) (uniquement dans DIA SDK 8.0 ou version ultérieure).|  
 |[IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)|`DWORD`|Langage de code source.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbole du module.|  

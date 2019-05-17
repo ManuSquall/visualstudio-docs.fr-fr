@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc99d014c1e31616ebd2a6cc16608a1d1bc741ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee55c7637272da536830f00607719fae9f234b4d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683868"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457565"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Récupère un tableau d’informations du serveur source.
@@ -36,12 +39,12 @@ public int GetSourceServerData(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pDataByteCount`
+## <a name="parameters"></a>Paramètres
+`pDataByteCount`\
 
  [out] Nombre d’octets dans le tableau de données.
 
-`ppData`
+`ppData`\
 
  [out] Référence au tableau de données.
 

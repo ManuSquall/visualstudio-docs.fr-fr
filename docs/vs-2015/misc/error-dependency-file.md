@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7726d615c3495845ffdf73d69ffc7d8fae155272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688279"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Erreur : la dépendance &#39;fichier&#39; dans le projet &#39;projet&#39; ne peut pas être copié dans le répertoire d’exécution, car elle serait en conflit avec une dépendance &#39;fichier&#39;
 Il existe un conflit entre des références, car plusieurs dépendances distinctes qui portent le même nom de fichier sont copiées dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution ne peut pas résoudre le conflit dans la mesure où aucune des dépendances n’est une référence principale.  
@@ -35,7 +35,7 @@ Il existe un conflit entre des références, car plusieurs dépendances distinct
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)   
- [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
- [Assemblys avec nom fort](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Gestion des versions des assemblys](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
+ [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
+ [Assemblys avec nom fort](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Gestion des versions des assemblys](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
  [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)

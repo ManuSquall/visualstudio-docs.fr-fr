@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408464"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Saisie semi-automatique des instructions dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Saisie semi-automatique des instructions sont le processus par lequel le service
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la saisie semi-automatique des instructions, consultez [procédure pas à pas : Affichage de saisie semi-automatique des instructions](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="implementing-statement-completion"></a>Implémentation de saisie semi-automatique des instructions  
  Dans l’éditeur principal, la saisie semi-automatique des instructions Active une interface utilisateur spéciale qui interactive vous permet plus facilement et rapidement écrire du code. Saisie semi-automatique des instructions vous aide à en affichant les objets pertinentes ou des classes lorsqu’ils sont nécessaires, ce qui vous évite d’avoir à mémoriser des éléments spécifiques ou avoir à les rechercher dans une rubrique de référence.  

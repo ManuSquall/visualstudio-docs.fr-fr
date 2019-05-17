@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701265"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
   Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancrage des fenêtres
  Quand vous cliquez sur la barre de titre d'une fenêtre outil ou sur l'onglet de la fenêtre de document et que vous le faites glisser, un repère en forme de losange apparaît. Au cours de l'opération de glissement, quand le curseur de la souris se trouve sur l'une des flèches dans le losange, une zone grisée apparaît pour vous montrer où la fenêtre sera ancrée si vous relâchez le bouton de la souris à ce moment-là.
@@ -106,16 +106,16 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
  ![Masquer automatiquement](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Pour indiquer si la fonctionnalité Masquer automatiquement agit sur chaque fenêtre Outil ou sur des groupes de fenêtres ancrées, sélectionnez ou désélectionnez **Le bouton Masquer automatiquement n'affecte que la fenêtre Outil active** dans la boîte de dialogue **Options** . Pour plus d'informations, consultez [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
+> Pour indiquer si la fonctionnalité Masquer automatiquement agit sur chaque fenêtre Outil ou sur des groupes de fenêtres ancrées, sélectionnez ou désélectionnez **Le bouton Masquer automatiquement n'affecte que la fenêtre Outil active** dans la boîte de dialogue **Options** . Pour plus d'informations, consultez [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  Les fenêtres Outil automatiquement masquées peuvent s'afficher temporairement quand la fenêtre a le focus. Pour masquer à nouveau la fenêtre, sélectionnez un élément qui se trouve en dehors de la fenêtre active. Quand la fenêtre perd le focus, elle disparaît à nouveau.
+> Les fenêtres Outil automatiquement masquées peuvent s'afficher temporairement quand la fenêtre a le focus. Pour masquer à nouveau la fenêtre, sélectionnez un élément qui se trouve en dehors de la fenêtre active. Quand la fenêtre perd le focus, elle disparaît à nouveau.
 
 ### <a name="specifying-a-monitor"></a>Spécification d'un écran
  Si vous possédez un deuxième écran et que votre système d'exploitation le prend en charge, vous pouvez choisir celui qui affiche une fenêtre. Vous pouvez même regrouper plusieurs fenêtres en « raftings » sur d'autres écrans.
 
 > [!TIP]
->  Vous pouvez créer plusieurs instances de l' **Explorateur de solutions** et les déplacer dans un autre écran. Cliquez avec le bouton droit sur la fenêtre et choisissez **Nouvelle vue Explorateur de solutions**. Vous pouvez faire revenir toutes les fenêtres sur l'écran d'origine en effectuant un double-clic tout en appuyant sur la touche Ctrl.
+> Vous pouvez créer plusieurs instances de l' **Explorateur de solutions** et les déplacer dans un autre écran. Cliquez avec le bouton droit sur la fenêtre et choisissez **Nouvelle vue Explorateur de solutions**. Vous pouvez faire revenir toutes les fenêtres sur l'écran d'origine en effectuant un double-clic tout en appuyant sur la touche Ctrl.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Rétablir les dispositions de fenêtres, changement de nom et basculement
  Vous pouvez faire revenir l'IDE à la disposition d'origine des fenêtres pour votre collection de paramètres à l'aide de la commande **Rétablir la disposition de fenêtre** . Quand vous exécutez cette commande, les actions suivantes se produisent :
@@ -182,4 +182,4 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 |[Types de fenêtres](../misc/kinds-of-windows.md)|Discute les différences entre fenêtres Outil et les fenêtres de document dans l'IDE.|
 |[Guide pratique pour Organiser et ancrer des fenêtres](../misc/how-to-arrange-and-dock-windows.md)|Explique comment ancrer les fenêtres, les masquer automatiquement et les disposer en mosaïque et également comment réinitialiser leur disposition.|
 |[Guide pratique pour se déplacer dans l’IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Explique comment passer d'une fenêtre active à l'autre dans l'IDE, par ordre d'utilisation. Explique également comment passer à des documents spécifiques.|
-|[Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contient des informations sur les combinaisons de paramètres et sur l'utilisation de ces paramètres pour la disposition des fenêtres, les raccourcis clavier et autres éléments de l'IDE.|
+|[Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contient des informations sur les combinaisons de paramètres et sur l'utilisation de ces paramètres pour la disposition des fenêtres, les raccourcis clavier et autres éléments de l'IDE.|

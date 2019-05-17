@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434649"
 ---
 # <a name="sccget-function"></a>Fonction SccGet
 Cette fonction récupère une copie d’un ou plusieurs fichiers pour l’affichage et la compilation, mais ne pas pour la modification. Dans la plupart des systèmes, les fichiers sont marqués comme étant en lecture seule.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  Le `SCC_GET_ALL` indicateur peut être combiné avec le `SCC_GET_RECURSIVE` indicateur pour récupérer tous les fichiers dans les répertoires donnés et tous les sous-répertoires.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` ne doit jamais être passé sans `SCC_GET_ALL`. En outre, notez que si répertoires *C:\A* et *C:\A\B* sont passés sur une opération get récursive, *C:\A\B* et tous ses sous-répertoires sont récupérées en fait deux fois. Il incombe de l’IDE, et pas la source de contrôle du plug-in, pour vous assurer que les doublons telle que celle-ci sont conservées hors du tableau.
+> `SCC_GET_RECURSIVE` ne doit jamais être passé sans `SCC_GET_ALL`. En outre, notez que si répertoires *C:\A* et *C:\A\B* sont passés sur une opération get récursive, *C:\A\B* et tous ses sous-répertoires sont récupérées en fait deux fois. Il incombe de l’IDE, et pas la source de contrôle du plug-in, pour vous assurer que les doublons telle que celle-ci sont conservées hors du tableau.
 
  Enfin, même si un contrôle de source plug-in spécifié le `SCC_CAP_GET_NOUI` indicateur lors de l’initialisation, indiquant alors qu’il n’a pas une interface utilisateur pour une commande Get, cette fonction peut toujours être appelée par l’IDE pour récupérer des fichiers. L’indicateur signifie simplement que l’IDE n’affiche pas d’un élément de menu Get et que le plug-in n’est pas supposé fournir toute interface utilisateur.
 

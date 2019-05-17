@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92266de7c372fc6bcf7d0775ebb5ab01ea2e0308
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401345"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Récupère la variété d’un type défini par l’utilisateur (UDT).
@@ -39,7 +39,7 @@ HRESULT get_udtKind ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

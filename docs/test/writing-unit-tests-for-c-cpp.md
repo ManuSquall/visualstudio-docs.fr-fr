@@ -1,18 +1,19 @@
 ---
 title: Écrire des tests unitaires pour C/C++
-ms.date: 10/09/2018
+description: Écrivez des tests unitaires C++ dans Visual Studio avec différents frameworks de test, notamment CTest, Boost.Test et Google Test.
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223050"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461592"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -30,11 +31,11 @@ Visual Studio inclut ces frameworks de test C++, aucun téléchargement supplém
 
 En plus des frameworks installés, vous pouvez écrire votre propre adaptateur de test pour n’importe quel framework que vous voulez utiliser dans Visual Studio. Un adaptateur de test peut intégrer des tests unitaires à la fenêtre de **l’Explorateur de tests**. Plusieurs adaptateurs de tiers sont disponibles sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 versions 15.7 et ultérieures (Professional et Enterprise)**
+**Visual Studio 2017 et ultérieur (Professional et Enterprise)**
 
 Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017 versions 15.5 et ultérieures**
+**Visual Studio 2017 et ultérieur (toutes les éditions)**
 
 - **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++**. Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d’informations, consultez [Guide pratique pour utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -50,17 +51,35 @@ Vous pouvez télécharger les extensions de l’adaptateur Google Test et de l�
 
 Les sections suivantes décrivent les étapes de base pour vous familiariser avec les tests unitaires C++. La configuration de base est très similaire pour les frameworks Microsoft et Google Test. Boost.Test nécessite la création manuelle d’un projet de test.
 
-### <a name="create-a-test-project"></a>Créer un projet de test
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Créer un projet de test dans Visual Studio 2019
+
+Vous définissez et vous exécutez des tests au sein d’un ou plusieurs projets de test qui se trouvent dans la même solution que le code que vous voulez tester. Pour ajouter un nouveau projet de test à une solution existante, cliquez avec le bouton droit sur le nœud de la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**. Définissez **Langage** sur C++ et tapez « test » dans la zone de recherche. L’illustration suivante montre les projets de test qui sont disponibles quand les charges de travail **Développement Desktop en C++** et **Développement UWP** sont installées :
+
+![Projets de test C++ dans Visual Studio 2019](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Créer un projet de test dans Visual Studio 2017
 
 Vous définissez et vous exécutez des tests au sein d’un ou plusieurs projets de test qui se trouvent dans la même solution que le code que vous voulez tester. Pour ajouter un nouveau projet de test à une solution existante, cliquez avec le bouton droit sur le nœud de la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**. Ensuite, dans le volet gauche, choisissez **Test Visual C++** et choisissez un des types de projet dans le volet central. L’illustration suivante montre les projets de test qui sont disponibles quand la charge de travail **Développement Desktop en C++** est installée :
 
 ![Projets de test C++](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Créer des références à d’autres projets de la solution
 
 Pour permettre à votre code de test d’accéder aux fonctions du projet à tester, ajoutez une référence au projet dans votre projet de test. Cliquez avec le bouton droit sur le nœud du projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** >  **Référence**. Ensuite, dans la boîte de dialogue, choisissez le ou les projets que vous voulez tester.
 
 ![Ajouter une référence](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>Lier à des fichiers objets ou bibliothèques
+
+Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
 
 ### <a name="add-include-directives-for-header-files"></a>Ajouter des directives #include pour les fichiers d’en-tête
 
@@ -117,7 +136,7 @@ Pour connaître les bonnes pratiques relatives aux tests unitaires, consultez [C
 
 ## <a name="use-codelens"></a>Utiliser CodeLens
 
-**Visual Studio 2017 versions 15.7 et ultérieures (éditions Professional and Enterprise uniquement)**
+**Visual Studio 2017 et ultérieur (éditions Professional et Enterprise)**
 
 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
 

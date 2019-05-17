@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418425"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importantes pour les filtres du service de langage
 Si vous souhaitez créer un filtre de service de langage complet, envisagez de gérer les commandes suivantes. La liste complète des identificateurs de commande est définie dans le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> énumération pour le code managé et l’en-tête Stdidcmd.h de fichier pour unmanaged [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] code. Vous pouvez trouver le fichier Stdidcmd.h dans *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
@@ -24,7 +24,7 @@ Si vous souhaitez créer un filtre de service de langage complet, envisagez de g
 ## <a name="commands-to-handle"></a>Commandes pour un Handle
 
 > [!NOTE]
->  Il n’est pas obligatoire pour filtrer toutes les commandes dans le tableau suivant.
+> Il n’est pas obligatoire pour filtrer toutes les commandes dans le tableau suivant.
 
 |Commande|Description|
 |-------------|-----------------|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433017"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 Une fois que vous avez terminé de développer votre extension, vous pouvez l’installer sur d’autres ordinateurs, partager avec vos amis et collègues ou publiez-la sur la place de marché Visual Studio. Dans cette section, nous vous expliquons tout ce que vous devez effectuer pour publier et mettre à jour votre extension : utilisation des fichiers .vsix, publication, la localisation et la mise à jour.
@@ -53,8 +53,8 @@ Une fois que vous avez terminé de développer votre extension, vous pouvez l’
 |[Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Décrit les composants d’un package VSIX.|
 |[Modèle de projet VSIX](../extensibility/vsix-project-template.md)|Fournit des instructions détaillées sur la façon d’empaqueter et publier une extension.|
 |[Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)|Explique comment fournir un texte localisé pour le processus d’installation à l’aide de fichiers extension.vsixlangpack.|
-|[Guide pratique pour Mettre à jour une Extension](../extensibility/how-to-update-a-visual-studio-extension.md)|Décrit comment mettre à jour une extension sur votre système et comment déployer une mise à jour à une extension Visual Studio.|
-|[Guide pratique pour Ajouter une dépendance à un Package VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Décrit comment ajouter des références aux packages de déploiement VSIX.|
+|[Guide pratique pour mettre à jour une extension](../extensibility/how-to-update-a-visual-studio-extension.md)|Décrit comment mettre à jour une extension sur votre système et comment déployer une mise à jour à une extension Visual Studio.|
+|[Guide pratique pour ajouter une dépendance à un package VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Décrit comment ajouter des références aux packages de déploiement VSIX.|
 |[Préparation d’extensions pour le déploiement de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explique comment déployer votre extension avec le programme d’installation de Windows.|
 |[Signature de packages VSIX](../extensibility/signing-vsix-packages.md)|Explique comment signer des packages VSIX.|
 |[Galeries privées](../extensibility/private-galleries.md)|Explique comment créer des galeries privées pour les extensions.|

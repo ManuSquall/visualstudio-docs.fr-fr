@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6fb1ab2addb58f9b28e1185fd55f9fdf63f5600
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 06b96327205369d0280a865b632801edbf199745
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407865"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; , élément (déploiement ClickOnce)
 Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter.
 
 > [!NOTE]
->  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) ne prend pas en charge la `compatibleFrameworks` élément lors de l’enregistrement d’un manifeste d’application qui a déjà été signé avec un certificat à l’aide [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). À la place, vous devez utiliser [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) ne prend pas en charge la `compatibleFrameworks` élément lors de l’enregistrement d’un manifeste d’application qui a déjà été signé avec un certificat à l’aide [ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). À la place, vous devez utiliser [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,7 +58,7 @@ Identifie les versions du .NET Framework pour lesquelles cette application peut 
 |`profile`|Obligatoire. Spécifie le profil du .NET Framework cible.|
 |`supportedRuntime`|Obligatoire. Spécifie le numéro de version du runtime associé à la cible de .NET Framework.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="example"></a>Exemple
  Le code suivant montre l’exemple un `compatibleFrameworks` élément dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Ce déploiement peut s’exécuter sur le [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Il peut également s’exécuter le [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] , car il est un sur-ensemble de la [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].

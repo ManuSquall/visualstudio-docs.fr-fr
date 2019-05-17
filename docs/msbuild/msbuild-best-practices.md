@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4390632dc9c1ce0cb47d5733145739719ae87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ad0bd131251259b375a4300807825205da2c6ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931493"
 ---
 # <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
 Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de scripts MSBuild :
 
--   Les valeurs de propriété par défaut sont mieux gérées en utilisant l'attribut `Condition` plutôt qu'en déclarant une propriété dont la valeur par défaut peut être substituée sur la ligne de commande. Par exemple, utilisez
+- Les valeurs de propriété par défaut sont mieux gérées en utilisant l'attribut `Condition` plutôt qu'en déclarant une propriété dont la valeur par défaut peut être substituée sur la ligne de commande. Par exemple, utilisez
 
 ```xml
 <MyProperty Condition="'$(MyProperty)' == ''">
@@ -29,7 +29,7 @@ Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de sc
 </MyProperty>
 ```
 
--   Évitez les caractères génériques quand vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. Les erreurs susceptibles de se produire quand vous ajoutez ou supprimez des fichiers sont ainsi plus faciles à localiser.
+- Évitez les caractères génériques quand vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. Les erreurs susceptibles de se produire quand vous ajoutez ou supprimez des fichiers sont ainsi plus faciles à localiser.
 
 ## <a name="see-also"></a>Voir aussi
 - [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

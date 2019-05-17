@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975709"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
 
@@ -42,44 +42,44 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, régénérer ou nettoyer une solution entière
 
-1.  Dans l’**Explorateur de solutions**, choisissez ou ouvrez la solution.
+1. Dans l’**Explorateur de solutions**, choisissez ou ouvrez la solution.
 
-2.  Dans la barre de menus, choisissez **Générer**, puis choisissez l’une des commandes suivantes :
+2. Dans la barre de menus, choisissez **Générer**, puis choisissez l’une des commandes suivantes :
 
-    -   Choisissez **Générer** ou **Générer la Solution** pour compiler uniquement les fichiers de projet et les composants qui ont été modifiés depuis la dernière génération.
+    - Choisissez **Générer** ou **Générer la Solution** pour compiler uniquement les fichiers de projet et les composants qui ont été modifiés depuis la dernière génération.
 
         > [!NOTE]
         > La commande **Générer** devient **Générer la Solution** quand une solution contient plusieurs projets.
 
-    -   Choisissez **Régénérer la Solution** pour « nettoyer » la solution, puis générer tous les fichiers projet et les composants.
+    - Choisissez **Régénérer la Solution** pour « nettoyer » la solution, puis générer tous les fichiers projet et les composants.
 
-    -   Choisissez **Nettoyer la solution** pour supprimer tous les fichiers intermédiaires et de sortie. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées avec uniquement les fichiers projet et les composant restants.
+    - Choisissez **Nettoyer la solution** pour supprimer tous les fichiers intermédiaires et de sortie. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées avec uniquement les fichiers projet et les composant restants.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Pour générer ou régénérer un projet unique
 
-1.  Dans l’**Explorateur de solutions**, choisissez ou ouvrez le projet.
+1. Dans l’**Explorateur de solutions**, choisissez ou ouvrez le projet.
 
-2.  Dans la barre de menus, choisissez **Générer**, puis **Générer** *ProjectName* ou **Régénérer** *ProjectName*.
+2. Dans la barre de menus, choisissez **Générer**, puis **Générer** *ProjectName* ou **Régénérer** *ProjectName*.
 
-    -   Choisissez **Générer** *ProjectName* pour générer uniquement les composants qui ont été modifiés depuis la dernière génération du projet.
+    - Choisissez **Générer** *ProjectName* pour générer uniquement les composants qui ont été modifiés depuis la dernière génération du projet.
 
-    -   Choisissez **Régénérer** *ProjectName* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.
+    - Choisissez **Régénérer** *ProjectName* pour « nettoyer » le projet, puis générer les fichiers projet et tous les composants du projet.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances
 
-1.  Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
-2.  Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
+2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
 
      La boîte de dialogue **Générer et exécuter** > **Projets et solutions** > **Options** s’ouvre.
 
-3.  Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.
+3. Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.
 
      Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :
 
-    -   Dans la barre de menus, choisissez **Déboguer** > **Démarrer** (**F5**).
+    - Dans la barre de menus, choisissez **Déboguer** > **Démarrer** (**F5**).
 
-    -   Dans la barre de menus, choisissez **Générer** > **Générer la solution** (**Ctrl**+**Maj**+**B**).
+    - Dans la barre de menus, choisissez **Générer** > **Générer la solution** (**Ctrl**+**Maj**+**B**).
 
     Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444351"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localiser des solutions SharePoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639919"
  Pour localiser une solution, vous supprimez des chaînes codées en dur à partir du code et les rendez abstraites dans des fichiers de ressources. Un fichier de ressources est un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-en fonction du fichier avec un *.resx* extension. Le fichier de ressources contient les versions traduites des chaînes utilisées dans votre solution. Pour plus d’informations, consultez [ressources dans les Applications](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Ajouter des ressources de type chaîne uniquement aux fichiers de ressources de solution SharePoint. Bien que l’éditeur de ressources permet d’ajouter des ressources, des ressources ne déploient pas sur SharePoint.
+> Ajouter des ressources de type chaîne uniquement aux fichiers de ressources de solution SharePoint. Bien que l’éditeur de ressources permet d’ajouter des ressources, des ressources ne déploient pas sur SharePoint.
 
 ## <a name="resource-files"></a>Fichiers de ressources
  Il existe trois types de fichiers de ressources : par défaut, indépendant de la langue et spécifique à la langue.
@@ -76,7 +76,7 @@ $Resources:String ID
  Définir le **Type de déploiement** propriété de chaque fichier de ressources à **AppGlobalResource**. Cela entraîne des fichiers de ressources à déployer dans le dossier App_GlobalResources, où ils sont disponibles pour toutes les pages ASPX et les contrôles dans la solution. Le dossier App_GlobalResources se trouve dans C:\inetpub\wwwroot\wss\VirtualDirectories\\< numéro de port\>\App_GlobalResources.
 
 > [!NOTE]
->  Si vous utilisez des fichiers de ressources non globales, déplacez-les vers le dossier d’éléments de projet pour activer la propriété Type de déploiement et autres propriétés spécifiques à SharePoint.
+> Si vous utilisez des fichiers de ressources non globales, déplacez-les vers le dossier d’éléments de projet pour activer la propriété Type de déploiement et autres propriétés spécifiques à SharePoint.
 
  Fichiers de ressources de balisage ASPX peuvent également être utilisés pour localiser le code. Si vous utilisez les ressources pour localiser le code en plus du balisage ASPX, conservez le paramètre de propriété Action de génération de chaque fichier en tant que ressource incorporée afin que la ressource à compiler dans un assembly satellite. Toutefois, si vous utilisez les fichiers de ressources uniquement pour localiser le balisage, vous pouvez éventuellement modifier Action de génération au contenu pour empêcher que le fichier qui est compilé dans l’assembly principal de l’application.
 

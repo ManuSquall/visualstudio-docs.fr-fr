@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108358"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699688"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Les différentes méthodes disponibles sont les suivantes :  
   
-- [Extension de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d'autres fonctionnalités dans la même extension VSIX.  
+- [Extension de Visual Studio (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d'autres fonctionnalités dans la même extension VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d'autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.  
   
@@ -34,7 +34,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   Vous devez utiliser l'une de ces méthodes uniquement si vous voulez transformer votre modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si vous employez un hôte personnalisé dans votre propre application, celui-ci est chargé de rechercher les processeurs de directive pour chaque directive.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Déploiement d'un processeur de directive dans une extension VSIX  
- Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Visual Studio (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Vous devez vérifier que les deux éléments suivants figurent dans le fichier .vsix :  
   
@@ -148,7 +148,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
 ```  
   
 > [!NOTE]
->  Cet attribut est placé sur la classe du package, et non pas sur la classe du processeur de directive.  
+> Cet attribut est placé sur la classe du package, et non pas sur la classe du processeur de directive.  
   
  Le fichier .pkgdef sera généré en même temps que le projet. Lorsque vous installerez le VSPackage, le fichier .pkgdef inscrira le processeur de directive.  
   
@@ -160,7 +160,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.  
   
 > [!CAUTION]
->  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
+> Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre  
   

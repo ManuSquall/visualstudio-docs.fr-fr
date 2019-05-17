@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b6c5dcbd3601a6075097a44d2cd5dd625b4a87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799497"
 ---
 # <a name="symbols-element"></a>Élément Symbols
 Définit le GUID et ID qui sont utilisés par d’autres éléments VSCT. Du code non managé, ces informations proviennent généralement des fichiers d’en-tête qui sont spécifiées par [élément Extern](../extensibility/extern-element.md). Le code managé utilise les éléments enfants de l’élément de symboles pour définir ces informations.

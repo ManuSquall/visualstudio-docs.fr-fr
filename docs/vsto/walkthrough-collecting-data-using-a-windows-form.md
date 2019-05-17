@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438589"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procédure pas à pas : Collecter des données à l’aide d’un formulaire Windows
   Cette procédure pas à pas montre comment ouvrir un Windows Form à partir d’une personnalisation au niveau du document pour Microsoft Office Excel, recueillir des informations auprès de l’utilisateur et écrire ces informations dans une cellule de feuille de calcul.
@@ -37,7 +37,7 @@ ms.locfileid: "60116132"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet
  La première étape consiste à créer un projet de classeur Excel.
@@ -91,7 +91,7 @@ ms.locfileid: "60116132"
 2. Dans le gestionnaire d’événements <xref:Microsoft.Office.Tools.Excel.Workbook.Open> de `ThisWorkbook`, ajoutez le code suivant pour déclarer une variable pour le formulaire `GetInputString` puis afficher le formulaire.
 
    > [!NOTE]
-   >  En C#, vous devez ajouter un gestionnaire d’événements comme indiqué dans l’événement <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+   > En C#, vous devez ajouter un gestionnaire d’événements comme indiqué dans l’événement <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]

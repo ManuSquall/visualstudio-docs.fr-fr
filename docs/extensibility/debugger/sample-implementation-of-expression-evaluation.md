@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95d89340d41b79339b5501092919dccad2005570
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420816"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemple d’implémentation de l’évaluation d’expression
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [évaluateur d’expression managé exemple](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [évaluateur d’expression managé exemple](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Pour un **espion** expression de la fenêtre, les appels de Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour produire un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. `IDebugExpressionContext2::ParseText` instancie un évaluateur d’expression (EE) et appelle [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour obtenir un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet.
 
@@ -34,7 +34,7 @@ ms.locfileid: "60090539"
 3. Retourne le `IDebugParsedExpression` de l’interface à partir de la `CParsedExpression` objet.
 
 > [!NOTE]
->  Dans les exemples qui suivent et dans l’exemple MyCEE, l’évaluateur d’expression ne sépare pas l’analyse de l’évaluation.
+> Dans les exemples qui suivent et dans l’exemple MyCEE, l’évaluateur d’expression ne sépare pas l’analyse de l’évaluation.
 
 ## <a name="managed-code"></a>Code managé
  Le code suivant illustre une implémentation de `IDebugExpressionEvaluator::Parse` dans du code managé. Cette version de la méthode diffère de l’analyse à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) comme le code pour l’analyse évalue également en même temps (voir [évaluer une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)).

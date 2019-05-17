@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705201"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223960"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Cette méthode crée un énumérateur pour les espaces de noms associés à l’adresse de débogage.
@@ -38,12 +41,12 @@ int GetNamespacesUsedAtAddress(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pAddress`
+## <a name="parameters"></a>Paramètres
+ `pAddress`\
 
  [in] L’adresse de débogage.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les espaces de noms.
 

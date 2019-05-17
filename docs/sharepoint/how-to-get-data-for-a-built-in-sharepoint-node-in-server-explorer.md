@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813734"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Procédure : Obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs
   Pour chaque nœud SharePoint intégré dans **Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent que le nœud représente. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

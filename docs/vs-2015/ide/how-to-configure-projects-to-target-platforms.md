@@ -18,17 +18,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4cba42203cb5d42e2518d2f1ead7fb998d9b6425
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680641"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets afin de cibler des plateformes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge des plateformes 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Applications 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge des plateformes 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Ciblage de plateformes avec le Gestionnaire de configurations  
  Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nouvelle plateforme à cibler avec votre projet. Si vous sélectionnez l'une des plateformes incluses avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les propriétés de votre projet sont modifiées afin de générer votre projet pour la plateforme sélectionnée.  
@@ -46,7 +46,7 @@ ms.locfileid: "60084919"
    2. Dans la liste **Tapez ou sélectionnez la nouvelle plateforme**, choisissez **x64**.  
   
        > [!NOTE]
-       >  Si vous affectez un nouveau nom à votre configuration, vous devrez peut-être modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme correcte.  
+       > Si vous affectez un nouveau nom à votre configuration, vous devrez peut-être modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme correcte.  
   
    3. Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.  
   
@@ -57,14 +57,14 @@ ms.locfileid: "60084919"
   
  L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d'informations, consultez les liens suivants :   
   
-- Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consultez [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consultez [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
 - Pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], consultez [Générer, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
-- Pour les projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consultez [/clr (Compilation pour le Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Pour les projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consultez [/clr (Compilation pour le Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des plateformes de générations](../ide/understanding-build-platforms.md)   
- [/platform (Options du compilateur C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
- [Applications 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [/platform (Options du compilateur C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
+ [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Prise en charge de l’IDE de Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)

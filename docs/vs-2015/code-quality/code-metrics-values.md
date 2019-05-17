@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437102"
 ---
 # <a name="code-metrics-values"></a>Valeurs de la métrique du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La métrique du code est un jeu de mesures de logiciel qui fournit aux développ
 - **Complexité cyclomatique** – mesure la complexité structurelle du code. Il est créé en calculant le nombre de chemins de code différents dans le flux du programme. Un programme qui a le flux de contrôle complexe nécessitera plus de tests pour obtenir la couverture du code qui fonctionne bien et sera moins facile à gérer.  
   
     > [!NOTE]
-    >  Dans certains cas, le calcul de la complexité cyclomatique pour une méthode dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] diffère des versions antérieures. Pour plus d’informations, consultez la section « » modifications dans Visual Studio 2010 code complexité calculs » de [résolution des problèmes de métriques de Code](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > Dans certains cas, le calcul de la complexité cyclomatique pour une méthode dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] diffère des versions antérieures. Pour plus d’informations, consultez la section « » modifications dans Visual Studio 2010 code complexité calculs » de [résolution des problèmes de métriques de Code](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Profondeur d’héritage** – indique le nombre de définitions de classe qui s’étendent à la racine de la hiérarchie de classes. Plus la hiérarchie est plus difficile qu’il peut être de comprendre où des méthodes et les champs sont définis ou / et redéfini.  
   

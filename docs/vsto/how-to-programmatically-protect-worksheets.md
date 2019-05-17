@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438814"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procédure : Protéger des feuilles de calcul par programmation
   La fonctionnalité de protection de Microsoft Office Excel permet d’empêcher les utilisateurs et le code de modifier des objets dans une feuille de calcul. Par défaut, toutes les cellules sont verrouillées une fois que vous avez activé la protection.
@@ -30,7 +30,7 @@ ms.locfileid: "60062215"
  Dans les personnalisations au niveau du document, vous pouvez protéger les feuilles de calcul à l'aide du Concepteur Excel. Vous pouvez également protéger une feuille de calcul par programmation au moment de l'exécution dans n'importe quel type de projet.
 
 > [!NOTE]
->  Vous ne pouvez pas ajouter de contrôles Windows Forms aux zones protégées d'une feuille de calcul.
+> Vous ne pouvez pas ajouter de contrôles Windows Forms aux zones protégées d'une feuille de calcul.
 
 ## <a name="use-the-designer"></a>Utiliser le Concepteur
 

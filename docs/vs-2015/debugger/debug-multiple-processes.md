@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434105"
 ---
 # <a name="debug-multiple-processes"></a>Déboguer plusieurs processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
 - [Démarrer le débogage de plusieurs processus dans une solution Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [modifier le projet de démarrage](#BKMK_Change_the_startup_project) • [démarrer un projet spécifique dans une solution](#BKMK_Start_a_specific_project_in_a_solution) • [démarrer plusieurs projets dans un solution](#BKMK_Start_multiple_projects_in_a_solution) • [attacher à un processus](#BKMK_Attach_to_a_process) • [démarrer automatiquement un processus dans le débogueur](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Le débogueur n'effectue pas un attachement automatique à un processus enfant démarré par un processus débogué, même si le projet enfant se trouve dans la même solution. Pour déboguer un processus enfant :  
+> Le débogueur n'effectue pas un attachement automatique à un processus enfant démarré par un processus débogué, même si le projet enfant se trouve dans la même solution. Pour déboguer un processus enfant :  
 > 
 > - Effectuez un attachement au processus enfant après son démarrage.  
 > 
@@ -166,7 +166,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Commandes Arrêter, Exécuter pas à pas et Continuer  
   
 > [!NOTE]
->  Par défaut, les commandes de débogage break, continue et step affectent tous les processus en cours de débogage. Pour modifier ce comportement, consultez [configurer le comportement d’exécution de plusieurs processus](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Par défaut, les commandes de débogage break, continue et step affectent tous les processus en cours de débogage. Pour modifier ce comportement, consultez [configurer le comportement d’exécution de plusieurs processus](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Voici comment démarrer les processus de débogage, basculer d'un processus à u
   Par exemple, si vous démarrez le débogage d’un processus à partir d’une solution Visual Studio, attachez à un autre processus est déjà en cours d’exécution, puis choisissez **arrêter le débogage**, la session de débogage se termine, le processus qui a été démarré dans Visual Studio se termine, tandis que le processus que vous avez attaché est laissé en cours d’exécution. Vous pouvez utiliser les procédures suivantes pour contrôler la façon dont vous arrêtez le débogage.  
   
 > [!NOTE]
->  Le **arrêter tous les processus lorsqu’un processus s’arrête** option n’affecte pas l’arrêt de débogage ou l’arrêt et détachement des processus.  
+> Le **arrêter tous les processus lorsqu’un processus s’arrête** option n’affecte pas l’arrêt de débogage ou l’arrêt et détachement des processus.  
   
  **Pour modifier comment arrêter le débogage affecte un processus individuel**  
   

@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823039"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -54,12 +54,12 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |-|-|
 |Erreurs|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
-|Requêtes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
+|Demandes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
 |Trace SQL|Affiche les résultats du traçage SQL. Cette table n'est disponible qu'à l'issue d'un test de charge et uniquement si le traçage SQL a été utilisé pendant le test. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) dans cette rubrique.|
 |Tests|Affiche des détails relatifs aux tests exécutés pendant un test de charge. Pour plus d’informations, consultez [Table Tests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) dans cette rubrique.|
 |Seuils|Affiche une liste des violations de règles de seuil qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Analyse des violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md).|
 |Transactions|Affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Pour plus d’informations, consultez [Table Transactions](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) dans cette rubrique.|
-|Agents|S’affiche uniquement si votre test de charge utilise un contrôleur de test et des agents de test. Affiche une liste des agents utilisés pendant la série de tests de charge. Le tableau Agents indique le nombre de requêtes testées par l'agent et, parmi ces requêtes, le nombre d'échecs. En outre, le tableau Agents indique le nombre de tests que l'agent a effectués dans la combinaison de tests pour le test de charge et le nombre d'échecs.|
+|Agents|S'affiche uniquement si votre test de charge utilise un contrôleur de test et des agents de test. Affiche une liste des agents utilisés pendant la série de tests de charge. Le tableau Agents indique le nombre de requêtes testées par l'agent et, parmi ces requêtes, le nombre d'échecs. En outre, le tableau Agents indique le nombre de tests que l'agent a effectués dans la combinaison de tests pour le test de charge et le nombre d'échecs.|
 |Détails du test|Affiche des détails des tests inclus dans la combinaison de tests pour le test de charge. Les détails incluent le nom du test, le scénario du test, l'heure de démarrage du test, la durée d'exécution du test et le résultat de test qui indique si le test a réussi ou a échoué. En cas d’échec du test, un lien est fourni dans la colonne **Détails**. Vous pouvez cliquer sur le lien pour accéder à l'éditeur de test de performances Web avec la requête ayant échoué en surbrillance.|
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
@@ -124,10 +124,10 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |**Scénario**|Nom du scénario.|Oui|
 |**Test**|Nom du test.|Oui|
 |**Total**|Nombre total de transactions émises pendant la série de tests de charge.|Oui|
-|**Temps de transaction**|Durée d’exécution de la transaction pendant une série de tests de charge. Dans le cas des tests de performances web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
-|**Temps de réponse**|Temps de réponse de la transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
+|**Temps de transaction**|Durée d'exécution de la transaction pendant une série de tests de charge. Dans le cas des tests de performances web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
+|**Temps de réponse**|Temps de réponse de la transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse moyen**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
-|**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
+|**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse médian**|Cela n'inclut pas les temps de réflexion.|Non|
@@ -165,7 +165,7 @@ La table **Erreurs du test de charge** contient les colonnes suivantes :
 |Colonne|Description|
 |-|-|
 |**Heure**|Heure à laquelle l'erreur s'est produite lors du test de charge.|
-|**Agent**|Nom de l'ordinateur agent sur lequel l'erreur s'est produite. C’est important lorsque vous exécutez des tests de charge à l’aide de contrôleurs de test et des agents de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|
+|**Agent**|Nom de l'ordinateur agent sur lequel l'erreur s'est produite. C'est important lorsque vous exécutez des tests de charge à l'aide de contrôleurs de test et des agents de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nom du test de performances web dans lequel l’erreur s’est produite.|
 |**Scénario**|Nom du scénario dans lequel l'erreur s'est produite.|
 |**Requête**|URL de la requête dans laquelle l'erreur s'est produite.|
@@ -234,7 +234,7 @@ Le mode table vous permet de consulter jusqu'à quatre tables à la fois sans qu
 
     - **Quatre panneaux horizontaux**
 
-3. Pour passer d’une table à une autre, utilisez, dans chaque panneau, la liste déroulante située au-dessus de la grille des tables.
+3. Pour passer d'une table à une autre, utilisez, dans chaque panneau, la liste déroulante située au-dessus de la grille des tables.
 
     > [!NOTE]
     > Vous ne pouvez pas afficher la même table dans plusieurs panneaux. Si vous modifiez la table affichée dans un panneau en une table déjà affichée dans un autre panneau, les tables basculent de panneaux.

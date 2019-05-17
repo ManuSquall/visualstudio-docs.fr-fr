@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9662a504232c70662e40db54e3eda27aa4abe835
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938990"
 ---
 # <a name="task-base-class"></a>Classe de base Task
 De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Utilities.Task>. Cette classe ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.

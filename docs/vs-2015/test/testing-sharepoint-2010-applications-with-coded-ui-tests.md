@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 973d5f6e78449756f96e75407655df7c74c391bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094552"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705930"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
  ![Composants WebPart SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l' [Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l' [Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Inclusion du test des contrôles Office 2010 dans votre application SharePoint  
  Pour activer l'automatisation de certains composants WebPart Office 2010 dans votre application SharePoint, vous devez apporter des modifications de code mineures.  
   
 > [!WARNING]
->  Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge.  
+> Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge.  
   
 ### <a name="excel-2010-cell-controls"></a>Contrôles des cellules Excel 2010  
  Pour inclure les contrôles de cellules Excel, vous devez apporter des modifications dans le code du test codé de l'interface utilisateur.  
   
 > [!WARNING]
->  La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.  
+> La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.  
   
  Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Exemple :  
   
@@ -145,8 +145,8 @@ uiGridKeyboardInputEdit.Text=value;
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
- [Test de performances web et tests de charge des applications SharePoint 2010 et 2013](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
- [Créer des solutions SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Vérification et débogage du code SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
- [Génération et débogage de solutions SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
- [Profilage des performances des applications SharePoint](http://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
+ [Test de performances web et tests de charge des applications SharePoint 2010 et 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
+ [Créer des solutions SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Vérification et débogage du code SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
+ [Génération et débogage de solutions SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Profilage des performances des applications SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

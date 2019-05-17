@@ -19,17 +19,17 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2741dc6e3e08f8c7f7ee2e28bcf2d8df1613f10e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682088"
 ---
 # <a name="sgen-task"></a>SGen, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (Sgen.exe). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (Sgen.exe). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `SGen` .  

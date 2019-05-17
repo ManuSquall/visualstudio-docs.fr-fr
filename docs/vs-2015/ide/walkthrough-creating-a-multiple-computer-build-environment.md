@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674154"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
   Notez que le nom du dossier Program Files dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est \Program Files\\ ; sur l’ordinateur x64, le nom est \Program Files (x86)\\. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier Program Files sous la forme %ProgramFiles%.  
   
 > [!NOTE]
->  Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur ; toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.  
+> Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur ; toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Pour copier les fichiers du SDK Windows sur l’ordinateur de build  
   
@@ -197,7 +197,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Copiez uniquement les fichiers suivants du dossier \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ vers l’ordinateur de build, comme décrit dans [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Aucun autre fichier ne peut être copié.  
+5. Copiez uniquement les fichiers suivants du dossier \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ vers l’ordinateur de build, comme décrit dans [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Aucun autre fichier ne peut être copié.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -223,7 +223,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Sur un ordinateur x64, la clé parente est HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.  
   
    > [!NOTE]
-   >  Si l’architecture de votre ordinateur hôte diffère de celle de votre ordinateur de build, veillez à utiliser la clé parente appropriée sur chaque ordinateur. Cela est particulièrement important si vous automatisez le processus d’exportation.  
+   > Si l’architecture de votre ordinateur hôte diffère de celle de votre ordinateur de build, veillez à utiliser la clé parente appropriée sur chaque ordinateur. Cela est particulièrement important si vous automatisez le processus d’exportation.  
    >   
    >  De plus, si vous utilisez une lettre de lecteur différente sur l’ordinateur de build de celle que vous utilisez sur l’ordinateur hôte, veillez à changer les valeurs des entrées de Registre pour qu’elles correspondent.  
   
@@ -334,7 +334,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
      **gacutil -i \<fichier>**  
   
     > [!NOTE]
-    >  Pour qu’un assembly s’installe totalement dans le GAC, un redémarrage peut être nécessaire.  
+    > Pour qu’un assembly s’installe totalement dans le GAC, un redémarrage peut être nécessaire.  
   
 ## <a name="BuildingProjects"></a> Génération de projets  
  Vous pouvez utiliser Team Foundation Build pour générer des projets et des solutions [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Vous pouvez également les générer sur la ligne de commande. Quand vous utilisez Team Foundation Build pour générer des projets, il appelle l’exécutable MSBuild correspondant à l’architecture système.  Sur la ligne de commande, vous pouvez utiliser MSBuild 32 bits ou MSBuild 64 bits, et vous pouvez choisir l’architecture de MSBuild en définissant la variable d’environnement PATH ou en appelant directement l’exécutable MSBuild spécifique à l’architecture.  
@@ -346,17 +346,17 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
  Pour plus d’informations sur l’utilisation de MSBuild sur la ligne de commande, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Pour générer des projets [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous devez utiliser l’ensemble d’outils de plateforme "v110". Si vous ne souhaitez pas modifier les fichiers projet [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous pouvez définir l’ensemble d’outils de plateforme en utilisant l’argument de ligne de commande suivant :  
+> Pour générer des projets [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous devez utiliser l’ensemble d’outils de plateforme "v110". Si vous ne souhaitez pas modifier les fichiers projet [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous pouvez définir l’ensemble d’outils de plateforme en utilisant l’argument de ligne de commande suivant :  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Création de l’environnement de build afin qu’il puisse être archivé dans le contrôle de code source  
  Vous pouvez créer un environnement de build qui peut être déployé sur plusieurs ordinateurs et qui ne nécessite pas d’installer des fichiers dans le GAC ou de modifier des paramètres du Registre. Les étapes suivantes sont juste une manière d’accomplir cette opération. Adaptez ces étapes aux caractéristiques propres à votre environnement de build.  
   
 > [!NOTE]
->  Vous devez désactiver la génération incrémentielle afin que tracker.exe ne provoque pas d’erreur lors de la génération. Pour désactiver une génération incrémentielle, définissez le paramètre de build suivant :  
+> Vous devez désactiver la génération incrémentielle afin que tracker.exe ne provoque pas d’erreur lors de la génération. Pour désactiver une génération incrémentielle, définissez le paramètre de build suivant :  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Pour créer un environnement de build pouvant être archivé dans le contrôle de code source  
   
@@ -424,5 +424,5 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
          Pour une génération 64 bits native, pointez sur MSBuild 64 bits.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)

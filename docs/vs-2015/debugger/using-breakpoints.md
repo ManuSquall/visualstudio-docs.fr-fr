@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684445"
 ---
 # <a name="using-breakpoints"></a>Utilisation des points d'arrêt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
    La condition peut être n’importe quelle expression valide reconnue par le débogueur. Pour plus d’informations sur les expressions valides, consultez [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Utilisation d’ID d’objet dans des conditions de point d’arrêt (C# et F#)  
- Vous voulez parfois observer le comportement d’un objet spécifique ; par exemple, vous pouvez vouloir découvrir pourquoi un objet a été inséré plusieurs fois dans une collection. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  Pour créer un ID d’objet, procédez comme suit :  
+ Vous voulez parfois observer le comportement d’un objet spécifique ; par exemple, vous pouvez vouloir découvrir pourquoi un objet a été inséré plusieurs fois dans une collection. En C# et en F#, vous pouvez créer des ID d’objet pour des instances spécifiques de [types référence](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) et les utiliser dans des conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  Pour créer un ID d’objet, procédez comme suit :  
   
 1. Définissez un point d’arrêt dans le code quelque temps après que l’objet a été créé.  
   

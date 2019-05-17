@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704057"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615187"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Récupère l’index de base (limites inférieures) pour chaque index étant donné le nombre de dimensions dans le tableau.
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwRank`
+## <a name="parameters"></a>Paramètres
+`dwRank`\
+[in] Le nombre de dimensions (rang) du tableau.
 
- [in] Le nombre de dimensions (rang) du tableau.
-
- `dwIndices`
-
- [out] Index de base (limites inférieures) pour le tableau.
+`dwIndices`\
+[out] Index de base (limites inférieures) pour le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895597"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
@@ -25,7 +25,7 @@ Pour les scènes 3D, les mipmaps sont recommandés quand la mémoire disponible 
 
 Si cette variante donne lieu à un gain de performances sensible, cela indique que vous utilisez des textures sans avoir activé les mipmaps et que donc vous ne tirez pas le meilleur parti du cache de texture.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, génération de mipmaps est forcée quand l’objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une ressource de nuanceur qui est :
 
 - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.

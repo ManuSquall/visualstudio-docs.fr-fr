@@ -1,52 +1,54 @@
 ---
 title: IDiaSymbol::get_notReached | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_notReached method
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: d448fe9c8eb3379d4d66bbc174626a3c3998a737
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5d9882033dd668ef9c907f9b6d466451541225ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399480"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
-Récupère un indicateur qui spécifie si la fonction ou l’étiquette n’est jamais atteint.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```C++
-HRESULT get_notReached(
-   BOOL *pFlag
-);
-```
-
-#### <a name="parameters"></a>Paramètres
- pFlag
-
-[out] Retourne `TRUE` si la fonction ou l’étiquette n’est jamais atteint ; sinon, retourne `FALSE`.
-
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
-
+Récupère un indicateur qui spécifie si la fonction ou l’étiquette n’est jamais atteint.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp  
+HRESULT get_notReached(  
+   BOOL *pFlag  
+);  
+```  
+  
+#### <a name="parameters"></a>Paramètres  
+ pFlag  
+ [out] Retourne `TRUE` si la fonction ou l’étiquette n’est jamais atteint ; sinon, retourne `FALSE`.  
+  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+  
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
-
-## <a name="requirements"></a>Spécifications
-
-|Spécification|Description|
-|-----------------|-----------------|
-|En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
-
-## <a name="see-also"></a>Voir aussi
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+  
+## <a name="requirements"></a>Configuration requise  
+  
+|Spécification|Description|  
+|-----------------|-----------------|  
+|En-tête :|dia2.h|  
+|Version :|DIA SDK 8.0|  
+  
+## <a name="see-also"></a>Voir aussi  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

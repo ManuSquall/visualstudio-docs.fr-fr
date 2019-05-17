@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7abba929e6c146e322147555dc750e2fc66ac9e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5eb63aea8adef546e9266d2c1eaccc842f89feb6
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041507"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223480"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Cette interface énumère les points d’arrêt liés associés à un point d’arrêt en attente ou point d’arrêt lié l’événement.

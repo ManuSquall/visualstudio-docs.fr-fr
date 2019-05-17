@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445575"
 ---
 # <a name="create-outlook-form-regions"></a>Créer des zones de formulaire Outlook
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.
@@ -90,7 +90,7 @@ ms.locfileid: "60092758"
 - Un stockage de formulaire Outlook (*.ofs*) fichier.
 
     > [!NOTE]
-    >  Ce fichier est ajouté uniquement au projet si vous importez une zone de formulaire conçue dans Outlook.
+    > Ce fichier est ajouté uniquement au projet si vous importez une zone de formulaire conçue dans Outlook.
 
 #### <a name="form-region-factory-class"></a>Classe de fabrique de zones de formulaire
  Le fichier de code de la zone de formulaire contient une classe partielle qui implémente l'interface <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory>. Il s'agit de la classe de fabrique de zones de formulaire. Cette classe est chargée de créer de nouvelles instances de la zone de formulaire.
@@ -110,7 +110,7 @@ ms.locfileid: "60092758"
  Le Concepteur de zones de formulaire vous aide à concevoir la disposition et l'apparence d'une zone de formulaire. Vous pouvez faire glisser des contrôles managés vers l’aire du concepteur, double-cliquez sur les contrôles pour ouvrir des gestionnaires d’événements et définir les propriétés dans le **propriétés** fenêtre.
 
 > [!NOTE]
->  Vous pouvez trouver des propriétés qui affectent l’apparence de la zone de formulaire dans Outlook, sous la **manifeste** nœud dans le **propriétés** fenêtre.
+> Vous pouvez trouver des propriétés qui affectent l’apparence de la zone de formulaire dans Outlook, sous la **manifeste** nœud dans le **propriétés** fenêtre.
 
  Le Concepteur de zones de formulaire est disponible uniquement si vous sélectionnez **concevoir une zone de formulaire** dans le **Choisissez comment vous souhaitez créer la zone de formulaire** page de la **nouvelle zone de formulaire Outlook** Assistant.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092758"
  Vous pouvez modifier les propriétés des zones de formulaire dans la méthode `InitializeManifest` de la classe de fabrique de zones de formulaire.
 
 > [!NOTE]
->  Pour importer une zone de formulaire, vous devez travailler dans un projet qui cible la version d'Outlook que vous avez installée sur l'ordinateur de développement. Par exemple, si vous avez Outlook 2010 est installé, l’importation d’un formulaire région fonctionne uniquement dans un projet a été créé à l’aide de la **complément Outlook 2010** modèle de projet.
+> Pour importer une zone de formulaire, vous devez travailler dans un projet qui cible la version d'Outlook que vous avez installée sur l'ordinateur de développement. Par exemple, si vous avez Outlook 2010 est installé, l’importation d’un formulaire région fonctionne uniquement dans un projet a été créé à l’aide de la **complément Outlook 2010** modèle de projet.
 
 ### <a name="update-an-imported-form-regions-design"></a>Mettre à jour de la conception d’une zone formulaire importée
  Vous pouvez ajouter, supprimer ou modifier des contrôles dans la zone de formulaire. Avant cela, sauvegardez tout le code que vous avez ajouté au fichier de code de la zone de formulaire. Ensuite, ouvrir le *.ofs* fichier dans Outlook, modifiez la zone de formulaire, puis enregistrez les modifications. Utilisez le **nouvelle zone de formulaire Outlook** Assistant pour importer le texte modifié *.ofs* fichier. Vous pouvez ensuite coller votre code dans le fichier de code de la nouvelle zone de formulaire.

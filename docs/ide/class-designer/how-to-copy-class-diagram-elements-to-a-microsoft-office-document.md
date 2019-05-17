@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975491"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Procédure : Copier les éléments d’un diagramme de classes dans un document Microsoft Office
 
@@ -28,15 +28,15 @@ Cliquez avec le bouton droit sur la forme et choisissez **Copier l’image**.
 
 ## <a name="copy-several-elements"></a>Copier plusieurs éléments
 
-1.  Sélectionnez les formes sur le diagramme que vous souhaitez copier.
+1. Sélectionnez les formes sur le diagramme que vous souhaitez copier.
 
-2.  Cliquez avec le bouton droit sur votre sélection, puis choisissez **Copier l’image**.
+2. Cliquez avec le bouton droit sur votre sélection, puis choisissez **Copier l’image**.
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>Copier tous les éléments dans un diagramme de classes
 
-1.  Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**, ou appuyez sur **Ctrl+A**.
+1. Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**, ou appuyez sur **Ctrl+A**.
 
-2.  Dans le menu **Edition**, sélectionnez **Copier l’image**.
+2. Dans le menu **Edition**, sélectionnez **Copier l’image**.
 
 Vous pouvez également choisir **Copier** au lieu de **Copier l’image**. **Copier** copie l’image en tant que bitmap normale. **Copier l’image** copie l’image en tant qu’image vectorielle, ce qui est recommandé pour la plupart des applications Office.
 

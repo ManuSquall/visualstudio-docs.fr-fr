@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057454"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697867"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Cette rubrique présente en détail le tas de débogage CRT.
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Rechercher les dépassements de mémoire tampon avec le tas de débogage  
  Le remplacement de la fin d'une mémoire tampon allouée et les fuites de mémoire (impossibilité de libérer les allocations lorsqu'elles sont devenues inutiles) comptent parmi les problèmes les plus courants et les plus complexes auxquels les programmeurs sont confrontés. Le tas de débogage fournit des outils puissants pour résoudre les problèmes d'allocation de mémoire de ce type.  
   
- Les versions Debug des fonctions du tas appellent les versions standard ou de base utilisées dans les versions Release. Lorsque vous demandez un bloc de mémoire, le gestionnaire du tas de débogage alloue, à partir du tas de base, un bloc de mémoire légèrement plus grand que ce qui est demandé et retourne un pointeur vers votre partie de ce bloc. Par exemple, supposons que votre application contient l'appel : `malloc( 10 )`. Dans une version Release, [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) appellerait la routine d’allocation du tas de base qui demanderait une allocation de 10 octets. Dans une version Debug, `malloc` appellerait [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), laquelle appellerait la routine d’allocation du tas de base demande une allocation de 10 octets plus environ 36 octets de mémoire supplémentaire. Tous les blocs de mémoire résultants dans le tas de débogage sont connectés dans une seule liste liée, ordonnée en fonction du moment où ils ont été alloués.  
+ Les versions Debug des fonctions du tas appellent les versions standard ou de base utilisées dans les versions Release. Lorsque vous demandez un bloc de mémoire, le gestionnaire du tas de débogage alloue, à partir du tas de base, un bloc de mémoire légèrement plus grand que ce qui est demandé et retourne un pointeur vers votre partie de ce bloc. Par exemple, supposons que votre application contient l'appel : `malloc( 10 )`. Dans une version Release, [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) appellerait la routine d’allocation du tas de base qui demanderait une allocation de 10 octets. Dans une version Debug, `malloc` appellerait [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), laquelle appellerait la routine d’allocation du tas de base demande une allocation de 10 octets plus environ 36 octets de mémoire supplémentaire. Tous les blocs de mémoire résultants dans le tas de débogage sont connectés dans une seule liste liée, ordonnée en fonction du moment où ils ont été alloués.  
   
  La mémoire supplémentaire allouée par les routines du tas de débogage est utilisée pour les informations de comptabilité, pour les pointeurs qui lient les blocs de mémoire entre eux et pour les petites mémoires tampons de chaque côté de vos données dans le but d'intercepter les remplacements de la zone allouée.  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Types de bloc sur le tas de débogage  
- Chaque bloc de mémoire dans le tas de débogage est assigné à l'un des cinq types d'allocations. Ces types sont suivis et reportés différemment pour la détection des fuites et la création de rapports d'état. Vous pouvez spécifier un type de bloc en l’allouant avec un appel direct à l’une des fonctions d’allocation du tas de débogage, comme [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Les cinq types de bloc de mémoire dans le tas de débogage (défini dans le membre **nBlockUse** de la structure **_CrtMemBlockHeader**) sont les suivants :  
+ Chaque bloc de mémoire dans le tas de débogage est assigné à l'un des cinq types d'allocations. Ces types sont suivis et reportés différemment pour la détection des fuites et la création de rapports d'état. Vous pouvez spécifier un type de bloc en l’allouant avec un appel direct à l’une des fonctions d’allocation du tas de débogage, comme [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Les cinq types de bloc de mémoire dans le tas de débogage (défini dans le membre **nBlockUse** de la structure **_CrtMemBlockHeader**) sont les suivants :  
   
  **_NORMAL_BLOCK**  
- Un appel à [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) ou à [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) crée un bloc Normal. Si vous avez l’intention d’utiliser uniquement des blocs Normal et n’avez pas besoin de blocs Client, vous pouvez définir [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), qui provoque le mappage de tous les appels d’allocation du tas sur leurs équivalents de débogage dans les versions Debug. Cela permettra de stocker le nom de fichier et le numéro de ligne relatifs à chaque appel d'allocation dans l'en-tête du bloc correspondant.  
+ Un appel à [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) ou à [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) crée un bloc Normal. Si vous avez l’intention d’utiliser uniquement des blocs Normal et n’avez pas besoin de blocs Client, vous pouvez définir [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), qui provoque le mappage de tous les appels d’allocation du tas sur leurs équivalents de débogage dans les versions Debug. Cela permettra de stocker le nom de fichier et le numéro de ligne relatifs à chaque appel d'allocation dans l'en-tête du bloc correspondant.  
   
  `_CRT_BLOCK`  
  Les blocs de mémoire alloués en interne par de nombreuses fonctions de la bibliothèque Runtime sont marqués comme des blocs CRT pour pouvoir être traités séparément. En conséquence, ils n'influent pas forcément sur la détection des fuites et les autres opérations. Une allocation ne doit jamais allouer, réallouer ou libérer un bloc de type CRT.  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Vous pouvez installer une fonction de raccordement fournie par le client pour faire un dump des objets stockés dans les blocs Client avec [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033). Cette fonction sera ensuite appelée chaque fois qu’un bloc Client fera l’objet d’un dump à l’aide d’une fonction de débogage. Par ailleurs, [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) peut servir à appeler une fonction donnée fournie par l’application pour chaque bloc Client dans le tas de débogage.  
+ Vous pouvez installer une fonction de raccordement fournie par le client pour faire un dump des objets stockés dans les blocs Client avec [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033). Cette fonction sera ensuite appelée chaque fois qu’un bloc Client fera l’objet d’un dump à l’aide d’une fonction de débogage. Par ailleurs, [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) peut servir à appeler une fonction donnée fournie par l’application pour chaque bloc Client dans le tas de débogage.  
   
  **_FREE_BLOCK**  
  Normalement, les blocs qui sont libérés sont supprimés de la liste. Pour vérifier qu'aucune écriture n'est plus effectuée dans la mémoire libérée ou pour simuler des conditions de mémoire insuffisante, vous pouvez choisir de conserver les blocs libérés sur la liste liée, marqués en tant que Free et remplis avec une valeur d'octet connue (actuellement 0xDD).  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  Il est possible de désactiver les opérations du tas de débogage pendant une certaine durée. Pendant cette période, les blocs de mémoire sont conservés dans la liste, mais marqués en tant que blocs Ignore.  
   
- Pour déterminer le type et le sous-type d’un bloc donné, utilisez la fonction [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) et les macros **_BLOCK_TYPE** et **_BLOCK_SUBTYPE**. Les macros sont définies (dans crtdbg.h) comme suit :  
+ Pour déterminer le type et le sous-type d’un bloc donné, utilisez la fonction [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) et les macros **_BLOCK_TYPE** et **_BLOCK_SUBTYPE**. Les macros sont définies (dans crtdbg.h) comme suit :  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer à partir de votre code. La section suivante décrit certaines fonctionnalités et la façon de les utiliser.  
   
  `_CrtCheckMemory`  
- Vous pouvez utiliser un appel à [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), par exemple pour vérifier l’intégrité du tas à un point quelconque. Cette fonction inspecte chaque bloc de mémoire dans le tas, vérifie que les informations d'en-tête du bloc de mémoire sont valides et confirme que les mémoires tampons n'ont pas été modifiées.  
+ Vous pouvez utiliser un appel à [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), par exemple pour vérifier l’intégrité du tas à un point quelconque. Cette fonction inspecte chaque bloc de mémoire dans le tas, vérifie que les informations d'en-tête du bloc de mémoire sont valides et confirme que les mémoires tampons n'ont pas été modifiées.  
   
  `_CrtSetDbgFlag`  
- Vous pouvez contrôler la façon dont le tas de débogage effectue le suivi des allocations à l’aide d’un indicateur interne, [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), qui peut être lu et défini avec la fonction [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Vous pouvez, en modifiant cet indicateur, ordonner au tas de débogage de rechercher les fuites de mémoire lorsque le programme s'arrête et de signaler les fuites détectées. De même, vous pouvez spécifier que les blocs de mémoire libérés ne doivent pas être supprimés de la liste liée, afin de simuler des situations de mémoire insuffisante. Lorsque le tas est vérifié, une inspection complète de ces blocs libérés est effectuée pour vérifier qu'ils n'ont pas été dérangés.  
+ Vous pouvez contrôler la façon dont le tas de débogage effectue le suivi des allocations à l’aide d’un indicateur interne, [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), qui peut être lu et défini avec la fonction [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Vous pouvez, en modifiant cet indicateur, ordonner au tas de débogage de rechercher les fuites de mémoire lorsque le programme s'arrête et de signaler les fuites détectées. De même, vous pouvez spécifier que les blocs de mémoire libérés ne doivent pas être supprimés de la liste liée, afin de simuler des situations de mémoire insuffisante. Lorsque le tas est vérifié, une inspection complète de ces blocs libérés est effectuée pour vérifier qu'ils n'ont pas été dérangés.  
   
  L’indicateur **_crtDbgFlag** contient les champs de bits suivants :  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |Fonction|Description|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Enregistre un instantané du tas dans une structure **_CrtMemState** fournie par l’application.|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compare deux structures d'état de mémoire, enregistre la différence entre ces dernières dans une troisième structure d'état et retourne TRUE si les deux états sont différents.|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Fait un vidage d’une structure **_CrtMemState** donnée. La structure peut contenir un instantané de l'état du tas de débogage à un moment donné ou la différence entre deux instantanés.|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Fait un dump des informations sur tous les objets alloués depuis la capture d'un instantané donné du tas ou le début de l'exécution. Chaque fois qu’elle fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Détermine si des fuites de mémoire se sont produites depuis le début de l'exécution du programme et, dans ce cas, fait un dump de tous les objets alloués. Chaque fois que la fonction **_CrtDumpMemoryLeaks** fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Enregistre un instantané du tas dans une structure **_CrtMemState** fournie par l’application.|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compare deux structures d'état de mémoire, enregistre la différence entre ces dernières dans une troisième structure d'état et retourne TRUE si les deux états sont différents.|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Fait un vidage d’une structure **_CrtMemState** donnée. La structure peut contenir un instantané de l'état du tas de débogage à un moment donné ou la différence entre deux instantanés.|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Fait un dump des informations sur tous les objets alloués depuis la capture d'un instantané donné du tas ou le début de l'exécution. Chaque fois qu’elle fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Détermine si des fuites de mémoire se sont produites depuis le début de l'exécution du programme et, dans ce cas, fait un dump de tous les objets alloués. Chaque fois que la fonction **_CrtDumpMemoryLeaks** fait un vidage d’un bloc **_CLIENT_BLOCK**, elle appelle une fonction de raccordement fournie par l’application, si une telle fonction a été installée avec **_CrtSetDumpClient**.|  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  Le moyen le plus simple d'identifier précisément l'appel d'allocation du tas qui s'est avéré incorrect consiste à exploiter le numéro de demande d'allocation unique associé à chaque bloc dans le tas de débogage. Quand les informations sur un bloc sont reportées par l’une des fonctions de dump, ce numéro de demande d’allocation est placé entre accolades (par exemple « {36} »).  
   
- Une fois que vous connaissez le numéro de demande d’allocation d’un bloc alloué de façon incorrecte, vous pouvez passer ce numéro à [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) pour créer un point d’arrêt. L'exécution sera interrompue juste avant l'allocation du bloc et vous pourrez effectuer des recherches rétroactives pour déterminer quelle routine est à l'origine de l'appel incorrect. Pour éviter une recompilation, vous pouvez effectuer la même chose dans le débogueur en définissant **_crtBreakAlloc** sur le numéro de la demande d’allocation qui vous intéresse.  
+ Une fois que vous connaissez le numéro de demande d’allocation d’un bloc alloué de façon incorrecte, vous pouvez passer ce numéro à [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) pour créer un point d’arrêt. L'exécution sera interrompue juste avant l'allocation du bloc et vous pourrez effectuer des recherches rétroactives pour déterminer quelle routine est à l'origine de l'appel incorrect. Pour éviter une recompilation, vous pouvez effectuer la même chose dans le débogueur en définissant **_crtBreakAlloc** sur le numéro de la demande d’allocation qui vous intéresse.  
   
  **Création de versions Debug de vos routines d’allocation**  
   

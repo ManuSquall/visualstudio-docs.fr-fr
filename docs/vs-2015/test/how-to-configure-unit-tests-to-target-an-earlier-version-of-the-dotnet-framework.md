@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686417"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procédure : Configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
   
   **Test des applications SharePoint**  
   
-  Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] le développement des applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Génération et débogage de solutions SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) et [Vérification et débogage du code SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] le développement des applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Génération et débogage de solutions SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) et [Vérification et débogage du code SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
   **Limitations**  
   
@@ -95,7 +95,7 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
     > [!WARNING]
-    >  Pour créer des tests unitaires C++/CLI basés sur une version antérieure du .NET Framework pour Visual C++, vous devez utiliser la version correspondante de Visual Studio. Par exemple, pour cibler .NET Framework 3.5, vous devez installer [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] et [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
+    > Pour créer des tests unitaires C++/CLI basés sur une version antérieure du .NET Framework pour Visual C++, vous devez utiliser la version correspondante de Visual Studio. Par exemple, pour cibler .NET Framework 3.5, vous devez installer [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] et [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
   
 2. Sous **Modèles installés**, développez **Visual C++**. Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.  
   
@@ -126,7 +126,7 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
 8. Dans l’Explorateur de solutions, choisissez **Recharger le projet** dans le menu contextuel de votre nouveau projet de test Visual C++.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Créer des solutions SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Génération et débogage de solutions SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Création et exécution de tests unitaires pour le code existant](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Créer des solutions SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Génération et débogage de solutions SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

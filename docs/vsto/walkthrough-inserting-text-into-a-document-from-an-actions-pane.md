@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414278"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Microsoft Office Word. Le volet actions contient deux contrôles qui collecte des commentaires, puis envoient le texte au document.
@@ -34,7 +34,7 @@ ms.locfileid: "60088520"
 - Afficher le volet actions lorsque l’application s’ouvre.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
@@ -78,7 +78,7 @@ ms.locfileid: "60088520"
 2. Sélectionner le mot **nom**, sans en sélectionnant la marque de paragraphe, puis cliquez sur **OK**.
 
     > [!NOTE]
-    >  La marque de paragraphe doit être en dehors du signet. Si les marques de paragraphe ne sont pas visibles dans le document, cliquez sur le **outils** menu, pointez sur **outils Microsoft Office Word** puis cliquez sur **Options**. Cliquez sur le **vue** onglet, puis sélectionnez le **marques de paragraphe** case à cocher dans la **mise en forme de marques** section de la **Options** boîte de dialogue.
+    > La marque de paragraphe doit être en dehors du signet. Si les marques de paragraphe ne sont pas visibles dans le document, cliquez sur le **outils** menu, pointez sur **outils Microsoft Office Word** puis cliquez sur **Options**. Cliquez sur le **vue** onglet, puis sélectionnez le **marques de paragraphe** case à cocher dans la **mise en forme de marques** section de la **Options** boîte de dialogue.
 
 3. Dans le **propriétés** fenêtre, de modifier le **nom** propriété de **Bookmark1** à **showName**.
 

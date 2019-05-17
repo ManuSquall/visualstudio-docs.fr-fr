@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355142"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461533"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -67,6 +67,8 @@ Visual Studio utilise deux types de fichiers (*.sln* et *.suo*) pour stocker les
 Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles sont disponibles dans la boîte de dialogue où vous créez un projet (**Fichier** > **Nouveau** > **Projet**). Pour plus d’informations, consultez [Créer des solutions et des projets](../ide/creating-solutions-and-projects.md).
 
 Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
+
+Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations, consultez [Page Projets et solutions, boîte de dialogue Options](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Gérer des projets dans l’Explorateur de solutions
 

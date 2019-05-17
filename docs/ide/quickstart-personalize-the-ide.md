@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: eccbc834f4038ec18c2f84244488b81a59ecbfbf
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646697"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531559"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
 
 Dans ce tutoriel de 5-10 minutes, nous allons personnaliser le thème de couleur de Visual Studio en sélectionnant le thème sombre. Nous allons également personnaliser les couleurs de deux types de texte différents dans l’éditeur de texte.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+::: moniker range="vs-2017"
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Définir le thème de couleur
 
@@ -107,5 +117,5 @@ Nous avons seulement exploré deux façons de personnaliser les couleurs dans Vi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnaliser l’éditeur](../ide/customizing-the-editor.md)
+- [Personnaliser l’éditeur](../ide/how-to-change-text-case-in-the-editor.md)
 - [Vue d’ensemble de l’IDE Visual Studio](../get-started/visual-studio-ide.md)

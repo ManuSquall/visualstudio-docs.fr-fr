@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675338"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fourniture de la prise en charge de l’annulation pour les concepteurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ En général, les concepteurs, tels que des éditeurs, ont besoin prendre en cha
   
 - Persistance fournissez et CodeDOM prend en charge en implémentant la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> et <xref:System.ComponentModel.Design.IComponentChangeService> classes.  
   
-  Pour plus d’informations sur l’écriture à l’aide de concepteurs [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consultez [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Pour plus d’informations sur l’écriture à l’aide de concepteurs [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consultez [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit une infrastructure d’annulation par défaut par :  
   
@@ -45,7 +45,7 @@ En général, les concepteurs, tels que des éditeurs, ont besoin prendre en cha
   
 - Utilise la génération de code basé sur CodeDOM standard et de système d’analyse pour la persistance et la génération de code.  
   
-     Pour plus d’informations sur l’utilisation avec prise en charge de Visual Studio CodeDOM, consultez [Compilation et génération de Code Source dynamique](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Pour plus d’informations sur l’utilisation avec prise en charge de Visual Studio CodeDOM, consultez [Compilation et génération de Code Source dynamique](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quand utiliser la prise en charge de l’annulation de concepteur explicite  
  Concepteurs doivent fournir leur propre gestion de l’annulation s’ils utilisent une interface graphique utilisateur, appelée un adaptateur de vue, autre que celui fourni par <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ En général, les concepteurs, tels que des éditeurs, ont besoin prendre en cha
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Extension de la prise en charge au moment du design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Extension de la prise en charge au moment du design](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

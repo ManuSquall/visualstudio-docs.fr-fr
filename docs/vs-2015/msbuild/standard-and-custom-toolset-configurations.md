@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444381"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisée de l'ensemble d'outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
  La propriété de build `VisualStudioVersion` indique si un sous-ensemble d’outils devient actif. Par exemple, la valeur « 12.0 » pour `VisualStudioVersion` spécifie le sous-ensemble d’outils MSBuild 12.0. Pour plus d’informations, consultez la section Sous-ensembles d’outils de [Ensemble d’outils MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 > [!NOTE]
->  Nous vous recommandons de ne pas modifier ces paramètres. Vous pouvez néanmoins ajouter vos propres paramètres et spécifier des définitions d’ensembles d’outils personnalisés à l’échelle de l’ordinateur, comme décrit dans la section suivante.  
+> Nous vous recommandons de ne pas modifier ces paramètres. Vous pouvez néanmoins ajouter vos propres paramètres et spécifier des définitions d’ensembles d’outils personnalisés à l’échelle de l’ordinateur, comme décrit dans la section suivante.  
 
 ## <a name="custom-toolset-definitions"></a>Définitions d’ensembles d’outils personnalisés  
  Quand un ensemble d’outils standard ne répond pas à vos spécifications pour la génération, vous pouvez créer un ensemble d’outils personnalisé. Par exemple, vous pouvez avoir un scénario de laboratoire de génération dans lequel vous devez disposer d’un système distinct pour la génération de projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Avec un ensemble d’outils personnalisé, vous pouvez affecter des valeurs personnalisées à l’attribut `ToolsVersion` quand vous créez des projets ou que vous exécutez MSBuild.exe. Ce faisant, vous pouvez également utiliser la propriété `$(MSBuildToolsPath)` pour importer des fichiers .targets à partir de ce répertoire, ainsi que définir vos propres propriétés de l’ensemble d’outils personnalisé qui peuvent être utilisées pour un projet utilisant cet ensemble d’outils.  
@@ -86,12 +86,12 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 ```  
 
 > [!NOTE]
->  Pour que la lecture se fasse correctement, `<configSections>` doit être la première sous-section de la section `<configuration>`.  
+> Pour que la lecture se fasse correctement, `<configSections>` doit être la première sous-section de la section `<configuration>`.  
 
  `ToolsetConfigurationSection` est une section de configuration personnalisée qui peut être utilisée par n’importe quel hôte MSBuild pour une configuration personnalisée. Si vous utilisez un ensemble d’outils personnalisé, un hôte n’a rien à faire pour initialiser le moteur de génération, sauf fournir les entrées du fichier de configuration. En définissant des entrées dans le Registre, vous pouvez spécifier des ensembles d’outils à l’échelle de l’ordinateur, qui s’appliquent à MSBuild.exe, à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et à tous les hôtes de MSBuild.  
 
 > [!NOTE]
->  Si un fichier de configuration définit des paramètres pour une `ToolsVersion` qui a déjà été définie dans le Registre, les deux définitions ne sont pas fusionnées. La définition du fichier de configuration a priorité et les paramètres du Registre pour cette `ToolsVersion` sont ignorés.  
+> Si un fichier de configuration définit des paramètres pour une `ToolsVersion` qui a déjà été définie dans le Registre, les deux définitions ne sont pas fusionnées. La définition du fichier de configuration a priorité et les paramètres du Registre pour cette `ToolsVersion` sont ignorés.  
 
  Les propriétés suivantes sont spécifiques à la valeur de `ToolsVersion` qui est utilisée dans les projets :  
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411375"
 ---
 # <a name="attach-to-the-program"></a>Attacher le programme
 Une fois que vous avez enregistré vos programmes avec le port approprié, vous devez attacher le débogueur au programme que vous souhaitez déboguer.
@@ -50,12 +50,12 @@ Une fois que vous avez enregistré vos programmes avec le port approprié, vous 
      Cette commande renvoie un `GUID` qui est utilisé pour identifier le programme. Le `GUID` doivent être stockées dans l’objet que représente l’ordinateur local du programme pour l’Allemagne, et il doit être retourné lorsque le `IDebugProgram2::GetProgramId` méthode est appelée sur le `IDebugProgram2` interface.
 
     > [!NOTE]
-    >  Si vous implémentez le `IDebugProgramNodeAttach2` interface, le programme `GUID` est passé à la `IDebugProgramNodeAttach2::OnAttach` (méthode). Cela `GUID` est utilisé pour le programme `GUID` retourné par le `IDebugProgram2::GetProgramId` (méthode).
+    > Si vous implémentez le `IDebugProgramNodeAttach2` interface, le programme `GUID` est passé à la `IDebugProgramNodeAttach2::OnAttach` (méthode). Cela `GUID` est utilisé pour le programme `GUID` retourné par le `IDebugProgram2::GetProgramId` (méthode).
 
 3. Envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objet d’événement pour avertir le SDM qui local `IDebugProgram2` objet a été créé pour représenter le programme pour l’Allemagne. Pour plus d’informations, consultez [envoi des événements](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
-    >  Ce n’est pas le même `IDebugProgram2` objet qui a été passée dans le `IDebugEngine2::Attach` (méthode). Précédemment passé `IDebugProgram2` objet est reconnu par le port uniquement et est un objet distinct.
+    > Ce n’est pas le même `IDebugProgram2` objet qui a été passée dans le `IDebugEngine2::Attach` (méthode). Précédemment passé `IDebugProgram2` objet est reconnu par le port uniquement et est un objet distinct.
 
 ## <a name="see-also"></a>Voir aussi
 - [Pièce jointe basée sur le lancement](../../extensibility/debugger/launch-based-attachment.md)

@@ -1,53 +1,55 @@
 ---
 title: IDiaSymbol::get_name | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_name method
 ms.assetid: 050ec02f-b7b3-48fc-8e35-58bdf7d938b0
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 3d318ed0b033e4e423ee947a3b72fc317e98e432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: ed872bd0cf90bef4433e3430ea8a7557213cbb4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399417"
 ---
 # <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
-Récupère le nom du symbole.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```C++
-HRESULT get_name ( 
-   BSTR* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Paramètres
- `pRetVal`
-
-[out] Retourne le nom du symbole.
-
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
-
+Récupère le nom du symbole.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp#  
+HRESULT get_name (   
+   BSTR* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Paramètres  
+ `pRetVal`  
+ [out] Retourne le nom du symbole.  
+  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+  
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
-
-## <a name="example"></a>Exemple
-
-```C++
-IDiaSymbol* pType;
-BSTR        name;
-pType->get_name( &name );
-```
-
-## <a name="see-also"></a>Voir aussi
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+  
+## <a name="example"></a>Exemple  
+  
+```cpp#  
+IDiaSymbol* pType;  
+BSTR        name;  
+pType->get_name( &name );  
+```  
+  
+## <a name="see-also"></a>Voir aussi  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

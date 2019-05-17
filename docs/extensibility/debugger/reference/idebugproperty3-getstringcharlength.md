@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdfb437b079fd3c7b5657a369402bfbe4de047e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 105fd78ab743d9560cc2973e467efd070c1b00d6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698220"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458826"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Retourne le nombre de caractères dans la chaîne de la propriété associée.
@@ -36,7 +39,7 @@ int GetStringCharLength(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Paramètres
 
 |Paramètre|Description|
 |---------------|-----------------|

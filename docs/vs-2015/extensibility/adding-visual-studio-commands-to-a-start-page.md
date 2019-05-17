@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699153"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Ajout de commandes Visual Studio à une page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous créez une page de démarrage personnalisée, vous pouvez ajouter des commandes de Visual Studio à ce dernier. Ce document présente les différentes méthodes pour lier des commandes de Visual Studio des objets XAML dans une page de démarrage.  
   
- Pour plus d’informations sur les commandes dans XAML, consultez [vue d’ensemble de commandes](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Pour plus d’informations sur les commandes dans XAML, consultez [vue d’ensemble de commandes](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Ajout de commandes à partir de la commande bien  
  La page de démarrage créé dans [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md) ajouté le <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> et <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> espaces de noms, comme suit.  
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  Le `x:` alias, ce qui fait référence au schéma XAML, est requis au début de toutes les commandes.  
+> Le `x:` alias, ce qui fait référence au schéma XAML, est requis au début de toutes les commandes.  
   
  Vous pouvez définir la valeur de la `Command` propriété à toute commande qui est accessible à partir de la **commande** fenêtre. Pour obtenir la liste des commandes disponibles, consultez [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Vous pouvez appeler des commandes à partir de VSPackages enregistrés à l’aide de la même syntaxe que celle qui est utilisée pour appeler d’autres commandes de Visual Studio. Par exemple, si un VSPackage installé ajoute un **Page d’accueil** commande le **vue** menu, vous pouvez appeler cette commande en définissant `CommandParameter` à `View.HomePage`.  
   
 > [!NOTE]
->  Si vous appelez une commande qui est associée à un VSPackage, le package doit être chargé lors de la commande est appelée.  
+> Si vous appelez une commande qui est associée à un VSPackage, le package doit être chargé lors de la commande est appelée.  
   
 ## <a name="adding-commands-from-assemblies"></a>Ajout de commandes provenant d’assemblys  
  Pour appeler une commande à partir d’un assembly, ou d’accéder au code dans un VSPackage qui n’est pas associé à une commande de menu, vous devez créer un alias pour l’assembly, puis appelez l’alias.  
@@ -89,12 +89,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  Vous devez copier votre assembly et collez-la dans... \\ *Dossier d’installation de visual Studio*\Common7\IDE\PrivateAssemblies\ pour vous assurer qu’il est chargé avant qu’elle est appelée.  
+> Vous devez copier votre assembly et collez-la dans... \\ *Dossier d’installation de visual Studio*\Common7\IDE\PrivateAssemblies\ pour vous assurer qu’il est chargé avant qu’elle est appelée.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Ajout de commandes avec l’objet DTE  
  Vous pouvez accéder à l’objet DTE à partir d’une Page de démarrage, à la fois dans le balisage et code.  
   
- Dans le balisage, vous pouvez y accéder à l’aide de la [Extension de balisage Binding](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) syntaxe pour appeler le <xref:EnvDTE.DTE> objet. Vous pouvez utiliser cette approche pour lier aux propriétés simples telles que celles qui retournent des collections, mais vous ne pouvez pas lier à des méthodes ou des services. L’exemple suivant montre un <xref:System.Windows.Controls.TextBlock> contrôle qui est lié à la <xref:EnvDTE._DTE.Name%2A> propriété et un <xref:System.Windows.Controls.ListBox> contrôle qui énumère la <xref:EnvDTE.Window.Caption%2A> propriétés de la collection retournée par la <xref:EnvDTE._DTE.Windows%2A> propriété.  
+ Dans le balisage, vous pouvez y accéder à l’aide de la [Extension de balisage Binding](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) syntaxe pour appeler le <xref:EnvDTE.DTE> objet. Vous pouvez utiliser cette approche pour lier aux propriétés simples telles que celles qui retournent des collections, mais vous ne pouvez pas lier à des méthodes ou des services. L’exemple suivant montre un <xref:System.Windows.Controls.TextBlock> contrôle qui est lié à la <xref:EnvDTE._DTE.Name%2A> propriété et un <xref:System.Windows.Controls.ListBox> contrôle qui énumère la <xref:EnvDTE.Window.Caption%2A> propriétés de la collection retournée par la <xref:EnvDTE._DTE.Windows%2A> propriété.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

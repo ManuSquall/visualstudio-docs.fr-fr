@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b97903e0167ba2aba83ea0cfecdd6084c9270e85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 8d649f6fc74236127e357a88c0ef2f2f4941862e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911830"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458417"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt;. Les types de propriétés ne correspondent pas
 
@@ -35,6 +35,5 @@ Les propriétés répertoriées dans le message n'ont pas le même type de donn�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Comment : créer une association entre les classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Guide pratique pour Créer une association entre les classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

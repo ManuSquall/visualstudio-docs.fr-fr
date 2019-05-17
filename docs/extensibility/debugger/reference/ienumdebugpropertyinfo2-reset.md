@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d8cf8af9b8d042748bf37f90d059a97d06f1c77
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f3d7ab8204072ed680f3f81d506dd417a7f3da
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223217"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 Réinitialise l’énumération au premier élément.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfc3745676ba1309327dc84143b0706ba02b5a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17e6690f434672c891ac499175332e03c7f1bbf8
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694437"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460779"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Spécifie le type de référence.
@@ -39,17 +42,19 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="members"></a>Membres
- REF_TYPE_WEAK spécifie une référence faible. Ne peut pas être combiné avec `REF_TYPE_STRONG`.
+## <a name="fields"></a>Champs
+ `REF_TYPE_WEAK`\
+ Spécifie une référence faible. Ne peut pas être combiné avec `REF_TYPE_STRONG`.
 
- REF_TYPE_STRONG spécifie une référence forte. Ne peut pas être combiné avec `REF_TYPE_WEAK`.
+ `REF_TYPE_STRONG`\
+ Spécifie une référence forte. Ne peut pas être combiné avec `REF_TYPE_WEAK`.
 
 ## <a name="remarks"></a>Notes
  Utilisé en tant que le `dwRefType` membre de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.
 
  Passé en tant que paramètre à la [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 874e05c0ba738f3730c23dcd092921e4b8c02829
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399974"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Récupère un indicateur qui spécifie si le module a été converti à partir d’un module de langage CIL (Common Intermediate) à un module natif.
@@ -39,12 +39,12 @@ HRESULT get_isCVTCIL(
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 |Spécification|Description|
 |-----------------|-----------------|

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441703"
 ---
 # <a name="miscellaneous-files"></a>Fichiers divers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
  Le dossier Fichiers divers représente les fichiers sous forme de liens. Bien que ce dossier ne fasse pas partie d’une solution, quand vous ouvrez une solution, tout ou partie des fichiers divers qui étaient ouverts lors de la dernière fermeture de la solution sont rouverts, selon les paramètres définis pour le dossier.  
   
 > [!NOTE]
->  Certains fichiers qui n’apparaissent pas dans le dossier Fichiers divers sont ceux que vous ne pouvez pas modifier dans l’IDE, comme les fichiers .zip et les fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés par un éditeur externe.  
+> Certains fichiers qui n’apparaissent pas dans le dossier Fichiers divers sont ceux que vous ne pouvez pas modifier dans l’IDE, comme les fichiers .zip et les fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés par un éditeur externe.  
   
 ## <a name="commands-available-in-the-ide"></a>Commandes disponibles dans l’IDE  
  Les menus, les barres d’outils et les commandes qu’ils contiennent changent selon le format du fichier que vous ouvrez. Quand vous ouvrez un fichier texte, par exemple, la barre d’outils Éditeur de texte apparaît et ses commandes sont disponibles. Si vous ouvrez un fichier de schéma XML, la barre d’outils du schéma XML s’affiche. Quand vous modifiez votre schéma XML, les commandes de la barre d’outils Éditeur de texte (ou la barre d’outils elle-même) ne sont pas disponibles. Le schéma XML est la fenêtre active. De ce fait, il hérite du contexte de sélection actuel. Quand vous passez d’un fichier projet à un fichier divers, toutes les commandes associées au projet disparaissent et seules celles directement associées au fichier divers s’affichent.  

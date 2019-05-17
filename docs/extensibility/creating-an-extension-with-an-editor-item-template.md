@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410136"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Créer une extension avec un éditeur de modèle d’élément
 Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de Visual Studio pour créer des extensions de l’éditeur de base qui ajoutent des classifieurs, les ornements et les marges pour l’éditeur. Les modèles d’élément de l’éditeur sont disponibles pour les projets Visual c# ou Visual Basic VSIX.
@@ -63,7 +63,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
  Le modèle de l’ornement de la fenêtre d’affichage de l’éditeur crée un ornement relatif à la fenêtre d’affichage qui ajoute une zone violette qui a un contour rouge à l’angle supérieur droit de la fenêtre d’affichage.
 
 > [!NOTE]
->  Le **viewport** est la zone de l’affichage de texte qui est actuellement affiché.
+> Le **viewport** est la zone de l’affichage de texte qui est actuellement affiché.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Pour créer une extension d’ornement de la fenêtre d’affichage en utilisant le modèle de l’ornement de la fenêtre d’affichage de l’éditeur
 

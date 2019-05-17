@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705172"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
  Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière très rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.  
   
 > [!IMPORTANT]
->  Pour que le code reste simple, il n'inclut pas la gestion des exceptions prête à la production.  
+> Pour que le code reste simple, il n'inclut pas la gestion des exceptions prête à la production.  
   
  **Dans cette rubrique**  
   
@@ -78,7 +78,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
 3. Pour chaque formulaire, ajoutez les zones de texte, les boutons et les autres contrôles indiqués dans les illustrations suivantes. Pour chaque contrôle, définissez les propriétés que les tables décrivent.  
   
    > [!NOTE]
-   >  La zone de groupe et les contrôles d'étiquette ajoutent de la clarté mais ne sont pas utilisés dans le code.  
+   > La zone de groupe et les contrôles d'étiquette ajoutent de la clarté mais ne sont pas utilisés dans le code.  
   
    **Formulaire Navigation**  
   
@@ -135,7 +135,7 @@ Quand vous créez une application qui manipule les données d'une base de donné
 5. Dans le **valeur** colonne, entrez votre chaîne de connexion (sans les guillemets à l’extérieur), puis enregistrez vos modifications.  
   
 > [!NOTE]
->  Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [chaînes de connexion et les fichiers de Configuration](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [chaînes de connexion et les fichiers de Configuration](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Récupérer la chaîne de connexion  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Utilisez le `ExecuteNonQuery` méthode pour `cmdNewCustomer` pour exécuter le `Sales.uspNewCustomer` procédure stockée. Cette procédure stockée s’exécute un `INSERT` instruction, pas une requête.|  
 |NC-13|La valeur `@CustomerID` est retournée en tant que valeur IDENTITY à partir de la base de données. S’agissant d’un entier, vous devrez convertir en une chaîne à afficher dans le **Customer ID** zone de texte.<br /><br /> -Vous avez déclaré `parsedCustomerID` au niveau NC-2.<br />-Store le `@CustomerID` valeur dans `parsedCustomerID` pour une utilisation ultérieure.<br />-Convertir l’ID client retourné en une chaîne et insérez celle-ci dans `txtCustomerID.Text`.|  
 |NC-14|Pour cet exemple, ajoutez une clause catch de (pas de qualité production) simple.|  
-|NC-15|Fermez toujours une connexion après avoir terminé de l’utiliser pour qu’elle soit libérée dans le pool de connexions. Consultez [SQL Server regroupement de connexions (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Fermez toujours une connexion après avoir terminé de l’utiliser pour qu’elle soit libérée dans le pool de connexions. Consultez [SQL Server regroupement de connexions (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Définissez une méthode pour vérifier qu'il existe un nom de client.<br /><br /> -Si la zone de texte est vide, afficher un message et renvoyer `false`, car un nom est requis pour créer le compte.<br />-Si la zone de texte n’est pas vide, retourner `true`.|  
 |NC-17|Ajoutez le code au gestionnaire d'événements Click pour le bouton `btnPlaceOrder`.|  
 |NC-18|Enveloppez l'appel à `isPlaceOrderReady` autour du code de l'événement `btnPlaceOrder_Click` pour qu'`uspPlaceNewOrder` ne s'exécute pas si l'entrée requise n'est pas présente.|  

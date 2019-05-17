@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685428"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Application de connexion et les manifestes de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
   
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Pour plus d’informations, consultez la section « Génération de manifestes non signés » de ce document.  
   
- Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) portant l’extension .pfx. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) portant l’extension .pfx. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat  
   
@@ -48,7 +48,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
      La boîte de dialogue **Sélectionner un certificat** apparaît et affiche le contenu du magasin de certificats Windows.  
   
     > [!TIP]
-    >  Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **Certificats** pour afficher des informations d’aide supplémentaires.  
+    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **Certificats** pour afficher des informations d’aide supplémentaires.  
   
 3. Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.  
   
@@ -65,7 +65,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 3. Dans la boîte de dialogue **Sélectionner le fichier**, recherchez l’emplacement du fichier de clé (.pfx) que vous souhaitez utiliser, puis cliquez sur **Ouvrir**.  
   
     > [!NOTE]
-    >  Cette option prend uniquement en charge les fichiers ayant l’extension .pfx. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.  
+    > Cette option prend uniquement en charge les fichiers ayant l’extension .pfx. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.  
   
      La boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier** s’affiche. (Si le fichier .pfx est déjà stocké dans votre magasin de certificats Windows ou qu’il n’est pas protégé par un mot de passe, vous n’êtes pas invité à entrer un mot de passe.)  
   
@@ -83,7 +83,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Les procédures suivantes montrent comment générer des manifestes ClickOnce non signés.  
   
 > [!IMPORTANT]
->  Les manifestes non signés peuvent simplifier le développement et le test de votre application. Toutefois, ils présentent des problèmes de sécurité importants dans un environnement de production. N’envisagez l’utilisation de manifestes non signés que si votre application ClickOnce s’exécute sur des ordinateurs au sein d’un intranet complètement isolé d’Internet ou d’autres sources de code malveillant.  
+> Les manifestes non signés peuvent simplifier le développement et le test de votre application. Toutefois, ils présentent des problèmes de sécurité importants dans un environnement de production. N’envisagez l’utilisation de manifestes non signés que si votre application ClickOnce s’exécute sur des ordinateurs au sein d’un intranet complètement isolé d’Internet ou d’autres sources de code malveillant.  
   
  Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si un ou plusieurs fichiers sont spécifiquement exclus du hachage généré. En d’autres termes, la publication de l’application aboutit à des manifestes signés si tous les fichiers sont inclus dans le hachage, même si la case **Signer les manifestes ClickOnce** n’est pas cochée.  
   
@@ -104,12 +104,12 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 2. Ouvrez la boîte de dialogue **Fichiers d’application** et définissez le **Hachage** sur **Exclure** pour les fichiers que vous souhaitez exclure du hachage généré.  
   
     > [!NOTE]
-    >  Quand un fichier est exclu du hachage, ClickOnce est configuré pour désactiver la signature automatique des manifestes ; vous n’avez donc pas besoin de procéder à une publication préalable avec des manifestes signés comme indiqué dans la procédure précédente.  
+    > Quand un fichier est exclu du hachage, ClickOnce est configuré pour désactiver la signature automatique des manifestes ; vous n’avez donc pas besoin de procéder à une publication préalable avec des manifestes signés comme indiqué dans la procédure précédente.  
   
 3. Publiez l'application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assemblys avec nom fort](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Guide pratique pour Créer une paire de clés publique / privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblys avec nom fort](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Guide pratique pour Créer une paire de clés publique / privée](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

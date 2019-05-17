@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418713"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Commandes qui doivent être exécutées après l’installation
 Si vous déployez votre extension via un *.msi* fichier, vous devez exécuter **devenv /setup** dans le cadre de votre installation afin que Visual Studio de découvrir vos extensions.
 
 > [!NOTE]
->  Les informations contenues dans cette rubrique s’applique à la recherche *devenv.exe* avec Visual Studio 2008 et versions antérieures. Pour plus d’informations sur la découverte *devenv.exe* avec les versions ultérieures de Visual Studio, consultez [détecter la configuration système requise](../../extensibility/internals/detecting-system-requirements.md).
+> Les informations contenues dans cette rubrique s’applique à la recherche *devenv.exe* avec Visual Studio 2008 et versions antérieures. Pour plus d’informations sur la découverte *devenv.exe* avec les versions ultérieures de Visual Studio, consultez [détecter la configuration système requise](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Trouver devenv.exe
  Vous pouvez localiser de chaque version *devenv.exe* à partir de Registre des valeurs qui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] écrivant des programmes d’installation, à l’aide de la table RegLocator et AppSearch tables pour stocker les valeurs de Registre en tant que propriétés. Pour plus d’informations, consultez [détecter la configuration système requise](../../extensibility/internals/detecting-system-requirements.md).
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Lignes de la table RegLocator pour localiser devenv.exe à partir de différentes versions de Visual Studio
 
-|Signature|Racine|Touche|Name|Type|
+|Signature|Racine|Touche|Nom|Type|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -68,7 +68,7 @@ Si vous déployez votre extension via un *.msi* fichier, vous devez exécuter **
  Actions personnalisées doivent être créées dans la table InstallExecuteSequence à planifier leur exécution pendant l’installation. Utilisez la propriété correspondante dans chaque ligne de la colonne de la Condition pour éviter que l’action personnalisée en cours d’exécution si cette version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] n’est pas installé sur le système.
 
 > [!NOTE]
->  Évaluent les propriétés de valeur null à `False` lorsqu’il est utilisé dans les conditions.
+> Évaluent les propriétés de valeur null à `False` lorsqu’il est utilisé dans les conditions.
 
  La valeur de la colonne de séquence pour chaque action personnalisée dépend d’autres valeurs de séquence dans votre package de programme d’installation de Windows. Les valeurs de séquence doivent être telle que la *devenv.exe* actions personnalisées, exécuter en tant que proches que possible et immédiatement avant l’action standard de InstallFinalize.
 

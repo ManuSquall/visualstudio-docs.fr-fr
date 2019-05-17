@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703836"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458622"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Récupère la chaîne de valeur d’une métrique d’évaluateur d’expression étant donné son nom.
@@ -40,20 +43,20 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidLang`
+## <a name="parameters"></a>Paramètres
+ `guidLang`\
 
  [in] Identificateur unique du langage de programmation.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Identificateur unique du fournisseur.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nom de la mesure.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Retourne la chaîne de valeur métrique.
 

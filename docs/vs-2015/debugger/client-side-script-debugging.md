@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702379"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Le débogueur Visual Studio fournit un environnement de débogage complet pour r
 ## <a name="debugging-ajax-script-applications"></a>Débogage d'applications de script AJAX  
  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d'informations sur les techniques de débogage AJAX, consultez  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitations du débogage de script](../debugger/limitations-on-script-debugging.md)   
- [Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Fenêtre Exécution](../ide/reference/immediate-window.md)   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

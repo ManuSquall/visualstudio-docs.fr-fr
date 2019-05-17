@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a7d31f7ac442f4a6ff529ae46f1f7492665211
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 460729bd2dd8f562888cf9c816343a4e2897124b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722302"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457790"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Établit les paramètres régionaux à utiliser pour toutes les ressources spécifiques.
@@ -36,8 +39,8 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `wLangID`
+## <a name="parameters"></a>Paramètres
+ `wLangID`\
 
  [in] ID de langue pour établir. Par exemple, 1033 pour l’anglais.
 

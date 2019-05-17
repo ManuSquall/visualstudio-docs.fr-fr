@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000025"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;document&gt; élément (développement Office dans Visual Studio)
   Le `document` élément de la `vstov4` espace de noms stocke les informations de personnalisation spécifiques pour les personnalisations au niveau du document.

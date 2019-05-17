@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca1b84990ed2747e530a1a83a17e17b99f36b116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6e349dd5bea4e0d89c31864960a5438d1e2b13f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684072"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Utilisation de l'attribut DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  Si vous utilisez un type générique comme cible dans `DebuggerTypeProxy`, vous devez utiliser cette syntaxe. Le mécanisme `DebuggerTypeProxy` déduit les paramètres de type.  
   
- Pour plus d’informations sur les types ouverts et fermés en c#, consultez le [spécification du langage c#](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), section 20.5.2 Open et fermé de types.  
+ Pour plus d’informations sur les types ouverts et fermés en c#, consultez le [spécification du langage c#](https://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22), section 20.5.2 Open et fermé de types.  
   
  Visual Basic n'ayant pas de syntaxe de type ouvert, vous ne pouvez pas faire la même chose en Visual Basic. À la place, vous devez utiliser une représentation sous forme de chaîne du nom de type ouvert.  
   
@@ -65,4 +65,4 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
-  [Amélioration du débogage avec les attributs d’affichage de débogueur](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+  [Amélioration du débogage avec les attributs d’affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

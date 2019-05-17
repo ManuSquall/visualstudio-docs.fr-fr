@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807965"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -53,7 +53,7 @@ Pour plus d’informations, consultez [Procédure pas à pas : Utilisation d’
 
 ## <a name="auto-completion"></a>La saisie semi-automatique
 
-L'éditeur XML facilite également l'édition du XML en complétant automatiquement la syntaxe XML requise. Par exemple, si vous entrez la balise de début suivante :
+L'éditeur XML facilite également l'édition du XML en complétant automatiquement la syntaxe XML requise. Par exemple, si vous entrez l’étiquette de début suivante :
 
 `<book>`
 
@@ -111,9 +111,9 @@ Les fonctions IntelliSense et de saisie semi-automatique sont activées par déf
 
 Le **insertion automatique** section de la **divers** page contrôle le comportement suivant :
 
-|Name|Description|
+|Nom|Description|
 |-|-----------------|
-|Balises de fermeture|Insère des balises de fermeture pour les nouveaux éléments.|
+|Balises de fermeture|Insère des étiquettes de fermeture pour les nouveaux éléments.|
 |Guillemets d'attribut|Insère les guillemets marquant une valeur d'attribut lorsque vous entrez un nouveau nom d'attribut.|
 |Autre balisage|Complète les commentaires, CDATA, DOCTYPE, instructions de traitement et autres déclarations de balisage.|
 

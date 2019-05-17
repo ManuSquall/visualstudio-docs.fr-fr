@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779344"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657283"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Met à jour le fichier solution et tous ses fichiers projet, ou le fichier projet spécifié, aux formats [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actuels pour ces fichiers.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -44,7 +43,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  Les solutions ou projets sous contrôle de code source doivent être extraits avant de pouvoir être mis à niveau.  
   
- L’utilisation du commutateur `/upgrade` ne démarre pas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau des projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consultez [Comment : résoudre les problèmes ayant échoué Visual Studio projet mises à niveau](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
+ L’utilisation du commutateur `/upgrade` ne démarre pas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les résultats de la mise à niveau peuvent être vus dans le rapport de mise à niveau pour le langage de développement de la solution ou du projet. Aucune information d’erreur ni d’utilisation n’est retournée. Pour plus d’informations sur la mise à niveau de projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], voir [Guide pratique pour résoudre les problèmes de mise à niveau de projets Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple met à niveau un fichier solution nommé « MyProject.sln » dans votre dossier par défaut des solutions [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  

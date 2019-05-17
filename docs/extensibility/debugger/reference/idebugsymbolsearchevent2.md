@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85556fb8549b6ebab679fed35d5d39fbd060fbff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e105f8d90c9482123c6adf44a527abd3e00f03b3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703017"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226177"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour indiquer que les symboles de débogage pour un module en cours de débogage ont été chargées.
@@ -46,7 +46,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  Visual Studio utilise généralement cet événement pour mettre à jour l’état des symboles chargés dans le **Modules** fenêtre.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

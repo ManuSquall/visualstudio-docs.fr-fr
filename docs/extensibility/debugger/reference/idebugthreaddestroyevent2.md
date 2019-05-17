@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc94a1289f8b65798f5ad0dab1b4e82bf76b533
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 65bb3c2440a2d76496dda962b199f30ef89023c1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226242"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsqu’un thread a s’exécuter jusqu'à la fin.
@@ -44,7 +44,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio utilise cet événement pour mettre à jour le **Threads** fenêtre.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

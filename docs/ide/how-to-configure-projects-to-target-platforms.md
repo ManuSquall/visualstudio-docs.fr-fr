@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438188"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procédure : Configurer des projets pour des plateformes cibles
 
@@ -35,20 +35,20 @@ Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nou
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Pour configurer un projet pour cibler une plateforme 64 bits
 
-1.  Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.
+1. Dans la barre de menus, choisissez **Build** > **Gestionnaire de configurations**.
 
-2.  Dans la liste **Plateforme de la solution active**, choisissez une plateforme 64 bits pour la solution à cibler, puis choisissez le bouton **Fermer**.
+2. Dans la liste **Plateforme de la solution active**, choisissez une plateforme 64 bits pour la solution à cibler, puis choisissez le bouton **Fermer**.
 
-    1.  Si la plateforme voulue ne s’affiche pas dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.
+    1. Si la plateforme voulue ne s’affiche pas dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.
 
          La boîte de dialogue **Nouvelle plateforme de solution** s’affiche.
 
-    2.  Dans la liste **Tapez ou sélectionnez la nouvelle plateforme**, choisissez **x64**.
+    2. Dans la liste **Tapez ou sélectionnez la nouvelle plateforme**, choisissez **x64**.
 
         > [!NOTE]
-        >  Si vous affectez un nouveau nom à votre configuration, vous devrez peut-être modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme correcte.
+        > Si vous affectez un nouveau nom à votre configuration, vous devrez peut-être modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme correcte.
 
-    3.  Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.
+    3. Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.
 
 Les propriétés de tous les projets qui ciblent la plateforme 64 bits sont mises à jour et la prochaine génération du projet est optimisée pour les plateformes 64 bits.
 

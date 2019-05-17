@@ -13,12 +13,12 @@ ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8ed14761b77e3469b2c19d0e9fd2ff3732bb72d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 22e4d4cdf1e5ca610dbdb067f8195fb730139c3d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59001117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690698"
 ---
 # <a name="vstextview-object"></a>Objet VSTextView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +40,6 @@ L’affichage de texte est une fenêtre qui permet aux utilisateurs d’afficher
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Effectue des opérations sur la vue à partir d’un thread différent.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Édition de figures](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
+ [Édition de figures](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)   
  [Objet VSTextBuffer](../extensibility/vstextbuffer-object.md)   
  [Accès au mode texte à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

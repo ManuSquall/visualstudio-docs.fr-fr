@@ -1,26 +1,27 @@
 ---
 title: Guide pratique pour utiliser Boost.Test pour C++
-ms.date: 01/29/2018
+description: Utilisez Boost.Test pour créer des tests unitaires dans Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31de4178d5d6ab2e1798c0b881ceb0fcb6fb2366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954213"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226103"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 
-Dans **Visual Studio 2017 version 15.5** et ultérieur, l’adaptateur de test Boost.Test est intégré dans l’IDE Visual Studio comme composant de la charge de travail **Développement Desktop en C++**.
+Dans Visual Studio 2017 et ultérieur, l’adaptateur de test Boost.Test est intégré dans l’IDE Visual Studio comme composant de la charge de travail **Développement Desktop en C++**.
 
 ![Adaptateur de test pour Boost.Test](media/cpp-boost-component.png)
 
-Si la charge de travail **Développement Desktop en C++** n’est pas installée, ouvrez **Visual Studio Installer** et sélectionnez **Modifier**. Sélectionnez la charge de travail **Développement Desktop en C++**, puis choisissez le bouton **Modifier**.
+Si la charge de travail **Développement Desktop en C++** n’est pas installée, ouvrez **Visual Studio Installer**. Sélectionnez la charge de travail **Développement Desktop en C++**, puis choisissez le bouton **Modifier**.
 
 ## <a name="install-boost"></a>Installer Boost
 
@@ -48,7 +49,7 @@ Boost.Test nécessite [Boost](http://www.boost.org/)! Si Boost n’est pas insta
 
 Le modèle d’élément utilise la variante à en-tête unique de Boost.Test, mais vous pouvez modifier le chemin d’accès #include pour utiliser la variante avec bibliothèque autonome. Pour plus d’informations, consultez la section [Ajouter des directives include](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Créer un projet de test (Visual Studio 2017 version 15.5)
+## <a name="create-a-test-project"></a>Créer un projet de test
 
 Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément de test préconfiguré n’est disponible pour Boost.Test. Vous devez donc créer et configurer un projet d’application de console pour y placer vos tests.
 
@@ -73,6 +74,7 @@ Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. Enregistrez et fermez le fichier *\*.vcxproj*, puis rechargez le projet.
 
    d. Pour ouvrir les **pages de propriétés**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Propriétés**.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37ad954202910930ff06c8206e66c0594a8d1d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ac9b23c40b7481fc7520b109afc7d23864582548
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107396"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225691"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Cette interface énumère les programmes en cours d’exécution dans la session de débogage actuelle.

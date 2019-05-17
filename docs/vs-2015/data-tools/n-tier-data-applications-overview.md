@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693770"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-* de couche données qui sont des données applications sont divisées en plus
   
 - Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des Applications distantes avec LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des Applications distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Couche de présentation  
  Le *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Il contient souvent une logique d’application supplémentaires également. Composants de la couche présentation standard sont les suivantes :  
   
 - Données de liaison des composants, tels que le <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) des classes d’entité pour une utilisation dans la couche de présentation.  
+- Objet de représentations de données, tel que [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) des classes d’entité pour une utilisation dans la couche de présentation.  
   
   La couche de présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). La couche de présentation n’accède pas directement à la couche données. La couche de présentation communique avec la couche de données par le biais du composant d’accès aux données dans la couche intermédiaire.  
   
@@ -57,9 +57,9 @@ N-* de couche données qui sont des données applications sont divisées en plus
   
 - Composants d’accès aux données et logique, telle que la suivante :  
   
-  - [Les TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Les TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et [DataAdapters et DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Objet de représentations de données, tel que [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
+  - Objet de représentations de données, tel que [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes d’entité.  
   
   - Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.  
   
@@ -87,9 +87,9 @@ Couche Données
   
  [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [Applications multicouches et distantes avec LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [Applications multicouches et distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Data.Linq.ITable.Attach%2A>   

@@ -11,12 +11,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 27
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3ff63e13dc3723cff9e87ce40e6a57b062179f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 40e22ae7cc14d230f4111760268452ec1372af32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686671"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Si vous avez un ordinateur 64 bits, vous pouvez exécuter des tests unitaires e
 1. Si votre code ou vos tests ont été compilés en tant que 32-bit/x86, mais que vous souhaitez maintenant les exécuter en tant que processus 64 bits, vous devez les recompiler en tant qu’**Any CPU** ou éventuellement en tant que **64 bits**.  
   
     > [!TIP]
-    >  Pour une flexibilité maximale, vous devez compiler vos projets de test avec la configuration **Any CPU**. Vous pouvez ensuite les exécuter sur des agents 32 et 64 bits. La compilation de projets de test avec la configuration **64 bits** ne présente aucun avantage particulier.  
+    > Pour une flexibilité maximale, vous devez compiler vos projets de test avec la configuration **Any CPU**. Vous pouvez ensuite les exécuter sur des agents 32 et 64 bits. La compilation de projets de test avec la configuration **64 bits** ne présente aucun avantage particulier.  
   
 2. Dans le menu de Visual Studio, choisissez **Test**, puis **Paramètres** et enfin **Architecture de processeur**. Choisissez **x64** pour exécuter les tests en tant que processus 64 bits.  
   
@@ -41,4 +41,4 @@ Si vous avez un ordinateur 64 bits, vous pouvez exécuter des tests unitaires e
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)   
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
- [Spécification des paramètres de test pour les tests Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Spécification des paramètres de test pour les tests Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

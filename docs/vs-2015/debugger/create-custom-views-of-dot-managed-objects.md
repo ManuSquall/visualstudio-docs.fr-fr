@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949878"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702416"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Créer des vues personnalisées d’objets gérés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,12 +48,12 @@ Vous pouvez personnaliser la façon dont Visual Studio affiche les types de donn
  En code natif, vous pouvez ajouter des expansions de type de données personnalisées au fichier autoexp.dat, situé dans le répertoire Programmes\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Ce fichier contient des instructions sur la façon d'écrire les règles `autoexp`.  
   
 > [!CAUTION]
->  La structure de ce fichier et la syntaxe des règles autoexp peuvent varier d’une mise en production à l’autre de Visual Studio.  
+> La structure de ce fichier et la syntaxe des règles autoexp peuvent varier d’une mise en production à l’autre de Visual Studio.  
   
- Les vues de type natives peuvent également être personnalisées en écrivant un complément Évaluateur d'expression. Pour plus d’informations, consultez [exemple EEAddIn : Débogage Expression complément Évaluateur](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Les vues de type natives peuvent également être personnalisées en écrivant un complément Évaluateur d'expression. Pour plus d’informations, consultez [exemple EEAddIn : Débogage Expression complément Évaluateur](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
  [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
- [Amélioration du débogage avec les attributs d’affichage de débogueur](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Amélioration du débogage avec les attributs d’affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : L’évaluation de la fonction &#39;fonction&#39; a expiré et dû être abandonnée de manière unsafe | Microsoft Docs'
+title: 'Erreur : Évaluation de la fonction &#39;fonction&#39; a expiré et dû être abandonnée de manière unsafe | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5baf69e697e7ceb9c6b0c5f83573dc106303cca2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850977"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : L’évaluation de la fonction &#39;fonction&#39; a expiré et dû être abandonnée de manière non sécurisée
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : Évaluation de la fonction &#39;fonction&#39; a expiré et dû être abandonnée de manière non sécurisée
 
-Texte du message complet : évaluation de la fonction 'fonction' a dépassé le délai et dû être abandonnée dans une façon non sécurisée. Cela a peut-être endommagé le processus cible.
+Texte du message complet : L’évaluation de la fonction 'fonction' a dépassé le délai et dû être abandonnée dans une façon non sécurisée. Cela a peut-être endommagé le processus cible.
 
 Pour le rendre plus facile à inspecter l’état d’objets .NET, le débogueur force automatiquement le processus débogué à exécuter du code supplémentaire (en général, les méthodes d’accesseur Get de propriété et les fonctions de ToString). Dans la plupart des scénarios de tous les, ces fonctions s’exécuter rapidement et facilitant le débogage. Toutefois, le débogueur ne s’exécute l’application dans un bac à sable. Par conséquent, un accesseur Get de propriété ou de la méthode ToString qui appelle une fonction native qui se bloque peut entraîner des délais d’expiration longue qui n’est peut-être pas récupérable. Si vous rencontrez ce message d’erreur, cela s’est produite.
 
@@ -42,7 +42,7 @@ Le message d’erreur vous indiquera le nom de la fonction que le débogueur a e
 
 Le message d’erreur vous indiquera le nom de la fonction que le débogueur a essayé d’appeler. Si l’accesseur Get de propriété ou de la méthode ToString parfois ne parvient pas à s’exécuter correctement, en particulier dans les situations où le problème est que le code doit exécuter du code d’un autre thread, la fonction de l’implémentation peut appeler `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency` pour demander au débogueur d’abandon de la fonction version d’évaluation. Avec cette solution, il est toujours possible d’évaluer explicitement ces fonctions, mais le comportement par défaut est que l’exécution s’arrête lorsque l’appel de NotifyOfCrossThreadDependency se produit.
 
-### <a name="solution-3-disable-all-implicit-evaluation"></a>Solution #3 : Désactiver tous les évaluation implicite
+### <a name="solution-3-disable-all-implicit-evaluation"></a>Solution #3 : Désactiver l’évaluation implicite tous les
 
 Si les solutions précédentes ne résolvent pas le problème, accédez à **outils** > **Options**et désactivez le paramètre **débogage**  >   **Général** > **activer l’évaluation de la propriété et d’autres appels de fonction implicite**. Cela désactive la plupart des évaluations de fonction implicite et devrait résoudre le problème.
 

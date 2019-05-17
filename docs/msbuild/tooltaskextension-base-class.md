@@ -15,19 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938913"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
 De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.
 
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres des classes de base.
-
 
 | Paramètre | Description |
 | - | - |

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402925"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
 Un *référence de service* permet à un projet à l’accès à un ou plusieurs [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilisez le **ajouter une référence de Service** boîte de dialogue pour rechercher des [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
@@ -37,7 +37,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
 2. Dans le **adresse** zone, entrez l’URL du service, puis cliquez sur **accédez** pour rechercher le service. Si le service implémente la sécurité de nom et mot de passe utilisateur, vous devrez peut-être utiliser un nom d’utilisateur et mot de passe.
 
     > [!NOTE]
-    >  Vous devez référencer des services uniquement à partir d’une source approuvée. L’ajout de références à partir d’une source non fiable peut compromettre la sécurité.
+    > Vous devez référencer des services uniquement à partir d’une source approuvée. L’ajout de références à partir d’une source non fiable peut compromettre la sécurité.
 
      Vous pouvez également sélectionner l’URL à partir de la **adresse** liste, qui stocke les 15 URL précédentes à partir duquel les métadonnées de service valide a été trouvée.
 
@@ -88,7 +88,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
      Le client du service sera retiré de la solution et les métadonnées qui décrivent le service seront retirée le *app.config* fichier.
 
     > [!NOTE]
-    >  Tout code qui fait référence à la référence de service doit être supprimé manuellement.
+    > Tout code qui fait référence à la référence de service doit être supprimé manuellement.
 
 ## <a name="see-also"></a>Voir aussi
 

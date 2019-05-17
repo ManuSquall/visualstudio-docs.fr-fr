@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 082b0960fbde04becf204808dd7f8fa9f7a24b51
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 22d048bb915146e6c966dd16ca3b2345b5d697ba
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700024"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614727"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Cette méthode récupère l’exception associée à un objet, le cas échéant.
@@ -38,20 +41,18 @@ int GetExceptionObjectAndType(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppException`
+## <a name="parameters"></a>Paramètres
+`ppException`\
+[out] Retourne l’objet qui représente l’exception.
 
- [out] Retourne l’objet qui représente l’exception.
-
- `ppField`
-
- [out] Retourne l’objet qui représente un champ spécifique qui peut avoir provoqué l’exception (Cela peut être une valeur null).
+`ppField`\
+[out] Retourne l’objet qui représente un champ spécifique qui peut avoir provoqué l’exception (Cela peut être une valeur null).
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
 > [!NOTE]
->  Pour vérifier s’il existe une exception, vérifiez la valeur retournée par `ppException`: Si c’est une valeur null, aucune exception n’est associée à cet objet.
+> Pour vérifier s’il existe une exception, vérifiez la valeur retournée par `ppException`: Si c’est une valeur null, aucune exception n’est associée à cet objet.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

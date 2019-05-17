@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402806"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procédure : Configurer l’héritage à l’aide du Concepteur O/R
 Le **concepteur objet/relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage à table unique tel qu’il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
@@ -33,12 +33,12 @@ La création d'un modèle objet qui utilise l'héritage (et correspond aux donn�
 4. Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.
 
     > [!NOTE]
-    >  Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d’héritage pointe vers la première classe.
+    > Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d’héritage pointe vers la première classe.
 
 5. Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevez une erreur si vous tentez de supprimer des propriétés de l’objet utilisées pour les associations : [La propriété \<nom de propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
-    >  Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées sous forme de propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le modificateur d’héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [fondamentaux de l’héritage (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
+    > Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées sous forme de propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le modificateur d’héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [fondamentaux de l’héritage (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
 6. Sélectionnez la ligne d’héritage dans le **Concepteur O/R**.
 

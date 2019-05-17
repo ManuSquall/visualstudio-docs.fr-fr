@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691788"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Implémentation d’extraits de Code](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework prend en charge des extraits de Code  
  L’infrastructure de package managé (MPF) prend en charge la plupart des fonctionnalités de l’extrait de code, de lire le modèle à insérer l’extrait de code et permettant spéciale en mode édition. Prise en charge est gérée via la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe.  
@@ -117,7 +117,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insérer un extrait de Code à l’aide d’une commande de Menu  
  Pour utiliser une commande de menu pour afficher le navigateur de l’extrait de code, vous ajoutez une commande de menu et appelez ensuite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface en réponse à cette commande de menu.  
   
-1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.  
   
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [L’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Extraits de code](../../ide/code-snippets.md)   
- [Procédure pas à pas : Obtention d’une liste d’extraits de Code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

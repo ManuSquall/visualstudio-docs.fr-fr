@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 874541972df030d55721b78f115b730e625a7b02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686819"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051 : Ne pas déclarer de champs d'instances visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58948595"
  Pour corriger une violation de cette règle, rendez le champ `private` ou `internal` et l’exposer à l’aide d’une propriété visible de l’extérieur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Champs extérieurement visibles ne fournissent pas les avantages qui ne sont pas disponibles aux propriétés. En outre, les champs publics ne peuvent pas être protégés par [demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Consultez [CA2112 : Types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Ne supprimez aucun avertissement de cette règle. Champs extérieurement visibles ne fournissent pas les avantages qui ne sont pas disponibles aux propriétés. En outre, les champs publics ne peuvent pas être protégés par [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Consultez [CA2112 : Types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre un type (`BadPublicInstanceFields`) qui enfreint cette règle. `GoodPublicInstanceFields` Affiche le code corrigé.
@@ -55,4 +55,4 @@ ms.locfileid: "58948595"
  [CA2112 : Types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [Demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

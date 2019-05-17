@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b55e6663ac1d9d679c2cdf524fbd7d1848dc22b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7965f9c1990f894d53f0f114f74636814b9fdbb1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686491"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458865"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Obtient la taille, en octets, de la valeur de propriété.
@@ -36,8 +39,8 @@ int GetSize ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSize`
+## <a name="parameters"></a>Paramètres
+ `pdwSize`\
 
  [out] Retourne la taille, en octets, de la valeur de propriété.
 

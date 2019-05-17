@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093733"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689865"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Ajout d’un menu contextuel dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
   
  Cette procédure pas à pas montre comment créer un menu contextuel sous forme de menu Visual Studio, en déclarant les éléments de menu dans le fichier .vsct et ensuite à l’aide de Managed Package Framework pour les implémenter dans la classe qui définit la fenêtre outil. Cette approche facilite l’accès aux commandes de Visual Studio, les éléments d’interface utilisateur et le modèle objet Automation.  
   
- Si votre menu contextuel n’accède pas aux fonctionnalités de Visual Studio, vous pouvez également utiliser le <xref:System.Windows.FrameworkElement.ContextMenu%2A> propriété d’un élément XAML dans le contrôle utilisateur. Pour plus d’informations, consultez [ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ Si votre menu contextuel n’accède pas aux fonctionnalités de Visual Studio, vous pouvez également utiliser le <xref:System.Windows.FrameworkElement.ContextMenu%2A> propriété d’un élément XAML dans le contrôle utilisateur. Pour plus d’informations, consultez [ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

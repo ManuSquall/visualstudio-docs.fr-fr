@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc5ddb4561c2c353271babe590a9e5b2b3c2e510
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428732"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifications et progression pour Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Systèmes de notification
@@ -417,7 +417,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - Au sein d’un onglet de document
 
 > [!IMPORTANT]
->  Il est possible de placer une barre d’informations pour donner un message sur le contexte global. Cela s’affiche entre les barres d’outils et le document bien. Cela n’est pas recommandée, car cela entraîne des problèmes avec le « saut et jerk » de l’IDE et doit être évitée, sauf si cela est absolument nécessaire et approprié.
+> Il est possible de placer une barre d’informations pour donner un message sur le contexte global. Cela s’affiche entre les barres d’outils et le document bien. Cela n’est pas recommandée, car cela entraîne des problèmes avec le « saut et jerk » de l’IDE et doit être évitée, sauf si cela est absolument nécessaire et approprié.
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Placer une barre d’informations dans un ToolWindowPane
  La méthode ToolWindowPane.AddInfoBar(IVsInfoBar) peut être utilisée pour ajouter une barre d’informations à une fenêtre outil. Cette API peut ajouter un IVsInfoBar (le InfoBarModel est une implémentation par défaut), ou un IVsUIElement.

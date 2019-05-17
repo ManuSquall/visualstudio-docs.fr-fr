@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c576de860183353831eb9cc33293ead11123c59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921775"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 Cette interface permet à un évaluateur d’expression (EE) pour afficher la valeur d’une propriété dans le format est nécessaire.
@@ -50,7 +50,7 @@ Le [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-h
 
 En règle générale, une visionneuse personnalisée fournit une vue en lecture seule des données, puisque le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface fournie à [une valeur d’affichage](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) ne possède aucune méthode pour la modification de la valeur de propriété, sauf sous forme de chaîne. Pour prendre en charge la modification des blocs arbitraires de données, le EE implémente une interface personnalisée sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée puis fournit les méthodes nécessaires pour modifier un bloc de données arbitraire.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

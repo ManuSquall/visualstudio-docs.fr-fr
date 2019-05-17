@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402830"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
@@ -59,7 +59,7 @@ Par défaut, la logique pour mettre à jour une base de données (insertions, mi
 10. Cliquez sur **OK** ou **Appliquer**.
 
     > [!NOTE]
-    >  Vous pouvez continuer à configurer le comportement pour chaque combinaison classe et le comportement, que vous cliquez sur **appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement s’affiche et vous offre la possibilité d’appliquer vos modifications.
+    > Vous pouvez continuer à configurer le comportement pour chaque combinaison classe et le comportement, que vous cliquez sur **appliquer** après chaque modification. Si vous modifiez la classe ou le comportement avant de cliquer sur **appliquer**, une boîte de dialogue d’avertissement s’affiche et vous offre la possibilité d’appliquer vos modifications.
 
 Pour rétablir l’utilisation de la logique runtime par défaut pour les mises à jour, cliquez sur les points de suspension à côté de la commande **Insert**, **Update** ou **Delete** dans la fenêtre **Propriétés**, puis sélectionnez **Utiliser le runtime** dans la boîte de dialogue **Configurer le comportement**.
 

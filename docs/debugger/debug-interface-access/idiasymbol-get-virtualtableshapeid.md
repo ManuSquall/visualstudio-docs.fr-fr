@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc43d94cfe94e63dfb477429c2c81471e5c40af4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400127"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Récupère l’identificateur de symbole de forme de table virtuelle du symbole.
@@ -39,9 +39,9 @@ HRESULT get_virtualTableShapeId ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.
 
 ## <a name="see-also"></a>Voir aussi

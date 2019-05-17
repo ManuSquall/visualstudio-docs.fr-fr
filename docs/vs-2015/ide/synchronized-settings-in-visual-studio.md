@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678861"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Paramètres synchronisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
 ## <a name="synchronized-settings"></a>Paramètres synchronisés
  Par défaut, les paramètres suivants sont synchronisés.
 
-- Paramètres de développement (vous devez sélectionner un ensemble de paramètres la première fois que vous exécutez Visual Studio, mais vous pouvez modifier la sélection à tout moment. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Paramètres de développement (vous devez sélectionner un ensemble de paramètres la première fois que vous exécutez Visual Studio, mais vous pouvez modifier la sélection à tout moment. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
 - Les options suivantes des pages **Outils &#124; Options** :
 
@@ -55,7 +55,7 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
  Les paramètres peuvent être synchronisés entre toutes les éditions de Visual Studio 2015, y compris les éditions Express et la Community. Les paramètres sont également synchronisés entre les produits de la famille Visual Studio, tels que Blend. Toutefois, chacun de ces produits de la famille peut avoir ses propres paramètres qui ne sont pas partagés avec Visual Studio. Par exemple, les paramètres spécifiques à Blend sur l'ordinateur A seront partagés avec Blend sur l'ordinateur B, mais pas avec Visual Studio sur l'ordinateur A ou B.
 
 > [!WARNING]
->  Les paramètres ne sont pas synchronisés entre Visual Studio 2013 et Visual Studio 2015. La première fois que vous ouvrez Visual Studio 2015, vos paramètres de Visual Studio 2013 sont migrés, mais ils ne peuvent pas être migrés à nouveau vers Visual Studio 2013.
+> Les paramètres ne sont pas synchronisés entre Visual Studio 2013 et Visual Studio 2015. La première fois que vous ouvrez Visual Studio 2015, vos paramètres de Visual Studio 2013 sont migrés, mais ils ne peuvent pas être migrés à nouveau vers Visual Studio 2013.
 
 ## <a name="see-also"></a>Voir aussi
  [Personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)

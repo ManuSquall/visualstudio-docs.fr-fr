@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5858c5b559720486c24bf3fbc7562a13b9fb8372
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b04e5d87d917b150e351d5a63ea3c0c4f951394b
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683881"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615283"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Obtient le nom de cet alias.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrName`
-
- [out] Nom de l’alias.
+## <a name="parameters"></a>Paramètres
+`pbstrName`\
+[out] Nom de l’alias.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435627"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.
@@ -47,7 +47,7 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
  Choisissez ce contrôle pour masquer des canaux. Par exemple, si un thread est à 100 % de synchronisation pendant toute la durée de votre processus managé, vous pouvez le masquer pendant que vous analysez d’autres threads.
 
 > [!NOTE]
->  Masquer un thread le supprime également du temps de calcul, qui est affiché dans la légende active et dans les rapports de profils.
+> Masquer un thread le supprime également du temps de calcul, qui est affiché dans la légende active et dans les rapports de profils.
 
 ## <a name="show-all-channels"></a>Afficher tous les canaux
  Ce contrôle est actif quand un ou plusieurs canaux sont masqués. Si vous cliquez dessus, tous les éléments masqués sont affichés et réintégrés dans les calculs de temps.

@@ -12,12 +12,12 @@ ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab95443f611c9cc6a1e74b2b5120047344a9857a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8bc18204d3cbe20635ab0680a50b4d1555dce2ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690309"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugField : IUnknown
  Un fournisseur de symboles implémente cette interface en tant que classe de base pour tous les champs.  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Cette interface est la classe de base pour tous les champs. Selon la valeur de retour de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), cette interface peut retourner des interfaces plus spécialisées à l’aide de [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). En outre, le nombre d’interfaces retour `IDebugField` objets à partir de différentes méthodes.  
+ Cette interface est la classe de base pour tous les champs. Selon la valeur de retour de [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), cette interface peut retourner des interfaces plus spécialisées à l’aide de [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). En outre, le nombre d’interfaces retour `IDebugField` objets à partir de différentes méthodes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugField`.  

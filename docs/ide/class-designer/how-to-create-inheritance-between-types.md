@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975370"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procédure : Créer un héritage entre les types dans le Concepteur de classes
 
@@ -26,21 +26,21 @@ Pour créer une relation d’héritage entre deux types sur un diagramme de clas
 
 ## <a name="to-create-an-inheritance-between-types"></a>Pour créer un héritage entre des types
 
-1.  À partir de votre projet affiché dans **l’Explorateur de solutions**, ouvrez le fichier du diagramme de classes (.cd).
+1. À partir de votre projet affiché dans **l’Explorateur de solutions**, ouvrez le fichier du diagramme de classes (.cd).
 
      Si vous n'avez pas de diagramme de classes, créez-en un. Voir [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md).
 
-2.  Dans la **boîte à outil**, sous **Concepteur de classes**, cliquez sur **Héritage**.
+2. Dans la **boîte à outil**, sous **Concepteur de classes**, cliquez sur **Héritage**.
 
-3.  Dans le diagramme de classes, dessinez une ligne d'héritage entre les types de votre choix, depuis :
+3. Dans le diagramme de classes, dessinez une ligne d'héritage entre les types de votre choix, depuis :
 
-    -   une classe dérivée vers la classe de base ;
+    - une classe dérivée vers la classe de base ;
 
-    -   une classe d'implémentation vers l'interface implémentée ;
+    - une classe d'implémentation vers l'interface implémentée ;
 
-    -   une interface d'extension vers l'interface étendue.
+    - une interface d'extension vers l'interface étendue.
 
-4.  Éventuellement, dans le cas d'un type dérivé d'un type générique, cliquez sur la ligne d'héritage. Dans la fenêtre **Propriétés**, définissez la propriété **Arguments de type** sur le type souhaité pour le type générique.
+4. Éventuellement, dans le cas d'un type dérivé d'un type générique, cliquez sur la ligne d'héritage. Dans la fenêtre **Propriétés**, définissez la propriété **Arguments de type** sur le type souhaité pour le type générique.
 
     > [!NOTE]
     > Si une classe abstraite parente contient au moins un membre abstrait, tous les membres abstraits sont implémentés en tant que classes d'héritage non abstraites.

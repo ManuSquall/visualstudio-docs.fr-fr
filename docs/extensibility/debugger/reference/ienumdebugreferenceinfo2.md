@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65b02bc58d300a93cd33ebcdd5f21d1b9665b19
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 28e10da879427f885e0af0109e3a701e4fcb44ec
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223249"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 Cette interface énumère [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structures.
@@ -48,7 +48,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une référence est essentiellement un type et une adresse, tandis qu’une propriété est un nom, le type et l’adresse. Une référence persiste tant que l’objet référencé existe dans la mémoire. Consultez [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) pour plus d’informations.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

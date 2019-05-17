@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441803"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procédure : Attacher des extensions de code managé à des documents
   Vous pouvez attacher un assembly de personnalisation à un document Microsoft Office Word existant ou d’un classeur Microsoft Office Excel. Le document ou le classeur peut être dans n’importe quel format de fichier qui est pris en charge par les projets Microsoft Office et les outils de développement dans Visual Studio. Pour plus d’informations, consultez [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044262"
  Pour attacher une personnalisation à un document Word ou Excel, utilisez le <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> méthode de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Étant donné que la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe est conçue pour être exécuté sur un ordinateur qui n’a pas de Microsoft Office est installé, vous pouvez utiliser cette méthode dans les solutions qui ne sont pas directement liées au développement de Microsoft Office (par exemple, une application console ou Windows Forms).
 
 > [!NOTE]
->  La personnalisation ne sera pas chargé si le code attend des contrôles au document spécifié n’a pas.
+> La personnalisation ne sera pas chargé si le code attend des contrôles au document spécifié n’a pas.
 
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Attacher ou détacher un assembly VSTO à partir d’un document Word ? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

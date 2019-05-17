@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820404"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 
@@ -110,9 +110,9 @@ Cette implémentation contient une erreur d’off-en-un courants. Heureusement, 
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Pour utiliser les outils d’analyse de code de Visual Studio et SAL
 
-1.  Dans Visual Studio, ouvrez un projet C++ qui contient les annotations SAL.
+1. Dans Visual Studio, ouvrez un projet C++ qui contient les annotations SAL.
 
-2.  Dans la barre de menus, choisissez **Build**, **exécuter l’analyse du Code sur la Solution**.
+2. Dans la barre de menus, choisissez **Build**, **exécuter l’analyse du Code sur la Solution**.
 
      Prendre en compte la \_dans\_ exemple dans cette section. Si vous exécutez l’analyse du code sur celui-ci, cet avertissement s’affiche :
 
@@ -122,15 +122,15 @@ Cette implémentation contient une erreur d’off-en-un courants. Heureusement, 
 
 Le `_In_` annotation indique que :
 
--   Le paramètre doit être valide et ne sera pas modifié.
+- Le paramètre doit être valide et ne sera pas modifié.
 
--   La fonction lit uniquement à partir de la mémoire tampon seul élément.
+- La fonction lit uniquement à partir de la mémoire tampon seul élément.
 
--   L’appelant doit fournir la mémoire tampon et l’initialiser.
+- L’appelant doit fournir la mémoire tampon et l’initialiser.
 
--   `_In_` Spécifie « read-only ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.
+- `_In_` Spécifie « read-only ». Une erreur courante consiste à appliquer `_In_` à un paramètre qui doit avoir le `_Inout_` annotation à la place.
 
--   `_In_` est autorisé mais ignoré par l’Analyseur de valeurs scalaires non pointeur.
+- `_In_` est autorisé mais ignoré par l’Analyseur de valeurs scalaires non pointeur.
 
 ```cpp
 void InCallee(_In_ int *pInt)

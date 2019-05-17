@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385972"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Définit la propriété qui est spécifiée par le paramètre.  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Pour sélectionner le jeu de fonctionnalités de langage pris en charge lorsque le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script est initialisé, appeler `SetProperty` et transmettre une valeur qui correspond à la fonctionnalité de langage définie doit être activé pour SCRIPTPROP_INVOKEVERSIONING. Si cette propriété est définie sur 1 (SCRIPTLANGUAGEVERSION_5_7), les fonctionnalités de langage disponibles sont les mêmes que celles qui s’est affiché dans la version 5.7 de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script. Si elle est définie sur 2 (SCRIPTLANGUAGEVERSION_5_8), les fonctionnalités de langage disponibles sont ceux qui s’est affiché dans la version 5.7, en plus des nouvelles fonctionnalités qui ont été ajoutées dans la version 5.8. Par défaut, cette propriété est définie sur 0 (SCRIPTLANGUAGEVERSION_DEFAULT), ce qui équivaut à l’ensemble de fonctionnalités de langage qui s’est affiché dans la version 5.7, sauf si l’hôte prend en charge un comportement par défaut différente. Par exemple, Internet Explorer 8 accepte le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] des fonctionnalités de langage qui sont pris en charge par la version 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script par défaut lorsque le mode de document par défaut pour Internet Explorer 8 est en mode « Normes Internet Explorer 8 ». Soit le mode de document Internet Explorer 8 pour les normes d’Internet Explorer 7 ou le mode Quirks réinitialise le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script pour prendre en charge uniquement l’ensemble de fonctionnalités de langage qui existaient dans la version 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING doit être définie uniquement lorsque le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] est en cours d’initialisation du moteur de script.  
+> SCRIPTPROP_INVOKEVERSIONING doit être définie uniquement lorsque le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] est en cours d’initialisation du moteur de script.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre comment forcer le moteur de script à utiliser la division d’entier et permettre la surcharge de la fonction de comparaison.  

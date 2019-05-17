@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697491"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procédure : Utiliser la fenêtre Espion parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 - Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
   
   > [!TIP]
-  >  Vous devez ouvrir le **tâches parallèles** fenêtre pour afficher les informations de tâche dans le **espion parallèle** fenêtre.  
+  > Vous devez ouvrir le **tâches parallèles** fenêtre pour afficher les informations de tâche dans le **espion parallèle** fenêtre.  
   
 - Le  **\<ajouter un espion >** colonne, dans laquelle vous pouvez entrer des expressions à surveiller.  
   
@@ -90,4 +90,4 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Procédure pas à pas : Débogage d’une Application C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Procédure pas à pas : Débogage d’une application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

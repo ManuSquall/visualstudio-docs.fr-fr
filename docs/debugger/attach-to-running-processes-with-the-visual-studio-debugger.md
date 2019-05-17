@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565772"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus est en cours d’exécution, sélectionnez **déboguer** > **attacher au processus** ou appuyez sur **Ctrl**+**Alt** + **P** dans Visual Studio et utiliser le **attacher au processus** boîte de dialogue pour attacher le débogueur au processus.

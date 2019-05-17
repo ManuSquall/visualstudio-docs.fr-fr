@@ -14,17 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4563e1c28c17a173c211f979d2ca46503a6d19a7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f771f3c769ea41979210058a58dc1d0d125a4ffe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805128"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652096"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Tâche GetReferenceAssemblyPaths
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Retourne les chemins des assemblys de référence des différents frameworks.  
   
 ## <a name="parameters"></a>Paramètres  

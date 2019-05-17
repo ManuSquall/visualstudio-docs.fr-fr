@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909241"
 ---
 # <a name="project-priority"></a>Priorité de projet
 Un élément de projet est généralement un membre d’un seul projet dans la solution. Par conséquent, l’IDE peut facilement déterminer le projet qui est utilisé pour ouvrir l’élément. Toutefois, si un élément est un membre de plusieurs projets, l’IDE utilise un schéma de priorité pour déterminer le projet meilleures pour l’ouverture de l’élément.
@@ -34,5 +34,5 @@ Un élément de projet est généralement un membre d’un seul projet dans la s
 
 ## <a name="see-also"></a>Voir aussi
 - [Projet Fichiers divers](../../extensibility/internals/miscellaneous-files-project.md)
-- [Guide pratique pour Ouvrir des éditeurs pour les Documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Guide pratique pour ouvrir des éditeurs pour les documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Ajout d’un projet et de modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)

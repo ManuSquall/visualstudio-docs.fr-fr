@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928527"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; , élément (application ClickOnce)
 Identifie une extension de fichier à associer à l’application.
@@ -47,7 +47,7 @@ Identifie une extension de fichier à associer à l’application.
 |`progid`|Obligatoire. Un nom identifiant de manière unique le type de fichier.|
 |`defaultIcon`|Obligatoire. Spécifie l’icône à utiliser pour les fichiers avec cette extension. Le fichier icône doit être spécifié à l’aide de la [ \<fichier > élément](../deployment/file-element-clickonce-application.md) au sein de la [ \<assembly > élément](../deployment/assembly-element-clickonce-application.md) qui contient cet élément.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cet élément doit inclure une référence d’espace de noms XML à « urn : schemas-microsoft-ClickOnce.v 1 ». Si le `<fileAssociation>` élément est utilisé, il doit être placée après le `<application>` élément dans son parent [ \<assembly > élément](../deployment/assembly-element-clickonce-application.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ne remplace pas les associations de fichiers existantes. Toutefois, une application ClickOnce peut remplacer l’extension de fichier pour l’utilisateur actuel uniquement. Une fois que cette application ClickOnce est désinstallée, ClickOnce supprime l’association de fichier pour l’utilisateur, et l’association de la machine est à nouveau active.

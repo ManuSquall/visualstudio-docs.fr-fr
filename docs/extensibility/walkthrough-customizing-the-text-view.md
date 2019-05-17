@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796328"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procédure pas à pas : Personnaliser l’affichage de texte
 Vous pouvez personnaliser un affichage de texte en modifiant les propriétés suivantes dans sa table de format de l’éditeur :

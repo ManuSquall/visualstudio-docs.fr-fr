@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4997b8c711a67a3bb45529627e81e70b786acf00
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702068"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225990"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reprend l’exécution d’un thread.
@@ -36,8 +39,8 @@ int Resume ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSuspendCount`
+## <a name="parameters"></a>Paramètres
+ `pdwSuspendCount`\
 
  [out] Retourne le nombre de suspend après l’opération de reprise.
 

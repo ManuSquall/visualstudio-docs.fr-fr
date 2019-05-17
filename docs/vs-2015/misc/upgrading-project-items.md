@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083918"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698686"
 ---
 # <a name="upgrading-project-items"></a>Mise à niveau d’éléments de projet
 Si vous ajoutez ou gérez les éléments à l’intérieur des systèmes de projet que vous n’implémentez pas, vous devrez peut-être participer au processus de mise à niveau du projet. Crystal Reports est un exemple d’un élément qui peut être ajouté au système de projet.  
@@ -38,5 +38,5 @@ Si vous ajoutez ou gérez les éléments à l’intérieur des systèmes de proj
 2. Au moment où votre élément de projet reçoit une notification de la mise à niveau du projet, le **Assistant Conversion de Visual Studio** est toujours affichée. Par conséquent, vous devez utiliser les méthodes de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interface pour fournir des messages de mise à niveau à l’interface utilisateur de l’Assistant.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assistant Conversion de Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Assistant Conversion de Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Mise à niveau de projets personnalisés](../misc/upgrading-custom-projects.md)

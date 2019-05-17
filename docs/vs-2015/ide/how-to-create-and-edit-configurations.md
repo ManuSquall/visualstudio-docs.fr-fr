@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071198"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680410"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
 - Dans l’**Explorateur de solutions**, ouvrez le menu contextuel de la solution, puis choisissez **Gestionnaire de configurations**.  
   
   > [!NOTE]
-  >  Si la commande **Gestionnaire de configurations** n’apparaît pas dans le menu contextuel, regardez sous le menu **Générer**, dans la barre de menus. Si elle n’y figure pas non plus, dans la barre de menus, choisissez **Outils**, **Options**, puis dans le volet gauche de la boîte de dialogue **Options**, développez **Projets et solutions**, **Général**, et dans le volet droit, cochez la case **Afficher les configurations de build avancées**.  
+  > Si la commande **Gestionnaire de configurations** n’apparaît pas dans le menu contextuel, regardez sous le menu **Générer**, dans la barre de menus. Si elle n’y figure pas non plus, dans la barre de menus, choisissez **Outils**, **Options**, puis dans le volet gauche de la boîte de dialogue **Options**, développez **Projets et solutions**, **Général**, et dans le volet droit, cochez la case **Afficher les configurations de build avancées**.  
   
    Dans la boîte de dialogue **Gestionnaire de configurations**, vous pouvez utiliser la liste déroulante **Configuration de la solution active** pour sélectionner une configuration de build à l’échelle de la solution, modifier une configuration existante ou créer une nouvelle configuration. Vous pouvez utiliser la liste déroulante **Plateforme de la solution active** pour sélectionner la plateforme ciblée par la configuration, modifier une plateforme existante ou ajouter une nouvelle plateforme. Le volet **Contextes des projets** répertorie les projets de la solution. Pour chaque projet, vous pouvez sélectionner une plateforme et une configuration spécifiques au projet, modifier celles existantes, ou créer une nouvelle configuration et ajouter une nouvelle plateforme. Vous pouvez également cocher les cases qui indiquent si chaque projet est inclus lorsque vous utilisez la configuration à l’échelle de la solution pour générer ou déployer la solution.  
   
@@ -53,7 +53,7 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
   
      La fenêtre **Pages de propriétés** apparaît.  
   
-     Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier d’optimiser le code lorsque la solution est générée et, pour une configuration Debug, vous pouvez spécifier d’inclure le symbole de compilation conditionnelle `DEBUG`. Pour plus d’informations sur les paramètres des pages de propriétés, consultez [Présentation du Concepteur de projets](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier d’optimiser le code lorsque la solution est générée et, pour une configuration Debug, vous pouvez spécifier d’inclure le symbole de compilation conditionnelle `DEBUG`. Pour plus d’informations sur les paramètres des pages de propriétés, consultez [Présentation du Concepteur de projets](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Création et modification des configurations de projet  
   
@@ -126,4 +126,4 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

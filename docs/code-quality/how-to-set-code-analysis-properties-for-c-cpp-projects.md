@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815820"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procédure : Définir les propriétés d’analyse du code pour les projets C/C++
 Vous pouvez configurer les règles utilisées par l’outil d’analyse de code pour analyser le code dans chaque configuration de votre projet. En outre, vous pouvez diriger l’analyse du code pour supprimer des avertissements à partir du code qui a été généré et ajouté à votre projet par un outil tiers.

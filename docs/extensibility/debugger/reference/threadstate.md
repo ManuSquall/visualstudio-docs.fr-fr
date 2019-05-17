@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694372"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460712"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Spécifie l’état du thread.
@@ -45,21 +48,26 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>Membres
- THREADSTATE_RUNNING indique que le thread est en cours d’exécution.
+## <a name="fields"></a>Champs
+ `THREADSTATE_RUNNING`\
+ Indique que le thread est en cours d’exécution.
 
- THREADSTATE_STOPPED indique que le thread est arrêté en raison d’un point d’arrêt.
+ `THREADSTATE_STOPPED`\
+ Indique que le thread est arrêté en raison d’un point d’arrêt.
 
- THREADSTATE_FRESH indique que le thread a été créé, mais n’exécute pas encore de code.
+ `THREADSTATE_FRESH`\
+ Indique que le thread a été créé, mais n’exécute pas encore de code.
 
- THREADSTATE_DEAD indique que le thread est inactif.
+ `THREADSTATE_DEAD`\
+ Indique que le thread est inactif.
 
- THREADSTATE_FROZEN indique que le thread est figé (aucune exécution ne peut être effectuée).
+ `THREADSTATE_FROZEN`\
+ Indique que le thread est figé (aucune exécution ne peut être effectuée).
 
 ## <a name="remarks"></a>Notes
  Utilisé pour le `dwThreadState` champ la [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

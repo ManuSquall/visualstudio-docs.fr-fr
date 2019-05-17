@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440652"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procédure : Créer un Package de programme d’amorçage localisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
 3. Créez un manifeste du package nommé package.xml, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d'amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier Visual Studio package.xml et le changer durant cette étape.  
   
 > [!NOTE]
->  Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.  
+> Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

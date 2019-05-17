@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434301"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Compteurs Windows  
  Les compteurs Windows font partie de l’infrastructure de diagnostics Windows qui fournit des informations sur les performances du système d’exploitation ou d’une application, d’un service ou d’un pilote. Les compteurs Windows dépendent de la configuration de l’ordinateur actuel et peuvent ne pas être disponibles sur d’autres ordinateurs. Les compteurs de performances Windows sont collectés dans les fichiers de données de profilage en tant que marques de profilage, qui peuvent ensuite servir à filtrer les vues et les rapports.  

@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c5b0336e1f503d3f540fb8129beab57891564ce0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 16b4c2fb13a8de1824233b491d752b796aea907d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676548"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710 : Les identificateurs doivent être dotés d'un suffixe correct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,4 +93,4 @@ foreach(SomeType x in SomeDictionary.Values) { }
  [CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Attributs](http://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB : Événements et délégués](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [Attributs](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB : Événements et délégués](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

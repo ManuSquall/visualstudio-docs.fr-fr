@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439137"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procédure : Créer un rapport de suivi d’événements pour Windows (ETW) des outils de profilage
 Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.*etl*). Pour plus d’informations sur ce rapport, consultez [Suivi d’événements pour Windows (ETW), rapport](../profiling/event-tracing-for-windows-etw-report.md).
 
 > [!NOTE]
->  Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+> Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 - Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à l’aide de l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], consultez [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
 
@@ -29,7 +29,7 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
 
 ### <a name="to-generate-an-etw-report"></a>Pour générer un rapport Suivi d’événements pour Windows
 
--   Dans une fenêtre **Invite de commandes**, exécutez la commande suivante :
+- Dans une fenêtre **Invite de commandes**, exécutez la commande suivante :
 
      *chemin_outils* **VSPerfReport** *fichier_VSP*  **/Summary:ETW [/Xml]**
 

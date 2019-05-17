@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e7057d0a75252583ceb1d538aa71a46b65991b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829906"
 ---
 # <a name="basetype"></a>BaseType
 Types de base sont identifiés par `SymTagBaseType` symboles.
 
-## <a name="properties"></a>Propriétés
+## <a name="properties"></a>Properties
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Une des valeurs de la [BasicType (énumération)](../../debugger/debug-interface-access/basictype.md).|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Si le type de base est marqué en tant que const.|

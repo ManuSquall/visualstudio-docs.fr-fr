@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846587"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
@@ -100,7 +100,7 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
 
   mais il n’affiche pas le `here` ligne.
 
-- Un C# application console fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes. Une méthode lève une exception et prend en charge, tandis que d’une deuxième méthode lève la même exception mais ne la gère.
+- Une application de console c# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes. Une méthode lève une exception et prend en charge, tandis que d’une deuxième méthode lève la même exception mais ne la gère.
 
   ```csharp
   public class Class1
@@ -223,7 +223,7 @@ Pour ajouter des exceptions conditionnelles :
 ## <a name="see-also"></a>Voir aussi
 
 - [Poursuivre l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Guide pratique pour examiner un code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Guide pratique pour examiner du code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Utiliser des vérifications à l’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)

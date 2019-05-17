@@ -1,37 +1,32 @@
-items:
 - name: Outils de conteneur Visual Studio
   href: index.yml
-  items:
-  - name: Vue d'ensemble
-    href: overview.md
-  - name: Démarrage rapide
-    items:
-    - name: Outils de conteneur dans Visual Studio
-      href: container-tools.md
-    expanded: true
-  - name: Didacticiels
-    items:
-    - name: 'Tutoriel : Application multiconteneur avec Docker Compose'
-      href: tutorial-multicontainer.md
-    - name: 'Tutoriel : Kubernetes dans Visual Studio'
-      href: tutorial-kubernetes-tools.md
-    expanded: true
-  - name: Procédure
-    items:
-    - name: Déboguer une application dans un conteneur Docker local
-      href: edit-and-refresh.md
-    - name: Déployer sur un registre de conteneurs
-      href: hosting-web-apps-in-docker.md
-    - name: Déployer sur Azure App Service
-      href: deploy-app-service.md
-    - name: Configurer les outils de conteneur
-      href: container-tools-configure.md
-  - name: Résolution des problèmes
-    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537687"
+  items:
+    - name: Vue d'ensemble
+      href: overview.md
+    - name: Démarrage rapide
+      expanded: true
+      items:
+        - name: Outils de conteneur dans Visual Studio
+          href: container-tools.md
+    - name: Didacticiels
+      expanded: true
+      items:
+        - name: Application à plusieurs conteneurs avec Docker Compose
+          href: tutorial-multicontainer.md
+        - name: Kubernetes dans Visual Studio
+          href: tutorial-kubernetes-tools.md
+    - name: Procédure
+      items:
+        - name: Déboguer une application dans un conteneur Docker local
+          href: edit-and-refresh.md
+        - name: Déployer sur un registre de conteneurs
+          href: hosting-web-apps-in-docker.md
+        - name: Déployer sur Azure App Service
+          href: deploy-app-service.md
+        - name: Afficher et diagnostiquer des conteneurs
+          href: view-and-diagnose-containers.md
+        - name: Configurer les outils de conteneur
+          href: container-tools-configure.md
+    - name: Résolution des problèmes
+      href: troubleshooting-docker-errors.md

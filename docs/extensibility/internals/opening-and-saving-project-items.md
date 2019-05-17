@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860005"
 ---
 # <a name="opening-and-saving-project-items"></a>Ouverture et enregistrement d’éléments de projet
 Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture et l’enregistrement de vos fichiers de projets dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Les rubriques suivantes décrivent les différentes approches pour ouvrir et enregistrer des fichiers.
@@ -31,15 +31,15 @@ Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture 
 
  Fournit une explication détaillée, étape par étape de la façon dont l’IDE gère le **ouvrir avec** commande, demande l’ouverture d’un fichier qui a le choix des éditeurs standards.
 
-- [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md)
+- [Guide pratique pour ouvrir des éditeurs spécifiques à un projet](../../extensibility/how-to-open-project-specific-editors.md)
 
  Fournit des instructions détaillées permettant de spécifier que les fichiers d’un type particulier dans votre projet doivent être ouvert à l’aide d’un éditeur spécifique au projet.
 
-- [Guide pratique pour Ouvrir des éditeurs Standard](../../extensibility/how-to-open-standard-editors.md)
+- [Guide pratique pour ouvrir des éditeurs standard](../../extensibility/how-to-open-standard-editors.md)
 
  Fournit des instructions détaillées pour la spécification de l’activation de l’IDE ouvrir un éditeur standard pour les fichiers dans votre type de projet.
 
-- [Guide pratique pour Ouvrir des éditeurs pour les Documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Guide pratique pour ouvrir des éditeurs pour les documents ouverts](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  Fournit des instructions détaillées pour ouvrir un éditeur spécifique au projet pour un fichier ouvert.
 

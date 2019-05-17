@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958176"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -52,7 +52,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 | --- | --- |
 | **\_\_init\_\_.py** | Le fichier qui identifie l’application en tant que package. |
 | **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier *\_\_init\_\_.py* (indiquant que le dossier définit son propre package Python). |
-| **C++** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 version 15.7 et les versions antérieures, le fichier se trouve directement sous *templates*, et l’étape 2-4 vous amène à créer le sous-dossier.) Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
+| **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 version 15.7 et les versions antérieures, le fichier se trouve directement sous *templates*, et l’étape 2-4 vous amène à créer le sous-dossier.) Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | **admin.py** | Le fichier Python dans lequel vous étendez l’interface d’administration de l’application (reportez-vous à l’étape 6), utilisée pour initialiser une base de données et modifier ses données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |

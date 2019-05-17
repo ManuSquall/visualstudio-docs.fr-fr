@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433567"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : Créer un ensemble de règles PolicyActivity (hérité)
 Cette rubrique décrit comment créer un ensemble de règles d'activité de stratégie à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -28,7 +28,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
  Après avoir fait glisser un **stratégie** élément d’activité à partir de la **boîte à outils** vers l’aire de conception de flux de travail, vous pouvez sélectionner une règle existante ou créer un ensemble de règles pour le [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) activité. Vous sélectionnez une règle existante, définie à l’aide de la [sélectionnez règle boîte de dialogue (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md) et que vous créez des ensembles de règles à l’aide de la [règle éditeur de boîte de dialogue (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  Vous pouvez ouvrir le [règle éditeur de boîte de dialogue (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) boîte de dialogue directement en double-cliquant sur un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) activité qui se trouve sur l’aire de conception de flux de travail.  
+> Vous pouvez ouvrir le [règle éditeur de boîte de dialogue (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) boîte de dialogue directement en double-cliquant sur un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) activité qui se trouve sur l’aire de conception de flux de travail.  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Pour sélectionner ou créer un ensemble de règles pour une activité PolicyActivity  
   

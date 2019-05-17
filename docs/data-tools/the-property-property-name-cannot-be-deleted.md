@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b1e0652d19b10b1d1ede7b1b950d89ca1bf670c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c03ba87a7ae7f2321550179ae6354eb473c81465
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939643"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460572"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Impossible de supprimer la propriété \<nom de la propriété>
 
@@ -33,5 +33,4 @@ Affectez à **Propriété de discriminateur** une propriété différente de la 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

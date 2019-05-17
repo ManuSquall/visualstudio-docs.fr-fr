@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434146"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097074"
 Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier et déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS, mais en raison de restrictions de licences, le code doit être généré et exécuté à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant, [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), sur votre Mac. L’agent distant gère les demandes de génération de Visual Studio et exécute l’application sur un appareil iOS connecté au Mac ou dans le simulateur iOS sur le Mac.  
   
 > [!NOTE]
->  Pour plus d’informations sur l’utilisation des services Mac hébergés dans le cloud plutôt qu’un Mac, consultez [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Les instructions portent sur la génération à l’aide de Visual Studio Tools pour Apache Cordova. Pour suivre les instructions de génération à l’aide de Visual C++ pour le développement mobile multiplateforme, remplacez vcremote par vs-mda-remote.  
+> Pour plus d’informations sur l’utilisation des services Mac hébergés dans le cloud plutôt qu’un Mac, consultez [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Les instructions portent sur la génération à l’aide de Visual Studio Tools pour Apache Cordova. Pour suivre les instructions de génération à l’aide de Visual C++ pour le développement mobile multiplateforme, remplacez vcremote par vs-mda-remote.  
   
  Une fois que vous avez installé les outils permettant de générer avec iOS, reportez-vous à cette rubrique pour savoir comment configurer et mettre rapidement à jour l’agent distant en vue de développer du code pour iOS dans Visual Studio et sur votre Mac.  
   
@@ -93,7 +93,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
    Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](http://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés.  
   
   > [!NOTE]
-  >  Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity –enable`  
+  > Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous avez besoin d’installer vcremote sans sudo, vous pouvez installer Homebrew manuellement à un emplacement usr/local et ajouter son dossier bin à votre chemin. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity –enable`  
   
   Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
   
@@ -154,7 +154,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
 5. Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
   
    > [!NOTE]
-   >  Si vous ne pouvez pas envoyer une requête ping au Mac en utilisant le nom d’hôte, vous devrez peut-être utiliser l’adresse IP.  
+   > Si vous ne pouvez pas envoyer une requête ping au Mac en utilisant le nom d’hôte, vous devrez peut-être utiliser l’adresse IP.  
   
 6. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
   

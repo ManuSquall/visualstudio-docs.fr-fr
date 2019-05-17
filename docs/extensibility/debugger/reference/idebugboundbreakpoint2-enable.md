@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 267f7b3fed8df1a326bca9dd5c1ca8128330ee16
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c0f178497b9f53c488c8f4cb3142559a7883778a
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705084"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614659"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Active ou désactive le point d’arrêt.
@@ -37,10 +40,9 @@ int Enable( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`fEnable`
-
- [in] Valeur différente de zéro (`TRUE`) pour activer ou à zéro (`FALSE`) pour désactiver le point d’arrêt.
+## <a name="parameters"></a>Paramètres
+`fEnable`\
+[in] Valeur différente de zéro (`TRUE`) pour activer ou à zéro (`FALSE`) pour désactiver le point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).

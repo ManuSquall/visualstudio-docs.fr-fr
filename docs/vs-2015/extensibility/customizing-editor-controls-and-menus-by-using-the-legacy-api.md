@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f6faa99ad0ff9d564522baad47f9d252157ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556049"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personnalisation des Menus et contrôles d’édition à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Un service de langage ou un affichage de texte peut contrôler les menus context
  [Menus contextuels](../extensibility/context-menus.md)  
  Décrit les menus contextuels de l’éditeur.  
   
- [Guide pratique pour Mettre à jour de la barre d’état](../extensibility/how-to-update-the-status-bar.md)  
+ [Guide pratique pour mettre à jour la barre d’état](../extensibility/how-to-update-the-status-bar.md)  
  Fournit des instructions pour la mise à jour le **barre d’état**.  
   
 ## <a name="related-sections"></a>Rubriques connexes  

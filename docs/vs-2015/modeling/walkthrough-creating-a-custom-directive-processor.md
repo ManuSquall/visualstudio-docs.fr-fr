@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704052"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procédure pas à pas : Création d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. Dans Visual Studio, créez un projet de bibliothèque de classes C# ou Visual Basic nommé CustomDP.  
 
     > [!NOTE]
-    >  Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d’utiliser un projet d’extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) et d’inclure un fichier .pkgdef dans l’extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
+    > Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d’utiliser un projet d’extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) et d’inclure un fichier .pkgdef dans l’extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Ajoutez des références aux assemblys suivants :  
 
@@ -619,7 +619,7 @@ End Property
  Avant de pouvoir appeler une directive à partir d’un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous devez ajouter une clé de Registre pour le processeur de directive.  
 
 > [!NOTE]
->  Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable de définir une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) incluant un fichier .pkgdef avec votre assembly. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
+> Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable de définir une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) incluant un fichier .pkgdef avec votre assembly. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
 
  Des clés sont disponibles pour les processeurs de directive dans le Registre à l'emplacement suivant :  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  Dans cette section, vous ajoutez au Registre une clé pour votre processeur de directive personnalisé, dans le même emplacement.  
 
 > [!CAUTION]
->  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, sauvegardez toutes les données utiles qui se trouvent sur l'ordinateur.  
+> Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, sauvegardez toutes les données utiles qui se trouvent sur l'ordinateur.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Pour ajouter une clé de Registre pour le processeur de directive  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Ajoutez une nouvelle clé nommée CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Il s'agit du nom que vous utiliserez dans le champ Processeur de vos directives personnalisées. Ce nom ne doit pas nécessairement correspondre au nom de la directive, au nom de la classe du processeur de directive ou à l'espace de noms du processeur de directive.  
+   > Il s'agit du nom que vous utiliserez dans le champ Processeur de vos directives personnalisées. Ce nom ne doit pas nécessairement correspondre au nom de la directive, au nom de la classe du processeur de directive ou à l'espace de noms du processeur de directive.  
 
 4. Ajoutez une nouvelle valeur de chaîne nommée Class ayant la valeur CustomDP.CustomDirectiveProcessor pour le nom de la nouvelle chaîne.  
 
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>Test du processeur de directive  
  Pour tester le processeur de directive, vous devez écrire un modèle de texte qui l'appelle.  
 
- Dans cet exemple, le modèle de texte appelle la directive et passe le nom d'un fichier XML qui contient la documentation d'un fichier de classe. Pour plus d’informations, consultez [commentaires de Documentation XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Dans cet exemple, le modèle de texte appelle la directive et passe le nom d'un fichier XML qui contient la documentation d'un fichier de classe. Pour plus d’informations, consultez [commentaires de Documentation XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
 
  Le modèle de texte utilise ensuite la propriété <xref:System.Xml.XmlDocument> que la directive crée pour naviguer dans le code XML et imprimer les commentaires de documentation.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Créez un fichier texte nommé `DocFile.xml` à l’aide de n’importe quel éditeur de texte (par exemple, le bloc-notes).  
 
     > [!NOTE]
-    >  Vous pouvez créer ce fichier dans n'importe quel emplacement (par exemple, C:\Test\DocFile.xml).  
+    > Vous pouvez créer ce fichier dans n'importe quel emplacement (par exemple, C:\Test\DocFile.xml).  
 
 2. Ajoutez le code suivant au fichier texte :  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Remplacez le contenu de TestDP.tt par le texte suivant.  
 
     > [!NOTE]
-    >  Veillez à remplacer la chaîne <`YOUR PATH>` avec le chemin d’accès au fichier DocFile.xml.  
+    > Veillez à remplacer la chaîne <`YOUR PATH>` avec le chemin d’accès au fichier DocFile.xml.  
 
      Le langage du modèle de texte ne doit pas nécessairement correspondre à celui du processeur de directive.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  Dans cet exemple, la valeur du paramètre `Processor` est `CustomDirectiveProcessor`. La valeur du paramètre `Processor` doit correspondre au nom de la clé de Registre du processeur.  
+    > Dans cet exemple, la valeur du paramètre `Processor` est `CustomDirectiveProcessor`. La valeur du paramètre `Processor` doit correspondre au nom de la clé de Registre du processeur.  
 
 5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Remplacez le code figurant dans TestDP.txt par le code suivant : Le code HTML est mis en surbrillance. Veillez à remplacer la chaîne `YOUR PATH` avec le chemin d’accès au fichier DocFile.xml.  
 
     > [!NOTE]
-    >  Open supplémentaire \<# et fermantes #> balises séparent le code de l’instruction de balises HTML.  
+    > Open supplémentaire \<# et fermantes #> balises séparent le code de l’instruction de balises HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

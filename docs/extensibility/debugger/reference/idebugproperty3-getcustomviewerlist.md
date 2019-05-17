@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722731"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457657"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtient une liste des visionneuses personnalisées associées à cette propriété.
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`celtSkip`
+## <a name="parameters"></a>Paramètres
+`celtSkip`\
 
  [in] Le nombre de visionneuses à ignorer.
 
-`celtRequested`
+`celtRequested`\
 
  [in] Le nombre des visionneuses pour récupérer (spécifie également la taille de la `rgViewers` tableau).
 
-`rgViewers`
+`rgViewers`\
 
  [in, out] Tableau de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures doit être renseigné.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Le nombre réel de visionneuses retourné.
 

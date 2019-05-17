@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721015"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458536"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Obtient une description du frame de pile.
@@ -40,16 +43,16 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwFieldSpec`
+## <a name="parameters"></a>Paramètres
+ `dwFieldSpec`\
 
  [in] Une combinaison d’indicateurs de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie les champs de la `pFrameInfo` paramètre doivent être renseignés.
 
- `nRadix`
+ `nRadix`\
 
  [in] La base à utiliser dans toutes les informations numériques de mise en forme.
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out] Un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structure est remplie avec la description du frame de pile.
 

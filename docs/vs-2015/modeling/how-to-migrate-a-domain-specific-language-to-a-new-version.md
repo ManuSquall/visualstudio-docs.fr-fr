@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681043"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procédure : Migrer un langage spécifique à un domaine vers une nouvelle version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
    - Sélectionnez un projet ou une solution pour afficher la liste des modifications pour rend l’outil.  
   
        > [!NOTE]
-       >  Les cases à cocher qui apparaissent en regard des noms de dossier n’ont aucun effet. Vous devez développer les dossiers pour inspecter les projets et solutions.  
+       > Les cases à cocher qui apparaissent en regard des noms de dossier n’ont aucun effet. Vous devez développer les dossiers pour inspecter les projets et solutions.  
   
 4. Convertir les projets.  
   
@@ -78,7 +78,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
    2. Cliquez sur le **transformer tous les modèles** bouton dans l’en-tête de l’Explorateur de solutions.  
   
        > [!NOTE]
-       >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Mettre à jour votre code personnalisé dans les projets convertis.  
   

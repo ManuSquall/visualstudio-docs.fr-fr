@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436510"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : Affichage de balises actives
 Les balises actives sont déconseillées au profit des ampoules. Consultez [Procédure pas à pas : Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Proc
  Même si les étiquettes actives font partie de l’implémentation d’IntelliSense dans l’éditeur, vous pouvez implémenter des étiquettes actives en sous-classant <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, puis en implémentant les interfaces <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> et <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
->  Vous pouvez implémenter d’autres types de balises de manière similaire.  
+> Vous pouvez implémenter d’autres types de balises de manière similaire.  
   
  La procédure suivante montre comment créer une balise active qui apparaît sur le mot actuel et qui a deux actions suggérées : **Convertir en majuscules** et **convertir en minuscules**.  
   
@@ -183,4 +183,4 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Proc
 5. Lorsque vous cliquez sur le bouton, deux actions suggérées doivent être affichées. **Convertir en majuscules** et **convertir en minuscules**. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

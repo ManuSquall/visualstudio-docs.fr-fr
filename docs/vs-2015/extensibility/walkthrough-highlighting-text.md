@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d398164e910f7700645c01d26afbc631b1d434bc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693335"
 ---
 # <a name="walkthrough-highlighting-text"></a>Procédure pas à pas : Mettre du texte en surbrillance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
  Pour créer votre balise, vous devez implémenter un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Cette classe est un composant MEF, vous devez donc définir les attributs corrects pour que cette extension soit reconnue.  
   
 > [!NOTE]
->  Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-create-a-tagger-provider"></a>Pour créer un fournisseur de baliseur  
   
@@ -408,4 +408,4 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
 4. Positionnez le curseur dans une des occurrences de « hello ». Chaque occurrence doit être mis en surbrillance en bleu.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

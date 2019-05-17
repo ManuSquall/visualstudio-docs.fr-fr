@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5858bf29d1bf5fd2f93032aec9791380fbbd37c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d958c535cc93e140f61e6681130f16c8d49d8fc0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713852"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458072"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -37,19 +40,19 @@ public struct METADATA_ADDRESS_FIELD {
 }
 ```
 
-## <a name="terms"></a>Termes
+## <a name="members"></a>Membres
 
-`tokField`
+`tokField`\
 
 L’ID du jeton de champ.
 
-(C++) `_mdToken` est un `typedef` pour 32 bits `int`.
+[C++] `_mdToken` est un `typedef` pour 32 bits `int`.
 
 ## <a name="remarks"></a>Notes
 
 Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_FIELD` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : sh.h
 

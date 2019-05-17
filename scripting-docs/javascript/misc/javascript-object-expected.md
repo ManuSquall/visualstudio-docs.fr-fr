@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007433"
 ---
 # <a name="javascript-object-expected"></a>Objet JavaScript attendu
 Vous avez tenté de passer un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Différentes fonctions intégrées nécessitent les objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition à des objets définis par l’hôte ou un composant externe comme un contrôle).  

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981393"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Project
   Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office Project. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

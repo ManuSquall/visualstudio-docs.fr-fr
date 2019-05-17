@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812557"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procédure : Déplacer des éléments dans Outlook par programmation
   Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui contiennent le mot **Test** dans le `Subject` champ.

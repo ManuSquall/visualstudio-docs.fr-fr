@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946020"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -96,7 +96,7 @@ L'Explorateur de tests vous permet de regrouper vos tests en catégories prédé
 
 Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](../test/media/ute_groupby_btn.png) et sélectionnez un nouveau critère de regroupement.
 
-![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute_groupbycategory.png)
+![Grouper les tests par catégorie dans l'Explorateur de tests](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Groupes de l'explorateur de tests
 
@@ -140,7 +140,7 @@ Pour filtrer selon un autre critère :
 
 3. Entrez la valeur de filtre entre guillemets.
 
-![Filtrer les tests dans l’Explorateur de tests](../test/media/ute_filtertestlist.png)
+![Filtrer les tests dans l'Explorateur de tests](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.

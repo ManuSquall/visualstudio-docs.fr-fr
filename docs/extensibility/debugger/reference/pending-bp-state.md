@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688538"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458379"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Spécifie l’état d’un point d’arrêt en attente (un point d’arrêt qui n’a pas encore été lié).
@@ -43,19 +46,23 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Membres
- PBPS_NONE espace réservé pour zéro. Cette valeur n’est jamais retournée.
+## <a name="fields"></a>Champs
+ `PBPS_NONE`\
+ Espace réservé pour un zéro. Cette valeur n’est jamais retournée.
 
- PBPS_DELETED indique que le point d’arrêt en attente a été supprimé.
+ `PBPS_DELETED`\
+ Indique que le point d’arrêt en attente a été supprimé.
 
- PBPS_DISABLED indique que le point d’arrêt en attente est désactivée.
+ `PBPS_DISABLED`\
+ Indique que le point d’arrêt en attente est désactivée.
 
- PBPS_ENABLED indique que le point d’arrêt en attente est activée.
+ `PBPS_ENABLED`\
+ Indique que le point d’arrêt en attente est activée.
 
 ## <a name="remarks"></a>Notes
  Utiliser comme la `state` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

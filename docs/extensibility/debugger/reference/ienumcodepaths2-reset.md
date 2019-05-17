@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a20697c83546fc08c3c08154961a403f18a39c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8e45beea72bc6113416d08dbf097265fbb1ea84
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223601"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 Réinitialise l’énumération au premier élément.

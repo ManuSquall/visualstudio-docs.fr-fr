@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15af68e52a902003cd483cb6705ab4ded947f1a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e25f9da960b1de8acb1950b2bdd3ab7e61409f17
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675476"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Déploiement ClickOnce sur Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ Création d’applications dans Visual Studio pour le contrôle de compte d’ut
   
    Cette approche est également appelé *virtualisation*. Utilisez cette option pour la compatibilité avec les applications existantes à partir de versions antérieures de Visual Studio.  
   
-  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour les projets Visual C# uniquement) et dans le format de fichier projet MSBuild.  
+  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour les projets Visual c# uniquement) et dans le format de fichier projet MSBuild.  
   
-  Notez que la méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual C# et Visual Basic).  
+  Notez que la méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual c# et Visual Basic).  
   
-  Pour plus d’informations sur la configuration des projets Visual C# pour la génération de manifeste, consultez [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  Pour plus d’informations sur la configuration des projets Visual c# pour la génération de manifeste, consultez [Page Application, Concepteur de projets (c#)](../ide/reference/application-page-project-designer-csharp.md).  
   
   Pour plus d’informations sur la configuration des projets Visual Basic pour la génération de manifeste, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Autorisations utilisateur et Visual Studio](http://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [Autorisations utilisateur et Visual Studio](https://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

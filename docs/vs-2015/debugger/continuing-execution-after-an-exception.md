@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702268"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Poursuite de l'exécution à la suite d'une exception
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou c#, vous verrez la [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou c# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
+Lorsque le débogueur arrête l'exécution à cause d'une exception, une boîte de dialogue apparaît. Pour Visual Basic ou c#, vous verrez la [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) boîte de dialogue, par défaut. Pour C++, vous verrez l’ancien **Exception** boîte de dialogue. Si vous utilisez Visual Basic ou c# mais que vous avez désactivé la **Assistant Exception** dans le **Options** boîte de dialogue, vous verrez la **Exception** boîte de dialogue.  
   
  Lorsque le **Assistant Exception** ou **Exception** boîte de dialogue s’affiche, vous pouvez essayer de résoudre le problème qui a provoqué l’exception.  
   

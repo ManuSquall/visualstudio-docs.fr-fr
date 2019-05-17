@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383385"
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ L’option Rechercher dans les fichiers** vous permet de faire des recherches da
    Pour annuler une opération de recherche, appuyez sur Ctrl+Pause.  
   
 > [!NOTE]
->  L'outil Rechercher et remplacer n'effectue pas de recherche dans les répertoires définis avec l'attribut `Hidden` ou `System`.  
+> L'outil Rechercher et remplacer n'effectue pas de recherche dans les répertoires définis avec l'attribut `Hidden` ou `System`.  
   
 ## <a name="find-what"></a>Rechercher  
  Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher une des 20 dernières chaînes que vous avez recherchées récemment, ouvrez la liste et sélectionnez la chaîne à rechercher. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ L’option Rechercher dans les fichiers** vous permet de faire des recherches da
  L’option choisie dans la liste déroulante **Regarder dans** détermine si l’opération **Rechercher dans les fichiers** porte sur les fichiers actifs uniquement ou sur tous les fichiers figurant dans certains dossiers. Sélectionnez une étendue de recherche dans la liste ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et spécifier l’ensemble de répertoires de votre choix. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.  
   
 > [!WARNING]
->  Avec les options **Solution complète** ou **Projet actuel**, les fichiers solution et projet ne sont pas inclus dans la recherche. Pour effectuer une recherche dans les fichiers projet, choisissez un dossier de recherche.  
+> Avec les options **Solution complète** ou **Projet actuel**, les fichiers solution et projet ne sont pas inclus dans la recherche. Pour effectuer une recherche dans les fichiers projet, choisissez un dossier de recherche.  
   
 > [!NOTE]
->  Si l’option **Regarder dans** sélectionnée entraîne la recherche dans un fichier que vous avez extrait du contrôle de code source, la recherche ne porte que sur la version du fichier ayant été téléchargée sur votre ordinateur local.  
+> Si l’option **Regarder dans** sélectionnée entraîne la recherche dans un fichier que vous avez extrait du contrôle de code source, la recherche ne porte que sur la version du fichier ayant été téléchargée sur votre ordinateur local.  
   
 ## <a name="include-subfolders"></a>Inclure les sous-dossiers  
  Spécifie que les sous-dossiers du dossier choisi dans **Regarder dans** sont inclus dans la recherche.  

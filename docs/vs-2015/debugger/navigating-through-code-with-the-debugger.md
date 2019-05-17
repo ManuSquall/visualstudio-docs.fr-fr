@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430971"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Naviguer dans le code avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
  Pour arrêter sur chaque ligne de code (chaque instruction) pendant le débogage, utilisez le **F11** raccourci clavier (ou **déboguer** / **pas à pas détaillé** dans le menu).  
   
 > [!TIP]
->  Quand vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser le [variables locales](../debugger/autos-and-locals-windows.md) et [espion](../debugger/autos-and-locals-windows.md) pour observer leurs valeurs à modifier.  
+> Quand vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser le [variables locales](../debugger/autos-and-locals-windows.md) et [espion](../debugger/autos-and-locals-windows.md) pour observer leurs valeurs à modifier.  
   
  Voici quelques détails sur le comportement de **pas à pas détaillé**:  
   
@@ -87,7 +87,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
 |**Maj+F11**|**Pas à pas sortant**|**Pas à pas sortant** continue de s’exécuter de code et suspend l’exécution lorsque la fonction active est retournée (le débogueur ignore via la fonction active).|  
   
 > [!TIP]
->  Si vous devez rechercher le point d’entrée dans votre application, commencez par **F10** ou **F11**. Ces commandes sont souvent utiles lors de l’inspection de votre état de l’application ou tente de trouver plus d’informations sur son flux d’exécution.  
+> Si vous devez rechercher le point d’entrée dans votre application, commencez par **F10** ou **F11**. Ces commandes sont souvent utiles lors de l’inspection de votre état de l’application ou tente de trouver plus d’informations sur son flux d’exécution.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Exécuter à un emplacement spécifique ou d’une fonction  
  Fréquence à laquelle la méthode préférée de débogage du code, ces méthodes sont utiles lorsque vous savez exactement quel code que vous souhaitez inspecter ou au moins vous savez où vous souhaitez démarrer le débogage.  
@@ -140,7 +140,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
 - Dans la fenêtre code machine, définissez le curseur sur l’instruction assembleur que vous souhaitez exécuter ensuite, cliquez sur un et choisissez **définir l’instruction suivante**.  
   
 > [!CAUTION]
->  Le fait de définir l'instruction suivante fait en sorte que le compteur du programme accède directement au nouvel emplacement. Utilisez cette commande avec précaution :  
+> Le fait de définir l'instruction suivante fait en sorte que le compteur du programme accède directement au nouvel emplacement. Utilisez cette commande avec précaution :  
 > 
 > - Les instructions entre les nouveaux et les anciens points d'exécution ne sont pas exécutées.  
 >   - Si vous déplacez le point d'exécution vers l'arrière, les instructions déjà traitées ne sont pas annulées.  
@@ -149,7 +149,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
 >   - Lorsque Modifier & Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp;amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d'erreur s'affiche pour indiquer que l'opération n'est pas prise en charge.  
 > 
 > [!NOTE]
->  Dans du code managé, vous ne pouvez pas déplacer l'instruction suivante dans les conditions suivantes :  
+> Dans du code managé, vous ne pouvez pas déplacer l'instruction suivante dans les conditions suivantes :  
 > 
 > - L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.  
 >   - Le débogage a été démarré à l'aide du débogage juste-à-temps.  
@@ -166,7 +166,7 @@ Vous familiariser avec les commandes et les raccourcis pour naviguer dans le cod
  Lorsque uniquement mon Code est désactivé, le débogueur peut accéder dans le code de non-utilisateur et code non-utilisateur apparaît dans les fenêtres du débogueur.  
   
 > [!NOTE]
->  Uniquement mon code n'est pas pris en charge pour les projets Smart Device.  
+> Uniquement mon code n'est pas pris en charge pour les projets Smart Device.  
   
  **Effectuer un pas à pas détaillé dans des appels système**  
   

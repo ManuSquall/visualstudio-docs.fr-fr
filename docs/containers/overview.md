@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824960"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084046"
 ---
 # <a name="container-tools-in-visual-studio"></a>Outils de conteneur dans Visual Studio
 
@@ -25,7 +25,7 @@ Les outils inclus dans Visual Studio pour le développement avec des conteneurs 
 
 ## <a name="docker-support-in-visual-studio"></a>Prise en charge de Docker dans Visual Studio
 
-La prise en charge de Docker est disponible pour certains types de projets .NET.  Elle est disponible pour les projets ASP.NET, les projets ASP.NET Core et les projets de console .NET Core et .NET Framework.
+La prise en charge de Docker est disponible pour les projets ASP.NET, les projets ASP.NET Core, et les projets de console .NET Core et .NET Framework.
 
 La prise en charge de Docker dans Visual Studio a été modifiée sur un certain nombre de versions pour répondre aux besoins des clients. Il existe deux niveaux de prise en charge de Docker que vous pouvez ajouter à un projet, et les options prises en charge varient selon le type de projet et la version de Visual Studio. Pour certains types de projets pris en charge, si vous souhaitez utiliser un conteneur dans un seul projet, sans orchestration, ajoutez la prise en charge de Docker.  Le niveau suivant est la prise en charge de l’orchestration de conteneur, qui ajoute les fichiers de prise en charge appropriés pour l’orchestrateur spécifique que vous choisissez.  
 
@@ -46,13 +46,9 @@ Visual Studio 2019 vous permet d’utiliser Docker Compose, Kubernetes et Servic
 > Si vous utilisez le modèle de projet de console .NET Framework complet, lorsque vous ajoutez la prise en charge de Docker, la prise en charge de l’orchestration à l’aide de Docker Compose est automatiquement ajoutée.
 ::: moniker-end
 
-Les commandes **Ajouter > Prise en charge de Docker** et **Ajouter > Prise en charge des orchestrateurs de conteneurs** se trouvent dans le contextuel du nœud du projet pour un projet ASP.NET Core dans l’**Explorateur de solutions**, comme illustré dans la capture d’écran suivante :
+### <a name="adding-docker-support"></a>Ajout de la prise en charge de Docker
 
-![Option de menu Ajouter la prise en charge de Docker dans Visual Studio](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Ajout de la prise en charge de Docker (sans orchestration)
-
-Vous pouvez ajouter la prise en charge de Docker à un projet existant en sélectionnant **Ajouter** > **Prise en charge de Docker** dans l’**Explorateur de solutions**. Vous pouvez également activer la prise en charge de Docker lors de la création d’un projet en sélectionnant **Activer la prise en charge de Docker**, comme illustré dans la capture d’écran suivante :
+Vous pouvez activer la prise en charge de Docker lors de la création d’un projet en sélectionnant **Activer la prise en charge de Docker**, comme illustré dans la capture d’écran suivante :
 
 ::: moniker range="vs-2017"
 ![Activer la prise en charge de Docker pour une nouvelle application web ASP.NET Core dans Visual Studio](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Vous pouvez ajouter la prise en charge de Docker à un projet existant en sélec
 ::: moniker range=">=vs-2019"
 ![Activer la prise en charge de Docker pour une nouvelle application web ASP.NET Core dans Visual Studio](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> Pour les projets .NET Framework (pas .NET Core), seuls les conteneurs Windows sont disponibles.
+
+Vous pouvez ajouter la prise en charge de Docker à un projet existant en sélectionnant **Ajouter** > **Prise en charge de Docker** dans l’**Explorateur de solutions**. Les commandes **Ajouter > Prise en charge de Docker** et **Ajouter > Prise en charge des orchestrateurs de conteneurs** se trouvent dans le contextuel du nœud du projet pour un projet ASP.NET Core dans l’**Explorateur de solutions**, comme illustré dans la capture d’écran suivante :
+
+![Option de menu Ajouter la prise en charge de Docker dans Visual Studio](./media/overview/add-docker-support-menu.png)
 
 Lorsque vous ajoutez ou activez la prise en charge de Docker, Visual Studio ajoute les éléments suivants au projet :
 

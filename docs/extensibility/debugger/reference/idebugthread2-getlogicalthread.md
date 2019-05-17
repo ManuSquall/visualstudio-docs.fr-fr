@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e8dbd78ef262479fbc8405b77fa0cf53f8087a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9e57d3deac01b00f1f332b34075d74f6402235f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723290"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224033"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Moteurs de débogage n’implémentent pas cette méthode.
@@ -38,12 +41,12 @@ int GetLogicalThread( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pStackFrame`
+## <a name="parameters"></a>Paramètres
+ `pStackFrame`\
 
  [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente le frame de pile.
 
- `ppLogicalThread`
+ `ppLogicalThread`\
 
  [out] Retourne un `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit lui affecter la valeur null.
 

@@ -26,18 +26,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440338"
 ---
 # <a name="build-office-solutions"></a>Générer des solutions Office
   En général, la génération et le débogage de projets Office sont identiques à la génération et au débogage d’autres types de projets dans Visual Studio, tels que les Windows Forms. Les rubriques de cette section expliquent les différences qui existent. Pour obtenir des informations générales sur la façon de créer des applications, consultez [compiler et générer dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
 > [!NOTE]
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
+> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
 
 ## <a name="project-output-for-office-projects"></a>Sortie du projet pour les projets Office
  L’emplacement de sortie pour les projets Office est *nom_projet*\bin\release ou *nom_projet*\bin\debug. Vous ne pouvez pas générer un projet dans un répertoire de déploiement.
@@ -56,7 +56,7 @@ ms.locfileid: "60078926"
 - Une base de données de programme (*PDB*) fichier.
 
 > [!NOTE]
->  Si vous générez une solution au niveau du document à un emplacement distant et non pas sur l’ordinateur local, ajoutez le chemin complet de la liste des emplacements approuvés dans le Centre de gestion de la confidentialité de l’application. Pour plus d’informations, consultez la section intitulée Granting Trust to Documents dans [solutions Office Secure](../vsto/securing-office-solutions.md).
+> Si vous générez une solution au niveau du document à un emplacement distant et non pas sur l’ordinateur local, ajoutez le chemin complet de la liste des emplacements approuvés dans le Centre de gestion de la confidentialité de l’application. Pour plus d’informations, consultez la section intitulée Granting Trust to Documents dans [solutions Office Secure](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Projets de niveau application
  Lorsque vous générez un projet de complément VSTO, les éléments suivants sont inclus dans la sortie du projet :

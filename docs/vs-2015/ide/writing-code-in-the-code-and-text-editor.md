@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 23dd08e95100f186c172fff2cfa6a392bd11eee4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077821"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698086"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
  Les différents langages de Visual Studio offrent différents ensembles de fonctionnalités et, dans certains cas, les fonctionnalités se comportent différemment dans les différents langages. Un grand nombre de ces différences sont spécifiées dans les descriptions des fonctionnalités, mais pour plus d’informations, vous pouvez consulter les sections relatives aux langages spécifiques de Visual Studio.  
 
 > [!IMPORTANT]
->  L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.  
+> L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.  
 
 ## <a name="editor-features"></a>Fonctionnalités de l’éditeur  
 
@@ -188,7 +188,7 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
  Pour plus d’informations sur les options d’éditeur spécifiques au langage, consultez les rubriques suivantes :  
 
-- [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Paramètres de Visual Basic](https://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
 - [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 

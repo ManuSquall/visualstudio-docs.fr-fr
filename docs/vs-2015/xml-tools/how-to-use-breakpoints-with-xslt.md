@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df2fb0c6505bc5fa756443bd50fdb31ff151e7d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052322"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673674"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procédure : utilisation de points d'arrêt avec XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez définir des points d'arrêt dans une feuille de style XSLT ou dans le document source XML. Si vous définissez un point d'arrêt sur une balise, lors de l'exécution, le point d'arrêt est déplacé vers l'instruction suivante qui possède des informations de ligne source.  
   
- Pour plus d’informations, consultez [principes fondamentaux de débogage : Points d’arrêt](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
+ Pour plus d’informations, consultez [principes fondamentaux de débogage : Points d’arrêt](https://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e).  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Définir un point d'arrêt dans une feuille de style  
  Des points d’arrêt peuvent être définis pour les étiquettes de début, les étiquettes de fin et les nœuds de texte d’une feuille de style XSLT. Les points d'arrêt peuvent également être définis sur du code dans un bloc de script.  

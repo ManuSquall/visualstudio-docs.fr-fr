@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2a2610c1fef92bb77d150dad7972bb991b6ef4a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076196"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686008"
 ---
 # <a name="securing-clickonce-applications"></a>Sécurisation des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,14 +74,14 @@ Les applications[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont soum
  Vous ne devez jamais passer d'arguments récupérés via une chaîne de requête directement à une base de données ou à la ligne de commande sans les vérifier et vous assurer qu'ils sont sécurisés. Les arguments non sécurisés sont ceux qui incluent des caractères d'échappement de la base de données ou de la ligne de commande pouvant permettre à un utilisateur malveillant de manipuler votre application et de lui faire exécuter des commandes arbitraires.  
   
 > [!NOTE]
->  Les arguments de chaîne de requête constituent la seule manière de passer des arguments à une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] lors du lancement. Vous ne pouvez pas passer d'arguments à une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à partir de la ligne de commande.  
+> Les arguments de chaîne de requête constituent la seule manière de passer des arguments à une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] lors du lancement. Vous ne pouvez pas passer d'arguments à une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à partir de la ligne de commande.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Déploiement d'assemblys obscurcis  
  Vous pouvez être amené à obscurcir votre application à l'aide de Dotfuscator pour empêcher d'autres utilisateurs d'effectuer une ingénierie à rebours du code. Toutefois, l'obscurcissement d'assembly n'est pas intégré dans l'IDE de Visual Studio ou le processus de déploiement ClickOnce. Par conséquent, vous devrez exécuter l'obscurcissement en dehors du processus de déploiement, éventuellement à l'aide d'une étape post-build. Après avoir généré le projet, vous pourrez exécuter manuellement les étapes suivantes, en dehors de Visual Studio :  
   
 1. Exécutez l'obscurcissement à l'aide de Dotfuscator.  
   
-2. Utilisez Mage.exe ou MageUI.exe pour générer et signer les manifestes ClickOnce. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Utilisez Mage.exe ou MageUI.exe pour générer et signer les manifestes ClickOnce. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 3. Publiez (copiez) manuellement les fichiers sur votre emplacement source de déploiement (serveur Web, partage UNC ou CD-ROM).  
   

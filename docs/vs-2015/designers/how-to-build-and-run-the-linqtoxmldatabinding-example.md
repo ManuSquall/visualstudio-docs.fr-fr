@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696152"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Procédure : générer et exécuter l’exemple LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique montre comment créer et générer le projet Visual Studio LinqToXmlDataBinding et comment exécuter l'exemple de programme WPF (Windows Presentation Foundation) LinqToXmlDataBinding résultant.  
   
- Pour plus d’informations sur l’utilisation de Visual Studio pour créer des projets, consultez [Développement d’applications dans Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
+ Pour plus d’informations sur l’utilisation de Visual Studio pour créer des projets, consultez [Développement d’applications dans Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68).  
   
 ## <a name="creating-and-populating-the-project"></a>Création et remplissage du projet  
   
@@ -79,4 +79,4 @@ Cette rubrique montre comment créer et générer le projet Visual Studio LinqTo
 ## <a name="see-also"></a>Voir aussi  
  [Exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [Procédure pas à pas : Exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Développement d'applications dans Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Développement d'applications dans Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

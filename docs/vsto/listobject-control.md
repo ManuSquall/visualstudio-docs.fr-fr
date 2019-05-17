@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438788"
 ---
 # <a name="listobject-control"></a>ListObject (contrôle)
   Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> est une liste qui expose des événements et qui peut être liée à des données. Quand vous ajoutez une liste à une feuille de calcul, Visual Studio crée un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> que vous pouvez programmer directement, sans devoir parcourir le modèle objet Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073630"
  Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles aux feuilles de calcul uniquement lors de l’exécution. Pour plus d'informations, voir [Procédure : Ajouter des contrôles ListObject aux feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  Par défaut, les objets de liste créées dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Par défaut, les objets de liste créées dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Lier des données au contrôle
  Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> prend en charge la liaison de données simple et complexe. Le <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle peut être lié à une source de données à l’aide de la <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> et <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> propriétés au moment du design ou le <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> méthode lors de l’exécution.
 
 > [!NOTE]
->  Le <xref:Microsoft.Office.Tools.Excel.ListObject> est mis à jour automatiquement lorsqu’il est lié à une source de données, telles qu’un <xref:System.Data.DataTable>, qui déclenche des événements lorsque les données sont modifiées. Si vous liez le <xref:Microsoft.Office.Tools.Excel.ListObject> à une source de données qui ne déclenche pas d’événements lorsque les données changent, vous devez appeler la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> ou <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> pour mettre à jour le <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> Le <xref:Microsoft.Office.Tools.Excel.ListObject> est mis à jour automatiquement lorsqu’il est lié à une source de données, telles qu’un <xref:System.Data.DataTable>, qui déclenche des événements lorsque les données sont modifiées. Si vous liez le <xref:Microsoft.Office.Tools.Excel.ListObject> à une source de données qui ne déclenche pas d’événements lorsque les données changent, vous devez appeler la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> ou <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> pour mettre à jour le <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  Lorsque vous ajoutez un <xref:Microsoft.Office.Tools.Excel.ListObject> à une cellule de feuille de calcul en mappant un élément de schéma répétitif à cette cellule, Visual Studio mappe automatiquement le <xref:Microsoft.Office.Tools.Excel.ListObject> au dataset généré. Toutefois, le <xref:Microsoft.Office.Tools.Excel.ListObject> n’est pas lié automatiquement aux données. Vous pouvez prendre des mesures pour lier le <xref:Microsoft.Office.Tools.Excel.ListObject> au jeu de données au moment du design ou lors de l’exécution dans un projet au niveau du document. Vous pouvez lier par programmation le <xref:Microsoft.Office.Tools.Excel.ListObject> au jeu de données lors de l’exécution dans un complément, VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073630"
  Vous pouvez remplir rapidement un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> en liant le <xref:Microsoft.Office.Tools.Excel.ListObject> à une source de données. Si vous modifiez les données d’un <xref:Microsoft.Office.Tools.Excel.ListObject>lié aux données, les modifications sont aussi apportées automatiquement à la source de données. Si vous souhaitez remplir un <xref:Microsoft.Office.Tools.Excel.ListObject> et permettre ensuite à l’utilisateur de modifier les données contenue dans le <xref:Microsoft.Office.Tools.Excel.ListObject> sans modifier la source de données, vous pouvez utiliser la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> pour détacher le <xref:Microsoft.Office.Tools.Excel.ListObject> de la source de données. Pour plus d'informations, voir [Procédure : Remplir des contrôles ListObject de données](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  La liaison de données n’est pas prise en charge sur des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> superposés.
+> La liaison de données n’est pas prise en charge sur des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> superposés.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Améliorer les performances dans les contrôles ListObject
  La lecture d’un fichier XML dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données a tendance à être plus lente si vous liez d’abord le contrôle et que vous appelez ensuite <xref:System.Data.DataSet.ReadXml%2A> pour remplir le dataset. Pour améliorer les performances, appelez <xref:System.Data.DataSet.ReadXml%2A> avant de lier le contrôle.

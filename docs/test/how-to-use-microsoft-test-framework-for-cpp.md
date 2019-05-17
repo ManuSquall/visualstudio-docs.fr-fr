@@ -1,28 +1,28 @@
 ---
 title: Utiliser le framework de tests unitaires Microsoft pour C++
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324907"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461478"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
 Le framework de tests unitaires Microsoft pour C++ est par défaut dans la charge de travail **Développement Desktop en C++**.
 
-##  <a name="separate_project"></a> Pour écrire des tests unitaires dans un projet distinct
+## <a name="separate_project"></a> Pour écrire des tests unitaires dans un projet distinct
 
 En règle générale, vous exécutez votre code de test dans son propre projet, dans la même solution que le code que vous voulez tester. Pour installer et configurer un nouveau projet de test, consultez [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Pour écrire des tests unitaires dans le même projet
+## <a name="same_project"></a> Pour écrire des tests unitaires dans le même projet
 
 Dans certains cas, par exemple lors du test de fonctions non exportées dans une DLL, il peut être nécessaire de créer les tests dans le même projet que le programme que vous testez. Pour écrire des tests unitaires dans le même projet :
 
@@ -32,16 +32,14 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
    2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**  :
 
-
       | Répertoire | Property |
       |-| - |
       | **Répertoires Include** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Répertoires de bibliothèques** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Ajoutez un fichier de test unitaire C++ :
 
-   -   Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+   - Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
 
 ## <a name="write-the-tests"></a>Écrire les tests
 
@@ -54,10 +52,12 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 ## <a name="run-the-tests"></a>Exécuter les tests
 
 1. Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**.
-2. Si vos tests n’apparaissent pas tous dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
 
-3. Dans **l’Explorateur de tests**, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
-4. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
+1. Si vos tests n’apparaissent pas tous dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
+
+1. Dans **l’Explorateur de tests**, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+
+1. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
 
    ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
 

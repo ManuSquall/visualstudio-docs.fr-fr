@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840413"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : Créer une application web ASP.NET Core
 
@@ -122,4 +122,4 @@ Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutoriel : Créer une application web de pages Razor avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutoriel : Créer une application web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

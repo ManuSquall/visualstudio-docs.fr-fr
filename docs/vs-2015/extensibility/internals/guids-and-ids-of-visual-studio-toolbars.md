@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436274"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID et ID des barres d’outils Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58949997"
 Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui sont inclus dans l’environnement de développement intégré (IDE) Visual Studio, et des groupes qu’ils contiennent. Ces valeurs sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et les groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Grand nombre de barres d’outils disponibles pour Visual Studio ne sont pas définis par Visual Studio et leur GUID et les valeurs d’ID ne sont pas publics. Cette rubrique répertorie uniquement les barres d’outils qui sont définis dans les fichiers .vsct de Visual Studio SDK.
+> Grand nombre de barres d’outils disponibles pour Visual Studio ne sont pas définis par Visual Studio et leur GUID et les valeurs d’ID ne sont pas publics. Cette rubrique répertorie uniquement les barres d’outils qui sont définis dans les fichiers .vsct de Visual Studio SDK.
 
  Pour plus d’informations sur l’utilisation des objets d’IDE qui sont définis dans les fichiers .vsct, consultez [extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).
 
@@ -110,7 +110,7 @@ Cette rubrique énumère les valeurs GUID et l’ID de barres d’outils qui son
  Barres d’outils peuvent apparaître directement dans l’IDE ou dans les fenêtres outil tel que **l’Explorateur de solutions**. Étant donné que les fenêtres Outil ne sont pas définis dans les fichiers .vsct, barres d’outils de la fenêtre outil n’ont pas de parents définis. Au lieu de cela, ils sont placés dans le code. Le tableau suivant présente les barres d’outils qui apparaissent dans les fenêtres Outil dans l’IDE et les groupes de commandes qu’ils contiennent.
 
 > [!NOTE]
->  Barres d’outils et les groupes utilisent le GUID `guidSHLMainMenu`, sauf indication contraire à l’aide de syntaxe de la paire GUID : ID. Où un GUID est spécifié pour une barre d’outils, il s’applique également aux groupes qui descendent à partir de cette barre d’outils.
+> Barres d’outils et les groupes utilisent le GUID `guidSHLMainMenu`, sauf indication contraire à l’aide de syntaxe de la paire GUID : ID. Où un GUID est spécifié pour une barre d’outils, il s’applique également aux groupes qui descendent à partir de cette barre d’outils.
 
 |Fenêtre Outil|ToolBar|Groupes|
 |-----------------|-------------|------------|

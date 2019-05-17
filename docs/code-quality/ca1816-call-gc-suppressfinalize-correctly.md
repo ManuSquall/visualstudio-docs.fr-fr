@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796778"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816 : Appeler GC.SuppressFinalize correctement
 
@@ -41,7 +41,7 @@ Les violations de cette règle peuvent être dû :
 
 - Une méthode qui n’est pas une implémentation de <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> et appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>.
 
-- Une méthode qui appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> et passe un élément autre que [this (C#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- Une méthode qui appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> et passe un élément autre que [this (c#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -57,7 +57,7 @@ Pour corriger une violation de cette règle :
 
 - Si la méthode n’est pas une implémentation de <xref:System.IDisposable.Dispose%2A>, supprimez l’appel à <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> ou déplacez-le vers le type <xref:System.IDisposable.Dispose%2A> implémentation.
 
-- Modifier tous les appels à <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> à passer [this (C#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+- Modifier tous les appels à <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> à passer [this (c#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -65,14 +65,14 @@ Supprimez uniquement un avertissement de cette règle si vous utilisez délibér
 
 ## <a name="example-that-violates-ca1816"></a>Exemple qui enfreint CA1816
 
-Ce code montre une méthode qui appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>, mais ne remplit pas [this (C#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me). Par conséquent, ce code enfreint la règle CA1816.
+Ce code montre une méthode qui appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType>, mais ne remplit pas [this (c#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me). Par conséquent, ce code enfreint la règle CA1816.
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]
 
 ## <a name="example-that-satisfies-ca1816"></a>Exemple répondant CA1816
 
-Cet exemple montre une méthode qui correctement appels <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> en passant [this (C#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
+Cet exemple montre une méthode qui correctement appels <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> en passant [this (c#)](/dotnet/csharp/language-reference/keywords/this) ou [Me (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass#me).
 
 [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)]
 [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]

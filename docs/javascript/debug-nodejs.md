@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438006"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -62,8 +62,10 @@ Pour attacher le débogueur depuis Visual Studio et atteindre des points d’arr
     Cette commande Chrome démarre avec l’activation du débogage.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Basculez vers Visual Studio et définissez un point d’arrêt dans votre code source. (Définissez le point d’arrêt dans une ligne de code autorisant les points d’arrêt, par exemple une instruction `return` ou une déclaration `var`).

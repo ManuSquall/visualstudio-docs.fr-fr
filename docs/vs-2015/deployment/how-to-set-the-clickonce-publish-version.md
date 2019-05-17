@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436215"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Procédure : Définir la version de publication ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` prop
  Le `Publish Version` propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  
   
 > [!NOTE]
->  Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d'informations, voir [Procédure : Incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+> Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d'informations, voir [Procédure : Incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Pour modifier la Version de publication  
   
@@ -43,7 +43,7 @@ Le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` prop
 3. Dans **Version de publication** champ, incrémentez la **majeure**, **mineure**, **générer**, ou **révision** version nombres.  
   
     > [!NOTE]
-    >  Vous ne devez jamais décrémenter un numéro de version ; Cela peut provoquer comportement imprévisible de mise à jour.  
+    > Vous ne devez jamais décrémenter un numéro de version ; Cela peut provoquer comportement imprévisible de mise à jour.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   

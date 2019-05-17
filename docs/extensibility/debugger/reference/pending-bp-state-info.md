@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d08e2ec34f153e984ea158eaca4ca282652e67e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717077"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460891"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Contient des informations sur l’état d’un point d’arrêt est prêt à lier à un emplacement de code.
@@ -39,14 +42,16 @@ public struct PENDING_BP_STATE_INFO { 
 ```
 
 ## <a name="members"></a>Membres
- état d’une valeur comprise entre le [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) énumération qui spécifie l’état de point d’arrêt en attente.
+ `state`\
+ Une valeur comprise entre le [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md) énumération qui spécifie l’état de point d’arrêt en attente.
 
- indicateurs d’une combinaison d’indicateurs de la [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) énumération qui spécifie si le point d’arrêt est virtualisé.
+ `flags`\
+ Une combinaison d’indicateurs de la [PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md) énumération qui spécifie si le point d’arrêt est virtualisé.
 
 ## <a name="remarks"></a>Notes
  Cette structure est passée à la [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) méthode où il est renseigné.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

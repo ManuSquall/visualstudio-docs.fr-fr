@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687677"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
  Fichiers, des clés de Registre, des raccourcis, ou et ainsi de suite qui peut être installé sur un ordinateur. Ces ressources sont regroupées logiquement dans des composants de programme d’installation de Windows.  
   
  Composant de programme d’installation de Windows (WIC)  
- L’unité de base d’installation représentant un regroupement logique de ressources associées qui sont installés et désinstallés en tant qu’unité. Composants du programme d’installation de Windows sont identifiés par un ID de composant unique, ou GUID. En outre, le programme d’installation de Windows maintient son décompte de références au niveau du WIC. Pour une flexibilité maximale de contrôle de version, inclure pas plus d’une ressource principale, comme une DLL, dans un WIC donné. Notez que, après avoir identifié et remplir un WIC, lui donner un GUID et le déployer, vous ne pouvez pas modifier sa composition. Pour plus d’informations, consultez [organiser les Applications en composants](http://msdn.microsoft.com/library/aa370561.aspx).  
+ L’unité de base d’installation représentant un regroupement logique de ressources associées qui sont installés et désinstallés en tant qu’unité. Composants du programme d’installation de Windows sont identifiés par un ID de composant unique, ou GUID. En outre, le programme d’installation de Windows maintient son décompte de références au niveau du WIC. Pour une flexibilité maximale de contrôle de version, inclure pas plus d’une ressource principale, comme une DLL, dans un WIC donné. Notez que, après avoir identifié et remplir un WIC, lui donner un GUID et le déployer, vous ne pouvez pas modifier sa composition. Pour plus d’informations, consultez [organiser les Applications en composants](https://msdn.microsoft.com/library/aa370561.aspx).  
   
  Package (package redistribuable)  
  Une unité de déploiement qui se compose d’un fichier .msi et les fichiers source externe à laquelle ce fichier peut pointer. Un package contient toutes les informations dont le programme d’installation de Windows a besoin pour exécuter l’interface utilisateur et à installer ou désinstaller l’application.  
   
  fichier .msi  
- Un fichier de stockage structuré selon COM contenant les instructions et les données requises pour installer une application. Chaque package contient au moins un fichier .msi. Le fichier .msi contient la base de données du programme d’installation, un flux d’informations résumées et éventuellement une ou plusieurs transformations et les fichiers source interne. Installation des fichiers peuvent être compressés dans un fichier CAB et stockées dans un flux de données dans le fichier .msi ou stockées, compressés ou non compressés, en dehors du fichier .msi sur le support source. Pour plus d’informations, consultez [Extensions de fichier du programme d’installation Windows](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ Un fichier de stockage structuré selon COM contenant les instructions et les données requises pour installer une application. Chaque package contient au moins un fichier .msi. Le fichier .msi contient la base de données du programme d’installation, un flux d’informations résumées et éventuellement une ou plusieurs transformations et les fichiers source interne. Installation des fichiers peuvent être compressés dans un fichier CAB et stockées dans un flux de données dans le fichier .msi ou stockées, compressés ou non compressés, en dehors du fichier .msi sur le support source. Pour plus d’informations, consultez [Extensions de fichier du programme d’installation Windows](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Mise en œuvre des règles de programme d’installation Windows  
  Deux ensembles de règles déterminent le déploiement des ressources via les composants de votre installation. Un ensemble de règles est géré par le programme d’installation de Windows lui-même, tandis que vous devez appliquer le second ensemble en tant qu’auteur de l’installation.  
   
 > [!NOTE]
->  Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) et [Validation du Package](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) et [Validation du Package](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Règles appliquée par le programme d’installation  
   
@@ -69,9 +69,9 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
   
 #### <a name="component-provider-responsibilities"></a>Responsabilités du fournisseur de composants  
   
-- Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
 - Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Que se passe-t-il si les règles de composant sont interrompues ?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Que se passe-t-il si les règles de composant sont interrompues ?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

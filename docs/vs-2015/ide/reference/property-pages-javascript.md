@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661904"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701789"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour sélectionner la configuration et la plateforme à afficher ou à modifier.  
   
  **Configuration**  
- Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d’informations, consultez [Configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Plateforme**  
- Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d’informations, consultez [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d’informations, consultez [Configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Page Général  
  Utilisez les options suivantes pour définir les propriétés générales du projet.  
   
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+> Certaines options sont disponibles seulement dans les applications du Windows Store.  
   
  **Chemin de sortie**  
  Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.  
   
- Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Debug**, **Démarrer le débogage** (ou que vous appuyez sur F5), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils**, **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release. Pour plus d’informations, consultez [NIB : Général, projets et Solutions, Options de boîte de dialogue](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Debug**, **Démarrer le débogage** (ou que vous appuyez sur F5), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils**, **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release. Pour plus d’informations, consultez [NIB : Général, projets et Solutions, Options de boîte de dialogue](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Langue par défaut**  
  Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous vous assurez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l'utilisateur ne correspond pas aux ressources linguistiques fournies dans l'application.  
@@ -62,7 +62,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour définir les propriétés du comportement du débogage dans le projet.  
   
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+> Certaines options sont disponibles seulement dans les applications du Windows Store.  
   
  **Débogueur à lancer**  
  Spécifie l'hôte par défaut pour le débogueur.  

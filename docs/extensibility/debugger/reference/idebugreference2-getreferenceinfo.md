@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 391f4bc6eb0480d26fd616afcea222db3b7be4b7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720967"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457385"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Obtient le [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure qui décrit une référence. Réservé à un usage ultérieur.
@@ -46,28 +49,28 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwFields`
+## <a name="parameters"></a>Paramètres
+ `dwFields`\
 
  [in] Une combinaison d’indicateurs de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) énumération qui déterminent les champs à compléter le [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure.
 
- `nRadix`
+ `nRadix`\
 
  [in] La base à utiliser dans toutes les informations numériques de mise en forme.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in] Un tableau de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objets. Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Le nombre d’arguments de référence dans le `rgpArgs` tableau. Réservé pour une utilisation ultérieure ; la valeur 0.
 
- `pReferenceInfo`
+ `pReferenceInfo`\
 
  [out] Un [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure est remplie avec une description de la propriété.
 

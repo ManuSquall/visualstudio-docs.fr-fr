@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434247"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage et conseils pour résoudre les problèmes.
@@ -46,7 +46,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
 4. Ouvrez le **sortie** fenêtre de l’instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui ne peut pas charger le VSPackage. Plus d’informations sur la raison pour laquelle le VSPackage ne peut pas charger peuvent être affichés dans cette fenêtre.
 
    > [!NOTE]
-   >  Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.
+   > Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.
 
 5. Examinez le journal d’activité.
 
@@ -85,7 +85,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
     4. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** ou appuyez sur F5.
 
         > [!NOTE]
-        >  Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.
+        > Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.
 
 2. Utiliser le journal d’activité.
 

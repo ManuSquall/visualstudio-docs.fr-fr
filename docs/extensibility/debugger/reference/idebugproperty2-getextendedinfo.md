@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681645"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458890"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtient les informations étendues pour la propriété.
@@ -38,12 +41,12 @@ int GetExtendedInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidExtendedInfo`
+## <a name="parameters"></a>Paramètres
+ `guidExtendedInfo`\
 
  [in] GUID qui détermine le type d’informations étendues à récupérer. Pour plus d’informations, consultez la section Notes.
 
- `pExtendedInfo`
+ `pExtendedInfo`\
 
  [out] Retourne un `VARIANT` (C++) ou un objet (C#) qui peut être utilisé pour récupérer les informations de propriété étendue. Par exemple, ce paramètre peut retourner un `IUnknown` interface qui peut être interrogé pour une [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Pour plus d’informations, consultez la section Notes.
 

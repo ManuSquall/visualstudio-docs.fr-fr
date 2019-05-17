@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442300"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
     2. Pour répondre aux modifications de fichier externe, implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> sur l’objet de données de document de votre éditeur.  
   
         > [!NOTE]
-        >  Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> pour obtenir un pointeur vers `IVsFileChangeEx`.  
+        > Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> pour obtenir un pointeur vers `IVsFileChangeEx`.  
   
 7. Coordonner les événements de modification de document avec contrôle de code source. Pour ce faire :  
   
@@ -138,7 +138,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  Le `IOleInPlaceComponent` interface est utilisée pour éviter la fusion de menus OLE 2.  
+    > Le `IOleInPlaceComponent` interface est utilisée pour éviter la fusion de menus OLE 2.  
   
      Votre `IOleCommandTarget` implémentation gère les commandes telles que **couper**, **copie**, et **coller**. Lors de l’implémentation `IOleCommandTarget`, décidez si votre éditeur requiert son propre fichier .vsct pour définir sa propre structure de menu de commande ou si elle peut implémenter des commandes standards définies par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En règle générale, les éditeurs utilisent et d’étendent les menus de l’IDE et définissent leurs propres barres d’outils. Toutefois, il est souvent nécessaire pour un éditeur définir leurs propres commandes spécifiques en plus à l’aide du jeu de commandes standard de l’IDE. Pour ce faire, votre éditeur doit déclarer les commandes standards, il utilise et puis définissez les nouvelles commandes, les menus contextuels, les menus de niveau supérieur et les barres d’outils dans un fichier .vsct. Si vous créez une activation sur place de l’éditeur, puis implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> et définir les menus et les barres d’outils de l’éditeur dans un fichier .vsct au lieu d’utiliser la fusion de menus OLE 2.  
   
@@ -156,4 +156,4 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 ## <a name="see-also"></a>Voir aussi  
  [Contribution au modèle Automation](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Guide pratique pour Fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md)
+ [Guide pratique pour fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md)

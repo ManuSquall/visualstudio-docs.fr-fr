@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979417"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procédure : analyser l’activité des utilisateurs virtuels durant un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 
@@ -25,9 +25,9 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Pour consulter le graphique d'activités des utilisateurs virtuels dans vos résultats de test de charge
 
-1.  Pour consulter les données des utilisateurs virtuels, vous devez d’abord configurer le paramètre **Tous les détails individuels** pour la propriété **Stockage des détails de minuterie** associée à votre test de charge. Exécutez ensuite le test de charge.
+1. Pour consulter les données des utilisateurs virtuels, vous devez d’abord configurer le paramètre **Tous les détails individuels** pour la propriété **Stockage des détails de minuterie** associée à votre test de charge. Exécutez ensuite le test de charge.
 
-2.  Après l'exécution de votre test de charge, la page de résumé des résultats des tests s'affiche. Choisissez le bouton **Détail de l’utilisateur** dans la barre d’outils.
+2. Après l'exécution de votre test de charge, la page de résumé des résultats des tests s'affiche. Choisissez le bouton **Détail de l’utilisateur** dans la barre d’outils.
 
      - ou -
 

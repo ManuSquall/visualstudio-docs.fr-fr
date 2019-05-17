@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566903"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
@@ -52,7 +52,7 @@ Les TableAdapters sont des composants générés par le concepteur qui se connec
 
 ![Flux de données dans une application cliente](../data-tools/media/clientdatadiagram.gif)
 
-Alors que les TableAdapters sont conçus avec le **Concepteur de Dataset**, les classes TableAdapter ne sont pas générés en tant que classes imbriquées de <xref:System.Data.DataSet>. Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous disposez d’un dataset nommé `NorthwindDataSet`, les TableAdapters associés <xref:System.Data.DataTable>s dans le `NorthwindDataSet` serait dans le `NorthwindDataSetTableAdapters` espace de noms. Pour accéder par programmation à un TableAdapter particulier, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
+Alors que les TableAdapters sont conçus avec le **Concepteur de Dataset**, les classes TableAdapter ne sont pas générés en tant que classes imbriquées de <xref:System.Data.DataSet>. Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous disposez d’un dataset nommé `NorthwindDataSet`, les TableAdapters associés <xref:System.Data.DataTable>s dans le `NorthwindDataSet` serait dans le `NorthwindDataSetTableAdapters` espace de noms. Pour accéder par programmation à un TableAdapter particulier, vous devez déclarer une nouvelle instance du TableAdapter. Exemple :
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -114,7 +114,7 @@ Si vous ne souhaitez pas créer ces méthodes directes, affectez à la **Generat
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Prise en charge du TableAdapter pour les types nullables
 
-Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Pour plus d’informations sur les types nullable dans C#, consultez [utiliser des types nullables](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Pour plus d’informations sur les types nullable en c#, consultez [utiliser des types nullables](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -129,9 +129,9 @@ Les éléments suivants sont les méthodes fréquemment utilisées et les propri
 |Membre|Description|
 |------------|-----------------|
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
-|Propriété`BackUpDataSetBeforeUpdate` |Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|
+|Propriété `BackUpDataSetBeforeUpdate`|Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|
 |*tableName* `TableAdapter` propriété|Représente un TableAdapter. Le composant TableAdapterManager généré contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders génère avec un TableAdapterManager contienne `CustomersTableAdapter` et `OrdersTableAdapter` propriétés.|
-|Propriété`UpdateOrder` |Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données.|
+|Propriété `UpdateOrder`|Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données.|
 
 ## <a name="security"></a>Sécurité
 

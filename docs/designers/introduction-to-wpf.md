@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893921"
 ---
 # <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
@@ -224,9 +224,9 @@ L’illustration suivante affiche le résultat du balisage XAML dans l’exemple
 
 La plupart des applications sont créées pour permettre aux utilisateurs d’afficher et de modifier des données. Pour les applications WPF, le travail de stockage et d’accès aux données est déjà fourni par des technologies telles que Microsoft SQL Server et ADO.NET. Après avoir accédé aux données et les avoir chargées dans les objets managés d’une application, les difficultés commencent pour les applications WPF. Cela implique essentiellement deux opérations :
 
-1.  La copie des données depuis les objets managés vers des contrôles, où les données pourront être affichées et modifiées.
+1. La copie des données depuis les objets managés vers des contrôles, où les données pourront être affichées et modifiées.
 
-2.  La garantie que les modifications apportées aux données à l’aide des contrôles sont recopiées vers les objets managés.
+2. La garantie que les modifications apportées aux données à l’aide des contrôles sont recopiées vers les objets managés.
 
 Pour simplifier le développement d’applications, WPF fournit un moteur de liaison de données pour effectuer automatiquement ces étapes. La principale unité du moteur de liaison de données est la classe <xref:System.Windows.Data.Binding> dont le rôle est de lier un contrôle (la cible de liaison) à un objet de données (la source de liaison). Cette relation est illustrée par la figure suivante :
 
@@ -575,11 +575,11 @@ L’exemple suivant définit une couleur d’arrière-plan commune partagée par
 
 Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide de l’élément de propriété `Window.Resources` . Cette ressource est disponible pour tous les enfants de la <xref:System.Windows.Window>. Il existe différentes portées de ressource, dont les suivantes, répertoriées dans l’ordre dans lequel elles sont résolues :
 
-1.  Un contrôle individuel (à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).
+1. Un contrôle individuel (à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).
 
-2.  Une <xref:System.Windows.Window> ou une <xref:System.Windows.Controls.Page> (également à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).
+2. Une <xref:System.Windows.Window> ou une <xref:System.Windows.Controls.Page> (également à l’aide de la propriété <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> héritée).
 
-3.  Une <xref:System.Windows.Application> (à l’aide de la propriété <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
+3. Une <xref:System.Windows.Application> (à l’aide de la propriété <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
 
 Les diverses portées offrent une grande flexibilité en ce qui concerne la manière de définir et partager vos ressources.
 

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688571"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analyser des problèmes de mémoire liés à .NET Framework
 Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dans le code .NET Framework à l'aide de l'analyseur de mémoire managée de Visual Studio. La version minimale de .NET Framework du code cible est .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identifier un problème de mémoire dans une application  
- Le symptôme le plus visible des problèmes de mémoire est le niveau de performances de votre application, en particulier s'il diminue au fil du temps. Une dégradation des performances d'autres applications pendant que votre application est en cours d'exécution peut également indiquer qu'il existe un problème de mémoire. Si vous suspectez un problème de mémoire, utilisez un outil tel que le Gestionnaire de tâches ou [Analyseur de performances Windows](http://technet.microsoft.com/library/cc749249.aspx) pour approfondir vos recherches. Par exemple, une augmentation de la taille totale de mémoire que vous ne pouvez pas expliquer peut être envisagée comme une source possible de fuites de mémoire :  
+ Le symptôme le plus visible des problèmes de mémoire est le niveau de performances de votre application, en particulier s'il diminue au fil du temps. Une dégradation des performances d'autres applications pendant que votre application est en cours d'exécution peut également indiquer qu'il existe un problème de mémoire. Si vous suspectez un problème de mémoire, utilisez un outil tel que le Gestionnaire de tâches ou [Analyseur de performances Windows](https://technet.microsoft.com/library/cc749249.aspx) pour approfondir vos recherches. Par exemple, une augmentation de la taille totale de mémoire que vous ne pouvez pas expliquer peut être envisagée comme une source possible de fuites de mémoire :  
   
  ![Croissance constante de la mémoire dans le moniteur de ressource](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,10 +56,10 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
  ![Pics de mémoire dans le Gestionnaire de ressources](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Collecter les instantanés de mémoire  
- Analyse les informations contenues dans l’outil d’analyse de mémoire *fichiers dump* qui contiennent des informations sur le tas. Vous pouvez créer des fichiers de vidage dans Visual Studio, ou vous pouvez utiliser un outil tel que [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) de [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Consultez [qu’est un fichier de vidage, et comment en créer une ?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sur le blog de l’équipe de débogage Visual Studio.  
+ Analyse les informations contenues dans l’outil d’analyse de mémoire *fichiers dump* qui contiennent des informations sur le tas. Vous pouvez créer des fichiers de vidage dans Visual Studio, ou vous pouvez utiliser un outil tel que [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) de [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Consultez [qu’est un fichier de vidage, et comment en créer une ?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sur le blog de l’équipe de débogage Visual Studio.  
   
 > [!NOTE]
->  La plupart des outils peuvent recueillir des informations de dump avec ou sans données de mémoire de tas complètes. L'analyseur de mémoire de Visual Studio nécessite des informations de tas complètes.  
+> La plupart des outils peuvent recueillir des informations de dump avec ou sans données de mémoire de tas complètes. L'analyseur de mémoire de Visual Studio nécessite des informations de tas complètes.  
   
  **Pour recueillir un dump à partir de Visual Studio**  
   

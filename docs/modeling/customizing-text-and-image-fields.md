@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445817"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 Lorsque vous définissez un décorateur de texte dans une forme, il est représenté par un champ de texte. Pour obtenir des exemples de l’initialisation de TextFields et autres dont ShapeFields, inspecter Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Dans le cas contraire, puis remplacer le `InitializeShapeFields` méthode de votre classe de forme, puis lui attribuer une valeur appropriés `Default...` propriété du champ de texte.
 
 > [!WARNING]
->  Pour remplacer `InitializeShapeFields()`, vous devez définir le **génère une Double dérivée** la propriété de la classe shape `true` dans la définition DSL.
+> Pour remplacer `InitializeShapeFields()`, vous devez définir le **génère une Double dérivée** la propriété de la classe shape `true` dans la définition DSL.
 
  Dans cet exemple, une forme a un champ de texte qui sera utilisé pour les commentaires de l’utilisateur. Nous souhaitons utiliser la police de commentaire standard. S’agissant d’une police standard à partir du jeu de style, nous pouvons définir l’id de police par défaut :
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Cet exemple montre une icône Modifier dépend de l’état de la forme élément de modèle.
 
 > [!WARNING]
->  Cet exemple montre comment rendre un élément décoratif d’image dynamique. Mais si vous souhaitez uniquement basculer entre une ou deux images selon l’état d’une variable de modèle, il est plus simple créer plusieurs décorateurs d’image, les localise dans la même position sur la forme et puis définissez le filtre de visibilité à dépendre des valeurs spécifiques du modèle variable. Pour définir ce filtre, sélectionnez le mappage de forme dans la définition DSL, ouvrez la fenêtre Détails DSL, cliquez sur l’onglet éléments décoratifs.
+> Cet exemple montre comment rendre un élément décoratif d’image dynamique. Mais si vous souhaitez uniquement basculer entre une ou deux images selon l’état d’une variable de modèle, il est plus simple créer plusieurs décorateurs d’image, les localise dans la même position sur la forme et puis définissez le filtre de visibilité à dépendre des valeurs spécifiques du modèle variable. Pour définir ce filtre, sélectionnez le mappage de forme dans la définition DSL, ouvrez la fenêtre Détails DSL, cliquez sur l’onglet éléments décoratifs.
 
  Pour exécuter cet exemple de code, créez une solution DSL à l’aide du modèle de langage Minimal. Ajouter une propriété de domaine booléenne `AlternateState` à la classe de domaine ExampleElement. Ajouter un élément décoratif d’icône à la classe ExampleShape et définissez son image dans un fichier bitmap. Cliquez sur **transformer tous les modèles**. Ajoutez un nouveau fichier de code dans le projet DSL et insérez le code suivant.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697162"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++**, puis choisissez **Avancé**.  
   
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Navigation de fichiers/répertoires  
  Vous ne devez jamais utiliser ces options, sauf dans les rares cas où une solution est tellement volumineuse que l’activité de base de données consomme une quantité inacceptable de ressources système.  
@@ -124,7 +124,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
  **Unités de traduction mises en cache maximum**  
  Nombre maximal d’unités de traduction qui restent actives à tout moment pour les demandes IntelliSense. Vous devez spécifier une valeur entre 2 et 15. Ce nombre est directement lié au nombre maximal de processus VCPkgSrv.exe qui s’exécutent (pour une instance donnée de Visual Studio). La valeur par défaut est 2, mais si vous avez de la mémoire disponible, vous pouvez augmenter cette valeur et éventuellement obtenir des performances légèrement supérieures dans IntelliSense.  
   
- Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
+ Pour plus d’informations sur les unités de traduction, consultez [Phases de traduction](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
   
  **Désactiver la liste de membres agressifs**  
  La liste des membres n’apparaît pas quand vous tapez le nom d’un type ou d’une variable. La liste s’affiche uniquement quand vous tapez l’un des caractères de validation, comme défini dans l’option **Caractères de validation des listes de membres**.  

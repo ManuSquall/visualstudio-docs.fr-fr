@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20e08fdd59bd519358342c9cb8abbc1516d8637e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8271acd499472de71c12828228704db18bc9ff3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713839"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458676"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtient les octets de mémoire qui contient physiquement la valeur d’une référence. Réservé à un usage ultérieur.
@@ -36,8 +39,8 @@ int GetMemoryBytes ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppMemoryBytes`
+## <a name="parameters"></a>Paramètres
+ `ppMemoryBytes`\
 
  [out] Retourne un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objet qui peut être utilisée pour récupérer la mémoire qui contient la valeur de la référence.
 

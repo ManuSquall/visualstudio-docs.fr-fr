@@ -1,5 +1,5 @@
 ---
-title: 'Comment : source de débogage .NET Framework | Microsoft Docs'
+title: 'Procédure : Déboguer une source .NET Framework | Microsoft Docs'
 ms.date: 11/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 25f40b0528b794863aabdb13ed9785d2b0c551b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894272"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Guide pratique pour déboguer une source .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une source .NET Framework
 
 Pour déboguer une source .NET Framework, vous devez :
 

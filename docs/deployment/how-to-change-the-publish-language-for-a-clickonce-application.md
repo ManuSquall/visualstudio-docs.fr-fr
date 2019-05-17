@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406653"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procédure : Changer la langue de publication d’une application ClickOnce
 
@@ -30,7 +30,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 Le `Publish language` propriété peut être définie le **Options de publication** boîte de dialogue, accessible à partir de la **publier** page de la **Concepteur de projet**.
 
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-change-the-publish-language"></a>Pour modifier la langue de publication
 

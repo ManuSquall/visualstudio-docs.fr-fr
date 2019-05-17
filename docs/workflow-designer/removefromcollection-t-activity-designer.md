@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b3a43c05f8be4806cf10098a4df673903494756
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933736"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Concepteur d’activités
 
@@ -23,7 +23,7 @@ Le **RemoveFromCollection\<T >** ActivityDesigner est utilisé pour créer et co
 
 ## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > activité
 
-L’activité <xref:System.Activities.Statements.RemoveFromCollection%601> supprime un élément spécifié d’une collection particulière.
+L'activité <xref:System.Activities.Statements.RemoveFromCollection%601> supprime un élément spécifié d'une collection particulière.
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>À l’aide de RemoveFromCollection\<T > Concepteur d’activités
 
@@ -40,7 +40,7 @@ Le tableau suivant présente le <xref:System.Activities.Statements.RemoveFromCol
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|L’élément à supprimer de la **Collection\<T >**. Cet élément est de type *T*, qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|La collection à partir duquel l’élément doit être supprimé. Cette collection est de type **ICollection < TypeArgument\>.** Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|
 |*TypeArgument*|True|Type T des éléments contenus dans la collection <xref:System.Collections.Generic.ICollection%601>. Par défaut, cela *TypeArgument* type est défini sur **Int32**. Pour modifier le type, modifiez la valeur de la *TypeArgument* dans la zone de liste déroulante dans la grille des propriétés.|
-|<xref:System.Activities.Activity%601.Result%2A>|False|Valeur qui indique si l'élément spécifié a été supprimé de la collection. Pour spécifier une variable à lier au résultat, entrez une variable dans la grille des propriétés|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Valeur qui indique si l’élément spécifié a été supprimé de la collection. Pour spécifier une variable à lier au résultat, entrez une variable dans la grille des propriétés|
 
 ## <a name="see-also"></a>Voir aussi
 

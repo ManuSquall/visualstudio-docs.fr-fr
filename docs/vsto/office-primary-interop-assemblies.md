@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447090"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblys PIA (Primary Interop Assembly) Office
 
@@ -84,7 +84,7 @@ Dans la plupart des cas, vous devez ajouter des références aux assemblys PIA s
 Si vous avez installé et enregistré les assemblys PIA dans le Global Assembly Cache, ces versions des assemblys apparaissent sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** . Vous devez éviter d'ajouter des références à ces versions d'assemblys, car des erreurs de développement peuvent se produire quand vous les utilisez. Par exemple, si vous avez enregistré différentes versions des assemblys PIA dans le Global Assembly Cache, votre projet crée automatiquement une liaison à la dernière version enregistrée de l'assembly, même si vous spécifiez une autre version de l'assembly sous l'onglet **COM** de la boîte de dialogue **Gestionnaire de références** .
 
 > [!NOTE]
->  Certains assemblys sont ajoutés manuellement à un projet quand un assembly qui leur fait référence est ajouté. Par exemple, fait référence à la *Office.dll* et *Microsoft.Vbe.Interop.dll* assemblys sont ajoutés automatiquement lorsque vous ajoutez une référence au Word, Excel, Outlook, Microsoft Forms ou graphique assemblys.
+> Certains assemblys sont ajoutés manuellement à un projet quand un assembly qui leur fait référence est ajouté. Par exemple, fait référence à la *Office.dll* et *Microsoft.Vbe.Interop.dll* assemblys sont ajoutés automatiquement lorsque vous ajoutez une référence au Word, Excel, Outlook, Microsoft Forms ou graphique assemblys.
 
 <a name="pialist"></a>
 

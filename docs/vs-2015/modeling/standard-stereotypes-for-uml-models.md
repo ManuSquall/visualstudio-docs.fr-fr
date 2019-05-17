@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411749"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stéréotypes standard pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 2. Dans la fenêtre Propriétés, définissez la **profils** propriété vide.  
   
     > [!NOTE]
-    >  Vous pouvez dissocier un profil uniquement si aucun des éléments du modèle ou du package n'utilise les stéréotypes de ce profil.  
+    > Vous pouvez dissocier un profil uniquement si aucun des éléments du modèle ou du package n'utilise les stéréotypes de ce profil.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Pour appliquer un stéréotype à un élément de modèle  
   
@@ -67,7 +67,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
      Les stéréotypes sélectionnés sont affichés entre « chevrons » dans l'élément de modèle pour la plupart des types d'éléments.  
   
     > [!NOTE]
-    >  Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
+    > Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
   
 3. Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
   

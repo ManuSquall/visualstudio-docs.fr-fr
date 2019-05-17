@@ -9,23 +9,23 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692578"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour rechercher des enregistrements spécifiques dans un jeu de données, utiliser la méthode FindBy sur la table de données, écrire votre propre boucle foreach sur la collection de lignes de la table ou [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Pour rechercher des enregistrements spécifiques dans un jeu de données, utiliser la méthode FindBy sur la table de données, écrire votre propre boucle foreach sur la collection de lignes de la table ou [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Jeu de données respecte la casse  
  Au sein d’un jeu de données, les noms de table et de colonne respectent la casse par défaut, autrement dit, une table dans un dataset nommé « Customers » peut également être appelée « customers ». Cela met en correspondance les conventions d’affectation de noms dans plusieurs bases de données, y compris SQL serveur SQL Server, le comportement par défaut est que les noms des éléments de données ne peut pas être distingués uniquement par la casse.  
   
 > [!NOTE]
->  Contrairement aux jeux de données, les documents XML sont la casse, par conséquent, les noms d’éléments de données définis dans les schémas sont respect de la casse. Par exemple, le protocole de schéma permet au schéma de définir une table appelée « Customers » et une autre table appelée « customers ». Cela peut entraîner des collisions de nom lorsqu’un schéma qui contient les éléments qui diffèrent uniquement par la casse est utilisé pour générer une classe de jeu de données.  
+> Contrairement aux jeux de données, les documents XML sont la casse, par conséquent, les noms d’éléments de données définis dans les schémas sont respect de la casse. Par exemple, le protocole de schéma permet au schéma de définir une table appelée « Customers » et une autre table appelée « customers ». Cela peut entraîner des collisions de nom lorsqu’un schéma qui contient les éléments qui diffèrent uniquement par la casse est utilisé pour générer une classe de jeu de données.  
   
  Respecte la casse, toutefois, peut être un facteur de l’interprétation des données dans le jeu de données. Par exemple, si vous filtrez des données dans une table de dataset, les critères de recherche peuvent retourner des résultats différents selon que la comparaison respecte la casse. Vous pouvez contrôler le respect de la casse de filtrage, la recherche et le tri en définissant le jeu de données <xref:System.Data.DataSet.CaseSensitive%2A> propriété. Toutes les tables dans le jeu de données héritent de la valeur de cette propriété par défaut. (Vous pouvez remplacer cette propriété pour chaque table individuelle en définissant la table <xref:System.Data.DataTable.CaseSensitive%2A> propriété.)  
   
@@ -65,7 +65,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
  Vous pouvez utiliser un <xref:System.Data.DataRelation> objet à localiser les enregistrements connexes en appelant le <xref:System.Data.DataRow.GetChildRows%2A> méthode d’un <xref:System.Data.DataRow> dans la table parente. Cette méthode retourne un tableau d’enregistrements enfants connexes. Ou vous pouvez appeler la <xref:System.Data.DataRow.GetParentRow%2A> méthode d’un <xref:System.Data.DataRow> dans la table enfant. Cette méthode retourne un seul <xref:System.Data.DataRow> à partir de la table parente.  
   
- Cette page fournit des exemples d’utilisation de datasets typés. Pour plus d’informations sur l’exploration des relations dans les datasets non typés, consultez [DataRelations accédant](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Cette page fournit des exemples d’utilisation de datasets typés. Pour plus d’informations sur l’exploration des relations dans les datasets non typés, consultez [DataRelations accédant](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Si vous travaillez dans une application Windows Forms et en utilisant les fonctionnalités de liaison de données pour afficher des données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  

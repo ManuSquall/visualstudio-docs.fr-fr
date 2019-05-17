@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998202"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -81,10 +81,10 @@ Les extensions de commande sont définies en ajoutant des entrées au point d’
 
 Le nœud de l’extension contient un attribut path qui spécifie le point d’extension auquel elle se connecte, dans ce cas `/MonoDevelop/Ide/Commands/Edit`. Il agit également comme nœud parent de la commande. Le nœud Commande a les attributs suivants :
 
-*   **id** : spécifie l’identificateur pour cette commande. Les identificateurs de commande doivent être déclarés comme membres d’énumération, et ils sont utilisés pour connecter des commandes à des éléments de commande.
-*   **_label** : texte à afficher dans les menus.
-*   **_description** : texte à afficher comme info-bulle pour les boutons de la barre d’outils.
-*   **defaultHandler** : spécifie la classe `CommandHandler` qui sert de base à la commande.
+* **id** : spécifie l’identificateur pour cette commande. Les identificateurs de commande doivent être déclarés comme membres d’énumération, et ils sont utilisés pour connecter des commandes à des éléments de commande.
+* **_label** : texte à afficher dans les menus.
+* **_description** : texte à afficher comme info-bulle pour les boutons de la barre d’outils.
+* **defaultHandler** : spécifie la classe `CommandHandler` qui sert de base à la commande.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ Ceci lie la commande et l’élément de commande : l’élément de commande a
 
 Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de développements, consultez [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) et [API Overview](http://monodevelop.com/Developers/Articles/API_Overview). Si vous créez des packages d’extension avancés, reportez-vous aussi à [Developer Articles](http://monodevelop.com/Developers/Articles). Voici une liste partielle des éléments que vous pouvez personnaliser :
 
-*   Panneaux
-*   Schémas de combinaisons de touches
-*   Stratégies
-*   Formateurs de code
-*   Formats de fichiers projet
-*   Panneaux de préférences
-*   Panneaux d’options
-*   Protocoles du débogueur
-*   Visualiseurs du débogueur
-*   Dispositions d’espace de travail
-*   Nœuds d’arborescence de panneau de solution
-*   Marges de l’éditeur de code
-*   Moteurs de tests unitaires
-*   Générateurs de code
-*   Extraits de code
-*   Versions cibles de .NET Framework
-*   Runtime cible
-*   Back-ends de système de contrôle de version
-*   Refactorisation
-*   Gestionnaires d’exécution
-*   Mise en surbrillance de la syntaxe
+* Panneaux
+* Schémas de combinaisons de touches
+* Stratégies
+* Formateurs de code
+* Formats de fichiers projet
+* Panneaux de préférences
+* Panneaux d’options
+* Protocoles du débogueur
+* Visualiseurs du débogueur
+* Dispositions d’espace de travail
+* Nœuds d’arborescence de panneau de solution
+* Marges de l’éditeur de code
+* Moteurs de tests unitaires
+* Générateurs de code
+* Extraits de code
+* Versions cibles de .NET Framework
+* Runtime cible
+* Back-ends de système de contrôle de version
+* Refactorisation
+* Gestionnaires d’exécution
+* Mise en surbrillance de la syntaxe
 
 ## <a name="additional-information"></a>Informations supplémentaires
 

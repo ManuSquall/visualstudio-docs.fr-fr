@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434361"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ namespace MyNamespace
  Contrairement à un analyseur qui est utilisé dans le cadre d’un compilateur (où les jetons sont converties en une forme de code exécutable), un analyseur de service de langage peut être appelé pour de nombreuses raisons et dans de nombreux contextes différents. Comment implémenter cette approche dans les <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe vous revient. Il est important de garder à l’esprit que le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode peut être appelée sur un thread d’arrière-plan.  
   
 > [!CAUTION]
->  Le <xref:Microsoft.VisualStudio.Package.ParseRequest> structure contient une référence à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objet. Cela <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objet ne peut pas être utilisé dans le thread d’arrière-plan. En fait, de nombreuses classes MPF base ne peut pas être utilisés dans le thread d’arrière-plan. Ceux-ci incluent le <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes et toute autre classe directement ou indirectement communique avec la vue.  
+> Le <xref:Microsoft.VisualStudio.Package.ParseRequest> structure contient une référence à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objet. Cela <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objet ne peut pas être utilisé dans le thread d’arrière-plan. En fait, de nombreuses classes MPF base ne peut pas être utilisés dans le thread d’arrière-plan. Ceux-ci incluent le <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes et toute autre classe directement ou indirectement communique avec la vue.  
   
  Cet analyseur analyse généralement l’heure de fichier la première source complète, elle est appelée ou lorsque l’analyse de la raison valeur de <xref:Microsoft.VisualStudio.Package.ParseReason> est donné. Les appels suivants à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode gérer une petite partie du code analysé et peuvent être exécutées beaucoup plus rapidement en utilisant les résultats de l’opération d’analyse complète précédente. Le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode communique les résultats de l’opération d’analyse via le <xref:Microsoft.VisualStudio.Package.AuthoringSink> et <xref:Microsoft.VisualStudio.Package.AuthoringScope> objets. Le <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet est utilisé pour collecter des informations pour une raison donnée d’analyse, par exemple, les informations sur les étendues de mise en correspondance d’accolades ou de signatures de méthode qui ont des listes de paramètres. Le <xref:Microsoft.VisualStudio.Package.AuthoringScope> fournit des collections de déclarations et les signatures de méthode et également prise en charge pour aller à avancé modifier l’option (**atteindre la définition**, **atteindre la déclaration**, **atteindre Référence**).  
   

@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0312d98dd6959cb5d67d593c4bf0af39fa1889eb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693356"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : Utilisation d’une commande Shell avec une extension de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60057480"
  Étant donné que vous ajoutez un composant MEF pour le VSPackage, vous devez spécifier les deux types de ressources dans le manifeste.  
   
 > [!NOTE]
->  Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Pour faire référence au composant MEF dans le projet VSPackage  
   
@@ -724,4 +724,4 @@ ms.locfileid: "60057480"
      Fourscore...  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

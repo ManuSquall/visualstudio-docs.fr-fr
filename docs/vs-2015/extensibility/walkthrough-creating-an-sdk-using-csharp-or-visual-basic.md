@@ -8,12 +8,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2a6d3b302825ca8ba33c9d0c44dbe18929c20ce2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 44b1083a9de4a5fe3e86ae37814f6df85f8c1e56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435493"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 8. Dans le **Configuration** colonne, vérifiez que **SimpleMath** ligne est définie sur **version**, puis choisissez le **fermer** bouton pour accepter le modifier.  
   
     > [!IMPORTANT]
-    >  Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
+    > Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le[!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].  
   
 9. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **Build**.  
   

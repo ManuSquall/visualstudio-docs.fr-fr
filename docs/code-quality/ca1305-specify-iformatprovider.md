@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797544"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
 
@@ -56,7 +56,7 @@ Même si le comportement par défaut du membre surchargé est adapté à vos bes
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.IFormatProvider> argument. Ou utilisez un [C# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et transmettez-le à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (méthode).
+Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.IFormatProvider> argument. Ou utilisez un [c# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et transmettez-le à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (méthode).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

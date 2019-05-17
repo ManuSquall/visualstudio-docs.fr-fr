@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690219"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 ### <a name="marker-type"></a>Type de marqueur  
   
-1. Les événements ayant l’[Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
+1. Les événements ayant l’[Opcode](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
   
-2. Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
+2. Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
   
 3. Dans tous les autres cas, l’événement est traité en tant que message.  
   
@@ -94,7 +94,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
  Utilisez le champ cvSpanId, un entier, pour faire correspondre des paires d’événements. La valeur de chaque paire d’événements de démarrage et d’arrêt qui représentent un intervalle doit être unique. En général, pour du code concurrent, vous devez utiliser des primitives de synchronisation comme <xref:System.Threading.Interlocked.Exchange%2A> pour que la clé (la valeur utilisée pour CvSpanID) soit correcte.  
   
 > [!NOTE]
->  L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.  
+> L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)

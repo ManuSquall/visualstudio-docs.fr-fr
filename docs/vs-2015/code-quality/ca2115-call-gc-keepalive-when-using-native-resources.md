@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c035c05480279012fba1101c3a60b020d34b1890
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687342"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58952594"
  Cette règle suppose que <xref:System.IntPtr> et <xref:System.UIntPtr> champs stockent les pointeurs vers les ressources non managées. L’objectif d’un finaliseur étant pour libérer les ressources non managées, la règle suppose que le finaliseur permettra de libérer la ressource non managée vers laquelle pointée les champs de pointeur. Cette règle suppose également que la méthode référence le champ de pointeur pour passer la ressource non managée au code non managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, ajoutez un appel à <xref:System.GC.KeepAlive%2A> à la méthode, en passant l’instance actuelle (`this` en C# et C++) comme argument. Placez l’appel après la dernière ligne de code où l’objet doit être protégé contre le garbage collection. Immédiatement après l’appel à <xref:System.GC.KeepAlive%2A>, l’objet est à nouveau considérées comme prête pour le garbage collection en supposant qu’il n’y aucune référence managée.
+ Pour corriger une violation de cette règle, ajoutez un appel à <xref:System.GC.KeepAlive%2A> à la méthode, en passant l’instance actuelle (`this` en c# et C++) comme argument. Placez l’appel après la dernière ligne de code où l’objet doit être protégé contre le garbage collection. Immédiatement après l’appel à <xref:System.GC.KeepAlive%2A>, l’objet est à nouveau considérées comme prête pour le garbage collection en supposant qu’il n’y aucune référence managée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Cette règle émet des hypothèses qui peuvent entraîner des faux positifs. Vous pouvez supprimer sans risque un avertissement de cette règle si :
@@ -56,7 +56,7 @@ ms.locfileid: "58952594"
  Dans l’exemple suivant, `BadMethod` n’inclut pas d’un appel à `GC.KeepAlive` et par conséquent ne respecte pas la règle. `GoodMethod` contient le code corrigé.
 
 > [!NOTE]
->  Cet exemple est pseudo-code, bien que le code se compile et s’exécute, l’avertissement n’est pas déclenché parce qu’une ressource non managée n’est pas créée ou libérée.
+> Cet exemple est pseudo-code, bien que le code se compile et s’exécute, l’avertissement n’est pas déclenché parce qu’une ressource non managée n’est pas créée ou libérée.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
@@ -64,4 +64,4 @@ ms.locfileid: "58952594"
  <xref:System.GC.KeepAlive%2A?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
- [Dispose, modèle](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose, modèle](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

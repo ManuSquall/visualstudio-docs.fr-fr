@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416643"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,10 +69,10 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ```  
   
 > [!WARNING]
->  La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
+> La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
   
 ### <a name="excluding-and-including"></a>Exclusion et inclusion  
- Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :  
+ Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +115,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
    Les correspondances ne respectent pas la casse.  
   
-   Par exemple :  
+   Exemple :  
   
 ```xml  
 <ModulePaths>  
@@ -134,7 +134,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ```  
   
 > [!WARNING]
->  S'il existe une erreur dans une expression régulière, telle qu'une séquence d'échappement ou une parenthèse sans correspondance, l'analyse de couverture du code ne fonctionnera pas.  
+> S'il existe une erreur dans une expression régulière, telle qu'une séquence d'échappement ou une parenthèse sans correspondance, l'analyse de couverture du code ne fonctionnera pas.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Autres façons d'inclure ou d'exclure des éléments  
  Consultez la [section d’exemples à la fin de cette rubrique](#sample) pour obtenir des exemples.  
@@ -183,11 +183,11 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Pour personnaliser les paramètres d'exécution d'un test en ligne de commande  
  Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. Le fichier de paramètres est un paramètre de cet utilitaire. Pour plus d’informations, consultez [Utilisation de VSTest.console à partir de la ligne de commande](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Lancez l'invite de commandes développeur Visual Studio :  
+1. Lancez l'invite de commandes développeur Visual Studio :  
   
      Dans Windows, choisissez **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Invite de commandes développeur**.  
   
-2.  Exécutez :  
+2. Exécutez :  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
 3. Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Sélectionnez votre fichier **.runsettings**.  
   
-   - <em>Mais **Assembly de test</em>* apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ **Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
+   - <em>Mais **Assembly de test</em>* apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
   
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez **[…]** à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, définissez **Test Runner** sur **Visual Studio Test Runner**.  
   
    Les résultats sont visibles dans la section de résumé du rapport de build.  
   
-##  <a name="sample"></a> Exemple de fichier runsettings  
+## <a name="sample"></a> Exemple de fichier runsettings  
  Copiez ce code et modifiez-le selon vos besoins. Il s'agit du fichier .runsettings par défaut.  
   
  (Pour connaître d’autres utilisations du fichier .runsettings, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  

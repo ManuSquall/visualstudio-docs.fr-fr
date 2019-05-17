@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25eebad9efc70e4fda45131e232983e81961625
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840367"
 ---
 # <a name="how-to-edit-xml-files"></a>Procédure : Modifier des fichiers XML
 

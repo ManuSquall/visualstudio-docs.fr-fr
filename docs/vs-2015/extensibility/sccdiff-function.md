@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432466"
 ---
 # <a name="sccdiff-function"></a>Fonction SccDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Optimiser les performances, le plug-in de contrôle de code source peut utiliser une alternative basée sur une somme de contrôle ou un horodatage au lieu de la comparaison octet par octet appelé pour `SCC_DIFF_CONTENTS`: ces formes de comparaison sont évidemment plus rapide mais moins fiable. Pas tous les systèmes de contrôle de source peuvent prendre en charge ces méthodes de comparaison autre, et le plug-in peut avoir à revenir à une comparaison de contenu. Tous les plug-ins de contrôle de code source doit, au minimum, prendre en charge une comparaison de contenu.  
   
 > [!NOTE]
->  Les indicateurs de différence rapide s’excluent mutuellement. Il est valide de ne passer aucun indicateur, mais il n’est pas valide pour simultanément passer plusieurs. `SCC_DIFF_QUICK_DIFF`, qui est un masque qui combine tous les indicateurs, peut être utilisé pour tester, mais elle ne doit jamais être passée en tant que paramètre.  
+> Les indicateurs de différence rapide s’excluent mutuellement. Il est valide de ne passer aucun indicateur, mais il n’est pas valide pour simultanément passer plusieurs. `SCC_DIFF_QUICK_DIFF`, qui est un masque qui combine tous les indicateurs, peut être utilisé pour tester, mais elle ne doit jamais être passée en tant que paramètre.  
   
 |`fOption`|Signification|  
 |---------------|-------------|  

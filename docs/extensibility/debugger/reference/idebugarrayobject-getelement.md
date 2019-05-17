@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684622"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615163"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Obtient un élément du tableau.
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwIndex`
+## <a name="parameters"></a>Paramètres
+`dwIndex`\
+[in] L’index d’élément.
 
- [in] L’index d’élément.
-
- `ppElement`
-
- [out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface qui représente l’élément.
+`ppElement`\
+[out] Retourne un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface qui représente l’élément.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c4f77d0eba4ca974522534c69d554af9d807a9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861917"
 ---
 # <a name="createexpinstance-utility"></a>Utilitaire CreateExpInstance
 Utilisez le **CreateExpInstance** utilitaire pour créer, réinitialiser ou supprimer une instance expérimentale de Visual Studio. Vous pouvez utiliser l’instance expérimentale pour déboguer et tester des extensions Visual Studio sans modifier le produit sous-jacent.

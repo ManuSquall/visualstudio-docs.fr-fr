@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681411"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458111"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Détermine l’emplacement de la référence d’assembly managé spécifié.
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `assemName`
+## <a name="parameters"></a>Paramètres
+ `assemName`\
 
  [in] Nom de l’assembly à résoudre.
 
- `assemBytes`
+ `assemBytes`\
 
  [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets d’assembly associés à la référence.
 
- `assemPdb`
+ `assemPdb`\
 
  [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les données associées à cette référence.
 
- `assemLocation`
+ `assemLocation`\
 
  [out] Retourne l’emplacement de chemin d’accès de cette référence.
 
- `alr`
+ `alr`\
 
  [out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement d’assembly de cette référence.
 

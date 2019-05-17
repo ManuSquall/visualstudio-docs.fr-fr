@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432302"
 ---
 # <a name="creating-your-own-start-page"></a>Création de votre propre page de démarrage
 Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle de projet Page de démarrage ou en créant une page de démarrage vierge.  
@@ -31,7 +31,7 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
 1. Téléchargez et installez le [modèle de projet Page de démarrage](http://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
   
     > [!WARNING]
-    >  À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : Mise à niveau d’une Page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : Mise à niveau d’une Page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Une fois que vous avez installé le modèle, utilisez-le pour créer une nouvelle page de démarrage.  
   
@@ -101,4 +101,4 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Procédure pas à pas : Ajout de XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Procédure pas à pas : Ajout de code XAML personnalisé à la page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

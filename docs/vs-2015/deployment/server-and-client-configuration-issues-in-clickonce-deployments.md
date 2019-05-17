@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686381"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client lors de déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
   
 - .deploy  
   
-  Toutefois, vous pouvez désactiver cette option en désactivant le **utiliser l’extension de fichier « .deploy »** option sur le [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), auquel cas vous devez configurer le serveur Web pour débloquer toutes les extensions de fichier utilisé dans l’application.  
+  Toutefois, vous pouvez désactiver cette option en désactivant le **utiliser l’extension de fichier « .deploy »** option sur le [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), auquel cas vous devez configurer le serveur Web pour débloquer toutes les extensions de fichier utilisé dans l’application.  
   
   Vous devrez configurer .manifest, .application et .deploy, par exemple, si vous utilisez IIS où vous n’avez pas installé le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ou si vous utilisez un autre serveur Web (par exemple, Apache).  
   
@@ -54,13 +54,13 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
   
  Vous pouvez également appliquer un correctif pour .NET Framework 2.0 pour activer cette fonctionnalité. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Pour plus d’informations, consultez [ \<defaultProxy >, élément (paramètres réseau)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Pour plus d’informations, consultez [ \<defaultProxy >, élément (paramètres réseau)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce et compatibilité du navigateur Web  
  Actuellement, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installations seront lancée seulement si l’URL pour le manifeste de déploiement est ouverte à l’aide d’Internet Explorer. Un déploiement dont l’URL est lancée à partir d’une autre application, comme Microsoft Office Outlook, sera lancé avec succès uniquement si Internet Explorer est défini en tant que le navigateur Web par défaut.  
   
 > [!NOTE]
->  Mozilla Firefox est pris en charge si le fournisseur de déploiement n’est pas vide ou l’extension Assistant Microsoft .NET Framework est installée. Cette extension est empaquetée avec .NET Framework 3.5 SP1. Pour la prise en charge de l’application XBAP, le plug-in NPWPF est activé si nécessaire.  
+> Mozilla Firefox est pris en charge si le fournisseur de déploiement n’est pas vide ou l’extension Assistant Microsoft .NET Framework est installée. Cette extension est empaquetée avec .NET Framework 3.5 SP1. Pour la prise en charge de l’application XBAP, le plug-in NPWPF est activé si nécessaire.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Activation d’Applications ClickOnce via des scripts de navigateur  
  Si vous avez développé une page Web personnalisée qui lance un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application à l’aide d’Active Scripting, vous trouverez peut-être que l’application n’est pas lancée sur certains ordinateurs. Internet Explorer contient un paramètre appelé **demander confirmation pour les téléchargements de fichier**, ce qui affecte ce comportement. Ce paramètre est disponible sur le **sécurité** onglet dans son **Options** menu qui affecte ce comportement. Il est appelé **demander confirmation pour les téléchargements de fichier**, et il est répertorié sous le **télécharge** catégorie. La propriété est définie sur **activer** par défaut pour les pages Web intranet et à **désactiver** par défaut pour les pages Web d’Internet. Lorsque ce paramètre est défini sur **désactiver**, toute tentative d’activer un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application par programmation (par exemple, en assignant son URL à la `document.location` propriété) seront bloqués. Dans ce cas, les utilisateurs peuvent lancer des applications uniquement par le biais d’un téléchargement initiée par l’utilisateur, par exemple, en cliquant sur un lien hypertexte correspondant à l’URL de l’application.  
@@ -78,7 +78,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 ```  
   
 > [!NOTE]
->  Vous pouvez utiliser l’authentification NTLM (NT stimulation-réponse) si le site demande des informations d’identification autres que vos informations d’identification par défaut, puis, dans la boîte de dialogue de sécurité, vous cliquez sur **OK** lorsque vous y êtes invité si vous souhaitez enregistrer fourni informations d’identification pour les sessions ultérieures. Toutefois, cette solution de contournement ne fonctionne pas pour l’authentification de base.  
+> Vous pouvez utiliser l’authentification NTLM (NT stimulation-réponse) si le site demande des informations d’identification autres que vos informations d’identification par défaut, puis, dans la boîte de dialogue de sécurité, vous cliquez sur **OK** lorsque vous y êtes invité si vous souhaitez enregistrer fourni informations d’identification pour les sessions ultérieures. Toutefois, cette solution de contournement ne fonctionne pas pour l’authentification de base.  
   
 ## <a name="using-third-party-web-servers"></a>À l’aide de serveurs Web de tiers  
  Si vous déployez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application à partir d’un serveur Web autres qu’IIS, vous pouvez rencontrer un problème si le serveur retourne le type de contenu incorrect pour la clé [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fichiers, tels que le manifeste de déploiement et le manifeste d’application. Pour résoudre ce problème, consultez l’aide de votre serveur Web documentation sur la façon d’ajouter de nouveaux types de contenu sur le serveur et vérifiez que tous les mappages d’extension nom fichier répertorié dans le tableau suivant sont en place.  
@@ -92,7 +92,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce et lecteurs mappés  
- Si vous utilisez Visual Studio pour publier une application ClickOnce, vous ne pouvez pas spécifier un lecteur mappé comme emplacement d’installation. Toutefois, vous pouvez modifier l’application ClickOnce pour installer à partir d’un lecteur mappé à l’aide de l’éditeur (Mage.exe et MageUI.exe) et le Générateur de manifeste. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Si vous utilisez Visual Studio pour publier une application ClickOnce, vous ne pouvez pas spécifier un lecteur mappé comme emplacement d’installation. Toutefois, vous pouvez modifier l’application ClickOnce pour installer à partir d’un lecteur mappé à l’aide de l’éditeur (Mage.exe et MageUI.exe) et le Générateur de manifeste. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocole FTP non pris en charge pour l’installation d’Applications  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] prend en charge l’installation d’applications à partir de n’importe quel serveur Web HTTP 1.1 ou le serveur de fichiers. FTP, File Transfer Protocol, n’est pas pris en charge pour l’installation d’applications. Vous pouvez utiliser FTP pour publier des applications uniquement. Le tableau suivant récapitule ces différences :  

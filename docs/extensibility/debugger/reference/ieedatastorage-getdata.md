@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693748"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224191"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Récupère le nombre spécifié d’octets à partir de l’objet.
@@ -40,16 +43,16 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dataSize`
+## <a name="parameters"></a>Paramètres
+ `dataSize`\
 
  [in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).
 
- `sizeGotten`
+ `sizeGotten`\
 
  [out] Retourne le nombre d’octets réellement récupérées.
 
- `data`
+ `data`\
 
  [in, out] Tableau à remplir avec les données demandées.
 

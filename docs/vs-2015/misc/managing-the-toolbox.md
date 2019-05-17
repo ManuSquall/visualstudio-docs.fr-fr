@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681539"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
   
- De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [Comment : Contrôler la boîte à outils](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [Comment : Contrôler la boîte à outils](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Sélection automatique d’onglets dans la boîte à outils  
  Vous pouvez activer automatiquement un onglet ou une catégorie de la **boîte à outils** en fonction de l’éditeur ou du concepteur actuellement actif. Par exemple, si un concepteur de formulaires est activé, vous pouvez souhaiter sélectionner l’onglet **Tous les Windows Forms** .  
@@ -51,7 +51,7 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
   
 - Un VSPackage doit utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pour ajouter des contrôles ou héberger le contrôle dans un contrôle wrapper dérivé de <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (importateur de contrôles ActiveX Windows Forms)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (importateur de contrôles ActiveX Windows Forms)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sont des interfaces COM disponibles via les assemblys PIA.  
   

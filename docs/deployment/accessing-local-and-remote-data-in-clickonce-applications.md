@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b52628b016893353c83e998a1e395118807a31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406618"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accéder aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.
@@ -40,23 +40,23 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
  Le répertoire de données est destiné aux données gérées par l'application, c'est-à-dire les données que l'application stocke et gère explicitement. Tous les fichiers statiques qui ne sont pas des dépendances et ne sont pas marqués en tant que « données » dans le manifeste d'application résident plutôt dans le répertoire de l'application. Ce répertoire contient les fichiers exécutables (*.exe*) et les assemblys de l’application.
 
 > [!NOTE]
->  Quand une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est désinstallée, son répertoire de données est également supprimé. N’utilisez jamais le répertoire de données pour stocker les données gérées par l’utilisateur final, comme des documents.
+> Quand une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est désinstallée, son répertoire de données est également supprimé. N’utilisez jamais le répertoire de données pour stocker les données gérées par l’utilisateur final, comme des documents.
 
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Marquer les fichiers de données dans une distribution ClickOnce
- Pour placer un fichier existant dans le répertoire de données, vous devez marquer le fichier existant en tant que fichier de données dans le fichier manifeste de votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Pour plus d'informations, consultez [Guide pratique pour inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Pour placer un fichier existant dans le répertoire de données, vous devez marquer le fichier existant en tant que fichier de données dans le fichier manifeste de votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Pour plus d'informations, voir [Procédure : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
 #### <a name="read-from-and-write-to-the-data-directory"></a>Lire et écrire dans le répertoire de données
  La lecture dans le répertoire de données implique que votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande une autorisation d'accès en lecture. De la même façon, l'écriture dans le répertoire requiert une autorisation d'accès en écriture. Votre application reçoit automatiquement cette autorisation si elle est configurée pour s'exécuter avec un niveau de confiance totale. Pour plus d’informations sur l’élévation d’autorisations pour votre application à l’aide de l’élévation d’autorisations ou de déploiement d’applications approuvées, consultez [applications ClickOnce Secure](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
->  Si votre organisation n'utilise pas le déploiement d'applications approuvées et a désactivé l'élévation d'autorisations, la déclaration des autorisations échoue.
+> Si votre organisation n'utilise pas le déploiement d'applications approuvées et a désactivé l'élévation d'autorisations, la déclaration des autorisations échoue.
 
  Une fois que votre application dispose de ces autorisations, elle peut accéder au répertoire de données en appelant des méthodes sur les classes dans le <xref:System.IO>. Vous pouvez obtenir le chemin d'accès au répertoire de données dans une application Windows Forms [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l'aide de la propriété <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> définie sur la propriété <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> de <xref:System.Deployment.Application.ApplicationDeployment>. Il s'agit de la façon la plus pratique et recommandée pour accéder à vos données. L’exemple de code suivant montre comment procéder pour un fichier texte nommé *CSV.txt* que vous avez inclus dans votre déploiement en tant que fichier de données.
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [Comment : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
  Vous pouvez également obtenir le chemin d'accès au répertoire de données en utilisant les variables appropriées sur la classe <xref:System.Windows.Forms.Application> , telles que <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 

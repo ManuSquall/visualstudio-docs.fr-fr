@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941463"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458305"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l'application
 
@@ -25,5 +25,4 @@ Pour répondre à ce message, sélectionnez **OK**. Les informations de connexio
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

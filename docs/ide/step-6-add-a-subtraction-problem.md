@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996641"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : Ajouter un problème de soustraction
 Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de soustraction et apprendre à effectuer les tâches suivantes :
 
--   Stocker les valeurs de soustraction.
+- Stocker les valeurs de soustraction.
 
--   Générer des nombres aléatoires pour le problème (et vérifier que la réponse est comprise entre 0 et 100).
+- Générer des nombres aléatoires pour le problème (et vérifier que la réponse est comprise entre 0 et 100).
 
--   Mettre à jour la méthode qui vérifie les réponses afin qu'elle vérifie également le nouveau problème de soustraction.
+- Mettre à jour la méthode qui vérifie les réponses afin qu'elle vérifie également le nouveau problème de soustraction.
 
--   Mettre à jour le gestionnaire d'événements <xref:System.Windows.Forms.Timer.Tick> de votre minuterie pour qu'il remplisse la réponse correcte lorsque le temps est écoulé.
+- Mettre à jour le gestionnaire d'événements <xref:System.Windows.Forms.Timer.Tick> de votre minuterie pour qu'il remplisse la réponse correcte lorsque le temps est écoulé.
 
 ## <a name="to-add-a-subtraction-problem"></a>Pour ajouter un problème de soustraction
 
-1.  Ajoutez deux variables de type entier à votre formulaire pour le problème de soustraction, entre les variables de type entier du problème d'addition et la minuterie. Le code doit se présenter comme suit.
+1. Ajoutez deux variables de type entier à votre formulaire pour le problème de soustraction, entre les variables de type entier du problème d'addition et la minuterie. Le code doit se présenter comme suit.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
 
      Vous modifierez ensuite la méthode `StartTheQuiz()` permettant de fournir des valeurs aléatoires pour le problème de soustraction.
 
-2.  Ajoutez le code suivant après le commentaire « Fill in the subtraction problem » (« Remplissage du problème de soustraction »).
+2. Ajoutez le code suivant après le commentaire « Fill in the subtraction problem » (« Remplissage du problème de soustraction »).
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ Info-bulle de la fenêtre **IntelliSense**
 
      Dans ce cas, vous souhaitez choisir la dernière surcharge, car vous pouvez spécifier les valeurs minimales et maximales.
 
-3.  Modifiez la méthode `CheckTheAnswer()` pour vérifier si la réponse à la soustraction est correcte.
+3. Modifiez la méthode `CheckTheAnswer()` pour vérifier si la réponse à la soustraction est correcte.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      En Visual C#, `&&` correspond à l'opérateur `logical and`. En Visual Basic, l'opérateur équivalent est `AndAlso`. Ces opérateurs indiquent « si la somme de addend1 et addend2 est égale à la valeur de la somme NumericUpDown, et si minuend moins subtrahend est égal à la valeur de difference NumericUpDown ». La méthode `CheckTheAnswer()` retourne `true` si les réponses aux problèmes d'addition et de soustraction sont toutes les deux correctes.
 
-4.  Remplacez la dernière partie du gestionnaire d'événements Tick du minuteur par le code suivant afin que la réponse correcte s'affiche une fois le délai écoulé.
+4. Remplacez la dernière partie du gestionnaire d'événements Tick du minuteur par le code suivant afin que la réponse correcte s'affiche une fois le délai écoulé.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Enregistrez et exécutez votre code.
+5. Enregistrez et exécutez votre code.
 
      Votre programme inclut un problème de soustraction, comme le montre l’illustration suivante :
 
@@ -79,6 +79,6 @@ Info-bulle de la fenêtre **IntelliSense**
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

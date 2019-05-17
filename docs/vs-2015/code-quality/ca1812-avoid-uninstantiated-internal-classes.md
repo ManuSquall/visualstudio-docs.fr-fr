@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081995"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,16 +52,16 @@ ms.locfileid: "58948082"
 
 - Les types qui ne peuvent pas être instanciés et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
 
-  Bien que vous ne puissiez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil autonome externe FxCop vérifiera la règle sur les constructeurs internes si chaque assembly `friend` est présente dans l’analyse.
+  Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs portent la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
 
   Même si vous ne pouvez pas contourner cette limitation dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analyse du Code, l’outil FxCop autonome externe se produira sur les constructeurs internes si chaque `friend` assembly est présent dans l’analyse.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le type ou ajoutez le code qui l’utilise. Si le type contient uniquement des méthodes statiques, ajoutez une des opérations suivantes pour le type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
--   Un constructeur privé pour les types qui ciblent [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versions 1.0 et 1.1.
+- Un constructeur privé pour les types qui ciblent [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versions 1.0 et 1.1.
 
--   Le modificateur `static` (`Shared` en Visual Basic) pour les types qui ciblent [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- Le modificateur `static` (`Shared` en Visual Basic) pour les types qui ciblent [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle. Nous vous recommandons de supprimer cet avertissement dans les situations suivantes :

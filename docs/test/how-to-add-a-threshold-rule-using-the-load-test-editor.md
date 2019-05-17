@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002295"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procédure : ajouter une règle de seuil à l’aide de l’éditeur de test de charge
 
@@ -26,17 +26,17 @@ Les règles de seuil contenues dans des tests de charge comparent une valeur de 
 
 ## <a name="to-add-a-threshold-rule"></a>Pour ajouter une règle de seuil
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Dans l’éditeur de test de charge, développez le nœud **Ensembles de compteurs**.
+2. Dans l’éditeur de test de charge, développez le nœud **Ensembles de compteurs**.
 
-3.  Développez l’une des **Catégories de compteur** dans l’un des Ensembles de compteurs. Par exemple, vous pouvez sélectionner **LoadTest:Scenario**. Développez le nœud.
+3. Développez l’une des **Catégories de compteur** dans l’un des Ensembles de compteurs. Par exemple, vous pouvez sélectionner **LoadTest:Scenario**. Développez le nœud.
 
-4.  Cliquez avec le bouton droit sur l’un des compteurs, par exemple **Charge utilisateur**, sous **LoadTest:Scenario**. Sélectionnez **Ajouter une règle de seuil**.
+4. Cliquez avec le bouton droit sur l’un des compteurs, par exemple **Charge utilisateur**, sous **LoadTest:Scenario**. Sélectionnez **Ajouter une règle de seuil**.
 
      La boîte de dialogue **Ajouter une règle de seuil** s’affiche.
 
-5.  Vous avez le choix entre deux types de règle : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
+5. Vous avez le choix entre deux types de règle : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
 
     > [!NOTE]
     > Affectez à la propriété **Alerte en cas de dépassement** la valeur **True** pour indiquer que le dépassement d’un seuil constitue un problème, ou la valeur **False** pour indiquer que le fait de ne pas atteindre un seuil constitue un problème.

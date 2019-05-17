@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420952"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Procédure : Valider les données lors d’une nouvelle ligne est ajoutée à un contrôle ListObject
   Les utilisateurs peuvent ajouter de nouvelles lignes à un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié aux données. Vous pouvez valider les données de l’utilisateur avant d’approuver les modifications apportées à la source de données.
@@ -30,7 +30,7 @@ ms.locfileid: "60039309"
  Chaque fois qu’une ligne est ajoutée à un <xref:Microsoft.Office.Tools.Excel.ListObject> qui est lié aux données, l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> est déclenché. Vous pouvez gérer cet événement pour effectuer la validation de vos données. Par exemple, si votre application requiert que seuls les employés âgés de 18 à 65 ans peuvent être ajoutés à la source de données, vérifiez que l’âge entré est compris dans cette plage avant la ligne est ajoutée.
 
 > [!NOTE]
->  Vous devez toujours vérifier l’entrée d’utilisateur sur le client, mais aussi sur le serveur. Pour plus d’informations, consultez [sécuriser les applications clientes](/dotnet/framework/data/adonet/secure-client-applications).
+> Vous devez toujours vérifier l’entrée d’utilisateur sur le client, mais aussi sur le serveur. Pour plus d’informations, consultez [sécuriser les applications clientes](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Pour valider des données lorsqu’une nouvelle ligne est ajoutée à un ListObject lié aux données
 

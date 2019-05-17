@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719650"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460645"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Cette structure représente une adresse qui est relative à un `this` pointeur (`Me` en Visual Basic).
@@ -40,17 +43,20 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Termes
- dwOffset décalage d’octet d’une position de base (par exemple, le début d’un vtable de la classe).
+## <a name="members"></a>Membres
+ `dwOffset`\
+ Décalage d’octet d’une position de base (par exemple, le début d’un vtable de la classe).
 
- dwBitOffset décalage de bits à partir d’une position de base (toujours 0, sauf si la référence à un champ de bits).
+ `dwBitOffset`\
+ Décalage de bits à partir d’une position de base (toujours 0, sauf si la référence à un champ de bits).
 
- Nombre de bits qui représente l’adresse de dwBitLength (toujours 0, sauf si la référence à un champ de bits).
+ `dwBitLength`\
+ Nombre de bits qui représente l’adresse (toujours 0, sauf si la référence à un champ de bits).
 
 ## <a name="remarks"></a>Notes
  Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

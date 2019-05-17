@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3a1340821dcbdb9e1b28192f0b798b458528f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400257"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Récupère une référence au parent lexicale du symbole.
@@ -39,9 +39,9 @@ HRESULT get_lexicalParent ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le parent lexical d’un symbole est la fonction ou un module englobant. Par exemple, le parent lexical d’un paramètre de fonction ou une variable locale est la fonction elle-même tandis que le parent lexical de la fonction est le module, dans qu'il est défini.
 
  Les symboles possibles qui peuvent s’afficher comme lexicales parents sont documentées dans [hiérarchie lexicale des Types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).

@@ -10,12 +10,12 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6575181a7cd56db7148ebe2d6c11c98949f1b753
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447202"
 ---
 # <a name="simplified-embedding"></a>Incorporation simplifiée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Incorporation simplifiée est activée dans un éditeur lorsque son objet de vue
 Éditeur avec l’incorporation simplifiée  
   
 > [!NOTE]
->  Des objets dans cette illustration, uniquement le `CYourEditorFactory` objet est requis pour créer un éditeur de fichier standard. Si vous créez un éditeur personnalisé, vous ne devez pas implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour les éditeurs non personnalisées, toutefois, vous devez le faire.  
+> Des objets dans cette illustration, uniquement le `CYourEditorFactory` objet est requis pour créer un éditeur de fichier standard. Si vous créez un éditeur personnalisé, vous ne devez pas implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour les éditeurs non personnalisées, toutefois, vous devez le faire.  
   
  Toutes les interfaces implémentées pour créer un éditeur avec l’incorporation simplifiée sont contenus dans le `CYourEditorDocument` objet. Toutefois, pour prendre en charge plusieurs vues de données de document, diviser les interfaces sur les objets de données et les vues distincts comme indiqué dans le tableau suivant.  
   

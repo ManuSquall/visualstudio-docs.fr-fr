@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436642"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatage du code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58938631"
 Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] code source peut être reformaté par la normalisation de l’utilisation des mises en retrait et des espaces blancs. Cela peut inclure d’insertion ou suppression des espaces ou des tabulations au début de chaque ligne, ajoutez de nouvelles lignes entre les lignes ou remplaçant les espaces par des tabulations ou les tabulations par des espaces.  
   
 > [!NOTE]
->  **Remarque** insertion ou la suppression des caractères de saut de ligne peut affecter les marqueurs tels que des points d’arrêt et les signets, mais ajout ou la suppression des espaces ou des tabulations n’affecte pas les marqueurs.  
+> **Remarque** insertion ou la suppression des caractères de saut de ligne peut affecter les marqueurs tels que des points d’arrêt et les signets, mais ajout ou la suppression des espaces ou des tabulations n’affecte pas les marqueurs.  
   
- Les utilisateurs peuvent démarrer une opération de reformatage en sélectionnant **la sélection du Format** ou **mettre le Document** à partir de la **avancé** menu sur le **modifier**menu. Une opération de reformatage peut également être déclenchée lorsqu’un extrait de code ou un caractère particulier est inséré. Par exemple, lorsque vous tapez une accolade fermante en C#, tout le contenu entre l’accolade ouvrante correspondante et l’accolade fermante est automatiquement mis en retrait pour le niveau approprié.  
+ Les utilisateurs peuvent démarrer une opération de reformatage en sélectionnant **la sélection du Format** ou **mettre le Document** à partir de la **avancé** menu sur le **modifier**menu. Une opération de reformatage peut également être déclenchée lorsqu’un extrait de code ou un caractère particulier est inséré. Par exemple, lorsque vous tapez une accolade fermante en c#, tout le contenu entre l’accolade ouvrante correspondante et l’accolade fermante est automatiquement mis en retrait pour le niveau approprié.  
   
  Lors de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] envoie le **la sélection du Format** ou **mettre le Document** commande pour le service de langage, le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe appelle le <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.Source> classe. Pour prendre en charge la mise en forme que vous devez substituer la <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> méthode et fournir votre propre mise en forme de code.  
   

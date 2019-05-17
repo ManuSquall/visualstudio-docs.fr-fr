@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a289707110aed49cbd5e9f8b68ce5579ec92223f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b953b18c96a48402e49f06443c09220d151204dd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709198"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458797"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Obtient la nouvelle propriété.
@@ -36,8 +39,8 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppProperty`
+## <a name="parameters"></a>Paramètres
+ `ppProperty`\
 
  [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la nouvelle propriété.
 

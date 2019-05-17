@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900270"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Informations de référence sur les API non managées ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées de dfshim.dll.
@@ -44,7 +44,7 @@ ms.locfileid: "56633796"
 ### <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0 x 80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Remarques
+### <a name="remarks"></a>Notes
  Appel de CleanOnlineAppCache démarrera le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] du service si elle n’est pas déjà en cours d’exécution.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -68,7 +68,7 @@ ms.locfileid: "56633796"
 ### <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Retourne HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si une mémoire tampon est trop petite.
 
-### <a name="remarks"></a>Remarques
+### <a name="remarks"></a>Notes
  Les pointeurs ne doivent pas être null. `pcwzActivationUrl` et `pcwzPathToDeploymentManifest` ne doit pas être vide.
 
  Il est responsable de l’appelant pour nettoyer l’URL d’activation. Par exemple, ajout d’échappement des caractères lorsqu’ils sont nécessaires ou la suppression de la chaîne de requête.

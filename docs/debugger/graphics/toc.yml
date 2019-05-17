@@ -1,6 +1,6 @@
 - name: Diagnostics des graphiques Visual Studio
   href: visual-studio-graphics-diagnostics.md
-- name: Vue d’ensemble de Visual Studio Graphics Diagnostics
+- name: Vue d'ensemble de Visual Studio Graphics Diagnostics
   href: overview-of-visual-studio-graphics-diagnostics.md
 - name: Prise en main de Visual Studio Graphics Diagnostics
   href: getting-started-with-visual-studio-graphics-diagnostics.md
@@ -9,8 +9,9 @@
 - name: Document de journal Graphics
   href: graphics-log-document.md
 - name: Analyse des frames graphiques
-  href: graphics-frame-analysis.md
   items:
+    - name: Analyse des frames graphiques
+      href: graphics-frame-analysis.md
     - name: Variante de taille Viewport 1x1
       href: 1x1-viewport-size-variant.md
     - name: Variantes MSAA 0x-2x-4x
@@ -46,30 +47,33 @@
 - name: Outil en ligne de commande de capture
   href: command-line-capture-tool.md
 - name: Exemples Graphics Diagnostics
-  href: graphics-diagnostics-examples.md
   items:
-    - name: "Procédure pas à pas\_: capture d'informations Graphics"
+    - name: Exemples Graphics Diagnostics
+      href: graphics-diagnostics-examples.md
+    - name: "Procédure pas à pas\_: Capture d'informations graphiques"
       href: walkthrough-capturing-graphics-information.md
-    - name: "Procédure pas à pas\_: capture d'informations Graphics par programmation"
+    - name: "Procédure pas à pas\_: capture d’informations graphiques par programmation"
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: "Procédure pas à pas\_: objets manquants en raison de l'état du périphérique"
+    - name: "Procédure pas à pas\_: objets manquants en raison de l’état de l’appareil"
       href: walkthrough-missing-objects-due-to-device-state.md
     - name: "Procédure pas à pas\_: objets manquants en raison de Vertex Shader"
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: "Procédure pas à pas\_: objets manquants en raison d'un pipeline mal configuré"
+    - name: "Procédure pas à pas\_: objets manquants en raison d’un pipeline mal configuré"
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: "Procédure pas à pas\_: débogage des erreurs de rendus dues à la trame"
+    - name: "Procédure pas à pas\_: débogage des erreurs de rendu dues à l’ombrage"
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: "Procédure pas à pas\_: utilisation de Graphics Diagnostics pour déboguer un Shader de calcul"
+    - name: "Procédure pas à pas\_: utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul"
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: "Comment\_: modifier l’ordinateur de lecture Graphics Diagnostics"
+    - name: "Procédure\_: modifier l’ordinateur de lecture Graphics Diagnostics"
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Référence (capture par programmation)
-  href: reference-programmatic-capture.md
   items:
+    - name: Référence (capture par programmation)
+      href: reference-programmatic-capture.md
     - name: 'VsgDbg, classe'
-      href: vsgdbg-class.md
       items:
+        - name: 'VsgDbg, classe'
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg, constructeur'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg, destructeur'

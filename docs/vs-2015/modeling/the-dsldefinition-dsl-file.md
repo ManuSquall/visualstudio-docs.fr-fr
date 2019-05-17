@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7294a0a835b4797424d1f736405a0488db28587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 610d371fe288a6582cdf9e6460c339347f60c81a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070184"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680841"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  Classes  
  Cette section définit chaque classe de domaine qui génère une classe dans le code généré.  
   
- Relations  
+ Relationships  
  Cette section définit chaque relation dans le modèle. La source et la cible représentent les deux côtés d'une relation.  
   
  Types  
  Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. Les `DomainEnumerations` sont définies dans le modèle et génèrent des types dans DomainModel.cs. Les `ExternalTypes` font référence à des types qui sont définis ailleurs (par exemple `String` ou `Int32`) et ils ne génèrent rien.  
   
- Formes  
+ Shapes  
  Cette section définit les formes qui décrivent comment le modèle apparaît dans un concepteur. Ces formes géométriques sont mappées aux classes dans le modèle, dans la section Diagram.  
   
  Connectors  
@@ -56,7 +56,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
  ConnectionBuilders  
  Cette section définit un générateur de connexion pour chaque outil connecteur (l'outil de création de liens entre deux classes qui peuvent être connectées). Cette section détermine si vous pouvez connecter une classe source et une classe cible.  
   
- Diagramme  
+ Diagram  
  Cette section définit un diagramme et vous l'utilisez pour spécifier des propriétés telles que la couleur d'arrière-plan et la classe racine. (La classe racine est la classe de domaine qui est représentée par le diagramme dans son ensemble.) La section Diagram contient aussi des éléments ShapeMap et ConnectorMap, qui spécifient la forme ou le connecteur qui représente chaque classe de domaine ou relation.  
   
  Designer  
@@ -176,7 +176,7 @@ Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet 
   
 - Une classe C# est générée pour chaque classe de domaine qui est répertoriée dans la section `Classes`. Les classes C# sont générées dans Dsl\GeneratedCode\DomainClasses.cs.  
   
-### <a name="properties"></a>Properties  
+### <a name="properties"></a>Propriétés  
  Chaque propriété de domaine a un nom et un type. Le nom doit être unique dans la classe de domaine et ses bases transitives.  
   
  Le type doit faire référence à l'un de ceux répertoriés dans la section `Types`. En général, le moniker doit inclure l'espace de noms.  
@@ -549,6 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Les mappages de connecteurs peuvent aussi contenir des mappages de décorateurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)   
  [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md)

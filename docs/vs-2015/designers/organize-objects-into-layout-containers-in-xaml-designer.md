@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432601"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
  Vous trouverez dans cette page une description des différents panneaux de disposition et contrôles, ainsi que des liens vers de courtes vidéos qui vous aideront à les prendre en main.  
   
 > [!NOTE]
->  Certaines vidéos peuvent faire référence à Blend ou à Expression Blend, qui utilisent le même concepteur XAML que Visual Studio et Blend pour Visual Studio.  
+> Certaines vidéos peuvent faire référence à Blend ou à Expression Blend, qui utilisent le même concepteur XAML que Visual Studio et Blend pour Visual Studio.  
   
 ## <a name="layout-panels"></a>Panneaux de disposition  
  Commencez votre page en choisissant l'un de ces panneaux de disposition. Votre page peut en contenir plusieurs. Par exemple, vous pouvez commencer par un panneau de disposition **Grid** et ajouter à une zone de ce dernier un **StackPanel** pour disposer les contrôles à la verticale dans cet élément **Grid**.  

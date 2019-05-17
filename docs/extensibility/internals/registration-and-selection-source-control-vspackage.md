@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908908"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Inscription et sélection (VSPackage de contrôle de code source)
 Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si le contrôle de code source plus d’un VSPackage est inscrit, l’utilisateur peut sélectionner le VSPackage à charger aux moments opportuns. Consultez [VSPackages](../../extensibility/internals/vspackages.md) pour plus d’informations sur les VSPackages et comment les enregistrer.

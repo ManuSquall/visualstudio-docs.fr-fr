@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918854"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Récupère une liste de chemins d’accès qui sont explorés pour les symboles, ainsi que les résultats de recherche dans chaque chemin d’accès.
@@ -83,9 +83,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb... Fichier introuvable. ** 
- **c:\winnt\symbols\user32.pdb... Version ne correspond pas. ** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symboles chargés.**
+**c:\symbols\user32.pdb... Fichier introuvable.**
+**c:\winnt\symbols\user32.pdb... Version ne correspond pas.**
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symboles chargés.**
 
 ## <a name="see-also"></a>Voir aussi
 

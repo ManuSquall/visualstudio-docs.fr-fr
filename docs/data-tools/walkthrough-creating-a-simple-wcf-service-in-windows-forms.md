@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : création d’un service WPF simple dans Windows Forms'
+title: 'Procédure pas à pas : Création d’un service WCF simple dans Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565363"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : Créer un service WCF simple dans les Windows Forms
 

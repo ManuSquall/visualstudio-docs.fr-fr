@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424305"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammes de cas d’usage UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
 ## <a name="BasicSteps"></a> Étapes de base pour dessiner des diagrammes de cas d’utilisation  
   
 > [!NOTE]
->  Les étapes détaillées pour créer un des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+> Les étapes détaillées pour créer un des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Pour créer un diagramme de cas d'usage  
   
@@ -133,7 +133,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
  L'acteur spécialisé peut avoir ses propres scénarios d'usage supplémentaires qui ne sont pas accessibles aux autres acteurs.  
   
 > [!CAUTION]
->  Vous ne devez pas créer de boucles de relations de généralisation qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
+> Vous ne devez pas créer de boucles de relations de généralisation qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
   
 ### <a name="alternative-actor-icons"></a>Autres icônes d'acteurs  
  Vous pouvez utiliser des icônes personnalisées pour représenter un acteur, plutôt que le dessin minimaliste standard. Vous pouvez par exemple choisir une icône de périphérique, de restaurant, de banque et ainsi de suite.  
@@ -160,7 +160,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
  ![Utiliser des cas un-à-un avec acteur](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Les multiplicités d’une association dans un diagramme de cas d’usage sont masquées si elles sont toutes deux **1**.  
+> Les multiplicités d’une association dans un diagramme de cas d’usage sont masquées si elles sont toutes deux **1**.  
   
  Par défaut, chaque multiplicité est **1**. Dans une stricte interprétation du modèle, une multiplicité de 1 signifie par exemple qu'un seul client est impliqué dans la commande de chaque repas et que chaque client ne commande qu'un seul repas à la fois.  
   
@@ -197,7 +197,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
    - **\\*** à l’état de zéro ou plusieurs instances de ce rôle participent au lien.  
   
 > [!NOTE]
->  De nombreuses équipes ne placent pas les informations de multiplicité sur les diagrammes de cas d'usage et laissent les multiplicités définies sur la valeur par défaut (1). Au lieu de cela, elles fournissent ces informations dans des descriptions séparées des cas d'usage. Dans ce cas, toutes les multiplicités dans les diagrammes de cas d'usage seront masquées.  
+> De nombreuses équipes ne placent pas les informations de multiplicité sur les diagrammes de cas d'usage et laissent les multiplicités définies sur la valeur par défaut (1). Au lieu de cela, elles fournissent ces informations dans des descriptions séparées des cas d'usage. Dans ce cas, toutes les multiplicités dans les diagrammes de cas d'usage seront masquées.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Utilisation d'un acteur ou d'un cas d'usage dans plusieurs diagrammes  
  Vous pouvez afficher les mêmes acteurs et cas d'usage dans plusieurs diagrammes. Exemple :  
@@ -215,7 +215,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
 3. Faites glisser un acteur ou cas d’usage **l’Explorateur de modèles** vers le nouveau diagramme.  
   
     > [!NOTE]
-    >  Si vous placez sur le nouveau diagramme un acteur et un cas d'usage qui sont déjà associés, leur association apparaît automatiquement sur le nouveau diagramme.  
+    > Si vous placez sur le nouveau diagramme un acteur et un cas d'usage qui sont déjà associés, leur association apparaît automatiquement sur le nouveau diagramme.  
   
 ## <a name="Details"></a> Description des cas d’usage en détail  
  Un cas d'usage représente :  
@@ -277,7 +277,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
 3. Une fois le nouvel artefact sélectionné, tapez ou collez l’URL dans le **Hyperlink** propriété.  
   
 > [!NOTE]
->  Vous pouvez double-cliquer sur un artefact pour ouvrir le diagramme ou le document auquel il est lié.  
+> Vous pouvez double-cliquer sur un artefact pour ouvrir le diagramme ou le document auquel il est lié.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Lier des cas d'usage à des éléments de travail  
  Si votre projet utilise [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] et vous avez [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], vous pouvez lier chaque cas d’usage à un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour savoir comment créer ces liens, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
  Utiliser un **Include** relation pour afficher ce cas d’usage décrit certains détails d’un autre. Dans l’illustration, **commander un repas** inclut **payer**, **Menu choisissez**, et **choisir un élément de Menu**. Chacun des cas d'usage inclus et plus détaillé est une étape que l'acteur peut devoir effectuer pour atteindre l'objectif global du cas d'usage d'inclusion. La flèche doit pointer vers le cas d'usage inclus et plus détaillé.  
   
 > [!CAUTION]
->  Vous ne devez pas créer de boucles de relations d'inclusion qui font en sorte qu'un cas d'usage s'inclut lui-même. Les boucles peuvent générer des erreurs.  
+> Vous ne devez pas créer de boucles de relations d'inclusion qui font en sorte qu'un cas d'usage s'inclut lui-même. Les boucles peuvent générer des erreurs.  
   
  Vous pouvez partager des cas d'usage inclus. Dans l’exemple, le **commander un repas** et **s’abonner aux révisions** incluent tous deux des cas d’usage **payer**.  
   
@@ -346,7 +346,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
  Par exemple, **payer** généralise **payer par carte de crédit** et **payer en espèces**.  
   
 > [!CAUTION]
->  Vous ne devez pas créer de boucles de relations de généralisation qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
+> Vous ne devez pas créer de boucles de relations de généralisation qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
   
  Les cas d'usage spécialisés peuvent vous aider à montrer les différentes manières grâce auxquelles votre système peut atteindre le même objectif.  
   
@@ -374,7 +374,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
  ![Extension d’un autre cas d’usage](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Vous ne devez pas créer de boucles de relations d'extension qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
+> Vous ne devez pas créer de boucles de relations d'extension qui font qu'un acteur se généralise lui-même. Les boucles peuvent générer des erreurs.  
   
  Par exemple, le **connexion** cas d’utilisation d’un site Web classique peut inclure **inscrire un nouvel utilisateur** - mais uniquement lorsque l’utilisateur ne possède pas un compte.  
   
@@ -391,7 +391,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
    3. Cliquez sur le cas d’usage étendu (**connexion** dans l’exemple).  
   
        > [!NOTE]
-       >  Évitez de créer une boucle de relations Étendre dans le diagramme. Un cas d'usage ne doit pas être une extension de lui-même.  
+       > Évitez de créer une boucle de relations Étendre dans le diagramme. Un cas d'usage ne doit pas être une extension de lui-même.  
   
 3. Si vous avez déjà créé des scénarios pour le cas d'usage étendu, déplacez les étapes pertinentes dans le scénario de l'extension.  
   
@@ -425,7 +425,7 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
    Pour créer un nouveau cas d’usage directement dans un sous-système, cliquez sur **cas d’usage** dans la boîte à outils, puis cliquez sur à l’intérieur du sous-système.  
   
 > [!NOTE]
->  Le **sujets** propriété d’un cas d’usage indique le sous-système dans lequel il est contenu.  
+> Le **sujets** propriété d’un cas d’usage indique le sous-système dans lequel il est contenu.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Cas d'usage en dehors de la portée du système  
  Il est souvent utile d'inclure dans le diagramme les cas d'usage qui font partie de l'entreprise mais qui ne sont pas gérés par le système que vous développez. Cela aide les développeurs à comprendre le contexte de leur travail. Par exemple, Livrer le repas peut être affiché comme un cas d'usage impliquant les acteurs Restaurant et Client, mais en dehors de la responsabilité du Site web Commande de repas.  

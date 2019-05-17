@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77810368ea6eea8f31a660e6487091459962e0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e94e8cd065908671446486d2ec00e167d8fb4f4e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697107"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La Structure de la Content_types] .xml fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58951413"
 Contient des informations sur les types de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types] .xml pour installer le package, mais il n’installe pas le fichier lui-même.  
   
 > [!NOTE]
->  Bien que cette rubrique s’applique uniquement aux fichiers .xml [Content_Type] qui sont utilisés dans les packages VSIX, le type de fichier [Content_Types] .xml fait partie de la *Open Packaging Conventions (OPC)* standard. Pour plus d’informations, consultez [OPC : Un nouveau Standard d’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.  
+> Bien que cette rubrique s’applique uniquement aux fichiers .xml [Content_Type] qui sont utilisés dans les packages VSIX, le type de fichier [Content_Types] .xml fait partie de la *Open Packaging Conventions (OPC)* standard. Pour plus d’informations, consultez [OPC : Un nouveau Standard d’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.  
   
 ## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent l’élément racine et ses attributs et les éléments enfants.  
@@ -103,5 +103,5 @@ Contient des informations sur les types de contenu dans un package VSIX. Visual 
   
 ## <a name="see-also"></a>Voir aussi  
  [Anatomie d’un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Référence du schéma 1.0 Extension VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Référence du schéma 1.0 Extension VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC : Une nouvelle norme pour l’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207)

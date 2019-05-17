@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: edb657779e8c404032d71061132816a2a30c83c9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893452"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Insérer des contrôles et modifier leur comportement dans le concepteur XAML
 
@@ -29,7 +29,7 @@ Vous pouvez faire glisser des contrôles du panneau **Composants** vers la **pla
 
 Vous pouvez transformer n'importe quel objet en contrôle.
 
-![Créer un contrôle dans Blend, boîte de dialogue](../designers/media/blend_makeintocontrol_xaml.png)
+![Boîte de dialogue Créer un contrôle dans Blend](../designers/media/blend_makeintocontrol_xaml.png)
 
 Par exemple, imaginez une image de téléviseur au milieu d'une page. Vous pourriez créer des contrôles à partir de petites images représentant des boutons de téléviseur. Les utilisateurs pourraient ensuite cliquer sur ces boutons pour changer de chaîne.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8fdfd41b8ab15a1c1b6e7b494d02c3e488c54c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1d61d7cca106207eb5381499472d6d3e2e377a9e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695698"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461101"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 Retourne les données initiales pour cet objet.
@@ -36,8 +39,8 @@ int GetInitialData(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dataOut`
+## <a name="parameters"></a>Paramètres
+ `dataOut`\
 
  [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les données initiales de cet objet.
 

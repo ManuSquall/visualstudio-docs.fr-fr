@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445325"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).
 
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :
 
--   Tâche qui n’a pas de paramètres d’entrée ou de sortie.
+- Tâche qui n’a pas de paramètres d’entrée ou de sortie.
 
--   Tâche avec un paramètre d’entrée et aucun paramètre de sortie.
+- Tâche avec un paramètre d’entrée et aucun paramètre de sortie.
 
--   Tâche avec deux paramètres d’entrée et un paramètre de sortie qui retourne une propriété MSBuild.
+- Tâche avec deux paramètres d’entrée et un paramètre de sortie qui retourne une propriété MSBuild.
 
--   Tâche avec deux paramètres d’entrée et un paramètre de sortie qui retourne un élément MSBuild.
+- Tâche avec deux paramètres d’entrée et un paramètre de sortie qui retourne un élément MSBuild.
 
 Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d’invite de commandes Visual Studio** comme suit :
 
-1.   Créez un fichier projet MSBuild à l’aide de Visual Studio.
+1. Créez un fichier projet MSBuild à l’aide de Visual Studio.
 
-2.   Modifiez le fichier projet dans Visual Studio pour créer la tâche inline.
+2. Modifiez le fichier projet dans Visual Studio pour créer la tâche inline.
 
-3.   Utilisez la **fenêtre d’invite de commandes** pour générer le projet et examiner les résultats.
+3. Utilisez la **fenêtre d’invite de commandes** pour générer le projet et examiner les résultats.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Créer et modifier un projet MSBuild
  Le système de projet Visual Studio est basé sur MSBuild. Vous pouvez donc créer un fichier projet de build à l’aide de Visual Studio. Dans cette section, vous créez un fichier projet Visual C#. (Vous pouvez créer à la place un fichier projet Visual Basic. Dans le contexte de ce didacticiel, la différence entre les deux fichiers projet est mineure.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Pour créer et modifier un fichier projet
 
-1.  Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.
+1. Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#**, puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#**, puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
 
-3.  Cliquez sur **OK** pour créer le fichier projet.
+3. Cliquez sur **OK** pour créer le fichier projet.
 
-3.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **InlineTasks**, puis sur **Décharger le projet**.
+3. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de projet **InlineTasks**, puis sur **Décharger le projet**.
 
-4.  Recliquez avec le bouton droit sur le nœud du projet, puis cliquez sur **Modifier BuildApp.csproj**.
+4. Recliquez avec le bouton droit sur le nœud du projet, puis cliquez sur **Modifier BuildApp.csproj**.
 
      Le fichier projet s’affiche dans l’éditeur de code.
 
@@ -103,7 +103,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
     `Hello, world!`
 
    > [!NOTE]
-   >  Si vous ne voyez pas le message Hello, essayez de réenregistrer le fichier projet puis d’exécuter la tâche Hello.
+   > Si vous ne voyez pas le message Hello, essayez de réenregistrer le fichier projet puis d’exécuter la tâche Hello.
 
    En alternant entre l’éditeur de code et la **fenêtre d’invite de commandes**, vous pouvez modifier le fichier projet et voir rapidement les résultats.
 

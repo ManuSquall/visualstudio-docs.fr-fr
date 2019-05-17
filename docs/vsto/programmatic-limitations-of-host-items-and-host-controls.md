@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447075"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitations de programmation des éléments hôtes et contrôles hôtes
   Chaque élément hôte et contrôle hôte est conçu pour se comporter comme un objet Microsoft Office Word ou Microsoft Office Excel natif correspondant, avec des fonctionnalités supplémentaires. Toutefois, il existe des différences fondamentales entre le comportement des éléments hôtes ou contrôles hôtes, et celui des objets Office natifs au moment de l’exécution.
@@ -57,7 +57,7 @@ ms.locfileid: "56596143"
  Vous ne pouvez pas ajouter de contrôles hôtes à un <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet>natif.
 
 > [!NOTE]
->  Vous ne pouvez pas ajouter les contrôles hôtes suivants par programmation aux feuilles de calcul ou aux documents : <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, et <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> Vous ne pouvez pas ajouter les contrôles hôtes suivants par programmation aux feuilles de calcul ou aux documents : <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, et <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Comprendre les différences de type entre les éléments hôtes, les contrôles hôtes et les objets Office natifs
  Pour chaque élément hôte et contrôle hôte, il existe un objet Microsoft Office Word ou Microsoft Office Excel natif sous-jacent. Vous pouvez accéder à l’objet sous-jacent à l’aide de la propriété InnerObject de l’élément hôte ou contrôle hôte. Toutefois, il n’existe aucun moyen d’effectuer un cast d’un objet Office natif vers son élément hôte ou contrôle hôte correspondant. Si vous essayez d’effectuer un cast d’un objet Office natif vers le type d’un élément hôte ou contrôle hôte, <xref:System.InvalidCastException> est levé.

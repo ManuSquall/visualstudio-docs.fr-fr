@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694012"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque contrôle Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  Les noms « iconLabel » et « control » sont utilisés car ils sont explicites. Vous pouvez les remplacer par des noms quelconques : le code fonctionnera exactement de la même façon à condition que vous modifiiez le nom dans chaque instruction à l'intérieur de la boucle.  
+    > Les noms « iconLabel » et « control » sont utilisés car ils sont explicites. Vous pouvez les remplacer par des noms quelconques : le code fonctionnera exactement de la même façon à condition que vous modifiiez le nom dans chaque instruction à l'intérieur de la boucle.  
   
      La méthode `AssignIconsToSquares()` effectue une itération sur les contrôles Label dans le TableLayoutPanel et exécute les mêmes instructions pour chacun d'eux. Ces instructions extraient une icône aléatoire dans la liste que vous avez ajoutée lors de l’[Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (C'est la raison pour laquelle vous avez inclus deux fois chaque icône dans la liste : ainsi, des paires d'icônes sont assignées de façon aléatoire aux contrôles Label.)  
   
@@ -47,9 +47,9 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
   
      La première ligne convertit la variable `control` en un contrôle Label nommé `iconLabel`. La ligne suivante est une instruction `if` qui vérifie si la conversion a été effectuée. Si tel n'est pas le cas, les instructions figurant dans l'instruction `if` sont exécutées. (Comme nous l'avons vu dans les didacticiels précédents, l'instruction `if` permet d'évaluer toute condition que vous spécifiez.) La première ligne de l'instruction `if` crée une variable nommée `randomNumber`, qui contient un nombre aléatoire correspondant à l'un des éléments de la liste d'icônes. Pour cela, elle utilise la méthode `Next` de l'objet `Random` que vous avez créé précédemment. La méthode `Next` retourne le nombre aléatoire. Cette ligne utilise également la propriété `Count` de la liste `icons` pour déterminer la plage dans laquelle choisir le nombre aléatoire. La ligne suivante affecte un des éléments de la liste d'icônes à la propriété `Text` de l'étiquette. La ligne de commentaire est expliquée plus loin dans cette rubrique. Enfin, la dernière ligne de l'instruction `if` supprime de la liste l'icône ajoutée au formulaire.  
   
-     Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Consultez [How Do I: Étape avec le débogueur dans Visual Studio ? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [naviguer dans le Code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md) pour plus d’informations.  
+     Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Consultez [How Do I: Étape avec le débogueur dans Visual Studio ? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [naviguer dans le Code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md) pour plus d’informations.  
   
-3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez Visual C#, ajoutez une instruction juste sous l’appel à la méthode `InitializeComponent()` dans le `Form1`*constructeur*, de sorte que votre formulaire appelle votre nouvelle méthode pour se configurer lui-même avant d’être affiché. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Utilisation des constructeurs et des destructeurs](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) (Visual Basic).  
+3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez Visual C#, ajoutez une instruction juste sous l’appel à la méthode `InitializeComponent()` dans le `Form1`*constructeur*, de sorte que votre formulaire appelle votre nouvelle méthode pour se configurer lui-même avant d’être affiché. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](https://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Utilisation des constructeurs et des destructeurs](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) (Visual Basic).  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   
@@ -71,7 +71,7 @@ Jeu de combinaisons avec des icônes aléatoires
      Les icônes sont désormais visibles car vous ne les avez pas masquées. Pour les dissimuler au joueur, vous pouvez définir la propriété `Forecolor` de chaque contrôle Label sur la même couleur que sa propriété `BackColor`.  
   
     > [!TIP]
-    >  Une autre manière de masquer des contrôles, tels que les contrôles Label, consiste à définir leur propriété **Visible** sur `False`.  
+    > Une autre manière de masquer des contrôles, tels que les contrôles Label, consiste à définir leur propriété **Visible** sur `False`.  
   
 6. Pour masquer les icônes, arrêtez le programme et supprimez les marques de commentaire de la ligne commentée de code à l'intérieur de la boucle `For Each`.  
   

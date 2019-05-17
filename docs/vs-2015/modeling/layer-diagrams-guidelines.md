@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440995"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
  Les étapes suivantes fournissent une vue d'ensemble de l'utilisation des diagrammes de couche dans le processus de développement. Les sections suivantes de cette rubrique décrivent plus en détail chaque étape. Si vous développez une nouvelle conception, ignorez les étapes qui font référence au code existant.  
   
 > [!NOTE]
->  Ces étapes s'affichent selon un ordre approximatif. Vous souhaiterez probablement superposer les tâches, les réorganiser en fonction de votre propre cas et les réexaminer au début de chaque itération de votre projet.  
+> Ces étapes s'affichent selon un ordre approximatif. Vous souhaiterez probablement superposer les tâches, les réorganiser en fonction de votre propre cas et les réexaminer au début de chaque itération de votre projet.  
   
 1. [Créer un diagramme de couche](#Create) pour toute l’application, ou pour une couche qu’il contient.  
   
@@ -59,7 +59,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
  Un diagramme de couche doit être créé à l'intérieur d'un projet de modélisation. Vous pouvez ajouter un nouveau diagramme de couche à un projet de modélisation existant, créer un nouveau projet de modélisation pour le diagramme de couche ou copier un diagramme de couche existant au sein du même projet de modélisation.  
   
 > [!IMPORTANT]
->  Vous ne pouvez pas copier un diagramme de couche existant d'un projet de modélisation vers un autre projet de modélisation ou un autre emplacement de la solution, ni l'y ajouter ou l'y glisser-déposer. Un diagramme de couche ainsi copié aura les mêmes références que le diagramme d'origine, même si vous modifiez le diagramme. La validation de couche ne peut alors fonctionner correctement et d’autres problèmes peuvent survenir, tels que l’absence d’éléments ou autre erreurs lors de l’ouverture du diagramme.  
+> Vous ne pouvez pas copier un diagramme de couche existant d'un projet de modélisation vers un autre projet de modélisation ou un autre emplacement de la solution, ni l'y ajouter ou l'y glisser-déposer. Un diagramme de couche ainsi copié aura les mêmes références que le diagramme d'origine, même si vous modifiez le diagramme. La validation de couche ne peut alors fonctionner correctement et d’autres problèmes peuvent survenir, tels que l’absence d’éléments ou autre erreurs lors de l’ouverture du diagramme.  
   
  Consultez [créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
  En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles en couches, consultez le site Patterns & Practices [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Il existe certains types d’artefacts que vous pouvez lier aux couches, mais qui ne prennent pas en charge la validation par rapport au diagramme de couche. Pour voir si l’artefact prend en charge la validation, ouvrez **Explorateur de couches** pour examiner le **prend en charge la Validation** propriété du lien d’artefact. Consultez [découvrir les dépendances existantes entre couches](#Generate).  
+> Il existe certains types d’artefacts que vous pouvez lier aux couches, mais qui ne prennent pas en charge la validation par rapport au diagramme de couche. Pour voir si l’artefact prend en charge la validation, ouvrez **Explorateur de couches** pour examiner le **prend en charge la Validation** propriété du lien d’artefact. Consultez [découvrir les dépendances existantes entre couches](#Generate).  
   
  Lors de la mise à jour d'une application peu familière, vous pouvez également créer des cartes de code. Ces diagrammes peuvent vous aider à découvrir des modèles et des dépendances quand vous explorez le code. Utilisez l'Explorateur de solutions pour explorer des espaces de noms et des classes, qui correspondent souvent à des couches existantes. Assignez ces artefacts de code à des couches en les faisant glisser de l'Explorateur de solutions vers des diagrammes de couche. Vous pouvez ensuite utiliser les diagrammes de couche pour vous aider à mettre à jour le code et à garantir sa cohérence avec votre conception.  
   
@@ -85,7 +85,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
  Une dépendance existe chaque fois qu'un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez découvrir les dépendances existantes par rétroconception.  
   
 > [!NOTE]
->  Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, cliquez sur une ou plusieurs couches, puis cliquez sur **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.  
+> Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, cliquez sur une ou plusieurs couches, puis cliquez sur **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Pour procéder à la rétroconception des dépendances existantes entre couches  
   
@@ -155,7 +155,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
   Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Il s'agit généralement d'un processus itératif. Pour plus d’informations sur ces erreurs, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Lorsque vous développez ou refactorisez le code, il se peut que vous ayez de nouveaux artefacts à lier au diagramme de couche. Toutefois, cela peut ne pas être nécessaire : par exemple, lorsque des couches représentent des espaces de noms existants et que le nouveau code ajoute seulement plus de documentation à ces espaces de noms.  
+> Lorsque vous développez ou refactorisez le code, il se peut que vous ayez de nouveaux artefacts à lier au diagramme de couche. Toutefois, cela peut ne pas être nécessaire : par exemple, lorsque des couches représentent des espaces de noms existants et que le nouveau code ajoute seulement plus de documentation à ces espaces de noms.  
   
  Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour effectuer cette tâche, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
   

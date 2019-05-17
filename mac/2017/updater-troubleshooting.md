@@ -7,11 +7,11 @@ ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.openlocfilehash: 5239e67f5c073b0ceff7ac1480caeaffd99e6b85
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59586332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986761"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Résolution des problèmes : Le programme de mise à jour présente des erreurs lors de la récupération des informations
 

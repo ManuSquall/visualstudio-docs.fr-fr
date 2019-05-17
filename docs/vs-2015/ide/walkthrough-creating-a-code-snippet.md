@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388341"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procédure pas à pas : Création d’un extrait de Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109802"
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio à l’aide du bouton Importer dans le Gestionnaire des extraits de code (**Outils/Gestionnaire des extraits de code**).  
   
 > [!TIP]
->  Pour plus d’informations sur la façon d’écrire plus facilement les extraits de code, recherche le site Web CodePlex pour les outils de la Communauté telles que [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Pour plus d’informations sur la façon d’écrire plus facilement les extraits de code, recherche le site Web CodePlex pour les outils de la Communauté telles que [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Modèle d’extrait de code  
  Voici le modèle d’extrait de code de base :  

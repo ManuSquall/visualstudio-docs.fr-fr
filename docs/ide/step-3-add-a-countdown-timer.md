@@ -8,41 +8,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430766"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Étape 3 : Ajouter un temporisateur
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.
 
 > [!NOTE]
->  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Pour ajouter un temporisateur
 
-1.  Ajoutez une variable de type entier appelée **timeLeft**, comme vous l’avez fait dans la procédure précédente. Votre code doit ressembler à ce qui suit.
+1. Ajoutez une variable de type entier appelée **timeLeft**, comme vous l’avez fait dans la procédure précédente. Votre code doit ressembler à ce qui suit.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
      À présent, vous avez besoin d'une méthode qui compte réellement les secondes, telles qu'une minuterie, et qui déclenche un événement après la durée que vous spécifiez.
 
-2.  Dans la fenêtre de conception, déplacez un contrôle <xref:System.Windows.Forms.Timer> de la catégorie **Composants** de la **boîte à outils** vers votre formulaire.
+2. Dans la fenêtre de conception, déplacez un contrôle <xref:System.Windows.Forms.Timer> de la catégorie **Composants** de la **boîte à outils** vers votre formulaire.
 
      Le contrôle apparaît dans la zone grise en bas de la fenêtre de conception.
 
-3.  Dans le formulaire, sélectionnez l’icône **timer1** que vous venez d’ajouter et affectez à sa propriété **Interval** la valeur **1000**.
+3. Dans le formulaire, sélectionnez l’icône **timer1** que vous venez d’ajouter et affectez à sa propriété **Interval** la valeur **1000**.
 
      La valeur d'intervalle étant exprimée en millisecondes, une valeur de 1000 entraîne le déclenchement de l'événement <xref:System.Windows.Forms.Timer.Tick> à chaque seconde.
 
-4.  Dans le formulaire, double-cliquez sur le contrôle **Timer** ou choisissez-le, puis appuyez sur la touche **Entrée**.
+4. Dans le formulaire, double-cliquez sur le contrôle **Timer** ou choisissez-le, puis appuyez sur la touche **Entrée**.
 
      L'éditeur de code apparaît et affiche la méthode du gestionnaire d'événements Tick que vous venez d'ajouter.
 
-5.  Ajoutez les instructions suivantes à la nouvelle méthode de gestionnaire d'événements.
+5. Ajoutez les instructions suivantes à la nouvelle méthode de gestionnaire d'événements.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -54,7 +54,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
      Vous venez d'ajouter une instruction `if else` qui permet à vos programmes de prendre des décisions. Une instruction `if else` se présente comme suit.
 
     > [!NOTE]
-    >  L’exemple suivant est uniquement fourni à titre d’illustration, ne l’ajoutez pas à votre projet.
+    > L’exemple suivant est uniquement fourni à titre d’illustration, ne l’ajoutez pas à votre projet.
 
     ```vb
     If (something that your program will check) Then
@@ -88,14 +88,14 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
      Les personnes interrogées peuvent entrer plus facilement des nombres à l’aide d’un contrôle <xref:System.Windows.Forms.NumericUpDown>. C’est la raison pour laquelle vous en utilisez un pour les réponses aux problèmes mathématiques. Toutes les réponses possibles sont des nombres entiers compris entre 0 et 100. En conservant les valeurs par défaut des propriétés **Minimum**, **Maximum** et **DecimalPlaces**, vous vous assurez que les personnes interrogées ne peuvent pas entrer de nombres décimaux, de nombres négatifs ou de nombres trop élevés. (Si vous vouliez permettre aux personnes répondant au questionnaire d’entrer 3,141 mais pas 3,1415, vous auriez dû affecter la valeur 3 à la propriété **DecimalPlaces**.)
 
-6.  Ajoutez trois lignes à la fin de la méthode `StartTheQuiz()`, pour que votre code ressemble à celui ci-dessous.
+6. Ajoutez trois lignes à la fin de la méthode `StartTheQuiz()`, pour que votre code ressemble à celui ci-dessous.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      À présent, lorsque votre questionnaire démarre, il affecte la valeur 30 à la variable **timeLeft** et la propriété **Text** du contrôle **timeLabel** est définie à 30 secondes. Il appelle ensuite la méthode <xref:System.Windows.Forms.Timer.Start> du contrôle Timer pour démarrer le compte à rebours. (Le questionnaire ne vérifie pas encore la réponse : cette action est effectuée plus tard.)
 
-7.  Enregistrez votre programme, exécutez-le, puis choisissez le bouton **Démarrer** sur le formulaire.
+7. Enregistrez votre programme, exécutez-le, puis choisissez le bouton **Démarrer** sur le formulaire.
 
      La minuterie commence le compte à rebours. Lorsque le temps est écoulé, le questionnaire se termine et la réponse s'affiche. L'illustration suivante montre le questionnaire en cours.
 
@@ -103,6 +103,6 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Ajouter la méthode CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Ajouter la méthode CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).

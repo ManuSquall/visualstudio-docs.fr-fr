@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707807"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460971"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Cette structure représente une valeur de retour à partir d’une méthode ou une fonction.
@@ -42,19 +45,23 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Termes
- tokMethod ID de la méthode pour cette valeur de retour.
+## <a name="members"></a>Membres
+ `tokMethod`\
+ ID de la méthode pour cette valeur de retour.
 
- dwCorType le type de base de la valeur de retour. Il s’agit d’une valeur comprise entre le `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] fichier corhdr.h de kit de développement logiciel.
+ `dwCorType`\
+ Le type de base de la valeur de retour. Il s’agit d’une valeur comprise entre le `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] fichier corhdr.h de kit de développement logiciel.
 
- dwSigSize la taille de la signature de la valeur de retour (tel que stocké dans `rgSig`).
+ `dwSigSize`\
+ La taille de la signature de la valeur de retour (tel que stocké dans `rgSig`).
 
- rgSig un tableau d’octets qui forment la signature de la valeur de retour.
+ `rgSig`\
+ Un tableau d’octets qui forment la signature de la valeur de retour.
 
 ## <a name="remarks"></a>Notes
  Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

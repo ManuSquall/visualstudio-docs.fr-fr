@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567191"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Outils Entity Framework dans Visual Studio
 

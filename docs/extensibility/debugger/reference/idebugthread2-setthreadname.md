@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0224d84434ddabdafd2c3245eb2ab48b8e9486be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7b74af8b93bb3b92d4673f40c06f0d9745ffb79c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226203"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Définit le nom du thread.
@@ -36,8 +39,8 @@ int SetThreadName ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszName`
+## <a name="parameters"></a>Paramètres
+ `pszName`\
 
  [in] Le nom du thread.
 

@@ -11,18 +11,18 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab81718837f6af8a230348d5e0a34f1da0a2c7bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e943fd7ba27fe21029bab4d818803186147476e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092043"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704890"
 ---
 # <a name="sample-implementation-of-locals"></a>Exemple d’implémentation de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Voici une vue d’ensemble de la façon dont Visual Studio obtient les variables locales pour une méthode à partir de l’évaluateur d’expression (EE) :  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60092043"
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)  
  Fournit les arguments passés quand le D’appelle l’évaluateur d’expression (EE).  
   
- [Exemple de MyCEE](http://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
+ [Exemple de MyCEE](https://msdn.microsoft.com/624a018b-9179-402f-9d48-3aec87b48f4f)  
  Illustre une approche d’implémentation à la création d’un évaluateur d’expression pour la langue MyC.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -23,17 +23,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691148"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Débogage de la préparation : Applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+Le modèle de projet Windows Forms crée une application Windows Forms. Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est assez simple. Pour plus d’informations, consultez [création d’un projet d’Application Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Lorsque vous créez un projet Windows Forms à l’aide du modèle de projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Ces paramètres peuvent être modifiés dans la boîte de dialogue **Pages de propriétés de \<nom du projet>** (**My Project** en Visual Basic).  
   
@@ -63,7 +63,7 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
   
    3. Événements de focus et de validation.  
   
-      Pour plus d’informations, consultez [Création de gestionnaires d’événements dans les Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Pour plus d’informations, consultez [Création de gestionnaires d’événements dans les Windows Forms](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
 3. Dans le menu **Déboguer**, cliquez sur **Démarrer**.  
   
@@ -76,4 +76,4 @@ Le modèle de projet Windows Forms crée une application Windows Forms. Le débo
  [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows Forms](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)

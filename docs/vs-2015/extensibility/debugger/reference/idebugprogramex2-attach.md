@@ -12,12 +12,12 @@ ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b4cbdefbefb2668191d37aa25ecc1f6dbb5232d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4fe729f2fc196380a3db1a60d1c32f62bbd70998
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439167"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int Attach( 
  Le port qui contient le programme peut utiliser la valeur dans `pSession` pour déterminer quelle session tente de se joindre au programme. Par exemple, si un port autorise la session de débogage qu’une seule s’attacher à un processus à la fois, le port peut déterminer si la même session est déjà attachée à d’autres programmes dans le processus.  
   
 > [!NOTE]
->  L’interface passée dans `pSession` doit être traité uniquement en tant que cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session attachement à ce programme ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
+> L’interface passée dans `pSession` doit être traité uniquement en tant que cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session attachement à ce programme ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

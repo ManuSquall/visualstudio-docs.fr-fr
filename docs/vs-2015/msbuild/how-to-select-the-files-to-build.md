@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437904"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Si les éléments d’une collection d’éléments ne sont pas dans le même répertoire que le fichier projet, vous devez spécifier le chemin complet ou relatif de l’élément. Par exemple : `Include="..\..\form2.cs"`.  
+    > Si les éléments d’une collection d’éléments ne sont pas dans le même répertoire que le fichier projet, vous devez spécifier le chemin complet ou relatif de l’élément. Par exemple : `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Pour déclarer plusieurs éléments  
   
@@ -100,9 +100,9 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :  
+> Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant affiche un projet qui inclut séparément tous les fichiers d’entrée.  

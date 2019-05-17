@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821200"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procédure : effectuer un zoom sur une région du graphique des résultats d’un test de charge
 
@@ -51,17 +51,17 @@ Avant de pouvoir modifier l'affichage des graphiques en effectuant un zoom avant
 
 Pour afficher des graphes :
 
-1.  Exécutez un test de charge jusqu'à ce qu'il soit terminé.
+1. Exécutez un test de charge jusqu'à ce qu'il soit terminé.
 
-2.  À la fin de la série de tests de charge, choisissez **Oui** dans la boîte de dialogue qui vous invite à afficher les résultats à partir du magasin des résultats des tests de charge.
+2. À la fin de la série de tests de charge, choisissez **Oui** dans la boîte de dialogue qui vous invite à afficher les résultats à partir du magasin des résultats des tests de charge.
 
      \- ou -
 
      Voir les détails d'un test de charge exécuté par le passé. Pour plus d'informations, voir [Procédure : accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Choisissez **Graphiques** si vos graphiques ne sont pas affichés.
+3. Choisissez **Graphiques** si vos graphiques ne sont pas affichés.
 
-4.  Si les barres de zoom ne sont pas affichées, choisissez **Afficher les contrôles de zoom**.
+4. Si les barres de zoom ne sont pas affichées, choisissez **Afficher les contrôles de zoom**.
 
      Deux barres de zoom sont disponibles pour chaque graphique. La barre de zoom qui contrôle l'échelle verticale apparaît à gauche du graphique. La barre de zoom qui contrôle l'échelle horizontale apparaît sous le graphique.
 
@@ -69,25 +69,25 @@ Pour afficher des graphes :
 
 ## <a name="zoom-and-scroll"></a>Zoom et défilement
 
-Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisés afin qu’ils affichent la même partie de la série de tests de charge.
+Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisés afin qu'ils affichent la même partie de la série de tests de charge.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Pour synchroniser le zoom et le défilement
 
-1.  Dans **l’Analyseur de test de charge**, choisissez **Synchroniser les contrôles de zoom horizontal**.
+1. Dans **l’Analyseur de test de charge**, choisissez **Synchroniser les contrôles de zoom horizontal**.
 
      Lorsque le bouton **Synchroniser les contrôles de zoom horizontal** est sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement sont également répercutés sur les autres graphiques.
 
-2.  Choisissez à nouveau **Synchroniser les contrôles de zoom horizontal**.
+2. Choisissez à nouveau **Synchroniser les contrôles de zoom horizontal**.
 
      Lorsque le bouton **Synchroniser les contrôles de zoom horizontal** n’est pas sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement ne sont appliqués qu’à ce graphique.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Pour faire un zoom et faire défiler une portion du graphique
 
-1.  Sur la barre de zoom sous un graphique, faites glisser la poignée de gauche à droite.
+1. Sur la barre de zoom sous un graphique, faites glisser la poignée de gauche à droite.
 
      Ceci permet d'effectuer un zoom sur la dernière partie de la série de tests. De la même façon, si vous faites glisser la poignée de droite vers la gauche, vous effectuez un zoom sur la première partie de la série de tests.
 
-2.  Pour faire un zoom avant sur une zone en particulier, faites glisser les deux poignées vers le centre du graphique.
+2. Pour faire un zoom avant sur une zone en particulier, faites glisser les deux poignées vers le centre du graphique.
 
      Plus les deux poignées sont proches l’une de l’autre, plus l’agrandissement est élevé et permet de révéler des segments plus courts et plus précis du test de charge.
 
@@ -107,9 +107,9 @@ Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisé
 
 ### <a name="to-zoom-out"></a>Pour effectuer un zoom arrière
 
-1.  Cliquez avec le bouton droit sur un graphique, graphique sur lequel un zoom avant a été effectué au préalable.
+1. Cliquez avec le bouton droit sur un graphique, graphique sur lequel un zoom avant a été effectué au préalable.
 
-2.  Dans le menu contextuel, sélectionnez **Zoom arrière horizontal**.
+2. Dans le menu contextuel, sélectionnez **Zoom arrière horizontal**.
 
      Cela effectue un zoom arrière pour afficher l'intégralité de la série de tests de charge.
 

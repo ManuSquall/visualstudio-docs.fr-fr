@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432082"
 ---
 # <a name="solutions-overview"></a>Présentation des solutions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Une solution est un regroupement d’un ou plusieurs projets qui fonctionnent en
  Un VSPackage peut écrire dans ces deux types de fichier solution. En raison de la nature des fichiers, il existe deux interfaces différentes implémentées pour y écrire. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface écrit les informations de texte dans le fichier .sln et <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface écrit des flux de données binaires dans le fichier .suo.  
   
 > [!NOTE]
->  Un projet n’a pas écrit de façon explicite une entrée pour lui-même dans le fichier de solution ; l’environnement qui gère le projet. Par conséquent, sauf si vous souhaitez ajouter du contenu supplémentaire spécifiquement pour le fichier de solution, il est inutile inscrire votre VSPackage de cette façon.  
+> Un projet n’a pas écrit de façon explicite une entrée pour lui-même dans le fichier de solution ; l’environnement qui gère le projet. Par conséquent, sauf si vous souhaitez ajouter du contenu supplémentaire spécifiquement pour le fichier de solution, il est inutile inscrire votre VSPackage de cette façon.  
   
  Chaque VSPackage prenant en charge la persistance de solution utilise trois interfaces, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface, qui est implémenté par l’environnement et appelée par le VSPackage, et `IVsPersistSolutionProps` et `IVsPersistSolutionOpts`, qui sont tous deux implémentés par le VSPackage. Le `IVsPersistSolutionOpts` interface doit uniquement être implémentée si les informations privées doivent être écrits par le VSPackage dans le fichier .suo.  
   
@@ -44,7 +44,7 @@ Une solution est un regroupement d’un ou plusieurs projets qui fonctionnent en
    Vous trouverez des informations spécifiques relatives à l’utilisation de ces fichiers dans [Solution (. Fichier de sln)](../../extensibility/internals/solution-dot-sln-file.md) et [Options utilisateur de Solution (. Fichier suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Si vous souhaitez créer une nouvelle configuration de solution comprenant des configurations de deux projets et une troisième à exclure de la build, vous devez utiliser l’interface utilisateur de Pages de propriété ou l’automatisation. Vous ne pouvez pas modifier les configurations de gestionnaire de build de solution et leurs propriétés directement, mais vous pouvez manipuler le Gestionnaire de génération de solution à l’aide de la `SolutionBuild` classe dans le modèle automation DTE. Pour plus d’informations sur la configuration de solutions, consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
+> Si vous souhaitez créer une nouvelle configuration de solution comprenant des configurations de deux projets et une troisième à exclure de la build, vous devez utiliser l’interface utilisateur de Pages de propriété ou l’automatisation. Vous ne pouvez pas modifier les configurations de gestionnaire de build de solution et leurs propriétés directement, mais vous pouvez manipuler le Gestionnaire de génération de solution à l’aide de la `SolutionBuild` classe dans le modèle automation DTE. Pour plus d’informations sur la configuration de solutions, consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

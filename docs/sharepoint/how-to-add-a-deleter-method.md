@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418351"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Procédure : Ajouter une méthode de suppression
   Vous pouvez activer un utilisateur final de supprimer un enregistrement de données à partir d’une liste externe sur un site SharePoint en ajoutant une méthode de suppression pour le modèle. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56644391"
 5. Ajoutez le code à la méthode de suppression pour supprimer un enregistrement. L’exemple suivant supprime un élément de ligne à partir d’une commande client à l’aide de la base de données AdventureWorks pour SQL Server.
 
    > [!NOTE]
-   >  La méthode dans cet exemple utilise deux paramètres d’entrée.
+   > La méthode dans cet exemple utilise deux paramètres d’entrée.
 
    > [!NOTE]
-   >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+   > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

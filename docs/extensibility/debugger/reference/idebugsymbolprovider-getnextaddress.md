@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223988"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtient l’adresse de débogage qui suit une adresse de débogage donné dans une méthode.
@@ -40,16 +43,16 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pAddress`
+## <a name="parameters"></a>Paramètres
+ `pAddress`\
 
  [in] Adresse de débogage donné.
 
- `fStatementOnly`
+ `fStatementOnly`\
 
  [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
 
- `ppAddress`
+ `ppAddress`\
 
  [out] Retourne l’adresse de débogage suivante.
 

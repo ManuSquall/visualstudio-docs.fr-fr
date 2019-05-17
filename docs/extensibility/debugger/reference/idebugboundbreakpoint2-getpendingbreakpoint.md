@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4f0930537612d7292ddc23509ddf6cadd5cdd6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a466adc76eefca139f521e689502e44c1c29ddc
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716335"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614639"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 Obtient le point d’arrêt en attente à partir duquel le point d’arrêt lié spécifié a été créé.
@@ -37,10 +40,9 @@ int GetPendingBreakpoint( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ppPendingBreakpoint`
-
- [out] Retourne le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objet qui représente le point d’arrêt en attente qui a été utilisé pour créer ce lié point d’arrêt.
+## <a name="parameters"></a>Paramètres
+`ppPendingBreakpoint`\
+[out] Retourne le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objet qui représente le point d’arrêt en attente qui a été utilisé pour créer ce lié point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

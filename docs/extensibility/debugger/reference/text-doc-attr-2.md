@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6167c5472f06e016fa45f17fb7cb493224f1668b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86dc1e002c4d33ed0ef64abd707ca11f2d1fc492
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700612"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460665"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Décrit les attributs d’un document.
@@ -34,12 +37,13 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
 ## <a name="members"></a>Membres
- TEXT_DOC_ATTR_READONLY_2 indique que le document est en lecture seule.
+ `TEXT_DOC_ATTR_READONLY_2`\
+ Indique que le document est en lecture seule.
 
 ## <a name="remarks"></a>Notes
 
 > [!NOTE]
->  En fait, cette valeur n’est pas définie dans l’assembly pour c#. Au lieu de cela, vous devez copier la définition de votre fichier source.
+> En fait, cette valeur n’est pas définie dans l’assembly pour c#. Au lieu de cela, vous devez copier la définition de votre fichier source.
 
  Passé en tant qu’argument à la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (méthode).
 

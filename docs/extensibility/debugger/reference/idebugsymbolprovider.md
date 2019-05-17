@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db4e5592fac73f629aba69fa23d1a7163c794875
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 98bd86cd219ec2604816e290f75e02d1f9530a53
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457628"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Cette interface représente un fournisseur de symboles qui fournit des types, les retourner en tant que champs et des symboles.
@@ -57,7 +57,7 @@ Le tableau suivant présente les méthodes de `IDebugSymbolProvider`.
 ## <a name="remarks"></a>Notes
 Cette interface mappe les positions du document en adresses de débogage et vice versa.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : sh.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

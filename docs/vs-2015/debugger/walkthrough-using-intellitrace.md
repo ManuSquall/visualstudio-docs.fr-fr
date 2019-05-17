@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444262"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Procédure pas à pas : Utilisation d'IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
 5. Démarrez le débogage selon la procédure habituelle. (Appuyez sur **F5** ou cliquez sur **Déboguer / Démarrer le débogage**.  
   
     > [!TIP]
-    >  Gardez les fenêtres **Variables locales** et **Automatique** ouvertes pendant que vous déboguez pour voir et enregistrer les valeurs qui s'y affichent.  
+    > Gardez les fenêtres **Variables locales** et **Automatique** ouvertes pendant que vous déboguez pour voir et enregistrer les valeurs qui s'y affichent.  
   
 6. L'exécution s'arrête au point d'arrêt. Si vous ne voyez pas la fenêtre **Outils de diagnostic** , cliquez sur **Déboguer / Fenêtres / Événements IntelliTrace**.  
   
@@ -87,7 +87,7 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
 1. Activez la collecte d'appels. (Dans **Outils / Options / IntelliTrace / Général**, sélectionnez **Informations sur les événements et les appels d'IntelliTrace**. IntelliTrace va commencer à collecter ces informations au démarrage de la session de débogage suivante.  
   
     > [!TIP]
-    >  Cette opération peut ralentir votre application et augmenter la taille de tous les fichiers journaux IntelliTrace (fichiers .iTrace) que vous enregistrez sur le disque. Pour obtenir le maximum de données d'appel tout en réduisant les effets indésirables, enregistrez uniquement les données des modules qui vous intéressent. Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils / Options / IntelliTrace / Avancé**et spécifiez la quantité maximale d'espace disque. La valeur par défaut est 250 Mo.  
+    > Cette opération peut ralentir votre application et augmenter la taille de tous les fichiers journaux IntelliTrace (fichiers .iTrace) que vous enregistrez sur le disque. Pour obtenir le maximum de données d'appel tout en réduisant les effets indésirables, enregistrez uniquement les données des modules qui vous intéressent. Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils / Options / IntelliTrace / Avancé**et spécifiez la quantité maximale d'espace disque. La valeur par défaut est 250 Mo.  
   
 2. Démarrez le débogage de l'application de console C# créée dans la section précédente. L'exécution s'arrête au point d'arrêt. Si vous ne voyez pas la fenêtre **Outils de diagnostic** , cliquez sur **Déboguer / Fenêtres / Événements IntelliTrace**.  
   
@@ -98,6 +98,6 @@ Vous pouvez utiliser IntelliTrace pour collecter des informations sur des évén
      Sélectionnez l'un des appels de fonction et double-cliquez dessus. Vous devez voir les points d'entrée et de sortie de la fonction, ainsi que les appels que l'appel actuel a fait à d'autres fonctions et les événements IntelliTrace déclenchés par l'appel. Si vous n'avez pas activé le débogage d'historique, cette action l'active. Pour plus d’informations sur le débogage d’historique, consultez [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Vous pouvez voir que certains appels apparaissent grisés. La raison en est qu'IntelliTrace n'a pas enregistré les données des modules correspondants. Pour consulter ces données, configurez IntelliTrace de manière à collecter les données de ces modules. Pour plus d’informations sur la spécification des modules, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+    > Vous pouvez voir que certains appels apparaissent grisés. La raison en est qu'IntelliTrace n'a pas enregistré les données des modules correspondants. Pour consulter ces données, configurez IntelliTrace de manière à collecter les données de ces modules. Pour plus d’informations sur la spécification des modules, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Étapes suivantes

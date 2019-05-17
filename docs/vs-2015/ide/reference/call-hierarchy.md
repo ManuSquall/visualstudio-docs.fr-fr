@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433697"
 ---
 # <a name="call-hierarchy"></a>Hiérarchie d'appels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Fenêtre Hiérarchie d'appels
 - La **fenêtre Définition de code**, si elle est ouverte, affiche le code du membre sélectionné. Cette fenêtre est disponible en C# et C++. Pour plus d’informations sur cette fenêtre, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  La hiérarchie d’appels ne recherche pas les références au groupe de méthodes, ce qui inclut les emplacements auxquels une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.  
+> La hiérarchie d’appels ne recherche pas les références au groupe de méthodes, ce qui inclut les emplacements auxquels une méthode est ajoutée en tant que gestionnaire d’événements ou est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.  
   
 ## <a name="shortcut-menu-items"></a>Éléments de menu contextuel  
  Le tableau suivant décrit plusieurs options de menu contextuel qui sont disponibles quand vous cliquez avec le bouton droit sur un nœud dans le volet d’arborescence.  

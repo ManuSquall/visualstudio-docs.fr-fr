@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec63fe5ae4b99252321b86b44066c46842a0851
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433897"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procédure : Personnaliser la page web par défaut d’une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60107058"
 Lorsque vous publiez une application ClickOnce sur le Web, une page Web est automatiquement générée et publiée avec l’application. La page par défaut contient le nom de l’application et les liens pour installer l’application, installez les composants requis ou accéder à l’aide sur MSDN.  
   
 > [!NOTE]
->  Les liens réels que vous voyez sur la page dépendent de l’ordinateur où la page est affichée et ce que vous incluez de conditions préalables.  
+> Les liens réels que vous voyez sur la page dépendent de l’ordinateur où la page est affichée et ce que vous incluez de conditions préalables.  
   
  Le nom par défaut pour la page Web est Publish.htm ; Vous pouvez modifier le nom dans la **Concepteur de projet**. Pour plus d'informations, voir [Procédure : Spécifier une Page de publication pour une Application ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).  
   
  La page Publish.htm Web est publiée uniquement si une version plus récente est détectée.  
   
 > [!NOTE]
->  Les modifications que vous apportez à votre **publier** paramètres n’affectent pas la page Publish.htm, à une exception près : Si vous ajoutez ou supprimez des composants requis après la publication initiale, la liste des composants requis ne sera plus précise. Vous devrez modifier le texte du lien Configuration requise refléter les modifications.  
+> Les modifications que vous apportez à votre **publier** paramètres n’affectent pas la page Publish.htm, à une exception près : Si vous ajoutez ou supprimez des composants requis après la publication initiale, la liste des composants requis ne sera plus précise. Vous devrez modifier le texte du lien Configuration requise refléter les modifications.  
   
 ### <a name="to-customize-the-publish-web-page"></a>Pour personnaliser la page Web de publication  
   

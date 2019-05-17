@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388419"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procédure : Modifier une valeur de Registre (C#, C++, Visual Basic, F#)
 
@@ -37,10 +37,10 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
 2. Tapez la nouvelle valeur.
 
     > [!CAUTION]
-    >  Modifier des valeurs de registres (principalement des registres EIP et EBP) peut affecter l'exécution du programme.
+    > Modifier des valeurs de registres (principalement des registres EIP et EBP) peut affecter l'exécution du programme.
 
     > [!CAUTION]
-    >  Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans un Registre en virgule flottante, même une modification apparemment anodine risque d'entraîner des changements de certains bits de poids faible.
+    > Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans un Registre en virgule flottante, même une modification apparemment anodine risque d'entraîner des changements de certains bits de poids faible.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

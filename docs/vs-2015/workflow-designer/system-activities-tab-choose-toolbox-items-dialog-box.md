@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 29eb905a4852bf521ebee72a498b44edbdcef8df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445407"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
 Cet onglet de la **Choose Toolbox Items** boîte de dialogue affiche une liste de [!INCLUDE[wf](../includes/wf-md.md)] activités, des modèles et des éléments à votre disposition. Pour afficher cette liste, sélectionnez **Choose Toolbox Items** à partir de la **outils** menu ou en double-cliquant sur le **boîte à outils** et en sélectionnant **choisir des éléments de**pour afficher le **Choose Toolbox Items** boîte de dialogue, puis son **System.Activities** onglet. Dès le départ, la liste contient les activités de flux de travail à partir des assemblys System.Activities, System.ServiceModel.Activities et System.Activities.Core.Presentation ; Toutefois, uniquement fourni par le système illustrées des activités et les activités ajoutées via d’autres assemblys affichés dans le **boîte à outils** sont cochées par défaut. Récemment ajouté les activités sont sélectionnées automatiquement et figurent dans le **boîte à outils** lorsque vous cliquez sur **OK** sur la boîte de dialogue. En outre, ces éléments s’affichent dans le **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms dans lequel se trouve l’activité / / modèle d’élément.  
   
 > [!WARNING]
->  Si vous essayez d'ajouter un assembly qui ne contient pas d'activités de workflow, un boîte de dialogue d'erreur s'affiche pour expliquer que l'assembly ne contient pas d'activités.  
+> Si vous essayez d'ajouter un assembly qui ne contient pas d'activités de workflow, un boîte de dialogue d'erreur s'affiche pour expliquer que l'assembly ne contient pas d'activités.  
   
  Cette boîte de dialogue est indépendant du projet et, par conséquent, le **System.Activities** onglet continue de s’afficher dans autonome XAML ou un type de projet de flux de travail non.  
   

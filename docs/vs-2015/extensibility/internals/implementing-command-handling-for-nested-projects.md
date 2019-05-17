@@ -10,12 +10,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fdead0bf0f1c5d2cb329d25cd37487cf93b772d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445433"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implémentation de la gestion des commandes pour les projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58950923"
 L’IDE peut transmettre des commandes qui sont transmises via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces pour les projets imbriqués ou des projets parents peuvent filtrer ou substituer les commandes.  
   
 > [!NOTE]
->  Seules les commandes habituellement gérées par le projet parent peuvent être filtrés. Commandes telles que **Build** et **déployer** qui sont gérés par l’IDE ne peuvent pas être filtré.  
+> Seules les commandes habituellement gérées par le projet parent peuvent être filtrés. Commandes telles que **Build** et **déployer** qui sont gérés par l’IDE ne peuvent pas être filtré.  
   
  Les étapes suivantes décrivent le processus d’implémentation de la gestion des commandes.  
   

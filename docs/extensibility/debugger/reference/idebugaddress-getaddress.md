@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3b2829e598a9dff08218d5fc19c34089d07b2601
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684453"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615318"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Retourne une structure qui décrit un objet et son emplacement dans son étendue ou le conteneur.
@@ -36,10 +39,9 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pAddress`
-
- [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure est remplie par cette méthode.
+## <a name="parameters"></a>Paramètres
+`pAddress`\
+[in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure est remplie par cette méthode.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

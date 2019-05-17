@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438771"
 ---
 # <a name="office-project-templates-overview"></a>Vue d’ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :
@@ -77,7 +77,7 @@ ms.locfileid: "60054571"
   Les modèles de projet Modèle Word et Modèle Excel se comportent de la même façon que les modèles Document Word et Classeur Excel. Toutefois, les modèles de projet Modèle Word et Modèle Excel permettent aux utilisateurs de créer facilement un document local ou des copies de classeur du modèle personnalisé dans votre solution. Les fonctionnalités de votre solution sont disponibles dans le nouveau document que l'utilisateur crée à partir du modèle.
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser des modèles Word qui font référence à des extensions de code managé comme compléments VSTO globaux. L'assembly n'est pas appelé si le modèle est chargé à partir du répertoire Startup de Word. Pour plus d’informations, consultez [Limitations des modèles globaux et compléments Excel (fichiers .xla)](#Limitations)
+> Vous ne pouvez pas utiliser des modèles Word qui font référence à des extensions de code managé comme compléments VSTO globaux. L'assembly n'est pas appelé si le modèle est chargé à partir du répertoire Startup de Word. Pour plus d’informations, consultez [Limitations des modèles globaux et compléments Excel (fichiers .xla)](#Limitations)
 
  Pour plus d'informations sur la mise en route avec ces types de projet, consultez les rubriques suivantes :
 

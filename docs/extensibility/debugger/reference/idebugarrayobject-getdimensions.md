@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96079e3f82fccc958cc4b9123f8af4227393845f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 60ee75454bf105f12b79d60e032549bcb84ab465
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697024"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615241"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Obtient les dimensions du tableau.
@@ -38,14 +38,12 @@ int GetDimensions(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwCount`
+## <a name="parameters"></a>Paramètres
+`dwCount`\
+[in] Le nombre de dimensions à récupérer.
 
- [in] Le nombre de dimensions à récupérer.
-
- `dwDimensions`
-
- [in, out] Un tableau est rempli avec les tailles de chaque dimension. `dwCount` Spécifie la taille maximale de la `dwDimensions` tableau.
+`dwDimensions`\
+[in, out] Un tableau est rempli avec les tailles de chaque dimension. `dwCount` Spécifie la taille maximale de la `dwDimensions` tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

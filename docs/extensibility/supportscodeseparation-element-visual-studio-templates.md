@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 504e176973cd9bb6f0041254e0de19d675be05df
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432318"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation, élément (modèles Visual Studio)
 Spécifie ou non le **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.

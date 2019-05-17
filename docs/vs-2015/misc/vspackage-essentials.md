@@ -10,11 +10,11 @@ ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 7b9f8dc80f7985e7b9b7545dd0c8e78d748cd4d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953762"
 ---
 # <a name="vspackage-essentials"></a>Essentiel des VSPackages
 Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages incarnent l’unité architecturale au centre de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lui-même est écrit principalement comme une collection de VSPackages.  

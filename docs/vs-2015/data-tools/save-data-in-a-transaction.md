@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105017"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692465"
 ---
 # <a name="save-data-in-a-transaction"></a>Enregistrer des données dans une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
 2. Nommez le projet **SavingDataInATransactionWalkthrough**.  
   
-3. Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Sélectionnez **Windows Application**, puis sélectionnez **OK**. Pour plus d’informations, consultez [les Applications clientes](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Le projet **SavingDataInATransactionWalkthrough** est créé et ajouté à l’**Explorateur de solutions**.  
   
 ## <a name="create-a-database-data-source"></a>Créer une source de données de base de données  
- Cette étape utilise le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) pour créer une source de données basée sur le `Customers` et `Orders` tables dans la base de données Northwind.  
+ Cette étape utilise le [Assistant de Configuration de Source de données](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) pour créer une source de données basée sur le `Customers` et `Orders` tables dans la base de données Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
@@ -63,7 +63,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
   
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
-         - ou -  
+         ou  
   
     - Sélectionnez **Nouvelle connexion** pour lancer la boîte de dialogue **Ajouter/Modifier une connexion** et créez une connexion à la base de données Northwind.  
   

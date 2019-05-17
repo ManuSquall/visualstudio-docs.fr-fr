@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 076e744be4e97cc8c58d5b5f7578f1701f39d711
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee4c292bdd80a8209d9136bac0cbc6775a2c33ac
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714256"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458524"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 Obtient le nom du frame de pile.
@@ -36,8 +39,8 @@ int GetName ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrName`
+## <a name="parameters"></a>Paramètres
+ `pbstrName`\
 
  [out] Retourne le nom du frame de pile.
 

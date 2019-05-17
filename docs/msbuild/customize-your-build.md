@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778099"
 ---
 # <a name="customize-your-build"></a>Personnaliser votre build
 
@@ -51,6 +51,7 @@ Par exemple, si vous souhaitez permettre à l’ensemble de vos projets d’acc�
     </PropertyGroup>
    </Project>
    ```
+
 3. Exécutez MSBuild. Les importations existantes de votre projet de *Microsoft.Common.props* et *Microsoft.Common.targets* trouvent le fichier et l’importent.
 
 ### <a name="search-scope"></a>Étendue de la recherche

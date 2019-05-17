@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834385"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image
   Cette procédure pas à pas montre comment importer une page maître personnalisée SharePoint et une page de site qui ont une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.

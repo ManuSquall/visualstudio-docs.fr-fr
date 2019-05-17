@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425458"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017 : Taux élevés de pagination de la mémoire active sur le disque
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620484"
 ## <a name="rule-description"></a>Description de la règle
 
 > [!NOTE]
->  Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Quand un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) se déclenche à la place.
+> Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Quand un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) se déclenche à la place.
 
  Une pagination excessive sur le disque peut être due à un manque de mémoire physique. Si les opérations de pagination utilisent une grande partie du disque physique sur lequel réside le fichier de pagination, elles peuvent ralentir d’autres opérations de disque orientées application effectuées sur le même disque.
 

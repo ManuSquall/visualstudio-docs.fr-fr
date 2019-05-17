@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567804"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Héritage de classes de données (Concepteur O/R)
 
@@ -27,7 +27,7 @@ Quand vous configurez l’héritage dans les classes d’entité à l’aide du 
 
 Le tableau suivant répertorie les propriétés d'héritage et leurs descriptions :
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Propriété de discriminateur**|Propriété (mappée à la colonne) qui détermine à quelle classe appartient l'enregistrement actif.|
 |**Valeur de discriminateur de classe de base**|Valeur (dans la colonne désignée comme **Propriété de discriminateur**) déterminant qu’un enregistrement fait partie de la classe de base.|
@@ -39,11 +39,11 @@ La création d'un modèle objet qui utilise l'héritage et correspond aux donné
 |Rubrique|Description|
 |-----------|-----------------|
 |[Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Décrit comment configurer des classes d’entité qui utilisent l’héritage à table unique à l’aide de la **Concepteur O/R**.|
-|[Procédure pas à pas : création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Fournit des instructions détaillées sur la façon de configurer des classes d’entité qui utilisent l’héritage à table unique à l’aide de la **Concepteur O/R**.|
+|[Procédure pas à pas : Création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Fournit des instructions détaillées sur la façon de configurer des classes d’entité qui utilisent l’héritage à table unique à l’aide de la **Concepteur O/R**.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Procédure pas à pas : création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+- [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procédure pas à pas : Création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O/R)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Prise en main](/dotnet/framework/data/adonet/sql/linq/getting-started)

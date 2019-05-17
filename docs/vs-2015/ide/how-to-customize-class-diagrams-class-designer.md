@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416856"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Procédure : Personnaliser des diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
  Par exemple, vous pouvez ajuster le niveau de zoom d'un diagramme de classes entier, modifier la manière dont les membres de type sont groupés et ordonnés, masquer ou afficher les relations, et déplacer chaque type ou ensemble de types à votre guise dans le diagramme.  
   
 > [!NOTE]
->  Personnaliser la façon dont les formes apparaissent dans le diagramme ne modifie pas le code sous-jacent pour les types représentés dans le diagramme.  
+> Personnaliser la façon dont les formes apparaissent dans le diagramme ne modifie pas le code sous-jacent pour les types représentés dans le diagramme.  
   
  Les sections qui contiennent des membres de type, telles que la section Propriétés d'une classe, sont appelées compartiments. Vous pouvez masquer ou afficher des compartiments spécifiques et des membres de type.  
   
@@ -64,7 +64,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
      Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).  
   
     > [!NOTE]
-    >  La modification du niveau de zoom n'affecte pas l'échelle d'impression de votre diagramme de classes.  
+    > La modification du niveau de zoom n'affecte pas l'échelle d'impression de votre diagramme de classes.  
   
 ## <a name="CustomizeGroupingSorting"></a> Personnaliser le regroupement et le tri des membres de type  
   

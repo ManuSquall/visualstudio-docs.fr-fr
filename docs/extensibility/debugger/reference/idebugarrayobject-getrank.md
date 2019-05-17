@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aabaaed13de191e4e0ee8d8d0e8422d3df144210
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683894"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615211"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 Obtient le rang du tableau, autrement dit, le nombre de dimensions.
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwRank`
-
- [out] Retourne le rang.
+## <a name="parameters"></a>Paramètres
+`pdwRank`\
+[out] Retourne le rang.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

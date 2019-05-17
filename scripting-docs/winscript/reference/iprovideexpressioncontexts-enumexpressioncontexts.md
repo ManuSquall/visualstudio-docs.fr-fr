@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410147"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Retourne un énumérateur des contextes d’expression connus par ce composant.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  Le Gestionnaire de débogage de processus utilise cette méthode pour rechercher tous les contextes d’expression globale associées à un thread donné.  
   
 > [!NOTE]
->  Cette méthode est appelée à partir du thread d’intérêt. Il est à l’implémenteur pour identifier le thread actuel et retourne un énumérateur approprié.  
+> Cette méthode est appelée à partir du thread d’intérêt. Il est à l’implémenteur pour identifier le thread actuel et retourne un énumérateur approprié.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)

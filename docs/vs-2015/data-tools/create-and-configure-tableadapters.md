@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705018"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
  Les TableAdapters sont créés pour vous lorsque vous effectuez l’une des actions suivantes :  
   
-- Exécutez le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
+- Exécutez le [Assistant de Configuration de Source de données](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
   
-- Faire glisser des objets de base de données à partir de [Explorateur de serveurs](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
+- Faire glisser des objets de base de données à partir de [Explorateur de serveurs](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
   
   Vous pouvez créer un nouveau TableAdapter et configurez-le avec une source de données en faisant glisser un TableAdapter à partir de la boîte à outils vers une région vide dans le **Concepteur de Dataset** surface.  
   
@@ -60,7 +60,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
      Mappez les paramètres de la procédure stockée sélectionnée aux colonnes correspondantes de la table de données. Par exemple, si votre procédure stockée accepte un paramètre nommé `@CompanyName` qu’il transmet à la `CompanyName` jeu de colonnes dans la table, le **colonne Source** de la `@CompanyName` paramètre à `CompanyName`.  
   
     > [!NOTE]
-    >  La procédure stockée qui est affectée à la commande SELECT est exécutée en appelant la méthode du TableAdapter que vous nommez dans l’étape suivante de l’Assistant. La méthode par défaut est `Fill`, de sorte que le code qui est généralement utilisé pour exécuter la procédure SELECT est `TableAdapter.Fill(tableName)`. Si vous modifiez le nom par défaut à partir de `Fill`, remplacez `Fill` avec le nom vous affecter et remplacez « TableAdapter » par le nom réel du TableAdapter (par exemple, `CustomersTableAdapter`).  
+    > La procédure stockée qui est affectée à la commande SELECT est exécutée en appelant la méthode du TableAdapter que vous nommez dans l’étape suivante de l’Assistant. La méthode par défaut est `Fill`, de sorte que le code qui est généralement utilisé pour exécuter la procédure SELECT est `TableAdapter.Fill(tableName)`. Si vous modifiez le nom par défaut à partir de `Fill`, remplacez `Fill` avec le nom vous affecter et remplacez « TableAdapter » par le nom réel du TableAdapter (par exemple, `CustomersTableAdapter`).  
   
 - Le **Options avancées** dans l’Assistant de pouvoir générer des instructions INSERT, UPDATE et DELETE en fonction de l’instruction SELECT qui est définie sur le **générer les instructions SQL** page. Utiliser l’accès concurrentiel optimiste et spécifiez si les instructions sont exécutées pour actualiser la table de données après l’insertion et mise à jour.  
   
@@ -82,7 +82,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
 3. Sur le **choisir votre connexion de données** écran, sélectionnez ou créez la connexion que la requête va utiliser.  
   
     > [!NOTE]
-    >  Cet écran s’affiche uniquement lorsque le concepteur ne peut pas déterminer la connexion appropriée à utiliser, ou lorsqu’aucune connexion n’est disponible.  
+    > Cet écran s’affiche uniquement lorsque le concepteur ne peut pas déterminer la connexion appropriée à utiliser, ou lorsqu’aucune connexion n’est disponible.  
   
 4. Sur le **choisir un Type de commande** s’affiche, sélectionnez parmi les méthodes d’extraction de données à partir de la base de données suivantes :  
   
@@ -97,7 +97,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
 - Si vous modifiez une requête TableAdapter existante, avec le bouton droit de la requête, puis choisissez **configurer** dans le menu contextuel.  
   
     > [!NOTE]
-    >  Clic droit sur la requête principale d’un TableAdapter reconfigure le TableAdapter et <xref:System.Data.DataTable> schéma. Clic droit sur une requête supplémentaire sur un TableAdapter, cependant, configure la requête sélectionnée uniquement. Le **Assistant Configuration de TableAdapter** reconfigure la définition du TableAdapter, tandis que l’Assistant Configuration de requêtes TableAdapter reconfigure uniquement la requête sélectionnée.  
+    > Clic droit sur la requête principale d’un TableAdapter reconfigure le TableAdapter et <xref:System.Data.DataTable> schéma. Clic droit sur une requête supplémentaire sur un TableAdapter, cependant, configure la requête sélectionnée uniquement. Le **Assistant Configuration de TableAdapter** reconfigure la définition du TableAdapter, tandis que l’Assistant Configuration de requêtes TableAdapter reconfigure uniquement la requête sélectionnée.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Pour ajouter une requête globale à un TableAdapter  
   
@@ -108,7 +108,7 @@ Les TableAdapters fournissent la communication entre votre application et une ba
 - Fournir une requête qui effectue la tâche souhaitée, par exemple, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  En faisant glisser un **requête** objet directement sur le **Concepteur de Dataset** crée une méthode qui retourne uniquement une valeur scalaire (unique). Alors que la requête ou la procédure stockée que vous sélectionnez peut-être retourner plus de valeur unique, la méthode qui est créée par l’Assistant retourne uniquement une valeur unique. Par exemple, la requête peut retourner la première colonne de la première ligne des données retournées.  
+    > En faisant glisser un **requête** objet directement sur le **Concepteur de Dataset** crée une méthode qui retourne uniquement une valeur scalaire (unique). Alors que la requête ou la procédure stockée que vous sélectionnez peut-être retourner plus de valeur unique, la méthode qui est créée par l’Assistant retourne uniquement une valeur unique. Par exemple, la requête peut retourner la première colonne de la première ligne des données retournées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

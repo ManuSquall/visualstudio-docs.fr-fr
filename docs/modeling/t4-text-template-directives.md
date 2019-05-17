@@ -14,14 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09f3a9dfcc6c26e9dd575f4a127884e28def1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c949eaeaf8e780fa6a85d61dea272d21fb8be1
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064074"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476554"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
+
 Les directives fournissent des instructions au moteur de transformation de modèle de texte.
 
 La syntaxe des directives est la suivante :

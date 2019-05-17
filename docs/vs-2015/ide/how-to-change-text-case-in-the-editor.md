@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0a81545b4316415d1868413d41113bd5c4fdd4b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695840"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procédure : Modifier la casse du texte dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060317"
 Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre le texte sélectionné tout en majuscules ou tout en minuscules.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procédure  
   
@@ -42,7 +42,7 @@ Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre
      Pour mettre le texte tout en minuscules, choisissez **Minuscules** ou appuyez sur **Ctrl**+**U**.  
   
     > [!TIP]
-    >  Pour rétablir la casse antérieure à cette modification, sélectionnez **Annuler** dans le menu **Edition**.  
+    > Pour rétablir la casse antérieure à cette modification, sélectionnez **Annuler** dans le menu **Edition**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)   

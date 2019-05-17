@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406937"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
 Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
@@ -85,7 +85,7 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
  Dans le code managé, le compteur suspendu change lorsque vous gelez ou libérez un thread. Si vous gelez un thread dans du code managé, son compteur suspendu est 1. Lorsque vous gelez un thread en code natif, son compteur suspendu est 0, sauf si vous avez utilisé le `SuspendThread` appeler.
 
 > [!NOTE]
->  Lors du débogage d'un appel entre code natif et code managé, le code managé s'exécute dans le même thread physique que le code natif qui l'a appelé. Si vous suspendez ou figez le thread natif, le code managé sera également figé.
+> Lors du débogage d'un appel entre code natif et code managé, le code managé s'exécute dans le même thread physique que le code natif qui l'a appelé. Si vous suspendez ou figez le thread natif, le code managé sera également figé.
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Pour geler ou libérer l'exécution d'un thread
 

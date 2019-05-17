@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686495"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
  Le concept clé dans la sélection de liste est qu’il est basé sur une ligne, ce qui signifie que lorsqu’une sélection est effectuée à la ligne entière est sélectionné en tant qu’unité. En revanche, grilles peuvent autoriser des cellules spécifiques à sélectionner sans affecter tous les autres aspects de la ligne. Grilles peuvent également contenir une hiérarchie de lignes imbriquées (comme dans un contrôle TreeGrid) qui permettent de branches entières de la hiérarchie sélectionnée et désélectionnée en interagissant avec les lignes parentes. Sélection dans les listes est indiquée par une couleur de surbrillance simple sur toute la ligne de données. Le focus est indiqué par une bordure en pointillés pixels autour de la ligne modifiable actuelle ou d’une cellule (ligne si toutes les cellules sont en lecture seule).
 
 > [!NOTE]
->  **Le focus** et **sélection** sont des concepts différents. *Le focus* indique de quelle interface utilisateur de l’élément cible pour recevoir une entrée ne sont pas explicitement dirigée vers un autre objet, tandis que *sélection* fait référence à l’état d’inclusion d’un objet dans un ensemble d’objets sur lesquels suivantes opérations peuvent avoir lieu.
+> **Le focus** et **sélection** sont des concepts différents. *Le focus* indique de quelle interface utilisateur de l’élément cible pour recevoir une entrée ne sont pas explicitement dirigée vers un autre objet, tandis que *sélection* fait référence à l’état d’inclusion d’un objet dans un ensemble d’objets sur lesquels suivantes opérations peuvent avoir lieu.
 
  Les sélections dans les listes peuvent être contiguës, disjoint, ou une région. Lorsque les sélections multiples sont autorisées, contiguës et disjointe sélection doit toujours être prise en charge, lors de la prise en charge des sélections de région (zone) sont facultatif. Sélections de région sont initiées en faisant glisser dans l’espace blanc du corps de la liste.
 
@@ -531,4 +531,4 @@ Modèles composites combinent des éléments de conception et d’interaction da
 |Autres considérations|||Clavier visuel personnalisé|
 
 #### <a name="gestures"></a>Mouvements
- Mouvements de fournissent aux utilisateurs un raccourci vers les commandes qui pourraient nécessiter une interaction plus complexe. Reportez-vous aux instructions de Windows sur [des entrées tactiles courantes pour les Applications de bureau](http://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)et suivez ces instructions pour la plupart des gestes, y compris des gestes simples telles que l’affichage panoramique et zoom.
+ Mouvements de fournissent aux utilisateurs un raccourci vers les commandes qui pourraient nécessiter une interaction plus complexe. Reportez-vous aux instructions de Windows sur [des entrées tactiles courantes pour les Applications de bureau](https://msdn.microsoft.com/library/windows/desktop/dd940543\(v=vs.85\).aspx)et suivez ces instructions pour la plupart des gestes, y compris des gestes simples telles que l’affichage panoramique et zoom.

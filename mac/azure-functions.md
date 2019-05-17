@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984993"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
@@ -103,7 +103,7 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
     |Paramètre  |Description  |
     |---------|---------|
     |**Nom de l’App Service**|Nom global unique qui identifie votre nouvelle application de fonction.|
-    |**Abonnement**|Sélectionnez l’abonnement Azure à utiliser.|
+    |**Abonnement**|Abonnement Azure à utiliser.|
     |**[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)**|Nom du groupe de ressources dans lequel créer votre application de fonction. Choisissez **+** pour créer un groupe de ressources.|
     |**[Plan de service](/azure/azure-functions/functions-scale)**|Choisissez un plan existant, ou créez un plan personnalisé. Choisissez un emplacement dans une région proche de chez vous, ou proche d’autres services auxquels vos fonctions ont accès.|
 
@@ -147,9 +147,7 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
     - Http POST CRUD
     - Http Trigger with parameters
 
-
 - **Timer** : exécute le nettoyage ou d’autres tâches de traitement par lots selon une planification prédéfinie. Ce modèle accepte deux champs : un nom et une planification (expression CRON de six champs). Pour plus d’informations, consultez [l’article Azure Functions sur les minuteurs](/azure/azure-functions/functions-create-scheduled-function).
-
 
 - **Queue Trigger** : cette fonction répond aux messages à mesure qu’ils arrivent dans la file d’attente Stockage Azure. En plus du nom de fonction, ce modèle accepte un **chemin** (nom de la file d’attente à partir de laquelle le message est lu) et une **connexion** de compte de stockage (nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage). Pour plus d’informations, consultez [l’article Azure Functions sur Stockage File d’attente](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

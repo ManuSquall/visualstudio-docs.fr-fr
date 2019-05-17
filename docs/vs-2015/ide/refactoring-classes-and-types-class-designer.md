@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef3f4c52955f5958ab24d56c5741418648de48d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048396"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696217"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorisation des classes et des types (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048396"
 Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à gérer. Vous le rendez également plus efficace en changeant sa structure interne et la conception de ses objets, sans altérer son comportement externe. Utilisez le Concepteur de classes et la fenêtre Détails de classe pour réduire votre charge de travail et limiter le risque d'introduire des bugs quand vous refactorisez du code Visual C# .NET, Visual Basic .NET ou C++ dans votre projet Visual Studio.  
   
 > [!NOTE]
->  Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l'un de ces états, vous avez plusieurs façons différentes d'enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Les fichiers d'un projet peuvent être en lecture seule, car le projet est sous contrôle de code source et n'est pas extrait (projet référencé), ou ses fichiers sont marqués en lecture seule sur le disque. Quand vous travaillez dans un projet ayant l'un de ces états, vous avez plusieurs façons différentes d'enregistrer votre travail. Cela s'applique au code que vous refactorisez et au code que vous changez d'une autre façon, par exemple en le modifiant directement. Pour plus d’informations, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tâches courantes  
   
@@ -65,7 +65,7 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 3. Pour déplacer le focus hors de la cellule, appuyez sur la touche **Entrée** ou cliquez en dehors de la cellule.  
   
     > [!NOTE]
-    >  Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type.  
+    > Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Pour attribuer un nouveau nom dans la fenêtre Propriétés  
   

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965052"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 Configurer les fonctionnalités reposant sur le langage comme le mode plan en définissant les types de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre type de contenu et d’extension de nom fichier et s’appliquent de la définition de la région à uniquement à ce type ou appliquer les définitions de la région à un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment définir et afficher les régions en mode plan.

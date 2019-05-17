@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441587"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procédure : Spécifier les fichiers publiés par ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
 4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez le **groupe** field pour un fichier que vous souhaitez inclure dans le nouveau groupe.  
   
     > [!NOTE]
-    >  Les fichiers doivent avoir le **Action de génération** propriété définie sur **contenu** avant que les noms de fichiers n’apparaissent dans le **fichiers d’Application** boîte de dialogue.  
+    > Les fichiers doivent avoir le **Action de génération** propriété définie sur **contenu** avant que les noms de fichiers n’apparaissent dans le **fichiers d’Application** boîte de dialogue.  
   
 5. Dans le **groupe de téléchargement** champ, sélectionnez  **\<nouveau... >** dans la liste déroulante.  
   
@@ -114,7 +114,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] f
 5. Dans le **groupe de téléchargement** , sélectionnez un groupe dans la liste déroulante.  
   
     > [!NOTE]
-    >  Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application.  
+    > Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   

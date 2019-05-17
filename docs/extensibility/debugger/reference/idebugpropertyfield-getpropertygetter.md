@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a50a9f28f7e430d37bb08139a6483218698b2eed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3b086a6f0c4d343aaa7b0d58dd93db74a043fa65
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706195"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458777"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 Obtient la méthode qui obtient la propriété.
@@ -36,8 +39,8 @@ int GetPropertyGetter(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppField`
+## <a name="parameters"></a>Paramètres
+ `ppField`\
 
  [out] Retourne un [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) objet qui représente la méthode qui obtient la propriété.
 

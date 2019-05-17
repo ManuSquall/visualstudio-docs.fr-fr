@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193894"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680787"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) Visual Studio.
@@ -45,7 +45,7 @@ Vous trouverez des exemples d’open source d’extensions du Kit de développem
 ## <a name="included-support"></a>Support inclus
 
 ### <a name="visual-studio-product-support"></a>Prise en charge du produit Visual Studio
- Une prise en charge est inclus avec l’achat de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gère une équipe de support dédiées pour répondre aux questions sur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilité.
+ Une prise en charge est inclus avec l’achat de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gère une équipe de support dédiées pour répondre aux questions sur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilité.
 
 ### <a name="msdn-subscription-support"></a>Support des abonnements MSDN
  Packages d’abonnement MSDN peuvent également inclure une prise en charge. Pour plus d’informations, consultez [Support des abonnés MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Vous trouverez plus d’informations sur les demandes de support individuels à 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Nous contacter](../ide/talk-to-us.md)
+- [Nous contacter](../ide/feedback-options.md)

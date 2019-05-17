@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554920"
 ---
 # <a name="datakind"></a>DataKind
 Indique la portée d’une valeur de données particulière.
@@ -60,10 +60,10 @@ Symbole de données de DataIsUnknown ne peut pas être déterminé.
 
 Élément de données de DataIsConstant est une valeur constante.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi

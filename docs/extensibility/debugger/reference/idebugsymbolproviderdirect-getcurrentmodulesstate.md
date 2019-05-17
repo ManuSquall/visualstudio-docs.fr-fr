@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2a4cfb78c7ccf24a79c5326f7f263a1b78302a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699988"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458221"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Récupère des informations sur le groupe de symboles dont le fournisseur de symboles est un membre.
@@ -37,12 +40,12 @@ int GetCurrentModulesState(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pState`
+## <a name="parameters"></a>Paramètres
+ `pState`\
 
  [out] L’état du groupe de fournisseur de symboles.
 
- `count`
+ `count`\
 
  [out] Nombre de modules dans le groupe.
 

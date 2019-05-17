@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556687"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procédure : Ajouter un nœud SharePoint personnalisé à l’Explorateur de serveurs
   Vous pouvez ajouter des nœuds personnalisés sous le **connexions SharePoint** nœud **Explorateur de serveurs**. Cela est utile lorsque vous souhaitez afficher des composants SharePoint supplémentaires qui ne sont pas affichés dans **Explorateur de serveurs** par défaut. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

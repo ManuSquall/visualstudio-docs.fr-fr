@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856249"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
@@ -50,7 +50,7 @@ Dans les modèles de texte de Visual Studio, le `output` directive est utilisée
  Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
- Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Par exemple :
+ Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
 
  `<#@ output encoding="utf-8"#>`
 

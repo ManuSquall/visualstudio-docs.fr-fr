@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d9bf44d8d586c5e9206ff23ec69970b5a00449
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92fdfe08855fb9e70d24652e4361d9fe521209a2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704265"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225563"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 Cette méthode retourne l’ensemble suivant d’éléments de l’énumération.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celt`
+## <a name="parameters"></a>Paramètres
+ `celt`\
 
  [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Tableau de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) éléments doit être renseigné.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
 

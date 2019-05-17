@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: f02880e512f1030de0c53e2b68b463ac5ce2703a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1284dc529e4f150b282dcab2d919e027c9b606c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976386"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour des applications UWP
 
@@ -30,19 +30,19 @@ Les procédures suivantes décrivent les étapes nécessaires pour créer, exéc
 
 ## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Créer un projet de test unitaire pour une application UWP
 
-1.  Dans le menu **Fichier** , choisissez **Nouveau projet**.
+1. Dans le menu **Fichier** , choisissez **Nouveau projet**.
 
      La boîte de dialogue **Nouveau projet** s’affiche.
 
-2.  Sous Modèles, sélectionnez le langage de programmation dans lequel vous voulez créer le test unitaire, puis choisissez la bibliothèque de tests unitaires Windows universel associée. Par exemple, choisissez **Visual C#**, **Windows universel**, puis **Bibliothèque de tests unitaires (Windows universel)**.
+2. Sous Modèles, sélectionnez le langage de programmation dans lequel vous voulez créer le test unitaire, puis choisissez la bibliothèque de tests unitaires Windows universel associée. Par exemple, choisissez **Visual C#**, **Windows universel**, puis **Bibliothèque de tests unitaires (Windows universel)**.
 
-3.  (Facultatif) Dans la zone de texte **Nom**, entrez le nom à utiliser pour le projet.
+3. (Facultatif) Dans la zone de texte **Nom**, entrez le nom à utiliser pour le projet.
 
-4.  (Facultatif) Changez le chemin où vous voulez créer le projet en l’entrant dans la zone de texte **Emplacement** ou en choisissant le bouton **Parcourir**.
+4. (Facultatif) Changez le chemin où vous voulez créer le projet en l’entrant dans la zone de texte **Emplacement** ou en choisissant le bouton **Parcourir**.
 
-5.  (Facultatif) Dans la zone de texte **Nom de la solution** , entrez le nom à utiliser pour votre solution.
+5. (Facultatif) Dans la zone de texte **Nom de la solution** , entrez le nom à utiliser pour votre solution.
 
-6.  Laissez l'option **Créer le répertoire pour la solution** sélectionnée et choisissez le bouton **OK** .
+6. Laissez l'option **Créer le répertoire pour la solution** sélectionnée et choisissez le bouton **OK** .
 
      ![Bibliothèque de test unitaire personnalisée](../test/media/unit_test_win8_1.png)
 
@@ -52,13 +52,13 @@ Les procédures suivantes décrivent les étapes nécessaires pour créer, exéc
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modifier le fichier manifeste de l’application UWP du projet de test unitaire
 
-1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le fichier *Package.appxmanifest* et choisissez **Ouvrir**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le fichier *Package.appxmanifest* et choisissez **Ouvrir**.
 
      Le **Concepteur de manifeste** s’affiche en vue de sa modification.
 
-2.  Dans le **Concepteur de manifeste**, choisissez l’onglet **Fonctionnalités**.
+2. Dans le **Concepteur de manifeste**, choisissez l’onglet **Fonctionnalités**.
 
-3.  Dans la liste sous **Fonctionnalités**, sélectionnez les fonctionnalités dont vous avez besoin pour votre test unitaire et le code qu'il teste. Par exemple, activez la case à cocher **Internet** si le test unitaire est requis et que le code qu'il teste a besoin d'accéder à internet.
+3. Dans la liste sous **Fonctionnalités**, sélectionnez les fonctionnalités dont vous avez besoin pour votre test unitaire et le code qu'il teste. Par exemple, activez la case à cocher **Internet** si le test unitaire est requis et que le code qu'il teste a besoin d'accéder à internet.
 
     > [!NOTE]
     > Les fonctionnalités que vous sélectionnez doivent être seulement celles qui sont nécessaires pour que le test unitaire fonctionne correctement.
@@ -73,23 +73,23 @@ Dans **l’Éditeur de code**, modifiez le test unitaire et ajoutez les assertio
 
 ### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Pour générer la solution et exécuter le test unitaire à l'aide de l'Explorateur de tests
 
-1.  Dans le menu **Test** , choisissez **Fenêtres**, puis **Explorateur de tests**.
+1. Dans le menu **Test** , choisissez **Fenêtres**, puis **Explorateur de tests**.
 
      **L’Explorateur de tests** s’affiche et votre test ne figure pas dans la liste.
 
-2.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+2. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
      Votre test unitaire figure maintenant dans la liste.
 
     > [!NOTE]
     > Vous devez générer la solution pour mettre à jour la liste des tests unitaires dans l'Explorateur de tests.
 
-3.  Dans **l’Explorateur de tests**, sélectionnez le test unitaire que vous avez créé.
+3. Dans **l’Explorateur de tests**, sélectionnez le test unitaire que vous avez créé.
 
     > [!TIP]
     > L'Explorateur de tests fournit un lien vers le code source en regard de **Source :**.
 
-4.  Choisissez **Exécuter tout**.
+4. Choisissez **Exécuter tout**.
 
      ![Explorateur de tests unitaires &#45; exécuter un test unitaire](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 

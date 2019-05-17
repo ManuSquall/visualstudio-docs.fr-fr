@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6886373e521c411c3823b9f15138c8f798a373f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e374860bcd80f0a199e5dc55b4b556d94d99aba6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681814"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460925"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -40,13 +43,13 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 }
 ```
 
-## <a name="parameters"></a>Paramètres
+## <a name="members"></a>Membres
 
-`dwValidFields`
+`dwValidFields`\
 
 Une combinaison d’indicateurs de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant le type d’information de recherche décrit dans cette structure.
 
-`bstrVerboseSearchInfo`
+`bstrVerboseSearchInfo`\
 
 Chemin de recherche et les résultats concaténés en une seule chaîne.
 
@@ -68,7 +71,7 @@ Voici un éventuel `bstrVerboseSearchInfo` chaîne qui a été envoyé vers une 
 
 `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : msdbg.h
 

@@ -9,12 +9,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683569"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878142"
 ---
 # <a name="locate-visual-studio"></a>Localisez Visual Studio
 
@@ -42,3 +42,4 @@ Pour trouver Visual Studio et autres outils dans les environnements de générat
 ## <a name="see-also"></a>Voir aussi
 
 * [Modifications apportées au programme d’installation de Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [Lancez Visual Studio à l’aide de DTE](launch-visual-studio-dte.md)

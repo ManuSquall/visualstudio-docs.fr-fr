@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52df78eea2f8dac5f513514348fbc9cd435c989a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409828"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Évaluer une expression de la fenêtre Espion
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Lors de l’exécution s’interrompt, Visual Studio appelle le moteur de débogage (dé) pour déterminer la valeur actuelle de chaque expression dans sa liste de suivi. Le D’évalue chaque expression à l’aide d’un évaluateur d’expression (EE) et Visual Studio affiche sa valeur dans le **espion** fenêtre.
 
@@ -45,7 +45,7 @@ ms.locfileid: "60094968"
  Étant donné que l’analyse d’une expression complexe peut prendre beaucoup plus longue que l’évaluer, le processus d’évaluation d’une expression est divisé en deux étapes : (1) analyse l’expression et 2) évaluer l’expression analysée. De cette façon, l’évaluation peut se produire plusieurs fois, mais l’expression doit être analysé qu’une seule fois. L’expression analysée intermédiaire est retournée à partir de la EE dans un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet encapsulé à son tour et retournée à partir de l’Allemagne comme un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. Le `IDebugExpression` objet diffère de l’évaluation toutes les le `IDebugParsedExpression` objet.
 
 > [!NOTE]
->  Il n’est pas nécessaire pour un EE à adhérer à ce processus en deux étapes, même si Visual Studio considère cela ; le EE peut analyser et évaluer dans la même étape lorsque [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) est appelée (c’est l’exemple MyCEE fonctionne, par exemple). Si votre langage peut former des expressions complexes, vous souhaiterez séparer l’étape d’analyse de l’étape d’évaluation. Cela peut augmenter les performances dans le débogueur Visual Studio lorsque plusieurs expressions espionnes sont affichées.
+> Il n’est pas nécessaire pour un EE à adhérer à ce processus en deux étapes, même si Visual Studio considère cela ; le EE peut analyser et évaluer dans la même étape lorsque [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) est appelée (c’est l’exemple MyCEE fonctionne, par exemple). Si votre langage peut former des expressions complexes, vous souhaiterez séparer l’étape d’analyse de l’étape d’évaluation. Cela peut augmenter les performances dans le débogueur Visual Studio lorsque plusieurs expressions espionnes sont affichées.
 
 ## <a name="in-this-section"></a>Dans cette section
  [Exemple d’implémentation de l’évaluation de l’expression](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) utilise l’exemple MyCEE pour parcourir le processus d’évaluation de l’expression.

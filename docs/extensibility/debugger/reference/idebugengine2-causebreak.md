@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa0d559887019a697b820a5a6c91f80b78c6b713
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920961"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (dé) pour arrêter l’exécution de la prochaine fois qu’un de ses threads tente de s’exécuter.

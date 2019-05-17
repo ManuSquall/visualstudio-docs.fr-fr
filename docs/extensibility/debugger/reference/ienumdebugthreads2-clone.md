@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 697402eb79b06ef066fb8a43c6954bd76c217ee9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 947bfd84c446b701c269a5c4719cb66783e68940
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688249"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458189"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 Retourne une copie de l’énumération actuelle comme un objet distinct.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppEnum`
+## <a name="parameters"></a>Paramètres
+ `ppEnum`\
 
  [out] Retourne une copie de cette énumération en tant qu’objet distinct.
 

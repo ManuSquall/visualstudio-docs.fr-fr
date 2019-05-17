@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431270"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procédure : Ajouter une méthode de recherche spécifique
   Vous pouvez retourner une seule instance d’entité en créant un *recherche spécifique* (méthode). Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart données métier ou d’une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615284"
 5. Configurez le descripteur de type du paramètre de retour comme un descripteur de type d’entité. Pour plus d’informations sur la création d’un descripteur de type d’entité, consultez [Comment : Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Vous n’êtes pas obligé d’effectuer cette étape si vous avez ajouté une méthode de recherche à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche.
+   > Vous n’êtes pas obligé d’effectuer cette étape si vous avez ajouté une méthode de recherche à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche.
 
    > [!NOTE]
-   >  Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est généré automatiquement, définissez la **en lecture seule** propriété du champ d’identificateur à **True**.
+   > Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est généré automatiquement, définissez la **en lecture seule** propriété du champ d’identificateur à **True**.
 
 6. Dans le **détails de la méthode** fenêtre, choisissez l’instance de méthode de la méthode.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615284"
      L’exemple suivant retourne un contact à partir de la base de données AdventureWorks pour SQL Server.
 
      > [!NOTE]
-     >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+     > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

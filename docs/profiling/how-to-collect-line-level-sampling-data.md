@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834586"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procédure : Collecter des données d’échantillonnage au niveau de la ligne
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.
@@ -49,11 +49,11 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Désactiver l’échantillonnage au niveau ligne dans du code managé
  Par défaut, l’échantillonnage au niveau ligne est activé. Vous pouvez désactiver la collecte de données au niveau ligne pour du code managé à l’aide de l’une des commandes suivantes :
 
--   Avant de commencer le profilage, tapez **VSPerfCLREnv /samplelineoff**. Cela affecte à la fois les applications et les services.
+- Avant de commencer le profilage, tapez **VSPerfCLREnv /samplelineoff**. Cela affecte à la fois les applications et les services.
 
      — ou —
 
--   Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.
+- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)

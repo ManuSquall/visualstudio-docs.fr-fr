@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949953"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procédure : créer des graphes personnalisés dans les résultats des tests de charge
 
@@ -26,7 +26,7 @@ Vous pouvez appliquer la procédure suivante pendant l'exécution d'un test de c
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Pour créer un graphique personnalisé sur les résultats d'un test de charge
 
-1.  Dans la barre d’outils **Test de charge**, choisissez **Ajouter un nouveau graphique**.
+1. Dans la barre d’outils **Test de charge**, choisissez **Ajouter un nouveau graphique**.
 
      \- ou -
 
@@ -34,11 +34,11 @@ Vous pouvez appliquer la procédure suivante pendant l'exécution d'un test de c
 
      La boîte de dialogue **Entrer le nom du graphique** s’affiche.
 
-2.  Sous **Nom du graphique**, tapez le nom du graphique, puis choisissez **OK**.
+2. Sous **Nom du graphique**, tapez le nom du graphique, puis choisissez **OK**.
 
      Le nouveau graphique s’affiche dans **l’Analyseur de test de charge**. Il apparaît dans le panneau graphique sélectionné et remplace le graphique qui s'y trouvait précédemment.
 
-3.  Personnalisez le nouveau graphique en ajoutant des compteurs. Pour plus d'informations, voir [Procédure : ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Personnalisez le nouveau graphique en ajoutant des compteurs. Pour plus d'informations, voir [Procédure : ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Voir aussi
 

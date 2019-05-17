@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db9bc2738e9a4d7cac0d57b9c613b7070f60baff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802917"
 ---
 # <a name="sccenumchangedfiles-function"></a>Fonction SccEnumChangedFiles
 Obtenez la liste des fichiers locaux, cette fonction détermine quels fichiers sont différents des versions correspondantes dans la base de données de contrôle de code source.

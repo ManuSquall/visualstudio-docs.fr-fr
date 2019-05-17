@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564292"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Informations de référence sur l’API pour l’extensibilité IntelliTrace
 

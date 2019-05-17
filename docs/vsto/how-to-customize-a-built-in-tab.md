@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419462"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procédure : Personnaliser un onglet intégré
   Vous pouvez ajouter des groupes et des contrôles à un onglet intégré. Un onglet intégré est un onglet qui existe déjà sur le ruban d'une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel. Lorsque vous créez un groupe personnalisé, il apparaît en dernier sous l'onglet, mais vous pouvez déplacer votre groupe n'importe où sur l'onglet.
@@ -26,14 +26,14 @@ ms.locfileid: "60075660"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Vous pouvez ajouter des groupes à un onglet intégré, mais vous ne pouvez pas supprimer les groupes intégrés d'un onglet intégré.
+> Vous pouvez ajouter des groupes à un onglet intégré, mais vous ne pouvez pas supprimer les groupes intégrés d'un onglet intégré.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Pour ajouter des groupes à un onglet intégré
 
 1. Cliquez sur le fichier de code de ruban dans **l’Explorateur de solutions**, puis cliquez sur **Concepteur de vues**.
 
     > [!NOTE]
-    >  Si le fichier de code du ruban n’apparaît pas dans **l’Explorateur de solutions**, vous devez ajouter un **élément ruban** à votre projet. Voir [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Si le fichier de code du ruban n’apparaît pas dans **l’Explorateur de solutions**, vous devez ajouter un **élément ruban** à votre projet. Voir [Guide pratique pour Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Avec le bouton droit n’importe quel onglet du Concepteur de ruban, puis cliquez sur **propriétés**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075660"
 5. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser les groupes sur l’onglet.
 
     > [!NOTE]
-    >  Les groupes intégrés n'apparaissent pas dans le concepteur. Par conséquent, la seule façon de déterminer si vous travaillez avec un onglet intégré consiste à examiner le **ControlId** propriété de l’onglet.
+    > Les groupes intégrés n'apparaissent pas dans le concepteur. Par conséquent, la seule façon de déterminer si vous travaillez avec un onglet intégré consiste à examiner le **ControlId** propriété de l’onglet.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Pour positionner des groupes sur un onglet intégré
 

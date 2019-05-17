@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441033"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procédure : Modifier une commande de menu standard dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
    Cette rubrique explique cette procédure.  
   
 > [!NOTE]
->  Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> Quelles commandes pouvez-vous modifier ?  
   
@@ -52,7 +52,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 5. Fermez le fichier sans enregistrer vos modifications.  
   
     > [!NOTE]
-    >  En temps normal, vous ne devez pas modifier les fichiers qui ont été générés. Toute modification sera perdue lors de la prochaine génération des fichiers.  
+    > En temps normal, vous ne devez pas modifier les fichiers qui ont été générés. Toute modification sera perdue lors de la prochaine génération des fichiers.  
   
 ## <a name="extend"></a> Étendre la classe de jeu de commandes appropriée  
  Créez un fichier qui contient une déclaration partielle de la classe de jeu de commandes.  
@@ -90,7 +90,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
  L'exemple suivant désactive l'élément de menu Delete quand l'utilisateur a sélectionné plusieurs formes.  
   
 > [!NOTE]
->  Cette méthode n'a aucun impact sur la disponibilité de la commande par l'intermédiaire du clavier. Par exemple, la désactivation de l'élément de menu Delete n'empêche pas d'appeler la commande par l'intermédiaire de la touche Suppr.  
+> Cette méthode n'a aucun impact sur la disponibilité de la commande par l'intermédiaire du clavier. Par exemple, la désactivation de l'élément de menu Delete n'empêche pas d'appeler la commande par l'intermédiaire de la touche Suppr.  
   
 ```  
 /// <summary>  

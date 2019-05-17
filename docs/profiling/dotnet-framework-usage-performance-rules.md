@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf47871b8b1c2e6f8e4f67bf26ba5f73ca078c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970016"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Règles de performance de l’utilisation du .NET Framework
 Les règles de performances de la catégorie Utilisation du .NET Framework permettent d’identifier les méthodes qui peuvent être optimisées, ainsi que des modèles d’utilisation plus généraux, tels que le garbage collection et les conflits de verrou, qui peuvent être examinés pour comprendre les problèmes de performances.

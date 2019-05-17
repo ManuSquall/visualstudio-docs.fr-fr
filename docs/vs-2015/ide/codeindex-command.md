@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f16d21889421a00fc2723412f34b426f75847822
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701625"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ Utilisez la commande **CodeIndex** pour gérer l’indexation de code dans Team 
   
  **Autorisations requises**  
   
- Pour utiliser la commande **CodeIndex**, vous devez être membre du groupe de sécurité **Team Foundation Administrators**. Consultez [Référence des autorisations pour Team Foundation Server](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
+ Pour utiliser la commande **CodeIndex**, vous devez être membre du groupe de sécurité **Team Foundation Administrators**. Consultez [Référence des autorisations pour Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
   
 > [!NOTE]
->  Même si vous vous connectez en tant qu'administrateur, vous devez ouvrir une fenêtre d'invite de commandes avec élévation de privilèges pour exécuter cette commande. Vous devez également exécuter cette commande depuis la couche Application pour Team Foundation.  
+> Même si vous vous connectez en tant qu'administrateur, vous devez ouvrir une fenêtre d'invite de commandes avec élévation de privilèges pour exécuter cette commande. Vous devez également exécuter cette commande depuis la couche Application pour Team Foundation.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Exemples  
   
 > [!NOTE]
->  Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.  
+> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.  
   
  Pour consulter l'état et la configuration d'indexation du code :  
   
@@ -125,5 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion de la configuration du serveur avec TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Outils de ligne de commande pour TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+ [Gestion de la configuration du serveur avec TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Outils de ligne de commande pour TFS](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

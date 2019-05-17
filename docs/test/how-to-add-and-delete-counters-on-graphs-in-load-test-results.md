@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002271"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procédure : Ajouter et supprimer des compteurs sur des graphes dans les résultats des tests de charge
 
@@ -43,33 +43,33 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 Les paramètres d’exécution de l’éditeur de test de charge contiennent une propriété nommée **Stockage des détails de minuterie**. Si la propriété **Stockage des détails de minuterie** est activée, le temps nécessaire à l’exécution de chaque test, transaction et page individuels pendant le test de charge est stocké dans le référentiel des résultats des tests de charge. Ainsi, les données du 90e et du 95e centiles s’affichent dans **l’Analyseur de test de charge** des tables Tests, Transactions et Pages.
 
-Vous avez deux possibilités pour activer la propriété **Stockage des détails de minuterie** dans les propriétés des paramètres d’exécution : **StatisticsOnly** et **AllIndividualDetails**. Quelle que soit l’option choisie, tous les tests, pages et transactions individuels sont chronométrés et les données de centile sont calculées à partir des données de temporisation individuelles. La différence est qu’avec l’option **StatisticsOnly**, les données de minutage individuelles sont supprimées du référentiel dès que les données de centile ont été calculées. Cela réduit la capacité d'espace requise dans le référentiel lorsque vous utilisez des détails de minuterie. Toutefois, les utilisateurs expérimentés peuvent traiter les données des détails de minuterie d'une autre façon, en utilisant des outils SQL. Si c’est le cas, l’option **AllIndividualDetails** doit être utilisée afin que les données des détails de minutage soient disponibles pour ce traitement. Par ailleurs, si vous affectez la valeur **AllIndividualDetails** à la propriété, vous pourrez analyser l’activité des utilisateurs virtuels dans le graphique **Activité des utilisateurs virtuels** de **l’Analyseur de test de charge** à l’issue de l’exécution du test de charge. Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Vous avez deux possibilités pour activer la propriété **Stockage des détails de minuterie** dans les propriétés des paramètres d’exécution : **StatisticsOnly** et **AllIndividualDetails**. Quelle que soit l'option choisie, tous les tests, pages et transactions individuels sont chronométrés et les données de centile sont calculées à partir des données de temporisation individuelles. La différence est qu’avec l’option **StatisticsOnly**, les données de minutage individuelles sont supprimées du référentiel dès que les données de centile ont été calculées. Cela réduit la capacité d'espace requise dans le référentiel lorsque vous utilisez des détails de minuterie. Toutefois, les utilisateurs expérimentés peuvent traiter les données des détails de minuterie d'une autre façon, en utilisant des outils SQL. Si c’est le cas, l’option **AllIndividualDetails** doit être utilisée afin que les données des détails de minutage soient disponibles pour ce traitement. Par ailleurs, si vous affectez la valeur **AllIndividualDetails** à la propriété, vous pourrez analyser l’activité des utilisateurs virtuels dans le graphique **Activité des utilisateurs virtuels** de **l’Analyseur de test de charge** à l’issue de l’exécution du test de charge. Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-La capacité d'espace requise dans le référentiel des résultats du test de charge pour stocker les détails de minuterie pouvait être très élevée, en particulier pour les longs tests de charge. En outre, le temps nécessaire pour stocker ces données dans le référentiel des résultats du test de charge à la fin du test de charge est plus long, étant donné que ces données sont stockées sur les agents de test de charge jusqu'à la fin de l'exécution du test de charge. Lorsque le test de charge est terminé, les données sont stockées dans le référentiel. Par défaut, la propriété **Stockage des détails de minuterie** est activée. Si cela pose un problème pour votre environnement de test, vous pouvez affecter la valeur **Aucun** à la propriété **Stockage des détails de minuterie**.
+La capacité d'espace requise dans le référentiel des résultats du test de charge pour stocker les détails de minuterie pouvait être très élevée, en particulier pour les longs tests de charge. En outre, le temps nécessaire pour stocker ces données dans le référentiel des résultats du test de charge à la fin du test de charge est plus long, étant donné que ces données sont stockées sur les agents de test de charge jusqu’à la fin de l’exécution du test de charge. Lorsque le test de charge est terminé, les données sont stockées dans le référentiel. Par défaut, la propriété **Stockage des détails de minuterie** est activée. Si cela pose un problème pour votre environnement de test, vous pouvez affecter la valeur **Aucun** à la propriété **Stockage des détails de minuterie**.
 
 Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Pour afficher un compteur de performance particulier sur un graphique de test de charge
 
-1.  Une fois que l’exécution d’un test de charge est terminée, ou après avoir chargé un résultat de test, dans la barre d’outils de l’Analyseur de test de charge, choisissez **Graphiques**.
+1. Une fois que l’exécution d’un test de charge est terminée, ou après avoir chargé un résultat de test, dans la barre d’outils de l’Analyseur de test de charge, choisissez **Graphiques**.
 
      Le volet **Compteurs** s’affiche dans la vue Graphiques.
 
     > [!NOTE]
     > Si le volet **Compteurs** n’est pas visible, choisissez **Afficher le volet Compteurs** dans la barre d’outils.
 
-2.  Dans le volet **Compteurs**, développez les nœuds de la hiérarchie jusqu’au compteur de performances que vous souhaitez afficher sous forme graphique.
+2. Dans le volet **Compteurs**, développez les nœuds de la hiérarchie jusqu’au compteur de performances que vous souhaitez afficher sous forme graphique.
 
      Par exemple, afficher la mémoire disponible sur l’ordinateur où les tests s’exécutent, développez **Ordinateurs**, développez le nœud correspondant à l’ordinateur, puis développez **Mémoire**. Le compteur **Mégaoctets disponibles** s’affiche.
 
-3.  Choisissez le graphique sur lequel vous souhaitez afficher le compteur de performance.
+3. Choisissez le graphique sur lequel vous souhaitez afficher le compteur de performance.
 
-4.  Cliquez avec le bouton droit sur un compteur de performance du volet **Compteurs** et sélectionnez **Afficher le compteur sur le graphique**.
+4. Cliquez avec le bouton droit sur un compteur de performance du volet **Compteurs** et sélectionnez **Afficher le compteur sur le graphique**.
 
     > [!TIP]
     > Pour interrompre temporairement l'affichage des données du compteur de performance sur le graphique, désactivez la case à cocher du compteur de performance dans la légende. Les statistiques min, max et moy. et statistiques sont toujours analysées, mais la ligne de tendance n'est pas affichée sur le graphique. Cela peut être utile si le graphique contient plusieurs tracés des compteurs de performance qui se chevauchent pendant que vous analysez les problèmes. Pour plus d’informations, voir [Utiliser la légende de la vue Graphiques pour analyser des tests de charge](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Pour supprimer les données du compteur de performance dans le graphique, cliquez avec le bouton droit sur le compteur de performance dans la colonne **Compteur** de la légende et sélectionnez **Supprimer**.
+5. Pour supprimer les données du compteur de performance dans le graphique, cliquez avec le bouton droit sur le compteur de performance dans la colonne **Compteur** de la légende et sélectionnez **Supprimer**.
 
      \- ou -
 

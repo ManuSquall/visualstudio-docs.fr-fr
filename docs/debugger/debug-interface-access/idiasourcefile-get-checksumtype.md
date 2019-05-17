@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832279"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Récupère le type de somme de contrôle.
@@ -38,7 +38,7 @@ HRESULT get_checksumType ( 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le type de somme de contrôle est une valeur qui peut être mappée à un algorithme de somme de contrôle. Par exemple, le format de fichier PDB standard généralement peut avoir une des valeurs suivantes :
 
 |Type de somme de contrôle|Étiquette de CryptoAPI|Description|

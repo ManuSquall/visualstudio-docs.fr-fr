@@ -17,12 +17,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9967b0cb47bd397b7b0fa752eb2fff2518865b14
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433406"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ namespace Fabrikam.FirstJob
  Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Le terme *modèle* est parfois utilisé pour décrire les données lues par un ou plusieurs modèles. Le modèle peut se présenter sous n’importe quel format, dans tout type de fichier ou de base de données. Il n’est pas tenu d’être un modèle UML ni un modèle de langage spécifique à un domaine. Le terme « modèle » indique seulement que les données peuvent être définies en termes de concepts d’entreprise, plutôt que de ressembler au code.  
+> Le terme *modèle* est parfois utilisé pour décrire les données lues par un ou plusieurs modèles. Le modèle peut se présenter sous n’importe quel format, dans tout type de fichier ou de base de données. Il n’est pas tenu d’être un modèle UML ni un modèle de langage spécifique à un domaine. Le terme « modèle » indique seulement que les données peuvent être définies en termes de concepts d’entreprise, plutôt que de ressembler au code.  
   
  La fonctionnalité de transformation de modèle de texte est appelée *T4*.  
   

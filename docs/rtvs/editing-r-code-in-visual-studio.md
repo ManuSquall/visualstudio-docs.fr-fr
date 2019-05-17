@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938767"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 

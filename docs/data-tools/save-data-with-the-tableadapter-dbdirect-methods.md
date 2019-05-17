@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567570"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 

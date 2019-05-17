@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acfb3a5c88ba730960ac0f90a7b9263c2d02a204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 931c753239345950f3a7db178a87007eab4da289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440897"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
+# <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0023 |  
@@ -42,7 +42,7 @@ ID de règle | DA0023 |
  Cette règle se déclenche lorsque le temps consacré au garbage collection est très important, par rapport au temps total de traitement de l’application.  
   
 > [!NOTE]
->  Lorsque le temps consacré au garbage collection est excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0024 : Temps CPU GC excessif](../profiling/da0024-excessive-gc-cpu-time.md) est déclenché à la place de cette règle.  
+> Quand le temps consacré au garbage collection est excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0024 : Temps CPU GC excessif](../profiling/da0024-excessive-gc-cpu-time.md) est déclenché à la place de cette règle.  
   
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Marques](../profiling/marks-view.md) des données de profilage. Accédez à la colonne **Mémoire CLR .NET\\% temps dans le GC**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la surcharge du garbage collection de mémoire managée est plus importante. Comparez les valeurs de la colonne % temps dans le GC au taux du garbage collection des colonnes **Nombre de collections de la génération 0**, **Nombre de collections de la génération 1** et **Nombre de collections de la génération 2**.  

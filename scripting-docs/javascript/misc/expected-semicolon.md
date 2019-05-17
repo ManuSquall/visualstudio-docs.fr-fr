@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433719"
 ---
 # <a name="expected-"></a>';' attendu
 Vous avez tenté de placer plusieurs instructions sur une ligne, mais s’est pas séparez-les par des points-virgules. Des points-virgules servent à terminer les instructions. Bien que vous pouvez placer plusieurs instructions sur une seule ligne, chacun d’eux doit être délimité de la suivante par un point-virgule.  

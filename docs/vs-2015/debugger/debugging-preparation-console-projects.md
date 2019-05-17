@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691215"
 ---
 # <a name="debugging-preparation-console-projects"></a>Débogage de la préparation : Projets console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : Windows Forms (.NET) d’Applications](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
+La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : Windows Forms (.NET) d’Applications](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
   
 - Application console C#  
   

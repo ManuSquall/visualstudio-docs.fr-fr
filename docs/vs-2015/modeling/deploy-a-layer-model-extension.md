@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a58adf1be92655a6ca7846e8c1d7ea41515b7109
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422661"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Déployer une extension de modèle de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ D'autres utilisateurs de Visual Studio peuvent installer des extensions de modé
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
-        >  %LocalAppData% est généralement *nom_lecteur*: utilisateurs*nom d’utilisateur*AppDataLocal.  
+        > %LocalAppData% est généralement *nom_lecteur*: utilisateurs*nom d’utilisateur*AppDataLocal.  
   
 2. Développez chaque fichier VSIX dans un dossier au même emplacement :  
   

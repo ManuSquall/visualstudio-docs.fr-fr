@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fb0d2b960c2bafd1a2d502e41c8a435a5205d11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05f5987037e63c3c81585ba51deed72f06fd3278
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687482"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461082"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Initialise les données source pour cet objet et retourne un objet contenant les données initiales.
@@ -36,8 +39,8 @@ int InitSourceDataProvider(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dataOut`
+## <a name="parameters"></a>Paramètres
+ `dataOut`\
 
  [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet
 

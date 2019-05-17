@@ -1,5 +1,5 @@
 ---
-title: 'Bien démarrer avec PTVS : modification du Code | Microsoft Docs'
+title: 'Bien démarrer avec PTVS : Édition du code | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550910"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Prise en main des outils Python pour Visual Studio : édition du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ from math import sin
   
 ```  
   
- Lors du codage, si vous utilisez un identificateur qui n'est pas lié, mais qui se trouve dans vos bibliothèques, les outils Python pour Visual Studio offrent une correction rapide contextuelle pour ajouter l'instruction d'importation dont vous avez besoin.  Par exemple, si vous avez tapé `cos`, vous voyez **importer à partir de mathématiques** proposés.  
+ Lors du codage, si vous utilisez un identificateur qui n'est pas lié, mais qui se trouve dans vos bibliothèques, les outils Python pour Visual Studio offrent une correction rapide contextuelle pour ajouter l'instruction d'importation dont vous avez besoin.  Par exemple, si vous avez tapé `cos`, **import from match** vous est proposé.  
   
  Vous pouvez utiliser un extrait de code pour générer du code.  Dans le menu Edition, cliquez sur IntelliSense, puis sur Insérer un extrait.  Choisissez maintenant Python, puis def.  Appelez la fonction `make_dot_string` et ajoutez un paramètre `x`.  Vous pouvez maintenant ajouter des assertions dans le fichier pour le développement axé sur des tests : vous voyez que les outils Python pour Visual Studio peuvent déjà proposer la nouvelle fonction dans les listes de saisie semi-automatique.  
   

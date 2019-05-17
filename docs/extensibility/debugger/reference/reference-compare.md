@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 947063690840dfb3c49e2c41e6178cbc67dc714b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707716"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457901"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Spécifie le type de comparaison des références.
@@ -41,17 +44,20 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>Membres
- REF_COMPARE_EQUAL spécifie une comparaison égal à.
+## <a name="fields"></a>Champs
+ `REF_COMPARE_EQUAL`\
+ Spécifie une comparaison égal à.
 
- REF_COMPARE_LESS_THAN spécifie un inférieur-que la comparaison.
+ `REF_COMPARE_LESS_THAN`\
+ Spécifie un inférieur-que la comparaison.
 
- REF_COMPARE_GREATER_THAN spécifie un signe supérieur-que la comparaison.
+ `REF_COMPARE_GREATER_THAN`\
+ Spécifie un signe supérieur-que la comparaison.
 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [comparer](../../../extensibility/debugger/reference/idebugreference2-compare.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

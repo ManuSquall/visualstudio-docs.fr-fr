@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438995"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projets et modèles d’élément de projet SharePoint
   Les sections suivantes décrivent le projet SharePoint et l’élément de projet modèles et comment elles sont utilisées.
@@ -80,7 +80,7 @@ ms.locfileid: "60040336"
  *Type de contenu* éléments vous permettent de créer des types de contenu personnalisés basés sur un type de contenu (base) existant comme un document, une annonce ou une tâche. Un type de contenu personnalisé fournit les mêmes attributs et champs comme type de contenu de base avec des colonnes de site (champs) que vous définissez. Par exemple, vous pouvez créer un type de contenu personnalisé de Contact qui est basé sur le type de contenu Contact base qui est fourni dans SharePoint. Vous pouvez personnaliser le type de contenu en modifiant les colonnes de site existant ou en ajoutant plus de colonnes de site à celles déjà inclus dans le type de contenu de base.
 
 > [!NOTE]
->  Impossible de créer un type de contenu solution batterie de serveurs basé sur un type de contenu de solution bac à sable en raison d’une limitation de SharePoint.
+> Impossible de créer un type de contenu solution batterie de serveurs basé sur un type de contenu de solution bac à sable en raison d’une limitation de SharePoint.
 
  Pour plus d’informations, consultez [Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) et [bloc de construction : Type de contenu](http://go.microsoft.com/fwlink/?LinkId=179413).
 

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9811963b6130c3b0c144feee928de915a4bd9ba9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697009"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Procédure : démarrage du débogage XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une applicat
  Vous pouvez également exécuter un pas à pas détaillé de XSLT pendant le débogage d'une application. Si vous appuyez sur F11 lors d'un appel à la méthode <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, le débogueur peut exécuter un pas à pas détaillé du code XSLT.  
   
 > [!NOTE]
->  L'exécution d'un pas à pas détaillé de XSLT à partir de la classe <xref:System.Xml.Xsl.XslTransform> n'est pas prise en charge. La classe <xref:System.Xml.Xsl.XslCompiledTransform> est le seul processeur XSLT prenant en charge l'exécution d'un pas à pas détaillé du code XSLT pendant le débogage.  
+> L'exécution d'un pas à pas détaillé de XSLT à partir de la classe <xref:System.Xml.Xsl.XslTransform> n'est pas prise en charge. La classe <xref:System.Xml.Xsl.XslCompiledTransform> est le seul processeur XSLT prenant en charge l'exécution d'un pas à pas détaillé du code XSLT pendant le débogage.  
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Pour commencer le débogage d'une application XSLT  
   
@@ -89,4 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Vue d’ensemble du débogage de code](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+ [Vue d’ensemble du débogage de code](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

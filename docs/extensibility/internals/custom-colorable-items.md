@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415184"
 ---
 # <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
 Vous pouvez remplacer la liste des types pour la colorisation, telles que les mots clés et des commentaires, en implémentant des éléments coloriables personnalisés dans le cadre de votre service de langage.
@@ -28,11 +28,11 @@ Vous pouvez remplacer la liste des types pour la colorisation, telles que les mo
  Étant donné que l’IDE gère les substitutions d’utilisateur d’éléments coloriables dans les **polices et couleurs** boîte de dialogue, vous devez uniquement fournir chaque élément coloriable personnalisé avec un nom. Ce nom est ce qui apparaît dans le **afficher les éléments** liste. Les éléments coloriables s’affichent dans l’ordre alphabétique. Pour regrouper des éléments coloriables personnalisés de votre service de langage, vous pouvez commencer chaque nom avec votre nom de la langue, par exemple **NewLanguage - commentaire** et **NewLanguage - mot clé**.
 
 > [!CAUTION]
->  Vous devez inclure le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants. Si vous modifiez le nom d’un de vos éléments coloriables pendant le développement, vous devez réinitialiser le cache a été créé à la première fois que vos éléments coloriables ont eu accès. Vous pouvez réinitialiser le cache expérimental avec le **CreateExpInstance** outil, qui est installé avec le SDK de Visual Studio, généralement dans le répertoire :
+> Vous devez inclure le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants. Si vous modifiez le nom d’un de vos éléments coloriables pendant le développement, vous devez réinitialiser le cache a été créé à la première fois que vos éléments coloriables ont eu accès. Vous pouvez réinitialiser le cache expérimental avec le **CreateExpInstance** outil, qui est installé avec le SDK de Visual Studio, généralement dans le répertoire :
 >
->  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Pour réinitialiser le cache, entrez **CreateExpInstance /Reset**. Pour plus d’informations sur **CreateExpInstance**, consultez [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md).
+> Pour réinitialiser le cache, entrez **CreateExpInstance /Reset**. Pour plus d’informations sur **CreateExpInstance**, consultez [CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md).
 
  Le premier élément dans votre liste d’éléments coloriables n’est jamais référencé. Le premier élément correspond à un index de l’élément coloriable égale à 0, et [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit toujours les couleurs de texte par défaut et les attributs de cet élément. Gestion de cet élément non référencé, le plus simple consiste à fournir un élément coloriable espace réservé comme le premier élément dans la liste.
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075348"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678927"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.
@@ -112,7 +112,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
      Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.
 
     > [!NOTE]
-    >  Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.
+    > Vous pouvez également cliquer sur n’importe quelle ligne de code, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.
 
 2. Dans le menu **Déboguer**, choisissez **Démarrer**.
 
@@ -165,23 +165,24 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Sur le **déboguer** menu, sélectionnez **démarrer sans débogage**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Le Windows Form s’exécute sous Windows, comme si vous aviez double-cliqué sur son exécutable. Le débogueur n’est pas attaché.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Sur le **déboguer** menu, sélectionnez **attacher au processus**. (Cette commande est également disponible sur le **outils** menu.)
 
-     The **Attach to Process** dialog box appears.
+     La boîte de dialogue **Attacher au processus** s'affiche.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. Dans le **processus disponibles** volet, recherchez le nom du processus (Walkthrough_SimpleDebug.exe) dans le **processus** colonne et cliquez dessus.
 
-5. Click the **Attach** button.
+5. Cliquez sur le **attacher** bouton.
 
-6. In your Windows Form, click the one and only button.
+6. Dans votre formulaire Windows, cliquez sur le seul et unique bouton.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Le débogueur interrompt l’exécution de l’écran de Windows sur le point d’arrêt.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Voir aussi
+- [Débogage du code managé](../debugger/debugging-managed-code.md)
+- [Sécurité du débogueur](../debugger/debugger-security.md)

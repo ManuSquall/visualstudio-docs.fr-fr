@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419286"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procédure : Stocker et récupérer des valeurs de date dans des plages Excel par programmation
   Vous pouvez stocker et récupérer des valeurs dans un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
@@ -34,7 +34,7 @@ ms.locfileid: "60082904"
  Si vous stockez une valeur de date qui se situe sur ou après le 1/1/1900 dans une plage à l’aide des outils de développement Office dans Visual Studio, il est stocké au format OLE Automation (OA). Vous devez utiliser le <xref:System.DateTime.FromOADate%2A> méthode pour récupérer la valeur de dates de OLE Automation (OA). Si la date est antérieure à 1/1/1900, il est stocké sous forme de chaîne.
 
 > [!NOTE]
->  Les dates Excel diffèrent des dates OLE Automation pour les deux premiers mois de 1900. Il existe également différences si la **système de dates 1904** option est activée. Les exemples de code ci-dessous ne traitent pas ces différences.
+> Les dates Excel diffèrent des dates OLE Automation pour les deux premiers mois de 1900. Il existe également différences si la **système de dates 1904** option est activée. Les exemples de code ci-dessous ne traitent pas ces différences.
 
 ## <a name="use-a-namedrange-control"></a>Utiliser un contrôle NamedRange
 

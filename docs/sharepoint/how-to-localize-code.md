@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443091"
 ---
 # <a name="how-to-localize-code"></a>Procédure : Localiser le code
   Code non localisé utilise des valeurs de chaîne codées en dur. Pour localiser les chaînes de code, remplacez-les par des appels à <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, qui est une méthode qui fait référence à des ressources localisées.
@@ -32,7 +32,7 @@ ms.locfileid: "60066284"
      Choisissez le **fichier de ressources** modèle.
 
     > [!NOTE]
-    >  Veillez à ajouter le fichier de ressources à un élément de projet SharePoint afin que la propriété Type de déploiement est disponible. Cette propriété est requise plus loin dans cette procédure.
+    > Veillez à ajouter le fichier de ressources à un élément de projet SharePoint afin que la propriété Type de déploiement est disponible. Cette propriété est requise plus loin dans cette procédure.
 
 2. Nommez le fichier de ressources de langue par défaut de votre choix, avec un *.resx* extension, tel que *exemple MyAppResources.resx*.
 

@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704463"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procédure : déboguer un contrôle ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exécutable) à utiliser pour l'exécution du contrôle.  
   
@@ -59,7 +59,7 @@ REMARQUE]
      Si vous ne spécifiez pas un conteneur dans la boîte de dialogue **Pages de propriétés de projet**, vous pouvez spécifier le conteneur quand vous commencez à déboguer. Quand vous sélectionnez une commande d’exécution pour commencer le débogage, la [boîte de dialogue Exécutable pour la session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche. Spécifiez le nom de chemin du conteneur dans la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôles ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Test des propriétés et des événements avec le conteneur de Test](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [Contrôles ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [Test des propriétés et des événements avec le conteneur de Test](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

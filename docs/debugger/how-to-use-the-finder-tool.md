@@ -1,5 +1,5 @@
 ---
-title: 'Comment : utiliser l’outil recherche | Microsoft Docs'
+title: 'Procédure : Utiliser l’outil recherche | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387655"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
+# <a name="how-to-use-the-finder-tool"></a>Procédure : Utiliser l’outil de recherche
 Vous pouvez utiliser l’outil de recherche dans les **rechercher une fenêtre** boîte de dialogue pour afficher la fenêtre Propriétés ou des messages. L’outil recherche peut également rechercher des fenêtres enfants désactivées et discerner fenêtre pour mettre en surbrillance si désactivées fenêtres enfants se chevauchent.
 
  ![Spy&#43; &#43; boîte de dialogue Rechercher une fenêtre](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find") outil de recherche dans la boîte de dialogue Rechercher une fenêtre
@@ -41,7 +41,7 @@ Vous pouvez utiliser l’outil de recherche dans les **rechercher une fenêtre**
      Si vous avez le handle de la fenêtre que vous souhaitez examiner (par exemple, copié à partir du débogueur), tapez-le dans la **gérer** zone de texte.
 
    > [!TIP]
-   >  Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.
+   > Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.
 
 4. Sous **afficher**, sélectionnez **propriétés** ou **Messages**.
 

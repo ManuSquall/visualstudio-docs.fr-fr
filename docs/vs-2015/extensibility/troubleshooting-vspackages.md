@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060499"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695503"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
 4. Ouvrez le **sortie** fenêtre de l’instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui ne peut pas charger le VSPackage. Plus d’informations sur la raison pour laquelle le VSPackage ne peut pas charger peuvent être affichés dans cette fenêtre.  
   
     > [!NOTE]
-    >  Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.  
+    > Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.  
   
 5. Examinez le journal d’activité.  
   
@@ -87,7 +87,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
     4. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** ou appuyez sur F5.  
   
         > [!NOTE]
-        >  Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.  
+        > Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.  
   
 2. Utiliser le journal d’activité.  
   
@@ -117,7 +117,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
   
    2. Sélectionnez le **références** onglet dans le **Pages de propriétés** boîte de dialogue et assurez-vous que tous les chemins d’accès sont corrects. Vous pouvez également utiliser le **Explorateur d’objets** pour rechercher les objets référencés.  
   
-        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
+        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
   
 2. Du code non managé, rechercher le CLSID du VSPackage dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nœud de Registre CLSID :  
   

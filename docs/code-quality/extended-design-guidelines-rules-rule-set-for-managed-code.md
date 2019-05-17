@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816609"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les problèmes de facilité d’utilisation et la facilité de gestion qui sont signalés. Accentuation supplémentaire est placée sur les règles de dénomination. Vous devez envisager d’y compris cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les normes la plus élevées pour l’écriture de code qui est facile à gérer.

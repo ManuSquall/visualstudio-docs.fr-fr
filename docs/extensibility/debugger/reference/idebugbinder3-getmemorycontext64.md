@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 48c4bde703584a57baac8040d9c5176f942300db
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713865"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614767"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Convertit une adresse mémoire de 64 bits ou un emplacement de l’objet à un contexte de la mémoire.
@@ -39,18 +42,15 @@ int GetMemoryContext64 (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pField`
+## <a name="parameters"></a>Paramètres
+`pField`\
+[in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit l’objet à localiser. Si `NULL`, puis utilisez `dwConstant` à la place.
 
- [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit l’objet à localiser. Si `NULL`, puis utilisez `dwConstant` à la place.
+`uConstant`\
+[in] Une adresse mémoire de 64 bits, tels que 0x50000000.
 
-`uConstant`
-
- [in] Une adresse mémoire de 64 bits, tels que 0x50000000.
-
-`ppMemCxt`
-
- [out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.
+`ppMemCxt`\
+[out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface qui représente l’adresse de l’objet ou l’adresse en mémoire.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

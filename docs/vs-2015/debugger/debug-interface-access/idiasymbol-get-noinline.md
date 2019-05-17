@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a255b6529a655f59d244d2f02696977190359cca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e6ee1e21b46e1906b4872e9598e75ac283b013ac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698454"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si la fonction a été marquée comme n’étant ne pas inline (à l’aide de la [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribut).  
+Récupère un indicateur qui spécifie si la fonction a été marquée comme n’étant ne pas inline (à l’aide de la [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribut).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ HRESULT get_noInline(
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="requirements"></a>Configuration requise  
   
@@ -52,4 +52,4 @@ HRESULT get_noInline(
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)
+ [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42)

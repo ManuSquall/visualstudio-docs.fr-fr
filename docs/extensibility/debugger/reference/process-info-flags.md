@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55157ab9a045b404175369e9682c525929f5e624
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696517"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460828"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Membres
+## <a name="fields"></a>Champs
 
-PIFLAG_SYSTEM_PROCESS indique que le processus est un processus système.
+`PIFLAG_SYSTEM_PROCESS`\
+Indique que le processus est un processus système.
 
-PIFLAG_DEBUGGER_ATTACHED indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur, ou il peut être certains autres débogueur, par exemple WinDbg.
+`PIFLAG_DEBUGGER_ATTACHED`\
+Indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur, ou il peut être certains autres débogueur, par exemple WinDbg.
 
-PIFLAG_PROCESS_STOPPED indique que le processus est arrêté. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
+`PIFLAG_PROCESS_STOPPED`\
+Indique que le processus est arrêté. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
 
-PIFLAG_PROCESS_RUNNING indique que le processus est en cours d’exécution. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
+`PIFLAG_PROCESS_RUNNING`\
+Indique que le processus est en cours d’exécution. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
 
 ## <a name="remarks"></a>Notes
 
@@ -59,7 +66,7 @@ Utilisé pour le `Flags` membre de la [PROCESS_INFO](../../../extensibility/debu
 
 Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : msdbg.h
 

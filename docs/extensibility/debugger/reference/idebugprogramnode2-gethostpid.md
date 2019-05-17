@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 932691781398d4e7c7983248b26f4828975ad03c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03ac1d4f979c6b6ce504160216d42f055820d69c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701587"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457810"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Obtient l’identificateur de processus système pour le processus qui héberge le programme.
@@ -36,8 +39,8 @@ int GetHostPid ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwHostPid`
+## <a name="parameters"></a>Paramètres
+ `pdwHostPid`\
 
  [out] Retourne l’identificateur de processus système pour le processus d’hébergement.
 

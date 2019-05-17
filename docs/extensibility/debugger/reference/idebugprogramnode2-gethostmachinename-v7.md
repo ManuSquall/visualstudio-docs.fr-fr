@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b40d3350fb348afb654ae09785eb0956fb950bb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09919ed73afc9115feffd1f828e9e8d14d1eae79
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689069"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457796"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -38,9 +41,9 @@ int GetHostMachineName_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Paramètres
 
-`pbstrHostMachineName`
+`pbstrHostMachineName`\
 
  [out] Retourne le nom de l’ordinateur dans lequel le programme est en cours d’exécution.
 

@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695476"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Un marqueur de texte est une plage flottante de texte dans une mémoire tampon q
  En raison de la surcharge de performances associée aux marqueurs de texte, ne créez pas plusieurs marqueurs pour vos tampons de texte. Chaque marqueur est mis à jour chaque fois qu’un utilisateur modifie le contenu de la mémoire tampon.  
   
 > [!NOTE]
->  Les utilisateurs peuvent modifier la couleur d’un type de marqueur visible mais pas sa forme et son style. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Les utilisateurs peuvent modifier la couleur d’un type de marqueur visible mais pas sa forme et son style. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal pour un affichage de texte.|  
-|[Guide pratique pour Implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
-|[Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
-|[Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
+|[Guide pratique pour ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal pour un affichage de texte.|  
+|[Guide pratique pour implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
+|[Guide pratique pour créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
+|[Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
 |[Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)|Décrit les fonctionnalités de l’éditeur principal et fournit des détails sur la personnalisation de l’éditeur principal.|  
-|[Fonctionnalités de l’éditeur](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal.|  
+|[Fonctionnalités de l’éditeur](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal.|  
   
 ## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

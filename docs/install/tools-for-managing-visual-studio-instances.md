@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935410"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -44,6 +44,7 @@ De plus, l’[API de configuration de l’installation](<xref:Microsoft.VisualSt
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,12 +65,13 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 1. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
 
 1. Dans le menu principal de Regedit, sélectionnez **Fichier** > **Charger la ruche...**, puis sélectionnez le fichier du Registre privé, qui est stocké dans le dossier **AppData\Local**. Par exemple :
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
    > [!NOTE]
-   > `<config>` correspond à l’instance de Visual Studio à parcourir.
+   > `<config>` correspond à l’instance de Visual Studio que vous souhaitez parcourir.
 
 Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche isolée. Après cela, vous devez être en mesure de parcourir le Registre sous la ruche isolée que vous avez créée.
 
@@ -80,4 +82,4 @@ Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Guide de l’administrateur de Visual Studio](visual-studio-administrator-guide.md)
+* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)

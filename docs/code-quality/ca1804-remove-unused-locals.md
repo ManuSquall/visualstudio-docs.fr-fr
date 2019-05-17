@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545749"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804 : Supprimez les variables locales inutilisées
 
@@ -40,7 +40,7 @@ ms.locfileid: "55908528"
  Les variables locales inutilisées et les assignations inutiles augmentent la taille d'un assembly et font baisser les performances.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le compilateur C# qui est inclus avec [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] supprime les variables locales inutilisées lorsque le `optimize` est activée.
+ Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le compilateur c# qui est inclus avec [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] supprime les variables locales inutilisées lorsque le `optimize` est activée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle si la variable a été émise par un compilateur. Il est également recommandé de supprimer un avertissement de cette règle, ou pour désactiver la règle, si les performances et maintenance du code ne sont pas des préoccupations.

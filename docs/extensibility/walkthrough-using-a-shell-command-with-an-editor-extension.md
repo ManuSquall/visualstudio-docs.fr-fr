@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444920"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procédure pas à pas : Utiliser une invite de commandes avec une extension de l’éditeur
 À partir d’un VSPackage, vous pouvez ajouter des fonctionnalités telles que les commandes de menu à l’éditeur. Cette procédure pas à pas montre comment ajouter un ornement à un affichage de texte dans l’éditeur en appelant une commande de menu.
@@ -52,7 +52,7 @@ ms.locfileid: "60088481"
  Étant donné que vous ajoutez un composant MEF pour le VSPackage, vous devez spécifier les deux types de ressources dans le manifeste.
 
 > [!NOTE]
->  Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Pour faire référence au composant MEF dans le projet VSPackage
 

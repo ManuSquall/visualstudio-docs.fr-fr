@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432001"
 ---
 # <a name="pf"></a>PF
 L’option **PF** de *VSPerfCmd.exe* définit l’événement de profilage qui est échantillonné lors des défauts de page. Elle peut changer le nombre de défauts de page dans un intervalle d’échantillonnage (la valeur par défaut est 10).
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser **PF** sur les systèmes 64 bits.
+> Vous ne pouvez pas utiliser **PF** sur les systèmes 64 bits.
 
 Vous pouvez utiliser **PF** seulement sur une ligne de commande qui contient aussi l’option **Launch** ou **Attach**.
 

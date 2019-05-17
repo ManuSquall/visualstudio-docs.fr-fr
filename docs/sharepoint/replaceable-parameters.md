@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422917"
 ---
 # <a name="replaceable-parameters"></a>Paramètres remplaçables
   Paramètres remplaçables, ou *jetons*, peut être utilisé à l’intérieur des fichiers projet pour fournir des valeurs pour les éléments de solution SharePoint dont les valeurs réelles ne sont pas connues au moment du design. Ils sont similaires à celui de la norme [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jetons de modèle. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).
@@ -48,7 +48,7 @@ ms.locfileid: "56611865"
 ## <a name="tokens-list"></a>Liste des jetons
  Le tableau suivant répertorie les jetons disponibles.
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |$SharePoint.Project.FileName$|Le nom du conteneur de projet fichier, tel que *NouvProj.csproj*.|
 |$SharePoint.Project.FileNameWithoutExtension$|Le nom du fichier projet contenant sans l’extension de nom de fichier. Par exemple, « NewProj ».|
@@ -86,7 +86,7 @@ ms.locfileid: "56611865"
   Vous pouvez, toutefois, ajouter des extensions de fichiers supplémentaires à la liste. Ajouter un `<TokenReplacementFileExtensions>` élément à n’importe quel élément PropertyGroup dans le fichier de projet SharePoint qui est défini avant le \<importation > du fichier de cibles SharePoint.
 
 > [!NOTE]
->  Étant donné que le remplacement des jetons se produit après la compilation d’un projet, n’ajoutez pas les extensions de fichier pour les types de fichiers qui sont compilés, tels que *.cs*, *.vb* ou *.resx*. Les jetons sont remplacés uniquement dans les fichiers qui ne sont pas compilées.
+> Étant donné que le remplacement des jetons se produit après la compilation d’un projet, n’ajoutez pas les extensions de fichier pour les types de fichiers qui sont compilés, tels que *.cs*, *.vb* ou *.resx*. Les jetons sont remplacés uniquement dans les fichiers qui ne sont pas compilées.
 
  Par exemple, pour ajouter les extensions de nom de fichier (*.myextension* et *.yourextension*) à la liste des extensions de nom de fichier de remplacement des jetons, vous devez ajouter le code suivant à un projet (*.csproj* ) fichier :
 

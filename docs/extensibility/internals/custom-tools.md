@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910149"
 ---
 # <a name="custom-tools"></a>Outils personnalisés
 *Outils personnalisés* vous permettent d’associer un outil à un élément dans un projet et d’exécuter cet outil chaque fois que le fichier est enregistré. Certains des outils personnalisés, parfois appelé *générateurs de fichier unique*, sont fréquemment utilisées pour implémenter des traducteurs qui génèrent du code à partir des données et vice versa. Par exemple, créent des générateurs de fichier unique [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] source code hors de la *.settings* et *.resx* fichiers. Le code source généré fournit l’accès fortement typé aux données dans le *.settings* et *.resx* fichiers. Le [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] types de projets prend en charge des outils personnalisés ; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] n’est pas le cas des types de projets. Vos propres types de projet peuvent prendre également en charge des outils personnalisés.

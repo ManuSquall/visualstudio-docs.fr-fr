@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694476"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460724"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Décrit les propriétés d’un thread.
@@ -49,24 +52,31 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Membres
- dwFields une combinaison d’indicateurs à partir de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) énumération, décrivant les champs de cette structure sont valides.
+ `dwFields`\
+ Une combinaison d’indicateurs de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) énumération, décrivant les champs de cette structure sont valides.
 
- dwThreadId l’ID de thread.
+ `dwThreadId`\
+ L’ID de thread.
 
- compteur de suspension dwSuspendCount le thread.
+ `dwSuspendCount`\
+ Compteur de suspension du thread.
 
- valeur dwThreadState A à partir de la [des États du thread](../../../extensibility/debugger/reference/threadstate.md) énumération indiquant l’état du thread d’exploitation.
+ `dwThreadState`\
+ Une valeur comprise entre le [des États du thread](../../../extensibility/debugger/reference/threadstate.md) énumération indiquant l’état du thread d’exploitation.
 
- bstrPriority une chaîne qui spécifie la priorité de thread ; par exemple, « Ci-dessus Normal », « Normal » ou « Temps critiques ».
+ `bstrPriority`\
+ Une chaîne qui spécifie la priorité de thread ; par exemple, « Ci-dessus Normal », « Normal » ou « Temps critiques ».
 
- bstName le nom du thread.
+ `bstName`\
+ Le nom du thread.
 
- bstrLocation l’emplacement de thread (et généralement le frame de pile au premier plan), généralement exprimé sous la forme du nom de la méthode où l’exécution est actuellement interrompue.
+ `bstrLocation`\
+ L’emplacement de thread (et généralement le frame de pile au premier plan), généralement exprimé sous la forme du nom de la méthode où l’exécution est actuellement interrompue.
 
 ## <a name="remarks"></a>Notes
  Cette structure est remplie par un appel à la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) (méthode). Les informations retournées par conséquent, sont généralement utilisées dans remplissant la **Threads** fenêtre.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

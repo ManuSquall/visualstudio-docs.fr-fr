@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436490"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considérations de sécurité spécifiques pour les solutions Office
   Les fonctionnalités de sécurité fournies par Microsoft .NET Framework et Microsoft Office peuvent renforcer la protection contre diverses menaces possibles dans les solutions Office. Cette rubrique décrit certaines de ces menaces et fournit des recommandations pour vous protéger contre elles. Elle inclut également des informations sur l’impact des paramètres de sécurité Microsoft Office sur les solutions Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081318"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Si Outlook est utilisé avec Exchange, alors l’obtention de tous les objets Outlook à partir de `ThisAddIn.Application` ne garantit pas que votre complément VSTO est en mesure d’accéder à l’ensemble du modèle objet Outlook. Par exemple, si un administrateur Exchange configure Outlook automatiquement refuser toutes les tentatives d’accès aux adresses via le modèle objet Outlook, puis Outlook n’autorisera pas l’exemple de code précédent à accéder à la propriété, même si l’exemple de code utilise la confiance `ThisAddIn.Application` champ.
+> Si Outlook est utilisé avec Exchange, alors l’obtention de tous les objets Outlook à partir de `ThisAddIn.Application` ne garantit pas que votre complément VSTO est en mesure d’accéder à l’ensemble du modèle objet Outlook. Par exemple, si un administrateur Exchange configure Outlook automatiquement refuser toutes les tentatives d’accès aux adresses via le modèle objet Outlook, puis Outlook n’autorisera pas l’exemple de code précédent à accéder à la propriété, même si l’exemple de code utilise la confiance `ThisAddIn.Application` champ.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Spécifiez les compléments à approuver lors de l’utilisation d’Exchange
  Quand Outlook est utilisé avec Exchange, les administrateurs peuvent spécifier que certains compléments VSTO peuvent s’exécuter sans rencontrer le module de protection du modèle objet. Les compléments VSTO Outlook créés à l’aide de solutions Office dans Visual Studio ne peuvent pas être approuvés individuellement. Ils peuvent uniquement l’être en tant que groupe.

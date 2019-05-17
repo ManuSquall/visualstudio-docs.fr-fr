@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910395"
 ---
 # <a name="command-routing-algorithm"></a>Algorithme de routage de commande
 Dans Visual Studio, les commandes sont gérées par un nombre de différents composants. Commandes sont routées à partir du contexte plus profond, ce qui est basé sur la sélection actuelle, pour le contexte le plus extérieur (également appelé global). Pour plus d’informations, consultez [commande disponibilité](../../extensibility/internals/command-availability.md).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f626005621604d367f5878e36899aa2ff46114ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875241"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informe un moteur de débogage (dé) que le programme spécifié a été arrêté anormalement, et que l’Allemagne doit nettoyer toutes les références au programme et envoi d’un programme détruire des événements.

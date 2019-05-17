@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 206f13610b22253a3b711413721411a1ff075570
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 69ec18362f596633fa508f1f842db027e59a616b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701542"
 ---
 # <a name="properties-of-port-shapes"></a>Propriétés des formes de port
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Vous pouvez utiliser des formes de port pour représenter des classes de domaine
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du port (`none`, `abstract` ou `sealed`).|none|  
-|Port de base|La classe de base de cette forme.|(aucune)|  
+|Port de base|La classe de base de cette forme.|(aucun)|  
 |Nom|Le nom de cette forme.|Nom actuel|  
 |Espace de noms|L’espace de noms qui est affilié à cette forme.|Espace de noms actuel|  
 |Type d’outil de Conseil|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|none|  
@@ -58,4 +58,4 @@ Vous pouvez utiliser des formes de port pour représenter des classes de domaine
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cette forme.|\<aucune>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

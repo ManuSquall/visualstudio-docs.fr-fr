@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224177"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Détermine si le pointeur d’instruction en cours peut être défini pour le frame de pile donné.
@@ -38,10 +41,11 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pStackFrame` Réservé pour une utilisation ultérieure ; la valeur est une valeur null. S’il s’agit d’une valeur null, utilisez le frame de pile actuel.
+## <a name="parameters"></a>Paramètres
+ `pStackFrame`\
+ Réservé pour une utilisation ultérieure ; la valeur est une valeur null. S’il s’agit d’une valeur null, utilisez le frame de pile actuel.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui décrit l’emplacement du code sur le point d’être exécutée et son contexte.
 

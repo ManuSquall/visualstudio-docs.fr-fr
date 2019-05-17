@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694913"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 4. Pour améliorer les performances de chargement de symboles, tapez le chemin d'accès d'un répertoire local dans lequel les symboles peuvent être copiés par les serveurs de symboles dans la zone **Mettre en cache les symboles dans ce répertoire** d'un répertoire local dans lequel les symboles peuvent être copiés.
 
    > [!NOTE]
-   >  Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.
+   > Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.
 
    **Spécifier le comportement de chargement des symboles**
 
@@ -94,10 +94,10 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
    Lorsqu'elle est sélectionnée, cette option charge les tables d'exportation de DLL. Les informations symboliques de tables d'exportation de DLL peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute DLL pour laquelle vous n'avez pas de symbole. La lecture des informations d'exportation des DLL implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.
 
-   Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Utiliser des serveurs de symboles pour rechercher des fichiers de symboles qui ne sont pas sur votre ordinateur local
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) et les [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) et les [outils de débogage pour Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.
 
  Les serveurs de symboles que vous pouvez utiliser sont les suivants :
 
@@ -116,7 +116,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
  Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet. Vous entrez également l'URL de ces serveurs de symboles sur la page **Débogage**/**Symboles** ,
 
 > [!NOTE]
->  Si vous utilisez un serveur de symboles autre que les serveurs de symboles publics Microsoft, assurez-vous que ce serveur et son chemin d'accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous vous exposez à des menaces de sécurité.
+> Si vous utilisez un serveur de symboles autre que les serveurs de symboles publics Microsoft, assurez-vous que ce serveur et son chemin d'accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous vous exposez à des menaces de sécurité.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Rechercher et charger des symboles pendant le débogage
  Lorsque le débogueur est en mode arrêt, vous pouvez charger des symboles pour un module qui a été précédemment exclu par les options du débogueur ou que le compilateur n'a pas pu trouver. Vous pouvez charger les symboles à partir des menus contextuels des fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Si le débogueur s'arrête dans du code qui ne contient pas de fichiers sources ou de symboles disponibles, une fenêtre de document s'affiche. Vous trouverez des informations sur les fichiers manquants et pourrez prendre des mesures pour les localiser et les charger.
@@ -165,9 +165,9 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
  **Options C++**
 
- Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé lors de la génération à l'aide de [/ZI ou /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pour C/C++).
+ Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé lors de la génération à l'aide de [/ZI ou /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pour C/C++).
 
- Dans [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], l'option [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) permet de nommer le fichier .pdb créé par le compilateur. Quand vous créez un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des Assistants, l’option **/Fd** est définie pour créer un fichier .pdb nommé *projet*.pdb.
+ Dans [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], l'option [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) permet de nommer le fichier .pdb créé par le compilateur. Quand vous créez un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des Assistants, l’option **/Fd** est définie pour créer un fichier .pdb nommé *projet*.pdb.
 
  Si vous générez votre application C/C++ à l’aide d’un makefile et que vous spécifiez **/ZI** ou **/Zi** sans **/Fd**, vous obtenez finalement deux fichiers .pdb :
 
@@ -183,7 +183,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
   **Options du .NET Framework**
 
-  Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou si le chemin d'accès n'est pas valide, le débogueur recherche le chemin d'accès qui contient l'EXE, puis les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** . Ce chemin d'accès est en général le dossier **Débogage** du nœud **Symboles** . Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.
 
@@ -224,7 +224,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
  Lorsqu'il n'y a pas de code source sur l'ordinateur local ou si le fichier .pdb ne correspond pas au code source, le serveur source peut vous aider à déboguer une application. Il prend les demandes de fichiers et retourne les fichiers réels. Le serveur source s'exécute au moyen d'un fichier DLL nommé srcsrv.dll. Le serveur source lit le fichier .pdb de l'application, qui contient des pointeurs vers le référentiel de code source ainsi que des commandes utilisées pour extraire le code source du référentiel. Vous pouvez limiter les commandes dont vous autorisez l'exécution et appartenant au fichier .pdb de l'application en les répertoriant dans un fichier srcsrv.ini qui doit se trouver dans le même répertoire que srcsrv.dll et devenv.exe.
 
 > [!IMPORTANT]
->  Les commandes arbitraires peuvent être incorporées dans le fichier .pdb de l'application, veillez à ne mettre que celles que vous voulez exécuter dans le fichier srcsrv.ini. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.
+> Les commandes arbitraires peuvent être incorporées dans le fichier .pdb de l'application, veillez à ne mettre que celles que vous voulez exécuter dans le fichier srcsrv.ini. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.
 
  **Pour activer l'utilisation d'un serveur source**
 

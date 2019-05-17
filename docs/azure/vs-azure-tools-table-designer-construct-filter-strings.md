@@ -1,20 +1,24 @@
 ---
 title: Construction de chaînes de filtrage pour le Concepteur de tables | Microsoft Docs
 description: Construction de chaînes de filtrage pour le Concepteur de tables
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/18/2016
-ms.author: ghogen
+origin.date: 11/18/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: d19084e9cfc9813434f5e68829345440763df7e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572234"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtrage pour le Concepteur de tables
 ## <a name="overview"></a>Vue d'ensemble
@@ -39,9 +43,9 @@ Les opérateurs logiques suivants sont pris en charge par tous les types de prop
 
 Quand vous créez une chaîne de filtrage, il est important de suivre les règles suivantes :
 
-* Utilisez les opérateurs logiques pour comparer une propriété à une valeur. Notez qu’il n’est pas possible de comparer une propriété à une valeur dynamique, car l’une des parties de l’expression doit avoir une valeur constante.
-* Toutes les parties de la chaîne de filtrage respectent la casse.
-* Pour que le filtre retourne des résultats valides, la valeur constante doit être du même type de données que la propriété. Pour plus d’informations sur les types de propriétés pris en charge, consultez [Présentation du modèle de données du service de Table](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+- Utilisez les opérateurs logiques pour comparer une propriété à une valeur. Notez qu’il n’est pas possible de comparer une propriété à une valeur dynamique, car l’une des parties de l’expression doit avoir une valeur constante.
+- Toutes les parties de la chaîne de filtrage respectent la casse.
+- Pour que le filtre retourne des résultats valides, la valeur constante doit être du même type de données que la propriété. Pour plus d’informations sur les types de propriétés pris en charge, consultez [Présentation du modèle de données du service de Table](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Filtrage par propriété de chaîne
 Quand vous filtrez des données selon des propriétés de chaîne, placez la constante de chaîne entre guillemets simples.
@@ -90,3 +94,5 @@ Pour filtrer les données à l’aide d’une valeur DateTime, spécifiez le mot
 L’exemple suivant retourne les entités dont la propriété CustomerSince a la valeur « 10 juillet 2008 » :
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
+
+<!-- Update_Description: update metedata properties -->

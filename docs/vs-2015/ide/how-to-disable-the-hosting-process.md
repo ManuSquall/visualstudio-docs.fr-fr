@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 813094285557171e9c7f021f597d0d643356b5d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694411"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Comment : désactiver le processus d'hébergement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ Les appels à certaines API peuvent être affectés quand le processus hôte est
 ## <a name="see-also"></a>Voir aussi  
  [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md)   
  [Processus d’hébergement (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Générations pendant le développement d’une application](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [Générations pendant le développement d’une application](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

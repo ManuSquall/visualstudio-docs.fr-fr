@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007046"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Plage non valide dans le jeu de caractères (JavaScript)
 Vous avez tenté de créer une expression régulière avec une plage de jeu de caractère non valide. Jeux de caractères doivent être comprise entre les caractères uniques uniquement, tels qu’a-z ou 0-9. Vous ne pouvez inclure des classes de caractères tels que \w dans un jeu de caractères. Le premier caractère dans la plage doit également figurer avant le deuxième caractère dans la plage. Exemple :  

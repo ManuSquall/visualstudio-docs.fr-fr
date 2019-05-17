@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695304"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
     **Pour mettre l’enregistrement en pause**, par exemple si vous venez de recevoir du courrier électronique à traiter, choisissez **Pause**.
 
    > [!WARNING]
-   >  Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.
+   > Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.
 
     **Pour supprimer des actions** enregistrées par erreur, choisissez **Modifier des actions**.
 
@@ -113,7 +113,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
     ![Élément de ciblage du test codé de l’interface utilisateur](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Alternez entre l'enregistrement des actions et la vérification des valeurs. Générez le code à la fin de chaque séquence d'actions ou de vérifications. Si vous le souhaitez, vous pourrez insérer de nouvelles actions et vérifications ultérieurement.
+   > Alternez entre l'enregistrement des actions et la vérification des valeurs. Générez le code à la fin de chaque séquence d'actions ou de vérifications. Si vous le souhaitez, vous pourrez insérer de nouvelles actions et vérifications ultérieurement.
 
     Pour plus d’informations, consultez [Validation des propriétés des contrôles](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   Pour utiliser le clavier pour sélectionner un contrôle d'interface utilisateur, placez le pointeur de la souris sur le contrôle. Maintenez enfoncées la touche **Ctrl** et la touche **I** en même temps. Relâchez les touches. Le contrôle est enregistré par le Générateur de test codé de l'interface utilisateur.
 
 > [!WARNING]
->  Si vous utilisez Microsoft Lync, vous devez fermer Lync avant de démarrer le Générateur de test codé de l'interface utilisateur. Microsoft Lync interfère avec le raccourci clavier **Ctrl+I**.
+> Si vous utilisez Microsoft Lync, vous devez fermer Lync avant de démarrer le Générateur de test codé de l'interface utilisateur. Microsoft Lync interfère avec le raccourci clavier **Ctrl+I**.
 
  *Je ne parviens pas à enregistrer un pointage de la souris sur un contrôle. Existe-t-il un moyen de contourner ce problème ?*
  **Enregistrement manuel de pointages de la souris**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Si nécessaire, l'affectation du clavier par défaut de Ctrl+Maj+R utilisée pour appliquer les événements de pointage de souris dans vos tests codés de l'interface utilisateur peut être configurée pour utiliser des touches différentes.
 
 > [!WARNING]
->  Vous ne devriez pas avoir à changer les affectations du clavier pour les événements de pointage de souris dans des circonstances normales. Procédez avec caution lors de la modification de l'affectation du clavier. Votre choix est peut-être déjà utilisé ailleurs dans Visual Studio ou dans l'application testée.
+> Vous ne devriez pas avoir à changer les affectations du clavier pour les événements de pointage de souris dans des circonstances normales. Procédez avec caution lors de la modification de l'affectation du clavier. Votre choix est peut-être déjà utilisé ailleurs dans Visual Studio ou dans l'application testée.
 
  Pour changer les affectations du clavier, vous devez modifier le fichier de configuration suivant :
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Vous ne devez pas modifier ce fichier, car il sera regénéré quand vous créerez d'autres tests.
+  > Vous ne devez pas modifier ce fichier, car il sera regénéré quand vous créerez d'autres tests.
 
    Vous pouvez créer des versions adaptées de ces méthodes en les copiant dans UIMap.cs. Vous pouvez par exemple créer une version paramétrée que vous pourriez appeler depuis une méthode de test :
 
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> Quelle est la suite ?
  **Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur :** vous pouvez exécuter des tests codés de l’interface utilisateur directement à partir de Visual Studio, comme décrit plus haut dans cette rubrique. Vous pouvez aussi exécuter des tests de l'interface utilisateur automatisés à partir de [!INCLUDE[TCMext](../includes/tcmext-md.md)] ou de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Quand les tests codés de l'interface utilisateur sont automatisés, ils doivent interagir avec le Bureau lorsque vous les exécutez, contrairement aux autres tests automatisés.
 
-- [Guide pratique pour exécuter des tests à partir de Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Guide pratique pour exécuter des tests à partir de Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Exécution de tests automatisés dans Microsoft Test Manager](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Exécution de tests automatisés dans Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Guide pratique pour Configurer et exécuter des Tests planifiés après avoir généré votre Application](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Guide pratique pour Configurer et exécuter des Tests planifiés après avoir généré votre Application](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [Exécuter des tests dans votre processus de génération](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [Exécution de tests automatisés à partir de la ligne de commande](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [Exécution de tests automatisés à partir de la ligne de commande](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;retirée&#93; Utilisation des tests codés de l’interface utilisateur dans les tests de charge](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;retirée&#93; Utilisation des tests codés de l’interface utilisateur dans les tests de charge](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **Ajout de la prise en charge des contrôles personnalisés :**  le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l'interface utilisateur de l'IU de [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Toutefois, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prendra en charge un contrôle personnalisé.
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour plus d’informations, consultez [test de livraison continue avec Visual Studio 2012 – chapitre 5 : Automatisation des Tests système](http://go.microsoft.com/fwlink/?LinkID=255196). Pour plus d’informations sur les tests manuels, consultez [&#91;retirée&#93; Création de cas de test manuels à l’aide de Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Pour plus d’informations sur les tests système automatisés, consultez [Création de tests automatisés à l’aide de Microsoft Test Manager](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour plus d’informations, consultez [test de livraison continue avec Visual Studio 2012 – chapitre 5 : Automatisation des Tests système](http://go.microsoft.com/fwlink/?LinkID=255196). Pour plus d’informations sur les tests manuels, consultez [&#91;retirée&#93; Création de cas de test manuels à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Pour plus d’informations sur les tests système automatisés, consultez [Création de tests automatisés à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Ressources externes
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Améliorer la qualité du code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
 - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Mise à niveau de tests codés de l’interface utilisateur à partir de Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

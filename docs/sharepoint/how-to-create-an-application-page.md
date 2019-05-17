@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fb5c4d7497525706384ced52caae1ba8e02f3e23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966768"
 ---
 # <a name="how-to-create-an-application-page"></a>Procédure : Créer une page d’application
   Vous pouvez créer une page web ASP.NET pour un ou plusieurs sites SharePoint. Dans SharePoint, ces pages sont appelés des pages d’application. Contrairement à une page de site, une page d’application contient le code qui s’exécute derrière la page. Pour plus d’informations, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).

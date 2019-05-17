@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443476"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Ajout d’éléments aux boîtes de dialogue Ajouter un élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59001041"
 Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, la section AddItemTemplates contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.  
   
 > [!NOTE]
->  Le tableau qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de Registre.  
+> Le tableau qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de Registre.  
   
  Cette section se trouve sous [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
   
@@ -44,7 +44,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue.|  
   
 > [!NOTE]
->  Les GUID pour les types de projets Visual C# et Visual Basic sont les suivantes :[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> Les GUID pour les types de projets Visual c# et Visual Basic sont les suivantes :[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  Le répertoire répertoriés pour TemplateDirs, qui est % TEMPLATE_PATH%\SomeProjectItems, est le nœud sur le côté gauche de la **ajouter un nouvel élément** arborescence de boîte de dialogue. Dans l’arborescence des éléments supplémentaires sont basées sur le sous-répertoire dans le répertoire racine. Les fichiers disponibles à ajouter au projet sont les éléments dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue.  
   
@@ -53,7 +53,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
  Toutefois, il est inutile d’avoir tout dans un seul fichier .vsdir. Vous pouvez avoir un seul fichier .vsdir pour chaque élément dans le répertoire. Pour plus d’informations, consultez [Assistant (. Fichier vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) et [Description du modèle de répertoire (. Fichiers VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  Les fichiers .vsdir dans les répertoires de modèle sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans le **ajouter un nouvel élément** boîte de dialogue, vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans l’instruction TemplatesDir. Le fichier puis apparaîtront dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un fichier .vsdir dans le répertoire de modèles.  
+> Les fichiers .vsdir dans les répertoires de modèle sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans le **ajouter un nouvel élément** boîte de dialogue, vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans l’instruction TemplatesDir. Le fichier puis apparaîtront dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un fichier .vsdir dans le répertoire de modèles.  
   
 ## <a name="grouping-project-items"></a>Éléments de projet de regroupement  
  Si vous souhaitez contiennent des groupes de modèles dans les dossiers dans le **ajouter un nouvel élément** arborescence de boîte de dialogue, vous devez disposer des sous-répertoires du répertoire de modèle racine avec les éléments dans les. Lorsque le **ajouter un nouvel élément** boîte de dialogue s’affiche aux utilisateurs, ils seront également voir les sous-dossiers et être en mesure de sélectionner des éléments de projet à partir de celles-ci.  

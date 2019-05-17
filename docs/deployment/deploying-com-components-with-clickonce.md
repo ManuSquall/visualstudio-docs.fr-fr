@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406623"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.
@@ -62,7 +62,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
 2. Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.
 
     > [!NOTE]
-    >  Types de projets DLL ActiveX et le contrôle ActiveX sont pris en charge avec COM sans inscription ; Types de projets EXE ActiveX et ActiveX Document ne sont pas pris en charge.
+    > Types de projets DLL ActiveX et le contrôle ActiveX sont pris en charge avec COM sans inscription ; Types de projets EXE ActiveX et ActiveX Document ne sont pas pris en charge.
 
 3. Dans **l’Explorateur de solutions**, double-cliquez sur **Class1.vb** pour ouvrir l’éditeur de texte.
 
@@ -77,7 +77,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
 5. Générez le composant. À partir de la **Build** menu, cliquez sur **générer la Solution**.
 
 > [!NOTE]
->  COM sans inscription prend en charge uniquement les DLL et COM contrôle les types de projets. Vous ne pouvez pas utiliser les fichiers exe avec COM sans inscription.
+> COM sans inscription prend en charge uniquement les DLL et COM contrôle les types de projets. Vous ne pouvez pas utiliser les fichiers exe avec COM sans inscription.
 
  Vous pouvez maintenant créer une application basée sur Windows et ajoutez une référence au composant COM à celui-ci.
 
@@ -125,7 +125,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
    Maintenant, lorsque vous appuyez sur F5, l’application fonctionne comme prévu, mais il est maintenant en cours d’exécution sous COM sans inscription. Afin de prouver que cela, essayez d’annuler l’inscription du composant VB6Hello.dll et RegFreeComDemo1.exe en dehors de l’IDE Visual Studio en cours d’exécution. Cette fois, lorsque le bouton est cliqué, elle fonctionne comme prévu. Si vous renommez temporairement le manifeste d’application, il échoue à nouveau.
 
 > [!NOTE]
->  Vous pouvez simuler l’absence d’un composant COM en annulant temporairement son enregistrement. Ouvrez une invite de commandes, accédez à votre dossier système en tapant `cd /d %windir%\system32`, puis annulez l’inscription du composant en tapant `regsvr32 /u VB6Hello.dll`. Vous pouvez l’inscrire à nouveau en tapant `regsvr32 VB6Hello.dll`.
+> Vous pouvez simuler l’absence d’un composant COM en annulant temporairement son enregistrement. Ouvrez une invite de commandes, accédez à votre dossier système en tapant `cd /d %windir%\system32`, puis annulez l’inscription du composant en tapant `regsvr32 /u VB6Hello.dll`. Vous pouvez l’inscrire à nouveau en tapant `regsvr32 VB6Hello.dll`.
 
  L’étape finale consiste à publier l’application à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 

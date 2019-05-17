@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128b3fa65c3fc48206af2fb66a3a98658a0306ff
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f0a08b29c3d1dae8b79650f450faaf8b9e1d452a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399571"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Récupère la valeur d’ID du symbole fabricant (OEM).
@@ -39,9 +39,9 @@ HRESULT get_oemSymbolId ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.
 
  Cette propriété s’applique uniquement aux symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) type de `SymTagCustomType`.

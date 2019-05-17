@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f999d19ecee85d9664793a3d8e3ecc48fedbbdf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069651"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457616"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Cette interface prend en charge :

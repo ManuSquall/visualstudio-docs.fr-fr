@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ae3b86be9ec26f9bb8c9b8978a6276169262933d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936562"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457888"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement : des modifications ont été effectuées dans la boîte de dialogue Configurer le comportement et n’ont pas été appliquées
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement : Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 
 Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées. Souhaitez-vous appliquer vos modifications ?
 
@@ -29,5 +29,4 @@ Le **configurer le comportement** boîte de dialogue vous permet de configurer `
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

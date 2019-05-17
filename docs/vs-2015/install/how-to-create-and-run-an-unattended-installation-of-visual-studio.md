@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433043"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Comment : créer et exécuter une installation sans assistance de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
      Le chemin d’accès réseau de l’application d’installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ressemble à \\\\*ServerName*\IDEinstall\\*Product*.exe.
 
     > [!NOTE]
-    >  L’installation peut échouer si la combinaison du nom du chemin d’accès et du fichier dépasse 260 caractères. La longueur maximale d’un chemin dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est de 221 caractères.  Le nom de chemin d’accès local ne doit pas dépasser 70 caractères et le nom du chemin d’accès réseau ne doit pas dépasser 39 caractères.
+    > L’installation peut échouer si la combinaison du nom du chemin d’accès et du fichier dépasse 260 caractères. La longueur maximale d’un chemin dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est de 221 caractères.  Le nom de chemin d’accès local ne doit pas dépasser 70 caractères et le nom du chemin d’accès réseau ne doit pas dépasser 39 caractères.
 
      L’installation peut également échouer si les noms de dossiers du chemin incluent des espaces incorporés (par exemple, "\\\\*nom_serveur*\installation IDE" ou \\\\*nom_serveur*\Visual Studio\\).
 
@@ -46,16 +46,16 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
  Pour déployer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance, vous devez modifier le fichier AdminDeployment.xml. Pour ce faire, vous devez d’abord créer le fichier AdminDeployment.xml à l’aide du paramètre de ligne de commande `/CreateAdminFile` *\<emplacement du fichier>*. Ensuite, vous pouvez utiliser ce fichier pour pousser un déploiement de Visual Studio sur votre réseau ou l’extraire dans une installation si vous placez ce fichier dans le répertoire *Lecteur*:\IDEinstall\packages. Le fichier AdminDeployment.xml n’est pas propre à un système d’exploitation, une architecture, une version de Visual Studio ou un langage de système d’exploitation.
 
 > [!CAUTION]
->  Parfois, les éléments répertoriés comme étant sélectionnés dans le fichier AdminDeployment.xml ne sont pas installés. Pour résoudre ce problème, placez à la **fin** du fichier AdminDeployment.xml les éléments marqués comme suit : « Selected="yes" ».
+> Parfois, les éléments répertoriés comme étant sélectionnés dans le fichier AdminDeployment.xml ne sont pas installés. Pour résoudre ce problème, placez à la **fin** du fichier AdminDeployment.xml les éléments marqués comme suit : « Selected="yes" ».
 >
->  Si vous ne souhaitez pas installer les dépendances facultatives d’un élément, vous devez d’abord sélectionner le parent, puis désélectionner les dépendances facultatives après le parent, comme illustré dans la capture d’écran suivante :
+> Si vous ne souhaitez pas installer les dépendances facultatives d’un élément, vous devez d’abord sélectionner le parent, puis désélectionner les dépendances facultatives après le parent, comme illustré dans la capture d’écran suivante :
 >
->  ![Éléments d’installation à la fin du fichier AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Éléments d’installation à la fin du fichier AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Une autre façon de procéder consiste à simplement omettre les enfants facultatifs d’un parent (en d’autres termes, vous excluez les éléments « Selected="no" »), mais vous devez quand même placer tous les éléments « Selected="yes" » à la fin du fichier AdminDeployment.xml.
+> Une autre façon de procéder consiste à simplement omettre les enfants facultatifs d’un parent (en d’autres termes, vous excluez les éléments « Selected="no" »), mais vous devez quand même placer tous les éléments « Selected="yes" » à la fin du fichier AdminDeployment.xml.
 
 > [!IMPORTANT]
->  Pendant l’installation, l’ordinateur peut redémarrer automatiquement une ou plusieurs fois. Après qu’il a redémarré, vous devez vous reconnecter avec le même compte d’utilisateur que celui avec lequel vous étiez connecté pour effectuer l’installation avant le redémarrage de l’ordinateur. Vous pouvez éviter les redémarrages automatiques en installant les composants requis avant d’exécuter une installation sans assistance. Pour plus d’informations, consultez la section intitulée « Éviter le redémarrage lors de l’installation » dans le [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
+> Pendant l’installation, l’ordinateur peut redémarrer automatiquement une ou plusieurs fois. Après qu’il a redémarré, vous devez vous reconnecter avec le même compte d’utilisateur que celui avec lequel vous étiez connecté pour effectuer l’installation avant le redémarrage de l’ordinateur. Vous pouvez éviter les redémarrages automatiques en installant les composants requis avant d’exécuter une installation sans assistance. Pour plus d’informations, consultez la section intitulée « Éviter le redémarrage lors de l’installation » dans le [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
  Le schéma de fichier AdminDeployment contient les éléments suivants :
 
@@ -71,7 +71,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 |BundleCustomizations|NoCacheOnlyMode|oui&#124;par défaut|Empêche le préremplissage du cache du package.|
 
 > [!WARNING]
->  L’application d’installation respecte l’état sélectionné d’un événement SelectableItem, même s’il est masqué. Par exemple, si vous souhaitez toujours installer un élément sélectionnable, vous pouvez le marquer comme masqué et sélectionné.
+> L’application d’installation respecte l’état sélectionné d’un événement SelectableItem, même s’il est masqué. Par exemple, si vous souhaitez toujours installer un élément sélectionnable, vous pouvez le marquer comme masqué et sélectionné.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Pour créer une installation sans assistance de Visual Studio
 
@@ -100,7 +100,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
  Si vous ouvrez le **Panneau de configuration** et réexécutez l’application d’installation, vous pouvez modifier les fonctionnalités de Visual Studio, désinstaller les langages de programmation et réparer ou désinstaller Visual Studio.
 
 > [!NOTE]
->  Vous devez avoir les informations d’identification de l’administrateur sur l’ordinateur local pour utiliser le mode maintenance.
+> Vous devez avoir les informations d’identification de l’administrateur sur l’ordinateur local pour utiliser le mode maintenance.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Pour maintenir une installation sur un ordinateur client
 

@@ -12,12 +12,12 @@ ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e85732221e2d4d5024ba295cac551ab45f1ee12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7274d621e47c9c705cc0ce6bc4ad49f24e144f59
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683280"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugQueryEngine2 : IUnknown
  Le D’implémente cette interface sur les objets qui implémentent les interfaces DE courants (tels que [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), et [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) dans afin d’autoriser l’accès à la [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface de la DE lui-même.  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appelez [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur une interface DE type pour obtenir cette interface.  
+ Appelez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur une interface DE type pour obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
  Le tableau suivant présente les méthodes de `IDebugQueryEngine2`.  

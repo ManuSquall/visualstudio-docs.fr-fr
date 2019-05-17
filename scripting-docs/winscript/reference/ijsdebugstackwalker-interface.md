@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977810"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker, interface
 Représente un Explorateur de piles pour un thread spécifié.  
@@ -38,7 +38,7 @@ IJsDebugStackWalker : public IUnknown;
 ## <a name="remarks"></a>Notes  
  Explorateurs de pile ne peuvent uniquement être créés alors que la cible est arrêté et ne sont pas valide une fois que le processus cible a été repris.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

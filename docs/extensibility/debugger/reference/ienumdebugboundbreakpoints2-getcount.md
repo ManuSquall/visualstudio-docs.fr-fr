@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ad4f947577d24e62ba50e530e783c5fc5ecc98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea52bdeb73481c15c15762df1c8508473e6b0442
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682701"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223311"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 Retourne le nombre d’éléments dans l’énumération.
@@ -36,8 +39,8 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pcelt`
+## <a name="parameters"></a>Paramètres
+ `pcelt`\
 
  [out] Retourne le nombre d’éléments dans l’énumération.
 

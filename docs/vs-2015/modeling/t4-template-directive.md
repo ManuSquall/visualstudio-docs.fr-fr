@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070834"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695875"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  `compilerOptions="optimize+"`  
   
  Valeurs valides :  
- Toutes les options du compilateur valides. Pour plus d’informations, consultez [c# Options du compilateur classées par catégorie](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic Compiler Options Listed by catégorie](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Toutes les options du compilateur valides. Pour plus d’informations, consultez [c# Options du compilateur classées par catégorie](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic Compiler Options Listed by catégorie](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignoré pour les modèles au moment de l'exécution (prétraités).  
   
@@ -212,7 +212,7 @@ This is the common footer.
  Vous pouvez également utiliser une classe écrite manuellement ordinaire comme classe de base. La classe de base doit fournir les méthodes utilisées par la classe dérivée.  
   
 > [!WARNING]
->  Si vous utilisez les attributs `inherits` et `hostspecific` ensemble, spécifiez hostspecific="trueFromBase" dans la classe dérivée et host="true" dans la classe de base. Cela évite une double définition de la propriété `Host` dans le code généré.  
+> Si vous utilisez les attributs `inherits` et `hostspecific` ensemble, spécifiez hostspecific="trueFromBase" dans la classe dérivée et host="true" dans la classe de base. Cela évite une double définition de la propriété `Host` dans le code généré.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Héritage dans un modèle de texte au moment du design  
  Un modèle de texte au moment du design est un fichier pour lequel **un outil personnalisé** a la valeur **TextTemplatingFileGenerator**. Le modèle génère un fichier de sortie de code ou de texte, qui fait partie de votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour générer le fichier de sortie, le modèle est d'abord traduit en fichier de code du programme intermédiaire, que vous ne voyez normalement pas. L'attribut `inherits` spécifie la classe de base pour ce code intermédiaire.  

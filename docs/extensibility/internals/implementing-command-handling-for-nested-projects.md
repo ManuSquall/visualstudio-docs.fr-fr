@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a75c6edcc084c8ec7c6942e011af9978a961c83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ccdf1d4dbab45716aca11630885ed41ce25e24a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420559"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implémentation de la gestion des commandes pour les projets imbriqués
 L’IDE peut transmettre des commandes qui sont transmises via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces pour les projets imbriqués ou des projets parents peuvent filtrer ou substituer les commandes.
 
 > [!NOTE]
->  Seules les commandes habituellement gérées par le projet parent peuvent être filtrés. Commandes telles que **Build** et **déployer** qui sont gérés par l’IDE ne peuvent pas être filtré.
+> Seules les commandes habituellement gérées par le projet parent peuvent être filtrés. Commandes telles que **Build** et **déployer** qui sont gérés par l’IDE ne peuvent pas être filtré.
 
  Les étapes suivantes décrivent le processus d’implémentation de la gestion des commandes.
 

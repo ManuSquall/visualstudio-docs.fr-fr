@@ -8,25 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417175"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ : Conversion des compléments en extensions VSPackage
 Les compléments sont désormais déconseillés. Pour effectuer une nouvelle extension de Visual Studio, vous devez créer une extension VSIX. Voici les réponses à certaines questions fréquemment posées sur la façon de convertir un complément Visual Studio pour une extension VSIX.
 
 > [!WARNING]
->  À compter de Visual Studio 2015, pour les projets c# et Visual Basic, vous pouvez utiliser le projet VSIX et ajouter des modèles d’élément pour les commandes de menu, les fenêtres Outil et les VSPackages. Pour plus d’informations, consultez [quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
+> À compter de Visual Studio 2015, pour les projets c# et Visual Basic, vous pouvez utiliser le projet VSIX et ajouter des modèles d’élément pour les commandes de menu, les fenêtres Outil et les VSPackages. Pour plus d’informations, consultez [quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
 
 > [!IMPORTANT]
->  Dans de nombreux cas, vous pouvez simplement transférer votre code de complément à un projet VSIX avec un élément de projet VSPackage. Vous pouvez obtenir l'objet automation DTE en appelant <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dans la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+> Dans de nombreux cas, vous pouvez simplement transférer votre code de complément à un projet VSIX avec un élément de projet VSPackage. Vous pouvez obtenir l'objet automation DTE en appelant <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> dans la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 >
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`
+> ```csharp
+> DTE2 dte = (DTE2)GetService(typeof(DTE));
+> ```
 >
->  Pour plus d’informations, consultez [comment puis-je exécuter mon code de complément dans un VSPackage ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ci-dessous.
+> Pour plus d’informations, consultez [comment puis-je exécuter mon code de complément dans un VSPackage ?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) ci-dessous.
 
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Quel logiciel besoin développer des extensions VSIX
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).

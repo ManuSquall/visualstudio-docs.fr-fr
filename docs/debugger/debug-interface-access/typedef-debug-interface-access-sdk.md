@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1928667be38cc2b0aa56800ca66924d6159f0c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853533"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Kit de développement logiciel de Debug Interface Access)
 Symboles avec `SymTagTypedef` balises introduisent des noms pour les autres types.
 
-## <a name="properties"></a>Propriétés
+## <a name="properties"></a>Properties
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Parmi les [BasicType (énumération)](../../debugger/debug-interface-access/basictype.md) valeurs.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Parent de la classe de ce typedef, le cas échéant.|
@@ -54,7 +54,7 @@ Symboles avec `SymTagTypedef` balises introduisent des noms pour les autres type
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID du symbole de forme de table virtuelle.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si ce typedef est marqué comme volatile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Dans la mesure où un typedef peut représenter une classe, un pointeur ou un type défini par l’utilisateur (UDT), le symbole pour un typedef partage les mêmes propriétés qu’un de ces autres types de symboles.
 
 ## <a name="see-also"></a>Voir aussi

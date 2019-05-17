@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952448"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676565"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
 Vous pouvez créer une règle personnalisée définie pour répondre aux besoins de projet spécifiques pour l’analyse du code.
 
-## <a name="create-a-custom-rule-set"></a>Créer un ensemble de règles personnalisé
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Créer une règle personnalisée définie à partir d’un ensemble de règles existant
 
 Pour créer une règle personnalisée, vous pouvez ouvrir un intégrés ensemble de règles dans le **Éditeur d’ensemble de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée&mdash;, par exemple, afficher un avertissement ou une erreur.
 
@@ -40,7 +40,12 @@ Pour créer une règle personnalisée, vous pouvez ouvrir un intégrés ensemble
 
 4. Sélectionnez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
 
-Vous pouvez également créer un nouveau fichier de jeu de règles à partir de la **nouveau fichier** boîte de dialogue :
+> [!NOTE]
+> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’est pas **analyse du Code** onglet de propriété. Suivez les étapes pour [copier une règle prédéfinie défini à votre projet et définissez-le comme l’ensemble de règles active](analyzer-rule-sets.md). Une fois que vous avez copié sur un ensemble de règles, vous pouvez [modifier dans l’éditeur d’ensemble de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **l’Explorateur de solutions**.
+
+## <a name="create-a-new-rule-set"></a>Créer un ensemble de règles
+
+Vous pouvez créer un nouveau fichier de jeu de règles à partir de la **nouveau fichier** boîte de dialogue :
 
 1. Sélectionnez **fichier** > **New** > **fichier**, ou appuyez sur **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Vous pouvez également créer un nouveau fichier de jeu de règles à partir de 
 
    La nouvelle *.ruleset* fichier s’ouvre dans l’éditeur d’ensemble de règles.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Créer une règle personnalisée définie à partir de plusieurs ensembles de règles
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Créer une règle personnalisée définie à partir de plusieurs ensembles de règles
 
-1. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.
+> [!NOTE]
+> La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas un **analyse du Code** onglet de propriété.
+
+1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis sélectionnez **propriétés**.
 
 2. Sur le **propriétés** pages, sélectionnez le **analyse du Code** onglet.
 
@@ -68,7 +76,7 @@ Vous pouvez également créer un nouveau fichier de jeu de règles à partir de 
 
 6. Sélectionnez **ouvrir** pour ouvrir la nouvelle règle définie dans l’éditeur d’ensemble de règles.
 
-### <a name="rule-precedence"></a>Priorité des règles
+## <a name="rule-precedence"></a>Priorité des règles
 
 - Si la même règle est répertorié deux fois ou plus dans un jeu de règles par différents niveaux de gravité, le compilateur génère une erreur. Exemple :
 
@@ -112,7 +120,7 @@ Pour modifier le nom complet d’un ensemble de règles est ouvert dans l’édi
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez une règle définie, l’étape suivante consiste à personnaliser les règles en ajoutant ou supprimant des règles ou modifier le niveau de gravité des violations de règle.
+Maintenant que vous avez une règle définie, l’étape suivante consiste à personnaliser les règles en ajoutant ou supprimant des règles ou en modifiant le niveau de gravité des violations de règle.
 
 > [!div class="nextstepaction"]
 > [Modifier les règles dans l’éditeur d’ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

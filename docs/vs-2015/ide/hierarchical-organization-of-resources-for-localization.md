@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 02f136fa0daa23484e31deab8f138a02b8a0b592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797062"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704345"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organisation hiérarchique des ressources pour la localisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
  [Sécurité et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md)   
  [Localisation d’applications](../ide/localizing-applications.md)   
  [Globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md)   
- [Guide pratique pour Définir la Culture et la Culture d’interface utilisateur pour la globalisation des Windows Forms](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [Comment : définir la culture et la culture d’interface utilisateur pour la globalisation des pages web ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Guide pratique pour Définir la Culture et la Culture d’interface utilisateur pour la globalisation des Windows Forms](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [Guide pratique pour Définir la Culture et la Culture d’interface utilisateur pour la globalisation des pages Web ASP.NET](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

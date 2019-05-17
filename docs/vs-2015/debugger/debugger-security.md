@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101637"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686795"
 ---
 # <a name="debugger-security"></a>Sécurité du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
  Pour plus d’informations, consultez [le débogage à distance](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Sécurité de débogage Web Services  
- Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 - N’activez pas le débogage sur un serveur web qui a été compromis.  
   

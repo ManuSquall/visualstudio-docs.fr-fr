@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901687"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecter les précédents états des applications à l’aide du retour en arrière IntelliTrace dans Visual Studio (Visual Studio Enterprise)
 

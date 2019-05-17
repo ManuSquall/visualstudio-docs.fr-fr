@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564097"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Poursuite de l'exécution à la suite d'une exception
 Lorsque le débogueur interrompt l’exécution en raison d’une exception, vous verrez la **assistance d’Exception**, par défaut. Si vous avez désactivé la **assistance d’Exception** dans le **Options** boîte de dialogue, vous verrez la **Assistant Exception** (C# ou Visual Basic) ou le  **Exception** boîte de dialogue (C++).

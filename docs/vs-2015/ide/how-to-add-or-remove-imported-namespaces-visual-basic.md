@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700990"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procédure : Ajouter ou supprimer des espaces de noms importés (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
 3. Dans la liste **Espaces de noms importés**, cochez la case de l’espace de noms que vous souhaitez ajouter.  
   
     > [!NOTE]
-    >  Pour pouvoir être importé, l’espace de noms doit être dans un composant référencé. Si l’espace de noms n’apparaît pas dans la liste, vous devrez ajouter une référence au composant qui le contient. Pour plus d’informations, consultez [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > Pour pouvoir être importé, l’espace de noms doit être dans un composant référencé. Si l’espace de noms n’apparaît pas dans la liste, vous devrez ajouter une référence au composant qui le contient. Pour plus d’informations, consultez [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Pour supprimer un espace de noms importé  
   
@@ -64,7 +64,7 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
 4. Cliquez sur le bouton **Ajouter une importation utilisateur** pour ajouter l’espace de noms à la liste **Espaces de noms importés**.  
   
     > [!NOTE]
-    >  Le bouton **Ajouter une importation utilisateur** est désactivé si l’espace de noms figure déjà dans la liste. Vous ne pouvez pas ajouter deux fois une même importation.  
+    > Le bouton **Ajouter une importation utilisateur** est désactivé si l’espace de noms figure déjà dans la liste. Vous ne pouvez pas ajouter deux fois une même importation.  
   
 #### <a name="to-update-a-user-import"></a>Pour mettre à jour une importation utilisateur  
   

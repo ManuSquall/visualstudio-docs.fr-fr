@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f9ae4de4f8dc044d578bb4f593dc9c6c77a7b0b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fff1c56915fe4a06d66bdb08ce60219642933b1b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682529"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Erreur : Impossible de lancer les communications DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Une erreur DCOM s'est produite lorsque l'ordinateur local a tenté de communique
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Si l’ordinateur distant a de pare-feu Windows est activé, consultez [définir Up the Remote Tools sur l’appareil](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) pour obtenir des instructions sur la façon de configurer le pare-feu pour le débogage local.  
+- Si l’ordinateur distant a de pare-feu Windows est activé, consultez [définir Up the Remote Tools sur l’appareil](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) pour obtenir des instructions sur la façon de configurer le pare-feu pour le débogage local.  
   
 - Pour restaurer l'authentification Windows, tentez de redémarrer les deux ordinateurs. Vérifiez si les journaux des événements de l'ordinateur local ou distant contiennent des erreurs Kerberos et contactez les administrateurs de domaines pour les problèmes connus.  
   

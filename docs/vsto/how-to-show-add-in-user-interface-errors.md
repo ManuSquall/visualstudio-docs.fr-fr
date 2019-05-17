@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34727c0949ab4ad6baf8e91b27b20115cf074b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78cc4d2e85e2f7a5347fe0c8927c855160fbb511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441787"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Procédure : Afficher des erreurs d’interface utilisateur du complément
   Par défaut, si un complément, VSTO tente de manipuler l’interface utilisateur de Microsoft Office (IU) et échoue, aucun message d’erreur ne s’affiche. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour aider à déterminer pourquoi un ruban personnalisé n’apparaît pas, ou pourquoi un ruban apparaît mais pas les contrôles.
@@ -40,7 +40,7 @@ ms.locfileid: "60096359"
 5. Dans le volet d’informations, sélectionnez **Afficher les erreurs d’interface utilisateur du complément VSTO**, puis cliquez sur **OK**.
 
     > [!NOTE]
-    >  Pour Outlook, la case à cocher **Afficher les erreurs d’interface utilisateur du complément VSTO** se trouve dans la section **Développeur** du volet d’informations. Pour les autres applications, elle se trouve dans la section **Général** du volet d’informations.
+    > Pour Outlook, la case à cocher **Afficher les erreurs d’interface utilisateur du complément VSTO** se trouve dans la section **Développeur** du volet d’informations. Pour les autres applications, elle se trouve dans la section **Général** du volet d’informations.
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f76746c29bff7dce76c2eda97fbd1287e5906a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cad26ea3c510a3aceb769da85e49b14919374ebc
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225576"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Cette interface énumère les processus en cours d’exécution sur un port de débogage.
@@ -48,7 +48,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="remarks"></a>Notes
  Visual Studio utilise cette interface pour remplir le **processus** fenêtre.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -21,14 +21,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226123"
 ---
-# <a name="code-analysis-for-cc-overview"></a>Analyse du code pour une vue d’ensemble de C/C++
+# <a name="code-analysis-for-cc-overview"></a>Vue d’ensemble de l’analyse du code C/C++
 
 L’outil d’analyse du Code C/C++ fournit des informations sur les erreurs éventuelles dans votre code source C/C++. Les erreurs de codage courantes signalées par l'outil sont notamment les dépassements de mémoire tampon, une mémoire non initialisée, les déréférencements du pointeur Null et les fuites de mémoire et de ressources. L’outil peut également exécuter des vérifications par rapport à la [C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma support
 
-Vous pouvez utiliser la `#pragma` directive pour traiter les avertissements comme des erreurs ; activer ou désactiver les avertissements et supprimer des avertissements pour des lignes de code. Pour plus d'informations, voir [Procédure : Définir les propriétés d’analyse de Code pour les projets C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Vous pouvez utiliser la `#pragma` directive pour traiter les avertissements comme des erreurs ; activer ou désactiver les avertissements et supprimer des avertissements pour des lignes de code. Pour plus d’informations, consultez [Directives pragma et mot clé __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Prise en charge de l’annotation
 
-Les annotations améliorent la précision de l’analyse du code. Les annotations fournissent des informations supplémentaires sur les conditions préalables et postérieures des paramètres de fonction et des types de retour. Pour plus d'informations, voir [Procédure : Spécifier des informations de code supplémentaires en utilisant __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Les annotations améliorent la précision de l’analyse du code. Les annotations fournissent des informations supplémentaires sur les conditions préalables et postérieures des paramètres de fonction et des types de retour. Pour plus d’informations, consultez [à l’aide d’Annotations SAL pour réduire C /C++ les défauts du Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Exécuter l’outil d’analyse dans le cadre d’une stratégie d’archivage
 

@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067637"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684703"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Vous pouvez insérer un bloc de texte partout où une instruction `Write();` serait autorisée dans le code.  
   
 > [!NOTE]
->  Lorsque vous incorporez un bloc de texte au sein d’une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.  
+> Lorsque vous incorporez un bloc de texte au sein d’une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.  
   
 ### <a name="expression-control-blocks"></a>Blocs de contrôle d'expression  
  Un bloc de contrôle d'expression évalue une expression et la convertit en chaîne. Celle-ci est insérée dans le fichier de sortie.  
@@ -197,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Pour obtenir la liste des macros, consultez [Macros courantes pour les propriétés et les commandes de génération](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
+ Pour obtenir la liste des macros, consultez [Macros courantes pour les propriétés et les commandes de génération](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
   
  La directive assembly n’a aucun effet un [modèle de texte prétraité](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus d’informations, consultez [l’accès à Visual Studio ou autres hôtes à partir d’un modèle](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus d’informations, consultez [l’accès à Visual Studio ou autres hôtes à partir d’un modèle](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modèles de texte au moment du design exécutés dans un AppDomain distinct  
  Vous devez être conscient qu’un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) s’exécute dans un AppDomain qui est distinct de l’application principale. Dans la plupart des cas cela n'est pas important, mais dans certains cas complexes certaines restrictions peuvent s'appliquer. Par exemple, si vous souhaitez passer des données dans le modèle ou en dehors de celui-ci à partir d'un service distinct, ce service doit fournir une API sérialisable.  

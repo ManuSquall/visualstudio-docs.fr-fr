@@ -12,12 +12,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d2b47598e4102eefaa671fd5f362975aae0f4d53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447281"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Lorsque le service de langage fournit la coloration syntaxique, l’analyseur co
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la coloration de syntaxe, consultez [procédure pas à pas : Mise en surbrillance de texte](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Étapes suivies par un éditeur à mettre en couleur de texte  
   

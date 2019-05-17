@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679464"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 |[Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Créer des modèles** et ajouter des diagrammes.|  
 |[Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md)|**Dessiner des diagrammes** pour modifier le modèle.|  
 |[Définir des packages et des espaces de noms](../modeling/define-packages-and-namespaces.md)|**Créer des packages** pour diviser un modèle en unités qui fonctionnent sur différents membres d’équipe.|  
-|[Générer du code à partir de diagrammes de classes UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Générer du code C# à partir de diagrammes de classes** pour démarrer votre implémentation.|  
+|[Générer du code à partir de diagrammes de classes UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Générer du code c# à partir de diagrammes de classes** pour démarrer votre implémentation.|  
 |[Personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personnaliser les éléments de modèle** à l’aide de stéréotypes pour étendre les éléments de modèle UML standards à des fins spécifiques.|  
 |[Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)|**Créer des liens entre éléments de modèle et les éléments de travail** pour vous aider à effectuer le suivi des tâches, les cas de test, les bogues, les spécifications, problèmes ou autres genres de travaux qui sont associés à des parties spécifiques de votre modèle.|  
 |[Exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md)|**Enregistrer votre modèle et les diagrammes** afin que vous pouvez les partager avec d’autres utilisateurs, y compris ceux qui n’utilisent pas [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|  
@@ -91,7 +91,7 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|  
 |[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|Utiliser des modèles pour décrire la structure globale et le comportement de votre système et pour vous assurer qu'il répond aux besoins des utilisateurs.|  
 |[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)|Assurez-vous que votre logiciel reste cohérent avec les besoins de vos utilisateurs et avec l'architecture globale de votre système.|  
-|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
+|[Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)<br /><br /> [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Utiliser des modèles pour vous aider à comprendre et à modifier votre système lors de son développement.|  
 |[Structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)|Organiser les modèles dans un projet de grande ou moyenne taille.|  
   
 ## <a name="external-resources"></a>Ressources externes  

@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433556"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
  Le schéma d’un projet importé est identique à celui d’un projet standard. Bien que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] puisse générer un projet importé, cela est peu probable, car un projet importé ne contient généralement pas d’informations sur les propriétés à définir ou sur l’ordre dans lequel exécuter les cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.  
   
 > [!NOTE]
->  Bien que les instructions d’importation conditionnelle fonctionnent sur les lignes de commande MSBuilds, elles ne fonctionnent pas avec MSBuild dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les importations conditionnelles sont évaluées en utilisant les valeurs de configuration et de plateforme définies lors du chargement du projet. Si des modifications apportées par la suite nécessitent une réévaluation des conditions dans le fichier projet, par exemple la modification de la plateforme, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] réévalue les conditions sur les propriétés et les éléments, mais pas sur les importations. La condition d’importation n’étant pas réévaluée, l’importation est ignorée.  
+> Bien que les instructions d’importation conditionnelle fonctionnent sur les lignes de commande MSBuilds, elles ne fonctionnent pas avec MSBuild dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les importations conditionnelles sont évaluées en utilisant les valeurs de configuration et de plateforme définies lors du chargement du projet. Si des modifications apportées par la suite nécessitent une réévaluation des conditions dans le fichier projet, par exemple la modification de la plateforme, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] réévalue les conditions sur les propriétés et les éléments, mais pas sur les importations. La condition d’importation n’étant pas réévaluée, l’importation est ignorée.  
 >   
->  Pour contourner ce problème, placez les importations conditionnelles dans les fichiers .targets, ou placez le code dans un bloc conditionnel comme un bloc [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
+> Pour contourner ce problème, placez les importations conditionnelles dans les fichiers .targets, ou placez le code dans un bloc conditionnel comme un bloc [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
   
 ## <a name="wildcards"></a>Caractères génériques  
  Dans le .NET Framework 4, MSBuild autorise les caractères génériques dans l’attribut de projet. Quand il existe des caractères génériques, toutes les correspondances trouvées sont triées (à des fins de reproductibilité), puis elles sont importées dans cet ordre comme si celui-ci avait été défini explicitement.  
@@ -116,4 +116,4 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
- [Guide pratique pour Utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

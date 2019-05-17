@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a809eee1eb5460e245f64156385f759870adbd3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159099"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531588"
 ---
 # <a name="invert-if-statement"></a>Inverser une instruction if
 
@@ -47,4 +47,4 @@ Cette refactorisation s’applique à :
 ## <a name="see-also"></a>Voir aussi
 
 - [Refactorisation](../refactoring-in-visual-studio.md)
-- [Conseils pour les développeurs .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)

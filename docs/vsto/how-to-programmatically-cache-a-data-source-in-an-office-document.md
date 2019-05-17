@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437104"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procédure : Mettre en cache par programmation une source de données dans un document Office
   Vous pouvez ajouter un objet de données par programmation au cache de données dans un document en appelant le `StartCaching` élément de la méthode d’un ordinateur hôte, tel qu’un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Suppression d’un objet de données à partir du cache de données en appelant le `StopCaching` méthode d’un élément hôte.
@@ -52,7 +52,7 @@ ms.locfileid: "60109177"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  N’appelez pas `StopCaching` du Gestionnaire d’événements pour le `Shutdown` événement d’un document ou une feuille de calcul. Au moment où le `Shutdown` événement est déclenché, il est trop tard pour modifier le cache de données. Pour plus d’informations sur la `Shutdown` événement, consultez [Events in Office Projects](../vsto/events-in-office-projects.md).
+    > N’appelez pas `StopCaching` du Gestionnaire d’événements pour le `Shutdown` événement d’un document ou une feuille de calcul. Au moment où le `Shutdown` événement est déclenché, il est trop tard pour modifier le cache de données. Pour plus d’informations sur la `Shutdown` événement, consultez [Events in Office Projects](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Voir aussi
 

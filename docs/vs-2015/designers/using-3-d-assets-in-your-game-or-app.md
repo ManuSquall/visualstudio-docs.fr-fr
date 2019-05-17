@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386886"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilisation de ressources 3D dans vos jeux et applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
 3. Sous **Propriétés de configuration**, choisissez **Général** puis, dans la grille des propriétés, sous **Général**, affectez à la propriété **Type d’élément** le type d’élément de pipeline de contenu approprié. Par exemple, pour un fichier image ou de texture, choisissez le **pipeline de contenu d’image**.  
   
    > [!IMPORTANT]
-   >  Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suppose que de nombreux types de fichiers image doivent être classés à l’aide du type d’élément **Image** intégré à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources de pipeline de contenu pour les modèles 3D et les graphiques de nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.  
+   > Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suppose que de nombreux types de fichiers image doivent être classés à l’aide du type d’élément **Image** intégré à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources de pipeline de contenu pour les modèles 3D et les graphiques de nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.  
   
 4. Sélectionnez le bouton **OK** .  
   
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Exporter une Texture qui contient des Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|  
-|[Guide pratique pour Exporter une Texture qui a des valeurs Alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|  
-|[Guide pratique pour Exporter une Texture à utiliser avec Direct2D applications JavaScript ou Direct2d](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|  
+|[Guide pratique pour exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|  
+|[Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|  
+|[Guide pratique pour eporter une texture à utiliser avec des applications Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|  
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Décrit les outils d'édition fournis par Visual Studio en vue de créer et manipuler des ressources 3D, à savoir, textures, images, modèles 3D et nuanceurs.|  
 |[Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|

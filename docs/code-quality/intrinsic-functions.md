@@ -16,11 +16,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820718"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
 Une expression dans SAL peut être une expression C/C++ condition qu’il soit une expression qui n’a pas d’effets secondaires, par exemple, ++,--et les appels de fonction tous avoir des effets secondaires dans ce contexte.  Toutefois, SAL fournit certains objets de type fonction et certains symboles réservés qui peuvent être utilisées dans les expressions de SAL. Ils sont désignés comme *fonctions intrinsèques*.

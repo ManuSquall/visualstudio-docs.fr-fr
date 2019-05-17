@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd1993d901d7fc22b6bf20efdec537cc22025e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c6ce5664a75e2eae7066361cea1bfdaa808331b5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679864"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226619"
 ---
 # <a name="ienumdebugerrorbreakpoints2next"></a>IEnumDebugErrorBreakpoints2::Next
 Retourne l’ensemble suivant d’éléments de l’énumération.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celt`
+## <a name="parameters"></a>Paramètres
+ `celt`\
 
  [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Tableau de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) éléments doit être renseigné.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
 

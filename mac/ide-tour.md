@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 335871a2a1d43230a7e9017711d37becdaef6f54
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856312"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615473"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -115,7 +115,7 @@ Pour plus d’informations sur l’utilisation de la gestion de versions dans Vi
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Installer Visual Studio pour Mac](installation.md)
-- [Consulter les charges de travail disponibles](/visualstudio/mac/workloads/)
+- [Voir les charges de travail disponibles](workloads.md)
 
 ## <a name="related-video"></a>Vidéo associée
 

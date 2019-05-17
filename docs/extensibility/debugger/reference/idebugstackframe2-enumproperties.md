@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bc4945f8acc65d5f12da5fecef7a4926ef416
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683907"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457511"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crée un énumérateur pour les propriétés associées avec le frame de pile, telles que des variables locales.
@@ -46,28 +49,28 @@ int EnumProperties ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwFieldSpec`
+## <a name="parameters"></a>Paramètres
+ `dwFieldSpec`\
 
  [in] Une combinaison d’indicateurs de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie les champs dans la liste énumérée [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures doivent être renseignés.
 
- `nRadix`
+ `nRadix`\
 
  [in] La base à utiliser dans toutes les informations numériques de mise en forme.
 
- `refiid`
+ `refiid`\
 
  [in] Un GUID d’un filtre pour sélectionner les [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures sont énumérés, tel que `guidFilterLocals`.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
- `pcelt`
+ `pcelt`\
 
  [out] Retourne le nombre de propriétés énumérées. Ceci est le même que si vous appelez le [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) (méthode).
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Retourne un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet contenant une liste des propriétés souhaitées.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2bbb227f86d12f6e711b4535da6bfda25b557401
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2420582ab342948d7774e1bb9e4b5947f44f8d2b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695440"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58948816"
  Un type de valeur visible du composant COM (Object Model) est marqué avec le <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribut la valeur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui bloque les clients COM qui attendent une disposition spécifique. Notez que si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, le C#, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], et spécifient les compilateurs C++ le <xref:System.Runtime.InteropServices.LayoutKind> disposition pour les types valeur.
+ <xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui bloque les clients COM qui attendent une disposition spécifique. Notez que si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, le c#, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], et spécifient les compilateurs C++ le <xref:System.Runtime.InteropServices.LayoutKind> disposition pour les types valeur.
 
  Sauf mention contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques ne sont pas visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié ; l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
@@ -56,4 +56,4 @@ ms.locfileid: "58948816"
  [CA1408 : Ne pas utiliser AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Présentation de l’Interface de classe](http://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [qualification des Types .NET pour l’interopérabilité](http://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [interopération avec du Code non managé](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Présentation de l’Interface de classe](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [qualification des Types .NET pour l’interopérabilité](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [interopération avec du Code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

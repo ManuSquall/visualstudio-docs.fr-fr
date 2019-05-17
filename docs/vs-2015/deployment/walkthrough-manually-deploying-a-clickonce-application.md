@@ -21,14 +21,14 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082202"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686326"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : Déploiement manuel d’une Application ClickOnce
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées comme le déploiement d’applications approuvées, vous devez utiliser l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestes. Cette procédure pas à pas décrit comment créer un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à l’aide de la version de ligne de commande (Mage.exe) ou graphique (MageUI.exe) de le Manifest Generation and Editing Tool.  
@@ -57,7 +57,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
      Vous devez signer votre déploiement avec un certificat Authenticode. Vous pouvez générer un certificat de test à l’aide des outils de Visual Studio, MageUI.exe, ou MakeCert.exe et Pvk2Pfx.exe, ou vous pouvez obtenir un certificat à partir d’une autorité de certification (CA). Si vous choisissez d’utiliser le déploiement d’applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs clients. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir à partir d’une autorité de certification.  
+    > Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir à partir d’une autorité de certification.  
   
 - Assurez-vous que l’application n’a pas d’un manifeste avec des informations de compte d’utilisateur.  
   
@@ -76,7 +76,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 2. Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez le sous-répertoire de version **1.0.0.0**.  
   
     > [!NOTE]
-    >  La version de votre déploiement peut être différente de la version de votre application.  
+    > La version de votre déploiement peut être différente de la version de votre application.  
   
 3. Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.  
   
@@ -89,7 +89,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
     ```  
   
     > [!NOTE]
-    >  Veillez à inclure le point (.) après le `-FromDirectory` option, qui indique le répertoire actif. Si vous n’incluez pas le point, vous devez spécifier le chemin d’accès à vos fichiers d’application.  
+    > Veillez à inclure le point (.) après le `-FromDirectory` option, qui indique le répertoire actif. Si vous n’incluez pas le point, vous devez spécifier le chemin d’accès à vos fichiers d’application.  
   
 6. Signer le manifeste d’application avec votre certificat Authenticode. Remplacez *mycert.pfx* avec le chemin d’accès à votre fichier de certificat. Remplacez *passwd* avec le mot de passe pour votre fichier de certificat.  
   
@@ -134,7 +134,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 2. Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez le sous-répertoire de version **1.0.0.0**.  
   
     > [!NOTE]
-    >  La version de votre déploiement est probablement différent de la version de votre application.  
+    > La version de votre déploiement est probablement différent de la version de votre application.  
   
 3. Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.  
   
@@ -206,8 +206,8 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
  Lorsque vous avez besoin déployer une nouvelle version de l’application, créez un répertoire nommé d’après la nouvelle version, par exemple, 1.0.0.1 copier les nouveaux fichiers d’application dans le nouveau répertoire. Ensuite, vous devez suivre les étapes précédentes pour créer et signer un manifeste d’application et mettre à jour et signer le manifeste de déploiement. Veillez à spécifier la même version plus élevée dans les deux Mage.exe `-New` et `–Update` appels, en tant que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] met à jour uniquement les versions ultérieures, avec l’entier le plus à gauche plus significatif. Si vous avez utilisé MageUI.exe, vous pouvez mettre à jour le manifeste de déploiement en l’ouvrant, en sélectionnant le **Application référence** onglet, en cliquant sur le **sélectionner un manifeste** bouton, puis en sélectionnant la mise à jour manifeste d’application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mage.exe (outil Manifest Generation and Editing)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (outil Manifest Generation and Editing, client graphique)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)

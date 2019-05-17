@@ -10,12 +10,12 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 45355ff34b2a088c63f6d303e771d7a5008cb80c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76d7f879fade99914bf3f56ade0ec1270e14f4c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117991"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694592"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Préparation d’extensions au déploiement de Windows Installer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,5 +57,5 @@ Vous ne pouvez pas utiliser un package Windows Installer (MSI) pour déployer un
 5. Ajouter les fichiers restants à votre projet d’installation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déploiement de programme d’installation de Visual Studio](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [Procédure pas à pas : Création d’une Action personnalisée](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Déploiement de programme d’installation de Visual Studio](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [Procédure pas à pas : Création d’une Action personnalisée](https://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

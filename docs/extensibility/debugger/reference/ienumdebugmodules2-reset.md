@@ -1,44 +1,46 @@
 ---
 title: IEnumDebugModules2::Reset | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Reset
 helpviewer_keywords:
 - IEnumDebugModules2::Reset
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: af3e9e7d4c904bc9a0a50a232c764d9c4cf26cf0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914551"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
-Réinitialise l’énumération au premier élément.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```cpp
-HRESULT Reset(
-   void
-);
-```
-
-```csharp
-int Reset();
-```
-
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
-
-## <a name="remarks"></a>Notes
- Une fois que cette méthode est appelée, l’appel suivant à la [suivant](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) méthode retourne le premier élément de l’énumération.
-
-## <a name="see-also"></a>Voir aussi
-- [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
+Réinitialise l’énumération au premier élément.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp#  
+HRESULT Reset(  
+   void  
+);  
+```  
+  
+```csharp  
+int Reset();  
+```  
+  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+  
+## <a name="remarks"></a>Notes  
+ Une fois que cette méthode est appelée, l’appel suivant à la [suivant](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) méthode retourne le premier élément de l’énumération.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

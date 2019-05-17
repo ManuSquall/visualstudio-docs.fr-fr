@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432748"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procédure : Créer un rapport de suivi d’appels outils profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117822"
 Le *rapport de suivi des appels* des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] liste les informations chronologiques de chaque point d’entrée et de sortie des fonctions de votre application, et de chaque appel effectué par votre fonction à d’autres fonctions. Les rapports de suivi des appels sont disponibles pour les données de profilage seulement si elles ont été collectées avec la méthode d’instrumentation.  
   
 > [!NOTE]
->  Vous ne pouvez pas afficher des rapports de suivi des appels dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous devez utiliser l’outil en ligne de commande **VSPerfReport** pour générer un fichier .csv (valeurs séparées par des virgules) ou .xml. Pour plus d’informations sur cet outil, consultez [VSPerfReport](../profiling/vsperfreport.md).  
+> Vous ne pouvez pas afficher des rapports de suivi des appels dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous devez utiliser l’outil en ligne de commande **VSPerfReport** pour générer un fichier .csv (valeurs séparées par des virgules) ou .xml. Pour plus d’informations sur cet outil, consultez [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-create-a-call-trace-report"></a>Pour créer un rapport de suivi des appels  
   

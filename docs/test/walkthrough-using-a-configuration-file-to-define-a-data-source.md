@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935431"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461460"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 
@@ -52,7 +52,7 @@ Pour exécuter cette procédure pas à pas, vous avez besoin des éléments su
 
 3. Sélectionnez le modèle **Fichier de configuration de l’application**, puis cliquez sur **Ajouter**.
 
-##  <a name="define-a-custom-configuration-section"></a>Définir une section de configuration personnalisée
+## <a name="define-a-custom-configuration-section"></a>Définir une section de configuration personnalisée
 
 Examinez le fichier *app.config*. Il contient au moins la déclaration XML et un élément racine.
 
@@ -62,16 +62,16 @@ Examinez le fichier *app.config*. Il contient au moins la déclaration XML et un
 
 2. Dans l’élément **configSections**, créez un élément **section**.
 
-3. Dans l’élément **section**, ajoutez un attribut nommé `name` et assignez-lui la valeur `microsoft.visualstudio.testtools`. Ajoutez un autre attribut nommé `type` et assignez-lui la valeur `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. Dans l’élément **section**, ajoutez un attribut nommé `name` et assignez-lui la valeur `microsoft.visualstudio.testtools`. Ajoutez un autre attribut nommé `type` et assignez-lui la valeur `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 L’élément **section** doit être similaire à ce qui suit :
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Le nom de l'assembly doit correspondre à la version de Microsoft Visual Studio .NET Framework que vous utilisez. Définissez la version 9.0.0.0 si vous utilisez Visual Studio .NET Framework 3.5. Si vous utilisez Visual Studio .NET Framework 2.0, définissez la version 8.0.0.0.
+> Le nom de l'assembly doit correspondre à la version de Microsoft Visual Studio .NET Framework que vous utilisez.
 
 ## <a name="define-connection-strings"></a>Définir des chaînes de connexion
 

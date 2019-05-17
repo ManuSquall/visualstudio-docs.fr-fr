@@ -11,29 +11,29 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d768a8024755fcee10413495c48da9e20456751
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705814"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] afin que l’environnement de développement intégré (IDE) achemine ses commandes correctement.  
   
- Le Registre peut être mis à jour par une modification manuelle ou à l’aide d’un fichier d’inscription (.rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Le Registre peut être mis à jour par une modification manuelle ou à l’aide d’un fichier d’inscription (.rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Managed Package Framework (MPF) fournit cette fonctionnalité via le <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.  
   
- [Référence de Format de Table de la commande](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans la DLL de l’interface utilisateur de satellites non managé.  
+ [Référence de Format de Table de la commande](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans la DLL de l’interface utilisateur de satellites non managé.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du Gestionnaire de commande d’un VSPackage  
  Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, où  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 9.0.  
   
 > [!NOTE]
->  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation les VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation les VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>L’entrée de Registre de ressource CTMENU  
  La structure de l’entrée de Registre est :  

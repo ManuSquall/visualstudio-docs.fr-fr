@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787390"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Bien démarrer avec Live Unit Testing dans Visual Studio
 
@@ -94,11 +94,11 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 
    `StringLibrary` a trois méthodes statiques :
 
-      - `StartsWithUpper` retourne `true` si une chaîne commence par un caractère majuscule ; sinon, elle retourne `false`.
+   - `StartsWithUpper` retourne `true` si une chaîne commence par un caractère majuscule ; sinon, elle retourne `false`.
 
-      - `StartsWithLower` retourne `true` si une chaîne commence par un caractère minuscule ; sinon, elle retourne `false`.
+   - `StartsWithLower` retourne `true` si une chaîne commence par un caractère minuscule ; sinon, elle retourne `false`.
 
-      - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
+   - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
 
 6. Sélectionnez **Générer** > **Générer la solution** dans le menu Visual Studio du plus haut niveau. Visual Studio doit normalement générer correctement votre bibliothèque.
 
@@ -140,11 +140,11 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 
    `StringLibrary` a trois méthodes statiques :
 
-      - `StartsWithUpper` retourne `true` si une chaîne commence par un caractère majuscule ; sinon, elle retourne `false`.
+   - `StartsWithUpper` retourne `true` si une chaîne commence par un caractère majuscule ; sinon, elle retourne `false`.
 
-      - `StartsWithLower` retourne `true` si une chaîne commence par un caractère minuscule ; sinon, elle retourne `false`.
+   - `StartsWithLower` retourne `true` si une chaîne commence par un caractère minuscule ; sinon, elle retourne `false`.
 
-      - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
+   - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
 
 6. Cliquez avec le bouton droit sur le projet StringLibrary dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Sous l’onglet **Application**, supprimez le texte dans la zone de texte **Espace de noms racine**, comme le montre l’illustration suivante. L’espace de noms racine est défini par [l’instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) dans le code source.
 

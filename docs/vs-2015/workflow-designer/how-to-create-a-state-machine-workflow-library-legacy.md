@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca54c1585d683745bb42815921f3982c9c0fd441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: acfa4a979614269c07969e4c01df4e994195cd64
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084893"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697117"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procédure : Créer une bibliothèque de workflows de machine à états (héritée)
 Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinateur d'état à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinat
 3. Sélectionnez le **.NET Framework 3.0** option ou **.NET Framework 3.5** option dans la liste déroulante située en haut de la **nouveau projet** fenêtre pour accéder au concepteur hérité.  
   
     > [!NOTE]
-    >  L’option par défaut dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] est **.NET Framework 4**. Cette option permet de créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] et elle n'utilise pas le concepteur hérité.  
+    > L’option par défaut dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] est **.NET Framework 4**. Cette option permet de créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] et elle n'utilise pas le concepteur hérité.  
   
 4. Dans le **Types de projets** volet, sélectionnez Visual c# ou Visual Basic (sous **autres langages**), puis sélectionnez **Workflow**.  
   
@@ -50,4 +50,4 @@ Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinat
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Workflows de machine à états](http://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)
+ [Workflows de machine à états](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)

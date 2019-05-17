@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac7cbfa337bfdcf54d213b299badc9ca56d8dcba
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cf86151f950aef49221677e2002ee3882b85e835
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716309"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614837"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Définit le nombre d’accès pour le point d’arrêt lié.
@@ -37,10 +40,9 @@ int SetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwHitCount`
-
- [in] Le nombre d’accès à définir.
+## <a name="parameters"></a>Paramètres
+`dwHitCount`\
+[in] Le nombre d’accès à définir.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).

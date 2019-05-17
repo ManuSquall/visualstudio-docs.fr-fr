@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117627"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680374"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
     La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
    > [!NOTE]
-   >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
+   > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
 3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   
@@ -56,7 +56,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
      La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
     > [!NOTE]
-    >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
+    > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
 3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   
@@ -66,4 +66,4 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

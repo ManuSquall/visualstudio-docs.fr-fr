@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9073edad55a648286a068df5e368e08893ff0a3f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33dfa4fb7a303b02121098b0e517f95d6e40f586
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071380"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697440"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erreur : Le débogage en mode mixte des processus IA64 n’est pas pris en charge
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ Le débogueur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne prend pas en ch
 - Générez une version 32 bits de votre application pour le débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configurer les outils de contrôle à distance sur le périphérique](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Configurer les outils de contrôle à distance sur le périphérique](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

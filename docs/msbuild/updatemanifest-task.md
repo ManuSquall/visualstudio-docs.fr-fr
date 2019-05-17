@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0dd2ddfdbe784a45badfd0138b41b1f5dbff8ec7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954464"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (tâche)
 Met à jour les propriétés sélectionnées dans un manifeste et signe à nouveau.

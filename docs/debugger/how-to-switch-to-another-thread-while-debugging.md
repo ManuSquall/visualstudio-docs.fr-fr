@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849402"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Procédure : Basculer vers un autre Thread pendant un débogage dans Visual Studio (C#, Visual Basic, C++)
 Lorsque vous déboguez une application multithread, vous pouvez utiliser l’une des méthodes pour basculer du thread qui vous avez travaillé avec vers un autre thread.

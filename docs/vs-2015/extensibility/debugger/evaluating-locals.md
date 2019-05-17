@@ -11,18 +11,18 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444771"
 ---
 # <a name="evaluating-locals"></a>Évaluation des variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) est appelée pour obtenir la valeur de local, ainsi que les nom de l’ordinateur local et le type. Dans la mesure où la valeur d’une variable locale est dépendante de l’état actuel du programme, la valeur de la locale doit être obtenue à partir de la mémoire. Le [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objet est utilisé pour lier le [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet représentant l’ordinateur local vers l’emplacement approprié dans la mémoire contenant la valeur. Cet emplacement en mémoire est représenté par un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
   

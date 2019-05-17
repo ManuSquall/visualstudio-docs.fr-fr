@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 71d7da44eacecfc8a06f202a27f7758d6eb2ca98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415665"
 ---
 # <a name="supported-event-types"></a>Types d’événements pris en charge
 Débogage de Visual Studio prend actuellement en charge les types d’événements suivants :
@@ -43,7 +43,7 @@ Débogage de Visual Studio prend actuellement en charge les types d’événemen
     Les interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sont des exemples d’événements d’arrêt.
 
   > [!NOTE]
-  >  Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.
+  > Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.
 
 ## <a name="discussion"></a>Discussion
  L’implémentation réelle des événements dépend de la conception de votre DE. Le type de chaque événement envoyé est déterminé par ses attributs, qui sont définis lorsque vous concevez l’Allemagne. Par exemple, un dé peut envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) comme un événement asynchrone, tandis que l’autre peut l’envoyer comme un événement d’arrêt.
@@ -51,19 +51,19 @@ Débogage de Visual Studio prend actuellement en charge les types d’événemen
  Le tableau suivant spécifie les paramètres de programme et de thread sont nécessaires pour les événements, ainsi que les types d’événements. N’importe quel événement peut être synchrone. Aucun événement ne doit être synchrone.
 
 > [!NOTE]
->  Le [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface est requise pour tous les événements.
+> Le [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface est requise pour tous les événements.
 
 |Événement|IDebugProgram2|IDebugThread2|Les événements d’arrêt|
 |-----------|--------------------|-------------------|---------------------|
-|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
+|[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obligatoire|Obligatoire|Oui|
-|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
+|[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Obligatoire|Obligatoire|Oui|
-|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Obligatoire|Obligatoire|Aucune|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Non autorisé|Non autorisé|Aucune|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Non autorisé|Non autorisé|Aucune|
+|[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Obligatoire|Obligatoire|Non|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Non autorisé|Non autorisé|Non|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Non autorisé|Non autorisé|Non|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Obligatoire|Obligatoire|Oui|
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Peut être|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Obligatoire|Obligatoire|Oui|
@@ -71,19 +71,19 @@ Débogage de Visual Studio prend actuellement en charge les types d’événemen
 |[IDebugInterceptExceptionCompleteEvent2](../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)|Obligatoire|Obligatoire|Oui|
 |[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)|Obligatoire|Obligatoire|Oui|
 |[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Peut être|
-|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
+|[IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugPropertyCreateEvent2](../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugPropertyDestroyEvent2](../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)|Obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugReturnValueEvent2](../../extensibility/debugger/reference/idebugreturnvalueevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
 |IDebugStopCompleteEvent2|Obligatoire|Obligatoire|Oui|
 |[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)|Obligatoire|Obligatoire|Oui|
-|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
-|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Obligatoire|Obligatoire|Aucune|
-|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Obligatoire|Obligatoire|Aucune|
-|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Aucune|
+|[IDebugSymbolSearchEvent2](../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
+|[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|Obligatoire|Obligatoire|Non|
+|[IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)|Obligatoire|Obligatoire|Non|
+|[IDebugThreadNameChangedEvent2](../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|Autorisée, mais pas obligatoire|Autorisée, mais pas obligatoire|Non|
 
 ## <a name="see-also"></a>Voir aussi
 - [Envoi d’événements](../../extensibility/debugger/sending-events.md)

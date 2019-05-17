@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d00c520f75869e6cf886074c482575f1170e923a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679528"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Spécification d'événements de build personnalisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
 
 - Visual C# et F#--[Comment : Spécifier les événements de Build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
-- Visual C++--[Spécifications d’événements de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++--[Spécifications d’événements de build](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Syntaxe
  Les événements de build suivent la même syntaxe que les commandes DOS, mais vous pouvez utiliser des macros pour créer plus facilement des événements de build. Pour obtenir la liste des macros disponibles, consultez [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
@@ -53,7 +53,7 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
      Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
 
     > [!NOTE]
-    >  `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
+    > `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
 
 ## <a name="see-also"></a>Voir aussi
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md) [boîte de dialogue ligne de commande/Post-build événement pré-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md) [procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md)

@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043664"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695023"
 ---
 # <a name="creating-a-settings-category"></a>Création d’une catégorie de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Dans cette procédure pas à pas, vous allez créer une catégorie de paramètres Visual Studio et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres. Une catégorie de paramètres est un groupe de propriétés connexes qui apparaissent sous la forme d’un « point de paramètres personnalisés ; » Autrement dit, comme une case à cocher dans la **importation et exportation de paramètres** Assistant. (Vous pouvez le trouver sur le **outils** menu.) Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les paramètres individuels ne sont pas affichés dans l’Assistant. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Vous créez une catégorie de paramètres en dérivant de la <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
   
@@ -47,7 +47,7 @@ Dans cette procédure pas à pas, vous allez créer une catégorie de paramètre
      Cela crée les ressources ce nom de la catégorie « My Category », l’objet « mes paramètres » et la description de la catégorie « OptionInteger et OptionFloat ».  
   
     > [!NOTE]
-    >  Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans l’Assistant Importation et exportation de paramètres.  
+    > Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans l’Assistant Importation et exportation de paramètres.  
   
 3. Dans MyToolsOptionsPackage.cs, ajoutez un `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.  
   
@@ -77,7 +77,7 @@ Dans cette procédure pas à pas, vous allez créer une catégorie de paramètre
     ```  
   
     > [!NOTE]
-    >  Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.  
+    > Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.  
   
 4. Ajouter un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> à la `MyToolsOptionsPackage` classe et donnez-lui le nom de la catégorie « My Category », attribuez-lui le NomObjet « Mes paramètres », puis isToolsOptionPage la valeur true. Définir categoryResourceID, objectNameResourceID et DescriptionResourceID à la ressource de chaîne correspondant Qu'id créés précédemment.  
   

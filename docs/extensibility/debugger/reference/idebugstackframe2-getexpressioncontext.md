@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c453de210e503722dbf9da518a813f62090c495
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee4f7ec068b3daa77692d4ab64d327ebb8f61766
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698662"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457402"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 Obtient un contexte d’évaluation pour l’évaluation d’expression dans le contexte actuel d’un frame de pile et le thread.
@@ -36,8 +39,8 @@ int GetExpressionContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppExprCxt`
+## <a name="parameters"></a>Paramètres
+ `ppExprCxt`\
 
  [out] Retourne un [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) objet qui représente un contexte pour l’évaluation de l’expression.
 

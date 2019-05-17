@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701148"
 ---
 # <a name="creating-solutions-and-projects"></a>Création de projets et de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109809"
 Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour générer votre application. Quand vous créez un projet en choisissant **Fichier &#124; Nouveau &#124; Projet** dans le menu principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée une solution pour le contenir. Vous pouvez ensuite si nécessaire ajouter plusieurs projets nouveaux ou existants à la solution. Vous pouvez créer des projets à partir de fichiers de code existants et vous pouvez créer des projets temporaires (.NET uniquement) qui sont supprimés quand vous en avez terminé avec eux.  
   
 > [!NOTE]
->  Les descriptions de cette rubrique sont basées sur l'édition Visual Studio Community. Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites ici, selon vos paramètres ou votre version de Visual Studio. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les descriptions de cette rubrique sont basées sur l'édition Visual Studio Community. Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites ici, selon vos paramètres ou votre version de Visual Studio. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Créer un projet à partir d'un modèle de projet installé  
  **Fichier &#124; Nouveau &#124; Projet** dans le menu principal pour afficher la boîte de dialogue Nouveau projet. Dans le volet gauche sous **Installé &#124; Modèles**, choisissez le langage de programmation, et la plateforme ou la technologie, puis choisissez parmi les modèles disponibles dans le volet central.  
@@ -42,7 +42,7 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
  Si vous avez une collection de fichiers non intégrés, vous pouvez facilement créer un projet qui les contient. Choisissez **Fichier &#124; Nouveau &#124; Projet à partir de code existant** pour démarrer l’**Assistant Créer un projet à partir de fichiers de code existants** et suivez les invites.  
   
 > [!TIP]
->  Cette option convient le mieux pour les collections de fichiers relativement simples.  
+> Cette option convient le mieux pour les collections de fichiers relativement simples.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Créer un projet temporaire (C# et Visual Basic)  
  En travaillant avec des projets temporaires, vous pouvez créer et expérimenter un projet .NET sans spécifier un emplacement sur le disque. Quand vous créez un projet, vous sélectionnez simplement un type et un modèle de projet, et vous spécifiez un nom dans la boîte de dialogue **Nouveau projet** . Pendant que vous travaillez avec le projet temporaire, vous pouvez à tout moment l'enregistrer ou vous pouvez l'abandonner.  
@@ -83,7 +83,7 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
  Vous pouvez supprimer définitivement une solution, mais pas à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Avant de supprimer une solution, déplacez les projets que vous pourriez vouloir réutiliser vers une autre solution. Utilisez ensuite l'Explorateur de fichiers pour supprimer le répertoire qui contient les fichiers solution .sln et .suo.  
   
 > [!NOTE]
->  Le fichier .suo est un fichier masqué qui n'apparaît pas dans les paramètres par défaut de l'Explorateur de fichiers.  
+> Le fichier .suo est un fichier masqué qui n'apparaît pas dans les paramètres par défaut de l'Explorateur de fichiers.  
   
 ##### <a name="to-delete-a-solution"></a>Pour supprimer une solution  
   
@@ -95,4 +95,4 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
   
 ## <a name="see-also"></a>Voir aussi  
  [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB Guide pratique pour créer des solutions à plusieurs projets](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB Guide pratique pour créer des solutions à plusieurs projets](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

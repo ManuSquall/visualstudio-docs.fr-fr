@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684913"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un 
 ## <a name="BKMK_Unsupported_scenarios"></a> Scénarios non pris en charge  
  Modifier & Continuer pour C/C++ n'est pas disponible dans les scénarios de débogage suivants :  
   
-- Débogage des applications natives compilées avec [/zo (Améliorer le débogage optimisé)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Débogage des applications natives compilées avec [/zo (Améliorer le débogage optimisé)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - Dans les versions de Visual Studio antérieures à Visual Studio 2015 Mise à jour 1, débogage des applications ou des composants du Windows Store. À partir de Visual Studio 2015 Update 1, vous pouvez utiliser Modifier &amp; Continuer dans les applications C++ Windows Store et les applications DirectX, car il prend désormais en charge le commutateur de compilateur `/ZI` avec le commutateur  `/bigobj` . Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .  
   
@@ -141,7 +141,7 @@ Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un 
 3. Désactivez la case à cocher **Autoriser la précompilation** .  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Limitations des attributs IDL  
- La fonction Modifier & Continuer ne régénère pas de fichiers de définition d'interface (IDL). Par conséquent, les modifications des attributs IDL ne seront pas reflétées pendant le débogage. Pour voir le résultat des modifications apportées aux attributs IDL, vous devez arrêter le débogage et régénérer votre application. Modifier & Continuer ne génère pas d'erreur ou d'avertissement lorsque des attributs IDL ont été modifiés. Pour plus d'informations, consultez [Attributs IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ La fonction Modifier & Continuer ne régénère pas de fichiers de définition d'interface (IDL). Par conséquent, les modifications des attributs IDL ne seront pas reflétées pendant le débogage. Pour voir le résultat des modifications apportées aux attributs IDL, vous devez arrêter le débogage et régénérer votre application. Modifier & Continuer ne génère pas d'erreur ou d'avertissement lorsque des attributs IDL ont été modifiés. Pour plus d'informations, consultez [Attributs IDL](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

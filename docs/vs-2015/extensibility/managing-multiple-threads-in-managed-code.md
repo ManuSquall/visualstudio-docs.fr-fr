@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433057"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Gérer plusieurs threads dans le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Si vous avez une extension VSPackage managée qui appelle des méthodes asynchro
  En règle générale, vous pouvez basculer le thread d’interface utilisateur à un autre thread, ou vice versa. Lorsque la méthode est retournée, le thread actuel est le thread à partir duquel il a été initialement appelé.  
   
 > [!IMPORTANT]
->  Les instructions suivantes utilisent les API dans le <xref:Microsoft.VisualStudio.Threading> espace de noms, en particulier, la <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Les API dans cet espace de noms sont nouvelles dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Vous pouvez obtenir une instance d’un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> à partir de la <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propriété `ThreadHelper.JoinableTaskFactory`.  
+> Les instructions suivantes utilisent les API dans le <xref:Microsoft.VisualStudio.Threading> espace de noms, en particulier, la <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Les API dans cet espace de noms sont nouvelles dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Vous pouvez obtenir une instance d’un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> à partir de la <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propriété `ThreadHelper.JoinableTaskFactory`.  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Basculement à partir du Thread d’interface utilisateur à un Thread d’arrière-plan  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910005"
 ---
 # <a name="create-project-types"></a>Créer des types de projets
 Vous pouvez étendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en créant un nouveau type de projet. Pour créer un nouveau type de projet, vous devez comprendre les différents concepts et effectuer un certain nombre d’étapes. Les rubriques suivantes fournissent une vue d’ensemble de la création de types de projets.
@@ -26,7 +26,7 @@ Vous pouvez étendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)
 
  Décrit l’élément, persistance d’un fichier projet et les décisions de conception mécanique d’engagement que vous avez à faire avant de créer un nouveau type de projet.
 
-- [Liste de vérification : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de contrôle : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
 
  Fournit une vue d’ensemble des étapes à suivre pour créer un nouveau type de projet qui prend en charge de ces tâches de programmation en tant que la modification du code et compilation, création, le débogage et déploiement d’applications dans votre projet.
 

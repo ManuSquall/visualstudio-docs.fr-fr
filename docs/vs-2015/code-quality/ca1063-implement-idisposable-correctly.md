@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081396"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686903"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081396"
 
   Violation de l’un de ces modèles déclenche cet avertissement.
 
-  Chaque type IDisposable racine non scellé doit fournir sa propre méthode Dispose (bool) void virtuelle protégée. Dispose() doit appeler Dipose (true) et Finalize doit appeler la méthode Dispose (false). Si vous créez un type de IDisposable racine non scellé, vous devez définir dispose (bool) et l’appeler. Pour plus d’informations, consultez [de nettoyage des ressources non managées](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) dans le [instructions de conception Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) section de la documentation .NET Framework.
+  Chaque type IDisposable racine non scellé doit fournir sa propre méthode Dispose (bool) void virtuelle protégée. Dispose() doit appeler Dipose (true) et Finalize doit appeler la méthode Dispose (false). Si vous créez un type de IDisposable racine non scellé, vous devez définir dispose (bool) et l’appeler. Pour plus d’informations, consultez [de nettoyage des ressources non managées](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) dans le [instructions de conception Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) section de la documentation .NET Framework.
 
 ## <a name="rule-description"></a>Description de la règle
  Tous les types IDisposable doivent implémenter le modèle Dispose correctement.

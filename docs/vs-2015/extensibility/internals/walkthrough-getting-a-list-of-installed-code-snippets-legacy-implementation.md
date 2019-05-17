@@ -12,12 +12,12 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9948950322c0d4f994ed9c12fe6ebec5112b6d13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440760"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Un extrait de code est un morceau de code qui peut être insérée dans la mémo
 1. La méthode suivante montre comment appeler le `GetSnippets` méthode à la fin d’une opération d’analyse. Le <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> méthode est appelée après une opération d’analyse qui a été démarrée avec la raison <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  Le `expansionsList` listis mis en cache pour des raisons de performances de tableau. Modifications pour les extraits de code ne sont pas répercutées dans la liste jusqu'à ce que le service de langage est arrêté et rechargé (par exemple, en arrêtant et redémarrant [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> Le `expansionsList` listis mis en cache pour des raisons de performances de tableau. Modifications pour les extraits de code ne sont pas répercutées dans la liste jusqu'à ce que le service de langage est arrêté et rechargé (par exemple, en arrêtant et redémarrant [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  

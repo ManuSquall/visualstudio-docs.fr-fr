@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434429"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procédure : Modifier le Point Pivot d’un modèle 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour modifier le *po
     Vous pouvez également spécifier le point pivot à l’aide de la propriété **Translation du pivot** de la fenêtre **Propriétés**.  
   
    > [!TIP]
-   >  Vous pouvez visionner l’effet du nouveau point pivot en pivotant l’objet. Pour le faire pivoter, utilisez l’outil **Rotation** ou modifiez la propriété **Rotation**.  
+   > Vous pouvez visionner l’effet du nouveau point pivot en pivotant l’objet. Pour le faire pivoter, utilisez l’outil **Rotation** ou modifiez la propriété **Rotation**.  
   
    Voici un modèle dont un point pivot est modifié :  
   

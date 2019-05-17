@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851619"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.

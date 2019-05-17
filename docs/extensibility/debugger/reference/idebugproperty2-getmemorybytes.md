@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12d35ace2d5a2b2f0c10d4b2e0a44a05f52942fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 47013153326bd2c86dd897d519fa87a64f9464ed
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684128"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458898"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
 Obtient les octets de mémoire qui composent la valeur d’une propriété.
@@ -36,8 +39,8 @@ int GetMemoryBytes ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppMemoryBytes`
+## <a name="parameters"></a>Paramètres
+ `ppMemoryBytes`\
 
  [out] Retourne un [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objet qui peut être utilisé pour récupérer la mémoire qui contient la valeur de la propriété.
 

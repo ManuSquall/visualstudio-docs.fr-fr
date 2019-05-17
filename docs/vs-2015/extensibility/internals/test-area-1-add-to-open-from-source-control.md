@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441261"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 - Pour [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ajouter à partir de la source de contrôle est également disponible à partir de **fichier**, **ajouter**, **projet existant**; recherchez dans le [!INCLUDE[vsvss](../../includes/vsvss-md.md)] emplacement.  
   
     > [!NOTE]
-    >  Un chemin d’accès d’un fichier local ou d’un serveur IIS local (serveur web) peut être utilisé dans ce test.  
+    > Un chemin d’accès d’un fichier local ou d’un serveur IIS local (serveur web) peut être utilisé dans ce test.  
   
 ## <a name="expected-behavior"></a>Comportement attendu  
   

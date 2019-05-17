@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 39ef9d059353f143c80e8956fa14f1812dc90859
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861848"
 ---
 # <a name="idsymbol-element"></a>Élément IDSymbol
 Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Le GUID est fourni à partir du parent `GuidSymbol` élément. Le `IDSymbol` élément a un `name` attribut qui fournit un nom convivial pour l’ID, qui est contenue dans le `value` attribut.

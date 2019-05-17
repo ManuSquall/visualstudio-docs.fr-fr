@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703193"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
  Le **Éditeur d’ensemble de règles** boîte de dialogue est utilisée pour créer et modifier [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) sérialisés dans un fichier .rules ensembles de règles.  
   
 > [!NOTE]
->  Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.  
+> Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.  
   
  Pour plus d’informations sur l’accès à la **Éditeur d’ensemble de règles** boîte de dialogue, consultez [Comment : Créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
+> L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
   
  Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **Éditeur d’ensemble de règles** boîte de dialogue.  
   
@@ -76,7 +76,7 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
   
   La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
   
-  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Fonctions d'arrêt et de mise à jour  
  **Actions Then :** et **Actions Else :** expressions prennent en charge **Halt** et **mise à jour** fonctions. À utiliser le **Halt** de fonction, tapez **Halt** dans un **puis Action :** ou **Action Else :** zone de texte. Le **Halt** entraîne l’exécution de jeu de règles arrêter immédiatement, et le contrôle retourne au code appelant. Vous utilisez le **mise à jour** fonction avec le chaînage avant.  

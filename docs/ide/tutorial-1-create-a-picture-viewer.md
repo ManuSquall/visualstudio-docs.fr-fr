@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821809"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : Créer une visionneuse d’images
 
 Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous découvrez comment utiliser le **Concepteur Windows Forms** pour faire glisser des contrôles (par exemple des boutons et des zones d’image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :
 
--   Créer un nouveau projet.
+- Créer un nouveau projet.
 
--   Tester (déboguer) une application.
+- Tester (déboguer) une application.
 
--   Ajouter des contrôles de base, comme des cases à cocher et des boutons, à un formulaire.
+- Ajouter des contrôles de base, comme des cases à cocher et des boutons, à un formulaire.
 
--   Positionner des contrôles sur un formulaire à l'aide de dispositions.
+- Positionner des contrôles sur un formulaire à l'aide de dispositions.
 
--   Ajouter des boîtes de dialogue **Ouvrir un fichier** et **Couleur** à un formulaire.
+- Ajouter des boîtes de dialogue **Ouvrir un fichier** et **Couleur** à un formulaire.
 
--   Écrire du code à l'aide d'IntelliSense et d'extraits de code.
+- Écrire du code à l'aide d'IntelliSense et d'extraits de code.
 
--   Écrire des méthodes de gestionnaire d'événements.
+- Écrire des méthodes de gestionnaire d'événements.
 
 Quand vous avez terminé, votre programme se présente comme dans l’image suivante :
 

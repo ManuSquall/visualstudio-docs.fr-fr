@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387535"
 ---
 # <a name="how-to-start-spy"></a>Procédure : Démarrer Spy++
 
@@ -24,7 +24,7 @@ Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de comm
  Lorsque vous démarrez Spy ++, si un message s’affiche pour demander l’autorisation d’apporter des modifications à l’ordinateur, sélectionnez **Oui**.
 
 > [!NOTE]
->  Vous pouvez exécuter qu’une seule instance de Spy ++. Si vous essayez de démarrer une deuxième instance, en fait l’instance en cours d’exécution obtenir le focus.
+> Vous pouvez exécuter qu’une seule instance de Spy ++. Si vous essayez de démarrer une deuxième instance, en fait l’instance en cours d’exécution obtenir le focus.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -42,7 +42,7 @@ Sur le **outils** menu, sélectionnez **Spy ++**.
 Étant donné que Spy ++ s’exécute indépendamment, après le démarrage, vous pouvez fermer Visual Studio.
 
 > [!NOTE]
->  Si vous consignez des messages avec Spy ++, il peut entraîner le système d’exploitation exécute plus lentement.
+> Si vous consignez des messages avec Spy ++, il peut entraîner le système d’exploitation exécute plus lentement.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Démarrer Spy ++ à une invite de commandes
 

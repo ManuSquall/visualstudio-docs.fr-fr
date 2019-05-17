@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e975986a03e7005835653dc98931fc9a44681e28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700481"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency, espace de noms (visualiseur concurrentiel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'espace de noms `Concurrency` fournit des classes et des fonctions qui vous donnent accès au runtime d'accès concurrentiel, infrastructure de programmation simultanée pour C++. Pour plus d’informations, consultez [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+L'espace de noms `Concurrency` fournit des classes et des fonctions qui vous donnent accès au runtime d'accès concurrentiel, infrastructure de programmation simultanée pour C++. Pour plus d’informations, consultez [Runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,11 +35,11 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>Espaces de noms  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[Diagnostic, espace de noms](../profiling/diagnostic-namespace.md)|L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkersobj.h  
   
 ## <a name="see-also"></a>Voir aussi  

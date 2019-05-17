@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444218"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
  Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Vous pouvez par exemple définir une extension VSIX qui comprend des commandes de couche, un langage spécifique à un domaine et des commandes pour des diagrammes UML.  
   
 > [!NOTE]
->  Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de couche. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de couche. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Configuration requise  
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,7 +65,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 1. Créez un projet de bibliothèque de classes dans une solution Visual Studio nouvelle ou existante. Dans la boîte de dialogue **Nouveau projet** , cliquez sur **Visual C#** , puis sur **Bibliothèque de classes**. Ce projet contiendra les classes des commandes ou des gestionnaires de mouvements.  
   
     > [!NOTE]
-    >  Vous pouvez définir plusieurs classes de gestionnaires de mouvements ou de commandes dans une bibliothèque de classes, mais vous devez définir les classes de validation de couche dans une bibliothèque de classes distincte.  
+    > Vous pouvez définir plusieurs classes de gestionnaires de mouvements ou de commandes dans une bibliothèque de classes, mais vous devez définir les classes de validation de couche dans une bibliothèque de classes distincte.  
   
 2. Identifiez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**. Pour ajouter un projet VSIX :  
   

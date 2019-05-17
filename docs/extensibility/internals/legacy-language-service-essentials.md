@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cf8b6c509e8a748060656f83f760fd245b852157
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418365"
 ---
 # <a name="legacy-language-service-essentials"></a>Éléments fondamentaux du service de langage hérité
 Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique décrit les fonctionnalités disponibles dans les services de langage hérité.
@@ -26,7 +26,7 @@ Vous devez fournir un service de langage pour intégrer un langage de programmat
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
  Services de langage hérité fournissent les fonctionnalités suivantes :
 

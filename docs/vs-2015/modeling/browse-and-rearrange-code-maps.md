@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433432"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 - Un lien global représente toutes les relations qui pointent dans la même direction entre deux groupes.  
   
 > [!TIP]
->  Par défaut, la carte affiche les liens entre les groupes uniquement pour les nœuds sélectionnés. Pour modifier ce comportement pour afficher ou masquer les liens globaux entre les groupes, cliquez sur **disposition** sur le code de mapper la barre d’outils et choisissez **avancé**, puis **afficher tous les liens entre les groupes** ou **Masquer tous les liens entre les groupes**. Consultez [masquer ou afficher les nœuds et les liens](#HidingShowing) pour plus d’informations.  
+> Par défaut, la carte affiche les liens entre les groupes uniquement pour les nœuds sélectionnés. Pour modifier ce comportement pour afficher ou masquer les liens globaux entre les groupes, cliquez sur **disposition** sur le code de mapper la barre d’outils et choisissez **avancé**, puis **afficher tous les liens entre les groupes** ou **Masquer tous les liens entre les groupes**. Consultez [masquer ou afficher les nœuds et les liens](#HidingShowing) pour plus d’informations.  
   
 |**To**|**Effectuez ces étapes**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
  Masquer des nœuds les empêche de participer aux algorithmes de disposition. Par défaut, les liens entre les groupes sont masqués. Les liens entre les groupes sont des liens individuels qui relient vos nœuds entre différents groupes. Quand les groupes sont réduits, la carte rassemble tous les liens entre les groupes sous forme de liens uniques. Lorsque vous développez un groupe et sélectionnez des nœuds dans le groupe, les liens entre les groupes apparaissent et mettent en exergue les dépendances dans ce groupe.  
   
 > [!CAUTION]
->  Avant de partager une carte créée dans Visual Studio Enterprise avec des personnes qui utilisent Visual Studio Professional, veillez à afficher tous les nœuds et liens entre les groupes que vous souhaitez qu'elles puissent voir. Sinon, ces utilisateurs ne pourront pas afficher ces éléments.  
+> Avant de partager une carte créée dans Visual Studio Enterprise avec des personnes qui utilisent Visual Studio Professional, veillez à afficher tous les nœuds et liens entre les groupes que vous souhaitez qu'elles puissent voir. Sinon, ces utilisateurs ne pourront pas afficher ces éléments.  
   
 ### <a name="to-hide-or-show-nodes"></a>Pour masquer ou afficher les nœuds  
   
@@ -153,7 +153,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
  Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler ou la simplifier. Vous pouvez aussi renommer des éléments et y ajouter des commentaires.  
   
 > [!CAUTION]
->  Avant de partager une carte créée à l'aide de Visual Studio Enterprise avec des personnes qui utilisent Visual Studio Professional, veillez à ce que les éléments de code que vous souhaitez que les autres puissent voir soient visibles sur la carte. Sinon, ces utilisateurs ne pourront pas récupérer les éléments de code supprimés.  
+> Avant de partager une carte créée à l'aide de Visual Studio Enterprise avec des personnes qui utilisent Visual Studio Professional, veillez à ce que les éléments de code que vous souhaitez que les autres puissent voir soient visibles sur la carte. Sinon, ces utilisateurs ne pourront pas récupérer les éléments de code supprimés.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Ajouter un nœud pour un élément de code  
   
@@ -267,7 +267,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 3. Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans le **légende** zone, puis choisissez **propriété de nœud**, **catégorie de nœud** , **Lier la propriété**, ou **lier catégorie**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans le **légende** boîte.  
   
     > [!NOTE]
-    >  Pour créer et affecter une catégorie ou une propriété à un élément de code, vous pouvez modifier le fichier .dgml ; consultez [cartes de code de la personnaliser en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Pour créer et affecter une catégorie ou une propriété à un élément de code, vous pouvez modifier le fichier .dgml ; consultez [cartes de code de la personnaliser en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. Dans le **légende** zone, cliquez sur l’icône en regard de la catégorie ou la propriété que vous avez ajouté, ou vous souhaitez modifier.  
   
@@ -290,7 +290,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     |Couleur ou icône spécifique|Ouvrez la liste de valeurs des catégories ou des propriétés. Sélectionnez une couleur ou une icône.|  
   
     > [!NOTE]
-    >  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans le **légende** boîte. Consultez [modifier la zone de légende](#ModifyLegend).  
+    > Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans le **légende** boîte. Consultez [modifier la zone de légende](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Modifier la zone de légende  
  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans le **légende** zone :  

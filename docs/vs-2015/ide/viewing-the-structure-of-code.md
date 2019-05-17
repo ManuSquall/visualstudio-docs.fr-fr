@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443208"
 ---
 # <a name="viewing-the-structure-of-code"></a>Affichage de la structure du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
  Si vous disposez de Visual Studio Enterprise, vous pouvez utiliser les plans de code pour visualiser la structure de votre code et ses dépendances sur l’ensemble de la solution, et explorer les parties du code qui vous intéressent. Pour plus d’informations, consultez [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.  
+> L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.  
   
 ## <a name="BKMK_ClassView"></a> Affichage de classes (Visual Basic, C#, C++)  
  L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** ainsi que dans une fenêtre distincte. La fenêtre **Affichage de classes** affiche les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).  

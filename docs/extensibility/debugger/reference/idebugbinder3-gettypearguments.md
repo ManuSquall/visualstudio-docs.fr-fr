@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712149"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614672"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Cette méthode récupère une liste des types d’arguments associée à cet objet.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `skip`
+## <a name="parameters"></a>Paramètres
+`skip`\
+[in] Nombre de champs à ignorer avant d’obtenir les types d’arguments.
 
- [in] Nombre de champs à ignorer avant d’obtenir les types d’arguments.
+`count`\
+[in] Le nombre de champs de l’argument à retourner (spécifie également la taille de la `ppFields` tableau).
 
- `count`
+`ppFields`\
+[in, out] Un tableau de champs renseignés au retour de cette méthode.
 
- [in] Le nombre de champs de l’argument à retourner (spécifie également la taille de la `ppFields` tableau).
-
- `ppFields`
-
- [in, out] Un tableau de champs renseignés au retour de cette méthode.
-
- `pFetched`
-
- [out] \(facultatif) Le nombre d’argument de type champs réellement retournés.
+`pFetched`\
+[out] \(facultatif) Le nombre d’argument de type champs réellement retournés.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

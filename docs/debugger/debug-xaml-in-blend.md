@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399520"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pour déboguer le code XAML dans votre application. Lors de la création d’un projet, toutes les erreurs sont affichées dans le volet **Résultats**. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si votre travail nécessite davantage d’espace, appuyez sur F12 pour masquer le volet **Résultats**.
@@ -27,7 +27,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../debugger/includes/b
  Des erreurs de syntaxe se produisent si votre code XAML, ou les fichiers code-behind ne suivent pas les règles de mise en forme du langage. La description de l’erreur peut vous aider à la résoudre. La liste spécifie également le nom du fichier et le numéro de ligne où l’erreur se produit. Les erreurs XAML sont répertoriées dans l’onglet **Balisage** du volet **Résultats**.
 
 > [!TIP]
->  XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.
+> XAML est un langage de balisage basé sur XML qui suit les règles de syntaxe de XML.
 
  Certaines causes courantes d’erreurs de syntaxe XAML se présentent comme suit :
 

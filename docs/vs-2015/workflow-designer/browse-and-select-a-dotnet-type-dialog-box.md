@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417572"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, tels que le Concepteur de variables, lorsque vous sélectionnez **rechercher des Types...** à partir d’une liste des types de données, est la **rechercher et sélectionner un Type .NET** boîte de dialogue (appelée dans la forme abrégée « Explorateur de types »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d'assemblys et de projets.  
@@ -31,7 +31,7 @@ Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, t
 - lors de l'ajout d'un catch sur l'activité <xref:System.Activities.Statements.TryCatch>.  
   
 > [!NOTE]
->  L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Consultez [tableaux en escalier](http://go.microsoft.com/fwlink/?LinkId=195226) et [tableaux multidimensionnels](http://go.microsoft.com/fwlink/?LinkId=195227) pour plus d’informations.  
+> L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Consultez [tableaux en escalier](http://go.microsoft.com/fwlink/?LinkId=195226) et [tableaux multidimensionnels](http://go.microsoft.com/fwlink/?LinkId=195227) pour plus d’informations.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Sélection d'un type valeur ou référence dans l'Explorateur de types  
   

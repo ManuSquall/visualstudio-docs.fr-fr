@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 804236cadf97dda0b21cf145a4cd4c932e08b097
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77f0a384797217440600d1ba5db0f190f4bdafa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953189"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685363"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ Définissent les propriétés DslDefinition *langage spécifique à un domaine* 
 |Revision|La révision incrémentiel numéro de build pour cette définition de langage spécifique à un domaine.|0|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

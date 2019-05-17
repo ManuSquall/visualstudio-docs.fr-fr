@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3bc987cf097f3573b40d4d907204c742608fd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709276"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458816"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.
@@ -42,20 +45,20 @@ int SetValueAsStringWithError(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pszValue`
+## <a name="parameters"></a>Paramètres
+`pszValue`\
 
  [in] Valeur à définir.
 
-`dwRadix`
+`dwRadix`\
 
  [in] La base de la valeur définie.
 
-`dwTimeout`
+`dwTimeout`\
 
  [in] La longueur du délai d’attente pour la valeur à définir (`INFINITE` attente infinie).
 
-`errorString`
+`errorString`\
 
  [out] Si l’erreur lors de la définition de la valeur, cela est la raison de l’échec.
 

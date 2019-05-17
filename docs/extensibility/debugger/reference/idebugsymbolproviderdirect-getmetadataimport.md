@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68e6e0a8153aa3b1c97e4bc1f2c401e9ccbe550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695074"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224067"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Récupère les informations d’importation de métadonnées.
@@ -39,16 +42,16 @@ int GetMetaDataImport (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guid`
+## <a name="parameters"></a>Paramètres
+ `guid`\
 
  [in] Identificateur unique pour le module.
 
- `appID`
+ `appID`\
 
  [in] Identificateur du domaine d’application.
 
- `ppImport`
+ `ppImport`\
 
  [out] Retourne un objet qui contient les métadonnées importe des informations.
 

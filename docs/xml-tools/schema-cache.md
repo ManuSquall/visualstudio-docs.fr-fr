@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955551"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 
@@ -76,9 +76,9 @@ L’attribut `href` peut être n’importe quel chemin de fichier ou URL http po
 
 - CommonApplicationData
 
-- LCID
+- dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\
 
-Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L'attribut `href` est le chemin de fichier ou l'URL http des autres catalogues. Voici un exemple d'élément `Catalog` :
+Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L’attribut `href` est le chemin de fichier ou l’URL http des autres catalogues. Voici un exemple d'élément `Catalog` :
 
 ```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>

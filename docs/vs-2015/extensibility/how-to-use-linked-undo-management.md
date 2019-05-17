@@ -10,12 +10,12 @@ ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 442024b7be335c0aa010ce528142ac7a205097f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67d0d173909b8cdfe2eaf0d56aa5c99c437d5ad8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441556"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Procédure : Utiliser la gestion d’annulation liée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Annulation liée permet à l’utilisateur d’annuler simultanément les mêmes
 3. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> pour restaurer toutes les unités d’annulation liée en tant qu’une sauvegarde.  
   
     > [!NOTE]
-    >  Pour implémenter la gestion d’annulation lié dans un éditeur, ajoutez la gestion d’annulation. Pour plus d’informations sur l’implémentation de la gestion d’annulation liée, consultez [Comment : Implémenter la gestion de l’annulation](../extensibility/how-to-implement-undo-management.md).  
+    > Pour implémenter la gestion d’annulation lié dans un éditeur, ajoutez la gestion d’annulation. Pour plus d’informations sur l’implémentation de la gestion d’annulation liée, consultez [Comment : Implémenter la gestion de l’annulation](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [Guide pratique pour Gestion d’annulation implémenter](../extensibility/how-to-implement-undo-management.md)
+ [Guide pratique pour implémenter la gestion des opérations d’annulation](../extensibility/how-to-implement-undo-management.md)

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f75428155cfff20ce280d8428839d4332d13031
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714242"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226139"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Récupère des informations sur l’ordinateur sur lequel le débogueur dans en cours d’exécution.
@@ -35,8 +38,8 @@ public int GetComputerInfo(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pInfo`
+## <a name="parameters"></a>Paramètres
+ `pInfo`\
 
  [out] Référence à une structure qui contient les informations de l’ordinateur.
 

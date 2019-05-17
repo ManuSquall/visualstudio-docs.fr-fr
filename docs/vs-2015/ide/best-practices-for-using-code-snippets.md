@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099622"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685666"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Meilleures pratiques pour l'utilisation des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099622"
 Le code d’un extrait de code montre uniquement le moyen le plus simple de faire quelque chose. Dans la plupart des cas, le code doit être modifié pour s’adapter à l’application,  
   
 ## <a name="handling-exceptions"></a>Gestion des exceptions  
- Habituellement, l'extrait de code "Try...Catch" empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Comment : gérer une exception à l’aide de try/catch (Guide de programmation C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) et [Try...Catch...Finally, instruction](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Habituellement, l'extrait de code "Try...Catch" empêche les interceptions et réinitialise toutes les exceptions. ce qui peut ne pas être le bon choix pour votre projet. Pour chaque exception, il existe plusieurs façons de répondre. Pour obtenir des exemples, consultez [Comment : gérer une exception à l’aide de try/catch (Guide de programmation C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) et [Try...Catch...Finally, instruction](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Emplacements des fichiers  
  Lorsque vous adaptez des emplacements de fichiers à votre application, vous devez réfléchir à ce qui suit :  
@@ -67,6 +67,6 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
     - L’extrait de code peut contenir des références qui sont ajoutées de manière silencieuse à votre projet et peuvent être chargées à tout endroit de votre système. Ces références peuvent avoir été téléchargées sur votre ordinateur à partir de l’endroit où vous avez téléchargé l’extrait de code. L’extrait de code peut ensuite appeler une méthode dans la référence qui exécute du code malveillant. Pour vous protéger de ce type d’attaque, examinez attentivement les blocs Imports et References du fichier d’extrait de code.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Extraits de code IntelliSense Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Extraits de code IntelliSense Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Sécurisation des applications](../ide/securing-applications.md)   
  [Extraits de code](../ide/code-snippets.md)

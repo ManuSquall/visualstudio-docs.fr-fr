@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4b4e861c8985ee37a8c2d9b7f9286d6284bb4f91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105088"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685037"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Démarrer une session de débogage dans Visual Studio (JavaScript) pour des applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Cette rubrique explique comment démarrer une session de débogage pour les applications du Windows Store écrites en JavaScript et HTML5. Vous pouvez démarrer le débogage avec une seule séquence de touches ou configurer la session de débogage pour des scénarios spécifiques, puis choisir de quelle façon démarrer l'application.
 
 > [!NOTE]
->  Pour les applications écrites en XAML et Visual c#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Pour les applications écrites en XAML et Visual c#, Visual C++ ou Visual Basic, consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Dans cette rubrique](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
    ![Sélectionnez une connexion du débogueur distant](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  La boîte de dialogue Sélectionner une connexion du débogueur distant affiche les ordinateurs situés sur le sous-réseau local et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur** .
+  > La boîte de dialogue Sélectionner une connexion du débogueur distant affiche les ordinateurs situés sur le sous-réseau local et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur** .
 
   ![S’applique uniquement à Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Procédez comme suit pour configurer une application installée pour s'exécuter en mode débogage :
 
 > [!NOTE]
->  L'application ne doit pas être en cours d'exécution lorsque vous lancez cette procédure.
+> L'application ne doit pas être en cours d'exécution lorsque vous lancez cette procédure.
 
 1. Dans le menu **Débogage** , choisissez **Déboguer le package d'application installé**
 
@@ -213,7 +213,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 ### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurer l'application pour l'exécuter en mode débogage
 
-1. Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez [l’installation des outils à distance](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez [l’installation des outils à distance](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. Sur le menu Démarrer, recherchez `Debuggable Package Manager`, puis démarrez-le.
 
@@ -226,9 +226,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ### <a name="BKMK_Attach_the_debugger"></a> Attacher le débogueur
 
 > [!TIP]
->  Les applications JavaScript s'exécutent dans une instance du processus wwahost.exe. Si d'autres applications JavaScript sont en cours d'exécution pendant l'attachement à l'application, vous devez connaître l'identifiant de processus (PID) numérique du processus wwahost.exe dans lequel l'application s'exécute.
+> Les applications JavaScript s'exécutent dans une instance du processus wwahost.exe. Si d'autres applications JavaScript sont en cours d'exécution pendant l'attachement à l'application, vous devez connaître l'identifiant de processus (PID) numérique du processus wwahost.exe dans lequel l'application s'exécute.
 >
->  La solution la plus simple pour gérer cette situation consiste à fermer toutes les autres applications JavaScript. Sinon, vous pouvez ouvrir le Gestionnaire de tâches Windows avant de démarrer l'application et de noter les identifiants des processus wwahost.exe. Lorsque vous spécifiez le processus à attacher à la **processus disponibles** boîte de dialogue, le wwahost.exe de l’application aura un identifiant qui est différent de ceux que vous avez déjà notés.
+> La solution la plus simple pour gérer cette situation consiste à fermer toutes les autres applications JavaScript. Sinon, vous pouvez ouvrir le Gestionnaire de tâches Windows avant de démarrer l'application et de noter les identifiants des processus wwahost.exe. Lorsque vous spécifiez le processus à attacher à la **processus disponibles** boîte de dialogue, le wwahost.exe de l’application aura un identifiant qui est différent de ceux que vous avez déjà notés.
 
  Pour attacher le débogueur :
 

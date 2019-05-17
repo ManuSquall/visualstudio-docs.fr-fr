@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681318"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Spécifie le chemin d'accès au fichier .vstemplate d'un projet dans un modèle 
  \<TemplateContent>  
  \<ProjectCollection>  
  \<ProjectTemplateLink>  
-- ou -  
+ou  
 \<VSTemplate>  
  \<TemplateContent>  
  \<ProjectCollection>  
@@ -52,7 +52,7 @@ Spécifie le chemin d'accès au fichier .vstemplate d'un projet dans un modèle 
 |Attribut|Description|  
 |---------------|-----------------|  
 |`ProjectName`|Attribut facultatif.<br /><br /> Spécifie le nom de chaque projet individuel dans un modèle à plusieurs projets. Le **nouveau projet** boîte de dialogue ne peut pas attribuer des noms à des projets individuels.|  
-|`CopyParameters`|Permet à toutes les variables du modèle de groupe principal d'être copiées sur chaque modèle lié.<br /><br /> Les paramètres des modèles liés ont un préfixe `"$ext_*$"`. Par exemple, si dans le modèle de groupe parent le paramètre `$projectname$` a la valeur **ExampleProject1**, lorsque le modèle lié obtient son tour doit être exécuté, il acquiert un paramètre `$ext_projectname$`, qui est une copie de la `$projectname$`paramètre à partir du modèle de groupe parent.<br /><br /> Cela permet aux modèles liés de partager des paramètres communs, qui peuvent être aisément créés uniquement dans le modèle de groupe parent.<br /><br /> Cet attribut est facultatif, et il prend automatiquement la valeur `false` par défaut lorsqu'il n'est pas inclus.<br /><br /> Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour faire référence à la version de produit correct, consultez [faisant référence à des assemblys remis dans Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Permet à toutes les variables du modèle de groupe principal d'être copiées sur chaque modèle lié.<br /><br /> Les paramètres des modèles liés ont un préfixe `"$ext_*$"`. Par exemple, si dans le modèle de groupe parent le paramètre `$projectname$` a la valeur **ExampleProject1**, lorsque le modèle lié obtient son tour doit être exécuté, il acquiert un paramètre `$ext_projectname$`, qui est une copie de la `$projectname$`paramètre à partir du modèle de groupe parent.<br /><br /> Cela permet aux modèles liés de partager des paramètres communs, qui peuvent être aisément créés uniquement dans le modèle de groupe parent.<br /><br /> Cet attribut est facultatif, et il prend automatiquement la valeur `false` par défaut lorsqu'il n'est pas inclus.<br /><br /> Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour faire référence à la version de produit correct, consultez [faisant référence à des assemblys remis dans Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  

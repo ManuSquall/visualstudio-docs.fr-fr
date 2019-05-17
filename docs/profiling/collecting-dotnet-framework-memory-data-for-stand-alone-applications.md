@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949030"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Collecter les données mémoire du .NET Framework avec la ligne de commande du profileur
 
@@ -37,7 +37,6 @@ Cette section décrit les procédures et les options de collecte des données d�
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Profiler le conflit des ressources et l’activité des threads**|-   [Collecter des données concurrentielles](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Ajout d’interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>Profiler des données de mémoire .NET
 

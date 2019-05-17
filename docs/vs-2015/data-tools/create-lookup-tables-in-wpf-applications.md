@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095917"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697922"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
 
     - Service de données WCF, service WCF ou service Web. Pour plus d'informations, voir [Procédure : se connecter à des données dans un service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    - Objets. Pour plus d'informations, voir [Procédure : Se connecter aux données dans des objets](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    - Objets. Pour plus d'informations, voir [Procédure : Se connecter aux données dans des objets](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
-    >  Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.  
+    > Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.  
   
 2. Ouvrez le**Concepteur WPF**et vous assurer que le concepteur contient un conteneur qui est une cible de dépôt valide pour les éléments dans le **Sources de données** fenêtre.  
   
@@ -58,7 +58,7 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
 4. Développez les nœuds dans le **des Sources de données** fenêtre, jusqu'à ce que vous pouvez voir la table parente ou objet et la table enfant connexe ou l’objet.  
   
     > [!NOTE]
-    >  La table enfant connexe ou l’objet est le nœud qui apparaît sous la forme d’un nœud enfant développable sous la table parente ou l’objet.  
+    > La table enfant connexe ou l’objet est le nœud qui apparaît sous la forme d’un nœud enfant développable sous la table parente ou l’objet.  
   
 5. Cliquez sur le menu déroulant pour le nœud enfant, puis sélectionnez **détails**.  
   
@@ -73,12 +73,12 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
     - **ListView**  
   
         > [!NOTE]
-        >  Si le **ListBox** ou **ListView** contrôle n’apparaît pas dans la liste, vous pouvez ajouter ces contrôles à la liste. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        > Si le **ListBox** ou **ListView** contrôle n’apparaît pas dans la liste, vous pouvez ajouter ces contrôles à la liste. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
     - N’importe quel contrôle personnalisé qui dérive de <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Pour plus d’informations sur l’ajout de contrôles personnalisés à la liste des contrôles vous pouvez sélectionner des éléments dans le **des Sources de données** fenêtre, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        > Pour plus d’informations sur l’ajout de contrôles personnalisés à la liste des contrôles vous pouvez sélectionner des éléments dans le **des Sources de données** fenêtre, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 8. Faites glisser le nœud enfant à partir de la **des Sources de données** fenêtre sur un conteneur dans le Concepteur WPF. (Dans l’exemple précédent, le nœud enfant est la **commandes** nœud.)  
   

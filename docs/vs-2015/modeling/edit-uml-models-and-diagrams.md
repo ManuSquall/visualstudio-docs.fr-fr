@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 157e605ae16167317e02e92070d859870b4709cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442978"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modifier des modèles et des diagrammes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 3. Dans **ajouter au projet de modélisation**, sélectionnez un projet de modélisation existant, ou **créer un nouveau projet de modélisation**.  
   
    > [!NOTE]
-   >  Un projet de modélisation doit obligatoirement comporter un diagramme de modélisation.  
+   > Un projet de modélisation doit obligatoirement comporter un diagramme de modélisation.  
   
    Vous pouvez également ajouter un diagramme à un projet de modélisation existant dans l'Explorateur de solutions. Cliquez sur le projet de modélisation, pointez sur **ajouter**, puis cliquez sur **un nouvel élément**.  
   
@@ -97,7 +97,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
  Il existe deux genres d'outils, un pour les éléments et un pour les relations. Par exemple, dans le diagramme de classes UML boîte à outils, **classe** est un outil d’élément, et **Association** est un outil de relation.  
   
 > [!NOTE]
->  Si vous souhaitez des informations qui sont spécifiques aux types de diagrammes particuliers, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
+> Si vous souhaitez des informations qui sont spécifiques aux types de diagrammes particuliers, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Pour créer des éléments et des relations dans un diagramme de modélisation UML  
   
@@ -106,14 +106,14 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
     Dans certains cas, vous pouvez placer un nouvel élément dans un autre. Par exemple, dans un diagramme de classes UML, vous pouvez placer une classe à l'intérieur d'un package.  
   
    > [!NOTE]
-   >  Si vous ne voyez pas la boîte à outils, cliquez sur **boîte à outils** sur le **vue** menu.  
+   > Si vous ne voyez pas la boîte à outils, cliquez sur **boîte à outils** sur le **vue** menu.  
   
 2. Pour créer une relation, cliquez sur un outil de relation, cliquez sur l'élément d'origine de la relation, puis cliquez sur l'élément de destination.  
   
     Différents types de relations peuvent avoir comme origine et comme destination différents types d'éléments. Par exemple, dans un diagramme de classes UML, une relation Association ne peut pas avoir comme origine ou comme destination un élément Commentaire.  
   
    > [!NOTE]
-   >  Pour utiliser le même outil plusieurs fois, double-cliquez dessus. Lorsque vous avez terminé, cliquez sur le **pointeur** outil.  
+   > Pour utiliser le même outil plusieurs fois, double-cliquez dessus. Lorsque vous avez terminé, cliquez sur le **pointeur** outil.  
   
    Dans certains types de diagrammes, vous pouvez également dessiner des formes simples. Ces formes ne font pas partie du modèle, mais vous pouvez les utiliser pour attirer l'attention sur des parties du diagramme ou pour le diviser en différentes zones.  
   
@@ -121,14 +121,14 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
  Quand vous redimensionnez ou colorez une forme, ou quand vous réacheminez un connecteur, cela n'a aucun effet sur le modèle sous-jacent. En revanche, quand vous renommez une forme dans le diagramme ou dans l'Explorateur de modèles UML, l'élément correspondant est renommé dans l'Explorateur de modèles UML et dans tous les autres diagrammes où figure cet élément.  
   
 > [!NOTE]
->  Il existe un moyen simple de créer des éléments de boîte à outils à partir desquels vous pouvez créer des groupes d'éléments ou des éléments avec votre propre choix de propriétés. Pour plus d’informations, consultez [définir un personnalisé élément de boîte à outils de modélisation](../modeling/define-a-custom-modeling-toolbox-item.md).  
+> Il existe un moyen simple de créer des éléments de boîte à outils à partir desquels vous pouvez créer des groupes d'éléments ou des éléments avec votre propre choix de propriétés. Pour plus d’informations, consultez [définir un personnalisé élément de boîte à outils de modélisation](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
  La figure suivante montre comment modifier la taille ou le nom d'une forme.  
   
  ![Ajustement d’un élément de modèle](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")  
   
 > [!TIP]
->  Les commandes intégrées ne comprennent pas de commande pour aligner correctement les formes. Toutefois, vous pouvez créer facilement votre propre commande d’alignement en copiant le code dans l’exemple de [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).  
+> Les commandes intégrées ne comprennent pas de commande pour aligner correctement les formes. Toutefois, vous pouvez créer facilement votre propre commande d’alignement en copiant le code dans l’exemple de [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).  
   
  La figure suivante montre comment ajuster l'itinéraire et la position d'un connecteur ou de ses étiquettes.  
   
@@ -178,12 +178,12 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
      Sur le **modifier** menu, pointez sur **rechercher et remplacer**, puis cliquez sur **recherche rapide**.  
   
     > [!NOTE]
-    >  Dans le **rechercher et remplacer** boîte de dialogue, vous devez laisser le **Regarder dans** champ la valeur **Document actif**. Les autres options ne sont pas prises en charge.  
+    > Dans le **rechercher et remplacer** boîte de dialogue, vous devez laisser le **Regarder dans** champ la valeur **Document actif**. Les autres options ne sont pas prises en charge.  
   
 2. Tapez le texte que vous souhaitez rechercher, puis cliquez sur **suivant**.  
   
     > [!NOTE]
-    >  Si le texte à rechercher est à l'intérieur d'une forme réduite, la forme est mise en surbrillance. Développer la forme, puis cliquez sur **suivant** à nouveau.  
+    > Si le texte à rechercher est à l'intérieur d'une forme réduite, la forme est mise en surbrillance. Développer la forme, puis cliquez sur **suivant** à nouveau.  
   
 ## <a name="Undo"></a> Annulation de modifications apportées au modèle  
  Vous pouvez annuler et rétablir les modifications que vous avez apportées au modèle et aux diagrammes à l’aide de la **Annuler** et **de restauration par progression** commandes sur le **modifier** menu.  
@@ -216,7 +216,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
      Une forme qui fournit une vue de l'élément de modèle apparaît, éventuellement en plus des vues dans d'autres diagrammes ou dans le même diagramme.  
   
     > [!NOTE]
-    >  L'effet est différent quand vous faites glisser une classe ou un composant vers un diagramme de séquence. Dans ce cas, une nouvelle ligne de vie est créée, dont le type est cette classe ou ce composant. Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
+    > L'effet est différent quand vous faites glisser une classe ou un composant vers un diagramme de séquence. Dans ce cas, une nouvelle ligne de vie est créée, dont le type est cette classe ou ce composant. Pour plus d’informations, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Pour ajouter une nouvelle vue d'un élément de modèle à l'aide de l'option Coller la référence  
   
@@ -229,23 +229,23 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
      Une autre vue du même élément apparaît.  
   
     > [!NOTE]
-    >  Cela diffère la **coller** commande, qui crée un nouvel élément dans le modèle. Pour plus d’informations, consultez [copie d’éléments et les groupes d’éléments connexes](#Copying).  
+    > Cela diffère la **coller** commande, qui crée un nouvel élément dans le modèle. Pour plus d’informations, consultez [copie d’éléments et les groupes d’éléments connexes](#Copying).  
   
 > [!NOTE]
->  Si vous ajoutez à un diagramme des vues de deux éléments de modèle qui sont déjà connectées par une relation, une vue de la relation apparaît également dans le diagramme. Vous ne pouvez supprimer cette vue qu'en supprimant l'un des éléments du diagramme ou en supprimant la relation du modèle.  
+> Si vous ajoutez à un diagramme des vues de deux éléments de modèle qui sont déjà connectées par une relation, une vue de la relation apparaît également dans le diagramme. Vous ne pouvez supprimer cette vue qu'en supprimant l'un des éléments du diagramme ou en supprimant la relation du modèle.  
   
 ## <a name="Copying"></a> Copie d’éléments et les groupes d’éléments connexes  
  Vous pouvez copier et coller des éléments de modèle, et copier et coller des groupes d'éléments et les relations entre eux.  
   
 > [!NOTE]
->  Le **coller** et **coller la référence** commandes ont des effets différents. **Coller** crée des éléments dont les propriétés sont semblables à celles des éléments copiés. **Coller la référence** crée des vues des mêmes éléments.  
+> Le **coller** et **coller la référence** commandes ont des effets différents. **Coller** crée des éléments dont les propriétés sont semblables à celles des éléments copiés. **Coller la référence** crée des vues des mêmes éléments.  
   
 #### <a name="to-copy-elements-and-their-relationships"></a>Pour copier des éléments et leurs relations  
   
 1. Dans le diagramme qui contient les éléments à copier, sélectionnez un ou plusieurs éléments.  
   
     > [!NOTE]
-    >  Vous ne pouvez pas copier des relations, sauf dans le cadre d'un groupe d'éléments.  
+    > Vous ne pouvez pas copier des relations, sauf dans le cadre d'un groupe d'éléments.  
   
 2. Sur le **modifier** menu, cliquez sur **copie**.  
   
@@ -260,7 +260,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 5. Ajustez les positions, les noms et les autres propriétés des nouveaux éléments et relations.  
   
 > [!NOTE]
->  Vous ne pouvez pas copier un élément de modèle d'un modèle vers un autre, par exemple si vous avez deux modèles dans la même solution. En revanche, vous pouvez copier des éléments d'un diagramme vers un autre.  
+> Vous ne pouvez pas copier un élément de modèle d'un modèle vers un autre, par exemple si vous avez deux modèles dans la même solution. En revanche, vous pouvez copier des éléments d'un diagramme vers un autre.  
   
 #### <a name="to-copy-an-entire-diagram"></a>Pour copier un diagramme entier  
   
@@ -276,7 +276,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
  Par contre, quand vous supprimez une relation d'un diagramme, elle est toujours supprimée du modèle.  
   
 > [!NOTE]
->  Certains types d'éléments dans un diagramme UML ont des étiquettes. Quand vous sélectionnez ces types d'éléments en dessinant un rectangle autour d'eux, vous pouvez sélectionner les étiquettes, mais pas les éléments propriétaires de ces étiquettes. La suppression d'un sous-ensemble d'éléments qui sont sélectionnés de cette façon n'est pas prise en charge. Pour sélectionner un sous-ensemble de ces éléments, maintenez la **CTRL** enfoncée pendant que vous cliquez sur chaque élément.  
+> Certains types d'éléments dans un diagramme UML ont des étiquettes. Quand vous sélectionnez ces types d'éléments en dessinant un rectangle autour d'eux, vous pouvez sélectionner les étiquettes, mais pas les éléments propriétaires de ces étiquettes. La suppression d'un sous-ensemble d'éléments qui sont sélectionnés de cette façon n'est pas prise en charge. Pour sélectionner un sous-ensemble de ces éléments, maintenez la **CTRL** enfoncée pendant que vous cliquez sur chaque élément.  
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Pour supprimer la vue d'un classifieur dans un diagramme  
   
@@ -303,7 +303,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 - Avec le bouton droit de la relation sur un diagramme ou dans **Explorateur de modèles UML**, puis cliquez sur **supprimer du modèle**.  
   
     > [!CAUTION]
-    >  Vous ne pouvez pas supprimer une relation d'un diagramme sans la supprimer du modèle.  
+    > Vous ne pouvez pas supprimer une relation d'un diagramme sans la supprimer du modèle.  
   
      La relation est supprimée du modèle et de chaque diagramme où elle apparaît.  
   

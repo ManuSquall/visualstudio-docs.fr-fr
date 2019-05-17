@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446444"
 ---
 # <a name="supported-event-types"></a>Types d’événements pris en charge
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Débogage de Visual Studio prend actuellement en charge les types d’événemen
     Les interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sont des exemples d’événements d’arrêt.  
   
   > [!NOTE]
-  >  Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.  
+  > Événements d’arrêt asynchrone ne sont pas pris en charge. C’est une erreur pour envoyer un événement d’arrêt asynchrone.  
   
 ## <a name="discussion"></a>Discussion  
  L’implémentation réelle des événements dépend de la conception de votre DE. Le type de chaque événement envoyé est déterminé par ses attributs, qui sont définis lorsque vous concevez l’Allemagne. Par exemple, un dé peut envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) comme un événement asynchrone, tandis que l’autre peut l’envoyer comme un événement d’arrêt.  
@@ -53,7 +53,7 @@ Débogage de Visual Studio prend actuellement en charge les types d’événemen
  Le tableau suivant spécifie les paramètres de programme et de thread sont nécessaires pour les événements, ainsi que les types d’événements. N’importe quel événement peut être synchrone. Aucun événement ne doit être synchrone.  
   
 > [!NOTE]
->  Le [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface est requise pour tous les événements.  
+> Le [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface est requise pour tous les événements.  
   
 |Événement|IDebugProgram2|IDebugThread2|Les événements d’arrêt|  
 |-----------|--------------------|-------------------|---------------------|  

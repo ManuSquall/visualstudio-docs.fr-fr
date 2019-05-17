@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812454"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procédure : Ouvrir des fichiers texte en tant que classeurs par programmation
   Vous pouvez ouvrir un fichier texte comme un classeur. Vous devez passer le nom du fichier texte que vous souhaitez ouvrir. Vous pouvez spécifier plusieurs paramètres facultatifs, tels que le numéro de ligne à démarrer l’analyse et le format de colonne des données dans le fichier.

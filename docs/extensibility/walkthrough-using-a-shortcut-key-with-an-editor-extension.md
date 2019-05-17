@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964480"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : Utiliser une touche de raccourci avec une extension de l’éditeur
 Vous pouvez répondre aux touches de raccourci dans votre extension de l’éditeur. La procédure suivante montre comment ajouter un ornement de la vue à une vue de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle d’éditeur ornement fenêtre d’affichage, et il vous permet d’ajouter l’ornement à l’aide du caractère « + ».

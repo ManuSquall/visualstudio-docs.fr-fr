@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429987"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 Ce contrôle de source de plug-in de test couvre zone Placement solutions ou projets sous contrôle de code source et en les récupérant à partir du contrôle de code source.
@@ -37,7 +37,7 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 - Pour [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], ajouter à partir de la source de contrôle est également disponible à partir de **fichier**, **ajouter**, **projet existant**; recherchez dans le [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] emplacement.
 
   > [!NOTE]
-  >  Un chemin d’accès d’un fichier local ou d’un serveur IIS local (serveur web) peut être utilisé dans ce test.
+  > Un chemin d’accès d’un fichier local ou d’un serveur IIS local (serveur web) peut être utilisé dans ce test.
 
 ## <a name="expected-behavior"></a>Comportement attendu
 

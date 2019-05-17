@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694221"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Le diagramme d’un [!INCLUDE[dsl](../includes/dsl-md.md)] définition est un ou
  Si une relation de domaine possède des relations dérivées, ou si elle a des relations d’incorporation ou de référence avec d’autres relations de domaine, vous pouvez afficher la relation en tant que classe en double-cliquant sur la relation, puis sur **afficher en tant que la classe** . La relation s’affichera avec un **propriétés de domaine** de compartiments et affiche les relations d’héritage et.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13b39d52f574c90cf1a4ead8e47e7d24aac94708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861198"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Déterminer quel éditeur ouvre un fichier dans un projet
 Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe par un processus d’interrogation, finalement ouvrir l’éditeur approprié ou le concepteur pour ce fichier. La procédure initiale employée par l’environnement est identique pour les éditeurs standard et personnalisées. L’environnement utilise divers critères lors de l’interrogation de l’éditeur à utiliser pour ouvrir un fichier et le VSPackage doit coordonner avec l’environnement pendant ce processus.

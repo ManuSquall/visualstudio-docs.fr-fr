@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443887"
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Chaque configuration peut prendre en charge un ensemble de processus de généra
  La construction de développé en implémentant `IVsOutputGroup` permet aux projets de regrouper les sorties en fonction de l’utilisation. Par exemple, une DLL peut être regroupée avec sa base de données du programme (PDB).  
   
 > [!NOTE]
->  Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « Générer des informations de débogage » est spécifiée lors de la génération du fichier .dll ou .exe. Le fichier .pdb est généralement généré pour la configuration de projet de débogage uniquement.  
+> Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « Générer des informations de débogage » est spécifiée lors de la génération du fichier .dll ou .exe. Le fichier .pdb est généralement généré pour la configuration de projet de débogage uniquement.  
   
  Le projet doit retourner le même nombre de groupes pour chaque configuration pris en charge, même si le nombre de sorties contenues dans un groupe peut varier à partir d’une configuration à une configuration. Par exemple, Matt du projet DLL peut inclure des mattd.dll et mattd.pdb dans la configuration Debug, mais uniquement inclure matt.dll dans la configuration de la vente au détail.  
   

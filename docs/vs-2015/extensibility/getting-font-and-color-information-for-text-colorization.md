@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8724c31accb26e478c2726dfe791256994fc95ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952346"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696855"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>L’obtention de la police et les informations de couleur de colorisation de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les �
  La plupart des implémentations qui affichent du texte en couleurs se doivent le `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` et associés des interfaces pour les paramètres d’affichage de présentation, la récupération et le stocker du texte.  
   
 > [!NOTE]
->  Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est fortement recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md).  
+> Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est fortement recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Obtention des informations de couleur et de police par défaut  
  Tous les le **polices et couleurs** paramètres de n’importe quelle fenêtre d’affichage du texte doivent être spécifiés dans le **éléments affichés** d’un **catégorie**. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
@@ -46,6 +46,6 @@ Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les �
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Utilisation de polices et texte](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
- [Utilisation des couleurs](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (interface graphique)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)
+ [Utilisation de polices et texte](https://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ [Utilisation des couleurs](https://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
+ [GDI (interface graphique)](https://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

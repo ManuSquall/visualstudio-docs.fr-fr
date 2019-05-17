@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099674"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686886"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Présentation et communication des informations sur le système  
  Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.  
@@ -297,11 +297,11 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
  Consultez :  
   
-- [Définir votre processus de génération](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Définir votre processus de génération](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Utiliser un processus de génération d’archivage contrôlé pour la validation des modifications](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Utiliser un processus de génération d’archivage contrôlé pour la validation des modifications](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Personnaliser votre modèle de processus de génération](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Personnaliser votre modèle de processus de génération](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
   Consultez :  
   
-- [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)  
   
-- [Graphiques, tableaux de bord et rapports pour Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Graphiques, tableaux de bord et rapports pour Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Test, validation et archivage du code  
  À mesure que les équipes effectuent chaque tâche, elles vérifient leur code dans la gestion de version Team Foundation et reçoivent des rappels de Team Foundation Server, en cas d’oubli. Avant que Team Foundation Server n’accepte leurs archivages, les équipes exécutent des tests unitaires et la validation de couche pour vérifier le code par rapport à leur cas de test et à la conception. Elles utilisent Team Foundation Server pour exécuter régulièrement des builds, des tests unitaires automatisés et la validation de couche. Ainsi, elles vérifient que le code respecte les critères suivants :  
@@ -359,13 +359,13 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
   Consultez :  
   
-- [Test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)  
   
 - [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Générer l’application](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne et Dinner Now doivent intégrer leurs systèmes de paiement. Les sections suivantes présentent les diagrammes de modélisation dans Visual Studio qui les aident à effectuer cette tâche :  
@@ -888,6 +888,6 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
  [Visualiser le code](../modeling/visualize-code.md)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   
  [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)   
- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)   
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)

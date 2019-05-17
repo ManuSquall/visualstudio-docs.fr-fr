@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53e227b2fdf97c406a86b31cee2a3c450948ee6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434780"
 ---
 # <a name="save-data-in-project-files"></a>Enregistrer les données dans les fichiers projet
 Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed Package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :
@@ -206,7 +206,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
     ```
 
 > [!NOTE]
->  Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet dans [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
+> Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet dans [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Voir aussi
 - [Conserver les données dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

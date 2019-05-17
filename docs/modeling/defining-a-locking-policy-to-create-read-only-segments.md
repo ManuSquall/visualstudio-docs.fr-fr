@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445831"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité de la Visual Studio Visualization and Modeling SDK permet à un programme verrouiller tout ou partie d’un modèle de langage spécifique à un domaine (DSL) afin qu’il peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais leur interdire de modifier l’original.
@@ -20,7 +20,7 @@ L’API d’immuabilité de la Visual Studio Visualization and Modeling SDK perm
  En outre, en tant qu’auteur d’un DSL, vous pouvez définir un *stratégie de verrouillage.* Une stratégie de verrouillage définit quels verrous sont autorisés, non autorisé ou obligatoire. Par exemple, lorsque vous publiez une solution DSL, vous pouvez encourager les développeurs tiers pour l’étendre avec de nouvelles commandes. Mais vous pouvez également utiliser une stratégie de verrouillage pour les empêcher de modifier l’état en lecture seule des parties spécifiées du modèle.
 
 > [!NOTE]
->  Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.
+> Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.
 
  Plus d’informations et exemples sont disponibles dans Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) site Web.
 

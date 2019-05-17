@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: fc27b7b0c0e277a0e39b406a07d677fe25bf8e73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695079"
 ---
 # <a name="using-the-assert-classes"></a>Utilisation des classes Assert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vér
  L’exception AssertInconclusiveException est levée chaque fois qu’un test produit un résultat Inconclusive. En général, vous ajoutez une instruction Assert.Inconclusive à un test sur lequel vous travaillez pour indiquer qu’il n’est pas encore prêt à être exécuté.  
   
 > [!NOTE]
->  Une autre stratégie consiste à marquer un test qui n’est pas prêt à être exécuté avec l’attribut Ignore. Toutefois, cela présente un inconvénient : vous ne pouvez pas générer facilement un rapport sur le nombre de tests qu’il vous reste à implémenter.  
+> Une autre stratégie consiste à marquer un test qui n’est pas prêt à être exécuté avec l’attribut Ignore. Toutefois, cela présente un inconvénient : vous ne pouvez pas générer facilement un rapport sur le nombre de tests qu’il vous reste à implémenter.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   
@@ -61,4 +61,4 @@ Utilisez les classes Assert de l’espace de noms UnitTestingFramework pour vér
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+ [Création et exécution de tests unitaires pour le code existant](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691204"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exposition des types aux concepteurs visuels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60103431"
  Le système de projet prend en charge pour le suivi des modifications au fichier de sortie d’un outil personnalisé, à condition que ces modifications sont le résultat de l’exécution de l’outil personnalisé. Chaque fois que l’outil personnalisé est exécuté, une nouvelle PE temporaire est généré et les notifications appropriées sont envoyées aux concepteurs.  
   
 > [!NOTE]
->  Étant donné que le fichier exécutable de génération de programme temporaire se produit en arrière-plan, sans erreurs sont signalées à l’utilisateur si la compilation échoue.  
+> Étant donné que le fichier exécutable de génération de programme temporaire se produit en arrière-plan, sans erreurs sont signalées à l’utilisateur si la compilation échoue.  
   
  Les outils personnalisés qui tirent parti de la prise en charge de PE temporaire doivent respecter les règles suivantes :  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60103431"
      Lorsqu’un PE temporaire est compilé, le seul fichier source spécifié pour le compilateur est la sortie de l’outil personnalisé. Par conséquent, un outil personnalisé qui utilise un PE temporaire doit générer des fichiers de sortie qui peuvent être compilés indépendamment des autres fichiers dans le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Introduction à l’objet BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Introduction à l’objet BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)   
  [Déterminer le Namespace par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Inscription de générateurs de fichier unique](../../extensibility/internals/registering-single-file-generators.md)

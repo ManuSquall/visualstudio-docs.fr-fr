@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003111"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
 
@@ -22,7 +22,7 @@ Vous pouvez enregistrer des cartes de code en tant que partie d’un projet Visu
 
 Utilisez le menu **Fichier** pour enregistrer la carte.
 
-ou
+- ou -
 
 Pour enregistrer la carte en tant que partie d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partage** > **déplacer \<CodeMapName > .dgml vers**, puis choisissez le projet où vous souhaitez enregistrer le carte.
 

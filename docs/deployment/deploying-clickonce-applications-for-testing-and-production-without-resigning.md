@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407053"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Déployer des applications ClickOnce pour les serveurs de test et de production sans nouvelle signature
 Cet article décrit une fonctionnalité de ClickOnce présentée dans le .NET Framework version 3.5 qui permet le déploiement d’applications ClickOnce à partir de plusieurs emplacements réseau sans nouvelle signature ni modification ClickOnce manifestes.
 
 > [!NOTE]
->  Nouvelle signature est toujours la méthode recommandée pour le déploiement de nouvelles versions d’applications. Si possible, utilisez cette méthode. Pour plus d’informations, consultez [*Mage.exe* (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Nouvelle signature est toujours la méthode recommandée pour le déploiement de nouvelles versions d’applications. Si possible, utilisez cette méthode. Pour plus d’informations, consultez [*Mage.exe* (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  Les développeurs tiers et éditeurs de logiciels indépendants peuvent adhérer à cette fonctionnalité, ce qui facilite pour leurs clients à mettre à jour leurs applications. Cette fonctionnalité peut être utilisée dans les situations suivantes :
 

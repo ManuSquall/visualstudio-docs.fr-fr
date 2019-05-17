@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433387"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Choix d'un modèle de solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Pour créer une solution de langage spécifique à un domaine, choisissez un des
  Les modèles de solution suivants sont disponibles dans l’Assistant Concepteur de langage spécifique à un domaine.  
   
 > [!NOTE]
->  Les modèles vise à fournir une solution DSL de départ. Les modèles de diagrammes de classes et de composants ne sont pas des diagrammes UML complètes. Si vous souhaitez créer un modèle UML, envisagez d’outils, qui fournissent un ensemble de diagrammes intégrés autour d’un modèle unique de modélisation UML. Ils sont extensibles et peuvent être intégrés à votre solution DSL à l'aide de ModelBus. Pour plus d’informations, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
+> Les modèles vise à fournir une solution DSL de départ. Les modèles de diagrammes de classes et de composants ne sont pas des diagrammes UML complètes. Si vous souhaitez créer un modèle UML, envisagez d’outils, qui fournissent un ensemble de diagrammes intégrés autour d’un modèle unique de modélisation UML. Ils sont extensibles et peuvent être intégrés à votre solution DSL à l'aide de ModelBus. Pour plus d’informations, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
   
 |Modèle|Fonctionnalités|Description|  
 |--------------|--------------|-----------------|  

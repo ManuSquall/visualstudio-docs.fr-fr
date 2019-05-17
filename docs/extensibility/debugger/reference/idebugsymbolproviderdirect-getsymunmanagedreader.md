@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0c038a7aa2b398a2ee58101248d2968913ba3b4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224166"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Récupère un lecteur de symboles du code non managé.
@@ -39,16 +42,16 @@ int GetSymUnmanagedReader (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+ `ulAppDomainID`\
 
  [in] Identificateur du domaine d’application.
 
- `guidModule`
+ `guidModule`\
 
  [in] Identificateur unique du module.
 
- `ppSymUnmanagedReader`
+ `ppSymUnmanagedReader`\
 
  [out] Retourne un objet qui représente le lecteur de symboles du code non managé.
 

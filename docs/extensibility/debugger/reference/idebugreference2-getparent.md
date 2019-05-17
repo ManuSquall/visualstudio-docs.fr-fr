@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985a9b15c61099548ace4ba20d8ea2706506fc17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4f6f0aa96186557eba8549d899beed283558c1e7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697635"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458719"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 Obtient la référence parente d’une référence. Réservé à un usage ultérieur.
@@ -36,8 +39,8 @@ int GetParent ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppParent`
+## <a name="parameters"></a>Paramètres
+ `ppParent`\
 
  [out] Retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui représente le parent de cette propriété.
 

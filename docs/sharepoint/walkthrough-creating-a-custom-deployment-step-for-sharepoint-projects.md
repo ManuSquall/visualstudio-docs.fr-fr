@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430428"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio inclut de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -74,7 +74,7 @@ ms.locfileid: "60040170"
 3. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
 
     > [!NOTE]
-    >  Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
+    > Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
 
 4. En haut de la boîte de dialogue, choisissez **.NET Framework 4.5** dans la liste des versions du .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040170"
 1. Dans le **DeploymentStepExtension** de projet, ouvrez le fichier de code UpgradeStep, puis collez-y le code suivant.
 
     > [!NOTE]
-    >  Après avoir ajouté ce code, le projet aura des erreurs de compilation, mais disparaissent lorsque vous ajoutez code dans les étapes ultérieures.
+    > Après avoir ajouté ce code, le projet aura des erreurs de compilation, mais disparaissent lorsque vous ajoutez code dans les étapes ultérieures.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040170"
 6. Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040170"
 10. Dans le **Type** liste, entrez **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension de Visual Studio. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension de Visual Studio. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040170"
 6. Sous **quel est le niveau de confiance de cette solution SharePoint**, choisissez le **déployer en tant que solution de batterie** case d’option.
 
    > [!NOTE]
-   >  L’étape de déploiement de mise à niveau ne prend pas en charge les solutions sandbox.
+   > L’étape de déploiement de mise à niveau ne prend pas en charge les solutions sandbox.
 
 7. Choisissez le **Terminer** bouton.
 

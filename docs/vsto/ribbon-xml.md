@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436495"
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une manière qui n’est pas pris en charge par l’élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117538"
 - Définissez la méthode de rappel dans la classe du ruban.
 
 > [!NOTE]
->  Outlook requiert une étape supplémentaire. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Outlook requiert une étape supplémentaire. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Pour une procédure pas à pas qui montre comment automatiser une application à partir du ruban, consultez [procédure pas à pas : Créer un onglet personnalisé à l’aide du ruban XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

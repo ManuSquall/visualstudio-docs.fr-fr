@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 92e8e236be1c6aa07709d03274a4c964b17b1bad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700714"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   
  [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)   
  [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)   

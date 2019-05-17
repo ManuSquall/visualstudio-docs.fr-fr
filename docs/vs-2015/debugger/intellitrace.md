@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690522"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +48,8 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 |||  
 |-|-|  
-|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher m’appeler des informations avec les événements passés.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôle les données collectées par IntelliTrace.|-   [Procédure pas à pas : Utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurez IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Débogage d’historique](../debugger/historical-debugging.md)|  
-|**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|-   [Collecter plus de données de diagnostic dans des tests manuels](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher m’appeler des informations avec les événements passés.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôle les données collectées par IntelliTrace.|-   [Procédure pas à pas : Utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurez IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Débogage d’historique](../debugger/historical-debugging.md)|  
+|**Collecter les données IntelliTrace pendant une session de test dans Test Manager**|-   [Collecter plus de données de diagnostic dans des tests manuels](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Collecter des données IntelliTrace à partir d'applications déployées**|-   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Démarrer le débogage à partir d'un fichier journal IntelliTrace (fichier .iTrace).**|-   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -57,12 +57,12 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 |||  
 |-|-|  
-|**Prise en charge**|-Applications Visual Basic et Visual c# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br />     Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br />     Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Prise en charge**|-Applications Visual Basic et Visual c# qui utilisent .NET Framework 2.0 ou versions ultérieures.<br />     Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br />     Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Prise en charge limitée**|- F# applications à titre expérimental<br />-Les applications Windows Store pris en charge pour les événements uniquement|  
 |**Non pris en charge**|-C++, d’autres langages et d’un script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../includes/winmobile-md.md)] applications|  
   
 > [!NOTE]
->  Si vous souhaitez déboguer un processus qui est déjà en cours d'exécution, vous ne pouvez pas utiliser IntelliTrace. Vous devez démarrer IntelliTrace lorsque le processus commence.  
+> Si vous souhaitez déboguer un processus qui est déjà en cours d'exécution, vous ne pouvez pas utiliser IntelliTrace. Vous devez démarrer IntelliTrace lorsque le processus commence.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?  
  Qu'il soit traditionnel ou *en direct*, le débogage affiche uniquement l'état actuel de votre application avec des données limitées sur les événements passés. Vous devez déduire ces événements en fonction de l'état actuel de l'application ou recréer ces événements en réexécutant votre application.  
@@ -77,7 +77,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 - Une session de test dans Microsoft Test Manager.  
   
-- Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [surveillance avec Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+- Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [surveillance avec Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
   Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :  
   
@@ -91,7 +91,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 - Votre application se bloque sur un ordinateur de test, mais s'exécute correctement sur un ordinateur de développement.  
   
-   Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) et [à l’aide des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md).  
+   Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Consultez [collecter des données de diagnostic plus dans les tests manuels](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) et [à l’aide des données IntelliTrace enregistrée](../debugger/using-saved-intellitrace-data.md).  
   
 - Un bogue ou un incident se produit dans une application déployée.  
   
@@ -104,7 +104,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 ## <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?  
  **Collecte des informations sur les événements**  
   
- Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace : événements de débogueur, exceptions, événements .NET Framework et autres événements système qui peuvent vous aider lors d'un débogage. Déterminez le type d'événements qu'IntelliTrace doit collecter, à l'exception des événements et des exceptions du débogueur, qui sont collectés systématiquement. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace : événements de débogueur, exceptions, événements .NET Framework et autres événements système qui peuvent vous aider lors d'un débogage. Déterminez le type d'événements qu'IntelliTrace doit collecter, à l'exception des événements et des exceptions du débogueur, qui sont collectés systématiquement. Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Événements du débogueur**  
   
@@ -146,7 +146,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
   - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Collecte des informations sur les appels de fonction**  
   
@@ -161,25 +161,25 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 - Pointeurs désignant des objets enfants de premier niveau, mais non leurs valeurs sauf si elles sont nulles ou pas  
   
 > [!NOTE]
->  IntelliTrace collecte uniquement les 256 premiers objets des tableaux et les 256 premiers caractères des chaînes.  
+> IntelliTrace collecte uniquement les 256 premiers objets des tableaux et les 256 premiers caractères des chaînes.  
   
- Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
  **Collecte des informations de module**  
   
- Pour contrôler la quantité d'informations sur les appels qu'IntelliTrace collecte, spécifiez uniquement les modules qui vous intéressent. Cela peut améliorer les performances de votre application pendant la collecte. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Pour contrôler la quantité d'informations sur les appels qu'IntelliTrace collecte, spécifiez uniquement les modules qui vous intéressent. Cela peut améliorer les performances de votre application pendant la collecte. Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="AffectPerformance"></a> Mon application peut-elle être ralentie par IntelliTrace ?  
  Par défaut, IntelliTrace collecte uniquement les données des événements IntelliTrace sélectionnés. Votre application peut être ralentie ou non, en fonction de la structure et de l'organisation de votre code. Par exemple, si IntelliTrace enregistre souvent un événement, cela peut ralentir votre application. Cela peut aussi vous inciter à refactoriser votre application.  
   
- La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils**, **Options**, **IntelliTrace**, **Avancé**. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils**, **Options**, **IntelliTrace**, **Avancé**. Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Configurez IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
+ [Configurez IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [Y compris les données de Trace de Diagnostic dans des bogues difficiles à reproduire](http://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [Y compris les données de Trace de Diagnostic dans des bogues difficiles à reproduire](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [Diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : rechercher un Message dans la vue Messages | Microsoft Docs'
+title: 'Procédure : Rechercher un Message dans la vue Messages | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5830076ab3bd0ea59912900e8a14c807d7c0941
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 37f99c30c23461ada406bb0650f86d45d2a4a2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388408"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Comment : rechercher un message dans la vue Messages
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Procédure : Rechercher un message dans la vue Messages
 Vous pouvez rechercher un message spécifique dans la vue Messages à l’aide de son handle, un type ou un ID de message comme critère de recherche. L’une de ces, ou une combinaison, sera le critère de recherche valide. La direction de la recherche initiale peut également être spécifiée. Les champs dans la boîte de dialogue sont préchargés avec les attributs du message actuellement sélectionné.
 
 ### <a name="to-search-for-a-message-in-messages-view"></a>Pour rechercher un message dans la vue Messages
@@ -43,7 +43,7 @@ Vous pouvez rechercher un message spécifique dans la vue Messages à l’aide d
 4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.
 
    > [!TIP]
-   >  Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.
+   > Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.
 
 5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.
 

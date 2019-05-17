@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414706"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procédure : Créer un nuanceur de couleur de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
    L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un cube.  
   
 > [!NOTE]
->  Une couleur orange a été spécifiée dans l’illustration pour mettre en évidence l’effet du nuanceur.  
+> Une couleur orange a été spécifiée dans l’illustration pour mettre en évidence l’effet du nuanceur.  
   
  ![Graphique du nuanceur et résultats associés sur un modèle 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   

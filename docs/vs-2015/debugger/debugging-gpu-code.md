@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114130"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691547"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
  Le débogage est pris en charge sur [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] et [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Pour effectuer un débogage sur l'émulateur de logiciel, [!INCLUDE[win8](../includes/win8-md.md)] ou [!INCLUDE[winserver8](../includes/winserver8-md.md)] est requis. Pour effectuer un débogage sur le matériel, vous devez installer les pilotes de votre carte graphique. Tous les fournisseurs de matériel n'implémentent pas toutes les fonctionnalités de débogage. Consultez la documentation du fournisseur pour connaître les limitations.  
   
 > [!NOTE]
->  Les fournisseurs de matériel indépendants qui souhaitent prendre en charge le débogage GPU dans Visual Studio doivent créer une DLL qui implémente l'interface VSD3DDebug pour cibler leurs propres pilotes.  
+> Les fournisseurs de matériel indépendants qui souhaitent prendre en charge le débogage GPU dans Visual Studio doivent créer une DLL qui implémente l'interface VSD3DDebug pour cibler leurs propres pilotes.  
   
 ## <a name="configuring-gpu-debugging"></a>Configuration du débogage GPU  
  Le débogueur ne peut pas s'arrêter sur le code UC et le code GPU dans la même exécution d'application. Par défaut, le débogueur s'arrête sur le code UC. Pour déboguer le code GPU, utilisez l'une de ces deux étapes :  
@@ -68,7 +68,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 ## <a name="troubleshooting"></a>Résolution des problèmes  
   
 ### <a name="specifying-an-accelerator"></a>Spécification d'un accélérateur  
- Les points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur l’accélérateur [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Si vous ne spécifiez aucun accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés du projet et [à l’aide des objets accelerator et accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) et [paramètres de projet pour un C++ Configuration Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Les points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur l’accélérateur [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Si vous ne spécifiez aucun accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés du projet et [à l’aide des objets accelerator et accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) et [paramètres de projet pour un C++ Configuration Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Points d'arrêt conditionnels  
  Les points d'arrêt conditionnels dans le code GPU sont pris en charge, mais chaque expression ne peut pas être évaluée sur le périphérique. Lorsqu'une expression ne peut pas être évaluée sur le périphérique, elle est évaluée dans le débogueur. Le débogueur risque de s'exécuter plus lentement que le périphérique.  
@@ -83,6 +83,6 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
  Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [Handling TDRs in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Débogage d’une Application C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [Procédure pas à pas : Débogage d’une Application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Start GPU Debugging in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

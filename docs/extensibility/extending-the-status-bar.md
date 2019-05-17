@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911906"
 ---
 # <a name="extend-the-status-bar"></a>Étendre la barre d’état
 Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour afficher des informations.

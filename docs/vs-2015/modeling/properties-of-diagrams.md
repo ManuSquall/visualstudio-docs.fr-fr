@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701757"
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +37,8 @@ Vous pouvez définir des propriétés qui spécifient la manière dont les diagr
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code généré.|\<aucune>|  
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|Aucun.|  
-|Diagramme de base|La classe de base de ce diagramme.|(aucune)|  
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract` ou `sealed`).|None|  
+|Diagramme de base|La classe de base de ce diagramme.|(aucun)|  
 |Nom|Le nom de ce diagramme.|Nom actuel|  
 |Espace de noms|L’espace de noms qui est affilié à ce diagramme.|Espace de noms actuel|  
 |Classe représentée|La classe de domaine racine qui représente ce diagramme.|Classe racine actuelle le cas échéant|  
@@ -50,4 +50,4 @@ Vous pouvez définir des propriétés qui spécifient la manière dont les diagr
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour ce diagramme.|\<aucune>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

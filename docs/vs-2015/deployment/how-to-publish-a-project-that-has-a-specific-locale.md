@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092914"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697603"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procédure : Publier un projet qui a des paramètres régionaux spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092914"
 Une application peut contenir des composants ayant des paramètres régionaux différents. Dans ce scénario, vous devez créer une solution avec plusieurs projets, puis publier des projets distincts pour chacun des paramètres régionaux. Cette procédure montre comment utiliser une macro pour publier le premier projet dans une solution avec les paramètres régionaux « en ». Si vous souhaitez essayer cette procédure avec d'autres paramètres régionaux, veillez à définir `localeString` dans la macro pour que sa valeur corresponde aux paramètres régionaux que vous utilisez (par exemple, « fr » ou « fr-FR »).  
   
 > [!NOTE]
->  Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer**, cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes**, cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’**Assistant Composants Windows**, cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l’Assistant.  
+> Quand vous utilisez cette macro, l'emplacement de publication doit être une URL ou un partage UNC (Universal Naming Convention) valide. De plus, les services IIS (Internet Information Services) doivent être installés sur votre ordinateur. Pour installer IIS, dans le menu **Démarrer**, cliquez sur **Panneau de configuration**. Double-cliquez sur **Ajouter ou supprimer des programmes**. Dans **Ajouter ou supprimer des programmes**, cliquez sur **Ajouter ou supprimer des composants Windows**. Dans l’**Assistant Composants Windows**, cochez la case **Gestionnaire des services Internet (IIS)** dans la liste **Composants**. Cliquez ensuite sur **Terminer** pour fermer l’Assistant.  
   
 ### <a name="to-create-the-publishing-macro"></a>Pour créer la macro de publication  
   
@@ -166,6 +166,6 @@ Une application peut contenir des composants ayant des paramètres régionaux di
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Environnement de développement des macros](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Fenêtre Explorateur de macros](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Guide pratique pour Modifier et créer des Macros par programmation](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Environnement de développement des macros](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Fenêtre Explorateur de macros](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [Guide pratique pour Modifier et créer des Macros par programmation](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

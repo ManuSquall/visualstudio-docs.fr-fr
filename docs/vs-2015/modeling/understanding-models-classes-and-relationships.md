@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1809072ca0a01362e6434254b6e70a4bf4db4762
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698098"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Lorsqu’un modèle est enregistré pour le fichier au format XML, les éléments incorporés sont imbriquées dans leurs parents, sauf si vous avez personnalisé la sérialisation.  
   
 > [!NOTE]
->  L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d’incorporation n’héritent pas les propriétés du parent. Une incorporation est un type de lien entre les éléments de modèle. L’héritage est une relation entre les classes et ne crée pas de liens entre éléments de modèle.  
+> L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d’incorporation n’héritent pas les propriétés du parent. Une incorporation est un type de lien entre les éléments de modèle. L’héritage est une relation entre les classes et ne crée pas de liens entre éléments de modèle.  
   
 ### <a name="embedding-rules"></a>Incorporation des règles  
  Chaque élément dans un modèle d’instance doit être la cible d’un seul lien d’incorporation, à l’exception de la racine du modèle.  
@@ -154,4 +154,4 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
   
 ## <a name="see-also"></a>Voir aussi  
  [Relations de domaine dans l’API générée](../misc/domain-relationships-in-the-generated-api.md)   
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

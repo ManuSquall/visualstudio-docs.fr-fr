@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb717363266b95397ea749e7465b07df75f60da2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f9e0756c3cb9e92d0899020383d536b83892046
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721847"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458755"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Cette interface marshale les interfaces associées à un programme au-delà des limites de processus.
@@ -44,7 +44,7 @@ IDebugProviderProgramNode2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est implémentée lors de l’Allemagne s’exécute dans un espace de processus séparé à partir du programme en cours de débogage : par exemple, lorsque la D’est en cours d’exécution dans l’espace de processus de Visual Studio au lieu de l’espace de processus du programme en cours de débogage.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

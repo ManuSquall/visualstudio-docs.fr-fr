@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435864"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017 : taux élevés de pagination de la mémoire active sur le disque
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017 : Taux élevés de pagination de la mémoire active sur le disque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id de règle | DA0017 |  
@@ -37,7 +37,7 @@ Id de règle | DA0017 |
 ## <a name="rule-description"></a>Description de la règle  
   
 > [!NOTE]
->  Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Lorsqu’un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) est déclenchée.  
+> Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Quand un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) se déclenche à la place.  
   
  Une pagination excessive sur le disque peut être due à un manque de mémoire physique. Si les opérations de pagination utilisent une grande partie du disque physique sur lequel réside le fichier de pagination, elles peuvent ralentir d’autres opérations de disque orientées application effectuées sur le même disque.  
   

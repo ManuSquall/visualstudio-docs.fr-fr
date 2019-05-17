@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411503"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../includes/vsprv
  Pour obtenir une vue d’ensemble de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires à la **références** de votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet.  
+> Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires à la **références** de votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet.  
   
 ## <a name="using-the-assembly-directive"></a>Utilisation de la directive d'assembly  
  La syntaxe de la directive est la suivante :  

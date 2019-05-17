@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426390"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Recherche et utilisation des extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
  Vous pouvez utiliser la boîte de dialogue **Extensions et mises à jour** pour installer des extensions et des exemples Visual Studio à partir de sites Web ou d'autres emplacements, puis les activer, les désactiver, les mettre à jour ou les désinstaller. (**Outils / Extensions et mises à jour**, ou tapez **Extensions** dans la fenêtre de **lancement rapide** ). La boîte de dialogue affiche également les mises à jour des exemples et extensions installés. Vous pouvez également télécharger des extensions à partir de sites web ou les obtenir auprès d'autres développeurs.
 
 > [!NOTE]
->  À compter de Visual Studio 2015, les extensions hébergées dans la galerie Visual Studio seront automatiquement mises à jour.  Vous pouvez modifier ce paramètre via la boîte de dialogue **Extensions et mises à jour** .  Pour plus d'informations, consultez la section relative aux **mises à jour d'extensions automatiques** , ci-dessous.
+> À compter de Visual Studio 2015, les extensions hébergées dans la galerie Visual Studio seront automatiquement mises à jour.  Vous pouvez modifier ce paramètre via la boîte de dialogue **Extensions et mises à jour** .  Pour plus d'informations, consultez la section relative aux **mises à jour d'extensions automatiques** , ci-dessous.
 
 ## <a name="finding-visual-studio-extensions"></a>Recherche d’extensions Visual Studio
  Vous pouvez installer des extensions à partir de la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou [Galerie d’exemples](https://code.msdn.microsoft.com/vstudio) sur le site Web Microsoft. Ces extensions peuvent être des contrôles, des exemples, des modèles, des outils ou d'autres composants qui ajoutent des fonctionnalités à Visual Studio. Visual Studio prend en charge les extensions sous la forme de packages VSIX (ceux-ci incluent des modèles de projet, des modèles d'élément, des éléments de **boîte à outils** , des composants MEF (Managed Extension Framework) et des VSPackages). Vous pouvez également télécharger et installer les extensions basées sur Microsoft Installer (MSI), mais la boîte de dialogue **Extensions et mises à jour** ne peut pas les activer ni les désactiver. La galerie Visual Studio contient des extensions VSIX et MSI.
@@ -59,7 +59,7 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
 - Pour désactiver les mises à jour automatiques pour une extension spécifique, décochez l'option **Mettre automatiquement à jour cette extension** dans le volet d'informations de l'extension sur le côté droit de la boîte de dialogue **Extensions et mises à jour** .
 
 > [!NOTE]
->  À partir de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils / Options / Environnement / Extensions et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (le paramètre par défaut).
+> À partir de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils / Options / Environnement / Extensions et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (le paramètre par défaut).
 
 ## <a name="sample-master-copies-and-working-copies"></a>Exemple de copies principales et de copies de travail
  Lorsque vous installez un exemple en ligne, la solution est stockée dans deux emplacements :
@@ -89,4 +89,4 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
  Visual Studio prend toujours en charge les extensions installées par le programme d'installation Microsoft (MSI), mais pas via la boîte de dialogue **Extensions et mises à jour** sans modification.
 
 > [!TIP]
->  Si une extension MSI inclut un fichier extension.vsixmanifest, elle apparaît dans la boîte de dialogue **Extensions et mises à jour** .
+> Si une extension MSI inclut un fichier extension.vsixmanifest, elle apparaît dans la boîte de dialogue **Extensions et mises à jour** .

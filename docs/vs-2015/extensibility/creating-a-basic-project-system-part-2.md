@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685410"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Création d’un système de projet de base, partie 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ La première procédure pas à pas dans cette série, [création d’un système
 - Créer une page de propriétés de projet.  
   
 > [!NOTE]
->  Les étapes décrites dans cette procédure pas à pas sont basées sur un projet c#. Toutefois, à l’exception des caractéristiques telles que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet Visual Basic.  
+> Les étapes décrites dans cette procédure pas à pas sont basées sur un projet c#. Toutefois, à l’exception des caractéristiques telles que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Création d’un modèle Visual Studio  
  [Création d’un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md) montre comment créer un modèle de projet de base et l’ajouter au système de projet. Il montre également comment inscrire ce modèle avec Visual Studio à l’aide de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut, qui écrit le chemin d’accès complet du dossier \Templates\Projects\SimpleProject\ dans le Registre système.  
@@ -100,7 +100,7 @@ La première procédure pas à pas dans cette série, [création d’un système
 - Le \<ProjectType > élément désigne le type de projet dans le **nouveau projet** boîte de dialogue. Ce nom remplace le paramètre de nom de projet de l’attribut ProvideProjectFactory.  
   
   > [!NOTE]
-  >  Le \<ProjectType > élément doit correspondre à la `LanguageVsTemplate` argument de la `ProvideProjectFactory` attribut dans le fichier SimpleProjectPackage.cs.  
+  > Le \<ProjectType > élément doit correspondre à la `LanguageVsTemplate` argument de la `ProvideProjectFactory` attribut dans le fichier SimpleProjectPackage.cs.  
   
   Le \<TemplateContent > section décrit ces fichiers sont générés lorsqu’un nouveau projet est créé :  
   
@@ -115,7 +115,7 @@ La première procédure pas à pas dans cette série, [création d’un système
   Pour plus d’informations sur les éléments dans le schéma de modèle Visual Studio, consultez le [référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Si un projet comporte plusieurs modèles de Visual Studio, chaque modèle est dans un dossier distinct. Chaque fichier dans ce dossier doit posséder le **Action de génération** définie sur **ZipProject**.  
+> Si un projet comporte plusieurs modèles de Visual Studio, chaque modèle est dans un dossier distinct. Chaque fichier dans ce dossier doit posséder le **Action de génération** définie sur **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Ajout d’un fichier .vsct minimale  
  Visual Studio doit être exécuté en mode d’installation pour reconnaître un modèle Visual Studio nouvel ou modifié. Le mode d’installation nécessite un fichier .vsct à être présent. Par conséquent, vous devez ajouter un fichier .vsct minimal au projet.  
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ est le nom fourni par un utilisateur dans le **nouveau projet** boîte de dialogue, modifié afin de supprimer tous les caractères sécurisés et des espaces.  
   
-  Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  Si vous souhaitez créer votre propre paramètre de modèle personnalisé, consultez [NIB : Procédure : Passer des paramètres personnalisés aux modèles](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  Si vous souhaitez créer votre propre paramètre de modèle personnalisé, consultez [NIB : Procédure : Passer des paramètres personnalisés aux modèles](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Pour substituer des paramètres de modèle de projet  
   

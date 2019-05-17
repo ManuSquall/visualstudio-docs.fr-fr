@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e398125f467f4e5211573e96cd53bc0bc8d6dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553731"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension, élément (modèles Visual Studio)
 Contient les éléments de l’inscription pour la personnalisation de l’Assistant modèle.
@@ -91,4 +91,4 @@ Contient les éléments de l’inscription pour la personnalisation de l’Assis
 ## <a name="see-also"></a>Voir aussi
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Guide pratique pour Utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

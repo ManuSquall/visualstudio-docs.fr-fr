@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903998"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 

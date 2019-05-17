@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f557b722a36665b20f5e06093027f8085a014ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9cdb01a98a2cb2b2038366f0968c3b3532bd9ffc
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716751"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225591"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Cette interface représente une collection d’objets qui implémentent le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.
@@ -47,7 +47,7 @@ IEnumDebugFields : IUnknown
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

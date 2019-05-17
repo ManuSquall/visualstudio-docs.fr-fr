@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441479"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informations de référence sur le schéma XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Fournit un tableau d’éléments de schéma du compilateur de Table de commande
  Un fichier de configuration (.vsct) de table de commande basé sur XML définit les éléments de commande qui fournit un VSPackage à l’environnement de développement intégré (IDE). Ces éléments incluent les éléments de menu, des menus, des barres d’outils et des zones de liste déroulante.  
   
 > [!NOTE]
->  Le compilateur VSCT peut exécuter un préprocesseur sur le fichier .vsct. Comme il s’agit en général le préprocesseur, que vous pouvez définir C++ inclut et macros qui ont la même syntaxe que celle qui est utilisée dans des fichiers C++. Des exemples sont fournis dans le fichier .vsct de fichiers qui le **nouveau projet** Assistant créer un projet VSPackage.  
+> Le compilateur VSCT peut exécuter un préprocesseur sur le fichier .vsct. Comme il s’agit en général le préprocesseur, que vous pouvez définir C++ inclut et macros qui ont la même syntaxe que celle qui est utilisée dans des fichiers C++. Des exemples sont fournis dans le fichier .vsct de fichiers qui le **nouveau projet** Assistant créer un projet VSPackage.  
   
 ## <a name="optional-elements"></a>Éléments facultatifs  
  Certains éléments VSCT sont facultatifs. Si un `Parent` argument n’est pas spécifié, Group_Undefined:0 sera être implicite. Si un `Icon` argument n’est pas spécifié, guidOfficeIcon:msotcidNoIcon sera être implicite. Lorsqu’une touche de raccourci est définie, l’émulation, qui est généralement inutilisée, est facultative.  

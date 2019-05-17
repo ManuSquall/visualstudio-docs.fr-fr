@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705903"
 ---
 # <a name="troubleshooting-code-coverage"></a>Dépannage de la couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Vérifiez que l'assembly n'est pas chargé à partir du cache des images natives.  
   
  Explication  
- Pour des raisons de performance, les assemblys d'image natives ne sont pas analysés. Pour plus d’informations, consultez [Ngen.exe (Native Image Generator)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Pour des raisons de performance, les assemblys d'image natives ne sont pas analysés. Pour plus d’informations, consultez [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Résolution  
  Utilisez une version MSIL de l'assembly. Ne pas le traiter avec NGen.  

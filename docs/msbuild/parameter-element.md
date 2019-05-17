@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc410948f3869de5ca3059cba703e5381f93d7eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999674"
 ---
 # <a name="parameter-element"></a>Élément de paramètre
 Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask` `TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).

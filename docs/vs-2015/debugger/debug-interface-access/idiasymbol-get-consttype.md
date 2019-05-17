@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4256ea62660771c7f6695218b753c32b42a73333
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5629c4143c1d573757617a57b39a1f55ba28bb5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443299"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_constType ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="requirements"></a>Configuration requise  
   

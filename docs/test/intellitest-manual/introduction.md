@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318249"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461490"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
@@ -78,7 +78,7 @@ Une fois l’exemple compilé et exécuté, IntelliTest génère un ensemble de 
 7. "Hello\0World!"
 8. "Hello World!"
 
-Lisez [Générer des tests unitaires avec Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) pour comprendre l’emplacement auquel les tests générés sont enregistrés. Le code de test généré doit inclure un test comme celui-ci :
+Lisez [Générer des tests unitaires avec IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) pour comprendre l’emplacement où les tests générés sont enregistrés. Le code de test généré doit inclure un test comme celui-ci :
 
 ```csharp
 [TestMethod]
@@ -115,8 +115,7 @@ En ce sens, les résultats des appels à du code non managé ou non instrumenté
 
 De plus, le programme est considéré comme non déterministe si les valeurs provenant de sources externes changent durant la réexécution du programme. Dans ce type de situation, IntelliTest perd le contrôle sur l’exécution du programme, et sa recherche devient inefficace.
 
-Il est parfois difficile de détecter quand cela se produit.
-Prenons les exemples suivants :
+Il est parfois difficile de détecter quand cela se produit. Prenons les exemples suivants :
 
 * Le résultat de la méthode **GetHashCode()** est fourni par du code non managé et n’est pas prévisible.
 * La classe **System.Random** utilise l’heure du système en vigueur pour fournir des valeurs véritablement aléatoires.

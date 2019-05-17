@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436251"
 ---
 # <a name="making-commands-available"></a>Rendre les commandes disponibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Lorsque plusieurs packages VS sont ajoutés à Visual Studio, l’interface util
 - Activer le contexte `GUID`s et désactiver (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> méthode).  
   
     > [!CAUTION]
-    >  Assurez-vous que votre VSPackage n’affecte pas l’état de n’importe quel GUID de contexte existant, car d’autres packages VS dépendent les.  
+    > Assurez-vous que votre VSPackage n’affecte pas l’état de n’importe quel GUID de contexte existant, car d’autres packages VS dépendent les.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant d’une commande VSPackage montre la visibilité dynamique d’une commande qui est gérée par les contextes de commande sans charger le VSPackage.  

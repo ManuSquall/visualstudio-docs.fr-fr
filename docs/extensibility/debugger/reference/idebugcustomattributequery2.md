@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 23f76cfc71fab73d5d31fe3f47c3f8c552271aa7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921631"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Détermine l’existence d’un attribut personnalisé pour ce champ et, si elle existe, retourne les informations d’attribut.
@@ -52,7 +52,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ## <a name="remarks"></a>Notes
  Le [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) méthode peut retourner un énumérateur pour tous les attributs personnalisés définis pour ce champ.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

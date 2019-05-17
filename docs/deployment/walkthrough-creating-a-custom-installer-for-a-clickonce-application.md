@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405746"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : Créer un programme d’installation personnalisé pour une application ClickOnce
 N’importe quelle application ClickOnce selon un *.exe* fichier peut être installé et mis à jour par un programme d’installation personnalisé en mode silencieux. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée pendant l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de maintenance et de sécurité. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe en mode silencieux une application ClickOnce.
@@ -53,7 +53,7 @@ N’importe quelle application ClickOnce selon un *.exe* fichier peut être inst
      Ces méthodes appellent <xref:System.Deployment.Application.InPlaceHostingManager> méthodes pour télécharger le manifeste de déploiement, déclarer des autorisations appropriées, demandez à l’utilisateur autorisé à installer, puis téléchargez et installez l’application dans le cache ClickOnce. Un programme d’installation personnalisé peut spécifier qu’une application ClickOnce est pré-approuvée, ou différer la décision d’approbation pour le <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> appel de méthode. Ce code préalablement fait confiance à l’application.
 
     > [!NOTE]
-    >  Les autorisations assignées en pré-approbation ne peut pas dépasser les autorisations du code de programme d’installation personnalisé.
+    > Les autorisations assignées en pré-approbation ne peut pas dépasser les autorisations du code de programme d’installation personnalisé.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]

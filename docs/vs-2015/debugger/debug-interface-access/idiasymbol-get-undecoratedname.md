@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7870f19bee3dd67f62659c39403b1019d6d1687
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9d6a40bb739ea68dbc08c3dc3b3f98271261e6cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431755"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_undecoratedName ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne que le nom non décoré pour C++ de nom décoré.  
+ [out] Retourne le nom non décoré pour un C++ nom décoré.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

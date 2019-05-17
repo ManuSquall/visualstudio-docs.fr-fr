@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949940"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procédure : sélectionner le paramètre d’exécution active d’un test de charge
 
@@ -32,11 +32,11 @@ Dans **l’Éditeur de test de charge**, le paramètre d’exécution actif est 
 
 ## <a name="select-the-active-run-setting"></a>Sélectionner le paramètre d’exécution actif
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Développez le dossier **Paramètres d’exécution**.
+2. Développez le dossier **Paramètres d’exécution**.
 
-3.  Cliquez avec le bouton droit sur le nœud des paramètres d’exécution à définir en tant que nœud actif, puis choisissez **Définir comme actif**.
+3. Cliquez avec le bouton droit sur le nœud des paramètres d’exécution à définir en tant que nœud actif, puis choisissez **Définir comme actif**.
 
      Dans l’**éditeur de test de charge**, le nœud de paramètres d’exécution affecté est mis à jour avec le suffixe « [Actif] ».
 

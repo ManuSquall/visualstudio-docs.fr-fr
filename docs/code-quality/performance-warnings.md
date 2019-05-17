@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825492"
 ---
 # <a name="performance-warnings"></a>avertissements liés aux performances
 Avertissements liés aux performances prennent en charge les applications et des bibliothèques de hautes performances.
@@ -35,7 +35,7 @@ Avertissements liés aux performances prennent en charge les applications et des
 | [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md) | Les variables locales inutilisées et les assignations inutiles augmentent la taille d'un assembly et font baisser les performances. |
 | [CA1806 : N’ignorez pas les résultats de la méthode](../code-quality/ca1806-do-not-ignore-method-results.md) | Un nouvel objet est créé mais jamais utilisé, ou une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n’est jamais utilisée, ou une méthode de composant COM (Object Model) ou P/Invoke retourne un HRESULT ou code d’erreur qui n’est jamais utilisé. |
 | [CA1809 : Évitez le surplus de variables locales](../code-quality/ca1809-avoid-excessive-locals.md) | Une méthode d'optimisation des performances courante consiste à stocker une valeur dans un registre de processeur au lieu de la mémoire ; cette méthode est appelée « enregistrement de la valeur ».  Pour augmenter les chances que toutes les variables locales sont inscrites dans le Registre, limitez le nombre de variables locales à 64. |
-| [CA1810 : Initialiser des champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Lorsqu’un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d’instances du type afin de garantir que le constructeur statique a été appelé précédemment. Les vérifications des constructeurs statiques peuvent diminuer les performances. |
+| [CA1810 : Initialiser des champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. Les vérifications des constructeurs statiques peuvent diminuer les performances. |
 | [CA1811 : Évitez le recours à code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md) | Membre privé ou interne (de niveau assembly) n’a pas d’appelants dans l’assembly, elle n’est pas appelée par le common language runtime, et elle n’est pas appelée par un délégué. |
 | [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Une instance d'un type de niveau assembly n'est pas créée par le code au sein de l'assembly. |
 | [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md) | La bibliothèque de classes .NET Framework fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Le fait de sceller l'attribut élimine la recherche dans la hiérarchie d'héritage et peut améliorer les performances. |

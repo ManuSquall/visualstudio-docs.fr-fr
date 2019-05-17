@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225504"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -21,7 +21,6 @@ Développez vos compétences avec des cours créés par des experts, des parcour
 Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offerts pour chaque type d’abonnement Visual Studio.  Certains abonnés pourront également continuer à bénéficier de cours limités après l’expiration de leur abonnement donnant accès au catalogue complet. Ils seront alors guidés par Pluralsight à travers les étapes à effectuer à ce moment-là.
 
  Selon leur type d’abonnement, certains abonnés qui ont déjà utilisé un abonnement Pluralsight fourni dans le cadre d’un abonnement Visual Studio ne pourront pas utiliser de nouveaux avantages Pluralsight. Si vous ne pouvez pas bénéficier d’avantages de formation Pluralsight supplémentaires, vous recevrez une notification quand vous tenterez d’activer l’avantage sur le site web de Pluralsight.
-
 
 ## <a name="activation-steps"></a>Étapes d’activation
 1. Pour activer votre abonnement, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur le lien **Obtenir un code** dans la vignette Pluralsight qui se trouve dans la section Développement professionnel.
@@ -42,7 +41,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
    - Cochez la case pour accepter les conditions d’utilisation et la déclaration de confidentialité.
    - Cliquez sur **I agree, activate benefit** (J’accepte. Activer l’avantage).
      > [!div class="mx-imgBorder"]
-     > ![Avantage Pluralsight, Activation](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Avantage Pluralsight, Activation](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Avantage Pluralsight, Conditions d’utilisation](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
@@ -84,7 +83,6 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
-
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
@@ -101,14 +99,13 @@ R : Oui, en tant qu’abonné à Visual Studio et dans le cadre de votre avanta
 
 •   James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
-
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Q : Que se passe-t-il à l’expiration de mon abonnement Pluralsight ?
 R :  À la fin de votre abonnement Pluralsight gratuit, vous pouvez choisir d’acheter un abonnement directement auprès de Pluralsight.  Pour plus d’informations, contactez [Pluralsight](http://www.pluralsight.com).
 
 ## <a name="support-resources"></a>Ressources de support
--  [Pluralsight Help Center](https://help.pluralsight.com/help) vous aide à sélectionner des cours Pluralsight ou à utiliser le site web de Pluralsight.
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- [Pluralsight Help Center](https://help.pluralsight.com/help) vous aide à sélectionner des cours Pluralsight ou à utiliser le site web de Pluralsight.
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez créé votre compte, vous êtes prêt à commencer la formation.  Visitez [https://www.pluralsight.com](http://www.pluralsight.com) et appuyez sur **Log in** en haut à droite de la page pour démarrer un nouveau cours ou revenir à un cours déjà commencé.

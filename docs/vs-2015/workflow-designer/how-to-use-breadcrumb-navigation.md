@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444131"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procédure : Utiliser l’exploration à l’aide de la barre de navigation
 Il existe trois méthodes principales pour modifier l'ensemble des activités affichées dans [!INCLUDE[wfd1](../includes/wfd1-md.md)] :  
@@ -38,7 +38,7 @@ Il existe trois méthodes principales pour modifier l'ensemble des activités af
 2. Lorsque l'état de développement est modifié en cliquant sur le bouton, le nouvel état de développement est enregistré en XAML.  
   
     > [!WARNING]
-    >  Toutes les activités ne peuvent pas être développées sur place. Il existe deux cas pour lesquels il est impossible de développer une activité sur place : soit le parent de l’activité n’autorise pas ses enfants à être développés sur place, (par exemple, les activités d’un organigramme ne peuvent pas être développées sur place), soit le concepteur d’activités lui-même ne peut pas être développé sur place. Bien que ce ne soit pas le cas des concepteurs d'activités inclus dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], certaines activités personnalisées peuvent présenter ce comportement.  
+    > Toutes les activités ne peuvent pas être développées sur place. Il existe deux cas pour lesquels il est impossible de développer une activité sur place : soit le parent de l’activité n’autorise pas ses enfants à être développés sur place, (par exemple, les activités d’un organigramme ne peuvent pas être développées sur place), soit le concepteur d’activités lui-même ne peut pas être développé sur place. Bien que ce ne soit pas le cas des concepteurs d'activités inclus dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], certaines activités personnalisées peuvent présenter ce comportement.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Développement ou réduction de toutes les activités  
   
@@ -47,7 +47,7 @@ Il existe trois méthodes principales pour modifier l'ensemble des activités af
 2. Une fois que vous avez appliqué une développer tout ou réduisez tous les États, vous pouvez cliquer sur le **restaurer** bouton qui apparaît à revenir en arrière pour examiner l’état précédemment appliqué à chaque activité.  
   
     > [!WARNING]
-    >  Si une activité, tel que <xref:System.Activities.Statements.Flowchart>, a choisi de développement en place, les fonctionnalités associées du **développer tout** et **réduire tout** boutons sont désactivé sur le **organigramme**  concepteur. [!INCLUDE[crabout](../includes/crabout-md.md)] le **organigramme** concepteur, consultez le [organigramme](../workflow-designer/flowchart-activity-designer.md) rubrique.  
+    > Si une activité, tel que <xref:System.Activities.Statements.Flowchart>, a choisi de développement en place, les fonctionnalités associées du **développer tout** et **réduire tout** boutons sont désactivé sur le **organigramme**  concepteur. [!INCLUDE[crabout](../includes/crabout-md.md)] le **organigramme** concepteur, consultez le [organigramme](../workflow-designer/flowchart-activity-designer.md) rubrique.  
   
     > [!WARNING]
-    >  Développer tout a également un effet spécial **commutateur** et **TryCatch** concepteurs d’activités. Lorsque vous cliquez sur **développer tout**, tous les cas de commutateur et tous les blocs try/catch/finally sont affichés. En cliquant sur **restaurer** ou **réduire tout** ces concepteurs retrouvent leur état par défaut, à partir de laquelle vous pouvez cliquer sur un cas/bloc individuel pour afficher son contenu.
+    > Développer tout a également un effet spécial **commutateur** et **TryCatch** concepteurs d’activités. Lorsque vous cliquez sur **développer tout**, tous les cas de commutateur et tous les blocs try/catch/finally sont affichés. En cliquant sur **restaurer** ou **réduire tout** ces concepteurs retrouvent leur état par défaut, à partir de laquelle vous pouvez cliquer sur un cas/bloc individuel pour afficher son contenu.

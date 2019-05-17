@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e527769216dcf2edcd6166e24834e0829ddf48cd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674280"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Rechercher et remplacer, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59661762"
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler les boîtes de message et d’autres aspects d’une opération de recherche et de remplacement. Vous pouvez accéder à cette boîte de dialogue à partir du menu **Outils** en cliquant sur **Options**, en développant **Environnement**, puis en cliquant sur **Rechercher et remplacer**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   
 > [!NOTE]
->  Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Afficher des messages d’information**  
@@ -39,7 +39,7 @@ Utilisez cette page de la boîte de dialogue **Options** pour contrôler les bo�
  Si vous avez désactivé l’option **Toujours afficher ce message** pour certains messages d’information **Rechercher et remplacer** mais pas tous, la case à cocher **Afficher des messages d’information** apparaît remplie mais pas sélectionnée. Pour restaurer tous les messages **Rechercher et remplacer** facultatifs, désactivez cette option, puis sélectionnez-la de nouveau.  
   
 > [!NOTE]
->  Cette option n’affecte pas les messages d’information **Rechercher et remplacer** qui ne présentent pas l’option **Toujours afficher ce message**.  
+> Cette option n’affecte pas les messages d’information **Rechercher et remplacer** qui ne présentent pas l’option **Toujours afficher ce message**.  
   
  **Afficher des messages d’avertissement**  
  Sélectionnez cette option pour afficher tous les messages d’avertissement Rechercher et remplacer dotés de l’option **Toujours afficher ce message**. Par exemple, si vous avez choisi de ne pas afficher le message d’avertissement **Remplacer tout** qui s’affiche lorsque vous essayez d’effectuer des remplacements dans des fichiers qui ne sont pas ouverts pour modification, cette option entraîne de nouveau l’affichage de ce message d’avertissement si vous tentez de tout remplacer.  
@@ -49,7 +49,7 @@ Utilisez cette page de la boîte de dialogue **Options** pour contrôler les bo�
  Si vous avez désactivé l’option **Toujours afficher ce message** pour certains messages d’avertissement **Rechercher et remplacer** mais pas tous, la case à cocher **Afficher des messages d’avertissement** apparaît remplie mais pas sélectionnée. Pour restaurer tous les messages **Rechercher et remplacer** facultatifs, désactivez cette option, puis sélectionnez-la de nouveau.  
   
 > [!NOTE]
->  Cette option n’affecte pas les messages d’avertissement **Rechercher et remplacer** qui ne présentent pas l’option **Toujours afficher ce message**.  
+> Cette option n’affecte pas les messages d’avertissement **Rechercher et remplacer** qui ne présentent pas l’option **Toujours afficher ce message**.  
   
  **Remplir automatiquement la zone Rechercher à l’aide du texte de l’éditeur**  
  Sélectionnez cette option pour coller le texte de chaque côté du point d’insertion de l’éditeur actuel dans le champ **Rechercher** lorsque vous sélectionnez n’importe quelle vue de la fenêtre **Rechercher et remplacer** à partir du menu **Edition**. Désactivez cette option pour utiliser le dernier modèle de recherche utilisé à la recherche précédente comme chaîne **Rechercher**.  

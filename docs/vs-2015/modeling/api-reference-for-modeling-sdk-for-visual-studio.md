@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e788abb51425e0f2656c10ba860602a36c8aad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408439"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Référence des API pour le Kit de développement logiciel de modélisation pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58953201"
 Le Visual Studio Visualization and Modeling SDK fournit la plateforme sur laquelle reposent vos langages spécifiques à un domaine (DSL) et les outils UML.
 
 > [!NOTE]
->  Pour plus d’informations sur l’API de modélisation UML, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Pour plus d’informations sur la transformation de texte, consultez [personnalisation de Transformation de texte T4](../modeling/customizing-t4-text-transformation.md).
+> Pour plus d’informations sur l’API de modélisation UML, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Pour plus d’informations sur la transformation de texte, consultez [personnalisation de Transformation de texte T4](../modeling/customizing-t4-text-transformation.md).
 
  Cette section contient des documents de référence pour les espaces de noms qui ont des noms qui commencent par « Microsoft.VisualStudio.Modeling ».
 

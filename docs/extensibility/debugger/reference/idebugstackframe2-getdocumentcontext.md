@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fecae2fe2398f1814b0948fd6639f234353390
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 253235913afecc2895f6aa37e6cd1a06dc9685dd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703810"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458555"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtient le contexte de document pour ce frame de pile.
@@ -36,8 +39,8 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppCxt`
+## <a name="parameters"></a>Paramètres
+ `ppCxt`\
 
  [out] Retourne un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objet qui représente la position actuelle dans un document source.
 

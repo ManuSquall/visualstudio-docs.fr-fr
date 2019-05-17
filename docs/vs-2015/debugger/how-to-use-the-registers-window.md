@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 233092af638824c462a6d9a47865a1c6f5fd9397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042873"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697464"
 ---
 # <a name="how-to-use-the-registers-window"></a>Procédure : Utiliser la fenêtre Registres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
  Pour une introduction avancée aux concepts qui sous-tendent les registres et la fenêtre Registres, consultez [principes fondamentaux de débogage : Registres (fenêtre)](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Pour afficher la fenêtre Registres  
   
@@ -55,7 +55,7 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
      Le débogueur doit être en cours d'exécution ou en mode arrêt.  
   
     > [!NOTE]
-    >  Les informations de Registre ne sont pas disponibles aux applications de script ou SQL.  
+    > Les informations de Registre ne sont pas disponibles aux applications de script ou SQL.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Principes de base pour le débogage : Registres (fenêtre)](../debugger/debugging-basics-registers-window.md)   

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58951372"
@@ -78,7 +78,7 @@ ms.locfileid: "58951372"
 **12345**
 **12345**
 **Changing pointeur - passé par référence :** 
- ** 12345**
+**12345**
 **ABCDE 12345**
 **passage par valeur de retour :**
 **ABCDE 12345**

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694805"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Utilisation d’un modèle conceptuel (services de données WCF)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une 
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Exécuter des requêtes de Service de données](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] application.|  
-|[Guide pratique pour Résultats de la requête](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Montre comment réduire la quantité de données retournées par une requête de service de données.|  
+|[Guide pratique pour Exécuter des requêtes de Service de données](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Montre comment interroger un service de données à partir d’un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] application.|  
+|[Guide pratique pour Résultats de la requête](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Montre comment réduire la quantité de données retournées par une requête de service de données.|  
   
  Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données est valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation pour les opérations que vous effectuez sur un service de l’entité ou de données.  
   
@@ -43,15 +43,15 @@ Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une 
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Intercepter les Messages de Service de données](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Montre comment ajouter une validation à une opération de service de données.|  
+|[Guide pratique pour Intercepter les Messages de Service de données](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Montre comment ajouter une validation à une opération de service de données.|  
   
  Les rubriques suivantes montrent comment créer, mettre à jour et supprimer des données en effectuant des opérations sur les entités.  
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Ajouter, modifier et supprimer des entités](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|  
-|[Guide pratique pour Définir des relations d’entité](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Montre comment créer ou modifier des relations dans un service de données.|  
+|[Guide pratique pour Ajouter, modifier et supprimer des entités](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|  
+|[Guide pratique pour Définir des relations d’entité](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Montre comment créer ou modifier des relations dans un service de données.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Interrogation du service de données](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [Interrogation du service de données](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b52035d3f7a686c95f03f89a22bd0835b42caff2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715607"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615021"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Obtient l’état de ce point d’arrêt lié.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pState`
-
- [out] Retourne une valeur de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération qui décrit l’état du point d’arrêt.
+## <a name="parameters"></a>Paramètres
+`pState`\
+[out] Retourne une valeur de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération qui décrit l’état du point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

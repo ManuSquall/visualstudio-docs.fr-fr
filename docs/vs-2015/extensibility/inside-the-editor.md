@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414617"
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ L’éditeur est composée d’un nombre de différents sous-systèmes, lesquels
  Vous pouvez afficher le contenu d’un instantané de texte sous la forme d’une séquence de caractères ou une séquence de lignes. Caractères et les lignes sont que tous deux indexés en commençant à zéro. Un instantané de texte vide contient zéro caractère et une ligne vide. Une ligne est délimitée par une séquence de caractères de saut de ligne Unicode valide, ou par le début ou la fin de la mémoire tampon. Caractères de saut de ligne sont explicitement représentées dans l’instantané de texte et les sauts de ligne dans un instantané de texte ne sont pas nécessairement être identiques.  
   
 > [!NOTE]
->  Pour plus d’informations sur les caractères de saut de ligne dans l’éditeur Visual Studio, consultez [encodages et sauts de ligne](../ide/encodings-and-line-breaks.md).  
+> Pour plus d’informations sur les caractères de saut de ligne dans l’éditeur Visual Studio, consultez [encodages et sauts de ligne](../ide/encodings-and-line-breaks.md).  
   
  Une ligne de texte est représentée par un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> objet, qui peut être obtenu à partir d’un instantané de texte pour un numéro de ligne particulier ou pour une position de caractère particulier.  
   

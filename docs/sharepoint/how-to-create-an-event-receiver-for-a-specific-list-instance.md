@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408551"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procédure : Créer un récepteur d’événements pour une instance de liste spécifique
   Un récepteur d’événements liste instance répond aux événements qui se produisent dans n’importe quelle instance d’une définition de liste. Bien que le modèle de récepteur d’événements n’active pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.
@@ -43,7 +43,7 @@ ms.locfileid: "60094344"
 6. Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
 
     > [!NOTE]
-    >  Vous pouvez également sélectionner n’importe quel autre type de récepteur d’événements qui définit une portée à une définition de liste, par exemple, **liste des événements de messagerie** ou **liste des événements de flux de travail**.
+    > Vous pouvez également sélectionner n’importe quel autre type de récepteur d’événements qui définit une portée à une définition de liste, par exemple, **liste des événements de messagerie** ou **liste des événements de flux de travail**.
 
 7. Dans le **quel élément doit être la source d’événements ?** , choisissez **annonces**.
 

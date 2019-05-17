@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ec5c271c023483ea64ddbabb83129ea9a44e4c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911612"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procédure : S’inscrire aux événements de mémoire tampon de texte avec l’API héritée
 Si vous accédez à la mémoire tampon de texte à l’aide de l’API héritée, vous devez vous inscrire pour les événements de mémoire tampon de texte comme indiqué dans la procédure suivante.

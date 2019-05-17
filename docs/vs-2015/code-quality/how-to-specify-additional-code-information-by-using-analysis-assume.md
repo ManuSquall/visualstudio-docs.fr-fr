@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685819"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procédure : Spécifier des informations de code supplémentaire en utilisant __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Vous pouvez fournir des indications à l’outil d’analyse de code pour le cod
  L’outil d’analyse de code suppose que la condition représentée par l’expression est remplie au point où la fonction s’affiche et le reste jusqu'à ce que l’expression est modifiée, par exemple, par assignation à une variable.  
   
 > [!NOTE]
->  `__analysis_assume` ne pas avoir un impact sur l’optimisation du code. En dehors de l’outil d’analyse de code, `__analysis_assume` est défini comme une absence d’opération.  
+> `__analysis_assume` ne pas avoir un impact sur l’optimisation du code. En dehors de l’outil d’analyse de code, `__analysis_assume` est défini comme une absence d’opération.  
   
 ## <a name="example"></a>Exemple  
  Le code suivant utilise `__analysis_assume` pour corriger l’avertissement d’analyse du code [C6388](../code-quality/c6388.md):  
@@ -59,4 +59,4 @@ void test( )
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
+ [__assume](https://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)

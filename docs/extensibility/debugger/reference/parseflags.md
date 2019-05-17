@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56ba1933d1b63f9af863b115972f3ecf1dfc4346
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e5d298add846a7f3b7baf566f3c31e16c68b8dc5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695711"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460844"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Spécifie comment analyser une expression.
@@ -41,17 +44,20 @@ public enum enum_PARSEFLAGS { 
 };
 ```
 
-## <a name="members"></a>Membres
- PARSE_EXPRESSION indique que l’expression n’est pas une instruction.
+## <a name="fields"></a>Champs
+ `PARSE_EXPRESSION`\
+ Indique que l’expression n’est pas une instruction.
 
- PARSE_FUNCTION_AS_ADDRESS indique que l’expression doit être analysé (et ultérieurement évaluée) en tant qu’adresse.
+ `PARSE_FUNCTION_AS_ADDRESS`\
+ Indique que l’expression doit être analysé (et ultérieurement évaluée) en tant qu’adresse.
 
- PARSE_DESIGN_TIME_EXPR_EVAL indique que l’expression est en cours d’analyse au moment du design (autrement dit, lorsqu’un concepteur est ouvert).
+ `PARSE_DESIGN_TIME_EXPR_EVAL`\
+ Indique que l’expression est en cours d’analyse au moment du design (autrement dit, lorsqu’un concepteur est ouvert).
 
 ## <a name="remarks"></a>Notes
  Passé en tant que paramètre à la [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) et [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) méthodes.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

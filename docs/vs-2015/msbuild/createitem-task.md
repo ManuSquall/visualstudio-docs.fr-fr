@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419767"
 ---
 # <a name="createitem-task"></a>CreateItem, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "59649547"
 Remplit des collections d’éléments avec les éléments d’entrée. Cela permet de copier des éléments d’une liste à une autre.  
   
 > [!NOTE]
->  Cette tâche est dépréciée. À compter du .NET Framework 3.5, les groupes d’éléments peuvent être placés dans des éléments [Target](../msbuild/target-element-msbuild.md). Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
+> Cette tâche est dépréciée. À compter du .NET Framework 3.5, les groupes d’éléments peuvent être placés dans des éléments [Target](../msbuild/target-element-msbuild.md). Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Attributs  
  Le tableau ci-dessous décrit les paramètres de la tâche `CreateItem` .  

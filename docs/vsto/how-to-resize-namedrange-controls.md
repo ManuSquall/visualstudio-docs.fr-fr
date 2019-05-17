@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba5603fe759f55a85425bc61da0a470aa38d636c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422486"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Procédure : Redimensionner les contrôles NamedRange
   Vous pouvez définir la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> quand vous l’ajoutez à un document Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner plus tard.
@@ -59,7 +59,7 @@ ms.locfileid: "60099606"
  Vous pouvez redimensionner une plage nommée par programmation à l’aide de la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
->  Dans la fenêtre **Propriétés** , la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> est marquée comme étant en lecture seule.
+> Dans la fenêtre **Propriétés** , la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> est marquée comme étant en lecture seule.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Pour redimensionner une plage nommée par programmation
 

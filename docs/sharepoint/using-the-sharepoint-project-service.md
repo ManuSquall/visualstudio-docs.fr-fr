@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007937"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Utiliser le service de projet SharePoint
   Le système de projet SharePoint inclut un service de projet que vous pouvez utiliser pour effectuer des tâches liées au système de projet. Le service de projet est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.
 
- Vous pouvez accéder au service de projet SharePoint dans toute extension d'outils SharePoint. Vous pouvez également y accéder dans d’autres types d’extensions Visual Studio, comme les modules complémentaires et VSPackages. Pour plus d'informations, voir [Procédure : Récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
+ Vous pouvez accéder au service de projet SharePoint dans toute extension d’outils SharePoint. Vous pouvez également y accéder dans d'autres types d'extensions Visual Studio, comme les modules complémentaires et VSPackages. Pour plus d'informations, voir [Procédure : Récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).
 
 ## <a name="project-service-features"></a>Fonctionnalités de service de projet
- Le tableau suivant répertorie les tâches que vous pouvez effectuer à l’aide du service de projet SharePoint et la méthode ou propriété <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à utiliser pour effectuer chaque tâche.
+ Le tableau suivant répertorie les tâches que vous pouvez effectuer à l'aide du service de projet SharePoint et la méthode ou propriété <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> à utiliser pour effectuer chaque tâche.
 
 |Tâche|Membre à utiliser|
 |----------|-------------------|

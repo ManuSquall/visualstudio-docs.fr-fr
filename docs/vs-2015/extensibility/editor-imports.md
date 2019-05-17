@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fc32d0126d912acab104ecefe3cb62d80b8513f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950771"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690319"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Vous pouvez importer un nombre de services de l’éditeur, les fabriques et les
  Pour utiliser une importation de l’éditeur, importez-le en tant que champ ou propriété d’une classe qui exporte une partie du composant Managed Extensibility Framework.  
   
 > [!NOTE]
->  Pour plus d’informations sur Managed Extensibility Framework, consultez [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Pour plus d’informations sur Managed Extensibility Framework, consultez [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Syntaxe de l’importation  
  L’exemple suivant montre comment importer l’éditeur de service de fabrique d’options.  
@@ -44,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Pour plus d’exemples d’utilisation des importations, consultez les procédures suivantes :  
   
- [Procédure pas à pas : Création d’un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Procédure pas à pas : Création d'un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Procédure pas à pas : Personnalisation de l’affichage de texte](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Procédure pas à pas : Personnalisation de l’affichage du texte](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Procédure pas à pas : Mise en surbrillance de texte](../extensibility/walkthrough-highlighting-text.md)  
+ [Procédure pas à pas : Mettre du texte en surbrillance](../extensibility/walkthrough-highlighting-text.md)  
   
- [Procédure pas à pas : Affichage des info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procédure pas à pas : Affichage d’info-bulles Info express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procédure pas à pas : Affichage de l’aide de la Signature](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procédure pas à pas : Affichage d'aide sur les signatures](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procédure pas à pas : Affichage de saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procédure pas à pas : Affichage de la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Procédure pas à pas : Affichage de balises actives](../misc/walkthrough-displaying-smarttags.md)  
   

@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e02d0f27e89aea53ad1433250e84dd2683d7cc5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20fc0bf766baf2fcdee32c654d10dbd4813da698
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948381"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703676"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si le module a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur.  
+Récupère un indicateur qui spécifie si le module a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ HRESULT get_isHotpatchable(
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
  Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  

@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7621508c069d21e7d90d7477254fe03468b0ea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 59c7ec2b6313ee27fc46c778f8b19e104b169273
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421466"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Écriture d’un évaluateur de common language runtime
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  L’évaluateur d’expression (EE) est la partie d’un moteur de débogage (dé) qui gère la syntaxe et sémantique du langage de programmation qui a généré le code en cours de débogage. Expressions doivent être évaluées dans le contexte d’un langage de programmation. Par exemple, dans certaines langues, l’expression « A + B » signifie « la somme de A et b. » Dans d’autres langages, la même expression peut signifier « A ou b ». Par conséquent, un distinct EE doit être écrites pour chaque langage de programmation qui génère du code de l’objet à déboguer dans l’IDE Visual Studio.
 

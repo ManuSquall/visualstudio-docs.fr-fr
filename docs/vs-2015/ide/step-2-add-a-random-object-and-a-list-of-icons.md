@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442632"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Étape 2 : Ajouter un objet aléatoire et une liste d’icônes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
 Fenêtre IntelliSense  
   
     > [!NOTE]
-    >  La fenêtre IntelliSense apparaît uniquement lorsque vous entrez du code manuellement. Si vous effectuez un copier-coller du code, elle n'apparaît pas.  
+    > La fenêtre IntelliSense apparaît uniquement lorsque vous entrez du code manuellement. Si vous effectuez un copier-coller du code, elle n'apparaît pas.  
   
      Si vous examinez le code (et les remarques) par petites sections, vous le comprendrez plus facilement. Vos programmes peuvent utiliser des objets `List` pour effectuer le suivi de nombreux types d'éléments différents. Une liste peut contenir des nombres, des valeurs True/False, du texte ou d'autres objets. Un objet `List` peut même contenir d'autres objets `List`. Une liste est composée d’*éléments* et chacune d’elles ne contient qu’un seul type d’élément. Ainsi, une liste de nombres ne peut contenir que des nombres et vous ne pouvez pas y ajouter de texte. De même, vous ne pouvez pas ajouter de nombres dans une liste de valeurs true/false.  
   
@@ -51,7 +51,7 @@ Fenêtre IntelliSense
      Lorsque vous utilisez un initialiseur de collection avec une instruction `new`, une fois que le nouvel objet `List` a été créé, le programme le remplit avec les données que vous avez fournies entre les accolades. Dans ce cas, vous obtenez une liste de chaînes nommées **icônes**, et cette liste sera initialisée de sorte à contenir seize chaînes. Chacune de ces chaînes est une lettre unique, et elles correspondent toutes aux icônes qui seront dans les contrôles Label. Ainsi, le jeu comportera une paire de points d'exclamation, une paire de lettres N majuscules, une paire de virgules, etc. (Lorsque la police Webdings est affectée à ces caractères, ils apparaissent sous la forme de symboles, tels qu'un bus, un vélo, une araignée, etc.) En tout, votre objet `List` contiendra seize chaînes, une pour chaque cellule du volet TableLayoutPanel.  
   
     > [!NOTE]
-    >  Dans Visual Basic, vous obtenez le même résultat, mais les chaînes sont d'abord insérées dans un tableau temporaire, qui est ensuite converti en objet `List`. Un tableau est semblable à une liste, sauf que les tableaux sont créés avec une taille fixe, par exemple. Les listes peuvent se réduire et s'agrandir autant que nécessaire, ce qui est important dans ce programme.  
+    > Dans Visual Basic, vous obtenez le même résultat, mais les chaînes sont d'abord insérées dans un tableau temporaire, qui est ensuite converti en objet `List`. Un tableau est semblable à une liste, sauf que les tableaux sont créés avec une taille fixe, par exemple. Les listes peuvent se réduire et s'agrandir autant que nécessaire, ce qui est important dans ce programme.  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   

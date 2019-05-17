@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704013"
 ---
 # <a name="automatic-feature-suspension"></a>Suspension automatique de fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Si votre mémoire système disponible est inférieure ou égale à 200 Mo, Visua
 
  Dans une condition de mémoire insuffisante, les événements suivants se produisent :
 
-- Analyse de la solution complète pour Visual C# et Visual Basic est désactivée.
+- Analyse de la solution complète pour Visual c# et Visual Basic est désactivée.
 
-- [Le Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) mode de faible latence (GC) pour Visual c# et Visual Basic sont désactivées.
+- [Le Garbage Collection](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) mode de faible latence (GC) pour Visual c# et Visual Basic sont désactivées.
 
 - Visual Studio caches soient vidés le.
 
@@ -62,5 +62,5 @@ En outre, les caches utilisés pour les opérations internes de Visual Studio so
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour Activer et désactiver l’analyse complète de la Solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Principes de base du Garbage Collection](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Principes de base du Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Considérations relatives aux performances pour les solutions volumineuses](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

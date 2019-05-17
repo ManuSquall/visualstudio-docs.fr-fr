@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424383"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagrammes de composants UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Dans Visual Studio, un *diagramme de composant* montre les parties d’une conce
  Pour plus d’informations sur l’utilisation des diagrammes de composants en cours de conception, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Cette rubrique décrit les éléments que vous pouvez utiliser dans les diagrammes de composants. Pour plus d’informations sur la façon de dessiner des diagrammes de composants, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md). Pour plus d’informations sur la façon de dessiner des diagrammes de modélisation en général, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+> Cette rubrique décrit les éléments que vous pouvez utiliser dans les diagrammes de composants. Pour plus d’informations sur la façon de dessiner des diagrammes de composants, consultez [diagrammes de composants UML : Les instructions](../modeling/uml-component-diagrams-guidelines.md). Pour plus d’informations sur la façon de dessiner des diagrammes de modélisation en général, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Lecture de diagrammes de composants  
  Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagramme de composant, ainsi que leurs principales propriétés. Pour obtenir une liste complète des propriétés des éléments, consultez [propriétés d’éléments des diagrammes de composants UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

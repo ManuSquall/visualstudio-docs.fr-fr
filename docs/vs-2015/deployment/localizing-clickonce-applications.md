@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679993"
 ---
 # <a name="localizing-clickonce-applications"></a>Localisation des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La localisation consiste à adapter votre application à une culture spécifique
  L'avantage de cette approche est de créer un déploiement unique et de simplifier votre histoire de déploiement localisé. Au moment de l'exécution, l'assembly satellite approprié est utilisé, en fonction de la culture par défaut du système d'exploitation Windows de l'utilisateur. L'inconvénient de cette approche est le téléchargement de tous les assemblys satellites chaque fois que l'application est installée ou mise à jour sur un ordinateur client. Si votre application comporte un grand nombre de chaînes ou que vos clients disposent d'une connexion réseau lente, ce processus peut affecter les performances pendant la mise à jour de l'application.  
   
 > [!NOTE]
->  Cette approche suppose que votre application ajuste automatiquement la hauteur, la largeur et la position des contrôles pour s'adapter aux différentes tailles des chaînes de texte des différentes cultures. Windows Forms contient plusieurs contrôles et technologies qui vous permettent de concevoir votre formulaire de sorte à ce qu'il soit facilement localisable, y compris les contrôles <xref:System.Windows.Forms.FlowLayoutPanel> et <xref:System.Windows.Forms.TableLayoutPanel> ainsi que la propriété <xref:System.Windows.Forms.Control.AutoSize%2A>.  Voir également [Guide pratique pour Prend en charge de la localisation sur les formulaires Windows à l’aide du redimensionnement automatique et le contrôle TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Cette approche suppose que votre application ajuste automatiquement la hauteur, la largeur et la position des contrôles pour s'adapter aux différentes tailles des chaînes de texte des différentes cultures. Windows Forms contient plusieurs contrôles et technologies qui vous permettent de concevoir votre formulaire de sorte à ce qu'il soit facilement localisable, y compris les contrôles <xref:System.Windows.Forms.FlowLayoutPanel> et <xref:System.Windows.Forms.TableLayoutPanel> ainsi que la propriété <xref:System.Windows.Forms.Control.AutoSize%2A>.  Voir également [Guide pratique pour Prend en charge de la localisation sur les formulaires Windows à l’aide du redimensionnement automatique et le contrôle TableLayoutPanel](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Générer un seul déploiement pour chaque culture  
  Dans cette stratégie de déploiement, vous générez plusieurs déploiements. Dans chaque déploiement, vous incluez uniquement l'assembly satellite nécessaire pour une culture spécifique, et vous marquez le déploiement comme étant spécifique de cette culture.  
@@ -70,7 +70,7 @@ La localisation consiste à adapter votre application à une culture spécifique
   
  Le téléchargement d'assemblys satellites à la demande diffère légèrement du téléchargement d'autres types d'assemblys à la demande. Pour plus d’exemples de code et des informations sur la façon d’activer ce scénario à l’aide de la [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] tools pour [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consultez [procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Vous pouvez également mettre en place ce scénario dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consultez également [procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Vous pouvez également mettre en place ce scénario dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consultez également [procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Test des applications ClickOnce localisées avant le déploiement  
  Un assembly satellite est utilisé pour une application Windows Forms uniquement si la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> pour le thread principal de l’application est définie avec la valeur de la culture de l’assembly satellite. Les clients des marchés locaux ont probablement déjà exécuté une version localisée de Windows avec une culture définie avec la valeur par défaut appropriée.  
@@ -84,4 +84,4 @@ La localisation consiste à adapter votre application à une culture spécifique
 ## <a name="see-also"></a>Voir aussi  
  [\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Globalisation des Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [Globalisation des Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

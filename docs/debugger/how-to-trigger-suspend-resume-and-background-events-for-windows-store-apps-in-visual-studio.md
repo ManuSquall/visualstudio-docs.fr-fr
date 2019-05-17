@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84b454ba663760c4d8cc600dcc0d508e56547619
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388501"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher suspendre, reprendre et événements en arrière-plan pendant le débogage des applications UWP dans Visual Studio
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.
@@ -52,7 +52,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
  Déclenchez les événements qui démarrent les tâches en arrière-plan pour votre application à partir du débogueur.
 
 > [!NOTE]
->  Le débogueur peut déclencher uniquement les événements qui ne contiennent pas de données, comme les événements qui indiquent un changement d'état sur le périphérique. Vous devez déclencher manuellement les tâches en arrière-plan qui nécessitent la saisie utilisateur ou d'autres données.
+> Le débogueur peut déclencher uniquement les événements qui ne contiennent pas de données, comme les événements qui indiquent un changement d'état sur le périphérique. Vous devez déclencher manuellement les tâches en arrière-plan qui nécessitent la saisie utilisateur ou d'autres données.
 
  La méthode la plus réaliste pour déclencher un événement de tâche en arrière-plan est le moment où votre application n'est pas en cours d'exécution. Toutefois, le déclenchement de l'événement dans une session de débogage standard est également pris en charge.
 

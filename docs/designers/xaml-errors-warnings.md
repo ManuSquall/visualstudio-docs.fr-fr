@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892617"
 ---
 # <a name="xaml-errors-and-warnings"></a>Erreurs et avertissements XAML
 
@@ -31,7 +31,6 @@ Dans les coulisses, plusieurs outils analysent le code XAML en parallèle. Les e
 
 > [!Note]
 > Les erreurs ou avertissements n’ont pas tous un code correspondant. Ces erreurs sont généralement des erreurs du concepteur XAML.
-
 
 ## <a name="suppress-xaml-designer-errors"></a>Supprimer les erreurs du concepteur XAML
 

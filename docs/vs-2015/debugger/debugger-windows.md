@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952983"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686772"
 ---
 # <a name="debugger-windows"></a>Fenêtres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|Ctrl+Alt+V, A|[Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Variables locales|Ctrl+Alt+V, L|[Fenêtres de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|Ctrl+Alt+V, A|[Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Variables locales|Ctrl+Alt+V, L|[Fenêtres de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Immédiat|Ctrl+Alt+I|[Exécution, fenêtre](../ide/reference/immediate-window.md)|  
-|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS : Python interactive](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python Debug Interactive|Maj+Alt+I|[Bien démarrer avec PTVS : Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|  
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|  

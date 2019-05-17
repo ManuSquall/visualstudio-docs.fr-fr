@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11c26b9a3aa25688958e784d88d0b494ef893909
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438575"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban
   Cette procédure pas à pas montre comment créer un onglet de ruban personnalisé à l’aide de la **ruban (XML)** élément.
@@ -36,7 +36,7 @@ ms.locfileid: "60085231"
 - Automatisation de Microsoft Office Word en utilisant les boutons sur le **Add-Ins** onglet.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :

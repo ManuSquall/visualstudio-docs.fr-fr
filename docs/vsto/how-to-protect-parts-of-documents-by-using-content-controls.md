@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441737"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procédure : Protéger des parties de documents à l’aide de contrôles de contenu
   Quand vous protégez une partie d'un document, vous empêchez les utilisateurs de modifier ou de supprimer le contenu dans cette partie du document. Il existe plusieurs manières de protéger des parties d'un document Microsoft Office Word à l'aide de contrôles de contenu :
@@ -73,7 +73,7 @@ ms.locfileid: "60103512"
 - Vous souhaitez protéger une zone qui contient déjà des contrôles de contenu, mais le texte ou les autres éléments que vous souhaitez protéger ne se trouvent pas dans les contrôles de contenu.
 
 > [!NOTE]
->  Si vous créez un <xref:Microsoft.Office.Tools.Word.GroupContentControl> qui contient des contrôles de contenu incorporés, ces contrôles ne sont pas protégés automatiquement. Pour empêcher les utilisateurs de modifier un contrôle de contenu incorporé, utilisez la **LockContents** propriété du contrôle.
+> Si vous créez un <xref:Microsoft.Office.Tools.Word.GroupContentControl> qui contient des contrôles de contenu incorporés, ces contrôles ne sont pas protégés automatiquement. Pour empêcher les utilisateurs de modifier un contrôle de contenu incorporé, utilisez la **LockContents** propriété du contrôle.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Pour protéger une zone d'un document au moment du design
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103512"
 2. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Dans le **contrôles** de groupe, cliquez sur le **groupe** bouton de liste déroulante, puis cliquez sur **groupe**.
 

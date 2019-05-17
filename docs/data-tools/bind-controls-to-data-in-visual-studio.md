@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 32b392f59fb0ac587730d2aa432ca11d91d5a9ea
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824828"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
 
@@ -41,7 +41,7 @@ Dans le contexte de liaison de données, une source de données représente les 
 
 1. Générer le modèle à l’aide de la **Entity Data Model** Assistant, puis faire glisser ces objets vers le concepteur.
 
-2. Les classes LINQ to SQL ne s’affichent pas dans la fenêtre **Sources de données**. Toutefois, vous pouvez ajouter une nouvelle source de données Objet basée sur les classes LINQ to SQL, puis faire glisser ces objets vers le concepteur pour créer des contrôles liés aux données. Pour plus d’informations, consultez [procédure pas à pas : création de Classes LINQ to SQL (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Les classes LINQ to SQL ne s’affichent pas dans la fenêtre **Sources de données**. Toutefois, vous pouvez ajouter une nouvelle source de données Objet basée sur les classes LINQ to SQL, puis faire glisser ces objets vers le concepteur pour créer des contrôles liés aux données. Pour plus d’informations, consultez [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
 

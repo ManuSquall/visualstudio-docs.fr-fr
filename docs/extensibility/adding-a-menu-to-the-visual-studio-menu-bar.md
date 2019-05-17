@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7ce5ab06eb641e94d6f972b888882ac1e53e2ee
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892217"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu dans la barre de menus de Visual Studio
 
@@ -39,7 +39,7 @@ En fin de cette procédure pas à pas, vous pouvez créer un menu nommé **TestM
 
 1. Créez un projet VSIX nommé `TopLevelMenu`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».  Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **commande de test**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** >  **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *TestCommand.cs*.
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **commande de test**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** >  **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *TestCommand.cs*.
 
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>Créer un menu dans la barre de menus IDE
 

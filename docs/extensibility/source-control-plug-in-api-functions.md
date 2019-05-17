@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800145"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Fonctions d’API du plug-in de contrôle de code source
 L’API de plug-in de contrôle de Source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in conformément à cette API de contrôle de code source. Les signatures de chaque fonction et la sémantique associées avec les indicateurs de bits et autres paramètres sont décrits en détail dans cette référence.
@@ -80,7 +80,7 @@ L’API de plug-in de contrôle de Source fournit les fonctions suivantes, qui d
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examine une liste de répertoires et fichiers dans un projet ou les projets qui sont sous contrôle de code source. Chaque nom de répertoire et fichier trouvé est passé à une fonction de rappel.|
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Examine les modifications apportées à une liste des fichiers aux noms. Chaque nom de fichier est passé à une fonction de rappel avec son état de modification.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : scc.h
 
  (Fourni dans le SDK de l’environnement commun inclut le dossier, par défaut *[lecteur]* \Program Files\VSIP 8.0\EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]* \Program 8.0\MSSCCI Files\VSIP).

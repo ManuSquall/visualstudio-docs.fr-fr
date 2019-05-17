@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074607"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674740"
 ---
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> Contrôles  
  Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits Dans WPF, « contrôle » est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.  
   
- Pour plus d’informations, consultez [Contrôles](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
+ Pour plus d’informations, consultez [Contrôles](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
   
 ### <a name="wpf-controls-by-function"></a>Contrôles WPF par fonction  
  Les contrôles WPF intégrés sont répertoriés ici.  
@@ -208,7 +208,7 @@ End Namespace
   Le <xref:System.Windows.Controls.DockPanel> autorise les contrôles <xref:System.Windows.Controls.TextBox> enfants à lui dire comment les réorganiser. Pour cela, le <xref:System.Windows.Controls.DockPanel> implémente une propriété <xref:System.Windows.Controls.DockPanel.Dock%2A> exposée aux contrôles enfants pour permettre à chacun d’eux de spécifier un style d’ancrage.  
   
 > [!NOTE]
->  Une propriété implémentée par un contrôle parent pour une utilisation par des contrôles enfants est une construction WPF appelée [propriété attachée](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Une propriété implémentée par un contrôle parent pour une utilisation par des contrôles enfants est une construction WPF appelée [propriété attachée](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  L’illustration suivante affiche le résultat du balisage XAML dans l’exemple précédent.  
   

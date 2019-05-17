@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 672c66fef5d7400601ce69270b5cd4f525b34c7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955696"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Procédure : Restaurer des sélections après des recherches par programmation
   Si vous recherchez et remplacez du texte dans un document, vous souhaiterez restaurer la sélection d’utilisateur d’origine une fois que la recherche est terminée.

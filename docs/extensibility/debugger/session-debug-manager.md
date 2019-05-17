@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864263"
 ---
 # <a name="session-debug-manager"></a>Gestionnaire de session de débogage
 Le Gestionnaire de session de débogage (SDM) gère n’importe quel nombre de moteurs de débogage (dé) que le débogage n’importe quel nombre de programmes dans plusieurs processus sur un nombre illimité d’ordinateurs. En plus de constituer un multiplexeur de moteur de débogage, le SDM fournit une vue unifiée de la session de débogage à l’IDE.

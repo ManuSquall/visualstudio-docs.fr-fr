@@ -11,36 +11,35 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433585"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permet la déclaration statique d’éléments dans les fichiers projet à l’aide de l’élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À compter de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) passe outre cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.  
   
  L’élément *ItemDefinitionGroup* apparaît immédiatement après l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Les définitions d’élément offrent les fonctionnalités suivantes :  
   
--   Vous pouvez définir des métadonnées par défaut globales pour les éléments en dehors d’une cible. Autrement dit, les mêmes métadonnées s’appliquent à tous les éléments du type spécifié.  
+- Vous pouvez définir des métadonnées par défaut globales pour les éléments en dehors d’une cible. Autrement dit, les mêmes métadonnées s’appliquent à tous les éléments du type spécifié.  
   
--   Les types d’éléments peuvent avoir plusieurs définitions. Quand des spécifications de métadonnées supplémentaires sont ajoutées au type, la dernière spécification est prioritaire. \(Les métadonnées suivent le même ordre d’importation que celui des propriétés.\)  
+- Les types d’éléments peuvent avoir plusieurs définitions. Quand des spécifications de métadonnées supplémentaires sont ajoutées au type, la dernière spécification est prioritaire. \(Les métadonnées suivent le même ordre d’importation que celui des propriétés.\)  
   
--   Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple, `MT;STD_CALL;DEBUG;UNICODE`.  
+- Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple, `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Les métadonnées peuvent être supprimées.  
+- Les métadonnées peuvent être supprimées.  
   
--   Des conditions peuvent être utilisées pour contrôler l’inclusion de métadonnées.  
+- Des conditions peuvent être utilisées pour contrôler l’inclusion de métadonnées.  
   
 ## <a name="item-metadata-default-values"></a>Valeurs par défaut des métadonnées d’éléments  
  Les métadonnées d’éléments qui sont définies dans un ItemDefinitionGroup sont simplement une déclaration de métadonnées par défaut. Les métadonnées ne s’applique pas sauf si vous définissez un élément qui utilise un ItemGroup pour contenir les valeurs des métadonnées.  
   
 > [!NOTE]
->  Dans la plupart des exemples de cette rubrique, un élément ItemDefinitionGroup est montré mais sa définition ItemGroup correspondante est omise par souci de clarté.  
+> Dans la plupart des exemples de cette rubrique, un élément ItemDefinitionGroup est montré mais sa définition ItemGroup correspondante est omise par souci de clarté.  
   
  Les métadonnées explicitement définies dans un ItemGroup sont prioritaires sur les métadonnées dans ItemDefinitionGroup. Les métadonnées dans ItemDefinitionGroup sont appliquées uniquement pour les métadonnées non définies dans un ItemGroup. Par exemple :  
   
@@ -62,29 +61,29 @@ ms.locfileid: "54796671"
  Dans cet exemple, les métadonnées par défaut « m » sont appliquées à l’élément « i », car les métadonnées « m » ne sont pas explicitement définies par l’élément « i ». Cependant, les métadonnées par défaut « n » ne sont pas appliquées à l’élément « i », car les métadonnées « n » sont déjà définies par l’élément « i ».  
   
 > [!NOTE]
->  Les noms de paramètre et d’élément XML respectent la casse. Les noms des métadonnées d’élément et des éléments\/propriétés ne respectent pas la casse. Par conséquent, les éléments ItemDefinitionGroup ayant des noms qui diffèrent uniquement par la casse doivent être traités comme le même ItemGroup.  
+> Les noms de paramètre et d’élément XML respectent la casse. Les noms des métadonnées d’élément et des éléments\/propriétés ne respectent pas la casse. Par conséquent, les éléments ItemDefinitionGroup ayant des noms qui diffèrent uniquement par la casse doivent être traités comme le même ItemGroup.  
   
 ## <a name="value-sources"></a>Sources des valeurs  
  Les valeurs pour les métadonnées définies dans un ItemDefinitionGroup peuvent provenir de nombreuses sources différentes, comme suit :  
   
--   Propriété PropertyGroup  
+- Propriété PropertyGroup  
   
--   Élément d’un ItemDefinitionGroup  
+- Élément d’un ItemDefinitionGroup  
   
--   Transformation d’élément sur un élément ItemDefinitionGroup  
+- Transformation d’élément sur un élément ItemDefinitionGroup  
   
--   Variable d’environnement  
+- Variable d’environnement  
   
--   Propriété globale \(de la ligne de commande MSBuild.exe\)  
+- Propriété globale \(de la ligne de commande MSBuild.exe\)  
   
--   Propriété réservée  
+- Propriété réservée  
   
--   Métadonnées bien connues sur un élément d’un ItemDefinitionGroup  
+- Métadonnées bien connues sur un élément d’un ItemDefinitionGroup  
   
--   Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
+- Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
   
 > [!NOTE]
->  Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  
+> Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  
   
 ## <a name="additive-and-multiple-definitions"></a>Définitions additives et multiples  
  Quand vous ajoutez des définitions ou que vous utilisez plusieurs ItemDefinitionGroup, gardez à l’esprit que :  
@@ -129,7 +128,7 @@ ms.locfileid: "54796671"
  Dans cet exemple, la valeur précédemment définie pour les métadonnées « m » \(m1\) est ajoutée à la nouvelle valeur \(m2\), de sorte que la valeur finale est « m1;m2 ».  
   
 > [!NOTE]
->  Ceci peut également se produire dans le même ItemDefinitionGroup.  
+> Ceci peut également se produire dans le même ItemDefinitionGroup.  
   
  Quand vous remplacez les métadonnées définies précédemment, la dernière spécification est prioritaire. Dans l’exemple suivant, la valeur finale des métadonnées « m » passe de « m1 » « m1a ».  
   
@@ -160,7 +159,7 @@ ms.locfileid: "54796671"
  Dans ce cas, les métadonnées par défaut « m1 » sur l’élément « i » sont incluses seulement si la valeur de la propriété « Configuration » est « Debug ».  
   
 > [!NOTE]
->  Seules les références de métadonnées locales sont prises en charge dans les conditions.  
+> Seules les références de métadonnées locales sont prises en charge dans les conditions.  
   
  Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références sont spécifiques aux éléments. Par exemple :  
   
@@ -175,7 +174,7 @@ ms.locfileid: "54796671"
 </ItemDefinitionGroup>  
 ```  
   
- Dans cet exemple, élément « i » fait référence à élément « test » dans la Condition.  
+ Dans cet exemple, l’élément « i » fait référence à l’élément « test » dans la condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Remplacement et suppression de métadonnées  
  Vous pouvez remplacer les métadonnées définies dans un élément ItemDefinitionGroup dans un élément ItemDefinitionGroup ultérieur en attribuant une valeur vide aux métadonnées. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :  

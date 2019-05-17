@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692884"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  Le tableau suivant présente les méthodes de `IDiaSymbol`.  
   
 > [!NOTE]
->  Symboles retournera des données significatives pour uniquement certaines de ces méthodes, selon le type de symbole. Si une méthode retourne `S_OK`, cette méthode a retourné des données significatives.  
+> Symboles retournera des données significatives pour uniquement certaines de ces méthodes, selon le type de symbole. Si une méthode retourne `S_OK`, cette méthode a retourné des données significatives.  
   
 |Méthode|Description|  
 |------------|-----------------|  
@@ -102,7 +102,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|Récupère un indicateur qui indique si la fonction contient une commande longjmp (partie de la gestion des exceptions de style C).|  
 |[IDiaSymbol::get_hasManagedCode](../../debugger/debug-interface-access/idiasymbol-get-hasmanagedcode.md)|Récupère un indicateur qui indique si le module contient du code managé.|  
 |[IDiaSymbol::get_hasNestedTypes](../../debugger/debug-interface-access/idiasymbol-get-hasnestedtypes.md)|Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a les définitions de type imbriquées.|  
-|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Récupère un indicateur qui indique si la fonction ou compiland a compilé dans les vérifications de sécurité (via le [/GS (vérification de la sécurité de la mémoire tampon)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) commutateur de compilateur).|  
+|[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|Récupère un indicateur qui indique si la fonction ou compiland a compilé dans les vérifications de sécurité (via le [/GS (vérification de la sécurité de la mémoire tampon)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) commutateur de compilateur).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|Récupère un indicateur qui indique si la fonction a le style Win32 structurée des exceptions.|  
 |[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|Récupère un indicateur qui indique si la fonction contient une commande setjmp.|  
 |[IDiaSymbol::get_indirectVirtualBaseClass](../../debugger/debug-interface-access/idiasymbol-get-indirectvirtualbaseclass.md)|Récupère un indicateur indiquant si le type de données défini par l’utilisateur est une classe de base virtuelle indirecte.|  
@@ -117,12 +117,12 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_isCVTCIL](../../debugger/debug-interface-access/idiasymbol-get-iscvtcil.md)|Récupère un indicateur qui spécifie si le module a été converti à partir de langage CIL (Common Intermediate) en code natif.|  
 |[IDiaSymbol::get_isDataAligned](../../debugger/debug-interface-access/idiasymbol-get-isdataaligned.md)|Récupère un indicateur indiquant si les éléments d’un type de données défini par l’utilisateur sont alignés à une limite spécifique.|  
 |[IDiaSymbol::get_isHLSLData](../../debugger/debug-interface-access/idiasymbol-get-ishlsldata.md)|Spécifie si ce symbole représente les données au niveau du nuanceur HLSL (High Language).|  
-|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Récupère un indicateur qui spécifie si le module a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur.|  
+|[IDiaSymbol::get_isHotpatchable](../../debugger/debug-interface-access/idiasymbol-get-ishotpatchable.md)|Récupère un indicateur qui spécifie si le module a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur.|  
 |[IDiaSymbol::get_isLTCG](../../debugger/debug-interface-access/idiasymbol-get-isltcg.md)|Récupère un indicateur qui spécifie si le compiland managé a été lié avec /LTCG l’éditeur de liens.|  
 |[IDiaSymbol::get_isMatrixRowMajor](../../debugger/debug-interface-access/idiasymbol-get-ismatrixrowmajor.md)|Spécifie si la matrice est ligne principale.|  
 |[IDiaSymbol::get_isMSILNetmodule](../../debugger/debug-interface-access/idiasymbol-get-ismsilnetmodule.md)|Récupère un indicateur indiquant si le compiland géré est un fichier .netmodule (contenant uniquement des métadonnées).|  
 |[IDiaSymbol::get_isMultipleInheritance](../../debugger/debug-interface-access/idiasymbol-get-ismultipleinheritance.md)|Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage multiple.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Récupère un indicateur spécifiant si la fonction a la [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) attribut.|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|Récupère un indicateur spécifiant si la fonction a la [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) attribut.|  
 |[IDiaSymbol::get_isOptimizedAway](../../debugger/debug-interface-access/idiasymbol-get-isoptimizedaway.md)|Spécifie si la variable est optimisée.|  
 |[IDiaSymbol::get_isPointerBasedOnSymbolValue](../../debugger/debug-interface-access/idiasymbol-get-ispointerbasedonsymbolvalue.md)|Spécifie si le `this` pointeur est basé sur une valeur de symbole.|  
 |[IDiaSymbol::get_isPointerToDataMember](../../debugger/debug-interface-access/idiasymbol-get-ispointertodatamember.md)|Spécifie si ce symbole est un pointeur vers un membre de données.|  
@@ -152,8 +152,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_msil](../../debugger/debug-interface-access/idiasymbol-get-msil.md)|Récupère un indicateur qui spécifie si le symbole fait référence au code de langage MSIL (Microsoft Intermediate Language).|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|Récupère le nom du symbole.|  
 |[IDiaSymbol::get_nested](../../debugger/debug-interface-access/idiasymbol-get-nested.md)|Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est imbriqué.|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Récupère un indicateur qui spécifie si la fonction est marquée avec le [noinline](http://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribut.|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Récupère un indicateur qui indique si la fonction a été déclarée avec le [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) attribut.|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|Récupère un indicateur qui spécifie si la fonction est marquée avec le [noinline](https://msdn.microsoft.com/library/f259d55b-dec7-4bde-8cf9-14521e4fdc42) attribut.|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|Récupère un indicateur qui indique si la fonction a été déclarée avec le [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) attribut.|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|Récupère un indicateur qui spécifie si aucun classement de la pile n’est réalisable dans le cadre de la vérification de mémoire tampon de pile.|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|Récupère un indicateur qui spécifie si la fonction ou l’étiquette n’est jamais atteint.|  
 |[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|Retourne le nombre de balises de pointeur accélérateur dans une fonction de stub de C++ AMP.|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  Cet exemple montre comment afficher les variables locales pour une fonction à une adresse virtuelle relative donnée. Il montre également comment les symboles de différents types sont liés entre eux.  
   
 > [!NOTE]
->  `CDiaBSTR` est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lors de l’instanciation est hors de portée.  
+> `CDiaBSTR` est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lors de l’instanciation est hors de portée.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

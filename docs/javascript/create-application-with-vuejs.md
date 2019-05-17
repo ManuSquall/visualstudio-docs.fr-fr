@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226040"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Créer une application Vue.js à l’aide de Node.js Tools pour Visual Studio
 
@@ -31,12 +31,17 @@ Les nouvelles fonctionnalités suivantes prennent en charge le développement d�
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Vous devez avoir installé Visual Studio 2017 version 15.8 Preview 3 ou ultérieure et la charge de travail **Développement Node.js**.
+* Vous devez avoir installé Visual Studio 2017 version 15.8 ou ultérieure et la charge de travail **Développement Node.js**.
 
     > [!IMPORTANT]
-    > Cet article nécessite des fonctionnalités qui sont uniquement disponibles à partir de Visual Studio 2017 version 15.8 Preview 3.
+    > Cet article nécessite des fonctionnalités qui sont uniquement disponibles à partir de Visual Studio 2017 version 15.8.
 
-    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  pour l’installer gratuitement.
+    ::: moniker range=">=vs-2019"
+    Si une version requise n’est pas déjà installée, installez [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  pour l’installer gratuitement.
+    ::: moniker-end
 
     Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
@@ -66,10 +71,10 @@ Pour cet exemple, vous utilisez une application ASP.NET Core (C#) vide. Toutefoi
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui s’affiche, tapez le nom **client-app**, puis choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, puis **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, tapez le nom **client-app**, puis choisissez **OK**.
     ::: moniker-end
 
     Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous devez d’abord installer les charges de travail **Développement web et ASP.NET** et **Développement .NET Core**. Pour installer les charges de travail, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Sélectionnez les charges de travail nécessaires.
@@ -95,14 +100,14 @@ Pour installer le module npm vue-cli, ouvrez une invite de commandes et tapez `n
 
 1. Accédez à l’invite de commandes et remplacez le répertoire actif par votre dossier racine du projet.
 
-1. Tapez `vue init webpack ClientApp` et suivez les étapes quand vous êtes invité à répondre à des questions supplémentaires.
+1. Tapez `vue init webpack client-app` et suivez les étapes quand vous êtes invité à répondre à des questions supplémentaires.
 
     > [!NOTE]
     > Pour les fichiers *.vue*, vous devez utiliser WebPack ou un framework similaire avec un chargeur qui effectuera la conversion. TypeScript et Visual Studio ne savent pas compiler des fichiers *.vue*. Il en va de même pour le regroupement : TypeScript ne sait pas convertir des modules ES2015 (autrement dit, les instructions `import` et `export`) en un seul fichier *.js* final à charger dans le navigateur. Ici encore, WebPack est la meilleure solution. Pour exécuter ce processus dans Visual Studio à l’aide de MSBuild, vous devez commencer par un modèle Visual Studio. À l’heure actuelle, il n’existe aucun modèle ASP.NET préconfiguré pour le développement Vue.js.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modifier la configuration de webpack pour installer les fichiers générés sur wwwroot
 
-* Ouvrez le fichier *./ClientApp/config/index.js* et remplacez `build.index` et `build.assetsRoot` par le chemin wwwroot :
+* Ouvrez le fichier *./client-app/config/index.js* et remplacez `build.index` et `build.assetsRoot` par le chemin wwwroot :
 
     ```js
     // Template for index.html
@@ -112,15 +117,15 @@ Pour installer le module npm vue-cli, ouvrez une invite de commandes et tapez `n
     assetsRoot: path.resolve(__dirname, '../../wwwroot'),
     ```
 
-#### <a name="indicate-the-project-to-build-the-clientapp-each-time-that-a-build-is-triggered"></a>Indiquer le projet pour générer l’application ClientApp chaque fois qu’une build est déclenchée
+#### <a name="indicate-the-project-to-build-the-client-app-each-time-that-a-build-is-triggered"></a>Indiquer au projet de générer l’application cliente chaque fois qu’une build est déclenchée
 
 1. Dans Visual Studio, accédez à **Projet** > **Propriétés** > **Événements de build**.
 
-1. Dans **Ligne de commande de l’événement pré-build**, tapez `npm --prefix ./ClientApp run build`.
+1. Dans **Ligne de commande de l’événement pré-build**, tapez `npm --prefix ./client-app run build`.
 
 #### <a name="configure-webpacks-output-module-names"></a>Configurer les noms de module de sortie de webpack
 
-* Ouvrez le fichier *./ClientApp/build/webpack.base.conf.js* et ajoutez les propriétés suivantes à la propriété de sortie :
+* Ouvrez le fichier *./client-app/build/webpack.base.conf.js* et ajoutez les propriétés suivantes à la propriété de sortie :
 
     ```js
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
@@ -133,7 +138,7 @@ Ces étapes nécessitent vue-cli 3.0 qui est actuellement en version bêta.
 
 1. Accédez à l’invite de commandes et remplacez le répertoire actif par le dossier racine du projet.
 
-1. Tapez `vue create ClientApp`, puis choisissez **Manually select features** (Sélectionner manuellement les fonctionnalités).
+1. Tapez `vue create client-app`, puis choisissez **Manually select features** (Sélectionner manuellement les fonctionnalités).
 
 1. Choisissez **Typescript**, puis sélectionnez les autres options de votre choix.
 
@@ -141,11 +146,11 @@ Ces étapes nécessitent vue-cli 3.0 qui est actuellement en version bêta.
 
 #### <a name="configure-a-vuejs-project-for-typescript"></a>Configurer un projet Vue.js pour TypeScript
 
-1. Ouvrez le fichier *./ClientApp/tsconfig.json* et ajoutez `noEmit:true` aux options du compilateur.
+1. Ouvrez le fichier *./client-app/tsconfig.json* et ajoutez `noEmit:true` aux options du compilateur.
 
     En définissant cette option, vous évitez d’encombrer votre projet chaque fois que vous générez dans Visual Studio.
 
-1. Créez ensuite un fichier *vue.config.js* dans *./ClientApp/* et ajoutez le code suivant.
+1. Créez ensuite un fichier *vue.config.js* dans *./client-app/* et ajoutez le code suivant.
 
     ```js
     module.exports = {
@@ -164,7 +169,7 @@ Ces étapes nécessitent vue-cli 3.0 qui est actuellement en version bêta.
 
 #### <a name="build-with-vue-cli-30"></a>Générer avec vue-cli 3.0
 
-Un problème inconnu avec vue-cli 3.0 empêche l’automatisation du processus de génération. Chaque fois que vous essayez d’actualiser le dossier wwwroot, vous devez exécuter la commande `npm run build` sur le dossier ClientApp.
+Un problème inconnu avec vue-cli 3.0 empêche l’automatisation du processus de génération. Chaque fois que vous essayez d’actualiser le dossier wwwroot, vous devez exécuter la commande `npm run build` sur le dossier client-app.
 
 ## <a name="limitations"></a>Limitations
 
@@ -174,7 +179,7 @@ Un problème inconnu avec vue-cli 3.0 empêche l’automatisation du processus d
 * TypeScript ne reconnaît pas les fichiers *.vue* comme modules. Vous avez besoin d’un fichier qui contient du code tel que le suivant pour indiquer à TypeScript à quoi ressemblent les fichiers *.vue* (le modèle vue-cli 3.0 inclut déjà ce fichier).
 
     ```js
-    // ./ClientApp/vue-shims.d.ts
+    // ./client-app/vue-shims.d.ts
     declare module "*.vue" {
         import Vue from "vue";
         export default Vue;

@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 63f6faf24c1b3ce3aeedd8d4b3c82e2b09a6f443
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069911"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695356"
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
   
  Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font partie intégrante du flux de travail de votre développement logiciel. Dès que vous écrivez une fonction ou un autre bloc de code d’application, créez des tests unitaires pour vérifier le comportement du code en réponse aux cas standard, limite et incorrects des données d’entrée, ainsi que les hypothèses explicites ou implicites du code. Avec le *développement axé sur des tests*, comme vous créez les tests unitaires avant d’écrire le code, vous utilisez les tests unitaires comme documentation de conception et spécifications fonctionnelles.  
   
- Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](http://msdn.microsoft.com/library/dn823749.aspx).  
+ Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](https://msdn.microsoft.com/library/dn823749.aspx).  
   
  L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).  
   
@@ -45,11 +45,11 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
 ### <a name="BKMK_Quick_starts"></a> Démarrages rapides  
  Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :  
   
-- [Procédure pas à pas : Création et exécution de Tests unitaires pour le Code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [Procédure pas à pas : Création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
 - [Démarrage rapide : Développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
-- [Tests unitaires de code natif avec l’explorateur de tests](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+- [Tests unitaires de code natif avec l’explorateur de tests](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
 ## <a name="BKMK_The_MyBank_Solution_example"></a> Exemple de solution MyBank  
  Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et frameworks.  
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Pour utiliser l’une des infrastructures de tests unitaires Microsoft, choisissez **Projet de test unitaire** dans la liste des modèles de projet. Sinon, choisissez le modèle de projet de l’infrastructure de tests unitaires que vous souhaitez utiliser. Pour tester le projet `Accounts` de notre exemple, vous devez le nommer `AccountsTests`.  
   
    > [!WARNING]
-   >  Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.  
+   > Certaines infrastructures de tests unitaires tierces et open source ne fournissent pas de modèle de projet Visual Studio. Pour plus d’informations sur la création d’un projet, consultez la documentation relative à l’infrastructure.  
   
 8. Dans votre projet de test unitaire, ajoutez une référence au projet de code testé : le projet Accounts (Comptes) dans notre exemple.  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
 > [!WARNING]
->  L’exécution de tests unitaires après chaque génération est prise en charge uniquement dans Visual Studio Enterprise.  
+> L’exécution de tests unitaires après chaque génération est prise en charge uniquement dans Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
   
    > [!NOTE]
-   >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
+   > Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
   
 2. Dans l’explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **R :** Oui. Les*méthodes de test pilotées par les données* vous permettent de tester une plage de valeurs avec une méthode de test unitaire unique. Utilisez un attribut `DataSource` pour la méthode de test qui spécifie la source de données et la table contenant les valeurs des variables que vous voulez tester.  Dans le corps de la méthode, vous affectez les valeurs de ligne aux variables à l’aide de l’indexeur `TestContext.DataRow[`*ColumnName*`]` .  
   
 > [!NOTE]
->  Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide du framework de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.  
+> Ces procédures s’appliquent uniquement aux méthodes de test que vous écrivez à l’aide du framework de tests unitaires Microsoft pour le code managé. Si vous utilisez un autre framework, consultez sa documentation pour obtenir des fonctionnalités équivalentes.  
   
  Par exemple, supposons que nous ajoutions une méthode superflue à la classe `CheckingAccount` nommée `AddIntegerHelper`. `AddIntegerHelper` ajoute deux entiers.  
   

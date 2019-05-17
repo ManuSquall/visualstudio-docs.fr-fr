@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434038"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Fenêtre Propriétés affichant l'événement Click
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  Si vous effectuez un copier-coller du bloc de code `label_Click()` au lieu d'écrire le code manuellement, veillez à remplacer le code `label_Click()` existant. Sinon, vous obtiendrez au final un bloc de code en double.  
+    > Si vous effectuez un copier-coller du bloc de code `label_Click()` au lieu d'écrire le code manuellement, veillez à remplacer le code `label_Click()` existant. Sinon, vous obtiendrez au final un bloc de code en double.  
   
     > [!NOTE]
-    >  Vous pouvez reconnaître `object sender` en haut du gestionnaire d’événements comme étant le même que celui utilisé dans le [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md) didacticiel. Comme vous avez raccordé plusieurs événements Click de contrôle Label à une seule méthode de gestionnaire d'événements, la même méthode est appelée quel que soit le contrôle Label choisi par l'utilisateur. La méthode de gestionnaire d’événements doit savoir quel contrôle Label a été choisi. Elle utilise donc le nom **sender** pour identifier le contrôle Label. La première ligne de la méthode indique au programme qu’il ne s’agit pas uniquement d’un objet générique, mais plus précisément d’un contrôle Label, et qu’il utilise le nom **clickedLabel** pour accéder aux propriétés et méthodes du contrôle Label.  
+    > Vous pouvez reconnaître `object sender` en haut du gestionnaire d’événements comme étant le même que celui utilisé dans le [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md) didacticiel. Comme vous avez raccordé plusieurs événements Click de contrôle Label à une seule méthode de gestionnaire d'événements, la même méthode est appelée quel que soit le contrôle Label choisi par l'utilisateur. La méthode de gestionnaire d’événements doit savoir quel contrôle Label a été choisi. Elle utilise donc le nom **sender** pour identifier le contrôle Label. La première ligne de la méthode indique au programme qu’il ne s’agit pas uniquement d’un objet générique, mais plus précisément d’un contrôle Label, et qu’il utilise le nom **clickedLabel** pour accéder aux propriétés et méthodes du contrôle Label.  
   
      Cette méthode vérifie d’abord si un objet **clickedLabel** a été correctement converti (cast) en contrôle Label. Dans le cas contraire, il a une valeur `null` (C#) ou `Nothing` (Visual Basic), et vous ne voudrez pas exécuter le reste du code dans la méthode. Ensuite, la méthode vérifie la couleur de texte du contrôle Label choisi en utilisant la propriété **ForeColor** de ce dernier. Si la couleur du texte du contrôle Label est noire, cela signifie que l'icône a déjà été choisie et la méthode est terminée. (C’est ce que fait l’instruction `return` : elle indique au programme d’arrêter l’exécution de la méthode.) Dans le cas contraire, l'icône n'a pas été choisie et le programme modifie la couleur du texte du contrôle Label pour la rendre noire.  
   

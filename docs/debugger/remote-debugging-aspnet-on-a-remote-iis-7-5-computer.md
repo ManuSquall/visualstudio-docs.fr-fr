@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407844"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
 Pour déboguer une application ASP.NET qui a été déployée sur IIS, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, puis attacher à votre application en cours d’exécution à partir de Visual Studio.

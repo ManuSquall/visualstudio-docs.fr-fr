@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412575"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans les documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :
@@ -33,7 +33,7 @@ ms.locfileid: "60060629"
 - utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Selection> pour insérer du texte au niveau du curseur ou de la sélection.
 
 > [!NOTE]
->  Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [Bookmark (contrôle)](../vsto/bookmark-control.md).
+> Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [Bookmark (contrôle)](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

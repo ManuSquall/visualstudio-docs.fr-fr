@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428103"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Enregistrement et exportation de données des outils d’analyse des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
  Vous pouvez exporter une ou plusieurs vues de rapports à partir d’un fichier .vsp ou d’un fichier de données de profilage .vsps sous forme de fichier délimité par des virgules ou de fichier XML. Vous pouvez filtrer les données de la fenêtre d’affichage des rapports avant d’exporter, ou exporter des vues de rapport du fichier de données entier à partir de la fenêtre **Explorateur de performances** .  
   
 > [!NOTE]
->  Vous pouvez également copier et coller des lignes sélectionnées à partir de la fenêtre d’affichage des rapports en tant que valeurs séparées par des tabulations.  
+> Vous pouvez également copier et coller des lignes sélectionnées à partir de la fenêtre d’affichage des rapports en tant que valeurs séparées par des tabulations.  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Pour exporter des rapports de performances à partir de la fenêtre Explorateur de performances  
   

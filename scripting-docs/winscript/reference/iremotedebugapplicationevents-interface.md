@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 052a408d6e92066c14617f46f722d3e603985195
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943807"
 ---
 # <a name="iremotedebugapplicationevents-interface"></a>IRemoteDebugApplicationEvents, interface
 Le `IRemoteDebugApplicationEvents` est l’interface d’événement fournie par une application de débogage. Cette interface est toujours appelée à partir du thread de débogueur.  

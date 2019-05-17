@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e33233fd313cd6a73013ce55333a860663ddb601
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704526"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procédure : Déboguer une partie non exécutable d’une Solution Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,11 +61,11 @@ Vous pouvez être amené à déboguer un exécutable qui ne fait pas partie d'un
 5. Démarrez l’exécutable en choisissant une commande d’exécution, telle que **Démarrer**, à partir du menu **Déboguer**.  
   
     > [!NOTE]
-    >  Tous les langages de programmation ne prennent pas en charge les projets EXE. Installez [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] si vous devez utiliser cette fonctionnalité.  
+    > Tous les langages de programmation ne prennent pas en charge les projets EXE. Installez [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] si vous devez utiliser cette fonctionnalité.  
   
      Lorsque vous déboguez un exécutable sans le code source, les fonctionnalités de débogage disponibles sont limitées, que vous attachiez l'exécutable en cours d'exécution ou que vous l'ajoutiez à une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si l'exécutable a été généré sans informations de débogage dans un format compatible, les fonctionnalités disponibles sont encore plus limitées. Si vous disposez du code source, la meilleure approche consiste à l'importer dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour y créer une version Debug de l'exécutable [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Fichiers DBG](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [Fichiers DBG](https://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

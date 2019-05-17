@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5972a6da9422917ef61fb07c9124edca24032ee2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f14537a7543528be7ab026e7d24b9a1e9d964d0b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701249"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460853"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -41,17 +44,17 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="parameters"></a>Paramètres
+## <a name="members"></a>Membres
 
-`ulAppDomainID`
+`ulAppDomainID`\
 
 ID de l’application d'où provenance le symbole. Cela est utilisé pour identifier de manière unique une instance de l’application.
 
-`guidModule`
+`guidModule`\
 
 Le GUID du module qui contient ce champ.
 
-`symid`
+`symid`\
 
 ID de symbole qui correspond à ce champ.
 
@@ -59,7 +62,7 @@ ID de symbole qui correspond à ce champ.
 
 Cette structure apparaît dans le cadre de l’union dans le [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure lorsque le `dwKind` champ la `TYPE_INFO` structure est définie sur `TYPE_KIND_PDB` (une valeur comprise entre le [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : sh.h
 

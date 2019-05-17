@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687157"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 - Visual Studio Professional : Ouvrir des cartes de code, effectuer des modifications mineures et parcourir le code.  
   
 > [!WARNING]
->  Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres personnes utilisant Visual Studio Professional, vérifiez que tous les éléments présents sur la carte (comme les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.  
+> Avant de partager des cartes créées dans Visual Studio Enterprise avec d’autres personnes utilisant Visual Studio Professional, vérifiez que tous les éléments présents sur la carte (comme les éléments masqués, les groupes développés et les liens entre les groupes) sont visibles.  
   
  **Vous pouvez mapper les dépendances de code dans les langages suivants**:  
   
@@ -142,7 +142,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
     Ou bien, sélectionnez l’élément et appuyez sur la touche plus (**+**) du clavier. Pour explorer des niveaux plus profonds de code, procédez de même pour les espaces de noms, les types et les membres.  
   
    > [!TIP]
-   >  Pour plus d’informations sur l’utilisation du code est mappé à l’aide de la souris, clavier et tactiles, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
+   > Pour plus d’informations sur l’utilisation du code est mappé à l’aide de la souris, clavier et tactiles, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Pour simplifier la carte et cibler des parties individuelles, choisissez **Filtres** dans la barre d’outils de la carte de code et sélectionnez uniquement les types de nœuds et de liens qui vous intéressent. Par exemple, vous pouvez masquer tous les conteneurs Dossier Solution et Assembly.  
   
@@ -157,7 +157,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
     Dans cet exemple, les liens violets correspondent aux appels, les liens en pointillés aux références et les liens bleu clair à l’accès aux champs. Les liens verts peuvent représenter l’héritage ou correspondre à des *liens globaux* qui indiquent plusieurs types de relations (ou *catégories*).  
   
    > [!TIP]
-   >  Si vous voyez un lien vert, il ne signifie peut-être pas qu’il existe simplement une relation d’héritage. Il peut également exister des appels de méthode, mais ceux-ci sont masqués par la relation d’héritage. Pour afficher des types de liens spécifiques, utilisez les cases à cocher dans le volet **Filtres** pour masquer les types qui ne vous intéressent pas.  
+   > Si vous voyez un lien vert, il ne signifie peut-être pas qu’il existe simplement une relation d’héritage. Il peut également exister des appels de méthode, mais ceux-ci sont masqués par la relation d’héritage. Pour afficher des types de liens spécifiques, utilisez les cases à cocher dans le volet **Filtres** pour masquer les types qui ne vous intéressent pas.  
   
 7. Pour obtenir plus d’informations sur un élément ou un lien, déplacez le pointeur sur celui-ci jusqu’à ce qu’une info-bulle apparaisse. Celle-ci donne des détails sur un élément de code ou les catégories représentées par un lien.  
   
@@ -196,7 +196,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 2. Faites glisser sur la carte les assemblys ou fichiers binaires à représenter sur la carte à partir d’un emplacement externe à Visual Studio. Par exemple, vous pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers.  
   
 > [!NOTE]
->  Vous ne pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers que si vous exécutez Visual Studio avec le même niveau d’autorisations de contrôle de compte d’utilisateur (UAC). Par exemple, si le contrôle de compte d’utilisateur est activé et que vous exécutez Visual Studio en tant qu’administrateur, l’Explorateur Windows ou l’Explorateur de fichiers bloque l’opération de glissement. Pour contourner ce problème, assurez-vous qu’ils s’exécutent tous les deux avec le même niveau d’autorisation ou désactivez le contrôle de compte d’utilisateur.  
+> Vous ne pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers que si vous exécutez Visual Studio avec le même niveau d’autorisations de contrôle de compte d’utilisateur (UAC). Par exemple, si le contrôle de compte d’utilisateur est activé et que vous exécutez Visual Studio en tant qu’administrateur, l’Explorateur Windows ou l’Explorateur de fichiers bloque l’opération de glissement. Pour contourner ce problème, assurez-vous qu’ils s’exécutent tous les deux avec le même niveau d’autorisation ou désactivez le contrôle de compte d’utilisateur.  
   
 ## <a name="SeeSpecificSource"></a> Visualiser les dépendances spécifiques  
  Par exemple, supposons que vous deviez réviser du code dans certains fichiers contenant des modifications en attente. Pour visualiser les dépendances dans ces modifications, vous pouvez créer une carte de code à partir de ces fichiers.  
@@ -218,7 +218,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
      Vous pouvez également faire glisser des éléments à partir de l’Explorateur de solutions, de l’affichage de classes ou de l’Explorateur d’objets vers une carte de code vide ou existante. Pour créer une carte vide, consultez [Créer une carte de code vide](#GetStarted). Pour inclure la hiérarchie parente de vos éléments, maintenez la touche **Ctrl** enfoncée tout en faisant glisser des éléments ou utilisez le bouton **Inclure les parents** dans la barre d’outils de la carte de code pour spécifier l’action par défaut.  
   
     > [!NOTE]
-    >  Lorsque vous ajoutez des éléments à partir d’un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent sur la carte avec le projet d’application actif. Si vous modifiez le contexte vers un autre projet d’application et ajoutez des éléments à partir du projet partagé, ces éléments apparaissent alors avec le projet d’application qui vient d’être activé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
+    > Lorsque vous ajoutez des éléments à partir d’un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent sur la carte avec le projet d’application actif. Si vous modifiez le contexte vers un autre projet d’application et ajoutez des éléments à partir du projet partagé, ces éléments apparaissent alors avec le projet d’application qui vient d’être activé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
   
 4. Pour explorer des éléments, développez-les. Déplacez le pointeur de la souris au-dessus d’un élément, puis cliquez sur l’icône en forme de chevron (flèche bas) quand elle apparaît.  
   
@@ -284,7 +284,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
      ![Utilisez le volet de filtre pour simplifier l’affichage](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
- Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Consultez [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
+ Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Consultez [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 |Échec de la génération de la carte de code.|Aucun projet de la solution n’a été généré correctement.|Corrigez les erreurs de build qui se sont produites, puis régénérez la carte.|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne répond pas quand vous essayez de générer une carte de code à partir du menu **Architecture** .|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|  
 |Certains paramètres de la base de données de navigation IntelliSense sont désactivés.|Certains paramètres IntelliSense peuvent être désactivés dans la boîte de dialogue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Options** .|Activez les paramètres.<br /><br /> Consultez [Options, éditeur de texte, C/C++, avancé](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Impossible d’ouvrir ou de localiser le fichier .pdb aux emplacements attendus.|Assurez-vous que le fichier .pdb existe dans les emplacements attendus.|  
-||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
-||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :  
@@ -344,7 +344,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio  
  Utilisez le menu **Fichier** pour enregistrer la carte.  
   
- - ou -  
+ ou  
   
  Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **Partager**, puis **Déplacer** \<*CodeMapName*>**.dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.  
   
@@ -353,13 +353,13 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
  Visual Studio enregistre la carte en tant que fichier .dgml que vous pouvez partager avec d’autres utilisateurs de Visual Studio Enterprise et de Visual Studio Professional.  
   
 > [!NOTE]
->  Avant de partager une carte avec les utilisateurs de Visual Studio Professional, veillez à développer tous les groupes, à afficher les nœuds masqués et les liens entre les groupes, et à récupérer les nœuds supprimés que vous souhaitez afficher sur la carte. Sinon, les utilisateurs ne pourront pas afficher ces éléments.  
+> Avant de partager une carte avec les utilisateurs de Visual Studio Professional, veillez à développer tous les groupes, à afficher les nœuds masqués et les liens entre les groupes, et à récupérer les nœuds supprimés que vous souhaitez afficher sur la carte. Sinon, les utilisateurs ne pourront pas afficher ces éléments.  
 >   
->  L’erreur suivante peut se produire quand vous enregistrez une carte se trouvant dans un projet de modélisation ou ayant été copiée à partir d’un projet de modélisation vers un autre emplacement :  
+> L’erreur suivante peut se produire quand vous enregistrez une carte se trouvant dans un projet de modélisation ou ayant été copiée à partir d’un projet de modélisation vers un autre emplacement :  
 >   
->  « Impossible d’enregistrer *fileName* en dehors du répertoire du projet. Les éléments liés ne sont pas pris en charge. »  
+> « Impossible d’enregistrer *fileName* en dehors du répertoire du projet. Les éléments liés ne sont pas pris en charge. »  
 >   
->  Visual Studio affiche l’erreur, mais crée quand même la version enregistrée. Pour éviter cette erreur, créez la carte en dehors du projet de modélisation. Vous pouvez ensuite l’enregistrer à l’emplacement que vous souhaitez. Le fait de copier le fichier vers un autre emplacement de la solution, puis de tenter de l’enregistrer, ne fonctionnera pas.  
+> Visual Studio affiche l’erreur, mais crée quand même la version enregistrée. Pour éviter cette erreur, créez la carte en dehors du projet de modélisation. Vous pouvez ensuite l’enregistrer à l’emplacement que vous souhaitez. Le fait de copier le fichier vers un autre emplacement de la solution, puis de tenter de l’enregistrer, ne fonctionnera pas.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exporter la carte en tant qu’image pour pouvoir la copier dans d’autres applications, telles que Microsoft Word ou PowerPoint  
   

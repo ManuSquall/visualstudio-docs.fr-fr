@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440005"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procédure : Ajouter un fichier de ressources
   Les commandes pour l’ajout de fichiers de ressources se trouve sur le menu contextuel des nœuds de fonctionnalité dans l’Explorateur de solutions et de nœud de la solution. Pour plus d’informations, consultez [solutions SharePoint localisation](../sharepoint/localizing-sharepoint-solutions.md).
@@ -32,7 +32,7 @@ ms.locfileid: "60075543"
 3. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez le **fichier de ressources Global** modèle, puis choisissez le **ajouter** bouton.
 
    > [!NOTE]
-   >  Le modèle d’élément de projet fichier de ressources Global apparaît uniquement lorsqu’un élément de projet SharePoint est sélectionné.
+   > Le modèle d’élément de projet fichier de ressources Global apparaît uniquement lorsqu’un élément de projet SharePoint est sélectionné.
 
 4. Dans le **ajouter une ressource** boîte de dialogue, sélectionnez une culture pour le fichier de ressources, par exemple l’anglais (États-Unis).
 

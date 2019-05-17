@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431238"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package
   Pour configurer un package pour déployer des fonctionnalités et des éléments de SharePoint, vous pouvez utiliser l’Explorateur de package. Vous pouvez ajuster les éléments de projet SharePoint et les fonctionnalités à l’intérieur de votre fichier .wsp.
@@ -51,7 +51,7 @@ ms.locfileid: "60104458"
     - Ouvrez le menu contextuel pour une fonctionnalité, choisissez **couper**, ouvrez le menu contextuel du projet auquel vous souhaitez déplacer le composant, puis choisissez **coller**.
 
     > [!NOTE]
-    >  Utilisez cette procédure si vous avez plusieurs projets SharePoint dans votre solution.
+    > Utilisez cette procédure si vous avez plusieurs projets SharePoint dans votre solution.
 
 ## <a name="validate-a-feature-or-package"></a>Valider une fonctionnalité ou un package
  Vous pouvez identifier les problèmes potentiels dans les fonctionnalités de SharePoint et les packages en validant les fichiers. Avertissements et erreurs sont affichées dans la fenêtre Sortie et la fenêtre liste d’erreurs.

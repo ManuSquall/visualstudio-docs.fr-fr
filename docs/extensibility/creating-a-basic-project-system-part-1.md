@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409990"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants de solutions dans le **l’Explorateur de solutions**. Projets vous permettent d’organiser, générer, déboguer, déployer le code source et créer des références aux services Web, bases de données et d’autres ressources.
@@ -25,7 +25,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
  Projets sont définis dans les fichiers de projet, par exemple un *.csproj* fichier pour un projet Visual c#. Vous pouvez créer votre propre type de projet qui a votre propre extension de nom de fichier de projet. Pour plus d’informations sur les types de projets, consultez [types de projets](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Si vous avez besoin étendre Visual Studio avec un type de projet personnalisé, nous recommandons en exploitant la [système de projet Visual Studio](https://github.com/Microsoft/VSProjectSystem) (vsp) qui a un nombre d’avantages par rapport à la création d’un système de projet à partir de zéro :
+> Si vous avez besoin étendre Visual Studio avec un type de projet personnalisé, nous recommandons en exploitant la [système de projet Visual Studio](https://github.com/Microsoft/VSProjectSystem) (vsp) qui a un nombre d’avantages par rapport à la création d’un système de projet à partir de zéro :
 >
 > - Intégration plus facile.  Même un système de projet de base nécessite des dizaines de milliers de lignes de code.  En tirant parti de VSP permet de réduire le coût de l’intégration à quelques clics avant que vous êtes prêt à le personnaliser selon vos besoins.
 > - Maintenance plus facile.  En tirant parti de vsp, il vous suffit de mettre à jour vos propres scénarios.  Nous gérons l’entretien de toute l’infrastructure de système de projet.
@@ -35,7 +35,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
  Cette procédure pas à pas vous montre comment créer un type de projet qui a l’extension de nom de fichier de projet *.myproj*. Cette procédure pas à pas utilise le système de projet Visual c# existant.
 
 > [!NOTE]
->  Pour plus d’exemples de projets d’extension, consultez [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
+> Pour plus d’exemples de projets d’extension, consultez [exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples).
 
  Cette procédure pas à pas explique comment accomplir ces tâches :
 
@@ -101,7 +101,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
    ```
 
    > [!IMPORTANT]
-   >  Ce n’est pas le format final de la *Program.cs* code ; le remplacement de paramètres seront traités dans une étape ultérieure. Vous pouvez voir erreurs de compilation, mais tant que le fichier **BuildAction** est **contenu**, vous devez être en mesure de générer et exécuter le projet comme d’habitude.
+   > Ce n’est pas le format final de la *Program.cs* code ; le remplacement de paramètres seront traités dans une étape ultérieure. Vous pouvez voir erreurs de compilation, mais tant que le fichier **BuildAction** est **contenu**, vous devez être en mesure de générer et exécuter le projet comme d’habitude.
 
 7. Enregistrez le fichier.
 
@@ -110,7 +110,7 @@ Dans Visual Studio, les projets sont les conteneurs que les développeurs utilis
 9. Dans le *Projects\SimpleProject* dossier ajouter un fichier XML nommé *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  L’extension de nom de fichier pour tous les projets de ce type est *.myproj*. Si vous souhaitez le modifier, vous devez le modifier partout où qu'il est mentionné dans la procédure pas à pas.
+   > L’extension de nom de fichier pour tous les projets de ce type est *.myproj*. Si vous souhaitez le modifier, vous devez le modifier partout où qu'il est mentionné dans la procédure pas à pas.
 
 10. Remplacez le contenu existant par les lignes suivantes.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  N’oubliez pas la barre oblique inverse à la fin du chemin d’accès.
+        > N’oubliez pas la barre oblique inverse à la fin du chemin d’accès.
 
     3. Recharger le projet.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428775"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge des paramètres utilisateur
 Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont des groupes de variables d’état qui persistent lorsqu’un utilisateur choisit le **importer/exporter les paramètres** commande sur le **outils** menu. Pour activer cette persistance, vous utilisez les paramètres API dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -34,7 +34,7 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
  Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisé le prend en charge de VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], par exemple 8.0.
 
 > [!NOTE]
->  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est l’environnement de développement intégré (IDE) initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est l’environnement de développement intégré (IDE) initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  La structure de l’entrée de Registre est illustrée ci-dessous :
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929171"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Onglet Fenêtres de la boîte de dialogue Options des messages
 Utilisez le **Windows** onglet pour définir la portée des messages listés dans [vue Messages](../debugger/messages-view.md). Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **Messages du journal** à partir de la **Spy** menu.

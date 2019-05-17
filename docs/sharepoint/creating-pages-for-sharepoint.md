@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f58af55b18d7cd6341b779d71da2994875c98a62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419883"
 ---
 # <a name="create-pages-for-sharepoint"></a>Créer des pages pour SharePoint
   Vous pouvez créer des pages d’application, les pages de site, les pages maîtres et les mises en page pour un site SharePoint.

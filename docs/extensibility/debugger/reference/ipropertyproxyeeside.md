@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd9b804556cd748c921a0c21729daee56e9499b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e8a75aa089d516f112d1c758cc161891aa26e0d2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708457"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461073"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Cette interface fournit des méthodes pour afficher les données sur l’objet associé. Cette interface fait partie de la prise en charge des visualiseurs de type.
@@ -49,7 +49,7 @@ IPropertyProxyEESide : IUnknown
 ## <a name="remarks"></a>Notes
  Un visualiseur de type utilise cette interface pour accéder aux valeurs associées à l’objet faisant partie de cette interface. Les données sont accessibles via le [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) interface, qui fournit une vue en lecture seule des données.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

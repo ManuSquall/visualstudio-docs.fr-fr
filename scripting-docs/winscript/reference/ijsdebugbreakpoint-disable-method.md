@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 24584d0e9708dab4879ceb26f0af5e142936210a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583241"
 ---
 # <a name="ijsdebugbreakpointdisable-method"></a>IJsDebugBreakPoint::Disable, méthode
 Désactive le point d’arrêt.  
@@ -36,7 +36,7 @@ HRESULT Disable(void);
 ## <a name="remarks"></a>Notes  
  Retourne E_UNEXPECTED si elle est appelée sur un point d’arrêt supprimé. Retourne S_FALSE si elle est appelée sur un point d’arrêt déjà désactivé.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

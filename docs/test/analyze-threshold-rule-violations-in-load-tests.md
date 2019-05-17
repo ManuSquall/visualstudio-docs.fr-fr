@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823077"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
@@ -66,7 +66,7 @@ Si des violations se produisent, un lien hypertexte **Violations de seuil** appa
 
  Les violations de seuils peuvent également être indiquées sur le graphique (facultatif). L'icône de seuil apparaît sur le graphique à côté du point de données où la violation de seuil s'est produite.
 
- Dans l'arborescence de compteurs, l'icône de violation de seuil est propagée du nœud de compteur spécifique jusqu'au nœud racine. Ceci vous signale une violation sur un compteur qui n’est pas forcément visible dans l’arborescence, car elle n’a pas été développée.
+ Dans l’arborescence de compteurs, l’icône de violation de seuil est propagée du nœud de compteur spécifique jusqu’au nœud racine. Ceci vous signale une violation sur un compteur qui n'est pas forcément visible dans l'arborescence, car elle n'a pas été développée.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Affichage des violations de seuil sur le graphique
 

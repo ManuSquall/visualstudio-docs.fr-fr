@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675600"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Pas tous les développeurs qui créent des déploiements ClickOnce plan déploye
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Création de déploiements clients à l’aide du manifeste d’Application de confiance  
  ClickOnce dans .NET Framework 3.5 contient une nouvelle fonctionnalité qui permet aux développeurs et aux clients une nouvelle solution pour le scénario de la façon dont les manifestes doivent être signés. Le manifeste d’application ClickOnce prend en charge un nouvel élément nommé `<useManifestForTrust>` qui permet à un développeur d’indiquer que la signature numérique du manifeste d’application qui doit être utilisé pour les décisions d’approbation. Le développeur utilise des outils d’empaquetage ClickOnce, tels que Visual Studio, Mage.exe et MageUI.exe, d’inclure cet élément dans le manifeste d’application, ainsi que d’incorporer de leur nom de serveur de publication et le nom de l’application dans le manifeste.  
   
- Lorsque vous utilisez `<useManifestForTrust>`, le manifeste de déploiement n’a pas d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, elle peut être signée avec ce que l'on appelle un certificat auto-signé. Un certificat auto-signé est généré par le client ou le développeur à l’aide des outils de kit de développement logiciel .NET Framework standard et puis appliqué au manifeste de déploiement en utilisant les outils de déploiement ClickOnce standards. Pour plus d’informations, consultez [Makecert.exe (outil Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Lorsque vous utilisez `<useManifestForTrust>`, le manifeste de déploiement n’a pas d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, elle peut être signée avec ce que l'on appelle un certificat auto-signé. Un certificat auto-signé est généré par le client ou le développeur à l’aide des outils de kit de développement logiciel .NET Framework standard et puis appliqué au manifeste de déploiement en utilisant les outils de déploiement ClickOnce standards. Pour plus d’informations, consultez [Makecert.exe (outil Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
  À l’aide d’un certificat auto-signé pour le manifeste de déploiement présente plusieurs avantages. En éliminant la nécessité pour le client obtenir ou créer leur propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement du client, tout en permettant au développeur de conserver son identité de personnalisation sur l’application. Le résultat est un ensemble de déploiements signés qui sont plus sûres et ont des identités d’application uniques. Cela élimine le conflit potentiel qui peut se produire à partir du déploiement de la même application à plusieurs clients.  
   

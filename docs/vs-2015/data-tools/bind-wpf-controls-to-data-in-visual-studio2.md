@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111998"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697958"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Pour créer un contrôle lié à un seul champ de données
 
-1. Dans le **des Sources de données** fenêtre, développez un élément qui représente une table ou un objet. Recherchez l'élément enfant représentant la colonne ou la propriété que vous voulez lier. Pour un exemple visuel, consultez [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Dans le **des Sources de données** fenêtre, développez un élément qui représente une table ou un objet. Recherchez l'élément enfant représentant la colonne ou la propriété que vous voulez lier. Pour un exemple visuel, consultez [fenêtre Sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Sélectionnez éventuellement le contrôle à créer. Chaque élément dans le **des Sources de données** fenêtre possède un contrôle par défaut qui est créé lorsque vous faites glisser l’élément vers le concepteur. Le contrôle par défaut dépend du type de données sous-jacent de l'élément.
 
@@ -73,14 +73,14 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Pour créer un contrôle lié à plusieurs champs de données
 
-1. Dans le **des Sources de données** fenêtre, sélectionnez un élément qui représente une table ou un objet. Pour un exemple visuel, consultez [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Dans le **des Sources de données** fenêtre, sélectionnez un élément qui représente une table ou un objet. Pour un exemple visuel, consultez [fenêtre Sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Sélectionnez éventuellement le contrôle à créer. Par défaut, chaque élément de la **des Sources de données** fenêtre qui représente une table de données ou un objet est définie pour créer un <xref:System.Windows.Controls.DataGrid> (si votre projet cible .NET Framework 4) ou <xref:System.Windows.Controls.ListView> (pour les versions antérieures du .NET Framework).
 
      Pour choisir un autre contrôle, cliquez sur la flèche déroulante à côté de l'élément et sélectionnez un contrôle. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
+    > Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -91,12 +91,12 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Pour créer un ensemble de contrôles liés à plusieurs champs de données
 
-1. Dans le **des Sources de données** fenêtre, sélectionnez un élément qui représente une table ou un objet. Pour un exemple visuel, consultez [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Dans le **des Sources de données** fenêtre, sélectionnez un élément qui représente une table ou un objet. Pour un exemple visuel, consultez [fenêtre Sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Cliquez sur la flèche déroulante en regard de l’élément et sélectionnez **détails**.
 
     > [!NOTE]
-    >  Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
+    > Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Si le contrôle est déjà lié aux données, la liaison de données pour le contrôle est redéfinie sur l’élément qui a été le plus récemment déplacé vers le contrôle.
+    > Si le contrôle est déjà lié aux données, la liaison de données pour le contrôle est redéfinie sur l’élément qui a été le plus récemment déplacé vers le contrôle.
 
 ## <a name="see-also"></a>Voir aussi
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [créer des tables de recherche dans les applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [affichent les données connexes dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF de lier des contrôles à un jeu de données](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF de lier des contrôles à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [procédure pas à pas : Affichage de données liées dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

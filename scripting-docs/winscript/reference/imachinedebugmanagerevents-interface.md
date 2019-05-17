@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fcfcc2aed0fedefdc149b83e911d33cd3b54cdef
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977628"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>IMachineDebugManagerEvents, interface
 Signale les modifications apportées à la liste des applications en cours d’exécution tenue à jour par le gestionnaire de débogage d’ordinateur. Cette interface peut être utilisée par l’IDE de débogueur pour afficher une liste dynamique des applications.  

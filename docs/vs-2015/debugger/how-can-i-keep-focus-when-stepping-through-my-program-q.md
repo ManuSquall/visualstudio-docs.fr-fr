@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff2031aa5e690829967ccc41ca35c67df23d325b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 416e17c95290643873f52f71ec892514d183b6d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951641"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704563"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Comment puis-je conserver le focus lorsque j'exécute mon programme pas à pas ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Description
  Mon programme a un problème d'activation des fenêtres. Lorsque j'exécute mon programme en pas à pas avec le débogueur, je ne parviens pas à reproduire le problème, car le programme continue de perdre le focus. Existe-t-il un moyen d'éviter cela ?  
   
 ## <a name="solution"></a>Solution  
- Si vous disposez d'un autre ordinateur, utilisez le débogage distant. Vous pouvez faire fonctionner votre programme sur l'ordinateur distant pendant que vous exécutez le débogueur sur l'hôte. Pour plus d'informations, voir [Procédure : sélectionner un ordinateur distant](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+ Si vous disposez d'un autre ordinateur, utilisez le débogage distant. Vous pouvez faire fonctionner votre programme sur l'ordinateur distant pendant que vous exécutez le débogueur sur l'hôte. Pour plus d'informations, voir [Procédure : sélectionner un ordinateur distant](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   

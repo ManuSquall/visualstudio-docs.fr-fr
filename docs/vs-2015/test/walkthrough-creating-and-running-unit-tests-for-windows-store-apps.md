@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695111"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procédure pas à pas : Création et exécution de Tests unitaires pour les applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069848"
 Visual Studio inclut la prise en charge des tests unitaires des applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gérées et comprend des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
   
 > [!TIP]
->  Pour plus d’informations sur le développement d’applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , consultez [Prise en main des applications du Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Pour plus d’informations sur le développement d’applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , consultez [Prise en main des applications du Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio fournit les fonctionnalités de test unitaire suivantes :  
   
@@ -54,7 +54,7 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 2. Sous Modèles, sélectionnez le langage de programmation dans lequel vous souhaitez créer le test unitaire, puis choisissez la bibliothèque de tests unitaires [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associée. Par exemple, choisissez **Visual C#** , **Windows Store**, puis **Bibliothèque de tests unitaires (applications Windows Store)**.  
   
     > [!NOTE]
-    >  Visual Studio inclut des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
+    > Visual Studio inclut des modèles de bibliothèque de tests unitaires pour Visual C#, Visual Basic et Visual C++.  
   
 3. (Facultatif) Dans la zone de texte **Nom** , entrez le nom à utiliser pour le projet de test unitaire [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
@@ -84,9 +84,9 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 3. Dans la liste sous **Fonctionnalités**, sélectionnez les fonctionnalités dont vous avez besoin pour votre test unitaire et le code qu'il teste. Par exemple, activez la case à cocher **Internet** si le test unitaire est requis et que le code qu'il teste a besoin d'accéder à internet.  
   
     > [!NOTE]
-    >  Les fonctionnalités que vous sélectionnez doivent inclure uniquement les fonctionnalités nécessaires pour que le test unitaire [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] fonctionne correctement. Les fonctionnalités ne doivent jamais inclure de fonctions qui ne font pas partie de l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testée et doivent en général être un sous-ensemble des fonctionnalités spécifiées pour l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testée.  
+    > Les fonctionnalités que vous sélectionnez doivent inclure uniquement les fonctionnalités nécessaires pour que le test unitaire [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] fonctionne correctement. Les fonctionnalités ne doivent jamais inclure de fonctions qui ne font pas partie de l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testée et doivent en général être un sous-ensemble des fonctionnalités spécifiées pour l'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] testée.  
   
-     Pour plus d’informations sur le concepteur de manifeste, consultez [Configurer un package d’application Windows 8.1 à l’aide du concepteur de manifeste](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Pour plus d’informations sur le concepteur de manifeste, consultez [Configurer un package d’application Windows 8.1 à l’aide du concepteur de manifeste](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Manifeste de test unitaire](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -111,22 +111,22 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
      Votre test unitaire figure maintenant dans la liste.  
   
     > [!NOTE]
-    >  Vous devez générer la solution pour mettre à jour la liste des tests unitaires dans l'Explorateur de tests.  
+    > Vous devez générer la solution pour mettre à jour la liste des tests unitaires dans l'Explorateur de tests.  
   
     > [!WARNING]
-    >  Visual Studio problème connu : Vous devez ouvrir l’Explorateur de tests avant de générer le projet de test.  
+    > Visual Studio problème connu : Vous devez ouvrir l’Explorateur de tests avant de générer le projet de test.  
   
 3. Dans l'Explorateur de tests, sélectionnez le test unitaire que vous avez créé.  
   
     > [!TIP]
-    >  L'Explorateur de tests fournit un lien vers le code source en regard de **Source :**.  
+    > L'Explorateur de tests fournit un lien vers le code source en regard de **Source :**.  
   
 4. Choisissez **Exécuter tout**.  
   
      ![Explorateur de tests unitaires &#45; exécuter un test unitaire](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Vous pouvez sélectionner un ou plusieurs tests unitaires répertoriés dans l'explorateur puis cliquer avec le bouton droit et choisir **Exécuter les tests sélectionnés**.  
+    > Vous pouvez sélectionner un ou plusieurs tests unitaires répertoriés dans l'explorateur puis cliquer avec le bouton droit et choisir **Exécuter les tests sélectionnés**.  
     >   
     >  De plus, vous pouvez choisir **Déboguer les tests sélectionnés**, **Ouvrir un test**, puis utiliser l'option **Propriétés** .  
     >   
@@ -149,4 +149,4 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
   
 ## <a name="see-also"></a>Voir aussi  
  [Test des applications du Windows Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Générer et tester une application du Windows Store à l’aide de Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Générer et tester une application du Windows Store à l’aide de Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

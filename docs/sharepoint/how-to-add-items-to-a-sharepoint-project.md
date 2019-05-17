@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966950"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Procédure : Ajouter des éléments à un projet SharePoint
   Les solutions SharePoint contiennent un ou plusieurs projets, chacun d’eux contient plusieurs éléments de projet SharePoint. Une fois que vous ouvrez ou créez une solution SharePoint, vous pouvez ajouter des éléments nouveaux ou existants à ces projets. Par exemple, les nouveaux projets de flux de travail sont fournis avec un formulaire par défaut nommée default.aspx, mais vous pouvez remplacer ce formulaire un formulaire nouveau ou différent, ou ajouter un autre formulaire ASPX.

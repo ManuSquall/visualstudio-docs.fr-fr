@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975175"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procédure : implémenter une interface dans le Concepteur de classes
 
@@ -27,9 +27,9 @@ Dans le **Concepteur de classes**, vous pouvez implémenter une interface pour l
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Pour implémenter une interface en dessinant une ligne d’héritage
 
-1.  Sur le diagramme de classes, affichez l’interface et la classe qui implémente cette interface.
+1. Sur le diagramme de classes, affichez l’interface et la classe qui implémente cette interface.
 
-2.  Dessinez une ligne d’héritage entre la classe et l’interface.
+2. Dessinez une ligne d’héritage entre la classe et l’interface.
 
      Un symbole d’interface (lollipop) attaché à la classe s’affiche, et une étiquette avec le nom de l’interface identifie la relation d’héritage. Visual Studio génère des stubs pour tous les membres de l’interface.
 
@@ -37,14 +37,14 @@ Pour plus d'informations, voir [Procédure : créer un héritage entre des type
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Pour implémenter une interface à partir de la fenêtre Affichage de classes
 
-1.  Sur le diagramme de classes, affichez la classe choisie pour implémenter cette interface.
+1. Sur le diagramme de classes, affichez la classe choisie pour implémenter cette interface.
 
-2.  Ouvrez **l’Affichage de classes** et recherchez l’interface.
+2. Ouvrez **l’Affichage de classes** et recherchez l’interface.
 
     > [!TIP]
     > Si **l’Affichage de classes** n’est pas ouvert, ouvrez **l’Affichage de classes** à partir du menu **Affichage** ou appuyez sur **Ctrl**+**Maj**+**C**.
 
-3.  Faites glisser le nœud de l’interface vers la forme de classe sur le diagramme.
+3. Faites glisser le nœud de l’interface vers la forme de classe sur le diagramme.
 
      Un symbole d’interface (lollipop) attaché à la classe s’affiche, et une étiquette avec le nom de l’interface identifie la relation d’héritage. Visual Studio génère des stubs pour tous les membres de l’interface. L’interface est maintenant implémentée.
 

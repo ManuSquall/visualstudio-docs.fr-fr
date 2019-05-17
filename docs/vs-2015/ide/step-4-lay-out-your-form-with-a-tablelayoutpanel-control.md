@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442528"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Groupe de conteneurs
 Contrôle TableLayoutPanel  
   
     > [!NOTE]
-    >  Après avoir ajouté votre contrôle TableLayoutPanel, si une fenêtre intitulée **Tâches TableLayoutPanel** s’affiche à l’intérieur de votre formulaire, cliquez n’importe où dans le formulaire pour la fermer. Vous en apprendrez davantage sur cette fenêtre dans les prochaines étapes de ce didacticiel.  
+    > Après avoir ajouté votre contrôle TableLayoutPanel, si une fenêtre intitulée **Tâches TableLayoutPanel** s’affiche à l’intérieur de votre formulaire, cliquez n’importe où dans le formulaire pour la fermer. Vous en apprendrez davantage sur cette fenêtre dans les prochaines étapes de ce didacticiel.  
   
      Notez que la Boîte à outils se développe pour recouvrir votre formulaire lorsque vous sélectionnez son onglet, et se referme lorsque vous effectuez une sélection en dehors de celle-ci. Il s'agit de la fonctionnalité Masquer automatiquement de l'IDE. Vous pouvez l'activer ou la désactiver pour chaque fenêtre en cliquant sur l'icône de la punaise dans l'angle supérieur droit de la fenêtre (et ainsi choisir de masquer la fenêtre automatiquement ou de la garder à l'écran). L'icône de la punaise apparaît comme suit.  
   
@@ -62,7 +62,7 @@ Fenêtre Propriétés avec Remplissage sélectionné
 7. Une fois que vous avez affecté la valeur **Fill** à la propriété **Dock** du TableLayoutPanel, le panneau remplit tout le formulaire. Si vous redimensionnez à nouveau le formulaire, le TableLayoutPanel reste ancré et se redimensionne automatiquement pour s'adapter aux nouvelles dimensions.  
   
     > [!NOTE]
-    >  Un TableLayoutPanel fonctionne comme une table dans Microsoft Office Word : il comporte des lignes et des colonnes, et une cellule peut s’étendre sur plusieurs lignes et colonnes. Chaque cellule ne peut contenir qu'un seul contrôle (comme un bouton, une case à cocher ou une étiquette). Votre TableLayoutPanel aura un contrôle `PictureBox` sur toute sa ligne du haut, un contrôle `CheckBox` dans sa cellule en bas à gauche, et quatre contrôles `Button` dans sa cellule en bas à droite.  
+    > Un TableLayoutPanel fonctionne comme une table dans Microsoft Office Word : il comporte des lignes et des colonnes, et une cellule peut s’étendre sur plusieurs lignes et colonnes. Chaque cellule ne peut contenir qu'un seul contrôle (comme un bouton, une case à cocher ou une étiquette). Votre TableLayoutPanel aura un contrôle `PictureBox` sur toute sa ligne du haut, un contrôle `CheckBox` dans sa cellule en bas à gauche, et quatre contrôles `Button` dans sa cellule en bas à droite.  
   
 8. Actuellement, le TableLayoutPanel est composé de deux lignes et colonnes de taille égale. Vous devez les redimensionner pour que la ligne du haut et la colonne de droite soient beaucoup plus grandes. Dans le Concepteur Windows Forms, sélectionnez le TableLayoutPanel. Dans l'angle supérieur droit, il y a un petit bouton en forme de triangle noir, comme celui illustré ci-dessous.  
   

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388712"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.
@@ -111,7 +111,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
  Les informations de compteur matériel fournissent une vue très détaillée du comportement spécifique de la plateforme matérielle pour chaque appel de dessin, ce qui peut vous aider à identifier très précisément la cause des goulots d'étranglement qui nuisent aux performances.
 
 > [!NOTE]
->  Les compteurs pris en charge par les plateformes sont variables ; aucune norme n'existe dans ce domaine. Les compteurs et ce qu'ils représentent sont déterminés uniquement par le fabricant de chaque GPU.
+> Les compteurs pris en charge par les plateformes sont variables ; aucune norme n'existe dans ce domaine. Les compteurs et ce qu'ils représentent sont déterminés uniquement par le fabricant de chaque GPU.
 
 ### <a name="marker-regions-and-events"></a>Régions de marqueur et événements
  L'analyse des frames prend en charge les marqueurs d'événements et les groupes d'événements définis par l'utilisateur. Ils sont affichés dans le tableau Résumé et dans les tableaux de détails.
@@ -132,13 +132,13 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 
  L'analyse des frames limite le nombre de nouvelles tentatives à 10. Si votre plateforme a recours à une gestion de l'alimentation agressive ou au « clock gating », cela peut entraîner l'échec de l'analyse des frames et le signalement d'une erreur pour dépassement de la limite de nouvelles tentatives. Vous pouvez atténuer ce problème en réinitialisant la gestion de l'alimentation de votre plateforme et en choisissant une vitesse d'horloge moins agressive, si la plateforme le permet.
 
-##  <a name="HardwareSupport"></a> Prise en charge matérielle
+## <a name="HardwareSupport"></a> Prise en charge matérielle
 
 ### <a name="timestamps-and-occlusion-queries"></a>Horodateurs et requêtes d'occlusion
  Les horodateurs sont pris en charge sur toutes les plateformes prenant en charge l'analyse des frames. Les requêtes d'occlusion en profondeur (nécessaires au compteur Pixels bloqués) sont prises en charge sur les plateformes qui prennent en charge le niveau de fonctionnalité 9.2 ou supérieur.
 
 > [!NOTE]
->  Bien que les horodateurs soient pris en charge sur toutes les plateformes qui gèrent l'analyse des frames, la précision et la cohérence des horodateurs varient d'une plateforme à l'autre.
+> Bien que les horodateurs soient pris en charge sur toutes les plateformes qui gèrent l'analyse des frames, la précision et la cohérence des horodateurs varient d'une plateforme à l'autre.
 
 ### <a name="gpu-counters"></a>Compteurs GPU
  La prise en charge des compteurs matériels GPU varie en fonction du matériel.
@@ -150,7 +150,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
   Aucune autre plateforme prenant en charge l'analyse des frames n'assure de collecte auprès des compteurs matériels GPU.
 
 > [!NOTE]
->  Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.
+> Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.
 
 ## <a name="unsupported-scenarios"></a>Scénarios non pris en charge
  Certains modes d'utilisation de l'analyse des frames ne sont pas pris en charge ou sont simplement déconseillés.
@@ -159,18 +159,18 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
  Dans Graphics Analyzer, quand vous lisez un fichier journal de graphisme qui utilise un niveau de fonctionnalité trop élevé pour l'ordinateur de lecture, il repasse automatiquement à WARP. Dans l'analyse des frames, il ne repasse pas explicitement à WARP et une erreur est générée (si WARP est utile pour examiner la justesse de votre application Direct3D, il ne l'est pas pour examiner ses performances).
 
 > [!NOTE]
->  Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Le journal de graphisme peut être lu tant que le fichier journal ne contiennent des API ou utiliser des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.
+> Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Le journal de graphisme peut être lu tant que le fichier journal ne contiennent des API ou utiliser des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D version 10 et inférieure
  Si votre application appelle l'API Direct3D 10, l'analyse des frames ne reconnaîtra ni ne profilera ces appels, même s'ils sont reconnus et utilisés par d'autres outils Graphics Analyzer.
 
 > [!NOTE]
->  Cela vaut uniquement pour les appels d'API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité.
+> Cela vaut uniquement pour les appels d'API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité.
 
 ### <a name="warp"></a>WARP
  L'analyse des frames vise à profiler et à améliorer les performances de rendu sur du vrai matériel. Analyse des frames en cours d’exécution sur des appareils WARP n’est pas interdite, mais il est généralement pas payant d’insister car l’exécution sur une UC haut de gamme de WARP est plus lente que même les moins performant des GPU actuels, et les performances de WARP peuvent varier considérablement en fonction de l’UC Il s’exécute sur.
 
-##  <a name="Variants"></a> Variantes
+## <a name="Variants"></a> Variantes
  Chaque modification apportée par l’analyse des frames au mode d’affichage d’un frame en cours de lecture est appelée *variante*. Les variantes examinées par l'analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d'anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :
 
 |Variante|Description|
@@ -189,4 +189,4 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 |**Dimensions de texture un quart**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à un quart de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 64 x 32 texels.<br /><br /> Pour plus d’informations, consultez [Variante de dimensions de la texture moitié/un quart](half-quarter-texture-dimensions-variant.md).|
 |**Compression de texture BC**|Active la compression de bloc sur toutes les textures ayant une variante de format de pixel B8G8R8X8, B8G8R8A8 ou R8G8B8A8. Les variantes de format B8G8R8X8 sont compressées à l'aide de BC1 ; les variantes de format B8G8R8A8 et R8G8B8A8 sont compressées à l'aide de BC3.<br /><br /> Pour plus d’informations, consultez [Variante de compression de texture BC](bc-texture-compression-variant.md).|
 
- Le résultat pour la plupart des variantes est prescriptif : « Une réduction de la taille de texture de moitié offre 25 % de rapidité en plus » ou « Le ralentissement résultant de l'activation de MSAA 2x n'est que de 2 % ». Les autres variantes peuvent nécessiter une interprétation. Par exemple, si la variante qui a fait passer les dimensions de la fenêtre d'affichage à 1x1 donne lieu à un gain de performances important, cela peut indiquer que le rendu est bloqué par un faible taux de remplissage ; en revanche, s'il n'y a pas de changement significatif sur le plan des performances, cela peut indiquer que le rendu est bloqué par le traitement des sommets.
+ Le résultat pour la plupart des variantes est normatif : « Réduisant de moitié la taille de texture est 25 % plus rapide » ou « Activation de 2 x MSAA est uniquement de 2 % ». Les autres variantes peuvent nécessiter une interprétation. Par exemple, si la variante qui a fait passer les dimensions de la fenêtre d'affichage à 1x1 donne lieu à un gain de performances important, cela peut indiquer que le rendu est bloqué par un faible taux de remplissage ; en revanche, s'il n'y a pas de changement significatif sur le plan des performances, cela peut indiquer que le rendu est bloqué par le traitement des sommets.

@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696203"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Comment : effectuer une mise à niveau à partir d'une version d'évaluation de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours
  Par exemple, si vous téléchargez et utilisez [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] pendant 10 jours, puis procédez à son enregistrement, vous pouvez l'utiliser pendant 80 jours supplémentaires. Pour continuer à utiliser le produit après les 90 jours, vous devez fournir une clé de produit valide ou vous connecter à Visual Studio avec un compte Microsoft ou un compte professionnel associé à un abonnement MSDN ou Visual Studio Online. Pour plus d’informations sur la façon de trouver ou d’obtenir une clé de produit, consultez [Comment : trouver la clé de produit de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment acheter Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
 
 > [!IMPORTANT]
->  La période d’évaluation des versions de mise en production des éditions Express de Visual Studio est également de 30 jours. Pour prolonger indéfiniment la période d'évaluation des éditions Express de Visual Studio, connectez-vous à Visual Studio ou enregistrez le produit.
+> La période d’évaluation des versions de mise en production des éditions Express de Visual Studio est également de 30 jours. Pour prolonger indéfiniment la période d'évaluation des éditions Express de Visual Studio, connectez-vous à Visual Studio ou enregistrez le produit.
 
  Avant d’effectuer une mise à niveau, nous vous recommandons de télécharger et consulter le livre blanc [Gestion des licences MSDN et Visual Studio](http://www.microsoft.com/download/details.aspx?id=13350) sur le site web de Microsoft. Pour obtenir une aide supplémentaire, consultez [Aide et support pour Visual Studio](http://support.microsoft.com/ph/1117/en-us).
 
@@ -41,7 +41,7 @@ Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours
 4. Entrez une clé de produit valide, puis choisissez le bouton **Appliquer**.
 
     > [!NOTE]
-    >  Un accès Internet est requis pour enregistrer et déverrouiller toute édition de Visual Studio. Une fois que Visual Studio a été enregistré, toutefois, la connexion Internet est facultative.
+    > Un accès Internet est requis pour enregistrer et déverrouiller toute édition de Visual Studio. Une fois que Visual Studio a été enregistré, toutefois, la connexion Internet est facultative.
 
 ## <a name="see-also"></a>Voir aussi
- [Installation de Visual Studio](../install/install-visual-studio-2015.md) [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) [Comment : trouver la clé de produit de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localiser ou modifier la clé de produit de Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Installation de Visual Studio](../install/install-visual-studio-2015.md) [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) [Comment : trouver la clé de produit de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localiser ou modifier la clé de produit de Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a5f2b2fa8c2ff39b0a7ec3e982145567602ab10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c668317fba69100701fac95bfa333ed7b3446488
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701964"
 ---
 # <a name="properties-of-domain-classes"></a>Propriétés des classes de domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Classes de domaine ont les propriétés dans le tableau suivant. Pour plus d’i
 |Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour cette classe de domaine.|\<aucune>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

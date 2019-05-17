@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408757"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procédure pas à pas : Enregistrement des paramètres utilisateur sur une page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
 ## <a name="prerequisites"></a>Prérequis  
   
 > [!NOTE]
->  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
 >   
->  Vous pouvez télécharger le modèle de projet Page de démarrage à l’aide de **Gestionnaire d’extensions**.  
+> Vous pouvez télécharger le modèle de projet Page de démarrage à l’aide de **Gestionnaire d’extensions**.  
   
 ## <a name="setting-up-the-project"></a>Configuration du projet  
   

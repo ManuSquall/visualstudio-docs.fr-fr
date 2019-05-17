@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412402"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestion des abonnements Visual Studio offerts via le réseau MPN
 
@@ -42,7 +42,6 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
     - Adresse de messagerie du contact
 13. La connexion est à présent terminée et l’abonné doit avoir accès aux avantages
 
-
 ### <a name="competency-partners"></a>Partenaires de compétence
 1. Sélectionnez **Configuration requise et ressources**
 2. Sélectionnez **Privilèges**
@@ -66,7 +65,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 
 > [!NOTE]
 > Le rôle Contact technique est requis pour les abonnements Visual Studio
->     - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
+> - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
 ## <a name="need-help"></a>Vous avez besoin d'aide ?
 Les abonnés et les administrateurs du programme doivent travailler directement avec l’équipe de support de Microsoft Partner Network pour résoudre les problèmes d’accès aux abonnements. Visitez la page [Support pour les partenaires](https://partner.microsoft.com/support) pour obtenir de l’aide. (Vous aurez besoin de vos informations de connexion à MPN.)

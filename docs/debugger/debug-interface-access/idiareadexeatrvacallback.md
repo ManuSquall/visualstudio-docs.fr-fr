@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832511"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 Permet à une application cliente fournir des octets d’un fichier exécutable comme spécifié par une adresse virtuelle relative.
@@ -35,14 +35,14 @@ IDiaReadExeAtRVACallback : IUnknown
 |------------|-----------------|
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Lit le nombre spécifié d’octets à partir du spécifié adresse virtuelle relative (RVA) à partir du fichier exécutable.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’une adresse virtuelle relative dans le fichier de l’exécutable. Pour utiliser un décalage de fichier absolu, implémenter la [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) interface.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
  Cette méthode est implémentée par l’application cliente et passée à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode comme une méthode alternative pour la lecture du fichier.
 
-## <a name="requirements"></a>Spécifications
- En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : Dia2.h
 
  Bibliothèque : diaguids.lib
 

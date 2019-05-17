@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684349"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460920"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Spécifie les propriétés associées à un fournisseur de programme.
@@ -39,17 +42,19 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membres
- PFIELD_PROGRAM_NODES le `ProgramNodes` champ est valide.
+## <a name="fields"></a>Champs
+ `PFIELD_PROGRAM_NODES`\
+ Le `ProgramNodes` champ est valide.
 
- PFIELD_IS_DEBUGGER_PRESENT le `fIsDebuggerPresent` champ est valide.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ Le `fIsDebuggerPresent` champ est valide.
 
 ## <a name="remarks"></a>Notes
  Ces valeurs sont retournées dans le `Fields` membre de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure pour indiquer les champs de la structure ont été explicitement renseignés.
 
  Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

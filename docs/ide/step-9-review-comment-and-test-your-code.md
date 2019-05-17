@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435433"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : Passer en revue, commenter et tester votre code
 Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation qui ne modifie pas le comportement du programme. Il permet à une autre personne qui lit votre code de mieux le comprendre. L'ajout de commentaires à votre code est une bonne habitude à prendre. Une ligne de commentaire est indiquée par deux barres obliques (//) en Visual C# et par un guillemet simple (') en Visual Basic. Après avoir ajouté un commentaire, testez votre programme. Quand vous travaillez sur vos projets, il est recommandé d'exécuter et de tester souvent le code afin que vous puissiez détecter et résoudre les problèmes au plus tôt, avant que le code devienne plus complexe. Cette opération est un *test itératif*.
 
- Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas encore terminé, il peut déjà charger une image. Avant d’ajouter un commentaire à votre code et de le tester, prenez le temps de revoir les concepts de code, car vous serez amené à les utiliser régulièrement :
+ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas encore terminé, il peut déjà charger une image. Avant d'ajouter un commentaire à votre code et de le tester, prenez le temps de revoir les concepts de code, car vous serez amené à les utiliser régulièrement :
 
 - Quand vous avez double-cliqué sur le bouton **Afficher une image** dans le **Concepteur Windows Forms**, l’IDE a ajouté automatiquement une *méthode* au code de votre programme.
 
@@ -46,22 +46,22 @@ Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation
 
 ## <a name="to-add-comments"></a>Pour ajouter des commentaires
 
-1.  Ajoutez le commentaire suivant à votre code.
+1. Ajoutez le commentaire suivant à votre code.
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    >  Le gestionnaire d’événements <xref:System.Windows.Forms.Control.Click> du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` vous permet de dire à votre programme : « Vérifie ceci, et si c'est vrai (true), fais cela ». Ici, vous demandez à votre programme d’ouvrir la boîte de dialogue **Ouvrir un fichier** et, si l’utilisateur sélectionne un fichier et choisit le bouton **OK**, de charger ce fichier dans le contrôle **PictureBox**.
+    > Le gestionnaire d’événements <xref:System.Windows.Forms.Control.Click> du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` vous permet de dire à votre programme : « Vérifie ceci, et si c'est vrai (true), fais cela ». Ici, vous demandez à votre programme d’ouvrir la boîte de dialogue **Ouvrir un fichier** et, si l’utilisateur sélectionne un fichier et choisit le bouton **OK**, de charger ce fichier dans le contrôle **PictureBox**.
 
     > [!TIP]
-    >  L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
+    > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
     >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour Visual C#, l’extrait de code `if` se trouve dans **Visual C#**. Pour Visual Basic, les extraits de code `if` se trouvent dans **Conditions et boucles** > **Modèles de code**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 
-2.  Avant d’exécuter votre programme, enregistrez-le en choisissant le bouton **Enregistrer tout** (qui se présente comme ci-dessous) dans la barre d’outils.
+2. Avant d’exécuter votre programme, enregistrez-le en choisissant le bouton **Enregistrer tout** (qui se présente comme ci-dessous) dans la barre d’outils.
 
      ![Bouton de barre d’outils Enregistrer tout](../ide/media/express_iconsaveall.png)
 Bouton **Enregistrer tout**
@@ -75,19 +75,19 @@ Bouton **Enregistrer tout**
 
 ## <a name="to-test-your-program"></a>Pour tester votre programme
 
-1.  Appuyez sur la touche **F5** ou choisissez le bouton **Démarrer le débogage** dans la barre d’outils.
+1. Appuyez sur la touche **F5** ou choisissez le bouton **Démarrer le débogage** dans la barre d’outils.
 
-2.  Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. En premier lieu, le programme ouvre une boîte de dialogue **Ouvrir un fichier**. Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
+2. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. En premier lieu, le programme ouvre une boîte de dialogue **Ouvrir un fichier**. Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier *Mes documents*, à l’intérieur du dossier *Mes images\Échantillons d’images*.
 
     > [!NOTE]
-    >  Si vous ne voyez pas d’images affichées dans la boîte de dialogue **Sélectionner un fichier image**, vérifiez que le filtre **Tous les fichiers (*.\*)** est sélectionné dans la liste déroulante figurant en bas à droite de la boîte de dialogue.
+    > Si vous ne voyez pas d’images affichées dans la boîte de dialogue **Sélectionner un fichier image**, vérifiez que le filtre **Tous les fichiers (*.\*)** est sélectionné dans la liste déroulante figurant en bas à droite de la boîte de dialogue.
 
-3.  Chargez une image et elle s'affiche dans votre PictureBox. Essayez ensuite de redimensionner votre formulaire en faisant glisser ses bordures. Étant donné que votre PictureBox est ancré à l’intérieur d’un TableLayoutPanel (lui-même ancré à l’intérieur du formulaire), votre zone d’image se redimensionne automatiquement à la même largeur que le formulaire, et remplit les 90 pour cent supérieurs du formulaire. C’est pourquoi vous avez utilisé les conteneurs <xref:System.Windows.Forms.TableLayoutPanel> et <xref:System.Windows.Forms.FlowLayoutPanel> : ils permettent à votre formulaire de conserver des dimensions correctes quand l’utilisateur le redimensionne.
+3. Chargez une image et elle s'affiche dans votre PictureBox. Essayez ensuite de redimensionner votre formulaire en faisant glisser ses bordures. Étant donné que votre PictureBox est ancré à l’intérieur d’un TableLayoutPanel (lui-même ancré à l’intérieur du formulaire), votre zone d’image se redimensionne automatiquement à la même largeur que le formulaire, et remplit les 90 pour cent supérieurs du formulaire. C’est pourquoi vous avez utilisé les conteneurs <xref:System.Windows.Forms.TableLayoutPanel> et <xref:System.Windows.Forms.FlowLayoutPanel> : ils permettent à votre formulaire de conserver des dimensions correctes quand l’utilisateur le redimensionne.
 
      Pour le moment, les images de grande taille dépassent les bordures de votre visionneuse d'images. Dans l'étape suivante, vous ajouterez du code pour ajuster les images dans la fenêtre.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

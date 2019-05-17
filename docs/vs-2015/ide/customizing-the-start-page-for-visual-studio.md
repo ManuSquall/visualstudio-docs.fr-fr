@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 266082af039ee7f0ba2bd60e0c9a67145aaed1d3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062930"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701139"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personnalisation de la page de démarrage pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Vous pouvez personnaliser la page de démarrage de Visual Studio de plusieurs fa
     - Installez-la à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/), d’un autre site web ou d’une page sur votre intranet local.
 
         > [!NOTE]
-        >  Si vous aimez une page ciblée pour une version antérieure de Visual Studio, vous pouvez mettre à niveau cette page à l'aide du Kit de développement logiciel Visual Studio. Consultez [Guide pratique pour mettre à niveau une page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        > Si vous aimez une page ciblée pour une version antérieure de Visual Studio, vous pouvez mettre à niveau cette page à l'aide du Kit de développement logiciel Visual Studio. Consultez [Guide pratique pour mettre à niveau une page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
          Ouvrez un fichier .vsix contenant une page de démarrage personnalisée ou effectuez un copier-coller des fichiers de la page de démarrage dans le dossier **%USERPROFILE% \My Documents\Visual Studio 2015\StartPages** sur votre ordinateur.
 
@@ -59,7 +59,7 @@ Vous pouvez personnaliser la page de démarrage de Visual Studio de plusieurs fa
 4. Dans la liste **Personnaliser la page de démarrage**, choisissez la page que vous souhaitez.
 
 > [!NOTE]
->  Si une erreur dans une page de démarrage personnalisée provoque le blocage de Visual Studio, vous pouvez démarrer Visual Studio en mode sans erreur, puis le configurer pour utiliser la page de démarrage par défaut. Consultez [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> Si une erreur dans une page de démarrage personnalisée provoque le blocage de Visual Studio, vous pouvez démarrer Visual Studio en mode sans erreur, puis le configurer pour utiliser la page de démarrage par défaut. Consultez [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Création de votre propre page de démarrage](../misc/creating-your-own-start-page.md)
+ [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Création de votre propre page de démarrage](../misc/creating-your-own-start-page.md)

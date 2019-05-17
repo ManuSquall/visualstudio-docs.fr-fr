@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685341"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Choix entre les VSPackages partagés et à versions gérées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Différentes versions de Visual Studio peuvent coexister sur le même ordinateur
   
     - Programmer un VSPackage pour s’adapter à la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans lequel elle s’exécute. Ensuite, si les requêtes de services plus récentes échouer, votre VSPackage peut offrir d’autres services qui sont pris en charge dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Inscrivez votre VSPackage en conséquence. Pour plus d’informations, consultez [l’inscription de VSPackage](../extensibility/internals/vspackage-registration.md) et [l’inscription de VSPackage géré](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Inscrivez votre VSPackage en conséquence. Pour plus d’informations, consultez [l’inscription de VSPackage](../extensibility/internals/vspackage-registration.md) et [l’inscription de VSPackage géré](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Inscrire des extensions de fichier en conséquence. Pour plus d’informations, consultez [l’inscription des Extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

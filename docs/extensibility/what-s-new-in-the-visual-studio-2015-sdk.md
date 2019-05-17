@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444934"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Ce que&#39;s nouvelle dans le Kit de développement logiciel Visual Studio 2015
 Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2015, Visual Studio 2015 mise à jour et Visual Studio 2017.
@@ -57,9 +57,9 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
  Les modèles d’élément Visual Studio SDK utilisent NuGet pour leurs références et outils de génération et vous offre les avantages de NuGet par défaut.
 
 > [!NOTE]
->  Vous pouvez continuer à utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé avec vos projets (situé sous \<emplacement d’installation Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) et les projets d’extensibilité existants n’êtes pas obligé d’être mise à niveau pour utiliser les packages NuGet.  Le projet **fait référence à / ajouter une référence** dialogue continue d’utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé.
+> Vous pouvez continuer à utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé avec vos projets (situé sous \<emplacement d’installation Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) et les projets d’extensibilité existants n’êtes pas obligé d’être mise à niveau pour utiliser les packages NuGet.  Le projet **fait référence à / ajouter une référence** dialogue continue d’utiliser les assemblys de référence du Kit de développement logiciel Visual Studio installé.
 >
->  Si vous souhaitez modifier vos projets existants pour utiliser NuGet, consultez [Comment : Migrer les packages VS pour Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) qui comporte une section sur la mise à jour de projets d’extensibilité pour les packages NuGet.
+> Si vous souhaitez modifier vos projets existants pour utiliser NuGet, consultez [Comment : Migrer les packages VS pour Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) qui comporte une section sur la mise à jour de projets d’extensibilité pour les packages NuGet.
 
 ## <a name="light-bulbs"></a>Les ampoules
  Une des plus nouvelles méthodes d’écriture de code d’extension est fournie par le projet Roslyn. Pour plus d’informations, consultez [Roslyn](https://github.com/dotnet/Roslyn).

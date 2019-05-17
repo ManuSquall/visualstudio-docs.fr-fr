@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854438"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Désigne les types de conversion de code.
@@ -53,10 +53,10 @@ Thunk de trampoline THUNK_ORDINAL_TRAMP_INCREMENTAL incrémentielle (un thunk tr
 
 Thunk de trampoline THUNK_ORDINAL_TRAMP_BRANCHISLAND branche point.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs dans cette énumération sont retournées à partir d’un appel à la [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi

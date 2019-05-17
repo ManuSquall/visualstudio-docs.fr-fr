@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439188"
 ---
 # <a name="debugging-legacy-workflows"></a>Débogage de workflows hérités
 Si vous utilisez le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité dans [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] pour créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le .NET Framework 3.0 ou 3.5, vous pouvez déboguer vos workflows comme tout autre programme en définissant des points d'arrêt, en créant des attachements à des processus et en examinant les threads et la pile des appels. Vous avez également la possibilité d'effectuer un débogage à distance.  
   
 > [!NOTE]
->  Si plusieurs versions de Visual Studio ont été installées et désinstallées sur votre ordinateur, le débogage WF3 peut échouer pour l'une des raisons suivantes :  
+> Si plusieurs versions de Visual Studio ont été installées et désinstallées sur votre ordinateur, le débogage WF3 peut échouer pour l'une des raisons suivantes :  
 > 
 > - Les points d'arrêt ne sont pas atteints.  
 >   - Le message suivant s'affiche :  

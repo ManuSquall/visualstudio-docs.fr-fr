@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788540"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
 Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peuvent être utilisées pour évaluer des scripts MSBuild. Les fonctions de propriété peuvent utilisées partout où figurent des propriétés. Au contraire des tâches, les fonctions de propriété peuvent être utilisées en dehors des cibles et elles sont évaluées avant l'exécution des cibles.
 
  Sans utiliser de tâches MSBuild, vous pouvez lire l'heure système, comparer des chaînes, établir des correspondances avec des expressions régulières et effectuer d'autres actions dans votre script de génération. MSBuild tente de convertir les chaînes en nombres et les nombres en chaînes, et d'effectuer les autres conversions nécessaires.
+ 
+Les valeurs de chaîne retournées à partir de fonctions de propriété ont des [caractères spéciaux](msbuild-special-characters.md) d’échappement. Si vous souhaitez que la valeur soit traitée comme si elle avait été placée directement dans le fichier projet, utilisez `$([MSBuild]::Unescape())` pour éliminer les caractères spéciaux d’échappement.
 
 ## <a name="property-function-syntax"></a>Syntaxe des fonctions de propriété
 
@@ -175,7 +177,7 @@ Voici une liste de fonctions de propriété MSBuild :
 |string MakeRelative(string basePath, string path)|Rend `path` relatif à `basePath`. `basePath` doit être un répertoire absolu. Si rendre `path` relatif n’est pas possible, il est retourné sous forme de chaîne textuelle. Similaire à `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Retourne la chaîne dans le paramètre 'defaultValue' seulement si le paramètre 'conditionValue' est vide ; sinon, retourne la valeur conditionValue.|
 
-##  <a name="nested-property-functions"></a>Fonctions de propriété imbriquées
+## <a name="nested-property-functions"></a>Fonctions de propriété imbriquées
 
 Vous pouvez combiner des fonctions de propriété pour former des fonctions plus complexes, comme dans l'exemple suivant.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c2cf949803bcc864937e67c1f94addaaf6abacbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075647"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685638"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60075647"
 Par défaut, toutes les options de configuration de build avancées sont masquées si les paramètres du développeur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sont appliqués. Cette rubrique explique comment activer manuellement ces paramètres.  
   
 ## <a name="enabling-advanced-build-configurations"></a>Activation des configurations de build avancées  
- Par défaut, les paramètres du développeur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] masquent l’option pour ouvrir la boîte de dialogue **Gestionnaire de configurations** et les listes **Configuration** et **Plateforme** dans le [Concepteur de projets](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+ Par défaut, les paramètres du développeur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] masquent l’option pour ouvrir la boîte de dialogue **Gestionnaire de configurations** et les listes **Configuration** et **Plateforme** dans le [Concepteur de projets](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Pour activer les configurations de build avancées  
   
@@ -39,7 +39,7 @@ Par défaut, toutes les options de configuration de build avancées sont masqué
 2. Développez **Projets et solutions** et cliquez sur **Général**.  
   
     > [!NOTE]
-    >  Le nœud **Général** est visible même si l’option **Afficher tous les paramètres** est désactivée. Si vous souhaitez afficher toutes les options disponibles, cliquez sur **Afficher tous les paramètres**.  
+    > Le nœud **Général** est visible même si l’option **Afficher tous les paramètres** est désactivée. Si vous souhaitez afficher toutes les options disponibles, cliquez sur **Afficher tous les paramètres**.  
   
 3. Cliquez sur **Afficher les configurations de build avancées**.  
   

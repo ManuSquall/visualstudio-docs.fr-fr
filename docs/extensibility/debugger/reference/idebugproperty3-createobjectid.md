@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a523dd7886e46cf1df7c6e70024a052f62ca4748
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c511922be4a1ff353d4efde01a74fc43e233cba0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694918"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458850"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crée un ID unique pour cette propriété pour vous assurer qu’il est unique parmi toutes les autres propriétés.
@@ -43,7 +46,7 @@ int CreateObjectID();
  Un ID unique créé avec `CreateObjectID` est détruit lorsque le [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) méthode est appelée ; cela signale également la fin de la nécessité d’identifiant de manière unique cette propriété.
 
 > [!NOTE]
->  Il n’existe aucune méthode pour récupérer cet ID unique, donc le DE faire quoi pour les ID uniques lors de la `CreateObjectID` méthode est appelée.
+> Il n’existe aucune méthode pour récupérer cet ID unique, donc le DE faire quoi pour les ID uniques lors de la `CreateObjectID` méthode est appelée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

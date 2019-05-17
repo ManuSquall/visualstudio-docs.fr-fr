@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704352"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
   
 - [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)  
   
-- [La bibliothèque parallèle de tâches](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [La bibliothèque parallèle de tâches](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
-- [Le flux de données](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Le flux de données](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
-- [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [Parallel LINQ (PLINQ)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
-- [Le runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Le runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
-- [Les marqueurs Scenario](http://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Les marqueurs Scenario](https://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
-- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](https://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
   Vous pouvez utiliser l’onglet Marqueurs de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour contrôler l’affichage des marqueurs provenant de différentes sources dans le visualiseur concurrentiel, et pour filtrer les marqueurs en fonction de leur importance et de leur catégorie.  
   

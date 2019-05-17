@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98e01b663b7a4dd9ee14ec4a65119f504a749ad0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890899"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Propriété de ObjectIdForDebugger
 Obtient un objet qui peut être utilisé pour identifier de manière unique ce générateur au débogueur.

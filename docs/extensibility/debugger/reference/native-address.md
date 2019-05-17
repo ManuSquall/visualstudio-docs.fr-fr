@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7d061d7cd60444a523d5764c30b7ff538faefe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31834bff75ac95a06150d66955b8d879023dcdc6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719111"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460812"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 
@@ -37,9 +40,9 @@ public struct NATIVE_ADDRESS {
 }
 ```
 
-## <a name="terms"></a>Termes
+## <a name="members"></a>Membres
 
-`unknown`
+`unknown`\
 
 L’adresse native (la signification de ce dépend de l’exécution et le système d’exploitation).
 
@@ -47,7 +50,7 @@ L’adresse native (la signification de ce dépend de l’exécution et le syst�
 
 Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_NATIVE` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : sh.h
 

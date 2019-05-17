@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5785efcd3d53a485c93f9335882dffacae258ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e66f14ca1191a164236b78837297f20881ff0178
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707794"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224082"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Cette méthode détermine si le visualiseur peut avoir qu’il représente l’objet de données mis à jour.
@@ -36,8 +39,8 @@ int CanSetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `b`
+## <a name="parameters"></a>Paramètres
+ `b`\
 
  [out] Différent de zéro (`TRUE`) si l’objet sur le visualiseur peut être mis à jour, zéro (`FALSE`) s’il ne peut pas.
 

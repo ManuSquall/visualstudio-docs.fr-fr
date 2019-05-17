@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968595"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 
@@ -70,11 +70,11 @@ Les paramètres suivants vous permettent de définir les options de configuratio
 
  **Option strict** Spécifie si la sémantique de type stricte est appliquée. Quand **Option Strict** a la valeur **On**, les conditions suivantes provoquent une erreur de compilation :
 
--   Conversions restrictives implicites
+- Conversions restrictives implicites
 
--   Liaison tardive
+- Liaison tardive
 
--   Saisie implicite qui génère un type `Object`
+- Saisie implicite qui génère un type `Object`
 
 Les erreurs de conversion restrictive implicite se produisent quand une conversion de types de données implicite est une conversion restrictive. Pour plus d’informations, consultez [Option Strict, instruction](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Conversions implicites et explicites](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) et [Conversions étendues et restrictives](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Quand vous créez un projet, le paramètre **Option Strict** de la **page Compil
 **Avertissements individuels Option Strict.**
 La section **Configurations des avertissements** de la **page Compiler** contient des paramètres qui correspondent aux trois conditions qui provoquent une erreur de compilation quand `Option Strict` a la valeur On. Voici ces paramètres :
 
--   **Conversion implicite**
+- **Conversion implicite**
 
--   **Liaison tardive ; l’appel peut échouer au moment de l’exécution**
+- **Liaison tardive ; l’appel peut échouer au moment de l’exécution**
 
--   **Type implicite ; objet pris par défaut**
+- **Type implicite ; objet pris par défaut**
 
 Quand vous affectez la valeur **On** à **Option Strict**, chacun de ces trois paramètres de configuration d’avertissement prend la valeur **Erreur**. Quand vous affectez la valeur **Off** à **Option Strict**, chacun des trois paramètres prend la valeur **Aucun**.
 
@@ -127,11 +127,11 @@ Une exécution en tant qu’application 64 bits double la taille du pointeur et 
 
 Cette case à cocher est disponible uniquement si toutes les conditions suivantes ont remplies :
 
--   Dans la **page Compiler**, la liste **UC cible** a la valeur **Any CPU**.
+- Dans la **page Compiler**, la liste **UC cible** a la valeur **Any CPU**.
 
--   Dans la **page Application**, la liste **Type d’application** spécifie que le projet est une application.
+- Dans la **page Application**, la liste **Type d’application** spécifie que le projet est une application.
 
--   Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.
+- Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.
 
 **Configurations des avertissements** Ce tableau liste les conditions de génération et le niveau de notification correspondant : **Aucun**, **Avertissement** ou **Erreur**.
 
@@ -158,7 +158,6 @@ Cette option n’est pas disponible pour les projets d’application Windows ni 
 **Événements de build** Cliquez sur ce bouton pour accéder à la boîte de dialogue **Événements de build**. Utilisez cette boîte de dialogue pour spécifier les instructions de configuration pré-build et post-build pour le projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic. Pour plus d’informations, consultez [Événements de build, boîte de dialogue (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Options avancées de compilation** Cliquez sur ce bouton pour accéder à la boîte de dialogue **Paramètres avancés du compilateur**. Utilisez la boîte de dialogue **Paramètres avancés du compilateur** pour spécifier les propriétés de configuration de build avancées d’un projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic. Pour plus d’informations, consultez [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Voir aussi
 

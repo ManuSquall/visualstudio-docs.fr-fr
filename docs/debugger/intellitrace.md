@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098647"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678809"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -73,7 +73,7 @@ Vous pouvez enregistrer les données IntelliTrace à partir des sources suivante
 
 - Une session de test dans Microsoft Test Manager.
 
-- Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Voir [utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [de surveillance avec l’Agent de surveillance de Microsoft](http://technet.microsoft.com/library/dn465153.aspx).
+- Applications Web ASP.NET hébergées sur IIS, ou applications SharePoint 2010 et SharePoint 2013 qui s'exécutent dans le déploiement lorsque vous utilisez Microsoft Monitoring Agent, seul ou conjointement à System Center 2012. Voir [utiliser le collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) et [de surveillance avec l’Agent de surveillance de Microsoft](https://technet.microsoft.com/library/dn465153.aspx).
 
 Voici quelques exemples pour vous aider à effectuer un débogage avec IntelliTrace :
 

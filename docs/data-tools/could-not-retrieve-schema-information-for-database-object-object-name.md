@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f7214bfc1d4260a3baa03464d541993a264faefa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943491"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460655"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible de récupérer les informations de schéma pour l’objet de base de données \<nom de l’objet>
 
@@ -21,5 +21,4 @@ Ce message apparaît généralement quand un objet dans l’**Explorateur de ser
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

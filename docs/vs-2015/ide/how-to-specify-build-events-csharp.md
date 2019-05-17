@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435228"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procédure : Spécifier des événements de build (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 4. Dans la zone **Ligne de commande de l’événement pré-build**, spécifiez la syntaxe de l’événement de build.  
   
     > [!NOTE]
-    >  Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.  
+    > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.  
   
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.  
   
     > [!NOTE]
-    >  Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.  
   
     > [!NOTE]
-    >  Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) afin d’afficher une zone d’édition.  
+    > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) afin d’afficher une zone d’édition.  
   
      La syntaxe de l’événement de build peut inclure toute commande qui est valide à une invite de commandes ou dans un fichier .bat. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.  
   

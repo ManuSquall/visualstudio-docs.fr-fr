@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697624"
 ---
 # <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
 4. Le cas échéant, vous pouvez ajouter des marques utilisateur à votre code à l'aide de [Marquer du code pour l'analyser](#ProfileMark).  
   
     > [!TIP]
-    >  Les marques utilisateur peuvent vous aider à identifier le problème de réactivité lorsque vous affichez les données du profileur. Vous pouvez, par exemple, ajouter une marque utilisateur au début et à la fin d'une section de code qui provoque un problème de réactivité.  
+    > Les marques utilisateur peuvent vous aider à identifier le problème de réactivité lorsque vous affichez les données du profileur. Vous pouvez, par exemple, ajouter une marque utilisateur au début et à la fin d'une section de code qui provoque un problème de réactivité.  
   
 5. Exécutez le profileur de réactivité de l'interface utilisateur en suivant les instructions de la section précédente.  
   
@@ -127,7 +127,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
     - Autres événements spécifiés dans [Profiler event reference](#ProfilerEvents).  
   
     > [!TIP]
-    >  La plupart des informations utiles dans le profileur sont affichées dans le graphique des détails de chronologie.  
+    > La plupart des informations utiles dans le profileur sont affichées dans le graphique des détails de chronologie.  
   
 12. Lorsqu'une zone est sélectionnée dans le graphique d'utilisation de l'UC ou de débit visuel (en i/s), sélectionnez **Zoom avant** (via le bouton ou le menu contextuel) pour plus d'informations. La chronologie correspondant au graphique change et n'affiche que la période sélectionnée.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  La description de l'événement s'affiche sous forme d'info-bulle lorsque vous placez le pointeur de la souris sur la marque utilisateur. Vous pouvez ajouter le nombre de marques utilisateur dont vous avez besoin.  
   
 > [!NOTE]
->  `console.timeStamp`, une commande Chrome, s'affiche également en tant que marque utilisateur.  
+> `console.timeStamp`, une commande Chrome, s'affiche également en tant que marque utilisateur.  
   
  L'illustration suivante montre la règle de diagnostic avec une seule marque utilisateur et son info-bulle.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
   
 > [!NOTE]
->  L'utilisation du GPU n'apparaît pas dans le graphique.  
+> L'utilisation du GPU n'apparaît pas dans le graphique.  
   
  Cet exemple montre à quoi ressemble le graphique d'utilisation de l'UC :  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  Le graphique montre le travail du thread d'interface utilisateur et le travail sur les threads d'arrière-plan qui peuvent contribuer à ralentir les mises à jour visuelles. Le graphique n'affiche pas le travail JIT JavaScript, le travail GPU asynchrone, le travail effectué en dehors du processus hôte (tel que le travail RuntimeBroker.exe et dwm.exe) ou le travail pour les zones du Windows Runtime qui n'a pas été instrumenté pour le profilage (telles que les E/S de disque).  
   
 > [!TIP]
->  Lorsqu'un événement se produit sur un thread d'arrière-plan, l'ID de thread apparaît entre parenthèses à côté du nom de l'événement.  
+> Lorsqu'un événement se produit sur un thread d'arrière-plan, l'ID de thread apparaît entre parenthèses à côté du nom de l'événement.  
   
  Cet exemple montre à quoi ressemble le graphique des détails de chronologie lorsque l'écouteur d'événements est sélectionné pour un événement de clic DOM :  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Pour les minuteries, les écouteurs d'événements (événements DOM), les événements de disposition et les rappels d'images d'animation, un résumé coloré de l'événement sélectionné et de tous ses enfants s'affiche dans la section **Résumé du temps inclusif** (anneau coloré). Chaque tranche colorée de l'image représente un type d'événement. Les info-bulles fournissent le nom du type d'événement.  
   
     > [!TIP]
-    >  Le graphique des détails de la chronologie et **Résumé du temps inclusif** peuvent vous aider à identifier des zones pour l'optimisation. Si l'une de ces vues affiche un grand nombre de petites tâches, l'événement peut être un candidat à l'optimisation. Par exemple, une application peut actualiser souvent les éléments DOM, ce qui provoque de grandes quantités d'événements de disposition et d'analyse HTML. Vous pouvez optimiser les performances lors du traitement par lots de ce travail.  
+    > Le graphique des détails de la chronologie et **Résumé du temps inclusif** peuvent vous aider à identifier des zones pour l'optimisation. Si l'une de ces vues affiche un grand nombre de petites tâches, l'événement peut être un candidat à l'optimisation. Par exemple, une application peut actualiser souvent les éléments DOM, ce qui provoque de grandes quantités d'événements de disposition et d'analyse HTML. Vous pouvez optimiser les performances lors du traitement par lots de ce travail.  
   
 ### <a name="FilterTimelineDetails"></a> Filtrer les détails de la chronologie  
  Vous pouvez filtrer l'affichage des détails de la chronologie pour un événement particulier en sélectionnant **Filtrer jusqu'à l'événement** à partir du menu contextuel d'un événement spécifique. Lorsque vous choisissez cette option, la chronologie et l'affichage de la grille s'étendent sur l'événement sélectionné. La sélection dans le graphique d'utilisation de l'UC s'étend également sur l'événement spécifique.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  Pour exclure l'activité de thread d'interface utilisateur, désactivez l'option **Activité d'interface utilisateur** .  
   
 > [!TIP]
->  Désactivez cette option et sélectionnez l'option Trafic réseau pour résoudre les problèmes de latence réseau.  
+> Désactivez cette option et sélectionnez l'option Trafic réseau pour résoudre les problèmes de latence réseau.  
   
  Pour exclure des mesures de l'utilisateur, désactivez l'option **Mesures de l'utilisateur** . Les mesures de l'utilisateur sont des événements de niveau supérieur sans enfant.  
   
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Décodage d'image.** Indique le temps passé à décompresser er décoder les images.  
   
-  Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d’informations, consultez [Analyser les données de minutage de fonction JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d’informations, consultez [Analyser les données de minutage de fonction JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Pour les autres catégories d'événements, vous pouvez peut-être identifier les effets secondaires de plateforme qui résultent de l'ajout de fonctionnalités à votre application, mais dans ce cas vous ne pouvez peut-être pas résoudre les problèmes de performance particuliers à l'aide du profileur de réactivité de l'interface utilisateur.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Visionnez [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
   
-- Prenez connaissance des conseils de performances pour les applications Windows Store générées pour windows à l'aide de code JavaScript. Pour plus d’informations, consultez [Meilleures pratiques en matière de performances pour les applications du Windows Store en JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Prenez connaissance des conseils de performances pour les applications Windows Store générées pour windows à l'aide de code JavaScript. Pour plus d’informations, consultez [Meilleures pratiques en matière de performances pour les applications du Windows Store en JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyser les performances des applications](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

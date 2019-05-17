@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405795"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procédure pas à pas : déployer manuellement une application ClickOnce
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce
 Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, ou vous devez utiliser les fonctionnalités de déploiement avancées comme le déploiement d’applications approuvées, vous devez utiliser le *Mage.exe* outil de ligne de commande pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes. Cette procédure pas à pas décrit comment créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de la version de ligne de commande (*Mage.exe*) ou la version graphique (*MageUI.exe*) de la génération de manifeste et Outil d’édition.
 
 ## <a name="prerequisites"></a>Prérequis
@@ -43,7 +43,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 
 - Déterminez comment le déploiement sera distribué.
 
-   Les options de distribution incluent : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
+   Les options de distribution sont les suivantes : Web, partage de fichiers ou CD. Pour plus d'informations, consultez [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
 - Déterminer si l’application requiert un niveau élevé de confiance.
 
@@ -54,13 +54,13 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
    Vous devez signer votre déploiement avec un certificat Authenticode. Vous pouvez générer un certificat de test à l’aide de Visual Studio, *MageUI.exe*, ou *MakeCert.exe* et *Pvk2Pfx.exe* outils, ou vous pouvez obtenir un certificat à partir d’un certificat Autorité (CA). Si vous choisissez d’utiliser le déploiement d’applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs clients. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir à partir d’une autorité de certification.
+  > Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir à partir d’une autorité de certification.
 
 - Assurez-vous que l’application n’a pas d’un manifeste avec des informations de compte d’utilisateur.
 
    Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte utilisateur (UAC), comme un `<dependentAssembly>` élément. Pour examiner un manifeste d’application, vous pouvez utiliser Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilitaire.
 
-   Si votre application contient un manifeste avec des détails de l’UAC, vous devez régénérer sans les informations de compte d’utilisateur. Pour un C# de projet dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l’onglet Application. Dans le **manifeste** liste déroulante, sélectionnez **créer l’application sans manifeste**. Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet Application, puis cliquez sur **afficher les paramètres UAC**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans le même `<asmv1:assembly>` élément.
+   Si votre application contient un manifeste avec des détails de l’UAC, vous devez régénérer sans les informations de compte d’utilisateur. Pour un projet c# dans Visual Studio, ouvrez les propriétés du projet et sélectionnez l’onglet Application. Dans le **manifeste** liste déroulante, sélectionnez **créer l’application sans manifeste**. Pour un projet Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet Application, puis cliquez sur **afficher les paramètres UAC**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans le même `<asmv1:assembly>` élément.
 
 - Déterminer si l’application requiert les composants requis sur l’ordinateur client.
 
@@ -73,7 +73,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 2. Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez le sous-répertoire de version **1.0.0.0**.
 
    > [!NOTE]
-   >  La version de votre déploiement peut être différente de la version de votre application.
+   > La version de votre déploiement peut être différente de la version de votre application.
 
 3. Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.
 
@@ -86,7 +86,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
    ```
 
    > [!NOTE]
-   >  Veillez à inclure le point (.) après le `-FromDirectory` option, qui indique le répertoire actif. Si vous n’incluez pas le point, vous devez spécifier le chemin d’accès à vos fichiers d’application.
+   > Veillez à inclure le point (.) après le `-FromDirectory` option, qui indique le répertoire actif. Si vous n’incluez pas le point, vous devez spécifier le chemin d’accès à vos fichiers d’application.
 
 6. Signer le manifeste d’application avec votre certificat Authenticode. Remplacez *mycert.pfx* avec le chemin d’accès à votre fichier de certificat. Remplacez *passwd* avec le mot de passe pour votre fichier de certificat.
 
@@ -121,7 +121,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 2. Dans le répertoire de déploiement que vous venez de créer, créez un sous-répertoire de version. S’il s’agit de la première fois que vous déployez l’application, nommez le sous-répertoire de version **1.0.0.0**.
 
    > [!NOTE]
-   >  La version de votre déploiement est probablement différent de la version de votre application.
+   > La version de votre déploiement est probablement différent de la version de votre application.
 
 3. Copiez tous les fichiers de votre application dans le sous-répertoire de version, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données. Si nécessaire, vous pouvez créer des sous-répertoires supplémentaires qui contiennent des fichiers supplémentaires.
 

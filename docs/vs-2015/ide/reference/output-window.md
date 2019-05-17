@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668910"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696056"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668910"
 La fenêtre **Sortie** peut afficher des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage/Sortie** (ou cliquez sur Ctrl+Alt+O).  
   
 > [!WARNING]
->  La fenêtre Sortie n’apparaît pas dans le menu Affichage des éditions Visual Studio Express. Pour l’afficher, utilisez le raccourci clavier Ctrl+Alt+O.  
+> La fenêtre Sortie n’apparaît pas dans le menu Affichage des éditions Visual Studio Express. Pour l’afficher, utilisez le raccourci clavier Ctrl+Alt+O.  
   
 ## <a name="toolbar"></a>Barre d’outils  
  **Afficher la sortie à partir de**  
@@ -61,14 +61,14 @@ La fenêtre **Sortie** peut afficher des messages d’état pour diverses foncti
   
  Vous pouvez également programmer vos propres applications pour qu’elles écrivent les messages de diagnostic au moment de l’exécution vers un volet **Sortie**. Pour ce faire, utilisez les membres de la classe <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace> dans l’espace de noms <xref:System.Diagnostics> de la bibliothèque de classes .NET Framework. Les membres de la classe <xref:System.Diagnostics.Debug> affichent la sortie quand vous générez des configurations Debug de votre solution ou projet ; les membres de la classe <xref:System.Diagnostics.Trace> affichent la sortie quand vous générez des configurations Debug ou Release. Pour plus d’informations, consultez [Messages de diagnostic dans la fenêtre Sortie](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- Dans [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], vous pouvez créer des étapes de génération personnalisées et des événements de build dont les avertissements et erreurs sont affichés et comptabilisés dans le volet **Sortie**. En appuyant sur F1 dans une ligne de sortie, vous pouvez afficher une rubrique d’aide appropriée. Pour plus d’informations, consultez [Mise en forme de la sortie d’une étape de génération personnalisée ou d’un événement de build](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ Dans [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], vous pouvez créer des étapes de génération personnalisées et des événements de build dont les avertissements et erreurs sont affichés et comptabilisés dans le volet **Sortie**. En appuyant sur F1 dans une ligne de sortie, vous pouvez afficher une rubrique d’aide appropriée. Pour plus d’informations, consultez [Mise en forme de la sortie d’une étape de génération personnalisée ou d’un événement de build](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Comportement de défilement  
  Si vous utilisez le défilement automatique dans la fenêtre Sortie, puis que vous naviguez à l’aide de la souris ou des touches de direction, le défilement automatique s’arrête. Pour reprendre le défilement automatique, appuyez sur Ctrl+Fin.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Messages de diagnostic dans la fenêtre Sortie](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Guide pratique pour Contrôler la fenêtre Sortie](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Guide pratique pour Contrôler la fenêtre Sortie](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../../ide/understanding-build-configurations.md)   
- [Présentation des bibliothèques de classes .NET](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Présentation des bibliothèques de classes .NET](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

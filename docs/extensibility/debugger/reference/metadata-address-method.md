@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700274"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461020"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Cette structure représente l’adresse d’une méthode d’une classe.
@@ -40,25 +43,25 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Termes
- tokMethod
+## <a name="members"></a>Membres
+ `tokMethod`\
 
  L’ID de la méthode.
 
- (C++) `_mdToken` est un `typedef` pour 32 bits `int`.
+ [C++] `_mdToken` est un `typedef` pour 32 bits `int`.
 
- dwOffset
+ `dwOffset`\
 
  Le décalage à partir du début de la classe à cette méthode (peuvent représenter le décalage dans vtable).
 
- dwVersion
+ `dwVersion`\
 
  La version de la méthode (cette valeur est unique pour le fournisseur de symboles).
 
 ## <a name="remarks"></a>Notes
  Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_METHOD` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

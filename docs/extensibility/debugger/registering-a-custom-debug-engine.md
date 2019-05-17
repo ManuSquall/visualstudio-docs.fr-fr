@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb9b7d406e7638a73e9c4db4974d493aa1d38e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 25b38f008df47dd2912fef042424e4c3d42becd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415650"
 ---
 # <a name="register-a-custom-debug-engine"></a>Inscrire un moteur de débogage personnalisé
 Le moteur de débogage doit s’auto-enregistrer comme une fabrique de classe, les conventions COM suivantes mais aussi s’inscrire avec Visual Studio via la sous-clé de Registre de Visual Studio.
 
 > [!NOTE]
->  Vous trouverez un exemple montrant comment inscrire un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : Création d’un moteur de débogage à l’aide de ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Vous trouverez un exemple montrant comment inscrire un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : Création d’un moteur de débogage à l’aide de ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
 
 ## <a name="dll-server-process"></a>Processus de serveur DLL
  Un moteur de débogage est généralement configuré dans sa propre DLL comme serveur COM. Par conséquent, le moteur de débogage doit inscrire le CLSID de la fabrique de classe avec COM avant Visual Studio peuvent y accéder. Ensuite, le moteur de débogage doit s’inscrire avec Visual Studio pour établir toutes les propriétés (autrement dit métriques) le débogage prend en charge du moteur. Le choix des métriques écrites dans la sous-clé de Registre de Visual Studio dépend des fonctionnalités que du moteur de débogage prend en charge.
@@ -32,7 +32,7 @@ Le moteur de débogage doit s’auto-enregistrer comme une fabrique de classe, l
  L’exemple suivant (à partir de l’exemple TextInterpreter) montre comment utiliser le `SetMetric` (fonction) (à partir de *dbgmetric.lib*) pour inscrire un moteur de débogage avec Visual Studio. Les métriques transmis sont également définies dans *dbgmetric.lib*.
 
 > [!NOTE]
->  TextInterpreter est un moteur de débogage de base ; Il n’a pas défini et par conséquent ne pas s’inscrire, d’autres fonctionnalités. Un moteur de débogage plus complète aurait une liste complète des `SetMetric` appels ou leur équivalent, pour chaque fonctionnalité, le moteur de débogage prend en charge.
+> TextInterpreter est un moteur de débogage de base ; Il n’a pas défini et par conséquent ne pas s’inscrire, d’autres fonctionnalités. Un moteur de débogage plus complète aurait une liste complète des `SetMetric` appels ou leur équivalent, pour chaque fonctionnalité, le moteur de débogage prend en charge.
 
 ```
 // Define base registry subkey to Visual Studio.

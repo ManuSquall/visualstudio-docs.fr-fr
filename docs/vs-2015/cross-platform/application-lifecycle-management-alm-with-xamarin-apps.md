@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696263"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) avec les applications Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
  Les tableaux ci-dessous identifient les fonctionnalités ALM de Visual Studio qui donnent de bons résultats avec un projet Xamarin, et celles qui présentent des limites. Pour plus d'informations sur les fonctionnalités, cliquez sur les liens correspondants.  
   
 ## <a name="agile-tools"></a>Outils agiles  
- Lien de référence : **[Travail](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (à l’aide de Visual Studio Team Services ou TFS, y compris Team Explorer Everywhere)  
+ Lien de référence : **[Travail](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (à l’aide de Visual Studio Team Services ou TFS, y compris Team Explorer Everywhere)  
   
  Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.  
   
@@ -61,25 +61,25 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
-|[Utiliser Team Foundation Version Control](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui||  
-|[Bien démarrer avec Git dans Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui||  
-|[Analyse du code/Améliorer la qualité du code (références, suggestions de changement, etc.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Oui||  
+|[Utiliser Team Foundation Version Control](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui||  
+|[Bien démarrer avec Git dans Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui||  
+|[Analyse du code/Améliorer la qualité du code (références, suggestions de changement, etc.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Oui||  
 |[Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui|Sauf au-delà des limites spécifiques à la plate-forme où l'implémentation n'est résolue qu'au moment de l'exécution.|  
 |[Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||  
   
 ## <a name="build"></a>Build  
- Lien de référence : **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Lien de référence : **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Serveur TFS local|Oui|Xamarin doit être installé sur les machines de build. Celles-ci peuvent être liées à un ordinateur OSX afin de générer des applications pour iOS. Consultez [Configuration de TFS pour Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (site web Xamarin).|  
-|Serveur de builds local lié à Visual Studio Team Services|Oui|Consultez la rubrique [Serveur de builds](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pour obtenir des instructions.|  
+|Serveur de builds local lié à Visual Studio Team Services|Oui|Consultez la rubrique [Serveur de builds](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pour obtenir des instructions.|  
 |Service de contrôleur hébergé de Visual Studio Team Services|Oui|Consultez [Générez votre application Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Définitions de builds avec des pré-scripts et des post-scripts|Oui||  
 |Intégration continue, y compris les archivages contrôlés|Oui|Archivages contrôlés pour TFVC uniquement si Git utilise un modèle de requête d'extraction plutôt que des archivages.|  
   
 ## <a name="testing"></a>Test  
- Lien de référence : **[Test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Lien de référence : **[Test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
@@ -91,12 +91,12 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Windows uniquement|L’enregistreur de test d’IU de Visual Studio est réservé à Windows. Pour toutes les plateformes, consultez [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du Code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du Code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |[Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Oui||  
-|[Recherche du code dupliqué à l’aide de la détection de clone de code](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui||  
+|[Recherche du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui||  
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Oui||  
 |[Explorateur de performances](../profiling/performance-explorer.md)|Non|Utilisez le [Profileur Xamarin](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) par le biais de Xamarin Studio à la place. Notez que Xamarin Profiler est actuellement disponible en version préliminaire et qu'il ne fonctionne pas pour le moment avec les cibles Windows.|  
 |[Analyser les problèmes de mémoire liés au .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Non|Visual Studio Tools n’a pas de hook au framework Mono pour le profilage.|  

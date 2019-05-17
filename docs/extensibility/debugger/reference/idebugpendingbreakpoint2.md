@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 816fad53554675e7f29cef838d4ea24e154dca8c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871932"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Cette interface représente un point d’arrêt est prêt à lier à un emplacement de code.
@@ -56,7 +56,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  Un point d’arrêt en attente peut produire plus d’un point d’arrêt lié. Par exemple, un point d’arrêt dans un modèle de style C++ peut générer un point d’arrêt lié pour chaque instance unique de ce modèle.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

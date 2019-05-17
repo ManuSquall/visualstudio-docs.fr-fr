@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1a5ad34904a2f0bf02e5a2221f1ff73093012a41
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916928"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 Cette interface est utilisée par les nœuds de programme pour spécifier tous les moteurs de débogage possible (dé) qui peuvent déboguer ce programme.
@@ -45,7 +45,7 @@ IDebugProgramEngines2 : IUnknown
 ## <a name="remarks"></a>Notes
  Une fois qu’un D’est choisi par l’utilisateur, ce choix est inscrit avec le nœud de programme en appelant [SetEngine](../../../extensibility/debugger/reference/idebugprogramengines2-setengine.md). Le moteur sélectionné devient le moteur retourné par [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

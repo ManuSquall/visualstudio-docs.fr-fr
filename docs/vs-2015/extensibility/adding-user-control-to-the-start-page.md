@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699132"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Ajout d’un contrôle utilisateur à la page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,5 +187,5 @@ Cette procédure pas à pas montre comment ajouter une référence DLL à une Pa
      Votre page de démarrage personnalisée doit être affiché. Si vous souhaitez modifier tous les fichiers, fermez l’instance expérimentale, apportez les modifications, copiez et collez les fichiers modifiés et puis ouvrez à nouveau l’instance expérimentale pour afficher les modifications.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Conteneur des contrôles WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [Procédure pas à pas : Ajout de XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Conteneur des contrôles WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [Procédure pas à pas : Ajout de code XAML personnalisé à la page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

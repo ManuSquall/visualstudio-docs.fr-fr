@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859149"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
 L’environnement gère l’enregistrer, enregistrer sous et enregistrer toutes les commandes. Lorsqu’un utilisateur sélectionne **enregistrer**, **enregistrer en tant que**, ou **Enregistrer tout** à partir de la **fichier** menu ou ferme la solution, ce qui entraîne un  **Enregistrer tous les**, le processus suivant se produit.

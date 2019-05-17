@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557731"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>IJsDebugProcess::CreateStackWalker, méthode
 Méthode de fabrique pour l’Explorateur de pile.  
@@ -46,7 +46,7 @@ HRESULT CreateStackWalker(
 ## <a name="remarks"></a>Notes  
  Retourne E_JsDEBUG_UNKNOWN_THREAD si le thread n’a pas de JavaScript sur celui-ci. Cette méthode peut être appelée uniquement pendant le processus cible est arrêté.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

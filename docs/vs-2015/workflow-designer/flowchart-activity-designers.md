@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943390"
 ---
 # <a name="flowchart-activity-designers"></a>Concepteurs d'activités d'organigramme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs activités fournies par le système que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: aa33d13623e1f7222eb831571d60d25404465dc4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702983"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Création des Classes LINQ to SQL à l’aide d’héritage à Table unique (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 1. Dans **Explorateur de serveurs**/**Database Explorer**, avec le bouton droit le **Tables** nœud et cliquez sur **ajouter une nouvelle Table**.  
   
     > [!NOTE]
-    >  Vous pouvez utiliser la base de données Northwind ou toute autre base de données à laquelle vous pouvez ajouter une table.  
+    > Vous pouvez utiliser la base de données Northwind ou toute autre base de données à laquelle vous pouvez ajouter une table.  
   
 2. Dans le Concepteur de tables, ajoutez les colonnes suivantes à la table :  
   
@@ -96,9 +96,9 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 2. Nommez le projet **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] est pris en charge dans les projets Visual Basic et C#. Créez le projet dans l'un de ces langages.  
+    > Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] est pris en charge dans les projets Visual Basic et C#. Créez le projet dans l'un de ces langages.  
   
-3. Cliquez sur le **Windows Forms Application** modèle, puis cliquez sur **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Cliquez sur le **Windows Forms Application** modèle, puis cliquez sur **OK**. Pour plus d’informations, consultez [les Applications clientes](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
 4. Le projet InheritanceWalkthrough est créé et ajouté à **l’Explorateur de solutions**.  
   
@@ -150,7 +150,7 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
   
 2. Double-cliquez sur le formulaire pour créer un gestionnaire d'événements `Form1_Load`.  
   
-3. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :  
+3. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -188,8 +188,8 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Guide pratique pour Ajouter LINQ to SQL Classes à un projet (Concepteur O-R)](http://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [Guide pratique pour Ajouter LINQ to SQL Classes à un projet (Concepteur O-R)](https://msdn.microsoft.com/library/7bb184ab-ec54-4cda-b706-604b2b4a3ed6)   
+ [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [Guide pratique pour Assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Guide pratique pour générer le modèle objet en Visual Basic ou C#](http://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Guide pratique pour générer le modèle objet en Visual Basic ou C#](https://msdn.microsoft.com/library/a0c73b33-5650-420c-b9dc-f49310c201ee)
