@@ -1,18 +1,18 @@
 ---
 title: Guide pratique pour tester une DLL Visual C++ conçue pour des applications UWP
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226356"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
 
@@ -24,15 +24,27 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
 
-1. Dans le menu **Fichier**, choisissez **Nouveau** > **Nouveau projet**.
+::: moniker range="vs-2019"
 
-2. Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Créer un projet**, tapez « test » dans la zone de recherche, puis définissez **Langage** sur C++. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
-3. Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.
+   ![Créer un projet de test UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+
+::: moniker-end
+
+1. Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+
+2. Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.
 
      ![Spécifier la solution, le nom du projet et l'emplacement](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. Dans le nouveau projet, ouvrez **unittest1.cpp**.
+3. Dans le nouveau projet, ouvrez **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
-1. Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.
+::: moniker range="vs-2019"
 
-     ![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Nouveau projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « DLL » dans la zone de recherche. Dans la liste des résultats, choisissez **Application de test unitaire (Windows universelle - C++/CX)**.
 
-2. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.
+![Créer le projet RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Ajoutez le code suivant au fichier *RooterLib.h* :
+::: moniker-end
+
+::: moniker range="vs-2017"
+Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Nouveau projet**.
+
+![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.
+
+2. Ajoutez le code suivant au fichier *RooterLib.h* :
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
      La classe `CRooterLib` déclare un constructeur et la méthode d'estimation `SqareRoot`.
 
-4. Ajoutez le symbole ROOTERLIB_EXPORTS à la ligne de commande.
+3. Ajoutez le symbole ROOTERLIB_EXPORTS à la ligne de commande.
 
     1. Dans **l’Explorateur de solutions**, choisissez le projet **RooterLib**, puis **Propriétés** dans le menu contextuel.
 
@@ -109,7 +132,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     3. Choisissez **\<Modifier>** dans la liste **Définitions de préprocesseur**, puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue **Définitions de préprocesseur**.
 
-5. Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez *RooterLib.cpp*, puis ajoutez le code suivant :
+4. Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez *RooterLib.cpp*, puis ajoutez le code suivant :
 
     ```cpp
     // constructor

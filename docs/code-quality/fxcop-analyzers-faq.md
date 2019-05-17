@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816421"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613550"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -43,7 +43,7 @@ Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Je reçois l’avertissement CA0507 même après avoir installé le package NuGet d’analyseurs FxCop
 
-Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« Exécuter l’analyse du code » a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build**, il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Sinon, l’analyse statique du code s’exécute après chaque phase de build.
+Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« ’Exécuter l’analyse du code’ a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build »**, il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Sinon, l’analyse statique du code s’exécute après chaque phase de build.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

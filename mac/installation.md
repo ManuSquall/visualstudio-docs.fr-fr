@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983000"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615456"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
 
@@ -55,7 +55,7 @@ Si vous rencontrez des problèmes réseau durant l’installation dans un enviro
 Découvrez-en plus sur les changements dans les [notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Si vous avez choisi de ne pas installer certains outils ou plateformes lors de l’installation d’origine (en les désélectionnant à l’étape 6), vous devrez réexécuter le programme d’installation si vous souhaitez ajouter ces composants plus tard.
+> Si vous avez choisi de ne pas installer certains outils ou plateformes lors de l’installation d’origine (en les désélectionnant à l’étape 6), vous devez réexécuter le programme d’installation si vous souhaitez ajouter ces composants plus tard.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
@@ -82,7 +82,7 @@ L’installation de Visual Studio pour Mac vous permet de commencer à écrire d
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
 
-Pour les autres charges de travail, reportez-vous à la page [charges de travail](/visualstudio/mac/workloads).
+Pour les autres charges de travail, reportez-vous à la page [charges de travail](workloads.md).
 
 ## <a name="related-video"></a>Vidéo associée
 

@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786377"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850747"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importer ou exporter des configurations d’installation
 
@@ -48,7 +48,7 @@ Vous pouvez choisir d’exporter un fichier de configuration de l’installation
 
    ![Exporter la configuration à partir de la fiche produit dans le programme d’installation de Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. Recherchez ou tapez l’emplacement où vous souhaitez enregistrer votre fichier .vconfig, puis choisissez **Vérifier les détails**.
+1. Recherchez ou tapez l’emplacement où vous voulez enregistrer votre fichier .vconfig, puis choisissez **Passer en revue les détails**.
 
    ![Exporter la configuration à partir du programme d’installation de Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ Lorsque vous êtes prêt à importer un fichier de configuration de l’installa
 
 1. Dans la fiche produit, choisissez le bouton **Plus**, puis sélectionnez **Importer la configuration**.
 
-1. Recherchez le fichier .vconfig que vous souhaitez importer, puis choisissez **Vérifier les détails**.
+1. Recherchez le fichier .vconfig que vous voulez importer, puis choisissez **Passer en revue les détails**.
 
 1. Assurez-vous d’avoir les charges de travail et les composants que vous souhaitez, puis choisissez **Fermer**.
 

@@ -1,6 +1,6 @@
 ---
 title: 'CA2000 : Supprimer les objets avant la mise hors de portée'
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545405"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804973"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000 : Supprimer les objets avant la mise hors de portée
 
@@ -35,40 +35,55 @@ ms.locfileid: "62545405"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un objet local d’un <xref:System.IDisposable> type est créé, mais l’objet n’est pas supprimé avant que toutes les références à l’objet ne soient hors de portée.
+
+Un objet local d’un <xref:System.IDisposable> type est créé, mais l’objet n’est pas supprimé avant que toutes les références à l’objet ne soient hors de portée.
 
 ## <a name="rule-description"></a>Description de la règle
- Si un objet jetable n’est pas supprimé explicitement avant que toutes les références à celle-ci soient hors de portée, l’objet sera supprimé à un moment indéterminé lorsque le garbage collector exécute le finaliseur de l’objet. Car un événement exceptionnel peut se produire et empêcher le finaliseur de l’objet à partir de l’exécution, l’objet doit être supprimé explicitement à la place.
+
+Si un objet jetable n’est pas supprimé explicitement avant que toutes les références à celle-ci soient hors de portée, l’objet sera supprimé à un moment indéterminé lorsque le garbage collector exécute le finaliseur de l’objet. Car un événement exceptionnel peut se produire et empêcher le finaliseur de l’objet à partir de l’exécution, l’objet doit être supprimé explicitement à la place.
+
+### <a name="special-cases"></a>Cas particuliers
+
+Même si l’objet n’est pas supprimé, la règle CA2000 ne déclenche pas d’objets locaux des types suivants :
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Transmission d’un objet d’un de ces types à un constructeur et en l’attribuant à un champ indiquent un *dispose de transfert de la propriété* pour le type qui vient d’être construit. Autrement dit, le type nouvellement construit est désormais responsable de suppression de l’objet. Si votre code passe un objet d’un de ces types à un constructeur, aucune violation de règle CA2000 se produit même si l’objet n’est pas supprimé avant toutes les références à celle-ci ne soient hors de portée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, appelez <xref:System.IDisposable.Dispose%2A> sur l’objet avant que toutes les références à celle-ci soient hors de portée.
 
- Notez que vous pouvez utiliser la `using` instruction (`Using` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) pour encapsuler des objets qui implémentent `IDisposable`. Les objets qui sont encapsulés de cette manière seront disposés automatiquement à la fin de la `using` bloc.
+Pour corriger une violation de cette règle, appelez <xref:System.IDisposable.Dispose%2A> sur l’objet avant que toutes les références à celle-ci soient hors de portée.
 
- Voici certaines situations où l’instruction using n’est pas suffisante pour protéger des objets IDisposable et peut provoquer CA2000 se produise.
+Vous pouvez utiliser la [ `using` instruction](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) en Visual Basic) pour encapsuler des objets qui implémentent <xref:System.IDisposable>. Les objets qui sont encapsulés de cette manière sont disposés automatiquement à la fin de la `using` bloc. Toutefois, les situations suivantes ne doivent pas ou ne peut pas être gérées avec un `using` instruction :
 
-- Retour d’un objet jetable nécessite que l’objet est construit dans un bloc try/finally en dehors d’un à l’aide de bloc.
+- Pour retourner un objet pouvant être supprimé, l’objet doit être construit dans une `try/finally` bloquer en dehors d’un `using` bloc.
 
-- L’initialisation des membres d’un objet jetable ne doit pas être effectué dans le constructeur d’une instruction.
+- Ne pas initialiser les membres d’un objet pouvant être supprimé dans le constructeur d’un `using` instruction.
 
-- Constructeurs d’imbrication qui sont protégés uniquement par un gestionnaire d’exceptions. Par exemple :
+- Lorsque les constructeurs sont protégés par le Gestionnaire d’exceptions qu’un seul sont imbriqués dans le [partie d’acquisition d’un `using` instruction](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), l’objet créé par le constructeur imbriqué jamais peut entraîner une défaillance dans le constructeur externe en cours de fermeture. Dans l’exemple suivant, une défaillance dans le <xref:System.IO.StreamReader> constructeur peut entraîner la <xref:System.IO.FileStream> jamais en cours de fermeture de l’objet. CA2000 signale une violation de la règle dans ce cas.
 
-    ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
-    { ... }
-    ```
+   ```csharp
+   using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+   { ... }
+   ```
 
-     provoque CA2000 parce qu’un échec dans la construction de l’objet StreamReader peut entraîner l’objet FileStream jamais en cours de fermeture.
-
-- Objets dynamiques doivent utiliser un objet de clichés instantanés pour implémenter le modèle Dispose des objets IDisposable.
+- Objets dynamiques doivent utiliser un objet de clichés instantanés pour implémenter le modèle dispose de <xref:System.IDisposable> objets.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas un avertissement de cette règle, sauf si vous avez appelé une méthode sur votre objet qui appelle `Dispose`, tel que <xref:System.IO.Stream.Close%2A>, ou si la méthode qui a déclenché l’avertissement retourne un objet IDisposable encapsule votre objet.
+
+Ne supprimez pas d’avertissement de cette règle, sauf si :
+
+- Vous avez appelé une méthode sur votre objet qui appelle `Dispose`, tel que <xref:System.IO.Stream.Close%2A>
+- La méthode qui a déclenché l’avertissement retourne un <xref:System.IDisposable> objet qui encapsule votre objet
+- La méthode d’allocation n’a pas la propriété dispose ; Autrement dit, la responsabilité de supprimer l’objet est transférée vers un autre objet ou de wrapper qui a créé dans la méthode et retourné à l’appelant
 
 ## <a name="related-rules"></a>Règles associées
- [CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202 : Ne pas supprimer des objets plusieurs fois](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+- [CA2202 : Ne pas supprimer des objets plusieurs fois](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Exemple
 
@@ -156,13 +171,14 @@ End Function
 ```
 
 ## <a name="example"></a>Exemple
- Par défaut, le [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilateur a pour dépassement de capacité de validation de tous les opérateurs arithmétiques. Par conséquent, toute opération arithmétique de Visual Basic peut lever une <xref:System.OverflowException>. Cela peut entraîner des violations des règles telles que CA2000 inattendues. Par exemple, la fonction CreateReader1 suivante produira une violation CA2000, car le compilateur Visual Basic émet une instruction pour l’addition qui pourrait lever une exception qui provoque le StreamReader ne pas être supprimé de contrôle de dépassement.
 
- Pour résoudre ce problème, vous pouvez désactiver l’émission de contrôles de dépassement par le compilateur Visual Basic dans votre projet, ou vous pouvez modifier votre code comme dans la fonction CreateReader2 suivante.
+Par défaut, le compilateur Visual Basic a tous les opérateurs arithmétiques de vérification de dépassement de capacité. Par conséquent, toute opération arithmétique de Visual Basic peut lever une <xref:System.OverflowException>. Cela peut entraîner des violations des règles telles que CA2000 inattendues. Par exemple, la fonction CreateReader1 suivante produira une violation CA2000, car le compilateur Visual Basic émet une instruction pour l’addition qui pourrait lever une exception qui provoque le StreamReader ne pas être supprimé de contrôle de dépassement.
 
- Pour désactiver l’émission de contrôles de dépassement, cliquez sur le nom de projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**. Cliquez sur **compiler**, cliquez sur **Options avancées de compilation**, puis cochez **supprimer les contrôles de dépassement de capacité d’entier**.
+Pour résoudre ce problème, vous pouvez désactiver l’émission de contrôles de dépassement par le compilateur Visual Basic dans votre projet, ou vous pouvez modifier votre code comme dans la fonction CreateReader2 suivante.
 
-  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+Pour désactiver l’émission de contrôles de dépassement, cliquez sur le nom de projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**. Cliquez sur **compiler**, cliquez sur **Options avancées de compilation**, puis cochez **supprimer les contrôles de dépassement de capacité d’entier**.
+
+[!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Voir aussi
 
