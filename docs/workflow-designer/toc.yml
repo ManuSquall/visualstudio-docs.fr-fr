@@ -1,8 +1,8 @@
 - name: Développer des applications avec le Concepteur de flux de travail
   items:
-    - name: Développer des applications avec le Concepteur de flux de travail
+    - name: Présentation et prérequis
       href: developing-applications-with-the-workflow-designer.md
-    - name: Créer un projet de workflow
+    - name: Projets de workflow
       items:
         - name: Créer un projet de workflow
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Concepteurs d’activités
       items:
-        - name: Concepteurs d’activités
-          href: using-the-activity-designers.md
         - name: Concepteurs d'activités de flux de contrôle
           items:
-            - name: Concepteurs d'activités de flux de contrôle
+            - name: Vue d’ensemble et référence
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: Concepteur d'activités DoWhile
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Concepteurs d'activités d'organigramme
           items:
-            - name: Concepteurs d'activités d'organigramme
+            - name: Vue d’ensemble et référence
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: Concepteur d'activités d'organigramme
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: Concepteurs d'activités d'ordinateur d'état
           items:
-            - name: Concepteurs d'activités d'ordinateur d'état
+            - name: Vue d’ensemble et référence
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: Concepteur d'activités StateMachine
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Concepteurs d'activités de messagerie
           items:
-            - name: Concepteurs d'activités de messagerie
+            - name: Vue d’ensemble et référence
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: Concepteur d'activités CorrelationScope
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Concepteurs d'activités d'exécution
           items:
-            - name: Concepteurs d'activités d'exécution
+            - name: Vue d’ensemble et référence
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: Concepteur d'activités Persist
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: Concepteurs d'activités primitives
           items:
-            - name: Concepteurs d'activités primitives
+            - name: Vue d’ensemble et référence
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: Concepteur d'activités Assign
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: Concepteurs d'activités de transaction
           items:
-            - name: Concepteurs d'activités de transaction
+            - name: Vue d’ensemble et référence
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: Concepteur d'activités CancellationScope
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Concepteurs d'activités de collection
           items:
-            - name: Concepteurs d'activités de collection
+            - name: Vue d’ensemble et référence
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: Concepteur d’activités AddToCollection<T>
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Concepteurs d'activités de gestion des erreurs
           items:
-            - name: Concepteurs d'activités de gestion des erreurs
+            - name: Vue d’ensemble et référence
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: Concepteur d'activités Rethrow
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Concepteurs d'activités de migration
           items:
-            - name: Concepteurs d'activités de migration
+            - name: Vue d’ensemble et référence
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: Concepteur d'activités Interop
               href: interop-activity-designer.md
-    - name: Déboguer des workflows
+    - name: Débogage
       items:
         - name: Déboguer des workflows
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Scénarios de débogage non pris en charge
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: référence à l'interface
+    - name: Référence d’interface utilisateur
       items:
-        - name: référence à l'interface
-          href: workflow-designer-ui-help.md
         - name: 'Rechercher et sélectionner un type .NET, boîte de dialogue'
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: Boîte de dialogue Définition CorrelatesOn
