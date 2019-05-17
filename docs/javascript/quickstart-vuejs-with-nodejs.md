@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840548"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226496"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application Vue.js
 
@@ -59,12 +59,12 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 1. Créer un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Basic Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Basic Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui s’affiche, tapez le nom **basic-vuejs**, puis choisissez **Créer**.
 
     ![Modèle Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **JavaScript** ou **TypeScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Vue.js de base**, puis **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **JavaScript** ou **TypeScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Vue.js de base**, tapez le nom **basic-vuejs**, puis choisissez **OK**.
 
     ![Modèle Vue.js](../javascript/media/vuejs-template.png)
     ::: moniker-end

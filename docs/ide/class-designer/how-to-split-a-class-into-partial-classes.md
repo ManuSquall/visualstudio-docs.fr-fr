@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975149"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615414"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procédure : fractionner une classe en classes partielles dans le Concepteur de classes
 

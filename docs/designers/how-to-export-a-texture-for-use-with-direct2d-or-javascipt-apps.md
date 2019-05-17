@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript'
+title: Exporter une texture pour les applications Direct2D et JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844382"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459201"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
 
 Le pipeline de contenus d’image peut générer des textures compatibles avec les conventions de rendu interne de Direct2D. Les textures de ce type sont appropriées pour une utilisation dans les applications qui utilisent Direct2D et dans les applications UWP créées à l’aide de JavaScript.
 
@@ -39,11 +39,11 @@ Les textures qui sont utilisés dans le contexte de Direct2D doivent respecter c
 
 - La texture doit être fournie au format *.dds*, en utilisant l’un de ces formats de compression de bloc :
 
-    - Compression BC1_UNORM
+   - Compression BC1_UNORM
 
-    - Compression BC2_UNORM
+   - Compression BC2_UNORM
 
-    - Compression BC3_UNORM
+   - Compression BC3_UNORM
 
 - Les mipmaps ne sont pas pris en charge.
 
