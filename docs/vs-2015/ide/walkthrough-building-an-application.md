@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045471"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698352"
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : Création d’une Application
 
@@ -78,7 +78,7 @@ Vous allez utiliser la boîte de dialogue **Extensions et mises à jour** pour r
 
 ## <a name="BKMK_CreateBuildConfig"></a>Créer une configuration de build personnalisée
 
-Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de générations](../ide/understanding-build-platforms.md) et [Configurations de projet Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de générations](../ide/understanding-build-platforms.md) et [Configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Vous pouvez modifier ou créer des configurations et des paramètres de plateforme dans la boîte de dialogue **Gestionnaire de configurations**. Dans cette procédure, vous allez créer une configuration de build à des fins de test.
 
@@ -197,9 +197,9 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
     Les informations de build comprennent l’heure à laquelle la génération a démarré (située au début), l’ordre dans lequel les fichiers ont été traités et la durée totale du processus (située à la fin). Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.
 
-    Par exemple, dans la build Visual C#, l’option [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) contient le code d’avertissement (1762) que vous avez spécifié précédemment dans cette rubrique, ainsi que les trois autres avertissements.
+    Par exemple, dans la build Visual C#, l’option [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) contient le code d’avertissement (1762) que vous avez spécifié précédemment dans cette rubrique, ainsi que les trois autres avertissements.
 
-    Dans la build Visual Basic, [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) n’inclut pas d’avertissements à exclure, donc aucun avertissement ne s’affiche.
+    Dans la build Visual Basic, [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) n’inclut pas d’avertissements à exclure, donc aucun avertissement ne s’affiche.
 
    > [!TIP]
    > Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches Ctrl + F.
@@ -264,6 +264,6 @@ Pour plus d'informations, voir [Procédure : Modifier le répertoire de sortie 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Génération d’un projet (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Présentation de la précompilation de projets d’application web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Procédure pas à pas : Génération d’un projet (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Présentation de la précompilation de projets d’application web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)

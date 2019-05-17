@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051454"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703615"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procédure : spécifier les paramètres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +49,6 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers p
 
 ## <a name="see-also"></a>Voir aussi
  [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
- [Modifier & Continuer, Débogage, Boîte de dialogue Options](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
- [Macros courantes pour les propriétés et les commandes de génération](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+ [Macros courantes pour les propriétés et les commandes de génération](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892903"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459109"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Utiliser des composants 3D dans votre jeu ou votre application
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procédure : Utiliser des composants 3D dans votre jeu ou votre application
 
 Cet article explique comment vous pouvez utiliser Visual Studio pour traiter des composants 3D et les inclure dans vos builds.
 
@@ -34,7 +34,9 @@ Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Pour ajouter les personnalisations de la build à votre projet
 
-1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Dépendances de build** > **Personnalisations de la build**. La boîte de dialogue **Fichiers de personnalisation de la build Visual C++** apparaît.
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Dépendances de build** > **Personnalisations de la build**.
+
+   La boîte de dialogue **Fichiers de personnalisation de la build Visual C++** apparaît.
 
 2. Sous **Fichiers de personnalisation de la build disponibles**, cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans le tableau suivant :
 
@@ -47,11 +49,14 @@ Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio
 3. Sélectionnez le bouton **OK** .
 
 ## <a name="include-assets-in-your-build"></a>Inclure des composants dans votre build
- Maintenant que votre projet sait quels types de composants 3D vous voulez utiliser, l’étape suivante consiste à lui indiquer les fichiers qui sont des composants 3D et à quels types de composants ils correspondent.
+
+Maintenant que votre projet sait quels types de ressources 3D vous voulez utiliser, l’étape suivante consiste à lui indiquer les fichiers qui sont des ressources 3D et à quels types de ressources ils correspondent.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Pour ajouter une ressource à votre build
 
-1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource apparaît.
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés**.
+
+   La boîte de dialogue **Page de propriétés** de la ressource apparaît.
 
 2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.
 
@@ -76,11 +81,13 @@ Vous pouvez définir les propriétés du pipeline de contenu de chaque fichier d
 
 ### <a name="to-configure-content-pipeline-properties"></a>Pour configurer les propriétés du pipeline de contenu
 
-1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource apparaît.
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés**.
+
+   La boîte de dialogue **Page de propriétés** de la ressource apparaît.
 
 2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.
 
-3. Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple, **Pipeline de contenu d’image** pour les ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.
+3. Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple **Pipeline de contenu d’image** pour des ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.
 
 4. Sélectionnez le bouton **OK** .
 

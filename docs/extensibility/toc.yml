@@ -7,13 +7,15 @@
 - name: 'Créez votre première extension : Hello World'
   href: extensibility-hello-world.md
 - name: "Nouveautés du kit SDK Visual Studio\_2019"
-  href: whats-new-visual-studio-2019-sdk.md
   items:
+    - name: "Nouveautés du kit SDK Visual Studio\_2019"
+      href: whats-new-visual-studio-2019-sdk.md
     - name: Extensions chargées automatiquement de façon synchrone
       href: synchronously-autoloaded-extensions.md
 - name: "Nouveautés du kit SDK Visual Studio\_2017"
-  href: what-s-new-in-the-visual-studio-2017-sdk.md
   items:
+    - name: "Nouveautés du kit SDK Visual Studio\_2017"
+      href: what-s-new-in-the-visual-studio-2017-sdk.md
     - name: Changements cassants dans l’extensibilité
       href: breaking-changes-2017.md
     - name: Prise en charge de Ngen dans VSIX v3
@@ -29,13 +31,15 @@
 - name: Extensions aller-retour pour Visual Studio
   href: how-to-roundtrip-VSIXs.md
 - name: Protocole de serveur de langage
-  href: language-server-protocol.md
   items:
-    - name: Ajout d’une extension du protocole de serveur de langage
+    - name: Protocole de serveur de langage
+      href: language-server-protocol.md
+    - name: Ajouter une extension du protocole de serveur de langage
       href: adding-an-lsp-extension.md
 - name: Ouvrir un dossier
-  href: open-folder.md
   items:
+    - name: Ouvrir un dossier
+      href: open-folder.md
     - name: Espaces de travail
       href: workspaces.md
     - name: Contextes de fichier
@@ -47,8 +51,9 @@
     - name: Générer
       href: workspace-build.md
 - name: Étendre les menus et les commandes
-  href: extending-menus-and-commands.md
   items:
+    - name: Étendre les menus et les commandes
+      href: extending-menus-and-commands.md
     - name: Création d’une extension avec une commande de menu
       href: creating-an-extension-with-a-menu-command.md
     - name: Ajout d’un menu à la barre de menus de Visual Studio
@@ -72,8 +77,9 @@
     - name: Localisation des commandes de menu
       href: localizing-menu-commands.md
 - name: Ajouter des commandes à des barres d’outils
-  href: adding-commands-to-toolbars.md
   items:
+    - name: Ajouter des commandes à des barres d’outils
+      href: adding-commands-to-toolbars.md
     - name: Ajout d’une barre d’outils
       href: adding-a-toolbar.md
     - name: Ajout d’une barre d’outils à une fenêtre d’outil
@@ -85,8 +91,9 @@
     - name: Ajout dynamique d’éléments de menu
       href: dynamically-adding-menu-items.md
 - name: Étendre et personnaliser des fenêtres Outil
-  href: extending-and-customizing-tool-windows.md
   items:
+    - name: Étendre et personnaliser des fenêtres Outil
+      href: extending-and-customizing-tool-windows.md
     - name: Création d’une extension avec une fenêtre d’outil
       href: creating-an-extension-with-a-tool-window.md
     - name: Ajout d’une fenêtre d’outil
@@ -110,13 +117,15 @@
     - name: Création et gestion de boîtes de dialogue modales
       href: creating-and-managing-modal-dialog-boxes.md
 - name: Extensions de l’éditeur et du service de langage
-  href: editor-and-language-service-extensions.md
   items:
+    - name: Extensions de l’éditeur et du service de langage
+      href: editor-and-language-service-extensions.md
     - name: Création d’une extension avec un modèle d’élément d’éditeur
       href: creating-an-extension-with-an-editor-item-template.md
     - name: Étendre l’éditeur et les services de langage
-      href: extending-the-editor-and-language-services.md
       items:
+        - name: Étendre l’éditeur et les services de langage
+          href: extending-the-editor-and-language-services.md
         - name: Bien démarrer avec les extensions du service de langage et de l’éditeur
           href: getting-started-with-language-service-and-editor-extensions.md
         - name: Dans l’éditeur
@@ -160,8 +169,9 @@
         - name: "Procédure pas à pas\_: Accès à l’objet DTE à partir d’une extension de l’éditeur"
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Créer des éditeurs et des concepteurs personnalisés
-      href: creating-custom-editors-and-designers.md
       items:
+        - name: Créer des éditeurs et des concepteurs personnalisés
+          href: creating-custom-editors-and-designers.md
         - name: "Procédure pas à pas\_: Création d’un éditeur personnalisé"
           href: walkthrough-creating-a-custom-editor.md
         - name: "Procédure pas à pas\_: Ajout de fonctionnalités à un éditeur personnalisé"
@@ -173,8 +183,9 @@
         - name: Couleurs de syntaxe dans les éditeurs personnalisés
           href: syntax-coloring-in-custom-editors.md
         - name: Données de documents et affichage de documents dans les éditeurs personnalisés
-          href: document-data-and-document-view-in-custom-editors.md
           items:
+            - name: Données de documents et affichage de documents dans les éditeurs personnalisés
+              href: document-data-and-document-view-in-custom-editors.md
             - name: Prise en charge de vues de document multiples
               href: supporting-multiple-document-views.md
             - name: Incorporation simplifiée
@@ -194,8 +205,9 @@
         - name: Guide de migration de l’extensibilité du concepteur XAML
           href: xaml-designer-extensibility-migration.md
 - name: Étendre des projets
-  href: extending-projects.md
   items:
+    - name: Étendre des projets
+      href: extending-projects.md
     - name: 'Création d’un système de projet de base, partie 1'
       href: creating-a-basic-project-system-part-1.md
     - name: 'Création d’un système de projet de base, partie 2'
@@ -213,15 +225,17 @@
     - name: Gestion de projets Windows universels
       href: managing-universal-windows-projects.md
 - name: Étendre des solutions
-  href: extending-solutions.md
   items:
+    - name: Étendre des solutions
+      href: extending-solutions.md
     - name: Étendre le filtre de l’Explorateur de solutions
       href: extending-the-solution-explorer-filter.md
     - name: Gestion du chargement de projet dans une solution
       href: managing-project-loading-in-a-solution.md
 - name: Créer des modèles de projet et d’élément personnalisés
-  href: creating-custom-project-and-item-templates.md
   items:
+    - name: Créer des modèles de projet et d’élément personnalisés
+      href: creating-custom-project-and-item-templates.md
     - name: "Mise à niveau de modèles de projet et d’élément personnalisés pour Visual Studio\_2017"
       href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
     - name: Résolution des problèmes de découverte de modèles
@@ -229,8 +243,9 @@
     - name: Utiliser des Assistants avec des modèles de projet
       href: how-to-use-wizards-with-project-templates.md
     - name: "Référence du schéma de modèle Visual\_Studio"
-      href: visual-studio-template-schema-reference.md
       items:
+        - name: "Référence du schéma de modèle Visual\_Studio"
+          href: visual-studio-template-schema-reference.md
         - name: "AppliesTo, élément (modèles Visual\_Studio)"
           href: appliesto-element-visual-studio-templates.md
         - name: 'Assembly, élément (modèles Visual Studio)'
@@ -338,8 +353,9 @@
     - name: "Informations de référence sur le schéma de manifeste de modèle Visual\_Studio"
       href: visual-studio-template-manifest-schema-reference.md
 - name: Étendre des options et des paramètres utilisateur
-  href: extending-user-settings-and-options.md
   items:
+    - name: Étendre des options et des paramètres utilisateur
+      href: extending-user-settings-and-options.md
     - name: Création d’une page d’options
       href: creating-an-options-page.md
     - name: Création d’une catégorie de paramètres
@@ -351,15 +367,17 @@
     - name: Écriture dans la banque de paramètres utilisateur
       href: writing-to-the-user-settings-store.md
 - name: Étendre des propriétés et la fenêtre Propriétés
-  href: extending-properties-and-the-property-window.md
   items:
+    - name: Étendre des propriétés et la fenêtre Propriétés
+      href: extending-properties-and-the-property-window.md
     - name: Exposition des propriétés dans la fenêtre Propriétés
       href: exposing-properties-to-the-properties-window.md
     - name: Obtention des propriétés d’un projet
       href: getting-project-properties.md
 - name: Étendre d’autres parties de Visual Studio
-  href: extending-other-parts-of-visual-studio.md
   items:
+    - name: Étendre d’autres parties de Visual Studio
+      href: extending-other-parts-of-visual-studio.md
     - name: Création d’une extension avec un package VSPackage
       href: creating-an-extension-with-a-vspackage.md
     - name: Création d’un contrôle de boîte à outils WPF
@@ -369,8 +387,9 @@
     - name: Étendre la barre d’état
       href: extending-the-status-bar.md
     - name: Création d’une page de démarrage personnalisée
-      href: creating-a-custom-start-page.md
       items:
+        - name: Création d’une page de démarrage personnalisée
+          href: creating-a-custom-start-page.md
         - name: "Procédure pas à pas\_: Ajout de code XAML personnalisé à la page de démarrage"
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Ajout d’un contrôle utilisateur à la page de démarrage
@@ -386,29 +405,33 @@
 - name: Extensibilité de projet Visual Studio C++
   href: visual-cpp-project-extensibility.md
 - name: Lignes directrices pour l’expérience utilisateur dans Visual Studio
-  href: ux-guidelines/visual-studio-user-experience-guidelines.md
   items:
+    - name: Lignes directrices pour l’expérience utilisateur dans Visual Studio
+      href: ux-guidelines/visual-studio-user-experience-guidelines.md
     - name: Éléments principaux de l’expérience utilisateur
       href: ux-guidelines/ux-essentials-for-visual-studio.md
     - name: Polices et mise en forme
       href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
     - name: Couleurs et styles
-      href: ux-guidelines/colors-and-styling-for-visual-studio.md
       items:
+        - name: Couleurs et styles
+          href: ux-guidelines/colors-and-styling-for-visual-studio.md
         - name: Couleurs partagées
           href: ux-guidelines/shared-colors-for-visual-studio.md
         - name: Informations de référence sur les valeurs de couleur
           href: ux-guidelines/color-value-reference-for-visual-studio.md
     - name: Images et icônes
-      href: ux-guidelines/images-and-icons-for-visual-studio.md
       items:
+        - name: Images et icônes
+          href: ux-guidelines/images-and-icons-for-visual-studio.md
         - name: Dictionnaire de langage Visual
           href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
     - name: Menus et commandes
       href: ux-guidelines/menus-and-commands-for-visual-studio.md
     - name: Modèles d’interaction
-      href: ux-guidelines/interaction-patterns-for-visual-studio.md
       items:
+        - name: Modèles d’interaction
+          href: ux-guidelines/interaction-patterns-for-visual-studio.md
         - name: Modèles d’application
           href: ux-guidelines/application-patterns-for-visual-studio.md
         - name: Modèles de contrôle communs
@@ -432,8 +455,9 @@
 - name: Catalogue et service d’images
   href: image-service-and-catalog.md
 - name: Utiliser et fournir des services
-  href: using-and-providing-services.md
   items:
+    - name: Utiliser et fournir des services
+      href: using-and-providing-services.md
     - name: Obtenir un service
       href: how-to-get-a-service.md
     - name: Fournir un service
@@ -443,8 +467,9 @@
     - name: Dépanner les services
       href: how-to-troubleshoot-services.md
 - name: Gérer VSPackages
-  href: managing-vspackages.md
   items:
+    - name: Gérer VSPackages
+      href: managing-vspackages.md
     - name: Instance expérimentale
       href: the-experimental-instance.md
     - name: Inscription et désinscription de VSPackages
@@ -466,8 +491,9 @@
 - name: Interpréteur de commande (intégré ou isolé)
   href: 'https://vspartner.com/pages/vsshells'
 - name: "Livrer des extensions Visual\_Studio"
-  href: shipping-visual-studio-extensions.md
   items:
+    - name: "Livrer des extensions Visual\_Studio"
+      href: shipping-visual-studio-extensions.md
     - name: Modèle de projet VSIX
       href: vsix-project-template.md
     - name: Bien démarrer avec le modèle de projet VSIX
@@ -481,40 +507,45 @@
     - name: Ajouter une dépendance à un package VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: Anatomie d’un package VSIX
-      href: anatomy-of-a-vsix-package.md
       items:
+        - name: Anatomie d’un package VSIX
+          href: anatomy-of-a-vsix-package.md
         - name: "Informations de référence sur le schéma\_2.0 d’extension VSIX"
           href: vsix-extension-schema-2-0-reference.md
         - name: 'Structure du fichier [Content_types].xml'
           href: the-structure-of-the-content-types-dot-xml-file.md
         - name: Concepteur de manifeste VSIX
           href: vsix-manifest-designer.md
-    - name: Localisation de packages VSIX
-      href: localizing-vsix-packages.md
+    - name: Localiser les packages VSIX
       items:
+        - name: Localiser les packages VSIX
+          href: localizing-vsix-packages.md
         - name: "Informations de référence sur le schéma du module linguistique VSIX\_2.0"
           href: vsix-language-pack-schema-2-0-reference.md
     - name: Mettre à jour une extension Visual Studio
       href: how-to-update-a-visual-studio-extension.md
-    - name: Préparation d’extensions au déploiement de Windows Installer
+    - name: Préparer des extensions pour le déploiement de Windows Installer
       href: preparing-extensions-for-windows-installer-deployment.md
-    - name: Signature de packages VSIX
+    - name: Signer les packages VSIX
       href: signing-vsix-packages.md
     - name: Private Galleries
-      href: private-galleries.md
       items:
+        - name: Private Galleries
+          href: private-galleries.md
         - name: Créer un flux Atom pour une galerie privée
           href: how-to-create-an-atom-feed-for-a-private-gallery.md
         - name: Gérer une galerie privée à l’aide des paramètres du Registre
           href: how-to-manage-a-private-gallery-by-using-registry-settings.md
-    - name: Prise en charge de plusieurs versions de Visual Studio
-      href: supporting-multiple-versions-of-visual-studio.md
+    - name: Prendre en charge plusieurs versions de Visual Studio
       items:
+        - name: Prendre en charge plusieurs versions de Visual Studio
+          href: supporting-multiple-versions-of-visual-studio.md
         - name: Choix entre les VSPackages partagés et à versions gérées
           href: choosing-between-shared-and-versioned-vspackages.md
         - name: Inscription d’extensions de nom de fichier pour les déploiements côte à côte
-          href: registering-file-name-extensions-for-side-by-side-deployments.md
           items:
+            - name: Inscription d’extensions de nom de fichier pour les déploiements côte à côte
+              href: registering-file-name-extensions-for-side-by-side-deployments.md
             - name: À propos des extensions de nom de fichier
               href: about-file-name-extensions.md
             - name: Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
@@ -523,20 +554,24 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: Gestion des associations de fichiers côte à côte
               href: managing-side-by-side-file-associations.md
-    - name: Recherche de Visual Studio
+    - name: Localiser Visual Studio
       href: locating-visual-studio.md
+    - name: Lancer Visual Studio à l’aide de DTE
+      href: launch-visual-studio-dte.md
 - name: "Dans le kit SDK Visual\_Studio"
   href: internals/toc.yml
 - name: Prise en charge du SDK Visual Studio
   href: support-for-the-visual-studio-sdk.md
 - name: "Informations de référence sur le SDK Visual\_Studio"
-  href: visual-studio-sdk-reference.md
   items:
+    - name: "Informations de référence sur le SDK Visual\_Studio"
+      href: visual-studio-sdk-reference.md
     - name: IntelliSenseHostFlags
       href: intellisensehostflags.md
     - name: Informations de référence sur le schéma XML VSCT
-      href: vsct-xml-schema-reference.md
       items:
+        - name: Informations de référence sur le schéma XML VSCT
+          href: vsct-xml-schema-reference.md
         - name: Élément CommandTable
           href: commandtable-element.md
         - name: Élément Extern
@@ -546,51 +581,61 @@
         - name: Élément Define
           href: define-element.md
         - name: Élément Commands
-          href: commands-element.md
           items:
+            - name: Élément Commands
+              href: commands-element.md
             - name: Élément Menus
-              href: menus-element.md
               items:
+                - name: Élément Menus
+                  href: menus-element.md
                 - name: Élément Menu
                   href: menu-element.md
             - name: Élément Groups
-              href: groups-element.md
               items:
+                - name: Élément Groups
+                  href: groups-element.md
                 - name: Élément Group
                   href: group-element.md
             - name: Élément Buttons
-              href: buttons-element.md
               items:
+                - name: Élément Buttons
+                  href: buttons-element.md
                 - name: Élément Button
                   href: button-element.md
             - name: Élément Bitmaps
-              href: bitmaps-element.md
               items:
+                - name: Élément Bitmaps
+                  href: bitmaps-element.md
                 - name: Élément Bitmap
                   href: bitmap-element.md
             - name: Élément Combos
-              href: combos-element.md
               items:
+                - name: Élément Combos
+                  href: combos-element.md
                 - name: Élément Combo
                   href: combo-element.md
         - name: Élément CommandPlacements
-          href: commandplacements-element.md
           items:
+            - name: Élément CommandPlacements
+              href: commandplacements-element.md
             - name: Élément CommandPlacement
               href: commandplacement-element.md
         - name: Élément VisibilityConstraints
-          href: visibilityconstraints-element.md
           items:
+            - name: Élément VisibilityConstraints
+              href: visibilityconstraints-element.md
             - name: Élément VisibilityItem
               href: visibilityitem-element.md
         - name: Élément KeyBindings
-          href: keybindings-element.md
           items:
+            - name: Élément KeyBindings
+              href: keybindings-element.md
             - name: Élément KeyBinding
               href: keybinding-element.md
         - name: Élément UsedCommands
-          href: usedcommands-element.md
           items:
+            - name: Élément UsedCommands
+              href: usedcommands-element.md
             - name: Élément UsedCommand
               href: usedcommand-element.md
         - name: 'Parent, élément'
@@ -598,8 +643,9 @@
         - name: Élément Icon
           href: icon-element.md
         - name: Élément Strings
-          href: strings-element.md
           items:
+            - name: Élément Strings
+              href: strings-element.md
             - name: Élément ButtonText
               href: buttontext-element.md
             - name: Élément CommandName
@@ -607,18 +653,21 @@
         - name: Élément Command Flag
           href: command-flag-element.md
         - name: Élément Symbols
-          href: symbols-element.md
           items:
+            - name: Élément Symbols
+              href: symbols-element.md
             - name: Élément GuidSymbol
-              href: guidsymbol-element.md
               items:
+                - name: Élément GuidSymbol
+                  href: guidsymbol-element.md
                 - name: Élément IDSymbol
                   href: idsymbol-element.md
         - name: Attributs conditionnels du schéma XML VSCT
           href: vsct-xml-schema-conditional-attributes.md
     - name: GUID et constantes dans le SDK Visual Studio
-      href: guids-and-constants-in-the-visual-studio-sdk.md
       items:
+        - name: GUID et constantes dans le SDK Visual Studio
+          href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: GUID de l’IDE
           href: ide-guids.md
         - name: Constantes de l’IDE
@@ -626,11 +675,13 @@
     - name: Constantes COM dans le code managé
       href: com-constants-in-managed-code.md
     - name: Plug-ins de contrôle de code source
-      href: source-control-plug-ins.md
       items:
+        - name: Plug-ins de contrôle de code source
+          href: source-control-plug-ins.md
         - name: Fonctions d’API du plug-in de contrôle de code source
-          href: source-control-plug-in-api-functions.md
           items:
+            - name: Fonctions d’API du plug-in de contrôle de code source
+              href: source-control-plug-in-api-functions.md
             - name: Fonction SccAdd
               href: sccadd-function.md
             - name: Fonction SccAddFilesFromSCC
@@ -708,8 +759,9 @@
             - name: Fonction SccWillCreateSccFile
               href: sccwillcreatesccfile-function.md
         - name: Fonctions de rappel implémentées par l’IDE
-          href: callback-functions-implemented-by-the-ide.md
           items:
+            - name: Fonctions de rappel implémentées par l’IDE
+              href: callback-functions-implemented-by-the-ide.md
             - name: LPTEXTOUTPROC
               href: lptextoutproc.md
             - name: POPLISTFUNC
@@ -721,8 +773,9 @@
             - name: OPTNAMECHANGEPFN
               href: optnamechangepfn.md
         - name: Énumérateurs
-          href: enumerators.md
           items:
+            - name: Énumérateurs
+              href: enumerators.md
             - name: Énumérateur de code de commande
               href: command-code-enumerator.md
             - name: Énumérateur de message
@@ -750,8 +803,9 @@
         - name: Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
     - name: Commutateurs de ligne de commande (SDK Visual Studio)
-      href: command-line-switches-visual-studio-sdk.md
       items:
+        - name: Commutateurs de ligne de commande (SDK Visual Studio)
+          href: command-line-switches-visual-studio-sdk.md
         - name: Commutateurs de ligne de commande Devenv pour le développement VSPackage
           href: devenv-command-line-switches-for-vspackage-development.md
         - name: Ajout de commutateurs de ligne de commande
@@ -759,8 +813,9 @@
     - name: Gestion des erreurs et valeurs de retour
       href: error-handling-and-return-values.md
     - name: Objets
-      href: objects.md
       items:
+        - name: Objets
+          href: objects.md
         - name: Objet VSCodeWindow
           href: vscodewindow-object.md
         - name: Objet VSCodeWindowManager
@@ -772,8 +827,9 @@
     - name: Glossaire du SDK Visual Studio
       href: visual-studio-sdk-glossary.md
 - name: Créer un Kit de développement logiciel
-  href: creating-a-software-development-kit.md
   items:
+    - name: Créer un Kit de développement logiciel
+      href: creating-a-software-development-kit.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic"
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C++"
@@ -781,8 +837,9 @@
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de JavaScript"
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Extensibilité de .NET Compiler Platform (« Roslyn »)
-  href: dotnet-compiler-platform-roslyn-extensibility.md
   items:
+    - name: Extensibilité de .NET Compiler Platform (« Roslyn »)
+      href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Bien démarrer avec les analyseurs Roslyn
       href: getting-started-with-roslyn-analyzers.md
     - name: Analyseurs Roslyn et bibliothèque de code pour ImmutableArrays

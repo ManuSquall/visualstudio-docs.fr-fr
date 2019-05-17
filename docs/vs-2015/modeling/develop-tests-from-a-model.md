@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042052"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692250"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
  Les tests de sous-systèmes appliquent les mêmes principes aux composants majeurs d'un système. Chaque composant est testé indépendamment des autres composants. Les tests de sous-systèmes sont axés sur le comportement visible au niveau des interfaces utilisateur ou des API du composant.  
   
- Pour plus d’informations sur l’exécution des tests, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Pour plus d’informations sur l’exécution des tests, consultez [test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Dérivation de tests système à partir d'un modèle d'impératifs  
  Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Pour lier des tests à un cas d'usage  
   
-1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Une grande partie des accesseurs et des programmes de mise à jour seront déjà disponibles via l'API normale de l'application, mais vous devrez peut-être écrire certaines fonctions supplémentaires pour activer les tests. Ces accesseurs et programmes de mise à jour supplémentaires sont parfois appelés « instrumentation de test ». Comme ils dépendent de la conception interne du système, il incombe aux développeurs du système de les fournir, tandis que les testeurs écrivent le code des tests conformément au modèle d'impératifs.  
   
- Quand vous écrivez des tests automatisés, vous pouvez utiliser des tests génériques pour encapsuler les accesseurs et les programmes de mise à jour. Pour plus d’informations, consultez [création d’un Test automatisé qui lance un exécutable à l’aide de Tests génériques](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Quand vous écrivez des tests automatisés, vous pouvez utiliser des tests génériques pour encapsuler les accesseurs et les programmes de mise à jour. Pour plus d’informations, consultez [création d’un Test automatisé qui lance un exécutable à l’aide de Tests génériques](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Tests de règles métier  
  Certains impératifs ne sont directement liés à aucun cas d'usage. Par exemple, l'entreprise DinnerNow permet aux clients de choisir parmi de nombreux Menus, mais elle exige que dans chaque Commande, tous les Éléments choisis proviennent d'un même Menu. Cette règle métier peut être exprimée comme un invariant relatifs aux associations entre Commandes, Menus et Éléments dans le modèle de classes d'impératifs.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Pour lier des tests à un élément de modèle ou à une relation  
   
-1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.  
   

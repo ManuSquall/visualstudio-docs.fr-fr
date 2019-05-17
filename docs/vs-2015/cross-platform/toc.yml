@@ -1,0 +1,78 @@
+- name: Développement mobile multiplateforme
+  items:
+    - name: Développement mobile multiplateforme
+      href: cross-platform-mobile-development-in-visual-studio.md
+    - name: Visual Studio et Xamarin
+      items:
+        - name: Visual Studio et Xamarin
+          href: visual-studio-and-xamarin.md
+        - name: Configurer et installer
+          href: setup-and-install.md
+        - name: En savoir plus sur le développement pour appareils mobiles avec Xamarin
+          href: learn-about-mobile-development-with-xamarin.md
+        - name: Vérifier votre environnement Xamarin
+          href: verify-your-xamarin-environment.md
+        - name: Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio
+          href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
+        - name: Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
+          href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
+        - name: Application Lifecycle Management (ALM) avec les applications Xamarin
+          href: application-lifecycle-management-alm-with-xamarin-apps.md
+        - name: 'Configuration, installation et vérifications pour les utilisateurs Mac'
+          href: setup-install-and-verifications-for-mac-users.md
+    - name: Visual Studio Tools pour Apache Cordova
+      href: visual-studio-tools-for-apache-cordova.md
+    - name: Visual Studio Tools pour Unity
+      items:
+        - name: Visual Studio Tools pour Unity
+          href: visual-studio-tools-for-unity.md
+        - name: Vue d'ensemble
+          href: overview-of-visual-studio-tools-for-unity.md
+        - name: Prise en main
+          href: getting-started-with-visual-studio-tools-for-unity.md
+        - name: Utilisation de Visual Studio Tools pour Unity
+          href: using-visual-studio-tools-for-unity.md
+        - name: Programmation de Visual Studio Tools pour Unity
+          items:
+            - name: Programmation de Visual Studio Tools pour Unity
+              href: programming-visual-studio-tools-for-unity.md
+            - name: "Exemple\_: génération du fichier projet"
+              href: customize-project-files-created-by-vstu.md
+            - name: "Exemple\_: rappel de journal"
+              href: share-the-unity-log-callback-with-vstu.md
+        - name: Problèmes connus et résolution
+          href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+        - name: Journal des modifications
+          href: change-log-visual-studio-tools-for-unity.md
+        - name: Application Lifecycle Management (ALM) avec les applications Unity
+          href: application-lifecycle-management-alm-with-unity-apps.md
+    - name: Visual C++ pour le développement mobile multiplateforme
+      items:
+        - name: Visual C++ pour le développement mobile multiplateforme
+          href: visual-cpp-for-cross-platform-mobile-development.md
+        - name: Installer Visual C++ pour le développement mobile multiplateforme
+          items:
+            - name: Installer Visual C++ pour le développement mobile multiplateforme
+              href: install-visual-cpp-for-cross-platform-mobile-development.md
+            - name: Installer et configurer des outils de génération en utilisant iOS
+              href: install-and-configure-tools-to-build-using-ios.md
+        - name: Créer une application Android Native Activity
+          href: create-an-android-native-activity-app.md
+        - name: Générer une application OpenGL ES sur Android et iOS
+          href: build-an-opengl-es-application-on-android-and-ios.md
+        - name: Importer un projet Xcode
+          href: import-an-xcode-project.md
+        - name: Synchroniser les modifications entre Xcode et Visual Studio
+          href: sync-changes-between-xcode-and-visual-studio.md
+        - name: Exemples de développement mobile multiplateforme
+          href: cross-platform-mobile-development-examples.md
+    - name: Développer des applications pour la plateforme Windows universelle (UWP)
+      href: develop-apps-for-the-universal-windows-platform-uwp.md
+    - name: Émulateur Visual Studio pour Android
+      items:
+        - name: Émulateur Visual Studio pour Android
+          href: visual-studio-emulator-for-android.md
+        - name: System requirements for the Visual Studio Emulator for Android
+          href: system-requirements-for-the-visual-studio-emulator-for-android.md
+        - name: Résolution des problèmes liés à l’émulateur Visual Studio pour Android
+          href: troubleshooting-the-visual-studio-emulator-for-android.md

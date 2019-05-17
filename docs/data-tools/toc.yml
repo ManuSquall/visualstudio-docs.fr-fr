@@ -20,14 +20,15 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Outils Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Outils de jeu de données
-      href: dataset-tools-in-visual-studio.md
+    - name: DataSets
       items:
-        - name: Datasets typés et non typés
+        - name: Outils DataSet
+          href: dataset-tools-in-visual-studio.md
+        - name: DataSets typés et non typés
           href: typed-vs-untyped-datasets.md
         - name: Vue d’ensemble de TableAdapters
           href: fill-datasets-by-using-tableadapters.md
-        - name: Utilisation de datasets dans des applications multiniveaux
+        - name: Utilisation de DataSets dans des applications multiniveau
           href: work-with-datasets-in-n-tier-applications.md
     - name: Projets de bases de données et applications de la couche Données (DAC)
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
@@ -37,18 +38,21 @@
   items:
     - name: Créer une base de données
       href: create-a-sql-database-by-using-a-designer.md
-    - name: Ajouter des connexions
-      href: add-new-connections.md
+    - name: Connexions
       items:
+        - name: Ajouter des connexions
+          href: add-new-connections.md
         - name: Enregistrer et modifier des chaînes de connexion
           href: how-to-save-and-edit-connection-strings.md
         - name: Se connecter à des données dans une base de données Access
           href: connect-to-data-in-an-access-database-windows-forms.md
     - name: Ajouter des sources de données .NET
       href: add-new-data-sources.md
-    - name: Utiliser des outils LINQ to SQL
-      href: linq-to-sql-tools-in-visual-studio2.md
+    - name: Outils LINQ to SQL
       items:
+        - name: Vue d'ensemble
+          displayName: LINQ to SQL tools
+          href: linq-to-sql-tools-in-visual-studio2.md
         - name: Modifier le type de retour d’une méthode DataContext
           href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
         - name: Créer des méthodes DataContext mappées aux procédures stockées
@@ -69,18 +73,19 @@
           href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
         - name: Activer et désactiver la pluralisation
           href: how-to-turn-pluralization-on-and-off-o-r-designer.md
-    - name: Utilisation d’outils de jeu de données
+    - name: Utiliser les outils DataSet
       items:
-        - name: Créer et configurer des datasets dans Visual Studio
-          href: create-and-configure-datasets-in-visual-studio.md
+        - name: Créer des DataSets
           items:
-            - name: Créer des relations entre les datasets
+            - name: Créer et configurer des DataSets
+              href: create-and-configure-datasets-in-visual-studio.md
+            - name: Créer des relations entre des DataSets
               href: relationships-in-datasets.md
-            - name: Créer un dataset à l’aide du Concepteur de DataSet
+            - name: Créer un DataSet à l’aide du Concepteur de DataSet
               href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
             - name: Créer un DataTable à l’aide du Concepteur de DataSet
               href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
-        - name: TableAdapters
+        - name: Configurer des TableAdapters
           items:
             - name: Créer et configurer des TableAdapters
               href: create-and-configure-tableadapters.md
@@ -88,19 +93,21 @@
               href: create-parameterized-tableadapter-queries.md
             - name: Accéder directement à la base de données avec un TableAdapter
               href: directly-access-the-database-with-a-tableadapter.md
-            - name: Désactiver les contraintes pendant le remplissage d’un dataset
+            - name: Désactiver les contraintes pendant le remplissage d’un DataSet
               href: turn-off-constraints-while-filling-a-dataset.md
             - name: Étendre les fonctionnalités d’un TableAdapter
               href: extend-the-functionality-of-a-tableadapter.md
-        - name: Lire les données XML dans un dataset
+        - name: Lire des données XML dans un DataSet
           href: read-xml-data-into-a-dataset.md
-        - name: Modifier des données dans des datasets
+        - name: Modifier les données dans des DataSets
           href: edit-data-in-datasets.md
-        - name: Valider les données dans des datasets
+        - name: Valider les données dans des DataSets
           href: validate-data-in-datasets.md
         - name: Enregistrer les données dans la base de données
-          href: save-data-back-to-the-database.md
           items:
+            - name: Vue d'ensemble
+              displayName: Save data to database
+              href: save-data-back-to-the-database.md
             - name: Insérer de nouveaux enregistrements dans une base de données
               href: insert-new-records-into-a-database.md
             - name: Mettre à jour les données à l’aide d’un TableAdapter
@@ -109,9 +116,10 @@
               href: hierarchical-update.md
             - name: Gérer une exception d’accès concurrentiel
               href: handle-a-concurrency-exception.md
-            - name: Enregistrer des données à l’aide d’une transaction
-              href: save-data-by-using-a-transaction.md
+            - name: Transactions
               items:
+                - name: Enregistrer des données à l’aide d’une transaction
+                  href: save-data-by-using-a-transaction.md
                 - name: "Procédure pas à pas\_: Enregistrer des données dans une transaction"
                   href: save-data-in-a-transaction.md
             - name: Enregistrer des données dans une base de données (plusieurs tables)
@@ -120,31 +128,33 @@
               href: save-data-from-an-object-to-a-database.md
             - name: Enregistrer des données avec les méthodes DBDirect du TableAdapter
               href: save-data-with-the-tableadapter-dbdirect-methods.md
-            - name: Enregistrer un dataset au format XML
+            - name: Enregistrer un DataSet au format XML
               href: save-a-dataset-as-xml.md
-        - name: Interroger des datasets
+        - name: Interroger des DataSets
           href: query-datasets.md
         - name: applications multiniveaux
           items:
-            - name: Ajouter la validation à un dataset multiniveau
+            - name: Ajouter une validation à un DataSet multiniveau
               href: add-validation-to-an-n-tier-dataset.md
-            - name: Ajouter du code à des datasets dans des applications multiniveaux
+            - name: Ajouter un code à des DataSets dans des applications multiniveau
               href: add-code-to-datasets-in-n-tier-applications.md
             - name: Ajouter du code aux TableAdapters dans des applications multiniveaux
               href: add-code-to-tableadapters-in-n-tier-applications.md
-            - name: Séparer les datasets et les TableAdapters en différents projets
+            - name: Séparer des DataSets et des TableAdapters en différents projets
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: Lier des contrôles à des sources de données
-      href: bind-controls-to-data-in-visual-studio.md
+    - name: Contrôles
       items:
+        - name: Lier des contrôles à des sources de données
+          href: bind-controls-to-data-in-visual-studio.md
         - name: Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
           href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
         - name: Ajouter des contrôles personnalisés à la fenêtre Sources de données
           href: add-custom-controls-to-the-data-sources-window.md
-        - name: Lier des contrôles WPF à des données
-          href: bind-wpf-controls-to-data-in-visual-studio.md
+        - name: Contrôles WPF
           items:
-            - name: Lier des contrôles WPF à un dataset
+            - name: Lier des contrôles WPF à des données
+              href: bind-wpf-controls-to-data-in-visual-studio.md
+            - name: Lier des contrôles WPF à un DataSet
               href: bind-wpf-controls-to-a-dataset.md
             - name: "Lier des contrôles WPF à un service de données\_WCF"
               href: bind-wpf-controls-to-a-wcf-data-service.md
@@ -154,9 +164,10 @@
               href: display-related-data-in-wpf-applications.md
             - name: Lier des contrôles à des images d’une base de données
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Lier des contrôles Windows Forms à des données
-          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+        - name: Contrôles Windows Forms
           items:
+            - name: Lier des contrôles Windows Forms à des données
+              href: bind-windows-forms-controls-to-data-in-visual-studio.md
             - name: Filtrer et trier des données dans une application Windows Forms
               href: filter-and-sort-data-in-a-windows-forms-application.md
             - name: Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
@@ -178,8 +189,10 @@
         - name: Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
           href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
     - name: Services Windows Communication Foundation et WCF Data Services
-      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
       items:
+        - name: Présentation de WCF dans Visual Studio
+          displayName: Windows Communication Foundation Services and WCF Data Services
+          href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
         - name: Travailler avec un modèle conceptuel
           href: working-with-a-conceptual-model-wcf-data-services.md
         - name: Se connecter à des données dans un service
@@ -207,9 +220,9 @@
         - name: Héritage de classes de donnés
           href: data-class-inheritance-o-r-designer.md
         - name: Messages du Concepteur O/R
-          href: o-r-designer-messages.md
           items:
             - name: Impossible de supprimer la classe sélectionnée car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext
+              displayName: O/R Designer messages
               href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
             - name: La chaîne de connexion contient des informations d'identification comprenant un mot de passe en texte clair et n'utilise pas la sécurité intégrée
               href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md

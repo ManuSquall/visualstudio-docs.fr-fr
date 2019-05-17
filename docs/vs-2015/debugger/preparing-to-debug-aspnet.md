@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696109"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Préparation d'un débogage ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Cette section décrit comment configurer [!INCLUDE[vsprvs](../includes/vsprvs-md
  [Prérequis pour le débogage à distance d’applications web](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Répertorie les conditions préalables pour le débogage d'une application Web sur un serveur distant.  
   
- [Guide pratique pour Configurer IIS sur Windows Server 2003](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Guide pratique pour Configurer IIS sur Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Présente les étapes de configuration spéciales nécessaires à la configuration requise pour le débogage de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sur [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Guide pratique pour déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ Cette section décrit comment configurer [!INCLUDE[vsprvs](../includes/vsprvs-md
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [ASP.NET et la Configuration IIS](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [ASP.NET et la Configuration IIS](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

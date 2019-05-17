@@ -1,12 +1,15 @@
 - name: Concevoir des interfaces utilisateur
-  href: designing-user-interfaces.md
   items:
-    - name: Concevoir en XAML dans Visual Studio
-      href: designing-xaml-in-visual-studio.md
+    - name: Orientation de l’outil
+      href: designing-user-interfaces.md
+    - name: XAML
       items:
+        - name: Concevoir en XAML dans Visual Studio
+          href: designing-xaml-in-visual-studio.md
         - name: "Concepteur\_XAML"
-          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
+            - name: Vue d'ensemble
+              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Utiliser des éléments
               href: working-with-elements-in-xaml-designer.md
             - name: Organiser les objets en conteneurs de disposition
@@ -22,8 +25,9 @@
             - name: Erreurs et avertissements XAML
               href: xaml-errors-warnings.md
         - name: Blend pour Visual Studio
-          href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
+            - name: Vue d'ensemble
+              href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Insérer des contrôles et modifier leur comportement
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
             - name: 'Insérer des images, des vidéos et des clips audio'
@@ -37,8 +41,9 @@
             - name: Afficher des données
               href: display-data-in-blend.md
             - name: Raccourcis clavier et touches de modification
-              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
+                - name: Vue d'ensemble
+                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
                 - name: Raccourcis clavier
                   href: keyboard-shortcuts-in-blend.md
                 - name: Touches de modification de la planche graphique
@@ -50,23 +55,24 @@
             - name: Produits et services d’accessibilité pour Blend
               href: accessibility-products-and-services-blend.md
     - name: Windows Presentation Foundation (WPF)
-      href: getting-started-with-wpf.md
       items:
+        - name: Prise en main
+          href: getting-started-with-wpf.md
         - name: Vue d’ensemble de WPF
           href: introduction-to-wpf.md
-        - name: Liaison de données WPF avec LINQ to XML
-          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: Liaison de données
           items:
+            - name: Liaison de données WPF avec LINQ to XML
+              href: wpf-data-binding-with-linq-to-xml-overview.md
             - name: Propriétés dynamiques LINQ to XML
-              href: linq-to-xml-dynamic-properties.md
               items:
+                - name: Vue d'ensemble
+                  href: linq-to-xml-dynamic-properties.md
                 - name: Propriétés dynamiques de la classe XAttribute
-                  href: xattribute-class-dynamic-properties.md
                   items:
                     - name: Value (propriété dynamique XAttribute)
                       href: value-xattribute-dynamic-property.md
                 - name: Propriétés dynamiques de la classe XElement
-                  href: xelement-class-dynamic-properties.md
                   items:
                     - name: Attribute (propriété dynamique XElement)
                       href: attribute-xelement-dynamic-property.md
@@ -80,40 +86,43 @@
                       href: value-xelement-dynamic-property.md
                     - name: Xml (propriété dynamique XElement)
                       href: xml-xelement-dynamic-property.md
-                - name: Exemple
-                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Exemples
                   items:
+                    - name: Liaison de données WPF à l’aide de LINQ to XML
+                      href: wpf-data-binding-using-linq-to-xml-example.md
                     - name: Générer et exécuter l’exemple LinqToXmlDataBinding
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
                     - name: "Procédure pas à pas\_: Liaison de données LINQ to XML"
                       href: walkthrough-linqtoxmldatabinding-example.md
-                      items:
-                        - name: Code source L2DBForm.xaml
-                          href: l2dbform-xaml-source-code.md
-                        - name: Code source L2DBForm.xaml.cs
-                          href: l2dbform-xaml-cs-source-code.md
-    - name: Utiliser des composants 3D pour les jeux et les applications
-      href: working-with-3-d-assets-for-games-and-apps.md
+                    - name: Code source L2DBForm.xaml
+                      href: l2dbform-xaml-source-code.md
+                    - name: Code source L2DBForm.xaml.cs
+                      href: l2dbform-xaml-cs-source-code.md
+    - name: Composants 3D
       items:
-        - name: Utiliser des textures et des images
-          href: working-with-textures-and-images.md
+        - name: Utiliser des composants 3D pour les jeux et les applications
+          href: working-with-3-d-assets-for-games-and-apps.md
+        - name: "Procédure\_: Utiliser des composants 3D dans votre jeu ou votre application"
+          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Textures et images
           items:
+            - name: Utiliser des textures et des images
+              href: working-with-textures-and-images.md
             - name: éditeur d'images
               href: image-editor.md
             - name: Exemples de l’éditeur d’images
-              href: image-editor-examples.md
               items:
                 - name: Créer une texture de base
                   href: how-to-create-a-basic-texture.md
                 - name: Créer et modifier des niveaux MIP
                   href: how-to-create-and-modify-mip-levels.md
-        - name: Utiliser des modèles 3D
-          href: working-with-3-d-models.md
+        - name: Modèles 3D
           items:
+            - name: Utiliser des modèles 3D
+              href: working-with-3-d-models.md
             - name: Éditeur de modèle
               href: model-editor.md
             - name: Exemples de l’éditeur de modèle
-              href: model-editor-examples.md
               items:
                 - name: Créer un modèle 3D de base
                   href: how-to-create-a-basic-3-d-model.md
@@ -123,14 +132,16 @@
                   href: how-to-model-3-d-terrain.md
                 - name: Appliquer un nuanceur à un modèle 3D
                   href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Utiliser des nuanceurs
-          href: working-with-shaders.md
+        - name: Nuanceurs
           items:
+            - name: Utiliser des nuanceurs
+              href: working-with-shaders.md
             - name: Concepteur Shader
               href: shader-designer.md
             - name: Nœuds du concepteur Shader
-              href: shader-designer-nodes.md
               items:
+                - name: Vue d'ensemble
+                  href: shader-designer-nodes.md
                 - name: Nœuds de constantes
                   href: constant-nodes.md
                 - name: Nœuds de paramètres
@@ -144,7 +155,6 @@
                 - name: Nœuds de filtres
                   href: filter-nodes.md
             - name: Exemples du concepteur Shader
-              href: shader-designer-examples.md
               items:
                 - name: Créer un nuanceur de couleur de base
                   href: how-to-create-a-basic-color-shader.md
@@ -162,8 +172,7 @@
                   href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
                 - name: Exporter un nuanceur
                   href: how-to-export-a-shader.md
-        - name: Utiliser des composants 3D dans votre jeu ou votre application
-          href: using-3-d-assets-in-your-game-or-app.md
+        - name: Exporter des textures
           items:
             - name: Exporter une texture qui contient des mipmaps
               href: how-to-export-a-texture-that-contains-mipmaps.md

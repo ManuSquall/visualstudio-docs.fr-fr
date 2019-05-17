@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683014"
 ---
 # <a name="msbuild-reference"></a>Référence MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650298"
  Répertorie les caractères qui peuvent devoir être insérés dans une « séquence d’échappement » pour être interprétés correctement. Une séquence d’échappement est une série de caractères qui signifie que ce qui suit est une autre interprétation.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Vue d’ensemble de MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Présente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
+ [Vue d’ensemble de MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Présente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
   
  <xref:Microsoft.Build.Conversion>  
  Contient des informations de référence sur l’espace de noms Conversion.  

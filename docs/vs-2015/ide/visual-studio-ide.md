@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 90a7611e0b8895b0ed3540cae861ebafec9ae4bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780677"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698628"
 ---
 # <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Vous pouvez utiliser Visual Studio pour créer de nombreux types d'applications,
 
 - Des jeux et des applications graphiques pour différents appareils Windows, notamment la Xbox, utilisant DirectX.
 
-Visual Studio prend en charge par défaut C#, C et C++, JavaScript, F# et Visual Basic. Visual Studio fonctionne avec et s’intègre parfaitement aux applications tierces comme Unity via l’extension [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) et à Apache Cordova via [Visual Studio Tools pour Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Vous pouvez étendre Visual Studio vous-même en créant des outils personnalisés qui effectuent des tâches spécialisées.
+Visual Studio prend en charge par défaut C#, C et C++, JavaScript, F# et Visual Basic. Visual Studio fonctionne avec et s’intègre parfaitement aux applications tierces comme Unity via l’extension [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) et à Apache Cordova via [Visual Studio Tools pour Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Vous pouvez étendre Visual Studio vous-même en créant des outils personnalisés qui effectuent des tâches spécialisées.
 
 Si vous n’avez jamais utilisé Visual Studio, découvrez les principes de base avec nos didacticiels et procédures pas à pas [Get Started Developing with Visual Studio](../ide/get-started-developing-with-visual-studio.md) .
 
-Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2015, consultez [What ' s New in Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
+Si vous voulez découvrir les nouvelles fonctionnalités de Visual Studio 2015, consultez [Nouveautés de Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Installation de Visual Studio
  Vous pouvez déterminer quelle édition de Visual Studio vous convient en consultant la rubrique [Éditions Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
@@ -74,7 +74,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 ## <a name="connecting-to-visual-studio-team-services-and-team-foundation-server"></a>Connexion à Visual Studio Team Services et à Team Foundation Server
  Visual Studio Team Services (VSTS) est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un dépôt de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications. Team Foundation Server (TFS) 2015 est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
- Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre Team Explorer. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir Team Explorer depuis **lancement rapide** ou dans le menu principal à partir de **vue &#124; Team Explorer** ou à partir de **équipe &#124; gérer les connexions**.  Pour plus d’informations sur Visual Studio Team Services, consultez [www.visualstudio.com](https://www.visualstudio.com/). Pour plus d’informations sur Team Foundation Server, consultez [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs).
+ Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre Team Explorer. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir Team Explorer à partir de **Lancement rapide** ou du menu principal, à partir d’**Affichage &#124; Team Explorer** ou d’**Équipe &#124; Gérer les connexions**.  Pour plus d’informations sur Visual Studio Team Services, consultez [www.visualstudio.com](https://www.visualstudio.com/). Pour plus d’informations sur Team Foundation Server, consultez [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs).
 
  L’illustration suivante montre le volet Team Explorer pour une solution qui est hébergée dans VSTS :
 
@@ -85,7 +85,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
  Un *modèle de projet* est une collection de fichiers de code prédéfinis et de paramètres de configuration qui vous permettent de créer rapidement un type spécifique d'application. Visual Studio est fourni avec de nombreux modèles de projet et, si aucun des modèles par défaut ne vous convient, vous pouvez créer vos propres modèles. Après avoir créé un projet avec un modèle, vous pouvez commencer à y écrire votre propre code, dans les fichiers fournis ou dans des fichiers que vous ajoutez. Pour plus d’informations, consultez [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md). L'illustration suivante montre la boîte de dialogue Nouveau projet, avec les modèles de projet disponibles pour les applications ASP.NET.
 
- ![Visual Studio de boîte de dialogue Nouveau projet](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
+ ![Boîte de dialogue Nouveau projet de Visual Studio](../ide/media/vs2015-newprojectdialog.png "VS2015_NewProjectDialog")
 
 ## <a name="designing-the-user-interface"></a>Conception de l'interface utilisateur
  Un concepteur est un outil intuitif qui vous permet de créer une interface utilisateur sans écrire de code. Vous pouvez faire glisser des contrôles d’interface utilisateur, comme des zones de liste, des calendriers et des boutons depuis la fenêtre [Toolbox](../ide/reference/toolbox.md) sur une surface de conception qui représente la fenêtre ou la boîte de dialogue. Vous pouvez redimensionner et réorganiser les éléments sans écrire de code. Les concepteurs sont inclus pour tous les types de projets ayant une interface utilisateur.
@@ -102,14 +102,14 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 |![](../designers/media/b1-4.png "B1_4")|**Contrôles de l'aire de conception** Utilisez ces contrôles (**Afficher la grille d'accrochage**, **Aligner sur le quadrillage** et **Activer/Désactiver l'alignement sur les lignes d'alignement**) pour définir les options d'alignement. L'alignement est utile pour caler des objets les uns sur les autres ou sur des lignes régulièrement espacées sur l'aire de conception.|
 |![](../designers/media/b1-5.png "B1_5")|**Éditeur de code** Modifie manuellement le code XAML, C#, C++ ou Visual Basic dans l'Éditeur de code.|
 
- Pour plus d’informations, consultez [XAML de conception dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).
+ Pour plus d’informations, consultez [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="writing-navigating-and-understanding-code"></a>Écriture, navigation et compréhension du code
  Si vous êtes développeur, la fenêtre de l'éditeur est l'endroit où vous passerez probablement le plus de temps. Visual Studio comprend des éditeurs pour C#, C++, Visual Basic, JavaScript, XML, HTML, CSS et F#, tandis que des tiers offrent des éditeurs (et des compilateurs) sous forme de plug-ins pour de nombreux autres langages.
 
- Vous pouvez modifier des fichiers individuels dans l’éditeur de texte en cliquant sur **fichier &#124; Open &#124; fichier.** . Pour modifier des fichiers dans un projet ouvert, cliquez sur le nom du fichier dans l'Explorateur de solutions. Le code est colorisé, et vous pouvez personnaliser le jeu de couleurs en tapant « Couleurs » dans la zone de lancement rapide. Vous pouvez avoir un grand nombre de fenêtres d'éditeur de texte ouvertes en même temps sous forme d'onglets. Vous pouvez fractionner chaque fenêtre indépendamment. Vous pouvez également exécuter l'éditeur de texte en mode plein écran.
+ Pour modifier des fichiers individuels dans l’éditeur de texte, cliquez sur **Fichier &#124; Ouvrir &#124; Fichier**. . Pour modifier des fichiers dans un projet ouvert, cliquez sur le nom du fichier dans l'Explorateur de solutions. Le code est colorisé, et vous pouvez personnaliser le jeu de couleurs en tapant « Couleurs » dans la zone de lancement rapide. Vous pouvez avoir un grand nombre de fenêtres d'éditeur de texte ouvertes en même temps sous forme d'onglets. Vous pouvez fractionner chaque fenêtre indépendamment. Vous pouvez également exécuter l'éditeur de texte en mode plein écran.
 
- ![GreetingsConsoleApp.cpp dans l’éditeur de code](../ide/media/c-ide-editorlinenumberswordwrapon.png "IDE_EditorLineNumbersWordWrapOn C ++")
+ ![GreetingsConsoleApp.cpp dans l’éditeur de code](../ide/media/c-ide-editorlinenumberswordwrapon.png "C++IDE_EditorLineNumbersWordWrapOn")
 
  L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et leur utilisation n'est pas obligatoire (tapez « Éditeur » dans la zone Lancement rapide) pour activer ou désactiver les fonctionnalités. Voici quelques-unes des fonctionnalités de productivité courantes :
 
@@ -133,7 +133,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
 8. L'option de menu contextuel **Atteindre la définition** vous amène directement à l'endroit où la fonction ou l'objet est défini. D'autres commandes de navigation sont également disponibles en cliquant avec le bouton droit dans l'éditeur.
 
-9. Un outil connexe, l'[Explorateur d'objets](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), vous permet d'examiner les assemblys .NET ou Windows Runtime sur votre système, pour voir les types qu'ils contiennent ainsi que les méthodes et les propriétés que ces types contiennent.
+9. Un outil connexe, l'[Explorateur d'objets](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), vous permet d'examiner les assemblys .NET ou Windows Runtime sur votre système, pour voir les types qu'ils contiennent ainsi que les méthodes et les propriétés que ces types contiennent.
 
      ![Explorateur d’objets montrant le composant System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -143,7 +143,7 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
 La génération d'un projet consiste à compiler le code source et à effectuer les étapes nécessaires pour produire l'exécutable. Les opérations de génération varient selon les langages, et les sites web standard n'ont pas de génération du tout. Quel que soit le type de projet, le menu Générer est l'emplacement standard pour ces commandes. Pour compiler et exécuter votre code avec une seule frappe au clavier, appuyez sur F5. Chaque compilateur est entièrement configurable via l'IDE. La barre d'outils Générer vous permet de spécifier s'il faut générer une version de débogage de votre programme, avec des symboles et une vérification des erreurs supplémentaire activée pour la prise en charge des points d'arrêt et le pas à pas dans le débogueur, ou bien une version Release, que vous livrerez au final aux clients. Vous pouvez configurer davantage de paramètres de génération, ainsi que de nombreux autres paramètres sur la page des propriétés pour un projet. Cliquez avec le bouton droit sur le nœud du projet dans l'Explorateur de solutions, puis choisissez Propriétés. Vous pouvez également effectuer des générations à partir de la ligne de commande.
 
-La sortie de la génération, incluant des messages d’erreur ou de réussite, apparaît dans la fenêtre **Sortie**. Le **liste d’erreurs** présente des informations détaillées sur les erreurs de build.
+La sortie de la génération, incluant des messages d’erreur ou de réussite, apparaît dans la fenêtre **Sortie**. La **liste d’erreurs** fournit des informations détaillées sur les erreurs de génération.
 
 ## <a name="debugging-your-code"></a>Débogage de votre code
  Le débogueur de pointe de Visual Studio vous permet de déboguer du code en cours d'exécution dans votre projet local, sur un appareil distant ou sur un émulateur, comme ceux destinés à Android ou Windows Phone. Vous pouvez parcourir le code instruction par instruction et examiner les variables au fil de la progression, vous pouvez avancer pas à pas dans des applications multithread, et vous pouvez définir des points d'arrêt qui sont atteints seulement quand une condition spécifiée est vraie. Tout ceci peut être configuré dans l'éditeur de code lui-même, ce qui vous permet de ne pas quitter le contexte de votre code.
@@ -154,7 +154,7 @@ La sortie de la génération, incluant des messages d’erreur ou de réussite, 
 
  La [Immediate Window](../ide/reference/immediate-window.md) vous permet de taper une expression et de voir son résultat immédiatement.
 
- La fenêtre [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) enregistre chaque appel de méthode et d'autres événements dans un programme .NET en cours d'exécution et peut vous aider à localiser rapidement l'origine d'un problème.
+ La fenêtre [IntelliTrace](https://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) enregistre chaque appel de méthode et d'autres événements dans un programme .NET en cours d'exécution et peut vous aider à localiser rapidement l'origine d'un problème.
 
  Pour plus d'informations, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 
@@ -164,10 +164,10 @@ La sortie de la génération, incluant des messages d’erreur ou de réussite, 
  ![Explorateur de tests unitaires](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analyse de la qualité et des performances du code
- Visual Studio inclut des outils puissants pour l'analyse statique et à l'exécution. Les outils d'analyse statique vous aident à identifier les erreurs potentielles dans la conception, la globalisation, l'interopérabilité, la performance, la sécurité et d'autres catégories. Les tests de performance, ou de profilage, mesurent la façon dont votre programme s'exécute. Vous accédez à ces outils à partir du menu **Analyse** . Pour plus d'informations, consultez [Amélioration de la qualité avec les outils de diagnostic de Visual Studio](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Visual Studio inclut des outils puissants pour l'analyse statique et à l'exécution. Les outils d'analyse statique vous aident à identifier les erreurs potentielles dans la conception, la globalisation, l'interopérabilité, la performance, la sécurité et d'autres catégories. Les tests de performance, ou de profilage, mesurent la façon dont votre programme s'exécute. Vous accédez à ces outils à partir du menu **Analyse** . Pour plus d'informations, consultez [Amélioration de la qualité avec les outils de diagnostic de Visual Studio](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Connexion à des services cloud et à des bases de données
- La fenêtre [Explorateur de serveurs](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) de Visual Studio montre les ressources de tous les comptes gérés sous votre compte de personnalisation (celui avec lequel vous vous êtes connecté), y compris des instances SQL Server, Azure, Salesforce.com, Office 365 et des sites web.
+ La fenêtre [Explorateur de serveurs](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) de Visual Studio montre les ressources de tous les comptes gérés sous votre compte de personnalisation (celui avec lequel vous vous êtes connecté), y compris des instances SQL Server, Azure, Salesforce.com, Office 365 et des sites web.
 
  ![Explorateur de serveurs](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
@@ -184,7 +184,7 @@ La sortie de la génération, incluant des messages d’erreur ou de réussite, 
  Vous pouvez utiliser les outils d'architecture et de modélisation de Visual Studio pour concevoir et modéliser votre application. Ces outils vous aident à visualiser la structure, le comportement et les relations du code. Vous pouvez créer des modèles à différents niveaux de détails tout au long du cycle de vie d'application dans le cadre de votre processus de développement. Vous pouvez suivre les spécifications, les tâches, les cas de test, les bogues et les autres travaux associés à vos modèles, en liant des éléments de modèle aux éléments de travail de Team Foundation Server et de votre plan de développement. Pour plus d'informations, consultez [Concevoir et modéliser votre application](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="extending-visual-studio-through-the-visual-studio-sdk"></a>Extension de Visual Studio via le Kit de développement logiciel (SDK) Visual Studio
- Visual Studio est une plateforme extensible. Une extension de Visual Studio est un outil personnalisé qui s'intègre à l'IDE. Vous pouvez ajouter des extensions de tiers ou créer les vôtres. Pour plus d'informations, consultez [Développement d'extensions Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
+ Visual Studio est une plateforme extensible. Une extension de Visual Studio est un outil personnalisé qui s'intègre à l'IDE. Vous pouvez ajouter des extensions de tiers ou créer les vôtres. Pour plus d'informations, consultez [Développement d'extensions Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).
 
  Les [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md) constituent une référence essentielle pour ceux qui écrivent des extensions pour Visual Studio. Ces recommandations spécifiques à une plateforme comprennent des informations sur la conception des boîtes de dialogue, sur les polices, les couleurs, les icônes, les contrôles communs et sur d'autres modèles d'interaction, qui permettront à votre nouvelle fonctionnalité de s'intégrer sans problème à Visual Studio.
 
@@ -196,7 +196,7 @@ La sortie de la génération, incluant des messages d’erreur ou de réussite, 
 |[Guide pratique pour se déplacer dans l’IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Bien démarrer avec le développement dans Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|[Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md)|[Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)|
-|[Outils de profilage](../profiling/profiling-tools.md)|[Améliorer la qualité du code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
+|[Outils de profilage](../profiling/profiling-tools.md)|[Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[Conception des interfaces utilisateur](../designers/designing-user-interfaces.md)|[Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)|
 |[Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)|[Déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md)|
 |[Prise en charge de l’IDE de Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)|[Sécurité](../ide/security-in-visual-studio.md)|

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674372"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 - Comparer des instantanés pour trouver la cause initiale des problèmes de mémoire.  
   
-  Cette rubrique explique comment utiliser l’outil Utilisation de la mémoire pour analyser une application XAML universelle Windows. Si vous voulez analyser l’utilisation de la mémoire dans des applications universelles Windows qui utilisent JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Cette rubrique explique comment utiliser l’outil Utilisation de la mémoire pour analyser une application XAML universelle Windows. Si vous voulez analyser l’utilisation de la mémoire dans des applications universelles Windows qui utilisent JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Démarrer une session de diagnostic d’utilisation de la mémoire  
   
@@ -204,7 +204,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 ## <a name="see-also"></a>Voir aussi  
  [Mémoire JavaScript](../profiling/javascript-memory.md)   
- [Analyser les performances des applications](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Exécuter les outils de performance et diagnostic](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Exécuter les outils de performance et diagnostic](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

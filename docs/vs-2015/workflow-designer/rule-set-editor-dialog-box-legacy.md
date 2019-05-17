@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703193"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
   
   La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
   
-  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Fonctions d'arrêt et de mise à jour  
  **Actions Then :** et **Actions Else :** expressions prennent en charge **Halt** et **mise à jour** fonctions. À utiliser le **Halt** de fonction, tapez **Halt** dans un **puis Action :** ou **Action Else :** zone de texte. Le **Halt** entraîne l’exécution de jeu de règles arrêter immédiatement, et le contrôle retourne au code appelant. Vous utilisez le **mise à jour** fonction avec le chaînage avant.  

@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788471"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461380"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 
@@ -24,7 +24,7 @@ Les tests unitaires offrent aux développeurs et aux testeurs un moyen rapide de
 
 Les outils de test unitaire incluent :
 
-* **Explorateur de tests**&mdash; vous pouvez exécuter des tests unitaires et voir leurs résultats dans **l’Explorateur de tests**. Vous pouvez utiliser n’importe quel framework de tests unitaires, y compris un framework tiers, qui a un adaptateur pour **l’Explorateur de tests**.
+* **Explorateur de tests**&mdash; Vous pouvez exécuter des tests unitaires et voir leurs résultats dans l’**Explorateur de tests**. Vous pouvez utiliser n’importe quel framework de tests unitaires, y compris un framework tiers, qui a un adaptateur pour **l’Explorateur de tests**.
 
 * **Framework de tests unitaires Microsoft pour le code managé**&mdash; le framework de tests unitaires Microsoft pour le code managé est installé avec Visual Studio et fournit un framework pour tester le code .NET.
 
@@ -38,18 +38,18 @@ Vous pouvez également utiliser [IntelliTest](../test/generate-unit-tests-for-yo
 
 ## <a name="key-tasks"></a>Tâches clés
 
-Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unitaires :
+Utilisez les articles suivants pour comprendre et créer des tests unitaires :
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
-|**Démarrages rapides et procédures pas à pas :** consultez les rubriques suivantes pour apprendre à effectuer des tests unitaires dans Visual Studio avec des exemples de code.|-   [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Ajouter des tests unitaires à des applications C++ existantes](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Tests unitaires avec l’Explorateur de tests :** découvrez comment l’Explorateur de tests vous permet de créer des tests unitaires plus productifs et plus efficaces.|-   [Concepts de base des tests unitaires](../test/unit-test-basics.md)<br />-   [Créer un projet de test unitaire](../test/create-a-unit-test-project.md)<br />-   [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)<br />-   [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)|
-|**Effectuer des tests unitaires sur du code C++**|-   [Écrire des tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++](../test/writing-unit-tests-for-c-cpp.md)|
-|**Isolation des tests unitaires**|-   [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée :** découvrez la fonctionnalité de couverture du code des outils de test de Visual Studio.|-   [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Effectuer une analyse des contraintes et des performances avec des tests de charge :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application.|-   [Tests de charge (Azure Test Plans et TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Définir des barrières qualité :** vous pouvez créer des barrières qualité pour que les tests soient exécutés avant que le code ne soit archivé ou fusionné, afin de garantir la qualité du code.|-   [Stratégies d’archivage (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
-|**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**Démarrages rapides et procédures pas à pas :** Découvrez des informations sur les tests unitaires dans Visual Studio à partir d’exemples de code.|- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Guide pratique pour ajouter des tests unitaires à des applications C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Tests unitaires avec l’Explorateur de tests :** découvrez comment l’Explorateur de tests vous permet de créer des tests unitaires plus productifs et plus efficaces.|- [Concepts de base des tests unitaires](../test/unit-test-basics.md)<br />- [Créer un projet de test unitaire](../test/create-a-unit-test-project.md)<br />- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)<br />- [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)|
+|**Test unitaire de code C++**|- [Écrire des tests unitaires pour C/C++](../test/writing-unit-tests-for-c-cpp.md)|
+|**Isolation des tests unitaires**|- [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée :** découvrez la fonctionnalité de couverture du code des outils de test de Visual Studio.|- [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Effectuer une analyse des contraintes et des performances avec des tests de charge :** Découvrez comment créer un test de charge pour isoler les problèmes de contraintes et de performances de votre application.|- [Démarrage rapide : Créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md)<br />- [Tests de charge (Azure Test Plans et TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Définir des barrières qualité :** Découvrez comment créer des barrières qualité pour que les tests soient exécutés avant que le code ne soit archivé ou fusionné.|- [Stratégies d’archivage (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Définir les options de test :** Découvrez comment configurer des options de test, par exemple où les résultats des tests sont stockés.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentation de référence des API
 

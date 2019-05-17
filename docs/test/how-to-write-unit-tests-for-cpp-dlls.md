@@ -1,18 +1,18 @@
 ---
 title: Écrire des tests unitaires pour des DLL C++
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821045"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226082"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821045"
 
   1. Créez un projet de test unitaire natif.
 
+      ::: moniker range="vs-2019"
+
+      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « test » dans la zone de recherche. Choisissez ensuite **Projet de test unitaire natif**.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
       1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++**.
+
+      ::: moniker-end
 
   2. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Références**. La fenêtre **Propriétés** du projet s’ouvre.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821045"
 
   1. Créez un projet de test unitaire natif.
 
-      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire natif**.
+      ::: moniker range="vs-2019"
+
+      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « test » dans la zone de recherche. Choisissez ensuite **Projet de test unitaire natif**.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++**.
+
+      ::: moniker-end
 
   2. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Propriétés**.
 

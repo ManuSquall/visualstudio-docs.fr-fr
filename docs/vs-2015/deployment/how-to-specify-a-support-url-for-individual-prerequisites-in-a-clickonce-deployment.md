@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679972"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procédure : Spécifiez une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
       </dependency>  
     ```  
   
-5. Optionnel. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (le fichier .application) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
+5. Facultatif. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (le fichier .application) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
   
 6. Pour une condition préalable de .NET Framework 4, ajoutez le `supportUrl` attribut le `compatibleFrameworks` élément :  
   
@@ -85,7 +85,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
  L’URL du support technique ne figure pas dans la boîte de dialogue si l’application est marquée pour s’exécuter en mode de confiance partielle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mage.exe (outil Manifest Generation and Editing)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Procédure pas à pas : Déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > élément](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   

@@ -11,12 +11,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0eb1d870b3858255fe6b4a0cf9a255d9d1df8c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e17164976062ec916074c6210be6ae42e8ea1d03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699507"
 ---
 # <a name="automation-model-overview"></a>Modèle d’automatisation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Le modèle automation se compose d’un ensemble d’objets par rapport à laque
  ![Le graphique d’objet Automation Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Objets automation Visual Studio  
   
- Pour plus d’informations, consultez [étendre l’environnement Visual Studio](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
+ Pour plus d’informations, consultez [étendre l’environnement Visual Studio](https://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
   
  L’environnement fournit un modèle pour les différentes zones fonctionnelles. Par exemple, il est un modèle de code pour divers éléments que vous pouvez trouver dans le code. Il existe un modèle de document pour différents éléments de document. Une zone, la zone de projet est un intérêt particulier pour les fournisseurs de VSPackage. Il est probable que vos nouveaux types de projet pour contribuer au modèle automation dans la même façon que [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] et [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] contribuer au modèle automation. Que le processus est décrit dans [fournissant l’automatisation pour VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
   
@@ -43,7 +43,7 @@ Objets automation Visual Studio
   
 - Build  
   
-  Pour plus d’informations sur l’automatisation, consultez [automatisation et extensibilité pour Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Ce document et les documents, il fournit des liens pour vous aider à prendre des décisions concernant la façon dont vous devez fournir l’automation pour votre VSPackage.  
+  Pour plus d’informations sur l’automatisation, consultez [automatisation et extensibilité pour Visual Studio](https://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Ce document et les documents, il fournit des liens pour vous aider à prendre des décisions concernant la façon dont vous devez fournir l’automation pour votre VSPackage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Créer un complément](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [Guide pratique pour Créer un complément](https://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061708"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687700"
 ---
 # <a name="when-to-create-project-types"></a>Quand créer des types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Création d’un nouveau type de projet fournit une base pour la personnalisatio
 |Tâche|Description|  
 |----------|-----------------|  
 |Gestion des commandes|Un VSPackage peut gérer les commandes.|  
-|Création d’un éditeur|Éditeurs personnalisés peuvent être inscrits. Pour plus d’informations, consultez [Document Windows et les éditeurs](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Création d’un éditeur|Éditeurs personnalisés peuvent être inscrits. Pour plus d’informations, consultez [Document Windows et les éditeurs](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Propriétaire de windows|Vous pouvez créer des fenêtres Outil et document sans ajouter un nouveau type de projet.|  
 |Exposition de propriétés dans la fenêtre Propriétés|Tous les objets peuvent exposer des propriétés.|  
   
@@ -60,6 +60,6 @@ Création d’un nouveau type de projet fournit une base pour la personnalisatio
  Vous pouvez utiliser des sous-types de projet pour étendre un type de projet managé sans avoir à créer un nouveau type de projet. Sous-types de projet permettent d’agrégation COM d’étendre des projets managés écrites en Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Avec l’agrégation COM, vous pouvez réutiliser une grande partie de l’implémentation de système de projet managé et toujours personnaliser pour un scénario particulier par le biais d’agrégation et l’utilisation de la prise en charge des interfaces. Pour plus d’informations sur les sous-types de projet, consultez [sous-types de projet](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Document Windows et les éditeurs](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Document Windows et les éditeurs](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

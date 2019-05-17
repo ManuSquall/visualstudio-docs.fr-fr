@@ -1,16 +1,21 @@
 - name: Outils XML dans Visual Studio
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: Vue d'ensemble
+      href: xml-tools-in-visual-studio.md
     - name: Éditeur XML
-      href: xml-editor.md
       items:
+        - name: Vue d'ensemble
+          displayName: XML editor
+          href: xml-editor.md
         - name: Validation de documents XML
           href: xml-document-validation.md
         - name: Fonctionnalités IntelliSense de l’éditeur XML
           href: xml-editor-intellisense-features.md
         - name: extraits XML
-          href: xml-snippets.md
           items:
+            - name: Vue d'ensemble
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: Utiliser des extraits XML
               href: how-to-use-xml-snippets.md
             - name: Générer un extrait à partir d’un schéma XML
@@ -44,11 +49,14 @@
         - name: Boîte de dialogue Schémas XML
           href: xml-schemas-dialog-box.md
     - name: Concepteur de schémas XML
-      href: xml-schema-designer.md
       items:
+        - name: Vue d'ensemble
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: Explorateur de schémas XML
-          href: xml-schema-explorer.md
           items:
+            - name: Explorateur de schémas XML
+              href: xml-schema-explorer.md
             - name: Effectuer des recherches dans le jeu de schémas
               href: searching-the-schema-set.md
             - name: 'Trier, filtrer et regrouper'
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: Intégration de littéraux XML
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: Espace de travail du Concepteur de schémas XML
-          href: xml-schema-designer-workspace.md
+        - name: Espace de travail
           items:
+            - name: Présentation des vues
+              href: xml-schema-designer-workspace.md
             - name: vue de départ
               href: start-view.md
             - name: Vue de modèle de contenu
@@ -91,17 +100,19 @@
             - name: Imprimer des diagrammes
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: Exemples de fichiers XSD
-              href: sample-xsd-files.md
               items:
                 - name: schéma simple
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: Schéma de bon de commande
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: Relations
                   href: sample-xsd-file-relationships.md
     - name: Débogage XSLT
-      href: debugging-xslt.md
       items:
+        - name: Vue d'ensemble
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: "Procédure pas à pas\_: Déboguer une feuille de style XSLT"
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: Évaluer une expression XPath

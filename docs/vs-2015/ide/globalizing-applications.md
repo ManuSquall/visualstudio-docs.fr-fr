@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704326"
 ---
 # <a name="globalizing-applications"></a>Globalisation d'applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ La globalisation est le processus de conception et de développement d’un prod
  Décrit les classes de mise en forme des dates, des heures, des nombres, des devises et d’autres informations en fonction du paramètre de culture.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Globalisation des Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalisation des Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Fournit des liens vers des pages d’aide relatives à la globalisation des Windows Forms.  
   
- [Globalisation et localisation](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalisation et localisation](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Fournit des liens vers des pages d’aide relatives à la globalisation des pages Web Forms.  
   
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Décrit les concepts essentiels relatifs au développement de logiciels pour un marché international à l’aide de Visual Basic ou de Visual C#.  
   
- [Meilleures pratiques pour développer des applications mondialisables](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Meilleures pratiques pour développer des applications mondialisables](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Fournit des informations sur la programmation pour un public international, telles que les problèmes de conception et la terminologie.

@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440956"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674208"
 ---
 # <a name="link-model-elements-and-work-items"></a>Lier des éléments de modèle et des éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 1. Dans **Team Explorer**, vérifiez que vous êtes connecté au projet d'équipe où les éléments de modèle sont liés à l'élément de travail.  
   
     > [!NOTE]
-    > Pour afficher les éléments de modèles liés, vous pouvez uniquement utiliser Team Explorer. Vous ne pouvez pas utiliser Team Web Access. Vérifiez que votre espace de travail est mappé au projet de modélisation qui contient les diagrammes ou les éléments de modélisation. Si vous n'avez pas d'espace de travail, vous devez en créer un. Consultez [Dépannage](#Troubleshooting) et [Créer et utiliser des espaces de travail](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Pour afficher les éléments de modèles liés, vous pouvez uniquement utiliser Team Explorer. Vous ne pouvez pas utiliser Team Web Access. Vérifiez que votre espace de travail est mappé au projet de modélisation qui contient les diagrammes ou les éléments de modélisation. Si vous n'avez pas d'espace de travail, vous devez en créer un. Consultez [Dépannage](#Troubleshooting) et [Créer et utiliser des espaces de travail](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Ouvrez l'élément de travail et choisissez **Liens**. Sous **Lien de modèle**, ouvrez le menu contextuel de l'élément de modèle lié. Choisissez **Ouvrir un élément lié**.  
   
@@ -168,7 +168,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
   
 |**Problème**|**Causes possibles**|**Résolution**|  
 |---------------|------------------------|--------------------|  
-|L'élément de modèle que vous souhaitez lier est introuvable.|L'élément peut être sur un diagramme dans un projet de modélisation qui se trouve dans [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Vous n'avez peut-être pas d'espace de travail mappé au diagramme.|Mappez votre espace de travail au projet de modélisation et au diagramme. Si vous n'avez pas d'espace de travail, alors vous devez en créer un.<br /><br /> Le message d'erreur qui s'affiche pour ce problème contient le chemin d'accès que vous pouvez utiliser afin de mapper votre espace de travail.<br /><br /> Consultez [Créer et utiliser des espaces de travail](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|L'élément de modèle que vous souhaitez lier est introuvable.|L'élément peut être sur un diagramme dans un projet de modélisation qui se trouve dans [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Vous n'avez peut-être pas d'espace de travail mappé au diagramme.|Mappez votre espace de travail au projet de modélisation et au diagramme. Si vous n'avez pas d'espace de travail, alors vous devez en créer un.<br /><br /> Le message d'erreur qui s'affiche pour ce problème contient le chemin d'accès que vous pouvez utiliser afin de mapper votre espace de travail.<br /><br /> Consultez [Créer et utiliser des espaces de travail](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |L'élément de modèle lié est introuvable.|L'élément lié est peut-être sur un diagramme qui a été déplacé, renommé ou supprimé.|1.  Dans l’élément de travail, supprimez le lien vers l’élément de modèle.<br />2.  Créez un lien à partir de l’élément de travail vers l’élément de modèle.|  
 |L'élément de travail ne contient pas les éléments de modèle liés que vous attendez.|Un élément de travail indique un élément de couche lié uniquement si le lien a été créé depuis l'élément de travail. Si votre équipe n'utilise pas [!INCLUDE[esprscc](../includes/esprscc-md.md)], le chemin d'accès local des diagrammes sera utilisé pour créer les liens. Si le projet de modélisation et ses diagrammes se trouvent dans [!INCLUDE[esprscc](../includes/esprscc-md.md)], tous les membres de l'équipe qui peuvent accéder au projet sont en mesure de consulter les éléments liés dans les éléments de travail.|Essayez d'actualiser l'élément de travail.|  
 |La suppression d'un lien vers un élément de modèle d'un élément de travail ne supprime pas le lien de l'élément de modèle vers l'élément de travail.||Supprimez le lien vers l'élément de modèle à partir de l'élément du modèle.|  
