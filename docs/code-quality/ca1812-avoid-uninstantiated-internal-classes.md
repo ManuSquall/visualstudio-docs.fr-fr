@@ -1,6 +1,6 @@
 ---
 title: 'CA1812 : Évitez les classes internes non instanciées'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796902"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841425"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 
@@ -32,11 +32,11 @@ ms.locfileid: "62796902"
 
 ## <a name="cause"></a>Cause
 
-Une instance d'un type de niveau assembly n'est pas créée par le code au sein de l'assembly.
+Un type (de niveau assembly) interne n’est jamais instancié.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle tente de localiser un appel à un des constructeurs du type et signale une violation si aucun appel n’est trouvé.
+Cette règle tente de localiser un appel à un des constructeurs de type et signale une violation si aucun appel n’est trouvé.
 
 Les types suivants ne sont pas examinés par cette règle :
 
@@ -50,19 +50,17 @@ Les types suivants ne sont pas examinés par cette règle :
 
 - Types de tableau émis par le compilateur
 
-- Les types qui ne peuvent pas être instanciés et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
+- Les types qui ne peut pas être instanciée et qui définissent uniquement [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` en Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) méthodes.
 
-Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs portent la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
-
-Même si vous ne pouvez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil FxCop autonome externe se produit sur les constructeurs internes si chaque `friend` assembly est présent dans l’analyse.
+Si vous appliquez le <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle ne marquera pas les types qui sont marqués comme [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` en Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)), car un champ peut être utilisé par un assembly friend.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, supprimez le type ou ajoutez le code qui l’utilise. Si le type contient uniquement des méthodes statiques, ajoutez une des opérations suivantes pour le type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
+Pour corriger une violation de cette règle, supprimez le type ou ajouter du code qui l’utilise. Si le type contient uniquement `static` méthodes, ajoutez les valeurs suivantes au type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
 - Un constructeur privé pour les types qui ciblent des versions 1.0 et 1.1 du .NET Framework.
 
-- Le modificateur `static` (`Shared` en Visual Basic) pour les types qui ciblent [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- Le `static` modificateur pour C# qui ciblent des types [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] ou version ultérieure.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -70,9 +68,9 @@ Il est possible de supprimer un avertissement de cette règle. Nous vous recomma
 
 - La classe est créée par le biais des méthodes de la réflexion à liaison tardive comme <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- La classe est créée automatiquement par le runtime ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par exemple, les classes qui implémentent <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La classe est créée automatiquement par le runtime ou ASP.NET. Quelques exemples de classes créées automatiquement sont ceux qui implémentent <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- La classe est passée comme un paramètre de type générique qui a une contrainte `new`. Par exemple, l’exemple suivant génère cette règle.
+- La classe est passée comme un paramètre de type a un [ `new` contrainte](/dotnet/csharp/language-reference/keywords/new-constraint). L’exemple suivant est signalé par règle CA1812 :
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Il est possible de supprimer un avertissement de cette règle. Nous vous recomma
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  Dans ces situations, nous recommandons que vous supprimiez cet avertissement.
-
 ## <a name="related-rules"></a>Règles associées
 
-[CA1811 : Évitez le recours à code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811 : Évitez le recours à code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)
