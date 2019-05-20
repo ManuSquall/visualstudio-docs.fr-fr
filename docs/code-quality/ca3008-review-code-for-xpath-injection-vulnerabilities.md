@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806459"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841534"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008 : Passez en revue le code pour détecter les vulnérabilités de l’injection XPath
 
@@ -32,7 +32,7 @@ Entrée de demande HTTP potentiellement non fiable atteint une requête XPath.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de XPath. Construire des requêtes XPath à l’aide d’entrées non approuvées peut permettre à un attaquant à des fins malveillantes manipuler la requête pour retourner un résultat inattendu et éventuellement divulguer le contenu du fichier XML demandé. 
+Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de XPath. Construire des requêtes XPath à l’aide d’entrées non approuvées peut permettre à un attaquant à des fins malveillantes manipuler la requête pour retourner un résultat inattendu et éventuellement divulguer le contenu du fichier XML demandé.
 
 Cette règle tente de trouver des informations issues de requêtes HTTP atteint une expression XPath.
 
@@ -40,7 +40,7 @@ Cette règle tente de trouver des informations issues de requêtes HTTP atteint 
 > Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui effectue une requête XPath, cette règle ne génère un avertissement.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans `.editorconfig` fichiers.
+> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

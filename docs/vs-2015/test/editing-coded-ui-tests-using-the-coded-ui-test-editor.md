@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416505"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686572"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modification des tests codés de l'interface utilisateur à l'aide de l'éditeur de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Modifier les propriétés d'une action d'interface utilisateur
   
  Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.  
   
- Par exemple, si un serveur n’est pas disponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’>**, vous pouvez remplacer l’URL par `‘ http://Contoso2/default.aspx’`.  
+ Par exemple, si un serveur n’est pas disponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx’>**, vous pouvez remplacer l’URL par `‘http://Contoso2/default.aspx’`.  
   
  ![Propriétés d’un contrôle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modifier les propriétés d'un contrôle  
@@ -128,7 +128,7 @@ Modifier les propriétés d'un contrôle
   
 - ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.  
   
-   - ou -  
+   ou  
   
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.  
   
@@ -219,5 +219,5 @@ Modifier les propriétés d'un contrôle
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   
  [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md)   
- [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Génération d’un test codé de l’interface utilisateur à partir d’un enregistrement des actions existant](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
