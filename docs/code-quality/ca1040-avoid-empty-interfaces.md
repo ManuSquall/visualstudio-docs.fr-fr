@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 726953de0a92c0237ecaf7b724d9586a5d0f4c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25e798dac05213d8f66fe7ba3c7a737a71f6030e
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778757"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842237"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
 
@@ -58,7 +58,7 @@ Il est possible de supprimer un avertissement de cette règle lorsque l’interf
 
 Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
 
-```
+```ini
 dotnet_code_quality.ca1040.api_surface = private, internal
 ```
 

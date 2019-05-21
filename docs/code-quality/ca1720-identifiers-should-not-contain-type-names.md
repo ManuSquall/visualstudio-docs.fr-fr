@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0eb7cfeb2271b7ed01f59d4892987fb2ef72808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546568"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841792"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 
@@ -34,7 +34,7 @@ ms.locfileid: "62546568"
 
 Le nom d’un paramètre dans un membre contient un nom de type de données.
 
-- ou -
+ou
 
 Le nom d’un membre contient un nom de type de données spécifiques au langage.
 
@@ -109,7 +109,7 @@ Utilisation occasionnelle de noms de paramètres et de membres en fonction de ty
 
 Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
 
-```
+```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 

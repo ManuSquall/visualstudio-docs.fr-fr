@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807145"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841958"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 
@@ -38,7 +38,7 @@ ms.locfileid: "62807145"
 
 Le nom d’une interface ne commence pas par un « I » majuscule.
 
-- ou -
+ou
 
 Le nom d’un [paramètre de type générique](/dotnet/csharp/programming-guide/generics/generic-type-parameters) sur un type ou une méthode ne commence pas par une majuscule ' t ».
 
@@ -62,7 +62,7 @@ Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-ana
 
 Vous pouvez configurer s’il faut exclure les paramètres de type de caractère unique de cette règle. Par exemple, pour spécifier que cette règle *ne doivent pas* analyser les paramètres de type de caractère unique, ajoutez un des paires clé-valeur suivantes dans un fichier .editorconfig dans votre projet :
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
@@ -77,7 +77,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 
 Vous pouvez configurer les parties de votre base de code pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
 
-```
+```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
