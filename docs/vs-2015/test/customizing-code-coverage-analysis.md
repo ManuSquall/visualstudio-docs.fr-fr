@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686440"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
  Choisissez **Test**, **Paramètres de test**, **Sélectionner le fichier de paramètres des tests** et sélectionnez le fichier .runsettings. Le fichier apparaît dans le menu Paramètres de test. Vous pouvez le sélectionner ou l'annuler. Tant qu’il est sélectionné, votre fichier .runsettings s’applique lorsque vous utilisez **Analyser la couverture du code**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Pour personnaliser les paramètres d'exécution d'un test en ligne de commande  
- Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. Le fichier de paramètres est un paramètre de cet utilitaire. Pour plus d’informations, consultez [Utilisation de VSTest.console à partir de la ligne de commande](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. Le fichier de paramètres est un paramètre de cet utilitaire. Pour plus d’informations, consultez [Utilisation de VSTest.console à partir de la ligne de commande](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Lancez l'invite de commandes développeur Visual Studio :  
   
@@ -202,7 +202,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
   
 3. Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Sélectionnez votre fichier **.runsettings**.  
   
-   - <em>Mais **Assembly de test</em>* apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
+   - <em>Mais **Assembly de test</em>* apparaît à la place de **Source de test**. Lorsque j’essaie de définir le champ **Paramètres d’exécution**, je ne peux sélectionner que des fichiers .testsettings.*  
   
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez **[…]** à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, définissez **Test Runner** sur **Visual Studio Test Runner**.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
