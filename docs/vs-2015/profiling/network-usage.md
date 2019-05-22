@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673821"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
 1. Ouvrez le projet dans Visual Studio.  
   
-2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez Réseau, puis **Démarrer**.  
+2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez **Réseau**, puis **Démarrer**.  
   
 3. L'outil Réseau commence à collecter le trafic HTTP de votre application.  
   
@@ -74,6 +74,6 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 3. Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exécuter des outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Exécuter des outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Blog Visual Studio : Présentation s network inspector de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vidéo Channel 9 : Outils de diagnostic de Visual Studio – nouvelle Profiler de réseau](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
