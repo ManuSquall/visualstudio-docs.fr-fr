@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794094"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845992"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -20,7 +20,13 @@ Vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre
 
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
-Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig.
+
+::: moniker range="vs-2017"
+
+Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [EditorConfig dans Visual Studio pour Mac](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous 
 
 1. Modifiez le fichier comme vous le souhaitez, par exemple :
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Pour remplacer entièrement ou partiellement des paramètres EditorConfig, ajout
 
 Si vous voulez remplacer une partie des paramètres seulement, il suffit de spécifier ces paramètres dans le fichier *.editorconfig*. Seules les propriétés que vous répertoriez explicitement dans le fichier de niveau inférieur sont alors remplacées. Les autres paramètres des fichiers *.editorconfig* de niveau supérieur continuent à s’appliquer. Pour être sûr qu’_aucun_ paramètre _de_ fichiers *.editorconfig* de niveau supérieur n’est appliqué à cette partie du codebase, ajoutez la propriété ```root=true``` au fichier *.editorconfig* de niveau inférieur :
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Comme prévu, si l’on appuie sur la touche **Tab** sur la ligne suivante, quat
 
 Ajoutez un nouveau fichier appelé *.editorconfig* au projet, avec le contenu suivant. Le paramètre `[*.cs]` signifie que cette modification s’applique uniquement aux fichiers de code C# dans le projet.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 
