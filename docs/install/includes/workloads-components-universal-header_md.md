@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 048edb85742e71e6236d1491565a007bf7da84b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553763"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65848866"
 ---
 Les tableaux de cette page listent les ID que vous pouvez utiliser pour installer Visual Studio à partir de la ligne de commande ou que vous pouvez spécifier en tant que dépendance dans un manifeste VSIX. Nous ajouterons des composants supplémentaires lors de la publication des mises à jour de Visual Studio.
 
