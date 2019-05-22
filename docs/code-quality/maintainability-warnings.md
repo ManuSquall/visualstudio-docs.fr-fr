@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823554"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976164"
 ---
-# <a name="maintainability-warnings"></a>avertissements liés à la facilité de maintenance
+# <a name="maintainability-warnings"></a>Avertissements liés à la maintenabilité
 
 Avertissements de la facilité de gestion prennent en charge la gestion des bibliothèques et des applications.
 
@@ -35,7 +35,8 @@ Avertissements de la facilité de gestion prennent en charge la gestion des bibl
 | [CA1504 : Passez en revue les noms de champs trompeurs](../code-quality/ca1504-review-misleading-field-names.md) | Le nom d’un champ d’instance commence par « s_ » ou le nom de statique (partagé dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) champ commence par « m_ ». |
 | [CA1505 : Éviter le code](../code-quality/ca1505-avoid-unmaintainable-code.md) | Un type ou une méthode a une faible valeur d'indice de maintenabilité. Un faible indice de maintenabilité indique qu'un type ou qu'une méthode est probablement difficile à maintenir et qu'il/elle se prête bien à une nouvelle conception. |
 | [CA1506 : Éviter les couplages de classe excessifs](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Cette règle mesure l'accouplement de classes en comptant le nombre de références de type uniques contenues dans un type ou une méthode. |
+| [CA1507 : Utilisez nameof à la place de chaîne](../code-quality/ca1507.md) | Un littéral de chaîne est utilisé en tant qu’argument dans lequel un `nameof` expression peut être utilisée. |
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)
+- [Mesurer la complexité et la maintenabilité du Code managé](../code-quality/code-metrics-values.md)
