@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Découvrez les différences entre statique (FxCop) et l’analyse de code de package analyzer.</p>
+            html: <p>Découvrez les différences entre statique (FxCop) et l’analyse de code d’analyseur.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: "Quelle est la différence\_?"
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Installer des analyseurs FxCop
+          - href: fxcop-rule-port-status.md
+            html: <p>Répertorie les règles de FxCop analyse statique du code qui ont été portées sur les analyseurs FxCop.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: Règles migrées et unported
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: '<p>Si vous exécutez généralement l’analyse du code à partir de la ligne de commande, vous apprenez à utiliser les analyseurs à partir de la ligne de commande.</p>'
             image:

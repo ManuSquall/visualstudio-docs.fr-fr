@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 780f1c357ef4c8f8a8114689e7495f7882af9723
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875944"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205203"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Obtient les octets d’attributs personnalisés étant données le nom de l’attribut personnalisé.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszCustomAttributeName`
+## <a name="parameters"></a>Paramètres
+`pszCustomAttributeName`\
+[in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.
 
- [in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.
+`ppBlob`\
+[in, out] Tableau qui contient les octets de l’attribut personnalisé.
 
- `ppBlob`
-
- [in, out] Tableau qui contient les octets de l’attribut personnalisé.
-
- `pdwLen`
-
- [in, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` de tableau et retourne le nombre d’octets réellement écrits dans le tableau.
+`pdwLen`\
+[in, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` de tableau et retourne le nombre d’octets réellement écrits dans le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ou S_FALSE si l’attribut personnalisé n’existe pas. Sinon, retourne un code d'erreur.

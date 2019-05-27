@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458111"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198700"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Détermine l’emplacement de la référence d’assembly managé spécifié.
@@ -48,25 +48,20 @@ int ResolveAssemblyRef(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `assemName`\
+`assemName`\
+[in] Nom de l’assembly à résoudre.
 
- [in] Nom de l’assembly à résoudre.
+`assemBytes`\
+[out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets d’assembly associés à la référence.
 
- `assemBytes`\
+`assemPdb`\
+[out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les données associées à cette référence.
 
- [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets d’assembly associés à la référence.
+`assemLocation`\
+[out] Retourne l’emplacement de chemin d’accès de cette référence.
 
- `assemPdb`\
-
- [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker les données associées à cette référence.
-
- `assemLocation`\
-
- [out] Retourne l’emplacement de chemin d’accès de cette référence.
-
- `alr`\
-
- [out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement d’assembly de cette référence.
+`alr`\
+[out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement d’assembly de cette référence.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

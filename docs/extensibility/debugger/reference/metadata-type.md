@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 72434834af748ae9c11b9ac8a43d1f71848aca81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458040"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212786"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Cette structure spécifie des informations sur un type de champ extraites à partir des métadonnées.
@@ -45,15 +45,12 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>Paramètres
  `ulAppDomainID`\
-
  ID de l’application d'où provenance le symbole. Cela est utilisé pour identifier de manière unique une instance de l’application.
 
  `guidModule`\
-
  Le GUID du module qui contient ce champ.
 
  `tokClass`\
-
  ID de jeton de métadonnées de ce type.
 
  [C++] `_mdToken` est un `typedef` pour 32 bits `int`.

@@ -1,52 +1,53 @@
 ---
 title: IEnumDebugFields::Clone | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugFields::Clone
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-caps.latest.revision: 6
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 122b0d64c32f50287a8845cbd43a41834234a415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d78427fd3f5e949560be4abb4e1a55616cea859
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867275"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208107"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Cette méthode retourne une copie de l’énumération actuelle comme un objet distinct.
 
-Cette méthode retourne une copie de l’énumération actuelle comme un objet distinct.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp#  
-HRESULT Clone(  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int Clone(  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `ppEnum`  
- [out] Retourne une copie de cette énumération en tant qu’objet distinct.  
-  
-## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et la version d’origine sont distincts et peuvent être modifiées individuellement.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT Clone(
+   IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int Clone(
+   out IEnumDebugFields ppEnum
+);
+```
+
+## <a name="parameters"></a>Paramètres
+`ppEnum`\
+[out] Retourne une copie de cette énumération en tant qu’objet distinct.
+
+## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et la version d’origine sont distincts et peuvent être modifiées individuellement.
+
+## <a name="see-also"></a>Voir aussi
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07ba3b01d4e653e592ca4084b94eef9390f290ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2e366554858372f9e479f494d2bd419ebb9b2215
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871330"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202776"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 Définit les paramètres régionaux pour le fournisseur de port.
@@ -34,8 +37,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `wLangID` Identificateur de paramètres régionaux à définir.
+## <a name="parameters"></a>Paramètres
+`wLangID`\
+Identificateur de paramètres régionaux à définir.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

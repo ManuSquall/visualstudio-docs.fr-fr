@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224191"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199282"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Récupère le nombre spécifié d’octets à partir de l’objet.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `dataSize`\
+`dataSize`\
+[in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).
 
- [in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).
+`sizeGotten`\
+[out] Retourne le nombre d’octets réellement récupérées.
 
- `sizeGotten`\
-
- [out] Retourne le nombre d’octets réellement récupérées.
-
- `data`\
-
- [in, out] Tableau à remplir avec les données demandées.
+`data`\
+[in, out] Tableau à remplir avec les données demandées.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

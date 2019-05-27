@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224014"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207346"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Cette méthode mappe une position de document dans un tableau d’adresses de débogage.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pDocPos`\
+`pDocPos`\
+[in] La position du document.
 
- [in] La position du document.
+`fStatmentOnly`\
+[in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
 
- [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
-
- `ppEnumBegAddresses`\
-
- [out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
-
- `ppEnumEndAddresses`\
-
- [out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
+`ppEnumEndAddresses`\
+[out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

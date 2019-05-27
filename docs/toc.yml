@@ -231,6 +231,8 @@
               items:
                 - name: Créer des modèles de projet et d’élément
                   href: ide/creating-project-and-item-templates.md
+                - name: Ajouter des balises à un modèle
+                  href: ide/template-tags.md
                 - name: Créer des modèles de projet
                   href: ide/how-to-create-project-templates.md
                 - name: Créer des modèles à projets multiples

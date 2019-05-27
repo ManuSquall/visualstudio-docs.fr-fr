@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b163da7d37983b41cb27d8db799817376784346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a81fc53dfb9935116450bc0288feb7132bda51b0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870337"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211206"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 Récupère le programme détruire des indicateurs.
@@ -35,10 +38,9 @@ public int GetFlags(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwFlags`
-
- [out] Représente le programme détruire des indicateurs.
+## <a name="parameters"></a>Paramètres
+`pdwFlags`\
+[out] Représente le programme détruire des indicateurs.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f8ad884045939c13f56e6a527643837be94d09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bf3f68ef2b6e8ed444f090bee9ac6918652b8b1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871749"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209087"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 Détermine si un processus peut être arrêté.
@@ -36,10 +39,9 @@ HRESULT CanTerminateProcess( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pPortProcess`
-
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant la fin du processus.
+## <a name="parameters"></a>Paramètres
+`pPortProcess`\
+[in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant la fin du processus.
 
 ## <a name="return-value"></a>Valeur de retour
  Retourne `S_OK` si le processus peut être arrêté ; sinon, retourne `S_FALSE`.

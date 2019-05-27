@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1e93cfc4c8a1ddb618286f79513874f8f89a9481
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226001"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199432"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Crée un pointeur vers le type spécifié.
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pTypeField`\
+`pTypeField`\
+[in] Type pour pointer vers. Il est représenté par le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.
 
- [in] Type pour pointer vers. Il est représenté par le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.
-
- `pPtrToTypeField`\
-
- [out] Retourne le pointeur représenté par un nouveau **IDebugField** objet.
+`pPtrToTypeField`\
+[out] Retourne le pointeur représenté par un nouveau **IDebugField** objet.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875315"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207782"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Attache un moteur de débogage (dé) à un programme ou des programmes. Appelé par le Gestionnaire de session de débogage (SDM) lors de l’Allemagne est en cours d’exécution in-process pour le SDM.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pProgram`
+## <a name="parameters"></a>Paramètres
+`pProgram`\
+[in] Un tableau de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objets qui représentent des programmes à joindre à. Il s’agit de programmes de port.
 
- [in] Un tableau de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objets qui représentent des programmes à joindre à. Il s’agit de programmes de port.
+`rgpProgramNodes`\
+[in] Un tableau de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objets qui représentent des nœuds de programme, un pour chaque programme. Les nœuds de programme dans ce tableau représentent les mêmes programmes comme dans `pProgram`. Les nœuds de programme se voient attribuer afin que l’Allemagne peut identifier les programmes à attacher à.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Nombre de programmes et/ou des nœuds de programme dans le `pProgram` et `rgpProgramNodes` tableaux.
 
- [in] Un tableau de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objets qui représentent des nœuds de programme, un pour chaque programme. Les nœuds de programme dans ce tableau représentent les mêmes programmes comme dans `pProgram`. Les nœuds de programme se voient attribuer afin que l’Allemagne peut identifier les programmes à attacher à.
+`pCallback`\
+[in] Le [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à utiliser pour envoyer des événements de débogage vers le SDM.
 
- `celtPrograms`
-
- [in] Nombre de programmes et/ou des nœuds de programme dans le `pProgram` et `rgpProgramNodes` tableaux.
-
- `pCallback`
-
- [in] Le [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à utiliser pour envoyer des événements de débogage vers le SDM.
-
- `dwReason`
-
- [in] Une valeur comprise entre le [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.
+`dwReason`\
+[in] Une valeur comprise entre le [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) énumération qui spécifie la raison de l’attachement de ces programmes. Pour plus d'informations, consultez la section Remarques.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

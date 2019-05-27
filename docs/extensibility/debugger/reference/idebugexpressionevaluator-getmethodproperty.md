@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13939a4c469c41d1d0726bb60aa443ab8fb9e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fd0adf7d990c133b29dac724b863bc5608ac433
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919909"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200895"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 Cette méthode obtient un objet qui contient les variables locales, les arguments et les autres propriétés d’une méthode.
@@ -44,26 +47,21 @@ int GetMethodProperty(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pSymbolProvider`
+## <a name="parameters"></a>Paramètres
+`pSymbolProvider`\
+[in] Le fournisseur de symboles à utiliser, exprimé sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objet.
 
- [in] Le fournisseur de symboles à utiliser, exprimé sous la forme un [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objet.
+`pAddress`\
+[in] L’adresse dans le code, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) fonction de l’objet, qui doit être résolu au contenant le plus proche.
 
- `pAddress`
+`pBinder`\
+[in] Le classeur à utiliser, exprimé sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objet.
 
- [in] L’adresse dans le code, exprimée sous la forme un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) fonction de l’objet, qui doit être résolu au contenant le plus proche.
+`fIncludeHiddenLocals`\
+[in] Différent de zéro (`TRUE`) signifie qu’inclure des variables locales masqués ; zéro (`FALSE`) signifie ne pas définir les variables locales masqués
 
- `pBinder`
-
- [in] Le classeur à utiliser, exprimé sous la forme un [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objet.
-
- `fIncludeHiddenLocals`
-
- [in] Différent de zéro (`TRUE`) signifie qu’inclure des variables locales masqués ; zéro (`FALSE`) signifie ne pas définir les variables locales masqués
-
- `ppProperty`
-
- [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la méthode.
+`ppProperty`\
+[out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la méthode.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 411b0b40d6c47f240472c82f727d955dda8df2df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917602"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204090"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (dé) spécifié.
@@ -40,18 +43,15 @@ int AddImplicitProgramNodes(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidLaunchingEngine`
+## <a name="parameters"></a>Paramètres
+`guidLaunchingEngine`\
+[in] Le `GUID` d’un type de données DE qui doit être utilisée pour lancer des programmes (et est supposé pour ajouter des nœuds de son propre programme).
 
- [in] Le `GUID` d’un type de données DE qui doit être utilisée pour lancer des programmes (et est supposé pour ajouter des nœuds de son propre programme).
+`rgguidSpecificEngines`\
+[in] Tableau de `GUID`s DEs quel programme nœuds seront ajoutés.
 
- `rgguidSpecificEngines`
-
- [in] Tableau de `GUID`s DEs quel programme nœuds seront ajoutés.
-
- `celtSpecificEngines`
-
- [in] Le nombre de `GUID`s dans le `rgguidSpecificEngines` tableau.
+`celtSpecificEngines`\
+[in] Le nombre de `GUID`s dans le `rgguidSpecificEngines` tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

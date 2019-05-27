@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 968b204624662a1fb54d98703e163f76f0329adc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414028"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205447"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Récupère un nom convivial pour le serveur.
@@ -36,10 +39,9 @@ int GetServerFriendlyName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrName`
-
- [out] Retourne un nom convivial pour le serveur.
+## <a name="parameters"></a>Paramètres
+`pbstrName`\
+[out] Retourne un nom convivial pour le serveur.
 
 > [!NOTE]
 > L’appelant est chargé de libérer la chaîne.
