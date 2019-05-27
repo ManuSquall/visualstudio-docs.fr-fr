@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12ad4db6583c702115f5c97b2fa2c4485c891298
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cce3c1b2fbe4c97de8a61355b6b2d7098512df12
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458575"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208655"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 Obtient le contexte de code pour ce frame de pile.
@@ -40,9 +40,8 @@ int GetCodeContext ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `ppCodeCxt`\
-
- [out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente le pointeur d’instruction en cours dans ce frame de pile.
+`ppCodeCxt`\
+[out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente le pointeur d’instruction en cours dans ce frame de pile.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

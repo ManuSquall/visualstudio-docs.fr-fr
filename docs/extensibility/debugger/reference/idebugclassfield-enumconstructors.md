@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ecc2e2fba9dbddc12a58866c7edcde51b148af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bb31af11ae4ecc2618e577df6e3b1e2e45a0cbc7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922698"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203215"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Crée un énumérateur pour les constructeurs pour cette classe.
@@ -38,14 +41,12 @@ int EnumConstructors(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `cMatch`
+## <a name="parameters"></a>Paramètres
+`cMatch`\
+[in] Une valeur comprise entre le [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) énumération qui spécifie le type des constructeurs pour l’énumération.
 
- [in] Une valeur comprise entre le [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) énumération qui spécifie le type des constructeurs pour l’énumération.
-
- `ppEnum`
-
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des constructeurs. Retourne une valeur null s’il n’existe aucun constructeur.
+`ppEnum`\
+[out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des constructeurs. Retourne une valeur null s’il n’existe aucun constructeur.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il n’existe aucun constructeur. Sinon, retourne un code d'erreur.

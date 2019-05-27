@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b087997fab72e71abf4380df6d5c03910d1a57eb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457665"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212254"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Paramètres
 `buflen`\
-
- [in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
+[in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
 
 `rgString`\
-
- [out] Retourne la chaîne.
+[out] Retourne la chaîne.
 
  [C++ uniquement], `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.
 
 `pceltFetched`\
-
- [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
+[out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

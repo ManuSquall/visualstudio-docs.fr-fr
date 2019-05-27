@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7549ffc7375611d22e0ced603104e6a05d964b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b90c36d51b8137582b641e7258172319d2fbea0e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871623"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208976"
 ---
 # <a name="idebugportex2resumeprocess"></a>IDebugPortEx2::ResumeProcess
 Reprend l’exécution d’un processus.
@@ -36,10 +39,9 @@ int ResumeProcess( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pPortProcess`
-
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant le processus doit être reprise.
+## <a name="parameters"></a>Paramètres
+`pPortProcess`\
+[in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant le processus doit être reprise.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

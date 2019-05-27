@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399377"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037391"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -136,7 +136,7 @@ Pour savoir quels symboles sont disponibles dans la table d’exportation d’un
 
 - **Afficher les outils de runtime dans l'application** : Affiche le **Live Visual Tree** commandes dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.
 
-- **Activer Modifier et Continuer (XAML)**  :   Vous permet d’utiliser la modification et de continuer la fonction avec le code XAML.
+- **Activer le rechargement à chaud XAML**: Vous permet d’utiliser la fonctionnalité de rechargement à chaud de XAML avec le code XAML lors de l’exécution de votre application. (Cette fonctionnalité était précédemment d’appelée « XAML modifier et continuer »)
 
 **Activer les outils de diagnostic durant le débogage** : La fenêtre **Outils de diagnostic** s’affiche pendant que vous déboguez.
 

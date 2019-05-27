@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e10c77fb7e4fd3e7a679e9954140760c282952b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b7caebed7f3f9375a7b41fd68e43e6dbb6d21f37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917651"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208781"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Cette méthode définit la langue dans laquelle le processus sera hébergé sous. Ce langage peut ensuite être utilisé par le moteur de débogage (dé) pour charger l’évaluateur d’expression appropriée.
@@ -36,10 +39,9 @@ int SetHostingProcessLanguage(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidLang`
-
- [in] `GUID` de la langue que l’Allemagne doit utiliser. Spécifiez `GUID_NULL` (C++) ou `Guid.Empty` (c#) pour faire en sorte que l’Allemagne utilisent la langue par défaut.
+## <a name="parameters"></a>Paramètres
+`guidLang`\
+[in] `GUID` de la langue que l’Allemagne doit utiliser. Spécifiez `GUID_NULL` (C++) ou `Guid.Empty` (c#) pour faire en sorte que l’Allemagne utilisent la langue par défaut.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.

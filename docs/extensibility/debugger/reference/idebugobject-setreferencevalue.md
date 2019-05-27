@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cf00fc85a2b3f3dc09704227f84fa5b2e90ee6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e861a67ada36bd25b30e08bf8a62163bceea979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918477"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211299"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 Définit la valeur de référence de cet objet.
@@ -36,10 +39,9 @@ int SetReferenceValue(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pObject`
-
- [in] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet représentant la nouvelle valeur de référence.
+## <a name="parameters"></a>Paramètres
+`pObject`\
+[in] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet représentant la nouvelle valeur de référence.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

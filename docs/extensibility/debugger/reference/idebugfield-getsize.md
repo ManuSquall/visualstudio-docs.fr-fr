@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa10836b91306a99629e80b6869880f018878c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e6b2e48d83919de37bdc2c668d3e7f8e3e1d71a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919349"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212685"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Cette méthode obtient la taille d’un champ, en octets.
@@ -36,10 +39,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSize`
-
- [out] Retourne la taille.
+## <a name="parameters"></a>Paramètres
+`pdwSize`\
+[out] Retourne la taille.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

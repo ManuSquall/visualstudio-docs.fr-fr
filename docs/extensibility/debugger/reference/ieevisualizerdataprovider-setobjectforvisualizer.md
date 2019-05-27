@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223941"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203704"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Cette méthode modifie l’objet qui représente le visualiseur.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pNewObject`\
+`pNewObject`\
+[in] Objet à définir.
 
- [in] Objet à définir.
+`error`\
+[out] S’il existait une erreur de paramétrage de l’objet, cette chaîne conserve le message d’erreur.
 
- `error`\
-
- [out] S’il existait une erreur de paramétrage de l’objet, cette chaîne conserve le message d’erreur.
-
- `pException`\
-
- [out] Si une erreur s’est produite, cet objet contient des informations sur l’exception.
+`pException`\
+[out] Si une erreur s’est produite, cet objet contient des informations sur l’exception.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

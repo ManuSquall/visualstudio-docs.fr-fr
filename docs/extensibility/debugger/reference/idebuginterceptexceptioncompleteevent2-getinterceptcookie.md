@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400f0c6785a9cf9096caba9403886a2009905859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 56f33dca4110377959570283f573de2344769ed9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919006"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211242"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 Appelée lorsque le traitement d’une exception interceptée est terminée.
@@ -36,10 +39,9 @@ int GetInterceptCookie(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pqwCookie`
-
- [out] Valeur unique qui est associé à l’exception qui a été interceptée.
+## <a name="parameters"></a>Paramètres
+`pqwCookie`\
+[out] Valeur unique qui est associé à l’exception qui a été interceptée.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.

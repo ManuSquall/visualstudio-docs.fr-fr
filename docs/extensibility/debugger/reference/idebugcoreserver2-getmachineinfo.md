@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c23e399a2debac06df239fe69ced6589d00f7774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aa93ab76f8d4a7b5be56e49f3c226a1c8576d6dd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876343"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205708"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 Récupère une description de l’ordinateur qu'au serveur de base est en cours d’exécution.
@@ -38,12 +41,11 @@ int GetMachineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `Fields`
+## <a name="parameters"></a>Paramètres
+`Fields`\
+[in] Une combinaison d’indicateurs de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de `pMachineInfo` doivent être remplis.
 
- [in] Une combinaison d’indicateurs de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de `pMachineInfo` doivent être remplis.
-
- `pMachineInfo`
+ `pMachineInfo`\
 
  [in, out] Un [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure est remplie avec une description de l’ordinateur.
 

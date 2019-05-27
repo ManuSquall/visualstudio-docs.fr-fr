@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fd56bf6705cb6e47e94422ab06261645d0d512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fc8787d66e7ee29cd062cc757eed35d1a8ae227
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871840"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209059"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 Obtient le programme associé à un nœud de programme.
@@ -38,14 +41,10 @@ int GetProgram( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pProgramNode`
+## <a name="parameters"></a>Paramètres
+`pProgramNode` [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet représentant le nœud du programme.
 
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet représentant le nœud du programme.
-
- `ppProgram`
-
- [out] Retourne un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme associé au nœud de programme.
+`ppProgram` [out] Retourne un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme associé au nœud de programme.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

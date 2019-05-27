@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a31525ca7dbd89f4a6d1421eab0db11a38224cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919027"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212176"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 Récupère le type ou la méthode le propriétaire de ce paramètre générique.
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ppOwner`
-
- [out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet propriétaire de ce paramètre générique.
+## <a name="parameters"></a>Paramètres
+`ppOwner`\
+[out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet propriétaire de ce paramètre générique.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
