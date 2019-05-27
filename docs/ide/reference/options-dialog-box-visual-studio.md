@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630b9e56c0daa90fb257c7f941b35b07607ea678
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: eecbd3582257d4c141c82be95c0e7ea06504ffcf
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531866"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839603"
 ---
-# <a name="options-dialog-box-visual-studio"></a>Options, boîte de dialogue (Visual Studio)
+# <a name="options-dialog-box-visual-studio"></a>Boîte de dialogue Options (Visual Studio)
 
 La boîte de dialogue **Options** vous permet de configurer l’environnement de développement intégré (IDE) selon vos besoins. Par exemple, vous pouvez établir un emplacement d’enregistrement par défaut pour vos projets, modifier l’apparence et le comportement par défaut des fenêtres et créer des raccourcis pour les commandes fréquemment utilisées. Il existe également des options spécifiques à vos plateforme et langage de développement. Vous pouvez accéder aux **Options** à partir du menu **Outils**.
 

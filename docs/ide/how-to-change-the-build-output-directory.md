@@ -1,6 +1,6 @@
 ---
 title: 'Procédure : Changer le répertoire de sortie de build'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824228"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805047"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
 
-Vous pouvez spécifier l’emplacement de sortie en fonction de la configuration (débogage, version ou les deux) généré par votre projet.
-
-> [!NOTE]
-> Si vous avez un **projet d’installation**, lisez la remarque à la fin de cet article.
+Vous pouvez spécifier l’emplacement de sortie généré par votre projet en fonction de la configuration (pour Debug, Release ou les deux).
 
 ## <a name="change-the-build-output-directory"></a>Changer le répertoire de sortie de build
 
-1. Dans la barre de menus, choisissez **Projet** > **\<Nom_application> Propriétés**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, puis sélectionner **Propriétés**.
+1. Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis sélectionnez **Propriétés**.
 
-2. Si vous avez un projet Visual Basic, sélectionnez l'onglet **Compiler** . Si vous avez un projet C#, sélectionnez l'onglet **Générer**. Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l'onglet **Général** .
+2. Sélectionnez l’onglet approprié en fonction du type de votre projet :
 
-3. Dans la liste déroulante de configuration située dans la partie supérieure, choisissez la configuration pour laquelle vous voulez modifier l’emplacement du fichier de sortie (débogage, version ou tout).
+   - Pour C#, sélectionnez l’onglet **Générer**.
+   - Pour Visual Basic, sélectionnez l’onglet **Compiler**.
+   - Pour C++ ou JavaScript, sélectionnez l’onglet **Général**.
 
-     Recherchez l’entrée relative au chemin de sortie (**Chemin de sortie de la génération** en Visual Basic, **Répertoire de sortie** en Visual C++, **Chemin de sortie** en JavaScript et C#). Spécifiez un nouveau répertoire de sortie de génération relatif au répertoire du projet.
+3. Dans la liste déroulante de configuration située dans la partie supérieure, choisissez la configuration pour laquelle vous voulez changer l’emplacement du fichier de sortie (**Debug**, **Release** ou **Toutes les configurations**).
 
-> [!NOTE]
-> Dans un projet d’installation, la zone **Nom du fichier de sortie** permet uniquement de changer l’emplacement du fichier *Setup.exe*, et non l’emplacement des fichiers projet. Pour plus d’informations, consultez **Build, propriétés de configuration, boîte de dialogue Propriétés du projet de déploiement**.
+4. Recherchez l’entrée du chemin de sortie dans la page. Elle varie en fonction du type de votre projet :
+
+   - **Chemin de sortie** pour les projets C# et JavaScript
+   - **Chemin de sortie de la génération** pour les projets Visual Basic
+   - **Répertoire de sortie** pour les projets Visual C++
+
+   Tapez le chemin vers lequel générer la sortie (absolu ou relatif au répertoire racine du projet) ou choisissez **Parcourir** pour accéder à ce dossier.
+
+   ![Propriété de chemin de sortie pour un projet Visual Studio C#](media/output-path.png)
+
+> [!TIP]
+> Si la sortie n’est pas générée à l’emplacement que vous avez spécifié, vérifiez que vous créez la configuration correspondante (par exemple, **Debug** ou **Release**) en la sélectionnant dans la barre de menus de Visual Studio.
+>
+> ![Sélecteur de configuration de build dans Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Voir aussi
 

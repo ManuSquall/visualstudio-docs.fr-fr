@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946020"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934494"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -58,7 +58,7 @@ La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** es
 |![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de **l’Explorateur de tests**.|
 
 > [!NOTE]
-> L’exécution de tests unitaires après chaque génération nécessite l’édition Visual Studio Enterprise.
+> L’exécution de tests unitaires après chaque génération nécessite Visual Studio 2017 Enterprise ou Visual Studio 2019. Dans Visual Studio 2019, il est inclus dans les éditions Community et Professional mais aussi Enterprise.
 
 ## <a name="view-test-results"></a>Afficher les résultats des tests
 
@@ -200,7 +200,7 @@ Vous pouvez déterminer la quantité de code de votre produit qui est réellemen
 
 Pour exécuter la couverture du code pour les méthodes de test dans une solution :
 
-1. Choisissez **Tests** dans le menu Visual Studio, puis **Analyser la couverture du code**.
+1. Choisissez **Test** dans la barre de menus du haut, puis **Analyser la couverture du code**.
 
 2. Sélectionnez l'une des commandes suivantes dans le sous-menu :
 

@@ -1,8 +1,8 @@
 ---
 title: Importer ou exporter des configurations d’installation
 titleSuffix: ''
-description: Découvrez comment utiliser la fonctionnalité de configuration d’importation/d’exportation dans Visual Studio
-ms.date: 04/19/2019
+description: Découvrez comment exporter la configuration de votre installation dans un fichier .vsconfig à partager avec d’autres utilisateurs et comment l’importer pour le cloner.
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64850747"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849033"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importer ou exporter des configurations d’installation
 
-Vous pouvez configurer Visual Studio au sein de votre organisation à l’aide d’un fichier de configuration de l’installation. Pour ce faire, exportez simplement les informations sur la charge de travail et le composant dans un fichier .vsconfig en utilisant le programme d’installation de Visual Studio. Vous pouvez ensuite importer la configuration dans des installations nouvelles ou existantes.
+Vous pouvez configurer Visual Studio pour l’ensemble de votre organisation avec des fichiers de configuration d’installation. Pour ce faire, exportez simplement les informations sur la charge de travail et le composant dans un fichier .vsconfig en utilisant le programme d’installation de Visual Studio. Vous pouvez ensuite importer la configuration dans des installations nouvelles ou existantes et même les partager avec d’autres utilisateurs.
 
 Voici comment procéder.
 

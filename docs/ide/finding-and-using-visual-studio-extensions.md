@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962057"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934355"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Rechercher et utiliser des extensions Visual Studio
 
@@ -61,7 +61,7 @@ Vous pouvez également télécharger et installer des extensions basées sur Mic
 
 ::: moniker range="vs-2017"
 
-Dans **Extensions et mises à jour**, recherchez l’extension à installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez effectuer une recherche dans la fenêtre **Rechercher**.) Cliquez sur **Télécharger**. L’installation de l’extension est planifiée. Votre extension sera installée après la fermeture de toutes les instances de Visual Studio.
+Dans **Outils** > **Extensions et mises à jour**, recherchez l’extension à installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez effectuer une recherche dans la fenêtre **Rechercher**.) Cliquez sur **Télécharger**. L’installation de l’extension est planifiée. Votre extension sera installée après la fermeture de toutes les instances de Visual Studio.
 
 Si vous essayez d'installer une extension qui a des dépendances, le programme d'installation vérifie si elles sont déjà installées. Si elles ne sont pas installées, la boîte de dialogue **Extensions et mises à jour** donne la liste des dépendances qui doivent être installées avant que vous puissiez installer l'extension.
 
@@ -69,7 +69,7 @@ Si vous essayez d'installer une extension qui a des dépendances, le programme d
 
 ::: moniker range=">=vs-2019"
 
-Dans **Gérer les extensions**, recherchez l’extension à installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez effectuer une recherche dans la fenêtre **Rechercher**.) Cliquez sur **Télécharger**. L’installation de l’extension est planifiée. Votre extension sera installée après la fermeture de toutes les instances de Visual Studio.
+Dans **Extensions** > **Gérer les extensions**, recherchez l’extension que vous voulez installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez effectuer une recherche dans la fenêtre **Rechercher**.) Cliquez sur **Télécharger**. L’installation de l’extension est planifiée. Votre extension sera installée après la fermeture de toutes les instances de Visual Studio.
 
 Si vous essayez d'installer une extension qui a des dépendances, le programme d'installation vérifie si elles sont déjà installées. Si elles ne sont pas installées, la boîte de dialogue **Gérer les extensions** répertorie les dépendances qui doivent être installées avant que vous puissiez installer l’extension.
 
@@ -91,7 +91,7 @@ Si vous voulez désactiver les mises à jour automatiques, vous pouvez désactiv
 
 ::: moniker range="vs-2017"
 
-- Pour désactiver les mises à jour automatiques pour toutes les extensions, choisissez le lien **Changer les paramètres de vos extensions et mises à jour** dans la boîte de dialogue **Extensions et mises à jour**. Dans la boîte de dialogue **Options**, décochez **Mettre à jour automatiquement les extensions**.
+- Pour désactiver les mises à jour automatiques pour toutes les extensions, choisissez le lien **Changer les paramètres de vos extensions et mises à jour** dans la boîte de dialogue **Outils** > **Extensions et mises à jour**. Dans la boîte de dialogue **Options**, décochez **Mettre à jour automatiquement les extensions**.
 
 - Pour désactiver les mises à jour automatiques pour une extension spécifique, décochez l’option **Mettre à jour automatiquement les extensions** dans le volet d’informations de l’extension, à droite de la boîte de dialogue **Extensions et mises à jour**.
 
@@ -99,7 +99,7 @@ Si vous voulez désactiver les mises à jour automatiques, vous pouvez désactiv
 
 ::: moniker range=">=vs-2019"
 
-- Pour désactiver les mises à jour automatiques pour toutes les extensions, choisissez le lien **Changer vos paramètres pour les extensions** dans la boîte de dialogue **Gérer les extensions**. Dans la boîte de dialogue **Options**, décochez **Mettre à jour automatiquement les extensions**.
+- Pour désactiver les mises à jour automatiques pour toutes les extensions, choisissez le lien **Changer vos paramètres pour les extensions** dans la boîte de dialogue **Extensions** > **Gérer les extensions**. Dans la boîte de dialogue **Options**, décochez **Mettre à jour automatiquement les extensions**.
 
 - Pour désactiver les mises à jour automatiques pour une extension spécifique, décochez l’option **Mettre à jour automatiquement cette extension** dans le volet d’informations de l’extension, à droite de la boîte de dialogue **Gérer les extensions**.
 
@@ -115,13 +115,13 @@ Lorsque ces notifications s’affichent, vous pouvez ignorer la notification ou 
 
 ::: moniker range="vs-2017"
 
-- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Extensions et mises à jour** si vous le souhaitez.
+- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Outils** > **Extensions et mises à jour** si vous le souhaitez.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Gérer les extensions** si vous le souhaitez.
+- Choisir **Désactiver cette extension**. Visual Studio désactive l’extension et vous indique si vous devez redémarrer votre système pour que la désactivation prenne effet. Vous pouvez réactiver l’extension dans la boîte de dialogue **Extensions** > **Gérer les extensions** si vous le souhaitez.
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Lorsque vous installez un exemple en ligne, la solution est stockée dans deux e
 
 ::: moniker range="vs-2017"
 
-Utilisez la fenêtre **Extensions et mises à jour** pour effectuer les tâches suivantes, relatives aux exemples :
+Vous pouvez utiliser la boîte de dialogue **Outils** > **Extensions et mises à jour** pour effectuer ces tâches en lien avec les exemples :
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Utilisez la fenêtre **Gérer les extensions** pour effectuer les tâches suivantes, relatives aux exemples :
+Vous pouvez utiliser la boîte de dialogue **Extensions** > **Gérer les extensions** pour effectuer ces tâches en lien avec les exemples :
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Utilisez la fenêtre **Gérer les extensions** pour effectuer les tâches suivan
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installation sans utiliser la boîte de dialogue Extensions et mises à jour
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installer sans utiliser la boîte de dialogue Extensions et mises à jour
 
-Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Extensions et mises à jour** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *.vsix* en double-cliquant sur ce dernier, ou en le sélectionnant et en appuyant sur la touche **Entrée**. Après cela, suivez les instructions. Lorsque l'extension est installée, utilisez la boîte de dialogue **Extensions et mises à jour** pour l'activer, la désactiver ou la désinstaller.
+Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Outils** > **Extensions et mises à jour** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *.vsix* en double-cliquant sur ce dernier ou en le sélectionnant et en appuyant sur la touche **Entrée**. Après cela, suivez les instructions. Lorsque l'extension est installée, utilisez la boîte de dialogue **Extensions et mises à jour** pour l'activer, la désactiver ou la désinstaller.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Types d’extension non pris en charge par la boîte de dialogue Extensions et mises à jour
 
-Visual Studio prend toujours en charge les extensions installées par le programme d'installation Microsoft (MSI), mais pas via la boîte de dialogue **Extensions et mises à jour** sans modification.
+Visual Studio continue de prendre en charge les extensions installées par le programme d’installation Microsoft (MSI) mais pas par l’intermédiaire de la boîte de dialogue **Outils** > **Extensions et mises à jour** sans modification.
 
 > [!TIP]
 > Si une extension MSI inclut un fichier *extension.vsixmanifest*, elle apparaît dans la boîte de dialogue **Extensions et mises à jour**.
@@ -186,13 +186,13 @@ Visual Studio prend toujours en charge les extensions installées par le program
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Installation sans utiliser la boîte de dialogue Gérer les extensions
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installer sans utiliser la boîte de dialogue Gérer les extensions
 
-Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Gérer les extensions** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *.vsix* en double-cliquant sur ce dernier, ou en le sélectionnant et en appuyant sur la touche **Entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
+Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Extensions** > **Gérer les extensions** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *.vsix* en double-cliquant sur ce dernier ou en le sélectionnant et en appuyant sur la touche **Entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Types d’extension non pris en charge par la boîte de dialogue Gérer les extensions
 
-Visual Studio prend toujours en charge les extensions installées par le programme d’installation Microsoft (MSI), mais pas via la boîte de dialogue **Gérer les extensions** sans modification.
+Visual Studio continue de prendre en charge les extensions installées par le programme d’installation Microsoft (MSI) mais pas par l’intermédiaire de la boîte de dialogue **Extensions** > **Gérer les extensions** sans modification.
 
 > [!TIP]
 > Si une extension MSI inclut un fichier *extension.vsixmanifest*, elle apparaît dans la boîte de dialogue **Gérer les extensions**.

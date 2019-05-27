@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945399"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805305"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -52,7 +52,7 @@ Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Prof
 - Windows Entreprise (uniquement la dernière version, à utiliser seulement à des fins de développement et de test)
 - Windows Server (uniquement la dernière version, à utiliser seulement à des fins de développement et de test)
 
-Les abonnés Visual Studio Professional (MPN) peuvent également télécharger et utiliser des logiciels gratuits pour leur développement, notamment SQL Server Developer Edition.
+Les abonnés Visual Studio Professional (MPN) peuvent aussi télécharger et utiliser des logiciels pour leur développement, notamment SQL Server Developer Edition.
 
 L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, les crédits Azure mensuels, le support technique, la formation ou d’autres avantages réservés aux abonnés qui sont disponibles avec les abonnements Visual Studio proposés dans le commerce.
 

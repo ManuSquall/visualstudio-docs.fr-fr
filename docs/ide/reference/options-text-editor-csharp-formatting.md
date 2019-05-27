@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817814"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847444"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>Options, Éditeur de texte, C#, Style de code, Mise en forme
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Boîte de dialogue Options : Éditeur de texte \> C# \> Style de code \> Mise en forme
 
-Utilisez la page d’options **Mise en forme** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page d’options, choisissez **Outils** > **Options**. Dans la boîte de dialogue **Options**, choisissez **Éditeur de texte** > **C#** > **Style de code** > **Mise en forme**.
+Utilisez la page d’options **Mise en forme** et ses sous-pages ([**Mise en retrait**](#indentation-page), **Nouvelles lignes**, **Espacement** et **Retour à la ligne**) pour définir les options de mise en forme du code dans l’éditeur de code.
 
-## <a name="general-page"></a>Page Général
+Pour accéder à cette page d’options, choisissez **Outils** > **Options** dans la barre de menus. Dans la boîte de dialogue **Options**, choisissez **Éditeur de texte** > **C#** > **Style de code** > **Mise en forme**.
+
+> [!TIP]
+> Les sous-pages **Mise en retrait**, **Nouvelles lignes**, **Espacement** et **Retour à la ligne** affichent toutes une fenêtre d’aperçu au bas de l’écran qui montrent l’effet de chaque option. Pour utiliser la fenêtre d’aperçu, sélectionnez une option de mise en forme. La fenêtre d’aperçu montre un exemple de l’option sélectionnée. Quand vous changez un paramètre en sélectionnant une case d’option ou en cochant une case, la fenêtre d’aperçu se met à jour pour afficher l’effet du nouveau paramètre.
+
+## <a name="formatting-general-page"></a>Page Mise en forme (Général)
 
 ### <a name="general-settings"></a>Paramètres généraux
 
@@ -43,9 +48,17 @@ Ces paramètres affectent le *moment* où l’éditeur de code applique les opti
 |**Mise en forme automatique au retour**|Quand elle est sélectionnée, cette option met en forme le texte après un appui sur la touche **Entrée**, conformément aux options sélectionnées pour l’éditeur.|
 |**Mise en forme automatique lors du collage**|Quand elle est sélectionnée, cette option met en forme le texte collé dans l’éditeur conformément aux options sélectionnées pour l’éditeur.|
 
+::: moniker range="vs-2019"
+
+Si vous avez précédemment appliqué des paramètres de style de code pour les fichiers C# via la commande **Mettre en forme le document** dans Visual Studio 2017, cette fonctionnalité est désormais disponible sous l’intitulé [**Nettoyage du code**](../code-styles-and-code-cleanup.md#apply-code-styles).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>Paramètres de mise en forme de document
 
-Ces paramètres permettent de configurer la commande **Mettre le document en forme** pour effectuer du nettoyage de code supplémentaire dans un fichier. Pour plus d’informations sur l’application de ces paramètres, consultez [Mettre le document en forme, commande](../code-styles-and-quick-actions.md#format-document-command).
+Ces paramètres permettent de configurer la commande **Mettre le document en forme** pour effectuer du nettoyage de code supplémentaire dans un fichier. Pour plus d’informations sur l’application de ces paramètres, consultez [Mettre le document en forme, commande](../code-styles-and-code-cleanup.md#apply-code-styles).
 
 |Etiquette|Description|Règles correspondantes pour EditorConfig et Outils > Options|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ Ces paramètres permettent de configurer la commande **Mettre le document en for
 
 ![Paramètres de nettoyage du code pour C# dans Visual Studio](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>Fenêtres d’aperçu
+::: moniker-end
 
-Les sous-pages **Retrait**, **Nouvelles lignes**, **Espacement** et **Retour à la ligne** proposent toutes une fenêtre d’aperçu au bas de l’affichage. La fenêtre d’aperçu montre l’effet de chaque option. Pour utiliser la fenêtre d’aperçu, sélectionnez une option de mise en forme. La fenêtre d’aperçu montre un exemple de l’option sélectionnée. Quand vous changez un paramètre en sélectionnant une case d’option ou en cochant une case, la fenêtre d’aperçu se met à jour pour afficher l’effet du nouveau paramètre.
+## <a name="indentation-page"></a>Page Mise en retrait
 
-## <a name="indentation-remarks"></a>Notes relatives au retrait
+Les options de mise en retrait figurant dans cette page s’appliquent quand le code est mis en forme automatiquement. La mise en forme automatique du code se produit par exemple quand vous collez du code dans le fichier alors que l’option **Mettre en forme automatiquement lors du collage** est sélectionnée. (L’option **Mettre en forme automatiquement lors du collage** se trouve sous **Mise en forme** > **Général**.)
 
-Les options de mise en retrait dans les pages **Tabulations** de chaque langage déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur **Entrée** en fin de ligne. Les options de mise en retrait sous **Mise en forme** s’appliquent quand le code est mis en forme automatiquement, par exemple, quand vous collez du code dans le fichier alors que l’option **Mise en forme automatique lors du collage** est sélectionnée, et quand le bloc qui est mis en forme est tapé manuellement.
+![Options de mise en retrait de l’éditeur de texte C# dans Visual Studio](media/csharp-indentation-options.png)
+
+> [!TIP]
+> La page d’options **Éditeur de texte** > **C#** > **Onglets** comporte aussi des options de mise en retrait. Ces options déterminent uniquement l’endroit où l’éditeur de code place le curseur quand vous appuyez sur **Entrée** en fin de ligne.
+>
+> ![Options Onglets de l’éditeur de texte C# dans Visual Studio](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Voir aussi
 

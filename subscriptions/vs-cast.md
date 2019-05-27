@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947896"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805343"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 
@@ -107,6 +107,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure gratuits.
+Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure.
 
 Et n’oubliez pas de consulter la démonstration, le guide de l’utilisateur et les tutoriels vidéo mentionnés dans l’e-mail de Greg.
