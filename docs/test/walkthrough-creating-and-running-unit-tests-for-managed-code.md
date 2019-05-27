@@ -1,6 +1,6 @@
 ---
-title: Créer et exécuter des tests unitaires pour le code managé
-ms.date: 11/04/2016
+title: Tests unitaires C# – Tutoriel
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -13,25 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704660"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
-Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.
-
-> [!NOTE]
-> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. **L’explorateur de tests** peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour **l’explorateur de tests**. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
-
-Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
-
-## <a name="prerequisites"></a>Prérequis
-
-- Le projet Bank. Consultez [Exemple de projet pour la création de tests unitaires](../test/sample-project-for-creating-unit-tests.md).
+Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Vous modifiez ensuite le code de projet et réexécutez les tests.
 
 ## <a name="create-a-project-to-test"></a>Créer un projet de test
 
@@ -43,14 +34,14 @@ Pour plus d’informations sur la façon d’exécuter des tests à partir d’u
 
    La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Choisissez le modèle de projet **Bibliothèque de classes** C#.
+3. Sous la catégorie **Visual C#** > **.NET Core**, choisissez le modèle de projet **Application console (.NET Core)**.
 
 4. Nommez le projet **Bank**, puis cliquez sur **OK**.
 
-   Le projet Bank est créé et affiché dans l’**Explorateur de solutions**, avec le fichier *Class1.cs* ouvert dans l’éditeur de code.
+   Le projet Bank est créé et affiché dans l’**Explorateur de solutions**, avec le fichier *Program.cs* ouvert dans l’éditeur de code.
 
    > [!NOTE]
-   > Si *Class1.cs* n’est pas ouvert dans l’éditeur de code, double-cliquez sur le fichier *Class1.cs* dans l’**Explorateur de solutions** pour l’ouvrir.
+   > Si *Program.cs* n’est pas ouvert dans l’éditeur, double-cliquez sur le fichier *Program.cs* dans l’**Explorateur de solutions** pour l’ouvrir.
 
 ::: moniker-end
 
@@ -60,42 +51,92 @@ Pour plus d’informations sur la façon d’exécuter des tests à partir d’u
 
 2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-3. Recherchez et sélectionnez le modèle de projet **Bibliothèque de classes** C#, puis cliquez sur **Suivant**.
+3. Recherchez et sélectionnez le modèle de projet **Application console (.NET Core)** C#, puis cliquez sur **Suivant**.
 
 4. Nommez le projet **Bank**, puis cliquez sur **Créer**.
 
-   Le projet Bank est créé et affiché dans l’**Explorateur de solutions**, avec le fichier *Class1.cs* ouvert dans l’éditeur de code.
+   Le projet Bank est créé et affiché dans l’**Explorateur de solutions**, avec le fichier *Program.cs* ouvert dans l’éditeur de code.
 
    > [!NOTE]
-   > Si *Class1.cs* n’est pas ouvert dans l’éditeur de code, double-cliquez sur le fichier *Class1.cs* dans l’**Explorateur de solutions** pour l’ouvrir.
+   > Si *Program.cs* n’est pas ouvert dans l’éditeur, double-cliquez sur le fichier *Program.cs* dans l’**Explorateur de solutions** pour l’ouvrir.
 
 ::: moniker-end
 
-5. Copiez le code source à partir de [l’Exemple de projet pour la création de tests unitaires](../test/sample-project-for-creating-unit-tests.md), puis remplacez le contenu d’origine de *Class1.cs* par le code copié.
+5. Remplacez le contenu de *Program.cs* par le code C# suivant qui définit une classe, *BankAccount* :
 
-6. Enregistrez le fichier avec le nom *BankAccount.cs*.
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. Renommez le fichier *BankAccount.cs* en effectuant un clic droit et en choisissant **Renommer** dans l’**Explorateur de solutions**.
 
 7. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
-Vous avez maintenant un projet nommé Bank. Il contient le code source à tester et des outils avec lesquels le tester. L’espace de noms pour Bank, BankAccountNS, contient la classe publique BankAccount, dont vous testerez les méthodes dans les procédures suivantes.
-
-Dans cet article, les tests se concentrent sur la méthode Debit. Cette méthode est appelée quand de l’argent est retiré d’un compte. Voici la définition de la méthode :
-
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester. Dans cet article, les tests se limitent à la méthode `Debit`. La méthode `Debit` est appelée quand de l’argent est retiré sur un compte.
 
 ## <a name="create-a-unit-test-project"></a>Créer un projet de test unitaire
 
@@ -108,7 +149,7 @@ public void Debit(double amount)
 
 2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
 
-3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.
+3. Dans la liste des modèles, sélectionnez **Projet de test MSTest (.NET Core)**.
 
 4. Dans la zone **Nom**, entrez `BankTests`, puis sélectionnez **OK**.
 
@@ -118,9 +159,9 @@ public void Debit(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. Recherchez et sélectionnez le modèle de projet **Projet de test unitaire** C#, puis cliquez sur **Suivant**.
+2. Recherchez et sélectionnez le modèle de projet **Projet de test MSTest (.NET Core)** C#, puis cliquez sur **Suivant**.
 
-3. Attribuez un nom au projet `BankTests`.
+3. Nommez le projet **BankTests**.
 
 4. Cliquez sur **Créer**.
 
@@ -130,22 +171,31 @@ public void Debit(double amount)
 
 5. Dans le projet **BankTests**, ajoutez une référence au projet **Bank**.
 
-   Dans **l’Explorateur de solutions**, sélectionnez **Références** dans le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel (clic droit).
+   Dans l’**Explorateur de solutions**, sélectionnez **Dépendances** sous le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel (clic droit).
 
-6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Solution**, puis cochez l’élément **Bank**.
+6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Projets**, sélectionnez **Solution**, puis cochez l’élément **Bank**.
+
+7. Cliquez sur **OK**.
 
 ## <a name="create-the-test-class"></a>Créer la classe de test
 
 Créez une classe de test pour vérifier la classe `BankAccount`. Vous pouvez utiliser le fichier *UnitTest1.cs* qui a été généré par le modèle de projet, mais donnez au fichier et à la classe des noms plus descriptifs. Vous pouvez effectuer cela en une seule étape en renommant le fichier dans **l’Explorateur de solutions**.
 
-### <a name="rename-a-class-file"></a>Renommer un fichier de classe
+### <a name="rename-a-file-and-class"></a>Renommer un fichier et une classe
 
-Dans **l’Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel (clic droit), choisissez **Renommer**, puis renommez le fichier *BankAccountTests.cs*. Choisissez **Oui** dans la boîte de dialogue qui vous demande si vous souhaitez renommer toutes les références à l’élément de code `UnitTest1` dans le projet.
+1. Pour renommer le fichier, dans l’**Explorateur de solutions**, sélectionnez le fichier *UnitTest1.cs* dans le projet BankTests. Dans le menu contextuel (clic droit), choisissez **Renommer**, puis renommez le fichier *BankAccountTests.cs*.
 
-Cette opération a pour effet de remplacer le nom de la classe par `BankAccountTests`. Le fichier *BankAccountTests.cs* contient maintenant le code suivant :
+   ::: moniker range="vs-2017"
+
+   Dans la boîte de dialogue qui s’affiche, choisissez **Non**.
+
+   ::: moniker-end
+
+2. Pour renommer la classe, positionnez le curseur sur `UnitTest1` dans l’éditeur de code, puis appuyez sur **F2** (ou cliquez avec le bouton droit et choisissez **Renommer**). Tapez **BankAccountTests**, puis appuyez sur **Entrée**.
+
+Le fichier *BankAccountTests.cs* contient maintenant le code suivant :
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -161,9 +211,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>Ajouter une instruction using au projet testé
+### <a name="add-a-using-statement"></a>Ajoutez une instruction using
 
-Vous pouvez également ajouter une instruction `using` à la classe pour pouvoir appeler le projet testé sans utiliser de noms complets. En haut du fichier de classe, ajoutez :
+Ajoutez une [`using`instruction](/dotnet/csharp/language-reference/keywords/using-statement)  à la classe de test pour pouvoir appeler le projet testé sans utiliser de noms complets. En haut du fichier de classe, ajoutez :
 
 ```csharp
 using BankAccountNS;
@@ -173,15 +223,15 @@ using BankAccountNS;
 
 Voici la configuration minimale requise pour une classe de test :
 
-- L’attribut `[TestClass]` est requis dans le framework de tests unitaires Microsoft pour le code managé pour toute classe qui contient les méthodes de test unitaire à exécuter dans l’explorateur de tests.
+- L’attribut `[TestClass]` est obligatoire sur une classe qui contient les méthodes de test unitaire à exécuter dans l’Explorateur de tests.
 
-- Chaque méthode de test à exécuter avec l’explorateur de tests doit avoir l’attribut `[TestMethod]`.
+- Chaque méthode de test que l’Explorateur de tests doit reconnaître doit avoir l’attribut `[TestMethod]`.
 
-Vous pouvez avoir d’autres classes dans un projet de test unitaire qui n’ont pas l’attribut `[TestClass]` , et vous pouvez avoir d’autres méthodes dans les classes de test qui n’ont pas l’attribut `[TestMethod]` . Vous pouvez utiliser ces autres classes et méthodes dans vos méthodes de test.
+Vous pouvez avoir d’autres classes dans un projet de test unitaire qui n’ont pas l’attribut `[TestClass]` , et vous pouvez avoir d’autres méthodes dans les classes de test qui n’ont pas l’attribut `[TestMethod]` . Vous pouvez appeler ces autres classes et méthodes à partir de vos méthodes de test.
 
 ## <a name="create-the-first-test-method"></a>Créer la première méthode de test
 
-Dans cette procédure, vous écrivez des méthodes de test unitaire pour vérifier le comportement de la méthode `Debit` de la classe `BankAccount`. La méthode `Debit` est présentée plus haut dans cet article.
+Dans cette procédure, vous écrivez des méthodes de test unitaire pour vérifier le comportement de la méthode `Debit` de la classe `BankAccount`.
 
 Il existe au moins trois comportements à vérifier :
 
@@ -217,7 +267,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-La méthode est simple : elle met en place un nouvel objet `BankAccount` avec un solde de début, puis elle retire un montant valide. Elle utilise la méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> pour vérifier que le solde de fin est conforme à ce qui est attendu.
+La méthode est simple : elle met en place un nouvel objet `BankAccount` avec un solde de début, puis retire un montant valide. Elle utilise la méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> pour vérifier que le solde de fin est conforme à ce qui est attendu.
 
 ### <a name="test-method-requirements"></a>Spécifications des méthodes de test
 
@@ -233,26 +283,25 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
 1. Dans le menu **Générer** , choisissez **Générer la solution**.
 
-   En l’absence d’erreurs, **l’explorateur de tests** apparaît avec **Debit_WithValidAmount_UpdatesBalance** répertorié dans le groupe **Tests non exécutés**.
+2. Si l’**Explorateur de tests** n’est pas ouvert, ouvrez-le en choisissant **Test** > **Fenêtres** > **Explorateur de tests** à partir de la barre de menus supérieure.
 
-   > [!TIP]
-   > Si **l’explorateur de tests** n’apparaît pas après une génération réussie, sélectionnez **Test** dans le menu, puis **Fenêtres**, puis **Explorateur de tests**.
+3. Sélectionnez **Exécuter tout** pour exécuter le test.
 
-2. Sélectionnez **Exécuter tout** pour exécuter le test. Pendant que le test s’exécute, la barre d’état en haut de la fenêtre s’anime. À l’issue de la série de tests, la barre devient verte si toutes les méthodes de test ont réussi, ou rouge si l’un des tests a échoué.
+   Pendant que le test s’exécute, la barre d’état en haut de la fenêtre **Explorateur de tests** s’anime. À l’issue de la série de tests, la barre devient verte si toutes les méthodes de test ont réussi, ou rouge si l’un des tests a échoué.
 
-3. Dans ce cas, le test échoue. La méthode de test est déplacée vers le groupe **Échecs de tests**. Sélectionnez la méthode dans **l’explorateur de tests** pour en afficher les détails en bas de la fenêtre.
+   Dans ce cas, le test échoue.
+
+4. Sélectionnez la méthode dans **l’explorateur de tests** pour en afficher les détails en bas de la fenêtre.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Vérifier votre code et exécuter à nouveau vos tests
 
-### <a name="analyze-the-test-results"></a>Analyser les résultats des tests
-
-Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEqual`, le message affiche ce qui était attendu (le paramètre **Expected\<*valeur*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*valeur*>**). Vous vous attendiez à ce que le solde diminue, mais il a augmenté du montant du retrait.
+Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEqual`, le message affiche ce qui était attendu et ce qui a été réellement reçu. Vous vous attendiez à ce que le solde diminue, mais il a augmenté du montant du retrait.
 
 Le test unitaire a découvert un bogue : le montant du retrait est *ajouté* au solde du compte quand il doit être *soustrait*.
 
 ### <a name="correct-the-bug"></a>Corriger le bogue
 
-Pour corriger l’erreur, remplacez la ligne :
+Pour corriger l’erreur, dans le fichier *BankAccount.cs*, remplacez la ligne :
 
 ```csharp
 m_balance += amount;
@@ -266,7 +315,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Réexécuter le test
 
-Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi, puis le test est déplacé vers le groupe **Tests réussis**.
+Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi.
+
+![Explorateur de tests dans Visual Studio 2019 indiquant la réussite du test](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Utiliser les tests unitaires pour améliorer votre code
 
@@ -279,7 +330,7 @@ Vous avez créé une méthode de test pour confirmer qu’un montant valide est 
 - supérieur au solde ou
 - inférieur à zéro.
 
-### <a name="create-the-test-methods"></a>Créer les méthodes de test
+### <a name="create-and-run-new-test-methods"></a>Créer et exécuter de nouvelles méthodes de test
 
 Créez une méthode de test pour vérifier que le comportement est correct quand le montant du débit est inférieur à zéro :
 
@@ -310,8 +361,6 @@ Pour tester le cas où le montant retiré est supérieur au solde, effectuez les
 
 3. Définissez `debitAmount` sur un nombre supérieur au solde.
 
-### <a name="run-the-tests"></a>Exécuter les tests
-
 L’exécution des deux méthodes de test montre que les tests fonctionnent correctement.
 
 ### <a name="continue-the-analysis"></a>Poursuivre l’analyse
@@ -328,7 +377,7 @@ Vous pouvez utiliser un constructeur qui fournit des informations beaucoup plus 
 
 ### <a name="refactor-the-code-under-test"></a>Refactoriser le code testé
 
-Tout d’abord, définissez deux constantes pour les messages d’erreur au niveau de la portée d’une classe. Placez-les dans la classe testée (BankAccount) :
+Tout d’abord, définissez deux constantes pour les messages d’erreur au niveau de la portée d’une classe. Placez-les dans la classe testée (`BankAccount`) :
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -379,11 +428,11 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Retester, réécrire et réanalyser
 
-Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException>, et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si la valeur de `debitAmount` est valide (autrement dit, inférieure au solde mais supérieure à zéro), aucune exception n’est interceptée et l’assertion ne se déclenche donc jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
+Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException> et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si la valeur de `debitAmount` est valide (autrement dit, inférieure au solde mais supérieure à zéro), aucune exception n’est interceptée et l’assertion ne se déclenche donc jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
 
 Il s’agit d’un bogue dans la méthode de test. Pour résoudre le problème, ajoutez une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test pour gérer le cas où aucune exception n’est levée.
 
-Cependant, une réexécution du test montre que le test *échoue* maintenant si l’exception correcte est interceptée. Le bloc `catch` intercepte l’exception, mais la méthode continue à s’exécuter et échoue au niveau de la nouvelle assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>. Pour résoudre ce problème, ajoutez une instruction `return` après `StringAssert` dans le bloc `catch`. La réexécution du test confirme que vous avez résolu ce problème. La version finale de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` ressemble à ceci :
+La réexécution du test montre que le test *échoue* maintenant si l’exception correcte est interceptée. Le bloc `catch` intercepte l’exception, mais la méthode continue à s’exécuter et échoue au niveau de la nouvelle assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>. Pour résoudre ce problème, ajoutez une instruction `return` après `StringAssert` dans le bloc `catch`. La réexécution du test confirme que vous avez résolu ce problème. La version finale de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` ressemble à ceci :
 
 ```csharp
 [TestMethod]
@@ -410,4 +459,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>Conclusion
+
 Les améliorations apportées au code du test ont abouti à des méthodes de test plus robustes et plus informatives. Mais plus important encore, elles ont également amélioré le code testé.
+
+> [!TIP]
+> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’**Explorateur de tests** peut aussi exécuter des tests à partir de frameworks de tests unitaires tiers qui ont des adaptateurs pour l’**Explorateur de tests**. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
+
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).

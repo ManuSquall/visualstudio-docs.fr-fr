@@ -1,5 +1,5 @@
 ---
-title: Tests automatisés de l’interface utilisateur
+title: Tests codés de l’interface utilisateur
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,30 +16,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973535"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704758"
 ---
-# <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
+# <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
-Les tests automatisés qui vérifient l’interface utilisateur (IU) de votre application sont appelés *tests codés de l’interface utilisateur* (CUIT) dans Visual Studio. Ils permettent d’effectuer des tests fonctionnels des contrôles d’interface utilisateur et de vérifier que l'application entière, y compris son interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur sont particulièrement utiles quand il y a une validation ou autre logique dans l'interface utilisateur, par exemple dans une page web. On les utilise aussi fréquemment pour automatiser un test manuel existant.
+Les tests codés de l’interface utilisateur (CUIT) pilotent votre application via son interface utilisateur. Ils permettent d’effectuer des tests fonctionnels des contrôles d’interface utilisateur et de vérifier que l'application entière, y compris son interface utilisateur, fonctionne correctement. Les tests codés de l’interface utilisateur sont utiles quand il y a une validation ou une autre logique dans l’interface utilisateur, par exemple dans une page web. On les utilise aussi fréquemment pour automatiser un test manuel existant.
+
+Il est facile de créer un test codé de l’interface utilisateur dans Visual Studio. Il vous suffit d’exécuter le test manuellement pendant que le **Générateur de test codé de l’interface utilisateur** s’exécute en arrière-plan. Vous pouvez aussi spécifier les valeurs qui doivent apparaître dans des champs spécifiques. Le **Générateur de test codé de l'interface utilisateur** enregistre vos actions et génère du code à partir de ces actions. Une fois le test créé, vous pouvez le modifier dans un éditeur spécial qui vous permet de modifier la séquence d'actions.
+
+Le **Générateur de test codé de l’interface utilisateur** et l’éditeur spécialisés simplifient la création et la modification des tests codés de l’interface utilisateur, même si vos compétences principales sont axées sur les tests plutôt que sur le codage. Si vous êtes développeur et que vous souhaitez approfondir le test, le code est structuré pour être facile à copier et à adapter. Par exemple, vous pouvez enregistrer un test d’achat d’un article sur un site web, puis modifier le code généré et ajouter une boucle qui achète de nombreux articles.
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-Comme l’illustre la figure ci-dessous, une expérience de développement typique consiste au départ à générer simplement votre application et à cliquer sur les contrôles d'interface utilisateur pour vérifier que tout fonctionne comme prévu. Ensuite, vous pouvez décider de créer un test automatisé pour vous éviter de continuer à tester l’application manuellement. Selon les fonctionnalités spécifiques testées dans votre application, vous pouvez écrire du code pour un test fonctionnel ou pour un test d'intégration qui peut ou non inclure des tests au niveau de l’interface utilisateur. Si vous souhaitez accéder directement à une logique métier, vous pouvez coder un test unitaire. Toutefois, dans certaines circonstances, il peut être bénéfique de tester les différents contrôles d'interface utilisateur de votre application. Un test codé de l’interface utilisateur peut vérifier que l'évolution du code n’a aucun impact sur les fonctionnalités de votre application.
-
-![Test lors du développement d'application](../test/media/cuit_overview.png)
-
-Créer un test codé de l'interface utilisateur est très facile. Il vous suffit d’exécuter le test manuellement pendant que le **Générateur de test codé de l’interface utilisateur** s’exécute en arrière-plan. Vous pouvez aussi spécifier les valeurs qui doivent apparaître dans des champs spécifiques. Le **Générateur de test codé de l'interface utilisateur** enregistre vos actions et génère du code à partir de ces actions. Une fois le test créé, vous pouvez le modifier dans un éditeur spécial qui vous permet de modifier la séquence d'actions.
-
-En guise d'alternative, si vous avez un cas de test qui a été enregistré dans Microsoft Test Manager, vous pouvez générer du code à partir de ce cas de test. Pour plus d’informations, consultez [Enregistrer et lire des tests manuels](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
-
-Le **Générateur de test codé de l'interface utilisateur** et l’éditeur spécialisés simplifient la création et la modification des tests codés de l’interface utilisateur, même si vos compétences principales sont axées sur les tests plutôt que sur le codage. Si vous êtes développeur et que vous souhaitez approfondir le test, le code est structuré pour être facile à copier et à adapter. Par exemple, vous pouvez enregistrer un test d’achat d’un article sur un site web, puis modifier le code généré et ajouter une boucle qui achète de nombreux articles.
-
-**Spécifications**
+## <a name="requirements"></a>Spécifications
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -48,7 +42,7 @@ Pour plus d’informations sur les plateformes et les configurations prises en c
 
 ## <a name="install-the-coded-ui-test-component"></a>Installer le composant Test codé de l’interface utilisateur
 
-Pour accédez aux modèles et aux outils de test codé de l’interface utilisateur, installez le composant **test codé de l’interface utilisateur** de Visual Studio.
+Pour accédez aux modèles et aux outils de test codé de l’interface utilisateur, installez le composant **Test codé de l’interface utilisateur** de Visual Studio.
 
 1. Lancez **Visual Studio Installer** en choisissant **Outils** > **Obtenir des outils et des fonctionnalités**.
 
@@ -58,11 +52,11 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 1. Sélectionnez **Modifier**.
 
-## <a name="create-a-coded-ui-test"></a>Créer un test d'interface utilisateur codé
+## <a name="create-a-coded-ui-test"></a>Créer un test codé de l’interface utilisateur
 
-1. Créer un projet de test codé de l'interface utilisateur.
+1. Créez un projet de test codé de l’interface utilisateur.
 
-   Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n’avez pas encore de projet de test codé de l’interface utilisateur, créez-en un. Choisissez **Fichier** > **Nouveau** > **Projet**. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur**.
+   Les tests codés de l’interface utilisateur doivent appartenir à un projet de test codé de l’interface utilisateur. Si vous n’avez pas encore de projet de test codé de l’interface utilisateur, créez-en un. Choisissez **Fichier** > **Nouveau** > **Projet**. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur**.
 
    ::: moniker range="vs-2017"
 
@@ -71,11 +65,11 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
    ::: moniker-end
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant Test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2. Ajouter un fichier de test codé de l'interface utilisateur.
+2. Ajoutez un fichier de test codé de l’interface utilisateur.
 
-     Si vous venez de créer un projet de test codé de l'interface utilisateur, le premier fichier de test codé de l'interface utilisateur est ajouté automatiquement. Pour ajouter un autre fichier de test, ouvrez le menu contextuel du projet de test codé de l’interface utilisateur dans l’**Explorateur de solutions** et choisissez **Ajouter** > **Test codé de l’interface utilisateur**.
+     Si vous venez de créer un projet de test codé de l'interface utilisateur, le premier fichier de test codé de l'interface utilisateur est ajouté automatiquement. Pour ajouter un autre fichier de test, ouvrez le menu contextuel du projet de test codé de l’interface utilisateur dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Test codé de l’interface utilisateur**.
 
      Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, choisissez **Enregistrer les actions** > **Modifier le mappage de l’IU ou ajouter des assertions**.
 
@@ -87,7 +81,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 3. Enregistrez une séquence d’actions.
 
-     **Pour commencer l’enregistrement**, choisissez l’icône **Enregistrer**. Effectuez les actions que vous souhaitez tester dans votre application, y compris le démarrage de l'application si nécessaire. Par exemple, si vous testez une application web, vous pourriez démarrer un navigateur, accéder au site web et vous connecter à l’application.
+     **Pour commencer l’enregistrement**, choisissez l’icône **Enregistrer**. Effectuez les actions que vous souhaitez tester dans votre application, y compris le démarrage de l'application si nécessaire. Par exemple, si vous testez une application web, démarrez un navigateur, accédez au site web et connectez-vous à l’application.
 
      **Pour mettre l’enregistrement en pause**, par exemple si vous venez de recevoir du courrier électronique à traiter, choisissez **Pause**.
 
@@ -96,7 +90,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
      **Pour supprimer des actions** enregistrées par erreur, choisissez **Modifier des actions**.
 
-     **Pour générer le code** qui va répliquer vos actions, choisissez l’icône **Générer le code**, puis tapez un nom et une description pour votre méthode de test codé de l’interface utilisateur.
+     **Pour générer le code** appelé à répliquer vos actions, choisissez l’icône **Générer le code**, puis tapez un nom et une description pour votre méthode de test codé de l’interface utilisateur.
 
 4. Vérifiez les valeurs dans des champs de l’interface utilisateur, comme des zones de texte.
 
@@ -144,11 +138,11 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
 8. Exécutez le test.
 
-   Ouvrez l’Explorateur de tests ou le menu contextuel dans la méthode de test, puis choisissez **Exécuter les tests**. Pour plus d’informations sur la façon d’exécuter les tests, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) et *Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur* dans la section [Quelle est la suite ?](#whats-next) située à la fin de cette rubrique.
+   Ouvrez l’Explorateur de tests ou le menu contextuel dans la méthode de test, puis choisissez **Exécuter les tests**. Pour plus d’informations sur la façon d’exécuter les tests, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) et *Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur* dans la section [Quelle est la suite ?](#whats-next) à la fin de cette rubrique.
 
 Les autres sections de cette rubrique décrivent plus en détail les étapes de cette procédure.
 
-Pour obtenir un exemple plus détaillé, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). Dans cette procédure pas à pas, vous allez créer une simple application WPF (Windows Presentation Foundation) pour montrer comment créer, modifier et gérer un test codé de l'interface utilisateur. La procédure pas à pas fournit des solutions pour la correction des tests interrompus par différents problèmes de synchronisation et de refactorisation des contrôles.
+Pour obtenir un exemple plus détaillé, consultez [Procédure pas à pas : Création, modification et maintenance d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). Dans cette procédure pas à pas, vous allez créer une simple application WPF (Windows Presentation Foundation) pour montrer comment créer, modifier et gérer un test codé de l’interface utilisateur. La procédure pas à pas fournit des solutions pour la correction des tests interrompus par différents problèmes de synchronisation et de refactorisation des contrôles.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Démarrer et arrêter l’application testée
 
@@ -185,9 +179,9 @@ Ouvrez ensuite le menu contextuel sur la propriété du contrôle d’IU à vér
 
 Une fois que vous avez ajouté toutes les assertions pour votre test, choisissez **OK**.
 
-Pour générer le code de vos assertions et ajouter le contrôle au mappage d’IU, choisissez l’icône **Générer le code**. Tapez un nom pour votre méthode de test codé de l'interface utilisateur et une description de la méthode, qui sera ajoutée en guise de commentaires de la méthode. Choisissez **Ajouter et générer**. Choisissez ensuite l’icône **Fermer** pour fermer le **Générateur de test codé de l’interface utilisateur**. Du code semblable au suivant est généré. Par exemple, si vous avez entré le nom `AssertForAddTwoNumbers`, le code ressemble à ce qui suit :
+Pour générer le code de vos assertions et ajouter le contrôle au mappage d’IU, choisissez l’icône **Générer le code**. Tapez un nom pour votre méthode de test codé de l’interface utilisateur et une description de la méthode, qui sera ajoutée en guise de commentaires de la méthode. Choisissez **Ajouter et générer**. Choisissez ensuite l’icône **Fermer** pour fermer le **Générateur de test codé de l’interface utilisateur**. Du code semblable au suivant est généré. Par exemple, si vous avez entré le nom `AssertForAddTwoNumbers`, le code ressemble à ce qui suit :
 
-- Ajoute un appel à la méthode assert AssertForAddTwoNumbers à la méthode de test dans votre fichier de test codé de l'interface utilisateur :
+- Ajoute un appel à la méthode d’assertion AssertForAddTwoNumbers à la méthode de test dans votre fichier de test codé de l’interface utilisateur :
 
     ```csharp
     [TestMethod]
@@ -202,7 +196,7 @@ Pour générer le code de vos assertions et ajouter le contrôle au mappage d’
 
 - Ajoute une méthode nommée `AssertForAddTwoNumbers` à votre mappage d’interface utilisateur (*UIMap.uitest*). Ce fichier s’ouvre dans **l’Éditeur de test codé de l’interface utilisateur**, où vous pouvez modifier les assertions.
 
-     ![Modifier l'assertion à l'aide de l'éditeur de test codé de l'interface utilisateur](../test/media/cuit_editor_assert.png)
+     ![Modifier l’assertion à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/media/cuit_editor_assert.png)
 
      Pour plus d’informations, consultez [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -231,7 +225,7 @@ Si vous ne pouvez pas enregistrer un pointage de la souris sur un contrôle :
 
 Dans certaines circonstances, un contrôle spécifique utilisé dans un test codé de l’interface utilisateur peut nécessiter l’utilisation du clavier pour enregistrer manuellement des événements de pointage de la souris. Par exemple, quand vous testez une application Windows Form ou WPF (Windows Presentation Foundation), il peut exister du code personnalisé. Ou un comportement spécial peut être défini pour le pointage sur un contrôle, par exemple le développement d'une arborescence quand un utilisateur place le pointeur de la souris dessus. Pour tester ces scénarios, vous devez signaler manuellement au **Générateur de test codé de l’interface utilisateur** que vous pointez sur un contrôle en appuyant sur des touches de clavier prédéfinies.
 
-Quand vous exécutez votre test codé de l'interface utilisateur, placez le pointeur de la souris sur le contrôle. Ensuite, maintenez enfoncée la touche **Ctrl** pendant que vous maintenez enfoncées les touches **Maj** et **R** de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le **Générateur de test codé de l’interface utilisateur**.
+Quand vous exécutez votre test codé de l’interface utilisateur, placez le pointeur de la souris sur le contrôle. Ensuite, maintenez enfoncée la touche **Ctrl** pendant que vous maintenez enfoncées les touches **Maj** et **R** de votre clavier. Relâchez les touches. Un événement de pointage de la souris est enregistré par le **Générateur de test codé de l’interface utilisateur**.
 
 ![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 
@@ -268,13 +262,13 @@ Dans le fichier de configuration, changez les valeurs des clés `HoverKeyModifie
 
 Si vous avez des problèmes pour enregistrer les pointages de la souris sur un site web :
 
-Dans de nombreux sites web, quand vous placez le pointeur de souris sur un contrôle spécifique, il s’étend et affiche des détails supplémentaires. En général, ces détails prennent une apparence semblable aux menus des applications de bureau. Comme il s'agit d'un modèle commun, les tests codés de l'interface utilisateur activent les pointages implicites pour la navigation web. Par exemple, si vous enregistrez des pointages dans Internet Explorer, un événement est déclenché. Ces événements peuvent provoquer l'enregistrement de pointages redondants. Pour cette raison, les pointages implicites sont enregistrés avec `ContinueOnError` définis avec la valeur `true` dans le fichier de configuration du test d'interface utilisateur. Cela permet à la lecture de se poursuivre en cas d'échec d'un événement de pointage.
+Dans de nombreux sites web, quand vous placez le pointeur de souris sur un contrôle spécifique, il s’étend et affiche des détails supplémentaires. En général, ces détails prennent une apparence semblable aux menus des applications de bureau. Comme il s’agit d'un modèle commun, les tests codés de l’interface utilisateur activent les pointages implicites pour la navigation web. Par exemple, si vous enregistrez des pointages dans Internet Explorer, un événement est déclenché. Ces événements peuvent provoquer l'enregistrement de pointages redondants. Pour cette raison, les pointages implicites sont enregistrés avec `ContinueOnError` définis avec la valeur `true` dans le fichier de configuration du test d'interface utilisateur. Cela permet à la lecture de se poursuivre en cas d'échec d'un événement de pointage.
 
 Pour activer l'enregistrement des pointages implicites dans un navigateur web, ouvrez le fichier de configuration :
 
 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
 
-Vérifiez que dans le fichier de configuration la clé `RecordImplicitiHovers` a la valeur `true`, comme illustré dans l'exemple ci-dessous :
+Dans le fichier de configuration, vérifiez que la clé `RecordImplicitiHovers` a la valeur `true`, comme dans l’exemple suivant :
 
 ```xml
 <!--Use this to enable/disable recording of implicit hovers.-->
@@ -283,19 +277,19 @@ Vérifiez que dans le fichier de configuration la clé `RecordImplicitiHovers` a
 
 ## <a name="customize-the-coded-ui-test"></a>Personnaliser le test codé de l’interface utilisateur
 
-Après avoir créé votre test codé de l’interface utilisateur, vous pouvez le modifier à l’aide de l’un des outils suivants dans Visual Studio :
+Après avoir créé votre test codé de l’interface utilisateur, vous pouvez le modifier dans Visual Studio à l’aide de l’un des outils suivants :
 
 - Utilisez le **Générateur de test codé de l’interface utilisateur** pour ajouter des contrôles et une validation supplémentaires à vos tests. Consultez la section [Ajouter des contrôles et valider leurs propriétés](#validate-the-properties-of-ui-controls) dans cette rubrique.
 
-- L’**éditeur de test codé d’IU** vous permet de modifier facilement vos tests codés de l’interface utilisateur. Avec l’**éditeur de test codé d’IU**, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, consultez [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- L’**Éditeur de test codé de l’interface utilisateur** vous permet de modifier facilement vos tests codés de l’interface utilisateur. Avec l’**éditeur de test codé d’IU**, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, consultez [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Éditeur de code :**
 
     - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Actions et propriétés des contrôles codés d’interface utilisateur](#coded-ui-control-actions-and-properties) de cette rubrique.
 
-    - Après avoir créé un test codé de l'interface utilisateur, vous pouvez le modifier pour qu'il soit piloté par les données. Pour plus d’informations, consultez [Créer un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
+    - Après avoir créé un test codé de l’interface utilisateur, vous pouvez le modifier pour qu’il soit piloté par les données. Pour plus d’informations, consultez [Créer un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+    - Dans une lecture de test codé de l’interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent, par exemple qu’une fenêtre s’affiche, que la barre de progression disparaisse, etc. Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
     - Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -374,17 +368,17 @@ Quand vous choisissez **Générer le code**, plusieurs segments de code sont cr�
 
     Vous pouvez aussi les utiliser si vous écrivez votre propre code. Vous pouvez par exemple faire en sorte que votre méthode de test choisisse un lien hypertexte dans une application web, entre une valeur dans une zone de texte ou bifurque et exécute différentes actions de test en fonction de la valeur d'un champ.
 
-    Vous pouvez ajouter plusieurs tests codés de l'interface utilisateur et plusieurs objets et fichiers de mappage d'IU pour faciliter le test d'une grande application. Pour plus d’informations, consultez [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md).
+    Vous pouvez ajouter plusieurs tests codés de l’interface utilisateur et plusieurs objets et fichiers de mappage d’interface utilisateur pour faciliter le test d’une application de grande envergure. Pour plus d’informations, consultez [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 Pour plus d’informations sur le code généré, consultez [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
 ## <a name="coded-ui-control-actions-and-properties"></a>Actions et propriétés des contrôles de test codé de l’interface utilisateur
 
-Quand vous utilisez des contrôles de test de l'interface utilisateur dans des tests codés de l'interface utilisateur, ils sont séparés en deux catégories : actions et propriétés.
+Quand vous utilisez des contrôles de test de l’interface utilisateur dans des tests codés de l’interface utilisateur, ils sont séparés en deux catégories : actions et propriétés.
 
-- La première catégorie est constituée d'actions que vous pouvez effectuer sur des contrôles de test de l'interface utilisateur. Par exemple, les tests codés de l'interface utilisateur peuvent simuler des clics de souris sur un contrôle de test de l'interface utilisateur ou simuler des frappes sur des touches du clavier pour affecter un contrôle de test de l'interface utilisateur.
+- La première catégorie est constituée d'actions que vous pouvez effectuer sur des contrôles de test de l'interface utilisateur. Par exemple, les tests codés de l’interface utilisateur peuvent simuler des clics de souris sur un contrôle de test de l’interface utilisateur ou simuler des frappes sur des touches du clavier pour affecter un contrôle de test de l’interface utilisateur.
 
-- La seconde catégorie vous permet d'obtenir et de définir des propriétés sur un contrôle de test de l'interface utilisateur. Par exemple, les tests codés de l'interface utilisateur peuvent obtenir le nombre d'éléments d'un contrôle `ListBox` ou définir un contrôle `CheckBox` à l'état sélectionné.
+- La seconde catégorie vous permet d'obtenir et de définir des propriétés sur un contrôle de test de l'interface utilisateur. Par exemple, les tests codés de l’interface utilisateur peuvent obtenir le nombre d’éléments d’un contrôle `ListBox` ou définir un contrôle `CheckBox` sur l’état sélectionné.
 
 **Accès aux actions d’un contrôle de test de l’interface utilisateur**
 
@@ -437,11 +431,11 @@ Avec les contrôles qui dérivent de <xref:Microsoft.VisualStudio.TestTools.UITe
 
 ## <a name="debug"></a>Débogage
 
-Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de journaux de tests codés de l'interface utilisateur. Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l'interface utilisateur. Le format des journaux vous permet de déboguer les problèmes rapidement. Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
+Vous pouvez analyser les tests codés de l’interface utilisateur à l’aide de journaux de tests codés de l’interface utilisateur. Les journaux de tests codés de l’interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l’interface utilisateur. Le format des journaux vous permet de déboguer les problèmes rapidement. Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
 ## <a name="whats-next"></a>Étapes suivantes
 
-**Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur :** vous pouvez exécuter des tests codés de l’interface utilisateur directement à partir de Visual Studio, comme décrit plus haut dans cette rubrique. Vous pouvez également exécuter des tests automatisés de l’interface utilisateur dans Microsoft Test Manager ou avec Azure Pipelines. Quand les tests codés de l'interface utilisateur sont automatisés, ils doivent interagir avec le Bureau lorsque vous les exécutez, contrairement aux autres tests automatisés.
+**Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur :** vous pouvez exécuter des tests codés de l’interface utilisateur directement à partir de Visual Studio, comme décrit plus haut dans cette rubrique. Vous pouvez également exécuter des tests automatisés de l’interface utilisateur dans Microsoft Test Manager ou avec Azure Pipelines. Quand les tests codés de l’interface utilisateur sont automatisés, ils doivent interagir avec le Bureau au moment où vous les exécutez, contrairement aux autres tests automatisés.
 
 - [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 
@@ -449,20 +443,22 @@ Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de jo
 
 - [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Ajout de la prise en charge des contrôles personnalisés :**  le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement de test codé de l'interface utilisateur de l'IU de Microsoft Excel. Toutefois, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prendra en charge un contrôle personnalisé.
+**Ajout de la prise en charge des contrôles personnalisés :**  le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l’interface utilisateur de Microsoft Excel. Cependant, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prend en charge un contrôle personnalisé.
 
 - [Activer les tests codés de l’interface utilisateur de vos contrôles](../test/enable-coded-ui-testing-of-your-controls.md)
 
 - [Étendre des tests codés de l’interface utilisateur et des enregistrements des actions](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour plus d’informations sur les tests manuels, consultez [Exécuter des tests manuels avec Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
+Les tests codés de l’interface utilisateur servent souvent à automatiser les tests manuels. Pour plus d’informations sur les tests manuels, consultez [Exécuter des tests manuels avec Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Enregistrer et réexécuter des tests manuels](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Créer un test codé d’interface utilisateur pour tester une application UWP](test-uwp-app-with-coded-ui-test.md)
+- [Créer un test codé de l’interface utilisateur pour tester une application UWP](test-uwp-app-with-coded-ui-test.md)
 - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
 - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
 - [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md)

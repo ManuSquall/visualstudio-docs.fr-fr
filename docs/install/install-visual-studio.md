@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692324"
 ---
 # <a name="install-visual-studio"></a>Installer Visual Studio
 
@@ -203,7 +203,7 @@ Par défaut, le programme d’installation essaie d’installer la langue du sys
 
 Une autre façon de changer la langue par défaut consiste à exécuter le programme d’installation à partir de la ligne de commande. Par exemple, vous pouvez forcer le programme d’installation à s’exécuter en anglais en utilisant la commande suivante : `vs_installer.exe --locale en-US`. Le programme d’installation enregistre ce paramètre pour une prochaine exécution. Le programme d’installation prend en charge les jetons de langue suivants : zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru et tr-tr.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Étape 7 : Changer l’emplacement d’installation (facultatif)
+## <a name="step-7---select-the-installation-location-optional"></a>Étape 7 – Sélectionner l’emplacement d’installation (facultatif)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
-  ![Visual Studio 2019 - Changer l’emplacement d’installation](media/vs-2019/vs-installer-installation-locations.png "Changer l’emplacement d’installation")
+  ![Visual Studio 2019 – Sélectionner des emplacements d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionner l’emplacement d’installation")
 
 ::: moniker-end
 

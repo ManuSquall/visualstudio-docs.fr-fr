@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948381"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805364"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
 
@@ -86,4 +86,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure gratuits.
+Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure.
