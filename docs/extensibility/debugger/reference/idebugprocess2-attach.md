@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de41c3f611383afabfd6fe051edb8dbe83d266b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871287"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202767"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Attache le Gestionnaire de session de débogage (SDM) au processus.
@@ -42,22 +45,18 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pCallback`
+## <a name="parameters"></a>Paramètres
+`pCallback`\
+[in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet qui est utilisé pour la notification d’événement de débogage.
 
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet qui est utilisé pour la notification d’événement de débogage.
+`rgguidSpecificEngines`\
+[in] Tableau de GUID des moteurs de débogage à utiliser pour déboguer des programmes en cours d’exécution dans le processus. Ce paramètre peut être une valeur null. Pour plus d’informations, consultez la section Notes.
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in] Le nombre de débogage moteurs dans le `rgguidSpecificEngines` tableau et la taille de la `rghrEngineAttach` tableau.
 
- [in] Tableau de GUID des moteurs de débogage à utiliser pour déboguer des programmes en cours d’exécution dans le processus. Ce paramètre peut être une valeur null. Pour plus d’informations, consultez la section Notes.
-
- `celtSpecificEngines`
-
- [in] Le nombre de débogage moteurs dans le `rgguidSpecificEngines` tableau et la taille de la `rghrEngineAttach` tableau.
-
- `rghrEngineAttach`
-
- [in, out] Un tableau des codes HRESULT retourné par les moteurs de débogage. La taille de ce tableau est spécifiée dans le `celtSpecificEngines` paramètre. Chaque code est généralement `S_OK` ou `S_ATTACH_DEFERRED`. Ce dernier indique que l’Allemagne est actuellement attaché à aucun programme.
+`rghrEngineAttach`\
+[in, out] Un tableau des codes HRESULT retourné par les moteurs de débogage. La taille de ce tableau est spécifiée dans le `celtSpecificEngines` paramètre. Chaque code est généralement `S_OK` ou `S_ATTACH_DEFERRED`. Ce dernier indique que l’Allemagne est actuellement attaché à aucun programme.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant présente les autres valeurs possibles.

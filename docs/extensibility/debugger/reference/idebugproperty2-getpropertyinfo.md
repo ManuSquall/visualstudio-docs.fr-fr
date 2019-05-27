@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: cefde77199f4348cb93fd387291f3a991bf4d50c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457732"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211475"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 Obtient le [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure qui décrit une propriété.
@@ -50,29 +50,23 @@ int GetPropertyInfo ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `dwFields`\
+`dwFields`\
+[in] Une combinaison de valeurs à partir de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie quels champs doivent être remplis dans la `pPropertyInfo` structure.
 
- [in] Une combinaison de valeurs à partir de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie quels champs doivent être remplis dans la `pPropertyInfo` structure.
+`nRadix`\
+[in] Base à utiliser dans toutes les informations numériques de mise en forme.
 
- `nRadix`\
+`dwTimeout`\
+[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
- [in] Base à utiliser dans toutes les informations numériques de mise en forme.
+`rgpArgs`\
+[in, out] Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
 
- `dwTimeout`\
+`dwArgCount`\
+[in] Réservé pour une utilisation ultérieure ; la valeur zéro.
 
- [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
-
- `rgpArgs`\
-
- [in, out] Réservé pour une utilisation ultérieure ; la valeur est une valeur null.
-
- `dwArgCount`\
-
- [in] Réservé pour une utilisation ultérieure ; la valeur zéro.
-
- `pPropertyInfo`\
-
- [out] Un [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure est remplie avec la description de la propriété.
+`pPropertyInfo`\
+[out] Un [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure est remplie avec la description de la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.

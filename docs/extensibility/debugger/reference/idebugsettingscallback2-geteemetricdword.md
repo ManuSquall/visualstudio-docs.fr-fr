@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457364"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212138"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Récupère une valeur qui correspond à la mesure spécifiée de l’évaluateur d’expression.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `guidLang`\
+`guidLang`\
+[in] Identificateur unique du langage de programmation.
 
- [in] Identificateur unique du langage de programmation.
+`guidVendor`\
+[in] Identificateur unique du fournisseur.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nom de la mesure.
 
- [in] Identificateur unique du fournisseur.
-
- `pszMetric`\
-
- [in] Nom de la mesure.
-
- `pdwValue`\
-
- [out] Retourne la valeur qui correspond à la chaîne de métrique.
+`pdwValue`\
+[out] Retourne la valeur qui correspond à la chaîne de métrique.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875183"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203319"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Récupère le texte à partir de la position spécifiée dans le document.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pos`
+## <a name="parameters"></a>Paramètres
+`pos`\
+[in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.
 
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.
+`cMaxChars`\
+[in] Le nombre maximal de caractères du texte à récupérer.
 
-`cMaxChars`
+`pText`\
+[in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.
 
- [in] Le nombre maximal de caractères du texte à récupérer.
-
-`pText`
-
- [in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.
-
-`pcNumChars`
-
- [out] Retourne le nombre de caractères réellement récupérées.
+`pcNumChars`\
+[out] Retourne le nombre de caractères réellement récupérées.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b9df2f37a6e8acb9f8e37d2fbd1a379bc4572b39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226396"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199460"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Interrompt un thread.
@@ -40,9 +40,8 @@ HRESULT Suspend ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pdwSuspendCount`\
-
- [out] Retourne le nombre de suspend après l’opération de suspension.
+`pdwSuspendCount`\
+[out] Retourne le nombre de suspend après l’opération de suspension.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

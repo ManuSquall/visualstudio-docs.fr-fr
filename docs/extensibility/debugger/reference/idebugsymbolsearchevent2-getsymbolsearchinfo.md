@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ca6afee5cce069b212a2f1a88335d2fbce2e0427
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224105"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206901"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Appelé par un gestionnaire d’événements pour récupérer les résultats sur un processus de chargement de symboles.
@@ -44,20 +44,17 @@ int GetSymbolSearchInfo(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pModule`\
+`pModule`\
+[out] Objet IDebugModule3 représentant le module pour lequel les symboles ont été chargés.
 
- [out] Objet IDebugModule3 représentant le module pour lequel les symboles ont été chargés.
-
- `pbstrDebugMessage`\
-
- [in, out] Retourne une chaîne contenant les messages d’erreur à partir du module. S’il n’existe aucune erreur, cette chaîne contient uniquement le nom du module, mais il n’est jamais vide.
+`pbstrDebugMessage`\
+[in, out] Retourne une chaîne contenant les messages d’erreur à partir du module. S’il n’existe aucune erreur, cette chaîne contient uniquement le nom du module, mais il n’est jamais vide.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` ne peut pas être `NULL` et doit être libérée avec `SysFreeString`.
 
- `pdwModuleInfoFlags`\
-
- [out] Une combinaison d’indicateurs de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) énumération qui indique si tous les symboles ont été chargés.
+`pdwModuleInfoFlags`\
+[out] Une combinaison d’indicateurs de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) énumération qui indique si tous les symboles ont été chargés.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

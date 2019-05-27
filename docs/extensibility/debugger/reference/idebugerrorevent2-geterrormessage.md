@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920163"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199942"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Retourne des informations qui permet la construction d’un message d’erreur explicite.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pMessageType`
+## <a name="parameters"></a>Paramètres
+`pMessageType`\
+[out] Retourne une valeur de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) énumération, qui décrit le type de message.
 
- [out] Retourne une valeur de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) énumération, qui décrit le type de message.
+`pbstrErrorFormat`\
+[out] Le format du message à l’utilisateur final (consultez « Remarques » pour plus d’informations).
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Le code d’erreur le message concerne.
 
- [out] Le format du message à l’utilisateur final (consultez « Remarques » pour plus d’informations).
+`pdwType`\
+[out] Gravité de l’erreur (utiliser les constantes MB_XXX pour `MessageBox`; par exemple, `MB_EXCLAMATION` ou `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Chemin d’accès à un fichier d’aide (défini à une valeur null s’il n’existe aucun fichier d’aide).
 
- [out] Le code d’erreur le message concerne.
-
- `pdwType`
-
- [out] Gravité de l’erreur (utiliser les constantes MB_XXX pour `MessageBox`; par exemple, `MB_EXCLAMATION` ou `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Chemin d’accès à un fichier d’aide (défini à une valeur null s’il n’existe aucun fichier d’aide).
-
- `pdwHelpId`
-
- [out] ID de la rubrique d’aide à afficher (défini à 0 s’il n’existe aucune rubrique d’aide).
+`pdwHelpId`\
+[out] ID de la rubrique d’aide à afficher (défini à 0 s’il n’existe aucune rubrique d’aide).
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

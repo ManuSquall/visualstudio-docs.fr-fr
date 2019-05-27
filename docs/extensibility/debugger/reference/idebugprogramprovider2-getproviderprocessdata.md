@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: dc0884597454cf50cb5540d61b865dfe7686c25f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459009"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203778"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Récupère une liste de programmes en cours d’exécution à partir d’un processus spécifié.
@@ -48,9 +48,8 @@ int GetProviderProcessData(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `Flags`\
-
- [in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :
+`Flags`\
+[in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :
 
 |Indicateur|Description|
 |----------|-----------------|
@@ -59,21 +58,17 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à mais pas lancé par le débogueur.|
 |`PFLAG_GET_PROGRAM_NODES`|L’appelant demande une liste de nœuds de programme à retourner.|
 
- `pPort`\
+`pPort`\
+[in] Le port, le processus appelant s’exécute sur.
 
- [in] Le port, le processus appelant s’exécute sur.
+`processId`\
+[in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.
 
- `processId`\
+`EngineFilter`\
+[in] Un tableau de GUID pour les moteurs de débogage affecté pour déboguer ce processus (ces seront utilisés pour filtrer les programmes qui sont en réalité retournées selon ce que les moteurs fournis en charge ; si aucun moteur n’est spécifié, tous les programmes seront retourné).
 
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.
-
- `EngineFilter`\
-
- [in] Un tableau de GUID pour les moteurs de débogage affecté pour déboguer ce processus (ces seront utilisés pour filtrer les programmes qui sont en réalité retournées selon ce que les moteurs fournis en charge ; si aucun moteur n’est spécifié, tous les programmes seront retourné).
-
- `pProcess`\
-
- [out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure est remplie avec les informations demandées.
+`pProcess`\
+[out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure est remplie avec les informations demandées.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

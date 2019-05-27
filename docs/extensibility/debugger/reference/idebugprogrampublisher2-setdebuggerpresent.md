@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: daac325e80e91423ed641d486598ed95d0e76b6f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458964"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211654"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Indique le serveur de publication du programme qu’un débogueur est présent et en cours d’exécution.
@@ -40,9 +40,8 @@ int SetDebuggerPresent(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `fDebuggerPresent`\
-
- [in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.
+`fDebuggerPresent`\
+[in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7158649ee3965127b5bdeba42619eaa676cfaa0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aed98522d98162c13d6cfbcbc61df2a989f35434
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458918"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211630"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Récupère une liste des enfants de la propriété.
@@ -52,33 +52,26 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `dwFields`\
+`dwFields`\
+[in] Une combinaison d’indicateurs de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie les champs dans la liste énumérée [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures doivent être renseignés.
 
- [in] Une combinaison d’indicateurs de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) énumération qui spécifie les champs dans la liste énumérée [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structures doivent être renseignés.
+`dwRadix`\
+[in] Spécifie la base à utiliser dans toutes les informations numériques de mise en forme.
 
- `dwRadix`\
+`guidFilter`\
+[in] GUID du filtre utilisé avec le `dwAttribFilter` et `pszNameFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, `guidFilterLocals` filtres pour les variables locales.
 
- [in] Spécifie la base à utiliser dans toutes les informations numériques de mise en forme.
+`dwAttribFilter`\
+[in] Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui spécifie le type d’objets à énumérer, par exemple `DBG_ATTRIB_METHOD` pour toutes les méthodes qui peuvent être des enfants de cette propriété. Utilisé en association avec le `guidFilter` et `pszNameFilter` paramètres.
 
- `guidFilter`\
+`pszNameFilter`\
+[in] Le nom du filtre utilisé avec le `guidFilter` et `dwAttribFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, ce paramètre aux filtres de « MyX » pour tous les enfants avec le nom « MyX ».
 
- [in] GUID du filtre utilisé avec le `dwAttribFilter` et `pszNameFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, `guidFilterLocals` filtres pour les variables locales.
+`dwTimeout`\
+[in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
- `dwAttribFilter`\
-
- [in] Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui spécifie le type d’objets à énumérer, par exemple `DBG_ATTRIB_METHOD` pour toutes les méthodes qui peuvent être des enfants de cette propriété. Utilisé en association avec le `guidFilter` et `pszNameFilter` paramètres.
-
- `pszNameFilter`\
-
- [in] Le nom du filtre utilisé avec le `guidFilter` et `dwAttribFilter` paramètres pour sélectionner les `DEBUG_PROPERTY_INFO` enfants doivent être énumérés. Par exemple, ce paramètre aux filtres de « MyX » pour tous les enfants avec le nom « MyX ».
-
- `dwTimeout`\
-
- [in] Spécifie la durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
-
- `ppEnum`\
-
- [out] Retourne un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet contenant une liste des propriétés enfants.
+`ppEnum`\
+[out] Retourne un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet contenant une liste des propriétés enfants.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.

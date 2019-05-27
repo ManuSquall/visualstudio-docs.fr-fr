@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e9a40db04342bcf75f6099c9143c38bf8b83482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872461"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210039"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 Obtient l’alias associé à cet objet, le cas échéant.
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppAlias`
-
- [out] Retourne un [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) de l’objet représentant l’alias de cet objet ; sinon, retourne une valeur null.
+## <a name="parameters"></a>Paramètres
+`ppAlias`\
+[out] Retourne un [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) de l’objet représentant l’alias de cet objet ; sinon, retourne une valeur null.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

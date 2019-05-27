@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5701df9085de7a63e7f09ea37c28244897122b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb62493170cf393a3a46b14586f6dcdc4f762d76
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921256"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210050"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 Détermine si la position du document se trouve dans le document donné.
@@ -36,10 +39,9 @@ int IsPositionInDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pDoc`
-
- [in] Le [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objet qui représente le candidat de document conteneur.
+## <a name="parameters"></a>Paramètres
+`pDoc`\
+[in] Le [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objet qui représente le candidat de document conteneur.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

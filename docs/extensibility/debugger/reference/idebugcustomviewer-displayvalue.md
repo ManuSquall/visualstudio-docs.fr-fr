@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921618"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205170"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Cette méthode est appelée pour afficher la valeur spécifiée.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `hwnd`
+## <a name="parameters"></a>Paramètres
+`hwnd`\
+[in] Fenêtre parente
 
- [in] Fenêtre parente
+`dwID`\
+[in] ID de visionneuses personnalisées qui prennent en charge plusieurs types.
 
- `dwID`
+`pHostServices`\
+[in] Réservée. Toujours défini sur null.
 
- [in] ID de visionneuses personnalisées qui prennent en charge plusieurs types.
-
- `pHostServices`
-
- [in] Réservée. Toujours défini sur null.
-
- `pDebugProperty`
-
- [in] Interface qui peut être utilisé pour récupérer la valeur à afficher.
+`pDebugProperty`\
+[in] Interface qui peut être utilisé pour récupérer la valeur à afficher.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00c78b4390d519cb8b37d0af17e1e61a8127d080
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8d97d7d67252596ccc9c652f09cc433b6dd5b053
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458927"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211642"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Supprime un nœud de programme spécifié à partir de la disponibilité pour déboguer les moteurs (DEs) et le Gestionnaire de session de débogage (SDM).
@@ -40,9 +40,8 @@ int UnpublishProgramNode(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pProgramNode`\
-
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet qui représente le nœud de programme en cours de suppression.
+`pProgramNode`\
+[in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet qui représente le nœud de programme en cours de suppression.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

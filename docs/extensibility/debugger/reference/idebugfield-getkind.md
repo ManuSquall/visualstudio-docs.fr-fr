@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9967351e4b0654a21cab21c2f17eedcbcb471fff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7afcf34153c6910820068cfbea7e67b08568223a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919399"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212185"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 Cette méthode obtient le type de champ.
@@ -36,10 +39,9 @@ int GetKind(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwKind`
-
- [out] Retourne le type de champ sous la forme d’une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.
+## <a name="parameters"></a>Paramètres
+`pdwKind`\
+[out] Retourne le type de champ sous la forme d’une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
