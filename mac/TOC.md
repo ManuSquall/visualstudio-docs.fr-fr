@@ -22,7 +22,8 @@
 ## [Création de nouveaux projets](create-new-projects.md)
 ## [Ajout et suppression d’éléments de projet](add-and-remove-project-items.md)
 ## [Gestion des solutions et des propriétés des projets](managing-solutions-and-project-properties.md)
-## [Gestion des références dans un projet](managing-references-in-a-project.md)
+## Gestion des références dans un projet
+### [Vue d’ensemble](managing-references-in-a-project.md)
 ### [Procédure pas à pas : inclusion d’un package NuGet dans votre projet](nuget-walkthrough.md)
 ## [Gestion des ressources d’application](managing-app-resources.md)
 ## [Guide pratique pour ouvrir plusieurs solutions ou instances](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Actions de génération](build-actions.md)
 ## [Guide pratique pour définir plusieurs projets de démarrage](set-startup-projects.md)
 ## [Personnalisation du système de génération](customizing-build-system.md)
-## [Configurations](configurations.md)
+## Configurations
+### [Présentation des configurations de build](configurations.md)
 ### [Créer et modifier des configurations](create-and-edit-configurations.md)
 
 # Gestion de version
@@ -67,14 +69,18 @@
 
 # Charges de travail
 ## [Charges de travail disponibles](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [Support de .NET Core](net-core-support.md)
+### [Générer votre première application web ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript et TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Vue d’ensemble](azure-workload.md)
 ### [Introduction à Azure Functions](azure-functions.md)
 ### [Tutoriel : Azure Functions](azure-functions-lab.md)
 ### [Services connectés](connected-services.md)
-## [Développement de jeux Unity](unity-tools.md)
+## Développement de jeux Unity
+### [Développement de jeux Unity](unity-tools.md)
 ### [Installation](setup-vsmac-tools-unity.md)
 ### [Utilisation des outils Unity](using-vsmac-tools-unity.md)
 ### [Utilisation de .NET 4.x dans Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

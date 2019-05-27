@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: Effectuer une migration à partir d’une analyse statique du code
               href: fxcop-analyzers.yml
+            - name: Règles transférées
+              href: fxcop-rule-port-status.md
         - name: FAQ sur les Analyseurs
           href: analyzers-faq.md
         - name: Installer des analyseurs Roslyn

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0aff4ccea937536530d74dde13a5ba8a7b14bca7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414049"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205670"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 Cette méthode obtient les utilitaires machine pour un serveur.
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppUtil`
-
- [out] Retourne un `IDebugMDMUtil2_V7` interface qui représente les informations sur les utilitaires des machine.
+## <a name="parameters"></a>Paramètres
+`ppUtil`\
+[out] Retourne un `IDebugMDMUtil2_V7` interface qui représente les informations sur les utilitaires des machine.
 
 ## <a name="return-value"></a>Valeur de retour
  Retourne toujours `E_NOTIMPL`, indiquant que la méthode n’est pas implémentée.

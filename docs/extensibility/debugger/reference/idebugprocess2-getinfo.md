@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2970a4d2c65c56ab2e16ca51dbca6556bee1d040
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871094"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202625"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Obtient une description du processus.
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `Fields`
+## <a name="parameters"></a>Paramètres
+`Fields`\
+[in] Une combinaison de valeurs à partir de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) énumération qui spécifie les champs de la `pProcessInfo` paramètre doivent être renseignés.
 
- [in] Une combinaison de valeurs à partir de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) énumération qui spécifie les champs de la `pProcessInfo` paramètre doivent être renseignés.
-
- `pProcessInfo`
-
- [out] Un [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure est remplie avec une description du processus.
+`pProcessInfo`\
+[out] Un [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure est remplie avec une description du processus.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

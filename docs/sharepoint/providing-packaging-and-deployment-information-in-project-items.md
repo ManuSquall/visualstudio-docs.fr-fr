@@ -1,5 +1,5 @@
 ---
-title: En fournissant le Packaging and Deployment Information in Project Items | Microsoft Docs
+title: Informations de Packaging and deployment dans les éléments de projet
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550483"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177712"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fournir des informations d’empaquetage et de déploiement dans les éléments de projet
   Tous les éléments de projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ont des propriétés que vous pouvez utiliser pour fournir des données supplémentaires lorsque le projet est déployé sur SharePoint. Ces propriétés sont les suivantes :
@@ -57,7 +57,7 @@ ms.locfileid: "62550483"
 
  Valeurs de propriété de fonctionnalité identiques à partir de tous les éléments de projet sont fusionnées dans le manifeste de fonctionnalité. Toutefois, si deux éléments de projet différents spécifient la même clé de propriété de fonctionnalité avec des valeurs non correspondantes, une erreur de validation se produit.
 
- Pour ajouter des propriétés de la fonctionnalité directement dans le fichier de fonctionnalité (*.feature*), appelez le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] méthode du modèle objet SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si vous utilisez cette méthode, n’oubliez pas que la même règle sur l’ajout de valeurs de propriété de fonctionnalité identiques dans les propriétés de fonctionnalité s’applique également aux propriétés ajoutées directement au fichier de fonctionnalité.
+ Pour ajouter des propriétés de la fonctionnalité directement dans le fichier de fonctionnalité ( *.feature*), appelez le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] méthode du modèle objet SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Si vous utilisez cette méthode, n’oubliez pas que la même règle sur l’ajout de valeurs de propriété de fonctionnalité identiques dans les propriétés de fonctionnalité s’applique également aux propriétés ajoutées directement au fichier de fonctionnalité.
 
 ## <a name="feature-receiver"></a>Récepteur de fonctionnalité
  Récepteurs de fonctionnalité sont la fonctionnalité qui contient le code qui s’exécute lorsque certains événements se produisent à un élément de projet. Par exemple, vous pouvez définir des récepteurs de fonctionnalité qui s’exécutent lorsque la fonctionnalité est installée, activée ou mis à niveau. Une façon d’ajouter un récepteur de fonctionnalité consiste à ajouter directement à une fonctionnalité comme décrit dans [procédure pas à pas : Ajout de récepteurs d’événements de fonctionnalité](../sharepoint/walkthrough-add-feature-event-receivers.md). Une autre méthode consiste à référencer un nom de classe de récepteur de fonctionnalité et d’un assembly dans le **récepteur de fonctionnalité** propriété.
@@ -68,7 +68,7 @@ ms.locfileid: "62550483"
 ### <a name="reference-method"></a>Reference (méthode)
  Une autre façon d’ajouter un récepteur de fonctionnalité consiste à l’aide de la **récepteur de fonctionnalité** propriété d’un élément de projet pour référencer un assembly de récepteur de fonctionnalité. La valeur de propriété de récepteur de fonctionnalité a deux sous-propriétés : **Assembly** et **nom de la classe**. L’assembly doit utiliser son complet, nom de « forts » et le nom de classe doivent être le nom de type complet. Pour plus d’informations, consultez [Assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkID=169573). Après avoir déployé la solution vers SharePoint, la fonctionnalité utilise le récepteur de fonctionnalité référencée pour gérer les événements de fonctionnalité.
 
- Solution heure de création, la fonctionnalité de valeurs de propriété de récepteur dans la fonctionnalité et ses projets fusionnent pour définir les attributs ReceiverAssembly et ReceiverClass de l’élément de fonctionnalité dans le manifeste de fonctionnalité de la solution SharePoint (*.wsp* ) fichier. Par conséquent, si les valeurs de propriété Assembly et le nom de classe d’un élément de projet et une fonctionnalité sont spécifiées, les valeurs de propriété des élément et fonctionnalité de projet doivent correspondre. Si les valeurs ne correspondent pas, vous recevrez une erreur de validation. Si vous voulez un élément de projet pour référencer un assembly de récepteur de fonctionnalité différente de celle sa fonctionnalité, déplacez-le vers une autre fonctionnalité.
+ Solution heure de création, la fonctionnalité de valeurs de propriété de récepteur dans la fonctionnalité et ses projets fusionnent pour définir les attributs ReceiverAssembly et ReceiverClass de l’élément de fonctionnalité dans le manifeste de fonctionnalité de la solution SharePoint ( *.wsp* ) fichier. Par conséquent, si les valeurs de propriété Assembly et le nom de classe d’un élément de projet et une fonctionnalité sont spécifiées, les valeurs de propriété des élément et fonctionnalité de projet doivent correspondre. Si les valeurs ne correspondent pas, vous recevrez une erreur de validation. Si vous voulez un élément de projet pour référencer un assembly de récepteur de fonctionnalité différente de celle sa fonctionnalité, déplacez-le vers une autre fonctionnalité.
 
  Si vous référencez un assembly de récepteur de fonctionnalité qui n’est pas déjà sur le serveur, vous devez également inclure le fichier d’assembly dans le package ; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne l’ajoutez pas pour vous. Lorsque vous déployez la fonctionnalité, le fichier d’assembly est copié pour que le système [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] ou le dossier Bin dans le répertoire physique SharePoint. Pour plus d’informations, consultez Comment : [Guide pratique pour Ajouter et supprimer des assemblys supplémentaires](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 

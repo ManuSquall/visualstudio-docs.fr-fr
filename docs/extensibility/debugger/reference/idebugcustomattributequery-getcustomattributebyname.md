@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f255d509d69741dd99c9f6dac3ce298d7e5fa0bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921670"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205291"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 Récupère un attribut personnalisé est fonction de son nom.
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pszCustomAttributeName`
+## <a name="parameters"></a>Paramètres
+`pszCustomAttributeName`\
+[in] Nom de l’attribut personnalisé.
 
- [in] Nom de l’attribut personnalisé.
-
-`ppBlob`
-
+`ppBlob`\
 [in, out] Tableau d’octets qui contient les données d’attribut personnalisé.
 
-`pdwLen`
-
- [out] Longueur en octets de la `ppBlob` paramètre.
+`pdwLen`\
+[out] Longueur en octets de la `ppBlob` paramètre.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`. Si l’attribut personnalisé n’existe pas, retourne `S_FALSE`. Sinon, retourne un code d'erreur.

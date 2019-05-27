@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: bc49529f5652475ad9f7528fd229e0354ee055d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457291"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212047"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Récupère la chaîne de valeur de la métrique de fonction de son nom.
@@ -45,21 +45,17 @@ private int GetMetricString(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pszType`\
+`pszType`\
+[in] Type de la mesure.
 
- [in] Type de la mesure.
+`guidSection`\
+[in] Identificateur unique de la section.
 
- `guidSection`\
+`pszMetric`\
+[in] Nom de la mesure.
 
- [in] Identificateur unique de la section.
-
- `pszMetric`\
-
- [in] Nom de la mesure.
-
- `pbstrValue`\
-
- [out] Retourne la chaîne de valeur de la mesure.
+`pbstrValue`\
+[out] Retourne la chaîne de valeur de la mesure.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

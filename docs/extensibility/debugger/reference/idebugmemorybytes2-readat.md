@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873309"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210559"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lit une séquence d’octets, en commençant à un emplacement donné.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pStartContext`
+## <a name="parameters"></a>Paramètres
+`pStartContext`\
+[in] Le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui spécifie l’emplacement où commencer la lecture des octets.
 
- [in] Le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui spécifie l’emplacement où commencer la lecture des octets.
+`dwCount`\
+[in] Le nombre d’octets à lire. Spécifie également la longueur de la `rgbMemory` tableau.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Tableau rempli avec les octets réellement lus.
 
- [in] Le nombre d’octets à lire. Spécifie également la longueur de la `rgbMemory` tableau.
+`pdwRead`\
+[out] Retourne le nombre d’octets contigus réellement lus.
 
- `rgbMemory`
-
- [in, out] Tableau rempli avec les octets réellement lus.
-
- `pdwRead`
-
- [out] Retourne le nombre d’octets contigus réellement lus.
-
- `pdwUnreadable`
-
- [in, out] Retourne le nombre d’octets illisibles. Peut-être une valeur null si le client ne souhaite pas le nombre d’octets illisibles.
+`pdwUnreadable`\
+[in, out] Retourne le nombre d’octets illisibles. Peut-être une valeur null si le client ne souhaite pas le nombre d’octets illisibles.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

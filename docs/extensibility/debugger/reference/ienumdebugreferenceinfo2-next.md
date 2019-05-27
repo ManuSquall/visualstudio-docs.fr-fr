@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e87bae653b5afd3016a8ce4f622c0fc9ac73692
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: eeb1aba565f5cf6e6bda390876b8de2af81f06a6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458219"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212919"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 Retourne l’ensemble suivant d’éléments de l’énumération.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `celt`\
+`celt`\
+[in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
 
- [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
+`rgelt`\
+[in, out] Tableau de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) éléments doit être renseigné.
 
- `rgelt`\
-
- [in, out] Tableau de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) éléments doit être renseigné.
-
- `pceltFetched`\
-
- [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
+`pceltFetched`\
+[out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919997"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201044"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analyse une expression sous forme de texte pour une évaluation ultérieure.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pszCode`
+## <a name="parameters"></a>Paramètres
+`pszCode`\
+[in] L’expression à analyser.
 
- [in] L’expression à analyser.
+`dwFlags`\
+[in] Une combinaison d’indicateurs de la [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) énumération qui contrôle l’analyse.
 
-`dwFlags`
+`nRadix`\
+[in] La base à utiliser lors de l’analyse de toutes les informations numériques dans `pszCode`.
 
- [in] Une combinaison d’indicateurs de la [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) énumération qui contrôle l’analyse.
+`ppExpr`\
+[out] Retourne le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objet qui représente l’expression analysée, ce qui est prête pour la liaison et d’évaluation.
 
-`nRadix`
+`pbstrError`\
+[out] Retourne le message d’erreur si l’expression contient une erreur.
 
- [in] La base à utiliser lors de l’analyse de toutes les informations numériques dans `pszCode`.
-
-`ppExpr`
-
- [out] Retourne le [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objet qui représente l’expression analysée, ce qui est prête pour la liaison et d’évaluation.
-
-`pbstrError`
-
- [out] Retourne le message d’erreur si l’expression contient une erreur.
-
-`pichError`
-
- [out] Retourne l’index de caractère de l’erreur dans `pszCode` si l’expression contient une erreur.
+`pichError`\
+[out] Retourne l’index de caractère de l’erreur dans `pszCode` si l’expression contient une erreur.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

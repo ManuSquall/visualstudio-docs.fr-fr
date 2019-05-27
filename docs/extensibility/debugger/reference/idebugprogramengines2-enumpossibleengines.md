@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917030"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211146"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Retourne les GUID de tous les moteurs de débogage possible (dé) qui peuvent déboguer ce programme.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `celtBuffer`
+## <a name="parameters"></a>Paramètres
+`celtBuffer`\
+[in] Le nombre de GUID de dé à retourner. Il spécifie également la taille maximale de la `rgguidEngines` tableau.
 
- [in] Le nombre de GUID de dé à retourner. Il spécifie également la taille maximale de la `rgguidEngines` tableau.
+`rgguidEngines`\
+[in, out] Un tableau de GUID DE doit être renseigné.
 
- `rgguidEngines`
-
- [in, out] Un tableau de GUID DE doit être renseigné.
-
- `pceltEngines`
-
- [out] Retourne le nombre réel de GUID DE qui sont retournées.
+`pceltEngines`\
+[out] Retourne le nombre réel de GUID DE qui sont retournées.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [C#] 0x8007007A si la mémoire tampon n’est pas assez grande.

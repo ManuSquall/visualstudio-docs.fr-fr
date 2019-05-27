@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06d2c04cdfacc2723e716eff88d3d5acf6c229b6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874611"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199990"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Obtient les informations de résolution des erreurs de point d’arrêt.
@@ -38,13 +41,11 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`dwFields`
-
+## <a name="parameters"></a>Paramètres
+`dwFields`\
 [in] Une combinaison d’indicateurs de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) énumération qui déterminent quels champs de `pErrorResolutionInfo` doivent être remplis.
 
-`pErrorResolutionInfo`
-
+`pErrorResolutionInfo`\
 [in, out] Le [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure est remplie avec la description de la résolution de point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour

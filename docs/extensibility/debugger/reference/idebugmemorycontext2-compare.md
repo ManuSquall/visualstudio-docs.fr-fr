@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873283"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211995"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Compare le contexte de la mémoire pour chaque contexte dans le tableau spécifié de la manière indiquée par des indicateurs de comparaison, retournant le premier contexte qui correspond à un index.
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `compare`
+## <a name="parameters"></a>Paramètres
+`compare`\
+[in] Une valeur comprise entre le [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) énumération qui détermine le type de comparaison.
 
- [in] Une valeur comprise entre le [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) énumération qui détermine le type de comparaison.
+`rgpMemoryContextSet`\
+[in] Un tableau de références à la [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objets à comparer.
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in] Le nombre de contextes dans le `rgpMemoryContextSet` tableau.
 
- [in] Un tableau de références à la [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objets à comparer.
-
- `dwMemoryContextSetLen`
-
- [in] Le nombre de contextes dans le `rgpMemoryContextSet` tableau.
-
- `pdwMemoryContext`
-
- [out] Retourne l’index du premier contexte mémoire qui satisfait à la comparaison.
+`pdwMemoryContext`\
+[out] Retourne l’index du premier contexte mémoire qui satisfait à la comparaison.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_COMPARE_CANNOT_COMPARE` si les deux contextes ne peuvent pas être comparées.

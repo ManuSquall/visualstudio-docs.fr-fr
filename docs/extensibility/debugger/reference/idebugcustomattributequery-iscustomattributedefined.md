@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3afa7f2500d891de314df20fc0ed034c62dfe1a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876035"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205247"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Détermine si l’attribut personnalisé spécifié est défini.
@@ -35,10 +38,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pszCustomAttributeName`
-
- [in] Nom de l’attribut personnalisé.
+## <a name="parameters"></a>Paramètres
+`pszCustomAttributeName`\
+[in] Nom de l’attribut personnalisé.
 
 ## <a name="return-value"></a>Valeur de retour
 Si l’attribut personnalisé est défini, retourne `S_OK`; sinon, retourne `S_FALSE`.
