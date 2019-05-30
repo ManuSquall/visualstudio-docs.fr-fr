@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Fournir la prise en charge de texte masqué dans un Service de langage hérité | Microsoft Docs'
+title: Fournir la prise en charge de texte masqué dans le service de langage hérité
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e710f0ca097ef1808abc661e16cdff34c82bd348
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c228f74ea98286f7a4692eafdde67ecc15ecdea9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418474"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263601"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procédure : Fournir la prise en charge de texte masqué dans un service de langage hérité
 Vous pouvez créer des zones de texte masqué en plus de régions en mode plan. Zones de texte masqué peuvent être contrôlé par le client ou contrôlée par l’éditeur et sont utilisés pour masquer une zone de texte complètement. L’éditeur affiche une zone masquée en tant que lignes horizontales. Un exemple de ceci est le **Script uniquement** dans l’éditeur HTML.

@@ -1,5 +1,6 @@
 ---
-title: La mise à niveau personnalisé Project and Item Templates for Visual Studio 2017 | Microsoft Docs
+title: Mettre à niveau des modèles de projet et d’élément personnalisés pour Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434212"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261802"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 
@@ -26,7 +27,7 @@ Si vous souhaitez créer un modèle de projet ou un élément dans le cadre d’
 
 ## <a name="template-scanning"></a>Modèle d’analyse
 
-Dans les versions précédentes de Visual Studio, **devenv /setup** ou **devenv /installvstemplates** analysé le disque local pour rechercher les modèles de projet et d’élément. À partir de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement de niveau utilisateur par défaut est **%USERPROFILE%\Documents\\< version de Visual Studio\>\Templates\\**. Cet emplacement est utilisé pour les modèles générés par le **projet** > **exporter les modèles...**  commande, si le **importer automatiquement le modèle dans Visual Studio** option est sélectionnée dans l’Assistant.
+Dans les versions précédentes de Visual Studio, **devenv /setup** ou **devenv /installvstemplates** analysé le disque local pour rechercher les modèles de projet et d’élément. À partir de Visual Studio 2017, l’analyse est effectuée uniquement pour l’emplacement au niveau de l’utilisateur. L’emplacement de niveau utilisateur par défaut est **%USERPROFILE%\Documents\\< version de Visual Studio\>\Templates\\** . Cet emplacement est utilisé pour les modèles générés par le **projet** > **exporter les modèles...**  commande, si le **importer automatiquement le modèle dans Visual Studio** option est sélectionnée dans l’Assistant.
 
 Pour d’autres emplacements (non utilisateur), vous devez inclure un fichier manifest(.vstman) qui spécifie l’emplacement et autres caractéristiques du modèle. Le fichier .vstman est généré en même temps que le fichier .vstemplate utilisé pour les modèles. Si vous installez votre extension à l’aide d’un .vsix, faire cela en recompilant de l’extension dans Visual Studio 2017. Mais si vous utilisez un fichier .msi, vous devez apporter les modifications manuellement. Pour obtenir la liste de ce que vous devez faire pour que ces modifications, consultez **mises à niveau pour les Extensions installées avec une. MSI** par la suite de cette page.
 
@@ -34,7 +35,7 @@ Pour d’autres emplacements (non utilisateur), vous devez inclure un fichier ma
 
 1. Ouvrez la solution dans Visual Studio 2017. Vous devrez mettre à niveau le code. Cliquez sur **OK**.
 
-2. Une fois la mise à niveau terminée, vous devrez peut-être modifier la version de la cible d’installation. Dans le projet VSIX, ouvrez le fichier source.extension.vsixmanifest, puis sélectionnez le **cibles d’installation** onglet. Si le **plage de versions** champ est **[14.0]**, cliquez sur **modifier** et modifiez-le pour inclure Visual Studio 2017. Par exemple, vous pouvez la définir **[14.0,15.0]** pour installer l’extension pour Visual Studio 2015 ou Visual Studio 2017, ou pour **[15.0]** pour l’installer dans Visual Studio 2017 uniquement.
+2. Une fois la mise à niveau terminée, vous devrez peut-être modifier la version de la cible d’installation. Dans le projet VSIX, ouvrez le fichier source.extension.vsixmanifest, puis sélectionnez le **cibles d’installation** onglet. Si le **plage de versions** champ est **[14.0]** , cliquez sur **modifier** et modifiez-le pour inclure Visual Studio 2017. Par exemple, vous pouvez la définir **[14.0,15.0]** pour installer l’extension pour Visual Studio 2015 ou Visual Studio 2017, ou pour **[15.0]** pour l’installer dans Visual Studio 2017 uniquement.
 
 3. Recompilez le code.
 

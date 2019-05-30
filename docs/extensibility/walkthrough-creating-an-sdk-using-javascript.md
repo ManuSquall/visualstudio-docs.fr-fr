@@ -3,17 +3,17 @@ title: 'Procédure pas à pas : Création d’un kit de développement à l’a
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796341"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312548"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Procédure pas à pas : Créer un kit de développement à l’aide de JavaScript
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un simple mathématiques SDK comme une Extension Visual Studio (VSIX).  La procédure pas à pas est divisée en différentes parties :
@@ -31,7 +31,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-2. Dans la liste des catégories de modèles, sous **Visual C#**, sélectionnez **extensibilité**, puis sélectionnez le **projet VSIX** modèle.
+2. Dans la liste des catégories de modèles, sous **Visual C#** , sélectionnez **extensibilité**, puis sélectionnez le **projet VSIX** modèle.
 
 3. Dans le **nom** texte, spécifiez `SimpleMathVSIX` et choisissez le **OK** bouton.
 
@@ -96,7 +96,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 14. Dans le menu contextuel pour le **\js\\**  dossier, choisissez **ajouter** > **un nouvel élément**.
 
-15. Sous **éléments Visual c#**, sélectionnez le **Web** catégorie, puis sélectionnez le **fichier JavaScript** élément. Nommez le fichier `arithmetic.js`, puis choisissez le **ajouter** bouton.
+15. Sous **éléments Visual c#** , sélectionnez le **Web** catégorie, puis sélectionnez le **fichier JavaScript** élément. Nommez le fichier `arithmetic.js`, puis choisissez le **ajouter** bouton.
 
 16. Insérez le code suivant dans *arithmetic.js*:
 
@@ -132,7 +132,7 @@ Cette procédure pas à pas explique comment utiliser JavaScript pour créer un 
 
 18. Dans **l’Explorateur de solutions**, dans le menu contextuel pour le **SimpleMathVSIX** de projet, choisissez **Build**.
 
-19. Une fois la build terminée, dans le menu contextuel du projet, choisissez **ouvrir le dossier dans l’Explorateur de fichiers**. Accédez à **\bin\debug\\**et exécutez `SimpleMathVSIX.vsix` pour l’installer.
+19. Une fois la build terminée, dans le menu contextuel du projet, choisissez **ouvrir le dossier dans l’Explorateur de fichiers**. Accédez à **\bin\debug\\** et exécutez `SimpleMathVSIX.vsix` pour l’installer.
 
 20. Choisissez le **installer** bouton et laissez l’installation terminée.
 

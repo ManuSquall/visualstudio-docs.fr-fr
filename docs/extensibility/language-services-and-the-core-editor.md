@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01784cd21bbc0a29a6216525e626a8fa992e0ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27fc9ec55b301dc3355e03e2e86e968752fbbd0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856588"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309535"
 ---
 # <a name="language-services-and-the-core-editor"></a>Services de langage et de l’éditeur principal
 Éditeurs de Visual Studio sont souvent associés à un service de langage. Entre autres choses, un service de langage fournit la coloration syntaxique, la saisie semi-automatique des instructions, IntelliSense et la mise en forme du texte.

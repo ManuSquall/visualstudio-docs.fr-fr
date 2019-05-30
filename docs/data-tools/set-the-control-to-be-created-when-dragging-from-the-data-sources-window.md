@@ -1,5 +1,5 @@
 ---
-title: Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
+title: Définir le contrôle à créer lorsque vous faites glisser à partir de la fenêtre Sources de données
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f43219cc5329b46cdaba052a9f46709ee0af406f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565982"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260956"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework'
+title: Créer un Service de données WCF avec WPF et Entity Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 368d92010da062f2883d63161824e528d5d22c84
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566049"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261082"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simple qui est hébergé dans une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], puis comment y accéder à partir d’une application Windows Forms.
@@ -92,7 +92,7 @@ Dans l’étape suivante, vous allez créer un [!INCLUDE[adonet_edm](../data-too
 
     - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-         - ou -
+         ou
 
     - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
@@ -212,7 +212,7 @@ Dans l’étape suivante, vous créez l’interface utilisateur qui affiche les 
    using NorthwindClient.ServiceReference1;
    ```
 
-5. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
+5. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
 
    ```vb
    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
