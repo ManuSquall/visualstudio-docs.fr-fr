@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926744"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336999"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Créer un système de projet de base, partie 2
 La première procédure pas à pas dans cette série, [créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md), montre comment créer un système de projet de base. Cette procédure pas à pas s’appuie sur le système de projet de base en ajoutant un modèle Visual Studio, une page de propriétés et autres fonctionnalités. Vous devez effectuer la première procédure avant de commencer celle-ci.
@@ -42,7 +42,7 @@ Cette procédure pas à pas explique comment accomplir ces tâches :
 ## <a name="create-a-visual-studio-template"></a>Créer un modèle Visual Studio
 - [Créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md) montre comment créer un modèle de projet de base et l’ajouter au système de projet. Il montre également comment inscrire ce modèle avec Visual Studio à l’aide de la <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attribut, qui écrit le chemin d’accès complet de le *\\Templates\Projects\SimpleProject\\* dossier dans le système Registre.
 
-À l’aide d’un modèle Visual Studio (*.vstemplate* fichier) au lieu d’un modèle de projet de base, vous pouvez contrôler la façon dont le modèle apparaît dans le **nouveau projet** boîte de dialogue et comment les paramètres de modèle remplacée. Un *.vstemplate* fichier est un fichier XML qui décrit la façon dont les fichiers sources doivent être inclus lorsqu’un projet est créé en utilisant le modèle de système de projet. Le système de projet lui-même est généré en collectant les *.vstemplate* fichier et les fichiers source dans un *.zip* de fichiers et déployées en copiant le *.zip* vers un emplacement qui est connus pour Visual Studio. Ce processus est expliqué en détail plus loin dans cette procédure pas à pas.
+À l’aide d’un modèle Visual Studio ( *.vstemplate* fichier) au lieu d’un modèle de projet de base, vous pouvez contrôler la façon dont le modèle apparaît dans le **nouveau projet** boîte de dialogue et comment les paramètres de modèle remplacée. Un *.vstemplate* fichier est un fichier XML qui décrit la façon dont les fichiers sources doivent être inclus lorsqu’un projet est créé en utilisant le modèle de système de projet. Le système de projet lui-même est généré en collectant les *.vstemplate* fichier et les fichiers source dans un *.zip* de fichiers et déployées en copiant le *.zip* vers un emplacement qui est connus pour Visual Studio. Ce processus est expliqué en détail plus loin dans cette procédure pas à pas.
 
 1. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez la solution SimpleProject que vous avez créé en suivant [créer un système de projet de base, partie 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -207,7 +207,7 @@ Nœuds enfants sont créés en modifiant le fichier projet et en ajoutant \<Outp
 
 Cette section montre comment créer un nœud enfant de Console pour le type de projet SimpleProject.
 
-1. Renommer le *\\Templates\Projects\SimpleProject\\* dossier  *\\Templates\Projects\ConsoleApp\\*.
+1. Renommer le *\\Templates\Projects\SimpleProject\\* dossier  *\\Templates\Projects\ConsoleApp\\* .
 
 2. Dans le **propriétés** fenêtre, sélectionnez toutes les cinq fichiers dans le *\\Templates\Projects\ConsoleApp\\* dossier et vérifiez que le **Action de génération**est défini sur **ZipProject**.
 

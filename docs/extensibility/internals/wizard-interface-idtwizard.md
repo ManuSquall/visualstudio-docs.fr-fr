@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IDTWizard interface
 - wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb22e857322cbd1893048392de85768287339198
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bd4e9a650bee4f5f13f1aeab39a59a1c04a253c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330897"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interface de l’Assistant (IDTWizard)
 L’environnement de développement intégré (IDE) utilise le <xref:EnvDTE.IDTWizard> interface pour communiquer avec les Assistants. Assistants doivent implémenter cette interface afin d’être installé dans l’IDE.

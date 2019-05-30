@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350986"
 ---
 # <a name="create-an-options-page"></a>Créer une page d’options
 
@@ -37,7 +37,7 @@ Cette procédure pas à pas crée une page Outils/Options simple qui utilise une
 
 1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX, qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `MyToolsOptionsExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
-2. Ajouter un VSPackage en ajoutant un modèle d’élément de Package Visual Studio nommé `MyToolsOptionsPackage`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#** > **extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à `MyToolsOptionsPackage.cs`. Pour plus d’informations sur la création d’un VSPackage, consultez [créer une extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Ajouter un VSPackage en ajoutant un modèle d’élément de Package Visual Studio nommé `MyToolsOptionsPackage`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#**  > **extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à `MyToolsOptionsPackage.cs`. Pour plus d’informations sur la création d’un VSPackage, consultez [créer une extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Pour créer la grille des propriétés Outils/Options
 
@@ -247,7 +247,7 @@ Cette procédure pas à pas crée une page Outils/Options simple qui utilise une
 
      Ce code appelle <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> pour créer ou récupérer un `OptionPageGrid` instance. `OptionPageGrid` appels <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> pour charger ses options, qui sont des propriétés publiques.
 
-2. Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **MyToolsOptionsCommand** pour afficher la valeur. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *MyToolsOptionsCommand.cs*.
+2. Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **MyToolsOptionsCommand** pour afficher la valeur. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#**  > **extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *MyToolsOptionsCommand.cs*.
 
 3. Dans le *MyToolsOptionsCommand* de fichier, remplacez le corps de la commande `ShowMessageBox` méthode par le code suivant :
 

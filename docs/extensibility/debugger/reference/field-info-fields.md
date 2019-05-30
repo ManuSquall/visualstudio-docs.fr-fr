@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337672"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Spécifie les informations à récupérer sur un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membres
-FIF_FULLNAME Initialize/utiliser le `bstrFullName` champ dans le [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
+## <a name="fields"></a>Champs
+`FIF_FULLNAME`\
+Initialize/utiliser le `bstrFullName` champ dans le [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
 
-FIF_NAME Initialize/utiliser le `bstrName` champ dans le `FIELD_INFO` structure.
+`FIF_NAME`\
+Initialize/utiliser le `bstrName` champ dans le `FIELD_INFO` structure.
 
-FIF_TYPE Initialize/utiliser le `bstrType` champ dans le `FIELD_INFO` structure.
+`FIF_TYPE`\
+Initialize/utiliser le `bstrType` champ dans le `FIELD_INFO` structure.
 
-FIF_MODIFIERS Initialize/utiliser le `bstrModifiers` champ dans le `FIELD_INFO` structure.
+`FIF_MODIFIERS`\
+Initialize/utiliser le `bstrModifiers` champ dans le `FIELD_INFO` structure.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont également passés en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) méthode pour spécifier les champs de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure doivent être initialisées.
@@ -63,7 +70,7 @@ Ces valeurs sont également utilisées dans le `dwFields` membre de la `FIELD_IN
 
 Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : sh.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

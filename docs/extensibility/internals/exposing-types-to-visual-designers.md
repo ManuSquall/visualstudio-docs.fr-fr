@@ -7,17 +7,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04f1c3608159ba305646dc9c39a98d92d7571073
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332271"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types aux concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et le type au moment du design pour afficher un concepteur visuel. Les classes sont chargés à partir d’un ensemble prédéfini d’assemblys qui incluent le jeu complète des dépendances du projet actuel (références plus leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels pour accéder aux classes et des types qui sont définis dans les fichiers générés par les outils personnalisés.

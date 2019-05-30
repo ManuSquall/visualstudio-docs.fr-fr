@@ -3,17 +3,17 @@ title: Modèles d’interaction pour Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7a595190d0fb03c34b12bbace4127a8dd5518a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 306c729c8c908d6d065155fcbfc9cf64adb4f4a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431860"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335312"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modèles d’interaction pour Visual Studio
 ## <a name="overview"></a>Vue d'ensemble

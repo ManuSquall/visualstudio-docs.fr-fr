@@ -13,17 +13,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428769"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331203"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation de symbole
 **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de recherche de symboles. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage contenus dans les différents composants. Les composants incluent des projets Visual Studio, externes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] composants et bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).

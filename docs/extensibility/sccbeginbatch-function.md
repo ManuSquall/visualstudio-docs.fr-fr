@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fd571f967e478b3a03347d6151deb9fc88f62ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bb145358184117046e14b7b598ce6d4bb4586b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333896"
 ---
 # <a name="sccbeginbatch-function"></a>Fonction SccBeginBatch
 Cette fonction démarre une séquence de traitement par lots des opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé pour terminer le lot. Ces lots ne peuvent pas être imbriqués.

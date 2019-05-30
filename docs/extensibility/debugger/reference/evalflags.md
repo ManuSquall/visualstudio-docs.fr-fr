@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVALFLAGS enumeration
 ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9d59262349891a5c0483297039578c5de4a7b72
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a56f7d5fe4741fa887814691eddcf8df93030cd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696270"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337879"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 Spécifie les indicateurs qui contrôlent l’évaluation de l’expression.
@@ -49,27 +52,34 @@ public enum enum_EVALFLAGS {
 }
 ```
 
-## <a name="members"></a>Membres
-EVAL_RETURNVALUE Spécifie que la valeur renvoyée, le cas échéant, être évaluées.
+## <a name="fields"></a>Champs
+`EVAL_RETURNVALUE`\
+Spécifie que la valeur renvoyée, le cas échéant, être évalué.
 
-EVAL_NOSIDEEFFECTS Spécifie que des effets secondaires pas.
+`EVAL_NOSIDEEFFECTS`\
+Spécifie que les effets secondaires ne seront ne pas autorisées.
 
-EVAL_ALLOWBPS Spécifie l’arrêt sur des points d’arrêt.
+`EVAL_ALLOWBPS`\
+Spécifie l’arrêt sur des points d’arrêt.
 
-Spécifie EVAL_ALLOWERRORREPORT rapport d’erreurs à l’hôte pour être autorisée. Principalement utilisé pour l’évaluation de l’expression dans le script dans Internet Explorer.
+`EVAL_ALLOWERRORREPORT`\
+Spécifie le rapport d’erreurs à l’hôte pour être autorisée. Principalement utilisé pour l’évaluation de l’expression dans le script dans Internet Explorer.
 
-Fonctions EVAL_FUNCTION_AS_ADDRESS force doit être évaluée en tant qu’adresses, au lieu d’appeler la fonction.
+`EVAL_FUNCTION_AS_ADDRESS`\
+Fonctions de force à évaluer en tant qu’adresses, au lieu d’appeler la fonction.
 
-Fonction EVAL_NOFUNCEVAL empêche soit évaluée. Par exemple, considérez le `int` jeton dans l’expression `myExpression(int) + 10`. Cette fonction peut être correctement évaluée en tant qu’adresse, mais pas en tant que valeur.
+`EVAL_NOFUNCEVAL`\
+Fonction empêche d’en cours d’évaluation. Par exemple, considérez le `int` jeton dans l’expression `myExpression(int) + 10`. Cette fonction peut être correctement évaluée en tant qu’adresse, mais pas en tant que valeur.
 
-Indicateur EVAL_NOEVENTS pour indiquer que les événements qui se produisent pendant l’évaluation d’expression ne doivent pas être envoyées pour le Gestionnaire de session de débogage (SDM) ou à l’IDE.
+`EVAL_NOEVENTS`\
+Indicateur pour indiquer que les événements qui se produisent pendant l’évaluation d’expression ne doivent pas être envoyées pour le Gestionnaire de session de débogage (SDM) ou à l’IDE.
 
 ## <a name="remarks"></a>Notes
 Ces indicateurs sont passées en tant qu’argument à la [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) méthodes.
 
 Ces indicateurs peuvent être combinées avec une opération OR au niveau du bit.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

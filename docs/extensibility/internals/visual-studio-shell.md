@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a147abd4655c923604dd9ca6696e97aac4944ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332873"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell est l’agent principal d’intégration dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. L’interpréteur de commandes fournit les fonctionnalités nécessaires pour activer les VSPackages partager des services courants. Étant donné que l’objectif architectural de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste à vest des fonctionnalités principales dans les VSPackages, l’interpréteur de commandes est une infrastructure pour fournir des fonctionnalités de base et prend en charge les communications entre son composant VSPackages.

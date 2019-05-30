@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83bbeb7decda65602202813229315101843e0873
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5fd66d3fc31c799bed1c14891c04000374b9a153
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918985"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333141"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsque le programme est chargé, mais avant l’exécution de n’importe quel code.

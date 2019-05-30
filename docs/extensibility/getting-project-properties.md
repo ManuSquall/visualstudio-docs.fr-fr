@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f766be25015081338b887a5b08413e77f5f17f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342524"
 ---
 # <a name="get-project-properties"></a>Obtenir les propriétés du projet
 
@@ -30,7 +30,7 @@ Cette procédure pas à pas montre comment affiche les propriétés de projet da
 
 1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX, qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `ProjectPropertiesExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
-2. Ajouter une fenêtre outil en ajoutant un modèle d’élément de fenêtre d’outil personnalisé nommé `ProjectPropertiesToolWindow`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#** > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à `ProjectPropertiesToolWindow.cs`. Pour plus d’informations sur la création d’une fenêtre Outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Ajouter une fenêtre outil en ajoutant un modèle d’élément de fenêtre d’outil personnalisé nommé `ProjectPropertiesToolWindow`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#**  > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à `ProjectPropertiesToolWindow.cs`. Pour plus d’informations sur la création d’une fenêtre Outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Générez la solution et vérifiez qu’elle est compilée sans erreur.
 
