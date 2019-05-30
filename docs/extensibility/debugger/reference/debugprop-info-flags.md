@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318373"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Spécifie les informations à récupérer sur un objet de propriété de débogage.
@@ -67,32 +70,45 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membres
-DEBUGPROP_INFO_FULLNAME Initialize/utiliser le `bstrFullName` champ.
+## <a name="fields"></a>Champs
+`DEBUGPROP_INFO_FULLNAME`\
+Initialize/utiliser le `bstrFullName` champ.
 
-DEBUGPROP_INFO_NAME Initialize/utiliser le `bstrName` champ.
+`DEBUGPROP_INFO_NAME`\
+Initialize/utiliser le `bstrName` champ.
 
-DEBUGPROP_INFO_TYPE Initialize/utiliser le `bstrType` champ.
+`DEBUGPROP_INFO_TYPE`\
+Initialize/utiliser le `bstrType` champ.
 
-DEBUGPROP_INFO_VALUE Initialize/utiliser le `bstrValue` champ.
+`DEBUGPROP_INFO_VALUE`\
+Initialize/utiliser le `bstrValue` champ.
 
-DEBUGPROP_INFO_ATTRIB Initialize/utiliser le `dwAttrib` champ.
+`DEBUGPROP_INFO_ATTRIB`\
+Initialize/utiliser le `dwAttrib` champ.
 
-DEBUGPROP_INFO_PROP Initialize/utiliser le `pProperty` champ qui contient un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.
+`DEBUGPROP_INFO_PROP`\
+Initialize/utiliser le `pProperty` champ qui contient un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
+`DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
+Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
 
-DEBUGPROP_INFO_VALUE_NOFUNCEVAL déconseillée.
+`DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
+Obsolète.
 
-Faire DEBUGPROP_INFO_VALUE_RAW pas retourner des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).
+`DEBUGPROP_INFO_VALUE_RAW`\
+Ne retournent pas des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING faire pas retourner les valeurs synthétisées spéciales (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).
+`DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
+Ne retournent pas les valeurs synthétisées spéciales (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).
 
-DEBUGPROP_INFO_NONE indique qu’aucun indicateur est défini.
+`DEBUGPROP_INFO_NONE`\
+Spécifie qu’aucun indicateur n’est défini.
 
-DEBUGPROP_INFO_STANDARD Initialize/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.
+`DEBUGPROP_INFO_STANDARD`\
+Initialize/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.
 
-DEBUGPROP_INFO_All indique un masque de tous les indicateurs.
+`DEBUGPROP_INFO_All`\
+Indique un masque de tous les indicateurs.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), et [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) méthodes pour indiquer quels sont les champs à initialiser le [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.
@@ -101,7 +117,7 @@ Ces valeurs sont également utilisées pour le `dwFields` membre de la `DEBUG_PR
 
 Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop
