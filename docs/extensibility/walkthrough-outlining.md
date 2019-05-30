@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320622"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 Configurer les fonctionnalités reposant sur le langage comme le mode plan en définissant les types de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre type de contenu et d’extension de nom fichier et s’appliquent de la définition de la région à uniquement à ce type ou appliquer les définitions de la région à un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment définir et afficher les régions en mode plan.
@@ -34,9 +34,9 @@ Configurer les fonctionnalités reposant sur le langage comme le mode plan en d�
 3. Supprimez les fichiers de classe existants.
 
 ## <a name="implement-an-outlining-tagger"></a>Implémenter une balise en mode plan
- Régions en mode plan sont marquées par un type de balise (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Cette balise fournit la norme de comportement de mise en relief. La zone peut être développée ou réduite. La région avec contour est marquée par un signe Plus (**+**) s’il est réduit ou un signe moins (**-**) si elle est développée, et la région développée est délimitée par une ligne verticale.
+ Régions en mode plan sont marquées par un type de balise (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Cette balise fournit la norme de comportement de mise en relief. La zone peut être développée ou réduite. La région avec contour est marquée par un signe Plus ( **+** ) s’il est réduit ou un signe moins ( **-** ) si elle est développée, et la région développée est délimitée par une ligne verticale.
 
- Les étapes suivantes montrent comment définir une balise qui crée des régions en mode plan pour toutes les régions délimitées par des crochets (**[**,**]**).
+ Les étapes suivantes montrent comment définir une balise qui crée des régions en mode plan pour toutes les régions délimitées par des crochets ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Pour implémenter une balise en mode plan
 
@@ -129,7 +129,7 @@ Configurer les fonctionnalités reposant sur le langage comme le mode plan en d�
     ]
     ```
 
-4. Il doit y avoir une région en mode plan qui inclut les deux crochets. Vous pourrez cliquer sur le signe moins à gauche de la parenthèse ouverte pour réduire la région en mode plan. Lorsque la région est réduite, le symbole de points de suspension (*...* ) doit apparaître à gauche de la région réduite et une fenêtre contextuelle contenant le texte **texte de pointage** doit apparaître lorsque vous déplacez le pointeur sur le bouton de sélection.
+4. Il doit y avoir une région en mode plan qui inclut les deux crochets. Vous pourrez cliquer sur le signe moins à gauche de la parenthèse ouverte pour réduire la région en mode plan. Lorsque la région est réduite, le symbole de points de suspension ( *...* ) doit apparaître à gauche de la région réduite et une fenêtre contextuelle contenant le texte **texte de pointage** doit apparaître lorsque vous déplacez le pointeur sur le bouton de sélection.
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédure pas à pas : Lier un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

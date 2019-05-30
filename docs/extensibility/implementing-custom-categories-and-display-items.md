@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418841"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321398"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implémenter des catégories personnalisées et afficher les éléments
 Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) par le biais des catégories personnalisées et des éléments d’affichage.
@@ -45,13 +45,13 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
 
 ## <a name="to-create-or-identify-categories"></a>Pour créer ou identifier des catégories
 
-- Construire un type spécial de l’entrée de Registre de catégorie sous *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Construire un type spécial de l’entrée de Registre de catégorie sous *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<version de Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Catégorie >* est le nom non localisé de la catégorie.
 
 - Remplir le Registre avec deux valeurs :
 
-  |Nom|Type|Données|Description|
+  |Name|Type|Données|Description|
   |----------|----------|----------|-----------------|
   |Category|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie.|
   |Package|REG_SZ|GUID|Le GUID du service VSPackage qui prend en charge de la catégorie.|
@@ -60,13 +60,13 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
 
 ## <a name="to-create-or-identify-groups"></a>Pour créer ou identifier des groupes
 
-- Construire un type spécial de l’entrée de Registre de catégorie sous *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >*\FontAndColors\\*  \<groupe >*]*
+- Construire un type spécial de l’entrée de Registre de catégorie sous *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<version de Visual Studio > *\FontAndColors\\*  \<groupe > *]*
 
    *\<groupe >* est le nom non localisé du groupe.
 
 - Remplir le Registre avec deux valeurs :
 
-  |Nom|Type|Données|Description|
+  |Name|Type|Données|Description|
   |----------|----------|----------|-----------------|
   |Category|REG_SZ|GUID|Un GUID est créé pour identifier le groupe.|
   |Package|REG_SZ|GUID|Le GUID du service qui prend en charge de la catégorie.|
@@ -113,7 +113,7 @@ Un VSPackage peut fournir de contrôle des polices et couleurs du texte de sa à
 
      L’IDE appelle la méthode appropriée suivant les modifications de l’utilisateur de la **polices et couleurs** page. Par exemple, il appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> méthode si une nouvelle police est sélectionnée.
 
-     - ou -
+     ou
 
 - Interrogation de l’IDE pour les modifications.
 

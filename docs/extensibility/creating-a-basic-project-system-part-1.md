@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409990"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341653"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources. Les projets apparaissent en tant qu’enfants de solutions dans le **l’Explorateur de solutions**. Projets vous permettent d’organiser, générer, déboguer, déployer le code source et créer des références aux services Web, bases de données et d’autres ressources.
@@ -224,7 +224,7 @@ Templates
 
     La reconstruction enregistre le modèle de projet.
 
-   Les paramètres `defaultProjectExtension` et `possibleProjectExtensions` sont définies à l’extension de nom de fichier de projet (*.myproj*). Le `projectTemplatesDirectory` paramètre est défini sur le chemin d’accès relatif de la *modèles* dossier. Pendant la génération, ce chemin d’accès est convertie en une génération complète et ajouté au Registre pour inscrire le système de projet.
+   Les paramètres `defaultProjectExtension` et `possibleProjectExtensions` sont définies à l’extension de nom de fichier de projet ( *.myproj*). Le `projectTemplatesDirectory` paramètre est défini sur le chemin d’accès relatif de la *modèles* dossier. Pendant la génération, ce chemin d’accès est convertie en une génération complète et ajouté au Registre pour inscrire le système de projet.
 
 ## <a name="test-the-template-registration"></a>L’inscription du modèle de test
  Inscription de modèle indique à Visual Studio l’emplacement du dossier de modèles de projet afin que Visual Studio peut afficher le nom du modèle et l’icône dans le **nouveau projet** boîte de dialogue.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e10b4f8749aa7e42a7fb95afb31d98907e45d05f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891698"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321297"
 ---
 # <a name="button-element"></a>Élément Button
 Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : Bouton, bouton de menu et SplitDropDown.
@@ -49,8 +49,8 @@ Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent ê
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément parent](../extensibility/parent-element.md)|Optionnel. L’élément parent du bouton.|
-|[Élément Icon](../extensibility/icon-element.md)|Optionnel. L’icône associée au bouton.|
+|[Élément parent](../extensibility/parent-element.md)|Facultatif. L’élément parent du bouton.|
+|[Élément Icon](../extensibility/icon-element.md)|Facultatif. L’icône associée au bouton.|
 |[Élément Command flag](../extensibility/command-flag-element.md)|Obligatoire. Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
 |[Élément Strings](../extensibility/strings-element.md)|Obligatoire. L’enfant [élément ButtonText](../extensibility/buttontext-element.md) doit être défini.|
 |Annotation|Commentaire facultatif.|

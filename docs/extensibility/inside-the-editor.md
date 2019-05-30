@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861763"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340792"
 ---
 # <a name="inside-the-editor"></a>À l’intérieur de l’éditeur
 
@@ -108,7 +108,7 @@ Un <xref:Microsoft.VisualStudio.Text.SnapshotPoint> représente une position de 
 
 #### <a name="spans-and-normalizedspancollections"></a>Étendues et NormalizedSpanCollections
 
-Un <xref:Microsoft.VisualStudio.Text.Span> représente un intervalle qui peut être appliqué à une étendue de texte dans un instantané de texte. Les positions de capture instantanée sont de base zéro, afin qu’étendues puissent commencer à n’importe quelle position zéro compris. Le `End` propriété d’une étendue est égale à la somme de ses `Start` propriété et sa `Length` propriété. Un `Span` n’inclut pas le caractère qui est indexé par le `End` propriété. Par exemple, une étendue qui a début = 5 et longueur = 3 a fin = 8, et elle inclut les caractères aux positions 5, 6 et 7. La notation pour cette étendue est 5..8).
+Un <xref:Microsoft.VisualStudio.Text.Span> représente un intervalle qui peut être appliqué à une étendue de texte dans un instantané de texte. Les positions de capture instantanée sont de base zéro, afin qu’étendues puissent commencer à n’importe quelle position zéro compris. Le `End` propriété d’une étendue est égale à la somme de ses `Start` propriété et sa `Length` propriété. Un `Span` n’inclut pas le caractère qui est indexé par le `End` propriété. Par exemple, une étendue qui a début = 5 et longueur = 3 a fin = 8, et elle inclut les caractères aux positions 5, 6 et 7. La notation pour cette étendue est [5..8).
 
 Deux étendues se croisent si elles ont des positions en commun, y compris la position de fin. Par conséquent, l’intersection de [3, 5) et [2, 7) est [3, 5) et l’intersection de [3, 5) et [5, 7) est [5, 5). (Notez que [5, 5) est une étendue vide.)
 

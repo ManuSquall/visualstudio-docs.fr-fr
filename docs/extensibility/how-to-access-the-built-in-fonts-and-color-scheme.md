@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415513"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340973"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procédure : Les polices intégrées d’accès et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -41,7 +41,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
     > [!NOTE]
     > Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.
 
-2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur les ressources du package Visual Studio (*.rc*) de fichiers, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.
+2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur les ressources du package Visual Studio ( *.rc*) de fichiers, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.
 
      Pour plus d’informations, consultez [ajouter ou supprimer une chaîne](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,7 +49,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 1. Construire un type spécial d’entrée de Registre de catégorie dans l’emplacement suivant :
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>* ]
 
      *\<Catégorie >* est le nom non localisé de la catégorie.
 
