@@ -7,17 +7,17 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4f4289519dcc8ac5190221b7b45f64e98051da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863965"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334436"
 ---
 # <a name="error-codes"></a>Codes d’erreur
 Lorsqu’une fonction de l’API de plug-in de contrôle de Source renvoie une erreur, il est censé être un des codes d’erreur suivants. Toutes les erreurs sont négatifs, avertissements ou des codes d’erreur d’information sont positives, et de réussite est 0.

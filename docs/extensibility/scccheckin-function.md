@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22264f9882192e05a9812cad4d6ea7f74bfdabfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62802991"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333939"
 ---
 # <a name="scccheckin-function"></a>Fonction SccCheckin
 Cette fonction vérifie dans les fichiers précédemment extraits vers le système de contrôle source, enregistrer les modifications et la création d’une nouvelle version. Cette fonction est appelée avec un nombre et un tableau de noms des fichiers à archiver.
@@ -75,7 +75,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique. Fichier n’a pas été activé.|
 |SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas extrait le fichier, donc ne peut pas archiver.|
-|SCC_E_CHECKINCONFLICT|Archivage n’a pas pu être effectuée car :<br /><br /> -Un autre utilisateur a archivé à l’avance et `bAutoReconcile` a la valeur false.<br /><br /> - ou -<br /><br /> -La fusion automatique ne peut pas être effectuée (par exemple, lorsque les fichiers sont binaires).|
+|SCC_E_CHECKINCONFLICT|Archivage n’a pas pu être effectuée car :<br /><br /> -Un autre utilisateur a archivé à l’avance et `bAutoReconcile` a la valeur false.<br /><br /> ou<br /><br /> -La fusion automatique ne peut pas être effectuée (par exemple, lorsque les fichiers sont binaires).|
 |SCC_E_VERIFYMERGE|Fichier a été fusionnée automatique mais n’a pas été archivé en attente de vérification de l’utilisateur.|
 |SCC_E_FIXMERGE|Fichier a été fusionnée automatique mais n’a pas été archivé en raison d’un conflit de fusion qui doit être résolu manuellement.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
