@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d7c47bea12dc4057cfb106f269532601e291310
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892230"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313656"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Couches de texte de l’accès à l’aide de l’API héritée
 En règle générale, un calque de texte encapsule certains aspects de la disposition du texte. Par exemple, une couche « fonction-à-à la fois » masque le texte avant et après une fonction contenant le signe insertion (point d’insertion de texte).

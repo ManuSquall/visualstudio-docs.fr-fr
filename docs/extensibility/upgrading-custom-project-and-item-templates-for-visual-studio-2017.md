@@ -4,18 +4,18 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261802"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316338"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : personnalisation du comportement d’insertion, de mise à jour et de suppression de classes d’entité'
+title: Personnaliser le comportement de mise à jour/insertion/suppression de classes d’entité
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565405"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262912"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : Personnaliser l’insertion, mettre à jour et supprimer le comportement de classes d’entités
 
@@ -195,7 +195,7 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 5. Dans la fenêtre **Propriétés**, sélectionnez la propriété **Insert**.
 
-6. Cliquez sur les points de suspension (**...**) en regard de l’option **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.
+6. Cliquez sur les points de suspension ( **...** ) en regard de l’option **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.
 
 7. Sélectionnez **Personnaliser**.
 
@@ -214,10 +214,10 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
      Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** ; remarquez qu’il y a deux **Arguments de méthode** et deux **Propriétés de classe** pour certaines colonnes de la table. Cela simplifie le suivi des modifications et la création des instructions qui vérifient les violations d'accès concurrentiel.
 
-13. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)**.
+13. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)** .
 
     > [!NOTE]
-    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d’entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le **Concepteur O/R** ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valides à mapper, vous pouvez donner à **Propriétés de classe** la valeur **(Aucune)**.
+    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d’entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le **Concepteur O/R** ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valides à mapper, vous pouvez donner à **Propriétés de classe** la valeur **(Aucune)** .
 
 14. Cliquez sur **Appliquer** pour enregistrer la configuration de la classe et du comportement sélectionnés.
 
@@ -227,7 +227,7 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 17. Sélectionnez la méthode **DeleteCustomers** dans la liste **Personnaliser**.
 
-18. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)**.
+18. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)** .
 
 19. Cliquez sur **OK**.
 

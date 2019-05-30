@@ -1,5 +1,5 @@
 ---
-title: Implémentation de stratégies d'archivage de l'analyse du code personnalisées pour le code managé
+title: Code personnalisé analysis stratégies d’archivage pour le code managé
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815788"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260842"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémenter des stratégies d’archivage d’analyse du code personnalisées pour le code managé
 
@@ -79,7 +79,7 @@ Pour créer une règle personnalisée définie pour un projet Azure DevOps, vous
 
 3. Dans le **stratégie d’archivage** , double-cliquez sur **analyse du Code**et vous assurer que le **appliquer l’analyse du Code pour le Code managé** case à cocher est activée.
 
-4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<sélectionner l’ensemble de règles de contrôle de code Source >**.
+4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<sélectionner l’ensemble de règles de contrôle de code Source >** .
 
 5. Tapez le chemin d’accès du fichier de jeu de règle de stratégie d’archivage dans le contrôle de version.
 
@@ -114,6 +114,6 @@ Vous spécifiez une règle de stratégie d’archivage de projet est défini com
 
 6. Pour ignorer le code dans les composants d’autres sociétés, sélectionnez le **supprimer les résultats du code généré** case à cocher.
 
-7. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.
+7. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .
 
 8. Spécifiez la version locale du fichier de jeu de règle de stratégie d’archivage.

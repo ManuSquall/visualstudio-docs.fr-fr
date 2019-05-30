@@ -1,5 +1,5 @@
 ---
-title: Déboguer des machines virtuelles et des groupes de machines virtuelles identiques Azure ASP.NET en production
+title: Déboguer des machines virtuelles Azure d’ASP.NET et des groupes identiques
 description: Découvrez comment définir des snappoints et afficher des instantanés avec le Débogueur de capture instantanée.
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399420"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263357"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles Azure et des groupes de machines virtuelles identiques Azure à l’aide du Débogueur de capture instantanée
 
@@ -50,7 +50,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     > [!IMPORTANT]
     > Débogage d’instantané, vous devez ouvrir le *même version de code source* qui est publié dans votre service Azure virtuel Machine\Virtual machines identiques.
 
-1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…**. Sélectionnez un compte de stockage Azure et de l’Azure virtuel Machine\Virtual machines identiques votre application web est déployée sur, puis cliquez sur **attacher**.
+1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…** . Sélectionnez un compte de stockage Azure et de l’Azure virtuel Machine\Virtual machines identiques votre application web est déployée sur, puis cliquez sur **attacher**.
 
       ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
 

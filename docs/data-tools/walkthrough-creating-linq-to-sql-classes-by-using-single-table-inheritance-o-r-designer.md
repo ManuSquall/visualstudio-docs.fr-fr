@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création de classes LINQ to SQL à l’aide d’un héritage de table individuelle (Concepteur O-R)'
+title: Classes LINQ to SQL avec l’héritage à table unique (Concepteur O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c99023f57cec8b920518ac702cf5c71988a163c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402689"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262882"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Créer de LINQ to SQL classes à l’aide d’héritage à table unique (Concepteur O/R)
 Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prend en charge l’héritage à table unique tel qu’il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas développe les étapes génériques fournies dans le [Comment : Configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) rubrique et des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -149,7 +149,7 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
 2. Double-cliquez sur le formulaire pour créer un gestionnaire d'événements `Form1_Load`.
 
-3. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
+3. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
 
     ```vb
     Dim dc As New DataClasses1DataContext

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688262"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351849"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Spécifie la raison pour le moteur de débogage (dé) à attacher à un nœud de programme.
@@ -41,17 +44,20 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>Membres
-ATTACH_REASON_AUTO attacher, car le processus est actuellement en mode débogage.
+## <a name="fields"></a>Champs
+`ATTACH_REASON_AUTO`\
+Attacher, car le processus est actuellement en mode débogage.
 
-ATTACH_REASON_LAUNCH attacher, car le processus a été lancé.
+`ATTACH_REASON_LAUNCH`\
+Attacher, car le processus a été lancé.
 
-ATTACH_REASON_USER joindre en raison d’une demande de l’utilisateur.
+`ATTACH_REASON_USER`\
+Attacher en raison d’une demande de l’utilisateur.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont utilisées en tant que paramètre à la [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) et [attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) méthodes.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

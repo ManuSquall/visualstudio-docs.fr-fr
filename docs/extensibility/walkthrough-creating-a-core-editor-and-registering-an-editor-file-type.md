@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312779"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procédure pas à pas : Créer un éditeur de base et l’inscription d’un type de fichier d’éditeur
 Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal lorsqu’un fichier avec le *.myext* extension de nom de fichier est chargée.
@@ -28,7 +28,7 @@ Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [
 
 1. Sous **Extensibilité Visual Basic**. Le langage par défaut du projet est Visual Basic.
 
-2. Sous **Extensibilité C#**. Le langage par défaut du projet est C#.
+2. Sous **Extensibilité C#** . Le langage par défaut du projet est C#.
 
 3. Sous **Extensibilité d’autres types de projets**. Le langage par défaut du projet est C++.
 

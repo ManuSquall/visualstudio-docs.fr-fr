@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349870"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Spécifie l’état d’un point d’arrêt en attente (un point d’arrêt qui n’a pas encore été lié).

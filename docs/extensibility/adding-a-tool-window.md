@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f438297a51e5b091ea8b80cf587586919d00798
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891943"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352411"
 ---
 # <a name="add-a-tool-window"></a>Ajouter une fenêtre outil
 Dans cette procédure pas à pas, vous allez apprendre à créer une fenêtre outil et l’intégrer à Visual Studio comme suit :
