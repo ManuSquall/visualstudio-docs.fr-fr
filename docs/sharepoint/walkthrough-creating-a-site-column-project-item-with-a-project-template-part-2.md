@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un élément de projet de colonne de Site avec un modèle de projet, partie 2 | Microsoft Docs'
+title: Créer un élément de projet colonne de site avec le modèle de projet, partie 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436720"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401100"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 2
   Une fois que vous définissez un type d’élément de projet SharePoint personnalisé et l’associez à un modèle de projet dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour créer un projet qui contient l’élément de projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’une étape de déploiement personnalisée pour les projets SharePoint | Microsoft Docs'
+title: Créer l’étape de déploiement personnalisée pour les projets SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430428"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401095"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio inclut de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
