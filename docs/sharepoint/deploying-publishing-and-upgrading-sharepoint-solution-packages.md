@@ -1,5 +1,5 @@
 ---
-title: Déploiement, la publication et la mise à niveau de Packages de Solution SharePoint | Microsoft Docs
+title: Déployer, publier et mettre à niveau de packages de solution SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436737"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402043"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Déployer, publier et mettre à niveau de packages de solution SharePoint
   Après avoir développé une solution SharePoint dans Visual Studio, vous pouvez déployer son fichier de package (.wsp) sur un serveur SharePoint local ou le publier sur un serveur SharePoint distant ou local. Si vous déployez les fichiers, vous pouvez personnaliser la manière dont les fichiers de package (.wsp) sont déployés.
@@ -54,7 +54,7 @@ ms.locfileid: "63436737"
  Vous pouvez également ajouter des commandes à exécuter avant et après le déploiement. Pour plus d'informations, voir [Procédure : Définir des commandes de déploiement SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publier des packages sur un serveur local ou distant
- Pour publier une solution bac à sable SharePoint à un serveur distant, dans la barre de menus, choisissez **Build**, **publier**, puis, dans le **publier** boîte de dialogue, sélectionnez le **Publier sur le SharePoint Site** case d’option, fournir des URL du serveur distant, tel que **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Pour publier une solution bac à sable SharePoint à un serveur distant, dans la barre de menus, choisissez **Build**, **publier**, puis, dans le **publier** boîte de dialogue, sélectionnez le **Publier sur le SharePoint Site** case d’option, fournir des URL du serveur distant, tel que **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Pour publier une solution SharePoint à un serveur local, dans le **publier** boîte de dialogue, sélectionnez le **publier sur le système de fichiers** case d’option, en fournissant un chemin d’accès de système local.
 

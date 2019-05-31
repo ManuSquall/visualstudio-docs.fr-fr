@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756737"
@@ -27,12 +27,12 @@ Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../in
   
  Utilisez la syntaxe suivante pour créer le rapport de comparaison :  
   
- **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [ **/** `Options`]  
   
  Vous pouvez ajouter des options du tableau suivant à la ligne de commande **VSPerfReport /diff**.  
   
 |Option|Description|  
 |------------|-----------------|  
-|**DiffThreshold:**[*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|  
+|**DiffThreshold:** [*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|  
 |**DiffTable:** *NomTableau*|Utilise ce tableau pour comparer les fichiers. Par défaut, le tableau des fonctions est utilisé. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|  
 |**DiffColumn:** *NonColonne*|Utiliser cette colonne pour comparer les valeurs. Par défaut, la colonne de pourcentage d’échantillons exclusifs est utilisée. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|

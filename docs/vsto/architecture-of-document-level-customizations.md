@@ -84,18 +84,18 @@ ms.locfileid: "63440366"
 
 |Excel|Word|
 |-----------|----------|
-|Classeur Excel (*.xlsx*)<br /><br /> Classeur de Excel avec macros (*.xlsm*)<br /><br /> Classeur binaire Excel (*.xlsb*)<br /><br /> Classeur Excel 97-2003 (*.xls*)<br /><br /> Modèle Excel (*.xltx*)<br /><br /> Modèle Excel macros (*.xltm*)<br /><br /> Modèle Excel 97-2003 (*.xlt*)|Document Word (*.docx*)<br /><br /> Document Word macros (*.docm*)<br /><br /> Document Word 97-2003 (*.doc*)<br /><br /> Modèle Word (*.dotx*)<br /><br /> Modèle Word macros (*.dotm*)<br /><br /> Modèle Word 97-2003 (*.dot*)|
+|Classeur Excel ( *.xlsx*)<br /><br /> Classeur de Excel avec macros ( *.xlsm*)<br /><br /> Classeur binaire Excel ( *.xlsb*)<br /><br /> Classeur Excel 97-2003 ( *.xls*)<br /><br /> Modèle Excel ( *.xltx*)<br /><br /> Modèle Excel macros ( *.xltm*)<br /><br /> Modèle Excel 97-2003 ( *.xlt*)|Document Word ( *.docx*)<br /><br /> Document Word macros ( *.docm*)<br /><br /> Document Word 97-2003 ( *.doc*)<br /><br /> Modèle Word ( *.dotx*)<br /><br /> Modèle Word macros ( *.dotm*)<br /><br /> Modèle Word 97-2003 ( *.dot*)|
 
- Vous devez concevoir des extensions de code managé uniquement pour les documents dont le format est pris en charge. Sinon, certains événements risquent de ne pas être déclenchés lorsque le document s’ouvre dans l’application. Par exemple, le <xref:Microsoft.Office.Tools.Excel.Workbook.Open> événement n’est pas déclenché lorsque vous utilisez des extensions de code managé avec des classeurs enregistrés au format feuille de calcul XML Excel ou dans la page web (*.htm*; *.html*) format.
+ Vous devez concevoir des extensions de code managé uniquement pour les documents dont le format est pris en charge. Sinon, certains événements risquent de ne pas être déclenchés lorsque le document s’ouvre dans l’application. Par exemple, le <xref:Microsoft.Office.Tools.Excel.Workbook.Open> événement n’est pas déclenché lorsque vous utilisez des extensions de code managé avec des classeurs enregistrés au format feuille de calcul XML Excel ou dans la page web ( *.htm*; *.html*) format.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Prise en charge pour les documents Word qui ont des extensions de nom de fichier .xml
  Les modèles de projets au niveau du document ne vous permettent pas de créer des projets basés sur les formats de fichiers suivants :
 
-- Document XML Word (*\*xml*).
+- Document XML Word ( *\*xml*).
 
-- Document XML Word 2003 (*\*xml*).
+- Document XML Word 2003 ( *\*xml*).
 
-  Si vous souhaitez que vos utilisateurs finaux utilisent des personnalisations dans ces formats de fichiers, générez et déployez une personnalisation qui utilise l’un des formats de fichiers pris en charge spécifiés dans le tableau ci-dessus. Après avoir installé la personnalisation, les utilisateurs finaux peuvent enregistrer le document dans le Document XML Word (*\*xml*) format ou le Document XML Word 2003 (*\*xml*) format et le personnalisation continue de fonctionner comme prévu.
+  Si vous souhaitez que vos utilisateurs finaux utilisent des personnalisations dans ces formats de fichiers, générez et déployez une personnalisation qui utilise l’un des formats de fichiers pris en charge spécifiés dans le tableau ci-dessus. Après avoir installé la personnalisation, les utilisateurs finaux peuvent enregistrer le document dans le Document XML Word ( *\*xml*) format ou le Document XML Word 2003 ( *\*xml*) format et le personnalisation continue de fonctionner comme prévu.
 
 ## <a name="Components"></a> Composants des personnalisations
  Les principaux composants d’une personnalisation sont le document et l’assembly. Outre ces composants, il en existe plusieurs autres qui jouent un rôle important dans la manière dont les applications Microsoft Office découvrent et chargent les personnalisations.

@@ -62,7 +62,7 @@ Cette section décrit la copie de fichiers, compilateurs, outils de génération
 - Sur un ordinateur x86, l’emplacement par défaut est *C:\Program Files\Microsoft Visual Studio*.
 - Sur un ordinateur x64, l’emplacement par défaut est *C:\Program Files (x86)\Microsoft Visual Studio*.
 
-Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)*. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%*.
+Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)* . Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%* .
 
 > [!NOTE]
 > Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur. Toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.
@@ -332,7 +332,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
 2. Copiez les répertoires et fichiers, comme décrit dans la section [Copier des fichiers de l’ordinateur hôte vers l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de cette procédure pas à pas, puis collez-les dans le répertoire *%Depot%* que vous venez de créer. Par exemple, effectuez la copie de *%ProgramFiles%\Windows Kits\8.0\bin* vers *%Depot%\Windows Kits\8.0\bin*.
 
-3. Une fois les fichiers collés dans *%Depot%*, effectuez les modifications suivantes :
+3. Une fois les fichiers collés dans *%Depot%* , effectuez les modifications suivantes :
 
     - Dans %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ et \Microsoft.CppCommon.targets\\, remplacez toutes les instances de
 

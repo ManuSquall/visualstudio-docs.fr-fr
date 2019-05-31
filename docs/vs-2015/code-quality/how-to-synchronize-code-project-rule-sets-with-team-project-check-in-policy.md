@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082046"
@@ -47,7 +47,7 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
   
 3. Cliquez sur **analyse du Code**.  
   
-4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
+4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .  
   
 5. Dans le **Open** boîte de dialogue, spécifiez la règle de stratégie d’archivage définie le fichier.  
   
@@ -65,6 +65,6 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
   
 5. Ouvrir la boîte de dialogue Propriétés du projet de code et afficher le **analyse du Code** page.  
   
-6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
+6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .  
   
 7. Dans le **Open** boîte de dialogue, spécifiez l’ensemble de règles fichier.

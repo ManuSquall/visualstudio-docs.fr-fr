@@ -210,7 +210,7 @@ ms.locfileid: "62981674"
 
 4. Cliquez sur la flèche dans le **titre** en-tête de colonne à nouveau.
 
-5. Cliquez sur **(All)**.
+5. Cliquez sur **(All)** .
 
      De filtrage est supprimé et toutes les lignes apparaissent.
 

@@ -177,7 +177,7 @@ ms.locfileid: "63438551"
 
 5. Désactiver la connexion à la base de données. Débranchez le câble réseau de votre ordinateur si la base de données se trouve sur un serveur, ou arrêter le service SQL Server si la base de données se trouve sur votre ordinateur de développement.
 
-6. Ouvrez Excel, puis ouvrez **mes Master-Detail.xlsx** à partir de la *\bin* répertoire (*\My Master-Detail\bin* en Visual Basic ou *\My Master-Detail\bin\ déboguer* en c#).
+6. Ouvrez Excel, puis ouvrez **mes Master-Detail.xlsx** à partir de la *\bin* répertoire ( *\My Master-Detail\bin* en Visual Basic ou *\My Master-Detail\bin\ déboguer* en c#).
 
 7. Faire défiler des enregistrements pour vérifier que la feuille de calcul fonctionne normalement déconnecté.
 

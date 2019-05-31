@@ -36,7 +36,7 @@ ms.locfileid: "63447015"
 
  L’emplacement du dossier de publication est le répertoire dans lequel Visual Studio copie les fichiers solution tels que les manifestes, les assemblys et les autres fichiers de la build. Vous devez disposer d’un accès en écriture à ce répertoire.
 
- Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\*), ou un emplacement qualifié complet (*\\\servername\foldername* ou http://<em>nomserveur/nomdossier</em>).
+ Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\* ), ou un emplacement qualifié complet ( *\\\servername\foldername* ou http://<em>nomserveur/nomdossier</em>).
 
  Par défaut, l’emplacement de publication est *http://localhost/projectname/* si vous avez installé IIS, ou le *publier\\*  répertoire si vous n’avez pas installé IIS.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447015"
 
  L’URL du dossier d’installation est le répertoire à partir duquel l’utilisateur final installe la personnalisation. Il s’agit également du chemin que la solution utilise pour vérifier les mises à jour. Le chemin peut être identique à l’emplacement du dossier de publication, mais cela n’est pas obligatoire.
 
- Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\*), ou un emplacement qualifié complet (*\\\servername\foldername* ou http://<em>nomserveur/nomdossier</em>). Tous les emplacements HTTP/HTTPS doivent être créés avec des caractères US-ASCII. Les caractères Unicode ne sont pas pris en charge.
+ Les options incluent l’ordinateur local, un partage de fichiers UNC ou un site web HTTP/HTTPS. Le chemin d’accès peut être local (*c:\foldername\publishfolder*), relatif (*publier\\* ), ou un emplacement qualifié complet ( *\\\servername\foldername* ou http://<em>nomserveur/nomdossier</em>). Tous les emplacements HTTP/HTTPS doivent être créés avec des caractères US-ASCII. Les caractères Unicode ne sont pas pris en charge.
 
  Si le chemin d’installation est défini, les fichiers de personnalisation doivent se trouver à cet emplacement pour que les utilisateurs puissent installer la personnalisation. L’emplacement doit être défini uniquement si vous connaissez l’emplacement de déploiement final.
 

@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064218"
@@ -55,7 +55,7 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
      ![Info-bulle de la fenêtre Intellisense](../ide/media/express-overloads.png "Express_Overloads")  
 Info-bulle de la fenêtre Intellisense  
   
-     L’info-bulle affiche **(+ 2 surcharge(s))**, ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un argument entier unique, alors qu'une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Lorsque vous ajoutez du code à la méthode `StartTheQuiz()`, plus d'informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Choisissez les flèches vers le haut et vers le bas pour parcourir les surcharges, comme indiqué dans l'illustration suivante.  
+     L’info-bulle affiche **(+ 2 surcharge(s))** , ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un argument entier unique, alors qu'une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Lorsque vous ajoutez du code à la méthode `StartTheQuiz()`, plus d'informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Choisissez les flèches vers le haut et vers le bas pour parcourir les surcharges, comme indiqué dans l'illustration suivante.  
   
      ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload")  
 Surcharge pour la méthode Next() dans IntelliSense  

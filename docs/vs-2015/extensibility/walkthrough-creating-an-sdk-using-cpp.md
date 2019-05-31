@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110035"
@@ -33,7 +33,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2. Dans la liste des modèles, développez **Visual C++**, **Windows Store**, puis sélectionnez le **DLL (applications du Windows Store)** modèle. Dans le **nom** , spécifiez `NativeMath`, puis choisissez le **OK** bouton.  
+2. Dans la liste des modèles, développez **Visual C++** , **Windows Store**, puis sélectionnez le **DLL (applications du Windows Store)** modèle. Dans le **nom** , spécifiez `NativeMath`, puis choisissez le **OK** bouton.  
   
 3. Mettre à jour NativeMath.h pour faire correspondre le code suivant.  
   
@@ -43,9 +43,9 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp#2)]  
   
-5. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'**, puis choisissez **ajouter**, **nouveau projet**.  
+5. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'** , puis choisissez **ajouter**, **nouveau projet**.  
   
-6. Dans la liste des modèles, développez **Visual C++**, puis sélectionnez le **composant d’exécution Windows** modèle. Dans le **nom** , spécifiez `NativeMathWRT`, puis choisissez le **OK** bouton.  
+6. Dans la liste des modèles, développez **Visual C++** , puis sélectionnez le **composant d’exécution Windows** modèle. Dans le **nom** , spécifiez `NativeMathWRT`, puis choisissez le **OK** bouton.  
   
 7. Class1.h de mise à jour pour correspondre à ce code :  
   
@@ -59,9 +59,9 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 ## <a name="createVSIX"></a> Pour créer le projet d’extension NativeMathVSIX  
   
-1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'**, puis choisissez **ajouter**, **nouveau projet**.  
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'** , puis choisissez **ajouter**, **nouveau projet**.  
   
-2. Dans la liste des modèles, développez **Visual C#**, **extensibilité**, puis sélectionnez **Package VSIX**. Dans le **nom** , spécifiez **NativeMathVSIX**, puis choisissez le **OK** bouton.  
+2. Dans la liste des modèles, développez **Visual C#** , **extensibilité**, puis sélectionnez **Package VSIX**. Dans le **nom** , spécifiez **NativeMathVSIX**, puis choisissez le **OK** bouton.  
   
 3. Lorsque le Concepteur de manifeste VSIX s’affiche, fermez-la.  
   
@@ -73,7 +73,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 6. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **NativeMathVSIX** de projet, puis choisissez **ajouter**, **un nouvel élément**.  
   
-7. Dans la liste des **éléments Visual c#**, développez **données**, puis sélectionnez **fichier XML**. Dans le **nom** , spécifiez `SDKManifest.xml`, puis choisissez le **OK** bouton.  
+7. Dans la liste des **éléments Visual c#** , développez **données**, puis sélectionnez **fichier XML**. Dans le **nom** , spécifiez `SDKManifest.xml`, puis choisissez le **OK** bouton.  
   
 8. Utilisez le code XML pour remplacer le contenu du fichier :  
   
@@ -97,7 +97,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
                 \Neutral  
     ```  
   
-10. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'**, puis choisissez **ouvrir le dossier dans l’Explorateur de fichiers**.  
+10. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **Solution 'NativeMath'** , puis choisissez **ouvrir le dossier dans l’Explorateur de fichiers**.  
   
 11. Dans **Explorateur de fichiers**, copiez \NativeMath\NativeMath.h, puis dans **l’Explorateur de solutions**, dans le **NativeMathVSIX** project, collez-le dans le \DesignTime\ Dossier de CommonConfiguration\Neutral\Include\.  
   
@@ -145,7 +145,7 @@ Cette procédure pas à pas montre comment créer une bibliothèque C++ native m
   
 1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2. Dans la liste des modèles, développez **Visual C++**, **Windows Store**, puis sélectionnez **application vide**. Dans le **nom** , spécifiez **NativeMathSDKSample**, puis choisissez le **OK** bouton.  
+2. Dans la liste des modèles, développez **Visual C++** , **Windows Store**, puis sélectionnez **application vide**. Dans le **nom** , spécifiez **NativeMathSDKSample**, puis choisissez le **OK** bouton.  
   
 3. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **NativeMathSDKSample** de projet, puis choisissez **ajouter**, **référence**.  
   

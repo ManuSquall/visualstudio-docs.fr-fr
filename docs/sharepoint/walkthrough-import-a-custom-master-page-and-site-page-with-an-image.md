@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Importation d’une Page maître personnalisée et de Page avec une Image de Site | Microsoft Docs'
+title: Importer une page maître personnalisée & page de site avec une image
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834385"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400895"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image
   Cette procédure pas à pas montre comment importer une page maître personnalisée SharePoint et une page de site qui ont une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.
@@ -27,7 +27,7 @@ ms.locfileid: "62834385"
 
 - Créer une page maître personnalisée et une page de site à l’aide d’une image dans SharePoint Designer.
 
-- Exporter une page maître personnalisée, une image et une page de site à une solution SharePoint (*.wsp*) fichier.
+- Exporter une page maître personnalisée, une image et une page de site à une solution SharePoint ( *.wsp*) fichier.
 
 - Importer et déployer le *.wsp* de fichiers dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint en utilisant le projet de Package de Solution SharePoint importation.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834385"
 6. Enregistrez la page de site mis à jour.
 
 ## <a name="export-the-items-from-sharepoint"></a>Exporter les éléments à partir de SharePoint
- Exporter les éléments à partir de SharePoint à une solution SharePoint (*.wsp*) fichier.
+ Exporter les éléments à partir de SharePoint à une solution SharePoint ( *.wsp*) fichier.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Pour exporter des éléments à partir de SharePoint Designer
 

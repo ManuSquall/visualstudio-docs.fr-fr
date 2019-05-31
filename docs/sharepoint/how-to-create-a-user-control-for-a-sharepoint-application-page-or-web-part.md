@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un contrôle utilisateur pour une Page d’Application SharePoint WebPart ou | Microsoft Docs'
+title: Créer le contrôle utilisateur pour SharePoint application page ou le composant WebPart
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446506"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401476"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procédure : Créer un contrôle utilisateur pour une application SharePoint partie web ou de page
   Vous pouvez créer des contrôles utilisateur personnalisés qui fournissent des fonctionnalités personnalisées pour votre solution SharePoint, et vous pouvez réutiliser cette fonctionnalité dans votre projet. Vous pouvez inclure les contrôles utilisateur dans un composant WebPart ou une application page, ajoutez d’autres contrôles ASP.NET et les contrôles de SharePoint et définir les propriétés et méthodes pour le contrôle. Pour plus d’informations sur les contrôles utilisateur, consultez [créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) et [contrôles utilisateur et des contrôles serveur dans SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446506"
 
 4. Dans le **installé** volet, choisissez le **Office/SharePoint** nœud.
 
-5. Dans la liste de modèles SharePoint, choisissez **contrôle utilisateur (Solution de batterie uniquement)**.
+5. Dans la liste de modèles SharePoint, choisissez **contrôle utilisateur (Solution de batterie uniquement)** .
 
     > [!NOTE]
     > Les contrôles utilisateur fonctionnent uniquement dans les solutions de batterie de serveurs.

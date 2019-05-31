@@ -47,7 +47,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 - Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.  
   
 ## <a name="prerequisites"></a>Prérequis  
- Cette procédure pas à pas suppose que **uniquement mon Code** est activé. Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.  
+ Cette procédure pas à pas suppose que **uniquement mon Code** est activé. Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.  
   
 ## <a name="c-sample"></a>Exemple C#  
  Si vous utilisez l'exemple C#, cette procédure pas à pas suppose également que le code externe est masqué. Pour afficher ou masquer le code externe, cliquez avec le bouton droit sur l’en-tête de table **Nom** de la fenêtre **Pile des appels**, puis activez ou désactivez **Afficher le code externe**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.  

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer une colonne de Site, le Type de contenu et la liste pour SharePoint | Microsoft Docs'
+title: Créer une colonne de site, de type de contenu et de liste pour SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430701"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401280"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -137,7 +137,7 @@ ms.locfileid: "63430701"
 
 4. Dans le **modèles** volet, choisissez le **liste** modèle, remplacez le nom par **Patients**, puis choisissez le **ajouter** bouton.
 
-5. Laissez le **personnaliser la liste en fonction** définissant en tant que **par défaut (vide)**, puis choisissez le **Terminer** bouton.
+5. Laissez le **personnaliser la liste en fonction** définissant en tant que **par défaut (vide)** , puis choisissez le **Terminer** bouton.
 
 6. Dans le Concepteur de la liste, choisissez le **Types de contenu** bouton pour afficher la **des paramètres de Type de contenu** boîte de dialogue.
 

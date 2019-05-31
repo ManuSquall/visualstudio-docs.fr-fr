@@ -74,13 +74,13 @@ ms.locfileid: "58951372"
 
  Cet exemple produit la sortie suivante.
 
- **Changing pointeur - passé par valeur :**
+ **Changing pointeur - passé par valeur :** 
 **12345**
 **12345**
 **Changing pointeur - passé par référence :** 
 **12345**
 **ABCDE 12345**
-**passage par valeur de retour :**
+**passage par valeur de retour :** 
 **ABCDE 12345**
 ## <a name="try-pattern-methods"></a>Essayez les méthodes de modèle
 

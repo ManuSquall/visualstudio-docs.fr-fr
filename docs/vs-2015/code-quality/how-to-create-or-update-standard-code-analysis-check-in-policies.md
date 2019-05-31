@@ -66,7 +66,7 @@ Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets d
   
     - Sélectionnez un ensemble de règles standard de Microsoft.  
   
-    - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >**, puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
+    - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >** , puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
   
     - **$/** `TeamProjectName` **/** `VersionControlPath`  
   

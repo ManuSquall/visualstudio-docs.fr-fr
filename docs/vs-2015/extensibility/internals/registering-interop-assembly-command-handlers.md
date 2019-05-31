@@ -30,10 +30,10 @@ Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 
  [Référence de Format de Table de la commande](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) ressources se trouvent dans la DLL de l’interface utilisateur de satellites non managé.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du Gestionnaire de commande d’un VSPackage  
- Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >* \Menus, où  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 9.0.  
+ Un VSPackage agissant comme un gestionnaire pour l’interface utilisateur (IU)-en fonction des commandes nécessite une entrée de Registre nommée d’après le VSPackage `GUID`. Cette entrée de Registre spécifie l’emplacement du fichier de ressources de l’interface utilisateur du VSPackage et de la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version >* \Menus, où  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 9.0.  
   
 > [!NOTE]
-> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation les VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell est initialisé. Pour plus d’informations sur le chemin d’accès racine, consultez [installation les VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>L’entrée de Registre de ressource CTMENU  
  La structure de l’entrée de Registre est :  

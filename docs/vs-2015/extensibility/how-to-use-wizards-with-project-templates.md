@@ -33,7 +33,7 @@ Visual Studio fournit le <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> in
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Création d’un projet de modèle de projet avec un projet VSIX  
  Vous commencez à créer un modèle personnalisé avec le projet modèle projet., qui fait partie du SDK Visual Studio. Dans cette procédure, nous allons utiliser un projet de modèle de projet c#, mais il existe également un projet de modèle de projet Visual Basic. Ensuite, vous ajoutez un projet VSIX à la solution qui contient le projet de modèle de projet.  
   
-1. Créer un projet de modèle de projet c# (dans Visual Studio, **fichier / nouveau / projet / Visual c# / extensibilité / modèle de projet c#**). Nommez-le **MyProjectTemplate**.  
+1. Créer un projet de modèle de projet c# (dans Visual Studio, **fichier / nouveau / projet / Visual c# / extensibilité / modèle de projet c#** ). Nommez-le **MyProjectTemplate**.  
   
     > [!NOTE]
     > Vous pouvez être invité à installer le SDK Visual Studio. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -207,7 +207,7 @@ Visual Studio fournit le <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> in
   
 1. Signer l’assembly. Dans le **l’Explorateur de solutions**, sélectionnez le projet VSIX, avec le bouton droit, puis sélectionnez **propriétés du projet**.  
   
-2. Dans le **propriétés du projet** fenêtre, sélectionnez le **signature** onglet dans le **signature** onglet, vérification **signer l’assembly**. Dans le **choisir un fichier de clé de nom fort** champ, sélectionnez  **\<New >**. Dans le **créer une clé de nom fort** fenêtre, dans le **nom de fichier de clé** , tapez **key.snk**. Désactivez le **protéger mon fichier de clé avec un mot de passe** champ.  
+2. Dans le **propriétés du projet** fenêtre, sélectionnez le **signature** onglet dans le **signature** onglet, vérification **signer l’assembly**. Dans le **choisir un fichier de clé de nom fort** champ, sélectionnez  **\<New >** . Dans le **créer une clé de nom fort** fenêtre, dans le **nom de fichier de clé** , tapez **key.snk**. Désactivez le **protéger mon fichier de clé avec un mot de passe** champ.  
   
 3. Dans le **l’Explorateur de solutions**, sélectionnez le projet VSIX et recherchez le **propriétés** fenêtre.  
   
@@ -215,9 +215,9 @@ Visual Studio fournit le <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> in
   
 5. Régénérez la solution.  
   
-6. Vous pouvez maintenant rechercher le fichier key.snk dans le répertoire du projet MyProjectWizard (**\<votre emplacement de disque > \MyProjectTemplate\MyProjectWizard\key.snk**). Copiez le fichier key.snk.  
+6. Vous pouvez maintenant rechercher le fichier key.snk dans le répertoire du projet MyProjectWizard ( **\<votre emplacement de disque > \MyProjectTemplate\MyProjectWizard\key.snk**). Copiez le fichier key.snk.  
   
-7. Accédez au répertoire de sortie et de trouver l’assembly (**\<votre emplacement de disque > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Collez le fichier key.snk ici. (Cela n’est pas absolument nécessaire, mais cela facilite les étapes suivantes).  
+7. Accédez au répertoire de sortie et de trouver l’assembly ( **\<votre emplacement de disque > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Collez le fichier key.snk ici. (Cela n’est pas absolument nécessaire, mais cela facilite les étapes suivantes).  
   
 8. Ouvrez une fenêtre de commande et accédez au répertoire dans lequel l’assembly a été créée.  
   

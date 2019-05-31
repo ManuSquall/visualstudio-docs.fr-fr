@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déployer, publier et mettre à niveau des Solutions SharePoint sur un serveur distant | Microsoft Docs'
+title: Déployer, publier et mettre à niveau des solutions SharePoint à distance
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813941"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401445"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procédure : Déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
   En plus de déployer des solutions SharePoint sur le système local, vous pouvez publier des solutions SharePoint sandbox pour les sites distants ou des sites SharePoint locaux. Les copies de processus de publication à distance le *.wsp* fichier sur le serveur SharePoint, installe la solution, puis vous permet d’activer la solution. Vous pouvez également mettre à niveau une installation distante de la solution SharePoint une fois que les modifications sont apportées à ce dernier.
@@ -35,9 +35,9 @@ ms.locfileid: "62813941"
 
 4. Choisissez le **publier** bouton.
 
-5. Ouvrez une session le serveur distant si l’authentification utilisateur est requise.
+5. Connectez-vous au serveur distant si l’authentification utilisateur est requise.
 
-     La progression de la publication s’affiche dans Visual Studio **sortie** fenêtre. Lorsque le processus est terminé, la solution (*.wsp*) fichier est installé sur le serveur SharePoint distant. Cependant, il doit toujours être activé avant de pouvoir être utilisé dans SharePoint.
+     La progression de la publication s’affiche dans Visual Studio **sortie** fenêtre. Lorsque le processus est terminé, la solution ( *.wsp*) fichier est installé sur le serveur SharePoint distant. Cependant, il doit toujours être activé avant de pouvoir être utilisé dans SharePoint.
 
 6. Sur le **galerie de solutions** page, sélectionnez l’application SharePoint, sur le ruban, puis le **activer** bouton.
 
@@ -62,7 +62,7 @@ ms.locfileid: "62813941"
 
 7. Choisissez le **publier** bouton.
 
-8. Ouvrez une session le serveur distant si l’authentification utilisateur est requise.
+8. Connectez-vous au serveur distant si l’authentification utilisateur est requise.
 
      Si vous connecté au serveur distant récemment, l’authentification n’est peut-être pas nécessaire.
 

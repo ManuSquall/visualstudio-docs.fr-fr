@@ -109,7 +109,7 @@ Les utilisateurs peuvent également coller des éléments sur d’autres éléme
 
       Vous pouvez utiliser l’outil de navigation de chemin d’accès pour créer chaque chemin d’accès :
 
-      1. Sous **fusion de processus en créant des liens à des chemins d’accès**, cliquez sur  **\<ajouter le chemin d’accès >**.
+      1. Sous **fusion de processus en créant des liens à des chemins d’accès**, cliquez sur  **\<ajouter le chemin d’accès >** .
 
       2. Cliquez sur la flèche déroulante à droite de l’élément de liste. Une arborescence s’affiche.
 

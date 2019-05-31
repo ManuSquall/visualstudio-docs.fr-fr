@@ -34,7 +34,7 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
   
 1. Créez une entrée de Registre comme suit :  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* \Text Editor\External marqueurs\\ *\<MarkerGUID >*  
   
     <em>\<MarkerGUID ></em>est un `GUID` utilisé pour identifier le marqueur en cours d’ajout  
   
@@ -43,9 +43,9 @@ Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évid
     *\<PackageGUID >* est le GUID du VSPackage qui implémente l’objet automation.  
   
    > [!NOTE]
-   > Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Créez quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
+2. Créez quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* \Text Editor\External marqueurs\\ *\<MarkerGUID >*  
   
    - (Default)  
   

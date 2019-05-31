@@ -31,10 +31,10 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 
 3. Dans le Bloc-notes, ouvrez le fichier *Package.xml*.
 
-4. Recherchez le **nom** élément contenant **http://go.microsoft.com/fwlink**, puis copiez l’URL. Incluez la partie **LinkID**.
+4. Recherchez le **nom** élément contenant **http://go.microsoft.com/fwlink** , puis copiez l’URL. Incluez la partie **LinkID**.
 
    > [!NOTE]
-   > Si aucun **nom** élément contient **http://go.microsoft.com/fwlink**, ouvrez le **Product.xml** de fichiers dans le dossier racine pour les composants requis et recherchez le **fwlink** chaîne.
+   > Si aucun **nom** élément contient **http://go.microsoft.com/fwlink** , ouvrez le **Product.xml** de fichiers dans le dossier racine pour les composants requis et recherchez le **fwlink** chaîne.
 
    > [!IMPORTANT]
    > Certains composants requis ont plusieurs packages d'installation (par exemple, pour les systèmes 32 bits ou 64 bits). Si plusieurs éléments **Name** contiennent **fwlink**, vous devez répéter les étapes restantes pour chacun d’entre eux.

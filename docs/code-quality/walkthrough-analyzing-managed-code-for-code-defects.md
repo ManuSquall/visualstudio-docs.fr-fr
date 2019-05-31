@@ -29,7 +29,7 @@ Cette procédure pas à pas vous guide tout au long du processus d’utilisation
 
 1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-1. Dans le **nouveau projet** boîte de dialogue, développez **installé** > **Visual C#**, puis choisissez **Windows Desktop**.
+1. Dans le **nouveau projet** boîte de dialogue, développez **installé** > **Visual C#** , puis choisissez **Windows Desktop**.
 
 1. Choisissez le **bibliothèque de classes (.NET Framework)** modèle.
 
@@ -141,7 +141,7 @@ Cette procédure pas à pas vous guide tout au long du processus d’utilisation
 
    1. Sélectionnez le **signer l’assembly** case à cocher.
 
-   1. Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >**.
+   1. Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >** .
 
       Le **créer une clé de nom fort** boîte de dialogue s’affiche.
 

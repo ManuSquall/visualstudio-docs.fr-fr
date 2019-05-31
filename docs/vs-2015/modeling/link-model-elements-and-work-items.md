@@ -157,7 +157,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
   
     1. Choisissez **Propriétés**, puis **Éléments de travail** pour afficher le nombre d'éléments de travail liés.  
   
-    2. Dans la propriété **Éléments de travail** , choisissez le bouton de sélection **[…]**.  
+    2. Dans la propriété **Éléments de travail** , choisissez le bouton de sélection **[…]** .  
   
         > [!NOTE]
         > Seuls les éléments de travail sur le serveur actuel s'affichent. Si la liste est vide, mais que le nombre d'éléments de travail n'est pas nul, vérifiez que vous êtes connecté au serveur approprié dans **Team Explorer**.  

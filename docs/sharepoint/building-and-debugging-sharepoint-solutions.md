@@ -24,11 +24,11 @@ ms.locfileid: "62988136"
   En règle générale, la génération et débogage de solutions SharePoint sont le même que pour les autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Les rubriques de cette section expliquent les différences qui existent.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Sortie du projet pour les solutions SharePoint
- Génération de solutions SharePoint crée des assemblys et un package de solution (*.wsp*) fichier. Le tableau suivant présente les emplacements de ces fichiers pendant une génération.
+ Génération de solutions SharePoint crée des assemblys et un package de solution ( *.wsp*) fichier. Le tableau suivant présente les emplacements de ces fichiers pendant une génération.
 
 |Générer l’élément|Dossier de sortie|
 |----------------|-------------------|
-|Assembly, de la base de données de programme (*.pdb*), et *.wsp* fichiers.|*\<NomProjet > \bin\debug* ou  *\<nom_projet > \bin\release*|
+|Assembly, de la base de données de programme ( *.pdb*), et *.wsp* fichiers.|*\<NomProjet > \bin\debug* ou  *\<nom_projet > \bin\release*|
 |Fichiers élément de projet SharePoint.|*\<Nom du projet > \pkg\debug* ou  *\<nom_projet > \pkg\release*|
 |Générer des fichiers intermédiaires.|*\<Nom du projet > \obj\debug* ou  *\<nom_projet > \obj\release*|
 |Empaqueter des fichiers intermédiaires.|*\<Nom du projet > \pkgobj\debug* ou  *\<nom_projet > \pkgobj\release*|

@@ -27,7 +27,7 @@ Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une r
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+**,**
+**Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+ **,**
 **Souris** | Sélectionnez **Modifier** > **Atteindre** > **Atteindre tout**
 
 Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
@@ -38,7 +38,7 @@ Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
 
 ![Fenêtre Naviguer vers](../ide/media/vside_navigatetowindow.png)
 
-Vous pouvez aussi entrer un point d’interrogation (**?**) pour obtenir une aide supplémentaire.
+Vous pouvez aussi entrer un point d’interrogation ( **?** ) pour obtenir une aide supplémentaire.
 
 ![Aide sur Atteindre tout](media/go-to-all-help.png)
 

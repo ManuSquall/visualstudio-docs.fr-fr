@@ -52,7 +52,7 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
   
      Une seconde instance de Visual Studio apparaît. Celle-ci est appelée instance expérimentale. Ses paramètres peuvent différer de ceux de l'instance de Visual Studio qui vous sert à écrire du code. À la première exécution de l'instance expérimentale, vous êtes invité à vous connecter à VS en ligne et à spécifier vos thème et profil.  
   
-     Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **mon nom de commande**. Lorsque vous choisissez ce bouton, un message doit apparaître : **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **mon nom de commande**. Lorsque vous choisissez ce bouton, un message doit apparaître : **Inside TestVSPackagePackage.MenuItemCallback()** .  
   
 ## <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
  Un code de complément s'exécute généralement de l'une des deux façons suivantes :  

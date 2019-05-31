@@ -77,13 +77,13 @@ ms.locfileid: "63431543"
 
  Cet exemple produit la sortie suivante.
 
- **Changing pointeur - passé par valeur :**
+ **Changing pointeur - passé par valeur :** 
 **12345**
 **12345**
 **Changing pointeur - passé par référence :** 
 ** 12345**
 **ABCDE 12345**
-**passage par valeur de retour :**
+**passage par valeur de retour :** 
 **ABCDE 12345**
 ## <a name="related-rules"></a>Règles associées
  [CA1021 : Éviter les paramètres out](../code-quality/ca1021-avoid-out-parameters.md)

@@ -175,7 +175,7 @@ ms.locfileid: "63430468"
 
 2. Sur le **signature** onglet, sélectionnez le **signer l’assembly** case à cocher.
 
-3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >**.
+3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >** .
 
 4. Dans le **créer une clé de nom fort** boîte de dialogue, entrez un nom, désactivez le **protéger mon fichier de clé avec un mot de passe** case à cocher, puis choisissez le **OK** bouton.
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430468"
 
 13. Dans le **Description** , entrez **ouvre le site Web Centre de développement SharePoint**.
 
-14. Dans le **URL** , entrez **https://docs.microsoft.com/sharepoint/dev/**, puis choisissez le **Terminer** bouton.
+14. Dans le **URL** , entrez **https://docs.microsoft.com/sharepoint/dev/** , puis choisissez le **Terminer** bouton.
 
      Visual Studio ajoute un élément nommé **CustomAction1** à votre projet et l’ouvre le *Elements.xml* fichier dans l’éditeur. Vérifiez que *Elements.xml* contient les valeurs que vous avez spécifié dans l’Assistant.
 

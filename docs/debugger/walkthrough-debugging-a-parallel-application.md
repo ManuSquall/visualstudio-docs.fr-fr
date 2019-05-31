@@ -46,7 +46,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 - Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.
 
 ## <a name="prerequisites"></a>Prérequis
- Cette procédure pas à pas suppose que **uniquement mon Code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
+ Cette procédure pas à pas suppose que **uniquement mon Code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
 
 ## <a name="c-sample"></a>Exemple C#
  Si vous utilisez l'exemple C#, cette procédure pas à pas suppose également que le code externe est masqué. Pour afficher ou masquer le code externe, cliquez avec le bouton droit sur l’en-tête de table **Nom** de la fenêtre **Pile des appels**, puis activez ou désactivez **Afficher le code externe**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
@@ -65,7 +65,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++** ), choisissez **modèles**, puis :
 
     - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
@@ -75,14 +75,14 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la **nouveau projet** boîte de dialogue, sélectionnez les éléments suivants :
 
-    - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
-    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
+    - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)** .
+    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)** .
     - Pour un C++ application, sous **Visual C++** , choisissez **Windows Desktop**,, puis **Application de Console Windows**.
 
     Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++**, puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
 
 1. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.
 

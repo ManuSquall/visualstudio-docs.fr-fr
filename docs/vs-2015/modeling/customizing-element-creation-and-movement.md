@@ -111,7 +111,7 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
       Vous pouvez utiliser l’outil de navigation de chemin d’accès pour créer chaque chemin d’accès :  
   
-   3. Sous **fusion de processus en créant des liens à des chemins d’accès**, cliquez sur  **\<ajouter le chemin d’accès >**.  
+   3. Sous **fusion de processus en créant des liens à des chemins d’accès**, cliquez sur  **\<ajouter le chemin d’accès >** .  
   
    4. Cliquez sur la flèche déroulante à droite de l’élément de liste. Une arborescence s’affiche.  
   

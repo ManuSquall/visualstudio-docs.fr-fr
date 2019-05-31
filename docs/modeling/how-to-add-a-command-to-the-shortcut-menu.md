@@ -147,7 +147,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
 ## <a name="CommandSet"></a> Définir le comportement de la commande
 
-Votre solution DSL possède déjà certaines commandes qui sont implémentées dans une classe partielle déclarée dans DslPackage\GeneratedCode\CommandSet.cs. Pour ajouter de nouvelles commandes, vous devez étendre cette classe en créant un fichier qui contient une déclaration partielle de la même classe. Le nom de la classe est généralement  *\<Nom_de_votre_solution_dsl >*`CommandSet`. Il est utile de commencer par vérifier le nom de la classe et inspecter son contenu.
+Votre solution DSL possède déjà certaines commandes qui sont implémentées dans une classe partielle déclarée dans DslPackage\GeneratedCode\CommandSet.cs. Pour ajouter de nouvelles commandes, vous devez étendre cette classe en créant un fichier qui contient une déclaration partielle de la même classe. Le nom de la classe est généralement  *\<Nom_de_votre_solution_dsl >* `CommandSet`. Il est utile de commencer par vérifier le nom de la classe et inspecter son contenu.
 
 La classe de jeu de commandes est dérivée de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
