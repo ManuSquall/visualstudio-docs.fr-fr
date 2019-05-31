@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
     1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
   
-    2. Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
+    2. Recherchez le fichier **bin\\\*\\** _VotreProjet_ **.vsix**  
   
 2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.  
   

@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049735"
@@ -116,7 +116,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
     1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
   
-    2. Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
+    2. Recherchez le fichier **bin\\\*\\** _VotreProjet_ **.vsix**  
   
 2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.  
   

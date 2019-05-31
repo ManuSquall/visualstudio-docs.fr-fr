@@ -33,14 +33,14 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
      Si un VSPackage unique prend en charge plusieurs Points de paramètres personnalisés, chaque Point de paramètres personnalisés est implémentée par une classe distincte, et chacun est enregistré par une instance unique de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Par conséquent, une implémentation de classe de paramètres peuvent prendre en charge plusieurs catégories de paramètres.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Détails des entrées du Registre de Point de paramètres personnalisés  
- Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisé le prend en charge de VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 8.0.  
+ Points de paramètres personnalisés sont créés dans une entrée de Registre à l’emplacement suivant : HKLM\Software\Microsoft\VisualStudio\\ *\<Version >* \UserSettings\\`<CSPName>`, où `<CSPName>` est le nom du Point de paramètres personnalisé le prend en charge de VSPackage et  *\<Version >* est la version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], par exemple 8.0.  
   
 > [!NOTE]
-> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est l’environnement de développement intégré (IDE) initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* peut être remplacée par une autre racine quand le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est l’environnement de développement intégré (IDE) initialisé. Pour plus d’informations, consultez [les commutateurs de ligne de commande](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  La structure de l’entrée de Registre est illustrée ci-dessous :  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
   
  `<CSPName`>= s '#12345'  
   

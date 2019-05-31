@@ -76,7 +76,7 @@ Pour les projets C/C++, vous pouvez définir des en-tête et les emplacements de
 
 1. En haut de la **propriétés** volet, sous **Configuration**, sélectionnez **toutes les Configurations**.
 
-1. Sous **C/C++** > **général** > **autres répertoires Include**, spécifiez le dossier contenant les fichiers d’en-tête.
+1. Sous **C/C++**  > **général** > **autres répertoires Include**, spécifiez le dossier contenant les fichiers d’en-tête.
 
 1. Sous **l’éditeur de liens** > **général** > **répertoires de bibliothèques supplémentaires**, spécifiez le dossier qui comporte les fichiers LIB.
 

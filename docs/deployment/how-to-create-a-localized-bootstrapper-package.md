@@ -24,7 +24,7 @@ Après avoir créé un package de programme d’amorçage, vous pouvez créer de
 
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.
 
-1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nom_package_programme_amorçage >*.
+1. Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nom_package_programme_amorçage >* .
 
 2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.
 
@@ -76,9 +76,9 @@ Après avoir créé un package de programme d’amorçage, vous pouvez créer de
 
 1. Créez un dossier nommé *fr*. Le nom du dossier doit correspondre au nom des paramètres régionaux.
 
-     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     Sur les ordinateurs 32 bits, créez le dossier dans le dossier *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
-     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     Sur les ordinateurs 64 bits, créez le dossier dans le dossier *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
 2. Placez une version localisée des termes du contrat de licence logiciel dans le dossier *fr*.
 

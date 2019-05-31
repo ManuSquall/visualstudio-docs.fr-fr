@@ -117,7 +117,7 @@ Le tableau suivant décrit les éléments de la barre d’outils **Mode de l’�
 |**Sélection irrégulière**|Permet de sélectionner une zone irrégulière d’une image. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
 |**Sélection « Baguette magique »**|Permet de sélectionner une région de couleur similaire dans une image. La *tolérance*, c’est-à-dire la différence maximale entre des couleurs adjacentes pour laquelle elles sont considérées comme similaires, peut être configurée pour inclure une plage plus petite ou plus large de couleurs similaires. Après avoir sélectionné une zone, vous pouvez la couper, la copier, la déplacer, la mettre à l’échelle, la faire pivoter, la retourner ou la supprimer. Quand il existe une sélection active, les outils de dessin affectent seulement la zone sélectionnée.|
 |**Panoramique**|Permet de déplacer l’image par rapport au cadre de la fenêtre. En mode **Panoramique**, sélectionnez un point sur l’image et déplacez-le.<br /><br /> Vous pouvez activer temporairement le mode **Panoramique** en appuyant sur la touche **Ctrl** et en la maintenant enfoncée.|
-|**Zoom**|Permet l’affichage d’une image avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’image et déplacez-le vers la droite ou vers le bas pour effectuer un zoom avant, ou vers la gauche ou vers le haut pour effectuer un zoom arrière.<br /><br /> Vous pouvez effectuer un zoom avant ou arrière en appuyant sur la touche **Ctrl** et en la maintenant enfoncée, pendant que vous utilisez la roulette de la souris ou que vous appuyez sur le signe Plus (**+**) ou sur le signe Moins (**-**).|
+|**Zoom**|Permet l’affichage d’une image avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’image et déplacez-le vers la droite ou vers le bas pour effectuer un zoom avant, ou vers la gauche ou vers le haut pour effectuer un zoom arrière.<br /><br /> Vous pouvez effectuer un zoom avant ou arrière en appuyant sur la touche **Ctrl** et en la maintenant enfoncée, pendant que vous utilisez la roulette de la souris ou que vous appuyez sur le signe Plus ( **+** ) ou sur le signe Moins ( **-** ).|
 |**Zoom sur la taille réelle**|Affiche l’image en utilisant une relation 1:1 entre les pixels de l’image et les pixels de l’écran.|
 |**Zoom pour ajuster**|Affiche l’image entière dans le cadre de la fenêtre.|
 |**Zoom sur la largeur**|Affiche la largeur entière de l’image dans le cadre de la fenêtre.|
@@ -150,11 +150,11 @@ Le tableau suivant décrit les éléments de la barre d’outils de l’**édite
 
 ### <a name="work-with-mip-levels"></a>Utiliser les niveaux MIP
 
-Certains formats d’image, par exemple DirectDraw Surface (*.dds*), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Certains formats d’image, par exemple DirectDraw Surface ( *.dds*), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ### <a name="work-with-transparency"></a>Utiliser la transparence
 
-Certains formats d’image, par exemple DirectDraw Surface (*.dds*), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs manières, en fonction de l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur.
+Certains formats d’image, par exemple DirectDraw Surface ( *.dds*), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs manières, en fonction de l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur.
 
 Le tableau suivant indique comment les différents genres d’outil contrôlent l’application de la transparence :
 
@@ -172,7 +172,7 @@ Le tableau suivant décrit les propriétés d’une image :
 |Property|Description|
 |--------------|-----------------|
 |Largeur|Largeur de l’image.|
-|Hauteur |Hauteur de l’image.|
+|Hauteur|Hauteur de l’image.|
 |Bits par pixel|Nombre de bits qui représentent chaque pixel. La valeur de cette propriété dépend du **Format de couleur** de l’image.|
 |Sélection transparente|**Vrai** pour fusionner la couche de la sélection avec l’image principale, en fonction de la valeur alpha de la couche de la sélection ; sinon, **Faux**. Cet élément est disponible seulement pour les images qui prennent en charge alpha.|
 |Format|Format de couleur de l’image. Vous pouvez spécifier différents formats de couleur en fonction du format de l’image. Le format de couleur définit le nombre et le type des canaux de couleur qui sont inclus dans l’image, ainsi que la taille et de codage des différents canaux.|
@@ -238,7 +238,7 @@ Le tableau suivant décrit les propriétés des outils :
 |**Text**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Taille**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|
 |**Primitive 2D**|**Anticrénelage**<br /> Dessine les primitives avec des contours lissés. Ceci leur donne une apparence plus lisse.<br /><br /> **Épaisseur**<br /> Définit l’épaisseur de la ligne qui constitue la limite de la primitive.<br /><br /> **Rayon X**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords supérieur et inférieur de la primitive.<br /><br /> **Rayon Y**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords gauche et droit de la primitive.|
 |**Crayon**, **Pinceau**, **Aérographe**, **Primitive 2D**|**Canaux**<br /> Active ou désactive des canaux de couleur spécifiques pour l’affichage et le dessin. Si **Afficher** est défini pour un canal de couleur spécifique, ce canal est visible dans l’image ; sinon, il n’est pas visible. Si **Dessiner** est défini pour un canal de couleur spécifique, ce canal est affecté par les opérations de dessin ; sinon, il ne l’est pas.|
-|**Sélection « Baguette magique »**, **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|
+|**Sélection « Baguette magique »** , **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -250,8 +250,8 @@ Le tableau suivant décrit les propriétés des outils :
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
 |Annuler la sélection actuelle|**Échap** (Échappement)|
-|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus (**+**)|
-|Zoom arrière|**Ctrl**-**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**-**Pg. suiv**<br /><br /> Signe moins (**-**)|
+|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
+|Zoom arrière|**Ctrl**-**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**-**Pg. suiv**<br /><br /> Signe moins ( **-** )|
 |Panoramique de l’image vers le haut|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
 |Panoramique de l’image vers le bas|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|
 |Panoramique de l’image vers la gauche|**Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Maj**+**Pg. suiv**|

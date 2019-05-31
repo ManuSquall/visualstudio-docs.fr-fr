@@ -34,7 +34,7 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
    La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Sous la catégorie **Visual C#** > **.NET Core**, choisissez le modèle de projet **Application console (.NET Core)**.
+3. Sous la catégorie **Visual C#** > **.NET Core**, choisissez le modèle de projet **Application console (.NET Core)** .
 
 4. Nommez le projet **Bank**, puis cliquez sur **OK**.
 
@@ -147,9 +147,9 @@ Vous disposez maintenant d’un projet avec des méthodes que vous pouvez tester
 
 ::: moniker range="vs-2017"
 
-2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#** , puis choisissez **Test**.
 
-3. Dans la liste des modèles, sélectionnez **Projet de test MSTest (.NET Core)**.
+3. Dans la liste des modèles, sélectionnez **Projet de test MSTest (.NET Core)** .
 
 4. Dans la zone **Nom**, entrez `BankTests`, puis sélectionnez **OK**.
 

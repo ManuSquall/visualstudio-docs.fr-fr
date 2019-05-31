@@ -102,7 +102,7 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
 
      Pour activer juste-à-temps le débogage d’une application Windows Forms, vous devez effectuer les étapes supplémentaires suivantes :
 
-2. Définir le `jitDebugging` valeur `true` dans le `system.windows.form` section du fichier machine.config ou  *\<nom_application >*. fichier exe.config :
+2. Définir le `jitDebugging` valeur `true` dans le `system.windows.form` section du fichier machine.config ou  *\<nom_application >* . fichier exe.config :
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  Sous **débogueurs possibles**, vous devez voir que la **nouvelle instance de Microsoft Visual Studio 2015** ligne est sélectionnée. S’il n’est pas déjà sélectionné, sélectionnez maintenant.
 
- En bas de la fenêtre, sous **vous souhaitez déboguer à l’aide du débogueur sélectionné ?**, cliquez sur **Oui**.
+ En bas de la fenêtre, sous **vous souhaitez déboguer à l’aide du débogueur sélectionné ?** , cliquez sur **Oui**.
 
  Le projet ThrowsNullException s’ouvre dans une nouvelle instance de Visual Studio, avec l’exécution s’est arrêtée à la ligne qui lève l’exception :
 

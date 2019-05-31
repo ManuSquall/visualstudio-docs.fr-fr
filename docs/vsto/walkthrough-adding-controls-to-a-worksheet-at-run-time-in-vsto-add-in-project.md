@@ -60,7 +60,7 @@ ms.locfileid: "62982110"
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (Concepteur visuel)**, puis cliquez sur **ajouter**.
+2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (Concepteur visuel)** , puis cliquez sur **ajouter**.
 
      Un fichier nommé **Ribbon1.cs** ou **Ribbon1.vb** s’ouvre dans le Concepteur de ruban et affiche un onglet par défaut et un groupe.
 

@@ -114,7 +114,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
      Le type obtient le focus et son contenu est affiché dans la fenêtre **Détails de classe**.
 
-2. Dans la fenêtre **Détails de classe**, dans la section contenant le genre de membre que vous souhaitez ajouter, cliquez sur **\<ajouter un membre>**. Par exemple, pour ajouter un champ, cliquez sur **\<ajouter un champ>**.
+2. Dans la fenêtre **Détails de classe**, dans la section contenant le genre de membre que vous souhaitez ajouter, cliquez sur **\<ajouter un membre>** . Par exemple, pour ajouter un champ, cliquez sur **\<ajouter un champ>** .
 
 3. Tapez le nom du membre que vous voulez créer et appuyez sur Entrée.
 
@@ -223,9 +223,9 @@ La fenêtre **Propriétés** présente les mêmes propriétés de paramètres qu
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre.
 
-     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>**.
+     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>** .
 
-3. Cliquez sur **\<ajouter un paramètre>**, tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
+3. Cliquez sur **\<ajouter un paramètre>** , tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 
@@ -239,9 +239,9 @@ La fenêtre **Propriétés** présente les mêmes propriétés de paramètres qu
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre optionnel.
 
-     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>**.
+     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>** .
 
-3. Cliquez sur **\<ajouter un paramètre>**, tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
+3. Cliquez sur **\<ajouter un paramètre>** , tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 

@@ -39,7 +39,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
 2. Cliquez sur l’onglet **Publier**.
 
-3. Dans le champ URL de l’Installation, entrez l’emplacement d’installation à l’aide d’une URL qualifiée complète en utilisant le format *http://www.microsoft.com/ApplicationName*, ou un chemin d’accès UNC au format  *\\\Server\ApplicationName*.
+3. Dans le champ URL de l’Installation, entrez l’emplacement d’installation à l’aide d’une URL qualifiée complète en utilisant le format *http://www.microsoft.com/ApplicationName* , ou un chemin d’accès UNC au format  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

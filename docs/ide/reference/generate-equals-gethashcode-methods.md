@@ -43,7 +43,7 @@ Cette génération de code s’applique à :
 
 1. Effectuez ensuite l'une des opérations suivantes :
 
-   - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+   - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
 
    - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 

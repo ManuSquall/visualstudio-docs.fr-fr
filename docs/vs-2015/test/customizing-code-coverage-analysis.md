@@ -101,13 +101,13 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ### <a name="regular-expressions"></a>Expressions régulières  
  Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l'équivalent des caractères génériques. En particulier :  
   
-1. **\.\\*** correspond à une chaîne de caractères  
+1. **\.\\** * correspond à une chaîne de caractères  
   
 2. **\\.** correspond à un point « . »  
   
 3. **\\(   \\)** correspond à des parenthèses « (  ) »  
   
-4. **\\\\**correspond à un séparateur de chemin de fichier « \\ »  
+4. **\\\\** correspond à un séparateur de chemin de fichier « \\ »  
   
 5. **^** correspond au début de la chaîne  
   

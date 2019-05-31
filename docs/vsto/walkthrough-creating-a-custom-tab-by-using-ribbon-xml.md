@@ -63,7 +63,7 @@ ms.locfileid: "63438575"
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (XML)**.
+2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (XML)** .
 
 3. Remplacez le nom du nouveau ruban par **MyRibbon**, puis cliquez sur **Ajouter**.
 

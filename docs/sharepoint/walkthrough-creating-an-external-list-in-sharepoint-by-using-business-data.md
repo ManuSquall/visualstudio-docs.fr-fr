@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’une liste externe dans SharePoint à l’aide des données d’entreprise | Microsoft Docs'
+title: Créer une liste externe dans SharePoint à l’aide des données d’entreprise
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965217"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401064"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procédure pas à pas : Créer une liste externe dans SharePoint à l’aide de données d’entreprise
 
@@ -70,7 +70,7 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
      La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-8. Dans le **modèles** volet, choisissez **modèle de connectivité de données métiers (Solution de batterie uniquement)**, nommez le projet **AdventureWorksContacts**, puis choisissez le **Ajouter** bouton.
+8. Dans le **modèles** volet, choisissez **modèle de connectivité de données métiers (Solution de batterie uniquement)** , nommez le projet **AdventureWorksContacts**, puis choisissez le **Ajouter** bouton.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Ajouter des classes d’accès aux données au projet
 

@@ -200,7 +200,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
   
     2. Ouvrez la fenêtre Propriétés et positionnez-le de sorte que vous puissiez voir Explorateur DSL et des propriétés en même temps.  
   
-    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de boîte à outils**,  *\<votre DSL >*, puis **outils**.  
+    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de boîte à outils**,  *\<votre DSL >* , puis **outils**.  
   
     4. Cliquez sur **ExampleElement**. Il s’agit de l’élément de boîte à outils qui est utilisé pour créer des éléments.  
   

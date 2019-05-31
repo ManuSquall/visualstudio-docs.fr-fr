@@ -29,7 +29,7 @@ Les attributs personnalisés sont des attributs spéciaux qui peuvent être ajou
   
 1. Dans le **Explorateur DSL**, sélectionnez l’élément auquel vous souhaitez ajouter un attribut personnalisé.  
   
-2. Dans le **propriétés** fenêtre, en regard du **attributs personnalisés** propriété, cliquez sur le bouton de navigation (**...** ) icône.  
+2. Dans le **propriétés** fenêtre, en regard du **attributs personnalisés** propriété, cliquez sur le bouton de navigation ( **...** ) icône.  
   
      Le **modifier les attributs** boîte de dialogue s’ouvre.  
   

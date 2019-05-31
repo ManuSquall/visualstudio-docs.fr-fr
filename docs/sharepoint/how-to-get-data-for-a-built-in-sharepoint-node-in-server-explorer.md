@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs | Microsoft Docs'
+title: Obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90582c9b8d352f95d3d5abb3bbb7fb69283b06b
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813734"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401421"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Procédure : Obtenir des données pour un nœud SharePoint intégré dans l’Explorateur de serveurs
   Pour chaque nœud SharePoint intégré dans **Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent que le nœud représente. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

@@ -122,7 +122,7 @@ Il existe plusieurs moyens de supprimer les violations de règle :
 
 - À partir de la **éditeur de code**
 
-   Pour supprimer une violation de l’éditeur de code, placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl**+**.** Pour ouvrir le **Actions rapides** menu. Sélectionnez **supprimer CAXXXX** > **dans la Source/dans le fichier de Suppression**.
+   Pour supprimer une violation de l’éditeur de code, placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl**+ **.** Pour ouvrir le **Actions rapides** menu. Sélectionnez **supprimer CAXXXX** > **dans la Source/dans le fichier de Suppression**.
 
    ![Supprimer le diagnostic à partir du menu actions rapides](media/suppress-diagnostic-from-editor.png)
 

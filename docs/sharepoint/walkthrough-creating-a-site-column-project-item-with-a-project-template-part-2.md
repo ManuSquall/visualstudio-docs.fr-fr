@@ -368,7 +368,7 @@ ms.locfileid: "63436720"
 
 2. Sur le **signature** onglet, sélectionnez le **signer l’assembly** case à cocher.
 
-3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >**.
+3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >** .
 
 4. Dans le **créer une clé de nom fort** boîte de dialogue, entrez un nom pour le nouveau fichier de clé, désactivez le **protéger mon fichier de clé avec un mot de passe** case à cocher, puis choisissez le **OK** bouton.
 

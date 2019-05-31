@@ -49,9 +49,9 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
   
 1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.  
   
-2. Dans le **nouveau projet** boîte de dialogue **Types de projets**, cliquez sur **Visual C#**.  
+2. Dans le **nouveau projet** boîte de dialogue **Types de projets**, cliquez sur **Visual C#** .  
   
-3. Sous **Visual C#**, sélectionnez **bibliothèque de classes**.  
+3. Sous **Visual C#** , sélectionnez **bibliothèque de classes**.  
   
 4. Dans le **nom** zone de texte, tapez **RuleSetSample** puis cliquez sur **OK**.  
   
@@ -140,7 +140,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse de co
   
 2. Dans le **propriétés** , cliquez sur **analyse du Code**.  
   
-    Dans le **exécuter cet ensemble de règles** la liste déroulante, cliquez sur  **\<Parcourir... >**. Accédez au dossier racine de votre projet de code, puis sélectionnez **MyCustomRuleSet.ruleset**. Il s’agit du nouvel ensemble de règles que vous avez créé dans la procédure précédente.  
+    Dans le **exécuter cet ensemble de règles** la liste déroulante, cliquez sur  **\<Parcourir... >** . Accédez au dossier racine de votre projet de code, puis sélectionnez **MyCustomRuleSet.ruleset**. Il s’agit du nouvel ensemble de règles que vous avez créé dans la procédure précédente.  
   
 3. Sur le **fichier** menu, cliquez sur **enregistrer** pour enregistrer votre configuration de projet. L’ensemble de règles personnalisé est désormais utilisable avec votre projet.  
   

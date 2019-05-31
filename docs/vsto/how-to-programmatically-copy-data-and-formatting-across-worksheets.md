@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Copier des données et la mise en forme entre feuilles de calcul par programmation'
+title: Copier des données et la mise en forme entre feuilles de calcul par programmation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77feefe7a2d274403e483dbaa3167f53f72ae168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90704d6d9fe555920fb042939079bd53884cfbe
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575297"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402212"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procédure : Copier des données et la mise en forme entre feuilles de calcul par programmation
   Vous pouvez copier des données à partir d’une plage d’une feuille à toutes les autres feuilles dans un classeur à l’aide de la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> (méthode). Spécifier une plage, et si vous souhaitez copier des données, la mise en forme ou les deux.

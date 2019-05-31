@@ -190,11 +190,11 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
    - **1** pour indiquer qu’exactement une instance de ce rôle participe à chaque lien.  
   
-   - **1..\\*** à l’état une ou plusieurs instances de ce rôle participent de chaque lien.  
+   - **1..\\** * à l’état une ou plusieurs instances de ce rôle participent de chaque lien.  
   
    - **valeur 0.. 1** pour indiquer que la participation est facultative.  
   
-   - **\\*** à l’état de zéro ou plusieurs instances de ce rôle participent au lien.  
+   - **\\** * à l’état de zéro ou plusieurs instances de ce rôle participent au lien.  
   
 > [!NOTE]
 > De nombreuses équipes ne placent pas les informations de multiplicité sur les diagrammes de cas d'usage et laissent les multiplicités définies sur la valeur par défaut (1). Au lieu de cela, elles fournissent ces informations dans des descriptions séparées des cas d'usage. Dans ce cas, toutes les multiplicités dans les diagrammes de cas d'usage seront masquées.  

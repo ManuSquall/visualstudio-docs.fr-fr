@@ -23,7 +23,7 @@ ms.locfileid: "62565158"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 
-Cette rubrique décrit les options de mise à niveau d’un fichier de base de données (*.mdf*) après avoir installé une version plus récente de Visual Studio. Il inclut des instructions pour les tâches suivantes :
+Cette rubrique décrit les options de mise à niveau d’un fichier de base de données ( *.mdf*) après avoir installé une version plus récente de Visual Studio. Il inclut des instructions pour les tâches suivantes :
 
 - Mise à niveau d’un fichier de base de données pour utiliser une version plus récente de SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ Cette rubrique décrit les options de mise à niveau d’un fichier de base de d
 
 - Vérifiez SQL Server Express le moteur de base de données par défaut
 
-Vous pouvez utiliser Visual Studio pour ouvrir un projet qui contient un fichier de base de données (*.mdf*) qui a été créé à l’aide d’une version antérieure de SQL Server Express ou LocalDB. Toutefois, pour continuer à développer votre projet dans Visual Studio, vous devez disposer de cette version de SQL Server Express ou LocalDB est installée sur le même ordinateur que Visual Studio, ou vous devez mettre à niveau le fichier de base de données. Si vous mettez à niveau le fichier de base de données, vous ne pourrez pas y accéder à l’aide de versions antérieures de SQL Server Express ou LocalDB.
+Vous pouvez utiliser Visual Studio pour ouvrir un projet qui contient un fichier de base de données ( *.mdf*) qui a été créé à l’aide d’une version antérieure de SQL Server Express ou LocalDB. Toutefois, pour continuer à développer votre projet dans Visual Studio, vous devez disposer de cette version de SQL Server Express ou LocalDB est installée sur le même ordinateur que Visual Studio, ou vous devez mettre à niveau le fichier de base de données. Si vous mettez à niveau le fichier de base de données, vous ne pourrez pas y accéder à l’aide de versions antérieures de SQL Server Express ou LocalDB.
 
 Vous pouvez également être invité à mettre à niveau d’un fichier de base de données qui a été créé via une version antérieure de SQL Server Express ou LocalDB si la version du fichier n’est pas compatible avec l’instance de SQL Server Express ou LocalDB qui est actuellement installée. Pour résoudre ce problème, Visual Studio vous invite à mettre à niveau le fichier.
 

@@ -39,7 +39,7 @@ ms.locfileid: "62548344"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
-Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Rechercher/remplacer dans les fichiers](#find-in-files-and-replace-in-files) (**Ctrl**+**Maj**+**F** ou **Ctrl**+**Maj**+**H**). Vous pouvez également rechercher et remplacer uniquement *certaines* instances d’un modèle à l’aide de la *[sélection avec signes insertion multiples](#multi-caret-selection)*.
+Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Rechercher/remplacer dans les fichiers](#find-in-files-and-replace-in-files) (**Ctrl**+**Maj**+**F** ou **Ctrl**+**Maj**+**H**). Vous pouvez également rechercher et remplacer uniquement *certaines* instances d’un modèle à l’aide de la *[sélection avec signes insertion multiples](#multi-caret-selection)* .
 
 > [!TIP]
 > Si vous renommez des symboles du code comme des variables et des méthodes, il est préférable de les *[refactoriser](../ide/reference/rename.md)* au lieu d’utiliser Rechercher et remplacer. La refactorisation fonctionne de façon intelligente et comprend la notion d’étendue, alors que Rechercher et remplacer remplace aveuglément toutes les instances.
@@ -62,7 +62,7 @@ Le contrôle **Rechercher et remplacer** s’affiche dans le coin supérieur dro
 
 Vous pouvez accéder aux options de remplacement en choisissant le bouton en regard de la zone de texte **Rechercher**. Pour effectuer un remplacement à la fois, choisissez le bouton **Suivant** en regard de la zone de texte **Remplacer**. Pour remplacer toutes les occurrences en une seule fois, choisissez le bouton **Remplacer tout**.
 
-Pour modifier la couleur de surbrillance des correspondances, choisissez le menu **Outils**, sélectionnez **Options**, puis choisissez **Environnement** et sélectionnez **Polices et couleurs**. Dans la liste **Afficher les paramètres de**, sélectionnez **Éditeur de texte**, puis, dans la liste **Éléments d’affichage**, sélectionnez **Rechercher un surlignage (extension)**.
+Pour modifier la couleur de surbrillance des correspondances, choisissez le menu **Outils**, sélectionnez **Options**, puis choisissez **Environnement** et sélectionnez **Polices et couleurs**. Dans la liste **Afficher les paramètres de**, sélectionnez **Éditeur de texte**, puis, dans la liste **Éléments d’affichage**, sélectionnez **Rechercher un surlignage (extension)** .
 
 ### <a name="search-tool-windows"></a>Fenêtres des outils de recherche
 
@@ -85,14 +85,14 @@ Lorsque vous choisissez **Rechercher tout**, une fenêtre **Résultats de la rec
 
 ### <a name="create-custom-search-folder-sets"></a>Créer des jeux de dossiers de recherche personnalisés
 
-Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisir des dossiers de recherche** (il ressemble à **...**) en regard de la zone **Regarder dans**. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers où effectuer la recherche, et vous pouvez enregistrer la spécification pour pouvoir la réutiliser plus tard.
+Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisir des dossiers de recherche** (il ressemble à **...** ) en regard de la zone **Regarder dans**. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers où effectuer la recherche, et vous pouvez enregistrer la spécification pour pouvoir la réutiliser plus tard.
 
 > [!TIP]
 > Si vous avez mappé le lecteur d’un ordinateur distant à votre ordinateur local, vous pouvez spécifier les dossiers pour la recherche sur l’ordinateur distant.
 
 ### <a name="create-custom-component-sets"></a>Créer des jeux de composants personnalisés
 
-Vous pouvez définir des jeux de composants comme étendue de recherche en choisissant le bouton **Modifier un jeu de composants personnalisés** en regard de la zone **Regarder dans**. Vous pouvez spécifier des composants .NET ou COM installés, des projets Visual Studio inclus dans votre solution ou toute bibliothèque d’assemblys ou de types (*.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Pour rechercher des références, cochez la case **Regarder dans les références**.
+Vous pouvez définir des jeux de composants comme étendue de recherche en choisissant le bouton **Modifier un jeu de composants personnalisés** en regard de la zone **Regarder dans**. Vous pouvez spécifier des composants .NET ou COM installés, des projets Visual Studio inclus dans votre solution ou toute bibliothèque d’assemblys ou de types ( *.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Pour rechercher des références, cochez la case **Regarder dans les références**.
 
 ## <a name="multi-caret-selection"></a>Sélection avec signes insertion multiples
 
@@ -121,10 +121,10 @@ Utilisez les touches et actions suivantes pour les comportements de la sélectio
 |**Ctrl**+**Alt** + clic|Ajouter un point d’insertion secondaire|
 |**Ctrl**+**Alt** + double-clic|Ajouter une sélection de mot secondaire|
 |**Ctrl**+**Alt** + clic + faire glisser|Ajouter une sélection secondaire|
-|**Maj**+**Alt**+**.**|Ajouter le prochain texte correspondant en tant que sélection|
-|**Ctrl**+**Maj**+**Alt**+**,**|Ajouter tout le texte correspondant en tant que sélections|
-|**Maj**+**Alt**+**,**|Supprimer la dernière occurrence sélectionnée|
-|**Ctrl**+**Maj**+**Alt**+**.**|Ignorer la prochaine occurrence correspondante|
+|**Maj**+**Alt**+ **.**|Ajouter le prochain texte correspondant en tant que sélection|
+|**Ctrl**+**Maj**+**Alt**+ **,**|Ajouter tout le texte correspondant en tant que sélections|
+|**Maj**+**Alt**+ **,**|Supprimer la dernière occurrence sélectionnée|
+|**Ctrl**+**Maj**+**Alt**+ **.**|Ignorer la prochaine occurrence correspondante|
 |**Alt** + clic|Ajouter une sélection de zone|
 |**Échap** ou clic|Effacer toutes les sélections|
 

@@ -131,7 +131,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
   
    - Cet assembly a généralement un nom qui se termine par ». DSL.dll ».  
   
-   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire **Dsl\bin\\\\***  
+   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire **Dsl\bin\\\\** *  
   
    - Si vous avez accès au fichier DSL VSIX, vous pouvez trouver l’assembly en modifiant l’extension de nom de fichier du fichier VSIX par « .zip ». Décompresser le fichier .zip.  
   
@@ -147,7 +147,7 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
   
    - System.Windows.Forms.dll  
   
-4. Créez un projet VSIX dans la même solution. Pour ce faire, dans le **nouveau projet** boîte de dialogue, développez **Visual Basic** ou **Visual C#**, cliquez sur **extensibilité**, puis sélectionnez  **Projet VSIX**.  
+4. Créez un projet VSIX dans la même solution. Pour ce faire, dans le **nouveau projet** boîte de dialogue, développez **Visual Basic** ou **Visual C#** , cliquez sur **extensibilité**, puis sélectionnez  **Projet VSIX**.  
   
 5. Dans l’Explorateur de solutions, cliquez sur le projet VSIX, puis sélectionnez **définir comme projet de démarrage**.  
   

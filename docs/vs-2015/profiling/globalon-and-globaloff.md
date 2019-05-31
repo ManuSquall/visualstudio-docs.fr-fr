@@ -60,10 +60,10 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  **Attach :** `PID`  
  Démarre le profilage du processus spécifié.  
   
- {**ProcessOff**&#124;**ProcessOn**}  **:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**}  **:** `PID`  
  Arrête ou démarre le profilage du processus spécifié.  
   
- {**ThreadOff**&#124;**ThreadOn**}  **:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**}  **:** `TID`  
  Arrête ou démarre le profilage du processus spécifié (méthode d’instrumentation uniquement).  
   
 ## <a name="example"></a>Exemple  

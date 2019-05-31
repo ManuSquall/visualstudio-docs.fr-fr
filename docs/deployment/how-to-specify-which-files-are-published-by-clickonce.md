@@ -29,15 +29,15 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
  Fichiers pour un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application sont gérées dans le **fichiers d’Application** boîte de dialogue, accessible à partir de la **publier** page de la **Concepteur de projet**.
 
- Initialement, il existe un seul groupe de fichiers nommé **(obligatoire)**. Vous pouvez créer des groupes de fichiers supplémentaires et leur attribuer des fichiers. Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application. Par exemple, .exe de l’application ou les fichiers marqués comme fichiers de données doivent appartenir à la **(obligatoire)** groupe.
+ Initialement, il existe un seul groupe de fichiers nommé **(obligatoire)** . Vous pouvez créer des groupes de fichiers supplémentaires et leur attribuer des fichiers. Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application. Par exemple, .exe de l’application ou les fichiers marqués comme fichiers de données doivent appartenir à la **(obligatoire)** groupe.
 
- État de publication de la valeur par défaut la valeur d’un fichier est marquée avec **(Auto)**. Par exemple, .exe l’application a un état de publication de **inclure (automatique)** par défaut.
+ État de publication de la valeur par défaut la valeur d’un fichier est marquée avec **(Auto)** . Par exemple, .exe l’application a un état de publication de **inclure (automatique)** par défaut.
 
  Fichiers avec le **Action de génération** propriété définie sur **contenu** sont désignés en tant que fichiers d’application et seront marqués comme inclus par défaut. Elles pouvant être inclus, exclus ou marqués comme fichiers de données. Les exceptions sont les suivantes :
 
-- Fichiers de données comme base de données SQL (*.mdf* et *.mdb*) fichiers et les fichiers XML sont marqués en tant que fichiers de données par défaut.
+- Fichiers de données comme base de données SQL ( *.mdf* et *.mdb*) fichiers et les fichiers XML sont marqués en tant que fichiers de données par défaut.
 
-- Références aux assemblys (*.dll* fichiers) sont désignées comme suit quand vous ajoutez la référence : Si **copie locale** est **False**, il est marqué par défaut comme assembly requis (**condition préalable (Auto)**) qui doit être présent dans le GAC avant que l’application est installée. Si **copie locale** est **True**, l’assembly est marqué par défaut comme un assembly d’application (**inclure (automatique)**) et sera copié dans le dossier d’application lors de l’installation. Une référence COM s’affichera dans le **fichiers d’Application** boîte de dialogue (comme un *.ocx* fichier) uniquement si son **isolé** propriété est définie sur **True**. Par défaut, il sera inclus.
+- Références aux assemblys ( *.dll* fichiers) sont désignées comme suit quand vous ajoutez la référence : Si **copie locale** est **False**, il est marqué par défaut comme assembly requis (**condition préalable (Auto)** ) qui doit être présent dans le GAC avant que l’application est installée. Si **copie locale** est **True**, l’assembly est marqué par défaut comme un assembly d’application (**inclure (automatique)** ) et sera copié dans le dossier d’application lors de l’installation. Une référence COM s’affichera dans le **fichiers d’Application** boîte de dialogue (comme un *.ocx* fichier) uniquement si son **isolé** propriété est définie sur **True**. Par défaut, il sera inclus.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Pour ajouter des fichiers à la boîte de dialogue fichiers d’Application
 
@@ -77,7 +77,7 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
 3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.
 
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez l’assembly d’application (*.dll* fichier) que vous souhaitez marquer comme condition préalable. Notez que votre application doit avoir une référence à l’assembly d’application afin qu’il apparaisse dans la liste.
+4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez l’assembly d’application ( *.dll* fichier) que vous souhaitez marquer comme condition préalable. Notez que votre application doit avoir une référence à l’assembly d’application afin qu’il apparaisse dans la liste.
 
 5. Dans le **état de la publication** champ, sélectionnez **prérequis** dans la liste déroulante.
 

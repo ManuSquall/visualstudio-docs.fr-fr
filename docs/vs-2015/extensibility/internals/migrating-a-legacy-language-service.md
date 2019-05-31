@@ -59,7 +59,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
   
     - Sur le **Application** , modifiez **framework cible** à **4.6.1**.  
   
-    - Sur le **déboguer** sous l’onglet le **démarrer le programme externe** , tapez  **\<chemin d’installation de Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - Sur le **déboguer** sous l’onglet le **démarrer le programme externe** , tapez  **\<chemin d’installation de Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          Dans le **arguments de ligne de commande** , tapez /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Vous pouvez migrer un service de langage hérité vers une version ultérieure d
   
     - Enregistrez et fermez le fichier.  
   
-11. Générez la solution. Les fichiers générés sont déployés sur **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Générez la solution. Les fichiers générés sont déployés sur **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Démarrez le débogage. Une deuxième instance de Visual Studio est ouvert.  
   

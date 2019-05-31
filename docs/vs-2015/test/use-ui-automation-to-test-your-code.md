@@ -69,9 +69,9 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
 
 1. **Créer un projet de test codé de l’interface utilisateur.**
 
-    Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n'avez pas encore de projet de test codé de l'interface utilisateur, créez-en un. Dans l’**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, **Nouveau projet**, puis sélectionnez **Visual Basic** ou **Visual C#**. Choisissez ensuite **Test**, **Test codé de l’interface utilisateur**.
+    Les tests codés de l'interface utilisateur doivent appartenir à un projet de test codé de l'interface utilisateur. Si vous n'avez pas encore de projet de test codé de l'interface utilisateur, créez-en un. Dans l’**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, **Nouveau projet**, puis sélectionnez **Visual Basic** ou **Visual C#** . Choisissez ensuite **Test**, **Test codé de l’interface utilisateur**.
 
-   - <em>Je ne vois pas les modèles de projets **Test codé de l’interface utilisateur</em>*.*
+   - <em>Je ne vois pas les modèles de projets **Test codé de l’interface utilisateur</em>* .*
 
       Vous utilisez peut-être une version de Visual Studio qui ne prend pas en charge les tests codés de l’interface utilisateur. Pour créer des tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.
 
@@ -220,7 +220,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   }
   ```
 
-  *Le contrôle que je veux sélectionner perd le focus et disparaît quand j'essaie de sélectionner l'outil Ajouter des assertions dans le Générateur de test codé de l'interface utilisateur. Comment pour sélectionner le contrôle ?*
+  *Le contrôle que je veux sélectionner perd le focus et disparaît quand j'essaie de sélectionner l'outil Ajouter des assertions dans le Générateur de test codé de l'interface utilisateur. Comment pour sélectionner le contrôle ?* 
   **Sélection d’un contrôle masqué à l’aide du clavier**
 
   Parfois, pour [ajouter des contrôles et valider leurs propriétés](#VerifyingCodeUsingCUITGenerateAssertions), vous devez utiliser le clavier. Par exemple, quand vous essayez d'enregistrer un test codé de l'interface utilisateur qui utilise un contrôle de menu contextuel, la liste des éléments de menu dans le contrôle perd le focus et disparaît quand vous tentez de sélectionner l'outil Ajouter des assertions dans le Générateur de test codé de l'interface utilisateur. Ainsi, dans l'illustration ci-dessous, le menu contextuel dans Internet Explorer perd le focus et disparaît si vous essayez de le sélectionner avec l'outil Ajouter des assertions.

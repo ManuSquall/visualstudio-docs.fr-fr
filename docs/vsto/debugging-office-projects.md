@@ -73,7 +73,7 @@ ms.locfileid: "63441881"
  Chaque fois que vous générez un projet, le groupe de données est vidé et recréé. Si vous souhaitez déboguer un groupe de données mis en cache, vous devez ouvrir le document en dehors de Visual Studio, puis attacher le débogueur.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Projets de document Word de débogage basés sur le Document Word 97-2003 (* .doc) format
- Pour déboguer un projet de Document Word basé sur un Document Word 97-2003 (*/*.doc *) format, vous devez ajouter le dossier du projet à la liste de dossiers approuvés. Pour plus d’informations sur la façon de procéder, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).
+ Pour déboguer un projet de Document Word basé sur un Document Word 97-2003 ( */* .doc *) format, vous devez ajouter le dossier du projet à la liste de dossiers approuvés. Pour plus d’informations sur la façon de procéder, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Débogage désactivé des compléments
  Les applications Microsoft Office peuvent désactiver les compléments VSTO qui se comportent de façon inattendue. Une application Microsoft Office désactive les compléments VSTO pour empêcher le chargement de tout code problématique chaque fois qu’elle démarre. Toutefois, il est également facile de provoquer un comportement inattendu au cours d'un débogage classique. Pour plus d’informations sur la façon de réactiver les Compléments VSTO, consultez [Comment : Réactiver un complément qui a été désactivé](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

@@ -49,7 +49,7 @@ Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine
   
 10. Réinitialiser l’instance expérimentale de Visual Studio.  
   
-    1. Supprimer **\Users\\**_{nom de votre}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. Supprimer **\Users\\** _{nom de votre}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. Sur le Windows **Démarrer** menu, choisissez **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, **réinitialiser le Instance expérimentale**.  
   

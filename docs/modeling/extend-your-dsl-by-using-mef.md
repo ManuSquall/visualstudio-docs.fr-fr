@@ -129,7 +129,7 @@ Si vous avez accès à un DSL prenant en charge de MEF créé par vous-même ou 
 
    - Cet assembly a généralement un nom qui se termine par ». DSL.dll ».
 
-   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire **Dsl\bin\\\\***
+   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire **Dsl\bin\\\\** *
 
    - Si vous avez accès au fichier DSL VSIX, vous pouvez trouver l’assembly en modifiant l’extension de nom de fichier du fichier VSIX par « .zip ». Décompresser le fichier .zip.
 

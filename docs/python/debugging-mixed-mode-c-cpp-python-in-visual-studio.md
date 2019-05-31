@@ -97,7 +97,7 @@ La fenêtre **Pile des appels** affiche des frames de pile natifs et Python entr
 
 ![Pile des appels combinée avec débogage en mode mixte](media/mixed-mode-debugging-call-stack.png)
 
-Si l’option **Outils** > **Options** > **Débogage** > **Général** > **Activer Uniquement mon code** est définie, les transitions apparaissent sous la forme **[Code externe]**, sans spécifier la direction de la transition.
+Si l’option **Outils** > **Options** > **Débogage** > **Général** > **Activer Uniquement mon code** est définie, les transitions apparaissent sous la forme **[Code externe]** , sans spécifier la direction de la transition.
 
 Un double-clic sur un frame d’appel quelconque active ce dernier et ouvre le code source approprié, si cela est possible. Si le code source n’est pas disponible, le frame est quand même activé et les variables locales peuvent être inspectées.
 
@@ -107,7 +107,7 @@ Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas �
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vue des valeurs PyObject dans le code natif
 
-Quand un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre **Variables locales** du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (consultez la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé **[Vue Python]**. Quand ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
+Quand un frame natif (C ou C++) est actif, ses variables locales s’affichent dans la fenêtre **Variables locales** du débogueur. Dans les modules d’extension Python natifs, de nombreuses variables sont de type `PyObject` (qui est un typedef de `_object`), ou de quelques autres types Python fondamentaux (consultez la liste ci-dessous). Dans le cadre du débogage en mode mixte, ces valeurs présentent un nœud enfant supplémentaire intitulé **[Vue Python]** . Quand ce nœud est développé, il affiche la représentation Python de la variable, telle qu’elle apparaîtrait si une variable locale référençant le même objet était présente dans un frame Python. Les enfants de ce nœud sont modifiables.
 
 ![Vue Python dans la fenêtre Variables locales](media/mixed-mode-debugging-python-view.png)
 
@@ -140,7 +140,7 @@ Une autre option (mieux adaptée) consiste à suivre la spécification [PEP 312
 
 ### <a name="native-values-view-in-python-code"></a>Vue des valeurs natives dans le code Python
 
-Comme dans la section précédente, vous pouvez activer un nœud **[C++ view]** (Vue C++) pour les valeurs natives dans la fenêtre **Variables locales** quand un frame Python est actif. Cette fonctionnalité est désactivée par défaut. Si vous souhaitez l’activer, cliquez avec le bouton droit dans la fenêtre **Variables locales**, puis sélectionnez l’option **Python** > **Afficher les nœuds de la vue C++**.
+Comme dans la section précédente, vous pouvez activer un nœud **[C++ view]** (Vue C++) pour les valeurs natives dans la fenêtre **Variables locales** quand un frame Python est actif. Cette fonctionnalité est désactivée par défaut. Si vous souhaitez l’activer, cliquez avec le bouton droit dans la fenêtre **Variables locales**, puis sélectionnez l’option **Python** > **Afficher les nœuds de la vue C++** .
 
 ![Activation de la vue C++ dans la fenêtre Variables locales](media/mixed-mode-debugging-enable-cpp-view.png)
 
@@ -150,7 +150,7 @@ Le nœud **[Vue C++]** fournit une représentation de la structure C/C++ sous-j
 
 Si un champ enfant d’un objet est du type `PyObject` ou de l’un des autres types pris en charge, il comporte un nœud de représentation **[Vue Python]** (si ces représentations sont activées), ce qui offre la possibilité de parcourir les graphiques d’objet quand les liens ne sont pas directement exposés à Python.
 
-Contrairement aux nœuds **[Vue Python]**, qui utilisent les métadonnées d’objet Python pour déterminer le type de l’objet, il n’existe aucun mécanisme suffisamment fiable pour **[C++ view]** (Vue C++). En règle générale, pour une valeur Python donnée (autrement dit, une référence `PyObject`) il est impossible de déterminer avec certitude la structure C/C++ sous-jacente. Le débogueur en mode mixte tente de déduire ce type en examinant les différents champs du type de l’objet (comme l’élément `PyTypeObject` référencé par son champ `ob_type`) qui comportent des types de pointeur fonction. Si l’un de ces pointeurs fonction référence une fonction qui peut être résolue, et que cette fonction comporte un paramètre `self` avec un type plus spécifique que `PyObject*`, ce type est considéré comme le type de stockage. Par exemple, si l’élément `ob_type->tp_init` d’un objet donné pointe vers la fonction suivante :
+Contrairement aux nœuds **[Vue Python]** , qui utilisent les métadonnées d’objet Python pour déterminer le type de l’objet, il n’existe aucun mécanisme suffisamment fiable pour **[C++ view]** (Vue C++). En règle générale, pour une valeur Python donnée (autrement dit, une référence `PyObject`) il est impossible de déterminer avec certitude la structure C/C++ sous-jacente. Le débogueur en mode mixte tente de déduire ce type en examinant les différents champs du type de l’objet (comme l’élément `PyTypeObject` référencé par son champ `ob_type`) qui comportent des types de pointeur fonction. Si l’un de ces pointeurs fonction référence une fonction qui peut être résolue, et que cette fonction comporte un paramètre `self` avec un type plus spécifique que `PyObject*`, ce type est considéré comme le type de stockage. Par exemple, si l’élément `ob_type->tp_init` d’un objet donné pointe vers la fonction suivante :
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

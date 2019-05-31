@@ -35,7 +35,7 @@ Les options suivantes vous permettent de sélectionner la configuration et la pl
 
 **Configuration** Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres peuvent être **Active (Debug)** (valeur par défaut), **Debug**, **Release** ou **Toutes les configurations**.
 
-**Plateforme** Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).
+**Plateforme** Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)** . Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Général
 Les options suivantes vous permettent de configurer plusieurs paramètres du compilateur C#.
