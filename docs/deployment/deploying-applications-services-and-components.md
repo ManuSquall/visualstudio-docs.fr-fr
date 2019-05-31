@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845905"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261982"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -40,11 +40,11 @@ Consultez les guides de démarrage rapide et les tutoriels pour obtenir des inst
 
 Le déploiement dans un dossier local est généralement utilisé pour les tests ou pour lancer un déploiement de préproduction dans lequel un autre outil est utilisé pour le déploiement final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et. **NET Core** : utilisez l’outil Publier pour effectuer le déploiement dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous n’avez pas encore configuré de profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et.** NET Core** : utilisez l’outil Publier pour effectuer le déploiement dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous n’avez pas encore configuré de profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
 
     ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
-- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
@@ -83,7 +83,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     Vous pouvez également déployer des applications et services ASP.NET de plusieurs autres façons. Pour plus d’informations, consultez [Déploiement d’applications et services web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publier sur Microsoft Store
 

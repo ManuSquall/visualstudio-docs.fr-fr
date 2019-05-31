@@ -3,17 +3,17 @@ title: 'Procédure pas à pas : Displaying Light Bulb Suggestions | Microsoft D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d2a5c938d5a79cbdb69eb256d1e625e0e35c375
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312509"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Afficher des suggestions ampoule
 Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.

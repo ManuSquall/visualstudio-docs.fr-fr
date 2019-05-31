@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694226"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337702"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Une variable locale, paramètre ou autre champ décrite par cette structure.
@@ -45,20 +48,25 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Membres
-dwFields une combinaison d’indicateurs à partir de la [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) énumération qui indique quels membres sont renseignés.
+`dwFields`\
+Une combinaison d’indicateurs de la [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) énumération qui indique quels membres sont renseignés.
 
-bstrFullName le nom complet du champ.
+`bstrFullName`\
+Le nom complet du champ.
 
-bstrName le nom court du champ.
+`bstrName`\
+Le nom court du champ.
 
-bstrType argument de type le type du champ.
+`bstrType`\
+Le type du champ.
 
-dwModifiers une combinaison d’indicateurs à partir de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) énumération qui décrit le champ.
+`dwModifiers`\
+Une combinaison d’indicateurs de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) énumération qui décrit le champ.
 
 ## <a name="remarks"></a>Notes
 Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) méthode où il est renseigné.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : sh.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

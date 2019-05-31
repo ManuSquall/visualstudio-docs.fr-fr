@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712474"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318224"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Décrit une instruction de code machine pour l’environnement de développement intégré (IDE) à afficher.
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>Membres
-`dwFields` Le [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante qui spécifie quels champs sont renseignés.
+`dwFields`\
+Le [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante qui spécifie quels champs sont renseignés.
 
-`bstrAddress` L’adresse en tant qu’offset à partir d’un point de départ (généralement le début de la fonction associée).
+`bstrAddress`\
+L’adresse en tant qu’offset à partir d’un point de départ (généralement le début de la fonction associée).
 
-`bstrCodeBytes` Les octets de code pour cette instruction.
+`bstrCodeBytes`\
+Les octets de code pour cette instruction.
 
-`bstrOpcode` Le code d’opération pour cette instruction.
+`bstrOpcode`\
+Le code d’opération pour cette instruction.
 
-`bstrOperands` Les opérandes pour cette instruction.
+`bstrOperands`\
+Les opérandes pour cette instruction.
 
-`bstrSymbol` Le nom du symbole, le cas échéant, liées à l’adresse (symboles publics, étiquette et ainsi de suite).
+`bstrSymbol`\
+Le nom du symbole, le cas échéant, liées à l’adresse (symboles publics, étiquette et ainsi de suite).
 
-`uCodeLocationId` L’identificateur d’emplacement de code pour cette ligne désassemblée. Si l’adresse de contexte de code d’une ligne est supérieure à l’adresse de contexte de code d’un autre, puis l’identificateur d’emplacement du premier code désassemblé également sera supérieur à l’identificateur d’emplacement de code de la deuxième.
+`uCodeLocationId`\
+L’identificateur d’emplacement de code pour cette ligne désassemblée. Si l’adresse de contexte de code d’une ligne est supérieure à l’adresse de contexte de code d’un autre, puis l’identificateur d’emplacement du premier code désassemblé également sera supérieur à l’identificateur d’emplacement de code de la deuxième.
 
-`posBeg` Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où le code machine de données commence.
+`posBeg`\
+Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où le code machine de données commence.
 
-`posEnd` Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où les données de désassemblage se terminent.
+`posEnd`\
+Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où les données de désassemblage se terminent.
 
-`bstrDocumentUrl` Pour les documents de texte qui peuvent être représentés en tant que noms de fichiers, le `bstrDocumentUrl` champ affiche le nom du fichier où la source peut être trouvée, en utilisant le format `file://file name`.
+`bstrDocumentUrl`\
+Pour les documents de texte qui peuvent être représentés en tant que noms de fichiers, le `bstrDocumentUrl` champ affiche le nom du fichier où la source peut être trouvée, en utilisant le format `file://file name`.
 
 Pour les documents de texte qui ne peut pas être représentées en tant que noms de fichiers, `bstrDocumentUrl` est un identificateur unique pour le document, et le moteur de débogage doit implémenter le [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) (méthode).
 
 Ce champ peut contenir également des informations supplémentaires sur les sommes de contrôle. Pour plus d’informations, consultez la section Notes.
 
-`dwByteOffset` Le nombre d’octets de que l’instruction est depuis le début de la ligne de code.
+`dwByteOffset`\
+Le nombre d’octets de que l’instruction est depuis le début de la ligne de code.
 
-`dwFlags` Le [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante qui spécifie quels indicateurs sont actifs.
+`dwFlags`\
+Le [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante qui spécifie quels indicateurs sont actifs.
 
 ## <a name="remarks"></a>Notes
 Chaque `DisassemblyData` structure décrit une seule instruction du désassemblage. Un tableau de ces structures est retourné à partir de la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).

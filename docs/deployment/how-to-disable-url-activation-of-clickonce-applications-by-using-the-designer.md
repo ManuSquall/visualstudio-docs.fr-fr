@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Désactiver l’Activation des URL des Applications ClickOnce à l’aide du Concepteur | Microsoft Docs'
+title: Désactiver l’activation des URL des applications ClickOnce à l’aide du Concepteur
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8296f08c29b3259c19393a860ee34f6c3f05a42
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928583"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263273"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Procédure : Suspendre l’activation des URL des applications ClickOnce à l’aide du concepteur
 En règle générale, un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application démarrera automatiquement immédiatement après son installation à partir d’un serveur Web. Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et indiquer aux utilisateurs de démarrer l’application à partir de la **Démarrer** menu à la place. La procédure suivante décrit comment désactiver l'activation d'URL.

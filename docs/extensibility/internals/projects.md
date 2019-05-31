@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8fbd19eca1a6aab770718628bbd36a49902074
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909192"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327367"
 ---
 # <a name="projects"></a>Projets
 Dans Visual Studio, les projets sont les conteneurs que les développeurs utilisent pour organiser les fichiers de code source et d’autres ressources qui s’affichent dans **l’Explorateur de solutions**. En règle générale, les projets sont des fichiers (par exemple, un fichier .csproj pour un projet c#) qui stockent les références aux fichiers de code source et des ressources telles que des fichiers bitmap. Les projets permettent d’organiser, générer, déboguer et déployer le code source, des références aux services Web et bases de données et d’autres ressources. Les VSPackages peuvent étendre le système de projet Visual Studio de trois manières principales : *types de projets*, *les sous-types de projet*, et *outils personnalisés*.

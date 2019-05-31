@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709250"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350614"
 ---
 # <a name="bpstate"></a>BP_STATE
 Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activée.
@@ -43,19 +46,23 @@ public enum enum_BP_STATE {
 };
 ```
 
-## <a name="members"></a>Membres
-BPS_NONE indique qu’aucun point d’arrêt n’existe.
+## <a name="fields"></a>Champs
+`BPS_NONE`\
+Spécifie qu’il n’existe aucun point d’arrêt.
 
-BPS_DELETED Spécifie que le point d’arrêt a été supprimé.
+`BPS_DELETED`\
+Spécifie que le point d’arrêt a été supprimé.
 
-BPS_DISABLED Spécifie que le point d’arrêt est désactivé.
+`BPS_DISABLED`\
+Spécifie que le point d’arrêt est désactivé.
 
-BPS_ENABLED Spécifie que le point d’arrêt est activé.
+`BPS_ENABLED`\
+Spécifie que le point d’arrêt est activé.
 
 ## <a name="remarks"></a>Notes
 Retourné par la [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

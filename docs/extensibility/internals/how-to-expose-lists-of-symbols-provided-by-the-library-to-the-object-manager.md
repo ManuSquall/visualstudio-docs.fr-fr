@@ -9,17 +9,17 @@ helpviewer_keywords:
 - lists, symbols for the object manager
 - symbols, exposing lists to the object manager
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8b9660fd1e59307b1ad576a72629feea5482433
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328782"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procédure : Exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets
 Les outils de consultation de symboles, **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, transmettre les demandes de nouvelles données à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets. Le Gestionnaire d’objets détecte que les bibliothèques appropriées et demande les nouvelles listes de symboles. Les bibliothèques de répondent en fournissant les données demandées à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets appelle les méthodes dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> pour obtenir les données de l’interface et l’utilise pour remplir ou mettre à jour les vues des outils de recherche de symboles.

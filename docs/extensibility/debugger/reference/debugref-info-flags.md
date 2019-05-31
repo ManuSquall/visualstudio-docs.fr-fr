@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318365"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Spécifie les informations à récupérer sur un objet de référence de débogage.
@@ -53,24 +56,33 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membres
-DEBUGREF_INFO_NAME Initialize/utiliser le `bstrName` champ dans la structure.
+## <a name="fields"></a>Champs
+`DEBUGREF_INFO_NAME`\
+Initialize/utiliser le `bstrName` champ dans la structure.
 
-DEBUGREF_INFO_TYPE Initialize/utiliser le `bstrType` champ dans la structure.
+`DEBUGREF_INFO_TYPE`\
+Initialize/utiliser le `bstrType` champ dans la structure.
 
-DEBUGREF_INFO_VALUE Initialize/utiliser le `bstrValue` champ dans la structure.
+`DEBUGREF_INFO_VALUE`\
+Initialize/utiliser le `bstrValue` champ dans la structure.
 
-DEBUGREF_INFO_ATTRIB Initialize/utiliser le `dwAttrib` champ dans la structure.
+`DEBUGREF_INFO_ATTRIB`\
+Initialize/utiliser le `dwAttrib` champ dans la structure.
 
-DEBUGREF_INFO_REFTYPE Initialize/utiliser le `dwRefType` champ dans la structure.
+`DEBUGREF_INFO_REFTYPE`\
+Initialize/utiliser le `dwRefType` champ dans la structure.
 
-DEBUGREF_INFO_REF Initialize/utiliser le `pReference` champ dans la structure.
+`DEBUGREF_INFO_REF`\
+Initialize/utiliser le `pReference` champ dans la structure.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
+`DEBUGREF_INFO_VALUE_AUTOEXPAND`\
+Le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.
 
-DEBUGREF_INFO_NONE indique qu’aucun indicateur est défini.
+`DEBUGREF_INFO_NONE`\
+Indique qu’aucun indicateur est défini.
 
-DEBUGREF_INFO_ALL indique un masque des indicateurs.
+`DEBUGREF_INFO_ALL`\
+Indique un masque des indicateurs.
 
 ## <a name="remarks"></a>Notes
 Ces indicateurs sont passées à la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) méthodes pour indiquer les champs de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure doivent être initialisées.
@@ -79,7 +91,7 @@ Utilisé pour le `dwFields` membre de la `DEBUG_REFERENCE_INFO` structure pour i
 
 Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce | Microsoft Docs'
+title: Télécharger l’assembly satellite à la demande avec l’API du déploiement ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405925"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262967"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API du déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
@@ -54,7 +54,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 4. Cliquez sur l’onglet **Files** .
 
-5. Cliquez sur le bouton d’**ellipse** (**...**) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Le nom d’un assembly satellite se présente sous la forme *\<CodeISO>\ApplicationName.resources.dll*, où \<CodeISO> est un identificateur de langue au format RFC 1766.)
+5. Cliquez sur le bouton d’**ellipse** ( **...** ) et sélectionnez le répertoire contenant tous les assemblys et fichiers de votre application, y compris les assemblys satellites que vous avez générés à l’aide de *Resgen.exe*. (Le nom d’un assembly satellite se présente sous la forme *\<CodeISO>\ApplicationName.resources.dll*, où \<CodeISO> est un identificateur de langue au format RFC 1766.)
 
 6. Cliquez sur **Populate** pour ajouter les fichiers à votre déploiement.
 

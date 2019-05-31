@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c82e1d3894b9fa3ffbdffb5ab69c134ff73e0df7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c22ab1a7d0cb03f66455f76c1d9878a9df76604e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346141"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 Décrit une référence.
@@ -49,24 +52,31 @@ public struct DEBUG_REFERENCE_INFO {
 ```
 
 ## <a name="members"></a>Membres
-dwFields une combinaison d’indicateurs à partir de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) énumération qui spécifie quels champs sont renseignés.
+`dwFields`\
+Une combinaison d’indicateurs de la [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) énumération qui spécifie quels champs sont renseignés.
 
-nom bstrName le spécifié par l’utilisateur de la [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet.
+`bstrName`\
+Le nom spécifié par l’utilisateur de la [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet.
 
-type de la référence bstrType argument de type sous forme de chaîne.
+`bstrType`\
+Le type de référence sous forme de chaîne.
 
-bstrValue Argument de type la valeur de référence sous forme de chaîne
+`bstrValue`\
+La valeur de référence sous forme de chaîne
 
-dwAttrib une combinaison d’indicateurs à partir de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui spécifie les indicateurs pour les attributs de propriété de débogage.
+`dwAttrib`\
+Une combinaison d’indicateurs de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) énumération qui spécifie les indicateurs pour les attributs de propriété de débogage.
 
-valeur dwRefType A à partir de la [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) énumération qui spécifie si le type de référence est forte ou faible.
+`dwRefType`\
+Une valeur comprise entre le [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) énumération qui spécifie si le type de référence est forte ou faible.
 
-m_pReference un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui spécifie les informations de référence.
+`m_pReference`\
+Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet qui spécifie les informations de référence.
 
 ## <a name="remarks"></a>Notes
 Cette structure est passée à un appel à la [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) méthode doit être renseigné. Cette structure est également retournée en tant que partie d’une liste à partir de la [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

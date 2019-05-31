@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd113dec63d98e54e72cc68c333d009db4e35a04
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f4f473c7fd13e51de608684fc44466b7bdeac2b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317971"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Le moteur de débogage (dé) utilise cette interface pour demander un document à charger.
@@ -45,7 +45,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="remarks"></a>Notes
  Un scénario classique dans lequel cette interface est utilisée est que si une erreur d’analyse se produit dans le code de script sur une page HTML, le script DE envoie cette interface pour le SDM afin que le document avec l’erreur d’analyse peut être affiché.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

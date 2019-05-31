@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420522"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334923"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procédure : Installer un plug-in de contrôle de code source
 Création d’un contrôle de source de plug-in implique trois étapes :
@@ -64,7 +64,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
 
 3. Ajouter la sous-clé, **SourceCodeControlProvider**, sous le **HKEY_LOCAL_MACHINE** clé dans le **logiciel** sous-clé.
 
-    Sous cette sous-clé, l’entrée de Registre **ProviderRegKey** est définie sur une chaîne qui représente la sous-clé que vous avez placées dans le Registre à l’étape 1. Le modèle est **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *logiciel\\< nom de la société\>\\< nom du produit \>*.
+    Sous cette sous-clé, l’entrée de Registre **ProviderRegKey** est définie sur une chaîne qui représente la sous-clé que vous avez placées dans le Registre à l’étape 1. Le modèle est **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *logiciel\\< nom de la société\>\\< nom du produit \>* .
 
     Voici un exemple de contenu pour cette sous-clé.
 
@@ -77,7 +77,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
 
 4. Créez une sous-clé nommée **InstalledSCCProviders** sous le **SourceCodeControlProvider** sous-clé, puis placez une entrée sous cette sous-clé.
 
-    Le nom de cette entrée est le nom lisible par l’utilisateur du fournisseur (le même que la valeur spécifiée pour l’entrée SCCServerName), et la valeur est, une fois encore, la sous-clé créée à l’étape 1. Le modèle est **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nom d’affichage\>** = *logiciel\\< entreprise nom\>\\< nom du produit\>*.
+    Le nom de cette entrée est le nom lisible par l’utilisateur du fournisseur (le même que la valeur spécifiée pour l’entrée SCCServerName), et la valeur est, une fois encore, la sous-clé créée à l’étape 1. Le modèle est **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nom d’affichage\>**  = *logiciel\\< entreprise nom\>\\< nom du produit\>* .
 
     Exemple :
 

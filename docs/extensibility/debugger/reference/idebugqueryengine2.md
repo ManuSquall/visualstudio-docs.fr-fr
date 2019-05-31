@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0254322ecccd3fb8a79ee30a10434ff130c068c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ad823c2aab4d2ca17b95c989925b8ffe16b1504d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339849"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Cette interface permet à la session de débogage manager (SDM) extraire une interface qui représente le moteur de débogage (dé).

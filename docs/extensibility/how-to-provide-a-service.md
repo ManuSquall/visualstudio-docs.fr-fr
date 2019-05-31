@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be56d37ddcd1047e776df2652c7e874e260a806
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a752e05e5a7c91e0e9f3d3c21f8542014a053245
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324977"
 ---
 # <a name="how-to-provide-a-service"></a>Procédure : Fournir un service
 Un VSPackage peut fournir des services qui les VSPackages autres peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322427"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois que l’extrait de code est inséré et peut avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.
@@ -50,7 +50,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 
  Il existe généralement deux emplacements où sont stockés les fichiers de modèle d’extrait de code : (1) où votre langage a été installé et 2) dans le dossier de l’utilisateur. Ces emplacements sont ajoutés au Registre ainsi que Visual Studio **Gestionnaire des extraits de Code** peut rechercher les extraits de code. Dossier de l’utilisateur est où les extraits de code créés par l’utilisateur sont stockés.
 
- La mise en page de dossier par défaut pour les fichiers de modèle d’extrait de code installé ressemble à ceci : *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ La mise en page de dossier par défaut pour les fichiers de modèle d’extrait de code installé ressemble à ceci : *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  est le dossier d’installation dans votre langue.
 
@@ -58,7 +58,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 
  *[LCID]*  est l’ID de paramètres régionaux. Voici comment les différentes versions de vos extraits sont stockés. Par exemple, l’ID de paramètres régionaux pour l’anglais est 1033, par conséquent, *[LCID]* est remplacé par 1033.
 
- Un fichier supplémentaire doit être fourni et qui est un fichier d’index, généralement appelé SnippetsIndex.xml ou ExpansionsIndex.xml (vous pouvez utiliser n’importe quel nom de fichier valide se terminant par .xml). Ce fichier est généralement stocké dans le *[InstallRoot]*\\ *[TestLanguage]* dossier et spécifie l’emplacement exact du dossier des extraits de code, ainsi que l’ID de langue et le GUID du langage service qui utilise les extraits de code. Le chemin d’accès exact du fichier d’index est placé dans le Registre comme décrit plus loin dans « Installation les entrées de Registre ». Voici un exemple d’un fichier SnippetsIndex.xml :
+ Un fichier supplémentaire doit être fourni et qui est un fichier d’index, généralement appelé SnippetsIndex.xml ou ExpansionsIndex.xml (vous pouvez utiliser n’importe quel nom de fichier valide se terminant par .xml). Ce fichier est généralement stocké dans le *[InstallRoot]* \\ *[TestLanguage]* dossier et spécifie l’emplacement exact du dossier des extraits de code, ainsi que l’ID de langue et le GUID du langage service qui utilise les extraits de code. Le chemin d’accès exact du fichier d’index est placé dans le Registre comme décrit plus loin dans « Installation les entrées de Registre ». Voici un exemple d’un fichier SnippetsIndex.xml :
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

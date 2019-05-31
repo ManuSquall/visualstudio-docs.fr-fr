@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649db74d7bfc727868ee9d568aba811736a24cc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7594b91c67fb77d02e238a9336beb8d939714e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345525"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
 Le moteur de débogage (dé) envoie généralement un des événements suivants en tant que le dernier événement de démarrage :
@@ -39,11 +39,11 @@ Le moteur de débogage (dé) envoie généralement un des événements suivants 
 
 5. Si l’utilisateur choisit de pas à pas détaillé, plus ou en dehors d’une fonction, l’IDE vous invite à entrer la session de débogage pour appeler le programme `Step` (méthode). L’IDE transmet ensuite l’unité d’étape (instruction, instruction ou ligne) et le type d’étape (que ce soit à l’étape dans, au-dessus ou en dehors de la fonction). Lorsque l’étape est terminée, le D’envoie un événement de fin d’étape à la session de débogage, qui est un événement d’arrêt.
 
-    - ou -
+    ou
 
     Si l’utilisateur choisit de continuer à s’exécuter à partir du pointeur d’instruction en cours, l’IDE vous invite à entrer la session de débogage pour appeler le programme **Execute** (méthode). Le programme reprend son exécution jusqu'à ce qu’il rencontre la condition d’arrêt suivante.
 
-    - ou -
+    ou
 
     Si la session de débogage consiste à ignorer un événement d’arrêt particulier, la session de débogage appelle le programme **continuer** (méthode). Si le programme a été pas à pas détaillé dans, au-dessus ou en dehors d’une fonction lorsqu’il a rencontré la condition d’arrêt, puis il continue l’étape.
 

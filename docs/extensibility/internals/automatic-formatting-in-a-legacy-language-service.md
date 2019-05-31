@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64fbf5b64b57425b1bdee3ae3475c234384db062
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b69419e917a5ab5293af15b21822ca6473a9e292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910603"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344931"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Mise en forme dans un service de langage hérité automatique
 Avec la mise en forme automatique, un service de langage insère automatiquement un extrait de code lorsqu’un utilisateur commence à taper une construction de code connu.

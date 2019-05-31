@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689172"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346400"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Spécifie les critères pour la comparaison de deux contextes de mémoire.
@@ -53,31 +56,40 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Membres
-CONTEXT_EQUAL recherche le premier contexte de la mémoire dans la liste qui est égale au contexte cible de mémoire.
+## <a name="fields"></a>Champs
+`CONTEXT_EQUAL`\
+Recherche le premier contexte de la mémoire dans la liste qui est égale au contexte cible de mémoire.
 
-CONTEXT_LESS_THAN recherche le premier contexte de la mémoire dans la liste qui est inférieur au contexte de la mémoire cible.
+`CONTEXT_LESS_THAN`\
+Recherche le premier contexte de la mémoire dans la liste qui est inférieur au contexte de la mémoire cible.
 
-CONTEXT_GREATER_THAN recherche le premier contexte de la mémoire dans la liste qui est supérieure dans le contexte de la mémoire cible.
+`CONTEXT_GREATER_THAN`\
+Recherche le premier contexte de la mémoire dans la liste qui est supérieure dans le contexte de la mémoire cible.
 
-CONTEXT_LESS_THAN_OR_EQUAL recherche le premier contexte de la mémoire dans la liste qui est inférieur ou égal au contexte cible de mémoire.
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+Recherche le premier contexte de la mémoire dans la liste qui est inférieur ou égal au contexte cible de mémoire.
 
-CONTEXT_GREATER_THAN_OR_EQUAL recherche le premier contexte de la mémoire dans la liste qui est supérieur ou égal au contexte cible de mémoire.
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+Recherche le premier contexte de la mémoire dans la liste qui est supérieur ou égal au contexte cible de mémoire.
 
-CONTEXT_SAME_SCOPE recherche le premier contexte de la mémoire dans la liste qui se trouve dans la même étendue que le contexte de la mémoire cible.
+`CONTEXT_SAME_SCOPE`\
+Recherche le premier contexte de la mémoire dans la liste qui se trouve dans la même étendue que le contexte de la mémoire cible.
 
-CONTEXT_SAME_FUNCTION recherche le premier contexte de la mémoire dans la liste qui se trouve dans la même fonction que l’étendue de mémoire cible.
+`CONTEXT_SAME_FUNCTION`\
+Recherche le premier contexte de la mémoire dans la liste qui se trouve dans la même fonction que l’étendue de mémoire cible.
 
-CONTEXT_SAME_MODULE recherche le premier contexte de la mémoire dans la liste qui se trouve dans le même module que le contexte de la mémoire cible.
+`CONTEXT_SAME_MODULE`\
+Recherche le premier contexte de la mémoire dans la liste qui se trouve dans le même module que le contexte de la mémoire cible.
 
-CONTEXT_SAME_PROCESS recherche le premier contexte de la mémoire dans la liste qui se trouve dans le même processus que le contexte de la mémoire cible.
+`CONTEXT_SAME_PROCESS`\
+Recherche le premier contexte de la mémoire dans la liste qui se trouve dans le même processus que le contexte de la mémoire cible.
 
 ## <a name="remarks"></a>Notes
 Passé en tant qu’argument à la [comparer](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) (méthode).
 
 Ces valeurs sont utilisées pour rechercher le premier contexte de la mémoire dans une liste qui satisfait aux critères de comparaison spécifiées. Un contexte de mémoire reçoit une liste des contextes de mémoire à comparer lui-même contre via le `IDebugMemoryContext2::Compare` (méthode). Le premier contexte de la mémoire dans la liste pour laquelle l’opérateur de comparaison est `true` est alors retournée.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

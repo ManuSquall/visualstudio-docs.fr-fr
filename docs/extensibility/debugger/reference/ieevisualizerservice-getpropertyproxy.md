@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetPropertyProxy method
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4779bb213f67527c62876410e2fdc92263754ae9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 117cffcaffc44b37f977aa0d2a195047449edb02
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203658"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350132"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Cette méthode retourne un proxy pour un objet de propriété.

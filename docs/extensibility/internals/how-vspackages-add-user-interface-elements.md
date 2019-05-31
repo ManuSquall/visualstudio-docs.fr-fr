@@ -7,17 +7,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1109d6aecf2bc89f72377b282be0182c1e677ed0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418386"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311951"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment VSPackages ajoute des éléments d’interface utilisateur
 Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exemple, les menus, barres d’outils et de l’outil windows, à Visual Studio par le biais de la *.vsct* fichier.

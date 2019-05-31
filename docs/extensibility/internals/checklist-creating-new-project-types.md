@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861750"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309198"
 ---
 # <a name="checklist-create-new-project-types"></a>Checklist : Créer des types de projet
 Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La liste de vérification suivante fournit un guide pour ces tâches :
@@ -49,13 +49,13 @@ Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La
 
     - Objets ou classes dérivées de `IDispatch`, disponible pour l’automatisation.
 
-    - Table de commande XML (*.vsct*) les fichiers. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - Table de commande XML ( *.vsct*) les fichiers. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Tester, déboguer et démarrer votre type de projet.
 
 7. Afficher votre projet dans le **projet** onglet de la **ajouter une référence** boîte de dialogue en définissant `VARIANT_TRUE` comme valeur pour `VSHPROPID_ShowProjInSolutionPage`. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Créer Microsoft Installer (*.msi*) fichier d’installation de vos VSPackages. Pour plus d’informations, consultez [installer des VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [inscrire un type de projet](../../extensibility/internals/registering-a-project-type.md), et [VSPackages](../../extensibility/internals/vspackages.md).
+8. Créer Microsoft Installer ( *.msi*) fichier d’installation de vos VSPackages. Pour plus d’informations, consultez [installer des VSPackages avec Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [inscrire un type de projet](../../extensibility/internals/registering-a-project-type.md), et [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

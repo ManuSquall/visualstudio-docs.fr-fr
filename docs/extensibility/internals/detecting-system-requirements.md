@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351641"
 ---
 # <a name="detect-system-requirements"></a>Détecter la configuration système requise
 Un VSPackage ne peut pas fonctionner, sauf si Visual Studio est installé. Lorsque vous utilisez le programme d’installation de Microsoft Windows pour gérer l’installation de votre VSPackage, vous pouvez configurer le programme d’installation pour détecter si Visual Studio est installé. Vous pouvez également configurer pour vérifier le système pour d’autres exigences, par exemple, une version particulière de Windows ou une quantité spécifique de mémoire vive.
@@ -33,7 +33,7 @@ Un VSPackage ne peut pas fonctionner, sauf si Visual Studio est installé. Lorsq
 Lorsqu’une version plus récente est installée, les clés de Registre pour cette édition sont ajoutés, ainsi que pour les éditions antérieures. Autrement dit, si l’édition Enterprise est installée, le **installer** clé est définie sur *1* pour l’entreprise, ainsi que pour les éditions Professional et Community. Par conséquent, vous devez ne vérifier que pour la version la plus récente que vous avez besoin.
 
 > [!NOTE]
-> Dans la version 64 bits de l’Éditeur du Registre, les clés de 32 bits sont affichées sous **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Les clés de Visual Studio sont sous **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> Dans la version 64 bits de l’Éditeur du Registre, les clés de 32 bits sont affichées sous **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Les clés de Visual Studio sont sous **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
 
 |Produit|Touche|
 |-------------|---------|

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856620"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309640"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.
 
- Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Est un exemple d’une liaison de clé unique **Ctrl**+**S** pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Est un exemple d’une combinaison de touches double <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** pour définir un signet.
+ Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Est un exemple d’une liaison de clé unique **Ctrl**+**S** pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Est un exemple d’une combinaison de touches double <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** pour définir un signet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,10 +40,10 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
 |ID|Obligatoire.|
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|
 |key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|Optionnel. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
-|key2|Optionnel. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|Optionnel. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
-|Émulateur|Optionnel.|
+|mod1|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
+|key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
+|Émulateur|Facultatif.|
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants

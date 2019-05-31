@@ -3,18 +3,18 @@ title: 'Procédure : Migrer des projets d’extensibilité vers Visual Studio 2
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863653"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319311"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -31,7 +31,7 @@ Vérifiez que votre installation inclut les charges de travail suivantes :
 
 Tous les projets VSIX nécessitera une mise à niveau définitive de version majeure à Visual Studio 2017.
 
-Le fichier projet (par exemple **.csproj*) sera mis à jour :
+Le fichier projet (par exemple * *.csproj*) sera mis à jour :
 
 * Minimumvisualstudioversion par - maintenant la valeur 15.0
 * OldToolsVersion (si précédemment existe)-maintenant la valeur 14.0
@@ -47,7 +47,7 @@ Pour mettre à jour les références NuGet Microsoft.VSSDK.BuildTools :
 
 * Avec le bouton droit sur la solution et choisissez **gérer les Packages NuGet pour la Solution**.
 * Accédez à la **mises à jour** onglet.
-* Sélectionnez **Microsoft.VSSDK.BuildTools (dernière version)**.
+* Sélectionnez **Microsoft.VSSDK.BuildTools (dernière version)** .
 * Appuyez sur **mise à jour**.
 
 ![Outils de génération d’extensibilité Visual Studio](media/vssdk-build-tools.png)

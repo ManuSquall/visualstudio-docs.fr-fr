@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680566"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350478"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Spécifie les informations à récupérer sur la résolution d’un point d’arrêt.
@@ -43,14 +46,18 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membres
-BPRESI_BPRESLOCATION Initialize/utiliser le `bpResLocation` champ (emplacement de résolution de point d’arrêt) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure.
+## <a name="fields"></a>Champs
+`BPRESI_BPRESLOCATION`\
+Initialize/utiliser le `bpResLocation` champ (emplacement de résolution de point d’arrêt) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure.
 
-BPRESI_PROGRAM Initialize/utiliser le `pProgram` champ la `BP_RESOLUTION_INFO` structure.
+`BPRESI_PROGRAM`\
+Initialize/utiliser le `pProgram` champ la `BP_RESOLUTION_INFO` structure.
 
-BPRESI_THREAD Initialize/utiliser le `pThread` champ la `BP_RESOLUTION_INFO` structure.
+`BPRESI_THREAD`\
+Initialize/utiliser le `pThread` champ la `BP_RESOLUTION_INFO` structure.
 
-BPRESI_ALLFIELDS Spécifie tous les champs.
+`BPRESI_ALLFIELDS`\
+Spécifie tous les champs.
 
 ## <a name="remarks"></a>Notes
 Passé à la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) méthode pour indiquer les champs de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure doivent être initialisées.
@@ -59,7 +66,7 @@ Ces indicateurs sont également utilisées pour indiquer les champs de la `BP_RE
 
 Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

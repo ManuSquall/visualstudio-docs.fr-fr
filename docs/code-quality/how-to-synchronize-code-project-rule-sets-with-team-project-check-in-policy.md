@@ -1,5 +1,5 @@
 ---
-title: "Procédure : Synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe"
+title: Ensembles de règles de projet de synchronisation avec la stratégie d’archivage
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815825"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260849"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : Synchroniser des ensembles de règles de projet de Code avec une stratégie d’archivage Azure DevOps Project
 
@@ -45,7 +45,7 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
 
 3. Cliquez sur **analyse du Code**.
 
-4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.
+4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .
 
 5. Dans le **Open** boîte de dialogue, spécifiez la règle de stratégie d’archivage définie le fichier.
 
@@ -61,6 +61,6 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
 
 5. Ouvrir la boîte de dialogue Propriétés du projet de code et afficher le **analyse du Code** page.
 
-6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.
+6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .
 
 7. Dans le **Open** boîte de dialogue, spécifiez l’ensemble de règles fichier.

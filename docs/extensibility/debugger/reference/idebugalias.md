@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias interface
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fbf93b3675e81c1774fc018b14c3c7f66641381
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 29b7a8bca687ff2992c5e3fb92cb0cc6c8a1740d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338126"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Représente un alias numérique pour une variable. Un alias est simplement un nom différent pour une variable.
 
@@ -50,7 +50,7 @@ IDebugAlias : IUnknown
 ## <a name="remarks"></a>Notes
  Un alias est un nombre décimal sous forme de chaîne suivie du caractère #, par exemple, 1001#.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : ee.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

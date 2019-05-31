@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333522"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits dans une valeur unique. Ces valeurs sont appelées des indicateurs de bits. Les différents indicateurs de bits utilisés par l’API de plug-in de contrôle de Source sont détaillées ici, regroupés par la fonction qui les utilise.

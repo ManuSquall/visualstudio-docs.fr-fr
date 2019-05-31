@@ -3,17 +3,17 @@ title: Partagé des couleurs pour Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b36b7c123f4da9ca3ab7a6f33a972345cdf70e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430237"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310776"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 Lorsque vous concevez l’interface utilisateur qui utilise des éléments communs du shell Visual Studio, ou vous souhaitez que votre élément d’interface pour être cohérent avec des fonctionnalités similaires, vous pouvez utiliser des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
@@ -299,7 +299,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | --- | --- |
 | Présentation | Transparent |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Afficher les éléments de liste : état actif**
 
@@ -307,7 +307,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | --- | --- |
 | Présentation | `TreeView.SelectedItemActive` |
 | Premier plan (texte) | `TreeView.SelectedItemActiveText` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Afficher les éléments de liste : état inactif**
 
@@ -315,7 +315,7 @@ Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du
 | --- | --- |
 | Présentation | `TreeView.SelectedItemInactive` |
 | Premier plan (texte) | `TreeView.SelectedItemInactiveText` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 ### <a name="ui-text"></a>Texte de l’interface utilisateur
 
@@ -679,7 +679,7 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 | --- | --- |
 | Présentation | `SearchControl.Selection` |
 | Premier plan (texte) | `SearchControl.FocusedBackground` |
-| Bordure | Aucun. |
+| Bordure | None |
 | Séparateur | `SearchControl.FocusedDropDownSeparator` |
 
 **Champ d’entrée de recherche désactivé**
@@ -699,7 +699,7 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (glyphe Rechercher) | `SearchControl.SearchGlyph` |
 | Premier plan (glyphe Arrêter) | `SearchControl.StopGlyph` |
 | Premier plan (glyphe Effacer) | `SearchControl.ClearGlyph` |
@@ -733,9 +733,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (glyphe) | `SearchControl.ActionButtonDisabledGlyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Bouton de liste déroulante de recherche**
 
@@ -773,9 +773,9 @@ Une zone de recherche peut être dans plusieurs états, dont certains s’exclue
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (glyphe) | `SearchControl.DisabledDownButtonGlyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 #### <a name="search-drop-down-lists"></a>Listes déroulantes de recherche
 Menu de liste déroulante de la zone de recherche a susceptibles d’être légèrement plus complexe que les autres menus déroulants dans Visual Studio. Les sections « options de recherche » ni « recherches suggérées » peuvent apparaître seules ou ensemble dans le menu, et chacun d’eux est coloré séparément. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.
@@ -873,7 +873,7 @@ Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Expl
 | Présentation | `TreeView.Background` |
 | Premier plan (texte) | `TreeView.Background` |
 | Premier plan (glyphe) | `TreeView.Glyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Élément d’arborescence : placez le curseur état**
 
@@ -884,7 +884,7 @@ Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Expl
 | Présentation | `TreeView.Background` |
 | Premier plan (texte) | `TreeView.Background` |
 | Premier plan (glyphe) | `TreeView.GlyphMouseOver` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Élément d’arborescence : faites glisser sur l’état**
 
@@ -895,7 +895,7 @@ Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Expl
 | Présentation | `TreeView.DragOverItem` |
 | Premier plan (texte) | `TreeView.DragOverItem` |
 | Premier plan (glyphe) | `TreeView.DragOverItemGlyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Élément d’arborescence : sélectionnée, concentré état**
 
@@ -917,7 +917,7 @@ Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Expl
 | Présentation | `TreeView.SelectedItemInactive` |
 | Premier plan (texte) | `TreeView.SelectedItemInactive` |
 | Premier plan (glyphe) | `TreeView.SelectedItemInactiveGlyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Élément d’arborescence : Survolé, sélectionné et concentre l’état**
 
@@ -939,9 +939,9 @@ Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Expl
 | Présentation | `TreeView.SelectedItemInactive` |
 | Premier plan (texte) | `TreeView.SelectedItemInactive` |
 | Premier plan (glyphe) | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Bordure | Aucun. |
+| Bordure | None |
 
-## <a name="shell-appearance"></a>Apparence de l’interpréteur de commandes
+## <a name="shell-appearance"></a>Apparence Shell
 
 ### <a name="background"></a>Présentation
 L’arrière-plan de l’environnement comporte deux couches. La couche inférieure est une couleur unie qui recouvre l’ensemble de l’IDE. La couche supérieure se place sous l’interface de commande et entre les canaux à masquage automatique de la fenêtre Outil situés sur les côtés gauche et droit de l’IDE. Les couches d’arrière-plan supérieure et inférieure sont définies sur la même couleur dans les thèmes clairs et foncés.
@@ -1008,7 +1008,7 @@ Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste d
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Présentation | `ManifestDesigner.TabActive` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Volet de description sélectionné de Concepteur de manifeste : état par défaut**
 
@@ -1065,10 +1065,10 @@ Les titres de menu comprennent un arrière-plan, une bordure et le texte du titr
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Premier plan (glyphe) | `Environment.CommandBarMenuGlyph` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 **Titre de menu : placez le curseur état**
 
@@ -1102,10 +1102,10 @@ Les titres de menu comprennent un arrière-plan, une bordure et le texte du titr
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (texte) | `Environment.CommandBarTextInactive` |
 | Premier plan (glyphe) | `Environment.CommandBarTextInactive` |
-| Bordure | Aucun. |
+| Bordure | None |
 
 #### <a name="menu-items"></a>Éléments de menu
 Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.
@@ -1407,7 +1407,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
 #### <a name="BKMK_CommandDropDown"></a> Commande Barres déroulantes
@@ -1439,7 +1439,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (glyphe) | `Environment.DropDownGlyph` |
 
 **Liste déroulante de barre de commande : état par défaut**
@@ -1539,7 +1539,7 @@ Les boutons partagés partagent de nombreux noms de jeton avec d’autres contr�
 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
-| Présentation | Aucun. |
+| Présentation | None |
 | Premier plan (texte) | `Environment.CommandBarTextActive` |
 | Premier plan (glyphe) | `Environment.CommandBarSplitButtonGlyph` |
 | Bordure | N/A |
@@ -2029,7 +2029,7 @@ La boîte à outils est une des fenêtres Outil commune fréquemment utilisées 
 | --- | --- |
 | Présentation | `Environment.ToolboxContent`<br />(En-têtes) |
 | Présentation | `Environment.ToolWindowBackground`<br />(Les éléments individuels ou fenêtre entière si aucun contrôle disponible) |
-| Bordure | Aucun. |
+| Bordure | None |
 | Premier plan (glyphe) | `Environment.ToolboxContent` |
 | Premier plan (texte) | `Environment.ToolboxContent` |
 
@@ -2040,7 +2040,7 @@ La boîte à outils est une des fenêtres Outil commune fréquemment utilisées 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Présentation | `Environment.ToolboxContentMouseOver`<br />(Pour les éléments individuels uniquement) |
-| Bordure | Aucun. |
+| Bordure | None |
 | Premier plan (texte) | `Environment.ToolboxContentMouseOver`<br />(Pour les éléments individuels uniquement) |
 
 **Les nœuds de la boîte à outils sélectionnés : état de focus**
@@ -2065,7 +2065,7 @@ La boîte à outils est une des fenêtres Outil commune fréquemment utilisées 
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Présentation | `TreeView.SelectedItemInactive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
-| Bordure | Aucun. |
+| Bordure | None |
 | Premier plan (glyphe) | `TreeView.SelectedItemInactive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 | Premier plan (texte) | `TreeView.SelectedItemInactive`<br />À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) |
 

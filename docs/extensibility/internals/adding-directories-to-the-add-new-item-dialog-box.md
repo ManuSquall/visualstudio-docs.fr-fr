@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfe4578b4896c137f3bcef8418c5dc0cafd70798
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 981b65df9354277580ee1c816f4e0fd0977f9a85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910648"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328016"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>Ajouter des répertoires à la boîte de dialogue Ajouter un nouvel élément
 L’exemple de code suivant montre comment inscrire un nouvel ensemble de répertoires pour les **ajouter un nouvel élément** boîte de dialogue. Répertoires pour la **ajouter un nouvel élément** boîte de dialogue sont différents pour chaque projet. Par conséquent, les répertoires sont enregistrés sous la **projets** sous-clé, trouvé dans **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**.

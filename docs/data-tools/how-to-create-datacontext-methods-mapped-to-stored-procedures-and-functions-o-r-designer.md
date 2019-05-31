@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O-R)'
+title: Mapper les méthodes DataContext aux procédures stockées et aux fonctions (Concepteur O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3051820be7972af93419833cc62617f6d7e524da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566506"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260495"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procédure : créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)
 

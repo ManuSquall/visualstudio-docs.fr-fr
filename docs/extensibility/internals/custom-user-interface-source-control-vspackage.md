@@ -6,20 +6,20 @@ helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ab1bb7e44ee2772023a73632ca194796bbb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d27fe21fb577f2e3610bf30109aa8c0b7f17a12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312203"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface utilisateur personnalisée (contrôle de source de package Visual Studio)
-Un VSPackage déclare ses éléments de menu et leurs États par défaut par le biais du tableau de commandes de Visual Studio (*.vsct*) fichier. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu'à ce que le VSPackage est chargé. Par la suite, le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver des éléments de menu.
+Un VSPackage déclare ses éléments de menu et leurs États par défaut par le biais du tableau de commandes de Visual Studio ( *.vsct*) fichier. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) affiche les éléments de menu dans leur état par défaut jusqu'à ce que le VSPackage est chargé. Par la suite, le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est appelée pour activer ou désactiver des éléments de menu.
 
  Un VSPackage peut définir une clé de Registre pour le VSPackage peut être chargé automatiquement en fonction d’un contexte d’interface (UI) de commande utilisateur, bien que généralement un contrôle de source VSPackage doit se charger à la demande au lieu de simplement passer à un contexte particulier de l’interface utilisateur. Pour plus d’informations sur la **AutoLoadPackages** Registre clé, consultez [gérer les VSPackages](../../extensibility/managing-vspackages.md).
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65bb3c2440a2d76496dda962b199f30ef89023c1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b7d0d2990c5286a277164d58e74ec2d96fa176e7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226242"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319995"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lorsqu’un thread a s’exécuter jusqu'à la fin.

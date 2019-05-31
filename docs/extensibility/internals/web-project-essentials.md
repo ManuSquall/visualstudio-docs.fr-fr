@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429354"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323308"
 ---
 # <a name="web-project-essentials"></a>Éléments fondamentaux de projet web
 Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pour créer une application Web qui comporte les pages Web actives. Une page Web active a au code côté serveur qui restitue la page Web à la demande.
@@ -32,7 +32,7 @@ Projets Web créent des applications Web. Vous pouvez utiliser un projet Web pou
 
   - Un projet d’application Web (WAP) produit un seul fichier exécutable qui combine le code pour toutes les pages Web actives, ainsi que tous les fichiers source dans le dossier/App_Code.
 
-- Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers de solution se trouvent dans \Documents and Settings\\*Votre_compte*\My Documents\\*\<Visual Studio ### >* \Projects\\ *Votresiteweb*.
+- Le fichier de solution pour un projet Web se trouve séparément à partir du site Web lui-même. Par défaut, les fichiers de solution se trouvent dans \Documents and Settings\\*Votre_compte*\My Documents\\ *\<Visual Studio ### >* \Projects\\ *Votresiteweb*.
 
   > [!NOTE]
   > Si vous souhaitez conserver le fichier de solution avec le site Web, simplement déplacez-la à cet endroit et le rouvrir.

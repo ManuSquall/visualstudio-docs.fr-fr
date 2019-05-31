@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675590"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260682"
 ---
 # <a name="deploying-applications-services-and-components"></a>Déploiement d'applications, de services et de composants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ En déployant une application, un service ou un composant, vous le distribuez po
 |**Déployer une application de bureau :** En utilisant le déploiement ClickOnce, vous pouvez publier une application de bureau à un serveur web ou un partage de fichiers réseau. Les utilisateurs peuvent ensuite installer l'application d'un seul clic.|[Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Créer un programme d’installation :** Vous pouvez créer un programme d’installation à l’aide de InstallShield Limited Edition, qui est gratuite.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Maintenir un programme d’installation existant :** Continuer à utiliser un programme d’installation créé dans une version antérieure de Visual Studio en installant l’Extension des projets Visual Studio Installer.|[Extension de projets de programme d’installation de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Documentation pour les projets de programme d’installation est disponible ici : [Déploiement de programme d’installation de Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Déployer une application Visual C++ :** Vous pouvez déployer le runtime Visual C++ avec une application à l’aide de déploiement central, le déploiement local ou la liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Déployer une application Visual C++ :** Vous pouvez déployer le runtime Visual C++ avec une application à l’aide de déploiement central, le déploiement local ou la liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Déployer une application de test :** Vous pouvez effectuer des développements et des tests plus sophistiqués en déployant vos applications dans des environnements virtuels.|[Test sur un environnement lab](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Installer les composants requis :** Vous pouvez installer les composants prérequis pour les applications de bureau en configurant un programme d’installation générique, appelé programme d’amorçage.|[Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)|

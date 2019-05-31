@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418466"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328759"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procédure : Créer un fichier .vsct
 
-Il existe plusieurs façons de créer une configuration de table de commande basé sur XML Visual Studio (*.vsct*) fichier.
+Il existe plusieurs façons de créer une configuration de table de commande basé sur XML Visual Studio ( *.vsct*) fichier.
 
 - Vous pouvez créer un nouveau VSPackage s’affiche dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèle de package.
 
@@ -45,7 +45,7 @@ Il existe plusieurs façons de créer une configuration de table de commande bas
 
 6. Dans la liste des schémas XSD, sélectionnez le *vsct.xsd* schéma. Si elle n’est pas dans la liste, cliquez sur **ajouter** , puis recherchez le fichier sur un lecteur local. Cliquez sur **OK** lorsque vous avez terminé.
 
-7. Dans le fichier XML, tapez *< CommandTable* , puis appuyez sur **onglet**. Fermer la balise en tapant *>*.
+7. Dans le fichier XML, tapez *< CommandTable* , puis appuyez sur **onglet**. Fermer la balise en tapant *>* .
 
     Cette action crée un base *.vsct* fichier.
 

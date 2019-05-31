@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674154"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263014"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Copiez uniquement les fichiers suivants du dossier \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ vers l’ordinateur de build, comme décrit dans [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Aucun autre fichier ne peut être copié.  
+5. Copiez uniquement les fichiers suivants du dossier \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ vers l’ordinateur de build, comme décrit dans [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Aucun autre fichier ne peut être copié.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
          Pour une génération 64 bits native, pointez sur MSBuild 64 bits.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Préparation d’un ordinateur de test pour lancer un exécutable de débogage](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)

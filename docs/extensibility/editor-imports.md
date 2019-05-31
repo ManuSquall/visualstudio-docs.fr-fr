@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b8c33ddcc712011556df76dbea71ddab432d9a31
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334596"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 Vous pouvez importer un nombre de services de l’éditeur, les fabriques et les courtiers et fournissent votre extension avec différents types d’accès à l’éditeur principal. Par exemple, vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pour vous donner un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour un type de contenu donné. (Ce navigateur permet de qu'effectuer de différents types de recherche sur une mémoire tampon de texte.)

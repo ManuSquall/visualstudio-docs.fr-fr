@@ -6,22 +6,22 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926934"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321175"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Fonctions de rappel implémentées par l’IDE
 Pour faciliter l’intégration avec l’environnement de développement intégré (IDE) comme transparente que possible et pour fournir une expérience unifiée de l’utilisateur final, le plug-in de contrôle de code source peut utiliser les fonctions de rappel qui sont implémentées par l’IDE. Le plug-in peut appeler ces fonctions aux moments opportuns pendant une opération de contrôle de code source pour passer des informations à l’IDE ; l’IDE peut ensuite afficher ces informations comme éléments incorporés dans son interface utilisateur native. L’utilisateur a une expérience moins fragmentée dans ce scénario que si le plug-in employées sa propre interface utilisateur.
 
- Le fichier d’en-tête requis est *scc.h*. L’emplacement par défaut est *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*. Il est également dans le dossier VSIP qui contient les exemples de plug-in de contrôle de source à *\Program Files\VSIP 8.0\MSSCCI\\*.
+ Le fichier d’en-tête requis est *scc.h*. L’emplacement par défaut est *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Il est également dans le dossier VSIP qui contient les exemples de plug-in de contrôle de source à *\Program Files\VSIP 8.0\MSSCCI\\* .
 
 ## <a name="in-this-section"></a>Dans cette section
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) décrit la fonction de rappel qui est utilisée par [SccOpenProject](../extensibility/sccopenproject-function.md) pour afficher les messages de contrôle de source de plug-in via l’IDE.

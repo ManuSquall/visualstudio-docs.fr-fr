@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860266"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326628"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
 Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vous demandez ce qui se passe réellement lorsque vous créez un nouveau projet ? Prenons un œil en coulisses et voyons ce qui se passe vraiment.
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Le chemin d’accès de Visual Studio installation > \VC#\VCSPackages\1033\csprojui.dll
 
- Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui.dll dans le répertoire Visual Studio... La table de chaînes montre que les ressources #2345 porte la légende **Visual C#**.
+ Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui.dll dans le répertoire Visual Studio... La table de chaînes montre que les ressources #2345 porte la légende **Visual C#** .
 
 ##### <a name="sortpriority"></a>SortPriority
  Ce paramètre détermine la position du nœud racine dans le **types de projets** arborescence.

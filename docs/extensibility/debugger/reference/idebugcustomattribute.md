@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute interface
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 338f07f26bf4d0471fbf178a369a085d5ef76a08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae596c781d864f97087371fcb10595aa5f6a8ee9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346127"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Cette interface représente un attribut personnalisé, et il peut fournir le nom, le parent et le type de classe de l’attribut.

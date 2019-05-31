@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Déploiement manuel d’une Application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation | Microsoft Docs'
+title: Déployer manuellement ClickOnce en conservant la personnalisation des applications
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405838"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263426"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client pour publier et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer à nouveau. Si qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [ClickOnce de déployer des applications pour les serveurs de test et de production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,9 +127,9 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 13. Sélectionnez **fichier**, **enregistrer** dans le menu, puis enregistrez le manifeste d’application. Vous devrez signer le manifeste d’application lorsque vous l’enregistrez.
 
-14. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **connexion en tant que fichier de certificat** option et sélectionnez le certificat dans le système de fichiers avec les points de suspension (**...** ) bouton.
+14. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez le **connexion en tant que fichier de certificat** option et sélectionnez le certificat dans le système de fichiers avec les points de suspension ( **...** ) bouton.
 
-     - ou -
+     ou
 
      Si votre certificat est conservé dans un magasin de certificats est accessible à partir de votre ordinateur, sélectionnez le **signer avec l’option de certificat stockées**, puis sélectionnez le certificat dans la liste fournie.
 

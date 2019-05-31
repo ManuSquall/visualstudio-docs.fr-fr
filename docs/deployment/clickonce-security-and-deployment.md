@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406767"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263246"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement propose trois problèmes majeurs au déploiement :
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406767"
   Dans le passé, ces problèmes parfois les développeurs choisissent de créer des applications Web au lieu de Windows des applications, pour autant sacrifier une interface utilisateur élaborée pour faciliter l’installation. À l’aide des applications déployées à l’aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous pouvez bénéficier du meilleur des deux technologies.
 
 ## <a name="what-is-a-clickonce-application"></a>Qu’est-ce qu’une application ClickOnce ?
- Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est n’importe quel ordinateur Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), application console (*.exe*), ou une solution Office (*.dll*) publiée à l’aide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Vous pouvez publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée sur l’ordinateur de l’utilisateur final et exécutée localement même si l’ordinateur est hors connexion, ou il peut être exécuté en mode en ligne uniquement sans installer quoi que ce soit de façon permanente sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est n’importe quel ordinateur Windows Presentation Foundation ( *.xbap*), Windows Forms ( *.exe*), application console ( *.exe*), ou une solution Office ( *.dll*) publiée à l’aide [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Vous pouvez publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application de trois façons différentes : à partir d’une page Web, à partir d’un partage de fichiers réseau ou à partir d’un support tel qu’un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut être installée sur l’ordinateur de l’utilisateur final et exécutée localement même si l’ordinateur est hors connexion, ou il peut être exécuté en mode en ligne uniquement sans installer quoi que ce soit de façon permanente sur l’ordinateur de l’utilisateur final. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications peuvent être mise à jour automatique ; elles peuvent vérifier les versions plus récentes dès qu’ils sont disponibles et remplacement automatiquement tous les fichiers mis à jour. Le développeur peut définir le comportement de mise à jour, et un administrateur réseau peut aussi contrôler les stratégies de mise à jour, par exemple en marquant une mise à jour comme étant obligatoire. Mises à jour peuvent également être restaurées vers une version antérieure restaurée par l’utilisateur final ou par un administrateur. Pour plus d’informations, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 

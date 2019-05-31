@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : À l’aide de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
+title: Débogage du nuanceur de calcul à l’aide des diagnostics des graphiques
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849107"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262864"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.

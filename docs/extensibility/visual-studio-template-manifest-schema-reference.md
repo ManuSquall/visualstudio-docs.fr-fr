@@ -3,32 +3,32 @@ title: Référence du schéma de manifeste de modèle Visual Studio | Microsoft 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108852"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323022"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Référence du schéma de manifeste de modèle Visual Studio
-Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) les fichiers qui sont générés pour les modèles de projet ou un élément de Visual Studio. Le schéma décrit également l’emplacement et autres informations pertinentes concernant le modèle.
+Ce schéma décrit le format du manifeste de modèle Visual Studio ( *.vstman*) les fichiers qui sont générés pour les modèles de projet ou un élément de Visual Studio. Le schéma décrit également l’emplacement et autres informations pertinentes concernant le modèle.
 
  : Comme élément distinct et les répertoires de modèle de projet, un manifeste ne devez jamais avoir une combinaison des modèles de projet et d’élément.
 
 > [!IMPORTANT]
->  Ce manifeste est disponible à partir de Visual Studio 2017.
+> Ce manifeste est disponible à partir de Visual Studio 2017.
 
 ## <a name="vstemplatemanifest-element"></a>Élément de VSTemplateManifest
  L’élément racine du manifeste.
 
 ### <a name="attributes"></a>Attributs
 
-- **Version**: Chaîne représentant la version du manifeste de modèle. Obligatoire.
+- **Version** : Chaîne représentant la version du manifeste de modèle. Obligatoire.
 
 - **Paramètres régionaux**: Chaîne représentant les paramètres régionaux ou paramètres régionaux du manifeste de modèle. La valeur de paramètres régionaux s’applique à tous les modèles. Vous devez utiliser un manifeste distinct pour chacun des paramètres régionaux. Facultatif.
 
@@ -68,11 +68,11 @@ Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) l
 
 - **RelativePath**: Le chemin d’accès du modèle. Il peut y avoir qu’une seule entrée par le chemin d’accès, donc la première condition sera choisie pour tous les manifestes.
 
-- **LocalizedName**: Un **NameDescriptionIcon** élément qui spécifie le nom localisé. Optionnel.
+- **LocalizedName**: Un **NameDescriptionIcon** élément qui spécifie le nom localisé. Facultatif.
 
-- **SortOrder**: Chaîne qui spécifie l’ordre de tri. Optionnel.
+- **SortOrder**: Chaîne qui spécifie l’ordre de tri. Facultatif.
 
-- **ParentFolderOverrideName**: Nom du dossier parent substitué. Optionnel. Cet élément possède un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.
+- **ParentFolderOverrideName**: Nom du dossier parent substitué. Facultatif. Cet élément possède un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.
 
 ### <a name="parent-element"></a>Élément parent
  **VSTemplateManifest**
@@ -122,7 +122,7 @@ Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) l
  Le code suivant est un exemple d’un modèle d’élément *.vstman* fichier.
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

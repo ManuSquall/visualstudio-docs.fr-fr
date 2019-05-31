@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862794"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324897"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procédure : Créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -51,7 +51,7 @@ Il est vivement recommandé de démarrer cette mise à niveau avec Visual Studio
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Garantir qu'aucune référence au fichier project.json
 
-Plus loin dans ce document, nous insérera dans les instructions import conditionnelles à votre **.csproj* fichier. Cela ne fonctionne pas si vos références NuGet sont stockés dans *project.json*. Par conséquent, nous vous recommandons de déplacer toutes les références NuGet à la *packages.config* fichier.
+Plus loin dans ce document, nous insérera dans les instructions import conditionnelles à votre * *.csproj* fichier. Cela ne fonctionne pas si vos références NuGet sont stockés dans *project.json*. Par conséquent, nous vous recommandons de déplacer toutes les références NuGet à la *packages.config* fichier.
 Si votre projet contient un *project.json* fichier :
 
 * Prenez note des références dans *project.json*.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 930908b66b5d2234b8c62585b10ddf751c96f61c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324505"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>Choisir une stratégie de mise en œuvre de moteur de débogage
 Utilisez l’architecture de l’exécution afin de déterminer votre stratégie de mise en œuvre de moteur (dé) débogage. Vous pouvez créer le débogage moteur in-process pour le programme que vous déboguez. Créer le débogage moteur in-process avec le Gestionnaire de débogage de session de Visual Studio (SDM). Ou bien, créez le débogage moteur out-of-process pour chacun d’eux. Les instructions suivantes vous aideront à choisir entre ces trois stratégies.

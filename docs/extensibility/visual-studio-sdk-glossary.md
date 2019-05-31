@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322417"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossaire de Visual Studio SDK
 Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentation.
@@ -73,7 +73,7 @@ Ce glossaire fournit les définitions des termes utilisés dans le [!INCLUDE[vsi
 
   composant de composant de niveau supérieur indépendant A qui utilise une fenêtre de niveau supérieur non modale et peut fonctionner efficacement comme une fenêtre d’application autonome, mais est implémenté comme un objet dans le processus. Par conséquent, un composant indépendant de niveau supérieur doit coordonner modalité et services de boucle de message avec l’IDE. Objets in-process n’ont leur propre boucle de message.
 
-  fournisseur d’informations le fournisseur d’informations est un module qui peut rechercher des mots clés et retourner une liste de rubriques, sous la forme de `IVsUserContextItem` objets. Pour fournir **F1** et mot clé de recherche des éléments pour le fournisseur d’informations, enregistrez votre fichier d’aide compilé (*. HxS*) avec le système. Les rubriques d’aide dans ces fichiers fournissent la liste des rubriques affichées dans la fenêtre Aide dynamique et indiqué si un utilisateur appuie sur **F1**.
+  fournisseur d’informations le fournisseur d’informations est un module qui peut rechercher des mots clés et retourner une liste de rubriques, sous la forme de `IVsUserContextItem` objets. Pour fournir **F1** et mot clé de recherche des éléments pour le fournisseur d’informations, enregistrez votre fichier d’aide compilé ( *. HxS*) avec le système. Les rubriques d’aide dans ces fichiers fournissent la liste des rubriques affichées dans la fenêtre Aide dynamique et indiqué si un utilisateur appuie sur **F1**.
 
   sur place objet VSPackage d’un composant qui implémente le `IOleInPlaceComponent` interface pour gérer une fenêtre visuellement contenue dans une fenêtre de document détenue par l’IDE. Déplacement des composants ne font pas partie standard-fusion de menus OLE ; au lieu de cela, ils intègrent leurs éléments d’interface utilisateur dans l’IDE.
 

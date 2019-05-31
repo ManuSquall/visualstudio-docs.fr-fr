@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318257"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Spécifie les informations à récupérer sur un champ de code machine.
@@ -61,32 +64,45 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membres
-DSF_ADDRESS Initialize/utiliser le `bstrAddress` champ.
+## <a name="fields"></a>Champs
+`DSF_ADDRESS`\
+Initialize/utiliser le `bstrAddress` champ.
 
-DSF_ADDRESSOFFSET Initialize/utiliser le `bstrAddressOffset` champ.
+`DSF_ADDRESSOFFSET`\
+Initialize/utiliser le `bstrAddressOffset` champ.
 
-DSF_CODEBYTES Initialize/utiliser le `bstrCodeBytes` champ.
+`DSF_CODEBYTES`\
+Initialize/utiliser le `bstrCodeBytes` champ.
 
-DSF_OPCODE Initialize/utiliser le `bstrOpCode` champ.
+`DSF_OPCODE`\
+Initialize/utiliser le `bstrOpCode` champ.
 
-DSF_OPERANDS Initialize/utiliser le `bstrOperands` champ.
+`DSF_OPERANDS`\
+Initialize/utiliser le `bstrOperands` champ.
 
-DSF_SYMBOL Initialize/utiliser le `bstrSymbol` champ.
+`DSF_SYMBOL`\
+Initialize/utiliser le `bstrSymbol` champ.
 
-DSF_CODELOCATIONID Initialize/utiliser le `uCodeLocationId` champ.
+`DSF_CODELOCATIONID`\
+Initialize/utiliser le `uCodeLocationId` champ.
 
-DSF_POSITION Initialize/utiliser le `posBeg` et `posEnd` champs.
+`DSF_POSITION`\
+Initialize/utiliser le `posBeg` et `posEnd` champs.
 
-DSF_DOCUMENTURL Initialize/utiliser le `bstrDocumentUrl` champ.
+`DSF_DOCUMENTURL`\
+Initialize/utiliser le `bstrDocumentUrl` champ.
 
-DSF_BYTEOFFSET Initialize/utiliser le `dwByteOffset` champ.
+`DSF_BYTEOFFSET`\
+Initialize/utiliser le `dwByteOffset` champ.
 
-DSF_FLAGS Initialize/utiliser le `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) champ.
+`DSF_FLAGS`\
+Initialize/utiliser le `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) champ.
 
-Noms de symbole DSF_OPERANDS_SYMBOLS inclure dans le `bstrOperands` champ.
+`DSF_OPERANDS_SYMBOLS`\
+Inclure les noms de symboles dans le `bstrOperands` champ.
 
-DSF_ALL Spécifie tous les champs pour le flux de code machine.
+`DSF_ALL`\
+Spécifie tous les champs pour le flux de code machine.
 
 ## <a name="remarks"></a>Notes
 Passé en tant que paramètre à la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) méthode pour indiquer les champs de la [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure doivent être initialisées.
@@ -95,7 +111,7 @@ Utilisé pour le `dwFields` membre de la `DisassemblyData` structure pour indiqu
 
 Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

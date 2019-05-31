@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e093b3af6c0db75282d12f8766d36bc511d2cf4c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909435"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328648"
 ---
 # <a name="managing-configuration-options"></a>Gestion des options de configuration
 Lorsque vous créez un nouveau type de projet, vous devez gérer les paramètres de configuration de projet et solution qui déterminent comment votre projet sera généré, empaquetée et déployée exécution. Les rubriques suivantes décrivent la configuration de projet et solution.

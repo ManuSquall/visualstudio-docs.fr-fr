@@ -3,17 +3,17 @@ title: Création d’une Extension avec une fenêtre outil | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2741a7f9d27c303981ed4b179e3fe3d7cd63f020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a38c9912be87c94c79076675b5db25663fb5f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926456"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345432"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Créer une extension avec une fenêtre outil
 
@@ -27,7 +27,7 @@ Dans cette procédure, vous allez apprendre à utiliser le modèle de projet VSI
 
 1. Créez un projet VSIX nommé **FirstWindow**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
-2. Quand le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **MyWindow**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de fenêtre outil à *MyWindow.cs*.
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **MyWindow**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#**  > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de fenêtre outil à *MyWindow.cs*.
 
 3. Générez le projet et commencez le débogage.
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5881681871f541c238fa44b03f6e21fd95a3a395
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cba0f5ccd3228466740a9fb907e6c20ce5400c48
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843165"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333585"
 ---
 # <a name="bitmap-element"></a>Élément de bitmap
 Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou d’un fichier.
@@ -38,7 +38,7 @@ Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou
 |resID|ID de l’identificateur de commande/ID GUID. Le resID ou l’attribut href est requis.<br /><br /> L’attribut resID est un ID de ressource d’entier qui détermine la bande de bitmaps qui doit être chargé pendant la fusion des tables de commande.  Lorsque la table de commande est chargée, les bitmaps spécifiées par l’ID de ressource sera chargées à partir de la ressource du même module.|
 |usedList|Obligatoire si l’attribut resID n’est présent. Sélectionne les images disponibles dans la bande de bitmaps.|
 |href|Chemin d’accès à l’image bitmap. Le resID ou l’attribut href est requis.<br /><br /> Le chemin d’accès include est recherchés dans le fichier image indiqué, qui est incorporé dans le fichier binaire qui en résulte.  Pendant la fusion de table de commande, l’image est copiée et aucune recherche de ressources supplémentaires ou de la charge n’est nécessaire.  Si l’attribut usedList n’est pas présent, toutes les images dans la bande sont disponibles. **Remarque :**  Les images peuvent être fournies dans un des formats qui incluent *.bmp*, *.png*, et *.gif*.  Les versions antérieures du compilateur ne prenait pas en charge les images bitmap 32 bits qui avait des informations alpha pour la transparence partielle. La solution de contournement pour ces versions consiste à utiliser le *.png* format.|
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.

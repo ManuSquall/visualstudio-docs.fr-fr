@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUninitialize function
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fae6cf7d86d57152446e8acc9e87a0fcbb3d12db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e34352150143c7db207ed31ea6e879f97ca18
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338495"
 ---
 # <a name="sccuninitialize-function"></a>Fonction SccUninitialize
 Cette fonction nettoie les allocations ou des connexions ouvertes créées par un appel précédent à la [SccInitialize](../extensibility/sccinitialize-function.md) en préparation pour arrêter le plug-in de contrôle de code source.

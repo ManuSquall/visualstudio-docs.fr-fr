@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351294"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime et expression l’évaluation
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411319"
 
  Une fois qu’une expression a été analysée, un fournisseur de symboles (SP) est appelé pour évaluer chaque objet de données. Par exemple, si « A » est défini à la fois dans plus d’une méthode, la question « Qui A ? » doit répondre avant que la valeur de A peut être vérifiée. La réponse retournée par la procédure stockée est quelque chose comme « Le troisième élément sur le frame de pile cinquième » ou « A 50 octets au-delà du début de la mémoire statique alloués à cette méthode. »
 
- Outre production MSIL pour le programme lui-même, les compilateurs CLR peuvent également produire des informations de débogage très descriptives qui sont écrit dans une base de données de programme (*.pdb*) fichier. Tant qu’un compilateur de langage de propriétaires génère des informations de débogage dans le même format que les compilateurs CLR, Service Pack du CLR est en mesure d’identifier que de la langue nommé objets de données. Une fois qu’un objet de données nommée a été identifié, le EE utilise un objet de classeur pour associer (ou de la liaison) l’objet de données à la zone de mémoire qui contient la valeur de cet objet. Le DE peut ensuite obtenir ou définir une nouvelle valeur pour l’objet de données.
+ Outre production MSIL pour le programme lui-même, les compilateurs CLR peuvent également produire des informations de débogage très descriptives qui sont écrit dans une base de données de programme ( *.pdb*) fichier. Tant qu’un compilateur de langage de propriétaires génère des informations de débogage dans le même format que les compilateurs CLR, Service Pack du CLR est en mesure d’identifier que de la langue nommé objets de données. Une fois qu’un objet de données nommée a été identifié, le EE utilise un objet de classeur pour associer (ou de la liaison) l’objet de données à la zone de mémoire qui contient la valeur de cet objet. Le DE peut ensuite obtenir ou définir une nouvelle valeur pour l’objet de données.
 
  Un compilateur propriétaire peut fournir des informations de débogage en appelant CLR le `ISymbolWriter` interface (qui est défini dans le .NET Framework dans l’espace de noms `System.Diagnostics.SymbolStore`). Par la compilation en MSIL et l’écriture des informations de débogage via ces interfaces, un compilateur propriétaire peut utiliser le CLR Allemagne et le SP. Cela simplifie grandement l’intégration d’un langage propriétaire dans l’IDE Visual Studio.
 

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::DoesInterfaceExist method
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0aa0eb7ea97b93b4140feb44fb2b4f02d7500331
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 57bf8d0af54773b03fd23994b83fe6d2fac1306c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337230"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 Détermine si une interface spécifique est définie dans la classe.

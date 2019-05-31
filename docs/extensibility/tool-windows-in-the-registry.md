@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b74081f474e85b97f46db5250daf042dbd6b917
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316391"
 ---
-# <a name="tool-windows-in-the-registry"></a>Windows d’outil dans le Registre
+# <a name="tool-windows-in-the-registry"></a>Fenêtres Outil dans le Registre
 Les VSPackages qui fournissent des fenêtres Outil doit enregistrer avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en tant que fournisseurs de fenêtre d’outils. Les fenêtres Outil créées en utilisant le modèle de Package Visual Studio cela par défaut. Fournisseurs de fenêtre outil ont des clés de Registre système qui spécifient les attributs de visibilité, telles que la taille de la fenêtre outil par défaut et l’emplacement, le GUID de la fenêtre qui sert le volet de fenêtre outil et le style d’ancrage.
 
  Pendant le développement, les fournisseurs de fenêtre outil gérée inscrire les fenêtres Outil en ajout d’attributs au code source, puis en exécutant l’utilitaire RegPkg.exe sur l’assembly résultant. Pour plus d’informations, consultez [l’inscription d’une fenêtre outil](../extensibility/registering-a-tool-window.md).

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49bbe85f24291c9a173bb513ebc3810148a26b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e7e5afa4e68d37254c3cb07f1bafa2b48ee787a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336543"
 ---
 # <a name="debug-engine"></a>Moteur de débogage
 Un moteur de débogage (dé) fonctionne avec le système d’exploitation ou un interpréteur pour fournir des services de débogage telles que l’exécution du contrôle des points d’arrêt, évaluation et expression. L’Allemagne est responsable de la surveillance de l’état d’un programme en cours de débogage. Pour cela, l’Allemagne utilise toutes les méthodes sont disponibles dans le runtime pris en charge, si de l’unité centrale ou à partir de l’API fournie par le runtime.

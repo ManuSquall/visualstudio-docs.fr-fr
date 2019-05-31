@@ -7,17 +7,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cad9d1cb12358de57c1d64678e45cf3d75ed5de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cd1f44342199c26506cceb4c77378b13aefd566
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341226"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Exposer des propriétés à la fenêtre Propriétés
 
@@ -35,7 +35,7 @@ Dans cette section, vous créez une fenêtre Outil personnalisée et afficher le
 
 1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX, qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `MyObjectPropertiesExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
-2. Ajouter une fenêtre outil en ajoutant un modèle d’élément de fenêtre d’outil personnalisé nommé `MyToolWindow`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#** > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à *MyToolWindow.cs*. Pour plus d’informations sur la création d’une fenêtre Outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Ajouter une fenêtre outil en ajoutant un modèle d’élément de fenêtre d’outil personnalisé nommé `MyToolWindow`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c#**  > **extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à *MyToolWindow.cs*. Pour plus d’informations sur la création d’une fenêtre Outil personnalisée, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Ouvrez *MyToolWindow.cs* et ajoutez le code suivant à l’aide d’instruction :
 

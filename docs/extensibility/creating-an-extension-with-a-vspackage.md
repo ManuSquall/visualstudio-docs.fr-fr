@@ -3,17 +3,17 @@ title: Création d’une Extension avec un VSPackage | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345361"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Créer une extension avec un VSPackage
 
@@ -27,7 +27,7 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
 1. Créez un projet VSIX nommé **FirstPackage**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue en recherchant « vsix ».
 
-2. Quand le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *FirstPackage.cs*.
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#**  > **extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *FirstPackage.cs*.
 
 3. Générez le projet et commencez le débogage.
 
@@ -76,4 +76,4 @@ Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter
 
 3. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.
 
-4. Ouvrez une solution dans l’instance expérimentale. Vous devez voir une boîte de message indiquant que **premier Package à l’intérieur Initialize()**.
+4. Ouvrez une solution dans l’instance expérimentale. Vous devez voir une boîte de message indiquant que **premier Package à l’intérieur Initialize()** .

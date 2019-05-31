@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 363018d13cfeee1691881f4d8b814cdd0b2dfa35
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: eb92e7076c308663ddf9ec760d1f2276affd0c87
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320835"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Cette méthode obtient la mise à jour de modifier & Continuer (ENC) pour ce programme. Un moteur de débogage personnalisé retourne toujours `E_NOTIMPL`.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2da473d201ff02b65262190158da1818bb1816
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 710cc523cdd01ad431572860ace9b06af3cff418
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434569"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332080"
 ---
 # <a name="signing-vsix-packages"></a>Signature de packages VSIX
 Assemblys d’extension n’avez pas besoin être signés avant qu’ils peuvent s’exécuter dans Visual Studio, mais il est conseillé de le faire.

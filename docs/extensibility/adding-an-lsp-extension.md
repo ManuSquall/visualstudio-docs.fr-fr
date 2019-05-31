@@ -3,17 +3,17 @@ title: Ajout d’une extension du protocole de serveur de langage | Microsoft Do
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805114"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352330"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -139,7 +139,7 @@ Le partenaire LSP n’inclut pas de spécification sur la façon de fournir la c
 
 4. Avec le bouton droit sur les fichiers, puis sélectionnez **propriétés**. Modifier le **Build** action à **contenu** et modifiez le **inclure dans VSIX** propriété **true**.
 
-Après avoir effectué les étapes précédentes, un *grammaires* dossier est ajouté pour l’installation du package répertoire en tant que référentiel source nommé « MyLang » (« MyLang » est simplement un nom pour éviter les ambiguïtés et peut être n’importe quelle chaîne unique). Toutes les grammaires (*.tmlanguage* fichiers) et les fichiers de thème (*.tmtheme* fichiers) dans ce répertoire sont sélectionnés en tant que sources et remplacent les grammaires intégrés fournis avec TextMate. Si les extensions du fichier de grammaire déclaré correspond à l’extension du fichier en cours d’ouverture, TextMate pas.
+Après avoir effectué les étapes précédentes, un *grammaires* dossier est ajouté pour l’installation du package répertoire en tant que référentiel source nommé « MyLang » (« MyLang » est simplement un nom pour éviter les ambiguïtés et peut être n’importe quelle chaîne unique). Toutes les grammaires ( *.tmlanguage* fichiers) et les fichiers de thème ( *.tmtheme* fichiers) dans ce répertoire sont sélectionnés en tant que sources et remplacent les grammaires intégrés fournis avec TextMate. Si les extensions du fichier de grammaire déclaré correspond à l’extension du fichier en cours d’ouverture, TextMate pas.
 
 ## <a name="create-a-simple-language-client"></a>Créer un client de langage simple
 

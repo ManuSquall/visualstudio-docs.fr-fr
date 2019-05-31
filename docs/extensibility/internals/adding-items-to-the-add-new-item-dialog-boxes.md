@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418689"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328053"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément
 Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, le **AddItemTemplates** section contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.
@@ -46,7 +46,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Le répertoire répertorié pour **TemplatesDir**, qui est *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, est le nœud sur le côté gauche de la **ajouter Un nouvel élément** arborescence de boîte de dialogue. Dans l’arborescence des éléments supplémentaires sont basées sur le sous-répertoire dans le répertoire racine. Les fichiers disponibles à ajouter au projet sont les éléments dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue.
+ Le répertoire répertorié pour **TemplatesDir**, qui est *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , est le nœud sur le côté gauche de la **ajouter Un nouvel élément** arborescence de boîte de dialogue. Dans l’arborescence des éléments supplémentaires sont basées sur le sous-répertoire dans le répertoire racine. Les fichiers disponibles à ajouter au projet sont les éléments dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue.
 
  En règle générale, ce dossier contient les fichiers de modèle pour votre projet comme un modèle HTML ou *.cpp* fichier et tout *.vsz* fichiers de démarrage d’Assistants. Pour contrôler la façon dont les éléments sont affichés, vous pouvez également inclure *.vsdir* fichiers pour la localisation des noms de répertoires et les icônes. La chaîne localisée est la légende qui apparaît dans la boîte de dialogue qui représente ce nœud dans le **ajouter un nouvel élément** arborescence de boîte de dialogue.
 
