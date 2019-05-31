@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetThread
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 36ab3d18a54eceb01e0f4770c4bf6e8bae62606d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458559"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352172"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Obtient le thread associé à un frame de pile.
@@ -40,9 +40,8 @@ int GetThread ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `ppThread`\
-
- [out] Retourne un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread.
+`ppThread`\
+[out] Retourne un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objet qui représente le thread.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

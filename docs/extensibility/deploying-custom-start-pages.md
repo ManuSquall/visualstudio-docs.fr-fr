@@ -6,18 +6,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a84ba2ff92463ebea177fc5c3b04810de7ae817
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864047"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348223"
 ---
 # <a name="deploy-custom-start-pages"></a>Déployer les Pages de démarrage personnalisées
 
@@ -91,7 +91,7 @@ Si votre package de la Page de démarrage inclut des assemblys, vous devez ajout
 
 1. Copie le *.xaml* fichier qui contient le balisage de Page de démarrage, ainsi que les fichiers autres que des assemblys et les colle dans l’utilisateur * \StartPages\* dossier.
 
-2. Si la Page de démarrage requiert des assemblys, copiez-les et collez-les dans *... \\{Dossier d’installation de visual Studio} \Common7\IDE\PrivateAssemblies\\*.
+2. Si la Page de démarrage requiert des assemblys, copiez-les et collez-les dans *... \\{Dossier d’installation de visual Studio} \Common7\IDE\PrivateAssemblies\\* .
 
 3. Dans le **personnaliser la Page de démarrage** liste sur le **démarrage** options, sélectionnez la nouvelle Page de démarrage. Pour plus d’informations, consultez [personnaliser la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).
 

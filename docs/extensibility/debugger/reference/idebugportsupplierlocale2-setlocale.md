@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierLocale2::SetLocale
 ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07ba3b01d4e653e592ca4084b94eef9390f290ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 72e662060067f455275465ce4ade7ed824936313
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353288"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 Définit les paramètres régionaux pour le fournisseur de port.
@@ -34,8 +37,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `wLangID` Identificateur de paramètres régionaux à définir.
+## <a name="parameters"></a>Paramètres
+`wLangID`\
+Identificateur de paramètres régionaux à définir.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

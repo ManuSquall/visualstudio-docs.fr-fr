@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetClassTypeByName method
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fc8ffe528b0cf416aa9319039be9be7223fe08f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226419"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335262"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Cette méthode obtient le type de champ de classe représentant un nom de classe qualifié complet.
@@ -44,17 +44,14 @@ int GetClassTypeByName(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pszClassName`\
+`pszClassName`\
+[in] Le nom de classe.
 
- [in] Le nom de classe.
+`nameMatch`\
+[in] Sélectionne le type de correspondance, par exemple, respect de la casse. Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.
 
- `nameMatch`\
-
- [in] Sélectionne le type de correspondance, par exemple, respect de la casse. Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.
-
- `ppField`\
-
- [out] Retourne le type de classe, telle que représentée par le [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
+`ppField`\
+[out] Retourne le type de classe, telle que représentée par le [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

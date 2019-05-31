@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::Compare
 ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 81398c79289786d2c63fa6f37725c295b690d905
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457474"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327553"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Compare une référence à un autre. Réservé à un usage ultérieur.
@@ -42,13 +42,11 @@ int Compare ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `dwCompare`\
+`dwCompare`\
+[in] Une valeur comprise entre le [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) énumération qui spécifie l’opération de comparaison, par exemple, égale à, inférieur à ou supérieure à.
 
- [in] Une valeur comprise entre le [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) énumération qui spécifie l’opération de comparaison, par exemple, égale à, inférieur à ou supérieure à.
-
- `pReference`\
-
- [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant la référence à comparer.
+`pReference`\
+[in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant la référence à comparer.
 
 ## <a name="return-value"></a>Valeur de retour
  Retourne toujours `E_NOTIMPL`.

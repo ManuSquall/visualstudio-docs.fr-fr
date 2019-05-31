@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679315"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
@@ -113,10 +113,10 @@ R :  Vos clients ne pourront pas acheter de nouveaux abonnements cloud annuels 
 R :  Les clients existants ne seront pas affectés. Les nouveaux clients devront décider s’ils veulent acheter des abonnements mensuels à Visual Studio ou s’ils veulent utiliser une autre méthode comme les licences en volume pour acheter des abonnements à Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite augmenter le nombre d’abonnements pour mes clients ?
-R :  Votre administrateur peut augmenter le nombre d’abonnements en consultant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour augmenter le nombre d’abonnements.
+R : Les abonnements annuels achetés au cours d’un mois donné sont immédiatement facturés et valables pour une année entière. Pour cette raison, votre administrateur ne peut modifier que le nombre de licences pendant le mois de l’achat (elles seront alors valables et facturées pour 1 an). En dehors du mois de l’achat, il n’est plus possible d’accroître le nombre d’abonnements.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite réduire le nombre d’abonnements pour mes clients ?
-R :  Votre administrateur peut réduire le nombre d’abonnements en consultant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour réduire le nombre d’abonnements.
+R :  Votre administrateur peut réduire le nombre d’abonnements en consultant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour réduire le nombre d’abonnements. Le système ne génère **pas** de crédit au prorata. Pour obtenir un remboursement, vous devez contacter l’équipe de facturation Azure.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q : Si mes clients doivent annuler leurs abonnements, pourront-ils acheter d’autres abonnements cloud annuels ultérieurement ?
 R :  Bien qu’ils ne seront pas en mesure d’acheter un autre abonnement cloud annuel, il existe de nombreuses options pour acheter des abonnements à Visual Studio.  Pour en savoir plus, consultez [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

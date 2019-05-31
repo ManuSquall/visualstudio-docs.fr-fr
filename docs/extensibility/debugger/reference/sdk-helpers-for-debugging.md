@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460908"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329215"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole dans C++.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > La plupart du temps, les mesures seront écrites à la clé HKEY_LOCAL_MACHINE. Cependant, parfois HKEY_CURRENT_USER sera la clé de destination. Dbgmetric.lib gère les deux clés. Lors de l’obtention d’une mesure, il recherche HKEY_CURRENT_USER en premier, puis HKEY_LOCAL_MACHINE. Lorsqu’il configure une mesure, un paramètre spécifie la clé de niveau supérieur à utiliser.
 
- *[registry key]*\
+ *[registry key]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[version root]*\
+ *[version root]* \
 
- *[metric root]*\
+ *[metric root]* \
 
- *[metric type]*\
+ *[metric type]* \
 
  *[métrique] = [valeur métrique]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[engine guid]*\
+ *[engine guid]* \
 
- `CLSID` = *[class guid]*
+ `CLSID` =  *[class guid]*
 
  *[métrique] = [valeur métrique]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[guid de fournisseur de port]*
+ `0` =  *[guid de fournisseur de port]*
 
- `1` = *[guid de fournisseur de port]*
+ `1` =  *[guid de fournisseur de port]*
 
 |Espace réservé|Description|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[port supplier guid]*|GUID du fournisseur de port, le cas échéant. De nombreux moteurs de débogage utilisent le fournisseur de port par défaut et par conséquent, ne spécifient pas leur propre fournisseur. Dans ce cas, la sous-clé `PortSupplier` apparaîtra.|
 
 ### <a name="port-suppliers"></a>Fournisseurs de ports
- Voici l’organisation des métriques de fournisseur de port dans le Registre. `PortSupplier` est le nom de type de métrique pour un fournisseur de port et correspond à *[type de métrique]*.
+ Voici l’organisation des métriques de fournisseur de port dans le Registre. `PortSupplier` est le nom de type de métrique pour un fournisseur de port et correspond à *[type de métrique]* .
 
  `PortSupplier`\
 
- *[guid de fournisseur de port]*\
+ *[guid de fournisseur de port]* \
 
- `CLSID` = *[class guid]*
+ `CLSID` =  *[class guid]*
 
  *[métrique] = [valeur métrique]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[class guid]*|Le GUID de la classe qui implémente ce fournisseur de port|
 
 ### <a name="symbol-providers"></a>Fournisseurs de symbole
- Voici l’organisation des métriques de fournisseur de symboles dans le Registre. `SymbolProvider` est le nom de type de mesure pour le fournisseur de symboles et correspond à *[type de métrique]*.
+ Voici l’organisation des métriques de fournisseur de symboles dans le Registre. `SymbolProvider` est le nom de type de mesure pour le fournisseur de symboles et correspond à *[type de métrique]* .
 
  `SymbolProvider`\
 
- *[symbol provider guid]*\
+ *[symbol provider guid]* \
 
  `file`\
 
- `CLSID` = *[class guid]*
+ `CLSID` =  *[class guid]*
 
  *[métrique] = [valeur métrique]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[class guid]*
+ `CLSID` =  *[class guid]*
 
  *[métrique] = [valeur métrique]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[class guid]*|Le GUID de la classe qui implémente ce fournisseur de symboles|
 
 ### <a name="expression-evaluators"></a>Évaluateurs d’expression
- Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator` est le nom de type de mesure pour l’évaluateur d’expression et correspond à *[type de métrique]*.
+ Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator` est le nom de type de mesure pour l’évaluateur d’expression et correspond à *[type de métrique]* .
 
 > [!NOTE]
 > Le type de mesure pour `ExpressionEvaluator` n’est pas défini dans dbgmetric.h, il est supposé que toutes les modifications des métriques pour les évaluateurs d’expression passera par les fonctions de métrique évaluateur expression appropriée (la disposition de la `ExpressionEvaluator` sous-clé est quelque peu compliquée, donc les détails sont masqués à l’intérieur de dbgmetric.lib).
 
  `ExpressionEvaluator`\
 
- *[language guid]*\
+ *[language guid]* \
 
- *[vendor guid]*\
+ *[vendor guid]* \
 
- `CLSID` = *[class guid]*
+ `CLSID` =  *[class guid]*
 
  *[métrique] = [valeur métrique]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[debug engine guid]*
+ `0` =  *[debug engine guid]*
 
- `1` = *[debug engine guid]*
+ `1` =  *[debug engine guid]*
 
 |Espace réservé|Description|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[debug engine guid]*|Le GUID d’un moteur de débogage fonctionnant avec cette évaluateur d’expression|
 
 ### <a name="expression-evaluator-extensions"></a>Extensions d’évaluateur d’expression
- Voici l’organisation des mesures expression évaluateur extension dans le Registre. `EEExtensions` est le nom de type de mesure pour l’expression à extensions d’évaluateur et correspond à *[type de métrique]*.
+ Voici l’organisation des mesures expression évaluateur extension dans le Registre. `EEExtensions` est le nom de type de mesure pour l’expression à extensions d’évaluateur et correspond à *[type de métrique]* .
 
  `EEExtensions`\
 
- *[extension guid]*\
+ *[extension guid]* \
 
  *[métrique] = [valeur métrique]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[extension guid]*|Le GUID d’une extension d’évaluateur d’expression|
 
 ### <a name="exceptions"></a>Exceptions
- Voici l’organisation des mesures d’exceptions dans le Registre. `Exception` est le nom de type de métrique pour les exceptions et correspond à *[type de métrique]*.
+ Voici l’organisation des mesures d’exceptions dans le Registre. `Exception` est le nom de type de métrique pour les exceptions et correspond à *[type de métrique]* .
 
  `Exception`\
 
- *[debug engine guid]*\
+ *[debug engine guid]* \
 
- *[types d’exception]*\
+ *[types d’exception]* \
 
- *[exception]*\
-
- *[métrique] = [valeur métrique]*
+ *[exception]* \
 
  *[métrique] = [valeur métrique]*
 
- *[exception]*\
+ *[métrique] = [valeur métrique]*
+
+ *[exception]* \
 
  *[métrique] = [valeur métrique]*
 
@@ -414,7 +414,7 @@ HRESULT EnumMetricSections(
 |Espace réservé|Description|
 |-----------------|-----------------|
 |*[debug engine guid]*|GUID du moteur de débogage qui prend en charge des exceptions.|
-|*[types d’exception]*|Un titre général pour la sous-clé qui identifie la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **Exceptions C++**, **Exceptions Win32**, **Exceptions Common Language Runtime**, et **Native Run-Time Checks**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|
+|*[types d’exception]*|Un titre général pour la sous-clé qui identifie la classe d’exceptions qui peuvent être gérés. Les noms par défaut sont **Exceptions C++** , **Exceptions Win32**, **Exceptions Common Language Runtime**, et **Native Run-Time Checks**. Ces noms sont également utilisés pour identifier une classe d’exception à l’utilisateur particulière.|
 |*[exception]*|Un nom pour une exception : par exemple, **_com_error** ou **contrôle d’interruption**. Ces noms sont également utilisés pour identifier une exception spécifique à l’utilisateur.|
 
 ## <a name="requirements"></a>Configuration requise

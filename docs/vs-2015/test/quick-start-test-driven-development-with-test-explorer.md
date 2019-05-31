@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446196"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261645"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : Développement piloté par les tests avec l’Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
    1. Créez un projet de test.  
   
-        Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#**, ou **Visual C++**, puis choisissez **Test**.  
+        Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#** , ou **Visual C++** , puis choisissez **Test**.  
   
         Sélectionnez **Projet de test unitaire**.  
   
@@ -65,10 +65,10 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.  
   
 > [!NOTE]
-> Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Procédure pas à pas : À l’aide de Tests unitaires pour développer une méthode  
- Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Usa autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Créer le test et la méthode  
   
@@ -76,7 +76,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
 2. Créez un projet de test.  
   
-   - Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Test** puis **Projet de test unitaire**.  
+   - Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#** , **Test** puis **Projet de test unitaire**.  
   
         ![Nouveaux projets de code et de test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   

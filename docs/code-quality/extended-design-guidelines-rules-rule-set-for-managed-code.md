@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816609"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975906"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
+
 L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les problèmes de facilité d’utilisation et la facilité de gestion qui sont signalés. Accentuation supplémentaire est placée sur les règles de dénomination. Vous devez envisager d’y compris cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les normes la plus élevées pour l’écriture de code qui est facile à gérer.
 
- Les règles de conception étendue incluent l’ensemble de la conception de règles de base Microsoft. Les règles de conception de base incluent l’ensemble de règles Microsoft minimales recommandées. Pour plus d’informations, consultez [règle de règles de conception base définie pour le code managé](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) et [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Les règles de conception étendue incluent l’ensemble de la conception de règles de base Microsoft. Les règles de conception de base incluent l’ensemble de règles Microsoft minimales recommandées. Pour plus d’informations, consultez [règle de règles de conception base définie pour le code managé](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) et [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Le tableau suivant décrit toutes les règles dans l’ensemble de règles Microsoft règles de conception étendue.
+Le tableau suivant décrit toutes les règles dans l’ensemble de règles Microsoft règles de conception étendue.
 
 |Règle|Description|
 |----------|-----------------|

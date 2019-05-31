@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923113"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352862"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Obtient les informations de résolution de point d’arrêt qui décrivent ce point d’arrêt.
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwFields`
+## <a name="parameters"></a>Paramètres
+`dwFields`\
+[in] Une combinaison d’indicateurs de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumération qui déterminent quels champs de la `pBPResolutionInfo` paramètre doivent être remplis.
 
- [in] Une combinaison d’indicateurs de la [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) énumération qui déterminent quels champs de la `pBPResolutionInfo` paramètre doivent être remplis.
-
- `pBPResolutionInfo`
-
- [out] Le [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure à remplir avec des informations sur ce point d’arrêt.
+`pBPResolutionInfo`\
+[out] Le [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure à remplir avec des informations sur ce point d’arrêt.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872448"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318952"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Définit la valeur de l’objet à partir d’une série consécutive d’octets.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pValue`
+## <a name="parameters"></a>Paramètres
+`pValue`\
+[in] Un tableau d’octets représentant la nouvelle valeur.
 
- [in] Un tableau d’octets représentant la nouvelle valeur.
-
- `nSize`
-
- [in] La taille de la valeur en octets.
+`nSize`\
+[in] La taille de la valeur en octets.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

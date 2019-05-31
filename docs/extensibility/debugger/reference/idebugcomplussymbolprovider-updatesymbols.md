@@ -6,17 +6,20 @@ helpviewer_keywords:
 - UpdateSymbols
 - IDebugComPlusSymbolProvider::UpdateSymbols
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da13452e125e2cf6452a1e2e2ab617b38de7ee28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: def89659f49b25b09e777abf3df1d71db5506537
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352771"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 Met à jour les symboles de débogage dans la mémoire avec celles à partir du flux de données spécifié.
@@ -39,18 +42,15 @@ int UpdateSymbols (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+`ulAppDomainID`\
+[in] Identificateur du domaine d’application.
 
- [in] Identificateur du domaine d’application.
+`guidModule`\
+[in] Identificateur unique du module.
 
-`guidModule`
-
- [in] Identificateur unique du module.
-
-`pUpdateStream`
-
- [in] Flux de données qui contient les symboles de débogage mis à jour.
+`pUpdateStream`\
+[in] Flux de données qui contient les symboles de débogage mis à jour.
 
 ## <a name="example"></a>Exemple
 L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707261"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346167"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Spécifie la raison pour laquelle le processus a été lancé pour le débogage.
@@ -45,21 +48,26 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-#### <a name="parameters"></a>Paramètres
-Erreur non spécifique DEBUG_REASON_ERROR A s’est produite (utilisé en tant qu’une condition par défaut lorsque aucune des autres raisons ajuster).
+## <a name="fields"></a>Champs
+`DEBUG_REASON_ERROR`\
+Une erreur non spécifique s’est produite (utilisé en tant qu’une condition par défaut lorsque aucune des autres raisons ajuster).
 
-DEBUG_REASON_USER_LAUNCHED le processus a été lancé à la demande de l’utilisateur.
+`DEBUG_REASON_USER_LAUNCHED`\
+Le processus a été lancé à la demande de l’utilisateur.
 
-DEBUG_REASON_USER_ATTACHED le processus en cours d’exécution a été attaché à par l’utilisateur.
+`DEBUG_REASON_USER_ATTACHED`\
+Le processus en cours d’exécution a été attaché à par l’utilisateur.
 
-DEBUG_REASON_AUTO_ATTACHED le processus a été automatiquement attaché à lorsqu’elle a été lancée.
+`DEBUG_REASON_AUTO_ATTACHED`\
+Le processus a été automatiquement attaché à lorsqu’elle a été lancée.
 
-Le processus a été lancé en raison de DEBUG_REASON_CAUSALITY un *juste-à-temps* événement de débogage (JIT).
+`DEBUG_REASON_CAUSALITY`\
+Le processus a été lancé en raison un *juste-à-temps* événement de débogage (JIT).
 
 ## <a name="remarks"></a>Notes
 Retourné par la [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

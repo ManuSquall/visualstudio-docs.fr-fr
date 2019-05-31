@@ -1,5 +1,5 @@
 ---
-title: Création d’élément modèles et les modèles de projet pour les éléments de projet SharePoint | Microsoft Docs
+title: Élément les éléments de projet de modèles de projet/de modèles pour SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f41783689e572ca823788e1a8dbcf772f07e924
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952685"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177619"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Créer des modèles d’élément et les modèles de projet pour les éléments de projet SharePoint
 
@@ -66,7 +66,7 @@ Modèles d’élément et les modèles de projet sont *.zip* fichiers qui contie
 |Un *.vstemplate* fichier|Ce fichier fournit à Visual Studio avec les informations requises pour afficher le modèle dans le **nouveau projet** boîte de dialogue et créer un projet à partir du modèle. Pour plus d’informations, consultez [fichiers métadonnées de modèle Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Un *.csproj* ou *.vbproj* fichier|Il s’agit du fichier projet. Il définit le contenu et les paramètres de configuration du projet.|
 |*Package.package*|Ce fichier définit le package de déploiement pour le projet. Lorsque vous utilisez le Concepteur de packages pour personnaliser le package de solution pour votre projet, Visual Studio stocke les données sur le package de solution dans ce fichier.<br /><br /> Lorsque vous créez un modèle de projet SharePoint personnalisé, nous vous recommandons d’inclure uniquement le contenu obligatoire minimum dans le *package* fichier, et que vous configurez le package de solution en utilisant les API dans le <xref:Microsoft.VisualStudio.SharePoint.Packages> espace de noms dans une extension qui est associée au modèle de projet. Dans ce cas, votre modèle de projet est protégé contre les futures modifications de la structure de la *package* fichier. Pour obtenir un exemple qui montre comment créer un *package* contenu du fichier avec uniquement la condition minimale requise, consultez [procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Si vous souhaitez modifier le *package* fichier directement, vous pouvez vérifier le contenu en utilisant le schéma à *% Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd* .|
-|*Package.Template.xml*|Ce fichier fournit la base pour le fichier de manifeste de solution (*manifest.xml*) pour le package de solution SharePoint (*.wsp*) qui est généré à partir du projet. Vous pouvez ajouter du contenu à ce fichier si vous souhaitez spécifier un comportement qui n’est pas destiné à être modifié par les utilisateurs de votre type de projet. Pour plus d’informations, consultez [bloc de construction : Solutions](http://go.microsoft.com/fwlink/?LinkId=169186) et [schéma de la Solution](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Lorsque vous générez un package de solution à partir du projet, Visual Studio fusionne le contenu de la *package* et *Package.Template.xml* fichier manifeste de fichiers dans la solution. Pour plus d’informations sur la création de packages de solution, consultez [Comment : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
+|*Package.Template.xml*|Ce fichier fournit la base pour le fichier de manifeste de solution (*manifest.xml*) pour le package de solution SharePoint ( *.wsp*) qui est généré à partir du projet. Vous pouvez ajouter du contenu à ce fichier si vous souhaitez spécifier un comportement qui n’est pas destiné à être modifié par les utilisateurs de votre type de projet. Pour plus d’informations, consultez [bloc de construction : Solutions](http://go.microsoft.com/fwlink/?LinkId=169186) et [schéma de la Solution](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Lorsque vous générez un package de solution à partir du projet, Visual Studio fusionne le contenu de la *package* et *Package.Template.xml* fichier manifeste de fichiers dans la solution. Pour plus d’informations sur la création de packages de solution, consultez [Comment : Créer un Package de Solution SharePoint à l’aide de tâches MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 
  Le tableau suivant répertorie les fichiers facultatifs qui peuvent être inclus dans le modèle de projet.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689235"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317595"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Spécifie le type du nom d’hôte.
@@ -39,15 +42,17 @@ public enum enum_GETHOSTNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Membres
-GHN_FRIENDLY_NAME spécifie un nom convivial de l’hôte.
+## <a name="fields"></a>Champs
+`GHN_FRIENDLY_NAME`\
+Spécifie un nom convivial de l’hôte.
 
-GHN_FILE_NAME spécifie un nom de fichier de l’hôte.
+`GHN_FILE_NAME`\
+Spécifie un nom de fichier de l’hôte.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées en tant qu’argument à la [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) méthode pour récupérer un nom d’hôte dans différents formats.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

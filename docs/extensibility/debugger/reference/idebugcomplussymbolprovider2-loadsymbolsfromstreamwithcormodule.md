@@ -1,22 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876349"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334654"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Charger des symboles de débogage à partir d’un flux de données étant donné la **ICorDebugModule** objet.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+`ulAppDomainID`\
+[in] Identificateur du domaine d’application.
 
- [in] Identificateur du domaine d’application.
+`guidModule`\
+[in] Identificateur unique du module.
 
-`guidModule`
+`baseAddress`\
+[in] Adresse mémoire de base.
 
- [in] Identificateur unique du module.
+`pUnkMetadataImport`\
+[in] Objet qui contient les métadonnées de symbole.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Adresse mémoire de base.
-
-`pUnkMetadataImport`
-
- [in] Objet qui contient les métadonnées de symbole.
-
-`pUnkCorDebugModule`
-
- [in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Flux de données qui contient les symboles de débogage à charger.
+`pStream`\
+[in] Flux de données qui contient les symboles de débogage à charger.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

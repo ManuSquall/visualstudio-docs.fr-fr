@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetLanguageInfo
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d220e3c1d9e7b5879d12ed31f6a3374e6c481fe3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457545"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352146"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Obtient le langage associé à ce frame de pile.
@@ -42,13 +42,11 @@ int GetLanguageInfo ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pbstrLanguage`\
+`pbstrLanguage`\
+[out] Retourne le nom de la langue qui implémente la méthode associée à ce frame de pile.
 
- [out] Retourne le nom de la langue qui implémente la méthode associée à ce frame de pile.
-
- `pguidLanguage`\
-
- [out] Retourne le `GUID` du langage. Pour les [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] langues, par exemple, les éléments suivants peuvent être retournées :
+`pguidLanguage`\
+[out] Retourne le `GUID` du langage. Pour les [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] langues, par exemple, les éléments suivants peuvent être retournées :
 
 -   `guidVBScriptLang`\
 

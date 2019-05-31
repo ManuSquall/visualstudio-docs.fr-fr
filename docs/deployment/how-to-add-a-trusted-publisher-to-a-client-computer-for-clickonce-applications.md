@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce | Microsoft Docs'
+title: Ajouter un éditeur approuvé à l’ordinateur client pour les applications ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407614"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263160"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procédure : Ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce
 Avec le déploiement d’applications approuvées, vous pouvez configurer les ordinateurs clients pour que vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] s’exécutent avec un niveau de confiance supérieur sans solliciter l’utilisateur. Les procédures suivantes montrent comment utiliser l’outil en ligne de commande CertMgr.exe pour ajouter le certificat d’un éditeur au magasin d’éditeurs approuvés sur un ordinateur client.
@@ -38,7 +38,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
 
 1. Obtenez un certificat numérique à partir d’une autorité de certification.
 
-2. Exportez le certificat au format Base64 X.509 (*.cer*). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportez le certificat au format Base64 X.509 ( *.cer*). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :
 
@@ -48,7 +48,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
 
 1. Obtenez un certificat numérique à partir d’une autorité de certification.
 
-2. Exportez le certificat au format Base64 X.509 (*.cer*). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportez le certificat au format Base64 X.509 ( *.cer*). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :
 

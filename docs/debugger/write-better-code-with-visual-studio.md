@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901294"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262131"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Outils pour vous aider à écrire du code de meilleure qualité et des techniques de débogage
 
@@ -294,7 +294,7 @@ Voici quelques conseils importants pour la gestion des exceptions :
     }
     ```
 
-* Pour les fonctions non connues que vous incluez dans votre application, spécialement ceux interagir avec des données externes (par exemple, une requête web), consultez la documentation pour voir quelles exceptions la fonction est susceptible de lever. Il peut s’agir des informations critiques pour la gestion correcte des erreurs et pour déboguer votre application.
+* Pour les fonctions non connues que vous incluez dans votre application, en particulier ceux interagir avec des données externes (par exemple, une requête web), consultez la documentation pour voir quelles exceptions la fonction est susceptible de lever. Il peut s’agir des informations critiques pour la gestion correcte des erreurs et pour déboguer votre application.
 
 Pour l’exemple d’application, vous devez corriger le `SerializationException` dans le `GetJsonData` méthode en modifiant `4o` à `40`.
 

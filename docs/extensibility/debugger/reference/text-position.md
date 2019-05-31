@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 960fa95f583ddafdc401432ff551e8597fb956bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336295"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Décrit l’emplacement de colonne et de ligne dans le texte donné.
@@ -44,11 +44,9 @@ public struct TEXT_POSITION { 
 ## <a name="members"></a>Membres
 
 `dwLine`\
-
 Index de ligne dans le fichier source.
 
 `dwColumn`\
-
 Offset de caractère dans la ligne.
 
 ## <a name="remarks"></a>Notes

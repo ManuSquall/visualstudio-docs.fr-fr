@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 02b6947b36439610e41ec0a9e33ebc3f599a6c92
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347594"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Cette méthode obtient le champ qui représente un nom de méthode qualifié complet.
@@ -44,17 +44,14 @@ int GetMethodFieldsByName(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pszFullName`\
+`pszFullName`\
+[in] Le nom de la méthode.
 
- [in] Le nom de la méthode.
+`nameMatch`\
+[in] Sélectionne le type de correspondance, par exemple, respect de la casse.
 
- `nameMatch`\
-
- [in] Sélectionne le type de correspondance, par exemple, respect de la casse.
-
- `ppEnum`\
-
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les champs associés à cette méthode.
+`ppEnum`\
+[out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les champs associés à cette méthode.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

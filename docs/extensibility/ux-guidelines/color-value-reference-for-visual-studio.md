@@ -3,18 +3,18 @@ title: Informations de référence sur les valeurs de couleur
 description: 'Référence : Codes hexadécimaux pour la création de nouveaux jetons de couleur Visual Studio'
 keywords: couleur, le code hexadécimal, teinte, l’interface utilisateur à thème, thèmes
 author: brickgeorge
-ms.author: gregvanl
+ms.author: madsk
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea37231dd31667389d9f08872eadbfdf26375bb2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62803173"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338001"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 
@@ -96,7 +96,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan : pointage | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF292929 swatch](../../extensibility/ux-guidelines/media/292929.png "#FF292929 swatch")<br />`#FF292929` | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
 | Arrière-plan : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![Nuance de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 échantillon")<br />`#FFFFFCF4` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
-| Bordure | Aucun. | Aucun. | Aucun. | Aucun. |
+| Bordure | None | None | None | None |
 | Bordure : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFE5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "##FFE5C365 swatch")<br />`#FFE5C365` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Groupe de catégories

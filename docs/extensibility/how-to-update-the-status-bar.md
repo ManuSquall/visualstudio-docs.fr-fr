@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94ee2d0585892730659943b6dc826ca1b8947510
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f1ba62fc5147eb679e6d6a64685b367aafacae4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415468"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324797"
 ---
-# <a name="how-to-update-the-status-bar"></a>Procédure : Mettre à jour de la barre d’état
+# <a name="how-to-update-the-status-bar"></a>Procédure : Mettre à jour la barre d’état
 Le **barre d’état** une barre de contrôle ne se trouve en bas de nombreuses fenêtres d’application qui contient un ou plusieurs lignes de texte d’état ou des indicateurs.
 
 ## <a name="to-update-the-status-bar"></a>Pour mettre à jour de la barre d’état

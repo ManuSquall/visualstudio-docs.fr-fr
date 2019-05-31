@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3799043b82a4e0d0993e7de255f69592c6b89534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: da2318e9e2e30ea4cf0dce4bef6abd03aef2b0d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352471"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 Définit le chemin d’accès ou les chemins d’accès des symboles de débogage sont recherchés.
@@ -40,13 +43,16 @@ int SetSymbolPath(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Paramètres
 
-|Paramètre|Description|
-|---------------|-----------------|
-|`szSymbolSearchPath`|[in] Chaîne contenant le chemin de recherche de symbole ou les chemins d’accès. Pour plus d’informations, consultez « Remarques ». Ne peut pas être null.|
-|`szSymbolCachePath`|[in] Chaîne contenant le chemin d’accès local où les symboles peuvent être mis en cache. Ne peut pas être null.|
-|`Flags`|[in] Pas utilisé ; toujours défini sur 0.|
+`szSymbolSearchPath`\
+[in] Chaîne contenant le chemin de recherche de symbole ou les chemins d’accès. Pour plus d’informations, consultez « Remarques ». Ne peut pas être null.
+
+`szSymbolCachePath`\
+[in] Chaîne contenant le chemin d’accès local où les symboles peuvent être mis en cache. Ne peut pas être null.
+
+`Flags`\
+[in] Pas utilisé ; toujours défini sur 0.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

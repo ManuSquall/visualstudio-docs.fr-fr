@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPortSupplier
 ms.assetid: acf181d4-ef42-4aa5-86f9-95fd5467ea31
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c7219f3940eb101c652725b5d7a180206108b85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 050c3ed2682843860ba03d7bc730c4e3c5b5329d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875832"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332426"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 Récupère un fournisseur de port spécifique.
@@ -38,14 +41,12 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidPortSupplier`
+## <a name="parameters"></a>Paramètres
+`guidPortSupplier`\
+[in] GUID du fournisseur de port doit être récupéré.
 
- [in] GUID du fournisseur de port doit être récupéré.
-
- `ppPortSupplier`
-
- [out] Retourne un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objet représentant le fournisseur de port souhaité.
+`ppPortSupplier`\
+[out] Retourne un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objet représentant le fournisseur de port souhaité.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461126"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345634"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -47,17 +47,14 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Membres
 
 `tokMethod`\
-
 L’ID de la méthode ou la fonction de la variable locale fait partie de.
 
 [C++] `_mdToken` est un `typedef` pour 32 bits `int`.
 
 `pLocal`\
-
 Le jeton dont l’adresse représente cette structure.
 
 `dwIndex`\
-
 Peut être l’index de cette variable locale dans la méthode ou fonction ou une autre valeur (spécifique à la langue).
 
 ## <a name="remarks"></a>Notes

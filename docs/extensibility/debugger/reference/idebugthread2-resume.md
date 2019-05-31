@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a312b18fead71b343fd1b9beafcf36c904bf1b24
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225990"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320136"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Reprend l’exécution d’un thread.
@@ -40,9 +40,8 @@ int Resume ( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pdwSuspendCount`\
-
- [out] Retourne le nombre de suspend après l’opération de reprise.
+`pdwSuspendCount`\
+[out] Retourne le nombre de suspend après l’opération de reprise.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

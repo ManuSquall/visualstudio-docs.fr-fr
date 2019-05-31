@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::GetField method
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 797a18b678e815411b7ea7860e44ea6159caa2b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e491d98219f1cbb105af653dee15f25bb246c2d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317323"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Obtient le type de cet objet.
@@ -36,10 +39,9 @@ int GetField(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppField`
-
- [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet si ce n’est pas une valeur null.
+## <a name="parameters"></a>Paramètres
+`ppField`\
+[out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet si ce n’est pas une valeur null.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetTypeFromTypeDef
 - IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6226ddf0104f434dbd15c29f779a524de33422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1d8c869447f13774f975cbebcba35792cf05b8cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875403"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320918"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Récupère un type en fonction de son jeton.
@@ -41,22 +44,18 @@ int GetTypeFromTypeDef(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+`ulAppDomainID`\
+[in] Identificateur du domaine d’application.
 
- [in] Identificateur du domaine d’application.
+`guidModule`\
+[in] Identificateur unique du module.
 
- `guidModule`
+`tokClass`\
+[in] Qui représente le type de jeton.
 
- [in] Identificateur unique du module.
-
- `tokClass`
-
- [in] Qui représente le type de jeton.
-
- `ppType`
-
- [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui contient le type.
+`ppType`\
+[out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui contient le type.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

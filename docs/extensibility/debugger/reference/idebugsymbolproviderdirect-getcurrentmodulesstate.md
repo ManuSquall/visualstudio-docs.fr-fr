@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4db91b1495484adff076e959021b4791f1e62a29
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458221"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347317"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 Récupère des informations sur le groupe de symboles dont le fournisseur de symboles est un membre.
@@ -41,13 +41,11 @@ int GetCurrentModulesState(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pState`\
+`pState`\
+[out] L’état du groupe de fournisseur de symboles.
 
- [out] L’état du groupe de fournisseur de symboles.
-
- `count`\
-
- [out] Nombre de modules dans le groupe.
+`count`\
+[out] Nombre de modules dans le groupe.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809313"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260472"
 ---
 # <a name="code-metrics-values"></a>Valeurs de métriques de code
 
@@ -28,15 +28,15 @@ Pour plus d’informations sur la façon de générer des données de métrique 
 
 La liste suivante présente le code des résultats de la métrique qui calcule de Visual Studio :
 
-- **Indice de maintenabilité** -calcule une valeur d’index compris entre 0 et 100 qui représente la relative simplicité de gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Des évaluations codées par couleur peuvent servir à identifier rapidement les zones à problème dans votre code. Une meilleure évaluation est compris entre 20 et 100 et indique que le code a bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code est relativement facile à gérer. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible.
+- **Indice de maintenabilité** -calcule une valeur d’index compris entre 0 et 100 qui représente la relative simplicité de gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Des évaluations codées par couleur peuvent servir à identifier rapidement les zones à problème dans votre code. Une meilleure évaluation est compris entre 20 et 100 et indique que le code a bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code est relativement facile à gérer. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible. Pour plus d’informations, consultez le [plage d’index de la facilité de gestion et la signification](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) billet de blog.
 
-- **Complexité cyclomatique** -mesure la complexité structurelle du code. Il est créé en calculant le nombre de chemins de code différents dans le flux du programme. Un programme qui a le flux de contrôle complexe nécessitera plus de tests pour obtenir la couverture du code qui fonctionne bien et sera moins facile à gérer.
+- **Complexité cyclomatique** -mesure la complexité structurelle du code. Il est créé en calculant le nombre de chemins de code différents dans le flux du programme. Un programme qui a le flux de contrôle complexe requiert plus de tests pour obtenir la bonne couverture du code et est moins facile à gérer. Pour plus d’informations, consultez le [Wikipedia pour complexité cyclomatique](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profondeur d’héritage** -indique le nombre de définitions de classe qui s’étendent à la racine de la hiérarchie de classes. Plus la hiérarchie est plus difficile qu’il peut être de comprendre où des méthodes et les champs sont définis ou / et redéfini.
+- **Profondeur d’héritage** -indique le nombre de différentes classes qui héritent d’une autre, jusqu’à la classe de base. Profondeur d’héritage est semblable à la classe de couplage car une modification dans une classe de base peut affecter une de ses classes héritées. Plus ce nombre, le plus profond l’héritage et plus la possibilité de modifications de la classe de base entraîner une rupture modifier. Pour la profondeur d’héritage, une valeur faible est bonne et une valeur élevée est incorrecte. 
 
-- **COUPLAGE de classe** -mesure le couplage avec des classes uniques via des paramètres, variables locales, types de retour, les appels de méthode, des instanciations génériques ou de modèle, classes de base, les implémentations d’interface, champs définis sur les types externes, et décoration de l’attribut. Une bonne conception logicielle détermine les types et méthodes doivent avoir une forte cohésion et un couplage bas. COUPLAGE élevé indique une conception qui est difficile à réutiliser et tenir à jour en raison de ses nombreuses interdépendances sur d’autres types.
+- **COUPLAGE de classe** -mesure le couplage avec des classes uniques via des paramètres, variables locales, types de retour, les appels de méthode, des instanciations génériques ou de modèle, classes de base, les implémentations d’interface, champs définis sur les types externes, et décoration de l’attribut. Une bonne conception logicielle détermine les types et méthodes doivent avoir une forte cohésion et un couplage bas. COUPLAGE élevé indique une conception qui est difficile à réutiliser et tenir à jour en raison de ses nombreuses interdépendances sur d’autres types. Pour plus d’informations, consultez le [couplages de classe](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) billet de blog.
 
-- **Lignes de Code** -indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code de langage intermédiaire et est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre très élevé peut indiquer qu’un type ou méthode essaie d’en faire trop de travail et doit être fractionnée. Cela peut également indiquer que le type ou la méthode peut être difficile à maintenir.
+- **Lignes de Code** -indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code de langage intermédiaire et est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre élevé peut indiquer qu’un type ou méthode essaie d’en faire trop de travail et doit être fractionnée. Cela peut également indiquer que le type ou la méthode peut être difficile à maintenir.
 
    > [!NOTE]
    > Le [version de ligne de commande](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) du code outil métrique nombre réel de lignes de code, car il analyse le code source au lieu de langage intermédiaire.

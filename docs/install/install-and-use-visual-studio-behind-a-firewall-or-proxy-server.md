@@ -1,7 +1,7 @@
 ---
 title: Installer et utiliser derrière un pare-feu ou un serveur proxy
-description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
-ms.date: 03/30/2019
+description: Passez en revue les URL de domaine, les ports et les protocoles que vous voulez ajouter à une liste verte ou que vous souhaitez ouvrir si votre organisation utilise un pare-feu ou un serveur proxy
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974707"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976218"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
-Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un pare-feu ou un serveur proxy, il existe des URL de domaine que vous pouvez vouloir mettre sur « liste verte » et des ports et protocoles que vous pouvez vouloir ouvrir afin d’obtenir une meilleure expérience lorsque vous installez et utilisez Visual Studio et les services Azure.
+Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous pouvez souhaiter ajouter des URL de domaine à une « liste verte » et ouvrir des ports et des protocoles afin de bénéficier d’une expérience optimale pendant l’installation et l’utilisation de Visual Studio et des services Azure.
 
-* **[Installer Visual Studio](#install-visual-studio)**  : Ces tables incluent les URL de domaine à la liste verte, afin que vous ayez accès à tous les composants et charges de travail que vous souhaitez.
+* **[Installer Visual Studio](#install-visual-studio)**  : Ces tables incluent les URL de domaine à ajouter à une liste verte pour vous permettre d’accéder à l’ensemble des composants et des charges de travail souhaités.
 
-* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**  : Cette table inclut les URL de domaine à la liste verte et les ports et protocoles à ouvrir pour avoir accès à toutes les fonctionnalités et tous les services désirés.
+* **[Utiliser Visual Studio et les services Azure](#use-visual-studio-and-azure-services)**  : Cette table inclut les URL de domaine à ajouter à une liste verte ainsi que les ports et les protocoles à ouvrir pour avoir accès à l’ensemble des fonctionnalités et des services souhaités.
 
 > [!NOTE]
 > Cet article a été écrit pour Visual Studio sur Windows, mais certaines informations sont également applicables à [l’installation de Visual Studio pour Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) derrière un pare-feu ou un serveur proxy.
 
 ## <a name="install-visual-studio"></a>Installer Visual Studio
 
-### <a name="urls-to-whitelist"></a>URL à la liste verte
+### <a name="urls-to-add-to-an-allow-list"></a>URL à ajouter à une liste verte
 
-Étant donné que le programme d’installation Visual Studio télécharge des fichiers à partir de différents domaines et leurs serveurs de téléchargement, vous trouverez ici les URL de domaine nécessaires à la mise sur liste verte tel qu’approuvé dans l’interface utilisateur ou dans vos scripts de déploiement.
+Sachant que Visual Studio Installer télécharge des fichiers à partir de différents domaines et de leurs serveurs de téléchargement, vous trouverez ici les URL de domaine que vous pouvez ajouter à une liste verte comme étant approuvées dans l’interface utilisateur ou dans vos scripts de déploiement.
 
 #### <a name="microsoft-domains"></a>Domaines Microsoft
 
@@ -79,9 +79,9 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 
 ## <a name="use-visual-studio-and-azure-services"></a>Utiliser Visual Studio et les services Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL à la liste verte et ports et protocoles à ouvrir
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URL à ajouter à une liste verte et ports et protocoles à ouvrir
 
-Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque vous utilisez Visual Studio ou les services Azure derrière un pare-feu ou un serveur proxy, vous trouverez ici les URL que vous devez mettre sur liste verte et les ports et protocoles que vous souhaitez ouvrir.
+Pour être certain d’avoir accès à tout ce dont vous avez besoin pendant que vous utilisez Visual Studio ou les services Azure derrière un pare-feu ou un serveur proxy, vous trouverez ici les URL que vous devez ajouter à une liste verte ainsi que les ports et les protocoles que vous pouvez souhaiter ouvrir.
 
 | Scénario ou service | Point de terminaison DNS | Protocole | Port | Description |
 | - | - | - | - | - |

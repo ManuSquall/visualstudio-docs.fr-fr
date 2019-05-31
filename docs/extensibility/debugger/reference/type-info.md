@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316129"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Cette structure spécifie plusieurs types d’informations sur un type de champ.
@@ -51,15 +51,12 @@ public struct TYPE_INFO {
  Une valeur comprise entre le [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération qui détermine l’interprétation de l’union.
 
  `type.typeMeta`\
-
  [C++ uniquement] Contient un [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) structure si `dwKind` est `TYPE_KIND_METADATA`.
 
  `type.typePdb`\
-
  [C++ uniquement] Contient un [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) structure si `dwKind` est `TYPE_KIND_PDB`.
 
  `type.typeBuilt`\
-
  [C++ uniquement] Contient un [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) structure si `dwKind` est `TYPE_KIND_BUILT`.
 
  `type.unused`\
@@ -69,7 +66,6 @@ public struct TYPE_INFO {
  Nom de l’union.
 
  `unionmember`\
-
  [C# uniquement] Cette option pour le type de structure appropriée en fonction de marshaler `dwKind`.
 
 ## <a name="remarks"></a>Notes

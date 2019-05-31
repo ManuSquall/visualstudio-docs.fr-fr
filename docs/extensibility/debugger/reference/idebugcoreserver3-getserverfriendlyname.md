@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414028"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326952"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Récupère un nom convivial pour le serveur.
@@ -36,10 +39,9 @@ int GetServerFriendlyName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrName`
-
- [out] Retourne un nom convivial pour le serveur.
+## <a name="parameters"></a>Paramètres
+`pbstrName`\
+[out] Retourne un nom convivial pour le serveur.
 
 > [!NOTE]
 > L’appelant est chargé de libérer la chaîne.

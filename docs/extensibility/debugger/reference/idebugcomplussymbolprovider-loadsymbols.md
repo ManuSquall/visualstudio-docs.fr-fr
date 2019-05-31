@@ -6,17 +6,20 @@ helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5194b13a1e92b6d6f8ed4b688ea7956cb3ed876e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922446"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309006"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Charge les symboles de débogage spécifié dans la mémoire.
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+`ulAppDomainID`\
+[in] Identificateur du domaine d’application.
 
- [in] Identificateur du domaine d’application.
+`guidModule`\
+[in] Identificateur unique de le mondule.
 
-`guidModule`
+`baseAddress`\
+[in] Adresse mémoire de base.
 
- [in] Identificateur unique de le mondule.
+`pUnkMetadataImport`\
+[in] Objet qui contient les métadonnées de symbole.
 
-`baseAddress`
+`bstrModuleName`\
+[in] Nom du module.
 
- [in] Adresse mémoire de base.
-
-`pUnkMetadataImport`
-
- [in] Objet qui contient les métadonnées de symbole.
-
-`bstrModuleName`
-
- [in] Nom du module.
-
-`bstrSymSearchPath`
-
- [in] Chemin d’accès pour rechercher le fichier de symboles.
+`bstrSymSearchPath`\
+[in] Chemin d’accès pour rechercher le fichier de symboles.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

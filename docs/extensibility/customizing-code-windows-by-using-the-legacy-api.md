@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0ea617a252d60d8e8d5810c42f7331508c28165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4960a58b79302432b725799b5aac35204dc76353
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62890983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322335"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>Personnaliser les fenêtres de code à l’aide de l’API héritée
 Une fenêtre de code est un objet de fenêtre de document qui prend en charge une ou plusieurs vues de texte. Les fonctionnalités exactes d’une fenêtre de code varient selon le service de langage associé. En mode d’interface multidocument (MDI), la fenêtre de code est le frame enfant MDI.

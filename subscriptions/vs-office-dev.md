@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Office 365 Développeur inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947183"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934583"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
-Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoivent l’avantage de l’abonnement Office 365 Développeur.  L’abonnement Office 365 Développeur vous permet de développer, tester et déployer des compléments pour Microsoft Office et Microsoft SharePoint.  Cet avantage autorise un locataire et jusqu’à 25 utilisateurs.
+Les abonnés titulaires de certains abonnements Visual Studio bénéficient de l’avantage de l’abonnement Office 365 Développeur.  L’abonnement Office 365 Développeur vous permet de développer, tester et déployer des compléments pour Microsoft Office et Microsoft SharePoint.  Cet avantage autorise un locataire et jusqu’à 25 utilisateurs.
 
 ## <a name="activation-steps"></a>Étapes d’activation
 
@@ -67,7 +67,7 @@ Pour en savoir plus sur l’abonnement Office 365 Développeur, consultez le [Fo
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included      |  Oui          |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
 | Visual Studio Dev Essentials | NA  | Non disponible |NA |

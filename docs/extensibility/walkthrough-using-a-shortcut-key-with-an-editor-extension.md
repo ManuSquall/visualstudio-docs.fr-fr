@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318500"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procédure pas à pas : Utiliser une touche de raccourci avec une extension de l’éditeur
 Vous pouvez répondre aux touches de raccourci dans votre extension de l’éditeur. La procédure suivante montre comment ajouter un ornement de la vue à une vue de texte à l’aide d’une touche de raccourci. Cette procédure pas à pas est basée sur le modèle d’éditeur ornement fenêtre d’affichage, et il vous permet d’ajouter l’ornement à l’aide du caractère « + ».
@@ -108,7 +108,7 @@ Avant Visual Studio 2017 version 15.6, la seule façon de gérer les commandes d
     }
     ```
 
-7. Implémentez le `Exec()` méthode afin qu’il ajoute une zone de violet à la vue si un signe plus (**+**) caractère est tapé.
+7. Implémentez le `Exec()` méthode afin qu’il ajoute une zone de violet à la vue si un signe plus ( **+** ) caractère est tapé.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Le Gestionnaire de commandes est une implémentation de <xref:Microsoft.VisualSt
    }
    ```
 
-6. Implémentez le `ExecuteCommand()` méthode afin qu’il ajoute une zone de violet à la vue si un signe plus (**+**) caractère est tapé.
+6. Implémentez le `ExecuteCommand()` méthode afin qu’il ajoute une zone de violet à la vue si un signe plus ( **+** ) caractère est tapé.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

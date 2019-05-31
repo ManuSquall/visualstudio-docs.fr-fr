@@ -3,18 +3,18 @@ title: Page de démarrage de création personnalisé | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336676"
 ---
 # <a name="creating-a-custom-start-page"></a>Création d’une Page de démarrage personnalisée
 
@@ -24,7 +24,7 @@ Vous pouvez créer une Page de démarrage personnalisée en suivant les étapes 
 
 Vérifiez tout d’abord, une Page de démarrage vierge en créant un *.xaml* fichier qui a une structure de balise que Visual Studio reconnaît. Ensuite, ajoutez le balisage et code-behind pour produire l’apparence et les fonctionnalités que vous souhaitez.
 
-1. Créez un projet du type **Application WPF** (**Visual C#** > **Windows Desktop**).
+1. Créez un projet du type **Application WPF** (**Visual C#**  > **Windows Desktop**).
 
 2. Ajoutez une référence à `Microsoft.VisualStudio.Shell.14.0`.
 

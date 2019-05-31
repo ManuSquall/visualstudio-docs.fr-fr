@@ -3,17 +3,17 @@ title: Extensions chargées automatiquement de façon synchrone
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799036"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316712"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensions chargées automatiquement de façon synchrone
 
@@ -29,7 +29,7 @@ Les utilisateurs peuvent :
 
 - Cliquez sur **ne plus afficher ce message** pour faire disparaître la notification. Cette option empêche également toutes les futures notifications à partir de façon synchrone les extensions chargées automatiquement. Les utilisateurs continueront à recevoir des notifications sur les autres fonctionnalités de Visual Studio.
 
-### <a name="performance-manager-dialog"></a>Boîte de dialogue Gestionnaire de performances
+## <a name="performance-manager-dialog"></a>Boîte de dialogue Gestionnaire de performances
 
 ![boîte de dialogue Gestionnaire des performances](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Toutes les extensions de façon synchrone chargé tous les packages dans toutes 
 * Les utilisateurs peuvent contacter leurs fournisseurs d’extension de la progression de la migration.
 
 Auteurs de l’extension peuvent trouver des instructions sur la migration des packages à autoload asynchrone à [migrer vers AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Spécifiez les paramètres de chargement automatique synchrone à l’aide de la stratégie de groupe
+
+Démarrage de Visual Studio 2019 Update 1, par défaut, le chargement automatique synchrone de Visual Studio installation blocs. Lorsque vous activez la stratégie de groupe, vous pouvez configurer Visual Studio pour autoriser le chargement automatique synchrone sur des ordinateurs individuels. Pour ce faire, définissez une stratégie basée sur le Registre sur la clé suivante :
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Entrée = **autorisé**
+
+Value = (DWORD)
+* **0** autoload synchrone ne peut pas
+* **1** autoload synchrone n’est autorisée
+
+Pour plus d’informations sur les paramètres de chargement automatique synchrone dans Visual Studio 2019 Update 1, consultez le [comportement de chargement automatique synchrone](https://aka.ms/AA52xzw) page.

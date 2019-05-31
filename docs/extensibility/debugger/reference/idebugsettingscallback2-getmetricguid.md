@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricGuid
 ms.assetid: 91092763-3362-4857-adf0-231bc1254206
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b46037619bf7e43b647d4e3bc557c8ae9290cbd1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458590"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321993"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Récupère l’identificateur unique d’une fonction de son nom de métrique.
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pszType`\
+`pszType`\
+[in] Type de la mesure.
 
- [in] Type de la mesure.
+`guidSection`\
+[in] Identificateur unique de la section.
 
- `guidSection`\
+`pszMetric`\
+[in] Nom de la mesure.
 
- [in] Identificateur unique de la section.
-
- `pszMetric`\
-
- [in] Nom de la mesure.
-
- `pguidValue`\
-
- [out] Retourne l’identificateur unique de la mesure.
+`pguidValue`\
+[out] Retourne l’identificateur unique de la mesure.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

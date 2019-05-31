@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097087"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263579"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Ajout de la recherche dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extensio
      En haut de la fenêtre outil, un contrôle de recherche s’affiche avec un **recherche** filigrane et une icône de loupe agrandissement. Toutefois, recherche ne fonctionne pas encore, car le processus de recherche n’a pas été implémenté.  
   
 ## <a name="to-add-the-search-implementation"></a>Pour ajouter l’implémentation de la recherche  
- Lorsque vous activez la recherche sur un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, comme dans la procédure précédente, la fenêtre outil crée un hôte de recherche. Cet hôte configure et gère les processus de recherche, qui sont toujours effectuées sur un thread d’arrière-plan. Étant donné que la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gère la création de l’hôte de recherche et le paramètre de configuration de la recherche, vous devez uniquement créer une tâche de recherche et fournir la méthode de recherche. Le processus de recherche se produit sur un thread d’arrière-plan, et les appels au contrôle de fenêtre outil se produisent sur le thread d’interface utilisateur. Par conséquent, vous devez utiliser le <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> méthode pour gérer tous les appels que vous apportez dans le traitement avec le contrôle.  
+ Lorsque vous activez la recherche sur un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, comme dans la procédure précédente, la fenêtre outil crée un hôte de recherche. Cet hôte configure et gère les processus de recherche, qui sont toujours effectuées sur un thread d’arrière-plan. Étant donné que la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gère la création de l’hôte de recherche et le paramètre de configuration de la recherche, vous devez uniquement créer une tâche de recherche et fournir la méthode de recherche. Le processus de recherche se produit sur un thread d’arrière-plan, et les appels au contrôle de fenêtre outil se produisent sur le thread d’interface utilisateur. Par conséquent, vous devez utiliser le [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) méthode pour gérer tous les appels que vous apportez dans le traitement avec le contrôle.  
   
 1. Dans le fichier TestSearch.cs, ajoutez le code suivant `using` instructions :  
   
@@ -160,7 +160,7 @@ Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extensio
   
     - Remplace le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> méthode pour créer une tâche de recherche.  
   
-    - Remplace le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> méthode pour restaurer l’état de la zone de texte. Cette méthode est appelée lorsqu’un utilisateur annule une tâche de recherche et lorsqu’un utilisateur définit ou unsets options ou filtres. Les deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> sont appelées sur le thread d’interface utilisateur. Par conséquent, vous n’avez pas besoin accéder à la zone de texte par le biais de la <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> (méthode).  
+    - Remplace le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> méthode pour restaurer l’état de la zone de texte. Cette méthode est appelée lorsqu’un utilisateur annule une tâche de recherche et lorsqu’un utilisateur définit ou unsets options ou filtres. Les deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> sont appelées sur le thread d’interface utilisateur. Par conséquent, vous n’avez pas besoin accéder à la zone de texte par le biais de la [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) (méthode).  
   
     - Crée une classe qui est nommée `TestSearchTask` qui hérite de <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, qui fournit une implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   
@@ -532,7 +532,7 @@ Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extensio
   
 6. Choisissez le filtre.  
   
-     La zone de recherche contient **lignes : « même »**, et les résultats suivants s’affichent :  
+     La zone de recherche contient **lignes : « même »** , et les résultats suivants s’affichent :  
   
      2 bon  
   

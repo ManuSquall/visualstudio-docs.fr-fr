@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::Parse method
 ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b732369aa5cf5a828dfad512c643f109346abcb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843132"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325651"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Cette méthode convertit une chaîne d’expression en une expression analysée.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `upstrExpression`
+## <a name="parameters"></a>Paramètres
+`upstrExpression`\
+[in] La chaîne d’expression à analyser.
 
- [in] La chaîne d’expression à analyser.
+`dwFlags`\
+[in] Une collection de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes qui déterminent comment l’expression doit être analysé.
 
- `dwFlags`
+`nRadix`\
+[in] Base à utiliser pour interpréter toutes les informations numériques.
 
- [in] Une collection de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes qui déterminent comment l’expression doit être analysé.
+`pbstrError`\
+[out] Retourne l’erreur sous forme de texte lisible.
 
- `nRadix`
+`pichError`\
+[out] Retourne la position de caractère de début de l’erreur dans la chaîne d’expression.
 
- [in] Base à utiliser pour interpréter toutes les informations numériques.
-
- `pbstrError`
-
- [out] Retourne l’erreur sous forme de texte lisible.
-
- `pichError`
-
- [out] Retourne la position de caractère de début de l’erreur dans la chaîne d’expression.
-
- `ppParsedExpression`
-
- [out] Retourne l’expression analysée dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet.
+`ppParsedExpression`\
+[out] Retourne l’expression analysée dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

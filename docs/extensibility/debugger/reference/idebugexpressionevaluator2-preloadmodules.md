@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::PreloadModules
 - PreloadModules
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9c2af93b814f7762488a185476d395237a276a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 46df8c3d50a08098ca75e7b115a931ad7580a91b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873994"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325506"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 Précharge les modules désignés par le fournisseur du symbole spécifié.
@@ -35,10 +38,9 @@ int PreloadModules (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pSym`
-
- [in] Fournisseur de symboles pour lequel les modules sont préchargés.
+## <a name="parameters"></a>Paramètres
+`pSym`\
+[in] Fournisseur de symboles pour lequel les modules sont préchargés.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

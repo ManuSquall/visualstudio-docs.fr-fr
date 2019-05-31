@@ -4,18 +4,17 @@ titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926833"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321358"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -106,8 +105,8 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 
 * Auparavant, Visual Studio installé de clés de Registre dans le système **HKEY_LOCAL_MACHINE** et **HKEY_CURRENT_USER** ruches sous une clé spécifique de Visual Studio :
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par les programmes d’installation MSI et des extensions par ordinateur.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Clés de Registre créées par les programmes d’installation MSI et des extensions par ordinateur.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
 
 * Pour réduire l’impact sur le Registre, Visual Studio utilise désormais le [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) (fonction) pour stocker les clés de Registre dans un fichier binaire privé sous *[VSAPPDATA]\privateregistry.bin*. Uniquement un très petit nombre de clés de Visual Studio spécifiques reste dans le Registre système.

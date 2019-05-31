@@ -1,52 +1,53 @@
 ---
 title: IDebugObject::GetMemoryContext | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugObject::GetMemoryContext
 helpviewer_keywords:
 - IDebugObject::GetMemoryContext method
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
-caps.latest.revision: 10
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: e47fd5a7a8285db6c9cdf923699eb4b8f79b451a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 38f913952c3e2f58b0d7bd2a27ac20e8f754da2f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323623"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.
 
-Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp#  
-HRESULT GetMemoryContext(   
-   IDebugMemoryContext2** pContext  
-);  
-```  
-  
-```csharp  
-int GetMemoryContext(  
-   ref IDebugMemoryContext2 pContext  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pContext`  
- [out] Retourne un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet représentant l’adresse de la valeur de l’objet.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
-  
-## <a name="remarks"></a>Notes  
- Le contexte de la mémoire retournée Spécifie l’adresse de la valeur telle que représentée par ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT GetMemoryContext( 
+   IDebugMemoryContext2** pContext
+);
+```
+
+```csharp
+int GetMemoryContext(
+   ref IDebugMemoryContext2 pContext
+);
+```
+
+## <a name="parameters"></a>Paramètres
+`pContext`\
+[out] Retourne un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet représentant l’adresse de la valeur de l’objet.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
+
+## <a name="remarks"></a>Notes
+ Le contexte de la mémoire retournée Spécifie l’adresse de la valeur telle que représentée par ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

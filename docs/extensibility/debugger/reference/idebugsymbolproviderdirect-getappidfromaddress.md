@@ -6,20 +6,20 @@ helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetAppIDFromAddress
 - GetAppIDFromAddress
 ms.assetid: d76a0f36-79c4-4c58-9db3-880b00d11610
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 59078cd574c30992d332983704aba4d70f069d5c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458275"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347434"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 Récupère l’identificateur de domaine d’application étant donné l’adresse de débogage.
@@ -41,13 +41,11 @@ int GetAppIDFromAddress(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pAddress`\
+`pAddress`\
+[in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
- [in] Déboguer l’adresse qui est représenté par le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
-
- `pAppID`\
-
- [out] Identificateur du domaine d’application.
+`pAppID`\
+[out] Identificateur du domaine d’application.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

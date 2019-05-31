@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 - LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2c8265ce0d09b592418082d159fd82d2afaf9fad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334632"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Compte tenus des symboles de débogage de charges le **ICorDebugModule** objet.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`ulAppDomainID`
+## <a name="parameters"></a>Paramètres
+`ulAppDomainID`\
+[in] Identificateur du domaine d’application.
 
- [in] Identificateur du domaine d’application.
+`guidModule`\
+[in] Identificateur unique du module.
 
-`guidModule`
+`baseAddress`\
+[in] Adresse mémoire de base.
 
- [in] Identificateur unique du module.
+`pUnkMetadataImport`\
+[in] Objet qui contient les métadonnées de symboles de débogage.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Adresse mémoire de base.
+`bstrModuleName`\
+[in] Nom du module.
 
-`pUnkMetadataImport`
-
- [in] Objet qui contient les métadonnées de symboles de débogage.
-
-`pUnkCorDebugModule`
-
- [in] Objet qui implémente le [ICorDebugModule (Interface)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nom du module.
-
-`bstrSymSearchPath`
-
- [in] Chemin d’accès pour rechercher le fichier de symboles.
+`bstrSymSearchPath`\
+[in] Chemin d’accès pour rechercher le fichier de symboles.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352040"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procédure : Utiliser des Assistants avec des modèles de projet
 
@@ -210,7 +210,7 @@ Afin que votre modèle de projet personnalisés à utiliser votre Assistant pers
 
 1. Signer l’assembly. Dans le **l’Explorateur de solutions**, sélectionnez le projet VSIX, avec le bouton droit, puis sélectionnez **propriétés du projet**.
 
-2. Dans le **propriétés du projet** fenêtre, sélectionnez le **signature** onglet dans le **signature** onglet, vérification **signer l’assembly**. Dans le **choisir un fichier de clé de nom fort** champ, sélectionnez  **\<New >**. Dans le **créer une clé de nom fort** fenêtre, dans le **nom de fichier de clé** , tapez **key.snk**. Désactivez le **protéger mon fichier de clé avec un mot de passe** champ.
+2. Dans le **propriétés du projet** fenêtre, sélectionnez le **signature** onglet dans le **signature** onglet, vérification **signer l’assembly**. Dans le **choisir un fichier de clé de nom fort** champ, sélectionnez  **\<New >** . Dans le **créer une clé de nom fort** fenêtre, dans le **nom de fichier de clé** , tapez **key.snk**. Désactivez le **protéger mon fichier de clé avec un mot de passe** champ.
 
 3. Dans le **l’Explorateur de solutions**, sélectionnez le projet VSIX et recherchez le **propriétés** fenêtre.
 
@@ -218,9 +218,9 @@ Afin que votre modèle de projet personnalisés à utiliser votre Assistant pers
 
 5. Régénérez la solution.
 
-6. Vous pouvez maintenant rechercher le fichier key.snk dans le répertoire du projet MyProjectWizard (*\<votre emplacement de disque > \MyProjectTemplate\MyProjectWizard\key.snk*). Copie le *key.snk* fichier.
+6. Vous pouvez maintenant rechercher le fichier key.snk dans le répertoire du projet MyProjectWizard ( *\<votre emplacement de disque > \MyProjectTemplate\MyProjectWizard\key.snk*). Copie le *key.snk* fichier.
 
-7. Accédez au répertoire de sortie et de trouver l’assembly (*\<votre emplacement de disque > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Coller le *key.snk* fichier ici. (Cela n’est pas absolument nécessaire, mais cela facilite les étapes suivantes).
+7. Accédez au répertoire de sortie et de trouver l’assembly ( *\<votre emplacement de disque > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Coller le *key.snk* fichier ici. (Cela n’est pas absolument nécessaire, mais cela facilite les étapes suivantes).
 
 8. Ouvrez une fenêtre de commande et accédez au répertoire dans lequel l’assembly a été créée.
 

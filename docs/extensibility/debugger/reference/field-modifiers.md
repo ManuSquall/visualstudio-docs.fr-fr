@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324496"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Spécifie les modificateurs pour un type de champ.
@@ -101,65 +104,91 @@ public enum enum_FIELD_MODIFIERS {
 };
 ```
 
-## <a name="members"></a>Membres
-FIELD_MOD_ACCESS_TYPE indique que le champ n’est pas accessible.
+## <a name="fields"></a>Champs
+`FIELD_MOD_ACCESS_TYPE`\
+Indique que le champ n’est pas accessible.
 
-FIELD_MOD_ACCESS_PUBLIC indique que le champ possède un accès public.
+`FIELD_MOD_ACCESS_PUBLIC`\
+Indique que le champ possède un accès public.
 
-FIELD_MOD_ACCESS_PROTECTED indique que le champ a un accès protégé.
+`FIELD_MOD_ACCESS_PROTECTED`\
+Indique que le champ a un accès protégé.
 
-FIELD_MOD_ACCESS_PRIVATE indique que le champ a un accès privé.
+`FIELD_MOD_ACCESS_PRIVATE`\
+Indique que le champ a un accès privé.
 
-FIELD_MOD_NOMODIFIERS indique que le champ possède pas de modificateur.
+`FIELD_MOD_NOMODIFIERS`\
+Indique que le champ possède pas de modificateur.
 
-FIELD_MOD_STATIC indique que le champ est statique.
+`FIELD_MOD_STATIC`\
+Indique que le champ est statique.
 
-FIELD_MOD_CONSTANT indique que le champ est une constante.
+`FIELD_MOD_CONSTANT`\
+Indique que le champ est une constante.
 
-FIELD_MOD_TRANSIENT indique que le champ est temporaire.
+`FIELD_MOD_TRANSIENT`\
+Indique que le champ est temporaire.
 
-FIELD_MOD_VOLATILE indique que le champ est volatil.
+`FIELD_MOD_VOLATILE`\
+Indique que le champ est volatil.
 
-FIELD_MOD_ABSTRACT indique que le champ est abstrait.
+`FIELD_MOD_ABSTRACT`\
+Indique que le champ est abstrait.
 
-FIELD_MOD_NATIVE indique que le champ est natif.
+`FIELD_MOD_NATIVE`\
+Indique que le champ est natif.
 
-FIELD_MOD_SYNCHRONIZED indique que le champ doit être synchronisé.
+`FIELD_MOD_SYNCHRONIZED`\
+Indique que le champ est synchronisé.
 
-FIELD_MOD_VIRTUAL indique que le champ est virtuel.
+`FIELD_MOD_VIRTUAL`\
+Indique que le champ est virtuel.
 
-FIELD_MOD_INTERFACE indique que le champ est une interface.
+`FIELD_MOD_INTERFACE`\
+Indique que le champ est une interface.
 
-FIELD_MOD_FINAL indique que le champ est définitive.
+`FIELD_MOD_FINAL`\
+Indique que le champ est définitive.
 
-FIELD_MOD_SENTINEL indique que le champ est un objet sentinel.
+`FIELD_MOD_SENTINEL`\
+Indique que le champ est un objet sentinel.
 
-FIELD_MOD_INNERCLASS indique que le champ est une classe interne.
+`FIELD_MOD_INNERCLASS`\
+Indique que le champ est une classe interne.
 
-FIELD_TYPE_OPTIONAL indique que le champ est facultatif.
+`FIELD_TYPE_OPTIONAL`\
+Indique que le champ est facultatif.
 
-FIELD_MOD_BYREF indique que le champ est un argument de référence. Il s’agit en particulier pour les arguments de méthode.
+`FIELD_MOD_BYREF`\
+Indique que le champ est un argument de référence. Il s’agit en particulier pour les arguments de méthode.
 
-FIELD_MOD_HIDDEN indique que le champ doit être masqué ou présenté dans un autre contexte ; par exemple, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variables locales statiques.
+`FIELD_MOD_HIDDEN`\
+Indique que le champ doit être masqué ou présenté dans un autre contexte ; par exemple, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] variables locales statiques.
 
-FIELD_MOD_MARSHALASOBJECT indique que le champ représente un objet avec un `IUnknown` interface.
+`FIELD_MOD_MARSHALASOBJECT`\
+Indique que le champ représente un objet avec un `IUnknown` interface.
 
-FIELD_MOD_SPECIAL_NAME indique que le champ a un nom spécial, par exemple, `.ctor` pour un constructeur ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
+`FIELD_MOD_SPECIAL_NAME`\
+Indique que le champ a un nom spécial, par exemple, `.ctor` pour un constructeur ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
 
-FIELD_MOD_HIDEBYSIG indique que le champ a le `Overloads` mot clé appliqué à celui-ci ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
+`FIELD_MOD_HIDEBYSIG`\
+Indique que le champ a le `Overloads` mot clé appliqué à celui-ci ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] uniquement).
 
-FIELD_MOD_WRITEONLY indique que le champ est en écriture seule. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL`, comme l’utilisation seule de ces champs en écriture seule est pour l’évaluation de fonction. Un utilisateur doit demander explicitement `FIELD_MOD_WRITEONLY` champs.
+`FIELD_MOD_WRITEONLY`\
+Indique que le champ est en écriture seule. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL`, comme l’utilisation seule de ces champs en écriture seule est pour l’évaluation de fonction. Un utilisateur doit demander explicitement `FIELD_MOD_WRITEONLY` champs.
 
-FIELD_MOD_ACCESS_MASK indique un masque d’accès au champ.
+`FIELD_MOD_ACCESS_MASK`\
+Indique un masque d’accès au champ.
 
-FIELD_MOD_MASK indique un masque pour les modificateurs de champ.
+`FIELD_MOD_MASK`\
+Indique un masque pour les modificateurs de champ.
 
 ## <a name="remarks"></a>Notes
 Utilisé pour le `dwModifiers` membre de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.
 
 Ces valeurs sont également transmis à la [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) méthode pour filtrer les champs spécifiques.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : sh.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

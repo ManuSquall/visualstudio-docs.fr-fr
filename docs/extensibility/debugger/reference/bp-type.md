@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711473"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350574"
 ---
 # <a name="bptype"></a>BP_TYPE
 Spécifie si le point d’arrêt se trouve à un emplacement de code, est un emplacement de données ou un autre type de point d’arrêt.
@@ -43,19 +46,23 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Membres
-BPT_NONE ne spécifie aucun type de point d’arrêt.
+## <a name="fields"></a>Champs
+`BPT_NONE`\
+Ne spécifie aucun type de point d’arrêt.
 
-BPT_CODE spécifie un point d’arrêt du code.
+`BPT_CODE`\
+Spécifie un point d’arrêt du code.
 
-BPT_DATA spécifie un point d’arrêt de données.
+`BPT_DATA`\
+Spécifie un point d’arrêt de données.
 
-BPT_SPECIAL spécifie un point d’arrêt qui n’est ni un code ni les données de type. Ce type est déconseillé et ne doit pas être utilisé.
+`BPT_SPECIAL`\
+Spécifie un point d’arrêt qui n’est ni un code, ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.
 
 ## <a name="remarks"></a>Notes
 Passé en tant que paramètre à la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) et [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) méthodes.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

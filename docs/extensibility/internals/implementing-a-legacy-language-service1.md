@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420496"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315644"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implémentation d’un Service de langage hérité
 Vous pouvez utiliser les classes dans l’infrastructure de package managé (MPF) pour implémenter un service de langage hérité qui prend en charge un large éventail de fonctionnalités, telles que la coloration syntaxique, la correspondance d’accolade et la saisie semi-automatique IntelliSense.

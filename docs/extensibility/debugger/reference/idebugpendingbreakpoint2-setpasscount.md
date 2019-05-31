@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1301c3ecde243e212bdeed3c8aca1a56f1cbc15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5af01702c20b4841c5d737bef2c3be7f885cc31e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872074"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340566"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 Définit ou modifie le nombre de passe associé au point d’arrêt en attente.
@@ -37,10 +40,9 @@ int SetPassCount( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `bpPassCount`
-
- [in] Un [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui contient le nombre de pass.
+## <a name="parameters"></a>Paramètres
+`bpPassCount`\
+[in] Un [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui contient le nombre de pass.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.

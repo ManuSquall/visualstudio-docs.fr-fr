@@ -3,17 +3,17 @@ title: Éditeur de couleurs VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857938"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332916"
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleur VSIX
 L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs peuvent être utilisées dans le code. Cet outil est utile pour effectuer des couleurs pour une extension Visual Studio qui prend en charge des thèmes. Cet outil peut ouvrir les fichiers .pkgdef et .xml. Les thèmes Visual Studio (fichiers .vstheme) peuvent être utilisés avec l’éditeur de couleurs Visual Studio Extension en remplaçant l’extension de fichier .xml. En outre, les fichiers de .vstheme peuvent être importés dans un fichier .xml en cours.
@@ -55,7 +55,7 @@ L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier de
 
    **Étape 1 : Déterminez les noms de catégorie et le jeton pour les nouveaux jetons de couleur.**
 
-   L’attribution de noms par défaut de schéma pour un VSColor est **[Category] [type d’interface utilisateur] [État]**. N’utilisez pas le mot « color » dans les noms de VSColor, car il est redondant.
+   L’attribution de noms par défaut de schéma pour un VSColor est **[Category] [type d’interface utilisateur] [État]** . N’utilisez pas le mot « color » dans les noms de VSColor, car il est redondant.
 
    Les noms de catégorie proposent des regroupements logiques et doivent être définis comme étroitement que possible. Par exemple, le nom d’une fenêtre outil unique peut être un nom de catégorie, mais n’est pas le nom d’une équipe unité ou un projet d’entreprise dans sa totalité. Regroupement des entrées en catégories permet d’éviter toute confusion entre les couleurs portant le même nom.
 

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224067"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347301"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 Récupère les informations d’importation de métadonnées.
@@ -43,17 +43,14 @@ int GetMetaDataImport (
 ```
 
 ## <a name="parameters"></a>Paramètres
- `guid`\
+`guid`\
+[in] Identificateur unique pour le module.
 
- [in] Identificateur unique pour le module.
+`appID`\
+[in] Identificateur du domaine d’application.
 
- `appID`\
-
- [in] Identificateur du domaine d’application.
-
- `ppImport`\
-
- [out] Retourne un objet qui contient les métadonnées importe des informations.
+`ppImport`\
+[out] Retourne un objet qui contient les métadonnées importe des informations.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

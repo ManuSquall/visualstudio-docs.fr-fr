@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60759fd576d47e173e9e35eeff9e0adaa38dc394
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 10f93130ca1bda866684ed8e212baef199a2a1ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223587"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310200"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 Retourne une copie de l’énumération actuelle comme un objet distinct.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `ppEnum`\
-
- [out] Retourne une copie de cette énumération en tant qu’objet distinct.
+`ppEnum`\
+[out] Retourne une copie de cette énumération en tant qu’objet distinct.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f853f71428086f6c144c352e18e51f3f55c4d00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908953"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322530"
 ---
 # <a name="source-control-integration-essentials"></a>Éléments fondamentaux de l’intégration du contrôle de code source
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’intégration du contrôle de source : un plug-in de contrôle de code source qui fournit les fonctionnalités de base et est généré à l’aide de l’API de plug-in de contrôle de Source (anciennement appelé l’API MSSCCI) et une solution d’intégration de contrôle source hébergé sur le VSPackage qui Fournit des fonctionnalités plus robustes.

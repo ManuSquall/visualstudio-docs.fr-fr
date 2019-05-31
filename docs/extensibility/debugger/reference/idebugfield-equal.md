@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8af316c9669b00ae8316888c6a7072d4737dd23d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919466"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352662"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Cette méthode compare ce champ avec le champ spécifié pour l’égalité.
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pField`
-
- [in] Champ à comparer à celui-ci.
+## <a name="parameters"></a>Paramètres
+`pField`\
+[in] Champ à comparer à celui-ci.
 
 ## <a name="return-value"></a>Valeur de retour
  Si les champs sont identiques, retourne `S_OK`. Si les champs sont différents, retourne `S_FALSE.` sinon, retourne un code d’erreur.

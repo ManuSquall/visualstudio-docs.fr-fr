@@ -6,17 +6,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 646384f43a6196bca802998b709285c247e4c378
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd4f4d37af94ba3a7dcdffc249e8b5e681025b78
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352392"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Ajouter une barre d’outils à une fenêtre outil
 Cette procédure pas à pas montre comment ajouter une barre d’outils à une fenêtre outil.
@@ -111,7 +111,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à une f
 
      Vous devez voir une barre d’outils (il ressemble à l’icône par défaut) en haut à gauche de la fenêtre outil, juste en dessous du titre.
 
-3. Dans la barre d’outils, cliquez sur l’icône pour afficher le message **TWTestCommandPackage à l’intérieur de TWToolbar.TWTestCommand.MenuItemCallback()**.
+3. Dans la barre d’outils, cliquez sur l’icône pour afficher le message **TWTestCommandPackage à l’intérieur de TWToolbar.TWTestCommand.MenuItemCallback()** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Ajouter une barre d’outils](../extensibility/adding-a-toolbar.md)

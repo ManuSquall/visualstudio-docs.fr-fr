@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308869"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtient la valeur désignée comme une série d’octets consécutifs.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwStart`
+## <a name="parameters"></a>Paramètres
+`dwStart`\
+[in] Offset, en octets, à partir du début de l’objet désigné.
 
- [in] Offset, en octets, à partir du début de l’objet désigné.
+`dwCount`\
+[in] Le nombre d’octets à récupérer.
 
- `dwCount`
+`pBytes`\
+[in, out] Un tableau est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet désigné.
 
- [in] Le nombre d’octets à récupérer.
-
- `pBytes`
-
- [in, out] Un tableau est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet désigné.
-
- `pdwBytes`
-
- [out] Retourne le nombre d’octets réellement récupérées.
+`pdwBytes`\
+[out] Retourne le nombre d’octets réellement récupérées.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

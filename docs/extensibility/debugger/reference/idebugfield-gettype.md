@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetType method
 ms.assetid: b3cdec9f-ef7b-44d0-a775-d17ef7eae968
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8887be18d59d331913a1978d915b91f9c996b8f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c052f4b4c45080d8292dd8787c44777818bae585
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919512"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333159"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 Cette méthode obtient le type de champ.
@@ -36,10 +39,9 @@ int GetType(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppType`
-
- [out] Retourne le type de champ sous un autre [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
+## <a name="parameters"></a>Paramètres
+`ppType`\
+[out] Retourne le type de champ sous un autre [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

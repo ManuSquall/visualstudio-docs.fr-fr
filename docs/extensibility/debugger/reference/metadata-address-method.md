@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347364"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Cette structure représente l’adresse d’une méthode d’une classe.
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>Membres
  `tokMethod`\
-
  L’ID de la méthode.
 
  [C++] `_mdToken` est un `typedef` pour 32 bits `int`.
 
  `dwOffset`\
-
  Le décalage à partir du début de la classe à cette méthode (peuvent représenter le décalage dans vtable).
 
  `dwVersion`\
-
  La version de la méthode (cette valeur est unique pour le fournisseur de symboles).
 
 ## <a name="remarks"></a>Notes

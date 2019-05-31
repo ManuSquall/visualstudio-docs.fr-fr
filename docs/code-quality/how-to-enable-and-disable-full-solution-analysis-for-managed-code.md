@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Activer et désactiver l’analyse de la Solution complète pour le Code managé'
+title: Activer et désactiver l’analyse complète de la solution pour le code managé
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a445439014e3b1f68b634865265089eb68e790a6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816449"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260878"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procédure : Activer et désactiver l’analyse complète de la solution pour le code managé
 

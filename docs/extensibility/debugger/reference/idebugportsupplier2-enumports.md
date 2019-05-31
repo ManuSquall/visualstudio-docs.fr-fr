@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::EnumPorts
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b814c8097e001badafb93c27370ba5982eda48c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d2e1774df8439adaf7aaaeebf8965b74bf728bb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918065"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340196"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 Récupère une liste de tous les ports fournis par un fournisseur de port.
@@ -36,10 +39,9 @@ int EnumPorts( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppEnum`
-
- [out] Retourne un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objet contenant une liste de ports fournis.
+## <a name="parameters"></a>Paramètres
+`ppEnum`\
+[out] Retourne un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objet contenant une liste de ports fournis.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861691"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342177"
 ---
 # <a name="command-design"></a>Conception de la commande
 Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où il doit apparaître, lorsqu’il est disponible, et comment il doit être gérée.
 
 ## <a name="define-commands"></a>Définir des commandes
- Pour définir de nouvelles commandes, inclure une table de commandes de Visual Studio (*.vsct*) le fichier dans votre projet VSPackage. Si vous avez créé un VSPackage à l’aide du modèle de package Visual Studio, le projet inclut un de ces fichiers. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Pour définir de nouvelles commandes, inclure une table de commandes de Visual Studio ( *.vsct*) le fichier dans votre projet VSPackage. Si vous avez créé un VSPackage à l’aide du modèle de package Visual Studio, le projet inclut un de ces fichiers. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio fusionne tous les *.vsct* fichiers recherche pour qu’il puisse afficher les commandes. Étant donné que ces fichiers sont distincts du VSPackage binaire, Visual Studio n’a pas de charger le package pour trouver les commandes. Pour plus d’informations, consultez [comment VSPackages ajoute des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,7 +36,7 @@ Lorsque vous ajoutez une commande à un VSPackage, vous devez spécifier où il 
 ## <a name="visual-studio-command-environment"></a>Environnement de commande de Visual Studio
  Visual Studio peut héberger un nombre quelconque de VSPackages, et chacun peut contribuer à son propre jeu de commandes. L’environnement affiche uniquement les commandes qui sont appropriés à la tâche actuelle. Pour plus d’informations, consultez [commande disponibilité](../../extensibility/internals/command-availability.md) et [les objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md).
 
- Un VSPackage qui définit les nouvelles commandes, menus, barres d’outils, des menus contextuels fournit ses informations de commande à Visual Studio au moment de l’installation par le biais des entrées de Registre qui référencent des ressources dans des assemblys natifs ou managés. Chaque ressource fait ensuite référence à une ressource de données binaires (*.cto*) fichier, qui est généré lorsque vous compilez une table de commandes de Visual Studio (*.vsct*) fichier. Cela permet à Visual Studio fournir des jeux de commandes fusionnées, les menus et barres d’outils sans avoir à charger chaque VSPackage installé.
+ Un VSPackage qui définit les nouvelles commandes, menus, barres d’outils, des menus contextuels fournit ses informations de commande à Visual Studio au moment de l’installation par le biais des entrées de Registre qui référencent des ressources dans des assemblys natifs ou managés. Chaque ressource fait ensuite référence à une ressource de données binaires ( *.cto*) fichier, qui est généré lorsque vous compilez une table de commandes de Visual Studio ( *.vsct*) fichier. Cela permet à Visual Studio fournir des jeux de commandes fusionnées, les menus et barres d’outils sans avoir à charger chaque VSPackage installé.
 
 ### <a name="command-organization"></a>Organisation de commande
  L’environnement positionne les commandes par groupe, de priorité et de menu.

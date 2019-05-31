@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993177"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846225"
 ---
 # <a name="special-characters-to-escape"></a>Caractères d’échappement spéciaux
 Les caractères spéciaux doivent être échappés uniquement s'ils ont une signification spéciale dans le contexte dans lequel ils sont utilisés. Par exemple, l'astérisque (*) est un caractère spécial uniquement dans les attributs "Include" et "Exclude" d'une définition d'élément ou d'un appel à <xref:Microsoft.Build.Tasks.CreateItem>. Dans tous les autres cas, l'astérisque est traité comme un astérisque littéral. Même s'il n'est pas nécessaire d'échapper tous les astérisques des fichiers projet, cela ne peut pas faire de mal.
@@ -37,7 +37,6 @@ Les caractères spéciaux doivent être échappés uniquement s'ils ont une sign
 |@|Arobase, utilisée pour référencer des listes d'éléments.|
 |(|Parenthèse ouverte, utilisée dans les listes.|
 |)|Parenthèse fermée, utilisée dans les listes.|
-|\`|Apostrophe (ou graduation), utilisée dans les conditions et autres expressions.|
 |;|Point-virgule, utilisé comme séparateur de liste.|
 |?|Point d'interrogation. Caractère générique pour la description d'une spécification de fichier dans la section Include/Exclude d'un élément.|
 |*|Astérisque. Caractère générique pour la description d'une spécification de fichier dans la section Include/Exclude d'un élément.|

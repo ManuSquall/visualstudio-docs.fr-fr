@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_STRING structure
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0c3739469f45a365746a9a9272eb2859ec26f94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 2089fde7f063c9c394b3ff065445ca31d45241fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705701"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319013"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 Utilisée pour définir des points d’arrêt de code basés sur une chaîne que l’utilisateur peut entrer dans l’environnement de développement intégré (IDE).
@@ -32,14 +34,16 @@ typedef struct _BP_LOCATION_CODE_STRING {
 ```
 
 ## <a name="members"></a>Membres
-`bstrContext` Le contexte de point d’arrêt dans le code, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.
+`bstrContext`\
+Le contexte de point d’arrêt dans le code, généralement un nom de méthode ou fonction tels que présentés sur une pile des appels.
 
-`bstrCodeExpr` La chaîne que l’utilisateur tape dans pour décrire le point d’arrêt du code.
+`bstrCodeExpr`\
+La chaîne que l’utilisateur tape dans pour décrire le point d’arrêt du code.
 
 ## <a name="remarks"></a>Notes
 Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

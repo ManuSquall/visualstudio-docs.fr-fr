@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d415c87c67c20880615d83c1201b4588a683719c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb13ac24aaa542d3111ff3480ac340615226a0a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921644"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310415"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 Obtient la taille dans les instructions de ce flux de code machine.
@@ -36,10 +39,9 @@ int GetSize( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pnSize`
-
- [out] Retourne la taille, dans les instructions.
+## <a name="parameters"></a>Paramètres
+`pnSize`\
+[out] Retourne la taille, dans les instructions.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

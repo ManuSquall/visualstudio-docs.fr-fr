@@ -16,10 +16,10 @@
   items:
     - name: Installer Visual Studio
       href: install/install-visual-studio.md
-    - name: Comptes
+    - name: Comptes de personnalisation
       items:
         - name: Se connecter à Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Utiliser plusieurs comptes d’utilisateur
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: "Modifier Visual Studio\_2017"
       href: install/modify-visual-studio.md
-    - name: Installer Help Viewer
-      href: help-viewer/installation.md
     - name: Réparer Visual Studio
       href: install/repair-visual-studio.md
     - name: Désinstaller Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Guide de l’administrateur Visual Studio
       items:
-        - name: Guide de l’administrateur
+        - name: Vue d'ensemble
           href: install/visual-studio-administrator-guide.md
         - name: Utiliser la ligne de commande
           items:
@@ -83,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: Contrôler les mises à jour applicables aux déploiements de Visual Studio
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
+              href: install/update-servicing-baseline.md
         - name: Gérer les installations
           items:
             - name: Outils de détection et de gestion des instances de Visual Studio
@@ -138,6 +138,8 @@
           href: install/advanced-build-tools-container.md
         - name: Problèmes connus liés aux conteneurs
           href: install/build-tools-container-issues.md
+    - name: Installer Help Viewer
+      href: help-viewer/installation.md
 - name: Démarrages rapides
   items:
     - name: Orientation de Visual Studio
@@ -231,6 +233,8 @@
               items:
                 - name: Créer des modèles de projet et d’élément
                   href: ide/creating-project-and-item-templates.md
+                - name: Ajouter des balises à un modèle
+                  href: ide/template-tags.md
                 - name: Créer des modèles de projet
                   href: ide/how-to-create-project-templates.md
                 - name: Créer des modèles à projets multiples

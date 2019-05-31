@@ -7,17 +7,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353349"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permettent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconnaître et à travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (d’inscription.rgs) du Registre.
@@ -193,7 +193,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
 
 |Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|Aucun.|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|
+|`@`|REG_SZ|None|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajouter de nouveaux éléments.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès par défaut des éléments qui s’affichera dans le **ajouter un nouvel élément** boîte de dialogue.|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|Établit l’ordre de tri pour l’affichage dans le nœud d’arbre de la **ajouter un nouvel élément** boîte de dialogue.|

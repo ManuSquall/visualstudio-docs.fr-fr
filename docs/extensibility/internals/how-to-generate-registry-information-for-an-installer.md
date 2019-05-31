@@ -7,24 +7,24 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e173819f4966bd1770ac862626987bafb9bf120
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418443"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328837"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Procédure : Générer des informations de Registre pour un programme d’installation
 
 Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l’inscription d’un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation de programme d’installation de Windows. RegPkg peut également générer un fichier qui peut être inclus dans un fichier de source d’installation basé sur le [ensemble d’outils Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).
 
 > [!IMPORTANT]
-> RegPkg génère des noms de chemin d’accès qui sont spécifiques à votre système de développement, chaque fois que vous utilisez RegPkg, vous devez donc modifier la sortie à utiliser le programme d’installation d’approprié Windows au format propriétés. Par exemple, le `InprocServer32` valeur doit être  *\<SystemFolder\>mscoree.dll* et chemins d’accès doivent utiliser *\<#filekey\>* et  *\<$componentkey\>*. Ajustement de la sortie de cette façon prend en charge les ordinateurs Windows installé sur un lecteur différent ou dans un répertoire différent, les noms de répertoire localisé et les chemins d’accès les utilisateurs peuvent choisir. Pour plus d’informations, consultez [mise en forme](http://go.microsoft.com/fwlink/?LinkId=71120) dans le Kit de développement de Windows Installer. Si vous suivez les conventions RegPkg pour vos chemins d’accès de système de développement, par exemple, ID de la forme de fichier *File_\<filename\>*, vous devez apporter des modifications moins.
+> RegPkg génère des noms de chemin d’accès qui sont spécifiques à votre système de développement, chaque fois que vous utilisez RegPkg, vous devez donc modifier la sortie à utiliser le programme d’installation d’approprié Windows au format propriétés. Par exemple, le `InprocServer32` valeur doit être  *\<SystemFolder\>mscoree.dll* et chemins d’accès doivent utiliser *\<#filekey\>* et  *\<$componentkey\>* . Ajustement de la sortie de cette façon prend en charge les ordinateurs Windows installé sur un lecteur différent ou dans un répertoire différent, les noms de répertoire localisé et les chemins d’accès les utilisateurs peuvent choisir. Pour plus d’informations, consultez [mise en forme](http://go.microsoft.com/fwlink/?LinkId=71120) dans le Kit de développement de Windows Installer. Si vous suivez les conventions RegPkg pour vos chemins d’accès de système de développement, par exemple, ID de la forme de fichier *File_\<filename\>* , vous devez apporter des modifications moins.
 
 ## <a name="to-create-a-registration-manifest"></a>Pour créer un manifeste de l’inscription
 

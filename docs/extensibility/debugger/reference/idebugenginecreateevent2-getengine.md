@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineCreateEvent2::GetEngine
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be6119f7542f47238f63e5b75453a46be2a32f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6befd6d61934026207a64a064d26fd825ce6591b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352430"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 Récupère l’objet qui représente le moteur de débogage qui vient d’être créé (dé).
@@ -36,10 +39,9 @@ int GetEngine( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pEngine`
-
- [out] Retourne un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objet qui représente le DE nouvellement créé.
+## <a name="parameters"></a>Paramètres
+`pEngine`\
+[out] Retourne un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objet qui représente le DE nouvellement créé.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

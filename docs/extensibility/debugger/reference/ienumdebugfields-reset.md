@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Reset method
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6bf669261a3ece31e452227b7c93d7ce8bf07c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c50a5e2ed55bf1550ca4a70bc566fb2504b100a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914633"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350412"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 Cette méthode réinitialise l’énumération au premier élément.
@@ -33,7 +36,7 @@ int Reset();
 ```
 
 #### <a name="parameters"></a>Paramètres
- Aucun.
+ None
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

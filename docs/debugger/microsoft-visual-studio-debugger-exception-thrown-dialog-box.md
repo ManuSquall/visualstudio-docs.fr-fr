@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408519"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261336"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Débogueur Microsoft Visual Studio (Exception levée) (boîte de dialogue)
 Une exception s'est produite dans votre programme. Cette boîte de dialogue indique le type d'exception levé. Votre code doit gérer cette exception. Pour ce faire, vous avez le choix entre les options suivantes :
@@ -44,4 +44,4 @@ Une exception s'est produite dans votre programme. Cette boîte de dialogue indi
 ## <a name="see-also"></a>Voir aussi
 - [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)
 - [Meilleures pratiques pour les exceptions](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Gestion des exceptions](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Gestion des exceptions](/cpp/extensions/exception-handling-cpp-component-extensions)

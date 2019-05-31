@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetLanguage method
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: dfa11a1df6460c08431d7b23fabe5d94674baad2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347610"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Cette méthode obtient le langage ayant servi à compiler le code à l’adresse de débogage.
@@ -44,17 +44,14 @@ int GetLanguage(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pAddress`\
+`pAddress`\
+[in] Un type d’objet représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
- [in] Un type d’objet représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
+`pguidLanguage`\
+[out] Retourne un `GUID` qui spécifie le langage.
 
- `pguidLanguage`\
-
- [out] Retourne un `GUID` qui spécifie le langage.
-
- `pguidLanguageVendor`\
-
- [out] Retourne un `GUID` qui spécifie le fournisseur de langage.
+`pguidLanguageVendor`\
+[out] Retourne un `GUID` qui spécifie le fournisseur de langage.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

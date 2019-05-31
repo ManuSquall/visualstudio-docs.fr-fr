@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457665"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348828"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Paramètres
 `buflen`\
-
- [in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
+[in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.
 
 `rgString`\
-
- [out] Retourne la chaîne.
+[out] Retourne la chaîne.
 
  [C++ uniquement], `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.
 
 `pceltFetched`\
-
- [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
+[out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

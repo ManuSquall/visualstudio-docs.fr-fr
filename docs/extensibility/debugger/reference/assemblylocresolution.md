@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710251"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327378"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Spécifie où se trouve un assembly.
@@ -43,21 +46,25 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>Membres
-ALR_NAME Assembly se trouve dans l’espace de noms actuel.
+## <a name="fields"></a>Champs
+`ALR_NAME`\
+Assembly se trouve dans l’espace de noms actuel.
 
-ALR_USERDIR Assembly se trouve dans un répertoire de l’utilisateur.
+`ALR_USERDIR`\
+Assembly se trouve dans un répertoire de l’utilisateur.
 
-ALR_SHAREDDIR Assembly se trouve dans le répertoire partagé.
+`ALR_SHAREDDIR`\
+Assembly se trouve dans le répertoire partagé.
 
-ALR_REMOTEDIR Assembly se trouve dans un répertoire distant.
+`ALR_REMOTEDIR`\
+Assembly se trouve dans un répertoire distant.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont retournées par la [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) et [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) méthodes.
 
 Ces valeurs peuvent être combinées avec le `OR` opération.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319647"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Récupère le nombre spécifié d’octets à partir de l’objet.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `dataSize`\
+`dataSize`\
+[in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).
 
- [in] Le nombre d’octets à récupérer (la `data` tableau doit contenir au moins ce nombre d’octets).
+`sizeGotten`\
+[out] Retourne le nombre d’octets réellement récupérées.
 
- `sizeGotten`\
-
- [out] Retourne le nombre d’octets réellement récupérées.
-
- `data`\
-
- [in, out] Tableau à remplir avec les données demandées.
+`data`\
+[in, out] Tableau à remplir avec les données demandées.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

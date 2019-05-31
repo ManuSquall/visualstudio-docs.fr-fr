@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411093"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322834"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation pour une extension Visual Studio.
@@ -60,15 +60,15 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
 
   **Licence** Spécifie le fichier texte qui contient la licence utilisateur, s’il en existe.
 
-  **Icône** Spécifie le fichier graphique (*.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’icône à afficher dans **Gestionnaire d’extensions**, si une icône est présente. L’image d’icône doit être de 32 x 32 pixels ou il est redimensionné à ces dimensions. Si aucune icône n’est spécifiée, **Gestionnaire d’extensions** utilise une icône par défaut.
+  **Icône** Spécifie le fichier graphique ( *.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’icône à afficher dans **Gestionnaire d’extensions**, si une icône est présente. L’image d’icône doit être de 32 x 32 pixels ou il est redimensionné à ces dimensions. Si aucune icône n’est spécifiée, **Gestionnaire d’extensions** utilise une icône par défaut.
 
-  **Image d’aperçu** Spécifie le fichier graphique (*.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’image d’aperçu afficher dans **Gestionnaire d’extensions**, si une image d’aperçu est présente. L’image d’aperçu doit être 200 x 200 pixels. Si aucune image d’aperçu n’est spécifiée, **Gestionnaire d’extensions** utilise une image par défaut.
+  **Image d’aperçu** Spécifie le fichier graphique ( *.png*, *.bmp*, *.jpeg*, *.ico*) qui contient l’image d’aperçu afficher dans **Gestionnaire d’extensions**, si une image d’aperçu est présente. L’image d’aperçu doit être 200 x 200 pixels. Si aucune image d’aperçu n’est spécifiée, **Gestionnaire d’extensions** utilise une image par défaut.
 
   **Balises** ajoute des balises de texte à utiliser pour les indicateurs de recherche.
 
-  **Notes de publication** spécifie un fichier (*.txt*, *.rtf*) qui contient les notes de publication. Prend également l’URL d’un site Web qui affiche les notes de publication.
+  **Notes de publication** spécifie un fichier ( *.txt*, *.rtf*) qui contient les notes de publication. Prend également l’URL d’un site Web qui affiche les notes de publication.
 
-  **Guide de démarrage** spécifie un fichier (*.txt*, *.rtf*) qui contient des informations sur l’utilisation de l’extension ou le contenu du package VSIX. Ce guide s’affiche lorsque l’installation de l’extension est terminée. Prend également l’URL d’un site Web qui affiche le guide.
+  **Guide de démarrage** spécifie un fichier ( *.txt*, *.rtf*) qui contient des informations sur l’utilisation de l’extension ou le contenu du package VSIX. Ce guide s’affiche lorsque l’installation de l’extension est terminée. Prend également l’URL d’un site Web qui affiche le guide.
 
   **URL informations** Spécifie l’URL d’un site Web qui contient des informations supplémentaires sur le produit.
 
@@ -94,7 +94,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
 
   **Cet extension VSIX est installé pour tous les utilisateurs (nécessite une élévation lors de l’installation)** si vous sélectionnez cette case à cocher, l’extension est installée pour tous les utilisateurs ; sinon, elle est installée uniquement pour l’utilisateur actuel.
 
-  **Cet extension VSIX est installé par le programme d’installation de Windows** si vous sélectionnez cette case à cocher, l’extension est installée par le programme d’installation de Windows (*.msi* fichier) ; sinon, il est installé comme un package VSIX standard (*.vsix*  fichier).
+  **Cet extension VSIX est installé par le programme d’installation de Windows** si vous sélectionnez cette case à cocher, l’extension est installée par le programme d’installation de Windows ( *.msi* fichier) ; sinon, il est installé comme un package VSIX standard ( *.vsix*  fichier).
 
   Le **actifs** onglet contient les contrôles suivants.
 

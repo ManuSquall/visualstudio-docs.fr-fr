@@ -1,18 +1,18 @@
 ---
 title: Utiliser le framework de tests unitaires Microsoft pour C++
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461478"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934490"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -30,16 +30,16 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
    1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++**.
 
-   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**  :
+   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**. Ajoutez ces chemins :
 
       | Répertoire | Property |
       |-| - |
-      | **Répertoires Include** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Répertoires de bibliothèques** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Répertoires Include** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Répertoires de bibliothèques** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Ajoutez un fichier de test unitaire C++ :
 
-   - Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+   - Cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Fichier C++ (.cpp)**.
 
 ## <a name="write-the-tests"></a>Écrire les tests
 

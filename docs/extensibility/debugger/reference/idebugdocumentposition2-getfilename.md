@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetFileName
 ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc5e6ef5317e24e53215dad8f32bc95ee400762
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 478f259d111e19df988c76733d1bb52655adab2c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921355"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326540"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 Obtient le nom de fichier du fichier source qui contient la position du document.
@@ -36,10 +39,9 @@ int GetFileName( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pbstrFileName`
-
- [out] Retourne le nom de fichier du fichier source.
+## <a name="parameters"></a>Paramètres
+`pbstrFileName`\
+[out] Retourne le nom de fichier du fichier source.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

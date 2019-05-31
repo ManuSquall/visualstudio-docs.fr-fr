@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70c1bb00fc8648cfe19f4bcecffdd0592e5f8deb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711447"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346540"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 Décrit le résultat de la liaison d’un point d’arrêt de données.
@@ -43,18 +46,22 @@ public struct BP_RESOLUTION_DATA {
 ```
 
 ## <a name="members"></a>Membres
-`bstrDataExpr` L’expression de données qui a été liée.
+`bstrDataExpr`\
+L’expression de données qui a été liée.
 
-`bstrFunc` Le nom de la fonction du point d’arrêt a lié dans (le cas échéant).
+`bstrFunc`\
+Le nom de la fonction du point d’arrêt a lié dans (le cas échéant).
 
-`bstrImage` Le nom du module (MyModule.dll, par exemple) que le point d’arrêt a lié dans.
+`bstrImage`\
+Le nom du module (MyModule.dll, par exemple) que le point d’arrêt a lié dans.
 
-`dwFlags` Une valeur comprise entre le [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) énumération, décrivant la façon dont le point d’arrêt de données est implémentée.
+`dwFlags`\
+Une valeur comprise entre le [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) énumération, décrivant la façon dont le point d’arrêt de données est implémentée.
 
 ## <a name="remarks"></a>Notes
 Cette structure est un membre de la [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure, qui est d’activer un membre de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structure retournée par le [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)(méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

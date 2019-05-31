@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318189"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Spécifie la quantité d’état d’un programme (par exemple, les threads en cours d’exécution, les frames de pile et adresse d’instruction en cours) pour vider.
@@ -39,15 +42,17 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>Membres
-DUMP_MINIDUMP spécifie un vidage petit, plus compact.
+## <a name="fields"></a>Champs
+`DUMP_MINIDUMP`\
+Spécifie un fichier de vidage petit, plus compact.
 
-DUMP_FULLDUMP spécifie un vidage volumineux et complet.
+`DUMP_FULLDUMP`\
+Spécifie un vidage volumineux et complet.
 
 ## <a name="remarks"></a>Notes
 Passé en tant qu’argument à la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

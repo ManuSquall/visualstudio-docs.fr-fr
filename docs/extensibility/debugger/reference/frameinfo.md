@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680501"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344462"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Décrit un frame de pile.
@@ -61,36 +64,49 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>Membres
-m_dwValidFields une combinaison d’indicateurs à partir de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.
+`m_dwValidFields`\
+Une combinaison d’indicateurs de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.
 
-m_bstrFuncName le nom de fonction associé au frame de pile.
+`m_bstrFuncName`\
+Le nom de fonction associé au frame de pile.
 
-m_bstrReturnType le type de retour associé au frame de pile.
+`m_bstrReturnType`\
+Le type de retour associé au frame de pile.
 
-m_bstrArgs les arguments de la fonction associée le frame de pile.
+`m_bstrArgs`\
+Arguments à la fonction associée le frame de pile.
 
-m_bstrLanguage la langue dans laquelle la fonction est implémentée.
+`m_bstrLanguage`\
+Le langage dans lequel la fonction est implémentée.
 
-m_bstrModule le nom du module associé au frame de pile.
+`m_bstrModule`\
+Le nom du module associé au frame de pile.
 
-m_addrMin l’adresse physique minimale de la pile.
+`m_addrMin`\
+L’adresse physique minimale de la pile.
 
-m_addrMAX l’adresse de la pile physique maximale.
+`m_addrMAX`\
+L’adresse de la pile physique maximale.
 
-m_pFrame le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente ce frame de pile.
+`m_pFrame`\
+Le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente ce frame de pile.
 
-m_pFrame le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objet qui représente le module qui contient ce frame de pile.
+`m_pFrame`\
+Le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objet qui représente le module qui contient ce frame de pile.
 
-m_fHasDebugInfo valeur différente de zéro (`TRUE`) si les informations de débogage existent dans le frame donné.
+`m_fHasDebugInfo`\
+Valeur différente de zéro (`TRUE`) si les informations de débogage existent dans le frame donné.
 
-m_fHasDebugInfo valeur différente de zéro (`TRUE`) si le frame de pile est associé au code qui n’est plus valide.
+`m_fHasDebugInfo`\
+Valeur différente de zéro (`TRUE`) si le frame de pile est associé au code qui n’est plus valide.
 
-m_fHasDebugInfo valeur différente de zéro (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).
+`m_fHasDebugInfo`\
+Valeur différente de zéro (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).
 
 ## <a name="remarks"></a>Notes
 Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) méthode doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::RemovePort
 ms.assetid: f5c1fbf2-9084-46f2-a682-7db963928df2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db48cc82e16f071ec55493e98570c6969324bfda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ba0a18ba3d137e0e003b84c01cfb98e4504aff88
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340105"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 Supprime un port.
@@ -36,10 +39,9 @@ int RemovePort( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pPort`
-
- [in] Un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port à supprimer.
+## <a name="parameters"></a>Paramètres
+`pPort`\
+[in] Un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objet qui représente le port à supprimer.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

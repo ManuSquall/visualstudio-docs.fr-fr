@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2234c0c0b571e763d3b143b5606fe61c43f25cde
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920933"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352532"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Spécifie la façon dont le moteur de débogage (dé) doit gérer une exception donnée.
@@ -36,10 +39,9 @@ int SetException( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pException`
-
- [in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure qui décrit l’exception et comment la déboguer.
+## <a name="parameters"></a>Paramètres
+`pException`\
+[in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure qui décrit l’exception et comment la déboguer.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

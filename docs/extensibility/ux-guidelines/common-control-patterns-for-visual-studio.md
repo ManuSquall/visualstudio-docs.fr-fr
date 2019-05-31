@@ -3,17 +3,17 @@ title: Les modèles de contrôle courants pour Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312296"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ## <a name="BKMK_CommonControls"></a> Contrôles communs
@@ -274,7 +274,7 @@ Dans certains cas, boutons peuvent être utilisées dans l’interface utilisate
 
 Quand utiliser le bouton court de points de suspension uniquement :
 
-- S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, comme lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation (**& Parcourir** et **& rcourir le** dans la même boîte de dialogue).
+- S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, comme lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation ( **& Parcourir** et **& rcourir le** dans la même boîte de dialogue).
 
 - Dans une boîte de dialogue étroite, ou lorsqu’il n’existe aucun emplacement raisonnable pour le bouton long.
 
@@ -317,7 +317,7 @@ Dimensionnement des boutons graphiques est identique à la version courte de la 
 Des liens hypertexte sont bien adaptés aux actions de navigation telles que l’ouverture d’une rubrique d’aide, une boîte de dialogue modale ou un Assistant. Si un lien hypertexte est utilisé pour une commande, il doit toujours afficher une modification visible et sensible à l’interface utilisateur. En règle générale, les actions de validation à une action (par exemple, enregistrer, Annuler et supprimer) sont communiquées mieux à l’aide d’un bouton.
 
 #### <a name="writing-style"></a>Style d’écriture
-Suivez le [conseils Windows Desktop pour le texte de l’interface utilisateur](/windows/desktop/uxguide/text-ui). N’utilisez pas « En savoir plus à propos, » « Dire me plus sur » ou « Get help avec ce » formulation. Au lieu de cela, une expression texte de lien d’aide en termes de la question principale ayant obtenu une réponse par le contenu d’aide. Par exemple, «**comment ajouter un serveur à l’Explorateur de serveurs ?**»
+Suivez le [conseils Windows Desktop pour le texte de l’interface utilisateur](/windows/desktop/uxguide/text-ui). N’utilisez pas « En savoir plus à propos, » « Dire me plus sur » ou « Get help avec ce » formulation. Au lieu de cela, une expression texte de lien d’aide en termes de la question principale ayant obtenu une réponse par le contenu d’aide. Par exemple, «**comment ajouter un serveur à l’Explorateur de serveurs ?** »
 
 #### <a name="visual-style"></a>Style visuel
 

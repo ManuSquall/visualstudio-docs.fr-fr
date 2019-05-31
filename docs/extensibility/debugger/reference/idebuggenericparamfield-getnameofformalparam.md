@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugGenericParamField::GetNameOfFormalParam
 - GetNameOfFormalParam
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e927c6fb85a4e654224f95564f6575141783137
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 180af2ef9f8c9e086091b80d3c0e80b0476d950c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330410"
 ---
 # <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
 Récupère le nom de ce paramètre générique.
@@ -35,10 +38,9 @@ int GetNameOfFormalParam (
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pbstrName`
-
- [out] Nom de ce paramètre générique.
+## <a name="parameters"></a>Paramètres
+`pbstrName`\
+[out] Nom de ce paramètre générique.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

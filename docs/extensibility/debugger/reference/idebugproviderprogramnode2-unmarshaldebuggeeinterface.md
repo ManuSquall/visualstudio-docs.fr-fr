@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 30163fe2dad42f42dd635eddcc2afdf3e1acaf0a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457349"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350041"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Obtient une interface spécifiée au-delà des limites de processus.
@@ -42,13 +42,11 @@ int UnmarshalDebuggeeInterface(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `riid`\
+`riid`\
+[in] GUID de l’interface à obtenir.
 
- [in] GUID de l’interface à obtenir.
-
- `ppvObject`\
-
- [out] Retourne l’objet qui implémente l’interface souhaitée. [C++] Cela peut être casté directement au type d’interface souhaitée. [C#] utiliser le <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> méthode pour obtenir l’interface souhaitée.
+`ppvObject`\
+[out] Retourne l’objet qui implémente l’interface souhaitée. [C++] Cela peut être casté directement au type d’interface souhaitée. [C#] utiliser le <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> méthode pour obtenir l’interface souhaitée.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

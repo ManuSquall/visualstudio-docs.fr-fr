@@ -3,17 +3,17 @@ title: Création d’un Kit de développement logiciel | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ad14712653aeca146ffe00cc5c79fd044ce2a4b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345387"
 ---
 # <a name="create-a-software-development-kit"></a>Création d’un kit de développement logiciel
 Un kit de développement logiciel (SDK) est une collection d’API que vous pouvez référencer en tant qu’un seul élément dans Visual Studio. Le **Gestionnaire de références** boîte de dialogue répertorie tous les kits de développement logiciel qui sont pertinents pour le projet. Lorsque vous ajoutez un kit SDK à un projet, les API sont disponibles dans Visual Studio.
@@ -34,7 +34,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
  Les kits de développement Platform SDK sont requis pour développer des applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK est nécessaire pour développer des applications pour [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Installation
- Plateforme de tous les kits de développement logiciel sera installé à*HKLM\Software\Microsoft\Microsoft SDK\\[TPI] \v [TPV]\\ @InstallationFolder = [racine SDK]*. En conséquence, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK est installé dans *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Plateforme de tous les kits de développement logiciel sera installé à *HKLM\Software\Microsoft\Microsoft SDK\\[TPI] \v [TPV]\\ @InstallationFolder = [racine SDK]* . En conséquence, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK est installé dans *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Mise en page
  Kits de développement logiciel Platform aura la disposition suivante :
@@ -74,7 +74,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 
 1. Spécifier dans une clé de Registre :
 
-     **Kits de développement logiciel HKLM\Software\Microsoft\Microsoft\<plateforme cible > \v < numéro de version de plateforme\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **Kits de développement logiciel HKLM\Software\Microsoft\Microsoft\<plateforme cible > \v < numéro de version de plateforme\>\ExtensionSDKs\<SDKName >\<SDKVersion >** \
 
      et ajoutez une sous-clé (par défaut) qui a la valeur `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 
 2. *Références* dossier : les fichiers binaires qui contiennent les API. Il peut s’agir de fichiers de métadonnées Windows (WinMD) ou des assemblys.
 
-3. *Redist* dossier : les fichiers qui sont nécessaires pour l’exécution et de débogage et doivent obtenir un package d’application de l’utilisateur. Tous les fichiers binaires doivent être placés sous *\redist\\< config\>\\< arch\>*, et les noms binaire doivent avoir le format suivant pour garantir l’unicité : *]* \<société >. \<produit >. \<usage >. \<extension ><em>. Par exemple, *Microsoft.Cpp.Build.dll</em>. Tous les fichiers portant des noms qui peuvent entrer en conflit avec les noms de fichiers à partir d’autres kits de développement logiciel (par exemple, les fichiers javascript, css, pri, xaml, png et jpg) doivent être placés sous <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* à l’exception des fichiers qui sont associés à XAML contrôle. Ces fichiers doivent être placés sous * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
+3. *Redist* dossier : les fichiers qui sont nécessaires pour l’exécution et de débogage et doivent obtenir un package d’application de l’utilisateur. Tous les fichiers binaires doivent être placés sous *\redist\\< config\>\\< arch\>* , et les noms binaire doivent avoir le format suivant pour garantir l’unicité : *]* \<société >. \<produit >. \<usage >. \<extension ><em>. Par exemple, *Microsoft.Cpp.Build.dll</em>. Tous les fichiers portant des noms qui peuvent entrer en conflit avec les noms de fichiers à partir d’autres kits de développement logiciel (par exemple, les fichiers javascript, css, pri, xaml, png et jpg) doivent être placés sous <em>\redist\\< config\>\\< arch\> \\< sdkname\> \* à l’exception des fichiers qui sont associés à XAML contrôle. Ces fichiers doivent être placés sous * \redist\\< config\>\\< arch\>\\< componentname\>\\</em>.
 
 4. *DesignTime* dossier : les fichiers qui sont nécessaires au seul pré-exécution et de débogage de temps et ne doit pas être un package d’application de l’utilisateur. Il peut s’agir de documents XML, bibliothèques, en-têtes, les fichiers binaires de boîte à outils au moment du design, les artefacts de MSBuild et ainsi de suite. N’importe quel SDK est conçue pour la consommation par un projet natif doit avoir un *SDKName.props* fichier. L’exemple suivant montre un exemple de ce type de fichier.
 
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Le nom de produit SDK global. Par exemple, le [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK est nommé « Microsoft.WinJS.1.0 » et « Microsoft.WinJS.2.0 », qui appartiennent à la même famille de la famille de produits de kit de développement logiciel, « Microsoft.WinJS ». Cet attribut permet à Visual Studio et MSBuild établir cette connexion. Si cet attribut n’existe pas, le nom du SDK est utilisé comme nom de famille de produit.
 
-3. FrameworkIdentity: Spécifie une dépendance sur un ou plusieurs bibliothèques de composants de Windows que la valeur de cet attribut est placée dans le manifeste de l’application consommatrice. Cet attribut s’applique uniquement aux bibliothèques de composants Windows.
+3. FrameworkIdentity: Spécifie une dépendance sur un ou plusieurs bibliothèques de composants de Windows. La valeur de cet attribut est placée dans le manifeste de l’application consommatrice. Cet attribut s’applique uniquement aux bibliothèques de composants Windows.
 
 4. TargetFramework: Spécifie les kits SDK qui sont disponibles dans le Gestionnaire de références et de la boîte à outils. Il s’agit d’une liste délimitée par des points-virgules des monikers du framework cible, par exemple « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 ». Si plusieurs versions du même framework cible sont spécifiées, le Gestionnaire de références utilise la version la plus basse spécifiée pour le filtrage à des fins. Par exemple, si « .NET Framework, version = v2.0 ; .NET Framework, version = v4.5.1 » est spécifié, Gestionnaire de références utilisera « .NET Framework, version = v2.0 ». Si un profil de framework cible spécifique est spécifié, uniquement ce profil sera utilisé par le Gestionnaire de références pour le filtrage à des fins. Par exemple, lorsque « Silverlight, version = v4.0, profil = WindowsPhone » est spécifié, les filtres de gestionnaire de références sur uniquement le profil Windows Phone ; un projet qui cible le Framework Silverlight 4.0 ne voit pas le Kit de développement dans le Gestionnaire de références.
 

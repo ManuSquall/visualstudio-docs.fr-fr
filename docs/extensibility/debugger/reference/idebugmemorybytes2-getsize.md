@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugMemoryBytes2::GetSize method
 - GetSize method
 ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c89e6c5c9ee2b60caef10c5f8378e699b4bc49d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918883"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324563"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 Récupère la taille, en octets, de la mémoire représentée par ce [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objet.
@@ -37,10 +40,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pqwSize`
-
- [out] Retourne la taille, en octets de l’espace de mémoire.
+## <a name="parameters"></a>Paramètres
+`pqwSize`\
+[out] Retourne la taille, en octets de l’espace de mémoire.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

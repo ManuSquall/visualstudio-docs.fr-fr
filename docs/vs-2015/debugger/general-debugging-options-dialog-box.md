@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704675"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261660"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
   Affiche le **Live Visual Tree** commandes dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.  
   
   **Activer les outils de Diagnostic pendant le débogage**  
-  La fenêtre **Outils de diagnostic** s’affiche pendant que vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  La fenêtre **Outils de diagnostic** s’affiche pendant que vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
   **Afficher le PerfTip du temps écoulé durant le débogage**  
   La fenêtre de code affiche le temps écoulé d’un appel de méthode donné lors du débogage.  

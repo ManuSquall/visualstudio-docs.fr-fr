@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859477"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319513"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.
@@ -37,7 +37,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nom|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|Nom par défaut des projets de ce type.|
 |DisplayName|REG_SZ|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|
@@ -55,7 +55,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064
 ```
 
-| Nom | Type | Description |
+| Name | Type | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID de ressource pour les modèles d’ajouter un élément. |
 | TemplatesDir | REG_SZ | Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant. |
@@ -82,7 +82,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064
 ```
 
-|Nom|Type|Description|
+|Name|Type|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **rechercher dans les fichiers** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
 |CommonOpenFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **ouvrir un fichier** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
@@ -117,7 +117,8 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
  \WizardFiles
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Ajout d’un projet et de modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Assistants](../../extensibility/internals/wizards.md)
-- [Localisation d’applications](../../ide/localizing-applications.md)
+- [Localisation d’applications](../../ide/globalizing-and-localizing-applications.md)
 - [CATID des objets qui sont généralement utilisés pour étendre des projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

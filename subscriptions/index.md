@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Bienvenue dans les abonnements Visual Studio
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579940"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976111"
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 
@@ -169,7 +169,7 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                 <div class="card">
                     <div class="cardText">
                         <h3>Services cloud</h3>
-                        <p>Avec votre abonnement Visual Studio, vous pouvez recevoir un                         crédit Azure mensuel et un accès gratuit aux services Azure,                         des tarifs réduits pour le développement et les tests, ainsi qu’un accès                            exclusif à la bibliothèque d’images réservée aux abonnés                                  avec des machines virtuelles préconfigurées. En fonction de votre                               abonnement, les services cloud peuvent inclure :</p>
+                        <p>Avec votre abonnement Visual Studio, vous pouvez recevoir un                         crédit Azure mensuel pour accéder aux services Azure,                         des tarifs réduits pour le développement et les tests, ainsi qu’un accès                            exclusif à la bibliothèque d’images réservée aux abonnés                                  avec des machines virtuelles préconfigurées. En fonction de votre                               abonnement, les services cloud peuvent inclure :</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

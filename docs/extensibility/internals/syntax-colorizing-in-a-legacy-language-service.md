@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331131"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Couleurs de syntaxe dans un service de langage hérité
 La coloration syntaxique est une fonctionnalité qui provoque des différents éléments d’un langage de programmation à afficher dans un fichier source dans différentes couleurs et styles. Pour prendre en charge cette fonctionnalité, vous devez fournir un analyseur ou l’analyseur qui peut identifier les types d’éléments lexicaux ou des jetons dans le fichier. De nombreux langages distinguent des mots clés, des délimiteurs (tels que des parenthèses ou d’accolades) et des commentaires en Coloriser les différentes manières.
@@ -34,7 +34,7 @@ La coloration syntaxique est une fonctionnalité qui provoque des différents é
  Les informations de couleur dans l’éditeur sont un index dans une liste d’éléments coloriables. Chaque élément coloriable spécifie une valeur de couleur et un ensemble d’attributs de police, tels que le gras ou barré. L’éditeur fournit un jeu d’éléments coloriables par défaut utilisable par votre service de langage. Il vous suffit de faire est de spécifier l’index de la couleur appropriée pour chaque type de jeton. Toutefois, vous pouvez fournir un ensemble d’éléments coloriables personnalisés et les index que vous fournissez pour les jetons et font référence à votre propre liste d’éléments coloriables au lieu de la liste par défaut. Vous devez également définir le `RequestStockColors` entrée de Registre sur 0 (ou ne spécifiez pas le `RequestStockColors` entrée du tout) pour prendre en charge les couleurs personnalisées. Vous pouvez définir cette entrée de Registre avec un paramètre nommé pour le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut défini par l’utilisateur. Pour plus d’informations sur l’inscription d’un service de langage et en définissant ses options, consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Éléments coloriables personnalisés
- Pour fournir vos propres éléments coloriables personnalisés, vous devez substituer la <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> et <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. La première méthode retourne le nombre d’éléments coloriables personnalisés qui prend en charge de votre service de langage et la seconde Obtient l’élément coloriable personnalisé par index. Vous créez la liste par défaut d’éléments coloriables personnalisés. Dans le constructeur de votre service de langage, il vous suffit de vous fournir chaque élément coloriable avec un nom. Visual Studio gère automatiquement le cas où l’utilisateur sélectionne un ensemble différent d’éléments coloriables. Ce nom est ce qui apparaît dans le **polices et couleurs** page de propriétés sur le **Options** boîte de dialogue (disponible à partir de Visual Studio **outils** menu) et ce nom détermine les couleur de qu'un utilisateur n’a substitué. Choix de l’utilisateur sont stockées dans un cache dans le Registre et accessibles par le nom de couleur. Le **polices et couleurs** page de propriétés répertorie tous les noms de couleur dans l’ordre alphabétique, donc vous pouvez regrouper vos couleurs personnalisées en le faisant précéder chaque nom de couleur avec votre nom de la langue ; par exemple, «**TestLanguage - commentaire**« et »**TestLanguage - mot clé**». Ou vous pouvez regrouper vos éléments coloriables par type, «**commentaire (TestLanguage)**« et »**mot clé (TestLanguage)**». Le regroupement par nom de la langue est par défaut.
+ Pour fournir vos propres éléments coloriables personnalisés, vous devez substituer la <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> et <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. La première méthode retourne le nombre d’éléments coloriables personnalisés qui prend en charge de votre service de langage et la seconde Obtient l’élément coloriable personnalisé par index. Vous créez la liste par défaut d’éléments coloriables personnalisés. Dans le constructeur de votre service de langage, il vous suffit de vous fournir chaque élément coloriable avec un nom. Visual Studio gère automatiquement le cas où l’utilisateur sélectionne un ensemble différent d’éléments coloriables. Ce nom est ce qui apparaît dans le **polices et couleurs** page de propriétés sur le **Options** boîte de dialogue (disponible à partir de Visual Studio **outils** menu) et ce nom détermine les couleur de qu'un utilisateur n’a substitué. Choix de l’utilisateur sont stockées dans un cache dans le Registre et accessibles par le nom de couleur. Le **polices et couleurs** page de propriétés répertorie tous les noms de couleur dans l’ordre alphabétique, donc vous pouvez regrouper vos couleurs personnalisées en le faisant précéder chaque nom de couleur avec votre nom de la langue ; par exemple, «**TestLanguage - commentaire**« et »**TestLanguage - mot clé**». Ou vous pouvez regrouper vos éléments coloriables par type, «**commentaire (TestLanguage)** « et »**mot clé (TestLanguage)** ». Le regroupement par nom de la langue est par défaut.
 
 > [!CAUTION]
 > Il est fortement recommandé que vous incluez le nom du langage dans le nom de l’élément coloriable pour éviter les conflits avec des noms d’élément coloriable existants.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_FIELD structure
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d958c535cc93e140f61e6681130f16c8d49d8fc0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: dd8e536c1916f22fba81ff77379c218b1f2516ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458072"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334643"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 
@@ -43,7 +43,6 @@ public struct METADATA_ADDRESS_FIELD {
 ## <a name="members"></a>Membres
 
 `tokField`\
-
 L’ID du jeton de champ.
 
 [C++] `_mdToken` est un `typedef` pour 32 bits `int`.

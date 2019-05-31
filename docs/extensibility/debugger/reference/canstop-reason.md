@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711616"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327248"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Utilisé pour déterminer si un programme peut arrêter l’exécution après avoir atteint un point particulier dans l’exécution.
@@ -39,15 +42,17 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="members"></a>Membres
-CANSTOP_ENTRYPOINT Spécifie le point d’entrée du programme donné.
+## <a name="fields"></a>Champs
+`CANSTOP_ENTRYPOINT`\
+Spécifie le point d’entrée du programme donné.
 
-CANSTOP_STEPIN Spécifie le pas à pas détaillé dans une fonction.
+`CANSTOP_STEPIN`\
+Spécifie le pas à pas détaillé dans une fonction.
 
 ## <a name="remarks"></a>Notes
 Passé en tant qu’argument à la [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) méthode pour vérifier avec le Gestionnaire de Session de débogage (SDM) s’il s’agit OK arrêter après avoir atteint le point d’entrée du programme ou après l’exécution pas à pas dans une fonction ou méthode.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

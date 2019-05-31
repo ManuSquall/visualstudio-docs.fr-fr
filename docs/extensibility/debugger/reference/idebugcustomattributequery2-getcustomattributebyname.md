@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7d874a00c3c82108c224f18922f2b4853279beaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875944"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322201"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Obtient les octets d’attributs personnalisés étant données le nom de l’attribut personnalisé.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszCustomAttributeName`
+## <a name="parameters"></a>Paramètres
+`pszCustomAttributeName`\
+[in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.
 
- [in] Chaîne contenant le nom de l’attribut personnalisé à rechercher.
+`ppBlob`\
+[in, out] Tableau qui contient les octets de l’attribut personnalisé.
 
- `ppBlob`
-
- [in, out] Tableau qui contient les octets de l’attribut personnalisé.
-
- `pdwLen`
-
- [in, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` de tableau et retourne le nombre d’octets réellement écrits dans le tableau.
+`pdwLen`\
+[in, out] Spécifie le nombre maximal d’octets à renvoyer dans le `ppBlob` de tableau et retourne le nombre d’octets réellement écrits dans le tableau.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ou S_FALSE si l’attribut personnalisé n’existe pas. Sinon, retourne un code d'erreur.

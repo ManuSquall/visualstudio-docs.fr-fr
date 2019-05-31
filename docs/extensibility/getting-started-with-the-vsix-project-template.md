@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6176fda41b16a092b52e83e0ce894e1d1898e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bb85e507e62bf7dd13288cbd08d7bf9d06973e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911880"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342461"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Bien démarrer avec le modèle de projet VSIX
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un p
 
     2. Dans le menu **Projet**, cliquez sur **Exporter le modèle**. Effectuez les étapes de l’Assistant.
 
-         Un *.zip* fichier est créé dans *%USERPROFILE%\My Documents\Visual Studio {version} \My Exported Templates\\*.
+         Un *.zip* fichier est créé dans *%USERPROFILE%\My Documents\Visual Studio {version} \My Exported Templates\\* .
 
 2. Créez un projet VSIX vide.
 

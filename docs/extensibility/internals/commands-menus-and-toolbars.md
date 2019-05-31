@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands [Visual Studio]
 - toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0634105b9b071ac4155adb3248abd2b4be19b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aed5a91a819658fb141abb4301b9b9499ed602c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861982"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311158"
 ---
 # <a name="commands-menus-and-toolbars"></a>Commandes, menus et barres d’outils
 Menus et barres d’outils sont que les manière dont les utilisateurs accéder aux commandes dans votre VSPackage. Les commandes sont des fonctions qui accomplissent des tâches, comme l’impression d’un document, l’actualisation d’une vue ou la création d’un fichier. Les menus et barres d’outils s’avèrent pratiques pour présenter graphiquement vos commandes aux utilisateurs. En règle générale, les commandes associées sont regroupées dans le même menu ou la même barre d’outils.
@@ -28,7 +28,7 @@ Menus et barres d’outils sont que les manière dont les utilisateurs accéder 
 
 - Quand vous créez une commande, vous devez également lui créer un gestionnaire d’événements. Le gestionnaire d’événements détermine quand la commande est visible ou activée, vous permet de modifier son texte et garantit que la commande répond correctement (« itinéraires ») lors de son activation. Dans la plupart des cas, l’IDE gère les commandes à l’aide de l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>. Les commandes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] défilent de façon hiérarchique, en commençant par le contexte de commande le plus central, selon la sélection locale, puis en continuant avec le contexte le plus périphérique, selon la sélection globale. Les commandes ajoutées au menu principal sont immédiatement disponibles pour les scripts. Pour plus d’informations, consultez [MenuCommands et. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) et [les objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md).
 
-  Pour définir de nouveaux menus et barres d’outils, vous devez les décrire dans une table de commandes de Visual Studio (*.vsct*) fichier. Le modèle de package Visual Studio crée ce fichier pour vous, ainsi que les éléments nécessaires pour prendre en charge les commandes, les barres d’outils et les éditeurs que vous avez sélectionné dans le modèle. Vous pouvez également écrire votre propre *.vsct* de fichiers, en utilisant le schéma XML décrit ici : [Référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md).
+  Pour définir de nouveaux menus et barres d’outils, vous devez les décrire dans une table de commandes de Visual Studio ( *.vsct*) fichier. Le modèle de package Visual Studio crée ce fichier pour vous, ainsi que les éléments nécessaires pour prendre en charge les commandes, les barres d’outils et les éditeurs que vous avez sélectionné dans le modèle. Vous pouvez également écrire votre propre *.vsct* de fichiers, en utilisant le schéma XML décrit ici : [Référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md).
 
   Pour plus d’informations sur l’utilisation de *.vsct* de fichiers, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 

@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricDword
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 17ba8b4410b42b6369831c1be075042121b84170
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457364"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322167"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Récupère une valeur qui correspond à la mesure spécifiée de l’évaluateur d’expression.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Paramètres
- `guidLang`\
+`guidLang`\
+[in] Identificateur unique du langage de programmation.
 
- [in] Identificateur unique du langage de programmation.
+`guidVendor`\
+[in] Identificateur unique du fournisseur.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nom de la mesure.
 
- [in] Identificateur unique du fournisseur.
-
- `pszMetric`\
-
- [in] Nom de la mesure.
-
- `pdwValue`\
-
- [out] Retourne la valeur qui correspond à la chaîne de métrique.
+`pdwValue`\
+[out] Retourne la valeur qui correspond à la chaîne de métrique.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

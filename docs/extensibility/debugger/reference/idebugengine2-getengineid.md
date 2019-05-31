@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 842d78a2ea2ff665102b9cef922f463baf53cb78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29b6f219447e3c58bce9f5b4696697163ab4f6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318469"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 Obtient le GUID du moteur de débogage (dé).
@@ -36,10 +39,9 @@ int GetEngineID(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
-`pguidEngine`
-
- [out] Retourne le GUID de l’Allemagne.
+## <a name="parameters"></a>Paramètres
+`pguidEngine`\
+[out] Retourne le GUID de l’Allemagne.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: dcaef1e9675ae395826865604833fdb6683df944
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224014"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310181"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Cette méthode mappe une position de document dans un tableau d’adresses de débogage.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Paramètres
- `pDocPos`\
+`pDocPos`\
+[in] La position du document.
 
- [in] La position du document.
+`fStatmentOnly`\
+[in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
 
- [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
-
- `ppEnumBegAddresses`\
-
- [out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
-
- `ppEnumEndAddresses`\
-
- [out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
+`ppEnumEndAddresses`\
+[out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

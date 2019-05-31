@@ -10,17 +10,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c6011d1a04b60d1bd0cc538e9560d8977f9799
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907356"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344673"
 ---
 # <a name="localize-menu-commands"></a>Localiser des commandes de menu
 Vous pouvez fournir un texte localisé pour les commandes de menu et barre d’outils en créant localisée *.vsct* fichiers et localisées *.resx* fichiers pour votre VSPackage et ensuite la mise à jour les fichiers projet pour incorporer le modifications.
@@ -74,7 +74,7 @@ Vous pouvez fournir un texte localisé pour les commandes de menu et barre d’o
    ```
 
 ## <a name="localize-other-text-resources"></a>Localiser les autres ressources de texte
- Ressources de texte autres que des noms de commande sont définies dans la ressource (*.resx*) les fichiers.
+ Ressources de texte autres que des noms de commande sont définies dans la ressource ( *.resx*) les fichiers.
 
 1. Renommer *VSPackage.resx* à *VSPackage.en-us.resx*.
 

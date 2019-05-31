@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::SetValueAsStringWithError
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 61a39d3b68deec2dd51c49113355a8ed6c69325c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458816"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348813"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.
@@ -47,20 +47,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Paramètres
 `pszValue`\
-
- [in] Valeur à définir.
+[in] Valeur à définir.
 
 `dwRadix`\
-
- [in] La base de la valeur définie.
+[in] La base de la valeur définie.
 
 `dwTimeout`\
-
- [in] La longueur du délai d’attente pour la valeur à définir (`INFINITE` attente infinie).
+[in] La longueur du délai d’attente pour la valeur à définir (`INFINITE` attente infinie).
 
 `errorString`\
-
- [out] Si l’erreur lors de la définition de la valeur, cela est la raison de l’échec.
+[out] Si l’erreur lors de la définition de la valeur, cela est la raison de l’échec.
 
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

@@ -43,6 +43,8 @@
                   href: fxcop-analyzer-options.md
             - name: Effectuer une migration à partir d’une analyse statique du code
               href: fxcop-analyzers.yml
+            - name: Règles transférées
+              href: fxcop-rule-port-status.md
         - name: FAQ sur les Analyseurs
           href: analyzers-faq.md
         - name: Installer des analyseurs Roslyn
@@ -383,6 +385,8 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: 'CA1506 : Éviter les couplages de classe excessifs'
               href: ca1506-avoid-excessive-class-coupling.md
+            - name: "CA1507\_: Utiliser nameof à la place de string"
+              href: ca1507.md
         - name: Avertissements liés à la mobilité
           items:
             - name: Avertissements liés à la mobilité

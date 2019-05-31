@@ -3,17 +3,17 @@ title: Vue d’ensemble du protocole langage serveur | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309627"
 ---
 # <a name="language-server-protocol"></a>Protocole de serveur de langage
 
@@ -55,7 +55,7 @@ Ci-dessous est un exemple de la façon dont un outil et un serveur de langage co
 
 * **L’utilisateur exécute « Atteindre la définition » sur un symbole dans l’éditeur**: L’outil envoie une demande de « textDocument/définition » avec deux paramètres : (1) l’URI de document et (2) la position du texte à partir d’où la demande de définition d’atteindre a été lancée sur le serveur. Le serveur répond avec l’URI de document et de la position de la définition du symbole à l’intérieur du document.
 
-* **L’utilisateur ferme le document (fichier)**: Une notification de « textDocument/didClose » est envoyée à partir de l’outil, qui informe le serveur de langage qui le document est maintenant n’est plus en mémoire et que le contenu actuel est maintenant à jour sur le système de fichiers.
+* **L’utilisateur ferme le document (fichier)** : Une notification de « textDocument/didClose » est envoyée à partir de l’outil, qui informe le serveur de langage qui le document est maintenant n’est plus en mémoire et que le contenu actuel est maintenant à jour sur le système de fichiers.
 
 Cet exemple illustre la façon dont le protocole communique avec le serveur de langage au niveau des fonctionnalités de l’éditeur « Atteindre la définition », « Rechercher toutes les références ». Les types de données utilisés par le protocole sont éditeur ou IDE, types de données tels que le document actuellement ouvert et la position du curseur. Les types de données ne sont pas au niveau d’un modèle de domaine langage programmation, ce qui vous donne généralement des arborescences de syntaxe abstraite et des symboles de compilation (par exemple, types résolues, espaces de noms,...). Cela simplifie considérablement le protocole.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350553"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Donne la raison pour laquelle qu'un point d’arrêt a été dissocié.
@@ -43,19 +46,23 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Membres
-BPUR_UNKNOWN la raison est inconnu.
+## <a name="fields"></a>Champs
+`BPUR_UNKNOWN`\
+La raison est inconnue.
 
-BPUR_CODE_UNLOADED le code qui contient le point d’arrêt a été déchargé.
+`BPUR_CODE_UNLOADED`\
+Le code qui contient le point d’arrêt a été déchargé.
 
-BPUR_BREAKPOINT_REBIND le point d’arrêt a été reconnectés vers un autre emplacement. Cela peut se produire après modification et continuer les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.
+`BPUR_BREAKPOINT_REBIND`\
+Le point d’arrêt a été reliée à un autre emplacement. Cela peut se produire après modification et continuer les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.
 
-BPUR_ BREAKPOINT_ERROR le point d’arrêt est déterminé comme étant erreur après que qu’il est lié. Cela se produit pour les points d’arrêt managés dont les conditions ne sont plus valides.
+`BPUR_ BREAKPOINT_ERROR`\
+Le point d’arrêt est déterminé comme étant erreur après que qu’il est lié. Cela se produit pour les points d’arrêt managés dont les conditions ne sont plus valides.
 
 ## <a name="remarks"></a>Notes
 Retourné par la [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

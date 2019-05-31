@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e7b3fd72285f6a6c9c4abeca4e6b262d981be8f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842715"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331550"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Définit la valeur indiquée à partir d’une série d’octets consécutifs.
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `dwStart`
+## <a name="parameters"></a>Paramètres
+`dwStart`\
+[in] Offset, en octets, à partir du début de l’objet désigné.
 
- [in] Offset, en octets, à partir du début de l’objet désigné.
+`dwCount`\
+[in] Le nombre d’octets à définir.
 
- `dwCount`
+`pBytes`\
+[in] Un tableau d’octets représentant la nouvelle valeur. Cette valeur est stockée dans l’objet, en commençant à l’offset donné.
 
- [in] Le nombre d’octets à définir.
-
- `pBytes`
-
- [in] Un tableau d’octets représentant la nouvelle valeur. Cette valeur est stockée dans l’objet, en commençant à l’offset donné.
-
- `pdwBytes`
-
- [out] Retourne que le nombre d’octets réellement définie.
+`pdwBytes`\
+[out] Retourne que le nombre d’octets réellement définie.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.

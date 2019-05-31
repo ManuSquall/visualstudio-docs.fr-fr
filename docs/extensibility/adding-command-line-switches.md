@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891835"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352333"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lorsque *devenv.exe* est exécutée. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.
@@ -34,7 +34,7 @@ Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à 
 | Paramètre | Description|
 | Arguments | Le nombre d’arguments pour le commutateur. Peut être « * », ou une liste d’arguments. |
 | DemandLoad | Charger le VSPackage automatiquement si la valeur est 1, sinon la valeur 0. |
-| HelpString | La chaîne ou une ressource ID d’aide de la chaîne à afficher avec **devenv / ?**. |
+| HelpString | La chaîne ou une ressource ID d’aide de la chaîne à afficher avec **devenv / ?** . |
 | Nom | Le commutateur. |
 | PackageGuid | Le GUID du package. |
 

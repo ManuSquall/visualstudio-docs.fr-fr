@@ -1,48 +1,49 @@
 ---
 title: IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetIDebugIDECallback
 - SetIDebugIDECallback
 ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
-caps.latest.revision: 9
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 1ac5027421ff73e00ee34d9928be6525187a6ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3799d0ba88f5c5f021d3717f29f5a08a836607dd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919335"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338613"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Permet à un moteur de débogage passer un rappel à l’évaluateur d’expression lors de l’initialisation.
 
-Permet à un moteur de débogage passer un rappel à l’évaluateur d’expression lors de l’initialisation.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```cpp#  
-HRESULT SetIDebugIDECallback (  
-   IDebugIDECallback * pCallback  
-);  
-```  
-  
-```csharp  
-int SetIDebugIDECallback (  
-   IDebugIDECallback pCallback  
-);  
-```  
-  
-#### <a name="parameters"></a>Paramètres  
- `pCallback`  
- [in] Interface pour le rappel.  
-  
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
-  
-## <a name="see-also"></a>Voir aussi  
- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+## <a name="syntax"></a>Syntaxe
+
+```cpp
+HRESULT SetIDebugIDECallback (
+   IDebugIDECallback * pCallback
+);
+```
+
+```csharp
+int SetIDebugIDECallback (
+   IDebugIDECallback pCallback
+);
+```
+
+## <a name="parameters"></a>Paramètres
+`pCallback`\
+[in] Interface pour le rappel.
+
+## <a name="return-value"></a>Valeur de retour
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+
+## <a name="see-also"></a>Voir aussi
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

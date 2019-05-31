@@ -7,20 +7,20 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353389"
 ---
 # <a name="dynamically-add-menu-items"></a>Ajouter dynamiquement des éléments de menu
-Vous pouvez ajouter des éléments de menu au moment de l’exécution en spécifiant le `DynamicItemStart` commande indicateur sur une définition de bouton d’espace réservé dans la table de commande Visual Studio (*.vsct*) fichier, puis définir (dans le code), le nombre d’éléments de menu à afficher et gestion de l’exécution des commandes. Lorsque le VSPackage est chargé, l’espace réservé est remplacé par les éléments de menu dynamique.
+Vous pouvez ajouter des éléments de menu au moment de l’exécution en spécifiant le `DynamicItemStart` commande indicateur sur une définition de bouton d’espace réservé dans la table de commande Visual Studio ( *.vsct*) fichier, puis définir (dans le code), le nombre d’éléments de menu à afficher et gestion de l’exécution des commandes. Lorsque le VSPackage est chargé, l’espace réservé est remplacé par les éléments de menu dynamique.
 
  Visual Studio utilise les listes dynamiques dans le **utilisés le plus récemment** liste (MRU), qui affiche les noms de documents qui ont été récemment ouverts, et le **Windows** liste qui affiche les noms de windows qui sont actuellement ouverts.   Le `DynamicItemStart` indicateur sur une définition de commande spécifie que la commande est un espace réservé jusqu'à ce que le VSPackage est ouvert. Lorsque le VSPackage est ouvert, l’espace réservé est remplacé par 0 ou plus de commandes qui sont créés au moment de l’exécution et ajoutés à la liste dynamique. Vous n’êtes peut-être pas en mesure de voir la position dans le menu dans lequel la liste dynamique s’affiche jusqu'à ce que le VSPackage est ouvert.  Pour remplir la liste dynamique, Visual Studio vous demande le VSPackage pour rechercher une commande avec un ID dont les premiers caractères sont les mêmes que l’ID de l’espace réservé. Lorsque Visual Studio détecte une commande correspondante, il ajoute le nom de la commande à la liste dynamique. Puis il incrémente l’ID et recherche d’une autre commande correspondante à ajouter à la liste dynamique jusqu'à ce qu’il existe des commandes n’y a plus dynamiques.
 

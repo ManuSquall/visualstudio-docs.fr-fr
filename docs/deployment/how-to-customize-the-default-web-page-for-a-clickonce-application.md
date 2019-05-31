@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser la Page Web par défaut pour une Application ClickOnce | Microsoft Docs'
+title: Personnaliser la page de web par défaut pour une application ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406981"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263332"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procédure : Personnaliser la page web par défaut d’une application ClickOnce
 Lorsque vous publiez une application ClickOnce sur le Web, une page Web est automatiquement générée et publiée avec l’application. La page par défaut contient le nom de l’application et les liens pour installer l’application, installez les composants requis ou accéder à l’aide sur MSDN.
@@ -45,7 +45,7 @@ Lorsque vous publiez une application ClickOnce sur le Web, une page Web est auto
 
 3. Personnaliser la page comme vous le souhaitez et l’enregistrer.
 
-4. Optionnel. Pour empêcher Visual Studio de remplacer votre page Web de publication personnalisée, décochez la case **générer automatiquement la page Web de déploiement après chaque publication** dans le **Options de publication** boîte de dialogue.
+4. Facultatif. Pour empêcher Visual Studio de remplacer votre page Web de publication personnalisée, décochez la case **générer automatiquement la page Web de déploiement après chaque publication** dans le **Options de publication** boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

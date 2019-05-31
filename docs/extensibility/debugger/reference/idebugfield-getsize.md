@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetSize method
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa10836b91306a99629e80b6869880f018878c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db4ef8a41ec6759194cc35203b6458c7688f4322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919349"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333201"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Cette méthode obtient la taille d’un champ, en octets.
@@ -36,10 +39,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pdwSize`
-
- [out] Retourne la taille.
+## <a name="parameters"></a>Paramètres
+`pdwSize`\
+[out] Retourne la taille.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
