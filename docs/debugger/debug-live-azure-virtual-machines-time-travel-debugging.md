@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854173"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432220"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Enregistrer et relire les applications ASP.NET en production sur des machines virtuelles à l’aide du débogueur de capture instantanée
 
@@ -44,14 +44,14 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 * Débogage de trajet de temps est disponible pour les applications web de machine virtuelle Azure suivantes :
   * Applications ASP.NET (AMD64) en cours d’exécution sur .NET Framework 4.8 ou version ultérieure.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Ouvrez votre projet et démarrer le débogueur de capture instantanée avec le temps voyage débogage activé
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Démarrer le débogueur de capture instantanée avec le temps voyage débogage activé
 
 1. Ouvrez le projet pour lequel vous souhaitez collecter un temps d’enregistrement de voyage.
 
     > [!IMPORTANT]
     > Pour démarrer TTD, vous devez ouvrir le *même version de code source* qui est publié sur votre service de machine virtuelle Azure.
 
-1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…**. Sélectionnez la machine virtuelle Azure que votre application web est déployée sur et un compte de stockage Azure. Sélectionnez le **activer le démarrage du débogage voyage** option d’aperçu, puis cliquez sur **attacher**.
+1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…** . Sélectionnez la machine virtuelle Azure que votre application web est déployée sur et un compte de stockage Azure. Sélectionnez le **activer le démarrage du débogage voyage** option d’aperçu, puis cliquez sur **attacher**.
 
       ![Sélectionner une ressource Azure](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
