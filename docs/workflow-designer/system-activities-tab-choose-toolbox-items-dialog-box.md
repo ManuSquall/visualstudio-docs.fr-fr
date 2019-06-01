@@ -1,5 +1,5 @@
 ---
-title: Concepteur de flux de travail - onglet System.Activities choisir des éléments de boîte à outils, boîte de dialogue
+title: 'Concepteur de flux de travail : System.Activities, choisir des éléments de boîte à outils'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b871f14f5f37afc80bb12139799405a669a3f1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e057a0ff61bd095dd011c85970fd23ab1da75838
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434057"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432060"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils
 

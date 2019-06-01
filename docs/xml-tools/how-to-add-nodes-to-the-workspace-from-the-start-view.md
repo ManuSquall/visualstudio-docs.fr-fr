@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a62b2225eec77b2b7e2a9f00af0ff5492640c19
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996855"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432181"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procédure : Ajouter des nœuds à l’espace de travail à partir de la vue de départ
 
