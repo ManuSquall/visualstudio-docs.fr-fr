@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679315"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177562"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
-Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
+Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »** .
 
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -96,11 +96,14 @@ R :  Cette modification n’aura aucune incidence sur les abonnés existants.
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>Q :  Dois-je faire quoi que ce soit suite de ces modifications ?
 R :  Non.  Vos abonnements restent en place et vous serez en mesure de les gérer comme vous le faites déjà.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>Q : Que se passe-t-il si je souhaite augmenter le nombre d’abonnements que ma société possède ?
-R :  Votre administrateur peut augmenter le nombre d’abonnements en consultant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour augmenter le nombre d’abonnements.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite augmenter le nombre d’abonnements pour mes clients ?
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>Q : Que se passe-t-il si je souhaite réduire le nombre d’abonnements que ma société possède ?
-R :  Votre administrateur peut réduire le nombre d’abonnements en consultant [https://manage.visualstudio.com](https://manage.visualstudio.com) et en suivant les instructions de cet article pour réduire le nombre d’abonnements.
+R : Les abonnements annuels achetés au cours d’un mois donné sont immédiatement facturés et valables pour une année entière. Pour cette raison, votre administrateur ne peut modifier que le nombre de licences pendant le mois de l’achat (elles seront alors valables et facturées pour 1 an). En dehors du mois de l’achat, il n’est plus possible d’accroître le nombre d’abonnements.
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite réduire le nombre d’abonnements pour mes clients ?
+
+R : Votre administrateur peut réduire le nombre d’abonnements en consultant https://manage.visualstudio.com et en suivant les instructions de cet article pour réduire le nombre d’abonnements. Le système ne génère *pas* de crédit au prorata. Pour obtenir un remboursement, vous devez contacter l’équipe de facturation Azure.
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q : Si j’annule mon abonnement, pourrai-je acheter un autre abonnement cloud annuel plus tard ?
 R :  Bien que vous ne serez pas en mesure d’acheter un autre abonnement cloud annuel, il existe de nombreuses options pour acheter des abonnements à Visual Studio.  Pour en savoir plus, consultez [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

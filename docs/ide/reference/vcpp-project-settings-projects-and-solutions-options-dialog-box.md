@@ -1,5 +1,5 @@
 ---
-title: Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
+title: Options des paramètres du projet C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789319"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263089"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 Cette boîte de dialogue vous permet de définir les paramètres du projet et de la build [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relatifs à la journalisation, aux performances et à la prise en charge des types de fichiers.
@@ -32,7 +32,7 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 
 1. Dans le menu **Outils** , cliquez sur **Options**.
 
-2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.
+2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++** .
 
 ## <a name="build-logging"></a>Journalisation de la génération
  **Oui**

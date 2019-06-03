@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735874abd1f62ecf121713a18ab05b58d20d908e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686095"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263735"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Mettre à jour une application existante vers MSBuild 15
 
@@ -71,15 +71,17 @@ Faites référence au package Microsoft.Build.Locator pour que votre application
 
 Générez votre projet et inspectez le répertoire de sortie pour vérifier qu’il ne contient pas d’assemblys *Microsoft.Build.\*.dll* (à part *Microsoft.Build.Locator.dll*, ajouté à l’étape suivante).
 
-### <a name="add-package-reference"></a>Ajouter une référence de package
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Ajouter une référence de package pour Microsoft.Build.Locator
 
-Ajoutez une référence de package NuGet à [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
+Ajoutez une référence de package NuGet pour [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Ne spécifiez pas `ExcludeAssets=runtime` pour le package Microsoft.Build.Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Inscrire l’instance avant d’appeler MSBuild
 

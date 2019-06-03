@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789065"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037581"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Mettre à la ligne, mettre en retrait et aligner des paramètres
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Renvoi à la ligne, mise en retrait et alignement des paramètres ou des arguments
 
 Cette refactorisation s’applique à :
 
@@ -25,16 +25,16 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** permet de mettre à la ligne, de mettre en retrait et d’aligner des paramètres.
+**Quoi :** vous permet de mettre à la ligne, de mettre en retrait et d’aligner des paramètres ou des arguments.
 
-**Quand :** vous disposez d’un appel ou d’une déclaration de méthode qui contient plusieurs paramètres.
+**Quand :** vous disposez d’un appel ou d’une déclaration de méthode qui contient plusieurs paramètres ou arguments.
 
-**Pourquoi :** il est plus facile de lire une longue liste de paramètres quand ils sont renvoyés à la ligne ou mis en retrait selon les préférences de l’utilisateur.
+**Pourquoi :** il est plus facile de lire une longue liste de paramètres ou d’arguments quand ils sont renvoyés à la ligne ou mis en retrait selon les préférences de l’utilisateur.
 
 ## <a name="how-to"></a>Procédure
 
 1. Placez votre curseur dans une liste de paramètres.
-2. Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
 
    ![Mettre à la ligne, mettre en retrait et aligner des paramètres](media/wrap-parameters.png)
 

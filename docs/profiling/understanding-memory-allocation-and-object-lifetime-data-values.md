@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets | Microsoft Docs
+title: Comprendre l’allocation de mémoire et les valeurs de données de durée de vie des objets
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b652ac052b26054c85955a144d4414d4fe43c005
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821880"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263818"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Comprendre le fonctionnement de l’allocation de mémoire et des valeurs de données de durée de vie des objets
 

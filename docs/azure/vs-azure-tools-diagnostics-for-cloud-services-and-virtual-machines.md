@@ -1,21 +1,19 @@
 ---
-title: Configurer les diagnostics pour les services cloud et les machines virtuelles Azure | Microsoft Docs
+title: Diagnostics pour Azure Cloud Services et les machines virtuelles Azure
 description: Découvrez comment configurer les diagnostics pour le débogage des services cloud et des machines virtuelles Azure dans Visual Studio.
-author: mikejo5000
+author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556295"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177325"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour Azure Cloud Services et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -91,7 +89,7 @@ Dans Visual Studio, vous pouvez collecter les données de diagnostic pour des r�
     ![Activer les diagnostics Azure et la configuration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Pour cet exemple, sélectionnez l’option **Plan personnalisé** pour pouvoir personnaliser les données collectées.
 7. Dans la zone **Quota de disque en Mo**, vous pouvez spécifier l’espace à allouer aux données de diagnostic dans votre compte de stockage. Vous pouvez changer ou accepter la valeur par défaut.
-8. Sous chaque onglet des données de diagnostic à collecter, activez la case à cocher **Activer le transfert de \<type de journal\>**. Par exemple, si vous voulez collecter les journaux d’application, sous l’onglet **Journaux d’application**, cochez la case **Activer le transfert des journaux des applications**. Spécifiez également les autres informations nécessaires pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
+8. Sous chaque onglet des données de diagnostic à collecter, activez la case à cocher **Activer le transfert de \<type de journal\>** . Par exemple, si vous voulez collecter les journaux d’application, sous l’onglet **Journaux d’application**, cochez la case **Activer le transfert des journaux des applications**. Spécifiez également les autres informations nécessaires pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
 9. Après avoir activé la collecte de toutes les données de diagnostic souhaitées, sélectionnez **OK**.
 10. Exécutez votre projet de service cloud Azure dans Visual Studio comme d’habitude. À mesure que vous utilisez votre application, les informations de journalisation que vous avez sélectionnées sont enregistrées dans le compte de stockage Azure que vous avez spécifié.
 
@@ -123,7 +121,7 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
     L’onglet par défaut, **Général**, propose les options de collecte de données de diagnostic suivantes : **Erreurs uniquement**, **Toutes les informations** et **Plan personnalisé**. L’option par défaut, **Erreurs uniquement**, nécessite le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations. Elle est donc la plus coûteuse en termes de stockage.
 7. Pour cet exemple, sélectionnez l’option **Plan personnalisé** afin de pouvoir personnaliser les données collectées.
 8. Le champ **Quota de disque en Mo** spécifie l’espace à allouer aux données de diagnostic dans le compte de stockage. Vous pouvez modifier la valeur par défaut si vous le souhaitez.
-9. Sous chaque onglet des données de diagnostic à collecter, cochez la case **Activer le transfert de \<type de journal\>**.
+9. Sous chaque onglet des données de diagnostic à collecter, cochez la case **Activer le transfert de \<type de journal\>** .
 
     Par exemple, si vous voulez collecter les journaux d’application, sélectionnez la case à cocher **Activer le transfert des journaux des applications** sous l’onglet **Journaux d’application**. Spécifiez également les autres informations nécessaires pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
 10. Après avoir activé la collecte de toutes les données de diagnostic souhaitées, sélectionnez **OK**.
@@ -135,18 +133,18 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
 Après avoir activé la collecte des données de diagnostic, vous pouvez sélectionner les sources de données et les informations à collecter. Les sections suivantes décrivent les onglets de la boîte de dialogue **Configuration des diagnostics** et la signification de chaque option de configuration.
 
 ### <a name="application-logs"></a>Journaux d’application
-Les journaux d’application contiennent des informations de diagnostic produites par une application web. Si vous voulez capturer les journaux d’application, sélectionnez la case à cocher **Activer le transfert des journaux d’application** . Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’application vers votre compte de stockage, vous devez changer la valeur de **Période de transfert (min)**. Vous pouvez également changer la quantité d’informations consignées dans le journal en définissant la valeur de **Niveau de journalisation**. Par exemple, sélectionnez **Détaillé** pour collecter plus d’informations ou **Critique** pour capturer seulement les erreurs critiques. Si vous avez un fournisseur de diagnostics spécifique qui génère des journaux d’application, vous pouvez capturer ceux-ci en ajoutant le GUID du fournisseur dans la zone **GUID du fournisseur**.
+Les journaux d’application contiennent des informations de diagnostic produites par une application web. Si vous voulez capturer les journaux d’application, sélectionnez la case à cocher **Activer le transfert des journaux d’application** . Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’application vers votre compte de stockage, vous devez changer la valeur de **Période de transfert (min)** . Vous pouvez également changer la quantité d’informations consignées dans le journal en définissant la valeur de **Niveau de journalisation**. Par exemple, sélectionnez **Détaillé** pour collecter plus d’informations ou **Critique** pour capturer seulement les erreurs critiques. Si vous avez un fournisseur de diagnostics spécifique qui génère des journaux d’application, vous pouvez capturer ceux-ci en ajoutant le GUID du fournisseur dans la zone **GUID du fournisseur**.
 
   ![Journaux d’application](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
 Pour plus d’informations sur les journaux d’application, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="windows-event-logs"></a>Journaux d’événements Windows
-Pour capturer les journaux des événements Windows, cochez la case **Activer le transfert des journaux des événements Windows**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux types d’événements que vous voulez suivre.
+Pour capturer les journaux des événements Windows, cochez la case **Activer le transfert des journaux des événements Windows**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)** . Activez les cases à cocher correspondant aux types d’événements que vous voulez suivre.
 
 ![Journaux des événements](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-Si vous utilisez Azure SDK 2.6 ou ultérieur et que vous voulez spécifier une source de données personnalisée, entrez-la dans la zone de texte **\<Nom de la source de données\>**, puis sélectionnez **Ajouter**. La source de données est ajoutée au fichier diagnostics.cfcfg.
+Si vous utilisez Azure SDK 2.6 ou ultérieur et que vous voulez spécifier une source de données personnalisée, entrez-la dans la zone de texte **\<Nom de la source de données\>** , puis sélectionnez **Ajouter**. La source de données est ajoutée au fichier diagnostics.cfcfg.
 
 Si vous utilisez Azure SDK 2.5 et que vous voulez spécifier une source de données personnalisée, vous pouvez l’ajouter à la section `WindowsEventLog` du fichier diagnostics.wadcfgx, comme dans l’exemple suivant :
 
@@ -158,21 +156,21 @@ Si vous utilisez Azure SDK 2.5 et que vous voulez spécifier une source de donn�
 ```
 
 ### <a name="performance-counters"></a>Compteurs de performance
-Les informations d’un compteur de performances peuvent vous aider à localiser des goulets d’étranglement système et à affiner les performances des applications et du système. Pour plus d’informations, consultez [Créer et utiliser des compteurs de performances dans une application Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx) . Pour capturer des compteurs de performances, cochez la case **Activer le transfert des compteurs de performances**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux compteurs de performances que vous voulez suivre.
+Les informations d’un compteur de performances peuvent vous aider à localiser des goulets d’étranglement système et à affiner les performances des applications et du système. Pour plus d’informations, consultez [Créer et utiliser des compteurs de performances dans une application Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx) . Pour capturer des compteurs de performances, cochez la case **Activer le transfert des compteurs de performances**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)** . Activez les cases à cocher correspondant aux compteurs de performances que vous voulez suivre.
 
 ![Compteurs de performance](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
 Pour suivre un compteur de performances qui n’est pas répertorié, entrez-le en utilisant la syntaxe suggérée. Sélectionnez ensuite **Ajouter**. Le système d’exploitation de la machine virtuelle détermine les compteurs de performances que vous pouvez suivre. Pour plus d’informations sur la syntaxe, consultez [Specifying a Counter Path](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Journaux d’infrastructure
-Les journaux d’infrastructure contiennent des informations sur l’infrastructure de diagnostic Azure, le module RemoteAccess et le module RemoteForwarder. Pour collecter des informations sur les journaux d’infrastructure, cochez la case **Activer le transfert des journaux d’infrastructure**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’infrastructure vers votre compte de stockage, changez la valeur de **Période de transfert (min)**.
+Les journaux d’infrastructure contiennent des informations sur l’infrastructure de diagnostic Azure, le module RemoteAccess et le module RemoteForwarder. Pour collecter des informations sur les journaux d’infrastructure, cochez la case **Activer le transfert des journaux d’infrastructure**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’infrastructure vers votre compte de stockage, changez la valeur de **Période de transfert (min)** .
 
 ![Journaux d’infrastructure de diagnostics](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
 Pour plus d’informations, consultez [Collecter des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
 ### <a name="log-directories"></a>Répertoires de journaux
-Les répertoires de journaux contiennent des données collectées à partir de répertoires de journaux pour les demandes, les demandes ayant échoué ou les dossiers IIS que vous choisissez. Pour capturer les répertoires de journaux, cochez la case **Activer le transfert des répertoires de journaux**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux vers votre compte de stockage, changez la valeur de **Période de transfert (min)**.
+Les répertoires de journaux contiennent des données collectées à partir de répertoires de journaux pour les demandes, les demandes ayant échoué ou les dossiers IIS que vous choisissez. Pour capturer les répertoires de journaux, cochez la case **Activer le transfert des répertoires de journaux**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux vers votre compte de stockage, changez la valeur de **Période de transfert (min)** .
 
 Cochez les cases correspondant aux journaux à collecter, comme **Journaux IIS** et **Journaux de demandes ayant échoué**. Des noms de conteneurs de stockage par défaut sont fournis, mais vous pouvez les changer.
 
@@ -181,7 +179,7 @@ Vous pouvez capturer des journaux de n’importe quel dossier. Spécifiez le che
 ![Répertoires de journaux](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>Journaux de suivi des événements ETW
-Si vous utilisez la fonction [Suivi d’événements pour Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) et souhaitez capturer les journaux ETW, sélectionnez la case à cocher **Activer le transfert des journaux ETW**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux vers votre compte de stockage, changez la valeur de **Période de transfert (min)**.
+Si vous utilisez la fonction [Suivi d’événements pour Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) et souhaitez capturer les journaux ETW, sélectionnez la case à cocher **Activer le transfert des journaux ETW**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux vers votre compte de stockage, changez la valeur de **Période de transfert (min)** .
 
 Les événements sont capturés à partir de sources d’événements et de fichiers manifestes d’événements que vous spécifiez. Pour spécifier une source d’événements, dans la section **Sources d’événements**, entrez un nom, puis sélectionnez **Ajouter une source d’événements**. De même, vous pouvez spécifier un manifeste d’événements dans la section **Manifestes d’événements**, puis sélectionner **Ajouter un manifeste d’événements**.
 
@@ -190,7 +188,7 @@ Les événements sont capturés à partir de sources d’événements et de fich
 L’infrastructure ETW est prise en charge dans ASP.NET via des classes de l’espace de noms [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). L’espace de noms Microsoft.WindowsAzure.Diagnostics, qui hérite des classes [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)), permet d’utiliser [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) comme infrastructure de journalisation dans l’environnement Azure. Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Activer les diagnostics dans les services cloud et les machines virtuelles Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Vidages sur incident
-Pour capturer des informations sur le moment où une instance de rôle se bloque, cochez la case **Activer le transfert de vidages sur incident**. (ASP.NET gérant la plupart des exceptions, cela n’est généralement utile que pour les rôles de travail.) Pour augmenter ou réduire le pourcentage d’espace de stockage dédié aux vidages sur incident, changez la valeur de **Quota de répertoire (%)**. Vous pouvez changer le conteneur de stockage où les vidages sur incident sont stockés et choisir de capturer un vidage **Complet** ou **Mini**.
+Pour capturer des informations sur le moment où une instance de rôle se bloque, cochez la case **Activer le transfert de vidages sur incident**. (ASP.NET gérant la plupart des exceptions, cela n’est généralement utile que pour les rôles de travail.) Pour augmenter ou réduire le pourcentage d’espace de stockage dédié aux vidages sur incident, changez la valeur de **Quota de répertoire (%)** . Vous pouvez changer le conteneur de stockage où les vidages sur incident sont stockés et choisir de capturer un vidage **Complet** ou **Mini**.
 
 Les processus actuellement suivis sont répertoriés dans la capture d’écran suivante. Activez les cases à cocher correspondant aux processus que vous voulez capturer. Pour ajouter un processus à la liste, entrez le nom du processus, puis sélectionnez **Ajouter un processus**.
 
