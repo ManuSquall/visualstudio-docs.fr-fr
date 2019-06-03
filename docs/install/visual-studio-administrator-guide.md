@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976120"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037508"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -97,7 +97,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * (Facultatif) Mettez à jour la topologie réseau pour [contrôler à quel moment les mises à jour du produit sont remises aux utilisateurs finaux et d’où elles proviennent](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
-* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2019).
+* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de la mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2019).
 
 * (Facultatif) Définissez la stratégie de groupe. Vous pouvez aussi [configurer Visual Studio pour désactiver les commentaires du client](../ide/visual-studio-experience-improvement-program.md) sur les ordinateurs individuels.
 
@@ -165,3 +165,4 @@ Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les
 * [Importer ou exporter des configurations d’installation](import-export-installation-configurations.md)
 * [Archives d’installation de Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Paramètres du chargement automatique synchrone](../extensibility/synchronously-autoloaded-extensions.md)

@@ -1,22 +1,20 @@
 ---
-title: Guide pratique pour faire migrer et publier une application web sur un service cloud Azure
+title: Migrer et publier une application web sur un service cloud Azure
 description: Découvrez comment migrer et publier une application web sur un service cloud Azure à partir de Visual Studio
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: aa0af441071c90ca42d7aa7169c75803bebeb255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551380"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260615"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procédure : Migrer et publier une application web sur un service cloud Azure à partir de Visual Studio
 
@@ -58,9 +56,9 @@ Si vous avez une chaîne de connexion pour votre application web qui utilise une
 
 1. Créez le service cloud et les comptes de stockage nécessaires dans votre abonnement Azure, comme indiqué dans [Préparer la publication ou le déploiement d’une application Azure à partir de Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. Dans Visual Studio, cliquez avec le bouton droit sur le projet d'application et sélectionnez **Publier sur Microsoft Azure...** (ce qui est différent de la commande « Publier... »).
-1. Dans la fenêtre **Publication d'application Azure** qui s'affiche, connectez-vous à l'aide du compte de votre abonnement Azure puis sélectionnez **Suivant >**.
+1. Dans la fenêtre **Publication d'application Azure** qui s'affiche, connectez-vous à l'aide du compte de votre abonnement Azure puis sélectionnez **Suivant >** .
 1. Dans l'onglet **Paramètres > Paramètres communs**, sélectionnez le service cloud cible dans la liste déroulante **Service cloud** ainsi que l'environnement et les configurations de votre choix.
-1. Dans **Paramètres > Paramètres avancés**, choisissez le compte de stockage à utiliser, puis sélectionnez **Suivant >**.
+1. Dans **Paramètres > Paramètres avancés**, choisissez le compte de stockage à utiliser, puis sélectionnez **Suivant >** .
 1. Dans **Diagnostics**, indiquez si vous souhaitez envoyer les informations à Application Insights.
 1. Sélectionnez **Suivant >** pour afficher un résumé, puis sélectionnez **Publier** pour lancer le déploiement.
 1. Visual Studio ouvre une fenêtre du journal d'activité dans laquelle vous pouvez suivre la progression :
@@ -92,13 +90,17 @@ Le tableau suivant fournit des détails sur le démarrage de l'application dans 
 1. Spécifiez une chaîne de connexion dans le fichier `web.config` au format suivant, puis enregistrez le fichier :
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Mettez à jour la valeur *connectionString* avec la chaîne de connexion ADO.NET pour votre base de données SQL Azure comme suit :
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Modèles de projet pris en charge

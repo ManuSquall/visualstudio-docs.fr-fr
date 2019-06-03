@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945146"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177723"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 
@@ -26,15 +26,19 @@ Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utili
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup>, FTE  | Azure Boards & Repos (De base), Azure Test Plans, Azure Artifacts, Azure Pipelines (auto-hébergé)       |  Oui          |
-| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail,                                        | Azure Boards & Repos (De base)                                                            |  Oui          |
+| Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup>, FTE  | Azure Boards & Repos (De base), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (auto-hébergé)       |  Oui          |
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail,                                        | Azure Boards & Repos (De base), Azure Artifacts<sup>2</sup>                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), MVP (Most Valuable Professional), RD (Regional Director), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Exclut : MCT Software & Services, Imagine.*
 
+<sup>2</sup>  *Inclut 2 Go sans frais*
+
+
+
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements qui vous sont affectés.
 Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.

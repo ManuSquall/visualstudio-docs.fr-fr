@@ -1,5 +1,5 @@
 ---
-title: Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012 | Microsoft Docs
+title: Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798206"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262954"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 
@@ -109,7 +109,7 @@ Vous devez ajouter l’option de collecte de données d’interaction de couche 
 
 **Collecte de données TIP sur un ordinateur distant**
 
-Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_**_\<Plateforme>_**\_**_\<Langage>_**.exe** depuis le dossier *%VSInstallDir%\Team Tools\Performance Tools\Setups* d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_** _\<Plateforme>_ **\_** _\<Langage>_ **.exe** depuis le dossier *%VSInstallDir%\Team Tools\Performance Tools\Setups* d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 Vous pouvez utiliser [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) pour collecter les données de profilage.
 

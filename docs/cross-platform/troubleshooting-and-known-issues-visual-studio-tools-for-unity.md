@@ -1,5 +1,5 @@
 ---
-title: Problèmes connus et dépannage (Visual Studio Tools pour Unity) | Microsoft Docs
+title: Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815584"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261115"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -25,7 +25,7 @@ Dans cette section, vous allez trouver les solutions aux problèmes courants ren
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>Vérifier que l’attachement de l’éditeur est activé
 
-Dans le menu Unity, sélectionnez **Edit (Edition) > Preferences (Préférences)**, puis sélectionnez l’onglet **External Tools (Outils externes)**. Vérifiez que la case **Editor Attaching (Attachement de l’éditeur)** est cochée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
+Dans le menu Unity, sélectionnez **Edit (Edition) > Preferences (Préférences)** , puis sélectionnez l’onglet **External Tools (Outils externes)** . Vérifiez que la case **Editor Attaching (Attachement de l’éditeur)** est cochée. Pour plus d’informations, voir la [documentation sur les préférences d’Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ### <a name="unable-to-attach"></a>Impossible de s’attacher
 
@@ -54,7 +54,7 @@ Votre problème devrait être résolu. Si le problème persiste, exécutez une i
 
 Plusieurs plug-ins Unity comme Parse, FMOD, UMP (Universal Media Player), ZFBrowser ou Embedded Browser utilisent des threads natifs. Un problème se pose quand un plug-in finit par attacher un thread natif au runtime, ce qui aboutit ensuite à des appels bloquants pour le système d’exploitation. Cela signifie qu’Unity ne peut pas interrompre ce thread pour le débogueur (ou le rechargement de domaine) et se bloque.
 
-Pour FMOD, il existe une solution, vous pouvez passer [l’indicateur](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) d’initialisation `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` pour désactiver le traitement asynchrone et effectuer tout le traitement sur le thread principal.
+Pour FMOD, il existe une solution, vous pouvez passer [l’indicateur](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) d’initialisation `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` pour désactiver le traitement asynchrone et effectuer tout le traitement sur le thread principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Projet incompatible dans Visual Studio
 

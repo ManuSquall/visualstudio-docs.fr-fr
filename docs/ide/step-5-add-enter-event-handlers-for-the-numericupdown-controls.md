@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 194988a3d21078ebb712afee52d9106659b65b14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a2687c423f6b2facaa2fa1c3504888c65345888
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997325"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263109"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown
 

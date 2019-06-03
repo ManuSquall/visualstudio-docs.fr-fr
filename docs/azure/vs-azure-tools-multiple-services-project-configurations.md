@@ -1,5 +1,5 @@
 ---
-title: Configuration de votre projet Azure à l'aide de plusieurs configurations de service | Microsoft Docs
+title: Configurer un projet Azure avec plusieurs configurations de service
 description: Découvrez comment configurer un projet de service cloud Azure en modifiant les fichiers ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg et ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555299"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260649"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -51,7 +51,7 @@ Si vous avez déjà ajouté un point de terminaison HTTPS, l'option point de ter
 
 ### <a name="diagnostics"></a>Diagnostics
 
-Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération (**...**) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération ( **...** ) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Page Paramètres
 
@@ -68,7 +68,7 @@ Vous pouvez définir la chaîne de connexion pour utiliser un stockage local si 
 
 Pour créer une chaîne de connexion, sélectionnez **Ajouter un paramètre** et définissez **Type** sur « Chaîne de connexion ».
 
-Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...*** à droite du champ **Valeur** pour ouvrir la boîte de dialogue **Créer une chaîne de connexion de stockage** :
+Pour les chaînes de connexion nouvelles ou existantes, sélectionnez **...** * à droite du champ **Valeur** pour ouvrir la boîte de dialogue **Créer une chaîne de connexion de stockage** :
 
 1. Sous **Se connecter en utilisant**, sélectionnez l'option **Votre abonnement** pour sélectionner un compte de stockage à partir d'un abonnement. Visual Studio obtient ensuite automatiquement les informations d'identification du compte de stockage à partir du fichier `.publishsettings`.
 1. L'option **Informations d'identification entrées manuellement** vous permet de spécifier directement le nom et la clé du compte à l'aide des informations du portail Azure. Pour copier la clé du compte :

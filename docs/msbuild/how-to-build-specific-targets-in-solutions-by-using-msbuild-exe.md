@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Générer des cibles spécifiques dans des solutions en utilisant MSBuild.exe | Microsoft Docs'
+title: Utiliser MSBuild.exe pour générer des cibles spécifiques dans des solutions
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977255"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263787"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Procédure : Générer des cibles spécifiques dans des solutions en utilisant MSBuild.exe
 Vous pouvez utiliser *MSBuild.exe* pour générer des cibles spécifiques de certains projets d’une solution.

@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Application Hello World avec WPF (Windows Presentation Foundation) en C#'
+title: Application Hello World avec WPF en C#
 description: Créez une application de bureau Windows .NET simple en C# avec Visual Studio à l’aide du framework d’interface utilisateur WPF (Windows Presentation Foundation).
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426415"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261690"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutoriel : Créer une application simple en C\#
 
@@ -62,7 +62,7 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
 
-1. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
+1. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#**  > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)** . Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
 
      ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/exploreide-newprojectcsharp.png)
 
@@ -85,7 +85,7 @@ Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **
 
    ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/start-window-create-new-project.png)
 
-2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
+2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)** , puis choisissez **Suivant**.
 
    ![Modèle Application WPF dans la boîte de dialogue Créer un projet](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
 
@@ -308,7 +308,7 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 3. Générez la solution en choisissant **Générer** > **Générer la solution**.
 
-Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous avez généré se trouve sous le répertoire de votre solution et de votre projet (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous avez généré se trouve sous le répertoire de votre solution et de votre projet ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Voir aussi
 
