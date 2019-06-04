@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929129"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462141"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le recharger à chaud de XAML dans Visual Studio
 
@@ -45,9 +45,9 @@ Les éléments suivants sont connus limitations de XAML à chaud recharger. Pour
 |-|-|-|-|
 |Connexion des événements aux contrôles pendant l’exécution de l’application|Non prise en charge|Non pris en charge|Consultez l’erreur : *Vérifiez l’événement a échoué*|
 |Création d’objets de ressource dans un dictionnaire de ressources, telles que celles dans la fenêtre de la Page de votre application ou *App.xaml*|Non prise en charge|Prise en charge|Exemple : ajout d’un ```SolidColorBrush``` dans un dictionnaire de ressources pour une utilisation comme un ```StaticResource```.</br>Remarque : Ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqué/utilisé lors de l’utilisation de rechargement à chaud de XAML. Uniquement la création de la ressource n’est pas pris en charge.</br> Modifier le dictionnaire de ressources ```Source``` propriété.| 
-|Ajout de nouveaux contrôles, de classes, de windows ou d’autres fichiers à votre projet pendant l’exécution de l’application|Non prise en charge|Non prise en charge|Aucun.|
-|La gestion des packages NuGet (Ajout/Suppression/mise à jour des packages)|Non prise en charge|Non prise en charge|Aucun.|
-|Modification de liaison de données qui utilise l’extension de balisage {x : Bind}|N/A|Prise en charge dans Visual Studio 2019 et versions ultérieures|Non pris en charge dans Visual Studio 2018 ou des versions antérieures|
+|Ajout de nouveaux contrôles, de classes, de windows ou d’autres fichiers à votre projet pendant l’exécution de l’application|Non prise en charge|Non prise en charge|None|
+|La gestion des packages NuGet (Ajout/Suppression/mise à jour des packages)|Non prise en charge|Non prise en charge|None|
+|Modification de liaison de données qui utilise l’extension de balisage {x : Bind}|N/A|Prise en charge dans Visual Studio 2019 et versions ultérieures|Non pris en charge dans Visual Studio 2017 ou des versions antérieures|
 
 ## <a name="error-messages"></a>Messages d’erreur
 
