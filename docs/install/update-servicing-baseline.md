@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213780"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501122"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
-Visual Studio 2019 recevra de fréquentes mises à jour lors de son [cycle de vie des produits](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Cela inclut les mises à jour de version mineures (par exemple : 16.0 vers 16.1) pouvant inclure de nouvelles fonctionnalités et de nouveaux composants, et les mises à jour de maintenance (par exemple : 16.0.4 à 16.0.5) contenant uniquement des correctifs ciblant les problèmes critiques. 
+Visual Studio 2019 recevra de fréquentes mises à jour lors de son [cycle de vie des produits](/visualstudio/productinfo/release-rhythm#release-channel-updates). Cela inclut les mises à jour de version mineures (par exemple : 16.0 vers 16.1) pouvant inclure de nouvelles fonctionnalités et de nouveaux composants, et les mises à jour de maintenance (par exemple : 16.0.4 à 16.0.5) contenant uniquement des correctifs ciblant les problèmes critiques. 
 
-Les administrateurs d’entreprise peuvent choisir de garder leurs clients sur une base de référence de maintenance incluant des mises à jour pour une année au-delà de la base de référence de maintenance suivante. Cela offre plus de flexibilité aux développeurs et administrateurs, qui peuvent ainsi intégrer les nouvelles fonctionnalités, les correctifs de bogues ou les composants inclus dans les nouvelles mises à jour mineures. La première base de référence de maintenance est 16.0.x. Voir [Options de support pour les clients Enterprise et Professional](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers) pour plus d'informations.
+Les administrateurs d’entreprise peuvent choisir de garder leurs clients sur une base de référence de maintenance incluant des mises à jour pour une année au-delà de la base de référence de maintenance suivante. Cela offre plus de flexibilité aux développeurs et administrateurs, qui peuvent ainsi intégrer les nouvelles fonctionnalités, les correctifs de bogues ou les composants inclus dans les nouvelles mises à jour mineures. La première base de référence de maintenance est 16.0.x. Voir [Options de support pour les clients Enterprise et Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) pour plus d'informations.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Comment bénéficier d’une base de référence de maintenance
 
