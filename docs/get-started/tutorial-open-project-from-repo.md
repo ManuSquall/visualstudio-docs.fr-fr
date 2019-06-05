@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944159"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402084"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutoriel : Ouvrir un projet à partir d’un référentiel
 
@@ -109,11 +109,11 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 1. Voici deux façons de se connecter à votre référentiel Azure DevOps :
 
-      - Dans la section **Fournisseurs de services hébergés**, choisissez **Se connecter...**.
+      - Dans la section **Fournisseurs de services hébergés**, choisissez **Se connecter...** .
 
         ![La section Fournisseurs de services hébergés de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Dans la liste déroulante **Gérer les connexions**, choisissez **Se connecter à un projet...**.
+      - Dans la liste déroulante **Gérer les connexions**, choisissez **Se connecter à un projet...** .
 
         ![La section Gérer les connexions de la fenêtre Team Explorer dans l’IDE de Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -177,9 +177,9 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spécifiques au langage suivants :
 
-- [Didacticiels Visual Studio | **C#**](./csharp/index.yml)
+- [Didacticiels Visual Studio | **C#** ](./csharp/index.yml)
 - [Didacticiels Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Didacticiels Visual Studio | **C++**](/cpp/get-started/)
+- [Didacticiels Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Didacticiels Visual Studio | **Python**](/visualstudio/python/)
 - [Didacticiels Visual Studio | **JavaScript**, **TypeScript** et **Node.js**](/visualstudio/javascript/)
 
