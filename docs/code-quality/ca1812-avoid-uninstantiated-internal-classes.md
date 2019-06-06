@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841425"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714270"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 
@@ -58,9 +58,9 @@ Si vous appliquez le <xref:System.Runtime.CompilerServices.InternalsVisibleToAtt
 
 Pour corriger une violation de cette règle, supprimez le type ou ajouter du code qui l’utilise. Si le type contient uniquement `static` méthodes, ajoutez les valeurs suivantes au type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
-- Un constructeur privé pour les types qui ciblent des versions 1.0 et 1.1 du .NET Framework.
-
 - Le `static` modificateur pour C# qui ciblent des types [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] ou version ultérieure.
+
+- Un constructeur privé pour les types qui ciblent des versions 1.0 et 1.1 du .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

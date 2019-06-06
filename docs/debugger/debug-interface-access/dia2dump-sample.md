@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554868"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715345"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
 
@@ -42,9 +42,9 @@ Par défaut, le répertoire d’installation est un répertoire protégé. Cela 
 
 1. Dans **l’Explorateur de solutions**, sélectionnez le projet Dia2Dump (pas la solution).
 
-1. Ouvrez la boîte de dialogue **Pages de propriété** du projet. Pour plus d’informations, consultez [Utilisation des propriétés de projet](/cpp/ide/working-with-project-properties).
+1. Ouvrez la boîte de dialogue **Pages de propriété** du projet. Pour plus d’informations, consultez [Utilisation des propriétés de projet](/cpp/build/working-with-project-properties).
 
-1. Ouvrez le **propriétés de Configuration** > **C/C++** > **général** page de propriétés.
+1. Ouvrez le **propriétés de Configuration** > **C/C++**  > **général** page de propriétés.
 
 1. Dans le **autres répertoires Include** propriété, choisissez le contrôle de liste déroulante, puis choisissez **modifier**.
 

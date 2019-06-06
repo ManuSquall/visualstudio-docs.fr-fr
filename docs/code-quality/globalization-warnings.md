@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 781ff1e1c7d389baa43a54ee4413280f105ac1e1
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816529"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714991"
 ---
 # <a name="globalization-warnings"></a>Avertissements liés à la globalisation
 Avertissements de globalisation prennent en charge les applications et les bibliothèques universelles.
@@ -32,7 +32,7 @@ Avertissements de globalisation prennent en charge les applications et les bibli
 |[CA1300 : Spécifier MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres RightAlign et RtlReading de l'énumération MessageBoxOptions doivent être passés à la méthode Show.|
 |[CA1301 : Éviter les accélérateurs en double](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles présentent des touches d’accès en double, le comportement de la clé d’accès n’est pas bien défini.|
 |[CA1302 : Ne pas coder en dur les chaînes de spécifiques de paramètres régionaux](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|L'énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment.GetFolderPath retourne les emplacements associés à l’énumération Environment.SpecialFolder, localisée et appropriée pour l’ordinateur en cours d’exécution.|
-|[CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Une méthode visible de l’extérieur passe une littéral de chaîne en tant que paramètre à un constructeur ou une méthode dans la bibliothèque de classes .NET Framework, et cette chaîne doit être localisable.|
+|[CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Une méthode visible de l’extérieur passe une littéral de chaîne en tant que paramètre à une méthode ou le constructeur de .NET, et cette chaîne doit être localisable.|
 |[CA1304 : Spécifier CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)|Une méthode ou un constructeur appelle un membre présentant une surcharge qui accepte un paramètre System.Globalization.CultureInfo, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre CultureInfo. Lorsqu'un objet CultureInfo ou System.IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|
 |[CA1305 : Spécifier IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)|Une méthode ou un constructeur appelle un ou plusieurs membres présentant des surcharges qui acceptent un paramètre System.IFormatProvider, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre IFormatProvider. Lorsqu'un objet System.Globalization.CultureInfo ou IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|
 |[CA1306 : Définir les paramètres régionaux pour les types de données](../code-quality/ca1306-set-locale-for-data-types.md)|Les paramètres régionaux déterminent des éléments de présentation des données spécifiques à la culture, telles que la mise en forme utilisée pour les valeurs numériques, les symboles monétaires et l'ordre de tri. Lorsque vous créez un DataTable ou un DataSet, vous devez définir les paramètres régionaux explicitement.|

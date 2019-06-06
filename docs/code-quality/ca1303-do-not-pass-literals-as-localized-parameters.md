@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bdae3d0ee17624a2b168e5ce944ba10ab37fc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc32db1aea9c5514a7548bc889b65463de3de3d5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797455"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714689"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas passer de littéraux en paramètres localisés
 
@@ -36,9 +36,10 @@ ms.locfileid: "62797455"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode passe une littéral de chaîne en tant que paramètre à un constructeur ou une méthode dans la bibliothèque de classes .NET Framework et cette chaîne doit être localisable.
 
- Cet avertissement est déclenché lorsqu’une chaîne littérale est passée en tant que valeur à un paramètre ou une propriété et un ou plusieurs des cas suivants sont vrai :
+Une méthode passe une littéral de chaîne en tant que paramètre à une méthode ou le constructeur de .NET et cette chaîne doit être localisable.
+
+Cet avertissement est déclenché lorsqu’une chaîne littérale est passée en tant que valeur à un paramètre ou une propriété et un ou plusieurs des cas suivants sont vrai :
 
 - Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.
 
@@ -47,22 +48,27 @@ ms.locfileid: "62797455"
 - Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».
 
 ## <a name="rule-description"></a>Description de la règle
- Les littéraux de chaîne incorporés dans le code source sont difficiles à localiser.
+
+Les littéraux de chaîne incorporés dans le code source sont difficiles à localiser.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, remplacez le littéral de chaîne par une chaîne récupérée via une instance de la <xref:System.Resources.ResourceManager> classe.
+
+Pour corriger une violation de cette règle, remplacez le littéral de chaîne par une chaîne récupérée via une instance de la <xref:System.Resources.ResourceManager> classe.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si la bibliothèque de code n’est pas localisée, ou si la chaîne n’est pas exposée à l’utilisateur final ou un développeur à l’aide de la bibliothèque de code.
 
- Les utilisateurs peuvent éliminer le bruit sur les méthodes qui ne doivent pas être des chaînes localisées passées, soit en renommant le paramètre ou une propriété nommée, ou en marquant ces éléments comme conditionnels.
+Il est possible de supprimer un avertissement de cette règle si la bibliothèque de code n’est pas localisée, ou si la chaîne n’est pas exposée à l’utilisateur final ou un développeur à l’aide de la bibliothèque de code.
+
+Les utilisateurs peuvent éliminer le bruit sur les méthodes qui ne doivent pas être des chaînes localisées passées, soit en renommant le paramètre ou la propriété, ou en marquant ces éléments comme conditionnels.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode qui lève une exception lorsqu’une de ses deux arguments est hors limites. Pour le premier argument, le constructeur d’exception est passé à une chaîne littérale qui enfreint cette règle. Pour le deuxième argument, le constructeur reçoit correctement une chaîne récupérée via un <xref:System.Resources.ResourceManager>.
 
- [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
- [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
- [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]
+L’exemple suivant montre une méthode qui lève une exception lorsqu’une de ses deux arguments est hors limites. Pour le premier argument, le constructeur d’exception est passé à une chaîne littérale qui enfreint cette règle. Pour le deuxième argument, le constructeur reçoit correctement une chaîne récupérée via un <xref:System.Resources.ResourceManager>.
+
+[!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
+[!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
+[!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
- [Ressources dans des applications de bureau](/dotnet/framework/resources/index)
+
+- [Ressources dans les applications de bureau](/dotnet/framework/resources/index)

@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816797"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715001"
 ---
-# <a name="design-warnings"></a>Avertissements liés au design
-Conception d’avertissements prennent en charge le respect des directives de conception .NET Framework.
+# <a name="design-warnings"></a>Avertissements liés à la conception
+
+Respect prise en charge des avertissements de conception le [directives de conception .NET](/dotnet/standard/design-guidelines/).
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -43,7 +44,7 @@ Conception d’avertissements prennent en charge le respect des directives de co
 | [CA1012 : Types abstraits ne doivent pas avoir de constructeurs](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | Les constructeurs des types abstraits peuvent être appelés uniquement par des types dérivés. Étant donné que les constructeurs publics créent des instances d'un type et que vous ne pouvez pas créer d'instance d'un type abstrait, un type abstrait doté d'un constructeur public est de conception incorrecte. |
 | [CA1013 : Surchargez l’opérateur égal lors de la surcharge addition et de soustraction](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | Un type public ou protégé implémente les opérateurs d'addition ou de soustraction sans implémenter l'opérateur d'égalité. |
 | [CA1014 : Marquer les assemblys avec CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | La spécification de langage commun CLS (Common Language Specification) définit des restrictions de dénomination, des types de données, et des règles auxquelles les assemblys doivent se conformer s'ils doivent être utilisés à l'échelle de différents langages de programmation. Design correct stipule que tous les assemblys indiquent explicitement la conformité CLS à l’aide de CLSCompliantAttribute. Si cet attribut n'est pas présent sur un assembly, l'assembly n'est pas conforme. |
-| [CA1016 : Marquer les assemblys avec AssemblyVersionAttribute](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | Le .NET Framework utilise le numéro de version pour identifier de façon unique un assembly et à lier aux types dans les assemblys à nom fort. Le numéro de version est utilisé conjointement avec la version et la stratégie d'éditeur. Par défaut, les applications s'exécutent uniquement avec la version d'assembly avec laquelle elles ont été construites. |
+| [CA1016 : Marquer les assemblys avec AssemblyVersionAttribute](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET utilise le numéro de version pour identifier de façon unique un assembly et lier aux types dans les assemblys à nom fort. Le numéro de version est utilisé conjointement avec la version et la stratégie d'éditeur. Par défaut, les applications s'exécutent uniquement avec la version d'assembly avec laquelle elles ont été construites. |
 | [CA1017 : Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) | ComVisibleAttribute détermine comment les clients COM accèdent à du code managé. Un bon design stipule que les assemblys indiquent explicitement la visibilité COM. La visibilité COM peut être définie pour l'assembly en entier, puis être substituée pour des types et des membres de type individuels. Si cet attribut n'est pas présent, les clients COM peuvent voir le contenu de l'assembly. |
 | [CA1018 : Marquer les attributs avec AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | Lorsque vous définissez un attribut personnalisé, marquez-le à l'aide d'AttributeUsageAttribute pour indiquer où l'attribut personnalisé peut être appliqué dans le code source. La signification et l'utilisation prévue d'un attribut déterminent ses emplacements valides au sein d'un code. |
 | [CA1019 : Définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l’attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu’ils sont fournis aux constructeurs d’attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l’attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l’argument puisse être récupérée au moment de l’exécution. Les attributs peuvent également définir des arguments facultatifs, qui sont également appelés arguments nommés. Ces arguments sont fournis aux constructeurs d’attributs par noms et doivent disposer d’une propriété en lecture/écriture correspondante. |

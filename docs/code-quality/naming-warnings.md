@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825440"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715304"
 ---
 # <a name="naming-warnings"></a>avertissements liés à l’affectation de noms
-Avertissements d’affectation de noms prend en charge l’adhésion aux conventions d’affectation de noms de directives de conception .NET Framework.
+
+Avertissements d’affectation de noms prend en charge l’adhésion aux conventions d’affectation de noms de directives de conception .NET.
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -42,7 +43,7 @@ Avertissements d’affectation de noms prend en charge l’adhésion aux convent
 |[CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Un nom de paramètre doit véhiculer la signification d’un paramètre et un nom de membre doit véhiculer la signification d’un membre. Un design où ceux-ci sont identiques est rare. Donner à un paramètre le même que son membre n'est pas une méthode intuitive et rend la bibliothèque difficile à utiliser.|
 |[CA1701 : Mots composés de chaînes de ressources doivent être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Chaque mot dans la chaîne de ressource est fractionné en jetons basés sur la casse. Chaque combinaison de deux jetons contiguë est vérifiée par la bibliothèque du correcteur orthographique Microsoft. S'il est reconnu, le mot produit une violation de la règle.|
 |[CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Une chaîne de ressource contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque du vérificateur d'orthographe Microsoft.|
-|[CA1724 : Noms de types ne doivent pas correspondre aux espaces de noms](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Noms de types ne doivent pas correspondre aux noms des espaces de noms définis dans la bibliothèque de classes .NET Framework. Violation de cette règle peut réduire la facilité d’utilisation de la bibliothèque.|
+|[CA1724 : Noms de types ne doivent pas correspondre aux espaces de noms](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Noms de types ne doivent pas correspondre aux noms des espaces de noms .NET. Violation de cette règle peut réduire la facilité d’utilisation de la bibliothèque.|
 |[CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Par convention, les noms d'identificateurs ne contiennent pas de trait de soulignement (_). Cette règle vérifie les espaces de noms, types, membres et paramètres.|
 |[CA1721 : Noms de propriétés ne doivent pas correspondre à des méthodes get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Le nom d'un membre public ou protégé commence par « Get ». Sinon, il correspond au nom d'une propriété publique ou protégée. Les méthodes et propriétés « Get » doivent porter des noms distinguant clairement leur fonction.|
 |[CA1716 : Les identificateurs ne doivent pas correspondre aux mots clés](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Un nom d'espace de noms ou un nom de type correspond à un mot clé réservé dans un langage de programmation. Les identificateurs des espaces de noms et des types ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le Common Language Runtime.|

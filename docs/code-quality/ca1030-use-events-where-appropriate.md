@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842363"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714296"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 
@@ -45,11 +45,11 @@ Par défaut, cette règle examine uniquement les méthodes visibles de l’exté
 
 Cette règle détecte des méthodes qui présentent des noms qui ordinairement seraient utilisés pour des événements. Événements suivent le modèle de design observateur ou publier / abonner ; ils sont utilisés lorsqu’un changement d’état dans un objet doit être communiqué à d’autres objets. Si une méthode est appelée en réponse à un changement d’état clairement définie, la méthode doit être appelée par un gestionnaire d’événements. Les objets qui appellent la méthode doivent déclencher des événements au lieu d'appeler directement la méthode.
 
-Voici quelques exemples courants d’événements sont trouvent dans des applications d’interface utilisateur où une action de l’utilisateur comme un clic sur un bouton provoque un segment de code à exécuter. Le modèle d’événement .NET Framework n’est pas limité aux interfaces utilisateur ; Il doit être utilisé partout où que vous devez communiquer l’état passe à un ou plusieurs objets.
+Voici quelques exemples courants d’événements sont trouvent dans des applications d’interface utilisateur où une action de l’utilisateur comme un clic sur un bouton provoque un segment de code à exécuter. Le modèle d’événement .NET n’est pas limité aux interfaces utilisateur. Il doit être utilisé partout où que vous devez communiquer l’état passe à un ou plusieurs objets.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception pour utiliser le modèle d’événement .NET.
+Si la méthode est appelée lorsque l’état d’un objet change, envisagez de modifier la conception pour utiliser le modèle d’événement .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
