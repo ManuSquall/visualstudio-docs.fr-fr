@@ -1,6 +1,6 @@
 ---
 title: Développer des solutions de données
-description: Découvrez-en plus sur les différents outils de développement de solutions de données dans Visual Studio, notamment les outils .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight et Azure Streaming Analytics.
+description: Découvrez-en plus sur les différents outils de développement de solutions de données dans Visual Studio, notamment les outils .NET, SQL Server Data Tools, Azure Data Lake, Azure HDInsight et Azure Streaming Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569166"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715046"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Utiliser les outils de données dans Visual Studio pour développer des solutions de données
 
@@ -29,11 +29,11 @@ Découvrez comment utiliser les outils de données dans Visual Studio pour déve
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>En savoir plus sur Visual Studio, les outils de .NET Framework et la prise en charge des API pour développer des applications de données</h3>
+                        <h3>En savoir plus sur Visual Studio, les outils .NET et la prise en charge des API pour développer des applications de données</h3>
                     </div>
                 </div>
             </div>
