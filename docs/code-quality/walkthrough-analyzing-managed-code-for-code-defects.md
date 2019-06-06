@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825041"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715282"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Analyse du code managé pour les erreurs de code
 
 Dans cette procédure pas à pas, vous allez analyser un projet managé pour détecter les erreurs de code à l’aide de l’outil d’analyse de code.
 
-Cette procédure pas à pas vous guide tout au long du processus d’utilisation de l’analyse du code pour analyser les assemblys de code managé .NET pour la conformité avec les règles de conception de Microsoft .NET Framework.
+Cette procédure pas à pas vous guide tout au long du processus d’utilisation de l’analyse du code pour analyser les assemblys de code managé .NET pour la conformité avec les instructions de conception .NET.
 
 ## <a name="create-a-class-library"></a>Créer une bibliothèque de classes
 

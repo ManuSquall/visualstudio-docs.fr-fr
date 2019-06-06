@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564824"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714474"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
@@ -56,7 +56,7 @@ WCF Data Services est une implémentation du protocole OData (Open Data) standar
 
 ### <a name="wcf-programming-model"></a>Modèle de programmation WCF
 
-Le modèle de programmation WCF est basé sur la communication entre deux entités : un service WCF et un client WCF. Le modèle de programmation est encapsulé dans le <xref:System.ServiceModel> espace de noms dans le .NET Framework.
+Le modèle de programmation WCF est basé sur la communication entre deux entités : un service WCF et un client WCF. Le modèle de programmation est encapsulé dans le <xref:System.ServiceModel> espace de noms dans .NET.
 
 ### <a name="wcf-service"></a>Service WCF
 
@@ -228,7 +228,7 @@ Vous pouvez lier des données retournées par un service Windows Communication F
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procédure : Configurer un service pour réutiliser les types existants
 
-Lorsqu’une référence de service est ajoutée à un projet, des types définis dans le service sont générés dans le projet local. Dans de nombreux cas, cela crée des types en double lorsqu’un service utilise des types courants de .NET Framework ou lorsque les types sont définis dans une bibliothèque partagée.
+Lorsqu’une référence de service est ajoutée à un projet, des types définis dans le service sont générés dans le projet local. Dans de nombreux cas, cela crée des types en double lorsqu’un service utilise des types .NET communs ou lorsque les types sont définis dans une bibliothèque partagée.
 
 Pour éviter ce problème, les types dans les assemblys référencés sont partagés par défaut. Si vous souhaitez désactiver le partage de type d’un ou plusieurs assemblys, vous pouvez effectuer dans le **configurer les références de Service** boîte de dialogue.
 

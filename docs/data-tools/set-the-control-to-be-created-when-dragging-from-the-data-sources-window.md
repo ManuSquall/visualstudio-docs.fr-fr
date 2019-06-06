@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260956"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715095"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 
@@ -45,7 +45,7 @@ Dans ce contexte, le terme *objet* fait référence à un objet métier personna
 
     - Pour afficher toutes les données dans un seul contrôle, sélectionnez un autre contrôle dans la liste, tel que **DataGrid** ou **liste** dans une application WPF, ou **DataGridView** dans un formulaire Windows application.
 
-    La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version du .NET Framework que votre projet cible, et si vous avez ajouté des contrôles personnalisés cette prise en charge de liaison de données à la **boîte à outils**. Si le contrôle que vous souhaitez créer n’est pas dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version de .NET que votre projet cible, et si vous avez ajouté des contrôles personnalisés cette prise en charge de liaison de données à la **boîte à outils**. Si le contrôle que vous souhaitez créer n’est pas dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Pour savoir comment créer un contrôle Windows Forms personnalisé qui peut être ajouté à la liste des contrôles pour les tables de données ou des objets dans le **des Sources de données** fenêtre, consultez [créer un contrôle utilisateur Windows Forms qui prend en charge des données complexes liaison](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Avant de faire glisser un élément qui représente une colonne ou une propriét
 
 4. Cliquez sur le menu déroulant de la colonne ou la propriété, puis sélectionnez le contrôle à créer lorsque l’élément est déplacé vers le concepteur.
 
-     La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version du .NET Framework que votre projet cible, et des contrôles personnalisés qui prennent en charge de liaisons de données ont ajoutés à la **boîte à outils**. Si le contrôle que vous souhaitez créer est dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     La liste des contrôles disponibles dépend du concepteur que vous avez ouvert, version de .NET que votre projet cible, et des contrôles personnalisés qui prennent en charge de liaisons de données ont ajoutés à la **boîte à outils**. Si le contrôle que vous souhaitez créer est dans la liste des contrôles disponibles, vous pouvez ajouter le contrôle à la liste. Pour plus d’informations, consultez [ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Pour savoir comment créer un contrôle personnalisé qui peut être ajouté à la liste de contrôles pour les colonnes de données ou les propriétés dans le **des Sources de données** fenêtre, consultez [créer un contrôle utilisateur Windows Forms qui prend en charge la liaison de données simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407887"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715449"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Paramètres de projet pour une configuration Debug C++
 Vous pouvez modifier les paramètres du projet pour une configuration debug C ou Visual C++ dans le **Pages de propriétés** boîte de dialogue, comme indiqué dans [Comment : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.
@@ -139,7 +139,7 @@ Vous pouvez modifier les paramètres du projet pour une configuration debug C ou
 | **Arguments de la commande** (débogueur Windows Local)<br /><br /> **Arguments de commande à distance** (débogueur Windows distant) | -   Spécifie les arguments de la commande spécifiée précédemment.<br /><br /> Vous pouvez utiliser les opérateurs de redirection suivants dans cette zone :<br /><br /> < `file`<br /> Lit stdin à partir du fichier.<br /><br /> > `file`<br /> Écrit stdout dans le fichier.<br /><br /> >> `file`<br /> Ajoute stdout au fichier.<br /><br /> 2> `file`<br /> Écrit stderr dans le fichier.<br /><br /> 2>> `file`<br /> Ajoute stderr au fichier.<br /><br /> 2> &1<br /> Envoie la sortie de stderr (2) au même emplacement que stdout (1).<br /><br /> 1> &2<br /> Envoie la sortie de stdout (1) au même emplacement que stderr (2).<br /><br /> Dans la plupart des cas, ces opérateurs ne peuvent être utilisés que pour les applications console. |
 | **Répertoire de travail** | Spécifie le répertoire de travail du programme en cours de débogage, par rapport au répertoire de projet où se trouve votre fichier .EXE. Si vous laissez cette zone vide, le répertoire de travail est le répertoire du projet. Pour le débogage distant, le répertoire du projet est sur le serveur distant. |
 | **Attacher** (Débogueur Windows local et débogueur Windows distant) | Spécifie s'il faut démarrer ou attacher l'application. Le paramètre par défaut est Non. |
-| **Nom de serveur distant** (Débogueur Windows distant) | Spécifie le nom d'un ordinateur (autre que le vôtre) sur lequel vous voulez déboguer une application.<br /><br /> La macro de génération RemoteMachine a la valeur de cette propriété ; pour plus d’informations, consultez [Macros pour les propriétés et les commandes de génération](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Nom de serveur distant** (Débogueur Windows distant) | Spécifie le nom d'un ordinateur (autre que le vôtre) sur lequel vous voulez déboguer une application.<br /><br /> La macro de génération RemoteMachine a la valeur de cette propriété ; pour plus d’informations, consultez [Macros pour les propriétés et les commandes de génération](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Connexion** (débogueur distant Windows) | Vous permet de commuter entre les types de connexion standard et sans authentification pour le débogage distant. Spécifiez un nom d’ordinateur distant dans la zone **Nom de serveur distant**. Les types de connexions incluent les éléments suivants :<br /><br /> -   **À distance avec authentification Windows**<br />-   **À distance sans authentification**<br /><br /> **Remarque** Le débogage distant sans authentification peut rendre l’ordinateur distant vulnérable face aux atteintes à la sécurité. Le mode Authentification Windows est plus sécurisé.<br /><br /> Pour plus d’informations, consultez [Programme d’installation du débogage distant](../debugger/remote-debugging.md). |
 | **URL HTTP** (débogueur de service web et débogueur de navigateur web) | Spécifie l'URL où le projet que vous déboguez est localisé. |
 | **Type de débogueur** | Spécifie le type de débogueur à utiliser : **Natif uniquement**, **managé uniquement**, **GPU uniquement**, **mixte**, **automatique** (valeur par défaut), ou **Script**.<br /><br /> -   Le type **Natif uniquement** est destiné au code C++ non managé.<br />-   Le type **Managé uniquement** est destiné au code s’exécutant sous le Common Language Runtime (code managé).<br />-   Le type **Mixte** appelle les débogueurs aussi bien pour le code managé que le code non managé.<br />-   Le type **Auto** permet de déterminer le type du débogueur en fonction des informations relatives au compilateur et au fichier .EXE.<br />-   **Script** appelle un débogueur pour les scripts.<br />-   **GPU uniquement** est destiné au code C++ AMP qui s’exécute sur un périphérique GPU ou sur le rastériseur de référence DirectX. Consultez [du code GPU débogage](../debugger/debugging-gpu-code.md). |

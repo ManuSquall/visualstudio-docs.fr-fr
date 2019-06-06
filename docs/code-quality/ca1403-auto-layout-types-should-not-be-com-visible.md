@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546197"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714846"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
 
@@ -39,7 +39,7 @@ Un type de valeur visible du composant COM (Object Model) est marqué avec le <x
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les compilateurs c#, Visual Basic et C++ spécifient [valeur LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
+<xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions de .NET, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les compilateurs c#, Visual Basic et C++ spécifient [valeur LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
 
 Sauf mention contraire, tous les types publics, non génériques sont visibles par COM, et tous les types non publics et génériques ne sont pas visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 

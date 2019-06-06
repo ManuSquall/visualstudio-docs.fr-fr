@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797544"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714675"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797544"
 
 Une méthode ou un constructeur appelle un ou plusieurs membres qui ont des surcharges qui acceptent un <xref:System.IFormatProvider?displayProperty=fullName> paramètre et la méthode ou le constructeur n’appelle pas la surcharge qui accepte le <xref:System.IFormatProvider> paramètre.
 
-Cette règle ignore les appels aux méthodes .NET Framework qui sont documentées comme ignorant le <xref:System.IFormatProvider> paramètre. La règle ignore également les méthodes suivantes :
+Cette règle ignore les appels aux méthodes de .NET qui sont documentées comme ignorant le <xref:System.IFormatProvider> paramètre. La règle ignore également les méthodes suivantes :
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Cette règle ignore les appels aux méthodes .NET Framework qui sont documentée
 
 ## <a name="rule-description"></a>Description de la règle
 
-Quand un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, les membres de .NET Framework choisissent la culture par défaut et mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :
+Quand un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, les membres de .NET choisissent la culture par défaut et mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :
 
 - Si la valeur doit être affichée à l’utilisateur, utilisez la culture actuelle. Consultez <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

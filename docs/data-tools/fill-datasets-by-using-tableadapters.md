@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566903"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715183"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
 Un composant du TableAdapter remplit un dataset avec des données à partir de la base de données, selon une ou plusieurs requêtes ou des procédures stockées que vous spécifiez. Les TableAdapters peuvent également effectuer ajoute, met à jour et suppressions sur la base de données pour conserver les modifications que vous apportez au jeu de données. Vous pouvez également émettre des commandes globales qui ne sont pas liées à une table spécifique.
 
 > [!NOTE]
-> Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET Framework.
+> Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET.
 
 Pour plus d’informations sur les opérations du TableAdapter, vous pouvez ignorer directement à une des rubriques suivantes :
 
