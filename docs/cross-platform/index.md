@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 126e7058a16738d38ea78c2e71cb5476d3718a93
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 128ed717e44f90bdfaa3ff2f565a3edb4a5eb415
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261103"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715288"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentation du développement mobile avec C++
 
@@ -92,7 +92,7 @@ Créez des applications C++ natives pour iOS, Android et Windows avec Visual Stu
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE et outils de développement Visual C++</a><p>
+                        <p><a href="/cpp/ide/writing-and-refactoring-code">Lecture et écriture de code</a><p>
                     </div>
                 </div>
             </div>
