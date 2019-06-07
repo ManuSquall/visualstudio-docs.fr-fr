@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261318"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501175"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
 Pour plus d’informations sur l’accessibilité du clavier, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette rubrique répertorie les raccourcis par défaut propres au profil de développement général, que vous avez peut-être choisi en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez identifier le raccourci d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
+Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette page répertorie les raccourcis par défaut propres au profil **Général**, que vous avez peut-être choisi en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez identifier le raccourci d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
 
 Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
-
-Les sections du tableau suivant incluent des commandes globales, au sens où vous pouvez y accéder en tout point de Visual Studio à l'aide des raccourcis clavier indiqués :
 
 |||||
 |-|-|-|-|
 |[Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edition](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus contextuels de l’éditeur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus contextuels Projet et Solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus contextuels de l'éditeur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus contextuels Projet et Solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Générer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Fichier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactoriser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Outils](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menus contextuels de l’affichage de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Aide](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Affichage](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Déboguer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Équipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Fenêtre](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Global
+## <a name="global-shortcuts"></a>Raccourcis globaux
+
+Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utiliser lors de n’importe quelle fenêtre de Visual Studio est active.
 
 ### <a name="bkmk_analyze"></a> Analyser
 
@@ -161,6 +161,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.Cut|**Ctrl+X**<br /><br /> ou<br /><br /> **Maj+Suppr**|
 |Edit.CycleClipboardRing|**Ctrl+Maj+V**<br /><br /> ou<br /><br /> **Ctrl+Maj+Inser**|
 |Edit.Delete|**Supprimer**|
+|Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Maj + F12**|
 |Edit.FindinFiles|**Ctrl+Maj+F**|
@@ -170,11 +171,12 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.FindPreviousSelected|**Ctrl+Maj+F3**|
 |Edit.GenerateMethod|**Ctrl+K, Ctrl+M**|
 |Edit.GoTo|**Ctrl+G**|
+|Edit.GotoAll|**Ctrl+,** ou **Ctrl+T**|
 |Edit.GoToDeclaration|**Ctrl + F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Maj+F8**|
+|Edit.GoToMember|**CTRL+1, Ctrl+M** ou **Ctrl+1, M** ou **Alt+\\**|
+|Edit.GoToNextLocation|**F8** (erreur suivante dans la Liste d’erreurs ou une fenêtre de production)|
+|Edit.GoToPrevLocation|**Maj+F8** (erreur précédente dans la Liste d’erreurs ou une fenêtre de production)|
 |Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
 |Edit.MoveControlDown|**Ctrl+Bas**|
 |Edit.MoveControlDownGrid|**Bas**|
@@ -184,10 +186,9 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.MoveControlRightGrid|**Droite**|
 |Edit.MoveControlUp|**Ctrl+Haut**|
 |Edit.MoveControlUpGrid|**Haut**|
-|Edit.NavigateTo|**Ctrl+,**|
 |Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Maj+K, Ctrl+Maj+N**|
-|Edit.OpenFile|**Ctrl+Maj+G**|
+|Edit.OpenFile|**CTRL+MAJ+G** (ouvre le nom du fichier sous le curseur)|
 |Edit.Paste|**Ctrl+V**<br /><br /> ou<br /><br /> **Maj+Inser**|
 |Edit.PreviousBookmark|**Ctrl+K, Ctrl+P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl+Maj+K, Ctrl+Maj+P**|
@@ -346,7 +347,6 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Maj+Alt+F12, Ctrl+Maj+Alt+F12**|
-|Tools.GoToCommandLine|**Ctrl+/**|
 
 ### <a name="bkmk_view"></a> Affichage
 
@@ -354,7 +354,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |--------------| - |
 |View.AllWindows|**Maj+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
-|View.Backward|**Alt+Gauche**|
+|View.Backward|**ALT+flèche gauche** (fonctions différentes de View.NavigateBackward dans l’éditeur de texte)|
 |View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
 |View.BrowseNext|**Ctrl+Maj+1**|
 |View.BrowsePrevious|**Ctrl+Maj+2**|
@@ -369,7 +369,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.ErrorList|**Ctrl+\\, E**<br /><br /> ou<br /><br /> **Ctrl+\\, Ctrl+E**|
 |View.F#Interactive|**Ctrl+Alt+F**|
 |View.FindSymbolResults|**Ctrl+Alt+F12**|
-|View.Forward|**Alt+Droite**|
+|View.Forward|**ALT+flèche droite** (fonctions différentes de View.NavigateForward dans l’éditeur de texte)|
 |View.ForwardBrowseContext|**Ctrl+Maj+7**|
 |View.FullScreen|**Maj+Alt+Entrée**|
 |View.NavigateBackward|**Ctrl+-**|
@@ -379,7 +379,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K, Ctrl+R**|
 |View.Output|**Ctrl+Alt+O** (lettre « O »)|
-|View.PopBrowseContex|**Ctrl+Maj+8**|
+|View.PopBrowseContext|**CTRL+MAJ+8** (C++ uniquement)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Maj+F4**|
 |View.ResourceView|**Ctrl+Maj+E**|
@@ -779,7 +779,6 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 | Edit.CharRight | **Droite** |
 | Edit.CharRightExtend | **Maj+Droite** |
 | Edit.CharRightExtendColumn | **Maj+Alt+Droite** |
-| Edit.CharTranspose | **Ctrl + T** |
 | Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
 | Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |

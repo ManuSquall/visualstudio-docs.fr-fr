@@ -1,6 +1,6 @@
 ---
 title: 'Étape 1 : Créer un projet Application Windows Forms'
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979856"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501056"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : Créer un projet Application Windows Forms
 
@@ -28,14 +28,13 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 ## <a name="open-visual-studio-2017"></a>Ouvrez Visual Studio 2017.
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**. La boîte de dialogue doit se présenter comme suit.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**. La boîte de dialogue doit ressembler à la capture d’écran suivante.
 
-     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>
-*Boîte de dialogue **Nouveau projet***
+     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>***Boîte de dialogue*** *Nouveau projet*
 
-2. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**.
+2. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
 
-3. Dans la liste des modèles, choisissez **Application Windows Forms (.NET Framework)** . Nommez le nouveau formulaire **PictureViewer**, puis sélectionnez le bouton **OK**.
+3. Dans la liste des modèles, choisissez **Application Windows Forms (.NET Framework)** . Nommez le nouveau formulaire *PictureViewer*, puis sélectionnez le bouton **OK**.
 
     >[!NOTE]
     >Si vous ne voyez pas le modèle **Application Windows Forms (.NET Framework)** , utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.<br/><br/>![Charge de travail de développement .NET Desktop dans Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Pour plus d’informations, consultez la page [Installer Visual Studio](../install/install-visual-studio.md).
@@ -50,7 +49,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes.
 
    Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application Windows Forms (.NET Framework)** , puis choisissez **Suivant**.
 
@@ -59,13 +58,13 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
-   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement .NET Desktop**.
-   > 
+   >
    > ![Charge de travail .NET Core dans Visual Studio Installer](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. 
+   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail.
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *PictureViewer* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
 

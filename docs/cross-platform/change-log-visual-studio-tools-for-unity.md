@@ -1,7 +1,7 @@
 ---
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403205"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327355"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="4110"></a>4.1.1.0
+ Publication : 24 mai 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration :**
+
+    - Mise à jour de l’API MonoBehaviour vers 2019.1.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+    - Résolution des avertissements et erreurs de rapports à sortir lorsque le build léger est activé.
+    
+    - Résolution des performances du build léger.
+
+## <a name="4100"></a>4.1.0.0
+ Publication : 21 mai 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration :**
+
+    - Support ajouté pour la nouvelle API de lot pour recharger des projets plus rapidement.
+    
+    - Build complète désactivée pour les projets Unity, en faveur de l’utilisation des erreurs et des avertissements IntelliSense. En effet Unity crée une solution Visual Studio avec des projets de bibliothèque de classes qui représentent ce qu’Unity fait en interne. Cela étant dit, le résultat de la build dans Visual Studio n’est jamais utilisé ni prélevé par Unity lorsque leur pipeline de compilation est fermée. La génération dans Visual Studio consomme des ressources pour rien. Si vous avez besoin d’une build complète, car vous disposez d’outils ou d’une installation qui en dépend, vous pouvez désactiver cette optimisation (Outils/Options/Outils pour Unity/Désactiver la build complète de projets). 
+
+    - Affichez automatiquement l’Explorateur de projets Unity (UPE) lorsqu’un projet Unity est chargé. L’UPE sera ancré en regard de l’Explorateur de solutions.
+    
+    - Mécanisme d’extraction de nom de projet mis à jour avec Unity 2019.x.
+
+    - Support ajouté pour les packages Unity dans l’UPE. Seuls les packages référencés (à l’aide de manifest.json dans le dossier ```Packages```) et les packages locaux (incorporés dans le dossier ```Packages```) sont visibles.
+    
+- **Génération de projet :**
+
+    - Conservation des propriétés externes lors du traitement du fichier solution.
+
+- **Évaluation :**
+
+    - Support ajouté pour les noms qualifiés d’alias (uniquement l’espace de noms global pour l’instant). Par conséquent, l’évaluateur d’expression accepte désormais les types utilisant le formulaire global::namespace.type.
+    
+    - Support ajouté pour le formulaire ```pointer[index]```, sémantiquement identique au formulaire ```*(pointer+index)``` de déréférencement du pointeur.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+    - Résolution des problèmes de dépendance avec Microsoft.VisualStudio.MPF.
+    
+    - Résolution de la liaison du lecteur UWP, sans aucun projet chargé.
+    
+    - Résolution de l’actualisation des bases de données de composants automatiques lorsque Visual Studio n’a pas encore été joint.
+    
+    - Résolution des problèmes de thème avec des étiquettes et des cases à cocher.
+    
+- **Débogueur :**
+
+    - Résolution de l’exécution pas à pas avec les constructeurs statiques.
 
 ## <a name="4005"></a>4.0.0.5
  Publication : 27 février 2019
