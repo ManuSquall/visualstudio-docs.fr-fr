@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 53e7c0232406462a4c5938fd3f971189c9b2daca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715159"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745070"
 ---
 # <a name="usage-warnings"></a>avertissements liés à l’utilisation
 
@@ -56,7 +56,7 @@ Avertissements d’utilisation prend en charge l’utilisation correcte de .NET.
 |[CA2225 : Surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Une surcharge d'opérateur a été détectée, et la méthode de substitution nommée attendue n'a pas été trouvée. Le membre de substitution nommé donne accès à la même fonctionnalité que l’opérateur et est fourni pour les développeurs qui programment dans les langages qui ne prennent pas en charge les opérateurs surchargés.|
 |[CA2226 : Les opérateurs doivent contenir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Un type implémente l’égalité ou l’opérateur d’inégalité et n’implémente pas l’opérateur opposé.|
 |[CA2227 : Propriétés de collection doivent être en lecture seule](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Une propriété de collection accessible en écriture permet à un utilisateur de remplacer la collection par une collection différente. Une propriété en lecture seule empêche le remplacement de la collection, mais permet quand même aux membres individuels d’être définis.|
-|[CA2228 : Ne sont pas fournies de formats de ressources non commercialisés](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Les fichiers de ressources qui ont été créés à l’aide de versions préliminaires du .NET Framework n’est peut-être pas utilisables par les versions prises en charge du .NET Framework.|
+|[CA2228 : Ne sont pas fournies de formats de ressources non commercialisés](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Les fichiers de ressources qui ont été créés à l’aide de versions préliminaires de .NET n’est peut-être pas utilisables par les versions prises en charge de .NET.|
 |[CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)|Pour corriger une violation de cette règle, implémentez le constructeur de sérialisation. Dans le cas d'une classe sealed, rendez le constructeur privé ; sinon, attribuez-lui l'état protégé.|
 |[CA2230 : Utilisez params pour les arguments de variables](../code-quality/ca2230-use-params-for-variable-arguments.md)|Un type public ou protégé contient une méthode publique ou protégée qui utilise la convention d’appel VarArgs au lieu du mot clé params.|
 |[CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Un type valeur se substitue `Object.Equals` mais n’implémente ne pas l’opérateur d’égalité.|

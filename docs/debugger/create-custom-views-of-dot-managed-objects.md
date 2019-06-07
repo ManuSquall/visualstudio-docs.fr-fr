@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564006"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744797"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Créer des vues personnalisées d’objets (C#, Visual Basic, C++)
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.
@@ -41,7 +41,7 @@ Pour C++ code, vous pouvez ajouter des expansions de type de données personnali
 
 Dans C#, Visual Basic, et C++ (C++code /CLI uniquement), vous pouvez ajouter des expansions aux données personnalisées à l’aide <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, et <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
-Dans le code [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic ne prend pas en charge l'attribut DebuggerBrowsable. Cette limitation a été supprimée dans les versions récentes de .NET Framework.
+Dans le code .NET Framework 2.0, Visual Basic ne prend pas en charge l’attribut DebuggerBrowsable. Cette limitation a été supprimée dans les versions récentes de .NET Framework.
 
 ## <a name="visualizers"></a>Visualiseurs
 
