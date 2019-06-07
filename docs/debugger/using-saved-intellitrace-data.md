@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408620"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746151"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>À l’aide des données IntelliTrace enregistrées (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
     |**Source**|**Consultez**|
     |----------------|-------------|
     |Session IntelliTrace dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community).|[Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)|
-    |Session de test dans Microsoft Test Manager. Cela lie un fichier .iTrace à un élément de travail de Team Foundation Server.|[Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, seul ou avec System Center 2012 R2 Operations Manager, pour les applications web ASP.NET et les applications SharePoint en cours d’exécution dans le déploiement|-   [Diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md)<br />-   [Nouveautés de System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Que voulez-vous faire ?
@@ -67,7 +66,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 > Si vous avez fermé le fichier IntelliTrace pendant le débogage, vous pouvez le rouvrir facilement. Accédez au menu **Déboguer** , choisissez **IntelliTrace**, **Afficher le résumé du journal**. Vous pouvez également choisir **Afficher le résumé du journal** dans la fenêtre **IntelliTrace** . Cette commande est disponible uniquement lorsque vous procédez à un débogage à l’aide d’IntelliTrace.
 
 ## <a name="Understand"></a> Comprendre le fichier journal IntelliTrace
- Certaines des sections suivantes du fichier .iTrace apparaissent uniquement si vous collectez les données à partir d’une source particulière, par exemple, depuis le Gestionnaire de tests ou les applications SharePoint.
+ Certaines des sections suivantes dans le fichier .iTrace apparaissent uniquement si vous collectez des données à partir d’une source particulière, par exemple, à partir d’applications SharePoint.
 
 |**Section**|**Contient**|**Source de la collection**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |[Analyse](#Analysis)|Pour les applications SharePoint 2010 et SharePoint 2013 uniquement. Diagnostiquer les événements IntelliTrace et SharePoint, tels que les événements de débogueur, les événements ULS, les exceptions non gérées et autres données que Microsoft Monitoring Agent a enregistrées.|Microsoft Monitoring Agent, soit collecteur autonome ou avec System Center 2012 R2 Operations Manager|
 |[Informations système](#SystemInfo)|Paramètres et spécifications du système hôte|Toutes les sources|
 |[Liste de threads](#ThreadsList)|Threads exécutés pendant la collection|Toutes les sources|
-|[Données de test](#TestData)|Étapes de test et leurs résultats à partir d’une session de test|Gestionnaire de tests|
 |[Modules](#Modules)|Modules qui ciblent le processus chargé par ordre de chargement.|Toutes les sources|
 |[Requête Web](#Modules)|Données de la demande Web de production IIS applications web et SharePoint 2010 et SharePoint 2013|Microsoft Monitoring Agent et le collecteur autonome|
 
@@ -84,7 +82,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 - Pour trier les données, choisissez un en-tête de colonne.
 
-- Pour filtrer les données, utilisez la zone de recherche. La recherche de texte brut est effectuée dans toutes les colonnes, sauf celles de date. Vous pouvez également filtrer les recherches sur une colonne spécifique avec un filtre par colonne. Saisissez le nom de la colonne sans aucun espace, ni deux-points (**:**), et la valeur de recherche. Insérez à la suite un point-virgule (**;**) pour ajouter une autre valeur de colonne et de recherche.
+- Pour filtrer les données, utilisez la zone de recherche. La recherche de texte brut est effectuée dans toutes les colonnes, sauf celles de date. Vous pouvez également filtrer les recherches sur une colonne spécifique avec un filtre par colonne. Saisissez le nom de la colonne sans aucun espace, ni deux-points ( **:** ), et la valeur de recherche. Insérez à la suite un point-virgule ( **;** ) pour ajouter une autre valeur de colonne et de recherche.
 
      Par exemple, pour rechercher les événements de performance qui ont le mot « lent » dans la colonne **Description** , tapez :
 
@@ -227,9 +225,6 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Name**|Nom du thread. Les threads sans nom apparaissent en tant que « \<Sans nom> ».|
 |**Heure de début**|Heure de création du thread.|
 |**Heure de fin**|Heure à laquelle le thread s’est terminé|
-
-### <a name="TestData"></a> Données de test
- Examinez les données IntelliTrace que le Gestionnaire de tests a enregistrées pendant le test de votre application.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Pour démarrer le débogage à partir d’une étape de test spécifique
 

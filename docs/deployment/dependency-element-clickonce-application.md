@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900356"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745953"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; , élément (application ClickOnce)
 Identifie une dépendance de plateforme ou l’assembly qui est requise pour l’application.
@@ -92,13 +92,13 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
  Le `dependency` élément n’a pas d’attributs et contient les éléments enfants suivants.
 
 ### <a name="dependentos"></a>dependentOS
- Optionnel. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
+ Facultatif. Contient le `osVersionInfo` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
 
  `dependentOS` prend en charge les attributs suivants.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`supportUrl`|Optionnel. Spécifie une URL de prise en charge pour la plateforme dépendante. Cette URL est affichée à l’utilisateur si la plateforme nécessaire est trouvée.|
+|`supportUrl`|Facultatif. Spécifie une URL de prise en charge pour la plateforme dépendante. Cette URL est affichée à l’utilisateur si la plateforme nécessaire est trouvée.|
 |`description`|Facultatif. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|
 
 ### <a name="osversioninfo"></a>osVersionInfo
@@ -114,11 +114,11 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |`buildNumber`|Obligatoire. Spécifie le numéro de build du système d’exploitation.|
 |`servicePackMajor`|Obligatoire. Spécifie le numéro majeur de service pack du système d’exploitation.|
 |`servicePackMinor`|Facultatif. Spécifie le numéro secondaire de service pack du système d’exploitation.|
-|`productType`|Optionnel. Identifie la valeur de type de produit. Les valeurs valides sont `server`, `workstation` et `domainController`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `workstation`.|
-|`suiteType`|Optionnel. Identifie une suite de produits disponible sur le système, ou le type de configuration du système. Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` et `terminal`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `professional`.|
+|`productType`|Facultatif. Identifie la valeur de type de produit. Les valeurs valides sont `server`, `workstation` et `domainController`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `workstation`.|
+|`suiteType`|Facultatif. Identifie une suite de produits disponible sur le système, ou le type de configuration du système. Les valeurs valides sont `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` et `terminal`. Par exemple, pour Windows 2000 Professionnel, cette valeur d’attribut est `professional`.|
 
 ### <a name="dependentassembly"></a>dependentAssembly
- Optionnel. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
+ Facultatif. Contient le `assemblyIdentity` élément. Le `dependentOS` et `dependentAssembly` éléments s’excluent mutuellement : un ou l’autre doit exister pour un `dependency` élément, mais pas les deux.
 
  `dependentAssembly` a les attributs suivants.
 
@@ -126,7 +126,7 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |-----------------------| - |
 | `dependencyType` | Obligatoire. Spécifie le type de dépendance. Les valeurs valides sont `preprequisite` et `install`. Un `install` assembly est installé dans le cadre de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Un `prerequisite` assembly doit être présent dans le global assembly cache (GAC) avant le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut installer. |
 | `allowDelayedBinding` | Obligatoire. Spécifie si l’assembly peut être chargé par programmation lors de l’exécution. |
-| `group` | Facultatif. Si le `dependencyType` attribut a la valeur `install`, désigne un groupe nommé d’assemblys qui s’installent uniquement à la demande. Pour plus d’informations, consultez [Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si la valeur `framework` et `dependencyType` attribut a la valeur `prerequisite`, désigne l’assembly dans le cadre du .NET Framework. Le global assembly cache (GAC) n’est pas activé pour cet assembly lors de l’installation sur [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] et versions ultérieures. |
+| `group` | Facultatif. Si le `dependencyType` attribut a la valeur `install`, désigne un groupe nommé d’assemblys qui s’installent uniquement à la demande. Pour plus d’informations, consultez [Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si la valeur `framework` et `dependencyType` attribut a la valeur `prerequisite`, désigne l’assembly dans le cadre du .NET Framework. Le global assembly cache (GAC) n’est pas activé pour cet assembly lors de l’installation de .NET Framework 4 et versions ultérieures. |
 | `codeBase` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. Le chemin d’accès de l’assembly dépendant. Peut être un chemin d’accès absolu ou un chemin d’accès relatif de code du manifeste base. Ce chemin d’accès doit être un URI valid afin que le manifeste d’assembly soit valide. |
 | `size` | Obligatoire quand le `dependencyType` attribut a la valeur `install`. La taille de l’assembly dépendant, en octets. |
 
@@ -137,9 +137,9 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |---------------|-----------------|
 |`name`|Obligatoire. Identifie le nom de l’application.|
 |`version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|
-|`publicKeyToken`|Optionnel. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|
-|`processorArchitecture`|Optionnel. Spécifie le processeur. Les valeurs valides sont `x86` pour 32 bits Windows et `I64` pour Windows de 64 bits.|
-|`language`|Optionnel. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|
+|`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique utilisée pour signer le catalogue doit être au moins 2 048 bits.|
+|`processorArchitecture`|Facultatif. Spécifie le processeur. Les valeurs valides sont `x86` pour 32 bits Windows et `I64` pour Windows de 64 bits.|
+|`language`|Facultatif. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|
 
 ### <a name="hash"></a>hash
  Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. L’élément `hash` ne comporte pas d’attributs.

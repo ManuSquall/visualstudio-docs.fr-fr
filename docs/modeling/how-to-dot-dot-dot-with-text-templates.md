@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993545"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747538"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans Visual Studio fournissent un moyen utile de génération de texte quelconque. Vous pouvez utiliser des modèles de texte pour générer du texte en cours d’exécution dans le cadre de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique récapitule les plus fréquemment posées « Comment faire... ? » questions.
@@ -45,13 +45,14 @@ Modèles de texte dans Visual Studio fournissent un moyen utile de génération 
      Dans votre code, utilisez `this.Host.ResolvePath(filename)` pour obtenir le chemin d’accès complet du fichier.
 
 ### <a name="invoke-methods-from-a-template"></a>Appeler des méthodes à partir d’un modèle
- Si les méthodes existent déjà, par exemple, dans la norme [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes :
+
+Si les méthodes existent déjà, par exemple, dans les classes .NET :
 
 - Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
 
    Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Si vous écrivez vous-même les méthodes :
+Si vous écrivez vous-même les méthodes :
 
 - Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.
 

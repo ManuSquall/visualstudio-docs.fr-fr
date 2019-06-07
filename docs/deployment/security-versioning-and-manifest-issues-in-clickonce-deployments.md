@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263486"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745603"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, à la gestion de version et aux manifestes dans les déploiements ClickOnce
 
@@ -59,7 +59,7 @@ Cette erreur peut se produire uniquement si vous modifiez votre [!INCLUDE[ndptec
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Spécifiez les assemblys .NET Framework individuels dans le manifeste
 
-Votre application ne sera pas chargé si vous avez modifié manuellement un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement pour référencer une version antérieure d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] assembly. Par exemple, si vous avez ajouté une référence à l’assembly System.Net pour une version de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] avant la version spécifiée dans le manifeste, une erreur se produit. En général, vous ne devez pas essayer spécifier des références à la personne [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] assemblys, comme la version de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] par rapport à laquelle votre application s’exécute est spécifié en tant que dépendance dans le manifeste d’application.
+Votre application ne sera pas chargé si vous avez modifié manuellement un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement pour référencer une version antérieure d’un assembly .NET Framework. Par exemple, si vous avez ajouté une référence à l’assembly System.Net pour une version de .NET Framework antérieures à la version spécifiée dans le manifeste, une erreur se produit. En règle générale, vous ne devez pas tenter de spécifier des références aux assemblys .NET Framework individuels, comme la version du .NET Framework sur laquelle votre application s’exécute est spécifiée en tant que dépendance dans le manifeste d’application.
 
 ## <a name="manifest-parsing-issues"></a>L’analyse des problèmes du manifeste
 

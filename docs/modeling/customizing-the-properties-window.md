@@ -9,43 +9,48 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5fc4e6086b8e4d98509fd6797f4fa99ae5e61329
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414737"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744715"
 ---
-# <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
+# <a name="customize-the-properties-window"></a>Personnaliser la fenêtre Propriétés
+
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
 
-## <a name="names-descriptions-and-categories"></a>Noms, Descriptions et les catégories
- **Nom et nom complet**. Dans votre définition d’une propriété de domaine, le nom complet de la propriété est le nom qui apparaît lors de l’exécution dans la fenêtre Propriétés. En revanche, le nom est utilisé lorsque vous écrivez du code de programme pour mettre à jour la propriété. Le nom doit être un nom d’alphanumériques CLR correct, mais le nom d’affichage peut contenir des espaces.
+## <a name="names-descriptions-and-categories"></a>Noms, descriptions et les catégories
 
- Lorsque vous définissez le nom d’une propriété dans la définition DSL, son nom d’affichage est automatiquement définie à une copie du nom. Si vous écrivez un nom de casse Pascal tels que « FuelGauge », le nom d’affichage contiendra automatiquement un espace : « Jauge de carburant ». Toutefois, vous pouvez définir explicitement le nom d’affichage à une autre valeur.
+**Nom et nom complet**. Dans votre définition d’une propriété de domaine, le nom complet de la propriété est le nom qui apparaît lors de l’exécution dans la fenêtre Propriétés. En revanche, le nom est utilisé lorsque vous écrivez du code de programme pour mettre à jour la propriété. Le nom doit être un nom d’alphanumériques CLR correct, mais le nom d’affichage peut contenir des espaces.
 
- **Description**. La Description d’une propriété de domaine s’affiche dans deux emplacements :
+Lorsque vous définissez le nom d’une propriété dans la définition DSL, son nom d’affichage est automatiquement définie à une copie du nom. Si vous écrivez un nom de casse Pascal tels que « FuelGauge », le nom d’affichage contiendra automatiquement un espace : « Jauge de carburant ». Toutefois, vous pouvez définir explicitement le nom d’affichage à une autre valeur.
+
+**Description**. La Description d’une propriété de domaine s’affiche dans deux emplacements :
 
 - Dans la partie inférieure de la fenêtre Propriétés lorsque l’utilisateur sélectionne la propriété. Vous pouvez l’utiliser pour expliquer à l’utilisateur ce que représente la propriété.
 
 - Dans le code du programme généré. Si vous utilisez les fonctionnalités de la documentation pour extraire la documentation de l’API, il apparaît comme la description de cette propriété dans l’API.
 
-  **Category**. Une catégorie est un en-tête dans la fenêtre Propriétés.
+**Category**. Une catégorie est un en-tête dans la fenêtre Propriétés.
 
-## <a name="exposing-style-features"></a>Exposition des fonctionnalités de Style
- Certaines des fonctionnalités dynamiques d’éléments de graphiques peuvent être représentés ou *exposées* en tant que propriétés de domaine. Une fonctionnalité qui a été exposée de cette manière peut être mis à jour par l’utilisateur et peut facilement être mis à jour par du code de programme.
+## <a name="expose-style-features"></a>Exposer les fonctionnalités de style
 
- Avec le bouton droit à une classe de forme dans la définition DSL, pointez sur **ajouter les objets exposés**, puis choisissez une fonctionnalité.
+Certaines des fonctionnalités dynamiques d’éléments de graphiques peuvent être représentés ou *exposées* en tant que propriétés de domaine. Une fonctionnalité qui a été exposée de cette manière peut être mis à jour par l’utilisateur et peut facilement être mis à jour par du code de programme.
 
- Sur les formes, vous pouvez exposer le **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** et **FillGradientMode** propriétés. Sur les connecteurs, vous pouvez exposer le **couleur**`,`**TextColor**, **DashStyle**, et **épaisseur** propriétés. Sur les diagrammes, vous pouvez exposer le **FillColor** et **TextColor** propriétés.
+Avec le bouton droit à une classe de forme dans la définition DSL, pointez sur **ajouter les objets exposés**, puis choisissez une fonctionnalité.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Transfert : Affichage des propriétés des éléments connexes
- Lorsque l’utilisateur de votre DSL sélectionne un élément dans un modèle, les propriétés de l’élément sont affichées dans la fenêtre Propriétés. Toutefois, vous pouvez également afficher les propriétés des éléments connexes spécifiés. Cela est utile si vous avez défini un groupe d’éléments qui fonctionne ensemble. Par exemple, vous pouvez définir un principal et un élément facultatif du plug-in. Si l’élément principal est mappé à une forme et l’autre n’est pas, il est utile voir toutes leurs propriétés comme s’ils étaient sur un seul élément.
+Sur les formes, vous pouvez exposer le **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** et **FillGradientMode** propriétés. Sur les connecteurs, vous pouvez exposer le **couleur**`,`**TextColor**, **DashStyle**, et **épaisseur** propriétés. Sur les diagrammes, vous pouvez exposer le **FillColor** et **TextColor** propriétés.
 
- Cet effet est nommé *transfert de propriété*, et il se produit automatiquement dans plusieurs cas. Dans d’autres cas, vous pouvez obtenir la propriété de transfert en définissant un descripteur de type de domaine.
+## <a name="forwarding-display-properties-of-related-elements"></a>Transfert : Afficher les propriétés des éléments connexes
+
+Lorsque l’utilisateur de votre DSL sélectionne un élément dans un modèle, les propriétés de l’élément sont affichées dans la fenêtre Propriétés. Toutefois, vous pouvez également afficher les propriétés des éléments connexes spécifiés. Cela est utile si vous avez défini un groupe d’éléments qui fonctionne ensemble. Par exemple, vous pouvez définir un principal et un élément facultatif du plug-in. Si l’élément principal est mappé à une forme et l’autre n’est pas, il est utile voir toutes leurs propriétés comme s’ils étaient sur un seul élément.
+
+Cet effet est nommé *transfert de propriété*, et il se produit automatiquement dans plusieurs cas. Dans d’autres cas, vous pouvez obtenir la propriété de transfert en définissant un descripteur de type de domaine.
 
 ### <a name="default-property-forwarding-cases"></a>Cas de transfert de propriété par défaut
- Lorsque l’utilisateur sélectionne une forme ou connecteur ou un élément dans l’Explorateur, les propriétés suivantes sont affichent dans la fenêtre Propriétés :
+
+Lorsque l’utilisateur sélectionne une forme ou connecteur ou un élément dans l’Explorateur, les propriétés suivantes sont affichent dans la fenêtre Propriétés :
 
 - Les propriétés de domaine qui sont définies sur la classe de domaine de l’élément de modèle, y compris ceux qui sont définis dans les classes de base. Une exception est les propriétés du domaine pour lequel vous avez défini **Is Browsable** à `False`.
 
@@ -55,15 +60,16 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 - Propriétés de domaine qui sont définies sur la forme sélectionnée ou le connecteur.
 
-### <a name="adding-property-forwarding"></a>Ajout de transfert de propriété
- Pour transférer une propriété, vous définissez un descripteur de type de domaine. Si vous avez une relation de domaine entre deux classes de domaine, vous pouvez utiliser un descripteur de type de domaine pour définir une propriété de domaine dans la première classe à la valeur d’une propriété de domaine dans la deuxième classe de domaine. Par exemple, si vous disposez d’une relation entre un **livre** de classe de domaine et un **auteur** de classe de domaine, vous pouvez utiliser un descripteur de type de domaine pour rendre le **nom** propriété d’un Du livre **auteur** s’affichent dans la fenêtre Propriétés lorsque l’utilisateur sélectionne le livre.
+### <a name="add-property-forwarding"></a>Ajouter le transfert de propriété
+
+Pour transférer une propriété, vous définissez un descripteur de type de domaine. Si vous avez une relation de domaine entre deux classes de domaine, vous pouvez utiliser un descripteur de type de domaine pour définir une propriété de domaine dans la première classe à la valeur d’une propriété de domaine dans la deuxième classe de domaine. Par exemple, si vous disposez d’une relation entre un **livre** de classe de domaine et un **auteur** de classe de domaine, vous pouvez utiliser un descripteur de type de domaine pour rendre le **nom** propriété d’un Du livre **auteur** s’affichent dans la fenêtre Propriétés lorsque l’utilisateur sélectionne le livre.
 
 > [!NOTE]
 > Transfert de propriété affecte uniquement la fenêtre Propriétés lorsque l’utilisateur modifie un modèle. Il ne définit pas une propriété de domaine sur la classe réceptrice. Si vous souhaitez accéder à la propriété de domaine transférés dans d’autres parties de la définition DSL ou dans le code de programme, vous devez accéder à l’élément de transfert.
 
- La procédure suivante suppose que vous avez créé une solution DSL. Les quelques premières étapes résument les conditions préalables.
+La procédure suivante suppose que vous avez créé une solution DSL. Les quelques premières étapes résument les conditions préalables.
 
-##### <a name="to-forward-a-property-from-another-element"></a>Pour transférer une propriété à partir d’un autre élément
+#### <a name="forward-a-property-from-another-element"></a>Transférer une propriété à partir d’un autre élément
 
 1. Créer un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution qui contient au moins deux classes, qui sont appelées dans cet exemple **livre** et **auteur**. Il doit y avoir une relation d’un de ces types entre **livre** et **auteur**.
 
@@ -90,9 +96,10 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 8. Dans un diagramme de modèle, créer un livre, un auteur et les lier à l’aide de la relation de référence. Sélectionnez l’élément « book », et dans la fenêtre Propriétés vous devez voir le nom de l’auteur en plus des propriétés du livre. Modifier le nom de l’auteur lié, ou lier le livre à un autre auteur et observez que le nom de l’auteur du livre change.
 
 ## <a name="custom-property-editors"></a>Éditeurs de propriétés personnalisées
- La fenêtre de propriété fournit une expérience pour le type de chaque propriété de domaine d’édition par défaut approprié. Par exemple, pour un type énuméré, l’utilisateur voit une liste déroulante, et pour une propriété numérique, l’utilisateur peut entrer des chiffres. Cela vaut uniquement pour les types intégrés. Si vous spécifiez un type externe, l’utilisateur sera en mesure de voir les valeurs de la propriété, mais pas le modifier.
 
- Toutefois, vous pouvez spécifier les éditeurs et les types suivants :
+La fenêtre de propriété fournit une expérience pour le type de chaque propriété de domaine d’édition par défaut approprié. Par exemple, pour un type énuméré, l’utilisateur voit une liste déroulante, et pour une propriété numérique, l’utilisateur peut entrer des chiffres. Cela vaut uniquement pour les types intégrés. Si vous spécifiez un type externe, l’utilisateur sera en mesure de voir les valeurs de la propriété, mais pas le modifier.
+
+Toutefois, vous pouvez spécifier les éditeurs et les types suivants :
 
 1. Un autre éditeur qui est utilisé avec un type standard. Par exemple, vous pouvez spécifier un éditeur du chemin d’accès de fichier pour une propriété de chaîne.
 
@@ -100,11 +107,11 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 3. Un éditeur de .NET tels que l’éditeur de chemin d’accès de fichier, ou vous pouvez créer votre propre propriété personnalisée éditeur.
 
-    Une conversion entre un type externe et un type tel que chaîne, qui fournit un éditeur par défaut.
+   Une conversion entre un type externe et un type tel que chaîne, qui fournit un éditeur par défaut.
 
    Dans une solution DSL, un *type externe* est n’importe quel type qui n’est pas un des types simples (par exemple, Boolean ou Int32) ou chaîne.
 
-#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Pour définir une propriété de domaine qui a un type externe
+### <a name="define-a-domain-property-that-has-an-external-type"></a>Définir une propriété de domaine qui a un type externe
 
 1. Dans **l’Explorateur de solutions**, ajoutez une référence à l’assembly (DLL) qui contient le type externe, dans le **Dsl** projet.
 
@@ -127,8 +134,9 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
    À ce stade, les utilisateurs peuvent afficher les valeurs de la propriété, mais ils ne peuvent pas le modifier. Les valeurs affichées sont obtenues à partir de la `ToString()` (fonction). Vous pouvez écrire du code de programme qui définit la valeur de la propriété, par exemple dans une commande ou une règle.
 
-### <a name="setting-a-property-editor"></a>Définition d’un éditeur de propriétés
- Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :
+### <a name="set-a-property-editor"></a>Définir un éditeur de propriétés
+
+Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -136,13 +144,13 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
    typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Vous pouvez définir l’attribut sur une propriété à l’aide de la **attribut personnalisé** entrée dans la fenêtre Propriétés.
+Vous pouvez définir l’attribut sur une propriété à l’aide de la **attribut personnalisé** entrée dans la fenêtre Propriétés.
 
- Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit être soit <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor>. Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
+Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit être soit <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor>. Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
 
- Vous pouvez spécifier votre propre éditeur, ou dans un éditeur fourni dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor>. Par exemple, procédez comme suit pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
+Vous pouvez spécifier votre propre éditeur ou un éditeur de .NET, tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor>. Par exemple, procédez comme suit pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
 
-##### <a name="to-define-a-file-name-domain-property"></a>Pour définir une propriété de domaine de nom de fichier
+#### <a name="define-a-file-name-domain-property"></a>Définir une propriété de domaine de nom de fichier
 
 1. Ajouter une propriété de domaine à une classe de domaine dans votre définition DSL.
 
@@ -165,21 +173,22 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
     3. Cliquez sur le bouton de sélection. Une boîte de dialogue s’affiche. Sélectionnez un fichier et fermer la boîte de dialogue. Le chemin d’accès de fichier est désormais la valeur de la propriété de domaine.
 
-### <a name="defining-your-own-property-editor"></a>Définir votre propre éditeur de propriété
- Vous pouvez définir votre propre éditeur. Vous faites cela pour autoriser l’utilisateur à modifier un type que vous avez définies, ou pour modifier un type standard d’une façon particulière. Par exemple, vous pouvez autoriser l’utilisateur à entrer une chaîne qui représente une formule.
+### <a name="define-your-own-property-editor"></a>Définir votre propre éditeur de propriété
 
- Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.Drawing.Design.UITypeEditor>. Votre classe doit remplacer :
+Vous pouvez définir votre propre éditeur. Vous faites cela pour autoriser l’utilisateur à modifier un type que vous avez définies, ou pour modifier un type standard d’une façon particulière. Par exemple, vous pouvez autoriser l’utilisateur à entrer une chaîne qui représente une formule.
+
+Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.Drawing.Design.UITypeEditor>. Votre classe doit remplacer :
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, pour interagir avec l’utilisateur et mettre à jour la valeur de propriété.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier que votre éditeur ouvrir une boîte de dialogue ou fournir un menu déroulant.
 
-  Vous pouvez également fournir une représentation graphique de la valeur de propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported`, et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Vous pouvez également fournir une représentation graphique de la valeur de propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported`, et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Ajoutez le code dans un fichier de code séparé dans le **Dsl** projet.
 
- Exemple :
+Exemple :
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -193,7 +202,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 }
 ```
 
- Pour utiliser cet éditeur, définissez le **attribut personnalisé** d’une propriété de domaine à :
+Pour utiliser cet éditeur, définissez le **attribut personnalisé** d’une propriété de domaine à :
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -201,22 +210,23 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
-## <a name="providing-a-drop-down-list-of-values"></a>Fourniture d’une liste déroulante de valeurs
- Vous pouvez fournir une liste de valeurs pour un utilisateur peut choisir.
+## <a name="provide-a-drop-down-list-of-values"></a>Fournir une liste déroulante de valeurs
+
+Vous pouvez fournir une liste de valeurs pour un utilisateur peut choisir.
 
 > [!NOTE]
 > Cette technique fournit une liste de valeurs qui peuvent changer pendant l’exécution. Si vous souhaitez fournir une liste qui ne change pas, envisagez plutôt à l’aide d’un type énuméré comme le type de votre propriété de domaine.
 
- Pour définir une liste de valeurs standard, vous ajoutez à votre propriété de domaine un attribut CLR qui a la forme suivante :
+Pour définir une liste de valeurs standard, vous ajoutez à votre propriété de domaine un attribut CLR qui a la forme suivante :
 
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
 ```
 
- Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le **Dsl** projet. Exemple :
+Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le **Dsl** projet. Exemple :
 
 ```csharp
 /// <summary>

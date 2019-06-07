@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536423"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747135"
 ---
 # <a name="interop-activity-designer"></a>Concepteur d'activités Interop
 
@@ -29,11 +29,7 @@ L'activité <xref:System.Activities.Statements.Interop> gère l'exécution des t
 
 Le **Interop** Concepteur d’activités peut être trouvé dans le **Migration** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils**onglet. Vous pouvez également sélectionner **boîte à outils** à partir de la **vue** menu, ou appuyez sur **Ctrl**+**Alt** + **X**.
 
-Le [Migration](../workflow-designer/migration-activity-designers.md) catégorie qui contient le <xref:System.Activities.Statements.Interop> activité ne s’affiche dans **boîte à outils** si votre projet cible le .NET Framework 4 complet.
-
-Pour les projets c#, vous pouvez recibler le projet pour utiliser le .NET Framework 4 complet en double-cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **Application** onglet, sélectionnez le **NET Framework 4** option dans le **framework cible**. Sélectionnez **Oui** confirmer cette modification.
-
-Pour les projets Visual Basic, vous pouvez recibler le projet pour utiliser le .NET Framework 4 complet en cliquant sur le projet dans **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **compiler** , cliquez sur le **Options avancées de compilation** bouton. Sélectionnez **.Net Framework 4** à partir de la **liste de framework cible**, puis cliquez sur **OK**. Sélectionnez **Oui** confirmer cette modification.
+Le [Migration](../workflow-designer/migration-activity-designers.md) catégorie qui contient le <xref:System.Activities.Statements.Interop> activité apparaît uniquement dans **boîte à outils** si votre projet cible .NET Framework 4 (complète) ou version ultérieure. Si nécessaire, vous pouvez modifier la version du framework que votre projet cible.
 
 Le **Interop** Concepteur d’activités peut être déplacé de **boîte à outils** et déposé sur l’aire du Concepteur de flux de travail chaque fois que les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Suppression de la **Interop** Concepteur d’activités crée un <xref:System.Activities.Statements.Interop> activité avec une valeur par défaut **DisplayName** Interop. Vous pouvez modifier le <xref:System.Activities.Activity.DisplayName%2A> dans l’en-tête de la **Interop** Concepteur d’activités, ou dans le **DisplayName** case de la grille des propriétés.
 

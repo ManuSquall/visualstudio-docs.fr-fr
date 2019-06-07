@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714270"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744698"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 
@@ -58,7 +58,7 @@ Si vous appliquez le <xref:System.Runtime.CompilerServices.InternalsVisibleToAtt
 
 Pour corriger une violation de cette règle, supprimez le type ou ajouter du code qui l’utilise. Si le type contient uniquement `static` méthodes, ajoutez les valeurs suivantes au type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
-- Le `static` modificateur pour C# qui ciblent des types [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] ou version ultérieure.
+- Le `static` modificateur pour C# types qui ciblent .NET Framework 2.0 ou version ultérieure.
 
 - Un constructeur privé pour les types qui ciblent des versions 1.0 et 1.1 du .NET Framework.
 

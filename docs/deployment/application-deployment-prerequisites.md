@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408588"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746057"
 ---
 # <a name="application-deployment-prerequisites"></a>Prérequis pour le déploiement d’applications
 
-Pour que votre application pour installer et exécuter avec succès, d’abord installer tous les composants dont votre application dépend sur l’ordinateur cible. Par exemple, la plupart des applications créées à l’aide [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ont une dépendance sur le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Dans ce cas, la version correcte du common language runtime doit être présente sur l’ordinateur de destination avant que l’application est installée.
+Pour que votre application pour installer et exécuter avec succès, d’abord installer tous les composants dont votre application dépend sur l’ordinateur cible. Par exemple, la plupart des applications créées à l’aide [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ont une dépendance sur le .NET Framework. Dans ce cas, la version correcte du common language runtime doit être présente sur l’ordinateur de destination avant que l’application est installée.
 
  Vous pouvez sélectionner ces conditions préalables dans le **Prerequisites Dialog Box** et installer le .NET Framework et n’importe quel autre package redistribuable dans le cadre de votre installation. Cette pratique est connue sous le nom d’*amorçage*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un programme exécutable Windows nommé *Setup.exe*, également appelé un *programme d’amorçage*. Le programme d'amorçage effectue l'installation des composants requis avant que votre application ne s'exécute. Pour plus d’informations sur la sélection de ces conditions préalables, consultez [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Pour que votre application pour installer et exécuter avec succès, d’abord i
 | **-?, -h, -help** | Affiche une boîte de dialogue d'aide. |
 | **-url, -componentsurl** | Affiche l'URL stockée et l'URL des composants pour cette installation. |
 | **-url=** `location` | Définit l’URL où *Setup.exe* doit rechercher l’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl=** `location` | Définit l’URL où *Setup.exe* doit rechercher les dépendances, par exemple le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl=** `location` | Définit l’URL où *Setup.exe* recherchera les dépendances, telles que le .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Lorsque `true`, télécharge les dépendances à partir de l’emplacement par défaut sur le site du fournisseur. Ce paramètre remplace le **- componentsurl** paramètre. Lorsque `false`, télécharge les dépendances à partir de l’URL spécifiée par **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Système d'exploitation pris en charge

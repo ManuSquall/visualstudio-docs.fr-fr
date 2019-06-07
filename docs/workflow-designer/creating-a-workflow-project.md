@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949797"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747804"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de flux de travail
 
@@ -67,7 +67,7 @@ Si vous choisissez la **Bibliothèque ActivityDesigner** modèle, Visual Studio 
 Pour obtenir un exemple montrant comment implémenter un concepteur d’activités personnalisées, consultez [Comment : Créer un concepteur d’activités personnalisées](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
-> Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées et pour les activités de .NET Framework par défaut.
+> Concepteurs d’activités personnalisées peuvent être utilisés pour les activités personnalisées et pour les activités de .NET par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 

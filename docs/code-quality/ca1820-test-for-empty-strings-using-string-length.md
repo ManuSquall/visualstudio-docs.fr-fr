@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796755"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744648"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820 : Vérifiez la présence de chaînes vides par la longueur de chaîne
 
@@ -38,11 +38,11 @@ Une chaîne est comparée à une chaîne vide à l’aide de <xref:System.Object
 
 Comparer des chaînes à l’aide de la <xref:System.String.Length%2A?displayProperty=nameWithType> propriété ou le <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> méthode est plus rapide que l’utilisation de <xref:System.Object.Equals%2A>. Il s’agit, car <xref:System.Object.Equals%2A> exécute des instructions MSIL très supérieur à soit <xref:System.String.IsNullOrEmpty%2A> ou le nombre d’instructions exécutées pour récupérer le <xref:System.String.Length%2A> propriété valeur et la comparer à zéro.
 
-Pour les chaînes null, <xref:System.Object.Equals%2A> et <xref:System.String.Length%2A> == 0 se comportent différemment. Si vous essayez d’obtenir la valeur de la <xref:System.String.Length%2A> propriété sur une chaîne null, le common language runtime lève un <xref:System.NullReferenceException?displayProperty=fullName>. Si vous effectuez une comparaison entre une chaîne null et une chaîne vide, le common language runtime ne lève pas d’exception et retourne `false`. Test de valeur null n’affecte pas considérablement les performances relatives de ces deux approches. Lorsque vous ciblez .NET Framework 2.0 ou version ultérieure, utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode). Sinon, utilisez le <xref:System.String.Length%2A> == 0 comparaison autant que possible.
+Pour les chaînes null, <xref:System.Object.Equals%2A> et `<string>.Length == 0` se comportent différemment. Si vous essayez d’obtenir la valeur de la <xref:System.String.Length%2A> propriété sur une chaîne null, le common language runtime lève un <xref:System.NullReferenceException?displayProperty=fullName>. Si vous effectuez une comparaison entre une chaîne null et une chaîne vide, le common language runtime ne lève pas d’exception et retourne `false`. Test de valeur null n’affecte pas considérablement les performances relatives de ces deux approches. Lorsque vous ciblez .NET Framework 2.0 ou version ultérieure, utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode). Sinon, utilisez le <xref:System.String.Length%2A> == 0 comparaison autant que possible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, modifiez la comparaison à utiliser le <xref:System.String.Length%2A> propriété et test pour la chaîne null. Si vous ciblez .NET Framework 2.0 ou version ultérieure, utilisez le <xref:System.String.IsNullOrEmpty%2A> (méthode).
+Pour corriger une violation de cette règle, modifiez la comparaison à utiliser le <xref:System.String.IsNullOrEmpty%2A> (méthode).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438178"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746808"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage spécifique à un domaine Windows Forms
+
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) instance d’un DSL, affichant une interface utilisateur du formulaire Windows et l’Explorateur de modèles.
+L’illustration suivante montre l’interface utilisateur un formulaire Windows et l’Explorateur de modèles pour une instance DSL :
 
-## <a name="creating-a-windows-forms-dsl"></a>Création d’un DSL de formulaires Windows
- Le **concepteur WinForm Minimal** modèle DSL crée une solution DSL minimale que vous pouvez modifier pour l’adapter à vos besoins.
+![Instance DSL dans Visual Studio](../modeling/media/dsl-wpf-2.png)
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Pour créer un DSL WinForms minimal
+## <a name="create-a-windows-forms-dsl"></a>Créer un DSL des formulaires Windows
+
+Le **concepteur WinForm Minimal** modèle DSL crée une solution DSL minimale que vous pouvez modifier pour l’adapter à vos besoins.
 
 1. Créer une solution DSL à partir de la **concepteur WinForm Minimal** modèle.
 
@@ -37,7 +39,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
    1. Transformer tous les modèles.
 
-   2. Générer et exécuter l’exemple (**CTRL + F5**).
+   2. Générer et exécuter l’exemple (**Ctrl**+**F5**).
 
    3. Dans l’instance expérimentale de Visual Studio, ouvrez le `Sample` fichier dans le projet de débogage.
 
@@ -62,14 +64,14 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
     - Un fichier nommé `DataBinding.cs` qui contient une définition partielle supplémentaire de `ModelViewControl`. Pour afficher son contenu, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier et choisissez **afficher le Code**.
 
 ### <a name="about-the-ui-project"></a>Sur le projet d’interface utilisateur
- Lorsque vous mettez à jour le fichier de définition DSL pour définir votre propre DSL, vous devrez mettre à jour le contrôle dans le `UI` projet pour afficher votre DSL. Contrairement à la `Dsl` et `DslPackage` projets, l’exemple `UI` projet n’est pas généré à partir de `DslDefinitionl.dsl`. Vous pouvez ajouter des fichiers .tt pour générer le code si vous le souhaitez, bien que cela n’est pas traité dans cette procédure pas à pas.
 
-## <a name="updating-the-dsl-definition"></a>La mise à jour la définition DSL
- Ce qui suit que la définition DSL est utilisée dans cette procédure pas à pas.
+Lorsque vous mettez à jour le fichier de définition DSL pour définir votre propre DSL, vous devrez mettre à jour le contrôle dans le `UI` projet pour afficher votre DSL. Contrairement à la `Dsl` et `DslPackage` projets, l’exemple `UI` projet n’est pas généré à partir de `DslDefinitionl.dsl`. Vous pouvez ajouter des fichiers .tt pour générer le code si vous le souhaitez, bien que cela n’est pas traité dans cette procédure pas à pas.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>Mise à jour la définition DSL
 
-#### <a name="to-update-the-dsl-definition"></a>Pour mettre à jour la définition DSL
+Ce qui suit que la définition DSL est utilisée dans cette procédure pas à pas.
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Ouvrez DslDefinition.dsl dans le concepteur DSL.
 
@@ -107,10 +109,11 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
     > [!NOTE]
     > À ce stade, les autres projets ne seront pas généré sans erreur. Toutefois, nous voulons créer le projet Dsl afin que son assembly est disponible pour l’Assistant Source de données.
 
-## <a name="updating-the-ui-project"></a>La mise à jour le projet d’interface utilisateur
- Vous pouvez maintenant créer un nouveau contrôle utilisateur qui affiche les informations qui sont stockées dans le modèle DSL. Pour connecter le contrôle utilisateur au modèle le plus simple est par le biais des liaisons de données. La liaison de type d’adaptateur nommé de données **ModelingBindingSource** est spécialement conçue pour vous connecter DSL pour les interfaces non VMSDK.
+## <a name="update-the-ui-project"></a>Mettre à jour le projet d’interface utilisateur
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Pour définir votre modèle DSL comme source de données
+Vous pouvez maintenant créer un nouveau contrôle utilisateur qui affiche les informations qui sont stockées dans le modèle DSL. Pour connecter le contrôle utilisateur au modèle le plus simple est par le biais des liaisons de données. La liaison de type d’adaptateur nommé de données **ModelingBindingSource** est spécialement conçue pour vous connecter DSL pour les interfaces non VMSDK.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>Définir votre modèle DSL comme source de données
 
 1. Sur le **données** menu, choisissez **afficher les Sources de données**.
 
@@ -128,7 +131,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>Pour connecter votre modèle à un formulaire
+### <a name="connect-your-model-to-a-form"></a>Connectez votre modèle à un formulaire
 
 1. Dans le **l’interface utilisateur** projet d’équipe, supprimez tous les fichiers .cs existant.
 
@@ -151,7 +154,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
    > [!NOTE]
    > Une autre étape consiste à faire glisser les éléments de champs et les animaux à partir de la fenêtre Sources de données sur le contrôle. Cette action crée automatiquement des grilles de données et les liaisons entre l’affichage de grille et de la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour le DSL. Par conséquent, il est préférable de créer les grilles de données et les liaisons manuellement.
 
-7. Si la boîte à outils ne contient-elle pas le **ModelingBindingSource** outil, ajoutez-le. Dans le menu contextuel de la **données** , choisir **choisir des éléments de**. Dans le **Choose Toolbox Items** boîte de dialogue, sélectionnez **ModelingBindingSource** à partir de la **onglet .NET Framework**.
+7. Si la boîte à outils ne contient-elle pas le **ModelingBindingSource** outil, ajoutez-le. Dans le menu contextuel de la **données** , choisir **choisir des éléments de**. Dans le **Choose Toolbox Items** boîte de dialogue, sélectionnez **ModelingBindingSource** à partir de la **.NET Framework** onglet.
 
 8. À l’aide de la boîte à outils, créez deux instances de **ModelingBindingSource**et nommez-les `AnimalBinding` et `FieldBinding`.
 
@@ -173,7 +176,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
   ![DslWpf4](../modeling/media/dslwpf4.png) schéma de liens entre des sources de données et les vues.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>Pour terminer les liaisons à la solution DSL
+### <a name="complete-the-bindings-to-the-dsl"></a>Terminer les liaisons à la solution DSL
 
 1. Ajoutez le code suivant dans un fichier de code séparé dans le **l’interface utilisateur** projet :
 
@@ -207,10 +210,9 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>Test de la solution DSL
- La solution DSL peut désormais générer et exécuter, bien que vous souhaiterez peut-être ajouter d’autres améliorations plus tard.
+## <a name="test-the-dsl"></a>Tester la solution DSL
 
-#### <a name="to-test-the-dsl"></a>Pour tester la solution DSL
+La solution DSL peut désormais générer et exécuter, bien que vous souhaiterez peut-être ajouter d’autres améliorations plus tard.
 
 1. Générez et exécutez la solution.
 
@@ -229,13 +231,13 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
      Lorsque vous naviguez à partir de chaque champ dans le formulaire, les modifications de propriété correspondantes dans la fenêtre Propriétés.
 
-## <a name="enhancing-the-dsl"></a>Amélioration de la solution DSL
+## <a name="enhance-the-dsl"></a>Améliorer la solution DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>Pour rendre les propriétés à mettre à jour immédiatement
+### <a name="make-the-properties-update-immediately"></a>Vérifiez les propriétés à mettre à jour immédiatement
 
 1. Dans la vue Conception de FarmControl.cs, sélectionnez un champ simple comme nom, une taille ou IsOrganic.
 
-2. Dans la fenêtre Propriétés, développez **DataBindings** et ouvrez **(Avancé)**.
+2. Dans la fenêtre Propriétés, développez **DataBindings** et ouvrez **(Avancé)** .
 
      Dans le **mise en forme et liaison avancée** boîte de dialogue, sous **Mode de mise à jour de Source de données**, choisissez **OnPropertyChanged**.
 
@@ -243,7 +245,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
      Vérifiez que lorsque vous modifiez le contenu du champ, la propriété correspondante du immédiatement les modifications du modèle de batterie de serveurs.
 
-#### <a name="to-provide-add-buttons"></a>Pour fournir des boutons Ajouter
+### <a name="provide-add-buttons"></a>Fournir des boutons Ajouter
 
 1. Dans la vue Conception de FarmControl.cs, utilisez la boîte à outils pour créer un bouton sur le formulaire.
 
@@ -301,7 +303,8 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sur le code pour ajouter un élément
- Pour les nouveaux boutons de l’élément, le code suivant alternatif est légèrement plus simple.
+
+Pour les nouveaux boutons de l’élément, le code suivant alternatif est légèrement plus simple.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Toutefois, ce code ne définit pas un nom par défaut pour le nouvel élément. Il ne s’exécute pas toute fusion personnalisée que vous avez définies dans le **Directives de fusion d’élément** du DSL, et il ne s’exécute pas de code personnalisé de fusion qui ont été défini.
+Toutefois, ce code ne définit pas un nom par défaut pour le nouvel élément. Il ne s’exécute pas toute fusion personnalisée que vous avez définies dans le **Directives de fusion d’élément** du DSL, et il ne s’exécute pas de code personnalisé de fusion qui ont été défini.
 
- Par conséquent, nous vous recommandons d’utiliser <xref:Microsoft.VisualStudio.Modeling.ElementOperations> pour créer de nouveaux éléments. Pour plus d’informations, consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).
+Par conséquent, nous vous recommandons d’utiliser <xref:Microsoft.VisualStudio.Modeling.ElementOperations> pour créer de nouveaux éléments. Pour plus d’informations, consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
-- [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
+- [Écrire du code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
