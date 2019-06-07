@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927455"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745666"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Dépanner des erreurs spécifiques dans les déploiements ClickOnce
 Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et fournit les étapes pour résoudre chaque problème.
@@ -36,7 +36,7 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
  Tout d’abord, assurez-vous que le serveur est configuré pour associer le *.application* extension avec le contenu de type « application/x-ms-application. »
 
- Si le serveur est configuré correctement, vérifiez que le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] est installé sur votre ordinateur. Si le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] est installé, et vous voyez toujours ce problème, essayez de désinstaller et réinstaller le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] pour réinscrire le type de contenu sur le client.
+ Si le serveur est configuré correctement, vérifiez que le .NET Framework 2.0 est installé sur votre ordinateur. Si le .NET Framework 2.0 est installé et que vous rencontrez toujours ce problème, essayez de désinstaller et réinstaller le .NET Framework 2.0 pour réinscrire le contenu de type sur le client.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Message d’erreur indique « Impossible d’extraire l’application. Les fichiers manquants dans le déploiement » ou « téléchargement de l’Application a été interrompue, recherchez les erreurs de réseau et réessayez plus tard »
  Ce message indique qu’un ou plusieurs fichiers référencés par le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes ne peuvent pas être téléchargées. Le moyen le plus simple de déboguer cette erreur consiste à essayer de télécharger l’URL qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] affirme ne peut pas télécharger. Voici les causes possibles :

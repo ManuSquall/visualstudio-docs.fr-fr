@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407630"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746105"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
 
@@ -70,7 +70,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 5. [Collecter les données d’une application web ou d’une application SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - ou -
+     ou
 
      [Collecter les données d’une application managée](#BKMK_Collect_Data_from_Executables)
 
@@ -106,12 +106,12 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
    2. Accédez au répertoire du collecteur, par exemple : **C:\IntelliTraceCollector**
 
-   3. Exécutez la commande **expand** suivante, avec le point (**.**) à la fin, pour développer IntelliTraceCollection.cab :
+   3. Exécutez la commande **expand** suivante, avec le point ( **.** ) à la fin, pour développer IntelliTraceCollection.cab :
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Le point (**.**) permet de conserver les sous-dossiers qui contiennent les plans de collecte localisés.
+       > Le point ( **.** ) permet de conserver les sous-dossiers qui contiennent les plans de collecte localisés.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Définir les autorisations pour le répertoire du collecteur
 
@@ -157,7 +157,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
             - Sur les systèmes d’exploitation 64 bits, ouvrez le menu contextuel de **Windows PowerShell**. Sélectionnez **Exécuter en tant qu’administrateur**.
 
-            - Sur les systèmes d’exploitation 32 bits, ouvrez le menu contextuel de **Windows PowerShell (x86)**. Sélectionnez **Exécuter en tant qu’administrateur**.
+            - Sur les systèmes d’exploitation 32 bits, ouvrez le menu contextuel de **Windows PowerShell (x86)** . Sélectionnez **Exécuter en tant qu’administrateur**.
 
     2. Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -191,7 +191,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - ou -
+       ou
 
    - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 
@@ -377,9 +377,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ## <a name="WhereElse"></a> À quel autre endroit puis-je trouver des données IntelliTrace ?
 
-- À partir d’un IntelliTrace débogage de session dans l’entreprise de Visual Studio, voir [les fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
-
-- À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : Collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Vous pouvez obtenir des données IntelliTrace à partir d’un IntelliTrace session dans Visual Studio Enterprise de débogage. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)

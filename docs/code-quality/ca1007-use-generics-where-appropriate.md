@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779711"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744763"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779711"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode extérieurement visible contient un paramètre de référence de type <xref:System.Object?displayProperty=fullName>et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Une méthode extérieurement visible contient un paramètre de référence de type <xref:System.Object?displayProperty=fullName>, et l’assembly conteneur cible .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Description de la règle
  Un paramètre de référence est un paramètre qui est modifié à l’aide de la `ref` (`ByRef` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) mot clé. Le type d’argument fourni pour un paramètre de référence doit correspondre exactement au type de paramètre de référence. Pour utiliser un type qui est dérivé du type de paramètre de référence, le type doit tout d’abord être converti et assigné à une variable du type de paramètre de référence. Utilisation d’une méthode générique autorise tous les types, soumis aux contraintes, doivent être passés à la méthode sans cast préalable du type pour le type de paramètre de référence.

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331634"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747729"
 ---
 # <a name="supply-undo-support-to-designers"></a>Annulation prise en charge pour les concepteurs
 
@@ -29,7 +29,7 @@ Implémentations concepteurs dont avez besoin pour prendre en charge la fonction
 
 - Persistance fournissez et CodeDOM prend en charge en implémentant la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> et <xref:System.ComponentModel.Design.IComponentChangeService> classes.
 
-Pour plus d’informations sur l’écriture à l’aide de concepteurs [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], consultez [étendre la prise en charge au moment du Design](/previous-versions/37899azc(v=vs.140)).
+Pour plus d’informations sur l’écriture de concepteurs à l’aide de .NET Framework, consultez [étendre la prise en charge au moment du Design](/previous-versions/37899azc(v=vs.140)).
 
 Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit une infrastructure d’annulation par défaut par :
 
@@ -50,7 +50,7 @@ N’importe quel concepteur créé dans Visual Studio a prise en charge de l’a
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quand utiliser la prise en charge de l’annulation de concepteur explicite
  Concepteurs doivent fournir leur propre gestion de l’annulation s’ils utilisent une interface graphique utilisateur, appelée un adaptateur de vue, autre que celui fourni par <xref:System.Windows.Forms.Control>.
 
- Un exemple de ce peut être création d’un produit avec une interface de conception graphique web au lieu d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-en fonction d’interface graphique.
+ Un exemple de ceci peut créer un produit avec une interface basée sur le web de conception graphique plutôt qu’une interface graphique basée sur .NET Framework.
 
  Dans ce cas, un doit inscrire cet adaptateur de vue avec Visual Studio en utilisant <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>et fournir une gestion d’annulation explicite.
 
@@ -59,7 +59,7 @@ N’importe quel concepteur créé dans Visual Studio a prise en charge de l’a
 ## <a name="undo-support-features-of-the-designer"></a>Annuler les fonctionnalités de prise en charge du Concepteur
  Le SDK de l’environnement fournit des implémentations par défaut des interfaces nécessaires pour fournir annuler la prise en charge qui peut être utilisé par les concepteurs ne pas à l’aide de <xref:System.Windows.Forms.Control> en fonction des classes pour leurs interfaces utilisateur ou le modèle de persistance et de CodeDOM standard.
 
- Le <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe dérive de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> classe à l’aide d’une implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe pour gérer les opérations d’annulation.
+ Le <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe dérive de .NET Framework <xref:System.ComponentModel.Design.UndoEngine> classe à l’aide d’une implémentation de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe pour gérer les opérations d’annulation.
 
  Visual Studio fournit la fonctionnalité suivante pour annuler concepteur :
 

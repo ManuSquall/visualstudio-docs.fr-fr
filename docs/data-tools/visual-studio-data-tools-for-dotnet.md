@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565078"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745303"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Outils de données Visual Studio pour .NET
 
-Visual Studio et .NET Framework fournissent une API complète et une prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur des outils. Les classes .NET Framework qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données des outils dans Visual Studio, a été principalement conçu pour prendre en charge des bases de données relationnelles et XML. De nos jours, de nombreux fournisseurs de base de données NoSQL ou à des tiers, offrent fournisseurs ADO.NET.
+Visual Studio et .NET fournissent ensemble API complètes et outils de prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur. Les classes .NET qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données des outils dans Visual Studio, a été principalement conçu pour prendre en charge des bases de données relationnelles et XML. De nos jours, de nombreux fournisseurs de base de données NoSQL ou à des tiers, offrent fournisseurs ADO.NET.
 
-[.NET core](/dotnet/core/) prend en charge ADO.NET, à l’exception des jeux de données et les types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet-relationnel (ORM), utilisez [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) prend en charge ADO.NET, à l’exception des jeux de données et leurs types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet-relationnel (ORM), utilisez [Entity Framework Core](/ef/core/).
 
 Le diagramme suivant montre une vue simplifiée de l’architecture de base :
 

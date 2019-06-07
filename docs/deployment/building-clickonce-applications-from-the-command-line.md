@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929160"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746087"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
-Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.
+Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le .NET Framework est installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Utiliser MSBuild pour reproduire des déploiements d’applications ClickOnce
  Lorsque vous appelez msbuild/target : Publish à la ligne de commande, il indique le système MSBuild pour générer le projet et créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans le dossier de publication. Cela revient à sélectionner la **publier** commande dans l’IDE.
@@ -73,7 +73,7 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 5. Tapez `msbuild /target:publish`.
 
-   Les étapes ci-dessus produira un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application dans un sous-dossier de votre projet nommé **publier**. *CmdLineDemo.application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe.manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. *Setup.exe* est le programme d’amorçage, qui par défaut est configuré pour installer le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Le dossier DotNetFX contient les composants redistribuables pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Il s’agit de l’ensemble des fichiers que vous avez besoin pour déployer votre application via le Web ou UNC ou d’un CD/DVD.
+   Les étapes ci-dessus produira un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application dans un sous-dossier de votre projet nommé **publier**. *CmdLineDemo.application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe.manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. *Setup.exe* est le programme d’amorçage, qui par défaut est configuré pour installer le .NET Framework. Le dossier DotNetFX contient les composants redistribuables pour le .NET Framework. Il s’agit de l’ensemble des fichiers que vous avez besoin pour déployer votre application via le Web ou UNC ou d’un CD/DVD.
 
 ## <a name="publish-properties"></a>Propriétés de publication
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la façon dont le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est générée.

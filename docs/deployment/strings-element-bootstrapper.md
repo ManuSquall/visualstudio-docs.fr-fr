@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898696"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747414"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
 Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.
@@ -52,7 +52,7 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 |`Name`|Obligatoire. Le nom de la chaîne.|
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programme d’installation.
+ L’exemple de code suivant spécifie toutes les chaînes en anglais pour le programme d’installation de .NET Framework.
 
 ```xml
 <Strings>

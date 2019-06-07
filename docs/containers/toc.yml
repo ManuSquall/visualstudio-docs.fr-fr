@@ -7,8 +7,10 @@
     - name: Démarrage rapide
       expanded: true
       items:
-        - name: Outils de conteneur dans Visual Studio
+        - name: Application ASP.NET Core dans un conteneur
           href: container-tools.md
+        - name: Application monopage React.js dans un conteneur
+          href: container-tools-react.md
     - name: Didacticiels
       expanded: true
       items:

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263473"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747424"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.
@@ -41,7 +41,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 
   Toutefois, vous pouvez désactiver cette option en désactivant le **utiliser l’extension de fichier « .deploy »** option sur le [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), auquel cas vous devez configurer le serveur Web pour débloquer toutes les extensions de fichier utilisé dans l’application.
 
-  Vous devrez configurer *.manifest*, *.application*, et *.deploy*, par exemple, si vous utilisez IIS où vous n’avez pas installé le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ou si vous êtes à l’aide d’un autre serveur Web (par exemple, Apache).
+  Vous devrez configurer *.manifest*, *.application*, et *.deploy*, par exemple, si vous utilisez IIS où vous avez installé pas le .NET Framework, ou si vous êtes à l’aide d’un autre serveur Web (par exemple, Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce et Secure Sockets Layer (SSL)
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application fonctionne correctement avec le protocole SSL, sauf lorsque Internet Explorer émet une invite sur le certificat SSL. L’invite peut être déclenchée lorsqu’il existe un problème avec le certificat, par exemple lorsque les noms de site ne correspondent pas ou le certificat a expiré. Pour rendre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fonctionne sur une connexion SSL, assurez-vous que le certificat est à jour, et que les données du certificat correspond aux données du site.
@@ -121,7 +121,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
   Pour des instructions spécifiques sur la configuration des types MIME sur Windows Server, reportez-vous à la Base de connaissances Microsoft, article KB326965, « IIS 6.0 ne traite pas les types MIME inconnus » à [ http://support.microsoft.com/default.aspx?scid=kb; en-us ; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Mappages de type de contenu
- Lors de la publication sur HTTP, le type de contenu (également connu sous le type MIME) pour le *.application* fichier doit être « application/x-ms-application. » Si vous avez [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installé sur le serveur, il sera configuré pour vous automatiquement. Si ce n’est pas installé, vous devez créer une association de types MIME pour le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot application (ou serveur entier).
+ Lors de la publication sur HTTP, le type de contenu (également connu sous le type MIME) pour le *.application* fichier doit être « application/x-ms-application. » Si vous avez .NET Framework 2.0 est installé sur le serveur, il sera automatiquement configuré pour vous. Si ce n’est pas installé, vous devez créer une association de types MIME pour le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot application (ou serveur entier).
 
  Si vous déployez à l’aide d’un serveur IIS, exécutez <em>inetmgr.</em> exe et ajoutez un nouveau type de contenu de « application/x-ms-application » pour le *.application* extension.
 

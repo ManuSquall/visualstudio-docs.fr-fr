@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567971"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745583"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
@@ -98,7 +98,7 @@ Pour accéder à la boîte de dialogue **Configurer la référence de service**,
  Affiche la boîte de dialogue **Ajouter une référence web**.
 
 > [!NOTE]
-> Cette option doit uniquement être utilisée pour les projets qui ciblent la version 2.0 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Cette option doit être utilisée uniquement pour les projets qui ciblent la version 2.0 du .NET Framework.
 >
 > [!NOTE]
 > Le **ajouter une référence Web** bouton est disponible uniquement lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.
