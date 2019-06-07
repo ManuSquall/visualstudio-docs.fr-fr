@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823593"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745138"
 ---
 # <a name="interoperability-warnings"></a>avertissements liés à l’interopérabilité
 
@@ -32,7 +32,7 @@ Avertissements de l’interopérabilité prennent en charge l’interaction avec
 | [CA1400 : Points d’entrée P/Invoke doivent exister](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Une méthode publique ou protégée est marquée avec l'attribut System.Runtime.InteropServices.DllImportAttribute. La bibliothèque non managée n'a pas pu être localisée, ou la méthode n'a pu être mise en correspondance avec aucune fonction de la bibliothèque. |
 | [CA1401 : P/Invoke ne doivent pas être visible](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Une méthode publique ou protégée dans un type public a l’attribut System.Runtime.InteropServices.DllImportAttribute (également implémenté par le mot clé Declare en Visual Basic). De telles méthodes ne doivent pas être exposées. |
 | [CA1402 : Éviter les surcharges dans les interfaces COM visibles](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Lorsque les méthodes surchargées sont exposées aux clients COM, seule la première surcharge de méthode conserve son nom. Les surcharges suivantes sont renommées de manière unique par l'ajout d'un trait de soulignement (_) au nom et d'un entier qui correspond à l'ordre de déclaration de la surcharge. |
-| [CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Un type valeur visible par COM est marqué avec l'attribut System.Runtime.InteropServices.StructLayoutAttribute qui a la valeur LayoutKind.Auto. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui bloque les clients COM qui attendent une disposition spécifique. |
+| [CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Un type valeur visible par COM est marqué avec l'attribut System.Runtime.InteropServices.StructLayoutAttribute qui a la valeur LayoutKind.Auto. La disposition de ces types peut varier entre les versions de .NET, ce qui bloquent les clients COM qui attendent une disposition spécifique. |
 | [CA1404 : Appeler GetLastError immédiatement après P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Un appel est effectué à la méthode Marshal.GetLastWin32Error ou l’équivalent [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] fonction GetLastError et l’appel immédiatement antérieur n’est pas à une plateforme d’appeler la méthode. |
 | [CA1405 : Types base type visibles par COM doivent être visibles par COM](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | Un type visible par COM dérive d'un type qui n'est pas visible par COM. |
 | [CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Les clients COM Visual Basic 6 ne peut pas accéder aux entiers de 64 bits. |

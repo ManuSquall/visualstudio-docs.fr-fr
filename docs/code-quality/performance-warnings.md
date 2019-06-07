@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825492"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745214"
 ---
 # <a name="performance-warnings"></a>avertissements liés aux performances
 Avertissements liés aux performances prennent en charge les applications et des bibliothèques de hautes performances.
@@ -38,7 +38,7 @@ Avertissements liés aux performances prennent en charge les applications et des
 | [CA1810 : Initialiser des champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. Les vérifications des constructeurs statiques peuvent diminuer les performances. |
 | [CA1811 : Évitez le recours à code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md) | Membre privé ou interne (de niveau assembly) n’a pas d’appelants dans l’assembly, elle n’est pas appelée par le common language runtime, et elle n’est pas appelée par un délégué. |
 | [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Une instance d'un type de niveau assembly n'est pas créée par le code au sein de l'assembly. |
-| [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md) | La bibliothèque de classes .NET Framework fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Le fait de sceller l'attribut élimine la recherche dans la hiérarchie d'héritage et peut améliorer les performances. |
+| [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Le fait de sceller l'attribut élimine la recherche dans la hiérarchie d'héritage et peut améliorer les performances. |
 | [CA1814 : Préférer les tableaux en escalier multidimensionnel](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Un tableau en escalier est un tableau dont les éléments sont des tableaux. Les tableaux qui composent les éléments peuvent être de différentes tailles, ce qui peuvent entraîner un gaspillage d’espace pour certains jeux de données. |
 | [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Pour les types valeur, l'implémentation héritée de Equals utilise la bibliothèque Reflection et compare le contenu de tous les champs. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si des utilisateurs sont susceptibles de comparer ou de trier des instances, ou de les utiliser en tant que clés de table de hachage, votre type valeur doit implémenter Equals. |
 | [CA1816 : Appelez GC. SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Une méthode qui est une implémentation de Dispose n’appelle pas de catalogue global. SuppressFinalize, ou une méthode qui n’est pas une implémentation de Dispose appelle GC. SuppressFinalize, ou une méthode appelle GC. SuppressFinalize et passe un autre nom (Me en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |

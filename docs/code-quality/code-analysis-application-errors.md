@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540870"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745199"
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs d’application analyse du code
 
@@ -46,8 +46,8 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0065](ca0065.md)|Construction de métadonnées non pris en charge : Type '*TypeName*'contient une propriété et un champ portant le même nom'*NomChampPropriété*'|
 |[CA0066](ca0066.md)|La valeur '*VersionID*' fourni pour le **/TargetFrameworkVersion ne** n’est pas une version reconnue.|
 |[CA0067](ca0067.md)|Répertoire introuvable.|
-|[CA0068](ca0068.md)|Déboguer des informations n’a pas pu être trouvées pour l’assembly cible *'Nom_assembly'*.|
-|[CA0069](ca0069.md)|À l’aide de la plateforme autre. *FrameworkVersion1* est introuvable. À l’aide de *Versionframework2* à la place. Pour de meilleurs résultats d’analyse, vérifiez que le .NET Framework approprié est installé.|
+|[CA0068](ca0068.md)|Déboguer des informations n’a pas pu être trouvées pour l’assembly cible *'Nom_assembly'* .|
+|[CA0069](ca0069.md)|À l’aide de la plateforme autre. *FrameworkVersion1* est introuvable. À l’aide de *Versionframework2* à la place. Pour de meilleurs résultats d’analyse, vérifiez que la version correcte de .NET framework est installée.|
 |[CA0070](ca0070.md)|Ne peut pas charger l’assembly ou un type en raison d’autorisations de sécurité.|
 |[CA0501](ca0501.md)|Impossible de lire le rapport de sortie.|
 |[CA0502](ca0502.md)|Langage non pris en charge.|
