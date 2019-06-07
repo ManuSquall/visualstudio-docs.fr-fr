@@ -1,5 +1,5 @@
 ---
-title: Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
+title: Utiliser Microsoft.VisualStudio.TestTools.UnitTesting dans des tests unitaires
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f488d021be59538eac36a19a66970b9fc01463
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776676"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432229"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Utiliser le framework MSTest dans les tests unitaires
 

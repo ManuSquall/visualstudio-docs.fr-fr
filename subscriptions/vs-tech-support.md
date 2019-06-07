@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811467"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402027"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 
@@ -90,6 +90,9 @@ Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous c
 
    > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, signalement d’un incident - Choisir un plan](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Si vous ne voyez pas votre plan de support, revenez à la page précédente et cliquez sur **Suivant** à nouveau.  En cas d’échec d’affichage du plan de support, copiez le texte de votre prise en charge dans le presse-papiers, actualisez la page et recréer la prise en charge.
 
 6. Effectuez les étapes restantes (gravité, informations de contact, revue).   Une fois votre incident signalé, une confirmation s’affiche. Vous pouvez alors charger des fichiers pour les joindre au problème. Un professionnel du support technique est affecté à votre incident et vous contacte selon la méthode choisie pour vous aider à résoudre le problème.
 

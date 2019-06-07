@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840413"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402072"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : Créer une application web ASP.NET Core
 
@@ -111,6 +111,9 @@ public void OnGet()
 ```
 
 Vous devez maintenant voir l’heure réelle du serveur dans le navigateur quand vous accédez à l’application.
+
+> [!NOTE]
+> Votre sortie peut différer de l’image, dans la mesure où le format de sortie de ToShortDateTimeString varie selon le paramètre de culture actuel. Consultez <xref:System.DateTime.ToShortTimeString>.
 
 ![Projet ASP.NET Core Visual Studio 2019 dans le navigateur](media/vs-2019/vs2019-app-fixed-in-browser.png)
 

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812087"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500940"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -68,10 +68,13 @@ Cette refactorisation s’applique à :
 
 4. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
-> [!NOTE]
-> Si vous utilisez un nom qui existe déjà, ce qui provoquerait un conflit, la boîte de dialogue **Renommer** vous avertit.
->
-> ![Conflit de changement de nom](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Remarques
+
+- Si vous utilisez un nom qui existe déjà, ce qui provoquerait un conflit, la boîte de dialogue **Renommer** vous avertit.
+
+   ![Conflit de changement de nom](media/rename-conflict-cs.png)
+
+- Une autre façon de renommer un symbole consiste à modifier son nom dans l’éditeur. Ensuite, placez le curseur dans le nom du symbole et appuyez sur **Ctrl**+ **.** ou développez simplement le menu de l’icône Ampoule qui s’affiche et choisissez **Renommer \<ancien nom> par \<nouveau nom>** .
 
 ## <a name="see-also"></a>Voir aussi
 

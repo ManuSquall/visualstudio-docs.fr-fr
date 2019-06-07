@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704660"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401731"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
@@ -365,9 +365,9 @@ L’exécution des deux méthodes de test montre que les tests fonctionnent corr
 
 ### <a name="continue-the-analysis"></a>Poursuivre l’analyse
 
-Toutefois, les deux dernières méthodes de test sont également troublantes. Vous ne pouvez pas savoir avec certitude quelle est la condition, dans la méthode testée, qui lève l’exception quand un des tests est exécuté. Si vous pouviez distinguer les deux conditions, c’est-à-dire, un montant de débit négatif ou un montant supérieur au solde, vous auriez davantage confiance dans les tests.
+La méthode en cours de test peut être améliorée. Avec l’implémentation actuelle, nous n’avons aucun moyen de savoir quelle condition (`amount > m_balance` ou `amount < 0`) a conduit à l’exception levée pendant le test. Nous savons simplement qu’un `ArgumentOutOfRangeException` a été généré quelque part dans la méthode. Il serait préférable de pouvoir dire quelle condition dans `BankAccount.Debit` a provoqué l’exception levée (`amount > m_balance` ou `amount < 0`) afin d’être convaincu que notre méthode effectue certaines vérifications des arguments correctement et en toute sécurité.
 
-Examinez encore la méthode testée ; vous pouvez constater que les deux instructions conditionnelles utilisent un constructeur `ArgumentOutOfRangeException` qui accepte uniquement le nom de l’argument comme paramètre :
+Examinez à nouveau la méthode testée (`BankAccount.Debit`) et constatez que les deux instructions conditionnelles utilisent un constructeur `ArgumentOutOfRangeException` qui accepte uniquement le nom de l’argument comme paramètre :
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
