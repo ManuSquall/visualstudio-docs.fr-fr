@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842007"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820622"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 
@@ -52,7 +52,7 @@ Le <xref:System.IDisposable?displayProperty=nameWithType> interface n’est pas 
 
 Violation de l’un de ces modèles déclenche l’avertissement CA1063.
 
-Chaque type unsealed qui déclare et implémente la <xref:System.IDisposable> interface doit fournir son propre `protected virtual void Dispose(bool)` (méthode). `Dispose()` doit appeler `Dipose(true)`, et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type unsealed qui déclare et implémente la <xref:System.IDisposable> interface, vous devez définir `Dispose(bool)` et appelez-le. Pour plus d’informations, consultez [nettoyer les ressources non managées (guide .NET)](/dotnet/standard/garbage-collection/unmanaged) et [modèle Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Chaque type unsealed qui déclare et implémente la <xref:System.IDisposable> interface doit fournir son propre `protected virtual void Dispose(bool)` (méthode). `Dispose()` doit appeler `Dispose(true)`, et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type unsealed qui déclare et implémente la <xref:System.IDisposable> interface, vous devez définir `Dispose(bool)` et appelez-le. Pour plus d’informations, consultez [nettoyer les ressources non managées (guide .NET)](/dotnet/standard/garbage-collection/unmanaged) et [modèle Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Par défaut, cette règle examine uniquement les types visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
 

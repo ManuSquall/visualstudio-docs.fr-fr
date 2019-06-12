@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582554"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715372"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 
@@ -38,15 +38,13 @@ Si vous exécutez vos builds en dehors de l’environnement IDE de Visual Studio
 
 ![Répertoires Include VC++](media/vcpp-intellisense-include-paths.png)
 
- Pour voir les valeurs actuelles des macros de build comme **VC_IncludePath**, sélectionnez la ligne Répertoires Include, puis cliquez sur la liste déroulante à droite. Ensuite, sélectionnez **\<Modifier>**, puis cliquez sur le bouton **Macros**.
+ Pour voir les valeurs actuelles des macros de build comme **VC_IncludePath**, sélectionnez la ligne Répertoires Include, puis cliquez sur la liste déroulante à droite. Ensuite, sélectionnez **\<Modifier>** , puis cliquez sur le bouton **Macros**.
 
 ### <a name="makefile-projects"></a>projets Makefile
 
 Dans le cas des projets Makefile qui reposent sur le modèle de projet NMake, sélectionnez **NMake** dans le volet gauche, puis **Chemin de recherche Include** sous la catégorie **IntelliSense** :
 
 ![Chemins Include du projet Makefile](media/vcpp-intellisense-makefile-include-paths.png)
-
-Pour plus d'informations, voir [Procédure : Activer IntelliSense pour des projets Makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Projets Ouvrir un dossier
 

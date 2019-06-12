@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899334"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820431"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -93,8 +93,8 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 |||||
 |-|-|-|-|
 |![Les deux formes avant d'être combinées](../designers/media/b1_1.png)|Les deux formes avant d'être combinées|![Définir une intersection](../designers/media/b1_4.png)|Définir une intersection|
-|![Exclure le chevauchement](../designers/media/b1_2.png)|Unir|![](../designers/media/b1_5.png)|Exclure le chevauchement|
-|![Soustraire](../designers/media/b1_3.png)|Diviser|![](../designers/media/b1_6.png)|Soustraire|
+|![Unir](../designers/media/b1_2.png)|Unir|![Exclure le chevauchement](../designers/media/b1_5.png)|Exclure le chevauchement|
+|![Diviser](../designers/media/b1_3.png)|Diviser|![Soustraire](../designers/media/b1_6.png)|Soustraire|
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation des tracés : combiner des tracés](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

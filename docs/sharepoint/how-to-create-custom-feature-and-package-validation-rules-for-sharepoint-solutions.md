@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer des règles de Validation de Package et de fonctionnalité personnalisée pour les Solutions SharePoint | Microsoft Docs'
+title: 'Solutions de SharePoint : Créer une fonction personnalisée, les règles de validation de package'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a10118a0c83f9e17e32efd293a9a824e38a0942a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966742"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835938"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procédure : Créer des règles de validation pour les solutions SharePoint package et fonctionnalité personnalisée
   Vous pouvez créer des règles de validation personnalisées pour vérifier le package de solution généré par Visual Studio. Vous pouvez effectuer une validation complète sur un ensemble de la fonctionnalité ou un package en sélectionnant **Validate** dans le menu contextuel d’un package ou une fonctionnalité dans le **PackagingExplorer**. Validation partielle est effectuée lorsque vous ajoutez de nouveaux éléments de projet SharePoint ou des fonctionnalités au projet pour déterminer si le Package ou la fonctionnalité serait dans un état valide.
