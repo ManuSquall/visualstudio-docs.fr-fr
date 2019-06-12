@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445196"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820980"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -99,7 +99,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
 
  Si vous exécutez une solution que vous avez créé à partir de la **langage Minimal** modèle, votre expérimentale de Visual Studio doit ressembler à l’exemple suivant :
 
- ![](../modeling/media/dsl_min.png)
+ ![Arborescence d’exemple de langage spécifique domaine dans Visual Studio](../modeling/media/dsl_min.png)
 
  Expérimentez avec les outils. Créez des éléments et raccordez-les.
 

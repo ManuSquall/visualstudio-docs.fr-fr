@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260472"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835961"
 ---
 # <a name="code-metrics-values"></a>Valeurs de métriques de code
 
@@ -32,7 +32,7 @@ La liste suivante présente le code des résultats de la métrique qui calcule d
 
 - **Complexité cyclomatique** -mesure la complexité structurelle du code. Il est créé en calculant le nombre de chemins de code différents dans le flux du programme. Un programme qui a le flux de contrôle complexe requiert plus de tests pour obtenir la bonne couverture du code et est moins facile à gérer. Pour plus d’informations, consultez le [Wikipedia pour complexité cyclomatique](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profondeur d’héritage** -indique le nombre de différentes classes qui héritent d’une autre, jusqu’à la classe de base. Profondeur d’héritage est semblable à la classe de couplage car une modification dans une classe de base peut affecter une de ses classes héritées. Plus ce nombre, le plus profond l’héritage et plus la possibilité de modifications de la classe de base entraîner une rupture modifier. Pour la profondeur d’héritage, une valeur faible est bonne et une valeur élevée est incorrecte. 
+- **Profondeur d’héritage** -indique le nombre de différentes classes qui héritent d’une autre, jusqu’à la classe de base. Profondeur d’héritage est semblable à la classe de couplage car une modification dans une classe de base peut affecter une de ses classes héritées. Plus ce nombre, le plus profond l’héritage et plus la possibilité de modifications de la classe de base entraîner une rupture modifier. Pour la profondeur d’héritage, une valeur faible est bonne et une valeur élevée est incorrecte.
 
 - **COUPLAGE de classe** -mesure le couplage avec des classes uniques via des paramètres, variables locales, types de retour, les appels de méthode, des instanciations génériques ou de modèle, classes de base, les implémentations d’interface, champs définis sur les types externes, et décoration de l’attribut. Une bonne conception logicielle détermine les types et méthodes doivent avoir une forte cohésion et un couplage bas. COUPLAGE élevé indique une conception qui est difficile à réutiliser et tenir à jour en raison de ses nombreuses interdépendances sur d’autres types. Pour plus d’informations, consultez le [couplages de classe](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) billet de blog.
 
@@ -43,9 +43,7 @@ La liste suivante présente le code des résultats de la métrique qui calcule d
 
 ## <a name="anonymous-methods"></a>Méthodes anonymes
 
-Un *méthode anonyme* est simplement une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué. Résultats de la métrique pour une méthode anonyme qui est déclaré dans un membre, tel qu’une méthode ou un accesseur, sont associés au membre qui déclare la méthode. Ils ne sont pas associés au membre qui appelle la méthode.
-
-Pour plus d’informations sur la manière dont la métrique du Code traite les méthodes anonymes, consultez [méthodes anonymes et analyse du Code](../code-quality/anonymous-methods-and-code-analysis.md).
+Un *méthode anonyme* est simplement une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué. Résultats de la métrique du code pour une méthode anonyme qui est déclarée dans un membre, comme une méthode ou un accesseur, sont associés au membre qui déclare la méthode. Ils ne sont pas associés au membre qui appelle la méthode.
 
 ## <a name="generated-code"></a>Code généré
 

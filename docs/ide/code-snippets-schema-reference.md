@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974980"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836112"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -632,7 +632,11 @@ Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier 
 | - |-----------------|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
- Une valeur texte est requise. Ce texte spécifie le type de l'objet.
+Une valeur texte est requise. Ce texte spécifie le type de l'objet. Par exemple :
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Url, élément
 

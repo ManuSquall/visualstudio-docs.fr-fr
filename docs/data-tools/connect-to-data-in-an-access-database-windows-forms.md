@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568517"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820410"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Se connecter à des données dans une base de données Access (Windows Forms)
 
-Vous pouvez vous connecter à une base de données Access (soit un *.mdf* fichier ou un *.accdb* fichier) à l’aide de Visual Studio. Après avoir défini la connexion, les données s’affichent dans la fenêtre **Sources de données**. De là, vous pouvez faire glisser des tables ou des vues sur vos formulaires.
+Vous pouvez vous connecter à une base de données Access (soit un *.mdb* fichier ou un *.accdb* fichier) à l’aide de Visual Studio. Après avoir défini la connexion, les données s’affichent dans la fenêtre **Sources de données**. De là, vous pouvez faire glisser des tables ou des vues sur vos formulaires.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -51,7 +51,7 @@ Vous pouvez vous connecter aux bases de données créés via Access 2013, Office
 
    La boîte de dialogue **Ajouter une connexion** s’ouvre.
 
-7. Si **source de données** n’a pas la valeur **du fichier de base de données Microsoft Access (OLE DB)**, sélectionnez le **modification** bouton.
+7. Si **source de données** n’a pas la valeur **du fichier de base de données Microsoft Access (OLE DB)** , sélectionnez le **modification** bouton.
 
    Le **modifier la Source de données** boîte de dialogue s’ouvre. Dans la liste des sources de données, choisissez **fichier de base de données Microsoft Access**. Dans le **fournisseur de données** liste déroulante, sélectionnez **fournisseur de données .NET Framework pour OLE DB**, puis choisissez **OK**.
 
@@ -91,7 +91,7 @@ Pour créer le jeu de données, exécutez l’**Assistant Configuration de sourc
 
 6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.
 
-7. Si la source de données n’est pas **du fichier de base de données Microsoft Access (OLE DB)**, sélectionnez **modification** pour ouvrir le **modifier la Source de données** boîte de dialogue et sélectionnez **Microsoft Accéder au fichier de base de données**, puis sélectionnez **OK**.
+7. Si la source de données n’est pas **du fichier de base de données Microsoft Access (OLE DB)** , sélectionnez **modification** pour ouvrir le **modifier la Source de données** boîte de dialogue et sélectionnez **Microsoft Accéder au fichier de base de données**, puis sélectionnez **OK**.
 
 8. Dans le **nom de fichier de base de données**, spécifiez le chemin d’accès et le nom de la *.mdb* fichier que vous souhaitez vous connecter à, puis sélectionnez **OK**.
 

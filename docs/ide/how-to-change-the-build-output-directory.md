@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: f9dce876b477dfb802b9cf64214af2ca1cec6a4e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805047"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715357"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
 
@@ -52,5 +52,5 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
 ## <a name="see-also"></a>Voir aussi
 
 - [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Général, page de propriétés (projet)](/cpp/ide/general-property-page-project)
+- [Général, page de propriétés (projet)](/cpp/build/reference/general-property-page-project)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
