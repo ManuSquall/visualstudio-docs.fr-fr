@@ -97,3 +97,6 @@
 ## [Signaler un problème](report-a-problem.md)
 ## [Résolution des problèmes : Pourquoi je ne vois pas tous les modèles ?](troubleshooting-no-templates.md)
 ## [Résolution des problèmes : le programme de mise à jour présente des erreurs lors de la récupération des informations](updater-troubleshooting.md)
+
+# [Notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Notes de publication de la préversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
