@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839716"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032880"
 ---
 Sur l’appareil distant ou serveur que vous souhaitez déboguer sur, plutôt que l’ordinateur Visual Studio, téléchargez et installez la version correcte des outils distants parmi les liens dans le tableau suivant.
 
-- Téléchargez les outils à distance la plus récentes pour votre version de Visual Studio. La dernière version des outils à distance est compatible avec les versions antérieures de Visual Studio, mais les versions antérieures des outils à distance ne sont pas compatibles avec les versions ultérieures de Visual Studio.
+- Téléchargez les outils à distance la plus récentes pour votre version de Visual Studio. La dernière version des outils à distance est compatible avec les versions antérieures de Visual Studio, mais les versions antérieures des outils à distance ne sont pas compatibles avec les versions ultérieures de Visual Studio. (Par exemple, si vous utilisez Visual Studio 2017, téléchargez la dernière mise à jour des outils à distance pour Visual Studio 2017. Dans ce scénario, ne téléchargez pas les outils à distance pour Visual Studio 2019.)
 - Téléchargez les outils à distance avec la même architecture que l’ordinateur que vous les installez sur. Par exemple, si vous souhaitez déboguer une application 32 bits sur un ordinateur distant exécutant un système d’exploitation de 64 bits, installez les outils à distance de 64 bits.
 
 ::: moniker range=">=vs-2019"

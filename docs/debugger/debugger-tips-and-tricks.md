@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852991"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043309"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -170,4 +170,5 @@ Pour des conseils supplémentaires et des astuces et des informations plus déta
 - [7 merveilles cachées dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Voir aussi
-[Raccourcis clavier](../ide/tips-and-tricks-for-visual-studio.md)
+
+[Raccourcis clavier](../ide/productivity-shortcuts.md)
