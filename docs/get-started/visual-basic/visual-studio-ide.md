@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966550"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820660"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ ms.locfileid: "62966550"
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "IDE de Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![IDE de Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
-1. Choisissez la catégorie **.NET Core** sous **Visual Basic**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
+1. Choisissez la catégorie **.NET Core** sous **Visual Basic**, puis choisissez le modèle **Application console (.NET Core)** . Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
    ![Modèle d’application .NET Core](media/overview-npd.png)
 
@@ -306,7 +306,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/overview-console-window.png)
 
@@ -349,7 +349,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **Visual Basic** dans la liste déroulante **Langage**.
 
-1. Sélectionnez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+1. Sélectionnez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
 
    ![Créer un projet dans Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -373,7 +373,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ Tout d’abord, renommons la variable `name` :
 
    Notez qu’une zone grisée apparaît autour de la variable et qu’une ampoule s’affiche dans la marge.
 
-3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
+3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »** .
 
    ![Renommer une action dans Visual Studio](media/rename-quick-action.png)
 

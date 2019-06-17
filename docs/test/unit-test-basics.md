@@ -1,6 +1,6 @@
 ---
-title: Notions de base des tests unitaires
-ms.date: 01/07/2016
+title: Concepts de base des tests unitaires
+ms.date: 06/06/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990261"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820752"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -165,26 +165,24 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
-
-notez que `Withdraw_ValidAmount_ChangesBalance` utilise une instruction `Assert` explicite pour déterminer si la méthode de test réussit ou échoue, tandis que `Withdraw_AmountMoreThanBalance_Throws` utilise l’attribut `ExpectedException` pour déterminer la réussite de la méthode testée. En coulisses, une infrastructure de tests unitaires encapsule les méthodes de test dans les instructions try/catch. Dans la plupart des cas, si une exception est interceptée, la méthode de test échoue et l’exception est ignorée. L’attribut `ExpectedException` entraîne la réussite de la méthode de test si l’exception spécifiée est levée.
 
 Pour plus d’informations sur les infrastructures de tests unitaires Microsoft, consultez l’une des rubriques suivantes :
 

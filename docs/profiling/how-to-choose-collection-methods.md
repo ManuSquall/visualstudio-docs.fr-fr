@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974149"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744731"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procédure : Choisir des méthodes de collecte
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 |----------------------------| - |
 | **Échantillonnage de l’UC** | Collecte les statistiques d’application qui sont utiles pour l’analyse initiale et l’analyse des problèmes d’utilisation du processeur. |
 | **Instrumentation** | Collecte des données de minutage détaillées utiles pour une analyse approfondie et pour l’analyse des problèmes de performances d’E/S. |
-| **Allocation de mémoire .NET** | Collecte les données d’allocation de mémoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à l’aide de la méthode de profilage par échantillonnage. |
+| **Allocation de mémoire .NET** | Collecte les données d’allocation de mémoire du .NET Framework à l’aide de la méthode de profilage par échantillonnage. |
 | **Concurrence** | Collecte des données numériques concernant les conflits de ressources. |
 
 ## <a name="performance-explorer"></a>Explorateur de performances
@@ -75,7 +75,7 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 4. Cliquez sur **Échantillonnage** ou **Instrumentation**.
 
-5. Cliquez sur **Collecter les informations d’allocation d’objets .NET** pour collecter le nombre d’allocations d’objets [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ainsi que leur taille.
+5. Cliquez sur **Collecter les informations d’allocation d’objets .NET** pour collecter la taille et le nombre d’allocations d’objets du .NET Framework.
 
 6. (Facultatif) Cliquez sur **Collecter aussi les informations de durée de vie des objets .NET** pour collecter des données sur les générations de garbage collection dans lesquelles la mémoire d’objets a été récupérée.
 

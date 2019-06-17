@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950153"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747578"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procédure : créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
@@ -70,11 +70,11 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
 
    2. Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
 
-   3. Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
+   3. Dans la liste déroulante **Nom de la base de données**, sélectionnez la base de données qui contient les résultats du test de charge.
 
-3. Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
+3. Dans la page **Comment voulez-vous générer votre rapport ?** , vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
 
-4. Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Exécuter la comparaison** est sélectionné et choisissez **Suivant**.
+4. Dans la page **Quel type de rapport voulez-vous générer ?** , vérifiez que **Exécuter la comparaison** est sélectionné et choisissez **Suivant**.
 
 5. Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
 
@@ -125,11 +125,11 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
 
    2. Dans la page **Sélectionner la base de données contenant les tests de charge**, sous **Nom du serveur**, tapez le nom du serveur contenant les résultats du test de charge.
 
-   3. Dans la liste déroulante **Databasename**, sélectionnez la base de données qui contient les résultats du test de charge.
+   3. Dans la liste déroulante **Nom de la base de données**, sélectionnez la base de données qui contient les résultats du test de charge.
 
-3. Dans la page **Comment voulez-vous générer votre rapport ?**, vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
+3. Dans la page **Comment voulez-vous générer votre rapport ?** , vérifiez que **Créer un rapport** est sélectionné et choisissez **Suivant**.
 
-4. Dans la page **Quel type de rapport voulez-vous générer ?**, vérifiez que **Tendance** est sélectionné et choisissez **Suivant**.
+4. Dans la page **Quel type de rapport voulez-vous générer ?** , vérifiez que **Tendance** est sélectionné et choisissez **Suivant**.
 
 5. Dans la page **Entrer le détail du rapport de test de charge**, attribuez un nom à votre rapport dans **Nom du rapport**.
 
@@ -144,7 +144,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    > [!TIP]
    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page comporte deux propriétés qui sont présentées dans les rapports : Objectif et nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
-## <a name="net-framework-security"></a>sécurité du .NET Framework
+## <a name="net-security"></a>Sécurité .NET
 
 Les rapports et les résultats des tests de charge peuvent contenir des informations très sensibles qui pourraient être utilisées pour lancer une attaque contre votre ordinateur ou votre réseau. Les rapports et les résultats des tests de charge contiennent le nom des ordinateurs et les chaînes de connexion. Vous devez être conscient de ce risque lorsque vous partagez des rapports de tests de charge avec d'autres personnes.
 

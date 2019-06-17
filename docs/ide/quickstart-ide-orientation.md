@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954240"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820976"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
 
@@ -51,7 +51,7 @@ Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la 
 
 Quand vous ouvrez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![](media/vs-2019/start-window-labeled.png "La fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![Fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 
@@ -71,7 +71,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
    ![Rechercher des modèles de projet dans la page de démarrage de Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet C# **Application console (.NET Framework)**. (Ou, si vous êtes un développeur en Visual Basic, C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+   Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet C# **Application console (.NET Framework)** . (Ou, si vous êtes un développeur en Visual Basic, C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
 
 1. Dans la boîte de dialogue **Nouveau projet** qui apparaît, acceptez le nom de projet par défaut et sélectionnez **OK**.
 
@@ -87,7 +87,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
    ![Boîte de dialogue Nouveau projet dans Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Si vous avez sélectionné le langage C#, Visual Basic ou F#, sélectionnez le modèle **Application console (.NET Framework)**, puis choisissez **Suivant**. (Si vous avez sélectionné un autre langage, choisissez n’importe quel modèle. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+1. Si vous avez sélectionné le langage C#, Visual Basic ou F#, sélectionnez le modèle **Application console (.NET Framework)** , puis choisissez **Suivant**. (Si vous avez sélectionné un autre langage, choisissez n’importe quel modèle. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
 
 1. Dans la page **Configurer votre nouveau projet**, acceptez le nom et l’emplacement de projet par défaut, puis choisissez **Créer**.
 

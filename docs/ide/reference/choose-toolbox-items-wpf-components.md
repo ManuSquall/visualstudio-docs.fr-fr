@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790926"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744977"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
@@ -31,7 +31,7 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 - Lorsque la case en regard d’un composant est décochée, l’icône correspondante est retirée de **Boîte à outils**.
 
     > [!NOTE]
-    > Les composants .NET Framework installés sur votre ordinateur restent disponibles, même si leurs icônes ne s’affichent pas dans la **boîte à outils**.
+    > Les composants .NET installés sur votre ordinateur restent disponibles, que leurs icônes s’affichent ou non dans la **boîte à outils**.
 
 Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :
 
@@ -41,15 +41,15 @@ Répertorie les noms des contrôles WPF dont les entrées correspondantes se tr
 
 **Espace de noms**
 
-Affiche la hiérarchie de l’espace de noms de l’[API de classe .NET Framework](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez cette colonne pour répertorier les composants disponibles dans chaque espace de noms .NET Framework installé sur votre ordinateur.
+Affiche la hiérarchie de l’espace de noms de l’[API .NET](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez sur cette colonne pour lister les composants disponibles dans chaque espace de noms .NET installé sur votre ordinateur.
 
 **Nom de l'assembly**
 
-Affiche le nom de l’assembly .NET Framework qui comprend l’espace de noms de chaque composant. Triez cette colonne pour répertorier les espaces de noms contenus dans chaque assembly .NET Framework installé sur votre ordinateur.
+Affiche le nom de l’assembly .NET qui comprend l’espace de noms de chaque composant. Triez sur cette colonne pour lister les espaces de noms contenus dans chaque assembly .NET installé sur votre ordinateur.
 
 **Répertoire**
 
-Affiche l’emplacement de l’assembly .NET Framework. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Affiche l’emplacement de l’assembly .NET. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 

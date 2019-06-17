@@ -8,20 +8,19 @@ helpviewer_keywords:
 - shortcut keys [Visual Studio]
 - windows [Visual Studio], accessibility
 - dialog boxes [Visual Studio], shortcut keys
-- keyboard shortcuts [Visual Studio]
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8759643b9cf72cac671a8d733e1306760afc36
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531605"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820602"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procédure : Utiliser uniquement le clavier
 
@@ -32,7 +31,7 @@ Pour obtenir la liste complète des touches de raccourci de Visual Studio, consu
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Pour en savoir plus sur les mises à jour relatives à l’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Pour en savoir plus sur les mises à jour relatives à l’accessibilité, consultez le billet de blog [Améliorations apportées à l’accessibilité dans Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 ::: moniker-end
 
@@ -47,43 +46,41 @@ Vous pouvez ajouter un contrôle sur la boîte à outils dans un formulaire ou u
 
 1. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
 
-2. Utilisez les raccourcis clavier **Ctrl+Haut** ou **Ctrl+Bas** pour vous déplacer parmi les sections de l’onglet **Boîte à outils**.
+2. Utilisez les touches **Ctrl**+**Haut** ou **Ctrl**+**Bas** pour vous déplacer parmi les sections de l’onglet **Boîte à outils**.
 
 3. Utilisez les touches **Haut** ou **Bas** pour vous déplacer entre les contrôles.
 
-4. Une fois que le contrôle est sélectionné, appuyez sur **Entrée**.
-
-   Visual Studio ajoute le contrôle au formulaire ou au concepteur.
+4. Après avoir sélectionné le contrôle, utilisez la touche **Entrée** pour l’ajouter au formulaire ou au concepteur.
 
 ## <a name="dialog-box-options"></a>Options de boîte de dialogue
 
- Vous pouvez vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier.
+Vous pouvez vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier.
 
-### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Pour définir des options de boîte de dialogue à l’aide du clavier
+### <a name="set-dialog-box-options-from-the-keyboard"></a>Définir des options de boîte de dialogue à partir du clavier
 
 1. Utilisez les touches **Tab** ou **Maj**+**Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.
 
 2. Pour modifier les paramètres des options :
 
-    - Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.
+   - Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.
 
-    - Pour les cases à cocher, utilisez la touche **Barre d’espace** pour sélectionner ou désélectionner.
+   - Pour les cases à cocher, utilisez la touche **Barre d’espace** pour cocher ou décocher.
 
-    - Pour les listes déroulantes, utilisez **Alt+Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+   - Pour les listes déroulantes, utilisez **Alt**+**Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
 
-    - Pour les boutons, appuyez sur **Entrée** pour les actionner.
+   - Pour les boutons, appuyez sur **Entrée** pour les actionner.
 
-    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+   - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj**+**Alt**+**Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
 
 ## <a name="window-and-file-navigation"></a>Navigation dans les fenêtres et les fichiers
 
 Vous pouvez utiliser le clavier de plusieurs façons pour vous déplacer entre les fenêtres d’outils et de document ouvertes. Vous pouvez également déplacer et ancrer les fenêtres d’outils à d’autres emplacements à l’aide du clavier.
 
-### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Pour naviguer entre les fenêtres et les fichiers dans l’IDE à l’aide du clavier
+### <a name="navigate-among-windows-and-files-in-the-ide"></a>Naviguer entre les fenêtres et les fichiers dans l’IDE
 
-- Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez les touches **Ctrl+Tab** pour afficher le navigateur de l’IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez le raccourci clavier **Ctrl**+**Tab** pour afficher le navigateur de l’IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
-- Pour vous déplacer entre les fenêtres d’outils ancrées, choisissez le raccourci clavier **Alt+F7** pour afficher le navigateur de l’IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
+- Pour vous déplacer entre les fenêtres d’outils ancrées, choisissez le raccourci clavier **Alt**+**F7** pour afficher le navigateur de l’IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Pour déplacer et ancrer les fenêtres Outil à l’aide du clavier
 
@@ -91,21 +88,21 @@ Vous pouvez utiliser le clavier de plusieurs façons pour vous déplacer entre l
 
 2. Dans le menu **Fenêtre**, sélectionnez l’option **Ancrable**.
 
-3. Utilisez le raccourci clavier **Alt**+**Barre d’espace**, puis choisissez **Déplacer**.
+3. Appuyez sur **Alt**+**Barre d’espace**, puis choisissez **Déplacer**.
 
-     Le losange d’ancrage s’affiche.
+   Le losange d’ancrage s’affiche.
 
 4. Utilisez les touches de direction pour déplacer la fenêtre à un nouvel emplacement.
 
-     Le pointeur de la souris se déplace avec la fenêtre quand vous utilisez les touches de direction.
+   Le pointeur de la souris se déplace avec la fenêtre quand vous utilisez les touches de direction.
 
 5. Quand vous avez atteint le nouvel emplacement, utilisez les touches de direction pour placer le pointeur de la souris sur la partie appropriée du losange.
 
-     Le contour de la fenêtre Outil apparaît au nouvel emplacement d’ancrage.
+   Le contour de la fenêtre Outil apparaît au nouvel emplacement d’ancrage.
 
-6. Sélectionnez **Entrée**.
+6. Appuyez sur **Entrée**.
 
-     La fenêtre Outil s’aligne sur le nouvel emplacement d’ancrage.
+   La fenêtre Outil s’aligne sur le nouvel emplacement d’ancrage.
 
 ## <a name="see-also"></a>Voir aussi
 

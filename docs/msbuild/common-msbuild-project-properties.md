@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934524"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745884"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
 
- Les fichiers projet dans Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Les fichiers projet dans Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* et autres) contiennent le code XML MSBuild qui s’exécute quand vous générez un projet à l’aide de l’IDE. Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Pour plus d’informations, consultez [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Liste des propriétés et paramètres courants
 
@@ -39,7 +39,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | ALToolPath | Chemin du fichier *AL.exe*. Cette propriété remplace la version actuelle du fichier *AL.exe* pour permettre l’utilisation d’une autre version. |
 | ApplicationIcon | Fichier icône *.ico* à passer au compilateur pour qu’il soit incorporé en tant qu’icône Win32. Cette propriété est équivalente au commutateur `/win32icon` du compilateur. |
 | ApplicationManifest | Spécifie le chemin d'accès du fichier utilisé pour générer les informations de manifeste de Contrôle de compte d'utilisateur externe. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> Dans la plupart des cas, le manifeste est incorporé. Toutefois, si vous utilisez un déploiement COM sans inscription ou [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], le manifeste peut être un fichier externe installé avec les assemblys de votre application. Pour plus d'informations, consultez la propriété NoWin32Manifest dans cette rubrique. |
-| AssemblyOriginatorKeyFile | Spécifie le fichier utilisé pour signer l’assembly (*.snk* ou *.pfx*) et passé à la [tâche ResolveKeySource](../msbuild/resolvekeysource-task.md) pour générer la clé réelle utilisée pour signer l’assembly. |
+| AssemblyOriginatorKeyFile | Spécifie le fichier utilisé pour signer l’assembly ( *.snk* ou *.pfx*) et passé à la [tâche ResolveKeySource](../msbuild/resolvekeysource-task.md) pour générer la clé réelle utilisée pour signer l’assembly. |
 | AssemblySearchPaths | Liste d'emplacements dans lesquels il convient de rechercher au cours de la résolution de l'assembly de référence au moment de la génération. L'ordre dans lequel les chemins d'accès apparaissent dans cette liste est significatif, car les chemins répertoriés antérieurement ont priorité sur les entrées ultérieures. |
 | AssemblyName | Nom de l'assembly de sortie définitif après génération du projet. |
 | BaseAddress | Spécifie l'adresse de base de l'assembly de sortie principal. Cette propriété est équivalente au commutateur `/baseaddress` du compilateur. |
@@ -53,7 +53,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | Configuration | Configuration que vous générez, "Debug" ou "Release". |
 | CscToolPath | Chemin de *csc.exe*, le compilateur [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nom d'un fichier projet ou fichier de cibles qui doit être importé automatiquement avant l'importation des cibles communes. |
-| DebugSymbols | Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> En spécifiant **/p:DebugSymbols=false** en ligne de commande, vous désactivez la génération de fichiers de symboles de la base de données du programme (*.pdb*). |
+| DebugSymbols | Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> En spécifiant **/p:DebugSymbols=false** en ligne de commande, vous désactivez la génération de fichiers de symboles de la base de données du programme ( *.pdb*). |
 | DebugType | Définit le niveau d'informations de débogage que vous souhaitez générer. Les valeurs valides sont « full », « pdbonly », « portable », « embedded » et « none ». |
 | DefineConstants | Définit des constantes conditionnelles du compilateur. Les paires symbole/valeur sont séparées par des points-virgules et spécifiées avec la syntaxe suivante :<br /><br /> *symbole1 = valeur1 ; symbole2 = valeur2*<br /><br /> Cette propriété est équivalente au commutateur `/define` du compilateur. |
 | DefineDebug | Valeur booléenne qui indique si vous souhaitez que la constante DEBUG soit définie. |
@@ -69,7 +69,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | FrameworkPathOverride | Spécifie l’emplacement de *mscorlib.dll* et de *microsoft.visualbasic.dll*. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur *vbc.exe*. |
 | GenerateDocumentation | (Visual Basic uniquement) Paramètre booléen qui indique si la documentation est générée par la build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier *.xml* avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération. |
 | GenerateSerializationAssemblies | Indique si les assemblys de sérialisation XML doivent être générés par *SGen.exe*, qui peut être défini sur on, auto ou off. Cette propriété est utilisée pour les assemblys qui ciblent le .NET Framework uniquement. Pour générer des assemblys de sérialisation XML pour des assemblys .NET Standard ou .NET Core, référencez le package NuGet *Microsoft.XmlSerializer.Generator*. |
-| IntermediateOutputPath | Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, *\obj\debug\\*. |
+| IntermediateOutputPath | Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, *\obj\debug\\* . |
 | KeyContainerName | Nom du conteneur de clé de nom fort. |
 | KeyOriginatorFile | Nom du fichier de clé de nom fort. |
 | MSBuildProjectExtensionsPath | Spécifie le chemin dans lequel se trouvent les extensions de projet. Sa valeur par défaut est la même que `BaseIntermediateOutputPath`. |
@@ -118,7 +118,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | Satellite_Win32Resource | Insère une ressource Win32 (fichier *.res*) dans l’assembly satellite. |
 | SubsystemVersion | Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) ou [/subsystemversion (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Version du .NET Compact Framework requise pour exécuter l'application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement. |
-| TargetFrameworkVersion | Version du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nécessaire pour exécuter l’application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement. |
+| TargetFrameworkVersion | Version du .NET Framework nécessaire pour exécuter l’application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement. |
 | TreatWarningsAsErrors | Paramètre booléen qui, s'il a pour valeur `true`, entraîne le traitement de tous les avertissements comme des erreurs. Ce paramètre est équivalent au commutateur `/nowarn` du compilateur. |
 | UseHostCompilerIfAvailable | Paramètre booléen qui, s'il a pour valeur `true`, force la tâche de génération à utiliser l'objet de compilateur in-process, s'il est disponible. Ce paramètre est utilisé uniquement par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Paramètre booléen qui, s'il a pour valeur `true`, consigne la sortie du compilateur en utilisant l'encodage UTF-8. Ce paramètre est équivalent au commutateur `/utf8Output` du compilateur. |

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793409"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747596"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -48,7 +48,7 @@ Le tableau suivant récapitule les fonctionnalités dans les propriétés de pro
 |Multi-ciblage|Oui||
 |Icône et manifeste|Non|Disponible par le biais des options de ligne de commande du compilateur.|
 |Services client ASP.NET|Non||
-|ClickOnce|Non|Utilisez un projet client dans un autre langage .NET Framework, le cas échéant.|
+|ClickOnce|Non|Utilisez un projet client dans un autre langage .NET, si c’est applicable.|
 |Affectation de noms forts|Non|Disponible par le biais des options de ligne de commande du compilateur.|
 |Publication et gestion de version d’assembly|Non||
 |Analyse du code|Non|Les outils d’analyse de code peuvent être exécutés manuellement ou dans le cadre d’une commande post-build.|
@@ -60,7 +60,7 @@ Le **Concepteur de projet** se compose de plusieurs pages de propriétés de pro
 
 |Page du Concepteur de projet|Liens connexes|Description|
 | - |-------------|-----------|
-|Application|[Page Application, Concepteur de projet](reference/application-page-project-designer-csharp.md)|Permet de spécifier des paramètres et des propriétés au niveau de l’application, par exemple si vous créez une bibliothèque ou un fichier exécutable, quelle est la version du .NET Framework ciblée par l’application, ainsi que des informations sur l’emplacement où sont stockés les fichiers de ressources utilisés par cette application.|
+|Application|[Page Application, Concepteur de projet](reference/application-page-project-designer-csharp.md)|Permet de spécifier des paramètres et des propriétés au niveau de l’application, par exemple si vous créez une bibliothèque ou un fichier exécutable, quelle est la version de .NET ciblée par l’application ainsi que des informations sur l’emplacement où sont stockés les fichiers de ressources utilisés par cette application.|
 |Générer|[Page Générer, Concepteur de projets](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
 |Événements de build|[Page Événements de build, Concepteur de projet](reference/build-events-page-project-designer-csharp.md)|Permet de spécifier des commandes à exécuter avant ou après la compilation.|
 |Débogage|[Page Déboguer, Concepteur de projet](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
@@ -89,7 +89,7 @@ Les fonctionnalités suivantes des éditeurs de code et de texte de Visual Studi
 |Changer le retrait|Met en retrait ou annule la mise en retrait des lignes sélectionnées.|Oui|
 |Mise en retrait intelligente|Met en retrait et retire automatiquement la mise en retrait du curseur en fonction des règles d’étendue de F#.|Oui|
 |[Rechercher et remplacer du texte](finding-and-replacing-text.md)|Permet de rechercher dans un fichier, un projet ou une solution, et éventuellement de modifier le texte.|Oui|
-|Atteindre la définition pour une API .NET Framework|Quand le curseur est positionné sur une API .NET Framework, affiche le code généré à partir des métadonnées .NET Framework.|Non|
+|Atteindre la définition pour l’API .NET|Quand le curseur est positionné sur une API .NET, montre le code généré à partir des métadonnées .NET.|Non|
 |Atteindre la définition pour une API définie par l’utilisateur|Quand le curseur se trouve sur une entité de programme que vous avez définie, déplace le curseur à l’emplacement dans votre code où l’entité est définie.|Oui|
 |Atteindre la ligne|Permet d’accéder à une ligne spécifique dans un fichier, par numéro de ligne.|Oui|
 |Barres de navigation en haut du fichier|Permet d’accéder à des emplacements dans le code, par exemple d’après le nom de la fonction.|Oui|

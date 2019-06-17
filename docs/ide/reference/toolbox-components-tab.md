@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944946"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747754"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 
-Affiche les composants que vous pouvez ajouter aux concepteurs Visual Basic et C# pour Windows Forms. En plus des composants .NET Framework inclus avec Visual Studio, tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet.
+Affiche les composants que vous pouvez ajouter aux concepteurs Visual Basic et C# pour Windows Forms. En plus des composants .NET inclus avec Visual Studio, comme les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants de tiers à cet onglet.
 
 Pour afficher cet onglet, ouvrez un concepteur Windows Forms. Sélectionnez **Affichage** > **Boîte à outils**. Dans **Boîte à outils**, sélectionnez l’onglet **Composants**.
 
