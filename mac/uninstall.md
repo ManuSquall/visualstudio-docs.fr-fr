@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971441"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835896"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
 
-Il existe plusieurs produits Xamarin qui permettent le développement d’applications multiplateformes, notamment des applications autonomes comme Visual Studio pour Mac.
-
-Vous pouvez utiliser ce guide pour désinstaller chaque produit individuellement en accédant à la section appropriée, ou vous pouvez utiliser les scripts fournis dans la section [Script de désinstallation](#uninstall-script) pour tout désinstaller.
+Vous pouvez utiliser ce guide pour désinstaller chaque composant dans Visual Studio pour Mac individuellement en accédant à la section appropriée, ou vous pouvez utiliser les scripts fournis dans la section [Script de désinstallation](#uninstall-script) pour tout désinstaller.
 
 Si Xamarin Studio était installé sur votre machine, vous devez également suivre les instructions fournies dans le guide [Désinstallation de Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), en plus des étapes suivantes.
+
+> [!NOTE]
+> Ces informations servent uniquement à supprimer Visual Studio 2019 ou 2017 pour Mac de votre machine. Pour obtenir des informations sur la désinstallation de Visual Studio Code, consultez [ce problème](https://github.com/Microsoft/vscode/issues/52151).
 
 ## <a name="uninstall-script"></a>Script de désinstallation
 

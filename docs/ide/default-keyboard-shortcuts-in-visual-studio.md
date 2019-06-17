@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501175"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820927"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -59,6 +59,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
+|Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl+Maj+B**|
 |Build.Cancel|**Ctrl+Attn**|
 |Build.Compile|**Ctrl+F7**|
@@ -77,7 +78,6 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Debug.ApplyCodeChanges|**Alt+F10**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
 |Debug.BreakAll|**Ctrl+Alt+Attn**|
-|Debug.BreakatFunction|**Ctrl+B**|
 |Debug.Breakpoints|**Ctrl+Alt+B**|
 |Debug.CallStack|**Ctrl+Alt+C**|
 |Debug.DeleteAllBreakpoints|**Ctrl+Maj+F9**|
@@ -86,6 +86,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Debug.DOMExplorer|**Ctrl+Alt+V, D**|
 |Debug.EnableBreakpoint|**Ctrl+F9**|
 |Debug.Exceptions|**Ctrl+Alt+E**|
+|Debug.FunctionBreakpoint|**Ctrl+K, B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl+Maj+F11**|
 |Debug.Graphics.StartDiagnostics|**Alt+F5**|
 |Debug.Immediate|**Ctrl+Alt+I**|
@@ -109,7 +110,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Debug.ParallelWatch3|**Ctrl+Maj+D, 3**|
 |Debug.ParallelWatch4|**Ctrl+Maj+D, 4**|
 |Debug.Processes|**Ctrl+Alt+Z**|
-|Debug.QuickWatch|**Maj+F9**<br /><br /> ou<br /><br /> **Ctrl+Alt+Q**|
+|Debug.QuickWatch|**Maj+F9** ou **Ctrl+Alt+Q**|
 |Debug.RefreshWindowsapp|**Ctrl+Maj+R**|
 |Debug.Registers|**Ctrl+Alt+G**|
 |Debug.Restart|**Ctrl+Maj+F5**|

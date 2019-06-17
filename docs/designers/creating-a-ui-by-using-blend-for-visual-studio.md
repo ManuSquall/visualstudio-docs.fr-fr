@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847323"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820568"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Vue d’ensemble de Blend for Visual Studio
 
@@ -60,7 +60,7 @@ La fenêtre **Composants** contient tous les contrôles disponibles. Elle est si
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Zone de recherche** Tapez un élément dans la zone **Rechercher** pour filtrer la liste des composants.|
+|![Zone de recherche de ressources](../designers/media/b1_1.png)|**Zone de recherche** Tapez un élément dans la zone **Rechercher** pour filtrer la liste des composants.|
 |![Mode Grille et mode Liste](../designers/media/b1_2.png)|**Mode Grille et mode Liste** Passez du **mode Grille** au **mode Liste**, et inversement, dans l’affichage des composants.|
 |![Catégories Composants](../designers/media/b1_3.png)|**Catégories Composants** Cliquez sur une catégorie ou une sous-catégorie pour afficher la liste des composants dans cette catégorie.|
 |![Styles](../designers/media/b1_4.png)|**Styles** Affiche tous les styles contenus dans le dictionnaire de ressources.|
@@ -115,7 +115,7 @@ Utilisez cette fenêtre pour voir et modifier les propriétés d’un objet. Vou
 |![Espace de couleurs RVB](../designers/media/b1_12.png)|**Espace de couleurs RVB** Permet de modifier la couleur en ajustant les valeurs des éditeurs de nombres **R**, **V** ou **B** (rouge, vert, bleu).|
 |![Canal alpha](../designers/media/b1_13.png)|**Canal alpha** Modifiez la valeur alpha à l’aide de l’éditeur de nombres en regard de **A**.|
 |![Convertir la couleur en ressource](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Convertir la couleur en ressource** Permet de convertir la couleur sélectionnée en ressource de couleur. Les ressources de couleur sont disponibles quand vous cliquez sur l'onglet Ressources de couleur.|
-|![](../designers/media/b1_15.png)|**Valeur hexadécimale** Affiche la valeur hexadécimale de la couleur affichée.|
+|![Valeur hexadécimale de la couleur](../designers/media/b1_15.png)|**Valeur hexadécimale** Affiche la valeur hexadécimale de la couleur affichée.|
 |![Légende 16](../designers/media/b5_label_16.png)|**Curseur de dégradé** S’affiche uniquement si un pinceau de dégradé est sélectionné.|
 |![Afficher les propriétés avancées](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Afficher les propriétés avancées** Affiche les catégories de propriétés moins fréquemment utilisées.|
 

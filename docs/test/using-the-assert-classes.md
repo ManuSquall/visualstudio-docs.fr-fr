@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962006"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820315"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Utiliser des classes Assert pour les tests unitaires
 
@@ -45,7 +45,7 @@ L’exception <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclus
 
 Si vous écrivez une nouvelle classe d’exception assert, héritez de la classe de base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> pour identifier plus facilement l’exception comme un échec d’assertion, et non comme une exception inattendue levée à partir de votre code de test ou de production.
 
-Décorez une méthode de test avec l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> quand vous souhaitez que la méthode de test vérifie qu’une exception censée être levée par une méthode dans votre code d’application est effectivement levée.
+Pour vérifier qu’une exception censée être levée par une méthode dans le code de votre application est effectivement levée, utilisez la méthode <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969133"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746485"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 
@@ -42,7 +42,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 
 |Élément|Description|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) et [Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
 |**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications de bureau, applications serveur ou applications Web. Il peut être utilisé gratuitement pour le développement et la production.|
@@ -57,4 +57,4 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 - [Page Publier, Concepteur de projets](../../ide/reference/publish-page-project-designer.md)
 - [Prérequis pour le déploiement d’applications](../../deployment/application-deployment-prerequisites.md)
 - [Déploiement des prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Vue d’ensemble du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md)

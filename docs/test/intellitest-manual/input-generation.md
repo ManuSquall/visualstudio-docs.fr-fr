@@ -9,30 +9,26 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550212"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746305"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
-IntelliTest génère des entrées pour les [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) en analysant les conditions de branche dans le programme.
-Les entrées de test sont choisies en fonction de leur capacité à déclencher de nouveaux comportements de création de branches du programme.
-L’analyse est un processus incrémentiel. Elle redéfinit un prédicat **q: I -> {true, false}** sur les paramètres d’entrée de test formels **I**. **q** représente l’ensemble des comportements déjà observés par IntelliTest.
-Au départ, **q : = false**, car rien n’a encore été observé.
+IntelliTest génère des entrées pour les [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) en analysant les conditions de branche dans le programme. Les entrées de test sont choisies en fonction de leur capacité à déclencher de nouveaux comportements de création de branches du programme. L’analyse est un processus incrémentiel. Elle redéfinit un prédicat `q: I -> {true, false}` sur les paramètres d’entrée du test formels `I`. `q` représente l’ensemble des comportements déjà observés par IntelliTest. Au départ, `q := false`, car rien n’a encore été observé.
 
 Les étapes de la boucle sont :
 
-1. IntelliTest détermine les entrées **i** telles que **q(i)=false** à l’aide un [solveur de contrainte](#constraint-solver).
-   Par construction, l’entrée **i** prend un chemin d’exécution jamais vu avant. Cela signifie qu’au départ **i** peut être n’importe quelle entrée, car aucun chemin d’exécution n’a encore été découvert.
+1. IntelliTest détermine les entrées `i` de façon que `q(i)=false` en utilisant un [solveur de contrainte](#constraint-solver). Par construction, l’entrée `i` prend un chemin d’exécution non emprunté auparavant. Cela signifie qu’au départ, `i` peut être n’importe quelle entrée, car aucun chemin d’exécution n’a encore été découvert.
 
-1. IntelliTest exécute le test avec l’entrée choisie **i** et surveille l’exécution du test et le programme testé.
+1. IntelliTest exécute le test avec l’entrée `i` choisie, et surveille l’exécution du test et le programme testé.
 
-1. Pendant l’exécution, le programme prend un chemin particulier qui est déterminé par toutes les branches conditionnelles du programme. L’ensemble de toutes les conditions qui déterminent l’exécution est appelé *condition de chemin*, écrite comme prédicat **p: I -> {true, false}** sur les paramètres d’entrée formels. IntelliTest calcule une représentation de ce prédicat.
+1. Pendant l’exécution, le programme prend un chemin particulier qui est déterminé par toutes les branches conditionnelles du programme. L’ensemble de toutes les conditions qui déterminent l’exécution est appelé la *condition de chemin*, écrite sous la forme du prédicat `p: I -> {true, false}` sur les paramètres d’entrée formels. IntelliTest calcule une représentation de ce prédicat.
 
-1. IntelliTest définit **q := (q or p)**. En d’autres termes, il enregistre le fait qu’il a vu le chemin représenté par **p**.
+1. IntelliTest définit `q := (q or p)`. En d’autres termes, il enregistre le fait qu’il a vu le chemin représenté par `p`.
 
 1. Passez à l’étape 1.
 
@@ -47,14 +43,12 @@ IntelliTest filtre les entrées qui ne respectent pas les hypothèses indiquées
 
 En plus des entrées immédiates (arguments ou [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing)), un test peut extraire d’autres valeurs d’entrée de la classe statique [PexChoose](static-helper-classes.md#pexchoose). Les choix déterminent aussi le comportement des [objets fictifs paramétrables](#parameterized-mocks).
 
-<a name="constraint-solver"></a>
 ## <a name="constraint-solver"></a>Solveur de contrainte
 
 IntelliTest utilise un solveur de contrainte pour déterminer les valeurs d’entrée appropriées d’un test et du programme testé.
 
 IntelliTest utilise le solveur de contrainte [Z3](https://github.com/Z3Prover/z3/wiki).
 
-<a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>Couverture dynamique de code
 
 Effet collatéral de la surveillance de l’exécution, IntelliTest collecte les données de couverture dynamique de code.
@@ -63,12 +57,10 @@ La couverture est dite *dynamique* car IntelliTest connaît uniquement le code q
 Par exemple, quand IntelliTest signale la couverture dynamique de 5/10 blocs de base, cela signifie que cinq blocs sur dix ont été couverts, où le nombre total de blocs de toutes les méthodes qui ont été atteintes jusqu'à présent par l’analyse (par opposition à toutes les méthodes qui existent dans l’assembly testé) est de 10.
 Plus tard au cours de l’analyse, quand d’autres méthodes accessibles sont découvertes, le numérateur (5 dans cet exemple) et le dénominateur (10) peuvent tous les deux augmenter.
 
-<a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Nombres entiers et à virgule flottante
 
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest détermine les valeurs d’entrée de test des types primitifs tels que **byte**, **int**, **float** et d’autres, afin de déclencher des chemins d’exécution différents pour le test et le programme testé.
 
-<a name="objects"></a>
 ## <a name="objects"></a>Objets
 
 IntelliTest peut [créer des instances de classes .NET existantes](#existing-classes) ou vous pouvez utiliser IntelliTest pour automatiquement [créer des objets fictifs](#parameterized-mocks) qui implémentent une interface spécifique et qui se comportent différemment selon leur utilisation.
@@ -85,10 +77,9 @@ Si tous les champs de la classe sont [visibles](#visibility), IntelliTest peut d
 
 Si le type n’est pas visible ou si les champs ne sont pas [visibles](#visibility), IntelliTest a besoin d’aide pour créer des objets et les mettre dans des états intéressants qui permettent d’obtenir une couverture maximale du code. IntelliTest peut utiliser la réflexion pour créer et initialiser des instances de manière arbitraire. Toutefois, ce n’est généralement pas souhaitable, car cela peut placer l’objet dans un état qui ne peut jamais se produire durant l’exécution normale du programme. Au lieu de cela, IntelliTest s’appuie sur des indications de l’utilisateur.
 
-<a name="visibility"></a>
 ## <a name="visibility"></a>Visibilité
 
-Le .NET Framework dispose d’un modèle de visibilité élaboré : les types, méthodes, champs et autres membres peuvent être **privés**, **publics**, **internes**et plus encore.
+.NET a un modèle de visibilité élaboré : les types, méthodes, champs et autres membres peuvent être **privés**, **publics**, **internes** et plus encore.
 
 Quand IntelliTest génère des tests, il tente d’effectuer uniquement les actions (comme l’appel des constructeurs et des méthodes et la définition des champs) qui sont autorisées selon les règles de visibilité de .NET dans le contexte des tests générés.
 
@@ -105,10 +96,9 @@ Les règles sont les suivantes :
 * **Visibilité des membres publics**
   * IntelliTest part du principe qu’il peut utiliser tous les membres exportés visibles dans le contexte de la classe [PexClass](attribute-glossary.md#pexclass).
 
-<a name="parameterized-mocks"></a>
 ## <a name="parameterized-mocks"></a>Objets fictifs paramétrés
 
-Comment tester une méthode qui a un paramètre d’un type d’interface ? Ou d’une classe non-sealed ? IntelliTest ne sait pas quelles implémentations seront utilisées ultérieurement quand cette méthode est appelée. Peut-être même qu’il n’y aura aucune véritable implémentation disponible au moment du test.
+Comment tester une méthode qui a un paramètre d’un type d’interface ? Ou d’une classe non-sealed ? IntelliTest ne sait pas quelles implémentations seront utilisées ultérieurement quand cette méthode est appelée. Peut-être même qu’il n’y a aucune véritable implémentation disponible au moment du test.
 
 La réponse classique consiste à utiliser des *objets fictifs* avec un comportement explicite.
 
@@ -123,12 +113,10 @@ Les objets fictifs paramétrables ont deux modes d’exécution différents :
 
 Utilisez [PexChoose](static-helper-classes.md#pexchoose) pour obtenir les valeurs des objets fictifs paramétrables.
 
-<a name="structs"></a>
 ## <a name="structs"></a>Structs
 
 Le raisonnement d’IntelliTest concernant les valeurs **struct** est similaire à la façon dont il traite les [objets](#objects).
 
-<a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>Tableaux et chaînes
 
 IntelliTest surveille les instructions exécutées quand il exécute un test et le programme testé. Il est particulièrement attentif quand le programme dépend de la longueur d’une chaîne ou d’un tableau (et des limites et longueurs inférieures d’un tableau multidimensionnel).
@@ -141,11 +129,10 @@ IntelliTest tente de réduire la taille des tableaux et des chaînes nécessaire
 
 La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être utilisée pour obtenir des entrées supplémentaires dans un test et pour implémenter des [objets fictifs paramétrables](#parameterized-mocks).
 
-<a name="further-reading"></a>
-## <a name="further-reading"></a>Compléments de lecture
-
-* [How does it work?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
-
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+
+## <a name="further-reading"></a>Informations supplémentaires
+
+* [How does it work?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

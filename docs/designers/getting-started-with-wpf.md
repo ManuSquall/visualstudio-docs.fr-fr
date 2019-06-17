@@ -8,16 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f07d4e2dc52ff05d67ec18d7f40f1119db582c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bac2041e9338f4b8b95755221a44157e0c409c8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894006"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747275"
 ---
 # <a name="get-started-with-wpf"></a>Bien démarrer avec WPF
 
-Windows Presentation Foundation (WPF) est un framework d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, une disposition, la liaison de données, des documents et la sécurité. S’agissant d’un sous-ensemble du .NET Framework, si vous avez déjà créé des applications avec le .NET Framework à l’aide d’ASP.NET ou de Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif à des fins de programmation d’applications. Cette section contient des rubriques de présentation et d’aide à la prise en main de WPF.
+Windows Presentation Foundation (WPF) est un framework d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, une disposition, la liaison de données, des documents et la sécurité. Le Framework fait partie de .NET : ainsi, si vous avez déjà créé des applications avec .NET en utilisant ASP.NET ou Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif à des fins de programmation d’applications.
+
+Cette section contient des rubriques de présentation et d’aide à la prise en main de WPF.
 
 ## <a name="where-should-i-start"></a>Par où commencer ?
 
@@ -25,7 +27,7 @@ Windows Presentation Foundation (WPF) est un framework d’interface utilisateur
 |-|-|
 |Je veux rentrer dans le vif du sujet...|[Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Je souhaite comparer les outils de conception XAML...|[Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md)|
-|Vous débutez avec .NET ?|[Vue d’ensemble du .NET Framework](/dotnet/framework/get-started/overview)<br /><br /> [Application Essentials](/dotnet/standard/application-essentials)<br /><br /> [Bien démarrer avec Visual Basic et Visual C#](../ide/quickstart-visual-basic-console.md)|
+|Vous débutez avec .NET ?|[Vue d’ensemble de .NET](/dotnet/framework/get-started/overview)<br /><br /> [Application Essentials](/dotnet/standard/application-essentials)<br /><br /> [Bien démarrer avec Visual Basic et Visual C#](../ide/quickstart-visual-basic-console.md)|
 |En savoir plus sur WPF...|[Vue d’ensemble de WPF](../designers/introduction-to-wpf.md)<br /><br /> [Vue d’ensemble du langage XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Contrôles](/dotnet/framework/wpf/controls/)<br /><br /> [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [Liaison de données WPF avec LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |Vous êtes développeur Windows Forms ?|[Contrôles Windows Forms et contrôles WPF équivalents](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Scénarios pris en charge dans le cadre de l’interopérabilité WPF et Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

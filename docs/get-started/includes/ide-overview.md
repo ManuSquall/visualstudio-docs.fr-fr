@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848351"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820900"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -23,7 +23,7 @@ ms.locfileid: "65848351"
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "IDE de Visual Studio")](../media/vs-2019/ide-overview.png#lightbox)
+[![IDE de Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
-1. Choisissez la catégorie de modèle **.NET Core** sous **Visual C#**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
+1. Choisissez la catégorie de modèle **.NET Core** sous **Visual C#** , puis choisissez le modèle **Application console (.NET Core)** . Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
    ![Modèle d’application .NET Core](../media/overview-new-project-dialog.png)
 
@@ -197,7 +197,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/overview-console-window.png)
 
@@ -242,7 +242,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    La fenêtre **Créer un projet** s’affiche et présente plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
-1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **C#** dans la liste déroulante **Langage**. Sélectionnez le modèle **Application console (.NET Core)**, puis choisissez **Suivant**.
+1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **C#** dans la liste déroulante **Langage**. Sélectionnez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
 
     ![Créer un projet dans Visual Studio](../media/vs-2019/create-new-project.png)
 
@@ -266,7 +266,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
-   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!** . Maintenant, votre application fonctionne !
 
    ![Fenêtre de console](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range="vs-2017"
 
-3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
+3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »** .
 
    ![Renommer une action dans Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range=">=vs-2019"
 
-3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
+3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](../../ide/quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »** .
 
    ![Renommer une action dans Visual Studio](../media/vs-2019/rename-quick-action.png)
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843926"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715069"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 
@@ -21,7 +21,7 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML et LINQ to XML
 
-XAML (Extensible Application Markup Language) est un dialecte XML créé par Microsoft pour prendre en charge les technologies .NET Framework 3.0. Il est utilisé dans WPF pour représenter des éléments d’interface et fonctionnalités connexes, tels que des événements et des liaisons de données. Dans Windows Workflow Foundation, XAML est utilisé pour représenter la structure de programme, telle que le contrôle de programme (*flux de travail*). XAML permet de séparer les aspects déclaratifs d'une technologie des procédures de code connexes qui définissent le comportement plus individualisé d'un programme.
+XAML (Extensible Application Markup Language) est un dialecte XML créé par Microsoft pour prendre en charge les technologies .NET. Il est utilisé dans WPF pour représenter des éléments d’interface et fonctionnalités connexes, tels que des événements et des liaisons de données. Dans Windows Workflow Foundation, XAML est utilisé pour représenter la structure de programme, telle que le contrôle de programme (*flux de travail*). XAML permet de séparer les aspects déclaratifs d'une technologie des procédures de code connexes qui définissent le comportement plus individualisé d'un programme.
 
 D'une manière générale, XAML et LINQ to XML peuvent interagir de deux façons :
 
@@ -56,7 +56,7 @@ Pour que la liaison unidirectionnelle ou bidirectionnelle soit établie, la sour
 
 Pour plus d’informations sur la liaison de données dans WPF, consultez [Liaison de données (WPF)](/dotnet/framework/wpf/data/data-binding-wpf).
 
-## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propriétés dynamiques dans les classes LINQ to XML 
+## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propriétés dynamiques dans les classes LINQ to XML
 
 La plupart des classes LINQ to XML ne sont pas éligibles comme sources de données dynamiques WPF correctes. Certaines des informations les plus utiles sont accessibles uniquement par le biais de méthodes, et non pas de propriétés, et les propriétés de ces classes n’implémentent pas les notifications de changement. Pour prendre en charge la liaison de données WPF, LINQ to XML expose un ensemble de *propriétés dynamiques*.
 

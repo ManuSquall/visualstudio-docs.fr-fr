@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793550"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746866"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -48,7 +48,7 @@ Si vous avez déjà une collection de fichiers de code source, vous pouvez facil
 
 1. Dans le menu, choisissez **Fichier** > **Nouveau** >  **Projet à partir de code existant**.
 
-1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?**, puis choisissez le bouton **Suivant**.
+1. Dans l’Assistant **Créer un projet à partir de fichiers de code existants**, choisissez le type de projet souhaité dans la zone de liste déroulante **Quel type de projet voulez-vous créer ?** , puis choisissez le bouton **Suivant**.
 
 1. Dans l’Assistant, accédez à l’emplacement des fichiers, puis entrez le nom du nouveau projet dans la zone **Nom**. Quand vous avez terminé, choisissez le bouton **Terminer**.
 
@@ -61,11 +61,11 @@ Si vous utilisez des fichiers qui s’appliquent à plusieurs projets, comme un 
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Créer un projet .NET qui cible une version spécifique du .NET Framework
 
-Quand vous créez un projet, vous pouvez spécifier une version spécifique de .NET Framework à utiliser pour votre projet.
+Quand vous créez un projet .NET Framework, vous pouvez spécifier une version spécifique du .NET Framework que votre projet doit utiliser. (Quand vous créez un projet .NET Core, vous ne spécifiez pas de version du framework.)
 
 ::: moniker range="vs-2017"
 
-Pour spécifier une version de .NET Framework, choisissez le menu déroulant **Framework** dans la boîte de dialogue **Nouveau projet**.
+Pour spécifier une version du .NET Framework, choisissez le menu déroulant **Framework** dans la boîte de dialogue **Nouveau projet**.
 
 ![Liste déroulante Framework dans la boîte de dialogue Nouveau projet](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Pour spécifier une version de .NET Framework, choisissez le menu déroulant **F
 
 ::: moniker range=">=vs-2019"
 
-Pour spécifier une version de .NET Framework, choisissez le menu déroulant **Framework** dans la page **Créer un projet**.
+Pour spécifier une version du .NET Framework, choisissez le menu déroulant **Framework** dans la page **Créer un projet**.
 
 ![Sélecteur de framework dans la configuration d’un nouveau projet](media/vs-2019/configure-new-project-framework.png)
 

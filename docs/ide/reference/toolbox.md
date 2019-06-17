@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945456"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747685"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
@@ -33,7 +33,7 @@ Boîte à outils accompagne les modes concepteur, tels que celui associé à un 
 > [!NOTE]
 > Pour certains types de projet, **Boîte à outils** n’affiche pas tous les éléments.
 
-La version .NET Framework que cible votre projet détermine également les contrôles qui apparaissent dans Boîte à outils. Vous pouvez configurer votre projet pour cibler une version différente de .NET Framework à partir des pages de propriétés du projet. Sélectionnez le nœud de projet dans l’**Explorateur de solutions** puis, dans la barre de menus, choisissez **Projet** > **Propriétés de nom_projet**. Sous l’onglet **Application**, utilisez le menu déroulant **Framework cible**.
+La version de .NET que cible votre projet détermine également les contrôles qui apparaissent dans la boîte à outils. Vous pouvez modifier si nécessaire la version du framework cible à partir des pages des propriétés du projet. Sélectionnez le nœud de projet dans l’**Explorateur de solutions** puis, dans la barre de menus, choisissez **Projet** > **Propriétés de nom_projet**. Sous l’onglet **Application**, utilisez le menu déroulant **Framework cible**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gérer la fenêtre Boîte à outils et ses contrôles
 

@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557253"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744784"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Fonctionnalités de Dotfuscator
 
@@ -37,7 +37,7 @@ Dotfuscator Community prend en charge de nombreux types d’applications et d�
 ## <a name="intellectual-property-protection"></a>Protection de la propriété intellectuelle
 
 La conception, le comportement et l’implémentation de votre application sont des formes de propriété intellectuelle.
-Cela dit, les applications créées pour le .NET Framework sont très simples à comprendre. En effet, il est très facile d’appliquer une ingénierie à rebours sur les assemblys .NET, [car ils contiennent des métadonnées générales et du code intermédiaire][assemblies].
+Cela dit, les applications créées pour .NET sont très simples à comprendre. En effet, il est facile d’appliquer une ingénierie à rebours sur les assemblys .NET, [car ils contiennent des métadonnées générales et du code intermédiaire][assemblies].
 
 Dotfuscator Community comprend une fonctionnalité d’[obfuscation .NET][obfuscation] de base, qui prend la forme du [renommage][renaming].
 L’obfuscation de votre code avec Dotfuscator permet de réduire les risques d’accès non autorisé au code source via l’ingénierie à rebours, car les informations de noms importantes ne sont plus publiques.
@@ -50,7 +50,7 @@ Pour empêcher cela, Dotfuscator peut injecter un [comportement anti-débogage][
 ## <a name="application-integrity-protection"></a>Protection de l’intégrité des applications
 
 En plus de protéger votre code source, il est important de s’assurer que votre application est bien utilisée comme prévu.
-Des pirates peuvent tenter de détourner votre application afin de contourner les stratégies de licences (piratage de logiciels), de voler ou de manipuler des données sensibles gérées par l’application, ou de modifier le comportement de l’application.
+Des attaquants peuvent tenter de détourner votre application afin de contourner les stratégies de licences (piratage de logiciels), de voler ou de manipuler des données sensibles gérées par l’application, ou de modifier son comportement.
 
 Dotfuscator Community peut injecter du [code de validation d’application][checks] dans vos assemblys, notamment des mesures [antifalsification][tamper], [antidébogage][debug] et [antiappareils rootés][root].
 Lorsqu’un état d’application non valide est détecté, le code de validation peut [appeler du code d’application pour résoudre le problème de façon appropriée][check-app].

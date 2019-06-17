@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263510"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747815"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
-Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] utilisant la méthode d’échantillonnage à partir de la ligne de commande.
+Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service .NET Framework utilisant la méthode d’échantillonnage à partir de la ligne de commande.
 
 ## <a name="common-tasks"></a>Tâches courantes
 

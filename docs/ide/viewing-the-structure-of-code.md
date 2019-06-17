@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263069"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747711"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
-Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans Visual Studio, des composants .NET Framework, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
+Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans des projets Visual Studio, des composants .NET, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
 
 Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre plusieurs fenêtres d’outils.
 

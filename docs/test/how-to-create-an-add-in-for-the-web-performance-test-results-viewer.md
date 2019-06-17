@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950049"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747248"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procédure : créer un complément Visual Studio pour l’Afficheur de résultats de test de performances Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procédure : Créer un complément pour l’Afficheur de résultats de test de performances web
 
 Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, utilisez les espaces de noms suivants :
 
@@ -76,7 +76,7 @@ Un complément est une DLL compilée qui s’exécute dans l’environnement de 
 
 10. Désactivez les autres cases à cocher.
 
-11. Dans la page **Choisir les informations contenues dans « À propos de »**, vous pouvez indiquer si vous voulez que les informations relatives à votre complément apparaissent dans une boîte de dialogue **À propos de**. Si vous souhaitez que les informations soient affichées, cochez la case **Oui, je souhaite que mon complément propose une boîte de dialogue « À propos de »**.
+11. Dans la page **Choisir les informations contenues dans « À propos de »** , vous pouvez indiquer si vous voulez que les informations relatives à votre complément apparaissent dans une boîte de dialogue **À propos de**. Si vous souhaitez que les informations soient affichées, cochez la case **Oui, je souhaite que mon complément propose une boîte de dialogue « À propos de »** .
 
      Les informations que vous pouvez ajouter dans la boîte de dialogue **À propos de** de Visual Studio incluent notamment le numéro de version, des informations relatives à la prise en charge, des données relatives à la licence, etc.
 
@@ -256,9 +256,9 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet WebPerfTestResultsViewerControl, puis sélectionnez **Propriétés**.
 
-2. Sélectionnez l’onglet **Application**, choisissez la liste déroulante **Framework cible**, sélectionnez **.NET Framework 4**, puis fermez la page **Propriétés**.
+2. Sélectionnez l’onglet **Application**, choisissez la liste déroulante **Framework cible**, puis sélectionnez **.NET Framework 4** (ou ultérieur). Fermez la fenêtre **Propriétés**.
 
-     Cette opération est nécessaire pour prendre en charge les références DLL requises afin d’étendre **l’Afficheur de résultats de test de performances web**.
+   Cette opération est nécessaire pour prendre en charge les références DLL requises afin d’étendre **l’Afficheur de résultats de test de performances web**.
 
 3. Dans **l’Explorateur de solutions**, dans le projet WebPerfTestResultsViewerControl, cliquez avec le bouton droit sur le nœud **Références**, puis sélectionnez **Ajouter une référence**.
 
@@ -300,15 +300,11 @@ Le complément Visual Studio créé dans les procédures précédentes référen
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Générer la solution WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Pour générer la solution
+## <a name="build-the-solution"></a>Générer la solution
 
 - Dans le menu **Générer**, sélectionnez **Générer la solution**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Inscrire le complément WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Pour enregistrer le complément à l'aide du Gestionnaire de compléments
 
 1. Dans le menu **Outils**, sélectionnez **Gestionnaire de compléments**.
 
@@ -318,15 +314,13 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 4. Cliquez sur **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Exécuter le test de performances de site web à l’aide du complément WebPerfTestResultsViewerAddin
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Pour exécuter le nouveau complément VS pour l’Afficheur des résultats de test web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Exécutez le test de performances web avec l’Afficheur de résultats de test web
 
 1. Exécutez votre test de performances web. Le nouvel onglet du complément WebPerfTestResultsViewerAddin, intitulé Exemple, apparaît dans **l’Afficheur de résultats de test de performances web**.
 
 2. Cliquez sur l'onglet pour consulter les propriétés présentées dans le contrôle DataGridView.
 
-## <a name="net-framework-security"></a>Sécurité .NET Framework
+## <a name="net-security"></a>Sécurité .NET
 
 Pour améliorer la sécurité en empêchant les compléments nuisibles de s’activer automatiquement, Visual Studio fournit différents paramètres dans une page **Options Outils** nommée **Sécurité des compléments/macros**.
 

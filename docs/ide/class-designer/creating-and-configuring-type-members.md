@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975544"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746928"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -308,7 +308,7 @@ Si vous essayez d’enregistrer un projet contenant un type dont le fichier de c
 
 Si un fichier de code contient une erreur de syntaxe, les formes dédiées à l'affichage du code de ce fichier restent en lecture seule tant que l'erreur de syntaxe n'est pas résolue. Les formes affichent alors le texte en rouge et une icône de couleur rouge, accompagnée d'une info-bulle dont le texte est le suivant : « Le fichier de code source contient une erreur d'analyse. »
 
-Un type référencé (comme un type .NET Framework), qui existe sous un autre nœud de projet ou sous un nœud d'assembly référencé, est signalé sur l'aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.
+Un type référencé (comme un type .NET), qui existe sous un autre nœud du projet ou sous un nœud d’assembly référencé, est signalé sur l’aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.
 
 Les indexeurs sont en lecture-écriture dans le code et dans la fenêtre **Détails de classe**, mais le nom d’indexeur est en lecture seule.
 

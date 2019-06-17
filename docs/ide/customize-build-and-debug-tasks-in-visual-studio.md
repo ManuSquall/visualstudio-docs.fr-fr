@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963166"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820299"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -313,7 +313,7 @@ Les paramètres lus à partir du fichier *.gitignore* sont appliqués à son ré
 ## <a name="see-also"></a>Voir aussi
 
 - [Développer du code sans projet ou solution](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Projets Ouvrir un dossier pour C++](/cpp/ide/non-msbuild-projects)
-- [Projets CMake dans C++](/cpp/ide/cmake-tools-for-visual-cpp)
-- [Référence NMAKE](/cpp/build/nmake-reference)
+- [Projets Ouvrir un dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Projets CMake pour C++](/cpp/build/cmake-projects-in-visual-studio)
+- [Référence NMAKE](/cpp/build/reference/nmake-reference)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
