@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407756"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043315"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -93,7 +93,7 @@ Vous pouvez modifier certains aspects de la configuration du débogueur distant 
      > [!IMPORTANT]
      > Vous pouvez exécuter le débogueur distant sous un compte d’utilisateur différent à partir du compte d’utilisateur que vous utilisez sur l’ordinateur Visual Studio, mais vous devez ajouter le compte d’utilisateur différent pour les autorisations du débogueur distant.
 
-     Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : **msvsmon /Allow \< username@computer>**.
+     Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : **msvsmon /Allow \< username@computer>** .
 
 - Si vous avez besoin modifier le mode d’authentification ou le numéro de port, ou spécifiez une valeur de délai d’expiration pour les outils à distance : choisissez **Outils > Options**.
 

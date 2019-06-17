@@ -109,7 +109,7 @@
             - name: Vue d'ensemble
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: "Étape\_1\_: Créer un projet d’application Windows Forms"
+            - name: "Étape\_1\_: Créer un projet Application Windows Forms"
               href: ../ide/step-1-create-a-windows-forms-application-project.md
             - name: "Étape\_2\_: Exécuter votre programme"
               href: ../ide/step-2-run-your-program.md
@@ -161,13 +161,13 @@
               href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
             - name: "Étape\_2\_: Ajouter un objet aléatoire et une liste d’icônes"
               href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
-            - name: "Étape\_3\_: Affecter une icône aléatoire à chaque contrôle Label"
+            - name: "Étape\_3\_: Affecter une icône aléatoire à chaque étiquette"
               href: ../ide/step-3-assign-a-random-icon-to-each-label.md
             - name: "Étape\_4\_: Ajouter un gestionnaire d’événements Click à chaque étiquette"
               href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
-            - name: "Étape\_5\_: Ajouter des références aux contrôles Label"
+            - name: "Étape\_5\_: Ajouter des références aux étiquettes"
               href: ../ide/step-5-add-label-references.md
-            - name: "Étape\_6\_: Ajouter une minuterie"
+            - name: "Étape\_6\_: Ajouter un minuteur"
               href: ../ide/step-6-add-a-timer.md
             - name: "Étape\_7\_: Garder les paires visibles"
               href: ../ide/step-7-keep-pairs-visible.md

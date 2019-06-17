@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839821"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043464"
 ---
 1. Sur l’ordinateur distant, rechercher et démarrer le **débogueur distant** à partir de la **Démarrer** menu. 
    
    Si vous n’avez les autorisations administratives sur l’ordinateur distant, cliquez sur le **débogueur distant** application et sélectionnez **exécuter en tant qu’administrateur**. Sinon, simplement démarrer normalement.
 
-   Il peut y avoir différentes versions de *msvsmon.exe* dans *x64*, *x32*, ou d’autres dossiers. Veillez à démarrer la version que vous avez besoin déboguer votre application. 
+   Si vous envisagez d’attacher à un processus qui s’exécute en tant qu’administrateur, ou s’exécute sous un autre utilisateur de compte (comme IIS), cliquez sur le **débogueur distant** application et sélectionnez **exécuter en tant qu’administrateur**. Pour plus d’informations, consultez [exécuter le débogueur distant en tant qu’administrateur](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
 1. La première fois que vous démarrez le débogueur distant (ou avant que vous l’avez configuré), le **Configuration du débogage distant** boîte de dialogue s’affiche.  
   
