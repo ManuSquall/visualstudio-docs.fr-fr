@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805343"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032886"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 
@@ -52,7 +52,7 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    >
    > *Nous examinons actuellement votre demande d’accès à CAST Highlight. Nous vous contacterons dans un délai de 48 heures.*
    >
-   > *Cordialement,*
+   > *Cordialement,* 
    > *Greg*
 
 Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la création de votre compte et vous demandant de cliquer sur le lien d’activation pour terminer le processus d’activation.
@@ -72,7 +72,7 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
    > - Tutoriel vidéo : [Configurer votre portefeuille](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Tutoriel vidéo : [Intégrer vos applications](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Cordialement,*
+   > *Cordialement,* 
    > *Greg*
 
    > [!NOTE]
@@ -86,7 +86,6 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                             |  N/A          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | Non disponible | N/A |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Skill Me Up ‒ Par Opsgility inclus dans certains abonnements Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946994"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032818"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Avantage de la formation Skill Me Up ‒ Par Opsgility dans les abonnements Visual Studio
 
@@ -39,8 +39,8 @@ Certains abonnements Visual Studio comportent jusqu'à six mois de formation sp�
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Dev Essentials | NA  | Non disponible | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+||
 
 *Exclut :  MPN (Microsoft Partner Network), MVP (Most Valuable Professional), RD (Regional Director) Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 

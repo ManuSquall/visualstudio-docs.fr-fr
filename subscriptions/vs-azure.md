@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez comment activer l’avantage Azure inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685920"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032209"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 
@@ -30,7 +30,6 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 |              Visual Studio Professional mensuel              |        Non disponible        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédit mensuel de 50 dollars US      |                             Oui                             |
 |                        Plateformes MSDN                        |     Crédit mensuel de 100 dollars US     |                             Oui                             |
-|                 Visual Studio Dev Essentials                 | Services gratuits + crédit de 200 dollars US | Les services gratuits sont perpétuels.  Le crédit de 200 dollars US est à usage unique. |
 |               Visual Studio Enterprise – NFR\*               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |                Visual Studio Enterprise - FTE                |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     Crédit mensuel de 150 dollars US     |                             Oui                             |
@@ -41,7 +40,7 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 |      Visual Studio Enterprise – MCT Software & Services      |     Crédit mensuel de 100 dollars US     |                             Oui                             |
 | Visual Studio Enterprise – MCT Software & Services Developer |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 
-* Inclut NFR (Revente interdite), MVP (Most Valuable Professional), RD (Regional Director), Visual Studio Industry Partner (VSIP).
+\* Inclut NFR (Revente interdite), MVP (Most Valuable Professional), RD (Regional Director), Visual Studio Industry Partner (VSIP).
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
