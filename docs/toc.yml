@@ -226,11 +226,7 @@
             - name: 'Spécifier une icône d’application (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Cibler un framework
-              items:
-                - name: Vue d’ensemble du multiciblage
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Cibler une version du .NET Framework
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Créer des modèles
               items:
                 - name: Créer des modèles de projet et d’élément
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Renommer
                       href: ide/reference/rename.md
+                    - name: "Fractionner ou fusionner des instructions\_if"
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Synchronisation de l’espace de noms et du nom du dossier
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Synchroniser le type et le nom de fichier
                       href: ide/reference/sync-type-and-file.md
                     - name: Utiliser un type explicite
