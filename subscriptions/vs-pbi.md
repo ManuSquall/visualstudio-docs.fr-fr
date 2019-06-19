@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948817"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031974"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -73,8 +73,8 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
-| Visual Studio Dev Essentials | NA  | Non disponible |NA|
 | Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Most Valuable Professional), RD (Regional Director).  Exclut :  MPN (Microsoft Partner Network), FTE, Imagine.*
 

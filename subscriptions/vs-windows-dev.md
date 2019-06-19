@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978705"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032739"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 
@@ -55,8 +55,8 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui|
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA|
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  NA|
-| Visual Studio Dev Essentials | NA  | Non disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & Services.*
 

@@ -1,22 +1,22 @@
 ---
 title: Utiliser le framework de tests unitaires Microsoft pour C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934490"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132126"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
-Le framework de tests unitaires Microsoft pour C++ est par défaut dans la charge de travail **Développement Desktop en C++**.
+Le framework de tests unitaires Microsoft pour C++ est par défaut dans la charge de travail **Développement Desktop en C++** .
 
 ## <a name="separate_project"></a> Pour écrire des tests unitaires dans un projet distinct
 
@@ -28,9 +28,9 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
 1. Modifiez les propriétés du projet de façon à inclure les fichiers d’en-tête et les fichiers bibliothèques nécessaires aux tests unitaires.
 
-   1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++**.
+   1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++** .
 
-   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**. Ajoutez ces chemins :
+   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>** . Ajoutez ces chemins :
 
       | Répertoire | Property |
       |-| - |
@@ -39,7 +39,7 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
 2. Ajoutez un fichier de test unitaire C++ :
 
-   - Cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Fichier C++ (.cpp)**.
+   - Cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Fichier C++ (.cpp)** .
 
 ## <a name="write-the-tests"></a>Écrire les tests
 

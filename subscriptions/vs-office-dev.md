@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Office 365 Développeur inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501183"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032728"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
@@ -70,8 +70,8 @@ Pour en savoir plus sur l’abonnement Office 365 Développeur, consultez le [Fo
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
-| Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Regional Director).*
 

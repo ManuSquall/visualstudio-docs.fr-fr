@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177723"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032218"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 
@@ -30,6 +30,7 @@ Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utili
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail,                                        | Azure Boards & Repos (De base), Azure Artifacts<sup>2</sup>                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), MVP (Most Valuable Professional), RD (Regional Director), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Exclut : MCT Software & Services, Imagine.*
 

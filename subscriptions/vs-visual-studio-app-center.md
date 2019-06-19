@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810842"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032762"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -46,7 +46,7 @@ La mise en route de Visual Studio App Center est simple.
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
-| Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director).*
 

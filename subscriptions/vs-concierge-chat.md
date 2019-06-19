@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Concierge Chat inclus dans les abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947852"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032189"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -45,7 +45,7 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Oui          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
-| Visual Studio Dev Essentials | NA  | Non disponible |N/A |
+
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut :  FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), Imagine.*
 

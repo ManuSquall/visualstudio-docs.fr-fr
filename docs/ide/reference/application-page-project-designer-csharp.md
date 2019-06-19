@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744989"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160053"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -61,7 +61,7 @@ Pour un projet qui cible .NET Core, les versions disponibles peuvent apparaître
 > [!NOTE]
 > Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez par la suite le framework cible du projet, vous devez sélectionner manuellement les prérequis pour qu’ils correspondent au nouveau framework cible.
 
-Pour plus d'informations, voir [Procédure : Cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md).
+Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Type de sortie**
 
