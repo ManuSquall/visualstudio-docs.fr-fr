@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846363"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256543"
 ---
 ## <a name="prerequisites"></a>Prérequis
 
@@ -23,7 +23,7 @@ ms.locfileid: "65846363"
 ::: moniker-end
 
 * Un projet ASP.NET, ASP.NET Core, Python ou Node.js. Si vous n’avez pas encore de projet, sélectionnez une option ci-dessous :
-  * ASP.NET Core : Suivez [Démarrage rapide : Utiliser Visual Studio pour créer votre première application web ASP.NET Core](../../ide/quickstart-aspnet-core.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **Visual C#** > **.NET Core**, puis **Application web ASP.NET Core**. À l’invite, sélectionnez le modèle **Application web (Model-View-Controller)**, vérifiez que l’option **Aucune authentification** est activée, puis sélectionnez **OK**.
+  * ASP.NET Core : Suivez [Démarrage rapide : Utiliser Visual Studio pour créer votre première application web ASP.NET Core](../../ide/quickstart-aspnet-core.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **Visual C#**  >  **.NET Core**, puis **Application web ASP.NET Core**. À l’invite, sélectionnez le modèle **Application web (Model-View-Controller)** , vérifiez que l’option **Aucune authentification** est activée, puis sélectionnez **OK**.
   * Python : Suivez [Démarrage rapide : Créer votre première application web Python à l’aide de Visual Studio](../../ide/quickstart-python.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **Python** , puis **Projet web Flask**.
   * Node.js : Suivez [Démarrage rapide : Utiliser Visual Studio pour créer votre première application Node.js](../../ide/quickstart-nodejs.md), ou utilisez **Fichier** > **Nouveau projet**, sélectionnez **JavaScript**, puis **Application web Node.js vide**.
 

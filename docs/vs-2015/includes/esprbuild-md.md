@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: b3443c687b9917b52564db896dcc3dfa1b5ac0fc
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65844835"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255651"
 ---
 Team Foundation Build
