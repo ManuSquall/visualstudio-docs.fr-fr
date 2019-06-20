@@ -14,15 +14,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839735"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256210"
 ---
 Ces étapes indiquent uniquement une configuration de base d’IIS. Pour plus d’informations ou pour installer sur un ordinateur de bureau de Windows, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) ou [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-Pour les systèmes d’exploitation Windows Server, utilisez le **Ajout de rôles et fonctionnalités** Assistant via la **gérer** lien ou le **tableau de bord** lier dans **leGestionnairedeserveur**. À l’étape **Rôles de serveurs**, cochez la case **Serveur Web (IIS)**.
+Pour les systèmes d’exploitation Windows Server, utilisez le **Ajout de rôles et fonctionnalités** Assistant via la **gérer** lien ou le **tableau de bord** lier dans **leGestionnairedeserveur**. À l’étape **Rôles de serveurs**, cochez la case **Serveur Web (IIS)** .
 
 ![Le rôle Serveur Web IIS est sélectionné à l’étape Sélectionner des rôles de serveurs.](../media/remotedbg-server-roles-ws2012.png)
 
