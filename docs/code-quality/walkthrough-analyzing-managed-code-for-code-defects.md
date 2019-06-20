@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715282"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195303"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Analyse du code managé pour les erreurs de code
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procédure pas à pas : Utilisez l’analyse statique du code pour rechercher les erreurs de code
 
 Dans cette procédure pas à pas, vous allez analyser un projet managé pour détecter les erreurs de code à l’aide de l’outil d’analyse de code.
 
-Cette procédure pas à pas vous guide tout au long du processus d’utilisation de l’analyse du code pour analyser les assemblys de code managé .NET pour la conformité avec les instructions de conception .NET.
+Cette procédure pas à pas vous guide tout au long du processus d’utilisation d’analyse statique du code pour analyser les assemblys de code managé .NET pour la conformité avec les instructions de conception .NET.
 
 ## <a name="create-a-class-library"></a>Créer une bibliothèque de classes
 
