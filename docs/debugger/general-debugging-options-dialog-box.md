@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 516f3d87efd61189a3890f7e83064a96adad7e2d
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037391"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195236"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -89,7 +89,7 @@ Dans les conditions 2 et 3, l’exception est quelquefois interceptée par le co
 
 - **Revenir à l'authentification par Git Credential Manager pour toutes les requêtes de lien source** :   Lors de la prise en charge du lien Source est activée, et une demande de lien de Source de l’authentification échoue, Visual Studio appelle ensuite le Gestionnaire d’informations d’identification Git.
 
-**Mettez en surbrillance la ligne entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**: Lorsque le débogueur met en surbrillance un point d'arrêt ou l'instruction actuelle, il met en surbrillance la ligne entière.
+**Mettez en surbrillance la ligne entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)** : Lorsque le débogueur met en surbrillance un point d'arrêt ou l'instruction actuelle, il met en surbrillance la ligne entière.
 
 **Les fichiers sources doivent correspondre exactement à la version d'origine** : Indique au débogueur de vérifier qu'un fichier source correspond à la version du code source utilisée pour générer le fichier exécutable que vous déboguez. Lorsque la version ne correspond pas, vous êtes invité à rechercher une source correspondante. Si aucune source correspondante n'est trouvée, le code source n'est pas affiché pendant le débogage.
 
@@ -153,6 +153,10 @@ Pour savoir quels symboles sont disponibles dans la table d’exportation d’un
 **Afficher l’exécution à, cliquez sur le bouton dans l’éditeur lors du débogage**: Lorsque cette option est sélectionnée, le [exécuter jusqu’au clic](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) bouton s’affichera lors du débogage.
 
 **Fermer automatiquement la console à l'arrêt du débogage** : Indique à Visual Studio pour fermer la console à la fin d’une session de débogage.
+
+::: moniker range=">= vs-2019" 
+**Activer l’évaluation d’expression rapide (managé uniquement)** : Permet au débogueur tenter une évaluation plus rapide en simulant l’exécution de simples propriétés et méthodes.
+::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Options disponibles dans les versions antérieures de Visual Studio
 
