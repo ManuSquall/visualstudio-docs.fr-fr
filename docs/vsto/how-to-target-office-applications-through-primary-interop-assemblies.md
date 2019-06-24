@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Cibler les applications Office via les assemblys PIA'
+title: Cibler les applications Office via les assemblys PIA
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421043"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328878"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procédure : Cibler les applications Office via les assemblys PIA
   Quand vous créez un projet Office, Visual Studio ajoute automatiquement des références aux assemblys PIA (Primary Interop Assembly) Microsoft Office qui sont requises pour générer le projet Vous devez ajouter des références aux autres assemblys PIA dans les scénarios suivants :

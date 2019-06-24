@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook'
+title: Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440890"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328348"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.
@@ -90,7 +90,7 @@ ms.locfileid: "63440890"
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)** .
 
 3. Remplacez le nom du nouveau ruban par **ManageTaskPaneRibbon**, puis cliquez sur **Ajouter**.
 

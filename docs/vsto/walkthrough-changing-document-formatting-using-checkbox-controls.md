@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Modifier la mise en forme du document à l’aide de contrôles CheckBox'
+title: Modifier la mise en forme du document à l’aide de contrôles CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982095"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328726"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme du document à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre comment utiliser des contrôles Windows Forms dans une personnalisation au niveau du document pour Microsoft Office Word pour modifier la mise en forme de texte.
