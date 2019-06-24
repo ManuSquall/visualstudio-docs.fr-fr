@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Ajouter des contrôles à un document lors de l’exécution dans un complément, VSTO'
+title: Ajouter des contrôles au document lors de l’exécution dans le complément VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982420"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328398"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procédure pas à pas : Ajouter des contrôles à un document lors de l’exécution dans un complément, VSTO
   Vous pouvez ajouter des contrôles à un document Microsoft Office Word ouvert en utilisant un complément, VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d’ajouter un <xref:Microsoft.Office.Tools.Word.Controls.Button> ou un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document.
@@ -62,7 +62,7 @@ ms.locfileid: "62982420"
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)** .
 
 3. Remplacez le nom du nouveau ruban par **MyRibbon**, puis cliquez sur **Ajouter**.
 

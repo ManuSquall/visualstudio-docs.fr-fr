@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel'
+title: Créer votre première personnalisation au niveau du document pour Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438524"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328390"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.
@@ -73,13 +73,13 @@ ms.locfileid: "63438524"
 
    - *FirstWorkbookCustomization*.xlsx - représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.
 
-   - Sheet1 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
+   - Sheet1 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
 
-   - Sheet2 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la deuxième feuille de calcul dans le classeur.
+   - Sheet2 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la deuxième feuille de calcul dans le classeur.
 
-   - Sheet3 (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la troisième feuille de calcul dans le classeur.
+   - Sheet3 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la troisième feuille de calcul dans le classeur.
 
-   - ThisWorkbook (*.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
+   - ThisWorkbook ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
 
      Le fichier de code Feuil1 est ouvert automatiquement dans le concepteur.
 

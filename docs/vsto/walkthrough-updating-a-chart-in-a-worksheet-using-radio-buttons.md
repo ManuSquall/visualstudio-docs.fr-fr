@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option'
+title: Graphique de mise à jour dans la feuille de calcul à l’aide de cases d’option
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421749"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329015"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases d’option sur une feuille de calcul Microsoft Office Excel pour donner à l’utilisateur permet de basculer rapidement entre les options. Dans ce cas, les options changent le style d’un graphique.
