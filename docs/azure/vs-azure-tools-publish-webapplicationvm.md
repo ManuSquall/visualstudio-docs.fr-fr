@@ -1,18 +1,14 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
 description: Découvrez comment déployer une application web sur une machine virtuelle. Ce script crée les ressources requises dans votre abonnement Azure si elles n’existent pas.
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
@@ -25,7 +21,7 @@ Déploie une application web sur un ordinateur virtuel. Le script crée les ress
 
 ```
 Publish-WebApplicationVM
--Configuration <configuration>
+–Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -122,7 +118,7 @@ Le fichier de configuration JSON spécifie les détails de ce qui doit être dé
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "China North",
+            "location": "West US",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -184,6 +180,3 @@ Le fichier de configuration JSON spécifie les détails de ce qui doit être dé
 ```
 
 Vous pouvez modifier le fichier de configuration JSON pour modifier ce qui est configuré. Une machine virtuelle et un service cloud sont requis, mais la section de la base de données est facultative.
-
-
-<!-- Update_Description: update metedata properties -->
