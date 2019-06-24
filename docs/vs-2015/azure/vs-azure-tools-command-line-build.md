@@ -1,18 +1,16 @@
 ---
 title: Génération en mode ligne de commande pour Azure | Microsoft Docs
 description: Génération en ligne de commande pour Azure
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 03/05/2017
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 03/05/2017
+ms.author: ghogen
 ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -28,8 +26,8 @@ Vous pouvez également exécuter MSBuild dans une ligne de commande, et cette ru
 ## <a name="msbuild-parameters"></a>Paramètres MSBuild
 La façon la plus simple de créer un package consiste à exécuter MSBuild avec l’option `/t:Publish` . Par défaut, cette commande crée un répertoire en relation avec le dossier racine du projet, par exemple `<ProjectDirectory>\bin\Configuration\app.publish\`. Lorsque vous générez un projet Azure, deux fichiers sont générés : le fichier de package et le fichier de configuration qui l'accompagne :
 
-- Fichier de package (`project.cspkg`)
-- Fichier de configuration (`ServiceConfiguration.TargetProfile.cscfg`)
+* Fichier de package (`project.cspkg`)
+* Fichier de configuration (`ServiceConfiguration.TargetProfile.cscfg`)
 
 Par défaut, tous les projets Azure comprennent un fichier de configuration de service pour les versions locales (débogage) et un autre pour les versions cloud (gestion intermédiaire ou production). Mais vous pouvez ajouter ou supprimer des fichiers de configuration de service selon vos besoins. Lorsque vous générez un package dans Visual Studio, il vous est demandé quels fichiers de configuration de service vous voulez inclure avec le package. Lorsque vous générez un package avec MSBuild, le fichier de configuration de service local est inclus par défaut. Pour inclure un autre fichier de configuration de service, définissez la propriété `TargetProfile` de la commande MSBuild (`MSBuild /t:Publish /p:TargetProfile=ProfileName`).
 
@@ -37,5 +35,3 @@ Si vous souhaitez utiliser un autre répertoire pour les fichiers de configurati
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois le package créé, vous pouvez le déployer sur Azure.
-
-<!-- Update_Description: update metedata properties -->
