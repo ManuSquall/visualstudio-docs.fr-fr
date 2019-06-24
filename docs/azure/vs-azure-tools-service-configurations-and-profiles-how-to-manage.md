@@ -4,8 +4,6 @@ description: Découvrez comment utiliser les configurations de service et les fi
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ Vous pouvez également ouvrir la boîte de dialogue **Gérer les configurations*
 
 ### <a name="to-add-a-service-configuration"></a>Pour ajouter une configuration de service
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **Gérer les configurations**.
-   
+
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
 2. Pour ajouter une configuration de service, vous devez créer une copie d'une configuration existante. Pour ce faire, sélectionnez la configuration que vous souhaitez copier dans la liste Nom, puis sélectionnez **Créer une copie**.
 3. (Facultatif) Pour donner un nom différent à la configuration de service, sélectionnez la nouvelle configuration de service dans la liste Nom, puis sélectionnez **Renommer**. Dans la zone de texte **Nom**, tapez le nom que vous voulez utiliser pour cette configuration de service, puis sélectionnez **OK**.
-   
+
     Un nouveau fichier de configuration de service nommé ServiceConfiguration.[Nouveau nom].cscfg est ajouté au projet Azure dans l’Explorateur de solutions.
 
 ### <a name="to-delete-a-service-configuration"></a>Pour supprimer une configuration de service
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **Gérer les configurations**.
-   
+
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
 2. Pour supprimer une configuration de service, sélectionnez la configuration que vous voulez supprimer dans la liste **Nom**, puis sélectionnez **Supprimer**. Une boîte de dialogue vous invite à confirmer que vous souhaitez supprimer cette configuration.
 3. Sélectionnez **Supprimer**.
-   
+
      Le fichier de configuration de service est supprimé du projet Azure dans l'Explorateur de solutions.
 
 ### <a name="to-rename-a-service-configuration"></a>Pour renommer une configuration de service
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet Azure, puis sélectionnez **Gérer les configurations**.
-   
+
     La boîte de dialogue **Gérer les configurations de service** s'affiche.
 2. Pour renommer une configuration de service, sélectionnez la nouvelle configuration de service dans la liste **Nom**, puis sélectionnez **Renommer**. Dans la zone de texte **Nom**, tapez le nom que vous voulez utiliser pour cette configuration de service, puis sélectionnez **OK**.
-   
+
     Le nom du fichier de configuration de service est modifié dans le projet Azure dans l'Explorateur de solutions.
 
 ### <a name="to-change-a-service-configuration"></a>Pour modifier une configuration de service
@@ -68,16 +66,16 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
 ### <a name="to-add-a-profile"></a>Pour ajouter un profil
 1. Ouvrez le menu contextuel de votre projet Azure, puis sélectionnez **Publier**.
 2. En regard de la liste **Profil cible**, sélectionnez le bouton **Enregistrer le profil**, comme le montre l’illustration suivante. Cette action vous crée un profil.
-   
+
     ![Créer un profil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Une fois le profil créé, sélectionnez **<Gérer...>** dans la liste **Profil cible**.
-   
+
     La boîte de dialogue **Gérer les profils** s’affiche, comme le montre l’illustration suivante.
-   
+
     ![Boîte de dialogue Gérer les profils](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Dans la liste **Nom**, sélectionnez un profil, puis sélectionnez **Créer une copie**.
 5. Sélectionnez le bouton **Fermer** .
-   
+
     Le nouveau profil apparaît dans la liste des profils cibles.
 6. Dans la liste **Profil cible** , sélectionnez le profil que vous venez de créer. Les paramètres de l'Assistant Publication sont renseignés avec les options de profil que vous avez sélectionnées.
 7. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis personnalisez les paramètres de ce profil. Pour plus d’informations, consultez [Assistant Publication d’application Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
