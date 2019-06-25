@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d48866f1d12badc03d458652746c3a5026a47285
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ebba3ca9434d704fff25f3d3519748930db12aa7
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340862"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342393"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Procédure : Fournir un service de Visual Studio asynchrone
 Si vous souhaitez obtenir un service sans bloquer le thread d’interface utilisateur, vous devez créer un service asynchrone et charger le package sur un thread d’arrière-plan. Pour cela, vous pouvez utiliser un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> au lieu d’un <xref:Microsoft.VisualStudio.Shell.Package>, ajoutez le service avec les méthodes asynchrones spéciale du package asynchrone.
@@ -157,13 +157,13 @@ public sealed class TestAsyncPackage : AsyncPackage
         this.AddService(typeof(STextWriterService), CreateTextWriterService);
 
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync(<userpath>), "this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
     }
 
     ```
 
-     N’oubliez pas de modifier  *\<userpath >* à un nom de fichier et le chemin d’accès qui a du sens sur votre ordinateur !
+     N’oubliez pas de modifier `userpath` pour un nom de fichier et le chemin d’accès qui a du sens sur votre ordinateur !
 
 2. Générez et exécutez le code. Lorsque l’instance expérimentale de Visual Studio s’affiche, ouvrez une solution. Cela entraîne le `AsyncPackage` pour charger automatiquement. Lors de l’initialiseur est exécuté, vous devez trouver un fichier dans l’emplacement spécifié.
 
@@ -189,8 +189,9 @@ public sealed class TestAsyncPackage : AsyncPackage
 
         ITextWriterService textService =
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;
-
-        await textService.WriteLineAsync((<userpath>, "this is a test");
+        
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
 
         await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
         TestAsyncCommand.Initialize(this);
@@ -218,8 +219,8 @@ public sealed class TestAsyncPackage : AsyncPackage
            await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(STextWriterService))
               as ITextWriterService;
 
-        // don't forget to change <userpath> to a local path
-        await textService.WriteLineAsync((<userpath>),"this is a test");
+        string userpath = @"C:\MyDir\MyFile.txt";
+        await textService.WriteLineAsync(userpath, "this is a test");
        }
 
     ```
