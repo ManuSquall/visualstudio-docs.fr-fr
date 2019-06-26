@@ -9,12 +9,12 @@ ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 7f6586ec44eae10d145271c5bb6f3b962ebe4e83
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: b4e23aeb5e6d60a36d1f69ffb54ec75aa1770ea4
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037111"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290668"
 ---
 ## <a name="azure-development-build-tools"></a>Outils de build pour le développement Azure
 
@@ -252,7 +252,7 @@ Microsoft.VisualStudio.Component.VC.ATL | C++ ATL pour Build Tools v142 (x86 et
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC pour Build Tools v142 (x86 et x64) | 16.0.28625.61 | Facultatif
 Microsoft.VisualStudio.Component.VC.CLI.Support | Prise en charge de C++/CLI pour Build Tools v142 (14.21) | 16.1.28829.92 | Facultatif
 Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités C++ de base | 16.0.28625.61 | Facultatif
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | Facultatif
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilateur Clang pour Windows | 16.1.28916.169 | Facultatif
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Modules C++ pour Build Tools v142 (x64/x86 – expérimental) | 16.0.28625.61 | Facultatif
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 Build Tools (v14.16) | 16.1.28829.92 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK Windows 10 (10.0.16299.0) | 16.0.28517.75 | Facultatif

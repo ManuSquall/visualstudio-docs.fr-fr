@@ -10,12 +10,12 @@ ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: fa8a5fb6aa1e6e1ee031026186abc550f3aa2feb
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 3a26b0d25b81afe4d0b686676b16f76135295567
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037083"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309710"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2019)
 
@@ -350,7 +350,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Pack de ciblage .NET Framework 4.
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – VS 2015 C++ Build Tools (v14.00) | 16.0.28625.61 | Facultatif
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC pour Build Tools v142 (x86 et x64) | 16.0.28625.61 | Facultatif
 Microsoft.VisualStudio.Component.VC.CLI.Support | Prise en charge de C++/CLI pour Build Tools v142 (14.21) | 16.1.28829.92 | Facultatif
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | Facultatif
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilateur Clang pour Windows | 16.1.28916.169 | Facultatif
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Modules C++ pour Build Tools v142 (x64/x86 – expérimental) | 16.0.28625.61 | Facultatif
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86 Build Tools (v14.16) | 16.1.28829.92 | Facultatif
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK Windows 10 (10.0.16299.0) | 16.0.28517.75 | Facultatif
