@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714468"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258135"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes (FAQ) sur Live Unit Testing
 
@@ -197,15 +197,6 @@ Les tests qui reposent sur ces valeurs peuvent échouer lorsqu’ils sont exécu
 Votre solution peut être générée même si vous n’apportez pas de modifications, si le processus de génération de votre solution génère un code source qui fait partie de la solution elle-même, et si les fichiers cibles de la build n’ont ni les entrées appropriées ni les sorties spécifiées. Les cibles doivent disposer d’une liste d’entrées et de sorties afin que MSBuild puisse effectuer les contrôles à jour appropriés et déterminer si une nouvelle build est requise.
 
 Live Unit Testing démarre une build chaque fois qu’il détecte une modification des fichiers sources. Étant donné que la génération de votre solution génère des fichiers sources, Live Unit Testing obtient une boucle de génération infinie. Si, toutefois, les entrées et sorties de la cible sont vérifiées lorsque Live Unit Testing démarre la deuxième génération (après la détection des fichiers sources qui viennent d’être générés à partir de la build précédente), il quittera la boucle de génération puisque les vérifications des entrées et des sorties indiquent que tout est à jour.  
-
-## <a name="lightweight-solution-load"></a>Chargement de solution allégé
-
-**Comment fonctionne Live Unit Testing avec le chargement de solution allégé ?**
-
-Actuellement, Live Unit Testing ne fonctionne pas correctement avec la fonctionnalité de chargement de solution allégé. Son fonctionnement n’est normal qu’après le chargement d’au moins un des projets de test. Il ne peut pas en être autrement, car Live Unit Testing dépend au moins d’un des projets de test référençant un adaptateur de test (MSTest, xUnit ou NUnit) en cours de chargement.
-
-> [!NOTE]
-> Le chargement de solution allégé n’est plus disponible dans la version 15.5 et les versions ultérieures de Visual Studio 2017, dans lesquelles les solutions volumineuses qui contiennent du code managé se chargent beaucoup plus vite qu’avant, même sans utiliser le chargement de solution allégé.
 
 ## <a name="new-process-coverage"></a>Nouvelle couverture de processus
 

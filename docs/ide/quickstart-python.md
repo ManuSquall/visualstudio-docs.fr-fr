@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953845"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365298"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Démarrage rapide : créer votre première application web Python à l’aide de Visual Studio
 
@@ -105,7 +105,7 @@ Suivez les étapes ci-dessous pour installer la bibliothèque Flask dans l’« 
 
     ![Explorateur de solutions montrant l’environnement Python](media/quickstart-python-02-default-environment-2019.png)
 
-2. Cliquez avec le bouton droit sur l’environnement et sélectionnez **Gérer les packages Python...**. Cette commande ouvre la fenêtre **Environnements Python** sous l’onglet **Packages (PyPI)**.
+2. Cliquez avec le bouton droit sur l’environnement et sélectionnez **Gérer les packages Python...** . Cette commande ouvre la fenêtre **Environnements Python** sous l’onglet **Packages (PyPI)** .
 
 3. Entrez « flask » dans le champ de recherche. Si **Flask** apparaît sous la zone de recherche, vous pouvez ignorer cette étape. Sinon, sélectionnez **Exécuter la commande : installation pip de flask**. Acceptez les invites de privilèges d’administrateur et observez la progression dans la fenêtre **Sortie** de Visual Studio. (Une invite d’élévation se produit lorsque le dossier des packages de l’environnement global se situe dans une zone protégée comme *C:\Program Files*.)
 
@@ -177,8 +177,6 @@ Vous êtes maintenant prêt à ajouter un peu de code Python pour implémenter u
     ::: moniker range=">=vs-2019"
     ![Définition du fichier de démarrage d’un projet dans l’Explorateur de solutions](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Cliquez avec le bouton droit sur *app.py* dans l’**Explorateur de solutions** et sélectionnez **Définir comme fichier de démarrage**. Cette commande identifie le fichier de code à lancer dans Python à l’exécution de l’application.
 
 2. Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis sélectionnez **Propriétés**. Ensuite, sélectionnez l’onglet **Déboguer** et affectez la valeur `4449` à la propriété **Numéro de port**. Cette étape permet de s’assurer que Visual Studio lance un navigateur avec `localhost:4449`, par cohérence avec les arguments `app.run` du code.
 
