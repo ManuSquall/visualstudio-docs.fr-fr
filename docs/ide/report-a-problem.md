@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980145"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309810"
 ---
 # <a name="overview-report-a-problem"></a>Vue d’ensemble : Signaler un problème
 
@@ -80,7 +80,7 @@ L’état **Fermé - Doublon** indique que votre problème a déjà été signal
 
 - - -
 
-![État Fermé - Pas un bogue pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![État Fermé - Pas un bogue pour le signalement de problème auprès de la Communauté des développeurs](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 L’état **Fermé - Pas un bogue** indique que nous avons déterminé que la fonctionnalité signalée obéit à sa conception.
 
