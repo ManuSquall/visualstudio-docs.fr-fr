@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614513"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365397"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -49,7 +49,7 @@ Points d’arrêt sont une des techniques de débogage plus importantes dans la 
 
  Pour définir un point d’arrêt dans le code source, cliquez dans la marge gauche en regard d’une ligne de code. Vous pouvez également sélectionner la ligne et appuyez sur **F9**, sélectionnez **déboguer** > **point d’arrêt**, ou avec le bouton droit et sélectionnez **point d’arrêt**  >  **Insérer le point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche.
 
-Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont automatiquement mis en surbrillance. Pour C++ code, vous pouvez activer la mise en surbrillance de point d’arrêt et de lignes actuelles en sélectionnant **outils** (ou **déboguer**) > **Options**  >  **Débogage** >  **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)**.
+Dans C# code, point d’arrêt et les lignes de l’exécution en cours sont automatiquement mis en surbrillance. Pour C++ code, vous pouvez activer la mise en surbrillance de point d’arrêt et de lignes actuelles en sélectionnant **outils** (ou **déboguer**) > **Options**  >  **Débogage** >  **mettre en surbrillance la ligne source entière pour les points d’arrêt et l’instruction actuelle (C++ uniquement)** .
 
  ![Définissez un point d’arrêt](../debugger/media/basicbreakpoint.png "base point d’arrêt")
 
@@ -144,9 +144,9 @@ Pour plus d’informations sur la pile des appels, consultez [Comment : Utilise
 
 4. Ajoutez le code suivant à la **nom de la fonction** zone, puis sélectionnez **C++** langage.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Points d’arrêt de données dans .NET Core ne fonctionnent pas pour :
 - Propriétés qui ne sont pas extensibles dans l’info-bulle, variables locales, automatique, ou la fenêtre Espion
 - Variables statiques
 - Classes avec l’attribut DebuggerTypeProxy
-- Champs à l’intérieur de structures 
+- Champs à l’intérieur de structures
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Points d’arrêt de données ne fonctionnent pas dans les conditions suivantes�
 - Un processus qui n’est pas en cours de débogage écrit à l’emplacement mémoire.
 - L’emplacement mémoire est partagé entre plusieurs processus.
 - L’emplacement de mémoire est mis à jour dans le noyau. Par exemple, si la mémoire est transmise à la Windows 32 bits `ReadFile` (fonction), la mémoire sera mise à jour du mode noyau, donc le débogueur ne s’arrête sur la mise à jour.
+- Où l’expression espion est supérieure à 4 octets sur un matériel 32 bits et 8 octets sur un matériel 64 bits. Il s’agit d’une limitation de la x86 architecture.
 
->[!NOTE]
->- Arrêt sur variable dépend d’adresses de mémoire spécifiques. L’adresse d’une variable change à partir d’une session de débogage à l’autre, des points d’arrêt de données sont automatiquement désactivés à la fin de chaque session de débogage.
+> [!NOTE]
+> - Arrêt sur variable dépend d’adresses de mémoire spécifiques. L’adresse d’une variable change à partir d’une session de débogage à l’autre, des points d’arrêt de données sont automatiquement désactivés à la fin de chaque session de débogage.
 >
->- Si vous définissez un point d’arrêt sur une variable locale, ce point d’arrêt reste activé quand la fonction s’arrête. Cependant, l’adresse mémoire n’est plus applicable, et le comportement du point d’arrêt est donc imprévisible. Si vous définissez un point d’arrêt sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.
+> - Si vous définissez un point d’arrêt sur une variable locale, ce point d’arrêt reste activé quand la fonction s’arrête. Cependant, l’adresse mémoire n’est plus applicable, et le comportement du point d’arrêt est donc imprévisible. Si vous définissez un point d’arrêt sur une variable locale, vous devez supprimer ou désactiver le point d’arrêt avant la fin de la fonction.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gérer les points d’arrêt dans la fenêtre Points d’arrêt
 
@@ -273,7 +274,7 @@ Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir en
 
 3. Ajouter un nouveau point d’arrêt au point que vous voulez examiner ; par exemple, lorsque l’objet doit être ajouté à la collection. Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Conditions**.
 
-4. Utilisez l’ID d’objet dans le champ **Expression conditionnelle**. Par exemple, si la variable `item` est l’objet à ajouter à la collection, sélectionnez **vaut** et type **item == $\<n >**, où \<n > est le numéro d’ID objet .
+4. Utilisez l’ID d’objet dans le champ **Expression conditionnelle**. Par exemple, si la variable `item` est l’objet à ajouter à la collection, sélectionnez **vaut** et type **item == $\<n >** , où \<n > est le numéro d’ID objet .
 
    L’exécution s’arrête au point où cet objet doit être ajouté à la collection.
 
