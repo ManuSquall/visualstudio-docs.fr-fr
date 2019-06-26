@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811885"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261712"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
 
@@ -43,11 +43,11 @@ Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/cshar
 
 1. Placez le point insertion dans le mot clé `for`.
 
-1. Appuyez sur **Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez sur **Ctrl**+ **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'foreach'](media/convert-to-foreach.png)
 
-1. Sélectionnez **Convertir en 'foreach'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'foreach'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertir une instruction foreach en boucle for
 
@@ -71,16 +71,16 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 
 1. Placez le point insertion dans le mot clé `foreach` ou `For Each`.
 
-1. Appuyez sur **Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez sur **Ctrl**+ **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'for'](media/convert-to-for.png)
 
-1. Sélectionnez **Convertir en 'for'**. Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
+1. Sélectionnez **Convertir en 'for'** . Vous pouvez aussi sélectionner **Aperçu des modifications** pour ouvrir la boîte de dialogue [Aperçu des modifications](../../ide/preview-changes.md), puis sélectionner **Appliquer**.
 
 1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer**. Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer**.
 
 > [!NOTE]
-> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de la machine sous **Outils** > **Options** > **Éditeur de texte** > **C#** > **Style de code** > **Général** > **\'Préférences var**, ou au niveau de la solution dans un fichier [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types). Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de la machine sous **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Style de code** > **Général** >  **\'Préférences var**, ou au niveau de la solution dans un fichier [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 
