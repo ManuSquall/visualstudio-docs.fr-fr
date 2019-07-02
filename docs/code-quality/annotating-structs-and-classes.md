@@ -1,6 +1,6 @@
 ---
 title: Structs et classes d'annotation
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571418"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493635"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
+
 Vous pouvez annoter des membres de struct et class à l’aide des annotations qui agissent comme des invariants, elles sont supposées avoir la valeur true à n’importe quel appel de fonction ou d’une entrée/sortie de la fonction qui implique la structure englobante comme paramètre ou une valeur de résultat.
 
 ## <a name="struct-and-class-annotations"></a>Annotations de classe et de struct
@@ -58,7 +59,7 @@ Vous pouvez annoter des membres de struct et class à l’aide des annotations q
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à la déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets qui est spécifié par `size`.  Exemple :
+     S’applique à la déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets qui est spécifié par `size`.  Par exemple :
 
     ```cpp
 
@@ -75,6 +76,39 @@ Vous pouvez annoter des membres de struct et class à l’aide des annotations q
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Exemple
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Notes de publication pour cet exemple :
+
+- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le nom de champ spécifie que le champ nom est une chaîne se terminant par null.
+- `_Field_range_` pour `bufferSize` Spécifie que la valeur de `bufferSize` ne doit pas dépasser 1 et `MaxBufferSize` (tous deux inclus).
+- Le résultat final de la `_Struct_size_bytes_` et `_Field_size_` annotations sont équivalentes. Pour les structures ou classes qui ont une disposition semblable, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que son équivalent `_Struct_size_bytes_` annotation. `_Field_size_` ne nécessite pas la conversion à la taille en octets. Si la taille en octets est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisé. Si les deux `_Struct_size_bytes_` et `_Field_size_` existe, les deux seront disponibles aux outils. C’est à l’outil que faire si les deux annotations désaccord.
 
 ## <a name="see-also"></a>Voir aussi
 
