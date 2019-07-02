@@ -377,14 +377,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: Convertir une requête LINQ en instruction foreach
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: Convertir l’instruction switch en expression switch
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: Encapsuler le champ
                       href: ide/reference/encapsulate-field.md
                     - name: Extraire l’interface
                       href: ide/reference/extract-interface.md
                     - name: Extraire la méthode
                       href: ide/reference/extract-method.md
+                    - name: Générer un paramètre
+                      href: ide/reference/generate-parameter.md
                     - name: Variable temporaire inline
                       href: ide/reference/inline-temporary-variable.md
+                    - name: Autocomplétion IntelliSense pour les types non importés
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: Inversion des expressions conditionnelles et des opérations logiques
                       href: ide/reference/invert-conditional-logical.md
                     - name: Inverser une instruction if
@@ -393,6 +399,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: Déplacer le type vers le fichier correspondant
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: Déplacer un type vers un espace de noms
+                      href: ide/reference/move-type-to-namespace.md
                     - name: Remonter un membre
                       href: ide/reference/pull-members-up.md
                     - name: Complétion d’expression régulière dans IntelliSense
@@ -401,6 +409,8 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Renommer
                       href: ide/reference/rename.md
+                    - name: Trier les instructions Using
+                      href: ide/reference/sort-usings.md
                     - name: "Fractionner ou fusionner des instructions\_if"
                       href: ide/reference/split-or-merge-if-statement.md
                     - name: Synchronisation de l’espace de noms et du nom du dossier
@@ -470,10 +480,16 @@
                 - name: Utiliser les fichiers EditorConfig pour le style de code
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: Langage .NET et conventions de mise en forme
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Conventions de nommage .NET
-                  href: ide/editorconfig-naming-conventions.md
+                - name: Conventions de codage .NET
+                  items:
+                    - name: Vue d'ensemble
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: Conventions de langage
+                      href: ide/editorconfig-language-conventions.md
+                    - name: Conventions de mise en forme
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: Conventions d'attribution d'un nom
+                      href: ide/editorconfig-naming-conventions.md
             - name: Personnaliser la barre de défilement
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Définir des signets dans le code
