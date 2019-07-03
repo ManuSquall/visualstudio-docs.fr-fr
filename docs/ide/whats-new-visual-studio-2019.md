@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976234"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328827"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -90,7 +90,7 @@ Le nettoyage peut mettre en forme le code et appliquer les correctifs de code su
 
 Vous pouvez aussi enregistrer des collections de correcteurs comme profil. Par exemple, si vous avez un petit ensemble de correcteurs ciblés que vous appliquez fréquemment quand vous codez, et que vous avez un autre ensemble complet de correcteurs à appliquer avant une revue du code, vous pouvez configurer des profils pour répondre à ces différentes tâches.
 
-   ![Capture d’écran de la nouvelle commande de nettoyage de code dans Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Capture d’écran de la commande de nettoyage de code de configuration dans Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Rendu PMA (Per-Monitor Aware)
 

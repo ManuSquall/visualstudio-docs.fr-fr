@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226356"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132195"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
 
@@ -34,11 +34,11 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 ::: moniker range="vs-2017"
 
-Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C++** , puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
 ::: moniker-end
 
-1. Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+1. Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++** , puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
 2. Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.
 
@@ -81,7 +81,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 ::: moniker range="vs-2019"
 
-Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Nouveau projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « DLL » dans la zone de recherche. Dans la liste des résultats, choisissez **Application de test unitaire (Windows universelle - C++/CX)**.
+Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Nouveau projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « DLL » dans la zone de recherche. Dans la liste des résultats, choisissez **Application de test unitaire (Windows universelle - C++/CX)** .
 
 ![Créer le projet RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
 ::: moniker-end
 
-1. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.
+1. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)** .
 
 2. Ajoutez le code suivant au fichier *RooterLib.h* :
 
@@ -128,7 +128,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
          ![Ajouter la définition d'un symbole de préprocesseur](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2. Dans la boîte de dialogue **Page de propriétés de RooterLib**, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
+    2. Dans la boîte de dialogue **Page de propriétés de RooterLib**, développez **Propriétés de configuration**, **C++** , puis choisissez **Préprocesseur**.
 
     3. Choisissez **\<Modifier>** dans la liste **Définitions de préprocesseur**, puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue **Définitions de préprocesseur**.
 
@@ -152,13 +152,9 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
 1. Ajoutez RooterLib au projet RooterLibTests.
 
-   1. Dans **l’Explorateur de solutions**, choisissez le projet **RooterLibTests**, puis **Références** dans le menu contextuel.
+   1. Dans **l’Explorateur de solutions**, choisissez le projet **RooterLibTests**, puis **Ajouter** > **Référence** dans le menu contextuel.
 
-   2. Dans la boîte de dialogue **Propriétés du projet RooterLib**, développez **Propriétés communes**, puis choisissez **Framework et références**.
-
-   3. Choisissez **Ajouter une nouvelle référence**.
-
-   4. Dans la boîte de dialogue **Ajouter une référence**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **RouterLib**.
+   1. Dans la boîte de dialogue **Ajouter une référence**, choisissez **Projets**. Sélectionnez ensuite l’élément **RouterLib**.
 
 2. Incluez le fichier d’en-tête RooterLib dans *unittest1.cpp*.
 

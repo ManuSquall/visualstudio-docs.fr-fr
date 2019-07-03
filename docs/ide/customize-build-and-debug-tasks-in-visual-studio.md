@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820299"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291039"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -33,7 +32,6 @@ Personnalisez votre code base sans projet en utilisant les fichiers *.json* suiv
 |-|-|
 |*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible par l’élément de menu contextuel (clic droit) **Configurer les tâches** de **l’Explorateur de solutions**.|
 |*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible par l’élément de menu contextuel (clic droit) **Paramètres de débogage et de lancement** de **l’Explorateur de solutions**.|
-|*VSWorkspaceSettings.json*|Paramètres génériques qui peuvent avoir un impact sur les tâches et le lancement. Par exemple, définir `envVars` dans *VSWorkspaceSettings.json* ajoute les variables d’environnement spécifiées pour exécuter des commandes en externe.<br>Vous créez ce fichier manuellement.|
 
 Ces fichiers *.json* se trouvent dans un dossier masqué appelé *.vs* dans le dossier racine de votre code base. Les fichiers *tasks.vs.json* et *launch.vs.json* sont créés par Visual Studio selon les besoins lorsque vous choisissez l’option **Configurer les tâches** ou **Paramètres de débogage et de lancement** pour un fichier ou dossier dans **l’Explorateur de solutions**. Les fichiers *.json* sont masqués car les utilisateurs ne souhaitent généralement pas les vérifier dans le contrôle de code source. Toutefois, si vous souhaitez être en mesure de les vérifier dans le contrôle de code source, faites glisser les fichiers à la racine de votre code base, où ils sont visibles.
 
@@ -193,7 +191,7 @@ Plusieurs fichiers *tasks.vs.json* peuvent exister à la racine et les sous-rép
 - Le répertoire parent du répertoire actuel, jusqu'au répertoire racine.
 - Les fichiers de paramètres dans le dossier racine.
 
-Ces règles d’agrégation s’appliquent aux fichiers *tasks.vs.json* et *VSWorkspaceSettings.json*. Pour plus d’informations sur la façon dont les paramètres d’un autre fichier sont agrégés, consultez la section correspondante à ce fichier dans cet article.
+Ces règles d’agrégation s’appliquent à *tasks.vs.json*. Pour plus d’informations sur la façon dont les paramètres d’un autre fichier sont agrégés, consultez la section correspondante à ce fichier dans cet article.
 
 ### <a name="properties-for-tasksvsjson"></a>Propriétés de tasks.vs.json
 
@@ -289,10 +287,6 @@ Lorsque vous enregistrez ce fichier, le nom de la nouvelle configuration appara�
 
 > [!NOTE]
 > La propriété de tableau `configurations` dans *launch.vs.json* est lue à partir de deux emplacements de fichiers&mdash;le répertoire racine du code base et le répertoire *.vs*. En cas de conflit, la priorité est donnée à la valeur dans *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Définir les paramètres de l’espace de travail dans VSWorkspaceSettings.json
-
-Vous pouvez spécifier des paramètres génériques qui peuvent avoir un impact sur les tâches et le lancement dans le fichier *VSWorkspaceSettings.json*. Par exemple, si vous définissez `envVars` dans *VSWorkspaceSettings.json*, Visual Studio ajoute les variables d’environnement spécifiées aux commandes exécutées de façon externe. Pour utiliser ce fichier, vous devez le créer manuellement.
 
 ## <a name="additional-settings-files"></a>Autres fichiers de paramètres
 

@@ -1,5 +1,5 @@
 ---
-title: Présentation des fonctionnalités de déploiement
+title: Présentation du déploiement
 description: Découvrez plus d’informations sur les options de déploiement d’applications à partir de Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261982"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032559"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -40,7 +40,7 @@ Consultez les guides de démarrage rapide et les tutoriels pour obtenir des inst
 
 Le déploiement dans un dossier local est généralement utilisé pour les tests ou pour lancer un déploiement de préproduction dans lequel un autre outil est utilisé pour le déploiement final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et.** NET Core** : utilisez l’outil Publier pour effectuer le déploiement dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous n’avez pas encore configuré de profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** et. **NET Core** : utilisez l’outil Publier pour effectuer le déploiement dans un dossier local. Les options disponibles dépendent de votre type d’application. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur votre projet et choisissez **Publier**. (Si vous n’avez pas encore configuré de profils de publication, vous devez cliquer sur **Créer un profil**.) Ensuite, choisissez **Dossier**. Pour plus d’informations, consultez [Déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
 
     ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
@@ -120,6 +120,16 @@ Vous pouvez effectuer des développements et des tests plus sophistiqués en dé
 ## <a name="continuous-deployment"></a>Déploiement continu
 
 Vous pouvez utiliser Azure Pipelines pour permettre le déploiement continu de votre application. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) et [Déployer sur Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Déployer une base de données SQL
+
+- [Modifier la plateforme cible et publier un projet de base de données (Outils SQL Server Data Tools (SSDT))](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Déployer un projet Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Déployer des packages et projets Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Générer et déployer une base de données locale](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Déploiement pour d’autres types d’application
 

@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715249"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160171"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -37,11 +37,11 @@ Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-chan
 
 **Visual Studio 2017 et ultérieur (toutes les éditions)**
 
-- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d’informations, consultez [Guide pratique pour utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
+- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d'informations, voir [Procédure : Utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d’informations, consultez [Guide pratique pour utiliser Boost.Test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d'informations, voir [Procédure : Utiliser Boost.Test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La prise en charge de **CTest** est incluse dans le composant [Outils CMake pour Visual Studio](/cpp/build/cmake-tools-for-visual-cpp) qui fait partie de la charge de travail **Développement Desktop en C++** . Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d’informations, consultez [Guide pratique pour utiliser CTest dans Visual Studio](how-to-use-ctest-for-cpp.md).
+- La prise en charge de **CTest** est incluse dans le composant **Outils CMake pour C++** qui fait partie de la charge de travail **Développement Desktop en C++** . Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d'informations, voir [Procédure : Utiliser CTest dans Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 et antérieur**
 

@@ -10,23 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793501"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195261"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 
 Vous pouvez utiliser la commande **Rechercher toutes les références** pour savoir où des éléments de code particuliers sont référencés dans tout votre code base. La commande **Rechercher toutes les références** est disponible dans le menu contextuel (clic droit) de l’élément dont vous souhaitez trouver les références. Si vous préférez utiliser le clavier, appuyez sur **Maj+F12**.
 
-Les résultats apparaissent dans une fenêtre Outil nommée **Références \<élément>**, où *élément* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
+Les résultats apparaissent dans une fenêtre Outil nommée **Références \<élément>** , où *élément* est le nom de l’élément qui fait l’objet de la recherche. À partir de la barre d’outils de la fenêtre **Références**, vous pouvez effectuer les opérations suivantes :
 - Changer l’étendue de recherche dans une zone de liste déroulante. Vous pouvez choisir d’effectuer la recherche uniquement dans les documents modifiés dans l’ensemble de la solution.
 - Copier l’élément référencé sélectionné en choisissant le bouton **Copier**.
 - Pour accéder à l’emplacement suivant ou précédent dans la liste, choisissez les boutons appropriés appuyez sur les touches **F8** et **Maj+F8**.
 - Supprimer tous les filtres sur les résultats retournés en choisissant le bouton **Effacer tous les filtres**.
-- Changer la façon dont les éléments retournés sont regroupés en choisissant un paramètre dans la zone de liste déroulante **Grouper par :**.
+- Changer la façon dont les éléments retournés sont regroupés en choisissant un paramètre dans la zone de liste déroulante **Grouper par :** .
 - Conserver la fenêtre des résultats de la recherche actuelle en choisissant le bouton **Conserver les résultats**. Les résultats de la recherche actuelle restent alors dans cette fenêtre, et les résultats des nouvelles recherches s’affichent dans une nouvelle fenêtre Outil.
 - Rechercher des chaînes dans les résultats de la recherche en entrant du texte dans la zone de texte **Rechercher toutes les références**.
 
@@ -48,7 +48,7 @@ Par défaut, les références sont regroupées par projet, puis par définition.
 **Définition** et **Projet** sont les deux regroupements utilisés par défaut, mais vous pouvez en ajouter d’autres en choisissant la commande **Regroupement** dans le menu contextuel (clic droit) de l’élément sélectionné. Il peut être utile d’ajouter plusieurs regroupements si votre solution contient un grand nombre de fichiers et de chemins.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtrer par type de référence dans .NET
-En C# ou Visual Basic, la fenêtre Rechercher des références comporte une colonne de type qui liste le type de référence qu’elle a trouvé. Cette colonne permet de filtrer par type de référence en cliquant sur l’icône de filtre qui s’affiche quand vous pointez sur l’en-tête de colonne. Les références peuvent être filtrées par lecture, écriture, référence et nom uniquement.
+En C# ou Visual Basic, la fenêtre Rechercher des références comporte une colonne de type qui liste le type de référence qu’elle a trouvé. Cette colonne permet de filtrer par type de référence en cliquant sur l’icône de filtre qui s’affiche quand vous pointez sur l’en-tête de colonne. Les références peuvent être filtrées par la lecture, écriture, référence, nom, espace de noms et type.
 
 ![Colonne de type dans la fenêtre Rechercher des références ](../ide/media/vside_findallreferencesKind.png)
 

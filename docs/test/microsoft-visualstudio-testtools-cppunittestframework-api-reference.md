@@ -1,18 +1,18 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820767"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132143"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -25,7 +25,8 @@ Cette rubrique liste les membres publics de l’espace de noms `Microsoft::Visua
 Les chemins des fichiers d’en-tête et de bibliothèque sont configurés automatiquement dans un projet de test natif.
 
 ## <a name="In_this_topic"></a> Dans cette rubrique
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Créer des classes et des méthodes de test](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Ajoute les attributs définis avec une ou plusieurs macros `TEST_METHOD_ATTRIBUTE` à la méthode de test *testClassName*.
+ Ajoute les attributs définis avec une ou plusieurs macros `TEST_METHOD_ATTRIBUTE` à la méthode de test *testMethodName*.
 
  Une macro `TEST_METHOD_ATTRIBUTE` définit un attribut avec le nom *attributeName* et la valeur *attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  Une macro `TEST_MODULE_ATTRIBUTE` définit un attribut avec le nom *attributeName* et la valeur *attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Attributs prédéfinis
- Ces macros d’attributs prédéfinis peuvent être remplacées par les macros `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` ou `TEST_MODULE_ATTRIBUTE` décrites ci-dessus.
+
+ Ces macros d’attributs prédéfinis sont fournis pour des raisons pratiques pour les cas courants. Ils peuvent être remplacées par la macro `TEST_METHOD_ATTRIBUTE` décrite ci-dessus.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Définit un attribut avec le nom `Owner` et la valeur d’attribut *ownerAlias*.
+ Définit un `TEST_METHOD_ATTRIBUTE` avec le nom `Owner` et la valeur d’attribut *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Définit un attribut avec le nom `Description` et la valeur d’attribut *description*.
+ Définit un `TEST_METHOD_ATTRIBUTE` avec le nom `Description` et la valeur d’attribut *description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Définit un attribut avec le nom `Priority` et la valeur d’attribut *priority*.
+ Définit un `TEST_METHOD_ATTRIBUTE` avec le nom `Priority` et la valeur de l’attribut *priority*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Définit un attribut avec le nom `WorkItem` et la valeur d’attribut *workItem*.
+ Définit un `TEST_METHOD_ATTRIBUTE` avec le nom `WorkItem` et la valeur de l’attribut *workItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Définit un attribut avec le nom `Ignore` et la valeur d’attribut `true`.
+ Définit un `TEST_METHOD_ATTRIBUTE` avec le nom `Ignore` et la valeur de l’attribut `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

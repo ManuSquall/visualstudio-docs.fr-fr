@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975058"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043038"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe
 
@@ -103,3 +103,6 @@ Utilisez les touches suivantes pour naviguer dans la fenêtre **Détails de clas
 ## <a name="see-also"></a>Voir aussi
 
 - [Créer et configurer des membres de type](creating-and-configuring-type-members.md)
+- [Guide pratique pour utiliser uniquement le clavier](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Raccourcis clavier par défaut dans Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Raccourcis clavier dans Blend](../../designers/keyboard-shortcuts-in-blend.md)

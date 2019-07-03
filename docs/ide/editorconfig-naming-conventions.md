@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261961"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309824"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -25,7 +25,7 @@ Les conventions de nommage doivent être classées de la plus spécifique à la 
 
 Pour chaque convention de nommage, vous devez spécifier les symboles auxquels elle s’applique, un style de nommage et un niveau de gravité pour l’application de la convention, en utilisant les propriétés décrites ci-dessous. L’ordre des propriétés n’est pas important.
 
-Pour commencer, choisissez un titre pour votre règle de nommage que vous utiliserez dans chacune des propriétés nécessaires pour décrire complètement la règle. Par exemple, `public_members_must_be_capitalized` est un nom descriptif correct pour une règle de nommage. Nous allons nous référer au titre que vous choisissez par **<namingRuleTitle\>** dans les sections qui suivent.
+Pour commencer, choisissez un titre pour votre règle de nommage que vous utiliserez dans chacune des propriétés nécessaires pour décrire complètement la règle. Par exemple, `public_members_must_be_capitalized` est un nom descriptif correct pour une règle de nommage. Cette page se référera au titre que vous choisissez par **<namingRuleTitle\>** dans les sections qui suivent.
 
 ## <a name="symbols"></a>Symboles
 
@@ -116,7 +116,7 @@ Une règle de nommage fait correspondre les signatures contenant *tous* les modi
 
 ## <a name="style"></a>Style
 
-Maintenant que nous avons identifié le groupe de symboles auquel appliquer la règle de nommage, nous devons décrire le style de nommage. Un style peut stipuler que le nom a un certain préfixe ou un certain suffixe, ou que des mots individuels inclus dans le nom sont séparés par un certain caractère. Vous pouvez également spécifier un style de mise en majuscules. La propriété de style se présente sous la forme suivante :
+Maintenant que vous avez identifié le groupe de symboles auquel appliquer la règle de nommage, vous pouvez décrire le style de nommage. Un style peut stipuler que le nom a un certain préfixe ou un certain suffixe, ou que des mots individuels inclus dans le nom sont séparés par un certain caractère. Vous pouvez également spécifier un style de mise en majuscules. La propriété de style se présente sous la forme suivante :
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -175,7 +175,15 @@ error | Quand ce style n’est pas suivi, afficher une erreur du compilateur dan
 > [!NOTE]
 > Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.
 
-## <a name="example"></a>Exemple
+## <a name="default-naming-styles"></a>Styles de dénomination par défaut
+
+Si vous ne spécifiez pas de règles de dénomination personnalisées, Visual Studio utilise les styles par défaut suivants :
+
+- Pour les classes, structures, énumérations, propriétés et événements avec l’accessibilité `public`, `private`, `internal`, `protected` ou `protected_internal`, le style de dénomination par défaut est la casse Pascal.
+
+- Pour les interfaces avec l’accessibilité `public`, `private`, `internal`, `protected` ou `protected_internal`, le style de dénomination par défaut est la casse Pascal avec le préfixe **I** requis.
+
+## <a name="example"></a>Exemples
 
 Le fichier *.editorconfig* suivant contient une convention de nommage qui spécifie que les propriétés publiques, les méthodes, les champs, les événements et les délégués doivent être mis en majuscules. Notez que cette convention de nommage spécifie plusieurs types de symboles auxquels appliquer la règle, en utilisant une virgule pour séparer les valeurs.
 
@@ -209,6 +217,8 @@ Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la sug
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Conventions de langage](editorconfig-language-conventions.md)
+- [Conventions de mise en forme](editorconfig-formatting-conventions.md)
 - [Conventions d'affectation de noms Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Langage .NET et conventions de mise en forme](../ide/editorconfig-code-style-settings-reference.md)
 - [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
+- [Paramètres des conventions de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

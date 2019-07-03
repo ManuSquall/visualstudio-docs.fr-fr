@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226082"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132162"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226082"
 
   2. Choisissez **Propriétés de configuration** > **Général**.
 
-  3. Définissez **Type de configuration** sur **Bibliothèque statique (.lib)**.
+  3. Définissez **Type de configuration** sur **Bibliothèque statique (.lib)** .
 
   Poursuivez avec la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).
 
@@ -64,21 +64,19 @@ ms.locfileid: "65226082"
 
       ::: moniker range="vs-2017"
 
-      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++**.
+      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++** .
 
       ::: moniker-end
 
-  2. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet de test, choisissez **Références**. La fenêtre **Propriétés** du projet s’ouvre.
+  1. Cliquez avec le bouton droit sur le projet de test dans **l’Explorateur de solutions**, puis choisissez **Ajouter** >  **Référence**.
 
-  3. Sélectionnez **Propriétés communes** > **Framework et références**, puis cliquez sur le bouton **Ajouter une nouvelle référence**.
-
-  4. Sélectionnez **Projets**, puis le projet à tester.
+  1. Sélectionnez **Projets**, puis le projet à tester.
 
        Choisissez le bouton **Ajouter** .
 
-  5. Dans les propriétés du projet de test, ajoutez l'emplacement du projet testé aux répertoires Include.
+  1. Dans les propriétés du projet de test, ajoutez l'emplacement du projet testé aux répertoires Include.
 
-       Choisissez **Propriétés de configuration** > **Répertoires VC++** > **Répertoires Include**.
+       Choisissez **Propriétés de configuration** > **Répertoires VC++**  > **Répertoires Include**.
 
        Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.
 
@@ -98,7 +96,7 @@ ms.locfileid: "65226082"
       
       ::: moniker range="vs-2017"
 
-      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++**.
+      1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++** .
 
       ::: moniker-end
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226082"
 
        Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers **.obj** ou **.lib**. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.
 
-  5. Choisissez **Propriétés de configuration** > **Répertoires VC++** > **Répertoires Include**.
+  5. Choisissez **Propriétés de configuration** > **Répertoires VC++**  > **Répertoires Include**.
 
        Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226082"
 
    1. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet testé, choisissez **Propriétés**. La fenêtre **Propriétés** du projet s’ouvre.
 
-   2. Choisissez **Propriétés de configuration** > **Répertoires VC++**.
+   2. Choisissez **Propriétés de configuration** > **Répertoires VC++** .
 
    3. Modifiez les répertoires Include et de bibliothèques :
 
@@ -135,7 +133,7 @@ ms.locfileid: "65226082"
 
 2. Ajoutez un fichier de test unitaire C++ :
 
-   - Dans **l’Explorateur de solutions**, dans le menu contextuel du projet, choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+   - Dans **l’Explorateur de solutions**, dans le menu contextuel du projet, choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++** .
 
    Passez à [Écrire les tests unitaires](#addTests).
 

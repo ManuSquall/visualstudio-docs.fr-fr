@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745813"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160157"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références
 
@@ -92,7 +92,7 @@ Selon la version du framework de votre projet, certains composants de la liste p
 
 - Un composant qui utilise une version récente du framework est incompatible avec un projet qui cible une version antérieure.
 
-   Pour plus d’informations sur la façon de changer la version du framework cible pour un projet, consultez [Guide pratique pour cibler une version du framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Pour plus d’informations sur la façon de changer la version du framework cible pour un projet, consultez [Vue d’ensemble du ciblage des frameworks](visual-studio-multi-targeting-overview.md).
 
 - Un composant qui utilise le .NET Framework 4 est incompatible avec un projet qui cible le .NET Framework 4.5.
 

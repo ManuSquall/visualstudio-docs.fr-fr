@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581942"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328840"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -86,7 +86,7 @@ Quand vous tapez [override](/dotnet/csharp/language-reference/keywords/override)
 
 ### <a name="ai-enhanced-intellisense"></a>IntelliSense amélioré par l’IA
 
-Vous pouvez installer une [extension IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) expérimentale pour Visual Studio. Celle-ci propose des listes de saisie semi-automatique IntelliSense améliorées par l’intelligence artificielle. Cette extension prédit l’API la plus appropriée à utiliser, au lieu de présenter simplement une liste alphabétique des membres. Elle utilise votre contexte de code et vos modèles actuels pour fournir la liste dynamique.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) fournit des listes de saisie semi-automatique IntelliSense améliorées par intelligence artificielle. IntelliCode prédit l’API la plus appropriée à utiliser, au lieu de présenter simplement une liste alphabétique des membres. Elle utilise votre contexte de code et vos modèles actuels pour fournir la liste dynamique.
 
 ## <a name="automatic-code-generation"></a>Génération de code automatique
 
@@ -124,7 +124,7 @@ Une ligne ondulée rouge s’affiche sous chaque identificateur non défini. Qua
 
 - Cliquez sur l'identificateur non défini. Une ampoule d’erreur **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule d’erreur.
 
-- Cliquez sur l’identificateur non défini, puis appuyez sur **Ctrl**+**.** (**Ctrl** + point).
+- Cliquez sur l’identificateur non défini, puis appuyez sur **Ctrl**+ **.** (**Ctrl** + point).
 
 - Cliquez avec le bouton droit sur l’identificateur non défini, puis cliquez sur **Actions rapides et refactorisations**.
 
@@ -158,7 +158,7 @@ Si vous appuyez sur la touche **Tab**, IntelliSense complète l’instruction au
 Si vous appuyez sur la touche **Tab**, IntelliSense choisit une méthode avec la signature appropriée et place le curseur dans le corps de votre gestionnaire d’événements.
 
 > [!NOTE]
-> Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (**Ctrl**+**-**) pour revenir à l’instruction de connexion d’événements.
+> Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (**Ctrl**+ **-** ) pour revenir à l’instruction de connexion d’événements.
 
 ## <a name="see-also"></a>Voir aussi
 

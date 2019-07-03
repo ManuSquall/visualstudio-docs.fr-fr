@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820927"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160047"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
-Pour plus d’informations sur l’accessibilité du clavier, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Pour accéder à diverses [commandes](reference/visual-studio-commands.md) et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette page répertorie les raccourcis de commande par défaut propres au profil **Général**, que vous avez peut-être choisis en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez [identifier le raccourci](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
 
-Pour accéder à diverses commandes et fenêtres dans Visual Studio, vous pouvez choisir les raccourcis clavier appropriés. Cette page répertorie les raccourcis par défaut propres au profil **Général**, que vous avez peut-être choisi en installant Visual Studio. Quel que soit le profil que vous avez choisi, vous pouvez identifier le raccourci d’une commande en ouvrant la boîte de dialogue **Options**, en développant le nœud **Environnement**, puis en choisissant **Clavier**. Vous pouvez également personnaliser vos raccourcis en assignant un raccourci différent à toute commande donnée.
+Pour obtenir la liste des raccourcis clavier courants et d'autres informations sur la productivité, consultez :
 
-Pour obtenir la liste des raccourcis clavier courants et d’autres informations sur la productivité, consultez [Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Conseils d’utilisation du clavier](../ide/tips-and-tricks-for-visual-studio.md) et [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md).
+- [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Conseils d’utilisation du clavier](../ide/productivity-shortcuts.md)
+- [Conseils de productivité](../ide/productivity-features.md).
+
+Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -785,6 +789,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (lettre « O ») |
+| Edit.ContractSelection | **Maj + Alt + -** (hors C++ uniquement) |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Barre d’espace**<br /><br /> ou<br /><br /> **Alt+Droite** |
 | Edit.CopyParameterTip | **Ctrl+Maj+Alt+C** |
@@ -797,6 +802,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.DocumentStartExtend | **Ctrl+Maj+Origine** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.ExpandSelection | **Maj + Alt + =** (hors C++ uniquement) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
 | Edit.GotoAll | **Ctrl + T**<br /><br /> ou<br /><br /> **Ctrl+,** |
@@ -1150,5 +1157,4 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Commandes Visual Studio](reference/visual-studio-commands.md)

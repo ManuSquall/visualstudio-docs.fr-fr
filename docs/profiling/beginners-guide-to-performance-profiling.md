@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688510"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033039"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser l’onglet **Utilisation de l’UC** des outils de diagnostics pour obtenir les données de performances de votre application. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
@@ -149,15 +149,18 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
     ![Chemin réactif des Outils de diagnostic](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
+    > [!NOTE]
+    > Si vous voyez du code dans l’arborescence des appels marqués comme du code « interrompu » ou « pile intraitable », cela signifie que les événements de suivi d’événements pour Windows (ETW) ont probablement été supprimés. Essayez de collecter la même trace une deuxième fois pour résoudre le problème.
+
 ## <a name="view-external-code"></a>Afficher le code externe
 
-Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]**.
+Le code externe correspond aux fonctions des composants système et de framework exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous n’êtes pas intéressé par le code externe. L’outil Utilisation de l’UC regroupe donc les fonctions externes d’une méthode utilisateur au sein d’un même nœud **[Code externe]** .
 
 Si vous voulez afficher les chemins d’appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue**, puis **Appliquer**.
 
 ![Choisir Filtrer l’affichage, puis Afficher le code externe](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]**.
+N'oubliez pas que de nombreuses chaînes d'appel en code externe sont profondément imbriquées, la largeur de la colonne Nom de fonction ne peut pas dépasser la largeur d'affichage de presque tous les moniteurs d'ordinateur, sauf les plus larges. Si tel est le cas, les noms de fonction sont affichés sous forme de **[…]** .
 
 Utilisez la zone de recherche pour trouver le nœud que vous cherchez, puis utilisez la barre de défilement horizontal pour afficher les données dans la vue.
 

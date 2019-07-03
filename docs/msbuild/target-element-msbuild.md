@@ -1,6 +1,6 @@
 ---
 title: Élément Target (MSBuild) | Microsoft Docs
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939298"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141175"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit exécuter séquentiellement.
@@ -86,6 +86,8 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 ## <a name="remarks"></a>Remarques
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute des dépendances dans l’ordre dans lequel elles apparaissent dans l’attribut `DependsOnTargets`, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
 
+ MSBuild est dépend de l’ordre d’importation, et la dernière définition d’une cible avec un attribut `Name` spécifique est la définition utilisée.
+
  Une cible est exécutée une seule fois pendant une génération, même si plusieurs cibles possèdent une relation de dépendance avec elle.
 
  Si une cible est ignorée parce que son attribut `Condition` a la valeur `false`, elle peut toujours être exécutée si elle est appelée ultérieurement dans la génération et si son attribut `Condition` a la valeur `true` à ce moment-là.
@@ -98,7 +100,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
  Avant MSBuild 4, chaque fois qu’une `Target` contenait plusieurs références au même élément dans son attribut `Outputs`, ces éléments en double étaient enregistrés. Dans les générations très volumineuses pourvues d’un grand nombre de sorties et de nombreuses interdépendances de projets, cela provoquait la perte d’une grande quantité de mémoire, car les éléments en double n’étaient d’aucune utilité. Si l’attribut `KeepDuplicateOutputs` est défini sur `true`, ces doublons sont enregistrés.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple de code suivant présente un élément `Target` qui exécute la tâche `Csc`.
 
 ```xml

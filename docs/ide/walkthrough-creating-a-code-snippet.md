@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836101"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259810"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
 
@@ -76,6 +76,9 @@ Le code XML suivant est le modèle d’extrait de code de base :
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > Vous ne pouvez pas spécifier la façon dont les lignes de code dans la section **CDATA** d’un extrait de code doivent indentées ou mises en forme. Lors de l’insertion, le service de langage met en forme le code inséré automatiquement. 
 
 5. Enregistrez l’extrait de code en tant que *SquareRoot.snippet* (vous pouvez l’enregistrer à n’importe quel emplacement).
 

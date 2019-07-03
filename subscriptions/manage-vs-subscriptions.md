@@ -1,18 +1,18 @@
 ---
 title: Gérer les abonnements Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833938"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365429"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -125,6 +125,12 @@ Vous pouvez facilement modifier les informations de contact et les préférences
    > [!div class="mx-imgBorder"]
    > ![Modification des informations de profil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Définition des préférences de communication
+Si vous souhaitez recevoir des mises à jour périodiques sur votre abonnement et ses avantages, dont le bulletin d’informations mensuel Visual Studio Subscription, [mettez à jour vos préférences](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) en cochant la case pour Visual Studio Subscription dans votre profil Visual Studio. Vous pouvez modifier ces préférences et vous désabonner à tout moment. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Définition des préférences](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Association de mon abonnement à des abonnements Azure DevOps Services ou Azure existants
 
 Si vous vous connectez à votre abonnement avec un compte Microsoft personnel et que vous avez un abonnement qui inclut Azure DevOps Services ou Microsoft Azure avec un compte professionnel ou scolaire géré par Azure, vous pouvez lier les deux abonnements. Il s’agit d’un « compte alternatif » qui vous permet d’utiliser votre compte MSA pour vous connecter à votre abonnement et d’accéder en parallèle aux ressources Azure, Azure DevOps Services ou IDE existantes qui sont associées à votre compte scolaire ou professionnel.

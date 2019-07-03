@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: Découvrir les avantages du support technique inclus dans les abonnements Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427479"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033118"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Avantages du support technique inclus dans les abonnements Visual Studio
 
@@ -29,6 +29,6 @@ Quand vous avez une question ou que vous avez besoin d’aide pour résoudre un 
 
 - [Support technique](vs-tech-support.md) : des experts sont prêts à vous aider pour résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les environnements hors production.
 
-- [Support prioritaire](vs-priority-support.md) : posez votre question dans une liste de forums spécifiques. Si la communauté des développeurs ne répond pas dans les deux jours, Microsoft fournit une réponse. (Pris en charge uniquement avec les comptes Microsoft.)
+- [Forums de la Communauté des développeurs](vs-priority-support.md) : Accédez à l’ensemble des forums du réseau des développeurs. 
 
 - [Concierge Chat](vs-concierge-chat.md) : contactez-nous afin d’obtenir de l’aide pour trouver de la documentation technique et des informations sur les produits, ou pour utiliser les avantages de votre abonnement.

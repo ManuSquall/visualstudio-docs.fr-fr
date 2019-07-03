@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432273"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309797"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Imbrication de fichiers dans l’Explorateur de solutions
 
@@ -86,19 +86,42 @@ Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension
 
 ### <a name="the-addedextension-provider"></a>Fournisseur addedExtension
 
-Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet. Prenons l'exemple suivant :
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet.
+
+Prenons l'exemple suivant :
 
 ![Règles de l’exemple addedExtension](media/filenesting_addedextension.png) ![Effet de l’exemple addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* est imbriqué sous *file.html* en raison de la règle **addedExtension**
 
+> [!NOTE]
+> Vous ne spécifiez pas les extensions de fichier pour la règle `addedExtension` ; elle s’applique automatiquement à toutes les extensions de fichier. Autrement dit, n’importe quel fichier avec le même nom et la même extension qu’un autre fichier avec une extension supplémentaire à la fin est imbriqué sous l’autre fichier. Vous ne pouvez pas limiter l’effet de ce fournisseur à certaines extensions de fichier.
+
 ### <a name="the-pathsegment-provider"></a>Fournisseur pathSegment
 
-Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet. Prenons l'exemple suivant :
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet.
+
+Prenons l'exemple suivant :
 
 ![Règles de l’exemple pathSegment](media/filenesting_pathsegment.png) ![Effet de l’exemple pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* est imbriqué sous *jquery.js* en raison de la règle **pathSegment**
+
+> [!NOTE]
+> - Si vous ne spécifiez pas d’extensions de fichier spécifiques pour la règle `pathSegment`, elle s’applique à toutes les extensions de fichier. Autrement dit, n’importe quel fichier avec le même nom et la même extension qu’un autre fichier avec une extension supplémentaire au milieu est imbriqué sous l’autre fichier.
+> - Vous pouvez limiter l’effet de la règle `pathSegment` à des extensions de fichier spécifiques en les spécifiant dans la manière suivante :
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Fournisseur allExtensions
 
