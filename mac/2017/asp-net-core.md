@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933245"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493725"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -167,7 +167,7 @@ Pour ajouter un contrôleur, procédez comme suit :
     }
     ```
 
-3. Ajoutez la dépendance `Microsoft.AspNetCore.Mvc` au projet en cliquant avec le bouton droit sur le dossier **Dépendance** et en sélectionnant **Ajouter un package...**.
+3. Ajoutez la dépendance `Microsoft.AspNetCore.Mvc` au projet en cliquant avec le bouton droit sur le dossier **Dépendance** et en sélectionnant **Ajouter un package...** .
 
 4. Utilisez la zone Rechercher pour trouver `Microsoft.AspNetCore.Mvc` dans la bibliothèque NuGet, puis sélectionnez **Ajouter un package**. L’installation peut prendre quelques minutes et vous serez peut-être invité à accepter différentes licences pour les dépendances nécessaires :
 
@@ -234,7 +234,7 @@ Veillez à effectuer correctement les quatre étapes pour garantir que .NET Core
 
 Ce guide était une introduction à ASP.NET Core. Il explique ce que c’est et quand l’utiliser, et fournit des informations sur son utilisation dans Visual Studio pour Mac.
 Pour plus d’informations sur les étapes à suivre à partir d’ici, consultez les guides suivants :
-- Documentation [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Documentation [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Création de services backend pour les applications mobiles natives](/aspnet/core/mobile/native-mobile-backend), qui montre comment créer un service REST en utilisant ASP.NET Core pour une application Xamarin.Forms.
 - [Ateliers pratiques ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
