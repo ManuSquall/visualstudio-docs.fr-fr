@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789368"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043582"
 ---
 # <a name="visual-studio-commands"></a>Commandes Visual Studio
 
-Les commandes Visual Studio vous permettent d’appeler une commande depuis la fenêtre **Commande** , depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande** . Dans chaque cas, le signe Supérieur à (`>`) est utilisé pour indiquer qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
+Vous pouvez entrer des commandes Visual Studio depuis la fenêtre **Commande**, depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande**. Dans chaque cas, le signe Supérieur à (`>`) indique qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
 
-Vous pouvez trouver une liste complète des commandes et leur syntaxe dans la boîte de dialogue **Clavier, Options d’environnement** .
+Vous trouverez une liste complète des commandes et leur syntaxe sur la page **Clavier** dans **Outils** > **Options** > **Environnement**.
 
-Le caractère d’échappement pour les commandes Visual Studio est un caractère d’accent circonflexe (^), ce qui signifie que le caractère qui le suit immédiatement est interprété littéralement et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+Dans les versions localisées de l’IDE, les noms des commandes peuvent être entrés dans la langue native de l’IDE ou en anglais. Par exemple, vous pouvez taper `File.NewFile` ou `Fichier.NouveauFichier` dans l’IDE localisé en français pour exécuter la même commande.
+
+De nombreuses commandes ont des alias. Pour obtenir la liste des alias de commande, consultez [Alias de commandes](../../ide/reference/visual-studio-command-aliases.md). Pour les raccourcis clavier des commandes, consultez [Raccourcis clavier par défaut dans Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Caractère d'échappement
+
+Le caractère d’échappement pour les commandes Visual Studio est l’accent circonflexe (^). Le caractère d'échappement signifie que le caractère situé juste après ce signe est interprété littéralement, et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```
 >Edit.Find ^^t /regex
@@ -33,11 +39,9 @@ Le caractère d’échappement pour les commandes Visual Studio est un caractèr
 
 Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré.
 
-Dans les versions localisées de l’IDE, les noms des commandes peuvent être entrés dans la langue native de l’IDE ou en anglais. Par exemple, vous pouvez taper `File.NewFile` ou `Fichier.NouveauFichier` dans l’IDE localisé en français pour exécuter la même commande.
+## <a name="commands-with-arguments"></a>Commandes avec arguments
 
-De nombreuses commandes ont des alias. Pour obtenir la liste des alias de commande, consultez [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
-
-Les commandes suivantes prennent des arguments et/ou des commutateurs.
+Les commandes suivantes prennent des arguments ou commutateurs :
 
 | Nom de la commande | Description |
 | - | - |
@@ -77,5 +81,5 @@ Les commandes suivantes prennent des arguments et/ou des commutateurs.
 ## <a name="see-also"></a>Voir aussi
 
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Zone Rechercher/Commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

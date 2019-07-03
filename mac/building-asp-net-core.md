@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836178"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253798"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Création d’applications ASP.NET Core dans Visual Studio pour Mac 
 
@@ -59,7 +59,7 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image4.png)
 
-3. Par convention, la classe **HomeController** gère toutes les demandes entrantes qui commencent par **/Home**. La méthode **Index** gère les demandes à la racine du répertoire (par exemple, http://site.com/Home), tandis que les autres méthodes gèrent les demandes au niveau de leur chemin nommé en fonction de la convention, à l’image de la méthode **About()** qui gère les demandes au niveau **http://site.com/Home/About** . Bien sûr, tout ceci est configurable. **HomeController** étant le contrôleur par défaut dans un nouveau projet, les demandes à la racine du site ( **http://site.com** ), transitent par la méthode **Index()** de **HomeController** tout comme les demandes au niveau **http://site.com/Home** ou **http://site.com/Home/Index** .
+3. Par convention, la classe **HomeController** gère toutes les demandes entrantes qui commencent par **/Home**. La méthode **Index** gère les demandes à la racine du répertoire (par exemple, `http://site.com/Home`), tandis que les autres méthodes gèrent les demandes au niveau de leur chemin nommé en fonction de la convention, à l’image de la méthode **About()** qui gère les demandes au niveau `http://site.com/Home/About`. Bien sûr, tout ceci est configurable. **HomeController** étant le contrôleur par défaut dans un nouveau projet, les demandes à la racine du site (`http://site.com`), transitent par la méthode **Index()** de **HomeController** tout comme les demandes au niveau `http://site.com/Home` ou `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840982"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033170"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
 
@@ -37,7 +37,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Quand vous lancez Visual Studio, la première chose que vous voyez est la fenêtre de démarrage. La fenêtre de démarrage est conçue pour vous aider à « accéder au code » plus rapidement. Elle contient des options pour fermer ou extraire du code, ouvrir une solution ou un projet existant, créer un projet ou simplement ouvrir un dossier qui contient des fichiers de code.
 
-[![](media/vs-2019/start-window.png "La fenêtre de démarrage dans Visual Studio 2019")](media/vs-2019/start-window.png)
+[![La fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Si vous utilisez Visual Studio pour la première fois, votre liste des derniers projets est vide.
 

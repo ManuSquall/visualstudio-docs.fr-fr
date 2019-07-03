@@ -1,6 +1,7 @@
 ---
-title: 'Procédure : Utiliser uniquement le clavier'
-description: Découvrez comment utiliser des combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture de code dans l’environnement de développement intégré (IDE) Visual Studio.
+title: Utiliser Visual Studio sans souris
+titleSuffix: ''
+description: Découvrez comment naviguer et écrire du code dans l’environnement de développement intégré (IDE) Visual Studio en utilisant uniquement le clavier.
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820602"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043511"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procédure : Utiliser uniquement le clavier
+# <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 
-Les raccourcis clavier peuvent faciliter la navigation dans l’IDE Visual Studio et dans le code. Nous allons explorer quelques façons d’utiliser des raccourcis clavier plus efficacement.
+Les raccourcis clavier peuvent faciliter la navigation dans l’IDE Visual Studio et l’écriture de code. Cet article explore quelques façons d’utiliser des raccourcis clavier plus efficacement.
 
-Pour obtenir la liste complète des touches de raccourci de Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [https://www.microsoft.com/accessibility/](http://go.microsoft.com/fwlink/?LinkID=40400).
+Pour obtenir la liste complète des touches de raccourci de commande de Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -40,23 +41,19 @@ Pour obtenir la liste complète des touches de raccourci de Visual Studio, consu
 
 ## <a name="toolbox-controls"></a>Contrôles de boîte à outils
 
-Vous pouvez ajouter un contrôle sur la boîte à outils dans un formulaire ou un concepteur à l’aide du clavier.
-
-### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Pour ajouter des contrôles de la boîte à outils dans un concepteur à l’aide du clavier
+Pour ajouter un contrôle sur la boîte à outils à un formulaire ou concepteur sans utiliser la souris :
 
 1. Dans la barre de menus, choisissez **Affichage** > **Boîte à outils**.
 
 2. Utilisez les touches **Ctrl**+**Haut** ou **Ctrl**+**Bas** pour vous déplacer parmi les sections de l’onglet **Boîte à outils**.
 
-3. Utilisez les touches **Haut** ou **Bas** pour vous déplacer entre les contrôles.
+3. Utilisez les touches **Haut** ou **Bas** pour vous déplacer entre les contrôles dans une section.
 
 4. Après avoir sélectionné le contrôle, utilisez la touche **Entrée** pour l’ajouter au formulaire ou au concepteur.
 
 ## <a name="dialog-box-options"></a>Options de boîte de dialogue
 
-Vous pouvez vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier.
-
-### <a name="set-dialog-box-options-from-the-keyboard"></a>Définir des options de boîte de dialogue à partir du clavier
+Pour vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier seul :
 
 1. Utilisez les touches **Tab** ou **Maj**+**Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.
 
@@ -72,17 +69,13 @@ Vous pouvez vous déplacer entre les options d’une boîte de dialogue et modif
 
    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj**+**Alt**+**Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
 
-## <a name="window-and-file-navigation"></a>Navigation dans les fenêtres et les fichiers
-
-Vous pouvez utiliser le clavier de plusieurs façons pour vous déplacer entre les fenêtres d’outils et de document ouvertes. Vous pouvez également déplacer et ancrer les fenêtres d’outils à d’autres emplacements à l’aide du clavier.
-
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>Naviguer entre les fenêtres et les fichiers dans l’IDE
+## <a name="navigate-between-windows-and-files"></a>Naviguer entre fenêtres et fichiers
 
 - Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez le raccourci clavier **Ctrl**+**Tab** pour afficher le navigateur de l’IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche **Entrée** pour accéder au fichier mis en surbrillance.
 
 - Pour vous déplacer entre les fenêtres d’outils ancrées, choisissez le raccourci clavier **Alt**+**F7** pour afficher le navigateur de l’IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche **Entrée** pour accéder à la fenêtre mise en surbrillance.
 
-### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Pour déplacer et ancrer les fenêtres Outil à l’aide du clavier
+## <a name="move-and-dock-tool-windows"></a>Déplacer et ancrer les fenêtres Outil
 
 1. Accédez à la fenêtre Outil que vous voulez déplacer et appliquez-lui le focus.
 
@@ -109,3 +102,4 @@ Vous pouvez utiliser le clavier de plusieurs façons pour vous déplacer entre l
 * [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Conseils et astuces d’accessibilité](../../ide/reference/accessibility-tips-and-tricks.md)
 * [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+* [Accessibilité des produits Microsoft](https://www.microsoft.com/accessibility/)

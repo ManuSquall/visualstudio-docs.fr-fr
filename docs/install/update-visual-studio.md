@@ -2,7 +2,7 @@
 title: Mettre à jour Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment mettre à jour Visual Studio vers la version la plus récente, étape par étape.
-ms.date: 03/30/2019
+ms.date: 06/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263055"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290655"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
 ::: moniker range="vs-2017"
 
-Nous vous encourageons à mettre à jour vers la [version la plus récente](/visualstudio/releasenotes/vs2017-relnotes/) de Visual Studio 2017 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
+Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releasenotes/vs2017-relnotes/) de Visual Studio 2017 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
 
-Si vous souhaitez tester la prochaine version, envisagez aussi de télécharger la [version Release Candidate](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019.
+Et si vous souhaitez essayer notre version la plus récente, pensez à télécharger et installer [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) à la place.
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -92,9 +92,9 @@ Comme dans les versions antérieures de Visual Studio, vous pouvez utiliser Visu
 1. Ouvrez le programme d’installation. Avant de poursuivre, le programme d’installation de Visual Studio peut nécessiter une mise à jour.
 
    > [!NOTE]
-   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)**.
+   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)** .
 
-1. Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio qui est installée.
+1. Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio installée précédemment.
 
 1. Si une mise à jour est disponible, un bouton **Mettre à jour** apparaît. (Le programme d’installation peut mettre plusieurs secondes à déterminer si une mise à jour est disponible.)
 
@@ -148,7 +148,7 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 1. Ouvrez le programme d’installation. Vous devrez peut-être mettre à jour le programme d’installation avant de continuer. Si c’est le cas, vous êtes invité à le faire.
 
    > [!NOTE]
-   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)**.
+   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)** .
 
 1. Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio qui est installée.
 
@@ -164,13 +164,15 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 
 Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
 
+Et si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Mettre à jour Visual Studio pour Mac](/visualstudio/mac/update).
 
-Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019&nbsp;Preview ou Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
+Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Utiliser le programme d’installation de Visual Studio
 
@@ -182,7 +184,7 @@ Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019&nbsp;Preview ou Visual
 
 1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée.
 
-   Par exemple, si vous avez déjà installé Visual&nbsp;Studio Community&nbsp;2019&nbsp;RC et qu’il existe une mise à jour associée, un message **Mise à jour disponible** s’affiche dans le programme d’installation.
+   Par exemple, si vous avez déjà installé Visual&nbsp;Studio Community&nbsp;2019 et qu’il existe une mise à jour associée, un message **Mise à jour disponible** s’affiche dans le programme d’installation.
 
      ![Sélectionner l’édition de Visual Studio 2019 que vous souhaitez mettre à jour](media/vs2019-update-visual-studio-community-rc.png "Sélectionner l’édition de Visual Studio 2019 que vous souhaitez mettre à jour")
 
@@ -202,7 +204,7 @@ Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre
 
 1. Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019**.
 
-    ![Ouvrir Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "Ouvrir Visual Studio 2019 à partir de Windows")
+    ![Ouvrir Visual Studio 2019](media/vs2019-visual-studio-rc.png "Ouvrir Visual Studio 2019 à partir de Windows")
 
 1. Sous **Prise en main**, choisissez une option pour ouvrir l’IDE.
 
@@ -262,7 +264,9 @@ Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Installer des versions de Visual Studio côte à côte](install-visual-studio-versions-side-by-side.md)
 * [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance](update-servicing-baseline.md)
 * [Mettre à jour Visual Studio pour Mac](/visualstudio/mac/update)
 * [Modifier Visual Studio](modify-visual-studio.md)
 * [Désinstaller Visual Studio](uninstall-visual-studio.md)

@@ -2,7 +2,7 @@
 title: Guide de l’administrateur Visual Studio
 titleSuffix: ''
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037508"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328792"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -40,7 +40,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Options de support pour les clients Enterprise et Professional*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Options de support pour les clients Enterprise et Professional*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), ainsi que la [Procédure pas à pas : Mettre à jour Visual Studio tout en étant sur une page de ligne de base](update-servicing-baseline.md) de maintenance.
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
@@ -62,7 +62,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Prise en charge des versions antérieures de Visual Studio*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio).
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Prise en charge des versions antérieures de Visual Studio*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), ainsi que la [Procédure pas à pas : Mettre à jour Visual Studio tout en étant sur une page de ligne de base](update-servicing-baseline.md) de maintenance.
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
