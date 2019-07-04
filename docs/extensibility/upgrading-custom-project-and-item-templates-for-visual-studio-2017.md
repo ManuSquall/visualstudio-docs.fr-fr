@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316338"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559761"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 
@@ -180,9 +180,9 @@ Nous montrons les points de différence entre le Visual Studio 2015 et Visual St
 
 Certaines extensions basées sur MSI déploiement des modèles dans les emplacements des modèles courants tels que les répertoires suivants :
 
-- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/éléments personnalisés\>**
 
-- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/ItemTemplates >**
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/éléments personnalisés\>**
 
 Si votre extension effectue un déploiement basé sur MSI, vous devez générer le manifeste de modèle manuellement et vous assurer qu’il est inclus dans le programme d’installation de l’extension. Comparer les exemples .vstman répertoriés ci-dessus et le [référence modèle Visual Studio Manifest schéma](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
