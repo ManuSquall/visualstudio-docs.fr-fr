@@ -2,23 +2,24 @@
 title: Abonnements Visual Studio - avantages de l’abonné
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: En savoir plus sur les avantages inclus dans votre abonnement Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427791"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493742"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
-Les abonnements Visual Studio offrent l’ensemble le plus complet de ressources vous permettant de créer, déployer et gérer de formidables applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages spécifiques varient selon le type d’abonnement que vous avez.  Pour fournir une valeur maximale aux abonnés, les avantages proposés sont modifiés régulièrement lors des ajustements pour se concentrer sur les technologies les plus récents et les plus utiles, les supports de formation et les avantages de partenaire disponibles.
+Les abonnements Visual Studio (anciennement appelés abonnements MSDN) offrent l’ensemble le plus complet de ressources vous permettant de créer, déployer et gérer de formidables applications sur vos plateformes et appareils préférés, notamment Windows, iOS, Android et Linux.  Les avantages spécifiques varient selon le type d’abonnement que vous avez.  Pour fournir une valeur maximale aux abonnés, les avantages proposés sont modifiés régulièrement lors des ajustements pour se concentrer sur les technologies les plus récents et les plus utiles, les supports de formation et les avantages de partenaire disponibles.
 
-Les avantages sont répartis en trois catégories :
+
+Les avantages sont groupés en trois catégories dans le [portail de l’abonné](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Outils
 La catégorie Outils permet d’accéder à un large éventail d’avantages, notamment les avantages phares tels que [IDE Visual Studio](vs-ide-benefit.md), [Azure DevOps Services](vs-azure-devops.md) et [Azure](vs-azure.md).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
@@ -30,7 +31,7 @@ Pour améliorer vos compétences et être toujours informé des dernières techn
 - Microsoft Azure pour les développeurs .NET et autre contenu excellent de Pluralsight
 - Science des données pour les développeurs de DataCamp
 - Conception de Solutions de base de données pour SQL Server de Microsoft Virtual Academy
-- LinkedIn Learning vous permet d’accéder à des personnes, des analyses et des compétences nécessaires pour exceller.
+- LinkedIn Learning vous permet d’accéder à des personnes, des aperçus et des compétences nécessaires pour exceller.
 
 ## <a name="support"></a>Support
 En tant qu’abonné Visual Studio, vous avez également accès aux différents types de support en cas de question ou de besoin d’assistance technique.
