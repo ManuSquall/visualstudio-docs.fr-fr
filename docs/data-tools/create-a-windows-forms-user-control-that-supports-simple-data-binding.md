@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1584f0d6a772a6f24578f9693832fb6b0812444
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567484"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624489"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
 
@@ -166,7 +166,7 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
 Pour créer des contrôles liés aux données sur le formulaire, faites glisser le **clients** nœud à partir de la **des Sources de données** fenêtre vers le formulaire et vérifiez que le **PhoneNumberBox** contrôle est utilisé pour afficher les données dans le **téléphone** colonne.
 
-     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.
+Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
 ## <a name="run-the-application"></a>Exécuter l'application
 

@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900229"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624525"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
-Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer (*.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou une condition préalable, qui s’affiche dans le **conditions préalables** boîte de dialogue de ClickOnce est un package de programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
+Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer ( *.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou une condition préalable, qui s’affiche dans le **conditions préalables** boîte de dialogue de ClickOnce est un package de programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
 
 Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l’utilisateur a accepté les contrats de licence, l’installation des prérequis commence. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.
 
@@ -43,36 +43,44 @@ Pour créer un package de programme d’amorçage, vous devez créer un manifest
 
 Une fois ces fichiers créés, placez le fichier manifeste du produit dans un dossier nommé en fonction du programme d'amorçage personnalisé. Le fichier manifeste du package est placé dans un dossier nommé en fonction des paramètres régionaux. Par exemple, si le fichier manifeste du package est destiné à une redistribution en anglais, placez le fichier dans un dossier nommé en. Répétez ce processus pour chacun des paramètres régionaux, par exemple ja pour le japonais et de pour l'allemand. Le package de programme d'amorçage personnalisé final peut avoir la structure de dossiers suivante.
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 Ensuite, copiez les fichiers redistribuables dans l’emplacement du dossier du programme d’amorçage. Pour plus d'informations, voir [Procédure : Créer un package de programme d’amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 ou
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 Vous pouvez également déterminer l'emplacement du dossier de programme d'amorçage à partir de la valeur **Path** de la clé de Registre suivante :
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 Sur les systèmes 64 bits, utilisez la clé de Registre suivante :
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 Chaque composant redistribuable apparaît dans son propre sous-dossier du répertoire packages. Le produit de manifeste et redistribuable de fichiers doivent être placés dans ce sous-dossier. Les versions localisées des manifestes de composant et de package doivent être placées dans des sous-dossiers nommés en fonction du nom de Culture.
 
