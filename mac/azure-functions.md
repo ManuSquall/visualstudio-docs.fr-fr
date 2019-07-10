@@ -1,24 +1,24 @@
 ---
 title: Introduction à Azure Functions
 description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984993"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692826"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5** et ultérieur.
 

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614440"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586817"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
@@ -66,7 +66,6 @@ Pour installer et utiliser l’agent distant en vue de développer du code pour 
 
    Installez la version 8.11.3 de Node.js sur votre Mac. Si vous installez le package Node.js, celui-ci est normalement accompagné de npm version 5.6.0. Notez que d’autres versions de Node.js et de npm peuvent ne pas prendre en charge certains modules utilisés dans l’agent distant vcremote et entraîner l’échec de l’installation de vcremote.
 
-
 ## <a name="Install"></a> Installer l’agent distant pour iOS
 
 Quand vous installez Visual C++ pour le développement mobile multiplateforme, Visual Studio peut communiquer avec [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988). Cet agent distant s’exécutant sur votre Mac permet de transférer des fichiers, de générer et exécuter votre application iOS et d’envoyer des commandes de débogage.
@@ -79,7 +78,7 @@ Avant d’installer l’agent distant, assurez-vous que vous disposez bien des [
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   Le commutateur d’installation globale (**-g**) est recommandé, mais pas obligatoire.
+   Le commutateur d’installation globale ( **-g**) est recommandé, mais pas obligatoire.
 
    Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](https://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés. Une fois l’installation terminée, ne tenez pas compte des avertissements relatifs aux dépendances facultatives ignorées.
 
@@ -142,7 +141,7 @@ Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifi
 
 1. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.
 
-1. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++**, **iOS**.
+1. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++** , **iOS**.
 
 1. Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.
 
@@ -159,7 +158,7 @@ Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifi
 
    Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .
 
-1. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (*~*) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.
+1. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base ( *~* ) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.
 
 1. Choisissez **OK** pour enregistrer les paramètres de connexion de couplage à distance.
 
