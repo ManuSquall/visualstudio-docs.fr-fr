@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 810ebfcfb4cb4354c3df4c0d9892a37ca1624256
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965026"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692081"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurer des rôles de service cloud Azure avec Visual Studio
 Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles web. Pour chaque rôle, vous devez définir le mode de configuration de ce rôle et configurer son mode d’exécution. Pour en savoir plus sur les rôles dans les services cloud, regardez la vidéo [Introduction aux services cloud Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -227,7 +227,7 @@ Vous pouvez ajouter le stockage de système de fichiers local pour chaque instan
     - **Taille (Mo)**  : entrez la taille (en Mo) dont vous avez besoin pour le nouveau stockage local.
     - **Nettoyer après le recyclage des rôles** : sélectionnez cette option pour supprimer les données dans le nouveau stockage local quand la machine virtuelle pour le rôle est recyclée.
 
-1. Pour supprimer une entrée de stockage local, sélectionnez l’entrée, puis **Remove Local Storage (Supprimer le stockage local)**.
+1. Pour supprimer une entrée de stockage local, sélectionnez l’entrée, puis **Remove Local Storage (Supprimer le stockage local)** .
 
 1. Dans la barre d’outils de Visual Studio, sélectionnez **Enregistrer**.
 
@@ -239,21 +239,20 @@ Cette section montre comment accéder par programme au stockage local en C# en �
 
 Le code suivant présente un exemple d’écriture de fichier texte dans le stockage local. Remplacez l’espace réservé &lt;LocalStorageName> par la valeur appropriée.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Rechercher un fichier écrit dans le stockage local
 
