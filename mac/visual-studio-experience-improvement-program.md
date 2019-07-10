@@ -1,16 +1,16 @@
 ---
 title: Programme d’amélioration de l’expérience utilisateur Visual Studio
 description: Découvrez comment gérer les paramètres de confidentialité dans Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/22/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c2e2dc1cc0171e9e7a8ab81f820ff6be0f389c2
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965667"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692201"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programme d’amélioration de l’expérience utilisateur Visual Studio
 

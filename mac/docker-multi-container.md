@@ -1,15 +1,15 @@
 ---
 title: Didacticiel - Créer une application multiconteneur avec Docker Compose
 description: Apprendre à gérer plusieurs conteneurs et communiquer entre eux dans Visual Studio pour Mac
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196104"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691704"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Créer une application multiconteneur avec Docker Compose
 
@@ -82,14 +82,14 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
    ```
 
 1. Dans le fichier *Index.cshtml*, ajoutez une ligne pour afficher `ViewData["Message"]` afin que le fichier ressemble à ce qui suit :
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
       ```
 
 1. Maintenant, dans le projet d’API Web, ajoutez du code au contrôleur de valeurs pour personnaliser le message retourné par l’API pour l’appel que vous avez ajouté à partir de *webfrontend* :
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Définissez le projet `docker-compose` comme projet de démarrage et accédez à **Exécuter > Démarrer le débogage**. Si tout est correctement configuré, vous voyez le message « Hello from webfrontend and webapi (with value 1). » :
 
 ![Solution Docker à plusieurs conteneurs en cours d’exécution](media/docker-multicontainer-debug.png)

@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986861"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693013"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code, souvent appelés  _modèles de code_, sont pratiques pour effectuer une programmation efficace, car ils permettent l’insertion et la modification de blocs de code écrits au préalable. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
+Les extraits de code, souvent appelés _modèles de code_, sont pratiques pour une programmation efficace, car ils permettent l’insertion et la modification de blocs de code pré-écrits. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
 
 Cette section explique comment créer, insérer et utiliser des extraits dans du code.
 
@@ -30,7 +30,7 @@ Il existe différentes façons d’ajouter des extraits de code, dont certaines 
 
   [![Extraits de code dans la boîte à outils](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Commande Insérer des modèles** : &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches**, puis recherchez `template`. Cela permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur  **Appliquer** :
+- **Commande Insérer des modèles** : &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches**, puis recherchez `template`. Ceci permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur **Appliquer** :
 
   ![Commande Insérer un modèle](media/source-editor-image15.png)
 

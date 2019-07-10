@@ -1,17 +1,17 @@
 ---
 title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet Xamarin. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820609"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691396"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -77,9 +77,9 @@ Cliquez avec le bouton droit sur **Packages** pour accéder au menu contextuel 
 
 ![Menu Packages](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Add NuGet Packages** (Ajouter des packages NuGet) : ouvre la fenêtre permettant d’ajouter des packages au projet.
-*   **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
-*   **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
+* **Add NuGet Packages** (Ajouter des packages NuGet) : ouvre la fenêtre permettant d’ajouter des packages au projet.
+* **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
+* **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
 
 Les options Mettre à jour et Restaurer sont également disponibles au niveau de la solution, et elles affectent tous les projets de la solution.
 

@@ -1,17 +1,17 @@
 ---
 title: Création et modification des configurations de build
 description: Cet article décrit la création de configurations de build dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 14a9ed8423779ad878fb5c304bbb6d28e1945a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09591cb4feee4e9dc673f925bf3917eb3d07319b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983305"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693075"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Création et modification des configurations de build
 
