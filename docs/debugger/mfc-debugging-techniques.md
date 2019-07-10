@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905442"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693028"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-La macro TRACE gère correctement les paramètres char* et wchar_t\*. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
+La macro TRACE gère correctement les deux char\* et wchar_t\* paramètres. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);

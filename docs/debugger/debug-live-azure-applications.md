@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860389"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692114"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée
 
@@ -63,19 +63,19 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-2. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…**. Sélectionnez le service Azure App Service sur lequel votre projet est déployé et un compte de stockage Azure, puis cliquez sur **Joindre**.
+2. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…** . Sélectionnez le service Azure App Service sur lequel votre projet est déployé et un compte de stockage Azure, puis cliquez sur **Joindre**.
 
-      ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Sélectionner une ressource Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Sélectionner une ressource Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > La première fois que vous sélectionnez **Joindre le Débogueur de capture instantanée**, il vous est demandé d’installer l’extension de site Débogueur de capture instantanée sur votre service Azure App Service. Cette installation exige un redémarrage du service Azure App Service.
+   > [!IMPORTANT]
+   > La première fois que vous sélectionnez **Joindre le Débogueur de capture instantanée**, il vous est demandé d’installer l’extension de site Débogueur de capture instantanée sur votre service Azure App Service. Cette installation exige un redémarrage du service Azure App Service.
 
-  > [!NOTE]
-  > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si un message d’erreur du type « extension de site obsolète » apparaît, voir [Conseils de résolution des problèmes et problèmes connus pour le débogage de capture instantanée](../debugger/debug-live-azure-apps-troubleshooting.md) pour effectuer une mise à niveau.
+   > [!NOTE]
+   > L’extension de site Application Insights prend également en charge le débogage de capture instantanée. Si un message d’erreur du type « extension de site obsolète » apparaît, voir [Conseils de résolution des problèmes et problèmes connus pour le débogage de capture instantanée](../debugger/debug-live-azure-apps-troubleshooting.md) pour effectuer une mise à niveau.
 
    Visual Studio est maintenant en mode Débogage de capture instantanée.
    ![Mode de débogage d’instantané](../debugger/media/snapshot-message.png)
