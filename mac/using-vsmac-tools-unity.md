@@ -3,14 +3,14 @@ title: Utilisation des outils Visual Studio pour Mac pour Unity
 description: Ce guide explique comment utiliser l’extension Outils Visual Studio pour Mac pour Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965985"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692221"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -26,7 +26,7 @@ Visual Studio pour Mac peut aussi être ouvert sans ouvrir de script dans l’é
 
 ## <a name="unity-documentation-access"></a>Accès à la documentation Unity
 
-Les outils Visual Studio pour Mac pour Unity offrent un raccourci pour accéder à la documentation de l’API Unity. Pour accéder à la documentation de l’API Unity à partir de Visual Studio pour Mac, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations, puis appuyez sur **Commande ⌘ + ‘**.
+Les outils Visual Studio pour Mac pour Unity offrent un raccourci pour accéder à la documentation de l’API Unity. Pour accéder à la documentation de l’API Unity à partir de Visual Studio pour Mac, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations, puis appuyez sur **Commande ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense pour les messages Unity
 Le moteur Unity diffuse des messages aux scripts MonoBehaviour, ce qui permet aux développeurs d’écrire du code qui réagit aux messages comme OnMouseDown, OnTriggerEnter, etc. Parce qu’il ne s’agit pas de méthodes virtuelles dans la classe de base MonoBehaviour, certains IDE comme MonoDevelop n’ont pas de fonctionnalité de complétion du code pour les messages Unity.
@@ -61,7 +61,7 @@ Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionn
 
 ## <a name="adding-new-unity-files-and-folders"></a>Ajout de nouveaux fichiers et dossiers Unity
 
-Tandis que vous pouvez toujours ajouter de nouveaux fichiers à un projet Unity dans l’éditeur Unity, Visual Studio pour Mac permet de créer facilement des scripts, nuanceurs et dossiers Unity à partir de Visual Studio.
+Tandis que vous pouvez toujours ajouter de nouveaux fichiers à un projet Unity dans l’éditeur Unity, Visual Studio pour Mac permet de créer facilement de nouveaux scripts, nuanceurs, stucks, énumérations et dossiers Unity à partir de Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Ajouter un nouveau script C# MonoBehaviour
 
@@ -80,7 +80,7 @@ Pour ajouter un nouveau dossier, **cliquez avec le bouton droit sur le dossier R
 Ces ajouts sont répercutés dans la fenêtre Projet de l’éditeur Unity.
 
 ### <a name="to-rename-a-file-or-folder"></a>Pour renommer un fichier ou un dossier
-**Cliquez avec le bouton droit** sur l’élément à renommer dans le panneau Solutions et sélectionnez **Renommer...**.
+**Cliquez avec le bouton droit** sur l’élément à renommer dans le panneau Solutions et sélectionnez **Renommer...** .
 
 > [!NOTE]
 > Si vous avez un nouveau projet Unity sans script et que le dossier Ressources ne s’affiche pas dans le panneau Solutions dans Visual Studio pour Mac, ajoutez un script C# initial à partir de l’éditeur Unity.

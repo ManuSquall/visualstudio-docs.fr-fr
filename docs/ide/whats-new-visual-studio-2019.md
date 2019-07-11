@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328827"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552867"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -41,8 +41,8 @@ Pour une liste complète de tout ce qui est nouveau dans cette version, consulte
 
 ## <a name="develop"></a>Développer
 
-Gagnez du temps avec les nouvelles fonctionnalités.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Longueur de la vidéo : 3,00 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Recherche améliorée
@@ -104,8 +104,8 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 ## <a name="collaborate"></a>Collaborer
 
-Résolvez les problèmes en équipe.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur de la vidéo : 4,22 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Workflow « cloud-first »
@@ -142,8 +142,8 @@ Pour plus d’informations, consultez le billet de blog [Code reviews using the 
 
 ## <a name="debug"></a>Débogage
 
-Focus sur un ciblage précis.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur de la vidéo : 3,54 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Gains de performance
