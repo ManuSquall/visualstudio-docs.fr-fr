@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177632"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624116"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
 
@@ -28,101 +28,13 @@ Les [conteneurs](https://www.docker.com/what-container) sont un excellent moyen 
 
 Si Visual Studio Build Tools n’a pas ce dont vous avez besoin pour générer votre code source, vous pouvez utiliser ces étapes pour d’autres produits Visual Studio. Notez, toutefois, que les conteneurs Windows ne prennent pas en charge les interfaces utilisateur interactives, et que toutes les commandes doivent être automatisées.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="before-you-begin"></a>Avant de commencer
 
-Avec [Docker](https://www.docker.com/what-docker), vous créez une image à partir de laquelle vous pouvez créer des conteneurs qui génèrent votre code source. L’exemple de fichier Dockerfile installe la dernière version de Visual Studio Build Tools, ainsi que d’autres programmes utiles souvent utilisés pour la génération de code source. Vous pouvez modifier davantage votre propre fichier Dockerfile en y ajoutant d’autres outils et scripts pour exécuter des tests, publier la sortie de génération, et bien plus encore.
+Il est utile d’acquérir des connaissances sur [Docker](https://www.docker.com/what-docker) pour ce qui suit. Si vous n’êtes pas déjà familiarisé avec l’exécution de Docker sur Windows, découvrez comment [installer et configurer le moteur Docker sur Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Si vous avez déjà installé Docker pour Windows, vous pouvez passer à l’étape 3.
+L’image de base ci-dessous est un exemple et peut ne pas fonctionner pour votre système. Lisez [compatibilité des versions du conteneur Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) pour déterminer quelle image de base utiliser pour votre environnement.
 
-## <a name="step-1-enable-hyper-v"></a>Étape 1. Activer Hyper-V
-
-Hyper-V n’est pas activé par défaut. Il doit être activé au démarrage de Docker pour Windows, puisque seule l’isolation Hyper-V est prise en charge par Windows 10.
-
-* [Activer Hyper-V sur Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [Activer Hyper-V sur Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
-
-> [!NOTE]
-> La virtualisation doit être activée sur votre machine. Elle est généralement activée par défaut. Toutefois, si l’installation d’Hyper-V échoue, reportez-vous à la documentation de votre système pour savoir comment activer la virtualisation.
-
-## <a name="step-2-install-docker-for-windows"></a>Étape 2. Installer Docker pour Windows
-
-Si vous utilisez Windows 10, vous pouvez [télécharger et installer Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Si vous utilisez Windows Server 2016, suivez les [instructions d’installation de Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
-
-## <a name="step-3-switch-to-windows-containers"></a>Étape 3. Passer aux conteneurs Windows
-
-Vous pouvez installer Build Tools seulement sur Windows, ce qui nécessite de [passer aux conteneurs Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Dans Windows 10, les conteneurs Windows prennent uniquement en charge [l’isolation Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), alors que dans Windows Server 2016, les conteneurs Windows prennent en charge à la fois l’isolation Hyper-V et l’isolation des processus.
-
-## <a name="step-4-expand-maximum-container-disk-size"></a>Étape 4. Augmenter la taille maximale du disque du conteneur
-
-Visual Studio Build Tools, et plus généralement Visual Studio, nécessitent une grande quantité d’espace disque pour tous les outils à installer. Même si l’exemple de fichier Dockerfile désactive le cache de packages, vous devez augmenter la taille du disque des images conteneurs en fonction de l’espace nécessaire. Dans Windows, vous pouvez uniquement augmenter la taille du disque en modifiant la configuration de Docker.
-
-**Sur Windows 10** :
-
-1. [Cliquez avec le bouton droit sur l’icône de Docker pour Windows](https://docs.docker.com/docker-for-windows/#docker-settings) dans la barre d’état système, puis cliquez sur **Paramètres**.
-
-1. [Cliquez sur la section Démon](https://docs.docker.com/docker-for-windows/#docker-daemon).
-
-1. [Cliquez sur le bouton **De base**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) pour basculer en mode **Avancé**.
-
-1. Ajoutez la propriété de tableau JSON suivante pour augmenter l’espace disque à 127 Go (ce qui est plus que suffisant pour exécuter Build Tools et avoir une marge d’espace supplémentaire en cas de besoin).
-
-   ```json
-   {
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Cette propriété vient s’ajouter à ce qui est déjà défini. Par exemple, après avoir appliqué ces modifications au fichier de configuration du démon par défaut, vous devez voir ce qui suit :
-
-   ```json
-   {
-     "registry-mirrors": [],
-     "insecure-registries": [],
-     "debug": true,
-     "experimental": true,
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Consultez [Docker Engine sur Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) pour obtenir d’autres options de configuration et conseils.
-
-1. Cliquez sur **Appliquer**.
-
-**Sur Windows Server 2016** :
-
-1. Arrêtez le service « docker » :
-
-   ```shell
-   sc.exe stop docker
-   ```
-
-1. À partir d’une invite de commandes avec élévation de privilèges, modifiez « %ProgramData%\Docker\config\daemon.json » (ou ce que vous avez spécifié sur `dockerd --config-file`).
-
-1. Ajoutez la propriété de tableau JSON suivante pour augmenter l’espace disque à 127 Go (ce qui est plus que suffisant pour exécuter Build Tools et avoir une marge d’espace supplémentaire en cas de besoin).
-
-   ```json
-   {
-     "storage-opts": [
-       "size=120G"
-     ]
-   }
-   ```
-
-   Cette propriété vient s’ajouter à ce qui est déjà défini. Consultez [Docker Engine sur Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) pour obtenir d’autres options de configuration et conseils.
- 
-1. Enregistrez et fermez le fichier.
-
-1. Démarrez le service « docker » :
-
-   ```shell
-   sc.exe start docker
-   ```
-
-## <a name="step-5-create-and-build-the-dockerfile"></a>Étape 5. Créer et générer le fichier Dockerfile
+## <a name="create-and-build-the-dockerfile"></a>Créer et générer le fichier Dockerfile
 
 Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre disque. Si le fichier se nomme simplement « Dockerfile », il est reconnu par défaut.
 
@@ -177,9 +89,9 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ```
 
    > [!WARNING]
-   > Si vous basez votre image directement sur microsoft/windowsservercore ou mcr.microsoft.com/windows/servercore (voir [Microsoft syndicates container catalog](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)) , l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Notez également que les images étiquetées avec la version 4.7.1 ou ultérieure sont susceptibles d’utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
+   > Si vous basez votre image directement sur microsoft/windowsservercore ou mcr.microsoft.com/windows/servercore (voir [Microsoft syndicates container catalog](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)) , l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Notez également que les images marquées avec la version 4.7.2 ou version ultérieure sont susceptibles d’utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
    >
-   > Quel que soit le produit, Visual Studio 2017 version 15.8 ou antérieure ne s’installe pas correctement sur mcr\.microsoft\.com\/windows\/servercore:1809 ou ultérieur. Aucune erreur ne s’affiche.
+   > Visual Studio 2017 version 15.8 ou version antérieure (quel que soit le produit) ne s’installe pas correctement sur mcr.microsoft.com/windows/servercore:1809 ou version ultérieure. Aucune erreur ne s’affiche.
    >
    > Consultez la page [Compatibilité des versions de conteneur Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) pour voir quelles versions de conteneur du système d’exploitation sont prises en charge sur les versions de système d’exploitation hôte, et la page [Problèmes connus liés aux conteneurs](build-tools-container-issues.md) pour les problèmes connus.
 
@@ -217,7 +129,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ```
 
    > [!WARNING]
-   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Notez également que les images étiquetées avec la version 4.7.1 ou ultérieure sont susceptibles d’utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
+   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Notez également que les images marquées avec la version 4.8 ou ultérieure sont susceptibles d’utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
    >
    > Consultez la page [Compatibilité des versions de conteneur Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) pour voir quelles versions de conteneur du système d’exploitation sont prises en charge sur les versions de système d’exploitation hôte, et la page [Problèmes connus liés aux conteneurs](build-tools-container-issues.md) pour les problèmes connus.
 
@@ -249,7 +161,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
 
    ::: moniker-end
 
-## <a name="step-6-using-the-built-image"></a>Étape 6. Utilisation de l’image générée
+## <a name="using-the-built-image"></a>Utilisation de l’image générée
 
 Maintenant que vous avez créé une image, vous pouvez l’exécuter dans un conteneur pour effectuer des générations automatisées et interactives. L’exemple utilise l’invite de commandes développeur. Votre chemin (PATH) et autres variables d’environnement sont donc déjà configurés.
 

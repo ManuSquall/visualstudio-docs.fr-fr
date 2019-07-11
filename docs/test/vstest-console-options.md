@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746917"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559613"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -44,7 +44,7 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/Framework: [*version de .Net Framework*]**|Version de .NET cible à utiliser pour l’exécution des tests.<br />Les valeurs valides sont Framework35, Framework40, Framework45 et FrameworkUap10.<br />Si la version cible de .Net Framework est spécifiée comme étant **Framework35**, les tests s’exécutent en « mode de compatibilité » CLR 4.0.<br />Exemple : `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|Exécutez les tests qui correspondent à l'expression donnée.<br /><Expression\> est au format <propriété\>=<valeur\>[\|<Expression\>].<br />Exemple : `/TestCaseFilter:"Priority=1"`<br />Exemple : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />L’option de ligne de commande **/TestCaseFilter** ne peut pas être utilisée avec l’option de ligne de commande **/Tests**. <br />Pour plus d’informations sur la création et l’utilisation d’expressions, consultez [Filtre TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Affiche les informations d’utilisation.|
-|**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests.<br />Exemple : pour stocker les résultats dans les fichiers de résultats des tests de Visual Studio (TRX), utilisez **/Logger:trx**.<br />Exemple : pour publier les résultats des tests dans Team Foundation Server, utilisez TfsPublisher :<br />**/logger:TfsPublisher;**<br />**Collection=<URL du projet\>;**<br />**BuildName=<nom de la build\>;**<br />**TeamProject=<nom du projet\>;**<br />**[;Platform=<par défaut « N’importe quelle UC »>]**<br />**[;Flavor=<par défaut « Debug »>]**<br />**[;RunTitle=<titre\>]**|
+|**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests.<br />Exemple : pour stocker les résultats dans les fichiers de résultats des tests de Visual Studio (TRX), utilisez **/Logger:trx**.<br />Exemple : pour publier les résultats des tests dans Team Foundation Server, utilisez TfsPublisher :<br />**/logger:TfsPublisher;**<br />**Collection=<URL du projet\>;**<br />**BuildName=<nom de la build\>;**<br />**TeamProject=<nom du projet\>;**<br />**[;Platform=\<devient par défaut « Tout UC »>]**<br />**[;Flavor=\<devient par défaut « Déboguer »>]**<br />**[;RunTitle=<titre\>]**|
 |**/ListTests:[*nom de fichier*]**|Répertorie les tests détectés dans le conteneur de tests donné.|
 |**/ListDiscoverers**|Répertorie les découvreurs de test installés.|
 |**/ListExecutors**|Répertorie les exécuteurs de test installés.|
