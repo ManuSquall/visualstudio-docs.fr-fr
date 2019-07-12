@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422730"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825684"
 ---
 # <a name="making-custom-projects-version-aware"></a>Prise en charge des versions dans les projets personnalisés
 Dans votre système de projet personnalisé, vous pouvez faire en sorte que les projets de ce type se chargent dans plusieurs versions de Visual Studio. Vous pouvez aussi empêcher les projets de ce type de se charger dans une version antérieure de Visual Studio. De même, vous pouvez permettre à un projet de s’identifier dans une version ultérieure dans le cas où il aurait besoin d’être réparé, converti ou désapprouvé.  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - La fonction LogMessage présente les niveaux d’erreur suivants :  
   
-    - 0 correspond aux informations dont vous voulez assurer le suivi.  
-  
-    - 1 correspond à un avertissement.  
-  
-    - 2 correspond à une erreur.  
-  
-    - 3 correspond au formateur de rapport. Une fois que votre projet est mis à niveau, consignez le mot « Converted » une seule fois, sans le traduire.  
+  - 0 correspond aux informations dont vous voulez assurer le suivi.  
+
+  - 1 correspond à un avertissement.  
+
+  - 2 correspond à une erreur.  
+
+  - 3 correspond au formateur de rapport. Une fois que votre projet est mis à niveau, consignez le mot « Converted » une seule fois, sans le traduire.  
   
 - Si un projet ne nécessite aucune réparation ou mise à niveau, Visual Studio ne génère le fichier journal que si le système de projet a consigné un avertissement ou une erreur pendant l’exécution de la méthode UpgradeProject_CheckOnly ou UpgradeProjectFlavor_CheckOnly.

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824839"
 ---
 # <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Afficher les heures de début, la durée et les heures de fin approximatives d'un événement dans une vue Chronologie et un affichage de grille. Le graphique des détails de chronologie peut afficher des périodes allant de 30 millisecondes à 30 secondes dans l'affichage de grille, selon l'état du zoom. Pour les valeurs de durée :  
   
-    - Les temps inclusifs représentent la durée de l'événement, les enfants de l'événement étant inclus. Cette valeur est affichée en premier dans l'affichage de grille.  
-  
-    - Les temps exclusifs représentent la durée de l'événement, les enfants de l'événement étant exclus. Cette valeur apparaît entre parenthèses dans l'affichage de grille.  
+  - Les temps inclusifs représentent la durée de l'événement, les enfants de l'événement étant inclus. Cette valeur est affichée en premier dans l'affichage de grille.  
+
+  - Les temps exclusifs représentent la durée de l'événement, les enfants de l'événement étant exclus. Cette valeur apparaît entre parenthèses dans l'affichage de grille.  
   
 - Développez un événement dans la hiérarchie pour afficher ses enfants. Les enfants d'un événement sont d'autres événements déclenchés par l'événement parent. Par exemple, un événement DOM peut avoir des écouteurs d'événements qui s'affichent comme étant des enfants. Un écouteur d'événements peut avoir d'autres événements qui en découlent, par exemple un événement de disposition.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Consultez les détails de chaque événement dans le volet d'informations (à droite). Les propriétés varient selon l'événement spécifique, comme le montrent les exemples suivants :  
   
-    - Pour les minuteries, les écouteurs d'événements (événements DOM) et les rappels d'images d'animation, la propriété **Fonction de rappel** fournit un lien vers l'emplacement du code source, avec le nom du gestionnaire d'événements ou de la fonction de rappel.  
-  
-    - Pour les minuteries, les écouteurs d'événements (événements DOM), les événements de disposition et les rappels d'images d'animation, un résumé coloré de l'événement sélectionné et de tous ses enfants s'affiche dans la section **Résumé du temps inclusif** (anneau coloré). Chaque tranche colorée de l'image représente un type d'événement. Les info-bulles fournissent le nom du type d'événement.  
-  
-    > [!TIP]
-    > Le graphique des détails de la chronologie et **Résumé du temps inclusif** peuvent vous aider à identifier des zones pour l'optimisation. Si l'une de ces vues affiche un grand nombre de petites tâches, l'événement peut être un candidat à l'optimisation. Par exemple, une application peut actualiser souvent les éléments DOM, ce qui provoque de grandes quantités d'événements de disposition et d'analyse HTML. Vous pouvez optimiser les performances lors du traitement par lots de ce travail.  
-  
+  - Pour les minuteries, les écouteurs d'événements (événements DOM) et les rappels d'images d'animation, la propriété **Fonction de rappel** fournit un lien vers l'emplacement du code source, avec le nom du gestionnaire d'événements ou de la fonction de rappel.  
+
+  - Pour les minuteries, les écouteurs d'événements (événements DOM), les événements de disposition et les rappels d'images d'animation, un résumé coloré de l'événement sélectionné et de tous ses enfants s'affiche dans la section **Résumé du temps inclusif** (anneau coloré). Chaque tranche colorée de l'image représente un type d'événement. Les info-bulles fournissent le nom du type d'événement.  
+
+  > [!TIP]
+  > Le graphique des détails de la chronologie et **Résumé du temps inclusif** peuvent vous aider à identifier des zones pour l'optimisation. Si l'une de ces vues affiche un grand nombre de petites tâches, l'événement peut être un candidat à l'optimisation. Par exemple, une application peut actualiser souvent les éléments DOM, ce qui provoque de grandes quantités d'événements de disposition et d'analyse HTML. Vous pouvez optimiser les performances lors du traitement par lots de ce travail.  
+
 ### <a name="FilterTimelineDetails"></a> Filtrer les détails de la chronologie  
  Vous pouvez filtrer l'affichage des détails de la chronologie pour un événement particulier en sélectionnant **Filtrer jusqu'à l'événement** à partir du menu contextuel d'un événement spécifique. Lorsque vous choisissez cette option, la chronologie et l'affichage de la grille s'étendent sur l'événement sélectionné. La sélection dans le graphique d'utilisation de l'UC s'étend également sur l'événement spécifique.  
   

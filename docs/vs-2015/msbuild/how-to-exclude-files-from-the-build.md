@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440062"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821612"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63440062"
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclusion d’un fichier ou d’un répertoire des entrées d’une génération  
- Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Exemple :  
+ Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Par exemple :  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -45,7 +45,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - ou  
+     \- ou -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - ou  
+     \- ou -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  

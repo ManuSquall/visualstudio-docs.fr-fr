@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715215"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821370"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 
@@ -75,13 +75,13 @@ Visual Studio fournit des outils pour simplifier l’utilisation des jeux de don
 
 - Utilisez le **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplit le groupe de données et les opérations de base de données (update, delete et ainsi de suite) à implémenter. Pour plus d'informations, voir ces rubriques :
 
-    - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
+  - [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
 
-    - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
+  - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
 
-    - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
+  - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 
 - Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] permet de [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

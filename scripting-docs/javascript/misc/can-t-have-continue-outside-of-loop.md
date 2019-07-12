@@ -14,12 +14,12 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 804c23c45379a10d91c2888ac321c18f2067a1e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946613"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825694"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Impossible d'utiliser une instruction 'continue' en dehors d'une boucle
 Vous avez tenté d’utiliser le **continuer** instruction en dehors d’une boucle. Le **continuer** instruction peut être utilisée uniquement dans le corps des éléments suivants :  
@@ -36,13 +36,13 @@ Vous avez tenté d’utiliser le **continuer** instruction en dehors d’une bou
   
 - Assurez-vous que le **continuer** instruction apparaît au sein des éléments suivants :  
   
-    - `do-while` boucle,  
-  
-    - `while` boucle,  
-  
-    - **pour** boucle,  
-  
-    - **pour/dans** boucle.  
+  - `do-while` boucle,  
+
+  - `while` boucle,  
+
+  - **pour** boucle,  
+
+  - **pour/dans** boucle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [continue (instruction)](../../javascript/reference/continue-statement-javascript.md)   

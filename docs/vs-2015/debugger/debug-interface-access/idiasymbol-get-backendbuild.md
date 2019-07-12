@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bd7a0bc75907d60a3ac3cbb8a571908631777e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430663"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64831733"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ HRESULT get_backEndBuild ( 
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Spécification|Description|  
+|Prérequis|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  

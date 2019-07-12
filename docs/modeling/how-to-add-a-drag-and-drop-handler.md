@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993482"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821939"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 
@@ -126,13 +126,13 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -Cette propriété porte les versions sérialisées des objets source, généralement dans plusieurs formats. Ses fonctions les plus utiles sont les suivantes :
 
-    - diagrameventargs.Data.getdataformats () - répertorie les formats dans lesquels vous pouvez décoder l’objet glissé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
+  - diagrameventargs.Data.getdataformats () - répertorie les formats dans lesquels vous pouvez décoder l’objet glissé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-    - `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
+  - `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Vous pouvez aussi transmettre des objets tels que les références de bus de modèles à partir de la source et dans votre propre format personnalisé. Pour plus d’informations, consultez [comment envoyer des références de Bus de modèle dans un glisser -déplacer](#to-send-an-object-from-a-source-dsl).
+    Vous pouvez aussi transmettre des objets tels que les références de bus de modèles à partir de la source et dans votre propre format personnalisé. Pour plus d’informations, consultez [comment envoyer des références de Bus de modèle dans un glisser -déplacer](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Utilisez cette propriété si vous souhaitez que les utilisateurs à faire glisser des éléments à partir d’un DSL ou d’un modèle UML. Un prototype de groupe d'éléments contient un ou plusieurs objets, les liens et les valeurs de leurs propriétés. Il est également utilisé dans les opérations de collage et lorsque vous ajoutez un élément à partir de la boîte à outils. Dans un prototype, les objets et leurs types sont identifiés par un GUID. Par exemple, ce code permet à l'utilisateur de déplacer les éléments de classe à partir d'un diagramme UML ou de l'Explorateur de modèles UML :
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnalisation du comportement de la copie](../modeling/customizing-copy-behavior.md)
-- [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)
+- [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
