@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685341"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821974"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Choix entre les VSPackages partagés et à versions gérées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Différentes versions de Visual Studio peuvent coexister sur le même ordinateur
   
 - Rendre votre VSPackage compatible avec plusieurs versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par conséquent, les deux méthodes d’exécution sont disponibles :  
   
-    - Limiter votre VSPackage à l’utilisation uniquement les fonctionnalités de la version la plus ancienne de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pris en charge.  
-  
-    - Programmer un VSPackage pour s’adapter à la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans lequel elle s’exécute. Ensuite, si les requêtes de services plus récentes échouer, votre VSPackage peut offrir d’autres services qui sont pris en charge dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  - Limiter votre VSPackage à l’utilisation uniquement les fonctionnalités de la version la plus ancienne de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pris en charge.  
+
+  - Programmer un VSPackage pour s’adapter à la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans lequel elle s’exécute. Ensuite, si les requêtes de services plus récentes échouer, votre VSPackage peut offrir d’autres services qui sont pris en charge dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Inscrivez votre VSPackage en conséquence. Pour plus d’informations, consultez [l’inscription de VSPackage](../extensibility/internals/vspackage-registration.md) et [l’inscription de VSPackage géré](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   

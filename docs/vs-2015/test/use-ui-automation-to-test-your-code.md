@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695304"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825543"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **Éditeur de code :**
 
-    - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Codage des actions et propriétés du contrôle d’IU](#actions) de cette rubrique.
+  - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Codage des actions et propriétés du contrôle d’IU](#actions) de cette rubrique.
 
-    - Après avoir créé un test codé de l'interface utilisateur, vous pouvez le modifier pour qu'il soit piloté par les données. Pour plus d’informations, consultez [Création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
+  - Après avoir créé un test codé de l'interface utilisateur, vous pouvez le modifier pour qu'il soit piloté par les données. Pour plus d’informations, consultez [Création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - **Aide au codage des tests codés de l’interface utilisateur :**
+  - **Aide au codage des tests codés de l’interface utilisateur :**
 
-        - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
+    - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
+    - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
 
-        - [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> Code généré
  Quand vous choisissez **Générer le code**, plusieurs segments de code sont créés :
@@ -435,7 +435,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - Pour spécifier la propriété du contrôle à définir, utilisez la chaîne appropriée de la classe `PropertyNames` comme premier paramètre de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, avec la valeur de propriété comme second paramètre.
 
-     Exemple :
+     Exemple :
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
@@ -469,7 +469,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Conseils
+### <a name="guidance"></a>Assistance
 - [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Tests unitaires : Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)
 
 - [Test de livraison continue avec Visual Studio 2012 – chapitre 5 : Automatisation des Tests système](http://go.microsoft.com/fwlink/?LinkID=255196)

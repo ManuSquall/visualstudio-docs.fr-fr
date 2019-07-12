@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698037"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821629"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ Le [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] est une 
   
 - [Fichier projet](#BKMK_ProjectFile)  
   
-    - [Propriétés](#BKMK_Properties)  
-  
-    - [Éléments](#BKMK_Items)  
-  
-    - [Tâches](#BKMK_Tasks)  
-  
-    - [Cibles](#BKMK_Targets)  
-  
+  - [Propriétés](#BKMK_Properties)  
+
+  - [Éléments](#BKMK_Items)  
+
+  - [Tâches](#BKMK_Tasks)  
+
+  - [Cibles](#BKMK_Targets)  
+
 - [Journaux de génération](#BKMK_BuildLogs)  
   
 - [Utilisation de MSBuild dans Visual Studio](#BKMK_VisualStudio)  

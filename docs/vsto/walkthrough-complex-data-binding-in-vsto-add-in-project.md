@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 546713cd77ca1477984120f9ef9a245c1c780eaf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981631"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824134"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes et des contrôles Windows Forms dans des projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à une feuille de calcul Microsoft Office Excel et les lier à des données au moment de l’exécution.
@@ -43,9 +43,9 @@ ms.locfileid: "62981631"
 
 - Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger le `AdventureWorksLT` de base de données à partir de la [site Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
-    - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
+  - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet
  La première étape consiste à créer un projet de complément VSTO Excel.
@@ -75,7 +75,7 @@ ms.locfileid: "62981631"
 
 5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)**.
+6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)** .
 
 7. Cliquez sur **Terminer**.
 
@@ -132,12 +132,12 @@ ms.locfileid: "62981631"
 
 - [Données dans les solutions Office](../vsto/data-in-office-solutions.md)
 - [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Guide pratique pour Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Guide pratique : Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Guide pratique pour Remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Guide pratique pour Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Guide pratique pour Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Guide pratique : Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Guide pratique : Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Guide pratique : Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Procédure pas à pas : Liaison de données simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Utiliser des fichiers de base de données locale dans la vue d’ensemble des solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835940"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824164"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs
   Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835940"
 
 - Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension étend la **connexions SharePoint** nœud de **Explorateur de serveurs** comme suit :
 
-    - L’extension ajoute un **galerie de composants WebPart** nœud sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants représentant chaque composant WebPart dans la galerie de composant WebPart sur le site.
+  - L’extension ajoute un **galerie de composants WebPart** nœud sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants représentant chaque composant WebPart dans la galerie de composant WebPart sur le site.
 
-    - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud sert de base pour les nœuds enfants sous le nouveau **galerie de composants WebPart** nœud. Le nouveau type de nœud WebPart affiche des informations dans le **propriétés** fenêtre sur le composant WebPart que le nœud représente.
+  - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud sert de base pour les nœuds enfants sous le nouveau **galerie de composants WebPart** nœud. Le nouveau type de nœud WebPart affiche des informations dans le **propriétés** fenêtre sur le composant WebPart que le nœud représente.
 
 - Création d’un package d’Extension Visual Studio (VSIX) pour déployer l’extension.
 

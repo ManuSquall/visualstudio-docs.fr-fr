@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86b3ebb0c931cec5dac40a980ba261c236307fe7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f701c1a2e31a52c05f0a7514c9d403522579e45
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328265"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825838"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
 
@@ -41,11 +41,11 @@ Le processus d’extension un **propriété du projet** boîte de dialogue est d
 
 - Un sous-type de projet peut déterminer le CATID approprié pour les divers objets extensibles du projet de base lors de l’exécution en récupérant les éléments suivants <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valeurs :
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Pour déterminer le CATID de la portée du projet, le sous-type de projet récupère les propriétés ci-dessus pour [VSITEMID. Racine](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) à partir de la `VSITEMID typedef`. Un sous-type de projet peut également contrôler les **Pages de propriétés** pages des boîtes de dialogue sont affichées pour le projet, configuration dépendante et indépendantes de la configuration. Certains sous-types de projet peut-être supprimer les pages intégrées et ajouter des pages spécifiques de sous-type de projet. Pour permettre cela, le projet de client managé appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> méthode pour les propriétés suivantes :
 

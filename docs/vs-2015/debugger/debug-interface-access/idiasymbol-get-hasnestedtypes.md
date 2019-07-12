@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc50ea9121ad974f27b670c3f01d5ff28398d211
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410447"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811697"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ HRESULT get_hasNestedTypes ( 
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Spécification|Description|  
+|Prérequis|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  

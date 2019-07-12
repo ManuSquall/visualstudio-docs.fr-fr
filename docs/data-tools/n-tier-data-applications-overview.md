@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566454"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821901"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
 *Applications multicouches* des applications de données sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.
@@ -49,11 +49,11 @@ Le *intermédiaire* est la couche de la couche de présentation et de données u
 
 - Composants d’accès aux données et logique, telle que la suivante :
 
-    - [Les TableAdapters](create-and-configure-tableadapters.md) et [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [Les TableAdapters](create-and-configure-tableadapters.md) et [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes d’entité.
+  - Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes d’entité.
 
-    - Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.
+  - Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.
 
@@ -62,7 +62,7 @@ L’illustration suivante montre les fonctionnalités et technologies qui sont d
 En règle générale, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.
 
 ## <a name="data-tier"></a>Couche Données
-Le *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant SQL Server).
+La *couche Données* correspond au serveur stockant les données d’une application (par exemple, dans le cas d’un serveur exécutant SQL Server).
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche données d’une application multiniveau.
 

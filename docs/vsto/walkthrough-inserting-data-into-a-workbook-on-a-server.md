@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440853"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826132"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procédure pas à pas : Insérer des données dans un classeur sur un serveur
   Cette procédure pas à pas montre comment insérer des données dans un jeu de données est mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -54,9 +54,9 @@ ms.locfileid: "63440853"
 
 - Accès à une instance en cours d’exécution de Microsoft SQL Server ou Microsoft SQL Server Express à laquelle la base de données AdventureWorksLT attachée à. Vous pouvez télécharger la base de données AdventureWorksLT à partir de la [site Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
-    - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
+  - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Créez un projet de bibliothèque de classes qui définit un jeu de données
  Pour utiliser le même jeu de données dans un projet de classeur Excel et une application console, vous devez définir le jeu de données dans un assembly distinct qui est référencé par ces deux projets. Pour cette procédure pas à pas, définissez le jeu de données dans un projet de bibliothèque de classes.
@@ -104,7 +104,7 @@ ms.locfileid: "63440853"
 
 6. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-7. Dans le **choisir vos objets de base de données** page, développez **Tables** et sélectionnez **Product (SalesLT)**.
+7. Dans le **choisir vos objets de base de données** page, développez **Tables** et sélectionnez **Product (SalesLT)** .
 
 8. Cliquez sur **Terminer**.
 

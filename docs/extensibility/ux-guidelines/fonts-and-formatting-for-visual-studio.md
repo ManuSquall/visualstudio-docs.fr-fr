@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335492"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824329"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -328,11 +328,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :
 
-- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
+- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
 
-- **En-têtes de colonne.** Exemple : « Réponse système »
+- **En-têtes de colonne.** Exemple : « Réponse système »
 
-- **Éléments de menu.** Exemple : « Enregistrer tout »
+- **Éléments de menu.** Exemple : « Enregistrer tout »
 
   Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :
 
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :
 
-1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
+1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
 
-2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
+2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - En-têtes supérieure (police d’environnement x 155 % ou version supérieure) peuvent être en couleur à ces fins :
 
-    - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
+  - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
 
-    - Pour attirer l’attention sur une zone spécifique
+  - Pour attirer l’attention sur une zone spécifique
 
-    - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
+  - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
 
 - Couleur dans les en-têtes doit tirer parti de Visual Studio marque couleurs existantes, principalement le principal violet, #FF68217A.
 

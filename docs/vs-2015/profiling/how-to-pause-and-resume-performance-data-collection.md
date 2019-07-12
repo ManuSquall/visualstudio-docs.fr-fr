@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432633"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826144"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte de données Performance
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte des données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
@@ -34,11 +34,11 @@ ms.locfileid: "63432633"
   
 - Dans la page de session de profilage :  
   
-    - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.  
-  
-    - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.  
-  
-    - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.  
+  - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.  
+
+  - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.  
+
+  - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   

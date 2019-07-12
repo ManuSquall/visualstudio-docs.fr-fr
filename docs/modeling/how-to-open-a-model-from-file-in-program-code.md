@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747501"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821914"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procédure : Ouvrir un modèle depuis un fichier dans le code du programme
 
@@ -39,7 +39,7 @@ Ajoutez ces références à votre projet d’application Visual Studio :
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    - Si vous ne voyez pas cette opération sous le **.NET** onglet dans le **ajouter des références** boîte de dialogue, cliquez sur le **Parcourir** onglet et accédez à `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+  - Si vous ne voyez pas cette opération sous le **.NET** onglet dans le **ajouter des références** boîte de dialogue, cliquez sur le **Parcourir** onglet et accédez à `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
 - Votre assembly DSL, vous trouverez sous le dossier bin de votre projet DSL. Son nom est généralement sous la forme : *Votresociété*. *VotreProjet*`.Dsl.dll`.
 

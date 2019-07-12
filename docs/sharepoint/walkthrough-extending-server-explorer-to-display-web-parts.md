@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430338"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821988"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts
   Dans Visual Studio, vous pouvez utiliser la **connexions SharePoint** nœud de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la galerie de composants WebPart sur chacune connectée site SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430338"
 
 - Création d’une extension Visual Studio qui étend **Explorateur de serveurs** comme suit :
 
-    - L’extension ajoute un **galerie de composants WebPart** nœud sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants représentant chaque composant WebPart dans la galerie de composant WebPart sur le site.
+  - L’extension ajoute un **galerie de composants WebPart** nœud sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants représentant chaque composant WebPart dans la galerie de composant WebPart sur le site.
 
-    - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud sert de base pour les nœuds enfants sous le nouveau **galerie de composants WebPart** nœud. Le nouveau type de nœud WebPart affiche des informations dans le **propriétés** fenêtre sur le composant WebPart qu’il représente. Le type de nœud inclut également un élément de menu contextuel personnalisé que vous pouvez utiliser comme point de départ pour effectuer d’autres tâches liées au composant WebPart.
+  - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud sert de base pour les nœuds enfants sous le nouveau **galerie de composants WebPart** nœud. Le nouveau type de nœud WebPart affiche des informations dans le **propriétés** fenêtre sur le composant WebPart qu’il représente. Le type de nœud inclut également un élément de menu contextuel personnalisé que vous pouvez utiliser comme point de départ pour effectuer d’autres tâches liées au composant WebPart.
 
 - Créez deux commandes SharePoint personnalisés qui appelle l’assembly d’extension. Les commandes SharePoint sont des méthodes qui peuvent être appelées par les assemblys d’extension à utiliser des API dans le modèle objet serveur pour SharePoint. Dans cette procédure pas à pas, vous créez des commandes permettant de récupérer les informations de composant WebPart à partir du site SharePoint local sur l’ordinateur de développement. Pour plus d’informations, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430338"
 
     2. Dans le **ajouter une connexion SharePoint** boîte de dialogue, entrez l’URL pour le site SharePoint auquel vous souhaitez vous connecter, puis choisissez le **OK** bouton.
 
-         Pour spécifier le site SharePoint sur votre ordinateur de développement, entrez **http://localhost**.
+         Pour spécifier le site SharePoint sur votre ordinateur de développement, entrez **http://localhost** .
 
 3. Développez le nœud de connexion de site (qui affiche l’URL de votre site), puis développez un nœud de site enfant (par exemple, **Site d’équipe**).
 

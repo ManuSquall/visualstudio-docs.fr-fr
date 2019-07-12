@@ -8,18 +8,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335384"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824562"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Outils d’évaluation pour Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Liste de vérification de savoir-faire pour Visual Studio
  Utilisez cette liste pour évaluer la qualité de l’expérience utilisateur pour plus d’informations visuel et d’interaction.
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
 
 - Vérifiez que toutes les commandes entraînent des commentaires qui indique aux utilisateurs que leurs commandes ont été effectués.
 
@@ -49,11 +49,11 @@ ms.locfileid: "66335384"
 
 - Vérifiez que les boutons, des commandes et des liens de commande qui lancent l’interface utilisateur pour capturer une entrée d’utilisateur se terminent dans les points de suspension **[...]** .
 
-     Exemples :
+  Exemples :
 
-    - Un **[Avancé...]**  bouton sur une boîte de dialogue.
+  - Un **[Avancé...]**  bouton sur une boîte de dialogue.
 
-    - Les options de commande sous le menu Outils (**Outils > Options**) doit d’obtenir les points de suspension, parce que le lancement de la boîte de dialogue est l’objectif de la commande.
+  - Les options de commande sous le menu Outils (**Outils > Options**) doit d’obtenir les points de suspension, parce que le lancement de la boîte de dialogue est l’objectif de la commande.
 
 - Vérifiez que l’interface utilisateur ne contient aucun abréviations, à l’exception des termes du contrat standard du secteur. Par exemple, HTML, ni TCP/IP devez explicité, bien que l’insuffisance de mémoire (mémoire insuffisante) et les informations d’identification personnelle (informations d’identification personnelle) doivent.
 
@@ -123,7 +123,7 @@ ms.locfileid: "66335384"
 
 ### <a name="control-standards"></a>Normes de contrôle
 
-#### <a name="general"></a>Général
+#### <a name="general"></a>Généralités
 
 - Vérifiez que, lorsque cela est possible, les valeurs par défaut adéquates pour accélérer l’interaction utilisateur et diriger les utilisateurs vers un résultat sans échec ou courantes.
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335384"
 
 - Si le champ est un champ obligatoire qui doit être identifié en tant que tel, vérifiez :
 
-    - que l’arrière-plan est défini sur `Environment.ControlEditRequiredBackground` et premier plan est défini sur `Environment.ControlEditRequiredHintText`
+  - que l’arrière-plan est défini sur `Environment.ControlEditRequiredBackground` et premier plan est défini sur `Environment.ControlEditRequiredHintText`
 
-    - texte d’indicateur dans le contrôle qui apparaît sous la forme **»\<requis > »**
+  - texte d’indicateur dans le contrôle qui apparaît sous la forme **»\<requis > »**
 
 #### <a name="button-controls"></a>Contrôles boutons
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335384"
 
 - Vérifiez que les couleurs de Visual Studio utilisées sont :
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Vérifiez que des liens hypertexte s’affichent en bleus avec aucun trait de soulignement, sauf si incorporé dans un paragraphe.
 

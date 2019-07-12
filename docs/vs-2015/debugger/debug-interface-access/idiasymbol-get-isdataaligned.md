@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421997"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64810732"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ HRESULT get_isDataAligned(
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Spécification|Description|  
+|Prérequis|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
 |Version :|DIA SDK 8.0|  

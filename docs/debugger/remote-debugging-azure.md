@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407786"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824435"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio
 
@@ -51,7 +51,7 @@ Visual Studio 2019 est nécessaire pour suivre les étapes indiquées dans cet a
 Visual Studio 2017 est nécessaire pour suivre les étapes indiquées dans cet article.
 ::: moniker-end
 
-### <a name="network-requirements"></a>Configuration réseau requise
+### <a name="network-requirements"></a>Configuration requise pour le réseau
 
 Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -60,10 +60,10 @@ Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en cha
 1. Créez une nouvelle application ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, tapez **Ctrl + Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **modèles**, puis choisissez **créer la nouvelle Application de Web ASP.NET Core** . Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Ensuite, choisissez **l’Application Web (Model-View-Controller)**, puis choisissez **créer**.
+    Dans Visual Studio 2019, tapez **Ctrl + Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **modèles**, puis choisissez **créer la nouvelle Application de Web ASP.NET Core** . Dans la boîte de dialogue qui s’affiche, nommez le projet **MyASPApp**, puis choisissez **créer**. Ensuite, choisissez **l’Application Web (Model-View-Controller)** , puis choisissez **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans Visual Studio 2017, choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**. Dans la section modèles ASP.NET Core, sélectionnez **l’Application Web (Model-View-Controller)**. Assurez-vous que ASP.NET Core 2.1 est sélectionné, qui **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.
+    Dans Visual Studio 2017, choisissez **fichier > Nouveau > projet**, puis sélectionnez **Visual C# > Web > Application Web ASP.NET Core**. Dans la section modèles ASP.NET Core, sélectionnez **l’Application Web (Model-View-Controller)** . Assurez-vous que ASP.NET Core 2.1 est sélectionné, qui **activer la prise en charge Docker** n’est pas sélectionnée et que **authentification** a la valeur **aucune authentification**. Nommez le projet **MyASPApp**.
     ::: moniker-end
 
 1. Ouvrez le fichier About.cshtml.cs et définissez un point d’arrêt dans le `OnGet` (méthode) (dans les modèles plus anciens, open Homecontrôleur.cs au lieu de cela et définir le point d’arrêt dans le `About()` méthode).
@@ -108,9 +108,9 @@ Cet article contient des instructions sur la configuration d’une configuration
 
 * Si vous souhaitez une aide pour vous assurer que votre application est configurée, déployé et fonctionne correctement dans IIS afin que vous puissiez déboguer, suivez les étapes dans cette rubrique.
 
-    * Avant de commencer, suivez les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Avant de commencer, suivez les étapes décrites dans [installer et exécuter IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le [corriger port](#bkmk_openports) pour le débogueur distant (4024 ou 4022). De cette façon, vous ne devrez pas ouvrir ultérieurement.
+  * Lorsque vous ouvrez le port 80 dans le groupe de sécurité réseau, vous devez également ouvrir le [corriger port](#bkmk_openports) pour le débogueur distant (4024 ou 4022). De cette façon, vous ne devrez pas ouvrir ultérieurement.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Mettre à jour les paramètres de sécurité de navigateur sur Windows Server
 
@@ -251,7 +251,7 @@ Téléchargez la version des outils à distance qui correspond à votre version 
 
 7. Cliquez sur **Attacher**.
 
-8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
+8. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>** .
 
     La page web ASP.NET doit s’afficher.
 9. Dans l’application ASP.NET en cours d’exécution, cliquez sur le lien vers le **sur** page.

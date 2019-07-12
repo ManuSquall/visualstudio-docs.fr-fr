@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342199"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824938"
 ---
 # <a name="command-implementation"></a>Implémentation de la commande
 Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) à l’aide de ce qui suit <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicateurs :
 
-    - `OLECMDF_SUPPORTED`: La commande est prise en charge.
+  - `OLECMDF_SUPPORTED`: La commande est prise en charge.
 
-    - `OLECMDF_INVISIBLE`: La commande ne doit pas être visible.
+  - `OLECMDF_INVISIBLE`: La commande ne doit pas être visible.
 
-    - `OLECMDF_LATCHED`: La commande est activée et a été activée.
+  - `OLECMDF_LATCHED`: La commande est activée et a été activée.
 
-    - `OLECMDF_ENABLED`: La commande est activée.
+  - `OLECMDF_ENABLED`: La commande est activée.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être masquée s’il apparaît dans un menu contextuel.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être masquée s’il apparaît dans un menu contextuel.
 
-    - `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)
+  - `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)
 
 - Si la commande a été définie dans le *.vsct* de fichiers avec le `TextChanges` indicateur, définissez les paramètres suivants :
 
-    - Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.
+  - Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.
 
-    - Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.
+  - Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.
 
 En outre, assurez-vous que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.
 

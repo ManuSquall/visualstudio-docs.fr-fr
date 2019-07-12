@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401095"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825634"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio inclut de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -29,9 +29,9 @@ ms.locfileid: "66401095"
 
 - Création d’une extension Visual Studio qui exécute deux tâches principales :
 
-    - L’extension définit une étape de déploiement personnalisée pour mettre à niveau des solutions SharePoint.
+  - L’extension définit une étape de déploiement personnalisée pour mettre à niveau des solutions SharePoint.
 
-    - L’extension crée une extension de projet qui définit une nouvelle configuration de déploiement, qui est un ensemble d’étapes de déploiement exécutées pour un projet donné. La nouvelle configuration de déploiement inclut l’étape de déploiement personnalisée et plusieurs étapes de déploiement intégrées.
+  - L’extension crée une extension de projet qui définit une nouvelle configuration de déploiement, qui est un ensemble d’étapes de déploiement exécutées pour un projet donné. La nouvelle configuration de déploiement inclut l’étape de déploiement personnalisée et plusieurs étapes de déploiement intégrées.
 
 - Créez deux commandes SharePoint personnalisés qui appelle l’assembly d’extension. Les commandes SharePoint sont des méthodes qui peuvent être appelées par les assemblys d’extension à utiliser des API dans le modèle objet serveur pour SharePoint. Pour plus d’informations, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -290,7 +290,7 @@ ms.locfileid: "66401095"
 
     1. Prénom
 
-    2. Société
+    2. Company
 
     3. Téléphone professionnel
 

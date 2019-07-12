@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48379cbc9ba2fa5aa663d1cce48236aecd154124
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 190a6e890ce31ce2aa66ff474bb9e4b1976a6c46
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697373"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824011"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Erreur : Le débogage en mode mixte des processus x64 est pris en charge uniquement quand vous utilisez Microsoft .NET Framework 4 ou ultérieur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Pour déboguer du code natif et managé mixte dans un processus 64 bits, vous d
   
 - Effectuez l’une des opérations suivantes :  
   
-    - Effectuez une mise à niveau du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] vers la version 4.  
-  
-    - Générez une version 32 bits de votre application pour le débogage.  
+  - Effectuez une mise à niveau du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] vers la version 4.  
+
+  - Générez une version 32 bits de votre application pour le débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer les outils de contrôle à distance sur le périphérique](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
