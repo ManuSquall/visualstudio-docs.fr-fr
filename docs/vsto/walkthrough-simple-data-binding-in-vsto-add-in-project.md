@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981078"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825219"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : Liaison de données simple dans un projet de complément VSTO
 
@@ -47,9 +47,9 @@ Pour exécuter cette procédure pas à pas, vous devez disposer des composants s
 
 - Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger le `AdventureWorksLT` de base de données à partir de la [site Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
-    - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Pour attacher une base de données à l’aide de SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : Attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
+  - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : Attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet
 
@@ -83,7 +83,7 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Customer (SalesLT)**.
+6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Customer (SalesLT)** .
 
 7. Cliquez sur **Terminer**.
 
@@ -157,8 +157,8 @@ Lorsque vous ouvrez Word, le contrôle de contenu affiche des données du datase
 - [Guide pratique pour Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Guide pratique pour Remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Guide pratique pour Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Guide pratique : Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Guide pratique : Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 - [Guide pratique pour Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Procédure pas à pas : Liaison de données simple dans un projet au niveau du document](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

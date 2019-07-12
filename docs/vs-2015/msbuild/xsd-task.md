@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114962"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826246"
 ---
 # <a name="xsd-task"></a>Tâche XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 - **GenerateFromSchema**  
   
-     Paramètre **String** facultatif.  
-  
-     Indique les types qui sont générés à partir du schéma spécifié.  
-  
-     Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option XSD.  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  Paramètre **String** facultatif.  
+
+  Indique les types qui sont générés à partir du schéma spécifié.  
+
+  Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option XSD.  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **Language**  
   

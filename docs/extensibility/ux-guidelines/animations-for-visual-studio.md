@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337022"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825241"
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 ## <a name="animation-fundamentals"></a>Principes de base de l’animation
@@ -25,13 +25,13 @@ Suivez ces règles pour garantir des styles d’animation conviviale et cohéren
 
 - **Minutage et vitesse sont importantes** pour vous assurer que l’impression de transitions naturelle et rapide :
 
-    - Effectuer des transitions animées au sein d’une demi-seconde (500 millisecondes).
+  - Effectuer des transitions animées au sein d’une demi-seconde (500 millisecondes).
 
-    - Les animations qui seraient produisent fréquemment doivent être suffisamment rapide pour qu’elles n’interrompront pas le flux de travail de l’utilisateur. Regardez l’animation dans une boucle et régler la durée jusqu'à ce qu’il semble correct.
+  - Les animations qui seraient produisent fréquemment doivent être suffisamment rapide pour qu’elles n’interrompront pas le flux de travail de l’utilisateur. Regardez l’animation dans une boucle et régler la durée jusqu'à ce qu’il semble correct.
 
-    - Animations ne doit pas être tellement rapide ou souffrent qu’il est difficile à comprendre, mais pas tellement lent qu’elle effectue un impatiente la transition se terminer.
+  - Animations ne doit pas être tellement rapide ou souffrent qu’il est difficile à comprendre, mais pas tellement lent qu’elle effectue un impatiente la transition se terminer.
 
-    - Utilisez le minutage de variable pour mettre en évidence d’importance. Par exemple, lors de la navigation dans une séquence d’éléments sur un diagramme de classes, permet d’accélérer le déplacement entre les transitions entre les éléments puis ralentir pour vous concentrer sur les éléments importants.
+  - Utilisez le minutage de variable pour mettre en évidence d’importance. Par exemple, lors de la navigation dans une séquence d’éléments sur un diagramme de classes, permet d’accélérer le déplacement entre les transitions entre les éléments puis ralentir pour vous concentrer sur les éléments importants.
 
 - **Utiliser l’accélération non linéaire progressive** d’un état à un autre, donner une idée de mouvement calme et naturelle.
 
@@ -47,13 +47,13 @@ Suivez ces règles pour garantir des styles d’animation conviviale et cohéren
 
 - **Lors de l’affichage de progression ou l’état** via animation :
 
-    - Arrêter montrant le mouvement de progression lorsque le processus sous-jacent n’est pas avancer.
+  - Arrêter montrant le mouvement de progression lorsque le processus sous-jacent n’est pas avancer.
 
-    - Distinguer les processus indéterminés des processus déterminées.
+  - Distinguer les processus indéterminés des processus déterminées.
 
-    - Vérifiez qu’une animation identifiables États d’exécution et l’échec.
+  - Vérifiez qu’une animation identifiables États d’exécution et l’échec.
 
-    - Réduire l’utilisation des animations d’effet qui indiquent l’état et vous assurer qu’une valeur réelle en fournissant des informations supplémentaires d’utilisation réelle. En cas d’urgence et les changements d’état temporaires sont des exemples
+  - Réduire l’utilisation des animations d’effet qui indiquent l’état et vous assurer qu’une valeur réelle en fournissant des informations supplémentaires d’utilisation réelle. En cas d’urgence et les changements d’état temporaires sont des exemples
 
 #### <a name="animation-donts"></a>Avertissements d’animation :
 
@@ -84,7 +84,7 @@ Dans l’interface utilisateur de Visual Studio, l’animation fonctionne unique
 
  Animations de l’interface utilisateur fonctionnent généralement de quatre manières : visualiser, d’attirer l’attention, de simuler, et les heures de réponse/indicateurs de progression.
 
-#### <a name="visualize"></a>Visualiser
+#### <a name="visualize"></a>Visualisation
 Animation peut mettre l’accent sur la nature en trois dimensions d’objets et faciliter aux utilisateurs de visualiser leur structure spatiale. Pour ce faire, l’animation ont besoin pour mettre en place l’objet dans un cercle complet, lente de l’activer dans les deux sens, ou mettre l’objet plus proche et légèrement augmenter sa taille pour mettre en évidence une substitution ou le focus.
 
 Bien que les objets en trois dimensions peuvent être déplacés avec le contrôle utilisateur, le concepteur doit déterminer à l’avance (par programmation ou manuellement) comment optimal animer un mouvement qui fournit une présentation optimale de l’objet. Cette programmées animation peut ensuite être activée par l’utilisateur en plaçant le curseur sur l’objet, tandis que les mouvements contrôlée par l’utilisateur nécessitent l’utilisateur à comprendre comment manipuler l’objet. Limiter le déplacement à un seul axe ou une orientation à la fois. mettre à l’échelle, faire pivoter, ou traduire, mais ne le faites pas plusieurs fois simultanément.
@@ -106,7 +106,7 @@ Illustrer des informations complexes et de variable :
 
 - Représentant les modifications au fil du temps à l’aide de curseurs de temps, les roues jog et shuttle et contrôles de transport (lecture, arrêt et pause)
 
-##### <a name="relationships"></a>Relations
+##### <a name="relationships"></a>Relationships
 
 - Illustrer comment les éléments sont liés entre eux ou les éléments associés à un élément donné
 
@@ -126,7 +126,7 @@ Illustrer des informations complexes et de variable :
 
 - Progression
 
-- Erreurs
+- Errors
 
 ##### <a name="structure"></a>Structure
 
@@ -142,7 +142,7 @@ Illustrer des informations complexes et de variable :
 
 - Défiler les images
 
-##### <a name="time"></a>réflexion
+##### <a name="time"></a>Temps
 
 - Afficher les modifications dans le temps, d’intervalle de temps et de capture vidéo
 
@@ -195,7 +195,7 @@ Indicateurs de progression ont quelques avantages importants :
 
 ## <a name="BKMK_AnimationPatterns"></a> Modèles d’animation
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
 Les animations dans Visual Studio sont conçues pour répondre à une fonction spécifique sans affecter négativement la productivité des utilisateurs. En règle générale, les animations dans Visual Studio doivent être :
 
 - Petites et discrète
@@ -327,7 +327,7 @@ En tant qu’une transition animée lorsqu’un élément d’interface utilisat
 
 - Accélération de style : Sinus InOut
 
-##### <a name="example"></a>Exemple
+##### <a name="example"></a>Exemples
 Réorganisation de l’onglet
 
 #### <a name="rotate"></a>Faire pivoter

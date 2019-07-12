@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692554"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825896"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET fournit des méthodes simples pour travailler avec des données XML. Dan
   
 - Deux <xref:System.Windows.Forms.Button> contrôles.  
   
-    - Un bouton lit le fichier XML dans le jeu de données et l’affiche dans le <xref:System.Windows.Forms.DataGridView> contrôle.  
-  
-    - Un deuxième bouton extrait le schéma du jeu de données et via un <xref:System.IO.StringWriter> affiche dans le <xref:System.Windows.Forms.TextBox> contrôle.  
+  - Un bouton lit le fichier XML dans le jeu de données et l’affiche dans le <xref:System.Windows.Forms.DataGridView> contrôle.  
+
+  - Un deuxième bouton extrait le schéma du jeu de données et via un <xref:System.IO.StringWriter> affiche dans le <xref:System.Windows.Forms.TextBox> contrôle.  
   
 #### <a name="to-add-controls-to-the-form"></a>Pour ajouter des contrôles au formulaire  
   

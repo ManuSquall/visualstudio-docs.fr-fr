@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421827"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823957"
 ---
 # <a name="just-my-code"></a>Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 ### <a name="BKMK_NET_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans du code non-utilisateur, le débogueur s'arrête à la ligne de code utilisateur où lequel l'exception a été générée.  
   
- Si les exceptions de première chance sont activées pour l'exception, la ligne de code utilisateur est mise en surbrillance en vert. La pile des appels affiche un cadre annoté intitulé **[Code externe]**.  
+ Si les exceptions de première chance sont activées pour l'exception, la ligne de code utilisateur est mise en surbrillance en vert. La pile des appels affiche un cadre annoté intitulé **[Code externe]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++  
   
@@ -122,10 +122,10 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Fonction|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|  
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
-|`Module`|Optionnel. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
-|`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> -   `NoStepInto`  : indique au débogueur d’ignorer la fonction concernée.<br />-   `StepInto`  : indique au débogueur d’ignorer les fonctions concernées, substitution de n’importe quel autre `NoStepInto` pour les fonctions de mise en correspondance.|  
+|Fonction|Requis. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|  
+|`Name`|Requis. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|  
+|`Module`|facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
+|`Action`|Requis. Une des valeurs suivantes (respectant la casse) :<br /><br /> -   `NoStepInto`  : indique au débogueur d’ignorer la fonction concernée.<br />-   `StepInto`  : indique au débogueur d’ignorer les fonctions concernées, substitution de n’importe quel autre `NoStepInto` pour les fonctions de mise en correspondance.|  
   
 ### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel  
  Vous pouvez spécifier des modules, des fichiers sources et des fonctions à traiter comme du code non-utilisateur dans les piles des appels en les spécifiant dans des fichiers `*.natjmc`.  
@@ -160,21 +160,21 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple :<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indique au débogueur de traiter tous les modules de `\3rdParty\UtilLibs` sur n'importe quel lecteur comme du code externe.|  
-|`Company`|Optionnel. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
+|`Name`|Requis. Chemin d’accès complet du ou des modules. Vous pouvez utiliser les caractères génériques Windows `?` (zéro ou un caractère) et `*` (zéro ou plusieurs caractères). Par exemple,<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indique au débogueur de traiter tous les modules de `\3rdParty\UtilLibs` sur n'importe quel lecteur comme du code externe.|  
+|`Company`|facultatif. Le nom de la société qui publie le module incorporé dans le fichier exécutable. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre les modules.|  
   
  **Attributs des éléments File**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Chemin d’accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
+|`Name`|Requis. Chemin d’accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
   
  **Attributs des éléments Function**  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Le nom complet de la fonction à traiter comme du code externe.|  
-|`Module`|Optionnel. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
+|`Name`|Requis. Le nom complet de la fonction à traiter comme du code externe.|  
+|`Module`|facultatif. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
 ## <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
@@ -222,9 +222,9 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 - Si le mot clé `debugger` est rencontré dans :  
   
-    - **LibraryCode** code, le débogueur s’arrête toujours.  
-  
-    - **UnrelatedCode** code, le débogueur ne s’arrête.  
+  - **LibraryCode** code, le débogueur s’arrête toujours.  
+
+  - **UnrelatedCode** code, le débogueur ne s’arrête.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans :  

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824848"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
   
 - Dans le concepteur XAML, effectuez l'une des opérations suivantes :  
   
-    - Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur Entrée).  
-  
-    - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.  
-  
-    - Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.  
+  - Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur Entrée).  
+
+  - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.  
+
+  - Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Modification de l'ordre de superposition des éléments  
  Lorsque deux éléments de la planche graphique sont dans le concepteur XAML, un élément apparaît devant l'autre dans l'ordre de superposition. Sauf si la propriété **ZIndex** d’un élément est définie, l’élément au premier plan se trouve en bas de la liste des éléments dans la fenêtre Structure du document. Quand vous insérez un élément dans une page, un formulaire ou un conteneur de disposition, l'élément est automatiquement placé devant les autres éléments dans l'élément de conteneur actif. Pour modifier l’ordre des éléments, vous pouvez utiliser les commandes **Ordre** ou faire glisser les éléments dans l’arborescence d’objets de la fenêtre Structure du document.  

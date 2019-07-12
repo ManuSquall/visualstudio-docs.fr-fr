@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424921"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823443"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
   
 - Dans Visual Studio, ouvrez le projet sans la mise à niveau.  
   
-    - Pour exécuter le projet, sélectionnez la touche F5.  
-  
-    - Pour modifier la base de données, ouvrez le fichier .mdf dans **l’Explorateur de solutions**, puis développez le nœud dans **Explorateur de serveurs** pour travailler avec votre base de données.  
+  - Pour exécuter le projet, sélectionnez la touche F5.  
+
+  - Pour modifier la base de données, ouvrez le fichier .mdf dans **l’Explorateur de solutions**, puis développez le nœud dans **Explorateur de serveurs** pour travailler avec votre base de données.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Pour rendre SQL Server Express le moteur de base de données par défaut  
   

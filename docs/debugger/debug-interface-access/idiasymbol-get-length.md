@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400621"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64858110"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 Récupère le nombre de bits ou octets de mémoire utilisée par l’objet représenté par ce symbole.
@@ -44,7 +44,7 @@ HRESULT get_length ( 
 ## <a name="remarks"></a>Notes
  Si le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; sinon, la longueur est en octets pour tous les autres types d’emplacement.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 ```C++
 IDiaSymbol* pSymbol;
@@ -54,7 +54,7 @@ pSymbol->get_length( &length );
 
 ## <a name="requirements"></a>Configuration requise
 
-|Spécification|Description|
+|Prérequis|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
 |Version :|DIA SDK v7.0|

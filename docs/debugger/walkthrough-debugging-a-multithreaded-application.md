@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406937"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821587"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Afficher les threads dans le débogueur Visual Studio à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
 Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l’application que vous déboguez. Pour obtenir des instructions sur la façon d’utiliser le **Threads** fenêtre, consultez [procédure pas à pas : Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).
@@ -40,15 +40,15 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
 
 - **Thread actuel**: Dans cet article sans étiquette, une flèche jaune indique que le thread actuel. Un contour de flèche indique le contexte actuel du débogueur pour un thread non actuel.
 
-- **ID**: Affiche le numéro d’identification pour chaque thread.
+- **ID** : Affiche le numéro d’identification pour chaque thread.
 
 - **ID géré**: Affiche les numéros d’identification managés des threads managés.
 
 - **Catégorie**: Affiche la catégorie de threads comme threads d’interface utilisateur, gestionnaires d’appel de procédure distante ou threads de travail. Une catégorie spéciale identifie le thread principal de l'application.
 
-- **Nom**: Identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.
+- **Nom** : Identifie chaque thread par son nom, le cas échéant, ou en tant que \<sans nom >.
 
-- **emplacement**: Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.
+- **Emplacement** : Indique où le thread est en cours d’exécution. Vous pouvez développer cet emplacement de façon à afficher l’ensemble de la pile des appels du thread.
 
 - **Priorité**: Une colonne avancée (masquée par défaut) affiche la priorité ou précédence que le système a assignée à chaque thread.
 
@@ -101,9 +101,9 @@ Une flèche jaune indique le thread actuel (et l’emplacement du pointeur d’e
 
 - Suivre une des étapes suivantes :
 
-    - Double-cliquez sur un thread.
+  - Double-cliquez sur un thread.
 
-    - Cliquez sur un thread et sélectionnez **commutateur à Thread**.
+  - Cliquez sur un thread et sélectionnez **commutateur à Thread**.
 
 ## <a name="group-and-sort-threads"></a>Regrouper et trier des threads
  Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que **Thread de travail** ou **Threads sans indicateur**, ainsi qu’un contrôle d’arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d’un groupe, utilisez le contrôle d’arborescence pour réduire ce groupe.

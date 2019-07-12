@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117653"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823539"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
   
 - Débogage du code LINQ dans certaines circonstances. Pour plus d’informations, consultez [Débogage LINQ](../debugger/debugging-linq.md).  
   
-    - Capture d'une variable qui n'a pas été capturée auparavant.  
-  
-    - Modification du type d’expression de requête (par exemple, select a = > sélectionner Nouveau {A = un} ;)  
-  
-    - Suppression d'un `where` qui contient une instruction active.  
-  
-    - Suppression d'un `let` qui contient une instruction active.  
-  
-    - Suppression d'un `join` qui contient une instruction active.  
-  
-    - Suppression d'un `orderby` qui contient une instruction active.  
+  - Capture d'une variable qui n'a pas été capturée auparavant.  
+
+  - Modification du type d’expression de requête (par exemple, select a = > sélectionner Nouveau {A = un} ;)  
+
+  - Suppression d'un `where` qui contient une instruction active.  
+
+  - Suppression d'un `let` qui contient une instruction active.  
+
+  - Suppression d'un `join` qui contient une instruction active.  
+
+  - Suppression d'un `orderby` qui contient une instruction active.  
   
 - Débogage en mode mixte (natif/managé).  
   

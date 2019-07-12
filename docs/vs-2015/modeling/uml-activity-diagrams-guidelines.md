@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439735"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823581"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagrammes d’activités UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
  Vous pouvez spécifier la façon dont les éléments sont stockés dans une mémoire tampon en définissant les propriétés du nœud d'objet :  
   
 - Définir le **Ordering** propriété :  
-  
-    - **Non ordonnée** pour spécifier un ordre aléatoire ou non spécifié. (valeur par défaut).  
-  
-    - **Classés** pour spécifier l’ordre selon une clé spécifique.  
-  
-    - **FIFO** pour spécifier l’ordre du premier entré, premier sorti.  
-  
-    - **LIFO** pour spécifier l’ordre du dernier entré, premier sorti.  
-  
+
+  - **Non ordonnée** pour spécifier un ordre aléatoire ou non spécifié. (valeur par défaut).  
+
+  - **Classés** pour spécifier l’ordre selon une clé spécifique.  
+
+  - **FIFO** pour spécifier l’ordre du premier entré, premier sorti.  
+
+  - **LIFO** pour spécifier l’ordre du dernier entré, premier sorti.  
+
 - Définir le **limite supérieure** propriété pour spécifier le nombre maximal d’objets qui peuvent être contenus dans la mémoire tampon. La valeur par défaut est *. Cela signifie qu'il n'existe aucune limite.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Description du flux de données avec des broches d'entrée et de sortie  
@@ -295,11 +295,11 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
   
  Le client a fourni des détails complets et valides qui sont obligatoires pour le traitement de sa carte de crédit.  
   
- Une post-condition peut exprimer une relation entre les états antérieur et postérieur au déroulement de l'action. Exemple :  
+ Une post-condition peut exprimer une relation entre les états antérieur et postérieur au déroulement de l'action. Par exemple :  
   
  Le taux d'intérêt a doublé par rapport à ce qu'il était précédemment.  
   
- Vous pouvez écrire des post-conditions dans un style plus formel, en faisant référence aux attributs spécifiques des données traitées dans les actions. Exemple :  
+ Vous pouvez écrire des post-conditions dans un style plus formel, en faisant référence aux attributs spécifiques des données traitées dans les actions. Par exemple :  
   
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`  
   
@@ -317,7 +317,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
   
 - Vous pouvez définir le **Is Synchronous** propriété de l’action pour indiquer si votre activité attend que l’opération se termine.  
   
-    - Si vous définissez **Is Synchronous** sur false, vous indiquez que le flux peut continuer à l’action suivante avant la fin de l’opération appelée. Vous ne devez pas définir des broches de sortie ou des flux de données sortants à partir de l'action.  
+  - Si vous définissez **Is Synchronous** sur false, vous indiquez que le flux peut continuer à l’action suivante avant la fin de l’opération appelée. Vous ne devez pas définir des broches de sortie ou des flux de données sortants à partir de l'action.  
   
 ## <a name="Concurrent"></a> Flux simultanés  
  Vous pouvez utiliser la **nœud de bifurcation** et **nœud de jointure** pour décrire deux ou plusieurs threads d’activités qui peuvent s’exécuter en même temps.  

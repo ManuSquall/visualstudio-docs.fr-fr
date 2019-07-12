@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075816"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824052"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Remplacez `Microsoft.VisualStudio.Shell.11.0` avec la version actuelle de la dll MPF.)
 
- Pour afficher la boîte de dialogue, appelez «**ShowModal()**» sur la classe sur **OpenFileDialog**. **ShowModal()** définit l’état modal correct dans l’interpréteur de commandes, garantit que la boîte de dialogue est centrée dans la fenêtre parente et ainsi de suite.
+ Pour afficher la boîte de dialogue, appelez «**ShowModal()** » sur la classe sur **OpenFileDialog**. **ShowModal()** définit l’état modal correct dans l’interpréteur de commandes, garantit que la boîte de dialogue est centrée dans la fenêtre parente et ainsi de suite.
 
  Le code est comme suit :
 
@@ -343,7 +343,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Zones de groupe|Cases à cocher|
 |Éléments de menu|Cases d’option|
 |Éléments de menu contextuel|Éléments de liste|
-|Boutons|Barres d’état|
+|Boutons|Barres d'état|
 |Étiquettes de table||
 |En-têtes de colonnes||
 |Info-bulles||
@@ -351,11 +351,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :
 
-- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
+- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
 
-- **En-têtes de colonne.** Exemple : « Réponse système »
+- **En-têtes de colonne.** Exemple : « Réponse système »
 
-- **Éléments de menu.** Exemple : « Enregistrer tout »
+- **Éléments de menu.** Exemple : « Enregistrer tout »
 
   Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :
 
@@ -382,9 +382,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :
 
-1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
+1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
 
-2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
+2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par un [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - En-têtes supérieure (police d’environnement x 155 % ou version supérieure) peuvent être en couleur à ces fins :
 
-    - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
+  - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
 
-    - Pour attirer l’attention sur une zone spécifique
+  - Pour attirer l’attention sur une zone spécifique
 
-    - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
+  - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
 
 - Couleur dans les en-têtes doit tirer parti de Visual Studio marque couleurs existantes, principalement le principal violet, #FF68217A.
 

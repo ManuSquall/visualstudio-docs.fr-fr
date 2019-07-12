@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403258"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821829"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>L’accès à la police stockée ni les paramètres de couleur
+# <a name="accessing-stored-font-and-color-settings"></a>Accès aux paramètres de police et de couleur stockés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) stocke les paramètres modifiés pour les polices et couleurs dans le Registre. Vous pouvez utiliser le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface pour accéder à ces paramètres.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Pour initier la persistance de l’état de polices et couleurs  
- Les informations de police et de couleur sont stockées par catégorie dans l’emplacement de Registre suivant : [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], où  *\<CategoryGUID >* est le GUID de catégorie.  
+ Les informations de police et de couleur sont stockées par catégorie dans l’emplacement de Registre suivant : [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<version de Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], où  *\<CategoryGUID >* est le GUID de catégorie.  
   
  Par conséquent, pour lancer la persistance, un VSPackage doit :  
   
@@ -35,16 +35,16 @@ Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développem
   
 - Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> méthode pour ouvrir une catégorie à rendre persistantes à l’aide de GUID de la catégorie et un indicateur de mode en tant qu’arguments.  
   
-     Le mode spécifié par le `fFlags` argument, est construit à partir des valeurs dans le <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> énumération. Ce mode contrôle :  
-  
-    - Les paramètres qui sont accessibles via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
-  
-    - Tous les paramètres ou uniquement ceux qui modifient les utilisateurs et qui sont récupérables par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
-  
-    - La manière de propager les modifications apportées aux paramètres utilisateur.  
-  
-    - Le format de valeurs de couleur qui sont utilisés.  
-  
+  Le mode spécifié par le `fFlags` argument, est construit à partir des valeurs dans le <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> énumération. Ce mode contrôle :  
+
+  - Les paramètres qui sont accessibles via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+
+  - Tous les paramètres ou uniquement ceux qui modifient les utilisateurs et qui sont récupérables par le biais du <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+
+  - La manière de propager les modifications apportées aux paramètres utilisateur.  
+
+  - Le format de valeurs de couleur qui sont utilisés.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Pour utiliser la persistance de l’état de polices et couleurs  
  Couleurs et polices persistantes implique :  
   

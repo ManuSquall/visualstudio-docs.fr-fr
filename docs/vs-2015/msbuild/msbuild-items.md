@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038171"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821634"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
   
 - [Métadonnées d’élément](#BKMK_ItemMetadata)  
   
-    - [Référencement des métadonnées d’élément dans un fichier projet](#BKMK_ReferencingItemMetadata)  
-  
-    - [Métadonnées d’élément connues](#BKMK_WellKnownItemMetadata)  
-  
-    - [Transformation des types d’élément à l’aide de métadonnées](#BKMK_Transforming)  
+  - [Référencement des métadonnées d’élément dans un fichier projet](#BKMK_ReferencingItemMetadata)  
+
+  - [Métadonnées d’élément connues](#BKMK_WellKnownItemMetadata)  
+
+  - [Transformation des types d’élément à l’aide de métadonnées](#BKMK_Transforming)  
   
 - [Définitions d’éléments](#BKMK_ItemDefinitions)  
   
 - [Attributs des éléments d’un ItemGroup d’une cible](#BKMK_AttributesWithinTargets)  
   
-    - [Attribut Remove](#BKMK_RemoveAttribute)  
-  
-    - [Attribut KeepMetadata](#BKMK_KeepMetadata)  
-  
-    - [Attribut RemoveMetadata](#BKMK_RemoveMetadata)  
-  
-    - [Attribut KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Attribut Remove](#BKMK_RemoveAttribute)  
+
+  - [Attribut KeepMetadata](#BKMK_KeepMetadata)  
+
+  - [Attribut RemoveMetadata](#BKMK_RemoveMetadata)  
+
+  - [Attribut KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Création d’éléments dans un fichier projet  
  Vous déclarez des éléments dans le fichier projet en tant qu’éléments enfants d’un élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Le nom de l’élément enfant est le type de l’élément. L’attribut `Include` de l’élément spécifie les éléments (fichiers) à inclure avec ce type d’élément. Par exemple, le code XML suivant crée un type d’élément nommé `Compile` et composé de deux fichiers.  
@@ -87,9 +87,9 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 - Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item.  
   
 ## <a name="BKMK_ReferencingItems"></a> Référencement d’éléments dans un fichier projet  
- Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(`ItemType`). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d'informations, voir [Procédure : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).  
+ Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(`ItemType`). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez [Guide pratique pour Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).  
   
- Par défaut, les éléments d’un type d’élément sont séparés par des points-virgules (;) lorsque ce dernier est développé. Vous pouvez utiliser la syntaxe @(*ItemType*, ’*separator*’) pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d'informations, voir [Procédure : Afficher une liste d’éléments séparée par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Par défaut, les éléments d’un type d’élément sont séparés par des points-virgules (;) lorsque ce dernier est développé. Vous pouvez utiliser la syntaxe @(*ItemType*, ’*separator*’) pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez [Guide pratique pour Afficher une liste d’éléments séparée par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ## <a name="BKMK_Wildcards"></a> Utilisation de caractères génériques pour spécifier des éléments  
  Vous pouvez utiliser les caractères génériques **, \* et ? pour spécifier un groupe de fichiers comme entrées d’une génération au lieu de répertorier chaque fichier séparément.  
@@ -359,7 +359,7 @@ Output:
  [MSBuild](msbuild.md)   
  [Guide pratique pour Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md)   
  [Guide pratique pour Exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Guide pratique pour Afficher une liste d’éléments séparée par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Guide pratique : Afficher une liste d’éléments séparée par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Item Definitions (Définitions d’éléments)](../msbuild/item-definitions.md)   
  [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
  [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)
