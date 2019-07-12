@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442978"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823191"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modifier des modèles et des diagrammes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
   
      \- ou -  
   
-- Sur le **concepteurs d’Architecture** barre d’outils, cliquez sur le signe plus (**+**) ou signe moins (**-**), ou choisissez un niveau de zoom.  
+- Sur le **concepteurs d’Architecture** barre d’outils, cliquez sur le signe plus ( **+** ) ou signe moins ( **-** ), ou choisissez un niveau de zoom.  
   
 ## <a name="Searching"></a> Recherche dans un diagramme  
  La fonction Recherche rapide permet de rechercher des éléments dans un diagramme. Vous devez définir **Regarder dans :** à **Document actif**.  
@@ -294,9 +294,9 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
   
 - Cliquez sur l’élément soit dans **Explorateur de modèles UML** ou dans un diagramme, puis cliquez sur **supprimer du modèle**.  
   
-    - L'élément est supprimé de chaque diagramme où il figure.  
-  
-    - Chaque relation qui se termine à cet élément est également supprimée du modèle.  
+  - L'élément est supprimé de chaque diagramme où il figure.  
+
+  - Chaque relation qui se termine à cet élément est également supprimée du modèle.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Pour supprimer une relation du modèle  
   

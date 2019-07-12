@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089573"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823598"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La vue Informations sur les ressources présente un graphique chronologique des 
   
 - Effectuez l’une des opérations suivantes :  
   
-    - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.  
-  
-    - Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie dans la vue.  
-  
+  - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.  
+
+  - Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie dans la vue.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement  
   
 - Dans le graphique chronologique, cliquez sur la barre de l’événement.  

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319311"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823904"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -62,10 +62,10 @@ Pour vous assurer que l’installation de l’utilisateur de Visual Studio dispo
 * Modifiez le fichier de manifeste d’extension (généralement appelé *source.extension.vsixmanifest*).
 * Vérifiez `InstallationTarget` inclut 15.0.
 * Ajouter des conditions préalables d’installation requis (comme indiqué dans l’exemple ci-dessous).
-   * Nous vous recommandons de que spécifier uniquement les ID de composant pour les conditions préalables d’installation.
-   * Consultez la section à la fin de ce document pour [obtenir des instructions sur l’identification des ID de composant](#find-component-ids).
+  * Nous vous recommandons de que spécifier uniquement les ID de composant pour les conditions préalables d’installation.
+  * Consultez la section à la fin de ce document pour [obtenir des instructions sur l’identification des ID de composant](#find-component-ids).
 
-Exemple :
+Exemple :
 
 ```xml
 <PackageManifest>
@@ -120,12 +120,12 @@ Cela peut ressembler : *C:\Program Files (x86)\Microsoft Visual Studio\2017\Ent
 
 * Générez le projet VSIX.
 * Décompressez l’extension VSIX généré.
-   * Par défaut, le fichier VSIX réside dans *bin/Debug* ou *bin/Release* comme *[YourCustomExtension] .vsix*.
-   * Renommer *.vsix* à *.zip* permettent d’afficher le contenu.
+  * Par défaut, le fichier VSIX réside dans *bin/Debug* ou *bin/Release* comme *[YourCustomExtension] .vsix*.
+  * Renommer *.vsix* à *.zip* permettent d’afficher le contenu.
 * Vérifier l’existence de trois fichiers :
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Vérification de tous les composants requis sont installés.
 
@@ -141,11 +141,11 @@ Essayez d’installer l’extension :
 ![Programme d’installation VSIX sur Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Facultatif : Vérifier les versions précédentes de Visual Studio.
-   * Prouve la compatibilité descendante.
-   * Doit fonctionner avec Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+  * Prouve la compatibilité descendante.
+  * Doit fonctionner avec Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Facultatif : Vérifiez que le vérificateur de Version du programme d’installation VSIX offre un choix de versions.
-   * Inclut les versions précédentes de Visual Studio (si installé).
-   * Inclut Visual Studio 2017.
+  * Inclut les versions précédentes de Visual Studio (si installé).
+  * Inclut Visual Studio 2017.
 
 Si Visual Studio a été récemment ouvert, vous pouvez voir une boîte de dialogue comme suit :
 
@@ -170,7 +170,7 @@ Lorsque vous recherchez vos dépendances, vous trouverez qu’une dépendance pe
 
 Pour donner davantage d’instructions, nous avons identifié quelques types d’extension courants et leurs connaissances préalables requises :
 
-Type d’extension | Display Name | Id
+Type d’extension | Nom complet | ID
 --- | --- | ---
 Éditeur | Éditeur de base de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# et Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

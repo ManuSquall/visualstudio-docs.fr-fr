@@ -1,5 +1,5 @@
 ---
-title: 'Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation'
+title: 'Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476591"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824516"
 ---
-# <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
+# <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio.
 Utilisez des outils tels que des cartes de code, des diagrammes de dépendance et des diagrammes de classes aux :
@@ -51,7 +51,7 @@ Pour en savoir plus sur ces outils et les scénarios qu’ils prennent en charge
 
 - [Visualiser du code](../modeling/visualize-code.md)
 
-## <a name="scenario-overview"></a>Vue d’ensemble du scénario
+## <a name="scenario-overview"></a>Présentation du scénario
 
 Ce scénario décrit des épisodes de cycles de vie de développement logiciel de deux entreprises fictives : Dinner Now et Lucerne Publishing. Dinner Now propose un service web de livraison de repas à Seattle. Les clients peuvent commander des repas et les payer sur le site Web de Dinner Now. Les commandes sont alors envoyées au restaurant local chargé de les livrer. Lucerne Publishing, une société implantée à New York, exerce plusieurs activités liées ou non au web. Par exemple, ils exécuter un site Web où les clients peuvent publier des avis sur des restaurants.
 
@@ -81,9 +81,9 @@ Le tableau suivant décrit les rôles que ces outils peuvent jouer pendant diver
 
 ||**Modélisation des besoins des utilisateurs**|**Modélisation des processus d’entreprise**|**Architecture et conception du système**|**Visualisation et exploration du code**|**Vérification**|
 |------|-|-|-|-|-|
-|Diagramme de langage spécifique à un domaine (DSL)|Oui|Oui|Oui|||
-|Diagramme de dépendances, la validation de couche|||Oui|Oui|Oui|
-|Carte de code|||Oui|Oui|Oui|
+|Diagramme de langage spécifique à un domaine (DSL)|Oui|OUI|Oui|||
+|Diagramme de dépendances, la validation de couche|||Oui|OUI|Oui|
+|Carte de code|||Oui|OUI|Oui|
 |Concepteur de classes (basé sur le code)||||Oui||
 
 Pour dessiner des diagrammes de dépendance, vous devez créer un projet de modélisation en tant que partie d’une solution existante ou d’un autre. Ces diagrammes doivent être créés dans le projet de modélisation.
@@ -95,7 +95,7 @@ Consultez :
 
 - [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Guide pratique pour ajouter des diagrammes de classes à des projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Guide pratique : ajouter des diagrammes de classes à des projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -355,11 +355,11 @@ Un diagramme de classes comporte les principales fonctionnalités suivantes :
 
 - Des types, tels que des classes, des interfaces et des énumérations :
 
-    - Une *classe* est la définition d’objets qui partagent des caractéristiques structurelles ou comportementales spécifiques.
+  - Une *classe* est la définition d’objets qui partagent des caractéristiques structurelles ou comportementales spécifiques.
 
-    - Une *interface* définit une partie du comportement extérieurement visible d’un objet.
+  - Une *interface* définit une partie du comportement extérieurement visible d’un objet.
 
-    - Une *énumération* est un classifieur qui contient une liste de valeurs littérales.
+  - Une *énumération* est un classifieur qui contient une liste de valeurs littérales.
 
 - Les*attributs* sont des valeurs d’un type donné qui décrivent chaque instance d’un *classifieur*. Un classifieur est un nom générique attribué aux types, aux composants, aux cas d’usage et même aux acteurs.
 

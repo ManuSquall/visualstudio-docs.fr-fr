@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825817"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821563"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -67,17 +67,17 @@ Les propriétés de l’attribut incluent :
 
 - **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Prise en charge [étendues](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluent les éléments suivants :
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -Cette étendue supprime les avertissements par rapport à l’espace de noms. Il ne supprime pas les avertissements par rapport aux types dans l’espace de noms.
+  - `namespace` -Cette étendue supprime les avertissements par rapport à l’espace de noms. Il ne supprime pas les avertissements par rapport aux types dans l’espace de noms.
 
-   - `namespaceanddescendants` -(Nouveauté pour Visual Studio 2019) cette étendue supprime les avertissements dans un espace de noms et tous les symboles de ses descendants. Le `namespaceanddescendants` valeur est uniquement valide pour les analyseurs de Roslyn et est ignorée par binaire, en fonction de FxCop analyse statique.
+  - `namespaceanddescendants` -(Nouveauté pour Visual Studio 2019) cette étendue supprime les avertissements dans un espace de noms et tous les symboles de ses descendants. Le `namespaceanddescendants` valeur est uniquement valide pour les analyseurs de Roslyn et est ignorée par binaire, en fonction de FxCop analyse statique.
 
 - **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.
 
@@ -85,11 +85,11 @@ Les propriétés de l’attribut incluent :
 
 Avertissements d’analyse du code sont supprimées au niveau auquel le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est appliqué. Par exemple, l’attribut peut être appliqué à l’assembly, module, type, membre ou au niveau du paramètre. Cela vise à coupler étroitement les informations de suppression pour le code où la violation se produit.
 
-La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de règle. Exemple :
+La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de règle. Par exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Exemple :
+S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Par exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

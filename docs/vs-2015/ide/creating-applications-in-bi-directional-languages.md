@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701180"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826192"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Création d'applications en langues bidirectionnelles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
   
 - **Noms d’objets** Vous pouvez utiliser les langues bidirectionnelles pour attribuer des noms aux solutions, projets, fichiers, dossiers, etc. Dans le code, vous pouvez utiliser les langues bidirectionnelles pour les noms de variables, de classes, d’objets, d’attributs, de métadonnées et d’autres éléments.  
   
-- **Encodage des fichiers** Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d'informations, voir [Procédure : Enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).  
+- **Encodage des fichiers** Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d’informations, consultez [Guide pratique pour Enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Fonctionnalités avec prise en charge limitée et fonctionnalités non prises en charge  
  Certaines fonctionnalités courantes des applications pour langues bidirectionnelles ne sont pas entièrement prises en charge par Visual Studio, voire pas du tout. Elles incluent notamment :  
   
 - **Ordre de lecture de droite à gauche** Par défaut, les contrôles de saisie de texte que vous utilisez dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur Ctrl+Maj droite pour que la fenêtre Propriétés prenne en charge l’ordre de lecture de droite à gauche.  
   
-     Cependant, l’ordre de lecture de droite à gauche n’est pas pris en charge partout dans Visual Studio. Voici certaines exceptions :  
-  
-    - Les cases à cocher, listes déroulantes et autres contrôles des boîtes de dialogue Visual Studio utilisent toujours l’ordre de lecture de gauche à droite.  
-  
-    - L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture restera de gauche à droite.  
+  Cependant, l’ordre de lecture de droite à gauche n’est pas pris en charge partout dans Visual Studio. Voici certaines exceptions :  
+
+  - Les cases à cocher, listes déroulantes et autres contrôles des boîtes de dialogue Visual Studio utilisent toujours l’ordre de lecture de gauche à droite.  
+
+  - L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture restera de gauche à droite.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Attributions de noms avec du texte en arabe ou en hébreu  
  Vous pouvez utiliser du texte en arabe ou en hébreu pour attribuer des noms aux dossiers, variables ou autres objets. Quand vous utilisez l’arabe, vous pouvez utiliser les caractères arabes, y compris les signes kachidé et les signes diacritiques.  

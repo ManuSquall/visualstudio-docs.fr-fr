@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685322"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824254"
 ---
 # <a name="how-to-use-the-threads-window"></a>Procédure : Utiliser la fenêtre Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
 - Effectuez l'une des étapes suivantes :  
   
-    - Double-cliquez sur un thread.  
-  
-    - Cliquez sur un thread et sur **basculer vers Thread**.  
-  
-         La flèche jaune s'affiche en regard du nouveau thread actif. Un contour gris de flèche identifie le thread où l'exécution s'est arrêtée dans le débogueur.  
+  - Double-cliquez sur un thread.  
+
+  - Cliquez sur un thread et sur **basculer vers Thread**.  
+
+    La flèche jaune s'affiche en regard du nouveau thread actif. Un contour gris de flèche identifie le thread où l'exécution s'est arrêtée dans le débogueur.  
   
 ## <a name="grouping-and-sorting-threads"></a>Regroupement et tri de threads  
  Lorsque vous regroupez des threads, un titre s'affiche dans le tableau pour chaque groupe. Ce titre contient une description du groupe, telle que « Thread de travail » ou « Threads sans indicateur », ainsi qu'un contrôle d'arborescence. Les threads membres de chaque groupe apparaissent sous le titre approprié. Si vous souhaitez masquer les threads membres d’un groupe, vous pouvez utiliser le contrôle d’arborescence pour réduire ce groupe.  
@@ -116,11 +116,11 @@ Dans le **Threads** fenêtre, vous pouvez examiner et utiliser les threads de l�
   
 - Dans la barre d’outils en haut de la fenêtre **Threads**, accédez à la zone **Rechercher** et effectuez l’une des opérations suivantes :  
   
-    - Tapez une chaîne recherchée et appuyez sur ENTRÉE.  
-  
-         \- ou -  
-  
-    - Cliquez sur la liste déroulante en regard du **recherche** zone, puis sélectionnez une chaîne de recherche à partir d’une recherche précédente.  
+  - Tapez une chaîne recherchée et appuyez sur ENTRÉE.  
+
+    \- ou -  
+
+  - Cliquez sur la liste déroulante en regard du **recherche** zone, puis sélectionnez une chaîne de recherche à partir d’une recherche précédente.  
   
 - (Facultatif) Pour inclure l’ensemble de la pile des appels dans la recherche, sélectionnez **Rechercher la pile des appels**.  
   

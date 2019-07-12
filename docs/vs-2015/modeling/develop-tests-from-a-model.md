@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692250"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823326"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
 - Basez des tests distincts sur les clauses distinctes de la post-condition. Par exemple, créez des tests distincts pour informer le restaurant de la commande et pour recevoir le paiement du client. Cette séparation offre les avantages suivants :  
   
-    - Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.  
-  
-    - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.  
+  - Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.  
+
+  - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.  
   
 - Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.  
   

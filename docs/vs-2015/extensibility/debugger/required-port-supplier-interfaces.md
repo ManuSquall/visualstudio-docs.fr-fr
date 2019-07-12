@@ -11,12 +11,12 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 82e70ea9a4ba30b6b1d312188a91d9c0c8aa2904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a065389a6b9b67b8bce82394569ce65afb0f8d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116639"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821433"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de fournisseur de ports nécessaires
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,33 +50,33 @@ Un fournisseur de port doit implémenter le [IDebugPortSupplier2](../../extensib
   
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
-     Décrit le processus physique. Au moins les méthodes suivantes doivent être implémentées :  
-  
-    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
-  
-    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
-  
-    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
-  
-    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
-  
-    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
-  
-    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
-  
+  Décrit le processus physique. Au moins les méthodes suivantes doivent être implémentées :  
+
+  - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
+
+  - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+
+  - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+
+  - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+
+  - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+
+  - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
+
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
-     Fournit un moyen pour le SDM attacher et détacher lui-même d’un processus.  
+    Fournit un moyen pour le SDM attacher et détacher lui-même d’un processus.  
   
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
-     Décrit le programme logique. Au moins les méthodes suivantes doivent être implémentées :  
-  
-    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
-  
-    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
-  
-    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
+  Décrit le programme logique. Au moins les méthodes suivantes doivent être implémentées :  
+
+  - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+
+  - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   

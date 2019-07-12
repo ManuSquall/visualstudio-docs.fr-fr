@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583774"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823407"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitations des contrôles Windows Forms sur des documents Office
 
@@ -41,24 +41,24 @@ Il existe un nombre de méthodes et propriétés de contrôles Windows Forms qui
 
 - Non pris en charge des propriétés de contrôles Excel :
 
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
 
 - Non pris en charge des méthodes et propriétés de contrôles Word :
 
-    - <xref:System.Windows.Forms.Control.Hide%2A>
-    - <xref:System.Windows.Forms.Control.Show%2A>
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
-    - <xref:System.Windows.Forms.Control.Visible>
+  - <xref:System.Windows.Forms.Control.Hide%2A>
+  - <xref:System.Windows.Forms.Control.Show%2A>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Visible>
 
 Vous ne pouvez pas définir le <xref:System.Windows.Forms.Control.Left> ou <xref:System.Windows.Forms.Control.Top> propriété des contrôles Windows Forms qui sont alignés avec le texte dans un document Word. Contrôles Windows Forms sont ajoutés alignés avec le texte dans les cas suivants :
 
@@ -70,7 +70,7 @@ Vous ne pouvez pas définir le <xref:System.Windows.Forms.Control.Left> ou <xref
 
 Contrôles Windows Forms ont généralement le même comportement sur un document Office comme sur un formulaire Windows, mais il existe certaines différences. Le tableau suivant décrit les différences qui existent pour les contrôles Windows Forms sur des documents Office.
 
-|Fonctionnalité|Différence|
+|Fonctionnalités|Différence|
 |-------------------|----------------|
 |Contrôle l’ordre de tabulation|Vous ne pouvez pas l’onglet via les contrôles placés sur une feuille de calcul Excel ou un document Word.|
 |Regroupement de contrôle|Vous ne pouvez pas utiliser un <xref:System.Windows.Forms.GroupBox> contrôle pour contenir d’autres contrôles sur un document Office. Lorsque vous ajoutez plusieurs boutons radio directement au document, les boutons radio ne sont pas mutuellement exclusives. Vous pouvez écrire du code pour que les boutons de case d’option mutuellement ; Toutefois, la meilleure approche consiste à ajouter des boutons radio à un contrôle utilisateur, puis ajouter le contrôle utilisateur au document. Pour plus d’informations, consultez les exemples de contrôles Word et Excel dans [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).|

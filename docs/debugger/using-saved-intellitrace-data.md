@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746151"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825598"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>À l’aide des données IntelliTrace enregistrées (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 - Si le fichier .iTrace est attaché à un élément de travail Team Foundation Server, suivez ces étapes dans l’élément de travail :
 
-    - Sous **Tous les liens**, recherchez le fichier .iTrace. Ouvrez-le.
+  - Sous **Tous les liens**, recherchez le fichier .iTrace. Ouvrez-le.
 
-         \- ou -
+    \- ou -
 
-    - Sous **Étapes de reproduction**, cliquez sur le lien **IntelliTrace** .
+  - Sous **Étapes de reproduction**, cliquez sur le lien **IntelliTrace** .
 
 > [!TIP]
 > Si vous avez fermé le fichier IntelliTrace pendant le débogage, vous pouvez le rouvrir facilement. Accédez au menu **Déboguer** , choisissez **IntelliTrace**, **Afficher le résumé du journal**. Vous pouvez également choisir **Afficher le résumé du journal** dans la fenêtre **IntelliTrace** . Cette commande est disponible uniquement lorsque vous procédez à un débogage à l’aide d’IntelliTrace.
@@ -158,7 +158,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.
 
-    Exemple :
+    Par exemple :
 
     ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -266,5 +266,5 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 #### <a name="forums"></a>Forums
  [Débogueur Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
-#### <a name="guidance"></a>Conseils
+#### <a name="guidance"></a>Assistance
  [Test de livraison continue avec Visual Studio 2012 - chapitre 6 : Une boîte à outils de test](http://go.microsoft.com/fwlink/?LinkID=255203)

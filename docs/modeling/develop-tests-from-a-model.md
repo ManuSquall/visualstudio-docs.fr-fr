@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821949"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -46,9 +46,9 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
 - Basez des tests distincts sur les clauses distinctes de la post-condition. Par exemple, créez des tests distincts pour informer le restaurant de la commande et pour recevoir le paiement du client. Cette séparation offre les avantages suivants :
 
-    - Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.
+  - Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.
 
-    - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.
+  - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.
 
 - Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.
 

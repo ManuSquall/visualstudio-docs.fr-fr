@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400487"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64790135"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 Récupère un indicateur qui spécifie si la fonction a la [naked](/cpp/cpp/naked-cpp) attribut (autrement dit, la fonction ne possède aucun code de prologue ni d’épilogue ajouté par le compilateur).
@@ -43,7 +43,7 @@ HRESULT get_isNaked(
 
 ## <a name="requirements"></a>Configuration requise
 
-|Spécification|Description|
+|Prérequis|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
 |Version :|DIA SDK 8.0|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0016ca267b3eaf2535896aab1ee58a470a192c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399453"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64786711"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Récupère le décalage de l’emplacement du symbole. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.
@@ -46,7 +46,7 @@ HRESULT get_offset ( 
 
 ## <a name="requirements"></a>Configuration requise
 
-|Spécification|Description|
+|Prérequis|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
 |Version :|DIA SDK v7.0|

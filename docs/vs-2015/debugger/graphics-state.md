@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420072"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825576"
 ---
 # <a name="graphics-state"></a>État graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 ##### <a name="to-change-the-state-view"></a>Pour modifier l'affichage des états  
   
 - Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.  
-  
-    - **Afficher la vue des états de l’entrée API**  
-  
-    - **Afficher la vue des états logiques**  
-  
-    - **Afficher la vue des états épinglés**  
+
+  - **Afficher la vue des états de l’entrée API**  
+
+  - **Afficher la vue des états logiques**  
+
+  - **Afficher la vue des états épinglés**  
   
 > [!IMPORTANT]
 > Vous devez épingler l’état dans **Afficher la vue des états de l’entrée API** ou dans **Afficher la vue des états logiques** pour qu’il s’affiche dans **Afficher la vue des états épinglés**.  
@@ -53,8 +53,8 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 |Colonne|Description|  
 |------------|-----------------|  
-|Nom|Nom de l'élément d'état. Si cet élément représente un ensemble d'états, vous pouvez développer l'élément pour l'afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|  
-|Value|Valeur de l'élément d'état.|  
+|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d'états, vous pouvez développer l'élément pour l'afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|  
+|`Value`|Valeur de l'élément d'état.|  
 |Type|Type de l'élément d'état.|  
   
 ### <a name="changed-state"></a>État modifié  

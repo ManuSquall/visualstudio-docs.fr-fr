@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441198"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825749"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
   
 - [Zone de test 1 : Ajouter à/Ouvrir à partir du contrôle de code source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - Cas 1 : Ajoutez la Solution au contrôle de code Source  
-  
-    - 1 b cas : Ouvrir une Solution à partir du contrôle de code Source  
-  
-    - Cas 1c : Ajouter la Solution à partir du contrôle de code Source  
-  
+  - Cas 1 : Ajoutez la Solution au contrôle de code Source  
+
+  - 1 b cas : Ouvrir une Solution à partir du contrôle de code Source  
+
+  - Cas 1c : Ajouter la Solution à partir du contrôle de code Source  
+
 - [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [Zone de test 3 : Extraire/Annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - Cas 3 : Découvrez / annuler l’extraction  
-  
-    - Cas 3 : Extraire  
-  
-    - 3 b de cas : Extraction déconnectée  
-  
-    - Cas 3c : Modifier/la requête d’enregistrement (QEQS)  
-  
-    - Cas 3d : Extraction en mode silencieux  
-  
-    - 3e cas : Annuler l’extraction  
+  - Cas 3 : Découvrez / annuler l’extraction  
+
+  - Cas 3 : Extraire  
+
+  - 3 b de cas : Extraction déconnectée  
+
+  - Cas 3c : Modifier/la requête d’enregistrement (QEQS)  
+
+  - Cas 3d : Extraction en mode silencieux  
+
+  - 3e cas : Annuler l’extraction  
   
 - [Zone de test 4 : Archiver](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - 4 a case : Éléments modifiés  
-  
-    - 4 b de cas : Ajout de fichiers  
-  
-    - Cas 4c : Ajout de projets  
+  - 4 a case : Éléments modifiés  
+
+  - 4 b de cas : Ajout de fichiers  
+
+  - Cas 4c : Ajout de projets  
   
 - [Zone de test 5 : Changer le contrôle de code source](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - 5 a case : Lier  
-  
-    - 5 b de cas : Annuler la liaison  
-  
-    - Cas 5c : reliaison  
-  
+  - 5 a case : Lier  
+
+  - 5 b de cas : Annuler la liaison  
+
+  - Cas 5c : reliaison  
+
 - [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - 8 a case : Modification automatique  
-  
-    - 8 b de cas : Modification sur les solutions  
-  
+
+  - 8 a case : Modification automatique  
+
+  - 8 b de cas : Modification sur les solutions  
+
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../../extensibility/source-control-plug-ins.md)
