@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417780"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823262"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
 - Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :  
   
-    - Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Éléments décrivant les classes d'infrastructure que le développeur doit utiliser.  
+  - Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Éléments décrivant les classes d'infrastructure que le développeur doit utiliser.  
   
 - Modèle des interactions entre les parties, à l'aide de diagrammes de séquence ou d'activités.  
   
