@@ -1,6 +1,6 @@
 ---
 title: Annotation de paramètres de fonction et valeurs de retour
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388546"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852168"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, scalaires et des pointeurs vers des classes et structures et la plupart des types de mémoires tampons.  Cet article montre également les modes d’utilisation courants pour les annotations. Pour des annotations supplémentaires qui sont liées aux fonctions, consultez [annoter le comportement (fonction)](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Exemple :
+     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Par exemple :
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +247,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Exemple :
+     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Par exemple :
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
      Un pointeur vers un tableau se terminant par null pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` n’avez pas à être valide dans un état préliminaire et doit être valide dans un état postérieur à.
 
 ## <a name="optional-pointer-parameters"></a>Paramètres de pointeur facultatif
+
  Lorsqu’une annotation de paramètre pointeur inclut `_opt_`, il indique que le paramètre peut être null. Sinon, l’annotation effectue la même que la version qui n’inclut pas `_opt_`. Voici une liste de la `_opt_` variantes des annotations de paramètre de pointeur :
 
 ||||
@@ -384,6 +388,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
    Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre de référence.
 
 ## <a name="output-reference-parameters"></a>Paramètres de référence de sortie
+
  Une utilisation courante de paramètre de référence est pour les paramètres output.  Pour les paramètres de référence de sortie simple, par exemple, `int&`—`_Out_` fournit la sémantique correcte.  Toutefois, lorsque la valeur de sortie est un pointeur, par exemple `int *&`, telles que les annotations de pointeur équivalent `_Outptr_ int **` ne fournissent pas la sémantique appropriée.  Pour exprimer avec concision la sémantique de référence des paramètres de sortie pour les types pointeur, utilisez ces annotations composites :
 
  **Annotations et Descriptions**
@@ -445,13 +450,62 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
      Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.
 
 ## <a name="return-values"></a>Valeurs de retour
+
  La valeur de retour d’une fonction ressemble à un `_Out_` paramètre mais est à un niveau différent de de-reference, et vous n’êtes pas obligé de prendre en compte le concept de pointeur vers le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté, une valeur scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon. Ces annotations ont la même sémantique que le correspondantes `_Out_` annotation.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Paramètres de chaîne de format
+
+- `_Printf_format_string_` Indique que le paramètre est une chaîne de format pour une utilisation dans un `printf` expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Indique que le paramètre est une chaîne de format pour une utilisation dans un `scanf` expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Indique que le paramètre est une chaîne de format pour une utilisation dans un `scanf_s` expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Autres Annotations courants
+
  **Annotations et Descriptions**
 
 - `_In_range_(low, hi)`
@@ -481,7 +535,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à une déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets donné par `size`.  Exemple :
+     S’applique à une déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets donné par `size`.  Par exemple :
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -490,6 +544,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Ressources connexes
+
  [Blog de l’équipe analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Voir aussi

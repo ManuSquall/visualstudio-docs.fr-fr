@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852096"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852225"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertissement que vous pouvez rencontrer lors du débogage de votre application.
@@ -37,6 +37,8 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
  [Impossible de changer la valeur, boîte de dialogue](../debugger/cannot-change-value-dialog-box.md)
 
  [Le débogueur ne parvient pas à afficher le code source ou le code machine](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Services qui s’exécutent en dehors de la mémoire du débogueur](../debugger/error-debugger-services-no-memory.md)
 
  [Exécutable pour la session de débogage, boîte de dialogue](../debugger/executable-for-debugging-session-dialog-box.md)
 
