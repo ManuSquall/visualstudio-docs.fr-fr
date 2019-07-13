@@ -1,59 +1,59 @@
 ---
 title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 99fc1e635691fa290d0a8e4506ef55d677e9ff78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62547648"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```cpp
-HRESULT GetPhysicalStackRange ( 
-   UINT64* paddrMin,
-   UINT64* paddrMax
-);
-```
-
-```csharp
-int GetPhysicalStackRange ( 
-   out ulong paddrMin,
-   out ulong paddrMax
-);
-```
-
-#### <a name="parameters"></a>Paramètres
- `paddrMin`
-
- [out] Retourne l’adresse physique la plus faible associée à ce frame de pile.
-
- `paddrMax`
-
- [out] Retourne l’adresse physique le plus élevé associé à ce frame de pile.
-
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
-
-## <a name="remarks"></a>Notes
- Les informations retournées par cette méthode sont utilisées par le Gestionnaire de session de débogage (SDM) pour trier les frames de pile.
-
- Il est supposé que la pile des appels se développe vers le bas, autrement dit, que des frames de pile sont ajoutés à des adresses de mémoire inférieures de plus en plus. Une architecture d’exécution doit fournir les plages de pile physique qui correspondent à cette hypothèse.
-
-## <a name="see-also"></a>Voir aussi
-- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp#  
+HRESULT GetPhysicalStackRange (   
+   UINT64* paddrMin,  
+   UINT64* paddrMax  
+);  
+```  
+  
+```csharp  
+int GetPhysicalStackRange (   
+   out ulong paddrMin,  
+   out ulong paddrMax  
+);  
+```  
+  
+#### <a name="parameters"></a>Paramètres  
+ `paddrMin`  
+ [out] Retourne l’adresse physique la plus faible associée à ce frame de pile.  
+  
+ `paddrMax`  
+ [out] Retourne l’adresse physique le plus élevé associé à ce frame de pile.  
+  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+  
+## <a name="remarks"></a>Notes  
+ Les informations retournées par cette méthode sont utilisées par le Gestionnaire de session de débogage (SDM) pour trier les frames de pile.  
+  
+ Il est supposé que la pile des appels se développe vers le bas, autrement dit, que des frames de pile sont ajoutés à des adresses de mémoire inférieures de plus en plus. Une architecture d’exécution doit fournir les plages de pile physique qui correspondent à cette hypothèse.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

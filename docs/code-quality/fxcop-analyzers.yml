@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Migrer à partir de l’analyse de code FxCop vers les analyseurs de plateforme du compilateur .NET
+title: Migrer à partir de l’analyse binaire (FxCop) pour l’analyse du code source (analyseurs FxCop)
 metadata:
   title: Documentation sur la migration FxCop
-  description: Découvrez comment migrer à partir de FxCop héritée vers des analyseurs pour l’analyse du code.
-  ms.date: 07/18/2018
+  description: Découvrez comment déplacer à partir de l’analyse binaire hérité (FxCop) à la source de l’analyse (analyseurs FxCop) lorsque vous analysez le code.
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 'Découvrez comment analyser le code pour la première fois, ou la migration à partir de FxCop pour la nouvelle méthode d’analyse de code managé à l’aide des analyseurs.'
+  description: Découvrez comment analyser le code pour la première fois ou migrer à partir de l’analyse binaire (FxCop) vers la nouvelle méthode d’analyse de code managé à l’aide d’analyse du code source (analyseurs FxCop).
   aside:
     image:
       alt: Logo de tâches de gestion courantes
@@ -23,9 +23,9 @@ abstract:
       src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
     title: null
 sections:
-  - title: FAQ
+  - title: Questions fréquentes (FAQ)
     items:
-      - html: Obtenez des réponses à certaines <a href="fxcop-analyzers-faq.md">Forum aux questions</a> sur les différences entre FxCop et analyseurs.
+      - html: Obtenez des réponses à certaines <a href="fxcop-analyzers-faq.md">Forum aux questions</a> sur les différences entre l’analyse FxCop binaire et d’analyse du code source à l’aide des analyseurs FxCop.
   - title: Si vous ne connaissez pas l’analyse du code...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: Utilisation de ligne de commande
-  - title: Si vous êtes un utilisateur de FxCop...
+  - title: Si vous utilisez actuellement analyse binaire (FxCop)...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Découvrez les différences entre statique (FxCop) et l’analyse de code d’analyseur.</p>
+            html: <p>Découvrez les différences entre l’analyse binaire (FxCop) et d’analyse du code source (analyseurs FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: "Quelle est la différence\_?"
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Installer des analyseurs FxCop
           - href: fxcop-rule-port-status.md
-            html: <p>Répertorie les règles de FxCop analyse statique du code qui ont été portées sur les analyseurs FxCop.</p>
+            html: <p>Répertorie les règles d’analyse binaire (FxCop) qui ont été déplacées vers l’analyse du code source (analyseurs FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: Règles migrées et unported
