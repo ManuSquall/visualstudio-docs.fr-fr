@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Le débogueur ne parvient pas à afficher le code source ou le code machine
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Services du débogueur à court de mémoire
+              href: error-debugger-services-no-memory.md
             - name: Exécutable pour la session de débogage (boîte de dialogue)
               href: executable-for-debugging-session-dialog-box.md
             - name: 'Modifier et continuer, boîte de dialogue (C++)'
