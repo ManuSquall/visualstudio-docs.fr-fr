@@ -1,6 +1,6 @@
 ---
 title: Fichier Include
-description: fichier Include
+description: Fichier Include
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
@@ -8,10 +8,10 @@ ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
 ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
+ms.lasthandoff: 07/15/2019
 ms.locfileid: "67258412"
 ---
 > [!Note]
