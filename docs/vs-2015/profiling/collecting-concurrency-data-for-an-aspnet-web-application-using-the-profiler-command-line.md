@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73270acd97ac4555ade609601d92327235a2f3c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144905"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecte de données concurrentielles pour une application web ASP.NET en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Guide pratique pour attacher le profileur à une application ASP.NET pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Guide pratique : attacher le profileur à une application ASP.NET pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Référence  
  [Référence d’outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)  

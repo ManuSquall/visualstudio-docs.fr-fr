@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192613"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Le manifeste à partir de l’outil de ressources est une application console qu
 ||||  
 |-|-|-|  
 |**Nom du commutateur**|**Notes**|**Obligatoire ou facultatif**|  
-|/Resources|Une liste délimitée par des points-virgules des images ou des répertoires. Cette liste doit toujours contenir la liste complète des images qui figurent dans le manifeste. Si seule une liste partielle est fournie, les entrées non incluses seront perdues.<br /><br /> Si un fichier de ressources donné est une bande d’image, l’outil sera scindez-le en images distinctes avant d’ajouter chaque sous-image au manifeste.<br /><br /> Si l’image est un fichier .png, nous recommandons de que vous mettre en forme le nom comme suit afin que l’outil peut remplir les attributs appropriés pour l’image : \<Name>.\<Width>.\<Height>.png.|Obligatoire|  
-|/assembly|Le nom de l’assembly managé (sans compter l’extension) ou le chemin d’accès de l’exécution de l’assembly natif qui héberge les ressources (relatif à l’emplacement du runtime du manifeste).|Obligatoire|  
-|/manifest|Nom à donner au fichier .imagemanifest généré. Cela peut également inclure un chemin d’accès absolu ou relatif pour créer le fichier dans un autre emplacement. Le nom par défaut correspond au nom de l’assembly.<br /><br /> Par défaut : \<Répertoire actif >\\< Assembly\>.imagemanifest|Facultatif|  
+|/Resources|Une liste délimitée par des points-virgules des images ou des répertoires. Cette liste doit toujours contenir la liste complète des images qui figurent dans le manifeste. Si seule une liste partielle est fournie, les entrées non incluses seront perdues.<br /><br /> Si un fichier de ressources donné est une bande d’image, l’outil sera scindez-le en images distinctes avant d’ajouter chaque sous-image au manifeste.<br /><br /> Si l’image est un fichier .png, nous recommandons de que vous mettre en forme le nom comme suit afin que l’outil peut remplir les attributs appropriés pour l’image : \<Nom >. \<Largeur >. \<Hauteur > .png.|Obligatoire|  
+|assembly|Le nom de l’assembly managé (sans compter l’extension) ou le chemin d’accès de l’exécution de l’assembly natif qui héberge les ressources (relatif à l’emplacement du runtime du manifeste).|Obligatoire|  
+|/ manifeste|Nom à donner au fichier .imagemanifest généré. Cela peut également inclure un chemin d’accès absolu ou relatif pour créer le fichier dans un autre emplacement. Le nom par défaut correspond au nom de l’assembly.<br /><br /> Par défaut : \<Répertoire actif >\\< Assembly\>.imagemanifest|Facultatif|  
 |/guidName|Le nom à donner au symbole GUID pour toutes les images dans le manifeste généré.<br /><br /> Par défaut : AssetsGuid|Facultatif|  
 |/rootPath|Le chemin d’accès racine devant être supprimées avant de créer des URI de ressource managée. (Cet indicateur est d’aider avec les cas où l’outil Obtient le chemin d’accès URI relatif incorrect, à l’origine des ressources qui ne parviennent pas à charger.)<br /><br /> Par défaut : \<Répertoire actif >|Facultatif|  
 |/ Recursive|Définition de cet indicateur indique à l’outil de manière récursive tous les répertoires de recherche dans l’argument /resources. L’omission de cet indicateur entraîne une recherche top-niveau uniquement des répertoires.|Facultatif|  
@@ -45,7 +45,7 @@ Le manifeste à partir de l’outil de ressources est une application console qu
   
 - ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
-- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
 - ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

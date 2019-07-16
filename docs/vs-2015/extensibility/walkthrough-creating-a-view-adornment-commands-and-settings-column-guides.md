@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148839"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Création d’un ornement, de commandes et de paramètres pour l’affichage (repères de colonne)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Tout d’abord vous créez un projet VSIX, ajoutez un ornement de vue de l’éd
 - Il existe un package VSIP qui est nécessaire si vous avez des commandes de l’utilisateur, mais il est simplement un code réutilisable qui initialise l’objet d’implémentation de commandes.
 - Il existe un `ColumnGuideCommands` objet qui implémente les commandes de l’utilisateur et raccorde les gestionnaires de commandes pour les commandes déclaré dans le fichier .vsct.
   
-  **VSIX**. Utilisez **fichier &#124; nouveau...** commande pour créer un projet. Choisissez le nœud d’extensibilité sous C# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit. Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.
+  **VSIX**. Utilisez **fichier &#124; nouveau...** commande pour créer un projet. Choisissez le nœud d’extensibilité sous c# dans le volet de navigation gauche, choisissez **projet VSIX** dans le volet droit. Entrez le nom ColumnGuides et choisissez **OK** pour créer le projet.
   
   **Afficher les ornements**. Appuyez sur le bouton droit du pointeur sur le nœud de projet dans l’Explorateur de solutions. Choisissez le **ajouter &#124; un nouvel élément...** commande pour ajouter un nouvel élément d’ornement de vue. Choisissez **extensibilité &#124; éditeur** dans le volet de navigation de gauche et choisissez **ornement de la fenêtre d’affichage de l’éditeur** dans le volet droit. Entrez le nom ColumnGuideAdornment en tant que nom de l’élément et choisissez **ajouter** pour l’ajouter.
   
