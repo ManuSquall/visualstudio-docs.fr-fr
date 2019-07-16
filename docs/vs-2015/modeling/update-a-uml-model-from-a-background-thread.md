@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183911"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Mettre à jour un modèle UML à partir d'un thread d'arrière-plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

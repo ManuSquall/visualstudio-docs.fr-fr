@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adf5e160ec334859062311fae947ce34e79850d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157430"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’applicat
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
-|[\<assembly>, élément](../deployment/assembly-element-clickonce-application.md)|Obligatoire. Élément de niveau supérieur.|`manifestVersion`|  
-|[\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-application.md)|Obligatoire. Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[\<trustInfo>, élément](../deployment/trustinfo-element-clickonce-application.md)|Identifie les exigences de sécurité de l’application.|Aucun.|  
-|[\<entryPoint>, élément](../deployment/entrypoint-element-clickonce-application.md)|Obligatoire. Identifie le point d’entrée de code application.|`name`|  
-|[\<dependency>, élément](../deployment/dependency-element-clickonce-application.md)|Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés.|Aucun.|  
-|[\<file>, élément](../deployment/file-element-clickonce-application.md)|Optionnel. Identifie chaque fichier de l’autre qui est utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
-|[\<fileAssociation>, élément](../deployment/fileassociation-element-clickonce-application.md)|Facultatif. Identifie une extension de fichier à associer à l’application.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
+|[\<assembly>, élément](../deployment/assembly-element-clickonce-application.md)|Requis. Élément de niveau supérieur.|`manifestVersion`|  
+|[\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-application.md)|Requis. Identifie l’assembly principal de le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<trustInfo>, élément](../deployment/trustinfo-element-clickonce-application.md)|Identifie les exigences de sécurité de l’application.|Aucun|  
+|[\<entryPoint>, élément](../deployment/entrypoint-element-clickonce-application.md)|Requis. Identifie le point d’entrée de code application.|`name`|  
+|[\<dependency>, élément](../deployment/dependency-element-clickonce-application.md)|Requis. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés.|Aucun|  
+|[\<file>, élément](../deployment/file-element-clickonce-application.md)|facultatif. Identifie chaque fichier de l’autre qui est utilisé par l’application. Peut inclure les données d’isolation COM (Component Object Model) associées au fichier.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<fileAssociation>, élément](../deployment/fileassociation-element-clickonce-application.md)|facultatif. Identifie une extension de fichier à associer à l’application.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>Notes  
  Le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fichier manifeste d’application identifie une application déployée à l’aide de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Pour plus d’informations sur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).  

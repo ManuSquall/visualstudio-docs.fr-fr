@@ -17,18 +17,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 321de64442b983dd6da1d23c25d535b389f15bfc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144591"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Informations sur le chargement de symboles, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La boîte de dialogue **Informations sur le chargement de symboles** s’ouvre quand vous cliquez avec le bouton droit sur la fenêtre **Modules** et que vous choisissez **Informations sur le chargement de symboles**.  
   
-## <a name="uielement-list"></a>Liste des éléments d’interface  
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
  **Information**  
  Affiche les répertoires où des recherches ont été effectuées pour des fichiers de symboles (fichiers PDB) selon les paramètres d’installation de Visual Studio et les modifications que vous avez apportées aux paramètres de symboles dans la boîte de dialogue **Options**.  
   

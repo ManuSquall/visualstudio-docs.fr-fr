@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146168"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Conception et affichage des classes et des types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Concevez, visualisez et refactorisez les classes et d'autres types dans votre co
   
  Voici plus d'informations sur ce que vous pouvez faire avec les diagrammes de classes :  
   
-- **Concevoir** : modifiez le code de votre projet en changeant le diagramme de classes. Ajoutez de nouveaux éléments et supprimez ceux dont vous n'avez pas besoin. Vos changements sont répercutés dans le code.  
+- **Conception** : modifiez le code de votre projet en changeant le diagramme de classes. Ajoutez de nouveaux éléments et supprimez ceux dont vous n'avez pas besoin. Vos changements sont répercutés dans le code.  
   
 - **Visualiser** : comprenez la structure de votre projet en affichant ses classes dans un diagramme. Personnalisez votre diagramme pour pouvoir vous concentrer sur les détails du projet qui vous intéressent le plus. Enregistrez votre diagramme pour pouvoir l'utiliser plus tard à des fins de démonstration ou de documentation.  
   

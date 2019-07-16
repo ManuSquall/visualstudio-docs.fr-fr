@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a02eb9048c0e9338e6300fc63666af4db535b3ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198592"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ IDiaDataSource : IUnknown
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
  Cette interface est obtenue en appelant le `CoCreateInstance` fonction avec l’identificateur de classe `CLSID_DiaSource` et l’ID de l’interface de `IID_IDiaDataSource`. L’exemple montre comment cette interface est obtenue.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```cpp#  
   

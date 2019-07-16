@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154608"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 
@@ -64,13 +64,13 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Par défaut de titre de menu](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")
 
@@ -78,7 +78,7 @@ N’utilisez pas...
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (texte)
 
@@ -94,7 +94,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
   **Placez le curseur**
 
@@ -102,7 +102,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Titre de menu au pointage](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")
 
@@ -136,7 +136,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Titre de menu enfoncé](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")
 
@@ -172,7 +172,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Titre de menu avec glyphe désactivé](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")
 
@@ -180,7 +180,7 @@ N’utilisez pas...
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (texte)
 
@@ -192,7 +192,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
 #### <a name="menu"></a>Menu
 
@@ -208,13 +208,13 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Par défaut du menu](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")
 
@@ -264,7 +264,7 @@ N’utilisez pas...
 
   ![Menu sélectionné](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")
 
-  **Selected**
+  **sélectionné**
 
   Arrière-plan d’icône
 
@@ -280,7 +280,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Pointage de menu](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
 
@@ -312,7 +312,7 @@ N’utilisez pas...
 
   ![Pointage de menu sélectionné](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")
 
-  **Selected**
+  **sélectionné**
 
   Arrière-plan d’icône
 
@@ -328,7 +328,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Menu désactivé](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")
 
@@ -390,7 +390,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Présentation
 
@@ -426,17 +426,17 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Commande par défaut d’icône](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")
 
-  **Default**
+  **Par défaut**
 
   Présentation
 
@@ -452,7 +452,7 @@ N’utilisez pas...
 
   ![Commande par défaut d’icône sélectionnée](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")
 
-  **Selected**
+  **sélectionné**
 
   Présentation
 
@@ -472,7 +472,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Pointage d’icône de commande](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")
 
@@ -514,7 +514,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Icône de commande enfoncée](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")
 
@@ -540,7 +540,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Icône de commande désactivée](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")
 
@@ -575,13 +575,13 @@ Utilisez...
 
 - quand vous avez accès à une zone de liste modifiable qui comporte un style.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Champ d’entrée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")
 
@@ -639,7 +639,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Champ d’entrée de zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")
 
@@ -697,7 +697,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Color.category
+  Nom du jeton : Color.Category
 
   ![Champ d’entrée de zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")
 
@@ -737,7 +737,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Color.category
+  Nom du jeton : Color.Category
 
   ![Champ d’entrée de zone de liste déroulante enfoncé](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")
 
@@ -799,13 +799,13 @@ Utilisez...
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (glyphe)
 
   `Environment.ComboBoxDisabledGlyph`
 
-#### <a name="BKMK_CommandDropDown"></a> Drop-down
+#### <a name="BKMK_CommandDropDown"></a> Liste déroulante
 
 > [!IMPORTANT]
 > Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -820,13 +820,13 @@ N’utilisez pas...
 
 - pour les zones de liste modifiable ou les boutons partagés.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas du champ de sélection](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")
 
@@ -854,7 +854,7 @@ N’utilisez pas...
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (glyphe)
 
@@ -888,7 +888,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas du champ de sélection de survol](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")
 
@@ -946,7 +946,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas du champ de sélection enfoncé](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")
 
@@ -986,7 +986,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas du champ de sélection désactivée](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")
 
@@ -1030,13 +1030,13 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton partagé](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")
 
@@ -1044,7 +1044,7 @@ N’utilisez pas...
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (texte)
 
@@ -1068,7 +1068,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton Fractionner au pointage](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")
 
@@ -1102,7 +1102,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton Fractionner enfoncé](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")
 
@@ -1136,7 +1136,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton Fractionner désactivé](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")
 
@@ -1173,13 +1173,13 @@ pour les boutons « Autres options » ou « >> » personnalisés.
  N’utilisez pas...
 pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bouton « Autres options » ou « >> ».
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Plus d’options](../../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")
 
@@ -1187,7 +1187,7 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
 
  ![Bouton de dépassement](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")
 
- **Overflow**
+ **dépassement de capacité**
 
  Présentation
 
@@ -1203,7 +1203,7 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Plus d’options au pointage](../../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")
 
@@ -1211,7 +1211,7 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
 
  ![Dépassement au pointage](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")
 
- **Overflow**
+ **dépassement de capacité**
 
  Présentation
 
@@ -1229,7 +1229,7 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Autres options enfoncée](../../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")
 
@@ -1237,7 +1237,7 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
 
  ![Dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")
 
- **Overflow**
+ **dépassement de capacité**
 
  Présentation
 
@@ -1271,13 +1271,13 @@ pour les boutons qui n’ont pas de fonctionnalité similaire à celle d’un bo
  N’utilisez pas...
 pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  Document : ancré ou flottant
 
@@ -1351,7 +1351,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Frame actif au pointage](../../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")
 
@@ -1391,7 +1391,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Frame actif enfoncé](../../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")
 
@@ -1444,7 +1444,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Onglet sélectionné actif](../../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")
 
@@ -1476,7 +1476,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Onglet sélectionné inactif](../../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")
 
@@ -1503,7 +1503,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
  `Environment.FileTabInactiveDocumentBorderBackground`
 
 #### <a name="background-tab"></a>Onglet en arrière-plan
- **Default**
+ **Par défaut**
 
  ![Onglet en arrière-plan](../../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")
 
@@ -1565,7 +1565,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Onglet d’aperçu actif](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")
 
@@ -1595,7 +1595,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Onglet d’aperçu inactif](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")
 
@@ -1623,7 +1623,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Onglet d’aperçu d’arrière-plan](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")
 
@@ -1649,7 +1649,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Onglet d’aperçu d’arrière-plan au pointage](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")
 
@@ -1683,13 +1683,13 @@ N’utilisez pas...
 
 - pour des boutons de dépassement de capacité de barre de commandes.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
 
@@ -1713,7 +1713,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Dépassement au pointage](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")
 
@@ -1737,7 +1737,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Dépassement enfoncé](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")
 
@@ -1783,7 +1783,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Fenêtre Outil ancrée](../../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")
 
@@ -1801,7 +1801,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Fenêtre outil Active](../../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")
 
@@ -1819,7 +1819,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Fenêtre outil inactive](../../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")
 
@@ -1848,7 +1848,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Focus de la barre de titre](../../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")
 
@@ -1880,7 +1880,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Barre de titre inactive](../../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")
 
@@ -1916,13 +1916,13 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton actif de la barre de titre](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")
 
@@ -1962,7 +1962,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton de barre de titre actif au pointage](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")
 
@@ -2002,7 +2002,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton actif et enfoncé la barre de titre](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")
 
@@ -2051,7 +2051,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Onglet fenêtre outil axé](../../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")
 
@@ -2075,7 +2075,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Onglet de fenêtre outil inactif](../../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")
 
@@ -2101,9 +2101,9 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- ![Tool window background tab](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
+ ![Onglet d’arrière-plan de fenêtre outil](../../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")
 
  **Onglet de fenêtre outil arrière-plan**
 
@@ -2129,7 +2129,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Onglet d’arrière-plan de fenêtre outil au pointage](../../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")
 
@@ -2164,13 +2164,13 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
  N’utilisez pas...
 pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Auto&#45;masquer l’onglet](../../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")
 
@@ -2196,7 +2196,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Auto&#45;masquer l’onglet au pointage](../../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")
 
@@ -2248,7 +2248,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Champ d’entrée de recherche actif](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")
 
@@ -2276,7 +2276,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (glyphe Rechercher)
 
@@ -2316,7 +2316,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Champ d’entrée de recherche inactif](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")
 
@@ -2404,7 +2404,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Bouton d’action de recherche enfoncé](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")
 
@@ -2444,7 +2444,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Mise en surbrillance du champ d’entrée de recherche](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")
 
@@ -2460,7 +2460,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Bordure
 
-  Aucun.
+  Aucun
 
   Séparateur
 
@@ -2472,7 +2472,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Champ d’entrée de recherche désactivé](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")
 
@@ -2500,7 +2500,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (glyphe)
 
@@ -2508,7 +2508,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Bordure
 
-  Aucun.
+  Aucun
 
   ![Liste de recherche&#45;le bouton désactivé](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")
 
@@ -2516,7 +2516,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Présentation
 
-  Aucun.
+  Aucun
 
   Premier plan (glyphe)
 
@@ -2524,7 +2524,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
 
   Bordure
 
-  Aucun.
+  Aucun
 
 #### <a name="search-drop-down-lists"></a>Listes déroulantes de recherche
 
@@ -2546,7 +2546,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Bordure
 
@@ -2560,13 +2560,13 @@ Utilisez...
 
   `Environment.DropShadowBackground`
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Recherche suggérée](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")
 
@@ -2620,7 +2620,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Recherche suggérée au pointage](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")
 
@@ -2672,7 +2672,7 @@ Utilisez...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Recherche suggérée enfoncée](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")
 
@@ -2717,13 +2717,13 @@ quand vous avez besoin de créer un lien hypertexte personnalisé.
  N’utilisez pas...
 pour tout élément qui n’est pas un lien hypertexte.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Par défaut de lien hypertexte](../../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")
 
@@ -2737,7 +2737,7 @@ pour tout élément qui n’est pas un lien hypertexte.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Lien hypertexte au pointage](../../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")
 
@@ -2751,7 +2751,7 @@ pour tout élément qui n’est pas un lien hypertexte.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Lien hypertexte enfoncé](../../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")
 
@@ -2765,7 +2765,7 @@ pour tout élément qui n’est pas un lien hypertexte.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Lien hypertexte désactivé](../../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")
 
@@ -2788,11 +2788,11 @@ pour les éléments d’interface utilisateur non similaires à une barre d’in
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
+ ![Barre d’informations](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
- **Infobar**
+ **Barre d’informations**
 
  Présentation
 
@@ -2816,17 +2816,17 @@ quand vous créez une interface utilisateur que vous voulez faire correspondre a
 
  N’utilisez pas... pour quoi que ce soit, vous ne souhaitez toujours correspondre à la barre de défilement l’interface utilisateur.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Barre de défilement](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")
 
- **Scrollbar**
+ **Barre de défilement**
 
  Scrollbar
 
@@ -2856,11 +2856,11 @@ quand vous créez une interface utilisateur que vous voulez faire correspondre a
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Barre de défilement au pointage](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")
 
- **Scrollbar**
+ **Barre de défilement**
 
  Scrollbar
 
@@ -2890,11 +2890,11 @@ quand vous créez une interface utilisateur que vous voulez faire correspondre a
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- ![Scroll bar pressed](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
+ ![Barre de défilement enfoncée](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")
 
- **Scrollbar**
+ **Barre de défilement**
 
  Scrollbar
 
@@ -2932,13 +2932,13 @@ N’utilisez pas...
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Vue arborescente](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")
 
@@ -2956,7 +2956,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
   **Placez le curseur**
 
@@ -2964,7 +2964,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Arborescence au pointage](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")
 
@@ -2982,7 +2982,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
   **Faites glisser**
 
@@ -2990,7 +2990,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Glissement d’arborescence](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")
 
@@ -3008,15 +3008,15 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
-  **Selected**
+  **sélectionné**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Arborescence concentré](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")
 
@@ -3056,7 +3056,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
   **Pointage sélectionné**
 
@@ -3064,7 +3064,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![Arborescence actif au pointage](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")
 
@@ -3104,7 +3104,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
 ### <a name="button-controls"></a>Contrôles boutons
  ![Ligne rouge de contrôle de bouton](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")
@@ -3115,15 +3115,15 @@ pour les boutons situés dans la zone de configuration de document que vous voul
  N’utilisez pas...
 pour les boutons affichés sur un arrière-plan personnalisé qui ne fait pas partie d’un thème Visual Studio.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- ![Button](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
+ ![Bouton](../../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")
 
  Bouton
 
@@ -3139,7 +3139,7 @@ pour les boutons affichés sur un arrière-plan personnalisé qui ne fait pas pa
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Bouton désactivé](../../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")
 
@@ -3157,7 +3157,7 @@ pour les boutons affichés sur un arrière-plan personnalisé qui ne fait pas pa
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Bouton au pointage](../../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")
 
@@ -3175,9 +3175,9 @@ pour les boutons affichés sur un arrière-plan personnalisé qui ne fait pas pa
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- ![Button pressed](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
+ ![Bouton enfoncé](../../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")
 
  Bouton
 
@@ -3193,7 +3193,7 @@ pour les boutons affichés sur un arrière-plan personnalisé qui ne fait pas pa
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Bouton actif](../../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")
 
@@ -3214,13 +3214,13 @@ pour les contrôles de case à cocher contenus dans la zone de configuration de 
  N’utilisez pas...
 pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Case à cocher](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
 
@@ -3232,7 +3232,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  `CommonControls.CheckBoxBorder`
 
- Texte
+ Text
 
  `CommonControls.CheckBoxText`
 
@@ -3246,7 +3246,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Case à cocher désactivée](../../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")
 
@@ -3258,7 +3258,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  `CommonControls.CheckBoxBorderDisabled`
 
- Texte
+ Text
 
  `CommonControls.CheckBoxTextDisabled`
 
@@ -3272,7 +3272,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Case à cocher au pointage](../../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")
 
@@ -3284,7 +3284,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  `CommonControls.CheckBoxBorderHover`
 
- Texte
+ Text
 
  `CommonControls.CheckBoxTextHover`
 
@@ -3298,7 +3298,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Case à cocher enfoncée](../../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")
 
@@ -3310,7 +3310,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  `CommonControls.CheckBoxBorderPressed`
 
- Texte
+ Text
 
  `CommonControls.CheckBoxTextPressed`
 
@@ -3324,7 +3324,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Case à cocher active](../../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")
 
@@ -3336,7 +3336,7 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
 
  `CommonControls.CheckBoxBorderFocused`
 
- Texte
+ Text
 
  `CommonControls.CheckBoxTextFocused`
 
@@ -3356,13 +3356,13 @@ N’utilisez pas...
 
 - pour un [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.
 
-  **Default**
+  **Par défaut**
 
   Composant
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
 
@@ -3374,7 +3374,7 @@ N’utilisez pas...
 
   `CommonControls.ComboBoxBorder`
 
-  Texte
+  Text
 
   `CommonControls.ComboBoxText`
 
@@ -3396,7 +3396,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;désactivée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")
 
@@ -3408,7 +3408,7 @@ N’utilisez pas...
 
   `CommonControls.ComboBoxBorderDisabled`
 
-  Texte
+  Text
 
   `CommonControls.ComboBoxTextDisabled`
 
@@ -3430,7 +3430,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;zone de liste déroulante au pointage](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")
 
@@ -3442,7 +3442,7 @@ N’utilisez pas...
 
   `CommonControls.ComboBoxBorderHover`
 
-  Texte
+  Text
 
   `CommonControls.ComboBoxTextHover`
 
@@ -3464,7 +3464,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;appuyée de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
 
@@ -3476,7 +3476,7 @@ N’utilisez pas...
 
   `CommonControls.ComboBoxBorderPressed`
 
-  Texte
+  Text
 
   `CommonControls.ComboBoxTextPressed`
 
@@ -3498,7 +3498,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;zone de liste déroulante concentré](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
 
@@ -3510,7 +3510,7 @@ N’utilisez pas...
 
   `CommonControls.ComboBoxBorderFocused`
 
-  Texte
+  Text
 
   `CommonControls.ComboBoxTextFocused`
 
@@ -3532,7 +3532,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   ![DROP&#45;vers le bas&#47;entrée de texte de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
 
@@ -3596,9 +3596,9 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- Par défaut
+ Default
 
  Présentation
 
@@ -3659,9 +3659,9 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
- Par défaut
+ Default
 
  Présentation
 
@@ -3673,7 +3673,7 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
 
  Bordure
 
- Aucun.
+ Aucun
 
  Sélectionné (actif)
 
@@ -3687,7 +3687,7 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
 
  Bordure
 
- Aucun.
+ Aucun
 
  Sélectionné (inactif)
 
@@ -3701,7 +3701,7 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
 
  Bordure
 
- Aucun.
+ Aucun
 
 ## <a name="manifest-designer"></a>Concepteur de manifeste
 
@@ -3725,7 +3725,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Par défaut (sélectionné)
 
@@ -3737,7 +3737,7 @@ N’utilisez pas...
 
   Bordure
 
-  Aucun.
+  Aucun
 
   Volet Description
 
@@ -3784,16 +3784,16 @@ pour une interface utilisateur qui prend en charge l’étiquetage.
  N’utilisez pas...
 pour tout autre type d’interface utilisateur.
 
-### <a name="tag"></a>Balise
+### <a name="tag"></a>Tag
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Tag](../../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")
 
- **Default**
+ **Par défaut**
 
  Présentation
 
@@ -3829,7 +3829,7 @@ pour tout autre type d’interface utilisateur.
 
  ![Étiquette sélectionnée](../../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")
 
- **Selected**
+ **sélectionné**
 
  Présentation
 
@@ -3840,13 +3840,13 @@ pour tout autre type d’interface utilisateur.
  `Tag.SelectedBackgroundText`
 
 ### <a name="glyph-close-icon"></a>Glyphe (icône de fermeture)
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Balise &#40;glyphe&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
 
@@ -3866,7 +3866,7 @@ pour tout autre type d’interface utilisateur.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Balise &#40;glyphe&#41; pointage](../../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")
 
@@ -3890,7 +3890,7 @@ pour tout autre type d’interface utilisateur.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Balise &#40;glyphe&#41; enfoncé](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")
 
@@ -3914,7 +3914,7 @@ pour tout autre type d’interface utilisateur.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Étiquette sélectionnée](../../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")
 
@@ -3934,7 +3934,7 @@ pour tout autre type d’interface utilisateur.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Étiquette sélectionnée au pointage](../../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")
 
@@ -3958,7 +3958,7 @@ pour tout autre type d’interface utilisateur.
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Étiquette sélectionnée enfoncée](../../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")
 
@@ -3996,7 +3996,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Couche inférieure
 
@@ -4008,7 +4008,7 @@ N’utilisez pas...
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Couche supérieure
 
@@ -4042,7 +4042,7 @@ pour les zones qui ne sont pas similaires à une interface de commande.
 
   Élément
 
-  Nom du jeton : Category.color
+  Nom du jeton : Category.Color
 
   Barre de menus
 
@@ -4079,13 +4079,13 @@ quand vous concevez une fenêtre Outil que vous voulez toujours cohérente avec 
  N’utilisez pas...
 pour tout élément qui n’est pas similaire à l’interface utilisateur de la boîte à outils, ou si vous ne savez pas si votre interface utilisateur aura des problèmes, si les couleurs de la boîte à outils de l’interpréteur de commandes changent.
 
- **Default**
+ **Par défaut**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Nœud parent de boîte à outils](../../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")
 
@@ -4107,7 +4107,7 @@ pour tout élément qui n’est pas similaire à l’interface utilisateur de la
 
  Bordure
 
- Aucun.
+ Aucun
 
  Premier plan (glyphe)
 
@@ -4123,7 +4123,7 @@ pour tout élément qui n’est pas similaire à l’interface utilisateur de la
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Nœud enfant de boîte à outils au pointage](../../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")
 
@@ -4137,7 +4137,7 @@ pour tout élément qui n’est pas similaire à l’interface utilisateur de la
 
  Bordure
 
- Aucun.
+ Aucun
 
  Premier plan (texte)
 
@@ -4145,13 +4145,13 @@ pour tout élément qui n’est pas similaire à l’interface utilisateur de la
 
  Éléments individuels uniquement
 
- **Selected**
+ **sélectionné**
 
  Composant
 
  Élément
 
- Nom du jeton : Category.color
+ Nom du jeton : Category.Color
 
  ![Nœud parent de boîte à outils concentré](../../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")
 
@@ -4201,7 +4201,7 @@ pour tout élément qui n’est pas similaire à l’interface utilisateur de la
 
  Bordure
 
- Aucun.
+ Aucun
 
  Premier plan (glyphe)
 

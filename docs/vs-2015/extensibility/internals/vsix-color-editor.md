@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197242"
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleur VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier de
   
    **Étape 1 : Déterminez les noms de catégorie et le jeton pour les nouveaux jetons de couleur.**  
   
-   L’attribution de noms par défaut de schéma pour un VSColor est **[Category] [type d’interface utilisateur] [État]**. N’utilisez pas le mot « color » dans les noms de VSColor, car il est redondant.  
+   L’attribution de noms par défaut de schéma pour un VSColor est **[Category] [type d’interface utilisateur] [État]** . N’utilisez pas le mot « color » dans les noms de VSColor, car il est redondant.  
   
    Les noms de catégorie proposent des regroupements logiques et doivent être définis comme étroitement que possible. Par exemple, le nom d’une fenêtre outil unique peut être un nom de catégorie, mais n’est pas le nom d’une équipe unité ou un projet d’entreprise dans sa totalité. Regroupement des entrées en catégories permet d’éviter toute confusion entre les couleurs portant le même nom.  
   

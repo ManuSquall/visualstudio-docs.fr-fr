@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186393"
 ---
-# <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
+# <a name="tool-window-display-configuration"></a>Configuration de l’affichage de la fenêtre Outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quand un VSPackage enregistre une fenêtre outil, de la position par défaut, de taille, de style d’ancrage et d’autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [Windows d’outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,8 +40,8 @@ HKEY_LOCAL_MACHINE\
 |Nom|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
 |Nom|REG_SZ|« Nom court s’affiche ici »|Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre.|  
-|Float|REG_SZ|"X1,Y1,X2,Y2"|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
-|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> "AlwaysFloat"|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
+|Float|REG_SZ|« X1, Y1, X2, Y2 »|Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran.|  
+|Style|REG_SZ|« MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> « AlwaysFloat »|Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous.|  
 |Fenêtre|REG_SZ|*\<GUID>*|Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Orientation|REG_SZ|« Left »<br /><br /> « Droite »<br /><br /> « Top »<br /><br /> « Bottom »|Consultez la section commentaires ci-dessous.|  
 |DontForceCreate|REG_DWORD|0 ou 1|Lorsque cette entrée est présente et sa valeur n’est pas égal à zéro, la fenêtre est chargée, mais s’affiche pas immédiatement.|  
@@ -49,7 +49,7 @@ HKEY_LOCAL_MACHINE\
 ### <a name="comments"></a>Commentaires  
  L’entrée de l’Orientation définit la position où la fenêtre outil ancre lorsque l’utilisateur double-clique sur sa barre de titre. La position est relative à la fenêtre spécifiée dans l’entrée de la fenêtre. Si l’entrée de Style est définie sur « Lié », l’entrée de l’Orientation peut être « Left », « Droite », « Top » ou « Bottom ». Si l’entrée de Style est par « onglets », l’orientation de l’entrée peut être « gauche » ou « Right » et spécifie où l’onglet est ajouté. Si l’entrée de Style est « Flotter », la fenêtre Outil flotte tout d’abord. Lorsque vous double-cliquez sur la barre de titre, les entrées de l’Orientation et la fenêtre s’appliquent, et la fenêtre utilise le style par « onglets ». Si l’entrée de Style est « AlwaysFloat », la fenêtre outil ne peut pas être ancrée. Si l’entrée de Style est « MDI », la fenêtre outil est liée à la zone MDI, et l’entrée de la fenêtre est ignorée.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
   
 ```  
 HKEY_LOCAL_MACHINE\  
@@ -86,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Nom|Type|Données|Description|  
+|Name|Type|Données|Description|  
 |----------|----------|----------|-----------------|  
-|(Default)|REG_SZ|Aucun.|Laissez vide.|  
-|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Optionnel. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
+|(Default)|REG_SZ|Aucun|Laissez vide.|  
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|  
   
 ### <a name="example"></a>Exemple  
   

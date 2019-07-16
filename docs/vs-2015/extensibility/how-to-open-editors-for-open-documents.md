@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204149"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procédure : Ouvrir des éditeurs pour les documents ouverts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Avant d’un projet s’ouvre une fenêtre de document, le projet devez d’abor
 ## <a name="see-also"></a>Voir aussi  
  [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)   
  [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../extensibility/how-to-open-project-specific-editors.md)   
- [Guide pratique pour Ouvrir des éditeurs Standard](../extensibility/how-to-open-standard-editors.md)
+ [Guide pratique : ouvrir des éditeurs standard](../extensibility/how-to-open-standard-editors.md)

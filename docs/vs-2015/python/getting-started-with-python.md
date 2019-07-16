@@ -60,7 +60,7 @@ Les ressources suivantes vous permettront de démarrer :
 
 - [Guide d’installation](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Petites vidéos de démarrage et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Installation et démonstration des fonctionnalités (27 min)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Installation et démonstration des fonctionnalités (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Documentation](https://github.com/Microsoft/PTVS/wiki)  
 
 Notez que Visual Studio ne pas à l’heure actuelle fournit les moyens de créer un exécutable autonome à l’aide de Python, ce qui signifie essentiellement un programme avec un interpréteur Python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).

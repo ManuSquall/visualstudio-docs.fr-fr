@@ -12,11 +12,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156008"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Zone de test 2 : Obtenir à partir du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

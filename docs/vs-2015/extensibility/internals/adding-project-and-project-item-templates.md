@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b68c9f4bbaed73603c46fc0beab77a308b8933d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203857"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Ajout d’un projet et de modèles d’élément de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,10 +52,10 @@ Lorsque vous créez vos propres types de projet, vous devez fournir la prise en 
  Répertorie le CATID pour les objets qui sont utilisés pour étendre [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], et [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] systèmes de projet.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Guide pratique pour Ouvrez éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Guide pratique : ouvrir des éditeurs spécifiques à un projet](../../extensibility/how-to-open-project-specific-editors.md)  
  Fournit des instructions détaillées pour l’ouverture d’un élément intrinsèquement lié à un éditeur spécifique pour un projet.  
   
- [Guide pratique pour Ouvrir des éditeurs Standard](../../extensibility/how-to-open-standard-editors.md)  
+ [Guide pratique pour ouvrir des éditeurs standard](../../extensibility/how-to-open-standard-editors.md)  
  Fournit des instructions détaillées pour l’ouverture d’un éditeur standard.  
   
  [Sous-types de projets](../../extensibility/internals/project-subtypes.md)  

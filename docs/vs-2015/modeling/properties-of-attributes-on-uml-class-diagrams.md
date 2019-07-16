@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154865"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriétés d’attributs dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 
  Pour afficher les propriétés d’un attribut, cliquez avec le bouton droit dessus, puis cliquez sur **Propriétés**.  
 
-|   **Property**    | **Default**  |                                                                                                                                                                                                         Description                                                                                                                                                                                                          |
+|   **Propriété**    | **Par défaut**  |                                                                                                                                                                                                         Description                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Valeur par défaut** |   (vide)    |                                                                                                                                                                               Valeur de l’attribut quand le classifieur est instancié.                                                                                                                                                                                |
 | **Est en lecture seule**  |    False     |                                                                                                                                                                                    Si la valeur est true, la valeur de l’attribut ne peut pas être modifiée.                                                                                                                                                                                    |
@@ -63,7 +63,7 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 |    **Est une feuille**    |    False     |                                                                                                                                                                    Si la valeur est true, l’autorisation de la redéfinition de cet attribut dans les types dérivés n’est pas prévue.                                                                                                                                                                     |
 |  **Est dérivée**   |    False     |                                                                                                              Si la valeur est true, cet attribut est calculé à partir d’autres attributs. Par exemple, l’attribut Diagonal est calculé à partir de la largeur et la hauteur. Les détails doivent être écrits dans **Description** ou dans un commentaire associé.                                                                                                              |
 |  **Description**  |   (vide)    |                                                                                                                                                                        Pour des remarques générales ou pour définir des contraintes sur les valeurs dans l’attribut.                                                                                                                                                                        |
-| **Multiplicité**  |      1       | **1** - cet attribut a une valeur unique du type spécifié.<br /><br /> **0..1** - cet attribut peut avoir la valeur `null`.<br /><br /> **\\**\* -valeur de cet attribut est une collection de valeurs.<br /><br /> **1..\\**  \* -valeur de cet attribut est une collection qui contient au moins une valeur.<br /><br /> *n* **..** *m* - la valeur de cet attribut est une collection qui contient entre *n* et *m* valeurs. |
+| **Multiplicité**  |      1       | **1** - cet attribut a une valeur unique du type spécifié.<br /><br /> **0..1** - cet attribut peut avoir la valeur `null`.<br /><br /> **\\** \* -valeur de cet attribut est une collection de valeurs.<br /><br /> **1..\\**  \* -valeur de cet attribut est une collection qui contient au moins une valeur.<br /><br /> *n* **..** *m* - la valeur de cet attribut est une collection qui contient entre *n* et *m* valeurs. |
 |  **Est ordonné**   |    False     |                                                                                                                                                                    Si la valeur est true, la collection forme une liste séquentielle. Pour une valeur **Multiplicité** supérieure à 1.                                                                                                                                                                     |
 |   **Est unique**   |    False     |                                                                                                                                                                Si la valeur est true, la collection ne contient pas de valeur en double. Pour une valeur **Multiplicité** supérieure à 1.                                                                                                                                                                |
 

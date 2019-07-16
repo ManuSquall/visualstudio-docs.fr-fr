@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203503"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Visionneuse d'aide)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touc
 |Navigateurs|Alt+F<br /><br /> - OU -<br /><br /> Ctrl+Maj+F|Afficher l’onglet **Favoris**.|  
 |Navigateurs|Alt+S<br /><br /> - OU -<br /><br /> Ctrl+E<br /><br /> - OU -<br /><br /> Ctrl+Maj+S|Afficher l’onglet **Recherche**.|  
 |Navigateurs|Alt+M<br /><br /> - OU -<br /><br /> Ctrl+Maj+M|Afficher l’onglet **Gérer le contenu**.|  
-|Rubrique|Touche Menu contextuel<br /><br /> OU<br /><br /> Maj+F10|Afficher le menu contextuel de l’élément d’interface utilisateur actuel.|  
+|Rubrique|Touche Menu contextuel<br /><br /> Ou<br /><br /> Maj+F10|Afficher le menu contextuel de l’élément d’interface utilisateur actuel.|  
 |Rubrique|Flèche haut|Faire défiler vers le début du document, une ligne à la fois.|  
 |Rubrique|Flèche bas|Faire défiler vers la fin du document, une ligne à la fois.|  
 |Rubrique|Page précédente|Faire défiler vers le début du document, écran par écran.|  
@@ -82,9 +82,9 @@ Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touc
 |Options de la visionneuse|Alt+H|Définir le focus sur la liste **Nombre maximal d’entrées d’historique enregistrées**.|  
 |Options de la visionneuse|Alt+E|Cocher ou décocher la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1** si elle est activée.|  
 |Options de la visionneuse|Alt+O|Cocher ou décocher la case **Se connecter pour obtenir du contenu et rechercher les mises à jour du contenu** .|  
-|Find|Entrée|Définir le focus sur l’élément suivant.|  
+|Rechercher|Entrée|Définir le focus sur l’élément suivant.|  
 |Find|Maj+Entrée|Définir le focus sur l’élément précédent.|  
-|Find|Échap|Masquer la zone de texte **Rechercher**.|  
+|Rechercher|Échap|Masquer la zone de texte **Rechercher**.|  
 |Barre d'état|Alt+E|Ouvrir la boîte de dialogue **Erreur** si la barre d’état indique qu’une erreur s’est produite.|  
 |Barre d'état|Alt+U|Télécharger le contenu si la barre d’état indique que des mises à jour sont disponibles.|  
   

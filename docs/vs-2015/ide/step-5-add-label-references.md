@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Ajouter des références de contrôles Label | Microsoft Docs'
+title: 'Étape 5 : Ajouter des références de contrôles Label | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141982"
 ---
-# <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux contrôles Label
+# <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux contrôles Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le programme doit effectuer le suivi des contrôles d'étiquette que le joueur a choisis. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.  

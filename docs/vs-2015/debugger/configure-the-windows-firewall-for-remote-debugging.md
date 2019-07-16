@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161542"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Cette rubrique explique comment configurer le pare-feu pour activer le débogage
 |-|-|-|-|  
 |**Ports**|**Entrant/sortant**|**Protocole**|**Description**|  
 |135, 139, 445|Sortant|TCP|Requis.|  
-|137, 138|Sortant|UDP|Obligatoire.|  
+|137, 138|Sortant|UDP|Requis.|  
 |500, 4500|Sortant|UDP|Requis si votre stratégie de domaine nécessite que la communication réseau soit effectuée via IPSec.|  
 |80|Sortant|TCP|Requis pour le débogage du serveur web.|  
   

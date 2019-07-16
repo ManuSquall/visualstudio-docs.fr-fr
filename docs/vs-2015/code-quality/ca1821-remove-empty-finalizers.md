@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5a6175871e74bf3cb99610dce0926f0982f331d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201667"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimez les finaliseurs vides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58947945"
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
-|Category|Microsoft.Performance|
+|Catégorie|Microsoft.Performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -43,7 +43,7 @@ ms.locfileid: "58947945"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez pas un message à partir de cette règle. Échec de supprimer la finalisation diminue les performances et ne présente aucun avantage.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` directives et un finaliseur qui utilise le `#if DEBUG / #endif` directives correctement.
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.RemoveEmptyFinalizers/cs/FxCop.Performance.RemoveEmptyFinalizers.cs#1)]

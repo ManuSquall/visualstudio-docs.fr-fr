@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181327"
 ---
 # <a name="designing-user-interfaces"></a>Conception des interfaces utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,5 +29,5 @@ Vous pouvez créer et concevoir l’interface utilisateur de votre application �
 |Icônes standard disponibles pour vos programmes|[Bibliothèque d’images Visual Studio](../designers/the-visual-studio-image-library.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : créer une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
+ [Procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [Bibliothèque d’images Visual Studio](../designers/the-visual-studio-image-library.md)

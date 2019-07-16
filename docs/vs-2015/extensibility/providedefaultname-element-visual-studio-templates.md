@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58954213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193889"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58954213"
 Spécifie si le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] système de projet génère un nom par défaut pour le modèle dans le **ajouter un nouvel élément** ou **nouveau projet** boîte de dialogue.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -61,7 +61,7 @@ Spécifie si le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] système de projet 
   
  Utilisez le [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) élément pour spécifier le nom par défaut du projet ou élément dans le **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Le code suivant exemple définit le `ProvideDefaultName` élément à `false`.  
   
 ```  

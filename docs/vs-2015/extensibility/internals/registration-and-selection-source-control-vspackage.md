@@ -12,11 +12,11 @@ caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185821"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Inscription et sélection (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la
 |--------------|-------------|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
 |`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(valeur par défaut) = rg_sz :\<nom convivial du Package ><br /><br /> Service = rg_sz : {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(valeur par défaut) = rg_sz : #\<ID de ressource pour le nom localisé ><br /><br /> Package = rg_sz:{ID_Package}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Notez que le nom de clé, `SourceCodeControl`, est déjà utilisé par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et n’est pas disponible comme un choix pour \<PackageName >.)|(default) = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(valeur par défaut) = rg_sz : #\<ID de ressource pour le nom localisé ><br /><br /> Package = rg_sz : {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Notez que le nom de clé, `SourceCodeControl`, est déjà utilisé par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et n’est pas disponible comme un choix pour \<PackageName >.)|(valeur par défaut) = rg_sz : {ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Sélection d’un Package de contrôle de code Source  
  Plusieurs basée sur les API de plug-in de contrôle de Source de plug-ins et les VSPackages peuvent être inscrits simultanément de contrôle de code source. Le processus de sélection d’un plug-in de contrôle de code source ou d’un VSPackage doit s’assurer que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] charge le plug-in ou VSPackage au moment opportun et peut différer le chargement des composants inutiles jusqu'à ce qu’ils sont requis. En outre, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit supprimer toute l’interface utilisateur à partir d’autres packages VS inactive, y compris les éléments de menu, les boîtes de dialogue et les barres d’outils et afficher l’interface utilisateur pour le VSPackage actif.  

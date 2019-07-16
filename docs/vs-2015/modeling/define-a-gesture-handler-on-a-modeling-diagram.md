@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3da0988316f54b75cb8076b1f242280a71d9a624
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825930"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890482"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -296,7 +296,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
       IElement target = targetIShape.Element;  
       ```  
 
-        You can cast this to a more specific type of element.  
+      Vous pouvez le caster en un type d’élément plus spécifique.  
 
   - Pour obtenir le magasin de modèles UML qui contient le modèle UML :  
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
   
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ## <a name="DragExample"></a> Exemple  
  L’exemple suivant montre comment créer des lignes de vie dans un diagramme de séquence, en fonction des parties et des ports d’un composant ayant fait l’objet d’un glissement à partir d’un diagramme de composant.  

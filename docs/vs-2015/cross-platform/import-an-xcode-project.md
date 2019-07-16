@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150982"
 ---
 # <a name="import-an-xcode-project"></a>Importer un projet Xcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
     ![Volet Cibles de destination de l’Assistant Importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Pour chaque cible sélectionnée dans **Cibles à importer**, l’Assistant détecte automatiquement les fichiers de code C++ qui peuvent être fractionnés en projet de bibliothèque statique distinct, puis les place dans la section **Éléments de projet C++**. Le reste du code et des ressources est laissé dans la section **Éléments de projet Xcode**. Une fois que l’Assistant a effectué le processus d’importation, ils deviennent des projets de bibliothèque statique et d’application distincts dans Visual Studio. Par défaut, les cibles de test unitaire et de framework ne sont pas fractionnées en projets distincts par l’Assistant.  
+    Pour chaque cible sélectionnée dans **Cibles à importer**, l’Assistant détecte automatiquement les fichiers de code C++ qui peuvent être fractionnés en projet de bibliothèque statique distinct, puis les place dans la section **Éléments de projet C++** . Le reste du code et des ressources est laissé dans la section **Éléments de projet Xcode**. Une fois que l’Assistant a effectué le processus d’importation, ils deviennent des projets de bibliothèque statique et d’application distincts dans Visual Studio. Par défaut, les cibles de test unitaire et de framework ne sont pas fractionnées en projets distincts par l’Assistant.  
   
     Pour changer les fichiers contenus dans chaque projet, utilisez les boutons de déplacement vers le haut et le bas. Une fois que la liste des fichiers de chaque projet vous convient, choisissez **Suivant** pour continuer.  
   
@@ -54,7 +54,7 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
     ![Volet Propriétés globales de l’importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Vous pouvez également définir ces chemins globaux dans Visual Studio, dans la boîte de dialogue **Options**. Pour les trouver, dans le menu **Outils**, sélectionnez **Options**. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++**, **iOS**, **Propriétés globales**.  
+    Vous pouvez également définir ces chemins globaux dans Visual Studio, dans la boîte de dialogue **Options**. Pour les trouver, dans le menu **Outils**, sélectionnez **Options**. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++** , **iOS**, **Propriétés globales**.  
   
     Choisissez **Suivant** pour continuer.  
   
