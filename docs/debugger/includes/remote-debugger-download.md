@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032880"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149196"
 ---
 Sur l’appareil distant ou serveur que vous souhaitez déboguer sur, plutôt que l’ordinateur Visual Studio, téléchargez et installez la version correcte des outils distants parmi les liens dans le tableau suivant.
 
@@ -26,7 +26,7 @@ Sur l’appareil distant ou serveur que vous souhaitez déboguer sur, plutôt qu
 |-|-|-|
 |Visual Studio 2019|[Outils à distance](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|Compatible avec toutes les versions de Visual Studio 2019. Téléchargez la version correspondant à votre système d’exploitation (x 86, x64 ou ARM64). Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
 |Visual Studio 2017|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Compatible avec toutes les versions de Visual Studio 2017. Téléchargez la version correspondant à votre système d’exploitation (x 86, x64 ou ARM64). Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
-|Visual Studio 2015|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Les outils à distance pour Visual Studio 2015 sont disponibles à partir de My.VisualStudio.com. Si vous y êtes invité, participez à la version gratuite [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programme, ou connectez-vous avec votre ID d’abonnement Visual Studio. Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
+|Visual Studio 2015|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Les outils à distance pour Visual Studio 2015 sont disponibles à partir de My.VisualStudio.com. Si vous y êtes invité, participez à la version gratuite [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programme, ou connectez-vous avec votre ID d’abonnement Visual Studio. Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
 |Visual Studio 2013|[Outils à distance](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Télécharger la page dans la documentation de Visual Studio 2013|
 |Visual Studio 2012|[Outils à distance](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Télécharger la page dans la documentation de Visual Studio 2012|
 
@@ -37,7 +37,7 @@ Sur l’appareil distant ou serveur que vous souhaitez déboguer sur, plutôt qu
 |Version|Lien|Notes|
 |-|-|-|
 |Visual Studio 2017|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Compatible avec toutes les versions de Visual Studio 2017. Téléchargez la version correspondant à votre système d’exploitation (x 86, x64 ou ARM64). Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide. Pour la version la plus récente des outils à distance, ouvrez le [Visual Studio 2019 doc](../../debugger/remote-debugging.md?view=vs-2019).|
-|Visual Studio 2015|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Les outils à distance pour Visual Studio 2015 sont disponibles à partir de My.VisualStudio.com. Si vous y êtes invité, participez à la version gratuite [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programme, ou connectez-vous avec votre ID d’abonnement Visual Studio. Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
+|Visual Studio 2015|[Outils à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Les outils à distance pour Visual Studio 2015 sont disponibles à partir de My.VisualStudio.com. Si vous y êtes invité, participez à la version gratuite [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programme, ou connectez-vous avec votre ID d’abonnement Visual Studio. Sur Windows Server, consultez [débloquer le téléchargement du fichier](../../debugger/remote-debugging-unblock-file-download.md) pour télécharger les outils à distance de l’aide.|
 |Visual Studio 2013|[Outils à distance](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Télécharger la page dans la documentation de Visual Studio 2013|
 |Visual Studio 2012|[Outils à distance](/previous-versions/visualstudio/visual-studio-2012/bt727f1t(v=vs.110)#installing-the-remote-tools)|Télécharger la page dans la documentation de Visual Studio 2012|
 

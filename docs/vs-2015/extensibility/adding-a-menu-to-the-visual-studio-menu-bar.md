@@ -12,11 +12,11 @@ caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184927"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Ajout d’un menu à la barre de menus de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Cette procédure pas à pas montre comment ajouter un menu dans la barre de menu
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Création d’un projet VSIX qui dispose d’un modèle d’élément de commande personnalisée
 
-1. Créez un projet VSIX nommé `TopLevelMenu`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** / **extensibilité**.  Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Créez un projet VSIX nommé `TopLevelMenu`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#**  / **extensibilité**.  Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **commande de test**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **TestCommand.cs**.
 

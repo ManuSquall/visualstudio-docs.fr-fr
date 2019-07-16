@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199807"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procédure : Choisissez les méthodes de collecte
+# <a name="how-to-choose-collection-methods"></a>Procédure : Choisir les méthodes de collecte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge trois méthodes de collecte des données de performances : l’échantillonnage, l’instrumentation et l’accès concurrentiel. Vous pouvez également utiliser les méthodes d’instrumentation et d’échantillonnage pour collecter des données de durée de vie et d’allocation de la mémoire .NET.  

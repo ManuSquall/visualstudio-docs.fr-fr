@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178338"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procédure : Spécifier la cible à générer en premier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 #### <a name="to-specify-one-initial-target"></a>Pour spécifier une cible initiale  
   
-- Spécifiez la cible par défaut dans l’attribut `InitialTargets` de l’élément `Project`. Exemple :  
+- Spécifiez la cible par défaut dans l’attribut `InitialTargets` de l’élément `Project`. Par exemple :  
   
    `<Project InitialTargets="Clean">`  
   
@@ -47,7 +47,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 #### <a name="to-specify-one-default-target"></a>Pour spécifier une cible par défaut  
   
-- Spécifiez la cible par défaut dans l’attribut `DefaultTargets` de l’élément `Project`. Exemple :  
+- Spécifiez la cible par défaut dans l’attribut `DefaultTargets` de l’élément `Project`. Par exemple :  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -64,17 +64,17 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Pour utiliser en premier une cible autre que la cible par défaut  
   
-- Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **/target**. Exemple :  
+- Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **/target**. Par exemple :  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Pour utiliser en premier plusieurs cibles autres que les cibles par défaut  
   
-- Répertoriez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **/target**. Exemple :  
+- Répertoriez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **/target**. Par exemple :  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>Voir aussi
   [MSBuild](msbuild.md)  
  [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)   
- [Guide pratique pour Nettoyer une génération](../msbuild/how-to-clean-a-build.md)
+ [Guide pratique pour nettoyer une build](../msbuild/how-to-clean-a-build.md)

@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149128"
 ---
 # <a name="launching-the-debugger"></a>Lancement du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Lancement du débogueur nécessite l’envoi de la séquence des méthodes et de
   
      Si `S_FALSE` est retourné, le moteur de débogage (dé) doit être chargé en cours de la machine virtuelle.  
   
-     - ou -  
+     ou  
   
      Si `S_OK` est retourné, l’Allemagne est chargé dans le processus du SDM. Le SDM effectue ensuite les tâches suivantes :  
   

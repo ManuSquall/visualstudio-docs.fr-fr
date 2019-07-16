@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144271"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `InitialTargets`. Toutes les cibles initiales sont agrégées et exécutées dans l’ordre.  
   
- Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d’informations, consultez [Guide pratique pour Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Cibles par défaut  
  L’attribut `DefaultTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie la ou les cibles qui sont générées si aucune cible n’est spécifiée explicitement sur une ligne de commande.  
@@ -65,13 +65,13 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `DefaultTargets`. Le premier attribut `DefaultTargets` rencontré détermine les cibles par défaut qui s’exécuteront.  
   
- Pour plus d'informations, voir [Procédure : Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d’informations, consultez [Guide pratique pour Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Première cible  
  En l’absence de cibles initiales, cibles par défaut ou cibles de ligne de commande, MSBuild exécute la première cible qu’il rencontre dans le fichier projet ou dans les fichiers projet importés.  
   
 ## <a name="target-dependencies"></a>Dépendances de cible  
- Les cibles peuvent décrire les relations de dépendance existant les unes avec les autres. L’attribut `DependsOnTargets` indique qu’une cible dépend d’autres cibles. Par exemple :  
+ Les cibles peuvent décrire les relations de dépendance existant les unes avec les autres. L’attribut `DependsOnTargets` indique qu’une cible dépend d’autres cibles. Par exemple,  
   
 ```  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  

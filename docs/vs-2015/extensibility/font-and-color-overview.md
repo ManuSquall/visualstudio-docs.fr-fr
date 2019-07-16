@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204348"
 ---
-# <a name="font-and-color-overview"></a>Vue d’ensemble de la couleur et de police
+# <a name="font-and-color-overview"></a>Présentation de la couleur et de la police
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Il présente également les concepts des catégories et des éléments d’affichage, et il explique comment les VSPackages et l’éditeur principal utilisent des attributs de texte.  
@@ -73,7 +73,7 @@ Cette rubrique décrit les paramètres de police et la couleur du texte dans le 
   
 - La possibilité pour les deux utiliser des éléments d’affichage intégrées à partir de la **texte EditorCategory** et d’étendre les.  
   
-   Pour plus d'informations, voir [Procédure : Utiliser des éléments Coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments Coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
+   Pour plus d’informations, consultez [Guide pratique pour Utiliser des éléments Coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments Coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistance automatique du courant de l’état de ces deux intégrés et personnalisé afficher les éléments avec le **éditeur de texte** catégorie.  
   

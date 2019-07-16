@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204052"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procédure : Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 - Définissez l’entrée de Registre suivante (en ajoutant la valeur si nécessaire) :  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001  
+     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = DWORD : 00000001  
   
      Cet avertissement s’affiche pour tous les non -[!INCLUDE[vsvss](../includes/vsvss-md.md)] plug-ins.  
   
@@ -35,9 +35,9 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 - Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000  
+     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = DWORD : 00000000  
   
-     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = dword:00000001  
+     HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\UseOldSCC = DWORD : 00000001  
   
      Cet avertissement s’affiche si le plug-in de contrôle de code source ne pas explicitement en charge la réentrance pour plusieurs projets (autrement dit, s’il peut vérifier dans un seul fichier et de projet à la fois).  
   

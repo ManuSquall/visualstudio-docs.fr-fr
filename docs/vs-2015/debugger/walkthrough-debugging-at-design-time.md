@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149426"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : Débogage au moment du Design
+# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : Débogage au moment du design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  

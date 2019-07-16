@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151018"
 ---
 # <a name="create-an-android-native-activity-app"></a>Créer une application Android Native Activity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Quand vous installez l’option Visual C++ pour le développement mobile multipl
   
 1. Ouvrez Visual Studio. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles**, choisissez **Visual C++**, **Interplateforme**, puis choisissez le modèle **Application Native Activity (Android)** .  
+2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles**, choisissez **Visual C++** , **Interplateforme**, puis choisissez le modèle **Application Native Activity (Android)** .  
   
 3. Donnez à l’application un nom comme `MyAndroidApp`, puis choisissez **OK**.  
   

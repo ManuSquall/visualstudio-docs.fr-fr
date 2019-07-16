@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: beea8103cce20d7437965b94a5ace10605847546
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145123"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : Schéma simple
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

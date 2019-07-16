@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256210"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149225"
 ---
 Ces étapes indiquent uniquement une configuration de base d’IIS. Pour plus d’informations ou pour installer sur un ordinateur de bureau de Windows, consultez [publication sur IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) ou [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 

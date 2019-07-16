@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442365"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890659"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procédure : Ajouter une commande au menu contextuel
 
@@ -32,7 +32,7 @@ En résumé, les étapes sont effectuées dans le projet DslPackage comme suit 
    Pour obtenir des exemples, consultez le [site Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
-> Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+> Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d’informations, consultez [Guide pratique pour Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="define-a-command-using-mef"></a>Définir une commande à l’aide de MEF
 
@@ -141,7 +141,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
 2. Recherchez l'attribut `ProvideMenuResource`.
 
-3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :
+3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,13 +161,14 @@ La classe de jeu de commandes est dérivée de <xref:Microsoft.VisualStudio.Mode
 
 2. Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Remarque** si vous avez utilisé le modèle de classe pour créer le fichier, vous devez corriger l’espace de noms et le nom de classe.
+     > [!NOTE]
+     > Si vous avez utilisé le modèle de classe pour créer le fichier, vous devez corriger l’espace de noms et le nom de classe.
 
 Votre code de jeu de commandes devra généralement importer les espaces de noms suivants :
 
@@ -330,11 +331,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Cliquez avec le bouton droit sur différents éléments du diagramme pour vérifier que la commande est activée ou désactivée correctement et affichée ou masquée de manière appropriée, en fonction de l'élément sélectionné.
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Résolution des problèmes
 
 **Commande n’apparaît pas dans le menu :**
 
-- La commande apparaît uniquement dans les instances de débogage de Visual Studio jusqu'à ce que vous installiez le package DSL. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+- La commande apparaît uniquement dans les instances de débogage de Visual Studio jusqu'à ce que vous installiez le package DSL. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Assurez-vous que votre exemple expérimental a l'extension de nom de fichier correcte pour cette solution DSL. Pour vérifier l'extension de nom de fichier, ouvrez DslDefinition.dsl dans l'instance principale de Visual Studio. Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur le nœud Éditeur, puis cliquez sur Propriétés. Dans la fenêtre Propriétés, examinez la propriété FileExtension.
 
@@ -362,7 +363,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Guide pratique pour modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)
+- [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md)
 - [Exemple de code : Diagrammes de circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

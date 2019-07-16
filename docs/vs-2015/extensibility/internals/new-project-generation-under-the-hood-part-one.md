@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184137"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Le chemin d’accès de Visual Studio installation > \VC#\VCSPackages\1033\csprojui.dll  
   
- Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui.dll dans le répertoire Visual Studio... La table de chaînes montre que les ressources #2345 porte la légende **Visual C#**.  
+ Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui.dll dans le répertoire Visual Studio... La table de chaînes montre que les ressources #2345 porte la légende **Visual C#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Ce paramètre détermine la position du nœud racine dans le **types de projets** arborescence.  
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nouvelle génération de projet : Rouages du système, seconde partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

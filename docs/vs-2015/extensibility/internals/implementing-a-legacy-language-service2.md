@@ -11,22 +11,22 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192708"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implémentation d’un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pour implémenter un service de langage à l’aide de l’infrastructure de package managé (MPF), vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes abstraites suivantes et les propriétés :  
   
-- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>   
+- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  
   
-- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>   
+- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
   
-- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>   
+- Méthode <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>  
   
 - La propriété <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>  
   
@@ -121,7 +121,7 @@ namespace TestLanguagePackage
 ## <a name="parsesource-method"></a>ParseSource (méthode)  
  Analyse le fichier source selon un certain nombre de raisons. Cette méthode reçoit un <xref:Microsoft.VisualStudio.Package.ParseRequest> objet qui décrit ce qui est attendu à partir d’une opération d’analyse spécifique. Le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode appelle un analyseur plus complexe qui détermine la fonctionnalité du jeton et l’étendue. Le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode est utilisée dans la prise en charge pour les opérations IntelliSense, ainsi que la correspondance des accolades. Même si vous ne gèrent pas ces opérations avancées, vous devez retourner encore valide <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet et qui vous oblige à créer une classe qui implémente le <xref:Microsoft.VisualStudio.Package.AuthoringScope> interface et implémenter toutes les méthodes sur cette interface. Vous pouvez retourner des valeurs null à partir de toutes les méthodes, mais le <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet lui-même ne doit pas être une valeur null.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
  Cet exemple montre une implémentation minimale de la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> (méthode) et le <xref:Microsoft.VisualStudio.Package.AuthoringScope> (classe), suffisante pour permettre au service de langage compiler et fonctionner sans réellement prenant en charge les fonctionnalités plus avancées.  
   
 ```csharp  
@@ -171,7 +171,7 @@ namespace TestLanguagePackage
 ## <a name="name-property"></a>Propriété Name  
  Cette propriété retourne le nom du service de langage. Cela doit être le même nom donné lorsque le service de langage a été inscrit. Ce nom est utilisé dans plusieurs emplacements, dont le plus important est le <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe où le nom est utilisé pour accéder au Registre. Le nom retourné par cette propriété ne doit pas être localisé car il est utilisé dans le Registre pour l’entrée de Registre et les noms de clé.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
  Cet exemple montre une implémentation possible du <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> propriété. Notez que le nom ici est codé en dur : le nom réel doit être obtenu à partir d’un fichier de ressources afin qu’il peut être utilisé dans l’inscription d’un service de langage (consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
 ```csharp  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157714"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027 : Marquer les enums avec FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58948212"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
