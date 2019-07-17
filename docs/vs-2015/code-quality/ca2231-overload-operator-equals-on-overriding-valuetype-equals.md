@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679df7b916740ad1a45d624f9f50d38c94d64caf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201560"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58951780"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverridingValueTypeEquals|
 |CheckId|CA2231|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -39,7 +39,7 @@ ms.locfileid: "58951780"
 ## <a name="rule-description"></a>Description de la règle
  Dans la plupart des langages de programmation il n’existe pas d’implémentation par défaut de l’opérateur d’égalité (==) pour les types valeur. Si votre langage de programmation prend en charge les surcharges d’opérateur, vous devez envisager d’implémenter l’opérateur d’égalité. Son comportement doit être identique à celle de <xref:System.Object.Equals%2A>.
 
- Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela provoque un dépassement de capacité de pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object.Equals dans votre implémentation. Exemple :
+ Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela provoque un dépassement de capacité de pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object.Equals dans votre implémentation. Par exemple :
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
