@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158942"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigation et mise à jour d'un modèle dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
   
  [Objet DocView et DocData](#docdata)  
   
- Formes, des connecteurs et des diagrammes et leurs relations aux éléments de modèle sont décrits dans une rubrique distincte. Pour plus d'informations, voir [Procédure : Parcourir et mettre à jour un schéma](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Formes, des connecteurs et des diagrammes et leurs relations aux éléments de modèle sont décrits dans une rubrique distincte. Pour plus d’informations, consultez [Guide pratique pour Parcourir et mettre à jour un schéma](../misc/how-to-navigate-and-update-a-diagram.md).  
   
 ## <a name="example"></a> Un exemple de définition DSL  
  Il s’agit de la partie principale de DslDefinition.dsl pour les exemples de cette rubrique :  
@@ -93,7 +93,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
   
  En cas de la définition DSL, une propriété **type** est **Calculated**, vous ne pouvez pas la définir. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).  
   
-### <a name="relationships"></a>Relations  
+### <a name="relationships"></a>Relationships  
  Relations de domaine que vous définissez dans la définition DSL deviennent des paires de propriétés, l’autre sur la classe à chaque extrémité de la relation. Les noms des propriétés apparaissent dans le diagramme DslDefinition comme des étiquettes sur les rôles de chaque côté de la relation. En fonction de la multiplicité du rôle, le type de la propriété est la classe à l’autre extrémité de la relation, ou une collection de cette classe.  
   
  `foreach (Person child in henry.Children) { ... }`  
@@ -120,7 +120,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- Il existe également d’autres méthodes pour accéder à des liens. Exemple :  
+ Il existe également d’autres méthodes pour accéder à des liens. Par exemple :  
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
@@ -144,7 +144,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
  `store.ElementDirectory.GetElement(elementId);`  
   
 ## <a name="metadata"></a> L’accès aux informations de classe  
- Vous pouvez obtenir des informations sur les classes, les relations et les autres aspects de la définition DSL. Exemple :  
+ Vous pouvez obtenir des informations sur les classes, les relations et les autres aspects de la définition DSL. Par exemple :  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -235,13 +235,13 @@ using (Transaction t =
   
  Il existe trois façons dans lequel vous pouvez créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :  
   
-- Définissez la propriété de l’acteur de rôle source. Exemple :  
+- Définissez la propriété de l’acteur de rôle source. Par exemple :  
   
   - `familyTree.People.Add(edward);`  
   
   - `edward.Parents.Add(henry);`  
   
-- Définissez la propriété de l’acteur de rôle cible. Exemple :  
+- Définissez la propriété de l’acteur de rôle cible. Par exemple :  
   
   - `edward.familyTreeModel = familyTree;`  
   
@@ -251,7 +251,7 @@ using (Transaction t =
   
        La multiplicité de ce rôle est `0..*`, de sorte que nous ajoutons à la collection.  
   
-- Construire explicitement une instance de la relation. Exemple :  
+- Construire explicitement une instance de la relation. Par exemple :  
   
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
@@ -364,7 +364,7 @@ using (Transaction t = targetDiagram.Store.
 |Relation de domaine|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
 |Forme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
 |Connecteur|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
-|Diagramme|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
+|Diagram|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
   
  Un élément dans un diagramme représente généralement un élément de modèle. Généralement (mais pas toujours), un <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> représente une instance de classe de domaine et un <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> représente une instance de relation de domaine. Le <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relation lie une forme de nœud ou un lien à l’élément de modèle qu’il représente.  
   

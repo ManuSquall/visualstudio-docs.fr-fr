@@ -13,11 +13,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1188f18e4a6f604dfd82991433bc0ffe0a07ad47
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148568"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,6 +64,6 @@ IDebugProgramNode2 : IUnknown
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)   
  [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   
  [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

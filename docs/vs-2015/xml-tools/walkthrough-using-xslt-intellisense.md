@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158606"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Procédure pas à pas : Utilisation d’IntelliSense XSLT
+# <a name="walkthrough-using-xslt-intellisense"></a>Procédure pas à pas : Utilisation de XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser IntelliSense XSLT pour effectuer la saisie semi-automatique de valeurs de certains attributs.  

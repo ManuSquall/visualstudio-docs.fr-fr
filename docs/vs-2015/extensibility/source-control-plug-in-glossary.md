@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f5120a5c6678cac32ef65e08ef7dc34649364cf9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160602"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossaire de plug-in de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ L’utiles termes et définitions ci-après se rapportent à la documentation du
  Répertoire  
  Un dossier local côté client est désigné en tant que répertoire. Il s’agit de la copie dans laquelle un utilisateur apporte réellement des modifications. Il peut y avoir de nombreuses copies de travail d’un projet donné ; en règle générale, chaque développeur a sa propre copie.  
   
- Télécharger  
+ Obtenir  
  Une opération get apporte la copie de travail utilisateur à jour avec la copie du référentiel. Contrairement à une extraction, une opération get est effectuée lorsque l’utilisateur a besoin de la dernière copie simplement mais prévoit d’apporter aucune modification.  
   
  Historique  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d60f88c4d1532a03922f12f21bb9b455ef5d84d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153797"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procédure : Déboguer une application ClickOnce avec des autorisations restreintes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ En tant que développeur, vous exécutez probablement votre ordinateur de dével
 6. Dans la zone de texte **Déboguer cette application comme si elle était téléchargée de l’URL suivante** , entrez une URL ou un chemin réseau.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Guide pratique : Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)

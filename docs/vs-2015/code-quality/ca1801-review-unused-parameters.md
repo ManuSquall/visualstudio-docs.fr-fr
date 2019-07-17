@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143138"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : 
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
-|Category|Microsoft.Usage|  
+|Catégorie|Microsoft.Usage|  
 |Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification vous apporter.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

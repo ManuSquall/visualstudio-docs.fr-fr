@@ -12,11 +12,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155033"
 ---
 # <a name="creating-project-types"></a>Création de types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous pouvez étendre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en créant 
  [Décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md)  
  Décrit l’élément, persistance d’un fichier projet et les décisions de conception mécanique d’engagement que vous avez à faire avant de créer un nouveau type de projet.  
   
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Liste de contrôle : Création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Fournit une vue d’ensemble des étapes à suivre pour créer un nouveau type de projet qui prend en charge les tâches de programmation en tant que la modification du code et compilation, création, le débogage et déploiement d’applications dans votre projet.  
   
  [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

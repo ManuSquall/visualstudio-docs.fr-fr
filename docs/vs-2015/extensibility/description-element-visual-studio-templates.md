@@ -11,11 +11,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162114"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58947924"
 Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<Description>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,8 +45,8 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> ID un GUID qui spécifie le package Visual Studio d'.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de ressource de Visual Studio.|  
+|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
+|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -58,7 +58,7 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
- Une valeur de texte est obligatoire, sauf si le `Package` et `ID` attributs sont utilisés.  
+ Une valeur texte est requise, sauf si les attributs `Package` et `ID` sont utilisés.  
   
  Le texte fournit une description du modèle.  
   

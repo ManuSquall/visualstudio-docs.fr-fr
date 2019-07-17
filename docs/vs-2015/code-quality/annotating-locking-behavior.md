@@ -34,11 +34,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157109"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
   
  Les annotations SAL d'accès concurrentiel sont conçues pour vous aider à spécifier les effets secondaires du verrouillage, le responsable du verrouillage, la tutelle de données, la hiérarchie d'ordre de verrou et d'autres comportements de verrouillage prévus. En transformant des règles implicites en règles explicites, les annotations d'accès concurrence SAL vous permettent de documenter la façon dont votre code utilise des règles de verrouillage. Les annotations d'accès concurrentiel améliorent également la capacité des outils d'analyse du code à rechercher des conditions de concurrence, des interblocages, des opérations de synchronisation incompatibles et d'autres erreurs subtiles d'accès concurrentiel.  
   
-## <a name="general-guidelines"></a>Indications générales  
+## <a name="general-guidelines"></a>Instructions générales  
  Les annotations permettent aux programmeurs de déclarer les contrats sous-entendus par les définitions de fonction entre les implémentations (appelés) et les clients (appelants) et d'exprimer les invariants et d'autres propriétés du programme qui peuvent améliorer davantage l'analyse.  
   
  SAL prend en charge de nombreux types de primitives de verrouillage, tels que les sections critiques, les mutex, les verrous de rotation et d'autres objets de ressource. Plusieurs annotations d’accès concurrentiel prennent une expression de verrouillage en tant que paramètre. Par convention, un verrou est indiqué par l’expression de chemin d’accès de l’objet de verrouillage sous-jacent.  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: ea70b7f9462e3195a78b915691a5069ebd6fe6aa
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154356"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120 : Sécurisez les constructeurs de sérialisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59000424"
 |-|-|
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

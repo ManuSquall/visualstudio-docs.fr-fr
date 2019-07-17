@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189162"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1709 : 
 |-|-|  
 |TypeName|IdentifiersShouldBeCasedCorrectly|  
 |CheckId|CA1709|  
-|Category|Microsoft.Naming|  
+|Catégorie|Microsoft.Naming|  
 |Modification avec rupture|Avec rupture - lorsque déclenchée sur les assemblys, espaces de noms, types, membres et paramètres.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|  
   
 ## <a name="cause"></a>Cause  
@@ -62,7 +62,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1709 : 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Il est possible de supprimer cet avertissement si vous avez vos propres conventions d’affectation de noms, ou si l’identificateur représente un nom approprié, par exemple, le nom d’une société ou une technologie sans.  
   
- Vous pouvez également ajouter des termes, abréviations et acronymes à un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d'informations, voir [Procédure : Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ Vous pouvez également ajouter des termes, abréviations et acronymes à un dictionnaire d’analyse du code personnalisé. Termes spécifiés dans le dictionnaire personnalisé n’entraînent pas de violations de cette règle. Pour plus d’informations, consultez [Guide pratique pour Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Règles associées  
  [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

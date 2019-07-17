@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157971"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60113519"
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Category|Microsoft.Performance|
+|Catégorie|Microsoft.Performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause

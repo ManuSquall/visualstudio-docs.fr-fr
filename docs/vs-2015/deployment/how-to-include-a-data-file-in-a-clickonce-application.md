@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153765"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
 2. Mettre à jour votre manifeste d’application vers le fichier de données de liste.  
   
-    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
+    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
   
     Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
   
@@ -59,7 +59,7 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
     **manifeste de l’application appm manifeste - déploiement -u Mage**  
   
-    **mage -s deployment manifest -cf certfile -pwd password**  
+    **mot de passe - pwd cf - certfile de manifeste de déploiement de s - Mage**  
   
 6. 
   

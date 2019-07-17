@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192758"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,8 +38,8 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
 |Colonne|Description|  
 |------------|-----------------|  
 |**Name**|Symbole qui identifie de manière unique la fonction qui contient le site d'appel. Le symbole de débogage de la fonction est affiché quand il est disponible. Par ailleurs, le décalage de fonction est affiché.|  
-|**Fichier**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|  
-|**Emplacement**|Numéro de ligne du site d'appel.|  
+|**File**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|  
+|**Lieu**|Numéro de ligne du site d'appel.|  
   
 ### <a name="links-to-graphics-objects"></a>Liens vers les objets graphiques  
  Pour comprendre l'événement graphique sélectionné, vous aurez peut-être besoin d'informations sur les objets Direct3D auxquels il est associé. La fenêtre **Pile des appels des événements Graphics** fournit des liens vers ces informations.  

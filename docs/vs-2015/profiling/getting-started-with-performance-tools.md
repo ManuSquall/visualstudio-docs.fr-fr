@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158217"
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Cette section fournit une vue d’ensemble des concepts et des tâches que vous 
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Profilez rapidement une application ou un site Web :** Utilisez l’Assistant Performance pour configurer et exécuter une session de profilage pour une solution Visual Studio ou un site Web.|-   [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Profiler une application sans l’Assistant :** Apprenez à utiliser les pages de propriétés de session de performance pour créer une session de performance.|-   [Guide pratique pour créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Profilez rapidement une application ou un site Web :** Utilisez l’Assistant Performance pour configurer et exécuter une session de profilage pour une solution Visual Studio ou un site Web.|-   [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Guide pratique : collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Profiler une application sans l’Assistant :** Apprenez à utiliser les pages de propriétés de session de performance pour créer une session de performance.|-   [Guide pratique : créer manuellement des sessions de performance](../profiling/how-to-manually-create-performance-sessions.md)|  
 |**Essaie :** Acquérez une expérience pratique en profilant un exemple d’application.|-   [Procédure pas à pas : identification des problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [PeopleTrax, exemple](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Voir aussi  

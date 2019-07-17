@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176506"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procédure : Basculer vers un autre Thread pendant un débogage
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procédure : Basculer vers un autre thread pendant un débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous déboguez une application multithread, plusieurs méthodes s'offrent à vous pour remplacer le contexte du thread avec lequel vous travaillez par un autre thread.  

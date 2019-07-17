@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176950"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Classes d’assistance et des méthodes pour le code managé
  Pour le code managé, bibliothèque de Managed Package Framework de l’interpréteur de commandes (Microsoft.VisualStudio.Shell.12.0.dll) contient deux classes d’assistance facilitant l’utilisation de couleurs à thème.
 
- Les méthodes d’assistance dans le **Microsoft.VisualStudio.Shell.VsColors** classe dans MPF inclure **GetThemedGDIColor()** et **GetThemedWPFColor()**. Ces méthodes d’assistance retournent la valeur de couleur d’une entrée de thème en tant que System.Drawing.Color ou System.Windows.Media.Color, utilisable dans WinForms ou WPF UI.
+ Les méthodes d’assistance dans le **Microsoft.VisualStudio.Shell.VsColors** classe dans MPF inclure **GetThemedGDIColor()** et **GetThemedWPFColor()** . Ces méthodes d’assistance retournent la valeur de couleur d’une entrée de thème en tant que System.Drawing.Color ou System.Windows.Media.Color, utilisable dans WinForms ou WPF UI.
 
 ```
 IVsUIShell5 shell5;
@@ -272,7 +272,7 @@ protected override void Dispose(bool disposing)
 ### <a name="system-color-set"></a>Jeu de couleurs système
  La table sur [Blog de l’équipe WPF : Référence de SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indique l’ensemble complet des noms de couleurs système et les teintes correspondantes affichées dans chaque thème.
 
- Lorsque cette application d’un jeu de couleurs à votre interface utilisateur, limité *il est probable que vous allez perdre les détails subtils qui étaient présents dans les thèmes « normales »*. Voici un exemple d’interface utilisateur avec des couleurs gris subtiles qui sont utilisés pour distinguer les domaines au sein d’une fenêtre outil. Associé à la même fenêtre affichée en mode de contraste élevé, vous pouvez voir que tous les horizons sont la même teinte et les bordures de ces zones sont indiquées par bordure autonome :
+ Lorsque cette application d’un jeu de couleurs à votre interface utilisateur, limité *il est probable que vous allez perdre les détails subtils qui étaient présents dans les thèmes « normales »* . Voici un exemple d’interface utilisateur avec des couleurs gris subtiles qui sont utilisés pour distinguer les domaines au sein d’une fenêtre outil. Associé à la même fenêtre affichée en mode de contraste élevé, vous pouvez voir que tous les horizons sont la même teinte et les bordures de ces zones sont indiquées par bordure autonome :
 
  ![Fenêtre Propriétés](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303-a_PropertiesWindow")
 
@@ -348,7 +348,7 @@ protected override void Dispose(bool disposing)
 
  Remplir le Registre avec deux valeurs :
 
-|Nom|Type|Données|Description|
+|Name|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie|
 |Package|REG_SZ|GUID|Le GUID du service VSPackage qui prend en charge de la catégorie|
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  Remplir le Registre avec deux valeurs :
 
-|Nom|Type|Données|Description|
+|Name|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|Un GUID est créé pour identifier la catégorie|
 |Package|REG_SZ|GUID|Le GUID du service VSPackage qui prend en charge de la catégorie|

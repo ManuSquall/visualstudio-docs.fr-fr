@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185955"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Procédure : Collecter des données d’échantillonnage au niveau ligne
+# <a name="how-to-collect-line-level-sampling-data"></a>Procédure : Collecter des données d’échantillonnage au niveau de la ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’échantillonnage au niveau ligne permet au profileur de déterminer à quel endroit du code d’une fonction exigeant d’importantes ressources processeur (telle qu’une fonction avec de nombreux échantillons exclusifs) le processeur doit passer le plus de temps.  
   
-## <a name="overview"></a>Vue d'ensemble  
+## <a name="overview"></a>Présentation  
  Pour l’échantillonnage au niveau ligne, le profileur parcourt la pile d’appels du programme à intervalles définis et regroupe les résultats. Ces résultats montrent quelles instructions étaient exécutées par le processeur lorsque les échantillons ont été prélevés. Les données collectées sur les échantillons exclusifs sont ensuite analysées afin d’identifier les lignes de code et le pointeur d’instruction (IP).  
   
  L’échantillonnage au niveau ligne fonctionne aussi bien pour le code managé que pour le code natif. Les rapports de performances qui affichent ces données sont ceux de la vue Lignes et de la vue Modules.  
@@ -56,7 +56,7 @@ L’échantillonnage au niveau ligne permet au profileur de déterminer à quel 
   
      — ou —  
   
-- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>**.  
+- Quand vous démarrez une application, tapez **VSPerfCmd /lineoff \<autres arguments>** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   

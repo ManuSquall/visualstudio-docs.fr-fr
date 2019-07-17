@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159622"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
 1. Ajouter une propriété de domaine calculée à la classe de domaine. Dans le **propriétés** fenêtre, définissez les valeurs suivantes :  
   
-     **IsBrowsable =**`False`**-cela masque la propriété à partir de l’utilisateur**  
+     **IsBrowsable =** `False` **-cela masque la propriété à partir de l’utilisateur**  
   
-     **Type =**`Calculated`**-cela signifie que vous fournirez code qui calcule sa valeur**  
+     **Type =** `Calculated` **-cela signifie que vous fournirez code qui calcule sa valeur**  
   
      **Nom** par exemple **DecoratorControl**  
   
@@ -92,7 +92,7 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
 6. Notez l’espace de noms, classe et méthode qui sont manquants.  Par exemple, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Exemple :  
+7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Par exemple :  
   
     ```  
     namespace Company.FamilyTree  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 506b9d243ef83242b7e17c295dfc13ef9039d1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201621"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219 : Ne pas lever d'exceptions dans les clauses d'exception
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58938239"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture, rupture|
 
 ## <a name="cause"></a>Cause

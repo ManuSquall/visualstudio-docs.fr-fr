@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150658"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue Schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Le **schémas XML** boîte de dialogue permet de sélectionner les XML schema de
   
  Vous pouvez accéder à la **schémas XML** boîte de dialogue en cliquant sur le **schémas** bouton dans la fenêtre de propriétés de document, ou en sélectionnant **schémas** à partir de la **XML** menu.  
   
-## <a name="uielement-list"></a>Liste des éléments d’interface  
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
  **Utilisation**  
  Sélectionnez la manière dont le schéma XML doit être utilisé.  
   

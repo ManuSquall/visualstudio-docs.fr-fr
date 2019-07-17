@@ -14,11 +14,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160479"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58949666"
 Spécifie si l’ou non le **sélectionner la Page maître** case à cocher est activée sur le **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158676"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

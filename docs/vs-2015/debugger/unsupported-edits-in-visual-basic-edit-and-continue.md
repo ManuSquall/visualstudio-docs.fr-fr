@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155435"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Modifications non prises en charge dans Modifier &amp; Continuer (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -218,5 +218,5 @@ Modifier &amp; Continuer vous permet d'arrêter l'exécution d'un programme en
 - Modification d'un type de champ.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [Guide pratique : Appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

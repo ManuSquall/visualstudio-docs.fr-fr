@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157868"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procédure : exécuter le processus Worker sous un compte d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 4. Sur [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)], IIS 6.0 est installé par défaut. Le processus de traitement correspondant est w3wp.exe. Pour fonctionner en mode IIS 6.0 avec aspnet_wp.exe comme processus de traitement, procédez selon les étapes suivantes :  
   
-    1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)**.  
+    1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)** .  
   
     2. Dans la boîte de dialogue **Services Internet** , cliquez avec le bouton droit sur le dossier **Sites Web** et choisissez **Propriétés**.  
   
