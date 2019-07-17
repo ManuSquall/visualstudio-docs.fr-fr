@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975607"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825957"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 
@@ -31,7 +31,7 @@ Lorsque vous adaptez des emplacements de fichiers à votre application, vous dev
 
 - Trouver un emplacement accessible. Les utilisateurs n’ayant pas forcément accès au dossier *Program Files* de l’ordinateur, il est possible que le stockage de fichiers avec les fichiers d’application ne fonctionne pas.
 
-- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C:\\*) n’est pas sécurisé. Pour les données d’application, nous vous recommandons le dossier *Application Data*. Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
+- Trouver un emplacement sécurisé. Le stockage des fichiers dans le dossier racine (*C:\\* ) n’est pas sécurisé. Pour les données d’application, nous vous recommandons le dossier *Application Data*. Pour les données utilisateur, l’application peut créer un fichier pour chaque utilisateur dans le dossier *Documents*.
 
 - Utiliser un nom de fichier valide. Vous pouvez utiliser les contrôles <xref:System.Windows.Forms.OpenFileDialog> et <xref:System.Windows.Forms.SaveFileDialog> pour réduire la probabilité d’avoir des noms de fichiers non valides. N’oubliez pas qu’entre le moment où l’utilisateur sélectionne un fichier et celui où votre code manipule ce fichier, ce dernier peut avoir été supprimé. En outre, l’utilisateur peut ne pas avoir les autorisations pour écrire dans le fichier.
 
@@ -61,11 +61,11 @@ Les extraits de code IntelliSense installés par Visual Studio ne constituent pa
 
 - Ouvrez tous les fichiers d’extrait de code téléchargés dans le Bloc-notes ou dans l’éditeur XML de Visual Studio, et examinez-les attentivement avant de les installer. Recherchez les problèmes potentiels suivants :
 
-    - L’extrait de code est susceptible d’endommager votre système si vous l’exécutez. Lisez le code source attentivement avant de l’exécuter.
+  - L’extrait de code est susceptible d’endommager votre système si vous l’exécutez. Lisez le code source attentivement avant de l’exécuter.
 
-    - Le bloc concernant l’URL de l’aide du fichier d’extrait de code peut contenir des URL qui exécutent un fichier de script malveillant ou qui dirigent vers un site web malveillant.
+  - Le bloc concernant l’URL de l’aide du fichier d’extrait de code peut contenir des URL qui exécutent un fichier de script malveillant ou qui dirigent vers un site web malveillant.
 
-    - L’extrait de code peut contenir des références qui sont ajoutées de manière silencieuse à votre projet et peuvent être chargées à tout endroit de votre système. Ces références peuvent avoir été téléchargées sur votre ordinateur à partir de l’endroit où vous avez téléchargé l’extrait de code. L’extrait de code peut ensuite appeler une méthode dans la référence qui exécute du code malveillant. Pour vous protéger de ce type d’attaque, examinez attentivement les blocs Imports et References du fichier d’extrait de code.
+  - L’extrait de code peut contenir des références qui sont ajoutées de manière silencieuse à votre projet et peuvent être chargées à tout endroit de votre système. Ces références peuvent avoir été téléchargées sur votre ordinateur à partir de l’endroit où vous avez téléchargé l’extrait de code. L’extrait de code peut ensuite appeler une méthode dans la référence qui exécute du code malveillant. Pour vous protéger de ce type d’attaque, examinez attentivement les blocs Imports et References du fichier d’extrait de code.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-searchscope: VS Subscription
-ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586900"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891069"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
@@ -28,7 +27,7 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 * Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Qui peut acheter des abonnements cloud Visual Studio ?
-Toute personne ayant un accès [propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrateur service](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription) ou [coadministrateur](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) à l’abonnement Azure peut acheter des abonnements cloud.
+Toute personne ayant un accès [propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrateur service](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) ou [coadministrateur](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) à l’abonnement Azure peut acheter des abonnements cloud.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Comment acheter des abonnements cloud ?
 

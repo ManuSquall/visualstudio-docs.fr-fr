@@ -11,12 +11,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785882"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823752"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Nouveautés de Live Unit Testing pour Visual Studio 2017
 
@@ -28,9 +28,9 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 - **Découvrabilité améliorée** Pour les utilisateurs qui ne connaissent pas l’existence de la fonctionnalité Live Unit Testing, l’IDE Visual Studio affiche une barre jaune qui fait mention de Live Unit Testing quand l’utilisateur ouvre une solution qui inclut des tests unitaires alors que Live Unit Testing n’est pas activé. Les informations présentées dans la barre jaune permettent à l’utilisateur d’en savoir plus sur Live Unit Testing et de l’activer. La barre jaune affiche également des informations quand les prérequis de Live Unit Testing ne sont pas satisfaits. Elles incluent notamment :
 
-   - Des adaptateurs de test sont manquants.
-   - Des versions plus anciennes des adaptateurs de test sont présentes.
-   - Une restauration des packages NuGet référencés par la solution est nécessaire.
+  - Des adaptateurs de test sont manquants.
+  - Des versions plus anciennes des adaptateurs de test sont présentes.
+  - Une restauration des packages NuGet référencés par la solution est nécessaire.
 
 - **Intégration aux notifications du Centre des tâches**. L’IDE Visual Studio affiche maintenant une notification du traitement en arrière-plan de Live Unit Testing dans le Centre des tâches, afin que les utilisateurs puissent voir facilement ce qui se passe quand Live Unit Testing est activé. Ceci est destiné à résoudre l’important problème du démarrage de Live Unit Testing sur une grande solution. Avant, pendant quelques minutes et jusqu’à ce que les icônes de couverture apparaissent, les utilisateurs ne pouvaient pas déterminer si Live Unit Testing était réellement activé et s’il fonctionnait. Ce n’est plus le cas !
 
@@ -60,9 +60,9 @@ En plus de ces ajouts majeurs, Live Unit Testing comprend les améliorations sui
 
 - Vous pouvez à présent utiliser les attributs suivants pour spécifier dans le code source que vous souhaitez exclure les méthodes de test ciblées de Live Unit Testing :
 
-   - Pour xUnit : `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - Pour NUnit : `[Category("SkipWhenLiveUnitTesting")]`
-   - Pour MSTest : `[TestCategory("SkipWhenLiveUnitTesting")]`
+  - Pour xUnit : `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - Pour NUnit : `[Category("SkipWhenLiveUnitTesting")]`
+  - Pour MSTest : `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Voir aussi
 

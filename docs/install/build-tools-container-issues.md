@@ -1,7 +1,7 @@
 ---
 title: Problèmes connus liés aux conteneurs
 description: Découvrez les problèmes connus susceptibles de se produire lorsque vous installez Visual Studio Build Tools dans un conteneur Windows.
-ms.date: 04/18/2018
+ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: edaadc6c551a6f138f505dec8fe45c9df570dfd6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552884"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823320"
 ---
 # <a name="known-issues-for-containers"></a>Problèmes connus liés aux conteneurs
 

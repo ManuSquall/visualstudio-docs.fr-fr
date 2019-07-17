@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Enterprise Mobility + Security inclus dans votre abonnement Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 053e7463bbbe3649eaed20fa42b80f91c745b8cb
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 240a3c78a6c1e327c09abb8c31624eca2861bbe0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032148"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250800"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Avantage EMS (Enterprise Mobility + Security) dans les abonnements Visual Studio
 

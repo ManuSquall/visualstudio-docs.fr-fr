@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032753"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824644"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -86,7 +85,7 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
-    - Support technique : https://www.parasoft.com/support/
-    - Centre de ressources Parasoft : https://www.parasoft.com/resources/
+  - Support technique : https://www.parasoft.com/support/
+  - Centre de ressources Parasoft : https://www.parasoft.com/resources/
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

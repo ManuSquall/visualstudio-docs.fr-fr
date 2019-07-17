@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976217"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825770"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : Utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 
@@ -30,9 +30,9 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 - Exécutez les procédures suivantes :
 
-    - [Enregistrer et exécuter un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+  - [Enregistrer et exécuter un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    - [Créer et exécuter un test de charge](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Créer et exécuter un test de charge](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Ouvrir la solution ColorWebApp créée dans les procédures pas à pas précédentes
 
@@ -69,7 +69,7 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
 3. Dans l’outil **Zoomer sur la période de temps** sous **Graphique d’activités des utilisateurs virtuels**, ajustez les curseurs de droite et de gauche pour les rapprocher de l’icône de violation de seuil. Cela modifie l’échelle de temps dans le **Graphique d’activités des utilisateurs virtuels**.
 
-4. Dans la zone **Légende du détail**, cochez la case **(Surligner les erreurs)**. Notez que l'utilisateur virtuel à l'origine de la violation de seuil est mis en surbrillance.
+4. Dans la zone **Légende du détail**, cochez la case **(Surligner les erreurs)** . Notez que l'utilisateur virtuel à l'origine de la violation de seuil est mis en surbrillance.
 
 5. Dans le volet **Résultats du filtre**, décochez les cases **Afficher les résultats réussis** et **Erreur HTTP**, mais laissez la case **Erreur de règle de validation** cochée.
 

@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446300"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826098"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -226,7 +226,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
   Les trois vues montrent des types de valeur semblables, notamment :
 
-- **Identificateur(s)**. Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.
+- **Identificateur(s)** . Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.
 
 - **Type**. Type de l'objet (par exemple, élément de lien HTML ou élément div).
 
@@ -255,14 +255,14 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 
   Pour filtrer les informations différentielles entre les instantanés, choisissez l'un des filtres **Portée** en haut des vues différentielles.
 
-- **Objets créés à partir de l’instantané n°\<numéro>**. Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.
+- **Objets créés à partir de l’instantané n°\<numéro>** . Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.
 
   > [!TIP]
   > Pour afficher les informations les plus utiles dans ce filtre, suivez les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Objets ajoutés entre les instantanés n° \<numéro> et n° \<numéro>**. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
+- **Objets ajoutés entre les instantanés n° \<numéro> et n° \<numéro>** . Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.
 
-- **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.
+- **Tous les objets de l’instantané n° \<numéro>** . Ce paramètre de filtre ne filtre aucun objet du tas.
 
   Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Recherchez les objets qui sont conservés par inadvertance dans la mémoire après que l'utilisateur a accédé à une nouvelle page. Il s'agit d'une cause fréquente de problèmes de mémoire. Par exemple :
 
-    - l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) peut entraîner ce problème.
+  - l'utilisation incorrecte de la fonction [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) peut entraîner ce problème.
 
-    - Certains objets peuvent fournir une méthode `dispose` et des recommandations d'utilisation. Par exemple, appelez `dispose` sur [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si vous appelez la méthode `createFiltered` de la liste, avant de quitter une page.
+  - Certains objets peuvent fournir une méthode `dispose` et des recommandations d'utilisation. Par exemple, appelez `dispose` sur [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) si vous appelez la méthode `createFiltered` de la liste, avant de quitter une page.
 
-    - Vous devrez peut-être supprimer un ou plusieurs détecteurs d'événements. Pour plus d'informations, consultez [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Vous devrez peut-être supprimer un ou plusieurs détecteurs d'événements. Pour plus d'informations, consultez [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - Examinez la dernière partie de [cette vidéo](https://channel9.msdn.com/Events/Build/2013/3-316) dans la conférence Build 2013 sur l'analyseur de mémoire JavaScript.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Envisagez de modifier temporairement le code pour isoler les problèmes. Vous pouvez, par exemple, décider d'effectuer les opérations suivantes :
 
-    - Utilisez les commandes pour l'analyseur de mémoire, `console.takeSnapshot` et `performance.mark`. (Consultez [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
+  - Utilisez les commandes pour l'analyseur de mémoire, `console.takeSnapshot` et `performance.mark`. (Consultez [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).)
 
-         Vous pouvez utiliser ces commandes pour favoriser l’isolement des problèmes que vous ne pouvez pas isoler en effectuant manuellement un instantané du tas.
+    Vous pouvez utiliser ces commandes pour favoriser l’isolement des problèmes que vous ne pouvez pas isoler en effectuant manuellement un instantané du tas.
 
-    - Créez un objet de test et effectuez son suivi dans les vues de l'analyseur de mémoire JavaScript, telles que la vue Types. Par exemple, vous pouvez attacher un objet très volumineux à un autre objet pour voir si un objet ou un élément particulier a fait l'objet d'un garbage collection.
+  - Créez un objet de test et effectuez son suivi dans les vues de l'analyseur de mémoire JavaScript, telles que la vue Types. Par exemple, vous pouvez attacher un objet très volumineux à un autre objet pour voir si un objet ou un élément particulier a fait l'objet d'un garbage collection.

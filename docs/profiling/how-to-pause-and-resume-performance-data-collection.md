@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442241"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825667"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte de données de performances
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.
@@ -31,11 +31,11 @@ ms.locfileid: "63442241"
 
 - Dans la page de session de profilage :
 
-    - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.
+  - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.
 
-    - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.
+  - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.
 
-    - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.
+  - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôler la collecte des données](../profiling/controlling-data-collection.md)

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20755447ccac7f5720bdb2df2a96cd9dbec5b730
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824297"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824956"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer du contenu local
 
@@ -51,7 +51,7 @@ Par défaut, Help Viewer installe le contenu à partir d’un service en ligne M
 
     - Entrez le chemin d’un fichier *.msha* ou l’URL d’un point de terminaison de service.
 
-    - Choisissez le bouton de navigation (**...**) pour accéder à un fichier *.msha*.
+    - Choisissez le bouton de navigation ( **...** ) pour accéder à un fichier *.msha*.
 
     - Dans la liste, choisissez la dernière entrée utilisée.
 

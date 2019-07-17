@@ -6,13 +6,12 @@ manager: lank
 ms.date: 11/07/2018
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008047"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784949"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.

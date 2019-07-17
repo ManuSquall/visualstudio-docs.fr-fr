@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950424"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824813"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -31,19 +31,19 @@ Par défaut, les paramètres suivants sont synchronisés :
 
 - Les options suivantes des pages **Outils** > **Options** :
 
-   - Paramètres de thème et de mise en majuscules de la barre de menus, dans la page d’options **Environnement** > **Général**
+  - Paramètres de thème et de mise en majuscules de la barre de menus, dans la page d’options **Environnement** > **Général**
 
-   - Tous les paramètres de la page d’options **Environnement** > **Polices et couleurs**
+  - Tous les paramètres de la page d’options **Environnement** > **Polices et couleurs**
 
-   - Tous les raccourcis clavier de la page d’options **Environnement** > **Clavier**
+  - Tous les raccourcis clavier de la page d’options **Environnement** > **Clavier**
 
-   - Tous les paramètres de la page d’options **Environnement** > **Onglets et fenêtre**
+  - Tous les paramètres de la page d’options **Environnement** > **Onglets et fenêtre**
 
-   - Tous les paramètres de la page d’options **Environnement** > **Démarrage**
+  - Tous les paramètres de la page d’options **Environnement** > **Démarrage**
 
-   - Tous les paramètres des pages d’options de l’**éditeur de texte**, par exemple, les [préférences de style de code](code-styles-and-quick-actions.md).
+  - Tous les paramètres des pages d’options de l’**éditeur de texte**, par exemple, les [préférences de style de code](code-styles-and-code-cleanup.md).
 
-   - Tous les paramètres des pages d’options du **Concepteur XAML**
+  - Tous les paramètres des pages d’options du **Concepteur XAML**
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Désactiver les paramètres synchronisés sur un ordinateur particulier
 

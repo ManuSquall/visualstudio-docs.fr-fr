@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160157"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825486"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références
 
@@ -105,33 +105,33 @@ Selon la version du framework de votre projet, certains composants de la liste p
 
 - Déplacez ou copiez l'assembly vers l'un des emplacements suivants :
 
-   - Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).
+  - Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).
 
-   - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)
+  - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)
 
-    \- ou -
+  \- ou -
 
 - Définissez une clé de Registre qui spécifie l'emplacement des assemblys à afficher :
 
-   Sur un système d'exploitation 32 bits, ajoutez l'une des clés de Registre suivantes :
+  Sur un système d'exploitation 32 bits, ajoutez l'une des clés de Registre suivantes :
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   Sur un système d'exploitation 64 bits, ajoutez l'une des clés de Registre suivantes dans une ruche du Registre 32 bits  :
+  Sur un système d'exploitation 64 bits, ajoutez l'une des clés de Registre suivantes dans une ruche du Registre 32 bits  :
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* représente la version la plus ancienne du framework pouvant s’appliquer. Si *\<VersionMinimum\>* a la valeur v3.0, les dossiers spécifiés dans *AssemblyFoldersEx* s’appliquent aux projets qui ciblent .NET Framework 3.0 et les versions ultérieures.
+  *\<VersionMinimum\>* représente la version la plus ancienne du framework pouvant s’appliquer. Si *\<VersionMinimum\>* a la valeur v3.0, les dossiers spécifiés dans *AssemblyFoldersEx* s’appliquent aux projets qui ciblent .NET Framework 3.0 et les versions ultérieures.
 
-   *\<AssemblyLocation\>* correspond au répertoire des assemblys que vous souhaitez voir figurer dans la boîte de dialogue **Ajouter une référence** (par exemple *C:\MyAssemblies*).
+  *\<AssemblyLocation\>* correspond au répertoire des assemblys que vous souhaitez voir figurer dans la boîte de dialogue **Ajouter une référence** (par exemple *C:\MyAssemblies*).
 
-   La création de la clé de Registre sous le nœud `HKEY_LOCAL_MACHINE` permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. La création de la clé de Registre sous le nœud `HKEY_CURRENT_USER` affecte uniquement le paramètre de l’utilisateur actuel.
+  La création de la clé de Registre sous le nœud `HKEY_LOCAL_MACHINE` permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. La création de la clé de Registre sous le nœud `HKEY_CURRENT_USER` affecte uniquement le paramètre de l’utilisateur actuel.
 
-   Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.NET**. Si ce n’est pas le cas, vérifiez que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.
+  Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.NET**. Si ce n’est pas le cas, vérifiez que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.
 
 ## <a name="projects-tab"></a>Onglet Projets
 

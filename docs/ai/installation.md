@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548455"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821406"
 ---
 # <a name="installation"></a>Installation
 
@@ -88,27 +88,27 @@ Ensuite, nous devons vérifier si Python 3.5 est installé correctement, et mett
 
 - **Fenêtres**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Python sous Visual Studio
 
@@ -162,15 +162,15 @@ Pour installer MXNet, exécutez la commande suivante dans un terminal :
 
 - Avec GPU
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - Sans GPU
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -203,33 +203,33 @@ Pour installer PyTorch, exécutez la commande suivante dans un terminal :
 
 - **Fenêtres**
 
-   Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un package tiers à partir d’[Anaconda](https://anaconda.org/pytorch/repo?type=all) ou [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+  Il n’existe encore aucun package wheel officiel. Vous pouvez télécharger un package tiers à partir d’[Anaconda](https://anaconda.org/pytorch/repo?type=all) ou [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
 
-   - Décompressez-le dans votre répertoire de base, par exemple, *C:\Users\test\pytorch*.
-   - Ajoutez *C:\Users\test\pytorch\Lib\site-packages* à la variable d’environnement %PYTHONPATH%.
+  - Décompressez-le dans votre répertoire de base, par exemple, *C:\Users\test\pytorch*.
+  - Ajoutez *C:\Users\test\pytorch\Lib\site-packages* à la variable d’environnement %PYTHONPATH%.
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Les binaires macOS ne prenant pas en charge CUDA, installez-le à partir de la source si CUDA est nécessaire
+  > [!NOTE]
+  > Les binaires macOS ne prenant pas en charge CUDA, installez-le à partir de la source si CUDA est nécessaire
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Ce package unique prend en charge les GPU et UC.
+  > [!NOTE]
+  > Ce package unique prend en charge les GPU et UC.
 
 Enfin, installez torchvision ailleurs que sur Windows :
 
