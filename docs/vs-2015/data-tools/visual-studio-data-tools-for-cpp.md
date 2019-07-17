@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146579"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ C++ natif peuvent souvent offrir les meilleures performances lorsque vous accéd
   
 4. Téléchargez l’exemple de kit de développement logiciel Windows ODBC et décompressez-le dans un nouvel emplacement. Cet exemple montre les commandes ODBC de base qui sont utilisés pour se connecter à une base de données et émettre des requêtes et commandes. Vous pouvez en savoir plus sur ces fonctions dans le [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Lorsque vous chargez tout d’abord la solution (il s’agit dans le dossier C++), Visual Studio propose de mettre à niveau de la solution vers la version actuelle de Visual Studio. Cliquez sur **Oui**.  
   
-5. Pour utiliser le client natif, vous avez besoin de son en-tête et lib fichier. Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans sql.h. Dans **projet** > **propriétés** > **répertoires VC ++**, ajoutez le répertoire include de ce qui suit :  
+5. Pour utiliser le client natif, vous avez besoin de son en-tête et lib fichier. Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans sql.h. Dans **projet** > **propriétés** > **répertoires VC ++** , ajoutez le répertoire include de ce qui suit :  
   
    **\<lecteur système > : \Program Files\Microsoft SQL Server\110\SDK\Include** et ce répertoire de la bibliothèque :  
   

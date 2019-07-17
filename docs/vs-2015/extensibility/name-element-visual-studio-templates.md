@@ -13,11 +13,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194188"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58952496"
 Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<Name>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,8 +45,8 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> ID un GUID qui spécifie le package Visual Studio d'.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de ressource de Visual Studio.|  
+|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
+|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -58,9 +58,9 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
- Une valeur de texte est obligatoire, sauf si le `Package` et `ID` attributs sont utilisés.  
+ Une valeur texte est requise, sauf si les attributs `Package` et `ID` sont utilisés.  
   
- Le texte fournit le nom du modèle.  
+ Le texte indique le nom du modèle.  
   
 ## <a name="remarks"></a>Notes  
  `Name` est un élément enfant obligatoire de `TemplateData`.  

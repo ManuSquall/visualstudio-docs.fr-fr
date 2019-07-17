@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182863"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
   
  Les développeurs de Fabrikam créent du code qui définit automatiquement la couleur d’un élément en fonction de son stéréotype. Il est ainsi plus facile aux utilisateurs de distinguer les différents rôles joués par les éléments dans les modèles.  
   
- Pour plus d'informations, voir [Procédure : Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Pour plus d’informations, consultez [Guide pratique pour Répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Bus de modèles  
  Le bus de modèles vous permet d’accéder à un diagramme ou à un modèle à partir d’un autre diagramme ou d’une autre extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Cela vous permet entre autres de répartir les informations sur plusieurs modèles, pour que plusieurs personnes puissent travailler en même temps sur le modèle combiné.  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182610"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008 : Les enums doivent avoir la valeur zéro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58952247"
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture - lorsque vous êtes invité à ajouter un **aucun** valeur à une énumération sans indicateur. Avec rupture - lorsque vous êtes invité à les renommer ou supprimer des valeurs d’énumération.|
 
 ## <a name="cause"></a>Cause
@@ -46,7 +46,7 @@ ms.locfileid: "58952247"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez pas un avertissement de cette règle à l’exception des énumérations attribuées par indicateurs fournies précédemment.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple suivant montre deux énumérations qui satisfont la règle et une énumération, `BadTraceOptions`, qui enfreint la règle.
 
  [!code-cpp[FxCop.Design.EnumsZeroValue#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumsZeroValue/cpp/FxCop.Design.EnumsZeroValue.cpp#1)]

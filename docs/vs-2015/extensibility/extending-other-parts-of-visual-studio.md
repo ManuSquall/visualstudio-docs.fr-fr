@@ -12,11 +12,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204509"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Extension d’autres parties de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

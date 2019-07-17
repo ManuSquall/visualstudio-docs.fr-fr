@@ -8,17 +8,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312296"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890969"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 ## <a name="BKMK_CommonControls"></a> Contrôles communs
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
 Contrôles communs constituent la majeure partie de l’interface utilisateur dans Visual Studio. Contrôles les plus courants utilisés dans l’interface de Visual Studio doivent suivre le [directives d’interaction de Windows Desktop](/windows/desktop/uxguide/controls). Cette rubrique est spécifique à Visual Studio et couvre des situations particulières ou des détails augmentent ces instructions de Windows.
 
 #### <a name="common-controls-in-this-topic"></a>Contrôles communs dans cette rubrique
@@ -215,7 +215,7 @@ Si vous souhaitez que les utilisateurs aient la possibilité de copier les infor
 
 ## <a name="BKMK_ButtonsAndHyperlinks"></a> Boutons et des liens hypertexte
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
 Contrôles de boutons et de liens (liens) doivent suivre [des conseils de Windows Desktop base sur les liens hypertexte](/windows/desktop/uxguide/ctrl-links) pour l’utilisation, le libellé, dimensionnement et l’espacement.
 
 ### <a name="choosing-between-buttons-and-links"></a>Choix entre les boutons et les liens
@@ -252,7 +252,7 @@ Quand utiliser les boutons de commande :
 
 ### <a name="common-buttons"></a>Boutons courants
 
-#### <a name="text"></a>Texte
+#### <a name="text"></a>Text
 Suivez les instructions de l’écriture de [l’interface utilisateur texte et la terminologie](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Style visuel
@@ -296,17 +296,18 @@ Instructions pour l’aide du bouton :
 #### <a name="graphical-buttons"></a>Boutons graphiques
 Certains boutons doivent toujours utiliser une image graphique et n’incluez jamais de texte pour économiser l’espace et éviter les problèmes de localisation. Ceux-ci sont souvent utilisés dans les sélecteurs de champ et les autres listes pouvant être triés.
 
-> **Remarque :** Les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Carte le `name` propriété du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.
+> [!NOTE]
+> Les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Carte le `name` propriété du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.
 
 | Fonction | Bouton |
 | --- | --- |
-| Ajouter | ![Graphical "Add" button](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Remove | ![Graphique bouton « Supprimer »](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Ajouter | ![Graphique bouton « Ajouter »](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| Supprimer | ![Graphique bouton « Supprimer »](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | Ajouter tout | ![Bouton graphique « Ajouter tout »](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | Supprimer tout | ![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Monter | ![Bouton graphique « Monter »](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | Descendre | ![Bouton graphique « Descendre »](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| Supprimer | ![Graphical "Delete" button](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| Supprimer | ![Graphique bouton « Supprimer »](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>Dimensionnement et l’espacement
 Dimensionnement des boutons graphiques est identique à la version courte de la **[Parcourir...]**  bouton (26 x 23 pixels) :

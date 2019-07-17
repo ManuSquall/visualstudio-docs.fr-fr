@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185288"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,8 +25,8 @@ ms.locfileid: "58954125"
 Spécifie le nom que le système de projet Visual Studio génère pour le projet ou l’élément lors de sa création.  
   
  \<VSTemplate>  
- \<TemplateData>  
- \<DefaultName>  
+ \<TemplateData >  
+ \<DefaultName >  
   
 ## <a name="syntax"></a>Syntaxe  
   

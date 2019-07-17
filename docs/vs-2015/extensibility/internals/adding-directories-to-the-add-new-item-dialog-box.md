@@ -11,11 +11,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f370d208cb8f7aad88f806983983ccee9f584625
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203926"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Ajout de répertoires à la boîte de dialogue Ajouter un élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ NoRemove Projects
  La valeur SortPriority spécifie un ordre de priorité.  
   
 ## <a name="adding-items-to-an-existing-project"></a>Ajout d’éléments à un projet existant  
- Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projet, vous pouvez ajouter des éléments à la \<racine > \VC#\CSharpProjectItems\LocalProjectItems dossier \Program Files\Microsoft Visual Studio. Dans ce cas le `%GUID_Project%` est le GUID pour un projet C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
+ Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projet, vous pouvez ajouter des éléments à la \<racine > \VC#\CSharpProjectItems\LocalProjectItems dossier \Program Files\Microsoft Visual Studio. Dans ce cas le `%GUID_Project%` est le GUID pour un projet c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
   
  Vous pouvez également étendre un projet existant par un sous-type de projet de programmation. Avec un sous-type de projet, vous pouvez étendre un projet sans avoir à écrire un nouveau type de projet. Pour plus d’informations sur les sous-types de projet, consultez [sous-types de projet](../../extensibility/internals/project-subtypes.md).  
   

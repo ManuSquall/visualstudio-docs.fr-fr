@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184922"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>Adaptation de l’éditeur de Code hérité
+# <a name="adapting-legacy-code-to-the-editor"></a>Adaptation du code hérité dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’éditeur Visual Studio propose de nombreuses fonctionnalités que vous pouvez accéder depuis les composants de code existants. Les instructions suivantes indiquent comment adapter un composant non MEF, par exemple, un VSPackage pour utiliser les fonctionnalités de l’éditeur. Les instructions indiquent également comment utiliser des adaptateurs pour obtenir les services de l’éditeur de code managé et non managé.  

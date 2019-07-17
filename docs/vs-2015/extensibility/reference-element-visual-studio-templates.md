@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193832"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +54,14 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Références](../extensibility/references-element-visual-studio-templates.md)|Regroupe les références d’assembly que le modèle ajoute aux projets.|  
+|[Informations de référence](../extensibility/references-element-visual-studio-templates.md)|Regroupe les références d’assembly que le modèle ajoute aux projets.|  
   
 ## <a name="remarks"></a>Notes  
  `Reference` est un élément enfant obligatoire de `References`.  
   
  Le `Reference` et `References` éléments peuvent uniquement être utilisés dans les fichiers .vstemplate ayant un `Type` valeur d’attribut `Item`.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
   
 ```  

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824329"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891036"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Mise en forme (mise à l’échelle/mise en gras) référence
  Certaines boîtes de dialogue requièrent un texte spécifique pour être en gras ou une taille différente de la police d’environnement. Auparavant, les polices supérieure à la police d’environnement étaient codées en tant que «`environment font +2`» ou similaire. À l’aide d’extraits de code fourni pour prendre en charge des moniteurs haute résolution et vérifiez que texte d’affichage apparaît toujours à la taille et le poids (comme Light ou Semilight).
 
-> **Remarque : Avant d’appliquer la mise en forme, assurez-vous que vous suivez les instructions figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Avant d’appliquer la mise en forme, assurez-vous que vous suivez les instructions figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Pour mettre à l’échelle de la police d’environnement, définissez le style du TextBlock ou Label, comme indiqué. Chacune de ces extraits de code, elle est utilisées correctement, génère la police correcte, y compris les variations de taille et le poids appropriées.
 
@@ -345,7 +346,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Tous les pronoms|Y compris le possessif « Sa » et «, » une contraction du pronom « it » et le verbe « est »|
 |Premiers et derniers mots, quelle que soit grammaticales||
 |Prépositions qui font partie d’une phrase verbale|« Closing Out tous les Windows » ou « Arrêt du système »|
-|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RGB|
+|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RVB|
 |Le deuxième mot du mot composé, s’il s’agit d’un nom ou un adjectif d’approprié, ou si les mots ont le même poids|Accès en lecture/écriture de références croisées, des logiciels Microsoft avant, exécution|
 
 |Minuscules|Exemples|
@@ -482,5 +483,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ## <a name="see-also"></a>Voir aussi
 
-- [MSDN : Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN : Polices (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN : Texte de l’Interface utilisateur (Windows)](/windows/desktop/uxguide/text-ui)

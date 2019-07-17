@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d52489ba25fe2c541d2d0329fcad61aef75350e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200411"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58938231"
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Category|Microsoft.Globalization|
+|Catégorie|Microsoft.Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -46,7 +46,7 @@ ms.locfileid: "58938231"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle si le littéral de chaîne n’est pas utilisé pour faire référence à un des emplacements du système qui est associé le <xref:System.Environment.SpecialFolder> énumération.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple suivant génère le chemin d’accès du dossier application data commun, qui génère trois avertissements de cette règle. Ensuite, l’exemple récupère le chemin d’accès à l’aide de la <xref:System.Environment.GetFolderPath%2A> (méthode).
 
  [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/cs/FxCop.Globalization.HardcodedLocaleStrings.cs#1)]

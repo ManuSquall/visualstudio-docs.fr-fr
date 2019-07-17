@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3c5a461b2aad51fa4fa2d4ac5cc682ae413b6eb1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145167"
 ---
-# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : Relations
+# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : Relationships
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande avec des annotations et une documentation.  

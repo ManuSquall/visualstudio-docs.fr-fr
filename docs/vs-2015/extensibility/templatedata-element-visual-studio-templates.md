@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186451"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58947080"
 Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,7 +62,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie si le système de projet Visual Studio génère le nom par défaut pour un projet ou un élément lorsqu’il est créé.|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie si le projet peut être créé comme un projet temporaire.|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré.|  
-|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie si le modèle apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[Masqué](../extensibility/hidden-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie si le modèle apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|Élément facultatif.<br /><br /> Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|Élément facultatif.|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|Élément facultatif.<br /><br /> Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activé, désactivé ou masqué pour le modèle de projet.|  
@@ -83,7 +83,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
   
  Si vous n’incluez pas un élément facultatif, la valeur par défaut de cet élément est utilisée.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
   
 ```  

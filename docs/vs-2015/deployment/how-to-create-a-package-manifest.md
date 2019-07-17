@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153835"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de Package
+# <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour déployer les composants requis pour votre application, vous pouvez utiliser un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Les fonctionnalités partagées entre les différentes versions localisées doit être placé dans le manifeste de produit.  

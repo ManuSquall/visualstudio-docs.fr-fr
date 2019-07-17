@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144310"
 ---
 # <a name="web-site-support-attributes"></a>Attributs de prise en charge de site web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58950657"
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute  
  Cet attribut est placé sur le projet de langage. Il permet au projet de Site Web d’imbriquer un type de fichier (associé) sous un autre type de fichier (principal) dans le **l’Explorateur de solutions**.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 [WebSiteProjectRelatedFiles("aspx", "py")]public class PythonProjectPackage : ProjectPackage  
@@ -47,7 +47,7 @@ ms.locfileid: "58950657"
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
  Cet attribut est placé sur le package de projet de langage. Il sélectionne le fournisseur d’Intellisense pour la langue.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  

@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152790"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Gestion des exceptions (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La section suivante décrit le processus qui se produit lorsque des exceptions s
   
     - Si la méthode retourne S_OK, appelle [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         - ou -  
+         ou  
   
          Si la méthode retourne S_FALSE, le programme en cours de débogage est donné à une seconde chance pour gérer l’exception.  
   

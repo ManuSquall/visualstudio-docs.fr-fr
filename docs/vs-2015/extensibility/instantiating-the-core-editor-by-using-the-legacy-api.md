@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203908"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>L’instanciation de l’éditeur principal à l’aide de l’API héritée
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanciation de l’éditeur de base à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’éditeur est responsable de la modification des fonctions telles que l’insertion, suppression, copier et coller de texte. Il combine ces fonctions avec celles fournies par les services de langage, telles que la coloration du texte, de mise en retrait et de saisie semi-automatique des instructions IntelliSense.  
@@ -69,4 +69,4 @@ L’éditeur est responsable de la modification des fonctions telles que l’ins
 ## <a name="see-also"></a>Voir aussi  
  [À l’intérieur de l’éditeur principal](../extensibility/inside-the-core-editor.md)   
  [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)   
- [Procédure pas à pas : Création d’un éditeur de base et l’inscription d’un Type de fichier d’éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [Procédure pas à pas : Création d’un éditeur de base et inscription d’un type de fichier d’éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

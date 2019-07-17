@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186363"
 ---
 # <a name="usedcommand-element"></a>Élément UsedCommand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Permet à un VSPackage pour accéder à une commande qui est définie dans un au
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|guid|Obligatoire. Le GUID de la paire ID GUID qui identifie la commande.|  
-|ID|Obligatoire. L’ID de la paire ID GUID qui identifie la commande.|  
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Requis. Le GUID de la paire ID GUID qui identifie la commande.|  
+|id|Requis. L’ID de la paire ID GUID qui identifie la commande.|  
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Aucun.||  
+|Aucun||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   

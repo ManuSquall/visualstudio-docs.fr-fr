@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187121"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quelles sont les nouveautés en matière de conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
 Visual Studio 2015 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Enterprise**|**Professional**|**Community**|**Express**|
+|**Fonctionnalité**|**Enterprise**|**Professionnel**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Cartes de code**|Oui|Prend en charge uniquement la lecture et filtrage des cartes de code, l’ajout de nouveaux nœuds génériques et création d’un graphique orienté à partir d’une sélection.|-|-|
 |**Diagrammes de classes UML**|Oui|-|-|-|

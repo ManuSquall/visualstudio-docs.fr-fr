@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193766"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammes d’activités UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
   
 ||||  
 |-|-|-|  
-|**Shape**|**Élément**|**Description et principales propriétés**|  
+|**Forme**|**Élément**|**Description et principales propriétés**|  
 |1|**Action**|Une étape dans l'activité, dans laquelle les utilisateurs ou les logiciels effectuent une tâche.<br /><br /> L'action peut démarrer quand un jeton est arrivé à tous ses flux entrants. Quand elle se termine, les jetons sont envoyés à tous les flux sortants.<br /><br /> -   **Corps** -Spécifie l’action de manière détaillée.<br />-   **Langue** -la langue de l’expression dans le corps.<br />-   **Post-conditions locales** -contraintes qui doivent être remplies lors de la fin de l’exécution. Objectif atteint par l'action.<br />-   **Local Preconditions** -contraintes qui doivent être satisfaites avant le début de l’exécution.|  
 |2|**Flux de contrôle**|Connecteur qui montre le flux de contrôle entre des actions. Pour interpréter le diagramme, imaginez qu'un jeton s'écoule d'une action à la suivante.<br /><br /> Pour créer un flux de contrôle, utilisez la **connecteur** outil.|  
 |3|**Nœud initial**|Indique la ou les premières actions dans l'activité. Quand l'activité démarre, un jeton s'écoule à partir du nœud initial.|  
 |4|**Nœud Final de l’activité**|Fin de l'activité. Quand un jeton arrive, l'activité se termine.|  
-|5|**Nœud de décision**|Branche conditionnelle dans un flux. Possède une entrée et plusieurs sorties. Un jeton entrant émerge d'une seule des sorties.|  
-|6|**Guard**|Condition qui indique si un jeton peut s'écouler le long d'un connecteur. Utilisé le plus souvent sur les flux sortants d'un nœud de décision.<br /><br /> Pour définir un garde, cliquez sur un flux, cliquez sur **propriétés** puis définissez la **protéger** propriété.|  
+|5\.|**Nœud de décision**|Branche conditionnelle dans un flux. Possède une entrée et plusieurs sorties. Un jeton entrant émerge d'une seule des sorties.|  
+|6\.|**Guard**|Condition qui indique si un jeton peut s'écouler le long d'un connecteur. Utilisé le plus souvent sur les flux sortants d'un nœud de décision.<br /><br /> Pour définir un garde, cliquez sur un flux, cliquez sur **propriétés** puis définissez la **protéger** propriété.|  
 |7|**Nœud de fusion**|Nécessaire pour fusionner des flux qui ont été fractionnés avec un nœud de décision. Possède plusieurs entrées et une sortie. Un jeton sur une entrée quelconque émerge sur la sortie.|  
 |8|**Commentaire**|Fournit des informations supplémentaires sur les éléments auxquels il est lié.|  
 |9|**Action appeler un comportement**|Action qui est définie plus en détail sur un autre diagramme d'activités.<br /><br /> -   **IsSynchronous** : si la valeur est true, l’action patiente jusqu'à ce que l’activité se termine.<br />-   **Comportement** -activité appelée.|  
@@ -79,7 +79,7 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
   
 ||||  
 |-|-|-|  
-|**Shape**|**Élément**|**Description**|  
+|**Forme**|**Élément**|**Description**|  
 |11|**Nœud de bifurcation**|Divise un flux unique en flux simultanés. Chaque jeton entrant produit un jeton sur chaque connecteur sortant.|  
 |12|**Joindre le nœud**|Combine des flux simultanés en un flux unique. Quand chaque flux entrant a un jeton en attente, un jeton est produit sur la sortie.|  
 |13|**Action envoyer un Signal**|Action qui envoie un message ou un signal à une autre activité ou à un thread simultané dans la même activité. Le type et le contenu du message sont déduits du titre de l'action ou spécifiés dans des commentaires supplémentaires.<br /><br /> L'action peut envoyer des données dans le signal, qui peuvent être passées à l'action dans un flux d'objet ou une broche d'entrée (16).|  
@@ -92,7 +92,7 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
   
 ||||  
 |-|-|-|  
-|**Shape**|**Élément**|**Description**|  
+|**Forme**|**Élément**|**Description**|  
 |15|**Nœud d’objet**|Représente des données qui passent le long d'un flux.<br /><br /> -   **Classement** : manière dont plusieurs jetons sont stockés.<br />-   **Sélection** -appelle un processus, ce qui peut être défini dans un autre diagramme, qui filtre les données.<br />-   **Limite supérieure** -0 indique que les données doivent passer directement le long du flux ; \* indique que les données peuvent être stockées dans le flux.<br />-   **Type** -type des objets stockés et transmis.|  
 |16|**Broche d’entrée**|Représente des données qu'une action peut recevoir quand elle s'exécute.<br /><br /> -   **Type** -le type des objets transmis.|  
 |17|**Broche de sortie**|Représente des données qu'une action produit quand elle s'exécute.<br /><br /> -   **Type** -le type des objets transmis.|  
