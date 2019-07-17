@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197064"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erreur : Évaluation de la fonction &#39;fonction&#39; a expiré et dû être abandonnée de manière non sécurisée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Il existe trois solutions possibles à ce problème.
 Le message d’erreur vous indiquera le nom de la fonction que le débogueur a essayé d’appeler. Si vous pouvez modifier cette fonction, vous pouvez empêcher le débogueur de l’appel de l’accesseur Get de propriété ou de la méthode ToString. Essayez l’une des opérations suivantes :
  
 * Modifier la méthode à un autre type de code en plus d’un accesseur Get de propriété ou méthode ToString et le problème disparaîtra.
-    - ou -
+    ou
 * (Pour ToString) Définir un attribut DebuggerDisplay sur le type et que le débogueur peut évaluer autre chose que ToString.
-    - ou -
+    ou
 * (Pour un accesseur Get de propriété) Placez le `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` attribut sur la propriété. Cela peut être utile si vous avez une méthode qui doit rester une propriété pour des raisons de compatibilité d’API, mais il doit être une méthode.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solution #2 : Demander le code cible du débogueur pour abandonner l’évaluation

@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176505"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procédure : tester et déboguer un visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

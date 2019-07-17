@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 469478f05546a32bb890f759d3d00cb447b54d2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145896"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programmation de Visual Studio Tools pour Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,4 +28,4 @@ Dans cette section, vous trouverez des exemples de l'utilisation de l'API Visual
  Visual Studio Tools pour Unity fournit un rappel de type Unity pendant la génération du fichier projet. Pour découvrir comment modifier le fichier projet chaque fois qu’il est regénéré, consultez [Exemple : Génération du fichier de projet](../cross-platform/customize-project-files-created-by-vstu.md).  
   
 ### <a name="share-the-unity-log-callback-with-vstu"></a>Partager le rappel de journal Unity avec VSTU  
- Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec lui.  Pour découvrir comment partager le rappel de journal Unity avec VSTU, consultez [Exemple : Rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md).
+ Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec lui. Pour découvrir comment partager le rappel de journal Unity avec VSTU, consultez [Exemple : Rappel de journal](../cross-platform/share-the-unity-log-callback-with-vstu.md).

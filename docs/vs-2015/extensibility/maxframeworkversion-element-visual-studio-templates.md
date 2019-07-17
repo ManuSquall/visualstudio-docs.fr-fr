@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194330"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Élément MaxFrameworkVersion (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Spécifie la version maximale du .NET Framework qui est requis par le modèle. I
 ## <a name="remarks"></a>Notes  
  `MaxFrameworkVersion` est un élément facultatif. L’élément dans le `TemplateData` section du fichier .vstemplate agit comme un filtre pour le **modèles** section de la **ajouter un nouveau projet** boîte de dialogue. Uniquement les modèles dont les exigences de .NET Framework sont moins de `MaxFrameworkVersion` valeurs d’élément seront affiche, selon la valeur qui est sélectionnée dans le **Version du Framework cible** boîte de le **ajouter un nouveau projet**boîte de dialogue. Le `MaxFrameworkVersion` élément doit être omis, sauf si elle est nécessaire, pour autant entraîner par inadvertance des modèles de s’afficher lorsqu’ils sont utilisés avec des versions plus récentes du .NET Framework.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant illustre les métadonnées d’une norme [!INCLUDE[csprcs](../includes/csprcs-md.md)] modèle de classe.  
   
 ```  

@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157857"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Procédure : Se déplacer d’une page vers le haut ou vers le bas dans la mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou *
   
 ## <a name="see-also"></a>Voir aussi  
  [Fenêtres Mémoire](../debugger/memory-windows.md)   
- [Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)   
+ [Guide pratique : utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)   
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185740"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ using (ShimsContext.Create()
 3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.  
   
 ### <a name="ShimsContext"></a> Utiliser ShimsContext  
- Lors de l'utilisation de types shim dans un framework de tests unitaires, vous devez encapsuler le code de test dans un `ShimsContext` pour contrôler la durée de vie de vos shims. Sans cette exigence, les shims dureraient jusqu'à l'arrêt d'AppDomain. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant :   
+ Lors de l'utilisation de types shim dans un framework de tests unitaires, vous devez encapsuler le code de test dans un `ShimsContext` pour contrôler la durée de vie de vos shims. Sans cette exigence, les shims dureraient jusqu'à l'arrêt d'AppDomain. La façon la plus facile de créer un `ShimsContext` consiste à utiliser la méthode statique `Create()` comme illustré dans le code suivant :  
   
 ```csharp  
 //unit test code  
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez toujours `ShimsContext.Create` à l'intérieur d'une instruction `using` pour garantir le nettoyage correct des shims inscrits. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d'effacer le shim inscrit dans la méthode de test, le reste de la série de tests retourne toujours le premier janvier 2000 comme valeur DateTime.Now. Cela peut être surprenant et déroutant.  
   
 ### <a name="WriteShims"></a> Écrire un test avec les shims  
- Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :  
+ Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Par exemple :  
   
 ```csharp  
 [TestClass]  
@@ -301,7 +301,7 @@ ShimMyClass.ConstructorInt32 = (@this, value) => {
 };  
 ```  
   
- Notez que chaque type shim expose deux constructeurs. Le constructeur par défaut doit être utilisé quand une nouvelle instance est nécessaire, tandis que le constructeur prenant une instance ayant fait l'objet d'un shim comme argument doit être utilisé dans les shims constructeurs uniquement :   
+ Notez que chaque type shim expose deux constructeurs. Le constructeur par défaut doit être utilisé quand une nouvelle instance est nécessaire, tandis que le constructeur prenant une instance ayant fait l'objet d'un shim comme argument doit être utilisé dans les shims constructeurs uniquement :  
   
 ```csharp  
 // unit test code  
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
   
 ## <a name="external-resources"></a>Ressources externes  
   
-### <a name="guidance"></a>Conseils  
+### <a name="guidance"></a>Assistance  
  [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Tests unitaires : Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Voir aussi  

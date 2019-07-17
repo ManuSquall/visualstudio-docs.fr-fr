@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146440"
 ---
 # <a name="breakpoint-related-methods"></a>Méthodes liées au point d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Un moteur de débogage (dé) doit prendre en charge le paramètre de points d’
   
      Demandés via l’interface utilisateur et correctement lié à un emplacement de code spécifié  
   
-- En attente  
+- Pending  
   
      Demandé par l’interface utilisateur, mais pas encore lié aux véritables instructions  
   

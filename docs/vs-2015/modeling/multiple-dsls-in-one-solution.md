@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159015"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
   
 2. Regroupez les manifestes VSIX des DSL :  
   
-   1. Ouvrez _YourVsixProject_**\source.extension.manifest**.  
+   1. Ouvrez _YourVsixProject_ **\source.extension.manifest**.  
   
    2. Pour chaque DSL, choisissez **ajouter du contenu** et ajoutez :  
   
@@ -59,7 +59,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
   
 3. Générez la solution.  
   
-   Le VSIX résultant installera les deux DSL. Vous pouvez les tester en utilisant F5 ou déployer _YourVsixProject_**\bin\Debug\\\*.vsix**.  
+   Le VSIX résultant installera les deux DSL. Vous pouvez les tester en utilisant F5 ou déployer _YourVsixProject_ **\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

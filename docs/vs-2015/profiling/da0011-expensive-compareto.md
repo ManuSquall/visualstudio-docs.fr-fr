@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158646"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011 : Fonction CompareTo coûteuse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0011 : 
 |||  
 |-|-|  
 |ID de règle|DA0011|  
-|Category|Utilisation du .NET Framework|  
+|Catégorie|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Mémoire .NET|  
 |Message|Les fonctions CompareTo doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction CompareTo.|  
 |Type de règle|Warning|  

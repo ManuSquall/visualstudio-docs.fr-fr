@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188836"
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,9 +68,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nom|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
-|(Default)|REG_SZ|ASCII|La valeur par défaut peut être utilisée pour documenter le nom de la langue. Le nom de cette clé est un GUID d’un évaluateur d’expression qui a une entrée correspondante dans  *\<VS Reg racine >* \AD7Metrics\Expression évaluateur.|  
+|(Default)|REG_SZ|text|La valeur par défaut peut être utilisée pour documenter le nom de la langue. Le nom de cette clé est un GUID d’un évaluateur d’expression qui a une entrée correspondante dans  *\<VS Reg racine >* \AD7Metrics\Expression évaluateur.|  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
   
 ```  
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\  
@@ -87,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nom|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
-|(Default)|REG_SZ|ResID|Le nom complet localisé de cette page d’option. Le nom peut être texte littéral ou #`nnn`, où `nnn` est un ID de ressource de chaîne dans la DLL du VSPackage spécifié satellite.|  
+|(Default)|REG_SZ|resID|Le nom complet localisé de cette page d’option. Le nom peut être texte littéral ou #`nnn`, où `nnn` est un ID de ressource de chaîne dans la DLL du VSPackage spécifié satellite.|  
 |Package|REG_SZ|*GUID*|Le GUID du VSPackage qui implémente cette page d’options.|  
 |Page|REG_SZ|*GUID*|Le GUID de la page de propriétés pour demander du VSPackage en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> (méthode). Si cette entrée de Registre n’est pas présente, la clé de Registre décrit un nœud, pas une page.|  
   
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Entrées de Registre pour les Options d’Extension de nom de fichier  
  L’entrée pour l’extension de fichier doit inclure le point, par exemple « .myext ».  
   
-|Nom|Type|Plage|Description|  
+|Name|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ|*GUID*|GUID du service pour le service de langage par défaut pour ce type d’extension de nom du fichier.|  
   
@@ -140,7 +140,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ|""|Non utilisé ; Vous pouvez placer votre nom ici pour obtenir une documentation.|  
 |DefaultToolboxTab|REG_SZ|""|Nom de l’onglet de boîte à outils à utiliser par défaut lors de l’éditeur est actif.|  
-|DisplayName|REG_SZ|ResID|Nom à afficher dans le **ouvrir avec** boîte de dialogue. Le nom est l’ID de ressource de chaîne ou un nom au format standard.|  
+|DisplayName|REG_SZ|resID|Nom à afficher dans le **ouvrir avec** boîte de dialogue. Le nom est l’ID de ressource de chaîne ou un nom au format standard.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilisé pour le **ouvrir avec** commande de menu. Si vous ne souhaitez pas que répertorier l’éditeur de texte par défaut dans la liste des éditeurs disponibles pour un type de fichier spécifique, définissez cette valeur sur 1.|  
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|Utilisé pour n’importe quel service de langage qui peut ouvrir un fichier avec prise en charge de la page de codes. Par exemple, lorsque vous ouvrez un fichier .txt à l’aide de la **ouvrir avec** commande, les options sont fournies pour l’utilisation de l’éditeur de code source avec et sans encodage.<br /><br /> Le GUID spécifié dans le nom de la sous-clé est pour la fabrique d’éditeur de page de codes ; le GUID lié spécifié dans cette entrée de Registre spécifique est pour la fabrique d’éditeur standard. L’objectif de cette entrée est que, si l’IDE n’ouvre pas un fichier à l’aide de l’éditeur par défaut, l’IDE tentera d’utiliser l’éditeur suivant dans la liste. Cet éditeur suivant ne doit pas être la fabrique d’éditeur de page de codes, car cette fabrique d’éditeur est essentiellement le même que la fabrique d’éditeur qui a échoué.|  
 |Package|REG_SZ|*\<GUID>*|VSPackage GUID pour ResID du nom affichage.|  
@@ -161,12 +161,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Entrées de Registre pour les Options de vue logique  
  Le *VS Reg racine*\Editors\\*GUI de l’éditeur >* \LogicalViews clé peut contenir les valeurs suivantes.  
   
-|Nom|Type|Plage|Description|  
+|Name|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ||Non utilisé.|  
 |*\<GUID>*|REG_SZ|""|Clé pour les vues logiques prises en charge. Vous pouvez avoir autant que nécessaire. Le nom de l’entrée de Registre est ce qui est important, pas la valeur, qui est toujours une chaîne vide.|  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
   
 ```  
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\  
@@ -183,14 +183,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Entrées de Registre pour les Options de l’Extension de l’éditeur  
  Le *VS Reg racine*\Editors\\*GUID d’éditeur*\Extensions clé peut contenir les valeurs suivantes. L’extension de nom de fichier n’inclut pas le point de début.  
   
-|Nom|Type|Plage|Description|  
+|Name|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
 |(Default)|REG_SZ||Non utilisé.|  
 |*\<ext>*|REG_DWORD|0-0xffffffff|Priorité relative des extensions. Si deux ou plusieurs langues partagent la même extension, la langue de priorité plus élevée est choisie.|  
   
  En outre, sélection par défaut de l’utilisateur actuel pour un éditeur est stockée dans HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default éditeurs\\*ext*. Le GUID du service de langage sélectionné est dans l’entrée personnalisée. Cet événement est prioritaire pour l’utilisateur actuel.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
   
 ```  
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\  
