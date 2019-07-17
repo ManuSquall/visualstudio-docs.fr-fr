@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978396"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823367"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -64,24 +64,24 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 - Fichiers journaux de débogueur web, s’ils existent :
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Une capture d’écran, si vous choisissez de l’inclure
 
 - Les données d’enregistrement, si vous choisissez d’inclure un enregistrement, qui comprennent :
 
-   - Les étapes pour reproduire le problème.
+  - Les étapes pour reproduire le problème.
 
-   - Le fichier de trace ETL.
+  - Le fichier de trace ETL.
 
-   - Le fichier dump.
+  - Le fichier dump.
 
-    > [!NOTE]
-    > Vous pouvez supprimer les données d’enregistrement que vous ne souhaitez pas envoyer avant d’envoyer le rapport.
+  > [!NOTE]
+  > Vous pouvez supprimer les données d’enregistrement que vous ne souhaitez pas envoyer avant d’envoyer le rapport.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: Découvrez les responsabilités des administrateurs des abonnements.
-searchscope: VS Subscription
-ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3930717252771721cb3f15d7ecaa8dda1810fa85
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945833"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250408"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous avez la possibilité de gérer les abonnements pour votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.

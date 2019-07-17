@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459201"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824613"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
 
@@ -25,11 +25,11 @@ Ce document illustre ces activités :
 
 - Configuration du pipeline de contenus d’image pour générer une texture utilisable dans une application Direct2D ou Javascript.
 
-    - Générer un fichier *.dds* compressé au niveau des blocs.
+  - Générer un fichier *.dds* compressé au niveau des blocs.
 
-    - Générer une valeur alpha prémultipliée.
+  - Générer une valeur alpha prémultipliée.
 
-    - Désactiver la génération de mipmap.
+  - Désactiver la génération de mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Conventions de rendu dans Direct2D
 
@@ -39,11 +39,11 @@ Les textures qui sont utilisés dans le contexte de Direct2D doivent respecter c
 
 - La texture doit être fournie au format *.dds*, en utilisant l’un de ces formats de compression de bloc :
 
-   - Compression BC1_UNORM
+  - Compression BC1_UNORM
 
-   - Compression BC2_UNORM
+  - Compression BC2_UNORM
 
-   - Compression BC3_UNORM
+  - Compression BC3_UNORM
 
 - Les mipmaps ne sont pas pris en charge.
 

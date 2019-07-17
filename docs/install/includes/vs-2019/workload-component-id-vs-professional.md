@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 3a26b0d25b81afe4d0b686676b16f76135295567
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309710"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177598"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2019)
 

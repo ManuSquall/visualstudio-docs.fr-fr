@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990501"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825867"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -97,11 +97,11 @@ Résolution &mdash; il existe deux types d’erreurs possibles :
 
 - **Erreur d’expressions régulières**
 
-     Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs dans chaque expression régulière. Recherchez en particulier :
+  Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs dans chaque expression régulière. Recherchez en particulier :
 
-    - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`
+  - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`
 
-    - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`
+  - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Fichier .runsettings personnalisé avec des exclusions non valides
 

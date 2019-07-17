@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 3/14/2018
 ms.topic: conceptual
 description: Exemple de communications sur l’intégration fournies aux administrateurs du Centre VLSC
-searchscope: VS Subscription
-ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8fc0ae640655b3d2911a53f7e36af7022f853db7
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427924"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250853"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>Communications par e-mail sur l’intégration pour les administrateurs
 

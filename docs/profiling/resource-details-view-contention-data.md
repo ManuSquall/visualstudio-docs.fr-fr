@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797768"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825852"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
 La vue Informations sur les ressources présente un graphique chronologique des événements bloquants provoqués par des conflits sur une ressource sélectionnée. Un événement bloquant se produit quand un thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.
@@ -36,9 +36,9 @@ La vue Informations sur les ressources présente un graphique chronologique des 
 
 - Effectuez l’une des opérations suivantes :
 
-    - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
+  - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
 
-    - Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie dans la vue.
+  - Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie dans la vue.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement
 

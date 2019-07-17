@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805305"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250666"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -47,7 +46,7 @@ Quel que soit le nombre de compétences acquises par un partenaire, le nombre d�
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements pour les partenaires achetant l’Action Pack
 Les partenaires ayant une compétence ne sont pas éligibles pour l’achat de l’Action Pack. Un partenaire ne peut acheter qu’un seul Action Pack.
 
-Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) est une offre personnalisée sans équivalent commercial sur le marché. Voici ce qu’il inclut :
+Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) est une offre personnalisée sans équivalent commercial sur le marché. Voici ce qu’il inclut :
 - Visual Studio Professional (uniquement la dernière version)
 - Windows Entreprise (uniquement la dernière version, à utiliser seulement à des fins de développement et de test)
 - Windows Server (uniquement la dernière version, à utiliser seulement à des fins de développement et de test)

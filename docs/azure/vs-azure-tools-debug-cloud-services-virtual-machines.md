@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550718"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890651"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -39,7 +39,8 @@ L’émulateur simule le service de calcul Azure et s’exécute dans votre envi
 
 3. Parcourez l’application en sélectionnant les commandes du menu **Déboguer** et en définissant des points d’arrêt dans votre code. À mesure que vous parcourez l'application dans le débogueur, les volets sont mis à jour avec l'état actuel de l'application. Lorsque vous arrêtez le débogage, le déploiement de l’application est supprimé. Si votre application inclut un rôle web et que vous avez réglé la propriété Action de démarrage pour démarrer le navigateur web, Visual Studio démarre votre application web dans le navigateur. Si vous modifiez le nombre d’instances d’un rôle dans la configuration du service, vous devez arrêter votre service cloud, puis redémarrer le débogage afin de pouvoir déboguer ces nouvelles instances du rôle.
 
-    **Remarque :** Quand vous cessez l’exécution ou le débogage de votre service, les émulateurs de calcul et de stockage locaux ne s’arrêtent pas. Vous devez les arrêter explicitement à partir de la zone de notification.
+    > [!NOTE]
+    > Quand vous cessez l’exécution ou le débogage de votre service, les émulateurs de calcul et de stockage locaux ne s’arrêtent pas. Vous devez les arrêter explicitement à partir de la zone de notification.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Déboguer un service cloud dans Azure
 
@@ -145,7 +146,8 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Boîte de dialogue de création de projet web ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Remarque :** Vous êtes invité à vous connecter à votre compte Azure si vous ne l’êtes pas déjà.
+    > [!NOTE]
+    > Vous êtes invité à vous connecter à votre compte Azure si vous ne l’êtes pas déjà.
 
 3. Sélectionnez les différents paramètres de la machine virtuelle, puis sélectionnez **OK**. Pour plus d’informations, consultez [Machines virtuelles](http://go.microsoft.com/fwlink/?LinkId=623033) .
 

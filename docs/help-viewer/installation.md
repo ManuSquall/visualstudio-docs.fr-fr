@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 192647adcda620d94ab516f6be30b4d37859e3c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824616"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824918"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installation de Microsoft Help Viewer
 
@@ -37,7 +37,7 @@ Vous pouvez également installer Microsoft Help Viewer facilement à partir de l
 
    ![Zone de recherche](media/installation/quick-launch.png)
 
-1. Choisissez le résultat appelé **Help Viewer (composant individuel)**.
+1. Choisissez le résultat appelé **Help Viewer (composant individuel)** .
 
 1. Dans la boîte de dialogue qui s’affiche, choisissez le bouton **Installer**.
 

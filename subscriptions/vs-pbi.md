@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031974"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824629"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -111,9 +110,9 @@ R :  Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide avec Power BI Pro ?
-    - Consultez la [documentation en ligne](/power-bi/).
-    - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).
-    - Découvrez les principaux problèmes, obtenez de l’aide auprès de la communauté ou envoyez un ticket de support sur la [page de support](https://powerbi.microsoft.com/support/).
+  - Consultez la [documentation en ligne](/power-bi/).
+  - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).
+  - Découvrez les principaux problèmes, obtenez de l’aide auprès de la communauté ou envoyez un ticket de support sur la [page de support](https://powerbi.microsoft.com/support/).
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 

@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: b25272f38a12497201ddb79df04bad551ce99f74
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259704"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68177595"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Éditeur de base de Visual Studio (fourni avec Visual Studio Team Explorer 2017)
 

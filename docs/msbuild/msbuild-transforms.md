@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414702"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852188"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.
@@ -61,7 +61,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 </Target>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 ### <a name="description"></a>Description
  L’exemple suivant montre un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui utilise des transformations. Cet exemple suppose qu’il n’y a qu’un seul fichier *.xsd* dans le répertoire *c:\sub0\sub1\sub2\sub3*, et que le répertoire de travail est *c:\sub0*.
@@ -92,11 +92,11 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

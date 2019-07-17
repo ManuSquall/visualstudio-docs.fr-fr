@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822974"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826082"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bonnes pratiques pour les tests codés de l’interface utilisateur
 
@@ -62,11 +62,11 @@ Les interfaces utilisateur changent souvent au cours du développement. Voici qu
 
 - Si un contrôle a une assertion qui n'est plus valide :
 
-    - Supprimez la méthode qui contient l'assertion.
+  - Supprimez la méthode qui contient l'assertion.
 
-    - Supprimez l'appel à cette méthode depuis la méthode de test.
+  - Supprimez l'appel à cette méthode depuis la méthode de test.
 
-    - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
+  - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
 
 Pour plus d’informations sur la manière d’enregistrer des tests codés de l’interface utilisateur, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).
 

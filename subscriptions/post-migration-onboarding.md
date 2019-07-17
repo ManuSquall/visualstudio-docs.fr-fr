@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 07/12/2018
 ms.topic: conceptual
 description: Découvrez comment intégrer correctement votre organisation aux abonnements Visual Studio après la migration vers le portail d’administration.
-searchscope: VS Subscription
-ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5745fae68c8df4b2935de3410d76711f6477436
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008193"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250711"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Effectuer l’intégration au portail d’administration des abonnements Visual Studio après la migration de votre organisation
 

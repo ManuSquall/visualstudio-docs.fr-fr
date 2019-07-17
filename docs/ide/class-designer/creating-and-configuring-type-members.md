@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746928"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250637"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -122,7 +122,8 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
 4. Vous pouvez, à titre facultatif, spécifier d'autres détails sur le membre, comme son type.
 
-     **Remarque :** vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modifier des membres de type
 
@@ -150,7 +151,7 @@ Chaque ligne membre affiche les éléments suivants :
 
 - **Modificateur de membre**
 
-     Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) ou `Default`.
+     Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) ou `Default`.
 
 - **\<ajouter un membre>**
 

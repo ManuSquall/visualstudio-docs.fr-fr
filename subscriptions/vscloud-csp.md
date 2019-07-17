@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978508"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250651"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 

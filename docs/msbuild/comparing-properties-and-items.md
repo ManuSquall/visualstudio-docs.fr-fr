@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569678"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825899"
 ---
 # <a name="compare-properties-and-items"></a>Comparer des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.
@@ -93,15 +93,15 @@ Néanmoins, ce n’est pas complet. Lorsqu’une propriété, une définition d�
 
 - Pendant la phase d’évaluation d’une génération :
 
-    - Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.
+  - Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.
 
-    - Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.
+  - Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.
 
-    - Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.
+  - Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.
 
 - Pendant la phase d’exécution d’une génération :
 
-    - Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.
+  - Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effets discrets de l’ordre d’évaluation
 Dans la phase d’évaluation d’une génération, l’évaluation des propriétés précède celle des éléments. Néanmoins, les valeurs de certaines propriétés peuvent sembler dépendre des valeurs d’éléments. Examinez le script ci-dessous.

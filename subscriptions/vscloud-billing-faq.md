@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810529"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250734"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 
@@ -43,7 +42,7 @@ R : L’approche la plus simple pour déterminer si vous avez les autorisations
 Vous devez sélectionner un abonnement Azure (qui est un compte de facturation) dans la liste des abonnements Azure qui sont actuellement liés à votre connexion.
 Étant donné que le nom de l’abonnement Azure est par défaut le type de compte de facturation (« Paiement à l’utilisation », « Contrat Entreprise » et ainsi de suite), il est souvent facile de savoir si l’abonnement Azure fait partie de votre contrat Entreprise.
 
-Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](http://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](https://aka.ms/AzureEntSupport) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
+Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](https://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](https://aka.ms/AzureEntSupport) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser les crédits de contrat de licence prépayé Azure de mon contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
 

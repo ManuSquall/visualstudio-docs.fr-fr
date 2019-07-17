@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676587"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825527"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecter les précédents états des applications à l’aide du retour en arrière IntelliTrace dans Visual Studio (Visual Studio Enterprise)
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 1. Accédez à **Outils** > **Options** > **Paramètres IntelliTrace**, puis sélectionnez l’option **Événements et instantanés IntelliTrace**.
 
-    À compter de Visual Studio 2017 Enterprise version 15.9 Preview 2, cette option se nomme **Instantanés IntelliTrace (Managé et natif)**.
+    À compter de Visual Studio 2017 Enterprise version 15.9 Preview 2, cette option se nomme **Instantanés IntelliTrace (Managé et natif)** .
 
     ![Activer le mode Événements et captures instantanées IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Activer le mode Événements et captures instantanées IntelliTrace")
 
@@ -119,8 +119,8 @@ L’impact sur les performances globales du pas à pas dépend de votre applicat
 
 * Quand une capture instantanée du processus de l’application est créée sur une application qui utilise un fichier mappé en mémoire persistant, le processus avec la capture instantanée détient un verrou exclusif sur le fichier mappé en mémoire (même après que le processus parent a libéré son verrou). Les autres processus peuvent toujours lire le fichier mappé en mémoire, mais ils ne peuvent pas y écrire.
 
-    Solution de contournement :
-    * Effacez toutes les captures instantanées en mettant fin à la session de débogage.
+  Solution de contournement :
+  * Effacez toutes les captures instantanées en mettant fin à la session de débogage.
 
 * Lors du débogage d’une application dont le processus a un grand nombre de régions de mémoire uniques, telle qu’une application qui charge un grand nombre de DLL, les performances du pas à pas avec les captures instantanées activées peuvent être affectées. Ce problème sera résolu dans une version ultérieure de Windows. Si vous rencontrez ce problème, écrivez-nous à stepback@microsoft.com.
 

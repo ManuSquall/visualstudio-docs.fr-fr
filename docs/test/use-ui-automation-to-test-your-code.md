@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704758"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824689"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -33,7 +33,7 @@ Le **Générateur de test codé de l’interface utilisateur** et l’éditeur s
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -285,23 +285,23 @@ Après avoir créé votre test codé de l’interface utilisateur, vous pouvez l
 
 - **Éditeur de code :**
 
-    - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Actions et propriétés des contrôles codés d’interface utilisateur](#coded-ui-control-actions-and-properties) de cette rubrique.
+  - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Actions et propriétés des contrôles codés d’interface utilisateur](#coded-ui-control-actions-and-properties) de cette rubrique.
 
-    - Après avoir créé un test codé de l’interface utilisateur, vous pouvez le modifier pour qu’il soit piloté par les données. Pour plus d’informations, consultez [Créer un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
+  - Après avoir créé un test codé de l’interface utilisateur, vous pouvez le modifier pour qu’il soit piloté par les données. Pour plus d’informations, consultez [Créer un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Dans une lecture de test codé de l’interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent, par exemple qu’une fenêtre s’affiche, que la barre de progression disparaisse, etc. Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Dans une lecture de test codé de l’interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent, par exemple qu’une fenêtre s’affiche, que la barre de progression disparaisse, etc. Pour cela, ajoutez la méthode UITestControl.WaitForControlXXX() appropriée. Pour obtenir la liste complète des méthodes disponibles, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode WaitForControlEnabled, consultez [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10. Pour plus d’informations, consultez [Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - Aide au codage des tests codés de l'interface utilisateur :
+  - Aide au codage des tests codés de l'interface utilisateur :
 
-       - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
+    - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
+    - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
 
-       - [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>Code généré
 

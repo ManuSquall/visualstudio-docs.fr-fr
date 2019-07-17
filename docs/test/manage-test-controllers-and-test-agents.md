@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788750"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824246"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -186,25 +186,25 @@ Quand vous ajoutez des rôles à vos paramètres de test pour Visual Studio, vou
 
 - Aucun agent n'est disponible pour le rôle qui doit exécuter les tests. Vos tests ne peuvent pas être exécutés. Vous pouvez exécuter l'une des actions suivantes puis exécuter vos tests de nouveau :
 
-    - Vous pouvez attendre qu'un agent devienne disponible pour ce rôle pour exécuter les tests.
+  - Vous pouvez attendre qu'un agent devienne disponible pour ce rôle pour exécuter les tests.
 
-    - Si certains agents hors connexion peuvent être utilisés pour ce rôle, vous pouvez redémarrer l'agent afin qu'il devienne disponible.
+  - Si certains agents hors connexion peuvent être utilisés pour ce rôle, vous pouvez redémarrer l'agent afin qu'il devienne disponible.
 
-    - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
+  - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
 
-    - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
+  - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
 
 - Aucun agent n'est disponible pour un ou plusieurs rôles qui exécutent les adaptateurs de données de diagnostic. Vos tests peuvent être exécutés, mais l'adaptateur de données de diagnostic ne peut pas être exécuté. Vous pouvez exécuter vos tests sans l'adaptateur de données de diagnostic ou vous pouvez exécuter l'une des actions suivantes et exécuter vos tests de nouveau :
 
-    - Vous pouvez attendre qu'un agent devienne disponible pour ces rôles.
+  - Vous pouvez attendre qu'un agent devienne disponible pour ces rôles.
 
-    - Si des agents hors connexion peuvent être utilisés pour ce rôle, vous devez les mettre en ligne à partir de **Administrer le contrôleur de test** dans le menu **Test**. De plus, vous devrez peut-être redémarrer l'agent s'il a été déconnecté du contrôleur.
+  - Si des agents hors connexion peuvent être utilisés pour ce rôle, vous devez les mettre en ligne à partir de **Administrer le contrôleur de test** dans le menu **Test**. De plus, vous devrez peut-être redémarrer l'agent s'il a été déconnecté du contrôleur.
 
-    - Vérifiez que tous les agents dont vous pouvez avoir besoin pour cette série de tests ne sont pas en cours d'exécution. Vous pouvez vérifier l’état des agents à partir de **Administrer le contrôleur de test** dans le menu **Test**.
+  - Vérifiez que tous les agents dont vous pouvez avoir besoin pour cette série de tests ne sont pas en cours d'exécution. Vous pouvez vérifier l’état des agents à partir de **Administrer le contrôleur de test** dans le menu **Test**.
 
-    - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
+  - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
 
-    - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
+  - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Charger des tests à partir d’assemblys de tests à signature différée
 

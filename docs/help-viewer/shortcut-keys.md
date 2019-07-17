@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975620"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821963"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Touches de raccourci dans Help Viewer
 
@@ -59,7 +59,7 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Rubrique|**Ctrl**+**Tab**|Basculer entre les onglets de gauche à droite.|
 |Rubrique|**Ctrl**+**Maj**+**Tab**|Basculer entre les onglets de droite à gauche.|
 |Rubrique|**Ctrl**+**W**|Fermer l’onglet actif.|
-|Rubrique|**Ctrl**+**_Numéro_**|Basculer vers un onglet spécifique, où **_Numéro_** est un nombre compris entre 1 et 9, qui désigne l’onglet dans la séquence.|
+|Rubrique|**Ctrl**+ **_Numéro_**|Basculer vers un onglet spécifique, où **_Numéro_** est un nombre compris entre 1 et 9, qui désigne l’onglet dans la séquence.|
 |Rubrique|**Ctrl**+**Alt**+**F4**|Fermer les autres onglets de contenu.|
 |Rubrique|**Ctrl**+**Maj**+**Signe plus**|Augmenter le zoom de 10 %.|
 |Rubrique|**Ctrl**+**Signe moins**|Réduire le zoom de 10 %.|

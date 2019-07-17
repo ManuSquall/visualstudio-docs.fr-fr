@@ -3,17 +3,17 @@ title: Arguments de ligne de commande pour Help Content Manager
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824681"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825085"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 
@@ -49,14 +49,14 @@ Le tableau suivant définit les commutateurs et les arguments que vous pouvez ut
 |/catalogName|Oui|Spécifie le nom du catalogue de contenu.|
 |/locale|Non|Spécifie les paramètres régionaux du produit utilisés pour afficher et gérer le contenu pour l’instance actuelle de la visionneuse d’aide. Par exemple, vous spécifiez `EN-US` pour Anglais (États-Unis).<br /><br /> Si vous ne spécifiez pas de paramètres régionaux, ceux du système d’exploitation sont utilisés. S’ils ne peuvent pas être déterminés, `EN-US` est utilisé.<br /><br /> Si vous spécifiez des paramètres régionaux non valides, un message d’erreur est collecté dans le journal des événements.|
 |/e|Non|Élève Help Content Manager aux privilèges d’administrateur si l’utilisateur actuel dispose d’informations d’identification d’administration.|
-|/sourceURI|Non|Spécifie l’URL à partir de laquelle le contenu est installé (API de service) ou le chemin du fichier d’installation du contenu (*.msha*). L’URL peut pointer vers le groupe de produits (nœud de niveau supérieur) ou les livres de produit (nœud de niveau document) dans un point de terminaison de style Visual Studio 2010. Il n’est pas nécessaire d’inclure une barre oblique (/) à la fin de l’URL. Si vous le faites tout de même, elle est gérée correctement.<br /><br /> Un message d’erreur est enregistré dans le journal des événements si vous spécifiez un fichier qui est introuvable, non valide ou inaccessible, ou si une connexion Internet n’est pas disponible ou est interrompue pendant la gestion du contenu.|
+|/sourceURI|Non|Spécifie l’URL à partir de laquelle le contenu est installé (API de service) ou le chemin du fichier d’installation du contenu ( *.msha*). L’URL peut pointer vers le groupe de produits (nœud de niveau supérieur) ou les livres de produit (nœud de niveau document) dans un point de terminaison de style Visual Studio 2010. Il n’est pas nécessaire d’inclure une barre oblique (/) à la fin de l’URL. Si vous le faites tout de même, elle est gérée correctement.<br /><br /> Un message d’erreur est enregistré dans le journal des événements si vous spécifiez un fichier qui est introuvable, non valide ou inaccessible, ou si une connexion Internet n’est pas disponible ou est interrompue pendant la gestion du contenu.|
 |/vendor|Non|Spécifie le constructeur pour le contenu du produit qui sera supprimé (par exemple, `Microsoft`). L’argument par défaut pour ce commutateur est Microsoft.|
 |/productName|Non|Spécifie le nom du produit pour les livres qui seront supprimés. Le nom du produit est identifié dans les fichiers *helpcontentsetup.msha* ou *books.html* qui accompagnent le contenu. Vous pouvez supprimer des livres d’un seul produit à la fois. Pour supprimer des livres de plusieurs produits, vous devez exécuter plusieurs installations.|
 |/booklist|Non|Spécifie les noms des livres à gérer, séparés par des espaces. Les valeurs doivent correspondre aux noms de livres indiqués sur le support d’installation.<br /><br /> Si vous ne spécifiez pas cet argument, tous les livres recommandés pour le produit indiqué dans /sourceURI sont installés.<br /><br /> Si le nom d’un livre contient un ou plusieurs espaces, encadrez-le de guillemets doubles (") afin que la liste soit délimitée correctement.<br /><br /> Les messages d’erreur sont stockés si vous spécifiez un argument /sourceURI non valide ou inaccessible.|
 |/skuId|Non|Spécifie la référence SKU du produit depuis la source d’installation, puis filtre les livres que le commutateur /SourceURI identifie.|
 |/membership|Non|-   **Minimum** : installe un ensemble minimum de contenu d’aide sur la référence que vous spécifiez à l’aide du commutateur /skuId. Le mappage entre le SKU et l’ensemble de contenu est exposé dans l’API de service.<br />-   **Recommended** : installe un ensemble de livres recommandés pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.<br />-   **Full** : installe le jeu complet de livres pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.|
 |/locationpath|Non|Spécifie le dossier par défaut du contenu d’aide locale. Vous devez utiliser ce commutateur uniquement pour installer ou déplacer le contenu. Si vous spécifiez ce commutateur, vous devez également spécifier le commutateur /silent.|
-|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier, dans le répertoire *%Temp%*. **Important :**  Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement *.cab*, pas les fichiers *.mshc*.|
+|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier, dans le répertoire *%Temp%* . **Important :**  Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement *.cab*, pas les fichiers *.mshc*.|
 |/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.|
 |/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour une attente indéfinie.|
 |/?|Non|Répertorie les commutateurs, ainsi que leur description, de l’outil en ligne de commande pour le gestionnaire de contenu d’aide.|

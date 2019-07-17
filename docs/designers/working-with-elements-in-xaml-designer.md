@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844040"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823824"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Utiliser des éléments dans le concepteur XAML
 
@@ -43,15 +43,15 @@ Pour changer l’ordre de superposition, effectuez l’une des opérations suiva
 
 - Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément pour lequel vous souhaitez modifier l’ordre de superposition, pointez sur **Ordre**, puis cliquez sur l’une des options suivantes :
 
-   - **Mettre au premier plan** pour placer l’élément tout au début dans l’ordre.
+  - **Mettre au premier plan** pour placer l’élément tout au début dans l’ordre.
 
-   - **Avancer d’un plan** pour faire avancer l’élément d’un niveau dans l’ordre.
+  - **Avancer d’un plan** pour faire avancer l’élément d’un niveau dans l’ordre.
 
-   - **Reculer d’un plan** pour faire reculer l’élément d’un niveau dans l’ordre.
+  - **Reculer d’un plan** pour faire reculer l’élément d’un niveau dans l’ordre.
 
-   - **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.
+  - **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.
 
-   Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** supérieure apparaît devant.
+  Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** supérieure apparaît devant.
 
 ## <a name="change-the-alignment-of-an-element"></a>Changer l’alignement d’un élément
 

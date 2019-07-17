@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: f4e62d23684695c938061c178d7af078bfccfc27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692464"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824402"
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 
@@ -51,21 +51,21 @@ Pour le débogage sur un appareil physique, vous devez ajouter `Exported=true` �
 La liste ci-dessous fournit quelques exemples de données qui peuvent être incluses dans les configurations d’exécution :
 
 * Projet .NET normal
-    * Application de démarrage alternative
-    * Arguments du démarrage
-    * Répertoire de travail
-    * Variables d’environnement
-    * Options de runtime Mono (à utiliser uniquement lors de l’exécution sur Mono)
+  * Application de démarrage alternative
+  * Arguments du démarrage
+  * Répertoire de travail
+  * Variables d’environnement
+  * Options de runtime Mono (à utiliser uniquement lors de l’exécution sur Mono)
 * Projet Android
-    * Point d’entrée (activité, service, récepteur)
-    * Arguments et données intentionnels
+  * Point d’entrée (activité, service, récepteur)
+  * Arguments et données intentionnels
 * Projet iOS
-    * Mode (Normal, Récupération en arrière-plan)
+  * Mode (Normal, Récupération en arrière-plan)
 * Projet d’extension iOS
-    * Application de démarrage : par défaut ou personnalisée
+  * Application de démarrage : par défaut ou personnalisée
 * Projet WatchKit
-    * Mode (Coup d’œil, Notification)
-    * Charge utile de la notification
+  * Mode (Coup d’œil, Notification)
+  * Charge utile de la notification
 
 ## <a name="see-also"></a>Voir aussi
 
