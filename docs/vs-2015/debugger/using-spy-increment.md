@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3e12ebef8d6c06c6c5c3c227c5534488970d78ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183973"
 ---
 # <a name="using-spy"></a>Utiliser Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Spy ++ (SPYXX. (EXE) est un utilitaire basé sur Win32 qui vous donne une vue gr
  [Barre d’outils Spy++](../debugger/spy-increment-toolbar.md)  
  Décrit les commandes disponibles dans la barre d’outils Spy ++.  
   
- [Guide pratique pour afficher des vues Spy++](../debugger/how-to-display-spy-increment-views.md)  
+ [Guide pratique : afficher des vues Spy++](../debugger/how-to-display-spy-increment-views.md)  
  Comment afficher la vue de Windows, affichage des Messages, vue processus et la vue Threads.  
   
- [Guide pratique pour actualiser l’affichage](../debugger/how-to-refresh-the-view.md)  
+ [Guide pratique : actualiser l’affichage](../debugger/how-to-refresh-the-view.md)  
  Explique la commande Actualiser.  
   
  [Guide pratique pour modifier les polices](../debugger/how-to-change-fonts.md)  

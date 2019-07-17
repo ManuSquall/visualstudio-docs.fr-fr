@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193505"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;point d’entrée&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,32 +60,32 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`name`|Facultatif. Cette valeur n’est pas utilisée par .NET Framework.|  
+|`name`|facultatif. Cette valeur n’est pas utilisée par .NET Framework.|  
   
  `entryPoint` comporte les éléments suivants.  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatoire. Le rôle de `assemblyIdentity` et ses attributs est défini dans [ \<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Requis. Le rôle de `assemblyIdentity` et ses attributs est défini dans [ \<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  Le `processorArchitecture` attribut de cet élément et le `processorArchitecture` attribut défini dans le `assemblyIdentity` ailleurs dans l’application manifeste doit correspondre.  
   
 ## <a name="commandline"></a>commandLine  
- Obligatoire. Doit être un enfant de le `entryPoint` élément. Il ne comporte aucun élément enfant et a les attributs suivants.  
+ Requis. Doit être un enfant de le `entryPoint` élément. Il ne comporte aucun élément enfant et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`file`|Obligatoire. Une référence locale à l’assembly de démarrage pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Cette valeur ne peut pas contenir de barre oblique (/) ou barre oblique inverse (\\) les séparateurs de chemin d’accès.|  
-|`parameters`|Obligatoire. Décrit l’action à entreprendre avec le point d’entrée. La seule valeur valide est `run`; si une chaîne vide est fournie, `run` est supposé.|  
+|`file`|Requis. Une référence locale à l’assembly de démarrage pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Cette valeur ne peut pas contenir de barre oblique (/) ou barre oblique inverse (\\) les séparateurs de chemin d’accès.|  
+|`parameters`|Requis. Décrit l’action à entreprendre avec le point d’entrée. La seule valeur valide est `run`; si une chaîne vide est fournie, `run` est supposé.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- Facultatif. Si inclus, spécifie que ce déploiement contient un composant qui sera déployé sur un hôte personnalisé et n’est pas une application autonome.  
+ facultatif. Si inclus, spécifie que ce déploiement contient un composant qui sera déployé sur un hôte personnalisé et n’est pas une application autonome.  
   
  Si cet élément est présent, le `assemblyIdentity` et `commandLine` éléments ne doivent pas être présents. S’ils sont, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déclenchera une erreur de validation pendant l’installation.  
   
  Cet élément possède pas d’attributs et aucun enfant.  
   
 ## <a name="customux"></a>customUX  
- Facultatif. Spécifie que l’application est installée et géré par un programme d’installation personnalisé et ne pas créer une entrée de menu Démarrer, raccourci ou ajouter ou supprimer l’entrée de programmes.  
+ facultatif. Spécifie que l’application est installée et géré par un programme d’installation personnalisé et ne pas créer une entrée de menu Démarrer, raccourci ou ajouter ou supprimer l’entrée de programmes.  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
@@ -96,7 +96,7 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
 ## <a name="remarks"></a>Notes  
  Cet élément identifie l’assembly point d’entrée pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application.  
   
- Vous ne pouvez pas utiliser `commandLine` pour passer des paramètres à votre application au moment de l’exécution. Vous pouvez accéder à des paramètres de chaîne de requête pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à partir de l’application <xref:System.AppDomain>. Pour plus d'informations, voir [Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Vous ne pouvez pas utiliser `commandLine` pour passer des paramètres à votre application au moment de l’exécution. Vous pouvez accéder à des paramètres de chaîne de requête pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à partir de l’application <xref:System.AppDomain>. Pour plus d’informations, consultez [Guide pratique pour Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre un `entryPoint` élément dans un manifeste d’application pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Cet exemple de code fait partie d’un exemple plus complet fourni pour le [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md) rubrique.  

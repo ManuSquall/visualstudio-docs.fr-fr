@@ -13,22 +13,22 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fef596fdfa9bb29fac38c72890392c33a86b31d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204560"
 ---
 # <a name="error-codes"></a>Codes d'erreur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsqu’une fonction de l’API de plug-in de contrôle de Source renvoie une erreur, il est censé être un des codes d’erreur suivants. Toutes les erreurs sont négatifs, avertissements ou des codes d’erreur d’information sont positives, et de réussite est 0.  
   
-|Code d'erreur|Value|Description|  
+|Code d'erreur|`Value`|Description|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|Plug-in prend en charge l’ajout de fichiers de contrôle de code source en deux étapes. Pour plus d’informations, consultez [SccSetOption](../extensibility/sccsetoption-function.md).|  
-|`SCC_I_FILEDIFFERS`|6|Le fichier local est différent du fichier dans la base de données de contrôle de code source (par exemple, [SccDiff](../extensibility/sccdiff-function.md) peut retourner cette valeur).|  
-|`SCC_I_RELOADFILE`|5|Fichier local a été modifié pendant l’opération de contrôle de code source ; l’IDE doit recharger le fichier si possible.|  
+|`SCC_I_FILEDIFFERS`|6\.|Le fichier local est différent du fichier dans la base de données de contrôle de code source (par exemple, [SccDiff](../extensibility/sccdiff-function.md) peut retourner cette valeur).|  
+|`SCC_I_RELOADFILE`|5\.|Fichier local a été modifié pendant l’opération de contrôle de code source ; l’IDE doit recharger le fichier si possible.|  
 |`SCC_I_FILENOTAFFECTED`|4|Le fichier n’est pas affecté.|  
 |`SCC_I_PROJECTCREATED`|3|Le projet a été créé pendant l’opération de contrôle de code source (par exemple, pendant un appel à [SccOpenProject](../extensibility/sccopenproject-function.md) lorsque `SCC_OP_CREATEIFNEW` indicateur est spécifié).|  
 |`SCC_I_OPERATIONCANCELED`|2|Opération a été annulée.|  

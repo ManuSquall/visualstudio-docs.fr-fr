@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184337"
 ---
 # <a name="commandplacement-element"></a>Élément CommandPlacement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,16 +40,16 @@ L’élément CommandPlacement permet de boutons, des groupes et des menus être
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|guid|Obligatoire. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|  
-|ID|Obligatoire. L’id du menu, un groupe ou une commande à placer, tel que défini dans le `Symbols Element`.|  
-|priority|Obligatoire. Détermine la position visuelle de l’élément dans son élément parent.|  
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Requis. Le guid du jeu de commandes, tel que défini dans le [élément Symbols](../extensibility/symbols-element.md).|  
+|id|Requis. L’id du menu, un groupe ou une commande à placer, tel que défini dans le `Symbols Element`.|  
+|priority|Requis. Détermine la position visuelle de l’élément dans son élément parent.|  
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Parent|Obligatoire. Le menu ou un groupe qui héberge l’élément à être placé.|  
+|Parent|Requis. Le menu ou un groupe qui héberge l’élément à être placé.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
