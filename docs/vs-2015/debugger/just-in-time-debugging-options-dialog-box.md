@@ -25,11 +25,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201105"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,4 +63,4 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   
- [Guide pratique pour spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)
+ [Guide pratique : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)

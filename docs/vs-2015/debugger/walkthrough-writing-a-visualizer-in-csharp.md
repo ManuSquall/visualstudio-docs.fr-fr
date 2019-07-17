@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688154"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890469"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : Écriture d’un visualiseur en C\#
 
@@ -39,7 +39,7 @@ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débo
 
 1. Sur le **fichier** menu, choisissez **New** puis cliquez sur **nouveau projet**.
 
-2. Dans le **nouveau projet** boîte de dialogue **Type de projet**s, sélectionnez **Visual C#**.
+2. Dans le **nouveau projet** boîte de dialogue **Type de projet**s, sélectionnez **Visual C#** .
 
 3. Dans le **modèles** , sélectionnez **bibliothèque de classes**.
 
@@ -196,7 +196,8 @@ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débo
 
 2. Modifier le nom de Program.cs en un nom plus significatif, tel que TestConsole.cs.
 
-    **Remarque** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modifie automatiquement la déclaration de classe dans TestConsole.cs pour correspondre au nouveau nom de fichier.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modifie automatiquement la déclaration de classe dans TestConsole.cs pour correspondre au nouveau nom de fichier.
 
 3. Dans TestConsole.cs, ajoutez le code suivant à la `using` instructions :
 
@@ -223,7 +224,7 @@ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débo
 
    Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
 
-   Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d'informations, voir [Procédure : Installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
+   Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Guide pratique pour Installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="using-the-visualizer-item-template"></a>À l’aide du modèle d’élément visualiseur
  Jusqu'à présent, cette procédure pas à pas vous a montré comment créer manuellement un visualiseur. Ces actions étaient exécutées comme un exercice d’apprentissage. Maintenant que vous connaissez le fonctionne d’un visualiseur simple, il est un moyen plus simple pour créer un : à l’aide du modèle d’élément visualiseur.
@@ -234,7 +235,7 @@ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débo
 
 1. Sur le **fichier** menu, choisissez **ajouter** puis cliquez sur **nouveau projet**.
 
-2. Dans le **ajouter un nouveau projet** boîte de dialogue **Type de projet**s, sélectionnez **Visual C#**.
+2. Dans le **ajouter un nouveau projet** boîte de dialogue **Type de projet**s, sélectionnez **Visual C#** .
 
 3. Dans le **modèles** , sélectionnez **bibliothèque de classes**.
 
@@ -261,5 +262,5 @@ Le code du visualiseur doit être placé dans une DLL, qui sera lue par le débo
 ## <a name="see-also"></a>Voir aussi
 
 - [Architecture d’un visualiseur](../debugger/visualizer-architecture.md)
-- [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)
+- [Guide pratique : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

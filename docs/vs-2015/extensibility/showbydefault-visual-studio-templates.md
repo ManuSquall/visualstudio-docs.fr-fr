@@ -14,11 +14,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184127"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58951622"
 Si `false`, spécifie que le modèle est uniquement affiché sous spécifié [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<ShowByDefault>  
   
 ## <a name="syntax"></a>Syntaxe  

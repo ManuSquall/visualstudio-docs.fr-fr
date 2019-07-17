@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157603"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 </Target>  
 ```  
   
- Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple :  
+ Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple,  
   
 ```  
 <Target Name="AfterBuild" >  
@@ -63,7 +63,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
   Pour plus d’informations sur l’ordre de génération des cibles, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Traitement par lot des cibles  
- Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(métadonnées). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple :  
+ Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(métadonnées). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple,  
   
 ```  
 <ItemGroup>  
@@ -100,4 +100,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Guide pratique pour Utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

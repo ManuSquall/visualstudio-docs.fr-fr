@@ -15,13 +15,13 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177224"
 ---
-# <a name="using-fonts-and-colors"></a>Utilisation de polices et couleurs
+# <a name="using-fonts-and-colors"></a>Utilisation des polices et couleurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pour l’utilisation des polices et couleurs pour afficher le texte.  
@@ -41,7 +41,7 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pou
   
  Cette approche nécessite un VSPackage implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface et des interfaces associées.  
   
- [Guide pratique pour Le jeu de couleurs et polices intégrées d’accès](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Guide pratique pour accéder aux polices intégrées et au modèle de couleurs](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Explique comment définir et enregistrer une catégorie à l’aide de couleurs et polices intégrées et lancer l’utilisation de couleurs et polices fournies par le système.  
   
 ## <a name="reference"></a>Référence  

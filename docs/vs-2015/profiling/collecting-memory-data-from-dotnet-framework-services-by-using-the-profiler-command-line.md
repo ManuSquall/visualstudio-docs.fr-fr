@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198398"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,8 +25,8 @@ Cette section décrit les procédures et les options de collecte des données d�
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  
-|**Attacher le profileur à un service .NET**|-   [Guide pratique pour attacher le profileur à un service .NET pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**Instrumenter un service .NET et collecter des données de mémoire .NET**|-   [Guide pratique pour instrumenter un service .NET Framework et collecter des données de mémoire](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**Attacher le profileur à un service .NET**|-   [Guide pratique : attacher le profileur à un service .NET pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**Instrumenter un service .NET et collecter des données de mémoire .NET**|-   [Guide pratique : instrumenter un service .NET Framework et collecter des données de mémoire](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
 |**Ajouter des interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  

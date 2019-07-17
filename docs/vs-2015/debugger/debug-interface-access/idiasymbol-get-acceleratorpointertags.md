@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948163"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149842"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ HRESULT get_acceleratorPointerTags(
  [in] La taille du tableau de sortie `pPointerTags`.  
   
  `pcnt`  
- [out] Le nombre de balises de pointeur accélérateur dans la fonction de stub d’accélérateur C++ AMP.  
+ [out] Le nombre de balises de pointeur accélérateur dans la C++ AMP accélérateur stub (fonction).  
   
  `pPointerTags`  
- [out] Un `DWORD` pointeur du tableau qui est rempli avec les valeurs de balise de pointeur accélérateur dans la fonction de stub d’accélérateur C++ AMP.  
+ [out] Un `DWORD` pointeur du tableau qui est rempli avec les valeurs de balise de pointeur accélérateur dans la C++ AMP accélérateur stub (fonction).  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

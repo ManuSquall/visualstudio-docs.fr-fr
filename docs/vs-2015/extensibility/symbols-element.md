@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160461"
 ---
 # <a name="symbols-element"></a>Élément Symbols
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Définit le GUID et ID qui sont utilisés par d’autres éléments VSCT. Du cod
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Aucun.||  
+|Aucun||  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|GuidSymbol|Définit un symbole GUID. GuidSymbol possède deux attributs requis : nom / valeur. Le nom est le nom du symbole, et la valeur est la valeur du GUID sous forme de chaîne.<br /><br /> For example:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
+|GuidSymbol|Définit un symbole GUID. GuidSymbol possède deux attributs requis : nom / valeur. Le nom est le nom du symbole, et la valeur est la valeur du GUID sous forme de chaîne.<br /><br /> Par exemple :\<GuidSymbol nom = « guidVsPackage1Pkg » value = « {c5f54698-101a-4846-84d3-dc748f9cd848} » / >|  
 |IDSymbol|Définit un symbole. IDSymbol possède deux attributs requis : nom / valeur. Le nom est le nom du symbole, et la valeur est la valeur du symbole sous forme de chaîne.<br /><br /> For example:\<IDSymbol name="MyMenuGroup" value="0x1020" />|  
   
 ### <a name="parent-elements"></a>Éléments parents  
@@ -58,7 +58,7 @@ Définit le GUID et ID qui sont utilisés par d’autres éléments VSCT. Du cod
 |-------------|-----------------|  
 |[Élément CommandTable](../extensibility/commandtable-element.md)|L’élément racine du fichier .vsct.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
 <Symbols>  

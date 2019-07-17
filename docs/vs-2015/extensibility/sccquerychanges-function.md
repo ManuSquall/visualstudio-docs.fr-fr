@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: baa6059a1668be5507994921cb96ac3ed1cfd5fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200016"
 ---
 # <a name="sccquerychanges-function"></a>Fonction SccQueryChanges
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|`Value`|Description|  
 |-----------|-----------------|  
 |SCC_OK|Le processus de requête s’est terminé correctement.|  
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert dans le contrôle de code source.|  

@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181359"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="best-practices"></a>meilleures pratiques recommandées.
+## <a name="best-practices"></a>Bonnes pratiques
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Soyez cohérent dans l’environnement Visual Studio.
 
@@ -76,7 +76,7 @@ ms.locfileid: "60096528"
 #### <a name="anti-pattern-solution"></a>Anti-modèle de solution
  Dès que l’utilisateur a lancé une action et avant qu’ils ont terminé la tâche, placez immédiatement arrêt critique icônes en regard des zones qui nécessitent une configuration.
 
-#### <a name="example-manifest-designer-declarations"></a>Exemple : Déclarations de concepteur du manifeste
+#### <a name="example-manifest-designer-declarations"></a>Exemple : Déclarations de concepteur du manifeste
  Ajout d’une déclaration à la liste immédiatement le place dans un état d’erreur persiste jusqu'à ce que l’utilisateur définit les propriétés requises.
 
  Dans ce cas, il est une préoccupation supplémentaire, car l’icône utilisée pour l’alerte contient un « x », afin de supprimer le commun icône ne peut pas être utilisé en regard de celle-ci. Par conséquent, l’interface utilisateur utilise un bouton Supprimer, un contrôle plus bringuebalant.

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201680"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822 : Marquez les membres comme static
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1822 : 
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
-|Category|Microsoft.Performance|  
+|Catégorie|Microsoft.Performance|  
 |Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification vous apporter.<br /><br /> Sans rupture - Si vous modifiez simplement le membre à un membre d’instance avec le `this` mot clé.<br /><br /> Avec rupture - Si vous modifiez le membre à partir d’un membre d’instance à un membre statique, et il est visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  

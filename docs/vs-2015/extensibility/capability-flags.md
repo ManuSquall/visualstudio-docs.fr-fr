@@ -11,18 +11,18 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 831a52818cfc5c7b75c01a9551b70cd26b95dbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184514"
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Le SCC_EXCAP_*xxx* indicateurs sont incrémentielles indicateurs qui indiquent les capacités étendues et les résoudre en valeurs entières.  
   
-|Code de fonctionnalité|Value|Description|  
+|Code de fonctionnalité|`Value`|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Prend en charge la [SccRemove](../extensibility/sccremove-function.md) et commande.|  
 |`SCC_CAP_RENAME`|0x00000002L|Prend en charge la [SccRename](../extensibility/sccrename-function.md) et commande.|  
@@ -52,7 +52,7 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
   
 ## <a name="capability-bits-added-in-version-12"></a>Bits de fonctionnalité ajoutées dans la Version 1.2  
   
-|Code de fonctionnalité|Value|Description|  
+|Code de fonctionnalité|Valeur|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Prend en charge la [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Prend en charge la [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -65,14 +65,14 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
 ## <a name="capability-bits-added-in-version-13"></a>Bits de fonctionnalité ajoutées dans la Version 1.3  
  Ces indicateurs sont passées à la fois pour le [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) fonction permettant de déterminer si la fonctionnalité est prise en charge.  
   
-|Code de la capacité d’étendue|Value|Description|  
+|Code de la capacité d’étendue|Valeur|Description|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Prend en charge la `SCC_CHECKOUT_LOCALVER` option des extractions.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Prend en charge la [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  
 |`SCC_EXCAP_ENUM_CHANGED_FILES`|3|Prend en charge la [SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md).|  
 |`SCC_EXCAP_POPULATELIST_DIR`|4|Prend en charge la recherche de répertoires supplémentaires.|  
-|`SCC_EXCAP_QUERYCHANGES`|5|Prend en charge l’énumération des modifications de fichier.|  
-|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6|Prend en charge la [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md).|  
+|`SCC_EXCAP_QUERYCHANGES`|5\.|Prend en charge l’énumération des modifications de fichier.|  
+|`SCC_EXCAP_ADD_FILES_FROM_SCC`|6\.|Prend en charge la [SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md).|  
 |`SCC_EXCAP_GET_USER_OPTIONS`|7|Prend en charge la [SccGetUserOption](../extensibility/sccgetuseroption-function.md).|  
 |`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|Prend en charge l’appel de SccQueryInfo sur plusieurs threads.|  
 |`SCC_EXCAP_REMOVE_DIR`|9|Prend en charge la fonction SccRemoveDir.|  

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189441"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Procédure : Ajouter et supprimer les indicateurs des threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

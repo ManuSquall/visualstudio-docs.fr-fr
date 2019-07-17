@@ -13,24 +13,24 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183346"
 ---
 # <a name="customizing-the-editor"></a>Personnalisation de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez personnaliser la mise en forme, les onglets, les polices et les couleurs, IntelliSense et bien d’autres fonctionnalités de l’éditeur en général, ou d’un éditeur spécifique à un langage en modifiant les options. Pour plus d’informations sur ces options, consultez [Éditeur de texte, boîte de dialogue Options](../ide/reference/text-editor-options-dialog-box.md) ou tapez `Editor` dans **Lancement rapide**. Vous pouvez également changer le mode d'affichage des fenêtres de l'éditeur.  
+Vous pouvez personnaliser la mise en forme, les onglets, les polices et les couleurs, IntelliSense et bien d'autres fonctionnalités de l'éditeur en général, ou d'un éditeur spécifique à un langage en modifiant les options. Pour plus d’informations sur ces options, consultez [Éditeur de texte, boîte de dialogue Options](../ide/reference/text-editor-options-dialog-box.md) ou tapez `Editor` dans **Lancement rapide**. Vous pouvez également changer le mode d'affichage des fenêtres de l'éditeur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  Ces rubriques expliquent comment modifier l'apparence et le comportement de l'éditeur de texte et de l'éditeur de code.  
   
- [Guide pratique pour modifier la casse du texte dans l’Éditeur](../ide/how-to-change-text-case-in-the-editor.md)  
+ [Guide pratique pour changer la casse du texte dans l’éditeur](../ide/how-to-change-text-case-in-the-editor.md)  
  Explique comment changer la casse du texte dans votre code.  
   
- [Guide pratique pour gérer les fenêtres de l’Éditeur](../ide/how-to-manage-editor-windows.md)  
+ [Guide pratique pour gérer les fenêtres de l’éditeur](../ide/how-to-manage-editor-windows.md)  
  Montre comment manipuler les fenêtres de l'éditeur.  
   
  [Guide pratique pour gérer les modes de l’éditeur](../ide/how-to-manage-editor-modes.md)  

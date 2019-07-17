@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178823"
 ---
 # <a name="index-search-tips"></a>Conseils de recherche d'index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Vous pouvez rechercher des informations se trouvant dans l’index en entrant de
 ## <a name="index-search-tips"></a>Conseils de recherche d'index  
  L’utilisation de l’index est un processus simple ; toutefois, comprendre comment mieux entrer des mots clés peut rendre vos recherches d’index plus productives.  
   
-### <a name="general-guidelines"></a>Indications générales  
+### <a name="general-guidelines"></a>Instructions générales  
   
 - Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.  
   

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158991"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Cette rubrique présente les principaux types du modèle UML.
   
 - Pour obtenir des informations complètes sur l’API, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
-### <a name="relationships"></a>Relations  
+### <a name="relationships"></a>Relationships  
  Les propriétés et relations définies dans la spécification UML sont implémentées en tant que propriétés .NET.  
   
  La plupart des relations sont explorables dans les deux sens. Une relation correspond à une paire de propriétés, avec une propriété sur le type à chaque extrémité. Par exemple, les propriétés `IElement.Owner` et `IElement.OwnedElements` représentent deux extrémités d'une relation. Par exemple, cette expression sera toujours évaluée comme true :  
@@ -72,7 +72,7 @@ Cette rubrique présente les principaux types du modèle UML.
 ## <a name="access-to-the-model-in-extensions"></a>Accès au modèle dans des extensions  
  Dans les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définies comme composants MEF, vous pouvez déclarer des propriétés qui importent les informations à partir du contexte dans lequel l'extension s'exécute.  
   
-|Type d'attribut|Fournit l'accès à|Complément d'information|  
+|Type d'attribut|Fournit l'accès à|Plus d’informations|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> IDiagramContext<br /><br /> (dans Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Diagramme de focus actuel.|[Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> ILinkedUndoContext<br /><br /> (dans Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Permet de regrouper des modifications dans des transactions.|[Lier des mises à jour de modèles UML à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md)|  
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```  
   
 ## <a name="accessing-another-model-or-diagrams"></a>Accès à un autre modèle ou à d'autres diagrammes  
- Vous pouvez :  
+ Vous pouvez :  
   
 - utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML avec d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   

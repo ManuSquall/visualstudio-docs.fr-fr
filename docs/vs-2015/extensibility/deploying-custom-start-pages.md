@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162101"
 ---
 # <a name="deploying-custom-start-pages"></a>Déploiement de pages de démarrage personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 - En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).  
   
-- En créant manuellement un fichier .vsix. Pour plus d'informations, voir [Procédure : Manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- En créant manuellement un fichier .vsix. Pour plus d’informations, consultez [Guide pratique pour Manuellement un Package d’Extension (déploiement VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
   Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.  
   

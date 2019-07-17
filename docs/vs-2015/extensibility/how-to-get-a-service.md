@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204189"
 ---
 # <a name="how-to-get-a-service"></a>Procédure : Obtenir un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158553"
 ---
 # <a name="xml-editor-tasks"></a>Tâches de l'Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Cette section décrit comment effectuer des tâches courantes à l'aide de l'Éd
  [Guide pratique pour Générer un extrait XML à partir d'un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)  
  Montre comment générer un extrait XML à partir d'un schéma XML.  
   
- [Guide pratique pour Créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md).  
+ [Guide pratique : Créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md).  
  Montre comment créer des extraits XML.  
   
  [Procédure pas à pas : Utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)  

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d883ddc3c14bc319897896290a61211de92282b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145578"
 ---
 # <a name="thread-ready-connector"></a>Connecteur de thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

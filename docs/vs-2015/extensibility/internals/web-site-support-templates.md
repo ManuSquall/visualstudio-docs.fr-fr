@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200966"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60044371"
   
      La page d’accueil par défaut pour le nouveau site Web. L’attribut de langage spécifie le langage de code-behind, et l’attribut CodeFile indique le fichier dépendant qui contient le code code-behind associé à cette page.  
   
-- Default.aspx.*extension*  
+- Default.aspx. *extension*  
   
      Le fichier dépendant qui contient le code code-behind pour la page d’accueil par défaut. Le langage de code-behind détermine le *extension* de ce fichier.  
   

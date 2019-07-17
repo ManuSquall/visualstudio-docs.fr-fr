@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160894"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Huit octets)|dq|Debug.ListMemory /Format:EightBytes|
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) sous la forme de caractères Unicode|du|Debug.ListMemory /Unicode|
 |[Évaluer l’instruction, commande](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|Exit|Exit|File.Exit|
+|Quitter|Exit|File.Exit|
 |Mettre la sélection en forme|format|Edit.FormatSelection|
 |Plein écran|FullScreen|View.FullScreen|
 |[Démarrer, commande](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Atteindre, commande](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Atteindre l'accolade|GotoBrace|Edit.GotoBrace|
-|F1 Aide|Help|Help.F1Help|
+|F1 Aide|Aide|Help.F1Help|
 |Mode Exécution|immed|Tools.ImmediateMode|
 |Insérer le fichier comme texte|InsertFile|Edit.InsertFileAsText|
 |[Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|

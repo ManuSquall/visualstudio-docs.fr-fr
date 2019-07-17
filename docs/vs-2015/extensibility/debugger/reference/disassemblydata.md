@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea21b4ae9e6e852efcc3625dc3af24478bd88155
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198824"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ public struct DisassemblyData { 
   
  Si le `dwFlags` champ a le `DF_DOCUMENT_CHECKSUM` l’indicateur est défini, puis les informations de somme de contrôle supplémentaires suivent la chaîne pointée par le `bstrDocumentUrl` champ. Plus précisément, après la marque de fin de chaîne null, il suit un GUID qui identifie l’algorithme de somme de contrôle qui est à son tour suivi par une valeur de 4 octets indiquant le nombre d’octets dans la somme de contrôle, qui à son tour est suivi par les octets de la somme de contrôle. Consultez l’exemple dans cette rubrique comment encoder et décoder de ce champ dans [!INCLUDE[csprcs](../../../includes/csprcs-md.md)].  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Le `bstrDocumentUrl` champ peut contenir des informations supplémentaires autres que chaîne si le `DF_DOCUMENT_CHECKSUM` indicateur est défini. Le processus de création et la lecture de cette chaîne encodée est simple dans [!INCLUDE[vcprvc](../../../includes/vcprvc-md.md)]. Toutefois, dans [!INCLUDE[csprcs](../../../includes/csprcs-md.md)], il s’agit d’un autre. Pour les curieux, l’exemple suivant montre une méthode de création de la chaîne encodée à partir de [!INCLUDE[csprcs](../../../includes/csprcs-md.md)] et une façon de décoder la chaîne encodée dans [!INCLUDE[csprcs](../../../includes/csprcs-md.md)].  
   
 ```csharp  

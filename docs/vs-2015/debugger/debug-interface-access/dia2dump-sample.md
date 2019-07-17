@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197588"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,4 +52,4 @@ L’exemple Dia2dump est installé avec Visual Studio et contient le dia2dump.cp
   
 ## <a name="see-also"></a>Voir aussi  
  [Dia2dump.cpp, fichier Source](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Guide pratique pour Résoudre les problèmes de mises à niveau du projet Visual Studio échoue](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+ [Guide pratique : dépanner les échecs de mise à niveau de projets Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187862"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0012 |  

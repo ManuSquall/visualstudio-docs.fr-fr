@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199960"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
   
 |Composant|Description|Personnalisable (Oui/non)|  
 |---------------|-----------------|------------------------------|  
-|Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte|Non.|  
+|Engine (Moteur)|Le composant moteur contrôle le processus de transformation de modèle de texte|Non.|  
 |Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|  
 |Processeurs de directive|Processeurs de directive sont des classes qui gèrent les directives de modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|  
   

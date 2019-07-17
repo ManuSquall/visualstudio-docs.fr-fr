@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162155"
 ---
 # <a name="define-element"></a>Élément Define
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par a
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|name|Obligatoire. Le nom du symbole :<br /><br /> name="Mode"|  
-|par défaut|Obligatoire. La valeur du symbole :<br /><br /> value="Standard"|  
-|Condition|Optionnel. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Nom|Requis. Le nom du symbole :<br /><br /> name="Mode"|  
+|value|Requis. La valeur du symbole :<br /><br /> value="Standard"|  
+|Condition|facultatif. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -49,7 +49,7 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par a
 |-------------|-----------------|  
 |[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
 <Define name="DEMO_UI"/>  

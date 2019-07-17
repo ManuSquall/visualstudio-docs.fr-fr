@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157451"
 ---
 # <a name="more-debugging-features"></a>Plus de fonctionnalités de débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ Cette section traite de fonctionnalités supplémentaires que vous pouvez utilis
   
  [À l’aide de fichiers de vidage](../debugger/using-dump-files.md) décrit les fichiers de vidage, y compris des instructions sur l’enregistrement et l’ouverture. Les fichiers dump contiennent un instantané de l’état de votre programme à un moment donné, généralement après un incident. Si vous testez votre programme sur un ordinateur où n’ont pas été installés des fichiers sources ni PDB, vous pouvez enregistrer un fichier dump quand un incident se produit et l’utiliser pour déboguer l’incident sur l’ordinateur utilisé pour la génération et contenant les fichiers sources et PDB. 
   
- [Guide pratique pour restaurer des commandes de débogueur masquées](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Guide pratique : restaurer des commandes de débogueur masquées](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Décrit comment rendre visibles les commandes du débogueur qui ont été masquées par les paramètres IDE par défaut.

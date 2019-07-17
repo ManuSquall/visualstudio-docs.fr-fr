@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191721"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Lier des mises à jour de modèles UML à l'aide de transactions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, v
   
 - Seul le magasin de modèles UML est affecté par ces transactions. Les transactions de modélisation n'affectent pas les variables, les magasins externes comme les fichiers et les bases de données, les diagrammes de couche et les modèles de code.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
     using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  

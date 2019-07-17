@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189601"
 ---
 # <a name="how-to-view-script-documents"></a>Procédure : afficher les documents de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 
   
  Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Ils apparaissent dans le nœud **Documents de script**.  
   
- Les fichiers de script côté serveur sont toujours visibles. Ils sont affichés dans le nœud **\<Chemin du site web>**. Le nom du nœud ressemble à cet exemple : `c:\...\Website2\`  
+ Les fichiers de script côté serveur sont toujours visibles. Ils sont affichés dans le nœud **\<Chemin du site web>** . Le nom du nœud ressemble à cet exemple : `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Pour afficher un document de script côté serveur  
   
-1. Dans l’**Explorateur de solutions**, ouvrez le nœud **\<Chemin du site web>**.  
+1. Dans l’**Explorateur de solutions**, ouvrez le nœud **\<Chemin du site web>** .  
   
 2. Double-cliquez sur le fichier de script que vous souhaitez afficher.  
   

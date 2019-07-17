@@ -10,21 +10,21 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: b58d693980ffc55ccfe613d52e868bccca9908b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145739"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Partager le rappel de journal Unity avec VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec votre rappel.  Pour éviter ce risque, utilisez l'événement `VisualStudioIntegration.LogCallback` pour coopérer avec VSTU.  
+Visual Studio Tools pour Unity enregistre un rappel de journal avec Unity pour pouvoir diffuser sa console vers Visual Studio. Si vos scripts de l'éditeur enregistrent également un rappel de journal avec Unity, le rappel VSTU peut interférer avec votre rappel. Pour éviter ce risque, utilisez l'événement `VisualStudioIntegration.LogCallback` pour coopérer avec VSTU.  
   
 ## <a name="demonstrates"></a>Démonstrations  
  Comment partager le rappel de journal Unity créé par Visual Studio Tools pour Unity.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```csharp  
 using System;  
@@ -48,4 +48,4 @@ public class LogCallbackHook
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemple : Génération du fichier projet](../cross-platform/customize-project-files-created-by-vstu.md)
+ [Exemple : Génération de fichier projet](../cross-platform/customize-project-files-created-by-vstu.md)

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37c8193a166849f1361a66c640b1a414d3900fca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189126"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1715 : 
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectPrefix|  
 |CheckId|CA1715|  
-|Category|Microsoft.Naming|  
+|Catégorie|Microsoft.Naming|  
 |Modification avec rupture|Avec rupture - lorsque déclenchée sur les interfaces.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|  
   
 ## <a name="cause"></a>Cause  
  Le nom d’une interface extérieurement visible ne commence pas par un « I » majuscule.  
   
- - ou -  
+ ou  
   
  Le nom d’un paramètre de type générique sur un type visible de l’extérieur ou de la méthode ne commence pas par une majuscule ' t ».  
   
@@ -63,7 +63,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1715 : 
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.cs#1)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix.vb#1)]  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  **L’exemple suivant résout la violation précédente en préfixant l’interface avec « I ».**  
   
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2.cpp#1)]
@@ -77,7 +77,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1715 : 
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/cs/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.cs#1)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3/vb/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3.vb#1)]  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  **L’exemple suivant résout la violation précédente en faisant précéder le paramètre de type générique avec l ' ».**  
   
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4/cpp/FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4.cpp#1)]

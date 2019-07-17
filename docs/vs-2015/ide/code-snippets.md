@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188852"
 ---
 # <a name="code-snippets"></a>Extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur la touche TAB. Vous pouvez également taper `tryf`, puis appuyer sur TAB + TAB.  
+ Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#** , tapez `tryf`, puis appuyez sur la touche TAB. Vous pouvez également taper `tryf`, puis appuyer sur TAB + TAB.  
   
  Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple `return FALSE;`), et que vous cliquez ensuite sur **Entourer de**, puis sur **if**, l’extrait est développé autour de la ligne :  
   
@@ -86,8 +86,8 @@ End Property
  Vous pouvez ajouter et supprimer des répertoires d’extraits de code à l’aide des boutons **Ajouter** et **Supprimer** dans la boîte de dialogue **Gestionnaire des extraits de code**. Pour ajouter des extraits de code individuels, utilisez le bouton **Importer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)   
- [Guide pratique pour distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md)   
+ [Procédure pas à pas : Création d’un extrait de Code](../ide/walkthrough-creating-a-code-snippet.md)   
+ [Guide pratique pour Distribuer des extraits de Code](../ide/how-to-distribute-code-snippets.md)   
  [Bonnes pratiques pour l’utilisation des extraits de code](../ide/best-practices-for-using-code-snippets.md)   
  [Dépannage des extraits](../ide/troubleshooting-snippets.md)   
  [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md)   

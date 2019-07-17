@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194237"
 ---
 # <a name="menus-element"></a>Élément Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Définit l’ensemble des menus et barres d’outils qui implémente un VSPackag
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -54,7 +54,7 @@ Définit l’ensemble des menus et barres d’outils qui implémente un VSPackag
 |-------------|-----------------|  
 |[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
 <Commands package="guidMyPackage">  

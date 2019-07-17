@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203590"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Débogage managé : Paramètres de propriété recommandés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Certaines propriétés doivent être définies de la même manière pour tous le
 |-----------------------|-----------------|  
 |**Définir la constante DEBUG**|C#et F#: Définir la case à cocher activée. Cela permet à votre application d'utiliser la classe Debug.|  
 |**Définir la constante TRACE**|C#et F#: Définir la case à cocher activée. Cela permet à votre application d'utiliser la classe Trace.|  
-|**Optimiser le code**|C#, F#et Visual Basic : La valeur false. Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre **Code machine** est généré à partir d’une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans l’éditeur de code. Pour déboguer le code optimisé, vous devez désactiver [uniquement mon Code](just-my-code.md).<br /><br /> Pour plus d’informations, consultez [des paramètres de projet pour les Configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [paramètres de projet pour une Configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Optimiser le code**|C#, F#et Visual Basic : La valeur false. Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre **Code machine** est généré à partir d’une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans l’éditeur de code. Pour déboguer le code optimisé, vous devez désactiver [uniquement mon Code](just-my-code.md).<br /><br /> Pour plus d’informations, consultez [des paramètres de projet pour les Configurations Debug c#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [paramètres de projet pour une Configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
 |**Chemin de sortie**|Affectez la valeur bin\Debug\\.|  
 |**Options avancées de compilation**|Visual Basic uniquement. Cliquez sur **Avancé** pour définir les propriétés avancées décrites dans le tableau suivant.|  
   

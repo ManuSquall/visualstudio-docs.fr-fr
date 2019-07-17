@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178784"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Procédure : Visualiser une association de collections (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +39,6 @@ Les propriétés et les champs qui sont des collections d’autres types peuvent
      La propriété ou le champ s’affiche sous la forme d’une ligne reliée au type collecté.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Créer des Associations entre Types (Concepteur de classes)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Guide pratique : Créer des Associations entre Types (Concepteur de classes)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)   
  [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)

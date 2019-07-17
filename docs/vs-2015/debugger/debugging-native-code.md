@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196422"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58949791"
 Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [présentation du débogueur](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour Déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md)  
+ [Guide pratique : Déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md)  
  Contient des conseils sur le débogage d'un code optimisé, en particulier sur les raisons pour lesquelles vous devez déboguer une version non optimisée de votre programme, sur les paramètres d'optimisation par défaut pour les configurations Debug et Release, ainsi que sur la recherche des bogues qui n'apparaissent que dans le code optimisé (activation de l'optimisation dans une configuration de build Debug).  
   
  [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -44,7 +44,7 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
  [Assertions C/C++](../debugger/c-cpp-assertions.md)  
  Décrit les instructions d'assertion, leur fonctionnement, les avantages liés à leur utilisation (interception des erreurs de logique, vérification des résultats d'une opération et test des conditions d'erreur), leur interaction avec `_DEBUG` et les types d'assertions pris en charge dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Guide pratique pour Déboguer du code assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Guide pratique : Déboguer du code assembly inline](../debugger/how-to-debug-inline-assembly-code.md)  
  Explique brièvement comment utiliser la fenêtre Code Machine pour afficher les instructions assembly et la fenêtre Registres pour afficher le contenu du Registre, et fournit des liens vers des rubriques relatives à ces fenêtres.  
   
  [Techniques de débogage de MFC](../debugger/mfc-debugging-techniques.md)  

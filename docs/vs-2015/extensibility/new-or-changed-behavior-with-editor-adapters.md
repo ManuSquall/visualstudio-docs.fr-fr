@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194178"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportement nouveau ou modifié avec les adaptateurs de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Si vous mettez à jour le code qui a été écrit par rapport à des versions an
  Mode WPF est différent du mode Win32 de deux manières. Tout d’abord, l’affichage de texte peut être hébergé dans un contexte WPF. Vous pouvez accéder au volet WPF en castant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> à <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> et en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Ensuite, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> toujours retourne un HWND, mais ce HWND peut être utilisé uniquement pour vérifier sa position et de définir le focus dessus. Vous ne devez pas utiliser ce HWND pour répondre à un message WM_PAINT, car il n’affecte pas la façon dont l’éditeur peint la fenêtre. Ce HWND est présent uniquement afin de faciliter la transition vers le nouveau code de l’éditeur au moyen des adaptateurs. Il est vivement recommandé que vous ne devez pas utiliser `VIF_NO_HWND_SUPPORT` si votre composant requiert un HWND travailler, en raison des limitations dans le HWND retourné à partir de `GetWindowHandle` lorsque vous êtes dans ce mode.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>Passage de tableaux en tant que paramètres dans le code natif  
- Il existe de nombreuses méthodes dans l’API héritée de l’éditeur qui ont des paramètres qui incluent un tableau et son décompte. Les exemples sont :  
+ Il existe de nombreuses méthodes dans l’API héritée de l’éditeur qui ont des paramètres qui incluent un tableau et son décompte. Voici quelques exemples :  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -57,7 +57,7 @@ Si vous mettez à jour le code qui a été écrit par rapport à des versions an
  Vous devez toujours appeler l’adaptateur de mémoire tampon à partir du thread d’interface utilisateur. L’adaptateur de mémoire tampon est un objet managé, ce qui signifie que contourne appel dedans à partir du code managé marshaling COM et votre appel ne sera pas automatiquement regroupé vers le thread d’interface utilisateur.  Si vous appelez l’adaptateur de mémoire tampon à partir d’un thread d’arrière-plan, vous devez utiliser <xref:System.Windows.Threading.Dispatcher.Invoke%2A> ou une méthode similaire.  
   
 #### <a name="lockbuffer-methods"></a>Méthodes LockBuffer  
- Toutes les méthodes LockBuffer() sont déconseillés. Les exemples sont :  
+ Toutes les méthodes LockBuffer() sont déconseillés. Voici quelques exemples :  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   

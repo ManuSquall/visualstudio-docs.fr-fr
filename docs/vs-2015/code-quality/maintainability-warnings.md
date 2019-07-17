@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: fb59a99057895859ebb38027f66e33dd5161486d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201267"
 ---
 # <a name="maintainability-warnings"></a>avertissements liés à la facilité de maintenance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

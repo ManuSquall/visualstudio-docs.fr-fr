@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142468"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58947810"
 ## <a name="rule-description"></a>Description de la règle
  L’opérateur d’égalité est destinée à être un point de vue syntaxique pour accéder facilement les fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celle de <xref:System.Object.Equals%2A>.
 
- Le compilateur C# émet un avertissement si votre code ne respecte pas cette règle.
+ Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, vous devez supprimer l’implémentation de l’opérateur d’égalité ou substituer <xref:System.Object.Equals%2A> et avoir les deux méthodes retournent les mêmes valeurs. Si l’opérateur d’égalité n’introduit pas de comportement incohérent, vous pouvez corriger la violation en fournissant une implémentation de <xref:System.Object.Equals%2A> qui appelle le <xref:System.Object.Equals%2A> méthode dans la classe de base.
@@ -62,12 +62,12 @@ ms.locfileid: "58947810"
 
  Cet exemple produit la sortie suivante.
 
- **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? No**
-**a == b ? Ne**
+ **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? Ne**
+**un == b ? Ne**
 **a1 et a sont égaux ? Oui**
 **a1 == un ? Oui**
-**b et b copie sont égales ? No**
-**b == bcopy ? Oui**
+**b et b copie sont égales ? Ne**
+**b == bcopy ? Oui**
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre un type qui techniquement enfreint cette règle, mais ne se comporte pas de façon incohérente.
 
@@ -80,8 +80,8 @@ ms.locfileid: "58947810"
 
  Cet exemple produit la sortie suivante.
 
- **a = (1,1) et b = (2,2) sont égaux ? No**
-**a == b ? Ne**
+ **a = (1,1) et b = (2,2) sont égaux ? Ne**
+**un == b ? Ne**
 **a1 et a sont égaux ? Oui**
 **a1 == un ? Oui**
 **b et b copie sont égales ? Oui**

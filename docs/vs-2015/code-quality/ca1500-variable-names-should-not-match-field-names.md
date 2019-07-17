@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191491"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1500 : 
 |-|-|  
 |TypeName|VariableNamesShouldNotMatchFieldNames|  
 |CheckId|CA1500|  
-|Category|Microsoft.Maintainability|  
+|Catégorie|Microsoft.Maintainability|  
 |Modification avec rupture|Lorsqu’il est déclenché sur un paramètre qui porte le même nom en tant que champ :<br /><br /> Sans rupture - Si le champ et la méthode qui déclare le paramètre ne sont pas visibles en dehors de l’assembly, quelle que soit la modification effectuée.<br />Rupture - Si vous modifiez le nom du champ et pouvez être consultés en dehors de l’assembly.<br />-Modification avec rupture - Si vous modifiez le nom du paramètre et la méthode qui le déclare peut être consultée en dehors de l’assembly.<br /><br /> Lorsqu’il est déclenché sur une variable locale qui a le même nom en tant que champ :<br /><br /> Sans rupture - Si le champ ne peut pas être visible en dehors de l’assembly, quelle que soit la modification effectuée.<br />Sans rupture - Si vous modifiez le nom de la variable locale et que vous ne modifiez pas le nom du champ.<br />-Modification avec rupture - Si vous modifiez le nom du champ et que vous pouvez le constater en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
@@ -46,7 +46,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1500 : 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez aucun avertissement de cette règle.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant montre deux violations de la règle.  
   
  [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/cs/FxCop.Maintainability.VarMatchesField.cs#1)]

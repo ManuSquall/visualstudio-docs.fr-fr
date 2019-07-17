@@ -13,16 +13,16 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177441"
 ---
 # <a name="using-and-providing-services"></a>Utilisation et fourniture de services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. Par exemple, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offre la <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service à n’importe quel package VS de charges. Ce service fournit le <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. Par exemple, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offre la <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service à n’importe quel package VS de charges. Ce service fournit le <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour plus d’informations, consultez [Guide pratique pour Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
  Les VSPackages peuvent offrir des services de façon autonome, à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface...  
   
@@ -38,16 +38,16 @@ Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble 
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)  
  Présente les éléments importants d’un service de Visual Studio.  
   
- [Guide pratique pour Bénéficiez d’un Service](../extensibility/how-to-get-a-service.md)  
+ [Guide pratique : obtenir un service](../extensibility/how-to-get-a-service.md)  
  Explique comment demander (consommer) un service.  
   
- [Guide pratique pour Fournir un Service](../extensibility/how-to-provide-a-service.md)  
+ [Guide pratique pour fournir un service](../extensibility/how-to-provide-a-service.md)  
  Explique comment fournir un service.  
   
- [Guide pratique pour Fournir un Service asynchrone Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Guide pratique : fournir un service Visual Studio asynchrone](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Explique comment fournir un service asynchrone.  
   
- [Guide pratique pour Résoudre les problèmes des Services](../extensibility/how-to-troubleshoot-services.md)  
+ [Guide pratique pour dépanner les services](../extensibility/how-to-troubleshoot-services.md)  
  Aborde les problèmes courants et présente des solutions pour eux.  
   
 ## <a name="related-sections"></a>Rubriques connexes  

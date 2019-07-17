@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204219"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Le `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|name|Obligatoire. Nom du symbole GUID.|  
-|par défaut|Obligatoire. GUID du symbole GUID.|  
+|Nom|Requis. Nom du symbole GUID.|  
+|value|Requis. GUID du symbole GUID.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   

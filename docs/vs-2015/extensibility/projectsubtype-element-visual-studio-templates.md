@@ -14,11 +14,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193913"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58951631"
 Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `ProjectType` élément.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<ProjectSubType>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -70,7 +70,7 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `Pro
   
 - `VisualBasic`: Spécifie que le modèle crée un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projet Web ou un élément.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] appareil application ciblant le [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
   
 ```  

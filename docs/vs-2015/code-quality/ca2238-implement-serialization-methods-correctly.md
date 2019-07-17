@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142384"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA2238 : 
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
-|Category|Microsoft.Usage|  
+|Catégorie|Microsoft.Usage|  
 |Modification avec rupture|Avec rupture - Si la méthode est visible en dehors de l’assembly.<br /><br /> Sans rupture - Si la méthode n’est pas visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
@@ -56,7 +56,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA2238 : 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez aucun avertissement de cette règle.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant montre des gestionnaires d’événements sérialisation correctement déclarée.  
   
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/cs/FxCop.Usage.SerializationEventHandlers.cs#1)]

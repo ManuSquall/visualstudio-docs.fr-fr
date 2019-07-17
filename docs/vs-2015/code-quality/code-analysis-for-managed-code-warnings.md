@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142342"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
   
  Le tableau suivant indique le type d’informations fourni pour chaque avertissement.  
   
-|Élément|Description|  
+|Item|Description|  
 |----------|-----------------|  
 |Type|TypeName de la règle.|  
 |CheckId|Identificateur unique de la règle. CheckId et Category sont utilisés pour la suppression à la source d’un avertissement.|  
-|Category|Catégorie de l’avertissement.|  
+|Catégorie|Catégorie de l’avertissement.|  
 |Modification avec rupture|Indique si la correction d’une violation de la règle constitue une modification avec rupture. Une modification avec rupture signifie qu’un assembly qui présente une dépendance à la cible ayant provoqué la violation ne se recompile pas avec la nouvelle version corrigée ou peut échouer au moment de l’exécution en raison de la modification. Quand plusieurs corrections sont possibles et qu’au moins l’une d’elles est une modification avec rupture et qu’une autre ne l’est pas, les caractéristiques « Avec rupture » et « Sans rupture » sont toutes deux spécifiées.|  
 |Cause|Code managé spécifique qui contraint la règle à générer un avertissement.|  
 |Description|Décrit les problèmes sous-jacents à l’avertissement.|  

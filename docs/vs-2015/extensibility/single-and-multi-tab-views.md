@@ -11,11 +11,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205567"
 ---
 # <a name="single-and-multi-tab-views"></a>Vues à onglet unique et onglets multiples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,5 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en charge plusieurs vues de Document](../extensibility/supporting-multiple-document-views.md)   
- [Guide pratique pour Joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Guide pratique : Joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
  [Création d’éditeurs et de concepteurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)

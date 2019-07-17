@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157629"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`name`|Obligatoire. Décrit l’identité du tiers qui a publié cette application.|  
-|`issuerKeyHash`|Obligatoire. Contient le hachage SHA-1 de la clé publique de l’émetteur du certificat.|  
+|`name`|Requis. Décrit l’identité du tiers qui a publié cette application.|  
+|`issuerKeyHash`|Requis. Contient le hachage SHA-1 de la clé publique de l’émetteur du certificat.|  
   
 #### <a name="parameters"></a>Paramètres  
   

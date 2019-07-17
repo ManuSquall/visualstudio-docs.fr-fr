@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155712"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Génération d'applications ClickOnce à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouv
   
  Une « cible » est un indicateur à MSBuild sur la façon de traiter la commande. Les principales cibles sont la cible « build » et la cible « publier ». La cible de génération est l’équivalent à la sélection de la Build command (ou en appuyant sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez obtenir qui en tapant `msbuild`. Cette commande fonctionne parce que la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Cela signifie que vous n’avez pas explicitement besoin spécifier la cible de génération. Par conséquent, en tapant `msbuild` est la même opération que tapant `msbuild /target:build`.  
   
- Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou C#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.  
+ Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou c#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.  
   
  Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
@@ -81,7 +81,7 @@ Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vous pouv
 ## <a name="publishing-properties"></a>Propriétés de publication  
  Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la façon dont le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est générée.  
   
- In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ Dans CmdLineDemo.vbproj / CmdLineDemo.csproj :  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  

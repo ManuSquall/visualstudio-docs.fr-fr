@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158626"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : À l’aide de XSLT Hierarchy
+# <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : Utilisation de XSLT Hierarchy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. Une feuille de style XSLT utilise souvent des instructions `includes` et `imports`. La compilation démarre à partir de la feuille de style principale, mais lorsque vous constatez une erreur en compilant une feuille de style XSLT, l'erreur peut provenir d'une autre source que la feuille de style principale. La résolution de l'erreur ou la modification de la feuille de style peut nécessiter l'accès à des feuilles de style incluses ou importées. L'exécution pas à pas de la feuille de style dans le débogueur peut ouvrir des feuilles de style incluses et importées, et vous pouvez ajouter un point d'arrêt à un point dans une ou plusieurs des feuilles de style incluses.  

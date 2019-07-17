@@ -18,20 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196069"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>L’installation de systèmes de base de données, des outils et des exemples
+# <a name="installing-database-systems-tools-and-samples"></a>Installation de systèmes de base de données, outils et exemples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio n’inclut pas les systèmes de base de données autres que ceux utilisés en interne. Pour développer une application connecté aux données dans Visual Studio, votre généralement installer le système de base de données sur votre ordinateur de développement local, puis déployer l’application et la base de données dans un environnement de production lorsqu’elles sont prêtes. Pour le système de base de données soient accessibles à partir d’applications .NET et pour être visible dans les fenêtres outils de données Visual Studio, il doit avoir un fournisseur de données ADO.NET. Un fournisseur doit prendre spécifiquement en charge Entity Framework si vous envisagez d’utiliser des modèles de données d’entité dans votre application .NET.     De nombreux fournisseurs sont proposées via le Gestionnaire de Package NuGet ou via la galerie Visual Studio.  
   
  Pour le développement de SQL, vérifiez que vous disposez de SQL Server Data Tools est installé dans Visual Studio. Cliquez sur le **vue** menu. Si vous ne voyez pas Explorateur d’objets SQL Server, accédez à panneau de configuration et modifier Visual Studio. Dans le programme d’installation, sélectionnez **Microsoft SQL Server Data Tools**.  
   
- Si vous utilisez l’API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu'à ce que vous êtes prêt à déployer en production. Pour plus d’informations, consultez [utiliser l’émulateur de stockage Azure pour le développement et le test](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).  
+ Si vous utilisez l’API de stockage Azure, installez les émulateurs de stockage Azure sur votre ordinateur local pendant le développement afin d’éviter des frais jusqu'à ce que vous êtes prêt à déployer en production. Pour plus d’informations, consultez [Utilisation de l’émulateur de stockage Azure pour le développement et le test](https://azure.microsoft.com/documentation/articles/storage-use-emulator/).  
   
  La liste suivante répertorie certains des systèmes de base de données plus populaires qui peuvent être utilisés dans les projets Visual Studio. La liste n’est pas exhaustive. Pour obtenir la liste de fournisseurs tiers qui proposent des fournisseurs de données ADO.NET qui permettent l’intégration approfondie avec les outils de Visual Studio, consultez [fournisseurs de données ADO.NET](https://msdn.microsoft.com/library/dd363565.aspx).  
   

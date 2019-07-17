@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e90c76c446da7266250b9e588a07d98f21e64cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200691"
 ---
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un type managé (n’importe quel symbole défini par les métadonnées ou du format natif vers les fonctionnalités de gestion de mémoire et de ressources de langages tels que C#) est identifié par un `SymTagManagedType` symbole.  
+Un type managé (n’importe quel symbole défini par les métadonnées ou du format natif vers les fonctionnalités de gestion de mémoire et de ressources de langages tels que c#) est identifié par un `SymTagManagedType` symbole.  
   
 ## <a name="properties"></a>Properties  
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.  

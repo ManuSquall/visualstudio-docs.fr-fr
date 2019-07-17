@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185837"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Nom|Type|Description|  
+|Name|type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nom par défaut des projets de ce type.|  
 |DisplayName|REG_SZ|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|  
@@ -57,7 +57,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Nom|Type|Description|  
+|Name|type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID de ressource pour les modèles d’ajouter un élément.|  
 |TemplatesDir|REG_SZ|Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant.|  
@@ -67,7 +67,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 ### <a name="registering-file-filters"></a>L’inscription des filtres de fichiers  
  Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrer pour le **ouvrir un fichier** boîte de dialogue est :  
   
- **Fichiers Visual C# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Fichiers Visual c# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*sous-clé*>. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignore les nom de la sous-clé et utilise simplement ses valeurs.  
   
@@ -84,7 +84,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Nom|Type|Description|  
+|Name|type|Description|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **rechercher dans les fichiers** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|  
 |CommonOpenFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **ouvrir un fichier** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|  
@@ -108,7 +108,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
   
  \ProjectItems (contient les éléments de projet)  
   
- \Class  
+ \CLASSE  
   
  \Form  
   

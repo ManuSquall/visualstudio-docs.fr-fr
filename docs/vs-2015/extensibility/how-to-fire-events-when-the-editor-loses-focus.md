@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204192"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Procédure : Déclencher des événements lorsque l’éditeur perd le Focus
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Procédure : Déclencher des événements lorsque l’éditeur perd le focus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il est parfois nécessaire de savoir quand un éditeur perd le focus sur le frame de fenêtre. Par exemple, vous devrez peut-être extraire du code à partir d’une fenêtre de code une fois que l’éditeur de focus n’est plus sur celui-ci. La procédure suivante fournit les étapes à suivre pour recevoir une notification de l’éditeur perd le focus.  

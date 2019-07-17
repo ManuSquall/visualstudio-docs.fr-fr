@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162087"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID des objets qui sont généralement utilisés pour étendre des projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Le tableau suivant répertorie les CATID qui sont utilisés pour étendre `Proje
   
 ## <a name="listing-of-catids"></a>Liste des CATID  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
@@ -56,7 +56,7 @@ Le tableau suivant répertorie les CATID qui sont utilisés pour étendre `Proje
 ## <a name="c-catids"></a>CATID de C++  
  Ce qui suit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID n’est pas exposées dans les bibliothèques de types dans système de projet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID est incluses dans les bibliothèques de types dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -72,7 +72,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  Ce qui suit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID n’est pas également exposées dans les bibliothèques de types dans système de projet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID est uniquement disponibles dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et ne sera pas disponible dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|Nom|GUID|  
+|Name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

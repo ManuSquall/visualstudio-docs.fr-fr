@@ -12,11 +12,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203824"
 ---
 # <a name="list-of-available-services"></a>Liste des services disponibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "59001471"
   
 ## <a name="the-services"></a>Les Services  
   
-|Service|Interface|Visual Studio|Visual Studio 2005|Description|  
+|de diffusion en continu|Interface|Visual Studio|Visual Studio 2005|Description|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Oui|Oui|Utilisé par les VSPackages pour obtenir un <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface à partir d’un contrôle ActiveX pour faciliter les transferts de données asynchrones.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Non|Oui|Obtient l’objet d’extensibilité DTE (Design Time) utilisé pour l’automatisation.<br /><br /> ID DE C/C++ : SID_SDTE|  

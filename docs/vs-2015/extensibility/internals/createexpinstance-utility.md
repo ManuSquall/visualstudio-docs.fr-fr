@@ -15,11 +15,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196980"
 ---
 # <a name="createexpinstance-utility"></a>Utilitaire CreateExpInstance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  /VSInstance  
  Le nom du répertoire qui contient l’instance de Visual Studio de base à copier.  
   
- /RootSuffix  
+ / RootSuffix  
  Le suffixe à ajouter au nom du répertoire d’instance expérimentale.  
   
 ## <a name="remarks"></a>Notes  
@@ -59,7 +59,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
   
  L’exemple suivant réinitialise l’instance expérimentale de la valeur par défaut de Visual Studio.  
   
- **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**  
+ **CreateExpInstance.exe /Reset /VSInstance = 14.0 /RootSuffix = Exp**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’un produit](../../misc/releasing-a-visual-studio-integration-product.md)

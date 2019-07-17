@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183918"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```  
   
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Utiliser OnChildConfigured pour initialiser les propriétés d’une forme  
- Pour définir les propriétés d’une forme lors de sa création, le remplacement `OnChildConfigured()` dans une définition partielle de votre classe de diagramme. La classe de schéma est spécifiée dans votre définition DSL, et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Exemple :  
+ Pour définir les propriétés d’une forme lors de sa création, le remplacement `OnChildConfigured()` dans une définition partielle de votre classe de diagramme. La classe de schéma est spécifiée dans votre définition DSL, et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Par exemple :  
   
 ```csharp  
 partial class MyLanguageDiagram  

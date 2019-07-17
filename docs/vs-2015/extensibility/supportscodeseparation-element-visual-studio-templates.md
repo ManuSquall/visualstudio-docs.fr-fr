@@ -14,11 +14,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160497"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58947848"
 Spécifie ou non le **placer le code dans un fichier distinct** case à cocher est activée dans le **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate>  
- \<TemplateData>  
+ \<TemplateData >  
  \<SupportsCodeSeparation>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -62,7 +62,7 @@ Spécifie ou non le **placer le code dans un fichier distinct** case à cocher e
   
  Séparation de code, ou le modèle de page code-behind, vous permet de conserver le balisage dans un fichier et le code de programmation dans un autre fichier. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et autres langages .NET utilisent ce modèle.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant spécifie pour afficher le **placer le code dans un fichier distinct** option.  
   
 ```  

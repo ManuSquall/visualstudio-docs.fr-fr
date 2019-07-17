@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202253"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utiliser StringBuilder pour les concaténations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0001 : 
 |||  
 |-|-|  
 |ID de règle|DA0001|  
-|Category|Utilisation du .NET Framework|  
+|Catégorie|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation|  
 |Message|Utilisez StringBuilder pour les concaténations de chaînes|  
 |Type de message|Warning|  

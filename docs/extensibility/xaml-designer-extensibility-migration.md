@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784489"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890317"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migration d’extensibilité du concepteur XAML
 
-À partir de Visual Studio 2019 version 16.1 en version préliminaire publique, le concepteur XAML prend en charge les deux architectures différentes : l’architecture du Concepteur d’isolation et l’architecture de surface d’isolation plus récente. Cette transition de l’architecture est nécessaire pour prendre en charge les runtimes de cibles qui ne peut pas être hébergés dans un processus de .NET Framework. Passage à l’architecture d’isolation surface introduit des changements majeurs au modèle d’extensibilité de fournisseurs tiers. Cet article décrit les modifications.
+Dans Visual Studio 2019, le concepteur XAML prend en charge les deux architectures différentes : l’architecture du Concepteur d’isolation et l’architecture de surface d’isolation plus récente. Cette transition de l’architecture est nécessaire pour prendre en charge les runtimes de cibles qui ne peut pas être hébergés dans un processus de .NET Framework. Passage à l’architecture d’isolation surface introduit des changements majeurs au modèle d’extensibilité de fournisseurs tiers. Cet article décrit ces modifications qui sont disponibles dans le canal de préversion 16.2 de 2019 Visual Studio.
 
 **Isolation concepteur** est utilisé par le Concepteur WPF pour les projets qui ciblent le .NET Framework et prend en charge *. design.dll* extensions. Code utilisateur, des bibliothèques de contrôles et des extensions tierces sont chargées dans un processus externe (*XDesProc.exe*), ainsi que les panneaux de concepteur et le code concepteur réel.
 
@@ -47,7 +47,7 @@ Bien que les bibliothèques de contrôle tiers sont compilés pour le runtime ci
 
 N’autorise pas le modèle d’extensibilité d’isolation de surface d’exposition pour les extensions dépendent des bibliothèques de contrôles réels, et par conséquent, les extensions ne peuvent pas référencer des types à partir de la bibliothèque de contrôles. Par exemple, *MyLibrary.designtools.dll* ne doit pas avoir une dépendance *MyLibrary.dll*.
 
-Ces dépendances ont été plus courantes lors de l’enregistrement des métadonnées pour les types par le biais de tables d’attributs. Types de code d’extension qui fait référence de bibliothèque de contrôles directement par le biais de [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) en Visual Basic) est substituée dans les nouvelles API en utilisant des noms de type basé sur chaîne :
+Ces dépendances ont été plus courantes lors de l’enregistrement des métadonnées pour les types par le biais de tables d’attributs. Types de code d’extension qui fait référence de bibliothèque de contrôles directement par le biais de [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) est substituée dans les nouvelles API en utilisant des noms de type basé sur chaîne :
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 Fournisseurs de fonctionnalités sont implémentées dans des assemblys d’extension et chargées dans le processus de Visual Studio. `FeatureAttribute` continueront de référencer des types de fournisseur de fonctionnalité directement à l’aide [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
+Actuellement, les fournisseurs de fonctionnalités suivantes sont prises en charge :
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 Étant donné que les fournisseurs de fonctionnalités sont désormais chargés dans un processus différent dans les bibliothèques de code et le contrôle réel à l’exécution, ils ne sont plus en mesure d’accéder directement aux objets d’exécution. Au lieu de cela, toutes les interactions de ce type doivent être converties pour utiliser les API basée sur le modèle correspondants. L’API du modèle a été mis à jour et l’accès aux <xref:System.Type> ou <xref:System.Object> est soit n’est plus disponible ou a été remplacé par `TypeIdentifier` et `TypeDefinition`.
 
 `TypeIdentifier` représente une chaîne sans un nom d’assembly qui identifie un type. Un `TypeIdenfifier` peut être résolue en un `TypeDefinition` pour demander des informations supplémentaires sur le type. `TypeDefinition` instances ne peut pas être mis en cache dans le code d’extension.
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+Autres exemples de code sont disponibles dans le [concepteur xaml-exemples d’extensibilité](https://github.com/microsoft/xaml-designer-extensibility-samples) référentiel.
 
 ## <a name="limited-support-for-designdll-extensions"></a>Prise en charge pour limitée. les extensions design.dll
 

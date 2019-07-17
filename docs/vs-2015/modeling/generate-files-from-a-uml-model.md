@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182824"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Générer des fichiers à partir d'un modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60088975"
   
   L'approche illustrée dans l'exemple suivant convient à la génération de texte à partir d'un modèle unique, quand vous initiez l'opération à partir de l'un des diagrammes de modèles. Pour traiter un modèle dans un contexte distinct, envisagez d’utiliser [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) pour accéder au modèle et ses éléments.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
  Pour exécuter cet exemple, créez un projet d'Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Le nom du projet qui est utilisé dans cet exemple est `VdmGenerator`. Dans le **source.extension.vsixmanifest** de fichiers, cliquez sur **ajouter du contenu** et définissez le champ de type sur **composant MEF** et chemin d’accès source référençant le projet actuel. Pour plus d’informations sur la configuration de ce type de projet, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  Ajoutez au projet un fichier C# qui contient le code suivant. Cette classe définit une commande de menu qui apparaîtra sur un diagramme de classes UML.  
@@ -314,7 +314,7 @@ namespace Test{
   
 - **Profils**. Dans un même domaine d'activité, l'interprétation d'un type d'élément peut varier. Par exemple, dans un diagramme de site web, certaines classes peuvent représenter des pages web et d'autres des blocs de contenu. Pour que ces distinctions soient plus claires du point de vue de l'utilisateur, vous pouvez définir des stéréotypes. Les stéréotypes vous permettent également de joindre des propriétés supplémentaires qui s'appliquent aux éléments de ce genre. Les stéréotypes sont empaquetés dans des profils. Pour plus d’informations, consultez [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md).  
   
-     Dans le code de modèle, il est facile d'accéder aux stéréotypes définis sur un objet. Exemple :  
+     Dans le code de modèle, il est facile d'accéder aux stéréotypes définis sur un objet. Par exemple :  
   
     ```  
     public bool HasStereotype(IClass c, string profile, string stereo)  

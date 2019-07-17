@@ -1,5 +1,5 @@
 ---
-title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
+title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152642"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
+# <a name="da0029-unsupported-clr-version"></a>DA0029 : Version CLR non prise en charge
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0029 |  
@@ -39,4 +39,4 @@ ID de règle | DA0029 |
  Cet avertissement se produit car les Outils de profilage ne pourront pas résoudre les symboles du code managé qui s’exécute dans l’application. Les Outils de profilage ne peuvent pas résoudre les symboles du code managé pour les applications qui exécutent le [!INCLUDE[net_v11_long](../includes/net-v11-long-md.md)].  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Aucun.
+ Aucune.

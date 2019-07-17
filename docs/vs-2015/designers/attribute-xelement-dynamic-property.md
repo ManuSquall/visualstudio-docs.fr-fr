@@ -10,16 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ced05b8da63f9a7a242b166fe64e9e44f78b8065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162675"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (propriété dynamique XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Obtient un indexeur utilisé pour récupérer l’instance d’attribut qui correspond au nom développé spécifié.  
+Obtient un indexeur utilisé pour récupérer l'instance d'attribut qui correspond au nom développé spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,7 +28,7 @@ elem.Attribute[{namespaceName}attribName]
 ```  
   
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour  
- Indexeur de type `XAttribute Item(String expandedName)`. Cet indexeur prend le nom développé de l’attribut spécifié et retourne l’objet <xref:System.Xml.Linq.XAttribute> correspondant ou `null` s’il n’existe aucun attribut avec le nom spécifié.  
+ Indexeur de type `XAttribute Item(String expandedName)`. Cet indexeur prend le nom développé de l'attribut spécifié et retourne l'objet <xref:System.Xml.Linq.XAttribute> correspondant ou `null` s'il n'existe aucun attribut avec le nom spécifié.  
   
 ## <a name="remarks"></a>Notes  
  Cette propriété est équivalente à la méthode <xref:System.Xml.Linq.XElement.Attribute%2A> de la classe <xref:System.Xml.Linq.XElement?displayProperty=fullName>.  

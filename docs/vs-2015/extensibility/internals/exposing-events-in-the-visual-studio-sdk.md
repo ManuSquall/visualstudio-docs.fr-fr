@@ -12,11 +12,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7056497c505bbb355287416e468e411b4e5a2a62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196686"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Exposition d’événements dans le Kit de développement logiciel (SDK) Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ ms.locfileid: "58948119"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entrées de Registre à partir de l’exemple de projet de base  
  Cette section indique où ajouter les valeurs d’événement automation dans le Registre.  
   
- [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID\>\AutomationEvents]  
+ [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\< PkgGUID\>\AutomationEvents]  
   
  « AutomationProjectEvents « = » de renvoie l’objet AutomationProjectEvents »  
   
- "AutomationProjectItemEvents"="Returns the AutomationProjectItemsEvents Object"  
+ « AutomationProjectItemEvents « = » de renvoie l’objet AutomationProjectItemsEvents »  
   
 |Nom|Type|Plage|Description|  
 |----------|----------|-----------|-----------------|  
