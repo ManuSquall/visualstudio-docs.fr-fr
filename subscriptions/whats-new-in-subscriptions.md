@@ -3,17 +3,16 @@ title: Nouveautés des abonnements Visual Studio
 description: Découvrez les fonctionnalités nouvelles et mises à jour que vous pouvez utiliser pour gérer les abonnements Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465122"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891073"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Nouveautés des abonnements Visual Studio
 
@@ -21,7 +20,7 @@ Nous mettons souvent à jour le package des avantages Abonnement pour qu’il vo
 
 ## <a name="2019-q1-january-march"></a>Q1 2019 (janvier à mars)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Utilisation maximale ajoutée au [Portail d’administration des abonnements](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Utilisation maximale ajoutée au [Portail d’administration des abonnements](https://manage.visualstudio.com)
 Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. Cela peut vous aider à comprendre votre utilisation actuelle de l’abonnement et planifier de futurs achats. 
 
   > [!div class="mx-imgBorder"]
