@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199078"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
   
 ## <a name="arguments"></a>Arguments  
  `filename`  
- Optionnel. Nom du fichier. Si aucun nom n’est fourni, un nom par défaut est utilisé. Si aucun nom de modèle n’est indiqué, un fichier texte est créé.  
+ facultatif. Nom du fichier. Si aucun nom n’est fourni, un nom par défaut est utilisé. Si aucun nom de modèle n’est indiqué, un fichier texte est créé.  
   
 ## <a name="switches"></a>Commutateurs  
  /t:`templatename`  
- Optionnel. Spécifie le type de fichier à créer.  
+ facultatif. Spécifie le type de fichier à créer.  
   
  La syntaxe de l’argument /t:`templatename` reflète les informations de la boîte de dialogue Nouveau fichier. Entrez le nom de la catégorie suivi d’une barre oblique inverse (`\`) et du nom du modèle, et placez la chaîne entière entre guillemets.  
   
@@ -51,7 +51,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  L’exemple ci-dessus indique que le modèle de fichier C++ se trouve sous la catégorie Visual C++ dans la boîte de dialogue **Nouveau fichier**.  
   
  /e:`editorname`  
- Optionnel. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
+ facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
   
  La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.  
   
@@ -61,7 +61,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple crée une page web « test1.htm » et l’ouvre dans l’éditeur de code source.  
   
 ```  

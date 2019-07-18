@@ -26,11 +26,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40031567b5339803ccfa7f4a5b3db4f006c6c134
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193223"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +126,7 @@ HRESULT CvEnterSpanExVA(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkers.h  
   
  **Unicode** : CvEnterSpanW, CvEnterSpanVW, CvEnterSpanExW, CvEnterSpanExVW  

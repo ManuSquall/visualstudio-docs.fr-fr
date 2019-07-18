@@ -21,16 +21,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 48f1543bcecf64a37f98de3edddf2c57dbf46f5c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176919"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et charge des variables d’environnement dans la boîte de dialogue **Répertoires VC++**.  
+Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et charge des variables d’environnement dans la boîte de dialogue **Répertoires VC++** .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,8 +38,8 @@ Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et charge des variables
 Devenv /useenv  
 ```  
   
-## <a name="example"></a>Exemple  
- L’exemple suivant démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et charge des variables d’environnement dans la boîte de dialogue **Répertoires VC++**.  
+## <a name="example"></a>Exemples  
+ L’exemple suivant démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et charge des variables d’environnement dans la boîte de dialogue **Répertoires VC++** .  
   
 ```  
 Devenv.exe /useenv  

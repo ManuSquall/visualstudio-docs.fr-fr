@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158855"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Référence du schéma de fichier de projet MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

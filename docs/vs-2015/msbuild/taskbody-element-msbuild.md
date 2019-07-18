@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144328"
 ---
 # <a name="taskbody-element-msbuild"></a>Élément TaskBody (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Contient les données transmises à un élément `UsingTask``TaskFactory`. Pour 
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|Permet d’inscrire des tâches dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Un projet peut ne contenir aucun élément `UsingTask` ou en contenir plusieurs.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L'exemple suivant montre comment utiliser l'élément `TaskBody` avec un attribut `Evaluate`.  
   
 ```  

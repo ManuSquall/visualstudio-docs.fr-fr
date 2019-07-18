@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4778efc4a50ceb63e72d4283644537345510e833
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194962"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ File.AddExistingProject filename
   
 ## <a name="arguments"></a>Arguments  
  `filename`  
- Optionnel. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.  
+ facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.  
   
  Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.  
   
@@ -43,7 +43,7 @@ File.AddExistingProject filename
 ## <a name="remarks"></a>Remarques  
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (TestProject1) à la solution actuelle.  
   
 ```  

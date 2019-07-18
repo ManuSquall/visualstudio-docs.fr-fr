@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0ba7820bfa6df7273f170b2222d6a55e685e445e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203694"
 ---
 # <a name="add-new-item-command"></a>Ajouter un nouvel élément, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
   
 ## <a name="arguments"></a>Arguments  
  `filename`  
- Optionnel. Chemin et nom de fichier de l’élément à ajouter à la solution.  
+ facultatif. Chemin et nom de fichier de l’élément à ajouter à la solution.  
   
 ## <a name="switches"></a>Commutateurs  
  /t: `templatename`  
- Optionnel. Spécifie le type de fichier à créer. Si aucun nom de modèle n’est indiqué, un fichier texte est créé par défaut.  
+ facultatif. Spécifie le type de fichier à créer. Si aucun nom de modèle n’est indiqué, un fichier texte est créé par défaut.  
   
  La syntaxe de l’argument /t:`templatename` reflète les informations de la boîte de dialogue **Ajouter un nouvel élément de solution**. Vous devez entrer la catégorie complète suivie du type de fichier, en séparant le nom de catégorie et le type de fichier par une barre oblique inverse (`\`) et en mettant toute la chaîne entre guillemets.  
   
@@ -49,7 +49,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```  
   
  /e: `editorname`  
- Optionnel. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
+ facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
   
  La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la **boîte de dialogue Ouvrir avec**, entre guillemets.  
   
@@ -59,7 +59,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple ajoute un nouvel élément de solution, MyHTMLpg, à la solution actuelle.  
   
 ```  

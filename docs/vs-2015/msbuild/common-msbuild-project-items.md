@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160407"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un élément est 
 |GUID|Chaîne facultative. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Chaîne facultative. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|  
 |VersionMinor|Chaîne facultative. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|  
-|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|Chaîne facultative. LocaleID du composant.|  
+|LCID|Chaîne facultative. LocaleID du composant.|  
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|  
 |Isolated|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|  
   

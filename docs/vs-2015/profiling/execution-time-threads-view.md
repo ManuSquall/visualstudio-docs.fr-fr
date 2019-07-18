@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179031"
 ---
 # <a name="execution-time-threads-view"></a>Durée d’exécution (vue Threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

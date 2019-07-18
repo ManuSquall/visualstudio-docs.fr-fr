@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163316"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Debug.SetRadix [10 | 16 | hex | dec]
   
 ## <a name="arguments"></a>Arguments  
  `10` ou `16` ou `hex` ou `dec`  
- Optionnel. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.  
+ facultatif. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple configure l’environnement pour afficher les valeurs entières au format hexadécimal.  
   
 ```  

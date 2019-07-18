@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5a8a9e70c85563e95037c754c59b6077ed21f28
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188802"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider, fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ HRESULT CvInitProvider(
 ## <a name="return-value"></a>Valeur de retour  
  S_OK lorsque le fournisseur est correctement initialisé, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkers.h  
   
 ## <a name="see-also"></a>Voir aussi  

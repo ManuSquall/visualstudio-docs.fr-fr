@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186102"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Spécifie l’emplacement et le type de fichier side-car qui fournit des informa
   
 #### <a name="parameters"></a>Paramètres  
  `filename`  
- Optionnel. Le nom de la racine du fichier side-car qui contient des informations de localisation pour la culture neutre. Lorsque Visual Studio recherche les informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jquery.xml, Visual Studio recherche le dossier spécifique à la culture approprié (par exemple, JA) dans le même emplacement que le fichier .js qui contient le `<loc>` élément. Si il localise le dossier spécifique à la culture, il vérifie l’existence d’un fichier jquery.xml qu’il contient. Si elle ne peut pas localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources gérées. La valeur par défaut `filename` est le nom du fichier actuel, mais avec une extension .xml au lieu de .js.  
+ facultatif. Le nom de la racine du fichier side-car qui contient des informations de localisation pour la culture neutre. Lorsque Visual Studio recherche les informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jquery.xml, Visual Studio recherche le dossier spécifique à la culture approprié (par exemple, JA) dans le même emplacement que le fichier .js qui contient le `<loc>` élément. Si il localise le dossier spécifique à la culture, il vérifie l’existence d’un fichier jquery.xml qu’il contient. Si elle ne peut pas localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources gérées. La valeur par défaut `filename` est le nom du fichier actuel, mais avec une extension .xml au lieu de .js.  
   
  `format`  
- Optionnel. Le type de fichier side-car utilisé pour la localisation. Utiliser `messagebundle` pour spécifier l’utilisation de regroupements de message défini par les métadonnées Ajax ouvert. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans Microsoft Ajax ou dans les fichiers .winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard qui est utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.  
+ facultatif. Le type de fichier side-car utilisé pour la localisation. Utiliser `messagebundle` pour spécifier l’utilisation de regroupements de message défini par les métadonnées Ajax ouvert. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans Microsoft Ajax ou dans les fichiers .winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard qui est utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.  
   
 ## <a name="remarks"></a>Remarques  
  Le `<loc>` élément doit apparaître en haut du fichier dans la même section que le `<reference>` élément. L’utilisation des règles pour le `<loc>` élément sont les mêmes que les `<reference>` élément. Pour plus d’informations, consultez la section « Références Directives » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
@@ -45,7 +45,7 @@ Spécifie l’emplacement et le type de fichier side-car qui fournit des informa
   
  Lorsque vous utilisez le format d’offre groupée de message, utilisez la `locid` attribut dans les commentaires de documentation XML pour spécifier le `name` valeur d’attribut.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant montre comment utiliser le `<loc>` élément messagebundle format. Ajoutez le code XML suivant dans un fichier nommé messageFilename.xml et placez le fichier dans le dossier spécifique à la culture approprié, tel que spécifié dans la description de le `filename` paramètre.  
   
 ```  

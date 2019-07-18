@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199259"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Edit.GoTo [linenumber]
   
 ## <a name="arguments"></a>Arguments  
  `linenumber`  
- Optionnel. Nombre entier représentant le numéro de la ligne à atteindre.  
+ facultatif. Nombre entier représentant le numéro de la ligne à atteindre.  
   
 ## <a name="remarks"></a>Remarques  
  La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.  
@@ -43,7 +43,7 @@ Edit.GoTo [linenumber]
   
  L’alias de cette commande est GoToLn.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
 >Edit.GoTo 125  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab75ccebd618946454c3386f564e3f6199409935
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191570"
 ---
 # <a name="move-task"></a>Move, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

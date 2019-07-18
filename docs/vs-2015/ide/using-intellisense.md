@@ -26,11 +26,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158322"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
  Vous pouvez également passer en mode suggestion, où seul le texte que vous tapez est inséré dans le code. Par exemple, si vous entrez un identificateur qui ne figure pas dans la liste et que vous appuyez sur Tab, en mode de saisie semi-automatique l'entrée remplace l'identificateur typé. Pour basculer entre le mode saisie semi-automatique et le mode suggestion, appuyez sur Ctrl+Alt+Espace ou cliquez sur **Modifier/IntelliSense/Activer-Désactiver le mode de saisie semi-automatique**.  
   
 ## <a name="parameter-info"></a>Informations sur les paramètres  
- Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d’attribut (en C#) ou un modèle (en C++).  
+ Informations sur les paramètres fournit des informations sur le nombre, les noms et les types des paramètres requis par une méthode, un paramètre de type générique d'attribut (en C#) ou un modèle (en C++).  
   
  Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.  
   

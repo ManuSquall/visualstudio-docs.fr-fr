@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c8db1d559682ccb0f202d100fac6a586d3477cd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147920"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vue Appelant/Appelé - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

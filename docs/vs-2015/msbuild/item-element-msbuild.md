@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192604"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
   
  Le moteur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme `/**/*.cs`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L'exemple de code suivant montre comment déclarer deux éléments de type `CSFile`. Le second élément déclaré contient les métadonnées dans lesquelles `MyMetadata` a la valeur `HelloWorld`.  
   
 ```  
