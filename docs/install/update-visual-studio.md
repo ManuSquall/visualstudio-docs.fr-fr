@@ -2,7 +2,7 @@
 title: Mettre à jour Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment mettre à jour Visual Studio vers la version la plus récente, étape par étape.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290655"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250572"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -257,6 +259,27 @@ Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre
 1. Dans la boîte de dialogue **Mise à jour téléchargée et prête à être installée**, sélectionnez **Mettre à jour**.
 
    Visual Studio se met à jour, se ferme, puis se rouvre.
+
+## <a name="customize-update-settings"></a>Personnaliser les paramètres de mise à jour
+
+Vous pouvez personnaliser les paramètres de mise à jour dans Visual Studio de plusieurs façons, par exemple en modifiant le mode d’installation et en sélectionnant les téléchargements automatiques.
+
+Il existe deux modes d’installation au choix :
+
+* **Installer pendant le téléchargement**
+* **Tout télécharger, puis installer**
+
+Vous pouvez également choisir le paramètre **Télécharger automatiquement les mises à jour**, qui autorise le téléchargement des mises à jour à télécharger alors que votre ordinateur est inactif.
+
+Voici comment :
+
+1. Dans la barre de menus, choisissez **Outils**>**Options**.
+
+2. Développez **Environnement**, puis choisissez **Mises à jour de produits**.
+
+    ![Paramètres des mises à jour dans Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Choisissez le mode d’installation et les options de téléchargement automatique pour vos mises à jour de Visual Studio.
 
 ::: moniker-end
 
