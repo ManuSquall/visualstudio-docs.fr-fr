@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187055"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La tâche `AspNetCompiler` inclut dans un wrapper aspnet_compiler.exe, un utilit
 ## <a name="remarks"></a>Remarques  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 ```  

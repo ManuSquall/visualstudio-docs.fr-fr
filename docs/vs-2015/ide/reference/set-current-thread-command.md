@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 107303082202cb1dbb162ef9dfb845c2f6564df4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163331"
 ---
 # <a name="set-current-thread-command"></a>Définir le thread en cours, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Debug.SetCurrentThread index
  `index`  
  Obligatoire. Sélectionne un thread par son index.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```  
 >Debug.SetCurrentThread 1  

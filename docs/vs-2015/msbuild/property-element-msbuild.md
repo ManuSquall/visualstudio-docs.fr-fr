@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158273"
 ---
 # <a name="property-element-msbuild"></a>Property, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 ## <a name="remarks"></a>Remarques  
  Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en « build\classes » si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Le code suivant définit la propriété `Optimization` sur `false` et la propriété `DefaultVersion` sur `1.0` si la propriété `Version` est vide.  
   
 ```  

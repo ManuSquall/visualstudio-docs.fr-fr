@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145558"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,10 +53,10 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Arrête ou démarre le profilage de tous les processus d’une session de profilage en ligne de commande.  
   
- {**ProcessOff**&#124;**ProcessOn**}  **:**`TID`  
+ {**ProcessOff**&#124;**ProcessOn**}  **:** `TID`  
  Arrête ou démarre le profilage du processus spécifié.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Dans cet exemple, la sous-commande **ThreadOff** est utilisée pour arrêter la collecte de données de profilage et collecter seulement les données de démarrage de l’application.  
   
 ```  

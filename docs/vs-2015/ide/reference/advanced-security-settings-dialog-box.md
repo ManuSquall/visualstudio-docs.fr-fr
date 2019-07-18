@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: afdeda6c18c20af1b7f82e42cedc4aadac13ebcb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178373"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Paramètres de sécurité avancés, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191562"
 ---
 # <a name="midl-task"></a>Tâche MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
      Si `true`, vérifie que les valeurs enum sont comprises dans une plage autorisée.  
   
-     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande (**/?**) de midl.exe.  
+     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande ( **/?** ) de midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
      Paramètre **String[]** facultatif.  
   
-     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]*.  
+     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]* .  
   
      Pour plus d’informations, consultez l’option **/D** dans la page « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Reportez-vous également au paramètre **UndefinePreprocessorDefinitions** de ce tableau.  
   

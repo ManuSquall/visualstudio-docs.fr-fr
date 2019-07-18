@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179351"
 ---
 # <a name="using-the-task-list"></a>Utilisation de la liste des tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
   
 2. Dans la boîte de dialogue **Options** , ouvrez l' **Éditeur de texte**.  
   
-3. Sous **C/C++**, choisissez **Affichage**, puis affectez à **Énumérer les tâches de commentaire** la valeur **False**.  
+3. Sous **C/C++** , choisissez **Affichage**, puis affectez à **Énumérer les tâches de commentaire** la valeur **False**.  
   
 ## <a name="shortcuts"></a> Raccourcis  
  Un *raccourci* est un signet dans le code qui est suivi dans la **Liste des tâches**; son icône est différente de celle d’un signet normal. Double-cliquez sur le raccourci dans la fenêtre **Liste des tâches** pour accéder à l'emplacement correspondant dans le code.  

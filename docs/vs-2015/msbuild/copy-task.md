@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196590"
 ---
 # <a name="copy-task"></a>Copy, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
   
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant copie les éléments de la collection d’éléments `MySourceFiles` dans le dossier c:\MyProject\Destination.  
   
 ```  
@@ -93,7 +93,7 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
 </Project>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant illustre la procédure à suivre pour effectuer une copie récursive. Ce projet copie tous les fichiers de manière récursive depuis c:\MySourceTree vers c:\MyDestinationTree, tout en conservant la structure de répertoire.  
   
 ```  

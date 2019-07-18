@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e870b15355da86b8654511cab932f792323446b9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199063"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ File.OpenFile filename [/e:editorname]
   
 ## <a name="switches"></a>Commutateurs  
  /e:`editorname`  
- Optionnel. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
+ facultatif. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.  
   
  La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.  
   
@@ -52,7 +52,7 @@ File.OpenFile filename [/e:editorname]
 ## <a name="remarks"></a>Remarques  
  La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.  
   
 ```  

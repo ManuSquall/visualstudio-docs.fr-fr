@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199753"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Bibliothèque d’importation : VSPerf.lib  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant illustre l’appel de la fonction StartProfile.  
   
 ```  

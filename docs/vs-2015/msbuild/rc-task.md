@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158256"
 ---
 # <a name="rc-task"></a>RC, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Encapsule l’outil Compilateur de ressources Microsoft Windows (rc.exe). La tâ
 |Paramètre|Description|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Paramètre **String[]** facultatif.<br /><br /> Ajoute un répertoire à la liste des répertoires dans lesquels sont recherchés les fichiers include.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/I** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
-|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste d’options de ligne de commande, par exemple, **"**_/option1 /option2 /option#_". Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche **RC**.<br /><br /> Pour plus d’informations, lisez la section relative aux options dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
+|**AdditionalOptions**|Paramètre **String** facultatif.<br /><br /> Liste d’options de ligne de commande, par exemple, **"** _/option1 /option2 /option#_ ". Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche **RC**.<br /><br /> Pour plus d’informations, lisez la section relative aux options dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
 |**Culture**|Paramètre **String** facultatif.<br /><br /> Spécifie un ID de paramètres régionaux qui représente la culture utilisée dans les ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/l** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
 |**IgnoreStandardIncludePath**|Paramètre **Boolean** facultatif.<br /><br /> Si `true`, empêche le compilateur de ressources de vérifier la variable d’environnement INCLUDE lorsqu’il recherche des fichiers d’en-tête ou des fichiers de ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/x** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
 |**NullTerminateStrings**|Paramètre **Boolean** facultatif.<br /><br /> Si `true`, termine par la valeur Null toutes les chaînes de la table de chaînes.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/n** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
@@ -49,7 +49,7 @@ Encapsule l’outil Compilateur de ressources Microsoft Windows (rc.exe). La tâ
 |**ResourceOutputFileName**|Paramètre **String** facultatif.<br /><br /> Spécifie le nom du fichier de ressources. Spécifiez un nom de fichier de ressources.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/fo** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
 |**ShowProgress**|Paramètre **Boolean** facultatif.<br /><br /> Si `true`, affiche les messages qui signale la progression du compilateur.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/v** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN.|  
 |**Source**|Paramètre `ITaskItem[]` requis.<br /><br /> Définit un tableau d’éléments de fichier source MSBuild pouvant être consommés et émis par des tâches.|  
-|**SuppressStartupBanner**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, tapez l’option de ligne de commande **/?**, puis regardez l’option **/nologo**.|  
+|**SuppressStartupBanner**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, tapez l’option de ligne de commande **/?** , puis regardez l’option **/nologo**.|  
 |**TrackerLogDirectory**|Paramètre **String** facultatif.<br /><br /> Spécifie le répertoire des journaux de suivi.|  
 |**UndefinePreprocessorDefinitions**|Annule la définition d’un symbole du préprocesseur.<br /><br /> Pour plus d’informations, lisez la section relative à l’option **/u** dans [Utilisation de RC (ligne de commande RC)](http://go.microsoft.com/fwlink/?LinkId=155730) sur le site web MSDN. Regardez également **PreprocessorDefinitions** dans ce tableau.|  
   

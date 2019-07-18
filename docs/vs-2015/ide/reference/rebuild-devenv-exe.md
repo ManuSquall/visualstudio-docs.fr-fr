@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200827"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  Obligatoire. Chemin complet et nom du fichier solution.  
   
  /project `ProjName`  
- Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Optionnel. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.  
+ facultatif. Nom d’une configuration de build de projet à utiliser lors de la regénération du `/project` nommé.  
   
 ## <a name="remarks"></a>Remarques  
   
@@ -54,7 +54,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 - Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple nettoie et regénère le projet `CSharpWinApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
   
 ```  

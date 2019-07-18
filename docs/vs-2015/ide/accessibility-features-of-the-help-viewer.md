@@ -13,19 +13,19 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148282"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité de la Visionneuse d’aide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d'accéder à Microsoft Help Viewer 2.2 via un large éventail de possibilités.  
+Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer 2.2 via un large éventail de possibilités.  
   
 ## <a name="keyboard-access"></a>Accès par le clavier  
- Vous pouvez accéder à toutes les fonctionnalités de la visionneuse d’aide à l’aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
+ Vous pouvez accéder à toutes les fonctionnalités de la visionneuse d'aide à l'aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 ## <a name="font-size"></a>Taille de police  
  Vous pouvez modifier la taille de police du texte des rubriques qui s'affiche dans la fenêtre de document. Pour plus d’informations, consultez [Personnaliser Help Viewer](../ide/customize-the-help-viewer.md).  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192260"
 ---
 # <a name="importgroup-element"></a>Élément ImportGroup
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
   
 ## <a name="remarks"></a>Remarques  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant illustre l’élément `ImportGroup`.  
   
 ```  

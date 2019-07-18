@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a815d2ef623a35030469fa631cae65653c2fe2d1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185223"
 ---
 # <a name="parameter-element"></a>Parameter, élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L'exemple suivant montre comment utiliser l'élément `Parameter`.  
   
 ```  

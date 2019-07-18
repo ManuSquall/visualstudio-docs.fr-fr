@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1e5f6c6db903b3ecced2ac3ebc4aaa0a3e60910c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145501"
 ---
 # <a name="timer"></a>Minuterie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,19 +49,19 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="invalid-options"></a>Options non valides  
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **Timer**.  
   
- **PF**[**:**`Events`]  
+ **PF**[ **:** `Events`]  
  Définit l'événement d'échantillonnage sur les défauts de page et définit éventuellement l'intervalle d'échantillonnage sur `Events`. L'intervalle de défaut de page par défaut est 10.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Définit l'événement d'échantillonnage sur les appels du système d'exploitation et définit éventuellement l'intervalle d'échantillonnage sur `Events`. L'intervalle Sys par défaut est 10.  
   
- **Counter**[**:**`Name,Reload,FriendlyName`]  
+ **Counter**[ **:** `Name,Reload,FriendlyName`]  
  Définit l'événement d'échantillonnage sur le compteur de performance d'UC spécifié par `Name` et définit l'intervalle d'échantillonnage sur `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Recueille des données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple illustre comment définir l'intervalle d'échantillonnage du profileur sur 1 000 000 de cycles du processeur.  
   
 ```  

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59646787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190406"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  Obligatoire. Chemin complet et nom du fichier solution ou fichier projet.  
   
  /project `ProjName`  
- Optionnel. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
+ facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
   
  /projectconfig `ProjConfigName`  
- Optionnel. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
+ facultatif. Nom d’une configuration de build de projet à utiliser lors du nettoyage du `/project` nommé.  
   
 ## <a name="remarks"></a>Remarques  
  Ce commutateur exécute la même fonction que la commande de menu **Nettoyer la solution** dans l’environnement de développement intégré (IDE).  
@@ -49,7 +49,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
   
  Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Le premier exemple nettoie la solution `MySolution` à l’aide de la configuration par défaut spécifiée dans le fichier solution.  
   
  Le deuxième exemple nettoie le projet `CSharpConsoleApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
