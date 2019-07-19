@@ -7,12 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Bienvenue dans les abonnements Visual Studio
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784382"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315221"
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 
@@ -193,7 +193,6 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (Business, Tech et Creative)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, conception, mobile et données)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (science des données et IA)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Formation Opsgility</a> (centrée sur le cloud)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidents traités par le support technique professionnel de Microsoft</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Conversation Azure Advisory</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Communauté Azure</a></li>
