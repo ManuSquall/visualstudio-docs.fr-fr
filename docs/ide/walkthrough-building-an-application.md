@@ -3,17 +3,17 @@ title: 'Procédure pas à pas : Générer une application'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582942"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416887"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : Générer une application
 
@@ -35,13 +35,13 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
    ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau...\>**.
+1. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau...\>** .
 
 1. Dans la boîte de dialogue **Nouvelle configuration de solution**, nommez la nouvelle configuration `Test`, copiez les paramètres de la configuration **Debug** existante, puis cliquez sur le bouton **OK**.
 
    ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Dans la liste **Plateforme de la solution active**, choisissez **\<Nouveau...\>**.
+1. Dans la liste **Plateforme de la solution active**, choisissez **\<Nouveau...\>** .
 
 1. Dans la boîte de dialogue **Nouvelle plateforme de solution**, choisissez **x64** et ne copiez pas les paramètres de la plateforme x86.
 
@@ -77,7 +77,7 @@ Nous présenterons ensuite du code qui provoque la génération d’un avertisse
 
     OU
 
-    Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...**, ajoutez le code suivant : `Dim i`.
+    Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...** , ajoutez le code suivant : `Dim i`.
 
 1. Générez la solution.
 
