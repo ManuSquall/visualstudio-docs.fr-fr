@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1039f46e0d2dcf3c18138e66e77e62dadb36a3f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443615"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416850"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
@@ -129,7 +129,7 @@ Log.LogError("Hello, world!");
 
 ```xml
 <ParameterGroup>
-    <Text />
+  <Text />
 </ParameterGroup>
 ```
 
@@ -145,9 +145,9 @@ Par exemple :
 
 ```xml
 <ParameterGroup>
-    <Expression Required="true" />
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
-    <Tally ParameterType="System.Int32" Output="true" />
+  <Expression Required="true" />
+  <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+  <Tally ParameterType="System.Int32" Output="true" />
 </ParameterGroup>
 ```
 
@@ -161,7 +161,7 @@ définit ces trois paramètres :
 
 Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.
 
 ```xml
