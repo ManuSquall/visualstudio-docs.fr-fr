@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4281315c8d18388cfbd4cf9bbe6b321e9e07c32b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824295"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416726"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procédure : Configurer des projets pour qu’ils ciblent plusieurs plateformes
 
@@ -37,7 +37,7 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
+2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>** . La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
 
 3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
 

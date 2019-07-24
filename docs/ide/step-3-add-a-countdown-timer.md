@@ -2,18 +2,21 @@
 title: 'Étape 3 : Ajouter un temporisateur'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430766"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416708"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Étape 3 : Ajouter un temporisateur
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.

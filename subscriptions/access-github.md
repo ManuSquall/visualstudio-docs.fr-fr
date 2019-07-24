@@ -3,15 +3,15 @@ title: Bundle Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrir le nouveau bundle Visual Studio + GitHub
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783438"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377647"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Présentation des abonnements Visual Studio avec GitHub Enterprise  
 
@@ -62,15 +62,12 @@ Si vous ne connaissez pas GitHub, voici quelques ressources qui pourront vous ê
 ## <a name="frequently-asked-questions"></a>FAQ
 
 ### <a name="q--where-is-my-github-subscription"></a>Q :  Où est mon abonnement GitHub ?
-
 R :  Le processus de configuration d’un abonnement GitHub peut prendre du temps.  Si vous ne recevez aucune réponse passé un délai d’attente, vous pouvez contacter votre administrateur GitHub.  Il est possible que votre administrateur y travaille encore ou qu’il ait décidé de ne pas vous attribuer d’abonnement GitHub. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>Q :  Comment contacter mon administrateur GitHub ?
-
 R :  Si vous utilisez GitHub Enterprise Server, vous pouvez cliquer sur le lien **Support** disponible en bas du client à connecter à votre administrateur.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>Q : Cette offre me donne-t-elle accès à l’abonnement complet à Visual Studio (Professional ou Enterprise) ou simplement à l’IDE ?
-
 R :  Quand vous vous abonnez à GitHub Enterprise, vous recevez un abonnement complet à Visual Studio.  Vous bénéficiez de tous les avantages auxquels vous avez droit, notamment le téléchargement de logiciels, les services cloud, le support technique et les avantages réservés aux partenaires inclus dans ces abonnements, comme si vous aviez acheté cet abonnement séparément.
 
 ## <a name="support-resources"></a>Ressources de support
@@ -81,5 +78,4 @@ R :  Quand vous vous abonnez à GitHub Enterprise, vous recevez un abonnement c
 - Contactez le [support technique](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) de GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 Si vous ne connaissez pas GitHub, jetez un œil au [GitHub Learning Lab](https://lab.github.com/). Vous y trouverez une série de projets amusants et pratiques au cours desquels vous recevrez des conseils utiles.

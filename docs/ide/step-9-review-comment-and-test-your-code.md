@@ -2,18 +2,21 @@
 title: 'Étape 9 : Passer en revue, commenter et tester votre code'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8ad984f82d6d3bdcabf3a5a6952751cfa944a0eb
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435433"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416615"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : Passer en revue, commenter et tester votre code
 Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation qui ne modifie pas le comportement du programme. Il permet à une autre personne qui lit votre code de mieux le comprendre. L'ajout de commentaires à votre code est une bonne habitude à prendre. Une ligne de commentaire est indiquée par deux barres obliques (//) en Visual C# et par un guillemet simple (') en Visual Basic. Après avoir ajouté un commentaire, testez votre programme. Quand vous travaillez sur vos projets, il est recommandé d'exécuter et de tester souvent le code afin que vous puissiez détecter et résoudre les problèmes au plus tôt, avant que le code devienne plus complexe. Cette opération est un *test itératif*.
@@ -57,7 +60,7 @@ Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation
     > [!TIP]
     > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
-    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour Visual C#, l’extrait de code `if` se trouve dans **Visual C#**. Pour Visual Basic, les extraits de code `if` se trouvent dans **Conditions et boucles** > **Modèles de code**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
+    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour Visual C#, l’extrait de code `if` se trouve dans **Visual C#** . Pour Visual Basic, les extraits de code `if` se trouvent dans **Conditions et boucles** > **Modèles de code**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 
