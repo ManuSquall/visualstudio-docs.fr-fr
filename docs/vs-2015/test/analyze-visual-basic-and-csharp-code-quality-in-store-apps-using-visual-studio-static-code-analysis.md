@@ -1,5 +1,5 @@
 ---
-title: Analyser Visual Basic et C# code de qualité dans les applications de Store à l’aide d’analyse statique du code
+title: Analyser les Visual Basic C# et la qualité du code dans les applications du Windows Store à l’aide de l’analyse statique du code
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,21 +8,21 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686548"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416644"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
@@ -51,7 +51,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, puis choisissez **Propriétés**.
 
-2. Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code sur la build (définit la constante CODEANALYSIS)**.
+2. Dans la page des propriétés du projet, choisissez **Analyse du code**, puis **Activer l’analyse du code sur la build (définit la constante CODEANALYSIS)** .
 
    La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.
 
