@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377755"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493120"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 
@@ -35,7 +35,6 @@ Pour les scénarios de création de modèles de base, vous devez utiliser l’As
      Le modèle génère un fichier de classe, une icône, un fichier *. vstemplate* , un fichier projet modifiable nommé *ProjectTemplate. vbproj* ou *ProjectTemplate. csproj*, ainsi que certains fichiers qui sont généralement générés par d’autres types de projets, tels qu’un le fichier Resources. resx, un fichier *AssemblyInfo* et un fichier *. Settings* . Chaque fichier de code contient des substitutions de paramètres communes, le cas échéant.
 
 ![sélection du projet de modèle de projet](media/project-template-selection.png)
-
 
 2. Ajoutez et supprimez des éléments du projet selon les besoins de votre projet. Ne supprimez pas le fichier projet modifiable, le fichier *AssemblyInfo* ou le fichier *. vstemplate* .
 
