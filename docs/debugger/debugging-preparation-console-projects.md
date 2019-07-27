@@ -1,5 +1,5 @@
 ---
-title: Préparer le débogage des projets console | Microsoft Docs
+title: Préparer le débogage des projets de console | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,37 +18,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852088"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533314"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Débogage de la préparation : Projets console (C#, C++, Visual Basic, F#)
 
-La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : Windows Forms (.NET) d’Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
+La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)des applications [et préparation du débogage: Applications Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
 
-- C#, Visual Basic, et F# Application Console
+- C#, Visual Basic et F# application console
 
 - Application console C++ (.NET)
 
 - Application console C++ (Win32)
 
-  Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console. Pour plus d’informations, consultez [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [paramètres de projet pour une Configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), ou [des paramètres de projet pour les Configurations Debug c# ](../debugger/project-settings-for-csharp-debug-configurations.md).
+  Une application console utilise la fenêtre **Console** pour accepter les entrées et afficher les messages de sortie. Pour écrire dans la fenêtre de **console** , votre application doit utiliser l’objet **console** au lieu de l’objet Debug. Pour écrire dans la fenêtre **Sortie Visual Studio**, utilisez l’objet Debug, comme d’habitude. Vérifiez l'emplacement dans lequel écrit votre application, sinon vous risquez de rechercher les messages au mauvais endroit. Pour plus d’informations, consultez [Console, classe](/dotnet/api/system.console), [Debug, classe](/dotnet/api/system.diagnostics.debug) et [Sortie, fenêtre](../ide/reference/output-window.md).
 
-  Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue **Pages de propriétés de \<Projet>**.
+## <a name="set-command-line-arguments"></a>Définir les arguments de ligne de commande
 
-  Une application console utilise la fenêtre **Console** pour accepter les entrées et afficher les messages de sortie. Pour écrire dans le **Console** fenêtre, votre application doit utiliser le **Console** objet au lieu de l’objet Debug. Pour écrire dans la fenêtre **Sortie Visual Studio**, utilisez l’objet Debug, comme d’habitude. Vérifiez l'emplacement dans lequel écrit votre application, sinon vous risquez de rechercher les messages au mauvais endroit. Pour plus d’informations, consultez [Console, classe](/dotnet/api/system.console), [Debug, classe](/dotnet/api/system.diagnostics.debug) et [Sortie, fenêtre](../ide/reference/output-window.md).
+Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console. Pour plus d’informations, consultez [paramètres de projet C++ pour une configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)de débogage, [paramètres de projet pour une configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)de débogage Visual Basic ou [paramètres de projet pour les configurations de C# débogage](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-## <a name="starting-the-application"></a>Démarrage de l'application
+Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue **Pages de propriétés de \<Projet>** .
+
+## <a name="start-the-application"></a>Démarrer l’application
+
  Lorsque certaines applications console démarrent, elles s'exécutent jusqu'à la fin, puis se ferment. Ce comportement peut ne pas vous fournir suffisamment de temps pour interrompre l'exécution et le débogage. Pour pouvoir déboguer une application, utilisez l'une des procédures suivantes pour démarrer l'application :
 
-- Définissez un point d’arrêt dans votre code et démarrer votre application.
+- Définissez un point d’arrêt dans votre code et démarrez votre application.
 
-- Démarrez votre application à l’aide **F10** (**déboguer** > **pas à pas principal**) ou **F11** (**déboguer**  >  **Pas à pas détaillé**), puis accédez via le code à l’aide d’autres options telles que **exécuter jusqu’au clic**.
+- Démarrez votre application en  utilisant F10 > (déboguer > **pas à pas principal**) ou **F11** (**pas à pas détaillé dans**), puis parcourez le code à l’aide d’autres options, telles que **Exécuter jusqu’au clic**.
 
-- Dans l’éditeur de code, cliquez sur une ligne, puis sélectionnez **exécuter jusqu’au curseur**.
+- Dans l’éditeur de code, cliquez avec le bouton droit sur une ligne et sélectionnez **Exécuter jusqu’au curseur**.
 
   Lors du débogage d'une application console, vous pouvez démarrer l'application à partir de l'invite de commandes au lieu de la démarrer à partir de Visual Studio. Dans ce cas, vous pouvez démarrer l'application à partir de l'invite de commandes, puis l'attacher au débogueur Visual Studio. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
