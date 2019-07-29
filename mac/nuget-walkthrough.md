@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
+ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691396"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68303801"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -43,7 +43,7 @@ Quand la fenêtre s’ouvre, elle charge une liste de packages à partir de la s
 
 ![Répertorier les packages NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Utilisez la zone de recherche dans le coin supérieur droit pour rechercher un package spécifique, par exemple  `azure mobile`. Une fois que vous avez trouvé un package à utiliser, sélectionnez-le, puis cliquez sur le bouton  **Add Package** (Ajouter le package) pour commencer l’installation.
+Utilisez la zone de recherche dans le coin supérieur droit pour rechercher un package spécifique, par exemple `azure mobile`. Une fois que vous avez trouvé un package à utiliser, sélectionnez-le, puis cliquez sur le bouton **Ajouter le package** pour commencer l’installation.
 
 ![Ajouter le package NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Une fois le package téléchargé, il est ajouté à votre projet. La solution e
 
 Une fois le package NuGet ajouté et les références du projet mises à jour, vous pouvez programmer en utilisant les API comme vous le feriez avec n’importe quelle référence de projet.
 
-Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
+Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
 
 ```csharp
 using Newtonsoft.Json;
