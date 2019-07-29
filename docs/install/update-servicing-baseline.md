@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 description: Découvrez comment mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance.
-ms.date: 05/22/2019
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,16 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250327"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300546"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
-Visual Studio 2019 recevra de fréquentes mises à jour lors de son [cycle de vie des produits](/visualstudio/productinfo/release-rhythm#release-channel-updates). Les mises à jour contiendront des mises à jour de version mineure (par exemple, de 16.0 à 16.1) qui peuvent ajouter de nouveaux composants et fonctionnalités, et des mises à jour de maintenance (par exemple, de 16.0.4 à 16.0.5) qui contiennent uniquement des correctifs ciblés pour des problèmes critiques.
+Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. Il existe deux types de mise à jour : 
+
+* **Mises à jour de versions mineures**&mdash;, par exemple de la 16.0 à la 16.1&mdash;, qui incluent de nouvelles fonctionnalités et de nouveaux composants.  
+* **Mises à jour de maintenance**, par exemple de la 16.0.4 à la 16.0.5, qui incluent uniquement les correctifs ciblés pour les problèmes critiques.
 
 Les administrateurs d’entreprise peuvent choisir de conserver leurs clients sur une base de référence de maintenance. Une base de référence de maintenance inclut des mises à jour pour une année au-delà de la base de référence de maintenance suivante.
 
@@ -34,7 +37,7 @@ Pour démarrer avec une base de référence de maintenance, téléchargez une ve
 > [!NOTE]
 > Veillez à faire la distinction entre la version corrigée du programme d’amorçage et les programmes d’amorçage standard. Les programmes d’amorçage standard sont configurés pour utiliser la dernière version disponible de Visual Studio. Leur nom de fichier comporte un numéro (par exemple : vs_enterprise__123456789-123456789.exe) lorsqu’ils sont téléchargés depuis My.VisualStudio.com.
 
-Lors de l’installation, les administrateurs d’entreprise doivent configurer leurs clients pour les empêcher d’effectuer une mise à jour avec la dernière version. Vous pouvez configurer les clients de plusieurs façons :
+Lors de l’installation, les administrateurs d’entreprise doivent configurer leurs clients pour les empêcher d’effectuer une mise à jour avec la dernière version. Pour ce faire, plusieurs méthodes sont possibles :
 - [Modifiez le paramètre `channelUri` dans le fichier de configuration de réponse](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) pour utiliser un manifeste de canal dans la disposition ou le dossier local.
 - [Modifiez l’URI de canal via l’exécution de ligne de commande](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) pour utiliser un fichier qui n’existe pas.
 - [Définissez des stratégies sur le système client pour désactiver les mises à jour](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), afin d’empêcher les clients d’effectuer une mise à jour automatique.
@@ -59,7 +62,7 @@ Une autre option pour contrôler les mises à jour sur un client consiste à [d�
 
 Si une mise à jour d’une base de référence de maintenance est disponible, vous pouvez télécharger les fichiers de la version corrigée du programme d’amorçage pour la mise à jour de maintenance depuis le site [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Les administrateurs qui effectuent un déploiement via une installation en réseau peuvent mettre à jour l’[emplacement de la disposition](update-a-network-installation-of-visual-studio.md). Les clients ayant effectué une installation à partir de l’emplacement recevront des notifications de mise à jour. Si la mise à jour doit être déployée sur les clients, suivez [ces instructions](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Lorsque vous modifiez le fichier response.json dans le cadre d’une mise à jour, n’ajoutez pas d’autres charges de travail, composants ou langages. La gestion de ces paramètres doit être effectuée dans un déploiement de « modification » une fois le produit mis à jour.
+Les administrateurs qui effectuent un déploiement via une installation réseau doivent mettre à jour l’[emplacement de la disposition](update-a-network-installation-of-visual-studio.md) réseau. Les clients ayant effectué une installation à partir de l’emplacement recevront des notifications de mise à jour. Si la mise à jour doit être déployée sur les clients, suivez [ces instructions](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Quand vous modifiez le fichier « response.json » pour une mise à jour, n’ajoutez pas de charges de travail, de composants ou de langages supplémentaires. La gestion de ces paramètres doit être effectuée dans un déploiement de « modification » une fois le produit mis à jour.
 
 Dans le cas d’une installation basée sur Internet, exécutez la nouvelle version corrigée du programme d’amorçage avec le paramètre `--channelUri` pointant vers un manifeste de canal inexistant sur le client. Si la mise à jour est déployée en mode silencieux ou passif, utilisez deux commandes distinctes :
 

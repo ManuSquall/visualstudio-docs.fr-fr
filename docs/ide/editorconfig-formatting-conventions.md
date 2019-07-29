@@ -1,6 +1,6 @@
 ---
 title: Conventions de mise en forme .NET pour EditorConfig
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3218e819d8f94cf760cdc75d6bfa6d29d0a29568
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccebfc38d5170920fe3f3c37ee77aabaf660a3b8
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823341"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345667"
 ---
 # <a name="formatting-conventions"></a>Conventions de mise en forme
 
-Les conventions de mise en forme pour EditorConfig pour Visual Studio se répartissent en deux catégories :
+Les conventions de mise en forme liées à EditorConfig pour Visual Studio correspondent aux catégories suivantes :
 
 - [Paramètres de mise en forme .NET](#net-formatting-settings)
 
@@ -122,20 +122,32 @@ Les règles de mise en forme mentionnées dans cette section s’appliquent uniq
   - csharp_indent_case_contents
   - csharp_indent_switch_labels
   - csharp_indent_labels
+  - csharp_indent_block_contents
+  - csharp_indent_braces
+  - csharp_indent_case_contents_when_block
 - [Options d’espacement](#spacing-options)
   - csharp_space_after_cast
   - csharp_space_after_keywords_in_control_flow_statements
-  - csharp_space_between_method_declaration_parameter_list_parentheses
-  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_parentheses
   - csharp_space_before_colon_in_inheritance_clause
   - csharp_space_after_colon_in_inheritance_clause
   - csharp_space_around_binary_operators
+  - csharp_space_between_method_declaration_parameter_list_parentheses
   - csharp_space_between_method_declaration_empty_parameter_list_parentheses
-  - csharp_space_between_method_call_name_and_opening_parenthesis
+  - csharp_space_between_method_declaration_name_and_open_parenthesis
+  - csharp_space_between_method_call_parameter_list_parentheses
   - csharp_space_between_method_call_empty_parameter_list_parentheses
+  - csharp_space_between_method_call_name_and_opening_parenthesis
   - csharp_space_after_comma
+  - csharp_space_before_comma
   - csharp_space_after_dot
+  - csharp_space_before_dot
+  - csharp_space_after_semicolon_in_for_statement
+  - csharp_space_before_semicolon_in_for_statement
+  - csharp_space_around_declaration_statements
+  - csharp_space_before_open_square_brackets
+  - csharp_space_between_empty_square_brackets
+  - csharp_space_between_square_brackets
 - [Options d’encapsulage](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
@@ -371,6 +383,9 @@ Exemple de fichier *.editorconfig* :
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents_when_block = true
 ```
 
 #### <a name="csharpindentcasecontents"></a>csharp\_indent\_case_contents
@@ -509,6 +524,83 @@ class C
 }
 ```
 
+#### <a name="csharpindentblockcontents"></a>csharp_indent_block_contents
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_indent_block_contents |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - <br /><br />`false` -  |
+| **Valeur par défaut de Visual Studio** | `true` |
+
+Exemples de code :
+
+```csharp
+// csharp_indent_block_contents = true
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+
+// csharp_indent_block_contents = false
+static void Hello()
+{
+Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentbraces"></a>csharp_indent_braces
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_indent_braces |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - <br /><br />`false` -  |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_indent_braces = true
+static void Hello()
+    {
+    Console.WriteLine("Hello");
+    }
+
+// csharp_indent_braces = false
+static void Hello()
+{
+    Console.WriteLine("Hello");
+}
+```
+
+#### <a name="csharpindentcasecontentswhenblock"></a>csharp_indent_case_contents_when_block
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_indent_case_contents_when_block |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - <br /><br />`false` -  |
+| **Valeur par défaut de Visual Studio** | `true` |
+
+Exemples de code :
+
+```csharp
+// csharp_indent_case_contents_when_block = true
+case 0:
+    {
+        Console.WriteLine("Hello");
+        break;
+    }
+
+// csharp_indent_case_contents_when_block = false
+case 0:
+{
+    Console.WriteLine("Hello");
+    break;
+}
+```
+
 ### <a name="spacing-options"></a>Options d’espacement
 
 Ces règles de mise en forme concernent l’utilisation de caractères d’espacement pour mettre en forme du code.
@@ -520,17 +612,26 @@ Exemple de fichier *.editorconfig* :
 [*.cs]
 csharp_space_after_cast = true
 csharp_space_after_keywords_in_control_flow_statements = true
-csharp_space_between_method_declaration_parameter_list_parentheses = true
-csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = true
 csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
-csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
 csharp_space_after_comma = true
+csharp_space_before_comma = false
 csharp_space_after_dot = false
+csharp_space_before_dot = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_square_brackets = false
 ```
 
 #### <a name="csharpspaceaftercast"></a>csharp\_space\_after_cast
@@ -540,7 +641,7 @@ csharp_space_after_dot = false
 | **Nom de la règle** | csharp_space_after_cast |
 | **Langages applicables** | C# |
 | **Version introduite** | Visual Studio 2017 version 15.3 |
-| **Valeurs** | `true` - Un espace doit figurer entre un cast et la valeur<br /><br />`false` - _Aucun_ espace ne doit figurer entre le cast et la valeur |
+| **Valeurs** | `true` - Placer un espace entre un cast et la valeur<br /><br />`false` - Supprimer l’espace entre le cast et la valeur |
 | **Valeur par défaut de Visual Studio** | `false` |
 
 Exemples de code :
@@ -560,7 +661,7 @@ int y = (int)x;
 | **Nom de la règle** | csharp_space_after_keywords_in_control_flow_statements |
 | **Langages applicables** | C# |
 | **Version introduite** | Visual Studio 2017 version 15.3 |
-| **Valeurs** | `true` - Un espace est nécessaire après un mot clé dans une instruction de flux de contrôle telle qu’une boucle `for`<br /><br />`false` - Ne _pas_ exiger d’espace après un mot clé dans une instruction de flux de contrôle telle qu’une boucle`for` |
+| **Valeurs** | `true` - Placer un espace après un mot clé dans une instruction de flux de contrôle, par exemple une boucle `for`<br /><br />`false` - Supprimer l’espace après un mot clé dans une instruction de flux de contrôle, par exemple une boucle `for` |
 | **Valeur par défaut de Visual Studio** | `true` |
 
 Exemples de code :
@@ -571,46 +672,6 @@ for (int i;i<x;i++) { ... }
 
 // csharp_space_after_keywords_in_control_flow_statements = false
 for(int i;i<x;i++) { ... }
-```
-
-#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
-
-|||
-|-|-|
-| **Nom de la règle** | csharp_space_between_method_declaration_parameter_list_parentheses |
-| **Langages applicables** | C# |
-| **Version introduite** | Visual Studio 2017 version 15.3 |
-| **Valeurs** | `true` - Placez un espace après la parenthèse ouvrante et avant la parenthèse fermante d’une liste de paramètres de déclaration de méthode.<br /><br />`false` - Ne placez pas d’espace après la parenthèse ouvrante et avant la parenthèse fermante d’une liste de paramètres de déclaration de méthode. |
-| **Valeur par défaut de Visual Studio** | `false` |
-
-Exemples de code :
-
-```csharp
-// csharp_space_between_method_declaration_parameter_list_parentheses = true
-void Bark( int x ) { ... }
-
-// csharp_space_between_method_declaration_parameter_list_parentheses = false
-void Bark(int x) { ... }
-```
-
-#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
-
-|||
-|-|-|
-| **Nom de la règle** | csharp_space_between_method_call_parameter_list_parentheses |
-| **Langages applicables** | C# |
-| **Version introduite** | Visual Studio 2017 version 15.3 |
-| **Valeurs** | `true` - Placer un caractère d’espacement après la parenthèse ouvrante et avant la parenthèse fermante d’un appel de méthode<br /><br />`false` - Ne placez pas d’espace après la parenthèse ouvrante et avant la parenthèse fermante d’un appel de méthode. |
-| **Valeur par défaut de Visual Studio** | `false` |
-
-Exemples de code :
-
-```csharp
-// csharp_space_between_method_call_parameter_list_parentheses = true
-MyMethod( argument );
-
-// csharp_space_between_method_call_parameter_list_parentheses = false
-MyMethod(argument);
 ```
 
 #### <a name="csharpspacebetweenparentheses"></a>csharp_space_between_parentheses
@@ -645,7 +706,7 @@ int y = ( int )x;
 | **Nom de la règle** | csharp_space_before_colon_in_inheritance_clause |
 | **Langages applicables** | C# |
 | **Version introduite** | Visual Studio 2017 version 15.7 |
-| **Valeurs** | `true` - Exiger un espace avant le signe deux-points pour les bases ou les interfaces dans une déclaration de type<br /><br />`false` - Ne _pas_ exiger un espace avant le signe deux-points pour les bases ou les interfaces dans une déclaration de type |
+| **Valeurs** | `true` - Placer un espace avant le signe deux-points pour les bases ou les interfaces dans une déclaration de type<br /><br />`false` - Supprimer l’espace avant le signe deux-points pour les bases ou les interfaces dans une déclaration de type |
 | **Valeur par défaut de Visual Studio** | `true` |
 
 Exemples de code :
@@ -681,7 +742,7 @@ class C: I
 | **Nom de la règle** | csharp_space_after_colon_in_inheritance_clause |
 | **Langages applicables** | C# |
 | **Version introduite** | Visual Studio 2017 version 15.7 |
-| **Valeurs** | `true` - Exiger un espace après le signe deux-points pour les bases ou les interfaces dans une déclaration de type<br /><br />`false` - Ne _pas_ exiger un espace après le signe deux-points pour les bases ou les interfaces dans une déclaration de type |
+| **Valeurs** | `true` - Placer un espace après le signe deux-points pour les bases ou les interfaces dans une déclaration de type<br /><br />`false` - Supprimer l’espace après le signe deux-points pour les bases ou les interfaces dans une déclaration de type |
 | **Valeur par défaut de Visual Studio** | `true` |
 
 Exemples de code :
@@ -735,6 +796,26 @@ return x*(x-y);
 return x  *  (x-y);
 ```
 
+#### <a name="csharpspacebetweenmethoddeclarationparameterlistparentheses"></a>csharp_space_between_method_declaration_parameter_list_parentheses
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_method_declaration_parameter_list_parentheses |
+| **Langages applicables** | C# |
+| **Version introduite** | Visual Studio 2017 version 15.3 |
+| **Valeurs** | `true` - Placez un espace après la parenthèse ouvrante et avant la parenthèse fermante d’une liste de paramètres de déclaration de méthode.<br /><br />`false` - Supprimer les espaces après la parenthèse ouvrante et avant la parenthèse fermante d’une liste de paramètres de déclaration de méthode |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_method_declaration_parameter_list_parentheses = true
+void Bark( int x ) { ... }
+
+// csharp_space_between_method_declaration_parameter_list_parentheses = false
+void Bark(int x) { ... }
+```
+
 #### <a name="csharpspacebetweenmethoddeclarationemptyparameterlistparentheses"></a>csharp_space_between_method_declaration_empty_parameter_list_parentheses
 
 |||
@@ -760,6 +841,81 @@ void Goo(int x)
 }
 
 // csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo();
+}
+```
+
+#### <a name="csharpspacebetweenmethoddeclarationnameandopenparenthesis"></a>csharp_space_between_method_declaration_name_and_open_parenthesis
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_method_declaration_name_and_open_parenthesis |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Placer un espace entre le nom de la méthode et la parenthèse ouvrante dans la déclaration de méthode<br /><br />`false` - Supprimer les espaces entre le nom de la méthode et la parenthèse ouvrante dans la déclaration de méthode |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_method_declaration_name_and_open_parenthesis = true
+void M () { }
+
+// csharp_space_between_method_declaration_name_and_open_parenthesis = false
+void M() { }
+```
+
+#### <a name="csharpspacebetweenmethodcallparameterlistparentheses"></a>csharp_space_between_method_call_parameter_list_parentheses
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_method_call_parameter_list_parentheses |
+| **Langages applicables** | C# |
+| **Version introduite** | Visual Studio 2017 version 15.3 |
+| **Valeurs** | `true` - Placer un caractère d’espacement après la parenthèse ouvrante et avant la parenthèse fermante d’un appel de méthode<br /><br />`false` - Supprimer les espaces après la parenthèse ouvrante et avant la parenthèse fermante d’un appel de méthode |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_method_call_parameter_list_parentheses = true
+MyMethod( argument );
+
+// csharp_space_between_method_call_parameter_list_parentheses = false
+MyMethod(argument);
+```
+
+#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_method_call_empty_parameter_list_parentheses |
+| **Langages applicables** | C# |
+| **Version introduite** | Visual Studio 2017 version 15.7 |
+| **Valeurs** | `true` - Insérer un espace dans les parenthèses de la liste d’arguments vide<br /><br />`false` - Supprimer un espace dans les parenthèses de la liste d’arguments vide |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_method_call_empty_parameter_list_parentheses = true
+void Goo()
+{
+    Goo(1);
+}
+
+void Goo(int x)
+{
+    Goo( );
+}
+
+// csharp_space_between_method_call_empty_parameter_list_parentheses = false
 void Goo()
 {
     Goo(1);
@@ -807,42 +963,6 @@ void Goo(int x)
 }
 ```
 
-#### <a name="csharpspacebetweenmethodcallemptyparameterlistparentheses"></a>csharp_space_between_method_call_empty_parameter_list_parentheses
-
-|||
-|-|-|
-| **Nom de la règle** | csharp_space_between_method_call_empty_parameter_list_parentheses |
-| **Langages applicables** | C# |
-| **Version introduite** | Visual Studio 2017 version 15.7 |
-| **Valeurs** | `true` - Insérer un espace dans les parenthèses de la liste d’arguments vide<br /><br />`false` - Supprimer un espace dans les parenthèses de la liste d’arguments vide |
-| **Valeur par défaut de Visual Studio** | `false` |
-
-Exemples de code :
-
-```csharp
-// csharp_space_between_method_call_empty_parameter_list_parentheses = true
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo( );
-}
-
-// csharp_space_between_method_call_empty_parameter_list_parentheses = false
-void Goo()
-{
-    Goo(1);
-}
-
-void Goo(int x)
-{
-    Goo();
-}
-```
-
 #### <a name="csharpspaceaftercomma"></a>csharp_space_after_comma
 
 |||
@@ -862,6 +982,25 @@ int[] x = new int[] { 1, 2, 3, 4, 5 };
 int[] x = new int[] { 1,2,3,4,5 }
 ```
 
+#### <a name="csharpspacebeforecomma"></a>csharp_space_before_comma
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_before_comma |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace avant une virgule<br /><br />`false` - Supprimer l’espace avant une virgule |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_before_comma = true
+int[] x = new int[] { 1 , 2 , 3 , 4 , 5 };
+
+// csharp_space_before_comma = false
+int[] x = new int[] { 1, 2, 3, 4, 5 };
+```
+
 #### <a name="csharpspaceafterdot"></a>csharp_space_after_dot
 
 |||
@@ -879,6 +1018,139 @@ this. Goo();
 
 // csharp_space_after_dot = false
 this.Goo();
+```
+
+#### <a name="csharpspacebeforedot"></a>csharp_space_before_dot
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_before_dot |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace avant un point <br /><br />`false` - Supprimer l’espace avant un point |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_before_dot = true
+this .Goo();
+
+// csharp_space_before_dot = false
+this.Goo();
+```
+
+#### <a name="csharpspaceaftersemicoloninforstatement"></a>csharp_space_after_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_after_semicolon_in_for_statement |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace après chaque point-virgule dans une instruction `for`<br /><br />`false` - Supprimer l’espace après chaque point-virgule dans une instruction `for` |
+| **Valeur par défaut de Visual Studio** | `true` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_after_semicolon_in_for_statement = true
+for (int i = 0; i < x.Length; i++)
+
+// csharp_space_after_semicolon_in_for_statement = false
+for (int i = 0;i < x.Length;i++)
+```
+
+##### <a name="csharpspacebeforesemicoloninforstatement"></a>csharp_space_before_semicolon_in_for_statement
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_before_semicolon_in_for_statement |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace avant chaque point-virgule dans une instruction `for` <br /><br />`false` - Supprimer l’espace avant chaque point-virgule dans une instruction `for` |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_before_semicolon_in_for_statement = true
+for (int i = 0 ; i < x.Length ; i++)
+
+// csharp_space_before_semicolon_in_for_statement = false
+for (int i = 0; i < x.Length; i++)
+```
+
+#### <a name="csharpspacearounddeclarationstatements"></a>csharp_space_around_declaration_statements
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_around_declaration_statements |
+| **Langages applicables** | C# |
+| **Valeurs** | `ignore` - Ne pas supprimer les espaces supplémentaires dans les instructions de déclaration<br /><br />`false` - Supprimer les espaces supplémentaires dans les instructions de déclaration |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_around_declaration_statements = ignore
+int    x    =    0   ;
+
+// csharp_space_around_declaration_statements = false
+int x = 0;
+```
+
+#### <a name="csharpspacebeforeopensquarebrackets"></a>csharp_space_before_open_square_brackets
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_before_open_square_brackets |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace avant les crochets ouvrants `[` <br /><br />`false` - Supprimer l’espace avant les crochets ouvrants `[` |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_before_open_square_brackets = true
+int [] numbers = new int [] { 1, 2, 3, 4, 5 };
+
+// csharp_space_before_open_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweenemptysquarebrackets"></a>csharp_space_between_empty_square_brackets
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_empty_square_brackets |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer un espace entre des crochets vides `[ ]` <br /><br />`false` - Supprimer l’espace entre des crochets vides `[]` |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_empty_square_brackets = true
+int[ ] numbers = new int[ ] { 1, 2, 3, 4, 5 };
+
+// csharp_space_between_empty_square_brackets = false
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+```
+
+#### <a name="csharpspacebetweensquarebrackets"></a>csharp_space_between_square_brackets
+
+|||
+|-|-|
+| **Nom de la règle** | csharp_space_between_square_brackets |
+| **Langages applicables** | C# |
+| **Valeurs** | `true` - Insérer des espaces entre des crochets non vides `[ 0 ]` <br /><br />`false` - Supprimer des espaces entre des crochets non vides `[0]` |
+| **Valeur par défaut de Visual Studio** | `false` |
+
+Exemples de code :
+
+```csharp
+// csharp_space_between_square_brackets = true
+int index = numbers[ 0 ];
+
+// csharp_space_between_square_brackets = false
+int index = numbers[0];
 ```
 
 ### <a name="wrap-options"></a>Options d’encapsulage

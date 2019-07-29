@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043572"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345745"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio utilise des [expressions régulières de .NET](/dotnet/standard/ba
 
 ## <a name="regular-expression-examples"></a>Exemples d’expressions régulières
 
-Les tableaux suivants contiennent des caractères d’expression régulière, des opérateurs, des constructions et des exemples de modèle. Pour obtenir une référence plus complète, consultez [Langage des expressions régulières](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+Le tableau suivant contient des caractères, des opérateurs, des constructions et des exemples de modèles relatifs aux expressions régulières. Pour obtenir une référence plus complète, consultez [Langage des expressions régulières](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Objectif|Expression|Exemples|
 |-------------|----------------|-------------|
@@ -45,7 +45,7 @@ Les tableaux suivants contiennent des caractères d’expression régulière, de
 |Ancre la chaîne de correspondance à la fin du fichier|$|`end$` correspond au mot "end" uniquement quand il apparaît à la fin du fichier.|
 |Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à "ba", "bb" et "bc".|
 |Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à "bet" dans "between", à "ben" dans "beneath" et à "bes" dans "beside", mais pas à "below".|
-|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|
+|Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ». Pour plus d’informations, consultez [Groupes de capture et modèles de remplacement](#capture-groups-and-replacement-patterns). |
 |Invalide une correspondance|(?!abc)|`real(?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
 |Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères. Pour plus d’informations, consultez [Groupe de caractères négatif](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` correspond à "bef" dans "before », à "beh" dans "behind" et à "bel" dans "below", mais pas à "beneath".|
 |Correspond à l'expression placée avant ou après le symbole|&#124;|`(sponge\|mud) bath` correspond à "sponge bath" et à "mud bath".|

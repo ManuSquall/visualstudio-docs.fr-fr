@@ -1,6 +1,6 @@
 ---
 title: Tests de couverture du code
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973062"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416444"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -30,7 +30,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png)
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
@@ -47,7 +47,7 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 > [!TIP]
 > - Vérifiez que l’optimisation du compilateur est désactivée.
 > - Si vous travaillez avec du code non managé (natif), utilisez une version Debug.
-> - Vérifiez que vous générez des fichiers de symboles (.pdb) pour chaque assembly.
+> - Vérifiez que vous générez des fichiers de symboles (.pdb) pour chaque assembly
 
 Si vous n’obtenez pas les résultats escomptés, consultez [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
 
@@ -55,9 +55,10 @@ Si vous n’obtenez pas les résultats escomptés, consultez [Résoudre les prob
 
 La couverture du code est mesurée en *blocs*. Un bloc est un fragment de code avec un seul point d'entrée et de sortie.  Si le flux de contrôle du programme traverse un bloc pendant une série de tests, ce bloc est considéré comme couvert. Le nombre de fois où le bloc est utilisé n'a aucun effet sur le résultat.
 
-Les résultats peuvent également être affichés en termes de lignes si vous choisissez **Ajouter/supprimer des colonnes** dans l’en-tête du tableau. Si la série de tests a testé tous les blocs de code dans n'importe quelle ligne de code, le résultat considère qu'il s'agit d'une ligne. Si une ligne contient des blocs de code qui ont été testés et d'autres blocs qui ne l'ont pas été, le résultat considère qu'il s'agit d'une ligne partielle.
+Les résultats peuvent également être affichés en termes de lignes si vous choisissez **Ajouter/supprimer des colonnes** dans l’en-tête du tableau. Certains utilisateurs préfèrent un nombre de lignes, car les pourcentages correspondent mieux à la taille des fragments que vous voyez dans le code source. Un long bloc de calcul serait considéré comme un seul bloc même s'il occupe plusieurs lignes.
 
-Certains utilisateurs préfèrent un nombre de lignes, car les pourcentages correspondent mieux à la taille des fragments que vous voyez dans le code source. Un long bloc de calcul serait considéré comme un seul bloc même s'il occupe plusieurs lignes.
+> [!TIP]
+> Une ligne de code peut contenir plusieurs blocs de code. Si tel est le cas, et si la série de tests teste tous les blocs de code de la ligne, cette dernière est considérée comme une seule ligne. Si tous les blocs de code de la ligne ne sont pas testés, cette dernière est considérée comme une ligne de code partiellement exécutée.
 
 ## <a name="manage-code-coverage-results"></a>Gérer les résultats de la couverture du code
 

@@ -11,34 +11,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d4f0cce0699c27068152827382eb7d8627b715
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b8b11b01afa1d78aef9403acd13a305e36b2613
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531946"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377984"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procédure : changer la casse du texte dans l’éditeur
 
 Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre le texte sélectionné tout en majuscules ou tout en minuscules.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles qui sont décrites dans cet article, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles décrites dans cet article, car elles reposent sur les paramètres de développement **Général**. Pour changer vos paramètres de développement, choisissez **Outils** > **Importation et exportation de paramètres**, puis **Réinitialiser tous les paramètres**.
 
-## <a name="to-switch-text-to-upper-case"></a>Pour mettre le texte en majuscules
+## <a name="to-change-text-case"></a>Pour changer la casse du texte
 
 1. Sélectionnez le texte à convertir.
 
-2. Dans le menu **Edition**, sélectionnez **Options avancées**.
+2. Pour convertir le texte en majuscules, choisissez **Edition** > **Avancé** > **Mettre en majuscules**, ou appuyez sur **Ctrl**+**Maj**+**U**.
 
-3. Pour mettre le texte en majuscules, choisissez **Majuscules** ou appuyez sur **Ctrl**+**Maj**+**U**.
+   Pour convertir le texte en minuscules, choisissez **Edition** > **Avancé** > **Mettre en minuscules**, ou appuyez sur **Ctrl**+**U**.
 
-    — ou —
-
-    Pour mettre le texte en minuscules, choisissez **Minuscules** ou appuyez sur **Ctrl**+**U**.
-
-    > [!TIP]
-    > Pour rétablir la casse antérieure à cette modification, sélectionnez **Annuler** dans le menu **Edition**.
+> [!TIP]
+> Pour rétablir la casse antérieure à cette modification, sélectionnez **Annuler** dans le menu **Edition**.
 
 ## <a name="see-also"></a>Voir aussi
 
