@@ -1,6 +1,7 @@
 ---
 title: 'Procédure : Signer des manifestes d’application et de déploiement'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -12,27 +13,27 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946919"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461602"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Signer des manifestes d’application et de déploiement
 
 Si vous souhaitez publier une application à l’aide du déploiement ClickOnce, vous devez signer les manifestes d’application et de déploiement avec une paire de clés publique/privée et à l’aide de la technologie Authenticode. Vous pouvez signer les manifestes à l’aide d’un certificat à partir du magasin de certificats Windows ou d’un fichier de clé.
 
- Pour plus d’informations sur le déploiement ClickOnce, consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).
+Pour plus d’informations sur le déploiement ClickOnce, consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
- La signature des manifestes ClickOnce est facultative pour les applications *.exe*. Pour plus d’informations, consultez la section « Générer des manifestes non signés » de ce document.
+La signature des manifestes ClickOnce est facultative pour les applications *.exe*. Pour plus d’informations, consultez la section « Générer des manifestes non signés » de ce document.
 
- Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) ayant l’extension *.pfx*. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.
@@ -60,7 +61,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
      La boîte de dialogue **Sélectionner le fichier** s’affiche.
 
-3. Dans la boîte de dialogue **Sélectionner le fichier**, accédez à l’emplacement du fichier de clé (*.pfx*) à utiliser, puis cliquez sur **Ouvrir**.
+3. Dans la boîte de dialogue **Sélectionner le fichier**, accédez à l’emplacement du fichier de clé ( *.pfx*) à utiliser, puis cliquez sur **Ouvrir**.
 
     > [!NOTE]
     > Cette option prend uniquement en charge les fichiers ayant l’extension *.pfx*. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.
@@ -84,7 +85,7 @@ La signature des manifestes ClickOnce est facultative pour les applications *.ex
 > [!IMPORTANT]
 > Les manifestes non signés peuvent simplifier le développement et le test de votre application. Toutefois, ils présentent des problèmes de sécurité importants dans un environnement de production. N’envisagez l’utilisation de manifestes non signés que si votre application ClickOnce s’exécute sur des ordinateurs au sein d’un intranet complètement isolé d’Internet ou d’autres sources de code malveillant.
 
- Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si un ou plusieurs fichiers sont spécifiquement exclus du hachage généré. En d’autres termes, la publication de l’application aboutit à des manifestes signés si tous les fichiers sont inclus dans le hachage, même si la case **Signer les manifestes ClickOnce** n’est pas cochée.
+Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si un ou plusieurs fichiers sont spécifiquement exclus du hachage généré. En d’autres termes, la publication de l’application aboutit à des manifestes signés si tous les fichiers sont inclus dans le hachage, même si la case **Signer les manifestes ClickOnce** n’est pas cochée.
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Pour générer des manifestes non signés et inclure tous les fichiers dans le hachage généré
 

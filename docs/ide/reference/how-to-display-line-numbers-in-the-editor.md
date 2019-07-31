@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07f6a1094658f575f4e805798ee468c5c829238
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: c9cae68a0803b550d7184b0e06d6a043d76fa725
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531573"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605468"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procédure : afficher les numéros de ligne dans l’Éditeur
 
@@ -37,5 +37,4 @@ Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur de texte, boîte de dialogue Options](../../ide/reference/text-editor-options-dialog-box.md)
 - [Fonctionnalités de l’éditeur de code](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,6 +1,7 @@
 ---
 title: Boîte de dialogue Options, Projets et solutions, Générer et exécuter
 ms.date: 07/14/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
@@ -9,17 +10,17 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996840"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461394"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue Options : Projets et solutions \> Générer et exécuter
 

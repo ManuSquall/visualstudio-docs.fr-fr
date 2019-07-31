@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747779"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493301"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -29,7 +29,7 @@ Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le co
 
 Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
-![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
+![Explorateur de tests](../test/media/ute_failedpassednotrunsummary.png)
 
 Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes par défaut **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez modifier la façon dont l'Explorateur de tests regroupe vos tests.
 
@@ -228,3 +228,4 @@ Vous pouvez exécuter les tests à partir de **l’Explorateur de tests** en cli
 
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)
 - [Exécuter un test unitaire comme processus 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Questions fréquentes (FAQ) sur l’Explorateur de tests](test-explorer-faq.md)

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790206"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605417"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
@@ -253,6 +253,5 @@ Affiche un aperçu du modèle de style, du modèle de taille et du modèle de co
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
 - [Options, boîte de dialogue](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

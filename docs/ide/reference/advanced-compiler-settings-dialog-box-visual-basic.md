@@ -1,23 +1,24 @@
 ---
 title: Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792229"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461469"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 
@@ -71,7 +72,7 @@ Les constantes de compilation conditionnelle reviennent à utiliser une directiv
 
  **Constantes personnalisées**
 
- Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.
+ Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"** .
 
 ## <a name="other-settings"></a>Autres paramètres
 
