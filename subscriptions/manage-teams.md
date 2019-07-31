@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Découvrez en quoi consiste la responsabilité des administrateurs pour la gestion des abonnements de grandes équipes et de fournisseurs externes.
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420570"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493348"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
 Les administrateurs d’abonnements Visual Studio sont chargés de garantir que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio dispose des licences appropriées avec son propre abonnement Visual Studio.
@@ -39,5 +39,3 @@ En savoir plus sur les responsabilités des administrateurs :
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
-
-

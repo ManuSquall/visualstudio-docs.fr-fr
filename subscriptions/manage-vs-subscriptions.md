@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378058"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493354"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -73,7 +73,6 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 3. Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact. Sous l’onglet **Préférences**, vous pouvez sélectionner la langue par défaut, le modèle de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur.
 4. Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**.
 5. Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages.
-
 
 ### <a name="setting-communications-preferences"></a>Définition des préférences de communication
 Si vous souhaitez recevoir des mises à jour périodiques sur votre abonnement et ses avantages, dont le bulletin d’informations mensuel Visual Studio Subscription, [mettez à jour vos préférences](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) en cochant la case pour Visual Studio Subscription dans votre profil Visual Studio. Vous pouvez modifier ces préférences et vous désabonner à tout moment. 

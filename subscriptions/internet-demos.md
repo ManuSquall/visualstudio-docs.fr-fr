@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377970"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493382"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.
@@ -38,4 +38,3 @@ Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se
 Si vous avez besoin d’aide pour le déploiement des Services Bureau à distance, consultez la série de blogs en plusieurs parties sur le **déploiement de session des Services Bureau à distance 2012** à l’adresse https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 Si vous avez des questions, consultez le [forum sur les services Bureau à distance Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-
