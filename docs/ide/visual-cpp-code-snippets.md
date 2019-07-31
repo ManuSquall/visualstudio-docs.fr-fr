@@ -2,19 +2,19 @@
 title: Extraits de code Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581758"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461625"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
 
@@ -24,7 +24,7 @@ Vous pouvez ajouter un extrait de code à un emplacement particulier dans votre 
 
 ## <a name="insert-a-code-snippet"></a>Insérer un extrait de code
 
-Pour insérer un extrait de code, ouvrez un fichier de code C++ (*.cpp* ou *.h*), cliquez n’importe où dans le fichier et effectuez une des opérations suivantes :
+Pour insérer un extrait de code, ouvrez un fichier de code C++ ( *.cpp* ou *.h*), cliquez n’importe où dans le fichier et effectuez une des opérations suivantes :
 
 - Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**
 
@@ -64,7 +64,7 @@ Vous pouvez alors remplacer le 0 par la condition correcte.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Où puis-je trouver la liste complète des extraits de code C++ ?
 
-Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++**. Dans la fenêtre ci-dessous, développez **Visual C++**. Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
+Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++** . Dans la fenêtre ci-dessous, développez **Visual C++** . Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
 
 Les noms de la plupart des extraits de code sont explicites, mais certains noms peuvent prêter à confusion.
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Extrait de code du destructeur (~)
 
-L’extrait de code destructeur (**~**) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
+L’extrait de code destructeur ( **~** ) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
 
 ```cpp
 class SomeClass {

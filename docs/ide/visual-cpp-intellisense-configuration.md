@@ -2,17 +2,17 @@
 title: Configurer un projet C++ pour IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715372"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461584"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 

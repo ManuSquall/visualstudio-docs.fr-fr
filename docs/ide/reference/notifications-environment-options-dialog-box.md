@@ -11,17 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a475397969ce5ebdeff15238f548d42ceee60d6
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989877"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606036"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notifications, Environnement, boîte de dialogue Options
 
 Utilisez cette option pour cesser d'ignorer les notifications que vous aviez choisi d'ignorer dans la boîte de dialogue **Notifications**. Pour plus d’informations, voir [Mettre à jour Visual Studio](../../install/update-visual-studio.md).
-
-### <a name="see-also"></a>Voir aussi
-
-- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

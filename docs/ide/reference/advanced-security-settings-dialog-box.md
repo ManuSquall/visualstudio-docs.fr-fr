@@ -1,23 +1,24 @@
 ---
 title: Paramètres de sécurité avancés, boîte de dialogue
 ms.date: 06/27/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
 helpviewer_keywords:
 - Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4e28cb084c82690059293fc988204201242abf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1fcc3d09e43fc5358cbe507c5045c16cc9f8cf9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792105"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461863"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Paramètres de sécurité avancés, boîte de dialogue
 
