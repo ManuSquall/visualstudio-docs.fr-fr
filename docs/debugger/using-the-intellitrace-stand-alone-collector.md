@@ -1,6 +1,6 @@
 ---
-title: L’utilisation du collecteur autonome IntelliTrace | Documents de Microsoft
-ms.date: 11/04/2016
+title: Utilisation du collecteur autonome IntelliTrace | Microsoft Docs
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746105"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680633"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
 
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.
 
- Regardez IntelliTrace en action : [Collecte et analyse des données IntelliTrace en production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Regardez IntelliTrace en action: [Collecte et analyse des données IntelliTrace en production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > Vous pouvez également collecter les mêmes données IntelliTrace pour les applications web et SharePoint s’exécutant sur des ordinateurs distants à l’aide de **Microsoft Monitoring Agent** en mode **Trace** .
 >
-> Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode**Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Voir [à l’aide de l’Agent de surveillance Microsoft](../debugger/using-the-microsoft-monitoring-agent.md).
+> Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode**Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Consultez [utilisation de l’Microsoft Monitoring agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > Le collecteur autonome IntelliTrace ne prend pas en charge les instantanés de processus.
 
  **Spécifications**
 
-- .NET Framework 3.5, 4 ou 4.5
+- .NET Framework 3,5 ou version ultérieure
 
 - Visual Studio Enterprise (mais pas les éditions Professional ou Community) sur un ordinateur de développement ou autre pour ouvrir les fichiers .iTrace
 
   > [!NOTE]
-  > Assurez-vous d’enregistrer vos fichiers de symboles (.pdb). Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Voir [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
+  > Assurez-vous d’enregistrer vos fichiers de symboles (.pdb). Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Consultez [diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -52,7 +52,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ## <a name="WhatApps"></a> Quelles applications fonctionnent avec le collecteur ?
 
-- Applications web ASP.NET hébergées sur Internet Information Services (IIS) version 7.0, 7.5 ou 8.0
+- Applications Web ASP.NET hébergées sur Internet Information Services (IIS) version 7,0, 7,5, 8,0, 12,0 et 16,0
 
 - Applications SharePoint 2010 et SharePoint 2013
 
@@ -80,9 +80,9 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, créez le répertoire du collecteur, par exemple : **C:\IntelliTraceCollector**
 
-2. Installez le collecteur à partir du Centre de téléchargement Microsoft ou du dossier d’installation de Visual Studio 2013 Update 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
+2. Récupérez le collecteur à partir du [Centre de téléchargement Microsoft](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017), ou à partir du dossier d’installation Visual Studio 2013 Update 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
-   - **Centre de téléchargement Microsoft**:
+   - **Centre de téléchargement Microsoft** ou **My.VisualStudio.com**:
 
      1. À côté de **IntelliTraceCollector.exe**, choisissez **Télécharger**.
 
@@ -94,7 +94,11 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
    - **Dossier d’installation de Visual Studio**:
 
-     1. Copiez IntelliTraceCollection.cab dans le dossier suivant :
+     1. Copiez IntelliTraceCollection. cab à partir du dossier dans lequel le collecteur est installé, par exemple:
+
+          **.. \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+
+          ou, pour les versions antérieures de Visual Studio:
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -117,7 +121,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
-2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Exemple :
+2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -125,13 +129,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     1. Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.
 
-         Exemple :
+         Par exemple :
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.
 
-         Exemple :
+         Par exemple :
 
         - Pour une application web du pool d’applications **DefaultAppPool** :
 
@@ -145,7 +149,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, vérifiez que PowerShell est activé. Dans la plupart des versions de Windows Server, vous pouvez ajouter cette fonctionnalité dans l’outil d’administration **Gestionnaire de serveur** .
 
-     ![Ajout de PowerShell à l’aide du Gestionnaire de serveur](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
+     ![Ajout de PowerShell à l’aide de gestionnaire de serveur](../debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
 2. Installez les applets de commande PowerShell IntelliTrace.
 
@@ -161,7 +165,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     2. Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Exemple :
+         Par exemple :
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -179,7 +183,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
 
-    Exemple :
+    Par exemple :
 
    - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -234,7 +238,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Reproduisez le problème.
 
-3. Pour créer un point de contrôle du fichier .iTrace, utilisez la syntaxe suivante :
+3. Pour créer un point de contrôle du fichier. iTrace, utilisez la syntaxe suivante:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -275,16 +279,16 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Ouvrez le fichier .iTrace dans Visual Studio Enterprise
 
 > [!NOTE]
-> Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Voir [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
+> Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Consultez [diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
 1. Déplacez le fichier .iTrace ou copiez-le sur un ordinateur équipé de Visual Studio Enterprise (mais pas les éditions Professional ou Community).
 
 2. Double-cliquez sur le fichier .iTrace en dehors de Visual Studio ou ouvrez le fichier à partir de Visual Studio.
 
-     Visual Studio affiche la page **Résumé IntelliTrace** . Dans la plupart des sections, vous pouvez passer en revue les événements ou autres éléments enregistrés, choisir un élément, puis commencer le débogage avec IntelliTrace à partir de l’endroit et du moment où l’événement s’est produit. Voir [à l’aide de l’enregistrement des données IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Visual Studio affiche la page **Résumé IntelliTrace** . Dans la plupart des sections, vous pouvez passer en revue les événements ou autres éléments enregistrés, choisir un élément, puis commencer le débogage avec IntelliTrace à partir de l’endroit et du moment où l’événement s’est produit. Consultez [utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants sur votre ordinateur de développement. Voir [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
+    > Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants sur votre ordinateur de développement. Consultez [diagnostiquer des problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Comment puis-je obtenir le maximum de données sans ralentir mon application ?
  IntelliTrace peut collecter beaucoup de données. L’impact de la collecte sur les performances de votre application dépend donc de la quantité de données collectées et du type de code analysé par IntelliTrace. Consultez [Optimisation de la collecte IntelliTrace sur les serveurs de production](http://go.microsoft.com/fwlink/?LinkId=255233).
@@ -371,13 +375,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
    Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .
 
-   ![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![Relation entre l’employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    Le collecteur enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, le collecteur n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). Le collecteur n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).
 
 ## <a name="WhereElse"></a> À quel autre endroit puis-je trouver des données IntelliTrace ?
 
-Vous pouvez obtenir des données IntelliTrace à partir d’un IntelliTrace session dans Visual Studio Enterprise de débogage. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+Vous pouvez récupérer des données IntelliTrace à partir d’une session de débogage IntelliTrace dans Visual Studio Enterprise. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)
