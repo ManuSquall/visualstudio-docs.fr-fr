@@ -61,10 +61,8 @@
 ### [Responsabilités de l’administrateur](admin-responsibilities.md)
 #### [Inventaire de préproduction](admin-inventory.md)
 #### [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
-#### [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
-### [Licences en volume](volume-license-admins.md)
+#### [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 ### Intégration de votre organisation
-#### [Intégration post-migration](post-migration-onboarding.md)
 #### [Migration d’Open et des licences Open](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Abonnements cloud](cloud-admin.md)
