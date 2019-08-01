@@ -1,5 +1,5 @@
 ---
-title: Afficher les informations personnalisées à l’aide de DebuggerDisplay | Microsoft Docs
+title: Afficher des informations personnalisées à l’aide de DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929604"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680587"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Demander au débogueur les éléments à afficher à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
-La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquer au débogueur ce qui doit être affiché à l’aideC#de l’attribut F#DebuggerDisplay C++(, Visual Basic,,/CLI)
+La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys. En cas d’application à un type de base, l’attribut s’applique également à une sous-classe.
 
 L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.
 
@@ -32,7 +32,7 @@ L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d�
 > Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.
 
 > [!NOTE]
-> Pour le code natif, cet attribut est pris en charge uniquement dans C++code /CLI.
+> Pour le code natif, cet attribut est pris en C++charge uniquement dans le code/CLI.
 
 Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.
 
@@ -90,15 +90,15 @@ public sealed class MyClass
 }
 ```
 
-Le «, nq « suffixe indique à l’évaluateur d’expression à supprimer les guillemets lors de l’affichage de la valeur finale (nq = sans guillemets).
+Le suffixe «, NQ» indique à l’évaluateur d’expression de supprimer les guillemets lors de l’affichage de la valeur finale (NQ = no Quotations).
 
 ## <a name="example"></a>Exemple
 L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :
 
 |**Name**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
-|Touche|"trois"|objet {string}|
-|Value|3|objet {int}|
+|Clé|"trois"|objet {string}|
+|`Value`|3|objet {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
