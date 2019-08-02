@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "65705865"
 ---
 # <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
