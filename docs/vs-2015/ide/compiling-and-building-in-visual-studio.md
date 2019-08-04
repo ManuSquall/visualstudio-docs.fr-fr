@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b534e46f4cdef87641207ec13419d4c59d04ed3f
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701491"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740078"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 |------------------|--------------|--------------------------|
 |Utilisation de l'IDE|-   Vous pouvez créer plus facilement des builds et les exécuter immédiatement.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour les projets C++ et C#.<br />-   Vous pouvez personnaliser certains aspects du système de génération.|[Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Exécution d'une ligne de commande MSBuild|-   Vous pouvez générer des projets sans installer Visual Studio.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour tous les types de projets.<br />-   Vous pouvez personnaliser la plupart des zones du système de génération.|[MSBuild](../msbuild/msbuild.md)|
-|Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Générer l’application](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Générer l’application](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>Génération à partir de l'IDE
- Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Introduction au Concepteur de projet](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [NIB Comment : Modifier les propriétés du projet et les paramètres de Configuration](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Présentation du concepteur de projets](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [de l’éditeur de plume Comment: Modifiez les propriétés du projet et](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)les paramètres de configuration.
 
  Dans l’IDE, vous pouvez effectuer les tâches additionnelles suivantes :
 
@@ -53,4 +53,4 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 - Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Procédure pas à pas : Génération d’une](../ide/walkthrough-building-an-application.md) application [compréhension des configurations de build](../ide/understanding-build-configurations.md) [fonctionnement des plateformes de génération](../ide/understanding-build-platforms.md) [génération (compilation) des projets](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [de site Web Comment: créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)
