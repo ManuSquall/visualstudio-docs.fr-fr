@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696263"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740186"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) avec les applications Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
  Les tableaux ci-dessous identifient les fonctionnalités ALM de Visual Studio qui donnent de bons résultats avec un projet Xamarin, et celles qui présentent des limites. Pour plus d'informations sur les fonctionnalités, cliquez sur les liens correspondants.  
   
 ## <a name="agile-tools"></a>Outils agiles  
- Lien de référence : **[Travail](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (à l’aide de Visual Studio Team Services ou TFS, y compris Team Explorer Everywhere)  
+ Lien de référence : **[Travail](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (à l’aide de Visual Studio Team Services ou TFS, y compris Team Explorer Everywhere)  
   
  Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.  
   
@@ -42,7 +42,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |Créer des rapports sur la progression et la visualiser|Oui||  
   
 ## <a name="modeling"></a>Modélisation  
- Lien de référence : **[Analyse et modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md)**  
+ Lien de référence : **[Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)**  
   
  Les fonctionnalités de conception sont indépendantes du langage de codage ou fonctionnent avec les langages .NET tels que C#. Consultez [Rôles de l’architecture et des diagrammes de modélisation dans le développement de logiciels](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) pour connaître les aspects liés au code.  
   
@@ -68,7 +68,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||  
   
 ## <a name="build"></a>Build  
- Lien de référence : **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Lien de référence : **[Build](/azure/devops/pipelines/index)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
@@ -91,7 +91,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 |[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Windows uniquement|L’enregistreur de test d’IU de Visual Studio est réservé à Windows. Pour toutes les plateformes, consultez [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du Code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Fonctionnalité|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  

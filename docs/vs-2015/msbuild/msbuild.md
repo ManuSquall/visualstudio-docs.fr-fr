@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7ac637c478b5bb105b48abeb1d0ec074122e3dda
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821629"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739692"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Le [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] est une 
   Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations s'exécutent à l'aide de MSBuild. Autre solution, vous pouvez générer le code dans l'IDE sur un ordinateur de développement mais utiliser une ligne de commande MSBuild pour générer du code qui est intégré par plusieurs développeurs.  
   
 > [!NOTE]
-> Vous pouvez utiliser Team Foundation Build automatiquement pour compiler, tester, puis déployer votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Team Foundation Build compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez l’article [Générer l’application](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Vous pouvez utiliser Team Foundation Build automatiquement pour compiler, tester, puis déployer votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Team Foundation Build compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez l’article [Générer l’application](/azure/devops/pipelines/index).  
   
  Cette rubrique fournit une vue d'ensemble de MSBuild. Pour suivre un tutoriel d’introduction, voir [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -88,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ## <a name="BKMK_ProjectFile"></a> Fichier projet  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utilise un format de fichier projet XML qui est simple et extensible. Le format du fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] permet aux développeurs de décrire les éléments qui seront générés et la manière dont ils le seront pour différents systèmes d’exploitation et configurations. De plus, le format de fichier projet permet aux développeurs de créer des règles de génération réutilisables qui peuvent être réparties en fichiers distincts, de telle sorte que les builds puissent être exécutées de façon cohérente sur différents projets du produit.  
   
- Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour suivre un tutoriel sur la création d'un fichier projet de base, voir [Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Les sections suivantes décrivent certains éléments de base du format de fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour suivre un tutoriel sur la création d'un fichier projet de base, voir [Procédure pas à pas : Création d’un fichier projet MSBuild en](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)partant de zéro.  
   
 ### <a name="BKMK_Properties"></a> Propriétés  
  Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. Les propriétés sont déclarées en créant un élément portant le nom de la propriété comme enfant d’un élément [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Par exemple, le code suivant crée une propriété nommée `BuildDir` avec la valeur `Build`.  

@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0a6dff6c9e10312241f1d95128febbd5dabb6c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6dffa98a8abbf74bd6eee8761d91f09a7c022666
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696944"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740219"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicatio
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`ApplicationManifest`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie le chemin d'accès et le nom du fichier manifeste d'application auquel ajouter l'élément `<hostInBrowser />`.|  
-|`HostInBrowser`|Paramètre **Boolean** obligatoire.<br /><br /> Spécifie s’il faut modifier le manifeste de l’application pour inclure l’élément **\<hostInBrowser />**. Si la valeur est **true**, un nouvel élément `<`**hostInBrowser />** est inclus dans l’élément **\<entryPoint />**. Notez que l’inclusion des éléments est cumulative : si un élément **\<hostInBrowser />** existe déjà, il n’est ni supprimé ni remplacé. Au lieu de cela, un autre élément **\<hostInBrowser />** est créé. Si la valeur est **false**, le manifeste de l’application n’est pas modifié.|  
+|`HostInBrowser`|Paramètre **Boolean** obligatoire.<br /><br /> Spécifie s’il faut modifier le manifeste de l’application pour inclure l’élément **\<hostInBrowser />** . Si la valeur est **true**, un nouvel élément `<`**hostInBrowser />** est inclus dans l’élément **\<entryPoint />** . Notez que l’inclusion des éléments est cumulative : si un élément **\<hostInBrowser />** existe déjà, il n’est ni supprimé ni remplacé. Au lieu de cela, un autre élément **\<hostInBrowser />** est créé. Si la valeur est **false**, le manifeste de l’application n’est pas modifié.|  
   
 ## <a name="remarks"></a>Remarques  
- [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] sont exécutés à l'aide du déploiement [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] et, par conséquent, doivent être publiés avec les manifestes de déploiement et d'application correspondants. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] utilise la tâche [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) pour générer un manifeste d’application.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../includes/tla2sharptla-xbapsharpplural-md.md)] sont exécutés à l'aide du déploiement [!INCLUDE[TLA#tla_clickonce](../includes/tlasharptla-clickonce-md.md)] et, par conséquent, doivent être publiés avec les manifestes de déploiement et d'application correspondants. [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] utilise la tâche [GenerateApplicationManifest](/dotnet/api/microsoft.build.tasks.generateapplicationmanifest) pour générer un manifeste d’application.  
   
- Ensuite, pour configurer une application hébergée par un navigateur, un élément supplémentaire, **\<hostInBrowser />**, doit être ajouté au manifeste de l’application, comme indiqué dans l’exemple suivant :  
+ Ensuite, pour configurer une application hébergée par un navigateur, un élément supplémentaire, **\<hostInBrowser />** , doit être ajouté au manifeste de l’application, comme indiqué dans l’exemple suivant :  
   
 ```  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -59,7 +59,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicatio
   
  La tâche <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> est exécutée quand un projet [!INCLUDE[TLA2#tla_xbap](../includes/tla2sharptla-xbap-md.md)] est généré pour ajouter l'élément `<hostInBrowser />`.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L'exemple suivant montre comment s'assurer que l'élément `<hostInBrowser />` est inclus dans un fichier manifeste d'application.  
   
 ```  

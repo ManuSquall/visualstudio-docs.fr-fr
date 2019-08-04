@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5358c7e001a993c637cc4ac2dc267a668a7d6e13
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430313"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740123"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Conseils et astuces pour Visual Studio
 
@@ -146,4 +146,3 @@ Consultez [Raccourcis clavier : Visual Studio Online, portail web TFS et Team E
 - [Blog Visual Studio](http://blogs.msdn.com/b/visualstudio)
 - [Blog de conseils et astuces pour Visual Studio](http://blogs.msdn.com/b/zainnab)
 - [Boîte à outils Visual Studio sur Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
