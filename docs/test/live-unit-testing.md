@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786518"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662059"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing avec Visual Studio
 
@@ -145,7 +145,7 @@ Il existe certaines différences entre l’exécution automatique des tests et l
 
 - L’exécution ou le débogage des tests depuis la fenêtre de l’Explorateur de tests exécute des fichiers binaires réguliers, tandis que Live Unit Testing exécute des fichiers binaires instrumentés.
 - Live Unit Testing ne crée pas de domaine d’application pour exécuter des tests, mais exécute des tests à partir du domaine par défaut. Les tests exécutés depuis la fenêtre de **l’Explorateur de tests** créent un domaine d’application.
-- Live Unit Testing exécute des tests dans chaque assembly de test de manière séquentielle. Si vous exécutez plusieurs tests depuis la fenêtre de **l’Explorateur de tests** et si le bouton **Exécuter les tests en parallèle** est sélectionné, les tests sont exécutés en parallèle.
+- Live Unit Testing exécute des tests dans chaque assembly de test de manière séquentielle. Dans la fenêtre **Explorateur de tests**, vous pouvez choisir une option pour exécuter plusieurs tests en parallèle.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing et les grandes solutions
 
@@ -166,7 +166,7 @@ Pour sélectionner les projets individuels dans les tests unitaires, procédez c
 
 **Exclusion de tests individuels de la fenêtre de l’éditeur de code**
 
-Vous pouvez utiliser la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez **Live Tests** > **Inclure [la méthode sélectionnée]**, **Live Tests** > **Exclure [la méthode sélectionnée]** ou **Live Tests** > **Exclure tout sauf [la méthode sélectionnée]**, où « la méthode sélectionnée » correspond à celle que vous avez sélectionnée dans la fenêtre de code.
+Vous pouvez utiliser la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez **Live Tests** > **Inclure [la méthode sélectionnée]** , **Live Tests** > **Exclure [la méthode sélectionnée]** ou **Live Tests** > **Exclure tout sauf [la méthode sélectionnée]** , où « la méthode sélectionnée » correspond à celle que vous avez sélectionnée dans la fenêtre de code.
 
 **Exclusion de tests par programmation**
 

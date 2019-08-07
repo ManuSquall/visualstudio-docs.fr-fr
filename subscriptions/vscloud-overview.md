@@ -1,20 +1,19 @@
 ---
 title: Guide pratique pour acheter des abonnements cloud Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891069"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606113"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
-
 Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »** .
 
 [Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
@@ -23,11 +22,10 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 > Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio. Vous pouvez toujours acheter de nouveaux abonnements cloud mensuels.
 
 ## <a name="before-you-start"></a>Avant de commencer
-
-* Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
+Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Qui peut acheter des abonnements cloud Visual Studio ?
-Toute personne ayant un accès [propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrateur service](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) ou [coadministrateur](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) à l’abonnement Azure peut acheter des abonnements cloud.
+Toute personne ayant un accès [propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrateur ou coadministrateur du service](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) sur l’abonnement Azure peut acheter des abonnements cloud.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Comment acheter des abonnements cloud ?
 
@@ -70,11 +68,6 @@ Si vous avez acheté plusieurs abonnements, accédez au [portail d’administrat
 
 * Pour annuler ces abonnements, réduisez le nombre d’abonnements à zéro (0). Ils ne seront pas renouvelés au début de la prochaine période de facturation (le premier jour du mois suivant pour les abonnements cloud mensuels ; 12 mois plus tard pour les abonnements cloud annuels).
 
-## <a name="buy-cloud-subscriptions-now"></a>Acheter des abonnements cloud
-
-* [Visual Studio Professional mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Enterprise mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 ## <a name="frequently-asked-questions"></a>FAQ
 
 ### <a name="for-new-customers"></a>Pour les nouveaux clients :
@@ -96,11 +89,9 @@ R :  Cette modification n’aura aucune incidence sur les abonnés existants.
 R :  Non.  Vos abonnements restent en place et vous serez en mesure de les gérer comme vous le faites déjà.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite augmenter le nombre d’abonnements pour mes clients ?
-
-R : Les abonnements annuels achetés au cours d’un mois donné sont immédiatement facturés et valables pour une année entière. Pour cette raison, votre administrateur ne peut modifier que le nombre de licences pendant le mois de l’achat (elles seront alors valables et facturées pour 1 an). En dehors du mois de l’achat, il n’est plus possible d’accroître le nombre d’abonnements.
+R : Vous pouvez acheter des abonnements annuels supplémentaires à tout moment.  Les abonnements annuels achetés sont immédiatement facturés et valables pour une année entière. 
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q : Que se passe-t-il si je souhaite réduire le nombre d’abonnements pour mes clients ?
-
 R : Votre administrateur peut réduire le nombre d’abonnements en consultant https://manage.visualstudio.com et en suivant les instructions de cet article pour réduire le nombre d’abonnements. Le système ne génère *pas* de crédit au prorata. Pour obtenir un remboursement, vous devez contacter l’équipe de facturation Azure.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q : Si j’annule mon abonnement, pourrai-je acheter un autre abonnement cloud annuel plus tard ?
@@ -123,8 +114,12 @@ R :  Votre administrateur peut réduire le nombre d’abonnements en consultant
 R :  Bien qu’ils ne seront pas en mesure d’acheter un autre abonnement cloud annuel, il existe de nombreuses options pour acheter des abonnements à Visual Studio.  Pour en savoir plus, consultez [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 ## <a name="related-resources"></a>Ressources connexes
+- [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
+- [Support des abonnements Visual Studio](https://visualstudio.microsoft.com/vs/support/)
+- [FAQ sur la facturation des abonnements cloud Visual Studio](vscloud-billing-faq.md)
+- [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
 
-* [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
-* [Support des abonnements Visual Studio](https://visualstudio.microsoft.com/vs/support/)
-* [FAQ sur la facturation des abonnements cloud Visual Studio](vscloud-billing-faq.md)
-* [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
+## <a name="next-steps"></a>Étapes suivantes
+Acheter des abonnements cloud
+- [Visual Studio Professional mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise mensuel](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

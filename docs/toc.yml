@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Ajouter ou supprimer des références à l’aide du gestionnaire de références
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Ajouter des références avec NuGet ou un SDK d’extension
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Ajouter ou supprimer des espaces de noms importés (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Dépanner des références rompues
@@ -352,6 +350,8 @@
                     - name: Vue d'ensemble
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
+                    - name: Ajouter des contrôles de valeurs Null pour tous les paramètres
+                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Changer la signature de la méthode
                       href: ide/reference/change-method-signature.md
                     - name: Conversion de type anonyme en classe

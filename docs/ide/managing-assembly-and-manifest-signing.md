@@ -1,6 +1,7 @@
 ---
 title: Gérer la signature d’assemblys et de manifestes
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538239"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461498"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
 
@@ -37,13 +38,13 @@ Pour plus d’informations sur la signature d’assemblys dans les projets Visua
 
 Vous pouvez signer les manifestes d’application et les assemblys .NET :
 
-- Exécutables (*.exe*)
+- Exécutables ( *.exe*)
 
-- Manifestes d’application (*.exe.manifest*)
+- Manifestes d’application ( *.exe.manifest*)
 
-- Manifestes de déploiement (*.application*)
+- Manifestes de déploiement ( *.application*)
 
-- Assemblys de composants partagés (*.dll*)
+- Assemblys de composants partagés ( *.dll*)
 
 Signez les types de composants suivants :
 
@@ -53,7 +54,7 @@ Signez les types de composants suivants :
 
 3. Assemblys PIA (Primary Interop Assembly), qui sont utilisés pour l’interopérabilité COM. L’utilitaire TLBIMP applique des noms forts pendant la création d’un assembly PIA à partir d’une bibliothèque de types COM.
 
-En général, vous ne devez pas signer les exécutables. Un composant de nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Évitez de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.
+En général, vous ne devez pas signer les exécutables. Un composant avec nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Évitez de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Guide pratique pour signer un assembly dans Visual Studio
 

@@ -1,6 +1,7 @@
 ---
 title: Détecter un problème et créer des journaux pour les problèmes MSBuild
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518195"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461481"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Détecter un problème et créer des journaux pour les problèmes MSBuild
 
@@ -68,7 +69,7 @@ La valeur de « MyMetadata » pour l’élément de « MyFile.txt » est év
 
 ## <a name="incremental-build-is-building-more-than-it-should"></a>La build incrémentielle génère plus qu’il le devrait
 
-Si MSBuild régénère inutilement un projet ou élément de projet, créez un journal de génération détaillé ou binaire. Vous pouvez rechercher le journal du fichier qui a été généré ou compilé inutilement. La sortie ressemble à ceci :
+Si MSBuild régénère inutilement un projet ou élément de projet, créez un journal de génération détaillé ou binaire. Vous pouvez rechercher dans le journal le fichier qui a été généré ou compilé inutilement. La sortie ressemble à ceci :
 
 ```output
   Task "CL"
@@ -116,11 +117,11 @@ Un fichier Msbuild.binlog sera créé dans le répertoire à partir duquel que v
 ## <a name="create-a-detailed-log"></a>Créer un journal détaillé
 
 1. Dans le menu principal de Visual Studio, accédez à **Outils** > **Options** > **Projets et Solutions** >**Générer et exécuter**.
-1. Définissez **Commentaires relatifs à la build du projet MSBuild** sur **Détaillé** dans les deux zones de liste déroulante. La première zone contrôle les commentaires relatifs à la build dans la **Fenêtre Sortie** et la seconde zone contrôle les commentaires relatifs à la build dans le fichier \<projectname\>.log qui est créé dans le chaque répertoire intermédiaire du projet pendant la build.
-1. À partir d’une invite de commandes développeur Visual Studio, entrez une de ces commandes, en remplaçant les valeurs de chemin d’accès et de configuration courantes :
+1. Définissez **Commentaires relatifs à la build du projet MSBuild** sur **Détaillé** dans les deux zones de liste déroulante. La première zone contrôle la quantité d’informations sur la build dans la **Fenêtre Sortie** et la seconde zone contrôle la quantité d’informations sur la build dans le fichier \<projectname\>.log qui est créé dans le répertoire intermédiaire du projet pendant la build.
+2. À partir d’une invite de commandes développeur Visual Studio, entrez une de ces commandes, en remplaçant les valeurs de chemin d’accès et de configuration courantes :
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     ou

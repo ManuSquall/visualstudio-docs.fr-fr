@@ -1,5 +1,6 @@
 ---
 title: Introduire une variable locale
+description: Générer une variable locale pour remplacer une expression existante Sélectionnez l’expression, cliquez avec le bouton droit et choisissez le menu Actions rapides et refactorisations, puis sélectionnez Introduire un élément local pour (toutes les occurrences de) « expression ».
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540997"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483695"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -43,7 +44,7 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032559"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533353"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -105,7 +105,11 @@ Si vous déployez une application UWP à des fins de test sur un appareil, consu
 
 Si vous avez besoin d’une installation pour une application de poste de travail plus complexe que ce que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) peut fournir, vous pouvez créer un package Windows Installer (fichier d’installation MSI ou EXE) ou un programme d’amorçage personnalisé.
 
-- Vous pouvez créer un package d’installation MSI avec [l’extension WiX Toolset de Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Il s’agit d’un ensemble d’outils en ligne de commande.
+- Vous pouvez créer un package d’installation MSI avec [l’extension WiX Toolset](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset). Il s’agit d’un ensemble d’outils en ligne de commande.
+
+   ::: moniker range=">=vs-2019"
+   Pour Visual Studio 2019, procurez-vous l’[extension WiX Toolset Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
+   ::: moniker-end
 
 - Vous pouvez créer un package d’installation MSI ou EXE avec [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) de Flexera Software. Vous pouvez utiliser InstallShield avec Visual Studio 2017 et versions ultérieures (l’édition Community n’est pas prise en charge). Notez qu’InstallShield Limited Edition n’est plus inclus avec Visual Studio et n’est pas pris en charge dans Visual Studio 2017 et versions ultérieures. Vérifiez auprès de [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) la disponibilité future.
 

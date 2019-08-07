@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821684"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493284"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
@@ -70,7 +70,7 @@ Vous pouvez appeler manuellement la fonctionnalité Info express en choisissant 
 
 Si une fonction est surchargée, il est possible que la fonctionnalité IntelliSense n'affiche pas les informations de toutes les formes de la surcharge.
 
-Vous pouvez désactiver la fonctionnalité Info express pour le code C++ en accédant à **Outils** > **Options** > **Éditeur de texte** > **C/C++** > **Avancé**, puis en définissant **Info express automatique** sur `false`.
+Vous pouvez désactiver la fonctionnalité Info express pour le code C++ en accédant à **Outils** > **Options** > **Éditeur de texte** > **C/C++**  > **Avancé**, puis en définissant **Info express automatique** sur `false`.
 
 ## <a name="complete-word"></a>Compléter le mot
 
@@ -79,6 +79,17 @@ La fonctionnalité Compléter le mot entre automatiquement la fin du nom de vari
 ## <a name="intellisense-options"></a>Options IntelliSense
 
 Les options IntelliSense sont activées par défaut. Pour les désactiver, choisissez **Outils** > **Options** > **Éditeur de texte** et désélectionnez **Informations sur les paramètres** ou **Répertorier automatiquement les membres** si vous n’avez pas besoin de la fonctionnalité Liste des membres.
+
+## <a name="intellisense-icons"></a>Icônes IntelliSense
+Les icônes dans IntelliSense peuvent indiquer une signification supplémentaire avec des modificateurs d’icône. Il s’agit d’étoiles, de cœurs et de verrous superposés à l’icône de l’objet, qui indiquent respectivement Protégé, Interne ou Privé.
+
+|    Icône    |    Accessibilité    |    Description    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Modificateur d’icône « Public »](../ide/media/intellisensePublicNoModifier.png)       |    Classe publique    |    L’accès n’est pas limité.   |
+| ![Modificateur d’icône « Protégé »](../ide/media/intellisenseProtectedModifier.png)       |    Classe protégée    |    L’accès est limité à la classe conteneur ou aux types dérivés de la classe conteneur.    |
+| ![Modificateur d’icône « Interne protégé »](../ide/media/intellisenseProtectedInternalModifier.png)       |    Classe interne protégée    |    L’accès est limité à l’assembly actuel ou aux types dérivés de la classe conteneur.    |
+| ![Modificateur d’icône « Interne »](../ide/media/intellisenseInternalModifier.png)       |    Classe interne    |    L’accès est limité à l’assembly actuel.    |
+|![Modificateur d’icône « Privé »](../ide/media/intellisensePrivateModifier.png)        |    Classe privée    |    L’accès est limité à la classe conteneur ou aux types dérivés de la classe conteneur dans l’assembly actuel. (Disponible depuis C# 7.2.)    |
 
 ## <a name="troubleshoot-intellisense"></a>Résoudre les problèmes d’IntelliSense
 

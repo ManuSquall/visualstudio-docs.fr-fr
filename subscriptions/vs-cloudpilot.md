@@ -3,24 +3,23 @@ title: Avantage CloudPilot dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6fec81e4f4345c77bdff7dd08bf2615d6fe45ad4
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825920"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681656"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
-
 Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers : des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS.
 
+## <a name="overview"></a>Vue d'ensemble
 Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à migrer rapidement et facilement leurs applications vers Azure.  En une fraction du temps que prendrait une évaluation manuelle, CloudPilot détermine avec précision les coûts de migration Azure PaaS et IaaS. Il fournit également des recommandations détaillées, jusqu’à la ligne de code, sur les changements de code à apporter à l’application pour qu’elle s’exécute dans le cloud. CloudPilot facilite l’évaluation initiale des efforts de migration vers le cloud et la planification du développement, contribue au processus de refactorisation en proposant des changements détaillés au niveau du code pour le cloud, et simplifie les tests finaux par rapport aux contrôles et stratégies liés aux technologies d’entreprise.
 
 ## <a name="activation-steps"></a>Étapes d’activation
-
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage CloudPilot dans la catégorie « Outils », puis cliquez sur **Obtenir un code**.

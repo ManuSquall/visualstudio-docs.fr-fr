@@ -6,12 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824629"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787958"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -33,8 +33,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
    > ![Avantage Power BI Pro, Compte existant](_img/vs-pbi/vs-pbi-existing-account.png)
 
 4. Pour créer un compte, entrez vos coordonnées, puis cliquez sur **Suivant**.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Créer un compte](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 5. Créez ensuite votre identifiant utilisateur et votre mot de passe.  Si vous avez déjà un compte et que vous en créez un autre, vous devez spécifier un nom de société différent de celui que vous avez utilisé pour le compte existant.  Cliquez sur **Créer mon compte**.
    > [!div class="mx-imgBorder"]
@@ -45,8 +43,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
    > ![Avantage Power BI Pro, Vous n’êtes pas un robot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
 7. Entrez le code reçu, puis cliquez sur **Suivant**.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Vous n’êtes pas un robot2](_img/vs-pbi/vs-pbi-robot2-cropped.png)
 
 8. Entrez vos coordonnées, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
@@ -59,8 +55,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
     > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
 11. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie au moment de la création de votre compte.)  Vous pouvez également voir s’afficher une fenêtre Assistant Office 365 automatisée, qui vous permet de poser des questions au besoin.  Cliquez sur **Démarrer** pour continuer.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Power BI Pro, Tout est prêt](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 12. Votre compte Power BI Pro est créé. Vous avez maintenant accès au Centre d’administration Office 365, où vous pouvez gérer les utilisateurs et les domaines, installer des logiciels Office et obtenir plus d’informations sur Office 365.  C'est tout !  Vous êtes prêt à commencer.
 

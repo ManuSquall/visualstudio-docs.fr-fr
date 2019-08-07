@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697998"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740232"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d'ensemble de l'analyse du code C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ L'outil d'analyse du code C/C++ fournit aux développeurs des informations sur d
  Vous pouvez être amené à imposer que tous les archivages de code source respectent certaines stratégies. En particulier, vous souhaitez vérifier que l’analyse a été exécutée en tant qu’étape de la build locale la plus récente. Pour plus d’informations sur l’activation d’une stratégie d’archivage de l’analyse du code, consultez [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Intégration de Team Build  
- Vous pouvez utiliser les fonctionnalités intégrées du système de build pour exécuter l’outil d’analyse du code en tant qu’étape du processus de génération [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Pour plus d’informations, consultez l’article [Générer l’application](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Vous pouvez utiliser les fonctionnalités intégrées du système de build pour exécuter l’outil d’analyse du code en tant qu’étape du processus de génération [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Pour plus d’informations, consultez l’article [Générer l’application](/azure/devops/pipelines/index).  
   
 ## <a name="command-line-support"></a>Prise en charge de la ligne de commande  
  Non seulement les développeurs bénéficient d’une intégration complète de l’outil d’analyse dans l’environnement de développement, mais ils peuvent également l’utiliser à partir de la ligne de commande, comme indiqué dans l’exemple suivant :  

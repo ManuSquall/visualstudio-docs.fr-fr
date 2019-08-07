@@ -1,6 +1,7 @@
 ---
 title: Options, Éditeur de texte, JavaScript, Mise en forme
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,25 +11,27 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778350"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605985"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
-Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Boîte de dialogue Options : Éditeur de texte \> JavaScript \> Mise en forme
+
+Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript/TypeScript** > **Mise en forme**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Mise en forme automatique
- Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.
+
+Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.
 
 ### <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -41,9 +44,10 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 |**Mettre en forme lors du collage**|Quand cette option est sélectionnée et que vous collez le code dans l’éditeur de code, celui-ci remet en forme le code. L’éditeur utilise les règles de mise en forme définies. Si cette option n’est pas sélectionnée, l’éditeur utilise la mise en forme d’origine du code collé.|
 
 ## <a name="new-lines"></a>Nouvelles lignes
- Ces options déterminent si l’éditeur de code place une accolade ouvrante sur une nouvelle ligne pour les fonctions et les blocs de contrôle.
 
-### <a name="uielement-list"></a>Liste des éléments d’interface
+Ces options déterminent si l’éditeur de code place une accolade ouvrante sur une nouvelle ligne pour les fonctions et les blocs de contrôle.
+
+### <a name="uielement-list"></a>Liste UIElement
 
 |Option|Description|
 |------------|-----------------|
@@ -51,9 +55,10 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 |**Placer l’accolade ouvrante sur une nouvelle ligne pour les blocs de contrôle**|Quand cette option est sélectionnée, l’éditeur de code déplace l’accolade ouvrante associée à un bloc de contrôle (tel que `if` et `while`) sur une nouvelle ligne.|
 
 ## <a name="spacing"></a>Espacement
- Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.
 
-### <a name="uielement-list"></a>Liste des éléments d’interface
+Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.
+
+### <a name="uielement-list"></a>Liste UIElement
 
 |Option|Description|
 |------------|-----------------|

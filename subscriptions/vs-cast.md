@@ -3,24 +3,22 @@ title: Avantage CAST Highlight dans les abonnements Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823680"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681208"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
-
 Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. CAST Highlight permet aux abonnés Visual Studio Enterprise d’analyser rapidement le code source de leur application pour identifier son degré de préparation au cloud avant de la migrer vers Azure et de superviser la progression de l’application pendant et après la migration.
 
 Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d’un mois à la version complète de CAST Highlight pour un maximum de cinq applications par abonné.
 
 ## <a name="activation-steps"></a>Étapes d’activation
-
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage CAST Highlight dans la catégorie « Outils », puis cliquez sur **Obtenir un code**.
@@ -39,9 +37,6 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    > Les activations de l’avantage CAST Highlight sont limitées à dix par organisation.  Si les dix activations de votre organisation sont déjà utilisées, vous ne pouvez pas activer l’avantage CAST Highlight et vous recevez un e-mail accompagné d’informations.
 
 0. Après l’envoi de vos informations, une page confirmant la réception de votre demande s’affiche.
-
-    > [!div class="mx-imgBorder"]
-    > ![Page de remerciement de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. L’équipe de CAST va évaluer votre demande et vous contactera pour finaliser la création de votre compte.
 
@@ -78,7 +73,6 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
    > Cliquez sur le lien d’activation dans l’e-mail que vous recevez.  Sinon, vous ne pourrez pas accéder à votre abonnement CAST Highlight. N’oubliez pas de vérifier vos dossiers de courrier indésirable si cet e-mail ne figure pas dans votre boîte de réception.
 
 ## <a name="eligibility"></a>Éligibilité
-
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | Évaluer 5 applications pendant 30 jours|  Non.  Disponible pour les nouveaux abonnés uniquement          |
@@ -104,7 +98,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure.
 
 Et n’oubliez pas de consulter la démonstration, le guide de l’utilisateur et les tutoriels vidéo mentionnés dans l’e-mail de Greg.

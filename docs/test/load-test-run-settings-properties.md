@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785895"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662072"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
@@ -89,9 +89,10 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Taille du pool de connexions WebTest**|Spécifie le nombre maximal de connexions à établir entre l'agent de test de charge et le serveur web. Cela s’applique uniquement au modèle **Pool de connexions**.|
 
 ## <a name="change-run-setting-properties"></a>Changer les propriétés des paramètres d’exécution
- Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charge avec divers paramètres de propriété afin de pouvoir exécuter le test de charge dans différentes conditions, par exemple, vous pouvez ajouter un nouveau paramètre de test et utiliser un taux d'échantillonnage distinct, ou vous pouvez spécifier une plus longue durée d'exécution. Vous ne pouvez utiliser qu'un seul paramètre d'exécution à la fois et vous devez spécifier le paramètre d'exécution à utiliser en le marquant comme actif. Pour voir un exemple, consultez [Comment : sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-### <a name="to-change-run-settings"></a>Pour modifier les paramètres d'exécution
+Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charge avec divers paramètres de propriété afin de pouvoir exécuter le test de charge dans différentes conditions, par exemple, vous pouvez ajouter un nouveau paramètre de test et utiliser un taux d'échantillonnage distinct, ou vous pouvez spécifier une plus longue durée d'exécution. Vous ne pouvez utiliser qu'un seul paramètre d'exécution à la fois et vous devez spécifier le paramètre d'exécution à utiliser en le marquant comme actif. Pour voir un exemple, consultez [Comment : sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+
+Pour modifier les paramètres d’exécution :
 
 1. Ouvrez un test de charge.
 
