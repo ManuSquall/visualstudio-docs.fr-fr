@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429484"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662004"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Où est le regroupement par caractéristiques dans Visual Studio 2019 ?
+Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Pour le moment, vous pouvez cliquer avec le bouton droit sur la colonne dans l’Explorateur de tests et sélectionner Colonnes. Cochez la colonne Caractéristique pour la faire apparaître dans l’Explorateur de tests. Vous pouvez désormais filtrer cette colonne en fonction des caractéristiques qui vous intéressent.
+
+![Afficher la colonne Caractéristique](media/vs-2019/trait-column.png)
+![Filtrer la colonne Caractéristique](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Découverte de tests dynamique
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195248"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533341"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Vue d’ensemble des analyseurs .NET Compiler Platform
 
@@ -80,9 +80,9 @@ La capture d’écran suivante montre la sortie de la génération en ligne de c
 
 Vous ne pouvez pas définir la gravité des règles à partir des analyseurs qui ont été installés comme une extension Visual Studio. Pour configurer la [gravité des règles](../code-quality/use-roslyn-analyzers.md#rule-severity), installez les analyseurs comme un package NuGet.
 
-### <a name="categories"></a>Categories
+## <a name="categories"></a>Categories
 
-Voici les différents types d’analyseurs qui aident à analyser votre code. 
+Voici les différents types d’analyseurs qui aident à analyser votre code :
 
 - Analyseurs recommandés par Microsoft : [Analyseurs FXCop](../code-quality/fxcop-analyzers.yml)
 - Analyseurs de l’IDE de Visual Studio : [EditorConfig](../ide/code-styles-and-code-cleanup.md)

@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552867"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493330"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mis à jour pour la [version 16.1](/visualstudio/releases/2019/release-notes/)**
+**Mis à jour pour la [version 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -102,6 +102,12 @@ Avec le lancement de Visual Studio 2019, nous faisons de Visual Studio une appl
 
 Pour plus d’informations, consultez le billet de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Une meilleure expérience sur plusieurs écrans avec Visual Studio 2019).
 
+### <a name="test-explorer"></a>Explorateur de tests
+
+**Nouveautés dans 16.2** : Nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des grands jeux de test, un filtrage plus facile, des commandes plus détectables, des vues de sélection avec onglets et des colonnes personnalisables qui vous permettent d’affiner les informations des tests qui sont affichées.
+
+   ![Capture d’écran montrant les améliorations de l’interface utilisateur dans l’Explorateur de tests](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>Collaborer
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur de la vidéo : 4,22 minutes*
@@ -178,6 +184,12 @@ Nous avons ajouté la prise en charge du ciblage des applications ASP.NET (Core 
 
 Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) et le billet de blog [Présentation du débogage avec voyage dans le temps pour Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
+### <a name="microsoft-edge-insider-support"></a>Prise en charge de Microsoft Edge Insider
+
+**Nouveautés dans 16.2** : Vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de débogage en utilisant le navigateur [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
+
+   ![Capture d’écran montrant le rendu de code JavaScript dans un navigateur](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>Étapes suivantes
 
 Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Et pour savoir ce que nous avons publié en préversion à ce jour, examinez les [Notes de publication de préversion](/visualstudio/releases/2019/release-notes-preview/).
@@ -194,9 +206,8 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Annonce de Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 pour Mac est désormais disponible](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Conférence Microsoft Build 2019](https://www.microsoft.com/build)
 * [Microsoft Connect() ; conférence en 2018](https://www.microsoft.com/connectevent)

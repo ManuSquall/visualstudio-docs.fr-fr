@@ -1,6 +1,7 @@
 ---
 title: Page Sécurité, Concepteur de projets
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -8,21 +9,21 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2115acae1e77bdacfa926c472940659c549cff65
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945490"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461301"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
-La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées avec un déploiement ClickOnce. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
  Pour accéder à la page **Sécurité**, cliquez sur un nœud de projet dans **l’Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**.
 
@@ -65,7 +66,7 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
 
  **Modifier les autorisations XML**
 
- Ouvre le modèle de manifeste de l’application (app.manifest) pour configurer les autorisations pour l’ensemble d’autorisations **(Personnalisé)**.
+ Ouvre le modèle de manifeste de l’application (app.manifest) pour configurer les autorisations pour l’ensemble d’autorisations **(Personnalisé)** .
 
  **Avancé**
 

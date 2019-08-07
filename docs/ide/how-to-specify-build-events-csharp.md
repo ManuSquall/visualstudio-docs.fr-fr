@@ -1,6 +1,7 @@
 ---
 title: 'Procédure : Spécifier des événements de build (C#)'
 ms.date: 03/21/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946906"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483706"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procédure : Spécifier des événements de build (C#)
 
@@ -37,27 +38,27 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 
 4. Dans la zone **Ligne de commande de l’événement pré-build**, spécifiez la syntaxe de l’événement de build.
 
-    > [!NOTE]
-    > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.
+   > [!NOTE]
+   > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.
 
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.
 
-    > [!NOTE]
-    > Ajoutez une instruction `call` avant toutes les commandes postbuild qui exécutent des fichiers *.bat*. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > [!NOTE]
+   > Ajoutez une instruction `call` avant toutes les commandes postbuild qui exécutent des fichiers *.bat*. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
-    > [!NOTE]
-    > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) afin d’afficher une zone d’édition.
+   > [!NOTE]
+   > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection ( **...** ) afin d’afficher une zone d’édition.
 
-     La syntaxe de l’événement de build peut inclure toute commande valide à une invite de commandes ou dans un fichier *.bat*. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.
+   La syntaxe de l’événement de build peut inclure toute commande valide à une invite de commandes ou dans un fichier *.bat*. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.
 
-    > [!NOTE]
-    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
+   > [!NOTE]
+   > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
-La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :
+La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour définir la version minimale du système d’exploitation, la commande modifie la section `<dependentOS>` du manifeste :
 
 ```xml
 <dependentOS>
@@ -83,11 +84,11 @@ La procédure suivante montre comment définir la version minimale du système d
    class Program
    {
       /// <summary>
-      /// This function will set the minimum operating system version for a ClickOnce application.
+      /// This function sets the minimum operating system version for a ClickOnce application.
       /// </summary>
       /// <param name="args">
       /// Command Line Arguments:
-      /// 0 - Path to application manifest (.exe.manifest).
+      /// 0 - Path to application manifest (.exe.manifest)
       /// 1 - Version of OS
       ///</param>
       static void Main(string[] args)
@@ -135,7 +136,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
 5. Copiez le fichier *.exe* dans un répertoire tel que *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   Ensuite, appelez cette commande dans un événement post-build pour modifier le manifeste d’application.
+Ensuite, appelez cette commande dans un événement post-build pour modifier le manifeste d’application.
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Appeler un événement post-build pour modifier le manifeste d’application
 
@@ -147,31 +148,31 @@ La procédure suivante montre comment définir la version minimale du système d
 
 4. Publiez le projet en cliquant sur **Publier maintenant**.
 
-     Le fichier manifeste est généré et enregistré dans *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Pour consulter le manifeste, cliquez avec le bouton droit sur le fichier, cliquez sur **Ouvrir avec**, sélectionnez **Sélectionner le programme dans une liste**, puis cliquez sur **Bloc-notes**.
+   Le fichier manifeste est généré et enregistré dans *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Pour consulter le manifeste, cliquez avec le bouton droit sur le fichier, cliquez sur **Ouvrir avec**, sélectionnez **Sélectionner le programme dans une liste**, puis cliquez sur **Bloc-notes**.
 
-     Recherchez l’élément `<osVersionInfo>` dans le fichier. Par exemple, la version peut être :
+   Recherchez l’élément `<osVersionInfo>` dans le fichier. Par exemple, la version peut être :
 
-    ```xml
-    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+   ```
 
 5. De retour dans le **Concepteur de projet**, cliquez sur l’onglet **Événements de build**, puis sur **Modifier post-build**.
 
-6. Dans la zone **Ligne de commande de l’événement post-build**, tapez la commande suivante :
+6. Dans la zone **Ligne de commande de l’événement post-build**, entrez la commande suivante :
 
-     `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
+   `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Quand vous générez le projet, cette commande change la version minimale du système d’exploitation dans le manifeste d’application en 5.1.2600.0.
+   Quand vous générez le projet, cette commande change la version minimale du système d’exploitation dans le manifeste d’application en 5.1.2600.0.
 
-     Dans la mesure où la macro `$(TargetPath)` exprime le chemin complet du fichier exécutable en cours de création, `$(TargetPath)`*.manifest* spécifie le manifeste de l’application créé dans le répertoire *bin*. La publication copie ce manifeste à l’emplacement de publication que vous avez défini.
+   Dans la mesure où la macro `$(TargetPath)` exprime le chemin complet du fichier exécutable à créer, `$(TargetPath).manifest` spécifie le manifeste de l’application créé dans le répertoire *bin*. La publication copie ce manifeste à l’emplacement de publication que vous avez défini.
 
 7. Republiez le projet.
 
-     La version du manifeste doit maintenant se présenter comme suit :
+   La version du manifeste doit maintenant se présenter comme suit :
 
-    ```xml
-    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+   ```
 
 ## <a name="see-also"></a>Voir aussi
 

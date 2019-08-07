@@ -1,21 +1,22 @@
 ---
 title: 'Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262936"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461535"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
 
@@ -47,7 +48,7 @@ Visual Studio, avec la charge de travail **Développement Desktop .NET**.
 
 ## <a name="install-software-on-the-computers"></a>Installer le logiciel sur les ordinateurs
 
-Configurez tout d’abord l’ordinateur hôte, puis l’ordinateur de build.
+Configurez d’abord l’ordinateur hôte, puis l’ordinateur de build.
 
 En installant Visual Studio sur l’ordinateur hôte, vous créez des fichiers et des paramètres que vous copierez ultérieurement sur l’ordinateur de build. Vous pouvez installer Visual Studio sur un ordinateur x86 ou x64, mais l’architecture de l’ordinateur de build doit correspondre à l’architecture de l’ordinateur hôte.
 

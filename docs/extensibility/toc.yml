@@ -830,6 +830,8 @@
   items:
     - name: Créer un Kit de développement logiciel
       href: creating-a-software-development-kit.md
+    - name: SDK et package NuGet
+      href: nuget-versus-sdk-references.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic"
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C++"

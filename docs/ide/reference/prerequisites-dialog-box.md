@@ -1,22 +1,23 @@
 ---
 title: Composants requis, boîte de dialogue
 ms.date: 06/29/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746485"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533380"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 
@@ -36,6 +37,9 @@ Pour accéder à la boîte de dialogue, sélectionnez un nœud de projet dans l�
 |**Télécharger les composants requis à partir de l’emplacement de mon application**|Fait en sorte que les composants requis soient installés à partir du même emplacement que l'application. Copie tous les packages de composants requis à l'emplacement de publication. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
 |**Télécharger les composants requis depuis l’emplacement suivant**|Fait en sorte que les composants requis soient installés à partir de l’emplacement que vous entrez. Vous pouvez utiliser le bouton **Parcourir** pour sélectionner un emplacement.|
 
+> [!NOTE]
+> Pour plus d’informations sur l’emplacement des prérequis, consultez [Créer des packages de programme d’amorçage](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
+
 ## <a name="prerequisites-information"></a>Informations sur les composants requis
 
 Les composants requis qui apparaissent dans la boîte de dialogue **Composants requis** peuvent différer de ceux de la liste suivante. Les packages de prérequis répertoriés dans la **boîte de dialogue Composants requis** sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez ultérieurement le framework cible du projet, vous devrez sélectionner manuellement les composants requis pour qu’ils correspondent à la nouvelle version cible du framework.
@@ -45,7 +49,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 |**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
-|**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications de bureau, applications serveur ou applications Web. Il peut être utilisé gratuitement pour le développement et la production.|
+|**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, qui est une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications web, de serveur ou de poste de travail. Il peut être utilisé gratuitement pour le développement et la production.|
 |**SQL Server 2012 Express**|Ce package installe Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Ce package installe SQL Server 2012 Express LocalDB.|
 |**Bibliothèques Runtime Visual C++ "14" (ARM)**|Ce package installe les bibliothèques Runtime Visual C++ pour l'architecture Intel Itanium, qui fournit des routines de programmation pour le système d'exploitation Microsoft Windows. Ces routines automatisent de nombreuses tâches de programmation courantes qui ne sont pas fournies par les langages C et C++.<br /><br /> Pour plus d’informations, consultez [Référence sur les bibliothèques Runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|

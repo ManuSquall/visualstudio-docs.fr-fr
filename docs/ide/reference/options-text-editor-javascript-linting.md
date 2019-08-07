@@ -1,32 +1,32 @@
 ---
 title: Options, Éditeur de texte, JavaScript, Linting
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Linting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Linting
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cd522da1d29ce7f9a58737fc44ecec0909ed1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778337"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605968"
 ---
-# <a name="options-text-editor-javascript-linting"></a>Options, Éditeur de texte, JavaScript, Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Boîte de dialogue Options : Éditeur de texte \> JavaScript/TypeScript \> Vérification (linting)
 
-Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript** > **Linting**.
+Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript/TypeScript** > **Vérification (linting)** .
 
 ## <a name="eslint-settings"></a>Paramètres d’ESLint
 
-Ces options vous permettent d’activer l’analyse statique du code JavaScript et choisir quels fichiers sont analysés. Pour plus d’informations sur ESLint, consultez [ESLint.org](https://eslint.org/).
+Ces options vous permettent d’activer l’analyse statique du code JavaScript et TypeScript, et de choisir quels fichiers sont analysés. Pour plus d’informations sur ESLint, consultez [ESLint.org](https://eslint.org/).
 
 ### <a name="uielement-list"></a>Liste UIElement
 

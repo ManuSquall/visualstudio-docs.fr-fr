@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953294"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606081"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -27,24 +27,24 @@ Vous pouvez choisir une collection de paramètres par défaut qui optimise Visua
 
 ## <a name="general-environment-options"></a>Options générales liées à l’environnement
 
-Beaucoup d’options de personnalisation sont également exposées dans la boîte de dialogue [Options d’environnement](../ide/reference/environment-options-dialog-box.md). Vous pouvez accéder à cette boîte de dialogue de deux manières :
+Beaucoup d’options de personnalisation sont également exposées dans la boîte de dialogue [Options d’environnement](../ide/reference/general-environment-options-dialog-box.md). Vous pouvez accéder à cette boîte de dialogue de deux manières :
 
 - Dans la barre de menus, choisissez **Outils** > **Options** et, si ce n’est pas déjà fait, développez le nœud **Environnement**.
 
-- Appuyez sur **Ctrl**+**Q**, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement--> Général** dans les résultats.
+- Appuyez sur **Ctrl**+**Q**, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement > Général** dans les résultats.
 
 > [!TIP]
 > Quand la boîte de dialogue Options s’affiche, appuyez sur **F1** pour obtenir de l’aide sur les paramètres de cette page.
 
 ## <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement
 
-Pour changer le thème de couleur de l’environnement (clair, foncé ou bleu), tapez **environnement** dans la zone de recherche, puis choisissez **Environnement --> Général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
+Pour changer le thème de couleur de l’environnement (clair, foncé ou bleu), tapez **environnement** dans la zone de recherche, puis choisissez **Environnement > Général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
 
-Pour changer les options de colorisation dans l’éditeur, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement --> Polices et couleurs**. Voir [Guide pratique pour changer les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Pour changer les options de colorisation dans l’éditeur, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement > Polices et couleurs**. Voir [Guide pratique pour changer les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Casse du menu principal
 
-Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez **environnement** dans la zone de recherche, sélectionnez **Environnement --> Général**, puis changez l’option **Appliquer le style 1re lettre des mots en majuscule à la barre de menus**.
+Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez **environnement** dans la zone de recherche, sélectionnez **Environnement > Général**, puis changez l’option **Mettre la 1ère lettre des mots en maj. dans la barre de menus**.
 
 ### <a name="customize-menus-and-toolbars"></a>Personnaliser des menus et des barres d’outils
 

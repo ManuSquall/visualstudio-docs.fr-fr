@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132151"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661907"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procédure : Écrire des tests unitaires pour des DLL C++
 
@@ -88,7 +88,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2019.
 
-1. Créez un projet C++ avec l’**Assistant Windows Desktop** : Cliquez avec le bouton droit sur le nom de la solution dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**. Définissez le **Langage** sur C++, puis tapez « windows » dans la zone de recherche. Choisissez **Assistant Windows Desktop** dans la liste des résultats. 
+1. Créez un projet C++ avec l’**Assistant Windows Desktop** : Cliquez avec le bouton droit sur le nom de la solution dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**. Définissez le **Langage** sur C++, puis tapez « windows » dans la zone de recherche. Choisissez **Assistant Windows Desktop** dans la liste des résultats.
 
      Dans cette procédure pas à pas, le projet se nomme `RootFinder`.
 
@@ -321,10 +321,21 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 6. Toutes les tests réussissent maintenant.
 
-     ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
+   ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests dans le menu Paramètres de la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+
+::: moniker-end
 
 ## <a name="refactor"></a> Refactoriser le code sans modifier les tests
 
@@ -353,7 +364,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 - **Tests d’archivage.** Vous pouvez imposer que certains tests soient effectués avant que chaque membre de l'équipe n'archive le code dans le contrôle de code source. Il s'agit généralement d'un sous-ensemble de l'ensemble complet des tests de vérification de build.
 
-     Vous pouvez également imposer un niveau minimal de couverture du code.
+   Vous pouvez également imposer un niveau minimal de couverture du code.
 
 ## <a name="see-also"></a>Voir aussi
 

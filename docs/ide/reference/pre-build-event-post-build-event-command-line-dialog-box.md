@@ -1,6 +1,7 @@
 ---
 title: Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,46 +29,49 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969057"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461316"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
+
 Vous pouvez taper des événements pré-build ou post-build pour la [page Événements de build du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directement dans la zone d’édition, ou vous pouvez sélectionner des macros pré-build et post-build dans une liste de macros disponibles.
 
 > [!NOTE]
 > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.
 
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
- **Zone d’édition de la ligne de commande**
 
- Contient les événements à exécuter avant ou après la génération.
+**Zone d’édition de la ligne de commande**
+
+Contient les événements à exécuter avant ou après la génération.
 
 > [!NOTE]
 > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
- **Macros**
+**Macros**
 
- Développe la zone d’édition pour afficher une liste de macros à insérer dans la zone d’édition de la ligne de commande.
+Développe la zone d’édition pour afficher une liste de macros à insérer dans la zone d’édition de la ligne de commande.
 
- **Table de macros**
+**Table de macros**
 
- Répertorie les macros disponibles et leur valeur. Consultez Macros ci-dessous pour obtenir une description de chacune. Vous pouvez sélectionner une seule macro à la fois pour l’insérer dans la zone d’édition de la ligne de commande.
+Répertorie les macros disponibles et leur valeur. Consultez Macros ci-dessous pour obtenir une description de chacune. Vous pouvez sélectionner une seule macro à la fois pour l’insérer dans la zone d’édition de la ligne de commande.
 
- **Insert**
+**Insert**
 
- Insère dans la zone d’édition de la ligne de commande la macro sélectionnée dans la table de macros.
+Insère dans la zone d’édition de la ligne de commande la macro sélectionnée dans la table de macros.
 
 ### <a name="macros"></a>Macros
- Vous pouvez utiliser l’une de ces macros pour spécifier des emplacements de fichiers ou obtenir le nom du fichier d’entrée dans le cas de plusieurs sélections. Ces macros ne respectent pas la casse.
+
+Vous pouvez utiliser l’une de ces macros pour spécifier des emplacements de fichiers ou obtenir le nom du fichier d’entrée dans le cas de plusieurs sélections. Ces macros ne respectent pas la casse.
 
 |Macro|Description|
 |-----------|-----------------|

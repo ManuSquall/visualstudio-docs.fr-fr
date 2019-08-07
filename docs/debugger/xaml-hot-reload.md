@@ -1,8 +1,7 @@
 ---
 title: Écrire et déboguer du code XAML à l’aide du rechargement à chaud XAML
 description: Le rechargement à chaud XAML, ou modifier & Continuer XAML, vous permet d’apporter des modifications à votre code XAML pendant l’exécution des applications
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711220"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822146"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
-Le rechargement à chaud de Visual Studio XAML vous aide à générer votre interface utilisateur WPF ou application UWP en vous permettant d’apporter des modifications au code XAML pendant que votre application est en cours d’exécution. Cette fonctionnalité vous permet de générer et de tester de façon incrémentielle du code XAML avec l’avantage du contexte de données de l’application en cours d’exécution, de l’état d’authentification et d’autres complexités réalistes qui sont difficiles à simuler au moment du Design.
+Le rechargement à chaud XAML vous permet de générer votre interface utilisateur de l’application WPF ou UWP en vous permettant d’apporter des modifications au code XAML pendant que votre application est en cours d’exécution. Le rechargement à chaud est disponible à la fois dans Visual Studio et Blend pour Visual Studio. Cette fonctionnalité vous permet de générer et de tester de façon incrémentielle du code XAML avec l’avantage du contexte de données de l’application en cours d’exécution, de l’état d’authentification et d’autres complexités réalistes qui sont difficiles à simuler au moment du Design.
 
 Le rechargement à chaud XAML est particulièrement utile dans les scénarios suivants:
 
@@ -35,7 +34,7 @@ Le rechargement à chaud XAML est particulièrement utile dans les scénarios su
 |Applications Windows universelles (UWP)|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Le rechargement à chaud de Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio avec le débogueur attaché (**F5** ou **Démarrer**le débogage). Vous ne pouvez pas activer cette expérience à l’aide de l' *attachement au processus*.
+> Le rechargement à chaud de Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio ou Blend pour Visual Studio avec le débogueur attaché (**F5** ou **Démarrer**le débogage). Vous ne pouvez pas activer cette expérience à l’aide de l' [attachement au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ## <a name="known-limitations"></a>Limites connues
 
@@ -44,7 +43,7 @@ Voici les limitations connues du rechargement à chaud XAML. Pour contourner tou
 |Limitation|WPF|UWP|Notes|
 |-|-|-|-|
 |Câblage des événements aux contrôles pendant l’exécution de l’application|Non pris en charge|Non pris en charge|Voir l’erreur: *Vérifier l’échec de l’événement*|
-|Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Non pris en charge|Pris en charge|Exemple: ajout d' ```SolidColorBrush``` un dans un dictionnaire de ressources pour une ```StaticResource```utilisation en tant que.</br>Remarque : Les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété ```Source``` du dictionnaire de ressources.| 
+|Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Non pris en charge|Pris en charge|Exemple: ajout d' `SolidColorBrush` un dans un dictionnaire de ressources pour une `StaticResource`utilisation en tant que.</br>Remarque : Les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété `Source` du dictionnaire de ressources.|
 |Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non pris en charge|Non pris en charge|Aucun|
 |Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non pris en charge|Non pris en charge|Aucun|
 |Modification de la liaison de données qui utilise l’extension de balisage {x:Bind}|N/A|Pris en charge dans Visual Studio 2019 et versions ultérieures|Non pris en charge dans Visual Studio 2017 ou versions antérieures|
