@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810565"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870517"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d'une transformation de texte dans une extension VS
-Si vous écrivez une extension de Visual Studio comme une commande de menu ou [langage spécifique à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), vous pouvez utiliser le service de création de modèles de texte pour transformer les modèles de texte. Obtenez le service <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> et effectuez le cast de celui-ci en <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+# <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Appeler la transformation de texte dans une extension Visual Studio
 
-## <a name="getting-the-text-templating-service"></a>Obtention du service de création de modèles de texte
+Si vous écrivez une extension Visual Studio telle qu’une commande de menu ou un [langage spécifique](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)à un domaine, vous pouvez utiliser le service de création de modèles de texte pour transformer des modèles de texte. Récupérez le service [STextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932394(v=vs.110)) et effectuez un cast de celui-ci en [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+
+## <a name="get-the-text-templating-service"></a>Obtient le service de création de modèles de texte
 
 ```csharp
 using Microsoft.VisualStudio.TextTemplating;
@@ -33,16 +34,17 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
 ```
 
-## <a name="passing-parameters-to-the-template"></a>Transmission des paramètres au modèle
+## <a name="pass-parameters-to-the-template"></a>Passer des paramètres au modèle
+
  Vous pouvez passer des paramètres dans le modèle. À l'intérieur du modèle, vous pouvez obtenir les valeurs de paramètre à l'aide de la directive `<#@parameter#>`.
 
- Pour le type d'un paramètre, vous devez utiliser un type qui est sérialisable ou qui peut être marshalé. Autrement dit, le type doit être déclaré avec <xref:System.SerializableAttribute>, ou il doit être dérivé de <xref:System.MarshalByRefObject>. Cette restriction est nécessaire car le modèle de texte est exécuté dans un AppDomain séparé. Tous les types intégrés tels que **System.String** et **System.Int32** sont sérialisables.
+ Pour le type d'un paramètre, vous devez utiliser un type qui est sérialisable ou qui peut être marshalé. Autrement dit, le type doit être déclaré avec <xref:System.SerializableAttribute>, ou il doit être dérivé de <xref:System.MarshalByRefObject>. Cette restriction est nécessaire car le modèle de texte est exécuté dans un AppDomain séparé. Tous les types intégrés, tels que **System. String** et **System. Int32** , sont sérialisables.
 
  Pour passer des valeurs de paramètre, le code appelant peut placer des valeurs dans le dictionnaire `Session` ou dans le <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
  L'exemple suivant utilise les deux méthodes pour transformer un modèle de test court :
 
-```
+```csharp
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 ...
@@ -73,10 +75,11 @@ string result = t4.ProcessTemplate("",
 //     Test: Hello    07/06/2010 12:37:45    42
 ```
 
-## <a name="error-reporting-and-the-output-directive"></a>Rapport d'erreurs et directive de sortie
- Toutes les erreurs qui surviennent pendant le traitement seront affichera dans la fenêtre d’erreurs Visual Studio. De plus, vous pouvez être informé des erreurs en spécifiant un rappel qui implémente <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
+## <a name="error-reporting-and-the-output-directive"></a>Rapport d’erreurs et directive de sortie
 
- Si vous souhaitez écrire la chaîne de résultat dans un fichier, vous souhaitez peut-être connaître l’extension de fichier et l’encodage spécifiés dans la directive `<#@output#>` dans le modèle. Ces informations seront également passées à votre rappel. Pour plus d’informations, consultez [Directive de sortie T4](../modeling/t4-output-directive.md).
+Toutes les erreurs qui se produisent pendant le traitement s’affichent dans la fenêtre d’erreur de Visual Studio. En outre, vous pouvez être averti des erreurs en spécifiant un rappel qui implémente [ITextTemplatingCallback](/previous-versions/visualstudio/visual-studio-2012/bb932397(v=vs.110)).
+
+Si vous souhaitez écrire la chaîne de résultat dans un fichier, vous souhaitez peut-être connaître l’extension de fichier et l’encodage spécifiés dans la directive `<#@output#>` dans le modèle. Ces informations seront également passées à votre rappel. Pour plus d’informations, consultez [directive de sortie T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)
@@ -118,7 +121,7 @@ class T4Callback : ITextTemplatingCallback
 }
 ```
 
- Le code peut être testé avec un fichier modèle semblable au suivant :
+Le code peut être testé avec un fichier modèle semblable au suivant :
 
 ```
 <#@output extension=".htm" encoding="ASCII"#>
@@ -127,14 +130,16 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- L’avertissement du compilateur apparaîtront dans la fenêtre d’erreur de Visual Studio, et il génère également un appel à `ErrorCallback`.
+L’avertissement du compilateur apparaît dans la fenêtre d’erreur de Visual Studio et génère également un appel à `ErrorCallback`.
 
 ## <a name="reference-parameters"></a>Paramètres de référence
- Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une classe de paramètre dérivée de <xref:System.MarshalByRefObject>.
 
-## <a name="related-topics"></a>Rubriques connexes
- Pour générer du texte à partir d'un modèle de texte prétraité : Appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une classe de paramètre dérivée de <xref:System.MarshalByRefObject>.
 
- Pour générer du texte en dehors d’une extension Visual Studio : Définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+## <a name="related-articles"></a>Articles connexes
 
- Pour générer du code source qui peut ensuite être compilé et exécuté : Appelez la méthode `t4.PreprocessTemplate()` de <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
+Pour générer du texte à partir d'un modèle de texte prétraité : Appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+
+Pour générer du texte en dehors d’une extension Visual Studio: Définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+
+Pour générer du code source qui peut ensuite être compilé et exécuté : Appelez la méthode [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

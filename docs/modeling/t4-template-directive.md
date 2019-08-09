@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856385"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870503"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
-Un modèle de texte Visual Studio T4 commence généralement par un `template` directive, qui spécifie comment le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
+Un modèle de texte T4 de Visual Studio commence généralement `template` par une directive, qui spécifie la façon dont le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
 
-Pour obtenir une vue d’ensemble de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Utilisation de la directive du modèle
 
@@ -72,9 +72,9 @@ Valeurs valides :
 
 Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
-Pour les modèles au moment du design le fichier de code intermédiaire sera écrit pour votre **%temp%** directory.
+Pour les modèles au moment du design, le fichier de code intermédiaire sera écrit dans votre répertoire **% temp%** .
 
-Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, puis ouvrez le menu contextuel du modèle de texte dans l’Explorateur de solutions et choisissez **déboguer le modèle T4**.
+Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez déboguer le **modèle T4**.
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
 
@@ -92,11 +92,11 @@ Valeurs valides :
 
 `trueFromBase`
 
-Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l'hôte du moteur de transformation, et est déclarée comme <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.
+Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l’hôte du moteur de transformation et est déclarée en tant que [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.
 
-Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Il s’applique aux [les modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+Lorsque `hostspecific` `this.Host` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Valeurs valides :
 
 `VB`
 
-Le `language` attribut spécifie la langue ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) à utiliser pour le code source dans les blocs d’instruction et une expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
+L' `language` attribut spécifie le langage[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ( [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]ou) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
 Exemple :
 
@@ -156,7 +156,7 @@ Vous pouvez spécifier que le code du programme de votre modèle peut hériter d
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Héritage dans un modèle de texte au moment de l'exécution (prétraité)
 
-Vous pouvez utiliser l'héritage entre les modèles de texte au moment de l'exécution pour créer un modèle de base avec plusieurs variantes dérivées. Modèles d’exécution sont celles qui ont le **un outil personnalisé** propriété définie sur **TextTemplatingFilePreprocessor**. Un modèle au moment de l'exécution génère du code que vous pouvez appeler dans votre application pour créer le texte défini dans le modèle. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Vous pouvez utiliser l'héritage entre les modèles de texte au moment de l'exécution pour créer un modèle de base avec plusieurs variantes dérivées. Les modèles au moment de l’exécution sont ceux dont la propriété **outil personnalisé** est définie sur **valeur TextTemplatingFilePreprocessor**. Un modèle au moment de l'exécution génère du code que vous pouvez appeler dans votre application pour créer le texte défini dans le modèle. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Si vous ne spécifiez pas d'attribut `inherits`, une classe de base et une classe dérivée sont générées à partir de votre modèle de texte. Lorsque vous spécifiez un attribut `inherits`, seule la classe dérivée est générée. Vous pouvez écrire une classe de base manuellement, mais elle doit fournir les méthodes utilisées par la classe dérivée.
 
@@ -222,7 +222,7 @@ A common central text.
 This is the common footer.
 ```
 
-Vous pouvez générer les classes de base et les classes dérivées dans des projets différents. Pensez à ajouter l’assembly ou le projet de base pour les références du projet dérivé.
+Vous pouvez générer les classes de base et les classes dérivées dans des projets différents. N’oubliez pas d’ajouter le projet ou l’assembly de base aux références du projet dérivé.
 
 Vous pouvez également utiliser une classe écrite manuellement ordinaire comme classe de base. La classe de base doit fournir les méthodes utilisées par la classe dérivée.
 
@@ -231,15 +231,15 @@ Vous pouvez également utiliser une classe écrite manuellement ordinaire comme 
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Héritage dans un modèle de texte au moment du design
 
-Un modèle de texte au moment du design est un fichier pour lequel **un outil personnalisé** a la valeur **TextTemplatingFileGenerator**. Le modèle génère un fichier de sortie de code ou de texte, ce qui constitue une partie de votre projet Visual Studio. Pour générer le fichier de sortie, le modèle est d'abord traduit en fichier de code du programme intermédiaire, que vous ne voyez normalement pas. L'attribut `inherits` spécifie la classe de base pour ce code intermédiaire.
+Un modèle de texte au moment du design est un fichier pour lequel l' **outil personnalisé** est défini sur **TextTemplatingFileGenerator**. Le modèle génère un fichier de sortie de code ou de texte, qui fait partie de votre projet Visual Studio. Pour générer le fichier de sortie, le modèle est d'abord traduit en fichier de code du programme intermédiaire, que vous ne voyez normalement pas. L'attribut `inherits` spécifie la classe de base pour ce code intermédiaire.
 
 Pour un modèle de texte au moment du design, vous pouvez spécifier toute classe de base dérivée de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilisez la directive `<#@assembly#>` pour charger l'assembly ou le projet qui contient la classe de base.
 
-Pour plus d’informations, consultez [« L’héritage dans modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Pour plus d’informations, consultez [«héritage dans les modèles de texte» dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
-## <a name="linepragmas-attribute"></a>Attribut LinePragmas
+## <a name="linepragmas-attribute"></a>attribut linePragmas
 
-Exemple :
+Exemple :
 
 `linePragmas="false"`
 
@@ -251,11 +251,11 @@ Valeurs valides :
 
 L'assignation de la valeur false à cet attribut permet de supprimer les balises qui identifient les numéros de ligne dans le code généré. Cela signifie que le compilateur signale toutes les erreurs en utilisant les numéros de ligne du code généré. Cela vous donne davantage d'options de débogage, car vous pouvez choisir de déboguer le modèle de texte ou le code généré.
 
-Cet attribut peut également utile si vous ne trouvez que les noms de fichiers absolus dans les pragmas sont à l’origine des fusions perturbante sous contrôle de code source.
+Cet attribut peut également être utile si vous recherchez les noms de fichiers absolus dans les pragmas qui entraînent des fusions gênantes sous le contrôle de code source.
 
-## <a name="visibility-attribute"></a>Attribut de visibilité
+## <a name="visibility-attribute"></a>attribut Visibility
 
-Exemple :
+Exemple :
 
 `visibility="internal"`
 
