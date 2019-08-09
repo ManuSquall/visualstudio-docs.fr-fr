@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822146"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870998"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
@@ -53,7 +53,7 @@ Voici les limitations connues du rechargement à chaud XAML. Pour contourner tou
 Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du rechargement à chaud XAML.
 
 |Message d’erreur|Description|
-|-|-|-|
+|-|-|
 |Vérifier l’échec de l’événement|L’erreur indique que vous tentez de connecter un événement à l’un de vos contrôles, ce qui n’est pas pris en charge pendant l’exécution de votre application.|
 |La commande XAML Modifier et continuer n'a trouvé aucun élément à mettre à jour.|Une erreur se produit lorsque vous modifiez du code XAML que le rechargement à chaud ne peut pas mettre à jour dans votre application.</br> Cette erreur peut parfois être corrigée à l’aide de votre application en cours d’exécution pour accéder à une vue où le code XAML est utilisé.</br> Parfois, cette erreur signifie que la modification spécifique ne peut pas être appliquée tant que vous n’avez pas redémarré la session de débogage. |
 |Ce changement n'est pas pris en charge durant une session de débogage.|L’erreur indique que la modification que vous tentez d’effectuer n’est pas prise en charge par le rechargement à chaud XAML. Arrêtez la session de débogage, apportez la modification, puis redémarrez la session de débogage.|

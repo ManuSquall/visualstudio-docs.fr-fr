@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00957e742f5731d43881df4f0ff9e18bfd7cf773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3df1139f34c17055703b1ffcbbe2711d5750b9a8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555567"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870048"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procédure : Utiliser le SDK des marqueurs du visualiseur concurrentiel
 
@@ -90,7 +90,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Vous créez un <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> objet en appelant le statique ([EnterSpan]<!-- TODO: review code entity reference <xref:assetId:///EnterSpan?qualifyHint=False&amp;autoUpgrade=True>  -->) (méthode). Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
+3. Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Vous créez un objet [span](/previous-versions/hh694189(v=vs.140)) en appelant la méthode `EnterSpan` statique. Pour écrire dans la série par défaut, vous utilisez les méthodes d’écriture statiques de la classe [markers](/previous-versions/hh694099(v=vs.140)) .
 
     ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
@@ -132,7 +132,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
      ![Visualiseur concurrentiel avec des marqueurs et des alertes](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Ajoutez du code pour créer une série de marqueurs de client à l’aide de la méthode statique <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. La classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.
+5. Ajoutez du code pour créer une série de marqueurs client à l’aide de la méthode statique [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)) . La classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.
 
     ```vb
     Dim flagSeries As MarkerSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series")

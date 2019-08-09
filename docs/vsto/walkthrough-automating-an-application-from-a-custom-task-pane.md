@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé'
+title: 'Procédure pas à pas : Automatiser une application à partir d’un volet de tâches personnalisé'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38245a3c16c79806f495b76a0ae0d64b55c05623
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438724"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871938"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : Automatiser une application à partir d’un volet Office personnalisé
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : Automatiser une application à partir d’un volet de tâches personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63438724"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1. Créez un projet de complément PowerPoint VSTO nommé **MyAddIn**, en utilisant le modèle de projet de complément PowerPoint. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de complément PowerPoint VSTO nommé **MyAddIn**, en utilisant le modèle de projet de complément PowerPoint. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** , et ajoute le projet **MyAddIn** à l’ **Explorateur de solutions**.
 
@@ -82,12 +82,12 @@ ms.locfileid: "63438724"
 
      Le fichier **MyUserControl.cs** ou **MyUserControl.vb** s’ouvre, et un gestionnaire d’événements est créé pour l’événement <xref:System.Windows.Forms.MonthCalendar.DateChanged> .
 
-2. Ajoutez le code suivant en haut du fichier. Ce code crée des alias pour les espaces de noms <xref:Microsoft.Office.Core> et <xref:Microsoft.Office.Interop.PowerPoint> .
+2. Ajoutez le code suivant en haut du fichier. Ce code crée des alias pour les <xref:Microsoft.Office.Core> espaces de noms et [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet <xref:Microsoft.Office.Interop.PowerPoint.Shape> en tant que membre de `MyUserControl`. À l’étape suivante, vous allez utiliser <xref:Microsoft.Office.Interop.PowerPoint.Shape> pour ajouter une zone de texte à une diapositive de la présentation active.
+3. Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) en tant que membre de `MyUserControl`. À l’étape suivante, vous allez utiliser cette [forme](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) pour ajouter une zone de texte à une diapositive de la présentation active.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -99,7 +99,7 @@ ms.locfileid: "63438724"
 
 5. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **MyAddIn** , puis cliquez sur **Générer**. Vérifiez que le projet se génère sans erreur.
 
-## <a name="display-the-custom-task-pane"></a>Afficher le volet Office personnalisé
+## <a name="display-the-custom-task-pane"></a>Afficher le volet des tâches personnalisé
  Pour afficher le volet Office personnalisé quand le complément VSTO démarre, ajoutez le contrôle utilisateur au volet Office dans le gestionnaire d’événements <xref:Microsoft.Office.Tools.AddIn.Startup> du complément VSTO.
 
 ### <a name="to-display-the-custom-task-pane"></a>Pour afficher le volet Office personnalisé
@@ -134,14 +134,14 @@ ms.locfileid: "63438724"
 ## <a name="next-steps"></a>Étapes suivantes
  Pour en savoir plus sur la création de volets Office personnalisés, consultez les rubriques suivantes :
 
-- Créer un volet Office personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge des volets de tâches personnalisés, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
+- Créez un volet de tâches personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge les volets de tâches personnalisés, consultez volets de [tâches personnalisés](../vsto/custom-task-panes.md).
 
-- Créer un bouton de ruban qui permet de masquer ou d’afficher un volet Office personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Synchroniser un volet Office personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Créer un bouton de ruban qui permet de masquer ou d’afficher un volet Office personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Synchroniser un volet de tâches personnalisé avec un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)bouton de ruban.
 
-- Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
+- Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [Procédure pas à pas : Affichez les volets des tâches personnalisés avec des](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)messages électroniques dans Outlook.
 
 ## <a name="see-also"></a>Voir aussi
-- [Volets Office personnalisés](../vsto/custom-task-panes.md)
-- [Guide pratique pour Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Procédure pas à pas : Synchroniser un volet Office personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Volets des tâches personnalisés](../vsto/custom-task-panes.md)
+- [Guide pratique : Ajouter un volet de tâches personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Procédure pas à pas : Synchroniser un volet de tâches personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Procédure pas à pas : Afficher des volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
