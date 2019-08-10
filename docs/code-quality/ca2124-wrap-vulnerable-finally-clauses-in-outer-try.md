@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796794"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920802"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124 : Incluez dans un wrapper les clauses finally vulnérables dans un bloc try externe
 
@@ -27,23 +27,23 @@ ms.locfileid: "62796794"
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Dans les versions 1.0 et 1.1 du .NET Framework, une méthode publique ou protégée contient un `try` / `catch` / `finally` bloc. Le `finally` bloc semble réinitialiser l’état de sécurité et n’est pas placé dans un `finally` bloc.
+Dans les versions 1,0 et 1,1 du .NET Framework, une méthode publique ou protégée contient un `try` / / `catch` `finally` bloc. Le `finally` bloc semble réinitialiser l’état de sécurité et n’est pas placé `finally` dans un bloc.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle localise `try` / `finally` blocs dans le code qui cible les versions 1.0 et 1.1 du .NET Framework qui peuvent être vulnérables aux filtres d’exception malveillants présents dans la pile des appels. Si des opérations sensibles telles que l’emprunt d’identité se produisent dans le bloc try, et une exception est levée, le filtre peut s’exécuter avant le `finally` bloc. Pour l’exemple d’emprunt d’identité, cela signifie que le filtre s’exécuterait comme l’utilisateur avec emprunt d’identité. Les filtres sont actuellement uniquement applicables en Visual Basic.
+Cette règle localise `try` / dans le code les blocsquiciblentlesversions1,0et1,1du.NETFrameworkquipeuventêtrevulnérablesauxfiltresd’exceptionsmalveillantsprésentsdanslapiledesappels.`finally` Si des opérations sensibles telles que l’emprunt d’identité se produisent dans le bloc try et qu’une exception est levée, le filtre peut `finally` s’exécuter avant le bloc. Pour l’exemple d’emprunt d’identité, cela signifie que le filtre s’exécute en tant qu’utilisateur avec emprunt d’identité. Les filtres peuvent actuellement être implémentés uniquement dans Visual Basic.
 
 > [!NOTE]
-> Dans les versions 2.0 et ultérieures du .NET Framework, le runtime protège automatiquement un `try` / `catch` /  `finally` empêcher des filtres d’exception malveillants, si la réinitialisation se produit directement dans la méthode qui contient le bloc d’exception.
+> Dans les versions 2,0 et ultérieures de l' .NET Framework, le runtime protège `try` automatiquement un /  / `catch` `finally` bloc contre les filtres d’exceptions malveillants, si la réinitialisation se produit directement dans la méthode qui contient le bloc d’exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Placez le texte désencapsulé `try` / `finally` dans un bloc try externe. Consultez le deuxième exemple qui suit. Cela force le `finally` s’exécute avant le code de filtre.
+Placez le désencapsulage `try` / `finally` dans un bloc try externe. Consultez le deuxième exemple qui suit. Cela force le `finally` à s’exécuter avant le code de filtre.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="pseudo-code-example"></a>Exemple de pseudo-code
 
@@ -63,7 +63,7 @@ finally {
 }
 ```
 
-Le pseudo-code suivant illustre le modèle que vous pouvez utiliser pour protéger votre code et satisfaire cette règle.
+Le pseudo-code suivant illustre le modèle que vous pouvez utiliser pour protéger votre code et satisfaire à cette règle.
 
 ```csharp
 try {

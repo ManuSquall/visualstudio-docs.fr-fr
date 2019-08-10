@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5ab1fac368f1da1ceea39df19b198a22d999c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808287"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921130"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109 : Passez en revue les gestionnaires d'événements visibles
 
@@ -27,39 +27,39 @@ ms.locfileid: "62808287"
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode de gestion d’événements publique ou protégée a été détectée.
+Une méthode de gestion d’événements publique ou protégée a été détectée.
 
 ## <a name="rule-description"></a>Description de la règle
- Une méthode visible de l’extérieur de la gestion des événements présente un problème de sécurité qui requiert une révision.
+Une méthode de gestion des événements visible de l’extérieur présente un problème de sécurité qui nécessite une révision.
 
-N’exposez pas les méthodes de gestion des événements, sauf si cela est absolument nécessaire. Un gestionnaire d’événements, un type délégué, qui appelle la méthode exposée peut être ajouté à n’importe quel événement, à condition que le gestionnaire et événements les signatures correspondent. Événements peuvent potentiellement être déclenchés par n’importe quel code et sont souvent déclenchés par le code système hautement fiable en réponse aux actions utilisateur comme un clic sur un bouton. Ajout d’une vérification de sécurité à une méthode de gestion d’événements n’empêche pas de code à partir de l’inscription d’un gestionnaire d’événements qui appelle la méthode.
+N’exposez pas les méthodes de gestion des événements sauf si cela est absolument nécessaire. Un gestionnaire d’événements, un type délégué, qui appelle la méthode exposée peut être ajouté à n’importe quel événement à condition que le gestionnaire et les signatures d’événements correspondent. Les événements peuvent potentiellement être déclenchés par n’importe quel code, et sont souvent déclenchés par du code système hautement fiable en réponse aux actions de l’utilisateur, telles que le clic sur un bouton. L’ajout d’une vérification de sécurité à une méthode de gestion des événements n’empêche pas le code d’inscrire un gestionnaire d’événements qui appelle la méthode.
 
- Une demande ne peut pas protéger de manière fiable une méthode appelée par un gestionnaire d’événements. Demandes de sécurité contribuent protéger le code contre les appelants non fiables en examinant les appelants sur la pile des appels. Code qui ajoute un gestionnaire d’événements à un événement n’est pas nécessairement présent sur la pile des appels lorsque les méthodes de gestionnaire d’événements sont exécutées. Par conséquent, la pile des appels peut avoir uniquement hautement approuvé les appelants lorsque la méthode de gestionnaire d’événements est appelée. Cela entraîne des demandes faites par la méthode de gestionnaire d’événements réussisse. En outre, l’autorisation demandée peut être déclarée lorsque la méthode est appelée. Pour ces raisons, le risque de correction d’une violation de cette règle ne peut être évalué après avoir examiné la méthode de gestion des événements. Lorsque vous examinez votre code, considérez les points suivants :
+Une demande ne peut pas protéger de manière fiable une méthode appelée par un gestionnaire d’événements. Les demandes de sécurité aident à protéger le code contre les appelants non fiables en examinant les appelants sur la pile des appels. Le code qui ajoute un gestionnaire d’événements à un événement n’est pas nécessairement présent sur la pile des appels lorsque les méthodes du gestionnaire d’événements s’exécutent. Par conséquent, la pile des appels peut avoir uniquement des appelants d’un niveau de confiance élevé quand la méthode du gestionnaire d’événements est appelée. Cela entraîne la permutation des demandes effectuées par la méthode de gestionnaire d’événements. En outre, l’autorisation demandée peut être déclarée lorsque la méthode est appelée. Pour ces raisons, le risque de ne pas corriger une violation de cette règle ne peut être évalué qu’après examen de la méthode de gestion des événements. Lorsque vous examinez votre code, tenez compte des points suivants:
 
-- Votre gestionnaire d’événements effectue des opérations dangereuses ou exploitables, telles que la déclaration d’autorisations ou la suppression des autorisations de code non managé ?
+- Votre gestionnaire d’événements effectue-t-il des opérations dangereuses ou exploitables, telles que l’assertion des autorisations ou la suppression de l’autorisation de code non managé?
 
-- Quelles sont les menaces de sécurité vers et à partir de votre code, car il peut s’exécuter à tout moment avec uniquement hautement approuvé les appelants sur la pile ?
+- Quelles sont les menaces de sécurité liées à votre code et qui peuvent être exécutées à tout moment, avec uniquement des appelants ayant un niveau de confiance élevé sur la pile?
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, examinez la méthode et évaluez les éléments suivants :
+Pour corriger une violation de cette règle, passez en revue la méthode et évaluez les éléments suivants:
 
-- Vous pouvez rendre la méthode de gestion des événements non publics ?
+- Pouvez-vous rendre la méthode de gestion des événements non publique?
 
-- Vous pouvez déplacer toutes les fonctionnalités dangereuses hors du Gestionnaire d’événements ?
+- Pouvez-vous déplacer toutes les fonctionnalités dangereuses hors du gestionnaire d’événements?
 
-- Si une demande de sécurité est imposée, il est possible d’une autre manière ?
+- Si une demande de sécurité est imposée, peut-il être accompli d’une autre manière?
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle uniquement après un examen minutieux de la sécurité pour vous assurer que votre code ne constitue pas une menace de sécurité.
+Supprimez un avertissement de cette règle uniquement après un examen minutieux de la sécurité pour vous assurer que votre code ne constitue pas une menace pour la sécurité.
 
 ## <a name="example"></a>Exemple
- Le code suivant montre une méthode de gestion d’événements qui permettre être utilisés à mauvais escient par du code malveillant.
+Le code suivant illustre une méthode de gestion des événements qui peut être utilisée à des fins malveillantes par du code malveillant.
 
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+[!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 

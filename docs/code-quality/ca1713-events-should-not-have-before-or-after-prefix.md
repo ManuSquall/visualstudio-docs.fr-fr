@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dba144740a2a39494323a456cddf90131e35c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545881"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921673"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713 : Les événements ne doivent pas être munis d'un préfixe Before ou After
 
@@ -27,19 +27,19 @@ ms.locfileid: "62545881"
 |-|-|
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
-|Category|Microsoft.Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le nom d’un événement commence par 'Before' ou 'After'.
+Le nom d’un événement commence par’before’ou’after'.
 
 ## <a name="rule-description"></a>Description de la règle
- Noms d’événements doivent décrire l’action qui déclenche l’événement. Pour nommer des événements associés déclenchés dans une séquence spécifique, utilisez le présent ou le passé pour indiquer la position relative dans la séquence d'actions. Par exemple, lorsque vous nommez une paire d’événements qui est déclenché lors de la fermeture d’une ressource, vous pouvez le nommer « Fermer » et « Fermé », au lieu de 'BeforeClose' et 'AfterClose'.
+Les noms d’événements doivent décrire l’action qui déclenche l’événement. Pour nommer des événements associés déclenchés dans une séquence spécifique, utilisez le présent ou le passé pour indiquer la position relative dans la séquence d'actions. Par exemple, quand vous nommez une paire d’événements qui est déclenchée lors de la fermeture d’une ressource, vous pouvez la nommer’Closing’et’Closed’au lieu de’BeforeClose’et’AfterClose'.
 
- Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Supprimez le préfixe de nom de l’événement et envisagez de modifier le nom à utiliser le présent ou passé d’un verbe.
+Supprimez le préfixe du nom de l’événement et envisagez de modifier le nom pour utiliser le présent ou le passé d’un verbe.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.

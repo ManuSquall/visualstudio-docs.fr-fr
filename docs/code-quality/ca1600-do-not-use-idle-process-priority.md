@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797525"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921808"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
 
@@ -27,17 +27,17 @@ ms.locfileid: "62797525"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Category|Microsoft.Mobility|
+|Catégorie|Microsoft.Mobility|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Cette règle se déclenche lorsque les processus sont définies sur `ProcessPriorityClass.Idle`.
+Cette règle se produit lorsque les processus ont `ProcessPriorityClass.Idle`la valeur.
 
 ## <a name="rule-description"></a>Description de la règle
- N'affectez pas la valeur Idle à la priorité de processus. Processus ayant `System.Diagnostics.ProcessPriorityClass.Idle` occupent le processeur alors qu’il devrait être inactif et bloque par conséquent la veille.
+N'affectez pas la valeur Idle à la priorité de processus. Les processus qui `System.Diagnostics.ProcessPriorityClass.Idle` ont l’occuperont le processeur lorsque celui-ci serait inactif et bloquera donc la mise en veille.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Définir des processus `ProcessPriorityClass.BelowNormal`.
+Affectez à `ProcessPriorityClass.BelowNormal`processus la valeur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Cette règle doit être supprimée uniquement lorsque la priorité de processus inactif est requise et considérations sur la mobilité peuvent être ignorées en toute sécurité.
+Cette règle doit être supprimée uniquement lorsque la priorité du processus inactif est requise et que les considérations relatives à la mobilité peuvent être ignorées en toute sécurité.

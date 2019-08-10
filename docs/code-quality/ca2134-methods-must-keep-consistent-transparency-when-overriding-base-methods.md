@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542322"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920660"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134 : La transparence des méthodes doit rester cohérente lors de la substitution de méthodes de base
 
@@ -23,29 +23,29 @@ ms.locfileid: "62542322"
 |-|-|
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Cette règle se déclenche lorsqu’une méthode marquée avec le <xref:System.Security.SecurityCriticalAttribute> substitue une méthode qui est transparente ou marquée avec le <xref:System.Security.SecuritySafeCriticalAttribute>. La règle se déclenche également lorsqu’une méthode qui est transparente ou marquée avec le <xref:System.Security.SecuritySafeCriticalAttribute> substitue une méthode qui est marquée avec un <xref:System.Security.SecurityCriticalAttribute>.
+Cette règle se déclenche lorsqu’une méthode marquée avec <xref:System.Security.SecurityCriticalAttribute> le substitue une méthode qui est transparente ou marquée <xref:System.Security.SecuritySafeCriticalAttribute>avec. La règle se déclenche également lorsqu’une méthode qui est transparente ou marquée avec <xref:System.Security.SecuritySafeCriticalAttribute> le substitue une méthode marquée avec un. <xref:System.Security.SecurityCriticalAttribute>
 
- La règle est appliquée lors de la substitution d’une méthode virtuelle ou de l’implémentation d’une interface.
+La règle est appliquée lors de la substitution d’une méthode virtuelle ou de l’implémentation d’une interface.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle se déclenche sur les tentatives de modification de l’accessibilité de sécurité d’une méthode supplémentaire pour la chaîne d’héritage. Par exemple, si une méthode virtuelle dans une classe de base est transparent ou critique sécurisé, puis la classe dérivée doit remplacer avec une méthode transparente ou critique sécurisé. À l’inverse, si le serveur virtuel est critique de sécurité, la classe dérivée doit substituer avec une méthode critique de sécurité. La même règle s’applique pour l’implémentation des méthodes d’interface.
+Cette règle se déclenche lors des tentatives de modification de l’accessibilité de la sécurité d’une méthode plus haut dans la chaîne d’héritage. Par exemple, si une méthode virtuelle dans une classe de base est transparente ou critique sécurisée, la classe dérivée doit la substituer avec une méthode transparente ou critique sécurisée. À l’inverse, si le virtuel est critique de sécurité, la classe dérivée doit la remplacer par une méthode critique de sécurité. La même règle s’applique à l’implémentation de méthodes d’interface.
 
- Règles de transparence sont appliqués lorsque le code est JIT compilé au lieu de lors de l’exécution, afin que le calcul de la transparence n’a pas d’informations de type dynamique. Par conséquent, le résultat du calcul de transparence doit pouvoir être déterminé uniquement à partir des types statiques qui est compilé par JIT, quel que soit le type dynamique.
+Les règles de transparence sont appliquées lorsque le code est compilé juste-à-temps au moment de l’exécution, de sorte que le calcul de la transparence n’a pas d’informations de type dynamique. Par conséquent, le résultat du calcul de la transparence doit pouvoir être déterminé uniquement à partir des types statiques qui sont compilés juste-à-temps, quel que soit le type dynamique.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifier la transparence de la méthode qui est une méthode virtuelle ou en implémentant une interface pour correspondre à la transparence du serveur virtuel ou une méthode d’interface.
+Pour corriger une violation de cette règle, modifiez la transparence de la méthode qui remplace une méthode virtuelle ou implémenter une interface pour qu’elle corresponde à la transparence de la méthode virtuelle ou d’interface.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas les avertissements de cette règle. Les violations de cette règle provoquent un runtime <xref:System.TypeLoadException> pour les assemblys qui utilisent la transparence de niveau 2.
+Ne supprimez pas les avertissements de cette règle. Les violations de cette règle entraînent un Runtime <xref:System.TypeLoadException> pour les assemblys qui utilisent la transparence de niveau 2.
 
 ## <a name="examples"></a>Exemples
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
+[!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
- [Code Transparent de sécurité, niveau 2](/dotnet/framework/misc/security-transparent-code-level-2)
+[Code transparent de sécurité, niveau 2](/dotnet/framework/misc/security-transparent-code-level-2)

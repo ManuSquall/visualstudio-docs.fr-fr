@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd721edab080de7708ac395e2a7d7e486c504fba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f6f40308255e0496b2bcccddf4299e83ea93100
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546373"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922051"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles
 
@@ -30,30 +30,30 @@ ms.locfileid: "62546373"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|Category|Microsoft.Interoperability|
+|Catégorie|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Une méthode qui est marquée avec le <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribut est visible de l’extérieur.
+Une méthode marquée avec l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribut ou est visible de l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> extérieur.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un assembly est inscrit avec COM Component Object Model (), les entrées sont ajoutées au Registre pour chaque type visible par COM dans l’assembly. Les méthodes marquées avec le <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> et <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attributs sont appelées pendant les processus d’inscription et d’annulation d’inscription, respectivement, pour exécuter le code utilisateur qui est spécifique à l’inscription/la désinscription de ces types. Ce code ne doit pas être appelé en dehors de ces processus.
+Lorsqu’un assembly est inscrit auprès du modèle COM (Component Object Model), les entrées sont ajoutées au registre pour chaque type visible par COM dans l’assembly. Les méthodes marquées avec les <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributs <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> et sont appelées au cours des processus d’inscription et d’annulation de l’inscription, respectivement, pour exécuter le code utilisateur qui est spécifique à l’inscription/annulation de l’inscription de ces types. Ce code ne doit pas être appelé en dehors de ces processus.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez l’accessibilité de la méthode à `private` ou `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Pour corriger une violation de cette règle, modifiez l’accessibilité de la méthode en `private` ou `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- L’exemple suivant montre deux méthodes qui enfreignent la règle.
+## <a name="example"></a>Exemples
+L’exemple suivant montre deux méthodes qui violent la règle.
 
- [!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/CSharp/ca1411-com-registration-methods-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1410 : Méthodes d’inscription COM doivent être mises en correspondance.](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410 Les méthodes d’inscription COM doivent être mises en correspondance](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542335"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920826"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
 
@@ -27,30 +27,30 @@ ms.locfileid: "62542335"
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un membre public ou protégé a un [demandes de liaison](/dotnet/framework/misc/link-demands) et est appelée par un membre qui n’effectue pas les vérifications de sécurité.
+Un membre public ou protégé a des [demandes de liaison](/dotnet/framework/misc/link-demands) et est appelé par un membre qui n’effectue aucune vérification de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
- Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` n’effectue aucune des demandes de sécurité de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
+Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` ne fait aucune demande de sécurité de ses appelants et appelle du code protégé par une demande de liaison, un appelant sans l’autorisation `X` nécessaire peut utiliser pour accéder au membre protégé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Ajouter une sécurité [données et modélisation](/dotnet/framework/data/index) ou demande de liaison au membre afin qu’il ne fournit plus accès non sécurisé au membre protégé par demande de liaison.
+Ajoutez des données de sécurité [et une modélisation](/dotnet/framework/data/index) ou une demande de liaison au membre afin qu’il ne fournisse plus d’accès non sécurisé au membre protégé à la demande de liaison.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Pour supprimer sans risque un avertissement de cette règle, il se peut que vous devez vous assurer que votre code n’accorde pas ses appelants accès à des opérations ou des ressources qui peuvent être utilisées dans une action destructrice.
+Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que votre code n’accorde pas à ses appelants l’accès aux opérations ou aux ressources qui peuvent être utilisées de manière destructrice.
 
 ## <a name="example-1"></a>Exemple 1
- Les exemples suivants montrent une bibliothèque qui viole la règle et une application qui montre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui ensemble enfreignent la règle. Le `EnvironmentSetting` méthode est sécurisée par une demande de liaison pour un accès illimité aux variables d’environnement. Le `DomainInformation` méthode n’effectue aucune des demandes de sécurité de ses appelants avant d’appeler `EnvironmentSetting`.
+Les exemples suivants illustrent une bibliothèque qui enfreint la règle et une application qui illustre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui enfreignent ensemble la règle. La `EnvironmentSetting` méthode est sécurisée par une demande de liaison pour un accès illimité aux variables d’environnement. La `DomainInformation` méthode ne fait aucune demande de sécurité de ses appelants avant `EnvironmentSetting`d’appeler.
 
- [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
+[!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
 ## <a name="example-2"></a>Exemple 2
- L’application suivante appelle le membre de bibliothèque non sécurisé.
+L’application suivante appelle le membre de bibliothèque non sécurisé.
 
- [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
+[!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
 Cet exemple génère la sortie suivante :
 

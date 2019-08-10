@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872131"
+ms.locfileid: "68926720"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.
@@ -56,7 +56,7 @@ ms.locfileid: "68872131"
 
 2. Instanciez le volet de tâches personnalisé en passant le contrôle utilisateur à l’objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> dans votre complément VSTO. Cette collection retourne un nouvel objet <xref:Microsoft.Office.Tools.CustomTaskPane> pouvant servir à modifier l'apparence du volet de tâches et à répondre aux événements utilisateur.
 
-   Pour plus d’informations, consultez [Guide pratique pour Ajoutez un volet de tâches personnalisé à une](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)application.
+   Pour plus d'informations, voir [Procédure : Ajoutez un volet de tâches personnalisé à une](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)application.
 
 ### <a name="create-the-user-interface"></a>Créer l’interface utilisateur
  Tous les volets de tâches personnalisés créés à l’aide des outils de développement Office dans Visual Studio contiennent un objet <xref:System.Windows.Forms.UserControl>. Ce contrôle utilisateur fournit l'interface utilisateur de votre volet de tâches personnalisé. Vous pouvez créer le contrôle utilisateur au moment du design ou au moment de l’exécution. Si vous le créez au moment du design, vous pouvez utiliser le concepteur Windows Forms pour construire l'interface utilisateur de votre volet de tâches.
@@ -124,7 +124,7 @@ ms.locfileid: "68872131"
 
  Pour nettoyer les ressources utilisées par le volet de tâches alors que le complément VSTO est encore en cours d’exécution, utilisez les méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Ces méthodes suppriment l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> spécifié de la collection `CustomTaskPanes`, et elles appellent la méthode <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> de l’objet.
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas les <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> ou dans le `ThisAddIn_Shutdown` gestionnaire d’événements de votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations `ThisAddIn_Shutdown`sur, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md)
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas les <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> ou dans le `ThisAddIn_Shutdown` gestionnaire d’événements de votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations `ThisAddIn_Shutdown`sur, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 
 ## <a name="Managing"></a>Gérer les volets de tâches personnalisés dans plusieurs fenêtres d’application
  Quand vous créez un volet de tâches personnalisé dans une application qui utilise plusieurs fenêtres pour afficher des documents et d'autres éléments, vous devez prendre des mesures supplémentaires pour garantir l'affichage du volet de tâches quand l'utilisateur s'attend à le voir.

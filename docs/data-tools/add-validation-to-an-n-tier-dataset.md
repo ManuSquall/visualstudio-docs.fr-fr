@@ -15,28 +15,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fdeef3a21407b4473ed412019e936d7b30389c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: abdc719a7884e331b93313122631972cc0cfa42a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402878"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925689"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Ajouter la validation à un dataset multiniveau
-Ajout d’une validation à un dataset qui est divisé en une solution multicouche est fondamentalement identique à l’ajout d’une validation à un jeu de données à fichier unique (un jeu de données dans un seul projet). Pour exécuter la validation sur les données est proposé pendant la <xref:System.Data.DataTable.ColumnChanging> et/ou <xref:System.Data.DataTable.RowChanging> événements d’une table de données.
+L’ajout de la validation à un DataSet qui est séparé dans une solution multiniveau est fondamentalement le même que l’ajout d’une validation à un DataSet à fichier unique (un DataSet dans un projet unique). L’emplacement suggéré pour effectuer la validation sur les <xref:System.Data.DataTable.ColumnChanging> données est au cours des événements et/ou <xref:System.Data.DataTable.RowChanging> d’une table de données.
 
- Le jeu de données fournit les fonctionnalités pour créer des classes partielles à laquelle vous pouvez ajouter le code utilisateur aux événements de modification de colonne et de ligne des tables de données dans le jeu de données. Pour plus d’informations sur l’ajout de code à un jeu de données dans une solution multicouche, consultez [ajouter du code à des jeux de données dans les applications multicouches](../data-tools/add-code-to-datasets-in-n-tier-applications.md), et [ajouter du code aux TableAdapters dans des applications multicouches](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Pour plus d’informations sur les classes partielles, consultez [Comment : Fractionner une classe en classes partielles (Concepteur de classes)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) ou [classes et méthodes partielles](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
-
-> [!NOTE]
-> Quand vous séparez les jeux de données à partir de TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes dataset partielles existantes doivent être déplacés manuellement dans le projet dataset.
+Le DataSet fournit les fonctionnalités permettant de créer des classes partielles auxquelles vous pouvez ajouter du code utilisateur aux événements de modification de colonne et de ligne des tables de données dans le DataSet. Pour plus d’informations sur l’ajout de code à un DataSet dans une solution multicouche, consultez [Ajouter du code aux jeux de données dans des applications](../data-tools/add-code-to-datasets-in-n-tier-applications.md)multicouches et [Ajouter du code aux TableAdapters dans des applications](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)multicouches. Pour plus d’informations sur les classes partielles, consultez [procédure: Fractionner une classe en classes partielles (](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) concepteur de classes) ou [classes et méthodes partielles](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
-> Le Concepteur de dataset ne crée pas automatiquement les gestionnaires d’événements en c# pour le <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> événements. Vous devez manuellement créer un gestionnaire d’événements et raccorder le Gestionnaire d’événements à l’événement sous-jacent. Les procédures suivantes décrivent comment créer les gestionnaires d’événements requis en Visual Basic et c#.
+> Lorsque vous séparez des datasets de TableAdapters (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes de DataSet partielles existantes doivent être déplacées manuellement vers le projet de DataSet.
 
-## <a name="validate-changes-to-individual-columns"></a>Valider les modifications apportées à des colonnes individuelles
- Valider les valeurs dans des colonnes individuelles en gérant la <xref:System.Data.DataTable.ColumnChanging> événement. Le <xref:System.Data.DataTable.ColumnChanging> événement est déclenché lorsqu’une valeur dans une colonne est modifiée. Créer un gestionnaire d’événements pour le <xref:System.Data.DataTable.ColumnChanging> événement en double-cliquant sur la colonne souhaitée sur le **Concepteur de Dataset**.
+> [!NOTE]
+> Le concepteur de DataSet ne crée pas automatiquement de gestionnaires d' C# événements dans <xref:System.Data.DataTable.ColumnChanging> pour <xref:System.Data.DataTable.RowChanging> les événements et. Vous devez créer manuellement un gestionnaire d’événements et raccorder le gestionnaire d’événements à l’événement sous-jacent. Les procédures suivantes décrivent comment créer les gestionnaires d’événements requis dans Visual Basic et C#.
 
- La première fois que vous double-cliquez sur une colonne, le concepteur génère un gestionnaire d’événements pour le <xref:System.Data.DataTable.ColumnChanging> événement. Un `If...Then` est également créée qui teste la colonne spécifique. Par exemple, le code suivant est généré lorsque vous double-cliquez sur le **RequiredDate** colonne sur la table Northwind Orders :
+## <a name="validate-changes-to-individual-columns"></a>Valider les modifications apportées aux colonnes individuelles
+Validez les valeurs dans des colonnes individuelles <xref:System.Data.DataTable.ColumnChanging> en gérant l’événement. L' <xref:System.Data.DataTable.ColumnChanging> événement est déclenché lorsqu’une valeur d’une colonne est modifiée. Créez un gestionnaire d’événements pour <xref:System.Data.DataTable.ColumnChanging> l’événement en double-cliquant sur la colonne souhaitée sur la **Concepteur de DataSet**.
+
+La première fois que vous double-cliquez sur une colonne, le concepteur génère un gestionnaire d’événements <xref:System.Data.DataTable.ColumnChanging> pour l’événement. Une `If...Then` instruction est également créée pour tester la colonne spécifique. Par exemple, le code suivant est généré lorsque vous double-cliquez sur la colonne **DateRequise** de la table Northwind Orders:
 
 ```vb
 Private Sub OrdersDataTable_ColumnChanging(ByVal sender As System.Object, ByVal e As System.Data.DataColumnChangeEventArgs) Handles Me.ColumnChanging
@@ -47,22 +47,22 @@ End Sub
 ```
 
 > [!NOTE]
-> Dans les projets c#, le Concepteur de Dataset crée uniquement des classes partielles pour le jeu de données et les tables individuelles dans le jeu de données. Le Concepteur de Dataset ne crée pas automatiquement de gestionnaires d’événements pour le <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> événements en c# comme en Visual Basic. Dans les projets c#, vous devez construire manuellement une méthode pour gérer l’événement et raccorder la méthode à l’événement sous-jacent. La procédure suivante fournit les étapes pour créer les gestionnaires d’événements requis en Visual Basic et c#.
+> Dans C# les projets, le concepteur de DataSet crée uniquement des classes partielles pour le jeu de données et les tables individuelles dans le DataSet. Le concepteur de DataSet ne crée pas automatiquement de gestionnaires d’événements pour <xref:System.Data.DataTable.ColumnChanging> les <xref:System.Data.DataTable.RowChanging> événements et C# de la même manière dans Visual Basic. Dans C# les projets, vous devez construire manuellement une méthode pour gérer l’événement et raccorder la méthode à l’événement sous-jacent. La procédure suivante décrit les étapes de création des gestionnaires d’événements requis dans Visual Basic et C#.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Pour ajouter la validation pendant les modifications apportées aux valeurs de colonne individuels
+#### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Pour ajouter la validation lors des modifications apportées aux valeurs de colonnes individuelles
 
-1. Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Ouvrez le jeu de données en double-cliquant sur le fichier *. xsd* dans **Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données](walkthrough-creating-a-dataset-with-the-dataset-designer.md)dans le concepteur de DataSet.
 
-2. Double-cliquez sur la colonne que vous souhaitez valider. Cette action crée le <xref:System.Data.DataTable.ColumnChanging> Gestionnaire d’événements.
+2. Double-cliquez sur la colonne que vous souhaitez valider. Cette action crée le <xref:System.Data.DataTable.ColumnChanging> gestionnaire d’événements.
 
     > [!NOTE]
-    > Le Concepteur de Dataset ne crée pas automatiquement un gestionnaire d’événements pour l’événement c#. Le code qui est nécessaire pour gérer l’événement en c# est inclus dans la section suivante. `SampleColumnChangingEvent` est créé et puis raccordé à le <xref:System.Data.DataTable.ColumnChanging> événement dans le <xref:System.Data.DataTable.EndInit%2A> (méthode).
+    > Le Concepteur de DataSet ne crée pas automatiquement un gestionnaire d’événements pour C# l’événement. Le code nécessaire pour gérer l’événement dans C# est inclus dans la section suivante. `SampleColumnChangingEvent`est créé, puis raccordé à l' <xref:System.Data.DataTable.ColumnChanging> événement dans la <xref:System.Data.DataTable.EndInit%2A> méthode.
 
-3. Ajouter du code pour vérifier que `e.ProposedValue` contient des données qui répondent aux exigences de votre application. Si la valeur proposée est inacceptable, définissez la colonne pour indiquer qu’il contient une erreur.
+3. Ajoutez du code pour vérifier `e.ProposedValue` que contient des données qui répondent aux exigences de votre application. Si la valeur proposée est inacceptable, définissez la colonne pour indiquer qu’elle contient une erreur.
 
-     L’exemple de code suivant valide le fait que le **quantité** colonne contient une valeur supérieure à 0. Si **quantité** est inférieure ou égale à 0, la colonne est définie sur une erreur. Le `Else` clause efface l’erreur si **quantité** est supérieure à 0. Le code dans le Gestionnaire d’événements de modification de colonne doit ressembler à ce qui suit :
+     L’exemple de code suivant valide que la colonne Quantity contient une valeur supérieure à 0. Si la **quantité** est inférieure ou égale à 0, la colonne est définie sur une erreur. La `Else` clause efface l’erreur si la **quantité** est supérieure à 0. Le code dans le gestionnaire d’événements de modification de colonne doit ressembler à ce qui suit:
 
     ```vb
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then
@@ -101,27 +101,27 @@ End Sub
     }
     ```
 
-## <a name="validate-changes-to-whole-rows"></a>Valider les modifications apportées aux lignes entières
- Valider les valeurs dans les lignes entières en gérant la <xref:System.Data.DataTable.RowChanging> événement. Le <xref:System.Data.DataTable.RowChanging> événement est déclenché lorsque les valeurs de toutes les colonnes sont validées. Il est nécessaire de valider dans le <xref:System.Data.DataTable.RowChanging> événement lorsque la valeur dans une colonne s’appuie sur la valeur dans une autre colonne. Par exemple, considérez OrderDate et RequiredDate dans la table Orders de Northwind.
+## <a name="validate-changes-to-whole-rows"></a>Valider les modifications apportées à des lignes entières
+Validez les valeurs dans les lignes entières en gérant l' <xref:System.Data.DataTable.RowChanging> événement. L' <xref:System.Data.DataTable.RowChanging> événement est déclenché lorsque les valeurs de toutes les colonnes sont validées. Il est nécessaire de valider dans l' <xref:System.Data.DataTable.RowChanging> événement lorsque la valeur d’une colonne repose sur la valeur d’une autre colonne. Par exemple, considérez OrderDate et DateRequise dans la table Orders de Northwind.
 
- Lorsque les commandes sont entrées, la validation permet de s’assurer qu’une commande n’est pas entrée avec une valeur RequiredDate qui est l’ou avant la date de commande. Dans cet exemple, les valeurs des colonnes RequiredDate et OrderDate doivent à comparer, afin de valider une modification de colonne individuelle n’est pas pertinent.
+Lorsque des commandes sont entrées, la validation garantit qu’une commande n’est pas entrée avec une commande DateRequise qui est le ou avant la date de commande. Dans cet exemple, les valeurs des colonnes DateRequise et OrderDate doivent être comparées, de sorte que la validation d’une modification de colonne individuelle n’a aucun sens.
 
- Créer un gestionnaire d’événements pour le <xref:System.Data.DataTable.RowChanging> événement en double-cliquant sur le nom de table dans la barre de titre de la table sur le **Concepteur de Dataset**.
+Créez un gestionnaire d’événements pour <xref:System.Data.DataTable.RowChanging> l’événement en double-cliquant sur le nom de la table dans la barre de titre de la table sur le **Concepteur de DataSet**.
 
-#### <a name="to-add-validation-during-changes-to-whole-rows"></a>Pour ajouter la validation pendant la modification des lignes entières
+#### <a name="to-add-validation-during-changes-to-whole-rows"></a>Pour ajouter la validation lors des modifications apportées à des lignes entières
 
-1. Ouvrez le jeu de données en double-cliquant sur le *.xsd* fichier **l’Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Ouvrez le jeu de données en double-cliquant sur le fichier *. xsd* dans **Explorateur de solutions**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données](walkthrough-creating-a-dataset-with-the-dataset-designer.md)dans le concepteur de DataSet.
 
 2. Double-cliquez sur la barre de titre de la table de données sur le concepteur.
 
-     Une classe partielle est créée avec un `RowChanging` Gestionnaire d’événements et s’ouvre dans l’éditeur de Code.
+     Une classe partielle est créée à l' `RowChanging` aide d’un gestionnaire d’événements et s’ouvre dans l’éditeur de code.
 
     > [!NOTE]
-    > Le Concepteur de Dataset ne crée pas automatiquement un gestionnaire d’événements pour le <xref:System.Data.DataTable.RowChanging> événements dans les projets c#. Vous devez créer une méthode pour gérer la <xref:System.Data.DataTable.RowChanging> événements et exécuter du code puis de raccorder l’événement dans la méthode d’initialisation de la table.
+    > Le concepteur de DataSet ne crée pas automatiquement un gestionnaire d’événements pour <xref:System.Data.DataTable.RowChanging> l’événement C# dans les projets. Vous devez créer une méthode pour gérer l' <xref:System.Data.DataTable.RowChanging> événement et exécuter le code, puis raccorder l’événement dans la méthode d’initialisation de la table.
 
-3. Ajoutez le code de l’utilisateur à l’intérieur de la déclaration de classe partielle.
+3. Ajoutez du code utilisateur à l’intérieur de la déclaration de classe partielle.
 
-4. Le code suivant indique où ajouter le code utilisateur pour valider lors de la <xref:System.Data.DataTable.RowChanging> événement. L’exemple c# inclut également le code pour la méthode de gestionnaire d’événements de raccordement jusqu'à la `OrdersRowChanging` événement.
+4. Le code suivant indique où ajouter le code utilisateur à valider pendant l' <xref:System.Data.DataTable.RowChanging> événement. L' C# exemple comprend également du code pour raccorder la méthode de gestionnaire d’événements `OrdersRowChanging` à l’événement.
 
     ```vb
     Partial Class OrdersDataTable

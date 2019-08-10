@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 677e423e456c448204d39a286509fa93aa5c57b8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745348"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925345"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Travailler avec un modèle conceptuel (WCF Data Services)
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utiliser un modèle conceptuel (WCF Data Services)
 
-Lorsque vous utilisez un modèle conceptuel pour décrire les données dans une base de données, vous pouvez interroger les données via vos objets au lieu de devoir traduire dans les deux sens entre un schéma de base de données et un modèle d’objet.
+Lorsque vous utilisez un modèle conceptuel pour décrire les données d’une base de données, vous pouvez interroger les données via vos objets au lieu de passer d’un schéma de base de données à un modèle d’objet.
 
- Vous pouvez utiliser des modèles conceptuels avec les applications WCF Data Services. Les rubriques suivantes montrent comment interroger des données via un modèle conceptuel.
+Vous pouvez utiliser des modèles conceptuels avec des applications WCF Data Services. Les rubriques suivantes montrent comment interroger des données via un modèle conceptuel.
 
 | Rubrique | Description |
 | - | - |
-| [Guide pratique pour Exécuter des requêtes de Service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’une application .NET. |
-| [Guide pratique pour Résultats de la requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par une requête de service de données. |
+| [Guide pratique pour Exécuter des requêtes de service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’une application .NET. |
+| [Guide pratique pour Résultats de la requête de projet](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par le biais d’une requête de service de données. |
 
- Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données est valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation pour les opérations que vous effectuez sur un service de l’entité ou de données.
+Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation aux opérations que vous effectuez sur une entité ou un service de données.
 
- Les rubriques suivantes montrent comment ajouter la validation pour les applications WCF Data Services.
+Les rubriques suivantes montrent comment ajouter la validation aux applications WCF Data Services.
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Guide pratique pour Intercepter des messages de Service de données](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
+|[Guide pratique : Intercepter des messages de service de données](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
 
- Les rubriques suivantes montrent comment créer, mettre à jour et supprimer des données en effectuant des opérations sur les entités.
+ Les rubriques suivantes montrent comment créer, mettre à jour et supprimer des données en effectuant des opérations sur des entités.
 
 |Rubrique|Description|
 |-----------|-----------------|
 |[Guide pratique pour Ajouter, modifier et supprimer des entités](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|
-|[Guide pratique pour Définir des relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
+|[Guide pratique : Définir des relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
 
 ## <a name="see-also"></a>Voir aussi
 
