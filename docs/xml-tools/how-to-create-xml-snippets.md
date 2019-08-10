@@ -8,46 +8,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948837"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926506"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procédure : Créer des extraits XML
 
-L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
+L’éditeur XML peut être utilisé pour créer des extraits XML. Cet éditeur comporte un extrait XML appelé « Snippet », qui est souvent utilisé pour la création de nouveaux extraits XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Pour créer un nouvel extrait XML
 
- Pour créer un nouveau code XML extrait de créer un nouveau fichier XML et utiliser le **insérer un extrait** fonctionnalité.
+Pour créer un nouvel extrait de code XML, créez un nouveau fichier XML et utilisez la fonctionnalité **Insérer un extrait** .
 
-1. Sur le **fichier** menu, cliquez sur **New** puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , cliquez sur **nouveau** , puis sur **fichier**.
 
-2. Cliquez sur **fichier XML** puis cliquez sur **Open**.
+2. Cliquez sur **fichier XML** , puis sur **ouvrir**.
 
-3. Avec le bouton droit dans le volet de l’éditeur et sélectionnez **insérer un extrait**.
+3. Cliquez avec le bouton droit dans le volet de l’éditeur et sélectionnez **Insérer un extrait**.
 
-4. Sélectionnez **extrait** à partir de la liste et appuyez sur **entrée**.
+4. Sélectionnez **Snippet** dans la liste et appuyez sur **entrée**.
 
 5. Apportez les modifications voulues au nouvel extrait.
 
-6. À partir de la **fichier** menu, sélectionnez **Enregistrer XMLFile.xml**.
+6. Dans le menu **fichier** , sélectionnez **Enregistrer xmlfile. xml**.
 
-     Le **enregistrer le fichier sous** boîte de dialogue s’affiche.
+     La boîte de dialogue **enregistrer le fichier sous** s’affiche.
 
-7. Entrez le nom du nouvel extrait et sélectionnez **extrait les fichiers** à partir de la **enregistrer en tant que type** fenêtre déroulante.
+7. Entrez le nom du nouvel extrait et sélectionnez **fichiers d’extraits** de code dans la fenêtre déroulante **type de fichier** .
 
-8. Utilisez le **enregistrer dans** liste déroulante pour modifier l’emplacement de fichier pour le *Mes Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets* dossier, puis appuyez sur **enregistrer**.
+8. Utilisez la liste déroulante **enregistrer dans** pour remplacer l’emplacement du fichier par *Mes documents\Visual Studio 2005 \ code Snippets\XML\My XML Snippets* , puis appuyez sur **Enregistrer**.
 
-## <a name="snippet-description"></a>Description de l’extrait de code
+## <a name="snippet-description"></a>Description de l’extrait
 
- Cette section décrit certains éléments clés de l'extrait souvent utilisé. Pour plus d’informations sur les éléments de schéma utilisés par les extraits de code XML, consultez [référence de schéma des extraits de Code](../ide/code-snippets-schema-reference.md).
+Cette section décrit certains éléments clés de l'extrait souvent utilisé. Pour plus d’informations sur les éléments de schéma utilisés par les extraits XML, consultez [référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>SnippetType, élément
 
- L'éditeur prend en charge deux types d'extraits :
+L'éditeur prend en charge deux types d'extraits :
 
 ```xml
 <SnippetTypes>
@@ -56,16 +56,16 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 </SnippetTypes>
 ```
 
- Le `Expansion` type détermine si l’extrait apparaît lorsque vous appelez le **insérer un extrait** commande. Le `SurroundsWith` type détermine si l’extrait apparaît lorsque vous appelez le **entourer** commande.
+Le `Expansion` type détermine si l’extrait apparaît lorsque vous appelez la commande **Insérer un extrait** . Le `SurroundsWith` type détermine si l’extrait apparaît lorsque vous appelez la commande entourer **de** .
 
 ### <a name="code-element"></a>Élément de code
 
- L'élément `Code` définit le texte XML qui sera inséré lorsque l'extrait sera appelé.
+L'élément `Code` définit le texte XML qui sera inséré lorsque l'extrait sera appelé.
 
 > [!NOTE]
 > Le texte de l'extrait XML doit être placé dans une section `<![CDATA[...]]>`.
 
- L'élément `Code` suivant est créé par l'extrait souvent utilisé.
+L'élément `Code` suivant est créé par l'extrait souvent utilisé.
 
 ```xml
 <Code Language="XML">
@@ -75,13 +75,13 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 </Code>
 ```
 
- L'élément `Code` inclut trois variables.
+L'élément `Code` inclut trois variables.
 
 - $name$ est une variable définie par l'utilisateur. Elle crée un élément `name` dont la valeur par défaut modifiable est « name ». Les variables définies par l'utilisateur se définissent à l'aide de l'élément `Literal`.
 
 - $selected$ est une variable prédéfinie. Il représente le texte qui a été sélectionné dans l’éditeur XML avant l’appel de l’extrait de code. La position de cette variable détermine l'emplacement du texte sélectionné dans l'extrait de code qui entoure cette sélection.
 
-- $end$ est une variable prédéfinie. Lorsque l’utilisateur appuie sur **entrée** pour terminer la modification des champs d’extrait de code, cette variable détermine où le signe insertion (^) est déplacé vers.
+- $end$ est une variable prédéfinie. Quand l’utilisateur appuie sur **entrée** pour terminer la modification des champs de l’extrait de code, cette variable détermine l’emplacement où le signe insertion (^) est déplacé.
 
   L'élément `Code` ci-dessus insère le texte XML suivant :
 
@@ -91,11 +91,11 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 </test>
 ```
 
- La valeur de l'élément name est marquée comme une zone modifiable.
+La valeur de l'élément name est marquée comme une zone modifiable.
 
 ### <a name="literal-element"></a>Literal, élément
 
- L'élément `Literal` permet d'identifier le texte de remplacement qui peut être personnalisé après son insertion dans le fichier. Par exemple, des chaînes littérales, des valeurs numériques et certains noms de variables peuvent être déclarés comme littéraux. Vous pouvez définir un nombre quelconque de littéraux dans votre extrait XML et y faire référence plusieurs fois dans l'extrait. L'exemple d'élément `Literal` suivant définit une variable $name$ dont la valeur par défaut est « name ».
+L'élément `Literal` permet d'identifier le texte de remplacement qui peut être personnalisé après son insertion dans le fichier. Par exemple, des chaînes littérales, des valeurs numériques et certains noms de variables peuvent être déclarés comme littéraux. Vous pouvez définir un nombre quelconque de littéraux dans votre extrait XML et y faire référence plusieurs fois dans l'extrait. L'exemple d'élément `Literal` suivant définit une variable $name$ dont la valeur par défaut est « name ».
 
 ```xml
 <Literal>
@@ -104,7 +104,7 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 </Literal
 ```
 
- Les littéraux peuvent également faire référence à des fonctions. L’éditeur XML comprend une fonction nommée **LookupPrefix**. Le **LookupPrefix** fonction recherche l’URI d’espace de noms donné à partir de l’emplacement dans le document XML est appelée à partir de cet extrait de code et retourne le préfixe d’espace de noms qui est défini pour cet espace de noms, si une, et il inclut le signe deux-points ( :)) Dans ce nom. Voici un exemple d’un `Literal` élément qui utilise le **LookupPrefix** (fonction).
+Les littéraux peuvent également faire référence à des fonctions. L’éditeur XML comprend une fonction nommée **LookupPrefix**. La fonction **LookupPrefix** recherche l’URI d’espace de noms donné à partir de l’emplacement dans le document XML à partir duquel cet extrait de code est appelé et retourne le préfixe d’espace de noms défini pour cet espace de noms, le cas échéant, et il comprend le signe deux-points (:) dans ce nom. L’exemple suivant illustre un `Literal` élément qui utilise la fonction **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -113,10 +113,10 @@ L’éditeur XML peut être utilisé pour créer de nouveaux extraits XML. Cet �
 </Literal>
 ```
 
- La variable $prefix$ _peut alors être utilisée ailleurs dans votre extrait XML.
+La variable $prefix$ _peut alors être utilisée ailleurs dans votre extrait XML.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits XML](../xml-tools/xml-snippets.md)
-- [Guide pratique pour Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Guide pratique : Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md)
 - [Guide pratique pour Générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
