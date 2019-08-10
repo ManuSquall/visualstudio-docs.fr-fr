@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7e7efe348526661b9de74b3631e6795608b99
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796915"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921347"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels
 
@@ -30,23 +30,23 @@ ms.locfileid: "62796915"
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Category|Microsoft.Performance|
+|Catégorie|Microsoft. performance|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un membre est déclaré comme un tableau multidimensionnel.
+Un membre est déclaré en tant que tableau multidimensionnel.
 
 ## <a name="rule-description"></a>Description de la règle
- Un tableau en escalier est un tableau dont les éléments sont des tableaux. Les tableaux qui composent les éléments peuvent être de différentes tailles, ce qui conduit à un gaspillage d'espace plus restreint pour certains groupes de données.
+Un tableau en escalier est un tableau dont les éléments sont des tableaux. Les tableaux qui composent les éléments peuvent être de différentes tailles, ce qui conduit à un gaspillage d'espace plus restreint pour certains groupes de données.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez le tableau multidimensionnel en tableau en escalier.
+Pour corriger une violation de cette règle, remplacez le tableau multidimensionnel par un tableau en escalier.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle si le tableau multidimensionnel ne gaspille pas d’espace.
+Supprimez un avertissement de cette règle si le tableau multidimensionnel ne gaspille pas d’espace.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre des déclarations pour les tableaux en escalier et multidimensionnels.
+L’exemple suivant montre des déclarations pour les tableaux en escalier et multidimensionnels.
 
- [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
- [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
+[!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
+[!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

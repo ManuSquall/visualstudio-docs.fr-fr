@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816632"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923999"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification étendue pour le code managé
-L’ensemble de règles de règles de vérification étendue Microsoft optimise les erreurs de l’utilisation de logique et framework qui sont signalés par l’analyse du code. Accentuation supplémentaire est placée sur les scénarios spécifiques tels que l’interopérabilité COM et des applications mobiles. Vous devez envisager d’inclure cette règle définie si une de ces scénarios s’applique à votre projet ou pour trouver d’autres problèmes dans votre projet.
+L’ensemble de règles de règles de vérification étendue Microsoft maximise les erreurs d’utilisation de la logique et de l’infrastructure qui sont signalées par l’analyse du code. Une importance supplémentaire est placée sur des scénarios spécifiques tels que l’interopérabilité COM et les applications mobiles. Vous devez envisager d’inclure cet ensemble de règles si l’un de ces scénarios s’applique à votre projet ou de rechercher d’autres problèmes dans votre projet.
 
- L’ensemble de règles de règles de vérification étendue Microsoft inclut les règles qui sont définies dans la règle de règles de vérification de base de Microsoft. Les règles de vérification de base inclut les règles qui sont définies dans la règle de règles minimales recommandées par Microsoft. Pour plus d’informations, consultez [base règles de vérification définie pour le code managé](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) et [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+L’ensemble de règles des règles de vérification étendue Microsoft comprend les règles qui se trouvent dans l’ensemble de règles de règles de vérification de base Microsoft. Les règles de vérification de base incluent les règles qui se trouvent dans l’ensemble de règles des règles minimales recommandées par Microsoft. Pour plus d’informations, consultez [ensemble de règles de règles de vérification de base pour le code managé](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) et [ensemble de règles des règles recommandées managées pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Le tableau suivant décrit toutes les règles dans l’ensemble de règles de règles de vérification étendue Microsoft.
+Le tableau suivant décrit toutes les règles de l’ensemble de règles des règles de vérification étendue Microsoft.
 
 |Règle|Description|
 |----------|-----------------|
@@ -64,7 +64,7 @@ L’ensemble de règles de règles de vérification étendue Microsoft optimise 
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Les méthodes transparentes doivent contenir uniquement des IL vérifiables|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler les méthodes ayant l'attribut SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Le code transparent ne doit pas faire référence à des éléments critiques de sécurité|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Méthodes transparentes ne répondent pas aux LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Les méthodes transparentes ne répondent pas aux LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Les types doivent être au moins aussi critiques que les types de base et les interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Les méthodes transparentes ne peuvent pas utiliser d’assertions de sécurité|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler du code natif|

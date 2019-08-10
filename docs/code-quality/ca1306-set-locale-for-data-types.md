@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797515"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922791"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306 : Définir les paramètres régionaux pour les types de données
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797515"
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Category|Microsoft.Globalization|
+|Catégorie|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode ou un constructeur créé une ou plusieurs <xref:System.Data.DataTable?displayProperty=fullName> ou <xref:System.Data.DataSet?displayProperty=fullName> instances et définissait pas explicitement la propriété de paramètres régionaux (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+Une méthode ou un constructeur a créé une <xref:System.Data.DataTable?displayProperty=fullName> ou <xref:System.Data.DataSet?displayProperty=fullName> plusieurs instances ou et n’a pas défini explicitement la propriété<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> locale <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>(ou).
 
 ## <a name="rule-description"></a>Description de la règle
- Les paramètres régionaux déterminent des éléments de présentation spécifique à la culture des données, telles que la mise en forme utilisée pour les valeurs numériques, les symboles monétaires et ordre de tri. Lorsque vous créez un <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>, vous devez définir explicitement les paramètres régionaux. Par défaut, les paramètres régionaux pour ces types sont la culture actuelle. Pour les données qui sont stockées dans un fichier ou une base de données et sont partagées globalement, les paramètres régionaux doivent normalement être définis pour la culture dite indifférente (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Lorsque les données sont partagées entre les cultures, à l’aide des paramètres régionaux par défaut peut entraîner le contenu de la <xref:System.Data.DataTable> ou <xref:System.Data.DataSet> présentation ou une interprétation incorrecte.
+Les paramètres régionaux déterminent les éléments de présentation spécifiques à la culture pour les données, comme la mise en forme utilisée pour les valeurs numériques, les symboles monétaires et l’ordre de tri. Lorsque vous créez un <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>un, vous devez définir les paramètres régionaux explicitement. Par défaut, les paramètres régionaux de ces types sont la culture actuelle. Pour les données stockées dans une base de données ou un fichier et qui sont partagées globalement, les paramètres régionaux doivent normalement être définis sur la culture dite<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>indifférente (). Lorsque les données sont partagées entre les cultures, l’utilisation des paramètres régionaux par défaut peut <xref:System.Data.DataTable> entraîner <xref:System.Data.DataSet> la présentation ou l’interprétation incorrecte du contenu de ou.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, définissez explicitement les paramètres régionaux pour le <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>.
+Pour corriger une violation de cette règle, définissez explicitement les paramètres régionaux pour <xref:System.Data.DataTable> ou. <xref:System.Data.DataSet>
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle lorsque la bibliothèque ou l’application est pour un public local limité, les données ne sont pas partagées, ou le paramètre par défaut génère le comportement souhaité dans tous les scénarios pris en charge.
+Il est possible de supprimer sans risque un avertissement de cette règle lorsque la bibliothèque ou l’application est destinée à une audience locale limitée, que les données ne sont pas partagées ou que le paramètre par défaut produit le comportement souhaité dans tous les scénarios pris en charge.
 
-## <a name="example"></a>Exemple
- L’exemple suivant crée deux <xref:System.Data.DataTable> instances.
+## <a name="example"></a>Exemples
+L’exemple suivant crée deux <xref:System.Data.DataTable> instances de.
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 

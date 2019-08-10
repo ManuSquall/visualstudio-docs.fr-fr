@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f82163b1c377df4c8c7fcbba07672312153dad9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797477"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922263"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301 : Éviter les accélérateurs en double
 
@@ -27,28 +27,28 @@ ms.locfileid: "62797477"
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|Category|Microsoft.Globalization|
+|Catégorie|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type étend <xref:System.Windows.Forms.Control?displayProperty=fullName> et contient deux ou plusieurs contrôles de niveau supérieur qui ont des clés d’accès identiques qui sont stockés dans un fichier de ressources.
+Un type étend <xref:System.Windows.Forms.Control?displayProperty=fullName> et contient deux contrôles de niveau supérieur ou plus qui ont des clés d’accès identiques stockées dans un fichier de ressources.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une clé d’accès, également appelé un accélérateur, Active l’accès clavier à un contrôle à l’aide de la **Alt** clé. Lorsque plusieurs contrôles présentent la même clé d’accès, le comportement de la clé d’accès n’est pas bien défini. L’utilisateur ne peut pas être en mesure d’accéder au contrôle prévu à l’aide de la clé d’accès et un contrôle autre que celui qui est prévu peut être activé.
+Une touche d’accès rapide, également appelée accélérateur, permet l’accès au clavier à un contrôle à l’aide de la touche **ALT** . Lorsque plusieurs contrôles possèdent la même clé d’accès, le comportement de la clé d’accès n’est pas bien défini. L’utilisateur peut ne pas être en mesure d’accéder au contrôle souhaité à l’aide de la clé d’accès et un contrôle autre que celui prévu peut être activé.
 
-L’implémentation actuelle de cette règle ignore les éléments de menu. Toutefois, les éléments de menu dans le même sous-menu ne doivent pas avoir les clés d’accès identiques.
+L’implémentation actuelle de cette règle ignore les éléments de menu. Toutefois, les éléments de menu du même sous-menu ne doivent pas avoir des clés d’accès identiques.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, définissez les clés d’accès unique pour tous les contrôles.
+Pour corriger une violation de cette règle, définissez des clés d’accès uniques pour tous les contrôles.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- L’exemple suivant présente un formulaire minimal qui contient deux contrôles qui ont des clés d’accès identiques. Les clés sont stockées dans un fichier de ressources, ce qui n’est pas affiché. Toutefois, leurs valeurs s’affichent dans les out `checkBox.Text` lignes. Le comportement d’accélérateurs en doublon peut être examiné en échangeant les `checkBox.Text` lignes avec leurs équivalents commentés. Toutefois, dans ce cas, l’exemple ne génère pas un avertissement à partir de la règle.
+## <a name="example"></a>Exemples
+L’exemple suivant montre une forme minimale qui contient deux contrôles qui ont des clés d’accès identiques. Les clés sont stockées dans un fichier de ressources, qui n’est pas affiché. Toutefois, leurs valeurs apparaissent dans les lignes en `checkBox.Text` sortie commentées. Le comportement des accélérateurs dupliqués peut être examiné en échangeant `checkBox.Text` les lignes avec les équivalents commentés. Toutefois, dans ce cas, l’exemple ne génère pas d’avertissement à partir de la règle.
 
- [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
+[!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 

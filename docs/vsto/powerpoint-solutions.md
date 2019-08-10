@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f2ecd0adea8e3d71eebff6e532a44def68c01c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872052"
+ms.locfileid: "68926432"
 ---
 # <a name="powerpoint-solutions"></a>Solutions PowerPoint
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office PowerPoint. Vous pouvez utiliser les compléments VSTO pour automatiser PowerPoint, étendre les fonctionnalités PowerPoint ou personnaliser l’interface utilisateur PowerPoint.
@@ -58,7 +58,7 @@ ms.locfileid: "68872052"
  Pour plus d’informations sur la conception de l’assembly PIA PowerPoint, telles que les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’assembly PIA, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA (Primary Interop Assembly](http://go.microsoft.com/fwlink/?LinkId=199885)) d’Office.
 
 ### <a name="vba-object-model-reference"></a>Référence du modèle objet VBA
- La documentation de référence du modèle objet VBA présente le modèle objet PowerPoint tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [Référence du modèle objet PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199770) .
+ La documentation de référence du modèle objet VBA présente le modèle objet PowerPoint tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [Référence du modèle objet PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199770).
 
  Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA PowerPoint. Par exemple, l’objet Presentation dans la documentation de référence du modèle objet VBA correspond au type de [Présentation](/previous-versions/office/developer/office-2010/ff761925(v=office.14)) dans l’assembly PIA PowerPoint. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet de complément VSTO PowerPoint créé à l’aide de Visual Studio.
 

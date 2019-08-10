@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806956"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920608"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137 : Les méthodes transparentes doivent contenir uniquement des IL vérifiables
 
@@ -23,24 +23,24 @@ ms.locfileid: "62806956"
 |-|-|
 |TypeName|TransparentMethodsMustBeVerifiable|
 |CheckId|CA2137|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode contient du code non vérifiable ou retourne un type par référence.
+Une méthode contient du code non vérifiable ou retourne un type par référence.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle se déclenche lorsque le code transparent de sécurité tente d’exécuter du code MSIL (Microsoft Intermediate Language) non vérifiable. Toutefois, la règle ne contient pas de vérificateur IL (Intermediate Language) complet, et à la place utilise l’heuristique pour intercepter la plupart des violations de vérification MSIL.
+Cette règle se déclenche lorsque le code transparent de sécurité tente d’exécuter du code MSIL (Microsoft Intermediate Language) non vérifiable. Toutefois, la règle ne contient pas de vérificateur IL (Intermediate Language) complet, et à la place utilise l’heuristique pour intercepter la plupart des violations de vérification MSIL.
 
- Pour être certain que votre code contient du code MSIL vérifiable uniquement, exécutez [Peverify.exe (outil PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool) sur votre assembly. Exécutez PEVerify avec le **/ transparent** option qui limite la sortie aux seuls non vérifiable méthodes transparentes qui entraînerait une erreur. Si le / option transparente n’est pas utilisée, PEVerify vérifie également des méthodes critiques qui peuvent contenir du code non vérifiable.
+Pour être certain que votre code contient uniquement du code MSIL vérifiable, exécutez [PEVerify. exe (outil PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool) sur votre assembly. Exécutez PEVerify avec l’option **/transparent** , qui limite la sortie aux méthodes transparentes non vérifiables qui provoquent une erreur. Si l’option/transparent n’est pas utilisée, PEVerify vérifie également les méthodes critiques autorisées à contenir du code non vérifiable.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, marquez la méthode avec le <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> d’attribut, ou supprimez le code non vérifiable.
+Pour corriger une violation de cette règle, marquez la méthode avec <xref:System.Security.SecurityCriticalAttribute> l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut ou, ou supprimez le code non vérifiable.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- La méthode dans cet exemple utilise du code non vérifiable et doit être marquée avec le <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> attribut.
+## <a name="example"></a>Exemples
+La méthode dans cet exemple utilise du code non vérifiable et doit être marquée avec l' <xref:System.Security.SecurityCriticalAttribute> attribut <xref:System.Security.SecuritySafeCriticalAttribute> ou.
 
- [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]
+[!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

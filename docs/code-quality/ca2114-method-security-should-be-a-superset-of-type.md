@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 623416e557759ace1ad6403ef8ef977df01da39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545483"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921116"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : La sécurité de la méthode doit être un sur-ensemble du type
 
@@ -27,32 +27,32 @@ ms.locfileid: "62545483"
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type a la sécurité déclarative et une de ses méthodes présente une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas [demandes de liaison](/dotnet/framework/misc/link-demands), et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifié par la méthode.
+Un type a une sécurité déclarative et l’une de ses méthodes a une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas une [demande de liaison](/dotnet/framework/misc/link-demands), et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations contrôlées par la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
- Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau de la méthode et au niveau du type pour la même action. Les deux contrôles ne sont pas combinés ; uniquement la demande au niveau de la méthode est appliquée. Par exemple, si un type demande une autorisation `X`, et une de ses méthodes demande une autorisation `Y`, code n’a pas d’avoir l’autorisation `X` pour exécuter la méthode.
+Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau de la méthode et au niveau du type pour la même action. Les deux contrôles ne sont pas combinés; seule la demande au niveau de la méthode est appliquée. Par exemple, si un type demande une `X`autorisation et que l’une de ses méthodes `Y`demande une autorisation, le code n’a `X` pas besoin d’avoir l’autorisation d’exécuter la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Passez en revue votre code pour vous assurer que les deux actions sont requises. Si les deux actions sont nécessaires, assurez-vous que l’action de niveau de la méthode inclut la sécurité spécifiée au niveau du type. Par exemple, si votre type demande une autorisation `X`, et sa méthode doit également demander une autorisation `Y`, la méthode doit demander explicitement `X` et `Y`.
+Examinez votre code pour vous assurer que les deux actions sont requises. Si les deux actions sont requises, assurez-vous que l’action au niveau de la méthode comprend la sécurité spécifiée au niveau du type. Par exemple, si votre type demande une `X`autorisation et que sa méthode doit également demander `Y`une autorisation, la méthode doit `X` demander `Y`explicitement et.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si la méthode ne requiert pas la sécurité spécifiée par le type. Toutefois, ce scénario n’est pas ordinaire et peut indiquer la nécessité d’un examen approfondi du design.
+Il est possible de supprimer sans risque un avertissement de cette règle si la méthode ne requiert pas la sécurité spécifiée par le type. Toutefois, il ne s’agit pas d’un scénario ordinaire et peut indiquer une nécessité d’un examen minutieux de la conception.
 
 ## <a name="example-1"></a>Exemple 1
 
-L’exemple suivant utilise des autorisations d’environnement pour illustrer les dangers de violation de cette règle. Dans cet exemple, le code d’application crée une instance du type sécurisé avant de refuser l’autorisation requise par le type. Dans un scénario de menace réel, l’application nécessiterait une autre façon d’obtenir une instance de l’objet.
+L’exemple suivant utilise des autorisations d’environnement pour démontrer les dangers de la violation de cette règle. Dans cet exemple, le code d’application crée une instance du type sécurisé avant de refuser l’autorisation requise par le type. Dans un scénario de menace réel, l’application nécessiterait une autre façon d’obtenir une instance de l’objet.
 
-Dans l’exemple suivant, la bibliothèque demande autorisation en écriture pour un type et une autorisation pour une méthode de lecture.
+Dans l’exemple suivant, la bibliothèque demande une autorisation d’écriture pour un type et une autorisation de lecture pour une méthode.
 
 [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
 ## <a name="example-2"></a>Exemple 2
 
-Le code d’application suivant montre la vulnérabilité de la bibliothèque en appelant la méthode, même si elle ne répond pas aux exigences de sécurité de niveau type.
+Le code d’application suivant illustre la vulnérabilité de la bibliothèque en appelant la méthode, même si elle ne répond pas aux exigences de sécurité au niveau du type.
 
 [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
 

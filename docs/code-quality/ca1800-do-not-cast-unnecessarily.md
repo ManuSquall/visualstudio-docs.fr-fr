@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797177"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921594"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800 : N'effectuez pas de cast inutilement
 
@@ -30,36 +30,36 @@ ms.locfileid: "62797177"
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Category|Microsoft.Performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
-Une méthode effectue des casts en double sur un de ses arguments ou les variables locales.
+Une méthode effectue des conversions en double sur l’un de ses arguments ou variables locales.
 
-Pour l’analyse complète par cette règle, l’assembly testé doit être construit à l’aide des informations de débogage et le fichier de base de données (.pdb) du programme associé doit être disponible.
+Pour une analyse complète par cette règle, l’assembly testé doit être généré à l’aide des informations de débogage, et le fichier de base de données du programme (. pdb) associé doit être disponible.
 
 ## <a name="rule-description"></a>Description de la règle
-Les casts en doublon font baisser les performances, surtout lorsque les casts sont exécutés au sein d'instructions d'itération compactes. Pour les opérations de casts en doublon explicites, stocker le résultat du cast dans une variable locale et utilisez la variable locale au lieu des opérations de cast en double.
+Les casts en doublon font baisser les performances, surtout lorsque les casts sont exécutés au sein d'instructions d'itération compactes. Pour les opérations de cast en doublon explicites, stockez le résultat du cast dans une variable locale et utilisez la variable locale à la place des opérations de conversion en double.
 
-Si C# `is` opérateur est utilisé pour déterminer si le cast va réussir avant l’exécution proprement dite, envisagez de tester le résultat de la `as` opérateur à la place. Cela fournit les mêmes fonctionnalités sans l’opération de cast implicite est effectuée par le `is` opérateur. Ou, dans c# 7.0 et versions ultérieures, utilisez le `is` opérateur avec [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) de vérifier la conversion de type et de convertir l’expression à une variable de ce type en une seule étape.
+Si l' C# `is` opérateur est utilisé pour déterminer si le cast aboutit avant l’exécution du cast réel, envisagez de tester le `as` résultat de l’opérateur à la place. Cela fournit les mêmes fonctionnalités sans l’opération de conversion implicite effectuée par l' `is` opérateur. Ou, dans C# 7,0 et versions ultérieures, `is` utilisez l’opérateur avec des [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) pour vérifier la conversion de type et effectuez un cast de l’expression en une variable de ce type en une seule étape.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez l’implémentation de méthode pour réduire le nombre d’opérations de cast.
+Pour corriger une violation de cette règle, modifiez l’implémentation de la méthode afin de réduire le nombre d’opérations de conversion.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est recommandé de supprimer un avertissement de cette règle, ou à ignorer la règle, si les performances ne sont pas un problème.
+Il est possible de supprimer sans risque un avertissement de cette règle, ou d’ignorer complètement la règle, si les performances ne sont pas un problème.
 
 ## <a name="examples"></a>Exemples
- L’exemple suivant montre une méthode qui viole la règle à l’aide de C# `is` opérateur. Une deuxième méthode satisfait la règle en remplaçant le `is` opérateur avec un test par rapport au résultat de la `as` opérateur, ce qui réduit le nombre d’opérations de cast par itération de deux à un. Une troisième méthode satisfait également à la règle à l’aide de `is` avec [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) pour créer une variable du type souhaité si la conversion de type réussirait.
+L’exemple suivant montre une méthode qui enfreint la règle à l’aide de C# `is` l’opérateur. Une deuxième méthode remplit la règle en remplaçant l' `is` opérateur par un test par rapport au résultat de l' `as` opérateur, ce qui réduit le nombre d’opérations de conversion par itération de deux à un. Une troisième méthode satisfait également à la règle en utilisant `is` avec des [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) pour créer une variable du type souhaité si la conversion de type réussit.
 
- [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
+[!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
- L’exemple suivant montre une méthode, `start_Click`, qui a plusieurs conversions explicites en double, ce qui viole la règle et une méthode, `reset_Click`, ce qui satisfait la règle en stockant le cast dans une variable locale.
+L’exemple suivant montre une méthode, `start_Click`, qui a plusieurs casts explicites en double, qui violent la règle, et une méthode `reset_Click`,, qui satisfait la règle en stockant le cast dans une variable locale.
 
- [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
+[!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
+[!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 
-- [as (référence c#)](/dotnet/csharp/language-reference/keywords/as)
-- [is (référence c#)](/dotnet/csharp/language-reference/keywords/is)
+- [As (C# référence)](/dotnet/csharp/language-reference/keywords/as)
+- [is (C# référence)](/dotnet/csharp/language-reference/keywords/is)

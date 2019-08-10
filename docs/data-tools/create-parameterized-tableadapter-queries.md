@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567300"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925650"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 
 Une requête paramétrable retourne des données remplissant les conditions d'une clause WHERE dans la requête. Par exemple, vous pouvez paramétrer une liste de clients de sorte à n'afficher que les clients d'une certaine ville en ajoutant `WHERE City = @City` à la fin de l'instruction SQL qui retourne une liste de clients.
 
-Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dataset**. Vous pouvez également les créer dans une application Windows avec le **paramétrer la Source de données** commande sur le **données** menu. Le **paramétrer la Source de données** commande crée des contrôles sur votre formulaire où vous pouvez entrer les valeurs de paramètre et exécuter la requête.
+Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de DataSet**. Vous pouvez également les créer dans une application Windows à l’aide de la commande paramétrer la **source de données** dans le menu **données** . La commande paramétrer la **source de données** crée des contrôles sur votre formulaire, où vous pouvez entrer les valeurs des paramètres et exécuter la requête.
 
 > [!NOTE]
-> Lors de la construction d’une requête paramétrée, utilisez la notation de paramètre spécifique à la base de données que vous codez par rapport à. Par exemple, les sources de données Access et OleDb utilisent le point d'interrogation « ? » pour désigner des paramètres, la clause WHERE sera donc de type : `WHERE City = ?`.
+> Lors de la construction d’une requête paramétrable, utilisez la notation de paramètre spécifique à la base de données avec laquelle vous codez. Par exemple, les sources de données Access et OleDb utilisent le point d'interrogation « ? » pour désigner des paramètres, la clause WHERE sera donc de type : `WHERE City = ?`.
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>Créer une requête TableAdapter paramétrée
 
@@ -40,15 +40,15 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 - Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - ou -
+     ou
 
 - Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>Pour créer une requête paramétrée pendant la conception d'un formulaire lié aux données
 
-1. Sélectionnez un contrôle dans votre formulaire déjà lié à un dataset. Pour plus d’informations, consultez [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+1. Sélectionnez un contrôle dans votre formulaire déjà lié à un dataset. Pour plus d’informations, consultez [lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2. Sur le **données** menu, sélectionnez **ajouter une requête**.
+2. Dans le menu **données** , sélectionnez **Ajouter une requête**.
 
 3. Utilisez la boîte de dialogue **Générateur de critères de recherche**, en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.
 
@@ -56,20 +56,20 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 1. Ouvrez le formulaire dans le **Concepteur Windows Forms**.
 
-2. Sur le **données** menu, sélectionnez **ajouter une requête** ou **balises actives de données**.
+2. Dans le menu **données** , sélectionnez **Ajouter une requête** ou des balises **actives de données**.
 
     > [!NOTE]
     > Si l’option **Ajouter une requête** n’est pas disponible dans le menu **Données**, sélectionnez un contrôle dans le formulaire qui affiche la source de données à laquelle ajouter le paramétrage. Par exemple, si le formulaire affiche des données dans un contrôle <xref:System.Windows.Forms.DataGridView>, sélectionnez-le. Si le formulaire affiche des données dans des contrôles individuels, sélectionnez n'importe quel contrôle lié aux données.
 
-3. Dans le **table de source de données Sélectionnez** zone, sélectionnez la table à laquelle vous souhaitez ajouter le paramétrage.
+3. Dans la zone **Sélectionner une table de source de données** , sélectionnez la table à laquelle vous souhaitez ajouter le paramétrage.
 
 4. Tapez un nom dans la zone **Nom de la nouvelle requête** si vous créez une requête.
 
-     - ou -
+     ou
 
      Sélectionnez une requête dans la zone **Nom de la requête existante**.
 
-5. Dans le **texte de la requête** , tapez une requête qui accepte des paramètres.
+5. Dans la zone de **texte requête** , tapez une requête qui accepte des paramètres.
 
 6. Sélectionnez **OK**.
 
@@ -77,26 +77,26 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 ### <a name="query-for-null-values"></a>Requête pour les valeurs null
 
-Les valeurs null peuvent être assignées aux paramètres TableAdapter lorsque vous souhaitez interroger les enregistrements qui n’ont aucune valeur actuelle. Par exemple, considérez la requête suivante qui a un `ShippedDate` paramètre dans son `WHERE` clause :
+Les paramètres TableAdapter peuvent recevoir des valeurs NULL lorsque vous souhaitez rechercher des enregistrements qui n’ont pas de valeur actuelle. Par exemple, considérez la requête suivante qui a `ShippedDate` un paramètre dans `WHERE` sa clause:
 
- ```sql
+```sql
 SELECT CustomerID, OrderDate, ShippedDate
 FROM Orders
 WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 ```
 
-S’il s’agissait d’une requête sur un TableAdapter, vous pouvez rechercher toutes les commandes qui n’ont pas été fournis par le code suivant :
+S’il s’agissait d’une requête sur un TableAdapter, vous pouvez interroger toutes les commandes qui n’ont pas été expédiées avec le code suivant:
 
 [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
 [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]
 
-Pour activer une requête d’accepter les valeurs null :
+Pour permettre à une requête d’accepter des valeurs NULL:
 
-1. Dans le **Concepteur de Dataset**, sélectionnez la requête TableAdapter qui doit accepter les valeurs de paramètre null.
+1. Dans le **Concepteur de DataSet**, sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
 
-2. Dans le **propriétés** fenêtre, sélectionnez **paramètres**, puis cliquez sur le bouton de sélection (**...** ) pour ouvrir la **éditeur de collections Parameters**.
+2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**, puis cliquez sur le bouton de sélection ( **...** ) pour ouvrir l' **éditeur de collections**Parameters.
 
-3. Sélectionnez le paramètre qui autorise les valeurs null et définissez le **AllowDbNull** propriété `true`.
+3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à `true`la propriété **AllowDBNull** la valeur.
 
 ## <a name="see-also"></a>Voir aussi
 

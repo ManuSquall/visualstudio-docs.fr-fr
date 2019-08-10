@@ -18,35 +18,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61ebcd6c833b55f0769365b89274e35136c914f9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565858"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925350"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Mettre à jour les données à l’aide d’un TableAdapter
 
-Une fois que les données dans votre jeu de données a été modifiées et validées, vous pouvez envoyer les données mises à jour vers une base de données en appelant le `Update` méthode d’un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). Le `Update` méthode met à jour une table de données unique et exécute la commande correcte (INSERT, UPDATE ou DELETE), selon le <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données dans la table. Lorsque les tables sont liées à un jeu de données, Visual Studio génère une classe TableAdapterManager qui vous permet d’effectuer les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre approprié selon les contraintes de clé étrangère sont définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture de liaison de données crée une variable de membre de la classe de TableAdapterManager appelée tableAdapterManager.
+Une fois que les données de votre jeu de données ont été modifiées et validées, vous pouvez renvoyer les données mises à jour `Update` à une base de données en appelant la méthode d’un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). La `Update` méthode met à jour une table de données unique et exécute la commande correcte (Insert, Update ou Delete) en fonction <xref:System.Data.DataRow.RowState%2A> du de chaque ligne de données dans la table. Quand un DataSet a des tables associées, Visual Studio génère une classe TableAdapterManager que vous utilisez pour effectuer les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre correct en fonction des contraintes de clé étrangère définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture DataBinding crée une variable membre de la classe TableAdapterManager appelée tableAdapterManager.
 
 > [!NOTE]
-> Lorsque vous essayez de mettre à jour d’une source de données avec le contenu d’un dataset, vous pouvez obtenir des erreurs. Pour éviter les erreurs, nous vous recommandons de placer le code qui appelle l’adaptateur `Update` méthode à l’intérieur d’un `try` / `catch` bloc.
+> Lorsque vous essayez de mettre à jour une source de données avec le contenu d’un DataSet, vous pouvez obtenir des erreurs. Pour éviter les erreurs, nous vous recommandons de placer le code qui appelle la méthode `Update` de l’adaptateur `try` à l’intérieur d’un / `catch` bloc.
 
- La procédure exacte de mise à jour d’une source de données peut varier en fonction des besoins de l’entreprise, mais il comprend les étapes suivantes :
+La procédure exacte pour la mise à jour d’une source de données peut varier en fonction des besoins de l’entreprise, mais elle comprend les étapes suivantes:
 
-1. Appeler l’adaptateur `Update` méthode dans un `try` / `catch` bloc.
+1. Appelez la `Update` méthode de l’adaptateur dans `try` un / `catch` bloc.
 
-2. Si une exception est interceptée, recherchez la ligne de données qui a provoqué l’erreur.
+2. Si une exception est interceptée, localisez la ligne de données à l’origine de l’erreur.
 
-3. Résolvez le problème dans les données de ligne (par programmation si possible, ou à l’aide de la ligne non valide pour que l’utilisateur), puis réessayez la mise à jour (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Rapprochez le problème dans la ligne de données (par programmation si vous le pouvez, ou en présentant la ligne non valide à l’utilisateur pour le modifier), puis recommencez<xref:System.Data.DataRow.HasErrors%2A>la <xref:System.Data.DataTable.GetErrors%2A>mise à jour (,).
 
-## <a name="save-data-to-a-database"></a>Enregistrer les données dans une base de données
+## <a name="save-data-to-a-database"></a>Enregistrer des données dans une base de données
 
-Appelez le `Update` méthode d’un TableAdapter. Passez le nom de la table de données qui contient les valeurs à écrire dans la base de données.
+Appelez la `Update` méthode d’un TableAdapter. Transmettez le nom de la table de données qui contient les valeurs à écrire dans la base de données.
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>Pour mettre à jour une base de données à l’aide d’un TableAdapter
 
-- Placez le TableAdapter`Update` méthode dans un `try` / `catch` bloc. L’exemple suivant montre comment mettre à jour le contenu de la `Customers` table `NorthwindDataSet` depuis un `try` / `catch` bloc.
+- Placez la méthode du`Update` TableAdapter dans un `try` / `catch` bloc. L’exemple suivant montre comment mettre à jour le contenu de `Customers` la table `NorthwindDataSet` dans à partir `try` d’un / `catch` bloc.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

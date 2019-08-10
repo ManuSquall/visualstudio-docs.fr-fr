@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545046"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920810"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123 : Les demandes de liaison de substitution doivent être identiques au composant de base
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545046"
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode publique ou protégée dans un type public substitue une méthode ou implémente une interface et n’a pas le même [demandes de liaison](/dotnet/framework/misc/link-demands) que l’interface ou une méthode virtuelle.
+Une méthode publique ou protégée dans un type public se substitue à une méthode ou implémente une interface, et n’a pas les mêmes [demandes de liaison](/dotnet/framework/misc/link-demands) que l’interface ou la méthode virtuelle.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle met en correspondance une méthode et sa méthode de base, qui est soit une interface, soit une méthode virtuelle dans un autre type, puis compare les demandes de liaison sur chacune. Une violation est signalée si la méthode ou la méthode de base a une demande de liaison et l’autre n’est pas le cas.
+Cette règle met en correspondance une méthode et sa méthode de base, qui est soit une interface, soit une méthode virtuelle dans un autre type, puis compare les demandes de liaison sur chacune. Une violation est signalée si la méthode ou la méthode de base a une demande de liaison et que l’autre ne le fait pas.
 
- Si cette règle est violée, un appelant malveillant peut contourner la demande de liaison simplement en appelant la méthode non sécurisée.
+Si cette règle est violée, un appelant malveillant peut ignorer la demande de liaison simplement en appelant la méthode non sécurisée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, appliquez la même demande de liaison à la méthode de substitution ou l’implémentation. Si ce n’est pas possible, marquez la méthode avec une demande complète ou supprimer complètement de l’attribut.
+Pour corriger une violation de cette règle, appliquez la même demande de liaison à la méthode ou à l’implémentation du remplacement. Si ce n’est pas possible, marquez la méthode avec une demande complète ou supprimez complètement l’attribut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- L’exemple suivant montre différentes violations de cette règle.
+## <a name="example"></a>Exemples
+L’exemple suivant illustre différentes violations de cette règle.
 
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+[!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 

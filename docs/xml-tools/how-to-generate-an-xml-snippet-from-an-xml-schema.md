@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825766"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926815"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : Générer un extrait XML à partir d’un schéma XML
 
-L’éditeur XML a la possibilité de générer des extraits XML à partir d’un schéma XML Schema definition language (XSD). Par exemple, lorsque vous créez un fichier XML, tout en étant positionné en regard du nom de l’élément, vous pouvez appuyer sur **onglet** pour remplir l’élément avec des données XML générées à partir des informations de schéma pour cet élément.
+L’éditeur XML a la possibilité de générer des extraits XML à partir d’un schéma en langage XSD (XML Schema Definition). Par exemple, lorsque vous créez un fichier XML, alors que vous êtes positionné en regard du nom de l’élément, vous pouvez appuyer sur la touche **Tab** pour remplir l’élément avec les données XML générées à partir des informations de schéma de cet élément.
 
 Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :
 
@@ -41,34 +41,34 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 - Si le type de schéma est un type atomique, l'éditeur cherche ce type atomique et en insère le nom. Pour un type simple dérivé, il utilise le type simple de base. Pour un type de liste, le type atomique est l'`itemType`. Pour une union, le type atomique est celui du premier `memberType`.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
- Les étapes décrites dans cette section vous montrent comment utiliser la fonctionnalité d’extrait de code XML généré par le schéma de l’éditeur XML.
+Les étapes de cette section vous montrent comment utiliser la fonctionnalité d’extrait XML généré par schéma de l’éditeur XML.
 
 > [!NOTE]
 > Avant d'entamer ces procédures, enregistrez le fichier de schéma sur votre ordinateur local.
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
 
-2. Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.
+2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir ( **...** ) sur le **schémas** champ.
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
 
-     Le **schémas XSD** boîte de dialogue s’affiche.
+     La boîte de dialogue **schémas XSD** s’affiche.
 
 4. Cliquez sur **Ajouter**.
 
-     Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.
+     La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 
-5. Sélectionnez le fichier de schéma et cliquez sur **Open**.
+5. Sélectionnez le fichier de schéma, puis cliquez sur **ouvrir**.
 
 6. Cliquez sur **OK**.
 
-     Le schéma XML est désormais associée au document XML.
+     Le schéma XML est désormais associé au document XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Pour générer un extrait XML
 
@@ -82,17 +82,17 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
      **?** permet d'ajouter une instruction de traitement.
 
-     **Contact** pour ajouter l’élément racine.
+     **Contactez** pour ajouter l’élément racine.
 
-3. Sélectionnez **Contact** dans la liste des membres et appuyez sur **entrée**.
+3. Sélectionnez **contact** dans la liste des membres et appuyez sur **entrée**.
 
      L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.
 
-4. Appuyez sur **onglet** pour générer des données XML pour le `Contact` élément basé sur ses informations de schéma.
+4. Appuyez sur **Tab** pour générer des données XML `Contact` pour l’élément en fonction de ses informations de schéma.
 
 ## <a name="input"></a>Entrée
 
- La procédure pas à pas utilise le fichier de schéma suivant.
+La procédure pas à pas utilise le fichier de schéma suivant.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ### <a name="output"></a>Sortie
 
- Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` champs modifiables dans l’extrait de code XML.
+Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués `bold` comme désignent des champs modifiables dans l’extrait XML.
 
 ```xml
 <Contact>

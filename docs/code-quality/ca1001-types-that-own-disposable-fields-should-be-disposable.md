@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 581bc75c22326275dcb3657910f60c2977094037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fae67f8c1ffa3b4e6d7cc2f0fbbaf670733f9ff4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779744"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923307"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables
 
@@ -30,32 +30,32 @@ ms.locfileid: "62779744"
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
-|Category|Microsoft.Design|
-|Modification avec rupture|Sans rupture - Si le type n’est pas visible en dehors de l’assembly.<br /><br /> Avec rupture - Si le type est visible en dehors de l’assembly.|
+|Catégorie|Microsoft.Design|
+|Modification avec rupture|Sans rupture: si le type n’est pas visible à l’extérieur de l’assembly.<br /><br /> Avec rupture: si le type est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
- Une classe déclare et implémente un champ d’instance qui est un <xref:System.IDisposable?displayProperty=fullName> type et la classe n’implémente pas <xref:System.IDisposable>.
+Une classe déclare et implémente un champ d’instance qui est un <xref:System.IDisposable?displayProperty=fullName> type et la classe n’implémente <xref:System.IDisposable>pas.
 
 ## <a name="rule-description"></a>Description de la règle
- Une classe implémente la <xref:System.IDisposable> interface pour supprimer les ressources non managées qu’il possède. Un champ d’instance qui est un <xref:System.IDisposable> type indique que le champ possède une ressource non managée. Une classe qui déclare un <xref:System.IDisposable> champ indirectement possède une ressource non managée et doit implémenter le <xref:System.IDisposable> interface. Si la classe ne possède pas directement les ressources non managées, il ne doit pas implémenter un finaliseur.
+Une classe implémente l' <xref:System.IDisposable> interface pour supprimer les ressources non managées qu’elle possède. Un champ d’instance qui est <xref:System.IDisposable> un type indique que le champ est propriétaire d’une ressource non managée. Une classe qui déclare un <xref:System.IDisposable> champ possède indirectement une ressource non managée et doit implémenter l' <xref:System.IDisposable> interface. Si la classe ne possède pas directement de ressources non managées, elle ne doit pas implémenter de finaliseur.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, implémentez <xref:System.IDisposable> et à partir de la <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> appel de méthode le <xref:System.IDisposable.Dispose%2A> méthode du champ.
+Pour corriger une violation de cette règle, implémentez <xref:System.IDisposable> et à partir de la <xref:System.IDisposable.Dispose%2A> <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode appelez la méthode du champ.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- L’exemple suivant montre une classe qui viole la règle et une classe qui satisfait la règle en implémentant <xref:System.IDisposable>. La classe n’implémente pas de finaliseur, car la classe ne possède pas directement les ressources non managées.
+## <a name="example"></a>Exemples
+L’exemple suivant montre une classe qui enfreint la règle et une classe qui satisfait la règle en implémentant <xref:System.IDisposable>. La classe n’implémente pas de finaliseur, car la classe ne possède pas directement de ressources non managées.
 
- [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+[!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
+[!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2216 : Les types supprimables doivent déclarer un finaliseur](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216 Les types jetables doivent déclarer un finaliseur](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215 : Méthodes Dispose doivent appeler dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215 Les méthodes dispose doivent appeler la méthode dispose de la classe de base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049 : Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049 Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
