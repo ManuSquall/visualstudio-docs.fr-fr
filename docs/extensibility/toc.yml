@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: Dépannage de VSPackages
       href: troubleshooting-vspackages.md
-- name: Interpréteur de commande (intégré ou isolé)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: "Livrer des extensions Visual\_Studio"
   items:
     - name: "Livrer des extensions Visual\_Studio"
