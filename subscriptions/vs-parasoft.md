@@ -1,17 +1,17 @@
 ---
 title: Avantage de Parasoft Virtualize/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824644"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787708"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -27,7 +27,10 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 3. Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Parasoft, Créer un compte](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Avantage Parasoft, Créer un compte](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > Le tableau de la page indique la tarification pour une année complète, avec une remise Visual Studio. Cette tarification s’applique UNE FOIS QUE vous avez utilisé votre abonnement de six mois.  
 
 4. Une fois que vous avez créé votre compte, vous voyez s’afficher une notification indiquant qu’un e-mail avec des instructions de téléchargement vous a été envoyé.  (N’oubliez pas de vérifier vos dossiers de courrier indésirable si vous ne trouvez pas cet e-mail dans votre boîte de réception.)
 
@@ -56,14 +59,12 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 14. Spécifiez où vous voulez installer le raccourci de l’application, puis cliquez sur **Next** (Suivant).
 
 15. Le certificat d’autorité de certification racine web SOAtest est obligatoire pour certains tests fonctionnels effectués sur des sites HTTPS.  Choisissez si vous voulez installer le certificat d’autorité de certification racine, puis cliquez sur **Next** (Suivant).
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Parasoft, Certificat d’autorité de certification racine](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft vous recommande vivement de choisir l’installation du certificat.
 
 16. Choisissez si vous voulez que des icônes de lancement rapide et de Bureau soient créées pendant l’installation, puis cliquez sur **Next** (Suivant).
 
 17. Confirmez les options que vous avez sélectionnées, puis cliquez sur **Install** (Installer) pour démarrer l’installation du logiciel.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Parasoft, Prêt à installer](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. À la fin de l’installation, cliquez sur **Finish** (Terminer). Vous êtes maintenant prêt à utiliser votre avantage Parasoft Virtualize/SOAtest Professional Desktop !
 
@@ -89,3 +90,6 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
   - Centre de ressources Parasoft : https://www.parasoft.com/resources/
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+Tirez parti de votre propre bac à sable de développement en activant vos [crédits Azure](vs-azure.md). 

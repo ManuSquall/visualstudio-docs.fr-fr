@@ -1,24 +1,22 @@
 ---
 title: Avantage Azure Advisory Chat dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrez comment tirer parti de l’avantage Azure Advisory Chat inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250838"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681718"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
-
 Obtenez de l’aide avec Azure en temps réel ! Inclut des conseils pour les services Azure PaaS.  L’avantage Azure Advisory Chat est disponible dans les abonnements Visual Studio Enterprise standard et cloud annuels.
 
 ## <a name="activation-steps"></a>Étapes d'activation
-
 L’utilisation d’Azure Advisory Chat est très simple.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Recherchez la vignette Azure Advisory Chat dans la section Support, puis cliquez sur **Démarrer une conversation**.
@@ -34,7 +32,6 @@ L’utilisation d’Azure Advisory Chat est très simple.
     > ![Conversation Azure Advisory](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Éligibilité
-
 |                                                      Niveau d'abonnement                                                      |     Canaux      |    Avantage    | Renouvelable ? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (Standard)                                       | Licences en volume, Azure, Détail |   Un an    |    Oui     |
@@ -57,3 +54,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="support-resources"></a>Ressources de support technique
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+De nombreux abonnements Visual Studio incluent des crédits Azure.  Si vous n’avez pas encore activé les vôtres, consultez l’[avantage Azure](vs-azure.md). 

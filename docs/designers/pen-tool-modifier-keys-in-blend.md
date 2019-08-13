@@ -1,5 +1,6 @@
 ---
-title: Touches de modification de l’outil Plume dans Blend
+title: Touches de modification de l'outil Plume
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820444"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822116"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Plume dans Blend
+# <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Plume dans Blend pour Visual Studio
+
 Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume** ![outil Plume](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.
 
 |Pour|Procédez comme suit|Pointeur|
@@ -36,7 +38,6 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Raccourcis clavier et touches de modification](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
 - [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [Dessiner des formes et des tracés](../designers/draw-shapes-and-paths.md)

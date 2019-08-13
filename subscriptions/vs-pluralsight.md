@@ -1,17 +1,17 @@
 ---
 title: Avantage Pluralsight dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784880"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787658"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -32,36 +32,27 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
    > **« Remarque :   Si vous avez préalablement activé une autre offre Pluralsight par le biais de votre abonnement Visual Studio, vous ne pourrez peut-être pas utiliser ce code pour créer un compte Pluralsight. »**
 
 2. Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer**.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Pluralsight, Activer](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. Vous êtes ensuite redirigé vers la page Pluralsight correspondant à l’avantage inclus dans votre abonnement Visual Studio.
    - Entrez les coordonnées demandées dans le formulaire.
    - Cochez la case pour accepter les conditions d’utilisation et la déclaration de confidentialité.
    - Cliquez sur **I agree, activate benefit** (J’accepte. Activer l’avantage).
-     > [!div class="mx-imgBorder"]
-     > ![Avantage Pluralsight, Activation](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Avantage Pluralsight, Conditions d’utilisation](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Activer votre avantage Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. La création de votre compte peut prendre plusieurs minutes.  À la fin de cette opération, vous voyez une confirmation s’afficher dans la page et vous recevez un e-mail avec vos informations de connexion.  Cet e-mail vous est envoyé à l’alias que vous avez indiqué au moment de la création du compte.  Si vous ne voyez pas ce message, vérifiez qu’il ne se trouve pas dans vos dossiers de courrier indésirable.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Pluralsight, Confirmation](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > Si votre compte ne permet pas de bénéficier de nouvelles offres, l’e-mail que vous recevez explique que votre compte n’a pas pu être créé en raison de son inéligibilité.  Il contient également des informations expliquant comment contacter l’équipe de support technique de Pluralsight, à laquelle vous pouvez poser des questions concernant votre compte.
+   
 
 6. Une fois que votre compte a été créé, vous recevez un e-mail qui contient votre nom d’utilisateur et vous invite à créer un mot de passe.  Entrez votre mot de passe, entrez-le une deuxième fois pour le confirmer, puis cliquez sur **Log in to Pluralsight** (Accéder à Pluralsight).
    > [!div class="mx-imgBorder"]
    > ![Avantage Pluralsight, E-mail de bienvenue](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. Entrez le nom d’utilisateur fourni dans l’e-mail de bienvenue et le mot de passe que vous venez de créer, puis cliquez sur **Sign in** (Connexion).
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Pluralsight, Connexion](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. C’est tout !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Pluralsight, Accueil](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Éligibilité
 

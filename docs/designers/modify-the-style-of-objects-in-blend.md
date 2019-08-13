@@ -1,5 +1,6 @@
 ---
-title: Modifier le style des objets dans Blend
+title: Modifier le style des objets
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845204"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821962"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modifier le style des objets dans Blend pour Visual Studio
 
 Le moyen le plus simple de personnaliser un objet est d’en définir les propriétés dans le panneau **Propriétés**.
 
@@ -84,11 +85,11 @@ Cliquez avec le bouton droit sur un objet dans la fenêtre [Objets et chronologi
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle
 
-Sélectionnez le contrôle puis, dans la fenêtre [Propriétés](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
+Sélectionnez le contrôle puis, dans la fenêtre **Propriétés****, recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>États visuels : modifier l’apparence d’un contrôle en fonction de son état
+## <a name="visual-states"></a>États visuels
 
-Les contrôles peuvent avoir des apparences visuelles différentes en fonction des interactions de l'utilisateur. Par exemple, vous pouvez faire en sorte qu'un bouton devienne vert quand un utilisateur clique dessus ou vous pouvez exécuter une animation. Vous pouvez raccourcir ou allonger la durée entre les états visuels à l'aide de transitions.
+Les états visuels vous permettent de modifier l’apparence d’un contrôle en fonction de son état. Les contrôles peuvent avoir des apparences visuelles différentes en fonction des interactions de l'utilisateur. Par exemple, vous pouvez faire en sorte qu’un bouton devienne vert quand un utilisateur clique dessus, ou vous pouvez exécuter une animation. Vous pouvez raccourcir ou allonger la durée qui s’écoule entre chaque état visuel à l’aide de transitions.
 
 ![État de pointage avec la souris](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430851"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740018"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
 
@@ -24,9 +24,12 @@ ms.locfileid: "62430851"
 
 La fenêtre **Interactive** de Visual Studio pour Python offre une expérience utilisateur REPL (read-evaluate-print-loop) intéressante, qui réduit considérablement le cycle habituel de modification-génération-débogage. La fenêtre **Interactive** fournit toutes les fonctionnalités de l’expérience utilisateur REPL de la ligne de commande Python. Elle facilite également l’échange de code avec des fichiers sources dans l’éditeur Visual Studio, qui sans cela serait fastidieux avec la ligne de commande.
 
-1. Ouvrez la fenêtre **Interactive** en cliquant avec le bouton droit sur l’environnement Python du projet dans l’**Explorateur de solutions** (par exemple **Python 3.6 (32 bits)**, qui figure dans une illustration précédente), puis en sélectionnant **Ouvrir la fenêtre Interactive**. Vous pouvez également sélectionner **Affichage** > **Autres fenêtres** > **Fenêtres interactives Python** dans le menu principal de Visual Studio.
+> [!NOTE]
+> Pour les problèmes liés à REPL, vérifiez que les packages `ipython` et `ipykernel` sont installés. Pour obtenir de l’aide sur l’installation des packages, consultez [Onglet packages, Environnements Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
-1. La fenêtre **Interactive** s’ouvre en dessous de l’éditeur avec l’invite de commandes REPL Python standard **>>>**. La liste déroulante **Environnement** vous permet de sélectionner un interpréteur spécifique à utiliser. Vous pouvez aussi agrandir la fenêtre **Interactive** en faisant glisser le séparateur entre les deux fenêtres :
+1. Ouvrez la fenêtre **Interactive** en cliquant avec le bouton droit sur l’environnement Python du projet dans l’**Explorateur de solutions** (par exemple **Python 3.6 (32 bits)** , qui figure dans une illustration précédente), puis en sélectionnant **Ouvrir la fenêtre Interactive**. Vous pouvez également sélectionner **Affichage** > **Autres fenêtres** > **Fenêtres interactives Python** dans le menu principal de Visual Studio.
+
+1. La fenêtre **Interactive** s’ouvre en dessous de l’éditeur avec l’invite de commandes REPL Python standard **>>>** . La liste déroulante **Environnement** vous permet de sélectionner un interpréteur spécifique à utiliser. Vous pouvez aussi agrandir la fenêtre **Interactive** en faisant glisser le séparateur entre les deux fenêtres :
 
     ![Fenêtre interactive de Python - redimensionnement par glissement](media/vs-getting-started-python-11-interactive1b.png)
 

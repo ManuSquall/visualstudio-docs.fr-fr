@@ -1,20 +1,19 @@
 ---
 title: Avantage Support technique
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 2/13/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 5b5bb690af4223ace46ea090a482df610e298fd6
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785044"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681600"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
-
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
 
 > [!NOTE]
@@ -26,7 +25,6 @@ L’avantage Support technique dans les abonnements Visual Studio permet de rés
 **Pour soumettre une demande de support à l’aide de l’avantage, celui-ci doit être activé.  Suivez les étapes décrites dans la section suivante pour effectuer l’activation.**
 
 ## <a name="how-to-activate-the-benefit"></a>Comment activer l’avantage
-
 1. Accédez à https://my.visualstudio.com/Benefits, faites défiler la page jusqu’à la section Support et, dans la vignette Support technique, cliquez sur **Activer par chat**.
     > [!div class="mx-imgBorder"]
     > ![Vignette de l’avantage Support technique](_img/vs-tech-support/vs-tech-support-tile.png)
@@ -43,17 +41,15 @@ L’avantage Support technique dans les abonnements Visual Studio permet de rés
    > [!div class="mx-imgBorder"]
    > ![Avantage Support technique, Rechercher un ID d’abonnement](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. Une fois le processus terminé, vous recevez un e-mail contenant votre **ID de contrat** et votre **ID d’accès** dont vous avez besoin pour créer un incident de support.
+4. Une fois le processus terminé, vous recevez un e-mail contenant votre **ID de contrat** et votre **ID d’accès** dont vous avez besoin pour créer un incident de support.  Il fournit également des instructions sur la soumission d’incidents de support à l’aide de votre nouvel ID d’accès et de votre ID de contrat. 
 
 > [!NOTE]
 > Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Comment signaler un incident à l’aide de votre avantage
-
 Après avoir configuré votre **ID de contrat** et votre **ID d’accès**, vous pouvez les utiliser pour signaler un incident de support technique [en ligne](http://support.microsoft.com/oas/) (connexion requise), par le biais du [portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou en appelant le numéro du support technique de votre pays. Si vous signalez votre incident en ligne, vous pouvez demander à ce qu’un professionnel du support technique Microsoft vous rappelle.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Le compte que vous avez utilisé pour signaler un incident de support technique en ligne est déjà associé à un ID de contrat et un ID d’accès ?
-
 Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous connecter. Connectez-vous à l’aide du compte associé à votre ID de contrat et votre ID d’accès. Votre avantage Plan de Support existant associé à votre compte apparaît à l’étape 3 du flux de support. Sélectionnez simplement ce plan et continuez à signaler votre problème. Vous pouvez signaler des incidents jusqu’à la limite indiquée sur le plan ou jusqu’à la date d’expiration du plan, selon la première éventualité. Si le nombre d’incidents restants indique « 0 » ou que votre plan arrive à expiration, celui-ci n’est plus actif.
 
    > [!div class="mx-imgBorder"]
@@ -62,8 +58,7 @@ Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous c
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Utilisation de votre ID de contrat et de l’ID d’accès lors du signalement d’un incident (première utilisation)
 
 #### <a name="submitting-an-incident-online"></a>Signalement d’un incident en ligne
-
-Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous connecter. Sélectionnez le produit pour lequel vous avez besoin d’aide dans la liste déroulante. Par exemple, pour signaler un incident en rapport avec Visual Studio Enterprise 2017, sélectionnez la famille **Outils de développement**, sélectionnez **Visual Studio 2017** comme produit, puis choisissez **Visual Studio Enterprise 2017** comme version.
+Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous connecter. Sélectionnez le produit pour lequel vous avez besoin d’aide dans la liste déroulante. Par exemple, pour soumettre un incident lié à Visual Studio Enterprise 2019, sélectionnez la famille **Outils de développement**, sélectionnez le produit **Visual Studio 2019**, puis choisissez la version **Visual Studio Enterprise 2019**.
 
 1. Après avoir choisi le produit pour lequel vous avez besoin de support, cliquez sur **Suivant**.
 
@@ -96,11 +91,9 @@ Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous c
 6. Effectuez les étapes restantes (gravité, informations de contact, revue).   Une fois votre incident signalé, une confirmation s’affiche. Vous pouvez alors charger des fichiers pour les joindre au problème. Un professionnel du support technique est affecté à votre incident et vous contacte selon la méthode choisie pour vous aider à résoudre le problème.
 
 #### <a name="submit-an-incident-by-phone"></a>Soumettre un incident par téléphone
-
 Si vous souhaitez signaler un incident de support par téléphone, recherchez le numéro de téléphone du [service client](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) dans votre pays. Avant d’appeler le support, préparez votre ID de contrat et votre ID d’accès.
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Soumettre un incident dans le portail Azure
-
 Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnement Visual Studio afin de résoudre des problèmes liés à Azure, vous devez lier vos ID de contrat et d’accès à votre abonnement Azure.
 
 1. Accédez à https://portal.azure.com et connectez-vous
