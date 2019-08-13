@@ -1,5 +1,6 @@
 ---
-title: Touches de modification de l’outil Sélection directe dans Blend
+title: Touches de modification de l’outil Sélection directe
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820390"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821821"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Sélection directe dans Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Sélection directe dans Blend pour Visual Studio
+
 Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe** ![outil Sélection directe](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
 
 |Pour|Procédez comme suit|Pointeur|
@@ -33,7 +35,6 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Raccourcis clavier et touches de modification](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
 - [Touches de modification de l’outil Plume](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Dessiner des formes et des tracés](../designers/draw-shapes-and-paths.md)

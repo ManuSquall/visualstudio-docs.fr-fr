@@ -3,15 +3,15 @@ title: Disponibilité des produits pour les téléchargements de logiciels inclu
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrir en quoi consiste la disponibilité des produits dans les téléchargements de logiciels pour les abonnements Visual Studio
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315390"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681691"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilité des produits pour les téléchargements de logiciels inclus dans les abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.
@@ -38,4 +38,5 @@ Le nombre et le type de téléchargements dépendent de votre niveau d’abonnem
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Certains téléchargements de logiciels peuvent nécessiter une clé de produit pour pouvoir être installés et activés.  Consultez notre article sur les clés de produit pour savoir comment obtenir et gérer vos clés de produit. 
+- Certains téléchargements de logiciels peuvent nécessiter une clé de produit pour pouvoir être installés et activés.  Consultez notre article sur les [clés de produit](product-keys.md) pour savoir comment obtenir et gérer vos clés de produit. 
+- Découvrez comment [télécharger un logiciel](download-software.md).

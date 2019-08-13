@@ -6,18 +6,16 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f588395284891bab61a575f088931e2fc244bce
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846032"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822108"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
-Dans bien des cas, les exceptions non gérées dans le concepteur **XAML** peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.
+Souvent, les exceptions non prises en charge dans le concepteur XAML peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou à des méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.
 
 Le code de projet est constitué des éléments suivants :
 
@@ -49,7 +47,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
      ![Instances du concepteur XAML dans TaskManager](../designers/media/xaml_taskmanager.png)
 
-3. Dans Visual Studio, ouvrez la page XAML qui contient le code ou le contrôle à déboguer.
+3. Dans Visual Studio, ouvrez la page XAML qui contient le code ou le contrôle à déboguer.
 
 4. Ouvrez une nouvelle instance de Visual Studio, puis ouvrez une deuxième instance de votre projet.
 

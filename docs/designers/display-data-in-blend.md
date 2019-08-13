@@ -1,5 +1,6 @@
 ---
-title: Afficher des données dans Blend
+title: Visualiser des exemples de données dans une interface utilisateur XAML
+titleSuffix: Blend for Visual Studio
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fcec16b0f67d54766ae373fc52228792dc1f732
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898009"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822098"
 ---
-# <a name="display-data-in-blend"></a>Afficher des données dans Blend
+# <a name="display-data-in-blend-for-visual-studio"></a>Afficher des données dans Blend pour Visual Studio
 
 Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s’affichent dans votre application au moment où vous l’exécutez.
 
@@ -31,9 +32,7 @@ Si vous souhaitez que vos exemples de données apparaissent dans vos pages au mo
 
 ![Élément de menu Activer lorsque l’application est exécutée](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir de zéro](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
-
- **Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combiner une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir de zéro](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
 ## <a name="generate-sample-data-from-a-class"></a>Générer des exemples de données à partir d'une classe
 
@@ -41,17 +40,7 @@ Si vous avez déjà créé des classes qui décrivent la structure de vos donné
 
 Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis, dans le panneau **Données**, cliquez sur le bouton **Créer des exemples de données** ![Icône de création d’exemples de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png), puis cliquez sur **Créer un exemple de données à partir de la classe**.
 
-**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir d’une classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
-
 **Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combiner une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
-
-## <a name="show-live-data-in-a-wpf-application"></a>Afficher des données en direct dans une application WPF
-
-**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer une source de données XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
-
-## <a name="show-live-data-in-a-store-or-phone-app"></a>Afficher des données en direct dans une application Windows Store ou Windows Phone
-
-Consultez [Utiliser des données et des fichiers (XAML)](/previous-versions/windows/apps/br229562(v=win.10)).
 
 ## <a name="see-also"></a>Voir aussi
 

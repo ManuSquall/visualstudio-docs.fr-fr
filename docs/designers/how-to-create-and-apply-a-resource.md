@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263397"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821878"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 
-Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Démarrage rapide : Application d’un style à des contrôles](http://go.microsoft.com/fwlink/?LinkID=248239) et [Guide de démarrage rapide : Modèles de contrôle](http://go.microsoft.com/fwlink/?LinkID=247982).
+Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Styles XAML](/windows/uwp/design/controls-and-patterns/xaml-styles) et [Modèles de contrôles](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Quand vous créez une ressource à partir d’une propriété existante, [Style](/uwp/api/Windows.UI.Xaml.Style) ou `ControlTemplate`, la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
+Quand vous créez une ressource à partir d’une propriété existante ([Style](xref:Windows.UI.Xaml.Style) ou [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate)), la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un [dictionnaire de ressources](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references). Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
 
 ## <a name="create-a-new-resource"></a>Créer une ressource
 
@@ -63,7 +63,7 @@ Quand vous créez une ressource à partir d’une propriété existante, [Style]
      > [!NOTE]
      > **Modifier le modèle** applique des modèles de contrôle. **Modifier d’autres modèles** applique d’autres types de modèle.
 
-     Vous pouvez appliquer des ressources partout où elles sont compatibles. Par exemple, vous pouvez appliquer une ressource de pinceau à la propriété **Foreground** d’un contrôle <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Vous pouvez appliquer des ressources partout où elles sont compatibles. Par exemple, vous pouvez appliquer une ressource de pinceau à la propriété **Foreground** d’un contrôle [TextBox](xref:Windows.UI.Xaml.Controls.TextBox).
 
 ## <a name="edit-a-resource"></a>Modifier une ressource
 

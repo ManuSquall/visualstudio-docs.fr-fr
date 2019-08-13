@@ -6,14 +6,12 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893582"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821939"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -41,9 +39,9 @@ Permet de disposer les objets dans des lignes et des colonnes.
 
 Permet de disposer les objets dans des régions de grille égales ou uniformes. Ce panneau est très pratique pour organiser une liste d'images.
 
-![Panneau de disposition UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (Disponible seulement pour les projets WPF)
+
+![Panneau de disposition UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Canvas
 
@@ -89,7 +87,7 @@ Permet de créer une bordure, un arrière-plan ou les deux autour d'un objet. Vo
 
 ### <a name="popup"></a>Fenêtre contextuelle
 
-Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup**. Par défaut, un **Popup** contient un **Grid**, mais vous disposez d’autres options.
+Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup**. Par défaut, un **Popup** contient un **Grid**. Toutefois, d’autres options sont disponibles.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 

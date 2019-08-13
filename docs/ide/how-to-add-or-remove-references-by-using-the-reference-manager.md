@@ -1,6 +1,6 @@
 ---
 title: Ajouter des références dans le Gestionnaire de références
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,30 +21,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825486"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787887"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références
 
-Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement *mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
+Vous pouvez utiliser la boîte de dialogue Gestionnaire de références pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement *mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
 
 ## <a name="reference-manager-dialog-box"></a>Boîte de dialogue Gestionnaire de références
 
-La boîte de dialogue **Gestionnaire de références** affiche différentes catégories sur le côté gauche, en fonction du type de projet :
+La boîte de dialogue Gestionnaire de références affiche différentes catégories sur le côté gauche, en fonction du type de projet :
 
-- **Assemblys**, avec les sous-groupes **Framework** et **Extensions**.
+- **Assemblys**, avec les sous-groupes **Framework** et **Extensions**
 
-- **COM** répertorie tous les composants COM pouvant être référencés.
+- **COM**, liste tous les composants COM pouvant être référencés
 
-- **Solution**, avec le sous-groupe **Projets**.
+- **Projets**
 
-- **Windows**, avec les sous-groupes **Principal** et **Extensions**. Vous pouvez explorer les références dans le SDK Windows ou les SDK de l’extension à l’aide de l’**Explorateur d’objets**.
+- **Projets partagés**
 
-- **Parcourir**, avec le sous-groupe **Récent**.
+- **Windows**, avec les sous-groupes **Principal** et **Extensions** Vous pouvez explorer les références dans le SDK Windows ou les SDK de l’extension à l’aide de l’**Explorateur d’objets**.
+
+- **Parcourir**, avec le sous-groupe **Récent**
 
 ## <a name="add-a-reference"></a>Ajouter une référence
 
@@ -62,7 +64,7 @@ Quand vous ajoutez manuellement une référence à l’un des espaces de noms En
 
 Tous les projets d’application de bureau contiennent une référence implicite à **mscorlib**. Les projets Visual Basic contiennent une référence implicite à <xref:Microsoft.VisualBasic>. Tous les projets contiennent une référence implicite à **System.Core**, même s’il est supprimé de la liste des références.
 
-Si un type de projet ne prend pas en charge les assemblys, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.
+Si un type de projet ne prend pas en charge les assemblys, l’onglet ne s’affiche pas dans la boîte de dialogue Gestionnaire de références.
 
 L’onglet **Assemblys** comprend deux sous-onglets :
 
@@ -142,6 +144,10 @@ Un projet peut référencer un autre projet qui cible une version différente du
 > [!NOTE]
 > Un projet qui cible le .NET Framework 4 est incompatible avec un projet qui cible le profil de client du .NET Framework 4.
 
+## <a name="shared-projects-tab"></a>Onglet Projets partagés
+
+Ajoutez une référence à un projet partagé sous l’onglet **Projets partagés** de la boîte de dialogue Gestionnaire de références. Les [projets partagés](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) vous permettent d’écrire du code commun référencé par plusieurs projets d’application.
+
 ## <a name="universal-windows-tab"></a>Onglet Windows universel
 
 L’onglet **Windows universel** liste tous les SDK spécifiques aux plateformes sur lesquelles des systèmes d’exploitation Windows s’exécutent.
@@ -155,28 +161,28 @@ Les projets d’application Windows universelles ont une référence au SDK Wind
 
 Les **extensions** listent les kits SDK utilisateur qui étendent la plateforme Windows ciblée.
 
-Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul composant. Sous l’onglet **Extensions**, les kits SDK qui s’appliquent au projet à partir duquel la boîte de dialogue **Gestionnaire de références** a été appelée sont listés sous forme d’entrées uniques. Une fois ajouté à un projet, tout le contenu du kit SDK est utilisé par Visual Studio afin que l’utilisateur n’ait rien d’autre à faire pour l’exploiter dans IntelliSense, la boîte à outils, les concepteurs, l’Explorateur d’objets, la création, le déploiement, le débogage et l’empaquetage.
+Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul composant. Sous l’onglet **Extensions**, les SDK qui s’appliquent au projet à partir duquel la boîte de dialogue Gestionnaire de références a été appelée sont listés sous forme d’entrées uniques. Une fois ajouté à un projet, tout le contenu du kit SDK est utilisé par Visual Studio afin que l’utilisateur n’ait rien d’autre à faire pour l’exploiter dans IntelliSense, la boîte à outils, les concepteurs, l’Explorateur d’objets, la création, le déploiement, le débogage et l’empaquetage.
 
 Pour plus d’informations sur l’affichage de votre kit SDK sous l’onglet **Extensions**, consultez [Création d’un kit SDK](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Si un projet référence un SDK qui dépend d’un autre SDK, Visual Studio n’utilise pas le second SDK, sauf si vous ajoutez manuellement une référence à celui-ci. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue **Gestionnaire de références** l’aide à identifier les dépendances du SDK en les listant dans le volet d’informations.
+> Si un projet référence un SDK qui dépend d’un autre SDK, Visual Studio n’utilise pas le second SDK, sauf si vous ajoutez manuellement une référence à celui-ci. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue Gestionnaire de références l’aide à identifier les dépendances du SDK en les listant dans le volet d’informations.
 
-Si un type de projet ne prend pas en charge les extensions, cet onglet n’apparaît pas dans la boîte de dialogue **Gestionnaire de références**.
+Si un type de projet ne prend pas en charge les extensions, cet onglet n’apparaît pas dans la boîte de dialogue Gestionnaire de références.
 
 ## <a name="com-tab"></a>Onglet COM
 
 L’onglet **COM** liste tous les composants COM pouvant être référencés. Si vous souhaitez ajouter une référence à une DLL COM inscrite qui contient un manifeste interne, annulez d'abord l'inscription de la DLL. Sinon, Visual Studio ajoute la référence d’assembly en tant que contrôle ActiveX, et non en tant que DLL native.
 
-Si un type de projet ne prend pas en charge COM, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.
+Si un type de projet ne prend pas en charge COM, l’onglet ne s’affiche pas dans la boîte de dialogue Gestionnaire de références.
 
-## <a name="browse-button"></a>Bouton Parcourir
+## <a name="browse"></a>Parcourir
 
 Vous pouvez utiliser le bouton **Parcourir** pour rechercher un composant dans le système de fichiers.
 
 Un projet peut référencer un composant qui cible une version différente du framework. Par exemple, vous pouvez créer une application qui cible .NET Framework 4.7, mais qui référence un composant ciblant .NET Framework 4. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../ide/visual-studio-multi-targeting-overview.md).
 
-Évitez d’ajouter des références de fichier aux sorties d’un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez plutôt l’onglet **Solution** de la boîte de dialogue **Gestionnaire de références** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md).
+Évitez d’ajouter des références de fichier aux sorties d’un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez plutôt l’onglet **Solution** de la boîte de dialogue Gestionnaire de références afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md).
 
 Vous ne pouvez pas accéder à un kit SDK et l’ajouter à votre projet. Vous pouvez uniquement rechercher un fichier (par exemple un assembly ou un fichier *.winmd*) et l’ajouter à votre projet.
 
@@ -201,7 +207,7 @@ Les éléments **Assemblys**, **COM**, **Windows** et **Parcourir** prennent tou
 
 ## <a name="search"></a>Rechercher
 
-La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
+La barre de recherche de la boîte de dialogue Gestionnaire de références fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
 
 ## <a name="see-also"></a>Voir aussi
 

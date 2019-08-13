@@ -1,19 +1,17 @@
 ---
 title: Raccourcis clavier pour le concepteur XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896757"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821780"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Raccourcis clavier pour le concepteur XAML
 

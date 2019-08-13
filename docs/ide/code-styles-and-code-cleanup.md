@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328761"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822435"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -58,7 +58,7 @@ Les options définies dans cette fenêtre sont applicables à votre compte de pe
 
 ### <a name="preference-and-severity"></a>Préférence et gravité
 
-Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Aucune**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, assurez-vous que la valeur de l’option **Gravité** n’est pas **Aucune**. L’icône d’ampoule **Actions rapides** ![ampoule](media/light-bulb-dropdown.png), d’ampoule d’erreur ![ampoule d’erreur](media/error-bulb.png)ou de tournevis ![tournevis](media/screwdriver.png) apparaît quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
+Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’icône d’ampoule **Actions rapides** ![ampoule](media/light-bulb-dropdown.png), d’ampoule d’erreur ![ampoule d’erreur](media/error-bulb.png)ou de tournevis ![tournevis](media/screwdriver.png) apparaît quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
 
 ## <a name="apply-code-styles"></a>Appliquer des styles de code
 

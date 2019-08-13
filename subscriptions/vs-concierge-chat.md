@@ -1,21 +1,20 @@
 ---
-title: Avantage Concierge Chat dans les abonnements Visual Studio | Microsoft Docs
+title: Avantage Concierge Chat dans Visual Studio Subscription | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrez l’avantage Concierge Chat inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784621"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681190"
 ---
-# <a name="concierge-chat"></a>Concierge Chat
-
-Les services Concierge Chat vous aident à rechercher de la documentation technique et des informations sur les produits, ainsi qu’à tirer le meilleur parti des avantages de votre abonnement Visual Studio.
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat dans les abonnements Visual Studio
+Le service Concierge Chat vous aide à rechercher des informations sur les produits et de la documentation technique. Il vous permet également d’utiliser les avantages liés à votre abonnement Visual Studio.
 
 Le service est disponible 24h/24, 7j/7. Il est actuellement proposé en anglais uniquement (pour les questions autres que celles relatives aux comptes, à la facturation et aux abonnements).
 
@@ -36,7 +35,6 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
     > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Éligibilité
-
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
@@ -53,10 +51,15 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Q :  Le service de conversation est-il disponible dans plusieurs langues ?
    R : Pour les questions relatives aux comptes, à la facturation et aux abonnements, l’assistance est disponible dans plusieurs langues.  L’assistance pour la recherche de documentation technique et d’informations sur les produits est uniquement disponible en anglais.
 
 ## <a name="support-resources"></a>Ressources de support
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+Pour plus d’informations sur les outils et services Microsoft, consultez la documentation relative à :
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [IDE Visual Studio](/visualstudio/)

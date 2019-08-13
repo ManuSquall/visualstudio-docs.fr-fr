@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823824"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821511"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Utiliser des éléments dans le concepteur XAML
 
@@ -21,7 +19,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 ## <a name="add-an-element-to-a-layout"></a>Ajouter un élément à une disposition
 
-La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) et [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.
+La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](xref:Windows.UI.Xaml.Controls.Panel) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) et [Grid](xref:Windows.UI.Xaml.Controls.Grid), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.
 
 Par défaut, un panneau `Grid` est utilisé comme conteneur de disposition de niveau supérieur dans un formulaire ou une page. Vous pouvez ajouter des panneaux de disposition, des contrôles ou d'autres éléments dans la mise en page de niveau supérieur.
 
@@ -31,7 +29,7 @@ Pour ajouter un élément à une disposition dans le Concepteur XAML, effectuez 
 
 - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.
 
-- Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) ou [Rectangle](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)), puis dessinez un élément dans le panneau actif.
+- Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](xref:Windows.UI.Xaml.Shapes.Ellipse) ou [Rectangle](xref:Windows.UI.Xaml.Shapes.Rectangle)), puis dessinez un élément dans le panneau actif.
 
 ## <a name="change-the-layering-order-of-elements"></a>Changer l’ordre de superposition des éléments
 
@@ -51,7 +49,7 @@ Pour changer l’ordre de superposition, effectuez l’une des opérations suiva
 
   - **Mettre en arrière-plan** pour placer l’élément tout à la fin dans l’ordre.
 
-  Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** supérieure apparaît devant.
+- Modifiez la propriété **ZIndex** dans la section **Disposition** de la fenêtre Propriétés. Dans le cas des éléments qui se chevauchent, la propriété **ZIndex** est prioritaire sur l’ordre des éléments affiché dans la fenêtre Structure du document. Quand des éléments se chevauchent, l’élément qui possède une valeur **ZIndex** supérieure apparaît devant.
 
 ## <a name="change-the-alignment-of-an-element"></a>Changer l’alignement d’un élément
 
@@ -88,7 +86,7 @@ Si un ornement de marge est ouvert, verticalement ou horizontalement, la marge n
 Quand vous ouvrez un ornement de marge et que la marge opposée n'est pas définie, celle-ci se voit attribuer une valeur appropriée en fonction de l'emplacement de l'élément dans la planche graphique. Pour les marges opposées, telles que les marges **Gauche** et **Droite**, au moins une propriété est toujours définie.
 
 > [!IMPORTANT]
-> Les éléments placés à l'intérieur de certains conteneurs de disposition (par exemple, un <xref:Windows.UI.Xaml.Controls.Canvas>) n'ont pas d'ornements de marge. Les éléments placés dans un <xref:Windows.UI.Xaml.Controls.StackPanel> ont des ornements de marge pour les marges de gauche et de droite ou les marges supérieure et inférieure, en fonction de l'orientation du `StackPanel`.
+> Les éléments placés à l’intérieur de certains conteneurs de disposition (par exemple, un [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)) n’ont pas d’ornements de marge. Les éléments placés dans un [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) ont des ornements de marge pour les marges de gauche et de droite, ou les marges supérieure et inférieure, en fonction de l’orientation du `StackPanel`.
 
 ## <a name="group-and-ungroup-elements"></a>Regrouper et dissocier des éléments
 
@@ -101,7 +99,7 @@ Pour regrouper des éléments dans un nouveau conteneur de disposition :
 2. Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
 
     > [!TIP]
-    > Si vous sélectionnez <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> pour regrouper vos éléments, les éléments sont placés dans un nouveau panneau <xref:Windows.UI.Xaml.Controls.Grid> dans le <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si vous dissociez des éléments dans l'un de ces conteneurs de disposition, seul le panneau <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> est supprimé. Le panneau <xref:Windows.UI.Xaml.Controls.Grid> est conservé. Pour supprimer le panneau `Grid`, redissociez les éléments.
+    > Si vous sélectionnez [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border), ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) pour regrouper vos éléments, ceux-ci seront placés dans un nouveau panneau [grille](xref:Windows.UI.Xaml.Controls.Grid) au sein de [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Si vous dissociez des éléments dans l’un de ces conteneurs de disposition, seul le panneau [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Border](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) est supprimé. Le panneau [grille](xref:Windows.UI.Xaml.Controls.Grid) est conservé. Pour supprimer le panneau `Grid`, redissociez les éléments.
 
 Pour dissocier des éléments et supprimer la disposition, cliquez avec le bouton droit sur le groupe à dissocier, puis cliquez sur **Dissocier**. Vous pouvez également regrouper ou dissocier des éléments en cliquant avec le bouton droit sur les éléments concernés dans la fenêtre Structure du document, puis en cliquant sur **Grouper** ou **Dissocier**.
 

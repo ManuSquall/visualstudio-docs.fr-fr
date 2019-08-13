@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817372"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681159"
 ---
 # <a name="message-task"></a>Message (tâche)
 Enregistre un message pendant une génération.
@@ -41,11 +41,11 @@ Enregistre un message pendant une génération.
 
  Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Par défaut, le message est envoyé à l’enregistreur d’événements de la console MSBuild. Ceci peut être modifié en définissant le paramètre <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. L’enregistreur d’événements interprète le paramètre `Importance`.
+ Par défaut, le message est envoyé à l’enregistreur d’événements de la console MSBuild. Ceci peut être modifié en définissant le paramètre <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. L’enregistreur d’événements interprète le paramètre `Importance`. En règle générale, un message ayant la valeur `high` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` ou une valeur supérieure. Un message ayant la valeur `low` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’exemple de code suivant consigne les messages dans tous les enregistreurs d’événements inscrits.
 
 ```xml
