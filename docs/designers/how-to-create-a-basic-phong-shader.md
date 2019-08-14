@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897783"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924410"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procédure : Créer un nuanceur Phong de base
 
@@ -44,20 +44,20 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 > [!NOTE]
 > Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png)
+![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png)
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- L’illustration suivante montre le nuanceur décrit dans ce document appliqué à un modèle 3D. La propriété **MaterialSpecular** est définie sur (1,00, 0,50, 0,20, 0,00), et sa propriété **MaterialSpecularPower** est définie sur 16.
+L’illustration suivante montre le nuanceur décrit dans ce document appliqué à un modèle 3D. La propriété **MaterialSpecular** est définie sur (1,00, 0,50, 0,20, 0,00), et sa propriété **MaterialSpecularPower** est définie sur 16.
 
 > [!NOTE]
 > La propriété **MaterialSpecular** détermine le fini apparent du matériau de surface. Une surface haute brillance comme le verre ou le plastique a tendance à avoir une couleur spéculaire, autrement dit une nuance de blanc lumineuse. Une surface métallique a tendance à avoir une couleur spéculaire proche de sa couleur diffuse. Une surface satinée a tendance à avoir une couleur spéculaire, autrement dit une nuance de gris foncée.
 >
 > La propriété **MaterialSpecularPower** détermine l’intensité des mises en surbrillance spéculaires. Des puissances très spéculaires simulent des mises en surbrillance plus ternes et plus localisées. Des puissances faiblement spéculaires simulent des mises en surbrillance intenses et de grande envergure qui peuvent saturer et masquer la couleur de la surface totale.
 
- ![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png)
+![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png)
 
- Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 

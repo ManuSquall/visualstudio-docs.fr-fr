@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788866"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926623"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gérer des résultats de tests de charge dans le référentiel des résultats des tests de charge
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueill
 
 ## <a name="sql-server-versions"></a>Versions de SQL Server
 
- Pour utiliser des tests de charge, vous pouvez utiliser SQL Server Express LocalDB qui est installé avec Visual Studio. Il s’agit du serveur de base de données par défaut pour les tests de charge (notamment l’intégration à Microsoft Excel). SQL Server Express LocalDB est un mode d'exécution de SQL Server Express qui s'adresse aux développeurs de programme. L'installation de SQL Server Express LocalDB copie un ensemble minimal de fichiers nécessaires pour démarrer le moteur de base de données SQL Server.
+Pour utiliser des tests de charge, vous pouvez utiliser SQL Server Express LocalDB qui est installé avec Visual Studio. Il s’agit du serveur de base de données par défaut pour les tests de charge (notamment l’intégration à Microsoft Excel). SQL Server Express LocalDB est un mode d'exécution de SQL Server Express qui s'adresse aux développeurs de programme. L'installation de SQL Server Express LocalDB copie un ensemble minimal de fichiers nécessaires pour démarrer le moteur de base de données SQL Server.
 
- Si votre équipe prévoit des besoins importants en base de données ou que vos projets sont trop volumineux pour SQL Server Express LocalDB, vous devez envisager une mise à niveau vers SQL Express ou SQL Server édition complète pour bénéficier d’un potentiel de mise à l’échelle supplémentaire. Si vous mettez à niveau SQL Server, les fichiers MDF et LDF pour SQL Server Express LocalDB sont stockés dans le dossier du profil utilisateur. Ces fichiers peuvent être utilisés pour importer la base de données de test de charge vers SQL Server Express ou SQL Server.
+Si votre équipe prévoit des besoins importants en base de données ou que vos projets sont trop volumineux pour SQL Server Express LocalDB, vous devez envisager une mise à niveau vers SQL Express ou SQL Server édition complète pour bénéficier d’un potentiel de mise à l’échelle supplémentaire. Si vous mettez à niveau SQL Server, les fichiers MDF et LDF pour SQL Server Express LocalDB sont stockés dans le dossier du profil utilisateur. Ces fichiers peuvent être utilisés pour importer la base de données de test de charge vers SQL Server Express ou SQL Server.
 
 ## <a name="load-test-results-store-considerations"></a>Considérations relatives au magasin des résultats des tests de charge
 
- Quand Visual Studio Enterprise est installé, le magasin des résultats de test de charge est configuré pour utiliser une instance de SQL Express installée sur l’ordinateur. SQL Express est limité à l'utilisation d'une capacité d'espace disque maximum de 4 Go. Si vous exécutez de nombreux tests de charge sur une longue période, vous devez envisager de configurer le magasin des résultats de test de charge pour utiliser une instance du produit SQL Server complet si disponible.
+Quand Visual Studio Enterprise est installé, le magasin des résultats de test de charge est configuré pour utiliser une instance de SQL Express installée sur l’ordinateur. SQL Express est limité à l'utilisation d'une capacité d'espace disque maximum de 4 Go. Si vous exécutez de nombreux tests de charge sur une longue période, vous devez envisager de configurer le magasin des résultats de test de charge pour utiliser une instance du produit SQL Server complet si disponible.
 
 ## <a name="load-test-analyzer-tasks"></a>Tâches de l’Analyseur de test de charge
 
@@ -52,9 +52,9 @@ Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueill
 
 ## <a name="related-tasks"></a>Tâches connexes
 
- [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Vous pouvez afficher les résultats à la fois d’un test de charge en cours d’exécution et d’un test de charge terminé à l’aide de **l’Analyseur de test de charge**.
+Vous pouvez afficher les résultats à la fois d’un test de charge en cours d’exécution et d’un test de charge terminé à l’aide de **l’Analyseur de test de charge**.
 
 ## <a name="see-also"></a>Voir aussi
 

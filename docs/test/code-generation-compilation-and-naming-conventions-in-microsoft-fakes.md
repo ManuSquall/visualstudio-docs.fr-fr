@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432290"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918465"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -110,9 +110,9 @@ Le générateur de code Fakes génère des types shim et stub pour les types qui
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Types internes dans les assemblys à nom fort**
+**Types internes dans les assemblys à nom fort**
 
- Si l’assembly ayant fait l’objet d’un shim a un nom fort et que vous voulez accéder aux types internes de l’assembly :
+Si l’assembly ayant fait l’objet d’un shim a un nom fort et que vous voulez accéder aux types internes de l’assembly :
 
 - L'assembly de test et l'assembly Fakes doivent porter un nom fort.
 
@@ -179,11 +179,11 @@ Dans vos projets de test unitaire, ajoutez une référence aux assemblys Fakes c
 
 Dans un environnement Team Build, toutes les sorties de génération sont fusionnées dans un seul répertoire. Si plusieurs projets utilisent Fakes, il peut arriver que les assemblys Fakes de versions différentes se remplacent l’un l’autre. Par exemple, l’assembly Fakes TestProject1 *mscorlib.dll* de .NET Framework 2.0 et l’assembly Fakes TestProject2 *mscorlib.dll* de .NET Framework 4 produisent tous deux un assembly Fakes *mscorlib.Fakes.dll*.
 
- Pour éviter ce problème, Fakes doit créer automatiquement des noms d’assembly Fakes qualifiés par version pour les références hors projet lors de l’ajout de fichiers *.fakes*. Un nom d'assembly Fakes qualifié par version inclut un numéro de version quand vous créez le nom d'assembly Fakes :
+Pour éviter ce problème, Fakes doit créer automatiquement des noms d’assembly Fakes qualifiés par version pour les références hors projet lors de l’ajout de fichiers *.fakes*. Un nom d'assembly Fakes qualifié par version inclut un numéro de version quand vous créez le nom d'assembly Fakes :
 
- Étant donné un assembly MyAssembly et une version 1.2.3.4, le nom de l'assembly Fakes est MyAssembly.1.2.3.4.Fakes.
+Étant donné un assembly MyAssembly et une version 1.2.3.4, le nom de l'assembly Fakes est MyAssembly.1.2.3.4.Fakes.
 
- Vous pouvez changer ou supprimer cette version par la modification de l’attribut Version de l’élément Assembly dans le fichier *.fakes* :
+Vous pouvez changer ou supprimer cette version par la modification de l’attribut Version de l’élément Assembly dans le fichier *.fakes* :
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Conventions de nommage du type shim et du type stub
 
- **Espaces de noms**
+**Espaces de noms**
 
 - Le suffixe .Fakes est ajouté à l'espace de noms.
 
@@ -233,7 +233,7 @@ attribute of the Assembly element in the .fakes:
 
   Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
 
-|Si la méthode est...|Exemple|Nom de la méthode ajoutée|
+|Si la méthode est...|Exemples|Nom de la méthode ajoutée|
 |-|-|-|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|

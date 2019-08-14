@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784244"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926535"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -32,28 +32,28 @@ Le modèle de charge est un composant d'un scénario. Les scénarios et leurs mo
 
 ### <a name="constant"></a>Constante
 
- Le modèle de charge constant est utilisé pour spécifier une charge utilisateur qui ne change pas pendant le test de charge. Par exemple, lorsque vous effectuez un test de détection de fumée (smoke test) sur une application web, vous souhaiterez peut-être définir une charge légère et constante de 10 utilisateurs.
+Le modèle de charge constant est utilisé pour spécifier une charge utilisateur qui ne change pas pendant le test de charge. Par exemple, lorsque vous effectuez un test de détection de fumée (smoke test) sur une application web, vous souhaiterez peut-être définir une charge légère et constante de 10 utilisateurs.
 
 #### <a name="constant-load-pattern-considerations"></a>Considérations sur un modèle de charge constant
 
- Un modèle de charge constant est utilisé pour exécuter la même charge utilisateur pendant l'exécution d'un test de charge. Soyez très prudent lorsque vous utilisez un modèle de charge constant dont le nombre d'utilisateurs est élevé ; vous risquez de solliciter de manière déraisonnable et irréaliste votre serveur ou vos serveurs de test de charge. Par exemple, si votre test de charge contient un test web qui démarre avec une requête vers une page d'accueil et que vous configurez le test de charge avec une charge constante de 1 000 utilisateurs, le test de charge soumet les 1 000 premières requêtes à la page d'accueil aussi rapidement que possible. La simulation d’accès réel à votre site web peut paraître peu réaliste. Pour minimiser ce problème, pensez à utiliser un modèle de charge par étape qui passe progressivement à 1 000 utilisateurs ou spécifiez une période de préparation dans les paramètres d'exécution des tests de charge. Si une période de préparation est spécifiée, le test de charge augmentera automatiquement la charge de manière progressive pendant la période de préparation. Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).
+Un modèle de charge constant est utilisé pour exécuter la même charge utilisateur pendant l'exécution d'un test de charge. Soyez très prudent lorsque vous utilisez un modèle de charge constant dont le nombre d'utilisateurs est élevé ; vous risquez de solliciter de manière déraisonnable et irréaliste votre serveur ou vos serveurs de test de charge. Par exemple, si votre test de charge contient un test web qui démarre avec une requête vers une page d'accueil et que vous configurez le test de charge avec une charge constante de 1 000 utilisateurs, le test de charge soumet les 1 000 premières requêtes à la page d'accueil aussi rapidement que possible. La simulation d’accès réel à votre site web peut paraître peu réaliste. Pour minimiser ce problème, pensez à utiliser un modèle de charge par étape qui passe progressivement à 1 000 utilisateurs ou spécifiez une période de préparation dans les paramètres d'exécution des tests de charge. Si une période de préparation est spécifiée, le test de charge augmentera automatiquement la charge de manière progressive pendant la période de préparation. Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Étape
 
- Le modèle de charge par étape est utilisé pour spécifier une charge utilisateur qui augmente avec le temps jusqu'à une charge utilisateur maximale définie. Pour les charges par étape, vous spécifiez le **Nombre initial d’utilisateurs**, le **Nombre maximal d’utilisateurs**, la **Durée de l’étape (secondes)** et le **Nombre d’utilisateurs dans l’étape**.
+Le modèle de charge par étape est utilisé pour spécifier une charge utilisateur qui augmente avec le temps jusqu'à une charge utilisateur maximale définie. Pour les charges par étape, vous spécifiez le **Nombre initial d’utilisateurs**, le **Nombre maximal d’utilisateurs**, la **Durée de l’étape (secondes)** et le **Nombre d’utilisateurs dans l’étape**.
 
- Par exemple, une charge par étape avec un **Compte Nombre initial d’utilisateurs** de 1, un **Nombre maximal d’utilisateurs** de 100, une **Durée de l’étape (secondes)** de 10 et un **Nombre d’utilisateurs dans l’étape** de 1 crée un modèle de charge utilisateur qui commence à 1, augmente de 1 toutes les 10 secondes jusqu’à atteindre 100 utilisateurs.
+Par exemple, une charge par étape avec un **Compte Nombre initial d’utilisateurs** de 1, un **Nombre maximal d’utilisateurs** de 100, une **Durée de l’étape (secondes)** de 10 et un **Nombre d’utilisateurs dans l’étape** de 1 crée un modèle de charge utilisateur qui commence à 1, augmente de 1 toutes les 10 secondes jusqu’à atteindre 100 utilisateurs.
 
 > [!NOTE]
 > Si la durée de test totale est plus courte que la durée nécessaire pour atteindre la charge utilisateur maximale, le test s'arrête après la durée écoulée et n'atteint pas la cible **Nombre maximal d'utilisateurs**.
 
- Vous pouvez utiliser l'objectif d'étape pour augmenter la charge jusqu'à ce que le serveur atteigne un point auquel les performances diminuent considérablement. À mesure que la charge augmente, le serveur finit par manquer de ressources. La charge d'étape est une bonne méthode pour déterminer le nombre d'utilisateurs auquel cela se produit. Avec la charge par étape, vous devez également surveiller attentivement les ressources des agents, afin de vous assurer que ces derniers sont capables de générer la charge souhaitée.
+Vous pouvez utiliser l'objectif d'étape pour augmenter la charge jusqu'à ce que le serveur atteigne un point auquel les performances diminuent considérablement. À mesure que la charge augmente, le serveur finit par manquer de ressources. La charge d'étape est une bonne méthode pour déterminer le nombre d'utilisateurs auquel cela se produit. Avec la charge par étape, vous devez également surveiller attentivement les ressources des agents, afin de vous assurer que ces derniers sont capables de générer la charge souhaitée.
 
- En règle générale, vous devez exécuter plusieurs séries de tests qui présentent des durées d'étape et un nombre d'utilisateurs dans l'étape différents afin de pouvoir obtenir de bonnes mesures pour une charge donnée. Souvent, les charges montrent un pic initial pour chaque étape à mesure que des utilisateurs sont ajoutés. La maintenance de la charge à ce taux vous permet de mesurer les performances du système après que le système a récupéré du pic initial.
+En règle générale, vous devez exécuter plusieurs séries de tests qui présentent des durées d'étape et un nombre d'utilisateurs dans l'étape différents afin de pouvoir obtenir de bonnes mesures pour une charge donnée. Souvent, les charges montrent un pic initial pour chaque étape à mesure que des utilisateurs sont ajoutés. La maintenance de la charge à ce taux vous permet de mesurer les performances du système après que le système a récupéré du pic initial.
 
 #### <a name="step-load-pattern-considerations"></a>Considérations sur le modèle de charge par étape
 
- Un modèle de charge dans l'étape peut être utilisé pour augmenter la charge sur le ou les serveurs au cours de l'exécution du test de charge. Il permet d'apprécier l'évolution des performances au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l'aide d'un modèle de charge par étape dont les propriétés sont les suivantes :
+Un modèle de charge dans l'étape peut être utilisé pour augmenter la charge sur le ou les serveurs au cours de l'exécution du test de charge. Il permet d'apprécier l'évolution des performances au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l'aide d'un modèle de charge par étape dont les propriétés sont les suivantes :
 
 - **Nombre initial d’utilisateurs** : 100
 
@@ -69,7 +69,7 @@ Le modèle de charge est un composant d'un scénario. Les scénarios et leurs mo
 
 ### <a name="goal-based"></a>En fonction des objectifs
 
- Un modèle de charge basé sur des objectifs est semblable au modèle par étape, mais il ajuste la charge utilisateur en fonction des seuils de compteurs de performance par rapport aux ajustements de charge utilisateur périodiques. Les charges basées sur des objectifs sont utiles dans différents cas :
+Un modèle de charge basé sur des objectifs est semblable au modèle par étape, mais il ajuste la charge utilisateur en fonction des seuils de compteurs de performance par rapport aux ajustements de charge utilisateur périodiques. Les charges basées sur des objectifs sont utiles dans différents cas :
 
 - Optimiser la sortie des agents : mesurez la mesure de limite clé sur l'agent pour optimiser la sortie des agents. En général, il s'agit de l'UC ; toutefois, il peut également s'agir de la mémoire.
 
@@ -93,17 +93,17 @@ Le modèle de charge est un composant d'un scénario. Les scénarios et leurs mo
 |Limites du nombre d'utilisateurs|Incrément maximal du nombre d'utilisateurs|5|
 |Limites du nombre d'utilisateurs|Nombre minimal d'utilisateurs|1|
 
- Ces paramètres font en sorte que **l’analyseur de test de charge** ajuste la charge utilisateur entre 1 et 100 pendant une série de tests, de sorte que le **Compteur** pour `% Processor Time` du WebServer01 varie entre `70%` et `90%.`
+Ces paramètres font en sorte que **l’analyseur de test de charge** ajuste la charge utilisateur entre 1 et 100 pendant une série de tests, de sorte que le **Compteur** pour `% Processor Time` du WebServer01 varie entre `70%` et `90%.`
 
- La taille de chaque ajustement de charge utilisateur est déterminée par les paramètres **Incrément maximal du nombre d’utilisateurs** et **Décrément maximal du nombre d’utilisateurs**. Les limites de nombre d’utilisateurs sont définies par les propriétés **Nombre maximal d’utilisateurs** et **Nombre minimal d’utilisateurs**.
+La taille de chaque ajustement de charge utilisateur est déterminée par les paramètres **Incrément maximal du nombre d’utilisateurs** et **Décrément maximal du nombre d’utilisateurs**. Les limites de nombre d’utilisateurs sont définies par les propriétés **Nombre maximal d’utilisateurs** et **Nombre minimal d’utilisateurs**.
 
 #### <a name="goal-based-load-pattern-considerations"></a>Considérations sur le modèle de charge en fonction des objectifs
 
- Un modèle de charge en fonction des objectifs est utile pour déterminer le nombre d'utilisateurs que votre système peut prendre en charge avant d'atteindre un certain niveau d'utilisation des ressources. Cette option fonctionne mieux lorsque vous avez déjà identifié la ressource limitative (autrement dit, le goulot d'étranglement) dans votre système.
+Un modèle de charge en fonction des objectifs est utile pour déterminer le nombre d'utilisateurs que votre système peut prendre en charge avant d'atteindre un certain niveau d'utilisation des ressources. Cette option fonctionne mieux lorsque vous avez déjà identifié la ressource limitative (autrement dit, le goulot d'étranglement) dans votre système.
 
- Par exemple, supposez que vous sachiez que la ressource limitative dans votre système est l'UC de votre serveur de base de données, et donc vous souhaitez connaître le nombre d'utilisateurs qui peut être pris en charge lorsque l'UC du serveur de base de données est saturée à 75 % environ. Vous pourriez utiliser un modèle de charge en fonction des objectifs dont l’objectif est de conserver la valeur du compteur de performance « % temps processeur » entre 70 % et 80 %.
+Par exemple, supposez que vous sachiez que la ressource limitative dans votre système est l'UC de votre serveur de base de données, et donc vous souhaitez connaître le nombre d'utilisateurs qui peut être pris en charge lorsque l'UC du serveur de base de données est saturée à 75 % environ. Vous pourriez utiliser un modèle de charge en fonction des objectifs dont l’objectif est de conserver la valeur du compteur de performance « % temps processeur » entre 70 % et 80 %.
 
- À surveiller également la présence d'une autre ressource limitant le débit du système. Ces ressources peuvent nuire à réalisation de l'objectif spécifié par le modèle de charge en fonction des objectifs. En outre, la charge utilisateur continue d’augmenter jusqu’à ce que la valeur définie pour **Nombre maximal d’utilisateurs** soit atteinte. Il ne s'agit pas généralement de la charge désirée ; soyez donc prudent lorsque vous choisissez le compteur de performance dans le modèle de charge en fonction des objectifs.
+À surveiller également la présence d'une autre ressource limitant le débit du système. Ces ressources peuvent nuire à réalisation de l'objectif spécifié par le modèle de charge en fonction des objectifs. En outre, la charge utilisateur continue d’augmenter jusqu’à ce que la valeur définie pour **Nombre maximal d’utilisateurs** soit atteinte. Il ne s'agit pas généralement de la charge désirée ; soyez donc prudent lorsque vous choisissez le compteur de performance dans le modèle de charge en fonction des objectifs.
 
 ## <a name="tasks"></a>Tâches
 
@@ -116,12 +116,12 @@ Le modèle de charge est un composant d'un scénario. Les scénarios et leurs mo
 
 ## <a name="change-the-load-pattern"></a>Modifier le modèle de charge
 
- Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés du modèle de charge associé à un scénario en fonction des niveaux qui répondent à vos objectifs de test.
+Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés du modèle de charge associé à un scénario en fonction des niveaux qui répondent à vos objectifs de test.
 
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
- Un modèle de charge spécifie le nombre d'utilisateurs virtuels actifs pendant un test de charge et le taux auquel de nouveaux utilisateurs sont ajoutés. Vous pouvez choisir parmi les trois modèles disponibles : étape, constante et en fonction des objectifs. Pour plus d’informations, consultez [Spécification du nombre d’utilisateurs virtuels avec des modèles de charge dans un scénario de test de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Un modèle de charge spécifie le nombre d'utilisateurs virtuels actifs pendant un test de charge et le taux auquel de nouveaux utilisateurs sont ajoutés. Vous pouvez choisir parmi les trois modèles disponibles : étape, constante et en fonction des objectifs. Pour plus d’informations, consultez [Spécification du nombre d’utilisateurs virtuels avec des modèles de charge dans un scénario de test de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Vous pouvez également modifier par programmation vos propriétés de charge à l'aide d'un plug-in de test de charge. Pour plus d'informations, voir [Procédure : créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md).

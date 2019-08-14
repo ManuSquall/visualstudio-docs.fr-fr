@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570081"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919512"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -31,7 +31,7 @@ Visual Studio propose de nombreuses manières de parcourir le code dans l’édi
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Commandes Naviguer vers l’arrière et Naviguer vers l’avant
 
-Vous pouvez utiliser les boutons **Naviguer vers l’arrière** (**Ctrl**+**-**) et **Naviguer vers l’avant** (**Ctrl**+**Maj**+**-**) de la barre d’outils pour déplacer le point d’insertion vers des emplacements précédents ou retourner à des emplacements plus récents à partir d’un emplacement précédent. Ces boutons conservent les 20 derniers emplacements du point d’insertion. Ces commandes sont également disponibles dans le menu **Afficher**, sous **Naviguer vers l’arrière** et **Naviguer vers l’avant**.
+Vous pouvez utiliser les boutons **Naviguer vers l’arrière** (**Ctrl**+ **-** ) et **Naviguer vers l’avant** (**Ctrl**+**Maj**+ **-** ) de la barre d’outils pour déplacer le point d’insertion vers des emplacements précédents ou retourner à des emplacements plus récents à partir d’un emplacement précédent. Ces boutons conservent les 20 derniers emplacements du point d’insertion. Ces commandes sont également disponibles dans le menu **Afficher**, sous **Naviguer vers l’arrière** et **Naviguer vers l’avant**.
 
 ![Boutons de navigation Suivant et Précédent](../ide/media/vs2017_nav_buttons.png)
 
@@ -39,7 +39,7 @@ Vous pouvez utiliser les boutons **Naviguer vers l’arrière** (**Ctrl**+**-**)
 
 Vous pouvez utiliser la **barre de navigation** (les zones de liste déroulante situées en haut de la fenêtre de code) pour accéder à du code dans un code base. Vous pouvez choisir un type ou un membre pour l’atteindre directement. La barre de navigation s’affiche quand vous modifiez du code dans un code base Visual Basic, C# ou C++. Dans une classe partielle, les membres définis en dehors du fichier de code actuel peuvent être désactivés (ils sont affichés en gris).
 
- ![Barre de navigation dans le code](../ide/media/vside_navigation_bar.png)
+![Barre de navigation dans le code](../ide/media/vside_navigation_bar.png)
 
 Vous pouvez naviguer dans les zones de liste déroulante comme suit :
 
@@ -78,7 +78,7 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
 
-- **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+**,**) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
+- **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+ **,** ) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 

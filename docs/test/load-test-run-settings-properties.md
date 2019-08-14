@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662072"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923672"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
@@ -45,7 +45,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Enregistrer la fréquence d’entrée au journal pour les tests terminés**|Spécifie la fréquence d'écriture du journal des tests. Cette valeur indique qu'un test sur le nombre de tests entré doit être enregistré dans le journal des tests. Par exemple, si vous entrez la valeur dix, cela indique que le dixième test, le vingtième test, le trentième test, et ainsi de suite, doivent être écrits dans le journal des tests. La valeur 0 indique qu'aucun journal des tests ne sera enregistré.|
 |**Enregistrer le journal lors de l’échec d’un test**|Une valeur booléenne qui détermine si les journaux des tests sont enregistrés en cas d'échec d'un test dans un test de charge. La valeur par défaut est `True`.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier si les échecs de test doivent être enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).
+Pour plus d’informations, consultez [Modifier les paramètres de journalisation des tests de charge](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Propriétés des résultats
 
@@ -70,7 +70,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Itérations de tests**|Spécifie le nombre total de tests individuels à exécuter avant que le test de charge ne soit complet. Cette propriété s'applique seulement lorsque la propriété "Utiliser les itérations de test" a la valeur `True`.|
 |**Utiliser les itérations des tests**|Si le paramètre Utiliser les itérations de test a la valeur `True`, le test de charge s'exécute jusqu'à ce que les tests individuels effectués dans le test de charge atteignent le nombre spécifié par la propriété « Itérations de test ». Dans ce cas, les paramètres basés sur le temps, à savoir Durée de préchauffage, Durée d'exécution et Durée de refroidissement, sont ignorés. Si la paramètre Utiliser les itérations de test a la valeur `False`, tous les paramètres de minutage s'appliquent et le paramètre Itérations de Test est ignoré.|
 
- Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propriétés de minutage
 

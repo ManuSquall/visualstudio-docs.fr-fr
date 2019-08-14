@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309810"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925985"
 ---
 # <a name="overview-report-a-problem"></a>Vue d’ensemble : Signaler un problème
 
@@ -110,7 +110,7 @@ L’état **Fermé - Ne sera pas résolu** indique que nous ne suivons pas le pr
 
 Nous vous recommandons d’utiliser la recherche pour vérifier que le problème que vous êtes sur le point de soumettre n’a pas déjà été signalé. Si vous trouvez un élément existant correspondant à votre problème, suivez-le et votez pour le ticket de ce problème.
 
- Fournissez toutes les informations possibles pour aider nos équipes à reproduire ce à quoi vous êtes confronté.  Ces informations incluent les étapes de reproduction nécessaires, les fragments de code, les captures d’écran, les enregistrements de la reproduction, les fichiers journaux et autres artefacts.  Voici [comment signaler un problème avec Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Fournissez toutes les informations possibles pour aider nos équipes à reproduire ce à quoi vous êtes confronté.  Ces informations incluent les étapes de reproduction nécessaires, les fragments de code, les captures d’écran, les enregistrements de la reproduction, les fichiers journaux et autres artefacts.  Voici [comment signaler un problème avec Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Comment mes commentaires sont-ils hiérarchisés ?
 

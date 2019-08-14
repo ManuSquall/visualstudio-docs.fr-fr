@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793082"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926274"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d'accessibilité de Microsoft
 
@@ -46,19 +46,19 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
 ## <a name="windows"></a> Fonctionnalités d’accessibilité de Windows
 
- Le système d’exploitation Windows intègre plusieurs fonctionnalités d’accessibilité utiles aux personnes ayant des difficultés à taper au clavier ou à utiliser une souris, qui sont aveugles ou malvoyantes ou qui sont atteintes de surdité ou de troubles de l’audition. Les fonctionnalités sont installées en même temps que le produit. Pour plus d’informations sur ces fonctionnalités, consultez l’aide de Windows et le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+Le système d’exploitation Windows intègre plusieurs fonctionnalités d’accessibilité utiles aux personnes ayant des difficultés à taper au clavier ou à utiliser une souris, qui sont aveugles ou malvoyantes ou qui sont atteintes de surdité ou de troubles de l’audition. Les fonctionnalités sont installées en même temps que le produit. Pour plus d’informations sur ces fonctionnalités, consultez l’aide de Windows et le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Didacticiels pas à pas gratuits
 
- Microsoft propose une série de didacticiels pas à pas qui fournissent des procédures détaillées pour régler les options d’accessibilité et les paramètres de votre ordinateur. Ces informations sont présentées dans un format côte à côte pour vous permettre d’apprendre à utiliser la souris, le clavier ou une combinaison des deux.
+Microsoft propose une série de didacticiels pas à pas qui fournissent des procédures détaillées pour régler les options d’accessibilité et les paramètres de votre ordinateur. Ces informations sont présentées dans un format côte à côte pour vous permettre d’apprendre à utiliser la souris, le clavier ou une combinaison des deux.
 
- Pour rechercher des tutoriels pas à pas pour des produits Microsoft, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+Pour rechercher des tutoriels pas à pas pour des produits Microsoft, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Produits de technologie d’assistance pour Windows
 
- Un large éventail de produits de technologie d’assistance destinés aux personnes atteintes de handicaps est disponible pour leur simplifier l’utilisation des ordinateurs. Vous pouvez consulter un catalogue de produits de technologie d’assistance qui s’exécutent sur Windows sur le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+Un large éventail de produits de technologie d’assistance destinés aux personnes atteintes de handicaps est disponible pour leur simplifier l’utilisation des ordinateurs. Vous pouvez consulter un catalogue de produits de technologie d’assistance qui s’exécutent sur Windows sur le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- Si vous utilisez une technologie d’assistance, veillez à en contacter le fournisseur avant de mettre à niveau votre logiciel ou matériel pour vous renseigner sur les problèmes de compatibilité éventuels.
+Si vous utilisez une technologie d’assistance, veillez à en contacter le fournisseur avant de mettre à niveau votre logiciel ou matériel pour vous renseigner sur les problèmes de compatibilité éventuels.
 
 ## <a name="altfortmats"></a> Documentation dans d’autres formats
 

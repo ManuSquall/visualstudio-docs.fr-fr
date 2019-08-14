@@ -1,16 +1,16 @@
 ---
-title: Raccourcis clavier par défaut dans Visual Studio pour Mac
+title: Raccourcis clavier par défaut
 description: Cet article répertorie les raccourcis clavier par défaut dans Visual Studio pour Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: adhartle
+ms.author: crdun
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 498cea9cdc32eab48d4f861f349e2076bb312bb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997169"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872245"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
 
@@ -36,7 +36,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 |Commandes|Raccourcis clavier|
 |-|-|
-|Activer ou Désactiver le point d’arrêt|**⌥⌘ /**, **⌘F9**|
+|Activer ou Désactiver le point d’arrêt|**⌥⌘ /** , **⌘F9**|
 |Pause|**⌥⌘P**, **⌥⌘L5**|
 |Supprimer tous les points d’arrêt|**⇧⌘F9**|
 |Exécuter jusqu'au curseur|**⌘F10**|
@@ -45,7 +45,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Pas à pas détaillé|**⇧⌘I**, **⌘F11**|
 |Pas à pas sortant|**⇧⌘U**, **⇧⌘F11**|
 |Pas à pas principal|**⇧⌘O**, **F10**|
-|Point d'arrêt|**⌘\\**, **F9**|
+|Point d'arrêt|**⌘\\** , **F9**|
 |Afficher les points d’arrêt|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -225,8 +225,8 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Afficher suivant|**⌥⌘↓**, **F8**|
 |Afficher précédent|**⌥⌘↑**, **⇧F8**|
 |Deux colonnes d’éditeur|**⌥⌘2**|
-|Zoom avant|**⌘ +**, **⌘ =**|
-|Zoom arrière|**⌘ -**, **⌘_**|
+|Zoom avant|**⌘ +** , **⌘ =**|
+|Zoom arrière|**⌘ -** , **⌘_**|
 
 ## <a name="window"></a>Fenêtre
 
@@ -244,8 +244,8 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Masquer les autres|**⌥⌘H**|
 |Masquer Visual Studio|**⌘H**|
 |Réduire|**⌘M**|
-|Document suivant|**⌘}**, **⌘F6**|
-|Document précédent|**⌘{**, **⇧⌘F6**|
+|Document suivant|**⌘}** , **⌘F6**|
+|Document précédent|**⌘{** , **⇧⌘F6**|
 |Basculer vers le document suivant|**⌃⇥**|
 |Passer à la fenêtre suivante|**⌃⌥⇥**|
 |Basculer vers le document précédent|**⌃⇧⇥**|
@@ -259,8 +259,8 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |⌥|**Option** (**alt**)|
 |⇧|**Maj**|
 |⌃|**Contrôle** (**ctrl**)
-|⇞|**Page précédente** (**Page préc.**)|
-|⇟|**Page suivante** (**Page suiv.**)|
+|⇞|**Page précédente** (**Page préc.** )|
+|⇟|**Page suivante** (**Page suiv.** )|
 |⌫|**Supprimer** (**Retour arrière**)|
 |⌦|**Supprimer vers l’avant**|
 |⏎|**Return**|

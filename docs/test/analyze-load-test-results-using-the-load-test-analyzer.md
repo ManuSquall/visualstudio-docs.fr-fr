@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822797"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926443"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analyse des résultats des tests de charge à l’aide de l’analyseur de test de charge
 
@@ -37,11 +37,11 @@ Vous pouvez effectuer ces tâches si vous exécutez votre test de charge à part
 
 ## <a name="differences-between-analyzing-a-running-and-a-completed-load-test"></a>Différences entre l’analyse d’une exécution de test de charge et d’un test de charge terminé
 
- Quand vous exécutez un test de charge, **l’analyseur de test de charge** s’affiche sous un onglet distinct, en indiquant le nom de votre test de charge et l’heure de démarrage du test (par exemple **LoadTest1 [12:40 PM]**). Lorsqu'un test de charge est exécuté, un plus petit groupe des données de compteur de performance est conservé dans la mémoire. Vous pouvez surveiller ce groupe de données lorsque votre test de charge est exécuté. Une fois le test de charge terminé, vous pouvez analyser le groupe de données complet à partir de la base de données. Il existe des différences entre la nature des données affichées lorsqu'un test de charge est exécuté et le type de données que vous pouvez afficher à l'issue de l'exécution d'un test de charge. Par exemple, 90 % et 95 % des données de temps de réponse ne sont pas calculés tant que le test de charge n'est pas terminé. Il existe également des différences dans les fonctionnalités des outils disponibles pour analyser les données.
+Quand vous exécutez un test de charge, **l’analyseur de test de charge** s’affiche sous un onglet distinct, en indiquant le nom de votre test de charge et l’heure de démarrage du test (par exemple **LoadTest1 [12:40 PM]** ). Lorsqu'un test de charge est exécuté, un plus petit groupe des données de compteur de performance est conservé dans la mémoire. Vous pouvez surveiller ce groupe de données lorsque votre test de charge est exécuté. Une fois le test de charge terminé, vous pouvez analyser le groupe de données complet à partir de la base de données. Il existe des différences entre la nature des données affichées lorsqu'un test de charge est exécuté et le type de données que vous pouvez afficher à l'issue de l'exécution d'un test de charge. Par exemple, 90 % et 95 % des données de temps de réponse ne sont pas calculés tant que le test de charge n'est pas terminé. Il existe également des différences dans les fonctionnalités des outils disponibles pour analyser les données.
 
- Quand vous exécutez le test de charge, deux vues sont disponibles : la vue **Graphiques** et la vue **Tables**. La vue **Graphiques** vous permet de tracer sur un graphique les compteurs de performance collectés. La vue **Tables** fournit des informations sur chacun des tests, pages, transactions et requêtes collectés. Vous obtenez également une table qui répertorie les erreurs.
+Quand vous exécutez le test de charge, deux vues sont disponibles : la vue **Graphiques** et la vue **Tables**. La vue **Graphiques** vous permet de tracer sur un graphique les compteurs de performance collectés. La vue **Tables** fournit des informations sur chacun des tests, pages, transactions et requêtes collectés. Vous obtenez également une table qui répertorie les erreurs.
 
- Par défaut, quand la série de tests de charge est terminée, la vue **Résumé** s’affiche. Vous pouvez basculer entre les vues **Résumé**, **Graphiques**, **Tables** et **Details** à l’aide de la barre d’outils. Vous pouvez ancrer ou rendre flottante la fenêtre de **l’analyseur de test de charge** à l’aide des techniques usuelles de manipulation de fenêtre Visual Studio. Quand vous analysez les séries de tests de charge terminées, vous pouvez avoir plusieurs instances de **l’analyseur de test de charge** ouvertes en même temps pour comparer différentes séries de tests de charge.
+Par défaut, quand la série de tests de charge est terminée, la vue **Résumé** s’affiche. Vous pouvez basculer entre les vues **Résumé**, **Graphiques**, **Tables** et **Details** à l’aide de la barre d’outils. Vous pouvez ancrer ou rendre flottante la fenêtre de **l’analyseur de test de charge** à l’aide des techniques usuelles de manipulation de fenêtre Visual Studio. Quand vous analysez les séries de tests de charge terminées, vous pouvez avoir plusieurs instances de **l’analyseur de test de charge** ouvertes en même temps pour comparer différentes séries de tests de charge.
 
 ## <a name="tasks"></a>Tâches
 

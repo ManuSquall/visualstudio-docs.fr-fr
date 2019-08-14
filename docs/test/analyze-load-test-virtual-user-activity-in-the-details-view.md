@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823416"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918620"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l’activité des utilisateurs virtuels d’un test de charge dans la vue Détails de l’analyseur de test de charge
 
@@ -31,19 +31,19 @@ La vue **Détails** affiche le **graphique d’activités des utilisateurs virtu
 > [!NOTE]
 > Avant d’exécuter le test de charge pour lequel vous souhaitez utiliser le **graphique d’activités des utilisateurs virtuels**, vous devez vérifier que la propriété **Stockage des détails de minuterie** a la valeur **AllIndividualDetails** à l’aide de l’éditeur de test de charge.
 
- **Panneau Légende du détail**
+**Panneau Légende du détail**
 
- ![Panneau Légende du détail](../test/media/ltest_detailslegend.png)
+![Panneau Légende du détail](../test/media/ltest_detailslegend.png)
 
- Le panneau Légende du détail est visible dans le **graphique d’activités des utilisateurs virtuels**. Il vous permet de filtrer les tests, les pages et les transactions en fonction de plusieurs critères différents. Par exemple, vous pouvez supprimer certains tests de la vue, supprimer tous les tests réussis ou supprimer les tests qui ont abouti à certains échecs. Vous pouvez également supprimer tous les tests qui n'ont pas de journaux.
+Le panneau Légende du détail est visible dans le **graphique d’activités des utilisateurs virtuels**. Il vous permet de filtrer les tests, les pages et les transactions en fonction de plusieurs critères différents. Par exemple, vous pouvez supprimer certains tests de la vue, supprimer tous les tests réussis ou supprimer les tests qui ont abouti à certains échecs. Vous pouvez également supprimer tous les tests qui n'ont pas de journaux.
 
- Vous pouvez mettre en surbrillance les tests ayant échoué, ce qui entraîne l'affichage en rouge de tous les tests qui n'ont pas réussi. Vous pouvez également mettre en surbrillance les tests qui ont des journaux des tests. Les tests qui ont des journaux prennent une couleur verte.
+Vous pouvez mettre en surbrillance les tests ayant échoué, ce qui entraîne l'affichage en rouge de tous les tests qui n'ont pas réussi. Vous pouvez également mettre en surbrillance les tests qui ont des journaux des tests. Les tests qui ont des journaux prennent une couleur verte.
 
- **Panneau Filtrer les résultats**
+**Panneau Filtrer les résultats**
 
- ![Panneau de filtrage des résultats](../test/media/ltest_filterresults.png)
+![Panneau de filtrage des résultats](../test/media/ltest_filterresults.png)
 
- Le panneau Résultats du filtre est visible dans le **graphique d’activités des utilisateurs virtuels**. Le panneau Résultats du filtre peut filtrer en fonction des éléments suivants :
+Le panneau Résultats du filtre est visible dans le **graphique d’activités des utilisateurs virtuels**. Le panneau Résultats du filtre peut filtrer en fonction des éléments suivants :
 
 - **Indiquer uniquement les résultats avec journaux** Affiche uniquement les résultats des tests associés à des journaux des tests.
 

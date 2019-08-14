@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132162"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926667"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
 
- Il existe plusieurs façons de tester du code de DLL, selon qu’elle exporte ou non les fonctions que vous voulez tester. Choisissez l'un des moyens suivants :
+Il existe plusieurs façons de tester du code de DLL, selon qu’elle exporte ou non les fonctions que vous voulez tester. Choisissez l'un des moyens suivants :
 
- **Les tests unitaires appellent seulement des fonctions exportées depuis la DLL :** Ajoutez un projet de test distinct, comme indiqué dans [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md). Dans le projet de test, ajoutez une référence au projet DLL.
+**Les tests unitaires appellent seulement des fonctions exportées depuis la DLL :** Ajoutez un projet de test distinct, comme indiqué dans [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md). Dans le projet de test, ajoutez une référence au projet DLL.
 
- Passez à la procédure [Pour référencer des fonctions exportées depuis le projet DLL](#projectRef).
+Passez à la procédure [Pour référencer des fonctions exportées depuis le projet DLL](#projectRef).
 
- **La DLL est générée sous la forme d’un fichier .exe :** Ajoutez un projet de test distinct. Liez-le au fichier objet de sortie.
+**La DLL est générée sous la forme d’un fichier .exe :** Ajoutez un projet de test distinct. Liez-le au fichier objet de sortie.
 
- Passez à la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).
+Passez à la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).
 
- **Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées depuis la DLL, et la DLL peut être générée sous forme de bibliothèque statique :** Changez le projet DLL pour qu’il soit compilé sous forme de fichier *.lib*. Ajoutez un projet de test distinct qui référence le projet testé.
+**Les tests unitaires appellent des fonctions non-membres qui ne sont pas exportées depuis la DLL, et la DLL peut être générée sous forme de bibliothèque statique :** Changez le projet DLL pour qu’il soit compilé sous forme de fichier *.lib*. Ajoutez un projet de test distinct qui référence le projet testé.
 
- Cette approche présente l’avantage de permettre à vos tests d’utiliser des membres non exportés, mais de conserver les tests dans un projet distinct.
+Cette approche présente l’avantage de permettre à vos tests d’utiliser des membres non exportés, mais de conserver les tests dans un projet distinct.
 
- Passez à la procédure [Pour changer la DLL en une bibliothèque statique](#staticLink).
+Passez à la procédure [Pour changer la DLL en une bibliothèque statique](#staticLink).
 
- **Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :** Ajoutez les tests unitaires dans le même projet que le code du produit.
+**Les tests unitaires doivent appeler des fonctions non-membres qui ne sont pas exportées, et le code doit être généré sous la forme d’une bibliothèque de liens dynamiques (DLL) :** Ajoutez les tests unitaires dans le même projet que le code du produit.
 
- Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](#sameProject).
+Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](#sameProject).
 
 ## <a name="create-the-tests"></a>Créer les tests
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132162"
       1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Ajouter un nouveau projet**, définissez **Langage** sur C++ et tapez « test » dans la zone de recherche. Choisissez ensuite **Projet de test unitaire natif**.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet** > **Visual C++** > **Test** > **Projet de test unitaire C++** .
