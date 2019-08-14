@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66745006"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926260"
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
 
@@ -26,41 +26,41 @@ Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur
 
 ## <a name="uielement-list"></a>Liste UIElement
 
- Activer l’analyse du code\
- Active ou désactive l’analyse du code pour votre projet.
+Activer l’analyse du code\
+Active ou désactive l’analyse du code pour votre projet.
 
- Règles de conception\
- Active ou désactive les règles de conception. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de conception\
+Active ou désactive les règles de conception. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de globalisation\
- Active ou désactive les règles de globalisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de globalisation\
+Active ou désactive les règles de globalisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles d’interopérabilité\
- Active ou désactive les règles d’interopérabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles d’interopérabilité\
+Active ou désactive les règles d’interopérabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de maintenance\
- Active ou désactive les règles de maintenance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de maintenance\
+Active ou désactive les règles de maintenance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de mobilité\
- Active ou désactive les règles de mobilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de mobilité\
+Active ou désactive les règles de mobilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de nommage\
- Active ou désactive les règles de nommage. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de nommage\
+Active ou désactive les règles de nommage. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de performances\
- Active ou désactive les règles de performance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de performances\
+Active ou désactive les règles de performance. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de portabilité\
- Active ou désactive les règles de portabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de portabilité\
+Active ou désactive les règles de portabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de fiabilité\
- Active ou désactive les règles de fiabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de fiabilité\
+Active ou désactive les règles de fiabilité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles de sécurité\
- Active ou désactive les règles de sécurité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles de sécurité\
+Active ou désactive les règles de sécurité. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
- Règles d’utilisation\
- Active ou désactive les règles d’utilisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
+Règles d’utilisation\
+Active ou désactive les règles d’utilisation. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.
 
 ## <a name="see-also"></a>Voir aussi
 

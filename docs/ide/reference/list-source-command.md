@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946854"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926186"
 ---
 # <a name="list-source-command"></a>Afficher la source, commande
 Affiche les lignes de code source spécifiées.
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Commutateurs
- /Count:`number`
+/Count:`number`
 
- Optionnel. Spécifie le nombre de lignes à afficher.
+facultatif. Spécifie le nombre de lignes à afficher.
 
- /Current
+/Current
 
- Optionnel. Affiche la ligne active.
+facultatif. Affiche la ligne active.
 
- /File:`filename`
+/File:`filename`
 
- Optionnel. Chemin du fichier à afficher. Si aucun nom de fichier n’est spécifié, la commande affiche le code source de la ligne de l’instruction actuelle.
+facultatif. Chemin du fichier à afficher. Si aucun nom de fichier n’est spécifié, la commande affiche le code source de la ligne de l’instruction actuelle.
 
- /Line:`number`
+/Line:`number`
 
- Optionnel. Affiche un numéro de ligne spécifique.
+facultatif. Affiche un numéro de ligne spécifique.
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les numéros de ligne.
+facultatif. Spécifie s’il faut afficher les numéros de ligne.
 
-## <a name="example"></a>Exemple
- Cet exemple affiche le code source à partir de la ligne 4 du fichier Form1.vb, avec les numéros de ligne.
+## <a name="example"></a>Exemples
+Cet exemple affiche le code source à partir de la ligne 4 du fichier Form1.vb, avec les numéros de ligne.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

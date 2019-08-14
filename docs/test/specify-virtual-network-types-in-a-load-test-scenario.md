@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7cb81f191b2fd14b21a2724feab496ad05c1eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990654"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918062"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
@@ -86,16 +86,16 @@ L'émulation de réseau véritable peut être utilisée par les développeurs et
 
 ## <a name="about-the-mix-control"></a>À propos du contrôle de combinaison
 
- Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distribuée entre les tests, les types de navigateurs ou les types de réseaux dans un scénario de test de charge. Pour ajuster les valeurs en pourcentage, déplacez les curseurs. L'ajustement de la combinaison de types de réseau spécifie la probabilité qu'un utilisateur virtuel exécute un profil réseau spécifique dans un scénario de test de charge.
+Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distribuée entre les tests, les types de navigateurs ou les types de réseaux dans un scénario de test de charge. Pour ajuster les valeurs en pourcentage, déplacez les curseurs. L'ajustement de la combinaison de types de réseau spécifie la probabilité qu'un utilisateur virtuel exécute un profil réseau spécifique dans un scénario de test de charge.
 
- Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
+Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
 
- Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
+Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
 
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.
 
- Il est également possible de taper les valeurs en pourcentage directement dans la colonne **%** au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
+Il est également possible de taper les valeurs en pourcentage directement dans la colonne **%** au lieu d’utiliser les curseurs. Si vous entrez directement une valeur en pourcentage, les autres éléments ne s'ajustent pas automatiquement.
 
 > [!NOTE]
 > Les curseurs sont désactivés quand le total n’atteint pas 100 % ou quand les valeurs en pourcentage entrées dans la colonne **%** sont des nombres décimaux.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d466a320d9acd968bfab07b7e8a595dde10ad9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557061"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926202"
 ---
 # <a name="list-modules-command"></a>Afficher les modules, commande
 Répertorie les modules pour le processus en cours.
@@ -33,44 +33,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Paramètres
- /Address:`yes|no`
+/Address:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les adresses mémoire des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les adresses mémoire des modules. La valeur par défaut est `yes`.
 
- /Name:`yes|no`
+/Name:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les noms des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les noms des modules. La valeur par défaut est `yes`.
 
- /Order:`yes|no`
+/Order:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher l’ordre des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher l’ordre des modules. La valeur par défaut est `no`.
 
- /Path:`yes|no`
+/Path:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les chemins des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les chemins des modules. La valeur par défaut est `yes`.
 
- /Process:`yes|no`
+/Process:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les processus des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les processus des modules. La valeur par défaut est `no`.
 
- /SymbolFile:`yes|no`
+/SymbolFile:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les fichiers de symboles des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les fichiers de symboles des modules. La valeur par défaut est `no`.
 
- /SymbolStatus:`yes|no`
+/SymbolStatus:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les états des symboles des modules. La valeur par défaut est `yes`.
+facultatif. Spécifie s’il faut afficher les états des symboles des modules. La valeur par défaut est `yes`.
 
- /Timestamp:`yes|no`
+/Timestamp:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les horodatages des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les horodatages des modules. La valeur par défaut est `no`.
 
- /Version:`yes|no`
+/Version:`yes|no`
 
- Optionnel. Spécifie s’il faut afficher les versions des modules. La valeur par défaut est `no`.
+facultatif. Spécifie s’il faut afficher les versions des modules. La valeur par défaut est `no`.
 
-## <a name="example"></a>Exemple
- Cet exemple répertorie les noms, les adresses et les horodatages des modules pour le processus actuel.
+## <a name="example"></a>Exemples
+Cet exemple répertorie les noms, les adresses et les horodatages des modules pour le processus actuel.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
