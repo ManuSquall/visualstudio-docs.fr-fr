@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950439"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926025"
 ---
 # <a name="start-command"></a>Démarrer, commande
 Commence le débogage du projet de démarrage.
@@ -30,15 +30,15 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>Arguments
- `address`
+`address`
 
- Optionnel. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
+facultatif. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
 
 ## <a name="remarks"></a>Remarques
- Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
+Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
 
-## <a name="example"></a>Exemple
- Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.
+## <a name="example"></a>Exemples
+Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.
 
 ```cmd
 >Debug.Start
