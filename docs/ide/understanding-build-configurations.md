@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416960"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918706"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -59,18 +59,18 @@ Chaque entrée dans la zone **Contextes des projets** d’une configuration de s
 La configuration de solution active fournit également le contexte à l'IDE. Par exemple, si vous travaillez sur un projet et que la configuration indique qu’il doit être généré pour un appareil mobile, la **Boîte à outils** n’affiche que les éléments qui peuvent être utilisés dans un projet d’appareil mobile.
 
 ## <a name="project-configurations"></a>Configurations de projet
- La configuration et la plateforme ciblées par un projet sont utilisées ensemble pour spécifier les propriétés à utiliser lors de sa génération. Un projet peut avoir un ensemble différent de définitions de propriété pour chaque combinaison de configuration et de plateforme. Pour modifier les propriétés d'un projet, vous pouvez utiliser ses pages de propriétés. (Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.)
+La configuration et la plateforme ciblées par un projet sont utilisées ensemble pour spécifier les propriétés à utiliser lors de sa génération. Un projet peut avoir un ensemble différent de définitions de propriété pour chaque combinaison de configuration et de plateforme. Pour modifier les propriétés d'un projet, vous pouvez utiliser ses pages de propriétés. (Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.)
 
- Pour chaque configuration de projet, vous pouvez définir des propriétés dépendantes de la configuration si nécessaire. Les propriétés du projet servent à déterminer, par exemple, les éléments de projet à inclure dans une version particulière ainsi que les fichiers de sortie à créer, leur emplacement et leur niveau d'optimisation.
+Pour chaque configuration de projet, vous pouvez définir des propriétés dépendantes de la configuration si nécessaire. Les propriétés du projet servent à déterminer, par exemple, les éléments de projet à inclure dans une version particulière ainsi que les fichiers de sortie à créer, leur emplacement et leur niveau d'optimisation.
 
- Les configurations de projet peuvent varier considérablement. Par exemple, les propriétés d'une configuration peuvent indiquer que son fichier de sortie est optimisé pour occuper le moins d'espace possible, tandis qu'une autre configuration peut indiquer que son fichier exécutable s'exécute à la vitesse maximale.
+Les configurations de projet peuvent varier considérablement. Par exemple, les propriétés d'une configuration peuvent indiquer que son fichier de sortie est optimisé pour occuper le moins d'espace possible, tandis qu'une autre configuration peut indiquer que son fichier exécutable s'exécute à la vitesse maximale.
 
- Les configurations de projet sont enregistrées par solution, et non par utilisateur, afin qu'elles puissent être partagées par une équipe.
+Les configurations de projet sont enregistrées par solution, et non par utilisateur, afin qu'elles puissent être partagées par une équipe.
 
- Bien que les dépendances d'un projet ne soient pas liées à la configuration, seuls les projets spécifiés dans la configuration de solution active seront générés.
+Bien que les dépendances d'un projet ne soient pas liées à la configuration, seuls les projets spécifiés dans la configuration de solution active seront générés.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Comment Visual Studio affecte des configurations de projet
- Lorsque vous définissez une nouvelle configuration de solution sans copier les paramètres d'une configuration existante, Visual Studio utilise les critères ci-après pour assigner des configurations de projet par défaut. Les critères sont évalués dans l'ordre indiqué.
+Lorsque vous définissez une nouvelle configuration de solution sans copier les paramètres d'une configuration existante, Visual Studio utilise les critères ci-après pour assigner des configurations de projet par défaut. Les critères sont évalués dans l'ordre indiqué.
 
 1. Si un projet a un nom de configuration ( *\<nom de la configuration> \<nom de la plateforme>* ) qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est attribuée. Les noms de configuration ne respectent pas la casse.
 
@@ -79,9 +79,9 @@ La configuration de solution active fournit également le contexte à l'IDE. Par
 3. Si aucun nom ne correspond en partie au nom de configuration, la première configuration répertoriée dans le projet est assignée.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Comment Visual Studio affecte des configurations de solution
- Quand vous créez une configuration de projet (dans le **Gestionnaire de configurations**, en choisissant **Nouveau** dans le menu déroulant de la colonne **Configuration** de ce projet) et que vous cochez la case **Créer des configurations de solutions**, Visual Studio recherche une configuration de solution du même nom pour générer le projet sur chaque plateforme prise en charge. Dans certains cas, Visual Studio renomme des configurations de solution existantes ou en définit de nouvelles.
+Quand vous créez une configuration de projet (dans le **Gestionnaire de configurations**, en choisissant **Nouveau** dans le menu déroulant de la colonne **Configuration** de ce projet) et que vous cochez la case **Créer des configurations de solutions**, Visual Studio recherche une configuration de solution du même nom pour générer le projet sur chaque plateforme prise en charge. Dans certains cas, Visual Studio renomme des configurations de solution existantes ou en définit de nouvelles.
 
- Visual Studio utilise les critères ci-après pour assigner des configurations de solution.
+Visual Studio utilise les critères ci-après pour assigner des configurations de solution.
 
 - Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas le nom d’une plateforme ; il prend la forme *\<nom de la configuration de projet*.
 

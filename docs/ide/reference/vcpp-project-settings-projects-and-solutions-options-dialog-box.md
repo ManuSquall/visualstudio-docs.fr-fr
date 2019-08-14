@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461562"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918886"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 
@@ -49,11 +49,11 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 
  **Oui**
 
- Répertorie les variables d’environnement dans le fichier journal de génération. Cette option spécifie d’indiquer le contenu de toutes les variables d’environnement dans le fichier journal de build lors des builds de projets C++.
+Répertorie les variables d’environnement dans le fichier journal de génération. Cette option spécifie d’indiquer le contenu de toutes les variables d’environnement dans le fichier journal de build lors des builds de projets C++.
 
  **Non**
 
- Exclut les variables d’environnement du fichier journal de génération.
+Exclut les variables d’environnement du fichier journal de génération.
 
 ## <a name="build-timing"></a>Minutage de la génération
 
@@ -63,7 +63,7 @@ Cette boîte de dialogue vous permet de définir les paramètres du projet et de
 
  **Non**
 
- Désactive le minutage de la génération.
+Désactive le minutage de la génération.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Nombre maximal de compilations C++ simultanées
 

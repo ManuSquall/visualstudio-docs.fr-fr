@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422963"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919108"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.
@@ -33,33 +33,33 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Commutateurs
- /Display [{`register`&#124;`registerGroup`}...]
+/Display [{`register`&#124;`registerGroup`}...]
 
- Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
+Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
 
- `Debug.ListRegisters /Display eax`
+`Debug.ListRegisters /Display eax`
 
- est équivalent à
+est équivalent à
 
- `Debug.ListRegisters eax`
+`Debug.ListRegisters eax`
 
- /List
+/List
 
- Affiche tous les groupes de registres dans la liste.
+Affiche tous les groupes de registres dans la liste.
 
- /Watch [{`register`&#124;`registerGroup`}...]
+/Watch [{`register`&#124;`registerGroup`}...]
 
- Ajoute une ou plusieurs valeurs de `register` ou `registerGroup` dans la liste.
+Ajoute une ou plusieurs valeurs de `register` ou `registerGroup` dans la liste.
 
- /Unwatch [{`register`&#124;`registerGroup`}...]
+/Unwatch [{`register`&#124;`registerGroup`}...]
 
- Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
+Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
 
 ## <a name="remarks"></a>Remarques
- L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
+L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
-## <a name="example"></a>Exemple
- Cet exemple utilise l’alias `Debug.ListRegisters` `r` pour afficher les valeurs du groupe de registres `Flags`.
+## <a name="example"></a>Exemples
+Cet exemple utilise l’alias `Debug.ListRegisters` `r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```cmd
 r /Display Flags

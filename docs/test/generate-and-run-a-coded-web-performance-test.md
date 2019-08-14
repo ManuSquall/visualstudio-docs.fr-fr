@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002548"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918405"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
@@ -85,16 +85,16 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 ## <a name="qa"></a>Questions et réponses
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q : Puis-je exécuter plusieurs tests simultanément ?
- **R :** Oui, utilisez le menu contextuel (clic droit) dans **l’Explorateur de solutions**.
+**R :** Oui, utilisez le menu contextuel (clic droit) dans **l’Explorateur de solutions**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d’un test codé ?
- **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code est généré automatiquement pour vous.
+**R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code est généré automatiquement pour vous.
 
- Lorsque vous exécutez un test codé avec une source de données, le message d'erreur suivant peut s'afficher :
+Lorsque vous exécutez un test codé avec une source de données, le message d'erreur suivant peut s'afficher :
 
- **Impossible d’exécuter le test \<Nom du test > sur l’agent \<Nom de l’ordinateur> : La référence d’objet n’a pas la valeur d’une instance d’un objet.**
+**Impossible d’exécuter le test \<Nom du test > sur l’agent \<Nom de l’ordinateur> : La référence d’objet n’a pas la valeur d’une instance d’un objet.**
 
- Cette erreur peut se produire parce qu'un DataSourceAttribute a été défini pour la classe de test, sans DataBindingAttribute correspondant. Pour résoudre cette erreur, ajoutez un DataBindingAttribute approprié, supprimez-le ou commentez-le hors du code.
+Cette erreur peut se produire parce qu'un DataSourceAttribute a été défini pour la classe de test, sans DataBindingAttribute correspondant. Pour résoudre cette erreur, ajoutez un DataBindingAttribute approprié, supprimez-le ou commentez-le hors du code.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter des règles de validation et d’extraction avant ou après la génération d’un test codé ?
- **R :** Il est plus facile d’ajouter des règles de validation et d’extraction avant de générer le test codé. Toutefois, nous vous recommandons d’utiliser des [tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) à des fins de validation.
+**R :** Il est plus facile d’ajouter des règles de validation et d’extraction avant de générer le test codé. Toutefois, nous vous recommandons d’utiliser des [tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) à des fins de validation.

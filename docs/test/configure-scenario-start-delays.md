@@ -8,12 +8,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963791"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918443"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -32,9 +32,9 @@ Vous pouvez spécifier un délai avant le début d’un scénario dans un test d
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
- Par exemple, vous pouvez utiliser la propriété **Retarder l’heure de début** quand vous avez besoin qu’un scénario commence à produire des éléments consommés par un autre scénario. Vous pouvez retarder le scénario d'utilisation pour permettre au scénario de production de remplir certaines données.
+Par exemple, vous pouvez utiliser la propriété **Retarder l’heure de début** quand vous avez besoin qu’un scénario commence à produire des éléments consommés par un autre scénario. Vous pouvez retarder le scénario d'utilisation pour permettre au scénario de production de remplir certaines données.
 
- Comme autre exemple, vous pouvez être amené à exécuter un scénario uniquement à une certaine heure de la journée. Par conséquent, vous voulez retarder le début du scénario pour simuler cette situation.
+Comme autre exemple, vous pouvez être amené à exécuter un scénario uniquement à une certaine heure de la journée. Par conséquent, vous voulez retarder le début du scénario pour simuler cette situation.
 
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
@@ -62,7 +62,7 @@ Vous pouvez spécifier un délai avant le début d’un scénario dans un test d
 
 La propriété **Désactiver pendant le préchauffage** est définie dans la fenêtre **Propriétés**. La modification des propriétés du scénario de test de charge est définie à l'aide de l'Éditeur de test de charge.
 
- La propriété **Désactiver pendant le préchauffage** est utilisée pour indiquer si le scénario doit être exécuté ou non pendant la période de préparation spécifiée dans la propriété **Retarder l’heure de début**. Pour plus d’informations, consultez la procédure précédente [Spécifier le délai de démarrage d’un scénario](#specify-the-delay-start-time-of-a-scenario).
+La propriété **Désactiver pendant le préchauffage** est utilisée pour indiquer si le scénario doit être exécuté ou non pendant la période de préparation spécifiée dans la propriété **Retarder l’heure de début**. Pour plus d’informations, consultez la procédure précédente [Spécifier le délai de démarrage d’un scénario](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Pour obtenir la liste complète des propriétés des paramètres d’exécution et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).

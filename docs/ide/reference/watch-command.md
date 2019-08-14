@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788998"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925947"
 ---
 # <a name="watch-command"></a>Espion, commande
 Crée et ouvre une instance spécifiée d’une fenêtre **Espion** . Vous pouvez utiliser une fenêtre **Espion** pour calculer les valeurs des variables, des expressions et des registres, modifier ces valeurs et enregistrer les résultats.
@@ -30,14 +30,15 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
 
- Obligatoire. Numéro d’instance de la fenêtre Espion.
+`index`\
+Obligatoire. Numéro d’instance de la fenêtre Espion.
 
 ## <a name="remarks"></a>Remarques
- La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.
 
-## <a name="example"></a>Exemple
+La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.
+
+## <a name="example"></a>Exemples
 
 ```cmd
 >Debug.Watch1

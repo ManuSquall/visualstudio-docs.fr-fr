@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820925"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926787"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
 
@@ -465,7 +465,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 Les améliorations apportées au code du test ont abouti à des méthodes de test plus robustes et plus informatives. Mais plus important encore, elles ont également amélioré le code testé.
 
 > [!TIP]
-> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’**Explorateur de tests** peut aussi exécuter des tests à partir de frameworks de tests unitaires tiers qui ont des adaptateurs pour l’**Explorateur de tests**. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
+> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’**Explorateur de tests** peut aussi exécuter des tests à partir de frameworks de tests unitaires tiers qui ont des adaptateurs pour l’**Explorateur de tests**. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="see-also"></a>Voir aussi
 

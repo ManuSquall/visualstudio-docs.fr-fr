@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783791"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918272"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
@@ -32,18 +32,18 @@ La propriété **Nombre maximal d’itérations de test** contrôle le nombre ma
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
- Pour une combinaison de tests basée sur un ordre séquentiel, une itération est une opération qui inclut tous les tests de la combinaison. Pour toutes les autres combinaisons de tests, chaque exécution de test compte comme une itération. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Pour une combinaison de tests basée sur un ordre séquentiel, une itération est une opération qui inclut tous les tests de la combinaison. Pour toutes les autres combinaisons de tests, chaque exécution de test compte comme une itération. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Si le test de charge est basé sur la durée, et si cette dernière expire avant la fin du nombre d'itérations, le test s'arrête. Si le test est basé sur des itérations, et si ces dernières sont effectuées avant les itérations du scénario, le test s'arrête. La durée est configurée à l’aide de la propriété **Durée d’exécution** dans la fenêtre **Propriétés**, en association à un paramètre d’exécution dans un test de charge.
+Si le test de charge est basé sur la durée, et si cette dernière expire avant la fin du nombre d'itérations, le test s'arrête. Si le test est basé sur des itérations, et si ces dernières sont effectuées avant les itérations du scénario, le test s'arrête. La durée est configurée à l’aide de la propriété **Durée d’exécution** dans la fenêtre **Propriétés**, en association à un paramètre d’exécution dans un test de charge.
 
- Lorsque le nombre d'itérations du scénario est atteint, le scénario cesse de s'exécuter, mais tous les autres scénarios actifs continuent de s'exécuter.
+Lorsque le nombre d'itérations du scénario est atteint, le scénario cesse de s'exécuter, mais tous les autres scénarios actifs continuent de s'exécuter.
 
 > [!NOTE]
 > La propriété **Unique** est une propriété connexe d’une source de données de test web, qui parcourt les données de manière séquentielle, ligne par ligne, mais une seule fois pour chaque enregistrement. Pour plus d’informations, consultez [Ajouter une source de données à un test de performances web](../test/add-a-data-source-to-a-web-performance-test.md).
 
- La propriété **Nombre maximal d’itérations de test** est utile pour diverses situations. Certains testeurs de charge privilégient les tests basés sur l'itération tandis que d'autres testeurs de charge privilégient les tests basés sur la durée.
+La propriété **Nombre maximal d’itérations de test** est utile pour diverses situations. Certains testeurs de charge privilégient les tests basés sur l'itération tandis que d'autres testeurs de charge privilégient les tests basés sur la durée.
 
- ![Spécification des itérations de test dans un scénario](../test/media/loadtest_prop.png)
+![Spécification des itérations de test dans un scénario](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Pour spécifier le nombre maximal d'itérations de test
 

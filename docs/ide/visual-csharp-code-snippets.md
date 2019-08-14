@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581696"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918667"
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 
 Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapidement insérer dans votre code. Par exemple, l’extrait de code `for` crée une boucle `for` vide. Certains extraits de code sont des extraits « Entourer de ». Il vous permettent de sélectionner des lignes de code, puis de choisir un extrait de code qui incorpore les lignes sélectionnées. Par exemple, quand vous sélectionnez des lignes de code et que vous activez l’extrait de code `for`, cela crée une boucle `for` avec ces lignes de code dans le bloc de boucle. Les extraits de code peuvent accélérer, simplifier et fiabiliser l’écriture de code de programme.
 
- Vous pouvez insérer un extrait de code à l’emplacement du curseur, ou insérer un extrait de code « Entourer de » autour du code actuellement sélectionné. L’outil d’insertion d’extraits de code est appelé par le biais de la commande **Insérer un extrait de code** ou **Entourer de** du menu **IntelliSense**, ou à l’aide des raccourcis clavier **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S** (respectivement).
+Vous pouvez insérer un extrait de code à l’emplacement du curseur, ou insérer un extrait de code « Entourer de » autour du code actuellement sélectionné. L’outil d’insertion d’extraits de code est appelé par le biais de la commande **Insérer un extrait de code** ou **Entourer de** du menu **IntelliSense**, ou à l’aide des raccourcis clavier **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S** (respectivement).
 
- **L’outil d’insertion d’extraits de code** montre le nom de l’extrait de code pour tous les extraits de code disponibles. Il inclut également une boîte de dialogue d’entrée où vous pouvez taper le nom de l’extrait de code, ou une partie du nom. Il met en évidence la correspondance la plus proche avec un nom d’extrait de code. Une pression sur la touche **Tab** fait disparaître l’outil d’insertion d’extraits de code et insère l’extrait de code sélectionné. Le fait d’appuyer sur la touche **Échap** ou de cliquer dans l’Éditeur de code fait disparaître l’outil d’insertion d’extraits de code sans insérer d’extrait de code.
+**L’outil d’insertion d’extraits de code** montre le nom de l’extrait de code pour tous les extraits de code disponibles. Il inclut également une boîte de dialogue d’entrée où vous pouvez taper le nom de l’extrait de code, ou une partie du nom. Il met en évidence la correspondance la plus proche avec un nom d’extrait de code. Une pression sur la touche **Tab** fait disparaître l’outil d’insertion d’extraits de code et insère l’extrait de code sélectionné. Le fait d’appuyer sur la touche **Échap** ou de cliquer dans l’Éditeur de code fait disparaître l’outil d’insertion d’extraits de code sans insérer d’extrait de code.
 
 ## <a name="default-code-snippets"></a>Extraits de code par défaut
 

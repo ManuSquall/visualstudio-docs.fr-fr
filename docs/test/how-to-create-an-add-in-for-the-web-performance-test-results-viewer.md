@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747248"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918198"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procédure : Créer un complément pour l’Afficheur de résultats de test de performances web
 
@@ -43,9 +43,9 @@ Créez ou ouvrez une solution qui ne soit pas en production et dans laquelle vou
 
 Un complément est une DLL compilée qui s’exécute dans l’environnement de développement intégré (IDE) de Visual Studio. Sa compilation contribue à protéger votre propriété intellectuelle et améliore les performances. Même si vous pouvez créer des compléments manuellement, il est toutefois plus facile d’utiliser**l’Assistant Complément**. L'Assistant crée un complément fonctionnel de base que vous pouvez exécuter immédiatement après sa création. Une fois que **l’Assistant Complément** a généré le programme de base, vous pouvez y ajouter du code et le personnaliser.
 
- **l’Assistant Complément** vous permet de fournir un nom complet et une description pour votre complément. Ils s’afficheront dans le **Gestionnaire de compléments**. Vous pouvez indiquer à l’Assistant de générer un code qui ajoute au menu **Outils** une commande permettant d’ouvrir le complément. Vous pouvez également choisir d’afficher une boîte de dialogue **À propos de** personnalisée pour votre complément. Une fois l'Assistant terminé, votre nouveau projet n'a qu'une classe, qui implémente le complément. Cette classe est appelée Connect.
+**l’Assistant Complément** vous permet de fournir un nom complet et une description pour votre complément. Ils s’afficheront dans le **Gestionnaire de compléments**. Vous pouvez indiquer à l’Assistant de générer un code qui ajoute au menu **Outils** une commande permettant d’ouvrir le complément. Vous pouvez également choisir d’afficher une boîte de dialogue **À propos de** personnalisée pour votre complément. Une fois l'Assistant terminé, votre nouveau projet n'a qu'une classe, qui implémente le complément. Cette classe est appelée Connect.
 
- Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
+Vous utiliserez le **Gestionnaire de compléments** à la fin de cet article.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Pour créer un complément en utilisant l'Assistant Complément
 
@@ -326,9 +326,9 @@ Pour améliorer la sécurité en empêchant les compléments nuisibles de s’ac
 
 De plus, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche les fichiers d’enregistrement *.AddIn*. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
 
- **Paramètres de sécurité des compléments**
+**Paramètres de sécurité des compléments**
 
- Les paramètres de la page d’options pour la sécurité des compléments sont les suivants :
+Les paramètres de la page d’options pour la sécurité des compléments sont les suivants :
 
 - **Autoriser le chargement des composants de compléments.** Cette option est sélectionnée par défaut. Quand ce paramètre est activé, le chargement des compléments est autorisé dans Visual Studio. Quand il est désactivé, le chargement des compléments est interdit dans Visual Studio.
 

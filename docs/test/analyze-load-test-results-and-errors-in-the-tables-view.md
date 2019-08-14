@@ -21,12 +21,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823039"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926479"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -64,13 +64,13 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
 
- Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Table Requêtes
 
- La table **Requêtes** affiche des détails relatifs aux requêtes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. La table répertorie les demandes par test et scénario, parce qu'une demande peut être incluse dans de nombreux tests et scénarios.
+La table **Requêtes** affiche des détails relatifs aux requêtes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. La table répertorie les demandes par test et scénario, parce qu'une demande peut être incluse dans de nombreux tests et scénarios.
 
- Le tableau suivant répertorie les colonnes de la table **Requêtes** :
+Le tableau suivant répertorie les colonnes de la table **Requêtes** :
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
@@ -90,9 +90,9 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="the-tests-table"></a>Table Tests
 
- La table **Tests** affiche des détails relatifs aux tests exécutés pendant un test de charge. La table répertorie les tests par test et scénario, parce qu'un test peut être inclus dans de nombreux scénarios.
+La table **Tests** affiche des détails relatifs aux tests exécutés pendant un test de charge. La table répertorie les tests par test et scénario, parce qu'un test peut être inclus dans de nombreux scénarios.
 
- Le tableau suivant répertorie les colonnes de la table **Tests**.
+Le tableau suivant répertorie les colonnes de la table **Tests**.
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
@@ -111,9 +111,9 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="the-transactions-table"></a>Table Transactions
 
- La table **Transactions** affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Les transactions font référence aux transactions définies dans un test de performances web ou aux minuteurs définis dans un test unitaire. Une transaction ne fait pas référence aux transactions de bases de données.
+La table **Transactions** affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Les transactions font référence aux transactions définies dans un test de performances web ou aux minuteurs définis dans un test unitaire. Une transaction ne fait pas référence aux transactions de bases de données.
 
- Le tableau suivant répertorie les colonnes de la table **Transactions**.
+Le tableau suivant répertorie les colonnes de la table **Transactions**.
 
 > [!NOTE]
 > Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
@@ -138,11 +138,11 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="the-errors-table"></a>Table Erreurs
 
- Lorsque vous exécutez un test de charge, vous pouvez analyser les erreurs qui se produisent. L'analyse des erreurs et l'ajustement de vos tests constituent une partie importante du processus de test de charge. En cas d’erreurs, un lien hypertexte **erreurs** apparaît dans la barre d’état du test de charge et spécifie le nombre d’erreurs qui se sont produites. Pour afficher la table d'erreurs, cliquez sur le lien hypertexte.
+Lorsque vous exécutez un test de charge, vous pouvez analyser les erreurs qui se produisent. L'analyse des erreurs et l'ajustement de vos tests constituent une partie importante du processus de test de charge. En cas d’erreurs, un lien hypertexte **erreurs** apparaît dans la barre d’état du test de charge et spécifie le nombre d’erreurs qui se sont produites. Pour afficher la table d'erreurs, cliquez sur le lien hypertexte.
 
- La table d'erreurs rassemble les erreurs survenues lors d'un test de charge par type et sous-type d'erreur. La table contient également une ligne **total** qui spécifie le nombre total de toutes les erreurs qui se sont produites.
+La table d'erreurs rassemble les erreurs survenues lors d'un test de charge par type et sous-type d'erreur. La table contient également une ligne **total** qui spécifie le nombre total de toutes les erreurs qui se sont produites.
 
- La table d'erreurs contient les colonnes suivantes :
+La table d'erreurs contient les colonnes suivantes :
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
@@ -151,7 +151,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 |Nombre|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
 |Dernier message|Message qui décrit l'erreur. Par exemple, 404 - Non trouvé.|Oui|
 
- Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### <a name="drill-down-to-the-error-list"></a>Parcourir la liste d’erreurs
 

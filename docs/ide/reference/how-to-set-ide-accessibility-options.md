@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0b5835333bf8cd41ab653108054e2d3dd4c73e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789798"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919281"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procédure : Définir les options d’accessibilité de l’IDE
 
@@ -32,17 +32,17 @@ En outre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en 
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils
 
- Par défaut, les boîtes de dialogue et les fenêtres d’outils de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le modèle de couleurs actuel dans la [boîte de dialogue Général, Environnement, Options](../../ide/reference/general-environment-options-dialog-box.md).
+Par défaut, les boîtes de dialogue et les fenêtres d’outils de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le modèle de couleurs actuel dans la [boîte de dialogue Général, Environnement, Options](../../ide/reference/general-environment-options-dialog-box.md).
 
- Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**.
+Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**.
 
- Vous pouvez réorganiser les fenêtres dans l’environnement de développement intégré (IDE) pour les adapter au mieux à votre manière de travailler. Vous pouvez ancrer, rendre flottante, masquer ou masquer automatiquement chaque fenêtre Outil.
+Vous pouvez réorganiser les fenêtres dans l’environnement de développement intégré (IDE) pour les adapter au mieux à votre manière de travailler. Vous pouvez ancrer, rendre flottante, masquer ou masquer automatiquement chaque fenêtre Outil.
 
- Pour plus d’informations sur la modification des dispositions de fenêtres, consultez [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).
+Pour plus d’informations sur la modification des dispositions de fenêtres, consultez [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="changing-the-size-of-text"></a>Modification de la taille du texte
 
- Vous pouvez modifier les paramètres des fenêtres Outil de texte, telles que la fenêtre **Commande**, la fenêtre **Exécution** et la fenêtre **Sortie**, dans le volet **Polices et couleurs** des options **Environnement**, dans la boîte de dialogue **Outils**. Lorsque l’option **[Toutes les fenêtres Outil de texte]** est sélectionnée dans la liste déroulante **Afficher les paramètres de**, le paramètre par défaut est répertorié en tant que **Par défaut** dans les listes déroulantes **Premier plan de l’élément** et **Arrière plan de l’élément**. Vous pouvez également modifier les paramètres d’affichage du texte dans l’éditeur.
+Vous pouvez modifier les paramètres des fenêtres Outil de texte, telles que la fenêtre **Commande**, la fenêtre **Exécution** et la fenêtre **Sortie**, dans le volet **Polices et couleurs** des options **Environnement**, dans la boîte de dialogue **Outils**. Lorsque l’option **[Toutes les fenêtres Outil de texte]** est sélectionnée dans la liste déroulante **Afficher les paramètres de**, le paramètre par défaut est répertorié en tant que **Par défaut** dans les listes déroulantes **Premier plan de l’élément** et **Arrière plan de l’élément**. Vous pouvez également modifier les paramètres d’affichage du texte dans l’éditeur.
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Pour modifier la taille du texte dans les éditeurs et les fenêtres Outil de texte
 
@@ -54,7 +54,7 @@ En outre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en 
 
      Pour modifier la taille de police du texte dans un éditeur, choisissez **Éditeur de texte**.
 
-     Pour modifier la taille de police du texte dans les fenêtres Outil de texte, choisissez **[Toutes les fenêtres Outil de texte]**.
+     Pour modifier la taille de police du texte dans les fenêtres Outil de texte, choisissez **[Toutes les fenêtres Outil de texte]** .
 
      Pour modifier la taille de police du texte des info-bulles dans un éditeur, choisissez **Info-bulle de l’éditeur**.
 
@@ -73,7 +73,7 @@ En outre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en 
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Changer les couleurs utilisées dans l’IDE
 
- Vous pouvez également choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur.
+Vous pouvez également choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur.
 
 > [!NOTE]
 > Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur <strong>Alt gauche+</strong>**Maj gauche+Impr. écran**. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est ouvert, fermez et rouvrez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour implémenter complètement les couleurs à contraste élevé.
@@ -94,7 +94,7 @@ En outre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en 
 
 ## <a name="toolbars"></a>Barres d'outils
 
- Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d’outils, vous pouvez ajouter du texte aux boutons de barre d’outils.
+Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d’outils, vous pouvez ajouter du texte aux boutons de barre d’outils.
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Pour affecter un texte à des boutons de barre d’outils
 
