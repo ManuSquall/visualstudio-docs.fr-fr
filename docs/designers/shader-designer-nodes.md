@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844227"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925754"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 Les articles de cette section de la documentation contiennent des informations sur les différents nœuds du concepteur Shader pour créer des effets graphiques.
 
 ## <a name="nodes-and-node-types"></a>Nœuds et types de nœuds
- Le concepteur Shader représente des effets visuels sous forme de graphique. Ces graphes sont générés à partir de nœuds spécifiquement choisis et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles de cette section. Pour plus d’informations, consultez les liens figurant à la fin de ce document.
+Le concepteur Shader représente des effets visuels sous forme de graphique. Ces graphes sont générés à partir de nœuds spécifiquement choisis et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles de cette section. Pour plus d’informations, consultez les liens figurant à la fin de ce document.
 
 ## <a name="node-structure"></a>Structure de nœuds
- Tous les nœuds sont composés d’une combinaison d’éléments communs. Chaque nœud a au moins un terminal de sortie sur son côté droit (sauf le nœud de couleur finale, qui représente la sortie du nuanceur). Les nœuds qui représentent des calculs ou des échantillonneurs de texture ont des terminaux d’entrée sur leur côté gauche, mais les nœuds qui représentent des informations n’ont aucun terminal d’entrée. Les terminaux de sortie sont connectés aux terminaux d’entrée pour déplacer des informations d’un nœud vers un autre.
+Tous les nœuds sont composés d’une combinaison d’éléments communs. Chaque nœud a au moins un terminal de sortie sur son côté droit (sauf le nœud de couleur finale, qui représente la sortie du nuanceur). Les nœuds qui représentent des calculs ou des échantillonneurs de texture ont des terminaux d’entrée sur leur côté gauche, mais les nœuds qui représentent des informations n’ont aucun terminal d’entrée. Les terminaux de sortie sont connectés aux terminaux d’entrée pour déplacer des informations d’un nœud vers un autre.
 
 ### <a name="promotion-of-inputs"></a>Promotion des entrées
- Comme le concepteur Shader doit finalement générer le code source HLSL afin que l’effet puisse être utilisé dans un jeu ou une application, les nœuds du concepteur Shader sont soumis aux règles de la promotion de type utilisées par HLSL. Comme le matériel graphique s’exécute principalement sur des valeurs à virgule flottante, une promotion de type entre différents types, par exemple entre `int` et `float` ou entre `float` et `double`, est rare. Au lieu de cela, étant donné que le matériel graphique utilise la même opération simultanée sur plusieurs informations, un type différent de promotion peut se produire dans lequel le nombre le plus court d’entrées est rallongé pour le faire correspondre à la taille de l’entrée la plus longue. La façon dont il est rallongé dépend du type de l’entrée et également de l’opération proprement dite :
+Comme le concepteur Shader doit finalement générer le code source HLSL afin que l’effet puisse être utilisé dans un jeu ou une application, les nœuds du concepteur Shader sont soumis aux règles de la promotion de type utilisées par HLSL. Comme le matériel graphique s’exécute principalement sur des valeurs à virgule flottante, une promotion de type entre différents types, par exemple entre `int` et `float` ou entre `float` et `double`, est rare. Au lieu de cela, étant donné que le matériel graphique utilise la même opération simultanée sur plusieurs informations, un type différent de promotion peut se produire dans lequel le nombre le plus court d’entrées est rallongé pour le faire correspondre à la taille de l’entrée la plus longue. La façon dont il est rallongé dépend du type de l’entrée et également de l’opération proprement dite :
 
 - **Si le plus petit type est une valeur scalaire, alors :**
 
