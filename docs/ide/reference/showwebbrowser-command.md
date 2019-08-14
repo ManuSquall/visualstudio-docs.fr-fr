@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950639"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926009"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Arguments
- `URL`
+`URL`
 
- Obligatoire. URL (Uniform Resource Locator) du site web.
+Obligatoire. URL (Uniform Resource Locator) du site web.
 
 ## <a name="switches"></a>Commutateurs
- /new
+/new
 
- Optionnel. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
+facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navigateur web.
 
- /ext
+/ext
 
- Optionnel. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
+facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
 ## <a name="remarks"></a>Remarques
- L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
+L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
-## <a name="example"></a>Exemple
- L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un navigateur web en dehors de l’IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
+## <a name="example"></a>Exemples
+L’exemple suivant affiche la page d’accueil de Microsoft Docs dans un navigateur web en dehors de l’IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 039c022cc5a8883e5687630f5243d8652ff036e7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262850"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925843"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -26,9 +26,9 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
  Le*développement basé d’abord sur les tests* est une approche de conception logicielle dans laquelle vous écrivez d’abord des tests unitaires basés sur des spécifications de produits, puis vous écrivez le code source nécessaire pour que les tests réussissent. Visual Studio prend en charge le développement basé d’abord sur les tests en générant de nouveaux types et membres dans le code source lorsque vous y faites référence pour la première fois dans vos cas de test, avant de les définir.
 
- Visual Studio génère les nouveaux types et membres avec une interruption minimale de votre flux de travail. Vous pouvez créer des stubs pour des types, méthodes, propriétés, champs ou constructeurs sans quitter votre emplacement actuel dans le code. Quand vous ouvrez une boîte de dialogue pour spécifier des options de génération de type, le fichier ouvert actuellement récupère immédiatement le focus lorsque la boîte de dialogue se ferme.
+Visual Studio génère les nouveaux types et membres avec une interruption minimale de votre flux de travail. Vous pouvez créer des stubs pour des types, méthodes, propriétés, champs ou constructeurs sans quitter votre emplacement actuel dans le code. Quand vous ouvrez une boîte de dialogue pour spécifier des options de génération de type, le fichier ouvert actuellement récupère immédiatement le focus lorsque la boîte de dialogue se ferme.
 
- Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation** avec des frameworks de test qui s’intègrent à Visual Studio. Dans cette rubrique, nous allons utiliser l’infrastructure de test unitaire Microsoft.
+Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation** avec des frameworks de test qui s’intègrent à Visual Studio. Dans cette rubrique, nous allons utiliser l’infrastructure de test unitaire Microsoft.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

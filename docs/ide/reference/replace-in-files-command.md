@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87b4dcff0bd626947a0d98822150d03fc7c7059
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb121962bbfd61dc4d4aac84467a2a8659918b63
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945566"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926115"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
 Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.
@@ -33,73 +33,73 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat`
+`findwhat`
 
- Obligatoire. Texte à rechercher.
+Obligatoire. Texte à rechercher.
 
- `replacewith`
+`replacewith`
 
- Obligatoire. Texte de remplacement du texte trouvé.
+Obligatoire. Texte de remplacement du texte trouvé.
 
 ## <a name="switches"></a>Commutateurs
- /all ou /a
+/all ou /a
 
- Optionnel. Remplace toutes les occurrences du texte recherché par le texte de remplacement.
+facultatif. Remplace toutes les occurrences du texte recherché par le texte de remplacement.
 
- /case ou /c
+/case ou /c
 
- Optionnel. Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
+facultatif. Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
 
- /ext: `extensions`
+/ext: `extensions`
 
- Optionnel. Spécifie les extensions des fichiers dans lesquels effectuer la recherche.
+facultatif. Spécifie les extensions des fichiers dans lesquels effectuer la recherche.
 
- /keep ou /k
+/keep ou /k
 
- Optionnel. Spécifie que tous les fichiers modifiés restent ouverts.
+facultatif. Spécifie que tous les fichiers modifiés restent ouverts.
 
- /lookin: `searchpath`
+/lookin: `searchpath`
 
- Optionnel. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.
+facultatif. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.
 
- /options ou /t
+/options ou /t
 
- Optionnel. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
+facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
 
- /regex ou /r
+/regex ou /r
 
- Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
+facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /reset ou /e
+/reset ou /e
 
- Optionnel. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
+facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
 
- /stop
+/stop
 
- Optionnel. Arrête l’opération de recherche en cours, le cas échant. Quand l’argument `/stop` a été spécifié, l’opération de remplacement ignore tous les autres arguments. Par exemple, pour arrêter le remplacement en cours, vous devez taper la syntaxe suivante :
+facultatif. Arrête l’opération de recherche en cours, le cas échant. Quand l’argument `/stop` a été spécifié, l’opération de remplacement ignore tous les autres arguments. Par exemple, pour arrêter le remplacement en cours, vous devez taper la syntaxe suivante :
 
 ```
 >Edit.ReplaceinFiles /stop
 ```
 
- /sub ou /s
+/sub ou /s
 
- Optionnel. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.
+facultatif. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.
 
- /text2 ou /2
+/text2 ou /2
 
- Optionnel. Affiche les résultats du remplacement dans la fenêtre **Résultats de la recherche 2**.
+facultatif. Affiche les résultats du remplacement dans la fenêtre **Résultats de la recherche 2**.
 
- /wild ou /l
+/wild ou /l
 
- Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
+facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
 
- /word ou /w
+/word ou /w
 
- Optionnel. Recherche uniquement les mots entiers.
+facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemple
- Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
+## <a name="example"></a>Exemples
+Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
 
 ```
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788389"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925715"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 
@@ -26,25 +26,25 @@ Vous pouvez générer des tests unitaires pour les méthodes génériques exacte
 Quand Visual Studio génère un test unitaire pour une classe générique, comme `MyList<T>`, il génère deux méthodes : une méthode d'assistance générique et une méthode de test. Si `MyList<T>` a une ou plusieurs contraintes de type, l'argument de type doit satisfaire toutes les contraintes de type. Pour vérifier que le code générique testé fonctionne comme prévu pour toutes les entrées autorisées, la méthode de test appelle la méthode d'assistance générique avec toutes les contraintes que vous souhaitez tester.
 
 ## <a name="examples"></a>Exemples
- Les exemples suivants illustrent des tests unitaires pour les génériques :
+Les exemples suivants illustrent des tests unitaires pour les génériques :
 
 - [Modifier le code de test généré](#EditingGeneratedTestCode). Cet exemple a deux sections, Code de test généré et Code de test modifié. Il montre comment modifier le code de test brut généré à partir d'une méthode générique dans une méthode de test utile.
 
 - [Utiliser une contrainte de type](#TypeConstraintNotSatisfied). Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type. Dans cet exemple, la contrainte de type n'est pas satisfaite.
 
 ### <a name="EditingGeneratedTestCode"></a> Exemple 1 : Modification du code de test généré
- Le code de test de cette section teste une méthode de code sous test nommée `SizeOfLinkedList()`. Cette méthode retourne un entier qui spécifie le nombre de nœuds dans la liste liée.
+Le code de test de cette section teste une méthode de code sous test nommée `SizeOfLinkedList()`. Cette méthode retourne un entier qui spécifie le nombre de nœuds dans la liste liée.
 
- Le premier exemple de code, dans la section Code de test généré, affiche le code de test non modifié comme il a été généré par Visual Studio Enterprise. Le deuxième exemple, dans la section Code de test modifié, montre comment vous pourriez lui faire tester le fonctionnement de la méthode SizeOfLinkedList pour deux types de données différents, `int` et `char`.
+Le premier exemple de code, dans la section Code de test généré, affiche le code de test non modifié comme il a été généré par Visual Studio Enterprise. Le deuxième exemple, dans la section Code de test modifié, montre comment vous pourriez lui faire tester le fonctionnement de la méthode SizeOfLinkedList pour deux types de données différents, `int` et `char`.
 
- Ce code illustre deux méthodes :
+Ce code illustre deux méthodes :
 
 - une méthode d'assistance au test, `SizeOfLinkedListTestHelper<T>()`. Par défaut, une méthode d'assistance au test contient « TestHelper » dans son nom.
 
 - une méthode de test, `SizeOfLinkedListTest()`. Chaque méthode de test est marquée avec l'attribut TestMethod.
 
 #### <a name="generated-test-code"></a>Code de test généré
- Le code de test suivant a été généré à partir de la méthode `SizeOfLinkedList()`. Comme il s'agit du test généré non modifié, il doit être modifié pour tester correctement la méthode SizeOfLinkedList.
+Le code de test suivant a été généré à partir de la méthode `SizeOfLinkedList()`. Comme il s'agit du test généré non modifié, il doit être modifié pour tester correctement la méthode SizeOfLinkedList.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -65,13 +65,13 @@ public void SizeOfLinkedListTest()
 }
 ```
 
- Dans le code précédent, le paramètre de type générique est `GenericParameterHelper`. Même si vous pouvez le modifier pour fournir des types de données spécifiques, comme indiqué dans l’exemple suivant, vous pouvez exécuter le test sans modifier cette instruction.
+Dans le code précédent, le paramètre de type générique est `GenericParameterHelper`. Même si vous pouvez le modifier pour fournir des types de données spécifiques, comme indiqué dans l’exemple suivant, vous pouvez exécuter le test sans modifier cette instruction.
 
 #### <a name="edited-test-code"></a>Code de test modifié
- Dans le code suivant, la méthode de test et la méthode d'assistance au test ont été modifiées de manière à pouvoir tester la méthode de code sous test `SizeOfLinkedList()`.
+Dans le code suivant, la méthode de test et la méthode d'assistance au test ont été modifiées de manière à pouvoir tester la méthode de code sous test `SizeOfLinkedList()`.
 
 ##### <a name="test-helper-method"></a>Méthode d’assistance au test
- La méthode d'assistance au test effectue les étapes suivantes qui correspondent aux lignes du code Étape 1 à Étape 5.
+La méthode d'assistance au test effectue les étapes suivantes qui correspondent aux lignes du code Étape 1 à Étape 5.
 
 1. Créer une liste liée générique.
 
@@ -84,7 +84,7 @@ public void SizeOfLinkedListTest()
 5. Comparer `actual` à `expected` dans une instruction Assert. Si la variable réelle n'est pas égale à celle attendue, le test échoue.
 
 ##### <a name="test-method"></a>Méthode de test
- La méthode de test est compilée dans le code qui est appelé lorsque vous exécutez le test nommé SizeOfLinkedListTest. Elle effectue les étapes suivantes qui correspondent aux lignes du code Étape 6 à Étape 7.
+La méthode de test est compilée dans le code qui est appelé lorsque vous exécutez le test nommé SizeOfLinkedListTest. Elle effectue les étapes suivantes qui correspondent aux lignes du code Étape 6 à Étape 7.
 
 1. Spécifiez `<int>` lorsque vous appelez la méthode d'assistance au test pour vérifier que le test fonctionne pour les variables `integer`.
 
@@ -118,9 +118,9 @@ public void SizeOfLinkedListTest()
 > Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d'informations, voir [Procédure : effectuer un débogage lors de l’exécution d’un test dans une solution ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 ### <a name="TypeConstraintNotSatisfied"></a> Exemple 2 : Utilisation d’une contrainte de type
- Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type non satisfaite. La première section affiche le code du projet de code sous test. La contrainte de type est mise en surbrillance.
+Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type non satisfaite. La première section affiche le code du projet de code sous test. La contrainte de type est mise en surbrillance.
 
- La deuxième section affiche le code du projet de test.
+La deuxième section affiche le code du projet de test.
 
 #### <a name="code-under-test-project"></a>Projet de code sous test
 
@@ -158,15 +158,15 @@ namespace ClassLibrary2
 
 Comme avec tous les tests unitaires récemment générés, vous devez ajouter des instructions Assert concluantes à ce test unitaire pour lui faire retourner des résultats utiles. Vous ne les ajoutez pas à la méthode marquée avec l'attribut TestMethod mais à la méthode « TestHelper », nommée pour ce test `DataTestHelper<T>()`.
 
- Dans cet exemple, le paramètre de type générique `T` a la contrainte `where T : Employee`. Cette contrainte n'est pas satisfaite dans la méthode de test. Par conséquent, la méthode `DataTest()` contient une instruction Assert qui vous alerte sur la nécessité de fournir la contrainte de type qui a été placée sur `T`. Le message de cette instruction Assert se présente comme suit : `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
+Dans cet exemple, le paramètre de type générique `T` a la contrainte `where T : Employee`. Cette contrainte n'est pas satisfaite dans la méthode de test. Par conséquent, la méthode `DataTest()` contient une instruction Assert qui vous alerte sur la nécessité de fournir la contrainte de type qui a été placée sur `T`. Le message de cette instruction Assert se présente comme suit : `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
 
- En d’autres termes, quand vous appelez la méthode `DataTestHelper<T>()` depuis la méthode de test `DataTest()`, vous devez passer un paramètre de type `Employee` ou une classe dérivée de `Employee`.
+En d’autres termes, quand vous appelez la méthode `DataTestHelper<T>()` depuis la méthode de test `DataTest()`, vous devez passer un paramètre de type `Employee` ou une classe dérivée de `Employee`.
 
- `using ClassLibrary2;`
+`using ClassLibrary2;`
 
- `using Microsoft.VisualStudio.TestTools.UnitTesting;`
+`using Microsoft.VisualStudio.TestTools.UnitTesting;`
 
- `namespace TestProject1`
+`namespace TestProject1`
 
 ```csharp
 {

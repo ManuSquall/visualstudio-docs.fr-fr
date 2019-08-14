@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746383"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926148"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -46,41 +46,41 @@ Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des réf�
 
  **Références**
 
- Cette liste affiche toutes les références dans le projet, utilisées ou non.
+Cette liste affiche toutes les références dans le projet, utilisées ou non.
 
  **Ajouter**
 
- Cliquez sur ce bouton pour ajouter une référence ou une référence web à la liste **Références**.
+Cliquez sur ce bouton pour ajouter une référence ou une référence web à la liste **Références**.
 
- Choisissez **Référence**  pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
+Choisissez **Référence**  pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
 
- Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue **Ajouter une référence web**.
+Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue **Ajouter une référence web**.
 
  **Supprimer**
 
- Sélectionnez une ou plusieurs références dans la liste **Références**, puis cliquez sur ce bouton pour les supprimer.
+Sélectionnez une ou plusieurs références dans la liste **Références**, puis cliquez sur ce bouton pour les supprimer.
 
  **Mettre à jour la référence web**
 
- Sélectionnez une référence web dans la liste **Références** et cliquez sur ce bouton pour la mettre à jour.
+Sélectionnez une référence web dans la liste **Références** et cliquez sur ce bouton pour la mettre à jour.
 
  **Espaces de noms importés**
 
- Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
+Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
 
- Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms au format *alias*=*espace de noms*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms au format *alias*=*espace de noms*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation utilisateur**
 
- Cliquez sur ce bouton pour ajouter l’espace de noms spécifié dans la zone **Espaces de noms importés** à la liste des espaces de noms importés. Le bouton n’est actif que si l’espace de noms spécifié ne figure pas déjà dans la liste.
+Cliquez sur ce bouton pour ajouter l’espace de noms spécifié dans la zone **Espaces de noms importés** à la liste des espaces de noms importés. Le bouton n’est actif que si l’espace de noms spécifié ne figure pas déjà dans la liste.
 
  **Liste d’espaces de noms**
 
- Cette liste affiche tous les espaces de noms disponibles. Les cases des espaces de noms qui se trouvent dans votre projet sont cochées.
+Cette liste affiche tous les espaces de noms disponibles. Les cases des espaces de noms qui se trouvent dans votre projet sont cochées.
 
  **Mettre à jour l’importation utilisateur**
 
- Sélectionnez un espace de noms défini par l’utilisateur dans la liste d’espaces de noms, tapez un nouveau nom pour cet espace dans la zone **Espaces de noms importés**, puis cliquez sur ce bouton pour valider le nouvel espace de noms. Le bouton n’est actif que si l’espace de noms sélectionné est l’un de ceux que vous avez ajoutés à la liste à l’aide du bouton **Ajouter une importation utilisateur**. Vous pouvez ajouter :
+Sélectionnez un espace de noms défini par l’utilisateur dans la liste d’espaces de noms, tapez un nouveau nom pour cet espace dans la zone **Espaces de noms importés**, puis cliquez sur ce bouton pour valider le nouvel espace de noms. Le bouton n’est actif que si l’espace de noms sélectionné est l’un de ceux que vous avez ajoutés à la liste à l’aide du bouton **Ajouter une importation utilisateur**. Vous pouvez ajouter :
 
 - Des classes ou des espaces de noms, par exemple <xref:System.Math?displayProperty=fullName>.
 

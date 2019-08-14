@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605939"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926199"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés, JavaScript
 
@@ -40,11 +40,11 @@ Utilisez les options suivantes pour sélectionner la configuration et la platefo
 
  **Configuration**
 
- Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plateforme**
 
- Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Page Général
 
@@ -55,13 +55,13 @@ Utilisez les options suivantes pour définir les propriétés générales du pro
 
  **Chemin de sortie**
 
- Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
+Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
 
- Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Déboguer** > **Démarrer le débogage** (ou que vous appuyez sur **F5**), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils** > **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
+Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Déboguer** > **Démarrer le débogage** (ou que vous appuyez sur **F5**), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils** > **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
 
  **Langue par défaut**
 
- Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous garantissez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l’utilisateur ne correspond pas aux ressources linguistiques fournies dans l’application.
+Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous garantissez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l’utilisateur ne correspond pas aux ressources linguistiques fournies dans l’application.
 
 ## <a name="debug-page"></a>Page Déboguer
 
@@ -72,7 +72,7 @@ Utilisez les options suivantes pour définir les propriétés du comportement du
 
  **Débogueur à lancer**
 
- Spécifie l'hôte par défaut pour le débogueur.
+Spécifie l'hôte par défaut pour le débogueur.
 
 - Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
