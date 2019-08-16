@@ -1,7 +1,7 @@
 # [Abonnements Visual Studio](index.md)
 ## [Nouveautés](whats-new-in-subscriptions.md)
 ## Abonnements
-### Achat d’abonnements
+### Acheter des abonnements
 #### [Retail](https://visualstudio.microsoft.com/vs/pricing) (Commerce)
 #### Cloud 
 ##### [Vue d’ensemble](vscloud-overview.md)
@@ -10,9 +10,9 @@
 #### [Visual Studio avec GitHub Enterprise](access-github.md)
 #### Microsoft Partner Network
 ##### [Abonnements pour les partenaires](program-mpn.md)
-##### [Gestion des abonnements pour MPN](manage-mpn-subscriptions.md)
+##### [Gérer les abonnements pour MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Connexion 
+### Se connecter 
 #### [Activer des abonnements au détail](activate-store-subscriptions.md)
 #### [Se connecter avec des comptes Microsoft](sign-in-msa.md)
 #### [Se connecter avec des comptes professionnels ou scolaires](sign-in-work.md)
@@ -21,7 +21,7 @@
 #### [Problèmes de connexion](sign-in-issues.md)
 #### [Anonymisation des données d’abonnés](anonymization.md)
 ### [Présentation du portail des abonnements](using-the-subscriber-portal.md)
-### [Gestion des abonnements](manage-vs-subscriptions.md)
+### [Gérer vos abonnements](manage-vs-subscriptions.md)
 ### Avantages
 #### Outils
 ##### [Crédit Azure](vs-azure.md)
