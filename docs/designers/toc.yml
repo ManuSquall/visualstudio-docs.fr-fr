@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows Forms
   items:
+    - name: Vue d’ensemble du Concepteur Windows Forms
+      href: windows-forms-designer-overview.md
+    - name: Bien démarrer avec le Concepteur Windows Forms
+      href: walkthrough-windows-forms-designer.md
     - name: "Tutoriel\_1\_: Créer une visionneuse d’images (C#)"
       items:
         - name: Vue d'ensemble
