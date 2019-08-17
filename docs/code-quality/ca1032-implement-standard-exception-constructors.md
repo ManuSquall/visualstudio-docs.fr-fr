@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922880"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547662"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 
@@ -44,7 +44,7 @@ Les types d’exceptions doivent implémenter les trois constructeurs suivants:
 
 - public NewException (String, exception)
 
-En outre, si vous exécutez une analyse de code statique FxCop héritée par opposition à des [analyseurs FxCop basés sur Roslyn](../code-quality/roslyn-analyzers-overview.md), l’absence d’un quatrième constructeur génère également une violation:
+En outre, si vous exécutez l’analyse FxCop héritée par opposition à [des analyseurs FxCop basés sur .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), l’absence d’un quatrième constructeur génère également une violation:
 
 - NewException protected ou Private (SerializationInfo, StreamingContext)
 

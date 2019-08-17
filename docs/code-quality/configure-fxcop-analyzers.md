@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300610"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551145"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurer les analyseurs FxCop
 
-Les [analyseurs FxCop](install-fxcop-analyzers.md) se composent des règles «FxCop» les plus importantes de l’analyse statique du code, converties en analyseurs Roslyn. Vous pouvez configurer des analyseurs de code FxCop de deux manières:
+Les [analyseurs FxCop](install-fxcop-analyzers.md) se composent des règles «FxCop» les plus importantes de l’analyse héritée, converties en analyseurs de code .NET Compiler Platform. Vous pouvez configurer des analyseurs de code FxCop de deux manières:
 
 - Avec un [ensemble de règles](#fxcop-analyzer-rule-sets), qui vous permet d’activer ou de désactiver la règle et de définir la gravité des violations de règles individuelles.
 
 - À partir de la version 2.6.3 du package NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , par le biais d’un [fichier. editorconfig](#editorconfig-file). Les [options configurables](fxcop-analyzer-options.md) vous permettent d’affiner les parties de votre code base à analyser.
 
 > [!TIP]
-> Pour plus d’informations sur les différences entre l’analyse de code statique FxCop et les analyseurs FxCop, consultez [FAQ des analyseurs FxCop](fxcop-analyzers-faq.md).
+> Pour plus d’informations sur les différences entre l’analyse héritée et les analyseurs FxCop, consultez [FAQ des analyseurs FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Ensembles de règles de l’analyseur FxCop
 
@@ -42,7 +42,7 @@ Le package NuGet de l’analyseur FxCop comprend des ensembles de règles préd�
 - security
 - utilisation
 
-Pour plus d’informations, consultez [ensembles de règles pour les analyseurs Roslyn](analyzer-rule-sets.md).
+Pour plus d’informations, consultez [ensembles de règles pour les analyseurs de code](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Fichier EditorConfig
 
@@ -90,7 +90,7 @@ Vous pouvez partager un fichier. editorconfig pour la configuration de l’analy
 4. Rechargez le projet.
 
 > [!NOTE]
-> Vous ne pouvez pas configurer les règles FxCop héritées (statiques d’analyse du code FxCop) à l’aide d’un fichier. editorconfig.
+> Vous ne pouvez pas configurer les règles FxCop héritées à l’aide d’un fichier. editorconfig.
 
 ## <a name="option-scopes"></a>Étendues des options
 
@@ -100,7 +100,7 @@ Chaque option peut être configurée pour toutes les règles, pour une catégori
 
 La syntaxe de configuration d’une option pour toutes les règles est la suivante:
 
-|Syntaxe|Exemples|
+|Syntaxe|Exemple|
 |-|-|
 | dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
@@ -116,7 +116,7 @@ La syntaxe permettant de configurer une option pour une *catégorie* de règles 
 
 La syntaxe de configuration d’une option pour une règle spécifique est la suivante:
 
-|Syntaxe|Exemple|
+|Syntaxe|Exemples|
 |-|-|
 | dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 

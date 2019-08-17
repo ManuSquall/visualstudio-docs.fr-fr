@@ -1,6 +1,6 @@
 ---
 title: Solutions PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926432"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551474"
 ---
 # <a name="powerpoint-solutions"></a>Solutions PowerPoint
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office PowerPoint. Vous pouvez utiliser les compléments VSTO pour automatiser PowerPoint, étendre les fonctionnalités PowerPoint ou personnaliser l’interface utilisateur PowerPoint.
@@ -31,8 +31,7 @@ ms.locfileid: "68926432"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Consultez le nouveau modèle des compléments [Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Les compléments Office ont un faible encombrement par rapport aux compléments et solutions VSTO, et vous pouvez les créer en utilisant presque toutes les technologies de programmation Web, telles que HTML5, JavaScript, CSS3 et XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, [consultez Comment faire: Créer un complément pour Microsoft PowerPoint ](http://go.microsoft.com/fwlink/?LinkId=132767).
 
@@ -69,7 +68,7 @@ ms.locfileid: "68926432"
 |----------|--------------------------|
 |Créer un volet des tâches personnalisé.|[Volets des tâches personnalisés](../vsto/custom-task-panes.md)|
 |Ajouter des onglets personnalisés au ruban.|[Vue d’ensemble du ruban](../vsto/ribbon-overview.md)|
-|Ajouter des groupes personnalisés à un onglet intégré du ruban.|[Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|
+|Ajouter des groupes personnalisés à un onglet intégré du ruban.|[Guide pratique : Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|
 
  Pour plus d’informations sur la personnalisation de l’interface utilisateur de PowerPoint et d’autres applications de Microsoft Office, consultez Personnalisation de l' [interface utilisateur Office](../vsto/office-ui-customization.md).
 

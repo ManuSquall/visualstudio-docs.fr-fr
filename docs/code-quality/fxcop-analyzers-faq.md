@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037264"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551112"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -31,7 +31,7 @@ Les analyseurs FxCop sont basés sur .NET Compiler Platform (« Roslyn »). Vo
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>La commande Exécuter l’analyse du Code exécute-t-elle les analyseurs FxCop ?
 
-Non. Quand vous sélectionnez **Analyser** > **Exécuter l’analyse du code**, elle exécute l’analyse statique du code ou FxCop hérité. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
+Non. Lorsque vous sélectionnez **analyser** > **exécuter l’analyse du code**, l’analyse héritée est exécutée. L’option **Exécuter l’analyse du Code** n’a aucun effet sur les analyseurs basés sur Roslyn, notamment les analyseurs FxCop basés sur Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La propriété de projet msbuild RunCodeAnalysis exécute-t-elle des analyseurs ?
 
@@ -43,15 +43,15 @@ Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Je reçois l’avertissement CA0507 même après avoir installé le package NuGet d’analyseurs FxCop
 
-Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« ’Exécuter l’analyse du code’ a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build »**, il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Sinon, l’analyse statique du code s’exécute après chaque phase de build.
+Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« ’Exécuter l’analyse du code’ a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build »** , il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Dans le cas contraire, l’analyse héritée s’exécutera après chaque génération.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Les règles qui ont été portées sur les analyseurs FxCop ?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quelles règles ont été portées vers les analyseurs FxCop?
 
-Pour plus d’informations sur les règles d’analyse statique du code ont été portées vers [analyseurs FxCop](install-fxcop-analyzers.md), consultez [l’état du port règle Fxcop](fxcop-rule-port-status.md).
+Pour plus d’informations sur les règles d’analyse héritées qui ont été portées vers les [analyseurs FxCop](install-fxcop-analyzers.md), consultez État du port de la [règle FXCop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Voir aussi
 
