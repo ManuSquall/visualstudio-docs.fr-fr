@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841958"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547178"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 
@@ -31,36 +31,36 @@ ms.locfileid: "65841958"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft.Naming|
-|Modification avec rupture|Avec rupture - lorsque déclenchée sur les interfaces.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|
+|Catégorie|Microsoft.Naming|
+|Modification avec rupture|Avec rupture: lorsqu’elle est déclenchée sur les interfaces.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
 
-Le nom d’une interface ne commence pas par un « I » majuscule.
+Le nom d’une interface ne commence pas par un «I» majuscule.
 
 ou
 
-Le nom d’un [paramètre de type générique](/dotnet/csharp/programming-guide/generics/generic-type-parameters) sur un type ou une méthode ne commence pas par une majuscule ' t ».
+Le nom d’un [paramètre de type générique](/dotnet/csharp/programming-guide/generics/generic-type-parameters) sur un type ou une méthode ne commence pas par un «t» majuscule.
 
-Par défaut, cette règle examine uniquement les interfaces extérieurement visibles, les types et méthodes, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle recherche uniquement les interfaces, les types et les méthodes visibles de l’extérieur, mais cela peut [être configuré](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Par convention, les noms de certains éléments de programmation commencent par un préfixe spécifique.
+Par Convention, les noms de certains éléments de programmation commencent par un préfixe spécifique.
 
-Noms d’interface doivent commencer par une majuscule « I » suivie d’une autre lettre majuscule. Cette règle signale les violations pour les noms d’interface tels que 'MyInterface' et 'IsolatedInterface'.
+Les noms d’interface doivent commencer par un «I» majuscule suivi d’une autre lettre majuscule. Cette règle signale des violations pour les noms d’interface tels que «MyInterface» et «IsolatedInterface».
 
-Les noms de paramètre de type générique doivent commencer par une majuscule ' t » et éventuellement peut être suivie d’une autre lettre majuscule. Cette règle signale les violations pour les noms de paramètre de type générique comme « V » et « Type ».
+Les noms de paramètre de type générique doivent commencer par un «t» majuscule et éventuellement être suivis par une autre lettre majuscule. Cette règle signale des violations pour les noms de paramètre de type générique tels que’V’et’type'.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer cette règle analyse les quelles parties de votre code. Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code analysées par cette règle. Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
-### <a name="single-character-type-parameters"></a>Paramètres de type de caractère unique
+### <a name="single-character-type-parameters"></a>Paramètres de type à un seul caractère
 
-Vous pouvez configurer s’il faut exclure les paramètres de type de caractère unique de cette règle. Par exemple, pour spécifier que cette règle *ne doivent pas* analyser les paramètres de type de caractère unique, ajoutez un des paires clé-valeur suivantes dans un fichier .editorconfig dans votre projet :
+Vous pouvez configurer s’il faut ou non exclure les paramètres de type à un seul caractère de cette règle. Par exemple, pour spécifier que cette règle ne *doit pas* analyser les paramètres de type à un seul caractère, ajoutez l’une des paires clé-valeur suivantes à un fichier. editorconfig dans votre projet:
 
 ```ini
 # Package version 2.9.0 and later
@@ -71,21 +71,21 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Cette règle se déclenche jamais pour un paramètre de type nommé `T`, par exemple, `Collection<T>`.
+> Cette règle ne se déclenche jamais pour un paramètre `T`de type nommé, `Collection<T>`par exemple.
 
-### <a name="api-surface"></a>Surface d’API
+### <a name="api-surface"></a>Surface de l’API
 
-Vous pouvez configurer les parties de votre base de code pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Vous pouvez configurer les parties de votre code base pour exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (affectation de noms).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Renommez l’identificateur afin qu’il est correctement ajouté.
+Renommez l’identificateur afin qu’il soit correctement préfixé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -93,27 +93,27 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="interface-naming-example"></a>Exemple d’affectation de noms d’interface
 
-L’extrait de code suivant montre une interface incorrectement nommée :
+L’extrait de code suivant montre une interface de nom incorrecte:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
-L’extrait de code suivant corrige la violation précédente en préfixant l’interface avec 'I' :
+L’extrait de code suivant résout la violation précédente en préfixant l’interface par’I':
 
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
-## <a name="type-parameter-naming-example"></a>Exemple d’affectation de noms de paramètre de type
+## <a name="type-parameter-naming-example"></a>Exemple de nom de paramètre de type
 
-L’extrait de code suivant illustre un paramètre de type générique incorrectement nommé :
+L’extrait de code suivant montre un paramètre de type générique nommé de manière incorrecte:
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
 [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
-L’extrait de code suivant résout la violation précédente en faisant précéder le paramètre de type générique avec l ' :
+L’extrait de code suivant résout la violation précédente en préfixant le paramètre de type générique avec’t':
 
 [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
 [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
@@ -121,4 +121,4 @@ L’extrait de code suivant résout la violation précédente en faisant précé
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722 Les identificateurs ne doivent pas avoir un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

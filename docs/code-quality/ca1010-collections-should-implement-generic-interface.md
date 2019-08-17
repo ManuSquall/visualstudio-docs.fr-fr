@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62120babe98ead6d78b568bc630f46a386edf02
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 70a418b211cd4340dba9c15f0bf52e3cdfdf8e8f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842650"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547901"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
 
@@ -27,18 +27,18 @@ ms.locfileid: "65842650"
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type implémente le <xref:System.Collections.IEnumerable?displayProperty=fullName> interface mais n’implémente pas le <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface et .NET cibles assembly conteneur. Cette règle ignore les types qui implémentent <xref:System.Collections.IDictionary?displayProperty=fullName>.
+Un type implémente l' <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, mais n’implémente <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> pas l’interface, et l’assembly conteneur cible .net. Cette règle ignore les types qui <xref:System.Collections.IDictionary?displayProperty=fullName>implémentent.
 
-Par défaut, cette règle examine uniquement les types visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle recherche uniquement les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. Puis la collection peut être utilisée pour remplir des types de collections génériques telles que les éléments suivants :
+Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. La collection peut ensuite être utilisée pour remplir des types de collections génériques, tels que les suivants:
 
 - <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
@@ -46,7 +46,7 @@ Pour étendre la facilité d’utilisation d’une collection, implémentez l’
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, implémentez l’une des interfaces de collection génériques suivantes :
+Pour corriger une violation de cette règle, implémentez l’une des interfaces de collection génériques suivantes:
 
 - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
@@ -54,52 +54,52 @@ Pour corriger une violation de cette règle, implémentez l’une des interfaces
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle ; Toutefois, l’utilisation de la collection sera plus limitée.
+Il est possible de supprimer sans risque un avertissement de cette règle; Toutefois, l’utilisation de la collection sera plus limitée.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1010.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Exemple de violation
 
-L’exemple suivant montre une classe qui dérive de la non générique (type référence) `CollectionBase` (classe), ce qui enfreint cette règle.
+L’exemple suivant montre une classe (type référence) qui dérive de la classe non générique `CollectionBase` , qui enfreint cette règle.
 
 [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
-Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes :
+Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes:
 
-- Implémenter les interfaces génériques.
-- Modifier la classe de base à un type qui implémente déjà les interfaces génériques et non génériques, tels que le `Collection<T>` classe.
+- Implémentez les interfaces génériques.
+- Remplacez la classe de base par un type qui implémente déjà à la fois les interfaces génériques et non génériques, telles `Collection<T>` que la classe.
 
-## <a name="fix-by-base-class-change"></a>Résoudre par modification de la classe de base
+## <a name="fix-by-base-class-change"></a>Corriger par modification de la classe de base
 
-L’exemple suivant résout la violation en modifiant la classe de base de la collection non générique `CollectionBase` générique `Collection<T>` (`Collection(Of T)` en Visual Basic) classe.
+L’exemple suivant résout la violation en modifiant la classe de base de la collection de la classe `CollectionBase` non générique à la `Collection<T>` classe`Collection(Of T)` générique (dans Visual Basic).
 
 [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
-Modification de la classe de base d’une classe déjà publiée d’est considéré comme une modification avec rupture pour les utilisateurs existants.
+La modification de la classe de base d’une classe déjà publiée est considérée comme une modification avec rupture apportée aux consommateurs existants.
 
-## <a name="fix-by-interface-implementation"></a>Résoudre par implémentation d’interface
+## <a name="fix-by-interface-implementation"></a>Corriger par l’implémentation de l’interface
 
-L’exemple suivant résout la violation en implémentant ces interfaces génériques : `IEnumerable<T>`, `ICollection<T>`, et `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, et `IList(Of T)` en Visual Basic).
+L’exemple suivant résout la violation en implémentant ces interfaces `IEnumerable<T>`génériques `ICollection<T>`:, `IList<T>` `IList(Of T)` et`IEnumerable(Of T)`( `ICollection(Of T)`, et dans Visual Basic).
 
 [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1005 : Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003 : Utiliser des instances du Gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007 : Utiliser des classes génériques le cas échéant](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002 Ne pas exposer les listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006 Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003 Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
 

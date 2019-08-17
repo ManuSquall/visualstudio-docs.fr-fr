@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825362"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550829"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
-Lorsque vous configurez l’analyse statique du code pour les projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet.
+Quand vous configurez une analyse héritée pour des projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d' *ensembles de règles*intégrés. Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet.
 
 Les rubriques de cette section décrivent les règles intégrées d’ensembles de règles (et les avertissements) qu’ils contiennent.
 
 > [!NOTE]
-> Les ensembles de règles dans cette section se rapportent à l’analyse statique du code. Pour plus d’informations sur les ensembles de règles disponibles pour les packages d’analyseur Roslyn, consultez [des ensembles de règles d’utilisation avec des analyseurs de Roslyn](analyzer-rule-sets.md).
+> Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](analyzer-rule-sets.md).
 
 - [Ensemble de règles de toutes les règles](all-rules-rule-set.md)
 - [Ensemble de règles de règles de vérification de base pour le code managé](basic-correctness-rules-rule-set-for-managed-code.md)

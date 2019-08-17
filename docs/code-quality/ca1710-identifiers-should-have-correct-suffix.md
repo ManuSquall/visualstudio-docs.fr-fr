@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841911"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547327"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710 : Les identificateurs doivent être dotés d'un suffixe correct
 
@@ -34,17 +34,17 @@ ms.locfileid: "65841911"
 
 Un identificateur n’a pas le suffixe correct.
 
-Par défaut, cette règle examine uniquement des identificateurs visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle recherche uniquement les identificateurs visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Par convention, les noms des types qui étendent certains types de base ou qui implémentent certaines interfaces, ou les types dérivés de ces types, présentent un suffixe qui est associé au type de base ou interface.
+Par Convention, les noms des types qui étendent certains types de base ou qui implémentent certaines interfaces, ou des types dérivés de ces types, ont un suffixe associé à l’interface ou au type de base.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
-Le tableau suivant répertorie les types de base et les interfaces qui sont associés à des suffixes.
+Le tableau suivant répertorie les types de base et les interfaces qui ont des suffixes associés.
 
-|Interface/type de base|Suffix|
+|Type/interface de base|Suffix|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|Attribut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
@@ -53,7 +53,7 @@ Le tableau suivant répertorie les types de base et les interfaces qui sont asso
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Collection ou File d'attente|
-|<xref:System.Collections.Stack?displayProperty=fullName>|Collection ou Stack|
+|<xref:System.Collections.Stack?displayProperty=fullName>|Collection ou pile|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
@@ -61,7 +61,7 @@ Le tableau suivant répertorie les types de base et les interfaces qui sont asso
 |<xref:System.IO.Stream?displayProperty=fullName>|Stream|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Autorisation|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condition|
-|Un délégué de gestionnaire d’événements.|EventHandler|
+|Délégué de gestionnaire d’événements.|Délégué|
 
 Les types qui implémentent <xref:System.Collections.ICollection> et sont un type généralisé de structure de données, comme un dictionnaire, une pile ou une file d’attente, peuvent avoir des noms qui fournissent des informations explicites sur l’utilisation prévue du type.
 
@@ -91,21 +91,21 @@ Renommer le type afin qu’il soit suivi du suffixe correct.
 
 Il est possible de supprimer un avertissement à utiliser le suffixe 'Collection' si le type est une structure de données généralisée susceptible d’être étendue ou qui contiendra un ensemble arbitraire d’éléments divers. Dans ce cas, un nom qui fournit des informations significatives sur l’implémentation, les performances ou d’autres caractéristiques de la structure de données peut être pertinent (par exemple, BinaryTree). Dans les cas où le type représente une collection d’un type spécifique (par exemple, StringCollection), ne supprimez pas un avertissement de cette règle car le suffixe indique que le type peut être énuméré à l’aide d’une instruction `foreach`.
 
-Pour les autres suffixes, ne supprimez pas d’avertissement de cette règle. Le suffixe permet à l’utilisation prévue d’être évidente à partir du nom du type.
+Pour les autres suffixes, ne supprimez pas un avertissement de cette règle. Le suffixe permet à l’utilisation prévue d’être évidente à partir du nom du type.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (affectation de noms). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711 Les identificateurs ne doivent pas avoir de suffixe incorrect](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
 
