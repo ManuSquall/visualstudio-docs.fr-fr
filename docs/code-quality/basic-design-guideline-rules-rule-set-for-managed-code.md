@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919544"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585086"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception de base pour le code managé
+
 Vous pouvez utiliser l’ensemble de règles des règles de conception de base de Microsoft pour vous concentrer sur la compréhension et l’utilisation de votre code. Vous devez inclure cet ensemble de règles si votre projet inclut du code de bibliothèque ou si vous souhaitez appliquer les meilleures pratiques pour le code qui est facile à gérer.
 
-Les règles de conception de base incluent toutes les règles dans l’ensemble de règles de règles de recommeded minimal Microsoft. Pour obtenir la liste des règles minimales, consultez ensemble de règles des [règles recommandées managées pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Les règles de conception de base incluent toutes les règles dans l’ensemble de règles des [règles recommandées managées](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Le tableau suivant décrit toutes les règles de l’ensemble de règles des règles de conception de base de Microsoft.
 

@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923999"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585111"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification étendue pour le code managé
+
 L’ensemble de règles de règles de vérification étendue Microsoft maximise les erreurs d’utilisation de la logique et de l’infrastructure qui sont signalées par l’analyse du code. Une importance supplémentaire est placée sur des scénarios spécifiques tels que l’interopérabilité COM et les applications mobiles. Vous devez envisager d’inclure cet ensemble de règles si l’un de ces scénarios s’applique à votre projet ou de rechercher d’autres problèmes dans votre projet.
 
-L’ensemble de règles des règles de vérification étendue Microsoft comprend les règles qui se trouvent dans l’ensemble de règles de règles de vérification de base Microsoft. Les règles de vérification de base incluent les règles qui se trouvent dans l’ensemble de règles des règles minimales recommandées par Microsoft. Pour plus d’informations, consultez [ensemble de règles de règles de vérification de base pour le code managé](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) et [ensemble de règles des règles recommandées managées pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+L’ensemble de règles des règles de vérification étendue Microsoft inclut les règles qui se trouvent dans l’ensemble de règles de [règles de vérification de base](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , qui contient les règles qui se trouvent dans l’ensemble de règles des [règles recommandées managées](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Le tableau suivant décrit toutes les règles de l’ensemble de règles des règles de vérification étendue Microsoft.
 
