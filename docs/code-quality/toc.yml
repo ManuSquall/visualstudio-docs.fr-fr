@@ -1,10 +1,10 @@
 - name: Documentation d’analyse du code
   href: index.md
-- name: Analyse du code pour le code managé
+- name: Analyser le code managé
   items:
     - name: Vue d'ensemble
       href: code-analysis-for-managed-code-overview.md
-    - name: Analyseurs Roslyn (analyse du code source)
+    - name: Analyse du code
       items:
         - name: Vue d'ensemble
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Questions fréquentes (FAQ)
           href: analyzers-faq.md
-    - name: Analyseurs binaires (analyse du code statique)
+    - name: Analyse héritée
       items:
         - name: Vue d'ensemble
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Procédure pas à pas de l’analyse statique du code
+        - name: Procédure pas à pas de l’analyse héritée
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migration
           href: fxcop-analyzers.yml
-        - name: Exécuter l’analyse du code manuellement
+        - name: Exécuter manuellement l’analyse héritée
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Configuration
           items:
-            - name: Configurer l’analyse du code pour les analyseurs binaires
+            - name: Configurer l’analyse héritée
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Activer l’analyse automatique du code
+            - name: Activer l’analyse héritée automatique du code
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Personnaliser le dictionnaire d’analyse du code
+            - name: Personnaliser le dictionnaire d’analyse héritée du code
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Suppression
           items:
-            - name: Supprimer les avertissements d’analyse du code statique pour le code généré
+            - name: Supprimer les avertissements d’analyse héritée pour le code généré
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Erreurs de l’application d’analyse du code
+        - name: Erreurs d’application d’analyse héritée
           items:
-            - name: Erreurs de la stratégie d’analyse du code
+            - name: Erreurs de stratégie d’analyse héritée
               href: code-analysis-policy-errors.md
             - name: Vue d'ensemble
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: Guide pratique pour créer ou mettre à jour des stratégies d’archivage
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Implémenter des stratégies d’archivage d’analyse du code
+            - name: Implémenter des stratégies d’archivage d’analyse héritée
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: Imposer l’écriture d’un code facile à maintenir
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: Questions fréquentes (FAQ)
           href: fxcop-analyzers-faq.md
-    - name: Migrer de l’analyse statique aux analyseurs FxCop
+    - name: Migrer de l’analyse héritée aux analyseurs FxCop
       items:
         - name: Vue d'ensemble
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: "CA5386\_: Éviter tout codage en dur de la valeur de SecurityProtocolType"
                   href: ca5386.md
+                - name: "CA5397\_: Ne pas utiliser de valeurs SslProtocols dépréciées"
+                  href: ca5397.md
+                - name: "CA5398\_: Éviter les valeurs SslProtocols codées en dur"
+                  href: ca5398.md
             - name: Avertissements liés à l’utilisation
               items:
                 - name: Vue d'ensemble
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Suspension automatique de fonctionnalités
               href: automatic-feature-suspension.md
-- name: Analyse du code pour C/C++
+- name: Analyser du code C/C++
   items:
     - name: Vue d'ensemble
       displayName: C++ code analysis

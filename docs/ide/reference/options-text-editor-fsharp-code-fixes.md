@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778539"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870743"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Options, Éditeur de texte, F#, Correctifs du code
+# <a name="options-text-editor--f--code-fixes"></a>Options : Éditeur de texte > F# > Correctifs du code
 
-Utilisez la page d’options **Correctifs du code** pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#** > **Correctifs du code**.
+Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#**  > **Correctifs du code**.
 
 ## <a name="code-fixes"></a>Correctifs du code
 
 - **Simplifier les noms (supprimer les qualificateurs inutiles)**
 
-   Si cette case est cochée, les noms qualifiés complets sont simplifiés quand les qualifications ne sont pas nécessaires, comme pour un membre d’un espace de noms fréquemment utilisé.
+  Si cette case est cochée, les noms qualifiés complets sont simplifiés quand les qualifications ne sont pas nécessaires, comme pour un membre d’un espace de noms fréquemment utilisé.
 
 - **Placer toujours les instructions open au niveau supérieur**
 
-   Si cette case est cochée et que vous tapez une instruction open dans le code, elle est placée au niveau supérieur.
+  Si cette case est cochée et que vous tapez une instruction `open` dans le code, elle est placée au niveau supérieur.
 
 - **Supprimer les instructions open inutilisées**
 
-   Si cette case est cochée, les instructions open dans le fichier actuel qui ne sont pas utilisées sont supprimées.
+  Si cette case à cocher est activée, les documents sont analysés pour rechercher les instructions `open` inutilisées et une ampoule [Action rapide](../quick-actions.md) s’affiche avec une action pour supprimer toutes les instructions `open` inutilisées.
 
 - **Analyser et suggérer des correctifs pour les valeurs inutilisées**
 
-   Si cette case est cochée, l’outil reconnaît une valeur qui n’est pas utilisée dans le code. Ensuite, si vous pointez sur la valeur inutilisée, il vous recommande des moyens d’utiliser la valeur.
+  Si cette case est cochée, l’outil reconnaît une valeur qui n’est pas utilisée dans le code. Ensuite, si vous pointez sur la valeur inutilisée, il vous recommande des moyens d’utiliser la valeur.
 
 ## <a name="see-also"></a>Voir aussi
 

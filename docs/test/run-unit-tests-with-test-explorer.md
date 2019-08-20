@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711291"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918172"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -169,7 +169,7 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 |**Classe**|Regroupe les tests en fonction de la classe conteneur.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Regrouper par caractéristiques
+### <a name="traits"></a>Caractéristiques
 
 Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par l'infrastructure de tests unitaires. Une infrastructure de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.
 
@@ -187,7 +187,7 @@ Dans l'infrastructure de tests unitaires Microsoft pour les applications managé
 
 **Caractéristiques dans l'infrastructure de tests unitaires Microsoft pour C++**
 
- Consultez [Guide pratique pour utiliser le framework de tests unitaires Microsoft pour C++](how-to-use-microsoft-test-framework-for-cpp.md).
+Consultez [Guide pratique pour utiliser le framework de tests unitaires Microsoft pour C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="create-custom-playlists"></a>Créer des sélections personnalisées
 
@@ -215,7 +215,7 @@ La playlist s’ouvre sous un nouvel onglet de l’Explorateur de tests. Vous po
 
 ![La playlist s’ouvre sous un onglet distinct de l’Explorateur de tests](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit, puis choisissez **Ajouter à la playlist** > **Nouvelle playlist**. 
+**Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit, puis choisissez **Ajouter à la playlist** > **Nouvelle playlist**.
 
 **Pour ouvrir une playlist**, choisissez l’icône de playlist dans la barre d’outils de Visual Studio, puis sélectionnez dans le menu un fichier de playlist enregistré.
 ::: moniker-end
@@ -229,7 +229,7 @@ Les [groupes](#test-explorer-groups) sont également disponibles en tant que col
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrer, trier et réorganiser les colonnes de test
 
-Les colonnes peuvent être filtrées, triées et réorganisées. 
+Les colonnes peuvent être filtrées, triées et réorganisées.
 * Pour filtrer des caractéristiques spécifiques, cliquez sur l’icône de filtre en haut de la colonne Caractéristiques.
 
   ![Filtre de colonne](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l�
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analyser la couverture du code de test unitaire
 
-Vous pouvez déterminer la quantité de code de votre produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d'une solution.
+Vous pouvez déterminer la quantité de code produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio disponible dans l’édition Visual Studio Enterprise. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d’une solution.
 
 Pour exécuter la couverture du code pour les méthodes de test dans une solution :
 
@@ -331,6 +331,8 @@ Vous pouvez exécuter les tests à partir de **l’Explorateur de tests** en cli
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > Vous ne pouvez pas exécuter un test dans une classe abstraite, car les tests sont seulement définis dans les classes abstraites et ne sont pas instanciés. Pour exécuter des tests dans des classes abstraites, créez une classe qui dérive de la classe abstraite.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429177"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926740"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
@@ -27,7 +27,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 - Visual Studio Enterprise
 
-Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
+Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe [UIMap](/previous-versions/dd580454(v=vs.140)). Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
 Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
 
@@ -40,7 +40,7 @@ L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages s
 - Les ajouts à l'interface utilisateur de l'application peuvent être mis à l'échelle de manière incrémentielle avec un impact minimal sur les tests exécutés sur d'autres parties de l'interface utilisateur.
 
 ## <a name="do-you-need-multiple-ui-maps"></a>Avez-vous besoin de plusieurs mappages d'IU ?
- Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
+Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
 - Plusieurs jeux complexes de contrôles d'IU composites qui, ensemble, effectuent une opération logique, par exemple une page d'inscription dans un site web ou la page d'achat d'un panier.
 
@@ -79,7 +79,7 @@ L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages s
 
    Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d’IU est identique à la fenêtre de niveau supérieur principale.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.
 
@@ -141,7 +141,7 @@ namespace ContosoProject
 
 ## <a name="see-also"></a>Voir aussi
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
