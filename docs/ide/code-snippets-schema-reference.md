@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974980"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924074"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -40,7 +40,7 @@ La valeur du texte de l’élément **Assembly** correspond soit au nom convivia
 | - |-----------------|
 |[Reference, élément](../ide/code-snippets-schema-reference.md#reference-element)|Contient des informations à propos des références d'assembly requises par l'extrait de code.|
 
- Une valeur texte est requise. Ce texte spécifie l'assembly auquel l'extrait de code fait référence.
+Une valeur texte est requise. Ce texte spécifie l'assembly auquel l'extrait de code fait référence.
 
 ## <a name="author-element"></a>Author, élément
 
@@ -56,7 +56,7 @@ Spécifie le nom de l'auteur de l'extrait de code. Le **Gestionnaire des extrait
 | - |-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header-element)|Contient des informations générales sur l'extrait de code.|
 
- Une valeur texte est requise. Ce texte spécifie l'auteur de l'extrait de code.
+Une valeur texte est requise. Ce texte spécifie l'auteur de l'extrait de code.
 
 ## <a name="code-element"></a>Élément de code
 
@@ -212,7 +212,7 @@ Spécifie la valeur par défaut du littéral ou de l'objet d'un extrait de code 
 |[Literal, élément](../ide/code-snippets-schema-reference.md#literal-element)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
- Une valeur texte est requise. Ce texte spécifie la valeur par défaut du littéral ou de l'objet qui remplit les champs de l'extrait de code que vous pouvez modifier.
+Une valeur texte est requise. Ce texte spécifie la valeur par défaut du littéral ou de l'objet qui remplit les champs de l'extrait de code que vous pouvez modifier.
 
 ## <a name="description-element"></a>Description, élément
 
@@ -228,7 +228,7 @@ Spécifie des informations relatives à la description du contenu d'un extrait d
 | - |-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header-element)|Contient des informations générales sur l'extrait de code.|
 
- Une valeur texte est requise. Ce texte décrit l'extrait de code.
+Une valeur texte est requise. Ce texte décrit l'extrait de code.
 
 ## <a name="function-element"></a>Function, élément
 
@@ -248,7 +248,7 @@ Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le f
 |[Literal, élément](../ide/code-snippets-schema-reference.md#literal-element)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
- Une valeur texte est requise. Ce texte spécifie une fonction à exécuter lorsque le littéral ou le champ objet reçoit le focus dans Visual Studio.
+Une valeur texte est requise. Ce texte spécifie une fonction à exécuter lorsque le littéral ou le champ objet reçoit le focus dans Visual Studio.
 
 ## <a name="header-element"></a>Header, élément
 
@@ -518,7 +518,7 @@ Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La val
 | - |-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header-element)|Contient des informations générales sur l'extrait de code.|
 
- Une valeur texte est facultative. Ce texte est utilisé comme raccourci pour insérer l'extrait de code.
+Une valeur texte est facultative. Ce texte est utilisé comme raccourci pour insérer l'extrait de code.
 
 ## <a name="snippet-element"></a>Snippet, élément
 
@@ -599,7 +599,7 @@ Spécifie le titre de l'extrait de code. Le titre stocké dans l’élément `Ti
 | - |-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header-element)|Spécifie des informations générales sur l'extrait de code.|
 
- Une valeur texte est requise. Ce texte spécifie le titre de l'extrait de code.
+Une valeur texte est requise. Ce texte spécifie le titre de l'extrait de code.
 
 ## <a name="tooltip-element"></a>ToolTip, élément
 
@@ -616,7 +616,7 @@ Décrit la valeur attendue et l'utilisation d'un littéral ou d'un objet d'extra
 |[Literal, élément](../ide/code-snippets-schema-reference.md#literal-element)|Définit les champs littéraux de l'extrait de code que vous pouvez modifier.|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
- Une valeur texte est requise. Ce texte spécifie la description de l'info-bulle à associer à l'objet ou au littéral dans l'extrait de code.
+Une valeur texte est requise. Ce texte spécifie la description de l'info-bulle à associer à l'objet ou au littéral dans l'extrait de code.
 
 ## <a name="type-element"></a>Élément Type
 
@@ -632,7 +632,11 @@ Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier 
 | - |-----------------|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
- Une valeur texte est requise. Ce texte spécifie le type de l'objet.
+Une valeur texte est requise. Ce texte spécifie le type de l'objet. Par exemple :
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Url, élément
 

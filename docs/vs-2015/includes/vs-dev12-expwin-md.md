@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 121040b0ffa70fdffe8ea62df177e1daaea2bb83
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845648"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147653"
 ---
 Visual Studio Express 2013 pour Windows

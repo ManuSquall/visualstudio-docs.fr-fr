@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: Dépannage de VSPackages
       href: troubleshooting-vspackages.md
-- name: Interpréteur de commande (intégré ou isolé)
-  href: 'https://vspartner.com/pages/vsshells'
 - name: "Livrer des extensions Visual\_Studio"
   items:
     - name: "Livrer des extensions Visual\_Studio"
@@ -830,6 +828,8 @@
   items:
     - name: Créer un Kit de développement logiciel
       href: creating-a-software-development-kit.md
+    - name: SDK et package NuGet
+      href: nuget-versus-sdk-references.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic"
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C++"

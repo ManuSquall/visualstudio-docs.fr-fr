@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187732"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procédure pas à pas : Création d’une boule de billard 3D réaliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -215,7 +215,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
    Dans cette image finale, notez comment les effets que vous avez ajoutés se combinent pour créer une boule de billard très convaincante. La forme, la texture et l’éclairage créent l’apparence de base d’un objet 3D. Les reflets et les surbrillances spéculaires rendent la boule de billard plus intéressante et intégrée à l’environnement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Guide pratique : Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Éditeur d’images](../designers/image-editor.md)   

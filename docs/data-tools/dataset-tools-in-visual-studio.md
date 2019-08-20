@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567103"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821370"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567103"
 
 Un `DataSet` objet est un objet en mémoire qui est essentiellement un mini-de base de données. Il contient `DataTable`, `DataColumn`, et `DataRow` objets dans lequel vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le jeu de données conserve les informations sur les modifications apportées à ses données, afin de mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
 
-Jeux de données et les classes connexes sont définis dans le <xref:System.Data?displayProperty=fullName> espace de noms dans la bibliothèque de classes .NET Framework. Vous pouvez créer et modifier des jeux de données dynamiquement dans le code à l’aide d’ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide des concepteurs de Visual Studio. Jeux de données qui est créés à l’aide de concepteurs **TableAdapter** objets pour interagir avec la base de données. Utiliser des jeux de données qui est créées par programmation **DataAdapter** objets. Pour plus d’informations sur la création de jeux de données par programmation, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Jeux de données et les classes connexes sont définis dans le <xref:System.Data?displayProperty=fullName> espace de noms dans l’API .NET. Vous pouvez créer et modifier des jeux de données dynamiquement dans le code à l’aide d’ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide des concepteurs de Visual Studio. Jeux de données qui est créés à l’aide de concepteurs **TableAdapter** objets pour interagir avec la base de données. Utiliser des jeux de données qui est créées par programmation **DataAdapter** objets. Pour plus d’informations sur la création de jeux de données par programmation, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Si votre application doit uniquement lire les données à partir d’une base de données et n’effectue pas les mises à jour, ajoute ou supprime, vous pouvez généralement obtenir de meilleures performances en utilisant un `DataReader` objet pour récupérer des données dans un générique `List` objet ou un autre objet de collection. Si vous affichez les données, vous pouvez lier l’interface utilisateur à la collection.
 
@@ -75,13 +75,13 @@ Visual Studio fournit des outils pour simplifier l’utilisation des jeux de don
 
 - Utilisez le **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplit le groupe de données et les opérations de base de données (update, delete et ainsi de suite) à implémenter. Pour plus d'informations, voir ces rubriques :
 
-    - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
+  - [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
 
-    - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
+  - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
 
-    - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
+  - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 
 - Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] permet de [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

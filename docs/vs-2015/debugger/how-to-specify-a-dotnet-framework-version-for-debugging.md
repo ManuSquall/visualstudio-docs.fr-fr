@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c785c419ead31ad90e2b20ae7f48af778598bb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176556"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procédure : Spécifier une Version du .NET Framework pour le débogage
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Procédure : Spécifier une version .NET Framework pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] prend en charge le débogage des versions antérieures ainsi que de la version actuelle de Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si vous démarrez une application à partir de Visual Studio, le débogueur identifie toujours la version correcte du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pour l’application que vous déboguez. Si l’application est déjà en cours d’exécution et que vous utilisez **attacher à**, le débogueur pas peut toujours être en mesure d’identifier une version antérieure de le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si cela se produit, un message d'erreur s'affiche qui indique,  
@@ -55,7 +55,7 @@ Le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] prend 
   
 6. Double-cliquez sur **CLRVersionForDebugging**.  
   
-7. Dans la zone **Modification de la chaîne**, tapez le numéro de version du .NET Framework dans la zone **Valeur**. Exemple : V1.1.4322  
+7. Dans la zone **Modification de la chaîne**, tapez le numéro de version du .NET Framework dans la zone **Valeur**. Par exemple :  V1.1.4322  
   
 8. Cliquez sur **OK**.  
   

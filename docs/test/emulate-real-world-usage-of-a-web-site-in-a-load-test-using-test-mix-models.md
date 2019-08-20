@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461585"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918336"
 ---
 # <a name="test-mix-models-overview"></a>Vue d’ensemble des modèles de combinaison de tests
 
@@ -52,7 +52,7 @@ Pour chaque test de la combinaison, vous pouvez spécifier un pourcentage qui d�
 Lorsque ce paramètre est défini, le prochain test à démarrer dépend des pourcentages assignés. Cette opération est effectuée sans tenir compte du nombre d'utilisateurs virtuels qui exécutent actuellement chacun des tests.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Pourcentage basé sur le nombre d’utilisateurs virtuels
- Ce modèle de combinaison de tests détermine le pourcentage d'utilisateurs virtuels qui effectueront un test particulier. Si vous utilisez ce modèle de combinaison de tests, le prochain test à démarrer dépend non seulement des pourcentages assignés, mais aussi du pourcentage d'utilisateurs virtuels qui exécutent actuellement un test particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée.
+Ce modèle de combinaison de tests détermine le pourcentage d'utilisateurs virtuels qui effectueront un test particulier. Si vous utilisez ce modèle de combinaison de tests, le prochain test à démarrer dépend non seulement des pourcentages assignés, mais aussi du pourcentage d'utilisateurs virtuels qui exécutent actuellement un test particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée.
 
 ### <a name="PacingTestMix"></a> Combinaison de tests rythmée
 
@@ -69,7 +69,7 @@ Si vous utilisez le modèle de combinaison de tests rythmée, le moteur d'exécu
 Le paramètre **Temps de réflexion entre les itérations de test** ne s’applique pas quand vous utilisez une combinaison de tests rythmée.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Appliquer une distribution au rythme
- La propriété **Appliquer une distribution au rythme** dans un scénario de test de charge peut avoir la valeur True ou False :
+La propriété **Appliquer une distribution au rythme** dans un scénario de test de charge peut avoir la valeur True ou False :
 
 - **True** : le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
@@ -82,13 +82,13 @@ Le paramètre **Temps de réflexion entre les itérations de test** ne s’appli
   Pour plus d'informations, voir [Procédure : Appliquer une distribution au rythme durant l’utilisation d’un modèle de combinaison de tests dépendant du rythme de l’utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ### <a name="SequentialOrder"></a> Ordre séquentiel
- Sélectionner l'option Basé sur l'ordre séquentiel des tests permet à chaque utilisateur virtuel d'exécuter tous les tests du scénario dans l'ordre dans lequel les tests ont été définis.
+Sélectionner l'option Basé sur l'ordre séquentiel des tests permet à chaque utilisateur virtuel d'exécuter tous les tests du scénario dans l'ordre dans lequel les tests ont été définis.
 
 ## <a name="test-iterations-property"></a>Propriété des itérations de tests
- Dans les propriétés Paramètres d'exécution, vous pouvez spécifier une valeur pour la propriété des itérations de tests. Cette valeur définit le nombre d'itérations de tests à exécuter dans un test de charge. Une fois que le nombre d'itérations de tests spécifié a été démarré, aucune itération supplémentaire n'a lieu, quels que soient les paramètres définis dans les profils de charge. Une fois que le nombre d'itérations de tests spécifié a été réalisé, le test de charge s'achève. Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Dans les propriétés Paramètres d'exécution, vous pouvez spécifier une valeur pour la propriété des itérations de tests. Cette valeur définit le nombre d'itérations de tests à exécuter dans un test de charge. Une fois que le nombre d'itérations de tests spécifié a été démarré, aucune itération supplémentaire n'a lieu, quels que soient les paramètres définis dans les profils de charge. Une fois que le nombre d'itérations de tests spécifié a été réalisé, le test de charge s'achève. Pour plus d'informations, voir [Procédure : Spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Tests d'initialisation et de fin
- Vous pouvez sélectionner les tests à exécuter au début et à la fin de la session de test de charge de chaque utilisateur virtuel. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+Vous pouvez sélectionner les tests à exécuter au début et à la fin de la session de test de charge de chaque utilisateur virtuel. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 - **Test d’initialisation**. Ce test est exécuté par chaque utilisateur virtuel avant les différents tests de la combinaison de tests.
 

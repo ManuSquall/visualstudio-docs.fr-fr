@@ -1,16 +1,16 @@
 ---
-title: Génération et nettoyage de projets et de solutions dans Visual Studio pour Mac
+title: Génération et nettoyage des projets et des solutions
 description: Cet article décrit comment générer un projet dans Visual Studio pour Mac
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c7f135ebbfa2dbf807e5831e8f17b6be48e3ea8
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933356"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872332"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Génération et nettoyage des projets et des solutions
 

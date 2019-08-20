@@ -1,16 +1,16 @@
 ---
 title: Éditeur de code source
 description: Utilisation de l’éditeur de code source dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b284cde511b17863861908d9967bbea7672e297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000171"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493228"
 ---
 # <a name="source-editor"></a>Éditeur de code source
 
@@ -32,13 +32,13 @@ Le pliage de code facilite la gestion des fichiers de code source volumineux en 
 
 Pour activer le pliage de code, accédez à **Visual Studio > Préférences > Éditeur de texte > Général > Pliage de code** :
 
-![Options du pliage de code](media/source-editor-image1.png)
+![Options du pliage de code](media/source-neweditor-image1.png)
 
 Ce menu comprend également l’option pour plier par défaut les instructions #region et les commentaires, pour afficher à la place du code un indicateur nommé.
 
 Pour afficher ou masquer des sections, utilisez le widget d’affichage en regard du numéro de ligne :
 
-![Afficher ou masquer des sections de code](media/source-editor-image2.png)
+![Afficher ou masquer des sections de code](media/source-neweditor-image2.png)
 
 Vous pouvez également passer de l’affichage au masquage des plis (et inversement) en utilisant l’élément de menu **Afficher > Pliage > Activer/Désactiver les plis > Activer/Désactiver tous les plis** :
 
@@ -46,21 +46,19 @@ Vous pouvez également passer de l’affichage au masquage des plis (et inversem
 
 Cet élément de menu peut également être utilisé pour activer ou désactiver le pliage de code.
 
-## <a name="white-space"></a>Espace blanc
+## <a name="word-wrap"></a>Retour automatique à la ligne
 
-Il peut être nécessaire d’afficher les caractères invisibles dans le code source. C’est un moyen visuel de vérifier que vous respectez les standards de codage et que vous n’utilisez pas de l’espace inutilement. C’est également utile lors de l’écriture de code F#, dont l’évaluation dépend de l’indentation précise des lignes.
+Le retour automatique à la ligne peut vous aider à gérer l’espace quand vous travaillez sur des lignes de code longues ou avec un espace d’affichage limité. Le retour automatique à la ligne peut également garantir que votre vue du code contient la totalité du contenu de votre fichier source, même quand vous ouvrez des volets qui peuvent masquer votre affichage ou réduire la largeur de votre vue du code source. 
 
-Définissez les options pour afficher les espaces en accédant à **Visual Studio > Préférences > Éditeur de texte > Marqueurs et règles**. Cette option permet de définir le _moment_ où les caractères invisibles sont affichés : Jamais, Lors de la sélection ou Toujours :
+Le retour automatique à la ligne est désactivé par défaut, mais vous pouvez l’activer via **Préférences** dans Visual Studio pour Mac. 
 
-![Options d’affichage des caractères invisibles](media/source-editor-image3.png)
+Pour activer le retour automatique à la ligne, accédez à **Visual Studio > Préférences > Éditeur de texte > Nouvel éditeur > Retour automatique à la ligne** :
 
-Une option pour afficher les tabulations, les espaces et les fins de ligne est également disponible :
+![Options du retour automatique à la ligne](media/source-neweditor-wordwrap1.png)
 
-![Afficher les tabulations et les espaces](media/source-editor-image4.png)
+Quand le retour automatique à la ligne est activé, les lignes qui dépassent la largeur de la vue de l’éditeur de code source sont automatiquement renvoyées à la ligne suivante dans votre fichier source. Vous pouvez également activer une option qui affichera un glyphe visible en regard des lignes avec retour à la ligne. Ceci vous permet de faire la distinction entre les lignes qui ont fait l’objet d’un retour à la ligne automatique et celles auxquelles vous avez appliqué un retour à la ligne manuellement.
 
-Les caractères invisibles sont affichés sous forme de points gris, comme illustré dans l’image suivante :
-
-![espace affiché](media/source-editor-image22.png)
+![Texte renvoyé à la ligne avec retour automatique à la ligne activé](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>Règle
 

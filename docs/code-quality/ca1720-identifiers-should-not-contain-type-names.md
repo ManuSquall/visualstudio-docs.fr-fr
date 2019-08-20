@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841792"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547098"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 
@@ -36,15 +36,15 @@ Le nom d’un paramètre dans un membre contient un nom de type de données.
 
 ou
 
-Le nom d’un membre contient un nom de type de données spécifiques au langage.
+Le nom d’un membre contient un nom de type de données spécifique à une langue.
 
-Par défaut, cette règle examine uniquement les membres visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle recherche uniquement les membres visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Noms de paramètres et les membres sont mieux utilisés pour communiquer leur signification que to décrire leur type, ce qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’une langue spécifique. Par exemple, au lieu du C# nom de type `int`, utilisez le nom de type de données indépendant du langage, `Int32`.
+Les noms des paramètres et des membres sont mieux utilisés pour communiquer leur signification que pour décrire leur type, qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’un nom spécifique à une langue. Par exemple, à la place C# du nom `int`de type, utilisez le nom de type de `Int32`données indépendant du langage.
 
-Chaque jeton discret dans le nom de paramètre ou de membre est comparée aux noms de types de données spécifiques au langage suivants casse :
+Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par rapport aux noms de types de données spécifiques à la langue suivants, sans respect de la casse:
 
 - Bool
 - WChar
@@ -64,10 +64,10 @@ Chaque jeton discret dans le nom de paramètre ou de membre est comparée aux no
 - Float32
 - Float64
 
-En outre, les noms d’un paramètre sont également vérifiés parmi les noms de type de données indépendant du langage suivant casse :
+En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendants du langage suivants sans respect de la casse:
 
 - Object
-- obj
+- Obj
 - Booléen
 - Char
 - Chaîne
@@ -81,7 +81,7 @@ En outre, les noms d’un paramètre sont également vérifiés parmi les noms d
 - Int64
 - UInt64
 - IntPtr
-- PTR
+- Effectués
 - Pointeur
 - UInptr
 - UPtr
@@ -89,35 +89,35 @@ En outre, les noms d’un paramètre sont également vérifiés parmi les noms d
 - Single
 - Double
 - Decimal
-- GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-**Si le déclenchement sur un paramètre :**
+**En cas de déclenchement sur un paramètre:**
 
-Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou par un terme plus générique, tel que 'value'.
+Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou un terme plus générique, tel que «value».
 
-**Si le déclenchement sur un membre :**
+**En cas de déclenchement sur un membre:**
 
-Remplacez l’identificateur de type de données spécifiques au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que 'value'.
+Remplacez l’identificateur de type de données spécifique au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que «value».
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Utilisation occasionnelle de noms de paramètres et de membres en fonction de type peut être appropriée. Toutefois, pour un nouveau développement, aucun connus scénarios se produisent dans lequel vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques fournies antérieurement, vous devrez peut-être supprimer un avertissement de cette règle.
+L’utilisation occasionnelle des noms de paramètres et de membres basés sur le type peut être appropriée. Toutefois, pour un nouveau développement, aucun scénario connu ne se produit lorsque vous devez supprimer un avertissement de cette règle. Pour les bibliothèques qui ont déjà été expédiées, vous devrez peut-être supprimer un avertissement de cette règle.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (d’affectation de noms). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (affectation de noms). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707 Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719 Les noms des paramètres ne doivent pas correspondre aux noms des membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

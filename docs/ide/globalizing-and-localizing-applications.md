@@ -15,22 +15,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547869"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820872"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Développer des applications mondialisées et traduites
 
-Visual Studio facilite le développement à destination d’un public international en tirant parti des services intégrés à [.NET Framework](/dotnet/standard/globalization-localization/).
+Visual Studio facilite le développement à destination d’un public international en tirant parti des services intégrés dans [.NET](/dotnet/standard/globalization-localization/).
 
 Par exemple, le système de projet pour les applications Windows Forms peut générer des fichiers de ressources pour la culture d’interface utilisateur de secours et chaque culture d’interface utilisateur supplémentaire. Quand vous générez un projet dans Visual Studio, les fichiers de ressources sont compilés à partir du format XML de Visual Studio (.resx) vers un format binaire intermédiaire (.resources), puis incorporés dans des assemblys satellites. Pour plus d’informations, consultez [Fichiers de ressources dans Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) et [Créer des assemblys satellites pour des applications de bureau](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
-Pour plus d’informations sur la création d’applications pour des langues bidirectionnelles dans Visual Studio, consultez [Créer des applications pour l’arabe et l’hébreu](creating-applications-in-bi-directional-languages.md).
+## <a name="bidirectional-languages"></a>Langues bidirectionnelles
+
+Vous pouvez utiliser Visual Studio pour créer des applications qui affichent correctement les langues qui s’écrivent de droite à gauche, comme l’arabe et l’hébreu. Pour certaines fonctionnalités, il suffit de définir des propriétés. Dans d’autres cas, vous devez implémenter des fonctionnalités dans le code.
+
+> [!NOTE]
+> Pour entrer et afficher des langues bidirectionnelles, vous devez utiliser une version de Windows configurée avec la langue appropriée. Il peut s’agir d’une version anglaise de Windows sur laquelle est installé le module linguistique correspondant, ou d’une version localisée de Windows.
+
+### <a name="apps-that-support-bidirectional-languages"></a>Applications prenant en charge les langues bidirectionnelles
+
+- Applications Windows
+
+   Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversion de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez la page sur la [prise en charge bidirectionnelle des applications Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+
+- Applications web
+
+   Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui comportent des langues bidirectionnelles. Les applications clientes web s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge des fonctionnalités bidirectionnelles d’une application web dépend donc de celui du navigateur de l’utilisateur. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+
+> [!NOTE]
+> Les applications console ne prennent pas en charge le texte des langues bidirectionnelles. Cela est dû à la façon dont Windows fonctionne avec les applications console.
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Prise en charge des langues bidirectionnelles dans Visual Studio](use-bidirectional-languages.md)
 - [Internationaliser et traduire des applications .NET](/dotnet/standard/globalization-localization/)
 - [Ressources dans les applications .NET](/dotnet/framework/resources/)

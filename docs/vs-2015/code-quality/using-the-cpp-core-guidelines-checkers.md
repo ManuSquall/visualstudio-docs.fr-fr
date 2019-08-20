@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142089"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Les recommandations C++ Core Guidelines sont un ensemble portable d’instructio
   
    ![Page de propriétés pour les paramètres de Code Analysis Extensions](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Pour activer ou désactiver les ensembles de règles C++ Core Check, ouvrez le **Pages de propriétés** boîte de dialogue pour votre projet. Sous **propriétés de Configuration**, développez **analyse du Code**, **Extensions**. Dans la liste déroulante contrôler regard **activer C++ Core Check (Released)** ou **activer C++ Core Check (expérimental)**, choisissez **Oui** ou **non**. Choisissez **OK** ou **appliquer** pour enregistrer vos modifications.  
+   Pour activer ou désactiver les ensembles de règles C++ Core Check, ouvrez le **Pages de propriétés** boîte de dialogue pour votre projet. Sous **propriétés de Configuration**, développez **analyse du Code**, **Extensions**. Dans la liste déroulante contrôler regard **activer C++ Core Check (Released)** ou **activer C++ Core Check (expérimental)** , choisissez **Oui** ou **non**. Choisissez **OK** ou **appliquer** pour enregistrer vos modifications.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Vérifiez les Types, les limites et les durées de vie  
  Le package C++ Core Check contient actuellement des vérificateurs pour le [sécurité de Type](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [délimite sécurité](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), et [sécurité de la durée de vie](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profils.  
@@ -89,7 +89,7 @@ int main()
   
   **1 >---début de la génération : Projet : CoreCheckExample, Configuration : Débogage Win32--**  
 **----**  
-**1>  CoreCheckExample.cpp**  
+**1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  

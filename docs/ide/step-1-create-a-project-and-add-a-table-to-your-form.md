@@ -1,6 +1,6 @@
 ---
 title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979552"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501156"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
@@ -27,33 +27,55 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
+1. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
+
+1. Dans la liste des modèles, choisissez le modèle **Application Windows Forms (.NET Framework)** , nommez-le *MatchingGame*, puis choisissez le bouton **OK**.
+
+    Un formulaire nommé *Form1.cs* ou *Form1.vb* apparaît, selon le langage de programmation que vous avez choisi.
+
+   > [!NOTE]
+   > Si vous ne voyez pas le modèle **Application Windows Forms (.NET Framework)** , utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.<br/><br/>![Charge de travail de développement .NET Desktop dans Visual Studio Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Pour plus d’informations, consultez la page [Installer Visual Studio](../install/install-visual-studio.md).
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-1. Dans la zone de recherche, tapez « WPF », choisissez **Application WPF (.NET Framework)**, puis **Suivant**.
+   ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Si vous ne voyez pas le modèle **Application WPF (.NET Framework)**, utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.)
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche.
 
-1. Nommez le projet **MatchingGame** et choisissez **Créer**.
+1. Choisissez le modèle **Application Windows Forms (.NET Framework)** puis choisissez **Suivant**.
+
+   ![Choisir le modèle Visual Basic pour l’application Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
+   >
+   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement .NET Desktop**.
+   >
+   > ![Charge de travail .NET Core dans Visual Studio Installer](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail.
+
+1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MatchingGame* dans la boîte **Nom du projet**. Choisissez ensuite **Créer**.
 
 ::: moniker-end
 
-2. Si vous n’utilisez pas Visual Studio Express, vous devez d’abord sélectionner un langage de programmation. Dans la liste **Modèles installés**, choisissez **Visual C#** ou **Visual Basic**.
+## <a name="to-set-properties-for-a-form"></a>Pour définir les propriétés d’un formulaire
 
-3. Dans la liste des modèles de projet, choisissez **Application Windows Forms**, nommez le projet **JeuCombinaisons**, puis choisissez le bouton **OK**.
-
-4. Dans la fenêtre **Propriétés**, définissez les propriétés de formulaire ci-dessous.
+1. Dans la fenêtre **Propriétés**, définissez les propriétés de formulaire ci-dessous.
 
    1. Modifiez la propriété **Text** du formulaire en remplaçant **Form1** par **Matching Game** (Jeu de combinaisons). Ce texte s'affiche en haut de la fenêtre du jeu.
 
    2. Définissez la taille du formulaire en spécifiant une largeur de 550 pixels et une hauteur de 550 pixels. Pour cela, vous pouvez définir la propriété **Size** sur **550, 550** ou faire glisser l’angle du formulaire jusqu’à ce que vous voyiez la taille appropriée dans le coin inférieur droit de l’environnement de développement intégré (IDE).
 
-5. Affichez la boîte à outils en choisissant l’onglet **Boîte à outils** à gauche de l’environnement IDE.
+2. Affichez la boîte à outils en choisissant l’onglet **Boîte à outils** à gauche de l’environnement IDE.
 
-6. Faites glisser un contrôle <xref:System.Windows.Forms.TableLayoutPanel> de la catégorie **Conteneurs** dans la boîte à outils, puis définissez les propriétés suivantes pour celle-ci.
+3. Faites glisser un contrôle <xref:System.Windows.Forms.TableLayoutPanel> de la catégorie **Conteneurs** dans la boîte à outils, puis définissez les propriétés suivantes pour celle-ci.
 
    1. Affectez la valeur **CornflowerBlue** à la propriété **BackColor**. Pour ce faire, ouvrez la boîte de dialogue **BackColor** en choisissant la flèche déroulante en regard de la propriété **BackColor** dans la fenêtre **Propriétés**.  Ensuite, choisissez l’onglet **Web** dans la boîte de dialogue **BackColor** pour afficher la liste des couleurs disponibles.
 
@@ -72,7 +94,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
       Votre TableLayoutPanel doit désormais correspondre à une grille 4x4 de seize cellules carrées de même taille. Les images des icônes apparaîtront ultérieurement dans ces lignes et colonnes.
 
-7. Vérifiez que le TableLayoutPanel est sélectionné dans l'éditeur de formulaires. Si c’est le cas, vous devez voir **tableLayoutPanel1** en haut de la fenêtre **Propriétés**. S’il n’est pas sélectionné, choisissez TableLayoutPanel sur le formulaire ou dans le contrôle de liste déroulante en haut de la fenêtre **Propriétés**.
+4. Vérifiez que le TableLayoutPanel est sélectionné dans l'éditeur de formulaires. Si c’est le cas, vous devez voir **tableLayoutPanel1** en haut de la fenêtre **Propriétés**. S’il n’est pas sélectionné, choisissez TableLayoutPanel sur le formulaire ou dans le contrôle de liste déroulante en haut de la fenêtre **Propriétés**.
 
     Lorsque le TableLayoutPanel est sélectionné, ouvrez la boîte à outils et ajoutez un contrôle <xref:System.Windows.Forms.Label> (situé dans la catégorie **Contrôles communs**) dans la cellule supérieure gauche du TableLayoutPanel. Le contrôle d’étiquette doit maintenant être sélectionné dans l'IDE. Définissez les propriétés ci-dessous pour ce contrôle.
 
@@ -84,7 +106,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    4. Affectez la valeur **MiddleCenter** à la propriété **TextAlign** en choisissant le bouton de liste déroulante en regard de la propriété, puis le bouton central. Cela garantit l'affichage de l'icône au milieu de la cellule.
 
-   5. Choisissez la propriété **Font**. Un bouton de sélection (**…**) doit s’afficher.
+   5. Choisissez la propriété **Font**. Un bouton de sélection ( **…** ) doit s’afficher.
 
    6. Choisissez le bouton de sélection, puis affectez la valeur **Webdings** à **Font**, la valeur **Bold** à **Font Style** et la valeur **48** à **Size**.
 
@@ -95,14 +117,14 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
        > [!NOTE]
        > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.
 
-8. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur **Ctrl**+**C** ou, dans la barre de menus, choisissez **Modification** > **Copier**.) Ensuite, collez-le. (Appuyez sur **Ctrl**+**V** ou, dans la barre de menus, choisissez **Modification** > **Coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
+5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur **Ctrl**+**C** ou, dans la barre de menus, choisissez **Modification** > **Copier**.) Ensuite, collez-le. (Appuyez sur **Ctrl**+**V** ou, dans la barre de menus, choisissez **Modification** > **Coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
 
    > [!NOTE]
    > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
 
     Votre formulaire est maintenant mis en forme. Il doit ressembler à l'image ci-dessous.
 
-    ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png) Formulaire de jeu de combinaisons initial
+    ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>   Formulaire de jeu de combinaisons initial
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

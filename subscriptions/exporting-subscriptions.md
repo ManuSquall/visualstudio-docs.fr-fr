@@ -1,25 +1,38 @@
 ---
-title: Exportation des informations sur les abonnements | Microsoft Docs
+title: Exporter des informations sur les abonnements | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/14/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Découvrez comment exporter une liste d’abonnés et des informations de leurs attributions d’abonnement.
-searchscope: VS Subscription
-ms.openlocfilehash: 7e2db1c0de036441801aa56ae1956d0a10719798
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945851"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605572"
 ---
-# <a name="exporting-subscription-information"></a>Exportation des informations sur les abonnements
+# <a name="export-subscription-information"></a>Exporter les informations d’abonnement
+Dans le [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio, vous pouvez exporter la liste de vos abonnés ainsi que des informations concernant leurs attributions. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée sous forme de fichier CSV et peut être facilement ouverte dans Microsoft Excel pour la création de graphiques, de tableaux croisés dynamiques et d’autres artefacts.
 
-Dans le [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio, vous pouvez exporter la liste de vos utilisateurs, ainsi que les informations concernant leurs affectations. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, téléchargements activés, pays, langue, état de l’abonnement et GUID d’abonnement.
+Le fait de disposer des informations sur tous vos abonnés à un même emplacement peut vous aider à effectuer des opérations telles que celles-ci :
+- Obtenir une vue d’ensemble des abonnements utilisés par équipe et/ou emplacement au sein de votre organisation.
+- Développer des plans et des budgets pour les achats futurs d’abonnements. 
+- Encourager les utilisateurs qui ont des abonnements attribués à les activer.
+- Prendre des mesures proactives avant l’expiration des abonnements.  
+- Identifier où les abonnements peuvent être suralloués. 
 
-Cette fonctionnalité est utile pour certains scénarios, tels que le suivi des affectations et les dates d’expiration. Par exemple, si vous passez de l’utilisation des BAN aux GUID pour le suivi des affectations d’abonnements, vous pouvez utiliser ce rapport avec la formule VLOOKUP dans Microsoft Excel pour mettre les abonnés en correspondance de façon appropriée.
-
-Pour effectuer l’exportation, il suffit de sélectionner l’onglet **Exportation** : le fichier est alors téléchargé sur votre machine locale. Le fichier inclut le nom du compte de ce contrat qui contient les abonnements de vos utilisateurs, ainsi que la date de l’exportation.
+## <a name="export-your-subscriptions"></a>Exporter vos abonnements
+Pour effectuer l’exportation :
+1. Connectez-vous au [portail d’administration](https://manage.visualstudio.com).
+2. Sélectionnez l’onglet **Exporter** : le fichier est alors téléchargé sur votre machine locale. Le fichier inclut le nom du compte de ce contrat qui contient les abonnements de vos utilisateurs, ainsi que la date de l’exportation.
 > [!div class="mx-imgBorder"]
 > ![Exporter des abonnés](_img/exporting-subscriptions/exporting-subscriptions.png)
+
+## <a name="next-steps"></a>Étapes suivantes
+- Pour plus d’informations sur la gestion des abonnements, consultez ces rubriques :
+    - [Abonnements arrivés à expiration](handle-expired-license.md)
+    - [Surutilisations](handle-overclaimed-license.md)
+    - [Utilisation maximale](maximum-usage.md)
+- Vous avez besoin d’aide sur n’importe quel aspect de la gestion des abonnements ?  Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

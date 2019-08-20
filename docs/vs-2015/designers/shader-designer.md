@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432583"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822078"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
 |-----------------|--------------------|-------------------------------------------------|  
 |DGSL (Directed Graph Shader Language)|.dgsl|Afficher, modifier|  
 |Nuanceur HLSL (code source)|.hlsl|Exporter|  
-|Nuanceur HLSL (bytecode)|.cso|Exporter|  
-|En-tête C++ (tableau de bytecode HLSL)|.h|Exporter|  
+|Nuanceur HLSL (bytecode)|.cso|Exportation|  
+|En-tête C++ (tableau de bytecode HLSL)|.h|Exportation|  
   
 ## <a name="getting-started"></a>Prise en main  
  Cette section explique comment ajouter un nuanceur DGSL à votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et fournit les informations de base pour commencer.  
@@ -43,7 +43,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter le nuanceur, puis choisissez **Ajouter**, **Nouvel élément**.  
   
-2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)** .  
   
 3. Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.  
   
@@ -93,22 +93,22 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 - Voici comment :  
   
-    - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.  
-  
-    - Pour supprimer un nœud du graphique, sélectionnez-le, puis appuyez sur Suppr.  
-  
-    - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.  
-  
-    - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.  
-  
-    - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.  
-  
-    - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.  
+  - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.  
+
+  - Pour supprimer un nœud du graphique, sélectionnez-le, puis appuyez sur Suppr.  
+
+  - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.  
+
+  - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.  
+
+  - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.  
+
+  - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.  
   
 ### <a name="previewing-shaders"></a>Aperçu des nuanceurs  
  Pour vous aider à comprendre comment un nuanceur apparaîtra dans votre application, vous pouvez configurer le mode de visualisation de l’effet. Pour estimer votre application, vous pouvez choisir l’une des formes à afficher, configurer des textures et d’autres paramètres de matériau, activer l’animation des effets à durée définie et examiner l’aperçu sous différents angles.  
   
-#### <a name="shapes"></a>Formes  
+#### <a name="shapes"></a>Shapes  
  Le concepteur de nuanceur comprend six formes (une sphère, un cube, un cylindre, un cône, une théière et un plan) que vous pouvez utiliser pour visualiser votre nuanceur. Selon le nuanceur, certaines formes peuvent vous donner un meilleur aperçu.  
   
 ###### <a name="to-choose-a-preview-shape"></a>Pour choisir une forme d’aperçu  

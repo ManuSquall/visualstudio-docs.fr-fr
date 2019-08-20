@@ -14,18 +14,18 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26a9d65ed21eed00820a7968617c610e4b11c153
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201354"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procédure : Personnaliser le dictionnaire d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans votre code pour les erreurs dans l’orthographe, grammaire cas et autres conventions d’affectation de noms de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] instructions. Vous pouvez créer un fichier Xml de dictionnaire personnalisé pour ajouter, supprimer ou modifier des termes, abréviations et acronymes au dictionnaire intégré.  
   
- Par exemple, supposez que votre code contient une classe nommée **DoorKnokker (heurtoire)**. Analyse du code identifie le nom comme composé de deux mots : **porte** et **knokker**. Il déclenche alors un avertissement qui **knokker** n’est pas correctement orthographié. Pour forcer l’analyse du code pour reconnaître l’orthographe, vous pouvez ajouter le terme **knokker** au dictionnaire personnalisé.  
+ Par exemple, supposez que votre code contient une classe nommée **DoorKnokker (heurtoire)** . Analyse du code identifie le nom comme composé de deux mots : **porte** et **knokker**. Il déclenche alors un avertissement qui **knokker** n’est pas correctement orthographié. Pour forcer l’analyse du code pour reconnaître l’orthographe, vous pouvez ajouter le terme **knokker** au dictionnaire personnalisé.  
   
 ## <a name="to-create-a-custom-dictionary"></a>Pour créer un dictionnaire personnalisé  
  Créez un fichier nommé **CustomDictionary.xml**.  
@@ -66,13 +66,13 @@ Analyse du code utilise un dictionnaire pour vérifier des identificateurs dans 
   
 - [Dictionnaire/mots/non reconnue/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
-- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Dictionnaire/mots/déconseillé/terme [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
-- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Dictionnaire/mots/Compound/Term [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
-- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Dictionnaire/acronymes/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ### <a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnu/Word  
  Pour inclure un terme dans la liste de termes que l’analyse du code identifie comme correctement orthographié, ajoutez ce terme comme texte interne d’un élément de dictionnaire/mots/Recognized/Word. Termes du contrat dans les éléments du dictionnaire/mots/Recognized/Word ne respectent pas la casse.  

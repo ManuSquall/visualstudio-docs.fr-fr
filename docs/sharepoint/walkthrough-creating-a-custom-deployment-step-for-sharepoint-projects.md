@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’une étape de déploiement personnalisée pour les projets SharePoint | Microsoft Docs'
+title: Créer l’étape de déploiement personnalisée pour les projets SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430428"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825634"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio inclut de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -29,9 +29,9 @@ ms.locfileid: "63430428"
 
 - Création d’une extension Visual Studio qui exécute deux tâches principales :
 
-    - L’extension définit une étape de déploiement personnalisée pour mettre à niveau des solutions SharePoint.
+  - L’extension définit une étape de déploiement personnalisée pour mettre à niveau des solutions SharePoint.
 
-    - L’extension crée une extension de projet qui définit une nouvelle configuration de déploiement, qui est un ensemble d’étapes de déploiement exécutées pour un projet donné. La nouvelle configuration de déploiement inclut l’étape de déploiement personnalisée et plusieurs étapes de déploiement intégrées.
+  - L’extension crée une extension de projet qui définit une nouvelle configuration de déploiement, qui est un ensemble d’étapes de déploiement exécutées pour un projet donné. La nouvelle configuration de déploiement inclut l’étape de déploiement personnalisée et plusieurs étapes de déploiement intégrées.
 
 - Créez deux commandes SharePoint personnalisés qui appelle l’assembly d’extension. Les commandes SharePoint sont des méthodes qui peuvent être appelées par les assemblys d’extension à utiliser des API dans le modèle objet serveur pour SharePoint. Pour plus d’informations, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -290,7 +290,7 @@ ms.locfileid: "63430428"
 
     1. Prénom
 
-    2. Société
+    2. Company
 
     3. Téléphone professionnel
 

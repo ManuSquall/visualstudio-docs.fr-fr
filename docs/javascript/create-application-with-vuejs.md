@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226040"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033141"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Créer une application Vue.js à l’aide de Node.js Tools pour Visual Studio
 
@@ -43,7 +43,7 @@ Les nouvelles fonctionnalités suivantes prennent en charge le développement d�
     Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  pour l’installer gratuitement.
     ::: moniker-end
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
 * Pour créer le projet ASP.NET Core, les charges de travail Développement web et ASP.NET et Développement multiplateforme .NET Core doivent être installées.
 
@@ -74,7 +74,7 @@ Pour cet exemple, vous utilisez une application ASP.NET Core (C#) vide. Toutefoi
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui s’affiche, tapez le nom **client-app**, puis choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**, puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, tapez le nom **client-app**, puis choisissez **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#** , puis choisissez **Web**. Dans le volet central, choisissez **Application web ASP.NET Core**, tapez le nom **client-app**, puis choisissez **OK**.
     ::: moniker-end
 
     Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous devez d’abord installer les charges de travail **Développement web et ASP.NET** et **Développement .NET Core**. Pour installer les charges de travail, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet** (sélectionnez **Fichier** > **Nouveau** > **Projet**). Visual Studio Installer est lancé. Sélectionnez les charges de travail nécessaires.
@@ -169,7 +169,15 @@ Ces étapes nécessitent vue-cli 3.0 qui est actuellement en version bêta.
 
 #### <a name="build-with-vue-cli-30"></a>Générer avec vue-cli 3.0
 
-Un problème inconnu avec vue-cli 3.0 empêche l’automatisation du processus de génération. Chaque fois que vous essayez d’actualiser le dossier wwwroot, vous devez exécuter la commande `npm run build` sur le dossier client-app.
+Un problème inconnu avec vue-cli 3.0 peut empêcher l’automatisation du processus de génération. Chaque fois que vous essayez d’actualiser le dossier wwwroot, vous devez exécuter la commande `npm run build` sur le dossier client-app.
+
+Vous pouvez aussi générer le projet vue-cli 3.0 comme un événement pré-build en utilisant les propriétés du projet ASP.NET. Faites un clic droit sur le projet, choisissez **Propriétés** et ajoutez les commandes suivantes dans l’onglet **Build** sous la zone de texte **Ligne de commande de l'événement pré-build**.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Limitations
 

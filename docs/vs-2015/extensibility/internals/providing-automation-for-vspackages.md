@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6eb76eba76567f2966323d4058c9e752cb6fb69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200983"
 ---
 # <a name="providing-automation-for-vspackages"></a>Fourniture de l’automatisation pour VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Il existe deux façons de fournir l’automatisation pour vos VSPackages : en i
 #### <a name="projects"></a>Projets  
  Les VSPackages peuvent étendre le modèle automation pour les nouveaux types de projet via leurs propres objets VSPackage spécifique. L’objectif principal de fournir de nouveaux objets automation pour votre VSPackage consiste à différencier votre projet unique des objets à partir d’un <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> ou un <xref:VSLangProj80.VSProject2> objet. Cette distinction est pratique lorsque vous souhaitez fournir un moyen unique ou effectuer une itération de votre type de projet en dehors d’autres types de projets, doivent, ils apparaissent côte à côte dans une solution. Pour plus d’informations, consultez [exposer des objets de projet](../../extensibility/internals/exposing-project-objects.md).  
   
-#### <a name="events"></a>Événements  
+#### <a name="events"></a>Events  
  L’architecture des événements de l’environnement offre un autre emplacement, vous pouvez ajouter vos propres objets VSPackage spécifique. Par exemple, en créant vos propres objets événement unique, vous pouvez étendre le modèle d’événement de l’environnement pour les projets. Vous souhaiterez peut-être fournir vos propres événements lorsqu’un nouvel élément est ajouté à votre propre type de projet. Pour plus d’informations, consultez [exposer des événements](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Objets fenêtres  
- Windows peut transmettre un objet d’automation de VSPackage spécifique à l’environnement lorsqu’elle est appelée. Vous implémentez un objet qui est dérivé de <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> ou `IDispatch` qui transmet dans Propriétés, extension de l’objet de fenêtre dans laquelle il est placé. Par exemple, vous pouvez utiliser cette approche pour fournir l’automatisation pour un contrôle que doit se trouver dans un frame de fenêtre. La sémantique de cet objet et tous les objets qu’il peut étendre est à votre disposition pour concevoir. Pour plus d'informations, voir [Procédure : Fournir l’automatisation pour Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
+ Windows peut transmettre un objet d’automation de VSPackage spécifique à l’environnement lorsqu’elle est appelée. Vous implémentez un objet qui est dérivé de <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> ou `IDispatch` qui transmet dans Propriétés, extension de l’objet de fenêtre dans laquelle il est placé. Par exemple, vous pouvez utiliser cette approche pour fournir l’automatisation pour un contrôle que doit se trouver dans un frame de fenêtre. La sémantique de cet objet et tous les objets qu’il peut étendre est à votre disposition pour concevoir. Pour plus d’informations, consultez [Guide pratique pour Fournir l’automatisation pour Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
   
 #### <a name="options-pages-on-the-tools-menu"></a>Pages d’options dans le menu Outils  
  Vous pouvez créer des pages pour étendre les outils, le modèle automation de Options via l’implémentation de pages et en ajoutant des informations dans le Registre pour créer vos propres options. Vos pages peuvent ensuite être appelées via le modèle objet d’environnement telles que toutes les autres pages options. Si la conception de la fonctionnalité que vous ajoutez à l’environnement via les VSPackages exige que les pages d’options, vous devez ajouter la prise en charge automation. Pour plus d’informations, consultez [prise en charge d’Automation pour les Pages Options](../../extensibility/internals/automation-support-for-options-pages.md).  

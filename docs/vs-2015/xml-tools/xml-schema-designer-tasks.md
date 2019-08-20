@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 12c5e65f45200947c57a4d831611faa4443a0d55
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158546"
 ---
 # <a name="xml-schema-designer-tasks"></a>Tâches du Concepteur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Cette section décrit comment effectuer des tâches courantes à l’aide des ou
  [Guide pratique pour Ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)  
  Explique comment ajouter des nœuds à l'espace de travail du Concepteur de schémas XML à partir de l'Explorateur de schémas XML.  
   
- [Guide pratique pour Ajouter des nœuds à l’espace de travail à partir de la vue de départ](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
+ [Guide pratique : Ajouter des nœuds à l’espace de travail à partir de la vue de départ](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-start-view.md)  
  Montre comment ajouter des nœuds globaux à l'espace de travail à partir de la vue de départ.  
   
  [Guide pratique pour Obtenir une vue d’ensemble d’un jeu de schémas à l’aide de la vue graphique](../xml-tools/how-to-get-an-overview-of-a-schema-set-using-the-graph-view.md)  
@@ -46,10 +46,10 @@ Cette section décrit comment effectuer des tâches courantes à l’aide des ou
  [Guide pratique pour Examiner le modèle de contenu de nœuds à l’aide de la vue de modèle de contenu](../xml-tools/how-to-examine-the-content-model-of-nodes-using-the-content-model-view.md)  
  Décrit comment explorer vos nœuds à l'aide de la vue de modèle de contenu.  
   
- [Guide pratique pour Utiliser le Concepteur de schémas XML avec des littéraux XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)  
+ [Guide pratique : Utiliser le Concepteur de schémas XML avec des littéraux XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)  
  Décrit comment afficher le schéma associé à un littéral XML.  
   
- [Guide pratique pour Imprimer des diagrammes à partir de la vue graphique et de la vue de modèle de contenu](../xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md)  
+ [Guide pratique : Imprimer des diagrammes à partir de la vue graphique et de la vue de modèle de contenu](../xml-tools/how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md)  
  Décrit comment imprimer un diagramme à partir de vue du graphique ou de la vue de modèle de contenu.  
   
  [Exemples de fichiers XSD](../xml-tools/sample-xsd-files.md)  

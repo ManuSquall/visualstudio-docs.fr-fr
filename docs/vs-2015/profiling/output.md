@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26a9532bcf0e641d9ad27522f207493b905dc471
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179563"
 ---
 # <a name="output"></a>Sortie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Start:** `Method`  
  Spécifie le nom du fichier de sortie.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Dans l’exemple suivant, le fichier de données de profilage est créé dans le répertoire actif.  
   
 ```  

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549197"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926303"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procédure : Déverrouiller Visual Studio
 
@@ -50,11 +50,11 @@ Pour déverrouiller Visual Studio avec un abonnement Visual Studio ou une organi
 
 ### <a name="update-stale-licenses"></a>Mettre à jour des licences obsolètes
 
- Vous avez peut-être vu le message ci-après qui indique que votre licence est périmée dans Visual Studio. Il dit « Votre licence est périmée et doit être mise à jour ».
+Vous avez peut-être vu le message ci-après qui indique que votre licence est périmée dans Visual Studio. Il dit « Votre licence est périmée et doit être mise à jour ».
 
- ![Message d’expiration de licence Visual Studio](../ide/media/vs2017_stale-license.png)
+![Message d’expiration de licence Visual Studio](../ide/media/vs2017_stale-license.png)
 
- Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n’a pas été actualisé et est devenu obsolète en raison de l’une des raisons suivantes :
+Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n’a pas été actualisé et est devenu obsolète en raison de l’une des raisons suivantes :
 
 - Vous n’avez pas utilisé Visual Studio ou n’avez établi aucune connexion Internet pendant une longue période.
 - Vous vous êtes déconnecté de Visual Studio.
@@ -68,7 +68,7 @@ Si vous n’entrez pas à nouveau vos informations d’identification, l’expir
 
 ### <a name="update-expired-licenses"></a>Mettre à jour des licences ayant expiré
 
- Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence utilisée, accédez à **Fichier** > **Paramètres du compte**, puis examinez les informations de licence situées sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un compte secondaire, ajoutez ce compte à la liste **Tous les comptes** à gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte**.
+Si votre abonnement a expiré et que vous n’avez plus de droits d’accès à Visual Studio, vous devez renouveler votre abonnement ou ajouter un autre compte disposant d’un abonnement. Pour plus d’informations sur la licence utilisée, accédez à **Fichier** > **Paramètres du compte**, puis examinez les informations de licence situées sur le côté droit de la boîte de dialogue. Si vous avez un autre abonnement associé à un compte secondaire, ajoutez ce compte à la liste **Tous les comptes** à gauche de la boîte de dialogue en sélectionnant le lien **Ajouter un compte**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893002"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823867"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
@@ -52,7 +52,7 @@ Cette section explique comment ajouter un nuanceur DGSL à un projet C++ Visual 
 
 2. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet C++ auquel vous voulez ajouter le nuanceur, puis choisissez **Ajouter** > **Nouvel élément**.
 
-3. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.
+3. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)** .
 
    > [!NOTE]
    > Si la catégorie **Graphismes** n’apparaît pas dans la boîte de dialogue **Ajouter un nouvel élément** alors que le composant **Éditeurs d’images et de modèles 3D** est installé, cela signifie que les éléments graphiques ne sont pas pris en charge pour votre type de projet.
@@ -109,17 +109,17 @@ Utilisez le mode **Sélection** pour ajouter, supprimer, repositionner, connecte
 
 - Voici comment :
 
-   - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
+  - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
 
-   - Pour supprimer un nœud du graphe, sélectionnez-le, puis appuyez sur la touche **Suppr**.
+  - Pour supprimer un nœud du graphe, sélectionnez-le, puis appuyez sur la touche **Suppr**.
 
-   - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.
+  - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.
 
-   - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.
+  - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.
 
-   - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.
+  - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.
 
-   - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.
+  - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.
 
 ### <a name="preview-shaders"></a>Afficher un aperçu des nuanceurs
 
@@ -168,7 +168,7 @@ Pour faire pivoter la forme, appuyez et maintenez enfoncée la touche **Alt**, p
 
 Avant de pouvoir utiliser un nuanceur dans votre application, vous devez l’exporter dans un format pris en charge par DirectX.
 
-Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte ayant l’extension de nom de fichier  *.hlsl*. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut ayant l’extension de nom de fichier  *.cso* ou dans un fichier d’en-tête (*.h*) en C++, qui encode le bytecode de nuanceur dans un tableau.
+Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte ayant l’extension de nom de fichier  *.hlsl*. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut ayant l’extension de nom de fichier  *.cso* ou dans un fichier d’en-tête ( *.h*) en C++, qui encode le bytecode de nuanceur dans un tableau.
 
 Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
 |Annuler la sélection actuelle|**Échappement** (**Échap**)|
-|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus (**+**)|
-|Zoom arrière|**Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> Signe moins (**-**)|
+|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus ( **+** )|
+|Zoom arrière|**Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> Signe moins ( **-** )|
 |Mouvement panoramique vers le haut de l’aire de conception|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
 |Mouvement panoramique vers le bas de l’aire de conception|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|
 |Mouvement panoramique vers la gauche de l’aire de conception|**Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Maj**+**Pg. suiv**|

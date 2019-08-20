@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852490"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714941"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Déboguer des DLL dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,7 +76,7 @@ Pour les projets C/C++, vous pouvez définir des en-tête et les emplacements de
 
 1. En haut de la **propriétés** volet, sous **Configuration**, sélectionnez **toutes les Configurations**.
 
-1. Sous **C/C++** > **général** > **autres répertoires Include**, spécifiez le dossier contenant les fichiers d’en-tête.
+1. Sous **C/C++**  > **général** > **autres répertoires Include**, spécifiez le dossier contenant les fichiers d’en-tête.
 
 1. Sous **l’éditeur de liens** > **général** > **répertoires de bibliothèques supplémentaires**, spécifiez le dossier qui comporte les fichiers LIB.
 
@@ -84,7 +84,7 @@ Pour les projets C/C++, vous pouvez définir des en-tête et les emplacements de
 
 1. Sélectionnez **OK**.
 
-Pour plus d’informations sur les paramètres de projet C++, consultez [pages de propriétés (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Pour plus d’informations sur les paramètres de projet C++, consultez [pages de propriétés (Visual C++)](/cpp/build/reference/property-pages-visual-cpp).
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Créer une version Debug
 

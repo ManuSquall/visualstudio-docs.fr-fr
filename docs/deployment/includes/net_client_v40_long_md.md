@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 6c2b604feefb0020c97c20406ff9c352ccf8bfe2
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846372"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68150317"
 ---
 .NET Framework 4 Client Profile

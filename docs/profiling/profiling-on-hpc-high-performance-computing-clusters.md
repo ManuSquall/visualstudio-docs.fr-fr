@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994996"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745317"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
@@ -36,9 +36,9 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
 - Installez Microsoft HPC Pack 2008 sur le même ordinateur que Visual Studio. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Installez [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et du profileur autonome sont tous deux disponibles sur le support d’installation de Visual Studio. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et avant d’installer les outils de profilage.
+- Installez le .NET Framework 4 et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation du .NET Framework et du profileur autonome sont tous deux disponibles sur le support d’installation de Visual Studio. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé le .NET Framework et avant d’installer les outils de profilage.
 
-  Pour installer [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :
+  Pour installer le .NET Framework 4 et les outils de profilage autonomes sur un nœud de calcul HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :
 
 1. Ouvrez la fenêtre d’invite de commandes installée avec HPC Pack.
 
@@ -53,7 +53,7 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 | | |
 |------------------| - |
 | *%HeadNode%* | Nom du nœud principal du cluster. |
-| *%FxPath%* | Chemin du programme d’installation de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Sur le support d’installation de Visual Studio, le chemin est : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Chemin du programme d’installation du .NET Framework 4. Sur le support d’installation de Visual Studio, le chemin est : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin est : Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profiler sur un nœud de calcul HPC
@@ -68,7 +68,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
    - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.
 
-   - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.
+   - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)** .
 
 4. Cliquez sur **Suivant**.
 
@@ -139,7 +139,7 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 |---------------------------------------| - |
 | **Nom du projet** | Nom du projet ou de la solution [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actuels. |
 | **Nettoyer après l’arrêt du profileur** | Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés. |
-| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
+| **Fichiers supplémentaires à déployer** | Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection ( **...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue. |
 | **Commande Mpiexec** | Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**. |
 | **Arguments Mpiexec** | Spécifie les arguments à passer à la commande mpiexec.exe. |
 | **Nœuds demandés sur le cluster** | Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée. |

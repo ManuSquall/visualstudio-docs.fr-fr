@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790926"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869762"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
@@ -31,7 +31,7 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 - Lorsque la case en regard d’un composant est décochée, l’icône correspondante est retirée de **Boîte à outils**.
 
     > [!NOTE]
-    > Les composants .NET Framework installés sur votre ordinateur restent disponibles, même si leurs icônes ne s’affichent pas dans la **boîte à outils**.
+    > Les composants .NET installés sur votre ordinateur restent disponibles, que leurs icônes s’affichent ou non dans la **boîte à outils**.
 
 Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :
 
@@ -41,15 +41,15 @@ Répertorie les noms des contrôles WPF dont les entrées correspondantes se tr
 
 **Espace de noms**
 
-Affiche la hiérarchie de l’espace de noms de l’[API de classe .NET Framework](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez cette colonne pour répertorier les composants disponibles dans chaque espace de noms .NET Framework installé sur votre ordinateur.
+Affiche la hiérarchie de l’espace de noms de l’[API .NET](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez sur cette colonne pour lister les composants disponibles dans chaque espace de noms .NET installé sur votre ordinateur.
 
 **Nom de l'assembly**
 
-Affiche le nom de l’assembly .NET Framework qui comprend l’espace de noms de chaque composant. Triez cette colonne pour répertorier les espaces de noms contenus dans chaque assembly .NET Framework installé sur votre ordinateur.
+Affiche le nom de l’assembly .NET qui comprend l’espace de noms de chaque composant. Triez sur cette colonne pour lister les espaces de noms contenus dans chaque assembly .NET installé sur votre ordinateur.
 
 **Répertoire**
 
-Affiche l’emplacement de l’assembly .NET Framework. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Affiche l’emplacement de l’assembly .NET. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -77,11 +77,11 @@ L’ajout d’un contrôle personnalisé ou d’un <xref:System.Windows.Controls
 
 - Cela ne permet pas une mise à jour correcte lorsque vous passez d’une configuration de solution Debug à une configuration Release, et inversement. Cela est dû au fait que la référence n’est pas une référence de projet, mais une référence à l’assembly sur disque. Si le contrôle fait partie de la solution actuelle, lorsque vous passez de Debug à Release, votre projet continue à référencer la version Debug du contrôle.
 
-En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> a la valeur `false`, le contrôle n’apparaît pas dans la boîte à outils.
+En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) est défini sur `false`, le contrôle n’apparaît pas dans la boîte à outils.
 
 Vous pouvez référencer directement vos contrôles dans la vue XAML en mappant l’espace de noms et l’assembly de votre contrôle.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Boîte à outils](../../ide/reference/toolbox.md)
-- [Prise en main de WPF](../../designers/getting-started-with-wpf.md)
+- [Bien démarrer avec WPF](../../designers/getting-started-with-wpf.md)

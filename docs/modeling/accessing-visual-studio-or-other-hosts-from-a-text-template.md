@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960461"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870687"
 ---
-# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou d’autres hôtes à partir d’un modèle de texte
+# <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Accéder à Visual Studio ou à d’autres hôtes à partir d’un modèle de texte
 
 Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés qui sont exposées par l’hôte qui exécute le modèle. Visual Studio est un exemple d’un ordinateur hôte.
 
@@ -24,7 +24,7 @@ Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés qui
 
 ## <a name="obtain-access-to-the-host"></a>Obtenir l’accès à l’hôte
 
-Pour accéder à l’ordinateur hôte, définissez `hostspecific="true"` dans la `template` directive. Vous pouvez désormais utiliser `this.Host`, qui a le type <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Le <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> type possède des membres que vous pouvez utiliser, par exemple, pour résoudre les noms de fichiers et de consigner les erreurs.
+Pour accéder à l’ordinateur hôte, définissez `hostspecific="true"` dans la `template` directive. Vous pouvez maintenant utiliser `this.Host`, qui a le type [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Le type [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) contient des membres que vous pouvez utiliser pour résoudre les noms de fichiers et les erreurs de journal, par exemple.
 
 ### <a name="resolve-file-names"></a>Résoudre les noms de fichier
 

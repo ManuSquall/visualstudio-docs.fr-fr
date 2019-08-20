@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565158"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821659"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 
-Cette rubrique décrit les options de mise à niveau d’un fichier de base de données (*.mdf*) après avoir installé une version plus récente de Visual Studio. Il inclut des instructions pour les tâches suivantes :
+Cette rubrique décrit les options de mise à niveau d’un fichier de base de données ( *.mdf*) après avoir installé une version plus récente de Visual Studio. Il inclut des instructions pour les tâches suivantes :
 
 - Mise à niveau d’un fichier de base de données pour utiliser une version plus récente de SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ Cette rubrique décrit les options de mise à niveau d’un fichier de base de d
 
 - Vérifiez SQL Server Express le moteur de base de données par défaut
 
-Vous pouvez utiliser Visual Studio pour ouvrir un projet qui contient un fichier de base de données (*.mdf*) qui a été créé à l’aide d’une version antérieure de SQL Server Express ou LocalDB. Toutefois, pour continuer à développer votre projet dans Visual Studio, vous devez disposer de cette version de SQL Server Express ou LocalDB est installée sur le même ordinateur que Visual Studio, ou vous devez mettre à niveau le fichier de base de données. Si vous mettez à niveau le fichier de base de données, vous ne pourrez pas y accéder à l’aide de versions antérieures de SQL Server Express ou LocalDB.
+Vous pouvez utiliser Visual Studio pour ouvrir un projet qui contient un fichier de base de données ( *.mdf*) qui a été créé à l’aide d’une version antérieure de SQL Server Express ou LocalDB. Toutefois, pour continuer à développer votre projet dans Visual Studio, vous devez disposer de cette version de SQL Server Express ou LocalDB est installée sur le même ordinateur que Visual Studio, ou vous devez mettre à niveau le fichier de base de données. Si vous mettez à niveau le fichier de base de données, vous ne pourrez pas y accéder à l’aide de versions antérieures de SQL Server Express ou LocalDB.
 
 Vous pouvez également être invité à mettre à niveau d’un fichier de base de données qui a été créé via une version antérieure de SQL Server Express ou LocalDB si la version du fichier n’est pas compatible avec l’instance de SQL Server Express ou LocalDB qui est actuellement installée. Pour résoudre ce problème, Visual Studio vous invite à mettre à niveau le fichier.
 
@@ -95,9 +95,9 @@ Vous pouvez également modifier une connexion SQL Server Express pour utiliser l
 
 - Dans Visual Studio, ouvrez le projet sans la mise à niveau.
 
-    - Pour exécuter le projet, sélectionnez le **F5** clé.
+  - Pour exécuter le projet, sélectionnez le **F5** clé.
 
-    - Pour modifier la base de données, ouvrez le *.mdf* fichier **l’Explorateur de solutions**, puis développez le nœud dans **Explorateur de serveurs** pour travailler avec votre base de données.
+  - Pour modifier la base de données, ouvrez le *.mdf* fichier **l’Explorateur de solutions**, puis développez le nœud dans **Explorateur de serveurs** pour travailler avec votre base de données.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Pour rendre SQL Server Express le moteur de base de données par défaut
 

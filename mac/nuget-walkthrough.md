@@ -1,21 +1,21 @@
 ---
 title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet Xamarin. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/14/2017
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5d38afb0dd3adc1db253b7b2c290925716bd5bf9
+ms.sourcegitcommit: 78e4836fe0f45b7079271330aff449dff6fd9685
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692334"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68303801"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
-NuGet est le gestionnaire de packages le plus répandu pour le développement .NET, et il est intégré à Visual Studio pour Mac et à Visual Studio sur Windows. Vous pouvez rechercher et ajouter des packages à vos projets Xamarin.iOS et Xamarin.Android en utilisant l’un ou l’autre de ces IDE.
+NuGet est le gestionnaire de packages le plus répandu pour le développement .NET, et il est intégré à Visual Studio pour Mac et à Visual Studio sur Windows. Vous pouvez rechercher des packages et les ajouter à vos projets Xamarin, .NET Core et ASP.NET en utilisant l’un ou l’autre de ces IDE.
 
 Cet article explique comment inclure un package NuGet dans un projet. De plus, il présente la chaîne d’outils qui permet d’exécuter le processus sans interruption.
 
@@ -31,7 +31,7 @@ Pour commencer, créez un projet nommé `HelloNuget`, comme illustré ci-dessous
 
 ## <a name="adding-a-package"></a>Ajout d’un package
 
-Le projet étant ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **Packages** dans le **Panneau Solutions**, puis sélectionnez **Ajouter des packages** :
+Le projet étant ouvert dans Visual Studio pour Mac, cliquez avec le bouton droit sur le dossier **Packages** dans le **Panneau Solutions**, puis sélectionnez **Add NuGet Packages** (Ajouter des packages NuGet) :
 
 ![Action contextuelle Ajouter un nouveau package NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Quand la fenêtre s’ouvre, elle charge une liste de packages à partir de la s
 
 ![Répertorier les packages NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Utilisez la zone de recherche dans le coin supérieur droit pour rechercher un package spécifique, par exemple  `azure`. Une fois que vous avez trouvé un package à utiliser, sélectionnez-le, puis cliquez sur le bouton  **Ajouter le package** pour commencer l’installation.
+Utilisez la zone de recherche dans le coin supérieur droit pour rechercher un package spécifique, par exemple `azure mobile`. Une fois que vous avez trouvé un package à utiliser, sélectionnez-le, puis cliquez sur le bouton **Ajouter le package** pour commencer l’installation.
 
-[Ajouter le package NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+![Ajouter le package NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Une fois le package téléchargé, il est ajouté à votre projet. La solution est changée comme suit :
 
@@ -57,7 +57,7 @@ Une fois le package téléchargé, il est ajouté à votre projet. La solution e
 
 Une fois le package NuGet ajouté et les références du projet mises à jour, vous pouvez programmer en utilisant les API comme vous le feriez avec n’importe quelle référence de projet.
 
-Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
+Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
 
 ```csharp
 using Newtonsoft.Json;
@@ -77,7 +77,7 @@ Cliquez avec le bouton droit sur **Packages** pour accéder au menu contextuel 
 
 ![Menu Packages](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Ajouter des packages** : ouvre la fenêtre permettant d’ajouter plus de packages au projet.
+* **Add NuGet Packages** (Ajouter des packages NuGet) : ouvre la fenêtre permettant d’ajouter des packages au projet.
 * **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
 * **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
 

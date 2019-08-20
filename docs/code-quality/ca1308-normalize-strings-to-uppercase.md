@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546672"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922242"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308 : Normaliser les chaînes en majuscules
 
@@ -27,20 +27,20 @@ ms.locfileid: "62546672"
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|Category|Microsoft.Globalization|
+|Catégorie|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une opération normalise une chaîne en minuscules.
+Une opération normalise une chaîne en minuscules.
 
 ## <a name="rule-description"></a>Description de la règle
- Les chaînes doivent être normalisées en majuscules. Un petit groupe de caractères, lorsqu’ils sont convertis en minuscules, ne peut pas faire un aller-retour. Pour faire un aller-retour signifie convertir les caractères à partir des paramètres régionaux pour les autres paramètres régionaux qui représente des données caractères différemment, puis à précisément récupérer les caractères d’origine à partir des caractères convertis.
+Les chaînes doivent être normalisées en majuscules. Un petit groupe de caractères, lorsqu’ils sont convertis en minuscules, ne peut pas faire l’objet d’un aller-retour. Pour effectuer un aller-retour, vous pouvez convertir les caractères d’un paramètre régional en un autre paramètre régional qui représente les données de caractères différemment, puis récupérer avec précision les caractères d’origine à partir des caractères convertis.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Modifiez les opérations qui convertissent des chaînes en minuscules afin que les chaînes sont converties en majuscules à la place. Par exemple, remplacez `String.ToLower(CultureInfo.InvariantCulture)` par `String.ToUpper(CultureInfo.InvariantCulture)`.
+Les opérations de modification qui convertissent les chaînes en minuscules afin que les chaînes soient converties en majuscules. Par exemple, remplacez `String.ToLower(CultureInfo.InvariantCulture)` par `String.ToUpper(CultureInfo.InvariantCulture)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un message d’avertissement lorsque vous n’effectuez pas de décision de sécurité en fonction du résultat (par exemple, lorsque vous l’affichez dans l’interface utilisateur) sans.
+Il est possible de supprimer sans risque un message d’avertissement lorsque vous ne faites pas de décision de sécurité basée sur le résultat (par exemple, quand vous l’affichez dans l’interface utilisateur).
 
 ## <a name="see-also"></a>Voir aussi
- [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
+[Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)

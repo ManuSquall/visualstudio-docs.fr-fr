@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 894437626b7fb4ecfb1e363bb106102272ea6f65
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847659"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68147626"
 ---
 Microsoft Test Manager

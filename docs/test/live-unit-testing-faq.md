@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953671"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662021"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes (FAQ) sur Live Unit Testing
 
@@ -33,7 +33,7 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 |Framework de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |NUnit3TestAdapter version 3.5.1 |NUnit version 3.5.0 |
+|NUnit |NUnit3TestAdapter version 3.7.0 |NUnit version 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, faites une mise à niveau vers Visual Studio 2017 version 15.4 ou ultérieure.
@@ -139,7 +139,7 @@ Il existe plusieurs différences :
 
 - Live Unit Testing ne crée pas de nouveau domaine d’application pour exécuter des tests, contrairement aux tests exécutés à partir de la fenêtre **Explorateur de tests**.
 
-- Live Unit Testing exécute des tests dans chaque assembly de test de façon séquentielle. Si vous exécutez plusieurs tests à partir de la fenêtre **Explorateur de tests** et que vous avez sélectionné le bouton **Exécuter les tests en parallèle**, ces tests s’exécuteront en parallèle.
+- Live Unit Testing exécute les tests de façon séquentielle dans chaque assembly de test. Dans la fenêtre **Explorateur de tests**, vous pouvez choisir d’exécuter plusieurs tests en parallèle.
 
 - La découverte et l’exécution de tests dans Live Unit Testing utilisent la version 2 de `TestPlatform`, tandis que la fenêtre **Explorateur de tests** utilise la version 1. Toutefois, dans la plupart des cas, vous ne devriez remarquer aucune différence.
 
@@ -197,15 +197,6 @@ Les tests qui reposent sur ces valeurs peuvent échouer lorsqu’ils sont exécu
 Votre solution peut être générée même si vous n’apportez pas de modifications, si le processus de génération de votre solution génère un code source qui fait partie de la solution elle-même, et si les fichiers cibles de la build n’ont ni les entrées appropriées ni les sorties spécifiées. Les cibles doivent disposer d’une liste d’entrées et de sorties afin que MSBuild puisse effectuer les contrôles à jour appropriés et déterminer si une nouvelle build est requise.
 
 Live Unit Testing démarre une build chaque fois qu’il détecte une modification des fichiers sources. Étant donné que la génération de votre solution génère des fichiers sources, Live Unit Testing obtient une boucle de génération infinie. Si, toutefois, les entrées et sorties de la cible sont vérifiées lorsque Live Unit Testing démarre la deuxième génération (après la détection des fichiers sources qui viennent d’être générés à partir de la build précédente), il quittera la boucle de génération puisque les vérifications des entrées et des sorties indiquent que tout est à jour.  
-
-## <a name="lightweight-solution-load"></a>Chargement de solution allégé
-
-**Comment fonctionne Live Unit Testing avec le chargement de solution allégé ?**
-
-Actuellement, Live Unit Testing ne fonctionne pas correctement avec la fonctionnalité de chargement de solution allégé. Son fonctionnement n’est normal qu’après le chargement d’au moins un des projets de test. Il ne peut pas en être autrement, car Live Unit Testing dépend au moins d’un des projets de test référençant un adaptateur de test (MSTest, xUnit ou NUnit) en cours de chargement.
-
-> [!NOTE]
-> Le chargement de solution allégé n’est plus disponible dans la version 15.5 et les versions ultérieures de Visual Studio 2017, dans lesquelles les solutions volumineuses qui contiennent du code managé se chargent beaucoup plus vite qu’avant, même sans utiliser le chargement de solution allégé.
 
 ## <a name="new-process-coverage"></a>Nouvelle couverture de processus
 

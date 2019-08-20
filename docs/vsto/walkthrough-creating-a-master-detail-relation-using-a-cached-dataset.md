@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache'
+title: Créer une relation maître/détail à l’aide du jeu de données mises en cache
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438551"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328364"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache
   Cette procédure pas à pas montre comment créer une relation maître/détail sur une feuille de calcul et la mise en cache les données afin que la solution puisse être utilisée hors connexion.
@@ -177,7 +177,7 @@ ms.locfileid: "63438551"
 
 5. Désactiver la connexion à la base de données. Débranchez le câble réseau de votre ordinateur si la base de données se trouve sur un serveur, ou arrêter le service SQL Server si la base de données se trouve sur votre ordinateur de développement.
 
-6. Ouvrez Excel, puis ouvrez **mes Master-Detail.xlsx** à partir de la *\bin* répertoire (*\My Master-Detail\bin* en Visual Basic ou *\My Master-Detail\bin\ déboguer* en c#).
+6. Ouvrez Excel, puis ouvrez **mes Master-Detail.xlsx** à partir de la *\bin* répertoire ( *\My Master-Detail\bin* en Visual Basic ou *\My Master-Detail\bin\ déboguer* en c#).
 
 7. Faire défiler des enregistrements pour vérifier que la feuille de calcul fonctionne normalement déconnecté.
 

@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197085"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erreur : Une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Cette erreur se produit lorsque le service IIS Admin ne répond pas. Il s'agit g
   
 - Réinstallez IIS, à l’aide de l’application **Ajout/Suppression de programmes** du Panneau de configuration.  
   
-- - ou -  
+- ou  
   
 - Supprimez IIS de votre ordinateur, à l’aide de l’application Ajout/Suppression de programmes du Panneau de configuration. Si vous avez supprimé IIS et que les problèmes persistent, examinez le Registre et assurez-vous que cette clé n'existe plus :  
   
@@ -42,7 +42,7 @@ Cette erreur se produit lorsque le service IIS Admin ne répond pas. Il s'agit g
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
     ```  
   
-     - ou -  
+     ou  
   
 - Désactivez le service de l'administration IIS, à l'aide du panneau de configuration Outils d'administration. Cela permet de désactiver IIS sur votre ordinateur.  
   

@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698772"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824193"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
 - [Générer une application pour Android, iOS et Windows (.NET Framework)](#NET)
 
-    - [Cibler Android, iOS et Windows à partir d’une seule base de code](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Cibler Android, iOS et Windows à partir d’une seule base de code](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Cibler les appareils Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Cibler les appareils Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Générer une application pour Android, iOS et Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |[En savoir plus sur l’émulateur Visual Studio pour Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Cibler Android, iOS et Windows à partir d’une seule base de code
- Vous pouvez générer des applications natives pour Android, iOS et Windows en C# ou F# (Visual Basic n’est pas pris en charge pour le moment).  Pour commencer, installez Visual Studio 2015. Dans le programme d’installation, sélectionnez l’option **Personnalisé**, puis cochez la case sous **Développement multiplateforme pour appareils mobiles > C#/.NET (Xamarin)**. Vous pouvez également démarrer le [Programme d’installation Xamarin](https://www.xamarin.com/download), qui permet d’installer Xamarin pour Visual Studio 2013.
+ Vous pouvez générer des applications natives pour Android, iOS et Windows en C# ou F# (Visual Basic n’est pas pris en charge pour le moment).  Pour commencer, installez Visual Studio 2015. Dans le programme d’installation, sélectionnez l’option **Personnalisé**, puis cochez la case sous **Développement multiplateforme pour appareils mobiles > C#/.NET (Xamarin)** . Vous pouvez également démarrer le [Programme d’installation Xamarin](https://www.xamarin.com/download), qui permet d’installer Xamarin pour Visual Studio 2013.
 
  Si Visual Studio 2015 est déjà installé, exécutez le programme d’installation à partir de **Panneau de configuration > Programmes et fonctionnalités**, puis sélectionnez la même option **Personnalisé** pour Xamarin, comme indiqué ci-dessus.
 

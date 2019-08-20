@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344462"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681097"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Décrit un frame de pile.
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Membres
 `m_dwValidFields`\
-Une combinaison d’indicateurs de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie quels champs sont renseignés.
+Combinaison d’indicateurs de l’énumération [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) qui spécifie les champs à renseigner.
 
 `m_bstrFuncName`\
-Le nom de fonction associé au frame de pile.
+Nom de fonction associé au frame de pile.
 
 `m_bstrReturnType`\
-Le type de retour associé au frame de pile.
+Type de retour associé au frame de pile.
 
 `m_bstrArgs`\
-Arguments à la fonction associée le frame de pile.
+Arguments de la fonction associée au frame de pile.
 
 `m_bstrLanguage`\
-Le langage dans lequel la fonction est implémentée.
+Langage dans lequel la fonction est implémentée.
 
 `m_bstrModule`\
-Le nom du module associé au frame de pile.
+Nom du module associé au frame de pile.
 
 `m_addrMin`\
-L’adresse physique minimale de la pile.
+Adresse de pile physique minimale.
 
 `m_addrMAX`\
-L’adresse de la pile physique maximale.
+Adresse physique maximale de la pile.
 
 `m_pFrame`\
-Le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente ce frame de pile.
+Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente ce frame de pile.
 
-`m_pFrame`\
-Le [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objet qui représente le module qui contient ce frame de pile.
-
-`m_fHasDebugInfo`\
-Valeur différente de zéro (`TRUE`) si les informations de débogage existent dans le frame donné.
+`m_pModule`\
+Objet [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) qui représente le module qui contient ce frame de pile.
 
 `m_fHasDebugInfo`\
-Valeur différente de zéro (`TRUE`) si le frame de pile est associé au code qui n’est plus valide.
+Valeur différente de zéro`TRUE`() si les informations de débogage existent dans le frame donné.
 
-`m_fHasDebugInfo`\
-Valeur différente de zéro (`TRUE`) si le frame de pile est annoté par le Gestionnaire de session de débogage (SDM).
+`m_fStaleCode`\
+Valeur différente de zéro`TRUE`() si le frame de pile est associé à du code qui n’est plus valide.
+
+`m_fAnnotatedFrame`\
+Différent de zéro (`TRUE`) si le frame de pile est annoté par le gestionnaire de débogage de session (SDM).
 
 ## <a name="remarks"></a>Notes
-Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) méthode doit être renseigné. Cette structure est également contenue dans une liste qui est contenue dans le [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface qui, à son tour, est retourné à partir d’un appel à la [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).
+Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) à remplir. Cette structure est également contenue dans une liste contenue dans l’interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui, à son tour, est retournée à partir d’un appel à la méthode [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Configuration requise
-En-tête : msdbg.h
+En-tête: msdbg. h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop
 

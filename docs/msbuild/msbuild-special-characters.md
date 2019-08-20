@@ -1,6 +1,6 @@
 ---
 title: Caractères spéciaux MSBuild │ Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7af1f137624c0af1fce02fde524d7fb4178cbad
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65084054"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195062"
 ---
 # <a name="msbuild-special-characters"></a>Caractères spéciaux MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] réserve certains caractères à une utilisation précise dans certains contextes. Pour les utiliser littéralement dans le contexte où ils sont réservés, il vous suffit de les placer dans une séquence d’échappement. Par exemple, un astérisque n’a une signification spéciale que dans les attributs `Include` et `Exclude` d’une définition d’élément, et dans les appels à `CreateItem`. Si vous souhaitez qu’un astérisque apparaisse comme un astérisque dans l’un de ces contextes, vous devez le placer dans une séquence d’échappement. Dans tous les autres contextes, tapez simplement l’astérisque là où vous souhaitez qu’il apparaisse.
@@ -32,7 +32,7 @@ ms.locfileid: "65084054"
 |%|%25|Référencement des métadonnées|
 |$|%24|Référencement des propriétés|
 |@|%40|Référencement des listes d’éléments|
-|&#96;|%27|Conditions et autres expressions|
+|'|%27|Conditions et autres expressions|
 |;|%3B|Séparateur de liste|
 |?|%3F|Caractère générique pour les noms de fichiers des attributs `Include` et `Exclude`|
 |*|%2A|Caractère générique pour les noms de fichiers des attributs `Include` et `Exclude`|

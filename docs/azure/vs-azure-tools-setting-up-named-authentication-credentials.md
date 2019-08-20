@@ -4,8 +4,6 @@ description: Découvrez comment fournir des informations d’identification que 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les ins
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Vue d’ensemble de Web Apps](https://docs.microsoft.com/azure/app-service/)
-- [Déploiement de votre application dans Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Déploiement de votre application dans Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Déployer WebJobs avec Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Création et déploiement d’un service cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

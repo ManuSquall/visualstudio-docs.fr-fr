@@ -1,27 +1,22 @@
 ---
 title: Améliorez aujourd’hui vos compétences en matière de science des données avec l’avantage DataCamp dans les abonnements Visual Studio sélectionnés. | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948072"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681640"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
-
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
 
-La durée de votre avantage DataCamp dépend du type de votre abonnement Visual Studio.
-
 ## <a name="activation-steps"></a>Étapes d’activation
-
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage DataCamp dans la catégorie « Développement professionnel », puis cliquez sur **Activer**.
@@ -29,9 +24,7 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
    > ![Vignette de l’avantage DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Dans la page DataCamp, vous pouvez créer un compte.  Vous pouvez choisir d’entrer une adresse e-mail et un mot de passe, ou de vous connecter avec des comptes Facebook, LinkedIn ou Google existants.  Une fois que vous avez fourni vos informations de connexion, cliquez sur **Get Started** (Démarrer).
-   > [!div class="mx-imgBorder"]
-   > ![DataCamp : Créer un compte](_img/vs-datacamp/vs-datacamp-create-account.png)
-   >
+
    > [!NOTE]
    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
@@ -63,14 +56,12 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 > ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Éligibilité
-
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Dev Essentials | N/A  | 2 mois | Non. Disponible pour les nouveaux abonnés uniquement |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
@@ -83,8 +74,14 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
-    - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
-    - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
-    - [Soumettre une demande de support](https://support.datacamp.com/hc/requests/new)
+  - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
+  - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
+  - [Soumettre une demande de support](https://support.datacamp.com/hc/requests/new)
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+Découvrez d’autres opportunités de développement professionnel dans votre abonnement :
+- [Pluralsight](vs-pluralsight.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)
+- [MSDN Magazine](vs-msdn.md)

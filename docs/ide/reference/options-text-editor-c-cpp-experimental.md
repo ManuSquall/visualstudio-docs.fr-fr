@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817921"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461382"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 
@@ -28,7 +28,7 @@ Cet article décrit les options disponibles dans Visual Studio 2017. Pour Visua
 
 ::: moniker-end
 
-Pour accéder à cette page de propriétés, appuyez sur **Ctrl**+**Q** afin d’activer la zone de recherche, puis tapez **expérimental**. La recherche trouve la page dès les premières lettres saisies. Vous pouvez également y accéder en choisissant **Outils** > **Options** et en développant **Éditeur de texte** et **C/C++**, puis en choisissant **Expérimental**.
+Pour accéder à cette page de propriétés, appuyez sur **Ctrl**+**Q** afin d’activer la zone de recherche, puis tapez **expérimental**. La recherche trouve la page dès les premières lettres saisies. Vous pouvez également y accéder en choisissant **Outils** > **Options** et en développant **Éditeur de texte** et **C/C++** , puis en choisissant **Expérimental**.
 
 Ces fonctionnalités sont disponibles dans une installation de Visual Studio.
 
@@ -43,7 +43,7 @@ La fonctionnalité IntelliSense prédictive limite le nombre de résultats affic
 
 ## <a name="enable-faster-project-load"></a>Activer le chargement accéléré de projet
 
-À compter de Visual Studio 2017 version 15.3, cette fonctionnalité est appelée [Activer la mise en cache du projet](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) et a été déplacée dans la page de propriétés **Paramètres de projet VC++**.
+À compter de Visual Studio 2017 version 15.3, cette fonctionnalité est appelée [Activer la mise en cache du projet](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) et a été déplacée dans la page de propriétés **Paramètres de projet VC++** .
 
 Cette option permet à Visual Studio de mettre en cache des données de projet pour que, lors de la prochaine ouverture du projet, il puisse charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.
 

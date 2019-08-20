@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806665"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920191"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223 : Les membres ne doivent pas différer uniquement par leur type de retour
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806665"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Deux membres publics ou protégés ont des signatures qui sont identiques à l’exception du type de retour.
+Deux membres publics ou protégés ont des signatures identiques, à l’exception du type de retour.
 
 ## <a name="rule-description"></a>Description de la règle
- Bien que le common language runtime autorise l’utilisation de types de retour pour différencier des membres autrement identiques, cette fonctionnalité n’est pas dans le Common Language Specification, et il est une fonctionnalité courante des langages de programmation .NET. Lorsque les membres diffèrent uniquement par le type de retour, les développeurs et les outils de développement ne peuvent pas distinguer correctement.
+Bien que le common language runtime autorise l’utilisation de types de retour pour différencier des membres autrement identiques, cette fonctionnalité n’est pas dans le Common Language Specification et n’est pas non plus une fonctionnalité courante des langages de programmation .NET. Lorsque les membres diffèrent uniquement par le type de retour, les développeurs et les outils de développement peuvent ne pas faire de distinction correcte entre eux.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifier la conception des membres afin qu’ils reposent uniquement sur leurs noms et types de paramètre, ou n’exposent pas les membres.
+Pour corriger une violation de cette règle, modifiez la conception des membres afin qu’ils soient uniques uniquement en fonction de leurs noms et types de paramètres, ou n’exposez pas les membres.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant, en langage intermédiaire Microsoft (MSIL), illustre un type qui enfreint cette règle. Notez que cette règle ne peut pas être enfreinte en utilisant c# ou Visual Basic.
+L’exemple suivant, en langage MSIL (Microsoft Intermediate Language), affiche un type qui viole cette règle. Notez que cette règle ne peut pas être violée C# à l’aide de ou Visual Basic.
 
 ```
 .namespace UsageLibrary

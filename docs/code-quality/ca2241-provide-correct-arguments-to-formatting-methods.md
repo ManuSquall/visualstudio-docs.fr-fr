@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541465"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920001"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241 : Indiquer le nombre correct d'arguments dans les méthodes de mise en forme
 
@@ -31,23 +31,23 @@ ms.locfileid: "62541465"
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Le `format` chaîne argument passé à une méthode telle que <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, ou <xref:System.String.Format%2A?displayProperty=fullName> ne contient pas un élément de format qui correspond à chaque argument d’objet, ou vice versa.
+L' `format` argument de chaîne passé à une méthode telle <xref:System.Console.WriteLine%2A>que <xref:System.Console.Write%2A>, ou <xref:System.String.Format%2A?displayProperty=fullName> ne contient pas d’élément de mise en forme qui correspond à chaque argument d’objet, ou vice versa.
 
 ## <a name="rule-description"></a>Description de la règle
- Les arguments de méthodes telles que <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, et <xref:System.String.Format%2A> se composent d’une chaîne de format suivie par plusieurs <xref:System.Object?displayProperty=fullName> instances. La chaîne de format se compose de texte et d’éléments de format incorporé du formulaire, {index [, alignment] [ : formatString]}. « index » est un entier de base zéro qui indique les objets à mettre en forme. Si un objet n’a pas d’un index correspondant dans la chaîne de format, l’objet est ignoré. Si l’objet spécifié par « index » n’existe pas, un <xref:System.FormatException?displayProperty=fullName> est levée lors de l’exécution.
+Les arguments des méthodes telles que <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>et <xref:System.String.Format%2A> se composent d’une chaîne de format <xref:System.Object?displayProperty=fullName> suivie de plusieurs instances. La chaîne de format se compose de texte et d’éléments de mise en forme incorporés sous la forme {index [, Alignment] [: formatString]}. 'index’est un entier de base zéro qui indique les objets à mettre en forme. Si un objet n’a pas d’index correspondant dans la chaîne de format, l’objet est ignoré. Si l’objet spécifié par’index’n’existe pas, une <xref:System.FormatException?displayProperty=fullName> exception est levée au moment de l’exécution.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, fournissez un élément de format pour chaque argument d’objet et fournir un argument d’objet pour chaque élément de format.
+Pour corriger une violation de cette règle, fournissez un élément de mise en forme pour chaque argument d’objet et fournissez un argument d’objet pour chaque élément de mise en forme.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- L’exemple suivant montre deux violations de la règle.
+## <a name="example"></a>Exemples
+L’exemple suivant montre deux violations de la règle.
 
- [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
- [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]
+[!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
+[!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

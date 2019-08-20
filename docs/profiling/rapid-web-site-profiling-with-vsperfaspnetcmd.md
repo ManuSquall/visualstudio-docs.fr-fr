@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431975"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681132"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage rapide de sites web avec VSPerfASPNETCmd
 
@@ -41,6 +41,8 @@ Pour profiler une application web [!INCLUDE[vstecasp](../code-quality/includes/v
 
  **vsperfaspnetcmd**  *URL_site_web*
 
+ Voici un exemple de *websiteUrl* hébergé sur un serveur local : *http://localhost/MySite/default.aspx* . Voici un exemple de site externe : *http://www.contoso.com* . Pour plus d’informations, consultez les exemples d’URL dans [Pour profiler un site web sans ouvrir un projet dans Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Pour collecter les données de minutage détaillées en utilisant la méthode d’instrumentation
 
 Utilisez la ligne de commande suivante pour collecter les données chronologique détaillées pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement :
@@ -61,14 +63,14 @@ L’option **mémoire/mémoire** collecte les données relatives à l’allocati
 
  Vous pouvez également utiliser l’option **/Trace** pour inclure les informations de minutage détaillées avec les données de mémoire .NET :
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Pour collecter les données d’interaction de couche
 
 > [!WARNING]
 > Pour collecter des données de profilage d’interaction de couche (TIP), vous pouvez utiliser n’importe quelle édition de Visual Studio. Cependant, ces données ne sont consultables que dans Visual Studio Enterprise.
 >
-> Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).
+> Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation ( **/trace**).
 
 Pour collecter les données d’interaction de couche avec les données d’échantillonnage :
 
@@ -80,7 +82,7 @@ Pour collecter les données d’interaction de couche avec les données d’inst
 
 Pour collecter les données d’interaction de couche avec les données de mémoire .NET :
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_URL_site_web_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_URL_site_web_
 
 ## <a name="use-the-nowait-option"></a>Utiliser l’option /NoWait
 
@@ -88,7 +90,7 @@ Par défaut, l’invite de commandes ne réapparaît pas après une commande **v
 
 Pour démarrer le profilage :
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_URL_site_web_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_URL_site_web_
 
 Pour terminer le profilage :
 

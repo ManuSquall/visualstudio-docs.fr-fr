@@ -1,18 +1,17 @@
 ---
 title: Avantage Visual Studio App Center dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810842"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787824"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -46,7 +45,7 @@ La mise en route de Visual Studio App Center est simple.
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
-| Visual Studio Dev Essentials | NA  | Included                                                            |Oui |
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director).*
 
@@ -67,7 +66,10 @@ Vous devriez à présent être en mesure d’accéder au portail App Center et d
 
 ## <a name="support-resources"></a>Ressources de support technique
 - Besoin d’aide avec App Center ?
-    - Pour obtenir des conseils et des réponses de l’équipe d’App Center, accédez au centre d’aide [App Center Help Center](https://intercom.help/appcenter/).
-    - Consultez la [documentation complète sur App Center](/appcenter/).
+  - Pour obtenir des conseils et des réponses de l’équipe d’App Center, accédez au centre d’aide [App Center Help Center](https://intercom.help/appcenter/).
+  - Consultez la [documentation complète sur App Center](/appcenter/).
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+Azure est votre bac à sable personnel pour le développement et le test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure. Si vous ne l’avez pas déjà fait, activez votre [avantage Azure](vs-azure.md). 

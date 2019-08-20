@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161383"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avertissement : le débogage de script est désactivé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Le débogage de script est actuellement désactivé dans Internet Explorer
   
 3. Sous l’onglet **Avancé**, consultez la zone **Paramètres**, catégorie **Navigation**.  
   
-4. Désactivez la case à cocher **Désactiver le débogage des scripts (Internet Explorer)**.  
+4. Désactivez la case à cocher **Désactiver le débogage des scripts (Internet Explorer)** .  
   
 5. Cliquez sur **OK**.  
   
@@ -47,4 +47,4 @@ Le débogage de script est actuellement désactivé dans Internet Explorer
      Les nouveaux paramètres sont désormais appliqués.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour attacher à un script](../debugger/how-to-attach-to-script.md)
+ [Guide pratique : attacher à un script](../debugger/how-to-attach-to-script.md)

@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896894"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822394"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
-Visual Studio intègre une fenêtre REPL (read-evaluate-print loop) interactive pour chacun de vos environnements Python, ce qui permet d’améliorer le REPL obtenu avec *python.exe* sur la ligne de commande. La fenêtre **Interactive** (ouverte avec les commandes de menu **Affichage** > **Autres fenêtres** > **&lt;environnement&gt; Interactif**) vous permet d’entrer du code Python arbitraire et de voir immédiatement les résultats. Ce mode de codage vous aide à étudier et à tester des API et des bibliothèques, mais aussi à développer de manière interactive du code opérationnel à inclure dans vos projets.
+Visual Studio intègre une fenêtre REPL (read-evaluate-print loop) interactive pour chacun de vos environnements Python, ce qui permet d’améliorer le REPL obtenu avec *python.exe* sur la ligne de commande. La fenêtre **Interactive** (ouverte avec les commandes de menu **Affichage** > **Autres fenêtres** >  **&lt;environnement&gt; Interactif**) vous permet d’entrer du code Python arbitraire et de voir immédiatement les résultats. Ce mode de codage vous aide à étudier et à tester des API et des bibliothèques, mais aussi à développer de manière interactive du code opérationnel à inclure dans vos projets.
 
 ![Fenêtre interactive Python](media/interactive-window.png)
 
@@ -40,7 +40,7 @@ Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment 
 
 Il existe plusieurs manières d’ouvrir la fenêtre **Interactive** pour un environnement.
 
-En premier lieu, passez à la fenêtre Environnements Python (**Affichage** > **Autres fenêtres** > **Environnements Python** ou **Ctrl**+**K** > **Ctrl**+**`**), puis sélectionnez la commande ou le bouton **Ouvrir une fenêtre interactive** pour l’environnement choisi.
+En premier lieu, passez à la fenêtre Environnements Python (**Affichage** > **Autres fenêtres** > **Environnements Python** ou **Ctrl**+**K** > **Ctrl**+ **`** ), puis sélectionnez la commande ou le bouton **Ouvrir une fenêtre interactive** pour l’environnement choisi.
 
 ![Lien vers la fenêtre interactive dans la fenêtre des environnements Python](media/interactive-window-opening.png)
 
@@ -62,7 +62,7 @@ Vous pouvez contrôler différents aspects de la fenêtre **Interactive** via **
 
 ## <a name="use-the-interactive-window"></a>Utiliser la fenêtre interactive
 
-Une fois que la fenêtre **Interactive** est ouverte, vous pouvez commencer à entrer du code ligne par ligne, à l’invite **\>\>\>**. La fenêtre **Interactive** exécute chaque ligne que vous entrez, ce qui inclut l’importation de modules, la définition de variables, etc. :
+Une fois que la fenêtre **Interactive** est ouverte, vous pouvez commencer à entrer du code ligne par ligne, à l’invite **\>\>\>** . La fenêtre **Interactive** exécute chaque ligne que vous entrez, ce qui inclut l’importation de modules, la définition de variables, etc. :
 
 ![Fenêtre interactive Python](media/interactive-window.png)
 
@@ -111,7 +111,11 @@ Cette commande est utile dans le cadre du développement de code itératif ou é
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Quand vous utilisez un fichier de code comme bloc-notes, vous avez souvent un petit bloc de code que vous souhaitez envoyer en une seule fois. Pour regrouper le code, marquez-le comme *cellule de code* en ajoutant un commentaire commençant par `#%%` au début de la cellule, ce qui met fin à la précédente. Les cellules de code peuvent être développées et réduites. L’utilisation de **Ctrl**+**Entrée** à l’intérieur d’une cellule de code permet d’envoyer l’intégralité de la cellule dans la fenêtre **Interactive** et de passer à la suivante.
+## <a name="work-with-code-cells"></a>Utiliser les cellules de code
+
+Vous pouvez utiliser les cellules de code dans l’analyse de données. Elles sont prises en charge par divers éditeurs de texte.
+
+Par exemple, quand vous utilisez un fichier de code en tant que bloc-notes, vous avez souvent un petit bloc de code que vous souhaitez envoyer en une seule fois. Pour regrouper le code, marquez-le comme *cellule de code* en ajoutant un commentaire commençant par `#%%` au début de la cellule, ce qui met fin à la précédente. Les cellules de code peuvent être développées et réduites. L’utilisation de **Ctrl**+**Entrée** à l’intérieur d’une cellule de code permet d’envoyer l’intégralité de la cellule dans la fenêtre **Interactive** et de passer à la suivante.
 
 Visual Studio détecte également les cellules de code commençant par des commentaires du type `# In[1]:`, qui est le format que vous obtenez lors de l’exportation d’un bloc-notes Jupyter sous forme de fichier Python. Cette détection facilite l’exécution d’un bloc-notes à partir d’[Azure Notebooks](https://notebooks.azure.com/) en le téléchargeant sous la forme d’un fichier Python, en l’ouvrant dans Visual Studio et en utilisant **Ctrl**+**Entrée** pour exécuter chaque cellule.
 

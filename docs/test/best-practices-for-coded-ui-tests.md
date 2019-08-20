@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822974"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870201"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bonnes pratiques pour les tests codés de l’interface utilisateur
 
@@ -42,11 +42,11 @@ Utilisez les instructions suivantes pour créer un test codé de l'interface uti
 
 - Si l'interface utilisateur change, réenregistrez les méthodes de test ou les méthodes d'assertion, ou bien réenregistrez les sections affectées d'une méthode de test existante.
 
-- Créez un fichier <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> distinct pour chaque module de votre application testée. Pour plus d’informations, consultez [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Créez un fichier [UIMap](/previous-versions/dd580454(v=vs.140)) distinct pour chaque module de votre application testée. Pour plus d’informations, consultez [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - Dans l'application testée, utilisez des noms significatifs quand vous créez les contrôles d'interface utilisateur. L’utilisation de noms significatifs apporte plus de clarté et de simplicité aux noms de contrôles générés automatiquement.
 
-- Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier *UIMap.cs*. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
+- Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans le cadre de la classe [UIMap](/previous-versions/dd580454(v=vs.140)) qui se trouve dans le fichier *UIMap.cs*. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
 
 - Si vous codez directement avec l’API, utilisez les propriétés et méthodes dans les classes générées dans le fichier *UIMap.Designer.cs* de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.
 
@@ -62,11 +62,11 @@ Les interfaces utilisateur changent souvent au cours du développement. Voici qu
 
 - Si un contrôle a une assertion qui n'est plus valide :
 
-    - Supprimez la méthode qui contient l'assertion.
+  - Supprimez la méthode qui contient l'assertion.
 
-    - Supprimez l'appel à cette méthode depuis la méthode de test.
+  - Supprimez l'appel à cette méthode depuis la méthode de test.
 
-    - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
+  - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
 
 Pour plus d’informations sur la manière d’enregistrer des tests codés de l’interface utilisateur, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>Voir aussi
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)

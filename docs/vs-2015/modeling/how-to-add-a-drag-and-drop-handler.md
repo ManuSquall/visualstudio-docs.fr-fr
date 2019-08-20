@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690548"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825393"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à
   
 - Les deux première sections décrivent les autres méthodes pour définir un gestionnaire de mouvements :  
   
-    - [Définition des gestionnaires de mouvements en remplaçant les méthodes ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` et autres méthodes peuvent être remplacées.  
-  
-    - [Définition des gestionnaires de mouvements à l’aide de MEF](#MEF). Utilisez cette méthode si vous souhaitez que les développeurs tiers puissent définir leurs propres gestionnaires sur votre DSL. Les utilisateurs peuvent choisir d'installer les extensions tierces après avoir installé votre DSL.  
+  - [Définition des gestionnaires de mouvements en remplaçant les méthodes ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` et autres méthodes peuvent être remplacées.  
+
+  - [Définition des gestionnaires de mouvements à l’aide de MEF](#MEF). Utilisez cette méthode si vous souhaitez que les développeurs tiers puissent définir leurs propres gestionnaires sur votre DSL. Les utilisateurs peuvent choisir d'installer les extensions tierces après avoir installé votre DSL.  
   
 - [Comment décoder l’élément déplacé](#extracting). Les éléments peuvent être déplacés à partir de n'importe quelle fenêtre, du Bureau ou d'un DSL.  
   
@@ -84,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Cette méthode est appelée lorsque l'utilisateur double-clique sur la forme ou le diagramme.  
   
-   Pour plus d'informations, voir [Procédure : Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Pour plus d’informations, consultez [Guide pratique pour Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour savoir comment procéder, consultez [comment obtenir une référence à l’élément déplacé](#extracting).  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() – Répertorie les formats dans lesquels vous pouvez décoder l'objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).  
   
-  - `diagramEventArgs.Data.GetData(format)` – Décode l'objet déplacé au format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :  
+  - `diagramEventArgs.Data.GetData(format)` – Décode l'objet déplacé au format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   

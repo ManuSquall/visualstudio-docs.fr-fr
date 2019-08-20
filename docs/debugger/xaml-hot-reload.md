@@ -1,8 +1,7 @@
 ---
-title: Écrire et déboguer le XAML à l’aide de rechargement à chaud de XAML
-description: Recharger à chaud de XAML ou XAML modifier et continuer, vous permet d’apporter des modifications à votre code XAML pendant l’exécution des applications
-ms.custom: ''
-ms.date: 02/28/2019
+title: Écrire et déboguer du code XAML à l’aide du rechargement à chaud XAML
+description: Le rechargement à chaud XAML, ou modifier & Continuer XAML, vous permet d’apporter des modifications à votre code XAML pendant l’exécution des applications
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,49 +11,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929129"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870998"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le recharger à chaud de XAML dans Visual Studio
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
-XAML de Visual Studio à chaud recharger vous permet de créer votre interface utilisateur des applications WPF ou UWP en vous permettant d’apporter des modifications au code XAML pendant l’exécution de votre application. Cette fonctionnalité vous permet de façon incrémentielle générer et tester le code XAML avec l’avantage de contexte de données de l’application en cours d’exécution, l’état de l’authentification et autres complexité réelle qui est difficile à simuler au moment du design.
+Le rechargement à chaud XAML vous permet de générer votre interface utilisateur de l’application WPF ou UWP en vous permettant d’apporter des modifications au code XAML pendant que votre application est en cours d’exécution. Le rechargement à chaud est disponible à la fois dans Visual Studio et Blend pour Visual Studio. Cette fonctionnalité vous permet de générer et de tester de façon incrémentielle du code XAML avec l’avantage du contexte de données de l’application en cours d’exécution, de l’état d’authentification et d’autres complexités réalistes qui sont difficiles à simuler au moment du Design.
 
-Recharger à chaud XAML est particulièrement utile dans ces scénarios :
+Le rechargement à chaud XAML est particulièrement utile dans les scénarios suivants:
 
-* Résolution des problèmes de l’interface utilisateur trouvés dans votre code XAML, une fois que l’application a été démarrée en mode débogage.
+* Résolution des problèmes d’interface utilisateur détectés dans votre code XAML après le démarrage de l’application en mode débogage.
 
-* La création d’un nouveau composant de l’interface utilisateur pour une application est en cours de développement, tout en tirant parti de votre application contexte d’exécution.
+* Génération d’un nouveau composant d’interface utilisateur pour une application en cours de développement, tout en tirant parti du contexte d’exécution de votre application.
 
 |Types d’applications pris en charge|Système d'exploitation et outils|
 |-|-|-|
 |Windows Presentation Foundation (WPF) |.NET Framework 4.6+</br>Windows 7 et versions ultérieures |
-|Applications Windows universelle (UWP)|Windows 10 et versions ultérieures, avec le [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
+|Applications Windows universelles (UWP)|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Rechargement de chaud Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio avec le débogueur attaché (**F5** ou **démarrer le débogage**). Vous ne pouvez pas activer cette expérience à l’aide de *attacher au processus*.
+> Le rechargement à chaud de Visual Studio XAML est actuellement pris en charge uniquement lors de l’exécution de votre application dans Visual Studio ou Blend pour Visual Studio avec le débogueur attaché (**F5** ou **Démarrer**le débogage). Vous ne pouvez pas activer cette expérience à l’aide de l' [attachement au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-## <a name="known-limitations"></a>Limitations connues
+## <a name="known-limitations"></a>Limites connues
 
-Les éléments suivants sont connus limitations de XAML à chaud recharger. Pour éviter toute limitation que vous rencontrez, simplement arrêter le débogueur, puis terminez l’opération.
+Voici les limitations connues du rechargement à chaud XAML. Pour contourner toute limitation que vous exécutez dans, arrêtez simplement le débogueur, puis terminez l’opération.
 
 |Limitation|WPF|UWP|Notes|
 |-|-|-|-|
-|Connexion des événements aux contrôles pendant l’exécution de l’application|Non prise en charge|Non pris en charge|Consultez l’erreur : *Vérifiez l’événement a échoué*|
-|Création d’objets de ressource dans un dictionnaire de ressources, telles que celles dans la fenêtre de la Page de votre application ou *App.xaml*|Non prise en charge|Prise en charge|Exemple : ajout d’un ```SolidColorBrush``` dans un dictionnaire de ressources pour une utilisation comme un ```StaticResource```.</br>Remarque : Ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqué/utilisé lors de l’utilisation de rechargement à chaud de XAML. Uniquement la création de la ressource n’est pas pris en charge.</br> Modifier le dictionnaire de ressources ```Source``` propriété.| 
-|Ajout de nouveaux contrôles, de classes, de windows ou d’autres fichiers à votre projet pendant l’exécution de l’application|Non prise en charge|Non prise en charge|Aucun.|
-|La gestion des packages NuGet (Ajout/Suppression/mise à jour des packages)|Non prise en charge|Non prise en charge|Aucun.|
-|Modification de liaison de données qui utilise l’extension de balisage {x : Bind}|N/A|Prise en charge dans Visual Studio 2019 et versions ultérieures|Non pris en charge dans Visual Studio 2018 ou des versions antérieures|
+|Câblage des événements aux contrôles pendant l’exécution de l’application|Non pris en charge|Non pris en charge|Voir l’erreur: *Vérifier l’échec de l’événement*|
+|Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Non pris en charge|Pris en charge|Exemple: ajout d' `SolidColorBrush` un dans un dictionnaire de ressources pour une `StaticResource`utilisation en tant que.</br>Remarque : Les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété `Source` du dictionnaire de ressources.|
+|Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non pris en charge|Non pris en charge|Aucun|
+|Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non pris en charge|Non pris en charge|Aucun|
+|Modification de la liaison de données qui utilise l’extension de balisage {x:Bind}|N/A|Pris en charge dans Visual Studio 2019 et versions ultérieures|Non pris en charge dans Visual Studio 2017 ou versions antérieures|
 
-## <a name="error-messages"></a>Messages d’erreur
+## <a name="error-messages"></a>messages d'erreur
 
-Vous êtes susceptible de rencontrer les erreurs suivantes lors de l’utilisation de rechargement à chaud de XAML.
+Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du rechargement à chaud XAML.
 
-|Message d'erreur|Description|
-|-|-|-|
-|Vérifiez l’événement a échoué|Erreur indique que vous essayez d’associer un événement à un de vos contrôles, ce qui n’est pas pris en charge pendant l’exécution de votre application.|
-|La commande XAML Modifier et continuer n'a trouvé aucun élément à mettre à jour.|Erreur se produit lors de la modification XAML recharger à chaud ne peut pas mettre à jour dans votre application.</br> Cette erreur peut parfois être résolue à l’aide de votre application en cours d’exécution pour accéder à une vue où le XAML est utilisé.</br> Parfois, cette erreur signifie que la modification spécifique ne peut pas être appliquée jusqu'à ce que vous redémarrez la session de débogage. |
-|Ce changement n'est pas pris en charge durant une session de débogage.|Erreur indique que la modification que vous essayez de ne prend pas en charge recharger à chaud de XAML. Arrêter la session de débogage, apporter la modification, puis redémarrez la session de débogage.|
+|Message d’erreur|Description|
+|-|-|
+|Vérifier l’échec de l’événement|L’erreur indique que vous tentez de connecter un événement à l’un de vos contrôles, ce qui n’est pas pris en charge pendant l’exécution de votre application.|
+|La commande XAML Modifier et continuer n'a trouvé aucun élément à mettre à jour.|Une erreur se produit lorsque vous modifiez du code XAML que le rechargement à chaud ne peut pas mettre à jour dans votre application.</br> Cette erreur peut parfois être corrigée à l’aide de votre application en cours d’exécution pour accéder à une vue où le code XAML est utilisé.</br> Parfois, cette erreur signifie que la modification spécifique ne peut pas être appliquée tant que vous n’avez pas redémarré la session de débogage. |
+|Ce changement n'est pas pris en charge durant une session de débogage.|L’erreur indique que la modification que vous tentez d’effectuer n’est pas prise en charge par le rechargement à chaud XAML. Arrêtez la session de débogage, apportez la modification, puis redémarrez la session de débogage.|

@@ -11,14 +11,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969226"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461369"
 ---
 # <a name="project-properties-reference"></a>Référence de propriétés de projet
+
 Découvrez-en plus sur la façon de configurer et personnaliser les propriétés de projet.
 
 ## <a name="project-properties-pages"></a>Pages de propriétés de projet

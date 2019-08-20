@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176679"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à plusieurs projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,14 +49,14 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
   
   Le fichier .vstemplate racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :  
   
-- L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Exemple :  
+- L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Par exemple :  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Exemple :  
+- L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Par exemple :  
   
   ```  
   <TemplateContent>  
@@ -81,15 +81,15 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
   
 1. Créez les projets à inclure dans le modèle à plusieurs projets.  
   
-2. Créez des fichiers .vstemplate pour chacun des projets. Pour plus d'informations, voir [Procédure : Créer des modèles de projet](../ide/how-to-create-project-templates.md).  
+2. Créez des fichiers .vstemplate pour chacun des projets. Pour plus d’informations, consultez [Guide pratique pour Créer des modèles de projet](../ide/how-to-create-project-templates.md).  
   
 3. Créez un fichier .vstemplate racine qui contiendra les métadonnées du modèle à plusieurs projets. Pour plus d’informations, consultez le premier exemple dans la section suivante.  
   
-4. Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé (zippé)**. Les fichiers et dossiers sont compressés dans un fichier .zip.  
+4. Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé (zippé)** . Les fichiers et dossiers sont compressés dans un fichier .zip.  
   
 5. Placez le fichier modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par défaut, ce répertoire est \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple montre un fichier .vstemplate racine de base pour un modèle à plusieurs projets. Dans cet exemple, le modèle contient deux projets, `My Windows Application` et `My Class Library`. L'attribut `ProjectName` de l'élément `ProjectTemplateLink` définit le nom à assigner au projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si l'attribut `ProjectName` n'existe pas, le nom du fichier .vstemplate est utilisé comme nom du projet.  
   
 ```  

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198383"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance, énumération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ enum marker_importance;
 |`low_importance`|Spécifie que le marqueur a une importance basse.|  
 |`normal_importance`|Spécifie que le marqueur a une importance normale.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkersobj.h  
   
  **Espace de noms** : Concurrency::diagnostic  

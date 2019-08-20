@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705903"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825878"
 ---
 # <a name="troubleshooting-code-coverage"></a>Dépannage de la couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Explication  
  L'analyse de la couverture du code est effectuée pendant l'exécution des tests. Elle inclut uniquement les assemblys chargés en mémoire lorsque les tests s'exécutent. Si aucun des tests n'est exécuté, la couverture du code n'a rien a signaler.  
   
- Résolution  
+ Résolution :  
  Dans l’Explorateur de tests, choisissez **Exécuter tout** pour vérifier que l’exécution des tests a réussi. Corrigez toutes les erreurs avant d’utiliser **Analyser la couverture du code**.  
   
 ### <a name="youre-looking-at-a-previous-result"></a>Vous consultez un résultat antérieur  
@@ -58,7 +58,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
   
  Le fichier .pdb doit être généré à partir de la même version que les fichiers .dll ou .exe.  
   
- Résolution  
+ Résolution :  
  Vérifiez que vos paramètres de génération génèrent le fichier .pdb. Si les fichiers .pdb ne sont pas mis à jour quand le projet est généré, ouvrez les propriétés du projet, sélectionnez la page **Générer**, choisissez **Avancé** et examinez **Informations de débogage**.  
   
  Si les fichiers .pdb et .dll ou .exe sont dans des endroits différents, copiez le fichier .pdb dans le même dossier. Il est également possible de configurer le moteur de couverture du code pour rechercher les fichiers .pdb dans un autre emplacement. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).  
@@ -72,7 +72,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
   
  L'analyse de la couverture du code ne peut pas être exécutée sur ce type d'assemblys.  
   
- Résolution  
+ Résolution :  
  Désactivez l'optimisation et utilisez une nouvelle build.  
   
 ### <a name="code-is-not-managed-net-or-native-c-code"></a>Le code n'est pas managé (.NET) ou le code est natif (C++)  
@@ -82,7 +82,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Explication  
  L'analyse de la couverture du code dans Visual Studio est uniquement disponible sur du code managé ou natif (C++). Si vous utilisez des outils tiers, une partie ou la totalité du code peut s'exécuter sur une plateforme différente.  
   
- Résolution  
+ Résolution :  
  Aucune solution n'est disponible.  
   
 ### <a name="assembly-has-been-installed-by-ngen"></a>L'assembly a été installé par NGen  
@@ -92,7 +92,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Explication  
  Pour des raisons de performance, les assemblys d'image natives ne sont pas analysés. Pour plus d’informations, consultez [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
- Résolution  
+ Résolution :  
  Utilisez une version MSIL de l'assembly. Ne pas le traiter avec NGen.  
   
 ### <a name="custom-runsettings-file-with-bad-syntax"></a>Fichier personnalisé .runsettings comportant une syntaxe incorrecte  
@@ -104,7 +104,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Explication  
  Vous pouvez exécuter vos tests unitaires avec un fichier .runsettings personnalisé pour configurer des options de couverture du code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).  
   
- Résolution  
+ Résolution :  
  Il existe deux types d'erreurs possibles :  
   
 - **Erreur XML**  
@@ -113,11 +113,11 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
   
 - **Erreur d’expressions régulières**  
   
-     Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs pour chaque expression régulière. Recherchez en particulier :  
-  
-    - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`  
-  
-    - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`  
+  Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs pour chaque expression régulière. Recherchez en particulier :  
+
+  - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`  
+
+  - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Fichier .runsettings personnalisé avec des exclusions non valides  
  Analyse  
@@ -126,7 +126,7 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Explication  
  Vous pouvez exécuter vos tests unitaires avec un fichier .runsettings personnalisé pour configurer des options de couverture du code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).  
   
- Résolution  
+ Résolution :  
  Supprimez tous les nœuds `Include` du fichier .runsettings, puis supprimez tous les nœuds `Exclude`. Si cela résout le problème, remettez-les en étapes.  
   
  Assurez-vous que le nœud DataCollectors spécifie la couverture du code. Comparez-le avec l’exemple dans [Personnalisation de l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).  
@@ -142,8 +142,8 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
   
  En général, cela s'applique aux assemblys chargés statiquement.  
   
- Résolution  
- Aucun.  
+ Résolution :  
+ Aucune.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

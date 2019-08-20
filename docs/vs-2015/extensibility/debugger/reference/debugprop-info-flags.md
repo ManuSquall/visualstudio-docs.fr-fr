@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143003"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
  Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
- Obsolète.  
+ Action déconseillée.  
   
  DEBUGPROP_INFO_VALUE_RAW  
  Ne retournent pas des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).  

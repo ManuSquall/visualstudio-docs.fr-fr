@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181574"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Modèles de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offrent un m
   
 ### <a name="generate-files-from-a-complex-model"></a>Générer des fichiers à partir d’un modèle complexe  
   
-- Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Exemple :  
+- Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Par exemple :  
   
      `foreach (Book book in this.Library) { ... }`  
   
@@ -87,7 +87,7 @@ Modèles de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offrent un m
      Pour plus d’informations, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md) et [générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md).  
   
 ### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>Obtenir des données à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- Pour utiliser les services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], par jeu la `hostSpecific` attribut et charge le `EnvDTE` assembly. Exemple :  
+ Pour utiliser les services fournis dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], par jeu la `hostSpecific` attribut et charge le `EnvDTE` assembly. Par exemple :  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

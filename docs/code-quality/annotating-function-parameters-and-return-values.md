@@ -1,6 +1,6 @@
 ---
 title: Annotation de paramètres de fonction et valeurs de retour
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,90 +119,93 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f07650e47398b028460776f41557a3f853eaad3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388546"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919610"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
-Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, scalaires et des pointeurs vers des classes et structures et la plupart des types de mémoires tampons.  Cet article montre également les modes d’utilisation courants pour les annotations. Pour des annotations supplémentaires qui sont liées aux fonctions, consultez [annoter le comportement (fonction)](../code-quality/annotating-function-behavior.md)
+Cet article décrit les utilisations typiques des annotations pour les paramètres de fonction simples (scalaires et pointeurs vers les structures et les classes) et la plupart des types de mémoires tampons.  Cet article présente également les modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires liées aux fonctions, consultez [annotation du comportement](../code-quality/annotating-function-behavior.md)de la fonction.
 
-## <a name="pointer-parameters"></a>Paramètres de pointeur
- Pour connaître les annotations dans le tableau suivant, un paramètre de pointeur est annoté, l’analyseur signale une erreur si le pointeur est null.  Ceci s’applique aux pointeurs à n’importe quel élément de données vers laquelle pointe.
+## <a name="pointer-parameters"></a>Paramètres du pointeur
+Pour les annotations dans le tableau suivant, quand un paramètre de pointeur est annoté, l’analyseur signale une erreur si le pointeur est null.  Cela s’applique aux pointeurs et à tout élément de données vers lequel pointe.
 
- **Annotations et Descriptions**
+**Annotations et descriptions**
 
 - `_In_`
 
-     Annote les paramètres d’entrée qui sont des valeurs scalaires, structures, des pointeurs vers des structures et autres.  Peut être utilisé explicitement sur les valeurs scalaires simples.  Le paramètre doit être valide dans un état préliminaire et ne sera pas modifié.
+     Annote des paramètres d’entrée qui sont des valeurs scalaires, des structures, des pointeurs vers des structures et autres.  Peut être utilisé explicitement sur des scalaires simples.  Le paramètre doit être valide dans un état antérieur et ne sera pas modifié.
 
 - `_Out_`
 
-     Annote les paramètres de sortie qui sont des valeurs scalaires, structures, des pointeurs vers des structures et autres.  Ne s’appliquent pas cela à un objet qui ne peut pas retourner une valeur, par exemple, une valeur scalaire qui est passée par valeur.  Le paramètre ne devra pas être valide dans un état préalable mais doit être valide dans un état postérieur à.
+     Annote les paramètres de sortie qui sont des scalaires, des structures, des pointeurs vers des structures et autres.  Ne l’appliquez pas à un objet qui ne peut pas retourner une valeur (par exemple, un scalaire passé par valeur).  Le paramètre ne doit pas nécessairement être valide dans un état antérieur, mais doit être valide dans le billet.
 
 - `_Inout_`
 
-     Annote un paramètre qui est modifié par la fonction.  Il doit être valide à la fois état avant ou après, mais il est supposé pour avoir des valeurs différentes avant et après l’appel. Devez appliquer à une valeur modifiable.
+     Annote un paramètre qui sera modifié par la fonction.  Elle doit être valide à la fois à l’état antérieur et postérieur, mais elle est supposée avoir des valeurs différentes avant et après l’appel. Doit s’appliquer à une valeur modifiable.
 
 - `_In_z_`
 
-     Pointeur vers une chaîne se terminant par null qui est utilisée en tant qu’entrée.  La chaîne doit être valide dans un état préalable.  Variantes de `PSTR`, lequel déjà les annotations correctes, sont par défaut.
+     Pointeur vers une chaîne terminée par le caractère null qui est utilisée comme entrée.  La chaîne doit être valide dans un état antérieur.  Les variantes `PSTR`de qui possèdent déjà les annotations correctes sont préférées.
 
 - `_Inout_z_`
 
-     Pointeur vers un tableau de caractères se terminant par null qui sera modifié.  Il doit être valide avant et après l’appel, mais la valeur est supposée avoir été modifié.  Le terminateur null peut-être être déplacé, mais uniquement les éléments jusqu'à la marque de fin null d’origine est accessible.
+     Pointeur vers un tableau de caractères se terminant par un caractère null qui sera modifié.  Elle doit être valide avant et après l’appel, mais la valeur est supposée avoir changé.  La marque de fin null peut être déplacée, mais seuls les éléments jusqu’à la marque de fin null d’origine sont accessibles.
 
 - `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
-     Pointeur vers un tableau, qui est lu par la fonction.  Le tableau est de taille `s` éléments, qui doit être valide.
+     Pointeur vers un tableau, qui est lu par la fonction.  Le tableau est de taille `s` et tous les éléments doivent tous être valides.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_In_reads_z_(s)`
 
-     Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments jusqu'à la marque de fin null, ou `s` s’il n’existe aucune marque de fin null — doit être valide dans un état préalable.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.
+     Pointeur vers un tableau qui se termine par un caractère null et a une taille connue. Les éléments jusqu’au terminateur null, ou `s` s’il n’y a aucune marque de fin null, doivent être valides dans un état antérieur.  Si la taille est connue en octets, mettez `s` à l’échelle selon la taille de l’élément.
 
 - `_In_reads_or_z_(s)`
 
-     Pointeur vers un tableau qui est terminée ou a une taille connue, ou les deux. Les éléments jusqu'à la marque de fin null, ou `s` s’il n’existe aucune marque de fin null — doit être valide dans un état préalable.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  (Utilisé pour le `strn` famille.)
+     Pointeur vers un tableau qui se termine par un caractère null ou qui a une taille connue, ou les deux. Les éléments jusqu’au terminateur null, ou `s` s’il n’y a aucune marque de fin null, doivent être valides dans un état antérieur.  Si la taille est connue en octets, mettez `s` à l’échelle selon la taille de l’élément.  (Utilisé pour la `strn` famille.)
 
 - `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Un pointeur vers un tableau de `s` éléments (octets de gestion) qui seront écrit par la fonction.  Les éléments du tableau n’ont pas à être valide dans un état préalable, et le nombre d’éléments qui sont valides dans l’état postérieur à n’est pas spécifié.  S’il existe des annotations sur le type de paramètre, elles sont appliquées dans l’état postérieur à. Par exemple, prenons le code suivant.
+     Pointeur vers un tableau d' `s` éléments (REEE. bytes) qui sera écrit par la fonction.  Les éléments de tableau ne doivent pas nécessairement être valides dans un état antérieur, et le nombre d’éléments valides dans le billet n’est pas spécifié.  S’il existe des annotations sur le type de paramètre, elles sont appliquées à l’État postérieur. Par exemple, prenons le code suivant.
 
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
 
-     Dans cet exemple, l’appelant fournit une mémoire tampon de `size` éléments pour `p1`.  `MyStringCopy` permet de rendre certaines de ces éléments valide. Plus important encore, le `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` état postérieur à est nul.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.
+     Dans cet exemple, l’appelant fournit une mémoire tampon `size` d’éléments `p1`pour.  `MyStringCopy`rend certains de ces éléments valides. Plus important encore, l' `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` se termine par un caractère NULL dans un État postérieur.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_Out_writes_z_(s)`
 
-     Un pointeur vers un tableau de `s` éléments.  Les éléments n’ont pas soit valide dans un état préalable.  Dans l’état postérieur à, les éléments de configuration via le terminateur null, qui doit être présent, doit être valide.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.
+     Pointeur vers un tableau d' `s` éléments.  Les éléments ne doivent pas nécessairement être valides dans un état antérieur.  Dans un État postérieur, les éléments au-dessus de la marque de fin null (qui doit être présent) doivent être valides.  Si la taille est connue en octets, mettez `s` à l’échelle selon la taille de l’élément.
 
 - `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Pointeur vers un tableau, qui est lue et modifiée à dans la fonction.  Il est de taille `s` éléments et valide état avant ou après.
+     Pointeur vers un tableau, qui est à la fois lu et écrit dans la fonction.  Il s’agit d' `s` éléments de taille et valides à l’état antérieur et postérieur.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_Inout_updates_z_(s)`
 
-     Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments de configuration via le terminateur null, qui doit être présent, doit être valide à la fois état avant ou après.  La valeur dans l’état postérieur à est présumée être différente de la valeur dans l’état préalable ; Cela inclut l’emplacement de la marque de fin null. Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.
+     Pointeur vers un tableau qui se termine par un caractère null et a une taille connue. Les éléments jusqu’au terminateur null (qui doit être présent) doivent être valides à la fois dans l’état antérieur et après l’État.  La valeur de l’État postérieur est supposée être différente de la valeur de l’état antérieur; Cela comprend l’emplacement de la marque de fin null. Si la taille est connue en octets, mettez `s` à l’échelle selon la taille de l’élément.
 
 - `_Out_writes_to_(s,c)`
 
@@ -212,11 +215,11 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Out_writes_bytes_all_(s)`
 
-     Un pointeur vers un tableau de `s` éléments.  Les éléments n’ont pas soit valide dans un état préalable.  Dans un état postérieur à, les éléments jusqu'à la `c`- ième élément doit être valide.  Si la taille est connue en octets, à l’échelle `s` et `c` par la taille de l’élément ou l’utilisation du `_bytes_` variante, qui est définie comme :
+     Pointeur vers un tableau d' `s` éléments.  Les éléments ne doivent pas nécessairement être valides dans un état antérieur.  Dans un État postérieur, les éléments jusqu’au `c`-ième élément doivent être valides.  Si la taille est connue en octets, mettez `s` à `c` l’échelle et selon la taille de `_bytes_` l’élément ou utilisez la variante, qui est définie comme suit:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Exemple :
+     En d’autres termes, tous les éléments qui existent dans la mémoire `s` tampon jusqu’à dans le pré-État sont valides dans l’État postérieur.  Par exemple :
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -224,13 +227,13 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Pointeur vers un tableau, qui est lue et modifiée par la fonction.  Il est de taille `s` éléments, qui doit être valide dans un état préalable, et `c` éléments doivent être valides dans un état postérieur à.
+     Pointeur vers un tableau, qui est lu et écrit par la fonction.  Il s’agit d' `s` éléments de taille, qui doivent tous être valides dans un état antérieur `c` , et les éléments doivent être valides dans un État postérieur.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_Inout_updates_z_(s)`
 
-     Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments de configuration via le terminateur null, qui doit être présent, doit être valide à la fois état avant ou après.  La valeur dans l’état postérieur à est présumée être différente de la valeur dans l’état préalable ; Cela inclut l’emplacement de la marque de fin null. Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.
+     Pointeur vers un tableau qui se termine par un caractère null et a une taille connue. Les éléments jusqu’au terminateur null (qui doit être présent) doivent être valides à la fois dans l’état antérieur et après l’État.  La valeur de l’État postérieur est supposée être différente de la valeur de l’état antérieur; Cela comprend l’emplacement de la marque de fin null. Si la taille est connue en octets, mettez `s` à l’échelle selon la taille de l’élément.
 
 - `_Out_writes_to_(s,c)`
 
@@ -240,11 +243,11 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Out_writes_bytes_all_(s)`
 
-     Un pointeur vers un tableau de `s` éléments.  Les éléments n’ont pas soit valide dans un état préalable.  Dans un état postérieur à, les éléments jusqu'à la `c`- ième élément doit être valide.  Si la taille est connue en octets, à l’échelle `s` et `c` par la taille de l’élément ou l’utilisation du `_bytes_` variante, qui est définie comme :
+     Pointeur vers un tableau d' `s` éléments.  Les éléments ne doivent pas nécessairement être valides dans un état antérieur.  Dans un État postérieur, les éléments jusqu’au `c`-ième élément doivent être valides.  Si la taille est connue en octets, mettez `s` à `c` l’échelle et selon la taille de `_bytes_` l’élément ou utilisez la variante, qui est définie comme suit:
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide dans l’état postérieur à.  Exemple :
+     En d’autres termes, tous les éléments qui existent dans la mémoire `s` tampon jusqu’à dans le pré-État sont valides dans l’État postérieur.  Par exemple :
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -252,72 +255,73 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Pointeur vers un tableau, qui est lue et modifiée par la fonction.  Il est de taille `s` éléments, qui doit être valide dans un état préalable, et `c` éléments doivent être valides dans un état postérieur à.
+     Pointeur vers un tableau, qui est lu et écrit par la fonction.  Il s’agit d' `s` éléments de taille, qui doivent tous être valides dans un état antérieur `c` , et les éléments doivent être valides dans un État postérieur.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
-     Un pointeur vers un tableau, qui est lue et modifiée par la fonction de la taille `s` éléments. Défini comme étant équivalents à :
+     Pointeur vers un tableau, qui est lu et écrit par la fonction des éléments de taille `s` . Défini comme équivalent à:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, chaque élément qui existe dans la mémoire tampon jusqu'à `s` dans l’état préalable n’est valide l’état préalable ou postérieur à.
+     En d’autres termes, tous les éléments qui existent dans la mémoire `s` tampon jusqu’à dans le préétat sont valides à l’état antérieur et postérieur.
 
-     Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.
+     La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .
 
 - `_In_reads_to_ptr_(p)`
 
-     Un pointeur vers un tableau pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` doit être valide dans un état préalable.
+     Pointeur vers un tableau pour lequel `p` l’expression  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est définie par la norme de langage appropriée.  Les éléments antérieurs `p` à doivent être valides dans un état antérieur.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Un pointeur vers un tableau se terminant par null pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` doit être valide dans un état préalable.
+     Pointeur vers un tableau terminé par le caractère null pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est définie par la norme de langage appropriée.  Les éléments antérieurs `p` à doivent être valides dans un état antérieur.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Un pointeur vers un tableau pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` n’avez pas à être valide dans un état préliminaire et doit être valide dans un état postérieur à.
+     Pointeur vers un tableau pour lequel `p` l’expression  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est définie par la norme de langage appropriée.  Les éléments antérieurs `p` à n’ont pas besoin d’être valides dans un état antérieur et doivent être valides dans un État postérieur.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Un pointeur vers un tableau se terminant par null pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` n’avez pas à être valide dans un état préliminaire et doit être valide dans un état postérieur à.
+     Pointeur vers un tableau terminé par le caractère null pour lequel l’expression `p`  -  `_Curr_` (autrement dit, `p` moins `_Curr_`) est définie par la norme de langage appropriée.  Les éléments antérieurs `p` à n’ont pas besoin d’être valides dans un état antérieur et doivent être valides dans un État postérieur.
 
-## <a name="optional-pointer-parameters"></a>Paramètres de pointeur facultatif
- Lorsqu’une annotation de paramètre pointeur inclut `_opt_`, il indique que le paramètre peut être null. Sinon, l’annotation effectue la même que la version qui n’inclut pas `_opt_`. Voici une liste de la `_opt_` variantes des annotations de paramètre de pointeur :
+## <a name="optional-pointer-parameters"></a>Paramètres de pointeur facultatifs
+
+Quand une annotation de paramètre de `_opt_`pointeur comprend, elle indique que le paramètre peut être null. Dans le cas contraire, l’annotation est identique à la version qui `_opt_`n’inclut pas. Voici une liste des `_opt_` variantes des annotations de paramètre de pointeur:
 
 ||||
 |-|-|-|
 |`_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`|`_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`|`_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`|
 
-## <a name="output-pointer-parameters"></a>Paramètres de pointeur de sortie
- Paramètres de pointeur de sortie nécessitent une notation spéciale pour lever l’ambiguïté de nullité sur le paramètre et l’emplacement pointé.
+## <a name="output-pointer-parameters"></a>Paramètres du pointeur de sortie
+Les paramètres de pointeur de sortie requièrent une notation spéciale pour lever l’ambiguïté des valeurs NULL sur le paramètre et l’emplacement pointé.
 
- **Annotations et Descriptions**
+**Annotations et descriptions**
 
 - `_Outptr_`
 
-   Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.
+   Le paramètre ne peut pas avoir la valeur null et, dans l’État postérieur, l’emplacement pointé ne peut pas être null et doit être valide.
 
 - `_Outptr_opt_`
 
-   Paramètre peut être null, mais l’état postérieur à l’emplacement pointé ne peut pas être null et doit être valide.
+   Le paramètre peut avoir la valeur null, mais dans l’État postérieur, l’emplacement pointé ne peut pas être null et doit être valide.
 
 - `_Outptr_result_maybenull_`
 
-   Paramètre ne peut pas être null, et dans l’état postérieur à l’emplacement pointé peut être null.
+   Le paramètre ne peut pas avoir la valeur null et, dans l’État postérieur, l’emplacement pointé peut avoir la valeur null.
 
 - `_Outptr_opt_result_maybenull_`
 
-   Paramètre peut être null, et dans l’état postérieur à l’emplacement pointé peut être null.
+   Le paramètre peut avoir la valeur null et, dans l’État postérieur, l’emplacement pointé peut avoir la valeur null.
 
-  Dans le tableau suivant, les sous-chaînes supplémentaires sont insérées dans le nom de l’annotation à qualifier davantage la signification de l’annotation.  Les sous-chaînes différents sont `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, et `_to_`.
+  Dans le tableau suivant, des sous-chaînes supplémentaires sont insérées dans le nom de l’annotation pour qualifier davantage la signification de l’annotation.  Les différentes sous-chaînes sont `_z`, `_COM_`, `_buffer_` `_bytebuffer_`, et `_to_`.
 
 > [!IMPORTANT]
-> Si l’interface qui vous annotez est COM, utilisez le formulaire de COM de ces annotations. N’utilisez pas les annotations de COM avec toute autre interface de type.
+> Si l’interface que vous annotez est COM, utilisez la forme COM de ces annotations. N’utilisez pas les annotations COM avec une autre interface de type.
 
- **Annotations et Descriptions**
+**Annotations et descriptions**
 
 - `_Outptr_result_z_`
 
@@ -327,7 +331,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
    `_Ouptr_opt_result_maybenull_z_`
 
-   Le pointeur retourné a le `_Null_terminated_` annotation.
+   Le pointeur retourné a l' `_Null_terminated_` annotation.
 
 - `_COM_Outptr_`
 
@@ -337,7 +341,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   Le pointeur retourné a une sémantique COM et par conséquent comporte un `_On_failure_` à condition que le pointeur retourné a la valeur null.
+   Le pointeur retourné a une sémantique com et, par conséquent, `_On_failure_` contient une condition de publication indiquant que le pointeur retourné a la valeur null.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -347,7 +351,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
    `_Outptr_opt_result_bytebuffer_(s)`
 
-   Le pointeur retourné pointe vers un mémoire tampon valide de taille `s` éléments ou octets.
+   Le pointeur retourné pointe vers une mémoire tampon valide d' `s` éléments de taille ou d’octets.
 
 - `_Outptr_result_buffer_to_(s, c)`
 
@@ -357,102 +361,152 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
    `_Outptr_opt_result_bytebuffer_to_(s,c)`
 
-   Le pointeur retourné pointe vers une mémoire tampon de taille `s` éléments ou octets, dont la première `c` sont valides.
+   Le pointeur retourné pointe vers une mémoire tampon d' `s` éléments ou d’octets de taille, dont `c` le premier est valide.
 
-  Certaines conventions interface supposent que les paramètres de sortie sont compensés en cas d’échec.  À l’exception du code explicitement COM, les formulaires dans le tableau suivant sont préférables.  Pour le code COM, utilisez les formats COM correspondants qui sont répertoriés dans la section précédente.
+  Certaines conventions d’interface présument que les paramètres de sortie sont annulés en cas d’échec.  À l’exception du code COM explicite, les formulaires répertoriés dans le tableau suivant sont préférés.  Pour le code COM, utilisez les formulaires COM correspondants répertoriés dans la section précédente.
 
-  **Annotations et Descriptions**
+  **Annotations et descriptions**
 
 - `_Result_nullonfailure_`
 
-   Modifie les autres annotations. Le résultat a la valeur null si la fonction échoue.
+   Modifie d’autres annotations. Le résultat est défini sur null si la fonction échoue.
 
 - `_Result_zeroonfailure_`
 
-   Modifie les autres annotations. Le résultat est défini à zéro si la fonction échoue.
+   Modifie d’autres annotations. Le résultat est défini sur zéro si la fonction échoue.
 
 - `_Outptr_result_nullonfailure_`
 
-   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre obligatoire.
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est destinée à un paramètre non facultatif.
 
 - `_Outptr_opt_result_nullonfailure_`
 
-   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est d’un paramètre facultatif.
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est destinée à un paramètre facultatif.
 
 - `_Outref_result_nullonfailure_`
 
-   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est pour un paramètre de référence.
+   Le pointeur retourné pointe vers une mémoire tampon valide si la fonction réussit, ou null si la fonction échoue. Cette annotation est destinée à un paramètre de référence.
 
 ## <a name="output-reference-parameters"></a>Paramètres de référence de sortie
- Une utilisation courante de paramètre de référence est pour les paramètres output.  Pour les paramètres de référence de sortie simple, par exemple, `int&`—`_Out_` fournit la sémantique correcte.  Toutefois, lorsque la valeur de sortie est un pointeur, par exemple `int *&`, telles que les annotations de pointeur équivalent `_Outptr_ int **` ne fournissent pas la sémantique appropriée.  Pour exprimer avec concision la sémantique de référence des paramètres de sortie pour les types pointeur, utilisez ces annotations composites :
 
- **Annotations et Descriptions**
+Le paramètre de référence est couramment utilisé pour les paramètres de sortie.  Pour les paramètres de référence de sortie simples ( `int&`par`_Out_` exemple,) fournit la sémantique correcte.  Toutefois, lorsque la valeur de sortie est un pointeur, par `int *&`exemple, les annotations de `_Outptr_ int **` pointeur équivalentes comme ne fournissent pas la sémantique correcte.  Pour exprimer de façon concise la sémantique des paramètres de référence de sortie pour les types pointeur, utilisez les annotations composites suivantes:
+
+**Annotations et descriptions**
 
 - `_Outref_`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null.
+     Le résultat doit être valide dans après l’État et ne peut pas être null.
 
 - `_Outref_result_maybenull_`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans un État postérieur.
 
 - `_Outref_result_buffer_(s)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` éléments.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers une mémoire tampon valide `s` d’éléments de taille.
 
 - `_Outref_result_bytebuffer_(s)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` octets.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers une mémoire tampon valide `s` de taille octets.
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon de `s` éléments, dont le premier `c` sont valides.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers la mémoire `s` tampon d’éléments dont le premier `c` est valide.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon de `s` octets dont la première `c` sont valides.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers la mémoire `s` tampon d’octets dont le `c` premier est valide.
 
 - `_Outref_result_buffer_all_(s)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` éléments valides.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers une mémoire tampon valide `s` d’éléments valides de taille.
 
 - `_Outref_result_bytebuffer_all_(s)`
 
-     Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.
+     Le résultat doit être valide dans après l’État et ne peut pas être null. Pointe vers une mémoire tampon `s` valide d’octets d’éléments valides.
 
 - `_Outref_result_buffer_maybenull_(s)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon valide de taille `s` éléments.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans un État postérieur. Pointe vers une mémoire tampon valide `s` d’éléments de taille.
 
 - `_Outref_result_bytebuffer_maybenull_(s)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon valide de taille `s` octets.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans un État postérieur. Pointe vers une mémoire tampon valide `s` de taille octets.
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon de `s` éléments, dont le premier `c` sont valides.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans un État postérieur. Pointe vers la mémoire `s` tampon d’éléments dont le premier `c` est valide.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon de `s` octets dont la première `c` sont valides.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers la mémoire `s` tampon d’octets dont le `c` premier est valide.
 
 - `_Outref_result_buffer_all_maybenull_(s)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon valide de taille `s` éléments valides.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers une mémoire tampon valide `s` d’éléments valides de taille.
 
 - `_Outref_result_bytebuffer_all_maybenull_(s)`
 
-     Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.
+     Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers une mémoire tampon `s` valide d’octets d’éléments valides.
 
 ## <a name="return-values"></a>Valeurs de retour
- La valeur de retour d’une fonction ressemble à un `_Out_` paramètre mais est à un niveau différent de de-reference, et vous n’êtes pas obligé de prendre en compte le concept de pointeur vers le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté, une valeur scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon. Ces annotations ont la même sémantique que le correspondantes `_Out_` annotation.
+
+La valeur de retour d’une fonction ressemble `_Out_` à un paramètre mais se trouve à un niveau de déréférencement différent, et vous n’avez pas à considérer le concept du pointeur sur le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté (un scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon). Ces annotations ont la même sémantique que l’annotation `_Out_` correspondante.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
-## <a name="other-common-annotations"></a>Autres Annotations courants
- **Annotations et Descriptions**
+## <a name="format-string-parameters"></a>Paramètres de chaîne de format
+
+- `_Printf_format_string_`Indique que le paramètre est une chaîne de format à utiliser dans `printf` une expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_`Indique que le paramètre est une chaîne de format à utiliser dans `scanf` une expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_`Indique que le paramètre est une chaîne de format à utiliser dans `scanf_s` une expression.
+
+     **Exemple**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+## <a name="other-common-annotations"></a>Autres annotations courantes
+
+**Annotations et descriptions**
 
 - `_In_range_(low, hi)`
 
@@ -468,29 +522,30 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 
      `_Field_range_(low, hi)`
 
-     Le paramètre, le champ ou le résultat est dans la plage (limites incluses) à partir de `low` à `hi`.  Équivalent à `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` qui est appliqué à l’objet annoté avec les conditions d’états préalable ou post-États appropriées.
+     Le paramètre, le champ ou le résultat se trouve dans la plage (inclusive `low` ) `hi`de à.  Équivalent à `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` qui est appliqué à l’objet annoté avec les conditions préalables ou postérieures à l’État appropriées.
 
     > [!IMPORTANT]
-    > Bien que les noms contiennent « in » et « out », la sémantique de `_In_` et `_Out_` faire **pas** s’appliquent à ces annotations.
+    > Bien que les noms contiennent «in» et «out», la sémantique de `_In_` et `_Out_` ne s’applique **pas** à ces annotations.
 
 - `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
-     La valeur annotée est identique `expr`.  Équivalent à `_Satisfies_(_Curr_ == expr)` qui est appliqué à l’objet annoté avec les conditions d’états préalable ou post-États appropriées.
+     La valeur annotée est `expr`exactement.  Équivalent à `_Satisfies_(_Curr_ == expr)` qui est appliqué à l’objet annoté avec les conditions préalables ou postérieures à l’État appropriées.
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à une déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets donné par `size`.  Exemple :
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Par exemple :
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     La taille du tampon en octets d’un paramètre `pM` de type `MyStruct *` est alors dirigé vers l’être :
+     La taille de la mémoire tampon en octets `pM` d’un `MyStruct *` paramètre de type est ensuite considérée comme:
 
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Ressources connexes
- [Blog de l’équipe analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)
+
+[Blog de l’équipe d’analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Voir aussi
 

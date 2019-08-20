@@ -1,6 +1,6 @@
 ---
 title: "CA2214 : N'appelez pas de méthodes substituables dans les constructeurs"
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796703"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547007"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214 : N'appelez pas de méthodes substituables dans les constructeurs
 
@@ -30,28 +30,31 @@ ms.locfileid: "62796703"
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Le constructeur d’un type unsealed appelle une méthode virtuelle définie dans sa classe.
+Le constructeur d’un type non scellé appelle une méthode virtuelle définie dans sa classe.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsqu’une méthode virtuelle est appelée, le type réel qui exécute la méthode n’est pas sélectionné jusqu'à l’exécution. Lorsqu’un constructeur appelle une méthode virtuelle, il est possible que le constructeur pour l’instance qui appelle la méthode n’a pas été exécutée.
+Quand une méthode virtuelle est appelée, le type réel qui exécute la méthode n’est pas sélectionné jusqu’au moment de l’exécution. Quand un constructeur appelle une méthode virtuelle, il est possible que le constructeur de l’instance qui appelle la méthode n’ait pas été exécuté.
+
+> [!NOTE]
+> L’implémentation d’analyse héritée de cette règle a un message de diagnostic**différent de «nom du constructeur»\[contient une chaîne d’appel qui entraîne un appel à une méthode virtuelle définie par la classe. Passez en revue la pile d’appels suivante pour**les conséquences inattendues». L’implémentation des [analyseurs FxCop](install-fxcop-analyzers.md) de cette règle a un message de diagnostic «**ne pas appeler les méthodes substituables dans les constructeurs**».
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, n’appelez pas les méthodes virtuelles d’un type à partir de dans les constructeurs du type.
+Pour corriger une violation de cette règle, n’appelez pas les méthodes virtuelles d’un type à partir des constructeurs du type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez aucun avertissement de cette règle. Le constructeur doit être refondu pour éliminer l’appel à la méthode virtuelle.
+Ne supprimez aucun avertissement de cette règle. Le constructeur doit être repensé pour éliminer l’appel à la méthode virtuelle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre l’effet de violation de cette règle. L’application de test crée une instance de `DerivedType`, ce qui entraîne sa classe de base (`BadlyConstructedType`) constructeur à exécuter. `BadlyConstructedType`de manière incorrecte, le constructeur appelle la méthode virtuelle `DoSomething`. Comme le montre la sortie, `DerivedType.DoSomething()` s’exécute et ce avant `DerivedType`du constructeur s’exécute.
+L’exemple suivant illustre l’effet de la violation de cette règle. L’application de test crée une instance `DerivedType`de, ce qui entraîne l’exécution`BadlyConstructedType`du constructeur de la classe de base (). `BadlyConstructedType`le constructeur de n’appelle pas correctement la méthode `DoSomething`virtuelle. Comme le montre la sortie `DerivedType.DoSomething()` , s’exécute `DerivedType`avant l’exécution du constructeur de.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

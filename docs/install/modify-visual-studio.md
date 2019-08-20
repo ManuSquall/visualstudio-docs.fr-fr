@@ -3,7 +3,7 @@ title: Modifier Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951556"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681395"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
@@ -47,6 +47,9 @@ Voici comment procéder.
 
 >[!IMPORTANT]
 >Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+>[!TIP]
+> La procédure suivante suppose que vous avez une connexion Internet. Pour plus d’informations sur la façon de modifier une [installation hors connexion](create-an-offline-installation-of-visual-studio.md) précédemment créée de Visual Studio, consultez la page [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
 ::: moniker range="vs-2017"
 
@@ -83,7 +86,7 @@ Voici comment procéder.
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Ouvrir Visual Studio Installer](media/vs2019-visual-studio-installer.png "Ouvrir Visual Studio Installer")
+     ![Ouvrir Visual Studio Installer à partir de Windows](media/vs-2019/vs-installer-windows-start.png "Ouvrir Visual Studio Installer à partir de Windows")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -94,7 +97,7 @@ Voici comment procéder.
 
 1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée, puis choisissez **Modifier**.
 
-     ![Mettre à jour ou modifier Visual Studio](media/vs-2019/vs-installer-modify.png "Mettre à jour ou modifier Visual Studio 2017")
+     ![Mettre à jour ou modifier Visual Studio](media/vs-2019/vs-installer-modify.png "Mettre à jour ou modifier Visual Studio 2019")
 
 1. Sous l’onglet **Charges de travail**, sélectionnez ou désélectionnez les charges de travail à installer ou désinstaller.
 
@@ -122,4 +125,6 @@ Si vous ne voulez pas installer des charges de travail pour personnaliser votre 
 
 * [Mettre à jour Visual Studio](update-visual-studio.md)
 * [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance](update-servicing-baseline.md)
+* [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
 * [Désinstaller Visual Studio](uninstall-visual-studio.md)

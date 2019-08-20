@@ -1,21 +1,22 @@
 ---
 title: 'Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262936"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461535"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
 
@@ -47,7 +48,7 @@ Visual Studio, avec la charge de travail **Développement Desktop .NET**.
 
 ## <a name="install-software-on-the-computers"></a>Installer le logiciel sur les ordinateurs
 
-Configurez tout d’abord l’ordinateur hôte, puis l’ordinateur de build.
+Configurez d’abord l’ordinateur hôte, puis l’ordinateur de build.
 
 En installant Visual Studio sur l’ordinateur hôte, vous créez des fichiers et des paramètres que vous copierez ultérieurement sur l’ordinateur de build. Vous pouvez installer Visual Studio sur un ordinateur x86 ou x64, mais l’architecture de l’ordinateur de build doit correspondre à l’architecture de l’ordinateur hôte.
 
@@ -62,7 +63,7 @@ Cette section décrit la copie de fichiers, compilateurs, outils de génération
 - Sur un ordinateur x86, l’emplacement par défaut est *C:\Program Files\Microsoft Visual Studio*.
 - Sur un ordinateur x64, l’emplacement par défaut est *C:\Program Files (x86)\Microsoft Visual Studio*.
 
-Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)*. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%*.
+Notez que le nom du dossier *Program Files* dépend du système d’exploitation installé. Sur un ordinateur x86, le nom est *Program Files* ; sur un ordinateur x64, le nom est *Program Files (x86)* . Indépendamment de l’architecture du système, cette procédure pas à pas fait référence au dossier *Program Files* sous la forme *%ProgramFiles%* .
 
 > [!NOTE]
 > Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur. Toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.
@@ -332,7 +333,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
 2. Copiez les répertoires et fichiers, comme décrit dans la section [Copier des fichiers de l’ordinateur hôte vers l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de cette procédure pas à pas, puis collez-les dans le répertoire *%Depot%* que vous venez de créer. Par exemple, effectuez la copie de *%ProgramFiles%\Windows Kits\8.0\bin* vers *%Depot%\Windows Kits\8.0\bin*.
 
-3. Une fois les fichiers collés dans *%Depot%*, effectuez les modifications suivantes :
+3. Une fois les fichiers collés dans *%Depot%* , effectuez les modifications suivantes :
 
     - Dans %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ et \Microsoft.CppCommon.targets\\, remplacez toutes les instances de
 

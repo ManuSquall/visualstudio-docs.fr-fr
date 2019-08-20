@@ -39,7 +39,7 @@ ms.locfileid: "63447073"
 
 - Un chemin d’accès relatif ou absolu dans la norme Windows mettre en forme, telles que *C:\Deploy\MyApplication* ou *\MyApplication*.
 
-- Un chemin d’accès UNC Universal Naming Convention (), tel que  *\\\ServerName\MyApplication\\*.
+- Un chemin d’accès UNC Universal Naming Convention (), tel que  *\\\ServerName\MyApplication\\* .
 
 - Une URL d’un site web de site, tel que http://www.microsoft.com/MyApplication.
 

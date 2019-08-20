@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: defd9b3aabbb23d0bbcbfa17c562365c5a52eb65
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847487"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68191804"
 ---
 Global Assembly Cache (GAC)

@@ -1,23 +1,24 @@
 ---
 title: Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792229"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919358"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 
@@ -37,7 +38,7 @@ Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Conc
 
 ## <a name="optimizations"></a>Optimisations
 
- Les options suivantes spécifient les optimisations qui peuvent, dans certains cas, réduire la taille d’un fichier programme, rendre l’exécution d’un programme plus rapide ou accélérer le processus de génération.
+Les options suivantes spécifient les optimisations qui peuvent, dans certains cas, réduire la taille d’un fichier programme, rendre l’exécution d’un programme plus rapide ou accélérer le processus de génération.
 
 **Supprimer les contrôles de dépassement sur les entiers**
 
@@ -51,11 +52,11 @@ Par défaut, cette case est décochée pour désactiver les optimisations du com
 
  **Adresse de base de la DLL**
 
- Cette zone de texte affiche l’adresse de base de la DLL par défaut au format hexadécimal. Dans les projets de bibliothèque de contrôle et de bibliothèque de classes, vous pouvez utiliser cette zone de texte pour spécifier l’adresse de base à utiliser lors de la création de la DLL.
+Cette zone de texte affiche l’adresse de base de la DLL par défaut au format hexadécimal. Dans les projets de bibliothèque de contrôle et de bibliothèque de classes, vous pouvez utiliser cette zone de texte pour spécifier l’adresse de base à utiliser lors de la création de la DLL.
 
  **Générer des infos de débogage**
 
- Sélectionnez **Aucun**, **Complet**  ou **pdb-only** dans la liste. **Aucun** spécifie qu’aucune information de débogage n’est générée. **Complet** spécifie que les informations complètes de débogage sont générées, et **pdb-only** que seules les informations de débogage PDB doivent être générées. La valeur par défaut de cette option est **Complet**.
+Sélectionnez **Aucun**, **Complet**  ou **pdb-only** dans la liste. **Aucun** spécifie qu’aucune information de débogage n’est générée. **Complet** spécifie que les informations complètes de débogage sont générées, et **pdb-only** que seules les informations de débogage PDB doivent être générées. La valeur par défaut de cette option est **Complet**.
 
 ## <a name="compilation-constants"></a>Constantes de compilation
 
@@ -63,15 +64,15 @@ Les constantes de compilation conditionnelle reviennent à utiliser une directiv
 
  **Définir la constante DEBUG**
 
- Par défaut, cette case est cochée, spécifiant qu’une constante DEBUG est définie.
+Par défaut, cette case est cochée, spécifiant qu’une constante DEBUG est définie.
 
  **Définir la constante TRACE**
 
- Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est définie.
+Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est définie.
 
  **Constantes personnalisées**
 
- Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"**.
+Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"** .
 
 ## <a name="other-settings"></a>Autres paramètres
 

@@ -5,6 +5,7 @@
 ## [Installer et utiliser derrière un pare-feu ou un proxy](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Installer une préversion](/visualstudio/mac/install-preview)
 ## [Mettre à jour](/visualstudio/mac/update)
+## [Mise à jour vers Visual Studio 2019 pour Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [Désinstaller](/visualstudio/mac/uninstall)
 
 # [Comptes d’utilisateur](/visualstudio/mac/user-accounts)

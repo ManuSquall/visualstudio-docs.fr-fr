@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 289aff1025570d0840eb4f0815b88d9023033a7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149257"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  Bibliothèque d’importation : VSPerf.lib  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant illustre la fonction ResumeProfile. L’exemple suppose qu’un appel à la méthode SuspendProfile a été effectué pour le même thread ou processus identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
 ```  

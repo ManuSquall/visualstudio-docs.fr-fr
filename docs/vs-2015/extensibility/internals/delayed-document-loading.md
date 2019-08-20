@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196870"
 ---
 # <a name="delayed-document-loading"></a>Chargement de document différé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ Lorsqu’un utilisateur ouvre de nouveau une solution Visual Studio, la plupart 
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Extensions pour voir si elles forcer l’initialisation de test  
  Il n’existe aucun indice visible pour indiquer si un document a été initialisé, il peut être difficile de savoir si votre extension est forçant. Vous pouvez définir une clé de Registre qui facilite la vérification, car elle force le titre de tous les documents qui ne sont pas entièrement initialisé pour que le texte `[Stub]` dans le titre.  
   
- Dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, affectez la valeur **StubTabTitleFormatString** à  **{0} [Stub]**.
+ Dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** , affectez la valeur **StubTabTitleFormatString** à  **{0} [Stub]** .

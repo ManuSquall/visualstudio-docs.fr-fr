@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159631"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Créer des éléments et des relations dans des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Dans le code de programme d'une extension de Visual Studio, vous pouvez créer e
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Obtenir le propriétaire de l'élément à créer  
  Un modèle forme une arborescence unique, de sorte que chaque élément possède un propriétaire, à l'exception de la racine du modèle. La racine du modèle est de type `IModel`, ce qui est un type de `IPackage`.  
   
- Si vous créez un élément qui sera affiché dans un diagramme particulier, par exemple, le diagramme actuel de l'utilisateur, vous devez généralement le créer dans le package lié à ce diagramme. Exemple :  
+ Si vous créez un élément qui sera affiché dans un diagramme particulier, par exemple, le diagramme actuel de l'utilisateur, vous devez généralement le créer dans le package lié à ce diagramme. Par exemple :  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Appeler la méthode de création sur le propriétaire  
- Le nom de la méthode est au format : `Create`*OwnedType*`()`. Exemple :  
+ Le nom de la méthode est au format : `Create`*OwnedType*`()`. Par exemple :  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3. Définissez les propriétés de la relation, notamment son nom.  
   
-     Exemple :  
+     Par exemple :  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4. Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Exemple :  
+4. Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Par exemple :  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

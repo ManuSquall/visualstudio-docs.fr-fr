@@ -103,7 +103,7 @@ Une fois qu’il est installé, assurez-vous que le débogueur distant est en co
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
+1. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>** .
     
     La page web ASP.NET doit s’afficher.
 1. Dans la page web ASP.NET, cliquez sur le lien vers le **sur** page.

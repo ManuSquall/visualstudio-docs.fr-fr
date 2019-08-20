@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180302"
 ---
-# <a name="language-services-and-the-core-editor"></a>Services de langage et de l’éditeur principal
+# <a name="language-services-and-the-core-editor"></a>Services linguistiques et éditeur de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Éditeurs de Visual Studio sont souvent associés à un service de langage. Entre autres choses, un service de langage fournit la coloration syntaxique, la saisie semi-automatique des instructions, IntelliSense et la mise en forme du texte.  
@@ -27,7 +27,7 @@ ms.locfileid: "58938888"
   
  Pour plus d’informations, consultez [déterminer quel éditeur ouvre un fichier dans un projet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Services de langage et de l’éditeur principal  
+## <a name="language-services-and-the-core-editor"></a>Services linguistiques et éditeur de base  
  En implémentant un service de langage, vous pouvez contrôler la façon dont les données sont affichées dans la vue de document. Un service de langage fournit des informations et comportement est spécifique à une langue donnée, tels que Visual C++. Lorsque vous créez une mémoire tampon de texte et déterminez l’extension de nom de fichier pour le document que vous ouvrez, la mémoire tampon de texte détermine le service de langage associé à cette extension de nom de fichier à partir d’une clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\{GUID YourLanguageService} \Extensions. Le VSPackage standard chargement procédure puis charge votre VSPackage et une instance de votre service de langage est créée.  
   
  Un service de langage de base est indiqué dans l’illustration suivante.  

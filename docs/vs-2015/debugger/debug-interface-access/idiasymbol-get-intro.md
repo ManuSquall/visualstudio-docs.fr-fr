@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df8930d620f6199ecde4d6d921d5b969204f92e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446585"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830304"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ HRESULT get_intro ( 
 > [!NOTE]
 > La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
   
 ```cpp#  
 class A {  
@@ -58,7 +58,7 @@ class B : public A {
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Spécification|Description|  
+|Prérequis|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
 |Version :|DIA SDK v7.0|  

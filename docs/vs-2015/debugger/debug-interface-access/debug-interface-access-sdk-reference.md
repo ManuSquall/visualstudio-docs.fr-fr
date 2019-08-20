@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbc7503e5df9ad3482cbf1595ff6b4eec018d5d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197646"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

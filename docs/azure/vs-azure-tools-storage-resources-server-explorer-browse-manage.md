@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427715"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624104"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Parcourir et gérer des ressources de stockage avec l’Explorateur de serveurs
 
@@ -74,7 +74,7 @@ Vous pouvez effectuer les opérations suivantes sur les objets blob en utilisant
 
 1. Dans Cloud Explorer, choisissez le conteneur d’objets blob. Dans la fenêtre du conteneur, sélectionnez le bouton **Charger l’objet blob**.
 
-1. Dans la boîte de dialogue **Télécharger un nouveau fichier**, sélectionnez le bouton **Parcourir** pour spécifier le fichier à charger, puis entrez un nom de dossier dans la zone **Dossier (facultatif)**.
+1. Dans la boîte de dialogue **Télécharger un nouveau fichier**, sélectionnez le bouton **Parcourir** pour spécifier le fichier à charger, puis entrez un nom de dossier dans la zone **Dossier (facultatif)** .
 
    ![Chargement d’un fichier dans un dossier d’objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Supprimez tous les fichiers du dossier.
 
 Vous pouvez filtrer les objets blob qui sont affichés en spécifiant un préfixe commun.
 
-Par exemple, si vous entrez le préfixe **hello** dans la zone de texte de filtre, puis sélectionnez le bouton **Exécuter** (**!**), seuls les objets blob qui commencent par « hello » s’affichent.
+Par exemple, si vous entrez le préfixe **hello** dans la zone de texte de filtre, puis sélectionnez le bouton **Exécuter** ( **!** ), seuls les objets blob qui commencent par « hello » s’affichent.
 
 ![Zone de texte de filtre](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -183,7 +183,7 @@ La table est organisée en entités (lignes) et propriétés (colonnes). Par exe
 
 Dans le Concepteur de tables, ouvrez le menu contextuel d’une entité (une seule ligne) ou d’une propriété (une seule cellule), puis sélectionnez **Modifier**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Ajouter ou modifier une entité de table](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Il n’est pas nécessaire que les entités d’une table possèdent les mêmes propriétés (colonnes). Gardez à l’esprit les restrictions suivantes au moment de l’affichage et de la modification des données :
 

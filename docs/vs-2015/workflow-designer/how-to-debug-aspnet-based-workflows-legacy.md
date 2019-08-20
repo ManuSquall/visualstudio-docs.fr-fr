@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144651"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procédure : Déboguer des workflows basés sur ASP.NET (hérités)
 Cette rubrique décrit comment déboguer des applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] basées sur [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité.  
@@ -54,5 +54,5 @@ Cette rubrique décrit comment déboguer des applications [!INCLUDE[vstecasp](..
   
 ## <a name="see-also"></a>Voir aussi  
  [Appel du débogueur Visual Studio pour Windows Workflow Foundation (hérité)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Guide pratique pour Définissez des points d’arrêt dans le flux de travail (hérité)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
+ [Guide pratique : Définissez des points d’arrêt dans le flux de travail (hérité)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
  [Débogage de flux de travail hérités](../workflow-designer/debugging-legacy-workflows.md)

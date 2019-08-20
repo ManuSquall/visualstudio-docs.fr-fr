@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936905"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824197"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : recommandations
 
@@ -107,9 +107,9 @@ Pour décrire les modifications que vous envisagez d’apporter à votre systèm
 |Supprimer une dépendance qui ne doit pas exister|Cliquez sur la dépendance, puis appuyez sur **supprimer**.|
 |Changer ou restreindre la direction d'une dépendance|Définissez ses **Direction** propriété.|
 |Créer de nouvelles dépendances|Utilisez le **dépendance** et **dépendance bidirectionnelle** outils.<br /><br /> Pour dessiner plusieurs dépendances, double-cliquez sur l'outil. Lorsque vous avez terminé, cliquez sur le **pointeur** outil ou appuyez sur la **ÉCHAP** clé.|
-|Spécifier que les artefacts associés à une couche ne peuvent pas dépendre des espaces de noms spécifiés|Tapez les espaces de noms dans la couche **interdit les dépendances de Namespace** propriété. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
-|Spécifier que les artefacts associés à une couche ne doivent pas appartenir aux espaces de noms spécifiés|Tapez les espaces de noms dans la couche **interdit les espaces de noms** propriété. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
-|Spécifier que les artefacts associés à une couche doivent appartenir à un des espaces de noms spécifiés|Tapez l’espace de noms dans la couche **espaces de noms requis** propriété. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche ne peuvent pas dépendre des espaces de noms spécifiés|Tapez les espaces de noms dans la couche **interdit les dépendances de Namespace** propriété. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche ne doivent pas appartenir aux espaces de noms spécifiés|Tapez les espaces de noms dans la couche **interdit les espaces de noms** propriété. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche doivent appartenir à un des espaces de noms spécifiés|Tapez l’espace de noms dans la couche **espaces de noms requis** propriété. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
 
 ### <a name="Improving"></a> Amélioration de la structure du code
 
@@ -141,7 +141,7 @@ Pour vous aider à identifier des couches et des dépendances ou à en discuter 
 
 - Modifiez les couleurs des couches et des dépendances.
 
-    - Sélectionnez un ou plusieurs couches ou dépendances, avec le bouton droit, puis cliquez sur **propriétés**. Dans le **propriétés** fenêtre, modifiez le **couleur** propriété.
+  - Sélectionnez un ou plusieurs couches ou dépendances, avec le bouton droit, puis cliquez sur **propriétés**. Dans le **propriétés** fenêtre, modifiez le **couleur** propriété.
 
 ## <a name="Validate"></a> Valider le code par rapport au diagramme
 

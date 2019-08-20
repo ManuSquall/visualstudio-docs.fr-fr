@@ -14,11 +14,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184729"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly, élément (extension de l'Assistant Modèle de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Spécifie le nom ou le nom fort de l’assembly qui implémente le `IWizard` int
   
  \<VSTemplate>  
 \<WizardExtension>  
-\<Assembly>  
+\<Assembly >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -92,4 +92,4 @@ Spécifie le nom ou le nom fort de l’assembly qui implémente le `IWizard` int
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour Utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Guide pratique : utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

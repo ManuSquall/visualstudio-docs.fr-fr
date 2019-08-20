@@ -1,5 +1,5 @@
 ---
-title: Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur | Microsoft Docs
+title: 'Ligne de commande du profileur : Obtenir des données de mémoire de services .NET Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831653"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747815"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
-Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] utilisant la méthode d’échantillonnage à partir de la ligne de commande.
+Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service .NET Framework utilisant la méthode d’échantillonnage à partir de la ligne de commande.
 
 ## <a name="common-tasks"></a>Tâches courantes
 

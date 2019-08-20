@@ -55,7 +55,7 @@ La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour l
 ```
 
 > [!NOTE]
-> La résolution des symboles peut prendre du temps, surtout quand vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Ainsi, envisagez de copier les fichiers *.pdb* au même emplacement local que les fichiers binaires (*.dll* et *.exe*).
+> La résolution des symboles peut prendre du temps, surtout quand vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Ainsi, envisagez de copier les fichiers *.pdb* au même emplacement local que les fichiers binaires ( *.dll* et *.exe*).
 
 ### <a name="exclude-and-include"></a>Exclure et inclure
 
@@ -89,13 +89,13 @@ Si **Include** est vide, le traitement de la couverture du code inclut tous les 
 
 Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l’équivalent des caractères génériques. En particulier :
 
-- **.\\*** correspond à une chaîne de caractères (quels qu’ils soient)
+- **.\\** * correspond à une chaîne de caractères (quels qu’ils soient)
 
 - **\\.** correspond à un point « . »
 
 - **\\(   \\)** correspond à des parenthèses « (  ) »
 
-- **\\\\**correspond à un séparateur de chemin de fichier « \\ »
+- **\\\\** correspond à un séparateur de chemin de fichier « \\ »
 
 - **^** correspond au début de la chaîne
 

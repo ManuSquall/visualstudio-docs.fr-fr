@@ -1,5 +1,5 @@
 ---
-title: Concepteur de flux de travail - raccourcis clavier dans le Concepteur de flux de travail
+title: 'Concepteur de flux de travail : Raccourcis clavier'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537099"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825511"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 
@@ -79,11 +79,11 @@ Par défaut, les raccourcis clavier par défaut pour la modification de texte Vi
 
 - Le remappage des raccourcis clavier correspondant aux commandes suivantes n'a aucun effet. Vous pouvez utiliser uniquement les raccourcis clavier par défaut pour accéder aux commandes suivantes lors de la modification d'une expression.
 
-   - Couper
-   - Copier
-   - Coller
-   - Tout Sélectionner
-   - Annuler
-   - Rétablir
+  - Couper
+  - Copier
+  - Coller
+  - Tout Sélectionner
+  - Annuler
+  - Rétablir
 
 - Pour remapper les raccourcis clavier pour les commandes de modification d’expression à l’intérieur du Concepteur de flux de travail dans Visual Studio, modifier les raccourcis figurant dans la portée du Concepteur de Workflow. Modifications apportées dans la portée de l’éditeur de texte ne s’appliquent pas automatiquement au Concepteur de flux de travail. Si vous souhaitez remapper des raccourcis dans ces deux éléments, vous devez appliquer les modifications deux fois (une fois pour chaque interface).

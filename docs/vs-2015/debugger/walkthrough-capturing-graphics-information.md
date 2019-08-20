@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151472"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 - Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture de Graphics](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   - ou -  
+   ou  
   
    Quand l’application a le focus, appuyez sur **Impr. écran**.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678861"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825652"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Paramètres synchronisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
 
 - Les options suivantes des pages **Outils &#124; Options** :
 
-    - Paramètres **Thème** et paramètres de mise en majuscules de la barre de menus, dans la page d’options **Environnement**, **Général**
+  - Paramètres **Thème** et paramètres de mise en majuscules de la barre de menus, dans la page d’options **Environnement**, **Général**
 
-    - Tous les paramètres de la page d’options **Environnement**, **Polices et couleurs**
+  - Tous les paramètres de la page d’options **Environnement**, **Polices et couleurs**
 
-    - Tous les raccourcis clavier de la page d’options **Environnement**, **Clavier**
+  - Tous les raccourcis clavier de la page d’options **Environnement**, **Clavier**
 
-    - Tous les paramètres de la page d’options **Environnement, onglets et fenêtres**
+  - Tous les paramètres de la page d’options **Environnement, onglets et fenêtres**
 
-    - Tous les paramètres de la page d’options **Environnement**, **Démarrage**
+  - Tous les paramètres de la page d’options **Environnement**, **Démarrage**
 
-    - Tous les paramètres des pages d’options de l’**éditeur de texte**
+  - Tous les paramètres des pages d’options de l’**éditeur de texte**
 
 - Tous les paramètres sur les pages d'options du concepteur XAML
 

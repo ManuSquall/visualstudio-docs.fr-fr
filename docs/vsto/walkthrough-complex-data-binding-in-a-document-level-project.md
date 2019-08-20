@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981674"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692339"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules dans une feuille de calcul Microsoft Office Excel aux champs dans la base de données Northwind SQL Server.
@@ -174,7 +174,7 @@ ms.locfileid: "62981674"
 
 1. Sélectionnez une cellule à l’intérieur de l’objet de liste.
 
-    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque (**\\***) dans la première cellule de la nouvelle ligne.
+    Une nouvelle ligne apparaît en bas de la liste, avec un astérisque ( **\*** ) dans la première cellule de la nouvelle ligne.
 
 2. Ajoutez les informations suivantes dans la ligne vide.
 
@@ -210,7 +210,7 @@ ms.locfileid: "62981674"
 
 4. Cliquez sur la flèche dans le **titre** en-tête de colonne à nouveau.
 
-5. Cliquez sur **(All)**.
+5. Cliquez sur **(All)** .
 
      De filtrage est supprimé et toutes les lignes apparaissent.
 

@@ -40,7 +40,7 @@ Les raisons possibles de ce message d’erreur sont les suivantes :
 - Essayez de modifier le code en déboguant un Dr. Watson.
 - Essayez de modifier le code après une exception non gérée se produit et l’option **dérouler la pile des appels sur les exceptions non gérées** n’est pas sélectionnée.
 - Essayez de modifier du code pendant le débogage d’une application runtime incorporée.
-- Essayez de modifier du code managé à l’aide d’une version de .NET Framework antérieures à 4.5.1 avec une cible de l’application 64 bits. Pour utiliser Modifier & Continuer pour .NET Framework antérieures à 4.5.1, définissez la cible sur **x86** dans le  **\<nom_projet >** > **propriétés**  >  **Compiler** onglet, **paramètres avancés du compilateur** paramètre.
+- Essayez de modifier du code managé à l’aide d’une version de .NET Framework antérieures à 4.5.1 avec une cible de l’application 64 bits. Pour utiliser Modifier & Continuer pour .NET Framework antérieures à 4.5.1, définissez la cible sur **x86** dans le  **\<nom_projet >**  > **propriétés**  >  **Compiler** onglet, **paramètres avancés du compilateur** paramètre.
 - Essayez de modifier le code dans un assembly qui a été modifié pendant le débogage et a été rechargé.
 - Essayez de modifier le code dans un assembly qui n’a pas été chargé.
 - Commencer à déboguer une ancienne version d’une application, car la version la plus récente a des erreurs de build.

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894183"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924510"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procédure : Créer un modèle 3D de base
 
@@ -30,13 +30,13 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 - Utilisation de la commande **Effectuer une triangulation**
 
 ## <a name="create-a-basic-3d-model"></a>Créer un modèle 3D de base
- Vous pouvez utiliser l’éditeur de modèle pour créer et modifier des modèles et des scènes 3D pour votre jeu ou votre application. Les étapes suivantes indiquent comment utiliser l’éditeur de modèle pour créer un modèle 3D simplifié d’une maison. Un modèle simplifié peut être utilisé comme un substitut pour des ressources artistiques finales qui ne sont pas encore créées, comme un maillage pour la détection de collision ou comme un modèle de bas niveau de détail à utiliser lorsque l'objet qu'il représente est trop loin pour bénéficier d'un rendu plus détaillé.
+Vous pouvez utiliser l’éditeur de modèle pour créer et modifier des modèles et des scènes 3D pour votre jeu ou votre application. Les étapes suivantes indiquent comment utiliser l’éditeur de modèle pour créer un modèle 3D simplifié d’une maison. Un modèle simplifié peut être utilisé comme un substitut pour des ressources artistiques finales qui ne sont pas encore créées, comme un maillage pour la détection de collision ou comme un modèle de bas niveau de détail à utiliser lorsque l'objet qu'il représente est trop loin pour bénéficier d'un rendu plus détaillé.
 
- Lorsque vous avez terminé, le modèle doit se présenter comme suit :
+Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
- ![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
+![Modèle terminé de la maison simplifiée](../designers/media/gfx_model_demo_house_final.png)
 
- Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Pour créer un modèle 3D simplifié d’une maison
 

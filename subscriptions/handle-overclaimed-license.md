@@ -1,50 +1,41 @@
 ---
-title: Gérer les licences surutilisées | Microsoft Docs
+title: Gérer les licences surallouées | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 02/13/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
-description: Découvrez comment les administrateurs peuvent résoudre les problèmes de surutilisation d’abonnements
-searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+description: Découvrez comment les administrateurs peuvent résoudre les problèmes de surallocation d’abonnements
+ms.openlocfilehash: 924f6fb2c513d70aefd28c1d4ff18d1af62178c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945136"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605510"
 ---
 # <a name="overallocated-subscriptions"></a>Abonnements surutilisés
-
-Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Quand cela se produit, l’onglet Abonnés affiche une alerte, accompagnée d’informations détaillées.
+Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. Ceci s’appelle la « surallocation ».  Quand cela se produit, l’onglet Abonnés affiche une alerte et vous fournit des informations détaillées sur le nombre d’abonnements qui ont été suralloués.
 
 > [!NOTE]
-> Les scénarios de surutilisation ne sont pas autorisés dans les programmes Open License.  En outre, d’autres programmes peuvent afficher ces informations différemment dans le portail.
+> Les surallocations ne sont pas autorisées dans les programmes Open License.  En outre, d’autres programmes peuvent afficher ces informations différemment dans le portail.
 >
 > [!div class="mx-imgBorder"]
 > ![Notification de surutilisation d’abonnements](_img/over-claimed/over-claimed-alert.png)
 
-## <a name="resolving-overallocated-subscriptions"></a>Résolution des abonnements surutilisés
-
-Pour résoudre des licences surutilisées :
-
-1. Cliquez sur le texte d’alerte. Vous voyez s’afficher une liste filtrée des abonnés pour lesquels le niveau et la date d’expiration de l’abonnement attribué donne lieu à une surutilisation de licences. 
-
-2. Supprimez des abonnés de façon à résoudre le problème de surutilisation des licences. 
-
-3. La vue d’ensemble sur le côté gauche de la page est ensuite actualisée pour montrer qu’il n’y a plus de problème et retirer toutes les notifications de surutilisation. 
+## <a name="resolve-overallocated-subscriptions"></a>Résoudre les abonnements suralloués
+Il y a plusieurs façons de résoudre les surallocations :
+- Contacter votre revendeur pour acheter des abonnements supplémentaires.
+- Attendre jusqu’à la période de régularisation annuelle et payer les abonnements suralloués à ce moment. 
+- Supprimer des attributions d’abonnement.  (Ceci n’empêchera pas la nécessité d’un paiement au moment de la régularisation annuelle, car la régularisation est basée sur le nombre maximal d’abonnements attribués à n’importe quel moment de l’année.)
 
 ## <a name="billing-and-true-up"></a>Facturation et régularisation
-
 Si votre organisation a un Contrat Entreprise (EA), les administrateurs peuvent attribuer des abonnements sans les acheter, en les payant plus tard par le biais d’un processus de rapprochement appelé « régularisation ».  En cas de surutilisation, le nombre maximal d’abonnements attribués aux utilisateurs durant la « régularisation » est facturé à votre entreprise.  Cela est vrai même si le nombre actuel d’abonnements ne correspond plus au nombre maximal d’abonnements attribués au moment de la régularisation.  Pour en savoir plus sur le contrôle de l’utilisation maximum, consultez la rubrique [Utilisation maximum](maximum-usage.md).
 
 > [!Important]
-> Si des abonnements Visual Studio avec GitHub Enterprise sont attribués par des administrateurs d’abonnement Visual Studio alors qu’ils n’ont jamais été achetés, les administrateurs GitHub Enterprise au sein de l’organisation ne les voient pas. Pour vérifier que les abonnements GitHub Enterprise sont visibles, un achat comprenant **au moins** un abonnement Visual Studio Professional avec GitHub Enterprise ou Visual Studio Enterprise avec GitHub Enterprise doit être effectué à la première attribution des abonnements.  
+> Si des abonnements Visual Studio avec GitHub Enterprise sont attribués par des administrateurs d’abonnement Visual Studio alors qu’ils n’ont jamais été achetés, les administrateurs GitHub Enterprise au sein de l’organisation ne les voient pas. Pour vérifier que les abonnements GitHub Enterprise sont visibles, un achat comprenant **au moins** un abonnement Visual Studio Professional avec GitHub Enterprise ou Visual Studio Enterprise avec GitHub Enterprise doit être effectué à la première attribution des abonnements.
 >
 > Il appartient au client de vérifier qu’à chaque abonnement GitHub attribué correspond un abonnement Visual Studio avec GitHub attribué dans le portail Gérer afin de respecter les conditions de licence pour cet abonnement.
 
-
-Découvrez-en plus sur la gestion des [abonnements Visual Studio avec GitHub Enterprise](assign-github.md).
-
-## <a name="support-resources"></a>Ressources de support
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+## <a name="next-steps"></a>Étapes suivantes
+- Découvrez-en plus sur la gestion des [abonnements Visual Studio avec GitHub Enterprise](assign-github.md).
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.

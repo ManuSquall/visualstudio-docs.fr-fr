@@ -1,5 +1,5 @@
 ---
-title: Analyse des résultats des tests de charge dans la vue Graphiques de l'analyseur de test de charge
+title: Analyser les résultats des test de charge dans l’affichage des graphiques de l’analyseur de test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823000"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926468"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -47,20 +47,20 @@ Le tableau suivant répertorie les graphiques prédéfinis à votre disposition 
 |Contrôleur et agents|Informations sur les ordinateurs utilisés pour exécuter les tests de charge. Cela inclut des données sur l'utilisation de la mémoire, le processeur, le disque physique, les processus.<br /><br /> Par défaut, seules les données sur les compteurs Mégaoctets disponibles et Temps processeur sont collectées.|
 |Temps de réponse de la transaction|Temps de réponse moyen pour les transactions effectuées durant le test de charge.|
 
- Vous pouvez afficher différents compteurs sur le graphique au moment de l'exécution et après l'exécution d'un test.
+Vous pouvez afficher différents compteurs sur le graphique au moment de l'exécution et après l'exécution d'un test.
 
 > [!NOTE]
 > Seuls les compteurs de performance de temps de réponse peuvent être ajoutés à un graphique de temps de réponse généré automatiquement.
 
- Les informations sur les compteurs sont affichées à la fois sur le graphique et dans la légende au-dessous du graphique. Vous pouvez également effectuer un zoom avant sur une section du graphique. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Les informations sur les compteurs sont affichées à la fois sur le graphique et dans la légende au-dessous du graphique. Vous pouvez également effectuer un zoom avant sur une section du graphique. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Compteurs affichés sur les graphiques
 
- Les graphiques affichent des *compteurs*. Les compteurs font référence aux données rassemblées pendant un test de charge, des exemples de compteurs sont les tests par seconde ou la durée moyenne du test. Pour plus d’informations sur les compteurs, consultez [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Les graphiques affichent des *compteurs*. Les compteurs font référence aux données rassemblées pendant un test de charge, des exemples de compteurs sont les tests par seconde ou la durée moyenne du test. Pour plus d’informations sur les compteurs, consultez [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- La légende des compteurs affichés dans les graphiques indique plusieurs colonnes de données utiles relatives à la série de tests de charge. Pour désactiver l'affichage des données sur le graphique, désactivez la case à cocher sur la ligne dans la légende.
+La légende des compteurs affichés dans les graphiques indique plusieurs colonnes de données utiles relatives à la série de tests de charge. Pour désactiver l'affichage des données sur le graphique, désactivez la case à cocher sur la ligne dans la légende.
 
- La légende contient les colonnes suivantes :
+La légende contient les colonnes suivantes :
 
 |Counter|Nom du compteur|
 |-|-|
@@ -87,11 +87,11 @@ Le tableau suivant répertorie les graphiques prédéfinis à votre disposition 
 
 ## <a name="related-tasks"></a>Tâches connexes
 
- [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)
+[Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Voir aussi
 

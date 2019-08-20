@@ -17,17 +17,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934513"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587016"
 ---
 # <a name="custombuild-task"></a>Tâche CustomBuild
 
 Inclut l’outil Compilateur Visual C++, cmd.exe, dans un wrapper. Cette classe est dérivée de [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), mais elle n’utilise pas le suivi de fichiers pour découvrir les dépendances de fichiers. Toutes les dépendances doivent être explicitement spécifiées avec AdditionalDependencies pour que la génération incrémentielle fonctionne correctement.
-
 
 ## <a name="parameters"></a>Paramètres
 

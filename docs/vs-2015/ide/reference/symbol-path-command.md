@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 27c4c8ac23e2524245107d9052642350e9db09d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163271"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
   
 ## <a name="arguments"></a>Arguments  
  `pathname`  
- Optionnel. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.  
+ facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.  
   
 ## <a name="remarks"></a>Remarques  
  Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple ajoute deux chemins à la liste des répertoires de symboles.  
   
 ```  
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple affiche une liste de chemins des symboles actuels délimités par des points-virgules.  
   
 ```  

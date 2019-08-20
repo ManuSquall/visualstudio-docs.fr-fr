@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792891"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604895"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Comptes, Environnement, boîte de dialogue Options
 
@@ -33,7 +33,7 @@ Lorsque cette option est sélectionnée, le comportement de Visual Studio change
 
 ## <a name="registered-azure-clouds"></a>Clouds Azure inscrits
 
-Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou, vous pouvez avoir accès à une instance souverain ou gouvernemental d’Azure comme Azure dans des États-Unis en Chine ou Azure U.S. Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
+Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Vous pouvez aussi avoir accès à une instance souveraine ou du secteur public d’Azure, comme Azure Chine 21 Vianet ou Azure - Gouvernement des États-Unis. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
 
 Inscrivez un cloud Azure supplémentaire en choisissant le bouton **Ajouter**. La boîte de dialogue **Ajouter un nouveau cloud Azure** répertorie plusieurs instances de cloud Azure connues auxquelles vous pouvez vous connecter, ou vous pouvez entrer l’URL d’un point de terminaison Azure privé.
 
@@ -47,4 +47,3 @@ Après avoir inscrit un cloud Azure supplémentaire, vous pouvez choisir le clou
 - [Se connecter à Visual Studio](../signing-in-to-visual-studio.md)
 - [Utiliser plusieurs comptes d’utilisateur](../work-with-multiple-user-accounts.md)
 - [Paramètres d’environnement](../environment-settings.md)
-- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

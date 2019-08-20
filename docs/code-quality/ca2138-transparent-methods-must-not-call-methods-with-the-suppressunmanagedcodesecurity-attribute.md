@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e302c9e8cc74d461dc67237bd62b34097c0aceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 316aef3b0f1f715857fde8eaf2a6e74b1a49e40f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542181"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920577"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138 : Les méthodes transparentes ne doivent pas appeler les méthodes ayant l'attribut SuppressUnmanagedCodeSecurity
 
@@ -23,22 +23,22 @@ ms.locfileid: "62542181"
 |-|-|
 |TypeName|TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods|
 |CheckId|CA2138|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode transparente de sécurité appelle une méthode marquée avec le <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribut.
+Une méthode transparente de sécurité appelle une méthode qui est marquée avec <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> l’attribut.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle se déclenche sur toute méthode transparente qui appelle directement en code natif, par exemple, à l’aide d’un P/Invoke (non managé) appeler. Méthodes P/Invoke et COM interop sont marqués avec le <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribut de résultat dans un LinkDemand effectué sur la méthode d’appel. Étant donné que le code transparent de sécurité ne peut pas satisfaire LinkDemands, le code ne peut pas également appeler les méthodes marquées avec l’attribut SuppressUnmanagedCodeSecurity, ou des méthodes de classe qui est marquée avec l’attribut SuppressUnmanagedCodeSecurity. La méthode échoue, ou à la demande sera convertie en une demande complète.
+Cette règle se déclenche sur toute méthode transparente qui appelle directement dans le code natif, par exemple, à l’aide d’un appel P/Invoke (appel de code non managé). Les méthodes P/Invoke et COM Interop qui sont marquées <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> avec l’attribut entraînent la réalisation d’un LinkDemand sur la méthode appelante. Étant donné que le code transparent de sécurité ne peut pas satisfaire les LinkDemands, le code ne peut pas non plus appeler les méthodes marquées avec l’attribut SuppressUnmanagedCodeSecurity, ou les méthodes de la classe qui est marquée avec l’attribut SuppressUnmanagedCodeSecurity. La méthode échoue ou la demande est convertie en une demande complète.
 
- Les violations de cette règle provoquent une <xref:System.MethodAccessException> dans le modèle de transparence de sécurité de niveau 2 et une demande complète pour <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> dans le modèle de transparence de niveau 1.
+Les violations de cette règle entraînent <xref:System.MethodAccessException> une dans le modèle de transparence de sécurité de niveau 2 et une <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> demande complète pour dans le modèle de transparence de niveau 1.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez le <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> d’attribut et marquez la méthode avec le <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> attribut.
+Pour corriger une violation de cette règle, supprimez <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> l’attribut et marquez la méthode <xref:System.Security.SecurityCriticalAttribute> avec l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut ou.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemple
- [!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]
+## <a name="example"></a>Exemples
+[!code-csharp[FxCop.Security.CA2138.TransparentMethodsMustNotCallSuppressUnmanagedCodeSecurityMethods#1](../code-quality/codesnippet/CSharp/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute_1.cs)]

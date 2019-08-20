@@ -3,25 +3,22 @@ title: Anonymisation des données des abonnés Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-searchscope: VS Subscription
-ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946201"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377962"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
-
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
 ## <a name="when-does-anonymization-occur"></a>Quand l’anonymisation a-t-elle lieu ?
-
 Les événements qui rendent un abonnement inutilisable par un abonné déclenchent l’anonymisation.  La vitesse à laquelle l’anonymisation se produit varie en fonction du type d’abonnement et de l’événement déclencheur. Pour plus d’informations, consultez le tableau ci-dessous.
 
 | Type d’abonnement                                                                                                                       | Événement déclenchant l’anonymisation                                                                                                     | Délai au-delà duquel l’anonymisation a lieu |
@@ -33,7 +30,6 @@ Les événements qui rendent un abonnement inutilisable par un abonné déclench
 | Tous les abonnements                                                                                                                       | Un abonné est supprimé du locataire qui est associé au compte Azure Active Directory                                | Immédiatement               |
 
 ## <a name="faq"></a>Questions fréquentes (FAQ)
-
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>Q :  Quand les informations personnelles d’un abonné sont anonymisées, celui-ci perd-il l’accès à l’abonnement ?
 R :  Non.  L’anonymisation a lieu en réponse à un événement qui entraîne la perte d’accès à l’abonnement, mais elle n’entraîne pas l’absence d’accès.
 
@@ -41,5 +37,4 @@ R :  Non.  L’anonymisation a lieu en réponse à un événement qui entraîne
 R :  Oui. Tant que l’abonnement n’est pas arrivé à expiration, il peut être réaffecté à un autre abonné.
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 Découvrez comment empêcher l’anonymisation en [établissant une liaison entre les identités MSA et AAD](/azure/active-directory/b2b/add-users-administrator).

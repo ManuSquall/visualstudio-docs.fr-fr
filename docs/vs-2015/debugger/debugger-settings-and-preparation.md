@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198876"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
   
- Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Pour plus d’informations, consultez [Guide pratique pour Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Paramètres du projet de débogueur](../debugger/debugger-project-settings.md)  
@@ -58,7 +58,7 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
  [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md)  
  Décrit les différents aspects du processus d’hébergement.  
   
- [Guide pratique pour indiquer une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Guide pratique : indiquer une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Explique comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.  
   
 ## <a name="see-also"></a>Voir aussi  

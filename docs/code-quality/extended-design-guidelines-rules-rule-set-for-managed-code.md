@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975906"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585076"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 
-L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les problèmes de facilité d’utilisation et la facilité de gestion qui sont signalés. Accentuation supplémentaire est placée sur les règles de dénomination. Vous devez envisager d’y compris cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les normes la plus élevées pour l’écriture de code qui est facile à gérer.
+L’ensemble de règles des règles de conception étendue de Microsoft développe les règles de base pour optimiser les problèmes de facilité d’utilisation et de maintenance signalés. Une mise en évidence supplémentaire est placée dans les instructions d’affectation de noms. Vous devez envisager d’inclure cet ensemble de règles si votre projet inclut du code de bibliothèque ou si vous souhaitez appliquer les normes les plus élevées pour écrire du code facile à gérer.
 
-Les règles de conception étendue incluent l’ensemble de la conception de règles de base Microsoft. Les règles de conception de base incluent l’ensemble de règles Microsoft minimales recommandées. Pour plus d’informations, consultez [règle de règles de conception base définie pour le code managé](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) et [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Les règles de la conception étendue incluent toutes les règles dans l’ensemble de règles de [règles de conception de base](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , qui inclut les règles dans l’ensemble de règles des [règles recommandées managées](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-Le tableau suivant décrit toutes les règles dans l’ensemble de règles Microsoft règles de conception étendue.
+Le tableau suivant décrit toutes les règles de l’ensemble de règles des règles de conception étendue Microsoft.
 
 |Règle|Description|
 |----------|-----------------|
@@ -65,7 +65,7 @@ Le tableau suivant décrit toutes les règles dans l’ensemble de règles Micro
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Les méthodes transparentes doivent contenir uniquement des IL vérifiables|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler les méthodes ayant l'attribut SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Le code transparent ne doit pas faire référence à des éléments critiques de sécurité|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Méthodes transparentes ne répondent pas aux LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Les méthodes transparentes ne répondent pas aux LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Les types doivent être au moins aussi critiques que les types de base et les interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Les méthodes transparentes ne peuvent pas utiliser d’assertions de sécurité|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler du code natif|

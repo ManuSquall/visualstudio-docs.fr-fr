@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702640"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891025"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d'exécution avec le débogueur Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,8 @@ Vous pouvez utiliser cette fonctionnalité pour déboguer des applications qui s
 
    1. Tapez le nom dans la zone de liste **Qualificateur** .
 
-      >**Remarque** si, dans les étapes ultérieures, vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, utilisez l’adresse IP. (Le numéro de port peut être automatiquement après avoir sélectionné le processus. Vous pouvez également l’entrer manuellement. Dans l’illustration ci-dessous, 4020 est le port par défaut pour le débogueur distant.)
+      > [!NOTE]
+      > Si, dans les étapes ultérieures, vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, utilisez l’adresse IP. (Le numéro de port peut être automatiquement après avoir sélectionné le processus. Vous pouvez également l’entrer manuellement. Dans l’illustration ci-dessous, 4020 est le port par défaut pour le débogueur distant.)
 
    2. Cliquez sur la flèche de déroulement associée à la zone de liste **Qualificateur** , puis sélectionnez le nom de l’ordinateur dans la liste déroulante.
 
@@ -106,7 +107,7 @@ Vous pouvez utiliser cette fonctionnalité pour déboguer des applications qui s
 
 ## <a name="additional-info"></a>Informations supplémentaires
 
-Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d’outils **Emplacement de débogage** ou la fenêtre **Processus** . Pour plus d'informations, voir [Procédure : Définir le programme en cours](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d’outils **Emplacement de débogage** ou la fenêtre **Processus** . Pour plus d’informations, consultez [Guide pratique pour Définir le programme en cours](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Si vous essayez d’établir un attachement à un processus appartenant à un compte d’utilisateur non fiable, une boîte de dialogue d’avertissement de sécurité s’affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -126,7 +127,7 @@ Pour certains types d’application (par exemple, les applications du Windows St
 |Déboguer une application managée ou native sur l’ordinateur local|Utilisez attacher au processus ou [débogage standard](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Pour accéder rapidement à la boîte de dialogue, utilisez **CTRL + ALT + P** puis tapez la première lettre du nom du processus.|
 |Déboguer des applications ASP.NET sur l’ordinateur local après le démarrage de l’application sans le débogueur|Utilisez attacher au processus|iiexpress.exe|Cela peut être utile pour rendre votre application à charger plus rapidement, telles que (par exemple) lors du profilage. |
 |Débogage distant ASP.NET 4 ou 4.5 sur un serveur IIS|Utiliser les outils à distance et l’attacher au processus|w3wp.exe|Consultez [Remote Debugging ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils à distance et l’attacher au processus|dnx.exe|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [Remote Debugging ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils à distance et l’attacher au processus|DNX.exe|Déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [Remote Debugging ASP.NET sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Déboguer d’autres types d’application pris en charge sur un processus de serveur|Utiliser les outils à distance (si le serveur est à distance) et l’attacher au processus|Iexplore.exe ou autres processus|Si nécessaire, utilisez le Gestionnaire des tâches pour aider à identifier le processus. Consultez [le débogage à distance](../debugger/remote-debugging.md) et des sections plus loin dans cette rubrique|
 |Débogage à distance une application de bureau Windows|F5 et outils à distance|N/A| Consultez [débogage à distance](../debugger/remote-debugging.md)|
 |Une application Windows universelle (UWP), OneCore, HoloLens ou IoT de débogage à distance|Déboguer un package d’application installé|N/A|Utilisez **déboguer / autres cibles de débogage / déboguer le Package d’application installé** au lieu de **attacher au processus**|

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933607"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824426"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
 
@@ -140,14 +140,14 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
 ## <a name="available-function-templates"></a>Modèles de fonctions disponibles
 
 - **GitHub Trigger** : répond aux événements qui se produisent dans vos dépôts GitHub. Pour plus d’informations, consultez [l’article Azure Functions sur GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function).
-    - GitHub commenter : cette fonction est exécutée quand elle reçoit un webhook GitHub pour un problème ou une demande de tirage (pull request), et ajoute un commentaire.
-    - WebHook GitHub - Cette fonction est exécutée quand elle reçoit un Webhook GitHub.
+  - GitHub commenter : cette fonction est exécutée quand elle reçoit un webhook GitHub pour un problème ou une demande de tirage (pull request), et ajoute un commentaire.
+  - WebHook GitHub - Cette fonction est exécutée quand elle reçoit un Webhook GitHub.
 
 - **HTTP** : déclenche l’exécution du code à l’aide d’une requête HTTP. Des modèles explicites sont disponibles pour les déclencheurs HTTP suivants :
-    - Http Trigger
-    - Http GET CRUD
-    - Http POST CRUD
-    - Http Trigger with parameters
+  - Http Trigger
+  - Http GET CRUD
+  - Http POST CRUD
+  - Http Trigger with parameters
 
 - **Timer** : exécute le nettoyage ou d’autres tâches de traitement par lots selon une planification prédéfinie. Ce modèle accepte deux champs : un nom et une planification (expression CRON de six champs). Pour plus d’informations, consultez [l’article Azure Functions sur les minuteurs](/azure/azure-functions/functions-create-scheduled-function).
 

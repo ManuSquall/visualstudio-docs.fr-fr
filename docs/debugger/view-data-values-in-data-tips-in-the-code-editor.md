@@ -75,7 +75,7 @@ Pour fermer tous les DataTips, sur le **déboguer** menu, sélectionnez **efface
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Fermer tous les DataTips d’un fichier spécifique
 
-Pour fermer tous les DataTips d’un fichier spécifique, sur le **déboguer** menu, sélectionnez **effacer tous les DataTips épinglés à \<Filename >**.
+Pour fermer tous les DataTips d’un fichier spécifique, sur le **déboguer** menu, sélectionnez **effacer tous les DataTips épinglés à \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Développez et modifier les informations
 Vous pouvez utiliser les DataTips pour développer un tableau, une structure ou un objet afin d’en afficher les membres. Vous pouvez également modifier la valeur d'une variable depuis un DataTip.

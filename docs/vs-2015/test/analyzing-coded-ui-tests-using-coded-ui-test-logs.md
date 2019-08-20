@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686483"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824218"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,42 +29,42 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
   
 ## <a name="how-do-i-do-this"></a>Comment faire ?  
   
-### <a name="step-1-enable-logging"></a>Étape 1 : Activer la journalisation  
+### <a name="step-1-enable-logging"></a>Étape 1 : Activer la journalisation  
  Selon votre scénario, appliquez l'une des méthodes suivantes pour activer le journal.  
   
 - Cibler .NET Framework version 4 sans fichier App.config présent dans le projet de test  
   
-    - Ouvrez le fichier **QTAgent32_40.exe.config**.  
-  
-         Par défaut, ce fichier se trouve dans **\<lecteur>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.  
-  
-         Enregistrez le fichier.  
-  
+  - Ouvrez le fichier **QTAgent32_40.exe.config**.  
+
+    Par défaut, ce fichier se trouve dans **\<lecteur>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.  
+
+    Enregistrez le fichier.  
+
 - Cibler .NET Framework version 4.5 sans fichier App.config présent dans le projet de test  
   
-    - Ouvrez le fichier **QTAgent32.exe.config**.  
-  
-         Par défaut, ce fichier se trouve dans **\<lecteur>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.  
-  
-         Enregistrez le fichier.  
+  - Ouvrez le fichier **QTAgent32.exe.config**.  
+
+    Par défaut, ce fichier se trouve dans **\<lecteur>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.  
+
+    Enregistrez le fichier.  
   
 - Fichier App.config présent dans le projet de test  
   
-    - Ouvrez le fichier App.config dans le projet.  
-  
-         Ajoutez le code suivant sous le nœud de configuration :  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Ouvrez le fichier App.config dans le projet.  
+
+    Ajoutez le code suivant sous le nœud de configuration :  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Activer la journalisation à partir du code de test proprement dit  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l’interface utilisateur et afficher le journal  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l’interface utilisateur et afficher le journal  
  Quand vous exécutez un test codé de l’interface utilisateur avec les modifications du fichier **QTAgent32.exe.config** en place, vous pouvez constater qu’un lien de sortie figure dans les résultats de l’Explorateur de tests. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace a la valeur « Commentaires ».  
   
 1. Dans le menu **TEST**, choisissez **Fenêtres**, puis **Explorateur de tests**.  

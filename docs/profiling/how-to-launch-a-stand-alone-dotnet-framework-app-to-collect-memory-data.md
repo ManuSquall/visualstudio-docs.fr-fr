@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en ligne de commande | Microsoft Docs'
+title: 'Ligne de commande du profileur : Ouvrir une application client .NET Framework, obtenir les données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386060"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032952"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) .NET Framework et collecter des données de mémoire.
@@ -42,9 +42,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - L’option [/start](../profiling/start.md)**:sample** initialise le profileur.
+   - L’option [/start](../profiling/start.md) **:sample** initialise le profileur.
 
-   - L’option [/output](../profiling/output.md)**:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
+   - L’option [/output](../profiling/output.md) **:** `OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
@@ -55,9 +55,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 3. Démarrez l’application cible. Type :
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - L’option [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` est nécessaire pour collecter les données de mémoire .NET Framework. Le paramètre de mot clé spécifie s’il faut collecter les données d’allocation de mémoire, ou collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
+   - L’option [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` est nécessaire pour collecter les données de mémoire .NET Framework. Le paramètre de mot clé spécifie s’il faut collecter les données d’allocation de mémoire, ou collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
 
      |Mot clé|Description|
      |-------------|-----------------|
@@ -82,8 +82,8 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     |Option|Description|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre (**/globalon**) ou arrête (**/globaloff**) la collecte des données pour tous les processus.|
-    |[/processon](../profiling/processon-and-processoff.md)  **:** `PID` [processoff](../profiling/processon-and-processoff.md)  **:** `PID`|Démarre (**/processon**) ou arrête (**/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Démarre ( **/globalon**) ou arrête ( **/globaloff**) la collecte des données pour tous les processus.|
+    |[/processon](../profiling/processon-and-processoff.md)  **:** `PID` [processoff](../profiling/processon-and-processoff.md)  **:** `PID`|Démarre ( **/processon**) ou arrête ( **/processoff**) la collecte des données pour le processus spécifié par l’ID de processus (`PID`).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** commence à collecter des données pour le processus spécifié par `PID` (l’ID du processus). **/detach** arrête la collecte des données pour tous les processus.|
 
 - Vous pouvez également utiliser l’option **VSPerfCmd.exe**[/mark](../profiling/mark.md) pour insérer une marque de profilage dans le fichier de données. La commande **/mark** ajoute un identificateur, un horodatage et une chaîne de texte facultative définie par l’utilisateur. Les marques peuvent servir à filtrer les données.
@@ -97,7 +97,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     - Fermez l’application cible.
 
-         - ou -
+         -ou-
 
     - Tapez **VSPerfCmd /detach**
 

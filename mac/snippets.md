@@ -1,20 +1,20 @@
 ---
 title: Extraits de code
 description: Comment utiliser des extraits de code pour programmer efficacement dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540044"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787698"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code, souvent appelés  _modèles de code_, sont pratiques pour effectuer une programmation efficace, car ils permettent l’insertion et la modification de blocs de code écrits au préalable. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
+Les extraits de code, souvent appelés _modèles de code_, sont pratiques pour une programmation efficace, car ils permettent l’insertion et la modification de blocs de code pré-écrits. L’utilisation d’extraits de code peut être pratique pour ajouter rapidement des modèles courants, ou même pour apprendre de nouveaux modèles quand vous, en tant que développeur, n’êtes pas sûr de la syntaxe. Des modèles sont fournis pour C#, F#, HTML, XML, Python et Razor.
 
 Cette section explique comment créer, insérer et utiliser des extraits dans du code.
 
@@ -30,7 +30,7 @@ Il existe différentes façons d’ajouter des extraits de code, dont certaines 
 
   [![Extraits de code dans la boîte à outils](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Commande Insérer des modèles** : &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches**, puis recherchez `template`. Cela permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur  **Appliquer** :
+- **Commande Insérer des modèles** : &ndash; il n’existe actuellement pas de combinaison de touches par défaut définie pour l’insertion d’un modèle. Pour en créer une, accédez à **Visual Studio > Préférences > Combinaison de touches**, puis recherchez `template`. Ceci permet d’ajouter la combinaison de touches souhaitée dans le champ Modifier la combinaison. Cliquez ensuite sur **Appliquer** :
 
   ![Commande Insérer un modèle](media/source-editor-image15.png)
 
@@ -85,8 +85,6 @@ Il existe deux mots clés réservés que vous pouvez utiliser dans un extrait de
 - `$end$` &ndash; Lorsque l’utilisateur a fini de modifier les mots clés dans un extrait de code, le curseur est placé à l’emplacement du mot clé `$end$`.
 
 L’extrait de code `for` dans la section précédente est un exemple de ces deux mots clés réservés.
-
-Consultez les [informations de référence sur les extraits de code Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords) pour plus d’informations.
 
 ## <a name="see-also"></a>Voir aussi
 

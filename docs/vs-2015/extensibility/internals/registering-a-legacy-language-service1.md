@@ -11,11 +11,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9d78050f455e83b43dc114ad80fc084dc5604103
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188863"
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
  Cet attribut inscrit votre service de langage spécifiquement comme un service de langage. Il vous permet de définir des options qui spécifient les fonctionnalités offertes par votre service de langage. L’exemple montre un sous-ensemble des options de qu'un service de langage peut fournir. Pour l’ensemble complet des options de service de langage, consultez <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;  
@@ -129,7 +129,7 @@ namespace TestLanguagePackage
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
  Cet attribut inscrit une page de propriétés à afficher dans le **Options** boîte de dialogue sous la **éditeur de texte** catégorie. Utilisez une de ces attributs pour chaque page à afficher pour votre service de langage. Si vous avez besoin organiser vos pages dans une structure arborescente, utilisez des attributs supplémentaires pour définir chaque nœud de l’arborescence.  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a>Exemples  
  Cet exemple montre deux pages de propriétés, **Options** et **Indenting**, ainsi qu’un nœud qui contient la deuxième page de propriétés.  
   
 ```csharp  

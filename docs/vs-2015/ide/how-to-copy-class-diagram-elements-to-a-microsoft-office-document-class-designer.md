@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146133"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Procédure : Copier des éléments d’un diagramme de classes vers un document Microsoft Office (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Vous pouvez copier des formes depuis un diagramme de classes .NET (fichier .cd) 
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Pour copier tous les éléments dans un diagramme de classes  
   
-1. Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**. (Clavier : **Ctrl + A**)  
+1. Cliquez avec le bouton droit sur la surface du diagramme, puis choisissez **Sélectionner tout**. (Clavier : **CTRL + A**)  
   
 2. Dans le menu **Edition**, sélectionnez **Copier l’image**.  
   
    Vous pouvez également choisir **Copier** au lieu de **Copier l’image**. **Copier** copie l’image en tant que bitmap normale. **Copier l’image** copie l’image en tant qu’image vectorielle, ce qui est recommandé pour la plupart des applications Office.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Imprimer des diagrammes de classes (Concepteur de classes)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [Guide pratique : Imprimer des diagrammes de classes (Concepteur de classes)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [Guide pratique pour exporter des diagrammes de classes comme images (Concepteur de classes)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205404"
 ---
-# <a name="how-to-debug-web-applications"></a>Procédure : Déboguer des Applications Web
+# <a name="how-to-debug-web-applications"></a>Procédure : Déboguer des applications Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] est la principale technologie pour le développement d’applications Web dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit des outils puissants pour le débogage d'applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localement ou sur un serveur distant. Cette rubrique décrit comment déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] projet pendant le développement. Pour plus d’informations sur la façon de déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web application déjà déployée sur un serveur de production, consultez [débogage des Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
@@ -39,7 +39,7 @@ ms.locfileid: "60039542"
   
 - Le fichier de configuration de votre application (Web.config) doit avoir pour valeur mode débogage. En mode débogage, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets Web.  
   
-- Pour plus d'informations, voir [Procédure : Activer le débogage pour les Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Pour plus d’informations, consultez [Guide pratique pour Activer le débogage pour les Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Pour déboguer une application Web lors du développement  
   

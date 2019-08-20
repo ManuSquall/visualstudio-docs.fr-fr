@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680292"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825781"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gérer des modèles et des diagrammes sous la gestion de version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
   
 - Chaque diagramme est stocké dans deux fichiers. Par exemple, un diagramme de classes a :  
   
-    - **DiagramName.classdiagram** - Si ce fichier est supprimé ou endommagé, le diagramme est perdu, mais les classes et les associations qu’il comportait restent dans le modèle et peuvent être consultées dans l’Explorateur de modèles UML.  
-  
-    - **DiagramName.classdiagram.layout** - Si ce fichier est supprimé, les formes continuent d’apparaître dans le diagramme, mais leurs tailles et leurs positions sont perdues. Chaque fichier de disposition est accessoire par rapport à un fichier de diagramme. Pour l’afficher, cliquez sur le [+] en regard du fichier de diagramme dans l’Explorateur de solutions.  
+  - **DiagramName.classdiagram** - Si ce fichier est supprimé ou endommagé, le diagramme est perdu, mais les classes et les associations qu’il comportait restent dans le modèle et peuvent être consultées dans l’Explorateur de modèles UML.  
+
+  - **DiagramName.classdiagram.layout** - Si ce fichier est supprimé, les formes continuent d’apparaître dans le diagramme, mais leurs tailles et leurs positions sont perdues. Chaque fichier de disposition est accessoire par rapport à un fichier de diagramme. Pour l’afficher, cliquez sur le [+] en regard du fichier de diagramme dans l’Explorateur de solutions.  
   
 > [!NOTE]
 > Il est important de maintenir la cohérence entre les fichiers. Par exemple, si vous utilisez le contrôle de code source pour annuler des modifications apportées à un fichier .uml, annulez les modifications correspondantes dans les fichiers .*diagram et .layout en même temps. Éléments représentés dans un. \*fichier de diagramme seront perdue si elles ne sont pas également représentés dans un fichier .uml.  
@@ -55,9 +55,9 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
   
 - Pour vous assurer que vous modifiez uniquement le package sur lequel vous travaillez :  
   
-    - Définissez la propriété **LinkedPackage** d’un diagramme de classes, de composant ou de cas d’usage UML.  
-  
-    - Dans l’Explorateur de modèles UML, faites glisser une activité ou une interaction dans votre package dès que vous l’avez créée. Cet élément apparaît alors dans l’Explorateur de modèles UML quand vous créez le premier nœud dans le diagramme d’activités ou de séquence.  
+  - Définissez la propriété **LinkedPackage** d’un diagramme de classes, de composant ou de cas d’usage UML.  
+
+  - Dans l’Explorateur de modèles UML, faites glisser une activité ou une interaction dans votre package dès que vous l’avez créée. Cet élément apparaît alors dans l’Explorateur de modèles UML quand vous créez le premier nœud dans le diagramme d’activités ou de séquence.  
   
 - Pour vous aider à effectuer le suivi des packages, renommez les fichiers de package pour refléter les noms réels des packages.  
   

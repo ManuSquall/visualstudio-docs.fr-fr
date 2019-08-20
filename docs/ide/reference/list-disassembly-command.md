@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970159"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926221"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
 Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.
@@ -32,33 +32,33 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>Commutateurs
- Chaque commutateur peut être appelé à l’aide de sa forme complète ou abrégée.
+Chaque commutateur peut être appelé à l’aide de sa forme complète ou abrégée.
 
- /count: `number` [ou] /c: `number` [ou] /length: `number` [ou] /l: `number`
+/count: `number` [ou] /c: `number` [ou] /length: `number` [ou] /l: `number`
 
- Optionnel. Nombre d’instructions à afficher. La valeur par défaut est 8.
+facultatif. Nombre d’instructions à afficher. La valeur par défaut est 8.
 
- /endaddress: `expression` [ou] /e: `expression`
+/endaddress: `expression` [ou] /e: `expression`
 
- Optionnel. Adresse à laquelle le code machine doit s’arrêter.
+facultatif. Adresse à laquelle le code machine doit s’arrêter.
 
- /codebytes:`yes`&#124;`no` [ou] /bytes:`yes`&#124;`no` [ou] /b:`yes`&#124;`no`
+/codebytes:`yes`&#124;`no` [ou] /bytes:`yes`&#124;`no` [ou] /b:`yes`&#124;`no`
 
- Optionnel. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
+facultatif. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
 
- /source:`yes`&#124;`no` [ou] /s:`yes`&#124;`no`
+/source:`yes`&#124;`no` [ou] /s:`yes`&#124;`no`
 
- Optionnel. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
+facultatif. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
 
- /symbolnames:`yes`&#124;`no` [ou] /names:`yes`&#124;`no` [ou] /n:`yes`&#124;`no`
+/symbolnames:`yes`&#124;`no` [ou] /names:`yes`&#124;`no` [ou] /n:`yes`&#124;`no`
 
- Optionnel. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
+facultatif. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
 
  [/linenumbers:`yes`&#124;`no`]
 
- Optionnel. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
+facultatif. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 ```cmd
 >Debug.ListDisassembly

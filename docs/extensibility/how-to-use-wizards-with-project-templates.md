@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352040"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342414"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procédure : Utiliser des Assistants avec des modèles de projet
 
@@ -68,7 +68,7 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un f
 
 3. Ajoutez l’assembly en tant que ressource au projet VSIX. Ouvrez le *source.extension.vsixmanifest* fichier et sélectionnez le **actifs** onglet. Dans le **ajouter un nouveau composant** fenêtre, pour **Type** sélectionnez **Microsoft.VisualStudio.Assembly**, pour **Source** sélectionnez **A projet dans la solution actuelle**et pour **projet** sélectionnez **MyProjectWizard**.
 
-4. Ajoutez les références suivantes au projet VSIX. (Dans **l’Explorateur de solutions**, sous le nœud du projet VSIX, sélectionnez **références**, avec le bouton droit, puis sélectionnez **ajouter une référence**.) Dans le **ajouter une référence** boîte de dialogue, dans le **Framework** onglet, recherchez la **System.Windows Forms** assembly et sélectionnez-le. Sélectionnez maintenant le **Extensions** onglet. Rechercher la **EnvDTE** assembly et sélectionnez-le. Recherchez également le **Microsoft.VisualStudio.TemplateWizardInterface** assembly et sélectionnez-le. Cliquez sur **OK**.
+4. Ajoutez les références suivantes au projet VSIX. (Dans **l’Explorateur de solutions**, sous le nœud du projet VSIX, sélectionnez **références**, avec le bouton droit, puis sélectionnez **ajouter une référence**.) Dans le **ajouter une référence** boîte de dialogue, dans le **Framework** onglet, recherchez la **System.Windows Forms** assembly et sélectionnez-le. Également rechercher et sélectionner le **système** et **System.Drawing** assemblys. Sélectionnez maintenant le **Extensions** onglet. Rechercher la **EnvDTE** assembly et sélectionnez-le. Recherchez également le **Microsoft.VisualStudio.TemplateWizardInterface** assembly et sélectionnez-le. Cliquez sur **OK**.
 
 5. Ajoutez une classe pour l’implémentation de l’Assistant pour le projet VSIX. (Dans **l’Explorateur de solutions**, cliquez sur le nœud du projet VSIX et sélectionnez **ajouter**, puis **un nouvel élément**, puis **classe**.) Nommez la classe **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Cette procédure montre comment créer un Assistant personnalisé qui ouvre un f
 
    - Un <xref:System.Object> tableau qui contient un ensemble de paramètres passé à l’Assistant par Visual Studio.
 
-     Cet exemple ajoute une valeur de paramètre à partir du formulaire d’entrée utilisateur pour le <xref:System.Collections.Generic.Dictionary%602> paramètre. Chaque instance de la `$custommessage$` paramètre dans le projet sera remplacé par le texte entré par l’utilisateur. Ajoutez les assemblys suivants à votre projet : **Système** et **System.Drawing**.
+     Cet exemple ajoute une valeur de paramètre à partir du formulaire d’entrée utilisateur pour le <xref:System.Collections.Generic.Dictionary%602> paramètre. Chaque instance de la `$custommessage$` paramètre dans le projet sera remplacé par le texte entré par l’utilisateur.
 
 7. À présent créer le **UserInputForm**. Dans le *WizardImplementation.cs* , ajoutez le code suivant après la fin de la `WizardImplementation` classe.
 

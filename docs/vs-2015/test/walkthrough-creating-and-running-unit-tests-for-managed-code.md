@@ -64,7 +64,7 @@ Cette procédure pas à pas décrit la création, l’exécution et la personnal
   
     La boîte de dialogue **Nouveau projet** s’affiche.  
   
-3. Sous **Modèles installés**, cliquez sur **Visual C#**.  
+3. Sous **Modèles installés**, cliquez sur **Visual C#** .  
   
 4. Dans la liste de types d’applications, cliquez sur **Bibliothèque de classes**.  
   
@@ -112,9 +112,9 @@ public void Debit(double amount)
   
 #### <a name="to-create-a-unit-test-project"></a>Pour créer un projet de test unitaire  
   
-1. Dans le menu **Fichier** , choisissez **Ajouter**, puis **Nouveau projet...**.  
+1. Dans le menu **Fichier** , choisissez **Ajouter**, puis **Nouveau projet...** .  
   
-2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.  
+2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#** , puis choisissez **Test**.  
   
 3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.  
   
@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Vérifier votre code et exécuter à nouveau vos tests  
  **Analyser les résultats des tests**  
   
- Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre <strong>Expected\<*XXX*></strong>) et ce qui a été reçu réellement (le paramètre **Actual\<*YYY*>**). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
+ Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, un message affiche ce qui était attendu (le paramètre <strong>Expected\<*XXX*></strong>) et ce qui a été reçu réellement (le paramètre **Actual\<*YYY*>** ). Nous nous attendions à ce que le solde décline par rapport au solde de début, mais il a plutôt augmenté du montant du retrait.  
   
  Un réexamen du code Debit indique que le test unitaire a réussi à trouver un bogue. Le montant du retrait est ajouté au solde du compte quand il doit être soustrait.  
   

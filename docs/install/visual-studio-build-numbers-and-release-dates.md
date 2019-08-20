@@ -2,24 +2,22 @@
 title: Numéros de builds et dates de publication de Visual Studio
 titleSuffix: ''
 description: Liste des versions publiées et des numéros de build de Visual Studio, triées par date.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6a3af52204bb75153e1b39eabcf78b1c0ca0688
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976187"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024537"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -31,6 +29,23 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Édition | 13 août 2019 | 16.2.29209.62 |
+| 16.3.0 | Préversion 2 | 13 août 2019 | 16.3.29209.152 |
+| 16.0.7 | Édition | 13 août 2019 | 16.0.28803.571 |
+| 16.2.1 | Édition | 6 août 2019 | 16.2.29201.188 |
+| 16.2.0 | Édition | 24 juillet 2019 | 16.2.29123.88 |
+| 16.3.0 | Preview 1 | 24 juillet 2019 | 16.3.29123.89 |
+| 16.2.0 | Preview 4 | 16 juillet 2019 | 16.2.29111.141 |
+| 16.1.6 | Édition | 9 juillet 2019 | 16.1.29102.190 |
+| 16.0.6 | Édition | 9 juillet 2019 | 16.0.28803.540 |
+| 16.1.5 | Édition | 2 juillet 2019 | 16.1.29025.244 |
+| 16.1.4 | Édition | 25 juin 2019 | 16.1.29020.237 |
+| 16.2.0 | Preview 3 | 25 juin 2019 | 16.2.29021.104 |
+| 16.1.3 | Édition | 11 juin 2019 | 16.1.29009.5 |
+| 16.2.0 | Préversion 2 | 11 juin 2019 | 16.2.29006.145 |
+| 16.0.5 | Édition | 11 juin 2019 | 16.0.28803.514 |
+| 16.1.2 | Édition | 5 juin 2019 | 16.1.29001.49 |
+| 16.1.1 | Édition | 24 mai 2019 | 16.1.28922.388 |
 | 16.1.0 | Édition | 21 mai 2019 | 16.1.28917.181 |
 | 16.2.0 | Preview 1 | 21 mai 2019 | 16.2.28917.182 |
 | 16.0.4 | Édition | 14 mai 2019 | 16.0.28803.452 |
@@ -75,6 +90,12 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Édition | 13 août 2019 | 15.9.28307.812 |
+| 15.0.26 | Édition | 13 août 2019 | 15.0.26228.96 |
+| 15.9.14 | Édition | 9 juillet 2019 | 15.9.28307.770 |
+| 15.0.25 | Édition | 9 juillet 2019 | 15.0.26228.92 |
+| 15.9.13 | Édition | 11 juin 2019 | 15.9.28307.718 |
+| 15.0.24 | Édition | 11 juin 2019 | 15.0.26228.88 |
 | 15.9.12 | Édition | 14 mai 2019 | 15.9.28307.665 |
 | 15.0.23 | Édition | 14 mai 2019 | 15.0.26228.85 |
 | 15.9.11 | Édition | 2 avril 2019 | 15.9.28307.586 |

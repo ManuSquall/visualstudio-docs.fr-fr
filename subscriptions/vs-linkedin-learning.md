@@ -1,18 +1,17 @@
 ---
 title: Avantage LinkedIn Learning dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948625"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787758"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -33,46 +32,26 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 ### <a name="create-a-linkedin-account"></a>Créer un compte LinkedIn
 4. Si vous n’avez pas encore de compte LinkedIn, cliquez sur **S’inscrire**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, S’inscrire](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Entrez vos informations personnelles, choisissez un nom d’utilisateur et un mot de passe, puis cliquez sur **S’inscrire**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Créer un compte](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Spécifiez votre pays et le code postal, puis cliquez sur **Suivant**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Définir l’emplacement](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. Vous indiquez ensuite quelques informations sur vous-même pour votre profil.  Indiquez si vous êtes étudiant ou spécifiez votre fonction la plus récente, votre entreprise et son secteur d’activité.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Rôle](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. Dans cette étape, vous pouvez indiquer les domaines qui vous intéressent.  Pour accélérer le processus de création de compte, cliquez sur **Je ne sais pas encore.  Ouvert aux suggestions !**  (Vous pouvez indiquer vos domaines d’intérêt ultérieurement.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Intérêts](_img/vs-linkedin/vs-linkedin-interests.png)
 
 9. Quand vous avez indiqué votre adresse e-mail, vous avez reçu un message contenant un code de confirmation.  Ce message provient de « Messages LinkedIn ».  Si vous ne le trouvez dans votre boîte de réception, vérifiez vos dossiers de courrier indésirable.  Entrez le code du message et cliquez sur **Vérifier**.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Vérification](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Si vous voulez importer vos contacts depuis le compte e-mail que vous avez entré précédemment, vous pouvez le faire maintenant.  Sinon, cliquez sur **Ignorer**. (Si vous choisissez d’ignorer cette étape, vous êtes invité à confirmer votre choix.  Cliquez sur **Oui**.)
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Contacts](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. Les alertes d’emploi vous permettent d’être averti des emplois dans votre région qui peuvent vous intéresser.  Vous pouvez choisir de définir une alerte d’emploi maintenant ou d’ignorer cette étape pour poursuivre la création de votre compte.
-   > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning, Alertes d’emploi](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. Selon les préférences et les informations personnelles que vous avez fournies jusqu’à présent, vous voyez une sélection de relations recommandées pour commencer à créer votre réseau.  Vous pouvez choisir d’ajouter des relations ou d’ignorer cette étape.
 
 13. Pour ajouter une photo à votre profil, cliquez sur **Charger une photo**.  Sinon, vous pouvez ignorer cette étape.  (Vous pouvez ajouter une photo ultérieurement.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning, Charger une photo](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. Vous pouvez télécharger l’application LinkedIn sur votre téléphone pour accéder à votre réseau depuis n’importe où.  Vous pouvez envoyer un lien vers votre téléphone, ou effectuer le téléchargement directement à partir de l’App Store ou de Google Play.  Vous pouvez également cliquer sur **Suivant** pour ignorer cette étape et télécharger l’application plus tard.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning, Charger une photo](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Activer votre offre
 15. Maintenant que vous vous êtes connecté à votre compte LinkedIn ou que vous en avez créé un, vous êtes prêt à activer votre abonnement Premium et à profiter de LinkedIn Learning.  Cliquez sur **Activer votre offre**.
@@ -95,7 +74,6 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Dev Essentials | NA  | Non disponible |NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner).  Exclut :  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  MCT Software & Services.*
@@ -111,7 +89,7 @@ R :  Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux ab
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
-    - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
+  - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

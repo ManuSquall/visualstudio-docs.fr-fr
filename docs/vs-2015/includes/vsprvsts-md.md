@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f04832f09fa9c9a64e5ce2393ed7171ff331df7e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846438"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68142234"
 ---
 Visual Studio Application Lifecycle Management

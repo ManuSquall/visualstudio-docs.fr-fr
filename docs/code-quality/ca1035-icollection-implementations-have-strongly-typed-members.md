@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf1db06ba3b78c6033b143b55f41cc203441973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779063"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922827"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035 : Les implémentations ICollection possèdent des membres fortement typés
 
@@ -27,34 +27,34 @@ ms.locfileid: "62779063"
 |-|-|
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type public ou protégé implémente <xref:System.Collections.ICollection?displayProperty=fullName> mais ne fournit ne pas de méthode fortement typée pour <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. La version fortement typée de <xref:System.Collections.ICollection.CopyTo%2A> doit accepter deux paramètres et ne peut pas avoir un <xref:System.Array?displayProperty=fullName> ou un tableau de <xref:System.Object?displayProperty=fullName> en tant que son premier paramètre.
+Un type public ou protégé implémente <xref:System.Collections.ICollection?displayProperty=fullName> , mais ne fournit pas de méthode fortement typée pour. <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> La version fortement typée <xref:System.Collections.ICollection.CopyTo%2A> de doit accepter deux paramètres et ne peut <xref:System.Array?displayProperty=fullName> pas avoir un ou <xref:System.Object?displayProperty=fullName> un tableau de comme premier paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle requiert <xref:System.Collections.ICollection> implémentations fournissent fortement des membres typés afin que les utilisateurs ne doivent pas effectuer un cast des arguments à la <xref:System.Object> tapez lorsqu’ils utilisent les fonctionnalités fournies par l’interface. Cette règle suppose que le type qui implémente <xref:System.Collections.ICollection> effectue donc à gérer une collection d’instances d’un type plus fort que <xref:System.Object>.
+Cette règle requiert <xref:System.Collections.ICollection> que les implémentations fournissent des membres fortement typés afin que les utilisateurs ne soient pas tenus <xref:System.Object> d’effectuer un cast d’arguments en type lorsqu’ils utilisent les fonctionnalités fournies par l’interface. Cette règle suppose que le type qui implémente <xref:System.Collections.ICollection> fait cela pour gérer une collection d’instances d’un type qui est plus fort que. <xref:System.Object>
 
- <xref:System.Collections.ICollection> implémente l'interface <xref:System.Collections.IEnumerable?displayProperty=fullName>. Si les objets dans la collection étendent <xref:System.ValueType?displayProperty=fullName>, vous devez fournir un membre fortement typé pour <xref:System.Collections.IEnumerable.GetEnumerator%2A> afin d’éviter la baisse de performances est provoquée par le boxing. Cela n’est pas nécessaire lorsque les objets de la collection sont un type référence.
+ <xref:System.Collections.ICollection> implémente l'interface <xref:System.Collections.IEnumerable?displayProperty=fullName>. Si les objets de la collection étendent <xref:System.ValueType?displayProperty=fullName>, vous devez fournir un membre fortement typé pour <xref:System.Collections.IEnumerable.GetEnumerator%2A> afin d’éviter la diminution des performances provoquées par la conversion boxing. Cela n’est pas nécessaire lorsque les objets de la collection sont un type référence.
 
- Pour implémenter une version fortement typée d’un membre d’interface, implémentez explicitement les membres d’interface à l’aide de noms sous la forme `InterfaceName.InterfaceMemberName`, tel que <xref:System.Collections.ICollection.CopyTo%2A>. Les membres d’interface explicites utilisent les types de données qui sont déclarés par l’interface. Implémenter des membres fortement typés à l’aide du nom de membre d’interface, tel que <xref:System.Collections.ICollection.CopyTo%2A>. Déclarer des membres fortement typés comme publics et déclarez des paramètres et retourner des valeurs à être de type fort qui est géré par la collection. Les types forts remplacent les types plus faibles comme <xref:System.Object> et <xref:System.Array> qui sont déclarés par l’interface.
+Pour implémenter une version fortement typée d’un membre d’interface, implémentez les membres d’interface explicitement en `InterfaceName.InterfaceMemberName`utilisant des noms <xref:System.Collections.ICollection.CopyTo%2A>sous la forme, tels que. Les membres d’interface explicites utilisent les types de données déclarés par l’interface. Implémentez les membres fortement typés à l’aide du nom de membre <xref:System.Collections.ICollection.CopyTo%2A>d’interface, tel que. Déclarez les membres fortement typés comme publics et déclarez les paramètres et les valeurs de retour comme étant du type fort géré par la collection. Les types forts remplacent les types plus faibles <xref:System.Object> tels <xref:System.Array> que et qui sont déclarés par l’interface.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, implémentez le membre d’interface explicitement (déclarez-le en tant que <xref:System.Collections.ICollection.CopyTo%2A>). Ajouter le membre fortement typé public, déclaré comme `CopyTo`, et qu’il procède à un tableau fortement typé en tant que son premier paramètre.
+Pour corriger une violation de cette règle, implémentez le membre d’interface explicitement (déclarez-le comme <xref:System.Collections.ICollection.CopyTo%2A>). Ajoutez le membre fortement typé public, déclaré comme `CopyTo`, et faites en sorte qu’il prenne un tableau fortement typé en tant que premier paramètre.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle si vous implémentez une nouvelle collection basée sur un objet, comme une arborescence binaire, où des types qui étendent la nouvelle collection déterminent le type fort. Ces types doivent être conforme à cette règle et exposer des membres fortement typés.
+Supprimez un avertissement de cette règle si vous implémentez une nouvelle collection basée sur un objet, telle qu’une arborescence binaire, où les types qui étendent la nouvelle collection déterminent le type fort. Ces types doivent être conformes à cette règle et exposer des membres fortement typés.
 
-## <a name="example"></a>Exemple
- L’exemple suivant illustre la façon correcte d’implémenter <xref:System.Collections.ICollection>.
+## <a name="example"></a>Exemples
+L’exemple suivant illustre la méthode correcte pour implémenter <xref:System.Collections.ICollection>.
 
- [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
+[!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1038 : Les énumérateurs doivent être fortement typés](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+[CA1038 Les énumérateurs doivent être fortement typés](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039 : Les listes sont fortement typées](../code-quality/ca1039-lists-are-strongly-typed.md)
+[CA1039 Les listes sont fortement typées](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Voir aussi
 

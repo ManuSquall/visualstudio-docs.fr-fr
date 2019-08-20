@@ -11,20 +11,20 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160534"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Chaînes de substitution utilisés dans. Pkgdef et. Fichiers Pkgundef
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Chaînes de substitution utilisées dans les fichiers .Pkgdef et .Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser les chaînes de substitution répertoriés ci-dessous dans le .pkgdef et .pkgundef les fichiers que vous définissez pour Visual Studio application shell isolée de.  
   
 ## <a name="substitution-strings"></a>Chaînes de substitution  
   
-|Chaîne|Description|  
+|String|Description|  
 |------------|-----------------|  
 |$=*RegistryEntry*$|La valeur de la *RegistryEntry* entrée. Si la chaîne d’entrée de Registre se termine par une barre oblique inverse (\\), la valeur par défaut de la sous-clé de Registre est utilisée. Par exemple, la substitution de chaîne $= HKEY_CURRENT_USER\Environment\TEMP$ est développé dans le dossier temporaire de l’utilisateur actuel.|  
 |$AppName$|Le nom qualifié de l’application qui est passé pour les points d’entrée AppEnv.dll. Le nom qualifié comprend le nom de l’application, un trait de soulignement et l’identificateur de classe (CLSID) de l’objet application automation, qui est également enregistré en tant que la valeur du paramètre ThisVersionDTECLSID dans le fichier .pkgdef de projet.|  

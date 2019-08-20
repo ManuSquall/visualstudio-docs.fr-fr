@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Stocker et récupérer des valeurs de date dans des plages Excel par programmation'
+title: Store & récupérer les valeurs de date dans des plages Excel par programmation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419286"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328922"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procédure : Stocker et récupérer des valeurs de date dans des plages Excel par programmation
   Vous pouvez stocker et récupérer des valeurs dans un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.

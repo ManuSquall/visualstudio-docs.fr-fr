@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694977"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821296"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Résoudre les problèmes de déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694977"
 
 2. Dans la page **Application** , choisissez **Informations de l’assembly**.
 
-3. Dans la première **Version de l’Assembly** , entrez un astérisque (\*), puis choisissez le **OK** bouton.
+3. Définir le numéro de révision, le troisième champ, de la **Version de l’Assembly**, à un caractère générique (\*). Par exemple, « 1.0. * ».  Puis choisissez le **OK** bouton.
 
    Après avoir modifié la version d’assembly, vous pouvez continuer à signer votre assembly avec un nom fort, et Fusion chargera la version de la personnalisation.
+
+ [!NOTE]
+> En commençant par Visual Studio 2017, si vous essayez d’utiliser des caractères génériques dans la Version d’Assembly une erreur de build se produira.  Il s’agit, car les caractères génériques dans la version d’assembly arrêtera la fonctionnalité MSBuild déterministe. Vous serez invité à supprimer les caractères génériques à partir de la version d’assembly, soit désactiver le déterminisme.  Pour en savoir plus sur la fonctionnalité déterministe, consultez : [Propriétés communes des projets MSBuild](../msbuild/common-msbuild-project-properties.md) et [personnaliser votre build](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>L’installation échoue si l’URI comporte des caractères qui ne sont pas US-ASCII
  Lorsque vous publiez une solution Office sur un emplacement HTTP/HTTPS/FTP, le chemin d’accès ne peut contenir aucun caractère Unicode qui ne sont pas en US-ASCII. Ces caractères peuvent provoquer un comportement anormal dans le programme d’installation. Utilisez des caractères US-ASCII pour le chemin d’installation.

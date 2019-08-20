@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 03/30/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974095"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870773"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
-En règle générale, un administrateur d’entreprise crée un point d’installation réseau à déployer sur les stations de travail clientes. Nous avons conçu Visual Studio pour que vous puissiez mettre en cache dans un dossier unique les fichiers de l’installation initiale avec toutes les mises à jour de produit. (Ce processus est également appelé _création d’une disposition_.) 
+En règle générale, un administrateur d’entreprise crée un point d’installation réseau à déployer sur les stations de travail clientes. Nous avons conçu Visual Studio pour que vous puissiez mettre en cache dans un dossier unique les fichiers de l’installation initiale avec toutes les mises à jour de produit. (Ce processus est également appelé _création d’une disposition_.)
 
 De cette façon, les stations de travail clientes peuvent utiliser le même emplacement réseau pour gérer leur installation, même si elles n’ont pas encore effectué leur dernière mise à jour de maintenance.
 
@@ -86,6 +86,8 @@ Pour plus d’informations, consultez [Automatiser l’installation de Visual St
 
 Hébergez la disposition sur un partage réseau afin de pouvoir l’exécuter à partir d’autres ordinateurs.
 
+L’exemple suivant utilise [xcopy](/windows-server/administration/windows-commands/xcopy/). Vous pouvez également utiliser [robocopy](/windows-server/administration/windows-commands/robocopy/), si vous le souhaitez.  
+
 ::: moniker range="vs-2017"
 
 Exemple :
@@ -145,13 +147,13 @@ Voici quelques exemples montrant comment créer une disposition partielle person
 * Pour télécharger deux charges de travail et tous leurs composants recommandés :
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Pour télécharger deux charges de travail et tous leurs composants recommandés et facultatifs, exécutez :
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +227,7 @@ Lorsque vous installez à partir d’une disposition, le contenu qui est install
 
 Si vous avez utilisé le paramètre `--wait`, en fonction du résultat de l’opération, la variable d’environnement `%ERRORLEVEL%` a l’une des valeurs suivantes :
 
-  | **Valeur** | **Résultat** |
-  | --------- | ---------- |
-  | 0 | Opération effectuée avec succès |
-  | 3010 | Opération effectuée avec succès, mais l’installation nécessite un redémarrage avant de pouvoir être utilisée |
-  | Autre | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Mettre à jour une disposition d’installation réseau
 
@@ -241,9 +239,9 @@ Quand les mises à jour de produit deviennent disponibles, vous avez la possibil
 
 > [!NOTE]
 > Les programmes d’amorçage de Visual Studio disponibles sur [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) téléchargent et installent la dernière version de Visual Studio, chaque fois qu’ils sont exécutés.
-> 
+>
 > Ainsi, si vous téléchargez un *programme d’amorçage* de Visual Studio aujourd’hui, et si vous l’exécutez dans six mois, il installe la version de Visual Studio disponible au moment où vous exécutez le programme d’amorçage.
-> 
+>
 > Toutefois, si vous créez une *disposition*, et si vous l’installez à partir de celle-ci, la disposition installe la version spécifique de Visual Studio qui existe dans la disposition. Même si une version plus récente peut exister en ligne, vous obtenez la version de Visual Studio qui se trouve dans la disposition.
 
 ::: moniker-end
@@ -252,9 +250,9 @@ Quand les mises à jour de produit deviennent disponibles, vous avez la possibil
 
 > [!NOTE]
 > Les programmes d’amorçage de Visual Studio disponibles sur [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) téléchargent et installent la dernière version de Visual Studio, chaque fois qu’ils sont exécutés.
-> 
+>
 > Ainsi, si vous téléchargez un *programme d’amorçage* de Visual Studio aujourd’hui, et si vous l’exécutez dans six mois, il installe la version de Visual Studio disponible au moment où vous exécutez le programme d’amorçage.
-> 
+>
 > Toutefois, si vous créez une *disposition*, et si vous l’installez à partir de celle-ci, la disposition installe la version spécifique de Visual Studio qui existe dans la disposition. Même si une version plus récente peut exister en ligne, vous obtenez la version de Visual Studio qui se trouve dans la disposition.
 
 ::: moniker-end
@@ -267,13 +265,14 @@ Si vous rencontrez un problème avec votre installation hors connexion, nous vou
 
 Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
-D’autres options de support sont également à votre disposition. Pour en obtenir la liste, consultez notre page [Nous contacter](../ide/talk-to-us.md).
+D’autres options de support sont également à votre disposition. Pour obtenir la liste, consultez notre page [Commentaires](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
-* [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
-* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
-* [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
+- [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+- [Mettre à jour une installation réseau de Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md)
+- [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance](update-servicing-baseline.md)
+- [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

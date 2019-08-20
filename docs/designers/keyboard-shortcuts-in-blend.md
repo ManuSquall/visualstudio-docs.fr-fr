@@ -1,5 +1,6 @@
 ---
-title: Raccourcis clavier dans Blend
+title: Raccourcis clavier
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844323"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821741"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Raccourcis clavier dans Blend
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Raccourcis clavier dans Blend pour Visual Studio
 
 ## <a name="project-shortcuts"></a>Raccourcis de Projet
 
@@ -72,10 +73,10 @@ ms.locfileid: "62844323"
 |Redimensionner automatiquement la hauteur|**Ctrl**+**Maj**+**6**|
 |Regrouper des objets dans un panneau de disposition|**Ctrl**+**G**|
 |Dissocier des objets|**Ctrl**+**Maj**+**G**|
-|Amener l’objet sélectionné au premier plan|**Ctrl**+**Maj**+**]**|
-|Avancer d’un plan|**Ctrl**+**]**|
-|Envoyer l’objet sélectionné à l’arrière|**Ctrl**+**Maj**+**[**|
-|Reculer d’un plan|**Ctrl**+**[**|
+|Amener l’objet sélectionné au premier plan|**Ctrl**+**Maj**+ **]**|
+|Avancer d’un plan|**Ctrl**+ **]**|
+|Envoyer l’objet sélectionné à l’arrière|**Ctrl**+**Maj**+ **[**|
+|Reculer d’un plan|**Ctrl**+ **[**|
 |Créer un contrôle utilisateur à partir des objets sélectionnés (WPF)|**F8**|
 |Limiter les proportions des objets|Maintenez la touche **Maj** enfoncée tout en faisant glisser l’objet.|
 |Faire pivoter un objet par incréments de 15 degrés|Maintenez la touche **Maj** enfoncée tout en faisant pivoter l’objet.|
@@ -95,8 +96,8 @@ ms.locfileid: "62844323"
 |Pour|Procédez comme suit|
 |----------------|-------------|
 |Basculer entre les modes **Design**, **Code** et **Fractionné**|**F11**|
-|Effectuer un zoom avant sur la planche graphique|**Ctrl**+**Signe égal** (**=**)|
-|Effectuer un zoom arrière sur la planche graphique|**Ctrl**+**Signe moins** (**-**)|
+|Effectuer un zoom avant sur la planche graphique|**Ctrl**+**Signe égal** ( **=** )|
+|Effectuer un zoom arrière sur la planche graphique|**Ctrl**+**Signe moins** ( **-** )|
 |Effectuer un zoom avant ou arrière sur la planche graphique|Faire tourner la roulette de la souris|
 |Déplacer la planche graphique vers la gauche ou la droite|Appuyez sur **Maj** et faites tourner la roulette de la souris.|
 |Déplacer la planche graphique vers le haut ou le bas|Appuyez sur **Ctrl** et faites tourner la roulette de la souris.|

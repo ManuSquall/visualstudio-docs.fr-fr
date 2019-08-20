@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684386"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891094"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 - Si le fichier .iTrace est attaché à un élément de travail Team Foundation Server, suivez ces étapes dans l’élément de travail :  
   
-    - Sous **Tous les liens**, recherchez le fichier .iTrace. Ouvrez-le.  
-  
-         \- ou -  
-  
-    - Sous **Étapes de reproduction**, cliquez sur le lien **IntelliTrace** .  
+  - Sous **Tous les liens**, recherchez le fichier .iTrace. Ouvrez-le.  
+
+    \- ou -  
+
+  - Sous **Étapes de reproduction**, cliquez sur le lien **IntelliTrace** .  
   
 > [!TIP]
 > Si vous avez fermé le fichier IntelliTrace pendant le débogage, vous pouvez le rouvrir facilement. Accédez au menu **Déboguer** , choisissez **IntelliTrace**, **Afficher le résumé du journal**. Vous pouvez également choisir **Afficher le résumé du journal** dans la fenêtre **IntelliTrace** . Cette commande est disponible uniquement lorsque vous procédez à un débogage à l’aide d’IntelliTrace.  
@@ -85,7 +85,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 - Pour trier les données, choisissez un en-tête de colonne.  
   
-- Pour filtrer les données, utilisez la zone de recherche. La recherche de texte brut est effectuée dans toutes les colonnes, sauf celles de date. Vous pouvez également filtrer les recherches sur une colonne spécifique avec un filtre par colonne. Saisissez le nom de la colonne sans aucun espace, ni deux-points (**:**), et la valeur de recherche. Insérez à la suite un point-virgule (**;**) pour ajouter une autre valeur de colonne et de recherche.  
+- Pour filtrer les données, utilisez la zone de recherche. La recherche de texte brut est effectuée dans toutes les colonnes, sauf celles de date. Vous pouvez également filtrer les recherches sur une colonne spécifique avec un filtre par colonne. Saisissez le nom de la colonne sans aucun espace, ni deux-points ( **:** ), et la valeur de recherche. Insérez à la suite un point-virgule ( **;** ) pour ajouter une autre valeur de colonne et de recherche.  
   
      Par exemple, pour rechercher les événements de performance qui ont le mot « lent » dans la colonne **Description** , tapez :  
   
@@ -161,7 +161,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-    Exemple :  
+    Par exemple :  
   
     ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -272,5 +272,5 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 #### <a name="forums"></a>Forums  
  [Débogueur Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
-#### <a name="guidance"></a>Conseils  
+#### <a name="guidance"></a>Assistance  
  [Test de livraison continue avec Visual Studio 2012 – chapitre 6 : Une boîte à outils de test](http://go.microsoft.com/fwlink/?LinkID=255203)

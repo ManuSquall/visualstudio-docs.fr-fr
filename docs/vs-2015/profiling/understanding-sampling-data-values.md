@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145416"
 ---
 # <a name="understanding-sampling-data-values"></a>Fonctionnement des valeurs de données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ La méthode de profilage par *échantillonnage* des outils de profilage de [!INC
  Pourcentage du nombre total d’échantillons exclusifs lors de l’exécution du profilage qui sont des échantillons exclusifs de la fonction ou de la plage de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)   
+ [Guide pratique pour Choisissez les méthodes de collecte](../profiling/how-to-choose-collection-methods.md)   
  [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)

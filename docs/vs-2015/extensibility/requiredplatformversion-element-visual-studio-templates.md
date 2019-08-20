@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2e5ba8cfef6674b5603cf03c73619f686338af3c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159291"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ RequiredPlatformVersion
 ```  
   
 ## <a name="attributes-and-elements"></a>Attributs et éléments  
- Aucun.  
+ Aucune.  
   
 ### <a name="attributes"></a>Attributs  
  Aucun.  
@@ -56,7 +56,7 @@ RequiredPlatformVersion
 ## <a name="remarks"></a>Notes  
  Ce texte spécifie la version minimale du système d’exploitation requise par le modèle.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple spécifie que le modèle de projet cible [!INCLUDE[win8](../includes/win8-md.md)] ou version ultérieure.  
   
 ```xml  

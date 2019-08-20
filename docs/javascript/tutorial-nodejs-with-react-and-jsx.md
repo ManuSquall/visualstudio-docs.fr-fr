@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261986"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533375"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -66,13 +66,13 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
     Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
     ::: moniker-end
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
     ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
 
 * Le runtime Node.js doit être installé.
 
-    Ce tutoriel a été testé avec la version 8.11.2.
+    Ce tutoriel a été testé avec la version 10.16.0.
 
     Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
 
@@ -318,7 +318,19 @@ Au cours des étapes précédentes, vous avez ajouté *webpack-config.js* au pro
 
     ![Charger des fichiers modifiés](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécuter la commande webpack.
+Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécuter la commande webpack. Pour automatiser cette étape, ajoutez un script de build afin de transpiler le JSX.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Ajouter un script de build pour transpiler le JSX
+
+À compter de Visual Studio 2019, un script de génération est obligatoire. Au lieu de transpiler le JSX au niveau de la ligne de commande (comme indiqué dans la section précédente), vous pouvez transpiler le JSX durant la génération à partir de Visual Studio.
+
+* Ouvrez *package.json*, puis ajoutez la section suivante après la section `dependencies` :
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>Exécuter l'application
 
@@ -331,7 +343,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Si Chrome est disponible sur votre ordinateur, mais n’apparaît pas dans les options, choisissez **Naviguer avec** dans la liste déroulante des cibles de débogage et sélectionnez Chrome comme cible de navigateur par défaut (choisissez **Définir comme programme par défaut**).
+    Si Chrome est disponible sur votre machine mais qu’il n’apparaît pas en tant qu’option, choisissez **Navigateur web (nom_navigateur)**  > **Google Chrome** dans la liste déroulante des cibles de débogage, puis sélectionnez Chrome en tant que cible de navigateur par défaut.
 
 1. Pour exécuter l’application, appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) ou sur le bouton fléché vert.
 

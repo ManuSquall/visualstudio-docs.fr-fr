@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f85cf678052427ca5395c8b33c4786c2316de0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: bacc58184d0ea78a5e54d7cc7b0b93df107b3300
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443619"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681413"
 ---
 # <a name="msbuild-targets-files"></a>Fichiers .targets MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut plusieurs fichiers *.targets* contenant des éléments, des propriétés, des cibles et des tâches pour les scénarios courants. Ces fichiers sont importés automatiquement dans la plupart des fichiers projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour en simplifier la maintenance et la lisibilité.
@@ -38,11 +38,11 @@ ms.locfileid: "63443619"
 | Fichier *.targets* | Description |
 |---------------------------------| - |
 | *Microsoft.Common.targets* | Définit les étapes du processus de génération standard pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] et [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].<br /><br /> Importé par les fichiers *Microsoft.CSharp.targets* et *Microsoft.VisualBasic.targets*, qui incluent l’instruction suivante : `<Import Project="Microsoft.Common.targets" />` |
-| *Microsoft.CSharp.targets* | Définit les étapes du processus de génération standard pour les projets Visual C#.<br /><br /> Importé par les fichiers projet Visual C# (*.csproj*), qui incluent l’instruction suivante: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
-| *Microsoft.VisualBasic.targets* | Définit les étapes du processus de génération standard pour les projets Visual Basic.<br /><br /> Importé par les fichiers projet Visual Basic (*.vbproj*), qui incluent l’instruction suivante : `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
+| *Microsoft.CSharp.targets* | Définit les étapes du processus de génération standard pour les projets Visual C#.<br /><br /> Importé par les fichiers projet Visual C# ( *.csproj*), qui incluent l’instruction suivante: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | Définit les étapes du processus de génération standard pour les projets Visual Basic.<br /><br /> Importé par les fichiers projet Visual Basic ( *.vbproj*), qui incluent l’instruction suivante : `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
-*Directory.Build.targets* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est automatiquement importé depuis *Microsoft.Common.targets*, sauf si la propriété **ImportDirectoryBuildTargets** a la valeur **false**.
+*Directory.Build.targets* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est automatiquement importé depuis *Microsoft.Common.targets*, sauf si la propriété **ImportDirectoryBuildTargets** a la valeur **false**. Pour plus d’informations, consultez [Personnaliser votre build](customize-your-build.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md)

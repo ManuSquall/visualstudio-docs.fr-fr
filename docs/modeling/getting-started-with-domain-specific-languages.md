@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442380"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820909"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -21,7 +21,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 > [!NOTE]
 > Le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [SDK de création et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [Visualisation et modélisation du Kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
 
@@ -137,11 +137,11 @@ Vous pouvez exécuter la solution DSL dès que vous l’avez créé. Une version
 
 Votre expérimentale de Visual Studio doit ressembler à l’exemple suivant :
 
-![](../modeling/media/dsl_min.png)
+![Arborescence d’exemple de langage spécifique domaine dans Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Le contenu d’un modèle
 
-Le contenu d’un fichier qui est une instance d’une solution DSL est appelé un *modèle*. Le modèle contient *modèle*<em>éléments</em> et *liens* entre les éléments. La définition DSL spécifie quels types d’éléments de modèle et des liens peuvent exister dans le modèle. Par exemple, dans un DSL créé à partir du modèle de langage Minimal, il est a un seul type d’élément de modèle et un type de lien.
+Le contenu d’un fichier qui est une instance d’une solution DSL est appelé un *modèle*. Le modèle contient *modèle* <em>éléments</em> et *liens* entre les éléments. La définition DSL spécifie quels types d’éléments de modèle et des liens peuvent exister dans le modèle. Par exemple, dans un DSL créé à partir du modèle de langage Minimal, il est a un seul type d’élément de modèle et un type de lien.
 
 La définition DSL peut de spécifier comment le modèle apparaît dans un diagramme. Vous pouvez choisir parmi un éventail de styles de formes et connecteurs. Vous pouvez spécifier que certaines formes apparaissent dans d’autres formes.
 
@@ -180,7 +180,7 @@ Vous pouvez ajouter n’importe quel nombre de fichiers de modèle de texte à u
 > [!NOTE]
 > Lorsque vous modifiez la définition DSL, l’exemple de code de modèle de texte ne fonctionne pas, sauf si vous mettez à jour.
 
-Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personnalisation de la solution DSL
 
@@ -209,7 +209,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
     2. Ouvrez la fenêtre Propriétés et positionnez-le de sorte que vous puissiez voir Explorateur DSL et des propriétés en même temps.
 
-    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de boîte à outils**,  *\<votre DSL >*, puis **outils**.
+    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de boîte à outils**,  *\<votre DSL >* , puis **outils**.
 
     4. Cliquez sur **ExampleElement**. Il s’agit de l’élément de boîte à outils qui est utilisé pour créer des éléments.
 
@@ -392,7 +392,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
  Vous pouvez utiliser la même procédure pour installer la solution DSL sur votre ordinateur afin que vous n’avez pas à utiliser l’instance expérimentale de Visual Studio.
 
- Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Suppression des anciennes DSL expérimental
  Si vous avez créé plusieurs DSL expérimentale que vous ne souhaitez plus, vous pouvez les supprimer à partir de votre ordinateur en réinitialisant l’instance expérimentale de Visual Studio.

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790111"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715382"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procédure : insérer des commentaires XML pour la génération de documentation
 
@@ -24,7 +24,7 @@ Visual Studio peut vous aider à documenter des éléments de code, comme les cl
 Le fichier XML généré par le compilateur peut être distribué avec votre assembly .NET pour permettre à Visual Studio et à d’autres IDE d’utiliser IntelliSense pour afficher des informations rapides concernant les types et les membres. De plus, le fichier XML peut être exécuté par l’intermédiaire d’outils tels que [DocFX](https://dotnet.github.io/docfx/) et [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) pour générer des sites web de références d’API.
 
 > [!NOTE]
-> La commande **Insérer un commentaire** qui insère automatiquement des commentaires de documentation XML est disponible en [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) et en [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Toutefois, vous pouvez insérer manuellement des [commentaires de documentation XML dans des fichiers C++](/cpp/ide/xml-documentation-visual-cpp) et générer des fichiers de documentation XML au moment de la compilation.
+> La commande **Insérer un commentaire** qui insère automatiquement des commentaires de documentation XML est disponible en [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) et en [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation). Toutefois, vous pouvez insérer manuellement des [commentaires de documentation XML dans des fichiers C++](/cpp/build/reference/xml-documentation-visual-cpp) et générer des fichiers de documentation XML au moment de la compilation.
 
 ## <a name="to-insert-xml-comments-for-a-code-element"></a>Pour insérer des commentaires XML pour un élément de code
 
@@ -38,7 +38,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
    - Dans le menu contextuel (clic droit) ou juste au-dessus de l’élément de code, choisissez **Extrait** > **Insérer un commentaire**.
 
-   Le modèle XML est généré immédiatement au-dessus de l’élément de code. Par exemple, quand vous commentez une méthode, il génère l’élément **\<summary\>**, un élément **\<param\>** pour chaque paramètre et un élément **\<returns\>** pour documenter la valeur de retour.
+   Le modèle XML est généré immédiatement au-dessus de l’élément de code. Par exemple, quand vous commentez une méthode, il génère l’élément **\<summary\>** , un élément **\<param\>** pour chaque paramètre et un élément **\<returns\>** pour documenter la valeur de retour.
 
    ![Modèle de commentaire XML (C#)](media/doc-preview-cs.png)
 
@@ -57,5 +57,5 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 - [Documentation de votre code avec des commentaires XML (Guide C#)](/dotnet/csharp/codedoc)
 - [Guide pratique pour créer une documentation XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Commentaires en C++](/cpp/cpp/comments-cpp)
-- [Documentation XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [Documentation XML (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Génération de code](../code-generation-in-visual-studio.md)

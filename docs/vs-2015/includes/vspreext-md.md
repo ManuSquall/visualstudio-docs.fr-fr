@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f9d9621b910a6932b857b31f8436cf2c63af2689
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848722"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68165797"
 ---
 Microsoft Visual Studio Premium

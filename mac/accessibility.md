@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985299"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787640"
 ---
 # <a name="accessibility"></a>Accessibilité
 
@@ -57,14 +57,14 @@ Le fait de définir **Accès clavier complet** sur **Tous les contrôles** vous 
 
 Pour activer ou désactiver VoiceOver, appuyez sur **&#8984; + F5**
 
-Dans ce guide, les commandes VoiceOver apparaissent sous la forme **VO+ *touche*** où **VO** fait référence au modificateur défini dans l’application **Utilitaire VoiceOver**. Le modificateur par défaut est **Ctrl + Alt**. Par exemple, en fonction de votre modificateur VoiceOver, **VO + M** équivaut à **Ctrl + Alt + M**. Par souci de concision, les touches du curseur sont dénommées **Gauche** et **Droite**, etc.
+Dans ce guide, les commandes VoiceOver apparaissent sous la forme **VO+_touche_** , où **VO** fait référence au modificateur défini dans l’application **Utilitaire VoiceOver**. Le modificateur par défaut est **Ctrl + Alt**. Par exemple, en fonction de votre modificateur VoiceOver, **VO + M** équivaut à **Ctrl + Alt + M**. Par souci de concision, les touches du curseur sont dénommées **Gauche** et **Droite**, etc.
 
 Pour naviguer dans l’interface utilisateur de Visual Studio pour Mac, utilisez les combinaisons de touches suivantes :
 
 - **VO + Droite / Gauche** : Naviguer entre les éléments de l’interface utilisateur
-    - VoiceOver annonce l’étiquette et le type de contrôle, et explique comment interagir avec celui-ci.
+  - VoiceOver annonce l’étiquette et le type de contrôle, et explique comment interagir avec celui-ci.
 - **VO + Maj + Bas / Haut** : Entrer dans un élément ou le quitter
-    - Une fois dans un élément, vous pouvez utiliser **VO + Gauche / Droite** pour naviguer dans les éléments qu’il contient.
+  - Une fois dans un élément, vous pouvez utiliser **VO + Gauche / Droite** pour naviguer dans les éléments qu’il contient.
 - **VO + Espace** : Sélectionner un contrôle ou interagir avec celui-ci
 - **VO + M** : Interagir avec la barre de menus Visual Studio pour Mac
 

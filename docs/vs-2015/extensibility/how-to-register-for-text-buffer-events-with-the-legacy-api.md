@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204097"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procédure : S’inscrire aux événements de mémoire tampon de texte avec l’API héritée
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Procédure : Inscrire les événements de la mémoire tampon du texte avec l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous accédez à la mémoire tampon de texte à l’aide de l’API héritée, vous devez vous inscrire pour les événements de mémoire tampon de texte comme indiqué dans la procédure suivante.  

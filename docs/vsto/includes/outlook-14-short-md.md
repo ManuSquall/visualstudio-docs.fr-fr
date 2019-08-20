@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: a9707a8ac04a0ff6ee4806ff6a42d6169288a3af
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846720"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68154733"
 ---
  Outlook 2010 

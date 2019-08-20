@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150845"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +45,10 @@ Identifie une extension de fichier à associer à l’application.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`extension`|Obligatoire. L’extension de fichier à associer à l’application.|  
-|`description`|Obligatoire. Description du type de fichier pour une utilisation par l’interpréteur de commandes.|  
-|`progid`|Obligatoire. Un nom identifiant de manière unique le type de fichier.|  
-|`defaultIcon`|Obligatoire. Spécifie l’icône à utiliser pour les fichiers avec cette extension. Le fichier icône doit être spécifié à l’aide de la [ \<fichier > élément](../deployment/file-element-clickonce-application.md) au sein de la [ \<assembly > élément](../deployment/assembly-element-clickonce-application.md) qui contient cet élément.|  
+|`extension`|Requis. L’extension de fichier à associer à l’application.|  
+|`description`|Requis. Description du type de fichier pour une utilisation par l’interpréteur de commandes.|  
+|`progid`|Requis. Un nom identifiant de manière unique le type de fichier.|  
+|`defaultIcon`|Requis. Spécifie l’icône à utiliser pour les fichiers avec cette extension. Le fichier icône doit être spécifié à l’aide de la [ \<fichier > élément](../deployment/file-element-clickonce-application.md) au sein de la [ \<assembly > élément](../deployment/assembly-element-clickonce-application.md) qui contient cet élément.|  
   
 ## <a name="remarks"></a>Notes  
  Cet élément doit inclure une référence d’espace de noms XML à « urn : schemas-microsoft-ClickOnce.v 1 ». Si le `<fileAssociation>` élément est utilisé, il doit être placée après le `<application>` élément dans son parent [ \<assembly > élément](../deployment/assembly-element-clickonce-application.md).  

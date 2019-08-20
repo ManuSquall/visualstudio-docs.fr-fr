@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433875"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825728"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
 
-Le Concepteur de Workflow dans .NET Framework 4 ajouté de nombreuses nouvelles fonctionnalités, mais il existe toujours qu’il ne prend pas en charge certains scénarios de débogage.
-
-Le Concepteur de Workflow non pris en charge le débogage des scénarios sont les suivants :
+Le Concepteur de Workflow ne prend pas en charge les scénarios de débogage suivants :
 
 - Impossible de continuer l'exécution une fois que le code a été modifié.
 
@@ -29,7 +27,7 @@ Le Concepteur de Workflow non pris en charge le débogage des scénarios sont le
 
 - Impossible d'utiliser le Concepteur de workflow pour déboguer les workflows créés à l'aide de code sans utiliser le concepteur.
 
-- Flux de travail créés dans les versions antérieures de Windows Workflow Foundation (WF) ne peut pas être débogué dans le concepteur .NET Framework 4.
+- Flux de travail créés dans les versions antérieures de Windows Workflow Foundation (WF) ne peut pas être débogué dans .NET Framework 4 ou version ultérieure.
 
 - Impossible de définir des points d'arrêt sur les liaisons entre activités ou nœuds <xref:System.Activities.Statements.Flowchart>.
 
@@ -43,16 +41,16 @@ Le Concepteur de Workflow non pris en charge le débogage des scénarios sont le
 
 - La fenêtre ou le menu contextuel Point d'arrêt ne prend pas en charge les colonnes ou options suivantes pour le débogage de flux de travail :
 
-    - Condition
+  - Condition
 
-    - Nombre d’accès
+  - Nombre d’accès
 
-    - Lorsqu'il est atteint
+  - Lorsqu'il est atteint
 
-    - Fonction
+  - Fonction
 
-    - Données
+  - Données
 
-    - Process
+  - Process
 
-    - Atteindre le code machine
+  - Atteindre le code machine

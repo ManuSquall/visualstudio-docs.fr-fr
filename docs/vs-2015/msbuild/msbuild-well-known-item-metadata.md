@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bb2e53102221194dc829df162c44bbf04378b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154083"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Métadonnées d'éléments connus MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,16 +37,16 @@ Le tableau suivant décrit les métadonnées assignées à chaque élément lors
   
 |Métadonnées d’élément|Description|  
 |-------------------|-----------------|  
-|%(FullPath)|Contient le chemin complet de l’élément. Exemple :<br /><br /> `C:\MyProject\Source\Program.cs`|  
-|%(RootDir)|Contient le répertoire racine de l’élément. Exemple :<br /><br /> `C:\`|  
-|%(Filename)|Contient le nom de fichier de l’élément, sans l’extension. Exemple :<br /><br /> `Program`|  
-|%(Extension)|Contient l’extension de nom de fichier de l’élément. Exemple :<br /><br /> `.cs`|  
-|%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Exemple :<br /><br /> `Source\`|  
-|%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Exemple :<br /><br /> `MyProject\Source\`|  
-|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [Procédure : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source\\* contient le fichier Program.cs, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\*.|  
-|%(Identity)|Élément spécifié dans l’attribut `Include`. Exemple :<br /><br /> `Source\Program.cs`|  
-|%(ModifiedTime)|Contient l’horodatage de la dernière modification de l’élément. Exemple :<br /><br /> `2004-07-01 00:21:31.5073316`|  
-|%(CreatedTime)|Contient l’horodatage de création de l’élément. Exemple :<br /><br /> `2004-06-25 09:26:45.8237425`|  
+|%(FullPath)|Contient le chemin complet de l’élément. Par exemple :<br /><br /> `C:\MyProject\Source\Program.cs`|  
+|%(RootDir)|Contient le répertoire racine de l’élément. Par exemple :<br /><br /> `C:\`|  
+|%(Filename)|Contient le nom de fichier de l’élément, sans l’extension. Par exemple :<br /><br /> `Program`|  
+|%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> `.cs`|  
+|%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Par exemple :<br /><br /> `Source\`|  
+|%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Par exemple :<br /><br /> `MyProject\Source\`|  
+|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [Procédure : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source\\* contient le fichier Program.cs, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\* .|  
+|%(Identity)|Élément spécifié dans l’attribut `Include`. Par exemple :<br /><br /> `Source\Program.cs`|  
+|%(ModifiedTime)|Contient l’horodatage de la dernière modification de l’élément. Par exemple :<br /><br /> `2004-07-01 00:21:31.5073316`|  
+|%(CreatedTime)|Contient l’horodatage de création de l’élément. Par exemple :<br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|Contient l’horodatage du dernier accès à l’élément.<br /><br /> `2004-08-14 16:52:36.3168743`|  
   
 ## <a name="see-also"></a>Voir aussi  

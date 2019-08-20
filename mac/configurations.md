@@ -1,16 +1,16 @@
 ---
 title: Présentation des configurations de build
 description: Cet article décrit les différentes configurations de build dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983362"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826074"
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 
@@ -22,7 +22,7 @@ Chaque plateforme a des configurations spécifiques pour sa génération.
 
 ## <a name="solution-configurations"></a>Configurations de solution
 
-Comme pour les configurations de projet, les configurations de solution sont utilisées pour créer des configurations personnalisées pour un projet entier. Sous l’onglet **Mappages de configuration** , sous l’élément **Build > Configurations** , vous pouvez affecter une configuration cible pour chaque élément de la solution, comme illustré dans l’image suivante :
+Comme pour les configurations de projet, les configurations de solution sont utilisées pour créer des configurations personnalisées pour un projet entier. Sous l’onglet **Mappages de configuration** sous l’élément **Build > Configurations**, vous pouvez affecter une configuration cible pour chaque élément de la solution, comme illustré dans l’image suivante :
 
 ![Options de mappage de configuration](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ Dans Visual Studio pour Mac, au lieu de définir un projet de démarrage, vous p
 
 ![Listé déroulante Configuration d’exécution](media/projects-and-solutions-image8.png)
 
-Une configuration d’exécution est un ensemble d’options d’exécution avec un nom et plusieurs configurations qui sont définies dans un projet à des fins différentes. Les configurations d’exécution sont définies au niveau du projet, et une configuration par défaut est créée automatiquement pour chaque projet exécutable, même s’il est possible d’en ajouter autant que nécessaire. Certains types de projets génèrent automatiquement des configurations d’exécution supplémentaires. Par exemple, les projets watchOS peuvent générer des  _configurations Coup d’œil et Notification_.
+Une configuration d’exécution est un ensemble d’options d’exécution avec un nom et plusieurs configurations qui sont définies dans un projet à des fins différentes. Les configurations d’exécution sont définies au niveau du projet, et une configuration par défaut est créée automatiquement pour chaque projet exécutable, même s’il est possible d’en ajouter autant que nécessaire. Certains types de projets génèrent automatiquement des configurations d’exécution supplémentaires. Par exemple, les projets watchOS peuvent générer des _configurations Coup d’œil et Notification_.
 
 Vous pouvez partager les configurations avec d’autres développeurs (auquel cas, elles sont stockées dans le fichier .csproj) ou les conserver localement (auquel cas, elles sont stockées dans un fichier .user).
 
@@ -51,21 +51,21 @@ Pour le débogage sur un appareil physique, vous devez ajouter `Exported=true` �
 La liste ci-dessous fournit quelques exemples de données qui peuvent être incluses dans les configurations d’exécution :
 
 * Projet .NET normal
-    * Application de démarrage alternative
-    * Arguments du démarrage
-    * Répertoire de travail
-    * Variables d’environnement
-    * Options de runtime Mono (à utiliser uniquement lors de l’exécution sur Mono)
+  * Application de démarrage alternative
+  * Arguments du démarrage
+  * Répertoire de travail
+  * Variables d’environnement
+  * Options de runtime Mono (à utiliser uniquement lors de l’exécution sur Mono)
 * Projet Android
-    * Point d’entrée (activité, service, récepteur)
-    * Arguments et données intentionnels
+  * Point d’entrée (activité, service, récepteur)
+  * Arguments et données intentionnels
 * Projet iOS
-    * Mode (Normal, Récupération en arrière-plan)
+  * Mode (Normal, Récupération en arrière-plan)
 * Projet d’extension iOS
-    * Application de démarrage : par défaut ou personnalisée
+  * Application de démarrage : par défaut ou personnalisée
 * Projet WatchKit
-    * Mode (Coup d’œil, Notification)
-    * Charge utile de la notification
+  * Mode (Coup d’œil, Notification)
+  * Charge utile de la notification
 
 ## <a name="see-also"></a>Voir aussi
 

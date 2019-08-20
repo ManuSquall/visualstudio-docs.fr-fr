@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808493"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624196"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : Utiliser les fonctionnalités de l’éditeur XML
 
@@ -30,7 +30,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir (**...** ) sur le **schémas** champ.
+3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir ( **...** ) sur le **schémas** champ.
 
      Le **schémas XSD** boîte de dialogue s’affiche.
 
@@ -58,7 +58,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez **< !--** pour ajouter le nœud de commentaire et appuyez sur **entrée**.
+2. Sélectionnez  **&lt;!--** pour ajouter le nœud de commentaire et appuyez sur **entrée**.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
@@ -70,7 +70,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 5. Entrez `>` pour fermer la balise.
 
-6. L'éditeur ajoute la balise de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation Le **info-bulle** affiche le message : **L’élément 'employee' contenu est incomplet. Attendu 'ID'**.
+6. L'éditeur ajoute la balise de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation Le **info-bulle** affiche le message : **L’élément 'employee' contenu est incomplet. Attendu 'ID'** .
 
 7. Type `<` et sélectionnez **ID** à partir de la liste des membres. Entrez ensuite `>`.
 
@@ -86,7 +86,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 10. Revenez dans le fichier XML et remplacez le **abc** texte avec **123**.
 
-     La ligne ondulée et **info-bulle** disparaissent sous la valeur ID de l’élément. Le **info-bulle** pour la fin de l’employé balise affiche maintenant le message : **L’élément 'employee' contenu est incomplet. Attendu 'hire-date'**.
+     La ligne ondulée et **info-bulle** disparaissent sous la valeur ID de l’élément. Le **info-bulle** pour la fin de l’employé balise affiche maintenant le message : **L’élément 'employee' contenu est incomplet. Attendu 'hire-date'** .
 
 11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez **hire-date** dans la liste des membres, puis tapez dans `>`.
 
@@ -106,7 +106,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 1. À partir de la **fichier** menu, sélectionnez **Enregistrer sous**.
 
-     Le **enregistrer le fichier sous** boîte de dialogue s’affiche. Le nom de fichier par défaut est *« XMLFile1 »*.
+     Le **enregistrer le fichier sous** boîte de dialogue s’affiche. Le nom de fichier par défaut est *« XMLFile1 »* .
 
 2. Entrez le nom de fichier et l’emplacement du document XML et cliquez sur **enregistrer**.
 

@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975544"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250637"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -114,7 +114,7 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
      Le type obtient le focus et son contenu est affiché dans la fenêtre **Détails de classe**.
 
-2. Dans la fenêtre **Détails de classe**, dans la section contenant le genre de membre que vous souhaitez ajouter, cliquez sur **\<ajouter un membre>**. Par exemple, pour ajouter un champ, cliquez sur **\<ajouter un champ>**.
+2. Dans la fenêtre **Détails de classe**, dans la section contenant le genre de membre que vous souhaitez ajouter, cliquez sur **\<ajouter un membre>** . Par exemple, pour ajouter un champ, cliquez sur **\<ajouter un champ>** .
 
 3. Tapez le nom du membre que vous voulez créer et appuyez sur Entrée.
 
@@ -122,7 +122,8 @@ Vous pouvez créer un membre à l'aide de l'un des outils suivants :
 
 4. Vous pouvez, à titre facultatif, spécifier d'autres détails sur le membre, comme son type.
 
-     **Remarque :** vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modifier des membres de type
 
@@ -150,7 +151,7 @@ Chaque ligne membre affiche les éléments suivants :
 
 - **Modificateur de membre**
 
-     Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) ou `Default`.
+     Modifiez le modificateur de visibilité d’un membre en `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) ou `Default`.
 
 - **\<ajouter un membre>**
 
@@ -223,9 +224,9 @@ La fenêtre **Propriétés** présente les mêmes propriétés de paramètres qu
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre.
 
-     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>**.
+     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>** .
 
-3. Cliquez sur **\<ajouter un paramètre>**, tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
+3. Cliquez sur **\<ajouter un paramètre>** , tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 
@@ -239,9 +240,9 @@ La fenêtre **Propriétés** présente les mêmes propriétés de paramètres qu
 
 2. Dans la fenêtre **Détails de classe**, développez la ligne de la méthode à laquelle vous souhaitez ajouter un paramètre optionnel.
 
-     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>**.
+     Une ligne de paramètre mise en retrait s’affiche ; elle contient uniquement une paire de parenthèses et les mots **\<ajouter un paramètre>** .
 
-3. Cliquez sur **\<ajouter un paramètre>**, tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
+3. Cliquez sur **\<ajouter un paramètre>** , tapez le nom du nouveau paramètre et appuyez sur **Entrée**.
 
      Le nouveau paramètre est ajouté à la méthode et à son code. Il apparaît dans la fenêtre **Détails de classe** et dans la fenêtre Propriétés.
 
@@ -308,7 +309,7 @@ Si vous essayez d’enregistrer un projet contenant un type dont le fichier de c
 
 Si un fichier de code contient une erreur de syntaxe, les formes dédiées à l'affichage du code de ce fichier restent en lecture seule tant que l'erreur de syntaxe n'est pas résolue. Les formes affichent alors le texte en rouge et une icône de couleur rouge, accompagnée d'une info-bulle dont le texte est le suivant : « Le fichier de code source contient une erreur d'analyse. »
 
-Un type référencé (comme un type .NET Framework), qui existe sous un autre nœud de projet ou sous un nœud d'assembly référencé, est signalé sur l'aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.
+Un type référencé (comme un type .NET), qui existe sous un autre nœud du projet ou sous un nœud d’assembly référencé, est signalé sur l’aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.
 
 Les indexeurs sont en lecture-écriture dans le code et dans la fenêtre **Détails de classe**, mais le nom d’indexeur est en lecture seule.
 

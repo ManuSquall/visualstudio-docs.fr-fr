@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: e8d5d29c860f93904b3afc917a057f9b5335aca9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848362"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68155767"
 ---
  Word 2013 

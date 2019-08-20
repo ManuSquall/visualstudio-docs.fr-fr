@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445379"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747431"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.
 
  Cet article décrit des aspects spécifiques de l'hébergement de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui doivent être pris en compte lors de la personnalisation des projets et des fichiers *.targets* que vous souhaitez charger et générer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous serez ainsi assuré que les fonctionnalités [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , telles qu'IntelliSense et le débogage fonctionnent pour votre projet personnalisé.
 
- Pour plus d’informations sur les projets C++, consultez [Fichiers projet](/cpp/ide/project-files).
+ Pour plus d’informations sur les projets C++, consultez [Fichiers projet](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Extensions de nom de fichier projet
  *MSBuild.exe* reconnaît n'importe quelle extension de nom de fichier projet correspondant au modèle *.\*proj*. En revanche, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconnaît uniquement un sous-ensemble de ces extensions, lesquelles déterminent le système de projet spécifique au langage qui chargera le projet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne possède pas de système de projet basé sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , indépendant du langage.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Décharger le projet**.
 
-     Le projet est alors marqué **(non disponible)**.
+     Le projet est alors marqué **(non disponible)** .
 
-2. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Modifier \<Fichier projet>**.
+2. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Modifier \<Fichier projet>** .
 
      Le fichier projet s'ouvre dans l'Éditeur XML de Visual Studio.
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.
 
-  - `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .
+  - `ResolvedFrom`, défini sur « {TargetFrameworkDirectory} » s’il a été résolu à partir du répertoire de .NET Framework.
 
 - Références COM :
 
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    Le système de projet appelle une cible avec le nom connu `ResolveNativeReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `NativeReferenceFile`. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus d'une nouvelle métadonnée nommée `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.
 
 ## <a name="performance-shortcuts"></a>Raccourcis de performances
- Si vous démarrez le débogage dans l'interface utilisateur de Visual Studio (en choisissant la touche F5 ou en choisissant **Déboguer** > **, dans le menu Démarrer le débogage**), le processus de génération utilise une vérification des mises à jour rapide pour améliorer les performances. Dans les cas où les générations personnalisées créent les fichiers qui sont générés à leur tour, la vérification de mise à jour rapide n'identifie pas correctement les fichiers modifiés. Les projets qui ont besoin de vérifications de mise à jour plus complètes peuvent désactiver la vérification rapide en définissant la variable d'environnement `DISABLEFASTUPTODATECHECK=1`. Les projets peuvent également définir cela comme une propriété MSBuild dans le projet ou dans un fichier que le projet importe.
+ Si vous démarrez le débogage dans l'interface utilisateur de Visual Studio (en choisissant la touche F5 ou en choisissant **Déboguer** >  **, dans le menu Démarrer le débogage**), le processus de génération utilise une vérification des mises à jour rapide pour améliorer les performances. Dans les cas où les générations personnalisées créent les fichiers qui sont générés à leur tour, la vérification de mise à jour rapide n'identifie pas correctement les fichiers modifiés. Les projets qui ont besoin de vérifications de mise à jour plus complètes peuvent désactiver la vérification rapide en définissant la variable d'environnement `DISABLEFASTUPTODATECHECK=1`. Les projets peuvent également définir cela comme une propriété MSBuild dans le projet ou dans un fichier que le projet importe.
 
  Pour des builds classiques dans Visual Studio, la vérification des mises à jour rapide ne s'applique pas, et le projet est généré comme si vous appeliez la build dans une invite de commandes.
 

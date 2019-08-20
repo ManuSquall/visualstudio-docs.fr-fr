@@ -139,7 +139,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
 - Pour modifier les chemins de recherche, choisissez un chemin d'accès non sélectionné ou choisissez **Nouveau** et entrez un nouveau chemin d'accès. Sélectionnez **Charger** pour rechercher à nouveau les chemins d'accès et charger le fichier de symboles s'il est trouvé.
 
-- Choisissez **Parcourir et rechercher**_nom_exécutable_**...** pour remplacer toutes les options de symbole et réessayer les chemins de recherche. Le fichier de symboles est chargé s'il est trouvé, ou un Explorateur de fichiers s'affiche pour sélectionner manuellement le fichier de symboles.
+- Choisissez **Parcourir et rechercher**_nom_exécutable_ **...** pour remplacer toutes les options de symbole et réessayer les chemins de recherche. Le fichier de symboles est chargé s'il est trouvé, ou un Explorateur de fichiers s'affiche pour sélectionner manuellement le fichier de symboles.
 
 - Sélectionnez **Modifier les paramètres des symboles ...** pour afficher la page **Débogage** / **Symboles** de la boîte de dialogue Options de VS.
 

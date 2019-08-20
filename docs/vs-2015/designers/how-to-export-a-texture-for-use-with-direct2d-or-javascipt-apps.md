@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98b08fc8ebf2fca207d41b644032d7abbcd97a24
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d73f24287c4acc38440767d84ae72e862a5e5c75
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681740"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823911"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Le pipeline de contenus d’image peut générer des textures compatibles avec l
   
 - Configuration du pipeline de contenus d’image pour générer une texture utilisable dans une application Direct2D ou Javascript.  
   
-    - Générer un fichier .dds compressé au niveau des blocs.  
-  
-    - Générer une valeur alpha prémultipliée.  
-  
-    - Désactiver la génération de mipmap.  
+  - Générer un fichier .dds compressé au niveau des blocs.  
+
+  - Générer une valeur alpha prémultipliée.  
+
+  - Désactiver la génération de mipmap.  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Conventions de rendu dans Direct2D  
  Les textures qui sont utilisés dans le contexte de Direct2D doivent respecter ces conventions de rendu interne de Direct2D :  
@@ -40,11 +40,11 @@ Le pipeline de contenus d’image peut générer des textures compatibles avec l
   
 - La texture doit être fournie au format .dds, en utilisant un de ces formats de compression de bloc :  
   
-    - Compression BC1_UNORM  
-  
-    - Compression BC2_UNORM  
-  
-    - Compression BC3_UNORM  
+  - Compression BC1_UNORM  
+
+  - Compression BC2_UNORM  
+
+  - Compression BC3_UNORM  
   
 - Les mipmaps ne sont pas pris en charge.  
   
@@ -54,12 +54,12 @@ Le pipeline de contenus d’image peut générer des textures compatibles avec l
   
 2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour le fichier de texture que vous venez de créer puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**, **Général**, définissez la propriété **Type d’élément** sur **Pipeline de contenus d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.  
   
-3. Définissez le format de sortie sur un des formats de compression de blocs. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Compresser** sur **Compression BC3_UNORM (/compress:BC3_UNORM)**. Vous pouvez choisir un des autres formats BC1, BC2 ou BC3, selon vos besoins. Direct2D ne prend actuellement pas en charge les textures BC4, BC5, BC6 ou BC7. Pour plus d’informations sur les différents formats BC, consultez [Block Compression (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
+3. Définissez le format de sortie sur un des formats de compression de blocs. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Compresser** sur **Compression BC3_UNORM (/compress:BC3_UNORM)** . Vous pouvez choisir un des autres formats BC1, BC2 ou BC3, selon vos besoins. Direct2D ne prend actuellement pas en charge les textures BC4, BC5, BC6 ou BC7. Pour plus d’informations sur les différents formats BC, consultez [Block Compression (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
    > [!NOTE]
    > Le format de compression spécifié détermine le format du fichier produit par le pipeline de contenus d’image. Ceci est différent de la propriété **Format** de l’image source dans l’éditeur d’images, qui détermine le format du fichier image source stocké sur le disque, c’est-à-dire le *format de travail*. En règle générale, vous ne voulez pas qu’un format de travail soit compressé.  
   
-4. Configurez le pipeline de contenus d’image pour produire une sortie qui utilise une valeur alpha prémultipliée. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)**.  
+4. Configurez le pipeline de contenus d’image pour produire une sortie qui utilise une valeur alpha prémultipliée. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)** .  
   
 5. Configurez le pipeline de contenus d’image pour qu’il ne génère pas de mipmaps. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Générer des mips** sur **Non**.  
   

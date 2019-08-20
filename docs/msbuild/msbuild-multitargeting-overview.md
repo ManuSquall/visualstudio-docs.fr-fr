@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445738"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926401"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d’ensemble du multiciblage MSBuild
 MSBuild vous permet de compiler une application pour l’exécuter sur une version du .NET Framework donnée et sur une plateforme système donnée. Par exemple, vous pouvez compiler une application qui s’exécute sur le .NET Framework version 2.0 sur une plateforme 32 bits, et compiler la même application pour qu’elle s’exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits.
@@ -40,7 +40,7 @@ MSBuild vous permet de compiler une application pour l’exécuter sur une versi
  Un ensemble d’outils regroupe les outils, tâches et cibles utilisés pour créer l’application. Un ensemble d’outils comprend des compilateurs tels que *csc.exe* et *vbc.exe*, le fichier de cibles courantes (*microsoft.common.targets*) et le fichier de tâches courantes (*microsoft.common.tasks*). L’ensemble d’outils 4.5 peut être utilisé pour cibler des versions 2.0, 3.0, 3.5, 4 et 4.5 du .NET Framework. Cependant, l’ensemble d’outils 2.0 ne peut être utilisé que pour cibler le .NET Framework version 2.0. Pour plus d’informations, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblys de référence
- Les assemblys de référence qui sont spécifiés dans l’ensemble d’outils vous aident à concevoir et à générer une application. Ces assemblys de référence activent non seulement une build cible particulière, mais limitent également les composants et fonctionnalités dans l’IDE Visual Studio à ceux qui sont compatibles avec la cible. Pour plus d’informations, voir [Résoudre des assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md)
+ Les assemblys de référence qui sont spécifiés dans l’ensemble d’outils vous aident à concevoir et à générer une application. Ces assemblys de référence activent non seulement une build cible particulière, mais limitent également les composants et fonctionnalités dans l’IDE Visual Studio à ceux qui sont compatibles avec la cible. Pour plus d’informations, voir [Résoudre des assemblys au moment du design](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="configure-targets-and-tasks"></a>Configurer les cibles et les tâches
  Vous pouvez configurer des cibles et des tâches MSBuild pour qu’elles s’exécutent hors processus avec MSBuild. Vous pouvez ainsi cibler des contextes très différents de celui dans lequel vous vous trouvez.  Par exemple, vous pouvez cibler une application .NET Framework 2.0 32 bits alors que l’ordinateur de développement s’exécute sur une plateforme 64 bits avec le .NET Framework 4.5. Pour plus d’informations, voir [Configurer des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md).

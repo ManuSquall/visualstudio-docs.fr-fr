@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d7894b4ec0039b28a579239605c22c2397c300f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154348"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121 : Les constructeurs statiques doivent être privés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58939179"
 ## <a name="rule-description"></a>Description de la règle
  Un constructeur statique, également appelé constructeur de classe, est utilisé pour initialiser un type. Le système appelle le constructeur statique avant la création de la première instance du type ou le référencement de tout membre statique. L’utilisateur n’a aucun contrôle sur quand le constructeur statique est appelé. Si un constructeur statique n’est pas privé, il peut être appelé par un code autre que le système. Selon les opérations effectuées dans le constructeur, cette possibilité peut provoquer un comportement inattendu.
 
- Cette règle est appliquée par les compilateurs C# et Visual Basic .NET.
+ Cette règle est appliquée par les compilateurs c# et Visual Basic .NET.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Violations sont généralement provoquées par une des actions suivantes :

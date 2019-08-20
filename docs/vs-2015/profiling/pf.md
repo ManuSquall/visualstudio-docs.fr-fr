@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Options non valides  
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **PF**.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Définit l’événement d’échantillonnage sur les cycles d’horloge du processeur et définit éventuellement l’intervalle d’échantillonnage sur `Cycles`. L’intervalle de Timer par défaut est 10,000,000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Définit l’événement d’échantillonnage comme étant des appels de l’application profilée au noyau du système d’exploitation (syscalls), et définit éventuellement l’intervalle d’échantillonnage sur `Events`. L'intervalle Sys par défaut est 10.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Définit l'événement d'échantillonnage sur le compteur de performance d'UC spécifié par `Name` et définit l'intervalle d'échantillonnage sur `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Recueille des données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.  
   
 ## <a name="example"></a>Exemple  

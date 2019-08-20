@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989555"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692997"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
@@ -81,7 +81,7 @@ Si vous avez un projet qui _n’est pas_ déjà dans la gestion de versions, eff
 
     ![Menu Gestion de version](media/version-control-git10.png)
 
-10. Une fois que vous commencez à apporter des changements supplémentaires, sélectionnez  **Effectuer une opération Push sur les modifications** pour envoyer (push) les changements vers le dépôt  **distant** . Ceci permet à tous les utilisateurs appropriés de les voir sur github.com :
+10. Une fois que vous commencez à procéder à d’autres modifications, sélectionnez **Envoyer les modifications** pour envoyer (push) les modifications au référentiel **distant**. Ceci permet à tous les utilisateurs appropriés de les voir sur github.com :
 
     ![Envoyer (push) des modifications sur un dépôt distant](media/version-control-git11.png)
 

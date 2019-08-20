@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430347"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825984"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : Étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser la **modèle de connectivité de données métiers** élément de projet pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données dans le modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.
@@ -28,9 +28,9 @@ ms.locfileid: "63430347"
 
 - Création d’une extension Visual Studio qui exécute deux tâches principales :
 
-    - Il génère une liste externe qui affiche les données dans un modèle BDC. L’extension utilise le modèle d’objet pour le système de projet SharePoint pour générer un *Elements.xml* fichier qui définit la liste. Il ajoute également le fichier au projet afin qu’il est déployé avec le modèle BDC.
+  - Il génère une liste externe qui affiche les données dans un modèle BDC. L’extension utilise le modèle d’objet pour le système de projet SharePoint pour générer un *Elements.xml* fichier qui définit la liste. Il ajoute également le fichier au projet afin qu’il est déployé avec le modèle BDC.
 
-    - Il ajoute un élément de menu contextuel pour le **modèle de connectivité de données métiers** éléments de projet des **l’Explorateur de solutions**. Les développeurs peuvent cliquer sur cet élément de menu pour générer une liste externe pour le modèle BDC.
+  - Il ajoute un élément de menu contextuel pour le **modèle de connectivité de données métiers** éléments de projet des **l’Explorateur de solutions**. Les développeurs peuvent cliquer sur cet élément de menu pour générer une liste externe pour le modèle BDC.
 
 - Création d’un package d’Extension Visual Studio (VSIX) pour déployer l’assembly d’extension.
 

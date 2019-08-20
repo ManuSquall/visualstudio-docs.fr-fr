@@ -13,33 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676293"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551054"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Procédure : Configurer l’analyse statique du code pour le code managé
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procédure : Configurer l’analyse héritée pour le code managé
 
-Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code [ensembles de règles](../code-quality/rule-set-reference.md) à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
+Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles](../code-quality/rule-set-reference.md) d’analyse du code à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
 
-Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications web ASP.NET, consultez [Comment : Configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications [Web ASP.net, consultez Procédure: Configurez l’analyse du code pour](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)une application Web ASP.net.
 
 > [!NOTE]
-> Cet article s’applique à l’analyse statique du code et non [analyseurs de Roslyn](use-roslyn-analyzers.md), qui ne s’exécutent à l’analyse du code après génération.
+> Cet article s’applique aux analyses héritées et non aux analyseurs de [code basés sur .NET Compiler Platform](use-roslyn-analyzers.md), qui n’exécutent pas l’analyse du code après la génération.
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Pour configurer un ensemble de règles pour un projet .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurer un ensemble de règles pour un projet .NET Framework
 
 1. Ouvrez le **analyse du Code** onglet sur les pages de propriétés du projet. Vous pouvez le faire dans une des manières suivantes :
 
-   - Dans **l’Explorateur de solutions**, sélectionnez le projet. Dans la barre de menus, sélectionnez **analyser** > **configurer l’analyse du Code** > **pour \<nom_projet >**.
+   - Dans **l’Explorateur de solutions**, sélectionnez le projet. Dans la barre de menus, sélectionnez **analyser** > **configurer l’analyse du Code** > **pour \<nom_projet >** .
 
    - Cliquez sur le projet dans **l’Explorateur de solutions** et sélectionnez **propriétés**, puis sélectionnez le **analyse du Code** onglet.
 
 1. Dans le **Configuration** et **plateforme** listes, sélectionnez la plateforme de configuration et la cible de génération.
 
-1. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer l’analyse du Code sur la Build** case à cocher. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<nom_projet >**.
+1. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer l’analyse du Code sur la Build** case à cocher. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<nom_projet >** .
 
 1. Par défaut, l'analyse du code ne signale pas d'avertissements pour le code généré automatiquement par les outils externes. Pour afficher les avertissements du code généré, désactivez le **supprimer les résultats du code généré** case à cocher.
 
@@ -77,4 +77,4 @@ Par défaut, tous les projets gérés d’une solution sont affectés les *règl
 ## <a name="see-also"></a>Voir aussi
 
 - [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)
-- [Guide pratique pour Configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Guide pratique : Configurer l’analyse du code pour une application Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

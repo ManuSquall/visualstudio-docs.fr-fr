@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178860"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procédure : Exclure des projets d’une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
   
 1. Dans la barre de menus, choisissez **Générer**, puis **Gestionnaire de configurations**.  
   
-2. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau>**.  
+2. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau>** .  
   
 3. Dans la zone **Nom**, entrez un nom pour la configuration de solution.  
   
@@ -58,4 +58,4 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Guide pratique pour Créer et modifier des Configurations](../ide/how-to-create-and-edit-configurations.md)   
- [Guide pratique pour générer plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Guide pratique : générer plusieurs configurations simultanément](../ide/how-to-build-multiple-configurations-simultaneously.md)

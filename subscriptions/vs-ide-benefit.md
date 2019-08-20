@@ -3,18 +3,17 @@ title: Avantage IDE Visual Studio dans les abonnements Visual Studio | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420809"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787863"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Utiliser l’avantage Visual Studio 2019
+# <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
 
 En tant qu’abonné Visual Studio, vous avez accès à l’IDE de Visual Studio.  La version spécifique disponible dépend du niveau de votre abonnement.  L’avantage s’affiche sous forme de vignette dans la catégorie Outils de la page [Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) du portail Abonné.
 
@@ -35,7 +34,7 @@ Pour télécharger l’IDE :
 5. Cliquez sur le bouton bleu de téléchargement.
    > [!div class="mx-imgBorder"]
    > ![Détails du téléchargement de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Pour démarrer l’installation, cliquez sur **Exécuter**.
+6. Cliquez sur le package de programme d’installation téléchargé.  Si vous êtes invité à effectuer l’installation, cliquez sur **Exécuter**.
 7. Dans la boîte de dialogue Contrôle de compte d’utilisateur, cliquez sur **Oui**.
 8. Cliquez sur **Continuer** pour accepter les termes du contrat de licence.
 9. Au démarrage du programme d’installation, choisissez les charges de travail, les composants individuels et les modules linguistiques souhaités sous les onglets correspondants.
@@ -44,9 +43,9 @@ Pour télécharger l’IDE :
 
 10. Cliquez sur **Installer**.
 
-11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.
+11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.  Si plusieurs versions sont déjà installées, elles sont listées.
     > [!div class="mx-imgBorder"]
-    > ![Lancer Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Lancer Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Connectez-vous avec le compte associé à votre abonnement Visual Studio.
 
@@ -54,12 +53,9 @@ Pour télécharger l’IDE :
 
 14. Visual Studio s’ouvre. Vous êtes prêt à commencer à utiliser Visual Studio !
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Commencer à utiliser Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -69,7 +65,6 @@ Pour télécharger l’IDE :
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | Communauté Visual Studio |Oui |
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  Exclut : MCT Software & Services.*
 
@@ -80,6 +75,12 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 - Si vous avez besoin d’aide avec l’IDE Visual Studio, consultez les ressources suivantes :
-    - Support technique : [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Documentation](/visualstudio/)
+  - Support technique : [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Documentation](/visualstudio/)
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+
+## <a name="next-steps"></a>Étapes suivantes
+Une fois que vous avez installé Visual Studio, n’oubliez pas d’activer les autres avantages importants ci-dessous :
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédits Azure](vs-azure.md)
+- [Compte de développeur Windows](vs-windows-dev.md)

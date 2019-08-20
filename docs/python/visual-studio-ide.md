@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957449"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826164"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -27,16 +27,16 @@ ms.locfileid: "62957449"
 Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenêtres Outil essentielles et souvent utilisées :
 
 - L’[**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](/visualstudio/get-started/tutorial-projects-solutions).
-    - À côté de **l’Explorateur de solutions** se trouvent les [**Environnements Python**](managing-python-environments-in-visual-studio.md), qui permettent de gérer les différents interpréteurs Python installés sur l’ordinateur.
+  - À côté de **l’Explorateur de solutions** se trouvent les [**Environnements Python**](managing-python-environments-in-visual-studio.md), qui permettent de gérer les différents interpréteurs Python installés sur l’ordinateur.
 
-    ::: moniker range=">=vs-2019"
-    - Vous pouvez également ouvrir et exécuter du code Python dans un dossier sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - Vous pouvez également ouvrir et exécuter du code Python dans un dossier sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - La [fenêtre de l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pourrez [modifier le code Python](editing-python-code-in-visual-studio.md), parcourir la structure de votre code et définir des points d’arrêt au cours des sessions de débogage. Avec Python, il est également possible de sélectionner du code et d’appuyer sur Ctrl+Entrée pour l’exécuter dans une [fenêtre REPL interactive](python-interactive-repl-in-visual-studio.md).
 
 - Dans la [fenêtre Sortie](../ide/reference/output-window.md) (en bas au centre), Visual Studio envoie des notifications, par exemple, des messages d’erreur et de débogage, des avertissements, des messages d’état de publication, etc. Chaque source de message a son propre onglet.
-    - Une [fenêtre REPL Interactive Python](python-interactive-repl-in-visual-studio.md) apparaît dans la même zone que la fenêtre Sortie.
+  - Une [fenêtre REPL Interactive Python](python-interactive-repl-in-visual-studio.md) apparaît dans la même zone que la fenêtre Sortie.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (en bas à droite) vous permet de suivre des éléments de travail et de partager du code avec d’autres utilisateurs à l’aide des technologies de gestion de versions comme [Git](https://git-scm.com/) et [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -93,6 +93,10 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
     À partir de Visual Studio 2019, vous pouvez ouvrir un dossier contenant du code Python pour bénéficier de fonctionnalités telles que IntelliSense et le débogage sans devoir créer un projet Visual Studio pour le code.
 ::: moniker-end
+
+- [Collaborer à l’aide de Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quel que soit le langage de programmation que vous utilisez ou les types d’applications que vous créez. 
 
 - [REPL interactif Python](python-interactive-repl-in-visual-studio.md)
 

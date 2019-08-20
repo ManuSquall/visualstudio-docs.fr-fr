@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845992"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328804"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -55,15 +55,15 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 - insert\_final_newline
 - racine
 
-Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md) et de [nommage](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
+Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md), notamment celles de [langage](../ide/editorconfig-language-conventions.md), [mise en forme](../ide/editorconfig-formatting-conventions.md) et [affectation de noms](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
 
-L’ajout d’un fichier EditorConfig à votre projet ou code base ne convertit pas les styles existants en nouveaux styles. Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Toutefois, les nouvelles lignes de code sont mises en forme selon le fichier EditorConfig. Par ailleurs, si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**), les paramètres contenus dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
+Lorsque vous ajoutez un fichier EditorConfig à votre projet ou base de code, les nouvelles lignes de code que vous écrivez sont mises en forme en fonction du fichier EditorConfig. Toutefois, l’ajout d’un fichier EditorConfig ne convertit pas les styles existants en nouveaux styles jusqu'à ce que vous mettiez en forme le document. Par exemple, si votre fichier contient des mises en retrait avec des tabulations, et que vous ajoutiez un fichier EditorConfig qui crée des mises en retrait avec des espaces, les tabulations de mise en retrait ne sont pas automatiquement converties en espaces. Quand vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**), les paramètres contenus dans le fichier EditorConfig sont appliqués aux lignes de code existantes.
 
-Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous devez fermer tous les fichiers de code ouverts et les rouvrir pour réappliquer les paramètres généraux de l’éditeur aux nouvelles lignes de code.
+Si vous supprimez un fichier EditorConfig de votre projet ou base de code et souhaitez que les nouvelles lignes de code soient mises en forme en fonction des paramètres de l’éditeur global, vous devez fermer et rouvrir les fichiers de code ouverts.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Pour ajouter un fichier EditorConfig à un projet ou une solution
+### <a name="add-an-editorconfig-file-to-a-project"></a>Ajouter un fichier EditorConfig à un projet
 
 1. Ouvrez un projet ou une solution dans Visual Studio. Sélectionnez le nœud du projet ou de la solution, selon que vos paramètres *.editorconfig* doivent s’appliquer à tous les projets de la solution ou à un seul. Vous pouvez également sélectionner dans votre projet ou votre solution un dossier auquel ajouter le fichier *.editorconfig*.
 
@@ -71,34 +71,27 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous 
 
    La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-1. Dans les catégories situées à gauche, choisissez **Général**, puis choisissez le modèle **Fichier texte**. Dans la zone de texte **Nom**, entrez `.editorconfig`, puis choisissez **Ajouter**.
+1. Dans la zone de recherche, recherchez **editorconfig**.
+
+   Deux modèles d'élément de **Fichier editorconfig** s’affichent dans les résultats de recherche.
+
+   ![Modèles d’élément de fichier EditorConfig dans Visual Studio](media/editorconfig-item-templates.png)
+
+1. Sélectionnez le modèle **Fichier editorconfig (par défaut)** pour ajouter un fichier EditorConfig prérempli avec deux options essentielles d’EditorConfig pour le style de mise en retrait et la taille. Vous pouvez aussi sélectionner le modèle **Fichier editorconfig (.NET)** pour ajouter un fichier EditorConfig prérempli avec les conventions de [style de code mise en forme et dénomination .NET](../ide/editorconfig-code-style-settings-reference.md) par défaut.
 
    Un fichier *.editorconfig* s’affiche dans l’explorateur de solutions et s’ouvre dans l’éditeur.
 
-   ![Fichier .editorconfig dans l’Explorateur de solutions](media/editorconfig-in-solution-explorer.png)
+   ![Fichier .editorconfig dans l’Explorateur de solutions et l’éditeur](media/editorconfig-dotnet.png)
 
-1. Modifiez le fichier comme vous le souhaitez, par exemple :
-
-   ```ini
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Modifiez le fichier comme vous le souhaitez.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Autres façons d’ajouter un fichier EditorConfig
 
 Il existe d’autres façons d’ajouter un fichier EditorConfig au projet :
 
-- Installez l’[extension des services de langage EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pour ajouter plus facilement un fichier *.editorconfig* vide au projet. Après avoir installé cette extension, choisissez simplement **Ajouter** > **Fichier .editorconfig** en cliquant avec le bouton droit pour afficher un menu contextuel du nœud de la solution, du nœud de projet ou d’un dossier de l’**Explorateur de solutions**. Cette extension améliore également l’expérience utilisateur permettant de modifier le fichier *.editorconfig*.
+- La [fonctionnalité d’inférence de code](/visualstudio/intellicode/code-style-inference) d’IntelliCode pour Visual Studio déduit vos styles de code à partir du code existant. Elle crée ensuite un fichier EditorConfig non vide avec vos préférences de style de code déjà définies.
 
-   ![Ajouter le fichier .editorconfig avec l’extension](media/editorconfig-extension-add.png)
-
-- Essayez l’[extension IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Cette extension expérimentale déduit vos styles de code à partir du code existant, puis crée un fichier *.editorconfig* non vide avec vos préférences de style de code déjà définies.
+- À compter de Visual Studio 2019, vous pouvez [générer un fichier EditorConfig selon vos paramètres de style de code](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) dans **Outils** > **Options**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Priorité et hiérarchie des fichiers
 
@@ -129,7 +122,7 @@ Si vous modifiez de nombreux fichiers *.editorconfig*, l’[extension du service
 
 ![IntelliSense avec l’extension du service de langage EditorConfig](media/editorconfig-intellisense.png)
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 L’exemple suivant montre la mise en retrait d’un extrait de code C# avant et après l’ajout d’un fichier *.editorconfig* au projet. Le paramètre **Tabulations** dans la boîte de dialogue **Options** de l’éditeur de texte Visual Studio est défini pour ajouter des espaces quand vous appuyez sur la touche **Tab**.
 
@@ -175,7 +168,6 @@ Vous pouvez contrôler la portée de vos conventions EditorConfig en définissan
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de style du code .NET](../ide/editorconfig-code-style-settings-reference.md)
-- [Conventions de nommage .NET](../ide/editorconfig-naming-conventions.md)
 - [Prise en charge d’EditorConfig pour un service de langage](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Fonctionnalités de l’éditeur de code](writing-code-in-the-code-and-text-editor.md)

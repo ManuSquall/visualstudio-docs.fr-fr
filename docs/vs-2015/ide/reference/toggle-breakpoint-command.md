@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193372"
 ---
 # <a name="toggle-breakpoint-command"></a>Basculer le point d'arrêt, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Debug.ToggleBreakpoint [text]
   
 ## <a name="arguments"></a>Arguments  
  `text`  
- Optionnel. Si l’argument text est spécifié, la ligne est marquée en tant que point d’arrêt nommé. Sinon, la ligne est marquée en tant que point d’arrêt non nommé, ce qui revient à appuyer sur la touche F9.  
+ facultatif. Si l’argument text est spécifié, la ligne est marquée en tant que point d’arrêt nommé. Sinon, la ligne est marquée en tant que point d’arrêt non nommé, ce qui revient à appuyer sur la touche F9.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant bascule le point d’arrêt actuel.  
   
 ```  

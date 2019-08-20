@@ -1,5 +1,5 @@
 ---
-title: Création d’Applications ClickOnce à partir de la ligne de commande | Microsoft Docs
+title: Génération d’applications ClickOnce à partir de la ligne de commande | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,26 +16,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d8ce0753c63f1dcc177f36149cad9789ec150ab
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929160"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787674"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
-Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.
+Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez reconstruire un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur sur lequel seul le .NET Framework est installé. Cela vous permet de reproduire une génération à l’aide d’un processus automatisé, par exemple dans un laboratoire de génération central ou à l’aide de techniques de script avancées au-delà de la portée de la génération du projet lui-même.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Utiliser MSBuild pour reproduire des déploiements d’applications ClickOnce
- Lorsque vous appelez msbuild/target : Publish à la ligne de commande, il indique le système MSBuild pour générer le projet et créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application dans le dossier de publication. Cela revient à sélectionner la **publier** commande dans l’IDE.
+ Quand vous appelez MSBuild/target: publish sur la ligne de commande, il indique au système MSBuild de générer le projet et de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] créer une application dans le dossier Publish. Cela équivaut à sélectionner la commande **publier** dans l’IDE.
 
- Cette commande exécute *msbuild.exe*, qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
+ Cette commande exécute *MSBuild. exe*, qui se trouve sur le chemin d’accès dans l’environnement d’invite de commandes de Visual Studio.
 
- Une « cible » est un indicateur à MSBuild sur la façon de traiter la commande. Les principales cibles sont la cible « build » et la cible « publier ». La cible de génération est l’équivalent à la sélection de la Build command (ou en appuyant sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez obtenir qui en tapant `msbuild`. Cette commande fonctionne parce que la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Cela signifie que vous n’avez pas explicitement besoin spécifier la cible de génération. Par conséquent, en tapant `msbuild` est la même opération que tapant `msbuild /target:build`.
+ Une «cible» est un indicateur de MSBuild sur la manière de traiter la commande. Les cibles principales sont la cible «Build» et la cible «Publish». La cible Build équivaut à sélectionner la commande de génération (ou à appuyer sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez y parvenir en tapant `msbuild`. Cette commande fonctionne, car la cible de génération est la cible par défaut pour tous [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]les projets générés par. Cela signifie que vous n’avez pas besoin de spécifier explicitement la cible de génération. Par conséquent, `msbuild` le typage est la même opération `msbuild /target:build`que la saisie.
 
- Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou c#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.
+ La `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible de publication dépend de la cible de génération. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à l’un de vos C# Visual Basic ou fichiers sources, l’assembly correspondant est automatiquement régénéré par l’opération de publication.
 
- Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Pour plus d’informations sur la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] génération d’un déploiement complet à l’aide de l’outil en ligne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de commande Mage [. exe pour créer votre manifeste, consultez Procédure pas à pas: Déployez manuellement une application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)ClickOnce.
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Créer et générer une application ClickOnce de base avec MSBuild
 
@@ -43,40 +43,43 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
 1. Ouvrez Visual Studio et créez un projet.
 
-    Choisissez le **Application de bureau Windows** modèle de projet, puis nommez le projet `CmdLineDemo`.
+    Choisissez le modèle de projet **application de bureau Windows** et nommez le projet `CmdLineDemo`.
 
-1. À partir de la **Build** menu, cliquez sur le **publier** commande.
+1. Dans le menu **générer** , cliquez sur la commande **publier** .
 
     Cette étape garantit que le projet est correctement configuré pour produire un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application.
 
     L'Assistant Publication apparaît.
 
-1. Dans l’Assistant Publication, cliquez sur **Terminer**.
+1. Dans l’Assistant publication, cliquez sur **Terminer**.
 
-    Visual Studio génère et affiche la page Web par défaut, appelée *Publish.htm*.
+    Visual Studio génère et affiche la page Web par défaut, appelée *Publish. htm*.
 
 1. Enregistrez votre projet et prenez note de l’emplacement du dossier dans lequel il est stocké.
 
-   Les étapes ci-dessus créent une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projet qui a été publié pour la première fois. Maintenant, vous pouvez reproduire la build en dehors de l’IDE.
+   Les étapes ci-dessus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] créent un projet qui a été publié pour la première fois. Vous pouvez maintenant reproduire la génération en dehors de l’IDE.
 
 #### <a name="to-reproduce-the-build-from-the-command-line"></a>Pour reproduire la génération à partir de la ligne de commande
 
 1. Quittez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. À partir de la Windows **Démarrer** menu, cliquez sur **tous les programmes**, puis **Microsoft Visual Studio**, puis **Visual Studio Tools**, puis **Invite de commandes de visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
+2. Dans le menu **Démarrer** de Windows, cliquez sur **tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, puis sur **invite de commandes de Visual Studio**. Cela doit ouvrir une invite de commandes dans le dossier racine de l’utilisateur actuel.
 
-3. Dans le **invite de commandes Visual Studio**, remplacez le répertoire actif par l’emplacement du projet que vous venez de créer ci-dessus. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. Dans l' **invite de commandes de Visual Studio**, remplacez le répertoire actif par l’emplacement du projet que vous venez de générer. Par exemple, tapez `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
-4. Pour supprimer les fichiers existants produits dans « pour créer et publier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projet, « type `rmdir /s publish`.
+4. Pour supprimer les fichiers existants générés dans «pour créer et publier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un projet», `rmdir /s publish`tapez.
 
-    Cette étape est facultative, mais il garantit que les nouveaux fichiers ont été produits par la build de ligne de commande.
+    Cette étape est facultative, mais elle garantit que les nouveaux fichiers ont tous été générés par la génération de la ligne de commande.
 
 5. Tapez `msbuild /target:publish`.
 
-   Les étapes ci-dessus produira un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application dans un sous-dossier de votre projet nommé **publier**. *CmdLineDemo.application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *CmdLineDemo_1.0.0.0* contient les fichiers *CmdLineDemo.exe* et *CmdLineDemo.exe.manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. *Setup.exe* est le programme d’amorçage, qui par défaut est configuré pour installer le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Le dossier DotNetFX contient les composants redistribuables pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Il s’agit de l’ensemble des fichiers que vous avez besoin pour déployer votre application via le Web ou UNC ou d’un CD/DVD.
+   Les étapes ci-dessus produiront [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un déploiement d’application complet dans un sous-dossier de votre projet nommé **Publish**. *CmdLineDemo. application* est le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement. Le dossier *cmdlinedemo_ 1.0.0.0* contient les fichiers *CmdLineDemo. exe* et *CmdLineDemo. exe. manifest*, le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de l’application. *Setup. exe* est le programme d’amorçage, qui est configuré par défaut pour installer le .NET Framework. Le dossier DotNetFX contient les fichiers redistribuables du .NET Framework. Il s’agit de l’ensemble complet des fichiers dont vous avez besoin pour déployer votre application sur le Web ou via un UNC ou un CD/DVD.
+   
+> [!NOTE]
+> Le système MSBuild utilise l’option **PublishDir** pour spécifier l’emplacement de sortie, par exemple `msbuild /t:publish /p:PublishDir="<specific location>"`.
 
 ## <a name="publish-properties"></a>Propriétés de publication
- Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la façon dont le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est générée.
+ Lorsque vous publiez l’application dans les procédures ci-dessus, les propriétés suivantes sont insérées dans votre fichier projet par l’Assistant Publication. Ces propriétés influencent directement la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manière dont l’application est générée.
 
  Dans *CmdLineDemo.vbproj* / *CmdLineDemo.csproj* :
 
@@ -100,69 +103,69 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 <BootstrapperEnabled>true</BootstrapperEnabled>
 ```
 
- Vous pouvez remplacer ces propriétés en ligne de commande sans modifier le fichier projet lui-même. Par exemple, ce qui suit va générer le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement d’application sans le programme d’amorçage :
+ Vous pouvez remplacer ces propriétés au niveau de la ligne de commande sans modifier le fichier projet lui-même. Par exemple, le code suivant génère le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement de l’application sans le programme d’amorçage:
 
 ```cmd
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Propriétés de publication sont contrôlées dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à partir de la **publier**, **sécurité**, et **signature** pages de propriétés de la **Concepteur de projets** . Voici une description des propriétés de publication, ainsi que d’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du Concepteur d’application :
+ Les propriétés de publication sont [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] contrôlées dans à partir des pages de propriétés **publier**, **sécurité**et **signature** du **Concepteur de projets**. Vous trouverez ci-dessous une description des propriétés de publication, ainsi qu’une indication de la façon dont chacune est définie dans les différentes pages de propriétés du concepteur d’application:
 
-- `AssemblyOriginatorKeyFile` Détermine le fichier de clé utilisé pour signer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes d’application. Cette même clé peut également être utilisée pour attribuer un nom fort à vos assemblys. Cette propriété est définie sur le **signature** page de la **Concepteur de projet**.
+- `AssemblyOriginatorKeyFile`détermine le fichier de clé utilisé pour signer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les manifestes de votre application. Cette même clé peut également être utilisée pour assigner un nom fort à vos assemblys. Cette propriété est définie sur la page **signature** du **Concepteur de projets**.
 
-  Les propriétés suivantes sont définies sur le **sécurité** page :
+  Les propriétés suivantes sont définies dans la page **sécurité** :
 
-- **Activer les paramètres de sécurité ClickOnce** détermine si [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes ont été générés. Lorsqu’un projet est créé initialement, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] génération de manifeste est désactivée par défaut. L’Assistant active automatiquement cet indicateur sur lorsque vous publiez pour la première fois.
+- **Activer les paramètres de sécurité ClickOnce** détermine si [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les manifestes sont générés. Lorsqu’un projet est initialement créé, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la génération de manifeste est désactivée par défaut. L’assistant active automatiquement cet indicateur lorsque vous publiez pour la première fois.
 
-- **TargetZone** détermine le niveau de confiance à émettre dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Les valeurs possibles sont « Internet », « LocalIntranet » et « Custom ». Internet et LocalIntranet entraînent un jeu d’autorisations par défaut dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. LocalIntranet est la valeur par défaut, et cela signifie en fait une confiance totale. Custom Spécifie que seules les autorisations explicitement spécifiées dans la base de *App.manifest* fichier doivent être émises dans le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application. Le *App.manifest* fichier est un fichier de manifeste partiel qui contient les définitions de plus d’informations d’approbation. Il est un fichier masqué, ajouté automatiquement à votre projet lorsque vous configurez des autorisations sur le **sécurité** page.
+- **TargetZone** détermine le niveau de confiance à émettre dans le manifeste de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] votre application. Les valeurs possibles sont «Internet», «LocalIntranet» et «Custom». Internet et LocalIntranet entraînent l’émission d’un jeu d’autorisations par défaut dans [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le manifeste de votre application. LocalIntranet est la valeur par défaut, ce qui signifie une confiance totale. Personnalisé spécifie que seules les autorisations explicitement spécifiées dans le fichier *app. manifest* de base doivent être émises [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dans le manifeste de l’application. Le fichier *app. manifest* est un fichier manifeste partiel qui contient uniquement les définitions d’informations d’approbation. Il s’agit d’un fichier masqué, automatiquement ajouté à votre projet lorsque vous configurez des autorisations sur la page **sécurité** .
 
-  Les propriétés suivantes sont définies sur le **publier** page :
+  Les propriétés suivantes sont définies sur la page **publier** :
 
-- `PublishUrl` est l’emplacement où l’application sera publiée dans l’IDE. Il est inséré dans le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste d’application si ni le `InstallUrl` ou `UpdateUrl` propriété est spécifiée.
+- `PublishUrl`est l’emplacement où l’application sera publiée dans l’IDE. Elle est insérée dans [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le manifeste de l’application `InstallUrl` si `UpdateUrl` aucune propriété ou n’est spécifiée.
 
-- `ApplicationVersion` Spécifie la version de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Il s’agit d’un numéro de version de quatre chiffres. Si le dernier chiffre est un « * », puis le `ApplicationRevision` est remplacé par la valeur insérée dans le manifeste au moment de la génération.
+- `ApplicationVersion`spécifie la version de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] l’application. Il s’agit d’un numéro de version à quatre chiffres. Si le dernier chiffre est un «*», est remplacé `ApplicationRevision` par la valeur insérée dans le manifeste au moment de la génération.
 
-- `ApplicationRevision` Spécifie la révision. Il s’agit d’un entier qui incrémente chaque fois que vous publiez dans l’IDE. Notez qu’il n’est pas automatiquement incrémenté pour les builds effectuées sur la ligne de commande.
+- `ApplicationRevision`spécifie la révision. Il s’agit d’un entier qui s’incrémente chaque fois que vous publiez dans l’IDE. Notez qu’il n’est pas incrémenté automatiquement pour les builds effectuées au niveau de la ligne de commande.
 
-- `Install` Détermine si l’application est une application installée ou une application d’exécution à partir du Web.
+- `Install`détermine si l’application est une application installée ou une application exécutée à partir du Web.
 
-- `InstallUrl` (non illustré) est l’emplacement où les utilisateurs installent l’application à partir de. Si spécifié, cette valeur est intégrée dans le *setup.exe* programme d’amorçage si le `IsWebBootstrapper` propriété est activée. Il est également inséré dans la manifeste d’application si le `UpdateUrl` n’est pas spécifié.
+- `InstallUrl`(non affiché) est l’emplacement à partir duquel les utilisateurs installent l’application. S’il est spécifié, cette valeur est gravée dans le programme *d’amorçage Setup. exe* si la `IsWebBootstrapper` propriété est activée. Il est également inséré dans le manifeste de l’application `UpdateUrl` si n’est pas spécifié.
 
-- `SupportUrl` (non illustré) est l’emplacement lié dans le **Ajout/Suppression de programmes** boîte de dialogue pour une application installée.
+- `SupportUrl`(non affiché) est l’emplacement lié dans la boîte de dialogue **Ajout/suppression de programmes** pour une application installée.
 
-  Les propriétés suivantes sont définies le **mises à jour de l’Application** boîte de dialogue, accédé à partir de la **publier** page.
+  Les propriétés suivantes sont définies dans la boîte de dialogue **mises à jour des applications** , accessible à partir de la page **publier** .
 
-- `UpdateEnabled` Indique si l’application doit vérifier les mises à jour.
+- `UpdateEnabled`indique si l’application doit vérifier la présence de mises à jour.
 
-- `UpdateMode` Spécifie des mises à jour de premier plan ou mises à jour en arrière-plan.
+- `UpdateMode`spécifie des mises à jour de premier plan ou des mises à jour en arrière-plan.
 
-- `UpdateInterval` Spécifie la fréquence à laquelle l’application doit rechercher les mises à jour.
+- `UpdateInterval`spécifie la fréquence à laquelle l’application doit rechercher les mises à jour.
 
-- `UpdateIntervalUnits` Spécifie si le `UpdateInterval` valeur est exprimée en unités de quelques heures, jours ou semaines.
+- `UpdateIntervalUnits`Spécifie si `UpdateInterval` la valeur est exprimée en unités d’heures, de jours ou de semaines.
 
-- `UpdateUrl` (non illustré) est l’emplacement à partir duquel l’application recevra les mises à jour. Si spécifié, cette valeur est insérée dans le manifeste d’application.
+- `UpdateUrl`(non affiché) est l’emplacement à partir duquel l’application recevra les mises à jour. S’il est spécifié, cette valeur est insérée dans le manifeste de l’application.
 
-- Les propriétés suivantes sont définies le **Options de publication** boîte de dialogue, accédé à partir de la **publier** page.
+- Les propriétés suivantes sont définies dans la boîte de dialogue **options de publication** , accessible à partir de la page **publier** .
 
-- `PublisherName` Spécifie le nom du serveur de publication affiché dans l’invite qui s’affiché lors de l’installation ou l’exécution de l’application. Dans le cas d’une application installée, il est également utilisé pour spécifier le nom du dossier sur le **Démarrer** menu.
+- `PublisherName`Spécifie le nom de l’éditeur affiché dans l’invite affichée lors de l’installation ou de l’exécution de l’application. Dans le cas d’une application installée, elle est également utilisée pour spécifier le nom du dossier dans le menu **Démarrer** .
 
-- `ProductName` Spécifie le nom du produit indiqué dans l’invite qui s’affiché lors de l’installation ou l’exécution de l’application. Dans le cas d’une application installée, il est également utilisé pour spécifier le nom du raccourci sur le **Démarrer** menu.
+- `ProductName`Spécifie le nom du produit affiché dans l’invite affichée lors de l’installation ou de l’exécution de l’application. Dans le cas d’une application installée, elle est également utilisée pour spécifier le nom du raccourci dans le menu **Démarrer** .
 
-- Les propriétés suivantes sont définies le **prérequis** boîte de dialogue, accédé à partir de la **publier** page.
+- Les propriétés suivantes sont définies dans la boîte de dialogue **composants requis** , accessible à partir de la page **publier** .
 
-- `BootstrapperEnabled` Détermine s’il faut générer le *setup.exe* programme d’amorçage.
+- `BootstrapperEnabled`détermine si le programme *d’amorçage Setup. exe* doit être généré.
 
-- `IsWebBootstrapper` Détermine si le *setup.exe* programme d’amorçage fonctionne sur le Web ou en mode basée sur disque.
+- `IsWebBootstrapper`détermine si le programme *d’amorçage Setup. exe* fonctionne sur le Web ou en mode sur disque.
 
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL et UpdateURL
- Le tableau suivant montre les quatre options d’URL pour le déploiement ClickOnce.
+ Le tableau suivant présente les quatre options d’URL pour le déploiement ClickOnce.
 
-|Option d’URL|Description|
+|Option URL|Description|
 |----------------|-----------------|
 |`PublishURL`|Obligatoire si vous publiez votre application ClickOnce sur un site Web.|
-|`InstallURL`|Optionnel. Définissez cette option si le site de l’installation est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `InstallURL` vers une URL Web.|
-|`SupportURL`|Optionnel. Définissez cette option si le site de support est différent de celle du `PublishURL`. Par exemple, vous pouvez définir le `SupportURL` au site Web de votre société client prise en charge.|
-|`UpdateURL`|Optionnel. Définissez cette option si l’emplacement de mise à jour est différente de celle du `InstallURL`. Par exemple, vous pouvez définir le `PublishURL` à un chemin d’accès FTP et les définir le `UpdateURL` vers une URL Web.|
+|`InstallURL`|Optionnel. Définissez cette option d’URL si le site d’installation est différent `PublishURL`du. Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et `InstallURL` définir sur une URL Web.|
+|`SupportURL`|Optionnel. Définissez cette option d’URL si le site de support est différent `PublishURL`du. Par exemple, vous pouvez définir le `SupportURL` sur le site Web du support technique de votre entreprise.|
+|`UpdateURL`|Optionnel. Définissez cette option d’URL si l’emplacement de mise à jour `InstallURL`est différent du. Par exemple, vous pouvez définir `PublishURL` sur un chemin d’accès FTP et `UpdateURL` définir sur une URL Web.|
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>

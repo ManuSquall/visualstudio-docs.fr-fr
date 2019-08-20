@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793450"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037008"
 ---
 # <a name="project-and-item-templates"></a>Modèles de projet et d’élément
 
@@ -47,7 +47,7 @@ Tous les modèles de projet et d’élément, qu’ils soient installés avec Vi
 
 ::: moniker-end
 
-   Pour plus d’informations sur les fichiers *.vstemplate*, consultez [Paramètres de modèle](../ide/template-parameters.md).
+   Pour plus d’informations sur les fichiers *.vstemplate*, consultez [Paramètres de balise](template-tags.md) and [Paramètres de modèle](../ide/template-parameters.md).
 
 Quand ces fichiers sont compressés dans un fichier *.zip* et placés dans le dossier approprié, Visual Studio les affiche automatiquement aux emplacements suivants :
 
@@ -71,6 +71,7 @@ Pour plus d’informations sur les dossiers de modèles, consultez [Guide pratiq
 
 - [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+- [Balises de modèle](template-tags.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
 - [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Packages NuGet dans les modèles Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

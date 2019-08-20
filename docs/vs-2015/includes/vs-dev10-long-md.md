@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 30c3d8194815052f5f9f54a1fac519295b84ad3f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848687"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68142171"
 ---
 Visual Studio 2010

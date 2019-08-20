@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548830"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587025"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
+# <a name="file-nesting-in-solution-explorer"></a>Imbrication de fichiers dans l’Explorateur de solutions
 
-L’imbrication de fichiers associés dans l’**Explorateur de solutions** n’est pas une nouveauté. Toutefois, jusqu’à présent, vous n’aviez aucun contrôle sur les règles d’imbrication. Vous pouvez choisir l’un des paramètres prédéfinis, **Désactivé**, **Par défaut** ou **Web**, mais vous pouvez également personnaliser l’imbrication selon vos préférences. Vous pouvez même créer des paramètres spécifiques à la solution et au projet, mais nous y reviendrons plus tard. Tout d’abord, voyons ce qui vous est fourni.
+**L’Explorateur de solutions** imbrique les fichiers associés pour aider à les organiser et les rendre plus faciles à localiser. Par exemple, si vous ajoutez un formulaire Windows Forms à un projet, le fichier de code pour le formulaire est imbriqué sous le formulaire dans **l’Explorateur de solutions**. Dans les projets ASP.NET Core, l’imbrication de fichiers peut entreprendre une étape supplémentaire. Vous pouvez choisir entre les présélections d’imbrication de fichiers **Désactivé**, **Par défaut** et **Web**. Vous pouvez également [personnaliser la façon dont les fichiers sont imbriqués](#customize-file-nesting) ou [créer des paramètres spécifiques au projet et à la solution](#create-project-specific-settings).
 
 > [!NOTE]
 > La fonctionnalité est prise en charge uniquement pour les projets ASP.NET Core.
@@ -56,7 +56,7 @@ Concentrons-nous sur le nœud **dependentFileProviders** et ses nœuds enfants. 
 
 * **pathSegment** : utilisez ce type de règle pour imbriquer *jquery.min.js* sous *jquery.js*.
 
-* **allExtensions** : utilisez ce type de règle pour imbriquer *file.** sous *file.js*.
+* **allExtensions** : utilisez ce type de règle pour imbriquer *file.* * sous *file.js*.
 
 * **fileToFile** : utilisez ce type de règle pour imbriquer *bower.json* sous *.bowerrc*.
 
@@ -86,19 +86,43 @@ Ce fournisseur fonctionne exactement comme le fournisseur **extensionToExtension
 
 ### <a name="the-addedextension-provider"></a>Fournisseur addedExtension
 
-Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet. Prenons l'exemple suivant :
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous le fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement à la fin du nom de fichier complet.
+
+Prenons l'exemple suivant :
 
 ![Règles de l’exemple addedExtension](media/filenesting_addedextension.png) ![Effet de l’exemple addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* est imbriqué sous *file.html* en raison de la règle **addedExtension**
 
+> [!NOTE]
+> Vous ne spécifiez pas les extensions de fichier pour la règle `addedExtension` ; elle s’applique automatiquement à toutes les extensions de fichier. Autrement dit, n’importe quel fichier avec le même nom et la même extension qu’un autre fichier avec une extension supplémentaire à la fin est imbriqué sous l’autre fichier. Vous ne pouvez pas limiter l’effet de ce fournisseur à certaines extensions de fichier.
+
 ### <a name="the-pathsegment-provider"></a>Fournisseur pathSegment
 
-Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet. Prenons l'exemple suivant :
+Ce fournisseur imbrique les fichiers avec une extension supplémentaire sous un fichier sans extension supplémentaire. L’extension supplémentaire doit apparaître uniquement au milieu du nom de fichier complet.
+
+Prenons l'exemple suivant :
 
 ![Règles de l’exemple pathSegment](media/filenesting_pathsegment.png) ![Effet de l’exemple pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* est imbriqué sous *jquery.js* en raison de la règle **pathSegment**
+
+> [!NOTE]
+> - Si vous ne spécifiez pas d’extensions de fichier spécifiques pour la règle `pathSegment`, elle s’applique à toutes les extensions de fichier. Autrement dit, n’importe quel fichier avec le même nom et la même extension qu’un autre fichier avec une extension supplémentaire au milieu est imbriqué sous l’autre fichier.
+> - Vous pouvez limiter l’effet de la règle `pathSegment` à des extensions de fichier spécifiques en les spécifiant dans la manière suivante :
+>
+>    ```json
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Fournisseur allExtensions
 
@@ -128,7 +152,7 @@ Vous pouvez gérer tous les paramètres, notamment vos paramètres personnalisé
 
 ![Activer des règles d’imbrication de fichiers personnalisées](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Créer des paramètres spécifiques à la solution et au projet
+## <a name="create-project-specific-settings"></a>Créer des paramètres spécifiques au projet
 
 Vous pouvez créer des paramètres propres à la solution ou au projet dans le menu contextuel (clic droit) de chaque solution ou projet :
 
@@ -142,7 +166,7 @@ Vous pouvez faire le contraire et indiquer à Visual Studio d’utiliser *unique
 
 Vous pouvez archiver les paramètres spécifiques à la solution et au projet dans le contrôle de code source. Ainsi, toute l’équipe qui travaille sur la base de code peut les partager.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Désactiver les règles d’imbrication de fichiers globales pour une solution ou un projet particulier
+## <a name="disable-file-nesting-rules-for-a-project"></a>Désactiver les règles d’imbrication de fichiers pour un projet
 
 Vous pouvez désactiver les règles d’imbrication de fichiers globales pour des solutions ou des projets spécifiques. Pour ce faire, utilisez l’action **remove** sur un fournisseur au lieu de l’action **add**. Par exemple, si vous ajoutez à un projet le code suivant pour des paramètres, toutes les règles **pathSegment** qui peuvent exister globalement pour ce projet spécifique sont désactivées :
 
@@ -157,3 +181,4 @@ Vous pouvez désactiver les règles d’imbrication de fichiers globales pour de
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Solutions et projets dans Visual Studio](solutions-and-projects-in-visual-studio.md)

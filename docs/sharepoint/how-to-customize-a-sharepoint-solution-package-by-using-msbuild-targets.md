@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser un Package de Solution SharePoint à l’aide de cibles MSBuild | Microsoft Docs'
+title: Personnaliser le package de solution SharePoint à l’aide de cibles de MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814015"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401506"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Procédure : Personnaliser un package de SharePoint Solution à l’aide de cibles de MSBuild
-  À l’aide de cibles MSBuild à l’invite de commande, vous pouvez personnaliser la façon dont Visual Studio crée les fichiers de package SharePoint (*.wsp*). Par exemple, vous pouvez personnaliser les propriétés MSBuild pour modifier le répertoire intermédiaire d’empaquetage et les groupes d’éléments MSBuild qui spécifient les fichiers énumérés.
+  À l’aide de cibles MSBuild à l’invite de commande, vous pouvez personnaliser la façon dont Visual Studio crée les fichiers de package SharePoint ( *.wsp*). Par exemple, vous pouvez personnaliser les propriétés MSBuild pour modifier le répertoire intermédiaire d’empaquetage et les groupes d’éléments MSBuild qui spécifient les fichiers énumérés.
 
 ## <a name="customize-and-run-msbuild-targets"></a>Personnaliser et exécuter des cibles de MSBuild
  Si vous personnalisez les cibles BeforeLayout et AfterLayout, vous pouvez effectuer des tâches avant la disposition du package, telles que l’ajout, suppression ou modification des fichiers qui sont empaquetés.

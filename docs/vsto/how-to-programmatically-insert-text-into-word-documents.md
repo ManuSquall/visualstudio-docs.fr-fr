@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : Insérer du texte dans les documents Word par programmation'
-ms.date: 02/02/2017
+title: 'Procédure : Insérer du texte dans des documents Word par programmation'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412575"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551804"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans les documents Word par programmation
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procédure : Insérer du texte dans des documents Word par programmation
   Il existe trois principaux moyens pour insérer du texte dans des documents Microsoft Office Word :
 
 - insérer du texte dans une plage ;
@@ -33,9 +33,11 @@ ms.locfileid: "63412575"
 - utiliser la méthode <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Selection> pour insérer du texte au niveau du curseur ou de la sélection.
 
 > [!NOTE]
-> Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et [Bookmark (contrôle)](../vsto/bookmark-control.md).
+> Vous pouvez également insérer du texte dans les contrôles de contenu et les signets. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md) et contrôle de [signet](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="insert-text-in-a-range"></a>Insérer du texte dans une plage
  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Range.Text%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Range> pour insérer du texte dans un document.
@@ -118,7 +120,7 @@ ms.locfileid: "63412575"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   Vous pouvez également utiliser le <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Selection> objet, qui reproduit la fonctionnalité de la **retour arrière** clé de votre clavier. Toutefois, quand il s'agit d'insérer et de manipuler du texte, l'objet <xref:Microsoft.Office.Interop.Word.Range> vous offre davantage de contrôle.
+   Vous pouvez également utiliser la <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> méthode de l' <xref:Microsoft.Office.Interop.Word.Selection> objet, qui reproduit la fonctionnalité de la touche **retour arrière** de votre clavier. Toutefois, quand il s'agit d'insérer et de manipuler du texte, l'objet <xref:Microsoft.Office.Interop.Word.Range> vous offre davantage de contrôle.
 
    L'exemple suivant montre le code complet. Pour utiliser cet exemple, exécutez le code à partir de la classe `ThisDocument` ou `ThisAddIn` dans votre projet.
 
@@ -126,6 +128,6 @@ ms.locfileid: "63412575"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Formater le texte par programmation dans des documents](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [Guide pratique pour Mettre en forme du texte dans des documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md)
 - [Guide pratique pour Définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [Guide pratique pour Étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [Guide pratique : Étendre des plages dans les documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

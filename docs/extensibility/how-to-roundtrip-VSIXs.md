@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324897"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826031"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procédure : Créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
 
@@ -57,8 +57,8 @@ Si votre projet contient un *project.json* fichier :
 * Prenez note des références dans *project.json*.
 * À partir de la **l’Explorateur de solutions**, supprimez le *project.json* fichier à partir du projet. Cette opération supprime le *project.json* de fichiers et supprime du projet.
 * Ajoutez que les références NuGet de nouveau dans le projet :
-    * Avec le bouton droit sur le **Solution** et choisissez **gérer les Packages NuGet pour la Solution**.
-    * Visual Studio crée automatiquement le *packages.config* fichier pour vous.
+  * Avec le bouton droit sur le **Solution** et choisissez **gérer les Packages NuGet pour la Solution**.
+  * Visual Studio crée automatiquement le *packages.config* fichier pour vous.
 
 > [!NOTE]
 > Si votre projet contient les packages EnvDTE, ils peuvent avoir à être ajoutés en cliquant avec le bouton droit sur **références** en sélectionnant **ajouter une référence** et l’ajout de la référence appropriée. À l’aide de packages NuGet peut créer des erreurs lors de la tentative générer votre projet.
@@ -71,7 +71,7 @@ Pour générer et déployer un VSIXv3 dans Visual Studio 2015 et 2017, vous aure
 
 Version | Outils de génération
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
+Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 Pour ce faire :
@@ -165,7 +165,7 @@ Il est fortement recommandé d’avoir une référence à une modification .cspr
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises ayant une référence Microsoft.VSSDK.BuildTools. Insérer `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
 
-Exemple :
+Par exemple :
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
@@ -173,7 +173,7 @@ Exemple :
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises ayant un Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insérer `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
 
-Exemple :
+Par exemple :
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
@@ -181,7 +181,7 @@ Exemple :
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises ayant une référence Microsoft.VSSDK.BuildTools. Cela en insérant `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans le pied de page du fichier csproj.
 
-Exemple :
+Par exemple :
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
@@ -189,7 +189,7 @@ Exemple :
 
 * Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises ayant un Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insérer `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans le pied de page du fichier csproj.
 
-Exemple :
+Par exemple :
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />

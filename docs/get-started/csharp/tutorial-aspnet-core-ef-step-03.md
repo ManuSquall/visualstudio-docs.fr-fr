@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553951"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300586"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Étape 3 : Travailler avec des données à l’aide d’Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 Nous sommes maintenant prêts à créer les pages qui serviront à gérer notre bibliothèque de jeux. Si l’entreprise peut sembler colossale, elle est en fait extrêmement simple. Nous devons d’abord décider où devra se trouver cette fonctionnalité dans notre application. Ouvrez le dossier Pages dans le projet web et ajoutez-y un nouveau dossier. Appelez-le *Games*.
 
-Maintenant, cliquez avec le bouton droit sur Games et choisissez **Ajouter** > **Nouvel élément généré automatiquement**. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)**. CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
+Maintenant, cliquez avec le bouton droit sur Games et choisissez **Ajouter** > **Nouvel élément généré automatiquement**. Choisissez Razor Pages avec l’option **Entity Framework (CRUD)** . CRUD signifie « create, read, update, delete » pour « créer, lire, mettre à jour, supprimer » ; ce modèle créera des pages pour chacune de ces opérations (y compris une page « Tout lister » et une page « Afficher les détails d’un élément »).
 
 ![Visual Studio 2019 ASP.NET Core – Ajouter des pages générées automatiquement](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<SchoolContext>();
+            var context = services.GetRequiredService<AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -105,6 +105,15 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
+Pour résoudre les noms de types dans le code précédent, ajoutez les instructions using suivantes à *Program.cs* à la fin du bloc existant d’instructions using :
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.Models;
+```
+
+Veillez à utiliser votre nom de projet à la place de WebApplication1 dans votre code.
 
 La majeure partie du code concerne simplement la gestion des erreurs et l’accès à EF Core `AppDbContext` avant l’exécution de l’application. La ligne importante est `context.Database.EnsureCreated()`, qui crée la base de données si elle n’existe pas déjà. L’application est maintenant prête à s’exécuter.
 

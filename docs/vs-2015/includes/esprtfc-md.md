@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 9bc274bc94a48cb30b9bcab9521056df7bb3c7f4
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846613"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68181254"
 ---
 Team Explorer

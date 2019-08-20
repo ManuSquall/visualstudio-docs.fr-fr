@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822722"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824485"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
 
@@ -24,41 +24,43 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
 
 Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le journal :
 
-- Cibler .NET Framework version 4 sans fichier *App.config* présent dans le projet de test :
+- S’il n’y a aucun fichier *App.config* présent dans votre projet de test :
 
-   1. Ouvrez le fichier *QTAgent32_40.exe.config*. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Déterminez quel processus *QTAgent\*.exe* est lancé lorsque vous exécutez votre test. La seule manière de faire cela est de regarder l’onglet **Détails** dans **Gestionnaire des tâches** Windows.
+   
+   2. Ouvrez le fichier *.config* correspondant à partir de la version *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<> dossier\\\<edition>\Common7\IDE*. Par exemple, si le processus qui s’exécute est *QTAgent_40.exe*, ouvrez *QTAgent_40.exe.config*.
 
-   2. Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.
-
-   3. Enregistrez le fichier.
-
-- Cibler .NET Framework version 4.5 sans fichier *App.config* présent dans le projet de test :
-
-   1. Ouvrez le fichier *QTAgent32.exe.config*. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.
-
-   3. Enregistrez le fichier.
-
-- Fichier *App.config* présent dans le projet de test :
-
-    - Ouvrez le fichier *App.config* dans le projet, puis ajoutez le code suivant sous le nœud de configuration :
-
+   2. Modifiez la valeur de **EqtTraceLevel** par le niveau de journal souhaité.
+   
       ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
       ```
+
+   3. Enregistrez le fichier.
+
+- S’il y a un fichier *App.config* présent dans votre projet de test :
+
+  - Ouvrez le fichier *App.config* dans le projet, puis ajoutez le code suivant sous le nœud de configuration :
+
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Activer la journalisation à partir du code de test proprement dit :
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l’interface utilisateur et afficher le journal
 
-Quand vous exécutez un test codé de l’interface utilisateur avec les modifications du fichier *QTAgent32.exe.config* en place, vous constatez qu’un lien de sortie figure dans les résultats de l’**Explorateur de tests**. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace a la valeur « Commentaires ».
+Quand vous exécutez un test codé de l’interface utilisateur avec les modifications apportées au fichier *QTAgent\*.exe.config* en place, vous constatez qu’un lien de sortie figure dans les résultats de l’**Explorateur de tests**. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace est défini sur **détaillé**.
 
 1. Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 

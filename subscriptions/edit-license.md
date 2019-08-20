@@ -1,24 +1,22 @@
 ---
 title: Modifier les abonnements dans le portail d’administration | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
-searchscope: VS Subscription
-ms.openlocfilehash: d3dbc2e05d85ed8277d7a7c0f530dfa92da7dba6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946238"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605658"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Modification des attributions d’abonnements Visual Studio
-
+# <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
 
-## <a name="making-changes-to-subscriber-information"></a>Modifier les informations d’un abonné
+## <a name="change-subscriber-information"></a>Changer les informations de l’abonné
 Vous pouvez modifier les informations d’un abonné pour corriger des erreurs ou mettre à jour les informations le concernant.
 
 Pour modifier les informations d’un abonné, sélectionnez les points de suspension (...) à côté de l’adresse e-mail de l’abonné en pointant dessus. Une liste déroulante s’affiche.  Sélectionnez **Modifier** pour modifier les informations de l’abonné. Vous pouvez également double-cliquer sur la ligne de l’abonné dans la grille pour ouvrir la fenêtre d’édition.
@@ -30,8 +28,7 @@ Vous pouvez mettre à jour le prénom, le nom, le pays, la langue et les téléc
    > [!NOTE]
    > Pour changer le niveau d’abonnement d’un abonné, vous devez supprimer l’utilisateur du portail, puis l’ajouter de nouveau. Les niveaux d’abonnement ne sont pas modifiables directement.
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Modification de plusieurs abonnés à l’aide de la modification en bloc
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modifier plusieurs abonnés à l’aide de la modification en bloc
 Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modification en bloc. Cette fonctionnalité est principalement destinée aux organisations qui doivent changer les adresses e-mail de façon globale ou aux organisations qui souhaitent restreindre l’accès aux téléchargements.
 
    > [!IMPORTANT]
@@ -50,3 +47,7 @@ Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modificatio
    > ![Modification d’une licence - Chargement du fichier des modifications en bloc](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. Une fois que vous avez chargé le fichier, vous voyez s’afficher une notification confirmant le chargement. À ce stade, vos modifications apparaissent dans les informations de l’abonné.
+
+## <a name="next-steps"></a>Étapes suivantes
+- Pour obtenir de l’aide pour trouver un abonnement particulier, consultez [Rechercher un abonnement](search-license.md).
+- Vous devez créer une liste de tous vos abonnements ?  Consultez [Exporter des abonnements](exporting-subscriptions.md).

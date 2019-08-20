@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179214"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Envoyé par le DE demander un document à ouvrir.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Représente un flux d’instructions désassemblés à partir d’un document.|  
 |[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, ALLEMAGNE|Représente un document fourni par l’Allemagne, en spécifiant un nom et un ID de classe (CLSID).|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Représente une somme de contrôle pour un document de débogage et permet le passage de la somme de contrôle entre les composants.|  
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|ALLEMAGNE, EE|Représente une somme de contrôle pour un document de débogage et permet le passage de la somme de contrôle entre les composants.|  
 |[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, ALLEMAGNE|Représente un contexte de document, une position dans un document correspondant à un contexte particulier de l’instruction et le code.|  
 |[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, ALLEMAGNE|Représente une position générale dans un document.|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Représente une position dans un fichier source par un offset de caractère.|  
@@ -235,8 +235,8 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
   
 |Interface|Implémenté par|Description|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Représente un processus qui s’exécute sur un ordinateur.|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Représente un processus qui prend en charge activement débogage (utilisé pour remplacer l’étape, continuer et exécuter des méthodes sur le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, ALLEMAGNE|Représente un processus qui s’exécute sur un ordinateur.|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, ALLEMAGNE|Représente un processus qui prend en charge activement débogage (utilisé pour remplacer l’étape, continuer et exécuter des méthodes sur le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
 |[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|ALLEMAGNE, PS|Envoyé par le port ou DE création d’un processus.|  
 |[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|ALLEMAGNE, PS|Envoyé par le port ou DE lorsqu’un processus a été détruit.|  
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Représente un processus qui doit suivre la session lui est attachée.|  

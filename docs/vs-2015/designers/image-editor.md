@@ -154,7 +154,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |Propriété|Description|  
 |--------------|-----------------|  
 |Largeur|Largeur de l’image.|  
-|Hauteur |Hauteur de l’image.|  
+|Hauteur|Hauteur de l’image.|  
 |Bits par pixel|Nombre de bits qui représentent chaque pixel. La valeur de cette propriété dépend du **Format de couleur** de l’image.|  
 |Sélection transparente|**Vrai** pour fusionner la couche de la sélection avec l’image principale, en fonction de la valeur alpha de la couche de la sélection ; sinon, **Faux**. Cet élément est disponible seulement pour les images qui prennent en charge alpha.|  
 |Format|Format de couleur de l’image. Vous pouvez spécifier différents formats de couleur selon le format de l’image. Le format de couleur définit le nombre et le type des canaux de couleur qui sont inclus dans l’image, ainsi que la taille et de codage des différents canaux.|  
@@ -221,7 +221,7 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Text**|**Anticrénelage**<br /> Dessine du texte avec des contours lissés. Le texte a ainsi un aspect plus lisse.<br /><br /> **Valeur**<br /> Texte à dessiner.<br /><br /> **Police**<br /> Police utilisée pour dessiner le texte.<br /><br /> **Taille**<br /> Taille du texte.<br /><br /> **Gras**<br /> Met la police en gras.<br /><br /> **Italique**<br /> Met la police en italique.<br /><br /> **Souligné**<br /> Met la police en souligné.|  
 |**Primitive 2D**|**Anticrénelage**<br /> Dessine les primitives avec des contours lissés. Ceci leur donne une apparence plus lisse.<br /><br /> **Épaisseur**<br /> Définit l’épaisseur de la ligne qui constitue la limite de la primitive.<br /><br /> **Rayon X**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords supérieur et inférieur de la primitive.<br /><br /> **Rayon Y**<br /> (Rectangle à coins arrondis uniquement) Définit le rayon de l’arrondi pour les bords gauche et droit de la primitive.|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Primitive 2D**|**Canaux**<br /> Active ou désactive des canaux de couleur spécifiques pour l’affichage et le dessin. Si **Afficher** est défini pour un canal de couleur spécifique, ce canal est visible dans l’image ; sinon, il n’est pas visible. Si **Dessiner** est défini pour un canal de couleur spécifique, ce canal est affecté par les opérations de dessin ; sinon, il ne l’est pas.|  
-|**Sélection « Baguette magique »**, **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|  
+|**Sélection « Baguette magique »** , **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|  
   
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier  
   

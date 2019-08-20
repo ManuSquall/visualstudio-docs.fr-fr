@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2f7bba8f86ed1a2877fd622c5fd93560a9c5fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779819"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923255"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002 : Ne pas exposer de listes génériques
 
@@ -27,14 +27,14 @@ ms.locfileid: "62779819"
 |-|-|
 |TypeName|DoNotExposeGenericLists|
 |CheckId|CA1002|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type contient un membre extérieurement visible est un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, retourne un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, ou dont la signature inclut un <xref:System.Collections.Generic.List%601?displayProperty=fullName> paramètre.
+Un type contient un membre visible de l’extérieur, qui <xref:System.Collections.Generic.List%601?displayProperty=fullName> est un type, <xref:System.Collections.Generic.List%601?displayProperty=fullName> retourne un type, ou dont la <xref:System.Collections.Generic.List%601?displayProperty=fullName> signature inclut un paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> est une collection générique qui est conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName> ne contient pas de membres virtuels qui le rendent plus facile de modifier le comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées au lieu de <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName>est une collection générique conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName>ne contient pas de membres virtuels qui facilitent la modification du comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à <xref:System.Collections.Generic.List%601?displayProperty=fullName>la place de.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -43,25 +43,25 @@ ms.locfileid: "62779819"
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez le <xref:System.Collections.Generic.List%601?displayProperty=fullName> type à une des collections génériques qui est conçu pour l’héritage.
+Pour corriger une violation de cette règle, remplacez le <xref:System.Collections.Generic.List%601?displayProperty=fullName> type par l’une des collections génériques conçues pour l’héritage.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas d’avertissement de cette règle, sauf si l’assembly qui déclenche cet avertissement n’est pas destiné à être une bibliothèque réutilisable. Par exemple, il serait possible de supprimer cet avertissement dans une application de paramétrer des performances sans où un gain de performances a été acquise à partir de l’utilisation de listes génériques.
+Ne supprimez pas un avertissement de cette règle, sauf si l’assembly qui déclenche cet avertissement n’est pas destiné à être une bibliothèque réutilisable. Par exemple, il serait prudent de supprimer cet avertissement dans une application à performance optimisée où un gain de performances a été obtenu à partir de l’utilisation de listes génériques.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1005 : Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010 : Collections doivent implémenter l’interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010 Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006 Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003 : Utiliser des instances du Gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003 Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007 : Utiliser des classes génériques le cas échéant](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Génériques](/dotnet/csharp/programming-guide/generics/index)
+[Génériques](/dotnet/csharp/programming-guide/generics/index)

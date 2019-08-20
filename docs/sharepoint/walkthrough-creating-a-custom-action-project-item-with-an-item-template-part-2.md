@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un élément de projet d’Action personnalisé avec un modèle d’élément, partie 2 | Microsoft Docs'
+title: Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430468"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401173"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
   Une fois que vous définissez un type d’élément de projet SharePoint personnalisé et l’associez à un modèle d’élément dans Visual Studio, vous souhaiterez également fournir un Assistant pour le modèle. Vous pouvez utiliser l’Assistant pour collecter des informations auprès des utilisateurs lorsqu’ils utilisent votre modèle pour ajouter une nouvelle instance de l’élément de projet à un projet. Les informations que vous recueillez peuvent être utilisées pour initialiser l’élément de projet.
@@ -175,7 +175,7 @@ ms.locfileid: "63430468"
 
 2. Sur le **signature** onglet, sélectionnez le **signer l’assembly** case à cocher.
 
-3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >**.
+3. Dans le **choisir un fichier de clé de nom fort** , choisissez  **\<nouveau... >** .
 
 4. Dans le **créer une clé de nom fort** boîte de dialogue, entrez un nom, désactivez le **protéger mon fichier de clé avec un mot de passe** case à cocher, puis choisissez le **OK** bouton.
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430468"
 
 13. Dans le **Description** , entrez **ouvre le site Web Centre de développement SharePoint**.
 
-14. Dans le **URL** , entrez **https://docs.microsoft.com/sharepoint/dev/**, puis choisissez le **Terminer** bouton.
+14. Dans le **URL** , entrez **https://docs.microsoft.com/sharepoint/dev/** , puis choisissez le **Terminer** bouton.
 
      Visual Studio ajoute un élément nommé **CustomAction1** à votre projet et l’ouvre le *Elements.xml* fichier dans l’éditeur. Vérifiez que *Elements.xml* contient les valeurs que vous avez spécifié dans l’Assistant.
 

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335400"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824603"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :
@@ -226,7 +226,7 @@ Modèles composites combinent des éléments de conception et d’interaction da
 
 - **Toujours** essaie de créer un indicateur qui résume les informations disponible. Si possible, donnez un décompte du nombre d’éléments de données disponibles (par exemple, « 3 références » au lieu de simplement « références ») ou considérer une autre façon pour synthétiser les données.
 
-    - Dans les cas où les données d’un indicateur ne peut pas toujours être calculées et affichées, immédiatement si possible, donnez des commentaires progressif comme les valeurs sont calculées. Par exemple, considérez animer des modifications qui reflètent les mises à jour les données disponibles, similaires à la façon dont la vignette dynamique de la messagerie sur Windows Phone actualise en tant que le nombre d’e-mails non lus augmente.
+  - Dans les cas où les données d’un indicateur ne peut pas toujours être calculées et affichées, immédiatement si possible, donnez des commentaires progressif comme les valeurs sont calculées. Par exemple, considérez animer des modifications qui reflètent les mises à jour les données disponibles, similaires à la façon dont la vignette dynamique de la messagerie sur Windows Phone actualise en tant que le nombre d’e-mails non lus augmente.
 
 - **Jamais** ajouter des indicateurs de plus qu’un utilisateur peut raisonnablement pour un élément de contenu donné. Indicateurs ambiants doivent être utiles sans nécessiter d’intervention de l’utilisateur. Les indicateurs de perdent leur ambiance s’ils ont besoin de dépassement de capacité et d’autres contrôles de gestion pour les afficher dans la vue.
 
@@ -235,11 +235,11 @@ Modèles composites combinent des éléments de conception et d’interaction da
 
 - **Toujours** oblige l’utilisateur à effectuer des mouvements explicite pour ouvrir le contenu supplémentaire. Mouvements open courantes sont les suivantes :
 
-    - **Pointage :** info-bulles ou le contenu d’information non interactif
+  - **Pointage :** info-bulles ou le contenu d’information non interactif
 
-    - **Commande explicite :** inline présentateur
+  - **Commande explicite :** inline présentateur
 
-    - **Double-cliquez sur l’indicateur ambiante :** Fenêtre contextuelle CodeLens
+  - **Double-cliquez sur l’indicateur ambiante :** Fenêtre contextuelle CodeLens
 
 - **Toujours** ignorer le contenu en détail chaque fois que l’utilisateur appuie sur la touche ÉCHAP.
 

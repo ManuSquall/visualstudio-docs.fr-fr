@@ -1,18 +1,18 @@
 ---
 title: Utiliser plusieurs comptes d’utilisateur
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581909"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870871"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -33,7 +33,7 @@ Connectez-vous à Visual Studio avec un compte Microsoft ou un compte profession
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accès à votre compte Azure dans l'Explorateur de serveurs
 
-Appuyez sur **Ctrl**+**Alt**+**S** pour ouvrir **l’Explorateur de serveurs**. Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
+Pour ouvrir l’Explorateur de serveurs, choisissez **Afficher** > **Explorateur de serveurs** (ou, si vous utilisez les [paramètres d’environnement](../ide/environment-settings.md) « Généraux », appuyez sur **Ctrl**+**Alt**+**S**). Développez le nœud **Azure**. Il contient les ressources disponibles dans le compte Azure associé au compte que vous avez utilisé pour vous connecter à Visual Studio, comme sur l’illustration suivante :
 
 ![Explorateur de serveurs avec nœud Azure développé](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -55,7 +55,19 @@ La prochaine fois que vous ouvrirez **l’Explorateur de serveurs**, les ressour
 
 Azure Active Directory (AAD) prend en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L’authentification d’un domaine est différente de l’authentification d’un compte utilisateur en particulier. Les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte AAD pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine.
 
-Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET**. Dans la boîte de dialogue **Nouveau projet ASP.NET**, choisissez **Modifier l’authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.
+::: moniker range="vs-2017"
+
+Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET Core**. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, choisissez le modèle **Application web**, puis **Modifier l’authentification**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pour voir comment cela fonctionne, créez un projet **Application web ASP.NET Core**. Dans la boîte de dialogue **Créer une application web ASP.NET Core**, choisissez le modèle **Application web**, puis **Modifier** sous **Authentification**.
+
+::: moniker-end
+
+La boîte de dialogue **Modifier l’authentification** apparaît, où vous pouvez choisir le type d’authentification à utiliser dans votre application.
 
 ![Boîte de dialogue Modifier l'authentification pour ASP.NET](../ide/media/vs2015_change_authentication.png)
 

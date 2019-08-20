@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 57e6ed360e1c43a35d42d735d65fee26956052c8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845374"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68194423"
 ---
 programme Visual Studio Industry Partner (VSIP)

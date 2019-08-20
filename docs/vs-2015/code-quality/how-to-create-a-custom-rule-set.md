@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201367"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Procédure : Créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
   
 - Pour réduire les règles dans tous les groupes, cliquez sur **réduire tout**.  
   
-- Pour modifier le champ règles sont groupées, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, sélectionnez  **\<None >**.  
+- Pour modifier le champ règles sont groupées, sélectionnez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, sélectionnez  **\<None >** .  
   
 - Pour ajouter ou supprimer des champs dans les colonnes de la règle, cliquez sur **Options de colonne**.  
   
@@ -112,5 +112,5 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 - Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, cliquez sur **ajouter ou supprimer des ensembles de règles enfants**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [Guide pratique : Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/code-analysis-rule-set-reference.md)

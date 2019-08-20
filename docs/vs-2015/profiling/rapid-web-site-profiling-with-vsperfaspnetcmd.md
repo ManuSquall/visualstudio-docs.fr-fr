@@ -61,14 +61,14 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
   
  Vous pouvez également utiliser l’option **/Trace** pour inclure les informations de minutage détaillées avec les données de mémoire .NET :  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Pour collecter les données d’interaction de couche  
   
 > [!WARNING]
 > Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).  
+> Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation ( **/trace**).  
   
  Pour collecter les données d’interaction de couche avec les données d’échantillonnage :  
   
@@ -80,14 +80,14 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
   
  Pour collecter les données d’interaction de couche avec les données de mémoire .NET :  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_URL_site_web_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_URL_site_web_  
   
 ## <a name="UsingNoWait"></a> Utilisation de l’option /NoWait  
  Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option de syntaxe suivante pour forcer le retour de l’invite de commandes. Vous pouvez alors effectuer d’autres opérations dans la fenêtre d’invite de commandes. Pour terminer le profilage, utilisez l’option **/shutdown** dans une commande **vsperfaspnetcmd** distincte.  
   
  Pour démarrer le profilage :  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_URL_site_web_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_URL_site_web_  
   
  Pour terminer le profilage :  
   

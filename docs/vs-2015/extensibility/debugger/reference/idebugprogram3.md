@@ -11,11 +11,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6de25108cf93314db17a2ac8de9ce8b1dcaed2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148611"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ IDebugProgram3 : IDebugProgram3
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
  [Suivant](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
  [Événement](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)   
  [Événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

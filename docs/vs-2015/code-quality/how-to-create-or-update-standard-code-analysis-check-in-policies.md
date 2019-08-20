@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436847"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825818"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procédure : Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets d
   
 - À partir de la **exécuter cet ensemble de règles** liste, utilisez une des méthodes suivantes :  
   
-    - Sélectionnez un ensemble de règles standard de Microsoft.  
-  
-    - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >**, puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisées, consultez [implémentation de vérification des stratégies personnalisées pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Sélectionnez un ensemble de règles standard de Microsoft.  
+
+  - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >** , puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisées, consultez [implémentation de vérification des stratégies personnalisées pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

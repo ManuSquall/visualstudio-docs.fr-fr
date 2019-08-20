@@ -71,7 +71,8 @@
 ## [Charges de travail disponibles](workloads.md)
 ## ASP.NET Core
 ### [Support de .NET Core](net-core-support.md)
-### [Générer votre première application web ASP.NET Core](asp-net-core.md)
+### [Bien démarrer avec ASP.NET Core](asp-net-core.md)
+### [Création d’applications ASP.NET Core dans Visual Studio pour Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript et TypeScript](javascript.md)
 ## Azure
@@ -79,9 +80,14 @@
 ### [Introduction à Azure Functions](azure-functions.md)
 ### [Tutoriel : Azure Functions](azure-functions-lab.md)
 ### [Services connectés](connected-services.md)
+## Docker
+### [Prise en main de Docker](docker-quickstart.md)
+### [Créer une application multiconteneur avec Docker Compose](docker-multi-container.md)
+
 ## Développement de jeux Unity
 ### [Développement de jeux Unity](unity-tools.md)
 ### [Installation](setup-vsmac-tools-unity.md)
+### [Bien démarrer avec Unity](unity-walkthrough.md)
 ### [Utilisation des outils Unity](using-vsmac-tools-unity.md)
 ### [Utilisation de .NET 4.x dans Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Journal des modifications](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
@@ -95,3 +101,14 @@
 ## [Signaler un problème](report-a-problem.md)
 ## [Résolution des problèmes : Pourquoi je ne vois pas tous les modèles ?](troubleshooting-no-templates.md)
 ## [Résolution des problèmes : le programme de mise à jour présente des erreurs lors de la récupération des informations](updater-troubleshooting.md)
+
+# [Notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Notes de publication de la préversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
+# Exemples
+## [Exemples proposés](samples.yml)
+## [Tous les exemples ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
+## [Tous les exemples .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
+## [Tous les exemples Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
+## [Tous les exemples Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/samples/)
+## [Tous les exemples Xamarin.Android](https://docs.microsoft.com/xamarin/android/samples/)
+## [Tous les exemples Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/samples/)

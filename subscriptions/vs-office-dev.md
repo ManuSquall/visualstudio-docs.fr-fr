@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Office 365 Développeur inclus dans votre abonnement Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 9b31b1d1195e47dcf1f38351306a0c59a4472298
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934583"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250815"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
@@ -70,8 +69,8 @@ Pour en savoir plus sur l’abonnement Office 365 Développeur, consultez le [Fo
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
-| Visual Studio Dev Essentials | NA  | Non disponible |NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, BizSpark, MCT Software & Services Developer, MCT Software & Services.  Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Regional Director).*
 
@@ -82,6 +81,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 
-- Besoin d’aide avec votre abonnement Office Développeur ? Consultez les ressources de [support](https://developer.microsoft.com/office/support) du [Centre de développement Office](https://developer.microsoft.com/office).
+- Besoin d’aide avec votre abonnement Office Développeur ? Consultez les ressources de [support](https://developer.microsoft.com/office/docs#officecommunity) du [Centre de développement Office](https://developer.microsoft.com/office).
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

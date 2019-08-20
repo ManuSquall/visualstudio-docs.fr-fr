@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331203"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746009"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Prise en charge des outils de consultation de symbole
-**Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de recherche de symboles. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage contenus dans les différents composants. Les composants incluent des projets Visual Studio, externes [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] composants et bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
+**Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels** et **résultats** outils fournissent des fonctionnalités dans Visual Studio de recherche de symboles. Ces outils affichent des vues de l’arborescence hiérarchique des symboles et les relations entre les symboles dans l’arborescence. Les symboles peuvent représenter des espaces de noms, les objets, les classes, les membres de classe et les autres éléments de langage contenus dans les différents composants. Les composants comprennent les projets Visual Studio, les composants externes de .NET Framework et les bibliothèques de types (.tlb). Pour plus d’informations, consultez [Affichage de la structure du code](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Bibliothèques de recherche de symboles
  En tant qu’un implémenteur de langage, vous pouvez étendre les fonctionnalités de recherche de symboles Visual Studio en créant des bibliothèques de suivi des symboles dans vos composants et de fournissent les listes de symboles pour le Gestionnaire d’objets de Visual Studio via un ensemble d’interfaces. Une bibliothèque est décrite par la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interface. Le Gestionnaire d’objets de Visual Studio répond aux demandes de nouvelles données à partir des outils de consultation de symboles par l’obtention de données à partir des bibliothèques et d’organisation. Par la suite, il remplit ou met à jour les outils avec les données demandées. Pour obtenir une référence pour le Gestionnaire d’objets de Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, transmettez le <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID de service le `GetService` (méthode).

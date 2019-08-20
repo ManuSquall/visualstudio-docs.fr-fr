@@ -24,12 +24,12 @@ Vous pouvez générer un rapport des Outils de profilage [!INCLUDE[vsprvs](../co
 
  Utilisez la syntaxe suivante pour créer le rapport de comparaison :
 
- **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [**/**`Options`]
+ **VSPerfReport /diff**  `VspFileName1` *NomFichierVsp2* [ **/** `Options`]
 
  Vous pouvez ajouter des options du tableau suivant à la ligne de commande **VSPerfReport /diff**.
 
 |Option|Description|
 |------------|-----------------|
-|**DiffThreshold:**[*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|
+|**DiffThreshold:** [*Valeur*]|Ignore la différence si elle est inférieure à cette valeur de seuil de pourcentage. De même, les nouvelles données avec des valeurs inférieures à ce seuil n’apparaissent pas.|
 |**DiffTable :** *TableName*|Utilise ce tableau pour comparer les fichiers. Par défaut, le tableau des fonctions est utilisé. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|
 |**DiffColumn :** *ColumnName*|Utiliser cette colonne pour comparer les valeurs. Par défaut, la colonne de pourcentage d’échantillons exclusifs est utilisée. Spécifiez l’identificateur qui est répertorié dans **VSPerfReport /querydifftables**.|

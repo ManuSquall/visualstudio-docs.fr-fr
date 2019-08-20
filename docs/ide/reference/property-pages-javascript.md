@@ -1,6 +1,7 @@
 ---
 title: Pages de propriétés (JavaScript)
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -11,19 +12,20 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969018"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926199"
 ---
-# <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
+# <a name="property-pages-javascript"></a>Pages de propriétés, JavaScript
+
 **Pages de propriétés** donne accès aux paramètres du projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.
 
 Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet**, cliquez sur **Propriétés**.
@@ -33,41 +35,44 @@ Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet d
 Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 
 ## <a name="configuration-and-platform-page"></a>Page de configuration et de plateforme
- Utilisez les options suivantes pour sélectionner la configuration et la plateforme à afficher ou à modifier.
+
+Utilisez les options suivantes pour sélectionner la configuration et la plateforme à afficher ou à modifier.
 
  **Configuration**
 
- Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de configuration à afficher ou à modifier. Les valeurs sont **Debug** (valeur par défaut), **Release**, **Toutes les configurations** ou une configuration définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plateforme**
 
- Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d'informations, voir [Procédure : Définir des configurations de débogage et de publication dans Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Page Général
- Utilisez les options suivantes pour définir les propriétés générales du projet.
+
+Utilisez les options suivantes pour définir les propriétés générales du projet.
 
 > [!NOTE]
 > Certaines options sont disponibles seulement dans les applications UWP.
 
  **Chemin de sortie**
 
- Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
+Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
 
- Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Debug**, **Démarrer le débogage** (ou que vous appuyez sur F5), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils**, **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
+Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Déboguer** > **Démarrer le débogage** (ou que vous appuyez sur **F5**), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils** > **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release.
 
  **Langue par défaut**
 
- Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous garantissez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l’utilisateur ne correspond pas aux ressources linguistiques fournies dans l’application.
+Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous garantissez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l’utilisateur ne correspond pas aux ressources linguistiques fournies dans l’application.
 
 ## <a name="debug-page"></a>Page Déboguer
- Utilisez les options suivantes pour définir les propriétés du comportement du débogage dans le projet.
+
+Utilisez les options suivantes pour définir les propriétés du comportement du débogage dans le projet.
 
 > [!NOTE]
 > Certaines options sont disponibles seulement dans les applications UWP.
 
  **Débogueur à lancer**
 
- Spécifie l'hôte par défaut pour le débogueur.
+Spécifie l'hôte par défaut pour le débogueur.
 
 - Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
@@ -77,7 +82,7 @@ Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 
 **Lancer l’application**
 
-Spécifie s’il faut démarrer l’application quand vous appuyez sur F5 ou quand vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.
+Spécifie s’il faut démarrer l’application quand vous appuyez sur **F5** ou quand vous cliquez sur **Déboguer** > **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.
 
 **Type de débogueur**
 

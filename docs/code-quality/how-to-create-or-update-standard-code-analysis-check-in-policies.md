@@ -61,7 +61,7 @@ Activez ou désactivez les options suivantes :
 
 - Sélectionnez un ensemble de règles standard de Microsoft.
 
-- Sélectionnez une règle personnalisée définie en cliquant sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >**. Ensuite, tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :
+- Sélectionnez une règle personnalisée définie en cliquant sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >** . Ensuite, tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

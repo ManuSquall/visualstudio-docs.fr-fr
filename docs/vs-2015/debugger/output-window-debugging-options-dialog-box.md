@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198140"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Vous pouvez spécifier les types d’informations de débogage qui apparaissent 
  **Paramètres de Trace WPF**  
  Cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui apparaissent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.  
   
- Pour plus d'informations, voir [Procédure : afficher les informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).  
+ Pour plus d’informations, consultez [Guide pratique pour afficher les informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   

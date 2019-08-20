@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142253"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procédure : Appliquer du code facile à maintenir avec une stratégie d’archivage d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

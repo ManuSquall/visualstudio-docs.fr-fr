@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : utilisation d’un fichier config pour définir une source de données'
+title: Utiliser le fichier config pour définir la source de données
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461460"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746764"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 
@@ -71,7 +71,7 @@ L’élément **section** doit être similaire à ce qui suit :
 ```
 
 > [!NOTE]
-> Le nom de l'assembly doit correspondre à la version de Microsoft Visual Studio .NET Framework que vous utilisez.
+> Le nom de l’assembly doit correspondre à la version que vous utilisez.
 
 ## <a name="define-connection-strings"></a>Définir des chaînes de connexion
 

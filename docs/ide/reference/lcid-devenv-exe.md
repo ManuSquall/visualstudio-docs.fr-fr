@@ -49,7 +49,7 @@ Si la langue spécifiée n’est pas disponible sur le système, le commutateur 
 
 Le tableau suivant indique les identificateurs LCID des langues prises en charge par Visual Studio.
 
-|Langue|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|
+|Langue|LCID|
 |--------------|----------|
 |Chinois (simplifié)|2052|
 |Chinois (traditionnel)|1028|

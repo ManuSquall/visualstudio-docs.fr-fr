@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973086"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926584"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur
 
@@ -20,7 +20,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Spécifications**
+**Spécifications**
 
 - Visual Studio Enterprise
 
@@ -47,17 +47,17 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 
 Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
- **Propriétés de recherche** : les propriétés de recherche pour `HtmlAudio` sont `Id`, `Name` et `Title`.
+**Propriétés de recherche** : les propriétés de recherche pour `HtmlAudio` sont `Id`, `Name` et `Title`.
 
- **Propriétés de filtre :** les propriétés de filtre pour `HtmlAudio` sont `Src`, `Class`, `ControlDefinition` et `TagInstance`.
+**Propriétés de filtre :** les propriétés de filtre pour `HtmlAudio` sont `Src`, `Class`, `ControlDefinition` et `TagInstance`.
 
 > [!NOTE]
 > La durée de Seek et Pause peut être considérable. Lors de la lecture, le test codé de l'interface utilisateur attend que la durée spécifiée dans `(TimeSpan)` soit écoulée avant de suspendre l'audio. Si dans certaines circonstances particulières, la durée spécifiée s'est écoulée avant l'activation de la commande Pause, une exception est levée.
 
 ## <a name="video-control"></a>Contrôle Video
- **Contrôle Video :** les actions sur le contrôle Video HTML5 sont correctement enregistrées et lues.
+**Contrôle Video :** les actions sur le contrôle Video HTML5 sont correctement enregistrées et lues.
 
- ![Contrôle vidéo HTML5](../test/media/codedui_html5_video.png)
+![Contrôle vidéo HTML5](../test/media/codedui_html5_video.png)
 
 |Action|Enregistrement|Code généré|
 |-|---------------|-|
@@ -70,17 +70,17 @@ Consultez [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudi
 
 Consultez [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pour obtenir une liste de propriétés sur lesquelles vous pouvez ajouter une assertion.
 
- **Propriétés de recherche** : les propriétés de recherche pour `HtmlVideo` sont `Id`, `Name` et `Title`.
+**Propriétés de recherche** : les propriétés de recherche pour `HtmlVideo` sont `Id`, `Name` et `Title`.
 
- **Propriétés de filtre :** les propriétés de filtre pour `HtmlVideo` sont `Src`, `Poster`, `Class`, `ControlDefinition` et `TagInstance`.
+**Propriétés de filtre :** les propriétés de filtre pour `HtmlVideo` sont `Src`, `Poster`, `Class`, `ControlDefinition` et `TagInstance`.
 
 > [!NOTE]
 > Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.
 
 ## <a name="progressbar"></a>Barre de progression
- **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle. Pour plus d’informations, consultez [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
- ![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)
+![Contrôle de barre de progression HTML5](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Voir aussi
 

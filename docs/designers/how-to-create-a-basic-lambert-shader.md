@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893960"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924442"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procédure : Créer un nuanceur Lambert de base
 
@@ -40,15 +40,15 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 > [!NOTE]
 > Pour mettre en évidence l’effet du nuanceur dans cette illustration, la couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur. Un jeu ou une application peuvent utiliser ce paramètre pour fournir une valeur de couleur unique pour chaque objet. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- ![Graphique du nuanceur et un aperçu de ses effets.](../designers/media/digit-lambert-effect-graph.png)
+![Graphique du nuanceur et un aperçu de ses effets.](../designers/media/digit-lambert-effect-graph.png)
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- L’illustration suivante montre le nuanceur décrit dans ce document appliqué à un modèle 3D.
+L’illustration suivante montre le nuanceur décrit dans ce document appliqué à un modèle 3D.
 
- ![Éclairage Lambert appliqué à un modèle.](../designers/media/digit-lambert-effect-result.png)
+![Éclairage Lambert appliqué à un modèle.](../designers/media/digit-lambert-effect-result.png)
 
- Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 

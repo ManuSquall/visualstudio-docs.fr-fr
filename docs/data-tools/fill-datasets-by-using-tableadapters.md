@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566903"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745540"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
 Un composant du TableAdapter remplit un dataset avec des données à partir de la base de données, selon une ou plusieurs requêtes ou des procédures stockées que vous spécifiez. Les TableAdapters peuvent également effectuer ajoute, met à jour et suppressions sur la base de données pour conserver les modifications que vous apportez au jeu de données. Vous pouvez également émettre des commandes globales qui ne sont pas liées à une table spécifique.
 
 > [!NOTE]
-> Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET Framework.
+> Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET.
 
 Pour plus d’informations sur les opérations du TableAdapter, vous pouvez ignorer directement à une des rubriques suivantes :
 
@@ -85,7 +85,7 @@ Les TableAdapters étendent les fonctionnalités des adaptateurs de données sta
 
 ## <a name="tableadapter-methods-and-properties"></a>Propriétés et méthodes du TableAdapter
 
-La classe TableAdapter n’est pas dans le cadre de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Cela signifie que vous ne pouvez pas rechercher dans la documentation ou le **Explorateur d’objets**. Il est créé au moment du design lorsque vous utilisez un des Assistants mentionnés précédemment. Le nom assigné à un TableAdapter lors de sa création est basé sur le nom de la table que vous travaillez. Par exemple, lorsque vous créez un TableAdapter basé sur une table dans une base de données nommée `Orders`, le TableAdapter est nommé `OrdersTableAdapter`. Le nom de classe du TableAdapter peut être modifié à l’aide de la **nom** propriété dans le **Concepteur de Dataset**.
+La classe TableAdapter n’est pas un type .NET. Cela signifie que vous ne pouvez pas rechercher dans la documentation ou le **Explorateur d’objets**. Il est créé au moment du design lorsque vous utilisez un des Assistants mentionnés précédemment. Le nom assigné à un TableAdapter lors de sa création est basé sur le nom de la table que vous travaillez. Par exemple, lorsque vous créez un TableAdapter basé sur une table dans une base de données nommée `Orders`, le TableAdapter est nommé `OrdersTableAdapter`. Le nom de classe du TableAdapter peut être modifié à l’aide de la **nom** propriété dans le **Concepteur de Dataset**.
 
 Voici les méthodes couramment utilisées et les propriétés des TableAdapters :
 
@@ -122,7 +122,7 @@ Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?
 
 Par défaut, une classe TableAdapterManager génère lorsque vous créez un dataset qui contient les tables associées. Pour éviter que la classe en cours de génération, modifiez la valeur de la `Hierarchical Update` propriété du jeu de données sur false. Lorsque vous faites glisser une table qui possède une relation sur l’aire de conception d’un Windows Form ou d’une page WPF, Visual Studio déclare une variable membre de la classe. Si vous n’utilisez la liaison de données, vous devez manuellement déclarer la variable.
 
-La classe TableAdapterManager n’est pas dans le cadre de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Par conséquent, vous ne pouvez pas chercher dans la documentation. Il est créé au moment du design dans le cadre du processus de création de jeu de données.
+La classe TableAdapterManager n’est pas un type .NET. Par conséquent, vous ne pouvez pas chercher dans la documentation. Il est créé au moment du design dans le cadre du processus de création de jeu de données.
 
 Les éléments suivants sont les méthodes fréquemment utilisées et les propriétés de la `TableAdapterManager` classe :
 

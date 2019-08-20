@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188957"
 ---
 # <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et de package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,20 +42,20 @@ Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances ex
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
-|[\<Product>, élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun.|  
+|[\<Product>, élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun|  
 |[\<Package>, élément](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts>, élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun.|  
-|[\<InstallChecks>, élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun.|  
-|[\<Commands>, élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications de l’installation comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun.|  
-|[\<PackageFiles>, élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun.|  
-|[\<Strings>, élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun.|  
+|[\<RelatedProducts>, élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun|  
+|[\<InstallChecks>, élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun|  
+|[\<Commands>, élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications de l’installation comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun|  
+|[\<PackageFiles>, élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun|  
+|[\<Strings>, élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun|  
   
 ## <a name="remarks"></a>Notes  
  Le schéma du package est utilisé par Setup.exe, un programme stub généré par la tâche d’amorçage MS Build contenant peu de logique de son propre codées en dur. Le schéma pilote chaque aspect du processus d’installation.  
   
  `InstallChecks` les tests que setup.exe doit exécuter pour l’existence d’un package donné. `PackageFiles` Répertorie tous les packages que le processus d’installation peut devoir installer, en cas d’échec d’un tests. Chaque entrée de commande sous commandes exécute un des tests décrits par `InstallChecks`et spécifie le `PackageFile` pour exécuter le test échoue. Vous pouvez utiliser le `Strings` élément à localiser les noms de produits et les messages d’erreur, afin que vous pouvez utiliser un seul binaire d’installation pour installer votre application pour n’importe quel nombre de langues.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant montre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
 ```  

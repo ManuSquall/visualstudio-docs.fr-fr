@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186270"
 ---
 # <a name="how-to-update-existing-templates"></a>Procédure : Mettre à jour des modèles existants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,4 +68,4 @@ Vous pouvez modifier un modèle que vous avez créé et dont vous avez compress�
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
- [Guide pratique pour créer des Starter Kits](../ide/how-to-create-starter-kits.md)
+ [Guide pratique : créer des Starter Kits](../ide/how-to-create-starter-kits.md)

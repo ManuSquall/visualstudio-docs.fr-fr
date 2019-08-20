@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4a34076d06bfceb741b987377487a97291e8f726
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 042f7c74057de9a00ae59d5e08a77100c5f30e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931575"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824379"
 ---
 # <a name="editor-behavior"></a>Comportement de l’éditeur
 
@@ -22,9 +22,9 @@ Les comportements de l’éditeur peuvent être définis de façon à autoriser 
 * La mise en forme du code à la volée est déclenchée par la saisie de certains caractères, comme le point-virgule ou les accolades, qui va appliquer les préférences de mise en forme qui sont définies.
 * Vous pouvez également choisir de mettre en forme le fichier lors de son enregistrement : ceci vous permet d’écrire le code comme vous le souhaitez et de laisser à l’IDE la responsabilité de la mise en forme du code telle qu’elle est définie par les préférences existantes.
 * La mise en retrait peut être définie sur Aucune, Automatique ou Intelligente. Voici ce que font ces options :
-   * Aucune : place le point d’insertion au début de la ligne suivante
-   * Automatique : place le point d’insertion sur la même colonne de la ligne suivante
-   * Intelligente : met en retrait sur la ligne suivante en fonction du code
+  * Aucune : place le point d’insertion au début de la ligne suivante
+  * Automatique : place le point d’insertion sur la même colonne de la ligne suivante
+  * Intelligente : met en retrait sur la ligne suivante en fonction du code
 * Le comportement de la césure des mots diffère entre les systèmes d’exploitation et, pour la navigation dans le code, l’éditeur de texte doit savoir où les mots commencent ou se terminent. La mise en forme peut être définie pour Unix ou pour Windows.
 
 Vous pouvez aussi définir des règles de mise en forme pour XML, CSS, HTML et JSON.

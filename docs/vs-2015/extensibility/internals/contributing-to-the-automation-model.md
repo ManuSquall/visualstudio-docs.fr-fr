@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196999"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contribution au modèle d’automatisation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio fournit un ensemble d’interfaces d’automatisation pour la pers
  [Fourniture de l’automatisation pour le code](../../extensibility/internals/providing-automation-for-code.md)  
  Explique que la création d’un modèle automation pour votre code n’est pas requise. Toutefois, un lien est fourni dans cette rubrique qui fournit des informations pertinentes dans les modèles de code.  
   
- [Guide pratique pour Fournir l’automatisation pour Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Guide pratique pour fournir l’automatisation pour Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Explique que grâce à l’automatisation est une bonne idée chaque fois que vous souhaitez rendre disponibles les objets automation sur une fenêtre et l’environnement ne fournit pas déjà un objet automation prêtes à l’emploi. Décrit l’automation pour les fenêtres Outil et fenêtres de document.  
   
  [Utilisation du modèle d’automatisation](../../extensibility/internals/using-the-automation-model.md)  

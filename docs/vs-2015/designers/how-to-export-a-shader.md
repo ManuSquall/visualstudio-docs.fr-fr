@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176484"
 ---
 # <a name="how-to-export-a-shader"></a>Procédure : Exporter un nuanceur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Ce document indique comment utiliser le concepteur de nuanceur pour exporter un 
   
 #### <a name="to-export-a-shader"></a>Pour exporter un nuanceur  
   
-1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier **Graphe de nuanceur visuel (.dgsl)**.  
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier **Graphe de nuanceur visuel (.dgsl)** .  
   
-     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).  
+     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)** , créez-en un en suivant la description de l’article [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).  
   
 2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé**, **Exporter**, **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** s’affiche.  
   
@@ -52,5 +52,5 @@ Ce document indique comment utiliser le concepteur de nuanceur pour exporter un 
 4. Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
+ [Guide pratique : Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
  [Concepteur Shader](../designers/shader-designer.md)

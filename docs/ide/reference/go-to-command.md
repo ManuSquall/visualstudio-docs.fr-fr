@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789829"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919215"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 Déplace le curseur à la ligne spécifiée.
@@ -30,18 +30,17 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Arguments
- `linenumber`
-
- Optionnel. Nombre entier représentant le numéro de la ligne à atteindre.
+`linenumber`\
+facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
 
 ## <a name="remarks"></a>Remarques
- La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
+La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
- Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.
+Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.
 
- L’alias de cette commande est GoToLn.
+L’alias de cette commande est GoToLn.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
 ```cmd
 >Edit.GoTo 125

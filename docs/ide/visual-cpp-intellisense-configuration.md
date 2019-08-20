@@ -2,17 +2,17 @@
 title: Configurer un projet C++ pour IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mblome
+author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582554"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925855"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 
@@ -38,15 +38,13 @@ Si vous exécutez vos builds en dehors de l’environnement IDE de Visual Studio
 
 ![Répertoires Include VC++](media/vcpp-intellisense-include-paths.png)
 
- Pour voir les valeurs actuelles des macros de build comme **VC_IncludePath**, sélectionnez la ligne Répertoires Include, puis cliquez sur la liste déroulante à droite. Ensuite, sélectionnez **\<Modifier>**, puis cliquez sur le bouton **Macros**.
+Pour voir les valeurs actuelles des macros de build comme **VC_IncludePath**, sélectionnez la ligne Répertoires Include, puis cliquez sur la liste déroulante à droite. Ensuite, sélectionnez **\<Modifier>** , puis cliquez sur le bouton **Macros**.
 
 ### <a name="makefile-projects"></a>projets Makefile
 
 Dans le cas des projets Makefile qui reposent sur le modèle de projet NMake, sélectionnez **NMake** dans le volet gauche, puis **Chemin de recherche Include** sous la catégorie **IntelliSense** :
 
 ![Chemins Include du projet Makefile](media/vcpp-intellisense-makefile-include-paths.png)
-
-Pour plus d'informations, voir [Procédure : Activer IntelliSense pour des projets Makefile](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Projets Ouvrir un dossier
 
@@ -81,18 +79,18 @@ Pour vérifier que le compilateur IntelliSense utilise les bonnes options, chemi
 La Fenêtre Sortie affiche maintenant les lignes de commande transmises au compilateur IntelliSense. Voici un exemple de sortie :
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Ces informations peuvent vous aider à comprendre pourquoi IntelliSense fournit des informations inexactes. Par exemple, si le répertoire Include de votre projet contient **$(MaVariable) \Include** et que le journal de diagnostic présente **/I\Include** comme un chemin d’accès Include, cela signifie que **$(MaVariable)** n’a pas été évaluée et a été retirée du chemin d’accès Include final.
@@ -112,10 +110,10 @@ Même s’il ne génère pas de binaires, un build IntelliSense peut échouer. L
 Le message d’erreur peut vous demander d’activer le traçage au moment du design :
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Si vous définissez la variable d’environnement TRACEDESIGNTIME sur true et redémarrez Visual Studio, un fichier journal apparaîtra dans le répertoire %TEMP%. Il pourra vous aider à diagnostiquer l’échec du build.

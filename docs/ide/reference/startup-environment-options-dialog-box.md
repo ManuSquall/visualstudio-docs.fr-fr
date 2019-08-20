@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0f14d830c9b0c3d091ffc380f64c128b8b79b83
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950915"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605915"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Boîte de dialogue Options : Environnement \> Démarrage
 
@@ -30,7 +30,3 @@ Utilisez cette page pour personnaliser la page de démarrage de Visual Studio ou
 Utilisez cette page pour définir une autre action par défaut au démarrage de Visual Studio. Dans la liste **Au démarrage, ouvrir**, choisissez entre la **Fenêtre Démarrer** (qui vous permet d’ouvrir un projet nouveau ou déjà existant), la **Solution la plus récente** ou un **Environnement vide**.
 
 ::: moniker-end
-
-## <a name="see-also"></a>Voir aussi
-
-- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

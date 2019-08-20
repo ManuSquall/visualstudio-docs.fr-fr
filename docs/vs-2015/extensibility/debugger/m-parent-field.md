@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e371056f367588005001b4d77b8e80a2e9cb67d8
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "59001156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149077"
 ---
 # <a name="mparent-field"></a>Champ m_parent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

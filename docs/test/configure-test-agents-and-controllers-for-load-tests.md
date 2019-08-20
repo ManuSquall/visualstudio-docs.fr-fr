@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461614"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918369"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Vue d’ensemble des agents de test et des contrôleurs de test pour l’exécution de tests de charge
 
@@ -69,17 +69,17 @@ Le contrôleur de test fournit une architecture générale pour l'exécution de 
 
 L'agent de test s'exécute en tant que service qui écoute les demandes de démarrage d'un nouveau test envoyées par le contrôleur de test. Quand l’agent de test reçoit une demande, le service de l’agent de test démarre un processus sur lequel les tests peuvent être exécutés. Chaque agent de test exécute le même test de charge.
 
- Une pondération est affectée par l’administrateur aux agents de test. La charge est distribuée en fonction de la pondération d’un agent de test. Par exemple, si l'agent de test 1 a une pondération de 30, que l'agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l'agent de test 1 simule 300 utilisateurs virtuels tandis que l'agent de test 2 en simule 700. Consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Une pondération est affectée par l’administrateur aux agents de test. La charge est distribuée en fonction de la pondération d’un agent de test. Par exemple, si l'agent de test 1 a une pondération de 30, que l'agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l'agent de test 1 simule 300 utilisateurs virtuels tandis que l'agent de test 2 en simule 700. Consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- L'agent de test prend un ensemble de tests et un ensemble de paramètres de simulation comme entrées. Un concept essentiel est que les tests sont indépendants de l'ordinateur sur lequel ils sont exécutés.
+L'agent de test prend un ensemble de tests et un ensemble de paramètres de simulation comme entrées. Un concept essentiel est que les tests sont indépendants de l'ordinateur sur lequel ils sont exécutés.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Points de connexion d’un contrôleur de test et d’un agent de test
 
 L'illustration suivante montre les points de connexion entre le contrôleur de test, l'agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
 
- ![Ports et sécurité du contrôleur de test et de l’agent de test](./media/test-controller-agent-firewall.png)
+![Ports et sécurité du contrôleur de test et de l’agent de test](./media/test-controller-agent-firewall.png)
 
- Pour plus d’informations, consultez [Configurer les ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Pour plus d’informations, consultez [Configurer les ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Informations d’installation du contrôleur et des agents de test
 

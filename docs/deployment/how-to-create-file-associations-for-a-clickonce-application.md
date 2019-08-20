@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer des Associations de fichiers pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Créer des associations de fichiers pour une application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,45 +15,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0526351d2b3e2c223aacbe0e58d9ee39bd1b19c4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899458"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924557"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procédure : Créer des associations de fichiers pour une application ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications peuvent être associées à une ou plusieurs extensions de nom de fichier afin que l’application démarrera automatiquement quand l’utilisateur ouvre un fichier de ces types. Ajout du support d’extension de nom de fichier à un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est simple.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les applications peuvent être associées à une ou plusieurs extensions de nom de fichier, afin que l’application démarre automatiquement lorsque l’utilisateur ouvre un fichier de ces types. L’ajout de la prise en charge [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de l’extension de nom de fichier à une application est simple.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Pour créer des associations de fichiers pour une application ClickOnce
 
-1. Créer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application normalement, ou utilisez votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
+1. Créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application normalement, ou utilisez votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] existante.
 
-2. Ouvrez le manifeste d’application avec un texte ou un éditeur XML, tel que le bloc-notes.
+2. Ouvrez le manifeste de l’application à l’aide d’un éditeur de texte ou XML, tel que le bloc-notes.
 
 3. Recherchez l’élément `assembly` . Pour plus d’informations, consultez [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md).
 
-4. En tant qu’enfant de le `assembly` élément, ajoutez un `fileAssociation` élément. Le `fileAssociation` élément présente quatre attributs :
+4. En tant qu’enfant de `assembly` l’élément, ajoutez `fileAssociation` un élément. L' `fileAssociation` élément a quatre attributs:
 
-   - `extension`: L’extension de nom de fichier à associer avec l’application.
+   - `extension`: Extension de nom de fichier que vous souhaitez associer à l’application.
 
-   - `description`: Description du type de fichier, qui apparaîtra dans l’interpréteur de commandes Windows.
+   - `description`: Description du type de fichier, qui apparaîtra dans le shell Windows.
 
-   - `progid`: Chaîne identifiant de manière unique le type de fichier pour le marquer dans le Registre.
+   - `progid`: Chaîne identifiant de façon unique le type de fichier, pour le marquer dans le registre.
 
-   - `defaultIcon`: Une icône à utiliser pour ce type de fichier. L’icône doit être ajoutée comme une ressource de fichier dans le manifeste d’application. Pour plus d'informations, voir [Procédure : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Icône à utiliser pour ce type de fichier. L’icône doit être ajoutée en tant que ressource de fichier dans le manifeste de l’application. Pour plus d’informations, consultez [Guide pratique pour Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
-     Pour obtenir un exemple de la `file` et `fileAssociation` éléments, consultez [ \<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md).
+     Pour obtenir un exemple des `file` éléments `fileAssociation` et, consultez [ \<FileAssociation >, élément](../deployment/fileassociation-element-clickonce-application.md).
 
-5. Si vous souhaitez associer plusieurs types de fichier à l’application, ajoutez d’autres `fileAssociation` éléments. Notez que le `progid` attribut doit être différent pour chacun.
+5. Si vous souhaitez associer plus d’un type de fichier à l’application, ajoutez des `fileAssociation` éléments supplémentaires. Notez que l' `progid` attribut doit être différent pour chaque.
 
-6. Une fois que vous avez terminé avec le manifeste d’application, signer à nouveau le manifeste. Cela aide à partir de la ligne de commande *Mage.exe*.
+6. Une fois que vous avez fini d’utiliser le manifeste d’application, resignez le manifeste. Vous pouvez effectuer cette opération à partir de la ligne de commande à l’aide de *Mage. exe*.
 
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`
 
     Pour plus d’informations, consultez [Mage.exe (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ## <a name="see-also"></a>Voir aussi
-- [\<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md)
+- [\<fileAssociation >, élément](../deployment/fileassociation-element-clickonce-application.md)
 - [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

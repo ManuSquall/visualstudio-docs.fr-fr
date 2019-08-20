@@ -28,18 +28,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68141914"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  
   
-- [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)  
+- [Dépannage](../debugger/debugging-web-applications-troubleshooting.md)  
   
 - [Erreur : le site utilise l’adresse IP](../debugger/error-site-uses-ip-address.md)  
   

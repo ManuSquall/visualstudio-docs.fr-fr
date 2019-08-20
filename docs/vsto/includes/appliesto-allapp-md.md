@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: fc0cd945d30995e475a42ddc3338b581785c263d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846972"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68183740"
 ---
   **S’applique à :** Les informations contenues dans cette rubrique s’applique à VSTO ajouter\-dans les projets. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../../vsto/features-available-by-office-application-and-project-type.md).

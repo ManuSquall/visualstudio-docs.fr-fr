@@ -1,18 +1,17 @@
 ---
 title: Avantage de Parasoft Virtualize/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947274"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787708"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -28,7 +27,10 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 3. Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**.
    > [!div class="mx-imgBorder"]
-   > ![Avantage Parasoft, Créer un compte](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Avantage Parasoft, Créer un compte](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > Le tableau de la page indique la tarification pour une année complète, avec une remise Visual Studio. Cette tarification s’applique UNE FOIS QUE vous avez utilisé votre abonnement de six mois.  
 
 4. Une fois que vous avez créé votre compte, vous voyez s’afficher une notification indiquant qu’un e-mail avec des instructions de téléchargement vous a été envoyé.  (N’oubliez pas de vérifier vos dossiers de courrier indésirable si vous ne trouvez pas cet e-mail dans votre boîte de réception.)
 
@@ -57,14 +59,12 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 14. Spécifiez où vous voulez installer le raccourci de l’application, puis cliquez sur **Next** (Suivant).
 
 15. Le certificat d’autorité de certification racine web SOAtest est obligatoire pour certains tests fonctionnels effectués sur des sites HTTPS.  Choisissez si vous voulez installer le certificat d’autorité de certification racine, puis cliquez sur **Next** (Suivant).
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Parasoft, Certificat d’autorité de certification racine](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft vous recommande vivement de choisir l’installation du certificat.
 
 16. Choisissez si vous voulez que des icônes de lancement rapide et de Bureau soient créées pendant l’installation, puis cliquez sur **Next** (Suivant).
 
 17. Confirmez les options que vous avez sélectionnées, puis cliquez sur **Install** (Installer) pour démarrer l’installation du logiciel.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Parasoft, Prêt à installer](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. À la fin de l’installation, cliquez sur **Finish** (Terminer). Vous êtes maintenant prêt à utiliser votre avantage Parasoft Virtualize/SOAtest Professional Desktop !
 
@@ -76,8 +76,8 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Visual Studio Dev Essentials | NA  | Non disponible|NA |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+||
 
 <sup>1</sup>  *Inclut : Microsoft Partner Network (Enterprise).  Exclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  MCT Software & Services.*
 
@@ -86,7 +86,10 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
-    - Support technique : https://www.parasoft.com/support/
-    - Centre de ressources Parasoft : https://www.parasoft.com/resources/
+  - Support technique : https://www.parasoft.com/support/
+  - Centre de ressources Parasoft : https://www.parasoft.com/resources/
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Étapes suivantes
+Tirez parti de votre propre bac à sable de développement en activant vos [crédits Azure](vs-azure.md). 

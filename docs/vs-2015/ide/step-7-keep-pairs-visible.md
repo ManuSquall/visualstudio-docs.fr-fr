@@ -1,5 +1,5 @@
 ---
-title: 'Étape 7 : Garder les paires visibles | Microsoft Docs'
+title: 'Étape 7 : Garder les paires visibles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178601"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Étape 7 : Garder les paires visibles
+# <a name="step-7-keep-pairs-visible"></a>Étape 7 : Garder les paires visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode `Start()`), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65759da4363891c713f906e6cb10f00443bcbceb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197913"
 ---
 # <a name="args"></a>Args
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  **Launch:** `AppName`  
  Démarre l’application spécifiée et commence le profilage avec la méthode d’échantillonnage.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple suivant utilise l’option **Args** pour passer des arguments à TestApp.exe.  
   
 ```  

@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950265"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926518"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procédure : créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances Web
 
@@ -43,7 +43,7 @@ Ces interfaces sont contenues dans l'espace de noms <xref:Microsoft.VisualStudio
 
 1. Dans la page **Propriétés**, sélectionnez l’onglet **Application**.
 
-1. Dans la liste déroulante **Framework cible**, sélectionnez **.NET Framework 4**.
+1. Dans la liste déroulante **Framework cible**, sélectionnez .NET Framework 4 (ou ultérieur).
 
 1. La boîte de dialogue **Modification du Framework cible** s’affiche.
 
@@ -117,9 +117,9 @@ Le contrôle <xref:System.Windows.Forms.UserControl> de MessageEditorControl qui
 private MessageEditorControl messageEditorControl
 ```
 
- L'instance messageEditorControl est hébergée dans la boîte de dialogue du plug-in créé par la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. En outre, <xref:System.Windows.Forms.RichTextBox> de messageEditorControl est rempli avec le contenu dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Toutefois, la création du plug-in ne peut pas se produire sauf si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retourne `true`. Dans le cas de cet éditeur, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retourne `true` si le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contient « xml ».
+L'instance messageEditorControl est hébergée dans la boîte de dialogue du plug-in créé par la méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. En outre, <xref:System.Windows.Forms.RichTextBox> de messageEditorControl est rempli avec le contenu dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Toutefois, la création du plug-in ne peut pas se produire sauf si <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retourne `true`. Dans le cas de cet éditeur, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retourne `true` si le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contient « xml ».
 
- Quand la modification du corps chaîne est effectuée et que l’utilisateur clique sur **OK** dans la boîte de dialogue du plug-in, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> est appelée pour obtenir le texte modifié sous forme de chaîne et mettre à jour le **Corps chaîne** dans la requête dans la demande de l’éditeur de tests de performances web.
+Quand la modification du corps chaîne est effectuée et que l’utilisateur clique sur **OK** dans la boîte de dialogue du plug-in, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> est appelée pour obtenir le texte modifié sous forme de chaîne et mettre à jour le **Corps chaîne** dans la requête dans la demande de l’éditeur de tests de performances web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Créer une classe et implémenter l’interface IStringHttpBodyEditorPlugin
 
@@ -264,7 +264,7 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Générer et déployer les plug-ins
 
-1. Dans le menu **Générer**, choisissez **Générer \<nom du projet de bibliothèque de contrôles Windows Forms>**.
+1. Dans le menu **Générer**, choisissez **Générer \<nom du projet de bibliothèque de contrôles Windows Forms>** .
 
 2. Fermez toutes les instances de Visual Studio.
 
@@ -285,7 +285,7 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 3. Après l’enregistrement, développez la demande du service web dans l’éditeur de test de performances web et sélectionnez **Corps de type chaîne** ou **Corps binaire**.
 
-4. Dans la fenêtre **Propriétés**, sélectionnez Corps chaîne ou Corps binaire, puis le bouton de sélection **(…)**.
+4. Dans la fenêtre **Propriétés**, sélectionnez Corps chaîne ou Corps binaire, puis le bouton de sélection **(…)** .
 
    La boîte de dialogue **Modifier les données du corps HTTP** s’affiche.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Concepteur de flux de travail - Comment : Définir et utiliser des délégués d’activité'
+title: 'Concepteur de flux de travail : Définir et utiliser des délégués d’activité'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949515"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431796"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : Définir et utiliser des délégués d’activité dans le concepteur de workflow
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949515"
 
 5. Cliquez sur **créer un Argument**. Nommez le nouvel argument **éléments**.
 
-6. Dans le **type d’Argument** colonne, sélectionnez **tableau de [T]**.
+6. Dans le **type d’Argument** colonne, sélectionnez **tableau de [T]** .
 
 7. Dans l’Explorateur de types, sélectionnez **objet** , puis sélectionnez **OK**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949515"
 
 14. Dans le **type de Variable** colonne, sélectionnez **Int32**. Laissez le **étendue** comme **tandis que**et le **par défaut** colonne vide.
 
-15. Définir le **Condition** propriété de la <xref:System.Activities.Statements.While> activité **index < Items.Length ;**.
+15. Définir le **Condition** propriété de la <xref:System.Activities.Statements.While> activité **index < Items.Length ;** .
 
 16. Faites glisser un <xref:System.Activities.Statements.InvokeDelegate> activité à partir de la **Primitives** section de la boîte à outils vers le **corps** de la <xref:System.Activities.Statements.While> activité.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949515"
 
 18. Dans le **propriétés** grille pour la <xref:System.Activities.Statements.InvokeDelegate> activité, cliquez sur le **...**  situé dans le **Arguments délégués** propriété.
 
-19. Dans le **valeur** colonne de l’argument nommé **Argument**, entrez **Items [Index]**. Cliquez sur **Ok** pour fermer la **DelegateArguments** boîte de dialogue.
+19. Dans le **valeur** colonne de l’argument nommé **Argument**, entrez **Items [Index]** . Cliquez sur **Ok** pour fermer la **DelegateArguments** boîte de dialogue.
 
 20. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. Le <xref:System.Activities.Statements.Assign> activité est créée et un <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans le **corps** section de la **MyForEach** activité. La séquence est nécessaire, car le **corps** section peut contenir uniquement une seule activité. Créer automatiquement un nouveau <xref:System.Activities.Statements.Sequence> activité est une nouveauté de .NET Framework 4.5.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949515"
 
 3. Faites glisser un **MyForEach** activité à partir de la boîte à outils vers l’aire du concepteur. L’activité est dans une section de la boîte à outils avec le même nom que le projet.
 
-4. Définir le **éléments** propriété de la **MyForEach** activité **new Object [] {1, « abc »}**.
+4. Définir le **éléments** propriété de la **MyForEach** activité **new Object [] {1, « abc »}** .
 
 5. Faites glisser un <xref:System.Activities.Statements.WriteLine> activité à partir de la **Primitives** section de la boîte à outils vers le **Delegate : Body** section de la **MyForEach** activité.
 
-6. Définir le **texte** propriété de la <xref:System.Activities.Statements.WriteLine> activité **argument.ToString ()**.
+6. Définir le **texte** propriété de la <xref:System.Activities.Statements.WriteLine> activité **argument.ToString ()** .
 
 Lorsque le workflow est exécuté, la console affiche la sortie suivante :
 

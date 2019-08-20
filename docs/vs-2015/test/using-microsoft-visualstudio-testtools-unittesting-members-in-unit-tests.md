@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705886"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871560"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Éléments utilisés pour les tests pilotés par les données
- Utilisez les éléments suivants pour configurer des tests unitaires pilotés par les données. Pour plus d’informations, consultez [How To : Créer un Test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md) et [procédure pas à pas : À l’aide d’un fichier de Configuration pour définir une Source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Utilisez les éléments suivants pour configurer des tests unitaires pilotés par les données. Pour plus d’informations, [consultez Procédure: Créer un test](../test/how-to-create-a-data-driven-unit-test.md) unitaire piloté par les données [et une procédure pas à pas: Utilisation d’un fichier de configuration pour définir une](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)source de données.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -106,7 +106,7 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 
 ## <a name="test-configuration-classes"></a>Classes de configuration de test
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

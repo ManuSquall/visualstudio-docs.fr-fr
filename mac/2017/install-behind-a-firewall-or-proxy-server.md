@@ -6,20 +6,20 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997959"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033187"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
-Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous aurez des URL de domaine à mettre sur « liste verte » et des ports et protocoles à ouvrir pour profiter d’une expérience optimale d’installation et d’utilisation de Visual Studio pour Mac et des services Azure.
+Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous pouvez souhaiter ajouter des domaines à une « liste verte » et ouvrir des ports et des protocoles afin de bénéficier d’une expérience optimale pendant l’installation et l’utilisation de Visual Studio pour Mac et des services Azure.
 
-- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac) : Ces tableaux comportent les URL à mettre sur liste verte afin que vous ayez accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
+- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac) : Ces tableaux comportent les domaines qui doivent autoriser la connectivité afin que vous ayez accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
 
-- [**Utiliser Visual Studio pour Mac**](#use-visual-studio-for-mac) : Ces tableaux comportent les URL à mettre sur liste verte afin que vous ayez accès à l’ensemble des services et fonctionnalités que vous souhaitez.
+- [**Utiliser Visual Studio pour Mac**](#use-visual-studio-for-mac) : Ces tables incluent des domaines qui doivent autoriser la connectivité afin que vous ayez accès aux fonctionnalités connexes.
 
 ## <a name="install-visual-studio-for-mac"></a>Installer Visual Studio pour Mac
 

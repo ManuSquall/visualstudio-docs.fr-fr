@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566786"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745462"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 
 *Mise à jour hiérarchique* fait référence au processus d’enregistrement des données mises à jour (à partir d’un jeu de données avec deux ou plusieurs tables connexes) dans une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement de l’insertion, la mise à jour et suppression des enregistrements associés. Par exemple, il est l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser des commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [relations dans les datasets](../data-tools/relationships-in-datasets.md).
 
-La fonctionnalité de mise à jour hiérarchique utilise un `TableAdapterManager` pour gérer le `TableAdapter`s dans un dataset typé. Le `TableAdapterManager` composant est une classe générée par Visual Studio, il est donc pas partie de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Lorsque vous faites glisser une table à partir de la **des Sources de données** fenêtre vers une page Windows Form ou WPF, Visual Studio ajoute une variable de type TableAdapterManager à la page ou le formulaire, et il apparaît dans le concepteur dans la barre d’état du composant. Pour plus d’informations sur la `TableAdapterManager` de classe, consultez la section de référence de TableAdapterManager de [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+La fonctionnalité de mise à jour hiérarchique utilise un `TableAdapterManager` pour gérer le `TableAdapter`s dans un dataset typé. Le `TableAdapterManager` composant est une classe générés par Visual Studio, pas un type .NET. Lorsque vous faites glisser une table à partir de la **des Sources de données** fenêtre vers une page Windows Form ou WPF, Visual Studio ajoute une variable de type TableAdapterManager à la page ou le formulaire, et il apparaît dans le concepteur dans la barre d’état du composant. Pour plus d’informations sur la `TableAdapterManager` de classe, consultez la section de référence de TableAdapterManager de [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Par défaut, un jeu de données traite les tables associées « uniquement, pour les relations » ce qui signifie qu’il n’impose pas les contraintes de clé étrangères. Vous pouvez modifier ce paramètre au moment du design en utilisant la **Concepteur de Dataset**. Sélectionnez la ligne de relation entre deux tables pour afficher le **Relation** boîte de dialogue. Les modifications apportées ici détermine comment la `TableAdapterManager` se comporte quand il renvoyer les modifications dans les tables associées à la base de données.
 
@@ -114,7 +114,7 @@ Outre la validation des modifications d'une table enfant associée avant l'enreg
 
 Par défaut, un `TableAdapterManager` classe est générée lorsque vous créez un dataset qui contient les tables associées. Pour éviter que la classe en cours de génération, modifiez la valeur de la `Hierarchical Update` propriété du jeu de données sur false. Lorsque vous faites glisser une table qui possède une relation sur l’aire de conception d’un Windows Form ou d’une page WPF, Visual Studio déclare une variable membre de la classe. Si vous n’utilisez la liaison de données, vous devez manuellement déclarer la variable.
 
-Le `TableAdapterManager` classe n’est pas dans le cadre de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Par conséquent, vous ne pouvez pas chercher dans la documentation. Il est créé au moment du design dans le cadre du processus de création de jeu de données.
+Le `TableAdapterManager` classe n’est pas un type .NET. Par conséquent, vous ne pouvez pas chercher dans la documentation. Il est créé au moment du design dans le cadre du processus de création de jeu de données.
 
 Les éléments suivants sont les méthodes fréquemment utilisées et les propriétés de la `TableAdapterManager` classe :
 

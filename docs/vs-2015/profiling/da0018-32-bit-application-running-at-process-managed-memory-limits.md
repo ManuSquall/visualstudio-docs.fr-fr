@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194943"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0018 |  
@@ -54,7 +54,7 @@ ID de règle | DA0018 |
   
 - Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
   
-   - ou -  
+   ou  
   
 - Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
   

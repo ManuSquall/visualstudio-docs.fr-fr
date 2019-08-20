@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842465"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547795"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 
@@ -30,62 +30,62 @@ ms.locfileid: "65842465"
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Une méthode a un nom qui commence par `Get`, n’accepte aucun paramètre et retourne une valeur qui n’est pas un tableau.
+Une méthode a un nom qui commence par `Get`, ne prend aucun paramètre et retourne une valeur qui n’est pas un tableau.
 
-Par défaut, cette règle examine uniquement les méthodes publiques et protégées, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle examine uniquement les méthodes publiques et protégées, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Dans la plupart des cas, les propriétés représentent des données et méthodes effectuent des actions. Propriétés sont accessibles comme des champs, ce qui les rend plus facile à utiliser. Une méthode est un bon candidat pour devenir une propriété si une de ces conditions est présente :
+Dans la plupart des cas, les propriétés représentent des données et des méthodes qui effectuent des actions. Les propriétés sont accessibles comme les champs, ce qui les rend plus faciles à utiliser. Une méthode est un bon candidat à devenir une propriété si l’une de ces conditions est présente:
 
 - N’accepte aucun argument et retourne les informations d’état d’un objet.
 
-- Accepte un argument unique pour définir une partie de l’état d’un objet.
+- Accepte un seul argument pour définir une partie de l’état d’un objet.
 
-Propriétés doivent se comporter comme si elles étaient des champs ; Si la méthode ne peut pas, il ne doit pas être changé à une propriété. Méthodes sont plus performants que les propriétés dans les situations suivantes :
+Les propriétés doivent se comporter comme s’il s’agissait de champs; Si la méthode ne peut pas, elle ne doit pas être remplacée par une propriété. Les méthodes sont meilleures que les propriétés dans les cas suivants:
 
-- La méthode effectue une opération longue. La méthode est perçue comme plus lente que le temps nécessaire pour définir ou obtenir la valeur d’un champ.
+- La méthode effectue une opération qui prend du temps. La méthode est perçue plus lentement que le temps nécessaire pour définir ou obtenir la valeur d’un champ.
 
 - La méthode effectue une conversion. L’accès à un champ ne retourne pas une version convertie des données qu’il stocke.
 
-- La méthode Get a un effet secondaire observable. Récupération de la valeur d’un champ ne produit pas d’effets secondaires.
+- La méthode d’extraction a un effet secondaire observable. La récupération de la valeur d’un champ ne produit aucun effet secondaire.
 
-- L’ordre d’exécution est important. Définition de la valeur d’un champ ne repose pas sur l’occurrence d’autres opérations.
+- L’ordre d’exécution est important. La définition de la valeur d’un champ ne repose pas sur l’occurrence d’autres opérations.
 
-- Appel de la méthode deux fois de suite crée des résultats différents.
+- L’appel de la méthode deux fois à la suite crée des résultats différents.
 
-- La méthode est statique mais retourne un objet qui peut être modifié par l’appelant. Récupération de la valeur d’un champ n’autorise pas l’appelant de modifier les données qui sont stockées par le champ.
+- La méthode est statique mais retourne un objet qui peut être modifié par l’appelant. La récupération de la valeur d’un champ ne permet pas à l’appelant de modifier les données stockées par le champ.
 
 - La méthode retourne un tableau.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, modifiez la méthode à une propriété.
+Pour corriger une violation de cette règle, remplacez la méthode par une propriété.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Supprimez un avertissement de cette règle si la méthode rencontre au moins un des critères répertoriés précédemment.
+Supprimez un avertissement de cette règle si la méthode remplit au moins l’un des critères précédemment listés.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
-## <a name="control-property-expansion-in-the-debugger"></a>Expansion de propriété de contrôle dans le débogueur
+## <a name="control-property-expansion-in-the-debugger"></a>Expansion des propriétés de contrôle dans le débogueur
 
-L’une des raisons les programmeurs évitent à l’aide d’une propriété sont, car ils ne voulez pas que le débogueur il. Par exemple, la propriété pourrait impliquer d’allouer un grand objet ou d’appeler un P/Invoke, mais il peut en fait pas d’effets secondaires observables.
+L’une des raisons pour lesquelles les programmeurs évitent d’utiliser une propriété est parce qu’ils ne souhaitent pas que le débogueur le développe. Par exemple, la propriété peut impliquer l’allocation d’un objet volumineux ou l’appel d’un P/Invoke, mais elle peut ne pas avoir d’effets secondaires observables.
 
-Vous pouvez empêcher le débogueur à partir des propriétés d’autoexpanding en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. L’exemple suivant illustre cet attribut est appliqué à une propriété d’instance.
+Vous pouvez empêcher le débogueur d’étendre de façon autodéveloppant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>les propriétés en appliquant. L’exemple suivant montre que cet attribut est appliqué à une propriété d’instance.
 
 ```vb
 Imports System
@@ -133,8 +133,8 @@ namespace Microsoft.Samples
 }
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
-L’exemple suivant contient plusieurs méthodes qui doivent être converties en propriétés et plusieurs qui convient pas, car ils ne se comportent comme des champs.
+L’exemple suivant contient plusieurs méthodes qui doivent être converties en propriétés et plusieurs qui ne le sont pas, car elles ne se comportent pas comme des champs.
 
 [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204080"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Procédure : Supprimer les Notifications de modification de fichier
+# <a name="how-to-suppress-file-change-notifications"></a>Procédure : Supprimer les notifications de modification de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque le fichier physique qui représente la mémoire tampon a été modifié, une boîte de dialogue s’affiche avec le message **voulez-vous enregistrer les modifications apportées aux éléments suivants ?** Il s’agit en tant que notification de modification de fichier. Si de nombreuses modifications vont être dans le fichier, cependant, cette boîte de dialogue Affichage indéfiniment peut rapidement devenir ennuyeux.  
@@ -42,7 +42,7 @@ Lorsque le fichier physique qui représente la mémoire tampon a été modifié,
   
      Par exemple, si vous réécrivez le fichier et que vous modifiez l’horodatage, vous devez suspendre les notifications de modification de fichier, comme les opérations de réécriture et timestample chaque nombre comme événement de changement d’un fichier distinct. Pour activer la notification de modification de fichier global vous devez plutôt appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> (méthode).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Ce qui suit montre comment supprimer la notification de modification de fichier.  
   
 ```cpp#  

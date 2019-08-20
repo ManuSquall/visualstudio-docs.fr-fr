@@ -1,41 +1,41 @@
 ---
-title: Ensembles de règles d’analyseur
+title: Ensembles de règles de l’analyseur
 ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675484"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585136"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Ensembles de règles pour les analyseurs Roslyn
+# <a name="rule-sets-for-analyzer-packages"></a>Ensembles de règles pour les packages de l’analyseur
 
-Ensembles de règles prédéfinis sont inclus avec certains packages d’analyseur de NuGet. Par exemple, les ensembles de règles qui sont inclus dans le [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) package NuGet de l’analyseur (depuis la version 2.6.2) activer ou désactiver les règles selon leur catégorie, telles que la sécurité, d’affectation de noms, ou performances. À l’aide des ensembles de règles rend plus facile pour rapidement afficher uniquement ces violations des règles qui se rapportent à une catégorie particulière de règle.
+Les ensembles de règles prédéfinis sont inclus dans certains packages de l’analyseur NuGet. Par exemple, les ensembles de règles inclus dans le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (à partir de la version 2.6.2) activent ou désactivent les règles en fonction de leur catégorie, telles que la sécurité, l’attribution de noms ou les performances. Grâce à l’utilisation d’ensembles de règles, il est facile de voir rapidement les violations de règle qui se rapportent à une catégorie de règle particulière.
 
-Si vous migrez à partir de l’analyse statique du code « FxCop » héritée vers des analyseurs de Roslyn, ces ensembles de règles permettent de continuer à utiliser les mêmes configurations de règle que vous avez utilisé précédemment.
+Si vous effectuez une migration à partir d’une analyse «FxCop» héritée vers une analyse de code basée sur .NET Compiler Platform, ces ensembles de règles vous permettent de continuer à utiliser des configurations de règles similaires à [celles que vous avez utilisées précédemment](rule-set-reference.md).
 
-## <a name="use-analyzer-rule-sets"></a>Utiliser des ensembles de règles d’analyseur
+## <a name="use-analyzer-package-rule-sets"></a>Utiliser les ensembles de règles du package de l’analyseur
 
-Après avoir [installer un package NuGet de l’analyseur](install-roslyn-analyzers.md), recherchez la règle prédéfinie définie ses *rulesets* directory. Par exemple, si vous avez référencé la `Microsoft.CodeAnalysis.FxCopAnalyzers` package de l’analyseur, puis vous pouvez trouver son *rulesets* répertoire à *% USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<version\>\rulesets*. À partir de là, copier un ou plusieurs groupes de règles et les coller dans le répertoire qui contient votre projet Visual Studio ou directement dans **l’Explorateur de solutions**.
+Après avoir [installé un package de l’analyseur NuGet](install-roslyn-analyzers.md), localisez l’ensemble de règles prédéfini dans son répertoire RuleSet. Par exemple, si vous avez référencé le `Microsoft.CodeAnalysis.FxCopAnalyzers` package de l’analyseur, vous pouvez trouver son répertoire RuleSet dans *% UserProfile\\%.\\\<nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers version \rulesets\>* . À partir de là, copiez un ou plusieurs ensembles de règles et collez-les dans le répertoire qui contient votre projet Visual Studio ou directement dans **Explorateur de solutions**.
 
-Vous pouvez également [personnaliser un ensemble de règles prédéfinies](how-to-create-a-custom-rule-set.md) selon vos préférences. Par exemple, vous pouvez modifier le niveau de gravité d’une ou plusieurs règles afin que les violations s’affichent comme des erreurs ou avertissements dans le **liste d’erreurs**.
+Vous pouvez également [personnaliser un ensemble de règles prédéfini](how-to-create-a-custom-rule-set.md) à votre convenance. Par exemple, vous pouvez modifier la gravité d’une ou plusieurs règles afin que les violations apparaissent en tant qu’erreurs ou avertissements dans le **liste d’erreurs**.
 
 ## <a name="set-the-active-rule-set"></a>Définir l’ensemble de règles actif
 
-Le processus de configuration de l’ensemble de règles actif est un peu différent selon que vous avez un projet .NET Core/.NET Standard ou un projet .NET Framework.
+Le processus de définition de l’ensemble de règles actif est un peu différent selon que vous disposez d’un projet .NET Core/. NET standard ou d’un projet de .NET Framework.
 
 ### <a name="net-core"></a>.NET Core
 
-Pour faire une règle de la règle active définie pour l’analyse dans les projets .NET Core ou .NET Standard, ajouter manuellement le **CodeAnalysisRuleSet** propriété à votre fichier projet. Par exemple, le code suivant extrait de code jeux `HelloWorld.ruleset` que la règle active définie.
+Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse dans les projets .NET Core ou .NET Standard, ajoutez manuellement la propriété **CodeAnalysisRuleSet** à votre fichier projet. Par exemple, l’extrait de code suivant `HelloWorld.ruleset` définit comme ensemble de règles actif.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,21 +44,21 @@ Pour faire une règle de la règle active définie pour l’analyse dans les pro
 </PropertyGroup>
 ```
 
-### <a name="net-framework"></a>.NET Framework
+### <a name="net-framework"></a>.NET Framework
 
-Pour faire une règle de la règle active définie pour l’analyse dans les projets .NET Framework, cliquez sur le projet dans **l’Explorateur de solutions** et choisissez **propriétés**. Dans les pages de propriétés de projet, sélectionnez le **analyse du Code** onglet. Sous **exécuter cet ensemble de règles**, sélectionnez **Parcourir**, puis sélectionnez l’ensemble de règles souhaité que vous avez copié dans le répertoire de projet. Maintenant, vous voyez uniquement les violations de règle pour que ces règles sont activées dans l’ensemble de règles sélectionné.
+Pour définir l’ensemble de règles actif pour l’analyse dans .NET Framework projets, cliquez avec le bouton droit sur le projet dans **Explorateur de solutions** et choisissez **Propriétés**. Dans les pages de propriétés du projet, sélectionnez l’onglet **analyse du code** . Sous **exécuter cet ensemble de règles**, sélectionnez **Parcourir**, puis sélectionnez l’ensemble de règles souhaité que vous avez copié dans le répertoire du projet. À présent, vous ne voyez que les violations de règle pour les règles qui sont activées dans l’ensemble de règles sélectionné.
 
 ## <a name="available-rule-sets"></a>Ensembles de règles disponibles
 
-Les ensembles de règles analyseur prédéfini incluent trois ensembles de règles qui affectent toutes les règles dans le package&mdash;un qui permet à tous les, désactive tous les accès à celui-ci et un qui respecte les paramètres de gravité et l’activation de chaque règle par défaut :
+Les ensembles de règles de l’analyseur prédéfinis incluent trois groupes de règles qui affectent toutes&mdash;les règles du package qui les active, les désactive toutes et l’autre qui respecte les paramètres de gravité et d’activation par défaut de chaque règle:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset
 - AllRulesDefault.ruleset
 
-En outre, il existe deux ensembles de règles pour chaque catégorie de règles dans le package, telles que les performances ou la sécurité. Un ensemble de règles Active toutes les règles pour la catégorie et un ensemble de règles respecte les paramètres de gravité et d’activation par défaut pour chaque règle dans la catégorie.
+En outre, il existe deux ensembles de règles pour chaque catégorie de règles dans le package, telles que les performances ou la sécurité. Un ensemble de règles active toutes les règles de la catégorie, et un ensemble de règles honore les paramètres de gravité et d’activation par défaut pour chaque règle de la catégorie.
 
-Le [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) package NuGet de l’analyseur inclut les ensembles de règles pour les catégories suivantes, qui correspondent aux ensembles de règles disponibles pour l’analyse du code statique FxCop « hérités » :
+Le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) comprend des ensembles de règles pour les catégories suivantes:
 
 - design
 - documentation
@@ -75,4 +75,4 @@ Le [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Micros
 - [Vue d’ensemble des analyseurs .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Installer des analyseurs](install-roslyn-analyzers.md)
 - [Utiliser des analyseurs](use-roslyn-analyzers.md)
-- [Utiliser la règle définit pour les règles d’analyse de code de groupe](using-rule-sets-to-group-code-analysis-rules.md)
+- [Utiliser des ensembles de règles pour regrouper des règles d’analyse du code](using-rule-sets-to-group-code-analysis-rules.md)

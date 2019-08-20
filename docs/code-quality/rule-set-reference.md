@@ -9,32 +9,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825362"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585244"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
-Lorsque vous configurez l’analyse statique du code pour les projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet.
+Quand vous configurez une analyse héritée pour des projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d' *ensembles de règles*intégrés. Certaines règles sont incluses dans plusieurs ensembles de règles prédéfinis, par exemple, l’ensemble de règles de règles de vérification de base inclut des règles qui se trouvent dans l’ensemble de règles des règles recommandées managées.
+
+> [!NOTE]
+> Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](analyzer-rule-sets.md).
+
+Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet. Si vous incluez plusieurs ensembles de règles qui contiennent la même règle dans un ensemble de règles personnalisé, cette règle apparaît une seule fois dans l’ensemble de règles personnalisé.
 
 Les rubriques de cette section décrivent les règles intégrées d’ensembles de règles (et les avertissements) qu’ils contiennent.
 
-> [!NOTE]
-> Les ensembles de règles dans cette section se rapportent à l’analyse statique du code. Pour plus d’informations sur les ensembles de règles disponibles pour les packages d’analyseur Roslyn, consultez [des ensembles de règles d’utilisation avec des analyseurs de Roslyn](analyzer-rule-sets.md).
-
-- [Ensemble de règles de toutes les règles](all-rules-rule-set.md)
-- [Ensemble de règles de règles de vérification de base pour le code managé](basic-correctness-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles de règles de conception de base pour le code managé](basic-design-guideline-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles de règles de vérification étendue pour le code managé](extended-correctness-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles de règles de conception étendue pour le code managé](extended-design-guidelines-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles des règles de globalisation pour le code managé](globalization-rules-rule-set-for-managed-code.md)
-- [Règles de règles minimales managées défini pour le code managé](managed-minimum-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles des règles recommandées managées pour le code managé](managed-recommended-rules-rule-set-for-managed-code.md)
-- [Ensemble de règles des règles minimales mixtes](mixed-minimum-rules-rule-set.md)
-- [Ensemble de règles des règles recommandées mixtes](mixed-recommended-rules-rule-set.md)
-- [Ensemble de règles des règles minimales natives](native-minimum-rules-rule-set.md)
-- [Ensemble de règles des règles recommandées natives](native-recommended-rules-rule-set.md)
-- [Ensemble de règles des règles de sécurité pour le code managé](security-rules-rule-set-for-managed-code.md)
+| Ensemble de règles | Règles incluses |
+| - | - |
+| [Toutes les règles](all-rules-rule-set.md) | Contient toutes les règles et C++ règles managées disponibles |
+| [Règles de vérification de base](basic-correctness-rules-rule-set-for-managed-code.md) | Comprend les règles recommandées gérées, ainsi que les règles pour les erreurs logiques et l’utilisation de l’infrastructure |
+| [Règles de vérification étendue](extended-correctness-rules-rule-set-for-managed-code.md) | Comprend des règles de vérification de base (qui incluent les règles recommandées gérées), ainsi que d’autres règles pour les erreurs logiques et l’utilisation de l’infrastructure |
+| [Règles de conception de base](basic-design-guideline-rules-rule-set-for-managed-code.md) | Comprend des règles recommandées gérées, ainsi que des règles permettant de s’assurer que le code est facile à lire, à comprendre et à entretenir. |
+| [Règles de conception étendue](extended-design-guidelines-rules-rule-set-for-managed-code.md) | Comprend des règles de conception de base (qui incluent les règles recommandées gérées), ainsi que des règles de maintenabilité qui se concentrent sur l’affectation de noms |
+| [Règles de globalisation](globalization-rules-rule-set-for-managed-code.md) | Contient des règles pour les problèmes de globalisation |
+| [Règles minimales gérées](managed-minimum-rules-rule-set-for-managed-code.md) | Contient quatre règles pour les problèmes critiques de code managé |
+| [Règles recommandées gérées](managed-recommended-rules-rule-set-for-managed-code.md) | Comprend des règles minimales gérées, ainsi que d’autres règles pour les problèmes critiques de code managé |
+| [Règles minimales mixtes](mixed-minimum-rules-rule-set.md) | Contient des règles pour les problèmes C++ critiques dans le code du CLR |
+| [Règles mixtes recommandées](mixed-recommended-rules-rule-set.md) | Comprend des règles minimales mixtes plus des règles pour les C++ problèmes critiques dans le code pour CLR |
+| [Règles minimales natives](native-minimum-rules-rule-set.md) | Contient des règles pour les problèmes critiques en code natif |
+| [Règles natives recommandées](native-recommended-rules-rule-set.md) | Comprend des règles minimales natives, ainsi que d’autres règles pour les problèmes critiques en code natif. |
+| [Règles de sécurité](security-rules-rule-set-for-managed-code.md) | Contient des règles de détection des failles de sécurité |

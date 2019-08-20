@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9c443f966265f70a729e2fd433353c4856a1f8c6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438196"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924051"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procédure : Ajouter ou supprimer des espaces de noms importés (Visual Basic)
 
 L’importation d’un espace de noms vous permet d’utiliser des éléments issus de cet espace de noms dans votre code sans avoir à qualifier complètement l’élément. Par exemple, pour accéder à la méthode `Create` dans la classe `System.Messaging.MessageQueue`, vous pouvez importer l’espace de noms `System.Messaging` et simplement référencer l’élément dont vous avez besoin dans le code sous la forme `MessageQueue.Create`.
 
- Les espaces de noms importés sont gérés dans la page **Références** du **Concepteur de projet**. Les importations que vous spécifiez dans cette boîte de dialogue sont passées directement au compilateur (*/imports*) et s’appliquent à tous les fichiers de votre projet. Utilisez l’instruction `Imports` pour utiliser un espace de noms dans un fichier de code source unique.
+Les espaces de noms importés sont gérés dans la page **Références** du **Concepteur de projet**. Les importations que vous spécifiez dans cette boîte de dialogue sont passées directement au compilateur ( */imports*) et s’appliquent à tous les fichiers de votre projet. Utilisez l’instruction `Imports` pour utiliser un espace de noms dans un fichier de code source unique.
 
 ### <a name="to-add-an-imported-namespace"></a>Pour ajouter un espace de noms importé
 
@@ -47,9 +47,9 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
 3. Dans la liste **Espaces de noms importés**, décochez la case de l’espace de noms que vous souhaitez supprimer.
 
 ## <a name="user-imports"></a>Importations utilisateur
- Les importations utilisateur vous permettent d’importer une classe spécifique d’un espace de noms plutôt que l’espace de noms complet. Par exemple, votre application peut avoir une importation pour l’espace de noms <xref:System.Diagnostics>, mais la seule classe de cet espace de noms qui vous intéresse est la classe `Debug`. Vous pouvez définir <xref:System.Diagnostics.Debug> en tant qu’importation utilisateur, puis supprimer l’importation de <xref:System.Diagnostics>.
+Les importations utilisateur vous permettent d’importer une classe spécifique d’un espace de noms plutôt que l’espace de noms complet. Par exemple, votre application peut avoir une importation pour l’espace de noms <xref:System.Diagnostics>, mais la seule classe de cet espace de noms qui vous intéresse est la classe `Debug`. Vous pouvez définir <xref:System.Diagnostics.Debug> en tant qu’importation utilisateur, puis supprimer l’importation de <xref:System.Diagnostics>.
 
- Si vous changez d’avis ultérieurement et concluez que vous avez véritablement besoin de la classe `EventLog`, vous pouvez entrer <xref:System.Diagnostics.EventLog> en tant qu’importation utilisateur et remplacer <xref:System.Diagnostics.Debug> en utilisant la fonctionnalité de mise à jour.
+Si vous changez d’avis ultérieurement et concluez que vous avez véritablement besoin de la classe `EventLog`, vous pouvez entrer <xref:System.Diagnostics.EventLog> en tant qu’importation utilisateur et remplacer <xref:System.Diagnostics.Debug> en utilisant la fonctionnalité de mise à jour.
 
 ### <a name="to-add-a-user-import"></a>Pour ajouter une importation utilisateur
 

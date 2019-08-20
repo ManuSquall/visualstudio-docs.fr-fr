@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e95e532e97253fc8ba338e27879d80dd9d664118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66d44ff0c2c2406e9ba4508c835deab571b70e44
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62420101"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926495"
 ---
 # <a name="summary-view"></a>Mode Résumé
 La vue Résumé affiche des informations sur les fonctions ou les objets dont le coût est le plus pénalisant quant aux performances lors d’une exécution du profilage. Cette vue fournit un graphique chronologique et plusieurs listes de fonctions ou d’objets dont le coût est le plus pénalisant quant aux métriques de performances de la méthode de profilage. Les données de cette vue dépendent de la méthode de profilage qui a été utilisée (échantillonnage, instrumentation ou concurrence) et de l’allocation de mémoire .NET si elle a été collectée ou non.
 
  Dans toutes les vues Résumé, à l’exception de la vue Résumé des données de concurrence, le graphique chronologique de la vue Résumé montre le pourcentage d’utilisation de l’UC de l’application profilée pendant la durée du profilage.
 
-- Si vous spécifiez un segment de temps sur le graphique, vous pouvez réanalyser les données pour ce segment ou effectuer un zoom de l’affichage de la chronologie sur le segment que vous avez spécifié. Pour plus d'informations, voir [Procédure : Filtrer les vues des rapports à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
+- Si vous spécifiez un segment de temps sur le graphique, vous pouvez réanalyser les données pour ce segment ou effectuer un zoom de l’affichage de la chronologie sur le segment que vous avez spécifié. Pour plus d'informations, voir [Procédure : Filtrer les vues des rapports à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 - Vous pouvez cliquer sur une fonction de la liste de la vue Résumé pour afficher la vue Détails de la fonction. Vous pouvez également cliquer avec le bouton droit sur la fonction pour d’autres options d’affichage.
 

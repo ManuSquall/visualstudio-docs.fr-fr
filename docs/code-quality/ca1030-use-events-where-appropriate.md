@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842363"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547678"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 
@@ -27,40 +27,40 @@ ms.locfileid: "65842363"
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un nom de la méthode commence par l’une des opérations suivantes :
+Un nom de méthode commence par l’un des éléments suivants:
 
 - AddOn
 - RemoveOn
-- Incendie
-- Raise
+- Flammes
+- Génère
 
-Par défaut, cette règle examine uniquement les méthodes visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle examine uniquement les méthodes visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle détecte des méthodes qui présentent des noms qui ordinairement seraient utilisés pour des événements. Événements suivent le modèle de design observateur ou publier / abonner ; ils sont utilisés lorsqu’un changement d’état dans un objet doit être communiqué à d’autres objets. Si une méthode est appelée en réponse à un changement d’état clairement définie, la méthode doit être appelée par un gestionnaire d’événements. Les objets qui appellent la méthode doivent déclencher des événements au lieu d'appeler directement la méthode.
+Cette règle détecte des méthodes qui présentent des noms qui ordinairement seraient utilisés pour des événements. Les événements suivent le modèle de conception observateur ou publication-abonnement. ils sont utilisés lorsqu’un changement d’État dans un objet doit être communiqué à d’autres objets. Si une méthode est appelée en réponse à une modification d’état clairement définie, la méthode doit être appelée par un gestionnaire d’événements. Les objets qui appellent la méthode doivent déclencher des événements au lieu d'appeler directement la méthode.
 
-Voici quelques exemples courants d’événements sont trouvent dans des applications d’interface utilisateur où une action de l’utilisateur comme un clic sur un bouton provoque un segment de code à exécuter. Le modèle d’événement .NET Framework n’est pas limité aux interfaces utilisateur ; Il doit être utilisé partout où que vous devez communiquer l’état passe à un ou plusieurs objets.
+Des exemples courants d’événements se trouvent dans les applications de l’interface utilisateur, où une action de l’utilisateur, telle qu’un clic sur un bouton, entraîne l’exécution d’un segment de code. Le modèle d’événement .NET n’est pas limité aux interfaces utilisateur. Elle doit être utilisée partout où vous devez communiquer des modifications d’État à un ou plusieurs objets.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception pour utiliser le modèle d’événement .NET.
+Si la méthode est appelée lorsque l’état d’un objet change, envisagez de modifier la conception pour utiliser le modèle d’événement .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
 Supprimez un avertissement de cette règle si la méthode ne fonctionne pas avec le modèle d’événement .NET.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).

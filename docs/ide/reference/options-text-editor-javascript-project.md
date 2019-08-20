@@ -1,28 +1,28 @@
 ---
 title: Options, Éditeur de texte, JavaScript, Projet
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778171"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605931"
 ---
 # <a name="options-text-editor-javascript-project"></a>Options, Éditeur de texte, JavaScript, Projet
 
-Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript** > **Projet**.
+Utilisez la page **Projet** de la boîte de dialogue **Options** pour spécifier les options de projet JavaScript et TypeScript dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **JavaScript/TypeScript** > **Projet**.
 
 ## <a name="project-analysis-options"></a>Options d’analyse du projet
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation'
+title: Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 039c022cc5a8883e5687630f5243d8652ff036e7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432034"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925843"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -26,9 +26,9 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
  Le*développement basé d’abord sur les tests* est une approche de conception logicielle dans laquelle vous écrivez d’abord des tests unitaires basés sur des spécifications de produits, puis vous écrivez le code source nécessaire pour que les tests réussissent. Visual Studio prend en charge le développement basé d’abord sur les tests en générant de nouveaux types et membres dans le code source lorsque vous y faites référence pour la première fois dans vos cas de test, avant de les définir.
 
- Visual Studio génère les nouveaux types et membres avec une interruption minimale de votre flux de travail. Vous pouvez créer des stubs pour des types, méthodes, propriétés, champs ou constructeurs sans quitter votre emplacement actuel dans le code. Quand vous ouvrez une boîte de dialogue pour spécifier des options de génération de type, le fichier ouvert actuellement récupère immédiatement le focus lorsque la boîte de dialogue se ferme.
+Visual Studio génère les nouveaux types et membres avec une interruption minimale de votre flux de travail. Vous pouvez créer des stubs pour des types, méthodes, propriétés, champs ou constructeurs sans quitter votre emplacement actuel dans le code. Quand vous ouvrez une boîte de dialogue pour spécifier des options de génération de type, le fichier ouvert actuellement récupère immédiatement le focus lorsque la boîte de dialogue se ferme.
 
- Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation** avec des frameworks de test qui s’intègrent à Visual Studio. Dans cette rubrique, nous allons utiliser l’infrastructure de test unitaire Microsoft.
+Vous pouvez utiliser la fonctionnalité **Générer à partir de l’utilisation** avec des frameworks de test qui s’intègrent à Visual Studio. Dans cette rubrique, nous allons utiliser l’infrastructure de test unitaire Microsoft.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 2. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur l’icône de solution en haut, choisissez **Ajouter** > **Nouveau projet**.
 
-3. Créez un **Projet de test unitaire (.NET Framework)**.
+3. Créez un **Projet de test unitaire (.NET Framework)** .
 
    ::: moniker range="vs-2017"
 
@@ -93,7 +93,7 @@ Supposez que la spécification de produit indique que la classe `Automobile` a d
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Du fait que le code fait référence à deux propriétés non définies sur `Automobile`, une ligne ondulée s’affiche sous `Model` et `TopSpeed`. Pointez sur `Model` et choisissez l’ampoule d’erreur **Actions rapides**, puis choisissez **Générer la propriété « Automobile.Model »**.
+2. Du fait que le code fait référence à deux propriétés non définies sur `Automobile`, une ligne ondulée s’affiche sous `Model` et `TopSpeed`. Pointez sur `Model` et choisissez l’ampoule d’erreur **Actions rapides**, puis choisissez **Générer la propriété « Automobile.Model »** .
 
 3. Générez un stub pour la propriété `TopSpeed` de la même façon.
 
@@ -107,11 +107,11 @@ Maintenant, nous allons créer une méthode de test qui génère un stub de cons
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Cliquez sur l’ampoule d’erreur **Actions rapides** sous la ligne ondulée rouge, puis cliquez sur **Générer un constructeur dans « Automobile »**.
+2. Cliquez sur l’ampoule d’erreur **Actions rapides** sous la ligne ondulée rouge, puis cliquez sur **Générer un constructeur dans « Automobile »** .
 
      Dans le fichier de classe `Automobile` , notez que le nouveau constructeur a examiné les noms des variables locales utilisées dans l’appel de constructeur, qu’il a identifié des propriétés ayant le même nom dans la classe `Automobile` et qu’il a fourni du code dans le corps du constructeur pour stocker les valeurs d’arguments dans les propriétés `Model` et `TopSpeed` .
 
-3. Une fois le nouveau constructeur généré, une ligne ondulée apparaît sous l’appel au constructeur par défaut dans `DefaultAutomobileIsInitializedCorrectly`. Le message d’erreur indique que la classe `Automobile` n’a aucun constructeur qui n’accepte aucun argument. Pour générer un constructeur explicite par défaut sans aucun paramètre, cliquez sur l’ampoule d’erreur **Actions rapides**, puis cliquez sur **Générer un constructeur dans « Automobile »**.
+3. Une fois le nouveau constructeur généré, une ligne ondulée apparaît sous l’appel au constructeur par défaut dans `DefaultAutomobileIsInitializedCorrectly`. Le message d’erreur indique que la classe `Automobile` n’a aucun constructeur qui n’accepte aucun argument. Pour générer un constructeur explicite par défaut sans aucun paramètre, cliquez sur l’ampoule d’erreur **Actions rapides**, puis cliquez sur **Générer un constructeur dans « Automobile »** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Générer un stub pour une méthode
 Supposez que la spécification stipule qu’un nouvel élément `Automobile` peut être placé dans l’état `IsRunning` si ses propriétés `Model` et `TopSpeed` ont des valeurs autres que les valeurs par défaut.
@@ -121,9 +121,9 @@ Supposez que la spécification stipule qu’un nouvel élément `Automobile` peu
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Cliquez sur l’ampoule d’erreur **Actions rapides** pour l’appel de la méthode `myAuto.Start`, puis cliquez sur **Générer une méthode « Automobile.Start »**.
+2. Cliquez sur l’ampoule d’erreur **Actions rapides** pour l’appel de la méthode `myAuto.Start`, puis cliquez sur **Générer une méthode « Automobile.Start »** .
 
-3. Cliquez sur l’ampoule **Actions rapides** pour la propriété `IsRunning`, puis cliquez sur **Générer la propriété « Automobile.IsRunning »**.
+3. Cliquez sur l’ampoule **Actions rapides** pour la propriété `IsRunning`, puis cliquez sur **Générer la propriété « Automobile.IsRunning »** .
 
      La classe `Automobile` contient maintenant une méthode nommée `Start()` et une propriété nommée `IsRunning`.
 

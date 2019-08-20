@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157684"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,9 +148,9 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Culture`|Obligatoire. Définit la culture pour ce package, qui détermine la langue à utiliser. Cet attribut est une clé dans le `Strings` élément, qui répertorie des chaînes spécifiques à la culture pour les noms de produits et les messages d’erreur pendant l’installation.|  
-|`Name`|Obligatoire. Le nom du package affiché au développeur dans un outil tel que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cet attribut est une clé dans le `Strings` élément, qui doit contenir un `String` élément avec la `Name` et `Culture` propriétés définies pour correspondre à la `Name` et `Culture` propriétés de `Package`.|  
-|`LicenseAgreement`|Optionnel. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être en texte brut (.txt) ou au Format RTF. (.rtf)|  
+|`Culture`|Requis. Définit la culture pour ce package, qui détermine la langue à utiliser. Cet attribut est une clé dans le `Strings` élément, qui répertorie des chaînes spécifiques à la culture pour les noms de produits et les messages d’erreur pendant l’installation.|  
+|`Name`|Requis. Le nom du package affiché au développeur dans un outil tel que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cet attribut est une clé dans le `Strings` élément, qui doit contenir un `String` élément avec la `Name` et `Culture` propriétés définies pour correspondre à la `Name` et `Culture` propriétés de `Package`.|  
+|`LicenseAgreement`|facultatif. Spécifie le nom du fichier dans le package de distribution qui contient le contrat de licence utilisateur final (CLUF).  Ce fichier peut être en texte brut (.txt) ou au Format RTF. (.rtf)|  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre un fichier de package complet pour la redistribution du [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  

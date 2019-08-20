@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905442"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693028"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-La macro TRACE gère correctement les paramètres char* et wchar_t\*. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
+La macro TRACE gère correctement les deux char\* et wchar_t\* paramètres. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -358,7 +358,7 @@ Dans le cas des objets alloués sur le tas, cependant, vous devez supprimer l'ob
 #### <a name="BKMK_Customizing_object_dumps"></a> Personnalisation des dumps d'objets
 Lorsque vous dérivez une classe de [CObject](/cpp/mfc/reference/cobject-class), vous pouvez substituer la fonction membre `Dump` pour fournir des informations supplémentaires lorsque vous utilisez [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) pour faire un dump des objets dans la [fenêtre Sortie](../ide/reference/output-window.md).
 
-La fonction `Dump` écrit une représentation textuelle des variables de membre de l'objet dans un contexte de dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Le contexte de dump est similaire à un flux d'E/S. Vous pouvez utiliser l'opérateur d'insertion (**<<**) pour envoyer des données à un `CDumpContext`.
+La fonction `Dump` écrit une représentation textuelle des variables de membre de l'objet dans un contexte de dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Le contexte de dump est similaire à un flux d'E/S. Vous pouvez utiliser l'opérateur d'insertion ( **<<** ) pour envoyer des données à un `CDumpContext`.
 
 Lorsque vous substituez la fonction `Dump` , vous devez d'abord appeler la version classe de base de la fonction `Dump` pour faire un dump du contenu de l'objet de classe de base. Sortez ensuite une description texte et une valeur pour chaque variable de membre de votre classe dérivée.
 
@@ -430,9 +430,9 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
 
 3. Vous commencerez par créer une nouvelle configuration de projet.
 
-   1. Dans la boîte de dialogue **Pages de propriétés de \<Projet>**, cliquez sur le bouton **Gestionnaire de configurations**.
+   1. Dans la boîte de dialogue **Pages de propriétés de \<Projet>** , cliquez sur le bouton **Gestionnaire de configurations**.
 
-   2. Dans la [boîte de dialogue Gestionnaire de configurations](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet à l'intérieur de la grille. Dans la colonne **Configuration**, sélectionnez **\<Nouveau...>**.
+   2. Dans la [boîte de dialogue Gestionnaire de configurations](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet à l'intérieur de la grille. Dans la colonne **Configuration**, sélectionnez **\<Nouveau...>** .
 
    3. Dans la [boîte de dialogue Nouvelle configuration de projet](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), tapez un nom pour votre nouvelle configuration (par exemple, « Débogage partiel ») dans la zone **Nom de la configuration de projet** .
 
@@ -472,7 +472,7 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
 
    6. Cliquez sur les paramètres de **Format des informations de débogage** et sélectionnez l'option voulue (généralement **/ZI**) pour les informations de débogage.
 
-   7. Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **Création/Utilisation d’un en-tête précompilé** dans la boîte de dialogue **Propriétés de \<Projet>** (dossier **Propriétés de configuration**, sous-dossier **C/C++**, catégorie **En-têtes précompilés**).
+   7. Si vous utilisez une application générée par un Assistant Application ou que vous possédez des en-têtes précompilés, vous devez désactiver ou recompiler ces derniers avant de compiler les autres modules. Sinon, vous recevrez l'avertissement C4650 et le message d'erreur C2855. Vous pouvez désactiver les en-têtes précompilés en modifiant le paramètre **Création/Utilisation d’un en-tête précompilé** dans la boîte de dialogue **Propriétés de \<Projet>** (dossier **Propriétés de configuration**, sous-dossier **C/C++** , catégorie **En-têtes précompilés**).
 
 7. Dans le menu **Générer** , cliquez sur **Générer** pour régénérer les fichiers projet  qui sont obsolètes.
 

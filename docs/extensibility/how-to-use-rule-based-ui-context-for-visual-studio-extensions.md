@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324695"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309676"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio
 
@@ -140,6 +140,10 @@ Voici les différents types de terme qui sont prises en charge :
 |ActiveProjectCapability :\<Expression >|Le terme est true lorsque les fonctionnalités de projet actif correspond à l’expression fournie. Une expression peut être quelque chose comme VB &#124; CSharp.|
 |SolutionHasProjectCapability :\<Expression >|Similaire à ci-dessus mais terme a la valeur true lorsque la solution a n’importe quel projet chargé qui correspond à l’expression.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Le terme sera true chaque fois qu’une solution de projet qui est versionnés (agrégé) et a une version de mise en correspondance du GUID du type de projet donné.|
+|ProjectAddedItem :\<modèle >| Le terme est vrai lorsqu’un fichier correspondant au modèle « » est ajouté à un projet dans le soluion est ouvert.|
+|ActiveProjectOutputType:\<outputType>|Le terme a la valeur true de sortie lorsque le type de projet actif correspond exactement.  OutputType peut être un entier ou un <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> type.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Le terme a la valeur true lorsque le projet actif a la propriété de build spécifiée et la valeur de propriété correspond au filtre d’expression régulière fournie. Reportez-vous à [persistance des données dans les fichiers projet MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) pour plus d’informations sur les propriétés de build.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Le terme est true lorsque la solution a un projet chargé avec la propriété de build spécifiée et la valeur de propriété correspond au filtre d’expression régulière fournie.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilité avec l’extension d’entre versions
 

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b39ac28776b1af71e2cccb601776f5518ff9e99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176620"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecte de données de minutage détaillées pour une application autonome en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,8 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique : pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique : pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**Ajouter des interactions de couche**|-   [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  

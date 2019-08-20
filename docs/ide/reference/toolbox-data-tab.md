@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946789"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747694"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 
@@ -26,9 +26,9 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
 > [!TIP]
 > L’exécution de l’Assistant Configuration de source de données crée et configure automatiquement la plupart des éléments de données. Pour plus d’informations, consultez [Ajouter de nouvelles sources de données](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
+## <a name="ui-element-list"></a>Liste des éléments de l’interface utilisateur
 
-Pour accéder directement à la page de référence .NET Framework d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **boîte à outils** ou sur le composant dans la barre d’état du concepteur.
+Pour accéder directement à la page de référence .NET d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **Boîte à outils** ou sur le composant dans la barre d’état du concepteur.
 
 |Name|Description|
 |----------|-----------------|

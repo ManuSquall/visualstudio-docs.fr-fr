@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 499a4ee168aaab7dfee2527bdbf10cc3b10313b8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948817"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787958"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -34,8 +33,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
    > ![Avantage Power BI Pro, Compte existant](_img/vs-pbi/vs-pbi-existing-account.png)
 
 4. Pour créer un compte, entrez vos coordonnées, puis cliquez sur **Suivant**.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Créer un compte](_img/vs-pbi/vs-pbi-create-account-cropped.png)
 
 5. Créez ensuite votre identifiant utilisateur et votre mot de passe.  Si vous avez déjà un compte et que vous en créez un autre, vous devez spécifier un nom de société différent de celui que vous avez utilisé pour le compte existant.  Cliquez sur **Créer mon compte**.
    > [!div class="mx-imgBorder"]
@@ -46,8 +43,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
    > ![Avantage Power BI Pro, Vous n’êtes pas un robot](_img/vs-pbi/vs-pbi-robot1-cropped.png)
 
 7. Entrez le code reçu, puis cliquez sur **Suivant**.
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Power BI Pro, Vous n’êtes pas un robot2](_img/vs-pbi/vs-pbi-robot2-cropped.png)
 
 8. Entrez vos coordonnées, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
@@ -60,8 +55,6 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
     > ![Avantage Power BI Pro, Coordonnées](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
 
 11. La page suivante confirme que vous êtes prêt à commencer à utiliser Power BI Pro.  Cette page contient un lien pour accéder à la page de connexion.  Nous vous recommandons d’enregistrer le lien vers la page de connexion, ainsi que votre identifiant utilisateur.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie au moment de la création de votre compte.)  Vous pouvez également voir s’afficher une fenêtre Assistant Office 365 automatisée, qui vous permet de poser des questions au besoin.  Cliquez sur **Démarrer** pour continuer.
-    > [!div class="mx-imgBorder"]
-    > ![Avantage Power BI Pro, Tout est prêt](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 12. Votre compte Power BI Pro est créé. Vous avez maintenant accès au Centre d’administration Office 365, où vous pouvez gérer les utilisateurs et les domaines, installer des logiciels Office et obtenir plus d’informations sur Office 365.  C'est tout !  Vous êtes prêt à commencer.
 
@@ -73,8 +66,8 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
-| Visual Studio Dev Essentials | NA  | Non disponible |NA|
 | Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
+||
 
 <sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & Service, MVP (Most Valuable Professional), RD (Regional Director).  Exclut :  MPN (Microsoft Partner Network), FTE, Imagine.*
 
@@ -111,9 +104,9 @@ R :  Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide avec Power BI Pro ?
-    - Consultez la [documentation en ligne](/power-bi/).
-    - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).
-    - Découvrez les principaux problèmes, obtenez de l’aide auprès de la communauté ou envoyez un ticket de support sur la [page de support](https://powerbi.microsoft.com/support/).
+  - Consultez la [documentation en ligne](/power-bi/).
+  - Problèmes d’inscription ?  Consultez [Inscription individuelle à Power BI](/power-bi/service-self-service-signup-for-power-bi).
+  - Découvrez les principaux problèmes, obtenez de l’aide auprès de la communauté ou envoyez un ticket de support sur la [page de support](https://powerbi.microsoft.com/support/).
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 

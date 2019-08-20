@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202013"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : Affichage de la saisie semi-automatique des instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-     Microsoft.VisualStudio.OLE.Interop  
+     Assemblys Microsoft.VisualStudio.OLE.Interop  
   
      Microsoft.VisualStudio.Shell.14.0  
   
@@ -204,4 +204,4 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
 4. Lorsque vous tapez tout d’abord « a » et ensuite « d », une liste qui contient « addition » et « adaptation » doit être affichée. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir « addition, uniquement » qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la touche espace, tabulation ou entrée, ou faire disparaître la liste en tapant ÉCHAP ou une autre clé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

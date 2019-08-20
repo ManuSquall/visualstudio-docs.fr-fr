@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a09036e0c0f83d262760598dd02e6cf6e8cdd38e
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827048"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606072"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue Options : Environnement \> Documents
 
@@ -85,6 +85,5 @@ Sélectionnez cette option pour enregistrer au format Unicode par défaut les fi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
 - [Fichiers divers](../../ide/reference/miscellaneous-files.md)
 - [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)

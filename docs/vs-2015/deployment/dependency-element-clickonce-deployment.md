@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f191b11dfce5b3877d0a31e260e092000a556a5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187785"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,27 +79,27 @@ Identifie la version de l’application à installer et l’emplacement du manif
  Le `dependency` élément décrit généralement les dépendances de l’application principale sur les assemblys contenus dans un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Si votre application Main.exe utilise un assembly appelé DotNetAssembly.dll, cet assembly doit être répertorié dans une section de dépendance. Dépendance, toutefois, permettre également exprimer autres types de dépendances, telles que les dépendances sur une version spécifique du common language runtime, sur un assembly dans le global assembly cache (GAC) ou sur un objet COM. S’agissant d’une technologie de déploiement sans peine, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ne peut pas initialiser le téléchargement et installation de ces types de dépendances, mais il n’empêche l’application de s’exécuter si une ou plusieurs des dépendances spécifiées n’existent pas.  
   
 ## <a name="dependentassembly"></a>dependentAssembly  
- Obligatoire. Cet élément contient le `assemblyIdentity` élément. Le tableau suivant présente les attributs du `dependentAssembly` prend en charge.  
+ Requis. Cet élément contient le `assemblyIdentity` élément. Le tableau suivant présente les attributs du `dependentAssembly` prend en charge.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`preRequisite`|Facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter.|  
-|`visible`|Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pour gérer le stockage des applications et l’activation.|  
-|`dependencyType`|Obligatoire. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle.|  
-|`codebase`|Optionnel. Le chemin d’accès complet au manifeste d’application.|  
-|`size`|Optionnel. La taille du manifeste d’application, en octets.|  
+|`preRequisite`|facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter.|  
+|`visible`|facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pour gérer le stockage des applications et l’activation.|  
+|`dependencyType`|Requis. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle.|  
+|`codebase`|facultatif. Le chemin d’accès complet au manifeste d’application.|  
+|`size`|facultatif. La taille du manifeste d’application, en octets.|  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatoire. Cet élément est un enfant de l’élément `dependentAssembly` . Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
+ Requis. Cet élément est un enfant de l’élément `dependentAssembly` . Le contenu de `assemblyIdentity` doit être identique à celui décrit dans la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Le tableau suivant présente les attributs de la `assemblyIdentity` élément.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Identifie le nom de l’application.|  
-|`Version`|Obligatoire. Spécifie le numéro de version de l’application, dans le format suivant : `major.minor.build.revision`|  
-|`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour se connecter doit être de 2 048 bits ou supérieur.|  
-|`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour 32 bits Windows et `IA64` pour Windows de 64 bits.|  
-|`Language`|Optionnel. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
-|`type`|Facultatif. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|  
+|`Name`|Requis. Identifie le nom de l’application.|  
+|`Version`|Requis. Spécifie le numéro de version de l’application, dans le format suivant : `major.minor.build.revision`|  
+|`publicKeyToken`|Requis. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour se connecter doit être de 2 048 bits ou supérieur.|  
+|`processorArchitecture`|Requis. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour 32 bits Windows et `IA64` pour Windows de 64 bits.|  
+|`Language`|facultatif. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). Par défaut, il s’agit de `neutral`. Cet élément est dans le `asmv2` espace de noms.|  
+|`type`|facultatif. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|  
   
 ## <a name="hash"></a>hash  
  Le `hash` élément est un enfant facultatif de la `file` élément. L’élément `hash` ne comporte pas d’attributs.  
@@ -148,7 +148,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant spécifie une dépendance sur un assembly déjà installé dans le GAC.  
   
 ```  
@@ -159,7 +159,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant spécifie une dépendance sur une version spécifique du common language runtime.  
   
 ```  
@@ -170,7 +170,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 </dependency>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant spécifie une dépendance de système d’exploitation.  
   
 ```  

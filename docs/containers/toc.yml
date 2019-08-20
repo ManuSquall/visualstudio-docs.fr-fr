@@ -7,8 +7,10 @@
     - name: Démarrage rapide
       expanded: true
       items:
-        - name: Outils de conteneur dans Visual Studio
+        - name: Application ASP.NET Core dans un conteneur
           href: container-tools.md
+        - name: Application monopage React.js dans un conteneur
+          href: container-tools-react.md
     - name: Didacticiels
       expanded: true
       items:
@@ -24,9 +26,19 @@
           href: hosting-web-apps-in-docker.md
         - name: Déployer sur Azure App Service
           href: deploy-app-service.md
+        - name: Déployer sur Docker Hub
+          href: deploy-docker-hub.md
         - name: Afficher et diagnostiquer des conteneurs
           href: view-and-diagnose-containers.md
         - name: Configurer les outils de conteneur
           href: container-tools-configure.md
+    - name: Concepts
+      items:
+        - name: Générer des applications en conteneur
+          href: container-build.md
     - name: Résolution des problèmes
       href: troubleshooting-docker-errors.md
+    - name: Référence
+      items:
+        - name: Propriétés MSBuild pour les projets de conteneur
+          href: container-msbuild-properties.md

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201304"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Procédure : Synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
   
 3. Cliquez sur **analyse du Code**.  
   
-4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
+4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .  
   
 5. Dans le **Open** boîte de dialogue, spécifiez la règle de stratégie d’archivage définie le fichier.  
   
@@ -65,6 +65,6 @@ Vous synchronisez les paramètres d’analyse de code pour les projets de code �
   
 5. Ouvrir la boîte de dialogue Propriétés du projet de code et afficher le **analyse du Code** page.  
   
-6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
+6. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .  
   
 7. Dans le **Open** boîte de dialogue, spécifiez l’ensemble de règles fichier.

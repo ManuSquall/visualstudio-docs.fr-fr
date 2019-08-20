@@ -1,8 +1,8 @@
 ---
-title: 'Tutoriel : Application Hello World avec WPF (Windows Presentation Foundation) en Visual Basic'
+title: Application Hello World avec WPF dans Visual Basic
 description: Créez une application de bureau Windows .NET simple en Visual Basic avec Visual Studio à l’aide du framework d’interface utilisateur WPF (Windows Presentation Foundation).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965767"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043563"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
 
@@ -67,7 +67,7 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
 
-2. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual Basic** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
+2. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual Basic** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)** . Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
 
      ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -81,7 +81,7 @@ Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différ
 
 1. Ouvrez Visual Studio 2019.
 
-2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
+2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)** , puis choisissez **Suivant**.
 
    ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
@@ -131,7 +131,7 @@ Votre fenêtre doit ressembler à l'illustration suivante :
 Le balisage XAML devrait ressembler à l’exemple suivant :
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Personnaliser le texte du bloc de texte
@@ -298,9 +298,20 @@ Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer un
 
 3. Générez la solution en choisissant **Générer** > **Générer la solution**.
 
-Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous avez généré se trouve sous le répertoire de votre solution et de votre projet (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous avez généré se trouve sous le répertoire de votre solution et de votre projet ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Nouveautés dans Visual Studio 2017](../../ide/whats-new-visual-studio.md)
-- [Conseils de productivité](../../ide/productivity-tips-for-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Nouveautés dans Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
+- [Conseils de productivité](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Nouveautés de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Conseils de productivité](../../ide/productivity-features.md)
+
+::: moniker-end

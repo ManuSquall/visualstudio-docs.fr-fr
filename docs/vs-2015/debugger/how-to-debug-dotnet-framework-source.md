@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205447"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une Source de .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procédure : Déboguer une source .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La version la plus récente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit de nouvelles fonctionnalités pour [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] le débogage. Pour déboguer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] source, vous devez avoir accès aux symboles de débogage pour le code. Vous devez également activer le pas à pas détaillé dans [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] source.  
@@ -58,7 +58,7 @@ La version la plus récente de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] four
   
      Si vous ne téléchargez pas les symboles maintenant, ils seront téléchargés automatiquement lors du prochain débogage du programme.  
   
-7. Cliquez sur **OK** pour fermer la boîte de dialogue **Options**.  
+7. Cliquez sur **OK** pour fermer la boîte de dialogue **Options** .  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Pour charger des symboles Framework à l'aide de la fenêtre Modules  
   

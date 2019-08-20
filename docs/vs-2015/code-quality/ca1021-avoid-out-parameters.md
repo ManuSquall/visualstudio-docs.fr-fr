@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b52d5a97fc3c2e3a6bf5b4bb938bad9da50d3a7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144828"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021 : Éviter les paramètres out
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58951372"
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -57,7 +57,7 @@ ms.locfileid: "58951372"
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.NoRefOrOut/cs/FxCop.Design.NoRefOrOut.cs#1)]
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
  L’application suivante illustre l’expérience de l’utilisateur. L’appel à la bibliothèque repensée (`UseTheSimplifiedClass` méthode) est plus simple, et les informations retournées par la méthode sont facilement gérées. La sortie des deux méthodes est identique.
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestNoRefOrOut/cs/FxCop.Design.TestNoRefOrOut.cs#1)]
@@ -74,13 +74,13 @@ ms.locfileid: "58951372"
 
  Cet exemple produit la sortie suivante.
 
- **Changing pointeur - passé par valeur :**
+ **Changing pointeur - passé par valeur :** 
 **12345**
 **12345**
 **Changing pointeur - passé par référence :** 
 **12345**
 **ABCDE 12345**
-**passage par valeur de retour :**
+**passage par valeur de retour :** 
 **ABCDE 12345**
 ## <a name="try-pattern-methods"></a>Essayez les méthodes de modèle
 

@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537483"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043412"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : afficher et modifier le code avec l’Aperçu de définition (Alt + F12)
 
 Utilisez la commande **Aperçu de définition** pour afficher et modifier du code sans sortir du code que vous écrivez. Les options **Aperçu de définition** et **Atteindre la définition** affichent les mêmes informations, mais **Aperçu de définition** affiche le code dans une fenêtre contextuelle, alors que l’option **Atteindre la définition** affiche le code dans une fenêtre de code distincte. L’option **Atteindre la définition** provoque le basculement de votre contexte (c’est-à-dire, la fenêtre de code active, la ligne active et la position du curseur) vers la fenêtre du code de définition. Avec l’option **Aperçu de la définition**, vous pouvez afficher et modifier la définition et vous déplacer dans le fichier de définition tout en conservant votre position dans le fichier de code d’origine.
 
-Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic et C++. En Visual Basic, l’option **Aperçu de définition** affiche un lien vers l’**Explorateur d’objets** pour les symboles qui ne disposent pas de métadonnées de définition (par exemple, les types .NET Framework intégrés).
+Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic et C++. En Visual Basic, l’option **Aperçu de la définition** montre un lien vers l’**Explorateur d’objets** pour les symboles qui n’ont pas de métadonnées de définition (par exemple les types .NET intégrés).
 
-## <a name="working-with-peek-definition"></a>Utilisation de l'option Aperçu de définition
+## <a name="use-peek-definition"></a>Utiliser l’aperçu de la définition
 
-### <a name="to-open-a-peek-definition-window"></a>Pour ouvrir une fenêtre Aperçu de définition
+### <a name="open-a-peek-definition-window"></a>Ouvrir une fenêtre Aperçu de la définition
 
 1. Vous pouvez afficher l’aperçu d’une définition en choisissant **Aperçu de la définition** dans le menu contextuel (clic droit) d’un type ou membre que vous souhaitez explorer. Si l’option est activée, vous pouvez également afficher l’aperçu d’une définition à l’aide de la souris en appuyant sur **Ctrl** (ou sur une autre touche de modification) et en cliquant sur le nom du membre. Si vous préférez utiliser le clavier, appuyez sur **Alt**+**F12**.
 
@@ -75,7 +75,7 @@ Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu 
 |Ouvrir la fenêtre de définition|**Alt**+**F12**|
 |Fermer la fenêtre de définition|**Échap**|
 |Promouvoir la fenêtre de définition en onglet de document standard|**Maj**+**Alt**+**Origine**|
-|Naviguer entre les fenêtres de définition|**Ctrl**+**Alt**+**-** et **Ctrl**+**Alt**+**=**|
+|Naviguer entre les fenêtres de définition|**Ctrl**+**Alt**+ **-** et **Ctrl**+**Alt**+ **=**|
 |Naviguer entre plusieurs résultats|**F8** et **Maj**+**F8**|
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|**Maj**+**Échap**|
 
@@ -86,4 +86,4 @@ Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu 
 
 - [Naviguer dans le code](../ide/navigating-code.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
-- [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)
+- [Fonctionnalités de productivité de Visual Studio](../ide/productivity-features.md)

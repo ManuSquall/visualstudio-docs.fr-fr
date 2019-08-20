@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962811"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461690"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 
@@ -70,7 +70,7 @@ Visual Studio organise le code des applications dans des *projets*, et vos proje
 
    ![Utiliser la boîte de dialogue Nouveau projet pour créer votre projet d’application](../ide/media/get-started-cpp-new-project-dialog.png)
 
-   Votre boîte de dialogue peut présenter des options différentes, selon les charges de travail et composants Visual Studio que vous avez installés. Si vous ne voyez pas les modèles de projet Visual C++, vous devez réexécuter le programme Visual Studio Installer et installer la charge de travail **Développement Desktop en C++**. Vous pouvez le faire directement à partir de la boîte de dialogue **Nouveau projet**. Pour lancer le programme Visual Studio Installer, choisissez le lien **Ouvrir Visual Studio Installer** dans la boîte de dialogue.
+   Votre boîte de dialogue peut présenter des options différentes, selon les charges de travail et composants Visual Studio que vous avez installés. Si vous ne voyez pas les modèles de projet Visual C++, vous devez réexécuter le programme Visual Studio Installer et installer la charge de travail **Développement Desktop en C++** . Vous pouvez le faire directement à partir de la boîte de dialogue **Nouveau projet**. Pour lancer le programme Visual Studio Installer, choisissez le lien **Ouvrir Visual Studio Installer** dans la boîte de dialogue.
 
 1. Choisissez le bouton **OK** pour créer le projet et la solution de votre application.
 
@@ -98,7 +98,7 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
 
    ![Erreur dans la fenêtre Liste d’erreurs](../ide/media/get-started-cpp-error-list.png)
 
-   Dans votre code, il manque une déclaration pour [std::cout](/cpp/standard-library/iostream), qui se trouve dans le fichier d’en-tête *\<iostream>*.
+   Dans votre code, il manque une déclaration pour [std::cout](/cpp/standard-library/iostream), qui se trouve dans le fichier d’en-tête *\<iostream>* .
 
 1. Pour ajouter l’en-tête *iostream*, entrez ce code après `#include "stdafx.h"` :
 
@@ -107,7 +107,7 @@ Ensuite, vous devez ajouter le code nécessaire pour afficher le mot « Hello »
    using namespace std;
    ```
 
-   Vous avez sans doute remarqué qu’une zone est apparue quand vous avez commencé à entrer le code. Cette zone contient des suggestions de saisie semi-automatique pour les caractères que vous venez d’entrer. Il s’agit d’une option de la fonctionnalité IntelliSense C++, qui fournit des invites de codage, notamment des membres de classe ou d’interface et des informations sur les paramètres. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md) et [Extraits de code](../ide/code-snippets.md).
+   Vous avez sans doute remarqué qu’une zone est apparue quand vous avez commencé à entrer le code. Cette zone contient des suggestions de complétion automatique pour les caractères que vous venez d’entrer. Il s’agit d’une option de la fonctionnalité IntelliSense C++, qui fournit des invites de codage, notamment des membres de classe ou d’interface et des informations sur les paramètres. Vous pouvez aussi utiliser des extraits de code, qui sont des blocs de code prédéfinis. Pour plus d’informations, consultez [Utilisation d’IntelliSense](../ide/using-intellisense.md) et [Extraits de code](../ide/code-snippets.md).
 
    ![Le code résolu dans l’éditeur](../ide/media/get-started-cpp-cout-fix.png)
 
@@ -177,4 +177,4 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide.
 
 - [Utilisation de l’IDE de Visual Studio pour le développement C++ pour poste de travail](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Procédure pas à pas : Créer une application simple avec C# ou Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Conseils de productivité pour Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Fonctionnalités de productivité de Visual Studio](../ide/productivity-features.md)

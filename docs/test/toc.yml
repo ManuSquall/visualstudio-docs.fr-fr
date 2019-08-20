@@ -54,9 +54,9 @@
       items:
         - name: "Procédure pas à pas\_: Créer et exécuter des tests unitaires pour le code managé"
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: "Démarrage rapide\_: Développement piloté par les tests avec l’Explorateur de tests"
+        - name: "Procédure pas à pas\_: Développement piloté par les tests"
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Utiliser des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
+        - name: Utiliser l’API MSTest dans les tests unitaires
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Utiliser les classes assert
           href: using-the-assert-classes.md
@@ -72,13 +72,13 @@
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
         - name: Tests unitaires pilotés par des données
           items:
-            - name: Créer un test unitaire piloté par des données
+            - name: Créer un test unitaire piloté par les données
               href: how-to-create-a-data-driven-unit-test.md
-            - name: "Procédure pas à pas\_: Utiliser un fichier de configuration pour définir une source de données"
+            - name: Utiliser un fichier de configuration pour définir une source de données
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Tests unitaires pour les méthodes génériques
           href: unit-tests-for-generic-methods.md
-        - name: Configurer des tests unitaires pour cibler une version antérieure du .NET Framework
+        - name: Configurer des tests unitaires pour cibler une version antérieure de .NET
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Tests unitaires pour code C/C++
       items:
@@ -227,7 +227,7 @@
         - name: Vue d'ensemble
           displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
-        - name: Spécifications
+        - name: Configuration requise
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Gérer les contrôleurs de test et les agents de test
           href: manage-test-controllers-and-test-agents.md

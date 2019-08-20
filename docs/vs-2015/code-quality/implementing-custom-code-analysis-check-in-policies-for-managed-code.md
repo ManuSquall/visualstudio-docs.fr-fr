@@ -82,7 +82,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
   
 3. Dans le **stratégie d’archivage** , double-cliquez sur **analyse du Code**et vous assurer que le **appliquer l’analyse du Code pour le Code managé** case à cocher est activée.  
   
-4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<sélectionner l’ensemble de règles de contrôle de code Source >**.  
+4. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<sélectionner l’ensemble de règles de contrôle de code Source >** .  
   
 5. Tapez le chemin d’accès du fichier de jeu de règle de stratégie d’archivage dans le contrôle de version.  
   
@@ -116,6 +116,6 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
   
 6. Pour ignorer le code dans les composants d’autres sociétés, sélectionnez le **supprimer les résultats du code généré** case à cocher.  
   
-7. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >**.  
+7. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .  
   
 8. Spécifiez la version locale du fichier de jeu de règle de stratégie d’archivage.

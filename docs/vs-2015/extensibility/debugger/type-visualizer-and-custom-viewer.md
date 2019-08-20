@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a85be2978abe35e91096b55fba5ec5281be25fbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185315"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualiseur de type et visionneuse personnalisée
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

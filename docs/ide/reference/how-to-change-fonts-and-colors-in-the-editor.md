@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531545"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605401"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procédure : Changer les polices et les couleurs de l’éditeur dans Visual Studio
 
@@ -50,6 +50,5 @@ Vous pouvez changer le type de police par défaut, ajuster la taille de police e
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Éditeur de texte, boîte de dialogue Options](../../ide/reference/text-editor-options-dialog-box.md)
 - [Fonctionnalités de l’éditeur de code](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Guide pratique pour changer les polices et les couleurs utilisées dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

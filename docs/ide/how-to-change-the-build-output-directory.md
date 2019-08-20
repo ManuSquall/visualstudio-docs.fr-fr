@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805047"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416811"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
 
@@ -52,5 +52,5 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
 ## <a name="see-also"></a>Voir aussi
 
 - [Générer, page du Concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md)
-- [Général, page de propriétés (projet)](/cpp/ide/general-property-page-project)
+- [Général, page de propriétés (projet)](/cpp/build/reference/general-property-page-project)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

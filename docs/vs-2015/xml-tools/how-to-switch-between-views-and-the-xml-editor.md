@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190342"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procédure : Basculer entre les vues et l’éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

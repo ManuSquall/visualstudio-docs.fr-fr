@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426603"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825989"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Suppression à la source est la possibilité de supprimer ou d’ignorer des vio
  Vous ne devez pas utiliser les suppressions dans la source sur les versions release pour empêcher les métadonnées de suppression à la source de livraison par inadvertance. En raison du coût de traitement de la suppression à la source, les performances de votre application peuvent également être réduites en incluant les métadonnées de suppression à la source.  
   
 > [!NOTE]
-> Il est inutile pour transmettre code ces attributs vous-même. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
+> Il est inutile pour transmettre code ces attributs vous-même. Pour plus d’informations, consultez [Guide pratique pour Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
   
 ## <a name="suppressmessage-attribute"></a>Attribut SuppressMessage  
  Lorsque vous cliquez sur un avertissement d’analyse du Code dans le **liste d’erreurs** puis cliquez sur **supprimer les messages**, un **SuppressMessage** attribut est ajouté dans votre code ou à la fichier de suppressions globales du projet.  
@@ -64,26 +64,26 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :  
   
-    - Module  
-  
-    - Espace de noms  
-  
-    - Ressource  
-  
-    - Type  
-  
-    - Membre  
+  - Module  
+
+  - Espace de noms  
+
+  - Ressource  
+
+  - Type  
+
+  - Membre  
   
 - **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.  
   
 ## <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage  
  Avertissements d’analyse du code sont supprimées au niveau auquel une instance de la **SuppressMessage** attribut est appliqué. Cela vise à coupler étroitement les informations de suppression pour le code où la violation se produit.  
   
- La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle qui contient une représentation explicite facultative du nom de règle. Par exemple :  
+ La forme générale de la suppression inclut la catégorie de règle et un identificateur de règle qui contient une représentation explicite facultative du nom de règle. Par exemple,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Par exemple :  
+ S’il existe des raisons de performances strict pour réduire les métadonnées de suppression à la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent un identificateur de règle unique suffisant. Par exemple,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   

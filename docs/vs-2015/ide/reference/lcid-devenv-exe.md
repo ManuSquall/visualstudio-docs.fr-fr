@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0b1d83cca1da917a08b8765dae66fb240ca1dc75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199216"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ devenv {/LCID|/l} LocaleID
   
  Le tableau suivant répertorie les LCID des langues prises en charge par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
-|Langue|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|  
+|Langue|LCID|  
 |--------------|----------|  
 |Chinois (simplifié)|2052|  
 |Chinois (traditionnel)|1028|  
@@ -58,7 +58,7 @@ devenv {/LCID|/l} LocaleID
 |Coréen|1042|  
 |Espagnol|3082|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple charge l’IDE avec des chaînes de ressources en anglais.  
   
 ```  

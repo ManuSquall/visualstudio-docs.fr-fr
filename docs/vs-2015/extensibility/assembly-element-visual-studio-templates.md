@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184704"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Spécifie les informations relatives à un assembly, le modèle utilise pour ajo
  \<TemplateContent>  
  \<Références >  
  \<Référence >  
- \<Assembly>  
+ \<Assembly >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ Spécifie les informations relatives à un assembly, le modèle utilise pour ajo
   
  Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Ce nom d’assembly doit être spécifié dans une des manières suivantes :  
   
-- En tant que nom complet de l’assembly. Exemple :  
+- En tant que nom complet de l’assembly. Par exemple :  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ Spécifie les informations relatives à un assembly, le modèle utilise pour ajo
     </Assembly>  
     ```  
   
-- En tant que référence de texte simple. Exemple :  
+- En tant que référence de texte simple. Par exemple :  
   
     ```  
     <Assembly> System </Assembly>  

@@ -13,21 +13,21 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961987"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870658"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procédure pas à pas : Créer un hôte de modèle de texte personnalisé
 
-Un *hôte de modèle de texte* fournit un environnement qui permet la *moteur de transformation de modèle de texte* à exécuter. L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou *processeur de directive* qui a besoin d’un fichier ou un assembly peut demander une ressource à partir de l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
+Un *hôte de modèle de texte* fournit un environnement qui permet à l’exécution du *moteur de transformation de modèle de texte* . L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou le *processeur de directive* qui a besoin d’un fichier ou d’un assembly peut demander une ressource à l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
-Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser le *transformation du modèle de texte* fonctionnalité à partir en dehors de Visual Studio ou si vous souhaitez intégrer ces fonctionnalités dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Pour obtenir la documentation de méthodes individuelles, consultez <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.
+Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser la fonctionnalité de *transformation de modèle de texte* en dehors de Visual Studio ou si vous souhaitez intégrer cette fonctionnalité dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Pour obtenir la documentation des différentes méthodes, consultez [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
-> Si vous écrivez une extension Visual Studio ou un package, envisagez d’utiliser le service de création de modèles de texte au lieu de créer votre propre hôte. Pour plus d’informations, consultez [appel d’une Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Si vous écrivez une extension ou un package Visual Studio, envisagez d’utiliser le service de création de modèles de texte au lieu de créer votre propre hôte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -53,7 +53,7 @@ Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans 
 
    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 et versions ultérieures**
+   - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 et versions ultérieures**
 
 3. Remplacez le code du fichier Program.cs ou Module1.vb par le code suivant :
 
@@ -714,7 +714,7 @@ Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans 
    End Namespace
    ```
 
-4. Pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomHost**. Dans le **objet de démarrage** , cliquez sur **CustomHost.Program**.
+4. Pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] uniquement, ouvrez le menu **projet** , puis cliquez sur **Propriétés de CustomHost**. Dans la liste **objet de démarrage** , cliquez sur **CustomHost. Program**.
 
 5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
 
@@ -726,7 +726,7 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Pour créer un modèle de texte pour tester l'hôte personnalisé
 
-1. Créez un fichier texte et nommez-le `TestTemplate.tt`.
+1. Créez un fichier texte et nommez- `TestTemplate.tt`le.
 
      Vous pouvez utiliser n'importe quel éditeur de texte (tel que le Bloc-notes) pour créer le fichier.
 
@@ -786,7 +786,7 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Au lieu de taper l’adresse, vous pouvez parcourir le fichier CustomHost.exe dans **Windows Explorer** puis faites glisser le fichier dans la fenêtre d’invite de commandes.
+    > Au lieu de taper l’adresse, vous pouvez accéder au fichier CustomHost. exe dans l' **Explorateur Windows** , puis faire glisser le fichier dans la fenêtre d’invite de commandes.
 
 3. Tapez un espace.
 
@@ -797,11 +797,11 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > Au lieu de taper l’adresse, vous pouvez parcourir le fichier TestTemplate.tt dans **Windows Explorer** puis faites glisser le fichier dans la fenêtre d’invite de commandes.
+    > Au lieu de taper l’adresse, vous pouvez accéder au fichier TestTemplate.tt dans l' **Explorateur Windows** , puis faire glisser le fichier dans la fenêtre d’invite de commandes.
 
      L'application hôte personnalisée s'exécute et accomplit le processus de transformation du modèle de texte.
 
-5. Dans **Windows Explorer**, accédez au dossier qui contient le fichier TestTemplate.tt.
+5. Dans l' **Explorateur Windows**, accédez au dossier qui contient le fichier TestTemplate.TT.
 
      Ce dossier inclut également le fichier TestTemplate1.txt.
 
@@ -819,8 +819,8 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [Procédure pas à pas : Connexion d’un hôte à un processeur](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)de directive généré.
 
 ## <a name="see-also"></a>Voir aussi
 
-- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+- [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

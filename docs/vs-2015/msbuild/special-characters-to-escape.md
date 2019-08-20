@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161357"
 ---
 # <a name="special-characters-to-escape"></a>Caractères d'échappement spéciaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ Les caractères spéciaux doivent être échappés uniquement s'ils ont une sign
 |*|Astérisque. Caractère générique pour la description d'une spécification de fichier dans la section Include/Exclude d'un élément.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [Guide pratique : Caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

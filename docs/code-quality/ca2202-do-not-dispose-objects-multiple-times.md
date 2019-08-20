@@ -1,6 +1,6 @@
 ---
 title: "CA2202 : Ne pas supprimer d'objets plusieurs fois"
-ms.date: 11/04/2016
+ms.date: 07/16/2019
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796830"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300602"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer d'objets plusieurs fois
 
@@ -27,34 +27,34 @@ ms.locfileid: "62796830"
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Une implémentation de méthode contient des chemins de code qui pouvait entraîner plusieurs appels à <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ou un Dispose équivalent, tel qu’une méthode Close() sur certains types sur le même objet.
+Une implémentation de méthode contient des chemins d’accès de code qui <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> peuvent provoquer des appels multiples vers ou un équivalent dispose, comme une méthode Close () sur certains types, sur le même objet.
 
 ## <a name="rule-description"></a>Description de la règle
 
-A implémenté correctement <xref:System.IDisposable.Dispose%2A> méthode peut être appelée plusieurs fois sans lever d’exception. Toutefois, cela n’est pas garanti et pour éviter de générer un <xref:System.ObjectDisposedException?displayProperty=fullName> vous ne devez pas appeler <xref:System.IDisposable.Dispose%2A> plusieurs fois sur un objet.
+Une méthode correctement <xref:System.IDisposable.Dispose%2A> implémentée peut être appelée plusieurs fois sans lever d’exception. Toutefois, cela n’est pas garanti et, pour éviter <xref:System.ObjectDisposedException?displayProperty=fullName> de générer un, <xref:System.IDisposable.Dispose%2A> vous ne devez pas appeler plus d’une fois sur un objet.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2000 : Supprimez les objets avant de portée](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000 Supprimer les objets avant la perte de portée](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, modifier l’implémentation donc autrement indépendamment du chemin d’accès du code, <xref:System.IDisposable.Dispose%2A> est appelée qu’une seule fois pour l’objet.
+Pour corriger une violation de cette règle, modifiez l’implémentation afin que, quel que soit le chemin <xref:System.IDisposable.Dispose%2A> d’accès du code, soit appelée une seule fois pour l’objet.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez aucun avertissement de cette règle. Même si <xref:System.IDisposable.Dispose%2A> pour l’objet est connu pour être appelé en toute sécurité plusieurs fois, l’implémentation peut changer à l’avenir.
+Ne supprimez aucun avertissement de cette règle. Même si <xref:System.IDisposable.Dispose%2A> pour l’objet est connu pour être appelé plusieurs fois en toute sécurité, l’implémentation peut changer à l’avenir.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
-Imbriqué `using` instructions (`Using` en Visual Basic) peuvent provoquer des violations de l’avertissement CA2202. Si la ressource IDisposable d’imbriquée interne `using` instruction contient la ressource d’externe `using` instruction, le `Dispose` méthode de la ressource imbriquée libère la ressource de relation contenant-contenue. Lorsque cette situation se produit, le `Dispose` méthode externe `using` instruction essaie de supprimer sa ressource pour une deuxième fois.
+Les instructions imbriquées`Using` (dans Visual Basic) peuvent provoquer des violations de l’avertissement CA2202. `using` Si la ressource IDisposable de l’instruction interne `using` imbriquée contient la ressource de l’instruction externe `using` , la `Dispose` méthode de la ressource imbriquée libère la ressource contenue. Lorsque cette situation se produit, `Dispose` la méthode de l' `using` instruction externe tente de supprimer sa ressource pour la deuxième fois.
 
-Dans l’exemple suivant, un <xref:System.IO.Stream> objet qui est créé en externe à l’aide d’instruction est libéré à la fin de l’instruction using interne dans la méthode Dispose de la <xref:System.IO.StreamWriter> objet qui contient le `stream` objet. À la fin de la liste externe `using` instruction, le `stream` objet est libéré une deuxième fois. La deuxième version est une violation de CA2202.
+Dans l’exemple suivant, un <xref:System.IO.Stream> objet créé dans une instruction using externe est libéré à la fin de l’instruction using interne de la méthode dispose de l' <xref:System.IO.StreamWriter> objet qui contient l' `stream` objet. À la fin de l’instruction `using` externe, l' `stream` objet est libéré une deuxième fois. La deuxième version est une violation de CA2202.
 
 ```csharp
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -68,7 +68,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 
 ## <a name="example"></a>Exemple
 
-Pour résoudre ce problème, utilisez un `try` / `finally` bloc au lieu d’externe `using` instruction. Dans le `finally` bloquer, assurez-vous que le `stream` ressource n’est pas null.
+Pour résoudre ce problème, utilisez un `try` / `finally` bloc à la place de `using` l’instruction externe. Dans le `finally` bloc, assurez-vous `stream` que la ressource n’a pas la valeur null.
 
 ```csharp
 Stream stream = null;
@@ -83,10 +83,12 @@ try
 }
 finally
 {
-    if(stream != null)
-        stream.Dispose();
+    stream?.Dispose();
 }
 ```
+
+> [!TIP]
+> La `?.` syntaxe ci-dessus est l' [opérateur conditionnel null](/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-).
 
 ## <a name="see-also"></a>Voir aussi
 

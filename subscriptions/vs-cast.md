@@ -3,25 +3,22 @@ title: Avantage CAST Highlight dans les abonnements Visual Studio | Microsoft Do
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805343"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681208"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
-
 Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. CAST Highlight permet aux abonnés Visual Studio Enterprise d’analyser rapidement le code source de leur application pour identifier son degré de préparation au cloud avant de la migrer vers Azure et de superviser la progression de l’application pendant et après la migration.
 
 Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d’un mois à la version complète de CAST Highlight pour un maximum de cinq applications par abonné.
 
 ## <a name="activation-steps"></a>Étapes d’activation
-
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage CAST Highlight dans la catégorie « Outils », puis cliquez sur **Obtenir un code**.
@@ -41,9 +38,6 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
 
 0. Après l’envoi de vos informations, une page confirmant la réception de votre demande s’affiche.
 
-    > [!div class="mx-imgBorder"]
-    > ![Page de remerciement de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
-
 0. L’équipe de CAST va évaluer votre demande et vous contactera pour finaliser la création de votre compte.
 
 0. Vous recevrez également l’e-mail suivant de CAST confirmant la réception de votre demande.
@@ -52,7 +46,7 @@ Les abonnés Visual Studio Enterprise bénéficient d’un abonnement gratuit d�
    >
    > *Nous examinons actuellement votre demande d’accès à CAST Highlight. Nous vous contacterons dans un délai de 48 heures.*
    >
-   > *Cordialement,*
+   > *Cordialement,* 
    > *Greg*
 
 Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la création de votre compte et vous demandant de cliquer sur le lien d’activation pour terminer le processus d’activation.
@@ -72,21 +66,19 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
    > - Tutoriel vidéo : [Configurer votre portefeuille](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Tutoriel vidéo : [Intégrer vos applications](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Cordialement,*
+   > *Cordialement,* 
    > *Greg*
 
    > [!NOTE]
    > Cliquez sur le lien d’activation dans l’e-mail que vous recevez.  Sinon, vous ne pourrez pas accéder à votre abonnement CAST Highlight. N’oubliez pas de vérifier vos dossiers de courrier indésirable si cet e-mail ne figure pas dans votre boîte de réception.
 
 ## <a name="eligibility"></a>Éligibilité
-
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | Évaluer 5 applications pendant 30 jours|  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                             |  N/A          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
-| Visual Studio Dev Essentials | N/A  | Non disponible | N/A |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
@@ -99,14 +91,13 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide concernant l’utilisation de CAST Highlight ?  Consultez les ressources suivantes :
-    - [Soumettre une demande de support](https://casthighlight.com/support/)
-    - [Guide de démarrage (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Soumettre une demande de support](https://casthighlight.com/support/)
+  - [Guide de démarrage (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 Si vous n’avez pas encore activé l’avantage Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur la vignette Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger vos crédits Azure.
 
 Et n’oubliez pas de consulter la démonstration, le guide de l’utilisateur et les tutoriels vidéo mentionnés dans l’e-mail de Greg.

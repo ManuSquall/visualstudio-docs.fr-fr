@@ -2,7 +2,7 @@
 title: Référence générale (développement Office dans Visual Studio)
 titleSuffix: ''
 ms.custom: seodec18
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,49 +14,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427960"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551504"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Référence générale (développement Office dans Visual Studio)
   Cette section contient des détails techniques sur les projets Microsoft Office dans Visual Studio.
 
-> [!NOTE]
-> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Dans cette section
-- [Assemblys PIA Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 
- Répertorie les assemblys PIA qui sont disponibles à installer avec Office et fournit une brève description de chacun d’eux.
+ Répertorie les assemblys PIA qui peuvent être installés avec Office et fournit une brève description de chacun d’eux.
 
 - [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)
 
- Décrit comment les manifestes d’application sont utilisées dans les solutions Office.
+ Décrit comment les manifestes d’application sont utilisés dans les solutions Office.
 
 - [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)
 
- Décrit comment les manifestes de déploiement sont utilisés les solutions Office.
+ Décrit comment les manifestes de déploiement sont utilisés dans les solutions Office.
 
-- [Référence de l’interface utilisateur &#40;développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Référence &#40;de l’interface utilisateur développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
- Répertorie les rubriques qui expliquent les options qui apparaissent sur les différentes boîtes de dialogue, de windows et d’autres interfaces utilisateur.
+ Répertorie des rubriques qui expliquent les options qui s’affichent dans différentes boîtes de dialogue, fenêtres et autres interfaces utilisateur.
 
-- [Messages d’erreur &#40;développement Office dans Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Messages &#40;d’erreur pour le développement Office dans Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Répertorie les rubriques qui expliquent les messages d’erreur pour les projets Office.
 
 ## <a name="related-sections"></a>Rubriques connexes
-- [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
- Fournit des liens vers des informations sur le programme d’installation, les modèles de projet, les assemblys PIA Office et quelles sont les nouveautés dans le développement Office.
+ Fournit des liens vers des informations relatives à l’installation, aux modèles de projet, aux assemblys PIA (Primary Interop Assembly) d’Office et aux nouveautés du développement Office.
 
-- [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md)
 
- Décrit les exemples de code et les procédures pas à pas pour la création de projets Office dans Visual Studio, qui peuvent vous aider à apprendre et à tester la syntaxe de, structure et les techniques utilisées pour générer des solutions Office.
+ Décrit les exemples de code et les procédures pas à pas pour la création de projets Office dans Visual Studio, qui peuvent vous aider à apprendre et à expérimenter la syntaxe, la structure et les techniques utilisées pour créer des solutions Office.
 
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
 
- Fournit des liens vers des informations sur comment commencer à créer des projets Office à l’aide de Visual Studio.
+ Fournit des liens vers des informations sur la prise en main de la création de projets Office à l’aide de Visual Studio.

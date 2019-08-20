@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783328"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918562"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : Créer un document XML basé sur un schéma XSD
 
-Le **générer un exemple de code XML** fonctionnalité génère un exemple de fichier XML en fonction de votre fichier de schéma XSD (XML).
+La fonctionnalité **générer un exemple XML** génère un exemple de fichier XML basé sur votre fichier de schéma XML (XSD).
 
- Vous pouvez utiliser cette option dans les scénarios suivants :
+Vous pouvez utiliser cette option dans les scénarios suivants :
 
 - Comprendre l'utilisation des diverses constructions dans votre schéma.
 
 - confirmer la finalité du schéma.
 
-Le **générer un exemple de code XML** fonctionnalité est disponible uniquement sur les éléments globaux et nécessite un jeu de schémas XML valid.
+La fonctionnalité **générer un exemple XML** est disponible uniquement sur les éléments globaux et requiert un jeu de schémas XML valide.
 
 En règle générale, cette fonctionnalité permet de générer des documents XML valides. Toutefois, si le schéma contient un ou plusieurs des éléments suivants, l'exemple risque de ne pas être valide :
 
@@ -41,11 +41,11 @@ Notez également que le contenu `xs:base64Binary` n'est généré que si des én
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Pour générer un document d'instance XML basé sur le fichier XSD
 
-1. Suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Suivez les étapes de [la procédure: Créez et modifiez un fichier](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)de schéma XSD.
 
-2. Dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), avec le bouton droit le `PurchaseOrder` élément global. Sélectionnez **générer l’exemple de code XML**.
+2. Dans l' [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez avec le `PurchaseOrder` bouton droit sur l’élément global. Sélectionnez **générer un exemple de code XML**.
 
-     Lorsque vous sélectionnez cette option, PurchaseOrder. *xml* fichier avec l’exemple de contenu XML suivant est généré et ouvert dans l’éditeur XML :
+     Lorsque vous sélectionnez cette option, PurchaseOrder. le fichier *XML* avec l’exemple de contenu XML suivant sera généré et ouvert dans l’éditeur XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

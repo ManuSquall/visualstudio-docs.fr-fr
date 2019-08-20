@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163649"
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ void GenerateMessage(int n)
   
 ```  
   
- **TextFile2.t4:**  
+ **TextFile2.t4 :**  
   
 ```  
         Output Message 3 (from included file 2).  

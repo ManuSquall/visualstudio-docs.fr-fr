@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436859"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926375"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 
@@ -48,7 +48,7 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Fonctionnement de l’attribut ToolsVersion
 
- Quand vous créez un projet dans Visual Studio ou que vous mettez à niveau un projet existant, un attribut nommé `ToolsVersion` est automatiquement inclus dans le fichier projet, et sa valeur correspond à la version de MSBuild incluse dans l’édition de Visual Studio. Pour plus d’informations, voir [Cibler une version spécifique de .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Quand vous créez un projet dans Visual Studio ou que vous mettez à niveau un projet existant, un attribut nommé `ToolsVersion` est automatiquement inclus dans le fichier projet, et sa valeur correspond à la version de MSBuild incluse dans l’édition de Visual Studio. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../ide/visual-studio-multi-targeting-overview.md).
 
  Quand une valeur pour `ToolsVersion` est définie dans un fichier projet, MSBuild utilise cette valeur pour déterminer les valeurs des propriétés de l'ensemble d'outils qui sont disponibles pour le projet. Une des propriétés de l'ensemble d'outils est `$(MSBuildToolsPath)`, qui spécifie le chemin d'accès aux outils .NET Framework. Cette propriété de l'ensemble d'outils (ou `$(MSBuildBinPath)`) est la seule propriété obligatoire.
 
@@ -106,7 +106,7 @@ Vous pouvez aussi déterminer l'ensemble d'outils par programmation en appelant 
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retourne le chemin d'accès à un fichier qui se trouve généralement dans le dossier des outils managés.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retourne le chemin d'accès des outils de génération.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) retourne le chemin d'accès des outils de génération.
 
 ### <a name="sub-toolsets"></a>Sous-ensembles d'outils
 

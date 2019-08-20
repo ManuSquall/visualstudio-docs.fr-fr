@@ -12,11 +12,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a55b7aa486edfd3775b12dca9d143c2e5f280884
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58954183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204157"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Procédure : Gérer une galerie privée à l’aide des paramètres du Registre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180325"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|guid|Obligatoire.|  
-|ID|Obligatoire.|  
-|éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
-|key1|Obligatoire. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|mod1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|key2|Optionnel. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|mod2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|Émulateur|Facultatif.|  
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Requis.|  
+|id|Requis.|  
+|éditeur|Requis. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
+|key1|Requis. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
+|mod1|facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|key2|facultatif. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
+|mod2|facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|Émulateur|facultatif.|  
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   

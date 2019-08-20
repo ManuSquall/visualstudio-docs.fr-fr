@@ -1,5 +1,5 @@
 ---
-title: Utilisation de méthodes de profilage pour collecter des données de performances à partir de la ligne de commande | Microsoft Docs
+title: Utiliser des méthodes de profilage de ligne de commande pour obtenir des données de performances
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831441"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746775"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Utiliser des méthodes de profilage pour collecter des données de performances à partir de la ligne de commande
-Votre choix d’outils et d’options de ligne de commande des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dépend de facteurs comme le type d’application que vous profilez, la méthode de profilage que vous voulez utiliser, et de ce que l’application cible est écrite en code natif ou en code [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+Votre choix d’outils et d’options de ligne de commande des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dépend de facteurs comme le type d’application que vous profilez, la méthode de profilage que vous voulez utiliser, et de ce que l’application cible est écrite en code natif ou en code .NET Framework.
 
  Cette rubrique classe les rubriques des procédures pour la ligne de commande en fonction de la méthode de profilage que vous choisissez.
 
@@ -50,9 +50,9 @@ Votre choix d’outils et d’options de ligne de commande des outils de profila
 - [Services natifs](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Utiliser des méthodes de mémoire .NET pour collecter les données d’allocation de mémoire et de durée de vie des objets
- La méthode de mémoire .NET des outils de profilage vous permet de collecter des données d’allocation de mémoire du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et des informations sur la durée de vie des objets dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ La méthode de mémoire .NET des outils de profilage vous permet de collecter des données d’allocation de mémoire du .NET Framework et des informations sur la durée de vie des objets dans le .NET Framework.
 
- Vous pouvez démarrer l’application cible à l’aide du profileur, vous pouvez attacher le profileur à une instance en cours d’exécution d’une application ou vous pouvez créer des versions instrumentées de l’application pour collecter des informations de minutage détaillées avec les données de mémoire du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Vous pouvez démarrer l’application cible à l’aide du profileur, vous pouvez attacher le profileur à une instance en cours d’exécution d’une application ou vous pouvez créer des versions instrumentées de l’application pour collecter des informations de minutage détaillées avec les données de mémoire du .NET Framework.
 
 |Tâche|Type d’application cible|
 |----------|-----------------------------|

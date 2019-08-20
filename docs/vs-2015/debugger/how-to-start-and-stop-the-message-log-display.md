@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102196"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68176546"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Procédure : Démarrer et arrêter l’affichage du journal des messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

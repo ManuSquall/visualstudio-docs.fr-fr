@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445196"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820980"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -99,7 +99,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
 
  Si vous exécutez une solution que vous avez créé à partir de la **langage Minimal** modèle, votre expérimentale de Visual Studio doit ressembler à l’exemple suivant :
 
- ![](../modeling/media/dsl_min.png)
+ ![Arborescence d’exemple de langage spécifique domaine dans Visual Studio](../modeling/media/dsl_min.png)
 
  Expérimentez avec les outils. Créez des éléments et raccordez-les.
 
@@ -616,7 +616,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
 | Dans l'Explorateur DSL, je ne parviens pas à ajouter de collection. Par exemple, quand je clique avec le bouton droit sur Outils, il n'y a pas de commande « Ajouter un outil » dans le menu.<br /><br /> Dans l'explorateur de ma solution DSL, je ne parviens pas à ajouter d'élément à une liste. | Cliquez avec le bouton droit sur l'élément au-dessus du nœud concerné. Quand vous souhaitez ajouter un élément à une liste, la commande Ajouter ne se trouve pas dans le nœud de la liste, mais dans son propriétaire. |
 | J'ai créé une classe de domaine, mais je ne parviens pas à créer d'instances dans l'explorateur de langage. | Chaque classe de domaine, à l'exception de la racine, doit être la cible d'une relation d'incorporation. |
 | Dans l'explorateur de ma solution DSL, les éléments sont affichés uniquement avec leur nom de type. | Dans la définition DSL, sélectionnez une propriété de domaine de la classe et dans les propriétés de fenêtre, définissez **Is Element Name** sur true. |
-| Ma solution DSL s'ouvre toujours dans l'éditeur XML. | Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez * Votre_langage ***concepteur (par défaut)**. |
+| Ma solution DSL s'ouvre toujours dans l'éditeur XML. | Cela peut être dû à une erreur lors de la lecture du fichier. Toutefois, même après avoir corrigé cette erreur, vous devez réinitialiser de manière explicite l'éditeur pour qu'il soit votre concepteur DSL.<br /><br /> Cliquez sur l’élément de projet, cliquez sur **ouvrir avec** et sélectionnez * Votre_langage ***concepteur (par défaut)** . |
 | La boîte à outils de ma solution DSL n'apparaît pas après que j'ai modifié les noms des assemblys. | Examiner et mettre à jour **DslPackage\GeneratedCode\Package.tt** pour plus d’informations, consultez [Comment : Modifier le Namespace d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | La boîte à outils de ma solution DSL n'apparaît pas, mais je n'ai pas modifié le nom de l'assembly.<br /><br /> Ou une boîte de message apparaît et signale l'échec du chargement d'une extension. | Réinitialisez l'instance expérimentale et regénérez votre solution.<br /><br /> 1.  Dans le Windows menu Démarrer, sous **tous les programmes**, développez [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], puis **outils**, puis cliquez sur **réinitialiser l’Instance expérimentale Microsoft Visual Studio**.<br />2.  Dans le menu **Générer**, cliquez sur **Régénérer la solution**. |
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd4a50ebf4c27213d288cbab33647931c4a399d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e94f8aa823fc7665144f1d774339d1c41f37edc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790272"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926252"
 ---
 # <a name="find-command"></a>Rechercher, commande
 Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers**  de la fenêtre **Rechercher et remplacer**.
@@ -31,35 +31,47 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat` Obligatoire. Texte à rechercher.
+`findwhat` Obligatoire. Texte à rechercher.
 
 ## <a name="switches"></a>Commutateurs
- /case ou /c (facultatif). Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
+/case ou /c\
+facultatif. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
 
- /doc ou /d (facultatif). Effectue la recherche uniquement dans le document actif. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+/doc ou /d\
+facultatif. Effectue la recherche uniquement dans le document actif. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
- /markall ou /m (facultatif). Ajoute un graphique à chaque ligne contenant une correspondance du texte recherché dans le document actif.
+/markall ou /m\
+facultatif. Ajoute un graphique à chaque ligne contenant une correspondance du texte recherché dans le document actif.
 
- /open ou /o (facultatif). Effectue la recherche dans tous les documents ouverts comme s’il s’agissait d’un document unique. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+/open ou /o\
+facultatif. Effectue la recherche dans tous les documents ouverts comme s’il s’agissait d’un document unique. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
- /options ou /t (facultatif). Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
+/options ou /t\
+facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
 
- /proc ou /p (facultatif). Effectue la recherche uniquement dans la procédure en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+/proc ou /p\
+facultatif. Effectue la recherche uniquement dans la procédure en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
- /reset ou /e (facultatif). Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
+/reset ou /e\
+facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
 
- /sel ou /s (facultatif). Effectue la recherche uniquement dans la sélection en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+/sel ou /s\
+facultatif. Effectue la recherche uniquement dans la sélection en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
- /up ou /u (facultatif). Effectue la recherche à partir de l’emplacement actuel vers le début du fichier. Par défaut, les recherches commencent à l’emplacement actuel dans le fichier et s’effectuent vers la fin du fichier.
+/up ou /u\
+facultatif. Effectue la recherche à partir de l’emplacement actuel vers le début du fichier. Par défaut, les recherches commencent à l’emplacement actuel dans le fichier et s’effectuent vers la fin du fichier.
 
- /regex ou /r (facultatif). Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
+/regex ou /r\
+facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /wild ou /l (facultatif). Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
+/wild ou /l\
+facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
 
- /word ou /w (facultatif). Recherche uniquement les mots entiers.
+/word ou /w\
+facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemple
- Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.
+## <a name="example"></a>Exemples
+Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.
 
 ```cmd
 >Edit.Find somestring /sel /case

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159718"
 ---
 # <a name="graphics-diagnostics-examples"></a>Exemples Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ces exemples montrent comment déboguer les problèmes de rendu dans les applica
  Vous pouvez utiliser Graphics Diagnostics pour déboguer votre application Direct3D sur un appareil ARM via le débogage distant. Pour plus d'informations, consultez [Guide pratique pour utiliser Graphics Diagnostics avec un appareil ARM](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md).  
   
 ## <a name="playing-back-graphics-information"></a>Lecture des informations graphiques  
- Après avoir capturé les informations graphiques d'une application en cours d'exécution, vous pouvez lire les événements capturés pour diagnostiquer les problèmes de rendu. Pour la lecture, vous pouvez soit utiliser votre ordinateur de développement, soit un ordinateur ou un appareil distant auquel vous êtes connecté. Pour plus d'informations, voir [Procédure : modifier l’ordinateur de lecture Graphics Diagnostics](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Après avoir capturé les informations graphiques d'une application en cours d'exécution, vous pouvez lire les événements capturés pour diagnostiquer les problèmes de rendu. Pour la lecture, vous pouvez soit utiliser votre ordinateur de développement, soit un ordinateur ou un appareil distant auquel vous êtes connecté. Pour plus d’informations, consultez [Guide pratique pour modifier l’ordinateur de lecture Graphics Diagnostics](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="debugging-missing-objects"></a>Débogage des objets manquants  
  L'absence d'un ou plusieurs objets est l'un des problèmes de rendu les plus courants auxquels les développeurs graphiques sont confrontés. Ce type de problème peut être difficile à diagnostiquer, car plusieurs types d'erreurs peuvent être à l'origine de la disparition apparente d'un objet. Un état de périphérique mal configuré, des problèmes de transformation de la géométrie du ou des objets ou un pipeline graphique mal configuré peuvent expliquer l'absence d'objets.  

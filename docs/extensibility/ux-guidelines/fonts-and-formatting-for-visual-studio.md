@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335492"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891036"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Mise en forme (mise à l’échelle/mise en gras) référence
  Certaines boîtes de dialogue requièrent un texte spécifique pour être en gras ou une taille différente de la police d’environnement. Auparavant, les polices supérieure à la police d’environnement étaient codées en tant que «`environment font +2`» ou similaire. À l’aide d’extraits de code fourni pour prendre en charge des moniteurs haute résolution et vérifiez que texte d’affichage apparaît toujours à la taille et le poids (comme Light ou Semilight).
 
-> **Remarque : Avant d’appliquer la mise en forme, assurez-vous que vous suivez les instructions figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Avant d’appliquer la mise en forme, assurez-vous que vous suivez les instructions figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). **
 
  Pour mettre à l’échelle de la police d’environnement, définissez le style du TextBlock ou Label, comme indiqué. Chacune de ces extraits de code, elle est utilisées correctement, génère la police correcte, y compris les variations de taille et le poids appropriées.
 
@@ -328,11 +329,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :
 
-- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
+- **Info-bulles.** Exemple : « Afficher un aperçu des éléments sélectionnés »
 
-- **En-têtes de colonne.** Exemple : « Réponse système »
+- **En-têtes de colonne.** Exemple : « Réponse système »
 
-- **Éléments de menu.** Exemple : « Enregistrer tout »
+- **Éléments de menu.** Exemple : « Enregistrer tout »
 
   Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :
 
@@ -345,7 +346,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Tous les pronoms|Y compris le possessif « Sa » et «, » une contraction du pronom « it » et le verbe « est »|
 |Premiers et derniers mots, quelle que soit grammaticales||
 |Prépositions qui font partie d’une phrase verbale|« Closing Out tous les Windows » ou « Arrêt du système »|
-|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RGB|
+|Toutes les lettres d’un acronyme|HTML, XML, URL, IDE, RVB|
 |Le deuxième mot du mot composé, s’il s’agit d’un nom ou un adjectif d’approprié, ou si les mots ont le même poids|Accès en lecture/écriture de références croisées, des logiciels Microsoft avant, exécution|
 
 |Minuscules|Exemples|
@@ -359,9 +360,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :
 
-1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
+1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
 
-2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
+2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
@@ -394,11 +395,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - En-têtes supérieure (police d’environnement x 155 % ou version supérieure) peuvent être en couleur à ces fins :
 
-    - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
+  - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
 
-    - Pour attirer l’attention sur une zone spécifique
+  - Pour attirer l’attention sur une zone spécifique
 
-    - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
+  - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
 
 - Couleur dans les en-têtes doit tirer parti de Visual Studio marque couleurs existantes, principalement le principal violet, #FF68217A.
 
@@ -482,5 +483,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ## <a name="see-also"></a>Voir aussi
 
-- [MSDN : Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN : Polices (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN : Texte de l’Interface utilisateur (Windows)](/windows/desktop/uxguide/text-ui)

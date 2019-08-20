@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079006"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823609"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texte de l’interface utilisateur et l’aide de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -164,9 +164,9 @@ ms.locfileid: "60079006"
 |Ajouter / supprimer|Non destructif. À utiliser lorsque l’ajout ou la suppression d’éléments dans une liste.|La boîte de dialogue Gestionnaire de connexions TFS server liste est un exemple d’ajout/suppression.|
 |Supprimer|Destructeur. Utilisez uniquement lorsque l’élément en cours de suppression est définitivement rejeté ou supprimé à partir du disque.|« Supprimer » requiert généralement une invite si le résultat est si vous supprimez un fichier de disque.|
 
-## <a name="error-messages"></a>Messages d’erreur
+## <a name="error-messages"></a>messages d'erreur
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
  Des erreurs se produisent. Définition des limitations sur l’utilisateur peut effectuer est une première étape à empêcher les messages d’erreur évitable raisonnable. Toutefois, lorsqu’une erreur se produit, un message d’erreur bien écrite peut accéder un long chemin pour atténuer le problème. Messages d’erreur sont sans doute un des types plus importants de notification que l’utilisateur voit, parce qu’ils sont synchrones et indiquent un problème qui doit être résolu. Messages d’erreur mal écrit laissent les utilisateurs sur leurs propres pour déterminer la cause des erreurs et les solutions possibles.
 
  Les utilisateurs peut s’arrêter en faisant attention à l’utilisation excessive ou confusion entre les messages d’erreur, afin de l’expérience de l’écriture des messages uniquement nécessaires valeur ajoutée à l’utilisateur. Si le message est simplement une notification, puis utiliser une autre présentation.
@@ -193,11 +193,11 @@ ms.locfileid: "60079006"
 
 - Quelques questions à poser lors de la construction d’un message d’erreur :
 
-    - L’utilisateur vous rendiez compte comment résoudre le problème avec cette erreur autonome ?
+  - L’utilisateur vous rendiez compte comment résoudre le problème avec cette erreur autonome ?
 
-    - L’utilisateur utilise-t-elle le vocabulaire de même que cette erreur ?
+  - L’utilisateur utilise-t-elle le vocabulaire de même que cette erreur ?
 
-    - Est ambigu de cette erreur, ou partagés dans plusieurs situations ? Dans ce cas, comment vous guident les utilisateurs à la solution que dont ils ont besoin ?
+  - Est ambigu de cette erreur, ou partagés dans plusieurs situations ? Dans ce cas, comment vous guident les utilisateurs à la solution que dont ils ont besoin ?
 
 #### <a name="build-errors"></a>Erreurs de build
  Dans la mesure où Visual Studio est un outil de développement logiciel, la plupart de ses composants ont une compilation, la conversion ou encodage étape pour convertir le travail du développeur sous forme binaire. Ces conversions peuvent provoquer des erreurs lorsque le compilateur ne peut pas traiter les fichiers créés de manière incorrecte ou lorsque les options du compilateur n’ont pas été correctement définies.
@@ -261,7 +261,7 @@ ms.locfileid: "60079006"
 
 ## <a name="accessing-help"></a>Accéder à l’aide
 
-### <a name="overview"></a>Vue d'ensemble
+### <a name="overview"></a>Présentation
  En plus de documentation dans MSDN, un utilisateur de Visual Studio a plusieurs points d’accès pour aider l’utilisateur dans l’interface utilisateur. Pour vous assurer que ces points d’accès sont constamment disponibles, les équipes fonctionnelles doivent tirer parti du système d’aide proposé par l’environnement. Ces points d’accès sont :
 
 - **Texte pédagogique et supplémentaire dans les boîtes de dialogue.** Texte statique qui donne une direction ou explication, soit sur l’interface utilisateur de surface ou disponible sur le pointage sur une icône d’info-bulle.
@@ -274,7 +274,7 @@ ms.locfileid: "60079006"
 
 - **Boutons d’aide de l’interface utilisateur** (déconseillé). Un indicateur visible dans la barre de titre qui donne accès à la rubrique d’aide (F1) associée.
 
-### <a name="text"></a>Texte
+### <a name="text"></a>Text
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Texte pédagogique et supplémentaire dans les boîtes de dialogue
  Dans les boîtes de dialogue qui prennent en charge des tâches complexes, il peut être nécessaire de donner à texte d’instructions au sein de l’interface utilisateur, souvent en haut de la boîte de dialogue ou à proximité des contrôles complexes. Consultez [l’interface utilisateur texte et la terminologie](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) pour plus d’informations sur l’écriture de style.

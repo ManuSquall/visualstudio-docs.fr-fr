@@ -17,11 +17,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194446"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  Type de message. Le tableau suivant répertorie les valeurs prises en charge pour ce paramètre.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Le message est considéré comme plus d’informations, avertissement ou erreur.|  
 |`SCC_MSG_STATUS`|Le message affiche l’état et peut être affiché dans la barre d’état.|  
@@ -61,12 +61,12 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>Valeur de retour  
   
-|Value|Description|  
+|`Value`|Description|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|La chaîne a été affichée, ou l’opération a réussi.|  
 |SCC_MSG_RTN_CANCEL|L’utilisateur souhaite annuler l’opération.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Supposons que les appels de l’IDE le [SccGet](../extensibility/sccget-function.md) avec 20 noms de fichiers. Le plug-in de contrôle de code source souhaite empêcher l’annulation de l’opération au milieu d’une opération get fichier. Après avoir obtenu chaque fichier, il appelle `lpTextOutProc`, en lui passant les informations d’état sur chaque fichier et envoie un `SCC_MSG_DOCANCEL` message si elle n’a aucun état à signaler. Si à tout moment le plug-in reçoit une valeur de retour de `SCC_MSG_RTN_CANCEL` à partir de l’IDE, il annule l’opération get immédiatement, afin qu’aucun autre fichier n’est récupérées.  
   
 ## <a name="structures"></a>Structures  

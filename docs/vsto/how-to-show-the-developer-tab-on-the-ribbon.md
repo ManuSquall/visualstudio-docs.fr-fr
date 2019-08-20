@@ -1,6 +1,6 @@
 ---
 title: 'Procédure : Afficher l’onglet Développeur sur le ruban'
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,56 +13,58 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b6641cca4ef2288452b2f6959482b311a5b07a4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418858"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551784"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procédure : Afficher l’onglet Développeur sur le ruban
-  Pour accéder à la **développeur** onglet sur le ruban d’une application Office, vous devez le configurer pour afficher l’onglet, car il n’apparaît pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.
+  Pour accéder à l’onglet **développeur** sur le ruban d’une application Office, vous devez le configurer pour afficher cet onglet, car il n’apparaît pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.
 
 > [!NOTE]
-> Ces informations d'aide s'appliquent uniquement aux applications Office 2010 ou version ultérieure. Si vous souhaitez afficher cet onglet dans Microsoft Office System 2007, consultez la version suivante de cette rubrique [Comment : Afficher l’onglet Développeur sur le ruban](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
-).
+> Ces informations d'aide s'appliquent uniquement aux applications Office 2010 ou version ultérieure. Si vous souhaitez afficher cet onglet dans le système 2007 Microsoft Office, consultez la version suivante de cette rubrique [procédure: Affichez l’onglet Développeur sur le](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+)ruban.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
-> N’a pas accès un **développeur** onglet.
+> L’accès n’a pas d’onglet **développeur** .
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="to-show-the-developer-tab"></a>Pour afficher l'onglet Développeur
 
-1. Démarrez l'une des applications Office prises en charge dans cette rubrique. Consultez le **s’applique à :** Remarque plus haut dans cette rubrique.
+1. Démarrez l'une des applications Office prises en charge dans cette rubrique. Consultez la Remarque **s’applique à:** plus haut dans cette rubrique.
 
-2. Sur le **fichier** , choisir le **Options** bouton.
+2. Sous l’onglet **fichier** , choisissez le bouton **options** .
 
-     L’illustration suivante montre le **fichier** onglet et **Options** bouton dans Office 2010.
+     L’illustration suivante montre l’onglet **fichier** et le bouton **Options** dans Office 2010.
 
-     ![Vous choisissez Fichier, Options dans Outlook 2010](../vsto/media/vsto-office-file-tab.png "en choisissant fichier, Options dans Outlook 2010")
+     ![Choix du fichier, options dans Outlook 2010](../vsto/media/vsto-office-file-tab.png "Choix du fichier, options dans Outlook 2010")
 
-     L’illustration suivante montre le **fichier** onglet dans Office 2013.
+     L’illustration suivante montre l’onglet **fichier** dans Office 2013.
 
-     ![L’onglet fichier dans Outlook 2013](../vsto/media/vsto-office2013-filetab.png "onglet du fichier dans Outlook 2013")
+     ![Onglet fichier dans Outlook 2013](../vsto/media/vsto-office2013-filetab.png "Onglet fichier dans Outlook 2013")
 
-     L’illustration suivante montre le **Options** bouton dans Office 2013.
+     L’illustration suivante montre le bouton **options** dans Office 2013.
 
-     ![Le bouton Options dans Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "bouton Options dans Outlook 2013 Preview")
+     ![Bouton Options dans la version préliminaire d’Outlook 2013](../vsto/media/vsto-office2013-optionsbutton.png "Bouton Options dans la version préliminaire d’Outlook 2013")
 
-3. Dans le _ApplicationName_**Options** boîte de dialogue, sélectionnez le **personnaliser le ruban** bouton.
+3. Dans la boîte de dialogue**options** de _applicationName_, choisissez le bouton **personnaliser le ruban** .
 
-     L’illustration suivante montre le **Options** boîte de dialogue et le **personnaliser le ruban** bouton dans Excel 2010. L'emplacement de ce bouton est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
+     L’illustration suivante montre la boîte de dialogue **options** et le bouton **personnaliser le ruban** dans Excel 2010. L'emplacement de ce bouton est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
 
-     ![Bouton Personnaliser le ruban](../vsto/media/vsto-office2010-customizeribbonbutton.png "bouton le personnaliser le ruban")
+     ![Bouton Personnaliser le ruban](../vsto/media/vsto-office2010-customizeribbonbutton.png "Bouton Personnaliser le ruban")
 
-4. Dans la liste des onglets principaux, sélectionnez le **développeur** case à cocher.
+4. Dans la liste des onglets principaux, activez la case à cocher **développeur** .
 
-     L’illustration suivante montre le **développeur** case à cocher dans Word 2010 et [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. L'emplacement de cette case à cocher est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
+     L’illustration suivante montre la case à cocher **développeur** dans Word [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]2010 et. L'emplacement de cette case à cocher est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
 
-     ![La case à cocher développeur dans la boîte de dialogue Options Word](../vsto/media/vsto-office2010-developercheckbox.png "The Developer case à cocher dans la boîte de dialogue Options Word")
+     ![La case à cocher développeur dans la boîte de dialogue Options de Word](../vsto/media/vsto-office2010-developercheckbox.png "La case à cocher développeur dans la boîte de dialogue Options de Word")
 
-5. Choisissez le **OK** bouton pour fermer la **Options** boîte de dialogue.
+5. Choisissez le bouton **OK** pour fermer la boîte de dialogue **options** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)

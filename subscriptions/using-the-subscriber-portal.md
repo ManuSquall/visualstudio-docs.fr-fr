@@ -1,18 +1,17 @@
 ---
 title: Utilisation du portail des abonnés - http://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
-searchscope: VS Subscription
-ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809161"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377918"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Utilisation du portail des abonnés- my.visualstudio.com
 
@@ -52,3 +51,6 @@ Outre les avantages individuels figurant dans la catégorie Support de la page A
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Vous avez besoin de renouveler un abonnement cloud Visual Studio ?  Vous souhaitez télécharger les dernières extensions de la famille de produits Visual Studio ?  La Place de marché permet aux utilisateurs de rechercher des extensions, des outils et des services pour améliorer Azure DevOps, Azure DevOps Server et Visual Studio Code. Vous pouvez même devenir un serveur de publication et publier vos propres extensions sur Marketplace.
+
+## <a name="next-steps"></a>Étapes suivantes
+Connectez-vous au portail, à l’adresse [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), pour découvrir vos avantages.  Vous pouvez également en savoir plus sur la connexion au portail avec votre [compte Microsoft](sign-in-msa.md) (MSA), votre [compte professionnel ou scolaire](sign-in-work.md), et même votre [compte GitHub](sign-in-github.md). 

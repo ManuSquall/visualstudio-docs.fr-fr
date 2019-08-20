@@ -28,16 +28,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045340"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746256"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
-Base de données de programme (*.pdb*) fichiers, également appelés fichiers de symboles, mappent des identificateurs et des instructions dans le code source de votre projet pour les identificateurs correspondants dans compilé des applications.
+Base de données de programme ( *.pdb*) fichiers, également appelés fichiers de symboles, mappent des identificateurs et des instructions dans le code source de votre projet pour les identificateurs correspondants dans compilé des applications.
 
 Lorsque vous générez un projet à partir de l’IDE de Visual Studio avec la norme de configuration de build de débogage, le compilateur crée les fichiers de symboles appropriés. Vous pouvez également [définir les options de symbole dans le code](#compiler-symbol-options).
 
@@ -62,7 +62,7 @@ Lorsque vous déboguez un projet dans l’IDE Visual Studio, le débogueur charg
 
 Le débogueur recherche également les fichiers de symboles dans les emplacements suivants :
 
-1. L’emplacement spécifié à l’intérieur de la DLL ou le fichier exécutable (*.exe*) fichier.
+1. L’emplacement spécifié à l’intérieur de la DLL ou le fichier exécutable ( *.exe*) fichier.
 
    Par défaut, si vous avez créé une DLL ou un *.exe* fichier sur votre ordinateur, l’éditeur de liens place le chemin d’accès complet et le nom de fichier associé *.pdb* fichier dans la DLL ou *.exe* fichier. Le débogueur vérifie si le fichier de symboles existe à cet emplacement.
 
@@ -76,7 +76,7 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
 
      Vous pouvez utiliser des serveurs de symboles sont les suivantes :
 
-     **Serveurs de symboles publics de Microsoft**: Pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft.
+     **Serveurs de symboles publics de Microsoft**: Pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le .NET Framework à partir de serveurs de symboles publics de Microsoft.
 
      **Serveurs de symboles sur un réseau interne ou sur votre ordinateur local** : Votre équipe ou société peut créer les serveurs de symboles de vos propres produits et comme cache des symboles à partir des sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur.
 
@@ -177,7 +177,7 @@ Quand vous générez un projet à partir de l’IDE de Visual Studio avec la nor
 
   - *VC\<x.pdb*, où *\<x>* représente la version de Visual C++, par exemple *VC11.pdb*
 
-    Le *VC\<x > .pdb* fichier stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le makefile du projet. Chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC\<x > .pdb*. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que  *\<windows.h >*, les typedefs de ces en-têtes sont stockés qu’une seule fois, plutôt que dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.
+    Le *VC\<x > .pdb* fichier stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le makefile du projet. Chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC\<x > .pdb*. Par conséquent, même si chaque fichier source inclut des fichiers d’en-tête courants tels que  *\<windows.h >* , les typedefs de ces en-têtes sont stockés qu’une seule fois, plutôt que dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.
 
   - *\<project>.pdb*
 
@@ -236,7 +236,7 @@ Dans ce cas, le débogueur affiche le **chargé des symboles non** ou **aucune S
 **Pour utiliser la page de document aucun symbole chargé pour aider à trouver et charger des symboles manquants :**
 
 - Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné, ou **nouveau chemin d’accès** ou **nouveau chemin VSTS** et entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour effectuer une nouvelle recherche les chemins d’accès et de charger le fichier de symboles s’il est trouvé.
-- Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >**. Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
+- Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >** . Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
 - Pour ouvrir le **Options** > **débogage** > **symboles** page, sélectionnez **modifier les paramètres de symbole**.
 - Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**, ou sélectionnez **boîte de dialogue Options** pour définir l’option pour toujours afficher le code machine lorsque les fichiers sources ou de symboles sont introuvables.
 - Pour afficher les emplacements de recherche et le résultat, développez **les informations de chargement de symboles**.

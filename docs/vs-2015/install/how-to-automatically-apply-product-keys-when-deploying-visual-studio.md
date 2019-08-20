@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185997"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001112"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870307"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).
@@ -27,7 +27,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
  Le visualiseur concurrentiel expose un fournisseur par défaut que vous pouvez utiliser pour générer des marqueurs. Le fournisseur est déjà inscrit avec le visualiseur concurrentiel. Aucune autre étape n’est donc nécessaire pour afficher les marqueurs dans l’interface utilisateur.
 
 ### <a name="c-and-visual-basic"></a>C# et Visual Basic
- En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Il expose quatre fonctions de génération de marqueurs : <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> et <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
+ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs : [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C# ou Visual Basic
 
@@ -76,7 +76,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C# ou Visual Basic
 
-1. Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Le constructeur accepte un GUID.
+1. Créez un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)).  Le constructeur accepte un GUID.
 
 2. Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du visualiseur concurrentiel.  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.
 
@@ -88,7 +88,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Pour utiliser une série de marqueurs dans un projet C# ou Visual Basic
 
-1. Pour utiliser un nouveau <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, commencez par en créer un à l’aide d’un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, puis générez les événements de marqueur directement à partir de la nouvelle série.
+1. Pour utiliser un nouveau [MarkerSeries](/previous-versions/hh694127(v=vs.140)), commencez par en créer un à l’aide d’un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)), puis générez les événements de marqueur directement à partir de la nouvelle série.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -125,5 +125,5 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 |-----------|-----------------|
 |[Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|
 |[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Décrit l’API du visualiseur concurrentiel pour le code managé.|
+|[Instrumentation](/previous-versions/hh694104(v=vs.140))|Décrit l’API du visualiseur concurrentiel pour le code managé.|
 |[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.|

@@ -298,7 +298,7 @@ ms.locfileid: "63430039"
 
  Quand utiliser le bouton court de points de suspension uniquement :
 
-- S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, telles que lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation (**& Parcourir** et **& rcourir le** dans la même boîte de dialogue).
+- S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, telles que lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation ( **& Parcourir** et **& rcourir le** dans la même boîte de dialogue).
 
 - Dans une boîte de dialogue étroite, ou lorsqu’il n’existe aucun emplacement raisonnable pour le bouton long.
 

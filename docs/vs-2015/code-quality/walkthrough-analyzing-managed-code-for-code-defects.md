@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201147"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : Analyse du code géré pour la recherche des défaillances du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
 1. Sur le **fichier** menu de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], cliquez sur **New** puis cliquez sur **projet**.  
   
-2. Dans le **nouveau projet** boîte de dialogue **Types de projets**, cliquez sur **Visual C#**.  
+2. Dans le **nouveau projet** boîte de dialogue **Types de projets**, cliquez sur **Visual C#** .  
   
 3. Sous **modèles**, sélectionnez **bibliothèque de classes**.  
   
@@ -149,7 +149,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
        Sélectionnez le **signer l’assembly** case à cocher.  
   
-       Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >**.  
+       Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >** .  
   
        Le **créer une clé de nom fort** boîte de dialogue s’affiche.  
   

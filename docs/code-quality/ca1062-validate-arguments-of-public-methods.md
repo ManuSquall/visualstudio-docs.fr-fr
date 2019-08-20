@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b01a67974db08d9ec016a18ec115bcfac2452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788566"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922434"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062 : Valider les arguments de méthodes publiques
 
@@ -30,22 +30,22 @@ ms.locfileid: "62788566"
 |-|-|
 |TypeName|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Une méthode visible de l’extérieur déréférence l’un de ses arguments de référence sans vérifier si cet argument est `null` (`Nothing` en Visual Basic).
+Une méthode visible de l’extérieur déréférence l’un de ses arguments de référence sans vérifier si cet argument `null` est`Nothing` (dans Visual Basic).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Tous les arguments de référence passés aux méthodes visibles de l’extérieur doivent être vérifiés pour `null`. Si besoin, levez une <xref:System.ArgumentNullException> lorsque l’argument est `null`.
+Tous les arguments de référence passés aux méthodes visibles de l’extérieur doivent être vérifiés par rapport `null`à. Le cas échéant, levez <xref:System.ArgumentNullException> une lorsque l’argument `null`est.
 
-Si une méthode peut être appelée à partir d’un assembly inconnu, car il est déclaré public ou protégé, vous devez valider tous les paramètres de la méthode. Si la méthode est conçue pour être appelée uniquement par les assemblys connus, vous devez rendre la méthode interne et appliquer le <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> d’attribut à l’assembly qui contient la méthode.
+Si une méthode peut être appelée à partir d’un assembly inconnu, car elle est déclarée publique ou protégée, vous devez valider tous les paramètres de la méthode. Si la méthode est conçue pour être appelée uniquement par des assemblys connus, vous devez rendre la méthode interne et appliquer <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> l’attribut à l’assembly qui contient la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, validez chaque argument de référence par rapport à `null`.
+Pour corriger une violation de cette règle, validez chaque argument de `null`référence par rapport à.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -53,10 +53,10 @@ Vous pouvez supprimer un avertissement de cette règle si vous êtes sûr que le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode qui viole la règle et une méthode qui satisfait la règle.
+L’exemple suivant montre une méthode qui enfreint la règle et une méthode qui satisfait la règle.
 
- ```csharp
- using System;
+```csharp
+using System;
 
 namespace DesignLibrary
 {
@@ -121,11 +121,11 @@ Namespace DesignLibrary
 End Namespace
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 
-Les constructeurs de copie qui remplissent les propriétés du champ ou qui sont des objets de référence peuvent également violer la règle CA1062. La violation se produit parce que l’objet copié est passé au constructeur de copie peut être `null` (`Nothing` en Visual Basic). Pour résoudre la violation, utilisez une méthode statique (Shared en Visual Basic) pour vérifier que l’objet copié n’est pas null.
+Les constructeurs de copie qui remplissent des champs ou des propriétés qui sont des objets de référence peuvent également enfreindre la règle CA1062. La violation se produit parce que l’objet copié qui est passé au constructeur de copie `null` peut`Nothing` être (dans Visual Basic). Pour résoudre la violation, utilisez une méthode statique (Shared in Visual Basic) pour vérifier que l’objet copié n’a pas la valeur null.
 
-Dans l’exemple suivant `Person` exemple de classe, le `other` objet qui est passé à la `Person` constructeur de copie peut être `null`.
+Dans l’exemple `Person` de classe suivant, `other` l’objet passé au constructeur de `Person` copie peut avoir `null`la valeur.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Exemple
 
-Dans le code suivant révisée `Person` exemple, le `other` objet qui est passé au constructeur de copie est vérifié en premier pour null dans le `PassThroughNonNull` (méthode).
+Dans l’exemple modifié `Person` suivant `other` , l’objet passé au constructeur de copie est d’abord vérifié pour la valeur null dans `PassThroughNonNull` la méthode.
 
 ```csharp
 public class Person

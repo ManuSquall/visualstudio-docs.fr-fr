@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147148"
 ---
 # <a name="xml-snippets"></a>Extraits XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ L’éditeur XML offre une fonctionnalité, appelée *extraits XML*, qui vous pe
   
  Vous pouvez insérer des extraits de deux manières. Le **insérer un extrait** commande insère l’extrait de code XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Les deux commandes sont disponibles à partir de la **IntelliSense** sous-menu sous le **modifier** menu, ou dans le menu contextuel de l’éditeur.  
   
- Pour plus d'informations, voir [Procédure : Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md).  
+ Pour plus d’informations, consultez [Guide pratique pour Utiliser des extraits XML](../xml-tools/how-to-use-xml-snippets.md).  
   
 ## <a name="schema-generated-xml-snippets"></a>Extraits XML générés par schéma  
  L'éditeur XML permet également de générer un extrait XML à partir d'un schéma XML. Cette fonction permet de remplir un élément avec des éléments XML générés d'après les informations de schéma de cet élément.  

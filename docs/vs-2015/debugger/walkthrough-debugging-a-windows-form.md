@@ -53,7 +53,7 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2. Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
+2. Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#** , ou **Visual C++** nœud, puis  
   
     1. Pour Visual Basic ou Visual c#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
   

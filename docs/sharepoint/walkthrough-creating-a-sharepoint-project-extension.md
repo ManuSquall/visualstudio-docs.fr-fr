@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430412"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825799"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : Créer une extension de projet SharePoint
   Cette procédure pas à pas illustre comment créer une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet tels que quand un projet est ajouté, supprimé ou renommé. Vous pouvez également ajouter des propriétés personnalisées ou répondre lorsqu’une valeur de propriété change. Contrairement aux extensions d’élément de projet, les extensions de projet ne peut pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension de charge tout type de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430412"
 
 - Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension pour les projets SharePoint qui effectue les opérations suivantes :
 
-    - Ajoute une propriété de projet personnalisés à la fenêtre Propriétés. La propriété s’applique à un projet SharePoint.
+  - Ajoute une propriété de projet personnalisés à la fenêtre Propriétés. La propriété s’applique à un projet SharePoint.
 
-    - Utilise le modèle objet de projet SharePoint pour ajouter un dossier mappé à un projet.
+  - Utilise le modèle objet de projet SharePoint pour ajouter un dossier mappé à un projet.
 
-    - Utilise le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) pour supprimer un dossier mappé à partir du projet de modèle d’objet automation.
+  - Utilise le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) pour supprimer un dossier mappé à partir du projet de modèle d’objet automation.
 
 - Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] package d’Extension (VSIX) pour déployer l’assembly d’extension de la propriété de projet.
 
@@ -202,7 +202,7 @@ ms.locfileid: "63430412"
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre des projets SharePoint](../sharepoint/extending-sharepoint-projects.md)
-- [Guide pratique pour Ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [Guide pratique : Ajouter une propriété à des projets SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Effectuer une conversion entre les types de système de projet SharePoint et d’autres types de projet Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 - [Enregistrer les données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [Associer des données personnalisées avec les extensions d’outils SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

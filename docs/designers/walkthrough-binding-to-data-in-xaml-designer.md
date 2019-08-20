@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892841"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821561"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML
 
-Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l'aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l'aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Pour créer une classe à utiliser comme source de données
 
@@ -65,7 +63,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
    End Class
    ```
 
-   Ce code définit la valeur 0 comme nombre d’éléments par défaut à l’aide de l’objet [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata).
+   Ce code définit la valeur 0 comme nombre d’éléments par défaut à l’aide de l’objet [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
 1. Dans le menu **Fichier**, choisissez **Générer** > **Générer la solution**.
 
@@ -73,7 +71,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel pour **MainWindow.xaml**, puis choisissez **Concepteur de vues**.
 
-1. Dans la boîte à outils, choisissez un contrôle [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) et ajoutez-le au formulaire.
+1. Dans la boîte à outils, choisissez un contrôle [Grid](xref:Windows.UI.Xaml.Controls.Grid) et ajoutez-le au formulaire.
 
 1. Une fois l’élément `Grid` sélectionné, dans la fenêtre Propriétés, choisissez le bouton **Nouveau** situé à côté de la propriété **DataContext**.
 
@@ -87,7 +85,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Une fois le contrôle `TextBlock` sélectionné, dans la fenêtre Propriétés, choisissez le marqueur de propriété à droite de la propriété **Text**, puis **Créer une liaison de données**. (Le marqueur de propriété se présente comme une petite case.)
 
-1. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)**, puis le bouton **OK**.
+1. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)** , puis le bouton **OK**.
 
      L’illustration suivante montre la boîte de dialogue **Créer une liaison de données** avec la propriété **ItemCount** sélectionnée.
 

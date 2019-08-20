@@ -1,5 +1,5 @@
 ---
-title: Afficher la structure du code en utilisant l’affichage de classes, la hiérarchie d’appels, l’Explorateur d’objets et la fenêtre Définition de code
+title: Affichage de classes, hiérarchie d’appels, Explorateur d’objets, fenêtre Définition de code
 ms.date: 05/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582075"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747711"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
-Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans Visual Studio, des composants .NET Framework, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
+Vous pouvez examiner les classes et leurs membres dans Visual Studio à l’aide de différentes fenêtres d’outils, y compris **Affichage des classes**, **Hiérarchie d’appels**, **Explorateur d’objets**et **Définition de code** (C++ uniquement). Ces fenêtres d’outils peuvent examiner du code dans des projets Visual Studio, des composants .NET, des composants COM, des bibliothèques de liens dynamiques (DLL) et des bibliothèques de types (TLB).
 
 Vous pouvez également utiliser l’**Explorateur de solutions** pour parcourir les types et les membres dans vos projets, rechercher des symboles, afficher la hiérarchie d’appels d’une méthode, rechercher les références des symboles, etc., sans avoir à basculer entre plusieurs fenêtres d’outils.
 
@@ -56,7 +56,7 @@ La barre d’outils **Affichage de classes** contient les commandes suivantes :
 
 |||
 |-|-|
-|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. *Ils sont enregistrés dans le fichier solution (*.suo) actif. Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
+|**Nouveau dossier**|Crée un dossier ou sous-dossier virtuel dans lequel vous pouvez organiser les éléments fréquemment utilisés. *Ils sont enregistrés dans le fichier solution (* .suo) actif. Une fois que vous avez renommé ou supprimé un élément dans votre code, il peut apparaître dans un dossier virtuel en tant que nœud d'erreur. Pour corriger ce problème, supprimez le nœud d'erreur. Si vous avez renommé un élément, vous pouvez le déplacer de nouveau de la hiérarchie de projet vers le dossier.|
 |**Précédent**|Permet d'accéder à l'élément précédemment sélectionné.|
 |**Suivant**|Permet d'accéder à l'élément sélectionné suivant.|
 |**Afficher le diagramme de classes** (projets de code managé uniquement)|Devient disponible quand vous sélectionnez un espace de noms ou un type dans **Affichage de classes**. Quand un espace de noms est sélectionné, le diagramme de classes affiche tous les types qu'il contient. Quand un type est sélectionné, le diagramme de classes affiche uniquement ce type.|

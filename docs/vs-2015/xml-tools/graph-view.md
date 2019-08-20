@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198280"
 ---
 # <a name="graph-view"></a>Vue Graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |**Supprimer à partir de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|  
 |**Supprimer toutes les valeurs sauf la sélection à partir de l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|  
 |**Exporter le diagramme en tant qu’Image...**|Enregistre l'aire de conception dans un fichier XPS.|  
-|**Sélectionner tout**|Sélectionne tous les nœuds sur l'aire de conception.|  
+|**Tout sélectionner**|Sélectionne tous les nœuds sur l'aire de conception.|  
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|  
 |**Propriétés (fenêtre)**|Ouvre le **propriétés** fenêtre (si elle n’est pas déjà ouvert). Cette fenêtre affiche des informations sur le nœud.|  
   

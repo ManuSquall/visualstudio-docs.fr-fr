@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 0d8a7046c8d39d9cbd86abcdfb704b161a601f9e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848608"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148313"
 ---
 Store

@@ -1,6 +1,6 @@
 ---
 title: Gérer les références dans un projet
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535570"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787631"
 ---
 # <a name="manage-references-in-a-project"></a>Gérer les références dans un projet
 
@@ -38,13 +38,15 @@ Pour ajouter une référence, cliquez avec le bouton droit sur le nœud **Réfé
 
 Vous pouvez ajouter une référence aux types de composant et service suivants :
 
-- Bibliothèques de classes ou assemblys du .NET Framework
+- Bibliothèques de classes ou assemblys .NET
 
 - Applications UWP
 
 - Composants COM
 
 - Autres assemblys ou bibliothèques de classes de projets dans la même solution
+
+- Projets partagés
 
 - Services web XML
 
@@ -101,24 +103,28 @@ Si vous déployez une application qui contient une référence à un composant p
 
 Par défaut, la propriété <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> a la valeur **False** si l’assembly ou le composant se trouve dans le Global Assembly Cache ou s’il correspond à un composant d’infrastructure. Sinon, la valeur est **True**. Les références entre projets ont toujours la valeur **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Référencer un projet ou un assembly qui cible une autre version du .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Référencer un projet ou un assembly qui cible une autre version de .NET
 
-Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant une version différente du .NET Framework. Par exemple, vous pouvez créer une application qui cible .NET Framework 4.6, qui référence un assembly ciblant .NET Framework 4.5. Si vous créez un projet qui cible une version antérieure du .NET Framework, vous ne pouvez pas définir dans ce projet une référence à un projet ou un assembly ciblant une version plus récente.
+Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant une version différente de .NET. Par exemple, vous pouvez créer une application qui cible .NET Framework 4.6, qui référence un assembly ciblant .NET Framework 4.5. Si vous créez un projet ciblant une version antérieure de .NET, vous ne pouvez pas définir dans ce projet une référence à un projet ou à un assembly qui cible une version plus récente.
 
-Pour plus d’informations, consultez [Vue d’ensemble du multiciblage](../ide/visual-studio-multi-targeting-overview.md).
+Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Références entre projets
 
-Les références entre projets sont des références à des projets qui contiennent des assemblys. Vous les créez en utilisant l’onglet **Projet** . Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.
+Les références entre projets sont des références aux projets qui contiennent des assemblys. Vous les créez à l’aide de l’onglet **Projets** de la boîte de dialogue Gestionnaire de références. Visual Studio peut trouver un assembly si vous indiquez un chemin d’accès au projet.
 
 Quand vous avez un projet qui produit un assembly, vous devez référencer le projet et non pas utiliser une référence de fichier (voir ci-dessous). Une référence entre projets présente l’avantage de créer une dépendance entre les projets dans le système de build. Le projet dépendant est généré s’il a été modifié depuis la dernière build du projet qui référence. Une référence de fichier ne crée pas de dépendance de build, il est donc possible de générer le projet de référence sans générer le projet dépendant, et la référence peut devenir obsolète. Autrement dit, le projet peut référencer une version précédemment générée du projet. Cela peut entraîner la présence de plusieurs versions d’une même DLL nécessaire dans le répertoire *bin*, ce qui n’est pas admis. Quand ce conflit intervient, vous obtenez un message de ce type : « Avertissement : impossible de copier la dépendance ’fichier’ du projet ’projet’ dans le répertoire d’exécution, car elle remplacerait la référence ’fichier’. ». Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md) et [Guide pratique pour créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Une référence de fichier est créée à la place d’une référence entre projets si la version cible du .NET Framework d’un projet est la version 4.5, et si la version cible du .NET Framework de l’autre projet est la version 2, 3, 3.5 ou 4.0.
 
+## <a name="shared-project-references"></a>Références des projets partagés
+
+Contrairement à la plupart des autres types, un *projet partagé* ne comprend pas de sortie binaire. Au lieu de cela, le code est compilé dans chaque projet qui le référence. Les [projets partagés](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) vous permettent d’écrire du code commun référencé par plusieurs projets d’application. Le code est compilé dans chacun des projets qui le référencent et peut inclure des directives de compilateur permettant d’incorporer des fonctionnalités propres à la plateforme dans la base de code partagée. Ajoutez une référence à un projet partagé sous l’onglet **Projets partagés** de la boîte de dialogue Gestionnaire de références.
+
 ## <a name="file-references"></a>Références de fichiers
 
-Les références de fichiers sont des références directes à des assemblys qui se trouvent hors du contexte d’un projet Visual Studio. Vous les créez en utilisant l’onglet **Parcourir** du **Gestionnaire de références**. Utilisez une référence de fichier quand vous avez seulement un assembly ou un composant, et pas le projet qui le crée comme sortie.
+Les références de fichiers sont des références directes à des assemblys qui se trouvent hors du contexte d’un projet Visual Studio. Vous les créez en utilisant l’onglet **Parcourir** de la boîte de dialogue Gestionnaire de références. Utilisez une référence de fichier quand vous avez seulement un assembly ou un composant, et pas le projet qui le crée comme sortie.
 
 ## <a name="see-also"></a>Voir aussi
 

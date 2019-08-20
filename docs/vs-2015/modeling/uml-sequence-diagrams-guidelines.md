@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445661"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823562"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammes de séquence UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
   - Avec le bouton droit de la ligne de vie, puis choisissez **créer une classe**.  
   
-     - ou -  
+     ou  
   
   - Sélectionnez la ligne de vie, appuyez sur **F4**, puis, dans le **propriétés** fenêtre, définissez la **Type** propriété à un type ou spécifiez le nom d’un nouveau type. Avec le bouton droit de l’étiquette du message, puis choisissez **créer une opération**.  
   
@@ -205,7 +205,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
 - noter les exceptions ou alternatives qui peuvent être effectuées en guise d'alternative à la séquence typique illustrée. Par exemple « Le client peut choisir d'ignorer le reste de cette séquence ».  
   
-    - Vous pouvez utiliser des fragments comme alternative plus formelle à ce genre de remarque. Consultez [décrivant les Structures de contrôle avec des Fragments](#Fragments)  
+  - Vous pouvez utiliser des fragments comme alternative plus formelle à ce genre de remarque. Consultez [décrivant les Structures de contrôle avec des Fragments](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Choix de la portée du diagramme  
  Il est important d'identifier clairement ce que le diagramme est censé montrer.  
@@ -372,13 +372,13 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
   
 - Cliquez sur le message que vous souhaitez déplacer, puis cliquez sur **déplacer vers le diagramme**.  
   
-     Visual Studio :  
-  
-    - remplace par une utilisation d'interaction le message sélectionné et tous les messages auxiliaires ;  
-  
-    - déplace les messages remplacés vers un nouveau diagramme de séquence ;  
-  
-    - crée un lien entre l'utilisation d'interaction et le nouveau diagramme de séquence.  
+  Visual Studio :  
+
+  - remplace par une utilisation d'interaction le message sélectionné et tous les messages auxiliaires ;  
+
+  - déplace les messages remplacés vers un nouveau diagramme de séquence ;  
+
+  - crée un lien entre l'utilisation d'interaction et le nouveau diagramme de séquence.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Pour accéder à la séquence référencée par une utilisation d'interaction  
   

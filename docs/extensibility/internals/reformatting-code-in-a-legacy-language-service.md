@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341328"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891134"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatage du code dans un service de langage hérité
 
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] code source peut être reformaté par la normalisation de l’utilisation des mises en retrait et des espaces blancs. Cela peut inclure d’insertion ou suppression des espaces ou des tabulations au début de chaque ligne, ajoutez de nouvelles lignes entre les lignes ou remplaçant les espaces par des tabulations ou les tabulations par des espaces.
 
->**Remarque :** Insertion ou la suppression des caractères de saut de ligne peut affecter les marqueurs tels que des points d’arrêt et les signets, mais ajout ou la suppression des espaces ou des tabulations n’affecte pas les marqueurs.
+> [!NOTE]
+> Insertion ou la suppression des caractères de saut de ligne peut affecter les marqueurs tels que des points d’arrêt et les signets, mais ajout ou la suppression des espaces ou des tabulations n’affecte pas les marqueurs.
 
 Les utilisateurs peuvent démarrer une opération de reformatage en sélectionnant **la sélection du Format** ou **mettre le Document** à partir de la **avancé** menu sur le **modifier**menu. Une opération de reformatage peut également être déclenchée lorsqu’un extrait de code ou un caractère particulier est inséré. Par exemple, lorsque vous tapez une accolade fermante en c#, tout le contenu entre l’accolade ouvrante correspondante et l’accolade fermante est automatiquement mis en retrait pour le niveau approprié.
 

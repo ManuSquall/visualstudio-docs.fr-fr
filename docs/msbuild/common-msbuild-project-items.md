@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569870"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681282"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
@@ -41,7 +41,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |Private|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
- Représente une référence de composant (non managé) COM dans le projet.
+ Représente une référence de composant (non managé) COM dans le projet. Cet élément s’applique uniquement aux projets .NET.
 
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
@@ -49,12 +49,12 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |GUID|Chaîne requise. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Chaîne requise. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
 |VersionMinor|Chaîne requise. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
-|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|Chaîne facultative. LocaleID du composant.|
+|LCID|Chaîne facultative. LocaleID du composant.|
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|
 |Isolated|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|
 
 ### <a name="comfilereference"></a>COMFileReference
- Représente une liste de bibliothèques de types qui alimente la cible ResolvedComreference.
+ Représente une liste de bibliothèques de types qui sont passées au paramètre `TypeLibFiles` de la cible [ResolveComReference](resolvecomreference-task.md). Cet élément s’applique uniquement aux projets .NET.
 
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|

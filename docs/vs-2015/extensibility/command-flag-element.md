@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39b2377dd1599d58eac4ca967ca540d8ce0e6847
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184354"
 ---
 # <a name="command-flag-element"></a>Élément Command Flag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Modifie son élément parent.
   
 ### <a name="child-elements"></a>Éléments enfants  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |AllowParams|Indique que les utilisateurs peuvent entrer des paramètres de commande dans le **commande** fenêtre lorsqu’ils tapent le nom canonique de la commande.<br /><br /> Valide pour : `Button`|  
 |AlwaysCreate|Menu est créé même si elle n’a aucun groupe ou les boutons.<br /><br /> Valide pour : `Menu`|  

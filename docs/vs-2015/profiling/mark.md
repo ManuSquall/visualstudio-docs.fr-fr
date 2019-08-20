@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6d7902ec588af2687b048639a930847ec02b3fa
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155785"
 ---
 # <a name="mark"></a>Marque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ VSPerfCmd.exe /Mark:MarkID,[MarkName]
  `MarkName`  
  (Facultatif) Chaîne définie par l’utilisateur, qui apparaît comme Nom de marque dans les vues et les rapports de profileur. Si `MarkName` n’est pas spécifié, le champ Nom de marque de la liste des marques est vide. Placez entre guillemets les chaînes qui contiennent des espaces ou des barres obliques (« / »).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  Cet exemple insère une marque avec l’ID 123 et le nom de marque « TestMark ».  
   
 ```  

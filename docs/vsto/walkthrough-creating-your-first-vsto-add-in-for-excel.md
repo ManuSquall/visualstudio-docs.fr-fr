@@ -1,6 +1,6 @@
 ---
-title: 'Procédure pas à pas : Créer votre premier complément pour Excel'
-ms.date: 02/02/2017
+title: 'Procédure pas à pas : Créer votre premier complément VSTO pour Excel'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981427"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548017"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procédure pas à pas : Créer votre premier complément pour Excel
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer un complément de niveau application pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les classeurs ouverts.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -69,7 +71,7 @@ ms.locfileid: "62981427"
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Écrire du code pour ajouter du texte au classeur enregistré
  L'étape suivante consiste à ajouter du code au fichier de code ThisAddIn. Le nouveau code utilise le modèle objet d'Excel pour insérer du texte réutilisable dans la première ligne de la feuille de calcul active. La feuille de calcul active est celle qui est ouverte quand l'utilisateur enregistre le classeur. Par défaut, le fichier de code ThisAddIn contient le code généré suivant :
 
-- Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d'entrée pour votre code et offre un accès au modèle objet d'Excel. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.
+- Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d'entrée pour votre code et offre un accès au modèle objet d'Excel. Pour plus d’informations, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.
 
 - Les gestionnaires d'événements `ThisAddIn_Startup` et `ThisAddIn_Shutdown` . Ces gestionnaires d'événements sont appelés quand Excel charge et décharge votre complément VSTO. Utilisez ces gestionnaires d'événements pour initialiser votre complément VSTO quand il est chargé et pour nettoyer les ressources utilisées par votre complément quand il est déchargé. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 
@@ -90,15 +92,15 @@ ms.locfileid: "62981427"
 
 - Le champ `Application` de la classe `ThisAddIn` . Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.Excel.Application> qui représente l'instance actuelle d'Excel.
 
-- Le paramètre `Wb` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Le paramètre `Wb` est un objet <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le classeur enregistré. Pour plus d’informations, consultez [vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).
+- Le paramètre `Wb` du gestionnaire d'événements pour l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> . Le paramètre `Wb` est un objet <xref:Microsoft.Office.Interop.Excel.Workbook> qui représente le classeur enregistré. Pour plus d’informations, consultez [vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).
 
-## <a name="test-the-project"></a>Le projet de test
+## <a name="test-the-project"></a>Tester le projet
 
 ### <a name="to-test-the-project"></a>Pour tester le projet
 
 1. Appuyez sur **F5** pour générer et exécuter votre projet.
 
-     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée également un jeu d'entrées de Registre qui permet à Excel de détecter et de charger le complément VSTO, et il configure les paramètres de sécurité de l'ordinateur de développement pour permettre au complément VSTO de s'exécuter. Pour plus d’informations, consultez [solutions Office Build](../vsto/building-office-solutions.md).
+     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée également un jeu d'entrées de Registre qui permet à Excel de détecter et de charger le complément VSTO, et il configure les paramètres de sécurité de l'ordinateur de développement pour permettre au complément VSTO de s'exécuter. Pour plus d’informations, consultez [créer des solutions Office](../vsto/building-office-solutions.md).
 
 2. Dans Excel, enregistrez le classeur.
 
@@ -118,24 +120,24 @@ ms.locfileid: "62981427"
 ## <a name="next-steps"></a>Étapes suivantes
  Maintenant que vous avez créé un complément VSTO de base pour Excel, vous pouvez perfectionner votre connaissance du développement des compléments VSTO en consultant les rubriques suivantes :
 
-- Tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO : [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md).
+- Tâches de programmation générales que vous pouvez effectuer dans les compléments VSTO: [Programmez les compléments VSTO](../vsto/programming-vsto-add-ins.md).
 
-- Tâches de programmation qui sont spécifiques aux compléments VSTO Excel : [Solutions Excel](../vsto/excel-solutions.md).
+- Tâches de programmation spécifiques aux compléments VSTO Excel: [Solutions Excel](../vsto/excel-solutions.md).
 
-- À l’aide du modèle objet d’Excel : [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).
+- Utilisation du modèle objet d’Excel: [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).
 
-- Personnalisation de l’interface utilisateur (IU) de Microsoft Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet de tâches personnalisé : [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).
+- Personnalisation de l’interface utilisateur d’Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet de tâches personnalisé: [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).
 
-- Génération et débogage des Compléments VSTO pour Excel : [Générer des solutions Office](../vsto/building-office-solutions.md).
+- Génération et débogage des compléments VSTO pour Excel: [Créer des solutions Office](../vsto/building-office-solutions.md).
 
-- Déploiement de compléments VSTO pour Excel : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).
+- Déploiement des compléments VSTO pour Excel: [Déployez une solution Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Solutions Excel](../vsto/excel-solutions.md)
-- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)
-- [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)
+- [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
+- [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
-- [Générer des solutions Office](../vsto/building-office-solutions.md)
+- [Créer des solutions Office](../vsto/building-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)

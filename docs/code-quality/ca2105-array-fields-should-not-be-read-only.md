@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeadbd977b8c7d97af611a2054692a6071f21a36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808300"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586585"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105 : Les champs de tableau ne doivent pas être en lecture seule
 
@@ -74,6 +74,10 @@ La sortie de cet exemple est :
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
 After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90
 ```
+
+## <a name="related-rules"></a>Règles associées
+
+- [CA2104 : Ne déclarez pas les types référence mutables uniquement en lecture](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>Voir aussi
 

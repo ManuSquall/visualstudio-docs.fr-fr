@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976247"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661943"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -35,16 +35,16 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**[*noms de fichiers de test*]**|Exécutez les tests à partir des fichiers spécifiés. Séparez les noms de fichiers de test par des espaces.<br />Exemples : `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nom de fichier*]**|Exécutez les tests avec d'autres paramètres tels que les collecteurs de données.<br />Exemple : `/Settings:Local.RunSettings`|
 |**/Tests:[*nom du test*]**|Exécutez les tests avec les noms qui contiennent les valeurs fournies. Pour fournir plusieurs valeurs, séparez-les par des virgules.<br />Exemple : `/Tests:TestMethod1,testMethod2`<br />L’option de ligne de commande **/Tests** ne peut pas être utilisée avec l’option de ligne de commande **/TestCaseFilter**.|
-|**/Parallel**|Spécifie que les tests doivent être exécutés en parallèle. Par défaut, tout ou partie des cœurs disponibles sur la machine sont utilisables. Le nombre de cœurs à utiliser peut être configuré à l’aide d’un fichier de paramètres.|
+|**/Parallel**|Spécifie que les tests doivent être exécutés en parallèle. Par défaut, tout ou partie des cœurs disponibles sur la machine peuvent être utilisés. Vous pouvez configurer le nombre de cœurs à utiliser dans un fichier de paramètres.|
 |**/Enablecodecoverage**|Active l'adaptateur de données de diagnostic CodeCoverage dans la série de tests.<br />Les paramètres par défaut sont utilisés s'ils ne sont pas spécifiés à l'aide du fichier de paramètres.|
 |**/InIsolation**|Exécute les tests dans un processus isolé.<br />En raison de cette isolation, il est moins probable que le processus *vstest.console.exe* soit arrêté sur une erreur dans les tests, mais les tests peuvent s’exécuter plus lentement.|
 |**/UseVsixExtensions**|Grâce à cette option, le processus *vstest.console.exe* utilise ou ignore les extensions VSIX installées (le cas échéant) dans la série de tests.<br />Cette option est dépréciée. À compter de la prochaine version majeure de Visual Studio, cette option peut être supprimée. Envisagez d’utiliser des extensions disponibles en tant que package NuGet.<br />Exemple : `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*chemin*]**|Force le processus *vstest.console.exe* à utiliser des adaptateurs de test personnalisés à partir d’un chemin spécifié (le cas échéant) dans la série de tests.<br />Exemple : `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*type de plateforme*]**|Architecture de plateforme cible à utiliser pour l'exécution des tests.<br />Les valeurs valides sont x86, x64 et ARM.|
-|**/Framework: [*version de .Net Framework*]**|Version .Net Framework cible à utiliser pour l'exécution des tests.<br />Les valeurs valides sont Framework35, Framework40, Framework45 et FrameworkUap10.<br />Si la version cible de .Net Framework est spécifiée comme étant **Framework35**, les tests s’exécutent en « mode de compatibilité » CLR 4.0.<br />Exemple : `/Framework:framework40`|
+|**/Framework: [*version de .Net Framework*]**|Version de .NET cible à utiliser pour l’exécution des tests.<br />Les valeurs valides sont Framework35, Framework40, Framework45 et FrameworkUap10.<br />Si la version cible de .Net Framework est spécifiée comme étant **Framework35**, les tests s’exécutent en « mode de compatibilité » CLR 4.0.<br />Exemple : `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|Exécutez les tests qui correspondent à l'expression donnée.<br /><Expression\> est au format <propriété\>=<valeur\>[\|<Expression\>].<br />Exemple : `/TestCaseFilter:"Priority=1"`<br />Exemple : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />L’option de ligne de commande **/TestCaseFilter** ne peut pas être utilisée avec l’option de ligne de commande **/Tests**. <br />Pour plus d’informations sur la création et l’utilisation d’expressions, consultez [Filtre TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Affiche les informations d’utilisation.|
-|**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests.<br />Exemple : pour stocker les résultats dans les fichiers de résultats des tests de Visual Studio (TRX), utilisez **/Logger:trx**.<br />Exemple : pour publier les résultats des tests dans Team Foundation Server, utilisez TfsPublisher :<br />**/logger:TfsPublisher;**<br />**Collection=<URL du projet\>;**<br />**BuildName=<nom de la build\>;**<br />**TeamProject=<nom du projet\>;**<br />**[;Platform=<par défaut « N’importe quelle UC »>]**<br />**[;Flavor=<par défaut « Debug »>]**<br />**[;RunTitle=<titre\>]**|
+|**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests.<br />Exemple : pour stocker les résultats dans les fichiers de résultats des tests de Visual Studio (TRX), utilisez **/Logger:trx**.<br />Exemple : pour publier les résultats des tests dans Team Foundation Server, utilisez TfsPublisher :<br />**/logger:TfsPublisher;**<br />**Collection=<URL du projet\>;**<br />**BuildName=<nom de la build\>;**<br />**TeamProject=<nom du projet\>;**<br />**[;Platform=\<devient par défaut « Tout UC »>]**<br />**[;Flavor=\<devient par défaut « Déboguer »>]**<br />**[;RunTitle=<titre\>]**|
 |**/ListTests:[*nom de fichier*]**|Répertorie les tests détectés dans le conteneur de tests donné.|
 |**/ListDiscoverers**|Répertorie les découvreurs de test installés.|
 |**/ListExecutors**|Répertorie les exécuteurs de test installés.|

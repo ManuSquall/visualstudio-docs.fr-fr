@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147942"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |Nom|[Obligatoire] Le nom de la catégorie|  
 |GUID|[Obligatoire] GUID de la catégorie (doivent correspondre à la mise en forme de GUID)|  
   
- **Color**  
+ **Couleur**  
   
  Le \<couleur > élément définit une couleur d’un composant ou d’un état de l’interface utilisateur. Le schéma d’affectation de noms par défaut pour une couleur est [type d’interface utilisateur] [État]. N’utilisez pas le mot « color », car il est redondant. Une couleur doit clairement indiquer le type d’élément et les situations ou « état », pour laquelle la couleur est appliquée. Une couleur ne doit pas être vide et doit contenir une ou les deux un \<arrière-plan > et \<premier plan > élément. Éléments de couleur sont définis comme suit :  
   
@@ -96,7 +96,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Nom|[Obligatoire] Le nom de la couleur|  
+|Name|[Obligatoire] Le nom de la couleur|  
   
  **Arrière-plan et/ou de premier plan**  
   
@@ -110,8 +110,8 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|Type|[Obligatoire] Le type de la couleur. Il peut avoir l'une des valeurs suivantes :<br /><br /> *CT_INVALID :* La couleur est non valide ou non définie.<br /><br /> *CT_RAW:* Une valeur ARVB brute.<br /><br /> *CT_COLORINDEX:* N’UTILISEZ PAS.<br /><br /> *CT_SYSCOLOR :* Une couleur système Windows à partir de SysColor.<br /><br /> *CT_VSCOLOR :* Une couleur de Visual Studio à partir de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* La couleur automatique.<br /><br /> *CT_TRACK_FOREGROUND :* N’UTILISEZ PAS.<br /><br /> *CT_TRACK_BACKGROUND :* N’UTILISEZ PAS.|  
-|Source|[Obligatoire] La valeur de la couleur représentée au format hexadécimal|  
+|Type|[Obligatoire] Le type de la couleur. Il peut avoir l'une des valeurs suivantes :<br /><br /> *CT_INVALID :* La couleur est non valide ou non définie.<br /><br /> *CT_RAW :* Une valeur ARVB brute.<br /><br /> *CT_COLORINDEX :* N’UTILISEZ PAS.<br /><br /> *CT_SYSCOLOR :* Une couleur système Windows à partir de SysColor.<br /><br /> *CT_VSCOLOR :* Une couleur de Visual Studio à partir de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC :* La couleur automatique.<br /><br /> *CT_TRACK_FOREGROUND :* N’UTILISEZ PAS.<br /><br /> *CT_TRACK_BACKGROUND :* N’UTILISEZ PAS.|  
+|source|[Obligatoire] La valeur de la couleur représentée au format hexadécimal|  
   
  Toutes les valeurs prises en charge par l’énumération __VSCOLORTYPE sont pris en charge par le schéma dans l’attribut de Type. Toutefois, nous vous recommandons d’utiliser uniquement CT_RAW et CT_SYSCOLOR.  
   

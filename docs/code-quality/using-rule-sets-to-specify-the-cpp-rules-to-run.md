@@ -62,7 +62,7 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 
 - Pour réduire les règles dans tous les groupes, choisissez **réduire tout**.
 
-- Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >**.
+- Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >** .
 
 - Pour ajouter ou supprimer des champs dans les colonnes de la règle, choisissez **Options de colonne**.
 

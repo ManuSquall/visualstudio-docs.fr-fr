@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 05/22/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976234"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918783"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mis à jour pour la [version 16.1](/visualstudio/releases/2019/release-notes/)**
+**Mis à jour pour la [version 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -41,8 +41,8 @@ Pour une liste complète de tout ce qui est nouveau dans cette version, consulte
 
 ## <a name="develop"></a>Développer
 
-Gagnez du temps avec les nouvelles fonctionnalités.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Longueur de la vidéo : 3,00 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Recherche améliorée
@@ -65,7 +65,7 @@ Il vous suffit d’appeler les refactorisations en appuyant sur **Ctrl +.** et e
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) met à profit l’intelligence artificielle (IA) pour améliorer vos efforts de développement de logiciels. Pour générer ses recommandations, IntelliCode s’entraîne sur 2 000 projets open source disponibles dans GitHub (chaque projet a plus de 100 étoiles).
 
- ![Animation d’IntelliCode dans Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animation d’IntelliCode dans Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Voici quelques exemples illustrant comment Visual Studio IntelliCode peut améliorer votre productivité :
 
@@ -90,7 +90,7 @@ Le nettoyage peut mettre en forme le code et appliquer les correctifs de code su
 
 Vous pouvez aussi enregistrer des collections de correcteurs comme profil. Par exemple, si vous avez un petit ensemble de correcteurs ciblés que vous appliquez fréquemment quand vous codez, et que vous avez un autre ensemble complet de correcteurs à appliquer avant une revue du code, vous pouvez configurer des profils pour répondre à ces différentes tâches.
 
-   ![Capture d’écran de la nouvelle commande de nettoyage de code dans Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Capture d’écran de la commande de nettoyage de code de configuration dans Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Rendu PMA (Per-Monitor Aware)
 
@@ -102,10 +102,16 @@ Avec le lancement de Visual Studio 2019, nous faisons de Visual Studio une appl
 
 Pour plus d’informations, consultez le billet de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Une meilleure expérience sur plusieurs écrans avec Visual Studio 2019).
 
+### <a name="test-explorer"></a>Explorateur de tests
+
+**Nouveautés dans 16.2** : Nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des grands jeux de test, un filtrage plus facile, des commandes plus détectables, des vues de sélection avec onglets et des colonnes personnalisables qui vous permettent d’affiner les informations des tests qui sont affichées.
+
+   ![Capture d’écran montrant les améliorations de l’interface utilisateur dans l’Explorateur de tests](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>Collaborer
 
-Résolvez les problèmes en équipe.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur de la vidéo : 4,22 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Workflow « cloud-first »
@@ -142,8 +148,8 @@ Pour plus d’informations, consultez le billet de blog [Code reviews using the 
 
 ## <a name="debug"></a>Débogage
 
-Focus sur un ciblage précis.
-<br><br>
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur de la vidéo : 3,54 minutes*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Gains de performance
@@ -178,6 +184,12 @@ Nous avons ajouté la prise en charge du ciblage des applications ASP.NET (Core 
 
 Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) et le billet de blog [Présentation du débogage avec voyage dans le temps pour Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
+### <a name="microsoft-edge-insider-support"></a>Prise en charge de Microsoft Edge Insider
+
+**Nouveautés dans 16.2** : Vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de débogage en utilisant le navigateur [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
+
+   ![Capture d’écran montrant le rendu de code JavaScript dans un navigateur](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>Étapes suivantes
 
 Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Et pour savoir ce que nous avons publié en préversion à ce jour, examinez les [Notes de publication de préversion](/visualstudio/releases/2019/release-notes-preview/).
@@ -194,9 +206,8 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Annonce de Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 pour Mac est désormais disponible](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Conférence Microsoft Build 2019](https://www.microsoft.com/build)
 * [Microsoft Connect() ; conférence en 2018](https://www.microsoft.com/connectevent)

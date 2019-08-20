@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création et débogage d’une Solution de flux de travail SharePoint | Microsoft Docs'
+title: Créer et déboguer la solution de flux de travail SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430367"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401059"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : Créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de workflow séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.
@@ -57,7 +57,7 @@ ms.locfileid: "63430367"
 
 3. Choisissez **bibliothèque** sur le **outils de bibliothèque** ruban, puis choisissez le **créer une colonne** bouton sur le ruban pour créer une nouvelle colonne.
 
-4. Nom de la colonne **Document état**, définissez son type sur **choix (menu sélectionnables)**, spécifiez les trois choix suivants, puis choisissez le **OK** bouton :
+4. Nom de la colonne **Document état**, définissez son type sur **choix (menu sélectionnables)** , spécifiez les trois choix suivants, puis choisissez le **OK** bouton :
 
     - **Révision nécessaire**
 

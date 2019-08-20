@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569966"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501076"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 
@@ -26,7 +26,19 @@ Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de b
 
 ## <a name="prerequisites"></a>Prérequis
 
-Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facultatif **stockage de données et de traitement** charge de travail installée dans Visual Studio. Pour l’installer, ouvrez **le programme d’installation de Visual Studio** et choisissez **plus** > **modifier** en regard de la version de Visual Studio que vous souhaitez modifier (si vous avez plus de deux versions sont installées). Sur le **charges de travail** sous l’onglet sous **Web et Cloud**, choisissez **stockage de données et de traitement**, puis cliquez sur **modifier** à ajouter à la charge de travail Visual Studio.
+Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facultatif **stockage de données et de traitement** charge de travail installée dans Visual Studio. Pour l’installer, ouvrez **le programme d’installation de Visual Studio** et choisissez **modifier** ou **plus** > **modifier** en regard de la version de Visual Studio que vous souhaitez modifier.
+
+::: moniker range=">=vs-2019"
+
+Sur le **charges de travail** sous l’onglet sous **autres ensembles d’outils**, choisissez **stockage de données et de traitement**, puis cliquez sur **modifier** à ajouter à la charge de travail Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Sur le **charges de travail** sous l’onglet sous **Web et Cloud**, choisissez **stockage de données et de traitement**, puis cliquez sur **modifier** à ajouter à la charge de travail Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Créer un projet et un fichier de base de données local
 

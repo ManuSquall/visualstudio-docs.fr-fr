@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441466"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824930"
 ---
 # <a name="extending-javascript-intellisense"></a>Extension de JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La fonctionnalité d’extensibilité JavaScript IntelliSense vous permet de per
   
  Le mécanisme de découverte automatique permet au service de langage rechercher automatiquement les extensions qui suivent la convention d’affectation de noms de fichier *nom_bibliothèque*. intellisense.js et qui se trouvent dans le même répertoire que la bibliothèque qui l’extension s’applique. Par exemple, une extension valide pour la bibliothèque jQuery serait jQuery.intellisense.js. Pour les extensions de jQuery plus restrictives, vous pouvez utiliser des noms de fichiers telles que jQuery-1.7.1.intellisense.js (une extension spécifique à la version) ou jQuery.ui.intellisense.js (il s’agit d’une extension pour une bibliothèque jQuery avec étendue). La version la plus restrictive de l’extension est utilisée si plusieurs extensions sont trouvée pour une bibliothèque donnée.  
   
- Si vous souhaitez utiliser l’extension pour tous les fichiers de votre projet JavaScript, vous pouvez choisir à la place ajouter l’extension à un groupe de référence. Il existe plusieurs types de groupes de référence, soit ceux qui incluent des références implicites et ceux qui incluent des références de travail dédié. Pour ajouter une extension, vous devez généralement ajouter le fichier en tant qu’un groupe de référence implicite, soit **implicite (Windows)**, **implicite (Web)**. Références implicites sont dans la portée de chaque fichier .js ouvert dans l’éditeur de Code. Lorsque vous utilisez cette méthode, vous devez ajouter l’extension et le fichier en complément de l’extension.  
+ Si vous souhaitez utiliser l’extension pour tous les fichiers de votre projet JavaScript, vous pouvez choisir à la place ajouter l’extension à un groupe de référence. Il existe plusieurs types de groupes de référence, soit ceux qui incluent des références implicites et ceux qui incluent des références de travail dédié. Pour ajouter une extension, vous devez généralement ajouter le fichier en tant qu’un groupe de référence implicite, soit **implicite (Windows)** , **implicite (Web)** . Références implicites sont dans la portée de chaque fichier .js ouvert dans l’éditeur de Code. Lorsque vous utilisez cette méthode, vous devez ajouter l’extension et le fichier en complément de l’extension.  
   
  Utilisez le **IntelliSense** page de la **Options** boîte de dialogue Ajouter une extension comme un groupe de référence. Vous pouvez accéder à la **IntelliSense** page en choisissant **outils**, **Options** dans la barre de menus, puis en sélectionnant **éditeur de texte**, **JavaScript**, **IntelliSense**, **références**. Pour plus d’informations sur les groupes de référence, consultez [JavaScript IntelliSense](../ide/javascript-intellisense.md) et [Options, éditeur de texte, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. Retourne un tableau qui représente des commentaires pour chaque paramètre dans la fonction. Les membres du tableau sont les suivantes :  
   
-    - `name`. Retourne une chaîne représentant le nom du paramètre.  
-  
-    - `comment`. Retourne une chaîne qui contient le paramètre de commentaire.  
+  - `name`. Retourne une chaîne représentant le nom du paramètre.  
+
+  - `comment`. Retourne une chaîne qui contient le paramètre de commentaire.  
   
 ### <a name="FunctionHelp"></a> functionHelp, propriété  
  Retourne à l’aide de la fonction. Cette propriété est disponible pour le `signaturehelp` objet d’événement.  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. Lecture/écriture. Obtient ou définit le tableau de signatures de fonction. Chaque élément du tableau est un `signature` objet. Certains `signature` propriétés, telles que `locid`, correspondent aux commun [commentaires de Documentation XML](../ide/xml-documentation-comments-javascript.md) attributs.  
   
-     Les membres de la `signature` objet incluent :  
-  
-    - `description`. Lecture/écriture. Retourne une chaîne qui décrit la fonction.  
-  
+  Les membres de la `signature` objet incluent :  
+
+  - `description`. Lecture/écriture. Retourne une chaîne qui décrit la fonction.  
+
+  - `locid`. Lecture/écriture. Retourne un identificateur de chaîne qui contient les informations de localisation de la fonction.  
+
+  - `helpKeyword`. Lecture/écriture. Retourne une chaîne qui contient le mot clé d’aide.  
+
+  - `externalFile`. Lecture/écriture. Retourne une chaîne qui représente le fichier qui contient l’ID de membre.  
+
+  - `externalid`. Lecture/écriture. Retourne une chaîne qui représente l’ID de membre de la fonction.  
+
+  - `params`. Lecture/écriture. Obtient ou définit le tableau de paramètres pour la fonction. Chaque élément dans le tableau de paramètres est un `parameter` objet qui possède des propriétés qui correspondent aux attributs suivants de la [ \<param >](../ide/param-javascript.md) élément :  
+
+    - `name`. Lecture/écriture. Retourne une chaîne qui représente le nom du paramètre.  
+
+    - `type`. Lecture/écriture. Retourne une chaîne qui représente le type de paramètre.  
+
+    - `elementType`. Lecture/écriture. Si le type est `Array`, retourne une chaîne qui représente le type des éléments dans le tableau.  
+
+    - `description`. Lecture/écriture. Retourne une chaîne qui décrit le paramètre.  
+
     - `locid`. Lecture/écriture. Retourne un identificateur de chaîne qui contient les informations de localisation de la fonction.  
-  
+
+    - `optional`. Lecture/écriture. Retourne une chaîne qui indique si le paramètre est facultatif. `true` Indique que le paramètre est facultatif ; `false` indique qu’il n’est pas.  
+
+  - `returnValue`. Lecture/écriture. Obtient ou définit un objet de valeur de retour avec des propriétés qui correspondent aux attributs suivants de la [ \<retourne >](../ide/returns-javascript.md) élément :  
+
+    - `type`. Lecture/écriture. Retourne une chaîne qui représente le type de retour.  
+
+    - `elementType`. Lecture/écriture. Si le type est `Array`, retourne une chaîne qui représente le type des éléments dans le tableau.  
+
+    - `description`. Lecture/écriture. Retourne une chaîne qui décrit la valeur de retour.  
+
+    - `locid`. Lecture/écriture. Retourne un identificateur de chaîne qui contient les informations de localisation de la fonction.  
+
     - `helpKeyword`. Lecture/écriture. Retourne une chaîne qui contient le mot clé d’aide.  
-  
+
     - `externalFile`. Lecture/écriture. Retourne une chaîne qui représente le fichier qui contient l’ID de membre.  
-  
+
     - `externalid`. Lecture/écriture. Retourne une chaîne qui représente l’ID de membre de la fonction.  
-  
-    - `params`. Lecture/écriture. Obtient ou définit le tableau de paramètres pour la fonction. Chaque élément dans le tableau de paramètres est un `parameter` objet qui possède des propriétés qui correspondent aux attributs suivants de la [ \<param >](../ide/param-javascript.md) élément :  
-  
-        - `name`. Lecture/écriture. Retourne une chaîne qui représente le nom du paramètre.  
-  
-        - `type`. Lecture/écriture. Retourne une chaîne qui représente le type de paramètre.  
-  
-        - `elementType`. Lecture/écriture. Si le type est `Array`, retourne une chaîne qui représente le type des éléments dans le tableau.  
-  
-        - `description`. Lecture/écriture. Retourne une chaîne qui décrit le paramètre.  
-  
-        - `locid`. Lecture/écriture. Retourne un identificateur de chaîne qui contient les informations de localisation de la fonction.  
-  
-        - `optional`. Lecture/écriture. Retourne une chaîne qui indique si le paramètre est facultatif. `true` Indique que le paramètre est facultatif ; `false` indique qu’il n’est pas.  
-  
-    - `returnValue`. Lecture/écriture. Obtient ou définit un objet de valeur de retour avec des propriétés qui correspondent aux attributs suivants de la [ \<retourne >](../ide/returns-javascript.md) élément :  
-  
-        - `type`. Lecture/écriture. Retourne une chaîne qui représente le type de retour.  
-  
-        - `elementType`. Lecture/écriture. Si le type est `Array`, retourne une chaîne qui représente le type des éléments dans le tableau.  
-  
-        - `description`. Lecture/écriture. Retourne une chaîne qui décrit la valeur de retour.  
-  
-        - `locid`. Lecture/écriture. Retourne un identificateur de chaîne qui contient les informations de localisation de la fonction.  
-  
-        - `helpKeyword`. Lecture/écriture. Retourne une chaîne qui contient le mot clé d’aide.  
-  
-        - `externalFile`. Lecture/écriture. Retourne une chaîne qui représente le fichier qui contient l’ID de membre.  
-  
-        - `externalid`. Lecture/écriture. Retourne une chaîne qui représente l’ID de membre de la fonction.  
   
 ### <a name="ParentObject"></a> parentObject, propriété  
  Retourne l’objet parent d’une fonction membre. Par exemple, pour `document.getElementByID`, `parentObject` retourne le `document` objet. Cette propriété est disponible pour le `signaturehelp` objet d’événement.  

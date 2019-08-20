@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424305"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823833"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammes de cas d’usage UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +88,13 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
     - Les acteurs représentent des classes d'utilisateurs, d'organisations et de systèmes externes qui interagissent avec votre système.  
   
-    - Renommez-les. Exemple : **Agence de carte de crédit du client, Restaurant.**  
+    - Renommez-les. Par exemple :  **Agence de carte de crédit du client, Restaurant.**  
   
 3. Faites glisser **cas d’usage** à partir de la boîte à outils vers les systèmes appropriés.  
   
     - Les cas d'usage représentent les activités que les acteurs exécutent avec l'aide de votre système.  
   
-    - Renommez-les à l'aide de titres que les acteurs eux-mêmes comprendront. N'utilisez pas de titres associés à votre code. Exemple : **Commander un repas, payer un repas, livrer le repas**.  
+    - Renommez-les à l'aide de titres que les acteurs eux-mêmes comprendront. N'utilisez pas de titres associés à votre code. Par exemple :  **Commander un repas, payer un repas, livrer le repas**.  
   
     - Commencer avec les transactions majeures telles que **commander un repas**, laissant jusqu'à occuper des interactions mineures telles que **sélectionner un élément de Menu**.  
   
@@ -115,13 +115,13 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
 - Créer **acteurs** pour représenter des classes de personnes, organisations, autres systèmes, logiciels ou périphériques qui interagissent avec votre système ou sous-système.  
   
-    - Pour savoir comment dessiner des acteurs et autres éléments, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Pour chaque ensemble d'objectifs distinct, identifiez les acteurs par type ou par rôle, même si les personnes physiques ou les entités sont les mêmes. Par exemple, Restaurant et Client sont des acteurs distincts, même si un employé de restaurant peut parfois être un client.  
+  - Pour savoir comment dessiner des acteurs et autres éléments, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Pour chaque ensemble d'objectifs distinct, identifiez les acteurs par type ou par rôle, même si les personnes physiques ou les entités sont les mêmes. Par exemple, Restaurant et Client sont des acteurs distincts, même si un employé de restaurant peut parfois être un client.  
   
 - Créer **cas d’usage** pour chacun des objectifs que chaque acteur cherche à atteindre avec le système.  
   
-    - Nommez et décrivez les cas d'usage à l'aide de mots compréhensibles par l'acteur, plutôt qu'à l'aide de termes d'implémentation.  
+  - Nommez et décrivez les cas d'usage à l'aide de mots compréhensibles par l'acteur, plutôt qu'à l'aide de termes d'implémentation.  
   
 - Utilisez **Associations** pour lier les acteurs aux cas d’usage.  
   
@@ -166,15 +166,15 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
  Vous pouvez modifier ces multiplicités.  
   
- Exemple :  
+ Par exemple :  
   
  ![Cas d’usage montrant la multiplicité plusieurs à plusieurs](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Pour indiquer que plusieurs acteurs de la même classe peuvent prendre part à une occurrence unique d’un cas d’usage, définissez la multiplicité à la fin de l’acteur de l’association à ** 1... \\***.  
+- Pour indiquer que plusieurs acteurs de la même classe peuvent prendre part à une occurrence unique d’un cas d’usage, définissez la multiplicité à la fin de l’acteur de l’association à **1..\*** .  
   
    Dans l'illustration, un ou plusieurs restaurants peuvent participer à l'exécution de la même commande de repas.  
   
-- Pour montrer que chaque acteur peut participer simultanément à plusieurs occurrences d’un cas d’usage, définissez la multiplicité à l’extrémité cas d’usage de l’association à **\\***.  
+- Pour montrer que chaque acteur peut participer simultanément à plusieurs occurrences d’un cas d’usage, définissez la multiplicité à l’extrémité cas d’usage de l’association à **\*** .  
   
    Dans l'illustration, chaque restaurant peut satisfaire plusieurs commandes à la fois.  
   
@@ -190,17 +190,17 @@ Dans Visual Studio, vous pouvez dessiner un *utiliser le diagramme de cas* pour 
   
    - **1** pour indiquer qu’exactement une instance de ce rôle participe à chaque lien.  
   
-   - **1..\\*** à l’état une ou plusieurs instances de ce rôle participent de chaque lien.  
+   - **1..\***  à l’état une ou plusieurs instances de ce rôle participent de chaque lien.  
   
    - **valeur 0.. 1** pour indiquer que la participation est facultative.  
   
-   - **\\*** à l’état de zéro ou plusieurs instances de ce rôle participent au lien.  
+   - **\*** pour indiquer que zéro ou plusieurs instances de ce rôle participent au lien.  
   
 > [!NOTE]
 > De nombreuses équipes ne placent pas les informations de multiplicité sur les diagrammes de cas d'usage et laissent les multiplicités définies sur la valeur par défaut (1). Au lieu de cela, elles fournissent ces informations dans des descriptions séparées des cas d'usage. Dans ce cas, toutes les multiplicités dans les diagrammes de cas d'usage seront masquées.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Utilisation d'un acteur ou d'un cas d'usage dans plusieurs diagrammes  
- Vous pouvez afficher les mêmes acteurs et cas d'usage dans plusieurs diagrammes. Exemple :  
+ Vous pouvez afficher les mêmes acteurs et cas d'usage dans plusieurs diagrammes. Par exemple :  
   
 - Vous pouvez décrire dans différents diagrammes les différents cas d'usage dans lesquels un acteur est impliqué.  
   

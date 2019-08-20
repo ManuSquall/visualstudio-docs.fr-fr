@@ -3,26 +3,23 @@ title: Problèmes de connexion aux abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/07/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008047"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377800"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Les comptes Microsoft (MSA) ne peuvent pas être créés avec des adresses e-mail professionnelles ou scolaires
-
 La capacité à créer un nouveau compte Microsoft (MSA) personnel à l’aide d’une adresse e-mail professionnelle ou scolaire n’est plus autorisée quand le domaine de messagerie est configuré dans Azure AD. Qu’est-ce que cela signifie ? Si votre organisation utilise Office 365 ou d’autres services professionnels de Microsoft qui reposent sur Azure AD, et si vous avez ajouté un nom de domaine à votre locataire Azure AD, les utilisateurs ne pourront plus créer de compte Microsoft personnel à l’aide d’une adresse e-mail dans votre domaine.
 
 ### <a name="why-was-this-change-made"></a>Quelle est la raison de ce changement ?
-
 Avoir un compte Microsoft personnel avec une adresse professionnelle comme nom d’utilisateur peut générer de nombreux problèmes pour les utilisateurs finaux comme pour les services informatiques. Par exemple :
 - Les utilisateurs peuvent penser que leur compte Microsoft personnel est conforme aux normes de l’entreprise et qu’ils sont en conformité quand ils enregistrent un document professionnel dans leur OneDrive.
 - Les utilisateurs qui quittent une organisation perdent généralement l’accès à leur adresse e-mail professionnelle. Dans ce cas, ils risquent de ne pas pouvoir se connecter à leur compte Microsoft personnel s’ils oublient leur mot de passe. L’inconvénient est que leur service informatique pourrait réinitialiser leur mot de passe et accéder au compte personnel d’anciens employés.
@@ -31,7 +28,6 @@ Avoir un compte Microsoft personnel avec une adresse professionnelle comme nom d
 La situation est particulièrement déroutante pour les utilisateurs qui ont deux comptes avec la même adresse e-mail (un dans Azure AD et un compte Microsoft).
 
 ### <a name="what-does-this-experience-look-like"></a>Quelle est l’expérience observée ?
-
 Si vous tentez de vous inscrire à une application consommateur Microsoft avec une adresse e-mail professionnelle ou scolaire, vous recevez le message ci-dessous.
 
    > [!div class="mx-imgBorder"]
@@ -49,12 +45,22 @@ Le bloc d’inscription décrit ici empêche uniquement la création de nouveaux
 > Si votre service informatique vous a demandé de créer un compte Microsoft personnel avec votre e-mail professionnel ou scolaire, par exemple pour accéder à des services Microsoft tels que Support Premier, discutez avec votre équipe d’administration avant de renommer votre compte.
 
 ## <a name="deleting-a-sign-in-address-may-prevent-access-to-a-subscription"></a>La suppression d’une adresse de connexion peut empêcher l’accès à un abonnement
-
 Si vous supprimez une ou plusieurs identités (MSA ou AAD) associées à votre abonnement, vos informations d’abonné (notamment votre nom d’utilisateur et ID de connexion) peuvent être rendues anonymes, entraînant la perte d’accès à votre abonnement.
 
 Pour éviter tout impact sur votre accès à l’abonnement, utilisez l’une de ces techniques :
 - Déployez un système de gestion d’identité unique, AAD ou MSA mais pas les deux
 - Associez les identités AAD et MSA par le biais du locataire.
+
+## <a name="signing-in-may-fail-when-using-aliases"></a>La connexion risque de ne pas fonctionner en cas d’utilisation d’alias
+Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
+
+### <a name="what-is-aliasing"></a>Qu’est-ce que l’utilisation d’alias ?
+L’utilisation d’alias fait référence aux utilisateurs qui emploient des identités différentes pour se connecter à Windows (ou à leur compte Active Directory) et accéder à leur messagerie électronique.
+
+Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa connexion active (comme JohnD@contoso.com), mais les utilisateurs accèdent à leurs comptes de messagerie à l’aide d’alias ou de noms conviviaux (comme John.Doe@contoso.com). Pour de nombreux clients qui gèrent leurs abonnements à travers le Centre de gestion des licences en volume (VLSC), cela peut se traduire par un échec de la connexion, car l’adresse e-mail fournie (John.Doe@contoso.com) ne correspond pas à l’adresse d’annuaire (JohnD@contoso.com) requise pour une authentification correcte via l’option « Compte professionnel ou scolaire ».
+
+### <a name="what-options-do-i-have"></a>Quelles sont les options dont je dispose ?
+En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise. Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrez comment [lier des comptes MSA et AAD](/azure/active-directory/b2b/add-users-administrator) dans AAD.

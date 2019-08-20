@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406618"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746067"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accéder aux données locales et distantes dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.
@@ -28,7 +28,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ## <a name="local-data"></a>Données locales
  Avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous pouvez charger et stocker des données localement à l'aide de l'une des méthodes suivantes :
 
-- Répertoire de données[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
+- Répertoire de données[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 - Stockage isolé
 
@@ -37,7 +37,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ### <a name="clickonce-data-directory"></a>Répertoire de données ClickOnce
  Chaque application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installée sur un ordinateur local possède un répertoire de données stocké dans le dossier Documents and Settings de l'utilisateur. Tous les fichiers inclus dans une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et marqués en tant que fichiers de « données » sont copiés dans ce répertoire quand une application est installée. Les fichiers de données peuvent être associés à tout type de fichier, les plus fréquemment utilisés étant les fichiers texte, XML et les fichiers de base de données tels que les fichiers .mdb de Microsoft Access.
 
- Le répertoire de données est destiné aux données gérées par l'application, c'est-à-dire les données que l'application stocke et gère explicitement. Tous les fichiers statiques qui ne sont pas des dépendances et ne sont pas marqués en tant que « données » dans le manifeste d'application résident plutôt dans le répertoire de l'application. Ce répertoire contient les fichiers exécutables (*.exe*) et les assemblys de l’application.
+ Le répertoire de données est destiné aux données gérées par l'application, c'est-à-dire les données que l'application stocke et gère explicitement. Tous les fichiers statiques qui ne sont pas des dépendances et ne sont pas marqués en tant que « données » dans le manifeste d'application résident plutôt dans le répertoire de l'application. Ce répertoire contient les fichiers exécutables ( *.exe*) et les assemblys de l’application.
 
 > [!NOTE]
 > Quand une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est désinstallée, son répertoire de données est également supprimé. N’utilisez jamais le répertoire de données pour stocker les données gérées par l’utilisateur final, comme des documents.
@@ -60,7 +60,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 
  Vous pouvez également obtenir le chemin d'accès au répertoire de données en utilisant les variables appropriées sur la classe <xref:System.Windows.Forms.Application> , telles que <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- La manipulation d'autres types de fichiers peut nécessiter des autorisations supplémentaires. Par exemple, si vous souhaitez utiliser une base de données Access (*.mdb*) fichier, votre application doit déclarer une confiance totale pour pouvoir utiliser les informations pertinentes \<XRef : System.Data > classes.
+ La manipulation d'autres types de fichiers peut nécessiter des autorisations supplémentaires. Par exemple, si vous souhaitez utiliser une base de données Access ( *.mdb*) fichier, votre application doit déclarer une confiance totale pour pouvoir utiliser les informations pertinentes \<XRef : System.Data > classes.
 
 #### <a name="data-directory-and-application-versions"></a>Répertoire de données et versions d’application
  Chaque version d'une application possède son propre répertoire de données, qui est isolé des autres versions. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée ce répertoire que des fichiers de données soient inclus ou non dans le déploiement, afin que l'application dispose d'un emplacement pour créer des fichiers de données au moment de l'exécution. Quand une nouvelle version d'une application est installée, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copie tous les fichiers de données existants du répertoire de données de la version précédente dans le répertoire de données de la nouvelle version, qu'ils aient été inclus dans le déploiement d'origine ou créés par l'application.
@@ -72,7 +72,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ### <a name="isolated-storage"></a>Stockage isolé
  Le stockage isolé fournit une API pour la création et l'accès aux fichiers à l'aide d'une API simple. L'emplacement réel des fichiers stockés est masqué pour le développeur et l'utilisateur.
 
- Le stockage isolé fonctionne dans toutes les versions du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Le stockage isolé fonctionne également dans les applications partiellement approuvées sans nécessité d'autorisations supplémentaires. Vous devez utiliser le stockage isolé si votre application doit s'exécuter en mode de confiance partielle, mais qu'elle doit conserver les données propres à l'application.
+ Le stockage isolé fonctionne dans toutes les versions du .NET Framework. Le stockage isolé fonctionne également dans les applications partiellement approuvées sans nécessité d'autorisations supplémentaires. Vous devez utiliser le stockage isolé si votre application doit s'exécuter en mode de confiance partielle, mais qu'elle doit conserver les données propres à l'application.
 
  Pour plus d'informations, consultez [Stockage isolé](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
  Si votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ne peut pas accéder à un serveur web en raison des restrictions de sécurité, l'application doit déclarer <xref:System.Net.WebPermission> pour ce site web. Pour plus d’informations sur l’augmentation des autorisations de sécurité pour un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, consultez [applications ClickOnce Secure](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>Accéder aux données via un service Web XML
- Si vous exposez vos données en tant que service web XML, vous pouvez accéder aux données à l'aide d'un proxy de service web XML. Le proxy est une classe [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] que vous créez à l'aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les opérations du service web XML, par exemple, la récupération de clients, le passage de commandes, etc., sont exposées en tant que méthodes sur le proxy. De cette façon, les services web sont beaucoup plus faciles à utiliser que les fichiers de texte brut ou XML.
+ Si vous exposez vos données en tant que service web XML, vous pouvez accéder aux données à l'aide d'un proxy de service web XML. Le proxy est une classe .NET Framework que vous créez à l’aide [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les opérations du service web XML, par exemple, la récupération de clients, le passage de commandes, etc., sont exposées en tant que méthodes sur le proxy. De cette façon, les services web sont beaucoup plus faciles à utiliser que les fichiers de texte brut ou XML.
 
  Si votre service web XML fonctionne sur HTTP, le service sera lié par les mêmes restrictions de sécurité que les classes <xref:System.Net.WebClient> et <xref:System.Net.HttpWebRequest> .
 

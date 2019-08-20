@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178323"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
   
 3. Définissez dans le fichier projet toutes les propriétés et tous les éléments qui doivent remplacer les définitions par défaut des propriétés et des éléments dans le projet importé.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant montre le fichier MyCommon.targets qui est importé par le deuxième exemple de code. Le fichier .targets évalue les propriétés du projet importateur pour configurer la build.  
   
 ```  
@@ -101,7 +101,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
 </Project>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a>Exemples  
  L’exemple de code suivant importe le fichier MyCommon.targets.  
   
 ```  

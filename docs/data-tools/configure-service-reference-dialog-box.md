@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567971"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925671"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
-Le **configurer la référence de Service** boîte de dialogue vous permet de configurer le comportement des services Windows Communication Foundation (WCF).
+La boîte de dialogue **configurer la référence de service** vous permet de configurer le comportement des services Windows Communication Foundation (WCF).
 
 Pour accéder à la boîte de dialogue **Configurer la référence de service**, cliquez avec le bouton droit sur une référence de service dans l’**Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.
 
@@ -43,67 +43,67 @@ Pour accéder à la boîte de dialogue **Configurer la référence de service**,
 
 ## <a name="uielement-list"></a>Liste UIElement
 
- **Adresse**
+**Adresse**
 
- Met à jour l’adresse web dans lesquels une référence de service recherche pour un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement et transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d’adresse.
+Met à jour l’adresse Web à laquelle une référence de service recherche un service. Par exemple, lors du développement, le service peut être hébergé sur un serveur de développement, puis déplacé ultérieurement vers un serveur de production, ce qui nécessite un changement d’adresse.
 
 > [!NOTE]
 > L’élément Adresse n’est pas disponible quand la boîte de dialogue **Configurer la référence de service** est affichée à partir de la boîte de dialogue **Ajouter une référence de service**.
 
- **Niveau d’accès pour les classes générées**
+**Niveau d’accès pour les classes générées**
 
- Détermine le niveau d'accès du code pour les classes clientes WCF.
+Détermine le niveau d'accès du code pour les classes clientes WCF.
 
 > [!NOTE]
 > Pour les projets de site web, cette option a toujours la valeur `Public` et ne peut pas être modifiée. Pour plus d’informations, consultez [Dépannage des références de service](../data-tools/troubleshooting-service-references.md).
 
- **Générer des opérations asynchrones**
+**Générer des opérations asynchrones**
 
- Détermine si les méthodes de service WCF est appelée de façon synchrone (valeur par défaut) ou asynchrone.
+Détermine si les méthodes de service WCF sont appelées de façon synchrone (valeur par défaut) ou asynchrone.
 
- **Générer des opérations basées sur les tâches**
+**Générer des opérations basées sur les tâches**
 
- Lorsque vous écrivez du code asynchrone, cette option vous permet de tirer parti de la bibliothèque (parallèle de tâches) qui a été introduit avec .NET 4. Consultez [(TPL) de bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+Lors de l’écriture de code asynchrone, cette option vous permet de tirer parti de la bibliothèque parallèle de tâches (TPL) qui a été introduite avec .NET 4. Consultez [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
 
- **Toujours générer des contrats de message**
+**Toujours générer des contrats de message**
 
- Détermine si les types de contrat de message sont générés pour un client WCF. Pour plus d’informations sur les contrats de message, consultez [Utilisation de contrats de message](/dotnet/framework/wcf/feature-details/using-message-contracts).
+Détermine si les types de contrat de message sont générés pour un client WCF. Pour plus d’informations sur les contrats de message, consultez [Utilisation de contrats de message](/dotnet/framework/wcf/feature-details/using-message-contracts).
 
- **Type de collection**
+**Type de collection**
 
- Spécifie le type de collection de listes pour un client WCF. Le type par défaut est <xref:System.Array>.
+Spécifie le type de collection de listes pour un client WCF. Le type par défaut est <xref:System.Array>.
 
- **Type de collection Dictionnaire**
+**Type de collection Dictionnaire**
 
- Spécifie le type de collection de dictionnaires pour un client WCF. Le type par défaut est <xref:System.Collections.Generic.Dictionary%602>.
+Spécifie le type de collection de dictionnaires pour un client WCF. Le type par défaut est <xref:System.Collections.Generic.Dictionary%602>.
 
- **Réutiliser les types dans les assemblys référencés**
+**Réutiliser les types dans les assemblys référencés**
 
- Détermine si un client WCF essaie de réutiliser ce qui existe déjà dans les assemblys référencés au lieu de générer de nouveaux types lorsqu’un service est ajouté ou mis à jour. Cette option est cochée par défaut.
+Détermine si un client WCF tente de réutiliser ce qui existe déjà dans les assemblys référencés au lieu de générer de nouveaux types lorsqu’un service est ajouté ou mis à jour. Cette option est cochée par défaut.
 
- **Réutiliser les types dans tous les assemblys référencés**
+**Réutiliser les types dans tous les assemblys référencés**
 
- Lorsque sélectionné, tous les types dans les **liste des assemblys référencés** sont réutilisés si possible. Cette option est activée par défaut.
+Lorsque cette option est sélectionnée, tous les types dans la **liste des assemblys référencés** sont réutilisés si possible. Cette option est activée par défaut.
 
- **Réutiliser les types dans les assemblys référencés spécifiés**
+**Réutiliser les types dans les assemblys référencés spécifiés**
 
- Lorsque sélectionné, seuls les types sélectionnés dans le **liste des assemblys référencés** sont réutilisées.
+Lorsque cette option est sélectionnée, seuls les types sélectionnés dans la **liste des assemblys référencés** sont réutilisés.
 
- **Liste des assemblys référencés**
+**Liste des assemblys référencés**
 
- Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
+Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
 
- **Ajouter une référence web**
+**Ajouter une référence web**
 
- Affiche la boîte de dialogue **Ajouter une référence web**.
+Affiche la boîte de dialogue **Ajouter une référence web**.
 
 > [!NOTE]
-> Cette option doit uniquement être utilisée pour les projets qui ciblent la version 2.0 de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Cette option doit être utilisée uniquement pour les projets qui ciblent la version 2,0 du .NET Framework.
 >
 > [!NOTE]
-> Le **ajouter une référence Web** bouton est disponible uniquement lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.
+> Le bouton **Ajouter une référence Web** est disponible uniquement lorsque la boîte de dialogue **configurer la référence de service** s’affiche dans la boîte de **dialogue Ajouter une référence de service**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Ajoutez une référence à un service web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Guide pratique : Ajouter une référence à un service Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Services Windows Communication Foundation et WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

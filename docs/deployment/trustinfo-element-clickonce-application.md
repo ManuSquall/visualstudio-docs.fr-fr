@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d6ac13c6eb76bff5ffc07043fd20063700237fc
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927297"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745593"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;, élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.
@@ -87,7 +87,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.
 
 ## <a name="ipermission"></a>IPermission
- Optionnel. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.
+ Facultatif. Cet élément est un enfant de l’élément `PermissionSet` . Le `IPermission` élément identifie entièrement une classe d’autorisation dans le .NET Framework. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.
 
 - `class`
 
@@ -124,7 +124,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .
 
 ## <a name="assemblyrequest"></a>assemblyRequest
- Optionnel. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.
+ Facultatif. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.
 
 - `Name`
 
@@ -135,10 +135,10 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
- Optionnel. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.
+ Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.
 
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel
- Optionnel. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.
+ Facultatif. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.
 
 - `Level`
 

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201617"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ ms.locfileid: "58951773"
 |/=|/=|/=|Diviser|
 |==|=|==|Equals|
 |^|Xor|^|Xor|
-|^=|Xor=|^=|Xor|
+|^=|XOR =|^=|Xor|
 |>|>|>|Comparer|
 |>=|>=|>=|Comparer|
 |++|N/A|++|Incrémentation|
 |<>|!=|Equals|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|MAJ|
+|<<=|<<=|<<=|MAJ|
 |<|<|<|Comparer|
 |<=|<=|\<=|Comparer|
 |&&|N/A|&&|LogicalAnd|
@@ -83,7 +83,7 @@ ms.locfileid: "58951773"
 
  La règle vérifie également les opérateurs de cast implicites et explicites dans un type (`SomeType`) en recherchant les méthodes nommées `ToSomeType` et `FromSomeType`.
 
- En C#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est aussi implicitement surchargé.
+ En c#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est aussi implicitement surchargé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, implémentez la méthode alternative pour l’opérateur. Nommez-le à l’aide de l’autre nom recommandé.

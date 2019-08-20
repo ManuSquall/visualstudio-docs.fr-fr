@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203812"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimiser la vitesse de démarrage de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Si Visual Studio détecte un démarrage lent, un message s’affiche pour vous s
 
 ![Gérer le niveau de performance de Visual Studio - Fenêtre contextuelle](../ide/media/vside-perfdialog-popup.PNG "Gérer le niveau de performance de Visual Studio - Fenêtre contextuelle")
 
-La boîte de dialogue **Gérer le niveau de performance de Visual Studio** comporte deux catégories : **Extensions** et **Fenêtres d’outils**.
+Le **gérer les performances de Visual Studio** boîte de dialogue comporte deux catégories : **Extensions** et **Windows de l’outil**.
 
 ### <a name="control-extensions"></a>Extensions de contrôle
 Si une extension ralentit le démarrage de Visual Studio, elle apparaît dans la boîte de dialogue **Gérer le niveau de performance de Visual Studio** quand vous choisissez l’un des types d’extension. Si l’impact sur la vitesse de démarrage (indiqué dans la section **Impact**) est trop élevé, vous pouvez choisir de toujours désactiver l’extension au démarrage en choisissant le bouton **Désactiver**. Vous pouvez réactiver l’extension pour les sessions ultérieures à l’aide du Gestionnaire d’extensions ou de la boîte de dialogue Gérer le niveau de performance de Visual Studio.
@@ -43,8 +43,8 @@ En plus des extensions de démarrage, vous pouvez également désactiver les ext
 ### <a name="control-tool-windows"></a>Contrôler les fenêtres d’outils
 Si une fenêtre d’outils ralentit le démarrage de Visual Studio, vous pouvez choisir de conserver son comportement par défaut (ce qui ne procure aucun avantage en termes de vitesse de démarrage) ou de remplacer son comportement par l’un des deux suivants :
 
-- **Ne pas afficher la fenêtre au démarrage :** si vous choisissez cette option, la fenêtre d’outils spécifiée est toujours fermée quand vous ouvrez Visual Studio, même si vous l’avez laissé ouverte dans une session précédente. Vous pouvez ouvrir la fenêtre d’outils à partir du menu.
-- **Masquer automatiquement la fenêtre au démarrage :** si vous avez laissé une fenêtre d’outils ouverte lors d’une session précédente, cette option réduit le groupe de la fenêtre d’outils au démarrage pour éviter l’initialisation de la fenêtre. C’est un bon choix si vous utilisez souvent une fenêtre d’outils, car elle est quand même disponible mais n’affecte plus la vitesse de démarrage de Visual Studio.
+- **Ne pas afficher la fenêtre au démarrage :** Si vous choisissez cette option, la fenêtre Outil spécifiée sera toujours fermée lorsque vous ouvrez Visual Studio, même si laissé ouvert dans une session précédente. Vous pouvez ouvrir la fenêtre d’outils à partir du menu.
+- **Masquer automatiquement la fenêtre au démarrage :** Si une fenêtre outil a été laissée ouverte dans une session précédente, cette option réduit groupe de la fenêtre outil au démarrage pour éviter l’initialisation de la fenêtre outil. C’est un bon choix si vous utilisez souvent une fenêtre d’outils, car elle est quand même disponible mais n’affecte plus la vitesse de démarrage de Visual Studio.
 
 ![Gérer le niveau de performance de Visual Studio - Fenêtres d’outils](../ide/media/vside-perfdialog-toolwindows.PNG "Gérer le niveau de performance de Visual Studio - Fenêtres d’outils")
 

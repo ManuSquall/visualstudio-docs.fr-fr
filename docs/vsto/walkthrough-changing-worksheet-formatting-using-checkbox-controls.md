@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox'
+title: Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438612"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328701"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases à cocher sur une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).
