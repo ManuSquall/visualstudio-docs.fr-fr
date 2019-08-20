@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825852"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924522"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
 La vue Informations sur les ressources présente un graphique chronologique des événements bloquants provoqués par des conflits sur une ressource sélectionnée. Un événement bloquant se produit quand un thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.
@@ -54,7 +54,7 @@ La vue Informations sur les ressources présente un graphique chronologique des 
 
 - Dans le graphique chronologique, cliquez sur **Total**.
 
-     Le mode Conflits s’affiche pour la ressource. Pour plus d’informations, consultez [Mode Conflits de ressources](../profiling/resource-contentions-view-contention-data.md)
+     Le mode Conflits s’affiche pour la ressource. Pour plus d’informations, consultez [Mode Conflits de ressources](../profiling/resource-contentions-view-contention-data.md).
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Pour afficher tous les événements de conflit d’un thread
 

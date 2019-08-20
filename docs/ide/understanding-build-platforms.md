@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416931"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925827"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
 
@@ -30,9 +30,11 @@ Vous pouvez stocker différentes versions de propriétés de solution et de proj
 
 ## <a name="in-this-section"></a>Dans cette section
 
- [Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md) : explique comment configurer un projet pour cibler une plateforme spécifique.
+[Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)\
+Explique comment configurer un projet pour cibler une plateforme spécifique.
 
- [Guide pratique pour configurer des projets pour plusieurs plateformes cibles](../ide/how-to-configure-projects-to-target-multiple-platforms.md) : explique comment configurer un projet pour cibler plusieurs plateformes.
+[Guide pratique pour configurer des projets pour qu’ils ciblent plusieurs plateformes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Explique comment configurer un projet pour cibler plusieurs plateformes.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919567"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585012"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification de base pour le code managé
-L’ensemble de règles de règles de vérification de base se concentre sur les erreurs logiques et les erreurs courantes dans l’utilisation des API de Framework. Les règles de vérification de base incluent les règles de l’ensemble de règles des règles minimales recommandées. Pour plus d’informations, consultez ensemble de règles des [règles recommandées managées pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) . vous devez inclure cet ensemble de règles pour développer la liste des avertissements signalés par les règles minimales recommandées.
+
+L’ensemble de règles de règles de vérification de base se concentre sur les erreurs logiques et les erreurs courantes dans l’utilisation des API de Framework. Les règles de vérification de base incluent les règles de l’ensemble de règles des [règles recommandées managées](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Le tableau suivant décrit toutes les règles de l’ensemble de règles de règles de vérification de base Microsoft.
 

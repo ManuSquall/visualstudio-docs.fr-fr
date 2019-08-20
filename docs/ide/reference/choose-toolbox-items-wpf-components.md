@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744977"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869762"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
@@ -77,11 +77,11 @@ L’ajout d’un contrôle personnalisé ou d’un <xref:System.Windows.Controls
 
 - Cela ne permet pas une mise à jour correcte lorsque vous passez d’une configuration de solution Debug à une configuration Release, et inversement. Cela est dû au fait que la référence n’est pas une référence de projet, mais une référence à l’assembly sur disque. Si le contrôle fait partie de la solution actuelle, lorsque vous passez de Debug à Release, votre projet continue à référencer la version Debug du contrôle.
 
-En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> a la valeur `false`, le contrôle n’apparaît pas dans la boîte à outils.
+En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) est défini sur `false`, le contrôle n’apparaît pas dans la boîte à outils.
 
 Vous pouvez référencer directement vos contrôles dans la vue XAML en mappant l’espace de noms et l’assembly de votre contrôle.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Boîte à outils](../../ide/reference/toolbox.md)
-- [Prise en main de WPF](../../designers/getting-started-with-wpf.md)
+- [Bien démarrer avec WPF](../../designers/getting-started-with-wpf.md)

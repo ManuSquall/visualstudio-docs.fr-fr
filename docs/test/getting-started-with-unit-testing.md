@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003217"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870165"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -165,6 +165,8 @@ Pour créer des tests unitaires qui utilisent [NUnit](https://nunit.org/) :
    ![Dépendances NuGet de NUnit dans l’Explorateur de solutions](media/vs-2019/nunit-nuget-dependencies.png)
 
 4. Ajoutez une référence du projet de test au projet qui contient le code à tester.
+
+   Cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions**, puis sélectionnez **Ajouter** > **Référence**. (Vous pouvez également ajouter une référence à partir du menu contextuel du nœud **Références** ou **Dépendances**.)
 
 5. Ajoutez du code à votre méthode de test.
 

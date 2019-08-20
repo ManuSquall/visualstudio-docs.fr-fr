@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547945"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585136"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Ensembles de règles pour les packages de l’analyseur
 
 Les ensembles de règles prédéfinis sont inclus dans certains packages de l’analyseur NuGet. Par exemple, les ensembles de règles inclus dans le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) (à partir de la version 2.6.2) activent ou désactivent les règles en fonction de leur catégorie, telles que la sécurité, l’attribution de noms ou les performances. Grâce à l’utilisation d’ensembles de règles, il est facile de voir rapidement les violations de règle qui se rapportent à une catégorie de règle particulière.
 
-Si vous effectuez une migration à partir d’une analyse «FxCop» héritée vers une analyse de code basée sur .NET Compiler Platform, ces ensembles de règles vous permettent de continuer à utiliser les mêmes configurations de règles que celles que vous avez utilisées précédemment.
+Si vous effectuez une migration à partir d’une analyse «FxCop» héritée vers une analyse de code basée sur .NET Compiler Platform, ces ensembles de règles vous permettent de continuer à utiliser des configurations de règles similaires à [celles que vous avez utilisées précédemment](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Utiliser les ensembles de règles du package de l’analyseur
 
@@ -58,7 +58,7 @@ Les ensembles de règles de l’analyseur prédéfinis incluent trois groupes de
 
 En outre, il existe deux ensembles de règles pour chaque catégorie de règles dans le package, telles que les performances ou la sécurité. Un ensemble de règles active toutes les règles de la catégorie, et un ensemble de règles honore les paramètres de gravité et d’activation par défaut pour chaque règle de la catégorie.
 
-Le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) contient des ensembles de règles pour les catégories suivantes, qui correspondent aux ensembles de règles disponibles pour l’analyse héritée:
+Le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) comprend des ensembles de règles pour les catégories suivantes:
 
 - design
 - documentation

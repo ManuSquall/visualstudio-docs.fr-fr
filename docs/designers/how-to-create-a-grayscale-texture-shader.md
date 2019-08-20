@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82e72152fbbd879dc6a1388318b0fc5523f1a918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a8e0295864986ad5cfae2f304f5b0f802f2fb12
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897629"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924303"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procédure : Créer un nuanceur de texture avec nuances de gris
 

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821406"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918043"
 ---
 # <a name="installation"></a>Installation
 
@@ -44,7 +44,7 @@ Avant d’entraîner des modèles de Deep Learning sur votre ordinateur local, v
 
 ### <a name="nvidia-gpu-driver"></a>Pilote GPU NVIDIA
 
-Les frameworks deep learning tirent parti de la GPU NVIDIA pour permettre aux machines d’apprendre à une vitesse, avec une précision et à une échelle proches de l’intelligence artificielle réelle. Si votre ordinateur possède des cartes GPU NVIDIA, rendez-vous [ici](http://www.nvidia.com/Download/index.aspx) ou essayez une mise à jour du système d’exploitation pour installer le pilote le plus récent.
+Les frameworks deep learning tirent parti de la GPU NVIDIA pour permettre aux machines d’apprendre à une vitesse, avec une précision et à une échelle proches de l’intelligence artificielle réelle. Si votre ordinateur possède des cartes GPU NVIDIA, consultez [Téléchargements de pilotes NVIDIA](http://www.nvidia.com/Download/index.aspx) ou essayez de mettre à jour le système d’exploitation pour installer le pilote le plus récent.
 
 ### <a name="cuda"></a>CUDA
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK ne prend actuellement pas en charge macOS.
 
-Pour installer le package CNTK Python, consultez [Guide pratique pour installer CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
+Pour installer le package CNTK Python, consultez [Guide pratique pour installer CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) est un framework deep learning basé sur Python visant la flexibilité. Il fournit des API de différenciation automatique basées sur **l’approche définie selon l’exécution** (ou graphiques de calculs dynamiques), ainsi que des API de haut niveau et orientées objet pour créer et effectuer l’apprentissage des réseaux neuronaux.
+[Chainer](https://chainer.org/) est un framework deep learning basé sur Python visant la flexibilité. Il fournit des API de différenciation automatique basées sur l’approche de définition par exécution (également appelées graphes de calcul dynamique), ainsi que des API de haut niveau orientées objet pour créer et former des réseaux neuronaux.
 
 Pour activer la prise en charge CUDA, installez [CuPy](https://github.com/cupy/cupy) :
 

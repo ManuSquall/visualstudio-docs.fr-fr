@@ -12,20 +12,20 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317651"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923910"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Générer une application OpenGL ES sur Android et iOS
 
 Vous pouvez créer des solutions et des projets Visual Studio pour les applications iOS et Android qui partagent du code commun. Cet article vous guide tout au long d’un modèle de solution qui crée une application iOS simple et une application Android Native Activity. Les applications ont en commun une partie de code C++ qui utilise OpenGL ES pour afficher le même cube pivotant animé sur chaque plateforme. OpenGL ES (OpenGL for Embedded Systems ou GLES) est une API graphique 2D et 3D qui est prise en charge par de nombreux appareils mobiles.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
-Avant de pouvoir créer une application OpenGL ES pour iOS et Android, assurez-vous que votre système répond à toutes les exigences. Si cela n’est pas déjà fait, installez le développement mobile avec charge de travail C++ dans Visual Studio Installer. Pour générer pour iOS, incluez les outils de développement iOS C++ facultatifs. Pour générer pour Android, installez les outils de développement C++ Android et les outils tiers requis : Android NDK, Apache Ant, Émulateur Google Android et Hardware Accelerated Execution Manager Intel. Ensuite, configurez Intel HAXM et Émulateur Android à exécuter sur votre système. Pour obtenir plus d’informations et des instructions détaillées, consultez [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Pour générer et tester l’application iOS, vous devez disposer d’un ordinateur Mac configuré conformément aux instructions d’installation. Pour plus d’informations sur la configuration requise pour développer du code pour iOS, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+Avant de pouvoir créer une application OpenGL ES pour iOS et Android, assurez-vous que votre système répond à toutes les exigences. Si cela n’est pas déjà fait, installez le développement mobile avec charge de travail C++ dans Visual Studio Installer. Pour générer pour iOS, incluez les outils de développement iOS C++ facultatifs. Pour générer pour Android, installez les outils de développement C++ Android et les outils tiers requis : Android NDK, Apache Ant, Émulateur Google Android et Hardware Accelerated Execution Manager Intel. Ensuite, configurez Intel HAXM et Émulateur Android à exécuter sur votre système. Pour obtenir plus d’informations et des instructions détaillées, consultez [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Pour générer et tester l’application iOS, vous devez disposer d’un ordinateur Mac configuré conformément aux instructions d’installation. Pour plus d’informations sur la configuration requise pour développer du code pour iOS, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Créer un projet Application OpenGLES
 
@@ -158,7 +158,7 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 1. Choisissez votre appareil iOS dans la barre d’outils pour exécuter l’application sur votre périphérique joint à votre Mac. Si l’application ne démarre pas, vérifiez que l’appareil autorise votre application déployée à s’exécuter sur l’appareil. Cette autorisation peut être définie en accédant à **Paramètres** > **Général** > **Gestion des périphériques** sur l’appareil. Sélectionnez votre compte d’application développeur, faites confiance à votre compte et vérifiez l’application. Essayez à nouveau d’exécuter l’application à partir de Visual Studio.
 
    ![Application iOS sur un appareil iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur Visual Studio pour examiner les variables locales, consulter la pile des appels et observer les valeurs.
 
    ![Débogueur au point d’arrêt dans une application iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

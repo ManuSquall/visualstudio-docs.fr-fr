@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791842"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926341"
 ---
 # <a name="alias-command"></a>Alias, commande
 Crée un alias pour une commande complète, pour une commande complète et des arguments ou pour un autre alias.
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Arguments
- `aliasname` Facultatif. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
+`aliasname`\
+facultatif. Nom du nouvel alias. Si aucune valeur n’est fournie pour `aliasname`, la liste des alias en cours accompagnés de leur définition s’affiche.
 
- `aliasstring` Facultatif. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
+`aliasstring`\
+facultatif. Nom complet de la commande ou alias existant suivi des paramètres souhaités pour créer un alias. Si aucune valeur n’est fournie pour `aliasstring`, le nom et la chaîne associés à l’alias spécifié s’affichent.
 
 ## <a name="switches"></a>Commutateurs
- /delete ou /del ou /d (facultatif). Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.
+/delete ou /del ou /d\
+facultatif. Supprime l’alias spécifié, qui n’apparaît plus dans la liste de saisie semi-automatique.
 
- /reset (facultatif). Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.
+/reset\
+facultatif. Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.
 
 ## <a name="remarks"></a>Remarques
- Dans la mesure où un alias représente des commandes, il doit être placé au début de la ligne de commande.
+Dans la mesure où un alias représente des commandes, il doit être placé au début de la ligne de commande.
 
- Lors de l’émission de cette commande, vous devez inclure les commutateurs immédiatement après la commande, et non après les alias, sans quoi le commutateur lui-même sera inclus dans la chaîne de l’alias.
+Lors de l’émission de cette commande, vous devez inclure les commutateurs immédiatement après la commande, et non après les alias, sans quoi le commutateur lui-même sera inclus dans la chaîne de l’alias.
 
- Le commutateur `/reset` demande confirmation avant de restaurer les alias. Il n’existe pas de forme abrégée de `/reset`.
+Le commutateur `/reset` demande confirmation avant de restaurer les alias. Il n’existe pas de forme abrégée de `/reset`.
 
 ## <a name="examples"></a>Exemples
- Cet exemple crée un alias, `upper`, pour la commande Edit.MakeUpperCase complète.
+Cet exemple crée un alias, `upper`, pour la commande Edit.MakeUpperCase complète.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- Cet exemple supprime l’alias `upper`.
+Cet exemple supprime l’alias `upper`.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- Cet exemple affiche la liste de tous les alias en cours accompagnés de leur définition.
+Cet exemple affiche la liste de tous les alias en cours accompagnés de leur définition.
 
 ```cmd
 >Tools.Alias

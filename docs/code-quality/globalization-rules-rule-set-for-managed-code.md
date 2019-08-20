@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816398"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584981"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de globalisation pour le code managé
-Vous pouvez utiliser la règle des règles de globalisation Microsoft à vous concentrer sur les problèmes qui peuvent empêcher des données dans votre application de s’afficher correctement dans différentes langues, paramètres régionaux et cultures. Vous devez inclure cet ensemble de règles si votre application est localisée, les globalisées, ou les deux.
+
+Utilisez l’ensemble de règles des règles de globalisation Microsoft pour vous concentrer sur les problèmes susceptibles d’empêcher l’affichage correct des données de votre application dans différentes langues, paramètres régionaux et cultures. Vous devez inclure cet ensemble de règles si votre application est localisée, globalisée ou les deux.
 
 |Règle|Description|
 |----------|-----------------|
