@@ -53,7 +53,7 @@ Si vous n’avez pas accès au projet de l’appel d’une application, vous pou
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Activer le débogage en mode mixte pour une application gérée par appelante
 
-1. Sélectionnez le projet C# ou Visual Basic dans **l’Explorateur de solutions** et sélectionnez l'icône **propriétés**, puis appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+1. Sélectionnez le projet C# ou Visual Basic dans **l’Explorateur de solutions** et sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
 
 1. Sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage du code natif**.
 
