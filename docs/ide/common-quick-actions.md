@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483736"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551445"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -30,7 +30,7 @@ Les actions rapides de cette section corrigent les erreurs dans le code qui prov
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct). Par exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu Ampoule comme ***Change '* misspelled word *' to '* correct word**' (Remplacer mot mal orthographié par mot correct). Par exemple :
 
 ```csharp
 // Before
@@ -159,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>Supprimer le type de l’expression de valeur par défaut
 
-Cette action rapide permet de supprimer le type de valeur d’une expression de valeur par défaut et utilise le [littéral par défaut](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quand le compilateur peut déduire le type de l’expression.
+Cette action rapide permet de supprimer le type de valeur d’une expression de valeur par défaut et utilise le [littéral par défaut](/dotnet/csharp/language-reference/operators/default#default-literal) quand le compilateur peut déduire le type de l’expression.
 
 ```csharp
 // Before
@@ -353,7 +353,7 @@ if (true)
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Visual Studio 2017 RTW |
+| IDE0011 | C# | Visual Studio 2017 RTW |
 
 ### <a name="add-and-order-modifiers"></a>Ajouter et trier des modificateurs
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | Langages applicables | Version prise en charge |
 | -------------------- | ---------------- |
-| C# 6.0+ et Visual Basic 14+ | Visual Studio 2017 RTW |
+| C# 6.0+ et Visual Basic 14+ | Visual Studio 2017 RTW |
 
 ### <a name="use-object-initializers"></a>Utiliser des initialiseurs d’objets
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# et Visual Basic | Visual Studio 2017 RTW |
+| IDE0017 | C# et Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="use-collection-initializers"></a>Utiliser des initialiseurs de collections
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# et Visual Basic | Visual Studio 2017 RTW |
+| IDE0028 | C# et Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="convert-auto-property-to-full-property"></a>Convertir une propriété automatique en propriété complète
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Convertir une fonction anonyme en fonction locale
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
 
 ### <a name="change-base-for-numeric-literals"></a>Changer la base des littéraux numériques
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ et Visual Basic 15+ | Visual Studio 2017 RTW |
+| IDE0033 | C# 7.0+ et Visual Basic 15+ | Visual Studio 2017 RTW |
 
 ### <a name="use-inferred-names"></a>Utiliser des noms déduits
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# | Visual Studio 2017 v. 15,5 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15,5 |
 
 ### <a name="deconstruct-tuple-declaration"></a>Déconstruire la déclaration de tuple
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | ID de diagnostic | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15,5 |
 
 ### <a name="make-method-synchronous"></a>Rendre la méthode synchrone
 
@@ -948,7 +948,7 @@ End Function
 
 | ID d'erreur | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
-| CS4032, BC37057 | C# et Visual Basic | Visual Studio 2017 |
+| CS4032, BC37057 | C# et Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Voir aussi
 

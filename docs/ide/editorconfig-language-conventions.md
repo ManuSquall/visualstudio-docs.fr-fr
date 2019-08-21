@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787422"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551420"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
@@ -38,11 +38,11 @@ Les règles relatives aux conventions de langage ont le format général suivant
 
 Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou quand favoriser ce style. De nombreuses règles acceptent une valeur de `true` (préférer ce style) ou `false` (ne pas préférer ce style) ; d’autres acceptent des valeurs telles que `when_on_single_line` ou `never`. La seconde partie de la règle spécifie la **gravité**.
 
-### <a name="severity"></a>Gravité
+### <a name="severity"></a>severity
 
 Un niveau de gravité de convention de langage spécifie le niveau auquel appliquer ce style. Le tableau suivant répertorie les valeurs de gravité possibles, ainsi que leurs effets :
 
-Gravité | Effet
+severity | Résultat
 :------- | ------
 `none` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec une gravité `none` n’apparaissent jamais dans le menu **Actions rapides et refactorisations**. Dans la plupart des cas, ceci est considéré comme « désactivé » ou « ignoré ».
 `silent` (aussi `refactoring` dans Visual Studio 2017 versions 15.8 et ultérieures) | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec la gravité `silent` participent au nettoyage et apparaissent dans le menu **Actions rapides et refactorisations**.
@@ -1435,7 +1435,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-Cette règle de style concerne l’utilisation du [littéral `default` pour les expressions de valeur par défaut](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) quand le compilateur peut déduire le type de l’expression.
+Cette règle de style concerne l’utilisation du [littéral `default` pour les expressions de valeur par défaut](/dotnet/csharp/language-reference/operators/default#default-literal) quand le compilateur peut déduire le type de l’expression.
 
 |||
 |-|-|
@@ -1858,5 +1858,5 @@ switch (x)
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de mise en forme](editorconfig-formatting-conventions.md)
-- [Conventions d’attribution d’un nom](editorconfig-naming-conventions.md)
+- [Conventions d’affectation de noms](editorconfig-naming-conventions.md)
 - [Paramètres des conventions de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)
