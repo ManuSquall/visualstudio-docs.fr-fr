@@ -162,31 +162,31 @@
           items:
             - name: Vue d'ensemble
               href: rule-set-reference.md
-            - name: Ensemble de règles de toutes les règles
+            - name: Toutes les règles
               href: all-rules-rule-set.md
-            - name: Ensemble de règles de règles de vérification de base pour le code managé
+            - name: Règles de vérification de base
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de conception de base pour le code managé
+            - name: Règles de conception de base
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de vérification étendue pour le code managé
+            - name: Règles de vérification étendue
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de conception étendue pour le code managé
+            - name: Règles de conception étendue
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles de globalisation pour le code managé
+            - name: Règles de globalisation
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles minimales managées pour le code managé
+            - name: Règles minimales gérées
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles recommandées managées pour le code managé
+            - name: Règles recommandées gérées
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles minimales mixtes
+            - name: Règles minimales mixtes
               href: mixed-minimum-rules-rule-set.md
-            - name: Ensemble de règles des règles recommandées mixtes
+            - name: Règles recommandées mixtes
               href: mixed-recommended-rules-rule-set.md
-            - name: Ensemble de règles des règles minimales natives
+            - name: Règles minimales natives
               href: native-minimum-rules-rule-set.md
-            - name: Ensemble de règles des règles recommandées natives
+            - name: Règles recommandées natives
               href: native-recommended-rules-rule-set.md
-            - name: Ensemble de règles des règles de sécurité pour le code managé
+            - name: Règles de sécurité
               href: security-rules-rule-set-for-managed-code.md
         - name: Supprimer les avertissements
           href: in-source-suppression-overview.md
