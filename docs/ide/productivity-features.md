@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919472"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490667"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -138,11 +138,12 @@ Vous pouvez rapidement accéder à une invite de commandes développeur ou à un
 
    Vous pouvez également gérer des fichiers plus facilement en créant une autre instance de l’**Explorateur de solutions** et en la déplaçant vers un autre moniteur. Pour créer une autre instance de l’**Explorateur de solutions**, ouvrez un menu contextuel dans l’**Explorateur de solutions**, puis choisissez **Nouvelle vue Explorateur de solutions**.
 
-- **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l’IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d'informations, voir [Procédure : modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l’IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Procédure : modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Blog de conseils et d’astuces pour Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procédure pas à pas : Créer une application simple](../get-started/csharp/tutorial-wpf.md)
+- [Procédure pas à pas : Créer une application simple](../get-started/csharp/tutorial-wpf.md)
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)

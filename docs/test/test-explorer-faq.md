@@ -1,6 +1,6 @@
 ---
 title: Questions fréquentes (FAQ) sur l’Explorateur de tests
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662004"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551863"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Où est le regroupement par caractéristiques dans Visual Studio 2019 ?
 Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,25 +31,29 @@ Pour le moment, vous pouvez cliquer avec le bouton droit sur la colonne dans l�
 
 ![Afficher la colonne Caractéristique](media/vs-2019/trait-column.png)
 ![Filtrer la colonne Caractéristique](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Découverte de tests dynamique
 
 **L’Explorateur de tests ne découvre pas mes tests qui sont définis dynamiquement (théories, adaptateurs personnalisés, caractéristiques personnalisées, #ifdefs, etc.). Comment puis-je découvrir ces tests ?**
 
+::: moniker range=">=vs-2019"
+Générez votre projet pour exécuter la découverte basée sur les assemblys.
+::: moniker-end
+::: moniker range="vs-2017"
 Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
-
+::: moniker-end
 La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des instructions `#ifdef`, etc., car ils sont définis au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
 ## <a name="test-explorer--plus-symbol"></a>Symbole « + » (plus) de l’Explorateur de tests
 
 **Que signifie le signe plus (+) qui apparaît sur la ligne supérieure l’Explorateur de tests ?**
 
-Le signe « + » (plus) indique que d’autres tests peuvent être découverts après une build tant que la découverte basée sur les assemblys est activée. Ce symbole apparaît si des tests définis dynamiquement sont détectés dans votre projet.
+Le signe plus (+) indique que d’autres tests peuvent être découverts après une build quand la découverte basée sur les assemblys s’exécute. Ce symbole apparaît si des tests définis dynamiquement sont détectés dans votre projet.
 
 ![Signe plus sur la ligne de résumé](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Découverte basée sur les assemblys
 
 **La découverte basée sur les assemblys ne fonctionne plus avec mon projet. Comment puis-je la réactiver ?**
@@ -57,12 +61,13 @@ Le signe « + » (plus) indique que d’autres tests peuvent être découverts a
 Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
 
 ![Option basée sur les assemblys](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Découverte de tests en temps réel
 
 **Les tests s’affichent désormais automatiquement dans l’Explorateur de tests quand j’écris, sans que j’aie à générer mon projet. Que s’est-il passé ?**
 
-Cette fonctionnalité s’appelle la [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824). Elle utilise un analyseur Roslyn pour trouver les tests et remplir l’Explorateur de tests en temps réel, sans que vous ayez à générer votre projet. Pour plus d’informations sur le comportement de la découverte de tests pour les tests définis dynamiquement, par exemple les théories ou les caractéristiques personnalisées, consultez le FAQ n° 1.
+Cette fonctionnalité s’appelle la [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824). Elle utilise un analyseur Roslyn pour trouver les tests et remplir l’Explorateur de tests en temps réel, sans que vous ayez à générer votre projet. Pour plus d’informations sur le comportement de la découverte de tests pour les tests définis dynamiquement, par exemple les théories ou les caractéristiques personnalisées, consultez [Découverte de tests dynamique](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilité de la découverte de tests en temps réel
 
@@ -92,7 +97,7 @@ L’affichage des hiérarchies trie les tests par ordre alphabétique et non par
 
 ## <a name="test-explorer-hierarchy-view"></a>Vue de la hiérarchie de l’Explorateur de tests
 
-**La vue de la hiérarchie inclut des icônes passed (réussi), failed (échec), skipped (ignoré) et not run (non exécuté) en regard des regroupements Projet, Espace de noms et Classe. Que signifient ces icônes ?**
+**La vue de la hiérarchie inclut différentes icônes (réussite, échec, ignoré et non exécuté) en regard des regroupements parent-nœud. Que signifient ces icônes ?**
 
 Les icônes en regard des regroupements Projet, Espace de noms et Classe indiquent l’état des tests dans le regroupement. Consultez le tableau suivant.
 
@@ -110,6 +115,7 @@ Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Exp
 
 Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en entrant un bogue auprès de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Référence NuGet sur l’adaptateur de test
 
 **Dans Visual Studio 2017 version 15.8, mes tests sont détectés, mais ne s’exécutent pas.**
@@ -124,6 +130,7 @@ Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent 
 > Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de la découverte dans Visual Studio version 15.8 dans **Outils** > **Options**  >  **Test**.
 
 ![Comportement de l’adaptateur de l’Explorateur de tests dans les options des outils](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>TestContainer UWP est introuvable
 
@@ -133,7 +140,7 @@ Les projets de test UWP récents spécifient une propriété de génération de 
 
 **System.AggregateException : Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException : Le TestContainer suivant est introuvable {} sur Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
-Pour corriger cette erreur :
+Pour résoudre ce problème :
 
 - Mettez à jour votre propriété de génération de projet de test à l’aide du code suivant :
 

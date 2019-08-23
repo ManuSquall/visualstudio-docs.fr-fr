@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981645"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585342"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procédure pas à pas : Bien démarrer avec le Concepteur Windows Forms
 
@@ -257,7 +257,7 @@ Les boutons du contrôle DemoCalculator ont des gestionnaires d’événements q
 
 ## <a name="test-the-control"></a>Tester le contrôle
 
-Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d'informations, voir [Procédure : Tester le comportement au moment de l’exécution d’un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, consultez [Procédure : Tester le comportement au moment de l’exécution d’un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
 1. Appuyez sur **F5** pour générer et exécuter le contrôle DemoCalculator dans le **Conteneur de test UserControl**.
 
@@ -309,8 +309,10 @@ Pour utiliser le contrôle DemoCalculator dans une application, vous devez le pl
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cet article a montré comment construire l’interface utilisateur pour une calculatrice simple. Pour continuer, vous pouvez étendre ses fonctionnalités en implémentant la logique de calculatrice. Ou passez à un autre tutoriel dans lequel vous [créez une visionneuse d’images à l’aide de Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
+Cet article a montré comment construire l’interface utilisateur pour une calculatrice simple. Pour continuer, vous pouvez étendre ses fonctionnalités en implémentant la logique de calculatrice, puis [publier l’application à l’aide de ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Ou passez à un autre tutoriel dans lequel vous [créez une visionneuse d’images à l’aide de Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/)
 - [Accessibilité des contrôles Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Publier à l’aide de ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

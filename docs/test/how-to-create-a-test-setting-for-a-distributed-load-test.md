@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950207"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490672"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procédure : Créer un paramètre de test pour un test de charge distribué
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Activation Créer un fichier de paramètres de test pour un test de charge distribué
 
 Configurez des *paramètres de test* pour vos tests de charge afin de pouvoir distribuer ces tests sur plusieurs ordinateurs en utilisant des agents de test et des contrôleurs de test. Vous pouvez aussi configurer des paramètres de test pour utiliser des *adaptateurs de données de diagnostic*, qui spécifient les types de données que vous voulez collecter ou la façon d’affecter les ordinateurs de test quand vous exécutez des tests de charge depuis Visual Studio.
 
@@ -39,13 +39,11 @@ Le contrôleur de test aura des agents pouvant être utilisés pour chaque rôle
 
 Utilisez les étapes suivantes pour créer et supprimer des paramètres de test dans votre solution pour les tests de charge que vous prévoyez d'exécuter depuis Visual Studio.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Créer un paramètre de test pour un test de charge distribué
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Pour ajouter des paramètres de test pour un test de charge distribué
+## <a name="create-a-test-settings-file"></a>Créer un fichier de paramètres de test
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Éléments de solution**, pointez sur **Ajouter**, puis choisissez **Nouvel élément**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
 2. Dans le volet **Modèles installés**, choisissez **Paramètres de test**.
 
@@ -55,15 +53,9 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
      Le nouveau fichier de paramètres de test apparaît dans l’**Explorateur de solutions**, sous le dossier **Éléments de solution**.
 
-    > [!NOTE]
-    > La liste des paramètres de test affichée par Visual Studio Enterprise est dérivée de la liste des fichiers de paramètres de test du dossier **Éléments de solution**. Par exemple, les fichiers de paramètres de test du dossier **Éléments de solution** s’affichent quand vous utilisez l’option **Sélectionner des paramètres de test actifs** du menu **Test**. Cela signifie que si vous déplacez un fichier de paramètres de test vers un autre emplacement de la hiérarchie de votre solution, il ne peut plus être utilisé comme paramètre de test dans l'environnement de développement intégré de Visual Studio.
-
 5. La boîte de dialogue **Paramètres de test** s’affiche. La page **Général** est sélectionnée.
 
      Vous pouvez maintenant modifier et enregistrer des valeurs de paramètres de test.
-
-    > [!NOTE]
-    > Chaque paramètre de test que vous créez apparaît comme un choix pour les options **Sélectionner des paramètres de test actifs** et **Modifier les paramètres de test** du menu **Test**.
 
 6. Sous **Nom**, tapez le nom des paramètres de test.
 
@@ -154,9 +146,9 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
      La page **Scripts d’installation et de nettoyage** s’affiche.
 
-    1. Entrez l’emplacement du fichier de script dans **Script d’installation** ou choisissez les points de suspension (**…**) pour accéder au script d’installation.
+    1. Entrez l’emplacement du fichier de script dans **Script d’installation** ou choisissez les points de suspension ( **…** ) pour accéder au script d’installation.
 
-    2. Entrez l’emplacement du fichier de script dans **Script de nettoyage** ou choisissez les points de suspension (**…**) pour accéder au script de nettoyage.
+    2. Entrez l’emplacement du fichier de script dans **Script de nettoyage** ou choisissez les points de suspension ( **…** ) pour accéder au script de nettoyage.
 
 24. Pour exécuter vos tests avec un autre hôte, sélectionnez **Hôtes**.
 
@@ -182,14 +174,11 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 28. Pour enregistrer les paramètres de test, sélectionnez **Enregistrer sous**. Tapez le nom de fichier que vous voulez dans **Nom d’objet**.
 
-    > [!NOTE]
-    > Si vous devez modifier vos paramètres de test, choisissez **Test**, puis **Modifier les paramètres de test** et pointez sur les paramètres de test que vous avez créés.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>Pour supprimer des paramètres de test de votre solution
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Supprimer un fichier de paramètres de test de votre solution
 
 Sous le dossier **Éléments de solution** de l’**Explorateur de solutions**, cliquez avec le bouton droit sur les paramètres de test que vous voulez supprimer, puis cliquez sur **Supprimer**.
 
-Le fichier de paramètres de test est supprimé de votre solution. Cette modification est répercutée dans la liste de choix pour les options **Sélectionner des paramètres de test actifs** et **Modifier les paramètres de test** du menu **Test**.
+Le fichier de paramètres de test est supprimé de votre solution.
 
 ## <a name="see-also"></a>Voir aussi
 
