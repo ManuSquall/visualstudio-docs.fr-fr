@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965547"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490626"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -30,18 +30,38 @@ Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
 1. Ajoutez un fichier de paramètres d’exécution à votre solution. Dans **l’Explorateur de solutions**, dans le menu contextuel de votre solution, choisissez **Ajouter** > **Nouvel élément**, puis sélectionnez **Fichier XML**. Enregistrez le fichier sous un nom comme *CodeCoverage.runsettings*.
 
-1. Ajoutez le contenu de l’exemple de fichier à la fin de cet article, puis personnalisez-le selon vos besoins comme décrit dans les sections qui suivent.
+2. Ajoutez le contenu de l’exemple de fichier à la fin de cet article, puis personnalisez-le selon vos besoins comme décrit dans les sections qui suivent.
 
-1. Pour sélectionner le fichier de paramètres d’exécution, dans le menu **Test**, choisissez **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande ou dans un flux de travail de build, consultez [Configurer des tests unitaires à l’aide d’un fichier *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Pour sélectionner le fichier de paramètres d’exécution, dans le menu **Test**, choisissez **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande ou dans un flux de travail de build, consultez [Configurer des tests unitaires à l’aide d’un fichier *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Pour sélectionner le fichier de paramètres d’exécution, sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande ou dans un flux de travail de build, consultez [Configurer des tests unitaires à l’aide d’un fichier *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Quand vous sélectionnez **Analyser la couverture du code**, les informations de configuration sont lues à partir du fichier de paramètres d’exécution.
 
    > [!TIP]
    > Les résultats de la couverture du code et la coloration du code précédents ne sont pas automatiquement masqués quand vous exécutez des tests ou que vous mettez à jour votre code.
 
+::: moniker range="vs-2017"
+
 Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test** > **Paramètres de test**.
 
 ![Menu Paramètres de test avec le fichier de paramètres de test](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Paramètres** dans l’**Explorateur de tests**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Spécifier les chemins de recherche de symboles
 
@@ -59,7 +79,7 @@ La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour l
 
 ### <a name="exclude-and-include"></a>Exclure et inclure
 
-Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
+Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
 
 ```xml
 <ModulePaths>
@@ -87,9 +107,9 @@ Si **Include** est vide, le traitement de la couverture du code inclut tous les 
 
 ### <a name="regular-expressions"></a>Expressions régulières
 
-Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l’équivalent des caractères génériques. En particulier :
+Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l’équivalent des caractères génériques. notamment :
 
-- **.\\** * correspond à une chaîne de caractères (quels qu’ils soient)
+- **\*** correspond à une chaîne de n’importe quels caractères
 
 - **\\.** correspond à un point « . »
 
@@ -103,7 +123,7 @@ Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus 
 
 Les correspondances ne respectent pas la casse.
 
-Par exemple :
+Par exemple :
 
 ```xml
 <ModulePaths>
@@ -135,7 +155,7 @@ Par exemple :
 
 - **Attribute** : correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l’attribut et insérez « Attribute » à la fin du nom.
 
-- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Par exemple :
+- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Par exemple :
 
    ```csharp
    Fabrikam.Math.LocalMath.SquareRoot(double);

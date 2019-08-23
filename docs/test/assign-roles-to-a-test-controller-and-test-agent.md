@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177797"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490598"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assigner des rôles à un contrôleur de test et à un agent de test
 
-Cette procédure pas à pas montre comment créer et configurer un paramètre de test qui utilise un contrôleur de test et un agent de test pour distribuer des tests sur plusieurs ordinateurs en utilisant Visual Studio. En outre, elle indique comment ajouter des adaptateurs de diagnostic et de données au paramètre de test.
+Cet article montre comment créer et configurer un paramètre de test qui utilise un contrôleur de test et un agent de test pour distribuer des tests sur plusieurs ordinateurs en utilisant Visual Studio. Il indique également comment ajouter des adaptateurs de diagnostic et de données au paramètre de test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -35,7 +35,7 @@ Cette procédure pas à pas montre comment créer et configurer un paramètre de
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Éléments de solution**, pointez sur **Ajouter**, puis choisissez **Nouvel élément**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
 2. Dans le volet **Modèles installés**, choisissez **Paramètres de test**.
 
@@ -48,9 +48,6 @@ Cette procédure pas à pas montre comment créer et configurer un paramètre de
      La boîte de dialogue **Paramètres de test** s’affiche. La page **Général** est sélectionnée.
 
      Vous pouvez maintenant modifier et enregistrer des valeurs de paramètres de test.
-
-    > [!NOTE]
-    > Chaque paramètre de test que vous créez apparaît comme un choix pour les options **Sélectionner des paramètres de test actifs** et **Modifier les paramètres de test** du menu **Test**.
 
 5. Sous **Nom**, tapez le nom des paramètres de test.
 
@@ -98,7 +95,17 @@ Cette procédure pas à pas montre comment créer et configurer un paramètre de
 
 7. Choisissez **Fermer**.
 
-8. Dans le menu Test, choisissez **Sélectionner des paramètres de test actifs**, puis **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. Dans le menu Test, choisissez **Sélectionner le fichier de paramètres des tests**, puis *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *TestSettingDistributedTestWalkthrough.testsettings* et sélectionnez le.
+
+::: moniker-end
 
 9. Exécutez votre test conformément à la procédure habituelle.
 

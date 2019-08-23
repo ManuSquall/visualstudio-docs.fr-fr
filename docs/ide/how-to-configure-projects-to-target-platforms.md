@@ -1,6 +1,6 @@
 ---
-title: 'Procédure : Configurer des projets pour des plateformes cibles'
-ms.date: 11/04/2016
+title: Activation Configurer des projets pour des plateformes cibles
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,14 +18,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416821"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634920"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Procédure : Configurer des projets pour des plateformes cibles
+# <a name="how-to-configure-projects-to-target-platforms"></a>Activation Configurer des projets pour des plateformes cibles
 
 Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge des plateformes 64 bits dans Visual Studio, consultez [Applications 64 bits](/dotnet/framework/64-bit-apps).
 
@@ -64,9 +64,60 @@ L’exécution de cette tâche varie suivant le langage de programmation que vou
 
 - Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], consultez [/clr (compilation pour le Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Modification manuelle du fichier projet
+
+Parfois, vous devez modifier manuellement le fichier projet pour une configuration personnalisée. C’est le cas quand vous avez des conditions qui ne peuvent pas être spécifiées dans l’IDE, comme dans l’exemple suivant comprenant deux références pour deux plateformes différentes.
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Exemple : Référencement des assemblys et des DLL x86 et x64
+
+Vous pouvez avoir les versions x86 et x64 d’un assembly ou d’une DLL .NET. Pour configurer votre projet de manière à utiliser ces références, ajoutez d’abord la référence, puis ouvrez le fichier projet et modifiez-le pour ajouter un `ItemGroup` avec une condition qui fait référence à la fois à la configuration et à la plateforme cible.  Par exemple, supposons que le binaire que vous référencez est ClassLibrary1 et qu’il existe des chemins différents pour les configurations Debug et Release, ainsi que des versions x86 et x64.  Ensuite, utilisez quatre éléments `ItemGroup` avec toutes les combinaisons de paramètres, comme suit :
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> Dans Visual Studio 2017, vous devez décharger le projet avant de pouvoir modifier le fichier projet. Pour décharger le projet, cliquez avec le bouton droit sur le nœud du projet, puis choisissez **Décharger le projet**. Quand vous avez terminé, enregistrez vos changements et rechargez le projet en cliquant avec le bouton droit sur le nœud du projet et en choisissant **Recharger le projet**.
+::: moniker-end
+
+Pour plus d’informations sur le fichier projet, consultez [Informations de référence sur le schéma de fichier de projet MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation des plateformes de génération](../ide/understanding-build-platforms.md)
 - [/platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [Applications 64 bits](/dotnet/framework/64-bit-apps)
 - [Prise en charge de l’IDE Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)
+- [Présentation du fichier projet](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)
