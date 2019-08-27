@@ -31,6 +31,7 @@
 # Éditeur de code source
 ## [Fonctionnalités de l’éditeur](source-editor.md)
 ## [Refactorisation](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Commentaires](comments.md)
 ## [Comportement de l’éditeur](editor-behavior.md)
 ## [Commentaires des tâches](task-comments.md)
