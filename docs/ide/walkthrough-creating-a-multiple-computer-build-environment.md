@@ -211,7 +211,7 @@ Vous devez créer des entrées de Registre pour configurer des paramètres pour 
 
    - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-   - Répertoires **%RegistryRoot%\VisualStudio\11.0@Source**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Répertoires**
 
    - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
