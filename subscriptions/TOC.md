@@ -22,6 +22,7 @@
 #### [Anonymisation des données d’abonnés](anonymization.md)
 ### [Présentation du portail des abonnements](using-the-subscriber-portal.md)
 ### [Gérer vos abonnements](manage-vs-subscriptions.md)
+### [Contacter votre administrateur d’abonnements](contact-my-admin.md)
 ### Avantages
 #### Outils
 ##### [Crédit Azure](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [Rechercher et revendiquer des clés](find-keys.md)
 #### [Démonstrations Internet](internet-demos.md)
 ## Administrateurs
-### [Responsabilités de l’administrateur](admin-responsibilities.md)
+### Responsabilités de l’administrateur
+#### [Responsabilités de l’administrateur](admin-responsibilities.md)
 #### [Inventaire de préproduction](admin-inventory.md)
 #### [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 #### [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
-### Intégration de votre organisation
-#### [Migration d’Open et des licences Open](open-migration.md)
+### Accès au portail d’administration
+#### [Licence en volume](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Abonnements cloud](cloud-admin.md)
-#### [Vidéo sur l’intégration](https://youtu.be/plSu6fpi7UI)
+#### [Gestion des partenaires pour les clients](open-migration.md)
+#### [Tutoriel vidéo : Accéder au portail d’administration](https://youtu.be/plSu6fpi7UI)
 ### Utilisation du portail d’administration
+#### [Super administrateurs et administrateurs](admin-roles.md)
+#### [Définir les préférences de contrat](admin-prefs.md)
 #### [Vue d’ensemble](using-admin-portal.md)
+#### [Tutoriel vidéo : Utiliser le portail d’administration](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Assigner des abonnements
 ##### [Ajouter des utilisateurs uniques](assign-license.md)
 ##### [Ajouter plusieurs utilisateurs](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Abonnements arrivés à expiration](handle-expired-license.md)
 #### [Abonnés utilisant des alias](aliasing.md)
 #### [Abonnés avec connexions par e-mail personnel](personal-email-sign-ins.md)
-### [Gestion de Visual Studio avec GitHub Enterprise](assign-github.md)
+#### [Gestion de Visual Studio avec GitHub Enterprise](assign-github.md)
 ## Ressources
 ### [Livre blanc sur la gestion des licences Visual Studio](https://aka.ms/vslicensing)
 ### [Comparer les options et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing)
