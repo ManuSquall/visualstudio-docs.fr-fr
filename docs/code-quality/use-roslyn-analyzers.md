@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548039"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060443"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -62,13 +62,26 @@ Pour modifier l’ensemble de règles actif pour un projet, accédez à l’ongl
 
 Vous pouvez configurer la gravité des règles de l’analyseur, ou Diagnostics, si vous [Installez les analyseurs](../code-quality/install-roslyn-analyzers.md) en tant que package NuGet. Le tableau suivant présente les options de gravité pour les Diagnostics:
 
+
+::: moniker range="vs-2019"
 |Gravité|Comportement au moment de la génération|Comportement de l’éditeur|
+|-|-|-|
+|Error|Les violations apparaissent comme des *Erreurs* dans les **liste d’erreurs** et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.|Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement.|
+|Warning|Les violations apparaissent en tant qu' *avertissements* dans le **liste d’erreurs** et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds.|Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement.|
+|Suggestion|Les violations apparaissent sous la forme de *messages* dans le **liste d’erreurs**, et pas du tout dans la sortie de la génération de la ligne de commande.|Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement.|
+|Sans assistance|Non visible par l’utilisateur.|Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE.|
+|Aucun.|Entièrement supprimée.|Entièrement supprimée.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
+|Severity|Comportement au moment de la génération|Comportement de l’éditeur|
 |-|-|-|
 |Error|Les violations apparaissent comme des *Erreurs* dans les **liste d’erreurs** et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.|Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement.|
 |Warning|Les violations apparaissent en tant qu' *avertissements* dans le **liste d’erreurs** et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds.|Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement.|
 |Info|Les violations apparaissent sous la forme de *messages* dans le **liste d’erreurs**, et pas du tout dans la sortie de la génération de la ligne de commande.|Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement.|
 |Hidden|Non visible par l’utilisateur.|Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE.|
 |Aucun.|Entièrement supprimée.|Entièrement supprimée.|
+::: moniker-end
 
 En outre, vous pouvez «réinitialiser» la gravité d’une règle en lui affectant la **valeur par défaut**. Chaque diagnostic a une gravité par défaut qui peut être affichée dans la fenêtre **Propriétés** .
 
