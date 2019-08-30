@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416444"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976781"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -36,7 +36,12 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Pour analyser la couverture du code sur les tests unitaires dans l'Explorateur de tests
 
+::: moniker range="vs-2017"
 1. Dans le menu **Test**, choisissez **Analyser la couverture du code**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. Dans l’**Explorateur de tests**, sélectionnez **Analyser la couverture du code** dans le menu **Exécuter**.
+::: moniker-end
 
 2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png) **Afficher la coloration de la couverture du code**.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490717"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891342"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -30,7 +30,7 @@ L’explorateur de tests peut également exécuter des infrastructures de tests 
 
 Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
-- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -209,7 +209,7 @@ Pour plus d’informations sur les infrastructures de tests unitaires Microsoft,
 
 ## <a name="set-timeouts-for-unit-tests"></a>Définir des délais d’attente pour les tests unitaires
 
-Pour définir un délai d’attente sur une méthode de test :
+Si vous utilisez le framework MSTest, vous pouvez utiliser <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> pour définir un délai d’attente sur une méthode de test individuelle :
 
 ```csharp
 [TestMethod]
@@ -322,7 +322,7 @@ En savoir plus sur le [débogage des tests unitaires](../debugger/debugger-featu
 
 **Q : Si j’utilise le TDD (développement piloté par les tests), comment générer du code à partir de mes tests ?**
 
-**R :** Utilisez Actions rapides pour générer des classes et des méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez l’ampoule qui apparaît sous l’erreur. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer le type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer la méthode** à partir du menu IntelliSense.
+**R :** Utilisez Actions rapides pour générer des classes et des méthodes dans votre code de projet. Écrivez une instruction dans une méthode de test qui appelle la classe ou la méthode que vous souhaitez générer, puis ouvrez l’ampoule qui apparaît sous l’erreur. Si l’appel concerne un constructeur de la nouvelle classe, choisissez **Générer le type** dans le menu et suivez l’Assistant pour insérer la classe dans votre projet de code. Si l’appel concerne une méthode, choisissez **Générer la méthode** à partir du menu IntelliSense.
 
 ::: moniker range="vs-2017"
 ![Menu de l’action rapide Générer un stub de méthode](../test/media/ute_generatemethodstubintellisense.png)

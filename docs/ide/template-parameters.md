@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950343"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891266"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -57,7 +57,8 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |projectname|Nom fourni par l’utilisateur quand le projet a été créé.|
 |registeredorganization|Valeur de clé de Registre provenant de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espace de noms racine du projet actuel. Ce paramètre s’applique uniquement aux modèles d’élément.|
-|safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux supprimés.|
+|safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux remplacés par des caractères de trait de soulignement.|
+|safeitemrootname|Comme pour `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
 |heure|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `SpecificSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `SpecificSolutionName` est vide.|
