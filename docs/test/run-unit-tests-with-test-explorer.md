@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918172"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891336"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -96,7 +96,7 @@ Pour exécuter vos tests unitaires après chaque build locale, ouvrez l’icône
 
 ## <a name="view-test-results"></a>Afficher les résultats des tests
 
-Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Le volet d'informations en bas de l'Explorateur de tests affiche un résumé de la série de tests.
+Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Le volet d’informations en bas ou sur le côté de l’Explorateur de tests affiche un récapitulatif de la série de tests.
 
 ### <a name="view-test-details"></a>Afficher les détails du test
 
@@ -181,7 +181,7 @@ Dans l'infrastructure de tests unitaires Microsoft pour les applications managé
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur de chaîne du propriétaire.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur entière de la priorité.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attribut TestCategory vous permet de fournir une catégorie sans valeur. Une catégorie définie par l'attribut TestCategory peut également être la catégorie d'un attribut TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attribut TestCategory vous permet de fournir une catégorie sans valeur.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attribut TestProperty vous permet de définir la paire catégorie/valeur de caractéristique.|
 
 
@@ -215,7 +215,7 @@ La playlist s’ouvre sous un nouvel onglet de l’Explorateur de tests. Vous po
 
 ![La playlist s’ouvre sous un onglet distinct de l’Explorateur de tests](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit, puis choisissez **Ajouter à la playlist** > **Nouvelle playlist**.
+**Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Cliquez avec le bouton droit, puis choisissez **Ajouter à la playlist** > **Nouvelle playlist**.
 
 **Pour ouvrir une playlist**, choisissez l’icône de playlist dans la barre d’outils de Visual Studio, puis sélectionnez dans le menu un fichier de playlist enregistré.
 ::: moniker-end
@@ -236,7 +236,7 @@ Les colonnes peuvent être filtrées, triées et réorganisées.
 
 * Pour changer l’ordre des colonnes, cliquez sur un en-tête de colonne, puis faites-le glisser vers la gauche ou la droite.
 
-* Pour trier une colonne, cliquez sur son en-tête. Toutes les colonnes ne peuvent pas être triées.
+* Pour trier une colonne, cliquez sur son en-tête. Toutes les colonnes ne peuvent pas être triées. Vous pouvez également effectuer un tri sur une colonne secondaire en maintenant la touche **Maj** enfoncée et en cliquant sur un en-tête de colonne supplémentaire.
 
   ![Tri de colonne](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Pour filtrer selon un autre critère :
 
 2. Choisissez un nouveau critère.
 
-3. Entrez la valeur de filtre entre guillemets.
+3. Entrez la valeur de filtre entre guillemets. Si vous voulez rechercher une correspondance exacte sur la chaîne au lieu d’une correspondance de contenance, utilisez un signe égal (=) au lieu du signe deux-points (:).
 
 ::: moniker range="vs-2017"
 ![Filtrer les tests dans l'Explorateur de tests](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Pour filtrer selon un autre critère :
 > [!NOTE]
 > Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.
 
+::: moniker range="vs-2017"
 |Qualificateur|Description|
 |-|-----------------|
 |**Caractéristique**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
 |**Projet**|Recherche les noms de projet de test pour les correspondances.|
 |**Message d'erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|
 |**Chemin d'accès au fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|
-|**Nom qualifié complet**|Recherche le nom de fichier qualifié complet des espaces de noms, des classes et des méthodes de test pour les correspondances.|
+|**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
 |**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par l'infrastructure de tests unitaires.|
 |**Résultat**|Recherche des correspondances avec les noms de catégories de l’Explorateur de tests : **Tests ayant échoué**, **Tests ignorés** et **Tests réussis**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Qualificateur|Description|
+|-|-----------------|
+|**État**|Recherche des correspondances avec les noms de catégories de l’Explorateur de tests : **Tests ayant échoué**, **Tests ignorés** et **Tests réussis**.|
+|**Caractéristiques**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
+|**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
+|**Projet**|Recherche les noms de projet de test pour les correspondances.|
+|**Framework cible**|Recherche des correspondances avec les noms de catégories de l’Explorateur de tests : **Tests ayant échoué**, **Tests ignorés** et **Tests réussis**.|
+|**Espace de noms**|Recherche des correspondances dans les espaces de noms de test.|
+|**Classe**|Recherche des correspondances dans les noms des classes de test.|
+::: moniker-end
 
 Pour exclure un sous-ensemble des résultats d'un filtre, utilisez la syntaxe suivante :
 

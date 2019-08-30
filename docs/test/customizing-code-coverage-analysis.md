@@ -1,18 +1,18 @@
 ---
 title: Personnalisation de l'analyse de couverture du code
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490626"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976761"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -34,26 +34,26 @@ Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
 ::: moniker range="vs-2017"
 
-3. Pour sélectionner le fichier de paramètres d’exécution, dans le menu **Test**, choisissez **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande ou dans un flux de travail de build, consultez [Configurer des tests unitaires à l’aide d’un fichier *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Pour sélectionner le fichier de paramètres d’exécution, dans le menu **Test**, choisissez **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande, consultez [Configurer des tests unitaires](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Pour sélectionner le fichier de paramètres d’exécution, sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande ou dans un flux de travail de build, consultez [Configurer des tests unitaires à l’aide d’un fichier *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Pour sélectionner le fichier de paramètres d’exécution, sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Pour spécifier un fichier de paramètres d’exécution afin d’exécuter des tests depuis la ligne de commande, consultez [Configurer des tests unitaires](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
    Quand vous sélectionnez **Analyser la couverture du code**, les informations de configuration sont lues à partir du fichier de paramètres d’exécution.
 
    > [!TIP]
-   > Les résultats de la couverture du code et la coloration du code précédents ne sont pas automatiquement masqués quand vous exécutez des tests ou que vous mettez à jour votre code.
+   > Les résultats de la couverture du code et la coloration du code précédents ne sont pas masqués automatiquement quand vous exécutez des tests ou que vous mettez à jour votre code.
 
 ::: moniker range="vs-2017"
 
 Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test** > **Paramètres de test**.
 
-![Menu Paramètres de test avec le fichier de paramètres de test](../test/media/codecoverage-settingsfile.png)
+![Menu Paramètres de test avec le fichier de paramètres de test dans Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou 
 
 ### <a name="specify-symbol-search-paths"></a>Spécifier les chemins de recherche de symboles
 
-La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour les assemblys. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s’exécute automatiquement. Mais, dans certains cas, vous pouvez inclure les assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers *.pdb* peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier *.runsettings*.
+La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour les assemblys. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s’exécute automatiquement. Dans certains cas, vous voulez inclure des assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers *.pdb* peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier *.runsettings*.
 
 ```xml
 <SymbolSearchPaths>
@@ -79,7 +79,7 @@ La couverture du code requiert des fichiers de symboles (fichiers *.pdb*) pour l
 
 ### <a name="exclude-and-include"></a>Exclure et inclure
 
-Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
+Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
 
 ```xml
 <ModulePaths>
@@ -90,7 +90,7 @@ Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code
 </ModulePaths>
 ```
 
-Sinon, vous pouvez spécifier les assemblys doivent être inclus. Cette approche présente l'inconvénient suivant : lorsque vous ajoutez des assemblys à la solution, vous devez penser à les ajouter à la liste :
+Sinon, vous pouvez spécifier les assemblys doivent être inclus. Cette approche présente l’inconvénient suivant : quand vous ajoutez des assemblys à la solution, vous devez penser à les ajouter à la liste :
 
 ```xml
 <ModulePaths>
@@ -101,13 +101,11 @@ Sinon, vous pouvez spécifier les assemblys doivent être inclus. Cette approche
 </ModulePaths>
 ```
 
-Si **Include** est vide, le traitement de la couverture du code inclut tous les assemblys qui sont chargés et pour lesquels les fichiers *.pdb* sont trouvés. La couverture du code n’inclut pas les éléments qui correspondent à une clause dans une liste **Exclude**.
-
-**Include** est traité avant **Exclude**.
+Si **Include** est vide, le traitement de la couverture du code inclut tous les assemblys qui sont chargés et pour lesquels des fichiers *.pdb* sont trouvés. La couverture du code n’inclut pas les éléments qui correspondent à une clause dans une liste **Exclude**. **Include** est traité avant **Exclude**.
 
 ### <a name="regular-expressions"></a>Expressions régulières
 
-Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l’équivalent des caractères génériques. notamment :
+Les nœuds Inclure et Exclure utilisent des expressions régulières, qui ne sont pas identiques à des caractères génériques. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Voici quelques exemples :
 
 - **\*** correspond à une chaîne de n’importe quels caractères
 
@@ -123,7 +121,7 @@ Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus 
 
 Les correspondances ne respectent pas la casse.
 
-Par exemple :
+Par exemple :
 
 ```xml
 <ModulePaths>
@@ -153,9 +151,12 @@ Par exemple :
 
 - **Source** : correspond à des éléments par le chemin du fichier source dans lequel ils sont définis.
 
-- **Attribute** : correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l’attribut et insérez « Attribute » à la fin du nom.
+- **Attribute** : correspond à des éléments auxquels un attribut spécial est attaché. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
 
-- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Par exemple :
+  > [!TIP]
+  > Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>.
+
+- **Function** : correspond à des procédures, des fonctions ou des méthodes par le nom qualifié complet. Pour correspondre à un nom de fonction, l’expression régulière doit correspondre au nom complet de la fonction, y compris l’espace de noms, le nom de classe, le nom de méthode et la liste des paramètres. Par exemple :
 
    ```csharp
    Fabrikam.Math.LocalMath.SquareRoot(double);
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 

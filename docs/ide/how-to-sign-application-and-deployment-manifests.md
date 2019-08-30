@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461602"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976711"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Signer des manifestes d’application et de déploiement
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur la création des fichiers de clés, consultez [Gu
      La boîte de dialogue **Sélectionner un certificat** apparaît et affiche le contenu du magasin de certificats Windows.
 
     > [!TIP]
-    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **Certificats** pour afficher des informations d’aide supplémentaires.
+    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue contient des informations détaillées sur le certificat et des options supplémentaires. Cliquez sur **Certificats** pour voir des informations d’aide supplémentaires.
 
 3. Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.
 
@@ -66,9 +66,12 @@ Pour plus d’informations sur la création des fichiers de clés, consultez [Gu
     > [!NOTE]
     > Cette option prend uniquement en charge les fichiers ayant l’extension *.pfx*. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.
 
-     La boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier** s’affiche. (Si le fichier *.pfx* est déjà stocké dans votre magasin de certificats Windows, ou s’il n’est pas protégé par un mot de passe, vous n’êtes pas invité à entrer un mot de passe.)
+     La boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier** s’affiche. (Si le fichier *.pfx* est déjà stocké dans votre magasin de certificats Windows ou s’il n’est pas protégé par un mot de passe, vous n’êtes pas invité à entrer un mot de passe.)
 
-4. Entrez le mot de passe pour accéder au fichier de clé, puis appuyez sur **Entrée**.
+4. Entrez le mot de passe pour accéder au fichier de clé, puis sélectionnez **Entrée**.
+
+> [!NOTE]
+> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produit : **Impossible de trouver le certificat et la clé privée pour le déchiffrement**.
 
 ## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
