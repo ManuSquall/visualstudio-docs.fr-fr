@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 6944c930ba6357fffeebba417a32cd167bd4debd
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493319"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179822"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée
 
@@ -37,7 +37,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 * Débogueur de capture instantanée n’est disponible qu’à partir de Visual Studio 2017 Enterprise version 15,5 ou ultérieure avec la **charge de travail développement Azure**. (Dans l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
 
    ::: moniker range=">=vs-2019"
-   S’il n’est pas déjà installé, installez [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Si vous effectuez une mise à jour à partir d’une installation précédente de Visual Studio, exécutez le Visual Studio Installer et vérifiez le composant Débogueur de capture instantanée dans la **charge de travail développement Web et ASP.net**.
+   S’il n’est pas déjà installé, installez [Visual Studio 2019](https://visualstudio.microsoft.com/downloads). Si vous effectuez une mise à jour à partir d’une installation précédente de Visual Studio, exécutez le Visual Studio Installer et vérifiez le composant Débogueur de capture instantanée dans la **charge de travail développement Web et ASP.net**.
    ::: moniker-end
    ::: moniker range="<=vs-2017"
    Si ce n’est pas déjà fait, installez [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) (ou une version ultérieure). Si vous effectuez une mise à jour à partir d’une installation précédente de Visual Studio 2017, exécutez la Visual Studio Installer et vérifiez le composant Débogueur de capture instantanée dans la **charge de travail développement ASP.net et Web**.

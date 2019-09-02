@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445141"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180073"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 
@@ -51,7 +51,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
   Consultez :
 
-- [Vidéo : Déboguez visuellement avec intégration du débogueur (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Vidéo : Déboguer visuellement avec l’intégration du débogueur de la carte du code (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Mapper la pile des appels](#MapStack)
 
@@ -79,7 +79,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 1. Démarrez le débogage. (Clavier : **F5**)
 
-2. Une fois que votre application passe en mode arrêt ou que vous parcourez une fonction, choisissez **carte de Code**. (Clavier : **Ctrl** + **Shift** + **`**)
+2. Une fois que votre application passe en mode arrêt ou que vous parcourez une fonction, choisissez **carte de Code**. (Clavier : **Ctrl** + **MAJ**) +  **`**
 
      ![Choisir Carte de code pour démarrer le mappage de la pile d’appels](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -105,7 +105,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
  Vous disposez maintenant une carte - ce qu’ensuite ? Si vous travaillez avec C# ou Visual Basic, ajoutez des éléments, tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code.
 
- Double-cliquez sur une méthode pour afficher sa définition de code ou utilisez le menu contextuel pour la méthode. (Clavier : Sélectionnez la méthode sur la carte et appuyez sur **F12**)
+ Double-cliquez sur une méthode pour afficher sa définition de code ou utilisez le menu contextuel pour la méthode. (Clavier : Sélectionnez la méthode sur la carte et appuyez sur **F12**.
 
  ![Aller à la définition du code pour une méthode sur une carte du code](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -156,7 +156,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
    Modification de la carte n’affecte pas le code en aucune façon. N'hésitez pas à renommer, déplacer ou supprimer tout élément de la carte.
 
-- **Que signifie ce message : « Le diagramme peut être basé sur une version antérieure du code » ?**
+- **Signification de ce message: «Le diagramme peut être basé sur une version antérieure du code»?**
 
    Il se peut que le code ait changé après la dernière mise à jour de la carte. Par exemple, un appel sur la carte peut ne plus exister dans le code. Fermez le message et essayez de régénérer la solution avant de remettre à jour la carte.
 
@@ -178,7 +178,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 - **Comment empêcher le mappage de l’ajout de nouvelles piles d’appels automatiquement ?**
 
-   Choisissez ![bouton &#45; pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap_automaticupdateicon.gif) sur la barre d’outils de la carte. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl** + **MAJ** + **`**.
+   Choisissez ![bouton &#45; pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap_automaticupdateicon.gif) sur la barre d’outils de la carte. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl** + **MAJ** +  **`** .
 
    La carte continuera à être mise en surbrillance les piles d’appels existantes sur la carte pendant que vous déboguez.
 
