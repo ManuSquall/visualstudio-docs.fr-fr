@@ -4,15 +4,14 @@ description: Utilisation de fonctions Azure dans Visual Studio pour Mac.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933922"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108010"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -25,7 +24,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 > * Intégrer des fonctions à des ressources de stockage web et Azure
 > * Orchestrer un flux de travail impliquant plusieurs fonctions Azure
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 - Visual Studio pour Mac 7.5 ou ultérieur
 - Un abonnement Azure (disponible gratuitement sur le site [https://azure.com/free](https://azure.com/free))
@@ -226,7 +225,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. À la fin de la première liaison (après la ligne **"name": "req"**), ajoutez les propriétés ci-dessous. N’oubliez pas d’ajouter une virgule à la ligne précédente. Cette propriété se substitue à la racine par défaut. Elle extrait ainsi les paramètres **int** du chemin d’accès et les place dans les paramètres de méthode nommés **x** et **y**.
+1. À la fin de la première liaison (après la ligne **"name": "req"** ), ajoutez les propriétés ci-dessous. N’oubliez pas d’ajouter une virgule à la ligne précédente. Cette propriété se substitue à la racine par défaut. Elle extrait ainsi les paramètres **int** du chemin d’accès et les place dans les paramètres de méthode nommés **x** et **y**.
 
     ```json
     "direction": "in",
@@ -243,7 +242,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     }
     ```
 
-1. Changez également la propriété **entryPoint** située en bas du fichier de manière à ce qu’elle utilise une méthode appelée **« Add2 »**, comme indiqué ci-dessous. Vous pouvez donc constater que le chemin **api/Adder...** peut mapper à une méthode appropriée avec un nom quelconque (**Add2** ici).
+1. Changez également la propriété **entryPoint** située en bas du fichier de manière à ce qu’elle utilise une méthode appelée **« Add2 »** , comme indiqué ci-dessous. Vous pouvez donc constater que le chemin **api/Adder...** peut mapper à une méthode appropriée avec un nom quelconque (**Add2** ici).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +298,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![URL pour les fonctions HTTP](media/azure-functions-lab-image31.png)
 
-1. Revenez à la fenêtre du navigateur et accédez à **http://localhost:7071/api/Adder/3/5**.
+1. Revenez à la fenêtre du navigateur et accédez à **http://localhost:7071/api/Adder/3/5** .
 
 1. La méthode aboutit une fois de plus, tirant (pull) les paramètres du chemin et produisant une somme.
 
@@ -348,7 +347,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
-1. Sous l’onglet du navigateur, accédez à **http://localhost:7071/api/Process/4/6**. Un autre message est placé dans la file d’attente, ce qui doit aboutir à l’ajout d’une nouvelle ligne à la table.
+1. Sous l’onglet du navigateur, accédez à **http://localhost:7071/api/Process/4/6** . Un autre message est placé dans la file d’attente, ce qui doit aboutir à l’ajout d’une nouvelle ligne à la table.
 
 1. Revenez au **Terminal** et observez la requête entrante **4 + 6**.
 
@@ -381,11 +380,11 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
-1. Sous l’onglet du navigateur, actualisez l’URL à l’adresse **http://localhost:7071/api/Process/4/6**. Étant donné que la ligne de table pour cet enregistrement existe, elle doit être retournée immédiatement et sans erreur. Comme il n’y a pas de sortie HTTP, vous pouvez voir la sortie dans le Terminal.
+1. Sous l’onglet du navigateur, actualisez l’URL à l’adresse **http://localhost:7071/api/Process/4/6** . Étant donné que la ligne de table pour cet enregistrement existe, elle doit être retournée immédiatement et sans erreur. Comme il n’y a pas de sortie HTTP, vous pouvez voir la sortie dans le Terminal.
 
     ![Sortie du Terminal montrant que la ligne de la table existe déjà](media/azure-functions-lab-image33.png)
 
-1. Changez l’URL pour refléter une combinaison qui n’a pas encore été testée, par exemple **http://localhost:7071/api/Process/5/7**. Notez le message dans le Terminal qui indique que la ligne de table est introuvable (comme prévu).
+1. Changez l’URL pour refléter une combinaison qui n’a pas encore été testée, par exemple **http://localhost:7071/api/Process/5/7** . Notez le message dans le Terminal qui indique que la ligne de table est introuvable (comme prévu).
 
     ![Sortie du Terminal montrant un nouveau processus](media/azure-functions-lab-image34.png)
 

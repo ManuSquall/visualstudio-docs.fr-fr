@@ -4,15 +4,14 @@ description: Informations sur la prise en charge de JavaScript dans Visual Studi
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/03/2018
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: f5fdc28930fca1e6f70373a3f079d12208c824d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 13aa6e595deb83344d40dff396c7e106bdcbc67e
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691426"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108035"
 ---
 # <a name="javascript-and-typescript-support"></a>Prise en charge de JavaScript et TypeScript
 

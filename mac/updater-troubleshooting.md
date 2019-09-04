@@ -1,17 +1,18 @@
 ---
 title: Le programme de mise à jour présente des erreurs lors de la récupération des informations
 description: Instructions pour corriger l’erreur 'Erreur lors de la récupération des informations de mise à jour' dans Visual Studio 2019 pour Mac
+ms.topic: troubleshooting
 author: asb3993
 ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: ef0d1f7516c410475f467ecaadecbb0aeaac71a3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5ba295defe19c6f3c6c56d5bccc7cc3fa367bb50
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825725"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107793"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Résolution des problèmes : Le programme de mise à jour présente des erreurs lors de la récupération des informations
 

@@ -4,15 +4,14 @@ description: Instructions pour mettre à jour Visual Studio pour Mac et accéder
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16fea3d68c7d418d7a0a56dbdcd83af107f91b4a
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997934"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107807"
 ---
 # <a name="install-a-preview-release"></a>Installer une préversion
 

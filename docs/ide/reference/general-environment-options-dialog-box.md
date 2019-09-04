@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605447"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180281"
 ---
 # <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : Environnement \> Général
 
@@ -62,7 +62,7 @@ Spécifie si Visual Studio définit automatiquement le réglage de l'expérience
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 comporte un paramètre **Laisser Windows essayer de résoudre les problèmes d’applications floues**. Il est recommandé **d’activer** ce paramètre si Visual Studio paraît flou sur le moniteur. Envisagez de passer à [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), qui offre une bien meilleure clarté de l’affichage. En effet, il s’agit d’une application compatible points par pouce par moniteur.
+> Windows 10 comporte un paramètre **Laisser Windows essayer de résoudre les problèmes d’applications floues**. Il est recommandé **d’activer** ce paramètre si Visual Studio paraît flou sur le moniteur. Envisagez de passer à [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), qui offre une bien meilleure clarté de l’affichage. En effet, il s’agit d’une application compatible points par pouce par moniteur.
 
 ::: moniker-end
 
