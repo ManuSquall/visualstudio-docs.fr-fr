@@ -4,15 +4,14 @@ description: Utilisation d’un fichier editorconfig pour assurer la cohérence 
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998775"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108108"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Si vous affectez à `root` la valeur `true`, ce fichier est marqué comme étant au sommet du code base. Tout fichier `.editorconfig` situé plus haut dans le projet est ignoré, comme l’explique la section [Substituer les paramètres d’EditorConfig](#override-editorconfig-settings).
 
-Chaque section, dénotée par des crochets (**[]**), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
+Chaque section, dénotée par des crochets ( **[]** ), spécifie des informations sur les types de fichiers auxquels les propriétés suivantes se rapportent.
 
 Dans l’exemple ci-dessus, certains paramètres sont appliqués à tous les fichiers du projet tandis que d’autres sont ajoutés uniquement aux fichiers C#. Les captures d’écran ci-dessous montrent une section de code avant et après l’application des paramètres `.editorconfig` :
 

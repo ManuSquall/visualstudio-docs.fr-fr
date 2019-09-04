@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961820"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154918"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle de projet web Django Sondage
 
@@ -183,7 +183,7 @@ Pour voir l’effet de la modification d’un modèle, essayez de suivre les ét
     ```
 
 1. Enregistrez le fichier, cliquez avec le bouton droit sur le projet **DjangoPolls** dans **l’Explorateur de solutions** et sélectionnez la commande **Python** > **Django – Migrer**.
-1. Sélectionnez la commande **Projet** > **Afficher tous les fichiers** pour afficher le script qui vient d’être généré dans le dossier **migrations**, dont le nom commence par **002_auto_**. Cliquez avec le bouton droit sur ce fichier et sélectionnez **Inclure dans le projet**. Vous pouvez ensuite sélectionner à nouveau **Projet** > **Afficher tous les fichiers** pour restaurer l’affichage d’origine. (Consultez la deuxième question ci-dessous pour plus d’informations sur cette étape.)
+1. Sélectionnez la commande **Projet** > **Afficher tous les fichiers** pour afficher le script qui vient d’être généré dans le dossier **migrations**, dont le nom commence par **002_auto_** . Cliquez avec le bouton droit sur ce fichier et sélectionnez **Inclure dans le projet**. Vous pouvez ensuite sélectionner à nouveau **Projet** > **Afficher tous les fichiers** pour restaurer l’affichage d’origine. (Consultez la deuxième question ci-dessous pour plus d’informations sur cette étape.)
 1. Si vous le souhaitez, ouvrez ce fichier pour examiner comment Django écrit la modification de l’état du modèle précédent vers le nouvel état.
 1. Cliquez à nouveau avec le bouton droit sur le projet Visual Studio et sélectionnez **Python** > **Django – Migrer** pour appliquer les modifications à la base de données.
 1. Si vous le souhaitez, ouvrez la base de données dans une visionneuse appropriée pour confirmer la modification.
@@ -374,6 +374,6 @@ L’exécution d’une application web sur votre ordinateur de développement n�
 
 - Écrire des tests unitaires dans *tests.py* ; les modèles de projet Visual Studio fournissent des points de départ, et vous trouverez plus d’informations sous [Écrire votre première application Django, partie 5 – tests](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) et sous [Tests dans Django](https://docs.djangoproject.com/en/2.0/topics/testing/) dans la documentation Django.
 
-- Transformer l’application de SQLite en magasin de données au niveau de la production comme PostgreSQL, MySQL et SQL Server (qui peuvent tous être hébergés sur Azure). Comme décrit dans [Quand utiliser SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite fonctionne bien sur les sites au trafic faible à moyen, avec moins de 100 000 accès par jour, mais n’est pas recommandé pour les volumes plus élevés. Il est également limité à un seul ordinateur et ne peut par conséquent pas être utilisé dans un scénario multiserveur tel que l’équilibrage de charge et la géoréplication. Pour plus d’informations sur la prise en charge de Django pour d’autres bases de données, consultez [Configuration de la base de données](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Vous pouvez également utiliser le [kit de développement logiciel (SDK) Azure pour Python](/python/azure/?view=azure-python) pour travailler avec les services de stockage Azure, comme les tables et les objets blob.
+- Transformer l’application de SQLite en magasin de données au niveau de la production comme PostgreSQL, MySQL et SQL Server (qui peuvent tous être hébergés sur Azure). Comme décrit dans [Quand utiliser SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite fonctionne bien sur les sites au trafic faible à moyen, avec moins de 100 000 accès par jour, mais n’est pas recommandé pour les volumes plus élevés. Il est également limité à un seul ordinateur et ne peut par conséquent pas être utilisé dans un scénario multiserveur tel que l’équilibrage de charge et la géoréplication. Pour plus d’informations sur la prise en charge de Django pour d’autres bases de données, consultez [Configuration de la base de données](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Vous pouvez également utiliser le [kit de développement logiciel (SDK) Azure pour Python](/azure/python/) pour travailler avec les services de stockage Azure, comme les tables et les objets blob.
 
 - Configurez un pipeline d’intégration continue ou de déploiement continu sur un service comme Azure DevOps. En plus de l’utilisation du contrôle de code source (via Azure Repos, GitHub ou ailleurs), vous pouvez configurer un projet Azure DevOps pour exécuter automatiquement vos tests unitaires, dans le cadre des prérequis à la mise en production. Vous pouvez également configurer le pipeline pour effectuer le déploiement sur un serveur de préproduction pour des tests supplémentaires, avant le déploiement en production. Par ailleurs, Azure DevOps s’intègre aux solutions de supervision comme App Insights, et termine le cycle avec des outils de planification agile. Pour plus d’informations, consultez [Créer un pipeline CI/CD pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts), ainsi que la [documentation générale sur Azure DevOps ](/azure/devops/?view=vsts).
