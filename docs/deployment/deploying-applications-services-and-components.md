@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533353"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222612"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
@@ -96,6 +96,13 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 - **Bureau Windows** : vous pouvez effectuer un déploiement sur Microsoft Store à l’aide du Pont du bureau à partir de la version 15.4 de Visual Studio 2017. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Pont du bureau](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Déployer des packages .NET sur NuGet.org
+
+Pour déployer du code groupé dans des « packages » contenant du code compilé (sous forme de DLL) ainsi que d’autres contenus nécessaires dans les projets qui consomment ces packages, vous pouvez utiliser Visual Studio pour créer le package NuGet et un outil CLI pour émettre la commande de déploiement finale.
+
+- [Créer et publier un package .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Créer et publier un package .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Déployer sur un appareil (UWP)
 

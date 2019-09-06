@@ -1,8 +1,10 @@
 ---
 title: Ressources pour la conception d’applications accessibles
 description: Découvrez comment créer des applications accessibles afin de faciliter leur utilisation par des personnes handicapées.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811779"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107836"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
 
-Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations générales sur l’accessibilité dans [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+En savoir plus sur les technologies qui prennent en charge la conception accessible. Nous avons également inclus des conseils et des liens vers des tutoriels qui peuvent vous aider à développer des applications Windows et des sites web accessibles.
+
+>[!NOTE]
+>Pour plus d’informations sur la façon dont nous développons des produits qui autonomisent tout le monde, consultez [Accessibilité de Microsoft](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Technologies
 
@@ -53,4 +58,5 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 ## <a name="see-also"></a>Voir aussi
 
-[Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility/)

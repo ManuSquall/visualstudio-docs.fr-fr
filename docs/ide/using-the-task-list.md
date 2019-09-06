@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821568"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154860"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -32,7 +32,7 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 Quand la **Liste des tâches** est ouverte, elle apparaît en bas de la fenêtre d’application.
 
-Pour ouvrir la **liste des tâches**, sélectionnez **Affichage** > **Liste des tâches** ou utilisez le raccourci clavier **Ctrl**+**\\**,**T**.
+Pour ouvrir la **liste des tâches**, sélectionnez **Affichage** > **Liste des tâches** ou utilisez le raccourci clavier **Ctrl**+ **\\** ,**T**.
 
 ![Fenêtre Liste des tâches](../ide/media/vs2015_task_list.png)
 
@@ -64,6 +64,9 @@ Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un 
 
 Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.
 
+> [!NOTE]
+> Les jetons par défaut sont uniquement disponibles pour les langages C/C++, C# et VB. Pour les autres langages, consultez la section **Jetons personnalisés**.
+
 ### <a name="custom-tokens"></a>Jetons personnalisés
 
 Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE` et `UnresolvedMergeConflict`. Ils ne respectent pas la casse. Vous pouvez également créer vos propres jetons personnalisés.
@@ -91,7 +94,7 @@ Pour créer un jeton personnalisé :
 
 Par défaut, les commentaires TODO C++ sont affichés dans **Liste des tâches**.
 
-Pour désactiver les commentaires TODO C++, dans le menu **Outils**, choisissez **Options** > **Éditeur de texte** > **C/C++** > **Affichage** > **Énumérer les tâches de commentaire** et définissez la valeur sur **false**.
+Pour désactiver les commentaires TODO C++, dans le menu **Outils**, choisissez **Options** > **Éditeur de texte** > **C/C++**  > **Affichage** > **Énumérer les tâches de commentaire** et définissez la valeur sur **false**.
 
 ## <a name="shortcuts"></a>Raccourcis
 

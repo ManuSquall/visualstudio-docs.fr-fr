@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976218"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180002"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -122,7 +122,7 @@ Pour être certain d’avoir accès à tout ce dont vous avez besoin pendant que
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Permet d’afficher, soumettre, exécuter et gérer des travaux ASA <br><br> Permet de parcourir des clusters HDI et soumettre, diagnostiquer et déboguer des travaux HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Permet de compiler, soumettre, afficher, diagnostiquer et déboguer des travaux ; utilisé pour parcourir des fichiers ADLS ; permet de charger et télécharger des fichiers |
 | Service d’empaquetage | [compte].visualstudio.com <br/> [compte].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org et \*.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple : le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Utilisé pour se connecter avec Azure DevOps Services |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Utilisé pour se connecter avec Azure DevOps Services |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Résoudre les erreurs liées au réseau
