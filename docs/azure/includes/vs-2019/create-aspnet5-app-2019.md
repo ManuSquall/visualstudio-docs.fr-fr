@@ -6,17 +6,17 @@ ms.technology: vs-azure
 ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
-ms.openlocfilehash: d01cba0f947752e9f1e277d6f23e74efa39d47fd
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: 81c2f7ae366efa70c3608e112dabcbfceb4087e4
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253646"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "70312272"
 ---
-1. Dans la fenêtre de démarrage Visual Studio, choisissez **Créer un projet**.
-1. Choisissez **Application web ASP.NET Core**, puis **Suivant**.
-1. Donnez un nom à votre nouvelle application (ou utilisez la valeur par défaut) et choisissez **Créer**.
-1. Choisissez **Application web**.
-1. Indiquez si vous souhaitez ou non une prise en charge de SSL via la case à cocher **Configurer pour HTTPS**.
-1. Cochez la case **Activer la prise en charge de Docker**.
-1. Sélectionnez le type de conteneur souhaité (Windows ou Linux) et cliquez sur **Créer**.
+1. Dans la fenêtre de démarrage de Visual Studio, sélectionnez **créer un nouveau projet**.
+1. Sélectionnez **ASP.net Core application Web**, puis cliquez sur **suivant**.
+1. Entrez un nom pour votre nouvelle application (ou utilisez le nom par défaut), puis sélectionnez **créer**.
+1. Sélectionnez **Application web**.
+1. Indiquez si vous souhaitez prendre en charge SSL en activant ou désactivant la case à cocher **configurer pour HTTPS** .
+1. Activez la case à cocher **activer la prise en charge** de l’ancrage.
+1. Sélectionnez le type de conteneur souhaité (Windows ou Linux), puis sélectionnez **créer**.
