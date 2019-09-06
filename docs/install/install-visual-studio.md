@@ -1,5 +1,5 @@
 ---
-title: Installer Visual Studio
+title: Installation de Visual Studio
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
 ms.date: 04/16/2019
@@ -20,14 +20,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263723"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293702"
 ---
-# <a name="install-visual-studio"></a>Installer Visual Studio
+# <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -112,7 +112,7 @@ Ensuite, téléchargez le fichier du programme d’amorçage de Visual Studio. P
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Télécharger Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Télécharger Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -236,9 +236,9 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 3. Sélectionnez un type de projet.
 
-   Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), choisissez **Installé**, développez **Visual C++**, puis choisissez le type de projet C++ à générer.
+   Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), choisissez **Installé**, développez **Visual C++** , puis choisissez le type de projet C++ à générer.
 
-   Pour [créer une application C#](../get-started/csharp/tutorial-console.md), choisissez **Installé**, développez **Visual C#**, puis choisissez le type de projet C# à générer.
+   Pour [créer une application C#](../get-started/csharp/tutorial-console.md), choisissez **Installé**, développez **Visual C#** , puis choisissez le type de projet C# à générer.
 
 ::: moniker-end
 
