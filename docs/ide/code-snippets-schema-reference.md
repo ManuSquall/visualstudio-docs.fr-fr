@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924074"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222692"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -121,7 +121,7 @@ Trois attributs sont disponibles pour l’élément Code :
    |`SQL`|Identifie un extrait de code SQL.|
    |`HTML`|Identifie un extrait de code HTML.|
 
-- **Kind** - Attribut _facultatif_ qui spécifie le type de code contenu dans l’extrait de code, ainsi que l’emplacement auquel un extrait de code doit être inséré pour pouvoir être compilé. Il peut avoir l’une des valeurs suivantes :
+- **Genre** - _Attribut facultatif_ qui spécifie le type de code contenu dans l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
    |Value|Description|
    |-----|-----------|

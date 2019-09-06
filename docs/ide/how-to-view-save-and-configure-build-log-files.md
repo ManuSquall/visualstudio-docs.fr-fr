@@ -1,6 +1,6 @@
 ---
 title: 'Procédure : afficher, enregistrer et configurer des fichiers journaux de génération | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415577"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154815"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procédure : Afficher, enregistrer et configurer des fichiers journaux de génération
 
@@ -42,6 +42,8 @@ Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichie
 
    Visual Studio vous invite à entrer un emplacement pour enregistrer la sortie de génération.
 
+Vous pouvez également générer des journaux en exécutant MSBuild directement à partir de la ligne de commande, à l’aide de l’option de ligne de commande `-fileLogger` (`-fl`). Consultez [Obtenir des journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Pour modifier la quantité d’informations contenues dans le journal de génération
 
 1. Dans la barre de menus, choisissez **Outils** > **Options**.
@@ -63,8 +65,11 @@ Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichie
     > [!IMPORTANT]
     > Vous devez regénérer le projet pour que vos modifications soient appliquées dans la fenêtre **Sortie** (tous les projets) et dans le fichier *\<nom_projet>.txt* (projets C++ uniquement).
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Utiliser des journaux binaires pour faciliter la navigation dans les fichiers journaux volumineux
+
+Les journaux binaires sont une fonctionnalité facultative pour les projets .NET qui vous permet d’obtenir une expérience de navigation plus riche, ce qui peut faciliter la recherche d’informations dans les journaux volumineux. Pour utiliser des journaux binaires, installez les [Outils système de projet](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Pour plus d’informations, consultez [https://msbuildlog.com](https://msbuildlog.com) et [Journaux binaires](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md).
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
