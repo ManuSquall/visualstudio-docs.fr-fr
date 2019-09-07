@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbecfb7e74b38bb935414e701618cef361bf0506
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 2f2ff06cc920568b8c344fef42d01408d3134fd8
+ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180021"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739301"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -29,9 +29,9 @@ ms.locfileid: "70180021"
 
 Ce guide de résolution des problèmes inclut des instructions détaillées qui doivent permettre de résoudre la plupart des problèmes d’installation.
 
-## <a name="how-to-troubleshoot-an-online-installation"></a>Guide pratique pour résoudre les problèmes liés à une installation en ligne
+## <a name="troubleshoot-an-online-installation"></a>Résoudre les problèmes d’une installation en ligne
 
-Les étapes suivantes sont optimisées pour une installation en ligne classique. Pour tout problème affectant une installation hors connexion, consultez [Guide pratique pour résoudre les problèmes liés à une installation hors connexion](#how-to-troubleshoot-an-offline-installation).
+Les étapes suivantes sont optimisées pour une installation en ligne classique. Pour tout problème affectant une installation hors connexion, consultez [Guide pratique pour résoudre les problèmes liés à une installation hors connexion](#troubleshoot-an-offline-installation).
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Étape 1 : Vérifier si ce problème est un problème connu
 
@@ -82,7 +82,7 @@ Dans certaines situations (fichiers endommagés, par exemple), vous devrez peut-
 
 ::: moniker range="vs-2017"
 
-1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#how-to-get-visual-studio-installation-logs).
+1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#get-installation-logs).
 2. Ouvrez le programme d’installation de Visual Studio, puis cliquez sur **Signaler un problème** pour ouvrir l’outil Commentaires sur Visual Studio.
 ![Vous pouvez accéder par tabulation au bouton Fournir des commentaires pour ouvrir l’outil Commentaires](media/report-a-problem.png)
 3. Indiquez le titre du problème signalé et les détails pertinents. Cliquez sur **Suivant** pour accéder à la section **Pièces jointes**, puis joignez le fichier journal généré (le fichier est généralement situé à l’emplacement `%TEMP%\vslogs.zip`).
@@ -92,7 +92,7 @@ Dans certaines situations (fichiers endommagés, par exemple), vous devrez peut-
 
 ::: moniker range="vs-2019"
 
-1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#how-to-get-visual-studio-installation-logs).
+1. Collecter vos journaux d’installation. Pour plus d’informations, consultez [Guide pratique pour obtenir les journaux d’installation Visual Studio](#get-installation-logs).
 2. Ouvrez le programme d’installation de Visual Studio, puis cliquez sur **Signaler un problème** pour ouvrir l’outil Commentaires sur Visual Studio.
 ![Vous pouvez accéder par tabulation au bouton Fournir des commentaires pour ouvrir l’outil Commentaires](media/vs-2019/vs-installer-report-problem.png)
 3. Indiquez le titre du problème signalé et les détails pertinents. Cliquez sur **Suivant** pour accéder à la section **Pièces jointes**, puis joignez le fichier journal généré (le fichier est généralement situé à l’emplacement `%TEMP%\vslogs.zip`).
@@ -112,16 +112,16 @@ En dernier recours, vous pouvez [désinstaller Visual Studio](remove-visual-stud
 
 Si aucune des étapes précédentes ne vous permet d’installer ou de mettre à niveau Visual Studio correctement, contactez-nous via notre option de support [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour obtenir une assistance supplémentaire.
 
-## <a name="how-to-troubleshoot-an-offline-installation"></a>Guide pratique pour résoudre les problèmes liés à une installation hors connexion
+## <a name="troubleshoot-an-offline-installation"></a>Résoudre les problèmes d’une installation hors connexion
 
 Voici un tableau des problèmes connus et de certaines solutions de contournement qui peuvent vous aider quand vous effectuez une installation dans une topologie locale.
 
-| Problème       | Élément                   | Solution |
+| Problème       | Item                   | Solution |
 | ----------- | ---------------------- | -------- |
 | Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Vérifiez que vous ajustez les autorisations (ACL) de sorte qu’elles accordent un accès en lecture aux autres utilisateurs *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
 
-## <a name="how-to-get-visual-studio-installation-logs"></a>Guide pratique pour obtenir les journaux d’installation de Visual Studio
+## <a name="get-installation-logs"></a>Récupération des journaux d’installation
 
 Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
 
