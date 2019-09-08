@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e300edf07aa98facbe6059ba9574e238ec8f3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 621bb7292ca467d6d3197636f662a4662712d483
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923255"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766020"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002 : Ne pas exposer de listes génériques
 
@@ -31,10 +31,12 @@ ms.locfileid: "68923255"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un type contient un membre visible de l’extérieur, qui <xref:System.Collections.Generic.List%601?displayProperty=fullName> est un type, <xref:System.Collections.Generic.List%601?displayProperty=fullName> retourne un type, ou dont la <xref:System.Collections.Generic.List%601?displayProperty=fullName> signature inclut un paramètre.
+
+Un type contient un membre visible de l’extérieur, qui <xref:System.Collections.Generic.List%601?displayProperty=fullName> est un type, <xref:System.Collections.Generic.List%601> retourne un type, ou dont la <xref:System.Collections.Generic.List%601> signature inclut un paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>est une collection générique conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName>ne contient pas de membres virtuels qui facilitent la modification du comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à <xref:System.Collections.Generic.List%601?displayProperty=fullName>la place de.
+
+<xref:System.Collections.Generic.List%601?displayProperty=fullName>est une collection générique conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601>ne contient pas de membres virtuels qui facilitent la modification du comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à <xref:System.Collections.Generic.List%601>la place de.
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
@@ -42,13 +44,20 @@ Un type contient un membre visible de l’extérieur, qui <xref:System.Collectio
 
 - <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
+
 Pour corriger une violation de cette règle, remplacez le <xref:System.Collections.Generic.List%601?displayProperty=fullName> type par l’une des collections génériques conçues pour l’héritage.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+
 Ne supprimez pas un avertissement de cette règle, sauf si l’assembly qui déclenche cet avertissement n’est pas destiné à être une bibliothèque réutilisable. Par exemple, il serait prudent de supprimer cet avertissement dans une application à performance optimisée où un gain de performances a été obtenu à partir de l’utilisation de listes génériques.
 
 ## <a name="related-rules"></a>Règles associées
+
 [CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
 [CA1010 Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -64,4 +73,5 @@ Ne supprimez pas un avertissement de cette règle, sauf si l’assembly qui déc
 [CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
+
 [Génériques](/dotnet/csharp/programming-guide/generics/index)
