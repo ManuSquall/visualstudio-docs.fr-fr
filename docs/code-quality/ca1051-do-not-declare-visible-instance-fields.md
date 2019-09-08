@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547554"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766059"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051 : Ne pas déclarer de champs d'instances visibles
 
@@ -38,9 +38,11 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Un champ s'utilise principalement en tant que détail d'implémentation. Les champs doivent `private` être `internal` ou et doivent être exposés à l’aide de propriétés. Il est aussi facile d’accéder à une propriété que d’accéder à un champ, et le code des accesseurs d’une propriété peut changer à mesure que les fonctionnalités du type se développent sans introduire de modifications avec rupture. Les propriétés qui retournent simplement la valeur d’un champ privé ou interne sont optimisées pour s’exécuter sur les avec l’accès à un champ; un gain de performances très faible est associé à l’utilisation de champs visibles de l’extérieur sur les propriétés.
+Un champ s'utilise principalement en tant que détail d'implémentation. Les champs doivent `private` être `internal` ou et doivent être exposés à l’aide de propriétés. Il est aussi facile d’accéder à une propriété que d’accéder à un champ, et le code des accesseurs d’une propriété peut changer à mesure que les fonctionnalités du type se développent sans introduire de modifications avec rupture.
 
-En externe, fait référence `public`aux `protected`niveaux d' `protected internal` accessibilité, `Protected`, et `Protected Friend` (`Public`, et dans Visual Basic).
+Les propriétés qui retournent simplement la valeur d’un champ privé ou interne sont optimisées pour s’exécuter sur les avec l’accès à un champ ; le gain de performance de l’utilisation de champs visibles de l’extérieur au lieu de propriétés est minime. *En externe* , fait référence `public`aux `protected`niveaux d’accessibilité, `Protected`, et `Protected Friend` `protected internal` (`Public`, et dans Visual Basic).
+
+En outre, les champs publics ne peuvent pas être protégés par des [demandes de liaison](/dotnet/framework/misc/link-demands). Pour plus d’informations, [consultez CA2112 : Les types sécurisés ne doivent](../code-quality/ca2112-secured-types-should-not-expose-fields.md)pas exposer de champs. (Les demandes de liaison ne s’appliquent pas aux applications .NET Core.)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -48,11 +50,16 @@ Pour corriger une violation de cette règle, définissez le champ `private` ou `
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez aucun avertissement de cette règle. Les champs visibles de l’extérieur ne fournissent aucun avantage qui ne sont pas disponibles pour les propriétés. En outre, les champs publics ne peuvent pas être protégés par des [demandes de liaison](/dotnet/framework/misc/link-demands). Consultez [CA2112: Les types sécurisés ne doivent](../code-quality/ca2112-secured-types-should-not-expose-fields.md)pas exposer de champs.
+Supprimez cet avertissement uniquement si vous êtes certain que les consommateurs ont besoin d’un accès direct au champ. Pour la plupart des applications, les champs exposés ne fournissent pas d’avantages en matière de performances ou de facilité de maintenance par rapport aux propriétés.
+
+Les consommateurs peuvent avoir besoin d’un accès à un champ dans les cas suivants :
+
+- dans ASP.NET Web Forms contrôles de contenu
+- Lorsque la plateforme cible utilise pour modifier `ref` des champs, tels que des frameworks MVVM (Model-View-ViewModel) pour WPF et UWP
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
