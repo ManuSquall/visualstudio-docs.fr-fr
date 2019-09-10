@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c14f48c3f6fc5b3b4cbdf9dfb5d36919de6884f
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
+ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293541"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808775"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : Créer une visionneuse d’images
 
@@ -52,7 +52,7 @@ Une fois que vous avez terminé, votre programme doit ressembler à l’image su
 |Titre|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet Application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Commencez par créer un projet d’application Windows Forms.|
-|[Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md)|Exécutez le programme d’application Windows Forms que vous avez créé dans l’étape précédente.|
+|[Étape 2 : Exécuter votre application](../ide/step-2-run-your-program.md)|Exécutez le programme d’application Windows Forms que vous avez créé dans l’étape précédente.|
 |[Étape 3 : Définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md)|Modifiez l’apparence de votre formulaire à l’aide de la fenêtre **Propriétés**.|
 |[Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Ajoutez un contrôle `TableLayoutPanel` à votre formulaire.|
 |[Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md)|Ajoutez des contrôles à votre formulaire (notamment des contrôles `PictureBox` et `CheckBox`). Ajoutez des boutons à votre formulaire.|
