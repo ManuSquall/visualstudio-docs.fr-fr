@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: "CA3012\_: Passez en revue le code pour détecter les vulnérabilités de l’injection regex"
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: "CA3061\_: Ne pas ajouter de schéma par URL"
+                  href: ca3061.md
                 - name: 'CA3075 : Traitement DTD non sécurisé'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076 : Exécution non sécurisée de script XSLT'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: "CA5361\_: Ne pas désactiver l’utilisation du chiffrement fort par SChannel"
                   href: ca5361.md
+                - name: "CA5363\_: Ne pas désactiver la validation de demandes"
+                  href: ca5363.md
                 - name: "CA5364\_: Ne pas utiliser de protocoles de sécurité dépréciés"
                   href: ca5364.md
+                - name: "CA5369\_: Utiliser XmlReader pour la désérialisation"
+                  href: ca5369.md
+                - name: "CA5370\_: Utiliser XmlReader pour la validation du lecteur"
+                  href: ca5370.md
+                - name: "CA5371\_: Utiliser XmlReader pour la lecture de schéma"
+                  href: ca5371.md
+                - name: "CA5372\_: Utiliser XmlReader pour XPathDocument"
+                  href: ca5372.md
+                - name: "CA5373\_: Ne pas utiliser la fonction de dérivation de clé obsolète"
+                  href: ca5373.md
                 - name: "CA5378\_: Ne pas désactiver ServicePointManagerSecurityProtocols"
                   href: ca5378.md
+                - name: "CA5380\_: Ne pas ajouter de certificats au magasin racine"
+                  href: ca5380.md
+                - name: "CA5381\_: S’assurer que les certificats ne sont pas ajoutés au magasin racine"
+                  href: ca5381.md
                 - name: "CA5386\_: Éviter tout codage en dur de la valeur de SecurityProtocolType"
                   href: ca5386.md
+                - name: "CA5389\_: Ne pas ajouter le chemin de l’élément d’archive au chemin du système de fichiers cible"
+                  href: ca5389.md
                 - name: "CA5397\_: Ne pas utiliser de valeurs SslProtocols dépréciées"
                   href: ca5397.md
                 - name: "CA5398\_: Éviter les valeurs SslProtocols codées en dur"
