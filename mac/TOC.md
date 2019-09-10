@@ -106,7 +106,7 @@
 # [Notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Notes de publication de la préversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Exemples
-## [Exemples proposés](samples.yml)
+## [Exemples proposés](samples/index.yml)
 ## [Tous les exemples ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [Tous les exemples .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Tous les exemples Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)
