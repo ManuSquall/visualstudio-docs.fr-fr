@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
-ms.translationtype: HT
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634851"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864690"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -68,8 +68,14 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 - Journaux Python, s’ils existent
 
-- Une capture d’écran, si vous choisissez de l’inclure
+- Windows Forms les journaux, s’ils existent
 
+> [!NOTE]
+> Les fichiers journaux sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.  
+  > ![Signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
+
+- Une capture d’écran, si vous choisissez de l’inclure
+  
 - Les données d’enregistrement, si vous choisissez d’inclure un enregistrement, qui comprennent :
 
   - Les étapes pour reproduire le problème.
