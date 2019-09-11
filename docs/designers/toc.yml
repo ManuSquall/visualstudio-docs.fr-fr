@@ -116,9 +116,9 @@
             - name: Vue d'ensemble
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: "Étape\_1\_: Créer un projet Application Windows Forms"
+            - name: "Étape\_1\_: Créer un projet d’application Windows Forms"
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: "Étape\_2\_: Exécuter votre programme"
+            - name: "Étape\_2\_: Exécuter votre application"
               href: ../ide/step-2-run-your-program.md
             - name: "Étape\_3\_: Définir les propriétés de votre formulaire"
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: "Étape\_10\_: Écrire du code pour des boutons supplémentaires et une case à cocher"
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: "Étape\_11\_: Exécuter votre programme et tester d’autres fonctionnalités"
+            - name: "Étape\_11\_: Exécuter votre application et tester d’autres fonctionnalités"
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: "Tutoriel\_2\_: Créer un questionnaire mathématique chronométré (C#)"
           items:
