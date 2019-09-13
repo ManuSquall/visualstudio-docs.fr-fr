@@ -31,7 +31,7 @@ Les extraits de code sont de petits blocs de code réutilisables que l’on peut
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets).
 
-Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits de code installés disponibles pour une langue, ouvrez le **Gestionnaire des extraits de code** à partir du menu **Outils** (ou appuyez sur **CTRL**+**K**, **CTRL**+**B**), puis choisissez la langue dans la menu déroulant en haut.
+Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits de code installés disponibles pour une langue, ouvrez le **Gestionnaire des extraits de code** à partir du menu **Outils** (ou appuyez sur **CTRL**+**K**, **CTRL**+**B**), puis choisissez la langue dans le menu déroulant en haut.
 
 ![Boîte de dialogue Gestionnaire des extraits de code](media/code-snippets-manager.png)
 
