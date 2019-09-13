@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293557"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887955"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image
 
 Dans cette étape, vous allez faire fonctionner le bouton **afficher une image** comme suit :
 
-- Quand un utilisateur choisit ce bouton, le programme ouvre une boîte de dialogue <xref:System.Windows.Forms.OpenFileDialog>.
+- Quand un utilisateur clique sur ce bouton, l’application <xref:System.Windows.Forms.OpenFileDialog> ouvre une zone.
 
-- Si un utilisateur ouvre un fichier image, le programme affiche cette image dans le contrôle <xref:System.Windows.Forms.PictureBox>.
+- Si un utilisateur ouvre un fichier image, l’application affiche cette image dans le <xref:System.Windows.Forms.PictureBox>.
 
 L'IDE dispose d'un outil puissant appelé IntelliSense pour vous aider à écrire du code. À mesure que vous tapez du code, l’IDE ouvre une zone avec des saisies semi-automatiques suggérées pour les mots partiels que vous entrez.
 
@@ -69,7 +69,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
  1. Quand vous utilisez une méthode sur un contrôle ou un composant (opération désignée sous le nom d’*appel de méthode*), vous devez ajouter des parenthèses. Par conséquent, entrez les parenthèses ouvrantes et fermantes juste après le « g » dans `ShowDialog` : `()` Il doit maintenant ressembler à « openFileDialog1.ShowDialog() ».
 
     > [!NOTE]
-    > Les méthodes sont des éléments essentiels dans un programme, et ce didacticiel vous a montré plusieurs façons de les utiliser. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode `ShowDialog()` du composant **OpenFileDialog**. Vous pouvez créer vos propres méthodes pour que votre programme effectue certaines actions particulières (comme la méthode `showButton_Click()` que vous générez actuellement, qui permet d'ouvrir une boîte de dialogue et une image lorsqu'un utilisateur choisit un bouton).
+    > Les méthodes sont une partie importante d’une application, et ce didacticiel a montré plusieurs façons d’utiliser des méthodes. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode `ShowDialog()` du composant **OpenFileDialog**. Vous pouvez créer vos propres méthodes pour que votre application effectue des opérations, comme celle que vous générez maintenant, appelée `showButton_Click()` la méthode, qui ouvre une boîte de dialogue et une image lorsqu’un utilisateur choisit un bouton.
 
  1. Pour C#, ajoutez un espace, puis ajoutez deux signes égal (`==`). Pour Visual Basic, ajoutez un espace, puis un seul signe égal (`=`). (C# et Visual Basic utilisent des opérateurs d’égalité différents.)
 
@@ -102,7 +102,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 9 : Passer en revue, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 9 : Passez en revue, commentez et testez votre code](../ide/step-9-review-comment-and-test-your-code.md).**
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
 

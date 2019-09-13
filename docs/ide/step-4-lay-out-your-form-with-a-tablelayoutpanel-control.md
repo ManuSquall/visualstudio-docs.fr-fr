@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0bc67968b7248494a087f06037f72152b53300
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 3595705030e2e969f99455700ab70f36bf22274a
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293633"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887983"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel
 
@@ -93,7 +93,7 @@ Dans cette étape, vous allez ajouter un contrôle <xref:System.Windows.Forms.Ta
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 5 : Ajoutez des contrôles à votre](../ide/step-5-add-controls-to-your-form.md)formulaire**.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
 

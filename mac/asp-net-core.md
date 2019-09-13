@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692945"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913319"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -29,7 +29,7 @@ Ouvrez Visual Studio pour Mac. Dans l’écran de démarrage, sélectionnez **No
 
 La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner un modèle pour créer votre application.
 
-Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces équivalents sont :
+Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces règles sont les suivantes :
 
 - **.NET Core > Vide**
 - **.NET Core > API**
@@ -38,7 +38,7 @@ Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pou
 
 ![Options des projets ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Sélectionnez **Application web vide ASP.NET Core** et appuyez sur **Suivant**. Donnez un nom au projet et appuyez sur **Créer**. Une application ASP.NET Core est créée et devrait ressembler à l’image ci-dessous :
+Sélectionnez **Application web vide ASP.NET Core** et appuyez sur **Suivant**. Donnez un nom au projet et appuyez sur **Créer**. Cela crée une nouvelle ASP.NET Core application. Dans le volet gauche du panneau solution, développez la deuxième flèche, puis sélectionnez **Startup.cs**. Elle doit ressembler à l’image ci-dessous :
 
 ![Vue Nouveau projet vide ASP.NET Core](media/asp-net-core-2019-empty-project.png)
 

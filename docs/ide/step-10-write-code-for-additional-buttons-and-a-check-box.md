@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293616"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887870"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher
 
@@ -30,7 +30,7 @@ Vous êtes maintenant prêt à générer les quatre autres méthodes. Vous pourr
 Ce code ajoute des fonctionnalités aux boutons que vous avez ajoutés précédemment. Sans le code, les boutons n'ont aucun effet. Les boutons utilisent un code dans leurs événements <xref:System.Windows.Forms.Control.Click> (et la case à cocher utilise l'événement <xref:System.Windows.Forms.CheckBox.CheckedChanged>) pour effectuer différentes opérations lorsque vous activez les contrôles. Par exemple, l' `clearButton_Click` événement ( `ClearButton_Click`ou), qui s’active quand vous choisissez le bouton **effacer l’image** , efface l’image actuelle en affectant à sa propriété **image** la **valeur null** (ou, **Nothing**). Chaque événement dans le code inclut des commentaires qui expliquent la fonction du code.
 
 > [!TIP]
-> En guise de bonne pratique, veillez à toujours commenter votre code. Les commentaires sont des informations qu'une personne peut lire, et il est toujours utile de prendre un peu de temps pour détailler les objectifs de votre code. Tout le contenu d'une ligne de commentaire est ignoré par le programme. Dans C#, vous commentez une ligne en tapant deux barres obliques au début (//), et dans Visual Basic vous commentez une ligne en commençant par un guillemet simple (').
+> En guise de bonne pratique, veillez à toujours commenter votre code. Les commentaires sont des informations qu'une personne peut lire, et il est toujours utile de prendre un peu de temps pour détailler les objectifs de votre code. Tout ce qui se trouve sur une ligne de commentaire est ignoré par l’application. Dans C#, vous commentez une ligne en tapant deux barres obliques au début (//), et dans Visual Basic vous commentez une ligne en commençant par un guillemet simple (').
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Comment écrire du code pour des boutons supplémentaires et une case à cocher
 
@@ -44,7 +44,7 @@ Ajoutez le code suivant à votre fichier de code **Form1** (*Form1.cs* ou *Form1
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 11 : Exécuter votre programme et tester d’autres fonctionnalités](../ide/step-11-run-your-program-and-try-other-features.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 11 : Exécutez votre application et essayez d’autres](../ide/step-11-run-your-program-and-try-other-features.md)fonctionnalités**.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 9 : Passer en revue, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md).
 

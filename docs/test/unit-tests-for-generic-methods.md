@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 96cb1cc275b5eb521bc998ea26d7c742bbeabdfb
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925715"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913366"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 
@@ -162,13 +162,11 @@ Dans cet exemple, le paramètre de type générique `T` a la contrainte `where T
 
 En d’autres termes, quand vous appelez la méthode `DataTestHelper<T>()` depuis la méthode de test `DataTest()`, vous devez passer un paramètre de type `Employee` ou une classe dérivée de `Employee`.
 
-`using ClassLibrary2;`
-
-`using Microsoft.VisualStudio.TestTools.UnitTesting;`
-
-`namespace TestProject1`
-
 ```csharp
+using ClassLibrary2;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace TestProject1
 {
     [TestClass()]
     public class GenericList_NodeTest

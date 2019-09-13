@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680587"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887750"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquer au débogueur ce qui doit être affiché à l’aideC#de l’attribut F#DebuggerDisplay C++(, Visual Basic,,/CLI)
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys. En cas d’application à un type de base, l’attribut s’applique également à une sous-classe.
 
 L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.
 
-Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée.
+Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L' `DebuggerDisplay` attribut a également priorité sur la méthode substituée `ToString()` dans une sous-classe.
 
 L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.
 
@@ -90,15 +90,15 @@ public sealed class MyClass
 }
 ```
 
-Le suffixe «, NQ» indique à l’évaluateur d’expression de supprimer les guillemets lors de l’affichage de la valeur finale (NQ = no Quotations).
+Le suffixe « , NQ » indique à l’évaluateur d’expression de supprimer les guillemets lors de l’affichage de la valeur finale (NQ = no Quotations).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :
 
 |**Name**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
 |Clé|"trois"|objet {string}|
-|`Value`|3|objet {int}|
+|Valeur|3|objet {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]

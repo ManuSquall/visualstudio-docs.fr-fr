@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293566"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913164"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Étape 5 : Ajouter des contrôles à votre formulaire
 
@@ -85,7 +85,7 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 6 : Nommer vos contrôles bouton](../ide/step-6-name-your-button-controls.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 6 : Nommez vos contrôles](../ide/step-6-name-your-button-controls.md)** bouton.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 

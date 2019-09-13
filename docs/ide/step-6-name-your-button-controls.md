@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293482"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887978"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
@@ -71,14 +71,14 @@ Onglet ***Form1.cs*** *avec C# code*
    > [!IMPORTANT]
    > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-   Vous examinez le code appelé `showButton_Click()` (ou `ShowButton_Click()`). L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code (connu sous le nom de *méthode*) s’exécute lorsque vous exécutez votre programme et sélectionnez le contrôle (dans ce cas, le bouton **Afficher une image** ).
+   Vous examinez le code appelé `showButton_Click()` (ou `ShowButton_Click()`). L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code, connu sous le nom de *méthode*, s’exécute lorsque vous exécutez votre application et choisissez le contrôle (dans ce cas, le bouton **afficher une image** ).
 
 1. Cliquez de nouveau sur l’onglet **Concepteur Windows Forms** (**Form1.cs [Design]** ), puis ouvrez le fichier de code du bouton **effacer l’image** pour créer une méthode pour celui-ci dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.
 
 1. Pour ajouter une méthode, ouvrez le fichier de code du contrôle **CheckBox** dans le **Concepteur Windows Forms** pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()`. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
    > [!TIP]
-   > Lorsque vous travaillez sur un programme, vous basculez régulièrement entre l’éditeur de code et le **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez**Concepteur**de **vues** > .
+   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez**Concepteur**de **vues** > .
 
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
@@ -86,7 +86,7 @@ Onglet ***Form1.cs*** *avec C# code*
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    Les cinq méthodes que vous avez ajoutées sont appelées *gestionnaires d’événements*, car votre programme les appelle chaque fois qu’un événement se produit (par exemple, lorsqu’un utilisateur sélectionne un bouton ou active une case à cocher).
+    Les cinq méthodes que vous avez ajoutées sont appelées *gestionnaires d’événements*, car votre application les appelle chaque fois qu’un événement (par exemple, un utilisateur qui choisit un bouton ou une case à cocher) se produit.
 
     Lorsque vous affichez le code d’un contrôle dans l’IDE au moment de la conception, Visual Studio ajoute une méthode de gestionnaire d’événements pour le contrôle s’il n’en possède pas déjà une. Par exemple, lorsque vous double-cliquez sur un bouton, l’IDE ajoute un gestionnaire d’événements pour son événement <xref:System.Windows.Forms.Control.Click> (qui est appelé chaque fois que l’utilisateur choisit le bouton). Lorsque vous double-cliquez sur une case à cocher, l’IDE ajoute un gestionnaire d’événements pour son événement <xref:System.Windows.Forms.CheckBox.CheckedChanged> (qui est appelé chaque fois que l’utilisateur active ou désactive la case).
 
@@ -100,7 +100,7 @@ Onglet ***Form1.cs*** *avec C# code*
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 7 : Ajoutez des composants de boîte de](../ide/step-7-add-dialog-components-to-your-form.md)dialogue à votre formulaire**.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
 

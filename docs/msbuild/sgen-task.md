@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993226"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887633"
 ---
 # <a name="sgen-task"></a>SGen (tâche)
 Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (*Sgen.exe*). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -35,7 +35,7 @@ Crée un assembly de sérialisation XML pour les types dans l’assembly spécif
 |-----------------------------| - |
 | `BuildAssemblyName` | Paramètre `String` requis.<br /><br /> Assembly pour lequel le code de sérialisation doit être généré. |
 | `BuildAssemblyPath` | Paramètre `String` requis.<br /><br /> Chemin de l’assembly pour lequel le code de sérialisation doit être généré. |
-| `DelaySign` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, indique que vous souhaitez obtenir un assembly complètement signé. Si `false`, indique que vous souhaitez placer uniquement la clé publique dans l’assembly.<br /><br /> Ce paramètre n’a aucun effet, sauf s’il est utilisé avec les paramètres `KeyFile` ou `KeyContainer`. |
+| `DelaySign` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, indique que vous souhaitez placer uniquement la clé publique dans l’assembly. Si `false`, indique que vous souhaitez obtenir un assembly complètement signé.<br /><br /> Ce paramètre n’a aucun effet, sauf s’il est utilisé avec les paramètres `KeyFile` ou `KeyContainer`. |
 | `KeyContainer` | Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés. Cela signe l’assembly en insérant une clé publique dans le manifeste d’assembly. La tâche signe ensuite l’assembly définitif à l’aide de la clé privée. |
 | `KeyFile` | Paramètre `String` facultatif.<br /><br /> Spécifie une paire de clés ou une clé publique pour signer un assembly. Le compilateur insère la clé publique dans le manifeste d'assembly, puis signe l'assembly final avec la clé privée. |
 | `Platform` | Paramètre `String` facultatif.<br /><br /> Obtient ou définit la plateforme du compilateur utilisée pour générer l’assembly de sortie. Ce paramètre peut avoir la valeur `x86`, `x64` ou `anycpu`. La valeur par défaut est `anycpu`. |
@@ -49,7 +49,7 @@ Crée un assembly de sérialisation XML pour les types dans l’assembly spécif
 | `Types` | Paramètre `String[]` facultatif.<br /><br /> Obtient ou définit une liste de types spécifiques pour lesquels générer le code de sérialisation. SGen générera le code de sérialisation uniquement pour ces types. |
 | `UseProxyTypes` | Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen génère du code de sérialisation uniquement pour les types de proxy de service web XML. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi

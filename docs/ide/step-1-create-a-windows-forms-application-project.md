@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : Créer un projet Application Windows Forms'
+title: 'Étape 1 : Créer un projet d’application Windows Forms'
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 65339eabcffdf0f333036442ea8473ecf8c8f06e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293660"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888008"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : Créer un projet Application Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : Créer un projet d’application Windows Forms
 
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.
 
@@ -70,9 +70,9 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 ::: moniker-end
 
-Visual Studio crée une solution pour votre programme. Une solution joue le rôle de conteneur pour tous les projets et fichiers requis par votre programme. Ces termes seront expliqués plus en détail dans les prochaines étapes de ce didacticiel.
+Visual Studio crée une solution pour votre application. Une solution agit comme un conteneur pour tous les projets et fichiers requis par votre application. Ces termes seront expliqués plus en détail dans les prochaines étapes de ce didacticiel.
 
-## <a name="about-the-windows-forms-application-project"></a>À propos du projet Application Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>À propos du projet d’application Windows Forms
 
 1. L’environnement de développement contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
 
@@ -96,7 +96,7 @@ Visual Studio crée une solution pour votre programme. Une solution joue le rôl
 
     * **Fenêtre Explorateur de solutions** Dans cette fenêtre, vous pouvez afficher tous les éléments de votre solution et y accéder.
 
-       Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par C# *. cs* dans et *. vb* dans Visual Basic), le fichier de code ou un concepteur pour le fichier de code s’affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé **Concepteur Windows Forms**.
+    Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par C# *. cs* dans et *. vb* dans Visual Basic), le fichier de code ou un concepteur pour le fichier de code s’affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé **Concepteur Windows Forms**.
 
     * **Fenêtre Propriétés** Elle vous permet de modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d’arrière-plan en définissant la propriété **Backcolor**.
 
@@ -114,7 +114,7 @@ Visual Studio crée une solution pour votre programme. Une solution joue le rôl
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 2 : Exécutez votre application](../ide/step-2-run-your-program.md).**
 
 * Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 1 : Créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md).
 
