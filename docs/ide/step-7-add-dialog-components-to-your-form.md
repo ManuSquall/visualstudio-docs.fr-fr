@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293477"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887887"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire
 
-Pour permettre à votre programme d’ouvrir les fichiers image et de choisir une couleur d’arrière-plan, vous devez ajouter un composant <xref:System.Windows.Forms.OpenFileDialog> et un composant <xref:System.Windows.Forms.ColorDialog> à votre formulaire.
+Pour permettre à votre application d’ouvrir des fichiers image et de choisir une couleur d’arrière-plan, au <xref:System.Windows.Forms.OpenFileDialog> cours de cette <xref:System.Windows.Forms.ColorDialog> étape, vous allez ajouter un composant et un composant à votre formulaire.
 
 À certains égards, un composant est semblable à un contrôle. Utilisez la **boîte à outils** pour ajouter un composant à votre formulaire, et la fenêtre **Propriétés** pour définir les propriétés du composant. Mais contrairement à un contrôle, lorsque vous ajoutez un composant, il n'est pas visible dans votre formulaire. À la place, il permet d'utiliser des comportements que vous pouvez déclencher à l'aide de code. Un composant sert, par exemple, à ouvrir une boîte de dialogue **Ouvrir un fichier**.
 
@@ -54,7 +54,7 @@ Pour permettre à votre programme d’ouvrir les fichiers image et de choisir un
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 8 : Écrivez du code pour le gestionnaire](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** d’événements du bouton afficher une image.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : Nommer vos contrôles bouton](../ide/step-6-name-your-button-controls.md).
 

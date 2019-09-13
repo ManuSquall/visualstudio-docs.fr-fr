@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123a843676a7562478710bf607f62c92743c462d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293579"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913148"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 
@@ -31,7 +31,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 1. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
 
    > [!NOTE]
-   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre programme en choisissant le bouton carré **Arrêter le débogage** dans la barre d’outils, ou fermez simplement la fenêtre. Si le programme est arrêté et que la fenêtre **Propriétés** n’apparaît toujours pas, dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés**.
+   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher** > la**fenêtre Propriétés**.
 
 1. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Texte**, tapez **Visionneuse d’images**, puis appuyez sur **Entrée**.  La **visionneuse d’images** de texte doit maintenant être présente dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à la capture d’écran suivante.
 
@@ -50,7 +50,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
 1. Dans la fenêtre **Propriétés**, vous pouvez observer que la propriété **Size** a changé. En effet, la propriété **Size** change dès que vous redimensionnez le formulaire. Essayez de faire glisser la poignée du formulaire pour lui donner une taille adaptée à ce projet, soit environ **550, 350** (l'exactitude n'est pas nécessaire). Vous pouvez également entrer les valeurs directement dans la propriété **Size**, puis choisir la touche **Entrée**.
 
-1. Exécutez à nouveau votre programme. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour exécuter votre programme.
+1. Exécutez à nouveau votre application. N’oubliez pas que vous pouvez utiliser l’une des méthodes suivantes pour exécuter votre application.
 
    - Choisissez la touche **F5**.
 
@@ -61,9 +61,9 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
       ![Bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
      ***Démarrer le débogage*** *bouton de barre d’outils*
 
-     Comme auparavant, l'IDE génère et exécute votre programme, et une fenêtre s'affiche.
+     Comme auparavant, l’IDE génère et exécute votre application, et une fenêtre s’affiche.
 
-1. Avant de passer à l'étape suivante, arrêtez votre programme, car l'IDE ne vous autorisera pas à le modifier tant qu'il est en cours d'exécution. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour arrêter votre programme.
+1. Avant de passer à l’étape suivante, arrêtez votre application, car l’IDE ne vous permettra pas de modifier votre application pendant son exécution. N’oubliez pas que vous pouvez utiliser l’une des méthodes suivantes pour arrêter votre application.
 
    - Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.
 
@@ -75,9 +75,9 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 4 : Composez votre formulaire avec un contrôle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
 
-* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
+* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécutez votre application](../ide/step-2-run-your-program.md)visionneuse d’images.
 
 ## <a name="see-also"></a>Voir aussi
 
