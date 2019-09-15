@@ -1,7 +1,12 @@
 ---
-title: 'Étape 7 : Ajouter des problèmes de multiplication et de division'
+title: 'Étape 7 : Ajouter des problèmes de multiplication et de division'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,15 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887af3a439e1f6e0f21d5ca68061d2f9977dfac7
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 182ab3c06ef0956d6c0d97c4276a44c3f3239875
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416538"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987864"
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>Étape 7 : Ajouter des problèmes de multiplication et de division
+# <a name="step-7-add-multiplication-and-division-problems"></a>Étape 7 : Ajouter des problèmes de multiplication et de division
+
 Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de multiplication et de division, mais vous commencerez par réfléchir à la manière d'effectuer cette modification. Pensez à la première étape, dans laquelle vous devez stocker des valeurs.
+
+> [!NOTE]
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. 
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Pour ajouter des problèmes de multiplication et de division
 
@@ -27,6 +38,9 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
 
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]
      [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]
+
+     > [!IMPORTANT]
+     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Comme vous l'avez fait auparavant, modifiez la méthode `StartTheQuiz()` pour renseigner les problèmes de multiplication et de division avec des nombres aléatoires.
 
@@ -49,11 +63,11 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
 
      Les personnes interrogées doivent résoudre quatre problèmes pour terminer le questionnaire, comme le montre l'illustration ci-dessous.
 
-     ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)
-**Questionnaire mathématique** avec quatre problèmes
+     ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)<br/>
+***Questionnaire mathématique*** *avec quatre problèmes*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : Personnaliser le questionnaire](../ide/step-8-customize-the-quiz.md).
+- Pour passer à l’étape suivante du didacticiel, **consultez [étape 8 : Personnaliser les questionnaires](../ide/step-8-customize-the-quiz.md).**
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : Ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 9c35ee154dd0656f1eb29fd8a03e8c1b63876ed2
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887870"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987686"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher
 
@@ -41,6 +41,9 @@ Ajoutez le code suivant à votre fichier de code **Form1** (*Form1.cs* ou *Form1
   [!code-csharp[VbExpressTutorial1Step9_10#2](../ide/codesnippet/CSharp/step-10-write-code-for-additional-buttons-and-a-check-box_1.cs)]
 
   [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
+
+> [!NOTE]
+> Votre code risque de ne pas afficher les lettres « la casse mixte ». 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

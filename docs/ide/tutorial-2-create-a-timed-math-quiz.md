@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293694"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987877"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : Créer un questionnaire mathématique chronométré
 
@@ -31,7 +31,7 @@ Dans ce didacticiel, vous générez un questionnaire dans lequel la personne int
 
 - Effectuer des opérations arithmétiques de base dans le code.
 
-Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, avec des valeurs différentes :
+Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivante, sauf avec des nombres différents :
 
 ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, a
 Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du tutoriel](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
+> Ce didacticiel couvre à C# la fois et Visual Basic. vous devez donc vous concentrer sur les informations spécifiques au langage de programmation que vous utilisez.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

@@ -1,7 +1,12 @@
 ---
 title: 'Étape 6 : Ajouter un problème de soustraction'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d429d2921f252e97bfe7c233a9fe963f7f91299b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: da2b509c0f5291296861da6a13b13e625a67c727
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416554"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987928"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : Ajouter un problème de soustraction
 Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de soustraction et apprendre à effectuer les tâches suivantes :
@@ -29,12 +34,20 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
 
 - Mettre à jour le gestionnaire d'événements <xref:System.Windows.Forms.Timer.Tick> de votre minuterie pour qu'il remplisse la réponse correcte lorsque le temps est écoulé.
 
+> [!NOTE]
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. 
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+
 ## <a name="to-add-a-subtraction-problem"></a>Pour ajouter un problème de soustraction
 
 1. Ajoutez deux variables de type entier à votre formulaire pour le problème de soustraction, entre les variables de type entier du problème d'addition et la minuterie. Le code doit se présenter comme suit.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
+
+     > [!IMPORTANT]
+     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Les noms des nouvelles variables de type entier (**minuend** et **subtrahend**) ne sont pas des termes de programmation. Ce sont des noms généralement utilisés en arithmétique pour désigner le nombre à retrancher (subtrahend, ou diminuteur en français) et le nombre duquel le diminuteur est soustrait (minuend, ou diminuende en français). La différence correspond à minuend moins subtrahend. Vous pourriez utiliser d'autres noms, étant donné que votre programme ne requiert aucun nom spécifique pour les variables, les contrôles, les composants ou les méthodes. Vous devez suivre des règles, par exemple ne pas commencer les noms par des chiffres, mais plutôt recourir à des noms tels que x1, x2, x3 et x4. Toutefois, les noms génériques rendent le code difficile à lire et les problèmes quasiment impossible à localiser. Pour faire en sorte que les noms des variables soient uniques et conviviaux, vous utiliserez les noms traditionnels pour la multiplication (multiplicande x multiplicateur = produit) et la division (dividende ÷ diviseur = quotient) plus tard dans ce didacticiel.
 
@@ -52,12 +65,13 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
 
      Vous pouvez appeler la méthode `Next()` de la classe aléatoire, que vous avez nommée « randomizer » précédemment dans ce tutoriel, de plusieurs façons. Les méthodes que vous appelez de plusieurs façons sont désignées comme étant surchargées, et vous pouvez utiliser IntelliSense pour les explorer. Examinez à nouveau l'info-bulle de la fenêtre IntelliSense pour la méthode `Next()`.
 
-     ![Info-bulle de la fenêtre IntelliSense](../ide/media/express_overloads.png)
-Info-bulle de la fenêtre **IntelliSense**
+     ![Info-bulle de la fenêtre IntelliSense](../ide/media/express_overloads.png)<br/>
+***IntelliSense*** *info-bulle* de la fenêtre
 
      L’info-bulle affiche **(+ 2 surcharge(s))** , ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un seul argument entier, alors qu’une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Quand vous ajoutez du code à la méthode `StartTheQuiz()`, plus d’informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Pour parcourir les surcharges, actionnez les touches **Flèche haut** et **Flèche bas**, comme indiqué dans l’illustration suivante :
 
-     ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express_nextoverload.png) Surcharge pour la méthode **Next()** dans **IntelliSense**
+     ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express_nextoverload.png)<br/>
+*Surcharge pour* ***Suivant ()*** *méthode dans* ***IntelliSense***
 
      Dans ce cas, vous souhaitez choisir la dernière surcharge, car vous pouvez spécifier les valeurs minimales et maximales.
 
@@ -77,11 +91,11 @@ Info-bulle de la fenêtre **IntelliSense**
 
      Votre programme inclut un problème de soustraction, comme le montre l’illustration suivante :
 
-     ![Questionnaire mathématique avec problème de soustraction](../ide/media/express_addsubtract.png)
-**Questionnaire mathématique** avec problème de soustraction
+     ![Questionnaire mathématique avec problème de soustraction](../ide/media/express_addsubtract.png)<br/>
+***Questionnaire mathématique*** *avec problème de soustraction*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour passer à l’étape suivante du didacticiel, **consultez [étape 7 : Ajoutez des problèmes](../ide/step-7-add-multiplication-and-division-problems.md)** de multiplication et de division.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

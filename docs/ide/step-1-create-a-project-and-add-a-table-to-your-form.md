@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
+title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
 ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501156"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987799"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
 La première étape pour créer un jeu de combinaisons consiste à créer le projet et à ajouter une table à votre formulaire. La table permet d'aligner les icônes dans une grille 4x4, de façon ordonnée. Vous définissez également plusieurs propriétés pour améliorer l'apparence de la grille de jeu.
 
@@ -122,9 +122,9 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
    > [!NOTE]
    > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
 
-    Votre formulaire est maintenant mis en forme. Il doit ressembler à l'image ci-dessous.
+    Votre formulaire est maintenant mis en forme. Elle doit ressembler à l’image suivante.
 
-    ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>   Formulaire de jeu de combinaisons initial
+    ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>*Formulaire de jeu de combinaisons initial*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

@@ -1,28 +1,33 @@
 ---
-title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
+title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501134"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987947"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 
 Les premières étapes du développement de ce questionnaire consistent à créer le projet, puis à ajouter des étiquettes, un bouton et d'autres contrôles à un formulaire. Vous devez également définir des propriétés pour chaque contrôle que vous ajoutez. Le projet contiendra le formulaire, les contrôles et, ultérieurement dans le didacticiel, du code. Le bouton démarre le questionnaire, les étiquettes affichent les problèmes à résoudre et les autres contrôles montrent les réponses aux problèmes et le temps restant pour terminer le questionnaire.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. 
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-project-for-a-form"></a>Pour créer un projet pour un formulaire
 
@@ -102,7 +107,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 7. Choisissez le signe plus ( **+** ) en regard de la propriété **Font**, puis remplacez la valeur de la propriété **Size** par **15,75**.
 
-     Vous pouvez modifier plusieurs propriétés de police, comme l'illustre l'image suivante.
+     Vous pouvez modifier plusieurs propriétés de police, comme le montre la capture d’écran suivante.
 
      ![Fenêtre Propriétés affichant la taille de police](../ide/media/express_setfontsize.png)
 
@@ -150,7 +155,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 16. Modifiez la propriété **(Name)** du contrôle NumericUpDown en lui affectant la valeur **sum** (somme).
 
-     Vous avez créé la première ligne, comme l'illustre l'image suivante.
+     Vous avez créé la première ligne, comme indiqué dans l’illustration suivante.
 
      ![Première ligne du questionnaire mathématique](../ide/media/express_firstrow.png)
 
@@ -200,7 +205,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 7. Affectez à la propriété **TabIndex** du contrôle NumericUpDown de somme la valeur **2**, à celle du contrôle de différence la valeur **3**, à celle du contrôle de produit la valeur **4** et à celle du contrôle quotient la valeur **5**.
 
-     Le formulaire doit ressembler à l'illustration ci-dessous.
+     Le formulaire doit ressembler à la capture d’écran suivante.
 
      ![Formulaire de questionnaire mathématique initial](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
+- Pour passer à l’étape suivante du didacticiel, **consultez [étape 2 : Créez un problème](../ide/step-2-create-a-random-addition-problem.md)** d’addition aléatoire.
 
 - Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).

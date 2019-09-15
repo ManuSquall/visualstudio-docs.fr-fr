@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887955"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987945"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image
 
@@ -42,6 +42,9 @@ IntelliSense tente de déterminer ce que vous souhaitez faire ensuite et passe a
 1. Tapez un `i` sur la ligne vide entre les deux accolades `{ }`. (En Visual Basic, écrivez sur la ligne vide entre `Private Sub...` et `End Sub`.) Une fenêtre **IntelliSense** s’ouvre, comme illustré dans l’image suivante.
 
     ![IntelliSense avec code Visual C&#35;](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ». 
 
 1. La fenêtre **IntelliSense** doit mettre en surbrillance le mot `if`. (Dans le cas contraire, entrez un `f` minuscule, et elle le fera.) Notez qu’une *info-bulle* située en regard de la fenêtre **IntelliSense** apparaît avec la description, **extrait de code pour l’instruction if**. (En Visual Basic, l'info-bulle indique également qu'il s'agit d'un extrait de code, mais avec un libellé légèrement différent.) Comme vous voulez utiliser cet extrait de code, appuyez sur la touche **Tab** pour insérer `if` dans votre code. Appuyez ensuite à nouveau sur la touche **Tab** pour utiliser l’extrait de code `if`. (Si vous avez effectué un autre choix et si votre fenêtre **IntelliSense** a disparu, revenez en arrière pour effacer le `i` et retapez-le pour que la fenêtre **IntelliSense** s’ouvre à nouveau.)
 
