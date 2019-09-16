@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Appliquer des modifications en mode arrêt avec Modifier et Continuer
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Écrire et déboguer du code XAML en cours d’exécution
-          href: xaml-hot-reload.md
+        - name: Rechargement à chaud XAML
+          items:
+            - name: Écrire et déboguer du code XAML en cours d’exécution
+              href: xaml-hot-reload.md
+            - name: Résolution des problèmes de rechargement à chaud XAML
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Opération Modifier et Continuer non prise en charge pour F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Afficher les données du débogueur
