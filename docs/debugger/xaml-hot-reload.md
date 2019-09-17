@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987676"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012602"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
@@ -66,4 +66,5 @@ Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du recharge
 
 ## <a name="see-also"></a>Voir aussi
 
-[Résolution des problèmes liés](xaml-hot-reload-troubleshooting.md)au rechargement à chaud XAML XAML[pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) 
+* [Résolution des problèmes liés au rechargement à chaud XAML](xaml-hot-reload-troubleshooting.md)
+* [Rechargement à chaud XAML pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
