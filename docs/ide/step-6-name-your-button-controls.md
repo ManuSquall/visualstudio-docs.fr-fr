@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012588"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062852"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
@@ -64,7 +64,7 @@ Onglet ***Form1.cs*** *avec C# code*
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,11 +83,11 @@ Onglet ***Form1.cs*** *avec C# code*
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
     > [!NOTE]
-    > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ». 
+    > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ».
 
     Les cinq méthodes que vous avez ajoutées sont appelées *gestionnaires d’événements*, car votre application les appelle chaque fois qu’un événement (par exemple, un utilisateur qui choisit un bouton ou une case à cocher) se produit.
 

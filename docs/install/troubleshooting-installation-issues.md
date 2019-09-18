@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d’installation ou de mise à niveau
 description: Parfois, des problèmes peuvent se produire. Cette page peut vous aider en cas d’échec de l’installation ou de la mise à niveau de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913257"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062810"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -114,12 +114,14 @@ Si aucune des étapes précédentes ne vous permet d’installer ou de mettre à
 
 ## <a name="offline-installations"></a>Installations hors connexion
 
-Voici un tableau des problèmes connus et de certaines solutions de contournement qui peuvent vous aider quand vous effectuez une installation dans une topologie locale.
+Voici un tableau des problèmes connus et des solutions de contournement qui peuvent vous aider lors de la création d’une [installation hors connexion](create-an-offline-installation-of-visual-studio.md) , puis l’installation à partir d’une disposition locale.
 
 | Problème       | Item                   | Solution |
 | ----------- | ---------------------- | -------- |
 | Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Vérifiez que vous ajustez les autorisations (ACL) de sorte qu’elles accordent un accès en lecture aux autres utilisateurs *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
+
+Pour plus d’informations sur la résolution des problèmes liés à une [installation réseau](create-a-network-installation-of-visual-studio.md), consultez [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Journaux d’installation
 

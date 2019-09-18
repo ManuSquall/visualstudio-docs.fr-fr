@@ -1,20 +1,20 @@
 ---
 title: Déboguer des applications dans un conteneur d’ancrage local | Microsoft Docs
 description: Découvrez comment modifier une application en cours d’exécution dans un conteneur d’ancrage local, actualiser le conteneur par le biais de la modification et de l’actualisation, puis définir des points d’arrêt de débogage.
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312023"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062176"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local
 
@@ -48,14 +48,14 @@ Les conteneurs d’ancrage sont disponibles pour les projets .NET Framework et .
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[! INCLURE [Create-aspnet5-App-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>Modifier votre code et actualiser
 
 Pour effectuer une itération rapide des modifications, vous pouvez démarrer votre application dans un conteneur. Ensuite, continuez à apporter des modifications, en les affichant comme vous le feriez avec IIS Express.
 
-1. Définissez **configuration** de la solution à **Déboguer**. Ensuite, appuyez sur CTRL + F5 pour générer votre image d’ancrage et l’exécuter localement.
+1. Définissez **configuration** de la solution à **Déboguer**. Ensuite, appuyez sur **CTRL**+**F5** pour générer votre image d’ancrage et l’exécuter localement.
 
     Lorsque l’image de conteneur est générée et en cours d’exécution dans un conteneur d’ancrage, Visual Studio lance l’application Web dans votre navigateur par défaut.
 

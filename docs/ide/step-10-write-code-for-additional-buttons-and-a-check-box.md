@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c35ee154dd0656f1eb29fd8a03e8c1b63876ed2
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 2d2e77b3bfd62bf1dfdf15ff083b07459bd3bf77
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987686"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062669"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher
 
@@ -43,7 +43,7 @@ Ajoutez le code suivant à votre fichier de code **Form1** (*Form1.cs* ou *Form1
   [!code-vb[VbExpressTutorial1Step9_10#2](../ide/codesnippet/VisualBasic/step-10-write-code-for-additional-buttons-and-a-check-box_1.vb)]
 
 > [!NOTE]
-> Votre code risque de ne pas afficher les lettres « la casse mixte ». 
+> Votre code risque de ne pas afficher les lettres « la casse mixte ».
 
 ## <a name="next-steps"></a>Étapes suivantes
 

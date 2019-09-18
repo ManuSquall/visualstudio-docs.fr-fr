@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926543"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079588"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -56,6 +56,8 @@ Explication &mdash; le moteur de couverture du code nécessite que le fichier *.
 Le fichier *.pdb* doit être généré à partir de la même version que les fichiers *.dll* ou *.exe*.
 
 Résolution &mdash; vérifiez que vos paramètres de build génèrent le fichier *.pdb*. Si les fichiers *.pdb* ne sont pas mis à jour quand le projet est généré, ouvrez les propriétés du projet, sélectionnez la page **Générer**, choisissez **Avancé** et examinez **Informations de débogage**.
+
+Pour C++ les projets, assurez-vous que les fichiers. pdb générés contiennent des informations de débogage complètes. Ouvrez les propriétés du projet et vérifiez que le**débogage** > de l' **éditeur de liens** > **générer** des informations de débogage est défini pour **générer des informations de débogage optimisées pour le partage et la publication (/Debug : Full)** .
 
 Si les fichiers *.pdb* et *.dll* ou *.exe* sont dans des endroits différents, copiez le fichier *.pdb* dans le même répertoire. Il est également possible de configurer le moteur de couverture du code pour rechercher les fichiers *.pdb* à un autre emplacement. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 

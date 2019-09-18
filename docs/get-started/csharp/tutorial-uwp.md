@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180466"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095377"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutoriel : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
@@ -32,7 +32,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Créez tout d’abord un projet de plateforme Windows universelle. Le type de projet inclut tous les fichiers de modèle dont vous avez besoin au départ.
 
@@ -152,7 +152,7 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment procéder.
 
@@ -178,3 +178,8 @@ Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous avez
 
 > [!div class="nextstepaction"]
 > [Créer une interface utilisateur](/windows/uwp/design/basics/xaml-basics-ui)
+
+## <a name="see-also"></a>Voir aussi
+
+- [Présentation UWP](/windows/uwp/get-started/universal-application-platform-guide)
+- [Télécharger des exemples d’applications UWP](/windows/uwp/get-started/get-uwp-app-samples)
