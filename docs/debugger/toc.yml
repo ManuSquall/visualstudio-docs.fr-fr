@@ -42,6 +42,8 @@
       items:
         - name: Utiliser des points d’arrêt
           href: using-breakpoints.md
+        - name: Utiliser des points de trace
+          href: using-tracepoints.md
         - name: Dépannage des points d’arrêt
           href: troubleshooting-breakpoints.md
     - name: Inspection des données
