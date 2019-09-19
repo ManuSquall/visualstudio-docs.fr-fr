@@ -1,12 +1,9 @@
 ---
-title: 'Étape 2 : Créer un problème d’addition aléatoire'
+title: 'Étape 2 : Créer un problème d’addition aléatoire'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: d35d807cbe849e4b5385f7bf63e15760b0e4b3a5
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079601"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118816"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
+# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
 
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.
 

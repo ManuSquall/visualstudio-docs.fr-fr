@@ -1,26 +1,23 @@
 ---
-title: 'Étape 3 : Définir les propriétés de votre formulaire'
+title: 'Étape 3 : Définir les propriétés de votre formulaire'
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913148"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118967"
 ---
-# <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
+# <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.
 

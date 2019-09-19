@@ -3,31 +3,47 @@ title: Actions de génération
 description: Cet article décrit les différentes actions de génération que vous pouvez utiliser dans le cadre de projets C#
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691196"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128447"
 ---
 # <a name="build-actions"></a>Actions de génération
 
-Tous les fichiers d’un projet Visual Studio pour Mac ont une action de génération. Elle contrôle le traitement du fichier pendant une build. Vous pouvez définir ce comportement en cliquant avec le bouton droit sur un fichier et en accédant à **Action de génération**, comme illustré ci-dessous :
+Tous les fichiers d’un projet Visual Studio pour Mac ont une action de génération. L’action de génération contrôle ce qui se passe au fichier pendant une génération. 
+
+>[!NOTE]
+>Cette rubrique s’applique à Visual Studio pour Mac. Pour Visual Studio sur Windows, consultez [actions de génération](/visualstudio/ide/build-actions).
+
+## <a name="set-a-build-action"></a>Définir une action de génération
+
+Pour définir une action de génération pour un fichier dans Visual Studio pour Mac, vous pouvez cliquer avec le bouton droit sur n’importe quel fichier et accéder à l' **action de génération**, comme illustré ci-dessous :
 
 ![Sélection de l’action de génération Compiler dans l’Explorateur de solutions](media/projects-and-solutions-image1.png)
 
-Voici quelques-unes des actions de génération courantes pour les projets C# :
+Les actions de génération pour ce fichier s’affichent dans le menu contextuel. 
 
-* **Aucune** - Le fichier ne fait pas partie de la build, il est inclus dans le projet uniquement pour faciliter l’accès à partir de l’IDE.
-* **Compiler** : le fichier est passé comme fichier source au compilateur C#.
-* **EmbeddedResource** : le fichier est passé au compilateur C# comme ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.
-* **Contenu** : pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site lors de son déploiement. Pour les projets Xamarin.iOS et Xamarin.Mac, ils sont inclus dans le bundle d’applications.
+## <a name="build-action-values"></a>Valeurs des actions de génération
 
-Il est possible de sélectionner plusieurs fichiers dans l’Explorateur de solutions, ce qui vous permet de définir l’action de génération pour de nombreux fichiers à la fois.
+Voici quelques-unes des actions de génération courantes pour les projets que vous pouvez générer dans Visual Studio pour Mac incluent :
 
-Des actions de génération existent également pour des projets spécifiques. Les projets Xamarin.iOS ont l’action de génération **BundleResource**, qui ajoute le fichier au bundle d’applications. Pour plus d’informations sur les actions de génération spécifiques à Xamarin.Android, consultez le guide relatif au [processus de génération](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+|Action de génération | Types de projet | Description |
+|--|--|--|
+| **Compiler** | any | Le fichier est passé au C# compilateur en tant que fichier source.|
+| **Humidité** | .NET, Xamarin | Pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site au moment de son déploiement. Pour les projets Xamarin.iOS et Xamarin.Mac, ils sont inclus dans le bundle d’applications.|
+| **Ressource incorporée** | .NET | Le fichier est passé au C# compilateur en tant que ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.|
+| **Aucun** | any | Le fichier ne fait pas partie de la build et est inclus dans le projet pour faciliter l’accès à partir de l’IDE. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
+
+> [!NOTE]
+> D’autres actions de génération peuvent être définies pour des types de projet spécifiques. Par conséquent, la liste des actions de génération dépend du type de projet et des valeurs, qui ne figurent pas dans cette liste, peuvent apparaître.  
+
+Les projets Xamarin.iOS ont l’action de génération **BundleResource**, qui ajoute le fichier au bundle d’applications. Pour plus d’informations sur les actions de génération spécifiques à Xamarin.Android, consultez le guide relatif au [processus de génération](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+
+Il est également possible de sélectionner plusieurs fichiers dans l’Explorateur de solutions, ce qui vous permet de définir l’action de génération sur plusieurs fichiers à la fois.
 
 ## <a name="see-also"></a>Voir aussi
 

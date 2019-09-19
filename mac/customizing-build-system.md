@@ -3,22 +3,20 @@ title: Personnalisation du système de génération
 description: Cet article est une brève introduction au système de génération MSBuild utilisé par Visual Studio pour Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693025"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128389"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
-MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
+Le Microsoft Build Engine est une plateforme de création d’applications. Le moteur, également appelé MSBuild, a été développé par Microsoft et permet la création d’applications .NET. Le framework Mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. À ce stade, cependant, xbuild a été supprimé en faveur de l’utilisation de MSBuild sur tous les systèmes d’exploitation.
 
-**MSBuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
-
-MSBuild fonctionne en prenant un ensemble d’entrées, comme des fichiers sources, et les transforme en sorties, comme des fichiers exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
+**MSBuild** est utilisé comme système de génération pour les projets dans Visual Studio pour Mac et fonctionne en utilisant un ensemble d’entrées, telles que des fichiers sources, et les transforme en sorties, comme les exécutables. Il réalise ces sorties en appelant des outils, comme le compilateur.
 
 ## <a name="msbuild-file"></a>Fichier MSBuild
 

@@ -1,12 +1,9 @@
 ---
-title: 'Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown'
+title: 'Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 dev_langs:
 - CSharp
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9566e5bb8bd5be3c1a44ff79690fb1f8107b40f9
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079461"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118743"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : Ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown
 
 Dans la cinquième partie de ce tutoriel, vous allez ajouter des gestionnaires d'événements <xref:System.Windows.Forms.Control.Enter> pour simplifier légèrement la saisie des réponses aux problèmes du questionnaire. Ce code sélectionne et efface la valeur actuelle de chaque contrôle <xref:System.Windows.Forms.NumericUpDown> dès que la personne répondant au questionnaire le choisit et commence à entrer une autre valeur.
 
