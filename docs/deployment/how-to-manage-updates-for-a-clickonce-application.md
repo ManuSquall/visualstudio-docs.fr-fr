@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Gérer les mises à jour pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Gérer les mises à jour pour une application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,37 +19,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ba899e922e98817462b06a1693525ab1ae69e20
+ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928560"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71159902"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procédure : Gérer les mises à jour d’une application ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent vérifier les mises à jour automatiquement ou par programmation. En tant que développeur, vous avez une grande souplesse lors de la spécification de quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires, et où l’application doit vérifier les mises à jour.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les applications peuvent rechercher des mises à jour automatiquement ou par programme. En tant que développeur, vous disposez d’une grande flexibilité pour spécifier quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires et si l’application doit rechercher les mises à jour.
 
- Vous pouvez configurer l’application pour rechercher les mises à jour automatiquement avant le démarrage de l’application ou à des intervalles définis après le démarrage de l’application. En outre, vous pouvez spécifier une version minimale requise ; Autrement dit, une mise à jour est installé si la version de l’utilisateur est inférieure à la version requise.
+ Vous pouvez configurer l’application pour qu’elle recherche automatiquement les mises à jour avant le démarrage de l’application, ou à des intervalles définis après le démarrage de l’application. En outre, vous pouvez spécifier une version minimale requise ; autrement dit, une mise à jour est installée si la version de l’utilisateur est antérieure à la version requise.
 
- Vous pouvez configurer l’application pour rechercher les mises à jour par programmation basées sur un événement tel qu’une demande utilisateur. La procédure « pour vérifier les mises à jour par programme » dans cette rubrique montre comment écrire le code qui utilise le <xref:System.Deployment.Application.ApplicationDeployment> class à vérifier les mises à jour basée sur un événement.
+ Vous pouvez configurer l’application pour rechercher des mises à jour par programmation en fonction d’un événement tel qu’une demande de l’utilisateur. La procédure « pour rechercher des mises à jour par programmation » dans cette rubrique montre comment écrire du code qui utilise la <xref:System.Deployment.Application.ApplicationDeployment> classe pour rechercher des mises à jour en fonction d’un événement.
 
- Vous pouvez également déployer votre application à partir d’un emplacement et mettez-le à jour à partir d’un autre. Consultez la procédure « pour spécifier un emplacement de mise à jour différent ».
+ Vous pouvez également déployer votre application à partir d’un emplacement et la mettre à jour à partir d’une autre. Consultez la procédure « pour spécifier un autre emplacement de mise à jour ».
 
  Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
- Comportement de mise à jour est géré dans le **mises à jour de l’Application** boîte de dialogue, disponible à partir de la **publier** page de la **Concepteur de projets.**
+ Le comportement de la mise à jour est géré dans la boîte de dialogue **mises à jour des applications** , disponible à partir de la page **publier** du **Concepteur de projet.**
 
-### <a name="to-check-for-updates-before-the-application-starts"></a>Pour vérifier les mises à jour avant le démarrage de l’application
+### <a name="to-check-for-updates-before-the-application-starts"></a>Pour rechercher les mises à jour avant le démarrage de l’application
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l’onglet **Publier**.
 
-3. Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.
+3. Cliquez sur le bouton **mises à jour** pour ouvrir la boîte de dialogue **mises à jour des applications** .
 
-4. Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est activée.
+4. Dans la boîte de dialogue **mises à jour des applications** , assurez-vous que la case à cocher **l’application doit vérifier les mises à jour** est activée.
 
-5. Dans le **choisissez à quel moment l’application doit vérifier les mises à jour** section, sélectionnez **avant le démarrage de l’application**. Cela garantit que les utilisateurs connectés au réseau toujours exécutent l’application avec les dernières mises à jour.
+5. Dans la section **Choisissez à quel moment l’application doit vérifier les mises à jour** , sélectionnez **avant le démarrage de l’application**. Cela garantit que les utilisateurs connectés au réseau exécutent toujours l’application avec les dernières mises à jour.
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Vérifier les mises à jour en arrière-plan, après le démarrage de l’application
 
@@ -57,13 +57,13 @@ ms.locfileid: "62928560"
 
 2. Cliquez sur l’onglet **Publier**.
 
-3. Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.
+3. Cliquez sur le bouton **mises à jour** pour ouvrir la boîte de dialogue **mises à jour des applications** .
 
-4. Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que la case à cocher **l’application doit vérifier les mises à jour** est sélectionné.
+4. Dans la boîte de dialogue **mises à jour des applications** , assurez-vous que la case à cocher **l’application doit rechercher les mises à jour** est sélectionnée.
 
-5. Dans le **choisissez à quel moment l’application doit vérifier pour la section mises à jour**, sélectionnez **après le démarrage de l’application**. L’application démarrera plus rapidement de cette façon, puis il vérifie les mises à jour en arrière-plan et uniquement avertir l’utilisateur lorsqu’une mise à jour est disponible. Une fois installé, les mises à jour ne prendront effet qu’après le redémarrage de l’application.
+5. Dans la **section Choisissez à quel moment l’application doit vérifier les mises à jour**, sélectionnez **après le démarrage de l’application**. L’application démarre plus rapidement de cette manière, puis vérifie si des mises à jour sont disponibles en arrière-plan et n’avertit l’utilisateur qu’une fois qu’une mise à jour est disponible. Une fois installé, les mises à jour ne prennent effet qu’après le redémarrage de l’application.
 
-6. Dans le **spécifier la fréquence à laquelle l’application doit vérifier les mises à jour** , sélectionnez **vérifier à chaque exécution de l’application** (la valeur par défaut) ou **vérifier chaque** et entrez un intervalle de temps et du numéro.
+6. Dans la section **spécifier à quelle fréquence l’application doit vérifier les mises à jour** , sélectionnez **vérifier chaque fois que l’application s’exécute** (valeur par défaut) ou **Vérifier toutes** les, puis entrez un nombre et un intervalle de temps.
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Pour spécifier une version minimale requise pour l’application
 
@@ -71,37 +71,37 @@ ms.locfileid: "62928560"
 
 2. Cliquez sur l’onglet **Publier**.
 
-3. Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.
+3. Cliquez sur le bouton **mises à jour** pour ouvrir la boîte de dialogue **mises à jour des applications** .
 
-4. Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est activée.
+4. Dans la boîte de dialogue **mises à jour des applications** , assurez-vous que la case à cocher **l’application doit vérifier les mises à jour** est activée.
 
-5. Sélectionnez le **spécifier une version minimale requise pour cette application** case à cocher, puis entrez **majeure**, **mineure**, **Build**et  **Révision** nombres pour l’application.
+5. Activez la case à cocher **spécifier une version minimale requise pour cette application** , puis entrez les numéros **principal**, **secondaire**, de **Build**et de **révision** de l’application.
 
-### <a name="to-specify-a-different-update-location"></a>Pour spécifier un emplacement différent de mise à jour
-
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
-
-2. Cliquez sur l’onglet **Publier**.
-
-3. Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.
-
-4. Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est activée.
-
-5. Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, en utilisant le format *http://Hostname/ApplicationName*, ou un chemin d’accès UNC au format  *\\\Server\ ApplicationName*, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour.
-
-### <a name="to-check-for-updates-programmatically"></a>Pour vérifier les mises à jour par programmation
+### <a name="to-specify-a-different-update-location"></a>Pour spécifier un autre emplacement de mise à jour
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
 2. Cliquez sur l’onglet **Publier**.
 
-3. Cliquez sur le **mises à jour** bouton pour ouvrir la **mises à jour de l’Application** boîte de dialogue.
+3. Cliquez sur le bouton **mises à jour** pour ouvrir la boîte de dialogue **mises à jour des applications** .
 
-4. Dans le **mises à jour de l’Application** boîte de dialogue zone, assurez-vous que le **l’application doit vérifier les mises à jour** case à cocher est désactivée. (Si vous le souhaitez, vous pouvez sélectionner cette case à cocher pour vérifier des mises à jour par programmation et laisser également le runtime ClickOnce vérifier automatiquement les mises à jour).
+4. Dans la boîte de dialogue **mises à jour des applications** , assurez-vous que la case à cocher **l’application doit vérifier les mises à jour** est activée.
 
-5. Dans le **mettre à jour emplacement** , entrez l’emplacement de mise à jour avec une URL qualifiée complète, en utilisant le format *http://Hostname/ApplicationName*, ou un chemin d’accès UNC au format  *\\\Server\ ApplicationName*, ou cliquez sur le **Parcourir** bouton pour rechercher l’emplacement de mise à jour. Mise à jour se trouve dans laquelle l’application recherche une version mise à jour de lui-même.
+5. Dans le champ emplacement de la **mise à jour** , entrez l’emplacement de la mise à jour avec *http://Hostname/ApplicationName* une URL complète, en utilisant le format ou un chemin UNC au format  *\\ \Server\ApplicationName*, ou cliquez sur le bouton **Parcourir** pour rechercher le emplacement de mise à jour.
 
-6. Créer un bouton, un élément de menu ou autre élément d’interface utilisateur sur un formulaire Windows qui sélectionnent les utilisateurs pour rechercher les mises à jour. À partir du Gestionnaire d’événements de cet élément, appelez une méthode pour vérifier et installer les mises à jour. Vous trouverez un exemple de Visual Basic et Visual C# code pour une telle méthode dans [Comment : Recherchez les mises à jour de l’application par programmation à l’aide de l’API du déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
+### <a name="to-check-for-updates-programmatically"></a>Pour rechercher des mises à jour par programmation
+
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+
+2. Cliquez sur l’onglet **Publier**.
+
+3. Cliquez sur le bouton **mises à jour** pour ouvrir la boîte de dialogue **mises à jour des applications** .
+
+4. Dans la boîte de dialogue **mises à jour des applications** , assurez-vous que la case à cocher **l’application doit vérifier les mises à jour** est désactivée. (Si vous le souhaitez, vous pouvez activer cette case à cocher pour rechercher des mises à jour par programme et également permettre au runtime ClickOnce de vérifier automatiquement les mises à jour.)
+
+5. Dans le champ emplacement de la **mise à jour** , entrez l’emplacement de la mise à jour avec *http://Hostname/ApplicationName* une URL complète, en utilisant le format ou un chemin UNC au format  *\\ \Server\ApplicationName*, ou cliquez sur le bouton **Parcourir** pour rechercher le emplacement de mise à jour. L’emplacement de la mise à jour est l’emplacement où l’application recherchera une version mise à jour de elle-même.
+
+6. Créez un bouton, un élément de menu ou un autre élément d’interface utilisateur dans un Windows Form que les utilisateurs sélectionneront pour rechercher les mises à jour. À partir du gestionnaire d’événements de cet élément, appelez une méthode pour vérifier et installer les mises à jour. Vous trouverez un exemple de Visual Basic et du code C# visuel pour une telle méthode dans [How to : Recherchez des mises à jour d’application par programme à l’aide de l'](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)API de déploiement ClickOnce.
 
 7. Générez votre application.
 
@@ -109,6 +109,6 @@ ms.locfileid: "62928560"
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Boîte de dialogue Mises à jour des applications](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Publier la liaison de ClickOnce](../deployment/publishing-clickonce-applications.md)
+- [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Guide pratique pour vérifier par programmation la disponibilité de mises à jour d’applications à l’aide de l’API de déploiement ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

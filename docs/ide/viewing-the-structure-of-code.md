@@ -1,7 +1,7 @@
 ---
 title: Affichage de classes, hiérarchie d’appels, Explorateur d’objets, fenêtre Définition de code
-ms.date: 05/18/2018
-ms.topic: conceptual
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747711"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150125"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
 
@@ -68,18 +68,17 @@ Le bouton **Paramètres de l’affichage de classes** dans la barre d’outils c
 |||
 |-|-|
 |**Afficher les types de base**|Les types de base sont affichés.|
-|**Afficher les types dérivés**|Les types dérivés sont affichés.|
+|**Afficher les références de projet**|Les références de projet sont affichées.|
 |**Afficher les types et les membres masqués**|Les types et membres masqués (non prévus pour être utilisés par les clients) sont affichés en gris clair.|
 |**Afficher les membres publics**|Les membres publics sont affichés.|
 |**Afficher les membres protégés**|Les membres protégés sont affichés.|
 |**Afficher les membres privés**|Les membres privés sont affichés.|
 |**Afficher les autres membres**|D'autres types de membres sont affichés, y compris les membres internes (ou Friend en Visual Basic).|
 |**Afficher les membres hérités**|Les membres hérités sont affichés.|
-|**Afficher les méthodes d’extension**|Les méthodes d’extension sont affichées.|
 
 ### <a name="class-view-shortcut-menu"></a>Menu contextuel de la fenêtre Affichage de classes
 
-Le menu contextuel dans la fenêtre **Affichage de classes** peut contenir les commandes ci-dessous, selon le type de projet sélectionné :
+Le menu contextuel (ou clic droit) de **affichage de classes** peut contenir les commandes suivantes, selon le type de projet sélectionné :
 
 |||
 |-|-|
@@ -157,7 +156,6 @@ Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre
 |**Afficher les espaces de noms**|Affiche les espaces de noms plutôt que les conteneurs physiques, dans le volet gauche. Les espaces de noms stockés dans plusieurs conteneurs physiques sont fusionnés.|
 |**Afficher les conteneurs**|Affiche les conteneurs physiques plutôt que les espaces de noms, dans le volet gauche. **Afficher les espaces de noms** et **Afficher les conteneurs** sont des paramètres qui s’excluent mutuellement.|
 |**Afficher les types de base**|Affiche les types de base.|
-|**Afficher les types dérivés**|Affiche les types dérivés.|
 |**Afficher les types et les membres masqués**|Affiche les types et membres masqués (non prévus pour être utilisés par les clients) en gris clair.|
 |**Afficher les membres publics**|Affiche les membres publics.|
 |**Afficher les membres protégés**|Affiche les membres protégés.|
@@ -168,7 +166,7 @@ Choisissez le bouton **Paramètres de l’Explorateur d’objets** dans la barre
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Commandes du menu contextuel de l’Explorateur d’objets
 
-Le menu contextuel dans l’**Explorateur d’objets** peut contenir les commandes ci-dessous, selon le type d’élément sélectionné :
+Le menu contextuel (ou clic droit) dans l' **Explorateur d’objets** peut contenir les commandes suivantes, selon le type d’élément sélectionné :
 
 |||
 |-|-|
@@ -197,7 +195,7 @@ Cette fenêtre est en lecture seule mais vous pouvez y définir des points d'arr
 
 ### <a name="code-definition-shortcut-menu"></a>Menu contextuel de la fenêtre Définition de code
 
-Le menu contextuel dans la fenêtre **Définition de code** peut contenir les commandes suivantes :
+Le menu contextuel (ou clic droit) dans la fenêtre **définition de code** peut contenir les commandes suivantes :
 
 |||
 |-|-|
