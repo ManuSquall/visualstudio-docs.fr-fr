@@ -14,7 +14,7 @@
       href: ide/advanced-feature-overview.md
 - name: Installation
   items:
-    - name: Installation de Visual Studio
+    - name: Installer Visual Studio
       href: install/install-visual-studio.md
     - name: Installer hors connexion
       items:
@@ -123,7 +123,7 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Utiliser Visual Studio à partir d’une machine virtuelle Azure
       href: install/using-visual-studio-vm.md
-    - name: Containers
+    - name: Conteneurs
       items:
         - name: Installer Build Tools dans un conteneur
           href: install/build-tools-container.md
@@ -140,7 +140,7 @@
       href: ide/quickstart-ide-orientation.md
     - name: "C++\_: Créer une application console"
       href: /cpp/get-started/tutorial-console-cpp
-    - name: "Python\_: Créer une application web"
+    - name: 'Python : Créer une application web'
       href: ide/quickstart-python.md
     - name: "Node.js\_: Créer une application web"
       href: ide/quickstart-nodejs.md
@@ -152,7 +152,7 @@
       href: ide/quickstart-csharp-console.md
     - name: "Visual Basic\_: Créer une application console"
       href: ide/quickstart-visual-basic-console.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: 'C#'
       href: get-started/csharp/
@@ -168,7 +168,7 @@
       href: javascript/
 - name: Guides pratiques
   items:
-    - name: Développement
+    - name: Développer
       items:
         - name: "Index\_: Utiliser l’IDE pour écrire du code"
           href: ide/index-writing-code.md
@@ -178,7 +178,7 @@
           items:
             - name: Utiliser des solutions et des projets
               href: ide/solutions-and-projects-in-visual-studio.md
-            - name: Création d'un projet
+            - name: Créer un projet
               href: ide/create-new-project.md
             - name: Créer des solutions et des projets
               href: ide/creating-solutions-and-projects.md
@@ -250,7 +250,7 @@
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Développer sans projets ni solutions
           items:
-            - name: Activation Développer sans projet
+            - name: "Procédure\_: Développer sans projet"
               displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Personnaliser des tâches de génération et de débogage
@@ -479,7 +479,7 @@
                       href: ide/editorconfig-language-conventions.md
                     - name: Conventions de mise en forme
                       href: ide/editorconfig-formatting-conventions.md
-                    - name: Conventions d’affectation de noms
+                    - name: Conventions d'attribution d'un nom
                       href: ide/editorconfig-naming-conventions.md
             - name: Personnaliser la barre de défilement
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
@@ -592,7 +592,7 @@
       href: designers/designing-user-interfaces.md
     - name: Développer des applications avec le Concepteur de flux de travail >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: Compilation et génération
+    - name: Compiler et générer
       items:
         - name: Vue d'ensemble
           displayName: Compile build
@@ -660,18 +660,18 @@
       href: test/improve-code-quality.md
     - name: Mesurer les performances >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: Analyser la qualité du code >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: Déployer >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: Étendre Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
     - name: Analyser et modéliser l’architecture >>
       href: modeling/analyze-and-model-your-architecture.md
-    - name: Astuces et conseils
+    - name: Conseils et astuces
       items:
         - name: Fonctionnalités de productivité
           href: ide/productivity-features.md
@@ -692,7 +692,7 @@
           href: ide/personalizing-the-visual-studio-ide.md
         - name: "Démarrage rapide\_: Personnaliser les couleurs des thèmes et du texte"
           href: ide/quickstart-personalize-the-ide.md
-        - name: Paramètres d'environnement
+        - name: Paramètres d’environnement
           displayName: profiles
           href: ide/environment-settings.md
         - name: Paramètres synchronisés
@@ -715,7 +715,7 @@
           href: ide/managing-external-tools.md
         - name: Comptes de personnalisation
           items:
-            - name: Connexion à Visual Studio
+            - name: Se connecter à Visual Studio
               displayName: personalization accounts
               href: ide/signing-in-to-visual-studio.md
             - name: Utiliser plusieurs comptes d’utilisateur
@@ -730,7 +730,7 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: Charger une solution filtrée
           href: ide/filtered-solutions.md
-        - name: Astuces et conseils
+        - name: Conseils et astuces
           href: ide/visual-studio-performance-tips-and-tricks.md
     - name: Accessibilité
       items:
@@ -858,7 +858,7 @@
               href: ide/reference/options-dialog-box-visual-studio.md
             - name: Environnement
               items:
-                - name: Généralités
+                - name: Général
                   href: ide/reference/general-environment-options-dialog-box.md
                 - name: Comptes
                   href: ide/reference/accounts-environment-options-dialog-box.md
@@ -896,7 +896,7 @@
                   href: ide/reference/web-browser-environment-options-dialog-box.md
             - name: Projets et solutions
               items:
-                - name: Généralités
+                - name: Général
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
                 - name: Générer et exécuter
                   href: ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md
@@ -910,19 +910,19 @@
                   href: ide/reference/options-dialog-box-projects-and-solutions-web-projects.md
             - name: Éditeur de texte
               items:
-                - name: Généralités
+                - name: Général
                   href: ide/reference/options-text-editor-general.md
                 - name: Extension de fichier
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Tous les langages
                   items:
-                    - name: Généralités
+                    - name: Général
                       href: ide/reference/options-text-editor-all-languages.md
                     - name: Barres de défilement
                       href: ide/reference/options-text-editor-all-languages-scroll-bars.md
                     - name: Tabulations
                       href: ide/reference/options-text-editor-all-languages-tabs.md
-                - name: De base
+                - name: Basic
                   items:
                     - name: Avancé
                       href: ide/reference/options-text-editor-basic-visual-basic.md
@@ -946,7 +946,7 @@
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Mise en forme
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Affichage
+                    - name: Vue
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: 'F#'
                   items:
@@ -998,7 +998,7 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: Concepteur Windows Forms
               items:
-                - name: Généralités
+                - name: Général
                   href: ide/reference/options-windows-forms-designer.md
                 - name: Personnalisation de l’interface utilisateur des données
                   href: ide/reference/options-windows-forms-designer-data-ui-customization.md
@@ -1161,7 +1161,7 @@
               href: help-viewer/find-topics-index.md
             - name: Rechercher des rubriques dans la table des matières
               href: help-viewer/find-topics-toc.md
-            - name: Recherche
+            - name: Rechercher
               items:
                 - name: Rechercher des rubriques
                   href: help-viewer/find-topics.md
@@ -1195,7 +1195,7 @@
       items:
         - name: Fréquence des versions
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2017
+        - name: "Visual Studio\_2017"
           items:
             - name: Notes de publication actuelles
               href: /visualstudio/releasenotes/vs2017-relnotes/
@@ -1207,7 +1207,7 @@
               href: /visualstudio/productinfo/2017-redistribution-vs/
             - name: Compatibilité de la plateforme
               href: /visualstudio/productinfo/vs2017-compatibility-vs/
-            - name: Conditions requises pour le système
+            - name: Configuration requise
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: "Visual Studio\_2019"
           items:
@@ -1221,7 +1221,7 @@
               href: /visualstudio/releases/2019/redistribution/
             - name: Compatibilité de la plateforme
               href: /visualstudio/releases/2019/compatibility/
-            - name: Conditions requises pour le système
+            - name: Configuration requise
               href: /visualstudio/releases/2019/system-requirements/
         - name: Termes du contrat de licence
           href: 'https://visualstudio.microsoft.com/license-terms/'

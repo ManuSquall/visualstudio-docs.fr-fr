@@ -1,5 +1,5 @@
 - name: Documentation sur le profilage
-  href: index.md
+  href: index.yml
 - name: Vue d'ensemble
   href: profiling-overview.md
 - name: Démarrages rapides
