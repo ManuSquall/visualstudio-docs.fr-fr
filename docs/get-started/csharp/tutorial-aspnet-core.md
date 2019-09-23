@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ac544f033e8b021b7ef0a6253fbd0cb65b4450f5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180471"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186681"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Prise en main de C# et d’ASP.NET Core dans Visual Studio
 
@@ -129,9 +129,9 @@ Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « MyCoreApp »](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. Dans la boîte de dialogue **Créer une nouvelle application Web ASP.NET Core**, vérifiez que **ASP.NET Core 2.1** apparaît dans le menu déroulant du haut. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **créer une nouvelle ASP.net Core application Web** , vérifiez que **ASP.net Core 3,0** s’affiche dans le menu déroulant supérieur. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
 
-   ![La fenêtre « Créez une application web ASP.NET Core »](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![La fenêtre « Créez une application web ASP.NET Core »](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio ouvre votre nouveau projet.
 
@@ -141,6 +141,7 @@ Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous
 
 Cette solution suit le modèle de conception **Razor Pages**. Il diffère du modèle de conception [modèle-vue-contrôleur (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) en ce qu’il est simplifié de façon à intégrer le code du modèle et du contrôleur dans la Razor Page proprement dite.
 
+::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Visite guidée de votre solution
 
  1. Le modèle de projet crée une solution avec un seul projet ASP.NET Core nommé _MyCoreApp_. Choisissez l’onglet **Explorateur de solutions** pour afficher son contenu.
@@ -216,7 +217,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
      public void OnGet()
      {
          string directory = Environment.CurrentDirectory;
-     Message = String.Format("Your directory is {0}.", directory);
+         Message = String.Format("Your directory is {0}.", directory);
      }
     ```
 
@@ -239,6 +240,110 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
    ![Afficher la page About mise à jour comportant les modifications effectuées](media/csharp-aspnet-razor-browser-page-about-changed.png)
 
 1. Fermez le navigateur web, appuyez sur **Maj**+**F5** pour arrêter le mode débogage, puis fermez Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="tour-your-solution"></a>Visite guidée de votre solution
+
+ 1. Le modèle de projet crée une solution avec un seul projet ASP.NET Core nommé _MyCoreApp_. Choisissez l’onglet **Explorateur de solutions** pour afficher son contenu.
+
+    ![Explorateur de solutions ASP.NET dans Visual Studio pour la solution Razor Pages nommée MyCoreApp](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+
+ 1. Développez le dossier **pages** .
+
+     ![Le dossier pages dans Explorateur de solutions](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+
+ 1. Affichez le fichier **index. cshtml** dans l’éditeur de code.
+
+     ![Afficher le fichier index. cshtml dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml.png)
+
+ 1. Chaque fichier. cshtml est associé à un fichier de code. Pour ouvrir le fichier de code dans l’éditeur, développez le nœud **index. cshtml** dans Explorateur de solutions, puis choisissez le fichier **index.cshtml.cs** .
+
+     ![Choisir le fichier Index.cshtml.cs dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+
+ 1. Affichez le fichier **index.cshtml.cs** dans l’éditeur de code.
+
+     ![Afficher le fichier About.cshtml dans l’éditeur de code Visual Studio](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+
+ 1. Le projet contient un dossier **wwwroot** qui représente la racine de votre site web. Développez le dossier pour voir son contenu.
+
+     ![Dossier wwwroot dans l’Explorateur de solutions dans Visual Studio](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+
+    Vous pouvez placer du contenu de site statique, par exemple &mdash;des feuilles de style CSS, des images et des bibliothèques JavaScript&mdash;, directement dans les chemins souhaités.
+
+ 1. Le projet contient également des fichiers de configuration qui gèrent l’application web à l’exécution. La [configuration](/aspnet/core/fundamentals/configuration) de l’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer ces paramètres à l’aide de *appsettings.Development.json*. Développez le fichier **appsettings.json** pour voir le fichier **appsettings.Development.json**.
+
+     ![Fichiers de configuration dans l’Explorateur de solutions dans Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+
+## <a name="run-debug-and-make-changes"></a>Exécuter, déboguer et apporter des changements
+
+1. Choisissez le bouton **IIS Express** dans l’IDE pour générer et exécuter l’application en mode débogage. (Vous pouvez aussi appuyer sur **F5**, ou choisir **Déboguer** > **Démarrer le débogage** dans la barre de menus.)
+
+     ![Sélectionnez le bouton IIS Express dans Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
+
+     > [!NOTE]
+     > Si vous obtenez le message d’erreur **Impossible de se connecter au serveur web « IIS Express »** , fermez Visual Studio et rouvrez-le en utilisant l’option **Exécuter en tant qu’administrateur** dans le menu contextuel. Ensuite, réexécutez l’application.
+     >
+     > Vous pouvez également recevoir un message qui vous demande si vous voulez accepter un certificat Express SSL IIS. Pour voir le code dans un navigateur web, choisissez **Oui**, puis choisissez à nouveau **Oui** si vous recevez un message d’avertissement de sécurité.
+
+1. Visual Studio lance une fenêtre de navigateur. Vous devez ensuite voir page d' **hébergement**et pages de **confidentialité** dans la barre de menus.
+
+1. Dans la barre de menus, choisissez **confidentialité** .
+
+   La page **confidentialité** dans le navigateur affiche le texte qui est défini dans le fichier *privacy. cshtml* .
+
+   ![Afficher le texte sur la page confidentialité](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+
+1. Retournez dans Visual Studio, puis appuyez sur **MAJ+F5** pour arrêter le mode Déboguer. Cela ferme également le projet dans la fenêtre du navigateur.
+
+1. Dans Visual Studio, ouvrez **privacy. cshtml** pour le modifier. Ensuite, supprimez les mots _Utilisez cette page pour détailler la politique de confidentialité de votre site_ et, à la place, ajoutez les mots _que @ViewDatacette page est en cours de construction en tant que [« timestamp »]_ .
+
+    ![Modifier le texte dans le fichier privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+
+1. À présent, nous allons modifier le code. Choisissez **privacy.cshtml.cs**. Ensuite, nettoyez les directives `using` en haut du fichier à l’aide du raccourci suivant :
+
+   Choisissez l’une des directives `using` grisées. Une ampoule [Actions rapides](../../ide/quick-actions.md) apparaît alors juste au-dessous du signe insertion ou dans la marge de gauche. Choisissez l’ampoule, puis pointez sur **Supprimer les utilisations inutiles**. 
+
+   ![Supprimer les using inutiles dans le fichier Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+
+   Choisissez maintenant **aperçu des modifications** pour voir ce qui va changer.
+
+   ![Aperçu des modifications](media/vs-2019/csharp-aspnet-preview-changes.png)
+
+   Choisissez **appliquer**. Visual Studio supprime les directives `using` inutiles du fichier.
+
+1. Ensuite, remplacez le corps de la méthode `OnGet()` par le code suivant :
+
+     ```csharp
+     public void OnGet()
+     {
+        string dateTime = DateTime.Now.ToShortDateString();
+        ViewData["TimeStamp"] = dateTime;
+     }
+    ```
+
+1. Notez que deux soulignements ondulés s’affichent sous **DateTime**. Les soulignements ondulés s’affichent, car ces types ne sont pas dans la portée.
+
+   ![Erreurs signalées par des soulignements ondulés dans la méthode OnGet](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+
+    Ouvrez la barre d’outils **Liste d’erreurs** où sont répertoriées ces mêmes erreurs. (Si la barre d’outils **Liste d’erreurs** n’est pas visible, choisissez **Afficher** > **Liste d’erreurs** dans la barre de menus supérieure.)
+
+   ![Liste d’erreurs dans Visual Studio](media/vs-2019/csharp-aspnet-error-list.png)
+
+1. Nous allons résoudre ce problème. Dans l’éditeur de code, placez votre curseur sur l’une des lignes contenant l’erreur, puis choisissez l’ampoule Actions rapides dans la marge de gauche. Ensuite, dans le menu déroulant, choisissez **using System;** pour ajouter cette directive en haut de votre fichier et résoudre les erreurs.
+
+   ![Ajouter la directive « using System; »](media/vs-2019/csharp-aspnet-add-usings.png)
+
+1. Appuyez sur **F5** pour ouvrir votre projet dans le navigateur Web.
+
+1. En haut du site Web, choisissez **confidentialité** pour afficher vos modifications.
+
+   ![Afficher la page de confidentialité mise à jour qui comprend les modifications que vous avez apportées](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+
+1. Fermez le navigateur web, appuyez sur **Maj**+**F5** pour arrêter le mode débogage, puis fermez Visual Studio.
+::: moniker-end
 
 ## <a name="quick-answers-faq"></a>Questions fréquentes (FAQ) et réponses rapides
 
