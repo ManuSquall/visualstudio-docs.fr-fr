@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403553"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128140"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analyser l’utilisation du réseau dans les applications UWP
 L’outil de diagnostic **Réseau** de Visual Studio collecte les données relatives aux opérations réseau effectuées à l’aide de l’[API Windows.Web.Http](/uwp/api/windows.web.http). L'analyse des données peut vous aider à résoudre les problèmes tels que les problèmes d'accès et d'authentification, l'utilisation incorrecte du cache et les médiocres performances d'affichage et de téléchargement.
@@ -76,5 +76,5 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 - [Exécuter des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
 - [Blog Visual Studio : Présentation de l’inspecteur de réseau Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)
 - [Vidéo Channel 9 : Outils de diagnostic VS - nouveau profileur réseau](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679761"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987791"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -27,7 +27,7 @@ Les fonctionnalités décrites ici sont applicables à C#, C++, Visual Basic, Ja
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrer le débogueur
 
-Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Cependant, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous commençons donc par cela, puis nous démarrons le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
+Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Toutefois, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous allons donc commencer par cela, pour ensuite démarrer le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
 Si vous avez un fichier ouvert dans l’éditeur de code, vous pouvez définir un point d’arrêt en cliquant dans la marge à gauche d’une ligne de code.
 
@@ -41,16 +41,16 @@ Les points d’arrêt sont une fonctionnalité pratique quand vous savez quelle 
 
 Nous fournissons les raccourcis clavier pour la plupart des commandes, car ils rendent plus rapide la navigation dans le code de votre d’application. (Les commandes équivalentes, comme les commandes des menus, sont données entre parenthèses.)
 
-Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11** (**Déboguer > Pas à pas détaillé**). F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. Quand vous démarrez l’application avec F11, le débogueur s’arrête sur la première instruction exécutée.
+Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11** (**Déboguer > Pas à pas détaillé**). F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. Lorsque vous démarrez l’application en appuyant sur F11, le débogueur s’arrête à la première instruction exécutée.
 
 ![F11 Pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 Pas à pas détaillé")
 
 La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
-F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour avancer plus rapidement dans le code, il existe d’autres options, que nous allons vous montrer.) Par défaut, le débogueur ignore le code non-utilisateur (si vous voulez plus d’informations, consultez [Uniquement mon code](../debugger/just-my-code.md)).
+F11 est une bonne solution pour examiner le flux d’exécution en détails. (Pour se déplacer plus rapidement dans le code, nous vous montrerons d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
 
 >[!NOTE]
-> Dans le code managé, vous voyez une boîte de dialogue vous demandant si vous voulez être averti quand vous effectuez automatiquement un pas à pas principal dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer ce paramètre ultérieurement, désactivez le paramètre **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
+> Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti quand vous effectuez automatiquement un pas à pas dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer cette option plus tard, désactivez **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
 
 ## <a name="step-over-code-to-skip-functions"></a>Effectuer un pas à pas principal dans le code pour ignorer les fonctions
 
@@ -60,28 +60,28 @@ F10 fait avancer le débogueur sans effectuer de pas à pas détaillé dans les 
 
 ## <a name="step-into-a-property"></a>Pas à pas détaillé d’une propriété
 
-Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés et les champs managés, mais la commande **Pas à pas détaillé spécifique** vous permet de remplacer ce comportement.
+Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés et les champs managés, mais la commande **Pas à pas détaillé spécifique** vous permet de substituer ce comportement.
 
-Cliquez avec le bouton droit sur une propriété ou un champ, et choisissez **Pas à pas détaillé spécifique**, puis choisissez une des options disponibles.
+Cliquez avec le bouton droit sur une propriété ou un champ et choisissez **Pas à pas détaillé spécifique**, puis choisissez une des options disponibles.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific.png "Pas à pas détaillé spécifique")
 
-Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code pour `Path.set`.
+Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code correspondant à `Path.set`.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "Pas à pas détaillé spécifique")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Exécuter rapidement jusqu’à un point dans votre code avec la souris
 
-Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
+Lorsque vous êtes dans le débogueur, pointez sur une ligne de code jusqu'à ce que le bouton **Exécuter jusqu'au clic** (Exécuter l’exécution jusqu’ici) ![Exécuter jusqu'au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
 
 ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click-2.png "Exécuter jusqu’au clic")
 
 > [!NOTE]
 > Le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) est disponible à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-Cliquez sur le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici). Le débogueur avance jusqu’à la ligne de code où vous avez cliqué.
+Cliquez sur le bouton **Exécuter jusqu'au clic** (Exécuter l'exécution jusqu’ici). Le débogueur passe à la ligne de code où vous avez cliqué.
 
-L’utilisation de ce bouton revient à définir un point d’arrêt temporaire. Cette commande est également pratique pour parcourir rapidement une zone visible du code d’application. Vous pouvez utiliser **Exécuter jusqu’au clic** dans n’importe quel fichier ouvert.
+L’utilisation de ce bouton est similaire à la définition d’un point d’arrêt temporaire. Cette commande est également pratique pour se déplacer rapidement au sein de la région visible du code d’application. Vous pouvez utiliser le bouton **Exécuter jusqu'au clic** dans un fichier ouvert.
 
 ## <a name="advance-the-debugger-out-of-the-current-function"></a>Faire avancer le débogueur en dehors de la fonction active
 
@@ -115,6 +115,16 @@ Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger
 Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’action consistant à arrêter l’application, puis à redémarrer le débogueur. Le débogueur se met en pause sur le premier point d’arrêt qui est atteint par l’exécution du code.
 
 Si vous voulez arrêter le débogueur et revenir à l’éditeur de code, vous pouvez appuyer sur le bouton d’arrêt rouge ![Arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "Arrêter le débogage") au lieu de **Redémarrer**.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modifier votre code et continuer le débogage (C#, VB, C++, XAML)
+
+Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et poursuivre le débogage. Pour utiliser cette fonctionnalité, cliquez sur votre code à l’aide de votre curseur tout en étant suspendu dans le débogueur, apportez des modifications, puis appuyez sur **F5**, **F10**ou **F11** pour continuer le débogage.
+
+![Modifier & continuer le débogage](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+Pour plus d’informations sur l’utilisation de la fonctionnalité et sur les limitations relatives aux fonctionnalités, consultez [modifier & continuer](../debugger/edit-and-continue.md).
+
+Pour modifier le code XAML pendant une session de débogage, consultez [écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations (datatips)
 

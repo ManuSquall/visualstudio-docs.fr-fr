@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 93703bdd4bf2f0046176ceb1f6febd5564f61705
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797938"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128314"
 ---
 # <a name="perftips"></a>Conseils sur les performances
 Les *conseils sur les performances* du débogueur et les **outils de diagnostic** intégrés au débogueur de Visual Studio vous aident à surveiller et à analyser les performances de votre application pendant le débogage.
@@ -55,5 +55,5 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 2. Cochez ou décochez **Activer les outils de diagnostic pendant le débogage**.
 
 ## <a name="see-also"></a>Voir aussi
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

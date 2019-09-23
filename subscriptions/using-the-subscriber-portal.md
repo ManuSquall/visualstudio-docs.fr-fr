@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377918"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095309"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Utilisation du portail des abonnés- my.visualstudio.com
 
@@ -21,8 +21,8 @@ Pour utiliser le portail, vous devez vous connecter avec l'identité associée �
 
 Le portail comporte six pages.  Chaque page vous permet d’accéder à différents produits ou services inclus avec votre abonnement.  Les six pages disponibles sont les suivantes : Avantages, Téléchargements, Clés de produit, Abonnements, Support et Marketplace.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Les outils et les services inclus avec votre abonnement sont affichés sous forme de « vignettes » sur la page Avantages.  Tous les abonnements n’incluent pas tous les avantages. Les vignettes sont regroupées en trois catégories :  outils, développement professionnel et support.  Si vous utilisez Visual Studio Dev Essentials, il existe également une catégorie appelée Recommandés, qui peut contenir des avantages sélectionnés dans les trois autres catégories.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Les outils et les services inclus avec votre abonnement sont affichés sous forme de « vignettes » sur la page Avantages.  Tous les abonnements n’incluent pas tous les avantages. Les vignettes sont regroupées en trois catégories :  outils, développement professionnel et support.  
 
 ### <a name="tools"></a>Outils
 La catégorie Outils contient les principaux outils de développement, comme l’environnement IDE Visual Studio et Azure DevOps, ainsi que des outils fournis par nos partenaires.  Elle inclut également des services comme Azure et Visual Studio App Center.
@@ -30,21 +30,21 @@ La catégorie Outils contient les principaux outils de développement, comme l�
 ### <a name="professional-development"></a>Développement professionnel
 Cette catégorie contient des avantages tels que la formation en ligne de Microsoft et de nos partenaires, ainsi qu’un abonnement à MSDN Magazine, visant à vous aider à améliorer vos compétences en développement et à vous tenir informé de l’actualité en matière de code.
 
-### <a name="support"></a>Support
+### <a name="support"></a>Assistance
 Vous avez des questions sur Azure ?  Obtenez de l’aide auprès de la Communauté Azure à travers les forums ou tirez le meilleur parti d’Azure Advisory Chat (préversion).  Le service Concierge Chat facilite la recherche de documentation technique et d’informations sur les produits et aide à résoudre les questions relatives aux abonnements.  Certains abonnements incluent également un support technique en cas d’incidents pour vous aider à résoudre d’éventuels problèmes sur une large gamme de produits Microsoft exécutés dans des environnements de développement et de test.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 Selon votre abonnement ou votre programme, vous avez accès à des téléchargements de logiciels allant de mises à jour et de correctifs à une bibliothèque complète de produits actuels et de versions plus anciennes, pour vous permettre de tester vos applications dans des scénarios très divers.
 
 Pour simplifier la consultation des informations aux abonnés qui disposent de plusieurs abonnements associés à un même compte, la page Téléchargements affiche les téléchargements disponibles pour l’abonnement acheté dont le niveau est le plus élevé.  Cela leur permet ainsi de voir tous leurs téléchargements, quel que soit l’abonnement en cours d’utilisation.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Accédez à la page Clés de produit pour obtenir les clés nécessaires pour l’installation et l’activation de produits, ainsi que pour identifier les clés que vous avez déjà demandées.  Vous pouvez même exporter une liste de toutes vos clés pour les conserver en lieu sûr.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 La page Abonnements fournit les fonctionnalités nécessaires pour afficher vos abonnements, basculer entre les différents abonnements, les renouveler et en activer de nouveaux. Vous pouvez également associer les abonnements auxquels vous accédez avec votre compte Microsoft à un autre compte déjà associé à l’environnement IDE Visual Studio, à Azure DevOps Services ou à des ressources Azure existantes.
 
-## <a name="support"></a>Support
+## <a name="support"></a>Assistance
 
 Outre les avantages individuels figurant dans la catégorie Support de la page Avantages, la page Support fournit un accès aux ressources pour vous aider à tirer le meilleur parti de votre abonnement Visual Studio. Accédez aux [ressources de support](https://visualstudio.microsoft.com/subscriptions/support/) pour résoudre d’éventuels problèmes techniques ou questions liés à la vente d’abonnements, aux comptes et à la facturation.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e19cdb633528c3304d500fe268a583c542f1e4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001033"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128132"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 
@@ -55,5 +55,5 @@ Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’évén
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

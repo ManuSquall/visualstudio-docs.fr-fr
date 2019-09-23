@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551060"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062412"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -23,9 +23,9 @@ Si vous avez précédemment utilisé l’analyse statique du code dans Visual St
 
 ## <a name="ported-rules"></a>Règles transférées
 
-La [page de documentation générée automatiquement](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) dans Roslyn-Analyzers référentiel contient la liste la plus récente des règles qui ont été portées aux analyseurs FxCop. Cette page contient également des informations supplémentaires, par exemple si la règle est activée par défaut et si elle est associée à un *correctif de code*. (Les correctifs de[code](../ide/quick-actions.md) sont des correctifs accessibles en un clic dans le menu de l’icône d’ampoule dans Visual Studio.)
+La [page de documentation générée automatiquement](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) dans Roslyn-Analyzers référentiel contient la liste la plus récente des règles qui ont été portées aux analyseurs FxCop. Cette page contient également des informations supplémentaires, par exemple si la règle est activée par défaut et si elle est associée à un *correctif de code*. (Les[correctifs de code](../ide/quick-actions.md) sont des correctifs accessibles en un clic dans le menu de l’icône d’ampoule dans Visual Studio.)
 
-À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants:
+À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants :
 
 ID de règle | Titre
 --------|---------
@@ -69,7 +69,7 @@ ID de règle | Titre
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Ne pas lever d'exceptions dans les emplacements inattendus
 CA1066 | Le {0} type doit implémenter IEquatable\<T >, car il remplace Equals
 CA1067 | Remplace Object. Equals (Object) lors de l’implémentation\<de IEquatable T >
-CA1068 | Les paramètres CancellationToken doivent être en dernier
+[CA1068](ca1068.md) | Les paramètres CancellationToken doivent être en dernier
 CA1200 | Évitez d’utiliser des balises CREF avec un préfixe
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Ne pas passer de littéraux en paramètres localisés
 [CA1304](ca1304-specify-cultureinfo.md) | Spécifier CultureInfo
@@ -271,7 +271,7 @@ ID de règle | Suivi du problème
 
 ### <a name="deprecated-rules"></a>Règles déconseillées
 
-Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne sont pas implémentées en tant qu’analyseurs. Pour plus d’informations, vous pouvez effectuer une recherche par ID de règle(par exemple, CA1009) sur la [page des problèmes de GitHub Roslyn-Analyzer](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne sont pas implémentées en tant qu’analyseurs. Pour plus d’informations, vous pouvez effectuer une recherche par ID de règle (par exemple, **CA1009**) sur la [page des problèmes de GitHub Roslyn-Analyzer](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

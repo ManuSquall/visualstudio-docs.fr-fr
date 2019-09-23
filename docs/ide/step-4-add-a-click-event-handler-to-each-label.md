@@ -1,9 +1,11 @@
 ---
 title: 'Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
+- CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38de06027104f6764c932ec6de4c76138e957ea
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 705ddc48e37c557a1d0c77fc3f1ca82cbb3995e7
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416637"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118752"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette
 

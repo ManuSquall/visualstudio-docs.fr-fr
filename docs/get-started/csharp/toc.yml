@@ -47,6 +47,6 @@
     - name: Test unitaire
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Déployer votre projet
-      href: ../../deployment/index.md
+      href: ../../deployment/index.yml
     - name: Accéder aux données
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440283"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128215"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser des données **d’échantillonnage**.
@@ -53,7 +53,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
 3. Cochez l’option **Assistant Performance**, puis cliquez sur **Démarrer**.
 
-4. Cochez l’option **Échantillonnage de l’UC (recommandé)**, puis cliquez sur **Terminer**.
+4. Cochez l’option **Échantillonnage de l’UC (recommandé)** , puis cliquez sur **Terminer**.
 
 5. Votre application démarre et le profileur commence à collecter des données.
 
@@ -127,5 +127,5 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 - [Explorateur de performances](../profiling/performance-explorer.md)
 - [Prise en main](../profiling/getting-started-with-performance-tools.md)
 - [Vues d’ensemble](../profiling/overviews-performance-tools.md)
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

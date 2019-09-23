@@ -5,20 +5,17 @@ ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913127"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118790"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Étape 11 : Exécutez votre application visionneuse d’images et essayez d’autres fonctionnalités
 
@@ -63,4 +60,4 @@ Pour revenir à l’étape précédente du tutoriel, consultez [Étape 10 : É
 
 * [Autres C# didacticiels](/visualstudio/get-started/csharp/)
 * [Autres didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C++vcwlkEventsTutorial](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++vcwlkEventsTutorial](/cpp/get-started/tutorial-console-cpp)

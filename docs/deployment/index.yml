@@ -1,0 +1,90 @@
+### YamlMime:Landing
+title: Documentation sur le déploiement de Visual Studio
+summary: Découvrez comment déployer des applications, des services et des composants en utilisant Visual Studio
+metadata:
+  title: Déploiement dans Visual Studio
+  description: Découvrez comment utiliser Visual Studio pour déployer des applications, des services et des composants.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: e682940552de083c167ac573b37d1ba5b7f10a4a
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130598"
+landingContent:
+- title: À propos du déploiement
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble du déploiement
+      url: deploying-applications-services-and-components-resources.md
+    - text: Présentation du déploiement
+      url: deploying-applications-services-and-components.md
+- title: Prise en main
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Publier sur Azure App Service
+      url: quickstart-deploy-to-azure.md
+    - text: Publier sur App Service pour Linux
+      url: quickstart-deploy-to-linux.md
+    - text: Publier sur un site web
+      url: quickstart-deploy-to-a-web-site.md
+    - text: Publier sur un dossier local
+      url: quickstart-deploy-to-local-folder.md
+- title: Déployer des applications .NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Déployer des applications .NET Core
+      url: /dotnet/core/deploying/deploy-with-vs
+    - text: Déployer une application de bureau avec ClickOnce
+      url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+    - text: Générer des applications ClickOnce à partir de la ligne de commande
+      url: building-clickonce-applications-from-the-command-line.md
+  - linkListType: how-to-guide
+    links:
+    - text: Empaqueter une application de bureau pour Windows Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Déployer des packages .NET sur NuGet.org
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publier sur NuGet.org (.NET Standard)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
+    - text: Publier sur NuGet.org (.NET Framework)
+      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+- title: Déployer des applications ASP.NET
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publier ASP.NET Core sur Azure
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vsd
+    - text: Importer des paramètres de publication et déployer sur IIS
+      url: tutorial-import-publish-settings-iis.md
+    - text: Publier avec Git
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+- title: Déployer des applications C++
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Déployer avec un projet d’installation (C/C++)
+      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md
+    - text: Empaqueter une application de bureau pour Windows Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Déployer des applications Python
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Publier sur App Service Linux
+      url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
+- title: Déployer des applications Node.js
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Publier sur App Service Linux
+      url: ../javascript/publish-nodejs-app-azure.md

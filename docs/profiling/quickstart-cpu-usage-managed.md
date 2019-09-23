@@ -1,5 +1,5 @@
 ---
-title: Analyser les données d’utilisation de l’UC (code managé)
+title: Analyser les données d’utilisationC#de l’UC (, Visual Basic)
 description: Mesurer les performances des applications en C# et Visual Basic à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703855"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128194"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Démarrage rapide : Analyser les données d’utilisation de l’UC dans Visual Studio (code managé)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Démarrage rapide : Analyser les données d’utilisation de l’UCC#dans Visual Studio (, Visual Basic)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner l’outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
@@ -31,7 +31,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
-2. Sous **Visual C#** ou **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
+2. Sous **Visual C#** ou **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)** .
 
     Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
@@ -237,5 +237,5 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

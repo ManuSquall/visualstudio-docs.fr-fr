@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377962"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936915"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
@@ -36,5 +36,10 @@ R :  Non.  L’anonymisation a lieu en réponse à un événement qui entraîne
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q :  Je suis chargé de l’administration des abonnements de mon organisation.  Si les informations de l’un de mes abonnés sont anonymisées, cet abonnement peut-il être réaffecté à un autre utilisateur ?
 R :  Oui. Tant que l’abonnement n’est pas arrivé à expiration, il peut être réaffecté à un autre abonné.
 
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q : Comment puis-je empêcher l’anonymisation due à la suppression d’une adresse de messagerie de connexion ?
+R :  Il existe deux façons d’éviter ce problème :
+- Déployez un système de gestion d’identité unique, AAD ou MSA mais pas les deux  
+- Associez les identités AAD et MSA par le biais du locataire. 
+
 ## <a name="next-steps"></a>Étapes suivantes
-Découvrez comment empêcher l’anonymisation en [établissant une liaison entre les identités MSA et AAD](/azure/active-directory/b2b/add-users-administrator).
+Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](/azure/active-directory/b2b/add-users-administrator).

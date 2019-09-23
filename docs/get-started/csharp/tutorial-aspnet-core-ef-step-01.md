@@ -17,24 +17,24 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261721"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977437"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutoriel : Créer une application ASP.NET Core à l’aide d’Entity Framework avec Visual Studio 2019
 
 Ce tutoriel explique comment créer une application web ASP.NET Core qui utilise des données et la déployer sur Azure. Il se compose des étapes suivantes :
 
-- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Étape 3 : Travailler avec des données à l’aide d’Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Étape 4 : Exposer une API web à partir d’une application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Étape 5 : Déployer une application ASP.NET Core sur Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+- [Étape 3 : Travailler avec des données à l’aide d’Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Étape 4 : Exposer une API web à partir d’une application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Étape 5 : Déployer une application ASP.NET Core sur Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : Installer Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : Installer Visual Studio 2019
 
 Découvrez comment installer Visual Studio 2019 avec ce tutoriel vidéo et des instructions détaillées. Si vous avez déjà installé Visual Studio, passez directement à [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
@@ -58,7 +58,7 @@ Visual Studio peut être utilisé dans différents contextes de développement ;
 
 ![Visual Studio 2019 – Choisir les charges de travail](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Installez
+## <a name="install"></a>Installation
 
 Cliquez sur **Installer** et laissez le programme d’installation télécharger et installer Visual Studio.
 
@@ -88,16 +88,16 @@ Notez que, pour la plupart des modèles de projet, vous pouvez également choisi
 - Comptes professionnels ou scolaires : authentification avec Active Directory, Azure AD ou Office 365.
 - Authentification Windows : authentification adaptée aux applications intranet.
 
-Sélectionnez le modèle d’application web standard avec Aucune authentification et cliquez sur **OK**.
+Sélectionnez le modèle application Web standard sans authentification, puis cliquez sur **créer**.
 
-![Visual Studio 2019 – Choisir les options de projet ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+![Visual Studio 2019 – Choisir les options de projet ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Dans la vidéo suivante, vous aborderez votre premier projet ASP.NET Core.
 
-[Tutoriel : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+[Tutoriel : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutoriel : Bien démarrer avec C# et ASP.NET Core](tutorial-aspnet-core.md) : tutoriel plus détaillé sans procédure pas à pas vidéo
+- [Tutoriel : Bien démarrer avec C# et ASP.NET Core](tutorial-aspnet-core.md) : tutoriel plus détaillé sans procédure pas à pas vidéo

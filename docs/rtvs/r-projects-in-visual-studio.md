@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809900"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012622"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Créer des projets R dans Visual Studio
 
@@ -37,18 +37,18 @@ Le fichier *.Rhistory* enregistre toutes les commandes que vous entrez dans la F
 
 Le fichier *rproject.rproj* tient à jour certains paramètres de projet propres à R qui ne sont pas tenus à jour par Visual Studio :
 
-| Property | Par défaut | Description |
+| Propriété | Default | Description |
 | --- | --- | --- |
 | Version | 1.0 | Version des Outils R pour Visual Studio utilisée pour créer le projet. |
-| RestoreWorkspace | Par défaut | Charger automatiquement les variables d’espace de travail précédentes à partir du fichier `.RData` dans le répertoire du projet. |
-| SaveWorkspace | Par défaut | Enregistrer les variables d’espace de travail actuelles dans le fichier `.RData` dans le répertoire du projet lors de la fermeture d’un projet. |
-| AlwaysSaveHistory | Par défaut | Enregistrer l’historique de la Fenêtre interactive actuelle pour le fichier `.RHistory` dans le répertoire du projet lors de la fermeture d’un projet. |
+| RestoreWorkspace | Default | Charger automatiquement les variables d’espace de travail précédentes à partir du fichier `.RData` dans le répertoire du projet. |
+| SaveWorkspace | Default | Enregistrer les variables d’espace de travail actuelles dans le fichier `.RData` dans le répertoire du projet lors de la fermeture d’un projet. |
+| AlwaysSaveHistory | Default | Enregistrer l’historique de la Fenêtre interactive actuelle pour le fichier `.RHistory` dans le répertoire du projet lors de la fermeture d’un projet. |
 | EnableCodeIndexing | Oui | Détermine s’il faut exécuter une tâche d’indexation en arrière-plan pour accélérer les recherches de code. |
 | UseSpacesForTab | Oui | Détermine s’il faut insérer des espaces (Oui) ou un caractère de tabulation (Non) quand la touche **Tab** est enfoncée dans l’éditeur. |
 | NumSpacesForTab | 2 | Nombre d’espaces à insérer si UseSpacesForTab est Oui. |
 | Encodage | UTF-8 | Encodage par défaut des fichiers `.R`. |
 | RnwWeave | Sweave | Package à utiliser lors de la fusion d’un fichier Rnw. |
-| LaTeX | pdfLaTeX | Bibliothèque à utiliser lors de la conversion de RMarkdwon au format PDF. |
+| LaTeX | pdfLaTeX | Bibliothèque à utiliser lors de la conversion de RMarkdown au format PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Conversion d’un dossier de fichiers en projet R
 
@@ -61,16 +61,16 @@ Si vous avez un dossier de fichiers *.R* que vous souhaitez gérer dans un proje
 
 ## <a name="project-properties"></a>Propriétés de projet
 
-Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions**, puis sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)**. La fenêtre qui s’ouvre affiche les propriétés du projet :
+Pour ouvrir les pages de propriétés du projet, cliquez avec le bouton droit sur le projet dans l’**Explorateur de solutions**, puis sélectionnez **Propriétés**, ou sélectionnez l’élément de menu **Projet > Propriétés de (nom du projet)** . La fenêtre qui s’ouvre affiche les propriétés du projet :
 
-| Onglet | Property | Description |
+| Onglet | Propriété | Description |
 | --- | --- | --- |
 | Exécuter | Fichier de démarrage | Nom du fichier qui s’exécute avec la commande **Fichier de démarrage source**, **F5**, **Déboguer** > **Démarrer le débogage**, ou **Déboguer** > **Démarrer sans débogage**. Vous pouvez également le définir comme fichier de démarrage en cliquant avec le bouton droit sur le fichier dans le projet et en sélectionnant **Définir comme script R de démarrage**. |
 | | Réinitialiser la Fenêtre interactive R à l’exécution | Efface toutes les variables de l’espace de travail de la fenêtre interactive quand vous exécutez le projet. Cela permet de garantir l’absence de contenu d’espace de travail résiduel des exécutions précédentes. |
 | | Chemin de projet distant | Chemin à un espace de travail distant. |
 | | Transférer des fichiers à l’exécution | Indique si les fichiers projet, conformément au filtre dans **Fichiers à transférer**, doivent être copiés vers un espace de travail distant à chaque exécution. |
 | | Fichiers à transférer | Noms de fichiers et caractères génériques indiquant les fichiers à copier vers un espace de travail distant si **Transférer des fichiers à l’exécution** est sélectionné. |
-| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent des fichiers *Settings.R* ou **.Settings.R* qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables, enregistrer la page, et un fichier *Settings.R* par défaut est créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier** > **Ajouter un nouvel élément**. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être approvisionné avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. |
+| Paramètres | (Fichier Settings.R) | Les paramètres de projet R proviennent des fichiers *Settings.R* ou * *.Settings.R* qui se trouvent dans le projet. S’il n’existe aucun fichier de paramètres, vous pouvez ajouter des variables, enregistrer la page, et un fichier *Settings.R* par défaut est créé pour vous. Vous pouvez également ajouter le fichier de paramètres au projet par le biais de la commande de menu **Fichier** > **Ajouter un nouvel élément**. <br/> Les paramètres sont stockés sous forme de code R et le fichier peut être approvisionné avant d’exécuter d’autres modules. Ainsi, l’environnement est prérempli avec les paramètres prédéfinis. |
 
 ## <a name="r-specific-project-commands"></a>Commandes de projet propres à R
 
@@ -99,7 +99,7 @@ Les outils R pour Visual Studio incluent plusieurs modèles pour des types de f
 | Documentation R | Fichier de documentation R générique contenant uniquement les champs de nom, d’alias et de titre. |
 | Documentation R (fonction) | Fichier de documentation R contenant de nombreux champs avec des commentaires pour décrire une fonction. |
 | Documentation R (jeu de données) | Fichier de documentation R contenant de nombreux champs avec des commentaires pour décrire un jeu de données. |
-| Requête SQL | Fichier *.sql* vide. Consultez [Utiliser SQL Server et R](integrating-sql-server-with-r.md). |
+| Requête SQL | Un fichier *. SQL* vide. Consultez [Utiliser SQL Server et R](integrating-sql-server-with-r.md). |
 | Procédure stockée avec R | Fichier R avec un fichier de modèle de requête SQL enfant et de procédure stockée enfant. Consultez [Utiliser SQL Server et R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Utiliser plusieurs types de projets dans Visual Studio

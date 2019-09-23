@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551863"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079624"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Où est le regroupement par caractéristiques dans Visual Studio 2019 ?
-Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! [https://doi.org/10.13012/J8PN93H8](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
 
 Pour le moment, vous pouvez cliquer avec le bouton droit sur la colonne dans l’Explorateur de tests et sélectionner Colonnes. Cochez la colonne Caractéristique pour la faire apparaître dans l’Explorateur de tests. Vous pouvez désormais filtrer cette colonne en fonction des caractéristiques qui vous intéressent.
 
@@ -115,7 +115,6 @@ Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**Exp
 
 Dans Visual Studio 2019, certaines API de fenêtre de test, qui étaient auparavant dites publiques mais qui n’ont jamais été officiellement documentées, seront retirées. Elles avaient été marquées comme étant « déconseillées » dans Visual Studio 2017 pour avertir à l’avance les personnes chargées de la maintenance des extensions. À notre connaissance, très peu d’extensions avaient trouvé ces API et en dépendaient. Il s’agit notamment de `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` et `SearchFilterTokenType`. Si ce changement affecte votre extension, faites-le nous savoir en entrant un bogue auprès de la [Communauté des développeurs](https://developercommunity.visualstudio.com).
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Référence NuGet sur l’adaptateur de test
 
 **Dans Visual Studio 2017 version 15.8, mes tests sont détectés, mais ne s’exécutent pas.**
@@ -126,6 +125,7 @@ Le **projet de test{} ne référence aucun adaptateur .NET NuGet. La découverte
 
 Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent utiliser les packages NuGet de l’adaptateur de test. Cette exigence améliore considérablement les performances et entraîne moins de problèmes avec l’intégration continue. En savoir plus sur la dépréciation de l’Extension de l’adaptateur de Test .NET dans les [notes de version](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de la découverte dans Visual Studio version 15.8 dans **Outils** > **Options**  >  **Test**.
 
@@ -140,7 +140,7 @@ Les projets de test UWP récents spécifient une propriété de génération de 
 
 **System.AggregateException : Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException : Le TestContainer suivant est introuvable {} sur Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
-Pour résoudre ce problème :
+Pour corriger cette erreur :
 
 - Mettez à jour votre propriété de génération de projet de test à l’aide du code suivant :
 

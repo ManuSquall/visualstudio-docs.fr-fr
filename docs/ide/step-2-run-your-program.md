@@ -1,26 +1,23 @@
 ---
-title: 'Étape 2 : Exécuter votre application visionneuse d’images'
+title: 'Étape 2 : Exécuter votre application visionneuse d’images'
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang:
-- csharp
-- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 772b80452c20d84b1145a5b8762365f2fe3a8e69
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887921"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118841"
 ---
-# <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : Exécuter votre application visionneuse d’images
+# <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : Exécuter votre application visionneuse d’images
 
 Lorsque vous créez un projet d’application Windows Forms, vous générez en fait un programme qui exécute. Dans ce didacticiel, votre application visionneuse d’images n’est&mdash;pas encore plus importante bien que cela soit le cas. Pour le moment, elle affiche une fenêtre vide qui affiche **Form1** dans la barre de titre.
 

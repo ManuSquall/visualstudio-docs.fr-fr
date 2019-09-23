@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73f8b69b120b1c21de92a8706eab0dbbcbb6e38e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 2f2587d621715e6e04edade779116e22d021072c
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703847"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128180"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Démarrage rapide : Analyser les données d’utilisation de l’UC dans Visual Studio (C++)
 
@@ -32,9 +32,9 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
-2. Sous **Visual C++**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console Windows**.
+2. Sous **Visual C++** , choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console Windows**.
 
-    Si vous ne voyez pas le modèle de projet **Application console Windows**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console Windows**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++** , puis choisissez **Modifier**.
 
 3. Tapez un nom tel que **Diagnostics_Démarrage_Natif** et cliquez sur **OK**.
 
@@ -186,5 +186,5 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929764"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062163"
 ---
 # <a name="code-analysis-faq"></a>FAQ sur l’analyse du code
 
@@ -24,15 +24,15 @@ Cette page contient des réponses à certaines questions fréquemment posées su
 
 **Q** : Dois-je utiliser l’analyse du code ou EditorConfig pour vérifier le style du code ?
 
-**R** : L’analyse du code et les fichiers. editorconfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier. editorconfig](../ide/editorconfig-code-style-settings-reference.md) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent également être utilisés pour configurer des packages de l’analyseur NuGet, tels que les [analyseurs FxCop](configure-fxcop-analyzers.md).
+**R** : L’analyse du code et les fichiers EditorConfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent également être utilisés pour configurer des packages de l’analyseur NuGet, tels que les [analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig et ensembles de règles
 
-**Q** : Dois-je configurer mes analyseurs à l’aide d’un ensemble de règles ou d’un fichier. editorconfig ?
+**Q** : Dois-je configurer mes analyseurs à l’aide d’un ensemble de règles ou d’un fichier EditorConfig ?
 
-**R** : Les ensembles de règles et les fichiers. editorconfig sont des méthodes mutuellement exclusives pour configurer des analyseurs. Ils peuvent coexister. Les [ensembles de règles](analyzer-rule-sets.md) vous permettent d’activer et de désactiver des règles et de définir leur gravité. Les fichiers EditorConfig offrent d’autres méthodes de configuration des règles. Pour les analyseurs FxCop, les fichiers. editorconfig vous permettent de [définir les types de code à analyser](fxcop-analyzer-options.md). Pour les analyseurs intégrés à Visual Studio, les fichiers. editorconfig vous permettent de [définir les styles de code préférés](../ide/editorconfig-code-style-settings-reference.md) pour un code base.
+**R** : Les ensembles de règles et les fichiers EditorConfig peuvent coexister et peuvent tous deux être utilisés pour configurer des analyseurs. Les [ensembles de règles](analyzer-rule-sets.md) vous permettent d’activer et de désactiver des règles et de définir leur gravité. Les fichiers EditorConfig offrent d’autres méthodes de configuration des règles. Pour les analyseurs FxCop, les fichiers EditorConfig vous permettent de [définir les types de code à analyser](fxcop-analyzer-options.md). Pour les analyseurs de style de code intégrés à Visual Studio, les fichiers EditorConfig vous permettent de [définir les styles de code préférés](../ide/editorconfig-code-style-settings-reference.md) pour un code base.
 
-Outre les ensembles de règles et les fichiers. editorconfig, certains analyseurs sont configurés à l’aide de fichiers texte marqués comme [fichiers supplémentaires](../ide/build-actions.md#build-action-values) pour les C# compilateurs vb et.
+Outre les ensembles de règles et les fichiers EditorConfig, certains analyseurs sont configurés à l’aide de fichiers texte marqués comme [fichiers supplémentaires](../ide/build-actions.md#build-action-values) pour les C# compilateurs vb et.
 
 > [!NOTE]
 > Les fichiers EditorConfig ne peuvent pas être utilisés pour configurer l’analyse héritée, contrairement aux ensembles de règles.
