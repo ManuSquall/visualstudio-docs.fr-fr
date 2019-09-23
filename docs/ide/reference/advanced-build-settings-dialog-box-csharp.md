@@ -1,6 +1,6 @@
 ---
 title: Paramètres de génération avancés, boîte de dialogue (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461883"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186788"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de génération avancés, boîte de dialogue (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de build avancés, boîteC#de dialogue ()
 
-Utilisez la boîte de dialogue **Paramètres de génération avancés** du **Concepteur de projet** pour spécifier les propriétés avancées de configuration de build du projet. Cette boîte de dialogue s’applique aux projets [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] uniquement.
+Utilisez la boîte de dialogue **Paramètres de génération avancés** du **Concepteur de projet** pour spécifier les propriétés avancées de configuration de build du projet. Cette boîte de dialogue s' C# applique aux projets uniquement.
 
 ## <a name="general"></a>Général
 
@@ -30,19 +30,19 @@ Les options suivantes permettent de définir des paramètres généraux avancés
 
 **Version du langage**
 
-Spécifie la version du langage à utiliser. L’ensemble de fonctionnalités est différent pour chacune des versions. Cette option peut donc être utilisée pour forcer le compilateur à autoriser uniquement un sous-ensemble des fonctionnalités implémentées, ou à activer uniquement les fonctionnalités conformes à une norme existante. Ce paramètre a les options suivantes :
+::: moniker range=">=vs-2019"
 
-- **default**
+Renvoie à [/langversion (C# options du compilateur)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), qui fournit des informations sur la façon dont une version de langage par défaut est choisie en fonction du Framework cible d’un projet.
 
-   Cible la version actuelle.
+::: moniker-end
 
-- **ISO-1** et **ISO-2**
+::: moniker range="vs-2017"
 
-   Cible les fonctionnalités standard ISO-1 et ISO-2, respectivement.
+Spécifie la version du langage à utiliser. L’ensemble de fonctionnalités est différent pour chacune des versions. Cette option peut donc être utilisée pour forcer le compilateur à autoriser uniquement un sous-ensemble des fonctionnalités implémentées, ou à activer uniquement les fonctionnalités conformes à une norme existante.
 
-- **C# [numéro de version]**
+La valeur par défaut C# est 7,0.
 
-   Cible une version spécifique du langage C#. Pour plus d’informations, consultez [/langversion (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Rapport d’erreurs du compilateur interne**
 
@@ -97,4 +97,4 @@ Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse
 ## <a name="see-also"></a>Voir aussi
 
 - [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Générer, page du Concepteur de projets (C#)](../../ide/reference/build-page-project-designer-csharp.md)
