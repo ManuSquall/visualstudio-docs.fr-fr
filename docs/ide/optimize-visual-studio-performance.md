@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c34755fdffb9dd2084f9999aafb01bd6b9fdb4f0
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569847"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180125"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimiser les performances de Visual Studio
 
@@ -25,7 +25,7 @@ Cet article contient des suggestions à essayer si vous trouvez que Visual Studi
 
 ## <a name="upgrade-visual-studio"></a>Mettre à niveau Visual Studio
 
-Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ou [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement que dans Visual Studio 2015, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 et Visual Studio 2019 étant compatibles côte à côte avec Visual Studio 2015, vous ne perdrez rien en les essayant.
+Si vous utilisez Visual Studio 2015, téléchargez gratuitement [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ou [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) pour bénéficier de ses performances améliorées. Les solutions se chargent deux ou trois fois plus rapidement que dans Visual Studio 2015, les performances d’autres opérations ayant également été améliorées. Visual Studio 2017 et Visual Studio 2019 étant compatibles côte à côte avec Visual Studio 2015, vous ne perdrez rien en les essayant.
 
 ::: moniker range="vs-2017"
 

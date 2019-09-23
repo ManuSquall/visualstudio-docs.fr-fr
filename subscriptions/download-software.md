@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377837"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095408"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
 
 > [!NOTE]
-> Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’**abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Professional et un abonnement Visual Studio Test Professional associés au même ID de connexion, les téléchargements affichés sont ceux inclus dans l’abonnement Professional, même si vous consultez vos Avantages Dev Essentials.
+> Seuls les téléchargements inclus dans votre abonnement s’affichent dans la page [Téléchargements](https://my.visualstudio.com/downloads/featured).  Si vous avez plusieurs abonnements ou que vous êtes membre de plusieurs programmes, les téléchargements indiqués correspondent à l’**abonnement du niveau le plus élevé** que vous possédez, même si vous consultez actuellement un autre abonnement.  Par exemple, si vous avez un abonnement Visual Studio Enterprise et un abonnement Visual Studio Professional à la fois associés au même ID de connexion, les téléchargements affichés sont ceux inclus dans l’abonnement entreprise, même si vous êtes en train de consulter les avantages de votre abonnement professionnel.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Comment trouver des téléchargements dans le portail des abonnés ?
 Quand vous visitez la page [Téléchargements](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), les téléchargements les plus populaires s’affichent organisés en groupes par type de produit.  Vous pouvez sélectionner l’un des téléchargements les plus fréquents affichés, ou rechercher un produit à l’aide de la barre de recherche située en haut de la page.

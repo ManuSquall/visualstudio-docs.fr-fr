@@ -1,28 +1,33 @@
 ---
 title: 'Étape 3 : Ajouter un temporisateur'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e19e99bc6732ddadabdb3e308dcf8e0def41fa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416708"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118782"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Étape 3 : Ajouter un temporisateur
+
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base.
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Pour ajouter un temporisateur
 
@@ -30,6 +35,9 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+   > [!IMPORTANT]
+   > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      À présent, vous avez besoin d'une méthode qui compte réellement les secondes, telles qu'une minuterie, et qui déclenche un événement après la durée que vous spécifiez.
 
@@ -57,7 +65,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
      Vous venez d'ajouter une instruction `if else` qui permet à vos programmes de prendre des décisions. Une instruction `if else` se présente comme suit.
 
     > [!NOTE]
-    > L’exemple suivant est uniquement fourni à titre d’illustration, ne l’ajoutez pas à votre projet.
+    > L’exemple suivant est uniquement destiné à la démonstration : ne l’ajoutez pas à votre projet.
 
     ```vb
     If (something that your program will check) Then
@@ -102,10 +110,11 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
      La minuterie commence le compte à rebours. Lorsque le temps est écoulé, le questionnaire se termine et la réponse s'affiche. L'illustration suivante montre le questionnaire en cours.
 
-     ![Questionnaire mathématique en cours](../ide/media/express_addcountdown.png) Questionnaire mathématique en cours
+     ![Questionnaire mathématique en cours](../ide/media/express_addcountdown.png)<br/>
+*Questionnaire mathématique en cours*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Ajouter la méthode CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Pour passer à l’étape suivante du didacticiel, **consultez [étape 4 : Ajoutez la méthode](../ide/step-4-add-the-checktheanswer-parens-method.md)** méthode CheckTheAnswer ().
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).

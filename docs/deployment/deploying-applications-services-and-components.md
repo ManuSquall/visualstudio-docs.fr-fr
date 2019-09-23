@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533353"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128156"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Présentation du déploiement dans Visual Studio
 
-Quand vous déployez une application, un service ou un composant, vous le distribuez pour l’installer sur d’autres ordinateurs, appareils, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (De nombreux types d’application prennent en charge d’autres outils de déploiement comme l’outil de déploiement en ligne de commande ou NuGet qui ne sont pas décrits ici.)
+Quand vous déployez une application, un service ou un composant, vous le distribuez pour l’installer sur d’autres ordinateurs, appareils, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin. (De nombreux types d’applications prennent en charge d’autres outils de déploiement, tels que le déploiement de ligne de commande, qui ne sont pas décrits ici.)
 
 Consultez les guides de démarrage rapide et les tutoriels pour obtenir des instructions de déploiement pas à pas. Pour une vue d’ensemble des options de déploiement, consultez [Quelles options de publication choisir ?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     ![Choisir Publier](../deployment/media/quickstart-publish.png)
 
-- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : vous pouvez publier une application Windows Desktop sur un dossier avec un déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/CLI, consultez [déployer une application native à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou,C++pour C/, consultez [déployer une application native à l’aide d’un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
@@ -83,7 +83,7 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     Vous pouvez également déployer des applications et services ASP.NET de plusieurs autres façons. Pour plus d’informations, consultez [Déploiement d’applications et services web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Windows Desktop** : Vous pouvez publier une application Windows Desktop sur un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# et Visual Basic). Pour C++/CLI, consultez [déployer une application native à l’aide de ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou,C++pour C/, consultez [déployer une application native à l’aide d’un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publier sur Microsoft Store
 
@@ -93,9 +93,16 @@ Le déploiement dans un dossier local est généralement utilisé pour les tests
 
     ![Créer un package d'application](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Bureau Windows** : vous pouvez effectuer un déploiement sur Microsoft Store à l’aide du Pont du bureau à partir de la version 15.4 de Visual Studio 2017. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Bureau Windows** : Vous pouvez effectuer le déploiement sur le Microsoft Store à partir de Visual Studio 2017 version 15,4. Pour ce faire, commencez par créer un projet de création de packages d’application Windows. Pour plus d’informations, consultez [empaquetage d’une application de bureau pour Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Pont du bureau](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Empaqueter une application de bureau](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Déployer des packages .NET sur NuGet.org
+
+Pour déployer du code groupé dans des « packages » contenant du code compilé (sous forme de DLL) ainsi que d’autres contenus nécessaires dans les projets qui consomment ces packages, vous pouvez utiliser Visual Studio pour créer le package NuGet et un outil CLI pour émettre la commande de déploiement finale.
+
+- [Créer et publier un package .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Créer et publier un package .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Déployer sur un appareil (UWP)
 

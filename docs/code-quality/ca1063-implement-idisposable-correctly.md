@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 837659ca24eb66995626668185500db7bc32bbd7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820622"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547375"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 
@@ -29,76 +29,76 @@ ms.locfileid: "66820622"
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Category|Microsoft.Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Le <xref:System.IDisposable?displayProperty=nameWithType> interface n’est pas implémentée correctement. Raisons possibles sont les suivantes :
+L' <xref:System.IDisposable?displayProperty=nameWithType> interface n’est pas implémentée correctement. Les raisons possibles sont les suivantes :
 
-- <xref:System.IDisposable> est réimplémentée dans la classe.
+- <xref:System.IDisposable>est réimplémentée dans la classe.
 
-- Finaliser est reoverridden.
+- `Finalize`est de nouveau remplacé.
 
-- Dispose() est remplacée.
+- `Dispose()`est substitué.
 
-- La méthode Dispose() n’est pas publique, [sealed](/dotnet/csharp/language-reference/keywords/sealed), ou nommé **Dispose**.
+- La `Dispose()` méthode n’est pas publique, [sealed](/dotnet/csharp/language-reference/keywords/sealed)ou **dispose**nommée.
 
-- Dispose (bool) n’est pas protégé, virtuel ou non scellé.
+- `Dispose(bool)`n’est pas protégé, virtuel ou non scellé.
 
-- Dans les types non scellés, Dispose() doit appeler Dispose (true).
+- Dans les types non scellés `Dispose()` , doit `Dispose(true)`appeler.
 
-- Pour les types unsealed, l’implémentation Finalize n’appelle pas un ou les deux dispose (bool) ou le finaliseur de la classe de base.
+- Pour les types non scellés, `Finalize` l’implémentation n’appelle pas ou les `Dispose(bool)` deux ou le finaliseur de la classe de base.
 
-Violation de l’un de ces modèles déclenche l’avertissement CA1063.
+La violation de l’un de ces modèles déclenche l’avertissement CA1063.
 
-Chaque type unsealed qui déclare et implémente la <xref:System.IDisposable> interface doit fournir son propre `protected virtual void Dispose(bool)` (méthode). `Dispose()` doit appeler `Dispose(true)`, et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type unsealed qui déclare et implémente la <xref:System.IDisposable> interface, vous devez définir `Dispose(bool)` et appelez-le. Pour plus d’informations, consultez [nettoyer les ressources non managées (guide .NET)](/dotnet/standard/garbage-collection/unmanaged) et [modèle Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Chaque type non scellé qui déclare et implémente l' <xref:System.IDisposable> interface doit fournir sa propre `protected virtual void Dispose(bool)` méthode. `Dispose()`doit appeler `Dispose(true)`et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type non scellé qui déclare et implémente l’interface, <xref:System.IDisposable> vous devez le définir `Dispose(bool)` et l’appeler. Pour plus d’informations, consultez [nettoyer les ressources non managées (Guide .net)](/dotnet/standard/garbage-collection/unmanaged) et [supprimer le modèle](/dotnet/standard/design-guidelines/dispose-pattern).
 
-Par défaut, cette règle examine uniquement les types visibles de l’extérieur, mais il s’agit de [configurable](#configurability).
+Par défaut, cette règle recherche uniquement les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Tous les <xref:System.IDisposable> types doivent implémenter le [modèle Dispose](/dotnet/standard/design-guidelines/dispose-pattern) correctement.
+Tous <xref:System.IDisposable> les types doivent implémenter le [modèle dispose](/dotnet/standard/design-guidelines/dispose-pattern) correctement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Examinez votre code et déterminer lequel des solutions suivantes corrigera cette violation :
+Examinez votre code et déterminez laquelle des solutions suivantes corrigera cette violation :
 
-- Supprimer <xref:System.IDisposable> dans la liste des interfaces qui sont implémentées par votre type et substituez l’implémentation de Dispose de la classe de base à la place.
+- Supprimez <xref:System.IDisposable> de la liste des interfaces implémentées par votre type et substituez l’implémentation de la classe de base à la place.
 
-- Supprimer le finaliseur de votre type, substituez Dispose (bool disposing) et placez la logique de finalisation dans le chemin d’accès du code où 'disposing' a la valeur false.
+- Supprimez le finaliseur de votre type, substituez Dispose (bool disposing) et placez la logique de finalisation dans le chemin du code où’disposing’a la valeur false.
 
-- Substituez Dispose (bool disposing) et placez la logique dispose dans le chemin d’accès du code où 'disposing' a la valeur true.
+- Substituez dispose (bool disposing) et placez la logique dispose dans le chemin du code où’disposing’a la valeur true.
 
-- Assurez-vous que Dispose() est déclaré comme public et [sealed](/dotnet/csharp/language-reference/keywords/sealed).
+- Assurez-vous que dispose () est déclaré comme public et [sealed](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Renommer votre méthode dispose pour **Dispose** et assurez-vous qu’il est déclaré comme public et [sealed](/dotnet/csharp/language-reference/keywords/sealed).
+- Renommez votre méthode dispose en **dispose** et assurez-vous qu’elle est déclarée comme public et [sealed](/dotnet/csharp/language-reference/keywords/sealed).
 
-- Vérifiez que dispose (bool) est déclaré comme protected, virtuel et non scellé.
+- Assurez-vous que dispose (bool) est déclaré comme protégé, virtuel et non scellé.
 
-- Modifier Dispose() afin qu’il appelle Dispose (true), puis appelle <xref:System.GC.SuppressFinalize%2A> sur l’instance d’objet actuelle (`this`, ou `Me` en Visual Basic), puis retourne.
+- Modifiez dispose () afin qu’il appelle Dispose (true), puis appelle <xref:System.GC.SuppressFinalize%2A> sur l’instance d’objet actuelle`this`(ou `Me` dans Visual Basic), puis retourne.
 
 - Modifiez votre finaliseur afin qu’il appelle Dispose (false), puis retourne.
 
-- Si vous créez un type unsealed qui déclare et implémente la <xref:System.IDisposable> l’interface, assurez-vous que l’implémentation de <xref:System.IDisposable> suit le modèle qui est décrite plus haut dans cette section.
+- Si vous créez un type non scellé qui déclare et implémente l' <xref:System.IDisposable> interface, assurez-vous que l’implémentation de <xref:System.IDisposable> suit le modèle décrit plus haut dans cette section.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="configurability"></a>Possibilités de configuration
+## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir de [analyseurs FxCop](install-fxcop-analyzers.md) (et non par le biais d’analyse statique du code), vous pouvez configurer les parties de votre codebase pour exécuter cette règle sur, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement par rapport à la surface d’API non publics, ajoutez la paire clé-valeur suivante dans un fichier .editorconfig dans votre projet :
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 
-Vous pouvez configurer cette option pour simplement cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [analyseurs FxCop configurer](configure-fxcop-analyzers.md).
+Vous pouvez configurer cette option uniquement pour cette règle, pour toutes les règles ou pour toutes les règles de cette catégorie (conception). Pour plus d’informations, consultez [configurer les analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="pseudo-code-example"></a>Exemple de pseudo-code
 
-Le pseudo-code suivant fournit un exemple général de la manière dont dispose (bool) doit être implémentée dans une classe qui utilise managée et les ressources natives.
+Le pseudo-code suivant fournit un exemple général de la façon dont la méthode Dispose (bool) doit être implémentée dans une classe qui utilise des ressources managées et natives.
 
 ```csharp
 public class Resource : IDisposable
@@ -146,5 +146,5 @@ public class Resource : IDisposable
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Dispose, modèle (instructions de conception de framework)](/dotnet/standard/design-guidelines/dispose-pattern)
-- [Nettoyer les ressources non managées (guide .NET)](/dotnet/standard/garbage-collection/unmanaged)
+- [Modèle de suppression (instructions de conception d’infrastructure)](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Nettoyer les ressources non managées (Guide .NET)](/dotnet/standard/garbage-collection/unmanaged)

@@ -1,51 +1,53 @@
 ---
 title: 'Étape 3 : Définir les propriétés de votre formulaire'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e2742103585321b4f752a74e53253409e449bcf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918824"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118967"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
+
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.
 
-![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Turoriel 1 : Créer une visionneuse d’images en Visual Basic – vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutoriel 1 : Créer une visionneuse d'images en C# - Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
-
-## <a name="to-set-your-form-properties"></a>Pour définir les propriétés de votre formulaire
+## <a name="how-to-set-your-form-properties"></a>Comment définir les propriétés de votre formulaire
 
 1. Vérifiez que vous êtes dans le **Concepteur Windows Forms**. Dans l’environnement de développement intégré (IDE) de Visual Studio, choisissez l’onglet **Form1.cs [Design]** (ou l’onglet **Form1.vb [Design]** dans Visual Basic).
 
-2. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
+1. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
 
    > [!NOTE]
-   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre programme en choisissant le bouton carré **Arrêter le débogage** dans la barre d’outils, ou fermez simplement la fenêtre. Si le programme est arrêté et que la fenêtre **Propriétés** n’apparaît toujours pas, dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés**.
+   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher** > la**fenêtre Propriétés**.
 
-3. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Texte**, tapez **Visionneuse d’images**, puis appuyez sur **Entrée**.  Le texte **Visionneuse d’images** doit maintenant s’afficher dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à l’image suivante.
+1. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Texte**, tapez **Visionneuse d’images**, puis appuyez sur **Entrée**.  La **visionneuse d’images** de texte doit maintenant être présente dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à la capture d’écran suivante.
 
-    ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png)
-   Fenêtre **Propriétés**
+    ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png)<br>
+   ***Propriétés*** de *fenêtre*
 
    > [!NOTE]
    > Les propriétés peuvent être classées selon une vue **Par catégorie** ou **Alphabétique**. Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce tutoriel, il est plus facile de rechercher des propriétés via la vue **Alphabétique**.
 
-4. Revenez au **Concepteur Windows Forms**. Sélectionnez la poignée de déplacement située dans l'angle inférieur droit du formulaire, c'est-à-dire le petit carré blanc présenté ci-dessous.
+1. Revenez au **Concepteur Windows Forms**. Sélectionnez la poignée de déplacement située dans l'angle inférieur droit du formulaire, c'est-à-dire le petit carré blanc présenté ci-dessous.
 
-    ![Poignée de déplacement](../ide/media/express_bottomrt_drag.png) Poignée de déplacement
+    ![Faire glisser la poignée](../ide/media/express_bottomrt_drag.png)<br>
+   *Faire glisser la poignée*
 
     Faites glisser la poignée pour redimensionner le formulaire et le rendre plus large et un peu plus grand.
 
-5. Dans la fenêtre **Propriétés**, vous pouvez observer que la propriété **Size** a changé. En effet, la propriété **Size** change dès que vous redimensionnez le formulaire. Essayez de faire glisser la poignée du formulaire pour lui donner une taille adaptée à ce projet, soit environ **550, 350** (l'exactitude n'est pas nécessaire). Vous pouvez également entrer les valeurs directement dans la propriété **Size**, puis choisir la touche **Entrée**.
+1. Dans la fenêtre **Propriétés**, vous pouvez observer que la propriété **Size** a changé. En effet, la propriété **Size** change dès que vous redimensionnez le formulaire. Essayez de faire glisser la poignée du formulaire pour lui donner une taille adaptée à ce projet, soit environ **550, 350** (l'exactitude n'est pas nécessaire). Vous pouvez également entrer les valeurs directement dans la propriété **Size**, puis choisir la touche **Entrée**.
 
-6. Exécutez à nouveau votre programme. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour exécuter votre programme.
+1. Exécutez à nouveau votre application. N’oubliez pas que vous pouvez utiliser l’une des méthodes suivantes pour exécuter votre application.
 
    - Choisissez la touche **F5**.
 
@@ -53,21 +55,28 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
    - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage**, qui se présente comme suit.
 
-      ![Bouton de barre d’outils Démarrer le débogage](../ide/media/express_icondebug.png)
-     Bouton de barre d’outils **Démarrer le débogage**
+      ![Bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
+     ***Démarrer le débogage*** *bouton de barre d’outils*
 
-     Comme auparavant, l'IDE génère et exécute votre programme, et une fenêtre s'affiche.
+     Comme auparavant, l’IDE génère et exécute votre application, et une fenêtre s’affiche.
 
-7. Avant de passer à l'étape suivante, arrêtez votre programme, car l'IDE ne vous autorisera pas à le modifier tant qu'il est en cours d'exécution. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour arrêter votre programme.
+1. Avant de passer à l’étape suivante, arrêtez votre application, car l’IDE ne vous permettra pas de modifier votre application pendant son exécution. N’oubliez pas que vous pouvez utiliser l’une des méthodes suivantes pour arrêter votre application.
 
    - Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.
 
    - Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
 
-   - Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
+   - À l’aide de votre clavier, appuyez sur **MAJ**+**F5**.
 
-## <a name="to-continue-or-review"></a>Pour continuer ou examiner
+   - Cliquez sur le bouton **X** dans l’angle supérieur de la fenêtre de la **visionneuse d’images** .
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+## <a name="next-steps"></a>Étapes suivantes
 
-- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
+* Pour passer à l’étape suivante du didacticiel, **consultez [étape 4 : Composez votre formulaire avec un contrôle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
+
+* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécutez votre application](../ide/step-2-run-your-program.md)visionneuse d’images.
+
+## <a name="see-also"></a>Voir aussi
+
+* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)

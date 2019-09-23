@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906047"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987750"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l'interface utilisateur de votre application XAML en cours d'exécution et montrent les propriétés d'exécution de tout élément d'interface utilisateur que vous sélectionnez.
@@ -23,7 +23,7 @@ Vous pouvez utiliser ces outils dans les configurations suivantes :
 |Type d'application|Système d'exploitation et outils|
 |-----------------|--------------------------------|
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|
-|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
+|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
 
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examen des éléments dans l'arborescence d'éléments visuels dynamique
 Commençons par une application WPF très simple qui présente une vue Liste et un bouton. Chaque fois que vous cliquez sur le bouton, un autre élément est ajouté à la liste. Les éléments avec un numéro pair sont en gris, tandis que les éléments avec un numéro impair sont en jaune.
@@ -71,13 +71,13 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Générez le projet et commencez le débogage. (La configuration de build doit être Debug, et non pas Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).)
 
-Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Vous devez voir quelque chose de similaire à :
+Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Le résultat suivant devrait s'afficher :
 
-![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
+![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")
 
 À présent, ouvrez la fenêtre **Arborescence d’éléments visuels en direct** (**Déboguer > Fenêtres > Arborescence d’éléments visuels en direct** ou recherchez-la sur le côté gauche de l’IDE). Faites-la glisser hors de sa position d’ancrage afin de la positionner à côté de la fenêtre **Propriétés dynamiques**. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste. La fenêtre doit ressembler à ceci :
 
-![ListBoxItems dans l’arborescence d’éléments visuels en direct](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
+![ListBoxItem dans l’arborescence d’éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
 
 Revenez à la fenêtre d'application et ajoutez quelques éléments. Vous devriez voir des éléments de zone de liste supplémentaires dans l’**arborescence d’éléments visuels en direct**.
 
@@ -103,3 +103,7 @@ Vous pouvez utiliser ces outils XAML même quand vous ne disposez pas du code so
 3. L'application démarre.
 
 4. Dans la deuxième instance de Visual Studio, ouvrez l’**arborescence d’éléments visuels en direct** (**Déboguer > Fenêtres > Arborescence d’éléments visuels en direct**). Vous devez voir les éléments d’interface utilisateur **TestXaml** et vous devez pouvoir les manipuler comme vous l’avez fait lors du débogage direct de l’application.
+
+## <a name="see-also"></a>Voir aussi
+
+[Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](xaml-hot-reload.md)

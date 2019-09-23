@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160053"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551429"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -105,6 +105,8 @@ Définit le fichier *.ico* à utiliser comme icône de votre programme. Cliquez 
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
+Pour plus d’informations sur la création d’une icône, consultez [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons).
+
 **Manifest**
 
 Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :
@@ -120,3 +122,5 @@ Sélectionne une option de génération de manifeste quand l’application s’e
 Sélectionnez cette case d’option, sauf si vous fournissez un fichier de ressources pour le projet. Cette option désactive les options **Icône** et **Manifeste**.
 
 Entrez un nom de chemin ou utilisez le bouton Parcourir ( **...** ) pour ajouter un fichier de ressources Win32 au projet.
+
+Pour plus d’informations, consultez [Créer des fichiers de ressources pour les applications .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

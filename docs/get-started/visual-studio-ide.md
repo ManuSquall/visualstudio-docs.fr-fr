@@ -9,17 +9,16 @@ author: gewarren
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-- MSDNSTART
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe4735dac41b4bdd85e85e2987f242e96fcfff9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 323f941ddb4672de8d52d56cf4e07910531c3df8
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966241"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095390"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
@@ -43,7 +42,7 @@ Si vous êtes prêt à aller plus loin dans le codage, l’un des guides de dém
 
 - [Utiliser Visual Studio pour créer votre première application Node.js](../ide/quickstart-nodejs.md)
 
-- [Bien démarrer avec C++ dans Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Utiliser Visual Studio pour créer votre première C++ application console](/cpp/get-started/tutorial-console-cpp)
 
 ## <a name="see-also"></a>Voir aussi
 

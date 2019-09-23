@@ -1,7 +1,6 @@
 ---
 title: Publier dans un dossier
 ms.date: 01/22/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +8,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 9fbcdb0bd9b9bab2afc69a8896cc00bedb98998b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff8635db2b472ee3dd79e9082de9d9cc6bd555cb
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991513"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222679"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publier une application web sur un dossier à l’aide de Visual Studio pour Mac
 

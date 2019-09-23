@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703876"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128173"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : Analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
-1. Sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET (.NET Framework)**.
+1. Sous **Visual C#** , choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET (.NET Framework)** .
 
     Si vous ne voyez pas le modèle de projet **Application web ASP.NET**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
 
@@ -228,5 +228,5 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

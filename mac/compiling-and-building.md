@@ -1,26 +1,42 @@
 ---
 title: Compilation et génération
 description: Cet article décrit comment compiler et générer des projets et des solutions dans Visual Studio pour Mac
+ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 0165594b4c2d77005c2a9ef921cce457f6f2d0f6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693123"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128418"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilation et génération dans Visual Studio pour Mac
 
-Vous pouvez utiliser Visual Studio pour Mac pour générer des applications et créer des assemblys lors du développement de votre projet. Il est important de compiler et de générer votre code régulièrement afin de pouvoir identifier les incompatibilités de type et autres erreurs de compilation.
+Vous pouvez utiliser Visual Studio pour Mac pour générer des applications et créer des assemblys lors du développement de votre projet. Il est important de générer souvent votre code pour vous permettre d’identifier rapidement les incompatibilités de type, la syntaxe erronée, les mots clés mal orthographiés et d’autres erreurs au moment de la compilation. En générant et en déboguant, vous pouvez également rechercher et corriger les erreurs d’exécution, comme les erreurs liées à la logique, aux E/S et à la division par zéro.
+
+Une génération réussie signifie que le code source contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le processus de génération produit un fichier exécutable de l’application. Ce fichier exécutable peut ensuite être testé via le débogage et différents types de tests manuels et automatisés pour valider la qualité du code. Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version à déployer auprès de vos clients.
+
+Sur Mac, vous pouvez utiliser l’une des méthodes suivantes pour générer votre application : Visual Studio pour Mac, outils en ligne de commande MSBuild ou Azure Pipelines.
+
+| Méthode de génération | Avantages |
+| --- |--- | --- |
+| Visual Studio pour Mac |- Créer des builds immédiatement et les tester dans un débogueur.<br />- Exécuter des builds multiprocesseurs pour des projets C#.<br />- Personnaliser différents aspects du système de génération. |
+| Ligne de commande MSBuild| - Générer des projets sans installer Visual Studio pour Mac.<br />- Exécuter des builds multiprocesseurs pour tous les types de projets.<br />- Personnaliser la plupart des éléments du système de génération.|
+| Azure Pipelines | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|
+
+La documentation de cette section contient plus de détails sur le processus de génération avec l’IDE. Pour plus d’informations sur la création d’applications à l’aide de la ligne de commande, consultez [MSBuild](/visualstudio/msbuild/msbuild). Pour plus d’informations sur la création d’applications avec Azure Pipelines, consultez [Azure Pipelines](/azure/devops/pipelines).
+
+
+> [!NOTE]
+> Cette rubrique s’applique à Visual Studio pour Mac. Pour Visual Studio sur Windows, consultez [Compiler et générer dans Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).
+
 
 ## <a name="building-from-the-ide"></a>Génération à partir de l'IDE
 
-Vous pouvez utiliser Visual Studio pour Mac pour créer et exécuter des builds instantanément, tout en gardant le contrôle sur les fonctionnalités de génération. Visual Studio pour Mac utilise MSBuild comme système de génération sous-jacent.
-
-Tous les projets et toutes les solutions créées dans l’IDE ont une configuration de build par défaut, qui définit le contexte des builds. Vous pouvez modifier ces configurations ou créer les vôtres. La création ou la modification de ces configurations met automatiquement à jour le fichier projet, qui est ensuite utilisé par MSBuild pour générer votre projet.
+Vous pouvez utiliser Visual Studio pour Mac pour créer et exécuter des builds instantanément, tout en gardant le contrôle sur les fonctionnalités de génération. Lorsque vous créez un projet, Visual Studio pour Mac définit une configuration de build par défaut qui définit le contexte pour les builds. Vous pouvez modifier les configurations de build par défaut et également créer les vôtres. La création ou la modification de ces configurations met automatiquement à jour le fichier projet, qui est ensuite utilisé par MSBuild pour générer votre projet.
 
 Pour plus d’informations sur la génération de projets et de solutions dans l’IDE, consultez le guide [Génération et nettoyage des projets et des solutions](building-and-cleaning-projects-and-solutions.md).
 
@@ -38,16 +54,6 @@ Vous pouvez aussi utiliser Visual Studio pour Mac pour :
 
     ![Ajouter des commandes personnalisées](media/compiling-and-building-image6.png)
 
-## <a name="building-from-command-line"></a>Génération à partir de la ligne de commande
-
-Vous pouvez utiliser le moteur de génération MSBuild pour générer des applications via la ligne de commande.
-
-Pour plus d’informations sur l’utilisation de MSBuild, consultez [MSBuild](/visualstudio/msbuild/msbuild).
-
-## <a name="building-from-azure-pipelines"></a>Génération à partir d’Azure Pipelines
-
-* [Générer votre application Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
-* [Intégration continue avec Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)
 
 ## <a name="see-also"></a>Voir aussi
 

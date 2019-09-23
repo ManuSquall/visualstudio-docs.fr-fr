@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945012"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551187"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Définir les valeurs par défaut des déploiements d’entreprise de Visual Studio
 
@@ -50,11 +50,12 @@ Certaines valeurs de Registre sont définies automatiquement la première fois q
 
 Vous pouvez définir les valeurs de Registre suivantes :
 
-| **Name** | **Type** | **Default** | **Description** |
+| **Nom** | **Type** | **Par défaut** | **Description** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Répertoire dans lequel les manifestes de package et, éventuellement, les charges utiles sont stockés. Pour plus d’informations, consultez la page [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Conservation des charges utiles de package même après leur installation. Vous pouvez modifier la valeur à tout moment. La désactivation de la stratégie supprime les charges utiles de package en cache pour l’instance que vous réparez ou modifiez. Pour plus d’informations, consultez la page [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Répertoire dans lequel des packages partagés entre les versions ou instances de Visual Studio sont installés. Vous pouvez modifier la valeur à tout moment, mais cela n’affectera que les installations futures. Les produits déjà installés à l’ancien emplacement ne doivent pas être déplacés ou ils risquent de ne pas fonctionner correctement. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Empêche le programme d’installation de télécharger automatiquement les mises à jour pour tous les produits Visual Studio installés. Vous pouvez modifier la valeur à tout moment. |
 
 > [!IMPORTANT]
 > Si vous modifiez la stratégie de Registre `CachePath` après une installation, vous devez déplacer le cache du package existant vers le nouvel emplacement et vérifier qu’il est sécurisée pour que `SYSTEM` et `Administrators` disposent d’un contrôle total et `Everyone` d’un accès en lecture.
@@ -64,6 +65,6 @@ Vous pouvez définir les valeurs de Registre suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Installer Visual Studio](install-visual-studio.md)
+- [Installation de Visual Studio](install-visual-studio.md)
 - [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md)
 - [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

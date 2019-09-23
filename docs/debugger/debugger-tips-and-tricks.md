@@ -1,6 +1,6 @@
 ---
 title: Trucs et astuces dans le débogueur
-description: En savoir plus sur certaines des fonctionnalités connues prises en charge par le débogueur Visual Studio
+description: En savoir plus sur certaines des fonctionnalités moins connues prises en charge par le débogueur Visual Studio
 ms.custom: seodec18
 ms.date: 06/15/2018
 ms.topic: conceptual
@@ -14,160 +14,164 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db966d2c0ac048bd650500ed6ab191e6bc867e36
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043309"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987761"
 ---
-# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
+# <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des trucs et astuces de productivité pour le débogueur dans Visual Studio
 
-Lisez cette rubrique pour découvrir quelques conseils de productivité et des conseils le débogueur Visual Studio. Pour examiner les fonctionnalités de base du débogueur, consultez [tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous abordons certaines zones qui ne sont pas inclus dans la visite guidée des fonctionnalités.
+Lisez cette rubrique pour en savoir plus sur les astuces et astuces de productivité pour le débogueur Visual Studio. Pour découvrir les fonctionnalités de base du débogueur, consultez tout d' [abord le débogueur](../debugger/debugger-feature-tour.md). Dans cette rubrique, nous aborderons certains domaines qui ne sont pas inclus dans la visite guidée des fonctionnalités.
 
-## <a name="pin-data-tips"></a>Code confidentiel des bulles d’informations
+## <a name="pin-data-tips"></a>Épingler des conseils sur les données
 
-Si vous survolez fréquemment des bulles d’informations pendant le débogage, vous souhaiterez épingler la bulle pour la variable accéder rapidement. La variable reste épinglée même après le redémarrage. Pour épingler l’info-bulle de données, cliquez sur l’icône d’épingle tout en pointant dessus. Vous pouvez épingler plusieurs variables.
+Si vous pointez fréquemment sur des conseils de données pendant le débogage, vous souhaiterez peut-être épingler la bulle de données de la variable pour obtenir un accès rapide. La variable reste épinglée même après le redémarrage. Pour épingler la bulle de données, cliquez sur l’icône d’épingle en pointant dessus. Vous pouvez épingler plusieurs variables.
 
-![L’épinglage d’une bulle](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+![Épinglage d’une bulle d’informations](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (c#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifier votre code et continuer le débogage (C#, VB, C++)
 
-Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et continuer le débogage. Pour utiliser cette fonctionnalité, cliquez sur dans votre code avec votre curseur pendant la suspension dans le débogueur, vérifiez les modifications, puis appuyez sur **F5**, **F10**, ou **F11** pour continuer le débogage.
+Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et poursuivre le débogage. Pour utiliser cette fonctionnalité, cliquez sur votre code à l’aide de votre curseur tout en étant suspendu dans le débogueur, apportez des modifications, puis appuyez sur **F5**, **F10**ou **F11** pour continuer le débogage.
 
-![Modifier et continuer le débogage](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+![Modifier & continuer le débogage](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
-Pour plus d’informations sur l’utilisation de la fonctionnalité et sur les limitations de fonctionnalités, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
+Pour plus d’informations sur l’utilisation de la fonctionnalité et sur les limitations relatives aux fonctionnalités, consultez [modifier & continuer](../debugger/edit-and-continue.md).
 
-## <a name="debug-issues-that-are-hard-to-reproduce"></a>Résoudre les problèmes qui sont difficiles à reproduire
+## <a name="edit-xaml-code-and-continue-debugging"></a>Modifier le code XAML et continuer le débogage
 
-S’il est difficile ou du temps recréer un état particulier dans votre application, considérez que l’utilisation d’un point d’arrêt conditionnel peut aider à. Vous pouvez utiliser [points d’arrêt conditionnels](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) et filtrer des points d’arrêt pour éviter de rompre dans votre code d’application jusqu'à ce que l’application passe à l’état souhaité (par exemple, un état dans lequel une variable stocke des données incorrectes). Vous pouvez définir des conditions à l’aide d’expressions, les filtres, les nombres d’accès et ainsi de suite.
+Pour modifier le code XAML pendant une session de débogage, consultez [écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](xaml-hot-reload.md).
+
+## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problèmes de débogage difficiles à reproduire
+
+S’il est difficile ou fastidieux de recréer un état particulier dans votre application, déterminez si l’utilisation d’un point d’arrêt conditionnel peut être utile. Vous pouvez utiliser des points d’arrêt [conditionnels](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) et filtrer les points d’arrêt pour éviter une rupture dans le code de votre application jusqu’à ce que l’application entre dans un état souhaité (par exemple, un État dans lequel une variable stocke des données incorrectes). Vous pouvez définir des conditions à l’aide d’expressions, de filtres, de nombres d’accès, etc.
 
 #### <a name="to-create-a-conditional-breakpoint"></a>Pour créer un point d’arrêt conditionnel
 
-1. Cliquez sur une icône de point d’arrêt (la balle rouge) et choisissez **Conditions**.
+1. Cliquez avec le bouton droit sur une icône de point d’arrêt (la boule rouge) et choisissez **conditions**.
 
-2. Dans le **les paramètres de point d’arrêt** fenêtre, tapez une expression.
+2. Dans la fenêtre **paramètres de point d’arrêt** , tapez une expression.
 
     ![Point d’arrêt conditionnel](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. Si vous êtes intéressé par un autre type de condition, sélectionnez **filtre** au lieu de **expression conditionnelle** dans le **les paramètres de point d’arrêt** boîte de dialogue, puis suivez les conseils de filtre.
+3. Si vous êtes intéressé par un autre type de condition, sélectionnez **filtre** au lieu de **expression conditionnelle** dans la boîte de dialogue **paramètres de point d’arrêt** , puis suivez les conseils de filtre.
 
 ## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurer les données à afficher dans le débogueur
 
-Pour C#, Visual Basic, et C++ (C++code /CLI uniquement), vous pouvez demander au débogueur que les informations à afficher à l’aide de la [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) attribut. Pour C++ code, vous pouvez effectuer la même utilisation [visualisations Natvis](create-custom-views-of-native-objects.md).
+Pour C#, Visual Basic et C++ (C++code/CLI uniquement), vous pouvez indiquer au débogueur les informations à afficher à l’aide de l’attribut [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) . Pour C++ le code, vous pouvez faire de même avec les [visualisations Natvis](create-custom-views-of-native-objects.md).
 
 ## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 
-Avec le débogueur en pause sur une ligne de code, utilisez la souris pour obtenir le pointeur de la flèche jaune à gauche. Déplacez le pointeur de la flèche jaune vers un autre point dans le chemin d’accès de l’exécution de code. Puis vous utilisez F5 ou une commande d’étape pour poursuivre l’exécution de l’application.
+Lorsque le débogueur est suspendu sur une ligne de code, utilisez la souris pour saisir le pointeur en forme de flèche jaune sur la gauche. Déplacez le pointeur en forme de flèche jaune vers un autre point dans le chemin d’exécution du code. Ensuite, vous utilisez F5 ou une commande Step pour continuer à exécuter l’application.
 
-![Déplacer le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "déplacer le pointeur d’exécution")
+![Déplacer le pointeur d’exécution](../debugger/media/dbg-tour-move-the-execution-pointer.gif "Déplacer le pointeur d’exécution")
 
 En changeant le flux d’exécution, vous pouvez effectuer des opérations comme tester d’autres chemins d’exécution du code ou réexécuter du code sans devoir redémarrer le débogueur.
 
 > [!WARNING]
-> Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
+> Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Le déplacement du pointeur ne peut pas rétablir l’état antérieur de votre application.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (c#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (C#, Visual Basic)
 
-Il est facile d’afficher des variables à l’aide des fenêtres du débogueur, comme le **espion** fenêtre. Toutefois, quand une variable est hors de portée dans le **espion** fenêtre, vous pouvez remarquer qu’il est grisé. Dans certains scénarios d’application, la valeur d’une variable peut changer même lorsque la variable est hors de portée, et vous pouvez souhaiter surveiller de près (par exemple, une variable peut obtenir la garbage collection). Vous pouvez suivre la variable en créant un ID d’objet pour celui-ci dans le **espion** fenêtre.
+Il est facile d’afficher des variables à l’aide de fenêtres du débogueur, comme la fenêtre **Espion** . Toutefois, lorsqu’une variable sort de l’étendue dans la fenêtre **Espion** , vous pouvez remarquer qu’elle est grisée. Dans certains scénarios d’application, la valeur d’une variable peut changer même lorsque la variable est hors de portée, et vous souhaiterez peut-être la regarder en détail (par exemple, une variable peut obtenir le garbage collector). Vous pouvez suivre la variable en créant un ID d’objet pour celle-ci dans la fenêtre **Espion** .
 
 #### <a name="to-create-an-object-id"></a>Pour créer un ID d’objet
 
-1. Définissez un point d’arrêt quasi une variable que vous souhaitez suivre.
+1. Définissez un point d’arrêt à proximité d’une variable dont vous souhaitez effectuer le suivi.
 
-2. Démarrez le débogueur (**F5**) et arrêtez sur le point d’arrêt.
+2. Démarrez le débogueur (**F5**) et arrêtez au point d’arrêt.
 
-3. Recherchez la variable dans le **variables locales** fenêtre (**Déboguer > Windows > variables locales**), avec le bouton droit de la variable, puis sélectionnez **Make Object ID**.
+3. Recherchez la variable dans la fenêtre **variables locales** (**déboguer > les variables locales Windows >** ), cliquez avec le bouton droit sur la variable, puis sélectionnez **créer un ID d’objet**.
 
     ![Créer un ID d’objet](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
 4. Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
 
-5. Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
+5. Cliquez avec le bouton droit sur la variable d’ID d’objet et choisissez **Ajouter un espion**.
 
 Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
 ## <a name="view-return-values-for-functions"></a>Afficher les valeurs de retour pour les fonctions
 
-Pour afficher les valeurs de retour pour vos fonctions, examinez les fonctions qui s’affichent dans le **automatique** fenêtre pendant que vous avancerez dans votre code. Pour afficher la valeur de retour pour une fonction, assurez-vous que la fonction que vous êtes intéressé a déjà été exécutée (appuyez sur **F10** une fois si vous êtes actuellement arrêté sur l’appel de fonction). Si la fenêtre est fermée, utilisez **Déboguer > Windows > automatique** pour ouvrir le **automatique** fenêtre.
+Pour afficher les valeurs de retour de vos fonctions, examinez les fonctions qui s’affichent dans la fenêtre **automatique** pendant que vous exécutez pas à pas votre code. Pour afficher la valeur de retour d’une fonction, assurez-vous que la fonction qui vous intéresse a déjà été exécutée (appuyez sur **F10** une fois si vous êtes actuellement arrêté sur l’appel de fonction). Si la fenêtre est fermée, utilisez l' **> de débogage Windows > automatique** pour ouvrir la fenêtre **automatique** .
 
 ![Fenêtre Automatique](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
-En outre, vous pouvez entrer des fonctions dans le **immédiat** fenêtre pour afficher les valeurs de retour. (Ouvrir à l’aide de **Déboguer > Windows > exécution**.)
+En outre, vous pouvez entrer des fonctions dans la fenêtre **exécution** pour afficher les valeurs de retour. (Ouvrez-le à l’aide du **> de débogage Windows > immédiat**.)
 
 ![Fenêtre exécution](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-Vous pouvez également utiliser [pseudo-variables](../debugger/pseudovariables.md) dans le **espion** et **immédiat** fenêtre, tel que `$ReturnValue`.
+Vous pouvez également utiliser [Pseudo-variables](../debugger/pseudovariables.md) dans la fenêtre **Espion** et **exécution** , par exemple `$ReturnValue`.
 
 ## <a name="string_visualizer"></a>Inspecter des chaînes dans un visualiseur
 
-Lorsque vous travaillez avec des chaînes, il peut être utile de visualiser la totalité de la chaîne mise en forme. Pour afficher un texte brut, d’une chaîne XML, HTML ou JSON, cliquez sur l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur") tout en pointant sur une variable contenant une valeur de chaîne.
+Lorsque vous utilisez des chaînes, il peut être utile d’afficher l’intégralité de la chaîne mise en forme. Pour afficher une chaîne en texte brut, XML, HTML ou JSON, cliquez sur l’icône de loupe icône ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "visualiseur") tout en pointant sur une variable contenant une valeur de chaîne.
 
 ![Ouvrir un visualiseur de chaîne](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-Un visualiseur de chaîne peut-être vous aider à déterminer si une chaîne est mal formée, selon le type de chaîne. Par exemple, une valeur vide **valeur** champ indique la chaîne n’est pas reconnue par le type de visualiseur. Pour plus d’informations, consultez [visualiseur de chaîne, boîte de dialogue](../debugger/string-visualizer-dialog-box.md).
+Un visualiseur de chaîne peut vous aider à déterminer si une chaîne est incorrecte, selon le type de chaîne. Par exemple, un champ de **valeur** vide indique que la chaîne n’est pas reconnue par le type de visualiseur. Pour plus d’informations, consultez [boîte de dialogue visualiseur de chaîne](../debugger/string-visualizer-dialog-box.md).
 
 ![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Pour d’autres types tels que les objets DataSet et DataTable qui s’affichent dans les fenêtres du débogueur, vous pouvez également ouvrir un visualiseur intégré.
+Pour quelques autres types tels que les objets DataSet et DataTable qui apparaissent dans les fenêtres du débogueur, vous pouvez également ouvrir un visualiseur intégré.
 
-## <a name="break-into-code-on-handled-exceptions"></a>Diviser en code géré d’exceptions
+## <a name="break-into-code-on-handled-exceptions"></a>S’arrêter dans le code sur les exceptions gérées
 
-Le débogueur s’arrête dans votre code sur les exceptions non gérées. Toutefois, les exceptions gérées (telles que les exceptions qui se produisent dans un `try/catch` bloc) peut également être une source de bogues et vous pouvez souhaiter examiner quand elles se produisent. Vous pouvez configurer le débogueur s’arrête dans du code pour les exceptions ainsi en configurant les options dans le **paramètres d’Exception** boîte de dialogue. Ouvrez cette boîte de dialogue en choisissant **Déboguer > Windows > Paramètres d’Exception**.
+Le débogueur s’arrête dans votre code sur les exceptions non gérées. Toutefois, les exceptions gérées (telles que les exceptions qui `try/catch` se produisent dans un bloc) peuvent également être une source de bogues et vous pouvez effectuer des recherches quand elles se produisent. Vous pouvez configurer le débogueur pour qu’il s’arrête également dans le code pour les exceptions gérées, en configurant les options de la boîte de dialogue **paramètres d’exception** . Pour ouvrir cette boîte de dialogue, choisissez **Déboguer > paramètres d’exception Windows >** .
 
-Le **paramètres d’Exception** boîte de dialogue vous permet d’indiquer le débogueur s’arrête dans du code sur des exceptions spécifiques. Dans l’illustration ci-dessous, le débogueur s’arrête dans votre code chaque fois qu’un `System.NullReferenceException` se produit. Pour plus d’informations, consultez [gestion des exceptions](../debugger/managing-exceptions-with-the-debugger.md).
+La boîte de dialogue **paramètres d’exception** vous permet d’indiquer au débogueur de s’arrêter dans du code sur des exceptions spécifiques. Dans l’illustration ci-dessous, le débogueur s’arrête dans votre `System.NullReferenceException` code chaque fois qu’un événement se produit. Pour plus d’informations, consultez [gestion des exceptions](../debugger/managing-exceptions-with-the-debugger.md).
 
 ![Boîte de dialogue Paramètres d’exception](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
-## <a name="debug-deadlocks-and-race-conditions"></a>Déboguer les interblocages et conditions de concurrence
+## <a name="debug-deadlocks-and-race-conditions"></a>Déboguer les blocages et les conditions de concurrence
 
-Si vous avez besoin de déboguer les types de problèmes qui sont communes aux applications multithreads, souvent vous pour permet d’afficher l’emplacement de threads pendant le débogage. Vous pouvez le faire facilement en utilisant le **afficher les Threads dans la Source** bouton.
+Si vous avez besoin de déboguer les genres de problèmes communs aux applications multithread, il est souvent utile d’afficher l’emplacement des threads pendant le débogage. Vous pouvez le faire facilement à l’aide du bouton **afficher les threads dans la source** .
 
 #### <a name="to-show-threads-in-your-source-code"></a>Pour afficher les threads dans votre code source
 
-1. Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
+1. Pendant le débogage, cliquez sur le bouton **afficher les threads dans la source** ![afficher les threads dans la source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans la barre d’outils **Déboguer** .
 
-2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
+2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un ![marqueur]de thread icône de *marqueur* de thread(../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads en tissu. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
 3. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
 
-    Vous pouvez également afficher l’emplacement de threads dans le [fenêtre Piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
+    Vous pouvez également afficher l’emplacement des threads dans la [fenêtre piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
 
-## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examiner les charges utiles pour les services web et des ressources réseau (UWP)
+## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examiner les charges utiles pour les services Web et les ressources réseau (UWP)
 
-Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de la `Windows.Web.Http` API. Vous pouvez utiliser cet outil pour aider à déboguer des services web et des ressources réseau. Pour utiliser l’outil, sélectionnez **Déboguer > Performance Profiler**. Sélectionnez **réseau**, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées `Windows.Web.Http` à l’aide de l’API. Vous pouvez utiliser cet outil pour déboguer les services Web et les ressources réseau. Pour utiliser l’outil, sélectionnez **Déboguer > profileur de performances**. Sélectionnez **réseau**, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
-![Réseau de l’utilisation de l’outil de profilage](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
+![Outil de profilage de l’utilisation du réseau](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
 Sélectionnez une opération dans la vue du résumé pour afficher des informations plus détaillées.
 
-![Informations détaillées dans l’outil de l’utilisation du réseau](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
+![Informations détaillées dans l’outil utilisation du réseau](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Pour plus d’informations, consultez [Utilisation du réseau](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Vous familiariser avec la façon dont le débogueur s’attache à votre application (C#, C++, Visual Basic, F#)
+## <a name="modules_window"></a>Familiarisez-vous avec la façon dont le débogueur s’attache àC#votre C++application (, F#, Visual Basic,)
 
-Pour attacher à votre application en cours d’exécution, le débogueur charge les fichiers de symboles (.pdb) générés pour exactement identique à celle de l’application que vous essayez de déboguer. Dans certains scénarios, une petite base de connaissances des fichiers de symboles peut être utile. Vous pouvez examiner la façon dont Visual Studio charge les fichiers de symboles à l’aide de la **Modules** fenêtre.
+Pour attacher votre application en cours d’exécution, le débogueur charge les fichiers de symboles (. pdb) générés pour la même build de l’application que vous essayez de déboguer. Dans certains scénarios, il peut être utile de disposer d’une petite connaissance des fichiers de symboles. Vous pouvez examiner la façon dont Visual Studio charge les fichiers de symboles à l’aide de la fenêtre **modules** .
 
-Ouvrez le **Modules** fenêtre pendant le débogage en sélectionnant **Déboguer > Windows > Modules**. Le **Modules** fenêtre peut vous indiquer quels modules que le débogueur est en traitant en tant que code utilisateur, ou [ *mon Code*](../debugger/just-my-code.md)et le symbole de chargement de l’état du module. Dans la plupart des scénarios, le débogueur recherche automatiquement les fichiers de symboles pour le code utilisateur, mais si vous souhaitez pas à pas détaillé (ou debug) de code .NET framework, le code du système ou code de bibliothèque tierce, des étapes supplémentaires sont requises pour obtenir les fichiers de symbole correct.
+Ouvrez la fenêtre **modules** pendant le débogage en sélectionnant **déboguer > modules Windows >** . La fenêtre **modules** peut vous indiquer quels sont les modules que le débogueur traite comme du code utilisateur, ou [*mon code*](../debugger/just-my-code.md), et l’état du chargement des symboles pour le module. Dans la plupart des scénarios, le débogueur recherche automatiquement des fichiers de symboles pour le code utilisateur, mais si vous souhaitez effectuer un pas à pas détaillé (ou Déboguer) du code .NET Framework, du code système ou du code de bibliothèque tiers, des étapes supplémentaires sont nécessaires pour obtenir les fichiers de symboles appropriés.
 
-![Afficher les informations de symbole dans la fenêtre Modules](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
+![Afficher les informations de symboles dans la fenêtre modules](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-Vous pouvez charger les informations de symbole directement à partir de la **Modules** fenêtre en effectuant un clic droit et en choisissant **charger les symboles**.
+Vous pouvez charger les informations de symboles directement à partir de la fenêtre **modules** en cliquant avec le bouton droit et en sélectionnant **charger les symboles**.
 
-Parfois, les développeurs d’applications livrez des applications sans les symbole fichiers correspondants (afin de réduire l’encombrement), tout en conservant une copie du symbole de correspondance de fichiers pour la build afin que pouvoir déboguer une version publiée ultérieurement.
+Parfois, les développeurs d’applications livrent des applications sans les fichiers de symboles correspondants (pour réduire l’encombrement), mais conservent une copie des fichiers de symboles correspondants pour la génération afin de pouvoir déboguer ultérieurement une version publiée.
 
-Pour savoir comment le débogueur classe code en tant que code utilisateur, consultez [uniquement mon Code](../debugger/just-my-code.md). Pour en savoir plus sur les fichiers de symboles, consultez [spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Pour savoir comment le débogueur classe le code comme du code utilisateur, consultez [uniquement mon code](../debugger/just-my-code.md). Pour en savoir plus sur les fichiers de symboles, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources dans le débogueur Visual Studio](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="learn-more"></a>En savoir plus
 
-Pour des conseils supplémentaires et des astuces et des informations plus détaillées, consultez ces billets de blog :
+Pour obtenir des conseils et des astuces supplémentaires et des informations plus détaillées, consultez les billets de blog suivants :
 
-- [7 piratages connus inférieure pour le débogage dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 merveilles cachées dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
+- [7 piratages moins connus pour le débogage dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gemme cachée dans Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,28 +14,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946021"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913184"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procédure : Étendre le processus de génération Visual Studio
 Le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est défini par une série de fichiers *.targets* [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :
 
-- Substitution de cibles spécifiques prédéfinies dans *Microsoft.Common.targets*.
+- Substitution de cibles prédéfinies spécifiques définies dans les cibles communes (*Microsoft. Common. targets* ou les fichiers qu’il importe).
 
-- Substitution de propriétés DependsOn définies dans *Microsoft.Common.targets*.
+- Substitution des propriétés « DependsOn » définies dans les cibles courantes.
 
 ## <a name="override-predefined-targets"></a>Substituer des cibles prédéfinies
-Le fichier *Microsoft.Common.targets* contient un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines cibles majeures du processus de génération. Par exemple, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle la cible `BeforeBuild` avant la cible principale `CoreBuild` et appelle la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides de *Microsoft.Common.targets* ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles de votre choix dans un fichier projet qui importe *Microsoft.Common.targets*. En substituant les cibles prédéfinies, vous pouvez utiliser les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour avoir plus de contrôle sur le processus de génération.
+Les cibles courantes contiennent un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines des cibles majeures dans le processus de génération. Par exemple, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle la cible `BeforeBuild` avant la cible principale `CoreBuild` et appelle la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides dans les cibles courantes ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles souhaitées dans un fichier projet qui importe les cibles communes. En substituant les cibles prédéfinies, vous pouvez utiliser les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour avoir plus de contrôle sur le processus de génération.
+
+> [!NOTE]
+> Les projets de style SDK ont une importation implicite des cibles *après la dernière ligne du fichier projet*. Cela signifie que vous ne pouvez pas remplacer les cibles par défaut, sauf si vous spécifiez [vos importations manuellement, comme décrit dans Procédure : Utilisez les SDK](how-to-use-project-sdk.md)de projet MSBuild.
 
 #### <a name="to-override-a-predefined-target"></a>Pour substituer une cible prédéfinie
 
-1. Identifiez une cible prédéfinie dans *Microsoft.Common.targets* que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
+1. Identifiez une cible prédéfinie dans les cibles courantes que vous souhaitez substituer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
 
-2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
+2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
 
     ```xml
     <Project>
@@ -51,7 +54,7 @@ Le fichier *Microsoft.Common.targets* contient un ensemble de cibles vides préd
 
 3. Générez le fichier projet.
 
-Le tableau suivant montre toutes les cibles de *Microsoft.Common.targets* que vous pouvez substituer en toute sécurité.
+Le tableau suivant répertorie toutes les cibles dans les cibles courantes que vous pouvez substituer en toute sécurité.
 
 |Nom de la cible|Description|
 |-----------------|-----------------|
@@ -66,7 +69,7 @@ Le tableau suivant montre toutes les cibles de *Microsoft.Common.targets* que vo
 ## <a name="override-dependson-properties"></a>Substituer des propriétés DependsOn
 La substitution de cibles prédéfinies est un moyen facile d’étendre le processus de génération. Toutefois, étant donné que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de substituer les cibles que vous avez déjà substituées. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
 
-Vous pouvez empêcher la substitution involontaire des cibles en substituant les propriétés DependsOn qui sont utilisées dans les attributs `DependsOnTargets` du fichier *Microsoft.Common.targets*. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Prenez en compte ce qui suit :
+Vous pouvez vous protéger contre les substitutions involontaires de cibles en substituant les propriétés DependsOn utilisées dans `DependsOnTargets` les attributs dans les cibles courantes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Prenez en compte ce qui suit :
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -84,7 +87,7 @@ Ce code XML indique que pour exécuter la cible `Build`, vous devez d’abord e
 </PropertyGroup>
 ```
 
-Vous pouvez remplacer cette valeur de propriété en déclarant une autre propriété nommée `BuildDependsOn` à la fin de votre fichier projet. En incluant la propriété `BuildDependsOn` précédente dans la nouvelle propriété, vous pouvez ajouter de nouvelles cibles au début et à la fin de la liste de cibles. Par exemple :
+Vous pouvez remplacer cette valeur de propriété en déclarant une autre propriété nommée `BuildDependsOn` à la fin de votre fichier projet. En incluant la propriété `BuildDependsOn` précédente dans la nouvelle propriété, vous pouvez ajouter de nouvelles cibles au début et à la fin de la liste de cibles. Par exemple :
 
 ```xml
 <PropertyGroup>
@@ -107,7 +110,7 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 
 #### <a name="to-override-a-dependson-property"></a>Pour substituer une propriété DependsOn
 
-1. Identifiez une propriété DependsOn prédéfinie dans *Microsoft.Common.targets* que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés DependsOn qui sont communément substituées.
+1. Identifiez une propriété DependsOn prédéfinie dans les cibles courantes que vous souhaitez substituer. Consultez le tableau ci-dessous pour obtenir la liste des propriétés DependsOn qui sont communément substituées.
 
 2. Définissez une autre instance de la ou des propriétés à la fin de votre fichier projet. Incluez la propriété d’origine (par exemple `$(BuildDependsOn)`) dans la nouvelle propriété.
 
@@ -117,7 +120,7 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propriétés DependsOn communément substituées
 
-|Nom de propriété|Description|
+|Nom de la propriété|Description|
 |-------------------|-----------------|
 |`BuildDependsOn`|Propriété à substituer si vous souhaitez insérer des cibles personnalisées avant ou après l’intégralité du processus de génération.|
 |`CleanDependsOn`|Propriété à substituer si vous souhaitez nettoyer la sortie de votre processus de génération.|

@@ -1,28 +1,33 @@
 ---
 title: 'Étape 2 : Créer un problème d’addition aléatoire'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: d35d807cbe849e4b5385f7bf63e15760b0e4b3a5
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416873"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118816"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
+
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base.
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Pour créer un problème d'addition aléatoire
 
@@ -36,6 +41,9 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Vous avez ajouté un objet aléatoire à votre formulaire et avez nommé cet objet **randomizer**.
 
@@ -60,7 +68,8 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      Notez que quand vous entrez un point (.) après `randomizer` dans le code, une fenêtre IntelliSense s’ouvre et affiche les méthodes d’objet aléatoire que vous pouvez appeler. Par exemple, IntelliSense propose la méthode `Next()`, comme suit.
 
-     ![Méthode Next](../ide/media/express_randomwhite.png) Méthode Next
+     ![Next, méthode](../ide/media/express_randomwhite.png)<br/>
+*Next, méthode*
 
      Lorsque vous entrez un point après un objet, IntelliSense affiche une liste des membres de l'objet, tels que des propriétés, des méthodes et des événements.
 
@@ -87,14 +96,15 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
 8. Enregistrez votre code, exécutez-le, puis sélectionnez le bouton **Démarrer**.
 
-     Un problème d'addition aléatoire apparaît, comme le montre l'illustration suivante.
+     Un problème d’addition aléatoire apparaît, comme illustré dans la capture d’écran suivante.
 
-     ![Problème d’addition aléatoire](../ide/media/express_additionproblem.png) Problème d’addition aléatoire
+     ![Problème d’addition aléatoire](../ide/media/express_additionproblem.png)<br/>
+*Problème d’addition aléatoire*
 
      Dans l'étape suivante du didacticiel, vous ajouterez la somme.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 3 : Ajouter un temporisateur](../ide/step-3-add-a-countdown-timer.md).
+- Pour passer à l’étape suivante du didacticiel, **consultez [étape 3 : Ajoutez un minuteur](../ide/step-3-add-a-countdown-timer.md)** de compte à rebours.
 
 - Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692165"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108022"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
@@ -59,7 +59,7 @@ Ces onglets permettent d’effectuer les actions suivantes :
 
 ## <a name="switching-branches"></a>Changement de branches
 
-Par défaut, la première branche créée dans un dépôt est appelée branche **maîtresse** . Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
+Par défaut, la première branche créée dans un dépôt est appelée branche **maître**. Techniquement, il n’y a aucune différence entre la branche maître et les autres branches, si ce n’est que la branche maître est celle qui est le plus souvent considérée par les équipes de développeurs comme la branche « active » ou « de production ».
 
 Une ligne indépendante de développement peut être créée en séparant la branche maître (ou n’importe quelle autre branche, dans notre exemple). Vous obtenez alors une nouvelle version de la branche maître à un point dans le temps, ce qui vous permet de séparer le développement de ce qui est « actif ». L’utilisation de branches de cette manière est souvent utilisée pour les fonctionnalités dans le cadre du développement de logiciels
 

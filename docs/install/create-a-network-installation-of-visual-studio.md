@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870773"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180292"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -249,7 +249,7 @@ Quand les mises à jour de produit deviennent disponibles, vous avez la possibil
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Les programmes d’amorçage de Visual Studio disponibles sur [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) téléchargent et installent la dernière version de Visual Studio, chaque fois qu’ils sont exécutés.
+> Les programmes d’amorçage de Visual Studio disponibles sur [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) téléchargent et installent la dernière version de Visual Studio, chaque fois qu’ils sont exécutés.
 >
 > Ainsi, si vous téléchargez un *programme d’amorçage* de Visual Studio aujourd’hui, et si vous l’exécutez dans six mois, il installe la version de Visual Studio disponible au moment où vous exécutez le programme d’amorçage.
 >

@@ -31,6 +31,7 @@
 # Éditeur de code source
 ## [Fonctionnalités de l’éditeur](source-editor.md)
 ## [Refactorisation](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Commentaires](comments.md)
 ## [Comportement de l’éditeur](editor-behavior.md)
 ## [Commentaires des tâches](task-comments.md)
@@ -56,7 +57,6 @@
 
 # Gestion de version
 ## [Vue d’ensemble](version-control.md)
-## [Gestion des versions TF](tf-version-control.md)
 ## [Configuration d’un dépôt Git](set-up-git-repository.md)
 ## [Utilisation de Git](working-with-git.md)
 ## [Configuration d’un dépôt Subversion](set-up-subversion-repository.md)
@@ -99,13 +99,14 @@
 ## [Journaux et exceptions](troubleshooting.md)
 ## [Programme d’amélioration de l’expérience utilisateur Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Signaler un problème](report-a-problem.md)
+## [Résolution des problèmes : Visual Studio pour Mac prend-il en charge Team Foundation Version Control ?](tf-version-control.md)
 ## [Résolution des problèmes : Pourquoi je ne vois pas tous les modèles ?](troubleshooting-no-templates.md)
 ## [Résolution des problèmes : le programme de mise à jour présente des erreurs lors de la récupération des informations](updater-troubleshooting.md)
 
 # [Notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
 # [Notes de publication de la préversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
 # Exemples
-## [Exemples proposés](samples.yml)
+## [Exemples proposés](samples/index.yml)
 ## [Tous les exemples ASP.NET Core](https://docs.microsoft.com/samples/browse/?products=aspnet-core)
 ## [Tous les exemples .NET Core](https://docs.microsoft.com/samples/browse/?products=dotnet-core)
 ## [Tous les exemples Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/samples/)

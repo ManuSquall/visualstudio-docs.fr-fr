@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943937"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095345"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -32,11 +32,11 @@ Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+> Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 
 ::: moniker-end
 
-Cet article part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../get-started/csharp/tutorial-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Cet article part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../get-started/csharp/tutorial-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](/cpp/get-started/tutorial-console-cpp).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -56,7 +56,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 2. Dans le menu **Fichier** de la barre de menus, choisissez **Nouveau** > **Fichier**.
 
-3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#**, puis choisissez **Ouvrir**.
+3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#** , puis choisissez **Ouvrir**.
 
    Le nouveau fichier qui s’ouvre dans l’éditeur présente le squelette d’une classe C#. (Notez que nous ne sommes pas obligés de créer un projet Visual Studio complet pour bénéficier de certains des avantages offerts par l’éditeur de code. Tout ce dont nous avons besoin, c’est d’un fichier de code.)
 

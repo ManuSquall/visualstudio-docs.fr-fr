@@ -162,31 +162,31 @@
           items:
             - name: Vue d'ensemble
               href: rule-set-reference.md
-            - name: Ensemble de règles de toutes les règles
+            - name: Toutes les règles
               href: all-rules-rule-set.md
-            - name: Ensemble de règles de règles de vérification de base pour le code managé
+            - name: Règles de vérification de base
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de conception de base pour le code managé
+            - name: Règles de conception de base
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de vérification étendue pour le code managé
+            - name: Règles de vérification étendue
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles de règles de conception étendue pour le code managé
+            - name: Règles de conception étendue
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles de globalisation pour le code managé
+            - name: Règles de globalisation
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles minimales managées pour le code managé
+            - name: Règles minimales gérées
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles recommandées managées pour le code managé
+            - name: Règles recommandées gérées
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Ensemble de règles des règles minimales mixtes
+            - name: Règles minimales mixtes
               href: mixed-minimum-rules-rule-set.md
-            - name: Ensemble de règles des règles recommandées mixtes
+            - name: Règles recommandées mixtes
               href: mixed-recommended-rules-rule-set.md
-            - name: Ensemble de règles des règles minimales natives
+            - name: Règles minimales natives
               href: native-minimum-rules-rule-set.md
-            - name: Ensemble de règles des règles recommandées natives
+            - name: Règles recommandées natives
               href: native-recommended-rules-rule-set.md
-            - name: Ensemble de règles des règles de sécurité pour le code managé
+            - name: Règles de sécurité
               href: security-rules-rule-set-for-managed-code.md
         - name: Supprimer les avertissements
           href: in-source-suppression-overview.md
@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065 : Ne pas lever d''exceptions dans les emplacements inattendus'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: "CA1068\_: Les paramètres CancellationToken doivent venir en dernier"
+                  href: ca1068.md
                 - name: 'CA2210 : Les assemblys doivent porter des noms forts valides'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Avertissements de la documentation
+              items:
+                - name: Vue d'ensemble
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: "CA1200\_: Éviter d’utiliser des balises cref avec un préfixe"
+                  href: ca1200.md
             - name: Avertissements liés à la globalisation
               items:
                 - name: Vue d'ensemble
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824 : Marquer les assemblys avec NeutralResourcesLanguageAttribute'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: "CA1825\_: Éviter les allocations de tableau de longueur nulle"
+                  href: ca1825.md
             - name: Avertissements liés à la portabilité
               items:
                 - name: Vue d'ensemble
@@ -658,6 +669,16 @@
                   href: ca2321.md
                 - name: "CA2322\_: Assurez-vous que JavaScriptSerializer n’est pas initialisé avec SimpleTypeResolver avant la désérialisation"
                   href: ca2322.md
+                - name: 'CA2326 : N’utilisez pas de valeurs TypeNameHandling autres que None'
+                  href: ca2326.md
+                - name: 'CA2327 : N’utilisez pas de JsonSerializerSettings non sécurisés'
+                  href: ca2327.md
+                - name: 'CA2328 : Vérifiez que les JsonSerializerSettings sont sécurisés'
+                  href: ca2328.md
+                - name: 'CA2329 : Ne désérialisez pas avec JsonSerializer à l’aide d’une configuration non sécurisée'
+                  href: ca2329.md
+                - name: 'CA2330 : Vérifiez que JsonSerializer a une configuration sécurisée lors de la désérialisation.'
+                  href: ca2330.md
                 - name: "CA3001\_: Passez en revue le code pour détecter les vulnérabilités de l’injection SQL"
                   href: ca3001-review-code-for-sql-injection-vulnerabilities.md
                 - name: "CA3002\_: Passez en revue le code pour détecter les vulnérabilités des scripts XSS"
@@ -682,6 +703,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: "CA3012\_: Passez en revue le code pour détecter les vulnérabilités de l’injection regex"
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: "CA3061\_: Ne pas ajouter de schéma par URL"
+                  href: ca3061.md
                 - name: 'CA3075 : Traitement DTD non sécurisé'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076 : Exécution non sécurisée de script XSLT'
@@ -692,12 +715,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: "CA5361\_: Ne pas désactiver l’utilisation du chiffrement fort par SChannel"
                   href: ca5361.md
+                - name: "CA5363\_: Ne pas désactiver la validation de demandes"
+                  href: ca5363.md
                 - name: "CA5364\_: Ne pas utiliser de protocoles de sécurité dépréciés"
                   href: ca5364.md
+                - name: "CA5369\_: Utiliser XmlReader pour la désérialisation"
+                  href: ca5369.md
+                - name: "CA5370\_: Utiliser XmlReader pour la validation du lecteur"
+                  href: ca5370.md
+                - name: "CA5371\_: Utiliser XmlReader pour la lecture de schéma"
+                  href: ca5371.md
+                - name: "CA5372\_: Utiliser XmlReader pour XPathDocument"
+                  href: ca5372.md
+                - name: "CA5373\_: Ne pas utiliser la fonction de dérivation de clé obsolète"
+                  href: ca5373.md
                 - name: "CA5378\_: Ne pas désactiver ServicePointManagerSecurityProtocols"
                   href: ca5378.md
+                - name: "CA5380\_: Ne pas ajouter de certificats au magasin racine"
+                  href: ca5380.md
+                - name: "CA5381\_: S’assurer que les certificats ne sont pas ajoutés au magasin racine"
+                  href: ca5381.md
                 - name: "CA5386\_: Éviter tout codage en dur de la valeur de SecurityProtocolType"
                   href: ca5386.md
+                - name: "CA5389\_: Ne pas ajouter le chemin de l’élément d’archive au chemin du système de fichiers cible"
+                  href: ca5389.md
                 - name: "CA5397\_: Ne pas utiliser de valeurs SslProtocols dépréciées"
                   href: ca5397.md
                 - name: "CA5398\_: Éviter les valeurs SslProtocols codées en dur"
@@ -1000,7 +1041,7 @@
           href: c26812.md
         - name: C26814
           href: c26814.md
-    - name: Avertissements C/C++
+    - name: avertissements C/C++
       items:
         - name: Vue d'ensemble
           displayName: C++ warnings

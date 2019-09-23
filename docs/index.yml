@@ -8,12 +8,14 @@ metadata:
   description: Apprenez à utiliser Visual Studio pour développer des applications, des services et des outils dans le langage de votre choix, pour une plateforme ou un appareil.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  f1_keywords:
+  - MSDNSTART
+  ms.openlocfilehash: f8d8ed358779471d68a460ae923df5f9d316c2b0
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493715"
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71128260"
 highlightedContent:
   items:
   - title: Configuration et installation
@@ -135,8 +137,8 @@ additionalContent:
       summary: Exécutez des tests sur vos projets.
       url: test/improve-code-quality.md
     - title: Déployer
-      summary: Partagez vos applications à l’aide de Web Deploy, InstallShield, de l’intégration continue, etc.
-      url: deployment/index.md
+      summary: Partagez vos applications et votre code en utilisant Web Deploy, InstallShield, NuGet, l’intégration continue et plus encore.
+      url: deployment/index.yml
     - title: Gestion de version
       summary: Partagez du code à l’aide des technologies de gestion de version comme Git et TFVC.
       url: version-control/index.md
@@ -145,7 +147,7 @@ additionalContent:
       url: /azure/devops
     - title: Mesurer les performances
       summary: Identifiez les goulets d’étranglement et optimisez les performances du code à l’aide des outils de diagnostic.
-      url: profiling/index.md
+      url: profiling/index.yml
     - title: Étendre
       summary: Ajoutez vos propres fonctionnalités à l’IDE de Visual Studio pour améliorer votre expérience de développement.
       url: extensibility/index.md
@@ -192,7 +194,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Développement mobile avec JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Visual Studio 2017 et 2015 uniquement)
       - text: Développement mobile avec C++
         url: /visualstudio/cross-platform/
       - text: Développement de jeux avec C++

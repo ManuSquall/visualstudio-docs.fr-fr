@@ -3,15 +3,15 @@ layout: HubPage
 hide_bc: true
 title: Produits Visual Studio | Microsoft Docs
 description: Explorez la famille de produits Visual Studio.
-ms.topic: landing-page
+ms.topic: hub-page
 ms.date: 07/02/2019
 searchScope: []
-ms.openlocfilehash: 41dd59cf67be1a476707a7ed3a18a263132fbfca
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: c499b8f1ecf80fefe911d3f9fa2cb918e40f125e
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586797"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107873"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -119,49 +119,10 @@ ms.locfileid: "67586797"
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Services - formerly Visual Studio Team Services (VSTS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>Augmenter la productivité de l’équipe avec les outils de projet et les rapports Agile. Créer, tester et déployer des projets à partir du contrôle de code source avec des outils d’intégration continue/de livraison continue modernes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Azure DevOps Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="Azure DevOps Server - formerly Team Foundation Server (TFS)" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Azure DevOps Server</h3>
-                                                    <p>Installez, mettez à niveau et gérez vos déploiements locaux.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services a été remplacé par Azure DevOps Services et Team Foundation Server (TFS) a été renommé Azure DevOps Server. Consultez <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Qu’est-il arrivé à Visual Studio Team Services ?</a> et <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server est désormais Azure DevOps Server</a>.</p>
     </div>
 </div>

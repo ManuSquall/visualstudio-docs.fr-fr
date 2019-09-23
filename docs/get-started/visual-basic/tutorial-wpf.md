@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 924b3000ffa0648a9086ed4771e921a939859804
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043563"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864703"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
 
@@ -33,7 +33,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker range=">=vs-2019"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -100,29 +100,23 @@ Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Changer le nom de MainWindow.xaml
 
-Donnons un nom plus spécifique à MainWindow.
-
-1. Dans **l’Explorateur de solutions**, sélectionnez *MainWindow.xaml*. Vous devez normalement voir la fenêtre **Propriétés**. Si ce n’est pas le cas, choisissez le menu **Affichage**, puis l’élément **Fenêtre Propriétés**.
-
-1. Remplacez la propriété **Nom de fichier** par `Greetings.xaml`.
-
-     ![Fenêtre Propriétés avec le nom de fichier en surbrillance](../media/exploreide-filenameinpropertieswindow.png)
-
-     Dans l’**Explorateur de solutions**, le nom du fichier est maintenant *Greetings.xaml* et le nom du fichier de code imbriqué est maintenant *Greetings.xaml.vb*. Ce fichier de code est imbriqué sous le nœud de fichier *.xaml* pour montrer que les deux fichiers sont étroitement liés.
+Donnons un nom plus spécifique à MainWindow. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *MainWindow. Xaml* , puis choisissez **Renommer**. Renommez le fichier avec *Greetings. Xaml*.
 
 ## <a name="design-the-user-interface-ui"></a>Créer l'interface utilisateur
+
+Si le concepteur n’est pas ouvert, sélectionnez *Greetings. Xaml* dans **Explorateur de solutions**, puis appuyez sur **MAJ**+**F7** pour ouvrir le concepteur.
 
 Nous allons ajouter trois types de contrôles à cette application : un contrôle <xref:System.Windows.Controls.TextBlock>, deux contrôles <xref:System.Windows.Controls.RadioButton> et un contrôle <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1. Entrez **Ctrl**+**Q** pour activer la zone de recherche et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
+1. Appuyez sur **CTRL**+**Q** pour activer la zone de recherche et tapez **boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 
      ![Boîte à outils avec le contrôle TextBlock en surbrillance](../media/exploreide-textblocktoolbox.png)
 
-3. Ajoutez un contrôle TextBlock à l’aire de conception en choisissant l’élément **TextBlock** et en le faisant glisser vers la fenêtre de l’aire de conception. Centrez le contrôle vers le haut de la fenêtre.
+3. Ajoutez un contrôle TextBlock à l’aire de conception en choisissant l’élément **TextBlock** et en le faisant glisser vers la fenêtre de l’aire de conception. Centrez le contrôle vers le haut de la fenêtre. Dans Visual Studio 2019 et versions ultérieures, vous pouvez utiliser les recommandations en rouge pour centrer le contrôle.
 
 Votre fenêtre doit ressembler à l'illustration suivante :
 
@@ -152,7 +146,7 @@ Vous ajouterez ensuite deux contrôles [RadioButton](/dotnet/framework/wpf/contr
 
      ![Fenêtre Boîte à outils avec contrôle RadioButton sélectionné](../media/exploreide-radiobuttontoolbox.png)
 
-2. Ajoutez deux contrôles RadioButton à l’aire de conception en choisissant l’élément **RadioButton** et en le faisant glisser vers la fenêtre de l’aire de conception. Déplacez les boutons (en les sélectionnant et en utilisant les flèches) pour les placer côte à côte sous le contrôle TextBlock.
+2. Ajoutez deux contrôles RadioButton à l’aire de conception en choisissant l’élément **RadioButton** et en le faisant glisser vers la fenêtre de l’aire de conception. Déplacez les boutons (en les sélectionnant et en utilisant les flèches) pour les placer côte à côte sous le contrôle TextBlock. Utilisez les indications rouges pour aligner les contrôles.
 
      Votre fenêtre doit se présenter comme suit :
 
@@ -168,9 +162,15 @@ Vous pouvez maintenant afficher du texte pour chaque contrôle RadioButton. La p
 
 ### <a name="add-display-text-for-each-radio-button"></a>Ajouter un texte à afficher pour chaque case d’option
 
-1. Sur l’aire de conception, ouvrez le menu contextuel du contrôle HelloButton en cliquant avec le bouton droit sur HelloButton, choisissez **Modifier le texte**, puis entrez `Hello`.
+Mettez à jour l’attribut content `HelloButton` pour `GoodbyeButton` et `"Hello"` vers `"Goodbye"` et dans le XAML. Le balisage XAML doit maintenant ressembler à l’exemple suivant :
 
-2. Ouvrez le menu contextuel du contrôle GoodbyeButton en cliquant avec le bouton droit sur GoodbyeButton, choisissez **Modifier le texte**, puis entrez `Goodbye`.
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Définir une case d’option activée par défaut
 
@@ -186,7 +186,7 @@ Le dernier élément de l’interface utilisateur que vous ajouterez est un cont
 
 ### <a name="add-the-button-control"></a>Ajouter le contrôle bouton
 
-1. Dans la fenêtre **Boîte à outils**, recherchez le contrôle **Button**, puis ajoutez-le à l’aire de conception sous les contrôles RadioButton en le faisant glisser vers le formulaire en mode Design.
+1. Dans la fenêtre **Boîte à outils**, recherchez le contrôle **Button**, puis ajoutez-le à l’aire de conception sous les contrôles RadioButton en le faisant glisser vers le formulaire en mode Design. Si vous utilisez Visual Studio 2019 ou une version ultérieure, une ligne rouge vous aide à centrer le contrôle.
 
 2. Dans l’affichage XAML, changez la valeur de l’élément **Content** du contrôle Button de `Content="Button"` en `Content="Display"`, puis enregistrez les modifications.
 
@@ -205,7 +205,7 @@ Quand cette application s’exécute, un message s’affiche si un utilisateur c
      *Greetings.Xaml.vb* s’ouvre, avec le curseur dans l’événement `Button_Click`.
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ Nous avons renommé *MainWindow.xaml* en *Greetings.xaml* au début de ce didact
 
 2. Remplacez `StartupUri="MainWindow.xaml"` par `StartupUri="Greetings.xaml"`, puis enregistrez les modifications.
 
-Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Greetings** de l’application. Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
+Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Greetings** de l’application.
+
+::: moniker range="vs-2017"
+![Capture d’écran de l’application en cours d’exécution](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Capture d’écran de l’application en cours d’exécution](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
 
 ### <a name="debug-with-breakpoints"></a>Déboguer avec des points d’arrêt
 
@@ -287,6 +296,12 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 10. Fermez la fenêtre d’application pour arrêter le débogage.
 
 11. Dans la barre de menus, choisissez **Débogage** > **Désactiver tous les points d’arrêt**.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Afficher une représentation des éléments d’interface utilisateur
+
+Dans l’application en cours d’exécution, vous devriez voir un widget qui apparaît en haut de la fenêtre. Il s’agit d’une application auxiliaire de Runtime qui fournit un accès rapide à certaines fonctionnalités de débogage utiles. Cliquez sur le premier bouton, puis sur **arborescence d’éléments visuels en direct**. Vous devez voir une fenêtre avec une arborescence qui contient tous les éléments visuels de votre page. Développez les nœuds pour rechercher les boutons que vous avez ajoutés.
+
+![Capture d’écran de la fenêtre d’arborescence d’éléments visuels dynamique](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Générer une version Release de l'application
 

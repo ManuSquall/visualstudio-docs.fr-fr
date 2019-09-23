@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605952"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976733"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Boîte de dialogue Options : Projets et solutions \> Général
 
@@ -70,11 +70,31 @@ Quand cette option est sélectionnée, Visual Studio affiche un message de confi
 
 ## <a name="reopen-documents-on-solution-load"></a>Rouvrir les documents au chargement de la solution
 
-**Introduite dans Visual Studio 2017 version 15.8**
-
 Quand cette option est sélectionnée, les documents qui ont été laissés ouverts lors de la précédente fermeture de cette solution s’ouvrent automatiquement lors de l’ouverture de la solution.
 
 La réouverture de certains types de fichiers ou concepteurs peut ralentir le chargement de la solution. Désactivez cette option pour [améliorer les performances de chargement de la solution](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) si vous ne souhaitez pas restaurer le contexte précédent de la solution.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Restaurer l’état de la hiérarchie de projets de l’Explorateur de solutions au moment du chargement de la solution
+
+Quand cette option est sélectionnée, elle restaure l’état des nœuds dans l’Explorateur de solutions selon qu’ils étaient développés ou réduits lors de la dernière ouverture de la solution. Désélectionnez cette option pour diminuer le temps de chargement de la solution pour des grandes solutions.
+
+> [!TIP]
+> Si vous désactivez cette option, un moyen simple d’accéder au document actif dans l’Explorateur de solutions consiste à sélectionner **Synchroniser avec le document actif** dans la barre d’outils de l’**Explorateur de solutions**.
+>
+> ![Synchroniser avec le document actif dans Explorateur de solutions](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Ouvrir les fichiers projet de style SDK par un double-clic ou à l’aide de la touche Entrée
+
+Quand cette option est sélectionnée et que vous double-cliquez sur un nœud de projet de style SDK dans l’Explorateur de solutions, ou que vous le sélectionnez et que vous appuyez sur **Entrée**, le fichier projet (par exemple le fichier \*.csproj) s’ouvre au format XML dans l’éditeur. Quand cette option est désélectionnée, le fait de double-cliquer sur un nœud de projet de style SDK dans l’Explorateur de solutions, ou de le sélectionner et d’appuyer sur **Entrée**, a pour seul effet de développer ou de réduire ce nœud.
+
+Si cette option n’est pas sélectionnée et que vous voulez modifier un fichier projet de style SDK, cliquez avec le bouton droit sur le nœud du projet dans l’Explorateur de solutions, puis sélectionnez **Modifier le fichier projet**. Pour les autres types de projets, vous devez d’abord décharger le projet avant de le modifier dans Visual Studio.
+
+> [!TIP]
+> Un *projet de style SDK*, ou [projet SDK](../../msbuild/how-to-use-project-sdk.md), a un format de fichier projet plus récent et plus simple, qui a été introduit avec MSBuild 15.0. Un projet de style SDK contient un attribut `Sdk` sur l’élément `Project`, par exemple `<Project Sdk="Microsoft.NET.Sdk">`. Visual Studio crée un projet de style SDK par exemple quand vous créez un projet .NET Core à partir d’un des modèles Visual Studio.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Voir aussi
 

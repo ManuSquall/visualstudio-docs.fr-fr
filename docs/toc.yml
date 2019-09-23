@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: "C++\_: Créer une application console"
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python : Créer une application web'
       href: ide/quickstart-python.md
     - name: "Node.js\_: Créer une application web"
@@ -350,8 +350,6 @@
                     - name: Vue d'ensemble
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Ajouter des contrôles de valeurs Null pour tous les paramètres
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Changer la signature de la méthode
                       href: ide/reference/change-method-signature.md
                     - name: Conversion de type anonyme en classe
@@ -414,6 +412,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Affectations, variables et paramètres de valeur inutilisés'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Mettre à la ligne et aligner des chaînes d’appels
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Mettre à la ligne, mettre en retrait et aligner des paramètres'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: "Procédure pas à pas\_: Générer du code à partir de l’utilisation"
@@ -660,12 +660,12 @@
       href: test/improve-code-quality.md
     - name: Mesurer les performances >>
       displayName: Profiling
-      href: profiling/index.md
+      href: profiling/index.yml
     - name: Analyser la qualité du code >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
     - name: Déployer >>
-      href: deployment/index.md
+      href: deployment/index.yml
     - name: Étendre Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: 'Alias, commande'
           href: ide/reference/alias-command.md
-        - name: 'Évaluer l’instruction, commande'
+        - name: Évaluer l'instruction (commande)
           href: ide/reference/evaluate-statement-command.md
         - name: 'Rechercher, commande'
           href: ide/reference/find-command.md
@@ -799,7 +799,7 @@
           href: ide/reference/open-file-command.md
         - name: Ouvrir un projet (commande)
           href: ide/reference/open-project-command.md
-        - name: 'Imprimer, commande'
+        - name: Imprimer (commande)
           href: ide/reference/print-command.md
         - name: 'Espion express, commande'
           href: ide/reference/quick-watch-command.md
@@ -840,7 +840,7 @@
           href: ide/reference/code-snippet-picker.md
         - name: Fenêtre Commande
           href: ide/reference/command-window.md
-        - name: Boîte de dialogue Convertir
+        - name: Convertir (boîte de dialogue)
           href: ide/reference/convert-dialog-box.md
         - name: Fenêtre Liste d'erreurs
           href: ide/reference/error-list-window.md

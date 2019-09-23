@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681453"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293676"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -30,7 +30,7 @@ ms.locfileid: "68681453"
 
 Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releasenotes/vs2017-relnotes/) de Visual Studio 2017 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
 
-Et si vous souhaitez essayer notre version la plus récente, pensez à télécharger et installer [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019) à la place.
+Et si vous souhaitez essayer notre version la plus récente, pensez à télécharger et installer [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) à la place.
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -166,7 +166,7 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 
 Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
 
-Et si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
+Et si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).

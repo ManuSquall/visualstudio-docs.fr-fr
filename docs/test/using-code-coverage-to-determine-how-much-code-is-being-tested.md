@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416444"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913219"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -28,28 +26,51 @@ L'analyse de couverture du code peut être appliquée pour du code managé (CLI)
 
 Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
+::: moniker range="vs-2017"
+
 ![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Configuration requise
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Pour analyser la couverture du code sur les tests unitaires dans l'Explorateur de tests
+## <a name="analyze-code-coverage"></a>Analyser la couverture du code
+
+::: moniker range="vs-2017"
 
 1. Dans le menu **Test**, choisissez **Analyser la couverture du code**.
 
-2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png) **Afficher la coloration de la couverture du code**.
+::: moniker-end
 
-   Pour changer les couleurs ou utiliser des caractères gras, choisissez **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
+::: moniker range=">=vs-2019"
+
+1. Dans l' **Explorateur de tests**, sélectionnez analyser la couverture du **code pour tous les tests** dans le menu **exécuter** .
+
+   ![Menu analyser la couverture du code dans VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   Si l' **Explorateur de tests** n’est pas ouvert, ouvrez-le en sélectionnant **tester** > l' **Explorateur de tests** **Windows** > , ou appuyez sur **CTRL**+**E**,**T**.
+
+::: moniker-end
+
+2. Une fois les tests exécutés, pour voir ![les lignes qui ont été exécutées, choisissez afficher l’icône](../test/media/codecoverage-showcoloringicon.png) de coloration de la couverture du code afficher la coloration de la couverture du **code** dans la fenêtre résultats de la couverture du **code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
+
+   > [!TIP]
+   > Pour modifier les couleurs ou utiliser le style gras, choisissez **Outils** > **options** > **environnement** >  ****polices et couleurs** > afficher les paramètres pour : Éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
+   >
+   > ![Polices et couleurs de la couverture du code](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Si les résultats indiquent une couverture basse, recherchez les parties du code qui ne sont pas testées, puis élaborez d'autres tests pour les couvrir. Les équipes de développement visent généralement une couverture de code qui avoisine 80 %. Dans certaines situations, une couverture inférieure est acceptable. Par exemple, une couverture inférieure est acceptable lorsqu'un code est généré à partir d'un modèle standard.
 
 > [!TIP]
-> - Vérifiez que l’optimisation du compilateur est désactivée.
-> - Si vous travaillez avec du code non managé (natif), utilisez une version Debug.
-> - Vérifiez que vous générez des fichiers de symboles (.pdb) pour chaque assembly
+> - Désactiver l’optimisation du compilateur
+> - Si vous utilisez du code non managé (natif), utilisez une version Debug
+> - Générer des fichiers. pdb (symbole) pour chaque assembly
 
-Si vous n’obtenez pas les résultats escomptés, consultez [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
+Si vous n’obtenez pas les résultats escomptés, consultez [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
+
+N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
 
 ## <a name="report-in-blocks-or-lines"></a>Rapport pour les blocs ou les lignes
 
@@ -103,7 +124,7 @@ Vous pouvez exclure des éléments spécifiques dans votre code à partir des no
 > [!TIP]
 > Le fait d’exclure une classe n'a pas pour effet d’exclure ses classes dérivées.
 
-Par exemple :
+Par exemple :
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -271,7 +292,7 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.con
 
    ::: moniker-end
 
-2. À l'invite de commandes, exécutez la commande suivante :
+2. Exécutez ensuite la commande suivante dans l’invite de commandes :
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
@@ -279,7 +300,7 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.con
 
 Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Résolution des problèmes
 
 Si vous ne voyez pas les résultats de la couverture du code, consultez l’article [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 

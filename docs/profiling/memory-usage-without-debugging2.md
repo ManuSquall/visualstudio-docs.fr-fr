@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830701"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128233"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
@@ -121,7 +121,7 @@ De nombreux types dans les applications ne sont pas très intéressants pour les
 
  ![Liens vers le rapport d’instantané dans un volet de l’instantané](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Liens vers le rapport d’instantané dans un volet de l’instantané")
 
-Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé**. Le lien de taille trie le rapport en fonction de la colonne **Taille inclusive (octets)**. Le lien d’objets trie le rapport en fonction de la colonne **Nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
+Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé**. Le lien de taille trie le rapport en fonction de la colonne **Taille inclusive (octets)** . Le lien d’objets trie le rapport en fonction de la colonne **Nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Arborescence Tas managé (rapports de détails de l’instantané)
  L’arborescence **Tas managé** répertorie les types d’objets contenus dans la mémoire. Développez le nom d’un type pour afficher les dix instances du type les plus volumineuses, triées par taille. Sélectionnez un type ou une instance pour afficher les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
@@ -164,7 +164,7 @@ Une arborescence **Types référencés** dans un rapport détaillé d’instanta
 
 Un rapport différentiel d’instantanés montre les changements entre un instantané principal et l’instantané précédent. Pour ouvrir un rapport différentiel, sélectionnez l’un des liens de différence dans un volet d’instantané.
 
-Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Le lien de taille trie le rapport en fonction de la colonne **Différence de taille inclusive (octets)**. Le lien d’objets trie le rapport en fonction de la colonne **Différence de nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
+Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Le lien de taille trie le rapport en fonction de la colonne **Différence de taille inclusive (octets)** . Le lien d’objets trie le rapport en fonction de la colonne **Différence de nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
 
  ![Liens vers le rapport de différence dans un volet de l’instantané](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Liens vers le rapport de différence dans un volet de l’instantané")
 
@@ -201,7 +201,7 @@ L’arborescence **Types référencés** ou **Objets référencés** montre les 
 
 ![Types référencés dans un rapport différentiel](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Types référencés dans un rapport différentiel")
 
-Une arborescence **Types référencés** dans un rapport différentiel d’instantanés comporte les colonnes suivantes. Une arborescence **Objets référencés** comporte les colonnes **Instance**, **Taille (octets)**, **Taille Inclusive (octets)** et **Module**.
+Une arborescence **Types référencés** dans un rapport différentiel d’instantanés comporte les colonnes suivantes. Une arborescence **Objets référencés** comporte les colonnes **Instance**, **Taille (octets)** , **Taille Inclusive (octets)** et **Module**.
 
 |||
 |-|-|
@@ -216,7 +216,7 @@ Une arborescence **Types référencés** dans un rapport différentiel d’insta
 
 ## <a name="see-also"></a>Voir aussi
 - [Mémoire JavaScript](../profiling/javascript-memory.md)
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
 - [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

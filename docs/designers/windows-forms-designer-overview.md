@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981635"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585331"
 ---
 # <a name="windows-forms-designer-overview"></a>Vue d’ensemble du Concepteur Windows Forms
 
 Le Concepteur Windows Forms dans Visual Studio fournit une solution de développement rapide pour la création d’applications basées sur Windows Forms. Le Concepteur Windows Forms vous permet d'ajouter facilement des contrôles à un formulaire, de les organiser et d'écrire du code pour leurs événements. Pour plus d’informations sur Windows Forms, consultez [Vue d’ensemble de Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Fonctionnalité
+## <a name="functionality"></a>Fonctionnalités
 
 À l’aide du concepteur, vous pouvez :
 
@@ -39,7 +39,7 @@ Le Concepteur Windows Forms dans Visual Studio fournit une solution de développ
 
 - [Vue d'ensemble des Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Contrôles Windows Forms](/dotnet/framework/winforms/controls/)
-- [Accessibilité des contrôles Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Entrées d'utilisateur dans les Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Liaison de données Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Améliorer des applications Windows Forms](/dotnet/framework/winforms/advanced/)
+- Informations de référence sur l’API <xref:System.Windows.Forms?displayProperty=fullName>

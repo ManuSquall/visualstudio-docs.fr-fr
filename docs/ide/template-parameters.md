@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950343"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766110"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -23,7 +23,7 @@ Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instan
 
 ## <a name="declare-and-enable-template-parameters"></a>Déclarer et activer des paramètres de modèle
 
-Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
+Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
 
 - $safeprojectname$
 
@@ -57,14 +57,15 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |projectname|Nom fourni par l’utilisateur quand le projet a été créé.|
 |registeredorganization|Valeur de clé de Registre provenant de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espace de noms racine du projet actuel. Ce paramètre s’applique uniquement aux modèles d’élément.|
-|safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux supprimés.|
+|safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux remplacés par des caractères de trait de soulignement.|
+|safeitemrootname|Comme pour `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
-|heure|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
-|SpecificSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `SpecificSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `SpecificSolutionName` est vide.|
+|time|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
+|specifiedSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedSolutionName` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
-|Nom d’utilisateur|Nom de l’utilisateur actuel.|
+|username|Nom de l’utilisateur actuel.|
 |webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|
-|année|Année actuelle au format AAAA.|
+|year|Année actuelle au format AAAA.|
 
 > [!NOTE]
 > Les paramètres de modèle respectent la casse.
@@ -73,7 +74,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 
 Vous pouvez spécifier vos propres paramètres et valeurs de modèle, en plus des paramètres de modèle réservés par défaut utilisés lors du remplacement de paramètres. Pour plus d’informations, consultez [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : Utiliser le nom du projet comme nom de fichier
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : Utiliser le nom du projet comme nom de fichier
 
 Vous pouvez spécifier des noms de fichiers de variables pour les éléments de projet à l’aide d’un paramètre dans l’attribut `TargetFileName`.
 
@@ -90,7 +91,7 @@ L’exemple suivant spécifie que le nom d’un fichier exécutable utilise le n
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : Utiliser le nom du projet sécurisé comme nom de l’espace de noms
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : Utiliser le nom du projet sécurisé comme nom de l’espace de noms
 
 Pour utiliser le nom du projet sécurisé pour l’espace de noms dans un fichier de classe C#, utilisez la syntaxe suivante :
 

@@ -1,19 +1,20 @@
 ---
 title: 'Tutoriel 3 : Créer un jeu de combinaisons'
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
+ms.topic: tutorial
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821522"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118705"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutoriel 3 : Créer un jeu de combinaisons
 

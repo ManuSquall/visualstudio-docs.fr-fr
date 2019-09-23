@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bfe4b1a172158740705e392c573de7911016583
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819564"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179867"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 
@@ -32,7 +32,7 @@ Pour la première fois, Windows a été refactorisé pour avoir un noyau commun 
 
 La plateforme Windows universelle est simplement un ensemble de contrats et de versions. qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation, mais une ou plusieurs familles d’appareils. Pour obtenir plus de détails, consultez [Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.
 
@@ -52,7 +52,7 @@ Voici la liste des logiciels dont vous avez besoin :
 
 - [Windows 10](http://windows.microsoft.com/windows/downloads). Visual Studio 2019 prend en charge le développement UWP uniquement sur Windows 10. Pour plus d’informations, consultez [Ciblage de la plateforme ](/visualstudio/releases/2019/compatibility/) et [Configuration requise](/visualstudio/releases/2019/system-requirements/) pour Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Vous avez également besoin de la charge de travail de développement de la plateforme Windows universelle facultative.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). Vous avez également besoin de la charge de travail de développement de la plateforme Windows universelle facultative.
 
      ![Charge de travail UWP](media/uwp_workload.png)
 

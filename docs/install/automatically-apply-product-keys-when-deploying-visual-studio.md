@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dabaf63e205d3e76432767743e323c90ed389846
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974213"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891307"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio
 
@@ -100,6 +100,9 @@ Si `StorePID.exe` a correctement appliqué la clé de produit, la valeur 0 est 
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+
+> [!NOTE]
+> Pour résoudre les problèmes liés aux instances virtuelles, exécutez *C:\Program Files (x86)\Microsoft Visual Studio \<version\>\Common7\IDE\DDConfigCA.exe*.
 
 ## <a name="see-also"></a>Voir aussi
 

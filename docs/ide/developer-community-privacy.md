@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823367"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864690"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -54,24 +54,28 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 - Fichier journal des activités en mémoire de Visual Studio
 
-- Fichiers PerfWatson, si la collecte Watson est activée, à partir du dossier *VSFeedbackPerfWatsonData*
+- Fichiers PerfWatson, si la collection Watson est activée
 
-- Fichiers journaux LiveShare, s’ils existent, à partir du dossier *VSFeedbackVSRTCLogs*
+- Fichiers journaux LiveShare, s’ils existent
 
-- Fichiers journaux Xamarin, s’ils existent, à partir de *%LOCALAPPDATA%\Xamarin\Logs*
+- Fichiers journaux Xamarin, s’ils existent
 
-- Fichiers journaux NuGet, s’ils existent, à partir de *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Fichiers journaux Nuget, s’ils existent
 
-- Fichiers journaux de débogueur web, s’ils existent :
+- Fichiers journaux du débogueur web, s’ils existent
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Journaux Service Hub et journaux d’erreurs MEF, s’ils existent
 
-  - *%TEMP%\vscode-node-debug2.txt*
+- Journaux Python, s’ils existent
 
-  - *%TEMP%\vscode-edge-debug.txt*
+- Windows Forms les journaux, s’ils existent
+
+> [!NOTE]
+> Les fichiers journaux sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.  
+  > ![Signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
 
 - Une capture d’écran, si vous choisissez de l’inclure
-
+  
 - Les données d’enregistrement, si vous choisissez d’inclure un enregistrement, qui comprennent :
 
   - Les étapes pour reproduire le problème.

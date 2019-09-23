@@ -1,19 +1,20 @@
 ---
 title: 'Tutoriel 2 : Créer un questionnaire mathématique chronométré'
 ms.date: 11/04/2016
-ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
+ms.topic: tutorial
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 39550eb3e2d5fe78e50257b51b52642740781600
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821620"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118867"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : Créer un questionnaire mathématique chronométré
 
@@ -27,7 +28,7 @@ Dans ce didacticiel, vous générez un questionnaire dans lequel la personne int
 
 - Effectuer des opérations arithmétiques de base dans le code.
 
-Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, avec des valeurs différentes :
+Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivante, sauf avec des nombres différents :
 
 ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)
 
@@ -36,7 +37,7 @@ Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, a
 Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du tutoriel](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
+> Ce didacticiel couvre à C# la fois et Visual Basic. vous devez donc vous concentrer sur les informations spécifiques au langage de programmation que vous utilisez.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

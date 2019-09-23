@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/14/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024537"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062389"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,12 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Preview 4 | 16 septembre 2019 | 16.3.29311.281 |
+| 16.2.5 | Édition | 10 septembre 2019 | 16.2.29306.81 |
+| 16.0.8 | Édition | 10 septembre 2019 | 16.0.28803.584 |
+| 16.2.4 | Édition | 5 septembre 2019 | 16.2.29230.47 |
+| 16.3.0 | Preview 3 | 4 septembre 2019 | 16.3.29230.61 |
+| 16.2.3 | Édition | 20 août 2019 | 16.2.29215.179 |
 | 16.2.2 | Édition | 13 août 2019 | 16.2.29209.62 |
 | 16.3.0 | Préversion 2 | 13 août 2019 | 16.3.29209.152 |
 | 16.0.7 | Édition | 13 août 2019 | 16.0.28803.571 |
@@ -90,6 +96,8 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.16 | Édition | 10 septembre 2019 | 15.9.28307.858 |
+| 15.0.27 | Édition | 10 septembre 2019 | 15.0.26228.98 |
 | 15.9.15 | Édition | 13 août 2019 | 15.9.28307.812 |
 | 15.0.26 | Édition | 13 août 2019 | 15.0.26228.96 |
 | 15.9.14 | Édition | 9 juillet 2019 | 15.9.28307.770 |
@@ -185,7 +193,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.5.1 | Édition | 7 décembre 2017 | 15.0.27130.2003 |
 | 15.6.0 Préversion 1 | Preview | 7 décembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Édition | 6 décembre 2017 | 15.0.26228.18 |
-| 15.5 | Édition | 4 décembre 2017 | 15.0.27130.0 |
+| 15.5.0 | Édition | 4 décembre 2017 | 15.0.27130.0 |
 | 15.5.0 Préversion 5 | Preview | 30 novembre 2017 | 15.0.27128.1 |
 | 15.4.5 | Édition | 27 novembre 2017 | 15.0.27004.2010 |
 | 15.5.0 Préversion 4 | Preview | 14 novembre 2017 | 15.0.27110.0 |
@@ -197,7 +205,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.5.0 Préversion 2 | Preview | 23 octobre 2017 | 15.0.27019.1 |
 | 15.4.1 | Édition | 19 octobre 2017 | 15.0.27004.2005 |
 | 15.5 préversion 1 | Preview | 11 octobre 2017 | 15.0.27009.1 |
-| 15.4 | Édition | 9 octobre 2017 | 15.0.27004.2002 |
+| 15.4.0 | Édition | 9 octobre 2017 | 15.0.27004.2002 |
 | 15.4 préversion 6 | Preview | 9 octobre 2017| 15.0.27004.20002 |
 | 15.4 préversion 5 | Preview | 6 octobre 2017 | 15.0.27004.2000 |
 | 15.4 préversion 4 | Preview | 2 octobre 2017 | 15.0.26929.2 |
@@ -213,7 +221,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.3.1 préversion 1 | Preview | 18 août 2017 | 15.0.26730.08 |
 | 15.3.1  | Édition | 18 août 2017 | 15.0.26730.08 |
 | 15.4 préversion 1 | Preview | 24 août 2017 | 15.0.26823.1 |
-| 15.3 | Édition | 14 août 2017 | 15.0.26730.3 |
+| 15.3.0 | Édition | 14 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7.1 | Preview | 11 août 2017 | 15.0.26730.3 |
 | 15.3 préversion 7 | Preview | 1er août 2017 | 15.0.26730.0 |
 | 15.3 préversion 6 | Preview | 26 juillet 2017 | 15.0.26724.1 |
@@ -231,14 +239,14 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 | 15.2.1  | Édition | 12 mai 2017 | 15.0.26430.6 |
 | 15.3 préversion 1.1 | Preview | 11 mai 2017 | 15.0.26510.0 |
 | 15.3 préversion 1 | Preview | 10 mai 2017 | 15.0.26507.0 |
-| 15.2 | Édition | 10 mai 2017 | 15.0.26430.4 |
+| 15.2.0 | Édition | 10 mai 2017 | 15.0.26430.4 |
 | 15.2 préversion 4 | Preview | 3 mai 2017 | 15.0.26430.1 |
 | 15.2 préversion 3 | Preview | 26 avril 2017 | 15.0.26424.2 |
 | 15.2 préversion 2 | Preview | 20 avril 2017 | 15.0.26419.1 |
 | 15.2 préversion 1 | Preview | 17 avril 2017 | 15.0.26412.1 |
 | 15.1.2  | Édition | 17 avril 2017 | 15.0.26403.7 |
 | 15.1.1 | Édition | 10 avril 2017 | 15.0.26403.3 |
-| 15.1 | Édition | 5 avril 2017 | 15.0.26403.0 |
+| 15.1.0 | Édition | 5 avril 2017 | 15.0.26403.0 |
 | 15.0.3  | Édition | 31 mars 2017 | 15.0.26228.12 |
 | 15.0.2 | Édition | 28 mars 2017 | 15.0.26228.10 |
 | 15.1 préversion 3 | Preview | 27 mars 2017 | 15.0.26323.1 |

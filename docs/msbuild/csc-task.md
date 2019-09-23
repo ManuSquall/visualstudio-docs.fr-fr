@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745783"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888031"
 ---
 # <a name="csc-task"></a>Csc (tâche)
 Encapsule*csc.exe* et produit des fichiers exécutables ( *.exe*), des bibliothèques de liens dynamiques ( *.dll*) ou des modules de code ( *.netmodule*). Pour plus d’informations sur *csc.exe*, consultez [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -42,7 +42,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 | `CodePage` | Paramètre `Int32` facultatif.<br /><br /> Spécifie la page de codes à utiliser pour tous les fichiers de code source inclus dans la compilation. Pour plus d’informations, consultez [-codepage (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Paramètre `String` facultatif.<br /><br /> Spécifie le type de débogage. `DebugType` peut avoir la valeur `full` ou `pdbonly`. La valeur par défaut est `full`, ce qui permet d’attacher un débogueur à un programme en cours d’exécution. La spécification de `pdbonly` active le débogage du code source lorsque le programme est démarré dans le débogueur, mais affiche uniquement un assembleur lorsque le programme en cours d’exécution est attaché au débogueur.<br /><br /> Ce paramètre remplace le paramètre `EmitDebugInformation`.<br /><br /> Pour plus d’informations, consultez [-debug (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Paramètre `String` facultatif.<br /><br /> Définit les symboles du préprocesseur. Pour plus d’informations, consultez [-define (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, indique que vous souhaitez obtenir un assembly complètement signé. Si `false`, indique que vous souhaitez placer uniquement la clé publique dans l’assembly.<br /><br /> Ce paramètre n’a aucun effet, sauf s’il est utilisé avec les paramètres `KeyFile` ou `KeyContainer`.<br /><br /> Pour plus d’informations, consultez [-delaysign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, indique que vous souhaitez placer uniquement la clé publique dans l’assembly. Si `false`, spécifie que vous souhaitez un assembly complètement signé<br /><br /> Ce paramètre n’a aucun effet, sauf s’il est utilisé avec les paramètres `KeyFile` ou `KeyContainer`.<br /><br /> Pour plus d’informations, consultez [-delaysign (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Paramètre `Boolean` facultatif.<br/><br/> Quand la valeur est `true`, indique au compilateur de générer un assembly dont le contenu binaire est identique dans les compilations si les entrées sont identiques.<br/><br/>Pour plus d’informations, consultez [-deterministic (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Paramètre `String` facultatif.<br /><br /> Spécifie la liste d’avertissements à désactiver. Pour plus d’informations, consultez [-nowarn (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Paramètre `String` facultatif.<br /><br /> Traite les commentaires de documentation pour les diriger vers un fichier XML. Pour plus d’informations, consultez [-doc (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |
@@ -80,10 +80,10 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 | `Win32Manifest` | Paramètre `String` facultatif.<br /><br /> Spécifie le manifeste Win32 à inclure. |
 | `Win32Resource` | Paramètre `String` facultatif.<br /><br /> Insère un fichier de ressources Win32 ( *.res*) dans le fichier de sortie. Pour plus d’informations, consultez [-win32res (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe `Microsoft.Build.Tasks.ManagedCompiler`, qui hérite de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Exemples
 L’exemple suivant utilise la tâche `Csc` pour compiler un fichier exécutable à partir des fichiers sources de la collection d’éléments `Compile`.
 
 ```xml

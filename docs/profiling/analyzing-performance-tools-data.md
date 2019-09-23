@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34cf1d58250568da1ed64ad0f296f1f8efe43e2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c70e30a8c8367678c6df156e8ea3a5b76889e468
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777297"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128270"
 ---
 # <a name="analyze-performance-tools-data"></a>Analyser les données des outils d’analyse des performances
 Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent d’afficher et d’analyser les problèmes de performances des applications. Cette section fournit une présentation des rapports et des vues de performances qui peuvent être utilisés pour examiner les données de performances.
@@ -41,5 +41,5 @@ Les rapports de performances des outils de profilage [!INCLUDE[vsprvs](../code-q
 
 ## <a name="see-also"></a>Voir aussi
 - [Explorateur de performances](../profiling/performance-explorer.md)
-- [Profilage dans Visual Studio](../profiling/index.md)
+- [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

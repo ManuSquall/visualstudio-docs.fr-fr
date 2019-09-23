@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551145"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293447"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurer les analyseurs FxCop
 
-Les [analyseurs FxCop](install-fxcop-analyzers.md) se composent des règles «FxCop» les plus importantes de l’analyse héritée, converties en analyseurs de code .NET Compiler Platform. Vous pouvez configurer des analyseurs de code FxCop de deux manières:
+Les [analyseurs FxCop](install-fxcop-analyzers.md) se composent des règles « FxCop » les plus importantes de l’analyse héritée, converties en analyseurs de code .NET Compiler Platform. Vous pouvez configurer des analyseurs de code FxCop de deux manières :
 
 - Avec un [ensemble de règles](#fxcop-analyzer-rule-sets), qui vous permet d’activer ou de désactiver la règle et de définir la gravité des violations de règles individuelles.
 
@@ -31,7 +31,7 @@ Les [analyseurs FxCop](install-fxcop-analyzers.md) se composent des règles «Fx
 
 L’une des méthodes permettant de configurer les analyseurs FxCop consiste à utiliser un *ensemble de règles*XML. Un ensemble de règles est un regroupement de règles d’analyse du code qui identifient des problèmes ciblés et des conditions spécifiques. Les ensembles de règles vous permettent d’activer ou de désactiver la règle et de définir la gravité des violations de règles individuelles.
 
-Le package NuGet de l’analyseur FxCop comprend des ensembles de règles prédéfinis pour les catégories de règles suivantes:
+Le package NuGet de l’analyseur FxCop comprend des ensembles de règles prédéfinis pour les catégories de règles suivantes :
 
 - design
 - documentation
@@ -46,7 +46,10 @@ Pour plus d’informations, consultez [ensembles de règles pour les analyseurs 
 
 ## <a name="editorconfig-file"></a>Fichier EditorConfig
 
-Vous pouvez configurer des règles d’analyseur en ajoutant des paires clé-valeur à un fichier [. editorconfig](https://editorconfig.org) . Un fichier de configuration peut être [spécifique à un projet](#per-project-configuration) ou peut être [partagé](#shared-configuration) entre plusieurs projets.
+Vous pouvez configurer les règles de l’analyseur FxCop en ajoutant des paires clé-valeur à un fichier [. editorconfig](https://editorconfig.org) . Un fichier de configuration peut être [spécifique à un projet](#per-project-configuration) ou peut être [partagé](#shared-configuration) entre plusieurs projets.
+
+> [!NOTE]
+> Vous ne pouvez pas configurer les règles FxCop héritées à l’aide d’un fichier. editorconfig.
 
 ### <a name="per-project-configuration"></a>Configuration par projet
 
@@ -57,15 +60,15 @@ Pour activer la configuration de l’analyseur basé sur editorconfig pour un pr
 >
 > ![Ajouter un élément editorconfig au projet dans Visual Studio](media/add-editorconfig-file.png)
 
-Actuellement, il n’existe pas de prise en charge hiérarchique pour la «combinaison» de fichiers. editorconfig qui existent à différents niveaux de répertoire, par exemple, le niveau de la solution et du projet.
+Actuellement, il n’existe pas de prise en charge hiérarchique pour la « combinaison » de fichiers. editorconfig qui existent à différents niveaux de répertoire, par exemple, le niveau de la solution et du projet.
 
 ### <a name="shared-configuration"></a>Configuration partagée
 
-Vous pouvez partager un fichier. editorconfig pour la configuration de l’analyseur entre deux projets ou plus, mais cela nécessite des étapes supplémentaires.
+Vous pouvez partager un fichier. editorconfig pour la configuration de l’analyseur FxCop entre deux projets ou plus, mais cela nécessite des étapes supplémentaires.
 
 1. Enregistrez le fichier *. editorconfig* dans un emplacement commun.
 
-2. Créez un fichier *. props* avec le contenu suivant:
+2. Créez un fichier *. props* avec le contenu suivant :
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -90,7 +93,7 @@ Vous pouvez partager un fichier. editorconfig pour la configuration de l’analy
 4. Rechargez le projet.
 
 > [!NOTE]
-> Vous ne pouvez pas configurer les règles FxCop héritées à l’aide d’un fichier. editorconfig.
+> L’emplacement partagé arbitraire du fichier EditorConfig décrit ici s’applique uniquement à la configuration des analyseurs FxCop. Pour les autres paramètres, tels que la mise en retrait et le style de code, le fichier EditorConfig doit toujours être placé dans le dossier du projet ou dans un dossier parent.
 
 ## <a name="option-scopes"></a>Étendues des options
 
@@ -98,7 +101,7 @@ Chaque option peut être configurée pour toutes les règles, pour une catégori
 
 ### <a name="all-rules"></a>Toutes les règles
 
-La syntaxe de configuration d’une option pour toutes les règles est la suivante:
+La syntaxe de configuration d’une option pour toutes les règles est la suivante :
 
 |Syntaxe|Exemple|
 |-|-|
@@ -106,7 +109,7 @@ La syntaxe de configuration d’une option pour toutes les règles est la suivan
 
 ### <a name="category-of-rules"></a>Catégorie de règles
 
-La syntaxe permettant de configurer une option pour une *catégorie* de règles (par exemple, le nom, la conception ou la performance) est la suivante:
+La syntaxe permettant de configurer une option pour une *catégorie* de règles (par exemple, le nom, la conception ou la performance) est la suivante :
 
 |Syntaxe|Exemple|
 |-|-|
@@ -114,7 +117,7 @@ La syntaxe permettant de configurer une option pour une *catégorie* de règles 
 
 ### <a name="specific-rule"></a>Règle spécifique
 
-La syntaxe de configuration d’une option pour une règle spécifique est la suivante:
+La syntaxe de configuration d’une option pour une règle spécifique est la suivante :
 
 |Syntaxe|Exemples|
 |-|-|

@@ -2,7 +2,7 @@
 title: Utiliser les paramètres de ligne de commande pour installer Visual Studio
 titleSuffix: ''
 description: Découvrez comment utiliser les paramètres de ligne de commande pour contrôler ou personnaliser votre installation de Visual Studio.
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951317"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913245"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio
 
@@ -32,7 +32,7 @@ Lorsque vous installez Visual Studio à partir d’une invite de commandes, vous
 - Automatiser le processus d’installation.
 - Créer un cache (disposition) des fichiers d’installation pour une utilisation ultérieure.
 
-Les options de ligne de commande sont utilisées conjointement avec le programme d’amorçage du programme d’installation, qui est le petit fichier (environ 1 Mo) qui lance le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio. Utilisez les liens suivants pour obtenir un lien direct vers le programme d’amorçage de la version la plus récente de l’édition du produit que vous installez :
+Les options de ligne de commande sont utilisées conjointement avec le programme d’amorçage du programme d’installation, qui est le petit fichier (1 Mo) qui initie le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio. Utilisez les liens suivants pour obtenir un lien direct vers le programme d’amorçage de la version la plus récente de l’édition du produit que vous installez :
 
 ::: moniker range="vs-2017"
 
@@ -54,9 +54,9 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 
  Les paramètres de ligne de commande Visual Studio ne respectent pas la casse.
 
-> Syntaxe : `vs_enterprise.exe [command] <options>...`
+> Syntaxe : `vs_enterprise.exe [command] <options>...`
 
-(Remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que vous installez.)
+Remplacez `vs_enterprise.exe` le cas échéant par l’édition du produit que vous installez. (Vous pouvez également utiliser `vs_installer.exe`.)
 
 >[!TIP]
 > Pour obtenir des exemples supplémentaires sur l’utilisation de la ligne de commande afin d’installer Visual Studio, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).
@@ -68,7 +68,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `update` | Met à jour un produit installé. |
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
-| `export` | **Nouveautés dans la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque** : Peut uniquement être utilisé avec vs_installer.exe. |
+| `export` | **Nouveautés dans la version 15.9** : Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque**: Peut uniquement être utilisé avec vs_installer.exe. |
 
 ## <a name="install-options"></a>Options d’installation
 
@@ -112,7 +112,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | **Options d’installation avancées** | **Description** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Facultatif** : ID de canal pour l’instance à installer. Cette option est requise pour la commande d’installation, ignorée pour les autres commandes si `--installPath` est spécifié. |
-| `--channelUri <uri>` | **Facultatif** : URI du manifeste de canal. Si les mises à jour ne sont pas souhaitées, `--channelUri` peut pointer vers un fichier non existant. (par exemple, --channelUri C:\doesntExist.chman). Cette option peut être utilisée pour la commande d’installation. Elle est ignorée pour les autres commandes. |
+| `--channelUri <uri>` | **Facultatif** : URI du manifeste de canal. Si les mises à jour ne sont pas `--channelUri` souhaitées, peut pointer vers un fichier inexistant (par exemple,--channelUri C:\doesntExist.chman). Cette option peut être utilisée pour la commande d’installation. Elle est ignorée pour les autres commandes. |
 | `--installChannelUri <uri>` | **Facultatif** : URI du manifeste de canal à utiliser pour l’installation. L’URI spécifié par `--channelUri` (qui doit être spécifié en même temps que `--installChannelUri`) est utilisé pour détecter les mises à jour. Cette option peut être utilisée pour la commande d’installation. Elle est ignorée pour les autres commandes. |
 | `--installCatalogUri <uri>` | **Facultatif** : URI du manifeste de catalogue à utiliser pour l’installation. Si spécifié, le gestionnaire de canal tente de télécharger le manifeste de catalogue à partir de cet URI avant d’utiliser l’URI du manifeste de canal d’installation. Ce paramètre est utilisé pour prendre en charge l’installation hors connexion, où le cache de disposition est créé avec le catalogue de produits déjà téléchargé. Cette option peut être utilisée pour la commande d’installation. Elle est ignorée pour les autres commandes. |
 | `--productId <id>` | **Facultatif** : ID de produit pour l’instance à installer. Ce champ est prérempli dans des conditions d’installation normale. |
@@ -123,8 +123,8 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--noUpdateInstaller` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, empêche la mise à jour du programme d’installation quand le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
 | `--noWeb` | **Nouveautés de la version 15.3, facultatif** : S’il est présent, le programme d’installation de Visual Studio utilise les fichiers dans votre répertoire de disposition pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la disposition, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important** : Cela n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Nouveautés de la version 15.7, facultatif** : Permet de spécifier des chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
-| `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : Utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : Contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
+| `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : Utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : Contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
 | `--path install=<path>` | **Nouveautés de la version 15.7, facultatif** : Équivalent à `–-installPath`. En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Seule une des deux options peut être utilisée à la fois. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste des ID de charge de travail et de composant
@@ -154,14 +154,7 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 
 En fonction du résultat de l’opération, la variable d’environnement `%ERRORLEVEL%` a l’une des valeurs suivantes :
 
-| **Valeur** | **Résultat** |
-| --------- | ---------- |
-| 0 | Opération effectuée avec succès |
-| 1602 | Opération annulée |
-| 3010 | Opération effectuée avec succès, mais l’installation nécessite un redémarrage avant de pouvoir être utilisée |
-| 5004 | Opération annulée |
-| 5007 | L’opération a été bloquée - l’ordinateur ne répond pas à la configuration requise |
-| Autre | Une condition d’échec s’est produite - Pour plus d’informations, consultez les journaux |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Chaque opération génère plusieurs fichiers journaux dans le répertoire `%TEMP%`, qui indiquent la progression de l’installation. Triez le dossier par date et recherchez les fichiers commençant par `dd_bootstrapper`, `dd_client` et `dd_setup` pour le programme d’amorçage, l’application du programme d’installation et le moteur d’installation, respectivement.
 
