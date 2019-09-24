@@ -75,6 +75,7 @@
 ### [Création d’applications ASP.NET Core dans Visual Studio pour Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript et TypeScript](javascript.md)
+### [launchSettings.json](launch-settings.md)
 ## Azure
 ### [Vue d’ensemble](azure-workload.md)
 ### [Introduction à Azure Functions](azure-functions.md)
