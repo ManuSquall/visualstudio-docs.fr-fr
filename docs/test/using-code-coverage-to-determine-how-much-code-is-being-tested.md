@@ -57,7 +57,7 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 2. Une fois les tests exécutés, pour voir ![les lignes qui ont été exécutées, choisissez afficher l’icône](../test/media/codecoverage-showcoloringicon.png) de coloration de la couverture du code afficher la coloration de la couverture du **code** dans la fenêtre résultats de la couverture du **code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
 
    > [!TIP]
-   > Pour modifier les couleurs ou utiliser le style gras, choisissez **Outils** > **options** > **environnement** >  ****polices et couleurs** > afficher les paramètres pour : Éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
+   > Pour modifier les couleurs ou utiliser le style gras, choisissez **Outils** > **options** > **environnement** > **polices et couleurs** > **afficher les paramètres pour : Éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
    >
    > ![Polices et couleurs de la couverture du code](media/vs-2019/coverage-fonts-and-colors.png)
 
