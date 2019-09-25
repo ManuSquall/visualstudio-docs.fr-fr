@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416598"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211257"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compiler et générer dans Visual Studio
 
@@ -25,7 +25,7 @@ Quand vous générez le code source, le moteur de génération crée des assembl
 
 En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant les versions Debug du code.
 
-Une génération réussie valide que le code source de l’application contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le résultat est une application exécutable dont le fonctionnement peut être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Pour une présentation de ce processus, consultez [Procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md).
+Une génération réussie valide que le code source de l’application contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le résultat est une application exécutable dont le fonctionnement peut être testé à la fois dans un [environnement de débogage](../debugger/index.yml) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Pour une présentation de ce processus, consultez [Procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md).
 
 Il existe plusieurs méthodes permettant de générer une application : l’environnement IDE Visual Studio, les outils en ligne de commande de MSBuild et Azure Pipelines :
 
