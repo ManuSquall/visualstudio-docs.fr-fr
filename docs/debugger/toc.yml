@@ -1,5 +1,5 @@
 - name: Documentation sur le débogueur
-  href: index.md
+  href: index.yml
 - name: Vue d'ensemble
   items:
     - name: "Qu’est-ce que le débogage\_?"
@@ -450,7 +450,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Prérécupérer du contenu pour les applications du Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Code managé
+        - name: 'Code managé (C#, Visual Basic, F#)'
           items:
             - name: Déboguer du code managé
               href: debugging-managed-code.md
@@ -494,7 +494,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Déboguer F#'
               href: debugging-f-hash.md
-        - name: Code natif
+        - name: Code C/C++
           items:
             - name: Déboguer du code natif
               href: debugging-native-code.md
@@ -582,7 +582,7 @@
                   href: com-debugging-tools.md
             - name: Déboguer du code injecté
               href: how-to-debug-injected-code.md
-        - name: Déboguer du code GPU
+        - name: Code GPU
           href: debugging-gpu-code.md
         - name: Graphics Diagnostics
           href: graphics/toc.yml
@@ -632,6 +632,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Le serveur web n’est pas configuré correctement
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript et TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Applications web
           items:
             - name: Déboguer des applications web
