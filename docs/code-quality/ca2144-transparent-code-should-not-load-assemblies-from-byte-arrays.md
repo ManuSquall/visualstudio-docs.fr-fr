@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff77d02ef9778112f5229e8104e9a1c1a1cde87
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 33edff9b22559799cef4ad7e03058a5eb212182b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920436"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232014"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144 : Le code transparent ne doit pas charger d'assemblys depuis des tableaux d'octets
 
@@ -23,11 +23,11 @@ ms.locfileid: "68920436"
 |-|-|
 |TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|
 |CheckId|CA2144|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Une méthode transparente charge un assembly à partir d’un tableau d’octets à l’aide de l’une des méthodes suivantes:
+Une méthode transparente charge un assembly à partir d’un tableau d’octets à l’aide de l’une des méthodes suivantes :
 
 - <xref:System.Reflection.Assembly.Load%2A>
 

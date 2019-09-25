@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2bf4833aebdb6a92b9bd05294dd314dc2967738e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921556"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233687"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : N'ignorez pas les résultats des méthodes
 
@@ -29,12 +29,12 @@ ms.locfileid: "68921556"
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
 |CheckId|CA1806|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Il existe plusieurs raisons possibles pour cet avertissement:
+Il existe plusieurs raisons possibles pour cet avertissement :
 
 - Un nouvel objet est créé, mais n’est jamais utilisé.
 
@@ -53,7 +53,7 @@ Si la méthode A crée une nouvelle instance de l’objet B qui n’est jamais u
 
 Si la méthode A appelle la méthode B, mais n’utilise pas la nouvelle instance de chaîne que la méthode B retourne. Transmettez l’instance comme argument à une autre méthode, assignez l’instance à une variable. Ou supprimez l’appel s’il n’est pas nécessaire.
 
- ou
+ \- ou -
 
 Si la méthode A appelle la méthode B, mais n’utilise pas le HRESULT ou le code d’erreur retourné par la méthode. Utilisez le résultat dans une instruction conditionnelle, assignez le résultat à une variable ou transmettez-le en tant qu’argument à une autre méthode.
 
@@ -67,7 +67,7 @@ L’exemple suivant montre une classe qui ignore le résultat de l’appel de St
 [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
 [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant résout la violation précédente en affectant le résultat de String. Trim à la variable sur laquelle elle a été appelée.
 
 [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]

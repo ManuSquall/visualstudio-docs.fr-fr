@@ -1,5 +1,5 @@
 ---
-title: Un projet Visual C++ de débogage à distance | Microsoft Docs
+title: Déboguer à C++ distance un projet visuel | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903505"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211112"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un projet Visual C++ dans Visual Studio de débogage à distance
-Pour déboguer une application de Visual Studio sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous allez déployer votre application, configurez votre projet pour vous connecter à l’ordinateur distant à partir de Visual Studio, puis déployer et exécuter votre application.
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Débogage à distance d’un C++ projet visuel dans Visual Studio
+Pour déboguer une application Visual Studio sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous allez déployer votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis déployez et exécutez votre application.
 
 ![Composants du débogueur distant](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
-Pour plus d’informations sur le débogage des applications de Windows universelle (UWP) à distance, consultez [déboguer un Package d’application installé](debug-installed-app-package.md).
+Pour plus d’informations sur le débogage à distance des applications Windows universelles (UWP), consultez [Déboguer un package d’application installé](debug-installed-app-package.md).
 
 ## <a name="requirements"></a>Configuration requise
 
-Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
+Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server à partir de Windows Server 2008 Service Pack 2. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles.
+> Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent.
 
 ## <a name="download-and-install-the-remote-tools"></a>Télécharger et installer les outils de contrôle à distance
 
@@ -50,16 +50,16 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Si vous avez besoin pour ajouter des autorisations pour les utilisateurs supplémentaires, modifiez le mode d’authentification, ou le numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
+> Si vous devez ajouter des autorisations pour des utilisateurs supplémentaires, modifier le mode d’authentification ou le numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
 
 ## <a name="remote_cplusplus"></a> Débogage distant d’un projet Visual C++
- Dans la procédure suivante, le nom et le chemin d’accès du projet est C:\remotetemp\MyMfc, et le nom de l’ordinateur distant est **MJO-DL**.
+ Dans la procédure suivante, le nom et le chemin d’accès du projet sont C:\remotetemp\MyMfc, et le nom de l’ordinateur distant est **MJO-DL**.
 
 1. Créez une application MFC nommée **mymfc**.
 
 2. Définissez un point d’arrêt facilement accessible quelque part dans l’application, par exemple dans **MainFrm.cpp**, au début de `CMainFrame::OnCreate`.
 
-3. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**. Ouvrez l’onglet **Débogage**.
+3. Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet et sélectionnez **Propriétés**. Ouvrez l’onglet **Débogage**.
 
 4. Définissez **Débogueur à lancer** sur **Débogueur Windows distant**.
 
@@ -71,15 +71,15 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
    |-|-|
    |Commande distante|C:\remotetemp\mymfc.exe|
    |Répertoire de travail|C:\remotetemp|
-   |Nom du serveur distant|DL-MJO :*numéro_port*|
+   |Nom du serveur distant|MJO-DL :*numéro_port*|
    |Connexion|À distance avec authentification Windows|
    |Type de débogueur|Natif uniquement|
    |Répertoire de déploiement|C:\remotetemp.|
    |Fichiers supplémentaires à déployer|C:\data\mymfcdata.txt.|
 
-    Si vous déployez des fichiers supplémentaires (facultatifs), le dossier doit exister sur les deux ordinateurs.
+    Si vous déployez des fichiers supplémentaires (facultatif), le dossier doit exister sur les deux ordinateurs.
 
-6. Dans l’Explorateur de solutions, cliquez sur la solution et choisissez **Configuration Manager**.
+6. Dans Explorateur de solutions, cliquez avec le bouton droit sur la solution et choisissez **Configuration Manager**.
 
 7. Pour la configuration **Debug**, cochez la case **Déployer**.
 
@@ -89,25 +89,25 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 
 9. Le fichier exécutable est déployé automatiquement sur l’ordinateur distant.
 
-10. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à l’ordinateur distant.
+10. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à la machine distante.
 
-     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pourrez choisir un certificat de sécurité ou entrez votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme <strong>MJO-DL\name@something.com</strong>, ainsi que le mot de passe correct.
+     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez choisir un certificat de sécurité ou entrer votre nom de domaine et votre mot de passe. Sur un ordinateur qui n’est pas un domaine, vous pouvez entrer le nom de l’ordinateur et un nom <strong>MJO-DL\name@something.com</strong>de compte d’utilisateur valide, comme, ainsi que le mot de passe correct.
 
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.
 
     > [!TIP]
     > Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.
 
-    Si vous avez des fichiers de code non requis par l’application, vous pouvez les spécifier dans **fichiers supplémentaires à déployer** sur le **débogueur Windows distant** page.
+    Si vous avez des fichiers non-code requis par l’application, vous pouvez les spécifier dans **des fichiers supplémentaires à déployer** sur la page du **débogueur Windows distant** .
 
-    Ou bien, vous pouvez inclure les fichiers dans votre projet et définir le **contenu** propriété **Oui** dans le **propriétés** page pour chaque fichier. Ces fichiers sont copiés vers le **répertoire de déploiement** spécifié sur le **débogueur Windows distant** page. Vous pouvez également modifier le **Type d’élément** à **copier le fichier** et spécifier des propriétés supplémentaires si vous avez besoin des fichiers à copier dans un sous-dossier de la **répertoire de déploiement**.
+    Vous pouvez également inclure les fichiers de votre projet et définir la propriété de **contenu** sur **Oui** dans la page **Propriétés** de chaque fichier. Ces fichiers sont copiés dans le **Répertoire de déploiement** spécifié sur la page du **débogueur Windows distant** . Vous pouvez également modifier le **type d’élément** pour **copier le fichier** et spécifier des propriétés supplémentaires ici si vous avez besoin de copier les fichiers dans un sous-dossier du **Répertoire de déploiement**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)

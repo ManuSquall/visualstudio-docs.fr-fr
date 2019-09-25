@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c33f4b0b55728d659c34e0ffc8723f555a6d074d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922242"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234917"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308 : Normaliser les chaînes en majuscules
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922242"
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|Catégorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause

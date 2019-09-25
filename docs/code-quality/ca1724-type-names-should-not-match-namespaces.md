@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546018"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233856"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Noms de types ne doivent pas correspondre aux espaces de noms
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas correspondre à des espaces de noms
 
 |||
 |-|-|
@@ -32,16 +32,16 @@ ms.locfileid: "62546018"
 
 ## <a name="cause"></a>Cause
 
-Un nom de type correspond à un nom d’espace de noms référencé qui a un ou plusieurs types visibles de l’extérieur. La comparaison des noms respecte la casse.
+Un nom de type correspond à un nom d’espace de noms référencé qui possède un ou plusieurs types visibles de l’extérieur. La comparaison de noms ne respecte pas la casse.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les noms de type créés par l’utilisateur ne doivent pas correspondre les noms des espaces de noms référencés qui ont des types visibles de l’extérieur. Violation de cette règle peut réduire la facilité d’utilisation de votre bibliothèque.
+Les noms de types créés par l’utilisateur ne doivent pas correspondre aux noms des espaces de noms référencés qui ont des types visibles de l’extérieur. La violation de cette règle peut réduire l’utilisation de votre bibliothèque.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Renommer le type de sorte qu’il ne correspond pas à celui d’un espace de noms référencé qui a des types visibles de l’extérieur.
+Renommez le type de sorte qu’il ne corresponde pas au nom d’un espace de noms référencé qui a des types visibles de l’extérieur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Pour un nouveau développement, aucun connus scénarios se produisent où vous devez supprimer un avertissement de cette règle. Avant de pouvoir supprimer l’avertissement, étudiez attentivement la façon dont les utilisateurs de votre bibliothèque peuvent être désorientés par le nom correspondant. Pour livrer des bibliothèques, vous devrez peut-être supprimer un avertissement de cette règle.
+Pour un nouveau développement, aucun scénario connu ne se produit lorsque vous devez supprimer un avertissement de cette règle. Avant de supprimer l’avertissement, réfléchissez bien à la façon dont les utilisateurs de votre bibliothèque peuvent être confondus par le nom correspondant. Pour les bibliothèques d’expédition, vous devrez peut-être supprimer un avertissement de cette règle.

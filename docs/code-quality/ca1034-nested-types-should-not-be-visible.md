@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ead932af202bd1a44464025a1b09baa698acb7b1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922861"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236034"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034 : Les types imbriqués ne doivent pas être visibles
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922861"
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,7 +41,7 @@ Un type visible de l’extérieur contient une déclaration de type visible de l
 ## <a name="rule-description"></a>Description de la règle
 Un type imbriqué est un type déclaré dans la portée d’un autre type. Les types imbriqués sont utiles pour l’encapsulation des détails de l’implémentation privée du type conteneur. Utilisés à cette fin, les types imbriqués ne doivent pas être visibles de l'extérieur.
 
-N’utilisez pas de types imbriqués visibles de l’extérieur pour le regroupement logique ou pour éviter les conflits de noms; Utilisez plutôt des espaces de noms.
+N’utilisez pas de types imbriqués visibles de l’extérieur pour le regroupement logique ou pour éviter les conflits de noms ; Utilisez plutôt des espaces de noms.
 
 Les types imbriqués incluent la notion d’accessibilité des membres, que certains programmeurs ne comprennent pas clairement.
 
@@ -53,7 +53,7 @@ Si vous ne souhaitez pas que le type imbriqué soit visible de l’extérieur, m
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre un type qui viole la règle.
 
 [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]

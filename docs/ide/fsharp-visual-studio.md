@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747596"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211300"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -146,7 +146,7 @@ Le tableau suivant récapitule les fonctionnalités qui sont disponibles quand v
 |Pas à pas détaillé|Permet d’avancer l’exécution et d’accéder à n’importe quel appel de fonction.|Oui|
 |Pas à pas principal|Permet d’avancer l’exécution dans le frame de pile actuel et de se déplacer après tout appel de fonction.|Oui|
 
-Pour obtenir des informations générales sur le débogueur Visual Studio, consultez [Débogage dans Visual Studio](../debugger/index.md).
+Pour obtenir des informations générales sur le débogueur Visual Studio, consultez [Débogage dans Visual Studio](../debugger/index.yml).
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 

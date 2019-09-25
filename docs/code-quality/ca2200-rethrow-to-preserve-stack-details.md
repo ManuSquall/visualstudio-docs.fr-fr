@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796843"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231906"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Levez à nouveau une exception pour conserver les détails de la pile
 
@@ -35,15 +35,15 @@ ms.locfileid: "62796843"
 
 ## <a name="cause"></a>Cause
 
-Une exception est levée de nouveau et l’exception est explicitement spécifiée dans le `throw` instruction.
+Une exception est levée à nouveau et l’exception est explicitement spécifiée dans l' `throw` instruction.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une fois qu’une exception est levée, partie des informations qu’il transporte est la trace de pile. La trace de pile est une liste de la hiérarchie d’appels de méthode qui commence par la méthode qui lève l’exception et se termine par la méthode qui intercepte l’exception. Si une exception est levée à nouveau en spécifiant l’exception dans le `throw` instruction, la trace de pile est redémarrée à la méthode actuelle et la liste d’appels de méthode entre la méthode d’origine qui a levé l’exception et la méthode actuelle est perdue. Pour conserver les informations de trace de pile d’origine avec l’exception, utilisez la `throw` instruction sans spécifier l’exception.
+Une fois qu’une exception est levée, une partie des informations qu’elle contient est la trace de la pile. La trace de la pile est une liste de la hiérarchie d’appels de méthode qui commence par la méthode qui lève l’exception et se termine par la méthode qui intercepte l’exception. Si une exception est levée à nouveau en spécifiant l’exception dans `throw` l’instruction, la trace de la pile est redémarrée au niveau de la méthode actuelle et la liste des appels de méthode entre la méthode d’origine qui a levé l’exception et la méthode actuelle est perdue. Pour conserver les informations de trace de la pile d’origine avec l' `throw` exception, utilisez l’instruction sans spécifier l’exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, l’exception à nouveau sans spécifier explicitement.
+Pour corriger une violation de cette règle, levez à nouveau l’exception sans spécifier explicitement l’exception.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -51,7 +51,7 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode, `CatchAndRethrowExplicitly`, ce qui viole la règle et une méthode, `CatchAndRethrowImplicitly`, ce qui satisfait la règle.
+L’exemple suivant montre une méthode, `CatchAndRethrowExplicitly`, qui enfreint la règle et une méthode, `CatchAndRethrowImplicitly`, qui satisfait la règle.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546887"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237964"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234 : Passez des objets System.Uri à la place de chaînes
 
@@ -31,18 +31,18 @@ ms.locfileid: "69546887"
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un appel est effectué à une méthode qui a un paramètre de chaîne dont le nom contient «URI», «Uri», «URN», «URN», «URL» ou «URL» et le type déclarant de la méthode contient une surcharge de méthode correspondante qui a <xref:System.Uri?displayProperty=fullName> un paramètre.
+Un appel est effectué à une méthode qui a un paramètre de chaîne dont le nom contient « URI », « Uri », « URN », « URN », « URL » ou « URL » et le type déclarant de la méthode contient une surcharge de méthode correspondante qui a <xref:System.Uri?displayProperty=fullName> un paramètre.
 
 Par défaut, cette règle examine uniquement les méthodes et les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Un nom de paramètre est divisé en jetons en fonction de la Convention de casse mixte, puis chaque jeton est vérifié pour voir s’il est égal à «URI», «Uri», «URN», «URN», «URL» ou «URL». En cas de correspondance, le paramètre est supposé représenter un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La <xref:System.Uri> classe fournit ces services de manière sûre et sécurisée. Lorsqu’il existe un choix entre deux surcharges qui diffèrent uniquement en ce qui concerne la représentation d’un URI, l’utilisateur doit choisir la <xref:System.Uri> surcharge qui prend un argument.
+Un nom de paramètre est divisé en jetons en fonction de la Convention de casse mixte, puis chaque jeton est vérifié pour voir s’il est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, le paramètre est supposé représenter un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La <xref:System.Uri> classe fournit ces services de manière sûre et sécurisée. Lorsqu’il existe un choix entre deux surcharges qui diffèrent uniquement en ce qui concerne la représentation d’un URI, l’utilisateur doit choisir la <xref:System.Uri> surcharge qui prend un argument.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -54,7 +54,7 @@ Il est possible de supprimer sans risque un avertissement de cette règle si le 
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca2234.api_surface = private, internal
@@ -64,7 +64,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode, `ErrorProne`, qui enfreint la règle et une méthode, `SaferWay`, qui appelle correctement la <xref:System.Uri> surcharge:
+L’exemple suivant montre une méthode, `ErrorProne`, qui enfreint la règle et une méthode, `SaferWay`, qui appelle correctement la <xref:System.Uri> surcharge :
 
 [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
 [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]

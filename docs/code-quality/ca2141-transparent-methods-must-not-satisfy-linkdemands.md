@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920516"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232131"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141 : Les méthodes transparentes ne répondent pas aux LinkDemands
 
@@ -23,7 +23,7 @@ ms.locfileid: "68920516"
 |-|-|
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -32,7 +32,7 @@ Une méthode transparente de sécurité appelle une méthode dans un assembly qu
 ## <a name="rule-description"></a>Description de la règle
 La satisfaction d’un LinkDemand est une opération sensible à la sécurité qui peut entraîner une élévation non intentionnelle des privilèges. Le code transparent de sécurité ne doit pas répondre aux LinkDemands, car il n’est pas soumis aux mêmes exigences d’audit de sécurité que le code critique de sécurité. Les méthodes transparentes dans les assemblys du niveau 1 de l’ensemble de règles de sécurité entraînent la conversion de tous les LinkDemands qu’ils satisfont en demandes complètes au moment de l’exécution, ce qui peut entraîner des problèmes de performances. Dans les assemblys de niveau 2 de l’ensemble de règles de sécurité, les méthodes transparentes ne peuvent pas être compilées dans le compilateur juste-à-temps (JIT) si elles essaient de satisfaire un LinkDemand.
 
-Dans les assemblys qui utilisent la sécurité de niveau 2, les tentatives effectuées par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un <xref:System.MethodAccessException>assembly non APTCA lèvent un; dans les assemblys de niveau 1, le LinkDemand devient une demande complète.
+Dans les assemblys qui utilisent la sécurité de niveau 2, les tentatives effectuées par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un <xref:System.MethodAccessException>assembly non APTCA lèvent un ; dans les assemblys de niveau 1, le LinkDemand devient une demande complète.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, marquez la méthode d’accès avec <xref:System.Security.SecurityCriticalAttribute> l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut ou, ou supprimez le LinkDemand de la méthode accédée.

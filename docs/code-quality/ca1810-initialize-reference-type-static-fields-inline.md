@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8838de46c6b14f698194f343aebec30402452970
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5e6f65c8b8c570f8df142c36f85388b68b66d3b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921524"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233657"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921524"
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
-|Catégorie|Microsoft. performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,7 +41,7 @@ Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste
 
 Lorsque toutes les données statiques sont initialisées en ligne et qu’un constructeur statique explicite n’est pas déclaré, les compilateurs MSIL (Microsoft Intermediate `beforefieldinit` Language) ajoutent l’indicateur et un constructeur statique implicite, qui initialise les données statiques, en type MSIL définition. Quand le compilateur JIT rencontre l' `beforefieldinit` indicateur, la plupart du temps, les vérifications du constructeur statique ne sont pas ajoutées. L’initialisation statique est garantie à un moment donné avant l’accès à tous les champs statiques, mais pas avant l’appel d’une méthode ou d’un constructeur d’instance statique. Notez que l’initialisation statique peut se produire à tout moment après la déclaration d’une variable du type.
 
-Les vérifications des constructeurs statiques peuvent diminuer les performances. Souvent, un constructeur statique est utilisé uniquement pour initialiser des champs statiques. dans ce cas, vous devez uniquement vérifier que l’initialisation statique se produit avant le premier accès à un champ statique. Le `beforefieldinit` comportement est adapté à ces types et à la plupart des autres types. Elle n’est pas appropriée lorsque l’initialisation statique affecte l’état global et que l’une des conditions suivantes est vraie:
+Les vérifications des constructeurs statiques peuvent diminuer les performances. Souvent, un constructeur statique est utilisé uniquement pour initialiser des champs statiques. dans ce cas, vous devez uniquement vérifier que l’initialisation statique se produit avant le premier accès à un champ statique. Le `beforefieldinit` comportement est adapté à ces types et à la plupart des autres types. Elle n’est pas appropriée lorsque l’initialisation statique affecte l’état global et que l’une des conditions suivantes est vraie :
 
 - L’effet sur l’état global est onéreux et n’est pas requis si le type n’est pas utilisé.
 
@@ -51,7 +51,7 @@ Les vérifications des constructeurs statiques peuvent diminuer les performances
 Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu’elles sont déclarées et supprimez le constructeur statique.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
-Il est possible de supprimer sans risque un avertissement de cette règle si les performances ne sont pas un problème; ou si les modifications d’État globales provoquées par l’initialisation statique sont coûteuses ou doivent être garanties avant qu’une méthode statique du type soit appelée ou qu’une instance du type soit créée.
+Il est possible de supprimer sans risque un avertissement de cette règle si les performances ne sont pas un problème ; ou si les modifications d’État globales provoquées par l’initialisation statique sont coûteuses ou doivent être garanties avant qu’une méthode statique du type soit appelée ou qu’une instance du type soit créée.
 
 ## <a name="example"></a>Exemple
 

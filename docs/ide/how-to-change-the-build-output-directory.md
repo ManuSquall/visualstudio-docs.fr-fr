@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416811"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238188"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
 
@@ -43,6 +43,15 @@ Vous pouvez spécifier l’emplacement de sortie généré par votre projet en f
    Tapez le chemin vers lequel générer la sortie (absolu ou relatif au répertoire racine du projet) ou choisissez **Parcourir** pour accéder à ce dossier.
 
    ![Propriété de chemin de sortie pour un projet Visual Studio C#](media/output-path.png)
+   
+   > [!NOTE]
+   > Certains projets comportent par défaut l’infrastructure et le runtime dans le chemin de la Build. Pour modifier cette valeur, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, sélectionnez **modifier le fichier projet**, puis ajoutez le code suivant :
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Si la sortie n’est pas générée à l’emplacement que vous avez spécifié, vérifiez que vous créez la configuration correspondante (par exemple, **Debug** ou **Release**) en la sélectionnant dans la barre de menus de Visual Studio.

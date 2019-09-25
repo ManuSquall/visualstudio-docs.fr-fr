@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 84cac2f48112c43805cdd9c12a6a41cf56a8ae72
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921064"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232617"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119 : Scellez les méthodes qui satisfont les interfaces privées
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921064"
 |-|-|
 |TypeName|SealMethodsThatSatisfyPrivateInterfaces|
 |CheckId|CA2119|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,7 +41,7 @@ Un type public pouvant être hérité fournit une implémentation de méthode su
 Les méthodes d’interface ont une accessibilité publique, qui ne peut pas être modifiée par le type d’implémentation. Une interface interne crée un contrat qui n’est pas destiné à être implémenté en dehors de l’assembly qui définit l’interface. Un type public qui implémente une méthode d’une interface interne à l' `virtual` aide`Overridable` du modificateur (en Visual Basic) permet à la méthode d’être substituée par un type dérivé qui est en dehors de l’assembly. Si un deuxième type de l’assembly de définition appelle la méthode et attend un contrat uniquement interne, le comportement risque d’être compromis quand, à la place, la méthode substituée dans l’assembly externe est exécutée. Cela crée une faille de sécurité.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly à l’aide de l’un des éléments suivants:
+Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly à l’aide de l’un des éléments suivants :
 
 - Créez le type `sealed` déclarant (`NotInheritable` dans Visual Basic).
 

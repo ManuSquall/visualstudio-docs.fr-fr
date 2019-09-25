@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547639"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236096"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028 : Enum Storage doit être Int32
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547639"
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -53,7 +53,7 @@ Supprimez un avertissement de cette règle uniquement si des problèmes de compa
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal

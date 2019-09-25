@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797351"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234269"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement
 
@@ -28,17 +28,17 @@ ms.locfileid: "62797351"
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |Category|Microsoft.Naming|
-|Modification avec rupture|Rupture - lorsque déclenchée sur les assemblys<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type|
+|Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
 ## <a name="cause"></a>Cause
 
-Le nom d’un identificateur contient le caractère de soulignement (\_) caractères.
+Le nom d’un identificateur contient le caractère de soulignement (\_).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Par convention, les noms d’identificateurs ne contiennent pas le caractère de soulignement (\_) caractères. La règle vérifie les espaces de noms, types, membres et paramètres.
+Par Convention, les noms d’identificateur ne contiennent pas de caractère de\_soulignement (). La règle vérifie les espaces de noms, les types, les membres et les paramètres.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -50,5 +50,5 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

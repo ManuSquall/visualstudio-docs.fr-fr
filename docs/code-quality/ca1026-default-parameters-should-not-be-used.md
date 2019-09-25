@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 888e1b5d551e357eb732dfe3f7661d51cbdf089d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923143"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236129"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
 
@@ -27,7 +27,7 @@ ms.locfileid: "68923143"
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

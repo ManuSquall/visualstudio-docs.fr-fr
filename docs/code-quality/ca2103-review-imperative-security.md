@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a2792f1cccad26fe5bb073af800a2fcf0ebcb4b4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921427"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232980"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103 : Vérifiez la sécurité impérative
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921427"
 |-|-|
 |TypeName|ReviewImperativeSecurity|
 |CheckId|CA2103|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

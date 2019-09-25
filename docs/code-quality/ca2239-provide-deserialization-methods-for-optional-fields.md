@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920064"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237892"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239 : Spécifiez des méthodes de désérialisation pour les champs facultatifs
 
@@ -30,14 +30,14 @@ ms.locfileid: "68920064"
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Un type a un champ qui est marqué avec l' <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attribut et le type ne fournit pas de méthodes de gestion des événements de désérialisation.
 
 ## <a name="rule-description"></a>Description de la règle
-L' <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribut n’a aucun effet sur la sérialisation; un champ marqué avec l’attribut est sérialisé. Toutefois, le champ est ignoré lors de la désérialisation et conserve la valeur par défaut associée à son type. Les gestionnaires d’événements de désérialisation doivent être déclarés pour définir le champ pendant le processus de désérialisation.
+L' <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribut n’a aucun effet sur la sérialisation ; un champ marqué avec l’attribut est sérialisé. Toutefois, le champ est ignoré lors de la désérialisation et conserve la valeur par défaut associée à son type. Les gestionnaires d’événements de désérialisation doivent être déclarés pour définir le champ pendant le processus de désérialisation.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, ajoutez les méthodes de gestion des événements de désérialisation au type.
@@ -45,7 +45,7 @@ Pour corriger une violation de cette règle, ajoutez les méthodes de gestion de
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle si le champ doit être ignoré pendant le processus de désérialisation.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant illustre un type avec des méthodes facultatives de gestion des événements de désérialisation et de champ.
 
 [!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]

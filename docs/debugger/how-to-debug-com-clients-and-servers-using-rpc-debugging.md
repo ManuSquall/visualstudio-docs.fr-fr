@@ -1,5 +1,5 @@
 ---
-title: Déboguer des clients COM et des serveurs à l’aide du débogage RPC | Microsoft Docs
+title: Déboguer des clients et des serveurs COM à l’aide du débogage RPC | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,19 +26,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cca09e917cddffd0d1d844db14ae8a4ca4f0088
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387518"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211075"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
 Vous pouvez utiliser le débogage RPC pour déboguer des applications client/serveur COM. Vous devez activer le débogage RPC pour l'utiliser. Lorsque le débogage RPC est activé, si vous effectuez un pas à pas détaillé dans l'appel serveur à partir du client, le débogueur est attaché au serveur, ce qui permet de déboguer son code. Une fois que le débogueur est attaché, vous pouvez utiliser toutes ses fonctionnalités avec les processus client et serveur.
 
 ### <a name="to-enable-rpc-debugging"></a>Pour activer le débogage RPC
 
-1. Dans le menu **Outils**, cliquez sur **Options**.
+1. Dans le menu **Outils** , cliquez sur **Options**.
 
 2. Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.
 
@@ -54,5 +54,5 @@ Vous pouvez utiliser le débogage RPC pour déboguer des applications client/ser
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de serveurs et de conteneurs COM](../debugger/com-server-and-container-debugging.md)
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)

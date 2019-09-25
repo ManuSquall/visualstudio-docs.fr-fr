@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d9874316ec2a22f875e2ba4fe7d5406ff916c6
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547342"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235545"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055 : Les valeurs de retour URI ne doivent pas être des chaînes
 
@@ -31,18 +31,18 @@ ms.locfileid: "69547342"
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Le nom d’une méthode contient «URI», «Uri», «URN», «URN», «URL» ou «URL», et la méthode retourne une chaîne.
+Le nom d’une méthode contient « URI », « Uri », « URN », « URN », « URL » ou « URL », et la méthode retourne une chaîne.
 
 Par défaut, cette règle examine uniquement les méthodes publiques, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle fractionne le nom de la méthode en jetons en fonction de la Convention de casse Pascal et vérifie si chaque jeton est égal à «URI», «Uri», «URN», «URN», «URL» ou «URL». En cas de correspondance, la règle part du principe que la méthode retourne un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La <xref:System.Uri?displayProperty=fullName> classe fournit ces services de manière sûre et sécurisée.
+Cette règle fractionne le nom de la méthode en jetons en fonction de la Convention de casse Pascal et vérifie si chaque jeton est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, la règle part du principe que la méthode retourne un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La <xref:System.Uri?displayProperty=fullName> classe fournit ces services de manière sûre et sécurisée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -54,7 +54,7 @@ Il est possible de supprimer sans risque un avertissement de cette règle si la 
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1055.api_surface = private, internal

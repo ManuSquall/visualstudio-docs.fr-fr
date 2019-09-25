@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921116"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232754"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : La sécurité de la méthode doit être un sur-ensemble du type
 
@@ -27,14 +27,14 @@ ms.locfileid: "68921116"
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 Un type a une sécurité déclarative et l’une de ses méthodes a une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas une [demande de liaison](/dotnet/framework/misc/link-demands), et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations contrôlées par la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
-Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau de la méthode et au niveau du type pour la même action. Les deux contrôles ne sont pas combinés; seule la demande au niveau de la méthode est appliquée. Par exemple, si un type demande une `X`autorisation et que l’une de ses méthodes `Y`demande une autorisation, le code n’a `X` pas besoin d’avoir l’autorisation d’exécuter la méthode.
+Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau de la méthode et au niveau du type pour la même action. Les deux contrôles ne sont pas combinés ; seule la demande au niveau de la méthode est appliquée. Par exemple, si un type demande une `X`autorisation et que l’une de ses méthodes `Y`demande une autorisation, le code n’a `X` pas besoin d’avoir l’autorisation d’exécuter la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Examinez votre code pour vous assurer que les deux actions sont requises. Si les deux actions sont requises, assurez-vous que l’action au niveau de la méthode comprend la sécurité spécifiée au niveau du type. Par exemple, si votre type demande une `X`autorisation et que sa méthode doit également demander `Y`une autorisation, la méthode doit `X` demander `Y`explicitement et.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 28d71fbfc10532f7c9420ea7e847ef4c29b88854
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547678"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236074"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 
@@ -27,17 +27,17 @@ ms.locfileid: "69547678"
 |-|-|
 |TypeName|UseEventsWhereAppropriate|
 |CheckId|CA1030|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un nom de méthode commence par l’un des éléments suivants:
+Un nom de méthode commence par l’un des éléments suivants :
 
 - AddOn
 - RemoveOn
 - Flammes
-- Génère
+- génère
 
 Par défaut, cette règle examine uniquement les méthodes visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
@@ -57,7 +57,7 @@ Supprimez un avertissement de cette règle si la méthode ne fonctionne pas avec
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal

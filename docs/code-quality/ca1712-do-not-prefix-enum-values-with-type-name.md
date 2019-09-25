@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 323025eb03d2a949a970659aba2357c01ed8bfab
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0b5966c9685bc4bbc5ba997f8acf47abbbfca1a2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921755"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234108"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921755"
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921317"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233286"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900 : Les champs de type valeur doivent être portables
 
@@ -27,8 +27,8 @@ ms.locfileid: "68921317"
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Catégorie|Microsoft. Portability|
-|Modification avec rupture|Avec rupture: si le champ peut être consulté à l’extérieur de l’assembly.<br /><br /> Sans rupture: si le champ n’est pas visible à l’extérieur de l’assembly.|
+|Category|Microsoft. Portability|
+|Modification avec rupture|Avec rupture : si le champ peut être consulté à l’extérieur de l’assembly.<br /><br /> Sans rupture : si le champ n’est pas visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
 Cette règle vérifie que les structures déclarées avec une disposition explicite s’aligneront correctement lorsqu’elles sont marshalées vers du code non managé sur les systèmes d’exploitation 64 bits. IA-64 n’autorise pas les accès à la mémoire non alignée et le processus se bloquera si cette violation n’est pas résolue.

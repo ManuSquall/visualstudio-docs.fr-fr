@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563358"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211264"
 ---
-# <a name="debug-azure-services-in-visual-studio"></a>Déboguer des services Azure dans Visual Studio
+# <a name="debug-azure-services-in-visual-studio"></a>Déboguer les services Azure dans Visual Studio
 
 Vous pouvez utiliser Visual Studio pour déboguer les services Azure dans différents scénarios :
 
-- Pour déboguer une application de production hébergée dans Azure App Service, consultez [débogage des applications ASP.NET à l’aide du débogueur de captures instantanées dynamiques sur](../debugger/debug-live-azure-applications.md).
+- Pour déboguer une application de production hébergée dans Azure App Service, consultez [Déboguer des applications ASP.net en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md).
 
-- Pour déboguer une application de production hébergée dans une machine virtuelle Azure ou un jeu de mise à l’échelle de machine virtuelle Azure, consultez [débogage en direct ASP.NET les machines virtuelles et la machine virtuelle Azure identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md).
+- Pour déboguer une application de production hébergée sur une machine virtuelle Azure ou un groupe de machines virtuelles identiques Azure, consultez [Déboguer des machines virtuelles azure ASP.net et des groupes de machines virtuelles identiques Azure à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md).
 
-- Pour déboguer une application de production hébergée dans Azure Kubernetes Service, consultez [débogage live ASP.NET Azure Kubernetes Services à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md).
+- Pour déboguer une application de production hébergée dans le service Azure Kubernetes, consultez [Déboguer des services Kubernetes Azure live ASP.net à l’aide de l’débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md).
 
-- Pour déboguer une application de production à l’aide d’Application Insights et hébergée dans Azure App Service ou Service Fabric, consultez [déboguer des captures instantanées sur les exceptions dans les applications .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Pour déboguer une application de production à l’aide d’Application Insights et hébergée dans Azure App Service ou Service Fabric, consultez [instantanés de débogage sur les exceptions dans les applications .net](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Pour déboguer à distance ASP.NET sur IIS (Azure App Service ou une machine virtuelle Azure), consultez [Remote Debugging ASP.NET on Azure](remote-debugging-azure.md).
+- Pour déboguer à distance ASP.NET sur IIS (Azure App Service ou sur une machine virtuelle Azure), consultez [débogage distant ASP.net sur Azure](remote-debugging-azure.md).
 
-- Pour déboguer à distance ASP.NET sur Azure Service Fabric, consultez [déboguer une application de Service Fabric à distance](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Pour déboguer à distance ASP.NET sur Azure Service Fabric, consultez [déboguer une application de service fabric à distance](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)

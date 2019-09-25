@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3767d361375ce1b3d54281a6850d9ac3b960ece6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920001"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237865"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241 : Indiquer le nombre correct d'arguments dans les méthodes de mise en forme
 
@@ -31,14 +31,14 @@ ms.locfileid: "68920001"
 |-|-|
 |TypeName|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 L' `format` argument de chaîne passé à une méthode telle <xref:System.Console.WriteLine%2A>que <xref:System.Console.Write%2A>, ou <xref:System.String.Format%2A?displayProperty=fullName> ne contient pas d’élément de mise en forme qui correspond à chaque argument d’objet, ou vice versa.
 
 ## <a name="rule-description"></a>Description de la règle
-Les arguments des méthodes telles que <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>et <xref:System.String.Format%2A> se composent d’une chaîne de format <xref:System.Object?displayProperty=fullName> suivie de plusieurs instances. La chaîne de format se compose de texte et d’éléments de mise en forme incorporés sous la forme {index [, Alignment] [: formatString]}. 'index’est un entier de base zéro qui indique les objets à mettre en forme. Si un objet n’a pas d’index correspondant dans la chaîne de format, l’objet est ignoré. Si l’objet spécifié par’index’n’existe pas, une <xref:System.FormatException?displayProperty=fullName> exception est levée au moment de l’exécution.
+Les arguments des méthodes telles que <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>et <xref:System.String.Format%2A> se composent d’une chaîne de format <xref:System.Object?displayProperty=fullName> suivie de plusieurs instances. La chaîne de format se compose de texte et d’éléments de mise en forme incorporés sous la forme {index [, Alignment] [ : formatString]}. 'index’est un entier de base zéro qui indique les objets à mettre en forme. Si un objet n’a pas d’index correspondant dans la chaîne de format, l’objet est ignoré. Si l’objet spécifié par’index’n’existe pas, une <xref:System.FormatException?displayProperty=fullName> exception est levée au moment de l’exécution.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, fournissez un élément de mise en forme pour chaque argument d’objet et fournissez un argument d’objet pour chaque élément de mise en forme.
@@ -46,7 +46,7 @@ Pour corriger une violation de cette règle, fournissez un élément de mise en 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre deux violations de la règle.
 
 [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]

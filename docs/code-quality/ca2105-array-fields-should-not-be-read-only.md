@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7407fcbe035d02992f414027114d69c257f5f390
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586585"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232920"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105 : Les champs de tableau ne doivent pas être en lecture seule
 
@@ -36,39 +36,39 @@ Un champ public ou protégé qui contient un tableau est déclaré en lecture se
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous appliquez le `readonly` (`ReadOnly` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modificateur à un champ qui contient un tableau, le champ ne peut pas être modifié pour faire référence à un tableau différent. Toutefois, les éléments du tableau stockés dans un champ en lecture seule peuvent être modifiés. Code qui prend des décisions ou exécute des opérations qui reposent sur les éléments d’un tableau en lecture seule qui est publiquement accessible peut contenir une faille de sécurité exploitable.
+Lorsque vous appliquez le `readonly` modificateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](`ReadOnly` en) à un champ qui contient un tableau, le champ ne peut pas être modifié pour faire référence à un tableau différent. Toutefois, les éléments du tableau stockés dans un champ en lecture seule peuvent être modifiés. Le code qui prend des décisions ou effectue des opérations basées sur les éléments d’un tableau en lecture seule qui peut être accessible publiquement peut contenir une faille de sécurité exploitable.
 
-Notez que la présence d’un champ public également viole la règle de conception [CA1051 : Ne déclarez pas de champs d’instances visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Notez que le fait d’avoir un champ public viole également [la règle de conception CA1051 : Ne déclarez pas les champs](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)d’instance visibles.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger la vulnérabilité de sécurité qui est identifiée par cette règle, ne comptez pas sur le contenu d’un tableau en lecture seule qui est accessible publiquement. Il est fortement recommandé d’utiliser l’une des procédures suivantes :
+Pour corriger la faille de sécurité qui est identifiée par cette règle, ne comptez pas sur le contenu d’un tableau en lecture seule qui peut être accessible publiquement. Il est fortement recommandé d’utiliser l’une des procédures suivantes :
 
 - Remplacez le tableau par une collection fortement typée qui ne peut pas être modifiée. Pour plus d'informations, consultez <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
-- Remplacez le champ public avec une méthode qui retourne un clone d’un tableau privé. Étant donné que votre code ne repose pas sur le clone, il n’existe aucun risque si les éléments sont modifiés.
+- Remplacez le champ public par une méthode qui retourne un clone d’un tableau privé. Étant donné que votre code ne repose pas sur le clone, il n’y a aucun danger si les éléments sont modifiés.
 
-Si vous avez choisi la deuxième approche, ne remplacez pas le champ par une propriété ; propriétés qui retournent des tableaux de manière négative affectent les performances. Pour plus d’informations, consultez [CA1819 : Propriétés ne doivent pas retourner de tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Si vous avez choisi la deuxième approche, ne remplacez pas le champ par une propriété ; les propriétés qui retournent des tableaux ont un impact négatif sur les performances. Pour plus d’informations, [consultez CA1819 : Les propriétés ne doivent pas retourner](../code-quality/ca1819-properties-should-not-return-arrays.md)des tableaux.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Exclusion d’un avertissement de cette règle est fortement déconseillée. Presque aucun scénarios se produisent dans lequel le contenu d’un champ en lecture seule est sans important. Si c’est le cas dans votre scénario, supprimez le `readonly` modificateur au lieu d’exclure le message.
+L’exclusion d’un avertissement de cette règle est fortement déconseillée. Presque aucun scénario ne se produit lorsque le contenu d’un champ en lecture seule n’est pas important. Si c’est le cas avec votre scénario, supprimez `readonly` le modificateur au lieu d’exclure le message.
 
 ## <a name="example-1"></a>Exemple 1
 
-Cet exemple montre les dangers de violation de cette règle. La première partie montre un exemple de bibliothèque qui a un type, `MyClassWithReadOnlyArrayField`, qui contient deux champs (`grades` et `privateGrades`) qui ne sont pas sécurisés. Le champ `grades` est public et par conséquent vulnérable pour tout appelant. Le champ `privateGrades` est privé, mais est toujours vulnérable, car il est retourné aux appelants par le `GetPrivateGrades` (méthode). Le `securePrivateGrades` champ est exposé de manière sécurisée par le `GetSecurePrivateGrades` (méthode). Il est déclaré comme privés pour suivre les pratiques d’une bonne conception. La deuxième partie montre le code qui modifie des valeurs stockées dans le `grades` et `privateGrades` membres.
+Cet exemple illustre les dangers liés à la violation de cette règle. La première partie montre un exemple de bibliothèque qui a un type `MyClassWithReadOnlyArrayField`,, qui contient deux champs`grades` ( `privateGrades`et) qui ne sont pas sécurisés. Le champ `grades` est public et, par conséquent, vulnérable à n’importe quel appelant. Le champ `privateGrades` est privé mais reste vulnérable, car il est retourné aux appelants par la `GetPrivateGrades` méthode. Le `securePrivateGrades` champ est exposé de façon sécurisée par la `GetSecurePrivateGrades` méthode. Elle est déclarée comme privée pour suivre les bonnes pratiques de conception. La deuxième partie affiche le code qui modifie les valeurs stockées `grades` dans `privateGrades` les membres et.
 
-La bibliothèque de classes d’exemple apparaît dans l’exemple suivant.
+L’exemple de bibliothèque de classes s’affiche dans l’exemple suivant.
 
 [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>Exemple 2
 
-Le code suivant utilise la bibliothèque de classes d’exemple pour illustrer les problèmes de sécurité de tableau en lecture seule.
+Le code suivant utilise l’exemple de bibliothèque de classes pour illustrer des problèmes de sécurité de tableau en lecture seule.
 
 [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]
 
-La sortie de cet exemple est :
+La sortie de cet exemple est la suivante :
 
 ```text
 Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90
@@ -77,7 +77,7 @@ After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades,
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2104 : Ne déclarez pas les types référence mutables uniquement en lecture](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
+- [CA2104 Ne déclarez pas les types référence mutables en lecture seule](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)
 
 ## <a name="see-also"></a>Voir aussi
 

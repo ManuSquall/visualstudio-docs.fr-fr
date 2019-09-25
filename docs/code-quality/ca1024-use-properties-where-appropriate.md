@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547795"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236160"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547795"
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,13 +41,13 @@ Par défaut, cette règle examine uniquement les méthodes publiques et protég�
 
 ## <a name="rule-description"></a>Description de la règle
 
-Dans la plupart des cas, les propriétés représentent des données et des méthodes qui effectuent des actions. Les propriétés sont accessibles comme les champs, ce qui les rend plus faciles à utiliser. Une méthode est un bon candidat à devenir une propriété si l’une de ces conditions est présente:
+Dans la plupart des cas, les propriétés représentent des données et des méthodes qui effectuent des actions. Les propriétés sont accessibles comme les champs, ce qui les rend plus faciles à utiliser. Une méthode est un bon candidat à devenir une propriété si l’une de ces conditions est présente :
 
 - N’accepte aucun argument et retourne les informations d’état d’un objet.
 
 - Accepte un seul argument pour définir une partie de l’état d’un objet.
 
-Les propriétés doivent se comporter comme s’il s’agissait de champs; Si la méthode ne peut pas, elle ne doit pas être remplacée par une propriété. Les méthodes sont meilleures que les propriétés dans les cas suivants:
+Les propriétés doivent se comporter comme s’il s’agissait de champs ; Si la méthode ne peut pas, elle ne doit pas être remplacée par une propriété. Les méthodes sont meilleures que les propriétés dans les cas suivants :
 
 - La méthode effectue une opération qui prend du temps. La méthode est perçue plus lentement que le temps nécessaire pour définir ou obtenir la valeur d’un champ.
 
@@ -73,7 +73,7 @@ Supprimez un avertissement de cette règle si la méthode remplit au moins l’u
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
@@ -133,7 +133,7 @@ namespace Microsoft.Samples
 }
 ```
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 L’exemple suivant contient plusieurs méthodes qui doivent être converties en propriétés et plusieurs qui ne le sont pas, car elles ne se comportent pas comme des champs.
 

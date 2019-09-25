@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545265"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233159"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 
@@ -44,7 +44,7 @@ Les types suivants ont une identité faible et sont signalés par la règle :
 
 - <xref:System.String>
 
-- Tableaux de types valeur, y compris [types intégraux](/dotnet/csharp/language-reference/keywords/integral-types-table), [types à virgule flottante](/dotnet/csharp/language-reference/keywords/floating-point-types-table), et <xref:System.Boolean>.
+- Tableaux de types valeur, y compris les [types intégraux](/dotnet/csharp/language-reference/keywords/integral-types-table), les [types à virgule flottante](/dotnet/csharp/language-reference/keywords/floating-point-types-table)et <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,7 +62,7 @@ Les types suivants ont une identité faible et sont signalés par la règle :
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez un objet à partir d’un type qui n’est pas dans la liste dans la section de Description.
+Pour corriger une violation de cette règle, utilisez un objet d’un type qui ne figure pas dans la liste de la section Description.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -74,7 +74,7 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre des verrous d’objets qui enfreignent la règle.
+L’exemple suivant montre certains verrous d’objets qui violent la règle.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ L’exemple suivant montre des verrous d’objets qui enfreignent la règle.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Lock, instructionC#()](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [SyncLock, instruction (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

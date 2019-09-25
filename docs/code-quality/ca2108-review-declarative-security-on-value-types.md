@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545536"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232817"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108 : Vérifiez la sécurité déclarative dans les types valeur
 
@@ -32,29 +32,29 @@ ms.locfileid: "62545536"
 
 ## <a name="cause"></a>Cause
 
-Un type valeur public ou protégé est sécurisé par un [données et modélisation](/dotnet/framework/data/index) ou [demandes de liaison](/dotnet/framework/misc/link-demands).
+Un type valeur public ou protégé est sécurisé par des demandes de [données et de modélisation](/dotnet/framework/data/index) ou de [liaison](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les types valeur sont alloués et initialisés par leurs constructeurs par défaut avant d’exécutent d’autres constructeurs. Si un type valeur est sécurisé par un LinkDemand ou un à la demande, et l’appelant n’a pas d’autorisations qui répondent à la vérification de sécurité, un constructeur autre que la valeur par défaut échoue, et une exception de sécurité est levée. Le type de valeur n’est pas libéré ; Il reste dans l’état défini par son constructeur par défaut. Ne supposez pas que l’appelant qui passe une instance du type valeur est autorisé à créer ou accéder à l’instance.
+Les types valeur sont alloués et initialisés par leurs constructeurs par défaut avant que d’autres constructeurs ne s’exécutent. Si un type valeur est sécurisé par une demande ou un LinkDemand, et que l’appelant n’a pas les autorisations qui satisfont à la vérification de sécurité, tout constructeur autre que la valeur par défaut échoue et une exception de sécurité est levée. Le type de valeur n’est pas libéré ; elle reste dans l’état défini par son constructeur par défaut. Ne partez pas du principe qu’un appelant qui passe une instance du type valeur a l’autorisation de créer ou d’accéder à l’instance.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Vous ne pouvez pas corriger une violation de cette règle, sauf si vous supprimez la vérification de sécurité du type, et utiliser la sécurité au niveau méthode vérifie à la place. Correction de la violation de cette manière n’empêche pas les appelants dotés d’autorisations inadéquates d’obtenir des instances du type valeur. Vous devez vous assurer qu’une instance du type valeur, dans son état par défaut, n’expose pas d’informations sensibles et ne peut pas être utilisée de façon préjudiciable.
+Vous ne pouvez pas corriger une violation de cette règle, sauf si vous supprimez la vérification de sécurité du type et utilisez les vérifications de sécurité au niveau de la méthode à la place. La correction de la violation de cette manière n’empêche pas les appelants avec des autorisations inappropriées d’obtenir des instances du type valeur. Vous devez vous assurer qu’une instance du type valeur, dans son état par défaut, n’expose pas d’informations sensibles et qu’elle ne peut pas être utilisée de manière dangereuse.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Vous pouvez supprimer un avertissement de cette règle si un appelant peut obtenir des instances du type valeur dans son état par défaut sans que cela constitue une menace pour la sécurité.
+Vous pouvez supprimer un avertissement de cette règle si un appelant peut obtenir des instances du type valeur dans son état par défaut sans compromettre la sécurité.
 
 ## <a name="example-1"></a>Exemple 1
 
-L’exemple suivant montre une bibliothèque contenant un type valeur qui enfreint cette règle. Le `StructureManager` type suppose qu’un appelant qui passe une instance du type valeur est autorisé à créer ou accéder à l’instance.
+L’exemple suivant montre une bibliothèque contenant un type valeur qui ne respecte pas cette règle. Le `StructureManager` type suppose qu’un appelant qui passe une instance du type valeur a l’autorisation de créer ou d’accéder à l’instance.
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Exemple 2
 
-L’application suivante montre la faiblesse de la bibliothèque.
+L’application suivante illustre la faiblesse de la bibliothèque.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

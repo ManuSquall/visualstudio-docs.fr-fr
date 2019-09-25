@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7f3bdc6351f30d5cad60a7ed9663824fa3d434
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: fdb2bab3231613772b1eda1895d925f8dd40ee93
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714710"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232842"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107 : Passez en revue l'utilisation des méthodes Deny et PermitOnly
 
@@ -36,21 +36,21 @@ Une méthode contient une vérification de sécurité qui spécifie l’action d
 
 ## <a name="rule-description"></a>Description de la règle
 
-Le <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> action de sécurité doit être utilisée uniquement par les utilisateurs qui ont une connaissance avancée de la sécurité de .NET. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.
+L' <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> action de sécurité doit être utilisée uniquement par les personnes qui ont une connaissance approfondie de la sécurité .net. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.
 
-Refuser modifie le comportement par défaut de la pile qui se produit en réponse à une demande de sécurité. Il vous permet de spécifier des autorisations qui ne doivent pas être accordées sur la durée de la méthode de refus, indépendamment des autorisations réelles des appelants dans la pile des appels. Si le parcours de pile détecte une méthode sécurisée par Deny, et si l’autorisation demandée est incluse dans les autorisations refusées, le parcours de pile échoue. PermitOnly modifie également le comportement par défaut de la pile. Il permet au code de spécifier uniquement les autorisations qui peuvent être accordées, quelles que soient les autorisations des appelants. Si le parcours de pile détecte une méthode sécurisée par PermitOnly, et si l’autorisation demandée n’est pas incluse dans les autorisations qui sont spécifiées par l’action PermitOnly, le parcours de pile échoue.
+Deny modifie le comportement par défaut du parcours de la pile qui se produit en réponse à une demande de sécurité. Elle vous permet de spécifier les autorisations qui ne doivent pas être accordées pour la durée de la méthode de refus, indépendamment des autorisations réelles des appelants dans la pile des appels. Si le parcours de la pile détecte une méthode qui est sécurisée par Deny et si l’autorisation demandée est incluse dans les autorisations refusées, le parcours de la pile échoue. PermitOnly modifie également le comportement par défaut du parcours de la pile. Il permet au code de spécifier uniquement les autorisations qui peuvent être accordées, quelles que soient les autorisations des appelants. Si le parcours de la pile détecte une méthode qui est sécurisée par PermitOnly et si l’autorisation demandée n’est pas incluse dans les autorisations spécifiées par PermitOnly, le parcours de la pile échoue.
 
-Code qui s’appuie sur ces actions doit être évaluation minutieuse des vulnérabilités de sécurité en raison de leur utilité limitée et leur comportement subtile. Considérez ce qui suit :
+Le code qui s’appuie sur ces actions doit être soigneusement évalué pour les vulnérabilités de sécurité en raison de leur utilité limitée et de son comportement subtil. Considérez ce qui suit :
 
-- [Demandes de liaison](/dotnet/framework/misc/link-demands) ne sont pas affectés par Deny ou PermitOnly.
+- Les [demandes de liaison](/dotnet/framework/misc/link-demands) ne sont pas affectées par Deny ou PermitOnly.
 
-- Si Deny ou PermitOnly se produit dans le même frame de pile en tant que la demande qui déclenche le parcours de pile, les actions de sécurité n’ont aucun effet.
+- Si Deny ou PermitOnly se produit dans le même frame de pile que la demande qui provoque le parcours de la pile, les actions de sécurité n’ont aucun effet.
 
-- Les valeurs qui sont utilisés pour construire des autorisations basées sur le chemin d’accès peuvent généralement être spécifiés de plusieurs façons. Refuser l’accès à une forme de chemin d’accès ne pas refuse l’accès à toutes les formes. Par exemple, si un partage de fichiers \\\Server\Share est mappé à un lecteur réseau x, pour refuser l’accès à un fichier sur le partage, vous devez refuser \\\Server\Share\File, X:\File et chaque autre chemin d’accès qui accède au fichier.
+- Les valeurs utilisées pour construire des autorisations basées sur le chemin d’accès peuvent généralement être spécifiées de plusieurs façons. Le refus de l’accès à une forme du chemin d’accès ne refuse pas l’accès à tous les formulaires. Par exemple, si un partage \\de fichiers \Server\Share est mappé sur un lecteur réseau X :, pour refuser l’accès à un fichier sur le partage, vous devez refuser \\\serveur\partage\fichier, X:\File et tout autre chemin d’accès qui accède au fichier.
 
-- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> peut mettre fin à un parcours de pile avant que Deny ou PermitOnly soit atteinte.
+- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> peut terminer un parcours de la pile avant que Deny ou PermitOnly soit atteint.
 
-- Si une instruction Deny a un effet, à savoir, quand un appelant dispose d’une autorisation qui est bloquée par le refus, l’appelant peut accéder directement, la ressource protégée en contournant la refuser. De même, si l’appelant n’a pas l’autorisation refusée, le parcours de pile échoue sans la refuser.
+- Si un refus a un effet, à savoir, lorsqu’un appelant a une autorisation qui est bloquée par le refus, l’appelant peut accéder directement à la ressource protégée, en ignorant le refus. De même, si l’appelant n’a pas l’autorisation refusée, le parcours de pile échoue sans le refus.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -58,17 +58,17 @@ Toute utilisation de ces actions de sécurité entraîne une violation. Pour cor
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Supprimer un avertissement de cette règle uniquement après avoir effectué une révision de sécurité.
+Supprimez un avertissement de cette règle uniquement après avoir effectué une révision de sécurité.
 
 ## <a name="example-1"></a>Exemple 1
 
-L’exemple suivant illustre certaines limitations de Deny. La bibliothèque contient une classe qui possède deux méthodes qui sont identiques à l’exception des demandes de sécurité qui les protègent.
+L’exemple suivant illustre certaines limitations de Deny. La bibliothèque contient une classe qui a deux méthodes identiques, à l’exception des demandes de sécurité qui les protègent.
 
 [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
 ## <a name="example-2"></a>Exemple 2
 
-L’application suivante montre les effets de Deny sur les méthodes sécurisées à partir de la bibliothèque.
+L’application suivante montre les effets de Deny sur les méthodes sécurisées de la bibliothèque.
 
 [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 

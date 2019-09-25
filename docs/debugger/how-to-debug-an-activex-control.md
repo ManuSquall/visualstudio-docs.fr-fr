@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1d02cb4d581a7234ad2dd950fa51f46a5d128b2
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894428"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211085"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procédure : déboguer un contrôle ActiveX
 
@@ -42,7 +42,7 @@ Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exé
 
 1. Dans l'Explorateur de solutions, sélectionnez le projet.
 
-2. À partir de la **vue** menu, choisissez **Pages de propriétés**.
+2. Dans le menu **affichage** , cliquez sur **pages de propriétés**.
 
 3. Dans la boîte de dialogue **Pages de propriété de projet**, ouvrez le dossier **Propriétés de configuration** et sélectionnez **Débogage**.
 
@@ -61,5 +61,5 @@ Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exé
 - [Contrôles ActiveX](/cpp/mfc/activex-controls)
 - [Test des propriétés et des événements avec le conteneur de test](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)

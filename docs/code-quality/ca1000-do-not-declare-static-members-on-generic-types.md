@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f10433330642ee06dd7f705cdd8e35333cd8a79d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4cc33c51af7d596fb9c784b76f8cc2f255ddf5a5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547923"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236715"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000 : Ne pas déclarer de membres statiques sur les types génériques
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547923"
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,7 +41,7 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsqu’un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu’un membre d’instance générique qui ne prend pas en charge l’inférence est appelé, l’argument de type doit être spécifié pour le membre. La syntaxe permettant de spécifier l’argument de type dans ces deux cas est différente et facilement confondue, comme le montrent les appels suivants:
+Lorsqu’un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. La syntaxe permettant de spécifier l’argument de type dans ces deux cas est différente et facilement confondue, comme le montrent les appels suivants :
 
 ```vb
 ' Shared method in a generic type.
@@ -59,7 +59,7 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
-En règle générale, les deux déclarations précédentes doivent être évitées afin qu’il ne soit pas nécessaire de spécifier l’argument de type lorsque le membre est appelé. Cela aboutit à une syntaxe pour appeler des membres dans des génériques qui n’est pas différent de la syntaxe pour les non génériques. Pour plus d’informations, [consultez CA1004: Les méthodes génériques doivent fournir un](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)paramètre de type.
+En règle générale, les deux déclarations précédentes doivent être évitées afin qu’il ne soit pas nécessaire de spécifier l’argument de type lorsque le membre est appelé. Cela aboutit à une syntaxe pour appeler des membres dans des génériques qui n’est pas différent de la syntaxe pour les non génériques. Pour plus d’informations, [consultez CA1004 : Les méthodes génériques doivent fournir un](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)paramètre de type.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -71,7 +71,7 @@ Ne supprimez aucun avertissement de cette règle. La fourniture de génériques 
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1000.api_surface = private, internal

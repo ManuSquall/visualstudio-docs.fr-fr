@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0075a6296e839030448c0209c77f1717a5fcb1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a9a3070abc1f2bab3f3658589db54b656a635e2b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238080"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236 : Appelez les méthodes de la classe de base sur les types ISerializable
 
@@ -30,11 +30,11 @@ ms.locfileid: "68920121"
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|
 |CheckId|CA2236|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
-Un type dérive d’un type qui implémente l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, et l’une des conditions suivantes est vraie:
+Un type dérive d’un type qui implémente l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, et l’une des conditions suivantes est vraie :
 
 - Le type implémente le constructeur de sérialisation, autrement dit, un constructeur avec la <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>signature <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> de paramètre, mais n’appelle pas le constructeur de sérialisation du type de base.
 
@@ -49,7 +49,7 @@ Pour corriger une violation de cette règle, appelez la méthode de <xref:System
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre un type dérivé qui satisfait la règle en appelant le constructeur de sérialisation et <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> la méthode de la classe de base.
 
 [!code-vb[FxCop.Usage.CallBaseISerializable#1](../code-quality/codesnippet/VisualBasic/ca2236-call-base-class-methods-on-iserializable-types_1.vb)]

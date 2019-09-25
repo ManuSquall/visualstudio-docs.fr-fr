@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546905"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231083"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
 
@@ -71,7 +71,7 @@ Cette règle examine les opérateurs listés dans le tableau suivant.
 |%=|N/A|%=|Mod|
 |* (binaire)|*|*|Multiplication|
 |*=|N/A|*=|Multiplication|
-|~|Ne convient pas|~|OnesComplement|
+|~|not|~|OnesComplement|
 |>>|>>|>>|Maj droite|
 =|N/A|>>=|Maj droite|
 |-(binaire)|-(binaire)|-(binaire)|Soustraire|
@@ -97,7 +97,7 @@ Ne supprimez pas un avertissement de cette règle si vous implémentez une bibli
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal

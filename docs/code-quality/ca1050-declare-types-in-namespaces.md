@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922497"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235754"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050 : Déclarer les types dans des espaces de noms
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922497"
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -45,7 +45,7 @@ Pour corriger une violation de cette règle, placez le type dans un espace de no
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Bien que vous n’ayez jamais à supprimer un avertissement de cette règle, il est possible de le faire lorsque l’assembly ne sera jamais utilisé avec d’autres assemblys.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre une bibliothèque dont le type est déclaré de manière incorrecte en dehors d’un espace de noms, et un type qui a le même nom déclaré dans un espace de noms.
 
 [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]

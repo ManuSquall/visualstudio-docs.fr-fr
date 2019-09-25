@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547327"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234167"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710 : Les identificateurs doivent être dotés d'un suffixe correct
 
@@ -44,7 +44,7 @@ Les conventions d’affectation de noms fournissent une apparence commune pour l
 
 Le tableau suivant répertorie les types de base et les interfaces qui ont des suffixes associés.
 
-|Type/interface de base|Suffix|
+|Type/interface de base|Suffixe|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|Attribut|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
@@ -59,7 +59,7 @@ Le tableau suivant répertorie les types de base et les interfaces qui ont des s
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Collection ou DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|Stream|
-|<xref:System.Security.IPermission?displayProperty=fullName>|Autorisation|
+|<xref:System.Security.IPermission?displayProperty=fullName>|Permission|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condition|
 |Délégué de gestionnaire d’événements.|Délégué|
 
@@ -95,7 +95,7 @@ Pour les autres suffixes, ne supprimez pas un avertissement de cette règle. Le 
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal

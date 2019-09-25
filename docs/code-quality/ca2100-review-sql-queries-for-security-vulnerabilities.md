@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744810"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233065"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité
 
@@ -37,19 +37,19 @@ ms.locfileid: "66744810"
 
 ## <a name="cause"></a>Cause
 
-Une méthode définit le <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriété à l’aide d’une chaîne qui est construite à partir d’un argument de chaîne à la méthode.
+Une méthode définit la <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriété à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Dans une attaque par injection SQL, un utilisateur malveillant fournit des entrées qui modifie la conception d’une requête dans le but d’endommager ou d’accès non autorisé à la base de données sous-jacente. Les techniques classiques englobent l’injection d’un guillemet ou une apostrophe, qui est le délimiteur de chaîne littérale SQL ; deux tirets, ce qui signifie un commentaire SQL ; et un point-virgule, ce qui indique qu’une nouvelle commande suit. Si l’entrée d’utilisateur doit faire partie de la requête, utilisez un des éléments suivants, répertoriés par ordre d’efficacité, afin de réduire le risque d’attaque.
+Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Dans une attaque par injection SQL, un utilisateur malveillant fournit des entrées qui modifient la conception d’une requête en tentant d’endommager ou d’obtenir un accès non autorisé à la base de données sous-jacente. Les techniques classiques incluent l’injection d’un guillemet simple ou d’une apostrophe, qui est le délimiteur de chaîne littérale SQL ; deux tirets, ce qui signifie un commentaire SQL ; et un point-virgule, qui indique qu’une nouvelle commande suit. Si l’entrée utilisateur doit faire partie de la requête, utilisez l’un des éléments suivants, par ordre d’efficacité, pour réduire le risque d’attaque.
 
-- Utiliser une procédure stockée.
+- Utilisez une procédure stockée.
 
 - Utilisez une chaîne de commande paramétrable.
 
-- Valider l’entrée d’utilisateur pour le type et le contenu avant de générer la chaîne de commande.
+- Validez l’entrée utilisateur pour le type et le contenu avant de générer la chaîne de commande.
 
-Les types .NET suivants implémentent le <xref:System.Data.IDbCommand.CommandText%2A> propriété ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
+Les types .NET suivants implémentent <xref:System.Data.IDbCommand.CommandText%2A> la propriété ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> et <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -66,9 +66,9 @@ int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-La règle est enfreinte, car un utilisateur malveillant peut substituer la méthode ToString().
+La règle n’est pas respectée, car un utilisateur malveillant peut substituer la méthode ToString ().
 
-La règle est enfreinte lors de la méthode ToString est utilisée implicitement.
+La règle n’est pas non plus respectée lorsque ToString est utilisé implicitement.
 
 ```csharp
 int x = 10;
@@ -81,11 +81,11 @@ Pour corriger une violation de cette règle, utilisez une requête paramétrable
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si le texte de commande ne contient pas d’entrée d’utilisateur.
+Il est possible de supprimer sans risque un avertissement de cette règle si le texte de la commande ne contient aucune entrée d’utilisateur.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode, `UnsafeQuery`, qui enfreint la règle et une méthode, `SaferQuery`, qui satisfait la règle en utilisant une chaîne de commande paramétrable.
+L’exemple suivant montre une méthode, `UnsafeQuery`, qui enfreint la règle et une méthode, `SaferQuery`, qui satisfait la règle à l’aide d’une chaîne de commande paramétrable.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

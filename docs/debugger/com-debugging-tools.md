@@ -1,5 +1,5 @@
 ---
-title: Outils de débogage de COM | Microsoft Docs
+title: Outils de débogage COM | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564741"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211277"
 ---
 # <a name="com-debugging-tools"></a>Outils de débogage COM
 
@@ -44,7 +44,7 @@ Les exemples MFC ActiveX OCLIENT et SUPERPAD sont également disponibles pour te
 
 - [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)
 - [Outils de débogage COM](../debugger/com-debugging-tools.md)
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [Exemple OCLIENT : Illustre une Application conteneur d’édition visuelle](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Exemple SUPERPAD : Illustre un serveur qui modifie le texte à l’aide de CEditView d’édition visuelle](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Exemple OCLIENT : Illustre une application de conteneur d’édition visuelle](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Exemple SUPERPAD : Illustre un serveur d’édition visuelle qui modifie du texte à l’aide de CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

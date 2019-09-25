@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841436"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237292"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006 : Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus
 
@@ -28,28 +28,28 @@ ms.locfileid: "65841436"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint une commande de processus.
+Une entrée de requête HTTP potentiellement non approuvée atteint une commande Process.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de commande. Une attaque par injection de commande peut exécuter des commandes nuisibles sur le système d’exploitation sous-jacent, compromettre la sécurité et l’intégrité de votre serveur.
+Lorsque vous travaillez avec des entrées non fiables, tenez-vous à l’esprit des attaques par injection de commande. Une attaque par injection de commande peut exécuter des commandes malveillantes sur le système d’exploitation sous-jacent, compromettant ainsi la sécurité et l’intégrité de votre serveur.
 
-Cette règle tente de trouver des informations issues de parvenir à une commande traiter les requêtes HTTP.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui démarre un processus, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir des requêtes HTTP qui atteignent une commande Process.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le passe à un autre assembly qui démarre un processus, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-- Si possible, évitez de démarrage des processus en fonction de l’entrée d’utilisateur.
-- Valider l’entrée par rapport à un ensemble sûr connu de caractères et de longueur.
+- Si possible, évitez de démarrer les processus en fonction de l’entrée de l’utilisateur.
+- Valider l’entrée par rapport à un ensemble de caractères et une longueur connus.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Si vous connaissez l’entrée a été validée ou séquence d’échappement pour plus de sécurité, il est possible de supprimer cet avertissement sans.
+Si vous savez que l’entrée a été validée ou placée dans une séquence d’échappement pour être sécurisée, il est possible de supprimer cet avertissement en toute sécurité.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 
