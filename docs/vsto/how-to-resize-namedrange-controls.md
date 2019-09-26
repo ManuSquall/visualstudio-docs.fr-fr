@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c57b3de77c2b32d7589fe50d55b3e81db08facd1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80a7fd251d525541b6894c757d7acd148900047c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422486"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252047"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Procédure : Redimensionner les contrôles NamedRange
   Vous pouvez définir la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> quand vous l’ajoutez à un document Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner plus tard.
@@ -36,7 +36,7 @@ ms.locfileid: "63422486"
 
 - [Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)
 
-## <a name="designtime"></a> Redimensionner les contrôles NamedRange au moment du design
+## <a name="designtime"></a>Redimensionner les contrôles NamedRange au moment du design
  Vous pouvez redimensionner une plage nommée en redéfinissant sa taille dans la boîte de dialogue **Définir un nom** .
 
 ### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>Pour redimensionner une plage nommée à l’aide de la boîte de dialogue Définir un nom
@@ -55,7 +55,7 @@ ms.locfileid: "63422486"
 
 6. Cliquez sur **OK**.
 
-## <a name="runtimedoclevel"></a> Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet au niveau du document
+## <a name="runtimedoclevel"></a>Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet au niveau du document
  Vous pouvez redimensionner une plage nommée par programmation à l’aide de la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> .
 
 > [!NOTE]
@@ -73,8 +73,8 @@ ms.locfileid: "63422486"
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]
 
-## <a name="runtimeaddin"></a> Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO
- Vous pouvez redimensionner un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle sur une feuille de calcul ouverte lors de l’exécution. Pour plus d’informations sur l’ajout d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle à une feuille de calcul en utilisant un complément, VSTO, consultez [Comment : Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
+## <a name="runtimeaddin"></a>Redimensionner les contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO
+ Vous pouvez redimensionner un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur n’importe quelle feuille de calcul ouverte au moment de l’exécution. Pour plus d’informations sur l’ajout d' <xref:Microsoft.Office.Tools.Excel.NamedRange> un contrôle à une feuille de calcul à l’aide d’un complément [VSTO, consultez Procédure : Ajoutez des contrôles NamedRange aux feuilles](../vsto/how-to-add-namedrange-controls-to-worksheets.md)de calcul.
 
 ### <a name="to-resize-a-named-range-programmatically"></a>Pour redimensionner une plage nommée par programmation
 
@@ -89,12 +89,12 @@ ms.locfileid: "63422486"
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Étendre des documents Word et des classeurs Excel dans des compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
 - [Guide pratique pour Ajouter des contrôles NamedRange aux feuilles de calcul](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Guide pratique pour Redimensionner les contrôles Bookmark](../vsto/how-to-resize-bookmark-controls.md)
 - [Guide pratique pour Redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)

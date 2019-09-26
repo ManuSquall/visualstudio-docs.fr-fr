@@ -9,19 +9,19 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624065"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253597"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurer des rôles de service cloud Azure avec Visual Studio
 Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles web. Pour chaque rôle, vous devez définir le mode de configuration de ce rôle et configurer son mode d’exécution. Pour en savoir plus sur les rôles dans les services cloud, regardez la vidéo [Introduction aux services cloud Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 Les informations pour votre service cloud sont stockées dans les fichiers suivants :
 
-- **ServiceDefinition.csdef** : le fichier de définition de service définit les paramètres d’exécution de votre service cloud, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle. Aucune des données stockées dans `ServiceDefinition.csdef` ne peut être modifiée lorsque votre rôle est en cours d’exécution.
+- **Fichier ServiceDefinition. csdef** : le fichier de définition de service définit les paramètres d’exécution de votre service Cloud, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle. Aucune des données stockées dans `ServiceDefinition.csdef` ne peut être modifiée lorsque votre rôle est en cours d’exécution.
 - **ServiceConfiguration.cscfg** : le fichier de configuration de service configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle. Les données stockées dans `ServiceConfiguration.cscfg` peuvent être modifiées lorsque votre rôle est en cours d’exécution.
 
 Pour stocker différentes valeurs pour les paramètres qui contrôlent l’exécution d’un rôle, vous pouvez définir plusieurs configurations de service. Vous pouvez utiliser une configuration de service différente pour chaque environnement de déploiement. Par exemple, vous pouvez définir votre chaîne de connexion de compte de stockage pour utiliser l’émulateur de stockage Azure local dans une configuration de service local et créer une autre configuration de service pour utiliser le stockage Azure dans le cloud.

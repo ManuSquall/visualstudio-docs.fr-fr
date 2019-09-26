@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234559"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253300"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
 
@@ -56,7 +56,7 @@ Pour corriger une violation de cette règle, refactorisez la méthode pour rédu
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer sans risque un avertissement de cette règle si la complexité ne peut pas être facilement réduite et que la méthode est facile à comprendre, à tester et à entretenir. En particulier, une méthode qui contient une instruction `switch` de`Select` grande [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]taille (in) est candidate pour l’exclusion. Le risque de déstabiliser la base de code en retard dans le cycle de développement ou d’introduire une modification inattendue du comportement de l’exécution dans le code précédemment fourni peut avoir un surplus de l’intérêt de la facilité de maintenance de la refactorisation du code.
+Il est possible de supprimer sans risque un avertissement de cette règle si la complexité ne peut pas être facilement réduite et que la méthode est facile à comprendre, à tester et à entretenir. En particulier, une méthode qui contient une instruction `switch` de`Select` grande [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]taille (in) est candidate pour l’exclusion. Le risque de déstabiliser la base de code en retard dans le cycle de développement ou d’introduire une modification inattendue du comportement au moment de l’exécution dans le code précédemment expédié peut avoir un avantage sur les avantages de la refactorisation du code en matière de facilité de gestion.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Mode de calcul de la complexité cyclomatic
 

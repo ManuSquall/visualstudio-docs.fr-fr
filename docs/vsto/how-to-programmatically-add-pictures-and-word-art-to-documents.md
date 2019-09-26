@@ -1,5 +1,5 @@
 ---
-title: Ajouter des images et des effets WordArt aux documents par programmation
+title: Ajouter des images et des illustrations Word à des documents par programmation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177752"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253825"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procédure : Ajouter par programmation des images et des effets WordArt aux documents
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procédure : Ajouter des images et des illustrations Word à des documents par programmation
   Vous pouvez ajouter des images et des objets de dessin à vos documents au moment du design ou de l'exécution. WordArt vous permet d'ajouter du texte décoratif aux documents Microsoft Office Word. Ces effets de texte spéciaux sont des objets de dessin que vous pouvez personnaliser et insérer dans votre document.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "66177752"
 
 1. Placez votre curseur à l'emplacement où vous souhaitez insérer l'image dans le document.
 
-2. Cliquez sur le **insérer** onglet du ruban.
+2. Cliquez sur l’onglet **Insérer** du ruban.
 
-3. Dans le **Illustrations** de groupe, cliquez sur **image**.
+3. Dans le groupe **illustrations** , cliquez sur **image**.
 
-4. Dans le **insérer une image** boîte de dialogue, accédez à l’image que vous souhaitez insérer, puis cliquez sur **insérer**.
+4. Dans la boîte de dialogue **Insérer une image** , accédez à l’image que vous souhaitez insérer, puis cliquez sur **Insérer**.
 
      L'image est ajoutée à votre document à l'emplacement du curseur.
 
-## <a name="add-a-picture-at-runtime"></a>Ajouter une image lors de l’exécution
+## <a name="add-a-picture-at-run-time"></a>Ajouter une image au moment de l’exécution
  Vous pouvez insérer une image dans un document à l'emplacement du curseur.
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Pour ajouter une image à l'emplacement du curseur
@@ -60,15 +60,15 @@ ms.locfileid: "66177752"
 
 1. Placez votre curseur à l'emplacement où vous souhaitez insérer l'objet WordArt dans le document.
 
-2. Cliquez sur le **insérer** onglet du ruban.
+2. Cliquez sur l’onglet **Insérer** du ruban.
 
-3. Dans le **texte** de groupe, cliquez sur **WordArt**, puis sélectionnez un style WordArt.
+3. Dans le groupe **texte** , cliquez sur **WordArt**, puis sélectionnez un style WordArt.
 
-4. Ajoutez le texte que vous souhaitez voir apparaître dans le document à la **modification du texte WordArt** boîte de dialogue et cliquez sur **OK**.
+4. Ajoutez le texte que vous souhaitez voir apparaître dans le document dans la boîte de dialogue **modifier le texte WordArt** , puis cliquez sur **OK**.
 
      Le texte est ajouté à votre document et le style WordArt sélectionné lui est appliqué.
 
-## <a name="add-wordart-at-runtime"></a>Ajouter un objet WordArt lors de l’exécution
+## <a name="add-wordart-at-run-time"></a>Ajouter un objet WordArt au moment de l’exécution
  Vous pouvez insérer un objet WordArt dans un document à l'emplacement du curseur. La procédure est différente pour les personnalisations de niveau document et les compléments VSTO.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Pour ajouter un objet WordArt à l'emplacement du curseur dans une personnalisation au niveau du document
@@ -97,11 +97,11 @@ ms.locfileid: "66177752"
 
 ## <a name="compile-the-code"></a>Compiler le code
 
-- Une image nommée *SamplePicture.jpg* doit exister sur le lecteur C.
+- Une image nommée *SamplePicture. jpg* doit exister sur le lecteur C.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Ouvrir des documents existants par programmation](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Guide pratique pour Insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Guide pratique pour Restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Guide pratique pour Insérer du texte dans des documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Guide pratique pour Restaurer par programmation les sélections après les recherches](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Guide pratique pour Enregistrer des documents par programmation](../vsto/how-to-programmatically-save-documents.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)

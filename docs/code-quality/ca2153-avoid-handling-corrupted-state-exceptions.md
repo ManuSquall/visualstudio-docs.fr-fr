@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231893"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253221"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Évitez de gérer les exceptions d’état endommagé
 
@@ -39,7 +39,7 @@ Cet avertissement se déclenche lors de l’interception des CSE avec un gestion
 
 Pour résoudre cet avertissement, effectuez l’une des opérations suivantes :
 
-- Supprimer l’attribut <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
+- Supprimer l’attribut <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Cela revient au comportement par défaut au moment de l’exécution où les CSE ne sont pas passés aux gestionnaires catch.
 
 - Supprimer le gestionnaire catch général et privilégier les gestionnaires qui interceptent des types d’exceptions spécifiques. Cela peut inclure des CSE, en supposant que le code du gestionnaire peut les gérer en toute sécurité (rare).
 

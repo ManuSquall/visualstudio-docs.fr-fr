@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926720"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254392"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.
@@ -59,7 +59,7 @@ ms.locfileid: "68926720"
    Pour plus d'informations, voir [Procédure : Ajoutez un volet de tâches personnalisé à une](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)application.
 
 ### <a name="create-the-user-interface"></a>Créer l’interface utilisateur
- Tous les volets de tâches personnalisés créés à l’aide des outils de développement Office dans Visual Studio contiennent un objet <xref:System.Windows.Forms.UserControl>. Ce contrôle utilisateur fournit l'interface utilisateur de votre volet de tâches personnalisé. Vous pouvez créer le contrôle utilisateur au moment du design ou au moment de l’exécution. Si vous le créez au moment du design, vous pouvez utiliser le concepteur Windows Forms pour construire l'interface utilisateur de votre volet de tâches.
+ Tous les volets de tâches personnalisés créés à l’aide des outils de développement Office dans Visual Studio contiennent un objet <xref:System.Windows.Forms.UserControl>. Ce contrôle utilisateur fournit l'interface utilisateur de votre volet de tâches personnalisé. Vous pouvez créer ce contrôle utilisateur au moment du design ou de l'exécution. Si vous le créez au moment du design, vous pouvez utiliser le concepteur Windows Forms pour construire l'interface utilisateur de votre volet de tâches.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Instancier le volet de tâches personnalisé
  Après avoir créé un contrôle utilisateur contenant l'interface utilisateur du volet de tâches personnalisé, vous devez instancier un objet <xref:Microsoft.Office.Tools.CustomTaskPane>. Pour cela, passez le contrôle utilisateur à l’objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> de votre complément VSTO en appelant l’une des méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>. Cette collection est exposée en tant que champ `CustomTaskPanes` de la classe `ThisAddIn`. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisAddIn`.
@@ -83,7 +83,7 @@ ms.locfileid: "68926720"
 ## <a name="access-the-application-from-the-task-pane"></a>Accéder à l’application à partir du volet de tâches
  Pour automatiser l'application à partir du contrôle utilisateur, vous pouvez directement accéder au modèle objet en utilisant `Globals.ThisAddIn.Application` dans votre code. La classe `Globals` statique permet d'accéder à l'objet `ThisAddIn`. Le champ `Application` de cet objet est le point d'entrée dans le modèle objet de l'application.
 
- Pour plus d’informations sur `Application` le champ de `ThisAddIn` l’objet, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md). Pour obtenir une procédure pas à pas qui montre comment automatiser une application à partir d’un [volet de tâches personnalisé, consultez Procédure pas à pas: Automatisation d’une application à partir d’un](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)volet de tâches personnalisé. Pour plus d’informations sur `Globals` la classe, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Pour plus d’informations sur `Application` le champ de `ThisAddIn` l’objet, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md). Pour obtenir une procédure pas à pas qui montre comment automatiser une application à partir d’un [volet de tâches personnalisé, consultez Procédure pas à pas : Automatisation d’une application à partir d’un](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)volet de tâches personnalisé. Pour plus d’informations sur `Globals` la classe, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gérer l’interface utilisateur du volet de tâches
  Après avoir créé le volet de tâches, vous pouvez utiliser les propriétés et événements de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> pour contrôler l’interface utilisateur du volet de tâches et répondre quand l’utilisateur modifie ce volet.
@@ -93,7 +93,7 @@ ms.locfileid: "68926720"
 
  Les utilisateurs peuvent fermer un volet de tâches à tout moment en cliquant sur le bouton **Fermer** (X) dans le coin du volet de tâches. Toutefois, il n'existe pas de méthode par défaut permettant de rouvrir le volet de tâches personnalisé. Si un utilisateur ferme un volet de tâches personnalisé, il ne peut pas l'afficher de nouveau à moins que vous lui fournissiez un moyen de le faire.
 
- Si vous créez un volet de tâches personnalisé dans votre complément VSTO, vous devez également créer un élément d'interface utilisateur, tel qu'un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet de tâches personnalisé. Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui prend en charge la personnalisation du ruban, vous pouvez ajouter un groupe de contrôles au ruban avec un bouton permettant d'afficher ou de masquer le volet de tâches personnalisé. Pour obtenir une procédure pas à pas qui montre comment procéder [, consultez Procédure pas à pas: Synchroniser un volet de tâches personnalisé avec un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)bouton de ruban.
+ Si vous créez un volet de tâches personnalisé dans votre complément VSTO, vous devez également créer un élément d'interface utilisateur, tel qu'un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet de tâches personnalisé. Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui prend en charge la personnalisation du ruban, vous pouvez ajouter un groupe de contrôles au ruban avec un bouton permettant d'afficher ou de masquer le volet de tâches personnalisé. Pour obtenir une procédure pas à pas qui montre comment procéder [, consultez Procédure pas à pas : Synchroniser un volet de tâches personnalisé avec un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)bouton de ruban.
 
  Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui ne prend en charge la personnalisation du ruban, vous pouvez ajouter un objet <xref:Microsoft.Office.Core.CommandBarButton> permettant d'afficher ou de masquer le volet de tâches personnalisé.
 
@@ -102,7 +102,7 @@ ms.locfileid: "68926720"
 
  Le tableau suivant répertorie les modifications que vous pouvez apporter à un volet de tâches personnalisé à l'aide des propriétés <xref:Microsoft.Office.Tools.CustomTaskPane>.
 
-|Tâche|Propriété|
+|Tâche|Property|
 |----------|--------------|
 |Modifier la taille du volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|
 |Modifier l'emplacement du volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|
@@ -114,7 +114,7 @@ ms.locfileid: "68926720"
 
  Le tableau suivant répertorie les événements que vous pouvez gérer pour répondre aux modifications susceptibles d'être apportées par l'utilisateur dans le volet de tâches personnalisé.
 
-|Tâche|Événement|
+|Tâche|événement|
 |----------|-----------|
 |Répondre quand l'utilisateur modifie l'emplacement du volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Répondre quand l'utilisateur masque ou rend visible le volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|

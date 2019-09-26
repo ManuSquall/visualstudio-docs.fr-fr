@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848522"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252891"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.
@@ -23,7 +23,7 @@ La capture par programmation est particulièrement utile dans les scénarios sui
 
 - Commencez la capture par programmation quand votre application n'effectue aucun rendu, par exemple, quand elle utilise DirectCompute pour les calculs.
 
-- Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à prévoir et à capturer dans le cadre d'un test manuel, mais qui peut être prédit par programmation à partir d'informations sur l'état de l'application au moment de l'exécution.
+- Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à anticiper et à capturer dans les tests manuels, mais peut être prédit par programmation à l’aide d’informations sur l’état de l’application au moment de l’exécution.
 
 ## <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10
 Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications qui utilisent l’API DirectX 11.2 dans Windows 10, qui elle-même utilise la méthode de capture robuste.
@@ -37,7 +37,7 @@ Cette section montre comment effectuer ces tâches :
 - Capture d'informations graphiques
 
 > [!NOTE]
-> Les implémentations précédentes de capture par programmation dépendaient des outils à distance pour Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir des fonctionnalités de capture.
+> Les implémentations précédentes de la capture par programmation s’appuyaient sur outils de contrôle à distance de Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir une fonctionnalité de capture.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Préparation de votre application à l'utilisation de la capture par programmation
 Pour utiliser la capture par programmation dans votre application, celle-ci doit inclure les en-têtes nécessaires. Ces en-têtes font partie du Kit SDK Windows 10.
@@ -54,7 +54,7 @@ Pour utiliser la capture par programmation dans votre application, celle-ci doit
     ```
 
     > [!IMPORTANT]
-    > N’incluez pas le fichier d’en-tête vsgcapture.h (qui prend en charge la capture par programmation dans Windows 8.0 et versions antérieures) pour utiliser la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarre pas.
+    > N’incluez pas le fichier d’en-tête vsgcapture.h (qui prend en charge la capture par programmation dans Windows 8.0 et versions antérieures) pour utiliser la capture par programmation dans vos applications Windows 10. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après l’en-tête d3d11_2. h, le compilateur émet un avertissement. Si vsgcapture. h est inclus avant d3d11_2. h, l’application ne démarre pas.
 
     > [!NOTE]
     > Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.
@@ -63,7 +63,7 @@ Pour utiliser la capture par programmation dans votre application, celle-ci doit
 Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.
 
 > [!IMPORTANT]
-> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans graphics diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou sous la [l’outil de ligne de commande de Capture](command-line-capture-tool.md).
+> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Alt + F5 dans) ou sous l' [outil de capture en ligne de commande](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis
 
@@ -74,7 +74,7 @@ Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous deve
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  Veillez à consulter le `HRESULT` retourné par [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) pour vous assurer d’obtenir une interface valide avant de l’utiliser :
+  Veillez à vérifier le `HRESULT` retourné par [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) pour vous assurer d’obtenir une interface valide avant de l’utiliser :
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -107,7 +107,7 @@ Maintenant que vous avez une interface `IDXGraphicsAnalysis` valide, vous pouvez
     ...
     ```
 
-- Après l’appel à `EndCapture`, libérer l’objet graphics.
+- Après l’appel à `EndCapture`, Libérez l’objet Graphics.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :

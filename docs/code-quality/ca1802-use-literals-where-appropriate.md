@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233802"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253366"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802 : Utilisez des littéraux quand cela est approprié
 
@@ -43,9 +43,9 @@ Par défaut, cette règle recherche uniquement les champs visibles de l’extér
 
 La valeur d’un `static readonly` champ est calculée au moment de l’exécution lorsque le constructeur statique du type déclarant est appelé. Si le `static readonly` champ est initialisé lorsqu’il est déclaré et qu’un constructeur statique n’est pas déclaré explicitement, le compilateur émet un constructeur statique pour initialiser le champ.
 
-La valeur d’un `const` champ est calculée au moment de la compilation et stockée dans les métadonnées, ce qui augmente les performances d’exécution `static readonly` lorsqu’il est comparé à un champ.
+La valeur d’un `const` champ est calculée au moment de la compilation et stockée dans les métadonnées, ce qui augmente les performances au moment de l' `static readonly` exécution lorsqu’elle est comparée à un champ.
 
-La valeur assignée au champ ciblé étant calculable à la compilation, remplacez la déclaration par un `const` afin que la valeur soit calculée au moment de la compilation et non lors de l’exécution.
+Étant donné que la valeur assignée au champ ciblé peut être calculée au moment de la compilation, `const` remplacez la déclaration par un champ afin que la valeur soit calculée au moment de la compilation plutôt qu’au moment de l’exécution.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: 900e677ce670c49036ea6d76596ff509129ce979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 722c816329c70bb2efad03f9554e201bcc9fde16
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572776"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253474"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>Créer un projet de service cloud Azure avec Visual Studio
 
@@ -60,7 +60,7 @@ Cette section vous guide dans le processus de création d’un projet de service
 
 Le projet Azure Visual Studio est associé aux projets de rôle de la solution. Le projet comprend également le *fichier de définition de service* et le *fichier de configuration de service* :
 
-- **Fichier de définition de service** : définit les paramètres d’exécution de votre application, notamment les rôles requis, les points de terminaison et la taille de la machine virtuelle.
+- **Fichier de définition de service** : définit les paramètres d’exécution de votre application, y compris les rôles requis, les points de terminaison et la taille de la machine virtuelle.
 - **Fichier de configuration de service** : configure le nombre d’instances d’un rôle exécutées et les valeurs des paramètres définis pour un rôle.
 
 Pour plus d’informations sur ces fichiers,voir [Configuration des rôles pour un service cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).

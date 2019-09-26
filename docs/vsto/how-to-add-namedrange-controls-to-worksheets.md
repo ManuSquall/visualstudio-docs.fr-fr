@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cc909828dc77c0f1dbe31c79255f2c93d2a95b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bd5f9763150cf526acca2dfdc2762b3f202950a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826556"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255609"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procédure : Ajouter des contrôles NamedRange aux feuilles de calcul
-  Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.
+  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul Microsoft Office Excel au moment de la conception et au moment de l’exécution dans des projets au niveau du document.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- Vous pouvez également ajouter <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles lors de l’exécution dans les projets de complément VSTO.
+ Vous pouvez aussi ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> au moment de l’exécution dans des projets de complément VSTO.
 
  Cette rubrique décrit les tâches suivantes :
 
@@ -36,9 +36,9 @@ ms.locfileid: "62826556"
 
 - [Ajouter des contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)
 
-  Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôles, consultez [contrôle NamedRange](../vsto/namedrange-control.md).
+  Pour plus d’informations <xref:Microsoft.Office.Tools.Excel.NamedRange> sur les contrôles, consultez [NamedRange, contrôle](../vsto/namedrange-control.md).
 
-## <a name="designtime"></a> Ajouter des contrôles NamedRange au moment du design
+## <a name="designtime"></a>Ajouter des contrôles NamedRange au moment du design
  Il existe plusieurs façons d’ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul dans un projet au niveau du document au moment de la conception : dans Excel, à partir de la **Boîte à outils**Visual Studio, et à partir de la fenêtre **Sources de données** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "62826556"
 
 1. Sélectionnez la ou les cellules que vous souhaitez inclure dans l'étendue nommée.
 
-2. Dans le **zoneNom**, tapez un nom pour la plage et appuyez sur **entrée**.
+2. Dans la **zone Nom**, tapez un nom pour la plage et appuyez sur **entrée**.
 
      La **Zone Nom** se trouve à côté de la barre de formule, juste au-dessus de la colonne **A** de la feuille de calcul.
 
@@ -73,8 +73,8 @@ ms.locfileid: "62826556"
 
      Un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> lié aux données est ajouté à la feuille de calcul. Pour plus d’informations, consultez [liaison de données et Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a> Ajouter des contrôles NamedRange au moment de l’exécution dans un projet au niveau du document
- Vous pouvez ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle par programmation à votre feuille de calcul lors de l’exécution. Cela vous permet de créer les contrôles hôtes en réponse à des événements. Les plages nommées créées dynamiquement ne sont pas conservées dans la feuille de calcul en tant que contrôles hôtes au moment où la feuille de calcul est fermée. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="runtimedoclevel"></a>Ajouter des contrôles NamedRange au moment de l’exécution dans un projet au niveau du document
+ Vous pouvez ajouter un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle par programmation à votre feuille de calcul au moment de l’exécution. Cela vous permet de créer les contrôles hôtes en réponse à des événements. Les plages nommées créées dynamiquement ne sont pas conservées dans la feuille de calcul en tant que contrôles hôtes au moment où la feuille de calcul est fermée. Pour plus d’informations, consultez [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Pour ajouter un contrôle NamedRange à une feuille de calcul par programmation
 
@@ -83,8 +83,8 @@ ms.locfileid: "62826556"
      [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
 
-## <a name="runtimeaddin"></a> Ajouter des contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO
- Vous pouvez ajouter par programmation un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul ouverte dans un projet de complément VSTO. Les plages nommées créées dynamiquement ne sont pas conservées dans la feuille de calcul en tant que contrôles hôtes au moment où la feuille de calcul est fermée. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="runtimeaddin"></a>Ajouter des contrôles NamedRange au moment de l’exécution dans un projet de complément VSTO
+ Vous pouvez ajouter par programmation un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul ouverte dans un projet de complément VSTO. Les plages nommées créées dynamiquement ne sont pas conservées dans la feuille de calcul en tant que contrôles hôtes au moment où la feuille de calcul est fermée. Pour plus d’informations, consultez [extension de documents Word et de classeurs Excel dans des compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
 
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>Pour ajouter un contrôle NamedRange à une feuille de calcul par programmation
 
@@ -94,10 +94,10 @@ ms.locfileid: "62826556"
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)
-- [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [Étendre des documents Word et des classeurs Excel dans des compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
+- [NamedRange, contrôle](../vsto/namedrange-control.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 - [Guide pratique pour Redimensionner les contrôles NamedRange](../vsto/how-to-resize-namedrange-controls.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

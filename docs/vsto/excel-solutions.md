@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c9af0a0c90d042d5720423150899971ffca8ec9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551517"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253620"
 ---
 # <a name="excel-solutions"></a>solutions Excel
   Visual Studio fournit des modèles de projet à l'aide desquels vous pouvez créer des personnalisations de niveau document et des compléments VSTO pour Microsoft Office Excel. Vous pouvez utiliser ces solutions pour automatiser Excel, étendre les fonctionnalités Excel et personnaliser l'interface utilisateur Excel. Pour plus d’informations sur les différences entre les personnalisations au niveau du document et les compléments VSTO, consultez [vue &#40;d'&#41;ensemble du développement des solutions Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -96,7 +96,7 @@ ms.locfileid: "69551517"
 |Tâche|Pour plus d'informations|
 |----------|--------------------------|
 |Ajouter un volet Actions au classeur.|[Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)<br /><br /> [Guide pratique pour Ajouter un volet actions à des documents Word ou à des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
-|Ajoutez des contrôles de plage étendue mappés aux nœuds XML d'une feuille de calcul.|[Guide pratique : Ajouter des contrôles XMLMappedRange aux feuilles de calcul](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
+|Ajoutez des contrôles de plage étendue mappés aux nœuds XML d'une feuille de calcul.|[Guide pratique pour Ajouter des contrôles XMLMappedRange aux feuilles de calcul](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|
 
 ### <a name="options-for-vsto-add-ins"></a>Options pour les compléments VSTO
  Le tableau suivant répertorie les options de personnalisation qui sont disponibles uniquement pour les compléments VSTO.
@@ -115,6 +115,6 @@ ms.locfileid: "69551517"
 | [Vue d’ensemble des contrôles de Windows Forms sur les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md) | Décrit comment ajouter des contrôles Windows Forms aux feuilles de calcul Excel. |
 | [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | Montre comment créer une personnalisation de base au niveau du document pour Excel. |
 | [Procédure pas à pas : Créer votre premier complément VSTO pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | Montre comment créer un complément VSTO de base pour Excel. |
-| [Procédure pas à pas : Ajouter des contrôles à une feuille de calcul au moment de l’exécution dans un projet de complément VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Montre comment ajouter un bouton Windows Forms, un <xref:Microsoft.Office.Tools.Excel.NamedRange>et un <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment de l’exécution à l’aide d’un complément VSTO. |
+| [Procédure pas à pas : Ajouter des contrôles à une feuille de calcul au moment de l’exécution dans un projet de complément VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | Montre comment ajouter un bouton Windows Forms, un <xref:Microsoft.Office.Tools.Excel.NamedRange>et un <xref:Microsoft.Office.Tools.Excel.ListObject> dans une feuille de calcul au moment de l'exécution en utilisant un complément VSTO. |
 | [Comprendre la co-création et les compléments](./understanding-coauthoring-and-addins.md) | Décrit les ajustements que vous devrez peut-être apporter à vos solutions pour prendre en charge la co-création. |
 | [Excel 2010 dans le développement Office](http://go.microsoft.com/fwlink/?LinkId=199011) | Fournit des liens vers des articles et une documentation de référence sur le développement de solutions Excel. Ils ne sont pas spécifiques au développement Office avec Visual Studio. |

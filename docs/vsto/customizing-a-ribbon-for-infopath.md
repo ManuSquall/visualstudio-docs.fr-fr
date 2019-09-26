@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437445"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255504"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personnaliser un ruban pour InfoPath
   Quand vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] peut afficher le ruban dans les trois types suivants de fenêtres d'application InfoPath :
@@ -29,7 +29,7 @@ ms.locfileid: "63437445"
 
 - Fenêtre Aperçu avant impression.
 
-  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux projets de complément VSTO pour InfoPath 2010. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
+  **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux projets de compléments VSTO pour InfoPath 2010. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
 
   Les utilisateurs et les concepteurs ouvrent un modèle de formulaire en mode Création pour modifier l'apparence et la disposition du modèle. Les utilisateurs ouvrent des formulaires basés sur un modèle de formulaire pour ajouter du contenu.
 
@@ -40,8 +40,8 @@ ms.locfileid: "63437445"
 
  Vous devez spécifier le type de ruban de chaque fenêtre dans laquelle vous souhaitez que votre ruban apparaisse.
 
-## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Spécifiez le type de ruban dans le Concepteur de ruban
- Si vous utilisez le **ruban (Concepteur visuel)** d’élément, cliquez sur le **RibbonType** propriété du ruban dans le **propriétés** fenêtre, puis sélectionnez un de l’ID de ruban décrit dans le tableau suivant.
+## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Spécifier le type de ruban dans le concepteur de ruban
+ Si vous utilisez l’élément **Ruban (concepteur visuel)** , cliquez sur la propriété **RibbonType** du ruban dans la fenêtre **Propriétés** , puis sélectionnez l’un des ID de ruban décrits dans le tableau suivant.
 
 |ID de ruban|Fenêtre dans laquelle le ruban s'affichera quand vous exécuterez le projet|
 |---------------|---------------------------------------------------------------------|
@@ -51,7 +51,7 @@ ms.locfileid: "63437445"
 
  Vous pouvez ajouter plusieurs rubans à un projet. Si plusieurs rubans partagent un ID de ruban, substituez la méthode `CreateRibbonExtensibilityObject` dans la classe `ThisAddin` de votre projet pour spécifier le ruban à afficher au moment de l'exécution. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
 
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Spécifiez le type de ruban à l’aide de XML du ruban
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Spécifier le type de ruban à l’aide du ruban XML
  Si vous utilisez l'élément **Ruban (XML)** , vérifiez la valeur du paramètre *ribbonID* dans la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> et retournez le ruban approprié.
 
  La méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> est automatiquement générée par Visual Studio dans le fichier de code du ruban. Le paramètre *ribbonID* est une chaîne qui identifie le type de fenêtre InfoPath qui s'ouvre.
@@ -62,7 +62,7 @@ ms.locfileid: "63437445"
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

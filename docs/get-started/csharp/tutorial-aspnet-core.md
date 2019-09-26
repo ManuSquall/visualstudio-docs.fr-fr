@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186681"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252461"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Prise en main de C# et d’ASP.NET Core dans Visual Studio
 
@@ -170,7 +170,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
     Vous pouvez placer du contenu de site statique, par exemple &mdash;des feuilles de style CSS, des images et des bibliothèques JavaScript&mdash;, directement dans les chemins souhaités.
 
- 1. Le projet contient également des fichiers de configuration qui gèrent l’application web à l’exécution. La [configuration](/aspnet/core/fundamentals/configuration) de l’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer ces paramètres à l’aide de *appsettings.Development.json*. Développez le fichier **appsettings.json** pour voir le fichier **appsettings.Development.json**.
+ 1. Le projet contient également des fichiers de configuration qui gèrent l’application Web au moment de l’exécution. La [configuration](/aspnet/core/fundamentals/configuration) de l’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer ces paramètres à l’aide de *appsettings.Development.json*. Développez le fichier **appsettings.json** pour voir le fichier **appsettings.Development.json**.
 
      ![Fichiers de configuration dans l’Explorateur de solutions dans Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
     Vous pouvez placer du contenu de site statique, par exemple &mdash;des feuilles de style CSS, des images et des bibliothèques JavaScript&mdash;, directement dans les chemins souhaités.
 
- 1. Le projet contient également des fichiers de configuration qui gèrent l’application web à l’exécution. La [configuration](/aspnet/core/fundamentals/configuration) de l’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer ces paramètres à l’aide de *appsettings.Development.json*. Développez le fichier **appsettings.json** pour voir le fichier **appsettings.Development.json**.
+ 1. Le projet contient également des fichiers de configuration qui gèrent l’application Web au moment de l’exécution. La [configuration](/aspnet/core/fundamentals/configuration) de l’application par défaut est stockée dans *appsettings.json*. Toutefois, vous pouvez remplacer ces paramètres à l’aide de *appsettings.Development.json*. Développez le fichier **appsettings.json** pour voir le fichier **appsettings.Development.json**.
 
      ![Fichiers de configuration dans l’Explorateur de solutions dans Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -304,7 +304,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
 1. À présent, nous allons modifier le code. Choisissez **privacy.cshtml.cs**. Ensuite, nettoyez les directives `using` en haut du fichier à l’aide du raccourci suivant :
 
-   Choisissez l’une des directives `using` grisées. Une ampoule [Actions rapides](../../ide/quick-actions.md) apparaît alors juste au-dessous du signe insertion ou dans la marge de gauche. Choisissez l’ampoule, puis pointez sur **Supprimer les utilisations inutiles**. 
+   Choisissez l’une des directives `using` grisées. Une ampoule [Actions rapides](../../ide/quick-actions.md) apparaît alors juste au-dessous du signe insertion ou dans la marge de gauche. Choisissez l’ampoule, puis pointez sur **Supprimer les utilisations inutiles**.
 
    ![Supprimer les using inutiles dans le fichier Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 

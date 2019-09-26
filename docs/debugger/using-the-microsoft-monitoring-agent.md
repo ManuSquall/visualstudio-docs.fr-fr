@@ -1,5 +1,5 @@
 ---
-title: À l’aide de l’agent Microsoft Monitoring Agent | Microsoft Docs
+title: Utilisation de l’Microsoft Monitoring Agent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb7f14b4906d2342c4b190fa00f0da559ecde8c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0e4aaf70925ee0561729cb73d84586c10c07b258
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679134"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252540"
 ---
-# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>À l’aide de l’agent Microsoft Monitoring Agent (C#, Visual Basic)
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Utilisation de l’Microsoft Monitoring AgentC#(, Visual Basic)
 
 **Microsoft Monitoring Agent**vous permet de surveiller localement les applications web ASP.NET hébergées sur IIS et les applications SharePoint 2010 ou 2013 pour diagnostiquer les erreurs, les problèmes de performances ou autres dysfonctionnements. Vous pouvez enregistrer les événements de diagnostic de l’agent dans un journal IntelliTrace (.iTrace), puis ouvrir ce journal dans Visual Studio Enterprise (mais pas Professional ni Community) pour résoudre les problèmes à l’aide des différents outils de diagnostic de Visual Studio. Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace en exécutant l’agent en mode **Trace** . Microsoft Monitoring Agent peut être intégré à [Application Insights](/azure/application-insights/) et [System Center Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé.
 
 > [!NOTE]
-> Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace pour les applications web, SharePoint, WPF et Windows Forms s’exécutant sur des ordinateurs distants sans avoir à modifier l’environnement cible, en utilisant le **collecteur autonome IntelliTrace**. Le collecteur autonome a plus d’impact sur les performances que Microsoft Monitoring Agent exécuté en mode **Monitor** . Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace pour les applications web, SharePoint, WPF et Windows Forms s’exécutant sur des ordinateurs distants sans avoir à modifier l’environnement cible, en utilisant le **collecteur autonome IntelliTrace**. Le collecteur autonome a plus d’impact sur les performances que Microsoft Monitoring Agent exécuté en mode **Monitor** . Consultez [utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  Si vous utilisez System Center 2012, utilisez Microsoft Monitoring Agent avec Operations Manager pour recevoir des alertes sur les problèmes détectés et créer des éléments de travail Team Foundation Server avec des liens vers les fichiers journaux IntelliTrace enregistrés. Vous pouvez ensuite affecter ces éléments de travail à d’autres personnes pour la suite du débogage. Consultez [Intégration d’Operations Manager à des processus de développement](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) et [Surveillance avec Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -72,12 +72,12 @@ ms.locfileid: "65679134"
 
 2. Importez le module PowerShell de Microsoft Monitoring Agent à partir de l’emplacement d’installation par défaut :
 
-     **PS C : > Import-Module « C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll »**
+     **PS C : > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
 3. [Visitez TechNet](https://technet.microsoft.com/systemcenter/default) pour obtenir le contenu d’aide le plus récent.
 
 #### <a name="FullPermissionsITLog"></a> Q : Comment définir des autorisations pour le pool d'applications ?
- **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Exemple :
+ **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Par exemple :
 
 - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -89,7 +89,7 @@ ms.locfileid: "65679134"
 
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-    ou
+    \- ou -
 
 - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 
@@ -112,7 +112,7 @@ ms.locfileid: "65679134"
 
 1. Sur votre serveur web, ouvrez une fenêtre d’invite de commandes **Windows PowerShell** ou **Windows PowerShell ISE** en tant qu’administrateur.
 
-     ![Ouvrez PowerShell de Windows en tant qu’administrateur](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
+     ![Ouvrir Windows PowerShell en tant qu’administrateur](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
 
 2. Exécutez la commande [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) pour démarrer la surveillance de votre application. Cette opération aura pour effet de redémarrer toutes les applications web sur votre serveur web.
 
@@ -122,20 +122,20 @@ ms.locfileid: "65679134"
 
      Voici un exemple qui utilise seulement le nom de l’application web et le mode léger **Monitor** :
 
-     **PS C : > Start-WebApplicationMonitoring « FabrikamFabrikamFiber.Web » surveiller « C:IntelliTraceLogs »**
+     **PS C : > Start-WebApplicationMonitoring « FabrikamFabrikamFiber. Web » Monitor « C :IntelliTraceLogs »**
 
      Voici un exemple qui utilise le chemin d’accès IIS et le mode léger **Monitor** :
 
-     **PS C : > Start-WebApplicationMonitoring « IIS:sitesFabrikamFabrikamFiber.Web » surveiller « C:IntelliTraceLogs »**
+     **PS C : > Start-WebApplicationMonitoring "IIS : sitesFabrikamFabrikamFiber. Web" Monitor "C :IntelliTraceLogs"**
 
      Une fois la surveillance démarrée, il se peut que Microsoft Monitoring Agent soit suspendu pendant que vos applications redémarrent.
 
-     ![Démarrer l’analyse avec confirmation de MMA](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
+     ![Démarrer l’analyse avec la confirmation MMA](../debugger/media/ffr_powershellstartmonitoringconfirmation.png "FFR_PowerShellStartMonitoringConfirmation")
 
     |||
     |-|-|
-    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> ou<br /><br /> **« IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Exemple :<br /><br /> ![Chemin d’accès au site web IIS et l’application web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) et [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
-    |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Moniteur** : Enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace** : Enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir des autorisations pour le pool d’applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » suivi de « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml » « C:\IntelliTraceLogs »**</li><li>**Personnalisé** : Enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|
+    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> \- ou -<br /><br /> **«IIS : \ sites** *<IISWebsiteName\><IISWebAppName\>" \\\\*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Par exemple :<br /><br /> ![Chemin d’accès au site Web IIS et à l’application Web](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) et [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
+    |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Moniteur** : Enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace** : Enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir des autorisations pour le pool d’applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » trace « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml » « C:\IntelliTraceLogs »**</li><li>**Personnalisé** : Enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|
     |*"\<outputPath>"*|Spécifiez le chemin d’accès complet du répertoire de stockage des journaux IntelliTrace. Veillez à créer ce répertoire avant de commencer la surveillance.|
     |*\<UInt32>*|Spécifiez la taille maximale du journal IntelliTrace. Par défaut, la taille maximale du journal IntelliTrace est de 250 Mo.<br /><br /> Quand le journal atteint cette limite, l’agent supprime les entrées les plus anciennes du journal pour faire de la place aux nouvelles entrées. Pour changer cette limite, utilisez l’option **-MaximumFileSizeInMegabytes** ou modifiez l’attribut `MaximumLogFileSize` défini dans le plan de collecte.|
     |*"\<collectionPlanPathAndFileName>"*|Spécifiez le chemin d’accès complet ou le chemin d’accès relatif et le nom de fichier du plan de collecte. Ce plan est un fichier .xml qui configure les paramètres de l’agent.<br /><br /> Ces plans sont inclus avec l’agent et fonctionnent avec des applications web et SharePoint :<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Collecte uniquement les événements, tels que les exceptions, les événements de performances, les appels de base de données et les demandes de serveur web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Collecte les appels de fonction ainsi que toutes les données du plan de collecte par défaut. Ce plan est approprié pour une analyse détaillée, mais il risque de ralentir votre application.<br /><br /> Vous trouverez des versions localisées de ces plans dans les sous-dossiers de l’agent. Vous pouvez également [personnaliser ces plans ou créer vos propres plans](http://go.microsoft.com/fwlink/?LinkId=227871) pour éviter de ralentir votre application. Placez tous les plans personnalisés dans le même emplacement sécurisé que l’agent.<br /><br /> [Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)|
@@ -151,7 +151,7 @@ ms.locfileid: "65679134"
 
 - Pour les applications web et SharePoint, l’agent enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application. Pour éviter de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.
 
-- Passez en revue les événements du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas. Cela peut améliorer les performances de démarrage et les performances d’exécution.
+- Passez en revue les événements du plan de collecte pour lesquels l’agent collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas. Cela permet d’améliorer les performances de démarrage et les performances d’exécution.
 
    Pour désactiver un événement, définissez l’attribut `enabled` pour l’élément `<DiagnosticEventSpecification>` avec la valeur `false`:
 
@@ -159,7 +159,7 @@ ms.locfileid: "65679134"
 
    Si l’attribut `enabled` n’existe pas, l’événement est activé.
 
-   Exemple :
+   Par exemple :
 
   - Désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.
 
@@ -224,11 +224,11 @@ Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` q
 
 Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .
 
-![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+![Relation entre l’employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
 L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, l’agent n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). L’agent n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).
 
-## <a name="SaveEvents"></a> Étape 3 : Enregistrer les événements enregistrés
+## <a name="SaveEvents"></a>Étape 3 : Enregistrer les événements enregistrés
  Si vous trouvez une erreur ou un problème de performances, consignez les événements enregistrés dans un journal IntelliTrace. L’agent ne crée un journal que s’il a enregistré des événements. Si vous utilisez System Center 2012, consultez [Analyse des applications web avec Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Créer un journal des événements enregistrés et continuer la surveillance
@@ -242,15 +242,15 @@ L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l�
 
     \- ou -
 
-    **Checkpoint-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*
+    **Point de contrôle-WebApplicationMonitoring "IIS : \ sites** *<IISWebsiteName\><IISWebAppName\>" \\\\*
 
-    Exemple :
+    Par exemple :
 
-    **PS C :\\> Checkpoint-WebApplicationMonitoring « Fabrikam\FabrikamFiber.Web »**
+    **PS C :\\> point de contrôle-WebApplicationMonitoring « Fabrikam\FabrikamFiber.Web »**
 
-    ou
+    \- ou -
 
-    **PS C : > Checkpoint-WebApplicationMonitoring « IIS:sitesFabrikamFabrikamFiber.Web »**
+    **PS C : > Checkpoint-WebApplicationMonitoring "IIS : sitesFabrikamFabrikamFiber. Web"**
 
     Pour plus d’informations, exécutez la commande **get-help Checkpoint-WebApplicationMonitoring –detailed** ou la commande **get-help Checkpoint-WebApplicationMonitoring –examples**.
 
@@ -272,19 +272,19 @@ L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l�
 
     \- ou -
 
-    **Stop-WebApplicationMonitoring » IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>»*
+    **Stop-WebApplicationMonitoring "IIS : \ sites** *<IISWebsiteName\><IISWebAppName\>" \\\\*
 
     Vous pouvez aussi arrêter la surveillance de toutes les applications web :
 
     **Stop-WebApplicationMonitoring -All**
 
-    Exemple :
+    Par exemple :
 
-    **PS C :\\> Stop-WebApplicationMonitoring « Fabrikam\iFabrikamFiber.Web »**
+    **PS C :\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**
 
     \- ou -
 
-    **PS C :\\> Stop-WebApplicationMonitoring « IIS:\sites\Fabrikam\FabrikamFiber.Web »**
+    **PS C :\\> Stop-WebApplicationMonitoring "IIS : \ sites\Fabrikam\FabrikamFiber.Web"**
 
     Pour plus d’informations, exécutez la commande **get-help Stop-WebApplicationMonitoring –detailed** ou la commande **get-help Stop-WebApplicationMonitoring –examples**.
 

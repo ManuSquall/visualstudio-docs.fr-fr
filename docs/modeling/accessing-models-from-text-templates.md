@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870710"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254121"
 ---
 # <a name="access-models-from-text-templates"></a>Accéder à des modèles à partir de modèles de texte
 
@@ -23,7 +23,7 @@ ms.locfileid: "68870710"
 > [!NOTE]
 > Lorsque vous créez une solution DSL, des exemples de  **\*** fichiers de modèle de texte. TT sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionneront plus. Néanmoins, elles incluent les directives de base dont vous avez besoin, et fournissent des exemples que vous pouvez mettre à jour pour qu’ils correspondent à votre DSL.
 
- Pour accéder à un modèle à partir d’un modèle de texte:
+ Pour accéder à un modèle à partir d’un modèle de texte :
 
 - Affectez à la propriété inherit de la directive template la valeur [Microsoft. VisualStudio. TextTemplating. vshost. ModelingTextTransformation](/previous-versions/bb893209(v=vs.140)). Cela permet d’accéder au magasin.
 
@@ -51,7 +51,7 @@ Here is a list of elements in the model:
 #>
 ```
 
- Notez les points suivants sur ce modèle:
+ Notez les points suivants sur ce modèle :
 
 - Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez définies dans la définition DSL.
 
@@ -74,7 +74,7 @@ Here is a list of elements in the model:
 
  Le nom de la directive ( `MyLanguage`, dans cet exemple) est dérivé du nom de votre DSL. Il appelle un *processeur de directive* qui est généré dans le cadre de votre DSL. Vous pouvez trouver son code source dans **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
- Le processeur de directive DSL effectue deux tâches principales:
+ Le processeur de directive DSL effectue deux tâches principales :
 
 - Il insère efficacement des directives d’assembly et d’importation dans le modèle qui fait référence à votre DSL. Cela vous permet d’utiliser vos classes de domaine dans le code du modèle.
 
@@ -89,7 +89,7 @@ Here is a list of elements in the model:
 
  Notez que :
 
-1. Les `filename` paramètres `validation` et sont séparés par des «;» et il ne doit pas y avoir d’autres séparateurs ou espaces.
+1. Les `filename` paramètres `validation` et sont séparés par des « ; » et il ne doit pas y avoir d’autres séparateurs ou espaces.
 
 2. La liste des catégories de validation détermine les méthodes de validation qui seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit pas y avoir d’autres séparateurs ou espaces.
 
@@ -138,19 +138,19 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Chargement dynamique des modèles
  Si vous souhaitez déterminer au moment de l’exécution les modèles à charger, vous pouvez charger un fichier de modèle dynamiquement dans le code de votre programme, au lieu d’utiliser la directive spécifique à DSL.
 
- Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous  **\<** devez ajouter des > d’assembly et  **\<importer** des directives > pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
+ Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous devez ajouter  **\<des > d’assembly** et  **\<importer** des directives > pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
 
  Pour charger le fichier, la méthode la plus efficace consiste à utiliser Visual Studio ModelBus. Dans un scénario classique, votre modèle de texte utilisera une directive DSL spécifique pour charger le premier modèle de la manière habituelle. Ce modèle contient des références ModelBus à un autre modèle. Vous pouvez utiliser ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Dans un scénario moins habituel, vous souhaiterez peut-être ouvrir un fichier de modèle pour lequel vous disposez uniquement d’un nom de fichier et qui ne figure peut-être pas dans le projet Visual Studio actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique [décrite dans How to: Ouvrez un modèle à partir d’un fichier](../modeling/how-to-open-a-model-from-file-in-program-code.md)dans le code de programme.
+ Dans un scénario moins habituel, vous souhaiterez peut-être ouvrir un fichier de modèle pour lequel vous disposez uniquement d’un nom de fichier et qui ne figure peut-être pas dans le projet Visual Studio actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique [décrite dans How to : Ouvrez un modèle à partir d’un fichier](../modeling/how-to-open-a-model-from-file-in-program-code.md)dans le code de programme.
 
 ## <a name="generating-multiple-files-from-a-template"></a>Génération de plusieurs fichiers à partir d’un modèle
  Si vous souhaitez générer plusieurs fichiers (par exemple, pour générer un fichier distinct pour chaque élément d’un modèle), il existe plusieurs approches possibles. Par défaut, un seul fichier est généré à partir de chaque fichier de modèle.
 
 ### <a name="splitting-a-long-file"></a>Fractionnement d’un fichier long
- Dans cette méthode, vous utilisez un modèle pour générer un seul fichier, séparé par un délimiteur. Vous fractionnez ensuite le fichier en plusieurs parties. Il existe deux modèles: un pour générer le fichier unique et l’autre pour le fractionner.
+ Dans cette méthode, vous utilisez un modèle pour générer un seul fichier, séparé par un délimiteur. Vous fractionnez ensuite le fichier en plusieurs parties. Il existe deux modèles : un pour générer le fichier unique et l’autre pour le fractionner.
 
- **LoopTemplate. T4** génère le long fichier unique. Notez que son extension de fichier est «. T4», car elle ne doit pas être traitée directement lorsque vous cliquez sur **transformer tous les modèles**. Ce modèle prend un paramètre qui spécifie la chaîne de délimiteur qui sépare les segments:
+ **LoopTemplate. T4** génère le long fichier unique. Notez que son extension de fichier est « . T4 », car elle ne doit pas être traitée directement lorsque vous cliquez sur **transformer tous les modèles**. Ce modèle prend un paramètre qui spécifie la chaîne de délimiteur qui sépare les segments :
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6481bbcca68c7471e4f25c7629e3b55fa407d175
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231703"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253256"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205 : Utilisez des équivalents managés de l'API Win32
 
@@ -39,7 +39,7 @@ Une méthode d’appel de code non managé est définie et une méthode avec les
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une méthode d’appel de code non managé est utilisée pour appeler une fonction DLL non managée et <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> est définie à l' `Declare` aide de l’attribut, ou du mot clé dans Visual Basic. Une méthode d’appel de code non managé définie de manière incorrecte peut entraîner des exceptions d’exécution en raison de problèmes tels qu’une fonction mal nommée, un mappage défectueux de types de données de paramètres et de valeurs de retour, ainsi que des spécifications de champ incorrectes, telles que la Convention d’appel et le caractère définie. S’il est disponible, il est plus simple et moins sujet aux erreurs d’appeler la méthode managée équivalente que de définir et d’appeler directement la méthode non managée. L’appel d’une méthode d’appel de code non managé peut également entraîner des problèmes de sécurité supplémentaires qui doivent être traités.
+Une méthode d’appel de code non managé est utilisée pour appeler une fonction DLL non managée et <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> est définie à l' `Declare` aide de l’attribut, ou du mot clé dans Visual Basic. Une méthode d’appel de code non managé définie de manière incorrecte peut mener à des exceptions au moment de l’exécution en raison de problèmes tels qu’une fonction mal nommée, un mappage défectueux de types de données de paramètres et de valeurs de retour, ainsi que des spécifications de champ incorrectes, telles que la Convention d’appel et le caractère définie. S’il est disponible, il est plus simple et moins sujet aux erreurs d’appeler la méthode managée équivalente que de définir et d’appeler directement la méthode non managée. L’appel d’une méthode d’appel de code non managé peut également entraîner des problèmes de sécurité supplémentaires qui doivent être traités.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

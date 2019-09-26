@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4716b2408afb04242a8a71da3a96474dc42b99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704473"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254616"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -29,7 +29,7 @@ Bien que vous puissiez collecter des instantanés de la mémoire à tout moment 
 Vous pouvez également utiliser l’outil Utilisation de la mémoire en dehors du débogueur. Consultez [Utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md). Vous pouvez utiliser les Outils de profilage sans débogueur attaché avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 > [!NOTE]
-> **Prise en charge des allocateurs personnalisés** Le profileur de mémoire native fonctionne en collectant des données d’événements [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) d’allocation émises pendant l’exécution.  Les allocateurs dans le CRT et le Kit de développement logiciel (SDK) Windows ont été annotés au niveau de la source afin que leurs données d’allocation puissent être capturées.  Si vous écrivez vos propres allocateurs, toutes les fonctions qui retournent un pointeur vers la mémoire du tas nouvellement allouée peuvent être décorées avec [__declspec](/cpp/cpp/declspec)(allocator), comme l’illustre cet exemple pour myMalloc :
+> **Prise en charge de l’allocateur personnalisé** Le profileur de mémoire Native fonctionne en collectant des données d’événement [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) d’allocation émises au moment de l’exécution.  Les allocateurs dans le CRT et le Kit de développement logiciel (SDK) Windows ont été annotés au niveau de la source afin que leurs données d’allocation puissent être capturées. Si vous écrivez vos propres allocateurs, toutes les fonctions qui retournent un pointeur vers la mémoire du tas nouvellement allouée peuvent être décorées avec [__declspec](/cpp/cpp/declspec)(allocator), comme l’illustre cet exemple pour myMalloc :
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -104,7 +104,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 - Pour voir les détails de la différence entre l’instantané actif et l’instantané précédent, cliquez sur le lien Modification à gauche de la flèche (![Augmentation de l’utilisation de la mémoire](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire")). Une flèche rouge indique une augmentation de l’utilisation de la mémoire et une flèche verte indique une baisse.
 
 > [!TIP]
-> Pour aider à identifier les problèmes de mémoire plus rapidement, les rapports de comparaison sont triés selon les types d’objets dont le nombre total a le plus augmenté (cliquez sur le lien de modification dans la colonne **Objets (Diff.)**) ou qui ont le plus augmenté dans la taille de segment totale (cliquez sur le lien de modification dans la colonne **Taille du tas (Diff.)**).
+> Pour aider à identifier les problèmes de mémoire plus rapidement, les rapports de comparaison sont triés selon les types d’objets dont le nombre total a le plus augmenté (cliquez sur le lien de modification dans la colonne **Objets (Diff.)** ) ou qui ont le plus augmenté dans la taille de segment totale (cliquez sur le lien de modification dans la colonne **Taille du tas (Diff.)** ).
 
 - Pour afficher les détails de l’instantané sélectionné, cliquez sur le lien de non-modification.
 
@@ -156,7 +156,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 
    ![Choisir un instantané dans la liste Comparer à](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
-Le rapport des modifications ajoute des colonnes (marquées par la mention **(Diff)**) au rapport de base, qui affichent la différence entre la valeur de l’instantané de base et celle de l’instantané comparé. Voici à quoi peut ressembler un rapport des différences de la vue des types natifs :
+Le rapport des modifications ajoute des colonnes (marquées par la mention **(Diff)** ) au rapport de base, qui affichent la différence entre la valeur de l’instantané de base et celle de l’instantané comparé. Voici à quoi peut ressembler un rapport des différences de la vue des types natifs :
 
 ![Affichage Diff des types natifs](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 

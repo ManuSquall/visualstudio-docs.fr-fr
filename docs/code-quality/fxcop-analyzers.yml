@@ -1,104 +1,70 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Effectuer une migration de l’analyse binaire (FxCop) vers l’analyse source (les analyseurs FxCop)
+### YamlMime:Landing
+title: Migrer de l’analyse héritée (FxCop) vers l’analyse source (FxCop Analyzer)
+summary: Découvrez comment analyser du code pour la première fois ou comment effectuer une migration à partir de l’analyse binaire (FxCop) vers la nouvelle méthode d’analyse du code managé à l’aide de l’analyse de source (FxCop Analyzer).
 metadata:
   title: Documentation sur la migration de FxCop
   description: Découvrez comment passer d’une analyse binaire héritée (FxCop) à une analyse de source (FxCop Analyzer) quand vous analysez du code.
-  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
   f1_keywords:
-    - vs.projectpropertypages.codeanalysis
-  ms.author: gewarren
+  - vs.projectpropertypages.codeanalysis
   author: gewarren
+  ms.author: gewarren
   manager: jillfra
-abstract:
-  description: Découvrez comment analyser du code pour la première fois ou comment effectuer une migration à partir de l’analyse binaire (FxCop) vers la nouvelle méthode d’analyse du code managé à l’aide de l’analyse de source (FxCop Analyzer).
-  aside:
-    image:
-      alt: Logo des tâches de gestion courantes
-      height: 133
-      width: 48
-      src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
-    title: null
-sections:
-  - title: Questions fréquentes (FAQ)
-    items:
-      - html: Recevez des réponses à certaines <a href="fxcop-analyzers-faq.md">questions fréquemment posées</a> sur les différences entre l’analyse binaire FxCop et l’analyse de la source à l’aide des analyseurs FxCop.
-  - title: Si vous ne connaissez pas l’analyse du code...
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: roslyn-analyzers-overview.md
-            html: <p>Découvrez ce que sont les analyseurs.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Vue d’ensemble des analyseurs
-          - href: install-roslyn-analyzers.md
-            html: <p>Découvrez comment installer des analyseurs sous la forme d’un package NuGet ou d’une extension Visual Studio.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Installer des analyseurs
-          - href: use-roslyn-analyzers.md
-            html: '<p>Découvrez comment utiliser des analyseurs et supprimer les violations C# pour ou Visual Basic code.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: Définir la gravité de la règle et supprimer les erreurs
-          - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>Découvrez comment utiliser des analyseurs à partir de la ligne de commande.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Utilisation de la ligne de commande
-  - title: Si vous utilisez actuellement l’analyse binaire (FxCop)...
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
-            html: <p>Découvrez les différences entre l’analyse binaire (FxCop) et l’analyse de la source (les analyseurs FxCop).</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Quelles sont les différences?
-          - href: install-fxcop-analyzers.md
-            html: <p>Découvrez comment installer le package de l’analyseur FxCop.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Installer des analyseurs FxCop
-          - href: fxcop-rule-port-status.md
-            html: <p>Répertorie les règles d’analyse binaire (FxCop) qui ont été portées à l’analyse de code source (FxCop Analyzer).</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: Règles portées et déplacées
-          - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: '<p>Si vous exécutez généralement l’analyse du code à partir de la ligne de commande, Découvrez comment utiliser des analyseurs à partir de la ligne de commande.</p>'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Utilisation de la ligne de commande
-          - href: analyzer-rule-sets.md
-            html: <p>En savoir plus sur les ensembles de règles du package Analyzer.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
-            title: Ensembles de règles
-  - title: Articles connexes
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: code-analysis-for-c-cpp-overview.md
-            html: <p>Découvrez comment exécuter l’analyse du code sur C++ du code natif. L’analyse du C++ code managé est déconseillée.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
-            title: Analyse du code C++
-          - href: code-metrics-values.md
-            html: <p>Découvrez comment obtenir des métriques du code. L’expérience utilisateur pour les métriques du code reste inchangée.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
-            title: Métrique du code
+  ms.date: 09/24/2019
+  ms.openlocfilehash: c0f2a4bfbeebac879359955e9e4b23a8d3fc6356
+  ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71273299"
+landingContent:
+- title: Présentation de l’analyse du code
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble des analyseurs de code
+      url: roslyn-analyzers-overview.md
+  - linkListType: download
+    links:
+    - text: Installer les analyseurs de code
+      url: install-roslyn-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: Définir la gravité de la règle et supprimer les erreurs
+      url: use-roslyn-analyzers.md
+    - text: Utilisation de la ligne de commande
+      url: use-roslyn-analyzers.md#command-line-usage
+- title: Migrer hors de l’analyse héritée
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Différences
+      url: roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis
+  - linkListType: get-started
+    links:
+    - text: FAQ sur les analyseurs FxCop
+      url: fxcop-analyzers-faq.md
+  - linkListType: download
+    links:
+    - text: Installer des analyseurs FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurer les analyseurs FxCop
+      url: configure-fxcop-analyzers.md
+    - text: Utiliser des ensembles de règles prédéfinis
+      url: analyzer-rule-sets.md
+  - linkListType: reference
+    links:
+    - text: Règles portées et déplacées
+      url: fxcop-rule-port-status.md
+- title: Autres types d’analyse du code
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analyse du code C++
+      url: code-analysis-for-c-cpp-overview.md
+    - text: Métrique du code
+      url: code-metrics-values.md

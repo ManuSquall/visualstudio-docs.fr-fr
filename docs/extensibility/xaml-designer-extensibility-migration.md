@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024556"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273217"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migration de l’extensibilité du concepteur XAML
 
-Dans Visual Studio 2019, le concepteur XAML prend en charge deux architectures différentes: l’architecture d’isolation du concepteur et l’architecture d’isolation de surface la plus récente. Cette transition d’architecture est requise pour prendre en charge des runtimes cibles qui ne peuvent pas être hébergés dans un processus de .NET Framework. Le passage à l’architecture d’isolation de surface introduit des modifications avec rupture dans le modèle d’extensibilité tiers. Cet article décrit ces modifications, qui sont disponibles dans Visual Studio 2019 à partir de la version 16,3.
+Dans Visual Studio 2019, le concepteur XAML prend en charge deux architectures différentes : l’architecture d’isolation du concepteur et l’architecture d’isolation de surface la plus récente. Cette transition d’architecture est requise pour prendre en charge des runtimes cibles qui ne peuvent pas être hébergés dans un processus de .NET Framework. Le passage à l’architecture d’isolation de surface introduit des modifications avec rupture dans le modèle d’extensibilité tiers. Cet article décrit ces modifications, qui sont disponibles dans Visual Studio 2019 à partir de la version 16,3.
 
 L' **isolation du concepteur** est utilisée par le Concepteur WPF pour les projets qui ciblent le .NET Framework et prend en charge les extensions *. Design. dll* . Le code utilisateur, les bibliothèques de contrôles et les extensions tierces sont chargés dans un processus externe (*XDesProc. exe*), ainsi que le code du concepteur et les panneaux du concepteur réels.
 
@@ -26,7 +26,7 @@ L' **isolation de surface** est utilisée par le concepteur UWP. Il est égaleme
 
 ![extensibility-migration-architecture](media/xaml-designer-extensibility-migration-architecture.png)
 
-En raison de cette transition d’architecture, les extensions tierces ne sont plus chargées dans le même processus que les bibliothèques de contrôles tiers. Les extensions ne peuvent plus avoir de dépendances directes sur les bibliothèques de contrôles ou accéder directement aux objets Runtime. Les extensions écrites précédemment pour l’architecture d’isolation du concepteur à l’aide de l’API *Microsoft. Windows. Extensibility. dll* doivent être migrées vers une nouvelle approche pour fonctionner avec l’architecture d’isolation de surface. Dans la pratique, une extension existante doit être compilée avec les nouveaux assemblys d’API d’extensibilité. L’accès aux types de contrôle d’exécution via les instances [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou Runtime doit être remplacé ou supprimé, car les bibliothèques de contrôles sont maintenant chargées dans un processus différent.
+En raison de cette transition d’architecture, les extensions tierces ne sont plus chargées dans le même processus que les bibliothèques de contrôles tiers. Les extensions ne peuvent plus avoir de dépendances directes sur les bibliothèques de contrôles ou accéder directement aux objets au moment de l’exécution. Les extensions écrites précédemment pour l’architecture d’isolation du concepteur à l’aide de l’API *Microsoft. Windows. Extensibility. dll* doivent être migrées vers une nouvelle approche pour fonctionner avec l’architecture d’isolation de surface. Dans la pratique, une extension existante doit être compilée avec les nouveaux assemblys d’API d’extensibilité. L’accès aux types de contrôle au moment de l’exécution via les instances [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou Runtime doit être remplacé ou supprimé, car les bibliothèques de contrôles sont maintenant chargées dans un processus différent.
 
 ## <a name="new-extensibility-api-assemblies"></a>Nouveaux assemblys d’API d’extensibilité
 
@@ -43,11 +43,11 @@ Au lieu d’utiliser l’extension de fichier *. Design. dll* , les nouvelles ex
 
 Alors que les bibliothèques de contrôles tiers sont compilées pour le runtime cible réel (.NET Core ou UWP), l’extension *. Designtools. dll* doit toujours être compilée en tant qu’assembly .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Dissocier les tables d’attributs des types au moment de l’exécution
+## <a name="decouple-attribute-tables-from-run-time-types"></a>Dissocier les tables d’attributs des types au moment de l’exécution
 
 Le modèle d’extensibilité de l’isolation de l’aire ne permet pas aux extensions de dépendre de bibliothèques de contrôles réelles. par conséquent, les extensions ne peuvent pas référencer des types de la bibliothèque de contrôles. Par exemple, *MyLibrary. Designtools. dll* ne doit pas avoir de dépendance sur *MyLibrary. dll*.
 
-Ces dépendances étaient les plus courantes lors de l’inscription de métadonnées pour les types via des tables d’attributs. Le code d’extension qui référence directement les types de bibliothèque de contrôle via [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) est substitué dans les nouvelles API en utilisant des noms de types basés sur une chaîne:
+Ces dépendances étaient les plus courantes lors de l’inscription de métadonnées pour les types via des tables d’attributs. Le code d’extension qui référence directement les types de bibliothèque de contrôle via [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) est substitué dans les nouvelles API en utilisant des noms de types basés sur une chaîne :
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -96,15 +96,16 @@ End Class
 
 Les fournisseurs de fonctionnalités sont implémentés dans les assemblys d’extension et chargés dans le processus Visual Studio. `FeatureAttribute`continuera à référencer directement les types de fournisseur de fonctionnalités à l’aide de [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
-Actuellement, les fournisseurs de fonctionnalités suivants sont pris en charge:
+Actuellement, les fournisseurs de fonctionnalités suivants sont pris en charge :
 
 * `DefaultInitializer`
 * `AdornerProvider`
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`est pris en charge avec la `TranslatePropertyValue` limitation qui sera appelée `InvalidateProperty` via ou en cas de modification dans le concepteur. Elle n’est pas appelée en cas de modification dans le code d’exécution.
 
-Étant donné que les fournisseurs de fonctionnalités sont désormais chargés dans un processus différent du code d’exécution réel et des bibliothèques de contrôles, ils ne sont plus en mesure d’accéder directement aux objets de Runtime. Au lieu de cela, toutes ces interactions doivent être converties pour utiliser les API basées sur un modèle correspondantes. L’API de modèle a été mise à jour et <xref:System.Type> l' <xref:System.Object> accès à ou n’est plus disponible ou a été `TypeIdentifier` remplacé `TypeDefinition`par et.
+Étant donné que les fournisseurs de fonctionnalités sont désormais chargés dans un processus différent du code et des bibliothèques de contrôles réels, ils ne sont plus en mesure d’accéder directement aux objets au moment de l’exécution. Au lieu de cela, toutes ces interactions doivent être converties pour utiliser les API basées sur un modèle correspondantes. L’API de modèle a été mise à jour et <xref:System.Type> l' <xref:System.Object> accès à ou n’est plus disponible ou a été `TypeIdentifier` remplacé `TypeDefinition`par et.
 
 `TypeIdentifier`représente une chaîne sans nom d’assembly identifiant un type. Une `TypeIdenfifier` peut être résolue `TypeDefinition` en pour demander des informations supplémentaires sur le type. `TypeDefinition`les instances ne peuvent pas être mises en cache dans le code d’extension.
 
@@ -128,17 +129,20 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-API supprimées de l’ensemble d’API d’extensibilité de l’isolation de l’aire:
+API supprimées de l’ensemble d’API d’extensibilité de l’isolation de l’aire :
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
-API qui utilisent `TypeIdentifier` à la <xref:System.Type>place de:
+API qui utilisent `TypeIdentifier` à la <xref:System.Type>place de :
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`remplacé par`MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`remplacé par`MetadataService.ResolveType(TypeIdentifier typeIdentifier)`
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -150,14 +154,13 @@ API qui utilisent `TypeIdentifier` à la <xref:System.Type>place de:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Les API qui `TypeIdentifier` utilisent à <xref:System.Type> la place de et ne prennent plus en charge les arguments de constructeur:
+Les API qui `TypeIdentifier` utilisent à <xref:System.Type> la place de et ne prennent plus en charge les arguments de constructeur :
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-API qui utilisent `TypeDefinition` à la <xref:System.Type>place de:
+API qui utilisent `TypeDefinition` à la <xref:System.Type>place de :
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,22 +175,19 @@ API qui utilisent `TypeDefinition` à la <xref:System.Type>place de:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-API qui utilisent `ModelItem` à la <xref:System.Object>place de:
+API qui utilisent `AssemblyIdentifier` à la `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`place de :
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`remplacé par`AssemblyReferences.LocalAssemblyIdentifier`
 
-En outre `ModelItem` , les `SetValue` API telles que ne prennent en charge que les instances de types primitifs ou les types de .NET Framework intégrés qui peuvent être convertis pour le runtime cible. Actuellement, ces types sont pris en charge:
+En outre `ModelItem` , les `SetValue` API telles que ne prennent en charge que les instances de types primitifs ou les types de .NET Framework intégrés qui peuvent être convertis pour le runtime cible. Actuellement, ces types sont pris en charge :
 
-* Types de `Boolean`.NET Framework primitifs: `Char`, `DateTime` `Byte`, `Double`, `Enum`,, ,`Int16` ,,`Int32` ,`SByte` ,, `Guid` `Int64` `Nullable` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Types de `Boolean`.NET Framework primitifs : `Char`, `DateTime` `Byte`, `Double`, `Enum`,, ,`Int16` ,,`Int32` ,`SByte` ,, `Guid` `Int64` `Nullable` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
 * Types de .NET Framework WPF connus (et types dérivés `Brush`) `Color`: `CompositeTransform`, `CornerRadius`, `Duration`, `EasingFunctionBase`, `EasingMode`, `EllipseGeometry`, `FontFamily`, `GeneralTransform`, `Geometry` ,, , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
 
-Par exemple :
+Par exemple :
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;

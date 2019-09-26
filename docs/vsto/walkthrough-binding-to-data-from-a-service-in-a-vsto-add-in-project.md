@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740117"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254057"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procédure pas à pas : Lier à des données à partir d’un service dans un projet de complément VSTO
   Vous pouvez lier des données à des contrôles hôtes dans les projets de complément VSTO. Cette procédure pas à pas montre comment ajouter des contrôles à un document Microsoft Office Word, comment lier les contrôles aux données extraites du service de contenu MSDN et comment répondre aux événements au moment de l’exécution.
 
- **S’applique à:** Les informations contenues dans cette rubrique s’appliquent aux projets de niveau application pour Word 2010. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
+ **S’applique à :** Les informations contenues dans cette rubrique s’appliquent aux projets de niveau application pour Word 2010. Pour plus d'informations, consultez [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
-- Ajout d' <xref:Microsoft.Office.Tools.Word.RichTextContentControl> un contrôle à un document au moment de l’exécution.
+- Ajout d’un contrôle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> à un document au moment du design.
 
 - Liaison du <xref:Microsoft.Office.Tools.Word.RichTextContentControl> contrôle aux données d’un service Web.
 
@@ -43,7 +43,7 @@ ms.locfileid: "68740117"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-project"></a>Créer un nouveau projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de complément VSTO Word.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -65,7 +65,7 @@ ms.locfileid: "68740117"
 
 3. Dans le champ **Adresse** , tapez l’URL suivante :
 
-     **http:\//services.msdn.Microsoft.com/contentservices/ContentService.asmx**
+     **http :\//services.msdn.Microsoft.com/contentservices/ContentService.asmx**
 
 4. Cliquez sur **OK**.
 
@@ -73,7 +73,7 @@ ms.locfileid: "68740117"
 
 6. Dans la boîte de dialogue **Assistant Ajout de référence** , cliquez sur **Terminer**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Ajouter un contrôle de contenu et effectuer une liaison à des données au moment de l’exécution
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Ajouter un contrôle de contenu et effectuer une liaison à des données au moment de l’exécution
  Dans les projets de complément VSTO, vous ajoutez et liez des contrôles au moment de l’exécution. Pour cette procédure pas à pas, configurez le contrôle de contenu pour récupérer des données du service Web lorsqu’un utilisateur clique à l’intérieur du contrôle.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Pour ajouter un contrôle de contenu et le lier à des données
