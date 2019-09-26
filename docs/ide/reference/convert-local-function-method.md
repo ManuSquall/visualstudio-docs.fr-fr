@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531640"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301690"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Convertir une fonction locale en méthode
 
 Cette refactorisation s’applique à :
 
 - C#
-- Visual Basic
 
 **Quoi :** Convertir une fonction locale en méthode.
 
@@ -36,7 +32,7 @@ Cette refactorisation s’applique à :
 
     ![Exemple de code, convertir une fonction locale en méthode](media/convert-local-function-to-method.png)
 
-2. Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Exemple, convertir une fonction locale en méthode (correctif de code)](media/convert-local-function-to-method-codefix.png)
 
