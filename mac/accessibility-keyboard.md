@@ -1,57 +1,55 @@
 ---
 title: Navigation au clavier dans Visual Studio pour Mac
-description: Utilisation de Visual Studio pour Mac à l’aide de commandes de clavier.
+description: Utilisation de Visual Studio pour Mac avec des commandes de clavier
 author: alanjclark
 ms.author: alcl
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: b2b7433a31d86c0392c3a055474fc21aade863fe
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274421"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342342"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navigation au clavier dans Visual Studio pour Mac
 
-Visual Studio pour Mac est accessible par les utilisateurs du clavier à l’aide des raccourcis clavier macOS les plus courants, ainsi que de nombreuses Visual Studio pour Mac spécifiques. Ici, nous allons aborder des commandes de clavier de base pour les deux et montrer comment configurer des raccourcis clavier Visual Studio pour Mac.
+Visual Studio pour Mac est accessible par les utilisateurs du clavier à l’aide des raccourcis clavier macOS les plus courants, ainsi que de nombreux qui sont spécifiques à Visual Studio pour Mac. Ici, vous découvrirez certaines commandes de clavier de base pour les deux, et comment configurer des raccourcis clavier Visual Studio pour Mac.
 
-## <a name="how-to-use-keyboard-navigation"></a>Procédure : Utiliser la navigation au clavier
+## <a name="use-keyboard-navigation"></a>Utiliser la navigation au clavier
 
-La prise en charge de la navigation au clavier est directement intégrée à macOS, mais pour bénéficier de l’expérience la plus complète, vous devez définir macOS pour parcourir **tous les contrôles**:
+La prise en charge de la navigation par le clavier est intégrée à macOS. Pour bénéficier de l’expérience la plus complète, définissez macOS pour déplacer le focus clavier entre **tous les contrôles**. Cela vous permet de parcourir tous les contrôles d’une fenêtre ou d’une boîte de dialogue.
 
-![Préférences système, clavier, tous les contrôles](media/accessibility-preferences-keyboard.png)
+![Capture d’écran des options de clavier, avec tous les contrôles sélectionnés](media/accessibility-preferences-keyboard.png)
 
-Le fait de définir **Accès clavier complet** sur **Tous les contrôles** vous permet de parcourir tous les contrôles dans une fenêtre ou boîte de dialogue.
-
-## <a name="customizing-keyboard-shortcuts"></a>Personnalisation des raccourcis clavier
+## <a name="customize-keyboard-shortcuts"></a>Personnaliser des raccourcis clavier
 
 Visual Studio pour Mac a une plage de raccourcis clavier pour différentes tâches. Vous pouvez afficher et modifier ces raccourcis comme suit :
 
-1. Ouvrir les préférences de Visual Studio pour Mac à l’aide **de Visual Studio (menu&#8984;) > Préférences (,)**
+1. Sélectionnez **Visual Studio (menu)**  > **Préférences (&#8984;,)** .
 
-1. Accéder à l' **environnement > les combinaisons de touches**
+1. Accédez à **environnement** > **combinaisons de touches**.
 
-1. Faire défiler la liste ou Rechercher le raccourci ou la commande
+1. Faites défiler la liste ou recherchez le raccourci ou la commande.
 
-1. Sélectionnez la commande
+1. Sélectionnez la commande.
 
-1. Sélectionner une combinaison de **touches** et taper une combinaison de touches
+1. Sélectionnez **liaison de clé**, puis tapez une combinaison de touches.
 
-1. Sélectionner **appliquer**
+1. Sélectionnez **Appliquer**.
 
 > [!TIP]
-> Vous pouvez choisir dans une liste de schémas de combinaisons de touches pour mieux répondre à vos besoins si vous connaissez d’autres raccourcis clavier courants, par exemple Visual Studio dans Windows.
+> Vous pouvez choisir dans une liste de schémas de combinaisons de touches pour mieux répondre à vos besoins si vous connaissez d’autres raccourcis clavier courants (par exemple, Visual Studio dans Windows).
 
 ## <a name="useful-keyboard-shortcuts"></a>Raccourcis clavier utiles
 
 |Fonctionnalité         |Description                                   |Raccourci         |
 |----------------|----------------------------------------------|-----------------|
-|Navigation dans l’interface utilisateur   |Parcourir tous les éléments de l’interface utilisateur               |**⇥**, **⇧ ⇥**    |
-|Interagir        |Sélectionner le contrôle actuellement actif         |**␣**            |
-|Interagir        |Sélectionner le contrôle par défaut dans l’écran/la boîte de dialogue |**⏎**            |
-|Onglets de commutateur     |Parcourir les fichiers ouverts                      |**⌘ ⇧ [** , **⌘ ⇧]** |
-|Débogage           |Démarrer le débogage                               |**⌘ ⏎**           |
+|Navigation dans l’interface utilisateur   |Parcourez tous les éléments de l’interface utilisateur.               |**⇥**, **⇧ ⇥**    |
+|Interagir        |Sélectionnez le contrôle actuellement actif.         |**␣**            |
+|Interagir        |Sélectionnez le contrôle par défaut dans l’écran ou la boîte de dialogue. |**⏎**            |
+|Onglets de commutateur     |Parcourir les fichiers ouverts.                      |**⌘ ⇧ [** , **⌘ ⇧]** |
+|Débogage           |Démarrez le débogage.                               |**⌘ ⏎**           |
 
 > [!TIP]
-> Vous trouverez une liste complète des commandes du clavier sur la page [raccourcis clavier](keyboard-shortcuts.md) .
+> Consultez la liste complète des commandes du clavier sur les [raccourcis clavier](keyboard-shortcuts.md).

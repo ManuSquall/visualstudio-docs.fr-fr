@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577360"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342408"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, tâche
 
@@ -36,7 +36,6 @@ Cette tâche a été ajoutée dans la version 15.8, mais nécessite une [soluti
 |---------------|-----------------|
 |`File`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br />Fichiers à hacher et à valider.|
 |`Hash`|Paramètre `String` requis.<br /><br />Hachage attendu du fichier.|
-|`Items`|Paramètre de sortie de <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br />Entrée `Files` avec des métadonnées supplémentaires définies sur le hachage du fichier.|
 |`Algorithm`|Paramètre `String` facultatif.<br /><br />Algorithme. Valeurs autorisées : `SHA256`, `SHA384`, `SHA512`. Valeur par défaut = `SHA256`.|
 |`HashEncoding`|Paramètre `String` facultatif.<br /><br />Encodage à utiliser pour les hachages générés. La valeur par défaut est `hex`. Valeurs autorisées = `hex`, `base64`.|
 

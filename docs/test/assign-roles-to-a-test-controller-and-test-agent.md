@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490598"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342333"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assigner des rôles à un contrôleur de test et à un agent de test
 
@@ -35,7 +35,7 @@ Cet article montre comment créer et configurer un paramètre de test qui utilis
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Éléments de solution**, pointez sur **Ajouter**, puis choisissez **Nouvel élément**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
 2. Dans le volet **Modèles installés**, choisissez **Paramètres de test**.
 
@@ -97,13 +97,13 @@ Cet article montre comment créer et configurer un paramètre de test qui utilis
 
 ::: moniker range="vs-2017"
 
-8. Dans le menu Test, choisissez **Sélectionner le fichier de paramètres des tests**, puis *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Dans le menu **test** , sélectionnez **paramètres de test** > **Sélectionnez fichier de paramètres de test** , puis choisissez le fichier *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *TestSettingDistributedTestWalkthrough.testsettings* et sélectionnez le.
+8. Dans le menu **test** , choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *TestSettingDistributedTestWalkthrough.testsettings* et sélectionnez le.
 
 ::: moniker-end
 

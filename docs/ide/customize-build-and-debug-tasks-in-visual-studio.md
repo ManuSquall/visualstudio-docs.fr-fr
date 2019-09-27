@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
-ms.translationtype: HT
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291039"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342398"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -256,6 +256,9 @@ Vous pouvez créer des tâches pour tout fichier ou dossier en spécifiant son n
    ![Bouton Démarrer personnalisé](media/customize-start-button.png)
 
    Lorsque vous choisissez **F5**, le débogueur démarre et s’arrête au point d’arrêt que vous avez déjà défini. Toutes les fenêtres du débogueur habituelles sont disponibles et opérationnelles.
+
+   > [!IMPORTANT]
+   > Pour plus d’informations sur les tâches de génération et C++ de débogage personnalisées dans les projets de dossiers ouverts, consultez [ouvrir la prise en charge des dossiers pour les C++ systèmes de génération dans Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Spécifier des arguments pour le débogage
 

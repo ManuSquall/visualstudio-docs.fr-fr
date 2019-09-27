@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787658"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342385"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -46,9 +46,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
    > Si votre compte ne permet pas de bénéficier de nouvelles offres, l’e-mail que vous recevez explique que votre compte n’a pas pu être créé en raison de son inéligibilité.  Il contient également des informations expliquant comment contacter l’équipe de support technique de Pluralsight, à laquelle vous pouvez poser des questions concernant votre compte.
    
 
-6. Une fois que votre compte a été créé, vous recevez un e-mail qui contient votre nom d’utilisateur et vous invite à créer un mot de passe.  Entrez votre mot de passe, entrez-le une deuxième fois pour le confirmer, puis cliquez sur **Log in to Pluralsight** (Accéder à Pluralsight).
-   > [!div class="mx-imgBorder"]
-   > ![Avantage Pluralsight, E-mail de bienvenue](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. Une fois votre compte créé, l’e-mail que vous recevez contient votre nom d’utilisateur et vous demande de créer un mot de passe.  Entrez votre mot de passe, entrez-le une deuxième fois pour le confirmer, puis cliquez sur **Log in to Pluralsight** (Accéder à Pluralsight).
 
 7. Entrez le nom d’utilisateur fourni dans l’e-mail de bienvenue et le mot de passe que vous venez de créer, puis cliquez sur **Sign in** (Connexion).
 

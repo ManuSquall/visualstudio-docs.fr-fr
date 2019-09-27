@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891342"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342433"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -369,7 +369,7 @@ En savoir plus sur les [tests unitaires pilotés par les données](../test/how-t
 
 Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d’une solution. La fenêtre **Résultats de la couverture du code** affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.
 
-Pour exécuter la couverture du code pour les méthodes de test dans une solution, choisissez **Tests** dans le menu Visual Studio, puis **Analyser la couverture du code**.
+Pour exécuter la couverture du code pour les méthodes de test dans une solution, choisissez **test** > **analyser la couverture du code pour tous les tests**.
 
 Les résultats de la couverture apparaissent dans la fenêtre **Résultats de la couverture du code**.
 
