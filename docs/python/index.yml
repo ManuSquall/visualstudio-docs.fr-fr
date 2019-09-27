@@ -1,88 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio | Python
+### YamlMime:Landing
+title: Documentation Visual Studio | Python
+summary: Tutoriels et articles conceptuels sur le développement d’applications Python avec Visual Studio.
 metadata:
   title: Développement Python avec Visual Studio
-  titleSuffix: ''
-  meta.description: Tutorials and conceptual articles about developing Python apps with Visual Studio.
-  author: JoshuaPartlow
-  manager: jillfra
+  description: Tutoriels et articles conceptuels sur le développement d’applications Python avec Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-python
   ms.topic: landing-page
-  ms.date: 12/14/2018
+  ms.collection: collection
+  author: JoshuaPartlow
   ms.author: joshuapa
-  dev_langs:
-    - Python
-sections:
-  - title: Bien démarrer avec Visual Studio
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Installer Visual Studio
-          - href: visual-studio-ide.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Présentation de l’IDE Visual Studio
-  - title: Tutoriels Python
-    items:
-      - type: paragraph
-        text: Bien démarrer avec Python dans Visual Studio
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-            html: <p>Expérience de la prise en charge de Visual Studio pour Python</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_python.svg'
-          - href: learn-django-in-visual-studio-step-01-project-and-solution.md
-            html: <p>Créer une application web avec l’infrastructure Django</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web-color.svg'
-          - href: learn-flask-visual-studio-step-01-project-solution.md
-            html: <p>Créer une application web avec l’infrastructure Flask</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web-color.svg'
-  - title: Développer des applications
-    items:
-      - type: paragraph
-        text: Tutoriels sur l’utilisation de Visual Studio pour développer des applications avec Python
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: editing-python-code-in-visual-studio.md
-            html: <p>Écrire et modifier du code</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: python-interactive-repl-in-visual-studio.md
-            html: <p>Utiliser le REPL interactif</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: managing-python-environments-in-visual-studio.md
-            html: <p>Gérer des environnements Python</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_package.svg'
-          - href: debugging-python-in-visual-studio.md
-            html: <p>Déboguer votre code</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: working-with-c-cpp-python-in-visual-studio.md
-            html: "<p>Écrire des extensions\_C/C++ pour Python</p>"
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
-          - href: unit-testing-python-in-visual-studio.md
-            html: <p>Écrire et exécuter des tests unitaires</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  ms.date: 09/23/2019
+  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
+  ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 09/27/2019
+  ms.locfileid: "71322485"
+landingContent:
+- title: À propos de la prise en charge de Python dans Visual Studio
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble de la prise en charge de Python
+      url: overview-of-python-tools-for-visual-studio.md
+    - text: Présentation de l’IDE Visual Studio
+      url: visual-studio-ide.md
+- title: Bien démarrer avec Python
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Installer la prise en charge de Python dans Visual Studio
+      url: installing-python-support-in-visual-studio.md
+    - text: Écrire et modifier du code
+      url: editing-python-code-in-visual-studio.md
+    - text: Déboguer votre code
+      url: debugging-python-in-visual-studio.md
+    - text: Écrire et exécuter des tests
+      url: unit-testing-python-in-visual-studio.md
+    - text: Utiliser le REPL interactif
+      url: python-interactive-repl-in-visual-studio.md
+    - text: Gérer des environnements Python
+      url: managing-python-environments-in-visual-studio.md
+    - text: Écrire des extensions C/C++ pour Python
+      url: working-with-c-cpp-python-in-visual-studio.md
+  - linkListType: tutorial
+    links:
+    - text: Utilisation de Python dans Visual Studio
+      url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+- title: Bien démarrer avec le développement web
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Créer une application web avec l’infrastructure Django
+      url: learn-django-in-visual-studio-step-01-project-and-solution.md
+    - text: Créer une application web avec l’infrastructure Flask
+      url: learn-flask-visual-studio-step-01-project-solution.md
