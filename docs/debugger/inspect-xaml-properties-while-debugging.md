@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987750"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322545"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l'interface utilisateur de votre application XAML en cours d'exécution et montrent les propriétés d'exécution de tout élément d'interface utilisateur que vous sélectionnez.
@@ -71,7 +71,7 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Générez le projet et commencez le débogage. (La configuration de build doit être Debug, et non pas Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).)
 
-Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Le résultat suivant devrait s'afficher :
+Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Vous devez voir quelque chose de similaire à :
 
 ![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")
 
@@ -81,7 +81,10 @@ Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux
 
 Revenez à la fenêtre d'application et ajoutez quelques éléments. Vous devriez voir des éléments de zone de liste supplémentaires dans l’**arborescence d’éléments visuels en direct**.
 
-À présent, examinons les propriétés d’un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ **Contenu** a pour valeur « Item1 » et que le champ **Arrière-plan** a pour valeur **#FFFFFFE0** (jaune clair). Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L’**Explorateur de propriétés en direct** doit montrer que le champ **Contenu** a pour valeur « Item2 » et que le champ **Arrière-plan** a pour valeur **#FFD3D3D3** (gris clair).
+À présent, examinons les propriétés d’un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ de**couleur** d' **arrière-plan** > est **#FFFFFFE0**. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de**couleur** d' **arrière-plan** > est **#FFD3D3D3**.
+
+> [!NOTE]
+> Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via `Color = {BindingExpression}`une liaison, telle que. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource `Color = {StaticResource MyBrush}`, telle que.
 
 La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. Par conséquent, l’**arborescence d’éléments visuels en direct** propose quelques méthodes vous permettant d’utiliser l’interface utilisateur de l’application pour rechercher plus facilement l’élément que vous souhaitez examiner.
 
