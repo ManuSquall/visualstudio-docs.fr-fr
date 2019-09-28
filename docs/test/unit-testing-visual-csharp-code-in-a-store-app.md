@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809629"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481888"
 ---
 # <a name="unit-test-c-code"></a>Test unitaire du code C#
 
@@ -26,13 +26,13 @@ Cet article crée également une solution Visual Studio unique et des projets di
 
 1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-2. Recherchez et sélectionnez le modèle de projet **Application vide (Windows universel)**.
+2. Recherchez et sélectionnez le modèle de projet **Application vide (Windows universel)** .
 
 3. Attribuez un nom au projet `Maths`.
 
 4. Dans **l’Explorateur de solutions**, choisissez le nom de la solution, **Ajouter** dans le menu contextuel, puis **Nouveau projet**.
 
-5. Recherchez et sélectionnez le modèle de projet **Application de tests unitaires (Windows universel)**.
+5. Recherchez et sélectionnez le modèle de projet **Application de tests unitaires (Windows universel)** .
 
 6. Ouvrez *UnitTest1.cs* dans l'éditeur Visual Studio.
 
@@ -167,7 +167,7 @@ Vous avez configuré le test et les projets de code, et vérifié que vous pouvi
        {
            double expected = v;
            double actual = rooter.SquareRoot(v*v);
-           double tolerance = ToleranceHelper(expected);
+           double tolerance = expected/1000;
            Assert.AreEqual(expected, actual, tolerance);
        }
    }
