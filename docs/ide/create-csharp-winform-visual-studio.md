@@ -1,28 +1,28 @@
 ---
-title: Créer une application Windows Forms avec Visual Basic
-description: Découvrez comment créer une application Windows Forms dans Visual Studio avec Visual Basic, étape par étape.
-ms.date: 09/27/2019
+title: Créer une application Windows Forms avecC#
+description: Découvrez comment créer une application Windows Forms dans Visual Studio avec C#, pas à pas.
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.devlang: vb
+ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- VB
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.openlocfilehash: 4017ee2da040ccef36c58b17d896abab199c3517
 ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681583"
+ms.locfileid: "71682143"
 ---
-# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Créer une application Windows Forms dans Visual Studio avec Visual Basic
+# <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Créer une application Windows Forms dans Visual Studio avecC#
 
-Dans cette courte présentation de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Visual Basic simple qui comporte une interface utilisateur Windows.
+Dans cette brève introduction à l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer C# une application simple dotée d’une interface utilisateur Windows.
 
 ::: moniker range="vs-2017"
 
@@ -41,7 +41,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ## <a name="create-a-project"></a>Créer un projet
 
-Tout d’abord, vous allez créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
+Vous allez d’abord créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
@@ -49,7 +49,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **Bureau Windows**. Dans le volet central, choisissez **Windows Forms App (.NET Framework)** . Nommez ensuite le fichier `HelloWorld`.
+1. Dans la boîte de dialogue **nouveau projet** , dans le volet gauche, développez **C#visuel**, puis choisissez **Bureau Windows**. Dans le volet central, choisissez **Windows Forms App (.NET Framework)** . Nommez ensuite le fichier `HelloWorld`.
 
      Si vous ne voyez pas le modèle de projet **Windows Forms App (.NET Framework)** , quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
@@ -65,11 +65,11 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **créer un nouveau projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour Visual Basic.
+1. Dans la fenêtre **créer un nouveau projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C#.
 
-   (Si vous préférez, vous pouvez affiner votre recherche pour accéder rapidement au modèle de votre choix. Par exemple, entrez ou tapez *Windows Forms application* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.)  
+   (Si vous préférez, vous pouvez affiner votre recherche pour accéder rapidement au modèle de votre choix. Par exemple, entrez ou tapez *Windows Forms application* dans la zone de recherche. Ensuite, choisissez **C#** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.)  
 
-   ![Choisir le modèle Visual Basic pour l’application Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Choisir le C# modèle pour l’application Windows Forms (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-winforms-project-nonfiltered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -84,7 +84,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-winform-project-helloworld.png)
 
    Visual Studio ouvre votre nouveau projet.
 
@@ -92,29 +92,29 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 ## <a name="create-the-application"></a>Créer l’application
 
-Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre fichier, Visual Studio ouvre un formulaire. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
+Une fois que vous C# avez sélectionné votre modèle de projet et que vous avez nommé votre fichier, Visual Studio ouvre un formulaire pour vous. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 
 ### <a name="add-a-button-to-the-form"></a>Ajouter un bouton au formulaire
 
-1. Cliquez sur **Boîte à outils** pour ouvrir la fenêtre volante Boîte à outils.
+1. Choisissez **Boîte à outils** pour ouvrir la fenêtre volante Boîte à outils.
 
-     ![Cliquer sur la boîte à outils pour ouvrir la fenêtre Boîte à outils](../ide/media/vb-toolbox-toolwindow.png)
+     ![Choisissez la boîte à outils pour ouvrir la fenêtre boîte à outils](../ide/media/csharp-toolbox-toolwindow.png)
 
      (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **Affichez**la**boîte à outils** > . Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
-1. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre **Boîte à outils**.
+1. Choisissez l’icône **épingler** pour ancrer la fenêtre **boîte à outils** .
 
-     ![Cliquer sur l’icône Épingler pour épingler la fenêtre Boîte à outils à l’IDE](../ide/media/vb-pin-the-toolbox-window.png)
+     ![Choisissez l’icône d’épingle pour épingler la fenêtre boîte à outils à l’IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. Cliquez sur le contrôle **Button**, puis faites-le glisser sur le formulaire.
+1. Choisissez le contrôle **Button** , puis faites-le glisser sur le formulaire.
 
-     ![Ajouter un bouton au formulaire](../ide/media/vb-add-a-button-to-form1.png)
+     ![Ajouter un bouton au formulaire](../ide/media/csharp-add-button-form1.png)
 
-1. Dans la section **Apparence** (ou la section **Polices**) de la fenêtre **Propriétés**, tapez `Click this`, puis appuyez sur **Entrée**.
+1. Dans la fenêtre **Propriétés** , recherchez **Text**, changez le nom de **Button1** en `Click this`, puis appuyez sur **entrée**.
 
      ![Ajouter du texte au bouton du formulaire](../ide/media/vb-button-control-text.png)
 
-     (Si vous ne voyez pas la fenêtre **Propriétés**, ouvrez-la à partir de la barre de menus. Pour cela, cliquez sur **Affichage** > **Fenêtre Propriétés**. Vous pouvez aussi appuyer sur **F4**.)
+     (Si vous ne voyez pas la fenêtre **Propriétés**, ouvrez-la à partir de la barre de menus. Pour ce faire, choisissez **afficher** > **fenêtre Propriétés**. Vous pouvez aussi appuyer sur **F4**.)
 
 1. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Button1** par `btnClickThis`, puis appuyez sur **Entrée**.
 
@@ -133,23 +133,23 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 ### <a name="add-code-to-the-form"></a>Ajouter du code au formulaire
 
-1. Dans la fenêtre **Form1.vb &#91;Design&#93;** , double-cliquez sur le bouton **Click this** pour ouvrir la fenêtre **Form1.vb**.
+1. Dans la **fenêtre &#91;de&#93; conception de Form1.cs** , double-cliquez sur le bouton **cliquez sur ce** bouton pour ouvrir la fenêtre **Form1.cs** .
 
-      (Vous pouvez également développer **Form1.vb** dans **Explorateur de solutions**, puis cliquer sur **Form1**.)
+      (Vous pouvez également développer **Form1.cs** dans **Explorateur de solutions**, puis choisir **Form1**.)
 
-1. Dans la fenêtre **Form1. vb** , entre les sous-lignes **Private Sub** et **End** , tapez ou entrez `lblHelloWorld.Text = "Hello World!"`, comme indiqué dans la capture d’écran suivante :
+1. Dans la fenêtre **Form1.cs** , après la ligne **private void** , tapez ou entrez `lblHelloWorld.Text = "Hello World!";` comme indiqué dans la capture d’écran suivante :
 
-     ![Ajouter du code au formulaire](../ide/media/vb-add-code-to-the-form.png)
+     ![Ajouter du code au formulaire](../get-started/csharp/media/csharp-winforms-add-code.png)
 
 ## <a name="run-the-application"></a>Exécuter l'application
 
-1. Cliquez sur le bouton **Démarrer** pour exécuter l’application.
+1. Choisissez le bouton **Démarrer** pour exécuter l’application.
 
-     ![Cliquer sur Démarrer pour déboguer et exécuter l’application](../ide/media/vb-click-start-hello-world.png)
+     ![Choisissez Démarrer pour déboguer et exécuter l’application](../ide/media/vb-click-start-hello-world.png)
 
    Il se passe alors plusieurs choses. Dans l’IDE de Visual Studio, la fenêtre **Outils de diagnostic** et une fenêtre **Sortie** s’ouvrent. En dehors de l’IDE, une boîte de dialogue **Form1** s’affiche. Elle contient le bouton **Click this** et le texte **Label1**.
 
-1. Cliquez sur le bouton **Click this** dans la boîte de dialogue **Form1**. Notez que le texte **Label1** devient **Hello World !** .
+1. **Cliquez sur ce** bouton dans la boîte de dialogue **Form1** . Notez que le texte **Label1** devient **Hello World !** .
 
     ![Boîte de dialogue Form1 contenant le texte Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 
@@ -164,6 +164,6 @@ Pour en savoir plus, passez au tutoriel suivant :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Autres didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C#gratuits](/visualstudio/get-started/csharp/)
+* [Autres C# didacticiels](/visualstudio/get-started/csharp/)
+* [Didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
 * [C++gratuits](/cpp/get-started/tutorial-console-cpp)

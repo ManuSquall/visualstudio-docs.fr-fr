@@ -6,7 +6,7 @@ metadata:
   description: Créez des applications C# en utilisant Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 09/27/2019
   author: ghogen
   ms.author: ghogen
   manager: jillfra
@@ -14,12 +14,12 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - CSharp
-  ms.openlocfilehash: cefa370c40ccd32a1ddd7b108ccc493d8019fcb2
-  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.openlocfilehash: 6c7e810e4370b1ea1fc0be5fbcd196b2e0ecf301
+  ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/25/2019
-  ms.locfileid: "71252147"
+  ms.lasthandoff: 09/30/2019
+  ms.locfileid: "71681560"
 landingContent:
 - title: Prise en main
   linkLists:
@@ -39,12 +39,14 @@ landingContent:
       url: tutorial-console.md
     - text: Créer une application web
       url: tutorial-aspnet-core.md
-    - text: Créer votre première application web ASP.NET Core
+    - text: Créer une application ASP.NET Core
       url: tutorial-aspnet-core-ef-step-01.md
     - text: Créer une application console de plateforme Windows universelle
       url: tutorial-uwp.md
     - text: Créer une application de bureau Windows
       url: tutorial-wpf.md
+    - text: Créer une application Windows Forms
+      url: ../../ide/create-csharp-winform-visual-studio.md
     - text: Découvrir le langage C#
       url: /dotnet/csharp/tutorials/intro-to-csharp/
 - title: Formation à Visual Studio
