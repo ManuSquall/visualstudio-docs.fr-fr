@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
+ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906348"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71814335"
 ---
-# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre Pile des appels dans le débogueur
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre pile des appels dans le débogueur
 
 La fenêtre **Pile des appels** permet d’afficher les appels de fonctions ou de procédures actuellement dans la pile. La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et les fonctions sont appelées. La pile des appels est un bon moyen d’examiner et de comprendre le flux d’exécution d’une application.
 
-Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une partie d’une pile des appels, le **pile des appels** fenêtre n’est peut-être pas en mesure d’afficher des informations correctes pour cette partie de la pile des appels, afficher à la place :
+Lorsque les [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une partie d’une pile des appels, la fenêtre **pile des appels** peut ne pas être en mesure d’afficher des informations correctes pour cette partie de la pile des appels, en affichant à la place :
 
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
@@ -48,69 +48,69 @@ Lorsque [symboles de débogage](#bkmk_symbols) ne sont pas disponibles pour une 
 > La fenêtre **Pile des appels** est similaire à la perspective Débogage dans certains IDE, comme Eclipse.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**.  Consultez [réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils**.  Consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Afficher la pile des appels dans le débogueur
 
-- Pendant le débogage, dans le **déboguer** menu, sélectionnez **Windows > pile des appels**.
+- Pendant le débogage, dans le menu **Déboguer** , sélectionnez **Windows > pile des appels**.
 
-  ![Fenêtre Pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Fenêtre pile des appels](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Une flèche jaune identifie le frame de pile où le pointeur d'exécution se trouve actuellement. Par défaut, les informations de ce frame de pile apparaissent dans la source, **variables locales**, **automatique**, **espion**, et **désassemblage** windows. Pour modifier le contexte du débogueur vers un autre frame sur la pile, [basculer vers un autre frame de pile](#bkmk_switch).
+Une flèche jaune identifie le frame de pile où le pointeur d'exécution se trouve actuellement. Par défaut, les informations de ce frame de pile s’affichent dans les fenêtres source, **variables locales**, **automatique**, **Espion**et code **machine** . Pour modifier le contexte du débogueur en un autre Frame sur la pile, [basculez vers un autre frame de pile](#bkmk_switch).
 
-## <a name="display-non-user-code-in-the-call-stack-window"></a>Afficher le code non-utilisateur dans la fenêtre Pile des appels
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Afficher le code non-utilisateur dans la fenêtre pile des appels
 
 - Cliquez avec le bouton droit sur la fenêtre **Pile des appels**, puis sélectionnez **Afficher le code externe**.
 
-Code non-utilisateur est un code qui n’est pas affiché quand [uniquement mon Code](../debugger/just-my-code.md) est activé. Dans le code managé, les frames de code non-utilisateur sont masqués par défaut. La notation suivante apparaît à la place les frames de code non-utilisateur :
+Le code non-utilisateur est un code qui n’est pas affiché lorsque [uniquement mon code](../debugger/just-my-code.md) est activé. En code managé, les frames de code non-utilisateur sont masqués par défaut. La notation suivante apparaît à la place des frames de code non-utilisateur :
 
 `[<External Code>]`
 
-## <a name="bkmk_switch"></a> Basculer vers un autre frame de pile (modifier le contexte du débogueur)
+## <a name="bkmk_switch"></a>Basculer vers un autre frame de pile (modifier le contexte du débogueur)
 
-1. Dans le **pile des appels** fenêtre, clic droit de la pile de frame dont code et les données que vous souhaitez afficher.
+1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur le frame de pile dont vous souhaitez afficher le code et les données.
 
-    Ou, vous pouvez double-cliquer sur un frame dans la **pile des appels** fenêtre pour basculer vers ce frame.
+    Ou vous pouvez double-cliquer sur un frame dans la fenêtre **pile des appels** pour basculer vers ce frame.
 
 2. Sélectionnez **Basculer vers le frame**.
 
-     Une flèche verte avec extrémité recourbée apparaît à côté du frame de pile que vous avez sélectionné. Le pointeur d'exécution reste dans le frame d'origine, qui est toujours identifié par la flèche jaune. Si vous sélectionnez **Pas à pas** ou **Continuer** dans le menu **Déboguer**, l’exécution se poursuivra dans le frame d’origine, et non dans le frame sélectionné.
+     Une flèche verte avec une queue d’extrémité s’affiche à côté du frame de pile sélectionné. Le pointeur d'exécution reste dans le frame d'origine, qui est toujours identifié par la flèche jaune. Si vous sélectionnez **Pas à pas** ou **Continuer** dans le menu **Déboguer**, l’exécution se poursuivra dans le frame d’origine, et non dans le frame sélectionné.
 
-## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Afficher le code source pour une fonction sur la pile des appels
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Afficher le code source d’une fonction dans la pile des appels
 
 - Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code source, puis sélectionnez **Atteindre le code source**.
 
-## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Exécuter jusqu'à une fonction spécifique à partir de la fenêtre Pile des appels
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Exécuter jusqu’à une fonction spécifique de la fenêtre pile des appels
 
-- Dans le **pile des appels** fenêtre, sélectionnez la fonction, avec le bouton droit, puis choisissez **exécuter jusqu’au curseur**.
+- Dans la fenêtre **pile des appels** , sélectionnez la fonction, cliquez avec le bouton droit, puis choisissez **Exécuter jusqu’au curseur**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Définir un point d’arrêt sur le point de sortie d’un appel de fonction
 
-- Consultez [définir un point d’arrêt à une fonction de pile d’appel](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Consultez [définir un point d’arrêt au niveau d’une fonction de pile des appels](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Afficher les appels vers ou à partir d’un autre thread
 
 - Cliquez avec le bouton droit sur la fenêtre **Pile des appels**, puis sélectionnez **Inclure les appels échangés avec d’autres threads**.
 
-## <a name="visually-trace-the-call-stack"></a>Afficher la trace de la pile des appels
+## <a name="visually-trace-the-call-stack"></a>Suivre visuellement la pile des appels
 
-Dans Visual Studio Enterprise (uniquement), vous pouvez afficher des cartes de code pour la pile des appels pendant le débogage.
+Dans Visual Studio Enterprise (uniquement), vous pouvez afficher les cartes de code pour la pile des appels pendant le débogage.
 
-- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur carte de Code** (**Ctrl** + **MAJ** + **`**).
+- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur la carte du code** (**CTRL** + **Shift** +  **`** ).
 
-    Pour plus d’informations, consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+    Pour plus d’informations, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Afficher la pile des appels sur carte de Code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Afficher la pile d’appels sur la carte de code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine pour une fonction sur la pile des appels (C#, C++, Visual Basic, F#)
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine d’une fonction dans la pile des appels (C#, C++, Visual Basic, F#)
 
 - Dans la fenêtre **Pile des appels**, cliquez avec le bouton droit sur la fonction dont vous voulez afficher le code machine, puis sélectionnez **Atteindre le code machine**.
 
-## <a name="change-the-optional-information-displayed"></a>Modifier l’affichage des informations facultatives
+## <a name="change-the-optional-information-displayed"></a>Modifier les informations facultatives affichées
 
-- Avec le bouton droit dans le **pile des appels** fenêtre et activez ou désactivez **afficher \<**  _les informations que vous souhaitez_ **>**.
+- Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **afficher l' \<** _les informations que vous souhaitez_ **>** .
 
-## <a name="bkmk_symbols"></a> Charger les symboles pour un module (C#, C++, Visual Basic, F#)
+## <a name="bkmk_symbols"></a>Charger les symboles pour un moduleC#( C++,, Visual Basic F#,)
 
 Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
 
@@ -118,9 +118,9 @@ Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](..
 
 ### <a name="to-load-symbols"></a>Pour charger des symboles
 
-1. Dans le **pile des appels** fenêtre, avec le bouton droit du frame de pile pour lequel des symboles ne sont pas chargés. La frame est alors grisée.
+1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur le frame de pile pour lequel les symboles ne sont pas chargés. La frame est alors grisée.
 
-2. Pointez sur **charger les symboles** , puis sélectionnez **serveurs de symboles Microsoft** (si disponible), ou recherchez le chemin d’accès du symbole.
+2. Pointez sur **charger les symboles** , puis sélectionnez serveurs de **symboles Microsoft** (si disponibles) ou recherchez le chemin d’accès aux symboles.
 
 ### <a name="to-set-the-symbol-path"></a>Pour définir le chemin d'accès aux symboles
 
@@ -132,11 +132,11 @@ Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](..
 
 3. Dans la boîte de dialogue **Options**, cliquez sur l’icône de dossier.
 
-     Un curseur apparaît dans la zone **Emplacements du fichier de symboles (.pdb)**.
+     Un curseur apparaît dans la zone **Emplacements du fichier de symboles (.pdb)** .
 
-4. Entrez un chemin d’accès du répertoire à l’emplacement de symboles sur l’ordinateur que vous déboguez. Pour le débogage local et distant, il s’agit d’un chemin d’accès sur votre ordinateur local.
+4. Entrez un chemin d’accès au répertoire de l’emplacement des symboles sur l’ordinateur que vous déboguez. Pour le débogage local et distant, il s’agit d’un chemin d’accès sur votre ordinateur local.
 
-5. Sélectionnez **OK** pour fermer la **Options** boîte de dialogue.
+5. Sélectionnez **OK** pour fermer la boîte de dialogue **options** .
 
 ## <a name="see-also"></a>Voir aussi
 
