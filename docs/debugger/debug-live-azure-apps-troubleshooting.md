@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211235"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962942"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
 
-Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème sur la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide** > **Envoyer des commentaires** > **signaler un problème** dans Visual Studio.
+Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème dans la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide** > **Envoyer des commentaires** > **signale un problème** dans Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problème : Erreur « Attach Débogueur de capture instantanée » rencontre une erreur de code d’état HTTP
 
@@ -34,7 +34,7 @@ Cette erreur indique que l’appel REST émis par Visual Studio vers Azure utili
 
 Suivez ces étapes :
 
-* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de débogueur de capture instantanée d’attachement de **débogage** >  **...**  >  **Ressource**AzureSélectionnezexistantoudansCloudExplorer. > 
+* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de **Déboguer** > **attacher débogueur de capture instantanée...**  >  @no__t de**ressources Azure**-5**Sélectionnez existant**ou dans Cloud Explorer.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
 ### <a name="403-forbidden"></a>(403) interdit
@@ -54,7 +54,8 @@ Cette erreur indique que le site Web est introuvable sur le serveur.
 Suivez ces étapes :
 
 * Vérifiez que vous disposez d’un site Web déployé et en cours d’exécution sur la ressource App Service à laquelle vous êtes connecté.
-* Vérifiez que le site est disponible sur https://\<ressource\>. azurewebsites.net
+* Vérifiez que le site est disponible sur https://@no__t -0resource\>.azurewebsites.net
+* Vérifiez que votre application Web personnalisée en cours d’exécution ne retourne pas de code d’État 404 quand vous y accédez à https://@no__t -0resource\>.azurewebsites.net
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
 ### <a name="406-not-acceptable"></a>(406) non acceptable
@@ -63,7 +64,7 @@ Cette erreur indique que le serveur n’est pas en mesure de répondre au type d
 
 Suivez ces étapes :
 
-* Vérifiez que votre site est disponible sur https://\<ressource\>. azurewebsites.net
+* Vérifiez que votre site est disponible sur https://@no__t -0resource\>.azurewebsites.net
 * Vérifiez que votre site n’a pas été migré vers de nouvelles instances. Débogueur de capture instantanée utilise la notion de ARRAffinity pour acheminer les demandes vers des instances spécifiques qui peuvent générer cette erreur par intermittence.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
@@ -156,11 +157,11 @@ Suivez ces étapes :
 
 Visual Studio 2019 requiert une version plus récente de l’extension de site Débogueur de capture instantanée sur votre Azure App Service.  Cette version n’est pas compatible avec l’ancienne version de l’extension de site Débogueur de capture instantanée utilisée par Visual Studio 2017.  Vous obtiendrez l’erreur suivante si vous essayez d’attacher le Débogueur de capture instantanée dans Visual Studio 2019 à un Azure App Service qui a été précédemment débogué par le Débogueur de capture instantanée dans Visual Studio 2017 :
 
-Incompatibilité de l' ![extension de site débogueur de capture instantanée Visual Studio 2019] Incompatibilité de l' (../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "extension de site débogueur de capture instantanée Visual Studio 2019")
+![Incompatible débogueur de capture instantanée extension de site Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "incompatible débogueur de capture instantanée extension de site Visual Studio 2019")
 
 À l’inverse, si vous utilisez Visual Studio 2017 pour attacher le Débogueur de capture instantanée à un Azure App Service qui a été précédemment débogué par le Débogueur de capture instantanée dans Visual Studio 2019, vous obtiendrez l’erreur suivante :
 
-Incompatibilité de l' ![extension de site débogueur de capture instantanée Visual Studio 2017] Incompatibilité de l' (../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "extension de site débogueur de capture instantanée Visual Studio 2017")
+![Incompatible débogueur de capture instantanée extension de site Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "incompatible débogueur de capture instantanée extension de site Visual Studio 2017")
 
 Pour résoudre ce problème, supprimez les paramètres d’application suivants sur le Portail Azure et joignez à nouveau le Débogueur de capture instantanée :
 
@@ -180,7 +181,7 @@ Les journaux d’agent se trouvent aux emplacements suivants :
   - Accédez au site Kudu de votre service App Service (soit votreappservice.**scm**.azurewebsites.net), puis à Console de débogage.
   - Les journaux de l’agent sont stockés dans le répertoire suivant :  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS :
-  - Connectez-vous à votre machine virtuelle. les journaux de l’agent sont stockés comme suit :  Version\<C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics > \SnapshotDebuggerAgent_ *. txt
+  - Connectez-vous à votre machine virtuelle. les journaux de l’agent sont stockés comme suit :  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
 - AKS :
   - Accédez au répertoire /tmp/diag/AgentLogs/*.
 
@@ -189,7 +190,7 @@ Les journaux d’agent se trouvent aux emplacements suivants :
 Les journaux d’instrumentation se trouvent aux emplacements suivants :
 
 - App Service :
-  - La journalisation des erreurs est automatiquement envoyée à D:\Home\LogFiles\eventlog.xml, les `<Provider Name="Instrumentation Engine" />` événements sont marqués avec ou « points d’arrêt de production »
+  - La journalisation des erreurs est automatiquement envoyée à D:\Home\LogFiles\eventlog.xml, les événements sont marqués avec `<Provider Name="Instrumentation Engine" />` ou « points d’arrêt de production »
 - VM/VMSS :
   - Connectez-vous à votre machine virtuelle et ouvrez l’observateur d’événements.
   - Ouvrez la vue suivante : Les *journaux Windows > application*.

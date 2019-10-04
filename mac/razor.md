@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175436"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962923"
 ---
 # <a name="create-razor-web-apps"></a>Créer des applications Web Razor
 
@@ -26,7 +26,7 @@ Visual Studio pour Mac prend en charge la modification Razor, notamment IntelliS
 1. Dans l’écran d’accueil, sélectionnez **nouveau** pour créer un nouveau projet :
 
    ![Nouveau projet Visual Studio pour Mac](media/razor-new.png)
-1. Dans la boîte de dialogue **nouveau projet** , accédez à**application Web** de**l’application** >  **.net Core** > , puis sélectionnez **suivant**:
+1. Dans la boîte de dialogue **nouveau projet** , accédez à **.net Core**@no__t-**2**application  > **application Web** , puis sélectionnez **suivant**:
 
    ![Modèle de projet Razor](media/razor-new-project1.png)
 1. Sélectionnez votre infrastructure cible .NET Core (nous vous recommandons la version 2,2 ou ultérieure), puis sélectionnez **suivant**. Choisissez un nom pour votre projet et ajoutez la prise en charge de git si nécessaire. Sélectionnez **créer** pour créer le projet.
@@ -36,7 +36,7 @@ Visual Studio pour Mac prend en charge la modification Razor, notamment IntelliS
    Visual Studio pour Mac ouvre votre projet dans la fenêtre de mise en page du code.
 1. Exécutez le projet sans débogage à l’aide de la **commande + option + F5**.
 
-   Visual Studio démarre [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), ouvre un navigateur à `https://localhost:5001`et affiche votre première application Web Razor.
+   Visual Studio démarre [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), ouvre un navigateur pour `https://localhost:5001` et affiche votre première application Web Razor.
 
    ![Application web Razor dans Safari](media/razor-webapp.png)
 
@@ -47,8 +47,8 @@ Les applications Web Razor incluent les composants suivants.
 ### <a name="pages-folder"></a>Dossier Pages
 
 Ce dossier contient les pages Web d’un projet, ainsi que le code-behind pour chaque :
-* Un fichier * *.cshtml* pour la balise HTML et la syntaxe Razor.
-* Un fichier * *.cshtml.cs* pour votre code-behind C# pour gérer des événements de page.
+   - Un fichier \* *. cshtml* pour le balisage HTML et syntaxe Razor.
+   - Un fichier *\*.cshtml.cs* pour votre C# code-behind pour gérer les événements de page.
 
 Les fichiers de prise en charge ont des noms commençant par un trait de soulignement. Par exemple, le fichier _Layout.cshtml configure des éléments d’interface utilisateur communs à toutes les pages. Ce fichier configure le menu de navigation en haut de la page et la mention de droits d’auteur en bas. Pour plus d’informations, consultez [Disposition dans ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 
