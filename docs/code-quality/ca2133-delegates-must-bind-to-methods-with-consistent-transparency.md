@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0745506bfe55305c9c3a55f57823e5d80c453006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14061c0f54593a2cb9b591d39cb46a433b0e34be
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796731"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232307"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133 : Les délégués doivent lier les méthodes avec une transparence cohérente
 
@@ -27,19 +27,19 @@ ms.locfileid: "62796731"
 |Modification avec rupture|Rupture|
 
 > [!NOTE]
-> Cet avertissement est appliqué uniquement au code qui est en cours d’exécution CoreCLR (la version du CLR qui est spécifique aux applications web Silverlight).
+> Cet avertissement est appliqué uniquement au code qui exécute CoreCLR (la version du CLR qui est spécifique aux applications Web Silverlight).
 
 ## <a name="cause"></a>Cause
 
-Cet avertissement se déclenche sur une méthode qui lie un délégué qui est marquée avec le <xref:System.Security.SecurityCriticalAttribute> à une méthode qui est transparente ou marquée avec le <xref:System.Security.SecuritySafeCriticalAttribute>. L’avertissement déclenche également une méthode qui lie un délégué transparent ou critique sécurisé à une méthode critique.
+Cet avertissement se déclenche sur une méthode qui lie un délégué marqué avec <xref:System.Security.SecurityCriticalAttribute> à une méthode transparente ou marquée avec l' <xref:System.Security.SecuritySafeCriticalAttribute>option. L’avertissement déclenche également une méthode qui lie un délégué transparent ou critique sécurisé à une méthode critique.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Types délégués et les méthodes auxquelles elles se lient doivent avoir une transparence cohérente. Délégués transparents et critiques sécurisés peuvent uniquement lier à d’autres méthodes transparents ou critique sécurisé. De même, les délégués critiques peuvent lier uniquement des méthodes critiques. Ces règles de liaison garantissent que le seul code que vous pouvez appeler une méthode via un délégué aurait également pu appeler la même méthode directement. Par exemple, les règles de liaison empêchent le code transparent de l’appel de code critique directement par le biais d’un délégué transparent.
+Les types délégués et les méthodes auxquelles ils sont liés doivent avoir une transparence cohérente. Les délégués transparents et critiques sécurisés ne peuvent être liés qu’à d’autres méthodes transparentes ou critiques sécurisées. De même, les délégués critiques ne peuvent être liés qu’à des méthodes critiques. Ces règles de liaison garantissent que le seul code qui peut appeler une méthode via un délégué pourrait également appeler la même méthode directement. Par exemple, les règles de liaison empêchent le code transparent d’appeler directement du code critique via un délégué transparent.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cet avertissement, modifiez la transparence du délégué ou de la méthode qu’il lie afin que la transparence des deux sont équivalentes.
+Pour corriger une violation de cet avertissement, modifiez la transparence du délégué ou de la méthode qu’il lie afin que la transparence des deux soit équivalente.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

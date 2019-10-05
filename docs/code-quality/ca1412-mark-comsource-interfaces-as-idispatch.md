@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a7214ce37aa48d69b9261d686960fa0a4c308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546347"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234690"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412 : Marquer les interfaces ComSource comme IDispatch
 
@@ -30,20 +30,20 @@ ms.locfileid: "62546347"
 |-|-|
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type est marqué avec le <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut et au moins une interface spécifiée n’est pas marqué avec le <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut défini sur le `InterfaceIsDispatch` valeur.
+Un type est marqué avec l' <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut et au moins une interface spécifiée n’est pas marquée <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> avec l’attribut défini sur `InterfaceIsDispatch` la valeur.
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> est utilisé pour identifier les interfaces d’événements qu’une classe expose aux clients de composant COM (Object Model). Ces interfaces doivent être exposées en tant que `InterfaceIsIDispatch` pour permettre aux clients COM Visual Basic 6 recevoir des notifications d’événements. Par défaut, si une interface n’est pas marquée avec le <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut, elle est exposée comme une interface double.
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>est utilisé pour identifier les interfaces d’événement qu’une classe expose aux clients COM (Component Object Model). Ces interfaces doivent être exposées comme `InterfaceIsIDispatch` pour permettre à Visual Basic 6 clients com de recevoir des notifications d’événements. Par défaut, si une interface n’est pas marquée avec <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> l’attribut, elle est exposée en tant qu’interface double.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, ajoutez ou modifiez la <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut afin que sa valeur est définie sur InterfaceIsIDispatch pour toutes les interfaces qui sont spécifiés avec le <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut.
+Pour corriger une violation de cette règle, ajoutez ou modifiez l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut afin que sa valeur soit définie sur InterfaceIsIDispatch pour toutes les interfaces spécifiées avec l' <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -51,14 +51,14 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une classe où une des interfaces enfreint la règle.
+L’exemple suivant montre une classe dans laquelle l’une des interfaces enfreint la règle.
 
 [!code-csharp[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/CSharp/ca1412-mark-comsource-interfaces-as-idispatch_1.cs)]
 [!code-vb[FxCop.Interoperability.MarkIDispatch#1](../code-quality/codesnippet/VisualBasic/ca1412-mark-comsource-interfaces-as-idispatch_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1408 : Ne pas utiliser AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408 Ne pas utiliser la double](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Voir aussi
 

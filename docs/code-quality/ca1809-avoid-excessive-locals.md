@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 89d6ee4d1a53f63cffb31439a124d3d9358e976f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921534"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233643"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809 : Évitez le surplus de variables locales
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921534"
 |-|-|
 |TypeName|AvoidExcessiveLocals|
 |CheckId|CA1809|
-|Catégorie|Microsoft. performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154918"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254380"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle de projet web Django Sondage
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Comme vous pouvez le voir, un sondage conserve une description dans son champ `text` et une date de publication dans `pub_date`. Ces champs sont les seuls qui existent pour le sondage dans la base de données ; le champ `total_votes` est calculé lors de l’exécution.
+Comme vous pouvez le voir, un sondage conserve une description dans son champ `text` et une date de publication dans `pub_date`. Ces champs sont les seuls qui existent pour l’interrogation dans la base de données ; le `total_votes` champ est calculé au moment de l’exécution.
 
-Un choix est lié à un sondage via le champ `poll`, contient une description dans `text`et un décompte de ce choix dans `votes`. Le champ `votes_percentage` est calculé au lors de l’exécution et ne se trouve pas dans la base de données.
+Un choix est lié à un sondage via le champ `poll`, contient une description dans `text`et un décompte de ce choix dans `votes`. Le `votes_percentage` champ est calculé au moment de l’exécution et est introuvable dans la base de données.
 
 La liste complète des types de champ est `CharField` (texte limité) `TextField` (texte illimité), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` et `ManyToMany`. Chaque champ utilise certains attributs, tels que `max_length`. L’attribut `blank=True` signifie que le champ est facultatif ; `null=true` signifie qu’une valeur est facultative. Il existe également un attribut `choices` qui les valeurs à des valeurs dans un tableau de valeur de données/des tuples de valeurs affichées. (Consultez la [Référence de champ de modèle](https://docs.djangoproject.com/en/2.0/ref/models/fields/) dans la documentation Django.)
 
@@ -192,7 +192,7 @@ En général, fonctionnalité de migration de Django signifie que vous ne devez 
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Que se passe-t-il si j’oublie d’exécuter la commande de migration après avoir modifié des modèles ?
 
-Réponse : Si les modèles ne correspondent pas à ce qui se trouve dans la base de données, Django échoue lors de l’exécution avec les exceptions appropriées. Par exemple, si vous oubliez de migrer la modification de modèle indiquée dans la section précédente, vous voyez une erreur **no such column: app_poll.author** :
+Réponse : Si les modèles ne correspondent pas à ce qui se trouve dans la base de données, Django échoue au moment de l’exécution avec les exceptions appropriées. Par exemple, si vous oubliez de migrer la modification de modèle indiquée dans la section précédente, vous voyez une erreur **no such column: app_poll.author** :
 
 ![Erreur affichée quand une modification de modèle n’a pas été migrée](media/django/step06-exception-when-forgetting-to-migrate.png).
 

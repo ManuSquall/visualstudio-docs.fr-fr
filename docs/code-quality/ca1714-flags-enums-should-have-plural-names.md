@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d71200c6c7fbb61e7994119fde5e75f7623fa669
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547190"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234088"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Les noms des enums Flags doivent être au pluriel
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547190"
 |-|-|
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ Par défaut, cette règle examine uniquement les énumérations visibles de l’
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les types marqués avec ont <xref:System.FlagsAttribute> des noms au pluriel, car l’attribut indique qu’il est possible de spécifier plusieurs valeurs. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir <xref:System.FlagsAttribute> la et peut être appelée «Days». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée «Day».
+Les types marqués avec ont <xref:System.FlagsAttribute> des noms au pluriel, car l’attribut indique qu’il est possible de spécifier plusieurs valeurs. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir <xref:System.FlagsAttribute> la et peut être appelée « Days ». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée « Day ».
 
 Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
@@ -48,11 +48,11 @@ Faites du nom de l’énumération un mot pluriel ou supprimez <xref:System.Flag
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer en toute sécurité une violation si le nom est un mot pluriel, mais qu’il ne se termine pas par' '. Par exemple, si l’énumération de plusieurs jours qui a été décrite précédemment était nommée «DaysOfTheWeek», cela violerait la logique de la règle, mais pas son intention. Ces violations doivent être supprimées.
+Il est possible de supprimer en toute sécurité une violation si le nom est un mot pluriel, mais qu’il ne se termine pas par' '. Par exemple, si l’énumération de plusieurs jours qui a été décrite précédemment était nommée « DaysOfTheWeek », cela violerait la logique de la règle, mais pas son intention. Ces violations doivent être supprimées.
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1714.api_surface = private, internal

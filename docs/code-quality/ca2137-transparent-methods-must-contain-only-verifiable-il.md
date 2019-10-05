@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8ae8f507f17a1c64cb9fdfc5872ffa22e3c0f170
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920608"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232228"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137 : Les méthodes transparentes doivent contenir uniquement des IL vérifiables
 
@@ -23,7 +23,7 @@ ms.locfileid: "68920608"
 |-|-|
 |TypeName|TransparentMethodsMustBeVerifiable|
 |CheckId|CA2137|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -40,7 +40,7 @@ Pour corriger une violation de cette règle, marquez la méthode avec <xref:Syst
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 La méthode dans cet exemple utilise du code non vérifiable et doit être marquée avec l' <xref:System.Security.SecurityCriticalAttribute> attribut <xref:System.Security.SecuritySafeCriticalAttribute> ou.
 
 [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

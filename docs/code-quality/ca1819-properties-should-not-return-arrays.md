@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 053cb4c55362a4f51b7c8e8049214aa41773f373
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547036"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233454"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819 : Les propriétés ne doivent pas retourner des tableaux
 
@@ -30,7 +30,7 @@ ms.locfileid: "69547036"
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
 |CheckId|CA1819|
-|Catégorie|Microsoft. performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -57,7 +57,7 @@ Sinon, ne supprimez pas un avertissement de cette règle.
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
@@ -67,7 +67,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example-violation"></a>Exemple de violation
 
-L’exemple suivant montre une propriété qui enfreint cette règle:
+L’exemple suivant montre une propriété qui enfreint cette règle :
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
@@ -76,26 +76,26 @@ Pour corriger une violation de cette règle, définissez la propriété sur une 
 
 ### <a name="change-the-property-to-a-method"></a>Remplacez la valeur de la propriété par une méthode
 
-L’exemple suivant résout la violation en remplaçant la propriété par une méthode:
+L’exemple suivant résout la violation en remplaçant la propriété par une méthode :
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
 ### <a name="change-the-property-to-return-a-collection"></a>Modifier la propriété pour retourner une collection
 
-L’exemple suivant résout la violation en modifiant la propriété pour retourner <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>un:
+L’exemple suivant résout la violation en modifiant la propriété pour retourner <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>un :
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
 ## <a name="allow-users-to-modify-a-property"></a>Autoriser les utilisateurs à modifier une propriété
 
-Vous souhaiterez peut-être autoriser le consommateur de la classe à modifier une propriété. L’exemple suivant illustre une propriété en lecture/écriture qui enfreint cette règle:
+Vous souhaiterez peut-être autoriser le consommateur de la classe à modifier une propriété. L’exemple suivant illustre une propriété en lecture/écriture qui enfreint cette règle :
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-L’exemple suivant résout la violation en modifiant la propriété pour retourner <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>un:
+L’exemple suivant résout la violation en modifiant la propriété pour retourner <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>un :
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]

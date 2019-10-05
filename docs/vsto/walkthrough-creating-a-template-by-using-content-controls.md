@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438560"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255587"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu
   Cette procédure pas à pas montre comment créer une personnalisation au niveau du document qui utilise des contrôles de contenu pour créer un contenu structuré et réutilisable dans un modèle Microsoft Office Word.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Word permet de créer une collection de parties de document réutilisables, nommé *blocs de construction*. Cette procédure pas à pas montre comment créer deux tableaux en tant que blocs de construction. Chaque tableau contient plusieurs contrôles de contenu qui peuvent contenir différents types de contenu, tels que du texte brut ou des dates. L'un des tableaux contient des informations sur un employé, et l'autre contient des commentaires des clients.
+ Word vous permet de créer une collection de parties de document réutilisables, nommées *blocs de construction*. Cette procédure pas à pas montre comment créer deux tableaux en tant que blocs de construction. Chaque tableau contient plusieurs contrôles de contenu qui peuvent contenir différents types de contenu, tels que du texte brut ou des dates. L'un des tableaux contient des informations sur un employé, et l'autre contient des commentaires des clients.
 
  Après avoir créé un document à partir du modèle, vous pouvez ajouter l'un de ces tableaux dans le document en utilisant plusieurs objets <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> qui affichent les blocs de construction disponibles dans le modèle.
 
@@ -51,23 +51,23 @@ ms.locfileid: "63438560"
 
 - Microsoft Word.
 
-## <a name="create-a-new-word-template-project"></a>Créez un projet de modèle Word
+## <a name="create-a-new-word-template-project"></a>Créer un projet de modèle Word
  Créez un modèle Word pour que les utilisateurs puissent créer aisément leurs propres copies.
 
 ### <a name="to-create-a-new-word-template-project"></a>Pour créer un projet de modèle Word
 
-1. Créer un projet de modèle Word portant le nom **MonModèleDeBlocDeConstruction**. Dans l'Assistant, créez un nouveau document dans la solution. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de modèle Word portant le nom **MonModèleDeBlocDeConstruction**. Dans l'Assistant, créez un nouveau document dans la solution. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le nouveau modèle Word dans le concepteur et ajoute le **MonModèleDeBlocDeConstruction** projet **l’Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ouvre le nouveau modèle Word dans le concepteur et ajoute le projet **MonModèleDeBlocDeConstruction** à **Explorateur de solutions**.
 
-## <a name="create-the-employee-table"></a>Créer la table employee
+## <a name="create-the-employee-table"></a>Créer la table Employee
  Créez un tableau contenant quatre types différents de contrôles de contenu, dans lequel l'utilisateur peut entrer des informations sur un employé.
 
 ### <a name="to-create-the-employee-table"></a>Pour créer le tableau Employé
 
-1. Dans le modèle Word hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, dans le ruban, cliquez sur le **insérer** onglet.
+1. Dans le modèle Word qui est hébergé dans le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] concepteur, dans le ruban, cliquez sur l’onglet **Insérer** .
 
-2. Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et quatre lignes.
+2. Dans le groupe **tableaux** , cliquez sur **tableau**et insérez un tableau avec deux colonnes et quatre lignes.
 
 3. Tapez un texte dans la première colonne afin qu'elle se présente de la façon suivante :
 
@@ -76,68 +76,68 @@ ms.locfileid: "63438560"
    |**Nom de l’employé**|
    |**Date d’embauche**|
    |**Titre**|
-   |**Picture**|
+   |**Aperçu**|
 
-4. Cliquez dans la première cellule de la deuxième colonne (à côté **nom de l’employé**).
+4. Cliquez dans la première cellule de la deuxième colonne (en regard de nom de l' **employé**).
 
 5. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
    > [!NOTE]
-   > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Affichez l’onglet Développeur sur le](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)ruban.
 
-6. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.
+6. Dans le groupe **contrôles** , cliquez sur le bouton de **texte** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> ajouter un à la première cellule.
 
-7. Cliquez sur la deuxième cellule de la deuxième colonne (à côté **Date d’embauche**).
+7. Cliquez sur la deuxième cellule de la deuxième colonne (à côté de **Date d’embauche**).
 
-8. Dans le **contrôles** de groupe, cliquez sur le **sélecteur de dates** bouton ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> dans la deuxième cellule.
+8. Dans le groupe **contrôles** , cliquez sur le bouton **Sélecteur de dates** ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") pour <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> ajouter un à la deuxième cellule.
 
-9. Cliquez sur la troisième cellule de la deuxième colonne (à côté **titre**).
+9. Cliquez sur la troisième cellule de la deuxième colonne (en regard de **titre**).
 
-10. Dans le **contrôles** de groupe, cliquez sur le **zone de liste déroulante** bouton ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>dans la troisième cellule.
+10. Dans le groupe **contrôles** , cliquez sur le bouton de **zone de liste déroulante** ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> à la troisième cellule.
 
-11. Cliquez sur la dernière cellule dans la deuxième colonne (à côté **image**).
+11. Cliquez sur la dernière cellule de la deuxième colonne (en regard de **image**).
 
-12. Dans le **contrôles** de groupe, cliquez sur le **contrôle de contenu d’image** bouton ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PictureContentControl> jusqu'à la dernière cellule.
+12. Dans le groupe **contrôles** , cliquez sur le bouton **contrôle de contenu d’image** ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PictureContentControl> à la dernière cellule.
 
 ## <a name="create-the-customer-feedback-table"></a>Créer le tableau commentaires des clients
  Créez un tableau contenant trois types différents de contrôles de contenu, dans lequel l'utilisateur peut entrer des informations sur les commentaires des clients.
 
 ### <a name="to-create-the-customer-feedback-table"></a>Pour créer le tableau Commentaires des clients
 
-1. Dans le modèle Word, cliquez sur la ligne après le tableau employé que vous avez ajouté précédemment, appuyez sur **entrée** pour ajouter un nouveau paragraphe.
+1. Dans le modèle Word, cliquez sur la ligne qui suit la table Employee que vous avez ajoutée précédemment, puis appuyez sur **entrée** pour ajouter un nouveau paragraphe.
 
-2. Dans le ruban, cliquez sur le **insérer** onglet.
+2. Dans le ruban, cliquez sur l’onglet **Insérer** .
 
-3. Dans le **Tables** de groupe, cliquez sur **Table**et insérez un tableau comportant deux colonnes et trois lignes.
+3. Dans le groupe **tableaux** , cliquez sur **tableau**et insérez un tableau avec deux colonnes et trois lignes.
 
 4. Tapez un texte dans la première colonne afin qu'elle se présente de la façon suivante :
 
    ||
    |-|
    |**Nom du client**|
-   |**Indice de satisfaction**|
+   |**Évaluation de la satisfaction**|
    |**Commentaires**|
 
-5. Cliquez dans la première cellule de la deuxième colonne (à côté **Customer Name**).
+5. Cliquez dans la première cellule de la deuxième colonne (en regard de **nom du client**).
 
 6. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
-7. Dans le **contrôles** de groupe, cliquez sur le **texte** bouton ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>à la première cellule.
+7. Dans le groupe **contrôles** , cliquez sur le bouton de **texte** ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") pour <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> ajouter un à la première cellule.
 
-8. Cliquez dans la deuxième cellule de la deuxième colonne (à côté **taux de Satisfaction**).
+8. Cliquez dans la deuxième cellule de la deuxième colonne (en regard de l’évaluation de la **satisfaction**).
 
-9. Dans le **contrôles** de groupe, cliquez sur le **liste déroulante** bouton ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> dans la deuxième cellule.
+9. Dans le groupe **contrôles** , cliquez sur le bouton de **liste déroulante** ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") pour <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ajouter un à la deuxième cellule.
 
-10. Cliquez dans la dernière cellule de la deuxième colonne (à côté **commentaires**).
+10. Cliquez dans la dernière cellule de la deuxième colonne (à côté de **Commentaires**).
 
-11. Dans le **contrôles** de groupe, cliquez sur le **Rich Text** bouton ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") pour ajouter un <xref:Microsoft.Office.Tools.Word.RichTextContentControl>jusqu'à la dernière cellule.
+11. Dans le groupe **contrôles** , cliquez sur le bouton de **texte enrichi** ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") pour <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ajouter un à la dernière cellule.
 
-## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Remplir la zone de liste modifiable et de la liste déroulante par programmation
- Vous pouvez initialiser des contrôles de contenu au moment du design à l’aide de la **propriétés** fenêtre dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Vous pouvez également les initialiser lors de l’exécution, ce qui vous permet de définir leurs états initiaux de manière dynamique. Pendant cette procédure pas à pas, utilisez le code pour remplir les entrées dans le <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> et <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> lors de l’exécution afin que vous puissiez voir comment fonctionnent ces objets.
+## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Remplir par programmation la zone de liste déroulante et la liste déroulante
+ Vous pouvez initialiser des contrôles de contenu au moment du design à l’aide [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]de la fenêtre Propriétés dans. Vous pouvez également les initialiser au moment de l'exécution, ce qui vous permet de définir leurs états initiaux de manière dynamique. Pour cette procédure pas à pas, utilisez du code pour remplir <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> les <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> entrées dans et au moment de l’exécution afin que vous puissiez voir comment ces objets fonctionnent.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Pour modifier par programmation l'interface utilisateur des contrôles de contenu
 
-1. Dans **l’Explorateur de solutions**, avec le bouton droit **ThisDocument.cs** ou **ThisDocument.vb**, puis cliquez sur **afficher le Code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisDocument.cs** ou sur **ThisDocument. vb**, puis cliquez sur **afficher le code**.
 
 2. Ajoutez le code suivant à la classe `ThisDocument` . Ce code déclare plusieurs objets que vous utiliserez ultérieurement dans cette procédure pas à pas.
 
@@ -149,8 +149,8 @@ ms.locfileid: "63438560"
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
 
-## <a name="prevent-users-from-editing-the-employee-table"></a>Empêcher les utilisateurs de modifier le tableau employé
- Utilisez l'objet <xref:Microsoft.Office.Tools.Word.GroupContentControl> que vous avez déclaré précédemment pour protéger le tableau Employé. Une fois le tableau protégé, les utilisateurs peuvent encore modifier les contrôles de contenu du tableau. Toutefois, ils ne peuvent plus modifier le texte de la première colonne ni modifier le tableau d'une quelconque autre manière, par exemple en ajoutant ou en supprimant des lignes et des colonnes. Pour plus d’informations sur la façon d’utiliser un <xref:Microsoft.Office.Tools.Word.GroupContentControl> pour protéger une partie d’un document, consultez [contrôles de contenu](../vsto/content-controls.md).
+## <a name="prevent-users-from-editing-the-employee-table"></a>Empêcher les utilisateurs de modifier la table Employee
+ Utilisez l'objet <xref:Microsoft.Office.Tools.Word.GroupContentControl> que vous avez déclaré précédemment pour protéger le tableau Employé. Une fois le tableau protégé, les utilisateurs peuvent encore modifier les contrôles de contenu du tableau. Toutefois, ils ne peuvent plus modifier le texte de la première colonne ni modifier le tableau d'une quelconque autre manière, par exemple en ajoutant ou en supprimant des lignes et des colonnes. Pour plus d’informations sur l’utilisation d' <xref:Microsoft.Office.Tools.Word.GroupContentControl> un pour protéger une partie d’un document, consultez [contrôles de contenu](../vsto/content-controls.md).
 
 ### <a name="to-prevent-users-from-editing-the-employee-table"></a>Pour empêcher les utilisateurs de modifier le tableau Employé
 
@@ -164,7 +164,7 @@ ms.locfileid: "63438560"
 
 ### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>Pour ajouter les tableaux aux blocs de construction du modèle
 
-1. Ajoutez le code suivant à la méthode `ThisDocument_Startup` de la classe `ThisDocument`, après le code que vous avez ajouté à l'étape précédente. Ce code ajoute de nouveaux blocs de construction contenant les tables à la collection Microsoft.Office.Interop.Word.BuildingBlockEntries, qui contient des blocs de construction réutilisables du modèle. Les nouveaux blocs de construction sont définis dans une nouvelle catégorie nommée **informations employé et client** et prennent le type de bloc de construction `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Ajoutez le code suivant à la méthode `ThisDocument_Startup` de la classe `ThisDocument`, après le code que vous avez ajouté à l'étape précédente. Ce code ajoute de nouveaux blocs de construction qui contiennent les tables à la collection Microsoft. Office. Interop. Word. BuildingBlockEntries, qui contient tous les blocs de construction réutilisables dans le modèle. Les nouveaux blocs de construction sont définis dans une nouvelle catégorie nommée **employé et informations client** et sont affectés au type `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`de bloc de construction.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
@@ -174,54 +174,54 @@ ms.locfileid: "63438560"
      [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
 
-## <a name="create-a-content-control-that-displays-the-building-blocks"></a>Créer un contrôle de contenu affichant les blocs de construction
+## <a name="create-a-content-control-that-displays-the-building-blocks"></a>Créer un contrôle de contenu qui affiche les blocs de construction
  Créez un contrôle de contenu permettant d'accéder aux blocs de construction (autrement dit, aux tableaux) que vous avez créés précédemment. Les utilisateurs peuvent cliquer sur ce contrôle pour ajouter les tableaux dans le document.
 
 ### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>Pour créer un contrôle de contenu affichant les blocs de construction
 
-1. Ajoutez le code suivant à la méthode `ThisDocument_Startup` de la classe `ThisDocument`, après le code que vous avez ajouté à l'étape précédente. Ce code initialise l'objet <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> déclaré précédemment. Le <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> affiche tous les blocs de construction sont définis dans la catégorie **informations employé et client** et qui ont le type de bloc de construction `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`.
+1. Ajoutez le code suivant à la méthode `ThisDocument_Startup` de la classe `ThisDocument`, après le code que vous avez ajouté à l'étape précédente. Ce code initialise l'objet <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> déclaré précédemment. Le <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> affiche tous les blocs de construction définis dans la catégorie **informations sur les employés et les clients** , et qui ont `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1`le type de bloc de construction.
 
      [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
 
-## <a name="test-the-project"></a>Le projet de test
+## <a name="test-the-project"></a>Tester le projet
  Les utilisateurs peuvent cliquer sur les contrôles de la galerie des blocs de construction du document pour insérer le tableau Employé ou le tableau Commentaires des clients. Ils peuvent taper ou sélectionner des réponses dans les contrôles de contenu des deux tableaux. Ils peuvent aussi modifier d'autres parties du tableau Commentaires des clients, mais ils ne doivent pas pouvoir modifier d'autres parties du tableau Employé.
 
 ### <a name="to-test-the-employee-table"></a>Pour tester le tableau Employé
 
 1. Appuyez sur **F5** pour exécuter le projet.
 
-2. Cliquez sur **choisir votre premier bloc de construction** pour afficher le premier contrôle de contenu de la galerie des blocs de construction.
+2. Cliquez sur **choisir votre premier bloc de construction** pour afficher le premier contrôle de contenu de la Galerie des blocs de construction.
 
-3. Cliquez sur la flèche déroulante en regard du **Galerie 1 personnalisée** titre dans le contrôle, puis sélectionnez **Table Employee**.
+3. Cliquez sur la flèche déroulante en regard de l’en-tête **Galerie 1 personnalisée** dans le contrôle, puis sélectionnez **table Employee**.
 
-4. Cliquez dans la cellule à droite de la **nom de l’employé** de la cellule et tapez un nom.
+4. Cliquez dans la cellule située à droite de la cellule **Employee Name** et tapez un nom.
 
      Vérifiez que vous pouvez ajouter uniquement du texte dans cette cellule. Le contrôle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> permet aux utilisateurs d'ajouter du texte uniquement, pas d'autres types de contenu tels que des illustrations ou des tableaux.
 
-5. Cliquez dans la cellule à droite de la **Date d’embauche** de la cellule et sélectionnez une date dans le sélecteur de dates.
+5. Cliquez dans la cellule située à droite de la cellule **Date d’embauche** et sélectionnez une date dans le sélecteur de dates.
 
-6. Cliquez dans la cellule à droite de la **titre** de la cellule et sélectionnez un des postes dans la zone de liste déroulante.
+6. Cliquez dans la cellule située à droite de la cellule **titre** et sélectionnez l’une des fonctions dans la zone de liste déroulante.
 
      Si vous le souhaitez, tapez le nom d'une fonction qui ne figure pas dans la liste. Cela est possible car le contrôle <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> permet aux utilisateurs d'effectuer un choix dans une liste d'entrées ou de taper leurs propres entrées.
 
-7. Cliquez sur l’icône dans la cellule à droite de la **image** de cellule, puis accédez à une image pour l’afficher.
+7. Cliquez sur l’icône dans la cellule située à droite de la cellule **image** et accédez à une image pour l’afficher.
 
 8. Essayez d'ajouter et de supprimer des lignes et des colonnes dans le tableau. Vérifiez que vous ne pouvez pas modifier le tableau. L'objet <xref:Microsoft.Office.Tools.Word.GroupContentControl> vous empêche d'apporter la moindre modification.
 
 ### <a name="to-test-the-customer-feedback-table"></a>Pour tester le tableau Commentaires des clients
 
-1. Cliquez sur **choisir votre deuxième bloc de construction** pour afficher le deuxième contrôle de contenu de la galerie des blocs de construction.
+1. Cliquez sur **choisir votre deuxième bloc de construction** pour afficher le deuxième contrôle de contenu de la Galerie des blocs de construction.
 
-2. Cliquez sur la flèche déroulante en regard du **Galerie 1 personnalisée** titre dans le contrôle, puis sélectionnez **Table Customer**.
+2. Cliquez sur la flèche déroulante en regard de l’en-tête **Galerie 1 personnalisée** dans le contrôle, puis sélectionnez **table Customer**.
 
-3. Cliquez dans la cellule à droite de la **Customer Name** de la cellule et tapez un nom.
+3. Cliquez dans la cellule située à droite de la cellule **nom du client** et tapez un nom.
 
-4. Cliquez dans la cellule à droite de la **taux de Satisfaction** de la cellule et sélectionnez une des options disponibles.
+4. Cliquez dans la cellule située à droite de la cellule évaluation de la **satisfaction** et sélectionnez l’une des options disponibles.
 
      Vérifiez que vous ne pouvez pas taper votre propre entrée. L'objet <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> permet uniquement aux utilisateurs d'effectuer un choix dans une liste d'entrées.
 
-5. Cliquez dans la cellule à droite de la **commentaires** de cellule et tapez des commentaires.
+5. Cliquez dans la cellule située à droite de la cellule **Commentaires** et tapez des commentaires.
 
      Si vous le souhaitez, ajoutez du contenu autre que du texte, comme une illustration ou un tableau incorporé. Cela est possible car l'objet <xref:Microsoft.Office.Tools.Word.RichTextContentControl> permet aux utilisateurs d'ajouter du contenu autre que du texte.
 
@@ -232,13 +232,13 @@ ms.locfileid: "63438560"
 ## <a name="next-steps"></a>Étapes suivantes
  Pour plus d'informations sur l'utilisation des contrôles de contenu, consultez la rubrique suivante :
 
-- Lier des contrôles de contenu à des fragments XML, ou parties XML personnalisées, qui sont incorporés dans un document. Pour plus d’informations, consultez [Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
+- Lier des contrôles de contenu à des fragments XML, ou parties XML personnalisées, qui sont incorporés dans un document. Pour plus d’informations, consultez [Procédure pas à pas : Lier des contrôles de contenu à des](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)parties XML personnalisées.
 
 ## <a name="see-also"></a>Voir aussi
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
 - [Contrôles de contenu](../vsto/content-controls.md)
 - [Guide pratique pour Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Guide pratique pour Protéger des parties de documents à l’aide de contrôles de contenu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)
-- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
-- [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)

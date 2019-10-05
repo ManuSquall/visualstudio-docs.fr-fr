@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818404"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253143"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -30,15 +30,15 @@ Avec la sortie d’Unity 2017.1, Unity a introduit une version expérimentale d
 
 Pour activer le runtime de script .NET 4.x, effectuez les étapes suivantes :
 
-1. Ouvrez PlayerSettings dans l’inspecteur Unity en sélectionnant **Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**.
+1. Ouvrez PlayerSettings dans l’inspecteur Unity en sélectionnant **Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)** .
 
-1. Sous le titre **Configuration**, cliquez sur la liste déroulante **Scripting Runtime Version (Version du runtime de script)**, puis sélectionnez **.NET 4.x Equivalent** (Équivalent .NET 4.x). Vous êtes invité à redémarrer Unity.
+1. Sous le titre **Configuration**, cliquez sur la liste déroulante **Scripting Runtime Version (Version du runtime de script)** , puis sélectionnez **.NET 4.x Equivalent** (Équivalent .NET 4.x). Vous êtes invité à redémarrer Unity.
 
 ![Sélectionner l’équivalent .NET 4.x](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Choix entre les profils .NET 4.x et .NET Standard 2.0
 
-Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)**). Il existe deux options :
+Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)** ). Il existe deux options :
 
 * **.NET Standard 2.0**. Ce profil correspond au [profil .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publié par .NET Foundation. Unity recommande .NET Standard 2.0 pour les nouveaux projets. Il est plus petit que .NET 4.x, ce qui est avantageux pour les plateformes limitées en taille. De plus, Unity s’est engagé à prendre en charge ce profil sur toutes les plateformes prises en charge par Unity.
 
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Quand vous exportez votre jeu sur des plateformes comme iOS, Unity utilise son moteur IL2CPP pour « transpiler » le code IL en code C++, lequel est ensuite compilé à l’aide du compilateur natif de la plateforme cible. Dans ce scénario, plusieurs fonctionnalités .NET ne sont pas prises en charge, par exemple certaines parties de Reflection et l’utilisation du mot clé `dynamic`. Bien que vous puissiez contrôler l’utilisation de ces fonctionnalités dans votre propre code, vous pouvez rencontrer des problèmes dans les DLL et kits SDK tiers qui n’ont pas été écrits en tenant compte des spécificités d’Unity et d’IL2CPP. Pour plus d’informations sur ce sujet, consultez la documentation sur les [restrictions relatives aux scripts](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) sur le site d’Unity.
 
-De plus, comme indiqué dans l’exemple Json.NET ci-dessus, Unity tente de supprimer le code inutilisé durant le processus d’exportation IL2CPP.  Bien que cela ne pose généralement pas de problème, les bibliothèques qui utilisent Reflection peuvent accidentellement supprimer des propriétés ou des méthodes appelées au moment de l’exécution, et qui ne peuvent pas être déterminées au moment de l’exportation.  Pour résoudre ces problèmes, ajoutez un fichier **link.xml** au projet qui contient une liste d’assemblys et d’espaces de noms sur lesquels le processus de suppression ne doit pas s’exécuter.  Pour plus d’informations, consultez la [documentation d’Unity sur la suppression du bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+De plus, comme indiqué dans l’exemple Json.NET ci-dessus, Unity tente de supprimer le code inutilisé durant le processus d’exportation IL2CPP.  Bien que cela ne soit généralement pas un problème, avec les bibliothèques qui utilisent la réflexion, il peut accidentellement supprimer les propriétés ou les méthodes qui seront appelées au moment de l’exécution et qui ne peuvent pas être déterminées au moment de l’exportation.  Pour résoudre ces problèmes, ajoutez un fichier **link.xml** au projet qui contient une liste d’assemblys et d’espaces de noms sur lesquels le processus de suppression ne doit pas s’exécuter.  Pour plus d’informations, consultez la [documentation d’Unity sur la suppression du bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Exemple de projet Unity .NET 4.x
 

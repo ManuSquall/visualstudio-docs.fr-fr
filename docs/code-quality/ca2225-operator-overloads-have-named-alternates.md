@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546905"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481770"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
 
@@ -27,7 +27,7 @@ ms.locfileid: "69546905"
 |-|-|
 |TypeName|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,12 +38,16 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-La surcharge d’opérateur autorise l’utilisation de symboles pour représenter les calculs d’un type. Par exemple, un type qui surcharge le symbole plus (+) en plus de l’ajout aurait généralement un autre membre nommé’Add'. Le membre de substitution nommé fournit l’accès aux mêmes fonctionnalités que l’opérateur et est fourni aux développeurs qui programment dans des langages qui ne prennent pas en charge les opérateurs surchargés.
+La surcharge d’opérateur autorise l’utilisation de symboles pour représenter les calculs d’un type. Par exemple, un type qui surcharge le symbole plus `+` pour l’addition aura généralement un autre membre nommé `Add`. Le membre de substitution nommé fournit l’accès aux mêmes fonctionnalités que l’opérateur. Il est fourni aux développeurs qui programment dans des langages qui ne prennent pas en charge les opérateurs surchargés.
 
-Cette règle examine les opérateurs listés dans le tableau suivant.
+Cette règle examine les éléments suivants :
 
-|C#|Visual Basic|C++|Autre nom|
-|---------|------------------|-----------|--------------------|
+- Les opérateurs de cast implicite et explicite dans un type en vérifiant les méthodes nommées `To<typename>` et `From<typename>`.
+
+- Les opérateurs listés dans le tableau suivant :
+
+|C#|Visual Basic|C++|Nom de la méthode de remplacement|
+|-|-|-|-|
 |+ (binaire)|+|+ (binaire)|Ajouter|
 |+=|+=|+=|Ajouter|
 |&|and|&|BitwiseAnd|
@@ -56,14 +60,14 @@ Cette règle examine les opérateurs listés dans le tableau suivant.
 |==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
-|>|>|>|Comparer|
-|>=|>=|>=|Comparer|
+|>|>|>|CompareTo ou compare|
+|>=|>=|>=|CompareTo ou compare|
 |++|N/A|++|Incrémentation|
-|<>|!=|Equals|
+|!=|<>|!=|Equals|
 |<<|<<|<<|Maj|
 |<<=|<<=|<<=|Maj|
-|<|<|<|Comparer|
-|<=|<=|\<=|Comparer|
+|<|<|<|CompareTo ou compare|
+|<=|<=|\<=|CompareTo ou compare|
 |&&|N/A|&&|LogicalAnd|
 |&#124;&#124;|N/A|&#124;&#124;|Logique|
 |!|N/A|!|LogicalNot|
@@ -79,13 +83,12 @@ Cette règle examine les opérateurs listés dans le tableau suivant.
 |true|IsTrue|N/A|IsTrue (propriété)|
 |-(unaire)|N/A|-|Negate|
 |+ (unaire)|N/A|+|Protect|
-|False|IsFalse|False|IsTrue (propriété)|
+|false|IsFalse|False|IsTrue (propriété)|
 
-N/A = = ne peut pas être surchargé dans la langue sélectionnée.
+\* N/A signifie que l’opérateur ne peut pas être surchargé dans la langue sélectionnée.
 
-La règle vérifie également les opérateurs de cast implicite et explicite dans`SomeType`un type () en vérifiant `FromSomeType`les méthodes nommées `ToSomeType` et.
-
-Dans C#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est également implicitement surchargé.
+> [!NOTE]
+> Dans C#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est également implicitement surchargé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -97,7 +100,7 @@ Ne supprimez pas un avertissement de cette règle si vous implémentez une bibli
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal

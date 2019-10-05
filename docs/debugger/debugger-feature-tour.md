@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70987791"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
@@ -27,7 +27,7 @@ Les fonctionnalités décrites ici sont applicables à C#, C++, Visual Basic, Ja
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrer le débogueur
 
-Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Toutefois, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous allons donc commencer par cela, pour ensuite démarrer le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
+Pour déboguer, vous devez démarrer votre application avec le débogueur attaché au processus de l’application. **F5** (**Déboguer > Démarrer le débogage**) est l’approche la plus courante pour faire cela. Cependant, vous n’avez peut-être pas encore défini de points d’arrêt pour examiner le code de votre application : nous commençons donc par cela, puis nous démarrons le débogage. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
 Si vous avez un fichier ouvert dans l’éditeur de code, vous pouvez définir un point d’arrêt en cliquant dans la marge à gauche d’une ligne de code.
 
@@ -41,16 +41,16 @@ Les points d’arrêt sont une fonctionnalité pratique quand vous savez quelle 
 
 Nous fournissons les raccourcis clavier pour la plupart des commandes, car ils rendent plus rapide la navigation dans le code de votre d’application. (Les commandes équivalentes, comme les commandes des menus, sont données entre parenthèses.)
 
-Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11** (**Déboguer > Pas à pas détaillé**). F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. Lorsque vous démarrez l’application en appuyant sur F11, le débogueur s’arrête à la première instruction exécutée.
+Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11** (**Déboguer > Pas à pas détaillé**). F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. Quand vous démarrez l’application avec F11, le débogueur s’arrête sur la première instruction exécutée.
 
 ![F11 Pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 Pas à pas détaillé")
 
 La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
-F11 est une bonne solution pour examiner le flux d’exécution en détails. (Pour se déplacer plus rapidement dans le code, nous vous montrerons d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon Code](../debugger/just-my-code.md)).
+F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour avancer plus rapidement dans le code, il existe d’autres options, que nous allons vous montrer.) Par défaut, le débogueur ignore le code non-utilisateur (si vous voulez plus d’informations, consultez [Uniquement mon code](../debugger/just-my-code.md)).
 
 >[!NOTE]
-> Dans le code managé, vous verrez une boîte de dialogue vous demandant si vous souhaitez être averti quand vous effectuez automatiquement un pas à pas dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer cette option plus tard, désactivez **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
+> Dans le code managé, vous voyez une boîte de dialogue vous demandant si vous voulez être averti quand vous effectuez automatiquement un pas à pas principal dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer ce paramètre ultérieurement, désactivez le paramètre **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
 
 ## <a name="step-over-code-to-skip-functions"></a>Effectuer un pas à pas principal dans le code pour ignorer les fonctions
 
@@ -60,28 +60,28 @@ F10 fait avancer le débogueur sans effectuer de pas à pas détaillé dans les 
 
 ## <a name="step-into-a-property"></a>Pas à pas détaillé d’une propriété
 
-Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés et les champs managés, mais la commande **Pas à pas détaillé spécifique** vous permet de substituer ce comportement.
+Comme mentionné précédemment, par défaut, le débogueur ignore les propriétés et les champs managés, mais la commande **Pas à pas détaillé spécifique** vous permet de remplacer ce comportement.
 
-Cliquez avec le bouton droit sur une propriété ou un champ et choisissez **Pas à pas détaillé spécifique**, puis choisissez une des options disponibles.
+Cliquez avec le bouton droit sur une propriété ou un champ, et choisissez **Pas à pas détaillé spécifique**, puis choisissez une des options disponibles.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific.png "Pas à pas détaillé spécifique")
 
-Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code correspondant à `Path.set`.
+Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code pour `Path.set`.
 
 ![Pas à pas détaillé spécifique](../debugger/media/dbg-tour-step-into-specific-2.png "Pas à pas détaillé spécifique")
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Exécuter rapidement jusqu’à un point dans votre code avec la souris
 
-Lorsque vous êtes dans le débogueur, pointez sur une ligne de code jusqu'à ce que le bouton **Exécuter jusqu'au clic** (Exécuter l’exécution jusqu’ici) ![Exécuter jusqu'au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
+Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
 
 ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click-2.png "Exécuter jusqu’au clic")
 
 > [!NOTE]
 > Le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) est disponible à compter de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
-Cliquez sur le bouton **Exécuter jusqu'au clic** (Exécuter l'exécution jusqu’ici). Le débogueur passe à la ligne de code où vous avez cliqué.
+Cliquez sur le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici). Le débogueur avance jusqu’à la ligne de code où vous avez cliqué.
 
-L’utilisation de ce bouton est similaire à la définition d’un point d’arrêt temporaire. Cette commande est également pratique pour se déplacer rapidement au sein de la région visible du code d’application. Vous pouvez utiliser le bouton **Exécuter jusqu'au clic** dans un fichier ouvert.
+L’utilisation de ce bouton revient à définir un point d’arrêt temporaire. Cette commande est également pratique pour parcourir rapidement une zone visible du code d’application. Vous pouvez utiliser **Exécuter jusqu’au clic** dans n’importe quel fichier ouvert.
 
 ## <a name="advance-the-debugger-out-of-the-current-function"></a>Faire avancer le débogueur en dehors de la fonction active
 

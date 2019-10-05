@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547098"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233896"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 
@@ -34,7 +34,7 @@ ms.locfileid: "69547098"
 
 Le nom d’un paramètre dans un membre contient un nom de type de données.
 
-ou
+\- ou -
 
 Le nom d’un membre contient un nom de type de données spécifique à une langue.
 
@@ -44,7 +44,7 @@ Par défaut, cette règle recherche uniquement les membres visibles de l’exté
 
 Les noms des paramètres et des membres sont mieux utilisés pour communiquer leur signification que pour décrire leur type, qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’un nom spécifique à une langue. Par exemple, à la place C# du nom `int`de type, utilisez le nom de type de `Int32`données indépendant du langage.
 
-Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par rapport aux noms de types de données spécifiques à la langue suivants, sans respect de la casse:
+Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par rapport aux noms de types de données spécifiques à la langue suivants, sans respect de la casse :
 
 - Bool
 - WChar
@@ -64,7 +64,7 @@ Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par ra
 - Float32
 - Float64
 
-En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendants du langage suivants sans respect de la casse:
+En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendants du langage suivants sans respect de la casse :
 
 - Object
 - Obj
@@ -81,7 +81,7 @@ En outre, les noms d’un paramètre sont également vérifiés par rapport aux 
 - Int64
 - UInt64
 - IntPtr
-- Effectués
+- effectués
 - Pointeur
 - UInptr
 - UPtr
@@ -89,17 +89,17 @@ En outre, les noms d’un paramètre sont également vérifiés par rapport aux 
 - Single
 - Double
 - Decimal
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-**En cas de déclenchement sur un paramètre:**
+**En cas de déclenchement sur un paramètre :**
 
-Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou un terme plus générique, tel que «value».
+Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou un terme plus générique, tel que « value ».
 
-**En cas de déclenchement sur un membre:**
+**En cas de déclenchement sur un membre :**
 
-Remplacez l’identificateur de type de données spécifique au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que «value».
+Remplacez l’identificateur de type de données spécifique au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que « value ».
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -107,7 +107,7 @@ L’utilisation occasionnelle des noms de paramètres et de membres basés sur l
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f616547738c7c58d61289b2be71c8e56a1a427c8
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: a93ebea78c9258667d7c6ca10e35d22fc4113f48
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766077"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233439"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimez les finaliseurs vides
 
@@ -26,7 +26,7 @@ ms.locfileid: "70766077"
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
-|Catégorie|Microsoft. performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -45,7 +45,7 @@ Supprimez le finaliseur vide. Si un finaliseur est requis pour le débogage, met
 
 Ne supprimez pas un message de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 L’exemple suivant montre un finaliseur vide qui doit être supprimé, un finaliseur qui doit être placé dans `#if DEBUG / #endif` les directives et un finaliseur qui utilise correctement `#if DEBUG / #endif` les directives.
 

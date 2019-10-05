@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Transformations MSBuild
           href: msbuild-transforms.md
-        - name: Intégration de Visual Studio
+        - name: Intégration Visual Studio
           items:
             - name: Intégration de Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Inscrire des extensions du .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Génération de plusieurs projets en parallèle
+        - name: Génération parallèle de plusieurs projets
           items:
             - name: Génération parallèle de plusieurs projets avec MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -236,7 +236,7 @@
               href: usingtask-element-msbuild.md
             - name: 'When, élément (MSBuild)'
               href: when-element-msbuild.md
-        - name: Référence de tâche
+        - name: Référence des tâches
           items:
             - name: Référence des tâches MSBuild - Vue d’ensemble
               href: msbuild-task-reference.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: Classe de base ToolTaskExtension
               href: tooltaskextension-base-class.md
+            - name: Diagnostic des échecs de tâches
+              href: diagnosing-task-failures.md
             - name: 'AL (Assembly Linker), tâche'
               href: al-assembly-linker-task.md
             - name: 'AspNetCompiler, tâche'

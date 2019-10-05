@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 772b80452c20d84b1145a5b8762365f2fe3a8e69
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118841"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950714"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Étape 2 : Exécuter votre application visionneuse d’images
 
-Lorsque vous créez un projet d’application Windows Forms, vous générez en fait un programme qui exécute. Dans ce didacticiel, votre application visionneuse d’images n’est&mdash;pas encore plus importante bien que cela soit le cas. Pour le moment, elle affiche une fenêtre vide qui affiche **Form1** dans la barre de titre.
+Lorsque vous créez un projet d’application Windows Forms, vous générez en fait un programme qui exécute. Dans ce didacticiel, votre application visionneuse d’images ne fait pas encore plus de @ no__t-0although. Pour le moment, elle affiche une fenêtre vide qui affiche **Form1** dans la barre de titre.
 
 Voici comment exécuter votre application. 
 
@@ -31,18 +31,18 @@ Voici comment exécuter votre application.
 
     - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage** , qui se présente comme suit :
 
-      ![Bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
-      ***Démarrer le débogage*** *bouton de barre d’outils*
+      bouton de barre d’outils de débogage ![Start @ no__t-1<br>
+      Bouton ***Démarrer le débogage*** de la *barre d’outils*
 
 1. Visual Studio exécute votre application et une fenêtre nommée **Form1** s’affiche. La capture d’écran suivante montre l’application que vous venez de créer. L’application est en cours d’exécution, et vous y ajoutez bientôt.
 
-     ![Windows Forms application en cours d’exécution](../ide/media/express_firstrun.png)<br>
+     @no__t-application Forms 0Windows en cours d’exécution @ no__t-1<br>
 ***Application Windows Forms***, *exécution en cours*
 
 1. Revenez à l’environnement de développement intégré (IDE) de Visual Studio, puis examinez la nouvelle barre d’outils. Des boutons supplémentaires apparaissent dans la barre d’outils lorsque vous exécutez une application. Ces boutons vous permettent d’effectuer des opérations telles que arrêter et démarrer votre application, et vous aider à identifier les erreurs (bogues) qu’elle peut avoir. Pour cet exemple, nous l’utilisons pour démarrer et arrêter l’application.
 
-     ![Barre d’outils de débogage](../ide/media/express_debugtoolbar.png)<br>
-***Débogage*** *barre d’outils*
+     barre d’outils ![Debugging @ no__t-1<br>
+*Barre d’outils* de ***débogage***
 
 1. Utilisez l’une des méthodes suivantes pour arrêter votre application :
 
@@ -50,20 +50,20 @@ Voici comment exécuter votre application.
 
     - Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
 
-    - À l’aide de votre clavier, appuyez sur **MAJ**+**F5**.
+    - Utilisez votre clavier et appuyez sur **maj**+**F5**.
 
     - Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
 
     > [!NOTE]
-    > Quand vous exécutez votre application à partir de l’IDE, on parle de débogage, car vous le faites généralement pour rechercher et corriger les bogues (erreurs) dans l’application. Bien que cette application soit petite et ne fait rien d’autre encore, il s’agit toujours d’un programme réel. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
+    > Quand vous exécutez votre application à partir de l’IDE, on parle de débogage, car vous le faites généralement pour rechercher et corriger les bogues (erreurs) dans l’application. Bien que cette application soit petite et ne fait pas encore grand-chose, il s’agit toujours d’un programme réel. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Présentation du débogueur](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, **consultez [étape 3 : Définissez les propriétés](../ide/step-3-set-your-form-properties.md)** de votre formulaire.
+* Pour passer à l’étape suivante du didacticiel, consultez ** @ no__t-1Step 3 : Définissez les propriétés de votre formulaire @ no__t-0 @ no__t-1.
 
-* Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : Créez un projet](../ide/step-1-create-a-windows-forms-application-project.md)d’application Windows Forms.
+* Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : Créez un projet d’application Windows Forms @ no__t-0.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Tutoriel 2 : Créer un questionnaire mathématique chronométré @ no__t-0
+* [Tutoriel 3 : Créer un jeu de combinaisons @ no__t-0

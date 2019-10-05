@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb70baa17bee484dc3c31d7c6ce9b302019403
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 7c7fa7756383426f990e18225995a768de9fefbd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300602"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231738"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer d'objets plusieurs fois
 
@@ -27,7 +27,7 @@ ms.locfileid: "68300602"
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -50,7 +50,7 @@ Pour corriger une violation de cette règle, modifiez l’implémentation afin q
 
 Ne supprimez aucun avertissement de cette règle. Même si <xref:System.IDisposable.Dispose%2A> pour l’objet est connu pour être appelé plusieurs fois en toute sécurité, l’implémentation peut changer à l’avenir.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 Les instructions imbriquées`Using` (dans Visual Basic) peuvent provoquer des violations de l’avertissement CA2202. `using` Si la ressource IDisposable de l’instruction interne `using` imbriquée contient la ressource de l’instruction externe `using` , la `Dispose` méthode de la ressource imbriquée libère la ressource contenue. Lorsque cette situation se produit, `Dispose` la méthode de l' `using` instruction externe tente de supprimer sa ressource pour la deuxième fois.
 

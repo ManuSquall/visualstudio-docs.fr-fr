@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cf07c997f933e6aacf3eff29ae204ecd0bedb036
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547012"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233072"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007 : N’attendez pas directement une Tâche
 
@@ -25,7 +25,7 @@ ms.locfileid: "69547012"
 |-|-|
 |TypeName|DoNotDirectlyAwaitATaskAnalyzer|
 |CheckId|CA2007|
-|Catégorie|Microsoft.Reliability|
+|Category|Microsoft.Reliability|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -50,9 +50,9 @@ Pour corriger les violations, <xref:System.Threading.Tasks.Task.ConfigureAwait%2
 
 Vous pouvez supprimer cet avertissement si vous savez que le consommateur n’est pas une application GUI (Graphical User Interface) ou si le consommateur n’a <xref:System.Threading.SynchronizationContext>pas de.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
-L’extrait de code suivant génère l’avertissement:
+L’extrait de code suivant génère l’avertissement :
 
 ```csharp
 public async Task Execute()
@@ -62,7 +62,7 @@ public async Task Execute()
 }
 ```
 
-Pour corriger la violation, appelez <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> sur le <xref:System.Threading.Tasks.Task>attendu:
+Pour corriger la violation, appelez <xref:System.Threading.Tasks.Task.ConfigureAwait%2A> sur le <xref:System.Threading.Tasks.Task>attendu :
 
 ```csharp
 public async Task Execute()
@@ -74,7 +74,7 @@ public async Task Execute()
 
 ## <a name="configurability"></a>Configurabilité
 
-Vous pouvez configurer si vous souhaitez exclure des méthodes asynchrones qui ne retournent pas de valeur à partir de cette règle. Pour exclure ces genres de méthodes, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Vous pouvez configurer si vous souhaitez exclure des méthodes asynchrones qui ne retournent pas de valeur à partir de cette règle. Pour exclure ces genres de méthodes, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 # Package version 2.9.0 and later
@@ -84,7 +84,7 @@ dotnet_code_quality.CA2007.exclude_async_void_methods = true
 dotnet_code_quality.CA2007.skip_async_void_methods = true
 ```
 
-Vous pouvez également configurer les types d’assembly de sortie auxquels appliquer cette règle. Par exemple, pour appliquer cette règle uniquement au code qui produit une application console ou une bibliothèque liée de manière dynamique (autrement dit, pas une application d’interface utilisateur), ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Vous pouvez également configurer les types d’assembly de sortie auxquels appliquer cette règle. Par exemple, pour appliquer cette règle uniquement au code qui produit une application console ou une bibliothèque liée de manière dynamique (autrement dit, pas une application d’interface utilisateur), ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
@@ -94,5 +94,5 @@ Pour plus d’informations, consultez [configurer les analyseurs FxCop](configur
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Dois-je attendre une tâche avec ConfigureAwait (false)?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
+- [Dois-je attendre une tâche avec ConfigureAwait (false) ?](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md#should-i-await-a-task-with-configureawaitfalse)
 - [Installer les analyseurs FxCop dans Visual Studio](install-fxcop-analyzers.md)

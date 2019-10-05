@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb18316b5f009a0f2854c8a158e528f15c92326
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0d7783bea936b04fcb600563dadea6a65ac5ef5e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923203"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236520"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
 
@@ -30,7 +30,7 @@ ms.locfileid: "68923203"
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
 |CheckId|CA1007|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -45,7 +45,7 @@ Pour corriger une violation de cette règle, rendez la méthode générique et r
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre une routine d’échange à usage général qui est implémentée en tant que méthodes génériques et non génériques. Notez l’efficacité des chaînes échangées à l’aide de la méthode générique par rapport à la méthode non générique.
 
 [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]

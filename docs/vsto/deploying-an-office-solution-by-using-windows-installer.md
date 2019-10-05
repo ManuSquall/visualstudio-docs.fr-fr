@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551718"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Déployer une solution Office à l’aide de Windows Installer
@@ -49,7 +49,7 @@ En utilisant Visual Studio pour créer un fichier Windows Installer, vous pouvez
 
 - [Configurer les modules dépendants comme des composants requis](#Configure)
 
-- [Spécifier où installer la solution sur l'ordinateur de l'utilisateur](#Location)
+- [Specify where you want to deploy the solution on the user's computer](#Location)
 
 - [Configurer un complément VSTO](#ConfigureRegistry)
 
@@ -233,7 +233,7 @@ La page **Composants redistribuables** contient un élément nommé **Runtime Mi
 
    Pour les systèmes d’exploitation 32 bits *:\\ %ProgramFiles%\InstallShield\2013LE\SetupPrerequisites*
 
-   Pour les systèmes d’exploitation 64 bits: *% ProgramFiles (x86)% \ 2013LE \\\ SetupPrerequisites*
+   Pour les systèmes d’exploitation 64 bits : *% ProgramFiles (x86)% \ 2013LE \\\ SetupPrerequisites*
 
 11. Dans la page **Redistribuable** du projet InstallShield, choisissez le bouton **Actualiser** pour actualiser la liste des composants redistribuables, comme le montre l'illustration suivante.
 
@@ -333,7 +333,7 @@ Les installations par utilisateur requièrent un seul programme d'installation q
 
 7. Répétez ce processus pour créer les valeurs suivantes.
 
-|Type valeur<br /><br />|Nom<br /><br />|
+|Type valeur<br /><br />|Name<br /><br />|
 |--------------|--------|
 |Valeur de chaîne<br /><br />|**FriendlyName**<br /><br />|
 |Valeur DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -500,7 +500,7 @@ Pour modifier des propriétés personnalisées, vous créez un programme qui sup
 
 9. Dans la barre de menus, choisissez **générer** > **générer OfficeAddInSetup**.
 
-   Une fois la génération terminée, vous pouvez localiser le fichier *Setup. exe* du projet **OfficeAddInSetup** à l’emplacement suivant: <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
+   Une fois la génération terminée, vous pouvez localiser le fichier *Setup. exe* du projet **OfficeAddInSetup** à l’emplacement suivant : <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c9e43dcdf1e923cb7bc4a98b17fd0be71b7927eb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841408"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237399"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003 : Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier
 
@@ -28,35 +28,35 @@ ms.locfileid: "65841408"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint le chemin d’accès d’une opération de fichier.
+Une entrée de requête HTTP potentiellement non approuvée atteint le chemin d’accès d’une opération de fichier.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées des requêtes web, tenez compte de l’aide des entrées de contrôlée par l’utilisateur lors de la spécification de chemins d’accès aux fichiers. Une personne malveillante peut être en mesure de lire un fichier involontaire, ce qui entraîne la divulgation d’informations des données sensibles. Ou bien, une personne malveillante peut être en mesure d’écrire dans un fichier involontaire, ce qui entraîne une modification non autorisée des données sensibles ou compromettre la sécurité du serveur. Est une technique courante de la personne malveillante [traversée de chemin d’accès](https://www.owasp.org/index.php/Path_Traversal) pour accéder aux fichiers en dehors du répertoire souhaité.
+Lorsque vous travaillez avec des entrées non approuvées à partir de requêtes Web, pensez à utiliser une entrée contrôlée par l’utilisateur lors de la spécification des chemins d’accès aux fichiers. Une personne malveillante peut être en mesure de lire un fichier involontaire, entraînant la divulgation d’informations de données sensibles. Ou bien, une personne malveillante peut être en mesure d’écrire dans un fichier involontaire, entraînant une modification non autorisée des données sensibles ou une compromission de la sécurité du serveur. Une technique d’attaque courante consiste à [Parcourir les chemins](https://www.owasp.org/index.php/Path_Traversal) d’accès pour accéder aux fichiers en dehors du répertoire prévu.
 
-Cette règle tente de trouver des informations issues de requêtes HTTP atteindre un chemin d’accès dans une opération de fichier.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui écrit dans un fichier, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir de requêtes HTTP qui atteignent un chemin d’accès dans une opération de fichier.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le passe à un autre assembly qui écrit dans un fichier, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-- Si possible, limitez les chemins de fichiers basées sur l’entrée d’utilisateur à une liste verte explicitement connue.  Par exemple, si votre application a besoin uniquement d’accéder à « red.txt », « green.txt » ou « blue.txt », autoriser uniquement ces valeurs.
-- Vérifiez les noms de fichiers non approuvés et valider que le nom est correct.
-- Utilisez des noms de chemin d’accès complet lors de la spécification de chemins d’accès.
-- Évitez les constructions potentiellement dangereuses telles que les variables d’environnement path.
-- Uniquement accepter les noms de fichiers longs et valider le nom long si l’utilisateur soumet des noms courts.
-- Limiter l’entrée d’utilisateur final pour les caractères valides.
-- Rejeter les noms de cas de dépassement de longueur MAX_PATH.
+- Si possible, limitez les chemins de fichiers en fonction de l’entrée utilisateur dans une liste approuvée explicitement.  Par exemple, si votre application doit uniquement accéder à « Red. txt », « Green. txt » ou « Blue. txt », autorisez uniquement ces valeurs.
+- Vérifiez les noms de fichiers non approuvés et vérifiez que le nom est bien formé.
+- Utilisez les noms de chemin d’accès complets lorsque vous spécifiez des chemins.
+- Évitez les constructions potentiellement dangereuses telles que les variables d’environnement PATH.
+- Accepter uniquement les noms de fichiers longs et valider le nom long si l’utilisateur envoie des noms courts.
+- Limitez l’entrée de l’utilisateur final aux caractères valides.
+- Rejette les noms dont la longueur MAX_PATH est dépassée.
 - Gérer les noms de fichiers littéralement, sans interprétation.
-- Déterminer si le nom de fichier représente un fichier ou un périphérique.
+- Déterminez si le nom de fichier représente un fichier ou un périphérique.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Si vous avez validé entrée comme décrit dans la section précédente, il est OK supprimer cet avertissement.
+Si vous avez validé l’entrée comme décrit dans la section précédente, il est possible de supprimer cet avertissement.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

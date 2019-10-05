@@ -13,43 +13,43 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951162"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254441"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Actions personnalisées dans les zones de formulaire Outlook
-  Actions affichent les boutons qui permettent aux utilisateurs de répondre à un élément de Microsoft Office Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur le **réponse**, **répondre à tous**, ou **transférer** boutons d’action. Chacune de ces actions crée un élément de messagerie et renseigne les champs de l’élément à l’aide des informations à partir de l’élément d’origine.
+  Les actions affichent des boutons qui permettent aux utilisateurs de répondre à une Microsoft Office élément Outlook. Par exemple, pour répondre à un élément de messagerie, les utilisateurs cliquent sur les boutons **répondre**, **répondre à tous**ou **transférer** l’action. Chacune de ces actions crée un nouvel élément de messagerie et remplit les champs de l’élément à l’aide des informations de l’élément d’origine.
 
- Vous pouvez créer une action personnalisée qui s’ouvre n’importe quel type d’élément Outlook. Par exemple, vous pouvez ajouter une action personnalisée qui ouvre un nouvel élément de rendez-vous ou une tâche. Définir les propriétés d’une action personnalisée ou utiliser un code personnalisé pour remplir les champs du nouvel élément. Actions personnalisées s’affichent dans le **Actions personnalisées** liste déroulante d’un élément qui est ouvert dans une fenêtre d’inspecteur Outlook.
+ Vous pouvez créer une action personnalisée qui ouvre n’importe quel type d’élément Outlook. Par exemple, vous pouvez ajouter une action personnalisée qui ouvre un nouveau rendez-vous ou élément de tâche. Définissez les propriétés d’une action personnalisée ou utilisez du code personnalisé pour remplir les champs du nouvel élément. Les actions personnalisées apparaissent dans la liste déroulante **actions personnalisées** d’un élément qui est ouvert dans une fenêtre d’inspecteur Outlook.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Ajouter des actions personnalisées à une zone de formulaire
- Pour ajouter une action personnalisée à une zone de formulaire, utilisez le **Actions personnalisées** boîte de dialogue. Vous pouvez ouvrir le **Actions personnalisées** boîte de dialogue en sélectionnant la zone de formulaire dans **l’Explorateur de solutions**, en développant le **manifeste** nœud dans le **propriétés Fenêtre**, en sélectionnant le **CustomActions** propriété, puis en cliquant sur le bouton de sélection (![ellipse concepteur mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Ellipse de concepteur")).
+ Pour ajouter une action personnalisée à une zone de formulaire, utilisez la boîte de dialogue **actions personnalisées** . Vous pouvez ouvrir la boîte de dialogue **actions personnalisées** en sélectionnant la zone de formulaire dans **Explorateur de solutions**, en développant le nœud **manifeste** dans la **fenêtre Propriétés**, en sélectionnant la propriété **CustomActions** , puis en cliquant sur l’option bouton de sélection (![ASP.net Mobile designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.net Mobile designer")).
 
- Vous pouvez utiliser la **Actions personnalisées** boîte de dialogue pour spécifier un *formulaire cible*. Un formulaire de la cible est le formulaire qui apparaît lorsque l’utilisateur exécute l’action personnalisée.
+ Vous pouvez utiliser la boîte de dialogue **actions personnalisées** pour spécifier un *formulaire cible*. Un formulaire cible est le formulaire qui apparaît lorsque l’utilisateur exécute l’action personnalisée.
 
- Vous pouvez également utiliser le **Actions personnalisées** boîte de dialogue pour spécifier comment les informations à partir de l’élément d’origine s’affiche sous la forme cible.
+ Vous pouvez également utiliser la boîte de dialogue **actions personnalisées** pour spécifier la manière dont vous souhaitez que les informations de l’élément d’origine s’affichent dans le formulaire cible.
 
- Le tableau suivant décrit les propriétés qui sont disponibles dans le **Actions personnalisées** boîte de dialogue.
+ Le tableau suivant décrit les propriétés qui sont disponibles dans la boîte de dialogue **actions personnalisées** .
 
-|Propriété|Description|
+|Property|Description|
 |--------------|-----------------|
-|**AddressLike**|Spécifie la façon dont le formulaire cible sera traité.|
+|**AddressLike**|Spécifie comment le formulaire cible sera adressé.|
 |**Corps**|Spécifie comment le corps de l’élément d’origine est ajouté au formulaire cible.|
-|**Activé**|Indique si l’action personnalisée est activée. Si cette propriété est définie sur **false**, l’action personnalisée est désactivée.|
-|**Méthode**|Spécifie le type de réponse disponible lors de l’exécution de l’action personnalisée. L’action personnalisée peut envoyer le formulaire, ouvrez le formulaire ou demander à l’utilisateur qu’ils souhaitent envoyer ou ouvrir le formulaire.|
+|**Activé**|Indique si l’action personnalisée est activée. Si cette propriété a la valeur **false**, l’action personnalisée est désactivée.|
+|**Méthode**|Spécifie le type de réponse disponible lors de l’exécution de l’action personnalisée. L’action personnalisée peut envoyer le formulaire, ouvrir le formulaire ou demander à l’utilisateur s’il souhaite envoyer ou ouvrir le formulaire.|
 |**Name**|Spécifie le nom interne que vous pouvez utiliser pour référencer cette action personnalisée dans le code.|
 |**ShowOnRibbon**|Indique s’il faut afficher l’action personnalisée sur le ruban de l’élément d’origine.|
-|**SubjectPrefix**|Spécifie le texte est inséré au début de la ligne objet du formulaire cible.|
-|**TargetForm**|Spécifie le nom de classe de message du formulaire cible. Par exemple, tapez **gestion intégrée. Tâche** pour ouvrir un formulaire de tâche.|
-|**Titre**|Spécifie l’étiquette du bouton d’action personnalisée.|
+|**SubjectPrefix**|Spécifie le texte inséré au début de la ligne d’objet du formulaire cible.|
+|**TargetForm**|Spécifie le nom de la classe de message du formulaire cible. Par exemple, tapez **IPM. Tâche** permettant d’ouvrir un formulaire de tâche.|
+|**Titre**|Spécifie l’étiquette du bouton d’action personnalisé.|
 
-## <a name="customize-a-custom-action-at-runtime"></a>Personnaliser une action personnalisée lors de l’exécution
- Vous pouvez également ajouter le comportement à l’action personnalisée à l’aide de code. Par exemple, vous pouvez ajouter le code qui prend les noms des destinataires du courrier électronique et ajoute ces noms en tant que participants dans un nouvel élément de rendez-vous. Pour ce faire, gérer la [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) événements de la [objet MailItem](/office/vba/api/Outlook.MailItem).
+## <a name="customize-a-custom-action-at-run-time"></a>Personnaliser une action personnalisée au moment de l’exécution
+ Vous pouvez également ajouter le comportement à l’action personnalisée à l’aide du code. Par exemple, vous pouvez ajouter du code qui prend les noms des destinataires du courrier électronique et ajoute ces noms en tant que participants dans un nouvel élément de rendez-vous. Pour ce faire, gérez l’événement [CustomAction](/office/vba/api/Outlook.MailItem.CustomAction) de l' [objet MailItem](/office/vba/api/Outlook.MailItem).
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)

@@ -4,7 +4,7 @@
 ### Acheter des abonnements
 #### [Retail](https://visualstudio.microsoft.com/vs/pricing) (Commerce)
 #### Cloud 
-##### [Vue d’ensemble](vscloud-overview.md)
+##### [Vue d'ensemble](vscloud-overview.md)
 ##### [FAQ sur la facturation](vscloud-billing-faq.md)
 ##### [Achat pour fournisseurs de services de chiffrement](vscloud-csp.md)
 #### [Visual Studio avec GitHub Enterprise](access-github.md)
@@ -31,20 +31,22 @@
 ##### [CAST Highlight](vs-cast.md)
 ##### [CloudPilot](vs-cloudpilot.md)
 ##### [Enterprise Mobility et Security](vs-ems.md)
+##### [Microsoft 365](vs-m365.md)
 ##### [Abonnement développeur à Office 365](vs-office-dev.md)
 ##### [Abonnement Office 365](vs-office365.md)
 ##### [Parasoft](vs-parasoft.md)
-##### [Power BI Pro](vs-pbi.md)
+##### [Power BI Pro](vs-pbi.md)
 ##### [RStudio](vs-rstudio.md)
 ##### [Visual Studio App Center](vs-visual-studio-app-center.md)
 ##### [IDE Visual Studio](vs-ide-benefit.md)
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Compte de développeur Windows](vs-windows-dev.md)
 #### Développement professionnel
+##### [Magazine CODE](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Abonnement au magazine MSDN](vs-msdn.md)
-##### [Pluralsight](vs-pluralsight.md)
+##### [pluralsight](vs-pluralsight.md)
 #### Support 
 ##### [Communauté Azure](vs-azure-community.md)
 ##### [Support concierge](vs-concierge-chat.md)
@@ -73,7 +75,7 @@
 ### Utilisation du portail d’administration
 #### [Super administrateurs et administrateurs](admin-roles.md)
 #### [Définir les préférences de contrat](admin-prefs.md)
-#### [Vue d’ensemble](using-admin-portal.md)
+#### [Vue d'ensemble](using-admin-portal.md)
 #### [Tutoriel vidéo : Utiliser le portail d’administration](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Assigner des abonnements
 ##### [Ajouter des utilisateurs uniques](assign-license.md)

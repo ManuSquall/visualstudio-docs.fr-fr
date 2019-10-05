@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922263"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235163"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301 : Éviter les accélérateurs en double
 
@@ -27,7 +27,7 @@ ms.locfileid: "68922263"
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|Catégorie|Microsoft. Globalization|
+|Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -45,7 +45,7 @@ Pour corriger une violation de cette règle, définissez des clés d’accès un
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre une forme minimale qui contient deux contrôles qui ont des clés d’accès identiques. Les clés sont stockées dans un fichier de ressources, qui n’est pas affiché. Toutefois, leurs valeurs apparaissent dans les lignes en `checkBox.Text` sortie commentées. Le comportement des accélérateurs dupliqués peut être examiné en échangeant `checkBox.Text` les lignes avec les équivalents commentés. Toutefois, dans ce cas, l’exemple ne génère pas d’avertissement à partir de la règle.
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]

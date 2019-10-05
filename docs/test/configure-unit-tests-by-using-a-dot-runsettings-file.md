@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb338caa145ad8186b7a27fe94a7822e94c09a02
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: bdf67f78d1a4cc7e2d17336a7272b919fcc6fba9
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913292"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693027"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -38,11 +38,11 @@ Le fichier apparaît dans le menu Paramètres de test. Vous pouvez le sélection
 
 ::: moniker range=">=vs-2019"
 
-Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* et sélectionnez-le.
+Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez **Test** > **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* et sélectionnez-le.
 
-![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-Le fichier apparaît dans le menu Paramètres de l’Explorateur de tests. Vous pouvez le sélectionner ou le désélectionner. Quand il est sélectionné, le fichier de paramètres d’exécution s’applique quand vous sélectionnez **Analyser la couverture du code**.
+Le fichier apparaît dans le menu test, et vous pouvez le sélectionner ou le désélectionner. Quand il est sélectionné, le fichier de paramètres d’exécution s’applique quand vous sélectionnez **Analyser la couverture du code**.
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   ou Gestionnaire de configuration
+   ou
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -97,7 +97,7 @@ Pour personnaliser vos tests en utilisant un fichier *.runsettings*, effectuez l
 
 ::: moniker range=">=vs-2019"
 
-3. Pour sélectionner le fichier de paramètres d’exécution, sélectionnez la flèche du bouton **Paramètres** dans l’**Explorateur de tests**, puis choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* que vous avez créé, puis sélectionnez **OK**.
+3. Pour sélectionner le fichier de paramètres d’exécution, choisissez **Test** > **Sélectionner le fichier de paramètres**. Accédez au fichier *.runsettings* que vous avez créé, puis sélectionnez **OK**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -149,7 +149,7 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-
+            
           </CodeCoverage>
         </Configuration>
       </DataCollector>
@@ -157,15 +157,16 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
-          <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
+          <!-- Set "sendRecordedMediaForPassedTestCase" to "false" to add video attachments to failed tests only -->
+          <MediaRecorder sendRecordedMediaForPassedTestCase="true"  xmlns="">           
+            <ScreenCaptureVideo bitRate="512" frameRate="2" quality="20" />
+          </MediaRecorder>
         </Configuration>
       </DataCollector>
-
     </DataCollectors>
   </DataCollectionRunSettings>
 
-  <!-- Parameters used by tests at runtime -->
+  <!-- Parameters used by tests at run time -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
@@ -192,7 +193,7 @@ Le code XML suivant illustre le contenu d’un fichier *.runsettings* type. Chaq
 
 Les sections qui suivent détaillent les éléments d’un fichier *.runsettings*.
 
-### <a name="run-configuration"></a>Configuration de série de tests
+### <a name="run-configuration"></a>Configuration d’exécution
 
 ```xml
 <RunConfiguration>
@@ -256,7 +257,7 @@ Pour personnaliser un autre type d’adaptateur de données de diagnostic, utili
 </TestRunParameters>
 ```
 
-Les paramètres de série de tests fournissent un moyen de définir des variables et des valeurs qui sont disponibles pour les tests au moment de l’exécution. Accédez aux paramètres à l’aide de la propriété <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> :
+Les paramètres de série de tests offrent un moyen de définir des variables et des valeurs qui sont disponibles pour les tests au moment de l’exécution. Accédez aux paramètres à l’aide de la propriété <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> :
 
 ```csharp
 [TestMethod]
@@ -284,7 +285,7 @@ Pour utiliser les paramètres de série de tests, ajoutez un champ <xref:Microso
 
 Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les méthodes de test disposant de l’attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
 
-|Configuration|Default|Valeurs|
+|Configuration|Par défaut|Valeurs|
 |-|-|-|
 |**ForcedLegacyMode**|false|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Définissez cette valeur sur **true** pour utiliser l’adaptateur de test le plus ancien.<br /><br />Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br />Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
 |**IgnoreTestImpact**|false|La fonctionnalité d’impact de test classe par priorité les tests affectés par des modifications récentes, lorsqu’ils sont exécutés dans MSTest ou à partir de Microsoft Test Manager. Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](https://msdn.microsoft.com/library/dd286589).|

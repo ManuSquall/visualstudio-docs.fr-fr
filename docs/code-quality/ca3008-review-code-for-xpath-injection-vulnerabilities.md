@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841534"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237262"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008 : Passez en revue le code pour détecter les vulnérabilités de l’injection XPath
 
@@ -28,31 +28,31 @@ ms.locfileid: "65841534"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint une requête XPath.
+Une entrée de requête HTTP potentiellement non approuvée atteint une requête XPath.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de XPath. Construire des requêtes XPath à l’aide d’entrées non approuvées peut permettre à un attaquant à des fins malveillantes manipuler la requête pour retourner un résultat inattendu et éventuellement divulguer le contenu du fichier XML demandé.
+Lors de l’utilisation d’une entrée non fiable, tenez-vous à l’esprit des attaques par injection XPath. La construction de requêtes XPath à l’aide d’une entrée non approuvée peut permettre à une personne malveillante de manipuler la requête de manière malveillante pour retourner un résultat inattendu et éventuellement divulguer le contenu du fichier XML interrogé.
 
-Cette règle tente de trouver des informations issues de requêtes HTTP atteint une expression XPath.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui effectue une requête XPath, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir de requêtes HTTP qui atteignent une expression XPath.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le transmet à un autre assembly qui exécute une requête XPath, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Certaines approches pour résoudre les vulnérabilités d’injection XPath sont les suivantes :
+Voici quelques méthodes permettant de résoudre les vulnérabilités d’injection XPath :
 
-- Ne construire des requêtes XPath à partir de l’entrée d’utilisateur.
-- Vérifiez que l’entrée contient uniquement un ensemble sûr de caractères.
-- Séquence d’échappement des guillemets.
+- Ne construisez pas de requêtes XPath à partir d’entrées utilisateur.
+- Vérifiez que l’entrée contient uniquement un jeu de caractères sécurisé.
+- Guillemets d’échappement.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Si vous savez que vous avez validé l’entrée pour plus de sécurité, il est OK supprimer cet avertissement.
+Si vous savez que vous avez validé l’entrée comme étant sécurisée, il est possible de supprimer cet avertissement.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

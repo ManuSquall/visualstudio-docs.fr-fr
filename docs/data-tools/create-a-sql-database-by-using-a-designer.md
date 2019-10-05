@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159941"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273362"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 
@@ -68,6 +68,9 @@ Vous pouvez afficher la chaîne de connexion pour le fichier *SampleDatabase. md
 
 - Vous pouvez également sélectionner **Afficher** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez le Fenêtre Propriétés en développant le nœud **connexions de données** , en cliquant avec le bouton droit sur *SampleDatabase. mdf*, puis en sélectionnant **Propriétés**.
 
+  > [!TIP]
+  > Si vous ne pouvez pas développer le nœud Connexions de données, ou si la connexion SampleDatabase. mdf ne figure pas dans la liste, sélectionnez le bouton **se connecter à la base de données** dans la barre d’outils Explorateur de serveurs. Dans la boîte de dialogue **Ajouter une connexion** , assurez-vous que **Microsoft SQL Server fichier de base de données** est sélectionné sous **source de données**, puis recherchez et sélectionnez le fichier SampleDatabase. mdf. Terminez l’ajout de la connexion en sélectionnant **OK**.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Créer des tables et des clés à l’aide de Concepteur de tables
 
 Dans cette section, vous allez créer deux tables, une clé primaire dans chaque table, et quelques lignes d’exemples de données. Vous allez également créer une clé étrangère pour spécifier comment les enregistrements d’une table correspondent aux enregistrements de l’autre table.
@@ -75,6 +78,8 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 ### <a name="create-the-customers-table"></a>Créer la table Customers
 
 1. Dans **Explorateur de serveurs**, développez le nœud **connexions de données** , puis développez le nœud **SampleDatabase. mdf** .
+
+   Si vous ne pouvez pas développer le nœud Connexions de données, ou si la connexion SampleDatabase. mdf ne figure pas dans la liste, sélectionnez le bouton **se connecter à la base de données** dans la barre d’outils Explorateur de serveurs. Dans la boîte de dialogue **Ajouter une connexion** , assurez-vous que **Microsoft SQL Server fichier de base de données** est sélectionné sous **source de données**, puis recherchez et sélectionnez le fichier SampleDatabase. mdf. Terminez l’ajout de la connexion en sélectionnant **OK**.
 
 2. Cliquez avec le bouton droit sur **tables** , puis sélectionnez **Ajouter une nouvelle table**.
 

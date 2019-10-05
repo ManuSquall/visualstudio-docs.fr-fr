@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec40eb3317f541bec92f06d8921fc2f545606d1a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b0bbe31f0431b259f60c1fe68a8d9edeffc572d9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920085"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237910"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
 
@@ -30,14 +30,14 @@ ms.locfileid: "68920085"
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Catégorie|Microsoft.Usage|
-|Modification avec rupture|Avec rupture: si la méthode est visible à l’extérieur de l’assembly.<br /><br /> Sans rupture: si la méthode n’est pas visible à l’extérieur de l’assembly.|
+|Category|Microsoft.Usage|
+|Modification avec rupture|Avec rupture : si la méthode est visible à l’extérieur de l’assembly.<br /><br /> Sans rupture : si la méthode n’est pas visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
 Une méthode qui gère un événement de sérialisation n’a pas la signature, le type de retour ou la visibilité appropriée.
 
 ## <a name="rule-description"></a>Description de la règle
-Une méthode est désignée comme un gestionnaire d’événements de sérialisation en appliquant l’un des attributs d’événement de sérialisation suivants:
+Une méthode est désignée comme un gestionnaire d’événements de sérialisation en appliquant l’un des attributs d’événement de sérialisation suivants :
 
 - <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 

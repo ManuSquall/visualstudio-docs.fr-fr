@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a894f1e0fb9d5e9d55f46c442bc975de0bd900d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872072"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253804"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protection des documents dans les solutions au niveau du document
   Vous pouvez utiliser les fonctionnalités de protection de Microsoft Office Word et Microsoft Office Excel dans des projets au niveau du document. Ces fonctionnalités empêchent les utilisateurs non autorisés d’apporter des modifications aux parties protégées d’un document.
@@ -50,7 +50,7 @@ ms.locfileid: "68872072"
  La protection est activée pendant la génération. ainsi, si un code dans <xref:Microsoft.Office.Tools.Word.Document.Startup> l’événement de document peut provoquer des exceptions ou modifier le comportement de l’application, ce code peut être débogué correctement. Si vous activez la protection après l’ouverture du document, le code d’initialisation ne peut pas être débogué ou testé.
 
 ## <a name="setting-the-password"></a>Définition du mot de passe
- Visual Studio active automatiquement la protection, mais ne fournit pas de mot de passe par défaut. Si vous souhaitez que la protection de document ait un mot de passe, vous devez l’ajouter avant de déployer votre solution. L’ajout d’un mot de passe vous permet de permettre aux utilisateurs autorisés de supprimer la protection du document; sans mot de passe, la protection ne peut pas être facilement supprimée. Pour plus d’informations sur la définition d’un mot de passe, consultez l’aide dans l’application Office spécifique.
+ Visual Studio active automatiquement la protection, mais ne fournit pas de mot de passe par défaut. Si vous souhaitez que la protection de document ait un mot de passe, vous devez l’ajouter avant de déployer votre solution. L’ajout d’un mot de passe vous permet de permettre aux utilisateurs autorisés de supprimer la protection du document ; sans mot de passe, la protection ne peut pas être facilement supprimée. Pour plus d’informations sur la définition d’un mot de passe, consultez l’aide dans l’application Office spécifique.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Protéger des documents et des parties de documents par programmation](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)

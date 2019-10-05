@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3f5b76015a3a54ee085b5cc2dd532920ff0795
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 06772f8dd91c27834b329293d06cfbc2a7dcfcef
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920177"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230757"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232 : Marquez les points d'entrée Windows Forms avec STAThread
 
@@ -30,7 +30,7 @@ ms.locfileid: "68920177"
 |-|-|
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -49,7 +49,7 @@ Pour corriger une violation de cette règle, ajoutez l' <xref:System.STAThreadAt
 Il est possible de supprimer sans risque un avertissement de cette règle si vous développez pour le .NET Compact Framework, pour <xref:System.STAThreadAttribute> lequel l’attribut est inutile et n’est pas pris en charge.
 
 ## <a name="example"></a>Exemple
-Les exemples suivants illustrent l’utilisation correcte <xref:System.STAThreadAttribute>de:
+Les exemples suivants illustrent l’utilisation correcte <xref:System.STAThreadAttribute>de :
 
 [!code-csharp[FxCop.Usage.StaThread#1](../code-quality/codesnippet/CSharp/ca2232-mark-windows-forms-entry-points-with-stathread_1.cs)]
 [!code-vb[FxCop.Usage.StaThread#1](../code-quality/codesnippet/VisualBasic/ca2232-mark-windows-forms-entry-points-with-stathread_1.vb)]

@@ -14,18 +14,18 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079624"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254549"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Où est le regroupement par caractéristiques dans Visual Studio 2019 ?
-Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! [https://doi.org/10.13012/J8PN93H8](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
+Ce regroupement par caractéristiques a été déplacé et est devenu une colonne. Avec la hiérarchie multiniveau et personnalisable dans Visual Studio 2019 version 16.2, nous avons pensé que l’inclusion des caractéristiques sous forme de regroupement créait une complexité visuelle inutile. Nous sommes à l’écoute de votre feedback sur cette conception ! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
 Pour le moment, vous pouvez cliquer avec le bouton droit sur la colonne dans l’Explorateur de tests et sélectionner Colonnes. Cochez la colonne Caractéristique pour la faire apparaître dans l’Explorateur de tests. Vous pouvez désormais filtrer cette colonne en fonction des caractéristiques qui vous intéressent.
 
@@ -43,7 +43,7 @@ Générez votre projet pour exécuter la découverte basée sur les assemblys.
 ::: moniker range="vs-2017"
 Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
 ::: moniker-end
-La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des instructions `#ifdef`, etc., car ils sont définis au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
+La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés `#ifdef` , des caractéristiques personnalisées, des instructions, etc., car elles sont définies au moment de l’exécution. Une build est nécessaire pour trouver ces tests avec précision. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel trouve autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
 ## <a name="test-explorer--plus-symbol"></a>Symbole « + » (plus) de l’Explorateur de tests
 

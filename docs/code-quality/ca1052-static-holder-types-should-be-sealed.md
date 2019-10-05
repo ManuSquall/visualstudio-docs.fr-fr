@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235616"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052 : Les types de conteneurs statiques doivent être statiques ou NotInheritable
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547519"
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -59,7 +59,7 @@ Supprimez un avertissement de cette règle uniquement si le type est conçu pour
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier EditorConfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier EditorConfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
@@ -69,7 +69,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example-of-a-violation"></a>Exemple de violation
 
-L’exemple suivant montre un type qui viole la règle:
+L’exemple suivant montre un type qui viole la règle :
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -77,7 +77,7 @@ L’exemple suivant montre un type qui viole la règle:
 
 ## <a name="fix-with-the-static-modifier"></a>Corriger avec le modificateur static
 
-L’exemple suivant montre comment corriger une violation de cette règle en marquant le type avec le `static` modificateur dans: C#
+L’exemple suivant montre comment corriger une violation de cette règle en marquant le type avec le `static` modificateur dans : C#
 
 ```csharp
 public static class StaticMembers

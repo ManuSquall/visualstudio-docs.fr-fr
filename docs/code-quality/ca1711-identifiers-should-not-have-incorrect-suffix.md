@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234141"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547294"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -53,9 +53,9 @@ Le tableau suivant répertorie les suffixes réservés et les types de base et l
 |Autorisation|<xref:System.Security.IPermission?displayProperty=fullName>|
 |File d'attente|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
-|Stream|<xref:System.IO.Stream?displayProperty=fullName>|
+|Flux|<xref:System.IO.Stream?displayProperty=fullName>|
 
-En outre, les suffixes suivants ne doivent **pas** être utilisés:
+En outre, les suffixes suivants ne doivent **pas** être utilisés :
 
 - `Delegate`
 
@@ -77,7 +77,7 @@ Ne supprimez pas un avertissement de cette règle, sauf si le suffixe a une sign
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal

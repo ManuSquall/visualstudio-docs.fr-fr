@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9475ad208a229057700fa2965984fbdcb17abf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923106"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236179"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021 : Éviter les paramètres out
 
@@ -27,7 +27,7 @@ ms.locfileid: "68923106"
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -36,7 +36,7 @@ Une méthode publique ou protégée dans un type public a un `out` paramètre.
 ## <a name="rule-description"></a>Description de la règle
 Passer des types par référence ( `out` à `ref`l’aide de ou) requiert une expérience avec les pointeurs, en comprenant les différences entre les types valeur et les types référence, ainsi que la gestion des méthodes avec plusieurs valeurs de retour. En outre, la différence `out` entre `ref` les paramètres et n’est pas largement comprise.
 
-Quand un type référence est passé par référence, la méthode envisage d’utiliser le paramètre pour retourner une instance différente de l’objet. Le passage d’un type référence par référence est également appelé utilisation d’un pointeur double, d’un pointeur vers un pointeur ou d’une double indirection. En utilisant la Convention d’appel par défaut, qui passe «par valeur», un paramètre qui prend un type référence reçoit déjà un pointeur vers l’objet. Le pointeur, pas l’objet vers lequel il pointe, est passé par valeur. Le passage par valeur signifie que la méthode ne peut pas modifier le pointeur pour qu’il pointe vers une nouvelle instance du type référence. Toutefois, il peut modifier le contenu de l’objet vers lequel il pointe. Pour la plupart des applications, cela suffit et génère le comportement souhaité.
+Quand un type référence est passé par référence, la méthode envisage d’utiliser le paramètre pour retourner une instance différente de l’objet. Le passage d’un type référence par référence est également appelé utilisation d’un pointeur double, d’un pointeur vers un pointeur ou d’une double indirection. En utilisant la Convention d’appel par défaut, qui passe « par valeur », un paramètre qui prend un type référence reçoit déjà un pointeur vers l’objet. Le pointeur, pas l’objet vers lequel il pointe, est passé par valeur. Le passage par valeur signifie que la méthode ne peut pas modifier le pointeur pour qu’il pointe vers une nouvelle instance du type référence. Toutefois, il peut modifier le contenu de l’objet vers lequel il pointe. Pour la plupart des applications, cela suffit et génère le comportement souhaité.
 
 Si une méthode doit retourner une instance différente, utilisez la valeur de retour de la méthode pour y parvenir. Consultez la <xref:System.String?displayProperty=fullName> classe pour une variété de méthodes qui opèrent sur des chaînes et retournent une nouvelle instance d’une chaîne. Quand ce modèle est utilisé, l’appelant doit décider si l’objet d’origine est conservé.
 
@@ -50,7 +50,7 @@ Pour corriger une violation de cette règle qui est provoquée par un type réf�
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle. Toutefois, cette conception peut entraîner des problèmes d’utilisation.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 La bibliothèque suivante montre deux implémentations d’une classe qui génère des réponses aux commentaires d’un utilisateur. La première implémentation (`BadRefAndOut`) force l’utilisateur de la bibliothèque à gérer trois valeurs de retour. La deuxième implémentation (`RedesignedRefAndOut`) simplifie l’expérience utilisateur en retournant une instance d’une classe de`ReplyData`conteneur () qui gère les données en tant qu’unité unique.
 
 [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
@@ -65,7 +65,7 @@ L’exemple de bibliothèque suivant illustre la `ref` manière dont les paramè
 
 [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’application suivante appelle chaque méthode de la bibliothèque pour illustrer le comportement.
 
 [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]

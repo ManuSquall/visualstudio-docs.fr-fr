@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557414"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253770"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -38,10 +38,10 @@ Il est important de **protéger votre propriété intellectuelle** (IP).
 Le code de votre application contient des informations de conception et d’implémentation qui peuvent être considérées comme une propriété intellectuelle.
 Toutefois, les applications basées sur le .NET Framework [contiennent des métadonnées importantes et un code intermédiaire de haut niveau][assemblies], ce qui les rend vulnérables face à l’ingénierie inverse en utilisant simplement quelques outils automatisés gratuits.
 En perturbant et en bloquant toute tentative d’ingénierie inverse, vous pouvez empêcher la divulgation non autorisée de votre propriété intellectuelle et montrer ainsi que votre code contient des secrets industriels.
-Dotfuscator peut [masquer][obfuscation] vos assemblys .NET afin d’empêcher l’ingénierie inverse tout en conservant le comportement original de l’application.
+Dotfuscator peut [obfusquer][obfuscation] vos assemblys .NET afin d’empêcher l’ingénierie inverse tout en conservant le comportement original de l’application.
 
 Il est également important de **protéger l’intégrité de votre application**.
-Outre l’ingénierie inverse, des personnes mal intentionnées peuvent chercher à pirater votre application, modifier son comportement lors de l’exécution, ou manipuler des données.
+En plus de l’ingénierie inverse, des personnes mal intentionnées peuvent chercher à pirater votre application, modifier son comportement lors de l’exécution ou manipuler les données.
 Dotfuscator s’intègre à votre application pour vous permettre de [détecter et répondre à des utilisations non autorisées][checks], notamment la falsification, le débogage par des tiers et les appareils rootés.
 
 Pour plus d’informations sur l’intégration de Dotfuscator dans un cycle de vie de développement de logiciels sécurisé, consultez la [page SDL App Protection][sdl-protection] de PreEmptive Solutions.
@@ -54,17 +54,17 @@ Votre copie de Microsoft Visual Studio inclut une copie de ***PreEmptive Protect
 Dotfuscator Community propose toute une gamme de services de [protection et de durcissement][software-protection] destinés aux développeurs, architectes et testeurs.
 Voici des exemples d’[obfuscation .NET][obfuscation] et d’autres fonctionnalités de [protection d’application][app-protection] incluses dans Dotfuscator Community :
 
-* *[Changement du nom][renaming]* des identificateurs afin de compliquer l’ingénierie inverse des assemblys compilés.
-* *[Anti-effraction][tamper]* pour détecter l’exécution des applications falsifiées et de fermer les sessions falsifiées ou d’y répondre.
-* *[Anti-débogage][debug]* pour détecter la connexion d’un débogueur à une application en cours d’exécution et de fermer les sessions déboguées ou d’y répondre.
-* *[Appareil anti-rooté] [ root]*  pour détecter si l’application s’exécute sur un appareil Android rooté et de fermer les sessions sur ces appareils ou d’y répondre.
-* *[Comportements d’expiration des applications][shelflife]* pour code la date de « fin de vie » et fermer les sessions d’application qui ont expiré.
+* *[Renommage][renaming]* des identificateurs afin de compliquer l’ingénierie inverse des assemblys compilés.
+* *[Anti-effraction][tamper]* pour détecter l’exécution des applications falsifiées et fermer ou répondre aux sessions falsifiées.
+* *[Anti-débogage][debug]* pour détecter l’attachement d’un débogueur à une application en cours d’exécution et fermer ou répondre aux sessions déboguées.
+* *[Appareil anti-rooté][root]* pour détecter si l’application s’exécute sur un appareil Android rooté et fermer ou répondre aux sessions sur ces appareils.
+* *[Comportements d’expiration des applications][shelflife]* qui codent la date de « fin de vie » et ferment les sessions d’application qui ont expiré.
 
-Pour plus d’informations sur ces fonctionnalités, y compris leur intégration dans votre stratégie de protection des applications, consultez la [page sur les fonctionnalités][capabilities].
+Pour plus d’informations sur ces fonctionnalités, notamment leur intégration dans votre stratégie de protection des applications, consultez la [page sur les fonctionnalités][capabilities].
 
 Dotfuscator Community offre une protection de base prête à l’emploi.
-D’autres mesures de protection d’application sont disponibles pour les utilisateurs inscrits de Dotfuscator Community et les utilisateurs de ***PreEmptive Protection - Dotfuscator Professional***, l’[obfuscateur .NET][net-obfuscator] leader dans le monde.
-Pour plus d’informations sur l’amélioration de Dotfuscator, reportez-vous à la [page des mises à niveau][upgrades].
+D’autres mesures de protection d’application sont disponibles pour les utilisateurs inscrits de Dotfuscator Community et les utilisateurs de ***PreEmptive Protection - Dotfuscator Professional***, l’[obfuscateur .NET][net-obfuscator] leader mondial.
+Pour plus d’informations sur l’amélioration de Dotfuscator, consultez la [page des mises à niveau][upgrades].
 
 ## <a name="getting-started"></a>Bien démarrer
 

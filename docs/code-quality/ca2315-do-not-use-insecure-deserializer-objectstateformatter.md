@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2315
 - DoNotUseInsecureDeserializerObjectStateFormatter
-ms.openlocfilehash: 793fa9df333eed7e485d7d8829849ae30d9c93a2
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 30e9d55fa5aa9c909c29935988f76107a4b5556d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135487"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237671"
 ---
 # <a name="ca2315-do-not-use-insecure-deserializer-objectstateformatter"></a>CA2315 : N’utilisez pas le désérialiseur non sécurisé ObjectStateFormatter
 
@@ -31,13 +31,13 @@ ms.locfileid: "65135487"
 
 ## <a name="cause"></a>Cause
 
-Un <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> méthode de désérialisation a été appelé ou référencé.
+Une <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> méthode de désérialisation a été appelée ou référencée.
 
 ## <a name="rule-description"></a>Description de la règle
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Cette règle recherche <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> la désérialisation des appels de méthode ou de références.
+Cette règle recherche <xref:System.Web.UI.ObjectStateFormatter?displayProperty=nameWithType> des appels ou des références de méthode de désérialisation.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

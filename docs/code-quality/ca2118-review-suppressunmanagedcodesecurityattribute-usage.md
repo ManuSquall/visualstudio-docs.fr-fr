@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50c82cd77969da5cbf302b6774f07da1a6a8b040
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b64551ec81de6a1eae7831af9f3382a2cd4c3b0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714004"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232632"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118 : Vérifier l'utilisation de SuppressUnmanagedCodeSecurityAttribute
 
@@ -32,31 +32,31 @@ ms.locfileid: "66714004"
 
 ## <a name="cause"></a>Cause
 
-Un type public ou protégé ou un membre a le <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribut.
+Un type ou un membre public ou protégé a <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> l’attribut.
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifie le comportement par défaut du système de sécurité pour les membres qui exécutent du code non managé à l’aide de COM interop ou plateforme de l’appel. En général, le système effectue une [données et modélisation](/dotnet/framework/data/index) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie chaque appelant dans la pile des appels pour l’autorisation. Lorsque l’attribut est présent, le système effectue une [demandes de liaison](/dotnet/framework/misc/link-demands) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé par JIT.
+<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifie le comportement par défaut du système de sécurité pour les membres qui exécutent du code non managé à l’aide d’COM Interop ou d’un appel de plateforme. En général, le système crée des [données et une modélisation](/dotnet/framework/data/index) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie si chaque appelant dans la pile des appels a l’autorisation. Lorsque l’attribut est présent, le système effectue une [demande de liaison](/dotnet/framework/misc/link-demands) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé juste-à-temps.
 
-Cet attribut est essentiellement utilisé pour accroître les performances ; toutefois, les gains de performance s’accompagnent de risques substantiels pour la sécurité. Si vous placez l’attribut sur des membres publics qui appellent des méthodes natives, les appelants de la pile des appels (autre que l’appelant immédiat) n’avez pas besoin d’autorisation de code non managé pour exécuter du code non managé. En fonction de gestion des entrées et actions du membre public, il peut autoriser des appelants non fiables pour accéder aux fonctionnalités normalement restreintes à du code fiable.
+Cet attribut est essentiellement utilisé pour accroître les performances ; toutefois, les gains de performance s’accompagnent de risques substantiels pour la sécurité. Si vous placez l’attribut sur des membres publics qui appellent des méthodes natives, les appelants dans la pile des appels (à l’exception de l’appelant immédiat) n’ont pas besoin de l’autorisation de code non managé pour exécuter du code non managé. En fonction des actions du membre public et de la gestion des entrées, il peut permettre aux appelants non fiables d’accéder aux fonctionnalités normalement limitées au code fiable.
 
-.NET s’appuie sur les vérifications de sécurité pour empêcher des appelants d’obtenir un accès direct à l’espace d’adressage du processus actuel. Étant donné que cet attribut contourne la sécurité normale, votre code constitue une menace sérieuse s’il peut être utilisé pour lire ou écrire dans la mémoire du processus. Notez que le risque n’est pas limité aux méthodes qui conçus pour fournir des accès pour traiter la mémoire ; Il est également présent dans tout scénario où un code malveillant peut obtenir un accès par tout moyen, par exemple, en fournissant l’entrée surprenante, incorrecte ou non valide.
+.NET s’appuie sur des vérifications de sécurité pour empêcher les appelants d’obtenir un accès direct à l’espace d’adressage du processus actuel. Étant donné que cet attribut ignore la sécurité normale, votre code pose une menace sérieuse s’il peut être utilisé pour lire ou écrire dans la mémoire du processus. Notez que le risque n’est pas limité aux méthodes qui fournissent intentionnellement un accès à la mémoire de processus ; Il est également présent dans tout scénario où du code malveillant peut atteindre un accès par n’importe quel moyen, par exemple en fournissant une entrée étonnante, mal formée ou non valide.
 
-La stratégie de sécurité par défaut n’accorde pas l’autorisation de code non managé à un assembly, sauf si elle s’exécute à partir de l’ordinateur local, soit un membre d’un des groupes suivants :
+La stratégie de sécurité par défaut n’accorde pas d’autorisation de code non managé à un assembly, sauf s’il s’exécute à partir de l’ordinateur local ou s’il est membre de l’un des groupes suivants :
 
-- Mon groupe de codes de Zone ordinateur
+- Groupe de codes de zone Poste de travail
 
-- Groupe de codes de nom fort Microsoft
+- Groupe de codes Microsoft Strong Name
 
-- Groupe de codes de nom fort ECMA
+- Groupe de codes du nom fort ECMA
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Examinez soigneusement votre code pour vous assurer que cet attribut est absolument nécessaire. Si vous n’êtes pas familiarisé avec la sécurité du code managé, ou que vous ne comprenez pas les implications de sécurité de l’utilisation de cet attribut, supprimez-le de votre code. Si l’attribut est requis, vous devez vous assurer que les appelants ne peuvent pas utiliser votre code à des fins malveillantes. Si votre code n’a pas l’autorisation d’exécution de code non managé, cet attribut n’a aucun effet et doit être supprimé.
+Examinez attentivement votre code pour vous assurer que cet attribut est absolument nécessaire. Si vous n’êtes pas familiarisé avec la sécurité du code managé, ou si vous ne comprenez pas les implications en matière de sécurité de l’utilisation de cet attribut, supprimez-le de votre code. Si l’attribut est requis, vous devez vous assurer que les appelants ne peuvent pas utiliser votre code de manière malveillante. Si votre code n’est pas autorisé à exécuter du code non managé, cet attribut n’a aucun effet et doit être supprimé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que votre code ne fournit pas les appelants accès aux opérations natives ou les ressources qui peuvent être utilisées dans une action destructrice.
+Pour supprimer sans risque un avertissement de cette règle, vous devez vous assurer que votre code ne permet pas aux appelants d’accéder aux opérations natives ou aux ressources qui peuvent être utilisées de manière destructrice.
 
 ## <a name="example-1"></a>Exemple 1
 
@@ -66,13 +66,13 @@ L’exemple suivant enfreint la règle.
 
 ## <a name="example-2"></a>Exemple 2
 
-Dans l’exemple suivant, le `DoWork` méthode fournit un chemin d’accès de code publiquement accessible à la méthode d’appel de plateforme `FormatHardDisk`.
+Dans l’exemple suivant, la `DoWork` méthode fournit un chemin de code accessible publiquement à la méthode `FormatHardDisk`d’appel de la plateforme.
 
 [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
 ## <a name="example-3"></a>Exemple 3
 
-Dans l’exemple suivant, la méthode publique `DoDangerousThing` entraîne une violation. Pour résoudre la violation, `DoDangerousThing` doit être rendu privé et l’accès à ce dernier doit se faire par une méthode publique sécurisée par une demande de sécurité, comme illustré par la `DoWork` (méthode).
+Dans l’exemple suivant, la méthode `DoDangerousThing` publique provoque une violation. Pour résoudre la violation, `DoDangerousThing` doit être rendu privé, et l’accès à celui-ci doit être effectué par le biais d’une méthode publique sécurisée par `DoWork` une demande de sécurité, comme illustré par la méthode.
 
 [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 

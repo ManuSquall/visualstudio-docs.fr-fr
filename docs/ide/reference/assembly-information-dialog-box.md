@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c36fbacfde97eb42b1feab3e9097a731437cce4e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 411a9b1150961307a2a8ed3cdfae9842fb56701c
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870763"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681619"
 ---
 # <a name="assembly-information-dialog-box"></a>Informations de l’assembly, boîte de dialogue
 
@@ -61,6 +61,9 @@ Spécifie la culture prise en charge par l'assembly. Correspond à <xref:System.
 
 **Make assembly COM-Visible**\
 Spécifie si les types dans l’assembly seront disponibles pour COM. Correspond à <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
+
+> [!NOTE]
+> Pour plus d’informations sur la définition de ces propriétés lors de la génération d’un package NuGet dans une bibliothèque de classes .NET Framework, consultez [configurer les propriétés du projet pour le package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -21,6 +21,8 @@
       href: tutorial-uwp.md
     - name: Créer une application WPF
       href: tutorial-wpf.md
+    - name: Créer une application Windows Forms
+      href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Tutoriel vidéo - Créer une application web ASP.NET Core
       items:
         - name: "1\_- Installer Visual Studio"

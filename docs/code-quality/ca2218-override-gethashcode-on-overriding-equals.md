@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920288"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231185"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218 : Remplacez GetHashCode au moment de remplacer Equals
 
@@ -27,14 +27,14 @@ ms.locfileid: "68920288"
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Un type public substitue <xref:System.Object.Equals%2A?displayProperty=fullName> mais ne remplace <xref:System.Object.GetHashCode%2A?displayProperty=fullName>pas.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Object.GetHashCode%2A>retourne une valeur, basée sur l’instance actuelle, qui convient aux algorithmes de hachage et aux structures de données telles qu’une table de hachage. Deux objets du même type et sont égaux doivent retourner le même code de hachage pour s’assurer que les instances des types suivants fonctionnent correctement:
+ <xref:System.Object.GetHashCode%2A>retourne une valeur, basée sur l’instance actuelle, qui convient aux algorithmes de hachage et aux structures de données telles qu’une table de hachage. Deux objets du même type et sont égaux doivent retourner le même code de hachage pour s’assurer que les instances des types suivants fonctionnent correctement :
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 

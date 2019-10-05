@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841472"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237415"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002 : Passez en revue le code pour détecter les vulnérabilités des scripts XSS
 
@@ -28,33 +28,33 @@ ms.locfileid: "65841472"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint une sortie HTML brute.
+Une entrée de requête HTTP potentiellement non approuvée atteint une sortie HTML brute.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées des requêtes web, n’oubliez pas d’attaques par (XSS) de scripts entre sites. Une attaque XSS injecte des entrées non approuvées dans HTML brut de la sortie, qui lui permet d’exécuter des scripts malveillants ou à des fins malveillantes modifier du contenu dans votre page web. Place d’une technique classique `<script>` éléments contenant du code malveillant d’entrée. Pour plus d’informations, consultez [XSS de OWASP](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
+Lorsque vous travaillez avec des entrées non approuvées à partir de requêtes Web, gardez à l’esprit les attaques de script entre sites (XSS). Une attaque XSS injecte une entrée non fiable dans une sortie HTML brute, ce qui permet à la personne malveillante d’exécuter des scripts malveillants ou de modifier du contenu de manière malveillante dans votre page Web. Une technique classique consiste à `<script>` placer des éléments avec du code malveillant en entrée. Pour plus d’informations, consultez [OWASP XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
 
-Cette règle tente de trouver l’entrée à partir des demandes HTTP atteindre une sortie HTML brute.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et transmet ensuite à un autre assembly qui génère le code HTML brut, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir de requêtes HTTP pour atteindre une sortie HTML brute.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le passe à un autre assembly qui génère du code HTML brut, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-- Au lieu de la sortie HTML brut, utilisez une méthode ou propriété ce premier au format HTML son entrée.
-- Données non fiables encoder en HTML avant de sortir le HTML brut.
+- Au lieu de sortir du code HTML brut, utilisez une méthode ou une propriété qui encode son entrée au format HTML.
+- Encodez les données non approuvées au format HTML avant de sortir le HTML brut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si :
-- Vous savez que l’entrée est validée par rapport à un ensemble sûr connu de caractères ne contenant ne pas de HTML.
-- Vous savez que les données sont encodées en HTML de manière non détectée par cette règle.
+Il est possible de supprimer sans risque un avertissement de cette règle dans les cas suivants :
+- Vous savez que l’entrée est validée par rapport à un ensemble connu de caractères ne contenant pas de code HTML.
+- Vous savez que les données sont encodées en HTML d’une manière non détectée par cette règle.
 
 > [!NOTE]
-> Cette règle peut signaler des faux positifs pour certaines méthodes ou propriétés que-encoder en HTML leur entrée.
+> Cette règle peut signaler des faux positifs pour certaines méthodes ou propriétés qui encodent leur entrée au format HTML.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

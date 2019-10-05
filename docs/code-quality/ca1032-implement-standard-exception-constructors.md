@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547662"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236046"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547662"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -36,7 +36,7 @@ Un type étend <xref:System.Exception?displayProperty=fullName> mais ne déclare
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les types d’exceptions doivent implémenter les trois constructeurs suivants:
+Les types d’exceptions doivent implémenter les trois constructeurs suivants :
 
 - public NewException ()
 
@@ -44,13 +44,13 @@ Les types d’exceptions doivent implémenter les trois constructeurs suivants:
 
 - public NewException (String, exception)
 
-En outre, si vous exécutez l’analyse FxCop héritée par opposition à [des analyseurs FxCop basés sur .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), l’absence d’un quatrième constructeur génère également une violation:
+En outre, si vous exécutez l’analyse FxCop héritée par opposition à [des analyseurs FxCop basés sur .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), l’absence d’un quatrième constructeur génère également une violation :
 
 - NewException protected ou Private (SerializationInfo, StreamingContext)
 
 Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui possède la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation.
 
-Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, [consultez CA2229: Implémentez des constructeurs](../code-quality/ca2229-implement-serialization-constructors.md)de sérialisation.
+Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, [consultez CA2229 : Implémentez des constructeurs](../code-quality/ca2229-implement-serialization-constructors.md)de sérialisation.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

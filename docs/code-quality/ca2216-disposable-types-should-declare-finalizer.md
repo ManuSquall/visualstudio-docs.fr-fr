@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541869"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231255"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216 : Les types pouvant être supprimés doivent déclarer un finaliseur
 
@@ -32,11 +32,11 @@ ms.locfileid: "62541869"
 
 ## <a name="cause"></a>Cause
 
-Un type qui implémente <xref:System.IDisposable?displayProperty=fullName>et comporte des champs qui laissent entendre l’utilisation des ressources non managées, n’implémente pas de finaliseur comme décrit par <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+Un type qui implémente <xref:System.IDisposable?displayProperty=fullName>et a des champs qui suggèrent l’utilisation de ressources non managées, n’implémente pas de finaliseur comme <xref:System.Object.Finalize%2A?displayProperty=fullName>décrit par.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une violation de cette règle est signalée si le type supprimable contient des champs des types suivants :
+Une violation de cette règle est signalée si le type jetable contient des champs des types suivants :
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,25 +46,25 @@ Une violation de cette règle est signalée si le type supprimable contient des 
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, implémentez un finaliseur qui appelle votre <xref:System.IDisposable.Dispose%2A> (méthode).
+Pour corriger une violation de cette règle, implémentez un finaliseur qui appelle <xref:System.IDisposable.Dispose%2A> votre méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si le type n’implémente pas <xref:System.IDisposable> en vue de libérer des ressources non managées.
+Il est possible de supprimer sans risque un avertissement de cette règle si le type n' <xref:System.IDisposable> implémente pas pour libérer des ressources non managées.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre un type qui enfreint cette règle.
+L’exemple suivant montre un type qui viole cette règle.
 
 [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA2115 : Appelez GC. KeepAlive lors de l’utilisation des ressources natives](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115 Appelez GC. KeepAlive quand vous utilisez des ressources natives](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816 : Appelez GC. SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816 Appelez GC. SuppressFinalize correctement](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049 : Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049 Les types qui possèdent des ressources natives doivent être supprimables](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,19 +1,19 @@
 ---
 title: Écrire des tests unitaires pour C/C++
 description: Écrivez des tests unitaires C++ dans Visual Studio avec différents frameworks de test, notamment CTest, Boost.Test et Google Test.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160171"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481914"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -86,6 +86,8 @@ Si le code de test n’exporte pas les fonctions que vous voulez tester, vous po
 Ensuite, dans votre fichier de test unitaire *.cpp*, ajoutez une directive `#include` pour les fichiers d’en-tête qui déclarent les types et les fonctions que vous voulez tester. Tapez `#include "` : IntelliSense s’active alors pour vous aider à choisir. Répétez cette opération pour les autres en-têtes.
 
 ![Ajouter des directives include](media/cpp-add-includes-test-project.png)
+
+Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruction include dans le fichier source, vous pouvez ajouter les dossiers requis dans les**Propriétés** **Project** >   > **CC++/**  > **General** > **Additional include Répertoires**.
 
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 

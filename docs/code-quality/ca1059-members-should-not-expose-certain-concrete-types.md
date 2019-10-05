@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235464"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
 
@@ -27,11 +27,11 @@ ms.locfileid: "68922512"
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un membre visible de l’extérieur est un certain type concret ou expose certains types concrets via l’un de ses paramètres ou sa valeur de retour. Actuellement, cette règle signale l’exposition des types concrets suivants:
+Un membre visible de l’extérieur est un certain type concret ou expose certains types concrets via l’un de ses paramètres ou sa valeur de retour. Actuellement, cette règle signale l’exposition des types concrets suivants :
 
 - Type dérivé de <xref:System.Xml.XmlNode?displayProperty=fullName>.
 

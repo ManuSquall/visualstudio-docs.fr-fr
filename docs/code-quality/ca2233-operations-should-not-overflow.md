@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99aae681dbe7bbeece557a15d78aed0b3f07f6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806600"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230829"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
 
@@ -35,11 +35,11 @@ ms.locfileid: "62806600"
 
 ## <a name="cause"></a>Cause
 
-Une méthode exécute une opération arithmétique et ne valide pas au préalable les opérandes pour empêcher un débordement.
+Une méthode effectue une opération arithmétique et ne valide pas les opérandes au préalable pour empêcher un dépassement de capacité.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Ne pas effectuer des opérations arithmétiques sans valider au préalable les opérandes pour vous assurer que le résultat de l’opération n’est pas en dehors de la plage de valeurs possibles pour les types de données impliqués. Selon le contexte d’exécution et les types de données impliquées, dépassement de capacité arithmétique peut engendrer un <xref:System.OverflowException?displayProperty=fullName> ou ignoré les bits les plus significatifs du résultat.
+N’effectuez pas d’opérations arithmétiques sans valider au préalable les opérandes pour vous assurer que le résultat de l’opération n’est pas en dehors de la plage de valeurs possibles pour les types de données impliqués. En fonction du contexte d’exécution et des types de données impliqués, le dépassement de capacité arithmétique peut <xref:System.OverflowException?displayProperty=fullName> entraîner la suppression de l’un ou des bits les plus significatifs du résultat.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -47,16 +47,16 @@ Pour corriger une violation de cette règle, validez les opérandes avant d’ef
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si les valeurs possibles des opérandes ne provoquent jamais de dépassement de capacité de l’opération arithmétique.
+Il est possible de supprimer sans risque un avertissement de cette règle si les valeurs possibles des opérandes ne provoquent jamais le dépassement de capacité de l’opération arithmétique.
 
 ## <a name="example-of-a-violation"></a>Exemple de violation
 
-Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nécessite le **supprimer** l’option de dépassement doit être désactivée pour cette option pour déclencher.
+Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]nécessite la désactivation de l’option **supprimer** le dépassement sur les entiers pour qu’elle soit déclenchée.
 
 [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
 [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-Si la méthode dans cet exemple est passée <xref:System.Int32.MinValue?displayProperty=fullName>, l’opération provoquait le dépassement de capacité négatif. Par conséquent, le bit le plus significatif du résultat sont ignorés. Le code suivant montre comment cela se produit.
+Si la méthode dans cet exemple est passée <xref:System.Int32.MinValue?displayProperty=fullName>, l’opération est dépassée. Le bit le plus significatif du résultat est alors ignoré. Le code suivant montre comment cela se produit.
 
 ```csharp
 public static void Main()
@@ -81,32 +81,32 @@ Sortie :
 2147483647
 ```
 
-## <a name="fix-with-input-parameter-validation"></a>Résoudre avec Validation de paramètre d’entrée
+## <a name="fix-with-input-parameter-validation"></a>Correction de la validation des paramètres d’entrée
 
-L’exemple suivant résout la violation précédente en validant la valeur d’entrée.
+L’exemple suivant résout la violation précédente en validant la valeur de l’entrée.
 
 [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
 [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
-## <a name="fix-with-a-checked-block"></a>Résoudre avec un bloc Checked
+## <a name="fix-with-a-checked-block"></a>Corriger avec un bloc Checked
 
-L’exemple suivant résout la violation précédente en encapsulant l’opération dans un bloc checked. Si l’opération provoque un dépassement de capacité, une <xref:System.OverflowException?displayProperty=fullName> sera levée.
+L’exemple suivant résout la violation précédente en encapsulant l’opération dans un bloc Checked. Si l’opération provoque un dépassement de capacité <xref:System.OverflowException?displayProperty=fullName> , une est levée.
 
-Blocs vérifiés ne sont pas pris en charge dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Les blocs vérifiés ne sont [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]pas pris en charge dans.
 
 [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activer Checked arithmétiques dépassement de capacité positifs et négatifs
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Activer le dépassement de capacité positif/négatif activé
 
-Si vous activez checked arithmétiques dépassement de capacité positifs et négatifs en c#, il est équivalent à chaque opération entière d’habillage dans un bloc checked.
+Si vous activez la case à cocher ou le dépassement C#de capacité positif, il est équivalent à l’encapsulation de chaque opération entière dans un bloc Checked.
 
-Pour activer checked arithmétiques dépassement de capacité positifs et négatifs en c# :
+Pour activer le dépassement de capacité positif/négatif activé C#dans :
 
-1. Dans **l’Explorateur de solutions**, cliquez sur votre projet et choisissez **propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre projet et choisissez **Propriétés**.
 
 2. Sélectionnez l’onglet **Build**, puis cliquez sur **Avancé**.
 
-3. Sélectionnez **vérifier les dépassements arithmétiques** et cliquez sur **OK**.
+3. Sélectionnez **vérifier les dépassements de capacité arithmétiques/négatifs** , puis cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

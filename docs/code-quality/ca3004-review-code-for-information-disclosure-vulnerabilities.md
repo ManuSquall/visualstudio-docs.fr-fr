@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841609"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237377"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004 : Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations
 
@@ -28,27 +28,27 @@ ms.locfileid: "65841609"
 
 ## <a name="cause"></a>Cause
 
-Message, trace de pile ou représentation sous forme de chaîne d’une exception atteint la sortie du web.
+Le message d’une exception, la trace de la pile ou la représentation sous forme de chaîne atteint la sortie Web.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Divulgation d’informations sur les exceptions donne les attaquants insight dans les profondeurs de votre application, ce qui peut aider des personnes malveillantes trouver d’autres vulnérabilités à exploiter.
+La divulgation d’informations sur les exceptions permet aux attaquants d’obtenir des informations sur les éléments internes de votre application, ce qui peut aider les attaquants à trouver d’autres vulnérabilités à exploiter.
 
-Cette règle tente de trouver un message d’exception, la trace de la pile ou la représentation sous forme de chaîne en cours de la sortie vers une réponse HTTP.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly intercepte une exception et transmet ensuite à un autre assembly qui génère l’exception, cette règle ne génère un avertissement.
+Cette règle tente de trouver un message d’exception, une trace de la pile ou une représentation sous forme de chaîne en sortie dans une réponse HTTP.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly intercepte une exception, puis la passe à un autre assembly qui génère l’exception, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Ne générer des informations d’exception aux réponses HTTP. Au lieu de cela, fournissez un message d’erreur générique. Consultez [page de gestion des erreurs de OWASP](https://www.owasp.org/index.php/Error_Handling) pour obtenir des instructions.
+Ne génère pas d’informations sur les exceptions aux réponses HTTP. À la place, fournissez un message d’erreur générique. Pour plus d’informations, consultez [la page de gestion des erreurs de OWASP](https://www.owasp.org/index.php/Error_Handling) .
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Si vous connaissez votre sortie web est dans les limites d’approbation de votre application et jamais à l’extérieur, il est exposé OK pour supprimer cet avertissement. Cela est rare. Prendre en considération limite d’approbation de votre application et de flux de données susceptible de changer au fil du temps.
+Si vous savez que votre sortie Web se trouve dans les limites d’approbation de votre application et qu’elle n’est jamais exposée en dehors de, il est possible de supprimer cet avertissement. C’est rare. Tenez compte du fait que la limite d’approbation et les flux de données de votre application peuvent changer au fil du temps.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

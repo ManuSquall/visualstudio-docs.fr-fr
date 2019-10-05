@@ -1,21 +1,21 @@
 ---
 title: Personnalisation de l’IDE
-description: Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cette rubrique explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
+description: Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore les différentes façons dont les Visual Studio pour Mac peuvent être adaptées à vos besoins.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691839"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213742"
 ---
 # <a name="customizing-the-ide"></a>Personnalisation de l’IDE
 
-Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en matière d’efficacité et d’esthétique. Cet article explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
+Les Visual Studio pour Mac peuvent être personnalisées, ce qui permet aux utilisateurs de développer des applications dans un environnement qui répond à leurs besoins en termes d’efficacité et d’esthétiques. Cet article explore les différentes façons dont Visual Studio pour Mac peut être adapté à vos besoins.
 
 ## <a name="dark-theme"></a>Thème foncé
 
@@ -58,17 +58,21 @@ Ces informations sont utilisées pour remplir les en-têtes de fichier standard,
 
 ![Options d’en-tête standard](media/customizing-the-ide-image8a.png)
 
-Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas rempli ces champs, Visual Studio pour Mac vous invite à le faire quand vous essayez d’utiliser la gestion des versions.
+Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées via la gestion de versions dans Visual Studio pour Mac. Si vous n’avez pas rempli ces champs, Visual Studio pour Mac vous invite à le faire lorsque vous essayez d’utiliser le contrôle de version.
 
 ## <a name="key-bindings"></a>Combinaisons de touches
 
-Les combinaisons de touches vous permettent d’adapter votre environnement de développement afin de vous déplacer plus efficacement dans Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
+Les combinaisons de touches, ou raccourcis clavier, vous permettent d’adapter votre environnement de développement afin de pouvoir vous déplacer plus efficacement tout au long de Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
 
 Vous pouvez définir les combinaisons de touches en accédant à **Visual Studio > Préférences > Environnement > Combinaisons de touches**, comme illustré dans l’image suivante :
 
 ![Définir des combinaisons de touches](media/customizing-the-ide-image10a.png)
 
 À partir d’ici, vous pouvez rechercher des combinaisons de touches, afficher les combinaisons en conflit, ajouter de nouvelles combinaisons et modifier les combinaisons existantes.
+
+Ces liaisons peuvent également être définies lors de la configuration initiale de Visual Studio pour Mac, par le biais de l’écran de **sélection du clavier** :
+
+![Définir des combinaisons de touches, première exécution](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Disposition de l'espace de travail
 
@@ -108,7 +112,7 @@ L’état des panneaux ouverts est représenté par une *disposition*. Vous pouv
 
 Il n’existe qu’une seule disposition active à un moment donné, et toute modification apportée à une disposition, comme ajouter ou repositionner un panneau, change seulement la disposition active. Quand vous fermez Visual Studio pour Mac, les modifications que vous avez apportées ne seront pas enregistrées.
 
-Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu **Affichage > Enregistrer la disposition active**. Ceci ajoute votre disposition actuelle au menu et vous permet de la sélectionner à tout moment :
+Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu **Affichage > Enregistrer la disposition active**. Cette commande ajoute la disposition actuelle au menu pour que vous puissiez la sélectionner à tout moment :
 
 ![Enregistrer la disposition active](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +120,7 @@ Toutefois, vous pouvez créer une disposition en utilisant l’élément de menu
 
 Visual Studio pour Mac vous permet d’ouvrir des éditeurs de texte côte à côte, ou d’avoir un éditeur dans une fenêtre flottante détachée.
 
-Le mode 2 colonnes peut être activé via l’élément de menu Afficher, en sélectionnant **Afficher > Colonnes de l’éditeur > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur sur un des bords de la zone de l’éditeur :
+Le mode à deux colonnes peut être activé via l’élément de menu Affichage en sélectionnant Afficher les colonnes de l' **éditeur de > > 2 colonnes**, ou en faisant glisser l’onglet d’un éditeur vers l’un des bords de la zone de l’éditeur :
 
 ![Mode deux colonnes côte à côte](media/customizing-the-ide-sbs.png)
 

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551212"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254940"
 ---
 # <a name="word-solutions"></a>solutions Word
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des personnalisations au niveau du document et des compléments VSTO pour Microsoft Office Word. Vous pouvez utiliser ces solutions pour automatiser Word, étendre des fonctionnalités Word et personnaliser l'interface utilisateur de Word. Pour plus d’informations sur les différences entre les personnalisations au niveau du document et les compléments VSTO, consultez [vue &#40;d'&#41;ensemble du développement des solutions Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -88,7 +88,7 @@ ms.locfileid: "69551212"
 |Tâche|Pour plus d'informations|
 |----------|--------------------------|
 |Personnaliser le ruban.|[Vue d’ensemble du ruban](../vsto/ribbon-overview.md)|
-|Ajouter des contrôles Windows Forms ou des contrôles Word étendus au document personnalisé (pour une personnalisation au niveau du document) ou à tout document ouvert (pour un complément VSTO).|[Guide pratique pour Ajouter des contrôles de Windows Forms aux documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Guide pratique : Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Guide pratique : Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
+|Ajouter des contrôles Windows Forms ou des contrôles Word étendus au document personnalisé (pour une personnalisation au niveau du document) ou à tout document ouvert (pour un complément VSTO).|[Guide pratique pour Ajouter des contrôles de Windows Forms aux documents Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Guide pratique pour Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Guide pratique pour Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
 
 ### <a name="options-for-document-level-customizations"></a>Options pour les personnalisations au niveau du document
  Le tableau suivant répertorie les options de personnalisation qui sont disponibles uniquement pour les personnalisations au niveau du document.

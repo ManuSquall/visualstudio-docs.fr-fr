@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797402"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253300"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
 
@@ -36,41 +36,41 @@ ms.locfileid: "62797402"
 
 ## <a name="cause"></a>Cause
 
-Une méthode a une complexité cyclomatique excessive.
+Une méthode a une complexité cyclomatic excessive.
 
 ## <a name="rule-description"></a>Description de la règle
 
-*Complexité cyclomatique* mesure le nombre de chemins linéairement indépendants dans la méthode, qui est déterminé par le nombre et la complexité des branches conditionnelles. Une complexité cyclomatique faible indique généralement une méthode facile à comprendre, à tester et à gérer. La complexité cyclomatique est calculée à partir d’un graphique de flux de contrôle de la méthode et est fournie comme suit :
+La *complexité cyclomatic* mesure le nombre de chemins d’accès linéairement indépendants via la méthode, qui est déterminée par le nombre et la complexité des branches conditionnelles. Une complexité cyclomatic faible indique généralement une méthode facile à comprendre, à tester et à entretenir. La complexité cyclomatic est calculée à partir d’un graphique de workflow de contrôle de la méthode et est donnée comme suit :
 
-complexité cyclomatique = nombre de bords - le nombre de nœuds + 1
+complexité cyclomatic = nombre de bords-nombre de nœuds + 1
 
-Un *nœud* représente un point de branchement logique et un *edge* représente une ligne entre les nœuds.
+Un *nœud* représente un point de branche logique et un *bord* représente une ligne entre les nœuds.
 
-La règle signale une violation lorsque la complexité cyclomatique est supérieure à 25.
+La règle signale une violation lorsque la complexité cyclomatic est supérieure à 25.
 
-Plus d’informations sur la métrique du code à [mesurer la complexité du code managé](../code-quality/code-metrics-values.md).
+Vous pouvez en savoir plus sur les métriques [du code à mesure que la complexité du code managé](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, refactorisez la méthode pour réduire sa complexité cyclomatique.
+Pour corriger une violation de cette règle, refactorisez la méthode pour réduire sa complexité cyclomatic.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si la complexité ne peut pas facilement être réduite et la méthode est facile à comprendre, à tester et à gérer. En particulier, une méthode qui contient un grand `switch` (`Select` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instruction est un candidat pour l’exclusion. Le risque de déstabiliser le code base dans le cycle de développement ou d’introduire un changement inattendu dans le comportement d’exécution dans le code précédemment expédié peut compenser les avantages de la facilité de maintenance de refactoriser le code.
+Il est possible de supprimer sans risque un avertissement de cette règle si la complexité ne peut pas être facilement réduite et que la méthode est facile à comprendre, à tester et à entretenir. En particulier, une méthode qui contient une instruction `switch` de`Select` grande [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]taille (in) est candidate pour l’exclusion. Le risque de déstabiliser la base de code en retard dans le cycle de développement ou d’introduire une modification inattendue du comportement au moment de l’exécution dans le code précédemment expédié peut avoir un avantage sur les avantages de la refactorisation du code en matière de facilité de gestion.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Mode de calcul de complexité cyclomatique
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Mode de calcul de la complexité cyclomatic
 
-La complexité cyclomatique est calculée en ajoutant 1 à ce qui suit :
+La complexité cyclomatic est calculée en ajoutant 1 à l’exemple suivant :
 
-- Nombre de branches (tel que `if`, `while`, et `do`)
+- Nombre de branches (telles que `if`, `while`et `do`)
 
-- Nombre de `case` instructions dans un `switch`
+- Nombre d' `case` instructions dans un`switch`
 
 ## <a name="example"></a>Exemple
 
-Les exemples suivants montrent des méthodes qui ont différentes complexité cyclomatique.
+Les exemples suivants illustrent des méthodes qui ont des complexités cyclomatic variables.
 
-**Complexité cyclomatique 1**
+**Complexité cyclomatic 1**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -78,7 +78,7 @@ Les exemples suivants montrent des méthodes qui ont différentes complexité cy
 
 ## <a name="example"></a>Exemple
 
-**Complexité cyclomatique de 2**
+**Complexité cyclomatic 2**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_2.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#2](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_2.vb)]
@@ -86,7 +86,7 @@ Les exemples suivants montrent des méthodes qui ont différentes complexité cy
 
 ## <a name="example"></a>Exemple
 
-**Complexité cyclomatique de 3**
+**Complexité cyclomatic 3**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_3.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#3](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_3.vb)]
@@ -94,7 +94,7 @@ Les exemples suivants montrent des méthodes qui ont différentes complexité cy
 
 ## <a name="example"></a>Exemple
 
-**Complexité cyclomatique de 8**
+**Complexité cyclomatic 8**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]
@@ -102,7 +102,7 @@ Les exemples suivants montrent des méthodes qui ont différentes complexité cy
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1501 : Éviter l’excès d’héritage](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501 Éviter un héritage excessif](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Voir aussi
 

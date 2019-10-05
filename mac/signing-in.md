@@ -3,14 +3,14 @@ title: Connexion à Visual Studio pour Mac
 description: Guide pratique pour se connecter à Visual Studio pour Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957377"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213658"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
 
@@ -29,17 +29,17 @@ Si vous décidez de ne pas vous connecter directement, vous pouvez utiliser une 
 > [!TIP]
 > Avant de vous connecter à Visual Studio pour Mac, vérifiez que vous êtes connecté à Internet. > Les abonnements peuvent être activés en ligne uniquement. Si vous n’êtes pas connecté, sélectionnez « Je le ferai plus tard » et connectez-vous via le menu quand vous serez connecté.
 
-Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
+Pour vous connecter à Visual Studio pour Mac lors du premier lancement, procédez comme suit :
 
 1. Cliquez sur le bouton **Se connecter avec Microsoft** de la fenêtre de connexion :
 
-    ![Boîte de dialogue Comptes dans Visual Studio pour Mac](media/signing-in-image12.png)
+    ![Boîte de dialogue Comptes dans Visual Studio pour Mac](media/ide-tour-2019-start-signin.png)
 
 2. Entrez vos informations d’identification Microsoft :
 
     ![Boîte de dialogue d’informations d’identification Microsoft](media/signing-in-image13.png)
 
-3. Une fois que vous êtes connecté, la fenêtre de démarrage de Visual Studio 2019 pour Mac s’affiche. À partir de là, vous pouvez ouvrir ou créer un projet :
+4. Une fois que vous êtes connecté, vous voyez une option permettant de sélectionner des raccourcis clavier. Sélectionnez l’option que vous souhaitez utiliser et **continuez**. Vous serez ensuite invité à utiliser la fenêtre de démarrage de Visual Studio 2019 pour Mac. À partir de là, vous pouvez ouvrir ou créer un projet :
 
     ![Connexion réussie](media/signing-in-image14.png)
 

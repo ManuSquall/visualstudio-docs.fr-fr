@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 827a8ee01575d6d263c8f8ee423de72cfe939e39
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920240"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231179"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221 : Les finaliseurs doivent être protégés
 
@@ -43,7 +43,7 @@ Pour corriger une violation de cette règle, modifiez le finaliseur pour qu’il
 Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
-Cette règle ne peut pas être violée dans un langage .NET de haut niveau; Cela peut être violé si vous écrivez du langage intermédiaire Microsoft.
+Cette règle ne peut pas être violée dans un langage .NET de haut niveau ; Cela peut être violé si vous écrivez du langage intermédiaire Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

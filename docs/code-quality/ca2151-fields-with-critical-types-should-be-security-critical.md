@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75425d35e51125b0cfe1f76c8c18d7f155a12c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46cb99f00bbbd9969899121f82ba591980b5b288
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796737"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231916"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151 : Les champs avec des types critiques doivent être des champs critiques de sécurité
 
@@ -26,7 +26,7 @@ ms.locfileid: "62796737"
 
 ## <a name="cause"></a>Cause
 
-Un champ transparent de sécurité ou un champ critique sécurisé est déclaré. Son type est spécifié comme critique de sécurité. Exemple :
+Un champ transparent de sécurité ou un champ critique sécurisé est déclaré. Son type est spécifié comme critique de sécurité. Par exemple :
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -48,7 +48,7 @@ Pour utiliser les types critiques de sécurité, le code qui référence le type
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, marquez le champ avec le <xref:System.Security.SecurityCriticalAttribute> d’attribut, ou rendez le type qui est référencé par le champ soit sécurité transparente ou sans échec critique.
+Pour corriger une violation de cette règle, marquez le champ avec <xref:System.Security.SecurityCriticalAttribute> l’attribut ou rendez le type référencé par le champ comme étant transparent de sécurité ou critique sécurisé.
 
 ```csharp
 // Fix 1: Make the referencing field security critical

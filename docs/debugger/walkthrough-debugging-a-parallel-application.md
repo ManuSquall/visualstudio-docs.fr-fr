@@ -1,6 +1,6 @@
 ---
 title: Déboguer une application parallèle | Microsoft Docs
-description: Débogage en utilisant les fenêtres tâches parallèles et piles parallèles dans Visual Studio
+description: Déboguer à l’aide des fenêtres tâches parallèles et piles parallèles dans Visual Studio
 ms.date: 03/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -22,16 +22,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efd3ffb81d8ef1ad69a24acc277b8f5fe10df436
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930742"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252516"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une Application parallèle dans Visual Studio (C#, Visual Basic, C++)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une application parallèle dans Visual Studio (C#, Visual Basic, C++)
 
-Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.
+Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement au moment de l’exécution du code qui utilise la [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.
 
  Cette procédure pas à pas aborde les tâches suivantes :
 
@@ -46,7 +46,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 - Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.
 
 ## <a name="prerequisites"></a>Prérequis
- Cette procédure pas à pas suppose que **uniquement mon Code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
+ Cette procédure pas à pas suppose que **uniquement mon code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
 
 ## <a name="c-sample"></a>Exemple C#
  Si vous utilisez l'exemple C#, cette procédure pas à pas suppose également que le code externe est masqué. Pour afficher ou masquer le code externe, cliquez avec le bouton droit sur l’en-tête de table **Nom** de la fenêtre **Pile des appels**, puis activez ou désactivez **Afficher le code externe**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
@@ -65,21 +65,21 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++** ), choisissez **modèles**, puis :
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c++** ), choisissez **modèles**, puis :
 
-    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet application Console (.NET Framework)** pour soit C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
-    - Pour C++, choisissez **créer un nouveau projet application Console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet d’application console (.NET Framework)** pour C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    - Pour C++, choisissez **créer un projet d’application console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
-    Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **créer**.
+    Ensuite, tapez un nom ou utilisez le nom par défaut, puis cliquez sur **créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la **nouveau projet** boîte de dialogue, sélectionnez les éléments suivants :
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
 
-    - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)** .
-    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)** .
-    - Pour un C++ application, sous **Visual C++** , choisissez **Windows Desktop**,, puis **Application de Console Windows**.
+    - Pour une C# application, sous **Visual C#** , choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
+    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
+    - Pour une C++ application, sous **Visual C++** , choisissez **Bureau Windows**,, puis **application console Windows**.
 
-    Ensuite, tapez un nom ou utilisez le nom par défaut et cliquez sur **OK**.
+    Ensuite, tapez un nom ou utilisez le nom par défaut, puis cliquez sur **OK**.
     ::: moniker-end
 
     Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
@@ -113,13 +113,13 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 1. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Piles parallèles**. Assurez-vous que l’option **Threads** est sélectionnée dans la zone située dans l’angle supérieur gauche.
 
-     À l’aide de la **piles parallèles** , vous pouvez afficher plusieurs piles d’appels en même temps dans une vue. L’illustration suivante montre le **piles parallèles** fenêtre ci-dessus le **pile des appels** fenêtre.
+     À l’aide de la fenêtre **Piles parallèles** , vous pouvez afficher plusieurs piles d’appels en même temps dans une seule vue. L’illustration suivante montre la fenêtre **Piles parallèles** au-dessus de la fenêtre **pile des appels** .
 
-     ![Vue dans la fenêtre Piles parallèles threads](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
+     ![Vue threads dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")
 
-     La pile des appels du thread principal s'affiche dans une zone et les piles des appels des quatre autres threads sont regroupées dans une autre zone. Quatre threads sont regroupés car leurs frames de pile partagent les mêmes contextes de méthode, ce qui signifie qu'ils se trouvent dans les mêmes méthodes : `A`, `B` et `C`. Pour afficher les ID de thread et les noms de threads qui partagent la même zone, placez le curseur sur la zone de l’en-tête (**4 Threads**). Le thread actuel est affiché en gras.
+     La pile des appels du thread principal s'affiche dans une zone et les piles des appels des quatre autres threads sont regroupées dans une autre zone. Quatre threads sont regroupés car leurs frames de pile partagent les mêmes contextes de méthode, ce qui signifie qu'ils se trouvent dans les mêmes méthodes : `A`, `B` et `C`. Pour afficher les ID de thread et les noms des threads qui partagent la même zone, pointez sur la zone avec l’en-tête (**4 threads**). Le thread actuel est affiché en gras.
 
-     ![Info-bulle qui affiche les ID et noms](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
+     ![Info-bulle qui affiche des ID et des noms de thread](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")
 
      La flèche jaune indique le frame de pile actif du thread actuel.
 
@@ -127,19 +127,19 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Une surbrillance bleue autour d'une zone indique que le thread actuel fait partie de cette zone. Le thread actuel est également indiqué par le frame de pile en gras dans l'info-bulle. Si vous double-cliquez sur le thread principal dans la fenêtre Threads, vous pouvez observer que la surbrillance bleue dans la fenêtre **Piles parallèles** se déplace en conséquence.
 
-     ![Mise en surbrillance du thread principal dans la fenêtre Piles parallèles](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
+     ![Thread principal en surbrillance dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_1c.png "PDB_Walkthrough_1C")
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Pour continuer l'exécution jusqu'au deuxième point d'arrêt
 
 1. Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. L'illustration suivante présente l'arborescence des threads au deuxième point d'arrêt.
 
-     ![Fenêtre Piles parallèles présentant de nombreuses branches](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
+     ![Fenêtre piles parallèles qui affiche de nombreuses branches](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
 
      Au premier point d'arrêt, les quatre threads sont tous allés de la méthode S.A à S.B et S.C. Ces informations sont toujours visibles dans la fenêtre **Piles parallèles**, mais les quatre threads ont depuis progressé plus loin. L'un d'entre eux a continué vers S.D, puis S.E. Un autre est allé vers S.F, S.G et S.H. Deux autres ont continué vers S.I et S.J et, de là, l'un d'eux est allé vers S.K et l'autre est parti vers du code externe non-utilisateur.
 
      Vous pouvez pointer sur l’en-tête de zone, par exemple **1 Thread** ou **2 Threads**, pour afficher les ID des threads. Vous pouvez pointer sur des frames de pile pour afficher les ID des threads et d'autres détails sur les frames. La surbrillance bleue indique le thread actuel et la flèche jaune indique le frame de pile actif du thread actuel.
 
-     L’icône de maillage (lignes d’interweaved) indiquent les frames de pile actifs des threads non actuels. Dans la fenêtre **Pile des appels**, double-cliquez sur S.B pour basculer des frames. La fenêtre **Piles parallèles** indique le frame de pile actuel du thread actuel à l’aide d’une icône de flèche incurvée verte.
+     L’icône des threads en tissu (lignes intertrames) indique les frames de pile actifs des threads non actuels. Dans la fenêtre **Pile des appels**, double-cliquez sur S.B pour basculer des frames. La fenêtre **Piles parallèles** indique le frame de pile actuel du thread actuel à l’aide d’une icône de flèche incurvée verte.
 
      Dans la fenêtre **Threads**, basculez entre les threads et remarquez que la vue de la fenêtre **Piles parallèles** est mise à jour.
 
@@ -149,7 +149,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Cliquez avec le bouton droit sur S.C et pointez sur **Basculer vers le frame**. L'une des commandes comporte une coche qui indique le frame de pile du thread actuel. Vous pouvez basculer vers ce frame du même thread (seule la flèche verte se déplace) ou vous pouvez basculer vers l'autre thread (la surbrillance bleue se déplace également). L'illustration suivante présente le sous-menu.
 
-     ![Menu piles avec 2 options sur C alors que J est actif](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")
+     ![Menu piles avec 2 options sur C alors que J est actuel](../debugger/media/pdb_walkthrough_3.png "PDB_Walkthrough_3")
 
      Quand un contexte de méthode est associé à un seul frame de pile, l’en-tête de zone indique **1 Thread** et vous pouvez basculer vers lui en double-cliquant. Si vous double-cliquez sur un contexte de méthode associé à plus d'1 frame, le menu apparaît automatiquement. Lorsque vous pointez sur les contextes de méthode, remarquez le triangle noir à droite. Le fait de cliquer sur ce triangle affiche également le menu contextuel.
 
@@ -157,9 +157,9 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Dans la barre d’outils, cliquez sur le bouton **Afficher uniquement les threads avec indicateur** situé à côté de la zone de liste.
 
-     ![Fenêtre piles et info-bulle parallèles](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")
+     ![Fenêtre et info-bulle des piles parallèles](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")
 
-     Désormais, seul le thread avec indicateur apparaît dans le **piles parallèles** fenêtre.
+     Désormais, seul le thread avec indicateur s’affiche dans la fenêtre **Piles parallèles** .
 
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Pour continuer l'exécution jusqu'au troisième point d'arrêt
 
@@ -167,11 +167,11 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Lorsque plusieurs threads se trouvent dans la même méthode mais que cette méthode ne figure pas au début de la pile des appels, la méthode s'affiche dans des zones différentes. Un exemple au point d'arrêt actuel est S.L, qui possède trois threads et apparaît dans trois zones. Double-cliquez sur S.L.
 
-     ![Chemin d’exécution dans la fenêtre Piles parallèles](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
+     ![Chemin d’exécution dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_3b.png "PDB_Walkthrough_3B")
 
-     Remarquez que S.L apparaît en gras dans les deux autres zones afin que vous puissiez voir où il s'affiche. Si vous souhaitez voir quels frames appeler dans S.L et quels frames sont appelés, cliquez sur le bouton **Basculer dans la vue Méthode** de la barre d’outils. L’illustration suivante montre la vue méthode de la **piles parallèles** fenêtre.
+     Remarquez que S.L apparaît en gras dans les deux autres zones afin que vous puissiez voir où il s'affiche. Si vous souhaitez voir quels frames appeler dans S.L et quels frames sont appelés, cliquez sur le bouton **Basculer dans la vue Méthode** de la barre d’outils. L’illustration suivante montre la vue méthode de la fenêtre **Piles parallèles** .
 
-     ![Dans la fenêtre Piles parallèles dans la vue méthode](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
+     ![Vue méthode dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")
 
      Remarquez comment le diagramme a pivoté sur la méthode sélectionnée et l'a positionnée dans sa propre zone au milieu de la vue. Les appelés et appelants s'affichent en haut et en bas. Cliquez à nouveau sur le bouton **Basculer dans la vue Méthode** pour quitter ce mode.
 
@@ -179,9 +179,9 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
     - **Affichage hexadécimal** bascule les nombres apparaissant dans les info-bulles entre affichage décimal et hexadécimal.
 
-    - **Paramètres des symboles** ouvrir les boîtes de dialogue respectives.
+    - Les **paramètres de symbole** ouvrent les boîtes de dialogue respectives.
 
-    - **Afficher les Threads dans la Source** Active ou désactive l’affichage des marqueurs de thread dans votre code source, qui affiche l’emplacement de threads dans votre code source.
+    - **Afficher les threads dans la source** active ou désactive l’affichage des marqueurs de thread dans votre code source, qui affiche l’emplacement des threads dans votre code source.
 
     - **Afficher le code externe** affiche tous les frames même s’ils ne figurent pas dans le code utilisateur. Essayez cet élément pour voir le diagramme se développer pour accueillir les frames supplémentaires (qui peuvent être grisés car vous n'avez pas de symboles pour eux).
 
@@ -197,11 +197,11 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Remarquez comment la vue défile automatiquement. Basculez des threads dans la fenêtre **Threads** ou basculez des frames de pile dans la fenêtre **Pile des appels**. Notez comment la vue défile toujours automatiquement vers le frame approprié. Désactivez l’option **Défilement automatique vers le frame de pile actif** et notez la différence.
 
-     La **Vue aérienne** est également utile avec les diagrammes de taille importante dans la fenêtre **Piles parallèles**. Par défaut, le **vue aérienne** se trouve sur. Mais vous pouvez l’activer en cliquant sur le bouton situé entre les barres de défilement sur le coin inférieur droit de la fenêtre, comme indiqué dans l’illustration suivante.
+     La **Vue aérienne** est également utile avec les diagrammes de taille importante dans la fenêtre **Piles parallèles**. Par défaut, la **vue oculaire de l’oiseau** est activée. Toutefois, vous pouvez le basculer en cliquant sur le bouton situé entre les barres de défilement dans le coin inférieur droit de la fenêtre, comme indiqué dans l’illustration suivante.
 
-     ![Aérienne&#45;vue dans la fenêtre Piles parallèles des yeux](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
+     ![Vue oeil&#45;de l’oiseau dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 
-     Dans la vue aérienne, vous pouvez déplacer le rectangle pour effectuer un panoramique rapide autour du diagramme.
+     Dans la vue d’ensemble de l’oiseau, vous pouvez déplacer le rectangle pour effectuer un panoramique rapide autour du diagramme.
 
      Une autre façon de déplacer le diagramme consiste à cliquer dans une zone vide de celui-ci et à le faire glisser où vous le souhaitez.
 
@@ -224,9 +224,9 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 4. Double-cliquez sur un thread dans la fenêtre **Threads** pour le rendre actuel. Les threads actuels comportent une flèche jaune. Lorsque vous modifiez le thread actuel, les autres fenêtres sont mises à jour. Nous allons maintenant examiner les tâches.
 
-5. Sur le **déboguer** menu, pointez sur **Windows**, puis cliquez sur **tâches**. L’illustration suivante montre le **tâches** fenêtre.
+5. Dans le menu **Déboguer** , pointez sur **fenêtres**, puis cliquez sur **tâches**. L’illustration suivante montre la fenêtre **tâches** .
 
-     ![Quatre en cours d’exécution de tâches dans la fenêtre tâches](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
+     ![Quatre tâches en cours d’exécution dans la fenêtre tâches](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 
      Pour chaque tâche en cours, vous pouvez lire l’ID, retourné par la propriété de même nom, l’ID et le nom du thread qui l’exécute, ainsi que son emplacement (le fait de pointer dessus affiche une info-bulle qui comporte l’ensemble de la pile des appels). Sous la colonne **Tâche**, vous pouvez également voir la méthode qui a été passée dans la tâche, en d’autres termes le point de départ.
 
@@ -240,25 +240,25 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 1. Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.
 
-     Auparavant, le **état** colonne indiquait toutes les tâches comme étant actif, mais maintenant deux tâches sont bloqués. Les tâches peuvent être bloquées pour de nombreuses raisons. Dans la colonne **État**, pointez sur une tâche en attente pour savoir pourquoi elle est bloquée. Par exemple, dans l'illustration suivante, la tâche 3 attend la tâche 4.
+     Auparavant, la colonne **État** indiquait toutes les tâches comme étant actives, mais maintenant deux des tâches sont bloquées. Les tâches peuvent être bloquées pour de nombreuses raisons. Dans la colonne **État**, pointez sur une tâche en attente pour savoir pourquoi elle est bloquée. Par exemple, dans l'illustration suivante, la tâche 3 attend la tâche 4.
 
      ![Deux tâches en attente dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Avec le bouton droit de la ligne d’en-tête et choisissez **colonnes** > **assignation de Thread** pour afficher la valeur d’assignation de thread pour la tâche 2).
+     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Cliquez avec le bouton droit sur la ligne d’en-tête et choisissez **colonnes** > **affectation de thread** pour afficher la valeur d’affectation de thread pour la tâche 2).
 
      ![Tâche en attente et info-bulle dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
-     Vous pouvez marquer une tâche en cliquant sur l’indicateur dans la première colonne de la **tâches** fenêtre.
+     Vous pouvez marquer une tâche en cliquant sur l’indicateur dans la première colonne de la fenêtre **tâches** .
 
      Vous pouvez utiliser un indicateur pour effectuer le suivi des tâches entre différents points d’arrêt d’une même session de débogage ou pour filtrer les tâches dont les piles d’appels sont affichées dans la fenêtre **Piles parallèles**.
 
      Quand vous avez utilisé la fenêtre **Piles parallèles** auparavant, vous avez affiché les threads d’application. Affichez à nouveau la fenêtre **Piles parallèles** mais, cette fois, visualisez les tâches d’application. Pour cela, sélectionnez **Tâches** dans la zone dans l’angle supérieur gauche. L’illustration suivante présente la vue Tâches.
 
-     ![Tâches d’affichage dans la fenêtre Piles parallèles](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
+     ![Vue tâches dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")
 
      Les threads qui n’exécutent actuellement pas de tâches n’apparaissent pas dans la vue Tâches de la fenêtre **Piles parallèles**. En outre, pour les threads qui exécutent des tâches, certains des frames de pile qui ne sont pas associés aux tâches sont filtrés à partir du haut et bas de la pile.
 
-     Afficher le **tâches** fenêtre à nouveau. Cliquez avec le bouton droit sur un en-tête de colonne pour afficher un menu contextuel pour cette colonne.
+     Affichez à nouveau la fenêtre **tâches** . Cliquez avec le bouton droit sur un en-tête de colonne pour afficher un menu contextuel pour cette colonne.
 
      Vous pouvez utiliser le menu contextuel pour ajouter ou supprimer des colonnes. Par exemple, la colonne AppDomain n'est pas sélectionnée. Elle ne s'affiche donc pas dans la liste. Cliquez sur **Parent**. La colonne **Parent** s’affiche sans valeur pour chacune des quatre tâches.
 
@@ -266,19 +266,19 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 1. Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.
 
-     Une nouvelle tâche, la tâche 5, est en cours d’exécution et la tâche 4 est maintenant en attente. Vous pouvez voir pourquoi en pointant sur la tâche en attente dans la fenêtre **État**. Dans le **Parent** colonne, notez que la tâche 4 est le parent de la tâche 5.
+     Une nouvelle tâche, la tâche 5, est en cours d’exécution et la tâche 4 est maintenant en attente. Vous pouvez voir pourquoi en pointant sur la tâche en attente dans la fenêtre **État**. Dans la colonne **parent** , Notez que la tâche 4 est le parent de la tâche 5.
 
-     Pour mieux visualiser la relation parent-enfant, avec le bouton droit de la ligne d’en-tête de colonne, puis cliquez sur **Vue Parent enfant**. L'illustration suivante doit apparaître.
+     Pour mieux visualiser la relation parent-enfant, cliquez avec le bouton droit sur la ligne d’en-tête de colonne, puis cliquez sur **vue parent enfant**. L'illustration suivante doit apparaître.
 
-     ![Parent&#45;vue enfant dans la fenêtre tâches](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
+     ![Vue&#45;parent enfant dans la fenêtre tâches](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")
 
-     Notez que la tâche 4 et la tâche 5 sont exécutent sur le même thread (afficher le **assignation de Thread** colonne si elle est masquée). Ces informations ne sont pas affichées dans le **Threads** fenêtre ; voir ici constitue un autre avantage de la **tâches** fenêtre. Pour confirmer ceci, affichez la fenêtre **Piles parallèles**. Veillez à bien voir **Tâches**. Localisez les tâches 4 et 5 en double-cliquant dessus dans le **tâches** fenêtre. La surbrillance bleue de la fenêtre **Piles parallèles** est alors mise à jour. Vous pouvez également localiser les tâches 4 et 5 en analysant les info-bulles de la fenêtre **Piles parallèles**.
+     Notez que la tâche 4 et la tâche 5 s’exécutent sur le même thread (Affichez la colonne d' **affectation de thread** si elle est masquée). Ces informations ne s’affichent pas dans la fenêtre **Threads** . le voir ici est un autre avantage de la fenêtre **tâches** . Pour confirmer ceci, affichez la fenêtre **Piles parallèles**. Veillez à bien voir **Tâches**. Localisez les tâches 4 et 5 en double-cliquant dessus dans la fenêtre **tâches** . La surbrillance bleue de la fenêtre **Piles parallèles** est alors mise à jour. Vous pouvez également localiser les tâches 4 et 5 en analysant les info-bulles de la fenêtre **Piles parallèles**.
 
-     ![Vue dans la fenêtre Piles parallèles de la tâche](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
+     ![Vue des tâches dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")
 
      Dans la fenêtre **Piles parallèles**, cliquez avec le bouton droit sur S.P, puis cliquez sur **Atteindre le thread**. La fenêtre passe à la vue Threads et le frame correspondant s'affiche. Vous pouvez voir les deux tâches sur le même thread.
 
-     ![Mise en surbrillance de thread dans la vue threads](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")
+     ![Thread en surbrillance dans la vue threads](../debugger/media/pdb_walkthrough_9b.png "PDB_Walkthrough_9B")
 
      Ceci est un autre avantage de la vue Tâches de la fenêtre **Piles parallèles** par rapport à la fenêtre **Threads**.
 
@@ -286,33 +286,33 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 1. Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. Cliquez sur l’en-tête de colonne **ID** pour trier par ID. L'illustration suivante doit apparaître.
 
-     ![Dans la fenêtre Piles parallèles, les États de quatre tâches](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
+     ![Quatre États de tâche dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 
      Étant donné que la tâche 5 est terminée, elle n’est plus affichée. Si ce n’est pas le cas sur votre ordinateur et que l’interblocage n’est pas indiqué, appuyez sur **F11**.
 
-     Tâches 3 et 4 sont attendent maintenant l’autre et sont bloquées. Il y a également 5 nouvelles tâches qui sont des enfants de la tâche 2 et qui sont maintenant planifiées. Les tâches planifiées sont des tâches qui ont été démarrées dans le code mais qui n'ont pas encore été exécutées. Par conséquent, leurs colonnes **Emplacement** et **Affectation de thread** sont vides.
+     La tâche 3 et la tâche 4 sont maintenant en attente les unes des autres et sont bloquées. Il y a également 5 nouvelles tâches qui sont des enfants de la tâche 2 et qui sont maintenant planifiées. Les tâches planifiées sont des tâches qui ont été démarrées dans le code mais qui n'ont pas encore été exécutées. Par conséquent, leurs colonnes **Emplacement** et **Affectation de thread** sont vides.
 
      Ouvrez à nouveau la fenêtre **Piles parallèles**. L'en-tête de chaque zone comporte une info-bulle qui affiche les ID et noms de thread. Basculez en vue Tâches dans la fenêtre **Piles parallèles**. Pointez sur un en-tête pour afficher l'ID et le nom de la tâche, ainsi que son état, comme indiqué dans l'illustration suivante.
 
-     ![Info-bulle de l’en-tête dans la fenêtre Piles parallèles](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
+     ![Info-bulle d’en-tête dans la fenêtre piles parallèles](../debugger/media/pdb_walkthrough_11.png "PDB_Walkthrough_11")
 
-     Vous pouvez regrouper les tâches par colonne. Dans le **tâches** fenêtre, avec le bouton droit le **état** en-tête de colonne, puis cliquez sur **Grouper par état**. L’illustration suivante montre le **tâches** fenêtre regroupés par état.
+     Vous pouvez regrouper les tâches par colonne. Dans la fenêtre **tâches** , cliquez avec le bouton droit sur l’en-tête de colonne **État** , puis cliquez sur **Grouper par État**. L’illustration suivante montre la fenêtre **tâches** regroupée par État.
 
-     ![Des tâches dans la fenêtre tâches regroupées](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
+     ![Tâches groupées dans la fenêtre tâches](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")
 
      Vous pouvez également regrouper les tâches en fonction d'une autre colonne. Cela vous permet de vous concentrer sur un sous-ensemble de tâches. Chaque groupe réductible comporte un certain nombre des éléments regroupés ensemble.
 
-     La dernière fonctionnalité de la **tâches** fenêtre à examiner est le menu contextuel qui s’affiche lorsque vous cliquez sur une tâche.
+     La dernière fonctionnalité de la fenêtre **tâches** à examiner est le menu contextuel qui s’affiche lorsque vous cliquez avec le bouton droit sur une tâche.
 
      Ce menu contextuel contient différentes commandes en fonction de l’état de la tâche. Ces commandes sont **Copier**, **Sélectionner tout**, **Affichage hexadécimal**, **Basculer vers la tâche**, **Verrouiller le thread affecté**, **Verrouiller tous les threads sauf celui-ci**, **Libérer le thread affecté** et **Marquer**.
 
-     Vous pouvez verrouiller le thread sous-jacent d'une ou plusieurs tâches, ainsi que verrouiller tous les threads sauf celui qui est assigné. Un thread verrouillé est représenté dans le **tâches** fenêtre tel qu’il est dans le **Threads** fenêtre, par un bleu *suspendre* icône.
+     Vous pouvez verrouiller le thread sous-jacent d'une ou plusieurs tâches, ainsi que verrouiller tous les threads sauf celui qui est assigné. Un thread figé est représenté dans la fenêtre **tâches** comme il le fait dans la fenêtre **Threads** , par une icône de *Pause* bleue.
 
 ## <a name="summary"></a>Récapitulatif
  Cette procédure pas à pas a présenté les fenêtres de débogage **Tâches parallèles** et **Piles parallèles**. Vous pouvez utiliser ces fenêtres sur de véritables projets qui utilisent du code multithread. Vous pouvez examiner le code parallèle rédigé en C++, C# ou Visual Basic.
 
 ## <a name="see-also"></a>Voir aussi
-- [Débogage d’Applications multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Débogage d’applications multithread](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)

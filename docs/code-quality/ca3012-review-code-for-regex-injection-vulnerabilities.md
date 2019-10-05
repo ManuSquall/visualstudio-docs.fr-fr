@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841035"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237176"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012 : Passez en revue le code pour détecter les vulnérabilités de l’injection regex
 
@@ -28,32 +28,32 @@ ms.locfileid: "65841035"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint une expression régulière.
+Une entrée de requête HTTP potentiellement non approuvée atteint une expression régulière.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de regex. Une personne malveillante permettent l’injection d’expression régulière à des fins malveillantes modifient une expression régulière, pour rendre l’expression régulière correspond à des résultats inattendus, ou pour apporter à l’expression régulière de consommer trop de ressources processeur résultant dans une attaque par déni de Service.
+Lorsque vous travaillez avec des entrées non fiables, soyez attentif aux attaques par injection de Regex. Une personne malveillante peut utiliser l’injection Regex pour modifier une expression régulière de manière malveillante, pour faire correspondre des résultats inattendus par l’expression régulière, ou pour faire en sorte que l’expression régulière consomme un processeur excessif, entraînant une attaque par déni de service.
 
-Cette règle tente de trouver des informations issues de requêtes HTTP atteint une expression régulière.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui crée une expression régulière, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir des requêtes HTTP qui atteignent une expression régulière.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le passe à un autre assembly qui crée une expression régulière, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Certaines solutions d’atténuation contre les injections d’expressions régulières sont les suivantes :
+Certaines atténuations par rapport aux injections regex sont les suivantes :
 
-- Utilisez toujours un [correspond à délai d’expiration](/dotnet/standard/base-types/best-practices#use-time-out-values) lors de l’utilisation d’expressions régulières.
-- Évitez d’utiliser des expressions régulières, selon l’entrée utilisateur.
-- Séquence d’échappement de caractères spéciaux à partir de l’entrée d’utilisateur en appelant <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> ou une autre méthode.
-- Autoriser les caractères uniquement non spéciale de l’entrée utilisateur.
+- Utilisez toujours un [délai d’expiration de correspondance](/dotnet/standard/base-types/best-practices#use-time-out-values) lors de l’utilisation d’expressions régulières.
+- Évitez d’utiliser des expressions régulières basées sur l’entrée d’utilisateur.
+- Échapper les caractères spéciaux de l’entrée d' <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> utilisateur en appelant ou une autre méthode.
+- Autorise uniquement les caractères non spéciaux de l’entrée d’utilisateur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Si vous savez que vous utilisez un [correspond à délai d’attente](/dotnet/standard/base-types/best-practices#use-time-out-values) et l’entrée d’utilisateur est libre de caractères spéciaux, il est OK supprimer cet avertissement.
+Si vous savez que vous utilisez un [délai d’expiration de correspondance](/dotnet/standard/base-types/best-practices#use-time-out-values) et que l’entrée utilisateur ne contient pas de caractères spéciaux, il est possible de supprimer cet avertissement.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 
