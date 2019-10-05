@@ -10,31 +10,31 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e306d19dcf10e929bfb6432e6b6eb585996657f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550849"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974934"
 ---
 # <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse du code managé dans Visual Studio
 
-Visual Studio peut effectuer une analyse du code managé de deux manières: avec l' [analyse héritée](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), également appelée analyse statique FxCop des assemblys managés, et avec les analyseurs de [code](../code-quality/roslyn-analyzers-overview.md)plus modernes basés sur le .NET Compiler Platform. Cette rubrique traite des analyses héritées. Pour en savoir plus sur l’analyse du code basé sur .NET Compiler Platform, consultez [vue d’ensemble des analyseurs basés sur des .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio peut effectuer une analyse du code managé de deux manières : avec l' [analyse héritée](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), également appelée analyse statique FxCop des assemblys managés, et avec les [analyseurs de code](../code-quality/roslyn-analyzers-overview.md)plus modernes basés sur le .NET Compiler Platform. Cette rubrique traite des analyses héritées. Pour en savoir plus sur l’analyse du code basé sur .NET Compiler Platform, consultez [vue d’ensemble des analyseurs basés sur des .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
 
 L’analyse du code managé analyse les assemblys managés et fournit des informations sur les assemblys, telles que les violations des règles de programmation et de conception énoncées dans les [instructions de conception .net](/dotnet/standard/design-guidelines/).
 
 L'outil d'analyse représente les contrôles effectués lors d'une analyse comme messages d'avertissement. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
 > [!NOTE]
-> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .net Core ou .NET standard dans le cadre de MSBuild, vous verrez une **erreur semblable à error: CA0055 : Impossible d’identifier la plateforme \<pour votre >** . dll. Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des analyseurs de [code](../code-quality/roslyn-analyzers-overview.md) .
+> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de MSBuild, vous verrez une erreur semblable à **error : CA0055 : Impossible d’identifier la plateforme pour @no__t -0your. dll >** . Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des [analyseurs de code](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Intégration de l’IDE (environnement de développement intégré)
 
 Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou automatiquement.
 
-Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez **activer l’analyse du code sur la build** dans la page de propriétés du projet. Pour plus d’informations, consultez [Guide pratique pour Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez l’option sur la page de propriétés **analyse du code** du projet. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter** > l’analyse du code**exécuter l’analyse du code \<sur le projet >** .
+Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter l’analyse du code** >  exécuter l'**analyse du code sur @no__t > 5project**.
 
 ## <a name="rule-sets"></a>Ensembles de règles
 
@@ -56,8 +56,21 @@ Public class MyClass
 
 Pour plus d’informations, consultez [supprimer des avertissements](../code-quality/in-source-suppression-overview.md).
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017 ou Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements et que vous souhaitez devenir productif immédiatement, vous pouvez établir une *ligne de base* de l’état d’analyse de votre projet. Dans le menu **analyser** , sélectionnez **exécuter l’analyse du code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs**.
+>
+> ![Exécuter l’analyse du code et supprimer les problèmes dans Visual Studio](media/suppress-active-issues.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser** > **générer et supprimer les problèmes actifs**.
+
+::: moniker-end
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Exécuter l’analyse du code dans le cadre de la stratégie d’archivage
 
@@ -67,7 +80,7 @@ En tant qu’organisation, vous pourriez demander à ce que tous les archivages 
 
 - L’analyse du code est exécutée dans le cadre de la build la plus récente.
 
-Vous pouvez l'effectuer en spécifiant des stratégies d'archivage. Pour plus d’informations, consultez amélioration de la [qualité du code avec des stratégies](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)d’archivage de projet.
+Vous pouvez l'effectuer en spécifiant des stratégies d'archivage. Pour plus d’informations, consultez amélioration de la [qualité du code avec des stratégies d’archivage de projet](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Intégration Team Build
 

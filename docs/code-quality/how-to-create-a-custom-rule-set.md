@@ -1,5 +1,5 @@
 ---
-title: Créer un ensemble de règles d’analyse code personnalisé
+title: Créer un ensemble de règles d’analyse du code personnalisé
 ms.date: 11/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,74 +11,94 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676565"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975098"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
-Vous pouvez créer une règle personnalisée définie pour répondre aux besoins de projet spécifiques pour l’analyse du code.
+Vous pouvez créer un ensemble de règles personnalisé pour répondre à des besoins spécifiques du projet pour l’analyse du code.
 
-## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Créer une règle personnalisée définie à partir d’un ensemble de règles existant
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Créer un ensemble de règles personnalisé à partir d’un ensemble de règles existant
 
-Pour créer une règle personnalisée, vous pouvez ouvrir un intégrés ensemble de règles dans le **Éditeur d’ensemble de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée&mdash;, par exemple, afficher un avertissement ou une erreur.
+Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée, par exemple @ no__t-0for, afficher un avertissement ou une erreur.
 
-1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis sélectionnez **propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
-2. Sur le **propriétés** pages, sélectionnez le **analyse du Code** onglet.
+2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
-3. Dans le **exécuter cet ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :
+::: moniker range="vs-2017"
+
+3. Dans la liste déroulante **exécuter cet ensemble de règles** , effectuez l’une des opérations suivantes :
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Dans la liste déroulante **règles actives** , effectuez l’une des opérations suivantes :
+
+::: moniker-end
 
    - Sélectionnez l’ensemble de règles que vous souhaitez personnaliser.
 
      \- ou -
 
-   - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
+   - Sélectionnez **\<Browse >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
 
-4. Sélectionnez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
+4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
 > [!NOTE]
-> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’est pas **analyse du Code** onglet de propriété. Suivez les étapes pour [copier une règle prédéfinie défini à votre projet et définissez-le comme l’ensemble de règles active](analyzer-rule-sets.md). Une fois que vous avez copié sur un ensemble de règles, vous pouvez [modifier dans l’éditeur d’ensemble de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **l’Explorateur de solutions**.
+> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme ensemble de règles actif](analyzer-rule-sets.md). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
 
 ## <a name="create-a-new-rule-set"></a>Créer un ensemble de règles
 
-Vous pouvez créer un nouveau fichier de jeu de règles à partir de la **nouveau fichier** boîte de dialogue :
+Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la boîte de dialogue **nouveau fichier** :
 
-1. Sélectionnez **fichier** > **New** > **fichier**, ou appuyez sur **Ctrl**+**N**.
+1. Sélectionnez **fichier** > **nouveau** **fichier** >  ou appuyez sur **CTRL**+**N**.
 
-2. Dans le **nouveau fichier** boîte de dialogue, sélectionnez le **général** catégorie sur la gauche, puis sélectionnez **ensemble de règles d’analyse de Code**.
+2. Dans la boîte de dialogue **nouveau fichier** , sélectionnez la catégorie **général** sur la gauche, puis sélectionnez **ensemble de règles d’analyse du code**.
 
 3. Sélectionnez **Ouvrir**.
 
-   La nouvelle *.ruleset* fichier s’ouvre dans l’éditeur d’ensemble de règles.
+   Le nouveau fichier *. RuleSet* s’ouvre dans l’éditeur d’ensembles de règles.
 
-## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Créer une règle personnalisée définie à partir de plusieurs ensembles de règles
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Créer un ensemble de règles personnalisé à partir de plusieurs ensembles de règles
 
 > [!NOTE]
-> La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas un **analyse du Code** onglet de propriété.
+> La procédure suivante ne s’applique pas aux projets .NET Core, qui n’ont pas d’onglet de propriété **analyse du code** .
 
-1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis sélectionnez **propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
-2. Sur le **propriétés** pages, sélectionnez le **analyse du Code** onglet.
+2. Dans les pages **Propriétés** , sélectionnez l’onglet **analyse du code** .
 
-3. Sélectionnez  **\<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.
+::: moniker range="vs-2017"
 
-4. Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles vous voulez inclure dans un ensemble de règles.
+3. Sélectionnez **\<Choose plusieurs ensembles de règles >** à partir de **exécuter cet ensemble de règles**.
 
-   ![Ajouter ou supprimer la boîte de dialogue de jeux de règles](media/add-remove-rule-sets.png)
+::: moniker-end
 
-5. Sélectionnez **enregistrer en tant que**, entrez un nom pour le *.ruleset* de fichiers, puis sélectionnez **enregistrer**.
+::: moniker range=">=vs-2019"
 
-   Nouvel ensemble de règles est sélectionné dans le **exécuter cet ensemble de règles** liste.
+3. Sélectionnez **\<Choose plusieurs ensembles de règles >** à partir des **règles actives**.
 
-6. Sélectionnez **ouvrir** pour ouvrir la nouvelle règle définie dans l’éditeur d’ensemble de règles.
+::: moniker-end
+
+4. Dans la boîte de dialogue **Ajouter ou supprimer des ensembles de règles** , sélectionnez les ensembles de règles que vous souhaitez inclure dans votre nouvel ensemble de règles.
+
+   ![Boîte de dialogue Ajouter ou supprimer des ensembles de règles](media/add-remove-rule-sets.png)
+
+5. Sélectionnez **Enregistrer sous**, entrez un nom pour le fichier *. RuleSet* , puis sélectionnez **Enregistrer**.
+
+   Le nouvel ensemble de règles est sélectionné dans la liste **exécuter cet ensemble de règles** .
+
+6. Sélectionnez **ouvrir** pour ouvrir le nouvel ensemble de règles dans l’éditeur d’ensembles de règles.
 
 ## <a name="rule-precedence"></a>Priorité des règles
 
-- Si la même règle est répertorié deux fois ou plus dans un jeu de règles par différents niveaux de gravité, le compilateur génère une erreur. Exemple :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -89,11 +109,11 @@ Vous pouvez créer un nouveau fichier de jeu de règles à partir de la **nouvea
    </RuleSet>
    ```
 
-- Si la même règle est répertorié deux fois ou plus dans un jeu de règles par le *même* gravité, vous pouvez voir l’avertissement suivant dans le **liste d’erreurs**:
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs**:
 
-   **CA0063 : Échec du chargement du fichier d’ensemble de règles '\[votre] .ruleset ' ou un de ses règles dépendants les fichiers d’ensembles. Le fichier n’est pas conforme au schéma du jeu de règle.**
+   @NO__T 0CA0063 : Échec du chargement du fichier d’ensemble de règles' \[your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles. **
 
-- Si l’ensemble de règles inclut un ensemble à l’aide de règles enfant un **Include** balise et les ensembles de règles enfants et parents ont tous deux la même règle de liste, mais avec différents niveaux de gravité, puis le niveau de gravité dans l’ensemble de règles parent est prioritaire. Exemple :
+- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
 
    ```xml
    <!-- Parent rule set -->
@@ -116,16 +136,16 @@ Vous pouvez créer un nouveau fichier de jeu de règles à partir de la **nouvea
 
 ## <a name="name-and-description"></a>Nom et description
 
-Pour modifier le nom complet d’un ensemble de règles est ouvert dans l’éditeur, ouvrez le **propriétés** en sélectionnant **vue** > **fenêtre Propriétés** sur la barre de menus. Entrez le nom d’affichage dans le **nom** boîte. Vous pouvez également entrer une description pour l’ensemble de règles.
+Pour modifier le nom complet d’un ensemble de règles qui est ouvert dans l’éditeur, ouvrez la fenêtre **Propriétés** en sélectionnant **affichage** > **fenêtre Propriétés** dans la barre de menus. Entrez le nom d’affichage dans la zone **nom** . Vous pouvez également entrer une description pour l’ensemble de règles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez une règle définie, l’étape suivante consiste à personnaliser les règles en ajoutant ou supprimant des règles ou en modifiant le niveau de gravité des violations de règle.
+Maintenant que vous disposez d’un ensemble de règles, l’étape suivante consiste à personnaliser les règles en ajoutant ou en supprimant des règles ou en modifiant la gravité des violations de règle.
 
 > [!div class="nextstepaction"]
-> [Modifier les règles dans l’éditeur d’ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
+> [Modifier les règles dans l’éditeur d’ensembles de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Guide pratique pour Configurer l’analyse du code pour un projet de code managé @ no__t-0
 - [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)

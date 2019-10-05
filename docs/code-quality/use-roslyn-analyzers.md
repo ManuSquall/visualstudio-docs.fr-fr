@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 3222509ccc5ec20cd1433d215ca3d69609af6bcb
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186003"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975020"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -101,15 +101,15 @@ La définition de la gravité d’une règle dans un fichier baEditorConfig est 
    ```
 
 > [!NOTE]
-> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe `dotnet_style_qualification_for_field = false:suggestion`différente, par exemple,. Toutefois, si vous définissez une gravité à l' `dotnet_diagnostic` aide de la syntaxe, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
+> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe différente, par exemple, `dotnet_style_qualification_for_field = false:suggestion`. Toutefois, si vous définissez une gravité à l’aide de la syntaxe `dotnet_diagnostic`, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
 
 #### <a name="automatically-configure-rule-severity"></a>Configurer automatiquement la gravité de la règle
 
 Visual Studio offre un moyen pratique de configurer le niveau de gravité d’une règle à partir du menu de l’ampoule [actions rapides](../ide/quick-actions.md) .
 
-1. Une fois qu’une violation se produit, placez le curseur sur le tilde de violation dans l’éditeur et ouvrez le menu ampoule. Ou placez votre curseur sur la ligne et appuyez sur **CTRL**+ **.** (point).
+1. Une fois qu’une violation se produit, placez le curseur sur le tilde de violation dans l’éditeur et ouvrez le menu ampoule. Ou placez votre curseur sur la ligne et appuyez sur **Ctrl**+ **.** (point).
 
-2. Dans le menu ampoule, sélectionnez **configurer ou supprimer les problèmes** > **configurer \<l’ID de règle > gravité**.
+2. Dans le menu ampoule, sélectionnez **configurer ou supprimer les problèmes** > **configurer l’ID \<rule > gravité**.
 
    ![Configurer la gravité de la règle à partir du menu ampoule dans Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Visual Studio offre un moyen pratique de configurer le niveau de gravité d’un
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Définir la gravité de la règle à partir d’Explorateur de solutions
 
-1. Dans **Explorateur de solutions**, développez **références** > **analyseurs** (ou**analyseurs** de **dépendances** > pour les projets .net Core).
+1. Dans **Explorateur de solutions**, développez **références** > **analyseurs** (ou **dépendances** > **analyseurs** pour les projets .net Core).
 
 1. Développez l’assembly qui contient la règle pour laquelle vous souhaitez définir la gravité.
 
@@ -138,9 +138,9 @@ Visual Studio offre un moyen pratique de configurer le niveau de gravité d’un
 
 ![Fichier d’ensemble de règles dans Explorateur de solutions](media/ruleset-in-solution-explorer.png)
 
-1. Ouvrez le fichier de l' [ensemble de règles](analyzer-rule-sets.md) actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud**analyseurs** de **références** > , ou en sélectionnant **ouvrir** sur page de propriétés de l' **analyse du code** du projet.
+1. Ouvrez le fichier de l' [ensemble de règles](analyzer-rule-sets.md) actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud **références** > **Analyzers** , ou en sélectionnant **ouvrir** dans lePage de propriétés de l’analyse du code pour le projet.
 
-   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme  *\<ProjectName >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
+   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme *\<projectname >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
 
    > [!NOTE]
    > Les projets .NET Core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles dans **Explorateur de solutions**, par exemple, **ouvrir l’ensemble de règles actif**. Pour spécifier un ensemble de règles non défini par défaut pour un projet .NET Core ou .NET Standard, [Ajoutez manuellement la propriété **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) au fichier projet. Vous pouvez toujours configurer les règles dans l’ensemble de règles dans l’interface utilisateur de l’éditeur d’ensembles de règles de Visual Studio.
@@ -161,11 +161,19 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
   Définissez la gravité sur `none`, par exemple, `dotnet_diagnostic.CA1822.severity = none`.
 
+- Dans le menu **analyser**
+
+  Sélectionnez **analyser** > **générer et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+
 ::: moniker-end
+
+::: moniker range="vs-2017"
 
 - Dans le menu **analyser**
 
   Sélectionnez **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+
+::: moniker-end
 
 - À partir de **Explorateur de solutions**
 
@@ -177,7 +185,7 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
 - À partir de l' **éditeur de code**
 
-  Placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**++**point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX** > **dans le fichier source/de suppression**.
+  Placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl**+**point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX** > **dans le fichier source/de suppression**.
 
   ![Supprimer les diagnostics du menu actions rapides](media/suppress-diagnostic-from-editor.png)
 
@@ -189,7 +197,7 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
     ![Aperçu de l’ajout d' #pragma avertissement dans le fichier de code](media/pragma-warning-preview.png)
 
-  - Si vous sélectionnez **dans le fichier de suppression**, la boîte de dialogue **aperçu des modifications** s’ouvre <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> et affiche un aperçu de l’attribut qui est ajouté au fichier de suppression globale.
+  - Si vous sélectionnez **dans le fichier de suppression**, la boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> qui est ajouté au fichier de suppression globale.
 
     ![Aperçu de l’ajout de l’attribut SuppressMessage au fichier de suppression](media/preview-changes-in-suppression-file.png)
 
