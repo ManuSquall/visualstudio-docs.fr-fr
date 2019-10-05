@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: e1d26886eecf09ff8195b7a38338fa62e7f1d0bf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322545"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974952"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l'interface utilisateur de votre application XAML en cours d'exécution et montrent les propriétés d'exécution de tout élément d'interface utilisateur que vous sélectionnez.
@@ -71,20 +71,22 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Générez le projet et commencez le débogage. (La configuration de build doit être Debug, et non pas Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).)
 
-Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Vous devez voir quelque chose de similaire à :
+Quand la fenêtre s’affiche, la barre d’outils dans l’application s’affiche dans votre application en cours d’exécution. 
 
-![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")
+![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
 
-À présent, ouvrez la fenêtre **Arborescence d’éléments visuels en direct** (**Déboguer > Fenêtres > Arborescence d’éléments visuels en direct** ou recherchez-la sur le côté gauche de l’IDE). Faites-la glisser hors de sa position d’ancrage afin de la positionner à côté de la fenêtre **Propriétés dynamiques**. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste. La fenêtre doit ressembler à ceci :
+Cliquez à présent sur le bouton **Ajouter un élément** plusieurs fois pour ajouter de nouveaux éléments à la liste.
 
-![ListBoxItem dans l’arborescence d’éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
+Ensuite, ouvrez la fenêtre arborescence d’éléments **visuels en direct** en cliquant sur le bouton très à gauche de la barre d’outils dans l’application (ou en accédant à **déboguer > arborescence d’éléments visuels en direct de Windows >** ). Une fois qu’il est ouvert, faites-le glisser en dehors de sa position d’ancrage pour que nous puissions examiner cette fenêtre et la fenêtre de **Propriétés en direct** côte à côte. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste. La fenêtre doit ressembler à ceci :
+
+![ListBoxItem dans l’arborescence d’éléments visuels en direct](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")
 
 Revenez à la fenêtre d'application et ajoutez quelques éléments. Vous devriez voir des éléments de zone de liste supplémentaires dans l’**arborescence d’éléments visuels en direct**.
 
-À présent, examinons les propriétés d’un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ de**couleur** d' **arrière-plan** > est **#FFFFFFE0**. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de**couleur** d' **arrière-plan** > est **#FFD3D3D3**.
+À présent, examinons les propriétés d’un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ de**couleur** d' **arrière-plan** >  est **#FFFFFFE0**. Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ de**couleur** d' **arrière-plan** >  est **#FFD3D3D3**.
 
 > [!NOTE]
-> Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via `Color = {BindingExpression}`une liaison, telle que. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource `Color = {StaticResource MyBrush}`, telle que.
+> Une bordure jaune autour d’une propriété dans l **'Explorateur de propriétés en direct** signifie que la valeur de propriété est définie via une liaison, par exemple `Color = {BindingExpression}`. Une bordure verte signifie que la valeur est définie à l’aide d’une ressource, par exemple `Color = {StaticResource MyBrush}`.
 
 La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. Par conséquent, l’**arborescence d’éléments visuels en direct** propose quelques méthodes vous permettant d’utiliser l’interface utilisateur de l’application pour rechercher plus facilement l’élément que vous souhaitez examiner.
 

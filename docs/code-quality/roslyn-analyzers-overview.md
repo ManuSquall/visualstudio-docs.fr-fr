@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d4a9bfca972f9c57688b19bd872b31ee5997f76
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: af237fbc3ce7bcf098cd47065ed18d1dfd7f20a2
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550768"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975012"
 ---
 # <a name="overview-of-net-compiler-platform-code-analyzers"></a>Vue d’ensemble des analyseurs de code .NET Compiler Platform
 
@@ -36,7 +36,7 @@ Au même titre que les violations des règles d’analyse héritées, les violat
 
 ![Tildes dans l’éditeur de code](media/diagnostics-severity-colors.png)
 
-Les analyseurs de code basés sur .NET Compiler Platform analysent le code au moment de la génération, comme l’analyse héritée si elle est activée, mais également à mesure que vous tapez. Si vous activez l’[analyse complète de la solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), les analyseurs de code fournissent également une analyse au moment de la conception des fichiers de code qui ne sont pas ouverts dans l’éditeur.
+Les analyseurs de code basés sur .NET Compiler Platform analysent le code au moment de la génération, comme l’analyse héritée si elle est activée, mais également à mesure que vous tapez. Si vous activez l’[analyse complète de la solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis), les analyseurs de code fournissent également une analyse au moment de la conception des fichiers de code qui ne sont pas ouverts dans l’éditeur.
 
 > [!TIP]
 > Les erreurs et les avertissements au moment de la génération provenant des analyseurs de code sont affichés uniquement si les analyseurs sont installés comme un package NuGet.
@@ -47,7 +47,7 @@ Non seulement les analyseurs de code basés sur .NET Compiler Platform signalent
 > Les options d’interface utilisateur suivantes s’appliquent uniquement à l’analyse héritée :
 >
 > - L’option de menu **Analyser** > **Exécuter l’analyse du code**.
-> - Les cases à cocher **Activer l’analyse du code lors de la phase de build** et **Supprimer les résultats du code généré** de l’onglet **Analyse du code** des pages de propriétés d’un projet.
+> - Les cases à cocher **exécuter sur la build** et **Supprimer les résultats des codes générés** dans l’onglet **analyse du code** des pages de propriétés d’un projet.
 
 Pour différencier les violations des analyseurs de code de celles de l’analyse héritée dans la fenêtre Liste d’erreurs, examinez la colonne **Outil**. Si la valeur Outil correspond à l’un des assemblys d’analyseur dans l’**Explorateur de solutions**, par exemple **Microsoft.CodeQuality.Analyzers**, la violation provient d’un analyseur de code. Sinon, elle provient de l’analyse héritée.
 
@@ -64,7 +64,7 @@ Pour différencier les violations des analyseurs de code de celles de l’analys
 
 Les analyseurs .NET Compiler Platform peuvent être installés par projet par le biais d’un package NuGet, ou à l’échelle de Visual Studio comme une extension Visual Studio. Il existe certaines différences de comportement fondamentales entre ces deux méthodes [d’installation d’analyseurs](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Étendue
+### <a name="scope"></a>`Scope`
 
 Si vous installez des analyseurs comme une extension Visual Studio, ils s’appliquent au niveau de la solution, à toutes les instances de Visual Studio. Si vous installez les analyseurs comme un package NuGet, qui est la méthode recommandée, ils s’appliquent uniquement au projet dans lequel le package NuGet a été installé. Dans les environnements d’équipe, les analyseurs installés comme des packages NuGet se trouvent dans la portée de *tous les développeurs* qui travaillent sur ce projet.
 
@@ -80,7 +80,7 @@ La capture d’écran suivante montre la sortie de la génération en ligne de c
 
 Vous ne pouvez pas définir la gravité des règles à partir des analyseurs qui ont été installés comme une extension Visual Studio. Pour configurer la [gravité des règles](../code-quality/use-roslyn-analyzers.md#rule-severity), installez les analyseurs comme un package NuGet.
 
-## <a name="categories"></a>Catégories
+## <a name="categories"></a>Categories
 
 Voici les différents types d’analyseurs qui aident à analyser votre code :
 

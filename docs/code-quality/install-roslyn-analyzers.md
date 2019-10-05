@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a09c44962b2737407a3ce7274ccb9c9664908dcf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551087"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974940"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installer .NET Compiler Platform analyseurs de code
 
@@ -26,20 +26,20 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 1. Recherchez le package de l’analyseur que vous souhaitez installer sur www.nuget.org.
 
-   Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres. Ou installez [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) pour rechercher les problèmes de style dans votre base de code.
+   Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#nuget-package) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres. Ou installez [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) pour rechercher les problèmes de style dans votre base de code.
 
 2. Installez le package dans Visual Studio, à l’aide de la [console du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou de l' [interface utilisateur du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous indique la commande à coller dans la **console du gestionnaire de package**. Il y a même un bouton pratique pour copier le texte dans le presse-papiers.
 
-   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous les**analyseurs**de **références** > .
+   Les assemblys de l’analyseur sont installés et s’affichent dans **Explorateur de solutions** sous **références** > **analyseurs**.
 
 ## <a name="to-install-vsix-analyzers"></a>Pour installer les analyseurs VSIX
 
 ::: moniker range="vs-2017"
 
-1. Dans Visual Studio, sélectionnez **Outils** > **extensions et mises à jour**.
+1. Dans Visual Studio, sélectionnez **outils** > **extensions et mises à jour**.
 
    La boîte de dialogue **Extensions et mises à jour** s’ouvre.
 
@@ -50,7 +50,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 ::: moniker range=">=vs-2019"
 
-1. Dans Visual Studio, sélectionnez **Extensions** > **gérer les extensions**.
+1. Dans Visual Studio, sélectionnez **extensions** > **gérer les extensions**.
 
    La boîte de dialogue **gérer les extensions** s’ouvre.
 
@@ -61,7 +61,7 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 2. Développez **en ligne** dans le volet gauche, puis sélectionnez **Visual Studio Marketplace**.
 
-3. Dans la zone de recherche, tapez le nom de l’extension de l’analyseur que vous souhaitez installer. Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres.
+3. Dans la zone de recherche, tapez le nom de l’extension de l’analyseur que vous souhaitez installer. Par exemple, vous souhaiterez peut-être [installer les analyseurs Microsoft FXCop](install-fxcop-analyzers.md#vsix) pour vérifier votre code en matière de problèmes de sécurité et de performances, entre autres.
 
 4. Sélectionnez **Télécharger**.
 
@@ -81,13 +81,13 @@ Visual Studio comprend un ensemble principal d’analyseurs de .NET Compiler Pla
 
 ::: moniker range="vs-2017"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Outils** > **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **outils** > **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Extensions** > **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **extensions** > **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 

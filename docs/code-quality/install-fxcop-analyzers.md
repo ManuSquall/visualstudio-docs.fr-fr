@@ -9,41 +9,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5cb0fa5985cbc923713330289d7f83ed1fd954e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: fec188ba61a7e4d3f27caad03f0a5d32b6758a32
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551107"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974975"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installer les analyseurs FxCop dans Visual Studio
 
-Microsoft a créé un ensemble d’analyseurs, appelé [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), qui contient les règles «FxCop» les plus importantes de l’analyse héritée. Ces analyseurs vérifient votre code pour la sécurité, les performances et les problèmes de conception, entre autres.
+Microsoft a créé un ensemble d’analyseurs, appelé [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), qui contient les règles « FxCop » les plus importantes de l’analyse héritée. Ces analyseurs vérifient votre code pour la sécurité, les performances et les problèmes de conception, entre autres.
 
-Vous pouvez installer ces analyseurs FxCop en tant que package NuGet ou extension VSIX dans Visual Studio. Pour en savoir plus sur les avantages et les inconvénients de [chacune d’elles, consultez package NuGet et Extension](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)VSIX.
+Vous pouvez installer ces analyseurs FxCop en tant que package NuGet ou extension VSIX dans Visual Studio. Pour en savoir plus sur les avantages et les inconvénients de chacun, consultez @no__t package-0NuGet et Extension VSIX @ no__t-0.
 
-## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>Pour installer les analyseurs FxCop en tant que package NuGet
+## <a name="nuget-package"></a>Package NuGet
 
-1. [Déterminez la version du package](#fxcopanalyzers-package-versions) de l’analyseur à installer, en fonction de votre version de Visual Studio.
+Vous pouvez installer le package NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) directement à partir de la page des propriétés de l’analyse du code du projet :
 
-2. Installez le package dans Visual Studio, à l’aide de la [console du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou de l' [interface utilisateur du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, sélectionnez **Propriétés**, puis sélectionnez l’onglet **analyse du code** .
 
-   > [!NOTE]
-   > La page nuget.org pour chaque package de l’analyseur vous indique la commande à coller dans la **console du gestionnaire de package**. Il y a même un bouton pratique pour copier le texte dans le presse-papiers.
-   >
-   > ![Page NuGet.org qui indique la commande de la console du gestionnaire de package](media/nuget-package-manager-command.png)
+   ![Installer le package des analyseurs FxCop à partir de la page Propriétés dans Visual Studio](media/install-fxcop-properties-page.png)
 
-   Les assemblys de l’analyseur sont installés et apparaissent dans **Explorateur de solutions** sous les**analyseurs**de **références** > .
+2. Cliquez sur **Installer**.
+
+   Visual Studio installe la dernière version du package Microsoft. CodeAnalyzers. FxCopAnalyzers. Les assemblys apparaissent dans **Explorateur de solutions** sous **références** > **analyseurs**.
 
    ![Nœud analyseurs dans Explorateur de solutions](media/solution-explorer-analyzers-node.png)
 
+### <a name="custom-installation"></a>Installation personnalisée
+
+Pour une installation personnalisée, par exemple pour spécifier une version différente du package, cliquez sur le bouton de sélection (...) sur la page des propriétés de l’analyse du code du projet. Ce bouton ouvre le gestionnaire de package NuGet avec « Microsoft. CodeAnalysis. FxCopAnalyzers » comme chaîne de recherche.
+
+![Installer le package des analyseurs FxCop personnalisés à partir de la page Propriétés dans Visual Studio](media/install-fxcop-properties-page-ellipsis.png)
+
+> [!TIP]
+> Déterminez [la version du package de l’analyseur](#fxcopanalyzers-package-versions) à installer, en fonction de votre version de Visual Studio. Vous pouvez également installer le package à partir de l' [interface utilisateur du gestionnaire de package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+
 ### <a name="fxcopanalyzers-package-versions"></a>Versions du package FxCopAnalyzers
 
-Utilisez les instructions suivantes pour déterminer la version du package des analyseurs FxCop à installer pour votre version de Visual Studio:
+Utilisez les instructions suivantes pour déterminer la version du package des analyseurs FxCop à installer pour votre version de Visual Studio :
 
 | Version de Visual Studio | Version du package de l’analyseur FxCop |
 | - | - |
-| Visual Studio 2019 (toutes les versions)<br />Visual Studio 2017 version 15,8 et versions ultérieures | [2.9.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3) |
+| Visual Studio 2019 (toutes les versions)<br />Visual Studio 2017 version 15,8 et versions ultérieures | [dernière](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 version 15,5 à 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 version 15,3 à 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 version 15,0 à 15,2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -51,13 +59,13 @@ Utilisez les instructions suivantes pour déterminer la version du package des a
 | Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
 | Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
-## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Pour installer les analyseurs FxCop en tant que VSIX
+## <a name="vsix"></a>VSIX
 
 ::: moniker range="vs-2017"
 
 Dans Visual Studio 2017 version 15,5 et versions ultérieures, vous pouvez installer l’extension [Microsoft Code analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) qui contient tous les analyseurs FxCop pour les projets managés.
 
-1. Dans Visual Studio, sélectionnez **Outils** > **extensions et mises à jour**.
+1. Dans Visual Studio, sélectionnez **outils** > **extensions et mises à jour**.
 
    La boîte de dialogue **Extensions et mises à jour** s’ouvre.
 
@@ -66,7 +74,7 @@ Dans Visual Studio 2017 version 15,5 et versions ultérieures, vous pouvez insta
 
 2. Développez **en ligne** dans le volet gauche, puis sélectionnez **Visual Studio Marketplace**.
 
-3. Dans la zone de recherche, tapez «analyse du code» et recherchez l’extension **Microsoft Code analysis 2017** .
+3. Dans la zone de recherche, tapez « analyse du code » et recherchez l’extension **Microsoft Code analysis 2017** .
 
    ![Extension Microsoft Code Analysis 2017](media/extensions-and-updates-code-analysis.png)
 
@@ -74,9 +82,9 @@ Dans Visual Studio 2017 version 15,5 et versions ultérieures, vous pouvez insta
 
 ::: moniker range=">=vs-2019"
 
-L’extension [Microsoft Code analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) contient tous les analyseurs FxCop pour les projets managés. Pour installer cette extension:
+L’extension [Microsoft Code analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) contient tous les analyseurs FxCop pour les projets managés. Pour installer cette extension :
 
-1. Dans Visual Studio, sélectionnez **Extensions** > **gérer les extensions**.
+1. Dans Visual Studio, sélectionnez **extensions** > **gérer les extensions**.
 
    La boîte de dialogue **gérer les extensions** s’ouvre.
 
@@ -85,7 +93,7 @@ L’extension [Microsoft Code analysis 2019](https://marketplace.visualstudio.co
 
 2. Développez **en ligne** dans le volet gauche, puis sélectionnez **Visual Studio Marketplace**.
 
-3. Dans la zone de recherche, tapez «analyse du code» et recherchez l’extension **Microsoft Code analysis 2019** .
+3. Dans la zone de recherche, tapez « analyse du code » et recherchez l’extension **Microsoft Code analysis 2019** .
 
    ![Extension Microsoft Code Analysis 2019](media/manage-extensions-code-analysis.png)
 
@@ -113,13 +121,13 @@ L’extension [Microsoft Code analysis 2019](https://marketplace.visualstudio.co
 
 ::: moniker range="vs-2017"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Outils** > **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **outils** > **extensions et mises à jour**. Dans la boîte de dialogue **extensions et mises à jour** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Si vous souhaitez vérifier si l’extension est installée, sélectionnez **Extensions** > **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
+Si vous souhaitez vérifier si l’extension est installée, sélectionnez **extensions** > **gérer les extensions**. Dans la boîte de dialogue **gérer les extensions** , sélectionnez la catégorie **installé** sur la gauche, puis recherchez l’extension par nom.
 
 ::: moniker-end
 

@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180251"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975159"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -58,7 +58,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 ::: moniker-end
 
-2. Dans le menu **Fichier** de la barre de menus, choisissez **Nouveau** > **Fichier**.
+2. Dans le menu **fichier** de la barre de menus, **choisissez nouveau**@no__t**fichier**-2 ou appuyez sur **CTRL**+**N**.
 
 3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#** , puis choisissez **Ouvrir**.
 
@@ -80,7 +80,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier. La méthode [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) est le point d’entrée pour les applications C#.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Pour voir quels extraits de code sont disponibles pour votre langage, choisissez **Edition** > **IntelliSense** > **Insérer un extrait de code**, puis choisissez le dossier de votre langage. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** > **IntelliSense** > **Insérer un extrait** ou en appuyant sur **ctrl**+**K**, **CTRL**+**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](../media/tutorial-code-snippet-list.png)
 

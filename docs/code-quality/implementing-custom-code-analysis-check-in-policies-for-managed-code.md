@@ -1,5 +1,5 @@
 ---
-title: Code personnalisé analysis stratégies d’archivage pour le code managé
+title: Stratégies d’archivage de l’analyse du code personnalisées pour le code managé
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260842"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975036"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémenter des stratégies d’archivage d’analyse du code personnalisées pour le code managé
 
@@ -110,10 +110,18 @@ Vous spécifiez une règle de stratégie d’archivage de projet est défini com
 
 4. Si nécessaire, cliquez sur les options appropriées dans le **Configuration** et **plateforme** répertorie.
 
-5. Pour exécuter l’analyse du code chaque fois que le projet de code est généré à l’aide de la configuration spécifiée, sélectionnez le **Enable Code Analysis sur la Build (définit la constante CODE_ANALYSIS)** case à cocher.
+::: moniker range="vs-2017"
 
-6. Pour ignorer le code dans les composants d’autres sociétés, sélectionnez le **supprimer les résultats du code généré** case à cocher.
+5. Pour exécuter l’analyse du code chaque fois que le projet de code est généré à l’aide de la configuration spécifiée, sélectionnez **activer l’analyse du code sur la build**.
 
-7. Dans le **exécuter cet ensemble de règles** , cliquez sur  **\<Parcourir... >** .
+::: moniker-end
 
-8. Spécifiez la version locale du fichier de jeu de règle de stratégie d’archivage.
+::: moniker range=">=vs-2019"
+
+5. Pour exécuter l’analyse du code chaque fois que le projet de code est généré à l’aide de la configuration spécifiée, sélectionnez **exécuter lors de la génération** dans la section **analyseurs binaires** .
+
+::: moniker-end
+
+6. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse >** .
+
+8. Sélectionnez la version locale du fichier d’ensemble de règles de stratégie d’archivage.
