@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798712"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211372"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -90,7 +90,7 @@ Les avertissements nouveaux ou mis à jour apparaissent sous l’onglet **Liste 
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Utiliser les actions rapides pour corriger ou refactoriser du code
 
-Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+**.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
+Les [actions rapides](../ide/quick-actions.md), disponibles à partir de l’icône d’ampoule ou de tournevis, permettent de refactoriser le code inline. Elles vous permettent de résoudre facilement et rapidement des avertissements courants dans du code C#, C++ et Visual Basic. Pour y accéder, cliquez avec le bouton droit sur le trait de soulignement ondulé d’un avertissement et sélectionnez **Actions rapides et refactorisations**. Ou bien, quand votre curseur est sur la ligne marquée d’une ligne ondulée en couleur, appuyez sur **Ctrl**+ **.** ou sélectionnez l’icône d’ampoule, d’ampoule d’erreur ou de tournevis dans la marge. Vous voyez alors une liste des corrections ou des refactorisations possibles que vous pouvez appliquer à cette ligne de code.
 
 ![Aperçu d’une ampoule dans Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -98,7 +98,19 @@ Vous pouvez utiliser des actions rapides là où les analyseurs de code détermi
 
 ![Texte « Aucune action rapide disponible »](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Avec plus d’expérience, vous pouvez aller plus vite et utiliser les touches de direction et **Ctrl**+**.** pour vérifier les opportunités de refactorisation simples et nettoyer votre code.
+Avec plus d’expérience, vous pouvez aller plus vite et utiliser les touches de direction et **Ctrl**+ **.** pour vérifier les opportunités de refactorisation simples et nettoyer votre code.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Exécuter le nettoyage du code
+
+Visual Studio fournit [une mise en forme à la demande C# de votre fichier de code](code-styles-and-code-cleanup.md#apply-code-styles), y compris des préférences de style de code, via le bouton **nettoyage de code** en bas de l’éditeur.
+
+![Bouton de nettoyage du code dans Visual Studio 2019](media/execute-code-cleanup.png)
+
+Outre la mise en forme de votre fichier pour les espaces, les retraits et les etc, le **nettoyage du code** applique également un ensemble de conventions de style de code que vous définissez. Vos préférences pour chaque style de code sont lues à partir du [fichier EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), si vous en avez un pour le projet, ou à partir des [paramètres de style de code](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) dans la boîte de dialogue **Options**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Déboguer votre code en cours d’exécution
 
@@ -106,7 +118,7 @@ Maintenant que vous avez généré votre code et procédé à quelques tâches d
 
 ![Fenêtres Automatique et Pile des appels de Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Arrêtez votre application en appuyant sur **Maj**+**F5** ou en cliquant sur le bouton **Arrêter**. Vous pouvez aussi simplement fermer la fenêtre principale de l’application (ou la boîte de dialogue de la ligne de commande).
+Arrêtez votre application en appuyant sur **Maj**+**F5** ou en cliquant sur le bouton **Arrêter**. Vous pouvez aussi fermer la fenêtre principale de l’application (ou la boîte de dialogue de ligne de commande).
 
 Si votre code s'exécute parfaitement et exactement comme prévu, félicitations ! Toutefois, si votre code se bloque, qu’il s’arrête ou qu’il produit des résultats inattendus, vous devez rechercher la source de ces problèmes et résoudre les bogues.
 
@@ -157,5 +169,5 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
-- [En savoir plus sur l’utilisation du débogueur](../debugger/index.md)
+- [En savoir plus sur l’utilisation du débogueur](../debugger/index.yml)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

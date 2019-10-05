@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714675"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235035"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
 
@@ -29,14 +29,14 @@ ms.locfileid: "66714675"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Category|Microsoft.Globalization|
+|Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Une méthode ou un constructeur appelle un ou plusieurs membres qui ont des surcharges qui acceptent un <xref:System.IFormatProvider?displayProperty=fullName> paramètre et la méthode ou le constructeur n’appelle pas la surcharge qui accepte le <xref:System.IFormatProvider> paramètre.
+Une méthode ou un constructeur appelle un ou plusieurs membres qui ont des surcharges qui <xref:System.IFormatProvider?displayProperty=fullName> acceptent un paramètre, et la méthode ou le constructeur n’appelle pas la surcharge <xref:System.IFormatProvider> qui prend le paramètre.
 
-Cette règle ignore les appels aux méthodes de .NET qui sont documentées comme ignorant le <xref:System.IFormatProvider> paramètre. La règle ignore également les méthodes suivantes :
+Cette règle ignore les appels aux méthodes .net qui sont documentées comme ignorant <xref:System.IFormatProvider> le paramètre. La règle ignore également les méthodes suivantes :
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,27 +44,27 @@ Cette règle ignore les appels aux méthodes de .NET qui sont documentées comme
 
 ## <a name="rule-description"></a>Description de la règle
 
-Quand un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, les membres de .NET choisissent la culture par défaut et mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :
+Lorsqu’un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> objet <xref:System.IFormatProvider> ou n’est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l’effet souhaité dans tous les paramètres régionaux. En outre, les membres .NET choisissent la culture et la mise en forme par défaut en fonction des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture en respectant les instructions suivantes :
 
-- Si la valeur doit être affichée à l’utilisateur, utilisez la culture actuelle. Consultez <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Si la valeur est affichée à l’utilisateur, utilisez la culture actuelle. Consultez <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Si la valeur est stockée et accessibles par des logiciels (persistante dans un fichier ou d’une base de données), utilisez la culture dite indifférente. Consultez <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Si la valeur est stockée et accessible par le logiciel (conservée dans un fichier ou une base de données), utilisez la culture dite indifférente. Consultez <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Si vous ne connaissez pas la destination de la valeur, ont le consommateur de données ou le fournisseur de spécifier la culture.
+- Si vous ne connaissez pas la destination de la valeur, faites en sorte que le consommateur de données ou le fournisseur spécifie la culture.
 
-Même si le comportement par défaut du membre surchargé est adapté à vos besoins, il est préférable d’appeler explicitement la surcharge spécifique à la culture afin que votre code soit documentés et plus facile à maintenir.
+Même si le comportement par défaut du membre surchargé est adapté à vos besoins, il est préférable d’appeler explicitement la surcharge spécifique à la culture afin que votre code soit documenté automatiquement et plus facile à gérer.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.IFormatProvider> argument. Ou utilisez un [c# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et transmettez-le à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (méthode).
+Pour corriger une violation de cette règle, utilisez la surcharge qui prend un <xref:System.IFormatProvider> argument. Vous pouvez utiliser une [ C# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et la passer à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle lorsque vous êtes certain que le format par défaut est le bon choix, et où la maintenabilité du code n’est pas une priorité de développement importants.
+Il est possible de supprimer sans risque un avertissement de cette règle lorsqu’il est certain que le format par défaut est le bon choix, et où la maintenabilité du code n’est pas une priorité de développement importante.
 
 ## <a name="example"></a>Exemple
 
-Dans le code suivant, le `example1` chaîne viole la règle CA1305. Le `example2` chaîne est conforme aux règles CA1305 en passant <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, qui implémente <xref:System.IFormatProvider>à <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. Le `example3` chaîne est conforme aux règles CA1305 en passant une chaîne interpolée <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
+Dans le code suivant, la `example1` chaîne ne respecte pas la règle ca1305. La `example2` chaîne respecte la règle ca1305 en passant <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, qui implémente <xref:System.IFormatProvider>, à <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. La `example3` chaîne respecte la règle ca1305 en passant une chaîne interpolée à <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
 
 ```csharp
 string name = "Georgette";
@@ -81,8 +81,8 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1304 : Spécifier CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304 Spécifier CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [À l’aide de la classe CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Utilisation de la classe CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

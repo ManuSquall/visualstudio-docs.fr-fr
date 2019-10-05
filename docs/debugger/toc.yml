@@ -1,11 +1,13 @@
 - name: Documentation sur le débogueur
-  href: index.md
+  href: index.yml
 - name: Vue d'ensemble
   items:
     - name: "Qu’est-ce que le débogage\_?"
       href: what-is-debugging.md
     - name: Techniques et outils de débogage
       href: write-better-code-with-visual-studio.md
+    - name: Rechercher votre tâche de débogage
+      href: find-your-debugging-task.md
 - name: Démarrages rapides
   items:
     - name: Présentation du débogueur
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Vues personnalisées (gérées)
               items:
-                - name: Créer des vues personnalisées d’objets gérés
+                - name: Créer des vues personnalisées d’objets
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Dire au débogueur quels éléments afficher
                   href: using-the-debuggerdisplay-attribute.md
@@ -334,7 +336,7 @@
       items:
         - name: Déboguer les applications multithread
           href: debug-multithreaded-applications-in-visual-studio.md
-        - name: Bien démarrer avec le débogage d’applications multithread
+        - name: Bien démarrer avec le débogage d’applications multithreads
           href: get-started-debugging-multithreaded-apps.md
         - name: Outils pour déboguer les threads et les processus
           items:
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Déboguer plusieurs processus
           href: debug-multiple-processes.md
-        - name: "Procédure pas à pas\_: Déboguer à l’aide de la fenêtre Threads"
+        - name: Déboguer à l’aide de la fenêtre Threads
           href: how-to-use-the-threads-window.md
-        - name: "Procédure pas à pas\_: Déboguer une application parallèle"
+        - name: Déboguer une application parallèle
           href: walkthrough-debugging-a-parallel-application.md
         - name: Basculer vers un autre thread pendant un débogage
           href: how-to-switch-to-another-thread-while-debugging.md
@@ -450,7 +452,7 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Prérécupérer du contenu pour les applications du Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Code managé
+        - name: 'Code managé (C#, Visual Basic, F#)'
           items:
             - name: Déboguer du code managé
               href: debugging-managed-code.md
@@ -494,7 +496,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Déboguer F#'
               href: debugging-f-hash.md
-        - name: Code natif
+        - name: Code C/C++
           items:
             - name: Déboguer du code natif
               href: debugging-native-code.md
@@ -582,7 +584,7 @@
                   href: com-debugging-tools.md
             - name: Déboguer du code injecté
               href: how-to-debug-injected-code.md
-        - name: Déboguer du code GPU
+        - name: Code GPU
           href: debugging-gpu-code.md
         - name: Graphics Diagnostics
           href: graphics/toc.yml
@@ -632,6 +634,10 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Le serveur web n’est pas configuré correctement
                       href: error-the-web-server-is-not-configured-correctly.md
+        - name: Python
+          href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: JavaScript et TypeScript
+          href: ../javascript/debug-nodejs.md
         - name: Applications web
           items:
             - name: Déboguer des applications web
@@ -662,6 +668,10 @@
               href: how-to-step-into-wcf-services.md
             - name: Déboguer un service WCF auto-hébergé
               href: how-to-debug-a-self-hosted-wcf-service.md
+    - name: Collaborer
+      items:
+        - name: Écrire et déboguer du code avec Live Share
+          href: /visualstudio/liveshare/use/vs
     - name: Fichiers dump
       items:
         - name: Utiliser des fichiers dump

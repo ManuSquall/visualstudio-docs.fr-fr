@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6d9acc3a74505f766fbf9cfe26fc6878fdbb4b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2640fddcde0d8777363a3c56e398e7ff307a20c7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920047"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237880"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240 : Implémentez ISerializable comme il se doit
 
@@ -31,12 +31,12 @@ ms.locfileid: "68920047"
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
 |CheckId|CA2240|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type visible de l’extérieur peut être assigné à <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> l’interface et l’une des conditions suivantes est remplie:
+Un type visible de l’extérieur peut être assigné à <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> l’interface et l’une des conditions suivantes est remplie :
 
 - Le type hérite de, mais ne se substitue pas à la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> méthode et le type déclare des champs d’instance qui ne sont pas marqués avec l' <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.
 

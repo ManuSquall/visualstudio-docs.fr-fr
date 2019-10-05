@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b56001f5a083317911edde9282b66758deb1b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8fa5a17e7ec1438f104c9bf2f746df26dd97ed51
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920727"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231968"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147 : Les méthodes transparentes ne peuvent pas utiliser d’assertions de sécurité
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920727"
 |-|-|
 |TypeName|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -55,7 +55,7 @@ Ce code échoue si `SecurityTestClass` est transparent, lorsque la `Assert` mét
 [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]
 
 ## <a name="example"></a>Exemple
-L’une des options consiste à examiner le code de la méthode SecurityTransparentMethod dans l’exemple ci-dessous, et si la méthode est considérée comme sécurisée pour l’élévation, Mark SecurityTransparentMethod avec Secure-Critical. Pour cela, vous devez effectuer un audit de sécurité détaillé, complet et sans erreur sur la méthode, ainsi que tous les appels qui se produisent dans la méthode sous l’assertion:
+L’une des options consiste à examiner le code de la méthode SecurityTransparentMethod dans l’exemple ci-dessous, et si la méthode est considérée comme sécurisée pour l’élévation, Mark SecurityTransparentMethod avec Secure-Critical. Pour cela, vous devez effectuer un audit de sécurité détaillé, complet et sans erreur sur la méthode, ainsi que tous les appels qui se produisent dans la méthode sous l’assertion :
 
 [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]
 

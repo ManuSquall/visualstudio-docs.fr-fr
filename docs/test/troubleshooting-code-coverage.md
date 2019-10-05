@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079588"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342475"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -29,6 +29,7 @@ Pour plus d’informations, consultez [Utiliser la couverture du code pour déte
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Raisons pouvant justifier qu'aucun résultat ne s'affichent, ou que seuls des résultats anciens s'affichent
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Utilisez-vous l'édition appropriée de Visual Studio ?
+
 Vous avez besoin de Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Aucun test n'a été exécuté
@@ -43,7 +44,7 @@ Résolution &mdash; dans l’Explorateur de tests, choisissez **Exécuter tout**
 
 Quand vous modifiez et que vous réexécutez vos tests, le résultat d’une couverture du code antérieure peut être toujours visible, notamment la coloration du code de cette exécution antérieure.
 
-1. Exécutez Analyser la couverture du code.
+1. Exécutez **analyser la couverture du code**.
 
 2. Vérifiez que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre **Résultats de la couverture du code**.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c495357b837c4ae10d4dfe1e25237d6caaefcc4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921139"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233111"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004 : Supprimez les appels à GC.KeepAlive
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921139"
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|Catégorie|Microsoft.Reliability|
+|Category|Microsoft.Reliability|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause

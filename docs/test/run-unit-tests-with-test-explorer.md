@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891336"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342452"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -320,6 +320,7 @@ Vous pouvez déterminer la quantité de code produit qui est réellement testée
 Pour exécuter la couverture du code pour les méthodes de test dans une solution :
 
 ::: moniker range="vs-2017"
+
 1. Choisissez **Test** dans la barre de menus du haut, puis **Analyser la couverture du code**.
 
 2. Sélectionnez l'une des commandes suivantes dans le sous-menu :
@@ -327,9 +328,13 @@ Pour exécuter la couverture du code pour les méthodes de test dans une solutio
     - **Tests sélectionnés** exécute les méthodes de test que vous avez sélectionnées dans l'Explorateur de tests.
 
     - **Tous les tests** exécute toutes les méthodes de test de la solution.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-* Cliquez avec le bouton droit sur l’Explorateur de tests, puis sélectionnez **Analyser la couverture du code pour les tests sélectionnés**
+
+* Cliquez avec le bouton droit dans l’Explorateur de tests et sélectionnez **analyser la couverture du code pour les tests sélectionnés**
+
 ::: moniker-end
 
 La fenêtre **Résultats de la couverture du code** affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.
@@ -338,7 +343,7 @@ Pour plus d’informations, consultez [Utiliser la couverture du code pour déte
 
 ## <a name="test-shortcuts"></a>Raccourcis pour les tests
 
-Vous pouvez exécuter les tests à partir de **l’Explorateur de tests** en cliquant avec le bouton droit dans l’éditeur de code sur un test et en sélectionnant **Exécuter le test**, ou en utilisant les [raccourcis de l’Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou déboguent les tests en fonction de l’endroit où se trouve votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
+Les tests peuvent être exécutés à partir de l’Explorateur de tests en cliquant avec le bouton droit dans l’éditeur de code sur un test, puis en sélectionnant **exécuter le test** ou en utilisant les raccourcis de l' [Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) par défaut dans Visual Studio. Certains raccourcis dépendent du contexte. Cela signifie qu’ils exécutent ou déboguent les tests en fonction de l’endroit où se trouve votre curseur dans l’éditeur de code. Si le curseur est à l’intérieur d’une méthode de test, cette méthode de test s’exécute. Si le curseur est au niveau de la classe, tous les tests de cette classe s’exécutent. C’est pareil pour le niveau d’espace de noms.
 
 |Commandes fréquentes| Raccourcis clavier|
 |-|------------------------|

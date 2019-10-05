@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1648d2ae3c46fa8382a96b497f307b370a8d345c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3d9b787a4e50f43867b5d9b4ec7a11aba03f8599
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231670"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201 : Ne levez pas des types d'exceptions réservés
 
@@ -32,11 +32,11 @@ ms.locfileid: "66820579"
 
 ## <a name="cause"></a>Cause
 
-Une méthode déclenche un type d’exception trop général ou qui est réservée par le runtime.
+Une méthode lève un type d’exception qui est trop général ou qui est réservé par le Runtime.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les types d’exception suivants sont trop généraux pour fournir suffisamment d’informations à l’utilisateur :
+Les types d’exception suivants sont trop généraux pour fournir des informations suffisantes à l’utilisateur :
 
 - <xref:System.Exception?displayProperty=fullName>
 
@@ -44,7 +44,7 @@ Les types d’exception suivants sont trop généraux pour fournir suffisamment 
 
 - <xref:System.SystemException?displayProperty=fullName>
 
-Les types d’exception suivants sont réservés et doivent être levées uniquement par le common language runtime :
+Les types d’exception suivants sont réservés et doivent être levés uniquement par l’common language runtime :
 
 - <xref:System.AccessViolationException?displayProperty=fullName>
 
@@ -64,37 +64,37 @@ Les types d’exception suivants sont réservés et doivent être levées unique
 
 - <xref:System.StackOverflowException?displayProperty=fullName>
 
-**Ne levez pas d’Exceptions générales**
+**Ne pas lever d’exceptions générales**
 
-Si vous lever un type d’exception générale, tel que <xref:System.Exception> ou <xref:System.SystemException> dans une bibliothèque ou une infrastructure, il oblige les utilisateurs à intercepter toutes les exceptions, y compris les exceptions inconnues qu’ils ne savent pas gérer.
+Si vous levez un type d’exception générale, tel <xref:System.Exception> que <xref:System.SystemException> ou dans une bibliothèque ou une infrastructure, il oblige les consommateurs à intercepter toutes les exceptions, y compris les exceptions inconnues qu’ils ne savent pas gérer.
 
-Au lieu de cela, levez un type plus dérivé qui existe déjà dans le framework ou créer votre propre type qui dérive de <xref:System.Exception>.
+Au lieu de cela, vous pouvez soit lever un type plus dérivé qui existe déjà dans le Framework, soit créer votre propre <xref:System.Exception>type qui dérive de.
 
-**Lever des Exceptions spécifiques**
+**Lever des exceptions spécifiques**
 
-Le tableau suivant présente les paramètres et les exceptions à lever lorsque vous validez le paramètre, y compris le paramètre de valeur dans l’accesseur set d’une propriété :
+Le tableau suivant présente les paramètres et les exceptions à lever lorsque vous validez le paramètre, y compris le paramètre de valeur dans l’accesseur Set d’une propriété :
 
 |Description du paramètre|Exception|
 |---------------------------|---------------|
-|`null` Référence|<xref:System.ArgumentNullException?displayProperty=fullName>|
-|En dehors de la plage autorisée de valeurs (par exemple, un index pour une collection ou liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
-|Non valide `enum` valeur|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|Contient un format qui ne répond pas aux spécifications de paramètres d’une méthode (telles que la chaîne de format pour `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
-|Non valide|<xref:System.ArgumentException?displayProperty=fullName>|
+|`null`faire|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|En dehors de la plage de valeurs autorisée (par exemple, un index pour une collection ou une liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|Valeur `enum` non valide|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Contient un format qui ne respecte pas les spécifications de paramètres d’une méthode (telle que la chaîne de `ToString(String)`format pour)|<xref:System.FormatException?displayProperty=fullName>|
+|Sinon non valide|<xref:System.ArgumentException?displayProperty=fullName>|
 
-Lorsqu’une opération est non valide pour l’état actuel d’un objet levez <xref:System.InvalidOperationException?displayProperty=fullName>
+Lorsqu’une opération n’est pas valide pour l’état actuel d’un objet Throw<xref:System.InvalidOperationException?displayProperty=fullName>
 
-Lorsqu’une opération est effectuée sur un objet qui a été supprimé levez <xref:System.ObjectDisposedException?displayProperty=fullName>
+Lorsqu’une opération est effectuée sur un objet qui a été supprimé Throw<xref:System.ObjectDisposedException?displayProperty=fullName>
 
-Lorsqu’une opération n’est pas pris en charge (par exemple, dans un substituée **Stream.Write** dans un Stream ouvert en lecture) lever <xref:System.NotSupportedException?displayProperty=fullName>
+Lorsqu’une opération n’est pas prise en charge (par exemple, dans un **flux substitué. écrire** dans un flux ouvert pour la lecture) throw<xref:System.NotSupportedException?displayProperty=fullName>
 
-Lorsqu’une conversion entraînerait un dépassement de capacité (comme une surcharge d’opérateur de cast explicite) levez <xref:System.OverflowException?displayProperty=fullName>
+Lorsqu’une conversion génère un dépassement de capacité (par exemple, dans une surcharge d’opérateur de cast explicite), lève<xref:System.OverflowException?displayProperty=fullName>
 
-Pour toutes les autres situations, envisagez de créer votre propre type qui dérive de <xref:System.Exception> et levez cette exception.
+Pour toutes les autres situations, envisagez de créer votre propre type <xref:System.Exception> qui dérive de et qui lève cette exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, modifier le type de l’exception levée à un type spécifique qui ne fait pas partie des types réservés.
+Pour corriger une violation de cette règle, remplacez le type de l’exception levée par un type spécifique qui ne fait pas partie des types réservés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -102,4 +102,4 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1031 : Ne pas intercepter des types d’exception générale](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+- [CA1031 Ne pas intercepter les types d’exception générale](../code-quality/ca1031-do-not-catch-general-exception-types.md)

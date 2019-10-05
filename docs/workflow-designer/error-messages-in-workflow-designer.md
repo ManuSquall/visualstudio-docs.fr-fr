@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949685"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254796"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messages d'erreur dans Workflow Designer
 
-Cette rubrique décrit les types de messages d’erreur qui peuvent être rencontrés lorsque vous travaillez avec le Concepteur de flux de travail.
+Cette rubrique décrit les types de messages d’erreur qui peuvent être rencontrés lors de l’utilisation de Concepteur de flux de travail.
 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Situations dans lesquelles des erreurs se produisent dans Workflow Designer
 
-Erreurs dans le Concepteur de flux de travail se produisent dans les situations suivantes :
+Les erreurs dans Concepteur de flux de travail se produisent dans les cas suivants :
 
 1. Il existe une erreur dans une expression.
 
@@ -35,18 +35,18 @@ Erreurs dans le Concepteur de flux de travail se produisent dans les situations 
 
 4. Le fichier XAML contient des erreurs qui provoquent l'échec du chargement du workflow.
 
-Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre workflow réussit, mais une exception <xref:System.Activities.InvalidWorkflowException> est levée pendant l'exécution. Si le fichier XAML contient des erreurs, la génération échoue.
+Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre flux de travail s' <xref:System.Activities.InvalidWorkflowException> effectue correctement, mais une exception est levée au moment de l’exécution. Si le fichier XAML contient des erreurs, la génération échoue.
 
-À l’intérieur de Visual Studio, lorsqu’un workflow est chargé, ses erreurs sont affichées dans le **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans le **liste d’erreurs**.
+Dans Visual Studio, lorsqu’un flux de travail est chargé, ses erreurs sont affichées dans la **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans la **liste d’erreurs**.
 
 ### <a name="expression-errors"></a>Erreurs d'expression
- Une expression non valide est signalée par un point d'exclamation blanc dans un cercle rouge en regard de l'expression. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur. À l’intérieur de Visual Studio, cliquez sur l’expression pour afficher la ligne qui souligne la source de l’erreur. Le déplacement de la souris au-dessus du texte souligné affiche une info-bulle qui décrit la source de l'erreur.
+ Une expression non valide est signalée par un point d'exclamation blanc dans un cercle rouge en regard de l'expression. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur. Dans Visual Studio, cliquez sur l’expression pour afficher la ligne qui souligne la source de l’erreur. Le déplacement de la souris au-dessus du texte souligné affiche une info-bulle qui décrit la source de l'erreur.
 
 ### <a name="activity-validation-errors"></a>Erreurs de validation d’activité
  Lorsque les contraintes de validation d’une activité n’ont pas été satisfaites, un point d’exclamation blanc dans un cercle rouge s’affiche dans l’angle supérieur droit de l’activité. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur.
 
 ### <a name="xaml-load-errors"></a>Erreurs de chargement XAML
- Lorsqu’une activité ne parvient pas à charger, une zone rouge avec le texte « Impossible de charger l’activité en raison d’erreurs dans le XAML » s’affiche. Cela se produit généralement lorsque le type de l’activité ne peut pas être résolu. L'activité non valide peut être supprimée dans le concepteur en sélectionnant la zone rouge et en la supprimant.
+ En cas d’échec du chargement d’une activité, une zone rouge avec le texte « l’activité n’a pas pu être chargée en raison d’erreurs dans le XAML » s’affiche. Cela se produit généralement lorsque le type de l’activité ne peut pas être résolu. L'activité non valide peut être supprimée dans le concepteur en sélectionnant la zone rouge et en la supprimant.
 
 ### <a name="workflow-load-errors"></a>Erreurs de chargement du workflow
- Lorsque le chargement d’un flux de travail échoue, le texte « Workflow Designer a rencontré des problèmes avec votre document » s’affiche sur l’aire du concepteur, ainsi que des informations sur l’exception qui a provoqué l’échec du chargement du flux de travail. Cela se produit généralement lorsque le fichier XAML ne peut pas être analysé.
+ Lorsqu’un flux de travail ne parvient pas à se charger, le texte « Concepteur de flux de travail rencontré des problèmes avec votre document » s’affiche dans l’aire du concepteur, avec les informations sur les exceptions qui ont provoqué le chargement du flux de travail. Cela se produit généralement lorsque le fichier XAML ne peut pas être analysé.

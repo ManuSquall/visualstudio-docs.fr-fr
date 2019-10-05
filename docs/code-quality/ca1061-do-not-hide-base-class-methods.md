@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922426"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235385"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061 : Ne pas masquer les méthodes de la classe de base
 
@@ -27,11 +27,11 @@ ms.locfileid: "68922426"
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un type dérivé déclare une méthode portant le même nom et avec le même nombre de paramètres que l’une de ses méthodes de base; un ou plusieurs des paramètres est un type de base du paramètre correspondant dans la méthode de base. et les paramètres restants ont des types qui sont identiques aux paramètres correspondants dans la méthode de base.
+Un type dérivé déclare une méthode portant le même nom et avec le même nombre de paramètres que l’une de ses méthodes de base ; un ou plusieurs des paramètres est un type de base du paramètre correspondant dans la méthode de base. et les paramètres restants ont des types qui sont identiques aux paramètres correspondants dans la méthode de base.
 
 ## <a name="rule-description"></a>Description de la règle
 Une méthode dans un type de base est masquée par une méthode portant le même nom dans un type dérivé lorsque la signature de paramètre de la méthode dérivée diffère uniquement par les types qui sont plus faiblement dérivés que les types correspondants dans la signature de paramètre de la méthode de base.
@@ -42,7 +42,7 @@ Pour corriger une violation de cette règle, supprimez ou renommez la méthode, 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant montre une méthode qui enfreint la règle.
 
 [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714358"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235106"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304 : Spécifier CultureInfo
 
@@ -27,12 +27,12 @@ ms.locfileid: "66714358"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Category|Microsoft.Globalization|
+|Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Une méthode ou un constructeur appelle un membre qui a une surcharge qui accepte un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> paramètre et la méthode ou le constructeur n’appelle pas la surcharge qui accepte le <xref:System.Globalization.CultureInfo> paramètre. Cette règle ignore les appels aux méthodes suivantes :
+Une méthode ou un constructeur appelle un membre qui a une surcharge qui accepte <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> un paramètre, et la méthode ou le constructeur n’appelle pas la surcharge qui <xref:System.Globalization.CultureInfo> prend le paramètre. Cette règle ignore les appels aux méthodes suivantes :
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ Une méthode ou un constructeur appelle un membre qui a une surcharge qui accept
 
 ## <a name="rule-description"></a>Description de la règle
 
-Quand un <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider?displayProperty=nameWithType> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, les membres de .NET choisissent la culture par défaut et mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :
+Lorsqu’un <xref:System.Globalization.CultureInfo> objet <xref:System.IFormatProvider?displayProperty=nameWithType> ou n’est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l’effet souhaité dans tous les paramètres régionaux. En outre, les membres .NET choisissent la culture et la mise en forme par défaut en fonction des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture en respectant les instructions suivantes :
 
-- Si la valeur doit être affichée à l’utilisateur, utilisez la culture actuelle. Consultez <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Si la valeur est affichée à l’utilisateur, utilisez la culture actuelle. Consultez <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Si la valeur est stockée et accessibles par le logiciel, c'est-à-dire, rendues persistantes dans un fichier ou d’une base de données, utilisez la culture dite indifférente. Consultez <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Si la valeur est stockée et accessible par le logiciel, c’est-à-dire rendue persistante dans un fichier ou une base de données, utilisez la culture dite indifférente. Consultez <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Si vous ne connaissez pas la destination de la valeur, ont le consommateur de données ou le fournisseur de spécifier la culture.
+- Si vous ne connaissez pas la destination de la valeur, faites en sorte que le consommateur de données ou le fournisseur spécifie la culture.
 
-Même si le comportement par défaut du membre surchargé est adapté à vos besoins, il est préférable d’appeler explicitement la surcharge spécifique à la culture afin que votre code soit documentés et plus facile à maintenir.
+Même si le comportement par défaut du membre surchargé est adapté à vos besoins, il est préférable d’appeler explicitement la surcharge spécifique à la culture afin que votre code soit documenté automatiquement et plus facile à gérer.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> est utilisé uniquement pour récupérer des ressources localisées à l’aide d’une instance de la <xref:System.Resources.ResourceManager?displayProperty=nameWithType> classe.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>est utilisé uniquement pour récupérer des ressources localisées à l’aide d’une <xref:System.Resources.ResourceManager?displayProperty=nameWithType> instance de la classe.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.Globalization.CultureInfo> argument.
+Pour corriger une violation de cette règle, utilisez la surcharge qui prend un <xref:System.Globalization.CultureInfo> argument.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle lorsque vous êtes certain que la culture par défaut est le bon choix, et où la maintenabilité du code n’est pas une priorité de développement importants.
+Il est possible de supprimer sans risque un avertissement de cette règle lorsqu’il est certain que la culture par défaut est le choix approprié et que la maintenabilité du code n’est pas une priorité de développement importante.
 
-## <a name="example-showing-how-to-fix-violations"></a>Exemple montrant comment corriger les violations
+## <a name="example-showing-how-to-fix-violations"></a>Exemple illustrant comment corriger les violations
 
-Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod` corrige la première violation en passant la culture dite indifférente pour <xref:System.String.Compare%2A?displayProperty=nameWithType>et corrige la seconde en passant la culture actuelle à <xref:System.String.ToLower%2A?displayProperty=nameWithType> car `string3` est affiché à l’utilisateur.
+Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod`corrige la première violation en passant la culture dite indifférente <xref:System.String.Compare%2A?displayProperty=nameWithType>à et corrige la deuxième violation en passant la culture actuelle à <xref:System.String.ToLower%2A?displayProperty=nameWithType> , car `string3` est affiché à l’utilisateur.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Affichage de l’exemple de sortie mise en forme
+## <a name="example-showing-formatted-output"></a>Exemple d’affichage de la sortie mise en forme
 
-L’exemple suivant montre l’effet de la culture actuelle sur la valeur par défaut <xref:System.IFormatProvider> qui est sélectionné par le <xref:System.DateTime> type.
+L’exemple suivant montre l’effet de la culture actuelle sur la <xref:System.IFormatProvider> valeur par défaut qui est <xref:System.DateTime> sélectionnée par le type.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 
@@ -82,8 +82,8 @@ Cet exemple génère la sortie suivante :
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1305 : Spécifier IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+- [CA1305 Spécifier IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [À l’aide de la classe CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)
+- [Utilisation de la classe CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

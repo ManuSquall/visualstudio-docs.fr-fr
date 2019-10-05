@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797326"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234541"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505 : Éviter le code impossible à maintenir
 
@@ -36,19 +36,19 @@ Un type ou une méthode a une faible valeur d'indice de maintenabilité.
 
 ## <a name="rule-description"></a>Description de la règle
 
-L’indice de maintenabilité est calculé en utilisant les métriques suivantes : lignes de code, volume de programme et complexité cyclomatique. Volume de programme est une mesure de la difficulté de compréhension d’un type ou une méthode qui est basé sur le nombre d’opérateurs et d’opérandes dans le code. Complexité cyclomatique est une mesure de la complexité structurelle du type ou de méthode. Plus d’informations sur la métrique du code à [mesurer la complexité et la maintenabilité du code managé](../code-quality/code-metrics-values.md).
+L’index de maintenabilité est calculé à l’aide des métriques suivantes : lignes de code, volume de programme et complexité cyclomatic. Le volume de programme est une mesure de la difficulté de comprendre un type ou une méthode basée sur le nombre d’opérateurs et d’opérandes dans le code. La complexité cyclomatic est une mesure de la complexité structurelle du type ou de la méthode. Vous pouvez en savoir plus sur les métriques [du code à mesure que la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md).
 
-Un faible indice de maintenabilité indique qu’un type ou une méthode est probablement difficile à maintenir et serait un bon candidat pour modifier la conception.
+Un index de maintenabilité faible indique qu’un type ou une méthode est probablement difficile à gérer et qu’il s’agit d’un bon candidat pour la reconception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour résoudre cette violation, reconcevez le type ou la méthode et essayez de diviser en plus petites et plus ciblées des types ou méthodes.
+Pour corriger cette violation, reconcevez le type ou la méthode et essayez de le fractionner en types ou méthodes plus petits et plus ciblés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Vous pouvez supprimer cet avertissement lorsque le type de méthode ne peut pas être fractionnée ou est considéré comme plus facile à gérer en dépit de sa grande taille.
+Vous pouvez supprimer cet avertissement lorsque le type ou la méthode ne peut pas être fractionné ou est considéré comme gérable en dépit de sa grande taille.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Avertissements de la facilité de maintenance](../code-quality/maintainability-warnings.md)
+- [Avertissements de maintenabilité](../code-quality/maintainability-warnings.md)
 - [Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)

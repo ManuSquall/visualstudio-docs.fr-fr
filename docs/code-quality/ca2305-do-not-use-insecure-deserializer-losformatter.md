@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2305
 - DoNotUseInsecureDeserializerLosFormatter
-ms.openlocfilehash: 4e589bbea53dd6a73a6e6e4fc44b6cb397d6dcbd
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 145d45d79f1dda27d5c69f0c481277572d3eeaa2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135457"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237728"
 ---
 # <a name="ca2305-do-not-use-insecure-deserializer-losformatter"></a>CA2305 : N’utilisez pas le désérialiseur non sécurisé LosFormatter
 
@@ -31,13 +31,13 @@ ms.locfileid: "65135457"
 
 ## <a name="cause"></a>Cause
 
-Un <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> méthode de désérialisation a été appelé ou référencé.
+Une <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> méthode de désérialisation a été appelée ou référencée.
 
 ## <a name="rule-description"></a>Description de la règle
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Cette règle recherche <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> la désérialisation des appels de méthode ou de références.
+Cette règle recherche <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> des appels ou des références de méthode de désérialisation.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

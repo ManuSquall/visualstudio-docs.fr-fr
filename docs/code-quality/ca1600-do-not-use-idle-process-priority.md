@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921808"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234379"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921808"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Catégorie|Microsoft.Mobility|
+|Category|Microsoft.Mobility|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

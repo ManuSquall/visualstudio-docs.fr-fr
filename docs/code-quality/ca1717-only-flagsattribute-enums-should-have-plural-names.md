@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d760802422773b3713fa7ea08ce0ce7a191f418
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547119"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234057"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717 : Seuls les noms des enums FlagsAttribute doivent être au pluriel
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547119"
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -40,7 +40,7 @@ Par défaut, cette règle examine uniquement les énumérations visibles de l’
 
 Les conventions d’affectation de noms stipulent qu’un nom au pluriel pour une énumération indique qu’il est possible de spécifier plusieurs valeurs de l’énumération simultanément. Le <xref:System.FlagsAttribute> indique aux compilateurs que l’énumération doit être traitée comme un champ de bits qui active des opérations au niveau du bit sur l’énumération.
 
-Si une seule valeur d’une énumération peut être spécifiée à la fois, le nom de l’énumération doit être un mot singulier. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir <xref:System.FlagsAttribute> la et peut être appelée «Days». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée «Day».
+Si une seule valeur d’une énumération peut être spécifiée à la fois, le nom de l’énumération doit être un mot singulier. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir <xref:System.FlagsAttribute> la et peut être appelée « Days ». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée « Day ».
 
 Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire à l’apprentissage d’une nouvelle bibliothèque de logiciels et augmente la confiance des clients dans le développement de la bibliothèque par une personne expérimentée dans le développement de code géré.
 
@@ -54,7 +54,7 @@ Il est possible de supprimer sans risque un avertissement de la règle si le nom
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1717.api_surface = private, internal

@@ -1,6 +1,6 @@
 ---
 title: Gravité et suppression de la règle de l’analyseur
-ms.date: 03/26/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
+ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060443"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186003"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
-Les analyseurs de code .NET Compiler Platform («Roslyn») C# analysent votre code ou Visual Basic au fur et à mesure que vous tapez. Chaque *diagnostic* ou règle a un état de gravité et de suppression par défaut qui peut être remplacé pour votre projet. Cet article traite de la définition de la gravité d’une règle, de l’utilisation d’ensembles de règles et de la suppression des violations.
+Les analyseurs de code .NET Compiler Platform (« Roslyn ») C# analysent votre code ou Visual Basic au fur et à mesure que vous tapez. Chaque *diagnostic* ou règle a un état de gravité et de suppression par défaut qui peut être remplacé pour votre projet. Cet article traite de la définition de la gravité d’une règle, de l’utilisation d’ensembles de règles et de la suppression des violations.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analyseurs en Explorateur de solutions
 
-Vous pouvez effectuer une grande partie de la personnalisation des diagnostics de l’analyseur à partir de **Explorateur de solutions**. Si vous [Installez](../code-quality/install-roslyn-analyzers.md) des analyseurs en tant que package NuGet , un nœud analyseurs apparaît sous le nœud **références** ou **dépendances** dans **Explorateur de solutions**. Si vous développez des **analyseurs**, puis que vous développez l’un des assemblys de l’analyseur, vous voyez tous les diagnostics dans l’assembly.
+Vous pouvez effectuer une grande partie de la personnalisation des diagnostics de l’analyseur à partir de **Explorateur de solutions**. Si vous [Installez des analyseurs](../code-quality/install-roslyn-analyzers.md) en tant que package NuGet, un nœud **analyseurs** apparaît sous le nœud **références** ou **dépendances** dans **Explorateur de solutions**. Si vous développez des **analyseurs**, puis que vous développez l’un des assemblys de l’analyseur, vous voyez tous les diagnostics dans l’assembly.
 
 ![Nœud analyseurs dans Explorateur de solutions](media/analyzers-expanded-in-solution-explorer.png)
 
@@ -34,72 +34,99 @@ Vous pouvez afficher les propriétés d’un diagnostic, notamment sa descriptio
 
 Pour afficher la documentation en ligne d’un diagnostic, cliquez avec le bouton droit sur le diagnostic, puis sélectionnez **afficher l’aide**.
 
-Les icônes en regard de chaque diagnostic dans **Explorateur de solutions** correspondent aux icônes que vous voyez dans l’ensemble de règles lorsque vous l’ouvrez dans l’éditeur:
+Les icônes en regard de chaque diagnostic dans **Explorateur de solutions** correspondent aux icônes que vous voyez dans l’ensemble de règles lorsque vous l’ouvrez dans l’éditeur :
 
-- le «i» d’un cercle indique une [gravité](#rule-severity) d' **information**
-- le «!» dans un triangle indique une [gravité](#rule-severity) d' **Avertissement**
-- le «x» d’un cercle indique une [gravité](#rule-severity) d' **erreur**
-- le «i» dans un cercle sur un arrière-plan de couleur claire indique un niveau de [gravité](#rule-severity) **masqué**
+- le « x » d’un cercle indique une [gravité](#rule-severity) d' **erreur**
+- le «  ! » dans un triangle indique une [gravité](#rule-severity) d' **Avertissement**
+- le « i » d’un cercle indique une [gravité](#rule-severity) d' **information**
+- le « i » dans un cercle sur un arrière-plan de couleur claire indique un niveau de [gravité](#rule-severity) **masqué**
 - la flèche pointant vers le bas dans un cercle indique que le diagnostic est supprimé
 
 ![Icônes de diagnostics dans Explorateur de solutions](media/diagnostics-icons-solution-explorer.png)
 
-## <a name="rule-sets"></a>Ensembles de règles
-
-Un [ensemble de règles](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) est un fichier XML qui stocke l’état de gravité et de suppression pour les diagnostics individuels.
-
-> [!NOTE]
-> Les ensembles de règles peuvent inclure des règles provenant à la fois des analyses héritées et des analyseurs de code.
-
-Pour modifier l’ensemble de règles actif dans l’éditeur d’ensembles de règles, cliquez avec le bouton droit sur le nœud analyseurs de **références** > dans **Explorateur de solutions** et sélectionnez **ouvrir l’ensemble de règles actif**. Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme  *\<ProjectName >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
-
-Pour modifier l’ensemble de règles actif pour un projet, accédez à l’onglet **analyse du code** des propriétés d’un projet. Sélectionnez l’ensemble de règles dans la liste sous **exécuter cet ensemble de règles**. Pour ouvrir l’ensemble de règles, sélectionnez **ouvrir**.
-
-> [!NOTE]
-> Les projets .NET Core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles dans **Explorateur de solutions**, par exemple, **ouvrir l’ensemble de règles actif**. Pour spécifier un ensemble de règles non défini par défaut pour un projet .NET Core ou .NET Standard, [Ajoutez manuellement la propriété **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) au fichier projet. Vous pouvez toujours configurer les règles dans l’ensemble de règles dans l’interface utilisateur de l’éditeur d’ensembles de règles de Visual Studio.
-
 ## <a name="rule-severity"></a>Gravité des règles
 
-Vous pouvez configurer la gravité des règles de l’analyseur, ou Diagnostics, si vous [Installez les analyseurs](../code-quality/install-roslyn-analyzers.md) en tant que package NuGet. Le tableau suivant présente les options de gravité pour les Diagnostics:
+::: moniker range=">=vs-2019"
 
+Vous pouvez configurer la gravité des règles de l’analyseur, ou *Diagnostics*, si vous [Installez les analyseurs](../code-quality/install-roslyn-analyzers.md) en tant que package NuGet. À compter de Visual Studio 2019 version 16,3, vous pouvez configurer la gravité d’une règle [dans un fichier baEditorConfig](#set-rule-severity-in-an-editorconfig-file). Vous pouvez également modifier la gravité d’une règle [à partir Explorateur de solutions](#set-rule-severity-from-solution-explorer) ou [dans un fichier d’ensemble de règles](#set-rule-severity-in-the-rule-set-file).
 
-::: moniker range="vs-2019"
-|Gravité|Comportement au moment de la génération|Comportement de l’éditeur|
-|-|-|-|
-|Error|Les violations apparaissent comme des *Erreurs* dans les **liste d’erreurs** et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.|Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement.|
-|Warning|Les violations apparaissent en tant qu' *avertissements* dans le **liste d’erreurs** et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds.|Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement.|
-|Suggestion|Les violations apparaissent sous la forme de *messages* dans le **liste d’erreurs**, et pas du tout dans la sortie de la génération de la ligne de commande.|Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement.|
-|Sans assistance|Non visible par l’utilisateur.|Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE.|
-|Aucun.|Entièrement supprimée.|Entièrement supprimée.|
 ::: moniker-end
 
-::: moniker range="< vs-2019"
-|Severity|Comportement au moment de la génération|Comportement de l’éditeur|
-|-|-|-|
-|Error|Les violations apparaissent comme des *Erreurs* dans les **liste d’erreurs** et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.|Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement.|
-|Warning|Les violations apparaissent en tant qu' *avertissements* dans le **liste d’erreurs** et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds.|Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement.|
-|Info|Les violations apparaissent sous la forme de *messages* dans le **liste d’erreurs**, et pas du tout dans la sortie de la génération de la ligne de commande.|Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement.|
-|Hidden|Non visible par l’utilisateur.|Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE.|
-|Aucun.|Entièrement supprimée.|Entièrement supprimée.|
+::: moniker range="vs-2017"
+
+Vous pouvez configurer la gravité des règles de l’analyseur, ou *Diagnostics*, si vous [Installez les analyseurs](../code-quality/install-roslyn-analyzers.md) en tant que package NuGet. Vous pouvez modifier la gravité d’une règle [à partir Explorateur de solutions](#set-rule-severity-from-solution-explorer) ou [dans un fichier d’ensemble de règles](#set-rule-severity-in-the-rule-set-file).
+
 ::: moniker-end
 
-En outre, vous pouvez «réinitialiser» la gravité d’une règle en lui affectant la **valeur par défaut**. Chaque diagnostic a une gravité par défaut qui peut être affichée dans la fenêtre **Propriétés** .
+Le tableau suivant présente les différentes options de gravité :
 
-La capture d’écran suivante montre trois violations de diagnostics différentes dans l’éditeur de code, avec trois gravités différentes. Notez la couleur du trait ondulé, ainsi que la petite zone de la barre de défilement à droite.
+| Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
+|-|-|-|
+| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Warning | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement. |
+| Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement. |
+| Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
+| Aucun. | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+
+La capture d’écran suivante de l’éditeur de code montre trois violations différentes avec des gravités différentes. Notez la couleur du tilde et le petit carré de couleur de la barre de défilement à droite.
 
 ![Erreur, avertissement et violation d’informations dans l’éditeur de code](media/diagnostics-severity-colors.png)
 
-La capture d’écran suivante montre les trois mêmes violations qui apparaissent dans le **liste d’erreurs**:
+La capture d’écran suivante montre les trois mêmes violations qui apparaissent dans le Liste d’erreurs :
 
 ![Erreur, avertissement et violation d’informations dans Liste d’erreurs](media/diagnostics-severities-in-error-list.png)
 
-Vous pouvez modifier la gravité d’une règle à partir d' **Explorateur de solutions**, ou dans le  *\<fichier nom_projet >. RuleSet* ajouté à la solution après avoir modifié la gravité d’une règle dans **Explorateur de solutions**.
+::: moniker range=">=vs-2019"
 
-![Fichier d’ensemble de règles dans Explorateur de solutions](media/ruleset-in-solution-explorer.png)
+### <a name="set-rule-severity-in-an-editorconfig-file"></a>Définir la gravité de la règle dans un fichier baEditorConfig
+
+(Visual Studio 2019 version 16,3 et versions ultérieures)
+
+La syntaxe générale pour spécifier la gravité d’une règle dans un fichier EditorConfig est la suivante :
+
+`dotnet_diagnostic.<rule ID>.severity = <severity>`
+
+La définition de la gravité d’une règle dans un fichier baEditorConfig est prioritaire sur toute gravité définie dans un ensemble de règles ou dans Explorateur de solutions. Vous pouvez configurer [manuellement](#manually-configure-rule-severity) la gravité dans un fichier baEditorConfig ou [automatiquement](#automatically-configure-rule-severity) par le biais de l’ampoule qui s’affiche en regard d’une violation.
+
+#### <a name="manually-configure-rule-severity"></a>Configurer manuellement la gravité de la règle
+
+1. Si vous n’avez pas encore de fichier EditorConfig pour votre projet, ajoutez-en [un](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
+
+2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822-mark-members-as-static.md) sur `error` pour C# les fichiers, l’entrée ressemble à ce qui suit :
+
+   ```ini
+   [*.cs]
+   dotnet_diagnostic.CA1822.severity = error
+   ```
+
+> [!NOTE]
+> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe `dotnet_style_qualification_for_field = false:suggestion`différente, par exemple,. Toutefois, si vous définissez une gravité à l' `dotnet_diagnostic` aide de la syntaxe, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
+
+#### <a name="automatically-configure-rule-severity"></a>Configurer automatiquement la gravité de la règle
+
+Visual Studio offre un moyen pratique de configurer le niveau de gravité d’une règle à partir du menu de l’ampoule [actions rapides](../ide/quick-actions.md) .
+
+1. Une fois qu’une violation se produit, placez le curseur sur le tilde de violation dans l’éditeur et ouvrez le menu ampoule. Ou placez votre curseur sur la ligne et appuyez sur **CTRL**+ **.** (point).
+
+2. Dans le menu ampoule, sélectionnez **configurer ou supprimer les problèmes** > **configurer \<l’ID de règle > gravité**.
+
+   ![Configurer la gravité de la règle à partir du menu ampoule dans Visual Studio](media/configure-rule-severity.png)
+
+3. À partir de là, sélectionnez l’une des options de gravité.
+
+   ![Configurer la gravité de la règle comme suggestion](media/configure-rule-severity-suggestion.png)
+
+   Visual Studio ajoute une entrée au fichier EditorConfig pour configurer la règle au niveau demandé, comme indiqué dans la zone Aperçu.
+
+   > [!TIP]
+   > Si vous n’avez pas encore de fichier EditorConfig dans le projet, Visual Studio en crée un pour vous.
+
+::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Définir la gravité de la règle à partir d’Explorateur de solutions
 
-1. Dans **Explorateur de solutions**, développez **références** > **Analysis** (**analyseurs** de**dépendances** > pour les projets .net Core).
+1. Dans **Explorateur de solutions**, développez **références** > **analyseurs** (ou**analyseurs** de **dépendances** > pour les projets .net Core).
 
 1. Développez l’assembly qui contient la règle pour laquelle vous souhaitez définir la gravité.
 
@@ -109,7 +136,14 @@ Vous pouvez modifier la gravité d’une règle à partir d' **Explorateur de so
 
 ### <a name="set-rule-severity-in-the-rule-set-file"></a>Définir la gravité de la règle dans le fichier d’ensemble de règles
 
-1. Ouvrez le fichier d' [ensemble de règles](analyzer-rule-sets.md) en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud analyseurs, ou en sélectionnant **ouvrir** sur la page de propriétés **analyse du code** pour projet.
+![Fichier d’ensemble de règles dans Explorateur de solutions](media/ruleset-in-solution-explorer.png)
+
+1. Ouvrez le fichier de l' [ensemble de règles](analyzer-rule-sets.md) actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud**analyseurs** de **références** > , ou en sélectionnant **ouvrir** sur page de propriétés de l' **analyse du code** du projet.
+
+   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme  *\<ProjectName >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
+
+   > [!NOTE]
+   > Les projets .NET Core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles dans **Explorateur de solutions**, par exemple, **ouvrir l’ensemble de règles actif**. Pour spécifier un ensemble de règles non défini par défaut pour un projet .NET Core ou .NET Standard, [Ajoutez manuellement la propriété **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) au fichier projet. Vous pouvez toujours configurer les règles dans l’ensemble de règles dans l’interface utilisateur de l’éditeur d’ensembles de règles de Visual Studio.
 
 1. Accédez à la règle en développant son assembly conteneur.
 
@@ -119,29 +153,37 @@ Vous pouvez modifier la gravité d’une règle à partir d' **Explorateur de so
 
 ## <a name="suppress-violations"></a>Supprimer les violations
 
-Il existe plusieurs façons de supprimer des violations de règle:
+Il existe plusieurs façons de supprimer des violations de règle :
+
+::: moniker range=">=vs-2019"
+
+- Dans un **fichier EditorConfig**
+
+  Définissez la gravité sur `none`, par exemple, `dotnet_diagnostic.CA1822.severity = none`.
+
+::: moniker-end
 
 - Dans le menu **analyser**
 
-  Sélectionnez **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée «ligne de l’établissement».
+  Sélectionnez **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
 
 - À partir de **Explorateur de solutions**
 
-  Pour supprimer une violation dans **Explorateur de solutions**, définissez le niveau de gravité de la règle sur **aucun**.
+  Définissez le niveau de gravité de la règle sur **aucun**.
 
 - À partir de l' **éditeur d’ensembles de règles**
 
-  Pour supprimer une violation de l’éditeur d’ensemble de règles, désactivez la case à cocher en regard de son nom, ou définissez **action** sur **aucun**.
+  Décochez la case en regard de son nom ou définissez **action** sur **aucun**.
 
 - À partir de l' **éditeur de code**
 
-  Pour supprimer une violation de l’éditeur de code, placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**+ **.** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX** > **dans le fichier source/de suppression**.
+  Placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**++**point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX** > **dans le fichier source/de suppression**.
 
   ![Supprimer les diagnostics du menu actions rapides](media/suppress-diagnostic-from-editor.png)
 
 - À partir de la **liste d’erreurs**
 
-  Vous pouvez supprimer un ou plusieurs Diagnostics de la **liste d’erreurs** en sélectionnant ceux que vous voulez supprimer, puis en cliquant avec le bouton droit et en sélectionnant **supprimer** > **dans le fichier source/de suppression**.
+  Sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer** > **dans le fichier source/de suppression**.
 
   - Si vous supprimez **dans la source**, la boîte de dialogue **aperçu des modifications** s’ouvre C# et affiche un aperçu de l' [Avertissement #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic directive d' [Avertissement #Disable](/dotnet/visual-basic/language-reference/directives/directives) ajoutée au code source.
 
@@ -160,7 +202,7 @@ Il existe plusieurs façons de supprimer des violations de règle:
 
 ## <a name="command-line-usage"></a>Utilisation de la ligne de commande
 
-Lorsque vous générez votre projet sur la ligne de commande, des violations de règle apparaissent dans la sortie de la génération si les conditions suivantes sont remplies:
+Lorsque vous générez votre projet sur la ligne de commande, des violations de règle apparaissent dans la sortie de la génération si les conditions suivantes sont remplies :
 
 - Les analyseurs sont installés en tant que package NuGet et non pas en tant qu’extension VSIX.
 
@@ -173,13 +215,13 @@ Le niveau de détail de la sortie de la génération n’a aucune incidence sur 
 > [!TIP]
 > Si vous êtes habitué à exécuter des analyses héritées à partir de la ligne de commande, soit avec *FxCopCmd. exe* , soit via MSBuild avec l’indicateur **RunCodeAnalysis** , voici comment procéder avec les analyseurs de code.
 
-Pour voir les violations de l’analyseur sur la ligne de commande lorsque vous générez votre projet à l’aide de MSBuild, exécutez une commande comme celle-ci:
+Pour voir les violations de l’analyseur sur la ligne de commande lorsque vous générez votre projet à l’aide de MSBuild, exécutez une commande comme celle-ci :
 
 ```cmd
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-L’illustration suivante montre la sortie de la génération en ligne de commande de la génération d’un projet qui contient une violation de règle de l’analyseur:
+L’illustration suivante montre la sortie de la génération en ligne de commande de la génération d’un projet qui contient une violation de règle de l’analyseur :
 
 ![Sortie MSBuild avec violation de règle](media/command-line-build-analyzers.png)
 

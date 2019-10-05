@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcef8fbfd61b8cd8c946f76d6fcb93dc46f1654
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7f9455e83d7cb128a34696ae5e849fd0901f1891
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920628"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232219"
 ---
 # <a name="ca2136-members-should-not-have-conflicting-transparency-annotations"></a>CA2136 : Les membres ne doivent pas avoir d'annotations de transparence conflictuelles
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920628"
 |-|-|
 |TypeName|TransparencyAnnotationsShouldNotConflict|
 |CheckId|CA2136|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -43,7 +43,7 @@ Pour résoudre ce problème, supprimez l’attribut de sécurité de l’éléme
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez pas les avertissements de cette règle.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 Dans l’exemple suivant, une méthode est marquée avec l' <xref:System.Security.SecuritySafeCriticalAttribute> attribut et il s’agit d’un membre d’une classe qui est marquée <xref:System.Security.SecurityCriticalAttribute> avec l’attribut. L’attribut Security SAFE doit être supprimé.
 
 [!code-csharp[FxCop.Security.CA2136.TransparencyAnnotationsShouldNotConflict#1](../code-quality/codesnippet/CSharp/ca2136-members-should-not-have-conflicting-transparency-annotations_1.cs)]

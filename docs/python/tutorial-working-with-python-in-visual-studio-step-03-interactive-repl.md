@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3576e34b52e524b88300c089c2beda0be6ed0e28
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
-ms.translationtype: HT
+ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740018"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831871"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
 
@@ -54,7 +54,7 @@ La fenêtre **Interactive** de Visual Studio pour Python offre une expérience u
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Sélectionnez uniquement les instructions `import` et `from` dans le fichier *.py*, cliquez avec le bouton droit, puis sélectionnez **Envoyer vers Interactive** (ou appuyez sur **Ctrl**+**Entrée**). Le fragment de code est immédiatement collé dans la fenêtre **Interactive**, puis exécuté. Sélectionnez maintenant la fonction `make_dot_string` et répétez la même commande, qui réexécute ce fragment de code. Étant donné que le code définit une fonction, vous pouvez rapidement tester cette fonction en l’appelant à plusieurs reprises :
+1. Sélectionnez les instructions de fonction `import`, `from` et `make_dot_string` dans le fichier *. py* , cliquez avec le bouton droit, puis sélectionnez **Envoyer vers interactive** (ou appuyez sur **CTRL**+**entrée**). Le fragment de code est immédiatement collé dans la fenêtre **Interactive**, puis exécuté. Sélectionnez maintenant la fonction `make_dot_string` et répétez la même commande, qui réexécute ce fragment de code. Étant donné que le code définit une fonction, vous pouvez rapidement tester cette fonction en l’appelant à plusieurs reprises :
 
     ![Envoi de code dans la fenêtre interactive et test de ce code](media/vs-getting-started-python-14-interactive4.png)
 

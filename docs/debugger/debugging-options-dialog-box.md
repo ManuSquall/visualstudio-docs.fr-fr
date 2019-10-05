@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211143"
 ---
 # <a name="debugging-options-dialog-box"></a>Débogage, boîte de dialogue Options
 Le dossier **Débogage**, dans la boîte de dialogue **Options** du menu **Outils** comporte les pages suivantes, qui vous permettent de spécifier les options de l’outil de débogage.
@@ -41,6 +41,6 @@ Le dossier **Débogage**, dans la boîte de dialogue **Options** du menu **Outil
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)
-- [Débogage dans Visual Studio](../debugger/index.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Informations de référence sur le débogage de l’interface utilisateur](../debugger/debugging-user-interface-reference.md)

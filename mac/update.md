@@ -3,15 +3,15 @@ title: Mise à jour de Visual Studio pour Mac
 description: Instructions pour mettre à jour Visual Studio pour Mac et accéder aux préversions.
 author: asb3993
 ms.author: amburns
-ms.date: 08/27/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 56795fa78a7e850ed96d44d2bbcd3cd3c03abbc1
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 383bf38b26b4961df61dca2a1bf1d4efda335d81
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108164"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211496"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mettre à jour Visual Studio pour Mac
 
@@ -44,7 +44,7 @@ Pour changer de canal, sélectionnez-le dans la liste déroulante de canaux et a
 
 Le changement de canal démarre automatiquement le processus de téléchargement des nouvelles mises à jour.
 
-Si vous avez sélectionné l’option **Rechercher automatiquement**, la boîte de dialogue du programme de mise à jour s’affiche quand Visual Studio pour Mac est ouvert, pour vous informer que de nouvelles mises à jour sont disponibles. Vous avez aussi la possibilité de démarrer leur téléchargement.
+Si vous avez sélectionné l’option **Rechercher automatiquement**, la boîte de dialogue du programme de mise à jour s’affiche quand Visual Studio pour Mac est ouvert, pour vous informer que de nouvelles mises à jour sont disponibles. Les nouveaux téléchargements commenceront à être téléchargés automatiquement sur votre ordinateur lorsque cette boîte de s’affiche.
 
 Pour démarrer l’installation des mises à jour, sélectionnez le bouton **Redémarrer et installer les mises à jour** :
 

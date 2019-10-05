@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 07/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293719"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211332"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mis à jour pour la [version 16.2](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la [version 16,3](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -107,6 +107,12 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 **Nouveautés dans 16.2** : Nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des grands jeux de test, un filtrage plus facile, des commandes plus détectables, des vues de sélection avec onglets et des colonnes personnalisables qui vous permettent d’affiner les informations des tests qui sont affichées.
 
    ![Capture d’écran montrant les améliorations de l’interface utilisateur dans l’Explorateur de tests](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**Nouveauté de 16,3**: Nous avons inclus la prise en charge de .NET Core 3,0. Multiplateforme, open source&mdash;et entièrement pris en charge par Microsoft. 
+
+Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Collaborer
 

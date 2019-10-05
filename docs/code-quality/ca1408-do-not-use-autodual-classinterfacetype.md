@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921983"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234794"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408 : Ne pas utiliser le paramètre AutoDual ClassInterfaceType
 
@@ -30,7 +30,7 @@ ms.locfileid: "68921983"
 |-|-|
 |TypeName|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
-|Catégorie|Microsoft. Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -39,7 +39,7 @@ Un type visible com (Component Object Model) est marqué avec l' <xref:System.Ru
 ## <a name="rule-description"></a>Description de la règle
 Les types qui utilisent une interface double permettent aux clients de se lier à une disposition d'interface spécifique. Les modifications apportées à une version future de la disposition du type ou des types de base bloquent les clients COM qui se lient à l'interface. Par défaut, si l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut n’est pas spécifié, une interface de dispatch uniquement est utilisée.
 
-Sauf indication contraire, tous les types non génériques publics sont visibles par COM; tous les types non publics et génériques sont invisibles pour COM.
+Sauf indication contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques sont invisibles pour COM.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, remplacez la valeur de l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut par la `None` valeur de <xref:System.Runtime.InteropServices.ClassInterfaceType> et définissez explicitement l’interface.

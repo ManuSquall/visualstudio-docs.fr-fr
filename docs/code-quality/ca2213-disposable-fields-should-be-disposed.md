@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 675206bb58e27110af79c46b1d61e9489f7661f2
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 1838d7e57b841c932d95006d1ff33972dd7a1a1f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766080"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231612"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213 : Les champs pouvant être supprimés doivent l’être
 
@@ -27,7 +27,7 @@ ms.locfileid: "70766080"
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -63,7 +63,7 @@ Il est possible de supprimer sans risque un avertissement de cette règle dans l
 - Le type avec indicateur n’est pas responsable de la libération de la ressource détenue par le champ (autrement dit, le type n’a pas la *propriété dispose*)
 - L’appel à <xref:System.IDisposable.Dispose%2A> se produit à un niveau d’appel plus profond que le contrôle de la règle
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 L’extrait de code suivant montre `TypeA` un type qui <xref:System.IDisposable>implémente.
 

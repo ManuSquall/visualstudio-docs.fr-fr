@@ -1,6 +1,6 @@
 ---
 title: Conventions du langage .NET pour EditorConfig
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -13,22 +13,23 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551420"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186536"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
 Les conventions de langage pour EditorConfig dans Visual Studio se répartissent en deux catégories : celles qui s’appliquent à Visual Basic et C#, et celles qui sont spécifiques à C#. Les conventions de langage affectent la manière dont les différents aspects d’un langage de programmation sont utilisés, par exemple, les modificateurs et les parenthèses.
 
 > [!TIP]
-> - Utilisez les liens de la section **Dans cet article** pour accéder aux différentes sections de la page.
 > - Pour voir des exemples de code dans votre langage de programmation préféré, choisissez-le avec l’outil de sélection de langage en haut à droite de la fenêtre du navigateur.
 >
 >   ![Contrôle du sélecteur de langages de code](media/code-language-picker.png)
+>
+> - Utilisez les liens de la section **Dans cet article** pour accéder aux différentes sections de la page.
 
 ## <a name="rule-format"></a>Format de la règle
 
@@ -36,19 +37,48 @@ Les règles relatives aux conventions de langage ont le format général suivant
 
 `option_name = value:severity`
 
-Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou quand favoriser ce style. De nombreuses règles acceptent une valeur de `true` (préférer ce style) ou `false` (ne pas préférer ce style) ; d’autres acceptent des valeurs telles que `when_on_single_line` ou `never`. La seconde partie de la règle spécifie la **gravité**.
+Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou quand favoriser ce style. De `true` nombreuses règles acceptent la valeur (préférer ce style) ou `false` (ne pas préférer ce style). D’autres règles acceptent des valeurs `when_on_single_line` telles `never`que ou. La seconde partie de la règle spécifie la [gravité](#severity-levels).
 
-### <a name="severity"></a>severity
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Étant donné que les conventions de langage sont appliquées par des analyseurs, vous pouvez également définir leur gravité en utilisant la syntaxe de configuration par défaut pour les analyseurs. La syntaxe prend la forme `dotnet_diagnostic.<rule ID>.severity = <severity>`, par exemple, `dotnet_diagnostic.IDE0040.severity = silent`. Pour plus d’informations, consultez [définir la gravité d’une règle dans un fichier baEditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+
+::: moniker-end
+
+## <a name="severity-levels"></a>Niveaux de gravité
 
 Un niveau de gravité de convention de langage spécifie le niveau auquel appliquer ce style. Le tableau suivant répertorie les valeurs de gravité possibles, ainsi que leurs effets :
 
-severity | Résultat
+Gravité | Effet
 :------- | ------
-`none` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec une gravité `none` n’apparaissent jamais dans le menu **Actions rapides et refactorisations**. Dans la plupart des cas, ceci est considéré comme « désactivé » ou « ignoré ».
-`silent` (aussi `refactoring` dans Visual Studio 2017 versions 15.8 et ultérieures) | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec la gravité `silent` participent au nettoyage et apparaissent dans le menu **Actions rapides et refactorisations**.
-`suggestion` | En cas de violation de cette règle de style, l’afficher à l’utilisateur comme une suggestion. Les suggestions s’affichent sous la forme de trois points gris sous les deux premiers caractères.
-`warning` | En cas de violation de cette règle de style, afficher un avertissement du compilateur.
 `error` | En cas de violation de cette règle de style, afficher une erreur du compilateur.
+`warning` | En cas de violation de cette règle de style, afficher un avertissement du compilateur.
+`suggestion` | En cas de violation de cette règle de style, l’afficher à l’utilisateur comme une suggestion. Les suggestions s’affichent sous la forme de trois points gris sous les deux premiers caractères.
+`silent` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles `silent` de gravité participent au nettoyage et s’affichent dans le menu **actions rapides et refactorisations** .
+`none` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec une gravité `none` n’apparaissent jamais dans le menu **Actions rapides et refactorisations**. Dans la plupart des cas, ceci est considéré comme « désactivé » ou « ignoré ».
+
+::: moniker range=">=vs-2019"
+
+## <a name="automatically-configure-code-styles"></a>Configurer automatiquement les styles de code
+
+À compter de Visual Studio 2019 version 16,3, vous pouvez configurer des règles de style de code à partir du menu de l’ampoule [actions rapides](quick-actions.md) après une violation de style.
+
+Pour modifier la Convention de style de code :
+
+1. Pointez sur le tilde dans l’éditeur, puis ouvrez le menu ampoule qui s’affiche. Choisissez **configurer ou supprimer les problèmes** > **configurer \<l’ID de règle > style de code**.
+
+   ![Configurer le style de code à partir du menu ampoule dans Visual Studio](media/vs-2019/configure-code-style.png)
+
+2. À partir de là, choisissez l’une des options de style de code.
+
+   ![Configurer le paramètre de style de code](media/vs-2019/configure-code-style-setting.png)
+
+   Visual Studio ajoute ou modifie le paramètre de configuration dans le fichier EditorConfig, comme indiqué dans la zone Aperçu.
+
+Pour modifier la gravité de la violation de style de code, suivez les mêmes étapes, mais choisissez **configurer \<l’ID de règle > gravité** au lieu de **configurer \<l’ID de règle > style de code**. Pour plus d’informations, consultez [configurer automatiquement la gravité](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)de la règle.
+
+::: moniker-end
 
 ## <a name="net-code-style-settings"></a>Paramètres de style de code .NET
 
@@ -1858,5 +1888,5 @@ switch (x)
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de mise en forme](editorconfig-formatting-conventions.md)
-- [Conventions d’affectation de noms](editorconfig-naming-conventions.md)
+- [Conventions d’attribution d’un nom](editorconfig-naming-conventions.md)
 - [Paramètres des conventions de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

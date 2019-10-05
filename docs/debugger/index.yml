@@ -1,0 +1,84 @@
+### YamlMime:Landing
+title: Documentation du débogueur Visual Studio
+summary: Le débogueur Visual Studio vous permet d’observer le comportement de votre programme au moment de l’exécution et de déterminer détecter les problèmes.
+metadata:
+  title: Débogage dans Visual Studio
+  description: Découvrez comment utiliser Visual Studio pour déboguer des applications et du code.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/20/2019
+  ms.openlocfilehash: 9ddd78b13e3281c4285d0bb2aaf4ee0a34af5369
+  ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71814308"
+landingContent:
+- title: À propos du débogage
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Qu’est-ce que le débogage ?
+      url: what-is-debugging.md
+    - text: Techniques et outils de débogage
+      url: write-better-code-with-visual-studio.md
+    - text: Présentation du débogueur
+      url: debugger-feature-tour.md
+    - text: Rechercher votre tâche de débogage
+      url: find-your-debugging-task.md
+- title: Prise en main
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Débogage pour grands débutants
+      url: debugging-absolute-beginners.md
+    - text: Apprendre à déboguer C#
+      url: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Apprendre à déboguer C++
+      url: getting-started-with-the-debugger-cpp.md
+    - text: Apprendre à déboguer Visual Basic
+      url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+    - text: Exécuter du code Python dans le débogueur >>
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+- title: Suspendre et naviguer dans le code
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Naviguer dans le code avec le débogueur
+      url: navigating-through-code-with-the-debugger.md
+    - text: Utiliser des points d’arrêt
+      url: using-breakpoints.md
+    - text: Modifier le code et continuer le débogage
+      url: edit-and-continue.md
+- title: Inspecter des données
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Inspecter des variables
+      url: autos-and-locals-windows.md
+    - text: Définir un espion dans des variables
+      url: watch-and-quickwatch-windows.md
+    - text: Afficher la pile des appels
+      url: how-to-use-the-call-stack-window.md
+- title: Aller plus loin avec le débogueur
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Conseils et astuces pour les débogueurs
+      url: debugger-tips-and-tricks.md
+    - text: Écrire et déboguer du code XAML en cours d’exécution
+      url: xaml-hot-reload.md
+    - text: Déboguer une application Azure en direct
+      url: debug-live-azure-applications.md
+    - text: Dire au débogueur quels éléments afficher
+      url: using-the-debuggerdisplay-attribute.md
+    - text: Débogage distant
+      url: remote-debugging.md
+- title: Collaborer
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Écrire et déboguer du code avec Live Share >>
+      url: /visualstudio/liveshare/use/vs

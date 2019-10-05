@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545027"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232145"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140 : Le code transparent ne doit pas faire référence à des éléments critiques de sécurité
 
@@ -34,37 +34,37 @@ ms.locfileid: "62545027"
 
 ## <a name="cause"></a>Cause
 
-Une méthode transparente :
+Méthode transparente :
 
 - gère un type d’exception de sécurité critique de sécurité
 
-- a un paramètre qui est marqué comme un type critique de sécurité
+- a un paramètre marqué comme type critique de sécurité
 
 - a un paramètre générique avec des contraintes critiques de sécurité
 
 - a une variable locale d’un type critique de sécurité
 
-- fait référence à un type qui est marqué comme sécurité critiques
+- fait référence à un type qui est marqué comme critique de sécurité
 
-- appelle une méthode qui est marquée en tant que de sécurité critiques
+- appelle une méthode marquée comme critique de sécurité
 
-- fait référence à un champ marqué comme de sécurité critique
+- fait référence à un champ marqué comme critique de sécurité
 
-- Retourne un type qui est marqué comme sécurité critiques
+- retourne un type marqué comme critique de sécurité
 
 ## <a name="rule-description"></a>Description de la règle
 
-Un élément de code qui est marqué avec le <xref:System.Security.SecurityCriticalAttribute> attribut est critique de sécurité. Une méthode transparente ne peut pas utiliser un élément critique de sécurité. Si un type transparent essaie d’utiliser un type critique de sécurité un <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , ou <xref:System.FieldAccessException> est déclenché.
+Un élément de code marqué avec l' <xref:System.Security.SecurityCriticalAttribute> attribut est critique de sécurité. Une méthode transparente ne peut pas utiliser un élément critique de sécurité. Si un type transparent essaie d’utiliser un type <xref:System.TypeAccessException>critique de sécurité, <xref:System.MethodAccessException> ou <xref:System.FieldAccessException> est déclenché.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
 Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes :
 
-- Marquer l’élément de code qui utilise le code critique de sécurité avec le <xref:System.Security.SecurityCriticalAttribute> attribut
+- Marquer l’élément de code qui utilise le code critique de sécurité <xref:System.Security.SecurityCriticalAttribute> avec l’attribut
 
      \- ou -
 
-- Supprimer le <xref:System.Security.SecurityCriticalAttribute> attribut à partir des éléments de code qui sont marqués comme sécurité critiques et à la place les marquer avec le <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityTransparentAttribute> attribut.
+- Supprimez <xref:System.Security.SecurityCriticalAttribute> l’attribut des éléments de code marqués comme critiques de sécurité et marquez-les à <xref:System.Security.SecuritySafeCriticalAttribute> la <xref:System.Security.SecurityTransparentAttribute> place avec l’attribut ou.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -72,7 +72,7 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
 
-Dans les exemples suivants, une méthode transparente tente de faire référence à une collection générique critique de sécurité, un champ critique de sécurité et une méthode critique de sécurité.
+Dans les exemples suivants, une méthode transparente tente de faire référence à une collection générique critique de sécurité, à un champ critique de sécurité et à une méthode critique de sécurité.
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

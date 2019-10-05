@@ -85,7 +85,7 @@ Cliquez avec le bouton droit sur un objet dans la fenêtre [Objets et chronologi
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle
 
-Sélectionnez le contrôle puis, dans la fenêtre **Propriétés****, recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
+Sélectionnez le contrôle puis, dans la fenêtre **Propriétés** **, recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
 
 ## <a name="visual-states"></a>États visuels
 

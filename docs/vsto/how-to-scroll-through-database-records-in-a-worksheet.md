@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Faites défiler les enregistrements de base de données dans une feuille de calcul'
+title: 'Procédure : Parcourir les enregistrements de base de données dans une feuille de calcul'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0b3c6a8a9292ceda03c9d0020b78d9518ca49d9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961226"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252029"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procédure : Faites défiler les enregistrements de base de données dans une feuille de calcul
-  La procédure suivante montre comment utiliser le concepteur pour afficher un champ d’une table de base de données dans une feuille de calcul Microsoft Office Excel, avec des contrôles qui permettent aux utilisateurs finaux de faire défiler tous les enregistrements.
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procédure : Parcourir les enregistrements de base de données dans une feuille de calcul
+  La procédure suivante indique comment utiliser le concepteur pour afficher un champ unique à partir d’une table de base de données dans une feuille de calcul Excel Microsoft Office, avec des contrôles qui permettent à l’utilisateur final de faire défiler tous les enregistrements.
 
- Vous pouvez utiliser le concepteur uniquement dans les projets au niveau du document. Toutefois, vous pouvez également ajouter des contrôles et les lier aux données par programmation lors de l’exécution. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+ Vous pouvez utiliser le concepteur uniquement dans les projets au niveau du document. Toutefois, vous pouvez également ajouter des contrôles et les lier à des données par programmation au moment de l’exécution. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données simple dans un projet](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)de complément VSTO.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -33,15 +33,15 @@ ms.locfileid: "62961226"
 
 1. Ouvrez un projet d’application Excel dans Visual Studio.
 
-2. Ouvrez le **des Sources de données** fenêtre et créer une source de données à partir de la base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+2. Ouvrez la fenêtre **sources de données** et créez une source de données à partir de la base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
 3. Développez la table qui contient les données que vous souhaitez afficher, puis sélectionnez la colonne spécifique.
 
-4. Ouvrir la liste des contrôles, puis sélectionnez **NamedRange**.
+4. Ouvrez la liste des contrôles et sélectionnez **NamedRange**.
 
-5. Faites glisser le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle vers la cellule où vous souhaitez afficher les données.
+5. Faites glisser <xref:Microsoft.Office.Tools.Excel.NamedRange> le contrôle sur la cellule où vous souhaitez que les données s’affichent.
 
-6. À partir de la **Windows Forms** onglet de la **boîte à outils**, ajoutez un <xref:System.Windows.Forms.BindingNavigator> le contrôle à votre feuille de calcul et de configurer les contrôles que vous souhaitez utiliser. Pour plus d’informations, consultez [vue d’ensemble du contrôle BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+6. À partir de l’onglet **Windows Forms** de la **boîte à outils**, ajoutez un <xref:System.Windows.Forms.BindingNavigator> contrôle à votre feuille de calcul et configurez les contrôles que vous souhaitez utiliser. Pour plus d’informations, consultez [vue d' &#40;ensemble&#41;du contrôle BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Voir aussi
-- [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)

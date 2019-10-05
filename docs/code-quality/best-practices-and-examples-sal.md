@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919443"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236758"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes pour tirer le meilleur parti du langage SAL (code source annotation Language) et éviter certains problèmes courants.
@@ -63,7 +63,7 @@ void Func2(_Out_ int *p1)
 
 ## <a name="_pre_defensive_-and-_post_defensive_"></a>\_\_\_Pré-défensive \_et de défense après la publication\_\_
 
-Si une fonction s’affiche dans une limite d’approbation, nous vous recommandons d' `_Pre_defensive_` utiliser l’annotation.  Le modificateur «défensive» modifie certaines annotations pour indiquer que, au moment de l’appel, l’interface doit être vérifiée strictement, mais dans le corps de l’implémentation, elle doit supposer que des paramètres incorrects peuvent être passés. Dans ce cas, `_In_ _Pre_defensive_` est préféré dans une limite d’approbation pour indiquer que même si un appelant recevra une erreur s’il tente de passer la valeur null, le corps de la fonction sera analysé comme si le paramètre avait la valeur null, et toute tentative de déréférencer le pointeur sans la première la vérification de la valeur NULL sera signalée.  Une `_Post_defensive_` annotation est également disponible, pour une utilisation dans les rappels où le tiers de confiance est supposé être l’appelant et le code non fiable est le code appelé.
+Si une fonction s’affiche dans une limite d’approbation, nous vous recommandons d' `_Pre_defensive_` utiliser l’annotation.  Le modificateur « défensive » modifie certaines annotations pour indiquer que, au moment de l’appel, l’interface doit être vérifiée strictement, mais dans le corps de l’implémentation, elle doit supposer que des paramètres incorrects peuvent être passés. Dans ce cas, `_In_ _Pre_defensive_` est préféré dans une limite d’approbation pour indiquer que même si un appelant recevra une erreur s’il tente de passer la valeur null, le corps de la fonction sera analysé comme si le paramètre avait la valeur null, et toute tentative de déréférencer le pointeur sans la première la vérification de la valeur NULL sera signalée.  Une `_Post_defensive_` annotation est également disponible, pour une utilisation dans les rappels où le tiers de confiance est supposé être l’appelant et le code non fiable est le code appelé.
 
 ## <a name="_out_writes_"></a>\_Écritures\_sortantes\_
 
@@ -115,7 +115,7 @@ Une annotation comme `_In_ PCSTR` est courante et utile. Il pointe vers une cha�
 
 ## <a name="_in_-wchar-p"></a>\_Dans\_ WCHAR * p
 
-`_In_ WCHAR* p`indique qu’il existe un pointeur `p` d’entrée qui pointe vers un caractère. Toutefois, dans la plupart des cas, il ne s’agit probablement pas de la spécification qui est prévue. Au lieu de cela, ce qui est probablement prévu est la spécification d’un tableau terminé par le caractère NULL; pour ce faire, utilisez `_In_ PWSTR`.
+`_In_ WCHAR* p`indique qu’il existe un pointeur `p` d’entrée qui pointe vers un caractère. Toutefois, dans la plupart des cas, il ne s’agit probablement pas de la spécification qui est prévue. Au lieu de cela, ce qui est probablement prévu est la spécification d’un tableau terminé par le caractère NULL ; pour ce faire, utilisez `_In_ PWSTR`.
 
 ```cpp
 
@@ -238,11 +238,11 @@ Dans cet exemple, `_Out_opt_` indique que le pointeur peut être null dans le ca
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation d’annotations SAL pour réduireC++ les défauts](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-C/code[compréhension](../code-quality/understanding-sal.md)
-
-[des paramètres de fonction d’annotation SAL et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)[annotation du comportement](../code-quality/annotating-function-behavior.md) 
-delafonction [Annotation des structs et des classes](../code-quality/annotating-structs-and-classes.md)
-[annotation du comportement](../code-quality/annotating-locking-behavior.md)
-[de verrouillage spécification du moment et de l’emplacement où une annotation applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-des[fonctions intrinsèques](../code-quality/intrinsic-functions.md)
+[Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[Présentation de SAL](../code-quality/understanding-sal.md)  
+[Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
+[Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)  
+[Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)  
+[Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)  
+[Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[Fonctions intrinsèques](../code-quality/intrinsic-functions.md)  

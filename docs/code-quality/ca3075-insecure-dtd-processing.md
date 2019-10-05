@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541115"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237119"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
 
@@ -30,41 +30,41 @@ Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessi
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une *définition de type de document (DTD)* est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs potentiel [la divulgation d’informations](/dotnet/framework/wcf/feature-details/information-disclosure) les menaces ou [par déni de Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) les attaques. Cette règle se déclenche quand :
+Une *définition de type de document (DTD)* est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et les instances où les données non fiables sont acceptées pour avertir les développeurs des menaces de [Divulgation d’informations](/dotnet/framework/wcf/feature-details/information-disclosure) potentielles ou [des attaques par déni de service (dos)](/dotnet/framework/wcf/feature-details/denial-of-service) . Cette règle se déclenche quand :
 
 - DtdProcessing est activé sur l’instance de <xref:System.Xml.XmlReader> , ce qui résout les entités XML externes à l’aide de <xref:System.Xml.XmlUrlResolver>.
 
 - La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriété est définie pour l’analyse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la propriété a la valeur parse.
 
-- Non fiables entrée est traitée à l’aide de <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver>.
+- L’entrée non fiable est traitée à <xref:System.Xml.XmlResolver> l’aide <xref:System.Xml.XmlSecureResolver>de au lieu de.
 
-- Le <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> méthode est appelée avec un non sécurisé <xref:System.Xml.XmlReaderSettings> instance ou aucune instance du tout.
+- La <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> méthode est appelée avec une instance non sécurisée <xref:System.Xml.XmlReaderSettings> ou aucune instance.
 
-- <xref:System.Xml.XmlReader> est créé avec les paramètres par défaut non sécurisées ou des valeurs.
+- <xref:System.Xml.XmlReader>est créé avec des valeurs ou des paramètres par défaut non sécurisés.
 
-Dans chacun de ces cas, le résultat est le même : le contenu soit les partages de fichiers système ou réseau à partir de l’ordinateur où le code XML est traité sera exposé à l’attaquant, ou le traitement DTD peut être utilisé comme un vecteur de déni de service.
+Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante, ou le traitement DTD peut être utilisé comme vecteur DoS.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-- Intercepter et traiter toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin d’accès.
+- Interceptez et traitez toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin.
 
 - Utilisez le <xref:System.Xml.XmlSecureResolver> pour limiter les ressources auxquelles XmlTextReader peut accéder.
 
 - Empêchez <xref:System.Xml.XmlReader> d’ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la valeur **null**.
 
-- Vérifiez que le <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> propriété est affectée à partir d’une source approuvée.
+- Assurez- <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> vous que la propriété est assignée à partir d’une source approuvée.
 
-**.NET 3.5 et versions antérieures**
+**.NET 3,5 et versions antérieures**
 
-- Désactivez le traitement DTD si vous utilisez des sources non approuvées en définissant le <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriété **true**.
+- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> à la propriété la **valeur true**.
 
 - La classe XmlTextReader a une demande d’héritage de confiance totale.
 
 **.NET 4 et versions ultérieures**
 
-- Évitez d’activer DtdProcessing si vous utilisez des sources non fiables en définissant le <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propriété **Prohibit** ou **ignorer**.
+- Évitez d’activer DtdProcessing si vous utilisez des sources non fiables en affectant à la <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propriété la valeur **interdire** ou **Ignorer**.
 
 - Vérifiez que la méthode Load() accepte une instance de XmlReader dans tous les cas InnerXml.
 

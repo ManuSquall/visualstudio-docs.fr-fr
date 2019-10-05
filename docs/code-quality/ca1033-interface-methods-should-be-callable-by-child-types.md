@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db644fe4cf65a7336ef8bd50dcf62e072e1c46
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922953"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236104"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033 : Les méthodes d'interface doivent pouvoir être appelées par les types enfants
 
@@ -34,7 +34,7 @@ ms.locfileid: "68922953"
 Un type unsealed visible de l'extérieur fournit une implémentation de méthode explicite d'une interface publique mais ne fournit aucune méthode de substitution visible de l'extérieur de même nom.
 
 ## <a name="rule-description"></a>Description de la règle
-Prenons l’exemple d’un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une`this` référence C#à l’instance actuelle (dans) qui est castée en interface. Si le type dérivé réimplémente (explicitement) la méthode d’interface héritée, l’implémentation de base ne peut plus être accédée. L’appel via la référence d’instance actuelle appellera l’implémentation dérivée; Cela provoque une récurrence et un dépassement de capacité de la pile.
+Prenons l’exemple d’un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une`this` référence C#à l’instance actuelle (dans) qui est castée en interface. Si le type dérivé réimplémente (explicitement) la méthode d’interface héritée, l’implémentation de base ne peut plus être accédée. L’appel via la référence d’instance actuelle appellera l’implémentation dérivée ; Cela provoque une récurrence et un dépassement de capacité de la pile.
 
 Cette règle ne signale pas de violation pour une implémentation explicite <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> de lorsqu’une méthode ou `Close()` `System.IDisposable.Dispose(Boolean)` une méthode visible de l’extérieur est fournie.
 

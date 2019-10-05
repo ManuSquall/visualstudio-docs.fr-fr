@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921299"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233269"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
 
@@ -27,8 +27,8 @@ ms.locfileid: "68921299"
 |-|-|
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Catégorie|Microsoft. Portability|
-|Modification avec rupture|Rupture: lorsqu’elle est déclenchée par rapport à la signature d’un membre ou d’un type visible de l’extérieur.<br /><br /> Sans rupture: lorsqu’elle est déclenchée dans le corps d’une méthode.|
+|Category|Microsoft. Portability|
+|Modification avec rupture|Rupture : lorsqu’elle est déclenchée par rapport à la signature d’un membre ou d’un type visible de l’extérieur.<br /><br /> Sans rupture : lorsqu’elle est déclenchée dans le corps d’une méthode.|
 
 ## <a name="cause"></a>Cause
 Un membre ou un type utilise un membre ou un type qui a été introduit dans un Service Pack qui n’était pas inclus dans le Framework ciblé du projet.
@@ -46,7 +46,7 @@ De nouveaux membres et types ont été inclus dans .NET Framework 2,0 Service Pa
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
-Pour modifier le Framework cible d’un projet, [consultez Procédure: Cibler une version de .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Pour modifier le Framework cible d’un projet, [consultez Procédure : Cibler une version de .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour supprimer la dépendance sur le Service Pack, supprimez toutes les utilisations du nouveau membre ou du nouveau type. S’il s’agit d’une dépendance délibérée, supprimez l’avertissement ou désactivez cette règle.

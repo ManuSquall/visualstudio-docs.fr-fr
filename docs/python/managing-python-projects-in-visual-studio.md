@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536280"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254215"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -143,7 +143,7 @@ En général, les références d’extension indiquent les dépendances entre le
 
 Une référence à un fichier *.pyd* permet d’activer IntelliSense pour le module généré. Visual Studio charge le fichier *.pyd* dans l’interpréteur Python et pratique une introspection de ses types et fonctions. Il essaie également d’analyser les chaînes de document des fonctions, afin de fournir l’assistance pour la signature.
 
-Si le module d’extension est mis à jour sur le disque, Visual Studio réanalyse le module en arrière-plan. Cette action n’a aucun effet sur le comportement du runtime, mais certaines saisies semi-automatiques ne sont pas disponibles tant que l’analyse n’est pas terminée.
+Si le module d’extension est mis à jour sur le disque, Visual Studio réanalyse le module en arrière-plan. Cette action n’a aucun effet sur le comportement au moment de l’exécution, mais certaines saisies semi-automatiques ne sont pas disponibles tant que l’analyse n’est pas terminée.
 
 En outre, vous devrez peut-être ajouter un [chemin de recherche](search-paths.md) dans le dossier qui contient le module.
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>Projets WebPI
 
 Vous pouvez ajouter des références aux entrées de produit WebPI pour le déploiement sur Microsoft Azure Cloud Services où vous pouvez installer des composants supplémentaires via le flux WebPI. Par défaut, le flux affiché est spécifique à Python et inclut Django, CPython et d’autres composants de base. Vous pouvez également sélectionner votre propre flux comme illustré ci-dessous. Lorsque vous publiez vers Microsoft Azure, une tâche d’installation installe tous les produits référencés.
+
+> [!IMPORTANT]
+> Les projets WebPI ne sont pas disponibles dans Visual Studio 2017 ou Visual Studio 2019.
 
 ![Références WebPI](media/projects-webPI-components.png)

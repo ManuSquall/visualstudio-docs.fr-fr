@@ -1,5 +1,5 @@
 ---
-title: Règle d’analyse du code CA2153 pour les Exceptions d’état endommagé
+title: Règle d’analyse du code ca2153 pour les exceptions d’état endommagé
 ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542155"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253221"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Éviter la gestion des Exceptions d’état endommagé
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Évitez de gérer les exceptions d’état endommagé
 
 |||
 |-|-|
@@ -25,25 +25,25 @@ ms.locfileid: "62542155"
 
 ## <a name="cause"></a>Cause
 
-[Endommagé (CSE) Exceptions d’état](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent que la mémoire corruption existe dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
+Les [exceptions d’état endommagé (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent qu’il existe une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les CSE indiquent que l’état d’un processus a été endommagé et qu’il n’a pas été intercepté par le système. Dans le scénario d’état endommagé, un gestionnaire général intercepte uniquement l’exception si vous marquez votre méthode avec le <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> attribut. Par défaut, le [Common Language Runtime (CLR)](/dotnet/standard/clr) n’appelle pas de gestionnaires catch pour les CSE.
+Les CSE indiquent que l’état d’un processus a été endommagé et qu’il n’a pas été intercepté par le système. Dans le scénario d’état endommagé, un gestionnaire général intercepte uniquement l’exception si vous marquez votre méthode <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> avec l’attribut. Par défaut, le [Common Language Runtime (CLR)](/dotnet/standard/clr) n’appelle pas de gestionnaires catch pour les CSE.
 
-L’option la plus sûre consiste à autoriser le blocage du processus sans intercepter ces types d’exceptions. Même le code de journalisation peut permettre aux attaquants d’exploiter les bogues de corruption de mémoire.
+L’option la plus sûre consiste à autoriser le processus à se bloquer sans intercepter ces types d’exceptions. Même le code de journalisation peut permettre à des personnes malveillantes d’exploiter les bogues d’altération de la mémoire.
 
-Cet avertissement se déclenche lors de l’interception de CSE avec un gestionnaire général qui intercepte toutes les exceptions, par exemple, `catch (System.Exception e)` ou `catch` sans paramètre d’exception.
+Cet avertissement se déclenche lors de l’interception des CSE avec un gestionnaire général qui intercepte toutes les `catch (System.Exception e)` exceptions `catch` , par exemple, ou sans paramètre d’exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
 Pour résoudre cet avertissement, effectuez l’une des opérations suivantes :
 
-- Supprimer l’attribut <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Cela a pour effet de rétablir le comportement du runtime par défaut selon lequel les CSE ne sont pas passées aux gestionnaires catch.
+- Supprimer l’attribut <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Cela revient au comportement par défaut au moment de l’exécution où les CSE ne sont pas passés aux gestionnaires catch.
 
-- Supprimer le gestionnaire catch général et privilégier les gestionnaires qui interceptent des types d’exceptions spécifiques. Cela peut inclure des extensions côté client, en supposant que le code du gestionnaire puisse les gérer en toute sécurité (rare).
+- Supprimer le gestionnaire catch général et privilégier les gestionnaires qui interceptent des types d’exceptions spécifiques. Cela peut inclure des CSE, en supposant que le code du gestionnaire peut les gérer en toute sécurité (rare).
 
-- Lever à nouveau l’extension côté client dans le gestionnaire catch, qui passe l’exception à l’appelant et doit entraîner l’arrêt du processus en cours d’exécution.
+- Levez à nouveau l’extension côté client dans le gestionnaire catch, qui passe l’exception à l’appelant et doit entraîner la fin du processus en cours d’exécution.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -71,9 +71,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1---remove-the-attribute"></a>Solution 1 : supprimer l’attribut
+### <a name="solution-1---remove-the-attribute"></a>Solution 1-supprimer l’attribut
 
-Suppression de la <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribut garantit que les Exceptions d’état endommagé ne sont pas gérées par votre méthode.
+La suppression <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> de l’attribut garantit que les exceptions d’état endommagé ne sont pas gérées par votre méthode.
 
 ```csharp
 void TestMethod1()
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2---catch-specific-exceptions"></a>Solution 2 : intercepter des exceptions spécifiques
+### <a name="solution-2---catch-specific-exceptions"></a>Solution 2-intercepter des exceptions spécifiques
 
 Supprimez le gestionnaire catch général et interceptez uniquement des types d’exceptions spécifiques.
 
@@ -111,9 +111,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3---rethrow"></a>Solution 3 - rethrow
+### <a name="solution-3---rethrow"></a>Solution 3-lever à nouveau
 
-Lever à nouveau l’exception.
+Levez à nouveau l’exception.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]

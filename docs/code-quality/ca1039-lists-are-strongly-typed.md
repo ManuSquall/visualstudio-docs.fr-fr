@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94b1e8134eb89e4ae78ec0ad6f07fd7406215185
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fcc399457f4dde1c65836d9c9498c782ba92ecc2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922845"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235988"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039 : Les listes sont fortement typées
 
@@ -27,12 +27,12 @@ ms.locfileid: "68922845"
 |-|-|
 |TypeName|ListsAreStronglyTyped|
 |CheckId|CA1039|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Le type public ou protégé implémente <xref:System.Collections.IList?displayProperty=fullName> , mais ne fournit pas de méthode fortement typée pour un ou plusieurs des éléments suivants:
+Le type public ou protégé implémente <xref:System.Collections.IList?displayProperty=fullName> , mais ne fournit pas de méthode fortement typée pour un ou plusieurs des éléments suivants :
 
 - IList. Item
 
@@ -50,7 +50,7 @@ Le type public ou protégé implémente <xref:System.Collections.IList?displayPr
 
 Cette règle requiert <xref:System.Collections.IList> que les implémentations fournissent des membres fortement typés, afin que les utilisateurs ne soient pas tenus <xref:System.Object?displayProperty=fullName> d’effectuer un cast d’arguments en type lorsqu’ils utilisent les fonctionnalités fournies par l’interface. L' <xref:System.Collections.IList> interface est implémentée par des collections d’objets accessibles par index. Cette règle suppose que le type qui implémente <xref:System.Collections.IList> gère une collection d’instances d’un type qui est plus fort que. <xref:System.Object>
 
-<xref:System.Collections.IList>implémente les <xref:System.Collections.ICollection?displayProperty=fullName> interfaces <xref:System.Collections.IEnumerable?displayProperty=fullName> et. Si vous implémentez <xref:System.Collections.IList>, vous devez fournir les membres fortement typés <xref:System.Collections.ICollection>requis pour. Si les objets de la collection étendent <xref:System.ValueType?displayProperty=fullName>, vous devez fournir un membre fortement typé pour <xref:System.Collections.IEnumerable.GetEnumerator%2A> afin d’éviter la diminution des performances provoquée par le boxing; cela n’est pas nécessaire lorsque les objets de la collection sont un type référence.
+<xref:System.Collections.IList>implémente les <xref:System.Collections.ICollection?displayProperty=fullName> interfaces <xref:System.Collections.IEnumerable?displayProperty=fullName> et. Si vous implémentez <xref:System.Collections.IList>, vous devez fournir les membres fortement typés <xref:System.Collections.ICollection>requis pour. Si les objets de la collection étendent <xref:System.ValueType?displayProperty=fullName>, vous devez fournir un membre fortement typé pour <xref:System.Collections.IEnumerable.GetEnumerator%2A> afin d’éviter la diminution des performances provoquée par le boxing ; cela n’est pas nécessaire lorsque les objets de la collection sont un type référence.
 
 Pour se conformer à cette règle, implémentez les membres d’interface explicitement en utilisant des noms au format NomInterface. <xref:System.Collections.IList.Add%2A>InterfaceMemberName, tels que. Les membres d’interface explicites utilisent les types de données déclarés par l’interface. Implémentez les membres fortement typés à l’aide du nom de membre `Add`d’interface, tel que. Déclarez les membres fortement typés comme publics et déclarez les paramètres et les valeurs de retour comme étant du type fort géré par la collection. Les types forts remplacent les types plus faibles <xref:System.Object> tels <xref:System.Array> que et qui sont déclarés par l’interface.
 

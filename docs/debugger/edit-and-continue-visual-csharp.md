@@ -1,5 +1,5 @@
 ---
-title: Modifier & Continuer (Visual c#) | Microsoft Docs
+title: Modifier & Continuer (visuel C#) | Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851007"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186358"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
  Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.
 
- L'option Modifier &amp; Continuer prend en charge la plupart des modifications que vous pouvez souhaiter apporter pendant une session de débogage, avec quelques exceptions. Pour plus d’informations, consultez [pris en charge les modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
+ L'option Modifier &amp; Continuer prend en charge la plupart des modifications que vous pouvez souhaiter apporter pendant une session de débogage, avec quelques exceptions. Pour plus d’informations, consultez [modifications du codeC# prises en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
- Modifier & Continuer ne prend en charge UWP Windows 10 et les applications x86 et x64 qui ciblent le .NET Framework 4.6 bureau ou versions ultérieures (.NET Framework est une version de bureau uniquement).
+ Modifier & Continuer est pris en charge dans UWP dans Windows 10, et les applications x86 et x64 qui ciblent le .NET Framework 4,6 ou les versions ultérieures (le .NET Framework est une version de bureau uniquement).
 
  > [!NOTE]
- > Plateformes et applications non pris en charge incluent ASP.NET 5, Silverlight 5 et Windows 8.1.
+ > Les applications et les plateformes non prises en charge incluent ASP.NET 5, Silverlight 5 et Windows 8.1.
 
  Quand l’option Modifier & Continuer est activée, les modifications prises en charge sont appliquées automatiquement lorsque vous utilisez une commande d’exécution du débogueur, par exemple **Continuer**, **Exécuter pas à pas** ou **Définir l’instruction suivante**, ou lorsque vous exécutez une évaluation de fonction dans une fenêtre du débogueur.
 
@@ -40,4 +40,5 @@ ms.locfileid: "62851007"
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour utiliser Modifier et Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-- [Prise en charge des modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Modifications du code prisesC# en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio](../debugger/xaml-hot-reload.md)

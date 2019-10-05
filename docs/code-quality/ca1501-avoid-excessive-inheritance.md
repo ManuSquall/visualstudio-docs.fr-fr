@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d77ecc255f03e38e39a9321d9c7a9e5568e94a4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546334"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234516"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501 : Éviter l'excès d'héritage
 
@@ -39,15 +39,15 @@ Un type est imbriqué de plus de quatre niveaux dans sa hiérarchie d'héritage.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les hiérarchies de type profondément imbriquées peuvent être difficiles à suivre, comprendre et gérer. Cette règle limite l’analyse aux hiérarchies dans le même module.
+Les hiérarchies de type profondément imbriquées peuvent être difficiles à suivre, comprendre et gérer. Cette règle limite l’analyse aux hiérarchies du même module.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, dérivez le type d’un type de base moins imbriqué dans la hiérarchie d’héritage ou éliminer certains des types de base intermédiaires.
+Pour corriger une violation de cette règle, dérivez le type d’un type de base qui est moins profond dans la hiérarchie d’héritage ou éliminez certains des types de base intermédiaires.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle. Toutefois, le code peut être plus difficile à gérer. Notez que, en fonction de la visibilité des types de base, résolution des violations de cette règle peut créer des modifications avec rupture. Par exemple, la suppression des types de base publiques est une modification avec rupture.
+Il est possible de supprimer sans risque un avertissement de cette règle. Toutefois, le code peut être plus difficile à gérer. Notez que, selon la visibilité des types de base, la résolution des violations de cette règle peut entraîner des modifications avec rupture. Par exemple, la suppression de types de base publics est une modification avec rupture.
 
 ## <a name="example"></a>Exemple
 

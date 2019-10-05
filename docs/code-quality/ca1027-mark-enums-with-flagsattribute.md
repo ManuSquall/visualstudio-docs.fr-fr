@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b74bcf587492155445c500252ea10773a5978b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8375d2096417948b19a228d8a4f02accac7c0b5f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547805"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236115"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027 : Marquer les enums avec FlagsAttribute
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547805"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -52,7 +52,7 @@ Supprimez un avertissement de cette règle si vous ne souhaitez pas que les vale
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1027.api_surface = private, internal
@@ -62,7 +62,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-Dans l’exemple suivant, `DaysEnumNeedsFlags` est une énumération qui répond aux conditions requises <xref:System.FlagsAttribute> pour l’utilisation de mais ne l’a pas. L' `ColorEnumShouldNotHaveFlag` énumération n’a pas de valeurs qui sont des puissances de deux mais spécifie <xref:System.FlagsAttribute>de manière incorrecte. Cela ne respecte pas [la règle CA2217: Ne Marquez pas les enums](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)avec FlagsAttribute.
+Dans l’exemple suivant, `DaysEnumNeedsFlags` est une énumération qui répond aux conditions requises <xref:System.FlagsAttribute> pour l’utilisation de mais ne l’a pas. L' `ColorEnumShouldNotHaveFlag` énumération n’a pas de valeurs qui sont des puissances de deux mais spécifie <xref:System.FlagsAttribute>de manière incorrecte. Cela ne respecte pas [la règle CA2217 : Ne Marquez pas les enums](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)avec FlagsAttribute.
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680633"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252529"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Utilisation du collecteur autonome IntelliTrace (C#, Visual Basic)
 
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.
 
- Regardez IntelliTrace en action: [Collecte et analyse des données IntelliTrace en production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Regardez IntelliTrace en action : [Collecte et analyse des données IntelliTrace en production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > Vous pouvez également collecter les mêmes données IntelliTrace pour les applications web et SharePoint s’exécutant sur des ordinateurs distants à l’aide de **Microsoft Monitoring Agent** en mode **Trace** .
@@ -70,7 +70,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 5. [Collecter les données d’une application web ou d’une application SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     ou
+     \- ou -
 
      [Collecter les données d’une application managée](#BKMK_Collect_Data_from_Executables)
 
@@ -94,11 +94,11 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
    - **Dossier d’installation de Visual Studio**:
 
-     1. Copiez IntelliTraceCollection. cab à partir du dossier dans lequel le collecteur est installé, par exemple:
+     1. Copiez IntelliTraceCollection. cab à partir du dossier dans lequel le collecteur est installé, par exemple :
 
           **.. \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
 
-          ou, pour les versions antérieures de Visual Studio:
+          ou, pour les versions antérieures de Visual Studio :
 
           **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
@@ -121,7 +121,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
-2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
+2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -129,13 +129,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     1. Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.
 
-         Par exemple :
+         Par exemple :
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.
 
-         Par exemple :
+         Par exemple :
 
         - Pour une application web du pool d’applications **DefaultAppPool** :
 
@@ -165,7 +165,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     2. Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Par exemple :
+         Par exemple :
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -183,7 +183,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
 
-    Par exemple :
+    Par exemple :
 
    - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -195,7 +195,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       ou
+       \- ou -
 
    - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 
@@ -238,7 +238,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Reproduisez le problème.
 
-3. Pour créer un point de contrôle du fichier. iTrace, utilisez la syntaxe suivante:
+3. Pour créer un point de contrôle du fichier. iTrace, utilisez la syntaxe suivante :
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -315,7 +315,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
   - Réduisez le temps de démarrage en désactivant les événements qui ne sont pas pertinents pour l’application. Par exemple, désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.
 
-  - Améliorez les performances de démarrage et d’exécution en désactivant les événements de Registre pour les applications qui accèdent au Registre, mais qui n’affichent pas les problèmes liés aux paramètres du Registre.
+  - Vous pouvez améliorer les performances de démarrage et d’exécution en désactivant les événements de Registre pour les applications qui accèdent au registre, mais qui n’affichent pas de problèmes avec les paramètres du Registre.
 
 - Passez en revue les modules du plan de collecte pour lesquels IntelliTrace collecte des données. Modifiez le plan de collecte en y incluant seulement les modules qui vous intéressent :
 

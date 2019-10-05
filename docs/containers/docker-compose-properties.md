@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: bdd835effaa691660d6462787bef590c2b985e49
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70312165"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950637"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -19,7 +19,7 @@ En plus des propriétés qui contrôlent des projets d’ancrage individuels, d�
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Comment définir les propriétés MSBuild
 
-Pour définir la valeur d’une propriété, modifiez le fichier projet. Pour les propriétés de Docker Compose, il s’agit du fichier projet avec l’extension. dcproj, sauf indication contraire dans le tableau de la section suivante. Supposons, par exemple, que vous souhaitiez spécifier de lancer le navigateur lorsque vous démarrez le débogage. Vous pouvez définir la `DockerLaunchAction` propriété dans le fichier projet. dcproj comme suit.
+Pour définir la valeur d’une propriété, modifiez le fichier projet. Pour les propriétés de Docker Compose, ce fichier projet est celui avec une extension. dcproj, sauf indication contraire dans le tableau de la section suivante. Supposons, par exemple, que vous souhaitiez spécifier de lancer le navigateur lorsque vous démarrez le débogage. Vous pouvez définir la propriété `DockerLaunchAction` dans le fichier projet. dcproj comme suit.
 
 ```xml
 <PropertyGroup>
@@ -27,21 +27,26 @@ Pour définir la valeur d’une propriété, modifiez le fichier projet. Pour le
 </PropertyGroup>
 ```
 
-Vous pouvez ajouter le paramètre de propriété à un `PropertyGroup` élément existant, ou s’il n’y en a pas `PropertyGroup` , créer un nouvel élément.
-
+Vous pouvez ajouter le paramètre de propriété à un élément `PropertyGroup` existant ou, si ce n’est pas le cas, créer un nouvel élément `PropertyGroup`.
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose les propriétés MSBuild
 
 Le tableau suivant présente les propriétés MSBuild disponibles pour les projets Docker Compose.
 
-| Nom de la propriété | Lieu | Description | Valeur par défaut  |
+| Nom de propriété | Location | Description | Valeur par défaut  |
 |---------------|----------|-------------|----------------|
-|DockerComposeProjectPath|csproj ou vbproj|Chemin d’accès relatif au fichier de projet d’ancrage-compose (dcproj). Cela est utilisé lors de la publication du projet de service pour rechercher les paramètres de génération d’image associés stockés dans le fichier docker-compose. yml.|-|
-|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|Aucun|
+|DockerComposeBuildArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose build`. Par exemple, `--parallel --pull`. |
+|DockerComposeDownArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose down`. Par exemple, `--timeout 500`.|-|  
+|DockerComposeProjectPath|csproj ou vbproj|Chemin d’accès relatif au fichier de projet d’ancrage-compose (dcproj). Définissez cette propriété lors de la publication du projet de service pour rechercher les paramètres de génération d’image associés stockés dans le fichier docker-compose. yml.|-|
+|DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose up`. Par exemple, `--timeout 500`.|-|
+|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|Aucun.|
 |DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | False |
-|DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Cela permet de déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose est lancé.|-|
+|DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
 |DockerTargetOS| dcproj | Le système d’exploitation cible utilisé lors de la génération de l’image de l’ancrage.|-|
+
+> [!NOTE]
+> DockerComposeBuildArguments, DockerComposeDownArguments et DockerComposeUpArguments sont nouveaux dans Visual Studio 2019 version 16,3.
 
 ## <a name="docker-compose-file-labels"></a>Étiquettes de fichier Docker Compose
 
@@ -58,10 +63,10 @@ Utilisez des guillemets doubles autour des valeurs, comme dans l’exemple préc
 
 |Nom d'étiquette|Description|
 |----------|-----------|
-|com. Microsoft. VisualStudio. Debugger. arguments|Arguments passés au programme lors du démarrage du débogage. Pour les applications .NET Core, il s’agit généralement d’un ensemble de chemins de recherche supplémentaires pour les packages NuGet suivis du chemin d’accès à l’assembly de sortie du projet.|
+|com. Microsoft. VisualStudio. Debugger. arguments|Arguments passés au programme lors du démarrage du débogage. Pour les applications .NET Core, ces arguments sont généralement des chemins de recherche supplémentaires pour les packages NuGet, suivis du chemin d’accès à l’assembly de sortie du projet.|
 |com. Microsoft. VisualStudio. Debugger. killprogram|Cette commande permet d’arrêter le programme débogué qui s’exécute dans le conteneur (si nécessaire).|
-|com. Microsoft. VisualStudio. Debugger. Program|Le programme est lancé au démarrage du débogage. Pour les applications .NET Core, il s’agit généralement de **dotnet**.|
-|com. Microsoft. VisualStudio. Debugger. WorkingDirectory|Répertoire utilisé comme répertoire de démarrage lors du démarrage du débogage. Il s’agit généralement de */app* pour les conteneurs Linux ou *C:\app* pour les conteneurs Windows.|
+|com. Microsoft. VisualStudio. Debugger. Program|Le programme est lancé au démarrage du débogage. Pour les applications .NET Core, ce paramètre est généralement **dotnet**.|
+|com. Microsoft. VisualStudio. Debugger. WorkingDirectory|Répertoire utilisé comme répertoire de démarrage lors du démarrage du débogage. Ce paramètre est généralement */app* pour les conteneurs Linux ou *C:\app* pour les conteneurs Windows.|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

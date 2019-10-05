@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551112"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253172"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Questions fréquentes (FAQ) sur FxCop et les analyseurs FxCop
 
@@ -43,13 +43,13 @@ Pour exécuter des analyseurs FxCop, commencez par [installer le package NuGet](
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Je reçois l’avertissement CA0507 même après avoir installé le package NuGet d’analyseurs FxCop
 
-Si vous avez installé les analyseurs FxCop, mais que vous recevez toujours l’avertissement CA0507 **« ’Exécuter l’analyse du code’ a été déprécié en faveur des analyseurs FxCop, qui s’exécutent pendant la phase de build »** , il peut être nécessaire de définir la propriété msbuild **RunCodeAnalysis** de votre fichier projet sur **false**. Dans le cas contraire, l’analyse héritée s’exécutera après chaque génération.
+Si vous avez installé les analyseurs FxCop, mais que vous continuez à obtenir l’avertissement CA0507 **« l’exécution de l’analyse du code » est dépréciée en faveur des analyseurs FxCop, qui s’exécutent pendant la génération»** , vous devrez peut-être définir la propriété MSBuild **RunCodeAnalysis** dans votre [projet fichier](../ide/solutions-and-projects-in-visual-studio.md#project-file) sur **false**. Dans le cas contraire, l’analyse héritée s’exécutera après chaque génération.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quelles règles ont été portées vers les analyseurs FxCop?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quelles règles ont été portées vers les analyseurs FxCop ?
 
 Pour plus d’informations sur les règles d’analyse héritées qui ont été portées vers les [analyseurs FxCop](install-fxcop-analyzers.md), consultez État du port de la [règle FXCop](fxcop-rule-port-status.md).
 

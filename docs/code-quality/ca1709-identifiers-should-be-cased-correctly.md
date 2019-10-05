@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921776"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234152"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921776"
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft.Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys, les espaces de noms, les types, les membres et les paramètres.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
@@ -48,9 +48,9 @@ Les conventions d’affectation de noms fournissent une apparence commune pour l
 
 Par Convention, les noms de paramètres utilisent la casse mixte et les noms d’espaces de noms, de types et de membres utilisent la casse Pascal. Dans un nom à casse mixte, la première lettre est en minuscules et la première lettre de tous les mots restants dans le nom est en majuscules. , Et `packetSniffer` sont`fatalErrorCode`des exemples de noms à casse mixte. `ioFile` Dans un nom en respectant la casse Pascal, la première lettre est en majuscule et la première lettre des mots restants dans le nom est en majuscules. , Et `PacketSniffer` sont`FatalErrorCode`des exemples de noms à casse Pascal. `IOFile`
 
-Cette règle fractionne le nom en mots en fonction de la casse et vérifie les mots à deux lettres par rapport à une liste de mots à deux lettres communs, tels que «in» ou «My». Si aucune correspondance n’est trouvée, le mot est supposé être un acronyme. En outre, cette règle suppose qu’elle a trouvé un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.
+Cette règle fractionne le nom en mots en fonction de la casse et vérifie les mots à deux lettres par rapport à une liste de mots à deux lettres communs, tels que « in » ou « My ». Si aucune correspondance n’est trouvée, le mot est supposé être un acronyme. En outre, cette règle suppose qu’elle a trouvé un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.
 
-Par Convention, les acronymes à deux lettres utilisent toutes les lettres majuscules, et les acronymes de trois caractères ou plus utilisent la casse Pascal. Les exemples suivants utilisent cette Convention d’affectation de noms: «DB», «CR», «CPA» et «ECMA». Les exemples suivants enfreignent la Convention: 'Io', 'XML’et’DoD', et pour les noms autres que les paramètres, 'XP’et’Cpl'.
+Par Convention, les acronymes à deux lettres utilisent toutes les lettres majuscules, et les acronymes de trois caractères ou plus utilisent la casse Pascal. Les exemples suivants utilisent cette Convention d’affectation de noms : « DB », « CR », « CPA » et « ECMA ». Les exemples suivants enfreignent la Convention : 'Io', 'XML’et’DoD', et pour les noms autres que les paramètres, 'XP’et’Cpl'.
 
 'ID’est à casse spéciale pour provoquer une violation de cette règle. 'ID’n’est pas un acronyme, mais il s’agit d’une abréviation pour’identification'.
 

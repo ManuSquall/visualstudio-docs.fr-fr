@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f09817e9248fdc28f56ac0162e783bf72643ee5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921154"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232685"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921154"
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ Une méthode dans un assembly avec <xref:System.Security.AllowPartiallyTrustedCa
 
 Par défaut, les méthodes publiques ou protégées des assemblys avec des noms forts sont protégées implicitement par une [demande de liaison](/dotnet/framework/misc/link-demands) pour une confiance totale. Seuls les appelants d’un niveau de confiance suffisant peuvent accéder à un assembly avec nom fort. Les assemblys avec nom fort marqués avec <xref:System.Security.AllowPartiallyTrustedCallersAttribute> l’attribut (APTCA) n’ont pas cette protection. L’attribut désactive la demande de liaison, ce qui rend l’assembly accessible aux appelants qui ne bénéficient pas d’une confiance totale, tels que le code qui s’exécute à partir d’un intranet ou d’Internet.
 
-Lorsque l’attribut APTCA est présent dans un assembly entièrement fiable et que l’assembly exécute du code dans un autre assembly qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplissent les conditions suivantes, les appelants malveillants peuvent `M1` utiliser la méthode pour contourner la demande de liaison `M2`de confiance totale implicite qui protège:
+Lorsque l’attribut APTCA est présent dans un assembly entièrement fiable et que l’assembly exécute du code dans un autre assembly qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplissent les conditions suivantes, les appelants malveillants peuvent `M1` utiliser la méthode pour contourner la demande de liaison `M2`de confiance totale implicite qui protège :
 
 - `M1`est une méthode publique déclarée dans un assembly de confiance totale qui a l’attribut APTCA.
 

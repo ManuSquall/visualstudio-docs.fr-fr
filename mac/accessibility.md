@@ -1,78 +1,33 @@
 ---
 title: Accessibilité
-description: Cet article présente les fonctionnalités d’accessibilité dans Visual Studio pour Mac et explique comment les activer.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/17/2019
+description: Présentation des fonctionnalités d’accessibilité dans Visual Studio pour Mac et comment elles peuvent être activées.
+author: alanjclark
+ms.author: alcl
+ms.date: 09/23/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: a5826bccd826e811fde112e7e1cf6992ec9ef1f3
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787640"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273347"
 ---
 # <a name="accessibility"></a>Accessibilité
 
-Les fonctionnalités d’accessibilité suivantes rendent Visual Studio pour Mac plus accessible aux personnes présentant un handicap :
+Il existe un certain nombre d’outils et de fonctionnalités d’accessibilité intégrés à macOS, qui vous aideront à utiliser avec Visual Studio pour Mac.  En outre, Visual Studio pour Mac possède également les fonctionnalités suivantes pour le rendre plus accessible aux personnes présentant des capacités diverses :
 
-- Agrandissement du texte dans les panneaux Solution et Éditeur
-- Options de taille du texte dans les éditeurs
-- Personnalisation des couleurs dans les éditeurs
-- Navigation au clavier
-- Personnalisation des raccourcis
-- Exécution du code pour les méthodes et les paramètres
+* Agrandissement du texte de l’éditeur
+* Agrandissement du texte de remplissage
+* Personnalisation du thème de couleur de l’éditeur de code
+* Personnalisation des raccourcis clavier
+* Navigation au clavier
 
-Outre ces fonctionnalités, Apple fournit un certain nombre d’outils, comme VoiceOver et Dictée, pour aider les utilisateurs ayant des besoins particuliers.
+> [!NOTE]
+> Ce guide fait référence à Visual Studio pour Mac. Pour Visual Studio sur Windows, consultez [fonctionnalités d’accessibilité de Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio).
 
-Pour plus d’informations sur les fonctionnalités d’accessibilité dans macOS, consultez le [site web d’Apple](https://www.apple.com/accessibility/mac/).
+Pour plus d’informations, consultez les rubriques suivantes :
 
-## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Activation des technologies d’assistance de macOS dans Visual Studio pour Mac
-
-Par défaut, la prise en charge des technologies d’assistance de macOS est désactivée dans Visual Studio pour Mac. Pour l’activer, procédez comme suit :
-
-1. Accédez à **Visual Studio (menu) > Préférences > Autres > Accessibilité**
-
-2. Cochez la case **Activer l’accessibilité** :
-
-   ![Case à cocher des préférences de l’accessibilité](media/accessibility-preferences.png)
-
-3. Sélectionnez le bouton **Redémarrer Visual Studio** pour redémarrer Visual Studio et activer la prise en charge des technologies d’assistance d’Apple.
-
-## <a name="how-to-use-keyboard-navigation"></a>Procédure : Utiliser la navigation au clavier
-
-La prise en charge de la navigation au clavier est directement intégrée à macOS, mais afin de disposer de l’expérience la plus complète, vous devez définir macOS pour parcourir **Tous les contrôles** :
-
-![Préférences système, clavier, tous les contrôles](media/accessibility-preferences-keyboard.png)
-
-Le fait de définir **Accès clavier complet** sur **Tous les contrôles** vous permet de parcourir tous les contrôles dans une fenêtre ou boîte de dialogue. Vous pouvez ensuite sélectionner des contrôles comme suit :
-
-- Tabulation pour parcourir les contrôles vers l’avant
-- Maj-Tabulation pour parcourir les contrôles vers l’arrière
-- Touches de direction pour parcourir les contrôles dans le sens des flèches
-- Contrôle-Tab en dehors des zones de texte
-- Le fait d’appuyer sur la barre d’espace active le contrôle qui a le focus.
-
-## <a name="how-to-enable-and-use-voiceover"></a>Procédure : Activer et utiliser VoiceOver
-
-Pour activer ou désactiver VoiceOver, appuyez sur **&#8984; + F5**
-
-Dans ce guide, les commandes VoiceOver apparaissent sous la forme **VO+_touche_** , où **VO** fait référence au modificateur défini dans l’application **Utilitaire VoiceOver**. Le modificateur par défaut est **Ctrl + Alt**. Par exemple, en fonction de votre modificateur VoiceOver, **VO + M** équivaut à **Ctrl + Alt + M**. Par souci de concision, les touches du curseur sont dénommées **Gauche** et **Droite**, etc.
-
-Pour naviguer dans l’interface utilisateur de Visual Studio pour Mac, utilisez les combinaisons de touches suivantes :
-
-- **VO + Droite / Gauche** : Naviguer entre les éléments de l’interface utilisateur
-  - VoiceOver annonce l’étiquette et le type de contrôle, et explique comment interagir avec celui-ci.
-- **VO + Maj + Bas / Haut** : Entrer dans un élément ou le quitter
-  - Une fois dans un élément, vous pouvez utiliser **VO + Gauche / Droite** pour naviguer dans les éléments qu’il contient.
-- **VO + Espace** : Sélectionner un contrôle ou interagir avec celui-ci
-- **VO + M** : Interagir avec la barre de menus Visual Studio pour Mac
-
-Pour plus d’informations sur l’utilisation de VoiceOver et pour obtenir une liste complète des commandes, reportez-vous aux guides suivants :
-
-- [Guide de mise en route VoiceOver d’Apple](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web)
-- [Commandes VoiceOver dans macOS](http://lab.dotjay.com/notes/voiceover-commands/)
-
-## <a name="see-also"></a>Voir aussi
-
-- [Fonctionnalités d’accessibilité de Visual Studio (sur Windows)](/visualstudio/ide/reference/accessibility-features-of-visual-studio)
+* [Définir les options d’accessibilité de l’IDE](accessibility-ide-options.md)
+* [Utiliser les outils et fonctionnalités d’accessibilité macOS](accessibility-macos.md)
+* [Utiliser la navigation au clavier](accessibility-keyboard.md)
+* [Utiliser macOS VoiceOver avec Visual Studio pour Mac](accessibility-voiceover.md)

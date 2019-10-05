@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5b1d92a6c7a813eea6efb409d3c2a22f68547c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 88fbd5bbe873ae8bec9a506efbdb20d3fc77a2c1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921130"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232800"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109 : Passez en revue les gestionnaires d'événements visibles
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921130"
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
 |CheckId|CA2109|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,20 +38,20 @@ Une méthode de gestion des événements visible de l’extérieur présente un 
 
 N’exposez pas les méthodes de gestion des événements sauf si cela est absolument nécessaire. Un gestionnaire d’événements, un type délégué, qui appelle la méthode exposée peut être ajouté à n’importe quel événement à condition que le gestionnaire et les signatures d’événements correspondent. Les événements peuvent potentiellement être déclenchés par n’importe quel code, et sont souvent déclenchés par du code système hautement fiable en réponse aux actions de l’utilisateur, telles que le clic sur un bouton. L’ajout d’une vérification de sécurité à une méthode de gestion des événements n’empêche pas le code d’inscrire un gestionnaire d’événements qui appelle la méthode.
 
-Une demande ne peut pas protéger de manière fiable une méthode appelée par un gestionnaire d’événements. Les demandes de sécurité aident à protéger le code contre les appelants non fiables en examinant les appelants sur la pile des appels. Le code qui ajoute un gestionnaire d’événements à un événement n’est pas nécessairement présent sur la pile des appels lorsque les méthodes du gestionnaire d’événements s’exécutent. Par conséquent, la pile des appels peut avoir uniquement des appelants d’un niveau de confiance élevé quand la méthode du gestionnaire d’événements est appelée. Cela entraîne la permutation des demandes effectuées par la méthode de gestionnaire d’événements. En outre, l’autorisation demandée peut être déclarée lorsque la méthode est appelée. Pour ces raisons, le risque de ne pas corriger une violation de cette règle ne peut être évalué qu’après examen de la méthode de gestion des événements. Lorsque vous examinez votre code, tenez compte des points suivants:
+Une demande ne peut pas protéger de manière fiable une méthode appelée par un gestionnaire d’événements. Les demandes de sécurité aident à protéger le code contre les appelants non fiables en examinant les appelants sur la pile des appels. Le code qui ajoute un gestionnaire d’événements à un événement n’est pas nécessairement présent sur la pile des appels lorsque les méthodes du gestionnaire d’événements s’exécutent. Par conséquent, la pile des appels peut avoir uniquement des appelants d’un niveau de confiance élevé quand la méthode du gestionnaire d’événements est appelée. Cela entraîne la permutation des demandes effectuées par la méthode de gestionnaire d’événements. En outre, l’autorisation demandée peut être déclarée lorsque la méthode est appelée. Pour ces raisons, le risque de ne pas corriger une violation de cette règle ne peut être évalué qu’après examen de la méthode de gestion des événements. Lorsque vous examinez votre code, tenez compte des points suivants :
 
-- Votre gestionnaire d’événements effectue-t-il des opérations dangereuses ou exploitables, telles que l’assertion des autorisations ou la suppression de l’autorisation de code non managé?
+- Votre gestionnaire d’événements effectue-t-il des opérations dangereuses ou exploitables, telles que l’assertion des autorisations ou la suppression de l’autorisation de code non managé ?
 
-- Quelles sont les menaces de sécurité liées à votre code et qui peuvent être exécutées à tout moment, avec uniquement des appelants ayant un niveau de confiance élevé sur la pile?
+- Quelles sont les menaces de sécurité liées à votre code et qui peuvent être exécutées à tout moment, avec uniquement des appelants ayant un niveau de confiance élevé sur la pile ?
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, passez en revue la méthode et évaluez les éléments suivants:
+Pour corriger une violation de cette règle, passez en revue la méthode et évaluez les éléments suivants :
 
-- Pouvez-vous rendre la méthode de gestion des événements non publique?
+- Pouvez-vous rendre la méthode de gestion des événements non publique ?
 
-- Pouvez-vous déplacer toutes les fonctionnalités dangereuses hors du gestionnaire d’événements?
+- Pouvez-vous déplacer toutes les fonctionnalités dangereuses hors du gestionnaire d’événements ?
 
-- Si une demande de sécurité est imposée, peut-il être accompli d’une autre manière?
+- Si une demande de sécurité est imposée, peut-il être accompli d’une autre manière ?
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Supprimez un avertissement de cette règle uniquement après un examen minutieux de la sécurité pour vous assurer que votre code ne constitue pas une menace pour la sécurité.

@@ -3,7 +3,7 @@ title: Créer une application de plateforme Windows universelle (UWP) avec Visua
 description: Créer une application UWP dans Visual Studio avec XAML et C#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095377"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186838"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutoriel : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
@@ -32,7 +32,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 ::: moniker-end
 
-## <a name="create-a-project"></a>Création d’un projet
+## <a name="create-a-project"></a>Créer un projet
 
 Créez tout d’abord un projet de plateforme Windows universelle. Le type de projet inclut tous les fichiers de modèle dont vous avez besoin au départ.
 
@@ -62,6 +62,10 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle de projet **Application vide (Windows universel)** , cliquez sur le lient **Installer plus d’outils et de fonctionnalités**.<br><br>![Cliquer sur le lien Installer plus d’outils et de fonctionnalités](media/vs-2019/uwp-not-finding.png)<br><br>Visual Studio Installer est lancé. Choisissez la charge de travail **Développement pour la plateforme Windows universelle**, puis **Modifier**.<br><br>![Charge de travail Développement pour la plateforme Windows universelle dans le programme d’installation de Visual Studio](media/uwp-dev-workload.png)
+
+1. Donnez un nom à votre projet, _HelloWorld_, puis choisissez **créer**.
+
+   ![Écran de configuration de votre projet](media/vs-2019/uwp-configure-your-project.png)
 
 1. Acceptez les paramètres par défaut pour **Version cible** et **Version minimale** dans la boîte de dialogue **Nouveau projet de plateforme Windows universelle**.
 
@@ -152,15 +156,17 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécuter l'application
 
+
+::: moniker range="vs-2017"
 Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment procéder.
 
 1. Utilisez le bouton Lecture (il contient le texte **Ordinateur local**) pour démarrer l’application sur l’ordinateur local.
 
    ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](media/uwp-start-or-debug.png)
 
-   (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** dans la barre de menus ou appuyer sur F5 pour démarrer votre application.)
+   (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** à partir de la barre de menus ou appuyer sur F5 pour démarrer votre application.)
 
 1. Examinez votre application, qui apparaît vite après la disparition d’un écran de démarrage. L’application doit ressembler à ceci :
 
@@ -171,6 +177,28 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
    Votre appareil Windows 10 dira littéralement « Hello, World ! »
 
 1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Vous pouvez également choisir **Déboguer** > **Arrêter le débogage** dans la barre de menus ou appuyer sur Maj+F5.)
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment procéder.
+
+1. Utilisez le bouton Lecture (il contient le texte **Ordinateur local**) pour démarrer l’application sur l’ordinateur local.
+
+   ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](media/uwp-start-or-debug.png)
+
+   (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** à partir de la barre de menus ou appuyer sur F5 pour démarrer votre application.)
+
+1. Examinez votre application, qui apparaît vite après la disparition d’un écran de démarrage. L’application doit ressembler à ceci :
+
+   ![Application UWP « Hello World »](media/vs-2019/uwp-hello-world-app.png)
+
+1. Cliquez sur le bouton **Hello World**.
+
+   Votre appareil Windows 10 dira littéralement « Hello, World ! »
+
+1. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Vous pouvez également choisir **Déboguer** > **Arrêter le débogage** dans la barre de menus ou appuyer sur Maj+F5.)
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 90f90f4e7f085dc4f7ea188833edb3462cbe7e3e
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "70312050"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253198"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Comment configurer les outils de conteneur Visual Studio
 
@@ -40,12 +40,12 @@ Paramètres de **projet** et de **docker compose** des outils de conteneur :
 Le tableau suivant peut vous aider à déterminer comment définir ces options.
 
 ::: moniker range="vs-2017"
-| Nom | Paramètre par défaut | S'applique à | Description |
+| Name | Paramètre par défaut | S'applique à | Description |
 | -----|:---------------:|:----------:| ----------- |
 | Extraire automatiquement des images Docker nécessaires lors du chargement du projet | Activé | Docker Compose | Pour améliorer les performances lors du chargement des projets, Visual Studio démarre une opération d’extraction Docker en arrière-plan de sorte que lorsque vous êtes prêt à exécuter votre code, l’image est déjà téléchargée ou en cours de téléchargement. Si vous chargez simplement des projets et parcourez du code, vous pouvez désactiver cette option pour éviter le téléchargement des images conteneur dont vous n’avez pas besoin. |
 | Démarrer automatiquement les conteneurs en arrière-plan | Activé | Docker Compose | De nouveau pour améliorer les performances, Visual Studio crée un conteneur avec des montages de volume déjà prêts quand vous créez et exécutez votre conteneur. Si vous voulez contrôler le moment auquel est créé votre conteneur, désactivez cette option. |
 | Tuer automatiquement les conteneurs lors de la fermeture de la solution | Activé | Docker Compose | Désactivez cette option si vous voulez que les conteneurs de votre solution continuent à s’exécuter après la fermeture de la solution ou la fermeture de Visual Studio. |
-| Ne pas demander l’approbation du certificat SSL localhost | Désactivé | Projets ASP.NET Core 2,1 | Si le certificat SSL localhost n’est pas approuvé, Visual Studio vous invite à le faire chaque fois que vous exécutez votre projet, sauf si cette case est cochée. |
+| Ne pas demander l’approbation du certificat SSL localhost | Off | Projets ASP.NET Core 2,1 | Si le certificat SSL localhost n’est pas approuvé, Visual Studio vous invite à le faire chaque fois que vous exécutez votre projet, sauf si cette case est cochée. |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -67,7 +67,7 @@ Le tableau suivant décrit les paramètres de projet et de **docker compose** **
 
 ::: moniker-end
 > [!WARNING]
-> Si le certificat SSL localhost n’est pas approuvé et que vous cochez la case pour supprimer l’invite, les requêtes web HTTPS risquent d’échouer au moment de l’exécution dans votre application ou service. Dans ce cas, décochez la case **Ne pas demander**, exécutez votre projet et confirmez l’approbation à l’invite.
+> Si le certificat SSL localhost n’est pas approuvé et que vous activez la case à cocher pour supprimer les invites de confirmation, les requêtes Web HTTPs risquent d’échouer au moment de l’exécution dans votre application ou service. Dans ce cas, décochez la case **Ne pas demander**, exécutez votre projet et confirmez l’approbation à l’invite.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

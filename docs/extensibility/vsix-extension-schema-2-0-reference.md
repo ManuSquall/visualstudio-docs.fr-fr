@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870823"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252183"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informations de référence sur le schéma d’extension VSIX 2,0
 Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2,0 de ce schéma prend en charge l’ajout de types et d’attributs personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et les attributs XML qu’il ne comprend pas.
@@ -28,7 +28,7 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
  L’élément racine du fichier XML manifeste est `<PackageManifest>`. Il a un seul attribut `Version`, qui est la version du format du manifeste. Si des modifications majeures sont apportées au format, le format de version est modifié. Cet article décrit le format du manifeste version 2,0, qui est spécifié dans le manifeste en `Version` affectant à l’attribut la valeur de version = "2.0".
 
 ### <a name="packagemanifest-element"></a>Élément PackageManifest
- Dans l' `<PackageManifest>` élément racine, vous pouvez utiliser les éléments suivants:
+ Dans l' `<PackageManifest>` élément racine, vous pouvez utiliser les éléments suivants :
 
 - `<Metadata>`-Métadonnées et informations de publicité sur le package lui-même. Un `Metadata` seul élément est autorisé dans le manifeste.
 
@@ -41,15 +41,15 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 - `<AnyElement>*`-Le schéma de manifeste est suffisamment flexible pour permettre d’autres éléments. Les éléments enfants non reconnus par le chargeur de manifeste sont exposés dans l’API du gestionnaire d’extensions en tant qu’objets XmlElement supplémentaires. À l’aide de ces éléments enfants, les extensions VSIX peuvent définir des données supplémentaires dans le fichier manifeste que le code s’exécutant dans Visual Studio peut accéder au moment de l’exécution. Consultez [Microsoft. VisualStudio. ExtensionManager. IExtension. AdditionalElements](/previous-versions/visualstudio/visual-studio-2013/hh265266(v=vs.120)).
 
 ### <a name="metadata-element"></a>Metadata, élément
- Cette section correspond aux métadonnées relatives au package, à son identité et à la publicité. `<Metadata>`contient les éléments suivants:
+ Cette section correspond aux métadonnées relatives au package, à son identité et à la publicité. `<Metadata>`contient les éléments suivants :
 
-- `<Identity>`-Définit les informations d’identification pour ce package et comprend les attributs suivants:
+- `<Identity>`-Définit les informations d’identification pour ce package et comprend les attributs suivants :
 
-  - `Id`-Cet attribut doit être un ID unique pour le package choisi par son auteur. Le nom doit être qualifié de la même façon que les types CLR sont des espaces de noms: Company.Product.Feature.Name. L' `Id` attribut est limité à 100 caractères.
+  - `Id`-Cet attribut doit être un ID unique pour le package choisi par son auteur. Le nom doit être qualifié de la même façon que les types CLR sont des espaces de noms : Company.Product.Feature.Name. L' `Id` attribut est limité à 100 caractères.
 
-  - `Version`-Définit la version de ce package et son contenu. Cet attribut suit le format de contrôle de version de l’assembly CLR: Major. minor. Build. Revision (1.2.40308.00). Un package avec un numéro de version plus élevé est considéré comme des mises à jour du package et peut être installé sur la version installée existante.
+  - `Version`-Définit la version de ce package et son contenu. Cet attribut suit le format de contrôle de version de l’assembly CLR : Major. minor. Build. Revision (1.2.40308.00). Un package avec un numéro de version plus élevé est considéré comme des mises à jour du package et peut être installé sur la version installée existante.
 
-  - `Language`-Cet attribut est la langue par défaut pour le package et correspond aux données textuelles de ce manifeste. Cet attribut suit la Convention du code de paramètres régionaux CLR pour les assemblys de ressources, par exemple: en-US, en, fr-fr. Vous pouvez spécifier `neutral` pour déclarer une extension indépendante du langage qui s’exécutera sur n’importe quelle version de Visual Studio. La valeur par défaut est `neutral`.
+  - `Language`-Cet attribut est la langue par défaut pour le package et correspond aux données textuelles de ce manifeste. Cet attribut suit la Convention du code de paramètres régionaux CLR pour les assemblys de ressources, par exemple : en-US, en, fr-fr. Vous pouvez spécifier `neutral` pour déclarer une extension indépendante du langage qui s’exécutera sur n’importe quelle version de Visual Studio. La valeur par défaut est `neutral`.
 
   - `Publisher`-Cet attribut identifie l’éditeur de ce package, qu’il s’agisse d’une société ou d’un nom individuel. L' `Publisher` attribut est limité à 100 caractères.
 
@@ -74,15 +74,15 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 - `<AnyElement>*`-Le schéma de manifeste est suffisamment flexible pour permettre d’autres éléments. Les éléments enfants qui ne sont pas reconnus par le chargeur de manifeste sont exposés sous la forme d’une liste d’objets XmlElement. À l’aide de ces éléments enfants, les extensions VSIX peuvent définir des données supplémentaires dans le fichier manifeste et les énumérer au moment de l’exécution.
 
 ### <a name="installation-element"></a>Élément d’installation
- Cette section définit la façon dont ce package peut être installé et les références SKU de l’application dans laquelle il peut être installé. Cette section contient les attributs suivants:
+ Cette section définit la façon dont ce package peut être installé et les références SKU de l’application dans laquelle il peut être installé. Cette section contient les attributs suivants :
 
 - `Experimental`-Affectez la valeur true à cet attribut si une extension est actuellement installée pour tous les utilisateurs, mais que vous développez une version mise à jour sur le même ordinateur. Par exemple, si vous avez installé MyExtension 1,0 pour tous les utilisateurs, mais que vous souhaitez déboguer MyExtension 2,0 sur le même ordinateur, définissez expérimentale = "true". Cet attribut est disponible dans Visual Studio 2015 Update 1 et versions ultérieures.
 
-- `Scope`-Cet attribut peut prendre la valeur «global» ou «ProductExtension»:
+- `Scope`-Cet attribut peut prendre la valeur « global » ou « ProductExtension » :
 
-  - «Global» indique que l’installation n’est pas limitée à une référence SKU spécifique. Par exemple, cette valeur est utilisée lors de l’installation d’un kit de développement logiciel (SDK) d’extension.
+  - « Global » indique que l’installation n’est pas limitée à une référence SKU spécifique. Par exemple, cette valeur est utilisée lors de l’installation d’un kit de développement logiciel (SDK) d’extension.
 
-  - «ProductExtension» spécifie qu’une extension VSIX traditionnelle (version 1,0) étendue à des références SKU Visual Studio individuelles est installée. Valeur par défaut.
+  - « ProductExtension » spécifie qu’une extension VSIX traditionnelle (version 1,0) étendue à des références SKU Visual Studio individuelles est installée. Valeur par défaut.
 
 - `AllUsers`-Cet attribut facultatif spécifie si ce package doit être installé pour tous les utilisateurs. Par défaut, cet attribut est défini sur false, ce qui spécifie que le package est par utilisateur. (Lorsque vous définissez cette valeur sur true, l’utilisateur d’installation doit élever au niveau de privilège d’administration pour installer le VSIX résultant.
 
@@ -92,9 +92,9 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 
 - `AnyAttribute*`-L' `Installation` élément accepte un ensemble d’attributs Open-fini qui seront exposés au moment de l’exécution en tant que dictionnaire de paires nom-valeur.
 
-- `<InstallationTarget>`: Cet élément contrôle l’emplacement où le programme d’installation VSIX installe le package. Si la valeur de l' `Scope` attribut est «ProductExtension», le package doit cibler une référence (SKU), qui a installé un fichier manifeste dans le cadre de son contenu pour annoncer sa disponibilité aux extensions. L' `<InstallationTarget>` élément a les attributs suivants lorsque l' `Scope` attribut a la valeur explicite ou par défaut «ProductExtension»:
+- `<InstallationTarget>`: Cet élément contrôle l’emplacement où le programme d’installation VSIX installe le package. Si la valeur de l' `Scope` attribut est « ProductExtension », le package doit cibler une référence (SKU), qui a installé un fichier manifeste dans le cadre de son contenu pour annoncer sa disponibilité aux extensions. L' `<InstallationTarget>` élément a les attributs suivants lorsque l' `Scope` attribut a la valeur explicite ou par défaut « ProductExtension » :
 
-  - `Id`-Cet attribut identifie le package.  L’attribut suit la Convention d’espace de noms: Company.Product.Feature.Name. L' `Id` attribut ne peut contenir que des caractères alphanumériques et est limité à 100 caractères. Valeurs attendues:
+  - `Id`-Cet attribut identifie le package.  L’attribut suit la Convention d’espace de noms : Company.Product.Feature.Name. L' `Id` attribut ne peut contenir que des caractères alphanumériques et est limité à 100 caractères. Valeurs attendues :
 
     - Microsoft.VisualStudio.IntegratedShell
 
@@ -138,11 +138,11 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 ### <a name="dependencies-element"></a>Élément Dependencies
  Cet élément contient la liste des dépendances déclarées par ce package. Si des dépendances sont spécifiées, ces packages (identifiés `Id`par leur) doivent avoir été installés avant.
 
-- `<Dependency>`Element: cet élément enfant a les attributs suivants:
+- `<Dependency>`Element : cet élément enfant a les attributs suivants :
 
-  - `Id`-Cet attribut doit être un ID unique pour le package dépendant. Cette valeur d’identité doit correspondre `<Metadata><Identity>Id` à l’attribut d’un package dont ce package dépend. L' `Id` attribut suit la Convention d’espace de noms: Company.Product.Feature.Name. L’attribut ne peut contenir que des caractères alphanumériques et est limité à 100 caractères.
+  - `Id`-Cet attribut doit être un ID unique pour le package dépendant. Cette valeur d’identité doit correspondre `<Metadata><Identity>Id` à l’attribut d’un package dont ce package dépend. L' `Id` attribut suit la Convention d’espace de noms : Company.Product.Feature.Name. L’attribut ne peut contenir que des caractères alphanumériques et est limité à 100 caractères.
 
-  - `Version`-Cet attribut spécifie une plage de versions avec les versions minimales et maximales prises en charge de cette référence SKU. Un package peut détailler les versions des références SKU qu’il prend en charge. La notation de plage de versions est [12,0, 13,0], où:
+  - `Version`-Cet attribut spécifie une plage de versions avec les versions minimales et maximales prises en charge de cette référence SKU. Un package peut détailler les versions des références SKU qu’il prend en charge. La notation de plage de versions est [12,0, 13,0], où :
 
     - [-version inclusive minimale.
 
@@ -163,9 +163,9 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 ### <a name="assets-element"></a>Élément Assets
  Cet élément contient une liste de `<Asset>` balises pour chaque extension ou élément de contenu qui est exposée par ce package.
 
-- `<Asset>`-Cet élément contient les attributs et les éléments suivants:
+- `<Asset>`-Cet élément contient les attributs et les éléments suivants :
 
-  - `Type`: Type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir le même `Type`. Cet attribut doit être représenté sous la forme d’un nom qualifié complet, conformément aux conventions de l’espace de noms. Les types connus sont les suivants:
+  - `Type`: Type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir le même `Type`. Cet attribut doit être représenté sous la forme d’un nom qualifié complet, conformément aux conventions de l’espace de noms. Les types connus sont les suivants :
 
     1. Microsoft.VisualStudio.VsPackage
 
@@ -187,7 +187,7 @@ Un fichier manifeste de déploiement VSIX décrit le contenu d’un package VSIX
 
   - `TargetVersion`-plage de versions à laquelle s’applique la ressource donnée. Utilisé pour l’expédition de plusieurs versions de ressources vers différentes versions de Visual Studio. Nécessite l’effet de Visual Studio 2017,3 ou une version plus récente.
 
-  - `AnyAttribute*`-Ensemble d’attributs Open-fini qui est exposé au moment de l’exécution en tant que dictionnaire de paires nom-valeur.
+  - `AnyAttribute*`-Jeu d’attributs Open-fini qui est exposé au moment de l’exécution en tant que dictionnaire de paires nom-valeur.
 
     `<AnyElement>*`-Tout contenu structuré est autorisé entre une `<Asset>` balise de début et de fin. Tous les éléments sont exposés sous la forme d’une liste d’objets XmlElement. Les extensions VSIX peuvent définir des métadonnées spécifiques au type structuré dans le fichier manifeste et les énumérer au moment de l’exécution.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923073"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236221"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
 
@@ -30,14 +30,14 @@ ms.locfileid: "68923073"
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Dans son constructeur, un attribut définit des arguments qui n’ont pas de propriétés correspondantes.
 
 ## <a name="rule-description"></a>Description de la règle
-Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l’attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu’ils sont fournis aux constructeurs d’attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l’attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l’argument puisse être récupérée au moment de l’exécution. Cette règle vérifie que pour chaque paramètre de constructeur, vous avez défini la propriété correspondante.
+Les attributs peuvent définir des arguments obligatoires qui doivent être spécifiés lorsque vous appliquez l’attribut à une cible. Ceux-ci sont également appelés arguments positionnels parce qu’ils sont fournis aux constructeurs d’attributs en tant que paramètres positionnels. Pour chaque argument obligatoire, l'attribut doit également fournir une propriété en lecture seule correspondante afin que la valeur de l'argument puisse être récupérée au moment de l'exécution. Cette règle vérifie que pour chaque paramètre de constructeur, vous avez défini la propriété correspondante.
 
 Les attributs peuvent également définir des arguments facultatifs, qui sont également appelés arguments nommés. Ces arguments sont fournis aux constructeurs d’attributs par noms et doivent disposer d’une propriété en lecture/écriture correspondante.
 
@@ -60,11 +60,11 @@ L’exemple suivant montre deux attributs qui définissent un paramètre obligat
 
 Les arguments positionnels et nommés rendent clair aux consommateurs de votre bibliothèque les arguments obligatoires pour l’attribut et les arguments facultatifs.
 
-L’exemple suivant montre une implémentation d’un attribut qui a à la fois des arguments positionnels et des arguments nommés:
+L’exemple suivant montre une implémentation d’un attribut qui a à la fois des arguments positionnels et des arguments nommés :
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés:
+L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés :
 
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 

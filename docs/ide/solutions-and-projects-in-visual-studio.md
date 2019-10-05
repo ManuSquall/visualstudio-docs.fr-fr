@@ -20,33 +20,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a8dbc2fd9a6fc89b0be62271b048f8275a82b2
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: c63bc4b52e47c52096d0aa2d339b3c6dc96d7fe9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432201"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251898"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
-Cet article décrit le concept d’un *projet* et d’une *solution* dans Visual Studio. Il décrit également brièvement comment créer un projet ainsi que la fenêtre Outil **Explorateur de solutions**.
+Cette page décrit le concept d’un *projet* et d’une *solution* dans Visual Studio. Elle aborde également brièvement la fenêtre outil Explorateur de solutions et explique comment créer un nouveau projet.
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Projets et solutions dans Visual Studio pour Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Projets
 
-Quand vous créez une application, un site web, un plug-in, etc. dans Visual Studio, vous démarrez avec un *projet*. Du point de vue logique, un projet contient tous les fichiers de code source, icônes, images, fichiers de données, et ainsi de suite, qui sont compilés dans un fichier exécutable, une bibliothèque ou un site web. Un projet contient également des paramètres de compilateur et d’autres fichiers de configuration qui peuvent être nécessaires aux différents services ou composants avec lesquels votre programme communique.
+Lorsque vous créez une application ou un site Web dans Visual Studio, vous démarrez avec un *projet*. Dans un sens logique, un projet contient tous les fichiers qui sont compilés dans un fichier exécutable, une bibliothèque ou un site Web. Ces fichiers peuvent inclure du code source, des icônes, des images, des fichiers de données, etc. Un projet contient également des paramètres de compilateur et d’autres fichiers de configuration qui peuvent être nécessaires aux différents services ou composants avec lesquels votre programme communique.
+
+### <a name="project-file"></a>Fichier projet
+
+Visual Studio utilise [MSBuild](../msbuild/msbuild.md) pour générer chaque projet dans une solution, et chaque projet contient un fichier projet MSBuild. L’extension de fichier reflète le type de projet, par exemple un C# projet (. csproj), un projet de Visual Basic (. vbproj) ou un projet de base de données (. dbproj). Le fichier projet est un document XML qui contient toutes les informations et instructions dont MSBuild a besoin pour générer votre projet, y compris le contenu, la plateforme requise, les informations de versioning, les paramètres du serveur Web ou du serveur de base de données, ainsi que les tâches à assurer.
+
+Les fichiers projet sont basés sur le [schéma XML MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Pour examiner le contenu des [fichiers projet de type SDK](../msbuild/how-to-use-project-sdk.md) plus récents dans Visual Studio, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez  **\<modifier NomProjet.\>** Pour examiner le contenu de .NET Framework et d’autres projets de ce style, déchargez tout d’abord le projet (cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez **décharger le projet**). Ensuite, cliquez avec le bouton droit sur le projet **et \<choisissez\>modifier ProjectName**.
 
 > [!NOTE]
-> Vous n’êtes pas obligé d’utiliser des solutions et des projets dans Visual Studio pour modifier, générer et déboguer du code. Vous pouvez simplement ouvrir le dossier qui contient vos fichiers de code source dans Visual Studio et commencer à les modifier. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
-
-Un projet est défini dans un fichier XML avec une extension comme *.vbproj*, *.csproj* ou *.vcxproj*. Ce fichier contient une hiérarchie de dossiers virtuels et des chemins vers tous les éléments du projet. Il contient également les paramètres de génération.
-
-> [!TIP]
-> Pour consulter le contenu d’un fichier projet dans Visual Studio, déchargez tout d’abord le projet en sélectionnant le nom du projet dans **l’Explorateur de solutions**, puis choisissez **Décharger le projet** dans le menu contextuel. Ensuite, rouvrez le menu contextuel et choisissez **Modifier \<nom_projet\>** .
-
-Dans Visual Studio, le fichier projet est utilisé par **l’Explorateur de solutions** pour afficher le contenu et les paramètres du projet. Quand vous compilez votre projet, le moteur MSBuild utilise le fichier projet pour créer l'exécutable. Vous pouvez également personnaliser des projets pour produire d’autres types de sorties.
+> Vous n’êtes pas obligé d’utiliser des solutions ou des projets dans Visual Studio pour modifier, générer et déboguer du code. Vous pouvez simplement ouvrir le dossier qui contient vos fichiers de code source dans Visual Studio et commencer à les modifier. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions"></a>Solutions
 
@@ -63,7 +62,7 @@ Visual Studio utilise deux types de fichiers ( *.sln* et *.suo*) pour stocker le
 
 Le moyen le plus simple pour créer un projet consiste à partir d’un modèle de projet pour un type particulier d’application ou de site web. Un modèle de projet se compose d’un ensemble de fichiers de code prégénérés, de fichiers de configuration, de ressources et de paramètres. Ces modèles sont disponibles dans la boîte de dialogue où vous créez un projet (**Fichier** > **Nouveau** > **Projet**). Pour plus d’informations, consultez [Créer un nouveau projet dans Visual Studio](create-new-project.md) et [Créer des solutions et projets](../ide/creating-solutions-and-projects.md).
 
-Si vous personnalisez souvent vos projets d’une certaine manière, vous pouvez créer un modèle de projet personnalisé que vous pouvez ensuite utiliser pour la création de nouveaux projets. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
+Si vous personnalisez souvent vos projets d’une certaine manière, vous pouvez créer un modèle de projet personnalisé que vous pourrez ensuite utiliser pour créer de nouveaux projets à partir de. Pour plus d’informations, consultez [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
 Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations, consultez [Page Projets et solutions, boîte de dialogue Options](../ide/reference/projects-and-solutions-options-dialog-box.md).
 

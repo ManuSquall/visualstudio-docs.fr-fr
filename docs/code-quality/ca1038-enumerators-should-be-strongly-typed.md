@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922893"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236013"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038 : Les énumérateurs doivent être fortement typés
 
@@ -27,11 +27,11 @@ ms.locfileid: "68922893"
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un type public ou protégé implémente <xref:System.Collections.IEnumerator?displayProperty=fullName> , mais ne fournit pas de version fortement typée <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> de la propriété. Les types dérivés des types suivants sont exempts de cette règle:
+Un type public ou protégé implémente <xref:System.Collections.IEnumerator?displayProperty=fullName> , mais ne fournit pas de version fortement typée <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> de la propriété. Les types dérivés des types suivants sont exempts de cette règle :
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 

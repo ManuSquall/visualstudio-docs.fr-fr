@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: b3c6298c2186b6a73b4a7ef441b5f4c42c90ff6a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714982"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231058"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
 
@@ -32,11 +32,11 @@ ms.locfileid: "66714982"
 
 ## <a name="cause"></a>Cause
 
-Un fichier de ressources a été créé à l’aide d’une version de .NET qui n’est pas pris en charge actuellement.
+Un fichier de ressources a été créé à l’aide d’une version de .NET qui n’est pas prise en charge actuellement.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les fichiers de ressources qui ont été créés à l’aide de versions préliminaires de .NET n’est peut-être pas utilisables par les versions prises en charge de .NET.
+Les fichiers de ressources générés à l’aide des versions préliminaires de .NET peuvent ne pas être utilisables par les versions prises en charge de .NET.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

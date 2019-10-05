@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841455"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238121"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001 : Passez en revue le code pour détecter les vulnérabilités de l’injection SQL
 
@@ -28,27 +28,27 @@ ms.locfileid: "65841455"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint le texte d’une commande SQL.
+Une entrée de requête HTTP potentiellement non approuvée atteint le texte d’une commande SQL.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées et les commandes SQL, n’oubliez pas d’attaques par injection SQL. Attaque par injection SQL peut exécuter des commandes SQL malveillantes, compromettre la sécurité et l’intégrité de votre application. Les techniques classiques incluent à l’aide d’un guillemet ou une apostrophe pour délimiter les chaînes littérales, deux tirets pour un commentaire et un point-virgule pour la fin d’une instruction. Pour plus d’informations, consultez [Injection SQL](/sql/relational-databases/security/sql-injection).
+Lorsque vous utilisez des commandes d’entrée et SQL non fiables, tenez-vous à l’esprit des attaques par injection SQL. Une attaque par injection de SQL peut exécuter des commandes SQL malveillantes et compromettre la sécurité et l’intégrité de votre application. Les techniques classiques incluent l’utilisation d’un guillemet simple ou d’une apostrophe pour délimiter des chaînes littérales, deux tirets pour un commentaire et un point-virgule pour la fin d’une instruction. Pour plus d’informations, consultez [injection SQL](/sql/relational-databases/security/sql-injection).
 
-Cette règle tente de trouver l’entrée à partir des demandes HTTP atteint le texte d’une commande SQL.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui exécute la commande SQL, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir de requêtes HTTP qui atteignent le texte d’une commande SQL.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le transmet à un autre assembly qui exécute la commande SQL, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Utiliser des commandes SQL paramétrables, ou des procédures stockées, avec des paramètres contenant les entrées non approuvées.
+Utilisez des commandes SQL paramétrées ou des procédures stockées avec des paramètres contenant l’entrée non approuvée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer un avertissement de cette règle si vous savez que l’entrée est toujours validée par rapport à un ensemble sûr connu de caractères.
+Il est possible de supprimer sans risque un avertissement de cette règle si vous savez que l’entrée est toujours validée par rapport à un jeu de caractères sécurisé connu.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

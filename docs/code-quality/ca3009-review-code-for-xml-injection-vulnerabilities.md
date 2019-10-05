@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237245"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009 : Passez en revue le code pour détecter les vulnérabilités de l’injection XML
 
@@ -28,29 +28,29 @@ ms.locfileid: "65841069"
 
 ## <a name="cause"></a>Cause
 
-Entrée de demande HTTP potentiellement non fiable atteint la sortie XML brute.
+Une entrée de requête HTTP potentiellement non approuvée atteint la sortie XML brute.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque vous travaillez avec des entrées non approuvées, n’oubliez pas d’attaques par injection de XML. Une personne malveillante peut utiliser l’injection de code XML pour insérer des caractères spéciaux dans un document XML, rendant le document non valide XML. Ou bien, un attaquant pourrait insérer à des fins malveillantes des nœuds XML de leur choix.
+Lorsque vous travaillez avec des entrées non fiables, soyez attentif aux attaques par injection XML. Une personne malveillante peut utiliser l’injection XML pour insérer des caractères spéciaux dans un document XML, ce qui rend le document XML non valide. Ou bien, une personne malveillante peut insérer des nœuds XML de leur choix.
 
-Cette règle tente de trouver l’entrée à partir des demandes HTTP atteindre une écriture XML brute.
-
-> [!NOTE]
-> Cette règle ne peut pas suivre les données entre les assemblys. Par exemple, si un seul assembly lit l’entrée de demande HTTP et le transmet ensuite à un autre assembly qui écrit le code XML brut, cette règle ne génère un avertissement.
+Cette règle tente de trouver une entrée à partir de requêtes HTTP qui atteignent une écriture XML brute.
 
 > [!NOTE]
-> Il existe une limite configurable pour la profondeur cette règle permet d’analyser les flux de données entre les appels de méthode. Consultez [Configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier EditorConfig.
+> Cette règle ne peut pas effectuer le suivi des données dans les assemblys. Par exemple, si un assembly lit l’entrée de la requête HTTP, puis le transmet à un autre assembly qui écrit du code XML brut, cette règle ne génère pas d’avertissement.
+
+> [!NOTE]
+> Il existe une limite configurable de la profondeur de cette règle pour analyser le workflow des données entre les appels de méthode. Consultez [configuration de l’analyseur](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) pour savoir comment configurer la limite dans un fichier baEditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Ne pas écrire du code XML brut. Au lieu de cela, utilisez méthodes ou propriétés ce XML à encoder leur entrée.
+N’écrivez pas de code XML brut. Utilisez plutôt des méthodes ou des propriétés qui encodent en XML leur entrée.
 
-Ou bien, encoder en XML d’entrée avant d’écrire le code XML brut.
+Ou encodez en XML l’entrée avant d’écrire du code XML brut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne pas supprimer les avertissements de cette règle.
+Ne supprimez pas les avertissements de cette règle.
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 

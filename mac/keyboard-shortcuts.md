@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872091"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273319"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
 
-Pour plus d’informations sur l’accessibilité au clavier, consultez [Procédure : Utiliser la navigation au clavier](~/accessibility.md#how-to-use-keyboard-navigation).
+Pour plus d’informations sur l’accessibilité au clavier, consultez [Procédure : Utiliser la navigation au clavier](~/accessibility-keyboard.md).
 
-Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez utiliser les raccourcis clavier appropriés. Ce document répertorie les raccourcis par défaut du schéma de combinaison de touches **Visual Studio**. Pour plus d’informations sur la modification du schéma de combinaison de touches, consultez [Personnalisation de l’IDE](~/customizing-the-ide.md#key-bindings). Vous pouvez également personnaliser les raccourcis d’une commande à l’aide de l’élément de menu **Visual Studio pour Mac** > **Préférences** et en choisissant **Environnement**  >  **Combinaisons de touches** dans la fenêtre **Préférences**.
+Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez utiliser les raccourcis clavier appropriés. Ce document répertorie les raccourcis par défaut pour le schéma de combinaison de touches **Visual Studio pour Mac** . Pour plus d’informations sur la modification du schéma de combinaison de touches, consultez [Personnalisation de l’IDE](~/customizing-the-ide.md#key-bindings). Vous pouvez également personnaliser les raccourcis d’une commande à l’aide de l’élément de menu **Visual Studio pour Mac** > **Préférences** et en choisissant **Environnement**  >  **Combinaisons de touches** dans la fenêtre **Préférences**.
 
 > [!TIP]
 > Les raccourcis clavier indiqués dans ce document et les préférences de combinaison de touches dans Visual Studio pour Mac sont présentés à l’aide de symboles fréquemment utilisés dans macOS. En cas de doute sur un symbole, passez en revue la [table de recherche de symboles de touches macOS](#macos-key-symbols-lookup).

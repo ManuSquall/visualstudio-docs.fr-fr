@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71095256"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Utiliser des points de trace dans le débogueur Visual Studio
@@ -110,7 +110,7 @@ Pour le nombre d’accès, vous pouvez choisir de générer un message lorsque l
 
 ![Nombre d’accès aux expressions conditionnelles](../debugger/media/conditionalexpressionhitcount.png "Nombre d’accès aux expressions conditionnelles")
 
-### <a name="filter"></a>Filtrer
+### <a name="filter"></a>Filtre
 Pour une condition de filtre, spécifiez les périphériques, les processus ou les threads pour lesquels la sortie est affichée.
 
 ![Filtre d’expression conditionnelle](../debugger/media/conditionalexpressionfilter.png "Filtre d’expression conditionnelle")
@@ -125,7 +125,7 @@ Liste des expressions de filtre :
 
 Placez les chaînes (telles que les noms) entre guillemets doubles. Les valeurs peuvent être entrées sans guillemets. Vous pouvez combiner des clauses `&` à`AND`l’aide `||` de`OR`(),`NOT`(), `!` () et des parenthèses.
 
-## <a name="considerations"></a>Considérations
+## <a name="considerations"></a>Éléments à prendre en considération
 
 Alors que les points de trace ont pour but de faciliter le débogage, vous devez tenir compte de certaines considérations lorsqu’il s’agit de les utiliser.
 

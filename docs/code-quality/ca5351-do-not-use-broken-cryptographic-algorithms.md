@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540857"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236949"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
 
@@ -35,7 +35,7 @@ Les algorithmes de chiffrement répertoriés ci-dessous sont soumise aux attaque
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les algorithmes de chiffrement cassés ne sont pas considérés comme sécurisés, et leur utilisation doit être déconseillée. L’algorithme de hachage MD5 est vulnérable à des attaques par collision connues, bien que la vulnérabilité varie en fonction du contexte d’utilisation.  Les algorithmes de hachage utilisés pour garantir l’intégrité des données (par exemple, la signature de fichier ou le certificat numérique) sont particulièrement vulnérables.  Dans ce contexte, des personnes malveillantes peuvent générer deux éléments distincts de données (et donc remplacer des données ordinaires par des données malveillantes) sans modifier la valeur de hachage ou invalider une signature numérique associée.
+Les algorithmes de chiffrement cassés ne sont pas considérés comme sécurisés, et leur utilisation doit être déconseillée. L’algorithme de hachage MD5 est vulnérable à des attaques par collision connues, bien que la vulnérabilité varie en fonction du contexte d’utilisation.  Les algorithmes de hachage utilisés pour garantir l’intégrité des données (par exemple, une signature de fichier ou un certificat numérique) sont particulièrement vulnérables.  Dans ce contexte, des personnes malveillantes peuvent générer deux éléments distincts de données (et donc remplacer des données ordinaires par des données malveillantes) sans modifier la valeur de hachage ou invalider une signature numérique associée.
 
 Pour les algorithmes de chiffrement :
 
@@ -49,7 +49,7 @@ Cette règle se déclenche quand elle détecte l’une des fonctions de chiffrem
 
 Utilisez des options de chiffrement plus fortes :
 
-- Pour MD5, utilisez des hachages de la [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Pour MD5, utilisez des hachages dans la famille [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (par exemple <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384>,, <xref:System.Security.Cryptography.SHA256>,).
 
 - Pour DES et RC2, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .
 
@@ -59,7 +59,7 @@ Ne supprimez aucun avertissement de cette règle, sauf s’il a été examiné p
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 
-Les exemples de pseudo-code suivant illustrent le modèle détecté par cette règle et les alternatives possibles.
+Les exemples de pseudo-code suivants illustrent le modèle détecté par cette règle et les alternatives possibles.
 
 ### <a name="md5-hashing-violation"></a>Violation de hachage MD5
 

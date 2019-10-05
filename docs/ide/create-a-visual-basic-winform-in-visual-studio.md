@@ -1,7 +1,7 @@
 ---
 title: Créer une application Windows Forms avec Visual Basic
 description: Découvrez comment créer une application Windows Forms dans Visual Studio avec Visual Basic, étape par étape.
-ms.date: 03/23/2019
+ms.date: 09/27/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,15 +10,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 dev_langs:
-- vb
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c031a047a0331eea0f8397a303d2b5cb0af650e6
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 8be3edaaab970dab7ef41bd8bce75c84bac54a2e
+ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180134"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681583"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Créer une application Windows Forms dans Visual Studio avec Visual Basic
 
@@ -47,9 +47,9 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **Bureau Windows**. Dans le volet central, choisissez **Windows Forms App (.NET Framework)** . Nommez ensuite le fichier `HelloWorld`.
+1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **Bureau Windows**. Dans le volet central, choisissez **Windows Forms App (.NET Framework)** . Nommez ensuite le fichier `HelloWorld`.
 
      Si vous ne voyez pas le modèle de projet **Windows Forms App (.NET Framework)** , quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
@@ -65,19 +65,19 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+1. Dans la fenêtre **créer un nouveau projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour Visual Basic.
 
-   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application Windows Forms (.NET Framework)** , puis choisissez **Suivant**.
+   (Si vous préférez, vous pouvez affiner votre recherche pour accéder rapidement au modèle de votre choix. Par exemple, entrez ou tapez *Windows Forms application* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme.)  
 
    ![Choisir le modèle Visual Basic pour l’application Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
    >
-   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Le lien « Installer plus d’outils et de fonctionnalités » du message « Vous ne trouvez pas ce que vous cherchez ? » dans la fenêtre « Créer un projet »](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement .NET Desktop**.
-   > 
+   >
    > ![Charge de travail .NET Core dans Visual Studio Installer](../ide/media/install-dot-net-desktop-env.png)
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
@@ -92,7 +92,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 ## <a name="create-the-application"></a>Créer l’application
 
-Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre fichier, Visual Studio ouvre un formulaire. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter cette application.
+Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nommé votre fichier, Visual Studio ouvre un formulaire. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 
 ### <a name="add-a-button-to-the-form"></a>Ajouter un bouton au formulaire
 
@@ -100,25 +100,28 @@ Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nom
 
      ![Cliquer sur la boîte à outils pour ouvrir la fenêtre Boîte à outils](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, vous pouvez l’ouvrir en appuyant sur **Ctrl**+**Alt**+**X**.)
+     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **Affichez**la**boîte à outils** > . Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
-2. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre **Boîte à outils**.
+1. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre **Boîte à outils**.
 
      ![Cliquer sur l’icône Épingler pour épingler la fenêtre Boîte à outils à l’IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-3. Cliquez sur le contrôle **Button**, puis faites-le glisser sur le formulaire.
+1. Cliquez sur le contrôle **Button**, puis faites-le glisser sur le formulaire.
 
      ![Ajouter un bouton au formulaire](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Dans la section **Apparence** (ou la section **Polices**) de la fenêtre **Propriétés**, tapez `Click this`, puis appuyez sur **Entrée**.
+1. Dans la section **Apparence** (ou la section **Polices**) de la fenêtre **Propriétés**, tapez `Click this`, puis appuyez sur **Entrée**.
 
      ![Ajouter du texte au bouton du formulaire](../ide/media/vb-button-control-text.png)
 
      (Si vous ne voyez pas la fenêtre **Propriétés**, ouvrez-la à partir de la barre de menus. Pour cela, cliquez sur **Affichage** > **Fenêtre Propriétés**. Vous pouvez aussi appuyer sur **F4**.)
 
-5. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Button1** par `btnClickThis`, puis appuyez sur **Entrée**.
+1. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Button1** par `btnClickThis`, puis appuyez sur **Entrée**.
 
      ![Ajouter une fonction au bouton du formulaire](../ide/media/vb-button-control-function.png)
+
+   > [!NOTE]
+   > Si vous avez classé par ordre alphabétique la liste dans la fenêtre **Propriétés** , **Button1** apparaît dans la section **(DataBindings)** à la place.
 
 ### <a name="add-a-label-to-the-form"></a>Ajouter une étiquette au formulaire
 
@@ -126,7 +129,7 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 1. Sélectionnez le contrôle **Label** dans la fenêtre **Boîte à outils**, puis faites-le glisser sur le formulaire en dessous du bouton **Click this**.
 
-2. Dans la section **Design** de la fenêtre **Propriétés**, remplacez le nom **Label1** par `lblHelloWorld`, puis appuyez sur **Entrée**.
+1. Dans la section **conception** ou la section **(DataBindings)** de la fenêtre **Propriétés** , remplacez le nom de **Label1** par `lblHelloWorld`, puis appuyez sur **entrée**.
 
 ### <a name="add-code-to-the-form"></a>Ajouter du code au formulaire
 
@@ -134,7 +137,7 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
       (Vous pouvez également développer **Form1.vb** dans **Explorateur de solutions**, puis cliquer sur **Form1**.)
 
-2. Dans la fenêtre **Form1.vb**, entre la ligne **Private Sub** et la ligne **End Sub** (ou entre la ligne **Public Class Form1** et la ligne **End Class**), tapez le code suivant.
+1. Dans la fenêtre **Form1. vb** , entre les sous-lignes **Private Sub** et **End** , tapez ou entrez `lblHelloWorld.Text = "Hello World!"`, comme indiqué dans la capture d’écran suivante :
 
      ![Ajouter du code au formulaire](../ide/media/vb-add-code-to-the-form.png)
 
@@ -146,13 +149,21 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
    Il se passe alors plusieurs choses. Dans l’IDE de Visual Studio, la fenêtre **Outils de diagnostic** et une fenêtre **Sortie** s’ouvrent. En dehors de l’IDE, une boîte de dialogue **Form1** s’affiche. Elle contient le bouton **Click this** et le texte **Label1**.
 
-2. Cliquez sur le bouton **Click this** dans la boîte de dialogue **Form1**. Notez que le texte **Label1** devient **Hello World !** .
+1. Cliquez sur le bouton **Click this** dans la boîte de dialogue **Form1**. Notez que le texte **Label1** devient **Hello World !** .
 
     ![Boîte de dialogue Form1 contenant le texte Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur Visual Basic et l’IDE de Visual Studio. Si vous souhaitez approfondir ce sujet, poursuivez avec un didacticiel que vous trouverez dans la section **Didacticiels** de la table des matières.
+1. Fermez la boîte de dialogue **Form1** pour arrêter l’exécution de l’application.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour en savoir plus, passez au tutoriel suivant :
+
+> [!div class="nextstepaction"]
+> [Tutoriel : Créer une visionneuse d’images @ no__t-0
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Démarrage rapide : Créer une application console dans Visual Studio avec Visual Basic](quickstart-visual-basic-console.md)
-* [En savoir plus sur Visual Basic IntelliSense](visual-basic-specific-intellisense.md)
+* [Autres didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [C#gratuits](/visualstudio/get-started/csharp/)
+* [C++gratuits](/cpp/get-started/tutorial-console-cpp)

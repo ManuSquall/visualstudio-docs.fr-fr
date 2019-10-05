@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a418b211cd4340dba9c15f0bf52e3cdfdf8e8f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 066b9d013847f5362ee0dd712002cf8578fb57a6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547901"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236440"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
 
@@ -27,7 +27,7 @@ ms.locfileid: "69547901"
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. La collection peut ensuite être utilisée pour remplir des types de collections génériques, tels que les suivants:
+Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. La collection peut ensuite être utilisée pour remplir des types de collections génériques, tels que les suivants :
 
 - <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
@@ -46,7 +46,7 @@ Pour étendre la facilité d’utilisation d’une collection, implémentez l’
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, implémentez l’une des interfaces de collection génériques suivantes:
+Pour corriger une violation de cette règle, implémentez l’une des interfaces de collection génériques suivantes :
 
 - <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
@@ -54,11 +54,11 @@ Pour corriger une violation de cette règle, implémentez l’une des interfaces
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer sans risque un avertissement de cette règle; Toutefois, l’utilisation de la collection sera plus limitée.
+Il est possible de supprimer sans risque un avertissement de cette règle ; Toutefois, l’utilisation de la collection sera plus limitée.
 
 ## <a name="configurability"></a>Configurabilité
 
-Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet:
+Si vous exécutez cette règle à partir d' [analyseurs FxCop](install-fxcop-analyzers.md) (et non avec l’analyse héritée), vous pouvez configurer les parties de votre code base sur lesquelles exécuter cette règle, en fonction de leur accessibilité. Par exemple, pour spécifier que la règle doit s’exécuter uniquement sur la surface d’API non publique, ajoutez la paire clé-valeur suivante à un fichier. editorconfig dans votre projet :
 
 ```ini
 dotnet_code_quality.ca1010.api_surface = private, internal
@@ -72,7 +72,7 @@ L’exemple suivant montre une classe (type référence) qui dérive de la class
 
 [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
-Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes:
+Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes :
 
 - Implémentez les interfaces génériques.
 - Remplacez la classe de base par un type qui implémente déjà à la fois les interfaces génériques et non génériques, telles `Collection<T>` que la classe.

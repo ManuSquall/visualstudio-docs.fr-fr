@@ -1,4 +1,4 @@
-- name: Documentation de Visual Studio
+- name: Documentation sur l’IDE Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Vue d'ensemble
@@ -654,7 +654,7 @@
         - name: "Procédure pas à pas\_: Créer un environnement de build sur plusieurs ordinateurs"
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Déboguer >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Tester >>
       displayName: Unit testing
       href: test/improve-code-quality.md
@@ -708,7 +708,7 @@
         - name: Comportement au démarrage
           displayName: Start page window
           href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: Rechercher et utiliser des extensions Visual Studio
+        - name: Gérer les extensions
           href: ide/finding-and-using-visual-studio-extensions.md
           displayName: 'marketplace, gallery, vsix'
         - name: Gérer les outils externes

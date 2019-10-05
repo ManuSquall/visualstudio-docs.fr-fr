@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921388"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253455"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822 : Marquez les membres comme static
 
@@ -27,8 +27,8 @@ ms.locfileid: "68921388"
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|Catégorie|Microsoft. performance|
-|Modification avec rupture|Sans rupture: si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez. Sans rupture: Si vous changez simplement le membre en membre d’instance avec le `this` mot clé.<br /><br /> Avec rupture: Si vous remplacez le membre d’un membre d’instance par un membre statique et qu’il est visible à l’extérieur de l’assembly.|
+|Category|Microsoft. performance|
+|Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez. Sans rupture : Si vous changez simplement le membre en membre d’instance avec le `this` mot clé.<br /><br /> Avec rupture : Si vous remplacez le membre d’un membre d’instance par un membre statique et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
 Un membre qui n’accède pas aux données d’instance n’est pas marqué comme static [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](Shared in).

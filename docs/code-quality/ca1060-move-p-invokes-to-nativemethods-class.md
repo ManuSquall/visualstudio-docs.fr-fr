@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922560"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235480"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060 : Déplacer les P/Invoke vers une classe NativeMethods
 
@@ -30,7 +30,7 @@ ms.locfileid: "68922560"
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft.Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -39,7 +39,7 @@ Une méthode utilise des services d’appel de plateforme pour accéder à du co
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les méthodes d’appel de code non managé, telles que celles qui sont <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> marquées à l’aide de l’attribut, ou `Declare` les méthodes [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]définies à l’aide du mot clé dans, accèdent au code non managé. Ces méthodes doivent être dans l’une des classes suivantes:
+Les méthodes d’appel de code non managé, telles que celles qui sont <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> marquées à l’aide de l’attribut, ou `Declare` les méthodes [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]définies à l’aide du mot clé dans, accèdent au code non managé. Ces méthodes doivent être dans l’une des classes suivantes :
 
 - **NativeMethods** : cette classe ne supprime pas les parcours de pile pour l’autorisation de code non managé. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> ne doit pas être appliqué à cette classe.) Cette classe est destinée aux méthodes qui peuvent être utilisées n’importe où, car un parcours de la pile sera effectué.
 
@@ -92,7 +92,7 @@ L’exemple suivant montre une propriété **Environment. TickCount** qui encaps
 ## <a name="unsafenativemethods-example"></a>Exemple UnsafeNativeMethods
 
 ### <a name="description"></a>Description
-Les méthodes P/Invoke qui ne peuvent pas être appelées en toute sécurité et qui peuvent provoquer des effets secondaires doivent être placées dans une classe nommée **UnsafeNativeMethods**. Ces méthodes doivent être vérifiées rigoureusement pour s’assurer qu’elles ne sont pas exposées involontairement à l’utilisateur. La règle [CA2118: Pour plus d'](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) informations, consultez Utilisation de SuppressUnmanagedCodeSecurityAttribute. Les méthodes doivent également avoir une autre autorisation demandée au lieu de **UnmanagedCode** lorsqu’elles sont utilisées.
+Les méthodes P/Invoke qui ne peuvent pas être appelées en toute sécurité et qui peuvent provoquer des effets secondaires doivent être placées dans une classe nommée **UnsafeNativeMethods**. Ces méthodes doivent être vérifiées rigoureusement pour s’assurer qu’elles ne sont pas exposées involontairement à l’utilisateur. La règle [CA2118 : Pour plus d'](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) informations, consultez Utilisation de SuppressUnmanagedCodeSecurityAttribute. Les méthodes doivent également avoir une autre autorisation demandée au lieu de **UnmanagedCode** lorsqu’elles sont utilisées.
 
 L’exemple suivant montre une méthode **Cursor. Hide** qui encapsule la fonction **ShowCursor** à partir de user32. dll.
 

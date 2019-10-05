@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872349"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211474"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
 
 La prise en charge poussée de [Xamarin](/xamarin) permet de développer des expériences natives riches pour Android, macOS, iOS, tvOS et watchOS. Les applications multiplateformes Xamarin.Forms permettent de partager le code d’interface utilisateur XAML entre Android, iOS et macOS sans limiter l’accès aux fonctionnalités natives.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Le rechargement à chaud XAML pour Xamarin. Forms est intégré à Visual Studio pour Mac dans la version 8,3 et les versions ultérieures. Lorsque cette fonctionnalité est activée, les modifications sont instantanément reflétées dans votre application en cours d’exécution chaque fois que vous enregistrez le fichier.
+
+Vous pouvez activer le rechargement à chaud XAML en activant la case à cocher **activer le rechargement à chaud Xamarin** dans **Visual Studio > préférences > Projets > le rechargement à chaud Xamarin**.
+
+Pour plus d’informations sur le rechargement à chaud, consultez le [Guide de rechargement à chaud XAML pour Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
 
 ## <a name="android"></a>Android
 

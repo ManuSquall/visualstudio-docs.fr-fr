@@ -1,7 +1,7 @@
 ---
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 07/29/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,101 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661958"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185994"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="4330"></a>4.3.3.0
+
+Publiée le 23 septembre 2019
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+  - Correction du signalement des erreurs et des avertissements pour les builds légères.
+
+## <a name="4320"></a>4.3.2.0
+
+Publiée le 16 septembre 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration :**
+
+  - Nous avons approfondi la compréhension de Visual Studio pour les projets Unity en ajoutant de nouveaux diagnostics spécifiques à Unity. Nous avons également rendu l’IDE plus intelligent en supprimant les diagnostics C# généraux qui ne s’appliquent pas aux projets Unity. Par exemple, l’IDE n’affiche pas de correctif rapide pour modifier une variable d' `readonly` inspecteur, ce qui vous empêche de modifier la variable dans l’éditeur Unity.
+    - `UNT0001`: Les messages Unity sont appelés par le runtime même s’ils sont vides ; ne les déclarez pas pour éviter tout traitement inutile par le runtime Unity.
+    - `UNT0002`: La comparaison de balises à l’aide de l’égalité des chaînes est plus lente que la méthode CompareTag intégrée.
+    - `UNT0003`: L’utilisation de la forme générique de GetComponent est préférable pour la cohérence des types.
+    - `UNT0004`: Le message de mise à jour est dépendant de la fréquence d’images et doit utiliser Time.deltaTime au lieu de Time.fixedDeltaTime.
+    - `UNT0005`: Le message FixedUpdate est indépendant de la fréquence d’images et doit utiliser Time.fixedDeltaTime au lieu de Time.deltaTime.
+    - `UNT0006`: Une signature de méthode incorrecte a été détectée pour ce message Unity.
+    - `UNT0007`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la fusion null.
+    - `UNT0008`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la propagation null.
+    - `UNT0009`: Lors de l’application de l’attribut InitializeOnLoad à une classe, vous devez fournir un constructeur statique. L’attribut InitializeOnLoad garantit qu’il sera appelé au lancement de l’éditeur.
+    - `UNT0010`: Les MonoBehaviours doivent être créés uniquement en utilisant AddComponent(). Un MonoBehaviour est un composant et doit être attaché à un GameObject.
+    - `UNT0011`: ScriptableObject doit uniquement être créé à l’aide de CreateInstance(). ScriptableObject doit être créé par le moteur Unity pour gérer les méthodes de message Unity.
+    - `USP0001`pour `IDE0029`: Les objets Unity ne doivent pas utiliser la fusion Null.
+    - `USP0002`pour `IDE0031`: Les objets Unity ne doivent pas utiliser la propagation null.
+    - `USP0003`pour `IDE0051`: Les messages Unity sont appelés par le runtime Unity.
+    - `USP0004`pour `IDE0044`: Les champs avec un attribut SerializeField ne doivent pas être rendus ReadOnly.
+
+## <a name="4310"></a>4.3.1.0
+
+publication : 4 septembre 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Évaluation :**
+
+  - Ajout de la prise en charge d’un meilleur `List<object>` affichage de `List'1[[System.Object, <corlib...>]]`type, c’est-à-dire au lieu de.
+
+  - Ajout de la prise en charge de l’accès `p->data->member`au membre pointeur, c.-à-d.
+
+  - Ajout de la prise en charge des conversions implicites dans les `new byte [] {1,2,3,4}`initialiseurs de tableau, c.-à-d.
+
+## <a name="4300"></a>4.3.0.0
+
+publication : 13 août 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Débogueur :**
+
+  - Ajout de la prise en charge du protocole MDS 2.51.
+
+- **Intégration :**
+
+  - Amélioration de la fenêtre « attacher à l’instance Unity » avec des fonctionnalités de tri, de recherche et d’actualisation. PID est désormais affiché même pour les lecteurs locaux (en interrogeant les sockets d’écoute sur le système pour récupérer le processus propriétaire).
+
+  - Ajout de la prise en charge des fichiers asmdef.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+  - Correction de la gestion des messages mal formés lors de la communication avec des joueurs Unity.
+
+- **Évaluation :**
+
+  - Correction de la gestion des espaces de noms dans les expressions.
+
+  - Correction de l’inspection avec les types IntPtr.
+  
+  - Correction des problèmes d’exécution avec des exceptions.
+
+  - Correction de l’évaluation des Pseudo-identificateurs (par exemple $exception).
+
+  - Empêcher le blocage lors du déréférencement des adresses non valides.  
+
+  - Correction du problème avec les AppDomains déchargés.
 
 ## <a name="4201"></a>4.2.0.1
 
@@ -79,7 +164,7 @@ Publication : 21 mai 2019
 
   - Mécanisme d’extraction de nom de projet mis à jour avec Unity 2019.x.
 
-  - Support ajouté pour les packages Unity dans l’UPE. Seuls les packages référencés (à l’aide de manifest.json dans le dossier ```Packages```) et les packages locaux (incorporés dans le dossier ```Packages```) sont visibles.
+  - Support ajouté pour les packages Unity dans l’UPE. Seuls les packages référencés (à l’aide de manifest.json dans le dossier `Packages`) et les packages locaux (incorporés dans le dossier `Packages`) sont visibles.
 
 - **Génération de projet :**
 
@@ -89,7 +174,7 @@ Publication : 21 mai 2019
 
   - Support ajouté pour les noms qualifiés d’alias (uniquement l’espace de noms global pour l’instant). Par conséquent, l’évaluateur d’expression accepte désormais les types utilisant le formulaire global::namespace.type.
 
-  - Support ajouté pour le formulaire ```pointer[index]```, sémantiquement identique au formulaire ```*(pointer+index)``` de déréférencement du pointeur.
+  - Support ajouté pour le formulaire `pointer[index]`, sémantiquement identique au formulaire `*(pointer+index)` de déréférencement du pointeur.
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
@@ -129,7 +214,7 @@ Publication : 13 février 2019
 
   - Prise en charge de la détection des processus Unity lors de l’installation et meilleure gestion du verrouillage de fichier par le moteur d’installation.
 
-  - Mise à jour de l’API ScriptableObject.
+  - Mise à `ScriptableObject` jour de l’API.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -139,13 +224,13 @@ Publication : 31 janvier 2019
 
 - **Génération de projet :**
 
-  - Suppression des avertissements générés par les champs publics et sérialisés. Nous avons supprimé automatiquement les avertissements du compilateur CS0649 et IDE0051 dans les projets Unity qui créaient ces messages.
+  - Suppression des avertissements générés par les champs publics et sérialisés. Nous avons supprimé automatiquement les avertissements du `CS0649` compilateur `IDE0051` et dans les projets Unity qui ont créé ces messages.
 
 - **Intégration :**
 
   - Amélioration de l’expérience utilisateur pour l’affichage des instances d’éditeur et de lecteur Unity (fenêtres redimensionnables, avec marges uniformes et poignée de redimensionnement). Ajout d’informations sur l’identificateur de processus pour les éditeurs Unity.
 
-  - Mise à jour de l’API MonoBehaviour.
+  - Mise à `MonoBehaviour` jour de l’API.
 
 - **Évaluation :**
 
@@ -225,7 +310,7 @@ Publication : 4 décembre 2018
 
   - Adoption du catalogue et du service d’images Visual Studio, avec prise en charge complète de la mise à l’échelle HDPI et des thèmes et des images non pixellisés.
 
-### <a name="deprecated-features"></a>Fonctionnalités dépréciées
+### <a name="deprecated-features"></a>Fonctions déconseillées
 
 - **Intégration :**
 

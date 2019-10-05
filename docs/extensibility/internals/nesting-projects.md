@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976701"
 ---
 # <a name="nesting-projects"></a>Imbriquer des projets
@@ -27,7 +27,7 @@ Les développeurs d’applications d’entreprise qui utilisent votre package VS
 
  L’imbrication de projets n’est pas une partie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]intrinsèque de. Vous devez écrire le code pour activer l’imbrication et l’imbrication de sous-projets dans les projets enfants. Le projet parent est un VSPackage spécial, ou type de projet, créé et inscrit avec son propre GUID, qui comprend le code requis pour implémenter l’imbrication de projet.
 
- Vous trouverez un exemple d’imbrication de projets dans la [procédure: Implémentez des projets](../../extensibility/internals/how-to-implement-nested-projects.md)imbriqués.
+ Vous trouverez un exemple d’imbrication de projets dans la [procédure : Implémentez des projets](../../extensibility/internals/how-to-implement-nested-projects.md)imbriqués.
 
 ## <a name="nested-projects-example"></a>Exemple de projets imbriqués
  ![Solution de projets imbriqués](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Exemple de projets imbriqués

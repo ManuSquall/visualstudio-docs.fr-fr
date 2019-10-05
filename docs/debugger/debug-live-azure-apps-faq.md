@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586842"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211216"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
 
@@ -49,7 +49,7 @@ Oui, le débogage d’instantané peut fonctionner pour les serveurs en charge. 
 
 Vous pouvez désinstaller l’extension de site du Débogueur de capture instantanée sur votre App Service en procédant comme suit :
 
-1. Désactiver votre App Service via Cloud Explorer dans Visual Studio ou le portail Azure.
+1. Désactivez votre App Service via le Cloud Explorer dans Visual Studio ou le Portail Azure.
 1. Accédez au site Kudu de votre App Service (autrement dit, yourappservice.**scm**.azurewebsites.net) et accédez à **Extensions de site**.
 1. Cliquez sur le X de l’extension de site du Débogueur de capture instantanée pour le supprimer.
 
@@ -57,28 +57,28 @@ Vous pouvez désinstaller l’extension de site du Débogueur de capture instant
 
 Le Débogueur de capture instantanée doit ouvrir un ensemble de ports pour déboguer les instantanés pris dans Azure, ce sont les mêmes ports requis pour le débogage distant. [Vous trouverez la liste des ports ici](../debugger/remote-debugger-port-assignments.md).
 
-#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Comment désactiver l’extension du débogueur distant ?
+#### <a name="how-do-i-disable-the-remote-debugger-extension"></a>Comment faire désactiver l’extension du débogueur distant ?
 
-Pour les Services d’application :
-1. Désactiver l’extension de débogueur distant via le portail Azure pour votre App Service.
-2. Portail Azure > Panneau de ressources de votre Service d’Application > *paramètres d’Application*
-3. Accédez à la *débogage* section et cliquez sur le *hors* bouton *le débogage à distance*.
+Pour App Services :
+1. Désactivez l’extension du débogueur distant via le Portail Azure pour votre App Service.
+2. Portail Azure > le panneau des ressources du service d’application > paramètres de l' *application*
+3. Accédez à la section *débogage* et cliquez sur le bouton *désactivé* pour le *débogage distant*.
 
 Pour AKS :
-1. Mettre à jour votre fichier Dockerfile pour supprimer les sections correspondant à la [Visual Studio Snapshot Debugger sur les images Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Régénérez et redéployez l’image Docker modifiée.
+1. Mettez à jour votre fichier dockerfile pour supprimer les sections correspondant à la [débogueur de capture instantanée Visual Studio sur les images de l’ancrage](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Régénérez et redéployez l’image de l’ancrage modifié.
 
-Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprimer les pools KeyVaults et NAT de trafic entrant d’extension, certificats, débogueur distant comme suit :
+Pour les machines virtuelles/groupes identiques de machines virtuelles, supprimez l’extension du débogueur distant, les certificats, les coffres de sauvegarde et les pools NAT entrants comme suit :
 
 1. Supprimer l’extension du débogueur distant
 
-   Il existe plusieurs façons de désactiver le débogueur distant pour les machines virtuelles et des machines virtuelles identiques :
+   Il existe plusieurs façons de désactiver le débogueur distant pour les machines virtuelles et les groupes de machines virtuelles identiques :
 
-      - Désactiver le débogueur distant via Cloud Explorer
+      - Désactivez le débogueur distant via Cloud Explorer
 
-         - Cloud Explorer > votre ressource de machine virtuelle > désactiver le débogage (la désactivation de débogage est inexistant pour machines virtuelles identiques sur le Cloud Explorer).
+         - Cloud Explorer > votre ressource de machine virtuelle > désactiver le débogage (la désactivation du débogage n’existe pas pour le groupe de machines virtuelles identiques sur Cloud Explorer).
 
-      - Désactiver le débogueur distant avec Scripts/applets de commande PowerShell
+      - Désactiver le débogueur distant avec les scripts/applets de commande PowerShell
 
          Pour la machine virtuelle :
 
@@ -86,7 +86,7 @@ Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprim
          Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
 
-         Pour les machines virtuelles identiques :
+         Pour les groupes de machines virtuelles identiques :
 
          ```powershell
          $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
@@ -94,20 +94,20 @@ Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprim
          Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
-      - Désactiver le débogueur distant via le portail Azure
-         - Portail Azure > votre groupe identique de machine virtuelle/machine virtuelle définit le panneau de ressources > Extensions
-         - Désinstaller l’extension Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
+      - Désactivez le débogueur distant via le Portail Azure
+         - Portail Azure > le panneau de ressources de votre machine virtuelle/groupes de machines virtuelles identiques > extensions
+         - Désinstallation de l’extension Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
 
          > [!NOTE]
-         > Machines virtuelles identiques - le portail n’autorise pas supprimer les ports DebuggerListener. Vous devez utiliser Azure PowerShell. Pour plus d'informations, consultez ce qui suit.
+         > Groupes de machines virtuelles identiques : le portail n’autorise pas la suppression des ports DebuggerListener. Vous devrez utiliser Azure PowerShell. Pour plus d'informations, consultez ce qui suit.
 
 2. Supprimer des certificats et Azure Key Vault
 
-   Lorsque vous installez l’extension de débogueur distant pour la machine virtuelle ou des machines virtuelles identiques, les certificats de client et serveur sont créés pour authentifier le client Visual Studio avec la Machine virtuelle Azure/ressources de machines virtuelles identiques.
+   Lors de l’installation de l’extension du débogueur distant pour les machines virtuelles ou les groupes de machines virtuelles identiques, les certificats client et serveur sont créés pour authentifier le client VS avec les ressources de machine virtuelle Azure/groupes de machines virtuelles identiques.
 
-   - Le certificat Client
+   - Le certificat client
 
-      Ce certificat est un certificat auto-signé situé dans Cert : / CurrentUser/My /
+      Ce certificat est un certificat auto-signé situé dans CERT:/CurrentUser/My/
 
       ```
       Thumbprint                                Subject
@@ -116,17 +116,17 @@ Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprim
       1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
-      La première consiste à supprimer ce certificat à partir de votre ordinateur par le biais de PowerShell
+      Une façon de supprimer ce certificat de votre ordinateur est d’utiliser PowerShell
 
       ```powershell
       $ResourceName = 'ResourceName' # from above
       Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
-   - Le certificat de serveur
-      - L’empreinte de certificat de serveur correspondante est déployé en tant que secret au coffre de clés Azure. Visual Studio va tenter de trouver ou créer un coffre de clés avec le préfixe MSVSAZ * dans la région correspondant à la machine virtuelle ou ressources de machines virtuelles identiques. Identiques de machine virtuelle ou une machine virtuelle toutes les ressources déployées dans cette région seront par conséquent partagent le même coffre de clés.
-      - Pour supprimer le secret d’empreinte de certificat de serveur, accédez au portail Azure et recherchez le coffre de clés MSVSAZ * dans la même région qui héberge votre ressource. Supprimer la clé secrète qui doit être étiquetée `remotedebugcert<<ResourceName>>`
-      - Vous devez également supprimer le secret de serveur à partir de votre ressource via PowerShell.
+   - Certificat de serveur
+      - L’empreinte de certificat de serveur correspondante est déployée en tant que secret dans Azure Key Vault. VS va tenter de trouver ou de créer un coffre de sauvegarde avec le préfixe MSVSAZ * dans la région correspondant à la ressource machine virtuelle ou groupes de machines virtuelles identiques. Toutes les ressources de machines virtuelles ou de groupes identiques de machines virtuelles déployées dans cette région partageront donc le même coffre de stockage.
+      - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimer la clé secrète qui doit être étiquetée`remotedebugcert<<ResourceName>>`
+      - Vous devrez également supprimer le secret du serveur de votre ressource via PowerShell.
 
       Pour les machines virtuelles :
 
@@ -135,16 +135,16 @@ Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprim
       Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
 
-      Pour les machines virtuelles identiques :
+      Pour les groupes de machines virtuelles identiques :
 
       ```powershell
       $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
       Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
       ```
 
-3. Supprimez tous les pools NAT de trafic entrant DebuggerListener (machines virtuelles identiques uniquement)
+3. Supprimer tous les pools NAT entrants DebuggerListener (groupe de machines virtuelles identiques uniquement)
 
-   Le débogueur distant introduit les pools NAT DebuggerListener entrantes qui sont appliqués à l’équilibreur de charge de votre groupe identique.
+   Le débogueur distant introduit des pools NAT DebuggerListeners entrants qui sont appliqués à l’équilibreur de charge de votre identiques.
 
    ```powershell
    $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
@@ -158,38 +158,38 @@ Pour la mise à l’échelle de machine virtuelle/machine virtuelle jeux supprim
    }
    ```
 
-#### <a name="how-do-i-disable-snapshot-debugger"></a>Comment désactiver le débogueur de capture instantanée ?
+#### <a name="how-do-i-disable-snapshot-debugger"></a>Comment faire désactiver Débogueur de capture instantanée ?
 
 Pour App Service :
-1. Désactiver le débogueur de capture instantanée via le portail Azure pour votre App Service.
-2. Portail Azure > Panneau de ressources de votre Service d’Application > *paramètres d’Application*
-3. Supprimer les paramètres d’application suivants dans le portail Azure et enregistrez vos modifications.
+1. Désactivez Débogueur de capture instantanée par le biais du Portail Azure pour votre App Service.
+2. Portail Azure > le panneau des ressources du service d’application > paramètres de l' *application*
+3. Supprimez les paramètres d’application suivants dans le Portail Azure et enregistrez vos modifications.
    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
    > [!WARNING]
-   > Les modifications apportées aux paramètres de l’Application lance un redémarrage de l’application. Pour plus d’informations sur les paramètres de l’Application, consultez [configurer une application app Service dans le portail Azure](/azure/app-service/web-sites-configure).
+   > Toute modification apportée aux paramètres de l’application lance un redémarrage de l’application. Pour plus d’informations sur les paramètres d’application, consultez [configurer une application App service dans le portail Azure](/azure/app-service/web-sites-configure).
 
 Pour AKS :
-1. Mettre à jour votre fichier Dockerfile pour supprimer les sections correspondant à la [Visual Studio Snapshot Debugger sur les images Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
-2. Régénérez et redéployez l’image Docker modifiée.
+1. Mettez à jour votre fichier dockerfile pour supprimer les sections correspondant à la [débogueur de capture instantanée Visual Studio sur les images de l’ancrage](https://github.com/Microsoft/vssnapshotdebugger-docker).
+2. Régénérez et redéployez l’image de l’ancrage modifié.
 
-Pour les jeux de mise à l’échelle machine virtuelle/machine virtuelle :
+Pour les machines virtuelles/groupes identiques de machines virtuelles :
 
-Il existe plusieurs façons de désactiver le débogueur de capture instantanée :
-- Cloud Explorer > votre machine virtuelle/machine virtuelle identiques ressource > désactiver les Diagnostics
+Il existe plusieurs façons de désactiver les Débogueur de capture instantanée :
+- Cloud Explorer > la ressource de votre machine virtuelle/groupe de machines virtuelles identiques > désactiver les Diagnostics
 
-- Portail Azure > votre machine virtuelle/machine virtuelle identiques Panneau de ressources > Extensions > Microsoft.Insights.VMDiagnosticsSettings désinstaller extension
+- Portail Azure > le panneau de ressources de votre machine virtuelle/groupe de machines virtuelles identiques > Extensions > désinstaller Microsoft. Insights. Vmdiagnosticssettings lui extension
 
-- Applets de commande PowerShell [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Applets de commande PowerShell à partir de [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-   Machine virtuelle :
+   Ordinateur virtuel :
 
    ```powershell
       Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-   Machines virtuelles identiques :
+   Groupes identiques de machines virtuelles :
 
    ```powershell
       $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
@@ -198,8 +198,8 @@ Il existe plusieurs façons de désactiver le débogueur de capture instantanée
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Débogage dans Visual Studio](../debugger/index.md)
-- [Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
-- [Déboguer des ensembles de mise à l’échelle des Machines Machines\Virtual virtuel ASP.NET Azure en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
-- [Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
-- [Problèmes connus et dépannage pour le débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Débogage dans Visual Studio](../debugger/index.yml)
+- [Déboguer des applications ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Déboguer des groupes de machines virtuelles Azure Machines\Virtual ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
+- [Déboguer en direct ASP.NET Azure Kubernetes à l’aide de l’Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [Dépannage et problèmes connus liés au débogage d’instantanés](../debugger/debug-live-azure-apps-troubleshooting.md)

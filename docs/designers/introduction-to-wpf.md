@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924458"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962959"
 ---
 # <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
@@ -428,7 +428,7 @@ Pour plus d’informations sur les types de contenu pris en charge par différen
 
 ### <a name="triggers"></a>Déclencheurs
 
-Bien que l’objectif principal du balisage XAML soit d’implémenter l’apparence d’une application, vous pouvez également utiliser XAML pour implémenter certains aspects du comportement d’une application. Vous pouvez, par exemple, utiliser des déclencheurs pour modifier l’apparence d’une application à partir des interventions de l’utilisateur. Pour plus d’informations, consultez [Application d’un style et création de modèles](/dotnet/framework/wpf/controls/styling-and-templating).
+Bien que l’objectif principal du balisage XAML soit d’implémenter l’apparence d’une application, vous pouvez également utiliser XAML pour implémenter certains aspects du comportement d’une application. Vous pouvez, par exemple, utiliser des déclencheurs pour modifier l’apparence d’une application à partir des interventions de l’utilisateur. Pour plus d’informations, consultez [styles et modèles](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="control-templates"></a>Modèles de contrôle
 
@@ -545,7 +545,7 @@ Les styles permettent aux développeurs et aux concepteurs de standardiser leur 
 
 ![Deux boutons orange](../designers/media/wpfintrofigure20.png)
 
-Pour plus d’informations, consultez [Application d’un style et création de modèles](/dotnet/framework/wpf/controls/styling-and-templating).
+Pour plus d’informations, consultez [styles et modèles](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="resources"></a>Ressources
 
