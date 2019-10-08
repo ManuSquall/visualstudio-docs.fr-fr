@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461455"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000208"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -104,17 +104,14 @@ Empêche le compilateur de générer un ou plusieurs avertissements. Séparez le
 
 Les paramètres suivants sont utilisés pour spécifier quels avertissements sont traités comme des erreurs. Sélectionnez l’une des options suivantes pour indiquer dans quelles circonstances retourner une erreur quand la génération rencontre un avertissement. Pour plus d’informations, consultez [/warnaserror (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Aucun**
+**None** : ne considère aucun avertissement comme des erreurs.
 
-Ne considère aucun avertissement comme une erreur.
+**All** : traite tous les avertissements comme des erreurs.
 
-**Avertissements spécifiques**
+**Avertissements spécifiques** : traite les avertissements spécifiés comme des erreurs. Séparez les numéros des avertissements par une virgule ou un point-virgule.
 
-Considère les avertissements spécifiés comme des erreurs. Séparez les numéros des avertissements par une virgule ou un point-virgule.
-
-**Tous**
-
-Considère tous les avertissements comme des erreurs.
+> [!TIP]
+> Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Sortie
 

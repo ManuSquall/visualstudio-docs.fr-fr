@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251701"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000160"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -25,7 +25,7 @@ Pour chaque convention de nommage, vous devez spécifier les symboles auxquels e
 
 Pour commencer, choisissez un titre pour votre règle de nommage que vous utiliserez dans chacune des propriétés nécessaires pour décrire complètement la règle. Par exemple, `public_members_must_be_capitalized` est un nom descriptif correct pour une règle de nommage. Cette page se référera au titre que vous choisissez par **<namingRuleTitle\>** dans les sections qui suivent.
 
-## <a name="symbols"></a>Symboles
+## <a name="symbols"></a>Symbols
 
 Tout d’abord, identifiez un groupe de symboles auxquels appliquer la règle de nommage. Cette propriété se présente sous la forme suivante :
 
@@ -226,7 +226,7 @@ Remplaçons maintenant la gravité de la violation par `warning` :
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez une ligne ondulée verte et un avertissement dans la **Liste d’erreurs** :
+Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez un tilde vert et un avertissement dans le Liste d’erreurs :
 
 ![Avertissement de règle de nommage](media/editorconfig-naming-rule-warning.png)
 
