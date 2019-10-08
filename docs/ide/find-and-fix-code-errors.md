@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211372"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000183"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -74,7 +74,7 @@ Les analyseurs de code recherchent les problèmes de code courants qui peuvent c
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Analyse du code C# et Visual Basic
 
-Visual Studio comprend un ensemble prédéfini d’[analyseurs .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) qui examinent le code C# et Visual Basic au fur et à mesure que vous l’écrivez. Vous pouvez installer des analyseurs supplémentaires sous la forme d’une extension Visual Studio ou d’un package NuGet. Si des violations de règle sont trouvées, elles sont signalées à la fois dans l’éditeur de code, sous la forme d’une ligne ondulée sous le code qui pose problème, et dans la **Liste d’erreurs**.
+Visual Studio comprend un ensemble prédéfini d’[analyseurs .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) qui examinent le code C# et Visual Basic au fur et à mesure que vous l’écrivez. Vous pouvez installer des analyseurs supplémentaires sous la forme d’une extension Visual Studio ou d’un package NuGet. Si des violations de règle sont détectées, elles sont signalées dans l’Liste d’erreurs et dans l’éditeur de code sous la forme d’un tilde sous le code incriminé.
 
 ### <a name="c-code-analysis"></a>Analyse du code C++
 
