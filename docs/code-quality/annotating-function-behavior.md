@@ -17,15 +17,15 @@ f1_keywords:
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ff2551f3a99bf13909f9db3b1659482246e957
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1bb0e8bdbb2bd62fa637b9cecce64adf98f71013
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919630"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72016048"
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
 En plus d’annoter des [paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md), vous pouvez annoter les propriétés de la fonction entière.
@@ -35,13 +35,13 @@ Les annotations suivantes s'appliquent à la fonction dans son ensemble, et déc
 
 |Annotation|Description|
 |----------------|-----------------|
-|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s’agit plutôt d’un prédicat à utiliser avec l’annotation `_When_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans une `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_`retourne une valeur différente de zéro si la fonction en cours d’analyse est annotée à l’aide `_Function_class_` de qui a la même valeur de `name`; sinon, elle retourne zéro.|
+|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s’agit plutôt d’un prédicat à utiliser avec l’annotation `_When_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le paramètre `name` est une chaîne arbitraire qui apparaît également dans une annotation `_Function_class_` dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne une valeur différente de zéro si la fonction en cours d’analyse est annotée à l’aide de `_Function_class_` ayant la même valeur de `name` ; Sinon, elle retourne zéro.|
 |`_Check_return_`|Annote une valeur de retour et indique que l’appelant doit l’inspecter. Le vérificateur signale une erreur si la fonction est appelée dans un contexte void.|
 |`_Function_class_(name)`|Le paramètre `name` est une chaîne arbitraire indiquée par l'utilisateur.  Il existe dans un espace de noms distinct des autres espaces de noms. Une fonction, un pointeur de fonction ou, plus utilement, un type de pointeur de fonction peut être désigné comme appartenant à une ou plusieurs classes de fonction.|
 |`_Raises_SEH_exception_`|Annote une fonction qui déclenche toujours une exception SEH, soumise aux conditions `_When_` et `_On_failure_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 |`_Maybe_raises_SEH_exception_`|Annote une fonction qui peut éventuellement déclencher une exception SEH, soumise aux conditions `_When_` et `_On_failure_`.|
-|`_Must_inspect_result_`|Annote toute valeur de sortie, y compris la valeur de retour, les paramètres et les champs globaux.  L'analyseur signale une erreur si la valeur de l'objet annoté n'est pas ensuite inspectée. L'inspection indique si elle est utilisée dans une expression conditionnelle, est affectée à un paramètre de sortie ou un paramètre global ou est passée comme paramètre.  Pour les valeurs de `_Must_inspect_result_` retour `_Check_return_`, implique.|
-|`_Use_decl_annotations_`|Peut être utilisé sur une définition de fonction (également appelée corps de fonction) à la place de la liste d’annotations dans l’en-tête.  Lorsque `_Use_decl_annotations_` est utilisé, les annotations qui apparaissent sur un en-tête dans la portée pour la même fonction sont utilisées comme si elles étaient également présentes dans la définition `_Use_decl_annotations_` qui a l’annotation.|
+|`_Must_inspect_result_`|Annote toute valeur de sortie, y compris la valeur de retour, les paramètres et les champs globaux.  L'analyseur signale une erreur si la valeur de l'objet annoté n'est pas ensuite inspectée. L'inspection indique si elle est utilisée dans une expression conditionnelle, est affectée à un paramètre de sortie ou un paramètre global ou est passée comme paramètre.  Pour les valeurs de retour, `_Must_inspect_result_` implique `_Check_return_`.|
+|`_Use_decl_annotations_`|Peut être utilisé sur une définition de fonction (également appelée corps de fonction) à la place de la liste d’annotations dans l’en-tête.  Lorsque `_Use_decl_annotations_` est utilisé, les annotations qui apparaissent sur un en-tête dans la portée pour la même fonction sont utilisées comme si elles étaient également présentes dans la définition qui a l’annotation `_Use_decl_annotations_`.|
 
 ## <a name="successfailure-annotations"></a>Annotations de réussite/échec
 Une fonction peut échouer, et lorsque cela arrive, ses résultats peuvent être incomplets ou différer du résultat attendu.  Les annotations de la liste suivante fournissent des méthodes pour exprimer le comportement d'échec.  Pour utiliser ces annotations, vous devez leur permettre de déterminer la réussite ; une annotation `_Success_` est donc requise.  Notez que `NTSTATUS` et `HRESULT` intègrent déjà une annotation `_Success_`. Toutefois, si vous spécifiez votre propre annotation `_Success_` sur `NTSTATUS` ou `HRESULT`, celle-ci remplace l'annotation intégrée.

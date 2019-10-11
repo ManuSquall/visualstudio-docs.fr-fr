@@ -33,7 +33,7 @@
                   href: configure-fxcop-analyzers.md
                 - name: Options d'étendue
                   href: fxcop-analyzer-options.md
-                - name: Ensembles de règles prédéfinis
+                - name: Activer une catégorie de règles
                   href: analyzer-rule-sets.md
             - name: Questions fréquentes (FAQ)
               href: fxcop-analyzers-faq.md
@@ -532,30 +532,30 @@
                   displayName: portability warnings
                   href: portability-warnings.md
                 - name: 'CA1900 : Les champs de type valeur doivent être portables'
-                  href: ca1900-value-type-fields-should-be-portable.md
+                  href: ca1900.md
                 - name: 'CA1901 : Les déclarations P-Invoke doivent être portables'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
+                  href: ca1901.md
                 - name: 'CA1903 : Utiliser uniquement l''API à partir du Framework cible'
-                  href: ca1903-use-only-api-from-targeted-framework.md
+                  href: ca1903.md
             - name: Avertissements liés à la fiabilité
               items:
                 - name: Vue d'ensemble
                   displayName: reliability warnings
                   href: reliability-warnings.md
                 - name: 'CA2000 : Supprimer les objets avant la mise hors de portée'
-                  href: ca2000-dispose-objects-before-losing-scope.md
+                  href: ca2000.md
                 - name: 'CA2001 : Évitez d''appeler des méthodes susceptibles de poser des problèmes'
-                  href: ca2001-avoid-calling-problematic-methods.md
+                  href: ca2001.md
                 - name: 'CA2002 : Ne définissez pas un verrou sur des objets à identité faible'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                  href: ca2002.md
                 - name: 'CA2003 : Ne traitez pas les fibres comme des threads'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
+                  href: ca2003.md
                 - name: 'CA2004 : Supprimez les appels à GC.KeepAlive'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
+                  href: ca2004.md
                 - name: 'CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                  href: ca2006.md
                 - name: "CA2007\_: N’attendez pas directement une Tâche"
-                  href: ca2007-do-not-directly-await-task.md
+                  href: ca2007.md
             - name: Avertissements liés à la sécurité
               items:
                 - name: Vue d'ensemble
@@ -847,7 +847,7 @@
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Analyser le code C/C++ pour détecter les erreurs
       href: walkthrough-analyzing-c-cpp-code-for-defects.md
-    - name: Exemple de démonstration
+    - name: Exemple de projet
       href: demo-sample.md
     - name: Utiliser les vérificateurs de C++ Core Guidelines
       href: using-the-cpp-core-guidelines-checkers.md
@@ -855,6 +855,8 @@
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Ensembles de règles pour le code C++
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: Utiliser Clang-Tidy
+      href: clang-tidy.md
     - name: Utiliser des annotations SAL pour réduire les défauts du code
       items:
         - name: Vue d'ensemble

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234269"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252575"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234269"
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Category|Microsoft.Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
 ## <a name="cause"></a>Cause
@@ -36,7 +36,7 @@ Le nom d’un identificateur contient le caractère de soulignement (\_).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Par Convention, les noms d’identificateur ne contiennent pas de caractère de\_soulignement (). La règle vérifie les espaces de noms, les types, les membres et les paramètres.
+Par Convention, les noms d’identificateur ne contiennent pas le caractère de soulignement (\_). La règle vérifie les espaces de noms, les types, les membres et les paramètres.
 
 Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
@@ -46,9 +46,9 @@ Supprimez tous les traits de soulignement du nom.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez aucun avertissement de cette règle.
+Ne supprimez pas les avertissements pour le code de production. Toutefois, il est possible de supprimer cet avertissement en toute sécurité pour le code de test. Vous pouvez supprimer les avertissements de cette règle en affectant la valeur **aucun**à sa [gravité](use-roslyn-analyzers.md#rule-severity) . 
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- @NO__T 0CA1709 : La casse des identificateurs doit être correcte @ no__t-0
+- @NO__T 0CA1708 : Les identificateurs doivent différer par plus que la casse @ no__t-0
