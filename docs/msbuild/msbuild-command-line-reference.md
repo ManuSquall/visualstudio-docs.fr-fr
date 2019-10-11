@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96d242a8c7af44f47db3ebad5e6af03389a6fc0
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107365"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252652"
 ---
 # <a name="msbuild-command-line-reference"></a>Informations de référence sur la ligne de commande MSBuild
 Quand vous utilisez *MSBuild.exe* pour générer un fichier projet ou solution, vous pouvez inclure plusieurs commutateurs pour définir différents aspects du processus.
@@ -66,7 +66,7 @@ MSBuild.exe [Switches] [ProjectFile]
 
 |Basculer|Forme abrégée|Description|
 |------------|----------------|-----------------|
-|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passe les paramètres que vous spécifiez à l'enregistreur d'événements de console, qui affiche les informations de build dans la fenêtre de console. Vous pouvez spécifier les paramètres suivants :<br /><br /> -   **PerformanceSummary**. Affiche le temps consacré aux tâches, cibles et projets.<br />-   **Summary**. affiche le résumé des erreurs et avertissements à la fin.<br />-   **NoSummary**. n'affiche pas le résumé des erreurs et avertissements à la fin.<br />-   **ErrorsOnly**. affiche uniquement les erreurs.<br />-   **WarningsOnly**. affiche uniquement les avertissements.<br />-   **NoItemAndPropertyList**. n'affiche pas la liste des éléments et des propriétés qui apparaîtrait au début de chaque génération de projet si le niveau de commentaires défini était `diagnostic`.<br />-   **ShowCommandLine**. affiche les messages `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. affiche l'horodatage sous forme de préfixe des messages.<br />-   **ShowEventId**. affiche l'ID d'événement pour chaque message et événement (démarré et terminé).<br />-   **ForceNoAlign**. n'adapte pas le texte à la taille de la mémoire tampon de la console.<br />-   **DisableConsoleColor**. utilise les couleurs de console par défaut pour tous les messages de journalisation.<br />-   **DisableMPLogging**. désactive le style de journalisation multiprocesseur de la sortie lors d'une exécution en mode non multiprocesseur.<br />-   **EnableMPLogging**. active le style de journalisation multiprocesseur même lors d'une exécution en mode non multiprocesseur. Ce style de journalisation est activé par défaut.<br />-   **Verbosity**. Remplace le paramètre **-verbosity** pour cet enregistreur d’événements.<br /><br /> Utilisez un point-virgule ou une virgule pour séparer plusieurs paramètres, comme dans l'exemple suivant :<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
+|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passe les paramètres que vous spécifiez à l'enregistreur d'événements de console, qui affiche les informations de build dans la fenêtre de console. Vous pouvez spécifier les paramètres suivants :<br /><br /> -   **PerformanceSummary**. Affiche le temps consacré aux tâches, cibles et projets.<br />-   **Summary**. affiche le résumé des erreurs et avertissements à la fin.<br />-   **NoSummary**. n'affiche pas le résumé des erreurs et avertissements à la fin.<br />-   **ErrorsOnly**. affiche uniquement les erreurs.<br />-   **WarningsOnly**. affiche uniquement les avertissements.<br />-   **NoItemAndPropertyList**. n'affiche pas la liste des éléments et des propriétés qui apparaîtrait au début de chaque génération de projet si le niveau de commentaires défini était `diagnostic`.<br />-   **ShowCommandLine**. affiche les messages `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. affiche l'horodatage sous forme de préfixe des messages.<br />-   **ShowEventId**. affiche l'ID d'événement pour chaque message et événement (démarré et terminé).<br />-   **ForceNoAlign**. n'adapte pas le texte à la taille de la mémoire tampon de la console.<br />-   **DisableConsoleColor**. utilise les couleurs de console par défaut pour tous les messages de journalisation.<br />-   **DisableMPLogging**. désactive le style de journalisation multiprocesseur de la sortie lors d'une exécution en mode non multiprocesseur.<br />-   **EnableMPLogging**. active le style de journalisation multiprocesseur même lors d'une exécution en mode non multiprocesseur. Ce style de journalisation est activé par défaut.<br />-   **Verbosity**. Remplace le paramètre **-verbosity** pour cet enregistreur d’événements.<br /><br /> Utilisez un point-virgule pour séparer plusieurs paramètres, comme le montre l’exemple suivant :<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|consigne la sortie de génération de chaque nœud MSBuild dans son propre fichier. L'emplacement initial de ces fichiers est le répertoire actif. Par défaut, les fichiers sont nommés *MSBuild\<NodeId>.log*. Vous pouvez utiliser le commutateur **-fileLoggerParameters** pour spécifier l’emplacement des fichiers et d’autres paramètres de l’enregistreur d’événements de fichiers.<br /><br /> Si vous nommez un fichier journal à l’aide du commutateur **-fileLoggerParameters**, l’enregistreur d’événements distribué utilise ce nom comme modèle et y ajoute l’ID de nœud au moment de créer un fichier journal pour chaque nœud.|
 |-distributedlogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|Consigne les événements de MSBuild, en joignant une instance d'enregistreur d'événements différente à chaque nœud. Pour spécifier plusieurs enregistreurs d'événements, spécifiez-les séparément.<br /><br /> Pour spécifiez un enregistreur d'événements, utilisez la syntaxe appropriée. Pour plus d’informations sur la syntaxe des enregistreurs d’événements, voir le commutateur **-logger** ci-dessous.<br /><br /> Les exemples suivants montrent comment utiliser ce commutateur :<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|Consigne la sortie de génération dans un fichier unique dans le répertoire actif. Si vous ne spécifiez pas `number`, le fichier de sortie est nommé *msbuild.log*. Si vous spécifiez `number`, le fichier de sortie est nommé *msbuild\<n>.log*, \<n> correspondant à `number`. `Number` peut être un chiffre compris entre 1 et 9.<br /><br /> Vous pouvez utiliser le commutateur **-fileLoggerParameters** pour spécifier l’emplacement du fichier et d’autres paramètres de l’enregistreur d’événements de fichiers.|
@@ -75,14 +75,14 @@ MSBuild.exe [Switches] [ProjectFile]
 |-logger:<br /><br /> `logger`|-l:`logger`|Spécifie l'enregistreur d'événements à utiliser pour consigner les événements de MSBuild. Pour spécifier plusieurs enregistreurs d'événements, spécifiez-les séparément.<br /><br /> Utilisez la syntaxe suivante pour `logger` : `[``LoggerClass``,]``LoggerAssembly``[;``LoggerParameters``]`<br /><br /> Utilisez la syntaxe suivante pour `LoggerClass` : `[``PartialOrFullNamespace``.]``LoggerClassName`<br /><br /> Vous n'êtes pas obligé de spécifier la classe d'enregistreur d'événements si l'assembly contient exactement un enregistreur d'événements.<br /><br /> Utilisez la syntaxe suivante pour `LoggerAssembly` : `{``AssemblyName``[,``StrongName``] &#124;` `AssemblyFile``}`<br /><br /> Les paramètres d'enregistreur d'événements sont facultatifs et sont passés à l'enregistreur d'événements au moment même où vous les entrez.<br /><br /> Les exemples suivants utilisent le commutateur **-logger**.<br /><br /> `-logger:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-logger:XMLLogger,C:\Loggers\MyLogger.dll;OutputAsHTML`|
 |-noconsolelogger|-noconlog|Désactive l'enregistreur d'événements de console par défaut et ne consigne pas les événements dans la console.|
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant génère la cible `rebuild` du projet *MyProject.proj*.
 
 ```cmd
 MSBuild.exe MyProject.proj -t:rebuild
 ```
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Vous pouvez utiliser *MSBuild.exe* pour effectuer des générations plus complexes. Par exemple, vous pouvez l'utiliser pour générer des cibles spécifiques de certains projets dans le cadre d'une solution. L’exemple suivant regénère le projet `NotInSolutionFolder` et nettoie le projet `InSolutionFolder` qui se trouve dans le dossier de solution *NewFolder*.
 
 ```cmd

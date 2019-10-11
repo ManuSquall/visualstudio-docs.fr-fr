@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817523"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018777"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Rechercher votre tâche de débogage dans Visual Studio
 
@@ -34,7 +34,10 @@ Essayez un point d’arrêt conditionnel pour contrôler l’emplacement et le m
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Suspendre le code uniquement lorsque la propriété ou la valeur d’un objet spécifique change
 
-Pour C++, définissez un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)sur variable. Pour les applications utilisant .NET Core 3, vous pouvez également définir un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)sur variable.
+Pour C++, définissez un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)sur variable. 
+::: moniker range=">= vs-2019"
+Pour les applications utilisant .NET Core 3, vous pouvez également définir un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)sur variable.
+::: moniker-end
 
 Dans le cas C# contraire F# , pour et uniquement, vous pouvez [suivre un ID d’objet avec un point d’arrêt conditionnel](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 
