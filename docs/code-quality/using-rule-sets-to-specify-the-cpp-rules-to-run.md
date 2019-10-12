@@ -2,23 +2,25 @@
 title: Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e14602c3eeb204255f699b0ff07164616da4a25
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974919"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163101"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utiliser des ensembles de règles pour C++ spécifier les règles à exécuter
 
 Dans Visual Studio, vous pouvez créer et modifier un *ensemble de règles* personnalisé pour répondre à des besoins de projet spécifiques associés à l’analyse du code. Les ensembles de règles par défaut sont stockés dans `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 version 15,7 et versions ultérieures** Vous pouvez créer des ensembles de règles personnalisés à l’aide de n’importe quel éditeur de texte et les appliquer dans les builds de ligne de commande, quel que soit le système de génération que vous utilisez. Pour plus d’informations, consultez [/analyze : RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 15.7 et versions ultérieures :** Vous pouvez créer des ensembles de règles personnalisés à l’aide de n’importe quel éditeur de texte et les appliquer dans les builds de ligne de commande, quel que soit le système de génération que vous utilisez. Pour plus d’informations, consultez [/analyze : RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Pour créer un ensemble C++ de règles personnalisé dans Visual Studio, un projetC++ C/doit être ouvert dans l’IDE de Visual Studio. Vous ouvrez ensuite un ensemble de règles standard dans l’éditeur d’ensembles de règles, puis vous ajoutez ou supprimez des règles spécifiques et modifiez éventuellement l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
 
@@ -26,7 +28,7 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant
 
-1. Dans Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.
+1. Dans la Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.
 
 2. Sous l’onglet **Propriétés** , choisissez **analyse du code**.
 
@@ -36,7 +38,7 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
      \- ou -
 
-   - Choisissez **@no__t > 1Browse** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
+   - Choisissez **\<Browse... >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
 
 4. Choisissez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
@@ -50,9 +52,11 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
 - Pour modifier l’action entreprise lorsqu’une règle est violée dans une analyse du code, choisissez le champ **action** pour la règle, puis choisissez l’une des valeurs suivantes :
 
-     **WARN** -génère un avertissement.
+     **Avertissement** : génère un avertissement.
 
      **Erreur** : génère une erreur.
+     
+     **Info** -génère un message.
 
      **None** : désactive la règle. Cette action revient à supprimer la règle de l’ensemble de règles.
 

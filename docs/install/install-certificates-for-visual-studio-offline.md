@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551197"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018825"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -89,9 +89,9 @@ Si vous écrivez un script du déploiement de Visual Studio dans un environnemen
    Vous pouvez également créer un fichier de commandes qui utilise certutil.exe, fourni avec Windows, avec les commandes suivantes :
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -136,19 +136,19 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
 
 * **ManifestSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Code Signing PCA 2011**
-    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
+    * Non requis Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2011**
     * Obligatoire sur les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **ManifestCounterSignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Time-Stamp PCA 2010**
-    * Non requis. Le cas échéant, améliore les performances dans certains scénarios.
+    * Non requis Le cas échéant, améliore les performances dans certains scénarios.
   * Certificat racine : **Microsoft Root Certificate Authority 2010**
     * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **Vs_installer_opc.SignCertificates.p12** contient :
   * Certificat intermédiaire : **Microsoft Code Signing PCA**
     * Obligatoire pour tous les systèmes. Notez que les systèmes dotés de toutes les mises à jour appliquées à partir de Windows Update n’ont peut-être pas ce certificat.
   * Certificat racine : **Microsoft Root Certificate Authority**
-    * Requis. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
+    * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
 
 **Mise à jour** : Pour Visual Studio 2017 version 15.8 Preview 2 ou version ultérieure, Visual Studio Installer requiert uniquement l’installation des certificats racines sur le système. Ces certificats sont stockés dans des fichiers .cer au lieu de fichiers .p12.
 
@@ -164,7 +164,7 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
     * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
 * **Vs_installer_opc.SignCertificates.cer** contient :
   * Certificat racine : **Microsoft Root Certificate Authority**
-    * Requis. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
+    * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
 
 Visual Studio Installer requiert uniquement l’installation des certificats racines sur le système.
 
@@ -197,7 +197,7 @@ Une manière de vérifier l’installation du système consiste à suivre ces é
 
 Si les noms des certificats ne figuraient pas dans les colonnes **Délivré à**, ils doivent être installés.  Si un certificat intermédiaire se trouve uniquement dans le magasin de certificats intermédiaires de **l’utilisateur actuel**, il n’est disponible que pour l’utilisateur connecté. Vous devrez peut-être l’installer pour les autres utilisateurs.
 
-## <a name="install-visual-studio"></a>Installation de Visual Studio
+## <a name="install-visual-studio"></a>Installer Visual Studio
 
 Après avoir installé les certificats, vous pouvez poursuivre le déploiement de Visual Studio en suivant les instructions de la section [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) de « Créer une installation réseau de Visual Studio ».
 
@@ -205,7 +205,7 @@ Après avoir installé les certificats, vous pouvez poursuivre le déploiement d
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installation de Visual Studio](install-visual-studio.md)
+* [Installer Visual Studio](install-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)

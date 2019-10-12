@@ -1,8 +1,8 @@
 ---
-title: Installation de Visual Studio
+title: Installer Visual Studio
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,14 +20,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095366"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018853"
 ---
-# <a name="install-visual-studio"></a>Installation de Visual Studio
+# <a name="install-visual-studio"></a>Installer Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -82,7 +82,7 @@ Avant de commencer l’installation de Visual Studio :
 
 1. Redémarrez. Le redémarrage garantit que les éventuelles installations et mises à jour en attente n’entravent pas l’installation de Visual Studio.
 
-1. Libérez de l’espace. Supprimez les fichiers et applications inutiles de %SystemDrive%, par exemple en exécutant l’application de nettoyage du disque. 
+1. Libérez de l’espace. Supprimez les fichiers et applications inutiles de %SystemDrive%, par exemple en exécutant l’application de nettoyage du disque.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Pour toute question sur l’exécution de versions antérieures de Visual Studio
 
 ## <a name="step-2---download-visual-studio"></a>Étape 2 : Télécharger Visual Studio
 
-Ensuite, téléchargez le fichier du programme d’amorçage de Visual Studio. Pour ce faire, choisissez le bouton Suivant, l’édition de Visual Studio souhaitée, **Enregistrer**, puis **Dossier ouvert**.
+Ensuite, téléchargez le fichier du programme d’amorçage de Visual Studio.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Télécharger Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Pour ce faire, choisissez le bouton Suivant, l’édition de Visual Studio souhaitée, **Enregistrer**, puis **Dossier ouvert**.
 
  > [!div class="button"]
  > [Télécharger Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ Pour plus d’informations, consultez la page [Sélectionner les emplacements d�
 
 1. Dans la zone de recherche, entrez le type d’application à créer pour voir la liste des modèles disponibles. La liste des modèles varie selon les charges de travail que vous avez choisies lors de l’installation. Pour voir différents modèles, choisissez différentes charges de travail.
 
-   Vous pouvez également filtrer votre recherche sur un langage de programmation spécifique à l’aide de la liste déroulante **Langage**. Vous pouvez aussi filtrer à l’aide de la liste **Plateforme** et de la liste **Type de projet**. 
+   Vous pouvez également filtrer votre recherche sur un langage de programmation spécifique à l’aide de la liste déroulante **Langage**. Vous pouvez aussi filtrer à l’aide de la liste **Plateforme** et de la liste **Type de projet**.
 
 1. Visual Studio ouvre votre nouveau projet. Vous êtes prêt à coder !
 

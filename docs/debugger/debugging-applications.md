@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9848b666df985ddc7c2c4d0cf56f9ae4cafcb347
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962900"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018787"
 ---
 # <a name="debugging-applications"></a>Déboguer des applications
 Les sections suivantes traitent du débogage pour des types spécifiques d'applications. Des types d'applications différents et des langages différents requièrent des paramètres et des techniques différents, et présentent des problèmes différents qui doivent être débogués.
@@ -34,6 +34,6 @@ Les sections suivantes traitent du débogage pour des types spécifiques d'appli
 |[Graphics Diagnostics (débogage DirectX Graphics)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Décrit comment déboguer des graphiques DirectX.|
 |[Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Décrit comment déboguer des applications ASP.NET.|
 |[Déboguer le code python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Décrit comment déboguer le code python|
-|[Déboguer des applications JavaScript et de machine à écrire](/javascript/debug-nodejs)|Décrit comment déboguer des applications JavaScript, de machine à écrire et node. js|
+|[Déboguer des applications JavaScript et de machine à écrire](../javascript/debug-nodejs.md)|Décrit comment déboguer des applications JavaScript, de machine à écrire et node. js|
 |[Déboguer des applications web](../debugger/debugging-web-applications.md)|Décrit comment déboguer des applications et des scripts Web.|
 |[Déboguer des services WCF](../debugger/debugging-wcf-services.md)|Décrit comment déboguer des services Windows Communication Foundation.|

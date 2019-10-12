@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186401"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172790"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurer les analyseurs FxCop
 
 Le [package des analyseurs FxCop](install-fxcop-analyzers.md) se compose des règles « FxCop » les plus importantes de l’analyse héritée convertie en analyseurs de code basés sur .NET Compiler Platform. Pour certaines règles FxCop, vous pouvez affiner les parties de votre code base à laquelle elles doivent être appliquées via les [options configurables](fxcop-analyzer-options.md). Chaque option est spécifiée en ajoutant une paire clé-valeur à un fichier [baEditorConfig](https://editorconfig.org) . Un fichier de configuration peut être [spécifique à un projet](#per-project-configuration) ou peut être [partagé](#shared-configuration) entre plusieurs projets.
 
 > [!TIP]
-> Vous pouvez ajouter un fichier. editorconfig à votre projet en cliquant avec le bouton droit sur le projet dans **Explorateur de solutions** et en sélectionnant **Ajouter** > **un nouvel élément**. Dans la fenêtre **Ajouter un nouvel élément** , entrez **editorconfig** dans la zone de recherche. Sélectionnez le modèle **fichier editorconfig (par défaut)** , puis choisissez **Ajouter**.
+> Ajoutez un fichier. editorconfig à votre projet en cliquant avec le bouton droit sur le projet dans **Explorateur de solutions** et en sélectionnant **Ajouter** > **nouvel élément**. Dans la fenêtre **Ajouter un nouvel élément** , entrez **editorconfig** dans la zone de recherche. Sélectionnez le modèle **fichier editorconfig (par défaut)** , puis choisissez **Ajouter**.
 >
 > ![Ajouter un fichier editorconfig au projet dans Visual Studio](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-Pour plus d’informations sur la configuration de la gravité d’une règle (par exemple, s’il s’agit d’une erreur ou d’un avertissement), consultez [définir la gravité de la règle dans un fichier baEditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Ou bien, vous pouvez choisir l’un des [ensembles](analyzer-rule-sets.md) de règles intégrés pour activer ou désactiver rapidement une catégorie de règles.
+Pour plus d’informations sur la configuration de la gravité d’une règle (par exemple, s’il s’agit d’une erreur ou d’un avertissement), consultez [définir la gravité de la règle dans un fichier baEditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). Ou bien, vous pouvez choisir l’un des [fichiers EditorConfig intégrés ou des ensembles de règles](analyzer-rule-sets.md) pour activer ou désactiver rapidement une catégorie de règles.
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ La syntaxe de configuration d’une option pour *toutes les* règles est la suiv
 
 ### <a name="category-of-rules"></a>Catégorie de règles
 
-La syntaxe permettant de configurer une option pour une *catégorie* de règles (par exemple, le nom, la conception ou la performance) est la suivante:
+La syntaxe permettant de configurer une option pour une *catégorie* de règles (par exemple, le nom, la conception ou la performance) est la suivante :
 
 |Syntaxe|Exemple|
 |-|-|
@@ -68,7 +68,7 @@ La syntaxe de configuration d’une option pour une règle *spécifique* est la 
 
 Pour activer la configuration de l’analyseur basé sur EditorConfig pour un projet spécifique, ajoutez un fichier *. EditorConfig* au répertoire racine du projet.
 
-Actuellement, il n’existe pas de prise en charge hiérarchique pour la «combinaison» de fichiers. editorconfig qui existent à différents niveaux de répertoire, par exemple, le niveau de la solution et du projet.
+Actuellement, il n’existe pas de prise en charge hiérarchique pour la « combinaison » de fichiers. editorconfig qui existent à différents niveaux de répertoire, par exemple, le niveau de la solution et du projet.
 
 ## <a name="shared-configuration"></a>Configuration partagée
 
@@ -76,7 +76,7 @@ Vous pouvez partager un fichier. editorconfig pour la configuration de l’analy
 
 1. Enregistrez le fichier *. editorconfig* dans un emplacement commun.
 
-2. Créez un fichier *. props* avec le contenu suivant:
+2. Créez un fichier *. props* avec le contenu suivant :
 
    ```xml
    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

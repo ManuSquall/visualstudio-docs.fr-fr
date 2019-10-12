@@ -21,45 +21,45 @@ f1_keywords:
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493635"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015967"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
 
-Vous pouvez annoter des membres de struct et class à l’aide des annotations qui agissent comme des invariants, elles sont supposées avoir la valeur true à n’importe quel appel de fonction ou d’une entrée/sortie de la fonction qui implique la structure englobante comme paramètre ou une valeur de résultat.
+Vous pouvez annoter des membres de classe et de struct à l’aide d’annotations qui agissent comme des invariants. elles sont supposées avoir la valeur true lors de n’importe quel appel de fonction ou entrée/sortie de fonction qui implique la structure englobante en tant que paramètre ou valeur de résultat.
 
-## <a name="struct-and-class-annotations"></a>Annotations de classe et de struct
+## <a name="struct-and-class-annotations"></a>Annotations de struct et de classe
 
 - `_Field_range_(low, high)`
 
-     Le champ est dans la plage (limites incluses) à partir de `low` à `high`.  Équivalent à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliqué à l’objet annoté en utilisant les conditions pre ou post.
+     Le champ se trouve dans la plage (inclusive) comprise entre `low` et `high`.  Équivaut à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliquée à l’objet annoté à l’aide des conditions pre ou postales appropriées.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Un champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.
+     Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.
 
 - `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Un champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`et le `count` de ces éléments (octets) qui sont accessibles en lecture.
+     Champ qui a une taille accessible en écriture dans des éléments (ou octets), comme spécifié par `size`, et la `count` de ces éléments qui sont accessibles en lecture.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Un champ qui a une taille accessible en lecture et en écriture dans les éléments (ou octets) comme spécifié par `size`.
+     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets) comme spécifié par `size`.
 
 - `_Field_z_`
 
-     Un champ qui a une chaîne se terminant par null.
+     Champ qui a une chaîne terminée par le caractère null.
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à la déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets qui est spécifié par `size`.  Par exemple :
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
 
     ```cpp
 
@@ -71,7 +71,7 @@ Vous pouvez annoter des membres de struct et class à l’aide des annotations q
 
     ```
 
-     La taille du tampon en octets d’un paramètre `pM` de type `MyStruct *` est alors dirigé vers l’être :
+     La taille de la mémoire tampon en octets d’un paramètre `pM` de type `MyStruct *` est ensuite considérée comme :
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
@@ -104,11 +104,11 @@ struct MyBuffer
 };
 ```
 
-Notes de publication pour cet exemple :
+Remarques pour cet exemple :
 
-- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le nom de champ spécifie que le champ nom est une chaîne se terminant par null.
-- `_Field_range_` pour `bufferSize` Spécifie que la valeur de `bufferSize` ne doit pas dépasser 1 et `MaxBufferSize` (tous deux inclus).
-- Le résultat final de la `_Struct_size_bytes_` et `_Field_size_` annotations sont équivalentes. Pour les structures ou classes qui ont une disposition semblable, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que son équivalent `_Struct_size_bytes_` annotation. `_Field_size_` ne nécessite pas la conversion à la taille en octets. Si la taille en octets est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisé. Si les deux `_Struct_size_bytes_` et `_Field_size_` existe, les deux seront disponibles aux outils. C’est à l’outil que faire si les deux annotations désaccord.
+- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le champ nom spécifie que le champ nom est une chaîne se terminant par un caractère null.
+- `_Field_range_` pour `bufferSize` spécifie que la valeur de `bufferSize` doit être comprise entre 1 et `MaxBufferSize` (les deux inclus).
+- Les résultats finaux des annotations `_Struct_size_bytes_` et `_Field_size_` sont équivalents. Pour les structures ou les classes qui ont une disposition similaire, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que l’annotation `_Struct_size_bytes_` équivalente. `_Field_size_` ne nécessite pas de conversion en taille d’octet. Si la taille d’octet est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisé. Si `_Struct_size_bytes_` et `_Field_size_` existent, les deux seront disponibles pour les outils. C’est à l’outil qu’il faut faire si les deux annotations ne sont pas en désaccord.
 
 ## <a name="see-also"></a>Voir aussi
 

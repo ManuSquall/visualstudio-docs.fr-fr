@@ -1,46 +1,42 @@
 ---
-title: Présentation de Live Unit Testing
+title: Introduction Live Unit Testing
 description: Découvrez plus d’informations sur les avantages de Live Unit Testing et sur son utilisation pour les tests unitaires de vos projets.
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 87242c99fe2692b799ff6a5d965249ad5d944cf9
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786079"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262301"
 ---
-# <a name="live-unit-testing-introduction"></a>Présentation de Live Unit Testing
+# <a name="live-unit-testing-overview"></a>Présentation de Live Unit Testing
 
-Live Unit Testing est une technologie qui a été introduite dans Visual Studio 2017. Il exécute automatiquement vos tests unitaires en temps réel quand vous changez le code.
+Live Unit Testing exécute vos tests unitaires automatiquement et en temps réel à mesure que vous apportez des modifications au code. Cela vous permet de refactoriser et de modifier le code avec une plus grande confiance. Live Unit Testing exécute automatiquement tous les tests impactés au fur et à mesure que vous modifiez votre code pour vous assurer que vos modifications n’introduisent pas de régressions.
 
-Tests unitaires en direct :
+Live Unit Testing indique si vos tests unitaires couvrent correctement votre code. Il représente graphiquement la couverture du code en temps réel. Vous pouvez voir d’un coup d’œil le nombre de tests couvrant chaque ligne de code et les lignes qui ne sont pas couvertes par les tests unitaires.
 
-- Vous permet de refactoriser et de modifier du code avec une plus grande confiance. Live Unit Testing exécute automatiquement tous les tests impactés quand vous modifiez votre code, de façon à garantir que vos modifications ne font pas échouer les tests.
-
-- Indique si vos tests unitaires couvrent votre code de façon adéquate et montre le code non couvert par des tests unitaires. Live Unit Testing représente sous forme graphique la couverture du code en temps réel, ce qui vous permet de voir en un coup d’œil à la fois le nombre de tests couvrant chaque ligne de code et les lignes qui ne sont pas couvertes par des tests unitaires.
-
-Si vous avez une solution qui inclut un ou plusieurs projets de test unitaire, vous pouvez activer Live Unit Testing en sélectionnant **Test** > **Live Unit Testing** > **Démarrer** dans le menu Visual Studio de niveau supérieur.
+Si vous disposez d’une solution qui comprend un ou plusieurs projets de test unitaire, vous pouvez activer Live Unit Testing en sélectionnant **test** > **Live Unit testing** > **Démarrer** à partir de la barre de menus de niveau supérieur dans Visual Studio.
 
 > [!NOTE]
-> Live Unit Testing est uniquement disponible dans Visual Studio Enterprise Edition.
+> Live Unit Testing n’est disponible que dans l’édition Visual Studio Enterprise.
 
 Pour en savoir plus sur Live Unit Testing :
 
-- Suivez le tutoriel d’introduction, [Bien démarrer avec Live Unit Testing](live-unit-testing-start.md).
+- Essayez un didacticiel de présentation : [Prise en main de Live Unit testing](live-unit-testing-start.md).
 
-- Lisez la documentation détaillée [Utiliser Live Unit Testing avec Visual Studio Enterprise Edition](live-unit-testing.md).
+- Lire la documentation détaillée : [Utilisez Live Unit testing avec l’édition Visual Studio Enterprise](live-unit-testing.md).
 
-- Lisez les [Questions fréquentes (FAQ) sur Live Unit Testing](live-unit-testing-faq.md) pour découvrir les nouveautés de Live Unit Testing, ainsi que des conseils et des techniques pour l’utiliser.
+- Lisez le [FAQ Live Unit testing](live-unit-testing-faq.md) pour découvrir les nouveautés de Live Unit testing, ainsi que les conseils et les techniques.
 
-- Regardez la vidéo de Channel 9 pour une vue d’ensemble de Live Unit Testing et de ses fonctionnalités. </p>
+- Regardez la vidéo de Channel 9 pour une vue d’ensemble de Live Unit Testing et de ses fonctionnalités.</p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

@@ -21,12 +21,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018487"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163061"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d’ensemble de l’analyse du code C/C++
 
@@ -46,7 +46,7 @@ Vous pouvez également utiliser l’outil d’analyse à partir de la ligne de c
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 version 15,7 et versions ultérieures** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
+**Visual Studio 2017 15.7 et versions ultérieures :** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
 
 ## <a name="pragma-support"></a>support #pragma
 

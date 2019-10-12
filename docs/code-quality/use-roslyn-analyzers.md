@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999998"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172801"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -138,7 +138,7 @@ Visual Studio offre un moyen pratique de configurer le niveau de gravité d’un
 
 ![Fichier d’ensemble de règles dans Explorateur de solutions](media/ruleset-in-solution-explorer.png)
 
-1. Ouvrez le fichier de l' [ensemble de règles](analyzer-rule-sets.md) actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud **références** > **Analyzers** , ou en sélectionnant **ouvrir** dans lePage de propriétés de l’analyse du code pour le projet.
+1. Ouvrez le fichier de l’ensemble de règles actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant **ouvrir l’ensemble de règles actif** dans le menu contextuel du nœud **références** > **Analyzers** , ou en sélectionnant **ouvrir** dans le **code.** Page des propriétés de l’analyse pour le projet.
 
    Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme *\<projectname >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
 

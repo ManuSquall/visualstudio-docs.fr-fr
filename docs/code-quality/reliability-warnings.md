@@ -14,23 +14,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: cb39bb5f59373f52d77c7cc5d13d12544d4c0314
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976147"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252585"
 ---
 # <a name="reliability-warnings"></a>Avertissements liés à la fiabilité
 
-Avertissements de fiabilité prennent en charge la fiabilité de bibliothèque et d’application, tels que l’utilisation de mémoire et le thread correcte. Les règles de fiabilité sont les suivantes :
+Les avertissements de fiabilité prennent en charge la fiabilité des bibliothèques et des applications, telles que la mémoire et l’utilisation des threads. Les règles de fiabilité sont les suivantes :
 
 |Règle|Description|
 |----------|-----------------|
-|[CA2000 : Supprimez les objets avant de portée](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|Sachant qu'un événement exceptionnel peut se produire et empêcher l'exécution du finaliseur d'un objet, ce dernier doit plutôt être supprimé explicitement avant que toutes les références à lui soient hors de portée.|
-|[CA2001 : Évitez d’appeler des méthodes](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Un membre appelle une méthode potentiellement dangereuse ou problématique.|
-|[CA2002 : Ne verrouillez pas sur des objets à identité faible](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Un objet est dit d'identité faible lorsqu'il est accessible directement au-delà des limites d'un domaine d'application. Un thread qui essaie d'acquérir un verrou sur un objet qui affiche une identité faible peut être bloqué par un deuxième thread dans un domaine d'application différent qui dispose d'un verrou sur le même objet.|
-|[CA2003 : Ne traitez pas les fibres comme des threads](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Un thread managé est traité comme un thread Win32.|
-|[CA2004 : Supprimez les appels à GC. KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Si vous convertissez d’utiliser SafeHandle, supprimez tous les appels à GC. KeepAlive (objet). Dans ce cas, les classes ne devez pas appeler GC. KeepAlive, en supposant qu’ils n’ont pas de finaliseur, mais dépendent de SafeHandle pour finaliser le système d’exploitation gérer pour eux.|
-|[CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s’il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place.|
-|[CA2007 : N’attend pas directement d’une tâche](../code-quality/ca2007-do-not-directly-await-task.md)|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directement.|
+|@NO__T 0CA2000 : Supprimer les objets avant de perdre l’étendue @ no__t-0|Sachant qu'un événement exceptionnel peut se produire et empêcher l'exécution du finaliseur d'un objet, ce dernier doit plutôt être supprimé explicitement avant que toutes les références à lui soient hors de portée.|
+|@NO__T 0CA2001 : Évitez d’appeler les méthodes problématiques @ no__t-0|Un membre appelle une méthode potentiellement dangereuse ou problématique.|
+|@NO__T 0CA2002 : Ne pas verrouiller sur les objets avec une identité faible @ no__t-0|Un objet est dit d'identité faible lorsqu'il est accessible directement au-delà des limites d'un domaine d'application. Un thread qui essaie d'acquérir un verrou sur un objet qui affiche une identité faible peut être bloqué par un deuxième thread dans un domaine d'application différent qui dispose d'un verrou sur le même objet.|
+|@NO__T 0CA2003 : Ne pas traiter les fibres comme des threads @ no__t-0|Un thread managé est traité comme un thread Win32.|
+|@NO__T 0CA2004 : Supprimez les appels à GC. KeepAlive @ no__t-0|Si vous effectuez une conversion en utilisation SafeHandle, supprimez tous les appels à GC. KeepAlive (objet). Dans ce cas, les classes n’ont pas besoin d’appeler GC. KeepAlive, en supposant qu’ils n’ont pas de finaliseur, mais qu’ils reposent sur SafeHandle pour finaliser le handle du système d’exploitation.|
+|@NO__T 0CA2006 : Utiliser SafeHandle pour encapsuler les ressources natives @ no__t-0|L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s'il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place.|
+|@NO__T 0CA2007 : Ne pas attendre directement une tâche @ no__t-0|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directement.|

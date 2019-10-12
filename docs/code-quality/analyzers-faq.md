@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 12e6681490c6c933369d3fef064ec88f240e3a99
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999976"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172774"
 ---
 # <a name="code-analysis-faq"></a>FAQ sur l’analyse du code
 
@@ -24,24 +24,30 @@ Cette page contient des réponses à certaines questions fréquemment posées su
 
 **Q**: Dois-je utiliser l’analyse du code ou EditorConfig pour vérifier le style du code ?
 
-**R** : L’analyse du code et les fichiers EditorConfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent également être utilisés pour configurer des packages de l’analyseur NuGet, tels que les [analyseurs FxCop](configure-fxcop-analyzers.md).
+**R** : L’analyse du code et les fichiers EditorConfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent être utilisés pour activer ou désactiver les règles de l’analyseur, ainsi que pour configurer certains packages de l’analyseur NuGet, tels que les [analyseurs FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig et ensembles de règles
 
 **Q**: Dois-je configurer mes analyseurs à l’aide d’un ensemble de règles ou d’un fichier EditorConfig ?
 
-**R** : Les ensembles de règles et les fichiers EditorConfig peuvent coexister et peuvent tous deux être utilisés pour configurer des analyseurs. Les [ensembles de règles](analyzer-rule-sets.md) vous permettent d’activer et de désactiver des règles et de définir leur gravité. Les fichiers EditorConfig offrent d’autres méthodes de configuration des règles. Pour les analyseurs FxCop, les fichiers EditorConfig vous permettent de [définir les types de code à analyser](fxcop-analyzer-options.md). Pour les analyseurs de style de code intégrés à Visual Studio, les fichiers EditorConfig vous permettent de [définir les styles de code préférés](../ide/editorconfig-code-style-settings-reference.md) pour un code base.
+**R** : Les ensembles de règles et les fichiers EditorConfig peuvent coexister et peuvent tous deux être utilisés pour configurer des analyseurs. Les fichiers EditorConfig et les ensembles de règles vous permettent d’activer et de désactiver des règles et de définir leur gravité.
+
+Toutefois, les fichiers EditorConfig offrent d’autres moyens de configurer les règles :
+
+- Pour les analyseurs FxCop, les fichiers EditorConfig vous permettent de [définir les types de code à analyser](fxcop-analyzer-options.md).
+- Pour les analyseurs de style de code intégrés à Visual Studio, les fichiers EditorConfig vous permettent de [définir les styles de code préférés](../ide/editorconfig-code-style-settings-reference.md) pour un code base.
 
 Outre les ensembles de règles et les fichiers EditorConfig, certains analyseurs sont configurés à l’aide de fichiers texte marqués comme [fichiers supplémentaires](../ide/build-actions.md#build-action-values) pour les C# compilateurs vb et.
 
 > [!NOTE]
-> Les fichiers EditorConfig ne peuvent pas être utilisés pour configurer l’analyse héritée, contrairement aux ensembles de règles.
+> - Les fichiers EditorConfig peuvent uniquement être utilisés pour activer des règles et définir leur gravité dans Visual Studio 2019 version 16,3 et versions ultérieures.
+> - Les fichiers EditorConfig ne peuvent pas être utilisés pour configurer l’analyse héritée, contrairement aux ensembles de règles.
 
 ## <a name="code-analysis-in-ci-builds"></a>Analyse du code dans les builds d’intégration continue
 
 **Q**: L’analyse du code basé sur .NET Compiler Platform fonctionne-t-elle dans les builds d’intégration continue ?
 
-**R** : Oui. Pour les analyseurs installés à partir d’un package NuGet, ces règles sont [appliquées au moment](roslyn-analyzers-overview.md#build-errors)de la génération, y compris pendant une build ci. Les analyseurs utilisés dans les builds d’intégration continue respectent la configuration des règles des [ensembles de règles](analyzer-rule-sets.md) et des [fichiers. editorconfig](configure-fxcop-analyzers.md). Actuellement, les analyseurs de code intégrés à Visual Studio ne sont pas disponibles en tant que package NuGet. par conséquent, ces règles ne sont pas applicables dans une build CI.
+**R** : Oui. Pour les analyseurs installés à partir d’un package NuGet, ces règles sont [appliquées au moment](roslyn-analyzers-overview.md#build-errors)de la génération, y compris pendant une build ci. Les analyseurs utilisés dans les builds d’intégration continue respectent la configuration des règles des ensembles de règles et des fichiers EditorConfig. Actuellement, les analyseurs de code intégrés à Visual Studio ne sont pas disponibles en tant que package NuGet. par conséquent, ces règles ne sont pas applicables dans une build CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analyseurs IDE et StyleCop
 
