@@ -1,7 +1,7 @@
 ---
 title: Créer une installation hors connexion
 description: Découvrez comment installer Visual Studio hors connexion quand vous avez une connexion Internet non fiable ou une bande passante faible.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018843"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289623"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -79,7 +79,7 @@ Vous devez avoir une connexion Internet pour effectuer cette étape.
 
 Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-L’exécutable du programme d’installation @ no__t-0or pour être plus précis, le fichier du programme d’amorçage @ no__t-1should correspond à l’un des éléments suivants.
+L’exécutable du programme d’installation @ no__t-0or pour être plus précis, le fichier du programme d’amorçage @ no__t-1should correspond ou est semblable à l’un des éléments suivants.
 
 | Édition | Nom de fichier |
 |-------------|-----------------------|
@@ -102,6 +102,9 @@ Commencez par télécharger le programme d’amorçage de Visual Studio pour l�
 | Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ### <a name="step-2---create-a-local-install-cache"></a>Étape 2 : Créer un cache d’installation local
 

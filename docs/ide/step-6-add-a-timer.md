@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118986"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289637"
 ---
 # <a name="step-6-add-a-timer"></a>Étape 6 : Ajouter un minuteur
 Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.
@@ -27,7 +27,7 @@ Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combin
 
 1. Dans la boîte à outils du **Concepteur Windows Forms**, choisissez **Timer** (dans la catégorie **Composants**) et appuyez sur **Entrée**, ou double-cliquez sur la minuterie pour ajouter un contrôle Timer au formulaire. L’icône de la minuterie, appelée **Timer1**, doit apparaître dans un espace sous le formulaire, comme le montre la figure suivante.
 
-     ![Minuterie](../ide/media/express_timer.png)
+     ![Minuterie](../ide/media/express_timer.png)<br/>
 **Minuterie**
 
     > [!NOTE]
@@ -39,6 +39,9 @@ Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combin
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>@no__t 0Programming-contrôle de langue pour docs. Microsoft. com @ no__t-1
 
      Le gestionnaire d’événements Tick effectue trois opérations : tout d’abord, il garantit l’arrêt du minuteur en appelant la méthode <xref:System.Windows.Forms.Timer.Stop>. Ensuite, il utilise deux variables de référence, `firstClicked` et `secondClicked`, pour masquer de nouveau les icônes des deux contrôles Label que le joueur a choisis. Enfin, il réinitialise les variables de référence `firstClicked` et `secondClicked` à la valeur `null` en Visual C# et `Nothing` en Visual Basic. Cette étape est importante car elle permet au programme de se réinitialiser. À présent, le gestionnaire ne conserve aucune trace des contrôles <xref:System.Windows.Forms.Label> et le joueur peut de nouveau choisir un contrôle label.
 

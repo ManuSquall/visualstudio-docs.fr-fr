@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598ed320e910f1f2e40e9ff84b7c317bff704741
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5a670ec4b5b6689c68820b37b20a4e1a942dc3bd
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118772"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289611"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque étiquette
 Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne sera pas intéressant. Pour éviter cela, affectez les icônes de façon aléatoire aux contrôles d’étiquettes de votre formulaire en utilisant une méthode `AssignIconsToSquares()`.
@@ -29,6 +29,9 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
+
+      > [!IMPORTANT]
+      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>@no__t 0Programming-contrôle de langue pour docs. Microsoft. com @ no__t-1
 
 2. Ajoutez la méthode `AssignIconsToSquares()`, comme indiqué dans l'étape précédente. Vous pouvez l’insérer juste au-dessous du code que vous avez ajouté à l’[Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
