@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231303"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305898"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227 : Les propriétés de collection doivent être en lecture seule
 
@@ -31,18 +31,18 @@ ms.locfileid: "71231303"
 |-|-|
 |TypeName|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Une propriété accessible en écriture, visible de l’extérieur, est d’un <xref:System.Collections.ICollection?displayProperty=fullName>type qui implémente. Cette règle ignore les tableaux, les indexeurs (propriétés portant le nom « Item ») et les jeux d’autorisations.
+Une propriété accessible en écriture, visible de l’extérieur, est d’un type qui implémente <xref:System.Collections.ICollection?displayProperty=fullName>. Cette règle ignore les tableaux, les indexeurs (propriétés portant le nom « Item ») et les jeux d’autorisations.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Une propriété de collection accessible en écriture permet à un utilisateur de remplacer la collection par une collection complètement différente. Une propriété en lecture seule empêche le remplacement de la collection, mais permet toujours de définir les membres individuels. Si le remplacement de la collection est un objectif, le modèle de conception par défaut consiste à inclure une méthode pour supprimer tous les éléments de la collection, et une méthode pour remplir à nouveau la collection. Pour obtenir <xref:System.Collections.ArrayList.Clear%2A> un <xref:System.Collections.ArrayList.AddRange%2A> exemple de ce <xref:System.Collections.ArrayList?displayProperty=fullName> modèle, consultez les méthodes et de la classe.
+Une propriété de collection accessible en écriture permet à un utilisateur de remplacer la collection par une collection complètement différente. Une propriété en lecture seule empêche le remplacement de la collection, mais permet toujours de définir les membres individuels. Si le remplacement de la collection est un objectif, le modèle de conception par défaut consiste à inclure une méthode pour supprimer tous les éléments de la collection, et une méthode pour remplir à nouveau la collection. Pour obtenir un exemple de ce modèle, consultez les méthodes <xref:System.Collections.ArrayList.Clear%2A> et <xref:System.Collections.ArrayList.AddRange%2A> de la classe <xref:System.Collections.ArrayList?displayProperty=fullName>.
 
-La sérialisation binaire et la sérialisation XML prennent toutes deux en charge les propriétés en lecture seule qui sont des collections. La <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe a des exigences spécifiques pour les types <xref:System.Collections.ICollection> qui <xref:System.Collections.IEnumerable?displayProperty=fullName> implémentent et afin d’être sérialisables.
+La sérialisation binaire et la sérialisation XML prennent toutes deux en charge les propriétés en lecture seule qui sont des collections. La classe <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> a des exigences spécifiques pour les types qui implémentent <xref:System.Collections.ICollection> et <xref:System.Collections.IEnumerable?displayProperty=fullName> afin d’être sérialisable.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -56,7 +56,7 @@ Dans le cas contraire, ne supprimez pas les avertissements de cette règle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un type avec une propriété de collection accessible en écriture et montre comment la collection peut être remplacée directement. En outre, il montre le mode de remplacement par défaut d’une propriété de collection en `Clear` lecture `AddRange` seule à l’aide des méthodes et.
+L’exemple suivant montre un type avec une propriété de collection accessible en écriture et montre comment la collection peut être remplacée directement. En outre, il montre le mode de remplacement par défaut d’une propriété de collection en lecture seule à l’aide des méthodes `Clear` et `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ L’exemple suivant montre un type avec une propriété de collection accessible
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1819 Les propriétés ne doivent pas retourner des tableaux](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- @NO__T 0CA1819 : Les propriétés ne doivent pas retourner des tableaux @ no__t-0

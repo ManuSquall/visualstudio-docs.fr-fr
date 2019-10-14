@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce9f55dd54dbe85f64226c1ca7f0b4f75b1cdfc
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118697"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306237"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 
@@ -33,7 +33,7 @@ Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **butto
 
 1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler jusqu’à la propriété **(Name)** dans la fenêtre **Propriétés**. (La propriété **(Name)** se trouve vers le haut quand les propriétés sont classées par ordre alphabétique.) Remplacez le nom par **BoutonFermer**, comme illustré dans la capture d’écran suivante.
 
-    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>***Propriétés*** de *fenêtre avec* ***BoutonFermer*** *nom*
+    ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>Fenêtre ***Propriétés*** *avec* *nom* CloseButton
 
     > [!NOTE]
     > Essayez de modifier le nom de votre bouton pour **Fermer le bouton**, avec un espace entre les mots « Close » et « Button ». Dans ce cas, l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
@@ -65,8 +65,7 @@ Onglet ***Form1.cs*** *avec C# code*
     End Sub
     ```
 
-   > [!IMPORTANT]
-   > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
 
    Vous examinez le code appelé `showButton_Click()` (ou `ShowButton_Click()`). L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code, connu sous le nom de *méthode*, s’exécute lorsque vous exécutez votre application et choisissez le contrôle (dans ce cas, le bouton **afficher une image** ).
 
@@ -75,7 +74,7 @@ Onglet ***Form1.cs*** *avec C# code*
 1. Pour ajouter une méthode, ouvrez le fichier de code du contrôle **CheckBox** dans le **Concepteur Windows Forms** pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()`. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
    > [!TIP]
-   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez**Concepteur**de **vues** > .
+   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou *Formulaire1. vb* dans Visual Basic, ou dans la barre de menus, choisissez **Afficher** > **Designer**.
 
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
@@ -94,17 +93,17 @@ Onglet ***Form1.cs*** *avec C# code*
 
     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré.
 
-    Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé la `showButton_Click()` méthode de gestionnaire d' `ShowButton_Click()`événements (ou). De même, des parenthèses ouvrantes et fermantes `()` sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes.
+    Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé la méthode de gestionnaire d’événements `showButton_Click()` (ou `ShowButton_Click()`). De même, des parenthèses ouvrantes et fermantes `()` sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes.
 
     Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser** > **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation de changement de nom](../ide/reference/rename.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, **consultez [étape 7 : Ajoutez des composants de boîte de](../ide/step-7-add-dialog-components-to-your-form.md)dialogue à votre formulaire**.
+* Pour passer à l’étape suivante du didacticiel, consultez ** @ no__t-1Step 7 : Ajoutez des composants de boîte de dialogue à votre formulaire @ no__t-0 @ no__t-1.
 
 * Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Tutoriel 2 : Créer un questionnaire mathématique chronométré @ no__t-0
+* [Tutoriel 3 : Créer un jeu de combinaisons @ no__t-0

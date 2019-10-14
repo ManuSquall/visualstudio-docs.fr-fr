@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172801"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305672"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -93,7 +93,7 @@ La définition de la gravité d’une règle dans un fichier baEditorConfig est 
 
 1. Si vous n’avez pas encore de fichier EditorConfig pour votre projet, ajoutez-en [un](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822-mark-members-as-static.md) sur `error` pour C# les fichiers, l’entrée ressemble à ce qui suit :
+2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822.md) sur `error` pour C# les fichiers, l’entrée ressemble à ce qui suit :
 
    ```ini
    [*.cs]

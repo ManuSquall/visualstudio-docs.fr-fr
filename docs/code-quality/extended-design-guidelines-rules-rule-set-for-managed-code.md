@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3ad443a149b1c3a49c4bbbc260a4121d0a721aed
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585076"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305824"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 
@@ -42,7 +42,7 @@ Le tableau suivant décrit toutes les règles de l’ensemble de règles des rè
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Les types de base type visibles par COM doivent être visibles par COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Les méthodes d'inscription COM doivent être mises en correspondance|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les méthodes P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimez les finaliseurs vides|
+|[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Les champs de type valeur doivent être portables|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Les déclarations P/Invoke doivent être portables|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne définissez pas un verrou sur des objets à identité faible|
@@ -138,19 +138,19 @@ Le tableau suivant décrit toutes les règles de l’ensemble de règles des rè
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Éviter l'excès de complexité|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Les identificateurs ne doivent pas différer uniquement par leur casse|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Les identificateurs ne doivent pas correspondre à des mots clés|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Passez en revue les paramètres inutilisés|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|Supprimez les variables locales inutilisées|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|Évitez le surplus de variables locales|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Initialisez les champs statiques de type référence en ligne|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|Évitez le recours à du code privé non appelé|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Évitez les classes internes non instanciées|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Évitez les attributs unsealed|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Utilisez des tableaux en escalier à la place de tableaux multidimensionnels|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Remplacez Equals et l'opérateur égal à dans les types valeur|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Les propriétés ne doivent pas retourner des tableaux|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Vérifiez la présence de chaînes vides par la longueur de chaîne|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|Marquez les membres comme static|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|Évitez les champs privés inutilisés|
+|[CA1801](../code-quality/ca1801.md)|Passez en revue les paramètres inutilisés|
+|[CA1804](../code-quality/ca1804.md)|Supprimez les variables locales inutilisées|
+|[CA1809](../code-quality/ca1809.md)|Évitez le surplus de variables locales|
+|[CA1810](../code-quality/ca1810.md)|Initialisez les champs statiques de type référence en ligne|
+|[CA1811](../code-quality/ca1811.md)|Évitez le recours à du code privé non appelé|
+|[CA1812](../code-quality/ca1812.md)|Évitez les classes internes non instanciées|
+|[CA1813](../code-quality/ca1813.md)|Évitez les attributs unsealed|
+|[CA1814](../code-quality/ca1814.md)|Utilisez des tableaux en escalier à la place de tableaux multidimensionnels|
+|[CA1815](../code-quality/ca1815.md)|Remplacez Equals et l'opérateur égal à dans les types valeur|
+|[CA1819](../code-quality/ca1819.md)|Les propriétés ne doivent pas retourner des tableaux|
+|[CA1820](../code-quality/ca1820.md)|Vérifiez la présence de chaînes vides par la longueur de chaîne|
+|[CA1822](../code-quality/ca1822.md)|Marquez les membres comme static|
+|[CA1823](../code-quality/ca1823.md)|Évitez les champs privés inutilisés|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Ne levez pas des types d'exceptions réservés|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Utilisez des équivalents managés de l'API Win32|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Instanciez les exceptions d'argument comme il se doit|

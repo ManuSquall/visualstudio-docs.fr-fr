@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f579b6776ffab6d0ed3b2e216e29d36d2065ee
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 695f15c73120f766157fabb09193d32115dda588
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231694"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305934"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207 : Initialisez les champs statiques des types valeur en ligne
 
@@ -27,16 +27,16 @@ ms.locfileid: "71231694"
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
-|Category|Microsoft.Usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Un type valeur déclare un constructeur statique explicite.
 
 ## <a name="rule-description"></a>Description de la règle
-Lorsqu’un type valeur est déclaré, il subit une initialisation par défaut où tous les champs de type valeur ont la valeur zéro et tous les champs de type référence ont la valeur `null` (`Nothing` en Visual Basic). L’exécution d’un constructeur statique explicite est garantie uniquement avant l’appel d’un constructeur d’instance ou d’un membre statique du type. Par conséquent, si le type est créé sans appeler un constructeur d’instance, l’exécution du constructeur statique n’est pas garantie.
+Lorsqu’un type valeur est déclaré, il subit une initialisation par défaut où tous les champs de type valeur ont la valeur zéro et tous les champs de type référence ont la valeur `null` (`Nothing` dans Visual Basic). L’exécution d’un constructeur statique explicite est garantie uniquement avant l’appel d’un constructeur d’instance ou d’un membre statique du type. Par conséquent, si le type est créé sans appeler un constructeur d’instance, l’exécution du constructeur statique n’est pas garantie.
 
-Si toutes les données statiques sont initialisées inline et qu’aucun constructeur statique explicite n' C# est déclaré, les compilateurs et `beforefieldinit` Visual Basic ajoutent l’indicateur à la définition de la classe MSIL. Les compilateurs ajoutent également un constructeur statique privé qui contient le code d’initialisation statique. Ce constructeur statique privé est garanti s’exécuter avant l’accès à tous les champs statiques du type.
+Si toutes les données statiques sont initialisées inline et qu’aucun constructeur statique explicite n' C# est déclaré, les compilateurs et Visual Basic ajoutent l’indicateur `beforefieldinit` à la définition de classe MSIL. Les compilateurs ajoutent également un constructeur statique privé qui contient le code d’initialisation statique. Ce constructeur statique privé est garanti s’exécuter avant l’accès à tous les champs statiques du type.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu’elles sont déclarées et supprimez le constructeur statique.
@@ -45,4 +45,4 @@ Pour corriger une violation de cette règle, initialisez toutes les données sta
 Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
-[CA1810 Initialiser les champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+@NO__T 0CA1810 : Initialiser les champs statiques de type référence en ligne @ no__t-0

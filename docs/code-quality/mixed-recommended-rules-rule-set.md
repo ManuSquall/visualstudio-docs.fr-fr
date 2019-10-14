@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585321"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305594"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 
@@ -127,7 +127,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C6518](../code-quality/c6518.md)|Taille accessible en écriture dans mémoire tampon non accessible en écriture|
 |[C6522](../code-quality/c6522.md)|Type de chaîne de taille non valide|
 |[C6525](../code-quality/c6525.md)|Chaîne de taille non valide. Emplacement inaccessible|
-|[C6527](../code-quality/c6527.md)|Annotation non valide: La propriété’NeedsRelease’ne peut pas être utilisée sur des valeurs de type void|
+|[C6527](../code-quality/c6527.md)|Annotation non valide : La propriété’NeedsRelease’ne peut pas être utilisée sur des valeurs de type void|
 |[C6530](../code-quality/c6530.md)|Style de chaîne de format non reconnu|
 |[C6540](../code-quality/c6540.md)|L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes|
 |[C6551](../code-quality/c6551.md)|Spécification de taille non valide : expression impossible à analyser|
@@ -151,7 +151,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28020](../code-quality/c28020.md)|L’expression n’est pas vraie pour cet appel|
 |[C28021](../code-quality/c28021.md)|Le paramètre annoté doit être un pointeur|
 |[C28022](../code-quality/c28022.md)|La ou les classes de fonction sur cette fonction ne correspondent pas à la ou les classes de fonction sur le typedef utilisé pour la définir.|
-|[C28023](../code-quality/c28023.md)|La fonction affectée ou passée doit avoir une \_annotation de classe\_ de fonction\_pour au moins une des classes|
+|[C28023](../code-quality/c28023.md)|La fonction affectée ou transmise doit avoir une annotation \_Function @ no__t-1class @ no__t-2 pour au moins une des classes|
 |[C28024](../code-quality/c28024.md)|Le pointeur de fonction assigné à est annoté avec la classe de fonction, qui n’est pas contenue dans la liste des classes de fonction.|
 |[C28039](../code-quality/c28039.md)|Le type du paramètre réel doit correspondre exactement au type|
 |[C28112](../code-quality/c28112.md)|Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction verrouillée.|
@@ -169,14 +169,14 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28196](../code-quality/c28196.md)|L’exigence n’est pas satisfaite. (L’expression n’est pas évaluée à true.)|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|\_Réussite\_ ou\_échec\_utilisé dans un contexte non conforme\_|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 ou \_On @ no__t-3failure @ no__t-4 utilisé dans un contexte illégal|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28209](../code-quality/c28209.md)|La déclaration pour le symbole a une déclaration en conflit|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L' \_\_ annotation\_usedecl\_annotations doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|L’annotation \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
@@ -219,7 +219,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre de \_la\_valeur\_ de macro est null|
+|[C28275](../code-quality/c28275.md)|Le paramètre pour \_Macro @ no__t-1value @ no__t-2 a la valeur null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|
@@ -227,7 +227,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28286](../code-quality/c28286.md)|Pour la fonction, erreur de syntaxe près de la fin|
 |[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)|
 |[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)|
-|[C28289](../code-quality/c28289.md)|Pour la fonction: ReadableTo ou WritableTo n’a pas de spécification de limite en tant que paramètre|
+|[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n’a pas de spécification de limite en tant que paramètre|
 |[C28290](../code-quality/c28290.md)|l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres|
 |[C28291](../code-quality/c28291.md)|post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.|
 |[C28300](../code-quality/c28300.md)|Opérandes d’expression de types incompatibles pour l’opérateur|
@@ -257,7 +257,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Les types de base type visibles par COM doivent être visibles par COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Les méthodes d'inscription COM doivent être mises en correspondance|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les méthodes P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimez les finaliseurs vides|
+|[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Les champs de type valeur doivent être portables|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Les déclarations P/Invoke doivent être portables|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne définissez pas un verrou sur des objets à identité faible|
