@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974888"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349465"
 ---
-# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procédure pas à pas : Utiliser l’analyse statique du code pour rechercher les erreurs de code
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procédure pas à pas : utiliser l’analyse statique du code pour rechercher les erreurs de code
 
 Dans cette procédure pas à pas, vous allez analyser un projet managé pour les erreurs de code à l’aide de l’analyse du code hérité.
 
@@ -93,27 +93,27 @@ Cet article vous guide tout au long du processus d’utilisation de l’analyse 
 
 1. Utilisez les conseils suivants pour corriger les avertissements :
 
-   @NO__T 0CA1014 : Marquer les assemblys avec CLSCompliantAttribute @ no__t-0 : Ajoutez le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.
+   [CA1014 : marquer les assemblys avec CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): ajoutez le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.
 
-   @NO__T 0CA1032 : Implémenter des constructeurs d’exception standard @ no__t-0 : Ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo`.
+   [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo`.
 
-   @NO__T 0CA1032 : Implémenter des constructeurs d’exception standard @ no__t-0 : Ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo`.
+   [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo`.
 
-   @NO__T 0CA1032 : Implémenter des constructeurs d’exception standard @ no__t-0 : Ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à la démonstration de la classe. Vous devez également ajouter une instruction `using` pour <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à la démonstration de classe. Vous devez également ajouter une instruction `using` pour <xref:System.Runtime.Serialization?displayProperty=fullName>.
 
-   @NO__T 0CA1032 : Implémenter des constructeurs d’exception standard @ no__t-0 : Ajoutez le constructeur `public demo () : base() { }` à la classe `demo`.
+   [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): ajoutez le constructeur `public demo () : base() { }` à la classe `demo`.
 
-   @NO__T 0CA1709 : La casse des identificateurs doit être correcte @ no__t-0 : Modifiez la casse de l’espace de noms `testCode` en `TestCode`.
+   [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): modifiez la casse de l’espace de noms `testCode` en `TestCode`.
 
-   @NO__T 0CA1709 : La casse des identificateurs doit être correcte @ no__t-0 : Remplacez le nom du membre par `Demo`.
+   [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): remplacez le nom du membre par `Demo`.
 
-   @NO__T 0CA1709 : La casse des identificateurs doit être correcte @ no__t-0 : Remplacez le nom du membre par `Item`.
+   [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): remplacez le nom du membre par `Item`.
 
-   @NO__T 0CA1710 : Les identificateurs doivent avoir le suffixe correct @ no__t-0 : Remplacez le nom de la classe et ses constructeurs par `DemoException`.
+   [CA1710 : les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): modifiez le nom de la classe et ses constructeurs en `DemoException`.
 
-   [CA2237 : Marquer les types ISerializable avec SerializableAttribute @ no__t-0 : Ajoutez l’attribut `[Serializable ()]` à la classe `demo`.
+   [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237.md): ajoutez l’attribut `[Serializable ()]` à la classe `demo`.
 
-   @NO__T 0CA2210 : Les assemblys doivent avoir des noms forts valides @ no__t-0 : Signez’CodeAnalysisManagedDemo’avec une clé de nom fort :
+   [CA2210 : les assemblys doivent avoir des noms forts valides](../code-quality/ca2210.md): Sign’CodeAnalysisManagedDemo’avec une clé de nom fort :
 
    1. Dans le menu **projet** , choisissez **Propriétés de CodeAnalysisManagedDemo**.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306115"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349098"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049 : Les types qui possèdent des ressources natives doivent être supprimables
 
@@ -30,7 +30,7 @@ ms.locfileid: "72306115"
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -56,13 +56,13 @@ L’exemple suivant illustre un type qui implémente <xref:System.IDisposable> p
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-@NO__T 0CA2115 : Appelez GC. KeepAlive quand vous utilisez des ressources natives @ no__t-0
+[CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-@NO__T 0CA1816 : Appelez GC. SuppressFinalize correctement @ no__t-0
+[CA1816 : Appelez GC.SuppressFinalize correctement](../code-quality/ca1816.md)
 
-@NO__T 0CA2216 : Les types jetables doivent déclarer un finaliseur @ no__t-0
+[CA2216 : Les types supprimables doivent déclarer un finaliseur](../code-quality/ca2216.md)
 
-[CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001 : Les types qui ont des champs supprimables doivent être supprimables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Voir aussi
 

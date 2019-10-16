@@ -1,5 +1,5 @@
 ---
-title: 'Étape 6 : Nommer vos contrôles bouton'
+title: 'Étape 6 : affecter un nom à vos contrôles bouton'
 ms.date: 08/30/2016
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 ms.topic: tutorial
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306237"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313963"
 ---
-# <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
+# <a name="step-6-name-your-button-controls"></a>Étape 6 : affecter un nom à vos contrôles bouton
 
 Votre formulaire ne contient qu’un seul <xref:System.Windows.Forms.PictureBox>. Lorsque vous l’avez ajouté, l’IDE l’a nommé automatiquement **pictureBox1**. Il n’existe qu’un seul <xref:System.Windows.Forms.CheckBox>, appelé **checkBox1**. Vous allez bientôt écrire du code et ce code fera référence à CheckBox et PictureBox. Étant donné qu’il n’existe qu’un seul de ces contrôles, vous saurez ce que cela signifie quand vous voyez **PictureBox1** ou **CheckBox1** dans votre code.
 
@@ -31,12 +31,12 @@ Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **butto
 
 ## <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton
 
-1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler jusqu’à la propriété **(Name)** dans la fenêtre **Propriétés**. (La propriété **(Name)** se trouve vers le haut quand les propriétés sont classées par ordre alphabétique.) Remplacez le nom par **BoutonFermer**, comme illustré dans la capture d’écran suivante.
+1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler la fenêtre **Propriétés** jusqu’à ce que la propriété **(Name)** s’affiche. (La propriété **(Name)** se trouve vers le haut lorsque les propriétés sont classées par ordre alphabétique.) Remplacez le nom par **BoutonFermer**, comme illustré dans la capture d’écran suivante.
 
     ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)<br>Fenêtre ***Propriétés*** *avec* *nom* CloseButton
 
     > [!NOTE]
-    > Essayez de modifier le nom de votre bouton pour **Fermer le bouton**, avec un espace entre les mots « Close » et « Button ». Dans ce cas, l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
+    > Essayez de modifier le nom de votre bouton pour **Fermer le bouton**, avec un espace entre les mots « Close » et « Button ». Dans ce cas, l’IDE affiche un message d’erreur : « la valeur de la propriété n’est pas valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
 
 1. Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**.
 Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
@@ -65,7 +65,7 @@ Onglet ***Form1.cs*** *avec C# code*
     End Sub
     ```
 
-   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
+   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
    Vous examinez le code appelé `showButton_Click()` (ou `ShowButton_Click()`). L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code, connu sous le nom de *méthode*, s’exécute lorsque vous exécutez votre application et choisissez le contrôle (dans ce cas, le bouton **afficher une image** ).
 
@@ -99,11 +99,11 @@ Onglet ***Form1.cs*** *avec C# code*
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, consultez ** @ no__t-1Step 7 : Ajoutez des composants de boîte de dialogue à votre formulaire @ no__t-0 @ no__t-1.
+* Pour passer à l’étape suivante du didacticiel, consultez **[étape 7 : ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md)** .
 
-* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
+* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré @ no__t-0
-* [Tutoriel 3 : Créer un jeu de combinaisons @ no__t-0
+* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)

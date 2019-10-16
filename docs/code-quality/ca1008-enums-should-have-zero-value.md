@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 53665601cc719882930c0ceaa9794603791d2d7c
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236487"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349230"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008 : Les enums doivent avoir la valeur zéro
 
@@ -31,12 +31,12 @@ ms.locfileid: "71236487"
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture : lorsque vous êtes invité à ajouter une valeur **None** à une énumération sans indicateur. Avec rupture : lorsque vous êtes invité à renommer ou à supprimer des valeurs d’énumération.|
 
 ## <a name="cause"></a>Cause
 
-Une énumération sans application <xref:System.FlagsAttribute?displayProperty=fullName> ne définit pas un membre dont la valeur est égale à zéro. Ou bien, une énumération qui a <xref:System.FlagsAttribute> un appliqué définit un membre qui a une valeur de zéro, mais son nom n’est pas’none'. Ou, l’énumération définit plusieurs membres dont la valeur est égale à zéro.
+Une énumération sans @no__t appliquée-0 ne définit pas un membre dont la valeur est égale à zéro. Ou une énumération qui a un appliqué <xref:System.FlagsAttribute> définit un membre qui a une valeur de zéro, mais son nom n’est pas’none'. Ou, l’énumération définit plusieurs membres dont la valeur est égale à zéro.
 
 Par défaut, cette règle examine uniquement les énumérations visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
@@ -44,7 +44,7 @@ Par défaut, cette règle examine uniquement les énumérations visibles de l’
 
 La valeur par défaut d’une énumération non initialisée, comme d’autres types valeur, est zéro. Une énumération non affectée par des indicateurs doit définir un membre qui a la valeur zéro afin que la valeur par défaut soit une valeur valide de l’énumération. Le cas échéant, nommez le membre « None ». Sinon, affectez la valeur zéro au membre le plus fréquemment utilisé. Par défaut, si la valeur du premier membre de l’énumération n’est pas définie dans la déclaration, sa valeur est zéro.
 
-Si une énumération qui a <xref:System.FlagsAttribute> le appliqué définit un membre de valeur zéro, son nom doit être’none’pour indiquer qu’aucune valeur n’a été définie dans l’énumération. L’utilisation d’un membre de valeur zéro à d’autres fins est contraire à l’utilisation <xref:System.FlagsAttribute> de dans la mesure où les opérateurs de bits and et or sont inutiles avec le membre. Cela implique que la valeur zéro doit être affectée à un seul membre. Si plusieurs membres ayant la valeur zéro se produisent dans une énumération avec attributs d' `Enum.ToString()` indicateurs, retourne des résultats incorrects pour les membres qui ne sont pas nuls.
+Si une énumération avec l' <xref:System.FlagsAttribute> appliquée définit un membre de valeur zéro, son nom doit être’none’pour indiquer qu’aucune valeur n’a été définie dans l’énumération. L’utilisation d’un membre de valeur zéro à d’autres fins est contraire à l’utilisation du <xref:System.FlagsAttribute> dans le sens où les opérateurs de bits and et OR sont inutiles avec le membre. Cela implique que la valeur zéro doit être affectée à un seul membre. Si plusieurs membres ayant la valeur zéro se produisent dans une énumération avec attributs d’indicateurs, `Enum.ToString()` retourne des résultats incorrects pour les membres qui ne sont pas nuls.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -66,7 +66,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre deux énumérations qui satisfont à la règle et une `BadTraceOptions`énumération,, qui violent la règle.
+L’exemple suivant montre deux énumérations qui satisfont la règle et une énumération, `BadTraceOptions`, qui transgressent la règle.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,11 +74,11 @@ L’exemple suivant montre deux énumérations qui satisfont à la règle et une
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2217 Ne Marquez pas les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700 Ne nommez pas les valeurs enum’reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712 Ne pas préfixer les valeurs d’énumération avec le nom de type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028 Le stockage enum doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
-- [CA1027 Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700 : Ne nommez pas les valeurs d’énumération 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712 : Ne préfixez pas les valeurs d’énumération avec le nom du type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028 : Le stockage de l’énumération doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c39ca1d1a1edd9ac2182a3d6d55896c41c189030
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236046"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349112"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 
@@ -27,12 +27,12 @@ ms.locfileid: "71236046"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type étend <xref:System.Exception?displayProperty=fullName> mais ne déclare pas tous les constructeurs requis.
+Un type étend <xref:System.Exception?displayProperty=fullName>, mais ne déclare pas tous les constructeurs requis.
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -48,9 +48,9 @@ En outre, si vous exécutez l’analyse FxCop héritée par opposition à [des a
 
 - NewException protected ou Private (SerializationInfo, StreamingContext)
 
-Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui possède la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation.
+Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation.
 
-Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, [consultez CA2229 : Implémentez des constructeurs](../code-quality/ca2229-implement-serialization-constructors.md)de sérialisation.
+Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémenter des constructeurs de sérialisation](../code-quality/ca2229.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -58,7 +58,7 @@ Pour corriger une violation de cette règle, ajoutez les constructeurs manquants
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer sans risque un avertissement de cette règle lorsque la violation est provoquée par l’utilisation d’un niveau d’accès différent pour les constructeurs publics. En outre, il est possible de supprimer l’avertissement pour le `NewException(SerializationInfo, StreamingContext)` constructeur si vous générez une bibliothèque de classes portables (PCL).
+Il est possible de supprimer sans risque un avertissement de cette règle lorsque la violation est provoquée par l’utilisation d’un niveau d’accès différent pour les constructeurs publics. En outre, il est possible de supprimer l’avertissement pour le constructeur `NewException(SerializationInfo, StreamingContext)` si vous générez une bibliothèque de classes portables (PCL).
 
 ## <a name="example"></a>Exemple
 
@@ -68,4 +68,4 @@ L’exemple suivant contient un type d’exception qui enfreint cette règle et 
 
 ## <a name="see-also"></a>Voir aussi
 
-[CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1714 : Les noms des enums Flags doivent être au pluriel'
+title: "CA1714 : Les énumérations d'indicateurs doivent avoir des noms au pluriel"
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,37 +14,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0a648978eaf65faa66dd1ac10a4224c7e5168510
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234088"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348924"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Les noms des enums Flags doivent être au pluriel
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714 : Les énumérations d'indicateurs doivent avoir des noms au pluriel
 
 |||
 |-|-|
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Une énumération a <xref:System.FlagsAttribute?displayProperty=fullName> le et son nom ne se termine pas par’s'.
+Une énumération a le <xref:System.FlagsAttribute?displayProperty=fullName> et son nom ne se termine pas par’s'.
 
 Par défaut, cette règle examine uniquement les énumérations visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les types marqués avec ont <xref:System.FlagsAttribute> des noms au pluriel, car l’attribut indique qu’il est possible de spécifier plusieurs valeurs. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir <xref:System.FlagsAttribute> la et peut être appelée « Days ». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée « Day ».
+Les types marqués avec <xref:System.FlagsAttribute> ont des noms au pluriel, car l’attribut indique qu’il est possible de spécifier plusieurs valeurs. Par exemple, une énumération qui définit les jours de la semaine peut être destinée à être utilisée dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir le <xref:System.FlagsAttribute> et peut être appelée « Days ». Une énumération similaire qui autorise la spécification d’un seul jour n’a pas l’attribut et peut être appelée « Day ».
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Faites du nom de l’énumération un mot pluriel ou supprimez <xref:System.FlagsAttribute> l’attribut si plusieurs valeurs d’énumération ne doivent pas être spécifiées simultanément.
+Faites du nom de l’énumération un mot pluriel ou supprimez l’attribut <xref:System.FlagsAttribute> si plusieurs valeurs d’énumération ne doivent pas être spécifiées simultanément.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -62,8 +62,8 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1027 Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217 Ne Marquez pas les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Voir aussi
 

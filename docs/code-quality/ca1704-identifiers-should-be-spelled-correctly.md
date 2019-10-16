@@ -1,5 +1,5 @@
 ---
-title: "CA1704 : L'orthographe des identificateurs doit être correcte"
+title: 'CA1704 : Les identificateurs doivent être correctement orthographiés'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f2e42e68f008c625c8d6b5150d0348d14e29d3dc
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234291"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348953"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : L'orthographe des identificateurs doit être correcte
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704 : Les identificateurs doivent être correctement orthographiés
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -52,7 +52,7 @@ Cette règle analyse l’identificateur dans des jetons et vérifie l’orthogra
 
 Le vérificateur d’orthographe ne vérifie actuellement que les dictionnaires de culture en anglais. Vous pouvez modifier la culture de votre projet dans le fichier projet, en ajoutant l’élément **CodeAnalysisCulture** .
 
-Par exemple :
+Exemple :
 
 ```xml
 <Project ...>
@@ -69,13 +69,13 @@ Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou 
 
 ### <a name="to-add-words-to-a-custom-dictionary"></a>Pour ajouter des mots à un dictionnaire personnalisé
 
-Nommez le fichier XML du dictionnaire personnalisé *CustomDictionary. xml*. Placez le dictionnaire dans le répertoire d’installation de l’outil, dans le répertoire du projet ou dans le répertoire associé à l’outil sous le profil de l’utilisateur ( *%USERPROFILE%\Application Data\\...* ). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans Visual Studio, consultez [procédure : Personnaliser le dictionnaire](../code-quality/how-to-customize-the-code-analysis-dictionary.md)d’analyse du code.
+Nommez le fichier XML du dictionnaire personnalisé *CustomDictionary. xml*. Placez le dictionnaire dans le répertoire d’installation de l’outil, dans le répertoire du projet ou dans le répertoire associé à l’outil sous le profil de l’utilisateur ( *%USERPROFILE%\Application Data @ no__t-1..* .). Pour savoir comment ajouter le dictionnaire personnalisé à un projet dans Visual Studio, consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 - Ajoutez des mots qui ne doivent pas provoquer une violation sous le dictionnaire/mots/chemin d’accès reconnu.
 
 - Ajoutez des mots qui doivent provoquer une violation sous le dictionnaire/mots/chemin non reconnu.
 
-- Ajoutez les mots qui doivent être signalés comme obsolètes sous le chemin Dictionary/Words/Deprecated. Consultez la rubrique [de la règle associée CA1726 : Pour plus d'](../code-quality/ca1726-use-preferred-terms.md) informations, utilisez les termes préférés.
+- Ajoutez les mots qui doivent être signalés comme obsolètes sous le chemin Dictionary/Words/Deprecated. Pour plus d’informations, consultez la rubrique relative à la règle associée [CA1726 : utiliser les termes préférés](../code-quality/ca1726-use-preferred-terms.md) .
 
 - Ajoutez des exceptions aux règles de casse des acronymes au chemin dictionary/acronymes/CasingExceptions.
 
@@ -110,13 +110,13 @@ Supprimez un avertissement de cette règle uniquement si le mot est intentionnel
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2204 Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703 L’orthographe des chaînes de ressources doit être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707 Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726 Utiliser les termes préférés](../code-quality/ca1726-use-preferred-terms.md)
+- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204.md)
+- [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1726 : Utilisez les termes préférés](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Guide pratique pour personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

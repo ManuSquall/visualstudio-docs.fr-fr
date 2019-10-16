@@ -1,5 +1,5 @@
 ---
-title: "CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus"
+title: "CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235244"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349031"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus
 
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -66,13 +66,13 @@ Les propriétés sont essentiellement des champs intelligents. Par conséquent, 
 
 Les exceptions suivantes peuvent être levées à partir d’une méthode d’extraction de propriété :
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>et tous les dérivés ( <xref:System.ObjectDisposedException?displayProperty=fullName>y compris)
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
-- <xref:System.ArgumentException?displayProperty=fullName>(uniquement à partir d’une récupération indexée)
+- <xref:System.ArgumentException?displayProperty=fullName> (uniquement à partir d’une récupération indexée)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(uniquement à partir d’une récupération indexée)
+- <xref:System.Collections.Generic.KeyNotFoundException> (uniquement à partir d’une récupération indexée)
 
 ### <a name="event-accessor-methods"></a>Méthodes d’accesseur d’événement
 
@@ -80,11 +80,11 @@ Les accesseurs d’événement doivent être des opérations simples qui ne lèv
 
 Les exceptions suivantes peuvent être levées à partir d’un accesseur d’événement :
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>et tous les dérivés ( <xref:System.ObjectDisposedException?displayProperty=fullName>y compris)
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
-- <xref:System.ArgumentException>et dérivés
+- <xref:System.ArgumentException> et dérivés
 
 ### <a name="equals-methods"></a>Equals (méthodes)
 
@@ -94,7 +94,7 @@ Les méthodes **Equals** suivantes ne doivent pas lever d’exceptions :
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Une méthode **Equals** doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si est passé deux types incompatibles, il doit simplement retourner `false` la valeur au lieu de lever une. <xref:System.ArgumentException>
+Une méthode **Equals** doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si est passé deux types incompatibles, il doit simplement retourner `false` au lieu de lever une <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Méthodes GetHashCode
 
@@ -106,7 +106,7 @@ Les méthodes **GetHashCode** suivantes ne doivent généralement pas lever d’
 
 **GetHashCode** doit toujours retourner une valeur. Dans le cas contraire, vous pouvez perdre des éléments dans la table de hachage.
 
-Les versions de **GetHashCode** qui acceptent un argument peuvent lever une <xref:System.ArgumentException>exception. Toutefois, **Object. GetHashCode** ne doit jamais lever d’exception.
+Les versions de **GetHashCode** qui acceptent un argument peuvent lever une <xref:System.ArgumentException>. Toutefois, **Object. GetHashCode** ne doit jamais lever d’exception.
 
 ### <a name="tostring-methods"></a>Méthodes ToString
 
@@ -122,13 +122,13 @@ Lever une exception à partir d’un finaliseur provoque l’échec rapide du CL
 
 ### <a name="dispose-methods"></a>Méthodes dispose
 
-Une <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode ne doit pas lever d’exception. La méthode dispose est souvent appelée dans le cadre de la logique `finally` de nettoyage dans une clause. Par conséquent, lever explicitement une exception à partir de dispose force l’utilisateur à ajouter la `finally` gestion des exceptions à l’intérieur de la clause.
+Une méthode <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ne doit pas lever d’exception. La méthode dispose est souvent appelée dans le cadre de la logique de nettoyage dans une clause `finally`. Par conséquent, lever explicitement une exception à partir de dispose force l’utilisateur à ajouter la gestion des exceptions à l’intérieur de la clause `finally`.
 
 Le chemin d’accès de code **dispose (false)** ne doit jamais lever d’exceptions, car dispose est presque toujours appelé à partir d’un finaliseur.
 
 ### <a name="equality-operators--"></a>Opérateurs d’égalité (= =, ! =)
 
-À l' `true` instar des méthodes Equals, les opérateurs `false`d’égalité doivent retourner ou, et ne doivent pas lever d’exceptions.
+À l’instar des méthodes Equals, les opérateurs d’égalité doivent retourner `true` ou `false`, et ne doivent pas lever d’exceptions.
 
 ### <a name="implicit-cast-operators"></a>Opérateurs de cast implicite
 
@@ -146,7 +146,7 @@ Si la violation a été provoquée par une déclaration d’exception au lieu d�
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2219 Ne pas lever d’exceptions dans les clauses d’exception](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219 : Ne levez pas d’exceptions dans les clauses d’exception](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Voir aussi
 

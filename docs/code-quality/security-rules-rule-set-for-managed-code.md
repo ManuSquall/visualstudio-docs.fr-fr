@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85bf4e140b3a379221c3b7e5a05428b29e3a985b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3449cf131aad8413cf192bb758e27746cc80d051
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018382"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349498"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
 
@@ -63,10 +63,10 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Les types doivent être au moins aussi critiques que les types de base et les interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Les méthodes transparentes ne peuvent pas utiliser d’assertions de sécurité|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler du code natif|
-|[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Les assemblys doivent porter des noms forts valides|
-|[CA2300](ca2300.md)|N’utilisez pas le désérialiseur non sécurisé BinaryFormatter|
-|[CA2301](ca2301.md)|N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable|
-|[CA2302](ca2302.md)|Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize|
+|[CA2210](../code-quality/ca2210.md)|Les assemblys doivent porter des noms forts valides|
+|[Ca2300](ca2300.md)|N’utilisez pas le désérialiseur non sécurisé BinaryFormatter|
+|[Ca2301](ca2301.md)|N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable|
+|[Ca2302](ca2302.md)|Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize|
 |[CA2305](ca2305.md)|N’utilisez pas le désérialiseur non sécurisé LosFormatter|
 |[CA2310](ca2310.md)|N’utilisez pas le désérialiseur non sécurisé NetDataContractSerializer|
 |[CA2311](ca2311.md)|Ne désérialisez pas sans définir d’abord NetDataContractSerializer.Binder|
@@ -75,14 +75,14 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA2321](ca2321.md)|Ne désérialisez avec JavaScriptSerializer à l’aide de SimpleTypeResolver|
 |[CA2322](ca2322.md)|Assurez-vous que JavaScriptSerializer n’est pas initialisé avec SimpleTypeResolver avant la désérialisation|
 |[CA3001](../code-quality/ca3001.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection SQL|
-|[CA3002](../code-quality/ca3002.md)|Passez en revue le code pour détecter les vulnérabilités des scripts XSS|
-|[CA3003](../code-quality/ca3003.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier|
-|[CA3004](../code-quality/ca3004.md)|Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations|
-|[CA3005](../code-quality/ca3005.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP|
-|[CA3006](../code-quality/ca3006.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus|
+|[Ca3002](../code-quality/ca3002.md)|Passez en revue le code pour détecter les vulnérabilités des scripts XSS|
+|[Ca3003](../code-quality/ca3003.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier|
+|[Ca3004](../code-quality/ca3004.md)|Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations|
+|[Ca3005](../code-quality/ca3005.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP|
+|[Ca3006](../code-quality/ca3006.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus|
 |[CA3007](../code-quality/ca3007.md)|Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte|
 |[CA3008](../code-quality/ca3008.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XPath|
 |[CA3009](../code-quality/ca3009.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XML|
-|[CA3010](../code-quality/ca3010.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XAML|
+|[Ca3010](../code-quality/ca3010.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XAML|
 |[CA3011](../code-quality/ca3011.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL|
 |[CA3012](../code-quality/ca3012.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection regex|

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 898a11be40d29c2e6181886c2c90af9315af6e3e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305548"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349568"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 
@@ -71,7 +71,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C6518](../code-quality/c6518.md)|Taille accessible en écriture dans mémoire tampon non accessible en écriture|
 |[C6522](../code-quality/c6522.md)|Type de chaîne de taille non valide|
 |[C6525](../code-quality/c6525.md)|Chaîne de taille non valide. Emplacement inaccessible|
-|[C6527](../code-quality/c6527.md)|Annotation non valide : La propriété’NeedsRelease’ne peut pas être utilisée sur des valeurs de type void|
+|[C6527](../code-quality/c6527.md)|Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void|
 |[C6530](../code-quality/c6530.md)|Style de chaîne de format non reconnu|
 |[C6540](../code-quality/c6540.md)|L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes|
 |[C6551](../code-quality/c6551.md)|Spécification de taille non valide : expression impossible à analyser|
@@ -142,7 +142,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28286](../code-quality/c28286.md)|Pour la fonction, erreur de syntaxe près de la fin|
 |[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)|
 |[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)|
-|[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n’a pas de spécification de limite en tant que paramètre|
+|[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre|
 |[C28290](../code-quality/c28290.md)|l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres|
 |[C28291](../code-quality/c28291.md)|post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.|
 |[C28300](../code-quality/c28300.md)|Opérandes d’expression de types incompatibles pour l’opérateur|
@@ -155,5 +155,5 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28351](../code-quality/c28351.md)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
 |[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Les champs pouvant être supprimés doivent l’être|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals|
+|[CA2213](../code-quality/ca2213.md)|Les champs pouvant être supprimés doivent l’être|
+|[CA2231](../code-quality/ca2231.md)|Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals|

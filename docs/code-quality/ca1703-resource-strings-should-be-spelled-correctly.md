@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c37e07d6259c4229999ff7d4068400c788369e86
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234324"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348959"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703 : L'orthographe des chaînes de ressources doit être correcte
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234324"
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -36,11 +36,11 @@ Une chaîne de ressource contient un ou plusieurs mots qui ne sont pas reconnus 
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle analyse la chaîne de ressource en mots (en jetons les mots composés) et vérifie l’orthographe de chaque mot/jeton. Pour plus d’informations sur l’algorithme d' [analyse, consultez CA1704 : Les identificateurs doivent être correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)orthographiés.
+Cette règle analyse la chaîne de ressource en mots (en jetons les mots composés) et vérifie l’orthographe de chaque mot/jeton. Pour plus d’informations sur l’algorithme d’analyse, consultez [CA1704 : les identificateurs doivent être orthographiés correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez des mots complets correctement orthographiés ou ajoutez les mots à un dictionnaire personnalisé. Pour plus d’informations sur l’utilisation des dictionnaires personnalisés [, consultez CA1704 : Les identificateurs doivent être correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)orthographiés.
+Pour corriger une violation de cette règle, utilisez des mots complets correctement orthographiés ou ajoutez les mots à un dictionnaire personnalisé. Pour plus d’informations sur l’utilisation des dictionnaires personnalisés, consultez [CA1704 : les identificateurs doivent être orthographiés correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Modifier la langue du dictionnaire
 
@@ -58,6 +58,6 @@ Ne supprimez aucun avertissement de cette règle. Les mots correctement orthogra
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1701 La casse des mots composés de la chaîne de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704 Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204 Les littéraux doivent être correctement orthographiés](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701 : La casse des mots composés de chaînes de ressources doit être correcte](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204 : Les littéraux doivent être correctement orthographiés](../code-quality/ca2204.md)

@@ -1,5 +1,5 @@
 ---
-title: Créer des vues personnalisées d’objets | Microsoft Docs
+title: Créer des vues personnalisées d’objets gérés | Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 4649ac11daa062089d2916a5d5d0a331e4d74272
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814297"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349456"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d'C#objets (, F#Visual Basic C++,,/CLI)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d’objetsC#gérés (, F#Visual Basic C++,,/CLI)
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.
 
 ## <a name="attributes"></a>Attributs
@@ -41,7 +41,7 @@ Dans .NET Framework code 2,0, Visual Basic ne prend pas en charge l’attribut D
 
 ## <a name="visualizers"></a>Visualiseurs
 
-Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d'informations, voir [Procédure : Écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data).
+Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d’informations, consultez [Comment : écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data).
 
 > [!NOTE]
 > Pour C++ le code, vous pouvez ajouter des expansions de type de données personnalisées à l’aide de l’infrastructure Natvis, comme décrit dans [créer des vues personnalisées d' C++ objets dans le débogueur](/visualstudio/debugger/create-custom-views-of-native-objects).

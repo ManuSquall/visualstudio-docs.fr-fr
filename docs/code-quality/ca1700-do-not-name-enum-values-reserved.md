@@ -1,5 +1,5 @@
 ---
-title: 'CA1700 : Ne nommez pas les &#39;valeurs enum réservées&#39;'
+title: 'CA1700 : ne nommez pas les &#39;valeurs enum réservées&#39;'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5171123827481c99bbc35c10b04aaf942a15fabb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234386"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348975"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : Ne nommez pas les &#39;valeurs enum réservées&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : ne nommez pas les &#39;valeurs enum réservées&#39;
 
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
 |CheckId|CA1700|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -40,11 +40,11 @@ Cette règle suppose qu'un membre de l'énumération dont le nom contient le ter
 
 Au lieu d’utiliser un membre réservé, ajoutez un nouveau membre à l’énumération dans la version future. Dans la plupart des cas, l’ajout du nouveau membre n’est pas une modification avec rupture, à condition que l’ajout n’entraîne pas la modification des valeurs des membres d’origine.
 
-Dans un nombre limité de cas, l’ajout d’un membre est une modification avec rupture même lorsque les membres d’origine conservent leurs valeurs d’origine. En premier lieu, le nouveau membre ne peut pas être retourné à partir de chemins de code existants `switch` sans`Select` arrêter [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]les appelants qui utilisent une instruction (dans) sur la valeur de retour qui englobe l’ensemble de la liste de membres et qui lèvent une exception dans cas par défaut. Une préoccupation secondaire est que le code client ne peut pas gérer la modification du comportement à partir de <xref:System.Enum.IsDefined%2A?displayProperty=fullName>méthodes de réflexion telles que. En conséquence, si le nouveau membre doit être retourné à partir de méthodes existantes ou si une incompatibilité d’application connue se produit en raison d’une mauvaise utilisation de la réflexion, la seule solution sans rupture consiste à :
+Dans un nombre limité de cas, l’ajout d’un membre est une modification avec rupture même lorsque les membres d’origine conservent leurs valeurs d’origine. En premier lieu, le nouveau membre ne peut pas être retourné à partir de chemins de code existants sans arrêter les appelants qui utilisent une instruction `switch` (`Select` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) sur la valeur de retour qui englobe l’ensemble de la liste de membres et qui lèvent une exception dans le cas par défaut. Une préoccupation secondaire est que le code client ne peut pas gérer la modification du comportement à partir de méthodes de réflexion telles que <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. En conséquence, si le nouveau membre doit être retourné à partir de méthodes existantes ou si une incompatibilité d’application connue se produit en raison d’une mauvaise utilisation de la réflexion, la seule solution sans rupture consiste à :
 
 1. Ajoutez une nouvelle énumération qui contient les membres originaux et nouveaux.
 
-2. Marquez l’énumération d' <xref:System.ObsoleteAttribute?displayProperty=fullName> origine avec l’attribut.
+2. Marquez l’énumération d’origine avec l’attribut <xref:System.ObsoleteAttribute?displayProperty=fullName>.
 
    Suivez la même procédure pour tous les types ou membres visibles de l’extérieur qui exposent l’énumération d’origine.
 
@@ -58,12 +58,12 @@ Il est possible de supprimer sans risque un avertissement de cette règle pour u
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA2217 Ne Marquez pas les enums avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217.md)
 
-[CA1712 Ne pas préfixer les valeurs d’énumération avec le nom de type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712 : Ne préfixez pas les valeurs d’énumération avec le nom du type](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028 Le stockage enum doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028 : Le stockage de l’énumération doit être Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008 Les enums doivent avoir une valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008 : Les énumérations doivent avoir la valeur zéro](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027 Marquer les enums avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027 : Marquez les énumérations avec FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

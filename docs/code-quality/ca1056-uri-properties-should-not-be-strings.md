@@ -1,5 +1,5 @@
 ---
-title: 'CA1056 : Les propriétés URI ne doivent pas être des chaînes'
+title: 'CA1056 : Les propriétés Uri ne doivent pas être des chaînes'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: eda4f582c2e69069120f2846bad2a038f59de3ae
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235530"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349056"
 ---
-# <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Les propriétés URI ne doivent pas être des chaînes
+# <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Les propriétés Uri ne doivent pas être des chaînes
 
 |||
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -42,11 +42,11 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle fractionne le nom de la propriété en jetons en fonction de la Convention de casse Pascal et vérifie si chaque jeton est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, la règle part du principe que la propriété représente un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La <xref:System.Uri?displayProperty=fullName> classe fournit ces services de manière sûre et sécurisée.
+Cette règle fractionne le nom de la propriété en jetons en fonction de la Convention de casse Pascal et vérifie si chaque jeton est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, la règle part du principe que la propriété représente un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. La classe <xref:System.Uri?displayProperty=fullName> fournit ces services de manière sûre et sécurisée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, remplacez la propriété par un <xref:System.Uri> type.
+Pour corriger une violation de cette règle, remplacez la propriété par un type <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -64,7 +64,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle et un type, `SaferWay`, qui satisfait la règle.
+L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle, et un type, `SaferWay`, qui satisfait la règle.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle et u
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1054 Les paramètres URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA1055 Les valeurs de retour URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234 Passer des objets System. URI à la place de chaînes](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057 Les surcharges d’URI de chaîne appellent les surcharges de System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1054 : Les paramètres d’URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA1055 : Les valeurs de retour d’URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234 : Passez des objets System.Uri au lieu de chaînes](../code-quality/ca2234.md)
+- [CA1057 : Les surcharges d’URI de chaîne appellent des surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

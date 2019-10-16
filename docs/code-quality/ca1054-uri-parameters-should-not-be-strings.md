@@ -1,5 +1,5 @@
 ---
-title: 'CA1054 : Les paramètres URI ne doivent pas être des chaînes'
+title: 'CA1054 : Les paramètres Uri ne doivent pas être des chaînes'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,35 +18,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5f4efbec200b90614a5d78a4b04b2ebd32588cb5
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235558"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349087"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres URI ne doivent pas être des chaînes
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres Uri ne doivent pas être des chaînes
 
 |||
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type déclare une méthode avec un paramètre de chaîne dont le nom contient « URI », « Uri », « URN », « URN », « URL » ou « URL » et le type ne déclare pas une surcharge correspondante qui accepte un <xref:System.Uri?displayProperty=fullName> paramètre.
+Un type déclare une méthode avec un paramètre de chaîne dont le nom contient « URI », « Uri », « URN », « URN », « URL » ou « URL » et le type ne déclare pas une surcharge correspondante qui accepte un paramètre <xref:System.Uri?displayProperty=fullName>.
 
 Par défaut, cette règle recherche uniquement les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Cette règle fractionne le nom de paramètre en jetons en fonction de la Convention de casse mixte et vérifie si chaque jeton est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, la règle suppose que le paramètre représente un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. Si une méthode prend une représentation sous forme de chaîne d’un URI, une surcharge correspondante doit être fournie, qui prend <xref:System.Uri> une instance de la classe, qui fournit ces services de manière sécurisée et sécurisée.
+Cette règle fractionne le nom de paramètre en jetons en fonction de la Convention de casse mixte et vérifie si chaque jeton est égal à « URI », « Uri », « URN », « URN », « URL » ou « URL ». En cas de correspondance, la règle suppose que le paramètre représente un URI (Uniform Resource Identifier). Une représentation sous forme de chaîne d'un URI est sujette aux erreurs d'analyse et d'encodage, et peut entraîner des failles de sécurité. Si une méthode prend une représentation sous forme de chaîne d’un URI, une surcharge correspondante doit être fournie pour prendre une instance de la classe <xref:System.Uri>, qui fournit ces services de manière sécurisée et sécurisée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, remplacez le paramètre par un <xref:System.Uri> type ; il s’agit d’une modification avec rupture. Vous pouvez également fournir une surcharge de la méthode qui accepte un <xref:System.Uri> paramètre ; il s’agit d’une modification sans rupture.
+Pour corriger une violation de cette règle, remplacez le paramètre par un type <xref:System.Uri> ; Il s’agit d’une modification avec rupture. Vous pouvez également fournir une surcharge de la méthode qui accepte un paramètre <xref:System.Uri> ; Il s’agit d’une modification sans rupture.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -64,7 +64,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle et un type, `SaferWay`, qui satisfait la règle.
+L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle, et un type, `SaferWay`, qui satisfait la règle.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ L’exemple suivant montre un type, `ErrorProne`, qui enfreint cette règle et u
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1056 Les propriétés URI ne doivent pas être des chaînes](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055 Les valeurs de retour URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234 Passer des objets System. URI à la place de chaînes](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057 Les surcharges d’URI de chaîne appellent les surcharges de System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056 : Les propriétés d’URI ne doivent pas être des chaînes](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055 : Les valeurs de retour d’URI ne doivent pas être des chaînes](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234 : Passez des objets System.Uri au lieu de chaînes](../code-quality/ca2234.md)
+- [CA1057 : Les surcharges d’URI de chaîne appellent des surcharges de System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
