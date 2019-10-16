@@ -44,8 +44,6 @@
       items:
         - name: Utiliser des points d’arrêt
           href: using-breakpoints.md
-        - name: Utiliser des points de trace
-          href: using-tracepoints.md
         - name: Dépannage des points d’arrêt
           href: troubleshooting-breakpoints.md
     - name: Inspection des données
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Opération Modifier et Continuer non prise en charge pour F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Journaliser dans la fenêtre Sortie
+      href: using-tracepoints.md
     - name: Afficher les données du débogueur
       items:
         - name: Modules
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Vues personnalisées (gérées)
               items:
-                - name: Créer des vues personnalisées d’objets
+                - name: Créer des vues personnalisées d’objets gérés
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Dire au débogueur quels éléments afficher
                   href: using-the-debuggerdisplay-attribute.md
