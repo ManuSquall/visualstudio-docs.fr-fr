@@ -1,0 +1,55 @@
+### YamlMime:Landing
+title: Documentation sur les outils XAML
+summary: Visual Studio fournit plusieurs outils pour vous aider à créer des applications basées sur XAML. Celles-ci incluent l’éditeur et le concepteur XAML, ainsi que des fonctionnalités de débogage.
+metadata:
+  title: Documentation sur les outils XAML
+  description: Accédez à différentes pages qui vous aideront à apprendre à utiliser les outils XAML dans Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-designers
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/10/2019
+  ms.openlocfilehash: fe889d55ac2b2a6eab99b8d6abdc5193c981725d
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450606"
+landingContent:
+- title: En savoir plus sur XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble du langage XAML
+      url: xaml-overview.md
+- title: Utiliser le concepteur XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Concevoir en XAML dans Visual Studio et Blend
+      url: designing-xaml-in-visual-studio.md
+    - text: À propos du concepteur XAML
+      url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+- title: Déboguer XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Écrire et déboguer du code XAML en cours d’exécution
+      url: xaml-hot-reload.md
+    - text: Déboguer XAML dans Blend
+      url: debug-xaml-in-blend.md
+    - text: Déboguer les applications WPF
+      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+    - text: Déboguer des applications UWP
+      url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- title: Développer des applications WPF
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vue d’ensemble de WPF
+      url: ../designers/introduction-to-wpf.md
+  - linkListType: get-started
+    links:
+    - text: Bien démarrer avec WPF dans Visual Studio
+      url: ../designers/getting-started-with-wpf.md
