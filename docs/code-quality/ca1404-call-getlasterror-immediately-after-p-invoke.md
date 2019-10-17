@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6529adafa7384bf8b51444dd2cc81b9952b6b57c
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: a6876d9e9326d67d781f49e69a65d41284f54da8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349018"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444272"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404 : Appeler GetLastError immédiatement après P/Invoke
 
@@ -69,6 +69,6 @@ L’exemple suivant montre une méthode qui enfreint la règle et une méthode q
 
 [CA1401 : Les P/Invoke ne doivent pas être visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
-[CA2101 : Spécifier le marshaling pour les arguments de chaîne P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101 : Spécifier le marshaling pour les arguments de chaîne P/Invoke](../code-quality/ca2101.md)
 
 [CA2205 : Utilisez des équivalents managés de l’API Win32](../code-quality/ca2205.md)

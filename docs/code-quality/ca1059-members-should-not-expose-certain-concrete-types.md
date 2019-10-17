@@ -1,5 +1,5 @@
 ---
-title: 'CA1059 : Les membres ne doivent pas exposer certains types concrets'
+title: 'CA1059 : Les membres ne doivent pas exposer certains types concrets'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 06b7d6f9f3a04f518beeb49af1985185255f2e46
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235464"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440796"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
 
 |||
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -42,7 +42,7 @@ Le tableau suivant répertorie les types concrets ciblés et leurs remplacements
 
 |Type concret|Replacement|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L’utilisation de l’interface dissocie le membre d’une implémentation spécifique d’une source de données XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.,<br /><br /> L’utilisation de l’interface dissocie le membre d’une implémentation spécifique d’une source de données XML.|
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, remplacez le type concret par l’interface suggérée.
@@ -51,4 +51,4 @@ Pour corriger une violation de cette règle, remplacez le type concret par l’i
 Il est possible de supprimer sans risque un message de cette règle si les fonctionnalités spécifiques fournies par le type concret sont requises.
 
 ## <a name="related-rules"></a>Règles associées
-[CA1011 Envisagez de passer des types de base en tant que paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+[CA1011 : Envisagez de passer les types de base comme paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

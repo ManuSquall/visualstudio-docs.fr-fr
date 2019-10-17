@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a6b6c45a8a56cab3927355fc4f03c541bcffc1cf
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236146"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446672"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025 : Remplacer les arguments répétitifs par un tableau params
 
@@ -27,14 +27,14 @@ ms.locfileid: "71236146"
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Une méthode publique ou protégée dans un type public a plus de trois paramètres, et ses trois derniers paramètres sont du même type.
 
 ## <a name="rule-description"></a>Description de la règle
-Utilisez un tableau de paramètres au lieu d’arguments répétés lorsque le nombre exact d’arguments est inconnu et que les arguments de la variable sont du même type, ou peuvent être passés en tant que même type. Par exemple, la <xref:System.Console.WriteLine%2A> méthode fournit une surcharge à usage général qui utilise un tableau de paramètres pour accepter un nombre <xref:System.Object> quelconque d’arguments.
+Utilisez un tableau de paramètres au lieu d’arguments répétés lorsque le nombre exact d’arguments est inconnu et que les arguments de la variable sont du même type, ou peuvent être passés en tant que même type. Par exemple, la méthode <xref:System.Console.WriteLine%2A> fournit une surcharge à usage général qui utilise un tableau de paramètres pour accepter un nombre quelconque d’arguments <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, remplacez les arguments répétés par un tableau de paramètres.

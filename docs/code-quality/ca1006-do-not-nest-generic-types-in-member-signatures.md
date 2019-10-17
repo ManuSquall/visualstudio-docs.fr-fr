@@ -1,5 +1,5 @@
 ---
-title: 'CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre'
+title: 'CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,27 +17,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8e69a32e7215e9609d1e1cb2c23572997b11a7fc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236507"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446894"
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre
 
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 Un membre visible de l’extérieur a une signature qui contient un argument de type imbriqué.
 
 ## <a name="rule-description"></a>Description de la règle
-Un argument de type imbriqué est un argument de type qui est également un type générique. Pour appeler un membre dont la signature contient un argument de type imbriqué, l’utilisateur doit instancier un type générique et passer ce type au constructeur d’un deuxième type générique. La procédure et la syntaxe requises sont complexes et doivent être évitées.
+Un argument de type imbriqué est un argument de type qui est également un type générique. Pour appeler un membre dont la signature contient un argument de type imbriqué, l'utilisateur doit instancier un type générique et passer ce type au constructeur d'un deuxième type générique. La procédure et la syntaxe requises sont complexes et doivent être évitées.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, modifiez la conception pour supprimer l’argument de type imbriqué.
@@ -52,19 +52,19 @@ L’exemple suivant montre une méthode qui viole la règle et la syntaxe requis
 [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
-[CA1010 Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010 : Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
-[CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
-[CA1002 Ne pas exposer les listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
-[CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
-[CA1003 Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003 : Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-[CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007 : Utiliser des méthodes génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
 [Génériques](/dotnet/csharp/programming-guide/generics/index)

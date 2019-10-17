@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3f030c9c64d975d93aa2aeee90d37f765a6a63
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b52fb16d2cf5e56ded5cf8f4ed9e8e25c942d7c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234053"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438979"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234053"
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

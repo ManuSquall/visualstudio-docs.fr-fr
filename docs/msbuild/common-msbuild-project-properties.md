@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745884"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381360"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
@@ -64,10 +64,10 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | DisableFastUpToDateCheck | Valeur booléenne qui s'applique uniquement à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le gestionnaire de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utilise un processus appelé FastUpToDateCheck pour déterminer si un projet doit être régénéré pour être à jour. Il est plus rapide d'utiliser ce processus que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Le fait d’affecter à la propriété DisableFastUpToDateCheck la valeur `true` vous permet d’ignorer le gestionnaire de build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et de le forcer à utiliser [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour déterminer si le projet est à jour. |
 | DocumentationFile | Nom du fichier généré en tant que fichier de documentation XML. Ce nom inclut uniquement le nom du fichier et ne comporte aucune information de chemin d'accès. |
 | ErrorReport | Indique comment la tâche du compilateur doit signaler les erreurs internes du compilateur. Les valeurs valides sont "prompt", "send" et "none". Cette propriété est équivalente au commutateur `/errorreport` du compilateur. |
-| ExcludeDeploymentUrl | La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Remarque :**  ExcludeDeploymentUrl n'est pas exposé dans l'IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et peut être défini uniquement en modifiant manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl. |
+| ExcludeDeploymentUrl | La [tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) ajoute une balise deploymentProvider au manifeste de déploiement si le fichier projet contient l’un des éléments suivants :<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> En utilisant ExcludeDeploymentUrl, toutefois, vous pouvez empêcher l’étiquette deploymentProvider d’être ajoutée au manifeste de déploiement même si l’une des URL ci-dessus est spécifiée. Pour cela, ajoutez la propriété suivante à votre fichier projet :<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Remarque :** ExcludeDeploymentUrl n’est pas exposé dans l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ; pour le définir, vous devez modifier manuellement le fichier projet. La définition de cette propriété n'affecte pas la publication dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Autrement dit, la balise deploymentProvider est encore ajoutée à l'URL spécifiée par PublishUrl. |
 | FileAlignment | Spécifie, en octets, où les sections du fichier de sortie doivent être alignées. Les valeurs valides sont 512, 1024, 2048, 4096, 8192. Cette propriété est équivalente au commutateur `/filealignment` du compilateur. |
 | FrameworkPathOverride | Spécifie l’emplacement de *mscorlib.dll* et de *microsoft.visualbasic.dll*. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur *vbc.exe*. |
-| GenerateDocumentation | (Visual Basic uniquement) Paramètre booléen qui indique si la documentation est générée par la build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier *.xml* avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération. |
+| GenerateDocumentation | (C#, Visual Basic) Paramètre booléen qui indique si la documentation est générée par la Build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier *.xml* avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération. |
 | GenerateSerializationAssemblies | Indique si les assemblys de sérialisation XML doivent être générés par *SGen.exe*, qui peut être défini sur on, auto ou off. Cette propriété est utilisée pour les assemblys qui ciblent le .NET Framework uniquement. Pour générer des assemblys de sérialisation XML pour des assemblys .NET Standard ou .NET Core, référencez le package NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, *\obj\debug\\* . |
 | KeyContainerName | Nom du conteneur de clé de nom fort. |
@@ -88,7 +88,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | OverwriteReadOnlyFiles | Valeur booléenne qui indique si vous souhaitez permettre à la génération de remplacer les fichiers en lecture seule ou de générer une erreur. |
 | PathMap | Valeur qui indique comment mapper les chemins d’accès physiques avec les noms de chemins d’accès sources générés en sortie par le compilateur. Cette propriété est équivalente au commutateur `/pathmap` du compilateur *csc.exe*. |
 | PdbFile | Nom du fichier *.pdb* que vous émettez. Cette propriété est équivalente au commutateur `/pdb` du compilateur *csc.exe*. |
-| Plateforme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
+| Plate-forme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
 | ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
 | RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |

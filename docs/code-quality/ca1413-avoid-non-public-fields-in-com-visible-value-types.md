@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fed5b16120ec069eaa4101670c88ad8f3a247
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d47a7ff2633b94de73435168136060e741080de7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234647"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444185"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413 : Éviter les champs non publics dans les types valeur visibles par COM
 
@@ -39,10 +39,10 @@ Un type valeur qui est spécifiquement marqué comme visible par le modèle COM 
 ## <a name="rule-description"></a>Description de la règle
 Les champs d'instance non publics des types valeur visibles par COM sont visibles par les clients COM. Examinez le contenu du champ pour obtenir des informations qui ne doivent pas être exposées ou qui auront une conception inattendue ou un effet de sécurité.
 
-Par défaut, tous les types de valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. L’assembly conteneur doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> le défini `false` sur et le type doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute> le défini `true`sur.
+Par défaut, tous les types de valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle et garder le champ masqué, remplacez le type valeur par un type référence ou supprimez <xref:System.Runtime.InteropServices.ComVisibleAttribute> l’attribut du type.
+Pour corriger une violation de cette règle et garder le champ masqué, remplacez le type valeur par un type référence ou supprimez l’attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> du type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle si l’exposition publique du champ est acceptable.
@@ -54,9 +54,9 @@ L’exemple suivant montre un type qui viole la règle.
 [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1407 Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017 Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

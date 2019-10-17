@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b192b29190d530d22943e8ba2a396ae1fe9ad87
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975127"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448925"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procédure : Activer et désactiver l’analyse complète de la solution pour le code managé
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse complète de la solution pour le code managé
 
 L' *analyse complète* de la solution signifie que l’analyse du C# code examine tous les fichiers ou Visual Basic dans la solution, qu’ils soient ouverts ou non dans l’éditeur. Par défaut, l’analyse complète de la solution est *activée* pour Visual Basic C#et *désactivée* pour.
 
@@ -44,4 +44,4 @@ L’illustration suivante montre les résultats de la même solution après la d
 
 Si Visual Studio détecte que 200 Mo ou moins de mémoire système est disponible, il désactive automatiquement l’analyse complète de la solution (et d’autres fonctionnalités) si elle est activée. Dans ce cas, une alerte s’affiche vous informant que Visual Studio a désactivé certaines fonctionnalités. Un bouton vous permet de réactiver l’analyse complète de la solution si vous le souhaitez.
 
-![Texte de l’alerte la suspension de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)
+![Texte d’alerte interruption de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)

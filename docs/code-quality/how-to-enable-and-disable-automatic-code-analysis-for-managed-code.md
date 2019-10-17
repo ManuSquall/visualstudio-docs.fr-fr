@@ -5,14 +5,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 656b36e6d0a90bb44eaa5745312f1a57e1ea3474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975081"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448934"
 ---
-# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Procédure : Activer et désactiver l’analyse du code binaire pour le code managé
+# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse du code binaire pour le code managé
 
 Vous pouvez configurer l’analyse du code hérité (analyse binaire) pour qu’elle s’exécute après chaque génération d’un projet de code managé. Vous pouvez également avoir des paramètres différents pour chaque configuration de build, par exemple, Debug et Release.
 

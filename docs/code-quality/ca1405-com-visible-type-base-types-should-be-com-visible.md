@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4e5c4ed258bcc88fedbb6d015fed576d326a0f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7faa295f4aba9e547254eb9c554d113e0aed084d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234955"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444257"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405 : Les types de base type visibles par COM doivent être visibles par COM
 
@@ -37,7 +37,7 @@ ms.locfileid: "71234955"
 Un type visible COM (Component Object Model) dérive d’un type qui n’est pas visible par COM.
 
 ## <a name="rule-description"></a>Description de la règle
-Quand un type visible par COM ajoute des membres dans une nouvelle version, il doit respecter des recommandations strictes pour éviter de rompre les clients COM qui sont liés à la version actuelle. Un type invisible à COM présume qu’il n’a pas besoin de suivre ces règles de contrôle de version COM lorsqu’il ajoute de nouveaux membres. Toutefois, si un type visible par COM dérive du type invisible com et expose une interface de classe <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> de <xref:System.Runtime.InteropServices.ClassInterfaceType> ou (valeur par défaut), tous les membres publics du type de base (sauf s’ils sont spécifiquement marqués comme étant invisibles par com, qui seraient redondants) sont exposées à COM. Si le type de base ajoute de nouveaux membres dans une version ultérieure, tous les clients COM qui sont liés à l’interface de classe du type dérivé risquent de s’arrêter. Les types visibles par COM doivent dériver uniquement des types visibles par COM pour réduire le risque d’interruption des clients COM.
+Quand un type visible par COM ajoute des membres dans une nouvelle version, il doit respecter des recommandations strictes pour éviter de rompre les clients COM qui sont liés à la version actuelle. Un type invisible à COM présume qu’il n’a pas besoin de suivre ces règles de contrôle de version COM lorsqu’il ajoute de nouveaux membres. Toutefois, si un type visible par COM dérive du type invisible COM et expose une interface de classe de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ClassInterfaceType> (valeur par défaut), tous les membres publics du type de base (à moins qu’ils soient spécifiquement marqués comme étant invisibles par COM, qui seraient redondants) sont exposés à COM. Si le type de base ajoute de nouveaux membres dans une version ultérieure, tous les clients COM qui sont liés à l’interface de classe du type dérivé risquent de s’arrêter. Les types visibles par COM doivent dériver uniquement des types visibles par COM pour réduire le risque d’interruption des clients COM.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, rendez les types de base COM visibles ou le type dérivé COM invisible.

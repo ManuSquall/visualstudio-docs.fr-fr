@@ -1,5 +1,5 @@
 ---
-title: 'CA1052 : Les types de conteneurs statiques doivent être statiques ou NotInheritable'
+title: 'CA1052 : les types de conteneurs statiques doivent être statiques ou NotInheritable'
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7fb332a293e30bfba38e1487576d5a28b1a3be36
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235616"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446600"
 ---
-# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052 : Les types de conteneurs statiques doivent être statiques ou NotInheritable
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052 : les types de conteneurs statiques doivent être statiques ou NotInheritable
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -42,7 +42,7 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-La règle CA1052 suppose qu’un type qui contient uniquement des membres statiques n’est pas conçu pour être hérité, car le type ne fournit pas de fonctionnalité qui peut être substituée dans un type dérivé. Un type qui n’est pas destiné à être hérité doit être marqué avec `static` le modificateur C# dans pour empêcher son utilisation en tant que type de base. En outre, son constructeur par défaut doit être supprimé. Dans Visual Basic, la classe doit être convertie en un [module](/dotnet/visual-basic/language-reference/statements/module-statement).
+La règle CA1052 suppose qu’un type qui contient uniquement des membres statiques n’est pas conçu pour être hérité, car le type ne fournit pas de fonctionnalité qui peut être substituée dans un type dérivé. Un type qui n’est pas destiné à être hérité doit être marqué avec le modificateur `static` C# dans pour empêcher son utilisation en tant que type de base. En outre, son constructeur par défaut doit être supprimé. Dans Visual Basic, la classe doit être convertie en un [module](/dotnet/visual-basic/language-reference/statements/module-statement).
 
 Cette règle ne se déclenche pas pour les classes abstraites ou les classes qui ont une classe de base. Toutefois, la règle est déclenchée pour les classes qui prennent en charge une interface vide.
 
@@ -51,11 +51,11 @@ Cette règle ne se déclenche pas pour les classes abstraites ou les classes qui
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, marquez le type `static` comme et supprimez le constructeurC#par défaut (), ou convertissez-le en module (Visual Basic).
+Pour corriger une violation de cette règle, marquez le type comme `static` et supprimez le constructeurC#par défaut (), ou convertissez-le en module (Visual Basic).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Supprimez un avertissement de cette règle uniquement si le type est conçu pour être hérité. L’absence du `static` modificateur suggère que le type est utile comme type de base.
+Supprimez un avertissement de cette règle uniquement si le type est conçu pour être hérité. L’absence du modificateur `static` suggère que le type est utile comme type de base.
 
 ## <a name="configurability"></a>Configurabilité
 
@@ -77,7 +77,7 @@ L’exemple suivant montre un type qui viole la règle :
 
 ## <a name="fix-with-the-static-modifier"></a>Corriger avec le modificateur static
 
-L’exemple suivant montre comment corriger une violation de cette règle en marquant le type avec le `static` modificateur dans : C#
+L’exemple suivant montre comment corriger une violation de cette règle en marquant le type avec le modificateur `static` dans C#:
 
 ```csharp
 public static class StaticMembers

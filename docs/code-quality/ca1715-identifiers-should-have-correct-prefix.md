@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 875e0b4052cdc7287b264899620d4e083ac6b153
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234075"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443876"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 
@@ -31,14 +31,14 @@ ms.locfileid: "71234075"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture : lorsqu’elle est déclenchée sur les interfaces.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
 
 Le nom d’une interface ne commence pas par un « I » majuscule.
 
-\- ou -
+ou
 
 Le nom d’un [paramètre de type générique](/dotnet/csharp/programming-guide/generics/generic-type-parameters) sur un type ou une méthode ne commence pas par un « t » majuscule.
 
@@ -52,7 +52,7 @@ Les noms d’interface doivent commencer par un « I » majuscule suivi d’un
 
 Les noms de paramètre de type générique doivent commencer par un « t » majuscule et éventuellement être suivis par une autre lettre majuscule. Cette règle signale des violations pour les noms de paramètre de type générique tels que’V’et’type'.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="configurability"></a>Configurabilité
 
@@ -71,7 +71,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Cette règle ne se déclenche jamais pour un paramètre `T`de type nommé, `Collection<T>`par exemple.
+> Cette règle ne se déclenche jamais pour un paramètre de type nommé `T`, par exemple, `Collection<T>`.
 
 ### <a name="api-surface"></a>Surface de l’API
 
@@ -121,4 +121,4 @@ L’extrait de code suivant résout la violation précédente en préfixant le p
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1722 Les identificateurs ne doivent pas avoir un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722 : Les identificateurs ne doivent pas avoir un préfixe incorrect](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

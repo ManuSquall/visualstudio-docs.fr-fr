@@ -1,5 +1,5 @@
 ---
-title: "CA1003 : Utiliser les instances du gestionnaire d'événements génériques"
+title: "CA1003 : Utiliser les instances du gestionnaire d'événements génériques"
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c654da177e4a9cf820887cf74977a4c3da5a57b6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 42e40acfc8034f27c8b9131b6d5c8f8bb2f95dcb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236646"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441721"
 ---
-# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003 : Utiliser les instances du gestionnaire d'événements génériques
+# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003 : Utiliser les instances du gestionnaire d'événements génériques
 
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
 |CheckId|CA1003|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -41,13 +41,13 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Avant .net, pour passer des informations personnalisées au gestionnaire d’événements, il fallait déclarer un nouveau délégué qui spécifiait une classe dérivée de la <xref:System.EventArgs?displayProperty=fullName> classe. Dans .net, le délégué <xref:System.EventHandler%601?displayProperty=fullName> générique permet l’utilisation d’une classe dérivée de <xref:System.EventArgs> pour être utilisée avec le gestionnaire d’événements.
+Avant .NET, pour passer des informations personnalisées au gestionnaire d’événements, il fallait déclarer un nouveau délégué qui spécifiait une classe dérivée de la classe <xref:System.EventArgs?displayProperty=fullName>. Dans .NET, le délégué <xref:System.EventHandler%601?displayProperty=fullName> générique permet à toute classe dérivée de <xref:System.EventArgs> d’être utilisée avec le gestionnaire d’événements.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, supprimez le délégué et remplacez son utilisation à l' <xref:System.EventHandler%601?displayProperty=fullName> aide du délégué.
+Pour corriger une violation de cette règle, supprimez le délégué et remplacez son utilisation à l’aide du délégué <xref:System.EventHandler%601?displayProperty=fullName>.
 
-Si le délégué est généré automatiquement par le compilateur Visual Basic, modifiez la syntaxe de la déclaration d’événement pour utiliser <xref:System.EventHandler%601?displayProperty=fullName> le délégué.
+Si le délégué est généré automatiquement par le compilateur Visual Basic, modifiez la syntaxe de la déclaration d’événement pour utiliser le délégué <xref:System.EventHandler%601?displayProperty=fullName>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -70,19 +70,19 @@ L’exemple suivant montre un délégué qui enfreint la règle. Dans l’exempl
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-L’extrait de code suivant supprime la déclaration Delegate de l’exemple précédent, qui répond à la règle. Il remplace son utilisation dans les `ClassThatRaisesEvent` méthodes `ClassThatHandlesEvent` et à l’aide <xref:System.EventHandler%601?displayProperty=fullName> du délégué.
+L’extrait de code suivant supprime la déclaration Delegate de l’exemple précédent, qui répond à la règle. Il remplace son utilisation dans les méthodes `ClassThatRaisesEvent` et `ClassThatHandlesEvent` à l’aide du délégué <xref:System.EventHandler%601?displayProperty=fullName>.
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010 Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA1002 Ne pas exposer les listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006 Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010 : Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007 : Utiliser des méthodes génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
 

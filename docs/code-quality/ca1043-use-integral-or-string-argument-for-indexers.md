@@ -1,5 +1,5 @@
 ---
-title: 'CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs'
+title: 'CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,31 +18,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 10424344abc52d4911b7caf60e02b03e6ed6e96f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235844"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446624"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs
 
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type contient un indexeur qui utilise un type d’index autre <xref:System.Int32?displayProperty=fullName>que <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, ou <xref:System.String?displayProperty=fullName>.
+Un type contient un indexeur qui utilise un type d’index autre que <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName> ou <xref:System.String?displayProperty=fullName>.
 
 Par défaut, cette règle examine uniquement les types publics et protégés, mais cela peut [être configuré](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les indexeurs, c’est-à-dire les propriétés indexées, doivent utiliser des types de chaîne ou d’entier pour l’index. Ces types sont généralement utilisés pour l’indexation des structures de données et augmentent la convivialité de la bibliothèque. L’utilisation du <xref:System.Object> type doit être limitée aux cas où l’entier ou le type de chaîne spécifique ne peut pas être spécifié au moment de la conception. Si la conception requiert d’autres types pour l’index, reconsidérez si le type représente un magasin de données logiques. S’il ne représente pas un magasin de données logique, utilisez une méthode.
+Les indexeurs, c’est-à-dire les propriétés indexées, doivent utiliser des types de chaîne ou d’entier pour l’index. Ces types sont généralement utilisés pour l’indexation des structures de données et augmentent la convivialité de la bibliothèque. L’utilisation du type <xref:System.Object> doit être limitée aux cas où l’entier ou le type de chaîne spécifique ne peut pas être spécifié au moment de la conception. Si la conception requiert d’autres types pour l’index, reconsidérez si le type représente un magasin de données logiques. S’il ne représente pas un magasin de données logique, utilisez une méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -64,7 +64,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un indexeur qui utilise un <xref:System.Int32> index.
+L’exemple suivant montre un indexeur qui utilise un index <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
@@ -72,5 +72,5 @@ L’exemple suivant montre un indexeur qui utilise un <xref:System.Int32> index.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1023 Les indexeurs ne doivent pas être multidimensionnels](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA1024 Utiliser les propriétés lorsque cela est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1023 : Les indexeurs ne doivent pas être multidimensionnels](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+- [CA1024 : Utilisez des propriétés quand c’est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)

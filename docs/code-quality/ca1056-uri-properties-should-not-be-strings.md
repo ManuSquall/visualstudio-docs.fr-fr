@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eda4f582c2e69069120f2846bad2a038f59de3ae
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 48d513e8806253fe42166bc3d766377828b104ed
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349056"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446567"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Les propriétés Uri ne doivent pas être des chaînes
 

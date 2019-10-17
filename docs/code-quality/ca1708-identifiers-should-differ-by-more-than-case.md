@@ -1,5 +1,5 @@
 ---
-title: 'CA1708 : Les identificateurs ne doivent pas différer uniquement par leur casse'
+title: 'CA1708 : Les identificateurs ne doivent pas différer que par leur casse'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203f7f287ebb5b71ecad6e6ad4a861d63e5cf08
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8110533573aaeb9b8c32d224cc03d6ca238e0e8e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234214"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439848"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer uniquement par leur casse
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer que par leur casse
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -68,4 +68,4 @@ L’exemple suivant illustre une violation de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

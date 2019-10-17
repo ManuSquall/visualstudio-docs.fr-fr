@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 719f5ffe3cd3fd7a897aeaff270a1e32661ae590
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233905"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438941"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721 : Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get
 
@@ -30,7 +30,7 @@ ms.locfileid: "71233905"
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -43,7 +43,7 @@ Par défaut, cette règle recherche uniquement les membres et les propriétés v
 
 Les méthodes et propriétés « Get » doivent porter des noms distinguant clairement leur fonction.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit le temps nécessaire à l’apprentissage d’une nouvelle bibliothèque de logiciels et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit le temps nécessaire à l’apprentissage d’une nouvelle bibliothèque de logiciels et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -75,4 +75,4 @@ L’exemple suivant contient une méthode et une propriété qui violent cette r
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1024 Utiliser les propriétés lorsque cela est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024 : Utilisez des propriétés quand c’est approprié](../code-quality/ca1024-use-properties-where-appropriate.md)

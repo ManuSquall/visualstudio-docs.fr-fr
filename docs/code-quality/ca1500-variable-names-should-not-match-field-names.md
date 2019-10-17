@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3f7e8b0021fc3c318389aa3d6d3f53391b71351f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234570"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443965"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 
@@ -30,7 +30,7 @@ ms.locfileid: "71234570"
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Category|Microsoft.Maintainability|
+|Category|Microsoft. maintenabilité|
 |Modification avec rupture|En cas de déclenchement sur un paramètre portant le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ et la méthode qui déclarent le paramètre ne peuvent pas être vus à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Break : Si vous modifiez le nom du champ et que vous pouvez le voir à l’extérieur de l’assembly.<br />-Break : Si vous modifiez le nom du paramètre et que la méthode qui le déclare peut être affichée à l’extérieur de l’assembly.<br /><br /> En cas de déclenchement sur une variable locale qui porte le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ ne peut pas être affiché à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Sans rupture : Si vous modifiez le nom de la variable locale et que vous ne modifiez pas le nom du champ.<br />-Break : Si vous modifiez le nom du champ et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
@@ -39,7 +39,7 @@ Une méthode d’instance déclare un paramètre ou une variable locale dont le 
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsque le nom d’un champ d’instance correspond à un paramètre ou à un nom de variable locale, le champ d’instance `this` est`Me` accessible [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]à l’aide du mot clé (en) à l’intérieur du corps de la méthode. Lors de la maintenance du code, il est facile d’oublier cette différence et de supposer que la variable locale/de paramètre fait référence au champ d’instance, ce qui génère des erreurs. Cela est vrai surtout pour les corps de méthode longs.
+Lorsque le nom d’un champ d’instance correspond à un paramètre ou à un nom de variable locale, le champ d’instance est accessible à l’aide du mot clé `this` (`Me` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) lorsqu’il est dans le corps de la méthode. Lors de la maintenance du code, il est facile d’oublier cette différence et de supposer que la variable locale/de paramètre fait référence au champ d’instance, ce qui génère des erreurs. Cela est vrai surtout pour les corps de méthode longs.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

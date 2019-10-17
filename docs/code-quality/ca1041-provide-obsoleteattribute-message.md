@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6620ac646c7fe20de856185708effc9e1a331e57
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 51427ec499c223c50fbe72523a3be44ed0ce9094
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235850"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449220"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041 : Fournir un message ObsoleteAttribute
 
@@ -31,26 +31,26 @@ ms.locfileid: "71235850"
 |-|-|
 |TypeName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type ou un membre est marqué à l' <xref:System.ObsoleteAttribute?displayProperty=fullName> aide d’un attribut dont la <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> propriété n’est pas spécifiée.
+Un type ou un membre est marqué à l’aide d’un attribut <xref:System.ObsoleteAttribute?displayProperty=fullName> qui n’a pas sa propriété <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> spécifiée.
 
 Par défaut, cette règle recherche uniquement les membres et les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.ObsoleteAttribute>est utilisé pour marquer les membres et les types de bibliothèque déconseillés. Les consommateurs de bibliothèque doivent éviter l’utilisation de n’importe quel type ou membre marqué comme obsolète. Cela est dû au fait qu’il n’est peut-être pas pris en charge et sera finalement supprimé des versions ultérieures de la bibliothèque. Lorsqu’un type ou membre marqué à l' <xref:System.ObsoleteAttribute> aide de est compilé <xref:System.ObsoleteAttribute.Message%2A> , la propriété de l’attribut est affichée. Cela fournit à l'utilisateur des informations sur le type ou le membre obsolète. Ces informations incluent généralement la durée pendant laquelle le type ou le membre obsolète sera pris en charge par les concepteurs de bibliothèques et le remplacement par défaut à utiliser.
+<xref:System.ObsoleteAttribute> est utilisé pour marquer les membres et les types de bibliothèque déconseillés. Les consommateurs de bibliothèque doivent éviter l’utilisation de n’importe quel type ou membre marqué comme obsolète. Cela est dû au fait qu’il n’est peut-être pas pris en charge et sera finalement supprimé des versions ultérieures de la bibliothèque. Lorsqu’un type ou membre marqué à l’aide de <xref:System.ObsoleteAttribute> est compilé, la propriété <xref:System.ObsoleteAttribute.Message%2A> de l’attribut est affichée. Cela fournit à l'utilisateur des informations sur le type ou le membre obsolète. Ces informations incluent généralement la durée pendant laquelle le type ou le membre obsolète sera pris en charge par les concepteurs de bibliothèques et le remplacement par défaut à utiliser.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, ajoutez le `message` paramètre <xref:System.ObsoleteAttribute> au constructeur.
+Pour corriger une violation de cette règle, ajoutez le paramètre `message` au constructeur <xref:System.ObsoleteAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez pas un avertissement de cette règle, <xref:System.ObsoleteAttribute.Message%2A> car la propriété fournit des informations critiques sur le type ou le membre obsolète.
+Ne supprimez pas un avertissement de cette règle, car la propriété <xref:System.ObsoleteAttribute.Message%2A> fournit des informations critiques sur le type ou le membre obsolète.
 
 ## <a name="configurability"></a>Configurabilité
 
@@ -64,7 +64,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un membre obsolète qui a un déclaré <xref:System.ObsoleteAttribute>correctement.
+L’exemple suivant montre un membre obsolète qui a un @no__t correctement déclaré.
 
 [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
 [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]

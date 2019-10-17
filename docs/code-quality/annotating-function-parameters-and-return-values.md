@@ -1,6 +1,6 @@
 ---
 title: Annotation de paramètres de fonction et valeurs de retour
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016008"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442408"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations typiques des annotations pour les paramètres de fonction simples (scalaires et pointeurs vers les structures et les classes) et la plupart des types de mémoires tampons.  Cet article présente également les modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires liées aux fonctions, consultez [annotation du comportement](../code-quality/annotating-function-behavior.md)de la fonction.
@@ -219,35 +219,7 @@ Pour les annotations dans le tableau suivant, quand un paramètre de pointeur es
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’état de publication.  Exemple :
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     Pointeur vers un tableau, qui est lu et écrit par la fonction.  Elle est de taille `s` éléments, qui doivent tous être valides dans un état antérieur, et les éléments `c` doivent être valides dans le billet.
-
-     La variante `_bytes_` donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, les chaînes `char` utilisent la variante `_bytes_` uniquement si une fonction similaire qui utilise `wchar_t`.
-
-- `_Inout_updates_z_(s)`
-
-     Pointeur vers un tableau qui se termine par un caractère null et a une taille connue. Les éléments jusqu’au terminateur null (qui doit être présent) doivent être valides à la fois dans l’état antérieur et après l’État.  La valeur de l’État postérieur est supposée être différente de la valeur de l’état antérieur ; Cela comprend l’emplacement de la marque de fin null. Si la taille est connue en octets, mettez à l’échelle `s` par la taille de l’élément.
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     Pointeur vers un tableau d’éléments `s`.  Les éléments ne doivent pas nécessairement être valides dans un état antérieur.  Dans un État postérieur, les éléments jusqu’au @no__t élément 1/-0-th doivent être valides.  Si la taille est connue en octets, mettez à l’échelle `s` et `c` en fonction de la taille de l’élément ou utilisez la variante `_bytes_`, qui est définie comme suit :
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’état de publication.  Exemple :
+     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’état de publication.  Exemple :
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -535,7 +507,7 @@ La valeur de retour d’une fonction ressemble à un paramètre `_Out_`, mais se
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 

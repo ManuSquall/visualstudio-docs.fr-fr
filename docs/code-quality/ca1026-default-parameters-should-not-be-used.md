@@ -1,5 +1,5 @@
 ---
-title: 'CA1026 : Les paramètres par défaut ne doivent pas être utilisés'
+title: 'CA1026 : Les paramètres par défaut ne doivent pas être utilisés'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
-ms.translationtype: MT
+ms.openlocfilehash: 7bf388af2b39c9a10b58645f274a03739d60f23e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236129"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449291"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
 
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -50,7 +50,7 @@ L’exemple suivant montre une méthode qui utilise des paramètres par défaut 
 [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1025 Remplacer les arguments répétitifs par un tableau params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025 : Remplacez les arguments répétitifs par un tableau params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Voir aussi
 [Indépendance du langage et composants indépendants du langage](/dotnet/standard/language-independence-and-language-independent-components)

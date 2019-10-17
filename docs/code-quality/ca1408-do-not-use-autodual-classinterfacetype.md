@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 142d011ff73fbaf03af62164f962470f8feb3246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234794"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440392"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408 : Ne pas utiliser le paramètre AutoDual ClassInterfaceType
 
@@ -34,15 +34,15 @@ ms.locfileid: "71234794"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un type visible com (Component Object Model) est marqué avec l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut défini sur la `AutoDual` valeur de <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+Un type visible COM (Component Object Model) est marqué avec l’attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> défini sur la valeur `AutoDual` de <xref:System.Runtime.InteropServices.ClassInterfaceType>.
 
 ## <a name="rule-description"></a>Description de la règle
-Les types qui utilisent une interface double permettent aux clients de se lier à une disposition d'interface spécifique. Les modifications apportées à une version future de la disposition du type ou des types de base bloquent les clients COM qui se lient à l'interface. Par défaut, si l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut n’est pas spécifié, une interface de dispatch uniquement est utilisée.
+Les types qui utilisent une interface double permettent aux clients de se lier à une disposition d'interface spécifique. Les modifications apportées à une version future de la disposition du type ou des types de base bloquent les clients COM qui se lient à l'interface. Par défaut, si l’attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> n’est pas spécifié, une interface de dispatch uniquement est utilisée.
 
 Sauf indication contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques sont invisibles pour COM.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, remplacez la valeur de l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut par la `None` valeur de <xref:System.Runtime.InteropServices.ClassInterfaceType> et définissez explicitement l’interface.
+Pour corriger une violation de cette règle, remplacez la valeur de l’attribut <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> par la valeur `None` de <xref:System.Runtime.InteropServices.ClassInterfaceType> et définissez explicitement l’interface.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez pas un avertissement de cette règle à moins qu’il ne soit certain que la disposition du type et de ses types de base ne changera pas dans une version ultérieure.
@@ -54,9 +54,9 @@ L’exemple suivant montre une classe qui enfreint la règle et une nouvelle dé
 [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1403 Les types de disposition automatique ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
-[CA1412 Marquer les interfaces ComSource comme IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412 : Marquez les interfaces ComSource comme IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Voir aussi
 

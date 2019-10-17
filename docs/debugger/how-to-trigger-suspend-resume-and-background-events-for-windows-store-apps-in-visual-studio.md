@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925474"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450405"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d’arrière-plan lors du débogage d’applications UWP dans Visual Studio
 
@@ -73,17 +73,17 @@ Pour plus d’informations sur la gestion de la durée de vie des processus et l
 
 2. Ouvrez la page des propriétés de débogage du projet de démarrage. Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu **Déboguer** , choisissez **Propriétés**.
 
-     Pour C++ les projets, développez **Propriétés de configuration** , puis choisissez débogage.
+     Pour C++ les projets, développez **Propriétés de configuration** , puis choisissez **débogage**.
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l’une des opérations suivantes :
 
     - Pour les projets Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**
 
          ![Propriété&#35;&#47;d’application de lancement du débogage C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Pour les C++ projets visuels, choisissez **non** dans la liste **lancer l’application** .
+    - Pour C++ les projets, choisissez **non** dans la liste **lancer l’application** .
 
-         ![Propriété&#43;&#43;&#47;] de débogage de l’application de lancement de C VB (../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![Propriété&#43;&#43;&#47;de débogage de l’application de lancement de C VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Appuyez sur **F5** pour exécuter l'application en mode débogage. Notez que la liste **Processus** dans la barre d'outils **Emplacement de débogage** affiche le nom du package d'application pour indiquer que vous êtes en mode débogage.
 
@@ -94,7 +94,7 @@ Pour plus d’informations sur la gestion de la durée de vie des processus et l
      ![Tâches suspendre, reprendre, terminer et en arrière-plan](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
 ## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée
- Utilisez la boîte de dialogue déboguer le **package d’application installé** pour charger une application déjà installée dans le débogueur. Par exemple, vous pouvez déboguer une application qui a été installée à partir de Microsoft Store, ou déboguer une application quand vous disposez des fichiers sources de l’application, mais pas d’un projet Visual Studio pour l’application. La boîte de dialogue déboguer le **package d’application installé** vous permet de démarrer une application en mode débogage sur l’ordinateur Visual Studio ou sur un périphérique distant, ou de configurer l’application pour qu’elle s’exécute en mode débogage, mais ne la démarre pas. Pour plus d’informations, consultez déboguer [un package d’application installé](../debugger/debug-installed-app-package.md).
+ Utilisez la boîte de dialogue **déboguer le package d’application installé** pour charger une application déjà installée dans le débogueur. Par exemple, vous pouvez déboguer une application qui a été installée à partir de Microsoft Store, ou déboguer une application quand vous disposez des fichiers sources de l’application, mais pas d’un projet Visual Studio pour l’application. La boîte de dialogue **déboguer le package d’application installé** vous permet de démarrer une application en mode débogage sur l’ordinateur Visual Studio ou sur un périphérique distant, ou de configurer l’application pour qu’elle s’exécute en mode débogage, mais ne la démarre pas. Pour plus d’informations, consultez [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 
  Une fois l'application chargée dans le débogueur, vous pouvez utiliser l'une des procédures décrites ci-dessus.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c7c7c20ece08bc5167887727e423a3f7cdf7ee19
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234735"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440206"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410 : Les méthodes d'inscription COM doivent être mises en correspondance
 
@@ -35,11 +35,11 @@ ms.locfileid: "71234735"
 
 ## <a name="cause"></a>Cause
 
-Un type déclare une méthode marquée avec l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribut, mais ne déclare pas une méthode marquée avec l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribut, ou vice versa.
+Un type déclare une méthode marquée avec l’attribut <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>, mais ne déclare pas une méthode marquée avec l’attribut <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>, ou vice versa.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Pour que les clients COM (Component Object Model) créent un type .NET, le type doit d’abord être enregistré. S’il est disponible, une méthode marquée avec l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attribut est appelée pendant le processus d’inscription pour exécuter le code spécifié par l’utilisateur. Une méthode correspondante marquée avec l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attribut est appelée pendant le processus d’annulation de l’inscription pour inverser les opérations de la méthode d’inscription.
+Pour que les clients COM (Component Object Model) créent un type .NET, le type doit d’abord être enregistré. S’il est disponible, une méthode marquée avec l’attribut <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> est appelée pendant le processus d’inscription pour exécuter le code spécifié par l’utilisateur. Une méthode correspondante marquée avec l’attribut <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> est appelée pendant le processus d’annulation de l’inscription pour inverser les opérations de la méthode d’inscription.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -58,7 +58,7 @@ L’exemple suivant montre un type qui viole la règle. Le code commenté indiqu
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1411 Les méthodes d’inscription COM ne doivent pas être visibles](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411 : Les méthodes d’inscription COM ne doivent pas être visibles](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Voir aussi
 

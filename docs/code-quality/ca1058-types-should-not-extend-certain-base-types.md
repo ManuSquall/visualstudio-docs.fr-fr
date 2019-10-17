@@ -1,5 +1,5 @@
 ---
-title: 'CA1058 : Les types ne doivent pas étendre certains types de base'
+title: 'CA1058 : Les types ne doivent pas étendre certains types de base'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8bec913e5352c0028859f03ebda7c5f112db654f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235492"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446543"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058 : Les types ne doivent pas étendre certains types de base
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058 : Les types ne doivent pas étendre certains types de base
 
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -47,9 +47,9 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les exceptions doivent dériver de <xref:System.Exception?displayProperty=fullName> ou de l’une de ses sous-classes dans l' <xref:System> espace de noms.
+Les exceptions doivent dériver de <xref:System.Exception?displayProperty=fullName> ou l’une de ses sous-classes dans l’espace de noms <xref:System>.
 
-Ne créez pas une sous-classe <xref:System.Xml.XmlDocument> de si vous souhaitez créer une vue XML d’un modèle d’objet ou d’une source de données sous-jacent.
+Ne créez pas une sous-classe de <xref:System.Xml.XmlDocument> si vous souhaitez créer une vue XML d’un modèle d’objet sous-jacent ou d’une source de données.
 
 ### <a name="non-generic-collections"></a>Collections non génériques
 
@@ -85,7 +85,7 @@ Pour corriger une violation de cette règle, dérivez le type d’un autre type 
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Ne supprimez pas un avertissement de cette règle pour les <xref:System.ApplicationException>violations relatives à. Il est possible de supprimer sans risque un avertissement de cette règle pour <xref:System.Xml.XmlDocument>les violations relatives à. Il est possible de supprimer sans risque un avertissement concernant une collection non générique si le code a été libéré précédemment.
+Ne supprimez pas un avertissement de cette règle pour les violations relatives à <xref:System.ApplicationException>. Il est possible de supprimer sans risque un avertissement de cette règle pour les violations relatives à <xref:System.Xml.XmlDocument>. Il est possible de supprimer sans risque un avertissement concernant une collection non générique si le code a été libéré précédemment.
 
 ## <a name="configurability"></a>Configurabilité
 

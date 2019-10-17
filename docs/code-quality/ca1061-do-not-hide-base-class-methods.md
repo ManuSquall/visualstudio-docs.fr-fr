@@ -1,5 +1,5 @@
 ---
-title: 'CA1061 : Ne pas masquer les méthodes de la classe de base'
+title: 'CA1061 : Ne pas masquer les méthodes de la classe de base'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eacd20dee0758ff481b259807ba52bb78b26f5d2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e52360a68e0ffd4512ba991fd6f4939ebd245359
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235385"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440671"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061 : Ne pas masquer les méthodes de la classe de base
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061 : Ne pas masquer les méthodes de la classe de base
 
 |||
 |-|-|
 |TypeName|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

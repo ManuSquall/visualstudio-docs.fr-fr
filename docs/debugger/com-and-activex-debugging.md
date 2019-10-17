@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 701a0096e89123fc9c5445805bb43777735c0924
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563905"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435919"
 ---
 # <a name="com-and-activex-debugging"></a>Débogage COM et ActiveX
 Cette section réunit des conseils sur le débogage des applications COM et des contrôles ActiveX.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Serveur COM débogage et conteneurs](../debugger/com-server-and-container-debugging.md) mentionne des considérations particulières lors du débogage des applications COM. Ces points sont notamment le débogage d'un serveur et d'un conteneur COM en utilisant deux projets contenus dans la même solution, le traçage des appels qui dépassent les limites du processus, la définition de points d'arrêt dans les fonctions de rappel et le pas à pas dans les conteneurs et les serveurs.
+ [Débogage de serveurs et de conteneurs com](../debugger/com-server-and-container-debugging.md) Mentionne des considérations spéciales lors du débogage d’applications COM. Ces points sont notamment le débogage d'un serveur et d'un conteneur COM en utilisant deux projets contenus dans la même solution, le traçage des appels qui dépassent les limites du processus, la définition de points d'arrêt dans les fonctions de rappel et le pas à pas dans les conteneurs et les serveurs.
 
- [Guide pratique pour Déboguer un contrôle ActiveX](../debugger/how-to-debug-an-activex-control.md) contient des informations sur le débogage des contrôles ActiveX. Ces informations comprennent notamment la spécification d'un conteneur pour la session de débogage pour voir la façon dont le code de votre contrôle ActiveX s'exécute, le débogage d'un contrôle ActiveX lié aux données, la simulation d'un conteneur spécifique et le pas à pas détaillé dans le code du conteneur.
+ [Comment : déboguer un contrôle ActiveX](../debugger/how-to-debug-an-activex-control.md) Contient des informations sur le débogage des contrôles ActiveX. Ces informations comprennent notamment la spécification d'un conteneur pour la session de débogage pour voir la façon dont le code de votre contrôle ActiveX s'exécute, le débogage d'un contrôle ActiveX lié aux données, la simulation d'un conteneur spécifique et le pas à pas détaillé dans le code du conteneur.
 
- [Outils de débogage COM](../debugger/com-debugging-tools.md) répertorie les explorateurs et les exemples d’applications qui peuvent être utiles pour déboguer votre application COM.
+ [Outils de débogage com](../debugger/com-debugging-tools.md) Répertorie les visionneuses et les exemples d’applications qui peuvent être utiles pour déboguer votre application COM.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Tout d’abord examiner le débogueur](../debugger/debugger-feature-tour.md) fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations présentées sont les suivantes : nouveautés du débogueur, paramètres et préparation, points d'arrêt, gestion des exceptions, fonctionnalité Modifier &amp; Continuer, débogage de code managé, débogage de projets Visual C++, débogage COM et ActiveX, débogage de DLL, débogage SQL et les références relatives à l'interface utilisateur.
+ [Tout d’abord, examinez le débogueur](../debugger/debugger-feature-tour.md) Fournit des liens vers les sections de plus grande taille de la documentation sur le débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d’arrêt, la gestion des exceptions, la fonction Modifier & continuer, le débogage de code managé, le débogage de C++ projets, le débogage com et ActiveX, le débogage de dll, le débogage SQL et l’utilisateur. références d’interface.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect'
+title: 'CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1a2ae438091c55c9e0e6b14350ca2527907ab33c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234141"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443922"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -61,11 +61,11 @@ En outre, les suffixes suivants ne doivent **pas** être utilisés :
 
 - `Enum`
 
-- `Impl`(utilisez `Core` à la place)
+- `Impl` (utilisez à la place `Core`)
 
-- `Ex`ou un suffixe similaire pour le distinguer d’une version antérieure du même type
+- `Ex` ou un suffixe similaire pour le distinguer d’une version antérieure du même type
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -87,7 +87,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1710 Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
 

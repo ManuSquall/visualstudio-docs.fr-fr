@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8eaaaa8b810e79b2bd1a4da0ab1d9887c8a46380
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253300"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440130"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
 
@@ -31,7 +31,7 @@ ms.locfileid: "71253300"
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Category|Microsoft.Maintainability|
+|Category|Microsoft. maintenabilité|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -56,15 +56,15 @@ Pour corriger une violation de cette règle, refactorisez la méthode pour rédu
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
-Il est possible de supprimer sans risque un avertissement de cette règle si la complexité ne peut pas être facilement réduite et que la méthode est facile à comprendre, à tester et à entretenir. En particulier, une méthode qui contient une instruction `switch` de`Select` grande [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]taille (in) est candidate pour l’exclusion. Le risque de déstabiliser la base de code en retard dans le cycle de développement ou d’introduire une modification inattendue du comportement au moment de l’exécution dans le code précédemment expédié peut avoir un avantage sur les avantages de la refactorisation du code en matière de facilité de gestion.
+Il est possible de supprimer sans risque un avertissement de cette règle si la complexité ne peut pas être facilement réduite et que la méthode est facile à comprendre, à tester et à entretenir. En particulier, une méthode qui contient une grande `switch` (`Select` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) est candidate pour l’exclusion. Le risque de déstabiliser la base de code en retard dans le cycle de développement ou d’introduire une modification inattendue du comportement au moment de l’exécution dans le code précédemment expédié peut avoir un avantage sur les avantages de la refactorisation du code en matière de facilité de gestion.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Mode de calcul de la complexité cyclomatic
 
 La complexité cyclomatic est calculée en ajoutant 1 à l’exemple suivant :
 
-- Nombre de branches (telles que `if`, `while`et `do`)
+- Nombre de branches (par exemple, `if`, `while` et `do`)
 
-- Nombre d' `case` instructions dans un`switch`
+- Nombre d’instructions `case` dans une `switch`
 
 ## <a name="example"></a>Exemple
 
@@ -102,7 +102,7 @@ Les exemples suivants illustrent des méthodes qui ont des complexités cyclomat
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1501 Éviter un héritage excessif](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501 : Évitez l’excès d’héritage](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Voir aussi
 

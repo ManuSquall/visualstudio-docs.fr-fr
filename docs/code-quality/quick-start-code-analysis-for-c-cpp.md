@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Analyse du code pour C/C++'
+title: 'Démarrage rapide : analyse du code pour C/C++'
 description: Exécutez une analyse statique C++ sur le code dans Visual Studio pour détecter les problèmes de codage courants et les défauts.
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163024"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445634"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : Analyse du code pour C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
 
 Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code.
 
@@ -28,7 +28,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
 
 2. Si vous le souhaitez, dans les listes **configuration** et **plateforme** , choisissez la configuration de build et la plateforme cible.
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez le **activer l’analyse du Code sur la Build** case à cocher. Vous pouvez également exécuter l’analyse du code manuellement en ouvrant le menu **analyser** , puis en sélectionnant **exécuter l’analyse du code sur** *ProjectName* ou **exécuter l’analyse du code sur le fichier**.
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, activez la case à cocher **activer l’analyse du code sur la build** . Vous pouvez également exécuter l’analyse du code manuellement en ouvrant le menu **analyser** , puis en sélectionnant **exécuter l’analyse du code sur** *ProjectName* ou **exécuter l’analyse du code sur le fichier**.
 
 4. Choisissez l' [ensemble de règles](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) que vous souhaitez utiliser ou créez un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md). Si vous utilisez LLVM/Clang-CL, consultez [utilisation de Clang-Tidy dans Visual Studio](../code-quality/clang-tidy.md) pour configurer les options d’analyse Clang-Tidy.
 
@@ -103,9 +103,9 @@ Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour 
 
 Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
-- **Pour filtrer les avertissements par titre ou ID d’avertissement**: Entrez le mot clé dans la zone de recherche.
+- **Pour filtrer les avertissements par titre ou ID d’avertissement**: entrez le mot clé dans la zone de recherche.
 
-- **Pour filtrer les avertissements par gravité**: Par défaut, les messages d’analyse du code sont affectés d’un niveau de gravité **Avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant qu' **erreur** dans un ensemble de règles personnalisé. Dans la colonne **gravité** de la **liste d’erreurs**, cliquez sur la flèche déroulante, puis sur l’icône de filtre. Choisissez **Avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité respective. Choisissez **Sélectionner tout** pour afficher tous les messages.
+- **Pour filtrer les avertissements par gravité**: par défaut, les messages d’analyse du code sont affectés d’un niveau de gravité **Avertissement**. Vous pouvez affecter la gravité d’un ou plusieurs messages en tant qu' **erreur** dans un ensemble de règles personnalisé. Dans la colonne **gravité** de la **liste d’erreurs**, cliquez sur la flèche déroulante, puis sur l’icône de filtre. Choisissez **Avertissement** ou **erreur** pour afficher uniquement les messages qui sont affectés à la gravité respective. Choisissez **Sélectionner tout** pour afficher tous les messages.
 
 ## <a name="see-also"></a>Voir aussi
 

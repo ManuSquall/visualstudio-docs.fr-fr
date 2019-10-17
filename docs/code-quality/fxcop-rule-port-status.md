@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b83a766a1829c55bd5a5847a938cd9d3c1206765
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349597"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449050"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -115,16 +115,16 @@ Ca1509 | Entrée non valide dans le fichier de spécification de règle de métr
 [CA1824](ca1824.md) | Marquer les assemblys avec NeutralResourcesLanguageAttribute
 CA1825 | Évitez les allocations de tableau de longueur nulle.
 CA1826 | N’utilisez pas de méthodes énumérables sur des collections indexables. Utilisez plutôt la collection directement
-[CA2000](ca2000-dispose-objects-before-losing-scope.md) | Supprimer les objets avant la mise hors de portée
-[CA2002](ca2002-do-not-lock-on-objects-with-weak-identity.md) | Ne définissez pas un verrou sur des objets à identité faible
-[Ca2007](ca2007-do-not-directly-await-task.md) | Envisagez d’appeler ConfigureAwait sur la tâche attendue
+[CA2000](ca2000.md) | Supprimer les objets avant la mise hors de portée
+[CA2002](ca2002.md) | Ne définissez pas un verrou sur des objets à identité faible
+[Ca2007](ca2007.md) | Envisagez d’appeler ConfigureAwait sur la tâche attendue
 CA2008 | Ne pas créer de tâches sans passer un TaskScheduler
 Ca2009 | N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection
 CA2010 | Consomme toujours la valeur retournée par les méthodes marquées avec PreserveSigAttribute
-[CA2100](ca2100-review-sql-queries-for-security-vulnerabilities.md) | Vérifier si les requêtes SQL présentent des failles de sécurité
-[CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | Spécifiez le marshaling pour les arguments de chaîne P/Invoke
-[CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Scellez les méthodes qui satisfont les interfaces privées
-[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Ne pas intercepter les exceptions d’état endommagé
+[CA2100](ca2100.md) | Vérifier si les requêtes SQL présentent des failles de sécurité
+[CA2101](ca2101.md) | Spécifiez le marshaling pour les arguments de chaîne P/Invoke
+[CA2119](ca2119.md) | Scellez les méthodes qui satisfont les interfaces privées
+[CA2153](ca2153.md) | Ne pas intercepter les exceptions d’état endommagé
 [CA2200](ca2200.md) | Levez à nouveau pour conserver les détails de la pile.
 [CA2201](ca2201.md) | Ne levez pas des types d'exceptions réservés
 [CA2207](ca2207.md) | Initialisez les champs statiques des types valeur en ligne
@@ -172,12 +172,12 @@ CA2244 | Ne pas dupliquer les initialisations d’éléments indexés
 [CA3011](ca3011.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL
 [CA3012](ca3012.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection regex
 CA3061 | Ne pas ajouter de schéma par URL
-[CA3075](ca3075-insecure-dtd-processing.md) | Traitement DTD non sécurisé dans le code XML
-[CA3076](ca3076-insecure-xslt-script-execution.md) | Le traitement des scripts XSLT n’est pas sécurisé.
-[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | Traitement non sécurisé dans la conception d’API, XmlDocument et XmlTextReader
-[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Marquer les gestionnaires de verbe avec valider le jeton anti-contrefaçon
-[CA5350](ca5350-do-not-use-weak-cryptographic-algorithms.md) | N’utilisez pas d’algorithmes de chiffrement faibles
-[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | Ne pas utiliser les algorithmes de chiffrement rompus
+[CA3075](ca3075.md) | Traitement DTD non sécurisé dans le code XML
+[CA3076](ca3076.md) | Le traitement des scripts XSLT n’est pas sécurisé.
+[CA3077](ca3077.md) | Traitement non sécurisé dans la conception d’API, XmlDocument et XmlTextReader
+[CA3147](ca3147.md) | Marquer les gestionnaires de verbe avec valider le jeton anti-contrefaçon
+[CA5350](ca5350.md) | N’utilisez pas d’algorithmes de chiffrement faibles
+[CA5351](ca5351.md) | Ne pas utiliser les algorithmes de chiffrement rompus
 CA5358 | Ne pas utiliser les modes de chiffrement non sécurisés
 CA5359 | Ne pas désactiver la validation de certificat
 CA5360 | N’appelez pas de méthodes dangereuses dans la désérialisation
@@ -254,11 +254,11 @@ ID de règle | Suivi du problème
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
 [CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
 [CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
-[CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
-[CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
-[CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
-[CA2006](ca2006-use-safehandle-to-encapsulate-native-resources.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
-[CA2109](ca2109-review-visible-event-handlers.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
+[CA1900](ca1900.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
+[CA2001](ca2001.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
+[CA2004](ca2004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
+[CA2006](ca2006.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
+[CA2109](ca2109.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
 [CA2204](ca2204.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
 [CA2205](ca2205.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
 [CA2212](ca2212.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
@@ -290,49 +290,49 @@ Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne so
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)
-- [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
-- [CA1903](ca1903-use-only-api-from-targeted-framework.md)
-- [CA2003](ca2003-do-not-treat-fibers-as-threads.md)
-- [CA2102](ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)
-- [CA2103](ca2103-review-imperative-security.md)
-- [CA2104](ca2104-do-not-declare-read-only-mutable-reference-types.md)
-- [CA2105](ca2105-array-fields-should-not-be-read-only.md)
-- [CA2106](ca2106-secure-asserts.md)
-- [CA2107](ca2107-review-deny-and-permit-only-usage.md)
-- [CA2108](ca2108-review-declarative-security-on-value-types.md)
-- [CA2111](ca2111-pointers-should-not-be-visible.md)
-- [CA2112](ca2112-secured-types-should-not-expose-fields.md)
-- [CA2114](ca2114-method-security-should-be-a-superset-of-type.md)
-- [CA2115](ca2115-call-gc-keepalive-when-using-native-resources.md)
-- [CA2116](ca2116-aptca-methods-should-only-call-aptca-methods.md)
-- [CA2117](ca2117-aptca-types-should-only-extend-aptca-base-types.md)
-- [CA2118](ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)
-- [CA2120](ca2120-secure-serialization-constructors.md)
-- [CA2121](ca2121-static-constructors-should-be-private.md)
-- [CA2122](ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
-- [CA2123](ca2123-override-link-demands-should-be-identical-to-base.md)
-- [CA2124](ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)
-- [CA2126](ca2126-type-link-demands-require-inheritance-demands.md)
-- [CA2130](ca2130-security-critical-constants-should-be-transparent.md)
-- [CA2131](ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)
-- [CA2132](ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)
-- [CA2133](ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)
-- [CA2134](ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)
-- [CA2135](ca2135-level-2-assemblies-should-not-contain-linkdemands.md)
-- [CA2136](ca2136-members-should-not-have-conflicting-transparency-annotations.md)
-- [CA2137](ca2137-transparent-methods-must-contain-only-verifiable-il.md)
-- [CA2138](ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)
-- [CA2139](ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)
-- [CA2140](ca2140-transparent-code-must-not-reference-security-critical-items.md)
-- [CA2141](ca2141-transparent-methods-must-not-satisfy-linkdemands.md)
-- [CA2142](ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
-- [CA2143](ca2143-transparent-methods-should-not-use-security-demands.md)
-- [CA2144](ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)
-- [CA2145](ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)
-- [CA2146](ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)
-- [CA2147](ca2147-transparent-methods-may-not-use-security-asserts.md)
-- [CA2149](ca2149-transparent-methods-must-not-call-into-native-code.md)
-- [CA2151](ca2151-fields-with-critical-types-should-be-security-critical.md)
+- [CA1901](ca1901.md)
+- [CA1903](ca1903.md)
+- [CA2003](ca2003.md)
+- [CA2102](ca2102.md)
+- [CA2103](ca2103.md)
+- [CA2104](ca2104.md)
+- [CA2105](ca2105.md)
+- [CA2106](ca2106.md)
+- [CA2107](ca2107.md)
+- [CA2108](ca2108.md)
+- [CA2111](ca2111.md)
+- [CA2112](ca2112.md)
+- [CA2114](ca2114.md)
+- [CA2115](ca2115.md)
+- [CA2116](ca2116.md)
+- [CA2117](ca2117.md)
+- [CA2118](ca2118.md)
+- [CA2120](ca2120.md)
+- [CA2121](ca2121.md)
+- [CA2122](ca2122.md)
+- [CA2123](ca2123.md)
+- [CA2124](ca2124.md)
+- [CA2126](ca2126.md)
+- [CA2130](ca2130.md)
+- [CA2131](ca2131.md)
+- [CA2132](ca2132.md)
+- [CA2133](ca2133.md)
+- [CA2134](ca2134.md)
+- [CA2135](ca2135.md)
+- [CA2136](ca2136.md)
+- [CA2137](ca2137.md)
+- [CA2138](ca2138.md)
+- [CA2139](ca2139.md)
+- [CA2140](ca2140.md)
+- [CA2141](ca2141.md)
+- [CA2142](ca2142.md)
+- [CA2143](ca2143.md)
+- [CA2144](ca2144.md)
+- [CA2145](ca2145.md)
+- [CA2146](ca2146.md)
+- [CA2147](ca2147.md)
+- [CA2149](ca2149.md)
+- [CA2151](ca2151.md)
 - [CA2202](ca2202.md)
 - [CA2210](ca2210.md)
 - [CA2220](ca2220.md)
@@ -342,7 +342,7 @@ Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne so
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
 - [CA2233](ca2233.md)
-- [CA5122 :](ca5122-p-invoke-declarations-should-not-be-safe-critical.md)
+- [CA5122 :](ca5122.md)
 
 ## <a name="see-also"></a>Voir aussi
 

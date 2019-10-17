@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1970eefee70fa14179c77566f23f213f09026646
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235163"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444382"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301 : Éviter les accélérateurs en double
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235163"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
-Un type étend <xref:System.Windows.Forms.Control?displayProperty=fullName> et contient deux contrôles de niveau supérieur ou plus qui ont des clés d’accès identiques stockées dans un fichier de ressources.
+Un type étend <xref:System.Windows.Forms.Control?displayProperty=fullName> et contient au moins deux contrôles de niveau supérieur qui ont des clés d’accès identiques stockées dans un fichier de ressources.
 
 ## <a name="rule-description"></a>Description de la règle
 
@@ -46,7 +46,7 @@ Pour corriger une violation de cette règle, définissez des clés d’accès un
 Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre une forme minimale qui contient deux contrôles qui ont des clés d’accès identiques. Les clés sont stockées dans un fichier de ressources, qui n’est pas affiché. Toutefois, leurs valeurs apparaissent dans les lignes en `checkBox.Text` sortie commentées. Le comportement des accélérateurs dupliqués peut être examiné en échangeant `checkBox.Text` les lignes avec les équivalents commentés. Toutefois, dans ce cas, l’exemple ne génère pas d’avertissement à partir de la règle.
+L’exemple suivant montre une forme minimale qui contient deux contrôles qui ont des clés d’accès identiques. Les clés sont stockées dans un fichier de ressources, qui n’est pas affiché. Toutefois, leurs valeurs apparaissent dans les lignes commentées `checkBox.Text`. Le comportement des accélérateurs dupliqués peut être examiné en échangeant les lignes `checkBox.Text` avec les équivalents commentés. Toutefois, dans ce cas, l’exemple ne génère pas d’avertissement à partir de la règle.
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 

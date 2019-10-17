@@ -1,5 +1,5 @@
 ---
-title: Modifier & Continuer (Visual C++) | Microsoft Docs
+title: Modifier & Continuer (C++) | Microsoft Docs
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,42 +17,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ff67be52c36050f513fc3ef6530a6bd81d8988d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851144"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435856"
 ---
-# <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
-Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consultez [modifications de Code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) pour plus d’informations sur les limitations de modifier & Continuer.
+# <a name="edit-and-continue-c"></a>Modifier & Continuer (C++)
+Vous pouvez utiliser modifier & continuer dans C++ les projets. Pour plus d’informations sur les limitations de modifier & continuer, consultez [modifications du code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) .
 
-Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3, consultez [C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
+Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3, consultez [ C++ modifier & continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
  L’option de compilateur [/Zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging) qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans l’option [/Od (Désactiver (Débogage))](https://msdn.microsoft.com/library/aafb762y.aspx).
 
- **/ Zo** désactive Modifier & Continuer. Voir [Guide pratique pour déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md).
+ **/Zo** désactive modifier & continuer. Consultez [Guide pratique pour déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md).
 
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Activer ou désactiver Modifier & Continuer
  Vous pouvez désactiver l’appel automatique de Modifier & Continuer si vous apportez des modifications au code que vous ne souhaitez pas appliquer tout de suite, pendant la session de débogage en cours. Vous pouvez également réactiver la fonctionnalité automatique Modifier & Continuer.
 
 > [!IMPORTANT]
-> Pour les paramètres de build requis et d’autres informations sur la compatibilité de la fonctionnalité, consultez [ C++ Modifier & Continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
+> Pour obtenir les paramètres de build requis et d’autres informations sur la compatibilité des fonctionnalités, consultez [ C++ modifier & continuer dans Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
-1. Si vous êtes dans une session de débogage, arrêtez le débogage (**MAJ + F5**).
+1. Si vous êtes dans une session de débogage, arrêtez le débogage (**Maj + F5**).
 
 2. Dans le menu **Outils** , choisissez **Options**.
 
 3. Dans la boîte de dialogue **Options** , sélectionnez **Débogage > Général**.
 
-4. Pour activer, sélectionnez **Activer Modifier & Continuer**. Pour désactiver, désactivez la case à cocher.
+4. Pour activer, sélectionnez **activer modifier & continuer**. Pour désactiver, désactivez la case à cocher.
 
 5. Dans le groupe **Modifier &amp; Continuer** , cochez ou décochez la case **Activer Modifier et Continuer natif** .
 
    La modification de ce paramètre s’applique à tous vos projets actuels. Après avoir modifié ce paramètre, il n'est pas nécessaire de régénérer l'application. Si vous générez l’application à partir de la ligne de commande ou d’un makefile, mais que vous effectuez le débogage dans l’environnement Visual Studio, vous pouvez continuer à utiliser Modifier & Continuer à condition de définir l’option **/ZI**.
 
 ## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Comment appliquer des modifications du code explicitement
- Dans Visual C++, Modifier & Continuer peut appliquer des modifications de code de deux manières. Les modifications du code peuvent être implicitement appliquées, lorsque vous choisissez une commande d'exécution, ou explicitement, à l'aide de la commande **Appliquer les modifications du code** .
+ Dans C++, modifier & continuer peut appliquer des modifications de code de deux manières. Les modifications du code peuvent être implicitement appliquées, lorsque vous choisissez une commande d'exécution, ou explicitement, à l'aide de la commande **Appliquer les modifications du code** .
 
  Quand vous appliquez des modifications du code de manière explicite, votre programme reste en mode arrêt - aucune exécution ne se produit.
 
@@ -72,7 +72,7 @@ Pour plus d’informations sur les améliorations de Visual Studio 2015 Update 3
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Comment réinitialiser le point d'exécution
  Certaines modifications du code peuvent entraîner le déplacement du point d'exécution vers un nouvel emplacement lorsque le mode Modifier & Continuer applique les modifications. Bien que Modifier & Continuer place le point d'exécution aussi précisément que possible, les résultats risquent d'être incorrects dans certains cas.
 
- Dans Visual C++, une boîte de dialogue vous informe du déplacement du point d'exécution. Vérifiez que le nouvel emplacement est correct avant de poursuivre le débogage. S'il ne l'est pas, utilisez la commande **Définir l'instruction suivante** . Pour plus d’informations, consultez [Définir l’instruction suivante à exécuter](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
+ Dans C++, une boîte de dialogue vous informe lorsque le point d’exécution change. Vérifiez que le nouvel emplacement est correct avant de poursuivre le débogage. S'il ne l'est pas, utilisez la commande **Définir l'instruction suivante** . Pour plus d’informations, consultez [Définir l’instruction suivante à exécuter](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
 
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Comment utiliser du code périmé
  Dans certains cas, Modifier & Continuer n'applique pas immédiatement les modifications du code au fichier exécutable, mais peut éventuellement les appliquer ultérieurement si vous poursuivez le débogage. Cela arrive si vous modifiez une fonction qui appelle la fonction actuelle ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction sur la pile des appels.

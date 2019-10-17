@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bbc066709fc5f90944b91130c1ef57a5120b1844
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234152"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443943"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234152"
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys, les espaces de noms, les types, les membres et les paramètres.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
@@ -44,13 +44,13 @@ Le nom d’un identificateur contient un acronyme de trois lettres majuscules ou
 
 ## <a name="rule-description"></a>Description de la règle
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
-Par Convention, les noms de paramètres utilisent la casse mixte et les noms d’espaces de noms, de types et de membres utilisent la casse Pascal. Dans un nom à casse mixte, la première lettre est en minuscules et la première lettre de tous les mots restants dans le nom est en majuscules. , Et `packetSniffer` sont`fatalErrorCode`des exemples de noms à casse mixte. `ioFile` Dans un nom en respectant la casse Pascal, la première lettre est en majuscule et la première lettre des mots restants dans le nom est en majuscules. , Et `PacketSniffer` sont`FatalErrorCode`des exemples de noms à casse Pascal. `IOFile`
+Par Convention, les noms de paramètres utilisent la casse mixte et les noms d’espaces de noms, de types et de membres utilisent la casse Pascal. Dans un nom à casse mixte, la première lettre est en minuscules et la première lettre de tous les mots restants dans le nom est en majuscules. @No__t-0, `ioFile` et `fatalErrorCode` sont des exemples de noms à casse mixte. Dans un nom en respectant la casse Pascal, la première lettre est en majuscule et la première lettre des mots restants dans le nom est en majuscules. @No__t-0, `IOFile` et `FatalErrorCode` sont des exemples de noms à casse Pascal.
 
 Cette règle fractionne le nom en mots en fonction de la casse et vérifie les mots à deux lettres par rapport à une liste de mots à deux lettres communs, tels que « in » ou « My ». Si aucune correspondance n’est trouvée, le mot est supposé être un acronyme. En outre, cette règle suppose qu’elle a trouvé un acronyme lorsque le nom contient quatre lettres majuscules dans une ligne ou trois lettres majuscules dans une ligne à la fin du nom.
 
-Par Convention, les acronymes à deux lettres utilisent toutes les lettres majuscules, et les acronymes de trois caractères ou plus utilisent la casse Pascal. Les exemples suivants utilisent cette Convention d’affectation de noms : « DB », « CR », « CPA » et « ECMA ». Les exemples suivants enfreignent la Convention : 'Io', 'XML’et’DoD', et pour les noms autres que les paramètres, 'XP’et’Cpl'.
+Par Convention, les acronymes à deux lettres utilisent toutes les lettres majuscules, et les acronymes de trois caractères ou plus utilisent la casse Pascal. Les exemples suivants utilisent cette Convention d’affectation de noms : « DB », « CR », « CPA » et « ECMA ». Les exemples suivants enfreignent la Convention : 'io', 'XML’et’DoD', et pour les noms autres que les paramètres, 'XP’et’Cpl'.
 
 'ID’est à casse spéciale pour provoquer une violation de cette règle. 'ID’n’est pas un acronyme, mais il s’agit d’une abréviation pour’identification'.
 
@@ -62,8 +62,8 @@ Modifiez le nom pour qu’il respecte la casse.
 
 Il est possible de supprimer sans risque cet avertissement si vous avez vos propres conventions d’affectation de noms, ou si l’identificateur représente un nom approprié, par exemple, le nom d’une société ou d’une technologie.
 
-Vous pouvez également ajouter des termes, des abréviations et des acronymes spécifiques à un dictionnaire personnalisé d’analyse du code. Les termes spécifiés dans le dictionnaire personnalisé ne provoquent pas de violations de cette règle. Pour plus d'informations, voir [Procédure : Personnaliser le dictionnaire](../code-quality/how-to-customize-the-code-analysis-dictionary.md)d’analyse du code.
+Vous pouvez également ajouter des termes, des abréviations et des acronymes spécifiques à un dictionnaire personnalisé d’analyse du code. Les termes spécifiés dans le dictionnaire personnalisé ne provoquent pas de violations de cette règle. Pour plus d’informations, consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

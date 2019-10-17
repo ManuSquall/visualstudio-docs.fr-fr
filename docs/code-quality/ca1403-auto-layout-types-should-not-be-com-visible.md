@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e590514247444d32d0d9a31b2bbc409434cf53c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8329c51e58478e1902f64232f4f2546418639e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234832"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440521"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
 
@@ -35,17 +35,17 @@ ms.locfileid: "71234832"
 
 ## <a name="cause"></a>Cause
 
-Un type valeur visible com (Component Object Model) est marqué avec l' <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribut défini sur <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>.
+Un type valeur visible COM (Component Object Model) est marqué avec l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> défini sur <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
 
-<xref:System.Runtime.InteropServices.LayoutKind>les types de disposition sont gérés par le common language runtime. La disposition de ces types peut changer entre les versions de .NET, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si l' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, C#les compilateurs, C++ Visual Basic et spécifient [LayoutKind. auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
+les types de disposition <xref:System.Runtime.InteropServices.LayoutKind> sont gérés par le common language runtime. La disposition de ces types peut changer entre les versions de .NET, ce qui interrompt les clients COM qui attendent une disposition spécifique. Si l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute> n’est pas spécifié, C#les compilateurs, C++ Visual Basic et, spécifient [LayoutKind. auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pour les types valeur.
 
-Sauf indication contraire, tous les types publics et non génériques sont visibles par COM, et tous les types non publics et génériques sont invisibles pour COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. L’assembly conteneur doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> le défini `false` sur et le type doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute> le défini `true`sur.
+Sauf indication contraire, tous les types publics et non génériques sont visibles par COM, et tous les types non publics et génériques sont invisibles pour COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, remplacez la valeur de l' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut par [LayoutKind. Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) ou [LayoutKind. sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), ou rendez le type invisible pour com.
+Pour corriger une violation de cette règle, remplacez la valeur de l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute> par [LayoutKind. Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) ou [LayoutKind. sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), ou rendez le type invisible à com.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -60,7 +60,7 @@ L’exemple suivant montre un type qui viole la règle et un type qui satisfait 
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1408 Ne pas utiliser la double](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408 : N’utilisez pas le paramètre AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir les propriétés d’analyse du code pour les projets C/C++'
+title: "Comment : définir les propriétés d'analyse du code pour les projets C/C++"
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163045"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448920"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procédure : Définir les propriétés d’analyse du code pour les projets C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Comment : définir les propriétés d'analyse du code pour les projets C/C++
 
 Vous pouvez configurer les règles que l’outil d’analyse du code utilise pour analyser le code de chaque configuration de votre projet. En outre, vous pouvez diriger l’analyse du code pour supprimer les avertissements du code qui a été généré et ajouté à votre projet par un outil tiers.
 

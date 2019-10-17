@@ -1,5 +1,5 @@
 ---
-title: 'CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6'
+title: 'CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a8b1ea389c37dc63a9fe7366208a2a3028efb8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7ebf218b15dcb4048129e308822042efa5f6b0c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234798"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440515"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6
 
 |||
 |-|-|
@@ -34,15 +34,15 @@ ms.locfileid: "71234798"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Un type qui est spécifiquement marqué comme visible par le modèle COM (Component Object Model) déclare un membre qui accepte <xref:System.Int64?displayProperty=fullName> un argument.
+Un type qui est spécifiquement marqué comme visible par le modèle COM (Component Object Model) déclare un membre qui accepte un argument <xref:System.Int64?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
-Les clients COM Visual Basic 6 ne peut pas accéder aux entiers de 64 bits.
+Visual Basic 6 les clients COM ne peuvent pas accéder aux entiers 64 bits.
 
-Par défaut, les éléments suivants sont visibles par COM : assemblys, les types publics, les membres d’instance publics dans les types publics et tous les membres des types valeur publics. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. l’assembly conteneur doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> le défini `false` sur et le type doit être marqué avec <xref:System.Runtime.InteropServices.ComVisibleAttribute> le défini `true`sur.
+Par défaut, les éléments suivants sont visibles par COM : assemblys, les types publics, les membres d’instance publics dans les types publics et tous les membres des types valeur publics. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle pour un paramètre dont la valeur peut toujours être exprimée sous la forme d’un entier 32 bits, remplacez le <xref:System.Int32?displayProperty=fullName>type de paramètre par. Si la valeur du paramètre peut être supérieure à celle qui peut être exprimée sous la forme d’un entier 32 bits, remplacez le <xref:System.Decimal?displayProperty=fullName>type de paramètre par. Notez que <xref:System.Single?displayProperty=fullName> et <xref:System.Double?displayProperty=fullName> perdent <xref:System.Int64> la précision aux plages supérieures du type de données. Si le membre n’est pas destiné à être visible par com, marquez- <xref:System.Runtime.InteropServices.ComVisibleAttribute> le avec `false`la valeur.
+Pour corriger une violation de cette règle pour un paramètre dont la valeur peut toujours être exprimée sous la forme d’un entier 32 bits, remplacez le type de paramètre par <xref:System.Int32?displayProperty=fullName>. Si la valeur du paramètre peut être supérieure à celle qui peut être exprimée sous la forme d’un entier 32 bits, remplacez le type de paramètre par <xref:System.Decimal?displayProperty=fullName>. Notez que les <xref:System.Single?displayProperty=fullName> et <xref:System.Double?displayProperty=fullName> perdent la précision aux plages supérieures du type de données <xref:System.Int64>. Si le membre n’est pas destiné à être visible par COM, marquez-le avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle s’il est certain que Visual Basic 6 clients COM n’accèdent pas au type.
@@ -54,11 +54,11 @@ L’exemple suivant montre un type qui viole la règle.
 [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1413 Éviter les champs non publics dans les types valeur visibles par COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413 : Évitez les champs non publics dans les types valeur visibles par COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-[CA1407 Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017 Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

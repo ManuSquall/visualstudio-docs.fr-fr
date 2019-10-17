@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585244"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448835"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
@@ -23,9 +23,9 @@ Quand vous configurez une analyse héritée pour des projets de code managé dan
 > [!NOTE]
 > Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](analyzer-rule-sets.md).
 
-Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet. Si vous incluez plusieurs ensembles de règles qui contiennent la même règle dans un ensemble de règles personnalisé, cette règle apparaît une seule fois dans l’ensemble de règles personnalisé.
+Vous pouvez utiliser l’un de ces ensembles de règles intégrés ou [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des exigences de votre projet. Si vous incluez plusieurs ensembles de règles qui contiennent la même règle dans un ensemble de règles personnalisé, cette règle apparaît une seule fois dans l’ensemble de règles personnalisé.
 
-Les rubriques de cette section décrivent les règles intégrées d’ensembles de règles (et les avertissements) qu’ils contiennent.
+Les rubriques de cette section décrivent les ensembles de règles intégrés et les règles (ou avertissements) qu’elles contiennent.
 
 | Ensemble de règles | Règles incluses |
 | - | - |

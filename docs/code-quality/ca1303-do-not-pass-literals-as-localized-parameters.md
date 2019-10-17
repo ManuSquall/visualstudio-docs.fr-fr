@@ -1,5 +1,5 @@
 ---
-title: 'CA1303 : Ne pas passer de littéraux en paramètres localisés'
+title: 'CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 443fec0c9f20148d775a734137941cd7c78da889
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235112"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444391"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas passer de littéraux en paramètres localisés
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés
 
 |||
 |-|-|
@@ -41,7 +41,7 @@ Une méthode passe un littéral de chaîne en tant que paramètre à un construc
 
 Cet avertissement est déclenché quand une chaîne littérale est passée en tant que valeur à un paramètre ou une propriété et qu’un ou plusieurs des cas suivants sont vrais :
 
-- L' <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de la propriété a la valeur true.
+- L’attribut <xref:System.ComponentModel.LocalizableAttribute> du paramètre ou de la propriété a la valeur true.
 
 - Le nom du paramètre ou de la propriété contient « Text », « message » ou « Caption ».
 
@@ -53,7 +53,7 @@ Les littéraux de chaîne incorporés dans le code source sont difficiles à loc
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, remplacez le littéral de chaîne par une chaîne récupérée par le biais d' <xref:System.Resources.ResourceManager> une instance de la classe.
+Pour corriger une violation de cette règle, remplacez le littéral de chaîne par une chaîne récupérée par le biais d’une instance de la classe <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -63,7 +63,7 @@ Les utilisateurs peuvent éliminer le bruit sur les méthodes qui ne doivent pas
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode qui lève une exception lorsque l’un de ses deux arguments est hors limites. Pour le premier argument, une chaîne littérale, qui viole cette règle, est passée au constructeur d’exception. Pour le deuxième argument, une chaîne Récupérée à l’aide d’un <xref:System.Resources.ResourceManager>est correctement passée au constructeur.
+L’exemple suivant montre une méthode qui lève une exception lorsque l’un de ses deux arguments est hors limites. Pour le premier argument, une chaîne littérale, qui viole cette règle, est passée au constructeur d’exception. Pour le deuxième argument, une chaîne Récupérée à l’aide d’un <xref:System.Resources.ResourceManager> est correctement passée au constructeur.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]

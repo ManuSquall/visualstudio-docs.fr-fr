@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b963f831637e357126137cf40b0d6c9e9a4f8b8
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 0ece210d20a675cf2f55b5b619a1c1b526638582
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349114"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449261"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028 : Enum Storage doit être Int32
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres'
+title: 'CA1011 : Si possible, transmettez les types de base en tant que paramètres'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: fbb807f7146c781d2b97cf80f2e78c8beb5c38b4
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236409"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441673"
 ---
-# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
 
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -60,7 +60,7 @@ Dans ces cas, le code sera plus robuste en raison de la vérification de type fo
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisée uniquement avec un <xref:System.IO.FileStream> objet, qui enfreint cette règle. Une deuxième méthode, `ManipulateAnyStream`, répond à la règle en remplaçant le <xref:System.IO.FileStream> paramètre à l’aide <xref:System.IO.Stream>d’un.
+L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisée uniquement avec un objet <xref:System.IO.FileStream>, ce qui viole cette règle. Une deuxième méthode, `ManipulateAnyStream`, répond à la règle en remplaçant le paramètre <xref:System.IO.FileStream> à l’aide d’un <xref:System.IO.Stream>.
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
@@ -68,4 +68,4 @@ L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être 
 
 ## <a name="related-rules"></a>Règles associées
 
-[CA1059 Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059 : Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

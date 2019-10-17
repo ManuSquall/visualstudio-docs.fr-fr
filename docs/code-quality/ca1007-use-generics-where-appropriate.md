@@ -1,5 +1,5 @@
 ---
-title: 'CA1007 : Utiliser des classes génériques lorsque cela est approprié'
+title: 'CA1007 : Utiliser des classes génériques lorsque cela est approprié'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,30 +17,30 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7783bea936b04fcb600563dadea6a65ac5ef5e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d2c9416d1cdc655df110c7230b9f0e29290221a7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236520"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441698"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
 
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
 |CheckId|CA1007|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Une méthode visible de l’extérieur contient un paramètre de référence <xref:System.Object?displayProperty=fullName>de type, et l’assembly conteneur cible .NET Framework 2,0.
+Une méthode visible de l’extérieur contient un paramètre de référence de type <xref:System.Object?displayProperty=fullName>, et l’assembly conteneur cible .NET Framework 2,0.
 
 ## <a name="rule-description"></a>Description de la règle
-Un paramètre de référence est un paramètre modifié à l’aide du `ref` mot`ByRef` clé [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](in). Le type d’argument fourni pour un paramètre de référence doit correspondre exactement au type de paramètre de référence. Pour utiliser un type dérivé du type de paramètre de référence, le type doit d’abord être casté et assigné à une variable du type de paramètre de référence. L’utilisation d’une méthode générique autorise le passage de tous les types, soumis à des contraintes, à la méthode sans cast préalable du type vers le type de paramètre de référence.
+Un paramètre de référence est un paramètre modifié à l’aide du mot clé `ref` (`ByRef` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Le type d’argument fourni pour un paramètre de référence doit correspondre exactement au type de paramètre de référence. Pour utiliser un type dérivé du type de paramètre de référence, le type doit d’abord être casté et assigné à une variable du type de paramètre de référence. L’utilisation d’une méthode générique autorise le passage de tous les types, soumis à des contraintes, à la méthode sans cast préalable du type vers le type de paramètre de référence.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, rendez la méthode générique et remplacez <xref:System.Object> le paramètre à l’aide d’un paramètre de type.
+Pour corriger une violation de cette règle, rendez la méthode générique et remplacez le paramètre <xref:System.Object> à l’aide d’un paramètre de type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
@@ -52,19 +52,19 @@ L’exemple suivant montre une routine d’échange à usage général qui est i
 [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
-[CA1010 Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010 : Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
-[CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
-[CA1002 Ne pas exposer les listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
-[CA1006 Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
-[CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
-[CA1003 Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003 : Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## <a name="see-also"></a>Voir aussi
 [Génériques](/dotnet/csharp/programming-guide/generics/index)

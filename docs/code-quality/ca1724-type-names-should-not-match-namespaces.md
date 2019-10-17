@@ -1,5 +1,5 @@
 ---
-title: 'CA1724 : Les noms de types ne doivent pas être identiques aux espaces de noms'
+title: 'CA1724 : les noms de types ne doivent pas être identiques aux espaces de noms'
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2e5ab83a73da6035df985b93294f850b5a49248f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233856"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443445"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas correspondre à des espaces de noms
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : les noms de types ne doivent pas correspondre à des espaces de noms
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

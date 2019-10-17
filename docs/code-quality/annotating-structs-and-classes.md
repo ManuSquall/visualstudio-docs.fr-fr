@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015967"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446295"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
 
@@ -45,7 +45,7 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
      Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Champ qui a une taille accessible en écriture dans des éléments (ou octets), comme spécifié par `size`, et la `count` de ces éléments qui sont accessibles en lecture.
 
@@ -59,7 +59,7 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
 
     ```cpp
 

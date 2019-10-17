@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 296e8cb4753d487573957de1108a8cb27778ef4c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 69fb85c396da1acde40cd9bc46150ca5f1386c17
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235791"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449128"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051 : Ne pas déclarer de champs d'instances visibles
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235791"
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,11 +38,11 @@ Par défaut, cette règle recherche uniquement les types visibles de l’extéri
 
 ## <a name="rule-description"></a>Description de la règle
 
-Un champ s'utilise principalement en tant que détail d'implémentation. Les champs doivent `private` être `internal` ou et doivent être exposés à l’aide de propriétés. Il est aussi facile d’accéder à une propriété que d’accéder à un champ, et le code des accesseurs d’une propriété peut changer à mesure que les fonctionnalités du type se développent sans introduire de modifications avec rupture.
+Un champ s'utilise principalement en tant que détail d'implémentation. Les champs doivent être `private` ou `internal` et doivent être exposés à l’aide de propriétés. Il est aussi facile d’accéder à une propriété que d’accéder à un champ, et le code des accesseurs d’une propriété peut changer à mesure que les fonctionnalités du type se développent sans introduire de modifications avec rupture.
 
-Les propriétés qui retournent simplement la valeur d’un champ privé ou interne sont optimisées pour s’exécuter sur les avec l’accès à un champ ; le gain de performance de l’utilisation de champs visibles de l’extérieur au lieu de propriétés est minime. *En externe* , fait référence `public`aux `protected`niveaux d’accessibilité, `Protected`, et `Protected Friend` `protected internal` (`Public`, et dans Visual Basic).
+Les propriétés qui retournent simplement la valeur d’un champ privé ou interne sont optimisées pour s’exécuter sur les avec l’accès à un champ ; le gain de performance de l’utilisation de champs visibles de l’extérieur au lieu de propriétés est minime. En *externe* , fait référence aux niveaux d’accessibilité `public`, `protected` et `protected internal` (`Public`, `Protected` et `Protected Friend` dans Visual Basic).
 
-En outre, les champs publics ne peuvent pas être protégés par des [demandes de liaison](/dotnet/framework/misc/link-demands). Pour plus d’informations, [consultez CA2112 : Les types sécurisés ne doivent](../code-quality/ca2112-secured-types-should-not-expose-fields.md)pas exposer de champs. (Les demandes de liaison ne s’appliquent pas aux applications .NET Core.)
+En outre, les champs publics ne peuvent pas être protégés par des [demandes de liaison](/dotnet/framework/misc/link-demands). Pour plus d’informations, consultez [CA2112 : les types sécurisés ne doivent pas exposer des champs](../code-quality/ca2112.md). (Les demandes de liaison ne s’appliquent pas aux applications .NET Core.)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -55,7 +55,7 @@ Supprimez cet avertissement uniquement si vous êtes certain que les consommateu
 Les consommateurs peuvent avoir besoin d’un accès à un champ dans les cas suivants :
 
 - dans ASP.NET Web Forms contrôles de contenu
-- Lorsque la plateforme cible utilise pour modifier `ref` des champs, tels que des frameworks MVVM (Model-View-ViewModel) pour WPF et UWP
+- Quand la plateforme cible utilise `ref` pour modifier des champs, tels que des frameworks MVVM (Model-View-ViewModel) pour WPF et UWP
 
 ## <a name="configurability"></a>Configurabilité
 
@@ -69,13 +69,13 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre un type (`BadPublicInstanceFields`) qui enfreint cette règle. `GoodPublicInstanceFields`affiche le code corrigé.
+L’exemple suivant montre un type (`BadPublicInstanceFields`) qui enfreint cette règle. `GoodPublicInstanceFields` affiche le code corrigé.
 
 [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA2112 Les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+- [CA2112 : Les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112.md)
 
 ## <a name="see-also"></a>Voir aussi
 

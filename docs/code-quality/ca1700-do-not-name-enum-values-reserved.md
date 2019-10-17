@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0097725b8f84a641df9061d693f1f5c4bdf1851
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 7642885a953f4974a9440acced027552bd64f72e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72348975"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439991"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : ne nommez pas les &#39;valeurs enum réservées&#39;
 

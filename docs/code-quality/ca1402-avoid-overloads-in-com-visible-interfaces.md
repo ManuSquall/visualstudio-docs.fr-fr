@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1617ad2d5132f22da3c25565e6310977b286eaef
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234861"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444328"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402 : Éviter les surcharges dans les interfaces COM visibles
 
@@ -56,7 +56,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 Visual Basic 6 clients COM ne peuvent pas implémenter de méthodes d’interface à l’aide d’un trait de soulignement dans le nom.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, renommez les méthodes surchargées afin que les noms soient uniques. Vous pouvez également rendre l’interface invisible pour com en modifiant l’accessibilité à `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ou en appliquant <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> l’attribut défini `false`sur.
+Pour corriger une violation de cette règle, renommez les méthodes surchargées afin que les noms soient uniques. Vous pouvez également rendre l’interface invisible pour COM en remplaçant l’accessibilité par `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ou en appliquant l’attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
@@ -68,11 +68,11 @@ L’exemple suivant montre une interface qui enfreint la règle et une interface
 [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1413 Éviter les champs non publics dans les types valeur visibles par COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413 : Évitez les champs non publics dans les types valeur visibles par COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-[CA1407 Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+[CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017 Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

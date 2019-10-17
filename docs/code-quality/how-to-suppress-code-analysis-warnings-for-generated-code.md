@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 54b33eb92cec82a5a0327bac92f2a8909519784d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551135"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448903"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procédure : Supprimer les avertissements d’analyse du code pour le code généré
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Comment : supprimer des avertissements d’analyse du code pour du code généré
 
 Le code généré comprend du code qui est ajouté à votre projet par des compilateurs de code managé ou des outils tiers. Vous pouvez consulter les violations de règle découvertes par l’analyse du code dans le code généré. Toutefois, étant donné que vous ne pouvez pas afficher et gérer le code qui contient les violations, vous ne voudrez peut-être pas les afficher.
 

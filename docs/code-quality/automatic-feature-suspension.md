@@ -12,58 +12,58 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b79588ea3ad67d717066535392b6789e2c0d1ae
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571527"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448650"
 ---
 # <a name="automatic-feature-suspension"></a>Suspension automatique de fonctionnalités
 
-Si votre mémoire système disponible est inférieure ou égale à 200 Mo, Visual Studio affiche le message suivant dans l’éditeur de code :
+Si la mémoire système disponible tombe à 200 Mo ou moins, Visual Studio affiche le message suivant dans l’éditeur de code :
 
-![Texte de l’alerte la suspension de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)
+![Texte d’alerte interruption de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)
 
-Lorsque Visual Studio détecte une condition de mémoire insuffisante, il suspend automatiquement certaines fonctionnalités avancées pour l’aider à rester stable. Visual Studio continue à fonctionner comme avant, mais ses performances sont dégradées.
+Lorsque Visual Studio détecte une condition de mémoire insuffisante, il suspend automatiquement certaines fonctionnalités avancées pour l’aider à rester stable. Visual Studio continue de fonctionner comme avant, mais ses performances sont détériorées.
 
 Dans une condition de mémoire insuffisante, les actions suivantes se produisent :
 
-- Analyse de la solution complète pour Visual C# et Visual Basic est désactivée.
+- L’analyse complète de la C# solution pour Visual et Visual Basic est désactivée.
 
-- [Le Garbage Collection](/dotnet/standard/garbage-collection/index) mode de faible latence (GC) pour Visual C# et Visual Basic est désactivée.
+- Le mode de latence faible de [garbage collection](/dotnet/standard/garbage-collection/index) (GC) pour C# Visual et Visual Basic est désactivé.
 
-- Visual Studio caches soient vidés le.
+- Les caches Visual Studio sont vidés.
 
 ## <a name="improve-visual-studio-performance"></a>Améliorer les performances de Visual Studio
 
-Pour des conseils et astuces sur la façon d’améliorer les performances de Visual Studio lorsque vous traitez des solutions de grande taille ou de conditions de mémoire insuffisante, consultez [considérations sur les performances pour les solutions volumineuses](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Pour obtenir des conseils et des astuces sur la façon d’améliorer les performances de Visual Studio quand vous travaillez avec des solutions volumineuses ou des conditions de mémoire insuffisante, consultez [Considérations sur les performances pour les grandes solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Analyse complète de la solution suspendu
+## <a name="full-solution-analysis-suspended"></a>Analyse complète de la solution suspendue
 
-Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual C#. Toutefois, dans une condition de mémoire insuffisante, analyse complète de la solution est automatiquement désactivé pour Visual Basic et Visual C#, quels que soient leurs paramètres dans la boîte de dialogue Options. Toutefois, vous pouvez réactiver l’analyse complète de la solution en choisissant le **réactiver** bouton dans les informations de la barre quand il s’affiche, en sélectionnant le **activer l’analyse complète de la solution** case à cocher dans la boîte de dialogue Options, ou en le redémarrage de Visual Studio. Paramètres d’analyse, la boîte de dialogue Options affiche toujours la solution complète en cours. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse complète de la Solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Par défaut, l’analyse complète de la solution est activée pour Visual Basic et C#désactivée pour Visual. Toutefois, dans une condition de mémoire insuffisante, l’analyse complète de la solution est automatiquement C#désactivée pour Visual Basic et visuel, quels que soient les paramètres de la boîte de dialogue Options. Toutefois, vous pouvez réactiver l’analyse complète de la solution en choisissant le bouton **réactiver** dans la barre d’informations quand elle apparaît, en activant la case à cocher **activer l’analyse complète** de la solution dans la boîte de dialogue Options ou en redémarrant Visual Studio. La boîte de dialogue Options affiche toujours les paramètres d’analyse complète de la solution en cours. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse complète de la solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
-## <a name="gc-low-latency-disabled"></a>GC à faible latence désactivée
+## <a name="gc-low-latency-disabled"></a>Faible latence GC désactivée
 
-Pour réactiver le mode de faible latence GC, redémarrez Visual Studio. Par défaut, Visual Studio active le mode de faible latence GC chaque fois que vous tapez pour vous assurer que votre frappe ne bloque pas les opérations de GC. Toutefois, si une condition de mémoire insuffisante entraîne Visual Studio afficher l’avertissement de suspension automatique, mode de faible latence GC est désactivé pour cette session. Le redémarrage de Visual Studio active de nouveau le comportement de catalogue global par défaut. Pour plus d'informations, consultez <xref:System.Runtime.GCLatencyMode>.
+Pour réactiver le mode de faible latence GC, redémarrez Visual Studio. Par défaut, Visual Studio active le mode de faible latence GC chaque fois que vous tapez pour vous assurer que votre saisie ne bloque pas les opérations GC. Toutefois, si une condition de mémoire insuffisante entraîne l’affichage de l’avertissement de suspension automatique par Visual Studio, le mode de latence faible GC est désactivé pour cette session. Le redémarrage de Visual Studio réactive le comportement de GC par défaut. Pour plus d'informations, consultez <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Caches de Visual Studio vidés
+## <a name="visual-studio-caches-flushed"></a>Caches Visual Studio vidés
 
-Si vous continuez votre session en cours de développement ou redémarrez Visual Studio, tous les caches de Visual Studio sont vidées immédiatement, mais commencent à remplir à nouveau. Les caches vidées incluent des caches pour les fonctionnalités suivantes :
+Si vous continuez votre session de développement actuelle ou si vous redémarrez Visual Studio, tous les caches Visual Studio sont immédiatement vidés, mais ils commencent à être remplis. Les caches vidés incluent des caches pour les fonctionnalités suivantes :
 
 - Rechercher toutes les références
 
 - Boîte de dialogue Naviguer vers
 
-- Ajouter à l’aide de
+- Ajouter using
 
-En outre, les caches utilisés pour les opérations internes de Visual Studio sont également désactivées.
+En outre, les caches utilisés pour les opérations internes de Visual Studio sont également effacés.
 
 > [!NOTE]
-> L’avertissement de suspension de fonctionnalité automatique se produit qu’une seule fois sur une base par solution, pas sur une base par session. Cela signifie que si vous basculez à partir de Visual Basic vers Visual C# (ou vice versa) et que vous rencontrez une autre condition de mémoire insuffisante, vous pouvez éventuellement obtenir un autre avertissement de suspension de fonctionnalité automatique.
+> L’avertissement de suspension automatique des fonctionnalités ne se produit qu’une seule fois par solution, et non par session. Cela signifie que si vous passez de Visual Basic à visuel C# (ou vice versa) et que vous exécutez dans une autre condition de mémoire insuffisante, vous pouvez éventuellement recevoir un autre avertissement de suspension automatique de fonctionnalité.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Activer et désactiver l’analyse complète de la Solution](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Guide pratique pour activer et désactiver l’analyse de solution complète](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Principes de base du Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)
-- [Considérations relatives aux performances pour les solutions volumineuses](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Considérations sur les performances pour les grandes solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

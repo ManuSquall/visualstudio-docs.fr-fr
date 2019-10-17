@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 9f206ceb088683be4e0f66b27d8b4e9960a3543a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548026"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448757"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser des ensembles de règles pour regrouper des règles d’analyse du code
 
@@ -30,7 +30,7 @@ Les ensembles de règles sont disponibles pour l’analyse du [code managé](ana
 
 Un ensemble de règles est spécifié au format XML dans un fichier *. RuleSet* . Les règles, qui consistent en un ID et une *action*, sont regroupées par ID et espace de noms de l’analyseur dans le fichier.
 
-Le contenu d’un fichier *. RuleSet* ressemble à ce code XML:
+Le contenu d’un fichier *. RuleSet* ressemble à ce code XML :
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -58,7 +58,7 @@ Le contenu d’un fichier *. RuleSet* ressemble à ce code XML:
 
 ## <a name="specify-a-rule-set-for-a-project"></a>Spécifier un ensemble de règles pour un projet
 
-L’ensemble de règles d’un projet est spécifié par la propriété **CodeAnalysisRuleSet** dans le fichier projet Visual Studio. Par exemple :
+L’ensemble de règles d’un projet est spécifié par la propriété **CodeAnalysisRuleSet** dans le fichier projet Visual Studio. Exemple :
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

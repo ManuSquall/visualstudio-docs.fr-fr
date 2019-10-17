@@ -1,5 +1,5 @@
 ---
-title: 'CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte'
+title: 'CA1701: La casse des mots composés de chaînes de ressources doit être correcte'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c5d7aa3c29ca8ba82f6c50b070c5210cf10d1884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234363"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443929"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: La casse des mots composés de chaînes de ressources doit être correcte
 
 |||
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ Une chaîne de ressource contient un mot composé qui ne semble pas avoir une ca
 
 Chaque mot de la chaîne de ressource est fractionné en jetons basés sur la casse. Chaque combinaison de deux jetons contiguë est vérifiée par la bibliothèque du correcteur orthographique Microsoft. S'il est reconnu, le mot produit une violation de la règle. Les exemples de mots composés qui provoquent une violation sont « CheckSum » et « multipart », qui doivent respecter la casse « checksum » et « multipart », respectivement. En raison de l’utilisation courante précédente, plusieurs exceptions sont intégrées à la règle, et plusieurs mots uniques sont signalés, tels que « Toolbar » et « filename », qui doivent respecter la casse de deux mots distincts. Dans cet exemple, « ToolBar » et « FileName » sont signalés.
 
-Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -58,13 +58,13 @@ Par défaut, la version anglaise (en) du vérificateur d’orthographe est utili
 
 Il est possible de supprimer sans risque un avertissement de cette règle si les deux parties du mot composé sont reconnues par le dictionnaire d’orthographe et si l’objectif est d’utiliser deux mots.
 
-Vous pouvez également ajouter des mots composés à un dictionnaire personnalisé pour le vérificateur d’orthographe. Les mots du dictionnaire personnalisé ne provoquent pas de violations. Pour plus d'informations, voir [Procédure : Personnaliser le dictionnaire](../code-quality/how-to-customize-the-code-analysis-dictionary.md)d’analyse du code.
+Vous pouvez également ajouter des mots composés à un dictionnaire personnalisé pour le vérificateur d’orthographe. Les mots du dictionnaire personnalisé ne provoquent pas de violations. Pour plus d’informations, consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1702 La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709 La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Les identificateurs ne doivent pas différer uniquement par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Voir aussi
 

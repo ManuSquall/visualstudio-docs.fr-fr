@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b4440a922c1971f02937f6da007da6aa96864
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 5229084f34a8c2a674d327ad86f7f3d2bbb1aae5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349656"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449184"
 ---
 # <a name="design-warnings"></a>Avertissements liés à la conception
 

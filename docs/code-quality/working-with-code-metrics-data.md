@@ -13,100 +13,100 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 126360a5cbc39653405d83362ae150edba401fb8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825069"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448692"
 ---
-# <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre Résultats des métriques de Code
+# <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre résultats de la métrique du code
 
-Le **résultats de la métrique Code** fenêtre affiche les données qui sont générées par l’analyse de métriques de code. Pour plus d’informations sur les valeurs de données de métriques de code, consultez [les valeurs de métriques de Code](../code-quality/code-metrics-values.md).
+La fenêtre résultats de la **métrique du code** affiche les données générées par l’analyse de la métrique du code. Pour plus d’informations sur les valeurs de données de métrique du code, consultez valeurs de la [métrique du code](../code-quality/code-metrics-values.md).
 
-## <a name="display-code-metrics-results"></a>Afficher les résultats de métriques de code
+## <a name="display-code-metrics-results"></a>Afficher les résultats de la métrique du code
 
-Le **résultats de la métrique Code** fenêtre s’affiche automatiquement lorsque vous générez des résultats des métriques de code. Vous pouvez également afficher la fenêtre à tout moment.
+La fenêtre résultats de la **métrique du code** s’affiche automatiquement lorsque vous générez des résultats de métriques du code. Vous pouvez également afficher la fenêtre à tout moment.
 
-Vous pouvez afficher la fenêtre des résultats des métriques de Code à l’aide d’une des séquences de menu suivantes :
+Vous pouvez afficher la fenêtre résultats de la métrique du code à l’aide de l’une des séquences de menu suivantes :
 
-- Sur le **analyser** menu, choisissez **Windows** > **résultats de la métrique Code**.
+- Dans le menu **analyser** , choisissez **Windows** > **résultats**de la métrique du code.
 
-- Sur le **vue** menu, choisissez **Windows autres** > **résultats de la métrique Code**.
+- Dans le menu **affichage** , choisissez **autres**résultats de la**métrique du code**Windows  > .
 
-Le **résultats de la métrique Code** fenêtre s’ouvre, même si elle ne contient aucun résultat.
+La fenêtre résultats de la **métrique du code** s’ouvre, même si elle ne contient aucun résultat.
 
-### <a name="to-view-code-metrics-details"></a>Pour afficher les détails des métriques de code
+### <a name="to-view-code-metrics-details"></a>Pour afficher les détails de la métrique du code
 
-Si les résultats de la métrique code ont été générés, développez l’arborescence dans le **hiérarchie** colonne.
+Si les résultats de la métrique du code ont été générés, développez l’arborescence dans la colonne **hiérarchie** .
 
-## <a name="filter-code-metrics-results"></a>Filtrer les résultats de métriques de code
+## <a name="filter-code-metrics-results"></a>Filtrer les résultats de la métrique du code
 
-Vous pouvez filtrer les résultats sont affichés dans le **résultats de la métrique Code** fenêtre à l’aide de la barre d’outils en haut. Par exemple, vous souhaiterez peut-être consulter uniquement les résultats qui ont un indice de maintenabilité inférieur à 65.
+Vous pouvez filtrer les résultats affichés dans la fenêtre résultats de la **métrique du code** à l’aide de la barre d’outils située en haut. Par exemple, vous souhaiterez peut-être afficher uniquement les résultats qui ont un index de maintenabilité inférieur à 65.
 
-Le **filtre** zone de liste déroulante contient les noms des colonnes de résultats. Lorsqu’un filtre est défini, il est ajouté au bas de la liste avec une mise en retrait. La liste peut contenir les 10 derniers filtres qui ont été définis.
+La zone de liste déroulante **filtre** contient les noms des colonnes de résultats. Lorsqu’un filtre est défini, il est ajouté en bas de la liste avec une mise en retrait. La liste peut contenir les 10 derniers filtres qui ont été définis.
 
 ### <a name="to-filter-the-code-metrics-results"></a>Pour filtrer les résultats de la métrique du code
 
-1. À partir de la **filtre** , sélectionnez le nom de colonne.
+1. Dans la liste **filtre** , sélectionnez le nom de la colonne.
 
-2. Dans **Min**, tapez la valeur minimale à afficher.
+2. Dans **min**, tapez la valeur minimale à afficher.
 
 3. Dans **Max**, tapez la valeur maximale à afficher.
 
-4. Cliquez sur le **appliquer un filtre** bouton.
+4. Cliquez sur le bouton **appliquer le filtre** .
 
-5. Pour afficher les détails des résultats, développez l’arborescence hiérarchique.
+5. Pour afficher les détails du résultat, développez l’arborescence de la hiérarchie.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Ajouter, supprimer et réorganiser des colonnes de données
 
-Vous pouvez ajouter ou supprimer les colonnes de résultats le **résultats de la métrique Code** fenêtre. En outre, vous pouvez réorganiser les colonnes de résultats afin qu’ils apparaissent dans l’ordre que vous souhaitez.
+Vous pouvez ajouter ou supprimer des colonnes de résultats dans la fenêtre résultats de la **métrique du code** . En outre, vous pouvez réorganiser les colonnes de résultats afin qu’elles s’affichent dans l’ordre de votre choix.
 
 ### <a name="add-or-remove-a-column"></a>Ajouter ou supprimer une colonne
 
-1. Cliquez sur le **Ajout/Suppression de colonnes** bouton, ou avec le bouton droit n’importe quel en-tête de colonne, puis cliquez **Ajout/Suppression de colonnes**.
+1. Cliquez sur le bouton **Ajouter/supprimer des colonnes** , ou cliquez avec le bouton droit sur n’importe quel en-tête de colonne, puis cliquez sur **Ajouter/supprimer des colonnes**.
 
-1. Dans le **Ajout/Suppression de colonnes** boîte de dialogue, activez ou désactivez la case à cocher pour la colonne que vous souhaitez ajouter ou supprimer, puis choisissez **OK**.
+1. Dans la boîte de dialogue **Ajouter/supprimer des colonnes** , activez ou désactivez la case à cocher de la colonne que vous souhaitez ajouter ou supprimer, puis choisissez **OK**.
 
 ### <a name="rearrange-columns"></a>Réorganiser les colonnes
 
-1. Cliquez sur le **Ajout/Suppression de colonnes** bouton.
+1. Cliquez sur le bouton **Ajouter/supprimer des colonnes** .
 
-1. Dans le **Ajout/Suppression de colonnes** boîte de dialogue, sélectionnez la colonne que vous souhaitez déplacer, puis choisissez la flèche vers le haut ou la flèche vers le bas.
+1. Dans la boîte de dialogue **Ajout/suppression de colonnes** , sélectionnez la colonne que vous souhaitez déplacer, puis cliquez sur la flèche haut ou la flèche vers le bas.
 
-1. Lorsque la colonne est positionnée où vous le souhaitez, choisissez **OK**.
+1. Lorsque la colonne est positionnée à l’emplacement de votre choix, cliquez sur **OK**.
 
-## <a name="copy-data-to-the-clipboard-or-excel"></a>Copier des données vers le Presse-papiers, ou Excel
+## <a name="copy-data-to-the-clipboard-or-excel"></a>Copier des données dans le presse-papiers ou Excel
 
-Vous pouvez sélectionner et copier une ligne sélectionnée de données de métrique du code dans le Presse-papiers en tant que chaîne de texte qui contient une ligne pour le nom et la valeur de chaque colonne de données. Vous pouvez également cliquer sur **ouvrir la sélection dans Microsoft Excel** pour exporter tous les résultats de métriques de code vers une feuille de calcul Excel.
+Vous pouvez sélectionner et copier une ligne sélectionnée de données de métriques du code dans le presse-papiers sous la forme d’une chaîne de texte qui contient une ligne pour le nom et la valeur de chaque colonne de données. Vous pouvez également cliquer sur **ouvrir la sélection dans Microsoft Excel** pour exporter tous les résultats de la métrique du code dans une feuille de calcul Excel.
 
-## <a name="create-a-work-item-based-on-code-metric-results"></a>Créer un élément de travail selon les résultats de métrique du code
+## <a name="create-a-work-item-based-on-code-metric-results"></a>Créer un élément de travail en fonction des résultats de la métrique du code
 
-Vous pouvez créer un [Azure tableaux](/azure/devops/boards/index?view=vsts) élément de travail qui est basée sur des résultats dans le **Code Metric Results** fenêtre. Lorsque l’élément de travail est créé, Visual Studio insère automatiquement un titre dans le **titre** données de métrique du code et de champ sous la **historique** onglet.
+Vous pouvez créer un élément de travail [Azure Boards](/azure/devops/boards/index?view=vsts) basé sur les résultats dans la fenêtre résultats de la **métrique du code** . Lorsque l’élément de travail est créé, Visual Studio entre automatiquement un titre dans le champ **titre** et les données de métrique du code sous l’onglet **historique** .
 
-Pour plus d’informations sur les forums Azure des éléments de travail, consultez [des éléments de travail](/azure/devops/boards/work-items/index?view=vsts).
+Pour plus d’informations sur Azure Boards éléments de travail, consultez [éléments de travail](/azure/devops/boards/work-items/index?view=vsts).
 
-### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail basé sur un résultat
+### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail en fonction d’un résultat
 
-1. Cliquez sur le résultat.
+1. Cliquez avec le bouton droit sur le résultat.
 
-2. Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail à créer (**bogue**, **tâche**, et ainsi de suite).
+2. Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail que vous souhaitez créer (**bogue**, **tâche**, etc.).
 
-3. Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
+3. Complétez le formulaire d’élément de travail en remplissant tous les champs obligatoires.
 
-4. Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
+4. Dans le menu **fichier** , cliquez sur **enregistrer tout** pour enregistrer l’élément de travail.
 
-### <a name="to-create-a-bug-based-on-a-result"></a>Pour créer un bogue basé sur un résultat
+### <a name="to-create-a-bug-based-on-a-result"></a>Pour créer un bogue en fonction d’un résultat
 
 1. Cliquez sur le résultat pour le sélectionner.
 
-2. Cliquez sur le **créer un élément de travail** bouton.
+2. Cliquez sur le bouton **créer un élément de travail** .
 
-3. Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
+3. Complétez le formulaire d’élément de travail en remplissant tous les champs obligatoires.
 
-4. Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
+4. Dans le menu **fichier** , cliquez sur **enregistrer tout** pour enregistrer l’élément de travail.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Valeurs de métriques de code](../code-quality/code-metrics-values.md)
-- [Guide pratique pour Générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)
+- [Valeurs de la métrique du code](../code-quality/code-metrics-values.md)
+- [Comment : générer des données de métriques du code](../code-quality/how-to-generate-code-metrics-data.md)

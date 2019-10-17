@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b39e16b2a94a22582b9f369e647676541fa4220d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234755"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440170"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411 : Les méthodes d'inscription COM ne doivent pas être visibles
 
@@ -35,13 +35,13 @@ ms.locfileid: "71234755"
 
 ## <a name="cause"></a>Cause
 
-Une méthode marquée avec l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribut ou est visible de l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> extérieur.
+Une méthode marquée avec le <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou l’attribut <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> est visible de l’extérieur.
 
 ## <a name="rule-description"></a>Description de la règle
-Lorsqu’un assembly est inscrit auprès du modèle COM (Component Object Model), les entrées sont ajoutées au registre pour chaque type visible par COM dans l’assembly. Les méthodes marquées avec les <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributs <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> et sont appelées au cours des processus d’inscription et d’annulation de l’inscription, respectivement, pour exécuter le code utilisateur qui est spécifique à l’inscription/annulation de l’inscription de ces types. Ce code ne doit pas être appelé en dehors de ces processus.
+Lorsqu’un assembly est inscrit auprès du modèle COM (Component Object Model), les entrées sont ajoutées au registre pour chaque type visible par COM dans l’assembly. Les méthodes marquées avec les attributs <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> et <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> sont appelées au cours des processus d’inscription et d’annulation de l’inscription, respectivement, pour exécuter le code utilisateur qui est spécifique à l’inscription/annulation de l’inscription de ces types. Ce code ne doit pas être appelé en dehors de ces processus.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, modifiez l’accessibilité de la méthode en `private` ou `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Pour corriger une violation de cette règle, remplacez l’accessibilité de la méthode par `private` ou `internal` (`Friend` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Ne supprimez aucun avertissement de cette règle.
@@ -53,7 +53,7 @@ L’exemple suivant montre deux méthodes qui violent la règle.
 [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
-[CA1410 Les méthodes d’inscription COM doivent être mises en correspondance](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410 : Les méthodes d’inscription COM doivent être mises en correspondance](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Voir aussi
 

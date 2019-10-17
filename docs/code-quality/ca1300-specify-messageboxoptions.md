@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4403b1f565698ae170bbccf152d5866250c0f114
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235195"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444445"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300 : Spécifier MessageBoxOptions
 
@@ -35,15 +35,15 @@ ms.locfileid: "71235195"
 
 ## <a name="cause"></a>Cause
 
-Une méthode appelle une surcharge de la <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> méthode qui ne <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> prend pas d’argument.
+Une méthode appelle une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> qui ne prend pas d’argument <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Pour afficher correctement une boîte de message pour les cultures qui utilisent un ordre de lecture de droite à gauche, transmettez les champs [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) et [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) à la <xref:System.Windows.Forms.MessageBox.Show%2A> méthode. Examinez <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> la propriété du contrôle conteneur pour déterminer s’il faut utiliser un ordre de lecture de droite à gauche.
+Pour afficher correctement une boîte de message pour les cultures qui utilisent un ordre de lecture de droite à gauche, transmettez les champs [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) et [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) à la méthode <xref:System.Windows.Forms.MessageBox.Show%2A>. Examinez la propriété <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> du contrôle conteneur pour déterminer s’il faut utiliser un ordre de lecture de droite à gauche.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, appelez une surcharge de la <xref:System.Windows.Forms.MessageBox.Show%2A> méthode qui prend un <xref:System.Windows.Forms.MessageBoxOptions> argument.
+Pour corriger une violation de cette règle, appelez une surcharge de la méthode <xref:System.Windows.Forms.MessageBox.Show%2A> qui accepte un argument <xref:System.Windows.Forms.MessageBoxOptions>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

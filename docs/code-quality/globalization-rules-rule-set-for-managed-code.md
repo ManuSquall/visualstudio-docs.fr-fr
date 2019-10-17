@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 905f3323f4ede33ba8a7e1547bed7a81c43be96d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584981"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449029"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de globalisation pour le code managé
 
@@ -31,4 +31,4 @@ Utilisez l’ensemble de règles des règles de globalisation Microsoft pour vou
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|Spécifier StringComparison|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normaliser les chaînes en majuscules|
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Utiliser StringComparison avec la valeur Ordinal|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Spécifiez le marshaling pour les arguments de chaîne P/Invoke|
+|[CA2101](../code-quality/ca2101.md)|Spécifiez le marshaling pour les arguments de chaîne P/Invoke|

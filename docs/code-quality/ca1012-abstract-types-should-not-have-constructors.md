@@ -1,5 +1,5 @@
 ---
-title: 'CA1012 : Les types abstract ne doivent pas avoir de constructeurs'
+title: 'CA1012 : Les types abstraits ne doivent pas avoir de constructeurs'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -16,20 +16,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef4bff83b1921b3cf15b25aaf225645379478f38
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6ba7a88e2167f5e67eb5cefe706bfc2cf1abfccd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236350"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441652"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012 : Les types abstract ne doivent pas avoir de constructeurs
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012 : Les types abstraits ne doivent pas avoir de constructeurs
 
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -67,7 +67,7 @@ L’extrait de code suivant contient un type abstrait qui ne respecte pas cette 
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-L’extrait de code suivant résout la violation précédente en modifiant l’accessibilité du constructeur `public` de `protected`à.
+L’extrait de code suivant résout la violation précédente en modifiant l’accessibilité du constructeur de `public` à `protected`.
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

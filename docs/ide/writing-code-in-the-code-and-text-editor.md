@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095284"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380972"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
-L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez encore jamais utilisé l’éditeur de Visual Studio, consultez [Éditer votre code](https://visualstudio.microsoft.com/vs/features/ide/) pour obtenir une vue d’ensemble rapide.
+L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez jamais utilisé l’éditeur Visual Studio, consultez [apprendre à utiliser l’éditeur de code](../get-started/tutorial-editor.md).
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Éditeur de code Source (Visual Studio pour Mac)](/visualstudio/mac/source-editor).
@@ -56,15 +56,15 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 |Mettre la sélection en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans la sélection.|
 |Remplacer les espaces par des tabulations|Remplace les espaces à gauche par des tabulations le cas échéant.|
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|
-|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**Maj**+**U**.|
+|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**Shift**+**U**.|
 |Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**U**.|
-|Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Flèche Haut**.|
-|Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Flèche Bas**.|
-|Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+ **\\**|
+|Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Haut**.|
+|Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Bas**.|
+|Supprimer les espaces blancs horizontaux|Supprime les tabulations et les espaces à la fin de la ligne active. Raccourci : **ctrl**+**K**, **CTRL**+ **\\**|
 |Afficher les espaces blancs|Affiche les espaces sous forme de points et les tabulations sous forme de flèches. La fin d’un fichier est indiquée par un glyphe rectangulaire. Si l’option **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **Retour automatique à la ligne** > **Afficher des glyphes visuels pour le retour automatique à la ligne** est sélectionnée, ce glyphe s’affiche également.|
 |Retour automatique à la ligne|Rend visibles toutes les lignes d’un document dans la fenêtre de code. Vous pouvez activer et désactiver cette fonctionnalité dans les paramètres **Éditeur de texte – Tous les langages** (**Outils** > **Options** > **Éditeur de texte** > **Tous les langages**).|
-|Commenter la sélection|Ajoute des caractères de commentaire à la sélection ou à la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+**C**|
-|Annuler le commentaire de la sélection|Supprime les caractères de commentaire de la sélection ou de la ligne active. Raccourci : **Ctrl**+**K**, **Ctrl**+**U**|
+|Commenter la sélection|Ajoute des caractères de commentaire à la sélection ou à la ligne active. Raccourci : **ctrl**+**K**, **CTRL**+**C**|
+|Annuler le commentaire de la sélection|Supprime les caractères de commentaire de la sélection ou de la ligne active. Raccourci : **ctrl**+**K**, **CTRL**+**U**|
 |Augmenter le retrait de ligne|Ajoute une tabulation (ou les espaces équivalents) aux lignes sélectionnées ou à la ligne active.|
 |Réduire le retrait de ligne|Supprime une tabulation (ou les espaces équivalents) des lignes sélectionnées ou de la ligne active.|
 |Sélectionner la balise|Dans un document qui contient des balises (par exemple, XML ou HTML), sélectionne la balise.|

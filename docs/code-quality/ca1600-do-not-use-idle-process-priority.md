@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2075918672452e222ba4becae915712ba20ff0d0
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234379"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440016"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
 
@@ -27,17 +27,17 @@ ms.locfileid: "71234379"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Category|Microsoft.Mobility|
+|Category|Microsoft. Mobility|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Cette règle se produit lorsque les processus ont `ProcessPriorityClass.Idle`la valeur.
+Cette règle se produit lorsque les processus sont définis sur `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Description de la règle
-N'affectez pas la valeur Idle à la priorité de processus. Les processus qui `System.Diagnostics.ProcessPriorityClass.Idle` ont l’occuperont le processeur lorsque celui-ci serait inactif et bloquera donc la mise en veille.
+N'affectez pas la valeur Idle à la priorité de processus. Les processus qui ont `System.Diagnostics.ProcessPriorityClass.Idle` occuperont le processeur lorsque celui-ci serait inactif, et bloquera donc la mise en veille.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Affectez à `ProcessPriorityClass.BelowNormal`processus la valeur.
+Définissez les processus sur `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Cette règle doit être supprimée uniquement lorsque la priorité du processus inactif est requise et que les considérations relatives à la mobilité peuvent être ignorées en toute sécurité.

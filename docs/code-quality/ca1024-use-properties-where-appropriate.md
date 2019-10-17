@@ -1,5 +1,5 @@
 ---
-title: 'CA1024 : Utiliser les propriétés lorsque cela est approprié'
+title: 'CA1024 : Utiliser les propriétés lorsque cela est approprié'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ba4a7a16675bf6da0aa465a515b73c907aa80ac
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236160"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449297"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024 : Utiliser les propriétés lorsque cela est approprié
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -85,7 +85,7 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 L’une des raisons pour lesquelles les programmeurs évitent d’utiliser une propriété est parce qu’ils ne souhaitent pas que le débogueur le développe. Par exemple, la propriété peut impliquer l’allocation d’un objet volumineux ou l’appel d’un P/Invoke, mais elle peut ne pas avoir d’effets secondaires observables.
 
-Vous pouvez empêcher le débogueur d’étendre de façon autodéveloppant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>les propriétés en appliquant. L’exemple suivant montre que cet attribut est appliqué à une propriété d’instance.
+Vous pouvez empêcher le débogueur d’étendre de façon autodéveloppant les propriétés en appliquant <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. L’exemple suivant montre que cet attribut est appliqué à une propriété d’instance.
 
 ```vb
 Imports System

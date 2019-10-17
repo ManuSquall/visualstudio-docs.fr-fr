@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0fd4ba8d5dd5568dc7fca50ed61739b490bdcba7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235299"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440604"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 
@@ -29,42 +29,42 @@ ms.locfileid: "71235299"
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-L' <xref:System.IDisposable?displayProperty=nameWithType> interface n’est pas implémentée correctement. Les raisons possibles sont les suivantes :
+L’interface <xref:System.IDisposable?displayProperty=nameWithType> n’est pas implémentée correctement. Les raisons possibles sont les suivantes :
 
-- <xref:System.IDisposable>est réimplémentée dans la classe.
+- <xref:System.IDisposable> est réimplémentée dans la classe.
 
-- `Finalize`est de nouveau remplacé.
+- `Finalize` est de nouveau remplacé.
 
-- `Dispose()`est substitué.
+- `Dispose()` est substitué.
 
-- La `Dispose()` méthode n’est pas publique, [sealed](/dotnet/csharp/language-reference/keywords/sealed)ou **dispose**nommée.
+- La méthode `Dispose()` n’est pas publique, [sealed](/dotnet/csharp/language-reference/keywords/sealed)ou **dispose**nommée.
 
-- `Dispose(bool)`n’est pas protégé, virtuel ou non scellé.
+- `Dispose(bool)` n’est pas protégé, virtuel ou non scellé.
 
-- Dans les types non scellés `Dispose()` , doit `Dispose(true)`appeler.
+- Dans les types non scellés, `Dispose()` doit appeler `Dispose(true)`.
 
-- Pour les types non scellés, `Finalize` l’implémentation n’appelle pas ou les `Dispose(bool)` deux ou le finaliseur de la classe de base.
+- Pour les types non scellés, l’implémentation de `Finalize` n’appelle pas l’une ou les deux `Dispose(bool)` ou le finaliseur de la classe de base.
 
 La violation de l’un de ces modèles déclenche l’avertissement CA1063.
 
-Chaque type non scellé qui déclare et implémente l' <xref:System.IDisposable> interface doit fournir sa propre `protected virtual void Dispose(bool)` méthode. `Dispose()`doit appeler `Dispose(true)`et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type non scellé qui déclare et implémente l’interface, <xref:System.IDisposable> vous devez le définir `Dispose(bool)` et l’appeler. Pour plus d’informations, consultez [nettoyer les ressources non managées (Guide .net)](/dotnet/standard/garbage-collection/unmanaged) et [supprimer le modèle](/dotnet/standard/design-guidelines/dispose-pattern).
+Chaque type non scellé qui déclare et implémente l’interface <xref:System.IDisposable> doit fournir sa propre méthode `protected virtual void Dispose(bool)`. `Dispose()` doit appeler `Dispose(true)`, et le finaliseur doit appeler `Dispose(false)`. Si vous créez un type non scellé qui déclare et implémente l’interface <xref:System.IDisposable>, vous devez définir `Dispose(bool)` et l’appeler. Pour plus d’informations, consultez [nettoyer les ressources non managées (Guide .net)](/dotnet/standard/garbage-collection/unmanaged) et [supprimer le modèle](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Par défaut, cette règle recherche uniquement les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
 ## <a name="rule-description"></a>Description de la règle
 
-Tous <xref:System.IDisposable> les types doivent implémenter le [modèle dispose](/dotnet/standard/design-guidelines/dispose-pattern) correctement.
+Tous les types <xref:System.IDisposable> doivent implémenter le [modèle dispose](/dotnet/standard/design-guidelines/dispose-pattern) correctement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
 Examinez votre code et déterminez laquelle des solutions suivantes corrigera cette violation :
 
-- Supprimez <xref:System.IDisposable> de la liste des interfaces implémentées par votre type et substituez l’implémentation de la classe de base à la place.
+- Supprimez <xref:System.IDisposable> de la liste des interfaces implémentées par votre type, et substituez l’implémentation dispose de la classe de base à la place.
 
 - Supprimez le finaliseur de votre type, substituez Dispose (bool disposing) et placez la logique de finalisation dans le chemin du code où’disposing’a la valeur false.
 
@@ -76,11 +76,11 @@ Examinez votre code et déterminez laquelle des solutions suivantes corrigera ce
 
 - Assurez-vous que dispose (bool) est déclaré comme protégé, virtuel et non scellé.
 
-- Modifiez dispose () afin qu’il appelle Dispose (true), puis appelle <xref:System.GC.SuppressFinalize%2A> sur l’instance d’objet actuelle`this`(ou `Me` dans Visual Basic), puis retourne.
+- Modifiez dispose () afin qu’il appelle Dispose (true), puis appelle <xref:System.GC.SuppressFinalize%2A> sur l’instance d’objet actuelle (`this` ou `Me` dans Visual Basic), puis retourne.
 
 - Modifiez votre finaliseur afin qu’il appelle Dispose (false), puis retourne.
 
-- Si vous créez un type non scellé qui déclare et implémente l' <xref:System.IDisposable> interface, assurez-vous que l’implémentation de <xref:System.IDisposable> suit le modèle décrit plus haut dans cette section.
+- Si vous créez un type non scellé qui déclare et implémente l’interface <xref:System.IDisposable>, assurez-vous que l’implémentation de <xref:System.IDisposable> suit le modèle décrit plus haut dans cette section.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

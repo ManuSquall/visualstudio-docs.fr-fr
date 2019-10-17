@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bc9cd160afa9b882ebb979b6000d2ab277143abe
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236104"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449250"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033 : Les méthodes d'interface doivent pouvoir être appelées par les types enfants
 
@@ -27,16 +27,16 @@ ms.locfileid: "71236104"
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Un type unsealed visible de l'extérieur fournit une implémentation de méthode explicite d'une interface publique mais ne fournit aucune méthode de substitution visible de l'extérieur de même nom.
 
 ## <a name="rule-description"></a>Description de la règle
-Prenons l’exemple d’un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une`this` référence C#à l’instance actuelle (dans) qui est castée en interface. Si le type dérivé réimplémente (explicitement) la méthode d’interface héritée, l’implémentation de base ne peut plus être accédée. L’appel via la référence d’instance actuelle appellera l’implémentation dérivée ; Cela provoque une récurrence et un dépassement de capacité de la pile.
+Prenons l’exemple d’un type de base qui implémente explicitement une méthode d’interface publique. Un type qui dérive du type de base peut accéder à la méthode d’interface héritée uniquement par le biais d’une référence à l’instance C#actuelle (`this` dans) qui est castée en interface. Si le type dérivé réimplémente (explicitement) la méthode d’interface héritée, l’implémentation de base ne peut plus être accédée. L’appel via la référence d’instance actuelle appellera l’implémentation dérivée ; Cela provoque une récurrence et un dépassement de capacité de la pile.
 
-Cette règle ne signale pas de violation pour une implémentation explicite <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> de lorsqu’une méthode ou `Close()` `System.IDisposable.Dispose(Boolean)` une méthode visible de l’extérieur est fournie.
+Cette règle ne signale pas de violation pour une implémentation explicite de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> lorsqu’une méthode `Close()` ou `System.IDisposable.Dispose(Boolean)` visible de l’extérieur est fournie.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, implémentez une nouvelle méthode qui expose les mêmes fonctionnalités et qui est visible pour les types dérivés ou passez à une implémentation non explicite. Si une modification avec rupture est acceptable, une alternative consiste à rendre le type sealed.
@@ -45,7 +45,7 @@ Pour corriger une violation de cette règle, implémentez une nouvelle méthode 
 Il est possible de supprimer sans risque un avertissement de cette règle si une méthode visible de l’extérieur est fournie et a les mêmes fonctionnalités, mais avec un nom différent de celui de la méthode implémentée explicitement.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant illustre un type, `ViolatingBase`, qui enfreint la règle et un type, `FixedBase`, qui affiche un correctif pour la violation.
+L’exemple suivant montre un type, `ViolatingBase`, qui enfreint la règle et un type, `FixedBase`, qui affiche un correctif pour la violation.
 
 [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 

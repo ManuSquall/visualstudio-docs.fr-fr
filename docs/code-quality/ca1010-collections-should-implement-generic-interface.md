@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 066b9d013847f5362ee0dd712002cf8578fb57a6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d3e50fb93e8cdfe6f65fe1b2de1da54b58a6a8c9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236440"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449309"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
 
@@ -27,12 +27,12 @@ ms.locfileid: "71236440"
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 
-Un type implémente l' <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, mais n’implémente <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> pas l’interface, et l’assembly conteneur cible .net. Cette règle ignore les types qui <xref:System.Collections.IDictionary?displayProperty=fullName>implémentent.
+Un type implémente l’interface <xref:System.Collections.IEnumerable?displayProperty=fullName>, mais n’implémente pas l’interface <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>, et l’assembly conteneur cible .NET. Cette règle ignore les types qui implémentent <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 Par défaut, cette règle recherche uniquement les types visibles de l’extérieur, mais elle peut [être configurée](#configurability).
 
@@ -68,18 +68,18 @@ Vous pouvez configurer cette option uniquement pour cette règle, pour toutes le
 
 ## <a name="example-violation"></a>Exemple de violation
 
-L’exemple suivant montre une classe (type référence) qui dérive de la classe non générique `CollectionBase` , qui enfreint cette règle.
+L’exemple suivant montre une classe (type référence) qui dérive de la classe non générique `CollectionBase`, qui viole cette règle.
 
 [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 Pour corriger une violation de cette règle, effectuez l’une des opérations suivantes :
 
 - Implémentez les interfaces génériques.
-- Remplacez la classe de base par un type qui implémente déjà à la fois les interfaces génériques et non génériques, telles `Collection<T>` que la classe.
+- Remplacez la classe de base par un type qui implémente déjà à la fois les interfaces génériques et non génériques, telles que la classe `Collection<T>`.
 
 ## <a name="fix-by-base-class-change"></a>Corriger par modification de la classe de base
 
-L’exemple suivant résout la violation en modifiant la classe de base de la collection de la classe `CollectionBase` non générique à la `Collection<T>` classe`Collection(Of T)` générique (dans Visual Basic).
+L’exemple suivant résout la violation en modifiant la classe de base de la collection de la classe non générique `CollectionBase` à la classe générique `Collection<T>` (`Collection(Of T)` dans Visual Basic).
 
 [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
@@ -87,19 +87,19 @@ La modification de la classe de base d’une classe déjà publiée est considé
 
 ## <a name="fix-by-interface-implementation"></a>Corriger par l’implémentation de l’interface
 
-L’exemple suivant résout la violation en implémentant ces interfaces `IEnumerable<T>`génériques `ICollection<T>`:, `IList<T>` `IList(Of T)` et`IEnumerable(Of T)`( `ICollection(Of T)`, et dans Visual Basic).
+L’exemple suivant résout la violation en implémentant ces interfaces génériques : `IEnumerable<T>`, `ICollection<T>` et `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)` et `IList(Of T)` dans Visual Basic).
 
 [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
 ## <a name="related-rules"></a>Règles associées
 
-- [CA1005 Éviter les paramètres excessifs sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1000 Ne pas déclarer de membres statiques sur des types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA1002 Ne pas exposer les listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006 Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004 Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003 Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007 Utiliser des génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003 : Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007 : Utiliser des méthodes génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
 

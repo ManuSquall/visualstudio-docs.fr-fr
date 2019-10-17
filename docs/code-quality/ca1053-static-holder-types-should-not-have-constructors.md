@@ -1,5 +1,5 @@
 ---
-title: 'CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur'
+title: 'CA1053 : Les types de conteneurs statiques ne doivent pas comporter de constructeur'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f63a5017b5bd3b552882a11d9796af2530dd5634
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235584"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449117"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053 : Les types de conteneurs statiques ne doivent pas avoir de constructeurs par défaut
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>Ca1053 : les types de conteneurs statiques ne doivent pas avoir de constructeurs par défaut
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 > [!NOTE]
-> La règle ca1053 est combinée [dans CA1052 : Les types de conteneurs statiques](ca1052-static-holder-types-should-be-sealed.md) doivent être scellés dans les [analyseurs FxCop](fxcop-analyzers.yml).
+> La règle ca1053 est combinée dans [CA1052 : les types de conteneurs statiques doivent être scellés](ca1052-static-holder-types-should-be-sealed.md) dans les [analyseurs FxCop](fxcop-analyzers.yml).
 
 ## <a name="cause"></a>Cause
 

@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb5fd5c0e68b5dcffc212af03294d94d04d2abe
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 575afd3609da0e8f362408f8a1550303ec03cf3f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236335"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446734"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013 : Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction
 
@@ -34,14 +34,14 @@ ms.locfileid: "71236335"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
 Un type public ou protégé implémente les opérateurs d'addition ou de soustraction sans implémenter l'opérateur d'égalité.
 
 ## <a name="rule-description"></a>Description de la règle
-Lorsque des instances d’un type peuvent être combinées à l’aide d’opérations telles que l’addition et la soustraction, vous devez `true` presque toujours définir l’égalité pour retourner les deux instances qui ont les mêmes valeurs constitutives.
+Lorsque des instances d’un type peuvent être combinées à l’aide d’opérations telles que l’addition et la soustraction, vous devez presque toujours définir l’égalité pour retourner `true` pour deux instances qui ont les mêmes valeurs constitutives.
 
 Vous ne pouvez pas utiliser l’opérateur d’égalité par défaut dans une implémentation surchargée de l’opérateur d’égalité. Cela entraîne un dépassement de capacité de la pile. Pour implémenter l’opérateur d’égalité, utilisez la méthode Object. Equals dans votre implémentation. Lisez l'exemple suivant.
 
@@ -66,7 +66,7 @@ Pour corriger une violation de cette règle, implémentez l’opérateur d’ég
 Il est possible de supprimer sans risque un avertissement de cette règle lorsque l’implémentation par défaut de l’opérateur d’égalité fournit le comportement correct pour le type.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant définit un type (`BadAddableType`) qui enfreint cette règle. Ce type doit implémenter l’opérateur d’égalité pour que deux instances qui ont les mêmes valeurs de `true` champ testent l’égalité. Le type `GoodAddableType` affiche l’implémentation corrigée. Notez que ce type implémente également l’opérateur <xref:System.Object.Equals%2A> d’inégalité et les remplacements pour satisfaire d’autres règles. Une implémentation complète implémenterait <xref:System.Object.GetHashCode%2A>également.
+L’exemple suivant définit un type (`BadAddableType`) qui enfreint cette règle. Ce type doit implémenter l’opérateur d’égalité pour que deux instances ayant les mêmes valeurs de champ testent `true` pour l’égalité. Le type `GoodAddableType` montre l’implémentation corrigée. Notez que ce type implémente également l’opérateur d’inégalité et remplace <xref:System.Object.Equals%2A> pour satisfaire d’autres règles. Une implémentation complète implémenterait également <xref:System.Object.GetHashCode%2A>.
 
 [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
 

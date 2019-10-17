@@ -1,5 +1,5 @@
 ---
-title: 'CA1401 : Les P-Invoke ne doivent pas être visibles'
+title: 'CA1401 : Les P/Invoke ne doivent pas être visibles'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b06aa26b046743b06f8fdd274da7a804a5ec06f6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234895"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440723"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401 : Les P/Invoke ne doivent pas être visibles
 
@@ -34,10 +34,10 @@ ms.locfileid: "71234895"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
-Une méthode publique ou protégée dans un type public a l' <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribut (également implémenté par le `Declare` mot clé [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]dans).
+Une méthode publique ou protégée dans un type public a l’attribut <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> (également implémenté par le mot clé `Declare` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Description de la règle
-Les méthodes marquées avec l' <xref:System.Runtime.InteropServices.DllImportAttribute> attribut (ou les méthodes définies à l’aide du `Declare` mot clé [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]dans) utilisent les services d’appel de code non managé pour accéder au code non managé. De telles méthodes ne doivent pas être exposées. En gardant ces méthodes privées ou internes, vous vous assurez que votre bibliothèque ne peut pas être utilisée pour enfreindre la sécurité en permettant aux appelants d’accéder à des API non managées qu’ils n’ont pas pu appeler autrement.
+Les méthodes marquées avec l’attribut <xref:System.Runtime.InteropServices.DllImportAttribute> (ou les méthodes définies à l’aide du mot clé `Declare` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) utilisent les services d’appel de code non managé pour accéder au code non managé. De telles méthodes ne doivent pas être exposées. En gardant ces méthodes privées ou internes, vous vous assurez que votre bibliothèque ne peut pas être utilisée pour enfreindre la sécurité en permettant aux appelants d’accéder à des API non managées qu’ils n’ont pas pu appeler autrement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 Pour corriger une violation de cette règle, modifiez le niveau d’accès de la méthode.

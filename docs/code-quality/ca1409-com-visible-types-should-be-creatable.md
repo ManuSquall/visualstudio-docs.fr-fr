@@ -1,5 +1,5 @@
 ---
-title: 'CA1409 : Les types visibles par Com doivent pouvoir être créés'
+title: 'CA1409 : Les types visibles par COM doivent pouvoir être créés'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 402ce13b55921045f8e06d99bbe6b1e3918e457a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234763"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440282"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409 : Les types visibles par Com doivent pouvoir être créés
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409 : Les types visibles par COM doivent pouvoir être créés
 
 |||
 |-|-|
@@ -41,13 +41,13 @@ La règle ignore les types dérivés de <xref:System.Delegate?displayProperty=fu
 Par défaut, les éléments suivants sont visibles par COM : assemblys, les types publics, les membres d’instance publics dans les types publics et tous les membres des types valeur publics.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, ajoutez un constructeur public par défaut ou supprimez <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> du type.
+Pour corriger une violation de cette règle, ajoutez un constructeur public par défaut ou supprimez le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> du type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle si d’autres méthodes sont fournies pour créer et passer l’objet au client COM.
 
 ## <a name="related-rules"></a>Règles associées
-[CA1017 Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
 

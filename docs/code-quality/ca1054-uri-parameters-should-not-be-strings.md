@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4efbec200b90614a5d78a4b04b2ebd32588cb5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 79ab405e6019dd93fdb9ffa89b5274f6f3d679e8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349087"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446575"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054 : Les paramètres Uri ne doivent pas être des chaînes
 

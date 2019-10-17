@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eff846cfacb30d97c28cadd14b86f7724b1d2ce4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e5274352a867c4c25c5fc68fd674c1e4c4855c2d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234935"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440614"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309 : Utiliser StringComparison avec la valeur Ordinal
 
@@ -32,15 +32,15 @@ ms.locfileid: "71234935"
 
 ## <a name="cause"></a>Cause
 
-Une opération de comparaison de chaînes non linguistique ne définit pas le <xref:System.StringComparison> paramètre sur **ordinal** ou **OrdinalIgnoreCase**.
+Une opération de comparaison de chaînes non linguistique ne définit pas le paramètre <xref:System.StringComparison> sur **ordinal** ou **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Description de la règle
-De nombreuses opérations de chaînes, surtout les <xref:System.String.Compare%2A?displayProperty=fullName> méthodes <xref:System.String.Equals%2A?displayProperty=fullName> et, fournissent désormais une surcharge qui accepte une <xref:System.StringComparison?displayProperty=fullName> valeur d’énumération en tant que paramètre.
+De nombreuses opérations de chaînes, surtout les méthodes <xref:System.String.Compare%2A?displayProperty=fullName> et <xref:System.String.Equals%2A?displayProperty=fullName>, fournissent désormais une surcharge qui accepte une valeur d’énumération <xref:System.StringComparison?displayProperty=fullName> comme paramètre.
 
 Lorsque vous spécifiez **StringComparison. Ordinal** ou **StringComparison. OrdinalIgnoreCase**, la comparaison de chaînes n’est pas linguistique. Autrement dit, les fonctionnalités spécifiques au langage naturel sont ignorées lorsque des décisions de comparaison sont prises. En ignorant les fonctionnalités de langage naturel, les décisions sont basées sur des comparaisons d’octets simples et non sur la casse ou des tables d’équivalences paramétrables par la culture. Par conséquent, en affectant explicitement au paramètre la valeur **StringComparison. Ordinal** ou **StringComparison. OrdinalIgnoreCase**, votre code gagne souvent en vitesse, augmente l’exactitude et devient plus fiable.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
-Pour corriger une violation de cette règle, remplacez la méthode de comparaison de chaînes par une surcharge qui <xref:System.StringComparison?displayProperty=fullName> accepte l’énumération en tant que paramètre et spécifiez **ordinal** ou **OrdinalIgnoreCase**. Par exemple, remplacez `String.Compare(str1, str2)` par `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Pour corriger une violation de cette règle, remplacez la méthode de comparaison de chaînes par une surcharge qui accepte l’énumération <xref:System.StringComparison?displayProperty=fullName> en tant que paramètre et spécifiez **ordinal** ou **OrdinalIgnoreCase**. Par exemple, remplacez `String.Compare(str1, str2)` par `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 Il est possible de supprimer sans risque un avertissement de cette règle lorsque la bibliothèque ou l’application est destinée à un public local limité ou lorsque la sémantique de la culture actuelle doit être utilisée.
@@ -48,4 +48,4 @@ Il est possible de supprimer sans risque un avertissement de cette règle lorsqu
 ## <a name="see-also"></a>Voir aussi
 
 - [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
-- [CA1307 Spécifier StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+- [CA1307 : Spécifiez StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
