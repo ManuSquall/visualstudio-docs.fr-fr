@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020577cfe692d5d306a555e763d08807ab191074
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450939"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535293"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Résolution des problèmes de rechargement à chaud XAML
 
@@ -46,6 +46,9 @@ Si ces options sont sélectionnées, accédez à l’arborescence d’éléments
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Vérifier que vous utilisez démarrer le débogage plutôt que attacher au processus
 
 Le rechargement à chaud XAML nécessite que la variable d’environnement `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` soit définie sur 1 au moment du démarrage de l’application. Visual Studio définit cela automatiquement dans le cadre de la commande **Debug** > **Démarrer le débogage** (ou **F5**). Si vous souhaitez utiliser le rechargement à chaud XAML avec la commande de **débogage** > **attacher au processus** , définissez la variable d’environnement vous-même.
+
+> [!NOTE]
+> Pour définir une variable d’environnement, recherchez « variable d’environnement », puis choisissez **modifier les variables d’environnement système**. Dans la boîte de dialogue qui s’ouvre, choisissez **variables d’environnement**, ajoutez-la en tant que variable utilisateur et définissez la valeur sur `1`. Pour nettoyer, supprimez la variable lorsque vous avez terminé le débogage.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Vérifier que vos propriétés MSBuild sont correctes
 

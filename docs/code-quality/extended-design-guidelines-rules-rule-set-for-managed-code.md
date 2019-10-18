@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2e3d6b626e12df626903f2c26f93d779288a921
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d37e540df9a480f559e81e650f57ad5bb87d0ddd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449072"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535891"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 
@@ -25,23 +25,23 @@ Le tableau suivant décrit toutes les règles de l’ensemble de règles des rè
 
 |Règle|Description|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Déclarer les gestionnaires d'événements correctement|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Marquer les assemblys avec AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|Les méthodes d'interface doivent pouvoir être appelées par les types enfants|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|Les types qui possèdent des ressources natives doivent être supprimables|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Déplacer les P/Invoke vers une classe NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Ne pas masquer les méthodes de la classe de base|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Implémenter IDisposable correctement|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Ne pas lever d'exceptions dans les emplacements inattendus|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Éviter les accélérateurs en double|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|Des points d'entrée P/Invoke doivent exister|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|Les P/Invoke ne doivent pas être visibles|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|Les types Structurer automatiquement ne doivent pas être visibles par COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Appeler GetLastError immédiatement après P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Les types de base type visibles par COM doivent être visibles par COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Les méthodes d'inscription COM doivent être mises en correspondance|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les méthodes P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
+|[CA1009](../code-quality/ca1009.md)|Déclarer les gestionnaires d'événements correctement|
+|[CA1016](../code-quality/ca1016.md)|Marquer les assemblys avec AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|Les méthodes d'interface doivent pouvoir être appelées par les types enfants|
+|[CA1049](../code-quality/ca1049.md)|Les types qui possèdent des ressources natives doivent être supprimables|
+|[CA1060](../code-quality/ca1060.md)|Déplacer les P/Invoke vers une classe NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Ne pas masquer les méthodes de la classe de base|
+|[CA1063](../code-quality/ca1063.md)|Implémenter IDisposable correctement|
+|[CA1065](../code-quality/ca1065.md)|Ne pas lever d'exceptions dans les emplacements inattendus|
+|[CA1301](../code-quality/ca1301.md)|Éviter les accélérateurs en double|
+|[CA1400](../code-quality/ca1400.md)|Des points d'entrée P/Invoke doivent exister|
+|[CA1401](../code-quality/ca1401.md)|Les P/Invoke ne doivent pas être visibles|
+|[CA1403](../code-quality/ca1403.md)|Les types Structurer automatiquement ne doivent pas être visibles par COM|
+|[CA1404](../code-quality/ca1404.md)|Appeler GetLastError immédiatement après P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|Les types de base type visibles par COM doivent être visibles par COM|
+|[CA1410](../code-quality/ca1410.md)|Les méthodes d'inscription COM doivent être mises en correspondance|
+|[CA1415](../code-quality/ca1415.md)|Déclarer correctement les méthodes P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
 |[CA1900](../code-quality/ca1900.md)|Les champs de type valeur doivent être portables|
 |[CA1901](../code-quality/ca1901.md)|Les déclarations P/Invoke doivent être portables|
@@ -87,57 +87,57 @@ Le tableau suivant décrit toutes les règles de l’ensemble de règles des rè
 |[CA2240](../code-quality/ca2240.md)|Implémentez ISerializable comme il se doit|
 |[CA2241](../code-quality/ca2241.md)|Indiquer le nombre correct d'arguments dans les méthodes de mise en forme|
 |[CA2242](../code-quality/ca2242.md)|Effectuez correctement des tests NaN|
-|[CA1000](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|Ne pas déclarer de membres statiques sur les types génériques|
-|[CA1002](../code-quality/ca1002-do-not-expose-generic-lists.md)|Ne pas exposer de listes génériques|
-|[CA1003](../code-quality/ca1003-use-generic-event-handler-instances.md)|Utiliser les instances du gestionnaire d'événements génériques|
-|[CA1004](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|Les méthodes génériques doivent fournir un paramètre de type|
-|[CA1005](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|Éviter les paramètres excessifs sur les types génériques|
-|[CA1006](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|Ne pas imbriquer les types génériques dans les signatures de membre|
-|[CA1007](../code-quality/ca1007-use-generics-where-appropriate.md)|Utiliser des classes génériques lorsque cela est approprié|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Les enums doivent avoir la valeur zéro|
-|[CA1010](../code-quality/ca1010-collections-should-implement-generic-interface.md)|Les collections doivent implémenter une interface générique|
-|[CA1011](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)|Si possible, transmettez les types de base en tant que paramètres|
-|[CA1012](../code-quality/ca1012-abstract-types-should-not-have-constructors.md)|Les types abstract ne doivent pas avoir de constructeurs|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction|
-|[CA1014](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md)|Marquer les assemblys avec CLSCompliantAttribute|
-|[CA1017](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)|Marquer les assemblys avec ComVisibleAttribute|
-|[CA1018](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)|Marquer les attributs avec AttributeUsageAttribute|
-|[CA1019](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)|Définir des accesseurs pour les arguments d'attribut|
-|[CA1023](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)|Les indexeurs ne doivent pas être multidimensionnels|
-|[CA1024](../code-quality/ca1024-use-properties-where-appropriate.md)|Utiliser les propriétés lorsque cela est approprié|
-|[CA1025](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)|Remplacer les arguments répétitifs par un tableau params|
-|[CA1026](../code-quality/ca1026-default-parameters-should-not-be-used.md)|Les paramètres par défaut ne doivent pas être utilisés|
-|[CA1027](../code-quality/ca1027-mark-enums-with-flagsattribute.md)|Marquer les enums avec FlagsAttribute|
-|[CA1028](../code-quality/ca1028-enum-storage-should-be-int32.md)|Enum Storage doit être Int32|
-|[CA1030](../code-quality/ca1030-use-events-where-appropriate.md)|Utiliser des événements lorsque cela est approprié|
-|[CA1031](../code-quality/ca1031-do-not-catch-general-exception-types.md)|Ne pas intercepter des types d'exception générale|
-|[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|Implémenter des constructeurs d'exception standard|
-|[CA1034](../code-quality/ca1034-nested-types-should-not-be-visible.md)|Les types imbriqués ne doivent pas être visibles|
-|[CA1035](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)|Les implémentations ICollection possèdent des membres fortement typés|
-|[CA1036](../code-quality/ca1036-override-methods-on-comparable-types.md)|Substituer les méthodes sur les types Comparable|
-|[CA1038](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)|Les énumérateurs doivent être fortement typés|
-|[CA1039](../code-quality/ca1039-lists-are-strongly-typed.md)|Les listes sont fortement typées|
-|[CA1041](../code-quality/ca1041-provide-obsoleteattribute-message.md)|Fournir un message ObsoleteAttribute|
-|[CA1043](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)|Utiliser un argument de chaîne ou intégral pour les indexeurs|
-|[CA1044](../code-quality/ca1044-properties-should-not-be-write-only.md)|Les propriétés ne doivent pas être en écriture seule|
-|[CA1046](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)|Ne pas surcharger l'opérateur égal à sur les types référence|
-|[CA1047](../code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md)|Ne pas déclarer les membres protégés dans les types sealed|
-|[CA1048](../code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md)|Ne pas déclarer les membres virtuels dans les types sealed|
-|[CA1050](../code-quality/ca1050-declare-types-in-namespaces.md)|Déclarer les types dans des espaces de noms|
-|[CA1051](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|Ne pas déclarer de champs d'instances visibles|
-|[CA1052](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|Les types de conteneurs statiques doivent être sealed|
-|[CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|Les types de conteneurs statiques ne doivent pas comporter de constructeur|
-|[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Les paramètres URI ne doivent pas être des chaînes|
-|[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Les valeurs de retour URI ne doivent pas être des chaînes|
-|[CA1056](../code-quality/ca1056-uri-properties-should-not-be-strings.md)|Les propriétés URI ne doivent pas être des chaînes|
-|[CA1057](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Les surcharges d'URI de chaîne appellent les surcharges de System.Uri|
-|[CA1058](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Les types ne doivent pas étendre certains types de base|
-|[CA1059](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Les membres ne doivent pas exposer certains types concrets|
-|[CA1064](../code-quality/ca1064-exceptions-should-be-public.md)|Les exceptions doivent être publiques|
-|[CA1500](../code-quality/ca1500-variable-names-should-not-match-field-names.md)|Les noms de variables ne doivent pas être identiques aux noms de champs|
-|[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Éviter l'excès de complexité|
-|[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Les identificateurs ne doivent pas différer uniquement par leur casse|
-|[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Les identificateurs ne doivent pas correspondre à des mots clés|
+|[CA1000](../code-quality/ca1000.md)|Ne pas déclarer de membres statiques sur les types génériques|
+|[CA1002](../code-quality/ca1002.md)|Ne pas exposer de listes génériques|
+|[CA1003](../code-quality/ca1003.md)|Utiliser les instances du gestionnaire d'événements génériques|
+|[CA1004](../code-quality/ca1004.md)|Les méthodes génériques doivent fournir un paramètre de type|
+|[CA1005](../code-quality/ca1005.md)|Éviter les paramètres excessifs sur les types génériques|
+|[CA1006](../code-quality/ca1006.md)|Ne pas imbriquer les types génériques dans les signatures de membre|
+|[CA1007](../code-quality/ca1007.md)|Utiliser des classes génériques lorsque cela est approprié|
+|[CA1008](../code-quality/ca1008.md)|Les enums doivent avoir la valeur zéro|
+|[CA1010](../code-quality/ca1010.md)|Les collections doivent implémenter une interface générique|
+|[CA1011](../code-quality/ca1011.md)|Si possible, transmettez les types de base en tant que paramètres|
+|[CA1012](../code-quality/ca1012.md)|Les types abstract ne doivent pas avoir de constructeurs|
+|[CA1013](../code-quality/ca1013.md)|Surchargez l'opérateur égal lors de la surcharge de l'opérateur d'addition et de soustraction|
+|[CA1014](../code-quality/ca1014.md)|Marquer les assemblys avec CLSCompliantAttribute|
+|[CA1017](../code-quality/ca1017.md)|Marquer les assemblys avec ComVisibleAttribute|
+|[CA1018](../code-quality/ca1018.md)|Marquer les attributs avec AttributeUsageAttribute|
+|[CA1019](../code-quality/ca1019.md)|Définir des accesseurs pour les arguments d'attribut|
+|[CA1023](../code-quality/ca1023.md)|Les indexeurs ne doivent pas être multidimensionnels|
+|[CA1024](../code-quality/ca1024.md)|Utiliser les propriétés lorsque cela est approprié|
+|[CA1025](../code-quality/ca1025.md)|Remplacer les arguments répétitifs par un tableau params|
+|[CA1026](../code-quality/ca1026.md)|Les paramètres par défaut ne doivent pas être utilisés|
+|[CA1027](../code-quality/ca1027.md)|Marquer les enums avec FlagsAttribute|
+|[CA1028](../code-quality/ca1028.md)|Enum Storage doit être Int32|
+|[CA1030](../code-quality/ca1030.md)|Utiliser des événements lorsque cela est approprié|
+|[CA1031](../code-quality/ca1031.md)|Ne pas intercepter des types d'exception générale|
+|[CA1032](../code-quality/ca1032.md)|Implémenter des constructeurs d'exception standard|
+|[CA1034](../code-quality/ca1034.md)|Les types imbriqués ne doivent pas être visibles|
+|[CA1035](../code-quality/ca1035.md)|Les implémentations ICollection possèdent des membres fortement typés|
+|[CA1036](../code-quality/ca1036.md)|Substituer les méthodes sur les types Comparable|
+|[CA1038](../code-quality/ca1038.md)|Les énumérateurs doivent être fortement typés|
+|[CA1039](../code-quality/ca1039.md)|Les listes sont fortement typées|
+|[CA1041](../code-quality/ca1041.md)|Fournir un message ObsoleteAttribute|
+|[CA1043](../code-quality/ca1043.md)|Utiliser un argument de chaîne ou intégral pour les indexeurs|
+|[CA1044](../code-quality/ca1044.md)|Les propriétés ne doivent pas être en écriture seule|
+|[CA1046](../code-quality/ca1046.md)|Ne pas surcharger l'opérateur égal à sur les types référence|
+|[CA1047](../code-quality/ca1047.md)|Ne pas déclarer les membres protégés dans les types sealed|
+|[CA1048](../code-quality/ca1048.md)|Ne pas déclarer les membres virtuels dans les types sealed|
+|[CA1050](../code-quality/ca1050.md)|Déclarer les types dans des espaces de noms|
+|[CA1051](../code-quality/ca1051.md)|Ne pas déclarer de champs d'instances visibles|
+|[CA1052](../code-quality/ca1052.md)|Les types de conteneurs statiques doivent être sealed|
+|[CA1053](../code-quality/ca1053.md)|Les types de conteneurs statiques ne doivent pas comporter de constructeur|
+|[CA1054](../code-quality/ca1054.md)|Les paramètres URI ne doivent pas être des chaînes|
+|[CA1055](../code-quality/ca1055.md)|Les valeurs de retour URI ne doivent pas être des chaînes|
+|[CA1056](../code-quality/ca1056.md)|Les propriétés URI ne doivent pas être des chaînes|
+|[CA1057](../code-quality/ca1057.md)|Les surcharges d'URI de chaîne appellent les surcharges de System.Uri|
+|[CA1058](../code-quality/ca1058.md)|Les types ne doivent pas étendre certains types de base|
+|[CA1059](../code-quality/ca1059.md)|Les membres ne doivent pas exposer certains types concrets|
+|[CA1064](../code-quality/ca1064.md)|Les exceptions doivent être publiques|
+|[CA1500](../code-quality/ca1500.md)|Les noms de variables ne doivent pas être identiques aux noms de champs|
+|[CA1502](../code-quality/ca1502.md)|Éviter l'excès de complexité|
+|[CA1708](../code-quality/ca1708.md)|Les identificateurs ne doivent pas différer uniquement par leur casse|
+|[CA1716](../code-quality/ca1716.md)|Les identificateurs ne doivent pas correspondre à des mots clés|
 |[CA1801](../code-quality/ca1801.md)|Passez en revue les paramètres inutilisés|
 |[CA1804](../code-quality/ca1804.md)|Supprimez les variables locales inutilisées|
 |[CA1809](../code-quality/ca1809.md)|Évitez le surplus de variables locales|
@@ -167,34 +167,34 @@ Le tableau suivant décrit toutes les règles de l’ensemble de règles des rè
 |[CA2230](../code-quality/ca2230.md)|Utilisez le mot clé params pour les arguments de variables|
 |[CA2234](../code-quality/ca2234.md)|Passez des objets System.Uri à la place de chaînes|
 |[CA2239](../code-quality/ca2239.md)|Spécifiez des méthodes de désérialisation pour les champs facultatifs|
-|[CA1020](../code-quality/ca1020-avoid-namespaces-with-few-types.md)|Éviter les espaces de noms comportant peu de types|
-|[CA1021](../code-quality/ca1021-avoid-out-parameters.md)|Éviter les paramètres out|
-|[CA1040](../code-quality/ca1040-avoid-empty-interfaces.md)|Éviter les interfaces vides|
-|[CA1045](../code-quality/ca1045-do-not-pass-types-by-reference.md)|Ne pas passer de types par référence|
-|[CA1062](../code-quality/ca1062-validate-arguments-of-public-methods.md)|Valider les arguments de méthodes publiques|
-|[CA1501](../code-quality/ca1501-avoid-excessive-inheritance.md)|Éviter l'excès d'héritage|
-|[CA1504](../code-quality/ca1504-review-misleading-field-names.md)|Vérifier les noms de champs trompeurs|
-|[CA1505](../code-quality/ca1505-avoid-unmaintainable-code.md)|Éviter le code impossible à maintenir|
-|[CA1506](../code-quality/ca1506-avoid-excessive-class-coupling.md)|Éviter les couplages de classe excessifs|
-|[CA1700](../code-quality/ca1700-do-not-name-enum-values-reserved.md)|Ne nommez pas les valeurs enum 'Reserved'|
-|[CA1701](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|La casse des mots composés de la chaîne de ressources doit être correcte|
-|[CA1702](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)|La casse des mots composés doit être correcte|
-|[CA1703](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|L'orthographe des chaînes de ressources doit être correcte|
-|[CA1704](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)|L'orthographe des identificateurs doit être correcte|
-|[CA1707](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Les identificateurs ne doivent pas contenir de traits de soulignement|
-|[CA1709](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)|La casse des identificateurs doit être correcte|
-|[CA1710](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)|Les identificateurs doivent être dotés d'un suffixe correct|
-|[CA1711](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)|Les identificateurs ne doivent pas porter un suffixe incorrect|
-|[CA1712](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)|N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum|
-|[CA1713](../code-quality/ca1713-events-should-not-have-before-or-after-prefix.md)|Les événements ne doivent pas être munis d'un préfixe Before ou After|
-|[CA1714](../code-quality/ca1714-flags-enums-should-have-plural-names.md)|Les noms des enums Flags doivent être au pluriel|
-|[CA1715](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)|Les identificateurs doivent être dotés d'un préfixe correct|
-|[CA1717](../code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md)|Seuls les noms des enums FlagsAttribute doivent être au pluriel|
-|[CA1719](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Les noms des paramètres ne doivent pas être identiques aux noms des membres|
-|[CA1720](../code-quality/ca1720-identifiers-should-not-contain-type-names.md)|Les identificateurs ne doivent pas contenir de noms de types|
-|[CA1721](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get|
-|[CA1722](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)|Les identificateurs ne doivent pas porter un préfixe incorrect|
-|[CA1724](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Les noms de types ne doivent pas être identiques aux espaces de noms|
-|[CA1725](../code-quality/ca1725-parameter-names-should-match-base-declaration.md)|Les noms des paramètres doivent correspondre à la déclaration de base|
-|[CA1726](../code-quality/ca1726-use-preferred-terms.md)|Utilisez les termes par défaut|
+|[CA1020](../code-quality/ca1020.md)|Éviter les espaces de noms comportant peu de types|
+|[CA1021](../code-quality/ca1021.md)|Éviter les paramètres out|
+|[CA1040](../code-quality/ca1040.md)|Éviter les interfaces vides|
+|[CA1045](../code-quality/ca1045.md)|Ne pas passer de types par référence|
+|[CA1062](../code-quality/ca1062.md)|Valider les arguments de méthodes publiques|
+|[CA1501](../code-quality/ca1501.md)|Éviter l'excès d'héritage|
+|[CA1504](../code-quality/ca1504.md)|Vérifier les noms de champs trompeurs|
+|[CA1505](../code-quality/ca1505.md)|Éviter le code impossible à maintenir|
+|[CA1506](../code-quality/ca1506.md)|Éviter les couplages de classe excessifs|
+|[CA1700](../code-quality/ca1700.md)|Ne nommez pas les valeurs enum 'Reserved'|
+|[CA1701](../code-quality/ca1701.md)|La casse des mots composés de la chaîne de ressources doit être correcte|
+|[CA1702](../code-quality/ca1702.md)|La casse des mots composés doit être correcte|
+|[CA1703](../code-quality/ca1703.md)|L'orthographe des chaînes de ressources doit être correcte|
+|[CA1704](../code-quality/ca1704.md)|L'orthographe des identificateurs doit être correcte|
+|[CA1707](../code-quality/ca1707.md)|Les identificateurs ne doivent pas contenir de traits de soulignement|
+|[CA1709](../code-quality/ca1709.md)|La casse des identificateurs doit être correcte|
+|[CA1710](../code-quality/ca1710.md)|Les identificateurs doivent être dotés d'un suffixe correct|
+|[CA1711](../code-quality/ca1711.md)|Les identificateurs ne doivent pas porter un suffixe incorrect|
+|[CA1712](../code-quality/ca1712.md)|N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum|
+|[CA1713](../code-quality/ca1713.md)|Les événements ne doivent pas être munis d'un préfixe Before ou After|
+|[CA1714](../code-quality/ca1714.md)|Les noms des enums Flags doivent être au pluriel|
+|[CA1715](../code-quality/ca1715.md)|Les identificateurs doivent être dotés d'un préfixe correct|
+|[CA1717](../code-quality/ca1717.md)|Seuls les noms des enums FlagsAttribute doivent être au pluriel|
+|[CA1719](../code-quality/ca1719.md)|Les noms des paramètres ne doivent pas être identiques aux noms des membres|
+|[CA1720](../code-quality/ca1720.md)|Les identificateurs ne doivent pas contenir de noms de types|
+|[CA1721](../code-quality/ca1721.md)|Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get|
+|[CA1722](../code-quality/ca1722.md)|Les identificateurs ne doivent pas porter un préfixe incorrect|
+|[CA1724](../code-quality/ca1724.md)|Les noms de types ne doivent pas être identiques aux espaces de noms|
+|[CA1725](../code-quality/ca1725.md)|Les noms des paramètres doivent correspondre à la déclaration de base|
+|[CA1726](../code-quality/ca1726.md)|Utilisez les termes par défaut|
 |[CA2204](../code-quality/ca2204.md)|Les littéraux doivent être orthographiés correctement|

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435711"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536035"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -99,7 +99,7 @@ Les **fichiers sources doivent correspondre exactement à la version d’origine
 
 **Supprimer l’optimisation JIT lors du chargement du module (managé uniquement)** : désactive l’optimisation JIT du code managé lorsqu’un module est chargé et que JIT est compilé pendant que le débogueur est attaché. La désactivation de l'optimisation peut simplifier le débogage de certains problèmes, mais elle se fait au détriment des performances. Si vous utilisez Uniquement mon code, la suppression de l'optimisation JIT peut entraîner l'affichage du code non-utilisateur comme du code utilisateur (« Mon code »). Pour plus d’informations, consultez [optimisation et débogage JIT](../debugger/jit-optimization-and-debugging.md).
 
-**Activer le débogage JavaScript pour ASP.net (chrome, Edge et IE)** : active le débogueur de script pour les applications ASP.net. Lors de la première utilisation dans Chrome, vous devrez peut-être vous connecter au navigateur pour activer les extensions chrome que vous avez installées. Désactivez cette option pour rétablir le comportement hérité.
+**Activer le débogage JavaScript pour ASP.net (chrome, Microsoft Edge et IE)** : active le débogueur de script pour les applications ASP.net. Lors de la première utilisation dans Chrome, vous devrez peut-être vous connecter au navigateur pour activer les extensions chrome que vous avez installées. Désactivez cette option pour rétablir le comportement hérité.
 
 **Activer les outils de développement Edge pour les applications JavaScript UWP (expérimental)** : active les outils de développement pour les applications JavaScript UWP dans Microsoft Edge.
 
@@ -117,7 +117,7 @@ Pour savoir quels symboles sont disponibles dans la table d’exportation d’un
 
 **Utiliser le mode de compatibilité managée**: remplace le moteur de débogage par défaut par une version héritée pour activer les scénarios suivants :
 
-- Vous utilisez un langage de .NET Framework autre que C#, Visual Basic ou F# qui fournit son propre évaluateur d’expression (cela inclut C++/CLI).
+- Vous utilisez un langage .NET autre que C#, Visual Basic ou F# qui fournit son propre évaluateur d’expression (cela inclut C++/CLI).
 
 - Vous souhaitez activer modifier & Continuer pour les C++ projets pendant le débogage en mode mixte.
 

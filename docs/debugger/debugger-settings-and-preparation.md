@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349737"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536067"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.
@@ -44,7 +44,7 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
 
  [Déboguer des Applications 64 bits](../debugger/debug-64-bit-applications.md) Décrit comment déboguer des applications 64 bits.
 
- [Comment : spécifier une version de .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Décrit comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.
+ Guide pratique [pour spécifier une version antérieure de .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Décrit comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)
