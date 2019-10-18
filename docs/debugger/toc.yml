@@ -239,7 +239,7 @@
             - name: Vues personnalisées (gérées)
               items:
                 - name: Créer des vues personnalisées d’objets gérés
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Dire au débogueur quels éléments afficher
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Dire au débogueur quel type afficher
