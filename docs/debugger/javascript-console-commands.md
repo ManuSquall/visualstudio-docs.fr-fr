@@ -1,7 +1,7 @@
 ---
-title: JavaScript Console commands | Microsoft Docs
+title: Commandes de la console JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,33 +10,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905672"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588977"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
+# <a name="javascript-console-commands-in-visual-studio"></a>Commandes de la console JavaScript dans Visual Studio
 
-::: moniker range=">=vs-2019"
-Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Les informations contenues dans cette rubrique s’applique aux applications Node.js créées à l’aide de Visual Studio avec le **développement Node.js** charge de travail installée.
-::: moniker-end
-::: moniker range="vs-2017"
-Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Les informations contenues dans cette rubrique s’applique à l’application Node.js, UWP applications et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
-::: moniker-end
+Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Les informations contenues dans cette rubrique s’appliquent à l’application node. js, aux applications UWP et aux applications créées à l’aide de Visual Studio Tools pour Apache Cordova.
 
 Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.
 
 > [!NOTE]
 > Si la fenêtre n’est pas disponible pendant une session de débogage, vérifiez que le type de débogueur est défini sur **Script** dans les propriétés de débogage du projet.
 
-Pour plus d’informations sur l’utilisation de la console dans les outils de développement de Microsoft Edge, consultez [cette rubrique](/microsoft-edge/devtools-guide).
+Pour plus d’informations sur l’utilisation de la console dans les outils de développement Microsoft Edge, consultez [cette rubrique](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>commandes d’objet de la console
+
 Cette table montre la syntaxe des commandes de l’objet `console` , que vous pouvez utiliser dans la fenêtre de la console JavaScript ou pour envoyer des messages à la console à partir de votre code. Cet objet fournit plusieurs formes afin de pouvoir distinguer les messages d’informations et les messages d’erreur, si vous le souhaitez.
 
 Utilisez la forme de commande plus longue `window.console.[command]` si vous devez éviter toute confusion possible avec les objets locaux nommés console.
@@ -55,12 +52,12 @@ Utilisez la forme de commande plus longue `window.console.[command]` si vous dev
 |`error(message)`|Envoie `message` dans la fenêtre de la console. Le texte du message est rouge et précédé d’un symbole d’erreur.<br /><br /> Les objets qui sont passés à l’aide de la commande sont convertis en valeur de chaîne.|`console.error("error message");`|
 |`group(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.<br /><br /> Les commandes group* peuvent faciliter l’affichage de la sortie de la fenêtre de console dans certains scénarios, par exemple lorsqu’un modèle de composant est en cours d’utilisation.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|
 |`groupCollapsed(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes qui sont envoyés à l’aide de `groupCollapsed` s’affichent dans un affichage réduit par défaut. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.|La syntaxe est la même que pour la commande `group` .<br /><br /> Consultez l’exemple correspondant à la commande `group` .|
-|`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|
+|`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|
 |`info(message)`|Envoie `message` dans la fenêtre de la console. Le message est précédée d’un symbole d’informations.|`console.info("info message");`<br /><br /> Pour des exemples supplémentaires, consultez [Formatting console.log output](#ConsoleLog) plus loin dans cette rubrique.|
 |`log(message)`|Envoie `message` dans la fenêtre de la console.<br /><br /> Si vous passez un objet, cette commande l’envoie à la fenêtre de la console et l’affiche dans un visualiseur d’objets. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|
-|`profile(reportName)`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|
-|`profileEnd()`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|
+|`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|
+|`profile(reportName)`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|
+|`profileEnd()`|Utilisée dans les applications web. Non pris en charge dans les applications UWP à l’aide de JavaScript.|Non prise en charge.|
 |`select(element)`|Sélectionne le paramètre `element` HTML spécifié dans l’ [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
 |`time (name)`|Démarre une minuterie identifiée par le paramètre facultatif `name` . Utilisée avec `console.timeEnd`, calcule le temps qui s’écoule entre `time` et `timeEnd`, puis envoie le résultat (mesuré en ms) à la console à l’aide de la chaîne `name` comme préfixe. Utilisée pour permettre l’instrumentation du code d’application pour mesurer les performances.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Arrête une minuterie identifiée par le paramètre facultatif `name` . Consultez la commande de console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|

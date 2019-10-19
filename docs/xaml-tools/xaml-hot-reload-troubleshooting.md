@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 33ac236c9f9dd91bc0eef34e7ff9f3aa658cb4be
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535293"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589132"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Résolution des problèmes de rechargement à chaud XAML
 
@@ -48,7 +48,7 @@ Si ces options sont sélectionnées, accédez à l’arborescence d’éléments
 Le rechargement à chaud XAML nécessite que la variable d’environnement `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` soit définie sur 1 au moment du démarrage de l’application. Visual Studio définit cela automatiquement dans le cadre de la commande **Debug** > **Démarrer le débogage** (ou **F5**). Si vous souhaitez utiliser le rechargement à chaud XAML avec la commande de **débogage** > **attacher au processus** , définissez la variable d’environnement vous-même.
 
 > [!NOTE]
-> Pour définir une variable d’environnement, recherchez « variable d’environnement », puis choisissez **modifier les variables d’environnement système**. Dans la boîte de dialogue qui s’ouvre, choisissez **variables d’environnement**, ajoutez-la en tant que variable utilisateur et définissez la valeur sur `1`. Pour nettoyer, supprimez la variable lorsque vous avez terminé le débogage.
+> Pour définir une variable d’environnement, utilisez le bouton Démarrer pour rechercher « variable d’environnement », puis choisissez **modifier les variables d’environnement système**. Dans la boîte de dialogue qui s’ouvre, choisissez **variables d’environnement**, ajoutez-la en tant que variable utilisateur et définissez la valeur sur `1`. Pour nettoyer, supprimez la variable lorsque vous avez terminé le débogage.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Vérifier que vos propriétés MSBuild sont correctes
 
