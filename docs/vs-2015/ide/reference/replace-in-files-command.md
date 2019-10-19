@@ -12,91 +12,71 @@ helpviewer_keywords:
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157801"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665615"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Edit.ReplaceinFiles findwhat replacewith [/all] [/case]  
-[/ext:extensions] [/keep] [/lookin:searchpath] [/options] [/regex]  
-[/reset] [/stop] [/sub] [/text2] [/wild] [/word]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `findwhat`  
- Obligatoire. Texte à rechercher.  
-  
- `replacewith`  
- Obligatoire. Texte de remplacement du texte trouvé.  
-  
-## <a name="switches"></a>Commutateurs  
- /all ou /a  
- facultatif. Remplace toutes les occurrences du texte recherché par le texte de remplacement.  
-  
- /case ou /c  
- facultatif. Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.  
-  
- /ext: `extensions`  
- facultatif. Spécifie les extensions des fichiers dans lesquels effectuer la recherche.  
-  
- /keep ou /k  
- facultatif. Spécifie que tous les fichiers modifiés restent ouverts.  
-  
- /lookin: `searchpath`  
- facultatif. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.  
-  
- /options ou /t  
- facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.  
-  
- /regex ou /r  
- facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).  
-  
- /reset ou /e  
- facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.  
-  
- /stop  
- facultatif. Arrête l’opération de recherche en cours, le cas échant. Quand l’argument `/stop` a été spécifié, l’opération de remplacement ignore tous les autres arguments. Par exemple, pour arrêter le remplacement en cours, vous devez taper la syntaxe suivante :  
-  
-```  
->Edit.ReplaceinFiles /stop  
-```  
-  
- /sub ou /s  
- facultatif. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.  
-  
- /text2 ou /2  
- facultatif. Affiche les résultats du remplacement dans la fenêtre **Résultats de la recherche 2**.  
-  
- /wild ou /l  
- facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.  
-  
- /word ou /w  
- facultatif. Recherche uniquement les mots entiers.  
-  
-## <a name="example"></a>Exemples  
- Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.  
-  
-```  
->Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)   
- [Remplacer dans les fichiers](../../ide/replace-in-files.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
+[/ext:extensions] [/keep] [/lookin:searchpath] [/options] [/regex]
+[/reset] [/stop] [/sub] [/text2] [/wild] [/word]
+```
+
+## <a name="arguments"></a>Arguments
+ `findwhat` Obligatoire. Texte à rechercher.
+
+ `replacewith` Obligatoire. Texte de remplacement du texte trouvé.
+
+## <a name="switches"></a>Commutateurs
+ /All ou/a facultatif. Remplace toutes les occurrences du texte recherché par le texte de remplacement.
+
+ /case ou /c (facultatif). Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
+
+ /ext: `extensions` (facultatif). Spécifie les extensions des fichiers dans lesquels effectuer la recherche.
+
+ /Keep ou/k facultatif. Spécifie que tous les fichiers modifiés restent ouverts.
+
+ /lookin: `searchpath` (facultatif). Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.
+
+ /options ou /t (facultatif). Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
+
+ /regex ou /r (facultatif). Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
+
+ /reset ou /e (facultatif). Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
+
+ /stop (facultatif). Arrête l’opération de recherche en cours, le cas échant. Quand l’argument `/stop` a été spécifié, l’opération de remplacement ignore tous les autres arguments. Par exemple, pour arrêter le remplacement en cours, vous devez taper la syntaxe suivante :
+
+```
+>Edit.ReplaceinFiles /stop
+```
+
+ /sub ou /s (facultatif). Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.
+
+ /text2 ou /2 (facultatif). Affiche les résultats du remplacement dans la fenêtre **Résultats de la recherche 2**.
+
+ /wild ou /l (facultatif). Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
+
+ /word ou /w (facultatif). Recherche uniquement les mots entiers.
+
+## <a name="example"></a>Exemples
+ Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
+
+```
+>Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
+```
+
+## <a name="see-also"></a>Voir aussi
+ [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md) [remplacer dans les fichiers](../../ide/replace-in-files.md) [fenêtre de commandes](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md) [Visual Studio commandes](../../ide/reference/visual-studio-commands.md) Visual [Studio alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

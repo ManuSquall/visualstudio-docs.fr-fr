@@ -11,47 +11,43 @@ helpviewer_keywords:
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4778efc4a50ceb63e72d4283644537345510e833
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73d8e54938659920227b3614046b8a8f933023ff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194962"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670215"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ajoute un projet existant à la solution actuelle.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-File.AddExistingProject filename  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `filename`  
- facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.  
-  
- Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.  
-  
- Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.  
-  
-## <a name="remarks"></a>Remarques  
- La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.  
-  
-## <a name="example"></a>Exemples  
- Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (TestProject1) à la solution actuelle.  
-  
-```  
->File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Ajoute un projet existant à la solution actuelle.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+File.AddExistingProject filename
+```
+
+## <a name="arguments"></a>Arguments
+ `filename` Facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
+
+ Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.
+
+ Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
+
+## <a name="remarks"></a>Remarques
+ La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
+
+## <a name="example"></a>Exemples
+ Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (TestProject1) à la solution actuelle.
+
+```
+>File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
+```
+
+## <a name="see-also"></a>Voir aussi
+ [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md) [fenêtre commande](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md) [alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

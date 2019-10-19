@@ -12,44 +12,38 @@ helpviewer_keywords:
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199111"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671139"
 ---
 # <a name="list-threads-command"></a>Afficher les threads, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Affiche une liste des threads du programme en cours.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `index`  
- facultatif. Sélectionne un thread par son index pour en faire le thread actuel.  
-  
-## <a name="remarks"></a>Remarques  
- Une fois spécifié, l’argument `index` marque le thread indiqué comme étant le thread actuel. Un astérisque (*) est affiché dans la liste en regard du thread actuel.  
-  
-## <a name="example"></a>Exemples  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)   
- [Afficher le code machine, commande](../../ide/reference/list-disassembly-command.md)   
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Affiche une liste des threads du programme en cours.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>Arguments
+ `index` Facultatif. Sélectionne un thread par son index pour en faire le thread actuel.
+
+## <a name="remarks"></a>Remarques
+ Une fois spécifié, l’argument `index` marque le thread indiqué comme étant le thread actuel. Un astérisque (*) est affiché dans la liste en regard du thread actuel.
+
+## <a name="example"></a>Exemples
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>Voir aussi
+ [Liste](../../ide/reference/list-call-stack-command.md) de commandes pile des appels commande [code machine commande](../../ide/reference/list-disassembly-command.md) [Visual Studio commandes Visual Studio](../../ide/reference/visual-studio-commands.md) [fenêtre commande](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md) [alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
