@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread | Microsoft Docs
+title: 'IRemoteDebugApplication110 :: GetMainThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ff99c43f633da8454eb5fa32463886877e06ed72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383501"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574119"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Retourne le thread principal pour les ordinateurs hôtes qui appellent [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), sinon retourne E_FAIL.  
+Retourne le thread principal pour les hôtes qui appellent [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), sinon Retourne E_FAIL.  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+> L' [interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) est implémentée par PDM v 11.0 et ultérieur. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,8 +34,8 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
   
 #### <a name="parameters"></a>Paramètres  
  `ppThread`  
- [out] La principale [IRemoteDebugApplicationThread (Interface)](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
+ à [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)principale.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IRemoteDebugApplication (Interface)](../../winscript/reference/iremotedebugapplication-interface.md)   
+ @No__t_1 de l' [interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
  [Interface IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)

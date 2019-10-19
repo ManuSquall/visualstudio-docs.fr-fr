@@ -1,5 +1,5 @@
 ---
-title: ExtendedDebugPropertyInfo Structure | Microsoft Docs
+title: ExtendedDebugPropertyInfo, structure | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955180"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575833"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>ExtendedDebugPropertyInfo, structure
-Étend la `DebugPropertyInfo` structure avec des membres supplémentaires pour caractériser la propriété étendue.  
+Étend la structure `DebugPropertyInfo` avec des membres supplémentaires pour caractériser la propriété étendue.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,19 +48,19 @@ typedef struct ExtendedDebugPropertyInfo{
   
 ## <a name="members"></a>Membres  
  `dwValidFields`  
- Type de données énuméré permet de spécifier quels champs sont initialisés.  
+ Type de données énuméré utilisé pour spécifier les champs à initialiser.  
   
  `bstrName`  
- Le nom de propriété dans un contexte.  
+ Nom de la propriété dans un contexte.  
   
  `bstrType`  
- Le type de propriété en tant que chaîne mise en forme.  
+ Type de propriété comme chaîne mise en forme.  
   
  `bstrValue`  
- La valeur de propriété sous forme de chaîne.  
+ Valeur de la propriété sous la forme d’une chaîne mise en forme.  
   
  `bstrFullName`  
- Le nom complet de la propriété.  
+ Nom complet de la propriété.  
   
  `dwAttrib`  
  Énumération qui spécifie les indicateurs pour les attributs de propriété de débogage.  
@@ -69,23 +69,23 @@ typedef struct ExtendedDebugPropertyInfo{
  `IDebugProperty` objet correspondant à cet `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- L’id de dispatch.  
+ ID de dispatch.  
   
  `nType`  
- Le type de propriété étendue.  
+ Type de propriété étendue.  
   
  `varValue`  
- La valeur de propriété étendue si elle peut tenir dans la variante.  
+ Valeur de la propriété étendue si elle peut tenir dans une variante.  
   
  `plbValue`  
- Les octets de données réelles de la valeur de propriété.  
+ Octets de données réels de la valeur de propriété.  
   
  `pDebugExtProp`  
  `IDebugExtendedProperty` objet correspondant à cet `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [DebugPropertyInfo (Structure)](../../winscript/reference/debugpropertyinfo-structure.md)   
- [IDebugProperty (Interface)](../../winscript/reference/idebugproperty-interface.md)   
- [IDebugExtendedProperty (Interface)](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ @No__t_1 de la [structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
+ @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ @No__t_1 de l' [interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

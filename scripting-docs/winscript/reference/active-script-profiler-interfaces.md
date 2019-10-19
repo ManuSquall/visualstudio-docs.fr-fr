@@ -1,5 +1,5 @@
 ---
-title: Interfaces de Profiler de Script actif | Microsoft Docs
+title: Interfaces du profileur de script actif | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,20 +11,20 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9395c392051e184bf61bea65e7ef7ac3c3fe2c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422232"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572677"
 ---
 # <a name="active-script-profiler-interfaces"></a>Profilage de script actif, interfaces
-Interfaces de Profiler de Script actif permettent de recevoir des événements de profilage à partir de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur.  
+Les interfaces Active script Profiler vous permettent de recevoir des événements de profilage à partir du moteur de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
- Le fichier d’en-tête activprof.h fournit les interfaces qui sont répertoriées dans cette section.  
+ Le fichier d’en-tête activprof. h fournit les interfaces répertoriées dans cette section.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- Activer le profilage les interfaces suivantes :  
+ Les interfaces suivantes activent le profilage :  
   
 - [Interface IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
   
@@ -42,14 +42,14 @@ Interfaces de Profiler de Script actif permettent de recevoir des événements d
   
 - [Interface IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
   
-  La section suivante répertorie les énumérations qui sont utilisées pour le profilage :  
+  La section suivante répertorie les énumérations utilisées pour le profilage :  
   
 - [Constantes de profileur de script actif, énumerations et structures](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
-> Les Interfaces de Profiler de Script Active ont été tout d’abord publiés avec Internet Explorer 8. Le `IActiveScriptProfilerControl2` et `IActiveScriptProfilerCallback2` interfaces ont été tout d’abord publiés avec Internet Explorer 9. Le [Interface IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [Interface IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), et [iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interfaces ont été tout d’abord publié avec Internet Explorer 10. Le [iactivescriptprofilercontrol5, Interface](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) est sorti avec Internet Explorer 11.  
+> Les interfaces Active script Profiler ont été publiées pour la première fois avec Internet Explorer 8. Les interfaces `IActiveScriptProfilerControl2` et `IActiveScriptProfilerCallback2` ont été publiée pour la première fois avec Internet Explorer 9. L' [interface IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), l' [interface IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md)et les interfaces d' [interface IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) ont été publiées pour la première fois avec Internet Explorer 10. L' [interface IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) a été publiée pour la première fois avec Internet Explorer 11.  
 >   
-> Dans Internet Explorer 8 et Internet Explorer 9, uniquement le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] langage utilise ces interfaces pour prendre en charge le profilage de script.  
+> Dans Internet Explorer 8 et Internet Explorer 9, seul le langage de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utilise ces interfaces pour prendre en charge le profilage de script.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

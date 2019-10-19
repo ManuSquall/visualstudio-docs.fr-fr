@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateAsyncDebugOperation | Microsoft Docs
+title: 'IDebugApplication :: CreateAsyncDebugOperation | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c60c84dbd3be9248e2bd075e65d53f7f9361d0b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1feb8207fb7e7a7faf4427be189c4952139ef32c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991015"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575560"
 ---
 # <a name="idebugapplicationcreateasyncdebugoperation"></a>IDebugApplication::CreateAsyncDebugOperation
 Fournit un accès asynchrone à une opération de débogage synchrone donnée.  
@@ -38,22 +38,22 @@ HRESULT CreateAsyncDebugOperation(
   
 #### <a name="parameters"></a>Paramètres  
  `psdo`  
- [in] L’objet d’opération de débogage synchrone.  
+ dans Objet de l’opération de débogage synchrone.  
   
  `ppado`  
- [out] L’objet d’opération de débogage asynchrone.  
+ à Objet de l’opération de débogage asynchrone.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet de moteurs de langage évaluer les expressions de façon asynchrone sans synchronisation explicitement avec le thread de débogueur. Pour plus d’informations, consultez [IDebugSyncOperation (Interface)](../../winscript/reference/idebugsyncoperation-interface.md) et [IDebugAsyncOperation (Interface)](../../winscript/reference/idebugasyncoperation-interface.md).  
+ Cette méthode permet aux moteurs de langage d’évaluer les expressions de manière asynchrone sans synchronisation explicite avec le thread du débogueur. Pour plus d’informations, consultez [interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md) et [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugSyncOperation (Interface)](../../winscript/reference/idebugsyncoperation-interface.md)   
+ @No__t_1 de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ @No__t_1 de l' [interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)  
  [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

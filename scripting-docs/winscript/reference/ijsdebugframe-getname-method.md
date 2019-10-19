@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugFrame::GetName | Microsoft Docs
+title: 'IJsDebugFrame :: GetName, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 314a365a76533343ef14db513856a7ab16168677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e78bd7c5b63737cd1a34d50ca6629eb173f40efb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558227"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573866"
 ---
 # <a name="ijsdebugframegetname-method"></a>IJsDebugFrame::GetName, méthode
 Obtient le nom convivial du frame de pile.  
@@ -35,12 +35,12 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Paramètres  
  `pName`  
- [out] Le nom du frame de pile.  
+ à Nom du frame de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

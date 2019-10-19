@@ -1,5 +1,5 @@
 ---
-title: IProvideExpressionContexts::EnumExpressionContexts | Microsoft Docs
+title: 'IProvideExpressionContexts :: EnumExpressionContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f161c1591267af1398d5c04d00623381cfae2ad4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410147"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572388"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
-Retourne un énumérateur des contextes d’expression connus par ce composant.  
+Retourne un énumérateur de contextes d’expression connus par ce composant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,20 +37,20 @@ HRESULT EnumExpressionContexts(
   
 #### <a name="parameters"></a>Paramètres  
  `ppedec`  
- [out] Énumérateur des contextes d’expression connus par ce composant.  
+ à Énumérateur de contextes d’expression connus par ce composant.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Le Gestionnaire de débogage de processus utilise cette méthode pour rechercher tous les contextes d’expression globale associées à un thread donné.  
+ Le gestionnaire de débogage de processus utilise cette méthode pour rechercher tous les contextes d’expression globaux associés à un thread donné.  
   
 > [!NOTE]
-> Cette méthode est appelée à partir du thread d’intérêt. Il est à l’implémenteur pour identifier le thread actuel et retourne un énumérateur approprié.  
+> Cette méthode est appelée à partir du thread d’intérêt. Il revient à l’implémenteur d’identifier le thread actuel et de retourner un énumérateur approprié.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
+title: 'ISetNextStatement :: CanSetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb65faaf107c42b44201ea18c1150f8093b1654c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56cf0b2e4afd7a86a087b37be4b23758a5b59720
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571842"
 ---
 # <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
-Cette méthode détermine si le point d’exécution, qui détermine l’instruction suivante de code qui doit être exécuté, peut être défini à l’emplacement spécifié.  
+Cette méthode détermine si le point d’exécution, qui détermine la prochaine instruction de code à exécuter, peut être défini à l’emplacement spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,18 +36,18 @@ HRESULT CanSetNextStatement(
   
 #### <a name="parameters"></a>Paramètres  
  `pStackFrame`  
- [in] Pointeur vers un objet de frame de pile.  
+ dans Pointeur vers un objet de frame de pile.  
   
  `pCodeContext`  
- [in] Pointeur vers un objet de contexte de code.  
+ dans Pointeur vers un objet de contexte de code.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
-|`S_OK`|L’instruction suivante peut être mis à jour dans le contexte de code spécifié.|  
-|`S_FALSE`|L’instruction suivante ne peut pas être mis à jour dans le contexte de code spécifié.|  
+|`S_OK`|L’instruction suivante peut être mise à jour vers le contexte de code spécifié.|  
+|`S_FALSE`|L’instruction suivante ne peut pas être mise à jour vers le contexte de code spécifié.|  
   
 ## <a name="remarks"></a>Notes  
   

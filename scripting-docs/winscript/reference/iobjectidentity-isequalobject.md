@@ -1,5 +1,5 @@
 ---
-title: IObjectIdentity::IsEqualObject | Microsoft Docs
+title: 'IObjectIdentity :: IsEqualObject | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c215a15a1239f07272079783366a1617c3a626e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 636dfa07b1fc94dfec2273220aa4101f5cd085b1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944887"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571462"
 ---
 # <a name="iobjectidentityisequalobject"></a>IObjectIdentity::IsEqualObject
 Détermine si un objet est égal à l’objet actuel.  
@@ -37,18 +37,18 @@ HRESULT IsEqualObject(
   
 #### <a name="parameters"></a>Paramètres  
  `punk`  
- [in] Adresse de l’objet à comparer avec l’objet actuel.  
+ dans Adresse de l’objet à comparer à l’objet actuel.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|Les objets sont égaux.|  
 |`S_FALSE`|Les objets ne sont pas égaux.|  
   
 ## <a name="remarks"></a>Notes  
- Une implémentation de la `IsEqualObject` méthode doit retourner `S_OK` uniquement si les objets sont identiques.  
+ Une implémentation de la méthode `IsEqualObject` doit retourner `S_OK` uniquement si les objets sont identiques.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)

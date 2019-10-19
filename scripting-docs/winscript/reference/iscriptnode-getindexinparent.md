@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetIndexInParent | Microsoft Docs
+title: 'IScriptNode :: GetIndexInParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92f5ae074d65d2360bcfb3dda03903aa3c59209e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9251f65414a5ebd48ce56dae6a7dbfeec4e514e3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786974"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575044"
 ---
 # <a name="iscriptnodegetindexinparent"></a>IScriptNode::GetIndexInParent
 Retourne l’index d’un objet dans la liste des enfants du parent.  
@@ -37,14 +37,14 @@ HRESULT GetIndexInParent(
   
 #### <a name="parameters"></a>Paramètres  
  `pisn`  
- [out] Retourne l’index d’un objet dans la liste des enfants du parent.  
+ à Retourne l’index d’un objet dans la liste des enfants du parent.  
   
- Si cette méthode est appelée par un `IScriptNode` de l’objet que représente une page Web, ce paramètre retourne 0.  
+ Si cette méthode est appelée par un objet `IScriptNode` qui représente une page Web, ce paramètre retourne 0.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

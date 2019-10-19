@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::GetEventCount | Microsoft Docs
+title: 'ISimpleConnectionPoint :: GetEventCount | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34796765ba15589c031e780df5f2507e6938a858
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cfa392a052d415cef4c19f07c6c8e73704dfa45
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786247"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571808"
 ---
 # <a name="isimpleconnectionpointgeteventcount"></a>ISimpleConnectionPoint::GetEventCount
-Retourne le nombre d’événements affichés sur cette interface.  
+Retourne le nombre d’événements exposés sur cette interface.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT GetEventCount(
   
 #### <a name="parameters"></a>Paramètres  
  `pulCount`  
- [out] Nombre d’événements exposées sur le nombre de cette interface.  
+ à Nombre d’événements exposés sur ce nombre d’interfaces.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode retourne le nombre d’événements exposé sur cette interface.  
+ Cette méthode retourne le nombre d’événements exposés sur cette interface.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

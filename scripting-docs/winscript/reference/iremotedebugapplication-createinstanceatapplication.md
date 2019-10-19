@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CreateInstanceAtApplication | Microsoft Docs
+title: 'IRemoteDebugApplication :: CreateInstanceAtApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e17c5abcb21bfaad6de948c3676d29232da66cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 285e5df6960e3188ffe1ce17b1fc4f43626a3d74
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944313"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572311"
 ---
 # <a name="iremotedebugapplicationcreateinstanceatapplication"></a>IRemoteDebugApplication::CreateInstanceAtApplication
-Permet la création d’objets dans le processus d’application par le code qui est out-of-process à l’application.  
+Autorise la création d’objets dans le processus d’application par du code qui est hors processus de l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,24 +41,24 @@ HRESULT CreateInstanceAtApplication(
   
 #### <a name="parameters"></a>Paramètres  
  `rclsid`  
- [in] Identificateur (CLSID) de l’objet à créer de classe.  
+ dans Identificateur de classe (CLSID) de l’objet à créer.  
   
  `pUnkOuter`  
- [in] Si `NULL`, l’objet n’est pas créé en tant que partie d’un agrégat. Sinon, `pUnkOuter` est un pointeur vers l’objet d’agrégation `IUnknown` interface (le contrôle `IUnknown`).  
+ dans Si `NULL`, l’objet n’est pas créé dans le cadre d’un agrégat. Dans le cas contraire, `pUnkOuter` est un pointeur vers l’interface `IUnknown` de l’objet d’agrégation (le `IUnknown` de contrôle).  
   
  `dwClsContext`  
- [in] Contexte d’exécution du code exécutable. Les valeurs proviennent de l’énumération `CLSCTX`.  
+ dans Contexte d’exécution du code exécutable. Les valeurs sont extraites de l’énumération `CLSCTX`.  
   
  `riid`  
- [in] L’identificateur d’interface utilisé pour communiquer avec l’objet.  
+ dans Identificateur d’interface utilisé pour communiquer avec l’objet.  
   
  `ppvObject`  
- [out] Adresse de variable pointeur qui reçoit le pointeur d’interface demandé dans `riid`. En cas de renvoi, *`ppvObject` contient le pointeur d’interface demandé. En cas d’échec, \* `ppvObject` contient `NULL`.  
+ à Adresse de la variable pointeur qui reçoit le pointeur d’interface demandé dans `riid`. En cas de retour correct, * `ppvObject` contient le pointeur d’interface demandé. En cas d’échec, \* `ppvObject` contient des `NULL`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

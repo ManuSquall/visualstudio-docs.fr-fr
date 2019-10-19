@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugDataTarget::ReadMemory | Microsoft Docs
+title: 'IJsDebugDataTarget :: ReadMemory (, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84da36433cf3546b34d3e044bb113916c9798117
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582354"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572433"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory, méthode
 Lit la mémoire du processus cible.  
@@ -39,27 +39,27 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse de base à partir duquel lire la cible mémoire du processus.  
+ dans Adresse de base à partir de laquelle lire la mémoire du processus cible.  
   
  `flags`  
- [in] Indicateurs contrôlant le comportement de ReadMemory.  
+ dans Indicateurs contrôlant le comportement de ReadMemory (.  
   
  `pBuffer`  
- [out] Une mémoire tampon qui reçoit le contenu de l’espace d’adressage du processus cible. En cas d’échec, le contenu de cette mémoire tampon n’est pas spécifié.  
+ à Mémoire tampon qui reçoit le contenu de l’espace d’adressage du processus cible. En cas d’échec, le contenu de cette mémoire tampon n’est pas spécifié.  
   
  `size`  
- [in] Le nombre d’octets à lire à partir du processus.  
+ dans Nombre d’octets à lire à partir du processus.  
   
  `pBytesRead`  
- [out] Indique le nombre d’octets lus à partir du processus cible. Si JsDebugAllowPartialRead est désactivé, en cas de réussite cette valeur sera toujours exactement égale à la taille d’entrée. Si JsDebugAllowPartialRead est spécifié, en cas de réussite, cette valeur sera supérieure à zéro.  
+ à Indique le nombre d’octets lus à partir du processus cible. Si JsDebugAllowPartialRead est Clear, en cas de réussite, cette valeur est toujours exactement égale à la taille d’entrée. Si JsDebugAllowPartialRead est spécifié, en cas de réussite, cette valeur est supérieure à zéro.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Retourne S_OK en cas de réussite et les codes d’échec est utilisés pour une erreur. Retourne E_JsDEBUG_INVALID_MEMORY_ADDRESS si l’adresse n’est pas valide. Pour plus d’informations, consultez JsDebugAllowPartialRead.  
+ Retourne S_OK en cas de réussite, et les codes d’échec sont utilisés pour toute erreur. Retourne E_JsDEBUG_INVALID_MEMORY_ADDRESS si l’adresse n’est pas valide. Pour plus d’informations, consultez JsDebugAllowPartialRead.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

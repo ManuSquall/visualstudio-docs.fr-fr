@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Clone | Microsoft Docs
+title: 'IEnumRemoteDebugApplications :: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06b2eac008b0bccc3d0671e15658b5a189b5dcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e8007505c6e7c4bc4c881b07c5247f0647824bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963271"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572010"
 ---
 # <a name="ienumremotedebugapplicationsclone"></a>IEnumRemoteDebugApplications::Clone
-Crée un énumérateur qui contient le même état que l’énumérateur en cours.  
+Crée un énumérateur qui contient le même État que l’énumérateur actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Paramètres  
  `ppessd`  
- [out] Un clone de l’énumérateur.  
+ à Clone de l’énumérateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode crée un énumérateur qui contient le même état que l’énumérateur en cours.  
+ Cette méthode crée un énumérateur qui contient le même État que l’énumérateur actuel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

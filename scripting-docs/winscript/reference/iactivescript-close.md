@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Microsoft Docs
+title: 'IActiveScript :: Close | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935677"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575777"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Provoque le moteur de script abandonner n’importe quel script actuellement chargé, son état est perdu et libérer les pointeurs d’interface qu’à d’autres objets, donc dans un état fermé. Récepteurs d’événements, le texte de script exécuté immédiatement et appels de macro qui sont déjà en cours d’exécution sont terminés avant les modifications d’état (utilisez [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) d’annuler un thread de script en cours d’exécution). Cette méthode doit être appelée par l’hôte de création avant de l’interface est libéré pour éviter les problèmes de référence circulaire.  
+Fait en sorte que le moteur de script abandonne tout script actuellement chargé, perd son état et libère tous les pointeurs d’interface qu’il possède vers d’autres objets, ce qui permet d’entrer dans un état fermé. Les récepteurs d’événements, le texte du script exécuté immédiatement et les appels de macros qui sont déjà en cours sont terminés avant le changement d’État (utilisez [IActiveScript :: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) pour annuler un thread de script en cours d’exécution). Cette méthode doit être appelée par l’hôte de création avant que l’interface ne soit libérée afin d’éviter les problèmes de référence circulaire.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,13 +34,13 @@ HRESULT Close(void);
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
 |`S_OK`|Opération réussie.|  
-|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script était déjà dans l’état fermé).|  
-|`OLESCRIPT_S_PENDING`|La méthode a été en file d’attente avec succès, mais l’état n’a pas encore changé. Quand les modifications d’état, le site doit être rappelé sur le [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) (méthode).|  
+|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script était déjà à l’état fermé).|  
+|`OLESCRIPT_S_PENDING`|La méthode a été mise en file d’attente avec succès, mais l’État n’a pas encore changé. Lorsque l’état change, le site doit être rappelé sur la méthode [IActiveScriptSite :: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
 |`S_FALSE`|La méthode a réussi, mais le script a déjà été fermé.|  
   
 ## <a name="see-also"></a>Voir aussi  

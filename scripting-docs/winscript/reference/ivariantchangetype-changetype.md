@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Microsoft Docs
+title: 'IVariantChangeType :: ChangeType | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81ed0a8502e9b0cfc53725621d477d34ee5010ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406d5d8486b3016f0105b7bd8bf231db0e1e9613
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571783"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Prend une valeur variante et crée une nouvelle variante avec un type spécifié.  
+Prend une valeur de type Variant et crée un nouveau variant avec un type spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,26 +40,26 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Paramètres  
  `pvarDst`  
- [in, out] Un variant pour contenir la valeur représentée par `pvarSrc`, mais avec le type spécifié par `vtNew`.  
+ [in, out] Variant pour contenir la valeur représentée par `pvarSrc`, mais avec le type spécifié par `vtNew`.  
   
  `pvarSrc`  
- [in] Une valeur de type variant à modifier dans un nouveau type.  
+ dans Valeur de type Variant à modifier dans un nouveau type.  
   
  `lcid`  
- [in] Contexte des paramètres régionaux à utiliser lors de la conversion des arguments vers ou à partir de chaînes.  
+ dans Contexte des paramètres régionaux à utiliser lors de la conversion des arguments vers ou à partir de chaînes.  
   
  `vtNew`  
- [in] Spécifie le type pour `pvarDst` pour devenir.  
+ dans Spécifie le type de `pvarDst` à transformer.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Le `pvarDst` et `pvarSrc` des arguments peuvent être égales, auquel cas la valeur d’origine est remplacée. Cette méthode passe `pvarDst` à la `VariantClear` (fonction) et par conséquent `pvarDst` doit être initialisé avec une valeur valide.  
+ Les arguments `pvarDst` et `pvarSrc` peuvent être égaux, auquel cas la valeur d’origine est remplacée. Cette méthode passe `pvarDst` à la fonction `VariantClear` et, par conséquent, `pvarDst` doit être initialisée à une valeur valide.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)

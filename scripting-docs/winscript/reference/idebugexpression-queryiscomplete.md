@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::QueryIsComplete | Microsoft Docs
+title: 'IDebugExpression :: QueryIsComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c74ff962585d4295ea4c2d21a1ee31fdfc817af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c260ac5c02052f11f70e479588d65b71b4971267
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946314"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571979"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
 Détermine si l’opération est terminée.  
@@ -34,14 +34,14 @@ HRESULT QueryIsComplete();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
-|`S_OK`|La méthode a réussi et que l’opération est terminée.|  
+|`S_OK`|La méthode a réussi et l’opération est terminée.|  
 |`S_FALSE`|L’opération est toujours en attente.|  
   
 ## <a name="remarks"></a>Notes  

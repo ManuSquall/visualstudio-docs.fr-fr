@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
+title: 'IActiveScriptSite :: GetDocVersionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992744"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571132"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Récupère une chaîne définie par l’hôte qui identifie de façon unique la version actuelle du document. Si le document associé a changé en dehors de la portée de Script Windows (comme dans le cas d’une page HTML en cours de modification avec le bloc-notes), le moteur de script pouvez l’enregistrer, ainsi que son état persistant, en forçant une recompilation, la prochaine fois que le script est chargé.  
+Récupère une chaîne définie par l’hôte qui identifie de façon unique la version du document actuel. Si le document associé a été modifié en dehors de l’étendue de Windows Script (comme dans le cas d’une page HTML en cours de modification avec le bloc-notes), le moteur de script peut l’enregistrer avec son état persistant, en forçant une recompilation lors du chargement suivant du script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,10 +37,10 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Paramètres  
  `pstrVersionString`  
- [out] Adresse de la chaîne de version de document défini par l’hôte.  
+ à Adresse de la chaîne de version de document définie par l’hôte.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK` en cas de réussite, ou `E_NOTIMPL` si cette méthode n’est pas pris en charge.  
+ Retourne `S_OK` en cas de réussite, ou `E_NOTIMPL` si cette méthode n’est pas prise en charge.  
   
 ## <a name="remarks"></a>Notes  
  Si `E_NOTIMPL` est retourné, le moteur de script doit supposer que le script est synchronisé avec le document.  

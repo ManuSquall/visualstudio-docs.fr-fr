@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a66556e9476631fa0372b14e73eb8c6241fc63
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314199"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572484"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 
@@ -32,7 +32,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
 - Les méthodes vous permettent d'organiser votre code : c'est ainsi que votre code est regroupé.
 
-- La plupart du temps, une méthode effectue un petit nombre de choses dans un ordre spécifique, par exemple la façon dont votre méthode `showButton_Click()` (ou `ShowButton_Click()`) affiche une boîte de dialogue, puis charge une image.
+- La plupart du temps, une méthode effectue un petit nombre de choses dans un ordre spécifique, par exemple comment votre méthode `showButton_Click()` (ou `ShowButton_Click()`) affiche une boîte de dialogue, puis charge une image.
 
 - Une méthode contient des *instructions* ou des lignes de code. En d'autres termes, une méthode permet de regrouper des instructions de code.
 
@@ -65,7 +65,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
     > [!TIP]
     > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
-    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour C#, l’extrait de code `if` est en **visuel C#**  . Pour Visual Basic, les extraits de code `if` se trouvent dans **Conditions et boucles** > **Modèles de code**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
+    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour C#, l’extrait de code `if` est en **visuel C#**  . Par Visual Basic, les extraits de code `if` se trouvent dans des **modèles de Code**  >  des**conditions et des boucles**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 

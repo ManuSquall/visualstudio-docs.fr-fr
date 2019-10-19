@@ -1,5 +1,5 @@
 ---
-title: IJsDebugDataTarget::WriteMemory Method | Microsoft Docs
+title: 'IJsDebugDataTarget :: WriteMemory,, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 622de16cc5f755c5d69059a0e0f28d881121861c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33cd23ad784e222f770dfd5c0e7c2d775aa55e42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558175"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572417"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory, méthode
 Lit la mémoire du processus cible.  
@@ -37,21 +37,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse de base à partir de laquelle écrire la cible mémoire du processus.  
+ dans Adresse de base à partir de laquelle écrire la mémoire du processus cible.  
   
  `pMemory`  
- [in] Les données à écrire dans l’espace d’adressage du processus spécifié.  
+ dans Données à écrire dans l’espace d’adressage du processus spécifié.  
   
  `size`  
- [in] Le nombre d’octets à écrire dans le processus.  
+ dans Nombre d’octets à écrire dans le processus.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Avant le transfert de données se produit, le système vérifie que toutes les données de l’adresse de base et de la mémoire de la taille spécifiée est accessible pour un accès en écriture, et si elle n’est pas accessible, la fonction génère une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
+ Avant le transfert de données, le système vérifie que toutes les données de l’adresse de base et la mémoire de la taille spécifiée sont accessibles pour l’accès en écriture, et si elles ne sont pas accessibles, la fonction génère une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

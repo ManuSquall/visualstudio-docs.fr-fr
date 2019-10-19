@@ -15,14 +15,14 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca90a566db422d75fefc44267ffe10504bb872ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e08583f9bb914adfbd144715646991c6070f3f32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816783"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574569"
 ---
-# <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE, énumération
+# <a name="profiler_script_type-enumeration"></a>PROFILER_SCRIPT_TYPE, énumération
 Spécifie le type de script.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -41,12 +41,12 @@ typedef enum {
 |Membre|Description|  
 |------------|-----------------|  
 |PROFILER_SCRIPT_TYPE_USER|Spécifie le code de script écrit par l’utilisateur.|  
-|PROFILER_SCRIPT_TYPE_DYNAMIC|Spécifie le code de script qui est généré dynamiquement pendant l’exécution.|  
-|PROFILER_SCRIPT_TYPE_NATIVE|Spécifie le type de script pour des fonctions natives et les objets qui sont définis par le moteur de script.|  
-|PROFILER_SCRIPT_TYPE_DOM|Spécifie un appel dans le modèle DOM (Document Object) d’Internet Explorer, par exemple, un appel à la `document.getElementById` (méthode).|  
+|PROFILER_SCRIPT_TYPE_DYNAMIC|Spécifie le code de script généré de manière dynamique pendant l’exécution.|  
+|PROFILER_SCRIPT_TYPE_NATIVE|Spécifie le type de script pour les fonctions natives et les objets définis par le moteur de script.|  
+|PROFILER_SCRIPT_TYPE_DOM|Spécifie un appel dans le Document Object Model (DOM) d’Internet Explorer, par exemple, un appel à la méthode `document.getElementById`.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Constantes de Profiler de Script actif, énumérations et structures](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [Constantes, énumérations et structures actives du profileur de script actif](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [IActiveScriptProfilerCallback :: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
+ [IActiveScriptProfilerCallback2 :: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

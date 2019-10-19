@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugFrame::Evaluate | Microsoft Docs
+title: 'IJsDebugFrame :: Evaluate, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6227b97c1fd5fae32db3e13ef72751726c36b043
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558188"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573497"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>IJsDebugFrame::Evaluate, méthode
 Évaluer une expression dans le contexte de ce frame de pile.  
@@ -37,21 +37,21 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Paramètres  
  `pExpressionText`  
- [in] L’expression à évaluer.  
+ dans Expression à évaluer.  
   
  `ppDebugProperty`  
- [out] Objet représentant l’Explorateur de propriétés.  
+ à Objet représentant l’Explorateur de propriétés.  
   
  `pError`  
- [out] Le message d’erreur si une erreur se produit.  
+ à Message d’erreur si une erreur se produit.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Retourne les éléments suivants : S_OK: Évaluation a réussi, * ppDebugProperty contient le résultat de l’évaluation. S_FALSE : L’évaluation génère une erreur (ou l’opération d’évaluation n’est pas pris en charge), \*pError contient le message d’erreur.  
+ Retourne les éléments suivants : S_OK : l’évaluation aboutit, * ppDebugProperty contient le résultat de l’évaluation. S_FALSE : Evaluation génère une erreur (ou l’opération d’évaluation n’est pas prise en charge), \*pError contient le message d’erreur.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

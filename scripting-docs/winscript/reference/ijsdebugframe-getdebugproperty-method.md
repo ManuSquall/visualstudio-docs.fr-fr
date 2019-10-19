@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugFrame::GetDebugProperty | Microsoft Docs
+title: 'IJsDebugFrame :: GetDebugProperty, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3ababdae51e95d6a3234c4e55f3e20ffa5fd760
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 780a1559f5ac79dddcc8065034c6f6478995b7dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558201"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562305"
 ---
 # <a name="ijsdebugframegetdebugproperty-method"></a>IJsDebugFrame::GetDebugProperty, méthode
 Retourne un Explorateur de propriétés pour ce frame de pile.  
@@ -35,12 +35,12 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Paramètres  
  `ppDebugProperty`  
- [out] Objet représentant l’Explorateur de propriétés.  
+ à Objet représentant l’Explorateur de propriétés.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Interfaces de débogueur de Script actif | Microsoft Docs
+title: Interfaces du débogueur de script actif | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,21 +14,21 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422463"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572703"
 ---
 # <a name="active-script-debugger-interfaces"></a>Débogueur de script actif, interfaces
-Les fichiers d’en-tête activdbg.h et activdbg100.h fournissent les interfaces, les énumérations et les structures répertoriés dans cette section. Ils sont pour le débogage de script.  
+Les fichiers d’en-tête activdbg. h et activdbg100. h fournissent les interfaces, les énumérations et les structures listées dans cette section. Elles concernent le script de débogage.  
   
 > [!NOTE]
-> Le `IJSDebug*` interfaces et la `IEnumJsStackFrames` interface ont été apparus dans Internet Explorer 11 pour le débogage de code natif avec script. Le fichier d’en-tête pour ces interfaces est jscript9diag.h.  
+> Les interfaces `IJSDebug*` et l’interface `IEnumJsStackFrames` ont d’abord été publiées dans Internet Explorer 11 pour déboguer le code natif avec le script. Le fichier d’en-tête pour ces interfaces est jscript9diag. h.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- Les interfaces suivantes autoriser le débogage de linguistiquement neutre, hôte neutre :  
+ Les interfaces suivantes autorisent le débogage indépendant de la langue, indépendant de l’hôte :  
   
 - [Constantes de débogueur de script actif, énumérations et structures](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   

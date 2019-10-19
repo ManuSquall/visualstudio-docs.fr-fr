@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Microsoft Docs
+title: 'IActiveScript :: GetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57c4282b7ec77eb4af2ffa983479ae77388e1c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 567c7b5c1ead5388e6ec9c67d6ab6f9f580adf20
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935769"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575742"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Récupère l’objet de site associé avec le moteur de Script de Windows.  
+Récupère l’objet de site associé au moteur de script Windows.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,21 +38,21 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>Paramètres  
  `iid`  
- [in] Identificateur de l’interface demandée.  
+ dans Identificateur de l’interface demandée.  
   
  `ppvSiteObject`  
- [out] Adresse de l’emplacement qui reçoit le pointeur d’interface à l’objet de site de l’hôte.  
+ à Adresse de l’emplacement qui reçoit le pointeur d’interface vers l’objet site de l’hôte.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
 |`E_INVALIDARG`|Un argument n’est pas valide.|  
-|`E_NOINTERFACE`|L’interface spécifiée n’est pas pris en charge.|  
+|`E_NOINTERFACE`|L’interface spécifiée n’est pas prise en charge.|  
 |`E_POINTER`|Un pointeur non valide a été spécifié.|  
-|`S_FALSE`|Aucun site n’a été définie ; le `ppvSiteObject` paramètre est défini sur `NULL`.|  
+|`S_FALSE`|Aucun site n’a été défini. le paramètre `ppvSiteObject` a la valeur `NULL`.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScript](../../winscript/reference/iactivescript.md)

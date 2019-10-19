@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName | Microsoft Docs
+title: 'IScriptEntry :: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c99cda48a20efb41b2535645ccdb50be8bb6d6bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787768"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575447"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-Pour les entrées qui représentent un seul objet (par exemple, une fonction), retourne le nom de l’objet.  
+Pour les entrées qui représentent un seul objet (comme une fonction), retourne le nom de l’objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,19 +37,19 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstr`  
- [out] Le nom de l’objet représenté par le `IScriptEntry` bloc de script. Si une entrée ne représente pas un objet unique, la valeur NULL est retournée.  
+ à Nom de l’objet représenté par le bloc de script `IScriptEntry`. Si une entrée ne représente pas un seul objet, la valeur NULL est retournée.  
   
- Entrées enfants représentent un objet de fonction unique.  
+ Les entrées enfants représentent un objet de fonction unique.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [IScriptEntry (Interface)](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 de l' [interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

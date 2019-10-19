@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetDocumentAttributes | Microsoft Docs
+title: 'IDebugDocumentText :: GetDocumentAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8f545d9a8208440299d0dccb16145c6ef0c8731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3a97c42037e5f7439692e3c3185b4194e63dc2a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008653"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572158"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
 Retourne les attributs du document.  
@@ -37,12 +37,12 @@ HRESULT GetDocumentAttributes(
   
 #### <a name="parameters"></a>Paramètres  
  `ptextdocattr`  
- [out] Les attributs de texte du document.  
+ à Attributs de texte du document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT GetDocumentAttributes(
  Cette méthode retourne les attributs du document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
+ @No__t_1 de l' [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
  [Constantes TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

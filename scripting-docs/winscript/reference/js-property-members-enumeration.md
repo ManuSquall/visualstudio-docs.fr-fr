@@ -15,14 +15,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 597764d1e55b895c30e2b00981a7a1be53e16022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3645e95859e2c2b785e01c7ee9a3cbee8155138d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571730"
 ---
-# <a name="jspropertymembers-enumeration"></a>Énumération JS_PROPERTY_MEMBERS
+# <a name="js_property_members-enumeration"></a>Énumération JS_PROPERTY_MEMBERS
 Indicateurs pour spécifier le type d'informations à retourner dans une requête pour les membres d'un objet.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -35,13 +35,13 @@ enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_A
   
 ### <a name="values"></a>Valeurs  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
-|`JS_PROPERTY_MEMBERS_ALL`|Représente une demande pour énumérer tous les membres.|  
-|`JS_PROPERTY_MEMBERS_ARGUMENTS`|Représente une demande pour énumérer uniquement les arguments.|  
+|`JS_PROPERTY_MEMBERS_ALL`|Représente une demande d’énumération de tous les membres.|  
+|`JS_PROPERTY_MEMBERS_ARGUMENTS`|Représente une demande d’énumération des arguments uniquement.|  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

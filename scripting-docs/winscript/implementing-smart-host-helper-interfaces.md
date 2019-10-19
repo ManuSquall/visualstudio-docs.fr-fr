@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976192"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574385"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implémentation des interfaces d'assistance d'hôte intelligent
 [L’interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifie considérablement la tâche de création d’un hôte intelligent pour le débogage, car elle fournit des implémentations pour de nombreuses interfaces nécessaires pour l’hébergement intelligent.  

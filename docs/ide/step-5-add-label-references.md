@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Ajouter des références aux étiquettes'
+title: 'Étape 5 : ajouter des références d’étiquettes'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdcecbdac0a866bd5c6a15a78d8c0ba2a33051a
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
-ms.translationtype: MT
+ms.openlocfilehash: 4fbe9b0005ce190eda6a88dea2f6b5f80890743c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289678"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562944"
 ---
-# <a name="step-5-add-label-references"></a>Étape 5 : Ajouter des références aux étiquettes
+# <a name="step-5-add-label-references"></a>Étape 5 : ajouter des références d’étiquettes
 Le programme doit effectuer le suivi des contrôles d’étiquette choisis par le joueur. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.
 
 ## <a name="to-add-label-references"></a>Pour ajouter des références aux contrôles Label
@@ -31,11 +31,11 @@ Le programme doit effectuer le suivi des contrôles d’étiquette choisis par l
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>@no__t 0Programming-contrôle de langue pour docs. Microsoft. com @ no__t-1
+     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle de langage ![Programming pour Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
 
-     Ces variables de référence sont identiques aux instructions que vous avez utilisées avant pour ajouter des objets (comme les objets <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> et <xref:System.Random> ) à votre formulaire. Toutefois, ces instructions n'entraînent pas l'affichage de deux contrôles d'étiquette supplémentaires dans le formulaire étant donné qu'il n'existe aucun `new` mot-clé dans l'une ou l'autre des deux instructions. Sans le `new` mot-clé, aucun objet n'est créé. C’est pourquoi `firstClicked` et `secondClicked` sont appelées variables de référence : elles effectuent simplement le suivi (ou font référence à) des objets Label.
+     Ces variables de référence sont identiques aux instructions que vous avez utilisées avant pour ajouter des objets (comme les objets <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> et <xref:System.Random> ) à votre formulaire. Toutefois, ces instructions n'entraînent pas l'affichage de deux contrôles d'étiquette supplémentaires dans le formulaire étant donné qu'il n'existe aucun `new` mot-clé dans l'une ou l'autre des deux instructions. Sans le `new` mot-clé, aucun objet n'est créé. C'est la raison pour laquelle `firstClicked` et `secondClicked` sont appelées variables de référence : elles sont uniquement chargées de suivre (ou de référencer) les objets d’étiquette.
 
-     Lorsqu'une variable n'effectue pas le suivi d'un objet, elle est définie sur une valeur spéciale : `null` en Visual C# et `Nothing` en Visual Basic. Au démarrage du programme, `firstClicked` et `secondClicked` ont donc la valeur `null` ou `Nothing`, ce qui signifie que les variables n'effectuent aucun suivi.
+     Lorsqu’une variable n’effectue pas le suivi d’un objet, elle est définie sur une valeur réservée spéciale C# : `null` dans et `Nothing` dans Visual Basic. Au démarrage du programme, `firstClicked` et `secondClicked` ont donc la valeur `null` ou `Nothing`, ce qui signifie que les variables n'effectuent aucun suivi.
 
 2. Modifiez votre gestionnaire d'événements <xref:System.Windows.Forms.Control.Click> pour qu’il utilise la nouvelle variable de référence `firstClicked`. Supprimez la dernière instruction dans la méthode du gestionnaire d'événements `label_Click()` (`clickedLabel.ForeColor = Color.Black;`) et remplacez-la par l'instruction `if` suivante. (Veillez à inclure le commentaire et la totalité de l'instruction `if`.)
 
@@ -44,7 +44,7 @@ Le programme doit effectuer le suivi des contrôles d’étiquette choisis par l
 
 3. Enregistrez et exécutez votre programme. Choisissez l'un des contrôles d'étiquette, et son icône s'affiche.
 
-4. Choisissez le contrôle d'étiquette suivant, et notez que rien ne se passe. Le programme effectue déjà le suivi du premier contrôle choisissez que le joueur a choisi et donc `firstClicked` n'est pas égal à `null` en Visual C# ou `Nothing` en Visual Basic. Lorsque votre instruction `if` vérifie si `firstClicked` est égal à `null` ou `Nothing`, elle découvre que ce n'est pas le cas et n'exécute pas les instructions dans l'instruction `if`. Par conséquent, seule la première icône que le joueur a choisie devient noire et les autres restent invisibles, comme indiqué dans l'image suivante.
+4. Choisissez le contrôle d'étiquette suivant, et notez que rien ne se passe. Le programme effectue déjà le suivi du premier contrôle Label choisi par le joueur, donc `firstClicked` n’est pas égal à C# `null` dans ou `Nothing` dans Visual Basic. Lorsque votre instruction `if` vérifie si `firstClicked` est égal à `null` ou `Nothing`, elle découvre que ce n'est pas le cas et n'exécute pas les instructions dans l'instruction `if`. Par conséquent, seule la première icône que le joueur a choisie devient noire et les autres restent invisibles, comme indiqué dans l'image suivante.
 
      ![Jeu de combinaisons affichant une icône](../ide/media/express_tut4step5.png)<br/>
 **Jeu de combinaisons** affichant une icône
@@ -53,6 +53,6 @@ Le programme doit effectuer le suivi des contrôles d’étiquette choisis par l
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 6 : Ajouter un minuteur](../ide/step-6-add-a-timer.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).
 
-- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Pour revenir à l'étape précédente du tutoriel, consultez [Étape 4 : ajouter un gestionnaire d'événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md).

@@ -19,14 +19,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0324353d716430148b4b3c7b8adf9262e0dc3b7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3170e310aa3177e2ca7a1dd81ead02bcc4050114
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955274"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572596"
 ---
-# <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
+# <a name="dbgprop_attrib_flags"></a>DBGPROP_ATTRIB_FLAGS
 Décrit plusieurs attributs d'un objet `IDebugProperty`. Membre de la structure `DebugPropertyInfo`.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -110,5 +110,5 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  Ces indicateurs sont également utilisés pour filtrer les enfants d'un objet. Les valeurs peuvent être combinées avec une opération OR au niveau du bit.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugProperty (Interface)](../../winscript/reference/idebugproperty-interface.md)   
+ @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

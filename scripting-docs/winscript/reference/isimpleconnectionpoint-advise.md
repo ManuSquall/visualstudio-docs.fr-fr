@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Advise | Microsoft Docs
+title: 'ISimpleConnectionPoint :: Advise | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98db9c92f682808ce8ecc9f6aa382a2eb2bd8495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7d08d4774dffbfd840c674b15abe82bedb37e5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786260"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571825"
 ---
 # <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
 Établit une connexion entre l’objet de point de connexion simple et le récepteur du client.  
@@ -38,15 +38,15 @@ HRESULT Advise(
   
 #### <a name="parameters"></a>Paramètres  
  `pdisp`  
- [in] Pointeur vers le `IDispatch` le récepteur de notifications de l’interface sur le client. Récepteur du client reçoit les appels sortants à partir du point de connexion simple.  
+ dans Pointeur vers l’interface `IDispatch` sur le récepteur de notification du client. Le récepteur du client reçoit les appels sortants du point de connexion simple.  
   
  `pdwCookie`  
- [out] Pointeur vers un jeton retourné qui identifie de façon unique cette connexion. L’appelant utilise ultérieurement ce jeton pour supprimer la connexion en le passant à la `ISimpleConnectionPoint::Unadvise` (méthode). Si la connexion n’a pas été établie, cette valeur est zéro.  
+ à Pointeur vers un jeton retourné qui identifie de façon unique cette connexion. L’appelant utilise ce jeton ultérieurement pour supprimer la connexion en le passant à la méthode `ISimpleConnectionPoint::Unadvise`. Si la connexion n’a pas été établie, cette valeur est égale à zéro.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -54,5 +54,5 @@ HRESULT Advise(
  Cette méthode établit une connexion entre l’objet de point de connexion simple et le récepteur du client.  
   
 ## <a name="see-also"></a>Voir aussi  
- [ISimpleConnectionPoint (Interface)](../../winscript/reference/isimpleconnectionpoint-interface.md)   
+ @No__t_1 de l' [interface ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)  
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

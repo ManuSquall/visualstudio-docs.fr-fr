@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend | Microsoft Docs
+title: 'IRemoteDebugApplicationThread :: suspend | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ba783b1f6f275eafe05872ad3755b425b65407e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5d4d8c541016de71ee1aabffe0b211f850cb7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788150"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575473"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
-Suspend le thread.  
+Interrompt le thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>Paramètres  
  `pdwCount`  
- [out] Le compteur de suspension du thread.  
+ à Le nombre de suspensions pour le thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Lorsque cette méthode suspend le thread, il incrémente le compteur de suspension.  
+ Lorsque cette méthode interrompt le thread, il incrémente le nombre de suspensions.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

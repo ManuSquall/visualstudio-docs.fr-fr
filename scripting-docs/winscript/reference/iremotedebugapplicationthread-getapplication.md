@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetApplication | Microsoft Docs
+title: 'IRemoteDebugApplicationThread :: GetApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe33d75f7e03944eb0a6f533f2955871ddee342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b21715345d698e6bd42c1946e06002da2b97d5b3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788230"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575271"
 ---
 # <a name="iremotedebugapplicationthreadgetapplication"></a>IRemoteDebugApplicationThread::GetApplication
 Retourne l’objet d’application associé à ce thread.  
@@ -37,12 +37,12 @@ HRESULT GetApplication(
   
 #### <a name="parameters"></a>Paramètres  
  `pprda`  
- [out] L’objet d’application associé à ce thread.  
+ à Objet application associé à ce thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

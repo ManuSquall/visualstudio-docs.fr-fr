@@ -14,21 +14,21 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006442"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575638"
 ---
 # <a name="syntax-error-javascript"></a>Erreur de syntaxe (JavaScript)
-Vous avez créé une instruction qui enfreint une ou plusieurs règles grammaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Vous avez créé une instruction qui enfreint une ou plusieurs des règles grammaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Vérifiez la syntaxe de votre programme sur le numéro de ligne indiqué.  
+- Double-Vérifiez la syntaxe de votre programme sur le numéro de ligne indiqué.  
   
-- Recherchez les mauvais acheminement des parenthèses ou d’accolades.  
+- Recherchez des parenthèses ou des accolades inversées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet Error](../../javascript/reference/error-object-javascript.md)

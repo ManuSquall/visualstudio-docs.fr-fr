@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAddChild | Microsoft Docs
+title: 'IDebugApplicationNodeEvents :: onAddChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a9721479d630b30e14a8bb356fe07f3656aef1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 052fe47f1ddf2d20e7486a95a9dd79bc388f7ebc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822260"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574704"
 ---
 # <a name="idebugapplicationnodeeventsonaddchild"></a>IDebugApplicationNodeEvents::onAddChild
 Gère l’événement lorsqu’un nœud enfant est ajouté à un objet de nœud d’application de débogage.  
@@ -37,21 +37,21 @@ HRESULT onAddChild(
   
 #### <a name="parameters"></a>Paramètres  
  `prddpChild`  
- [in] Le nœud applications de débogage enfant qui a été ajouté.  
+ dans Nœud d’application de débogage enfant qui a été ajouté.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode gère l’événement lorsqu’un nœud enfant est ajouté à un objet de nœud d’application de débogage.  
   
- Les implémenteurs de le `IDebugApplicationNode` interface déclencher cet événement  
+ Les implémenteurs de l’interface `IDebugApplicationNode` déclenchent cet événement  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplicationNodeEvents Interface](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
- [IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
+ @No__t_1 de l' [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents :: onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
  [Interface IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

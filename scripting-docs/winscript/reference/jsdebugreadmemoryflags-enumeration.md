@@ -1,5 +1,5 @@
 ---
-title: JsDebugReadMemoryFlags Enumeration | Microsoft Docs
+title: Énumération JsDebugReadMemoryFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830460"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571700"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Énumération JsDebugReadMemoryFlags
 Indicateurs pour spécifier le comportement pendant la lecture de la mémoire.  
@@ -35,13 +35,13 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 ### <a name="values"></a>Valeurs  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Indique que l’appelant souhaite que l’opération de lecture réussisse si seule une partie de la mémoire lecture a réussi. S’il est défini, une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS sera être déclenchée uniquement si « Address » n’est pas valide. Si cet indicateur est désactivé, une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS sera déclenchée si une partie de la mémoire demandée était illisible.|  
-|`None`|Indique que l’appelant souhaite le comportement par défaut pour ReadMemory.|  
+|`JsDebugAllowPartialRead`|Indique que l’appelant souhaite que l’opération de lecture réussisse si seule une partie de la lecture de la mémoire a réussi. Si cette valeur est définie, une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS est déclenchée uniquement si « Address » n’est pas valide. Si cet indicateur est désactivé, une erreur E_JsDEBUG_INVALID_MEMORY_ADDRESS est déclenchée si une partie de la mémoire demandée était illisible.|  
+|`None`|Indique que l’appelant souhaite obtenir le comportement par défaut pour ReadMemory (.|  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

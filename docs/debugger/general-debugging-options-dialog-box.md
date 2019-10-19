@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536035"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569063"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -95,7 +95,7 @@ Les **fichiers sources doivent correspondre exactement à la version d’origine
 
 **Rediriger tout le texte de la fenêtre sortie vers la fenêtre exécution**: envoie tous les messages du débogueur qui s’affichent normalement dans la fenêtre **sortie** vers la fenêtre **exécution** à la place.
 
-**Afficher la structure brute des objets dans les fenêtres de variables**: désactive toutes les personnalisations d’affichage de la structure des objets. Pour plus d’informations sur les personnalisations d’affichage, consultez [créer des vues personnalisées d’objets managés](../debugger/create-custom-views-of-dot-managed-objects.md).
+**Afficher la structure brute des objets dans les fenêtres de variables**: désactive toutes les personnalisations d’affichage de la structure des objets. Pour plus d’informations sur les personnalisations d’affichage, consultez [créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-managed-objects.md).
 
 **Supprimer l’optimisation JIT lors du chargement du module (managé uniquement)** : désactive l’optimisation JIT du code managé lorsqu’un module est chargé et que JIT est compilé pendant que le débogueur est attaché. La désactivation de l'optimisation peut simplifier le débogage de certains problèmes, mais elle se fait au détriment des performances. Si vous utilisez Uniquement mon code, la suppression de l'optimisation JIT peut entraîner l'affichage du code non-utilisateur comme du code utilisateur (« Mon code »). Pour plus d’informations, consultez [optimisation et débogage JIT](../debugger/jit-optimization-and-debugging.md).
 

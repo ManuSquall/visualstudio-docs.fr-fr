@@ -13,28 +13,28 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c11aada6b8c39c7dd5f0b2a6b30cdd837aa0edda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b7973aee209695592f022d0e05a770caa1e694c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786709"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571885"
 ---
 # <a name="iscriptscriptlet-interface"></a>IScriptScriptlet, interface
-Un objet qui implémente le `IScriptScriptlet` interface représente un script du Gestionnaire d’événements.  
+Un objet qui implémente l’interface `IScriptScriptlet` représente un script de gestionnaire d’événements.  
   
- Outre les méthodes héritées de `IScriptEntry`, le `IScriptScriptlet` interface expose les méthodes suivantes.  
+ En plus des méthodes héritées de `IScriptEntry`, l’interface `IScriptScriptlet` expose les méthodes suivantes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Retourne le nom de l’événement qui est associé avec le scriptlet.|  
-|[IScriptScriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Retourne le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas de n’importe quel espace blanc.|  
-|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Retourne le dernier identificateur dans le nom qualifié complet de l’hôte de l’objet d’un scriptlet.|  
-|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Définit le nom de l’événement qui est associé avec le scriptlet.|  
-|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Définit le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas de n’importe quel espace blanc.|  
-|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Définit le dernier identificateur dans le nom qualifié complet de l’hôte de l’objet d’un scriptlet.|  
+|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Retourne le nom de l’événement associé au scriptlet.|  
+|[IScriptScriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Retourne le nom d’événement simple associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient aucun espace blanc.|  
+|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Retourne le dernier identificateur dans le nom qualifié complet de l’hôte d’objet d’un scriptlet.|  
+|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Définit le nom de l’événement associé au scriptlet.|  
+|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Définit le nom d’événement simple associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient aucun espace blanc.|  
+|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Définit le dernier identificateur dans le nom qualifié complet de l’hôte d’objet d’un scriptlet.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de création de scripts actifs](../../winscript/reference/active-script-authoring-interfaces.md)

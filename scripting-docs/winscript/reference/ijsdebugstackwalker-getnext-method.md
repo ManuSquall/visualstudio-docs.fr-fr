@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugStackWalker::GetNext | Microsoft Docs
+title: 'IJsDebugStackWalker :: GetNext, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa667402b46a3404c31dfe26307a5893c68ffcc0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977872"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574031"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext, méthode
 Obtient le frame suivant.  
@@ -35,15 +35,15 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Paramètres  
  `ppFrame`  
- [out] Objet représentant le frame de pile.  
+ à Objet représentant le frame de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Retourne E_JsDEBUG_OUTSIDE_OF_VM lorsqu’il n’y a aucune plusieurs frames de pile à énumérer  
+ Retourne E_JsDEBUG_OUTSIDE_OF_VM lorsqu’il n’y a plus de frames de pile à énumérer  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugStackWalker](../../winscript/reference/ijsdebugstackwalker-interface.md)
