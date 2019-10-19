@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576903"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Objet qui implémente cette interface est passé à la [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) méthode chaque fois que le moteur de script rencontre une erreur non gérée. L’hôte appelle ensuite les méthodes sur cet objet pour obtenir des informations sur l’erreur qui s’est produite.  
+Un objet qui implémente cette interface est passé à la méthode [IActiveScriptSite :: OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) chaque fois que le moteur de script rencontre une erreur non gérée. L’hôte appelle ensuite des méthodes sur cet objet pour obtenir des informations sur l’erreur qui s’est produite.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
 |[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Récupère des informations sur une erreur.|  
-|[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Récupère l’emplacement où une erreur s’est produite dans le code source.|  
+|[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Récupère l’emplacement dans le code source où une erreur s’est produite.|  
 |[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Récupère la ligne dans le fichier source où une erreur s’est produite.|  
   
 ## <a name="see-also"></a>Voir aussi  

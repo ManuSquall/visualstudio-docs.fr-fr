@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint | Microsoft Docs
+title: 'IApplicationDebugger :: onHandleBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf8816cd646596ce1f897dfd9d949790d52b7b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3796ea1f50f0c4bcf945dbc10592c048db22757b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991344"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577839"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Gère un événement de point d’arrêt.  
@@ -39,28 +39,28 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>Paramètres  
  `prpt`  
- [in] Le thread où le point d’arrêt s’est produite.  
+ dans Thread où le point d’arrêt s’est produit.  
   
  `br`  
- [in] La raison du point d’arrêt.  
+ dans Raison du point d’arrêt.  
   
  `pError`  
- [in] Informations d’erreur de runtime, fourni quand la valeur de `br` est BREAKREASON_ERROR.  
+ dans Informations d’erreur d’exécution, fournies lorsque la valeur de `br` est BREAKREASON_ERROR.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode est appelée lorsqu’un point d’arrêt est atteint et `IDebugApplication::HandleBreakPoint` est appelée.  
   
- L’application reste en pause jusqu'à ce que l’IDE de débogueur appelle `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ L’application restera suspendue jusqu’à ce que l’IDE du débogueur appelle `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IApplicationDebugger (Interface)](../../winscript/reference/iapplicationdebugger-interface.md)   
- [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
- [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
+ @No__t_1 de l' [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication :: HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
+ [IRemoteDebugApplication :: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
  [Énumération BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

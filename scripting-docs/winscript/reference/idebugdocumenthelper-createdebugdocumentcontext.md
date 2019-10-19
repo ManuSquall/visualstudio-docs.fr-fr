@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHelper :: CreateDebugDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a039b5c4de410e67dc2dfb2859e1f4cc8b1739
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783169"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576990"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Crée un nouveau contexte de document de débogage.  
@@ -39,23 +39,23 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Paramètres  
  `iCharPos`  
- [in] Emplacement du début du contenu du document de débogage.  
+ dans Emplacement du début du contenu du document de débogage.  
   
  `cChars`  
- [in] Nombre de caractères dans le contexte.  
+ dans Nombre de caractères dans le contexte.  
   
  `ppddc`  
- [out] Le nouveau contexte de document de débogage.  
+ à Nouveau contexte de document de débogage.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet à l’hôte créer un nouveau contexte de document de débogage.  
+ Cette méthode permet à l’hôte de créer un nouveau contexte de document de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

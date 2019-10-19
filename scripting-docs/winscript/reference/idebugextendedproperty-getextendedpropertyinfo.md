@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedProperty::GetExtendedPropertyInfo | Microsoft Docs
+title: 'IDebugExtendedProperty :: GetExtendedPropertyInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89067720b6643c8c187e6340fb529989f2439933
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77167c46e02bcf2bf5d3ce5836ad5de103176e93
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946100"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576379"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Extrait des informations étendues pour une propriété étendue, qui est le plus d’informations que le plus simple `IDebugProperty`.  
+Récupère des informations étendues pour une propriété étendue, qui est plus d’informations que la `IDebugProperty` plus simple.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,18 +39,18 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFieldSpec`  
- [in] Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs à compléter le `ExtendedDebugPropertyInfo` structure.  
+ dans Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs à remplir dans la structure `ExtendedDebugPropertyInfo`.  
   
  `nRadix`  
- [in] Base pour être utilisées pour interpréter toutes les informations numériques.  
+ dans Base à utiliser pour interpréter toutes les informations numériques.  
   
  `pExtendedPropertyInfo`  
- [out] Retourne le `ExtendedDebugPropertyInfo` structure qui décrit la propriété.  
+ à Retourne la structure `ExtendedDebugPropertyInfo` qui décrit la propriété.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une liste valide `HRESULT`, généralement `S_OK`.  
+ Retourne un `HRESULT` valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugExtendedProperty (Interface)](../../winscript/reference/idebugextendedproperty-interface.md)   
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
+ @No__t_1 de l' [interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
  [Structure ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

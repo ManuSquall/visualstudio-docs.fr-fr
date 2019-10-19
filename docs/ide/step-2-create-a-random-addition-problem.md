@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314095"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576293"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d’addition aléatoire
 
@@ -73,7 +73,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
      Lorsque vous entrez un point après un objet, IntelliSense affiche une liste des membres de l'objet, tels que des propriétés, des méthodes et des événements.
 
     > [!NOTE]
-    > Lorsque vous utilisez la méthode `Next()` avec l'objet `Random`, comme lorsque vous appelez `randomizer.Next(50)`, vous obtenez un nombre aléatoire inférieur à 50 (compris entre 0 et 49). Dans cet exemple, vous avez appelé `randomizer.Next(51)`. Vous avez utilisé 51 et non 50 pour que l'addition des deux nombres aléatoires donne une somme comprise entre 0 et 100. Si vous passez 50 à la méthode `Next()`, elle choisira un nombre de 0 à 49, si bien que la plus haute somme possible sera 98 et non 100. Une fois que les deux premières instructions de la méthode ont été exécutées, chacune des deux variables de type entier, **addend1** et **addend2**, contient un nombre aléatoire compris entre 0 et 50. Cette capture d'écran montre le code Visual C#, mais IntelliSense fonctionne de la même manière pour Visual Basic.
+    > Lorsque vous utilisez la méthode `Next()` avec l'objet `Random`, comme lorsque vous appelez `randomizer.Next(50)`, vous obtenez un nombre aléatoire inférieur à 50 (compris entre 0 et 49). Dans cet exemple, vous avez appelé `randomizer.Next(51)`. Vous avez utilisé 51 et non 50 pour que l'addition des deux nombres aléatoires donne une somme comprise entre 0 et 100. Si vous passez 50 à la méthode `Next()`, elle choisira un nombre de 0 à 49, si bien que la plus haute somme possible sera 98 et non 100. Une fois que les deux premières instructions de la méthode ont été exécutées, chacune des deux variables de type entier, **addend1** et **addend2**, contient un nombre aléatoire compris entre 0 et 50. Cette capture d' C# écran montre le code, mais IntelliSense fonctionne de la même façon pour Visual Basic.
 
      Examinez attentivement ces instructions.
 

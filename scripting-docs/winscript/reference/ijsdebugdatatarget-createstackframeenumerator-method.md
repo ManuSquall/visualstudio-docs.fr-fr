@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugDataTarget::CreateStackFrameEnumerator | Microsoft Docs
+title: 'IJsDebugDataTarget :: CreateStackFrameEnumerator, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59d58f0256a326d3922e280818176a43ef4aa5ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583078"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577628"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator, méthode
 Crée un énumérateur pour les frames de pile.  
@@ -36,15 +36,15 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>Paramètres  
  `threadId`  
- [in] Thread en cours d’exécution dans le processus cible.  
+ dans Thread s’exécutant dans le processus cible.  
   
  `ppEnumerator`  
- [out] Énumérateur pour les frames de pile.  
+ à Énumérateur des frames de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

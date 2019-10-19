@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetLanguageFlags | Microsoft Docs
+title: 'IActiveScriptAuthor :: GetLanguageFlags | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68da16513050bd87642be2c96212a330a0916608
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935469"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576205"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
-Retourne des informations de langue.  
+Retourne des informations sur la langue.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,25 +37,25 @@ HRESULT GetLanguageFlags(
   
 #### <a name="parameters"></a>Paramètres  
  `pgrfasa`  
- [out] Indicateurs qui contiennent des informations de langue. Peut être une combinaison des valeurs suivantes :  
+ à Indicateurs qui contiennent les informations de langue. Peut être une combinaison des valeurs suivantes :  
   
-|Constante|Value|Description|  
+|Constante|valeur|Description|  
 |--------------|-----------|-----------------|  
-|fasaPreferInternalHandler|0x0001|Le langage préfère la création du Gestionnaire d’événements script par le moteur plutôt que l’application de création de script.|  
-|fasaSupportInternalHandler|0x0002|Le langage prend en charge les gestionnaires d’événements de script créées par le moteur de création de script.|  
+|fasaPreferInternalHandler|0x0001|Le langage préfère la création du gestionnaire d’événements de script par le moteur de création de script au lieu de l’application.|  
+|fasaSupportInternalHandler|0x0002|Le langage prend en charge les gestionnaires d’événements de script créés par le moteur de création de script.|  
 |fasaCaseSensitive|0x0004|Le langage de script respecte la casse.|  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Si le moteur de création de script gère des gestionnaires d’événements, votre application doit appeler `CreateChildHandler` à partir d’un `IScriptEntry` objet. Cette opération crée un `IScriptScriptlet` objet qui correspond au gestionnaire d’événements. Le moteur ajoute également un gestionnaire d’événements à l’écriture de script. Le Gestionnaire d’événements est une fonction vide qui contient les informations de signature spécifié.  
+ Si le moteur de création de script gère les gestionnaires d’événements, votre application doit appeler `CreateChildHandler` à partir d’un objet `IScriptEntry`. Cela crée un objet `IScriptScriptlet` qui correspond au gestionnaire d’événements. Le moteur ajoute également un gestionnaire d’événements à l’entrée de script. Le gestionnaire d’événements est une fonction vide qui contient les informations de signature spécifiées.  
   
- Si votre application gère des gestionnaires d’événements, il doit appeler `CreateChildHandler` à partir d’un `IScriptNode` objet qui représente un scriptlet de gestionnaire d’événements. Cette opération crée un `IScriptScriptlet` objet qui est associé avec le scriptlet de gestionnaire d’événements. L’application doit également ajouter une fonction vide en tant qu’événement gestionnaire vers un nouveau ou existant `IScriptEntry` objet.  
+ Si votre application gère des gestionnaires d’événements, elle doit appeler `CreateChildHandler` à partir d’un objet `IScriptNode` qui représente un scriptlet de gestionnaire d’événements. Cela crée un objet `IScriptScriptlet` associé au scriptlet du gestionnaire d’événements. L’application doit également ajouter une fonction vide en tant que gestionnaire d’événements à un objet `IScriptEntry` nouveau ou existant.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

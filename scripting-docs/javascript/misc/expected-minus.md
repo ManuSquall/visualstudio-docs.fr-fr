@@ -1,5 +1,5 @@
 ---
-title: Attendu '-' | Microsoft Docs
+title: "'-'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42283773fc68c08ec3734937d2895c9613a6893f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934897"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577565"
 ---
-# <a name="expected--"></a>Attendu '-'
-Vous a tenté de créer une expression régulière littérale, mais n’incluez pas un des barres obliques (/). Tout comme les littéraux de chaîne sont écrits en tant que caractères dans une paire de guillemets, littéraux d’expressions régulières sont exprimées en tant que caractères dans une paire de caractères de barre oblique (/).  
+# <a name="expected--"></a>'-'Attendu
+Vous avez tenté de créer un littéral d’expression régulière, mais vous n’avez pas inclus l’une des barres obliques (/). Tout comme les littéraux de chaîne sont écrits sous forme de caractères dans une paire de guillemets, les littéraux d’expressions régulières sont exprimés en tant que caractères dans une paire de barres obliques (/).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Insérer une barre oblique fin pour marquer la fin de l’expression régulière.  
+- Insérez une barre oblique de fin pour marquer la fin de l’expression régulière.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ @No__t_1 d' [objet d’expression régulière](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)

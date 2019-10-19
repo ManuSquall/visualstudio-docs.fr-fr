@@ -14,15 +14,15 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adc34a0605561852885087151796cceb20aead5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934884"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577591"
 ---
 # <a name="expected-identifier-string-or-number"></a>Identificateur, chaîne ou nombre attendu(e)
-Vous avez utilisé la syntaxe de littéral incorrecte pour déclarer un objet littéral. Les propriétés d’un littéral d’objet doivent être un identificateur, chaîne ou un nombre. Un littéral d’objet (également appelé un « initialiseur d’objet ») se compose d’une liste séparée par des virgules de paires propriété : valeur mises entre parenthèses. Exemple :  
+Vous avez utilisé une syntaxe littérale incorrecte pour déclarer un littéral d’objet. Les propriétés d’un littéral d’objet doivent être un identificateur, une chaîne ou un nombre. Un littéral d’objet (également appelé « initialiseur d’objet ») se compose d’une liste séparée par des virgules de paires propriété : valeur, toutes placées entre crochets. Exemple :  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -30,7 +30,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Vérifiez que vous utilisez la syntaxe de littéral appropriée.  
+- Veillez à utiliser la syntaxe littérale appropriée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Opérateur virgule (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

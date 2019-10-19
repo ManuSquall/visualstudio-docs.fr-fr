@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Microsoft Docs
+title: 'IDebugStackFrameSnifferEx :: EnumStackFramesEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576710"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Retourne un énumérateur de frames de pile pour le thread actuel.  
+Retourne un énumérateur des frames de pile pour le thread actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,20 +38,20 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Paramètres  
  `dwSpMin`  
- [in] La limite inférieure d’adresse pour l’énumération des frames de pile.  
+ dans Limite d’adresse inférieure pour l’énumération des frames de pile.  
   
  `ppedsf`  
- [out] Énumérateur de frames de pile pour le thread actuel.  
+ à Énumérateur des frames de pile pour le thread actuel.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- L’énumérateur de frame de pile retourne les frames à partir du haut de la pile, la trame envoyées le plus récemment. L’énumérateur contient uniquement les frames de pile avec des adresses supérieurs ou égales à `dwSpMin`.  
+ L’énumérateur frame de pile retourne les frames en commençant par le haut de la pile, avec le dernier frame ayant fait l’objet d’un push. L’énumérateur contient uniquement des frames de pile dont les adresses sont supérieures ou égales à `dwSpMin`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugStackFrameSnifferEx](../../winscript/reference/idebugstackframesnifferex-interface.md)

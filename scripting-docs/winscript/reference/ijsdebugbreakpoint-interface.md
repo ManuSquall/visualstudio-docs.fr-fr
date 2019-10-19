@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14823baeb999ad24aabef9b2b55b59a7b5d08c71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6bb4e12f0e08baf1842d251347f35265425b999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583104"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577677"
 ---
 # <a name="ijsdebugbreakpoint-interface"></a>IJsDebugBreakPoint, interface
 Représente un point d’arrêt.  
@@ -31,16 +31,16 @@ IJsDebugBreakPoint : public IUnknown;
   
 ### <a name="public-methods"></a>M&#233;thodes publiques  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[Méthode IJsDebugBreakPoint::Delete](../../winscript/reference/ijsdebugbreakpoint-delete-method.md)|Supprime le point d'arrêt.|  
 |[Méthode IJsDebugBreakPoint::Disable](../../winscript/reference/ijsdebugbreakpoint-disable-method.md)|Désactive le point d’arrêt.|  
 |[Méthode IJsDebugBreakPoint::Enable](../../winscript/reference/ijsdebugbreakpoint-enable-method.md)|Active le point d’arrêt.|  
-|[Méthode IJsDebugBreakPoint::GetDocumentPosition](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Retourne la position de l’instruction où le point d’arrêt a été lié.|  
+|[Méthode IJsDebugBreakPoint::GetDocumentPosition](../../winscript/reference/ijsdebugbreakpoint-getdocumentposition-method.md)|Retourne la position de l’instruction à laquelle le point d’arrêt a été lié.|  
 |[Méthode IJsDebugBreakPoint::IsEnabled](../../winscript/reference/ijsdebugbreakpoint-isenabled-method.md)|Détermine si le point d’arrêt est activé.|  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

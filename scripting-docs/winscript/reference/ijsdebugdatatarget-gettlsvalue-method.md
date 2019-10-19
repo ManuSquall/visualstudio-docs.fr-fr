@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugDataTarget::GetTlsValue | Microsoft Docs
+title: 'IJsDebugDataTarget :: GetTLSValue,, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf9acf370656d5310a03d68ed74e10671a0bc2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582808"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577605"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue, méthode
-Pour le thread en cours de débogage, récupère la valeur dans l’emplacement de stockage local (TLS) de thread pour l’index TLS spécifié.  
+Pour le thread en cours de débogage, récupère la valeur de l’emplacement de stockage local des threads (TLS) pour l’index TLS spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,21 +37,21 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>Paramètres  
  `threadId`  
- [in] En cours d’exécution dans le processus cible pour lire à partir du thread.  
+ dans Thread s’exécutant dans le processus cible à lire.  
   
  `tlsIndex`  
- [in] L’index TLS qui a été alloué lorsque le processus cible a appelé la fonction TlsAlloc.  
+ dans Index TLS qui a été alloué lorsque le processus cible a appelé la fonction TlsAlloc.  
   
  `pValue`  
- [out] La valeur de taille d’un pointeur qui a été stockée dans l’emplacement de thread TLS. Si le thread cible est 32 bits, les 32 bits supérieur de cette valeur sera égal à zéro.  
+ à Valeur de taille de pointeur qui a été stockée dans l’emplacement TLS du thread. Si le thread cible est 32 bits, les 32 bits supérieurs de cette valeur seront nuls.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
  Chaque thread d’un processus possède son propre emplacement pour chaque index TLS.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)
