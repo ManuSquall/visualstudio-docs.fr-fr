@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604895"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645334"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Comptes, Environnement, boîte de dialogue Options
 
@@ -29,11 +29,11 @@ Utilisez cette option pour spécifier s’il faut synchroniser vos paramètres s
 
 ### <a name="enable-device-code-flow"></a>Activer le flux de code de l’appareil
 
-Lorsque cette option est sélectionnée, le comportement de Visual Studio change lorsque vous sélectionnez **Ajouter un compte** dans la page **Fichier** > **Paramètres du compte**. Au lieu de la page **Se connecter à votre compte**, vous voyez une boîte de dialogue contenant une URL et un code à coller dans un navigateur web pour vous connecter. Cette option est utile dans les cas où vous ne pouvez pas vous connecter à Visual Studio de manière classique, par exemple, si vous utilisez une version antérieure d’Internet Explorer, ou si votre pare-feu limite l’accès. Pour plus d'informations, consultez [Utiliser plusieurs comptes d'utilisateur](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Lorsque cette option est sélectionnée, le comportement de Visual Studio change lorsque vous sélectionnez **Ajouter un compte** dans la page **Fichier** > **Paramètres du compte**. Au lieu de la page **Se connecter à votre compte**, vous voyez une boîte de dialogue contenant une URL et un code à coller dans un navigateur web pour vous connecter. Cette option est utile dans les cas où vous ne pouvez pas vous connecter à Visual Studio de manière classique, par exemple, si vous utilisez une version antérieure d’Internet Explorer, ou si votre pare-feu limite l’accès. Pour plus d'informations, consultez [Work with multiple user accounts](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Clouds Azure inscrits
 
-Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Vous pouvez aussi avoir accès à une instance souveraine ou du secteur public d’Azure, comme Azure Chine 21 Vianet ou Azure - Gouvernement des États-Unis. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
+Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou bien, vous pouvez avoir accès à une instance souverain ou gouvernementale d’Azure, par exemple Azure China 21 VIANET ou Azure US Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
 
 Inscrivez un cloud Azure supplémentaire en choisissant le bouton **Ajouter**. La boîte de dialogue **Ajouter un nouveau cloud Azure** répertorie plusieurs instances de cloud Azure connues auxquelles vous pouvez vous connecter, ou vous pouvez entrer l’URL d’un point de terminaison Azure privé.
 

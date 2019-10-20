@@ -1,5 +1,5 @@
 ---
-title: 'CA2207 : Initialiser des champs statiques de type valeur en ligne | Microsoft Docs'
+title: 'CA2207 : initialisez les champs statiques de type valeur Inline | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - InitializeValueTypeStaticFieldsInline
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4f8bc843dc20df03ddf38a7506342addb6477297
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2b3c1faf4ecf3ecf79a3c78d0ded106b88345ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142522"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609363"
 ---
-# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207 : Initialisez les champs statiques des types valeur en ligne
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207 : Initialisez les champs statiques des types valeur en ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|InitializeValueTypeStaticFieldsInline|
 |CheckId|CA2207|
-|Category|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Un type valeur déclare un constructeur statique explicite.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un type valeur est déclaré, il subit une initialisation par défaut où tous les champs de type de valeur sont définies à zéro et tous les champs de type référence sont définies `null` (`Nothing` en Visual Basic). Un constructeur statique explicite est garanti uniquement à exécuter avant le constructeur d’instance ou un membre statique du type est appelé. Par conséquent, si le type est créé sans appeler un constructeur d’instance, le constructeur statique n’est pas garanti pour exécuter.
+ Lorsqu’un type valeur est déclaré, il subit une initialisation par défaut où tous les champs de type valeur ont la valeur zéro et tous les champs de type référence ont la valeur `null` (`Nothing` dans Visual Basic). L’exécution d’un constructeur statique explicite est garantie uniquement avant l’appel d’un constructeur d’instance ou d’un membre statique du type. Par conséquent, si le type est créé sans appeler un constructeur d’instance, l’exécution du constructeur statique n’est pas garantie.
 
- Si toutes les données statiques sont initialisées inline et aucun constructeur statique explicite n’est déclaré, les compilateurs c# et Visual Basic ajoutent le `beforefieldinit` indicateur pour la définition de classe MSIL. Les compilateurs ajoutent également un constructeur statique privé qui contient le code d’initialisation statique. Ce constructeur statique privé est garanti à exécuter avant que tous les champs statiques du type sont accessibles.
+ Si toutes les données statiques sont initialisées inline et qu’aucun constructeur statique explicite n' C# est déclaré, les compilateurs et Visual Basic ajoutent l’indicateur `beforefieldinit` à la définition de classe MSIL. Les compilateurs ajoutent également un constructeur statique privé qui contient le code d’initialisation statique. Ce constructeur statique privé est garanti s’exécuter avant l’accès à tous les champs statiques du type.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle initialiser toutes les données statiques lorsqu’il est déclaré et supprimez le constructeur statique.
+ Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu’elles sont déclarées et supprimez le constructeur statique.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1810 : Initialiser des champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)
+ [CA1810 : Initialisez les champs statiques de type référence en ligne](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

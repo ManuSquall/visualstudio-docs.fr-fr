@@ -4,17 +4,17 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585342"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634133"
 ---
-# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procédure pas à pas : Bien démarrer avec le Concepteur Windows Forms
+# <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procédure pas à pas : prise en main de Concepteur Windows Forms
 
 Le Concepteur Windows Forms fournit de nombreux outils pour la création d’applications Windows Forms. Cet article explique comment créer une application à l’aide des différents outils fournis par le concepteur, y compris les tâches suivantes :
 
@@ -69,7 +69,7 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
     Le contrôle `SplitContainer` s’ancre sur les limites du contrôle DemoCalculator.
 
     > [!NOTE]
-    > Plusieurs contrôles offrent des balises actives pour faciliter la conception. Pour plus d’informations, consultez [Procédure pas à pas : Exécuter des tâches courantes à l’aide de balises actives dans les contrôles Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Plusieurs contrôles offrent des balises actives pour faciliter la conception. Pour plus d’informations, consultez [procédure pas à pas : effectuer des tâches courantes à l’aide de balises actives sur des contrôles Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
 5. Sélectionnez la bordure verticale entre les panneaux et faites-la glisser vers la droite, afin que la plus grande partie de l’espace soit prise par le panneau gauche.
 
@@ -91,7 +91,7 @@ Le contrôle DemoCalculator contient plusieurs contrôles Windows Forms. Dans ce
 
 12. À partir de **Boîte à outils** pour le nœud **Conteneurs**, faites glisser un contrôle `TableLayoutPanel` dans le panneau gauche du contrôle `SplitContainer`.
 
-    Le contrôle `TableLayoutPanel` apparaît sur l’aire du concepteur avec son panneau des balises actives ouvert. Le contrôle `TableLayoutPanel` réorganise ses contrôles enfants dans une grille. Le contrôle `TableLayoutPanel` contiendra l’affichage et les boutons du contrôle DemoCalculator. Pour plus d’informations, consultez [Procédure pas à pas : Organiser les contrôles à l’aide d’un TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    Le contrôle `TableLayoutPanel` apparaît sur l’aire du concepteur avec son panneau des balises actives ouvert. Le contrôle `TableLayoutPanel` réorganise ses contrôles enfants dans une grille. Le contrôle `TableLayoutPanel` contiendra l’affichage et les boutons du contrôle DemoCalculator. Pour plus d’informations, consultez [procédure pas à pas : Organisation des contrôles à l’aide d’un TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
 13. Sélectionnez **Modifier les lignes et les colonnes** dans le panneau des balises actives.
 
@@ -257,7 +257,7 @@ Les boutons du contrôle DemoCalculator ont des gestionnaires d’événements q
 
 ## <a name="test-the-control"></a>Tester le contrôle
 
-Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, consultez [Procédure : Tester le comportement au moment de l’exécution d’un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Étant donné que le contrôle DemoCalculator hérite de la classe <xref:System.Windows.Forms.UserControl>, vous pouvez tester son comportement avec le **Conteneur de test UserControl**. Pour plus d’informations, consultez [Comment : tester le comportement d’un UserControl au moment de l’exécution](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
 1. Appuyez sur **F5** pour générer et exécuter le contrôle DemoCalculator dans le **Conteneur de test UserControl**.
 
@@ -291,7 +291,7 @@ Pour utiliser le contrôle DemoCalculator dans une application, vous devez le pl
 
 2. Faites glisser le contrôle **DemoCalculator** de **Boîte à outils** vers votre formulaire. Déplacez le contrôle dans le coin supérieur gauche du formulaire. Lorsque le contrôle est proche des bordures du formulaire, des *lignes d’alignement* s’affichent. Les lignes d’alignement indiquent la distance entre la propriété `Padding` du formulaire et la propriété `Margin` du contrôle. Positionnez le contrôle à l’emplacement indiqué par les lignes d’alignement.
 
-   Pour plus d’informations, consultez [Procédure pas à pas : Organiser les contrôles à l’aide des lignes d’alignement](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
+   Pour plus d’informations, consultez [procédure pas à pas : Organisation des contrôles à l’aide des lignes d’alignement](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
 
 3. Faites glisser un contrôle `Button` à partir de **Boîte à outils** et déposez-le sur le formulaire.
 

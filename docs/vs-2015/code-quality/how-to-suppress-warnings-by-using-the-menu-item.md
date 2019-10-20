@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Supprimer les avertissements à l’aide de l’élément de Menu | Microsoft Docs'
+title: 'Comment : supprimer des avertissements à l’aide de l’élément de menu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,37 +9,37 @@ helpviewer_keywords:
 - code analysis, suppressing warnings
 ms.assetid: 36bd1850-dcde-4ed0-9bc3-0b83df434362
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 96b7433ff4f696989142aa2c2ce47982006b93b2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426565"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610015"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procédure : Supprimer des avertissements à l’aide de l’élément de menu
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Comment : supprimer des avertissements à l’aide de l’élément de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
-> Dans la source de suppression n’est pas pris en charge pour les projets de site web.  
-  
- Vous pouvez utiliser la fenêtre analyse du Code pour supprimer les avertissements d’analyse du code. Suppression d’un avertissement n’est pas le même que la désactivation. Lorsque vous supprimez un avertissement, elle s’applique uniquement à une instance particulière de la violation. Autres violations de l’avertissement même seront encore signalées dans la fenêtre liste d’erreurs.  
-  
- Après avoir exécuté l’analyse du code, vous pouvez déterminer qu’une ou plusieurs des avertissements d’analyse du code qui sont affichent dans la fenêtre analyse du Code ne sont pas applicables à votre application. Par exemple, vous pouvez déterminer que le code est correct en l’état. Ou bien, il peut arriver que certaines violations ont une priorité faible et ne seront pas résolues dans le cycle de développement en cours. Quelle que soit la raison, il est souvent utile indiquer que l’avertissement est non applicable pour informer les membres de votre équipe que le code a été révisé et qu’il a été déterminé que l’avertissement peut être supprimé. Dans la source de suppression est utile, car elle vous permet de placer une suppression proche où l’avertissement est généré.  
-  
- Vous pouvez choisir si la suppression s’affichera dans le code source ou dans le fichier de suppression globale. Certaines suppressions doivent être placées dans le fichier de suppression globale. Si c’est le cas, le **dans la Source** option est désactivée.  
-  
-### <a name="to-suppress-a-warning-by-using-menu-item"></a>Pour supprimer un avertissement à l’aide d’élément de menu  
-  
-1. Sur le **analyser** menu, choisissez **Windows** , puis **analyse du Code**.  
-  
-2. Dans le **analyse du Code** fenêtre, sélectionnez le supprimer de l’avertissement.  
-  
-3. Choisissez les Actions, puis choisissez **supprimer les messages**, puis choisissez **dans la Source** ou **dans le fichier de Suppression de projet**.  
-  
-     L’avertissement spécifique est supprimé, et l’avertissement s’affiche dans la fenêtre analyse du Code avec un barré.  
-  
+> La suppression de la source n’est pas prise en charge pour les projets de site Web.
+
+ Vous pouvez utiliser la fenêtre analyse du code pour supprimer les avertissements d’analyse du code. La suppression d’un avertissement n’est pas la même que la désactivation. Lorsque vous supprimez un avertissement, il s’applique uniquement à une instance particulière de la violation. Les autres violations du même avertissement sont toujours signalées dans la fenêtre de Liste d’erreurs.
+
+ Après avoir exécuté l’analyse du code, vous pouvez déterminer qu’un ou plusieurs des avertissements de l’analyse du code qui sont affichés dans la fenêtre analyse du code ne sont pas applicables à votre application. Par exemple, vous pouvez déterminer que le code est correct comme c’est le cas. Ou peut-être que certaines violations sont de priorité basse et ne seront pas résolues dans le cycle de développement actuel. Quelle que soit la raison, il est souvent utile d’indiquer que l’avertissement n’est pas applicable pour permettre aux membres de votre équipe de savoir que le code a été révisé et qu’il a été déterminé que l’avertissement a pu être supprimé. La suppression de la source est utile, car elle vous permet de mettre fin à la suppression jusqu’à l’endroit où l’avertissement est généré.
+
+ Vous pouvez choisir si la suppression doit s’afficher dans le code source ou dans le fichier de suppression globale. Certaines suppressions doivent être placées dans le fichier de suppression globale. Si c’est le cas, l’option **in source** est désactivée.
+
+### <a name="to-suppress-a-warning-by-using-menu-item"></a>Pour supprimer un avertissement à l’aide d’un élément de menu
+
+1. Dans le menu **analyser** , choisissez **fenêtres** , puis **analyse du code**.
+
+2. Dans la fenêtre **analyse du code** , sélectionnez Supprimer l’avertissement.
+
+3. Choisissez actions, puis supprimer un ou **plusieurs messages**, puis choisissez **dans la source** ou dans le **fichier de suppression du projet**.
+
+     L’avertissement spécifique est supprimé, et l’avertissement apparaît dans la fenêtre analyse du code avec un barré.
+
 > [!NOTE]
 > Les suppressions qui n’ont pas de cible apparaissent dans le fichier de suppression globale.

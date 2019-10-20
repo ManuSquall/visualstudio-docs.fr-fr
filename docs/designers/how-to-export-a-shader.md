@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Exporter un nuanceur'
+title: 'Procédure : exporter un nuanceur'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844395"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635545"
 ---
-# <a name="how-to-export-a-shader"></a>Procédure : Exporter un nuanceur
+# <a name="how-to-export-a-shader"></a>Guide pratique pour exporter un nuanceur
 
 Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans une application.
 
@@ -23,9 +23,9 @@ Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter
 
 Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.
 
-1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)**.
+1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)** .
 
-     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
+     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)** , créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé** > **Exporter** > **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** apparaît.
 
@@ -44,4 +44,4 @@ Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour po
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)

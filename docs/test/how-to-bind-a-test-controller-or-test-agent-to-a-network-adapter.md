@@ -8,24 +8,24 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979326"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643781"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procédure : Lier un contrôleur de test ou un agent de test à une carte réseau
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
 
 Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est installé, a plusieurs cartes réseau, vous devez spécifier l’adresse IP à la place du nom de l’ordinateur pour identifier le contrôleur de test ou l’agent de test.
 
 > [!WARNING]
 > Lors de la configuration d'un agent de test, vous pouvez recevoir l'erreur suivante :
 >
-> **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur**
+> **Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur**
 >
 > Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau. Il est également possible d'installer avec succès des agents et de ne pas rencontrer ce problème avant d'exécuter un test.
 
@@ -49,7 +49,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Controller**, puis choisissez **Arrêter**.
 
-     - ou -
+     ou
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 
@@ -95,7 +95,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Agent**, puis choisissez **Arrêter**.
 
-     - ou -
+     ou
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 
@@ -133,4 +133,4 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
 - [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
 - [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Guide pratique pour spécifier durées du délai d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

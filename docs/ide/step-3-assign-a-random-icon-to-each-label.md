@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cb8d4b94b812040e83c4b80a8c7c7a08831219
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621553"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : assigner une icône aléatoire à chaque étiquette
 
@@ -88,6 +88,6 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : ajouter un gestionnaire d’événements Click à chaque étiquette](../ide/step-4-add-a-click-event-handler-to-each-label.md)** .
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

@@ -3,48 +3,48 @@ title: Espace de travail du Concepteur de schémas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461328"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608264"
 ---
-# <a name="xml-schema-designer-workspace-views"></a>Vues d’espace de travail de Concepteur de schémas XML
+# <a name="xml-schema-designer-workspace-views"></a>Vues de l’espace de travail du concepteur de schémas XML
 
-Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous aide à explorer vos schémas XML. Outre le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), ce qui vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches, le concepteur XSD fournit trois vues où vous pouvez explorer votre schéma XSD plus en détail.
+Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous aide à explorer vos schémas XML. En plus de l' [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), qui vous permet de parcourir l’arborescence du schéma XML et d’effectuer des recherches, le concepteur XSD fournit trois vues qui vous permettent d’explorer votre schéma XSD plus en détail.
 
-- Le **vue de départ** est le point de lancement du concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d’autres vues du concepteur XSD et afficher les détails de votre jeu de schémas.
-- Le **vue du graphique** vous permet d’afficher un aperçu d’un jeu de schémas et les relations entre les nœuds de schéma.
-- Le **affichage du modèle de contenu** fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, y compris les types simples et complexes, des éléments, des groupes, des attributs et des groupes d’attributs.
+- La **vue de départ** est le point de lancement du concepteur XSD ; à partir de la vue de départ, vous pouvez accéder à d’autres affichages du concepteur XSD et afficher les détails de votre jeu de schémas.
+- La **vue du graphique** vous permet d’afficher une vue d’ensemble d’un jeu de schémas et les relations entre les nœuds de schéma.
+- La **vue de modèle de contenu** fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, notamment les types simples et complexes, les éléments, les groupes, les attributs et les groupes d’attributs.
 
-Pour commencer à Explorer les nœuds que vous êtes intéressé, vous devez les ajouter à l’espace de travail. L'espace de travail est partagé entre toutes les vues.
+Pour commencer à explorer les nœuds qui vous intéressent, vous devez les ajouter à l’espace de travail. L'espace de travail est partagé entre toutes les vues.
 
 ## <a name="add-nodes-to-the-workspace"></a>Ajouter des nœuds à l’espace de travail
 
 Vous pouvez ajouter des nœuds à l'espace de travail des manières suivantes :
 
-- Dans la section « Schéma définir les détails » de la [vue de départ](../xml-tools/start-view.md), cliquez sur le **ajouter** lien en regard du type de nœud global.
+- Dans la section Détails du jeu de schémas de la [vue de départ](../xml-tools/start-view.md), cliquez sur le lien **Ajouter** en regard du type de nœud global.
 
-- Glissez -déplacez les nœuds globaux, les nœuds de fichier et les nœuds d’espace de noms à partir de la **Explorateur de schémas XML** sur une des trois vues. Pour plus d’informations, consultez la section « En faisant glisser et suppression de nœuds » dans [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md).
+- Glissez-déplacez les nœuds globaux, les nœuds de fichier et les nœuds d’espace de noms de l' **Explorateur de schémas XML** vers l’une des trois vues. Pour plus d’informations, consultez la section « glisser-déplacer des nœuds » dans l ['Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md).
 
-- Utilisez le menu contextuel (clic droit) dans le **Explorateur de schémas XML**. Pour plus d’informations, consultez [menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
+- Utilisez le menu contextuel (clic droit) dans l' **Explorateur de schémas XML**. Pour plus d’informations, consultez [menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md).
 
-- Effectuer une recherche dans l’Explorateur XSD, puis cliquez sur le **ajouter des nœuds en surbrillance à l’espace de travail** bouton dans le volet de synthèse des résultats. Pour plus d’informations, consultez [recherche le jeu de schémas](../xml-tools/searching-the-schema-set.md).
+- Effectuez une recherche dans l’Explorateur XSD et cliquez sur le bouton **Ajouter les nœuds en surbrillance à l’espace de travail** dans le volet des résultats de résumé. Pour plus d’informations, consultez [recherche dans le jeu de schémas](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Basculer les vues
+## <a name="switch-views"></a>Changer de vue
 
 Pour basculer d'une vue à l'autre, utilisez l'un des éléments suivants :
 
 - Barre d'outils du Concepteur XSD.
 
-- Les menus contextuels (clic droit) de la vue de modèle de contenu et la vue du graphique.
+- Les menus contextuels (clic droit) de la vue de modèle de contenu et de la vue du graphique.
 
 - Filigranes sur la page Vue de départ ou filigrane sur la vue de modèle de contenu ou la vue du graphique vide.
 
-- Touches d’accès rapide : **CTRL**+**1** pour la vue de départ, **Ctrl**+**2** pour la vue du graphique, et **Ctrl** + **3** pour la vue de modèle de contenu.
+- Touches d’accès rapide : **ctrl** +**1** pour la vue de départ, **CTRL** +**2** pour la vue du graphique et **CTRL** +**3** pour la vue de modèle de contenu.

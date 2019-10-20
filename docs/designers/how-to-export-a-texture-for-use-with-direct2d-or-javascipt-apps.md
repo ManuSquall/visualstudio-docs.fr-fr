@@ -3,19 +3,19 @@ title: Exporter une texture pour les applications Direct2D et JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635508"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Comment : exporter une texture pour l’utiliser avec des applications Direct2D ou JavaScript
 
 Le pipeline de contenus d’image peut générer des textures compatibles avec les conventions de rendu interne de Direct2D. Les textures de ce type sont appropriées pour une utilisation dans les applications qui utilisent Direct2D et dans les applications UWP créées à l’aide de JavaScript.
 
@@ -35,7 +35,7 @@ Ce document illustre ces activités :
 
 Les textures qui sont utilisés dans le contexte de Direct2D doivent respecter ces conventions de rendu interne de Direct2D :
 
-- Direct2D implémente la transparence et la translucidité en utilisant une valeur alpha prémultipliée. Les textures utilisées avec Direct2D doivent contenir une valeur alpha prémultipliée, même si la texture n’utilise pas la transparence ou la translucidité. Pour plus d’informations sur les valeurs alpha prémultipliées, consultez [Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D implémente la transparence et la translucidité en utilisant une valeur alpha prémultipliée. Les textures utilisées avec Direct2D doivent contenir une valeur alpha prémultipliée, même si la texture n’utilise pas la transparence ou la translucidité. Pour plus d’informations sur la valeur alpha prémultipliée, consultez [Guide pratique pour exporter une texture qui a des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 - La texture doit être fournie au format *.dds*, en utilisant l’un de ces formats de compression de bloc :
 

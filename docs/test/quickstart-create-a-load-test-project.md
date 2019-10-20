@@ -4,17 +4,17 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784705"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646683"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
+# <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
 
 Dans ce guide de démarrage rapide de 10 minutes, vous découvrirez comment créer et exécuter un projet de test de performances web et de charge dans Visual Studio. Les tests de charge exécutent des tests de performances web ou des tests unitaires pour simuler l’accès simultané de plusieurs utilisateurs à un serveur.
 
@@ -50,7 +50,7 @@ Dans cette section, nous créons un projet de test de charge C#. Vous pouvez ég
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
-3. Dans la boîte de dialogue **Nouveau Projet**, développez **Installé** et **Visual C#**, puis sélectionnez la catégorie **Test**. Choisissez le modèle **Projet de performances web et de test de charge**.
+3. Dans la boîte de dialogue **Nouveau Projet**, développez **Installé** et **Visual C#** , puis sélectionnez la catégorie **Test**. Choisissez le modèle **Projet de performances web et de test de charge**.
 
    ![Projet de performances web et de test de charge](media/web-perf-load-test-project-template.png)
 

@@ -3,21 +3,21 @@ title: Explorateur de schémas XML-Rechercher dans le jeu de schémas
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926803"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604653"
 ---
 # <a name="search-the-schema-set"></a>Effectuer des recherches dans le jeu de schémas
 
-L' **Explorateur de schémas XML** vous permet d’effectuer des recherches dans le jeu de schémas de l’une des manières suivantes:
+L' **Explorateur de schémas XML** vous permet d’effectuer des recherches dans le jeu de schémas de l’une des manières suivantes :
 
 - Recherche par mot clé
 
@@ -29,7 +29,7 @@ Pour effectuer des recherches par mot clé, entrez une sous-chaîne dans la zone
 
 ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
 
-L' **Explorateur de schémas XML** recherche les attributs suivants dans le jeu de schémas:
+L' **Explorateur de schémas XML** recherche les attributs suivants dans le jeu de schémas :
 
 - Tout attribut `name` ou `ref` qui correspond au mot clé spécifié. Vous pouvez rechercher des éléments, des attributs, des types, etc., par nom.
 
@@ -39,11 +39,11 @@ L' **Explorateur de schémas XML** recherche les attributs suivants dans le jeu 
 
 ## <a name="schema-specific-search"></a>Recherche spécifique au schéma
 
-L' **Explorateur de schémas XML** comprend également des recherches intégrées auxquelles vous pouvez accéder à l’aide du menu contextuel (clic droit) de l' **Explorateur de schémas XML**. Pour plus d’informations sur les menus contextuels disponibles, consultez [menus](../xml-tools/context-menus-xml-schema-explorer.md)contextuels. Vous pouvez également effectuer une recherche spécifique au schéma à partir de la vue de départ. Pour plus d’informations, consultez la section «Détails du jeu de schémas» dans la rubrique [vue de départ](../xml-tools/start-view.md) .
+L' **Explorateur de schémas XML** comprend également des recherches intégrées auxquelles vous pouvez accéder à l’aide du menu contextuel (clic droit) de l' **Explorateur de schémas XML**. Pour plus d’informations sur les menus contextuels disponibles, consultez [menus contextuels](../xml-tools/context-menus-xml-schema-explorer.md). Vous pouvez également effectuer une recherche spécifique au schéma à partir de la vue de départ. Pour plus d’informations, consultez la section « Détails du jeu de schémas » dans la rubrique [vue de départ](../xml-tools/start-view.md) .
 
 ## <a name="display-and-navigate-search-results"></a>Afficher et parcourir les résultats de la recherche
 
-Une fois la recherche terminée, le volet de synthèse des résultats est ajouté à la barre d'outils avec les résultats de la recherche. Les résultats de la recherche sont également mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale. Vous pouvez parcourir les résultats de la recherche en utilisant les boutons **aller au résultat de la recherche suivant** et **aller au résultat de la recherche précédent** dans le volet des résultats Résumé de la barre d’outils de l' **Explorateur de schémas XML** . en utilisant les touches du clavier **F3** et **MAJ**+**F3**; ou en cliquant sur les graduations dans la barre de défilement.
+Une fois la recherche terminée, le volet de synthèse des résultats est ajouté à la barre d'outils avec les résultats de la recherche. Les résultats de la recherche sont également mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale. Vous pouvez parcourir les résultats de la recherche en utilisant les boutons **aller au résultat de la recherche suivant** et **aller au résultat de la recherche précédent** dans le volet des résultats Résumé de la barre d’outils de l' **Explorateur de schémas XML** . à l’aide des touches du clavier **F3** et **MAJ** +**F3**; ou en cliquant sur les graduations dans la barre de défilement.
 
 Vous pouvez ajouter les résultats de la recherche à l’espace de travail en cliquant sur le bouton **Ajouter les nœuds en surbrillance à l’espace de travail** dans le volet des résultats de résumé.
 

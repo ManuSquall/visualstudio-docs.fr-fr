@@ -7,17 +7,17 @@ f1_keywords:
 - vs.code.analysis.browsefortfsruleset
 - vs.code.analysis.policyeditor
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88703f14091628b1fc13c405ac4fabf48307aac7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c45453af0e7736a10cba8b5bb98ef75429427e2a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649328"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémenter des stratégies d’archivage d’analyse du code personnalisées pour le code managé
 
@@ -79,7 +79,7 @@ Pour créer un ensemble de règles personnalisé pour un projet Azure DevOps, vo
 
 3. Dans la liste des **stratégies d’archivage** , double-cliquez sur **analyse du code**et assurez-vous que la case à cocher **appliquer l’analyse du code pour le code managé** est activée.
 
-4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **@no__t l’ensemble de règles 2Select à partir du contrôle de code source >** .
+4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Select ensemble de règles à partir du contrôle de code source >** .
 
 5. Tapez le chemin d’accès du fichier d’ensemble de règles de stratégie d’archivage dans le contrôle de version.
 

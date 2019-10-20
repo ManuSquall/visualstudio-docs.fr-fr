@@ -1,5 +1,5 @@
 ---
-title: Écriture dans le Store de paramètres utilisateur | Microsoft Docs
+title: Écriture dans le magasin des paramètres utilisateur | Microsoft Docs
 ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
@@ -8,21 +8,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44380a03b87318be0fdf746c75eff8988ac68267
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647876"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Écriture dans la banque de paramètres utilisateur
-Paramètres de l’utilisateur sont des paramètres accessible en écriture telles que celles dans les **Outils / Options** boîte de dialogue, fenêtres Propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour stocker de petites quantités de données. Cette procédure pas à pas montre comment ajouter le bloc-notes à Visual Studio comme un outil externe en lecture et écriture à la banque de paramètres utilisateur.
+Les paramètres utilisateur sont des paramètres inscriptibles tels que ceux de la boîte de dialogue **Outils/Options** , des fenêtres de propriétés et d’autres boîtes de dialogue. Les extensions Visual Studio peuvent les utiliser pour stocker de petites quantités de données. Cette procédure pas à pas montre comment ajouter le bloc-notes à Visual Studio en tant qu’outil externe en lisant et en écrivant dans le magasin des paramètres utilisateur.
 
 ## <a name="writing-to-the-user-settings-store"></a>Écriture dans la banque de paramètres utilisateur
 
-1. Créez un projet VSIX nommé UserSettingsStoreExtension, puis ajoutez une commande personnalisée nommée UserSettingsStoreCommand. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Créez un projet VSIX nommé UserSettingsStoreExtension, puis ajoutez une commande personnalisée nommée UserSettingsStoreCommand. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. Dans UserSettingsStoreCommand.cs, ajoutez le code suivant à l’aide d’instructions :
+2. Dans UserSettingsStoreCommand.cs, ajoutez les directives d’utilisation suivantes :
 
     ```csharp
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. Dans MenuItemCallback, supprimez le corps de la méthode et obtenir de l’utilisateur de stocker des paramètres, comme suit :
+3. Dans MenuItemCallback, supprimez le corps de la méthode et récupérez la Banque de paramètres utilisateur, comme suit :
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -40,7 +40,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     }
     ```
 
-4. Découvrez maintenant si le bloc-notes est déjà défini comme un outil externe. Vous devez effectuer une itération dans tous les outils externes pour déterminer si le paramètre ToolCmd est « Notepad », comme suit :
+4. À présent, déterminez si le bloc-notes est déjà défini en tant qu’outil externe. Vous devez itérer au sein de tous les outils externes pour déterminer si le paramètre ToolCmd est « Notepad », comme suit :
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -64,7 +64,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
 
     ```
 
-5. Si le bloc-notes n’a pas été défini comme un outil externe, définie comme suit :
+5. Si le bloc-notes n’a pas été défini comme un outil externe, définissez-le comme suit :
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     }
     ```
 
-6. Tester le code. N’oubliez pas qu’il ajoute le bloc-notes en tant qu’un outil externe, donc vous devez restaurer le Registre avant de l’exécuter une deuxième fois.
+6. Testez le code. N’oubliez pas qu’il ajoute Notepad comme outil externe. vous devez donc restaurer le registre avant de l’exécuter une deuxième fois.
 
-7. Générer le code et démarrer le débogage.
+7. Générez le code et démarrez le débogage.
 
-8. Sur le **outils** menu, cliquez sur **UserSettingsStoreCommand appeler**. Cela ajoutera le bloc-notes pour le **outils** menu.
+8. Dans le menu **Outils** , cliquez sur **appeler UserSettingsStoreCommand**. Cette opération ajoute le bloc-notes au menu **Outils** .
 
-9. Doit maintenant apparaître le bloc-notes dans le menu Outils / Options de menu, puis en cliquant sur **le bloc-notes** doit afficher une instance de bloc-notes.
+9. Vous devez maintenant voir le bloc-notes dans le menu Outils/Options, puis cliquer sur **le bloc-notes** pour afficher une instance du bloc-notes.

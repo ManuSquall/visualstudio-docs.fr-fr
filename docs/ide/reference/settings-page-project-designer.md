@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989959"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645263"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
 
@@ -49,7 +49,7 @@ Pour les projets Visual Basic, le bouton **Afficher le code** vous permet d’af
 
 Pour plus d’informations sur l’accès aux paramètres d’application, consultez [Paramètres d’application pour les Windows Forms](/dotnet/framework/winforms/advanced/application-settings-for-windows-forms).
 
-**Modificateur d’accès** 
+**Modificateur d’accès**
 
 Le bouton **Modificateur d’accès** spécifie le niveau d’accès des classes d’assistance `Properties.Settings` (en C#) ou `My.Settings` (en Visual Basic) que Visual Studio génère dans *Settings.Designer.cs* ou *Settings.Designer.vb*.
 
@@ -57,7 +57,7 @@ Pour les projets Visual C#, le modificateur d’accès peut être **Internal** o
 
 Pour les projets Visual Basic, le modificateur d’accès peut être **Friend** ou **Public**.
 
-Par défaut, le paramètre est **Internal** en C# et **Friend** en Visual Basic. Quand Visual Studio génère des classes d’assistance **Internal** ou **Friend**, les applications exécutables (*.exe*) ne peuvent pas accéder aux ressources et aux paramètres que vous avez ajoutés aux bibliothèques de classes (fichiers *.dll*). Si vous devez partager des ressources et des paramètres à partir d’une bibliothèque de classes, affectez la valeur **Public** au modificateur d’accès.
+Par défaut, le paramètre est **Internal** en C# et **Friend** en Visual Basic. Quand Visual Studio génère des classes d’assistance **Internal** ou **Friend**, les applications exécutables ( *.exe*) ne peuvent pas accéder aux ressources et aux paramètres que vous avez ajoutés aux bibliothèques de classes (fichiers *.dll*). Si vous devez partager des ressources et des paramètres à partir d’une bibliothèque de classes, affectez la valeur **Public** au modificateur d’accès.
 
 Pour plus d’informations sur les classes d’assistance de paramètres, consultez [Gérer les paramètres d’application](../managing-application-settings-dotnet.md).
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur les classes d’assistance de paramètres, consul
 
 La **grille de paramètres** sert à configurer les paramètres de l’application. Cette grille contient les colonnes suivantes :
 
-**Name**
+**Nom**
 
 Entrez le nom du paramètre d’application dans ce champ.
 

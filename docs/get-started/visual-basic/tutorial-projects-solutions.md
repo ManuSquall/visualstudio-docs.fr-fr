@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632571"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Découvrir les projets et les solutions avec Visual Basic
 
@@ -229,7 +229,7 @@ Dans le fichier *Calendar.vb*, la ligne qui contient l’attribut <xref:System.R
 
 1. Dans **l’Explorateur de solutions**, sélectionnez le projet **QuickTest**. Dans le menu contextuel (clic droit), sélectionnez **Propriétés**, ou appuyez simplement sur **Alt**+**Entrée**. (Vous pouvez également double-cliquer sur **Mon Projet** dans **l’Explorateur de solutions**.)
 
-   Les *pages de propriétés* du projet s’ouvrent sous l’onglet **Application**. Elles contiennent différents paramètres du projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
+   Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom d’assembly du projet **QuickTest** est effectivement « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
    ![Propriétés de projet](../media/tutorial-projects-properties.png)
 

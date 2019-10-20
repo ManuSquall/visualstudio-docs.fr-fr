@@ -14,17 +14,17 @@ helpviewer_keywords:
 - typed datasets, n-tier applications
 - multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6da3f51a249aaf52cf3f20b90f3add6ceeb7aa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b96f2e51048216388eea50935a1ced536d8d230b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564754"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648030"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilisation de datasets dans des applications multiniveaux
 
@@ -32,9 +32,9 @@ Les *applications de données multiniveaux* sont des applications centrées sur 
 
 Les datasets typés ont été améliorés de sorte que les TableAdapters et les classes DataSet puissent être générés dans des projets distincts. Cela permet de rapidement séparer les couches de l'application et de générer des applications de données multicouches.
 
-Prise en charge des applications multicouches dans les datasets typés permet le développement itératif de l’architecture d’application vers une conception à n niveaux. Elle supprime également la nécessité de séparer manuellement le code dans plusieurs projets. Commencez par concevoir la couche de données à l’aide de la **Concepteur de Dataset**. Quand vous êtes prêt à faire évoluer l’architecture de l’application vers une conception multiniveaux, définissez la propriété **DataSet Project** d’un dataset pour qu’elle génère la classe DataSet dans un projet distinct.
+La prise en charge multiniveau dans les jeux de données typés permet le développement itératif de l’architecture de l’application vers une conception multicouche. Elle supprime également la nécessité de séparer manuellement le code en plusieurs projets. Commencez à concevoir la couche de données à l’aide de l' **Concepteur de DataSet**. Quand vous êtes prêt à faire évoluer l’architecture de l’application vers une conception multiniveaux, définissez la propriété **DataSet Project** d’un dataset pour qu’elle génère la classe DataSet dans un projet distinct.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
@@ -42,7 +42,7 @@ Prise en charge des applications multicouches dans les datasets typés permet le
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
-- [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Guide pratique pour ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Guide pratique pour ajouter du code à des datasets dans des applications multiniveaux](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Guide pratique pour ajouter la validation à un dataset multiniveau](../data-tools/add-validation-to-an-n-tier-dataset.md)

@@ -3,17 +3,17 @@ title: Utilisation des nuanceurs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4b3d2c6c745f17bbada918128fed852249e3024d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892401"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633783"
 ---
 # <a name="work-with-shaders"></a>Utiliser des nuanceurs
 
@@ -37,6 +37,6 @@ Le langage DGSL étant compatible avec le langage DGML, vous pouvez utiliser des
 
 |Titre|Description|
 |-----------|-----------------|
-|[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|
+|[Concepteur de nuanceur](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|
 |[Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)|Décrit les types de nœuds du concepteur Shader que vous pouvez utiliser pour obtenir des effets graphiques.|
-|[Exemples du concepteur Shader](../designers/shader-designer-examples.md)|Fournit des liens vers des rubriques qui montrent comment utiliser le concepteur Shader pour obtenir des effets graphiques courants.|
+|[Exemples du concepteur Shader](../designers/how-to-create-a-basic-color-shader.md)|Fournit des liens vers des rubriques qui montrent comment utiliser le concepteur Shader pour obtenir des effets graphiques courants.|

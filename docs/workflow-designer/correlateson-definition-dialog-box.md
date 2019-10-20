@@ -1,38 +1,38 @@
 ---
-title: Concepteur de flux de travail - boîte de dialogue Définition CorrelatesOn
+title: Boîte de dialogue Définition de la Concepteur de flux de travail CorrelatesOn
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401f72f55f23779f7c6257437034a4ebc294d219
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949816"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650599"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Boîte de dialogue Définition CorrelatesOn
 
-Le **CorrelatesOn** boîte de dialogue est utilisée dans le Concepteur de flux de travail pour modifier la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriété d’un <xref:System.ServiceModel.Activities.Receive> activité. Pour plus d’informations, consultez [Concepteur d’activités de réception](../workflow-designer/receive-activity-designer.md).
+La boîte de dialogue **CorrelatesOn** est utilisée dans Concepteur de flux de travail pour modifier la propriété <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> d’une activité <xref:System.ServiceModel.Activities.Receive>. Pour plus d’informations, consultez le [Concepteur d’activités Receive](../workflow-designer/receive-activity-designer.md).
 
 La corrélation entre les activités <xref:System.ServiceModel.Activities.Receive> spécifie la manière dont différentes opérations de service se connectent les unes aux autres dans un workflow.
 
-Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **CorrelatesOn** boîte de dialogue.
+Le tableau suivant décrit les éléments d’interface utilisateur (IU) de la boîte de dialogue **CorrelatesOn** .
 
 |Élément d'interface utilisateur|Description|
 |-|-----------------|
 |**CorrelatesWith**|Objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour router le message vers l'instance de workflow appropriée.|
-|**Requêtes XPath**|Paire clé/valeur qui contient les requêtes utilisées pour extraire les données de corrélation des messages entrants. Cette valeur correspond à la <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriété. Les requêtes XPath sont contenues dans un objet <xref:System.ServiceModel.MessageQuerySet>.|
+|**Requêtes XPath**|Paire clé/valeur qui contient les requêtes utilisées pour extraire les données de corrélation des messages entrants. Cette valeur correspond à la propriété <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>. Les requêtes XPath sont contenues dans un objet <xref:System.ServiceModel.MessageQuerySet>.|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>Pour lancer la boîte de dialogue Définition CorrelatesOn
 
-Le **réception** Concepteur d’activités peut être déplacé de **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail, partout où les activités sont généralement placées. Suppression du Concepteur d’activités crée un <xref:System.ServiceModel.Activities.Receive> activité avec une valeur par défaut <xref:System.Activities.Activity.DisplayName%2A> de réception. Pour ouvrir le **définition CorrelatesOn** boîte de dialogue, sélectionnez le **réception** activité concepteur, puis dans la grille des propriétés, sélectionnez le bouton de sélection en regard du texte de la Collection pour le  **CorrelatesOn** propriété.
+Le concepteur d’activités **Receive** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, où les activités sont généralement placées. La suppression du concepteur d’activités crée une activité <xref:System.ServiceModel.Activities.Receive> avec un <xref:System.Activities.Activity.DisplayName%2A> par défaut Receive. Pour ouvrir la boîte de dialogue **Définition CorrelatesOn** , sélectionnez le concepteur d’activités **Receive** , puis dans la grille des propriétés, sélectionnez le bouton de sélection en regard du texte de la collection pour la propriété **CorrelatesOn** .
 
 ## <a name="see-also"></a>Voir aussi
 

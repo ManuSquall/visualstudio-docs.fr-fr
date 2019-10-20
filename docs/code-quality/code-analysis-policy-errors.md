@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445892"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622605"
 ---
 # <a name="code-analysis-policy-errors"></a>Erreurs de stratégie d’analyse du code
 
@@ -47,11 +47,11 @@ La stratégie d’analyse du code requiert que tous les fichiers archivés soien
 
 **La version de' {0} 'n’est pas correcte. Le nom fort spécifié dans la stratégie est « {1} ».**
 
-Cette erreur s’applique aux projets .NET. Une règle. dll requise par la stratégie d’analyse du code existe sur l’ordinateur local, mais la version/la clé publique ne correspond pas. Pour corriger cette erreur, le créateur de la stratégie doit mettre à jour le fichier. dll dans le répertoire *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* sur son ordinateur.
+Cette erreur s’applique aux projets .NET. Une règle. dll requise par la stratégie d’analyse du code existe sur l’ordinateur local, mais la version/la clé publique ne correspond pas. Pour corriger cette erreur, le créateur de la stratégie doit mettre à jour le fichier. dll dans *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* Directory sur son ordinateur.
 
 **l’assembly' {0} 'spécifié dans la stratégie n’existe pas.**
 
-Cette erreur s’applique aux projets .NET. La dll correspondante n’est pas installée sur l’ordinateur client pour une règle requise par la stratégie d’analyse du code. Pour corriger cette erreur, le créateur de la stratégie doit mettre à jour la dll dans le répertoire *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* sur son ordinateur.
+Cette erreur s’applique aux projets .NET. La dll correspondante n’est pas installée sur l’ordinateur client pour une règle requise par la stratégie d’analyse du code. Pour corriger cette erreur, le créateur de la stratégie doit mettre à jour la dll dans *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* Directory sur son ordinateur.
 
 **Les paramètres de règle {0} de Project ne sont pas conformes à la stratégie d’analyse du code.**
 
@@ -63,7 +63,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], l’analyse du c
 
 **Vous devez activer l’analyse du code pour les fichiers binaires managés dans les propriétés Project {0} et les générer avant d’archiver.**
 
-Cette erreur s’applique aux applications .NET [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. La stratégie requiert l’exécution de l’analyse du code managé, mais elle n’est pas activée dans le projet actuel sur le client.
+Cette erreur s’applique aux applications [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] .NET. La stratégie requiert l’exécution de l’analyse du code managé, mais elle n’est pas activée dans le projet actuel sur le client.
 
 **Vous devez activer l’analyse du code dans les propriétés de Project {0} et générer avant d’archiver.**
 

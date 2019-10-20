@@ -4,21 +4,21 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585331"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634025"
 ---
 # <a name="windows-forms-designer-overview"></a>Vue d’ensemble du Concepteur Windows Forms
 
 Le Concepteur Windows Forms dans Visual Studio fournit une solution de développement rapide pour la création d’applications basées sur Windows Forms. Le Concepteur Windows Forms vous permet d'ajouter facilement des contrôles à un formulaire, de les organiser et d'écrire du code pour leurs événements. Pour plus d’informations sur Windows Forms, consultez [Vue d’ensemble de Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
 
-## <a name="functionality"></a>Fonctionnalités
+## <a name="functionality"></a>Fonctionnalité
 
 À l’aide du concepteur, vous pouvez :
 

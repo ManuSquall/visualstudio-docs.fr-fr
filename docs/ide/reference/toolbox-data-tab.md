@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644614"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 
@@ -32,7 +32,7 @@ Pour accéder directement à la page de référence .NET d’un composant, appuy
 
 |Name|Description|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :**  N’utilisez pas l’objet <xref:System.Data.DataSet> de la **boîte à outils** pour créer un schéma et une classe de dataset typés. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Ajoute une instance d’un dataset typé ou non typé au formulaire ou composant. Quand vous faites glisser cet objet dans un concepteur, il affiche une boîte de dialogue qui permet de sélectionner une classe de dataset typée existante ou de spécifier que vous souhaitez créer un dataset vide et non typé. **Remarque :** N’utilisez pas l’objet <xref:System.Data.DataSet> de la **boîte à outils** pour créer un schéma et une classe de dataset typés. Pour plus d’informations, consultez [Créer et configurer des datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Offre un moyen puissant et souple d’afficher des données sous forme de tableau.|
 |<xref:System.Windows.Forms.BindingSource>|Simplifie le processus de liaison des contrôles à une source de données sous-jacente.|
 |<xref:System.Windows.Forms.BindingNavigator>|Représente l'interface utilisateur de navigation et manipulation pour les contrôles d'un formulaire liés aux données.|

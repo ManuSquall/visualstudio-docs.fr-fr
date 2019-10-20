@@ -1,38 +1,38 @@
 ---
-title: Concepteur de flux de travail - boîte de dialogue Définition du contenu
+title: Concepteur de flux de travail boîte de dialogue Définition du contenu
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - MessageContent.UI
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b30409bcc82d540a17917f3a8b55084a205613b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 307540325ac2f6bd35d33cb540fa93aa1a41254a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949883"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650626"
 ---
 # <a name="content-definition-dialog-box"></a>Boîte de dialogue Définition du contenu
 
-Le **définition du contenu** boîte de dialogue est utilisée dans le Concepteur de flux de travail pour configurer le **contenu** propriétés de la <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, et <xref:System.ServiceModel.Activities.ReceiveReply> activités. Pour plus d’informations sur les concepteurs d’activités qui utilisent cette zone, consultez la [envoyer](../workflow-designer/send-activity-designer.md), [réception](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), et [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) rubriques.
+La boîte de dialogue **définition du contenu** est utilisée dans Concepteur de flux de travail pour configurer les propriétés de **contenu** des activités <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply> et <xref:System.ServiceModel.Activities.ReceiveReply>. Pour plus d’informations sur les concepteurs d’activités qui utilisent cette zone, consultez les rubriques [Send](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)et [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) .
 
-Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **initialiser la corrélation** boîte de dialogue :
+Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **initialiser la corrélation** :
 
 |Élément d'interface utilisateur|Description|
 |-|-----------------|
-|**Message**|Spécifie le contenu du message avec le **données du Message** zone de texte expression et le type à l’aide de la **type de Message** zone de liste déroulante. Par défaut, le **définition du contenu** utilise le <xref:System.ServiceModel.Activities.ReceiveMessageContent>, lequel attend un <xref:System.ServiceModel.Channels.Message> ou un type dans la définition de service de workflow de contrat de message.|
-|**Paramètres**|Cliquez sur le **paramètres** case d’option à utiliser <xref:System.ServiceModel.Activities.ReceiveParametersContent>, lequel attend un contrat de données. Utilisez la grille de données pour définir une collection générique des paires clé/valeur <xref:System.Activities.OutArgument> dont les valeurs sont assignées aux paramètres de variables dans le workflow actuel.|
+|**Message**|Spécifie le contenu du message avec la zone de texte expression de **données du message** et le type à l’aide de la zone de liste déroulante **type de message** . Par défaut, la **définition de contenu** utilise le <xref:System.ServiceModel.Activities.ReceiveMessageContent>, qui attend un <xref:System.ServiceModel.Channels.Message> ou un type de contrat de message dans la définition du service de Workflow.|
+|**Paramètres**|Cliquez sur la case d’option **paramètres** pour utiliser <xref:System.ServiceModel.Activities.ReceiveParametersContent>, qui attend un contrat de données. Utilisez la grille de données pour définir une collection générique des paires clé/valeur <xref:System.Activities.OutArgument> dont les valeurs sont assignées aux paramètres de variables dans le workflow actuel.|
 
-Le **définition du contenu** boîte de dialogue est utilisée par le **envoyer**, **réception**, **ReceiveAndSendReply**, et  **SendAndReceiveReply** concepteurs. L'accès à ces derniers est semblable dans chaque cas, et le cas Receive est utilisé ici pour illustrer la procédure.
+La boîte de dialogue **définition du contenu** est utilisée par les concepteurs **Send**, **Receive**, **ReceiveAndSendReply**et **SendAndReceiveReply** . L'accès à ces derniers est semblable dans chaque cas, et le cas Receive est utilisé ici pour illustrer la procédure.
 
-Le **réception** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail chaque fois que les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Receive> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Receive. Sélectionnez le **réception** Concepteur d’activités et cliquez sur le bouton de sélection en regard du texte (contenu) pour le **contenu** propriété dans la grille des propriétés pour le **définition du contenu**la boîte de dialogue.
+Le concepteur d’activités **Receive** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Receive> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Receive. Sélectionnez le concepteur d’activités **Receive** , puis cliquez sur le bouton de sélection en regard du texte (contenu) de la propriété **contenu** dans la grille des propriétés pour afficher la boîte de dialogue **définition du contenu** .
 
-Le contenu peut être spécifié dans le **Message** section pour un <xref:System.ServiceModel.Activities.ReceiveMessageContent> activité ou à l’intérieur du **paramètre** section pour un <xref:System.ServiceModel.Activities.ReceiveParametersContent> activité.
+Le contenu peut être spécifié dans la section **message** pour une activité <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou dans la section de **paramètres** pour une activité <xref:System.ServiceModel.Activities.ReceiveParametersContent>.
 
 ## <a name="see-also"></a>Voir aussi
 

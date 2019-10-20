@@ -1,5 +1,5 @@
 ---
-title: 'CA2221 : Les finaliseurs doivent être protégés | Microsoft Docs'
+title: 'CA2221 : les finaliseurs doivent être protégés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685135"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651956"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221 : Les finaliseurs doivent être protégés
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221 : Les finaliseurs doivent être protégés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|Category|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public implémente un finaliseur qui ne spécifie pas d’accès (protégé) family.
+ Un type public implémente un finaliseur qui ne spécifie pas l’accès Family (protégé).
 
 ## <a name="rule-description"></a>Description de la règle
- Les finaliseurs doivent utiliser le modificateur d’accès family. Cette règle est appliquée par les compilateurs c#, Visual Basic et Visual C++.
+ Les finaliseurs doivent utiliser le modificateur d’accès family. Cette règle est appliquée par les C#compilateurs, Visual Basic et visuels. C++
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez le finaliseur pour un accès family.
+ Pour corriger une violation de cette règle, modifiez le finaliseur pour qu’il soit accessible à la famille.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- Cette règle ne peut pas être violée dans n’importe quel langage .NET de haut niveau ; Il peut être violé si vous écrivez Microsoft Intermediate Language.
+ Cette règle ne peut pas être violée dans un langage .NET de haut niveau ; Cela peut être violé si vous écrivez du langage intermédiaire Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

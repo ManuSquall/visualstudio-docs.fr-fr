@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fb5e6181c2dbe9a79b2ab1d0859722de324d768e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919133"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610692"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
 Affiche le contenu de la plage de mémoire spécifiée.
@@ -34,26 +34,26 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Arguments
 `expression`
 
-facultatif. Adresse mémoire à partir de laquelle la mémoire doit être affichée.
+Optionnel. Adresse mémoire à partir de laquelle la mémoire doit être affichée.
 
 ## <a name="switches"></a>Commutateurs
 /ANSI&#124;Unicode
 
-facultatif. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
+Optionnel. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
 
 /Count:`number`
 
-facultatif. Détermine le nombre d’octets de mémoire à afficher, à partir de l’argument `expression`.
+Optionnel. Détermine le nombre d’octets de mémoire à afficher, à partir de l’argument `expression`.
 
 /Format:`formattype`
 
-facultatif. Type du format selon lequel les informations sur la mémoire sont affichées dans la fenêtre **Mémoire** ; le format peut être OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) ou Double (64 bits). Si le format OneByte est utilisé, `/Unicode` n’est pas disponible.
+Optionnel. Type du format selon lequel les informations sur la mémoire sont affichées dans la fenêtre **Mémoire** ; le format peut être OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) ou Double (64 bits). Si le format OneByte est utilisé, `/Unicode` n’est pas disponible.
 
 /Hex&#124;Signed&#124;Unsigned
 
-facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
+Optionnel. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :
 
 ```cmd
@@ -79,7 +79,7 @@ Voici une liste des alias disponibles pour la commande **Debug.ListMemory** :
 |**dq**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
@@ -88,7 +88,7 @@ Voici une liste des alias disponibles pour la commande **Debug.ListMemory** :
 ## <a name="see-also"></a>Voir aussi
 
 - [Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)
-- [Répertorier les threads, commande](../../ide/reference/list-threads-command.md)
+- [Afficher les threads, commande](../../ide/reference/list-threads-command.md)
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)

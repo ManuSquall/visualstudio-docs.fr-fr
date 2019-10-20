@@ -8,17 +8,17 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043521"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610429"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre Commande, commande
 
@@ -33,7 +33,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Arguments
 
 `filename`\
-facultatif. Nom du fichier journal. Par défaut, le fichier est créé dans le dossier du profil de l’utilisateur. Si le nom de fichier existe déjà, le journal est ajouté à la fin du fichier existant. Si aucun fichier n’est spécifié, le dernier fichier spécifié est utilisé. Si aucun fichier n’a été spécifié précédemment, le fichier journal cmdline.log est créé par défaut.
+Optionnel. Nom du fichier journal. Par défaut, le fichier est créé dans le dossier du profil de l’utilisateur. Si le nom de fichier existe déjà, le journal est ajouté à la fin du fichier existant. Si aucun fichier n’est spécifié, le dernier fichier spécifié est utilisé. Si aucun fichier n’a été spécifié précédemment, le fichier journal cmdline.log est créé par défaut.
 
 > [!TIP]
 > Pour modifier l’emplacement d’enregistrement du fichier journal, entrez le chemin complet du fichier, en l’entourant de guillemets s’il comporte des espaces.
@@ -41,15 +41,15 @@ facultatif. Nom du fichier journal. Par défaut, le fichier est créé dans le d
 ## <a name="switches"></a>Commutateurs
 
 /on\
-facultatif. Démarre le journal pour la fenêtre **Commande** dans le fichier spécifié et ajoute les nouvelles informations à la fin de ce fichier.
+Optionnel. Démarre le journal pour la fenêtre **Commande** dans le fichier spécifié et ajoute les nouvelles informations à la fin de ce fichier.
 
 /off\
-facultatif. Arrête le journal pour la fenêtre **Commande**.
+Optionnel. Arrête le journal pour la fenêtre **Commande**.
 
 /overwrite\
-facultatif. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
+Optionnel. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Si aucun fichier n’est spécifié, le fichier cmdline.log est créé par défaut. L’alias par défaut de cette commande est Log.
 
