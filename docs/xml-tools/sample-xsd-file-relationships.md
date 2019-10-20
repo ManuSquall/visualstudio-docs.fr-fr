@@ -1,21 +1,21 @@
 ---
-title: 'Exemple de fichier XSD : Relations'
+title: 'Exemple de fichier XSD : relations'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65455097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601751"
 ---
-# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : Relations
+# <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : relations
 
 Le fichier XSD suivant est utilisé dans différents exemples de la documentation du Concepteur de schémas XSD. Ce fichier est un schéma de bon de commande avec des annotations et une documentation.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1505 : Éviter le code | Microsoft Docs'
+title: 'Ca1505 : éviter le code impossible à maintenir | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1505
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d9d5dc976c27ca2459fa64b95fe0502579a500b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87aacfd675181e35d289b2a054c58f83f3f790fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191211"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607587"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505 : Éviter le code impossible à maintenir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "68191211"
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|Catégorie|Microsoft.Maintainability|
+|Category|Microsoft. maintenabilité|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Un type ou une méthode a une faible valeur d'indice de maintenabilité.
 
 ## <a name="rule-description"></a>Description de la règle
- L’indice de maintenabilité est calculé en utilisant les métriques suivantes : lignes de code, volume de programme et complexité cyclomatique. Volume de programme est une mesure de la difficulté de compréhension d’un type ou une méthode qui est basé sur le nombre d’opérateurs et d’opérandes dans le code. Complexité cyclomatique est une mesure de la complexité structurelle du type ou de méthode. Plus d’informations sur la métrique du code à [mesure la complexité et la facilité de maintenance du Code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ L’index de maintenabilité est calculé à l’aide des métriques suivantes : lignes de code, volume de programme et complexité cyclomatic. Le volume de programme est une mesure de la difficulté de comprendre un type ou une méthode basée sur le nombre d’opérateurs et d’opérandes dans le code. La complexité cyclomatic est une mesure de la complexité structurelle du type ou de la méthode. Vous pouvez en savoir plus sur les métriques [du code pour mesurer la complexité et la maintenabilité du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
- Un faible indice de maintenabilité indique qu’un type ou une méthode est probablement difficile à maintenir et serait un bon candidat pour modifier la conception.
+ Un index de maintenabilité faible indique qu’un type ou une méthode est probablement difficile à gérer et qu’il s’agit d’un bon candidat pour la reconception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour résoudre cette violation, reconcevez le type ou la méthode et essayez de diviser en plus petites et plus ciblées des types ou méthodes.
+ Pour corriger cette violation, reconcevez le type ou la méthode et essayez de le fractionner en types ou méthodes plus petits et plus ciblés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Exclure cet avertissement lorsqu’une méthode ou type est considéré comme plus facile à gérer en dépit de sa grande taille ou de la méthode ou le type ne peut pas être fractionnée.
+ Excluez cet avertissement lorsqu’un type ou une méthode est toujours considéré comme gérable en dépit de sa grande taille ou lorsque le type ou la méthode ne peut pas être fractionné.
 
 ## <a name="see-also"></a>Voir aussi
- [Avertissements de la facilité de maintenance](../code-quality/maintainability-warnings.md) [mesure la complexité et la maintenabilité du Code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Avertissements de maintenabilité](../code-quality/maintainability-warnings.md) [mesure de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
