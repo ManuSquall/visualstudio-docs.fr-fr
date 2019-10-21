@@ -1,24 +1,24 @@
 ---
-title: 'Procédure : Ajouter une validation à des classes d’entité'
+title: Guide pratique pour ajouter une validation à des classes d’entité
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 139833cc427349cb0fd820877c8cad101a647c81
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925614"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648407"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Procédure : Ajouter une validation à des classes d’entité
+# <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
 La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.
 
 Les [outils de LINQ to SQL dans Visual Studio fournissent des](../data-tools/linq-to-sql-tools-in-visual-studio2.md) méthodes partielles qui permettent aux utilisateurs d’étendre le code généré par le concepteur qui s’exécute pendant les insertions, les mises à jour et les suppressions d’entités complètes, ainsi que pendant et après les modifications de colonnes individuelles.
@@ -62,7 +62,7 @@ Cette procédure indique comment valider des données lorsque la valeur d'une co
 
     Pour les projets C# :
 
-    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer les méthodes partielles de modification de colonne. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de modification de colonne de la colonne à laquelle la validation doit être ajoutée. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle de modification de colonne:
+    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer les méthodes partielles de modification de colonne. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de modification de colonne de la colonne à laquelle la validation doit être ajoutée. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle de modification de colonne :
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -106,7 +106,7 @@ Outre la vérification des valeurs lors des modifications, vous avez la possibil
 
     Pour les projets C# :
 
-    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser `UpdateCLASSNAME` IntelliSense pour créer la méthode partielle. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe sur laquelle vous souhaitez ajouter la validation. Le code suivant ressemble au code généré lorsque vous sélectionnez une `UpdateCLASSNAME` méthode partielle:
+    Étant C# donné que les projets ne génèrent pas automatiquement de gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer la méthode `UpdateCLASSNAME` partielle. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe sur laquelle vous souhaitez ajouter la validation. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle `UpdateCLASSNAME` :
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

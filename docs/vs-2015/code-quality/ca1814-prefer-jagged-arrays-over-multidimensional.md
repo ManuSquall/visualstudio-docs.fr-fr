@@ -1,5 +1,5 @@
 ---
-title: 'CA1814 : Préférer les tableaux en escalier multidimensionnelles | Microsoft Docs'
+title: 'CA1814 : préférer les tableaux en escalier à des tableaux multidimensionnels | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201704"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668419"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814 : Utilisez des tableaux en escalier à la place de tableaux multidimensionnels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Catégorie|Microsoft.Performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un membre est déclaré comme un tableau multidimensionnel.
+ Un membre est déclaré en tant que tableau multidimensionnel.
 
 ## <a name="rule-description"></a>Description de la règle
  Un tableau en escalier est un tableau dont les éléments sont des tableaux. Les tableaux qui composent les éléments peuvent être de différentes tailles, ce qui conduit à un gaspillage d'espace plus restreint pour certains groupes de données.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez le tableau multidimensionnel en tableau en escalier.
+ Pour corriger une violation de cette règle, remplacez le tableau multidimensionnel par un tableau en escalier.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle si le tableau multidimensionnel ne gaspille pas d’espace.

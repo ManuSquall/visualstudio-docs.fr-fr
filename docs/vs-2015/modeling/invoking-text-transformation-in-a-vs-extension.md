@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd491ea0a17bcc0a4fccc0ade205736daae552d5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871872"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646147"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d'une transformation de texte dans une extension VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,8 +140,8 @@ Sample text.
  Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une classe de paramètre dérivée de <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Rubriques connexes
- Pour générer du texte à partir d'un modèle de texte prétraité : Appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Pour générer du texte à partir d’un modèle de texte prétraité : appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Pour générer du texte en dehors d’une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] : Définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Pour générer du texte en dehors d’une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] : définissez un hôte personnalisé. Pour plus d’informations, consultez [traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Pour générer du code source qui peut ensuite être compilé et exécuté : Appelez la méthode [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+ Pour générer du code source qui peut être compilé et exécuté ultérieurement : appelez la méthode [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
