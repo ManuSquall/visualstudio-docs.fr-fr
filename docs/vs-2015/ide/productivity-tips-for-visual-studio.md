@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670313"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
 
      Figure 1 : Étiquettes actives d’erreur
 
-     ![Suggestions d’étiquette active d’erreur](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Suggestions d’étiquette active d’erreur](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      Les zones rouges proposent des solutions pour réorganiser votre code.
 
      Figure 2 : Étiquettes actives de refactorisation
 
-     ![Suggestions d’étiquette active de refactorisation](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![Suggestions d’étiquette active de refactorisation](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Afficher et modifier la définition d’un élément de code**. Vous pouvez afficher et modifier rapidement le module dans lequel un élément de code, tel qu'un membre, une variable ou une variable locale, est défini.
 
@@ -117,7 +117,7 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
 
      Figure 3 : Liste des résultats de lancement rapide pour `new project`
 
-     ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Résultats du lancement rapide pour « nouveau projet »](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **Lancement rapide** affiche notamment des liens vers les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que vers la page Projets et solutions dans la boîte de dialogue **Options**. Les résultats de lancement rapide peuvent également inclure des fichiers de projet et des fenêtres Outil.
 
@@ -126,7 +126,7 @@ En suivant ces conseils, vous pouvez écrire, parcourir et déboguer votre code 
 
 - **Tester la même page, la même application ou le même site dans divers navigateurs**. Quand vous déboguez votre code, vous pouvez basculer facilement entre les navigateurs web installés, notamment l’[Inspecteur de page (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sans avoir besoin d’ouvrir la boîte de dialogue **Naviguer avec**. Vous pouvez utiliser la liste **Cible de débogage**, qui se trouve dans la barre d’outils **Standard** en regard du bouton **Démarrer le débogage**, pour vérifier rapidement le navigateur que vous utilisez quand vous déboguez ou visualisez des pages.
 
-     ![Sélectionner les options de débogage de navigateur web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Sélectionner les options de débogage de navigateur web](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Définir des points d’arrêt temporaires**. Vous pouvez créer un point d'arrêt temporaire dans la ligne active et démarrer le débogueur simultanément. Lorsque vous atteignez cette ligne de code, le débogueur passe en mode arrêt. Pour plus d’informations, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
 

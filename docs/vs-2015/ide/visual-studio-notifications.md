@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: cfbbc30a-bb61-42e6-b58e-b4ea9d33c440
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9aacdbf7bbde890abd0b7ac03f5cd5d714d6c9c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10cc00fb3067727f2f7ec58182e7b5cf5215e91b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154936"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667090"
 ---
 # <a name="visual-studio-notifications"></a>Notifications Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio dispose d'un système de notification qui vous avertit de divers �
 
    Si vous choisissez de toujours ignorer une notification, Visual Studio cesse de l'afficher. Vous pouvez réinitialiser la liste des notifications ignorées dans la [boîte de dialogue Notifications, Environnement, Options](../ide/reference/notifications-environment-options-dialog-box.md).
 
-   ![Icône de notification de Visual Studio](../ide/media/vs2015-notificationicon.png "vs2015_NotificationIcon")
+   ![Icône de notification de Visual Studio](../ide/media/vs2015-notificationicon.png "|::ref1::|")
 
 ## <a name="see-also"></a>Voir aussi
  [IDE Visual Studio](../ide/visual-studio-ide.md)
