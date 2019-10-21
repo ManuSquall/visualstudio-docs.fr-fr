@@ -6,39 +6,39 @@ helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8cbbdab08b5bc9298f83d4159f31ac8b9b0fb963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744524"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645716"
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 
-Dans Visual Studio, vous pouvez enregistrer des diagrammes dans des formats en lecture seule de modélisation afin que vous pouvez les partager avec les parties prenantes, les utilisateurs ou les membres de l’équipe projet qui n’utilisent pas la même version de Visual Studio.
+Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule afin de pouvoir les partager avec des parties prenantes, des utilisateurs ou des membres de l’équipe de projet qui n’utilisent pas la même version de Visual Studio.
 
-Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Copier un diagramme ou une partie d’un diagramme à une autre application
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Copier un diagramme ou une partie d’un diagramme vers une autre application
 
 1. Sur le diagramme, sélectionnez toutes les formes ou certaines d'entre elles.
 
-2. Avec le bouton droit de votre sélection, puis cliquez sur **copie**.
+2. Cliquez avec le bouton droit sur votre sélection, puis cliquez sur **copier**.
 
 3. Collez votre sélection dans l'application souhaitée.
 
-## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Enregistrer un diagramme de modélisation sous forme de fichier XML Paper Specification (.xps)
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Enregistrer un diagramme de modélisation en tant que fichier XML Paper Specification (. Xps)
 
-1. Sur le **fichier** menu, cliquez sur **impression** pour ouvrir le **impression** boîte de dialogue.
+1. Dans le menu **fichier** , cliquez sur **Imprimer** pour ouvrir la boîte de dialogue **Imprimer** .
 
-2. Dans le **nom** liste, sélectionnez **Microsoft XPS Document Writer**, puis cliquez sur **OK**.
+2. Dans la liste **nom** , sélectionnez **Microsoft XPS document Writer**, puis cliquez sur **OK**.
 
-3. Dans le **enregistrez le fichier sous** boîte de dialogue, enregistrez le fichier sous un **Document XPS (\*.xps)** fichier.
+3. Dans la boîte de dialogue **enregistrer le fichier sous** , enregistrez le fichier en tant que fichier **Document XPS (\*. Xps)** .
 
 ## <a name="see-also"></a>Voir aussi
 

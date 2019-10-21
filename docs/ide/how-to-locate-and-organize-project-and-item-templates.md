@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430274"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645878"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procédure : Localiser et organiser des modèles de projet et d’élément
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
 
 Les fichiers de modèle doivent être placés dans un emplacement connu pour être affichés dans les boîtes de dialogue Nouveau projet et Nouvel élément.
 
@@ -60,7 +60,7 @@ Par exemple, le répertoire suivant contient les modèles d’élément Visual B
 
 ### <a name="user-templates"></a>Modèles utilisateur
 
-Si vous ajoutez un fichier compressé (*.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue Nouveau projet ou Nouvel élément. Par défaut, les modèles utilisateur se trouvent dans :
+Si vous ajoutez un fichier compressé ( *.zip*) incluant un fichier *.vstemplate* au répertoire des modèles utilisateur, le modèle apparaît dans la boîte de dialogue Nouveau projet ou Nouvel élément. Par défaut, les modèles utilisateur se trouvent dans :
 
 ::: moniker range="vs-2017"
 
@@ -106,9 +106,9 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
+1. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#**.
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Créer des catégories de modèles d’élément utilisateur
 
@@ -120,7 +120,7 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Créez un projet ou ouvrez un projet existant. Ensuite, dans le menu **Projet**, choisissez **Ajouter un nouvel élément**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#**.
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 

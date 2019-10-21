@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975400"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652533"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -40,7 +40,7 @@ Vous pouvez également nommer et enregistrer une disposition personnalisée, et 
 
 ### <a name="tool-and-document-windows"></a>Fenêtres Outil et Document
 
-L'IDE comprend deux types de fenêtres de base : les *fenêtres Outil* et les *fenêtres de document*. Les fenêtres Outil comprennent **l’Explorateur de solutions**, **l’Explorateur de serveurs**, la **Fenêtre Sortie**, la **Liste d’erreurs**, les concepteurs, les fenêtres du débogueur, etc. Les fenêtres de document contiennent les fichiers de code source, les fichiers de texte arbitraire, les fichiers de configuration, etc. Utilisez la barre de titre des fenêtres Outil pour les redimensionner et les déplacer. Utilisez l'onglet des fenêtres de document pour les déplacer. Cliquez avec le bouton droit sur l'onglet ou la barre de titre pour définir d'autres options dans la fenêtre.
+L'IDE comprend deux types de fenêtres de base : les *fenêtres Outil* et les *fenêtres de document*. Les fenêtres Outil comprennent **l’Explorateur de solutions**, **l’Explorateur de serveurs**, la **Fenêtre Sortie**, la **Liste d’erreurs**, les concepteurs, les fenêtres du débogueur, etc. Les fenêtres de document contiennent les fichiers de code source, les fichiers de texte arbitraire, les fichiers de configuration, etc. Utilisez la barre de titre des fenêtres Outil pour les redimensionner et les déplacer. Vous pouvez faire glisser les fenêtres de document sur leur onglet. Cliquez avec le bouton droit sur l’onglet ou la barre de titre pour définir d’autres options dans la fenêtre.
 
 Le menu **Fenêtre** affiche les options d'ancrage, de flottement et de masquage des fenêtres dans l'IDE. Cliquez avec le bouton droit sur l'onglet ou la barre de titre d'une fenêtre pour afficher des options supplémentaires pour cette fenêtre spécifique. Vous pouvez afficher plusieurs instances d'une même fenêtre Outil à la fois. Par exemple, vous pouvez afficher plusieurs fenêtres du navigateur web, et vous pouvez créer des instances supplémentaires de certaines fenêtres Outil en choisissant **Nouvelle fenêtre** dans le menu **Fenêtre** .
 
@@ -58,7 +58,7 @@ Quand vous devez afficher ou modifier deux emplacements à la fois dans un docum
 
 ### <a name="toolbars"></a>Barres d'outils
 
-Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur la façon de positionner et de personnaliser les barres d’outils, consultez [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur le positionnement et la personnalisation des barres d’outils, consultez [Guide pratique pour personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Organiser et ancrer des fenêtres
 
@@ -170,7 +170,7 @@ Une fois la disposition de l'interface utilisateur appliquée, notez qu'elle est
 Si vous utilisez une configuration à plusieurs écrans au bureau et un ordinateur portable à un seul écran à la maison, vous pouvez créer des dispositions optimisées pour chaque ordinateur.
 
 > [!NOTE]
-> si vous appliquez une disposition à plusieurs écrans à un système à un seul écran, les fenêtres flottantes que vous avez placées sur le second écran sont alors masquées derrière la fenêtre Visual Studio. Pour faire passer ces fenêtres au premier plan, appuyez sur **Alt+Tab**. Si vous ouvrez par la suite Visual Studio avec plusieurs écrans, vous pouvez restaurer les positions spécifiées des fenêtres en réappliquant la disposition.
+> si vous appliquez une disposition à plusieurs écrans à un système à un seul écran, les fenêtres flottantes que vous avez placées sur le second écran sont alors masquées derrière la fenêtre Visual Studio. Vous pouvez placer ces fenêtres au premier plan en appuyant sur **Alt + Tab**. Si vous ouvrez par la suite Visual Studio avec plusieurs écrans, vous pouvez restaurer les fenêtres à leurs positions spécifiées en réappliquant la disposition.
 
 #### <a name="manage-and-roam-your-layouts"></a>Gérer vos dispositions et les rendre itinérantes
 

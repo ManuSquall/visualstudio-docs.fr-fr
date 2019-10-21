@@ -1,5 +1,5 @@
 ---
-title: 'CA1716 : Les identificateurs ne doivent pas correspondre aux mots clés | Microsoft Docs'
+title: 'CA1716 : les identificateurs ne doivent pas correspondre à des mots clés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189109"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669098"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ ms.locfileid: "68189109"
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un nom d’un espace de noms, un type ou un membre d’interface ou virtuel correspond à un mot clé réservé dans un langage de programmation.
+ Le nom d’un espace de noms, d’un type, d’un viritual ou d’un membre d’interface correspond à un mot clé réservé dans un langage de programmation.
 
 ## <a name="rule-description"></a>Description de la règle
- Identificateurs pour les espaces de noms, types et virtuels et les membres d’interface ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le common language runtime. Selon le langage qui est utilisé et le mot clé, ambiguïtés et les erreurs du compilateur peuvent rendre la bibliothèque difficile à utiliser.
+ Les identificateurs pour les espaces de noms, les types et les membres virtuels et d’interface ne doivent pas correspondre à des mots clés définis par les langages qui ciblent le common language runtime. En fonction du langage utilisé et du mot clé, les erreurs et les ambiguïtés du compilateur peuvent compliquer l’utilisation de la bibliothèque.
 
- Cette règle vérifie par rapport à des mots clés dans les langues suivantes :
+ Cette règle vérifie les mots clés dans les langues suivantes :
 
 - Visual Basic
 
@@ -46,10 +46,10 @@ ms.locfileid: "68189109"
 
 - C++/CLI
 
-  Comparaison de non-respect de la casse est utilisée pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mots clés et comparaison respectant la casse est utilisée pour les autres langues.
+  La comparaison ne respectant pas la casse est utilisée pour les mots clés [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], et la comparaison respectant la casse est utilisée pour les autres langages.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Sélectionnez un nom qui n’apparaît pas dans la liste des mots clés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur sera confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur ne confondra pas les utilisateurs de l’API et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

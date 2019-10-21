@@ -17,114 +17,114 @@ helpviewer_keywords:
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 549fa4842a4e57043ddac90683d05383b7c3d44d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693934"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657438"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur le Concepteur de formulaires Windows, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont trouvé concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data concepteurs** clé de Registre.
+Lorsque vous faites glisser des éléments depuis la [fenêtre sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) vers le Concepteur Windows Forms, une attention particulière est prise en compte : les noms des colonnes dans les étiquettes de légende sont reformatés dans une chaîne plus lisible quand deux mots ou plus sont trouvés pour être concaténés réunis. Vous pouvez personnaliser la façon dont ces étiquettes sont créées, en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** clé de registre des concepteurs de données.
 
 > [!NOTE]
-> Cette clé de Registre n’existe pas jusqu'à ce que vous la créez.
+> Cette clé de Registre n’existe pas tant que vous ne l’avez pas créée.
 
- Sous-titrage intelligente est contrôlé par l’expression régulière entrée dans la valeur de la **SmartCaptionExpression** valeur. Ajout de la **concepteurs de données** clé de Registre remplace l’expression régulière par défaut qui contrôle les étiquettes de légende. Pour plus d’informations sur les expressions régulières, consultez [à l’aide d’Expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+ Le sous-titrage intelligent est contrôlé par l’expression régulière entrée dans la valeur de la valeur **SmartCaptionExpression** . L’ajout de la clé de registre des **concepteurs de données** remplace l’expression régulière par défaut qui contrôle les étiquettes de légende. Pour plus d’informations sur les expressions régulières, consultez [utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
  Le tableau suivant décrit les valeurs de Registre qui contrôlent les étiquettes de légende.
 
 |Élément de Registre|Description|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|L’expression régulière utilisée pour correspondre à vos modèles.|
-|**SmartCaptionReplacement**|Le format d’affichage des groupes de mise en correspondance dans le **SmartCaptionExpression**.|
+|**SmartCaptionExpression**|Expression régulière utilisée pour faire correspondre vos modèles.|
+|**SmartCaptionReplacement**|Format d’affichage des groupes correspondants dans le **SmartCaptionExpression**.|
 |**SmartCaptionSuffix**|Chaîne facultative à ajouter à la fin de la légende.|
 
- Le tableau suivant répertorie les paramètres internes par défaut pour ces valeurs de Registre.
+ Le tableau suivant répertorie les paramètres par défaut internes pour ces valeurs de registre.
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll})(\\\p{Lu})&#124;_+|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
-|**SmartCaptionReplacement**|$1 $2|$1 représente les caractères appariés dans la première parenthèse de l’expression et $2 représente les caractères appariés dans la deuxième parenthèse. Le remplacement est la première correspondance, un espace, puis la deuxième correspondance.|
-|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|
+|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionReplacement**|$1 $2|$1 représente tous les caractères correspondants dans les premières parenthèses de l’expression, et $2 représente tous les caractères correspondants dans les secondes. Le remplacement correspond à la première correspondance, à un espace, puis à la deuxième correspondance.|
+|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, le suffixe le rend `Company Name:`|
 
 > [!CAUTION]
-> Vous devez être très prudent lorsque vous sert à rien dans l’Éditeur du Registre. Sauvegardez le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre de manière incorrecte, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes qui vous entraîner à l’aide de l’Éditeur du Registre incorrecte peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
+> Vous devez être très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
 >
-> L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
+> L’article de la base de connaissances suivant contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb  ; en-US ; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de sous-titrage intelligent de la fenêtre Sources de données
+### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de la légende intelligente de la fenêtre sources de données
 
-1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis sur **exécuter**.
 
-2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le **HKEY_CURRENT_USER** nœud.
+3. Développez le nœud **HKEY_CURRENT_USER** .
 
-4. Développez le **logiciel** nœud.
+4. Développez le nœud **logiciel** .
 
-5. Développez le **Microsoft** nœud.
+5. Développez le nœud **Microsoft** .
 
-6. Développez le **VisualStudio** nœud.
+6. Développez le nœud **VisualStudio** .
 
-7. Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
+7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
 
-8. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
+8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression`.
 
-9. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionReplacement`.
+9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement`.
 
-10. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionSuffix`.
+10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix`.
 
-11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.
+11. Cliquez avec le bouton droit sur l’élément **SmartCaptionExpression** , puis sélectionnez **modifier**.
 
-12. Entrez l’expression régulière que vous souhaitez que le **des Sources de données** fenêtre à utiliser.
+12. Entrez l’expression régulière que la fenêtre **sources de données** doit utiliser.
 
-13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.
+13. Cliquez avec le bouton droit sur l’élément **SmartCaptionReplacement** , puis sélectionnez **modifier**.
 
-14. Entrez le remplacement de la chaîne mise en forme comme vous le souhaitez afficher les modèles mis en correspondance dans votre expression régulière.
+14. Entrez la chaîne de remplacement mise en forme de la façon dont vous souhaitez afficher les modèles correspondants dans votre expression régulière.
 
-15. Cliquez sur le **SmartCaptionSuffix** d’élément, puis sélectionnez **modifier**.
+15. Cliquez avec le bouton droit sur l’élément **SmartCaptionSuffix** , puis sélectionnez **modifier**.
 
 16. Entrez les caractères que vous souhaitez voir apparaître à la fin de la légende.
 
-     La prochaine fois que vous faites glisser des éléments à partir de la **des Sources de données** fenêtre, les étiquettes de légende sont créés à l’aide des nouvelles valeurs de Registre fournies.
+     La prochaine fois que vous faites glisser des éléments depuis la fenêtre **sources de données** , les étiquettes de légende sont créées à l’aide des nouvelles valeurs de Registre fournies.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Pour désactiver la fonctionnalité de sous-titrage intelligente
+### <a name="to-turn-off-the-smart-captioning-feature"></a>Pour désactiver la fonctionnalité de légende intelligente
 
-1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis sur **exécuter**.
 
-2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le **HKEY_CURRENT_USER** nœud.
+3. Développez le nœud **HKEY_CURRENT_USER** .
 
-4. Développez le **logiciel** nœud.
+4. Développez le nœud **logiciel** .
 
-5. Développez le **Microsoft** nœud.
+5. Développez le nœud **Microsoft** .
 
-6. Développez le **VisualStudio** nœud.
+6. Développez le nœud **VisualStudio** .
 
-7. Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
+7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
 
-8. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
+8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression`.
 
-9. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionReplacement`.
+9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement`.
 
-10. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionSuffix`.
+10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix`.
 
-11. Cliquez sur le **SmartCaptionExpression** d’élément, puis sélectionnez **modifier**.
+11. Cliquez avec le bouton droit sur l’élément **SmartCaptionExpression** , puis sélectionnez **modifier**.
 
-12. Entrez `(.*)` pour la valeur. Il correspond à la chaîne entière.
+12. Entrez `(.*)` pour la valeur. Cela correspond à la chaîne entière.
 
-13. Cliquez sur le **SmartCaptionReplacement** d’élément, puis sélectionnez **modifier**.
+13. Cliquez avec le bouton droit sur l’élément **SmartCaptionReplacement** , puis sélectionnez **modifier**.
 
-14. Entrez `$1` pour la valeur. Cela remplace la chaîne avec la valeur mise en correspondance, ce qui est la chaîne entière afin qu’elle reste inchangée.
+14. Entrez `$1` pour la valeur. Cela remplace la chaîne par la valeur correspondante, qui est la chaîne entière afin qu’elle reste inchangée.
 
-     La prochaine fois que vous faites glisser des éléments à partir de la **des Sources de données** fenêtre, les étiquettes de légende sont créés avec des légendes non modifiées.
+     La prochaine fois que vous faites glisser des éléments depuis la fenêtre **sources de données** , les étiquettes de légende sont créées avec des sous-titres non modifiés.
 
 ## <a name="see-also"></a>Voir aussi
  [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -4,25 +4,25 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ccb6e8d938bbb807211d0d555294c94948705240
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821949"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653874"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
 
- Pour connaître les versions de Visual Studio prennent en charge ces fonctionnalités, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge ces fonctionnalités, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Tests système et de sous-systèmes
- *Test du système,* également appelé *tests d’acceptation*, permettent de tester si les besoins des utilisateurs sont respectés. Ces tests portent sur le comportement extérieurement visible du système, plutôt que sur sa conception interne.
+ Le *test du système,* également appelé *test d’acceptation*, consiste à tester si les besoins des utilisateurs sont satisfaits. Ces tests portent sur le comportement extérieurement visible du système, plutôt que sur sa conception interne.
 
  Les tests système sont extrêmement utiles lors de l'extension ou de la modification de conception d'un système. Ils vous évitent d'introduire des bogues quand vous modifiez le code.
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
  Les tests de sous-systèmes appliquent les mêmes principes aux composants majeurs d'un système. Chaque composant est testé indépendamment des autres composants. Les tests de sous-systèmes sont axés sur le comportement visible au niveau des interfaces utilisateur ou des API du composant.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Dérivation de tests système à partir d'un modèle d'impératifs
- Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
+ Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles d’impératifs, consultez [Configuration requise](../modeling/model-user-requirements.md)pour les utilisateurs.
 
 ### <a name="write-tests-for-each-use-case"></a>Écrire des tests pour chaque cas d'usage
  Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez créer un groupe de tests pour chaque cas d'usage que vous avez défini dans votre modèle d'impératifs. Par exemple, si vous avez un cas d'usage Commander un repas, qui comprend Créer une commande et Ajouter un article à la commande, vous pouvez créer des tests à la fois pour le cas d'usage global et pour les cas d'usage plus détaillés.
@@ -50,20 +50,20 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
   - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.
 
-- Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.
+- Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, voici un exemple de test d'une fonction arithmétique simple : entrer 4, vérifier que la sortie est 2. Au lieu de cela, concevez le script comme suit : choisir une entrée, multiplier le résultat par lui-même et vérifier que le résultat est l'entrée d'origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.
 
 #### <a name="linking-tests-to-use-cases"></a>Liaison de tests à des cas d'usage
- Si vous utilisez [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] pour concevoir et exécuter vos tests, vous pouvez organiser vos tests sous spécification, cas d’usage ou des éléments de travail récit utilisateur. Vous pouvez lier ces éléments de travail à des cas d'usage dans votre modèle. Cela vous permet d'effectuer un suivi rapide des modifications d'impératifs lors des tests et vous aide à suivre la progression de chaque cas d'usage.
+ Si vous utilisez [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] pour concevoir et exécuter vos tests, vous pouvez organiser vos tests sous les éléments de travail spécification, cas d’utilisation ou récit utilisateur. Vous pouvez lier ces éléments de travail à des cas d'usage dans votre modèle. Cela vous permet d'effectuer un suivi rapide des modifications d'impératifs lors des tests et vous aide à suivre la progression de chaque cas d'usage.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Pour lier des tests à un cas d'usage
 
 1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s’agir d’un élément de travail récit utilisateur, spécification ou cas d’usage, selon le modèle de processus utilisé par votre projet avec Team Foundation. Pour plus d’informations, consultez [à propos des outils agile et gestion de projet agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
 
-    Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**.
+    Dans un diagramme de cas d’usage, cliquez avec le bouton droit sur un cas d’usage, puis cliquez sur **lier à l’élément de travail**.
 
 3. Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.
 
@@ -110,7 +110,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>Dérivation de tests de sous-systèmes à partir de modèles
  Dans la conception globale d'un grand système, vous pouvez identifier les composants ou les sous-systèmes. Ils représentent des parties qui peuvent être conçues séparément, qui se trouvent sur des ordinateurs différents ou qui sont des modules réutilisables pouvant être recombinés de plusieurs manières.
 
- Vous pouvez appliquer à chaque composant majeur les mêmes principes que ceux utilisés pour l'ensemble du système. Dans un grand projet, chaque composant peut avoir son propre modèle d'impératifs. Dans les projets plus petits, vous pouvez créer un modèle d'architecture ou une conception globale pour montrer les principaux composants et leurs interactions. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).
+ Vous pouvez appliquer à chaque composant majeur les mêmes principes que ceux utilisés pour l'ensemble du système. Dans un grand projet, chaque composant peut avoir son propre modèle d'impératifs. Dans les projets plus petits, vous pouvez créer un modèle d'architecture ou une conception globale pour montrer les principaux composants et leurs interactions. Pour plus d’informations, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).
 
  Dans les deux cas, vous pouvez établir une relation entre les éléments de modèle et les tests de sous-systèmes comme vous le feriez entre le modèle d'impératifs et les tests système.
 
@@ -128,7 +128,7 @@ Assert (countAfter == countBefore = 1);
 
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.
 
-## <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle
+## <a name="Attaching"></a>Attacher des cas de test à des éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
  Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
@@ -147,11 +147,11 @@ Assert (countAfter == countBefore = 1);
 
 1. Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s’agir d’un élément de travail récit utilisateur, spécification ou cas d’usage, selon le modèle de processus utilisé par votre projet avec Team Foundation. Pour plus d’informations, consultez [à propos des outils agile et gestion de projet agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
 
-    Dans un diagramme de modélisation, avec le bouton droit à un élément, commentaire ou une relation, puis cliquez sur **lien vers l’élément de travail**.
+    Dans un diagramme de modélisation, cliquez avec le bouton droit sur un élément, un commentaire ou une relation, puis cliquez sur **lier à l’élément de travail**.
 
 3. Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.
 

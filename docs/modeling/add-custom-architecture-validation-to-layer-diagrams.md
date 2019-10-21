@@ -4,33 +4,33 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743337777677b61661da53446f9717cad14ff9ed
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 34898bff2b437c84a29cec31091205044367abec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476672"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652326"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
-Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet sur un modèle de couche afin qu’ils peuvent vérifier que le code source est conforme aux dépendances sur un diagramme de dépendances. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.
+Dans Visual Studio, les utilisateurs peuvent valider le code source d’un projet par rapport à un modèle de couche afin de vérifier que le code source est conforme aux dépendances sur un diagramme de dépendance. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.
 
-Lorsque l’utilisateur sélectionne le **valider l’Architecture** commande sur un diagramme de dépendances, la méthode de validation standard est appelée, suivie de toutes les extensions de validation qui ont été installées.
+Lorsque l’utilisateur sélectionne la commande **valider l’architecture** sur un diagramme de dépendance, la méthode de validation standard est appelée, suivie de toutes les extensions de validation installées.
 
 > [!NOTE]
-> Dans un diagramme de dépendance, l’objectif principal de validation est de comparer le diagramme avec le code de programme dans d’autres parties de la solution.
+> Dans un diagramme de dépendance, l’objectif principal de la validation est de comparer le diagramme au code du programme dans d’autres parties de la solution.
 
 Vous pouvez empaqueter votre extension de validation de couche dans une extension d’intégration Visual Studio (VSIX) et la distribuer à d’autres utilisateurs de Visual Studio. Vous pouvez soit placer votre validateur seul dans une extension VSIX, soit le combiner dans la même extension VSIX que d’autres extensions. Vous devez écrire le code du validateur dans son propre projet Visual Studio, et non dans le même projet que d’autres extensions.
 
 > [!WARNING]
 > Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -40,7 +40,7 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Pour définir une extension à l’aide d’un modèle de projet
 
-1. Créer un nouveau **couche Designer Validation Extension** projet.
+1. Créez un projet d' **extension de validation du concepteur de couches** .
 
     Le modèle crée un projet qui contient un petit exemple.
 
@@ -48,7 +48,7 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
    > Pour faire fonctionner le modèle correctement :
    >
    > - Modifiez les appels à `LogValidationError` pour supprimer les arguments facultatifs `errorSourceNodes` et `errorTargetNodes`.
-   > - Si vous utilisez des propriétés personnalisées, appliquez la mise à jour mentionnée dans [ajouter des propriétés personnalisées aux diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md).
+   > - Si vous utilisez des propriétés personnalisées, appliquez la mise à jour mentionnée dans [Ajouter des propriétés personnalisées aux diagrammes de dépendance](../modeling/add-custom-properties-to-layer-diagrams.md).
 
 2. Modifiez le code pour définir votre validation. Pour plus d’informations, consultez [Programmation de la validation](#programming).
 
@@ -59,13 +59,13 @@ Pour créer un validateur, la méthode la plus rapide consiste à utiliser le mo
 
 ::: moniker range="vs-2017"
 
-4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier *. vsix* dans le répertoire *bin* . Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **extensions et mises à jour** dans le menu **Outils** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les Extensions** sur le **Extensions** menu.
+4. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier *. vsix* dans le répertoire *bin* . Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les extensions** dans le menu **Extensions** .
 
 ::: moniker-end
 
@@ -77,9 +77,9 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 1. Créez un projet de **Bibliothèque de classes**. Ce projet contiendra la classe de validation de couche.
 
-2. Rechercher ou créer un **projet VSIX** dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**.
+2. Recherchez ou créez un **projet VSIX** dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**.
 
-3. Dans **l’Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **définir comme projet de démarrage**.
+3. Dans **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **définir comme projet de démarrage**.
 
 4. Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de validation de couche en tant que composant MEF :
 
@@ -123,7 +123,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
     > [!NOTE]
     > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).
 
-9. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
+9. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier **. vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
 
 ## <a name="programming"></a> Programmation de la validation
 
@@ -155,7 +155,7 @@ Pour définir une extension de validation de couche, définissez une classe avec
 
 Quand l’utilisateur appelle la commande de menu **Valider l’architecture** , le système runtime de couche analyse les couches et leurs artefacts pour produire un graphique. Le graphique se compose de quatre parties :
 
-- Les modèles de couche de la solution Visual Studio qui sont représentées sous forme de nœuds et liens dans le graphique.
+- Modèles de couche de la solution Visual Studio représentés sous forme de nœuds et de liens dans le graphique.
 
 - le code, les éléments de projet et d’autres artefacts définis dans la solution et représentés sous forme de nœuds, ainsi que les liens représentant les dépendances découvertes par le processus d’analyse ;
 
@@ -166,7 +166,7 @@ Quand l’utilisateur appelle la commande de menu **Valider l’architecture** ,
 Une fois le graphique construit, la méthode de validation standard est appelée. Quand cette opération est terminée, toutes les méthodes de validation d’extension installées sont appelées dans un ordre non spécifié. Le graphique est passé à chaque méthode `ValidateArchitecture` qui peut analyser le graphique et signaler toutes les erreurs qu’elle rencontre.
 
 > [!NOTE]
-> Cela n’est pas le même que le processus de validation qui peut être utilisé dans des langages spécifiques à un domaine.
+> Ce n’est pas le même que le processus de validation qui peut être utilisé dans les langages spécifiques à un domaine.
 
 Les méthodes de validation ne doivent pas modifier le modèle de couche ni le code en cours de validation.
 
@@ -202,23 +202,23 @@ Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une
 
 La validation n’est exécutée que si les caractéristiques suivantes sont présentes :
 
-- Il est au moins un lien de dépendance sur le diagramme de dépendances.
+- Il existe au moins un lien de dépendance sur le diagramme de dépendance.
 
 - le modèle contient des couches associées aux éléments de code.
 
-La première fois que vous démarrez une instance expérimentale de Visual Studio pour tester votre extension de validation, ouvrez ou créez une solution qui possède ces caractéristiques.
+La première fois que vous démarrez une instance expérimentale de Visual Studio pour tester votre extension de validation, ouvrez ou créez une solution présentant ces caractéristiques.
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>Exécuter la commande Nettoyer la solution avant de valider l’architecture
 
-Chaque fois que vous mettez à jour votre code de validation, utilisez la commande **Nettoyer la solution** du menu **Générer** de la solution expérimentale, et ce avant de tester la commande Valider. Cette opération est nécessaire, car les résultats de la validation sont mis en cache. Si vous n’avez pas mis à jour le diagramme de dépendances de test ou son code, les méthodes de validation ne seront pas exécutées.
+Chaque fois que vous mettez à jour votre code de validation, utilisez la commande **Nettoyer la solution** du menu **Générer** de la solution expérimentale, et ce avant de tester la commande Valider. Cette opération est nécessaire, car les résultats de la validation sont mis en cache. Si vous n’avez pas mis à jour le diagramme de dépendance de test ou son code, les méthodes de validation ne sont pas exécutées.
 
 ### <a name="launch-the-debugger-explicitly"></a>Lancer le débogueur explicitement
 
 La validation s’exécute dans un processus séparé. Par conséquent, les points d’arrêt dans votre méthode de validation ne sont pas déclenchés. Vous devez attacher explicitement le débogueur au processus après le démarrage de la validation.
 
-Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Lorsque la boîte de dialogue de débogage s’affiche, sélectionnez l’instance principale de Visual Studio.
+Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Quand la boîte de dialogue débogage s’affiche, sélectionnez l’instance principale de Visual Studio.
 
-Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de Visual Studio et sur le **déboguer** menu, cliquez sur **attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.
+Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de Visual Studio et, dans le menu **Déboguer** , cliquez sur **attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.
 
 Démarrez toujours l’instance expérimentale en appuyant sur Ctrl+F5 (**Exécuter sans débogage**).
 

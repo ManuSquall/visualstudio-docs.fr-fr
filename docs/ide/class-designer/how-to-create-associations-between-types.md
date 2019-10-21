@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer des associations entre les types (Concepteur de classes)'
+title: 'Comment : créer des associations entre les types (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 74fdc2ce798380aace3a2bce714fd5627799b564
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975383"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631790"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Procédure : Créer des associations entre les types dans le Concepteur de classes
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Guide pratique pour créer des associations entre les types dans le Concepteur de classes
 
 Les lignes d’association du **Concepteur de classes** affichent la façon dont les classes d’un diagramme sont liées. Une ligne d'association représente une classe qui est le type d'une propriété ou d'un champ d'une autre classe de votre projet. Les lignes d'association sont en général utilisées pour illustrer les relations les plus importantes entre les classes de votre projet.
 

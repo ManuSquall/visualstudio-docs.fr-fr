@@ -3,20 +3,20 @@ title: Actions rapides courantes
 description: Les actions rapides les plus C# populaires pour et Visual Basic notamment la correction des mots clés ou des symboles mal orthographiés, la résolution des conflits de fusion, la suppression des importations nécessaires, la génération de types, l’introduction de variables locales, etc.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000141"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652248"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -30,7 +30,7 @@ Les actions rapides de cette section corrigent les erreurs dans le code qui prov
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Ces éléments s’affichent dans le menu ampoule en tant que **« changer » \<misspelled word > « en «\<correct word > »** . Exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Vous verrez ces éléments dans le menu ampoule **« changer » \<misspelled mot > « à » \<correct mot > «»** . Exemple :
 
 ```csharp
 // Before
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Supprimer les Usings inutiles/les importations superflues
 
-L’action rapide **Supprimer les instructions Using/Imports inutiles** supprime toutes les instructions `using` et `Import` inutilisées pour le fichier actif. Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont supprimées.
+L’action rapide supprimer les instructions **using inutiles/Imports** supprime toutes les directives `using` et `Import` inutilisées pour le fichier actuel. Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont supprimées.
 
 | Langages applicables | Version prise en charge |
 | - | - |
@@ -184,7 +184,7 @@ L’utilisation de types situés dans d’autres projets de votre solution perme
 - Suggérer des usings/imports pour les types dans les assemblys de référence
 - Suggérer des usings/imports pour les types dans les packages NuGet
 
-Quand ces options sont activées, si vous utilisez un type dans un espace de noms qui n’est pas importé, mais existe dans un assembly de référence ou un package NuGet, l’instruction using/import est créée.
+Quand cette option est activée, si vous utilisez un type dans un espace de noms qui n’est pas importé actuellement, mais qui existe dans un assembly de référence ou un package NuGet, la directive using ou Import est créée.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

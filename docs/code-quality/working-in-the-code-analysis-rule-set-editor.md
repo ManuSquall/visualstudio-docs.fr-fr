@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3672d2c85a8da9f8e249da33311d780391d43401
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445588"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649013"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -52,7 +52,7 @@ Le tableau suivant décrit les contrôles de la barre d’outils de l’éditeur
 |---------------------|-----------------|
 |**Développer tout**|Affiche les règles dans tous les groupes.|
 |**Réduire tout**|Masque les règles dans tous les groupes.|
-|**Group By**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez sur **@no__t > 1None** pour afficher les règles sans les groupes.|
+|**Group By**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez sur **\<None >** pour afficher les règles sans les groupes.|
 |**options de colonne**|Spécifie les champs de règle à afficher.|
 |**Masquer les règles qui ne s’appliquent pas à la solution actuelle**|Affiche ou masque les règles qui ne sont pas du même type de cible que la solution.|
 |**Afficher les règles qui peuvent générer des erreurs d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’erreur est assignée.|

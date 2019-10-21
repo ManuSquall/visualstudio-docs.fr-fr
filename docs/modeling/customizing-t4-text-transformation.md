@@ -5,34 +5,34 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03acd2b989f3403c04d7a0bacdf1fb3e6e6213db
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 3222a7bdf8e843a915d0ed0fb72f58ff4a89dca0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251841"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653997"
 ---
 # <a name="customize-t4-text-transformation"></a>Personnaliser une transformation de texte T4
 
-Les modèles de texte sont une fonctionnalité de Visual Studio qui vous permet de générer du code de programme ou d’autres fichiers texte à l’aide d’un processus de transformation. À [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]l’aide de, vous pouvez étendre le processus de transformation de modèle par défaut en personnalisant le processeur de directive de modèle de texte ou l’hôte de modèle de texte.
+Les modèles de texte sont une fonctionnalité de Visual Studio qui vous permet de générer du code de programme ou d’autres fichiers texte à l’aide d’un processus de transformation. À l’aide de [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], vous pouvez étendre le processus de transformation de modèle par défaut en personnalisant le processeur de directive de modèle de texte ou l’hôte de modèle de texte.
 
 ## <a name="in-this-section"></a>Dans cette section
 
  [Processus de transformation du modèle de texte](../modeling/the-text-template-transformation-process.md) Décrit le fonctionnement de la transformation de texte et explique le rôle de l’hôte de modèle et des processeurs de directive.
 
- [Création de processeurs de directive de modèle de texte T4 personnalisés](../modeling/creating-custom-t4-text-template-directive-processors.md) Le processeur de directive traite les directives dans votre modèle, telles `<#@template#>.` qu’il s’exécute pendant la compilation du modèle, et peut charger des assemblys et d’autres ressources. Il peut également insérer du code qui chargera des ressources au moment de l’exécution. En définissant votre propre processeur de directive, vous pouvez réduire la complexité de vos modèles.
+ [Création de processeurs de directive de modèle de texte T4 personnalisés](../modeling/creating-custom-t4-text-template-directive-processors.md) Le processeur de directive traite les directives dans votre modèle, par exemple `<#@template#>.` il s’exécute pendant la compilation du modèle, et peut charger des assemblys et d’autres ressources. Il peut également insérer du code qui chargera des ressources au moment de l’exécution. En définissant votre propre processeur de directive, vous pouvez réduire la complexité de vos modèles.
 
- [Appel d’une transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md) Si vous écrivez une extension Visual Studio telle qu’une commande de menu ou un gestionnaire d’événements, votre extension peut utiliser le service de création de modèles de texte pour transformer n’importe quel modèle de texte. Vous pouvez passer des données de paramètre dans le modèle à l’aide de l’objet de session et récupérer les valeurs à partir du `<#@parameter#>` modèle à l’aide de la directive.
+ [Appel d’une transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md) Si vous écrivez une extension Visual Studio telle qu’une commande de menu ou un gestionnaire d’événements, votre extension peut utiliser le service de création de modèles de texte pour transformer n’importe quel modèle de texte. Vous pouvez transmettre des données de paramètre dans le modèle à l’aide de l’objet de session et récupérer les valeurs à partir du modèle à l’aide de la directive `<#@parameter#>`.
 
  [Traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md) Lorsque le code du modèle de texte s’exécute, l’hôte fournit l’accès aux fichiers externes et à l’état de l’application. Par exemple, l’hôte qui exécute des transformations de texte dans Visual Studio peut fournir l’accès à **Explorateur de solutions**. Il affiche également les erreurs dans la fenêtre de message d’erreur. Si vous souhaitez exécuter des transformations de texte dans un contexte différent, vous pouvez définir votre propre hôte qui fournit l’accès aux services disponibles dans ce contexte.
 
  Si vous écrivez une extension Visual Studio, envisagez d’utiliser le service de transformation de texte existant au lieu d’écrire votre propre hôte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 
 - L' [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md) fournit la syntaxe des directives et des blocs de contrôle de modèle de texte.

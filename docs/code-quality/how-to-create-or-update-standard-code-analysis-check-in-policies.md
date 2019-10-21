@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448967"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649474"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -61,7 +61,7 @@ Dans la liste **exécuter cet ensemble de règles** , utilisez l’une des méth
 
 - Sélectionnez un ensemble de règles standard Microsoft.
 
-- Sélectionnez un ensemble de règles personnalisé en cliquant sur **@no__t ensemble de règles 1Select à partir du contrôle de code source... >** . Ensuite, tapez le chemin d’accès de contrôle de version de l’ensemble de règles dans le navigateur de contrôle de code source. La syntaxe d’un chemin d’accès de contrôle de version est :
+- Sélectionnez un ensemble de règles personnalisé en cliquant sur **\<Select ensemble de règles à partir du contrôle de code source... >** . Ensuite, tapez le chemin d’accès de contrôle de version de l’ensemble de règles dans le navigateur de contrôle de code source. La syntaxe d’un chemin d’accès de contrôle de version est :
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

@@ -2,18 +2,18 @@
 title: Utilisation de shims afin d’isoler votre application pour des tests unitaires
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 90a9a0abb43f8185219cb9ca8e4b41d2ed113838
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018919"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659752"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -23,7 +23,7 @@ Utilisez les *shims* pour isoler votre code des assemblys qui ne font pas partie
 
 Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [isolation du code testé avec Microsoft simulations](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -31,7 +31,7 @@ Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [i
 > [!NOTE]
 > Les projets .NET Standard ne sont pas pris en charge.
 
-## <a name="example-the-y2k-bug"></a>Exemple : le bogue de l’an 2000
+## <a name="example-the-y2k-bug"></a>Exemple : Le bogue de l'an 2000
 
 Prenons l’exemple d’une méthode qui lève une exception le 1er janvier 2000 :
 
@@ -88,11 +88,11 @@ public void Y2kCheckerTest() {
 }
 ```
 
-Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez la `ShimsContext.Create` à l’intérieur d’une instruction `using` pour garantir une suppression correcte des shims enregistrés. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d’effacer le shim inscrit dans la méthode de test, le reste de la série de tests retourne toujours le premier janvier 2000 comme valeur `DateTime.Now`. Cela peut être surprenant et déroutant.
+Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez l' `ShimsContext.Create` à l’intérieur d’une instruction `using` pour garantir une suppression correcte des shims enregistrés. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d’effacer le shim inscrit dans la méthode de test, le reste de la série de tests retourne toujours le premier janvier 2000 comme valeur de `DateTime.Now`. Cela peut être surprenant et déroutant.
 
 ### <a name="write-a-test-with-shims"></a>Écrire un test avec les shims
 
-Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :
+Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :
 
 ```csharp
 [TestClass]
@@ -456,7 +456,7 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>Concurrence
+## <a name="concurrency"></a>Concurrency
 
 Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pas d’affinité de thread. C’est un fait important si vous prévoyez d’utiliser un test Runner qui prend en charge l’accès concurrentiel. Les tests impliquant des types shim ne peuvent pas s’exécuter simultanément. Cette propriété n’est pas appliquée par le runtime Fakes.
 
@@ -464,7 +464,7 @@ Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pa
 
 Imaginez que vous souhaitez écrire le texte dans le système de fichiers après avoir validé le nom de fichier passé à la méthode. Dans ce cas, vous appelez la méthode d’origine au milieu de la méthode shim.
 
-La première approche pour résoudre ce problème consiste à encapsuler un appel à la méthode d’origine à l’aide d’un délégué et `ShimsContext.ExecuteWithoutShims()`, comme dans le code suivant :
+La première approche pour résoudre ce problème consiste à encapsuler un appel à la méthode d’origine à l’aide d’un délégué et d' `ShimsContext.ExecuteWithoutShims()`, comme dans le code suivant :
 
 ```csharp
 // unit test code
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>System. Environment
 
-Pour shim <xref:System.Environment?displayProperty=fullName>, ajoutez le contenu suivant au fichier mscorlib. simulations après l’élément **assembly** :
+Pour <xref:System.Environment?displayProperty=fullName> shim, ajoutez le contenu suivant au fichier mscorlib. simulations après l’élément **assembly** :
 
 ```xml
 <ShimGeneration>
@@ -524,5 +524,5 @@ Les shims ne peuvent pas être utilisés sur tous les types à partir de la bibl
 ## <a name="see-also"></a>Voir aussi
 
 - [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Blog de Peter Provost : Shims Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Vidéo (1 h 16 min) : Testing untestable code with fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Blog de Peter Provost : Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Vidéo (1h16) : Testing Untestable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

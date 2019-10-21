@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Data UI customization options
 - Options dialog box, Windows Forms Designer, Data UI Customization
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ca68a944002d743c6f3d2f89b309b8b77c5dfdb3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
-ms.translationtype: HT
+ms.openlocfilehash: 9c4eab249b9d847b4004c02f11e3e58cbcead6ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655828"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Boîte de dialogue Options : Concepteur Windows Forms > Personnalisation de l’interface utilisateur des données
 
@@ -23,7 +23,7 @@ Cette boîte de dialogue définit les contrôles qui apparaissent dans la liste 
 
 Vous pouvez sélectionner un contrôle à partir d’un élément de la fenêtre Sources de données avant de le faire glisser sur le formulaire d’une application Windows Forms. Les contrôles disponibles sont déterminés par le type de données de l’élément. Chaque type de données a une liste de contrôles associés valides tels que définis dans cette boîte de dialogue, y compris un contrôle par défaut. Lorsque vous faites glisser un élément de la fenêtre Sources de données vers un formulaire sans sélectionner de contrôle, le contrôle par défaut pour le type de données de l’élément sélectionné est ajouté au formulaire.
 
-Personnalisez la liste des contrôles associés en activant et en désactivant les cases à cocher des contrôles disponibles pour chaque type de données. Pour ajouter un contrôle à la liste, ajoutez un contrôle qui implémente l’attribut de liaison de données <xref:System.ComponentModel.DefaultBindingPropertyAttribute> ou <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> à la Boîte à outils. Le contrôle s’affiche alors dans la liste des contrôles pour le type de données. Pour plus d'informations, voir [Procédure : Ajouter des contrôles personnalisés à la fenêtre Sources de données](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
+Personnalisez la liste des contrôles associés en activant et en désactivant les cases à cocher des contrôles disponibles pour chaque type de données. Pour ajouter un contrôle à la liste, ajoutez un contrôle qui implémente l’attribut de liaison de données <xref:System.ComponentModel.DefaultBindingPropertyAttribute> ou <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> à la Boîte à outils. Le contrôle s’affiche alors dans la liste des contrôles pour le type de données. Pour plus d’informations, consultez [Comment : ajouter des contrôles personnalisés à la fenêtre sources de données](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="data-type"></a>Type de données
 

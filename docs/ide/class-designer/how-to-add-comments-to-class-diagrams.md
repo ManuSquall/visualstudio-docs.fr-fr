@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter des commentaires à des diagrammes de classes (Concepteur de classes)'
+title: 'Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cc778700873b79eb9fc2ec4fa1dd90d631993622
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975527"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631880"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Procédure : Ajouter des commentaires aux diagrammes de classes
+# <a name="how-to-add-comments-to-class-diagrams"></a>Guide pratique pour ajouter des commentaires aux diagrammes de classes
 
 Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.
 

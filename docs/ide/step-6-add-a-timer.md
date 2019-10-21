@@ -13,22 +13,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1364ce26b4a6f54f99267ce3e1288160f75ca148
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562522"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647502"
 ---
 # <a name="step-6-add-a-timer"></a>Étape 6 : ajouter une minuterie
 Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.
 
 ## <a name="to-add-a-timer"></a>Pour ajouter un minuteur
 
-1. Dans la boîte à outils du **Concepteur Windows Forms**, choisissez **Timer** (dans la catégorie **Composants**) et appuyez sur **Entrée**, ou double-cliquez sur la minuterie pour ajouter un contrôle Timer au formulaire. L’icône de la minuterie, appelée **Timer1**, doit apparaître dans un espace sous le formulaire, comme le montre la figure suivante.
+1. Dans la boîte à outils du **Concepteur Windows Forms**, choisissez **Timer** (dans la catégorie **Composants**) et appuyez sur **Entrée**, ou double-cliquez sur la minuterie pour ajouter un contrôle Timer au formulaire. L’icône du minuteur, appelée **Timer1**, doit apparaître dans un espace sous le formulaire, comme illustré dans l’image suivante.
 
      ![Minuterie](../ide/media/express_timer.png)<br/>
-**Minuterie**
+***Minuterie***
 
     > [!NOTE]
     > Si la boîte à outils est vide, veillez à sélectionner le concepteur de formulaire et non pas le code derrière le formulaire, avant d'ouvrir la boîte à outils.
@@ -63,6 +63,6 @@ Ensuite, ajoutez un contrôle <xref:System.Windows.Forms.Timer> au jeu de combin
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md)** .
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : ajouter des références d’étiquettes](../ide/step-5-add-label-references.md).

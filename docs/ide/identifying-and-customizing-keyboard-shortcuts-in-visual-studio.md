@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom shortcut keys [Visual Studio]
 - customizing keyboard shortcuts [Visual Studio]
 - exporting shortcut keys [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 140a11e7d118b6ceae98dba4290eba89a500ac5e
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 585c50818148235cebcdda3f18a9ed91f1a2aa1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043382"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656485"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
@@ -67,7 +67,7 @@ Si un raccourci est affecté à une commande du contexte *global* et à aucun au
 
 2. Développez **Environnement**, puis choisissez **Clavier**.
 
-3. Facultatif : Filtrez la liste des commandes en entrant tout ou partie du nom de la commande, sans espaces, dans la zone **Afficher les commandes contenant**.
+3. Facultatif : filtrez la liste des commandes en entrant tout ou partie du nom de la commande, sans espaces, dans la zone **Afficher les commandes contenant**.
 
 4. Dans la liste, choisissez la commande à laquelle vous souhaitez associer un raccourci clavier.
 

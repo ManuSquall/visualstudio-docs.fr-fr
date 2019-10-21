@@ -2,29 +2,29 @@
 title: Directive de sortie T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606228"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
-Dans les modèles de texte de Visual Studio, le `output` directive est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
+Dans les modèles de texte Visual Studio, la directive `output` est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
 
- Par exemple, si votre projet Visual Studio inclut un fichier de modèle nommé **MyTemplate.tt** qui contient la directive suivante :
+ Par exemple, si votre projet Visual Studio inclut un fichier de modèle nommé **MyTemplate.TT** qui contient la directive suivante :
 
  `<#@output extension=".cs"#>`
 
- Visual Studio génère un fichier nommé **MyTemplate.cs**
+ Ensuite, Visual Studio génère un fichier nommé **MyTemplate.cs**
 
- La directive `output` n'est pas obligatoire dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, votre application obtient la chaîne générée en appelant `TextTransform()`. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directive `output` n'est pas obligatoire dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, votre application obtient la chaîne générée en appelant `TextTransform()`. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Utilisation de la directive Output
 
@@ -37,7 +37,7 @@ Dans les modèles de texte de Visual Studio, le `output` directive est utilisée
 ## <a name="extension-attribute"></a>attribut d’extension
  Spécifie l’extension de nom de fichier du fichier de sortie texte généré.
 
- La valeur par défaut est **.cs**
+ La valeur par défaut est **. cs**
 
  Exemples : `<#@ output extension=".txt" #>`
 
@@ -50,7 +50,7 @@ Dans les modèles de texte de Visual Studio, le `output` directive est utilisée
  Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
- Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
+ Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
 
  `<#@ output encoding="utf-8"#>`
 

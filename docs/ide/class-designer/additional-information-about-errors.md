@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975559"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631909"
 ---
 # <a name="class-designer-errors"></a>Erreurs du Concepteur de classes
 
@@ -41,7 +41,7 @@ Le **Concepteur de classes** n’effectue pas le suivi de l’emplacement de vos
 
 ## <a name="resources"></a>Ressources
 
-Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes : 
+Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes :
 
 - [Utiliser le code Visual C++](working-with-visual-cpp-code.md) inclut des informations de dépannage sur l’affichage de C++ dans un diagramme de classes.
 - Le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) propose un forum de questions relatives au **Concepteur de classes**.

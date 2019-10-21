@@ -1,29 +1,29 @@
 ---
-title: 'Procédure : implémenter une interface (Concepteur de classes)'
+title: 'Comment : implémenter une interface (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf03046abcf79933044cfb01bf079aee64d09077
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975175"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647712"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Procédure : implémenter une interface dans le Concepteur de classes
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Guide pratique pour implémenter une interface dans le Concepteur de classes
 
 Dans le **Concepteur de classes**, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface. Le **Concepteur de classes** génère une implémentation d’interface et affiche la relation entre l’interface et la classe sous la forme d’une relation d’héritage. Vous pouvez implémenter une interface en dessinant une ligne d’héritage entre l’interface et la classe ou en faisant glisser l’interface à partir de l’Affichage de classes.
 
 > [!TIP]
-> Vous pouvez créer des interfaces de la même façon que vous créez d’autres types. Si l’interface existe mais n’apparaît pas dans le diagramme de classes, affichez-la d’abord. Pour plus d'informations, voir [Procédure : Créer des types à l’aide du Concepteur de classes](how-to-create-types.md) et [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
+> Vous pouvez créer des interfaces de la même façon que vous créez d’autres types. Si l’interface existe mais n’apparaît pas dans le diagramme de classes, affichez-la d’abord. Pour plus d’informations, consultez [Guide pratique pour créer des types à l’aide du Concepteur de classes](how-to-create-types.md) et [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Pour implémenter une interface en dessinant une ligne d’héritage
 
@@ -33,7 +33,7 @@ Dans le **Concepteur de classes**, vous pouvez implémenter une interface pour l
 
      Un symbole d’interface (lollipop) attaché à la classe s’affiche, et une étiquette avec le nom de l’interface identifie la relation d’héritage. Visual Studio génère des stubs pour tous les membres de l’interface.
 
-Pour plus d'informations, voir [Procédure : créer un héritage entre des types](how-to-create-inheritance-between-types.md).
+Pour plus d’informations, consultez [Guide pratique pour créer un héritage entre les types](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Pour implémenter une interface à partir de la fenêtre Affichage de classes
 
@@ -51,6 +51,6 @@ Pour plus d'informations, voir [Procédure : créer un héritage entre des type
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer des types à l’aide du Concepteur de classes](how-to-create-types.md)
-- [Guide pratique pour voir les types existants](how-to-view-existing-types.md)
+- [Guide pratique pour afficher les types existants](how-to-view-existing-types.md)
 - [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
 - [Refactorisation des classes et des types](refactoring-classes-and-types.md)

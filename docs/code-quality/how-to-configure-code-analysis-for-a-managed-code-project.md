@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1bfa8c6e5260fb4afd20b882e2bdfc718647f4b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649519"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Comment : configurer l’analyse héritée pour le code managé
 
@@ -39,13 +39,13 @@ Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles
 
 ::: moniker range="vs-2017"
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter**l’analyse du code  > **exécuter l’analyse du code sur @no__t > 5projectname**.
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  exécuter l’analyse du**code**  > **exécuter l’analyse du code sur \<projectname >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **exécuter lors de la génération** dans la section **analyseurs binaires** . Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter**l’analyse du code  > **exécuter l’analyse du code sur @no__t > 5projectname**.
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **exécuter lors de la génération** dans la section **analyseurs binaires** . Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  exécuter l’analyse du**code**  > **exécuter l’analyse du code sur \<projectname >** .
 
 ::: moniker-end
 

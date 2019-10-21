@@ -1,5 +1,5 @@
 ---
-title: 'CA1725 : Les noms de paramètre doivent correspondre à la déclaration de base | Microsoft Docs'
+title: 'CA1725 : les noms de paramètres doivent correspondre à la déclaration de base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - ParameterNamesShouldMatchBaseDeclaration
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e97431b46640fb8241d6bde80d09d38084650be8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 128069bb24dfc8b1c11963e33c9541701b0eea15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143169"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653742"
 ---
-# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725 : Les noms des paramètres doivent correspondre à la déclaration de base
+# <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725 : Les noms de paramètres doivent correspondre à la déclaration de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|Catégorie|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le nom d’un paramètre dans une substitution de méthode visible de l’extérieur ne correspond pas au nom du paramètre dans la déclaration de base de la méthode ou le nom du paramètre dans la déclaration d’interface de la méthode.
+ Le nom d’un paramètre dans une substitution de méthode visible de l’extérieur ne correspond pas au nom du paramètre dans la déclaration de base de la méthode, ou au nom du paramètre dans la déclaration d’interface de la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  La désignation cohérente des paramètres dans une hiérarchie de substitution augmente la facilité d'utilisation des substitutions de méthode. Un nom de paramètre dans une méthode dérivée qui diffère du nom dans la déclaration de base peut créer une confusion pour déterminer si la méthode est une substitution de la méthode de base ou une nouvelle surcharge de la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, renommez le paramètre pour correspondre à la déclaration de base. Le correctif est une modification avec rupture pour les méthodes visibles par COM.
+ Pour corriger une violation de cette règle, renommez le paramètre pour qu’il corresponde à la déclaration de base. Le correctif est une modification avec rupture pour les méthodes visibles par COM.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas un avertissement de cette règle à l’exception des méthodes visibles par COM dans les bibliothèques fournies antérieurement.
+ Ne supprimez pas un avertissement de cette règle, à l’exception des méthodes visibles par COM dans les bibliothèques qui ont déjà été expédiées.

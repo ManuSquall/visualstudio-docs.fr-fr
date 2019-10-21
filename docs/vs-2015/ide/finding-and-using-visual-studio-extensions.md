@@ -1,5 +1,5 @@
 ---
-title: Recherche et utilisation des Extensions | Microsoft Docs
+title: Recherche et utilisation des extensions | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,20 +12,20 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426390"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655876"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Recherche et utilisation des extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Vous pouvez utiliser la boîte de dialogue **Extensions et mises à jour** pour installer des extensions et des exemples Visual Studio à partir de sites Web ou d'autres emplacements, puis les activer, les désactiver, les mettre à jour ou les désinstaller. (**Outils / Extensions et mises à jour**, ou tapez **Extensions** dans la fenêtre de **lancement rapide** ). La boîte de dialogue affiche également les mises à jour des exemples et extensions installés. Vous pouvez également télécharger des extensions à partir de sites web ou les obtenir auprès d'autres développeurs.
 
@@ -33,17 +33,17 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
 > À compter de Visual Studio 2015, les extensions hébergées dans la galerie Visual Studio seront automatiquement mises à jour.  Vous pouvez modifier ce paramètre via la boîte de dialogue **Extensions et mises à jour** .  Pour plus d'informations, consultez la section relative aux **mises à jour d'extensions automatiques** , ci-dessous.
 
 ## <a name="finding-visual-studio-extensions"></a>Recherche d’extensions Visual Studio
- Vous pouvez installer des extensions à partir de la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou [Galerie d’exemples](https://code.msdn.microsoft.com/vstudio) sur le site Web Microsoft. Ces extensions peuvent être des contrôles, des exemples, des modèles, des outils ou d'autres composants qui ajoutent des fonctionnalités à Visual Studio. Visual Studio prend en charge les extensions sous la forme de packages VSIX (ceux-ci incluent des modèles de projet, des modèles d'élément, des éléments de **boîte à outils** , des composants MEF (Managed Extension Framework) et des VSPackages). Vous pouvez également télécharger et installer les extensions basées sur Microsoft Installer (MSI), mais la boîte de dialogue **Extensions et mises à jour** ne peut pas les activer ni les désactiver. La galerie Visual Studio contient des extensions VSIX et MSI.
+ Vous pouvez installer des extensions à partir de la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou de la [Galerie d’exemples](https://code.msdn.microsoft.com/vstudio) sur le site Web Microsoft. Ces extensions peuvent être des contrôles, des exemples, des modèles, des outils ou d'autres composants qui ajoutent des fonctionnalités à Visual Studio. Visual Studio prend en charge les extensions sous la forme de packages VSIX (ceux-ci incluent des modèles de projet, des modèles d'élément, des éléments de **boîte à outils** , des composants MEF (Managed Extension Framework) et des VSPackages). Vous pouvez également télécharger et installer les extensions basées sur Microsoft Installer (MSI), mais la boîte de dialogue **Extensions et mises à jour** ne peut pas les activer ni les désactiver. La galerie Visual Studio contient des extensions VSIX et MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Installation ou désinstallation d’extensions Visual Studio
- Dans la boîte de dialogue **Extensions et mises à jour**, recherchez l'extension à installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez rechercher dans la fenêtre **Rechercher dans la galerie Visual Studio**.) Cliquez sur **Télécharger**, puis sur **Installer**. Pour charger l'extension, vous devez redémarrer Visual Studio.
+ Dans la boîte de dialogue **Extensions et mises à jour**, recherchez l'extension à installer. (Si vous connaissez le nom ou une partie du nom de l’extension, vous pouvez effectuer une recherche dans la fenêtre Rechercher dans la **Galerie Visual Studio** .) Cliquez sur **Télécharger**, puis sur **installer**. Pour charger l'extension, vous devez redémarrer Visual Studio.
 
  Si vous essayez d'installer une extension qui a des dépendances, le programme d'installation vérifie si elles sont déjà installées. Si elles ne sont pas installées, la boîte de dialogue **Extensions et mises à jour** donne la liste des dépendances qui doivent être installées avant que vous puissiez installer l'extension.
 
  Si vous souhaitez cesser d'utiliser une extension, vous pouvez la désactiver ou la désinstaller. La désactivation d'une extension maintient l'extension installée mais elle n'est pas chargée. Vous pouvez désactiver uniquement les extensions VSIX. Les extensions qui ont été installées à l'aide d'un fichier MSI peuvent uniquement être désinstallées. Recherchez l'extension et cliquez sur **Désinstaller** ou **Désactiver**. Pour décharger une extension désactivée, vous devez redémarrer Visual Studio.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensions par utilisateur et d'administration
- La plupart des extensions sont des extensions par utilisateur, qui sont installées dans le dossier **%LocalAppData%\Microsoft\VisualStudio\\<version de Visual Studio\>\Extensions\\**. Certaines extensions sont des extensions d’administration, installées dans le dossier **\<dossier d’installation de Visual Studio>\Common7\IDE\Extensions\\**.
+ La plupart des extensions sont des extensions par utilisateur, qui sont installées dans le dossier **%LocalAppData%\Microsoft\VisualStudio\\<version de Visual Studio\>\Extensions\\** . Certaines extensions sont des extensions d’administration, installées dans le dossier **\<dossier d’installation de Visual Studio>\Common7\IDE\Extensions\\** .
 
  Pour protéger votre système contre les extensions pouvant contenir des erreurs ou du code malveillant, vous pouvez limiter le chargement des extensions par utilisateur aux cas où Visual Studio est exécuté avec des autorisations d'utilisateur normales. Les extensions par utilisateur sont ainsi désactivées lorsque Visual Studio est exécuté avec des autorisations d'administrateur. Pour ce faire, accédez à la page d’options **Extensions et mises à jour** (**Outils / Options**, **Environnement**, **Extensions et mises à jour**, ou tapez simplement **Extension** dans la fenêtre de **lancement rapide** ). Décochez la case **Charger les extensions par utilisateur lors d'une exécution en tant qu'administrateur** , puis redémarrez Visual Studio.
 

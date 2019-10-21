@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer une texture de base'
+title: 'Comment : créer une texture de base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d36aa18cb4d641f1a5f22618e98615222cb844d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844947"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635862"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Procédure : Créer une texture de base
+# <a name="how-to-create-a-basic-texture"></a>Guide pratique pour créer une texture de base
 
 Cet article montre comment utiliser l’éditeur d’images pour créer une texture de base, et détaille notamment les activités suivantes :
 
@@ -85,7 +85,7 @@ La texture de cible est complète. Voici l’image finale, affichée avec la tra
 
 ![Texture cible « Bullseye » complète](../designers/media/gfx_image_demo_bullseye.png)
 
-Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
+Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Voir aussi
 

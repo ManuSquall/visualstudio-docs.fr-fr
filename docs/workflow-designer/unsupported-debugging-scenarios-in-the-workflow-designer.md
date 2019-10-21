@@ -3,21 +3,21 @@ title: Scénarios de débogage non pris en charge dans le Concepteur de workflow
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+author: jillre
+ms.openlocfilehash: bfc4e0995a9abb88f73ff27186ed4e0d1dc81648
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825728"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649772"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
 
-Le Concepteur de Workflow ne prend pas en charge les scénarios de débogage suivants :
+Le Concepteur de flux de travail ne prend pas en charge les scénarios de débogage suivants :
 
 - Impossible de continuer l'exécution une fois que le code a été modifié.
 
@@ -27,7 +27,7 @@ Le Concepteur de Workflow ne prend pas en charge les scénarios de débogage sui
 
 - Impossible d'utiliser le Concepteur de workflow pour déboguer les workflows créés à l'aide de code sans utiliser le concepteur.
 
-- Flux de travail créés dans les versions antérieures de Windows Workflow Foundation (WF) ne peut pas être débogué dans .NET Framework 4 ou version ultérieure.
+- Les flux de travail créés dans les versions antérieures de Windows Workflow Foundation (WF) ne peuvent pas être débogués dans .NET Framework 4 ou version ultérieure.
 
 - Impossible de définir des points d'arrêt sur les liaisons entre activités ou nœuds <xref:System.Activities.Statements.Flowchart>.
 
@@ -37,7 +37,7 @@ Le Concepteur de Workflow ne prend pas en charge les scénarios de débogage sui
 
 - Impossible de définir des points d'arrêt de workflow dans la fenêtre Pile des appels.
 
-- Lors de la création des points d’arrêt dans le concepteur, le **ligne** et **caractère** paramètres dans le **nouveau point d’arrêt** boîte de dialogue ne sont pas utilisés.
+- Lorsque vous créez des points d’arrêt dans le concepteur, les paramètres de **ligne** et de **caractère** de la boîte de dialogue **nouveau point d’arrêt** ne sont pas utilisés.
 
 - La fenêtre ou le menu contextuel Point d'arrêt ne prend pas en charge les colonnes ou options suivantes pour le débogage de flux de travail :
 
@@ -51,6 +51,6 @@ Le Concepteur de Workflow ne prend pas en charge les scénarios de débogage sui
 
   - Données
 
-  - Process
+  - Processus
 
   - Atteindre le code machine

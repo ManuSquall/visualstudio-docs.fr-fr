@@ -3,17 +3,17 @@ title: Ensemble de règles de règles de vérification étendue pour le code man
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 636443a65922e72bfcede09d5692e441c6c2cb36
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 3e4a0d05454e16be3ebe2832bae4316afdf61bb8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535901"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649645"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification étendue pour le code managé
 

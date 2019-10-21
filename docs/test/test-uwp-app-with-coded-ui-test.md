@@ -2,20 +2,20 @@
 title: Tester une application UWP avec un test codé de l’interface utilisateur
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430198"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659966"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
 
@@ -65,7 +65,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 1. Pour ajouter un projet de test à une solution, cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
-1. Recherchez et sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**.
+1. Recherchez et sélectionnez le modèle **Projet de test codé de l’interface utilisateur (Windows universel)** .
 
    ::: moniker range="vs-2017"
 
@@ -74,7 +74,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
    ::: moniker-end
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur (Windows universel)**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur (Windows universel)** , vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. Dans la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur**, sélectionnez **Modifier manuellement le test**.
 
@@ -158,7 +158,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
    Remplacez l’ID d’automation dans l’exemple de code avec la valeur que vous avez copiée dans le Presse-papiers à l’étape précédente.
 
    > [!IMPORTANT]
-   > Découpez le début de l’ID d’automation pour supprimer les caractères comme **P~**. Si vous n’enlevez pas ces caractères, le test lève `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` lorsqu’il tente de lancer l’application.
+   > Découpez le début de l’ID d’automation pour supprimer les caractères comme **P~** . Si vous n’enlevez pas ces caractères, le test lève `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` lorsqu’il tente de lancer l’application.
 
 1. Ensuite, ajoutez le code à la méthode de test pour cliquer sur le bouton. Dans la ligne après `XamlWindow.Launch`, ajoutez un mouvement permettant d’appuyer sur le contrôle de bouton :
 
@@ -212,17 +212,17 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
    ![Les tests réussis s'affichent dans l'Explorateur de tests](../test/media/test-explorer-coded-ui-test-passed.png)
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : Pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?
 
-**R** : L’option d’enregistrement n’est pas prise en charge pour les applications UWP.
+**R** : L’option d’enregistrement n’est pas prise en charge pour les applications UWP.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Q : Puis-je créer un test codé de l’interface utilisateur pour mes applications UWP basées sur WinJS ?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Q : Puis-je créer un test codé de l’interface utilisateur pour mes applications UWP basées sur WinJS ?
 
 **R** : Non, seules les applications XAML sont prises en charge.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
 **R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans le **Générateur de test codé de l’interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Supprimez la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et remplacez-la par le nom de la méthode renommée.
 

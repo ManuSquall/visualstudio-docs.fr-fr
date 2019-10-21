@@ -1,5 +1,5 @@
 ---
-title: Ajout de prise en charge de l’éditeur pour d’autres langages | Microsoft Docs
+title: Ajout de la prise en charge de l’éditeur pour d’autres langages | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620784"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Ajout de la prise en charge de l’éditeur Visual Studio dans d’autres langages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Prise en charge de la coloration syntaxique, de la saisie semi-automatique des instructions et de Naviguer vers
  Des fonctionnalités de l’éditeur Visual Studio, telles que la coloration syntaxique, la saisie semi-automatique des instructions et Naviguer vers, peuvent vous aider à lire, créer et modifier votre code. La capture d’écran suivante montre un exemple de modification de script Perl dans Visual Studio. La syntaxe est colorée automatiquement. Par exemple, les remarques dans le code sont colorées en vert, le code est en noir, les chemins sont en rouge et les instructions sont en bleu. L’éditeur Visual Studio applique automatiquement la coloration syntaxique à tout langage pris en charge. De plus, quand vous commencez à entrer un mot clé de langage ou un objet connu, la saisie semi-automatique affiche une liste d’instructions et d’objets possibles. La saisie semi-automatique des instructions simplifie et accélère la création du code.
 
- ![Coloration syntaxique dans un script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Coloration de la syntaxe dans le script perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxique et de la saisie semi-automatique des instructions de base pour les langages suivants à l’aide de [grammaires TextMate](https://manual.macromates.com/en/language_grammars). Si votre langage préféré ne figure pas dans le tableau, ne vous inquiétez pas, vous pouvez l’ajouter.
 
@@ -38,7 +38,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
 |Clojure|Go|JavaDoc|Objective-C|ShaderLab|Visual C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
@@ -57,7 +57,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 
 - Visual Basic
 
-- Visual C++
+- Visual C++
 
 - Visual C#
 
@@ -80,7 +80,7 @@ Découvrez comment l’éditeur Visual Studio prend en charge la lecture et la n
 
  Dans Windows, %userprofile% est résolu au chemin suivant : c:\Utilisateurs\\ *\<nom_utilisateur>* . Si le dossier d’extensions n’existe pas sur votre système, vous devez le créer. Si le dossier existe déjà, il est masqué.
 
- Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate – Introduction à la grammaire du langage : How to add source code syntax highlighting embedded in HTML Comment ajouter la coloration syntaxique du code source incorporée en HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).
+ Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).
 
 ## <a name="see-also"></a>Voir aussi
- [Visual Studio 2013 accédez aux améliorations](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [procédure pas à pas : Création d’un extrait de Code](../ide/walkthrough-creating-a-code-snippet.md) [procédure pas à pas : Affichage de la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 accédez aux améliorations](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [procédure pas à pas : Création d’un extrait de Code](../ide/walkthrough-creating-a-code-snippet.md) [procédure pas à pas : Affichage de la saisie semi-automatique des instructions ](../extensibility/walkthrough-displaying-statement-completion.md)

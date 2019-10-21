@@ -4,17 +4,17 @@ description: Cet article décrit certaines fonctionnalités de base de Visual St
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650855"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -40,7 +40,7 @@ Quand la build réussit, des résultats similaires à ceux-ci apparaissent dans 
 
 ## <a name="review-the-error-list"></a>Examiner la Liste d’erreurs
 
-À moins que vous n’ayez apporté aucune modification au code précédemment compilé avec succès, une erreur s’est probablement produite. Si vous codez depuis peu, il y en a peut-être beaucoup. Si certaines erreurs sont évidentes, comme une simple erreur de syntaxe ou un nom de variable incorrect, d’autres sont parfois plus ardues à comprendre. Et ce n’est pas le code obscur associé à celles-ci qui va davantage vous aider. Pour obtenir une vue plus conviviale des problèmes, accédez à la partie inférieure de la fenêtre **Sortie** de la build, puis cliquez sur l’onglet **Liste d’erreurs**. Vous disposez non seulement d'une vue mieux organisée des erreurs et des avertissements liés à votre projet, mais aussi d'options supplémentaires.
+À moins que vous n’ayez apporté aucune modification au code précédemment compilé avec succès, une erreur s’est probablement produite. Si vous codez depuis peu, il y en a peut-être beaucoup. Si certaines erreurs sont évidentes, comme une simple erreur de syntaxe ou un nom de variable incorrect, d’autres sont parfois plus ardues à comprendre. Et ce n’est pas le code obscur associé à celles-ci qui va davantage vous aider. Pour obtenir une vue plus claire des problèmes, accédez au bas de la fenêtre **sortie** de la génération, puis cliquez sur l’onglet **liste d’erreurs** . Vous accédez ainsi à une vue plus organisée des erreurs et des avertissements pour votre projet et vous offre également des options supplémentaires.
 
 ![Sortie et liste d’erreurs de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 

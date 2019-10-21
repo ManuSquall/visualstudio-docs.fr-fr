@@ -2,17 +2,17 @@
 title: Données de diagnostic et journaux générés par le système
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: gewarren
+author: jillre
 ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f92e899ff8e56c68fcf1a4ab639d027c139afcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9702439569fa9db1ff8687e914d5c9d20865e2b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557396"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652471"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Journaux générés par le système et collectés par Visual Studio
 

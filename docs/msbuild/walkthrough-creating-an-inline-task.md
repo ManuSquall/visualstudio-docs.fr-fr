@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’une tâche inline | Microsoft Docs'
+title: 'Procédure pas à pas : création d’une tâche inline | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655443"
 ---
-# <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
+# <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).
 
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :
@@ -46,7 +46,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 1. Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#**, puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\*. Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#** , puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
 
 3. Cliquez sur **OK** pour créer le fichier projet.
 
@@ -85,7 +85,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 3. Enregistrez le fichier projet.
 
-   Ce code crée une tâche inline nommée Hello qui n’a pas de paramètres, de références ou d’instructions `Using`. La tâche Hello contient une seule ligne de code, qui affiche un message de type Hello sur l’appareil de journalisation par défaut, généralement la fenêtre de console.
+   Ce code crée une tâche Inline nommée Hello et n’a pas de paramètres, de références ou de directives de `Using`. La tâche Hello contient une seule ligne de code, qui affiche un message de type Hello sur l’appareil de journalisation par défaut, généralement la fenêtre de console.
 
 ### <a name="run-the-hello-task"></a>Exécuter la tâche Hello
  Exécutez MSBuild à l’aide de la **fenêtre d’invite de commandes** pour construire la tâche Hello et traiter la cible TestBuild qui l’appelle.
@@ -94,7 +94,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 1. Cliquez sur **Démarrer**, sur **Tous les programmes**, puis recherchez le dossier **Visual Studio Tools** et cliquez sur **Invite de commandes Visual Studio**.
 
-2. Dans la **Fenêtre d’invite de commandes**, recherchez le dossier contenant le fichier projet (dans ce cas, *D:\InlineTasks\InlineTasks\\*).
+2. Dans la **Fenêtre d’invite de commandes**, recherchez le dossier contenant le fichier projet (dans ce cas, *D:\InlineTasks\InlineTasks\\* ).
 
 3. Tapez **msbuild** sans commutateurs de commande, puis appuyez sur **Entrée**. Par défaut, cette commande génère le fichier *InlineTasks.csproj* et traite la cible par défaut TestBuild, qui appelle la tâche Hello.
 
@@ -258,5 +258,5 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 ## <a name="see-also"></a>Voir aussi
 - [Tâches inline](../msbuild/msbuild-inline-tasks.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
-- [Cibles](../msbuild/msbuild-targets.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)

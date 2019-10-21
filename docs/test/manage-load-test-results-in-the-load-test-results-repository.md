@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test results, repository
 - Load Test Results Repository
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: a6b24fcc485462b8d67ae88104c1ee3ed156e747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652934"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gérer des résultats de tests de charge dans le référentiel des résultats des tests de charge
 
@@ -45,10 +45,10 @@ Quand Visual Studio Enterprise est installé, le magasin des résultats de test 
 
 |Tâches|Rubriques associées|
 |-|-----------------------|
-|**Configurer un dépôt des résultats des tests de charge :** vous pouvez configurer un dépôt des résultats des tests de charge sur une base de données SQL. **Remarque :**  Un référentiel de test de charge peut également être créé lorsque vous installez un contrôleur de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).||
-|**Sélection et affichage d’un dépôt de résultats :** vous pouvez sélectionner un dépôt de résultats spécifique. Vous n'êtes pas limité à un magasin de résultats local. Souvent, les tests de charge sont exécutés sur un jeu distant d'ordinateurs agents. Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordinateur local sur un serveur SQL sur lequel vous avez créé un magasin de résultats de tests de charge. Dans les deux cas, vous devez identifier l’emplacement où stocker les résultats de votre test de charge à l’aide de la fenêtre **Administrer les contrôleurs de test**.|-   [Guide pratique pour sélectionner un dépôt de résultats des tests de charge](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Suppression d’un résultat de test de charge du dépôt :** vous pouvez supprimer un résultat de test de charge à partir de l’**éditeur de test de charge** via la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**.|-   [Guide pratique pour supprimer des résultats des tests de charge dans un dépôt](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importer et exporter des résultats dans un dépôt :** vous pouvez importer et exporter les résultats des tests de charge à partir de l’**éditeur de test de charge**.|-   [Guide pratique pour importer des résultats des tests de charge dans un dépôt](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Guide pratique pour exporter des résultats des tests de charge à partir d’un dépôt](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Configurer un référentiel des résultats des tests de charge :** Vous pouvez configurer un référentiel des résultats des tests de charge sur une base de données SQL. **Remarque :** Un référentiel de test de charge peut également être créé quand vous installez un contrôleur de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).||
+|**Sélection et affichage d’un référentiel de résultats :** Vous pouvez sélectionner un référentiel de résultats spécifique. Vous n'êtes pas limité à un magasin de résultats local. Souvent, les tests de charge sont exécutés sur un jeu distant d'ordinateurs agents. Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordinateur local sur un serveur SQL sur lequel vous avez créé un magasin de résultats de tests de charge. Dans les deux cas, vous devez identifier l’emplacement où stocker les résultats de votre test de charge à l’aide de la fenêtre **Administrer les contrôleurs de test**.|-   [Guide pratique pour sélectionner un référentiel de résultats de tests de charge](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Suppression un résultat des tests de charge d’un référentiel :** Vous pouvez supprimer un résultat de test de charge à partir de **l’éditeur de test de charge**, à l’aide de la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**.|-   [Guide pratique pour supprimer les résultats d’un test de charge d’un référentiel](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importer et exporter des résultats dans un référentiel :** Vous pouvez importer et exporter des résultats de test de charge à partir de **l’éditeur de test de charge**.|-   [Guide pratique pour importer les résultats d’un test de charge dans un référentiel](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Guide pratique pour exporter les résultats des tests de charge à partir d’un référentiel](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Tâches connexes
 

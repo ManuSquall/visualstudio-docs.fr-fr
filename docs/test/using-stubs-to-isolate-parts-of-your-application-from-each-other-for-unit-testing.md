@@ -2,20 +2,20 @@
 title: Utilisation de stubs pour isoler des parties de votre application pour des tests
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: HT
+ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659740"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
@@ -218,7 +218,7 @@ Les stubs sont également générés pour les accesseurs Get et les méthodes se
 
 ### <a name="verify-parameter-values"></a>Vérifier les valeurs de paramètre
 
-Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
+Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Exemple :
 
 ```csharp
 [TestClass]
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 Si vous ne fournissez pas les méthodes stub pour la méthode setter ou getter d'une propriété, Microsoft Fakes génère un stub qui stocke les valeurs, afin que la propriété stub fonctionne comme une simple variable.
 
-### <a name="events"></a>Événements
+### <a name="events"></a>événements
 
 Les événements sont exposés en tant que champs délégués. Par conséquent, tout événement extrait peut être déclenché simplement en appelant le champ de stockage d'événements. Prenons l’interface suivante pour un stub :
 
@@ -390,7 +390,7 @@ Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub ap
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuelles
 
-Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
+Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Exemple :
 
 ```csharp
 // Base class in application under test

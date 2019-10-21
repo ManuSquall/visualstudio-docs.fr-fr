@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746866"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652610"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -38,7 +38,7 @@ Vous pouvez créer un projet vous-même en y ajoutant les fichiers nécessaires 
 
 Cela étant dit, le développement d’applications dans Visual Studio peut se faire sans solutions ni projets. Vous pouvez simplement ouvrir du code que vous avez cloné à partir de Git ou téléchargé d’une source de votre choix. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-project-from-a-project-template"></a>Créer un projet à partir d’un modèle de projet
+## <a name="create-a-project-from-a-project-template"></a>Créer un projet à partir d'un modèle de projet
 
 Pour plus d’informations sur la création d’un projet à partir d’un modèle, consultez [Créer un projet dans Visual Studio](create-new-project.md).
 

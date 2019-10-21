@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870322"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665097"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -22,7 +22,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -38,7 +38,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     ![Créer un projet de test d'interface utilisateur codé](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Choisissez **d’enregistrer les actions**.
 
@@ -199,11 +199,11 @@ Vérifiez que le test est maintenant piloté par les données en l'exécutant de
 
 Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .*csv*. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
 ### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quels sont les attributs de la source de données pour d’autres types de source de données, comme SQL Express ou XML ?
 
-**R :** Vous pouvez utiliser les exemples de chaînes de source de données indiqués dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
+**R :** Vous pouvez utiliser les exemples de chaînes de source de données dans le tableau ci-dessous en les copiant dans votre code et en effectuant les personnalisations nécessaires.
 
 **Types de source de données et attributs**
 
@@ -227,9 +227,9 @@ Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs 
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
-**R :** Toutes les modifications du code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
+**R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
 
 Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier *UIMap.cs* et la renommer. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded *UITest.cs* et la remplacer par le nom de la méthode renommée.
 

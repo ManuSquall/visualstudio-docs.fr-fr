@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429541"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656068"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Procédure : Distribuer des extraits de code
+# <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
 
 Vous pouvez donner des extraits de code à vos amis pour qu’ils les installent sur leurs ordinateurs à l’aide du **Gestionnaire des extraits de code**. Cependant, si vous avez plusieurs extraits de code à distribuer ou que vous voulez les distribuer à plus grande échelle, vous pouvez inclure vos fichiers d’extraits de code dans une extension Visual Studio. Les utilisateurs de Visual Studio peuvent ensuite installer l’extension pour obtenir les extraits de code.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Installez la charge de travail **Développement d’extension Visual Studio** pour accéder aux modèles de projet **Projet VSIX**.
 
@@ -31,7 +31,7 @@ Installez la charge de travail **Développement d’extension Visual Studio** po
 
 ## <a name="set-up-the-extension"></a>Configurer l’extension
 
-Dans cette procédure, vous utilisez l’extrait de code Hello World créé dans [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Cet article fournit l’extrait de code XML : vous n’êtes donc pas obligé de revenir en arrière et de créer un extrait de code.
+Dans cette procédure, vous allez utiliser le même Hello World extrait de code créé dans [procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Cet article fournit l’extrait de code XML : vous n’êtes donc pas obligé de revenir en arrière et de créer un extrait de code.
 
 1. Créez un projet à partir du modèle **Projet VSIX vide** et nommez le projet **TestSnippet**.
 
@@ -115,7 +115,7 @@ Dans cette procédure, vous utilisez l’extrait de code Hello World créé dans
 
 4. Testez l'extrait de code. Dans l'instance expérimentale, ouvrez un projet Visual Basic et ouvrez l'un des fichiers de code. Placez votre curseur quelque part dans le code, effectuez un clic droit et, dans le menu contextuel, sélectionnez **Insérer un extrait**.
 
-5. Normalement, vous devez voir *HelloWorldVB* parmi les dossiers. Double-cliquez dessus. Vous devez voir une fenêtre contextuelle **Insérer un extrait : HelloWorldVB >** comportant une liste déroulante **HelloWorldVB**. Cliquez sur la liste déroulante **HelloWorldVB**.
+5. Normalement, vous devez voir *HelloWorldVB* parmi les dossiers. Double-cliquez dessus. Vous devriez normalement voir la fenêtre contextuelle **Insérer un extrait : HelloWorldVB >** comportant une liste déroulante **HelloWorldVB**. Cliquez sur la liste déroulante **HelloWorldVB**.
 
    La ligne suivante est ajoutée au fichier de code :
 

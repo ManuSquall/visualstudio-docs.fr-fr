@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238211"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652498"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -30,15 +30,15 @@ Pour obtenir la liste des raccourcis clavier courants et d'autres informations s
 - [Conseils d’utilisation du clavier](../ide/productivity-shortcuts.md)
 - [Conseils de productivité](../ide/productivity-features.md).
 
-Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Guide pratique pour utiliser uniquement le clavier](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Pour plus d’informations sur l’accessibilité dans Visual Studio, consultez [conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md) et [Comment : utiliser le clavier en mode exclusif](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
-|[Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edition](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projet](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+|[Analyser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edition](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
 |[Architecture](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus contextuels de l'éditeur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus contextuels Projet et Solution](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Explorateur de tests](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Générer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Fichier](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactoriser](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Outils](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menus contextuels de l’affichage de classes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Aide](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Explorateur de solutions](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Affichage](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Déboguer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Équipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Fenêtre](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Débogage](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test de charge](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Équipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Fenêtre](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
@@ -130,8 +130,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Debug.StepIntoSpecific|**Maj+Alt+F11**|
 |Debug.StepOut|**Maj+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Maj+Alt+F11**|
-|Debug.StepOver|**F10** (lors du débogage : effectue une étape par action)|
-|Debug.StepOver|**F10** (en dehors du débogage : Démarre le débogage et s’arrête sur la première ligne de code utilisateur)|
+|Debug.StepOver|**F10** (lors du débogage : effectue une action de pas à pas principal)|
+|Debug.StepOver|**F10** (lorsque vous ne déboguez pas : démarre le débogage et s’arrête sur la première ligne du code utilisateur)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Maj+F5**|
 |Debug.StopPerformanceAnalysis|**Maj+Alt+F2**|
@@ -162,9 +162,9 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------|-|
-|Edit.Copy|**Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+Inser**|
-|Edit.Cut|**Ctrl+X**<br /><br /> ou<br /><br /> **Maj+Suppr**|
-|Edit.CycleClipboardRing|**Ctrl+Maj+V**<br /><br /> ou<br /><br /> **Ctrl+Maj+Inser**|
+|Edit.Copy|**Ctrl+C**<br /><br /> or<br /><br /> **Ctrl+Inser**|
+|Edit.Cut|**Ctrl+X**<br /><br /> or<br /><br /> **Maj+Suppr**|
+|Edit.CycleClipboardRing|**Ctrl+Maj+V**<br /><br /> or<br /><br /> **Ctrl+Maj+Inser**|
 |Edit.Delete|**Supprimer**|
 |Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl+F**|
@@ -194,11 +194,11 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Maj+K, Ctrl+Maj+N**|
 |Edit.OpenFile|**CTRL+MAJ+G** (ouvre le nom du fichier sous le curseur)|
-|Edit.Paste|**Ctrl+V**<br /><br /> ou<br /><br /> **Maj+Inser**|
+|Edit.Paste|**Ctrl+V**<br /><br /> or<br /><br /> **Maj+Inser**|
 |Edit.PreviousBookmark|**Ctrl+K, Ctrl+P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl+Maj+K, Ctrl+Maj+P**|
 |Edit.QuickFindSymbol|**Maj+Alt+F12**|
-|Edit.Redo|**Ctrl+Y**<br /><br /> ou<br /><br /> **Ctrl+Maj+Z**<br /><br /> ou<br /><br /> **Maj+Alt+Retour arrière**|
+|Edit.Redo|**Ctrl+Y**<br /><br /> or<br /><br /> **Ctrl+Maj+Z**<br /><br /> or<br /><br /> **Maj+Alt+Retour arrière**|
 |Edit.RefreshRemoteReferences|**Ctrl+Maj+J**|
 |Edit.Replace|**Ctrl+H**|
 |Edit.ReplaceinFiles|**Ctrl+Maj+H**|
@@ -216,7 +216,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.SizeControlUpGrid|**Maj+Haut**|
 |Edit.StopSearch|**Alt+F3, S**|
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
-|Edit.Undo|**Ctrl+Z**<br /><br /> ou<br /><br /> **Alt+Retour arrière**|
+|Edit.Undo|**Ctrl+Z**<br /><br /> or<br /><br /> **Alt+Retour arrière**|
 
 ### <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur
 
@@ -227,7 +227,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |EditorContextMenus.CodeWindow.Execute|**Ctrl+Alt+F5**|
 |EditorContextMenus.CodeWindow.GoToView|**Ctrl+M, Ctrl+G**|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O** (lettre « O »)|
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+K, T**|
+|EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> or<br /><br /> **Ctrl+K, T**|
 
 ### <a name="bkmk_file"></a> Fichier
 
@@ -300,33 +300,33 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (lettre « O »)<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+O** (lettre « O »)|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (lettre « O »)<br /><br /> or<br /><br /> **Ctrl+[** , **Ctrl+O** (lettre « O »)|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> or<br /><br /> **Ctrl+[** , **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> or<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
 ### <a name="bkmk_team"></a> Équipe
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Team.Git.GoToGitBranches|**Ctrl+0** (zéro), **Ctrl+N**<br /><br /> ou<br /><br /> **Ctrl+0, N**|
-|Team.Git.GoToGitChanges|**Ctrl+0** (zéro), **Ctrl+G**<br /><br /> ou<br /><br /> **Ctrl+0, G**|
-|Team.Git.GoToGitCommits|**Ctrl+0** (zéro), **Ctrl+O** (lettre « O »)<br /><br /> ou<br /><br /> **Ctrl+0, O**|
+|Team.Git.GoToGitBranches|**Ctrl+0** (zéro), **Ctrl+N**<br /><br /> or<br /><br /> **Ctrl+0, N**|
+|Team.Git.GoToGitChanges|**Ctrl+0** (zéro), **Ctrl+G**<br /><br /> or<br /><br /> **Ctrl+0, G**|
+|Team.Git.GoToGitCommits|**Ctrl+0** (zéro), **Ctrl+O** (lettre « O »)<br /><br /> or<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+’**|
 
 ### <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0** (zéro), **Ctrl+B**<br /><br /> ou<br /><br /> **Ctrl+0, B**|
-|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0** (zéro), **Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+0, C**|
-|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0** (zéro), **Ctrl+D**<br /><br /> ou<br /><br /> **Ctrl+0, D**|
-|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0** (zéro), **Ctrl+H**<br /><br /> ou<br /><br /> **Ctrl+0, H**|
-|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0** (zéro), **Ctrl+M**<br /><br /> ou<br /><br /> **Ctrl+0, M**|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0** (zéro), **Ctrl+P**<br /><br /> ou<br /><br /> **Ctrl+0, P**|
-|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0** (zéro), **Ctrl+R**<br /><br /> ou<br /><br /> **Ctrl+0, R**|
-|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0** (zéro), **Ctrl+S**<br /><br /> ou<br /><br /> **Ctrl+0, S**|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (zéro), **Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+0, A**|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (zéro), **Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+0, W**|
+|TeamFoundationContextMenus.Commands.GoToBuilds|**Ctrl+0** (zéro), **Ctrl+B**<br /><br /> or<br /><br /> **Ctrl+0, B**|
+|TeamFoundationContextMenus.Commands.GoToConnect|**Ctrl+0** (zéro), **Ctrl+C**<br /><br /> or<br /><br /> **Ctrl+0, C**|
+|TeamFoundationContextMenus.Commands.GoToDocuments|**Ctrl+0** (zéro), **Ctrl+D**<br /><br /> or<br /><br /> **Ctrl+0, D**|
+|TeamFoundationContextMenus.Commands.GoToHome|**Ctrl+0** (zéro), **Ctrl+H**<br /><br /> or<br /><br /> **Ctrl+0, H**|
+|TeamFoundationContextMenus.Commands.GoToMyWork|**Ctrl+0** (zéro), **Ctrl+M**<br /><br /> or<br /><br /> **Ctrl+0, M**|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|**Ctrl+0** (zéro), **Ctrl+P**<br /><br /> or<br /><br /> **Ctrl+0, P**|
+|TeamFoundationContextMenus.Commands.GoToReports|**Ctrl+0** (zéro), **Ctrl+R**<br /><br /> or<br /><br /> **Ctrl+0, R**|
+|TeamFoundationContextMenus.Commands.GoToSettings|**Ctrl+0** (zéro), **Ctrl+S**<br /><br /> or<br /><br /> **Ctrl+0, S**|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (zéro), **Ctrl+A**<br /><br /> or<br /><br /> **Ctrl+0, A**|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (zéro), **Ctrl+W**<br /><br /> or<br /><br /> **Ctrl+0, W**|
 
 ### <a name="bkmk_test"></a> Tester
 
@@ -370,12 +370,12 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.CallHierarchy|**Ctrl+Alt+K**|
 |View.ClassView|**Ctrl+Maj+C**|
 |View.ClassViewGoToSearchCombo|**Ctrl+K, Ctrl+V**|
-|View.CodeDefinitionWindow|**Ctrl+\\, D**<br /><br /> ou<br /><br /> **Ctrl+\\, Ctrl+D**|
+|View.CodeDefinitionWindow|**Ctrl+\\, D**<br /><br /> or<br /><br /> **Ctrl+\\, Ctrl+D**|
 |View.CommandWindow|**Ctrl+Alt+A**|
 |View.DataSources|**Maj+Alt+D**|
 |View.DocumentOutline|**Ctrl+Alt+T**|
 |View.EditLabel|**F2**|
-|View.ErrorList|**Ctrl+\\, E**<br /><br /> ou<br /><br /> **Ctrl+\\, Ctrl+E**|
+|View.ErrorList|**Ctrl+\\, E**<br /><br /> or<br /><br /> **Ctrl+\\, Ctrl+E**|
 |View.F#Interactive|**Ctrl+Alt+F**|
 |View.FindSymbolResults|**Ctrl+Alt+F12**|
 |View.Forward|**ALT+flèche droite** (fonctions différentes de View.NavigateForward dans l’éditeur de texte)|
@@ -384,7 +384,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.NavigateBackward|**Ctrl+-**|
 |View.NavigateForward|**Ctrl+Maj+-**|
 |View.NextError|**Ctrl+Maj+F12**|
-|View.Notifications|**Ctrl+W, N**<br /><br /> ou<br /><br /> **Ctrl+W, Ctrl+N**|
+|View.Notifications|**Ctrl+W, N**<br /><br /> or<br /><br /> **Ctrl+W, Ctrl+N**|
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K, Ctrl+R**|
 |View.Output|**Ctrl+Alt+O** (lettre « O »)|
@@ -393,10 +393,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |View.PropertyPages|**Maj+F4**|
 |View.ResourceView|**Ctrl+Maj+E**|
 |View.ServerExplorer|**Ctrl+Alt+S**|
-|View.ShowSmartTag|**Maj+Alt+F10**<br /><br /> ou<br /><br /> **Ctrl + .**|
+|View.ShowSmartTag|**Maj+Alt+F10**<br /><br /> or<br /><br /> **Ctrl + .**|
 |View.SolutionExplorer|**Ctrl+Alt+L**|
 |View.SQLServerObjectExplorer|**Ctrl+\\, Ctrl+S**|
-|View.TaskList|**Ctrl+\\, T**<br /><br /> ou<br /><br /> **Ctrl+\\, Ctrl+T**|
+|View.TaskList|**Ctrl+\\, T**<br /><br /> or<br /><br /> **Ctrl+\\, Ctrl+T**|
 |View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M**|
 |View.Toolbox|**Ctrl+Alt+X**|
 |View.UMLModelExplorer|**Ctrl+\\, Ctrl+U**|
@@ -421,14 +421,14 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Window.NextDocumentWindowNav|**Ctrl+Tab**|
 |Window.NextPane|**Alt+F6**|
 |Window.NextSplitPane|**F6**|
-|Window.NextTab|**Ctrl+Alt+Pg suiv**<br /><br /> ou<br /><br /> **Ctrl+Pg Suiv**|
+|Window.NextTab|**Ctrl+Alt+Pg suiv**<br /><br /> or<br /><br /> **Ctrl+Pg Suiv**|
 |Window.NextTabandAddtoSelection|**Ctrl+Maj+Alt+Pg suiv**|
 |Window.NextToolWindowNav|**Alt+F7**|
 |Window.PreviousDocumentWindow|**Ctrl+Maj+F6**|
 |Window.PreviousDocumentWindowNav|**Ctrl+Maj+Tab**|
 |Window.PreviousPane|**Maj+Alt+F6**|
 |Window.PreviousSplitPane|**Maj+F6**|
-|Window.PreviousTab|**Ctrl+Alt+Pg préc**<br /><br /> ou<br /><br /> **Ctrl+Pg préc**|
+|Window.PreviousTab|**Ctrl+Alt+Pg préc**<br /><br /> or<br /><br /> **Ctrl+Pg préc**|
 |Window.PreviousTabandAddtoSelection|**Ctrl+Maj+Alt+Pg préc**|
 |Window.PreviousToolWindowNav|**Maj+Alt+F7**|
 |Window.QuickLaunch|**Ctrl + Q**|
@@ -528,7 +528,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|**B**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Maj+K**<br /><br /> ou<br /><br /> **Ctrl+E, C**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl+Maj+K**<br /><br /> or<br /><br /> **Ctrl+E, C**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Supprimer**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
@@ -536,7 +536,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Aucun.|
+|Debug.Graphics.CaptureFrame|aucune.|
 |Graphics.MovePixelSelectionDown|**Maj+Alt+Bas**|
 |Graphics.MovePixelSelectionLeft|**Maj+Alt+Gauche**|
 |Graphics.MovePixelSelectionRight|**Maj+Alt+Droite**|
@@ -630,10 +630,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |CommitAllEdits|**Maj+Alt+U**|
-|SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> ou<br /><br /> s**Ctrl+R, Ctrl+E**|
-|SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+Q**|
-|SQL.MovetoSchema|**Ctrl+R, M**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+M**|
-|SQL.Rename|**F2**<br /><br /> ou<br /><br /> **Ctrl+R, R**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+R**|
+|SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> or<br /><br /> s**Ctrl+R, Ctrl+E**|
+|SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+Q**|
+|SQL.MovetoSchema|**Ctrl+R, M**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+M**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **Ctrl+R, R**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Maj+Alt+Pg suiv**|
 
 ## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL
@@ -642,10 +642,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |--------------| - |
 |CommitAllEdits|**Maj+Alt+U**|
 |SQL.ExecuteWithDebugger|**Alt+F5**|
-|SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> ou<br /><br /> s**Ctrl+R, Ctrl+E**|
-|SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+Q**|
-|SQL.MovetoSchema|**Ctrl+R, M**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+M**|
-|SQL.Rename|**F2**<br /><br /> ou<br /><br /> **Ctrl+R, R**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+R**|
+|SQL.ExpandWildcards|**Ctrl+R, E**<br /><br /> or<br /><br /> s**Ctrl+R, Ctrl+E**|
+|SQL.FullyqualifyNames|**Ctrl+R, Q**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+Q**|
+|SQL.MovetoSchema|**Ctrl+R, M**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+M**|
+|SQL.Rename|**F2**<br /><br /> or<br /><br /> **Ctrl+R, R**<br /><br /> or<br /><br /> **Ctrl+R, Ctrl+R**|
 |SQL.TSqlEditorCancelQuery|**Alt+Attn**|
 |SQL.TSqlEditorExecuteQuery|**Ctrl+Maj+E**|
 |SQL.TSqlEditorResultsAsFile|**Ctrl+D, F**|
@@ -741,7 +741,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Edit.SelectionCancel|**Échap**|
 |View.ViewCode|**F7**|
 
-## <a name="solution-explorer"></a>Explorateur de solutions
+## <a name="solution-explorer"></a>l'Explorateur de solutions
 
 |Commande|Raccourci clavier|
 |-------------| - |
@@ -782,7 +782,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 | Commandes | Raccourcis clavier |
 | - | - |
-| Edit.BreakLine | **Entrée**<br /><br /> ou<br /><br /> **Maj+Entrée** |
+| Edit.BreakLine | **Entrée**<br /><br /> or<br /><br /> **Maj+Entrée** |
 | Edit.CharLeft | **Gauche** |
 | Edit.CharLeftExtend | **Maj+Gauche** |
 | Edit.CharLeftExtendColumn | **Maj+Alt+Gauche** |
@@ -796,10 +796,10 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (lettre « O ») |
 | Edit.ContractSelection | **Maj+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
-| Edit.CompleteWord | **Ctrl+Barre d’espace**<br /><br /> ou<br /><br /> **Alt+Droite** |
+| Edit.CompleteWord | **Ctrl+Barre d’espace**<br /><br /> or<br /><br /> **Alt+Droite** |
 | Edit.CopyParameterTip | **Ctrl+Maj+Alt+C** |
 | Edit.DecreaseFilterLevel | **Alt+,** |
-| Edit.DeleteBackwards | **Retour arrière**<br /><br /> ou<br /><br /> **Maj+Retour arrière** |
+| Edit.DeleteBackwards | **Retour arrière**<br /><br /> or<br /><br /> **Maj+Retour arrière** |
 | Edit.DeleteHorizontalWhiteSpace | **Ctrl+K, Ctrl+\\** |
 | Edit.DocumentEnd | **Ctrl+Fin** |
 | Edit.DocumentEndExtend | **Ctrl+Maj+Fin** |
@@ -811,7 +811,7 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 | Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
-| Edit.GotoAll | **Ctrl + T**<br /><br /> ou<br /><br /> **Ctrl+,** |
+| Edit.GotoAll | **Ctrl + T**<br /><br /> or<br /><br /> **Ctrl+,** |
 | Edit.GotoBrace | **Ctrl+]** |
 | Edit.GotoBraceExtend | **Ctrl+Shift+]** |
 | Edit.GotoRecent | **Ctrl+T,R** |
@@ -956,8 +956,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Format.CenterVertical|**Ctrl+F9**|
 |Format.CheckMnemonics|**Ctrl+M**|
 |Format.SizetoContent|**Maj+F7**|
-|Format.SpaceAcross|**Alt+Droite**<br /><br /> ou<br /><br /> **Alt+Gauche**|
-|Format.SpaceDown|**Alt+Haut**<br /><br /> ou<br /><br /> **Alt+Bas**|
+|Format.SpaceAcross|**Alt+Droite**<br /><br /> or<br /><br /> **Alt+Gauche**|
+|Format.SpaceDown|**Alt+Haut**<br /><br /> or<br /><br /> **Alt+Bas**|
 |Format.TabOrder|**Ctrl+D**|
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**Ctrl+G**|
@@ -983,14 +983,14 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Image.MagnificationTool|**Ctrl+M**|
 |Image.Magnify|**Ctrl+Maj+M**|
 |Image.NewImageType|**Insert**|
-|Image.NextColor|**Ctrl+]**<br /><br /> ou<br /><br /> **Ctrl+Droite**|
-|Image.NextRightColor|**Ctrl+Shift+]**<br /><br /> ou<br /><br /> **Ctrl+Maj+Droite**|
+|Image.NextColor|**Ctrl+]**<br /><br /> or<br /><br /> **Ctrl+Droite**|
+|Image.NextRightColor|**Ctrl+Shift+]**<br /><br /> or<br /><br /> **Ctrl+Maj+Droite**|
 |Image.OutlinedEllipseTool|**Maj+Alt+P**|
 |Image.OutlinedRectangleTool|**Maj+Alt+R**|
 |Image.OutlinedRoundedRectangleTool|**Maj+Alt+W**|
 |Image.PencilTool|**Ctrl+I**|
-|Image.PreviousColor|**Ctrl+[**<br /><br /> ou<br /><br /> **Ctrl+Gauche**|
-|Image.PreviousRightColor|**Ctrl+Maj+[**<br /><br /> ou<br /><br /> **Ctrl+Maj+Gauche**|
+|Image.PreviousColor|**Ctrl+[**<br /><br /> or<br /><br /> **Ctrl+Gauche**|
+|Image.PreviousRightColor|**Ctrl+Maj+[**<br /><br /> or<br /><br /> **Ctrl+Maj+Gauche**|
 |Image.RectangleSelectionTool|**Maj+Alt+S**|
 |Image.RectangleTool|**Alt+R**|
 |Image.Rotate90Degrees|**Ctrl+Maj+H**|
@@ -1001,8 +1001,8 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 |Image.SmallerBrush|**Ctrl+-**|
 |Image.TextTool|**Ctrl + T**|
 |Image.UseSelectionasBrush|**Ctrl+U**|
-|Image.ZoomIn|**Ctrl+Maj+.**<br /><br /> ou<br /><br /> **Ctrl+Haut**|
-|Image.ZoomOut|**Ctrl+Maj+,**<br /><br /> ou<br /><br /> **Ctrl+Bas**|
+|Image.ZoomIn|**Ctrl+Maj+.**<br /><br /> or<br /><br /> **Ctrl+Haut**|
+|Image.ZoomOut|**Ctrl+Maj+,**<br /><br /> or<br /><br /> **Ctrl+Bas**|
 
 ## <a name="vc-string-editor"></a>Éditeur de chaînes VC
 
@@ -1094,27 +1094,27 @@ Ces raccourcis clavier sont *globaux*, ce qui signifie que vous pouvez les utili
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
-|Edit.CompleteWord|**Ctrl+K, W**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+Barre d’espace**<br /><br /> ou<br /><br /> **Alt+Droite**|
+|Edit.CompleteWord|**Ctrl+K, W**<br /><br /> or<br /><br /> **Ctrl+K, Ctrl+W**<br /><br /> or<br /><br /> **Ctrl+Barre d’espace**<br /><br /> or<br /><br /> **Alt+Droite**|
 |Edit.DecreaseFilterLevel|**Alt+,**|
 |Edit.IncreaseFilterLevel|**Alt+.**|
-|Edit.ListMembers|**Ctrl+K, L**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+L**<br /><br /> ou<br /><br /> **Ctrl+J**|
-|Edit.ParameterInfo|**Ctrl+K, P**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+P**<br /><br /> ou<br /><br /> **Ctrl+Maj+Barre d’espace**|
-|Edit.QuickInfo|**Ctrl+K, I**<br /><br /> ou<br /><br /> **Ctrl+K, Ctrl+I**|
-|WorkflowDesigner.Collapse|**Ctrl+E, Ctrl+C**<br /><br /> ou<br /><br /> **Ctrl+E, C**|
-|WorkflowDesigner.CollapseAll|ou|
-|WorkflowDesigner.ConnectNodes|**Ctrl+E, Ctrl+F**<br /><br /> ou<br /><br /> **Ctrl+E, F**|
-|WorkflowDesigner.CreateVariable|**Ctrl+E, Ctrl+N**<br /><br /> ou<br /><br /> **Ctrl+E, N**|
-|WorkflowDesigner.ExpandAll|**Ctrl+E, Ctrl+X**<br /><br /> ou<br /><br /> **Ctrl+E, X**|
-|WorkflowDesigner.ExpandInPlace|**Ctrl+E, Ctrl+E**<br /><br /> ou<br /><br /> **Ctrl+E, E**|
-|WorkflowDesigner.GoToParent|**Ctrl+E, Ctrl+P**<br /><br /> ou<br /><br /> **Ctrl+E, P**|
-|WorkflowDesigner.MoveFocus|**Ctrl+E, Ctrl+M**<br /><br /> ou<br /><br /> **Ctrl+E, M**|
+|Edit.ListMembers|**Ctrl+K, L**<br /><br /> or<br /><br /> **Ctrl+K, Ctrl+L**<br /><br /> or<br /><br /> **Ctrl+J**|
+|Edit.ParameterInfo|**Ctrl+K, P**<br /><br /> or<br /><br /> **Ctrl+K, Ctrl+P**<br /><br /> or<br /><br /> **Ctrl+Maj+Barre d’espace**|
+|Edit.QuickInfo|**Ctrl+K, I**<br /><br /> or<br /><br /> **Ctrl+K, Ctrl+I**|
+|WorkflowDesigner.Collapse|**Ctrl+E, Ctrl+C**<br /><br /> or<br /><br /> **Ctrl+E, C**|
+|WorkflowDesigner.CollapseAll|or|
+|WorkflowDesigner.ConnectNodes|**Ctrl+E, Ctrl+F**<br /><br /> or<br /><br /> **Ctrl+E, F**|
+|WorkflowDesigner.CreateVariable|**Ctrl+E, Ctrl+N**<br /><br /> or<br /><br /> **Ctrl+E, N**|
+|WorkflowDesigner.ExpandAll|**Ctrl+E, Ctrl+X**<br /><br /> or<br /><br /> **Ctrl+E, X**|
+|WorkflowDesigner.ExpandInPlace|**Ctrl+E, Ctrl+E**<br /><br /> or<br /><br /> **Ctrl+E, E**|
+|WorkflowDesigner.GoToParent|**Ctrl+E, Ctrl+P**<br /><br /> or<br /><br /> **Ctrl+E, P**|
+|WorkflowDesigner.MoveFocus|**Ctrl+E, Ctrl+M**<br /><br /> or<br /><br /> **Ctrl+E, M**|
 |WorkflowDesigner.NavigateThroughDesigner|**Ctrl+Alt+F6**|
-|WorkflowDesigner.Restore|**Ctrl+E, Ctrl+R**<br /><br /> ou<br /><br /> **Ctrl+E, R**|
-|WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl+E, Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+E, A**|
-|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl+E, Ctrl+I**<br /><br /> ou<br /><br /> **Ctrl+E, I**|
-|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O** (lettre « O »)<br /><br /> ou<br /><br /> **Ctrl+E, O**|
-|WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> ou<br /><br /> **Ctrl+E, V**|
-|WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> ou<br /><br /> **Ctrl+E, S**|
+|WorkflowDesigner.Restore|**Ctrl+E, Ctrl+R**<br /><br /> or<br /><br /> **Ctrl+E, R**|
+|WorkflowDesigner.ShowHideArgumentDesigner|**Ctrl+E, Ctrl+A**<br /><br /> or<br /><br /> **Ctrl+E, A**|
+|WorkflowDesigner.ShowHideImportsDesigner|**Ctrl+E, Ctrl+I**<br /><br /> or<br /><br /> **Ctrl+E, I**|
+|WorkflowDesigner.ShowHideOverviewMap|**Ctrl+E, Ctrl+O** (lettre « O »)<br /><br /> or<br /><br /> **Ctrl+E, O**|
+|WorkflowDesigner.ShowHideVariableDesigner|**Ctrl+E, Ctrl+V**<br /><br /> or<br /><br /> **Ctrl+E, V**|
+|WorkflowDesigner.ToggleSelection|**Ctrl+E, Ctrl+S**<br /><br /> or<br /><br /> **Ctrl+E, S**|
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl+Num -**|
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222692"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631116"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -110,7 +110,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Langage** - Attribut _obligatoire_ qui spécifie le langage de l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |Value|Description|
+   |valeur|Description|
    |-----|-----------|
    |`VB`|Identifie un extrait de code Visual Basic.|
    |`CSharp`|Identifie un extrait de code C#.|
@@ -123,7 +123,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Genre** - _Attribut facultatif_ qui spécifie le type de code contenu dans l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |Value|Description|
+   |valeur|Description|
    |-----|-----------|
    |`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|
    |`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|
@@ -270,7 +270,7 @@ Spécifie des informations d'ordre général sur l'extrait de code IntelliSense.
 |-------------------|-----------------|
 |[Author, élément](../ide/code-snippets-schema-reference.md#author-element)|Élément facultatif. Nom de la personne ou de la société qui a créé l'extrait de code. Il peut y avoir zéro ou un élément `Author` dans un élément `Header`.|
 |[Description, élément](../ide/code-snippets-schema-reference.md#description-element)|Élément facultatif. Description de l'extrait de code. Il peut y avoir zéro ou un élément `Description` dans un élément `Header`.|
-|[HelpUrl, élément](../ide/code-snippets-schema-reference.md#helpurl-element)|Élément facultatif. URL contenant plus d'informations sur l'extrait de code. Il peut y avoir zéro ou un élément `HelpURL` dans un élément . **Remarque :**  Visual Studio n'utilise pas l'élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.|
+|[HelpUrl, élément](../ide/code-snippets-schema-reference.md#helpurl-element)|Élément facultatif. URL contenant plus d'informations sur l'extrait de code. Il peut y avoir zéro ou un élément `HelpURL` dans un élément . **Remarque** : Visual Studio n’utilise pas l’élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.|
 |[Keywords, élément](../ide/code-snippets-schema-reference.md#keywords-element)|Élément facultatif. Groupe les éléments `Keyword`. Il peut y avoir zéro ou un élément `Keywords` dans un élément `Header`.|
 |[Shortcut, élément](../ide/code-snippets-schema-reference.md#shortcut-element)|Élément facultatif. Spécifie le texte du raccourci qui peut être utilisé pour insérer l'extrait de code. Il peut y avoir zéro ou un élément `Shortcut` dans un élément `Header`.|
 |[SnippetTypes, élément](../ide/code-snippets-schema-reference.md#snippettypes-element)|Élément facultatif. Groupe les éléments `SnippetType`. Il peut y avoir zéro ou un élément `SnippetTypes` dans un élément `Header`. S'il n'y a pas d'éléments `SnippetTypes`, l'extrait de code est toujours valide.|
@@ -632,7 +632,7 @@ Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier 
 | - |-----------------|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
-Une valeur texte est requise. Ce texte spécifie le type de l'objet. Par exemple :
+Une valeur texte est requise. Ce texte spécifie le type de l'objet. Exemple :
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -660,4 +660,4 @@ Une valeur texte est requise. Ce texte spécifie une URL avec plus d'information
 ## <a name="see-also"></a>Voir aussi
 
 - [Extraits de code](../ide/code-snippets.md)
-- [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
