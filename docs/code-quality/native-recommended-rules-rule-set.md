@@ -2,17 +2,17 @@
 title: Ensemble de règles des règles recommandées natives
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18859e84262e9b2a40efde7ed9733fce701a6c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dcc5112262dd36e431a34becd36729ea9a3c186f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649168"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 
@@ -154,7 +154,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C28020](../code-quality/c28020.md)|L’expression n’est pas vraie pour cet appel|
 |[C28021](../code-quality/c28021.md)|Le paramètre annoté doit être un pointeur|
 |[C28022](../code-quality/c28022.md)|La ou les classes de fonction sur cette fonction ne correspondent pas à la ou les classes de fonction sur le typedef utilisé pour la définir.|
-|[C28023](../code-quality/c28023.md)|La fonction affectée ou transmise doit avoir une annotation \_Function @ no__t-1class @ no__t-2 pour au moins une des classes|
+|[C28023](../code-quality/c28023.md)|La fonction affectée ou passée doit avoir un \_Function \_class \_ annotation pour au moins une des classes|
 |[C28024](../code-quality/c28024.md)|Le pointeur de fonction assigné à est annoté avec la classe de fonction, qui n’est pas contenue dans la liste des classes de fonction.|
 |[C28039](../code-quality/c28039.md)|Le type du paramètre réel doit correspondre exactement au type|
 |[C28112](../code-quality/c28112.md)|Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction verrouillée.|
@@ -172,14 +172,14 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C28196](../code-quality/c28196.md)|L’exigence n’est pas satisfaite. (L’expression n’est pas évaluée à true.)|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 ou \_On @ no__t-3failure @ no__t-4 utilisé dans un contexte illégal|
+|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ utilisé dans un contexte illégal|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28209](../code-quality/c28209.md)|La déclaration pour le symbole a une déclaration en conflit|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L’annotation \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|L’annotation \_Use \_decl \_annotations \_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
@@ -222,7 +222,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées qu
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre pour \_Macro @ no__t-1value @ no__t-2 a la valeur null|
+|[C28275](../code-quality/c28275.md)|Le paramètre pour \_Macro \_value \_ est null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|

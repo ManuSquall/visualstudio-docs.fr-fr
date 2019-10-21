@@ -1,5 +1,5 @@
 ---
-title: Ce que&#39;s nouveau pour la conception
+title: Nouveautés&#39;en matière de conception
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187121"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659242"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quelles sont les nouveautés en matière de conception dans Visual Studio dans Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Nouveautés de la conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Cette version de Visual Studio inclut les améliorations suivantes pour vous aider à mieux comprendre et concevoir le code.
 
@@ -64,18 +64,18 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
 - **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
 
-## <a name="VersionSupport"></a> Prise en charge de l’édition pour l’architecture et les outils de modélisation
+## <a name="VersionSupport"></a>Prise en charge d’édition pour les outils d’architecture et de modélisation
 
-Visual Studio 2015 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
+Visual Studio 2015 est disponible dans plusieurs éditions. Les outils d’architecture et de modélisation ne sont pas tous pris en charge. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Enterprise**|**Professionnel**|**Community**|**Express**|
+|**Fonctionnalité**|**Entreprise**|**Technologiques**|**Community**|**Exprime**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Cartes de code**|Oui|Prend en charge uniquement la lecture et filtrage des cartes de code, l’ajout de nouveaux nœuds génériques et création d’un graphique orienté à partir d’une sélection.|-|-|
+|**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage de cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un graphique orienté à partir d’une sélection.|-|-|
 |**Diagrammes de classes UML**|Oui|-|-|-|
 |**Diagrammes de séquence UML**|Oui|-|-|-|
 |**Diagrammes de cas d’usage UML**|Oui|-|-|-|
 |**Diagrammes d’activités UML**|Oui|-|-|-|
 |**Diagrammes de composants UML**|Oui|-|-|-|
 |**Diagrammes de couche**|Oui|-|-|-|
-|**Graphiques orientés** (diagrammes DGML)|Oui|Oui|-|-|
+|**Graphiques orientés** (diagrammes dgml)|Oui|Oui|-|-|
 |**Clone de code**|Oui|-|-|-|

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918443"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665184"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -47,7 +47,7 @@ Comme autre exemple, vous pouvez être amené à exécuter un scénario uniqueme
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez retarder l’heure de début.
 
-3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
 
      Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
@@ -56,7 +56,7 @@ Comme autre exemple, vous pouvez être amené à exécuter un scénario uniqueme
     > [!NOTE]
     > Si la valeur de la propriété **Désactiver pendant le préchauffage** du scénario est **True**, la valeur de temps affectée à la propriété **Retarder l’heure de début** est appliquée après la période de préchauffage. Vous pouvez contrôler les scénarios inclus dans le préchauffage à l’aide de la propriété de scénario **Désactiver pendant le préchauffage**.
 
-5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Retarder l’heure de début**.
+5. Une fois que vous avez changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Retarder l’heure de début**.
 
 ## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>Activer et désactiver l’exécution d’un scénario pendant la période de préchauffage
 
@@ -71,17 +71,17 @@ La propriété **Désactiver pendant le préchauffage** est utilisée pour indiq
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez modifier le comportement de préchauffage.
 
-3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
      Dans la propriété **Désactiver pendant le préchauffage**, sélectionnez **True** ou **False**.
 
-4. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Désactiver pendant le préchauffage**.
+4. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Désactiver pendant le préchauffage**.
 
 ## <a name="see-also"></a>Voir aussi
 

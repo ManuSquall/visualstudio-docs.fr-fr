@@ -12,17 +12,17 @@ helpviewer_keywords:
 - resources [Visual Studio]
 - Resources page in Project Designer
 - application resources [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 29e4fbbd8d50001807f3d90a82d18e40a3674d01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538107"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654245"
 ---
 # <a name="manage-application-resources-net"></a>Gérer les ressources d’une application (.NET)
 
@@ -41,7 +41,7 @@ Dans un projet de code managé, ouvrez la fenêtre de propriétés du projet. Vo
 - En tapant **propriétés de projet** dans la zone de recherche **Ctrl**+**Q**
 - En choisissant **Alt**+**Entrée** dans **Explorateur de solutions**
 
-Sélectionnez l’onglet **Ressources** . Vous pouvez ajouter un fichier *.resx* si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.
+Sélectionnez l’onglet **ressources** . Vous pouvez ajouter un fichier *. resx* si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.
 
 ## <a name="resources-in-other-project-types"></a>Ressources dans d’autres types de projets
 

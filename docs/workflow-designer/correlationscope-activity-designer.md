@@ -1,45 +1,45 @@
 ---
-title: Concepteur de flux de travail - Concepteur d’activités CorrelationScope
+title: Concepteur d’activités Concepteur de flux de travail-CorrelationScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d65e481342f7b7e86b3ce073b7d6a15254ae72d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949813"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650581"
 ---
 # <a name="correlationscope-activity-designer"></a>Concepteur d'activités CorrelationScope
 
-Le **CorrelationScope** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.CorrelationScope> activité qui fournit une gestion implicite des activités de messagerie enfants à l’aide un <xref:System.ServiceModel.Activities.CorrelationHandle> objet.
+Le concepteur d’activités **CorrelationScope** permet de créer et de configurer une activité de <xref:System.ServiceModel.Activities.CorrelationScope> qui fournit une gestion implicite des activités de messagerie enfants à l’aide d’un objet <xref:System.ServiceModel.Activities.CorrelationHandle>.
 
-## <a name="the-correlationscope-activity"></a>L’activité CorrelationScope
+## <a name="the-correlationscope-activity"></a>Activité CorrelationScope
 
 La propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Les activités <xref:System.ServiceModel.Activities.Send> et <xref:System.ServiceModel.Activities.Receive> contenues dans l'objet <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> sont configurées pour utiliser la propriété <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de l'activité <xref:System.ServiceModel.Activities.CorrelationScope> conteneur pour effectuer la corrélation.
 
-### <a name="use-the-correlationscope-activity-designer"></a>Utiliser le Concepteur d’activités CorrelationScope
+### <a name="use-the-correlationscope-activity-designer"></a>Utiliser le concepteur d’activités CorrelationScope
 
-Le **CorrelationScope** Concepteur d’activités peut être trouvé dans le **Messaging** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet sur le côté gauche du Concepteur de Workflow. Vous pouvez également sélectionner **boîte à outils** à partir de la **vue** menu, ou appuyez sur **Ctrl**+**Alt** + **X**.
+Le concepteur d’activités **CorrelationScope** se trouve dans la catégorie **messagerie** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** +**ALT** +**X**.
 
-Le **CorrelationScope** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail. Cette opération crée un <xref:System.ServiceModel.Activities.CorrelationScope> activité avec une valeur par défaut **DisplayName** de CorrelationScope. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **CorrelationScope** Concepteur d’activités ou dans le **DisplayName** boîte de le **propriétés** fenêtre.
+Le concepteur d’activités **CorrelationScope** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail. Cela crée une activité <xref:System.ServiceModel.Activities.CorrelationScope> avec un **DisplayName** par défaut de CorrelationScope. La <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **CorrelationScope** ou dans la zone **DisplayName** de la fenêtre **Propriétés** .
 
-Pour spécifier le <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé par les activités de messagerie enfants, sélectionnez le bouton de sélection en regard de la **CorrelatesWith** champ **propriétés** fenêtre pour afficher le **Expression Éditeur** boîte de dialogue. Cette propriété peut également être définie dans l'aire du concepteur d'activités.
+Pour spécifier le <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé par les activités de messagerie enfants, sélectionnez le bouton de sélection en regard du champ **CorrelatesWith** dans la fenêtre **Propriétés** pour afficher la boîte de dialogue **éditeur d’expressions** . Cette propriété peut également être définie dans l'aire du concepteur d'activités.
 
-Les activités dans la portée de la corrélation sont spécifiées en déposant leurs concepteurs dans les **corps** zone dans le **CorrelationScope** concepteur.
+Les activités délimitées au sein de la corrélation sont spécifiées en déposant leurs concepteurs dans la zone de **corps** au sein du concepteur **CorrelationScope** .
 
-### <a name="the-correlationscope-properties"></a>Les propriétés de CorrelationScope
+### <a name="the-correlationscope-properties"></a>Propriétés CorrelationScope
 
-Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.CorrelationScope> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans **propriétés** fenêtre ou sur l’aire du Concepteur de flux de travail et souvent dans les deux.
+Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.CorrelationScope> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la fenêtre **Propriétés** ou sur l’aire de concepteur de flux de travail, et souvent dans les deux.
 
-|Nom de la propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Utilisation|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>.|
 |<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour gérer les activités de messagerie enfants. Si vous ne définissez pas cette propriété, <xref:System.ServiceModel.Activities.CorrelationScope> crée automatiquement un objet <xref:System.ServiceModel.Activities.CorrelationHandle> implicite.|

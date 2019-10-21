@@ -1,20 +1,20 @@
 ---
-title: 'Déclarations ca5122 : P-Invoke ne doivent pas être sécurisées critiques | Microsoft Docs'
+title: 'Les déclarations P-Invoke CA5122 : ne doivent pas être critiques pour la sécurité | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: eff316ac6f5d73e157e3dbef5126195bd0d62878
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d064f3d2bb382f1131d4e2365077f3db0b2e0ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201486"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669039"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 : les déclarations P/Invoke ne doivent pas être sécurisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "68201486"
 |-|-|
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
 |CheckId|CA5122|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause

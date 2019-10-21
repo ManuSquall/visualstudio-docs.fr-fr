@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8181b1682f94e8f5d8a6f1b56ded5f1703111e1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918551"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665307"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomie d’un test codé de l’interface utilisateur
 
@@ -26,7 +26,7 @@ Quand vous créez un test codé de l’interface utilisateur dans un projet de t
 
 Quand vous créez un test codé de l’interface utilisateur, le **Générateur de test codé de l’interface utilisateur** crée un mappage de l’interface utilisateur testée, ainsi que les méthodes de test, les paramètres et les assertions de tous les tests. Il crée également un fichier de classe pour chaque test.
 
-|Fichier|Sommaire|Modifiable ?|
+|Fichier|Contenu|Modifiable ?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Section Déclarations](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (partielle, générée automatiquement)<br /><br /> [Méthodes](#UIMapMethods)<br /><br /> [Propriétés](#UIMapProperties)|Non|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (partielle)|Oui|

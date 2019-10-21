@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871741"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658555"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,52 +32,52 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  La directive `template` comporte plusieurs attributs qui vous permettent de spécifier différents aspects de la transformation. Tous les attributs sont facultatifs.
 
 ## <a name="compileroptions-attribute"></a>attribut compilerOptions
- Exemple : `compilerOptions="optimize+"`
+ Exemple : `compilerOptions="optimize+"`
 
- Valeurs valides : Toutes les options du compilateur valides. Pour plus d’informations, consultez [ C# options du compilateur classées par catégorie](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic options du compilateur classées par catégorie](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valeurs valides : toutes les options de compilateur valides. Pour plus d’informations, consultez [ C# options du compilateur classées par catégorie](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic options du compilateur classées par catégorie](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignoré pour les modèles au moment de l'exécution (prétraités).
 
  Ces options sont appliquées lorsque le modèle a été converti en [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)], et que le code résultant est compilé.
 
 ## <a name="culture-attribute"></a>attribut de culture
- Exemple : `culture="de-CH"`
+ Exemple : `culture="de-CH"`
 
- Valeurs valides: «», la culture dite indifférente, qui est la valeur par défaut.
+ Valeurs valides : «», la culture dite indifférente, qui est la valeur par défaut.
 
  Culture exprimée sous la forme d'une chaîne au format xx-XX. Par exemple, en-US, ja-JP, de-CH, de-DE. Pour plus d'informations, consultez <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expression est converti en texte.
 
 ## <a name="debug-attribute"></a>attribut de débogage
- Exemple :
+ Exemple :
 
 ```
 debug="true"
 ```
 
- Valeurs valides `true, false`:. False représente la valeur par défaut.
+ Valeurs valides : `true, false`. False représente la valeur par défaut.
 
  Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
  Pour les modèles au moment du design, le fichier de code intermédiaire sera écrit dans votre répertoire **% temp%** .
 
- Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez déboguer le **modèle T4**.
+ Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez **déboguer le modèle T4**.
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
- Exemple :
+ Exemple :
 
 ```
 hostspecific="true"
 ```
 
- Valeurs valides `true, false, trueFromBase`:. False représente la valeur par défaut.
+ Valeurs valides : `true, false, trueFromBase`. False représente la valeur par défaut.
 
  Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l’hôte du moteur de transformation et est déclarée en tant que [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.
 
  Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+ Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -102,15 +102,15 @@ Content of myFile is:
  Si vous utilisez les attributs `inherits` et `hostspecific` ensemble, spécifiez host="trueFromBase" dans la classe dérivée et host="true" dans la classe de base. Cela évite une double définition de la propriété `Host` dans le code généré.
 
 ## <a name="language-attribute"></a>attribut de langage
- Exemple : `language="VB"`
+ Exemple : `language="VB"`
 
- Valeurs valides `C#` : (valeur par défaut)
+ Valeurs valides : `C#` (valeur par défaut)
 
  `VB`
 
- L’attribut Language spécifie le langage[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ( [!INCLUDE[csprcs](../includes/csprcs-md.md)]ou) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
+ L’attribut Language spécifie le langage ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
- Exemple :
+ Exemple :
 
 ```vb
 <#@ template language="VB" #>
@@ -211,12 +211,12 @@ This is the common footer.
 
  Pour un modèle de texte au moment du design, vous pouvez spécifier toute classe de base dérivée de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilisez la directive `<#@assembly#>` pour charger l'assembly ou le projet qui contient la classe de base.
 
- Pour plus d’informations, consultez [«héritage dans les modèles de texte» dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+ Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Attribut LinePragmas
- Exemple : `linePragmas="false"`
+ Exemple : `linePragmas="false"`
 
- Valeurs valides `true` : (valeur par défaut)
+ Valeurs valides : `true` (valeur par défaut)
 
  `false`
 
@@ -225,9 +225,9 @@ This is the common footer.
  Cet attribut peut aussi être utile si vous remarquez que les noms de fichiers absolus dans les pragmas entraînent des problèmes de fusion sous contrôle de code source.
 
 ## <a name="visibility-attribute"></a>Attribut Visibility
- Exemple : `visibility="internal"`
+ Exemple : `visibility="internal"`
 
- Valeurs valides `public` : (valeur par défaut)
+ Valeurs valides : `public` (valeur par défaut)
 
  `internal`
 

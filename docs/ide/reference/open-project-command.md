@@ -10,17 +10,17 @@ helpviewer_keywords:
 - File.OpenProject command
 - Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5c84a2dcd99ef7cff9b5f37a1c69f235582a7973
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666416"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 
@@ -36,12 +36,12 @@ File.OpenProject filename
 
 `filename`
 
-Obligatoire. Chemin complet et nom de fichier de la solution ou du projet à ouvrir.
+Requis. Chemin complet et nom de fichier de la solution ou du projet à ouvrir.
 
 > [!NOTE]
 > La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 

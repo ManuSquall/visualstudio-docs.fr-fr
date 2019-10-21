@@ -1,20 +1,20 @@
 ---
-title: 'Procédure pas à pas : Obtention d’informations à partir d’un lien sélectionné | Microsoft Docs'
+title: 'Procédure pas à pas : obtention d’informations à partir d’un lien sélectionné | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
 ms.topic: conceptual
 ms.assetid: 4750d703-6ce4-458a-935a-f35922ad67d6
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c3081e30f57f380e446d7928db1f4f2d77a4b078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8b8a67e7cdde73fc8596b6c7e6ccc33737a38cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934437"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671897"
 ---
-# <a name="walkthrough-getting-information-from-a-selected-link"></a>Procédure pas à pas : Obtention d’informations à partir d’un lien sélectionné
-Cette rubrique est obsolète. Consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+# <a name="walkthrough-getting-information-from-a-selected-link"></a>Procédure pas à pas : obtention d’informations d’un lien sélectionné
+Cette rubrique est obsolète. Consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).

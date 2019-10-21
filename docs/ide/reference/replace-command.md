@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: efd6398e475f08d07b8c2fd2eadb3d580aa4255d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655586"
 ---
 # <a name="replace-command"></a>Remplacer, commande
 Remplace le texte dans les fichiers à l’aide d’un sous-ensemble des options proposées sous l’onglet **Remplacer dans les fichiers** de la fenêtre **Rechercher et remplacer**.
@@ -34,66 +34,66 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Arguments
 `findwhat`
 
-Obligatoire. Texte à rechercher.
+Requis. Texte à rechercher.
 
 `replacewith`
 
-Obligatoire. Texte de remplacement du texte trouvé.
+Requis. Texte de remplacement du texte trouvé.
 
 ## <a name="switches"></a>Commutateurs
 /all ou /a
 
-facultatif. Remplace toutes les occurrences du texte recherché par le texte de remplacement.
+Optionnel. Remplace toutes les occurrences du texte recherché par le texte de remplacement.
 
 /case ou /c
 
-facultatif. Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
+Optionnel. Il y a correspondance uniquement quand les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
 
 /doc ou /d
 
-facultatif. Effectue la recherche uniquement dans le document actif. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+Optionnel. Effectue la recherche uniquement dans le document actif. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
 /hidden ou /h
 
-facultatif. Recherche le texte masqué et réduit, par exemple les métadonnées d’un contrôle DTC, une zone masquée du plan d’un document ou encore une classe ou une méthode réduite.
+Optionnel. Recherche le texte masqué et réduit, par exemple les métadonnées d’un contrôle DTC, une zone masquée du plan d’un document ou encore une classe ou une méthode réduite.
 
 /open ou /o
 
-facultatif. Effectue la recherche dans tous les documents ouverts comme s’il s’agissait d’un document unique. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+Optionnel. Effectue la recherche dans tous les documents ouverts comme s’il s’agissait d’un document unique. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
 /options ou /t
 
-facultatif. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
+Optionnel. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
 
 /proc ou /p
 
-facultatif. Effectue la recherche uniquement dans la procédure en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+Optionnel. Effectue la recherche uniquement dans la procédure en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
 /regex ou /r
 
-facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
+Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /reset ou /e
 
-facultatif. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
+Optionnel. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
 
 /sel ou /s
 
-facultatif. Effectue la recherche uniquement dans la sélection en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
+Optionnel. Effectue la recherche uniquement dans la sélection en cours. Spécifiez une seule des étendues de recherche disponibles, à savoir `/doc`, `/proc`, `/open` ou `/sel`.
 
 /up ou /u
 
-facultatif. Effectue la recherche à partir de l’emplacement actuel vers le début du fichier. Par défaut, les recherches commencent à l’emplacement actuel dans le fichier et s’effectuent vers la fin du fichier.
+Optionnel. Effectue la recherche à partir de l’emplacement actuel vers le début du fichier. Par défaut, les recherches commencent à l’emplacement actuel dans le fichier et s’effectuent vers la fin du fichier.
 
 /wild ou /l
 
-facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
+Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
 
 /word ou /w
 
-facultatif. Recherche uniquement les mots entiers.
+Optionnel. Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 Cet exemple remplace `btnSend` par `btnSubmit` dans tous les documents ouverts.
 
 ```

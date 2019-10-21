@@ -8,16 +8,16 @@ helpviewer_keywords:
 - coded UI tests, extensions for Excel
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f550e65a152e06ab49ab8a0b3f213edffcf89cd3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672230"
 ---
-# <a name="sample-coded-ui-test-extension-for-excel"></a>Exemple d’extension du test codé de l’interface utilisateur pur Excel
+# <a name="sample-coded-ui-test-extension-for-excel"></a>Exemple d’extension du test codé de l’interface utilisateur pour Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le composant d’extension de l’exemple s’exécute dans le processus de test codé de l’interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et entretient une sorte de lien hiérarchique avec la classe `ExtensionPackage` située à la base. Les classes `TechnologyManager`, `ActionFilter` et `PropertyProvider` sont au niveau suivant, les éléments de contrôle étant au niveau supérieur.

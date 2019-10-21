@@ -2,17 +2,17 @@
 title: Définir un thème de couleurs et des polices
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e955c58be8d0df466ad102c95b0d1a8007588dc
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180042"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667784"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
 

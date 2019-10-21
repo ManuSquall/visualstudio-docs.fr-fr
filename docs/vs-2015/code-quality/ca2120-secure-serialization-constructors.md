@@ -1,5 +1,5 @@
 ---
-title: 'CA2120 : Sécuriser des constructeurs de sérialisation | Microsoft Docs'
+title: 'CA2120 : constructeurs de sérialisation sécurisés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2120
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ea70b7f9462e3195a78b915691a5069ebd6fe6aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b734a5de257273312e5125c5f481ff889cd33e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154356"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664751"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120 : Sécurisez les constructeurs de sérialisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "68154356"
 |-|-|
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le type implémente le <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, n’est pas un délégué ou une interface et est déclarée dans un assembly qui permet aux appelants partiellement approuvés. Le type a un constructeur qui accepte un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objet et un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objet (la signature du constructeur de sérialisation). Ce constructeur n’est pas sécurisé par une vérification de sécurité, mais un ou plusieurs des constructeurs normaux dans le type sont sécurisé.
+ Le type implémente l’interface <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>, n’est pas un délégué ou une interface et est déclaré dans un assembly qui autorise les appelants de confiance partielle. Le type a un constructeur qui accepte un objet <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> et un objet <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> (la signature du constructeur de sérialisation). Ce constructeur n’est pas sécurisé par une vérification de sécurité, mais un ou plusieurs constructeurs normaux dans le type sont sécurisés.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle s’applique aux types qui prennent en charge la sérialisation personnalisée. Un type prend en charge la sérialisation personnalisée s’il implémente la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. Le constructeur de sérialisation est requis et est utilisé pour désérialiser ou recréer des objets qui ont été sérialisés à l’aide de la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (méthode). Étant donné que le constructeur de sérialisation alloue et initialise des objets, les vérifications de sécurité qui sont présentes sur les constructeurs normaux doivent également être présentes sur le constructeur de sérialisation. Si vous ne respectez pas cette règle, les appelants qui n’a pas sinon créer d’instance peuvent utiliser le constructeur de sérialisation pour ce faire.
+ Cette règle s’applique aux types qui prennent en charge la sérialisation personnalisée. Un type prend en charge la sérialisation personnalisée s’il implémente l’interface <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>. Le constructeur de sérialisation est requis et est utilisé pour désérialiser ou recréer des objets qui ont été sérialisés à l’aide de la méthode <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>. Étant donné que le constructeur de sérialisation alloue et initialise des objets, les vérifications de sécurité présentes sur les constructeurs normaux doivent également être présentes sur le constructeur de sérialisation. Si vous ne respectez pas cette règle, les appelants qui ne pouvaient pas créer d’instance pourraient utiliser le constructeur de sérialisation pour effectuer cette opération.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, protégez le constructeur de sérialisation avec des demandes de sécurité qui sont identiques à celles qui protègent les autres constructeurs.
+ Pour corriger une violation de cette règle, protégez le constructeur de sérialisation avec des demandes de sécurité identiques à celles qui protègent les autres constructeurs.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez pas une violation de la règle.
@@ -52,7 +52,7 @@ ms.locfileid: "68154356"
 ## <a name="related-rules"></a>Règles associées
  [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237 : Marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>

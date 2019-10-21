@@ -91,28 +91,28 @@ f1_keywords:
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203678"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665550"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d'environnement de développement intégré
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.  
-  
-## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances  
- Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).  
-  
-## <a name="the-developer-community"></a>Communauté des développeurs  
- Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème.  
-  
- Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/).  
-  
-## <a name="product-support"></a>Support technique  
+Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.
+
+## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances
+ Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).
+
+## <a name="the-developer-community"></a>Communauté des développeurs
+ Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème.
+
+ Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/).
+
+## <a name="product-support"></a>Support technique
  Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support technique Microsoft en visitant le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../../ide/talk-to-us.md).

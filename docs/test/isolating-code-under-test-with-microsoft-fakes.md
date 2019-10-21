@@ -2,20 +2,20 @@
 title: Isolation du code sous test avec Microsoft Fakes
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926638"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653100"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isoler du code testé avec Microsoft Fakes
 
@@ -29,7 +29,7 @@ Microsoft Fakes est disponible en deux versions :
 
 ![Fakes remplace les autres composants](../test/media/fakes-2.png)
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -45,7 +45,7 @@ En règle générale, utilisez des stubs pour les appels dans votre solution Vis
 
 Les autres éléments à prendre en compte sont :
 
-**Performances.** Les shims s'exécutent plus lentement, car ils réécrivent votre code au moment de l'exécution. Les stubs ne subissent pas cette surcharge de performances et sont aussi rapides que les méthodes virtuelles.
+**Performances** Les shims s'exécutent plus lentement, car ils réécrivent votre code au moment de l'exécution. Les stubs ne subissent pas cette surcharge de performances et sont aussi rapides que les méthodes virtuelles.
 
 **Méthodes statiques, types sealed.** Vous pouvez uniquement utiliser les stubs pour implémenter les interfaces. Par conséquent, les types stub ne peuvent pas être utilisés pour les méthodes statiques, les méthodes non virtuelles, les méthodes virtuelles sealed, les méthodes dans les types sealed, etc.
 

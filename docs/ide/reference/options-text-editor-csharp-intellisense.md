@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7e7e76e025c2c426a83f00c1cf2af830eb1c26a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778682"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666242"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 
-Utilisez la page d’options **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#** > **IntelliSense**.
+Utilisez la page d’options **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#**  > **IntelliSense**.
 
 La page d’options **IntelliSense** contient les options suivantes :
 
@@ -53,7 +53,7 @@ La page d’options **IntelliSense** contient les options suivantes :
 
 - Inclure les extraits de code quand ?-Tab est typé après un identificateur
 
-   Quand cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C# à la liste de saisie semi-automatique à la suite d’un appui sur **?**+**Tab** après un identificateur.
+   Quand cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C# à la liste de saisie semi-automatique à la suite d’un appui sur **?** +**Tab** après un identificateur.
 
 ## <a name="enter-key-behavior"></a>Comportement de la touche Entrée
 

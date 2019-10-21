@@ -1,5 +1,5 @@
 ---
-title: 'CA2002 : Ne verrouillez pas sur des objets à identité faible | Microsoft Docs'
+title: 'CA2002 : ne pas verrouiller sur les objets avec une identité faible | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
 ms.assetid: 16100b39-c6fc-452b-8fca-8b459a26c286
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 39d233c126d35f303a30a955310859dd9a678c56
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 557f91d8b00274642accbbfc05b4a60789615bfc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667751"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65681378"
 |-|-|
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
-|Category|Microsoft.Reliability|
+|Category|Microsoft. fiabilité|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -55,7 +55,7 @@ ms.locfileid: "65681378"
 - <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, utilisez un objet à partir d’un type qui n’est pas dans la liste dans la section de Description.
+ Pour corriger une violation de cette règle, utilisez un objet d’un type qui ne figure pas dans la liste de la section Description.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
@@ -64,11 +64,11 @@ ms.locfileid: "65681378"
  [CA2213 : Les champs pouvant être supprimés doivent l’être](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre des verrous d’objets qui enfreignent la règle.
+ L’exemple suivant montre certains verrous d’objets qui violent la règle.
 
  [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/cs/FxCop.Reliability.LockWeakObjects.cs#1)]
  [!code-vb[FxCop.Reliability.LockWeakObjects#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Reliability.LockWeakObjects/vb/FxCop.Reliability.LockWeakObjects.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
- [Lock, instruction](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock (instruction)](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
+ [Lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) , instruction [SyncLock](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

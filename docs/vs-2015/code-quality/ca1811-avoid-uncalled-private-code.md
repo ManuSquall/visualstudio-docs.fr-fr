@@ -1,5 +1,5 @@
 ---
-title: 'CA1811 : Évitez le recours à du code privé | Microsoft Docs'
+title: 'CA1811 : Évitez le code privé qui n’a pas été appelé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AvoidUncalledPrivateCode
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668457"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "68157971"
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Catégorie|Microsoft.Performance|
+|Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Membre privé ou interne (de niveau assembly) n’a pas d’appelants dans l’assembly n’est pas appelé par le common language runtime et n’est pas appelé par un délégué. Les membres suivants ne sont pas vérifiés par cette règle :
+ Un membre privé ou interne (au niveau de l’assembly) n’a pas d’appelants dans l’assembly, n’est pas appelé par le common language runtime et n’est pas appelé par un délégué. Les membres suivants ne sont pas vérifiés par cette règle :
 
-- Membres d’interface explicite.
+- Membres d’interface explicites.
 
 - Constructeurs statiques.
 
@@ -43,20 +43,20 @@ ms.locfileid: "68157971"
 
 - Les méthodes marquées avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
-- Membres qui sont des remplacements.
+- Membres qui sont des substitutions.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle peut rapporter des faux positifs si les points d’entrée produisent, qui ne sont pas identifiées par la logique de règle. En outre, un compilateur peut émettre du code ne pouvant être appelé dans un assembly.
+ Cette règle peut signaler des faux positifs si des points d’entrée qui ne sont pas actuellement identifiés par la logique de règle sont présents. En outre, un compilateur peut émettre du code non pouvant être appelé dans un assembly.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez le code ne pouvant être appelé ou ajouter du code qui l’appelle.
+ Pour corriger une violation de cette règle, supprimez le code pouvant être appelé ou ajoutez du code qui l’appelle.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle.
+ Il est possible de supprimer sans risque un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1812 : Évitez les classes internes non instanciées](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801-review-unused-parameters.md)
 
  [CA1804 : Supprimez les variables locales inutilisées](../code-quality/ca1804-remove-unused-locals.md)

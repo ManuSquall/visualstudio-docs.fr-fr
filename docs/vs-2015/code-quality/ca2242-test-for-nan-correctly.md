@@ -1,5 +1,5 @@
 ---
-title: 'CA2242 : Correctement des tests NaN | Microsoft Docs'
+title: 'CA2242 : test de NaN correctement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,34 +11,34 @@ helpviewer_keywords:
 - CA2242
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 17a98ce3d213c5d9ae85bb5132a0a44e50112037
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8433ac081a45e3dbab80ffcd6f96e6d1db914337
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142354"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672007"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|TestForNaNCorrectly|
 |CheckId|CA2242|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Une expression teste une valeur par rapport à <xref:System.Single.NaN?displayProperty=fullName> ou <xref:System.Double.NaN?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Double.NaN?displayProperty=fullName>, qui représente le not-a-number, se produit lorsque l’opération arithmétique n’est pas définie. Toute expression qui teste l’égalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `false`. Toute expression qui teste l’inégalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, qui représente les valeurs not-a-Number, lorsqu’une opération arithmétique est non définie. Toute expression qui teste l’égalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `false`. Toute expression qui teste l’inégalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle et de déterminer avec précision si une valeur représente <xref:System.Double.NaN?displayProperty=fullName>, utilisez <xref:System.Single.IsNaN%2A?displayProperty=fullName> ou <xref:System.Double.IsNaN%2A?displayProperty=fullName> pour tester la valeur.
+ Pour corriger une violation de cette règle et déterminer précisément si une valeur représente <xref:System.Double.NaN?displayProperty=fullName>, utilisez <xref:System.Single.IsNaN%2A?displayProperty=fullName> ou <xref:System.Double.IsNaN%2A?displayProperty=fullName> pour tester la valeur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

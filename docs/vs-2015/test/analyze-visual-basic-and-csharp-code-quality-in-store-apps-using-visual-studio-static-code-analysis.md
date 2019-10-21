@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416644"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660738"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 
@@ -55,12 +55,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.
 
-   ![Fenêtre Analyse du code](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Fenêtre analyse du code](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
  Pour analyser un avertissement spécifique, cliquez sur son titre dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème.
 
- ![Avertissements liés à l’analyse du code développé](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
+ ![Avertissement de l’analyse du code développé](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
  Lorsque vous développez un avertissement, la ligne de code à l’origine de l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.
 
@@ -91,14 +91,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ## <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
  Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
- ![Explorer et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Rechercher et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  Dans [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], tous les avertissements de l'analyse du code ont le niveau de gravité Avertissement.
 
 ## <a name="BKMK_Warnings"></a> Avertissements de l’analyse du code Visual Basic et C#
  L'analyse du code génère les avertissements suivants :
 
- [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001 : Les types qui ont des champs supprimables doivent être supprimables](https://msdn.microsoft.com/library/ms182172.aspx)
 
  [CA1821 : Supprimez les finaliseurs vides](https://msdn.microsoft.com/library/bb264476.aspx)
 

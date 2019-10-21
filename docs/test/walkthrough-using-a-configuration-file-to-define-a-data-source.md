@@ -6,19 +6,19 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746764"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659597"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données
 
 Cette procédure pas à pas illustre l’utilisation d’une source de données définie dans un fichier *app.config* pour les tests unitaires. Vous apprendrez à créer un fichier *app.config* qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :
 
@@ -32,7 +32,7 @@ Cette procédure pas à pas illustre l’utilisation d’une source de données 
 
 - accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
@@ -270,4 +270,4 @@ Maintenant qu’un fichier *app.config* a été défini, vous allez créer un te
 ## <a name="see-also"></a>Voir aussi
 
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-- [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)
+- [Guide pratique pour créer un test unitaire piloté par les données ](../test/how-to-create-a-data-driven-unit-test.md)

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000160"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650908"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -25,7 +25,7 @@ Pour chaque convention de nommage, vous devez spécifier les symboles auxquels e
 
 Pour commencer, choisissez un titre pour votre règle de nommage que vous utiliserez dans chacune des propriétés nécessaires pour décrire complètement la règle. Par exemple, `public_members_must_be_capitalized` est un nom descriptif correct pour une règle de nommage. Cette page se référera au titre que vous choisissez par **<namingRuleTitle\>** dans les sections qui suivent.
 
-## <a name="symbols"></a>Symbols
+## <a name="symbols"></a>Symboles
 
 Tout d’abord, identifiez un groupe de symboles auxquels appliquer la règle de nommage. Cette propriété se présente sous la forme suivante :
 
@@ -43,11 +43,11 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 
 - \* (Utilisez cette valeur pour spécifier tous les symboles.)
 - namespace
-- class
+- classe
 - struct
 - interface
 - enum
-- propriété
+- Propriété
 - méthode
 - champ
 - événement
@@ -169,7 +169,7 @@ none | La règle est entièrement supprimée.
 refactorisation ou silence | Quand ce style n’est pas suivi, ne rien afficher à l’utilisateur ; toutefois, le code généré automatiquement suit ce style.
 suggestion | Quand ce style n’est pas suivi, l’afficher à l’utilisateur comme suggestion, sous la forme de points de soulignement sur les deux premiers caractères. Il n’a aucun effet au moment de la compilation.
 warning | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
-error | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
+erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
 
 > [!NOTE]
 > Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.

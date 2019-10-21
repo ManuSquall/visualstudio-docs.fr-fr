@@ -3,15 +3,15 @@ title: Organiser les objets en conteneurs de disposition dans le concepteur XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 859c568dc23222a960d89b6171b189d98954f556
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668823"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 

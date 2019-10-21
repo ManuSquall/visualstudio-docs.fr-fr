@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bd6aca05758185f4df47688044f479b7bbe2829e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926283"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658818"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.
@@ -31,16 +31,16 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>Arguments
 `filename`\
-facultatif. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
+Optionnel. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
 
 Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.
 
 Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] (TestProject1) à la solution actuelle.
 
 ```cmd

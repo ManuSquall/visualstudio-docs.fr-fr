@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653188"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -36,7 +36,7 @@ Le [solveur de contrainte](#constraint-solver) d’IntelliTest peut gérer les v
 
 * [Nombres entiers](#integers-and-floats) et [à virgule flottante](#integers-and-floats)
 * [Objects](#objects)
-* [Structs](#structs)
+* [Structures](#structs)
 * [Tableaux](#arrays-and-strings) et [chaînes](#arrays-and-strings)
 
 IntelliTest filtre les entrées qui ne respectent pas les hypothèses indiquées.
@@ -113,7 +113,7 @@ Les objets fictifs paramétrables ont deux modes d’exécution différents :
 
 Utilisez [PexChoose](static-helper-classes.md#pexchoose) pour obtenir les valeurs des objets fictifs paramétrables.
 
-## <a name="structs"></a>Structs
+## <a name="structs"></a>Structures
 
 Le raisonnement d’IntelliTest concernant les valeurs **struct** est similaire à la façon dont il traite les [objets](#objects).
 
@@ -133,6 +133,6 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Informations supplémentaires
+## <a name="further-reading"></a>Compléments de lecture
 
 * [How does it work?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

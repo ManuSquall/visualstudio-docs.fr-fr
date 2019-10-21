@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
-ms.translationtype: HT
+ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037008"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652593"
 ---
 # <a name="project-and-item-templates"></a>Modèles de projet et d’élément
 
@@ -27,7 +27,7 @@ L’installation de Visual Studio inclut également un certain nombre de modèle
 
 Ces modèles fournissent un point de départ aux utilisateurs pour commencer à créer des projets ou à développer des projets existants. Les modèles de projet fournissent les fichiers nécessaires à un type de projet particulier, incluent des références d'assembly standard et définissent les propriétés de projet ainsi que les options du compilateur par défaut. La complexité des modèles d’éléments peut aller d’un fichier unique vide ayant une extension de fichier particulière à plusieurs fichiers de code source contenant du code stub, des fichiers d’informations sur le concepteur et des ressources incorporées.
 
-Vous pouvez utiliser des modèles installés, créer vos propres modèles, ou bien télécharger et utiliser des modèles créés par la communauté. Pour plus d'informations, voir [Procédure : créer des modèles de projet](../ide/how-to-create-project-templates.md) et [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).
+Vous pouvez utiliser des modèles installés, créer vos propres modèles, ou bien télécharger et utiliser des modèles créés par la communauté. Pour plus d’informations, consultez [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md) et [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenu d’un modèle
 

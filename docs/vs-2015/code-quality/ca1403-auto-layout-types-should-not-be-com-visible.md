@@ -1,5 +1,5 @@
 ---
-title: 'CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM | Microsoft Docs'
+title: 'CA1403 : les types de disposition automatique ne doivent pas être visibles par COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2420582ab342948d7774e1bb9e4b5947f44f8d2b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5f39540cb23d86dda4244604da8a9ff764594e11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695440"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661340"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "65695440"
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
 |CheckId|CA1403|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type de valeur visible du composant COM (Object Model) est marqué avec le <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribut la valeur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
+ Un type valeur visible COM (Component Object Model) est marqué avec l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> défini sur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut varier entre les versions du .NET Framework, ce qui bloque les clients COM qui attendent une disposition spécifique. Notez que si le <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, le c#, [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], et spécifient les compilateurs C++ le <xref:System.Runtime.InteropServices.LayoutKind> disposition pour les types valeur.
+ les types de disposition <xref:System.Runtime.InteropServices.LayoutKind> sont gérés par le common language runtime. La disposition de ces types peut changer d’une version à l’autre de la .NET Framework, ce qui va rompre les clients COM qui attendent une disposition spécifique. Notez que si l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute> n’est pas spécifié, C#les compilateurs, C++ [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et spécifient la disposition <xref:System.Runtime.InteropServices.LayoutKind> pour les types valeur.
 
- Sauf mention contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques ne sont pas visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié ; l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
+ Sauf indication contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques sont invisibles pour COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifiez la valeur de la <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut <xref:System.Runtime.InteropServices.LayoutKind> ou <xref:System.Runtime.InteropServices.LayoutKind>, ou rendez le type invisible à COM.
+ Pour corriger une violation de cette règle, remplacez la valeur de l’attribut <xref:System.Runtime.InteropServices.StructLayoutAttribute> par <xref:System.Runtime.InteropServices.LayoutKind> ou <xref:System.Runtime.InteropServices.LayoutKind>, ou rendez le type invisible pour COM.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
@@ -53,7 +53,7 @@ ms.locfileid: "65695440"
  [!code-vb[FxCop.Interoperability.AutoLayout#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoLayout/vb/FxCop.Interoperability.AutoLayout.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1408 : Ne pas utiliser AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+ [CA1408 : N’utilisez pas le paramètre AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Présentation de l’Interface de classe](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) [qualification des Types .NET pour l’interopérabilité](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [interopération avec du Code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Présentation](https://msdn.microsoft.com/733c0dd2-12e5-46e6-8de1-39d5b25df024) des [types .net éligibles de l’interface de classe pour l’interopérabilité entre l’interopérabilité](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [et le code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

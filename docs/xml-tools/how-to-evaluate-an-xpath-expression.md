@@ -3,54 +3,54 @@ title: Évaluer une expression XPath pendant le débogage
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002088"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654273"
 ---
-# <a name="evaluate-xpath-expressions"></a>Évaluer des expressions XPath
+# <a name="evaluate-xpath-expressions"></a>Évaluer les expressions XPath
 
-Vous pouvez évaluer des expressions XPath à l’aide de la **Espion express** fenêtre pendant le débogage. L’expression XPath doit être valide par rapport à la recommandation du W3C sur XPath 1.0. Le contexte XSLT actuel (autrement dit, le `self::node()` nœud dans le **variables locales** fenêtre) fournit le contexte d’évaluation de l’expression XPath.
+Vous pouvez évaluer des expressions XPath à l’aide de la fenêtre **Espion express** pendant le débogage. L’expression XPath doit être valide par rapport à la recommandation du W3C sur XPath 1.0. Le contexte XSLT actuel (autrement dit, le nœud `self::node()` dans la fenêtre **variables locales** ) fournit le contexte d’évaluation de l’expression XPath.
 
-Lorsque vous évaluez une expression XPath :
+Lors de l’évaluation d’une expression XPath :
 
 - Les fonctions XPath intégrées sont prises en charge.
 
-- Les fonctions XSLT intégrées et les fonctions définies par l’utilisateur ne sont pas pris en charge.
+- Les fonctions XSLT intégrées et les fonctions définies par l’utilisateur ne sont pas prises en charge.
 
 > [!NOTE]
-> Débogage XSLT est uniquement disponible dans l’édition Enterprise de Visual Studio.
+> Le débogage XSLT est disponible uniquement dans l’édition Enterprise de Visual Studio.
 
 ## <a name="evaluate-an-xpath-expression"></a>Évaluer une expression XPath
 
-La procédure suivante utilise le *ci-dessous average.xsl* et *books.xml* fichiers à partir de la [procédure pas à pas : Déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) page.
+La procédure suivante utilise les fichiers *Below-Average. xsl* et *books. xml* à partir de la page [procédure pas à pas : déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
 
 1. Insérez un point d’arrêt à l’étiquette de début `xsl:if`.
 
-2. Pour démarrer le débogage, choisissez **XML** > **démarrer le débogage XSLT** sur la barre de menus (ou appuyez sur **Alt**+**F5** ).
+2. Pour démarrer le débogage, choisissez **XML**  > **Démarrer le débogage XSLT** dans la barre de menus (ou appuyez sur **ALT** +**F5**).
 
    Le débogueur démarre et s'arrête à la balise `xsl:if`.
 
-3. Avec le bouton droit et sélectionnez **Espion express**.
+3. Cliquez avec le bouton droit et sélectionnez **Espion express**.
 
-   Le **Espion express** fenêtre s’ouvre.
+   La fenêtre **Espion express** s’ouvre.
 
-4. Entrez `./price/text()` dans le **Expression** champ la **Espion express** boîte de dialogue zone, puis choisissez **réévaluer**.
+4. Entrez `./price/text()` dans le champ **expression** de la boîte de dialogue **Espion express** , puis choisissez **réévaluer**.
 
-   Le prix du nœud book actuel s’affiche dans le **valeur** boîte.
+   Le prix du nœud book actuel s’affiche dans la zone **valeur** .
 
    ![Évaluer une expression XPath dans la fenêtre Espion express](media/quickwatch-price.png)
 
-5. Modifier l’expression XPath pour `./price/text() < $bookAverage` et cliquez sur **réévaluer**.
+5. Remplacez l’expression XPath par `./price/text() < $bookAverage`, puis cliquez sur **réévaluer**.
 
-   Le **valeur** boîte montre que l’expression XPath a la valeur `true`.
+   La zone valeur indique que l’expression XPath prend la **valeur** `true`.
 
 ## <a name="see-also"></a>Voir aussi
 

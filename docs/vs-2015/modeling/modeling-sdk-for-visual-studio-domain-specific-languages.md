@@ -1,5 +1,5 @@
 ---
-title: Modeling SDK - langages spécifiques à un domaine | Microsoft Docs
+title: Modeling SDK-langages spécifiques à un domaine | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668634"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), vous pouvez créer des outils de développement puissants basés sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par exemple, les outils UML sont créés à l'aide du MSDK. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.
+En utilisant le kit de développement logiciel (SDK) de modélisation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), vous pouvez créer des outils de développement puissants basés sur des modèles, que vous pouvez intégrer à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par exemple, les outils UML sont créés à l'aide du MSDK. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.
 
  La définition d'un modèle créé pour représenter les concepts de votre secteur d'activité est au cœur du MSDK. Vous pouvez encadrer le modèle de divers outils, tels qu'une vue schématique, la capacité à générer du code et autres artefacts, les commandes pour transformer le modèle, et la possibilité d'interagir avec le code et les autres objets dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Lorsque vous développez le modèle, vous pouvez le combiner avec d'autres modèles et outils et créer un ensemble d'outils puissant centré sur le développement.
 
@@ -41,11 +41,11 @@ ms.locfileid: "68159031"
   Toutes ces fonctionnalités peuvent être personnalisées et étendues. Les extensions sont intégrées de telle façon que vous pouvez toujours mettre à jour la définition DSL et générer de nouveau les fonctionnalités sans perdre ces extensions.
 
 ## <a name="samples-and-the-latest-information"></a>Exemples et dernières informations
- [Téléchargez la modélisation du Kit de développement logiciel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Télécharger le kit de développement logiciel Modeling SDK pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemples](http://go.microsoft.com/fwlink/?LinkId=186128) pour la Kit de développement logiciel de modélisation pour Visual Studio.
+ [Exemples](http://go.microsoft.com/fwlink/?LinkId=186128) pour le kit de développement logiciel de modélisation pour Visual Studio.
 
- Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL & extensibilité des outils de modélisation](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, consultez le [Forum d’extensibilité des outils de modélisation de Visual Studio &](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Dans cette section
  [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)
@@ -72,7 +72,7 @@ ms.locfileid: "68159031"
 
  [Création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Guide pratique : étendre le Concepteur Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Guide pratique pour étendre le concepteur de langage spécifique à un domaine](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Éditions de Visual Studio prises en charge pour le SDK de visualisation et de modélisation](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 

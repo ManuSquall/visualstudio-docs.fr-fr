@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb254dc2d70992c798a95e5e12efcbb72b2a2336
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262342"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653059"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Bien démarrer avec Live Unit Testing
 
@@ -24,7 +24,7 @@ Live Unit Testing peut être utilisé pour tester des solutions qui ciblent .NET
 
 La solution C# complète peut être téléchargée à partir du dépôt GitHub [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Ce didacticiel nécessite que vous ayez installé Visual Studio Enterprise Edition avec la charge de travail de **développement multiplateforme .net Core** .
 
@@ -48,7 +48,7 @@ La solution est simplement un conteneur pour un ou plusieurs projets. Pour crée
 
 Maintenant que vous avez créé la solution, vous allez créer une bibliothèque de classes nommée StringLibrary qui contient un certain nombre de méthodes d’extension pour l’utilisation de chaînes.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter** > **nouveau projet**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter**  > **nouveau projet**.
 
 ::: moniker range="vs-2017"
 
@@ -67,7 +67,7 @@ Maintenant que vous avez créé la solution, vous allez créer une bibliothèque
 
 ::: moniker range=">=vs-2019"
 
-2. Tapez **bibliothèque de classes** dans la zone de recherche des modèles, puis sélectionnez le modèle **Bibliothèque de classes (.NET Standard)** . Cliquez sur **Suivant**.
+2. Tapez **bibliothèque de classes** dans la zone de recherche des modèles, puis sélectionnez le modèle **Bibliothèque de classes (.NET Standard)** . Cliquez sur **Next**.
 
    > [!NOTE]
    > Étant donné que notre bibliothèque cible .NET Standard plutôt qu’une implémentation .NET particulière, elle peut être appelée à partir de n’importe quelle implémentation .NET qui prend en charge cette version de .NET Standard. Pour plus d'informations, consultez [.NET Standard](/dotnet/standard/net-standard).
@@ -96,7 +96,7 @@ Maintenant que vous avez créé la solution, vous allez créer une bibliothèque
 
 L’étape suivante consiste à créer le projet de test unitaire pour tester la bibliothèque StringLibrary. Créez les tests unitaires en procédant comme suit :
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter** > **nouveau projet**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter**  > **nouveau projet**.
 
 ::: moniker range="vs-2017"
 
@@ -115,7 +115,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
 
 ::: moniker range=">=vs-2019"
 
-2. Tapez **test unitaire** dans la zone de recherche des modèles, puis sélectionnez le modèle **Projet de Test unitaire (.NET Core)** . Cliquez sur **Suivant**.
+2. Tapez **test unitaire** dans la zone de recherche des modèles, puis sélectionnez le modèle **Projet de Test unitaire (.NET Core)** . Cliquez sur **Next**.
 
 3. Nommez le projet **StringLibraryTests**.
 
@@ -196,7 +196,7 @@ Pour étendre la couverture du code à la méthode `StartsWithLower`, procédez 
 
     ![Couverture du code pour la méthode StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-Dans certains cas, des tests réussis dans **l’Explorateur de tests** peuvent apparaître en grisé. Ceci indique qu’un test est en cours d’exécution ou que le test n’a pas été réexécuté, car il n’y a pas eu de modification du code impactant le test depuis sa dernière exécution.
+Dans certains cas, les tests réussis dans l' **Explorateur de tests** peuvent être grisés. Cela indique qu’un test est en cours d’exécution ou que le test n’a pas été exécuté à nouveau, car il n’y a eu aucune modification de code qui aurait un impact sur le test depuis sa dernière exécution.
 
 Jusqu’à présent, tous nos tests ont réussi. Dans la section suivante, nous allons examiner comment vous pouvez gérer l’échec d’un test.
 
@@ -226,7 +226,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
 
 1. Visual Studio exécute le test en mode débogage.
 
-   Le test affecte chaque chaîne d’un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception qui résulte de la valeur inattendue dans l’appel de la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est illustrée dans l’image suivante.
+   Le test affecte chaque chaîne d’un tableau à une variable nommée `phrase` et la passe à la méthode `HasEmbeddedSpaces`. L’exécution du programme s’interrompt et appelle le débogueur la première fois que l’expression d’assertion est `false`. La boîte de dialogue d’exception qui résulte de la valeur inattendue dans l’appel de la méthode [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) est présentée dans l’image suivante.
 
    ![Boîte de dialogue d’exception de Live Unit Testing](media/lut-start/exception-dialog-cs.png)
 

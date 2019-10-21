@@ -6,37 +6,32 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 417ec1ca-e2fa-4496-87cb-ac04c9f26741
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e3b07c7c1009b4f8c9f3d92ccb611e3b64319d19
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dbbe5e1590cdc32f19c6c9131af629f97a75a6b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703261"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669481"
 ---
 # <a name="xml-editor-components"></a>Composants de l'éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette section décrit les fenêtres et boîtes de dialogue de l'éditeur XML. Étant donné que l'éditeur XML est basé sur l'éditeur de texte, une partie de l'environnement de développement intégré (IDE) est configurée à l'aide des paramètres généraux de l'éditeur de texte.  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Divers, XML, Éditeur de texte, boîte de dialogue Options](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md)  
- Présente les paramètres de remplissage automatique et de schéma de l'éditeur XML.  
-  
- [Propriétés des documents XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md)  
- Décrit les informations de base disponibles concernant les documents.  
-  
- [Mise en forme, XML, Éditeur de texte, boîte de dialogue Options](../xml-tools/formatting-xml-text-editor-options-dialog-box.md)  
- Présente les paramètres qui contrôlent le formatage des attributs, la façon de traiter un contenu mixte, etc.  
-  
- [Schémas XML, boîte de dialogue](../xml-tools/xml-schemas-dialog-box.md)  
- Décrit comment sélectionner le ou les schéma(s) XML à associer au document XML.  
-  
-## <a name="related-sections"></a>Rubriques connexes  
- [Guide pratique pour Définir les Options générales de l’éditeur](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
- Explique comment régler des paramètres généraux tels que l'affichage, le remplissage des instructions, etc.  
-  
-## <a name="see-also"></a>Voir aussi  
+Cette section décrit les fenêtres et boîtes de dialogue de l'éditeur XML. Étant donné que l'éditeur XML est basé sur l'éditeur de texte, une partie de l'environnement de développement intégré (IDE) est configurée à l'aide des paramètres généraux de l'éditeur de texte.
+
+## <a name="in-this-section"></a>Dans cette section
+ [Divers, XML, éditeur de texte, boîte de dialogue Options](../xml-tools/miscellaneous-xml-text-editor-options-dialog-box.md) Décrit les paramètres de saisie semi-automatique et de schéma de l’éditeur XML.
+
+ [Propriétés du document XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md) Décrit les informations de base disponibles sur le document.
+
+ [Mise en forme, XML, éditeur de texte, boîte de dialogue Options](../xml-tools/formatting-xml-text-editor-options-dialog-box.md) Décrit les paramètres qui contrôlent la façon dont les attributs sont mis en forme, comment gérer le contenu mixte, et ainsi de suite.
+
+ [Schémas XML, boîte de dialogue](../xml-tools/xml-schemas-dialog-box.md) Décrit comment sélectionner le ou les schémas XML à associer au document XML.
+
+## <a name="related-sections"></a>Rubriques connexes
+ [Comment : définir les options générales de l’éditeur](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2) Décrit comment définir des paramètres généraux tels que l’affichage, la saisie semi-automatique des instructions, etc.
+
+## <a name="see-also"></a>Voir aussi
  [Éditeur XML](../xml-tools/xml-editor.md)

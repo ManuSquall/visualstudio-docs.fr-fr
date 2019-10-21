@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé | Microsoft Docs'
+title: 'Procédure pas à pas : création d’un hôte de modèle de texte personnalisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871695"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659286"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : Création d'un hôte de modèle de texte personnalisé
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’exécution du *moteur de transformation de modèle de texte* . L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou le *processeur de directive* qui a besoin d’un fichier ou d’un assembly peut demander une ressource à l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
- Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser la fonctionnalité de *transformation de modèle* de texte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en dehors de ou si vous souhaitez intégrer cette fonctionnalité dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Pour obtenir la documentation des différentes méthodes, consultez [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+ Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser la fonctionnalité de *transformation de modèle de texte* en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou si vous souhaitez intégrer cette fonctionnalité dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Pour obtenir la documentation des différentes méthodes, consultez [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
 > Si vous écrivez une extension ou un package [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], envisagez d’utiliser le service de création de modèles de texte au lieu de créer votre propre hôte. Pour plus d’informations, consultez [appel de la transformation de texte dans une extension vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
@@ -35,7 +35,7 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 - Test de l'hôte personnalisé.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
  Pour effectuer cette procédure pas à pas, vous devez disposer des éléments suivants :
 
 - Visual Studio 2010 ou version ultérieure
@@ -51,7 +51,7 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 2. Ajoutez des références aux assemblys suivants :
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
     - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 et versions ultérieures**
 
@@ -725,7 +725,7 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Pour créer un modèle de texte pour tester l'hôte personnalisé
 
-1. Créez un fichier texte et nommez- `TestTemplate.tt`le.
+1. Créez un fichier texte et nommez-le `TestTemplate.tt`.
 
      Vous pouvez utiliser n'importe quel éditeur de texte (tel que le Bloc-notes) pour créer le fichier.
 
@@ -817,7 +817,7 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
     ```
 
 ## <a name="next-steps"></a>Étapes suivantes
- Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [Procédure pas à pas : Connexion d’un hôte à un processeur](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)de directive généré.
+ Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [procédure pas à pas : connexion d’un hôte à un processeur de directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Voir aussi
 

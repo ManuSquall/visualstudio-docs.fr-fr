@@ -1,32 +1,32 @@
 ---
-title: 'CA2153 : Éviter la gestion des Exceptions d’état endommagé | Microsoft Docs'
+title: 'Ca2172 : Évitez de gérer les exceptions d’état endommagé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f8999c2e4622505526524f2a09a5f33259955974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142571"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667408"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Éviter la gestion des exceptions d’état endommagé
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : éviter la gestion des exceptions d’état endommagé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|Catégorie|Microsoft.Security|
+|Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent un endommagement de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
+ Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
 
 ## <a name="rule-description"></a>Description de la règle
  Les CSE indiquent que l’état d’un processus a été endommagé et qu’il n’a pas été intercepté par le système. Dans un scénario d’état endommagé, un gestionnaire général intercepte uniquement l’exception si votre méthode est marquée au moyen de l’attribut `HandleProcessCorruptedStateExceptions` approprié. Par défaut, le [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) n’appelle pas les gestionnaires catch pour les CSE.

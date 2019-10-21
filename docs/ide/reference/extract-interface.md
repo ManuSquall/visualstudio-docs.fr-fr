@@ -2,8 +2,8 @@
 title: Extraire une interface (refactorisation)
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654417"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -27,11 +27,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Permet de créer une interface en utilisant les membres existants d’une classe, d’un struct ou d’une interface.
+**Ce qui suit :** Vous permet de créer une interface à l’aide de membres existants à partir d’une classe, d’une structure ou d’une interface.
 
-**Quand :** Vous avez des membres dans une classe, un struct ou une interface qui peuvent être hérités par d’autres classes, structs ou interfaces.
+Dans les **cas suivants :** Vous avez des membres dans une classe, un struct ou une interface qui peuvent être hérités par d’autres classes, structures ou interfaces.
 
-**Pourquoi :** Les interfaces sont d’excellentes constructions pour les conceptions orientées objet. Imaginez des classes représentant différents animaux (chien, chat, oiseau) pouvant être associées à des méthodes courantes, par exemple Manger, Boire et Dormir. Une interface comme IAnimal permettrait aux éléments Chien, Chat et Oiseai d’avoir la même « signature » pour ces méthodes.
+**Pourquoi :** les interfaces sont d’excellentes constructions pour les conceptions orientées objet. Imaginez des classes représentant différents animaux (chien, chat, oiseau) pouvant être associées à des méthodes courantes, par exemple Manger, Boire et Dormir. Une interface comme IAnimal permettrait aux éléments Chien, Chat et Oiseai d’avoir la même « signature » pour ces méthodes.
 
 ## <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -49,7 +49,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
       - Appuyez sur **Ctrl+R**, puis **Ctrl+I**. (Le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Sélectionnez **Modifier > Refactoriser > Extraire l’interface**.
       - Cliquez avec le bouton droit sur le nom de la classe et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.

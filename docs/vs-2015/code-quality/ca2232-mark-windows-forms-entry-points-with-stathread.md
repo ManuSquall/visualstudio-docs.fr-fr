@@ -1,5 +1,5 @@
 ---
-title: 'CA2232 : Points d’entrée d’interrogation Windows Forms avec STAThread | Microsoft Docs'
+title: 'CA2232 : marquer les points d’entrée Windows Forms avec STAThread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 084e7a093f92aa8eda9d9edc11865ac319adfad0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435425"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662793"
 ---
-# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232 : Marquez les points d'entrée Windows Forms avec STAThread
+# <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232 : Marquez les points d'entrée Windows Forms avec STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|MarkWindowsFormsEntryPointsWithStaThread|
 |CheckId|CA2232|
-|Category|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Fait référence à un assembly la <xref:System.Windows.Forms> espace de noms et son point d’entrée n’est pas marqué avec le <xref:System.STAThreadAttribute?displayProperty=fullName> attribut.
+ Un assembly fait référence à l’espace de noms <xref:System.Windows.Forms>, et son point d’entrée n’est pas marqué avec l’attribut <xref:System.STAThreadAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.STAThreadAttribute> Indique que le modèle pour l’application de thread COM est à thread unique cloisonné. Cet attribut doit être présent au point d'entrée de toute application qui utilise des Windows Forms ; s'il est omis, les composants Windows peuvent ne pas fonctionner correctement. Si l’attribut n’est pas présent, l’application utilise le modèle de cloisonnement multithread, ce qui n’est pas pris en charge pour les Windows Forms.
+ <xref:System.STAThreadAttribute> indique que le modèle de thread COM pour l’application est un thread cloisonné. Cet attribut doit être présent au point d'entrée de toute application qui utilise des Windows Forms ; s'il est omis, les composants Windows peuvent ne pas fonctionner correctement. Si l’attribut n’est pas présent, l’application utilise le modèle multithread cloisonné, qui n’est pas pris en charge pour les Windows Forms.
 
 > [!NOTE]
-> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] les projets qui utilisent l’infrastructure d’Application n’ont pas marquer le **Main** méthode avec STAThread. Le [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateur effectue automatiquement.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] les projets qui utilisent l’infrastructure d’application n’ont pas besoin de marquer la méthode **main** avec STAThread. Le compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] le fait automatiquement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, ajoutez le <xref:System.STAThreadAttribute> attribut au point d’entrée. Si le <xref:System.MTAThreadAttribute?displayProperty=fullName> attribut n’est présent, supprimez-le.
+ Pour corriger une violation de cette règle, ajoutez l’attribut <xref:System.STAThreadAttribute> au point d’entrée. Si l’attribut <xref:System.MTAThreadAttribute?displayProperty=fullName> est présent, supprimez-le.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si vous développez pour le .NET Compact Framework pour lequel le <xref:System.STAThreadAttribute> attribut n’est pas nécessaire et non pris en charge.
+ Il est possible de supprimer sans risque un avertissement de cette règle si vous développez pour le .NET Compact Framework, pour lequel l’attribut <xref:System.STAThreadAttribute> est inutile et n’est pas pris en charge.
 
 ## <a name="example"></a>Exemple
  Les exemples suivants illustrent l’utilisation correcte de <xref:System.STAThreadAttribute>.

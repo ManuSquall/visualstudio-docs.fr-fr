@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262289"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653037"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Questions fréquentes (FAQ) sur Live Unit Testing
 
@@ -23,15 +23,15 @@ ms.locfileid: "72262289"
 
 Live Unit Testing fonctionne avec les trois frameworks de tests unitaires populaires listés dans le tableau suivant. La version minimale prise en charge des adaptateurs et des frameworks est également listée dans le tableau. Les frameworks de tests unitaires sont tous disponibles dans NuGet.org.
 
-|Framework de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
+|Infrastructure de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
 |NUnit |NUnit3TestAdapter version 3.7.0 |NUnit version 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Si vous avez des projets de test basés sur MSTest plus anciens qui référencent `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, effectuez une mise à niveau vers Visual Studio 2019 ou Visual Studio 2017.
+Si vous avez des projets de test basés sur MSTest plus anciens qui référencent les `Microsoft.VisualStudio.QualityTools.UnitTestFramework` et que vous ne souhaitez pas passer aux packages NuGet de MSTest plus récents, effectuez une mise à niveau vers Visual Studio 2019 ou Visual Studio 2017.
 
-Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Vous pouvez restaurer les packages en procédant à une génération explicite de la solution (sélectionnez **générer** > **reconstruire la solution** dans le menu Visual Studio de niveau supérieur) ou en cliquant avec le bouton droit sur la solution et en sélectionnant restaurer les **packages NuGet** . avant d’activer les tests d’unités vivantes.
+Dans certains cas, vous devez peut-être restaurer explicitement les packages NuGet référencés par les projets dans la solution pour que Live Unit Testing fonctionne. Vous pouvez restaurer les packages en procédant à une génération explicite de la solution (sélectionnez **générer**  > **régénérer la solution** dans le menu Visual Studio de niveau supérieur) ou en cliquant avec le bouton droit sur la solution et en sélectionnant restaurer les **packages NuGet** . avant d’activer les tests d’unités vivantes.
 
 ## <a name="net-core-support"></a>Support de .NET Core
 
@@ -87,7 +87,7 @@ Par exemple, vous pouvez avoir une cible qui génère des packages NuGet dans le
 
 ## <a name="error-messages-with-outputpath-or-outdir"></a>Messages d’erreur avec \<OutputPath > ou \<OutDir >
 
-**Pourquoi l’erreur suivante s’affiche-t-elle quand Live Unit Testing tente de générer ma solution : « ... appears to unconditionally set `<OutputPath>` or `<OutDir>`. Live Unit Testing will not execute tests from the output assembly » ?**
+**Pourquoi reçois-je l’erreur suivante quand Live Unit Testing tente de générer ma solution : «... semble définir de manière inconditionnelle `<OutputPath>` ou `<OutDir>`. Live Unit Testing n’exécutera pas de tests à partir de l’assembly de sortie» ?**
 
 Cette erreur peut se produire si le processus de génération de votre solution remplace sans condition `<OutputPath>` ou `<OutDir>` afin qu’il ne soit pas un sous-répertoire de `<BaseOutputPath>`. Dans ce cas, Live Unit Testing ne fonctionnera pas, car il remplace également ces valeurs pour garantir que les artefacts de build soient placés dans un dossier sous `<BaseOutputPath>`. Si vous devez remplacer l’emplacement où vous souhaitez déplacer vos artéfacts de build dans le cadre d’une build standard, remplacez `<OutputPath>` sous condition en fonction de `<BaseOutputPath>`.
 
@@ -118,7 +118,7 @@ Ne remplacez pas `<OutDir>` directement dans votre processus de génération ; 
 
 ## <a name="build-artifact-location"></a>Créer l’emplacement de l’artefact
 
-**J’aimerais que les artefacts d’une build Live Unit Testing soient placés à un emplacement spécifique au lieu de l’emplacement par défaut, sous le dossier *.vs*. Comment modifier cet emplacement ?**
+**Je souhaite que les artefacts d’un Live Unit Testing Build s’affichent à un emplacement spécifique au lieu de l’emplacement par défaut sous le dossier *. vs* . Comment puis-je modifier cela ?**
 
 Définissez la variable d’environnement de niveau utilisateur `LiveUnitTesting_BuildRoot` sur le chemin d’accès où vous souhaitez déposer les artéfacts de build Live Unit Testing. 
 

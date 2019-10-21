@@ -2,17 +2,17 @@
 title: Définir une propriété Automation unique pour les contrôles UWP à des fins de test
 ms.date: 05/31/2018
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: fd939162ff4063a66ac0afe1e6830a0d3b32bab2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 845ed1502f86f9b0de678182bd0dc77b9b7617c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429385"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660011"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles UWP à des fins de test
 

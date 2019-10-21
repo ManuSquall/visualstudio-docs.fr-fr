@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 899fc041df3f7118de6be97309e8ce971235d178
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814122"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658320"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
-Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual Studio, vous permettent de concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basés sur le langage.
+Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual Studio, vous permettent de concevoir un langage spécifique à un domaine, puis de générer tout ce que les utilisateurs doivent avoir pour créer des modèles basés sur la langue.
 
  Les outils suivants se trouvent dans les Outils DSL :
 
@@ -48,7 +48,7 @@ Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual St
 
   Pour plus d’informations, consultez [Choix d'un modèle de solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-  L’Assistant crée une solution Visual Studio qui a les projets suivants :
+  L’Assistant crée une solution Visual Studio qui contient les projets suivants :
 
 - Dsl
 
@@ -56,7 +56,7 @@ Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual St
 
 - **DslPackage**
 
-   Le projet DslPackage détermine comment les outils de langage intègrent avec Visual Studio.
+   Le projet DslPackage détermine la façon dont les outils de langage s’intègrent à Visual Studio.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Interface graphique des Outils DSL
  Vous pouvez utiliser l’interface graphique des Outils DSL pour ajouter des éléments et des relations à votre langage spécifique à un domaine. Une fois que vous avez ajouté les éléments, vous pouvez définir leur apparence en les mappant à des formes, en personnalisant les couleurs et en ajoutant des éléments décoratifs. Vous pouvez également ajouter les éléments à la boîte à outils.
@@ -64,15 +64,15 @@ Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual St
 ## <a name="validation-in-dsl-tools"></a>Validation dans les Outils DSL
  DSL offre un niveau de validation pour vous assurer que le modèle de domaine répond aux exigences de base pour générer du code. En règle générale, lorsque vous créez votre propre langage spécifique à un domaine, vous devez ajouter votre propre validation pour exprimer vos règles de logique métier. Pour plus d’informations sur la validation personnalisée, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
- Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d'informations, voir [Procédure : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d’informations, consultez [Comment : créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personnalisation des Outils DSL
  Vous pouvez fournir du code supplémentaire pour affiner le comportement du modèle et définir des contraintes sur votre langage. Si nécessaire, vous pouvez apporter des changements significatifs en modifiant les modèles de texte.
 
 ## <a name="distributing-your-dsl-solution"></a>Distribution de votre solution DSL
- Outils DSL génère un package qui est hébergé dans Visual Studio. Le package présente une boîte à outils, un explorateur DSL et d’autres éléments d’interface utilisateur qui permettent aux utilisateurs de créer des modèles à l’aide de votre langage spécifique à un domaine.
+ Les outils DSL génèrent un package qui est hébergé dans Visual Studio. Le package présente une boîte à outils, un explorateur DSL et d’autres éléments d’interface utilisateur qui permettent aux utilisateurs de créer des modèles à l’aide de votre langage spécifique à un domaine.
 
- Lorsque vous générez et exécutez la solution DSL outils dans Visual Studio, une deuxième instance de Visual Studio, vous montre comment votre langage spécifique à un domaine à l’utilisateur de la langue. Après avoir vérifié que tout fonctionne correctement, vous pouvez distribuer le fichier `.vsix` que vous trouverez dans le dossier de génération du projet DslPackage. Ce fichier peut être utilisé pour installer la solution DSL comme une extension de Visual Studio sur d’autres ordinateurs.  Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Quand vous générez et exécutez la solution d’outils DSL dans Visual Studio, une deuxième instance de Visual Studio vous indique comment votre langage spécifique à un domaine est l’utilisateur du langage. Après avoir vérifié que tout fonctionne correctement, vous pouvez distribuer le fichier `.vsix` que vous trouverez dans le dossier de génération du projet DslPackage. Ce fichier peut être utilisé pour installer le DSL comme une extension Visual Studio sur d’autres ordinateurs.  Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Voir aussi
 

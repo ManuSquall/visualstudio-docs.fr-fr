@@ -2,17 +2,17 @@
 title: Conseils de productivité
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: c0ac256d9878df45404dc62f1080e12bb6e7f002
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666787"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -34,7 +34,7 @@ Pour plus d’informations sur les raccourcis clavier utiles, consultez [Raccour
 
 - **Utiliser des extraits de code**. Vous pouvez utiliser des extraits de code intégrés ou créer les vôtres.
 
-     Pour insérer un extrait de code, choisissez **Edition** > **IntelliSense** > **Insérer l’extrait** ou **Entourer de** dans la barre de menus, ou ouvrez le menu contextuel dans un fichier et choisissez **Extrait** > **Insérer l’extrait** ou **Entourer de**. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).
+     Pour insérer un extrait de code, choisissez **Edition** > **IntelliSense** > **Insérer l’extrait** ou **Entourer de** dans la barre de menus, ou ouvrez le menu contextuel dans un fichier et choisissez **Extrait** > **Insérer l’extrait** ou **Entourer de**. Pour plus d'informations, consultez [Code Snippets](../ide/code-snippets.md).
 
 - **Corriger les erreurs de code inline**. Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action. Ces actions peuvent être appliquées en utilisant l’icône en forme de tournevis ![Icône en forme de tournevis](media/screwdriver-icon.png) ou d’ampoule ![Icône en forme d’ampoule](media/light-bulb-icon.png), ou en appuyant sur **Alt**+**Entrée** ou **Ctrl**+ **.** quand votre curseur se trouve sur la ligne de code appropriée. Pour plus d’informations, consultez [Actions rapides](quick-actions.md).
 
@@ -138,12 +138,12 @@ Vous pouvez rapidement accéder à une invite de commandes développeur ou à un
 
    Vous pouvez également gérer des fichiers plus facilement en créant une autre instance de l’**Explorateur de solutions** et en la déplaçant vers un autre moniteur. Pour créer une autre instance de l’**Explorateur de solutions**, ouvrez un menu contextuel dans l’**Explorateur de solutions**, puis choisissez **Nouvelle vue Explorateur de solutions**.
 
-- **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l’IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Procédure : modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour changer les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personnaliser les polices qui apparaissent dans Visual Studio**. Vous pouvez modifier le type, la taille et la couleur de police utilisés pour le texte dans l’IDE. Par exemple, vous pouvez personnaliser la couleur des éléments de code spécifiques dans l'éditeur et le type de police dans les fenêtres Outil ou dans tout l'IDE. Pour plus d’informations, consultez [Guide pratique pour modifier les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) et [Guide pratique pour modifier les polices et les couleurs utilisées dans l’Éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Blog de conseils et d’astuces pour Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Raccourcis clavier par défaut pour les commandes fréquemment utilisées](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Guide pratique pour personnaliser des menus et des barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procédure pas à pas : Créer une application simple](../get-started/csharp/tutorial-wpf.md)
+- [Procédure pas à pas : création d’une application simple](../get-started/csharp/tutorial-wpf.md)
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)

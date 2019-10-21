@@ -37,19 +37,19 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 2c33ccbaa21008ab3fa3d1122847c5e18708f9fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606052"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666347"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Boîte de dialogue Options : Éditeur de texte \> Tous les langages
+# <a name="options-dialog-box-text-editor--all-languages"></a>Boîte de dialogue Options : éditeur de texte \> tous les langages
 
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
 

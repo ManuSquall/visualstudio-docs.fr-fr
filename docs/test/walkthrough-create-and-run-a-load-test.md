@@ -7,17 +7,17 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a319181348f86ab8f16b2cc2b7e9a6e6f3a16c13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976263"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659689"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : créer et exécuter un test de charge qui contient des tests unitaires
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : Créer et exécuter un test de charge qui contient des tests unitaires
 
 Dans cette procédure pas à pas, vous allez créer un test de charge qui contient des tests unitaires.
 
@@ -35,19 +35,19 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 - Exécution d'un test de charge
 
-- Effectuez les étapes décrites dans [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) afin de créer une bibliothèque de classes C# simple qui contient un projet de test de performances web et de charge avec quelques tests unitaires.
+- Effectuez les étapes dans [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) afin de créer une bibliothèque de classes C# simple qui contient un projet de test de performances web et de charge avec quelques tests unitaires.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Créer un test de charge contenant des tests unitaires à l’aide de l’Assistant Nouveau test de charge
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Pour démarrer l'Assistant Nouveau test de charge
 
-1. Ouvrez la solution Bank que vous avez créée dans [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1. Ouvrez la solution Bank que vous avez créée dans [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du nœud de solution Bank, sélectionnez **Ajouter**, puis **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
-3. Dans la boîte de dialogue **Ajouter un nouveau projet**, développez **Visual C#**, puis sélectionnez **Test**. Dans la liste de modèles, sélectionnez **Projet de test de performance web et de charge**, puis dans le champ **Nom**, tapez `BankLoadTest`. Cliquez sur **OK**.
+3. Dans la boîte de dialogue **Ajouter un nouveau projet**, développez **Visual C#** , puis sélectionnez **Test**. Dans la liste de modèles, sélectionnez **Projet de test de performance web et de charge**, puis dans le champ **Nom**, tapez `BankLoadTest`. Cliquez sur **OK**.
 
      Le projet de test de performance Web et de charge BankLoadTest est ajouté à la solution.
 

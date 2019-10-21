@@ -14,21 +14,21 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9786c35b81ac0ff4fd29ffe121aab7e1aa04f2f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416436"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662936"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
-## <a name="why-use-dependency-diagrams"></a>Pourquoi utiliser des diagrammes de dépendance?
+## <a name="why-use-dependency-diagrams"></a>Pourquoi utiliser des diagrammes de dépendance ?
 
 Pour vous assurer que le code n’est pas en conflit avec sa conception, validez votre code avec des diagrammes de dépendance dans Visual Studio. Cela peut vous aider à :
 
@@ -42,7 +42,7 @@ Pour vous assurer que le code n’est pas en conflit avec sa conception, validez
 
    Recherchez le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio
 
@@ -52,12 +52,12 @@ Pour vous assurer que le code n’est pas en conflit avec sa conception, validez
 
 Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Vous pouvez valider le code manuellement à partir d’un diagramme de dépendance ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement lors de l’exécution de builds locales ou de Azure Pipelines builds. Voir [vidéo Channel 9: Concevez et validez votre architecture à l'](http://go.microsoft.com/fwlink/?LinkID=252073)aide de diagrammes de dépendance.
+Vous pouvez valider le code manuellement à partir d’un diagramme de dépendance ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement lors de l’exécution de builds locales ou de Azure Pipelines builds. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de dépendances](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Si vous souhaitez exécuter la validation de couche à l’aide de Team Foundation Server (TFS), vous devez également installer la même version de Visual Studio sur votre serveur de builds.
 
-## <a name="live-dependency-validation"></a>Validation des dépendances en direct
+## <a name="live-dependency-validation"></a>Validation de dépendances dynamiques
 
 La validation des dépendances se produit en temps réel, et les erreurs sont affichées immédiatement dans le **liste d’erreurs**.
 
@@ -92,7 +92,7 @@ Lorsque vous faites glisser des éléments vers le diagramme de dépendance, les
 
 ## <a name="validate-code-manually"></a>Valider manuellement le code
 
-Si vous avez un diagramme de dépendance ouvert qui est lié aux éléments de solution, vous pouvez exécuter la commande **valider** le raccourci à partir du diagramme. Vous pouvez également utiliser l’invite de commandes pour exécuter la commande **MSBuild** avec la propriété personnalisée **/p: ValidateArchitecture** définie sur **true**. Par exemple, lorsque vous apportez des modifications dans le code, exécutez la validation de couche régulièrement afin de pouvoir intercepter tôt les conflits de dépendance.
+Si vous avez un diagramme de dépendance ouvert qui est lié aux éléments de solution, vous pouvez exécuter la commande **valider** le raccourci à partir du diagramme. Vous pouvez également utiliser l’invite de commandes pour exécuter la commande **MSBuild** avec la propriété personnalisée **/p : ValidateArchitecture** définie sur **true**. Par exemple, lorsque vous apportez des modifications dans le code, exécutez la validation de couche régulièrement afin de pouvoir intercepter tôt les conflits de dépendance.
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Valider le code à partir d’un diagramme de dépendance ouvert
 
@@ -124,13 +124,13 @@ Si vous avez un diagramme de dépendance ouvert qui est lié aux éléments de s
 
      - ou
 
-       Accédez au dossier qui contient le fichier de projet de modélisation (. modelproj) et le diagramme de dépendance, puis exécutez MSBuild avec la propriété personnalisée suivante:
+       Accédez au dossier qui contient le fichier de projet de modélisation (. modelproj) et le diagramme de dépendance, puis exécutez MSBuild avec la propriété personnalisée suivante :
 
        ```
        msbuild /p:ValidateArchitecture=true
        ```
 
-   - Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez MSBuild avec la propriété personnalisée suivante:
+   - Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez MSBuild avec la propriété personnalisée suivante :
 
        ```
        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
@@ -138,7 +138,7 @@ Si vous avez un diagramme de dépendance ouvert qui est lié aux éléments de s
 
      - ou
 
-       Accédez au dossier de la solution, qui doit contenir un projet de modélisation qui contient un diagramme de dépendance, puis exécutez MSBuild avec la propriété personnalisée suivante:
+       Accédez au dossier de la solution, qui doit contenir un projet de modélisation qui contient un diagramme de dépendance, puis exécutez MSBuild avec la propriété personnalisée suivante :
 
        ```
        msbuild /p:ValidateArchitecture=true
@@ -153,7 +153,7 @@ Si vous avez un diagramme de dépendance ouvert qui est lié aux éléments de s
 Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé de consigner un élément de travail dans Team Foundation.
 
 > [!WARNING]
-> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.
 
 #### <a name="create-a-work-item-for-a-validation-error"></a>Créer un élément de travail pour une erreur de validation
 
@@ -161,7 +161,7 @@ Pendant le processus de développement, vous pouvez supprimer certains conflits 
 
 Utilisez les tâches suivantes pour gérer les erreurs de validation dans la fenêtre **liste d’erreurs** :
 
-|**To**|**Procédez comme suit**|
+|**Pour**|**Procédez comme suit**|
 |-|-|
 |Supprimer des erreurs sélectionnées pendant la validation|Cliquez avec le bouton droit sur une ou plusieurs erreurs sélectionnées, pointez sur **gérer les erreurs de validation**, puis cliquez sur supprimer les **Erreurs**.<br /><br /> Les erreurs supprimées apparaissent barrées. Lors de la prochaine validation, ces erreurs ne s’afficheront pas.<br /><br /> Les erreurs supprimées sont suivies dans un fichier. suppressions pour le fichier de diagramme de dépendance correspondant.|
 |Cesser de supprimer des erreurs sélectionnées|Cliquez avec le bouton droit sur l’erreur ou les erreurs supprimées sélectionnées, pointez sur **gérer les erreurs de validation**, puis cliquez sur arrêter la suppression des **Erreurs**.<br /><br /> Les erreurs supprimées qui sont sélectionnées s'afficheront lors de la prochaine validation.|
@@ -208,32 +208,32 @@ Le tableau suivant décrit les problèmes liés à la validation de couche et pr
 
 Lorsque vous validez du code par rapport à un diagramme de dépendance, des erreurs de validation se produisent lorsque le code est en conflit avec la conception. Par exemple, les conditions suivantes peuvent provoquer des erreurs de validation :
 
-- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.
+- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l’artefact.
 
 - Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.
 
-Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Vous pouvez effectuer cette tâche de façon itérative.
+Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d’erreur. Vous pouvez effectuer cette tâche de façon itérative.
 
 La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique la signification de ces erreurs, et suggère des opérations pour les résoudre ou les gérer.
 
 |**Syntaxe**|**Description**|
 |-|-|
-|*ArtifactN*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de dépendance.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*Artefactn*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de dépendance.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Nom d'un espace de noms.|
 |*LayerNameN*|Nom d’une couche sur le diagramme de dépendance.|
 |*DependencyType*|Type de relation de dépendance entre *artefact 1* et *Artefact2*. Par exemple, *artefact 1* a une relation d' **appels** avec *Artefact2*.|
 
 | **Syntaxe d’erreur** | **Description de l’erreur** |
 |-|-|
-| DV0001: **Dépendance non valide** | Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappé à une couche fait référence à un élément de code mappé à une autre couche, mais qu’il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation des dépendances contenant ces couches. Il s’agit d’une violation de contrainte de dépendance. |
-| DV1001: **Nom d’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété «noms d’espaces de noms autorisés» ne contient pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la syntaxe de «noms d’espaces de noms autorisés» doit être une liste d’espaces de noms dans laquelle les éléments de code associés à sont des éléments de code autorisés à être définis. |
-| DV1002: **Dépendance sur un espace de noms non référencé** | Ce problème est signalé sur un élément de code associé à une couche et référençant un autre élément de code défini dans un espace de noms défini dans la propriété espace de noms non référencé de la couche. Il s’agit d’une violation de contrainte de nom. Notez que la propriété «espaces de noms non référencés» est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
-| DV1003: **Nom d’espace de noms non autorisé** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété «noms d’espaces de noms interdits» contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la propriété «nom d’espace de noms non autorisé» est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules, dans laquelle les éléments de code associés à cette couche ne doivent pas être définis. |
-| DV3001: **Lien manquant** | La couche «*NomCouche*» est liée à «*artefact*», qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
-| DV9001: **Les analyses architecturales ont trouvé des erreurs internes** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
+| DV0001 : **dépendance non valide** | Ce problème est signalé lorsqu’un élément de code (espace de noms, type, membre) mappé à une couche fait référence à un élément de code mappé à une autre couche, mais qu’il n’existe aucune flèche de dépendance entre ces couches dans le diagramme de validation des dépendances contenant ces couches. Il s’agit d’une violation de contrainte de dépendance. |
+| DV1001 : **nom d’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété « noms d’espaces de noms autorisés » ne contient pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la syntaxe de « noms d’espaces de noms autorisés » doit être une liste d’espaces de noms dans laquelle les éléments de code associés à sont des éléments de code autorisés à être définis. |
+| DV1002 : **dépendance sur un espace de noms non référencé** | Ce problème est signalé sur un élément de code associé à une couche et référençant un autre élément de code défini dans un espace de noms défini dans la propriété espace de noms non référencé de la couche. Il s’agit d’une violation de contrainte de nom. Notez que la propriété « espaces de noms non référencés » est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
+| DV1003 : **nom d’espace de noms non autorisé** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété « noms d’espaces de noms interdits » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la propriété « nom d’espace de noms non autorisé » est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules, dans laquelle les éléments de code associés à cette couche ne doivent pas être définis. |
+| DV3001 : **lien manquant** | La couche «*NomCouche*» est liée à «*artefact*», qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
+| DV9001 : les **analyses architecturales ont trouvé des erreurs internes** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Validation de dépendances dynamiques dans Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
-- [Vidéo : Valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

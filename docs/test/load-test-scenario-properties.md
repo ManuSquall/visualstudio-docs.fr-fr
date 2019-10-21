@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785954"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652969"
 ---
 # <a name="load-test-scenario-properties"></a>Propriétés des scénarios de test de charge
 
@@ -26,7 +26,7 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 |Property|Définition|
 |-|----------------|
-|**Name**|Nom du scénario.|
+|**Nom**|Nom du scénario.|
 
 ## <a name="mix"></a>Combinaison
 
@@ -41,11 +41,11 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 |Property|Définition|
 |-|----------------|
-|**Agents à utiliser**|Spécifie les agents que votre scénario doit utiliser si vous exécutez le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.<br /><br />Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.<br /><br />Pour plus d'informations, voir [Procédure : Spécifier les agents de test à utiliser](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Appliquer une distribution au rythme**|Valeur booléenne utilisée pour indiquer si vous souhaitez appliquer les délais de distribution classiques au modèle de combinaison de tests sur la base du rythme de l’utilisateur. Cette propriété s’applique uniquement si la propriété **Type de combinaison de tests** a la valeur **Sur la base du rythme de l’utilisateur**.<br /><br />Pour plus d'informations, voir [Procédure : Appliquer une distribution au rythme](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Agents à utiliser**|Spécifie les agents que votre scénario doit utiliser si vous exécutez le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.<br /><br />Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier les agents de test à utiliser](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Appliquer une distribution au rythme**|Valeur booléenne utilisée pour indiquer si vous souhaitez appliquer les délais de distribution classiques au modèle de combinaison de tests sur la base du rythme de l’utilisateur. Cette propriété s’applique uniquement si la propriété **Type de combinaison de tests** a la valeur **Sur la base du rythme de l’utilisateur**.<br /><br />Pour plus d’informations, consultez [Guide pratique pour appliquer une distribution au rythme](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).|
 |**Commutation IP**|Valeur booléenne utilisée pour indiquer si la commutation IP est utilisée.<br /><br />La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients. La commutation IP est importante pour les tests effectués sur une batterie de serveurs web à charge équilibrée. La plupart des équilibreurs de charge établissent une affinité entre un client et un serveur web donné à l’aide de l’adresse IP du client. Si toutes les demandes semblent provenir d'un seul client, l'équilibrage de charge n'équilibre pas la charge. Il est important que les demandes proviennent d’une plage d’adresses IP pour bien équilibrer la charge de la batterie de serveurs web.<br /><br />La commutation IP est uniquement disponible avec l'agent de test.|
 |**Nombre maximal d’itérations de test**|Valeur numérique utilisée pour spécifier le nombre maximal de tests à exécuter dans le scénario. Une valeur de 0 indique aucune limite maximum.<br /><br />Pour plus d’informations, consultez [Configurer des itérations de test pour des scénarios](../test/configure-test-iterations-in-a-load-test-scenario.md).|
-|**Pourcentage de nouveaux utilisateurs**|Valeur numérique qui indique le pourcentage de nouveaux utilisateurs ou des premières visites dans le scénario.<br /><br />Pour plus d'informations, voir [Procédure : Spécifier le pourcentage d’utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
+|**Pourcentage de nouveaux utilisateurs**|Valeur numérique qui indique le pourcentage de nouveaux utilisateurs ou des premières visites dans le scénario.<br /><br />Pour plus d’informations, consultez [Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Profil de réflexion**|Indique si le scénario doit utiliser **Distribution normale**, ou si le profil de réflexion est **Actif** ou **Inactif**.<br /><br />Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Minutage

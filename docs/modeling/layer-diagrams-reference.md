@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766154"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661496"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -48,7 +48,7 @@ Utilisez un diagramme de dépendances pour vous aider à effectuer les tâches s
 
 - renforcer l'architecture prévue pendant le développement et la maintenance de votre code en incluant la validation avec vos opérations de build et d'archivage.
 
-Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la création et le dessin de diagrammes de dépendance [, consultez diagrammes de dépendance : Instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles de superposition, consultez le [site patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la création et le dessin de diagrammes de dépendance, consultez [diagrammes de dépendances : indications](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles de superposition, consultez le [site patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lecture des diagrammes de dépendance
 
@@ -58,11 +58,11 @@ Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagra
 
 |**Automatiques**|**Élément**|**Description**|
 |-|-|-|
-|1|**WFP**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour afficher les artefacts liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez afficher les **liens** pour ouvrir l' **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Dépendances d’espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne peuvent pas dépendre des espaces de noms spécifiés.<br />-   **Espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Espaces de noms requis** : spécifie que les artefacts associés à cette couche doivent appartenir à l’un des espaces de noms spécifiés.|
-|2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** : spécifie la direction de la dépendance.|
-|3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> -   **Direction** : spécifie la direction de la dépendance.|
-|4|**Commentaire**|Permet d'ajouter des remarques générales au diagramme ou aux éléments du diagramme.|
-|5\.|**Lien de commentaire**|Permet de lier des commentaires aux éléments du diagramme.|
+|1|**WFP**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour afficher les artefacts liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez afficher les **liens** pour ouvrir l' **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -    les**dépendances d’espace de noms interdits** : spécifie que les artefacts associés à cette couche ne peuvent pas dépendre des espaces de noms spécifiés.<br />-    les**espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **espaces de noms requis** : spécifie que les artefacts associés à cette couche doivent appartenir à l’un des espaces de noms spécifiés.|
+|2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> **direction** de la -    : spécifie la direction de la dépendance.|
+|3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> **direction** de la -    : spécifie la direction de la dépendance.|
+|4|**Commentaireaire**|Permet d'ajouter des remarques générales au diagramme ou aux éléments du diagramme.|
+|5|**Lien de commentaire**|Permet de lier des commentaires aux éléments du diagramme.|
 
 ## <a name="Explorer"></a>Explorateur de couches
 
@@ -76,7 +76,7 @@ Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des pro
 
 Pour plus d'informations sur la liaison des couches et des artefacts, consultez :
 
-- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : indications](../modeling/layer-diagrams-guidelines.md)
 
 - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -93,7 +93,7 @@ L' **Explorateur de couches** s’ouvre et affiche les artefacts liés aux couch
 |-|-|
 |**Catégories**|Genre d'artefact, tel qu'une classe, un espace de noms, un fichier source, etc.|
 |**WFP**|Couche liée à l'artefact.|
-|**Prend en charge la validation**|Si la **valeur est true**, le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si la **valeur est false**, le lien ne participe pas au processus de validation de couche.<br /><br /> Pour plus d’informations, [consultez diagrammes de dépendances : Instructions](../modeling/layer-diagrams-guidelines.md).|
+|**Prend en charge la validation**|Si la **valeur est true**, le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si la **valeur est false**, le lien ne participe pas au processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [diagrammes de dépendances : instructions](../modeling/layer-diagrams-guidelines.md).|
 |**Identificateur**|Référence à l'artefact lié.|
 
 ## <a name="see-also"></a>Voir aussi

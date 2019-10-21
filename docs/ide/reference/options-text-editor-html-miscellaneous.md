@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778428"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666182"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Options, Éditeur de texte, HTML (Web Forms), Divers
 
-Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **HTML (Web Forms)** > **Divers**.
+Utilisez la page options **Divers** pour définir les préférences quant à la façon dont l’éditeur HTML gère les éléments collés dans la page. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **HTML (Web Forms)**  > **Divers**.
 
 ## <a name="miscellaneous-html-options"></a>Options HTML diverses
 

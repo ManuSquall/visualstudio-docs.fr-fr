@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664861"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procédure : ajouter des paramètres de contexte à un paramètre d’exécution de test de charge
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
 
 Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
 
@@ -36,9 +36,9 @@ Si vous affectez la valeur du paramètre de contexte Webserver1 à `http://Corpo
 
 En outre, en assignant des valeurs différentes à un paramètre de contexte en reprenant le même nom dans des paramètres d'exécution du test de charge différents, vous pouvez exécuter le test de charge dans différents environnements :
 
-- Paramètre d’exécution du serveur web de préproduction d’entreprise : Paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
+- Paramètre d’exécution du serveur web de préproduction d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
 
-- Paramètre d’exécution du serveur web de production d’entreprise : Paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
+- Paramètre d’exécution du serveur web de production d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
 
   **Changement du paramètre d’exécution depuis la ligne de commande**
 
@@ -60,7 +60,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
-     - ou -
+     ou
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 

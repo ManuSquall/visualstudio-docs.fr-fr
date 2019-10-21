@@ -1,5 +1,5 @@
 ---
-title: 'CA1018 : Marquer les attributs avec AttributeUsageAttribute | Microsoft Docs'
+title: 'CA1018 : marquer les attributs avec AttributeUsageAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a8b7cea6ea74b336c862cfe44f90e3e1ec54b2c2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 404ef250726d12300e2b72150ff42b4f0b7bfb24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704229"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662050"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018 : Marquer les attributs avec AttributeUsageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ ms.locfileid: "65704229"
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le <xref:System.AttributeUsageAttribute?displayProperty=fullName> attribut n’est pas présent sur l’attribut personnalisé.
+ L’attribut <xref:System.AttributeUsageAttribute?displayProperty=fullName> n’est pas présent sur l’attribut personnalisé.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsque vous définissez un attribut personnalisé, marquez-le à l’aide de <xref:System.AttributeUsageAttribute> pour indiquer où l’attribut personnalisé peut être appliqué dans le code source. La signification et l'utilisation prévue d'un attribut déterminent ses emplacements valides au sein d'un code. Par exemple, vous pouvez définir un attribut qui identifie la personne qui est responsable de la gestion et l’amélioration de chaque type dans une bibliothèque, et que la responsabilité est toujours affectée au niveau du type. Dans ce cas, les compilateurs doivent activer l’attribut sur les classes, énumérations et interfaces, mais ne devraient pas l’activer sur les méthodes, événements ou propriétés. Les stratégies d’organisation et les procédures seraient déterminent si l’attribut doit être activé sur les assemblys.
+ Lorsque vous définissez un attribut personnalisé, marquez-le à l’aide de <xref:System.AttributeUsageAttribute> pour indiquer à quel endroit du code source l’attribut personnalisé peut être appliqué. La signification et l'utilisation prévue d'un attribut déterminent ses emplacements valides au sein d'un code. Par exemple, vous pouvez définir un attribut qui identifie la personne responsable de la maintenance et de l’amélioration de chaque type dans une bibliothèque, et cette responsabilité est toujours assignée au niveau du type. Dans ce cas, les compilateurs doivent activer l’attribut sur les classes, les énumérations et les interfaces, mais ne doivent pas l’activer sur des méthodes, des événements ou des propriétés. Les stratégies et les procédures de l’organisation déterminent si l’attribut doit être activé sur les assemblys.
 
- Le <xref:System.AttributeTargets?displayProperty=fullName> énumération définit les cibles que vous pouvez spécifier pour un attribut personnalisé. Si vous omettez <xref:System.AttributeUsageAttribute>, votre attribut personnalisé sera valide pour toutes les cibles, tel que défini par le `All` valeur <xref:System.AttributeTargets> énumération.
+ L’énumération <xref:System.AttributeTargets?displayProperty=fullName> définit les cibles que vous pouvez spécifier pour un attribut personnalisé. Si vous omettez <xref:System.AttributeUsageAttribute>, votre attribut personnalisé est valide pour toutes les cibles, comme défini par la valeur `All` de l’énumération <xref:System.AttributeTargets>.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, spécifiez des cibles pour l’attribut à l’aide de <xref:System.AttributeUsageAttribute>. Lisez l'exemple suivant.
@@ -47,13 +47,13 @@ ms.locfileid: "65704229"
  Vous devez corriger une violation de cette règle au lieu d’exclure le message. Même si l’attribut hérite <xref:System.AttributeUsageAttribute>, l’attribut doit être présent pour simplifier la maintenance du code.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute` omet le <xref:System.AttributeUsageAttribute> instruction, et `GoodCodeMaintainerAttribute` implémente correctement l’attribut qui est décrite plus haut dans cette section. Notez que la propriété `DeveloperName` est requis par la règle de conception [CA1019 : Définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est incluse par souci d’exhaustivité.
+ L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute` omet l’instruction <xref:System.AttributeUsageAttribute> de manière incorrecte et `GoodCodeMaintainerAttribute` implémente correctement l’attribut décrit précédemment dans cette section. Notez que la propriété `DeveloperName` est requise par la règle de conception [ca1019 : définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est inclus par exhaustivité.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1019 : Définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019 : Définissez des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
  [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
 

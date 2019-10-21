@@ -1,5 +1,5 @@
 ---
-title: Sélectionnez la Condition, boîte de dialogue (hérité) | Microsoft Docs
+title: Sélectionner une condition, boîte de dialogue (héritée) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,52 +10,45 @@ helpviewer_keywords:
 - Select Condition dialog box
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27dc8821e7ff59a8ad1ce893af1d343ab1c79ae9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007074"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663295"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser le **sélectionner la Condition** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Le **sélectionner la Condition** boîte de dialogue permet de sélectionner une condition de règle déclarative à assigner à la propriété de condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :  
-  
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
-  
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
-  
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
-  
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
-  
-  Pour plus d’informations sur l’accès à la **sélectionner la Condition** boîte de dialogue, consultez [Comment : Créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
-  
-  Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **sélectionner la Condition** boîte de dialogue.  
-  
-|Élément d'interface utilisateur|Description|  
-|----------------|-----------------|  
-|**Nouveau...**|Cliquez pour ouvrir le [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) pour créer une nouvelle condition de règle.|  
-|**Modifier...**|Cliquez pour ouvrir le [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) pour modifier la condition de règle sélectionnée.|  
-|**Renommer...**|Cliquez pour ouvrir une boîte de dialogue utilisée pour renommer la condition de règle sélectionnée.|  
-|**Supprimer**|Cliquez pour supprimer la condition de règle sélectionnée.|  
-|**Aperçu de la condition**|Affiche l'expression conditionnelle pour la condition de règle sélectionnée.|  
-|**OK**|Cliquez pour affecter la condition de règle sélectionnée à la condition de l'activité.|  
-  
- Pour plus d’informations sur la création et modification des conditions de règle, consultez [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
-  
- Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
-  
-## <a name="see-also"></a>Voir aussi  
- [Boîte de dialogue de l’éditeur de conditions de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)   
- [Guide pratique pour Créer une Condition de règle déclarative (hérité)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)   
- [Utilisation de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009)   
- [À l’aide de l’activité ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066)   
- [À l’aide de l’activité IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
- [À l’aide de l’activité ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080)   
- [À l’aide de l’activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Aide de l’interface utilisateur du concepteur hérité pour Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner une condition** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ La boîte de dialogue **Sélectionner une condition** permet de sélectionner une condition de règle déclarative à assigner à la propriété condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
+
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+
+  Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner la condition** , consultez [procédure : créer une condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+
+  Le tableau suivant décrit les éléments d’interface utilisateur (IU) de la boîte de dialogue **Sélectionner une condition** .
+
+|Élément d'interface utilisateur|Description|
+|----------------|-----------------|
+|**Nouveau...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) afin de créer une nouvelle condition de règle.|
+|**Modifier...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) pour modifier la condition de règle sélectionnée.|
+|**Renommer...**|Cliquez pour ouvrir une boîte de dialogue utilisée pour renommer la condition de règle sélectionnée.|
+|**Supprimer**|Cliquez pour supprimer la condition de règle sélectionnée.|
+|**Aperçu de la condition**|Affiche l'expression conditionnelle pour la condition de règle sélectionnée.|
+|**Bien**|Cliquez pour affecter la condition de règle sélectionnée à la condition de l'activité.|
+
+ Pour plus d’informations sur la création et la modification des conditions de règle, consultez [boîte de dialogue Éditeur de conditions de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
+
+ Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009).
+
+## <a name="see-also"></a>Voir aussi
+ [Éditeur de conditions de règle, boîte de dialogue (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) [Comment : créer une condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md) [à l’aide de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009) [à l’aide de l’activité ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65066) [à l’aide de l’activité IfElseBranchActivity ](http://go.microsoft.com/fwlink?LinkID=65075) [Utilisation de l’activité ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080) à l’aide de [l’activité WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091) [Designer Legacy Designer pour Windows Workflow Foundation aide de l’interface utilisateur](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

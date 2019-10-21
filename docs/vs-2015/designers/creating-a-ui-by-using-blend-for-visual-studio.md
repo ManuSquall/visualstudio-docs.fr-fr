@@ -1,5 +1,5 @@
 ---
-title: Création d'une interface utilisateur à l'aide de Blend
+title: Création d’une interface utilisateur à l’aide de Blend
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695935"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657989"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1-1.png "B1_1")|**Outils de sélection** Permet de sélectionner les objets et les tracés.<br /><br /> L’outil **Sélection directe** permet de sélectionner les objets imbriqués et les segments de tracé.|![Légende A](../designers/media/b5-label-a.png "b5_label_A")|**Outils Dégradé et Pinceau**|
-|![](../designers/media/b1-2.png "B1_2")|**Outils d’affichage** Permet d’ajuster la vue de la planche graphique, par exemple pour l’affichage panoramique et le zoom.|![Légende B](../designers/media/b5-label-b.png "b5_label_B")|**Outils de tracé**|
-|![](../designers/media/b1-3.png "B1_3")|**Outils Pinceau** Permet de manipuler les attributs visuels d’un objet, notamment de transformer un pinceau, peindre un objet ou sélectionner les attributs d’un objet pour les appliquer à un autre.|![Légende C](../designers/media/b5-label-c.png "b5_label_C")|**Outils Forme**|
-|![](../designers/media/b1-4.png "B1_4")|**Outils d’objet** Permet de dessiner les objets les plus courants sur la planche graphique, tels que les tracés, les formes, les panneaux de disposition, le texte et les contrôles.|![Légende D](../designers/media/b5-label-d.png "b5_label_D")|**Panneaux de disposition**|
-|![](../designers/media/b1-5.png "B1_5")|**Outils de composant** Donne accès au panneau **Composants** et affiche le dernier composant utilisé de la bibliothèque.|![Légende E](../designers/media/b5-label-e.png "b5_label_E")|**Contrôles de texte**|
-|||![Légende F](../designers/media/b5-label-f.png "b5_label_F")|**Contrôles courants**|
+|![](../designers/media/b1-1.png "B1_1")|**Outils de sélection** Permet de sélectionner les objets et les tracés.<br /><br /> L’outil **Sélection directe** permet de sélectionner les objets imbriqués et les segments de tracé.|![Légende A](../designers/media/b5-label-a.png "b5_label_A")|**Outils Dégradé et Pinceau**|
+|![](../designers/media/b1-2.png "B1_2")|**Outils d’affichage** Permet d’ajuster la vue de la planche graphique, par exemple pour l’affichage panoramique et le zoom.|![Légende B](../designers/media/b5-label-b.png "b5_label_B")|**Outils de tracé**|
+|![](../designers/media/b1-3.png "B1_3")|**Outils Pinceau** Permet de manipuler les attributs visuels d’un objet, notamment de transformer un pinceau, peindre un objet ou sélectionner les attributs d’un objet pour les appliquer à un autre.|![Légende C](../designers/media/b5-label-c.png "b5_label_C")|**Outils Forme**|
+|![](../designers/media/b1-4.png "B1_4")|**Outils d’objet** Permet de dessiner les objets les plus courants sur la planche graphique, tels que les tracés, les formes, les panneaux de disposition, le texte et les contrôles.|![Légende D](../designers/media/b5-label-d.png "b5_label_D")|**Panneaux de disposition**|
+|![](../designers/media/b1-5.png "B1_5")|**Outils de composant** Donne accès au panneau **Composants** et affiche le dernier composant utilisé de la bibliothèque.|![Légende E](../designers/media/b5-label-e.png "b5_label_E")|**Contrôles de texte**|
+|||![Légende F](../designers/media/b5-label-f.png "b5_label_F")|**Contrôles courants**|
 
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [la barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [La barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="Assets"></a> Présentation du panneau Composants
  Tous les contrôles se trouvent dans le panneau **Composants**, à l’image de la **boîte à outils** de Visual Studio. Outre les contrôles, vous y trouverez tout ce que vous pouvez ajouter à la planche graphique dans le panneau **Composants**, notamment des styles, des médias, des comportements et des effets.
 
- ![Panneau Composants](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Panneau composants](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
 |||
 |-|-|
@@ -72,7 +72,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 ## <a name="Objects"></a> Présentation du panneau Objets et chronologie
  Ce panneau permet de disposer les objets sur la planche graphique et éventuellement de les animer.
 
- ![Panneau Objets et chronologie en mode animation](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Panneau objet et chronologie en mode animation](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -91,14 +91,14 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |![](../designers/media/b1-13.png "B1_13")|**Images clés définies sur les chronologies** Permet de modifier une valeur de propriété à un moment précis dans le temps.|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**Modifier l’ordre des objets** Permet de définir l’ordre d’affichage des objets. Cliquez sur ce bouton pour organiser les objets dans la vue de structure selon l’ordre de plan (de l’avant vers l’arrière) ou l’ordre des balises (ordre dans lequel elles sont affichées dans la vue **XAML**).|
 |![](../designers/media/b1-15.png "B1_15")|**Zoom de la chronologie** Permet de définir la résolution du zoom de la chronologie. Un zoom avant permet de modifier une animation avec plus de détails, alors qu'un zoom arrière donne un plus large aperçu de ce qu'il se passe sur une période plus longue. Si vous faites un zoom avant, mais que vous ne pouvez pas définir d’image clé à un moment précis dans le temps, vérifiez que la résolution d’alignement définie est suffisamment élevée.|
-|![Légende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zone de composition de la chronologie** Permet d’afficher la chronologie et de déplacer des images clés en les faisant glisser ou via leurs menus contextuels.|
+|![Légende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zone de composition de la chronologie** Permet d’afficher la chronologie et de déplacer des images clés en les faisant glisser ou via leurs menus contextuels.|
 
 ## <a name="Properties"></a> Présentation du panneau Propriétés
  Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous pouvez aussi les définir directement sur la planche graphique. Dans ce cas, les modifications apportées aux propriétés sont répercutées dans le panneau **Propriétés**.
 
  ![Panneau Propriétés](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Catégories** Permet de développer et de réduire les catégories de propriétés. Cliquez sur **Développer** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") et **Réduire** ![Réduire](../designers/media/b5-collapse-button.png "b5_collapse_button") pour afficher ou masquer les détails de catégorie.
+ **Catégories** Permet de développer et de réduire les catégories de propriétés. Cliquez sur **développer** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") et **réduire** ![réduire](../designers/media/b5-collapse-button.png "b5_collapse_button") pour afficher ou masquer les détails de catégorie.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,10 +117,10 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
 |                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **Canal alpha** Modifiez la valeur alpha à l’aide de l’éditeur de nombres en regard de **A**.                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **Convertir la couleur en ressource** Permet de convertir la couleur sélectionnée en ressource de couleur. Les ressources de couleur sont disponibles quand vous cliquez sur l'onglet Ressources de couleur.                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **Valeur hexadécimale** Affiche la valeur hexadécimale de la couleur affichée.                                                                                 |
-|                     ![Légende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Curseur de dégradé** S’affiche uniquement si un pinceau de dégradé est sélectionné.                                                                                 |
+|                     ![Légende 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Curseur de dégradé** S’affiche uniquement si un pinceau de dégradé est sélectionné.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Afficher les propriétés avancées** Affiche les catégories de propriétés moins fréquemment utilisées.                                                                      |
 
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panneau Propriétés](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Panneau Propriétés](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Voir aussi
- [Insérer des contrôles et modifier leur comportement](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animer des objets](../designers/animate-objects-in-xaml-designer.md) [dessiner des formes et des tracés](../designers/draw-shapes-and-paths.md) [XAML de conception dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+ [Insérer des contrôles et modifier leur comportement](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animer des objets](../designers/animate-objects-in-xaml-designer.md) [dessiner des formes et des tracés](../designers/draw-shapes-and-paths.md) [conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md)

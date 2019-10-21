@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des éditions de Visual Studio pour Visualization and Modeling SDK | Microsoft Docs
+title: Éditions de Visual Studio prises en charge pour la visualisation et la modélisation SDK | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696865"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672372"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Éditions de Visual Studio prises en charge pour la visualisation &amp; SDK de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les éléments suivants sont des listes d’éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../includes/dsl-md.md)] dans les environnements de création et de déploiement. Pour plus d’informations sur ces éditions, consultez le Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).
+Les listes suivantes répertorient les éditions de Visual Studio prises en charge avec [!INCLUDE[dsl](../includes/dsl-md.md)] dans les environnements de création et de déploiement. Pour plus d’informations sur ces éditions, consultez le [Centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628)Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="authoring-edition"></a>Édition de création
  Pour définir un DSL, vous devez avoir installé les composants suivants :
@@ -39,12 +39,12 @@ Les éléments suivants sont des listes d’éditions de Visual Studio qui sont 
 
 - Visual Studio Professional
 
-- Package redistribuable Visual Studio Shell (mode intégré) redistributable package
+- Package redistribuable du package redistribuable du shell Visual Studio (mode intégré)
 
 - Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
 
 > [!NOTE]
-> Pour rendre un DSL puisse s’exécuter sur un produit Shell, vous devez définir le **pris en charge les éditions de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+> Pour qu’un DSL puisse s’exécuter sur un produit de l’interpréteur de commandes, vous devez définir le champ de l' **édition vs pris en charge** dans le manifeste de l’extension. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Voir aussi
  [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783431"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653096"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -75,15 +75,15 @@ Visual Studio Lab Management permet de créer deux types d’environnements lab�
 
 **Environnements SCVMM** : ils peuvent contenir seulement des machines virtuelles gérées par SCVMM. Les machines virtuelles des environnements SCVMM peuvent donc s’exécuter seulement dans un framework de virtualisation Hyper-V. Toutefois, les environnements SCVMM fournissent des fonctionnalités d’automatisation et de gestion qui ne sont pas proposées par les environnements standard, notamment :
 
-- **Instantanés d’environnement :** ils contiennent l’état d’un environnement lab, ce qui vous permet de restaurer rapidement un environnement propre ou d’enregistrer l’état d’un environnement ayant été modifié. Vous pouvez également utiliser le flux de travail Création-Déploiement-Test pour automatiser le processus d'enregistrement et de restauration des instantanés d'environnement.
+- **Instantanés d’environnement** : ils contiennent l’état d’un environnement lab, ce qui vous permet de restaurer rapidement un environnement propre ou d’enregistrer l’état d’un environnement qui a subi des modifications. Vous pouvez également utiliser le flux de travail Création-Déploiement-Test pour automatiser le processus d'enregistrement et de restauration des instantanés d'environnement.
 
-- **Environnements stockés :** vous pouvez stocker une copie d’un environnement SCVMM, puis déployer plusieurs copies de cet environnement.
+- **Environnements stockés** : vous pouvez stocker une copie d’un environnement SCVMM, puis déployer plusieurs copies de cet environnement.
 
-- **Isolement réseau :** l’isolement réseau vous permet d’exécuter simultanément plusieurs copies identiques d’un environnement SCVMM sans conflits de noms d’ordinateurs.
+- **Isolement réseau** : l’isolement réseau vous permet d’exécuter simultanément plusieurs copies identiques d’un environnement SCVMM sans conflits de noms d’ordinateurs.
 
-- **Modèles de machine virtuelle :** un modèle de machine virtuelle est une machine virtuelle dont le nom et les autres identificateurs ont été supprimés. Quand un modèle de machine virtuelle est déployé dans un environnement SCVMM, Microsoft Test Manager génère de nouveaux identificateurs. Cela vous permet de déployer plusieurs copies d'un ordinateur virtuel au sein d'un même environnement ou de plusieurs environnements, et d'exécuter simultanément les ordinateurs virtuels.
+- **Modèles de machines virtuelles** : un modèle de machine virtuelle est une machine virtuelle dont le nom et les autres identificateurs ont été supprimés. Quand un modèle de machine virtuelle est déployé dans un environnement SCVMM, Microsoft Test Manager génère de nouveaux identificateurs. Cela vous permet de déployer plusieurs copies d'un ordinateur virtuel au sein d'un même environnement ou de plusieurs environnements, et d'exécuter simultanément les ordinateurs virtuels.
 
-- **Machines virtuelles stockées :** il s’agit de machines virtuelles stockées dans votre bibliothèque de projet et qui ont des identificateurs uniques.
+- **Machines virtuelles stockées** : il s’agit de machines virtuelles qui sont stockées dans votre bibliothèque de projet et qui ont des identificateurs uniques.
 
 > [!NOTE]
 > Lab Management ne prend pas en charge SCVMM 2016.

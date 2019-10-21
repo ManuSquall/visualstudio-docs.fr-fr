@@ -8,31 +8,31 @@ helpviewer_keywords:
 - text templates, security
 ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e24a90d4e7af351fc4ba5807d2af7830edede9cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68202691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671214"
 ---
 # <a name="security-of-text-templates"></a>Sécurité des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Modèles de texte ont des problèmes de sécurité suivants :  
-  
-- Modèles de texte sont vulnérables aux insertions de code arbitraire.  
-  
-- Si le mécanisme que l’hôte utilise pour rechercher un processeur de directive n’est pas sécurisé, un processeur de directive malveillant peut être exécuté.  
-  
-## <a name="arbitrary-code"></a>Code arbitraire  
- Lorsque vous écrivez un modèle, vous pouvez placer n’importe quel code dans le \<## > balises. Cela permet à du code arbitraire à être exécutée à partir d’un modèle de texte.  
-  
- Veillez à que vous procurer des modèles à partir de sources approuvées. Veillez à avertir les utilisateurs finaux de votre application d’exécuter les modèles qui ne proviennent pas de sources approuvées.  
-  
-## <a name="malicious-directive-processor"></a>Processeur de Directive malveillant  
- Le moteur de modèle de texte interagit avec un hôte de transformation et un ou plusieurs processeurs de directive pour transformer le texte du modèle dans un fichier de sortie. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).  
-  
- Si le mécanisme que l’hôte utilise pour rechercher un processeur de directive n’est pas sécurisé, elle s’exécute le risque d’exécution d’un processeur de directive malveillant. Le processeur de directive malveillant peut fournir du code qui est exécuté dans `FullTrust` mode lorsque le modèle est exécuté. Si vous créez un hôte de transformation de modèle de texte personnalisé, vous devez utiliser un mécanisme sécurisé, par exemple le Registre, le moteur de localiser des processeurs de directive.
+Les modèles de texte présentent les problèmes de sécurité suivants :
+
+- Les modèles de texte sont vulnérables aux insertions de code arbitraires.
+
+- Si le mécanisme utilisé par l’hôte pour rechercher un processeur de directive n’est pas sécurisé, un processeur de directive malveillant peut être exécuté.
+
+## <a name="arbitrary-code"></a>Code arbitraire
+ Lorsque vous écrivez un modèle, vous pouvez placer n’importe quel code dans les balises \< # # >. Cela permet d’exécuter du code arbitraire à partir d’un modèle de texte.
+
+ Veillez à obtenir des modèles à partir de sources approuvées. Veillez à prévenir les utilisateurs finaux de votre application de ne pas exécuter les modèles qui ne proviennent pas de sources approuvées.
+
+## <a name="malicious-directive-processor"></a>Processeur de directive malveillant
+ Le moteur de modèle de texte interagit avec un hôte de transformation et un ou plusieurs processeurs de directive pour transformer le texte du modèle en fichier de sortie. Pour plus d’informations, consultez [processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
+
+ Si le mécanisme utilisé par l’hôte pour rechercher un processeur de directive n’est pas sécurisé, il risque d’exécuter un processeur de directive malveillant. Le processeur de directive malveillant peut fournir du code qui est exécuté en mode `FullTrust` lors de l’exécution du modèle. Si vous créez un hôte de transformation de modèle de texte personnalisé, vous devez utiliser un mécanisme sécurisé, tel que le registre, pour que le moteur localise les processeurs de directive.

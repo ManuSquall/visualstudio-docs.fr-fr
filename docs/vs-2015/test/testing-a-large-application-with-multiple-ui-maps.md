@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871580"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672127"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.
 
- **Spécifications**
+ **Prérequis**
 
 - Visual Studio Enterprise
 
-  Lorsque vous créez un test codé de l’interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , l’infrastructure de test génère du code pour le test par défaut dans une classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
+  Lorsque vous créez un test codé de l’interface utilisateur, l’infrastructure de test [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère du code pour le test par défaut dans une classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
   Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
 

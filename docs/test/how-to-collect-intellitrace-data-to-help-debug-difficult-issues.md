@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979313"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664819"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procédure : collecter des données IntelliTrace permettant de déboguer des problèmes difficiles
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
 Vous pouvez configurer l’adaptateur de données de diagnostic pour IntelliTrace pour collecter des informations de trace de diagnostic spécifiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
 
@@ -71,34 +71,34 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
     > [!WARNING]
     > Si vous activez la collecte de données IntelliTrace, la collecte des données de couverture du code ne fonctionnera pas.
 
-5. Choisissez l’onglet **Général**. Sélectionnez **Événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qu ont un impact minimal sur les performances lors de vos tests.
+5. Choisissez l’onglet **général** . Sélectionnez **événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qui ont un impact minimal sur les performances lorsque vous testez.
 
-     - ou -
+     ou
 
      Sélectionnez **Événements IntelliTrace et informations d’appels** pour enregistrer des événements de diagnostic et le traçage au niveau de la méthode affichant des informations sur les appels. Ce niveau de traçage peut avoir un impact sur les performances lorsque vous exécutez vos tests.
 
 6. Pour collecter des données à partir de votre application ASP.NET qui s’exécute sur Internet Information Services, sélectionnez **Collecter des données à partir d’une application ASP.NET exécutée sur Internet Information Services**. Installez et configurez votre agent de test sur le rôle serveur web. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-7. Choisissez l’onglet **Modules**. Sélectionnez **Collecter les données de tous les modules à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
+7. Choisissez l’onglet **modules** . Sélectionnez **collecter les données de tous les modules à l’exception des suivants** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     - ou -
+     ou
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
     > [!NOTE]
     > Si possible, sélectionnez les processus spécifiques que vous souhaitez surveiller. Cela est recommandé pour une performance optimale.
 
-8. Choisissez l’onglet **Processus**. Sélectionnez **Collecter les données de tous les processus à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
+8. Choisissez l’onglet **processus** . Sélectionnez **collecter les données de tous les processus à l’exception des éléments suivants** et utilisez **Ajouter** pour ajouter à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     - ou -
+     ou
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 
-9. (Facultatif) Choisissez l’onglet **Événements IntelliTrace**. Activez ou désactivez chaque catégorie d’événement IntelliTrace à inclure ou exclure lorsque vous collectez des événements de diagnostic.
+9. Facultatif Choisissez l’onglet **événements IntelliTrace** . Sélectionnez ou désactivez chaque catégorie d’événement IntelliTrace que vous souhaitez inclure ou exclure lorsque vous collectez des événements de diagnostic.
 
 10. (Facultatif) Développez chaque catégorie d'événement IntelliTrace et activez ou désactivez chaque événement spécifique à inclure ou exclure dans les événements IntelliTrace.
 
-11. (Facultatif) Choisissez l’onglet **Avancé**. Ensuite, cliquez sur la flèche à côté de **Quantité maximale d’espace disque pour chaque enregistrement** et sélectionnez l’espace maximal que le fichier IntelliTrace doit utiliser.
+11. Facultatif Choisissez l’onglet **avancé** . Ensuite, cliquez sur la flèche en regard de **quantité maximale d’espace disque pour l’enregistrement** , puis sélectionnez la taille maximale que vous souhaitez activer pour le fichier IntelliTrace à utiliser.
 
     > [!NOTE]
     > Si vous augmentez la taille de l'enregistrement, un problème de délai d'expiration peut se produire lorsque vous enregistrez cet enregistrement avec vos résultats de test.

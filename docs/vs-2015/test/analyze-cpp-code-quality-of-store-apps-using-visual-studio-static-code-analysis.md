@@ -1,5 +1,5 @@
 ---
-title: C++applications de Store d’analyse statique du code
+title: C++applications du magasin d’analyse du code statique
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686532"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672707"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
@@ -41,12 +41,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.
 
-   ![Fenêtre d’analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Fenêtre analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
  Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème. Quand cela est possible, l'analyse du code affiche le numéro de la ligne et la logique de l'analyse qui a conduit à l'avertissement.
 
- ![Avertissements liés à l’analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Avertissement de l’analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Quand vous développez un avertissement, les lignes de code à l’origine de l’avertissement sont mises en surbrillance dans l’éditeur de Visual Studio Code.
 
@@ -73,7 +73,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ## <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
  Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
- ![Explorer et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Rechercher et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
 ## <a name="Warnings"></a> Avertissements de l’analyse du code C++
  L'analyse du code génère les avertissements suivants pour le code C++ :
@@ -132,7 +132,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Paramètre de chaîne de taille non valide                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Chaîne de taille non valide. Emplacement inaccessible                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Type de tampon de chaîne de taille non valide                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Style de chaîne de format non reconnu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Spécification de taille non valide : expression impossible à analyser                              |
@@ -158,7 +158,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                      [C28215](../code-quality/c28215.md)                       |                    Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier             |
-|                      [C28218](../code-quality/c28218.md)                       |             Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier              |
+|                      [C28218](../code-quality/c28218.md)                       |             Pour le paramètre de fonction, le paramètre de l’annotation ne correspond pas à celui trouvé dans le fichier              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Expression d'entier attendue pour une annotation, le paramètre dans l'annotation                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Expression de chaîne attendue pour le paramètre dans l'annotation                         |
@@ -203,7 +203,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |                      [C28286](../code-quality/c28286.md)                       |                                    Pour la fonction, erreur de syntaxe près de la fin                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre                |
+|                      [C28289](../code-quality/c28289.md)                       |                Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre                |
 |                      [C28290](../code-quality/c28290.md)                       |           l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres            |
 |                      [C28291](../code-quality/c28291.md)                       |                        post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Opérandes d’expression de types incompatibles pour l’opérateur                             |

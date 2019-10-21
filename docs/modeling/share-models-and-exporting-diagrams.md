@@ -5,34 +5,34 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e1b958b9226a0a8ded0f886af81efc3b1b5aaf9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670733"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Partager des modèles et exporter des diagrammes
 Dans Visual Studio, vous pouvez partager des modèles et des diagrammes avec vos collègues de plusieurs façons.
 
- Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Travail en équipe sur un modèle
- Les utilisateurs de Visual Studio peuvent créer et modifier des diagrammes de dépendance, des modèles et des graphiques orientés.
+ Les utilisateurs de Visual Studio peuvent créer et modifier des modèles, des diagrammes de dépendance et des graphiques orientés.
 
- Différents utilisateurs peuvent travailler simultanément sur un modèle, mais il doivent fonctionner sur les différents packages.
+ Différents utilisateurs peuvent travailler en même temps sur un modèle, mais ils doivent fonctionner sur des packages différents.
 
- Pour obtenir des suggestions sur l’organisation des modèles dans un projet de moyenne ou grande taille, consultez [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md).
+ Pour obtenir des suggestions sur l’Organisation des modèles dans un projet de taille moyenne ou grande, consultez [structure Your Modeling solution](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Lecture et examen de modèles
- Membres de l’équipe à l’aide de certaines versions de Visual Studio (qui ne peut pas créer de modèles) peuvent lire des modèles, modéliser les diagrammes et graphiques orientés, mais ne peut pas les modifier.  Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Les membres de l’équipe qui utilisent certaines versions de Visual Studio (qui ne peuvent pas créer de modèles) peuvent lire des modèles, modéliser des diagrammes et des graphiques orientés, mais ils ne peuvent pas les modifier.  Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Un diagramme de dépendances peut être ouvert uniquement dans le modèle dans lequel il a été créé. Pour fournir l'accès à un diagramme, vous devez donc fournir l'accès à tous les fichiers de projets de modélisation ou à des copies de ces fichiers.
+ Un diagramme de dépendance ne peut être ouvert qu’à l’intérieur du modèle dans lequel il a été créé. Pour fournir l'accès à un diagramme, vous devez donc fournir l'accès à tous les fichiers de projets de modélisation ou à des copies de ces fichiers.
 
  Pour plus d’informations, consultez [lire des modèles et des diagrammes dans d’autres éditions de Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 

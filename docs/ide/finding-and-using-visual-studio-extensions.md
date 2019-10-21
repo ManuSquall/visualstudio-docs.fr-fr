@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f86aa6cf99ae910c9b10bc6e93c408ca2c85265
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150100"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654213"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gérer les extensions pour Visual Studio
 
@@ -65,7 +65,7 @@ Si vous essayez d'installer une extension qui a des dépendances, le programme d
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installer sans utiliser la boîte de dialogue Extensions et mises à jour
 
-Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Outils** > **et mises à jour** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l'extension est installée, utilisez la boîte de dialogue **Extensions et mises à jour** pour l'activer, la désactiver ou la désinstaller.
+Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **outils**  > **extensions et mises à jour** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l'extension est installée, utilisez la boîte de dialogue **Extensions et mises à jour** pour l'activer, la désactiver ou la désinstaller.
 
 > [!NOTE]
 > - Visual Studio Marketplace contient des extensions VSIX et MSI. La boîte de dialogue extensions et mises à jour ne peut pas activer ou désactiver les extensions MSI.
@@ -89,7 +89,7 @@ Si vous essayez d'installer une extension qui a des dépendances, le programme d
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installer sans utiliser la boîte de dialogue Gérer les extensions
 
-Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **Extensions** > de**gestion** des extensions ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
+Les extensions empaquetées dans des fichiers *.vsix* peuvent être disponibles à d’autres emplacements que Visual Studio Marketplace. La boîte de dialogue **extensions**  > **gérer les extensions** ne peut pas détecter ces fichiers, mais vous pouvez installer un fichier *. vsix* en double-cliquant sur le fichier ou en sélectionnant le fichier et en appuyant sur **entrée**. Après cela, suivez les instructions. Lorsque l’extension est installée, utilisez la boîte de dialogue **Gérer les extensions** pour l’activer, la désactiver ou la désinstaller.
 
 > [!NOTE]
 > - Visual Studio Marketplace contient des extensions VSIX et MSI. La boîte de dialogue gérer les extensions ne peut pas activer ou désactiver les extensions MSI.
@@ -106,13 +106,13 @@ Si vous souhaitez cesser d'utiliser une extension, vous pouvez la désactiver ou
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensions par utilisateur et d’administration
 
-La plupart des extensions sont par utilisateur et sont installées dans le dossier *%LocalAppData%\Microsoft\VisualStudio\\<\>Visual\\ Studio version \Extensions* . Quelques-unes des extensions sont des extensions d’administration et sont installées dans le dossier *\<dossier d’installation de Visual Studio>\Common7\IDE\Extensions\\* .
+La plupart des extensions sont par utilisateur et sont installées dans le dossier *%LocalAppData%\Microsoft\VisualStudio \\ < Visual Studio version \> \extensions \\* . Quelques-unes des extensions sont des extensions d’administration et sont installées dans le dossier *\<dossier d’installation de Visual Studio>\Common7\IDE\Extensions\\* .
 
 Pour protéger votre système contre les extensions pouvant contenir des erreurs ou du code malveillant, vous pouvez limiter le chargement des extensions par utilisateur aux cas où Visual Studio est exécuté avec des autorisations d'utilisateur normales. Cela signifie que les extensions par utilisateur sont désactivées lorsque Visual Studio est exécuté avec des autorisations élevées.
 
 Pour limiter le chargement des extensions par utilisateur :
 
-1. Ouvrez la page Options des extensions (**Outils** > **options** > **environnement** > **Extensions**).
+1. Ouvrez la page Options des extensions (**outils**  > **options**  >   > **Extensions**de l'**environnement** ).
 
 2. Désactivez la case à cocher **charger les extensions par utilisateur lors de l’exécution en tant qu’administrateur** .
 

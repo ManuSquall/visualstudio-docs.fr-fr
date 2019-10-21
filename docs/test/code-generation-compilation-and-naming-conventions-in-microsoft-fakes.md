@@ -1,24 +1,24 @@
 ---
-title: 'Microsoft Fakes : Générer et compiler le code ; conventions d’affectation de noms'
+title: 'Substituts Microsoft : générer & code de compilation ; conventions d’affectation des noms'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918465"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665253"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
 Cet article traite des options et des problèmes dans la génération et la compilation de code Fakes, et décrit les conventions de nommage pour les types, les membres et les paramètres Fakes générés.
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -102,7 +102,7 @@ Par défaut, les types stub sont générés pour toutes les classes non-sealed. 
 
 ### <a name="internal-types"></a>Types internes
 
-Le générateur de code Fakes génère des types shim et stub pour les types qui sont visibles pour l’assembly Fakes généré. Pour que les types internes d'un assembly ayant fait l'objet d'un shim soient visibles pour l'assembly Fakes et votre assembly de test, ajoutez les attributs <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> au code de l'assembly ayant fait l'objet d'un shim qui donne de la visibilité à l'assembly Fakes généré et à l'assembly de test. Voici un exemple :
+Le générateur de code Fakes génère des types shim et stub pour les types qui sont visibles pour l’assembly Fakes généré. Pour que les types internes d'un assembly ayant fait l'objet d'un shim soient visibles pour l'assembly Fakes et votre assembly de test, ajoutez les attributs <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> au code de l'assembly ayant fait l'objet d'un shim qui donne de la visibilité à l'assembly Fakes généré et à l'assembly de test. Voici un exemple :
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -134,7 +134,7 @@ Le framework Fakes utilise la même clé pour signer tous les assemblys génér�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier *.snk* qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier *.fakes*. Par exemple :
+Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier *.snk* qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier *.fakes*. Exemple :
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -233,7 +233,7 @@ attribute of the Assembly element in the .fakes:
 
   Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
 
-|Si la méthode est...|Exemples|Nom de la méthode ajoutée|
+|Si la méthode est...|Exemple|Nom de la méthode ajoutée|
 |-|-|-|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|
