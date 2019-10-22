@@ -1,34 +1,34 @@
 ---
-title: Ajouter des nœuds à l’espace de travail à partir de la vue de départ dans le Concepteur de schémas XML
+title: Ajouter des nœuds à l’espace de travail à partir de la vue de départ dans le concepteur de schémas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a62b2225eec77b2b7e2a9f00af0ff5492640c19
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: e6f1471f03dac54b484e37b2319e15380055661e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432181"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646014"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procédure : Ajouter des nœuds à l’espace de travail à partir de la vue de départ
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Comment : ajouter des nœuds à l’espace de travail à partir de la vue de départ
 
-Cette rubrique décrit comment ajouter des nœuds globaux à le [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de la [vue de départ](../xml-tools/start-view.md).
+Cette rubrique explique comment ajouter des nœuds globaux à l' [espace de travail du concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md) à partir de la [vue de départ](../xml-tools/start-view.md).
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Pour ajouter des nœuds à l'espace de travail à partir de la vue de départ
 
-1. Suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Suivez les étapes décrites dans [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Avec le bouton droit dans l’éditeur XML et sélectionnez **Concepteur de vues**.
+2. Cliquez avec le bouton droit dans l’éditeur XML et sélectionnez **Concepteur de vues**.
 
      La vue de départ apparaît.
 
-     Dans le **détails du jeu de schéma** section, vous remarquerez qu’il existe deux (**2**) **Types complexes globaux**.
+     Dans la section **Détails du jeu de schémas** , Notez qu’il existe deux (**2**) **types complexes globaux**.
 
-3. Cliquez sur le **ajouter** lien à droite de la **Types complexes globaux** titre.
+3. Cliquez sur le lien **Ajouter** à droite de l’en-tête **types complexes globaux** .
 
      Les nœuds de type complexe `USAddress` et `PurchaseOrderType` apparaissent sur l'aire de conception de la vue du graphique.

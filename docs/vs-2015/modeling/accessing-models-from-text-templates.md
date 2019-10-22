@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e9eba4a919f159462080688c64ed765d3c1fec86
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d1dd414067e64552911c795da4d42cab20ce4d13
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871983"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655339"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,15 +24,15 @@ ms.locfileid: "68871983"
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, des fichiers de code source et d’autres fichiers texte basés sur des modèles de langage spécifique à un domaine. Pour obtenir des informations de base sur les modèles de texte, consultez [génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental quand vous déboguez votre DSL, et ils fonctionnent également sur un ordinateur sur lequel vous avez déployé le DSL.
 
 > [!NOTE]
-> Lorsque vous créez une solution DSL, des exemples de  **\*** fichiers de modèle de texte. TT sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionneront plus. Néanmoins, elles incluent les directives de base dont vous avez besoin, et fournissent des exemples que vous pouvez mettre à jour pour qu’ils correspondent à votre DSL.
+> Lorsque vous créez une solution DSL, les fichiers d’exemple de modèle de texte **\*. TT** sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionneront plus. Néanmoins, elles incluent les directives de base dont vous avez besoin, et fournissent des exemples que vous pouvez mettre à jour pour qu’ils correspondent à votre DSL.
 
- Pour accéder à un modèle à partir d’un modèle de texte:
+ Pour accéder à un modèle à partir d’un modèle de texte :
 
 - Affectez à la propriété inherit de la directive template la valeur [ModelingTextTransformation](/previous-versions/bb893209(v=vs.140)). Cela permet d’accéder au magasin.
 
 - Spécifiez les processeurs de directive pour le DSL auquel vous souhaitez accéder. Cela charge les assemblys de votre DSL afin que vous puissiez utiliser ses classes de domaine, leurs propriétés et leurs relations dans le code de votre modèle de texte. Il charge également le fichier de modèle que vous spécifiez.
 
-  Un `.tt` fichier similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez une nouvelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à partir du modèle de langue minimale DSL.
+  Un fichier de `.tt` similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez une nouvelle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution à partir du modèle de langage minimal DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -55,17 +55,17 @@ Here is a list of elements in the model:
 
 ```
 
- Notez les points suivants sur ce modèle:
+ Notez les points suivants sur ce modèle :
 
 - Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez définies dans la définition DSL.
 
-- Le modèle charge le fichier de modèle que vous spécifiez `requires` dans la propriété.
+- Le modèle charge le fichier de modèle que vous spécifiez dans la propriété `requires`.
 
 - Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à celui de la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.
 
-- Bien que le langage dans lequel les fragments de code sont C#écrits est, vous pouvez générer du texte de n’importe quel type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
+- Bien que le langage dans lequel les fragments de code sont C#écrits est, vous pouvez générer du texte de n’importe quel type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en ajoutant la propriété `language="VB"` à la directive `template`.
 
-- Pour déboguer le modèle `debug="true"` , ajoutez `template` à la directive. Le modèle s’ouvre dans une autre instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de si une exception se produit. Si vous souhaitez vous arrêter dans le débogueur à un point spécifique dans le code, insérez l’instruction`System.Diagnostics.Debugger.Break();`
+- Pour déboguer le modèle, ajoutez `debug="true"` à la directive `template`. Le modèle s’ouvre dans une autre instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si une exception se produit. Si vous souhaitez vous arrêter dans le débogueur à un point spécifique dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`
 
      Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -76,13 +76,13 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- Le nom de la directive ( `MyLanguage`, dans cet exemple) est dérivé du nom de votre DSL. Il appelle un *processeur de directive* qui est généré dans le cadre de votre DSL. Vous pouvez trouver son code source dans **Dsl\GeneratedCode\DirectiveProcessor.cs**.
+ Le nom de la directive (`MyLanguage`, dans cet exemple) est dérivé du nom de votre DSL. Il appelle un *processeur de directive* qui est généré dans le cadre de votre DSL. Vous pouvez trouver son code source dans **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
- Le processeur de directive DSL effectue deux tâches principales:
+ Le processeur de directive DSL effectue deux tâches principales :
 
 - Il insère efficacement des directives d’assembly et d’importation dans le modèle qui fait référence à votre DSL. Cela vous permet d’utiliser vos classes de domaine dans le code du modèle.
 
-- Il charge le fichier que vous spécifiez dans `requires` le paramètre et définit une propriété dans `this` qui fait référence à l’élément racine du modèle chargé.
+- Il charge le fichier que vous spécifiez dans le paramètre `requires` et définit une propriété dans `this` qui fait référence à l’élément racine du modèle chargé.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validation du modèle avant l’exécution du modèle
  Vous pouvez forcer la validation du modèle avant l’exécution du modèle.
@@ -94,7 +94,7 @@ Here is a list of elements in the model:
 
  Notez que :
 
-1. Les `filename` paramètres `validation` et sont séparés par des «;» et il ne doit pas y avoir d’autres séparateurs ou espaces.
+1. Les paramètres `filename` et `validation` sont séparés par « ; » et il ne doit pas y avoir d’autres séparateurs ou espaces.
 
 2. La liste des catégories de validation détermine les méthodes de validation qui seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit pas y avoir d’autres séparateurs ou espaces.
 
@@ -105,7 +105,7 @@ Here is a list of elements in the model:
 > [!NOTE]
 > Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire les modèles qui sont liés par des références ModelBus, consultez [utilisation de Visual Studio Modelbus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Si vous souhaitez accéder à plusieurs modèles à partir du même modèle de texte, vous devez appeler le processeur de directive généré une fois pour chaque modèle. Vous devez spécifier le nom de fichier de chaque modèle dans `requires` le paramètre. Vous devez spécifier les noms que vous souhaitez utiliser pour la classe de domaine racine dans le `provides` paramètre. Vous devez spécifier des valeurs différentes pour `provides` les paramètres dans chaque appel de directive. Par exemple, supposons que vous avez trois fichiers de modèle appelés Library. xyz, School. xyz et Work. xyz. Pour y accéder à partir du même modèle de texte, vous devez écrire trois appels de directive qui ressemblent à ceux qui suivent.
+ Si vous souhaitez accéder à plusieurs modèles à partir du même modèle de texte, vous devez appeler le processeur de directive généré une fois pour chaque modèle. Vous devez spécifier le nom de fichier de chaque modèle dans le paramètre `requires`. Vous devez spécifier les noms que vous souhaitez utiliser pour la classe de domaine racine dans le paramètre `provides`. Vous devez spécifier des valeurs différentes pour les paramètres de `provides` dans chaque appel de directive. Par exemple, supposons que vous avez trois fichiers de modèle appelés Library. xyz, School. xyz et Work. xyz. Pour y accéder à partir du même modèle de texte, vous devez écrire trois appels de directive qui ressemblent à ceux qui suivent.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -143,19 +143,19 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Chargement dynamique des modèles
  Si vous souhaitez déterminer au moment de l’exécution les modèles à charger, vous pouvez charger un fichier de modèle dynamiquement dans le code de votre programme, au lieu d’utiliser la directive spécifique à DSL.
 
- Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous  **\<** devez ajouter des > d’assembly et  **\<importer** des directives > pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
+ Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous devez ajouter des directives de > **> \<assembly** et **\<import** pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
 
- Pour charger le fichier, la méthode la plus efficace consiste à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliser ModelBus. Dans un scénario classique, votre modèle de texte utilisera une directive DSL spécifique pour charger le premier modèle de la manière habituelle. Ce modèle contient des références ModelBus à un autre modèle. Vous pouvez utiliser ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Pour charger le fichier, la méthode la plus efficace consiste à utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus. Dans un scénario classique, votre modèle de texte utilisera une directive DSL spécifique pour charger le premier modèle de la manière habituelle. Ce modèle contient des références ModelBus à un autre modèle. Vous pouvez utiliser ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [utilisation de Visual Studio Modelbus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Dans un scénario moins habituel, vous souhaiterez peut-être ouvrir un fichier de modèle pour lequel vous disposez uniquement d’un nom de fichier et qui ne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] figure peut-être pas dans le projet actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique [décrite dans How to: Ouvrez un modèle à partir d’un fichier](../modeling/how-to-open-a-model-from-file-in-program-code.md)dans le code de programme.
+ Dans un scénario moins habituel, vous souhaiterez peut-être ouvrir un fichier de modèle pour lequel vous disposez uniquement d’un nom de fichier et qui ne se trouve pas dans le projet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique décrite dans [Comment : ouvrir un modèle à partir d’un fichier dans le code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Génération de plusieurs fichiers à partir d’un modèle
  Si vous souhaitez générer plusieurs fichiers (par exemple, pour générer un fichier distinct pour chaque élément d’un modèle), il existe plusieurs approches possibles. Par défaut, un seul fichier est généré à partir de chaque fichier de modèle.
 
 ### <a name="splitting-a-long-file"></a>Fractionnement d’un fichier long
- Dans cette méthode, vous utilisez un modèle pour générer un seul fichier, séparé par un délimiteur. Vous fractionnez ensuite le fichier en plusieurs parties. Il existe deux modèles: un pour générer le fichier unique et l’autre pour le fractionner.
+ Dans cette méthode, vous utilisez un modèle pour générer un seul fichier, séparé par un délimiteur. Vous fractionnez ensuite le fichier en plusieurs parties. Il existe deux modèles : un pour générer le fichier unique et l’autre pour le fractionner.
 
- **LoopTemplate. T4** génère le long fichier unique. Notez que son extension de fichier est «. T4», car elle ne doit pas être traitée directement lorsque vous cliquez sur **transformer tous les modèles**. Ce modèle prend un paramètre qui spécifie la chaîne de délimiteur qui sépare les segments:
+ **LoopTemplate. T4** génère le long fichier unique. Notez que son extension de fichier est « . T4 », car elle ne doit pas être traitée directement lorsque vous cliquez sur **transformer tous les modèles**. Ce modèle prend un paramètre qui spécifie la chaîne de délimiteur qui sépare les segments :
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -178,7 +178,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
 ```
 
- `LoopSplitter.tt``LoopTemplate.t4`appelle, puis divise le fichier résultant en ses segments. Notez que ce modèle n’a pas besoin d’être un modèle de modélisation, car il ne lit pas le modèle.
+ `LoopSplitter.tt` appelle `LoopTemplate.t4`, puis fractionne le fichier résultant en ses segments. Notez que ce modèle n’a pas besoin d’être un modèle de modélisation, car il ne lit pas le modèle.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

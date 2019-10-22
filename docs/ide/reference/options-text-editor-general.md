@@ -28,19 +28,19 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606020"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666207"
 ---
-# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue Options : Éditeur de texte \> Général
+# <a name="options-dialog-box-text-editor--general"></a>Boîte de dialogue Options : éditeur de texte \> général
 
 Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’éditeur de code et de texte de Visual Studio. Pour afficher cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Éditeur de texte**, puis sélectionnez **Général**.
 

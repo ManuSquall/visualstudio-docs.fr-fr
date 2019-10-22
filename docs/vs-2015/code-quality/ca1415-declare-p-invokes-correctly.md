@@ -1,5 +1,5 @@
 ---
-title: 'CA1415 : Déclarez les P-Invoke correctement | Microsoft Docs'
+title: 'CA1415 : déclarer correctement les appels P-Invoke | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57482b720b1a7801fc75e06a5eb5d05d3b1a1417
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 922cd713867e1e1017a0f13490a08c0950b2afbf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652676"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415 : Déclarer correctement les méthodes P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "65691847"
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
-|Category|Microsoft.Interoperability|
-|Modification avec rupture|Sans rupture - Si P/Invoke qui déclare le paramètre ne peut pas être visible à l’extérieur de l’assembly. Avec rupture - Si P/Invoke qui déclare le paramètre peut être consulté en dehors de l’assembly.|
+|Category|Microsoft. Interoperability|
+|Modification avec rupture|Sans rupture : si P/Invoke qui déclare le paramètre ne peut pas être affiché à l’extérieur de l’assembly. Avec rupture : si l’appel P/Invoke qui déclare le paramètre peut être affiché à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
- Une méthode non managé est déclarée de manière incorrecte.
+ Une méthode d’appel de code non managé est déclarée de manière incorrecte.
 
 ## <a name="rule-description"></a>Description de la règle
- Une plateforme d’appeler la méthode accède à un code non managé et est définie à l’aide de la `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Actuellement, cette règle recherche des déclarations de méthode qui ciblent des fonctions Win32 présentant un pointeur vers un paramètre de structure OVERLAPPED non managé et le paramètre managé correspondant n’est pas un pointeur vers un <xref:System.Threading.NativeOverlapped?displayProperty=fullName> structure.
+ Une méthode d’appel de code non managé accède au code non managé et est définie à l’aide du mot clé `Declare` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Actuellement, cette règle recherche des déclarations de méthode d’appel de code non managé qui ciblent des fonctions Win32 qui ont un pointeur vers un paramètre de structure OVERLAPPED et le paramètre managé correspondant n’est pas un pointeur vers une structure <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, déclarez correctement la plateforme appeler la méthode.
+ Pour corriger une violation de cette règle, déclarez correctement la méthode d’appel de code non managé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les méthodes qui violent la règle et satisfaire à la règle non managé.
+ L’exemple suivant montre des méthodes d’appel de code non managé qui violent la règle et satisfont à la règle.
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DeclarePInvokes/cs/FxCop.Interoperability.DeclarePInvokes.cs#1)]
 

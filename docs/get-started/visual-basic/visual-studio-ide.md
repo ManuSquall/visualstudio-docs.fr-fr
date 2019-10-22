@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc1bddc83e094289eb2364e7d88b56536ab18bd2
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180224"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647826"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -127,7 +127,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie d’appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 

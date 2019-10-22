@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342398"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652575"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -28,7 +28,7 @@ Si le code base utilise des outils de génération personnalisés que Visual Stu
 
 Personnalisez votre code base sans projet en utilisant les fichiers *.json* suivants :
 
-|Nom de fichier|Objectif|
+|Nom de fichier|Fonction|
 |-|-|
 |*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible par l’élément de menu contextuel (clic droit) **Configurer les tâches** de **l’Explorateur de solutions**.|
 |*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible par l’élément de menu contextuel (clic droit) **Paramètres de débogage et de lancement** de **l’Explorateur de solutions**.|
